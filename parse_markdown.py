@@ -120,7 +120,9 @@ def parse_markdown(filepath, category_key):
                 elif len(header_cells) >= 4:
                     if '内容总结' in header_cells[1]:
                         summary = cells[1] if len(cells) > 1 else ""
-                    elif any(k in header_cells[1] for k in ['重点', '概念重点', '禅修重点']):
+                    elif any(k in header_cells[1] for k in ['与本主题的关系', '概念重点', '内容']):
+                        summary = cells[1] if len(cells) > 1 else ""
+                    elif any(k in header_cells[1] for k in ['重点', '禅修重点']):
                         focus = cells[1] if len(cells) > 1 else ""
                         summary = cells[2] if len(cells) > 2 else ""
                 elif len(header_cells) >= 3:
