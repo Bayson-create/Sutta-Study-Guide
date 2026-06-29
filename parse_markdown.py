@@ -96,7 +96,22 @@ def parse_markdown(filepath, category_key):
                         if '/zh/' in url or 'lang=zh' in url:
                             zh_url = url
 
-                if len(header_cells) >= 5:
+                # Detect column mapping from headers
+                col_map = {}
+                for ci, hdr in enumerate(header_cells):
+                    h = hdr.strip()
+                    if h in ('阶段',):
+                        col_map['name'] = ci
+                    if h in ('主要材料',):
+                        col_map['materials'] = ci
+                    if h in ('内容主轴',):
+                        col_map['axis'] = ci
+
+                if 'materials' in col_map:
+                    # 总体线索 table: 阶段 | 主要材料 | 内容主轴
+                    focus = cells[col_map['axis']] if 'axis' in col_map and len(cells) > col_map['axis'] else ""
+                    summary = cells[col_map['materials']] if len(cells) > col_map['materials'] else ""
+                elif len(header_cells) >= 5:
                     if any(k in header_cells[1] for k in ['重点', '概念重点', '禅修重点']):
                         focus = cells[1] if len(cells) > 1 else ""
                         summary = cells[2] if len(cells) > 2 else ""

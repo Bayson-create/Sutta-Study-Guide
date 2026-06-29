@@ -145,6 +145,8 @@ a:hover { text-decoration: underline; }
 .sc-links { display: inline-flex; gap: 6px; margin-left: 8px; }
 .sc-link-small { font-size: 0.75em; padding: 1px 6px; background: var(--accent-bg); border: 1px solid var(--border); border-radius: 3px; color: var(--accent); white-space: nowrap; }
 .sc-link-small:hover { background: var(--accent); color: #fff; text-decoration: none; }
+.sutta-ref { color: var(--accent); text-decoration: underline; text-decoration-style: dotted; cursor: pointer; }
+.sutta-ref:hover { color: #a07820; text-decoration-style: solid; }
 
 /* Side by side */
 .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
@@ -267,6 +269,13 @@ function renderHome() {
   app.innerHTML = html;
 }
 
+function linkifySuttaRefs(text) {
+  return text.replace(/\b(DN|MN|SN|AN|Snp|Ud|Iti|Ja|Kd|Bv|Cp|Khp|Dhp)\s*([\d.]+(?:-[\d.]+)?)/gi, (match, col, num) => {
+    const uid = (col.toLowerCase() + num).replace(/\s+/g, '');
+    return `<a href="#/read/${uid}?en_author=sujato&zh_author=zhuang" class="sutta-ref" onclick="event.stopPropagation()">${match}</a>`;
+  });
+}
+
 // === CATEGORY VIEW ===
 function renderCategory(key) {
   const cat = DATA.categories[key];
@@ -275,26 +284,38 @@ function renderCategory(key) {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>${cat.icon} ${cat.title}</h2><div class="cat-en">${cat.title_en}</div></div>`;
 
+  let isFirstSection = true;
   for (const sec of cat.sections) {
     if (sec.section) {
       html += `<div class="section-title">${sec.section}</div>`;
     }
-    html += `<table class="sutta-table"><thead><tr><th>经文名</th><th>重点</th><th>内容总结</th></tr></thead><tbody>`;
-    for (const s of sec.suttas) {
-      if (!s.uid) {
-        html += `<tr class="summary-row"><td>${esc(s.name)}</td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
-      } else {
-        html += `<tr class="clickable" onclick="location.hash='#/read/${s.uid}?en_author=${s.en_author}&zh_author=${s.zh_author}'">
-          <td>${esc(s.name)}<span class="sc-links"><a class="sc-link-small" href="${s.en_url}" target="_blank" onclick="event.stopPropagation()">EN</a><a class="sc-link-small" href="${s.zh_url}" target="_blank" onclick="event.stopPropagation()">中</a></span></td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
+
+    const isBuddhaTimeline = key === 'buddha' && isFirstSection && !sec.section;
+    if (isBuddhaTimeline) {
+      html += `<table class="sutta-table"><thead><tr><th>阶段</th><th>内容主轴</th><th>主要材料</th></tr></thead><tbody>`;
+      for (const s of sec.suttas) {
+        html += `<tr class="summary-row"><td><b>${esc(s.name)}</b></td><td>${esc(s.focus)}</td><td>${linkifySuttaRefs(esc(s.summary))}</td></tr>`;
       }
+      html += '</tbody></table>';
+    } else {
+      html += `<table class="sutta-table"><thead><tr><th>经文名</th><th>重点</th><th>内容总结</th></tr></thead><tbody>`;
+      for (const s of sec.suttas) {
+        if (!s.uid) {
+          html += `<tr class="summary-row"><td>${esc(s.name)}</td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
+        } else {
+          html += `<tr class="clickable" onclick="location.hash='#/read/${s.uid}?en_author=${s.en_author}&zh_author=${s.zh_author}'">
+            <td>${esc(s.name)}<span class="sc-links"><a class="sc-link-small" href="${s.en_url}" target="_blank" onclick="event.stopPropagation()">EN</a><a class="sc-link-small" href="${s.zh_url}" target="_blank" onclick="event.stopPropagation()">中</a></span></td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
+        }
+      }
+      html += '</tbody></table>';
     }
-    html += '</tbody></table>';
+    isFirstSection = false;
   }
 
   if (cat.themes && cat.themes.length) {
     html += '<div class="themes-section"><h3>主题索引</h3><div>';
     for (const t of cat.themes) {
-      html += `<span class="theme-tag"><b>${esc(t.topic)}</b>: ${esc(t.suttas)}</span>`;
+      html += `<span class="theme-tag"><b>${esc(t.topic)}</b>: ${linkifySuttaRefs(esc(t.suttas))}</span>`;
     }
     html += '</div></div>';
   }
