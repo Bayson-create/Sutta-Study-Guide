@@ -4,6 +4,8 @@
 
 Pāli Canon Study Guide with trilingual reader (Pāli · English · Chinese)
 
+请通过链接 https://bayson-create.github.io/Sutta-Study-Guide/ 访问。
+
 ## Features
 
 - **4 thematic guides** with 406 suttas:
