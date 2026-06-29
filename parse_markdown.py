@@ -30,7 +30,7 @@ FILES = {
     },
 }
 
-BASE = Path("/Users/xiebeichen/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Vault/🧠 Learnings/☸️ Buddhism")
+BASE = Path("")
 
 def extract_uid_from_url(url):
     m = re.search(r'suttacentral\.net/([^/]+)/', url)
