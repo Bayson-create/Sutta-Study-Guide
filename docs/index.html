@@ -133,7 +133,18 @@ a:hover { text-decoration: underline; }
 .segment-block { margin-bottom: 14px; }
 .seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; }
 .seg-en { line-height: 1.7; }
-.seg-zh { line-height: 1.8; }
+.seg-zh { line-height: 2; font-size: 1.02em; }
+.zh-formatted { line-height: 2; }
+.zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 8px; font-weight: 700; }
+.zh-formatted header { text-align: center; margin-bottom: 16px; color: var(--text-light); }
+.zh-formatted header ul { list-style: none; font-size: 0.9em; }
+.zh-formatted p { margin-bottom: 10px; text-indent: 2em; text-align: justify; }
+.zh-formatted article { padding: 0; }
+.blurb-box { background: var(--accent-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; font-size: 0.95em; color: var(--text); line-height: 1.7; }
+.blurb-box .blurb-label { font-weight: 700; color: var(--accent); margin-right: 6px; }
+.sc-links { display: inline-flex; gap: 6px; margin-left: 8px; }
+.sc-link-small { font-size: 0.75em; padding: 1px 6px; background: var(--accent-bg); border: 1px solid var(--border); border-radius: 3px; color: var(--accent); white-space: nowrap; }
+.sc-link-small:hover { background: var(--accent); color: #fff; text-decoration: none; }
 
 /* Side by side */
 .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
@@ -274,7 +285,7 @@ function renderCategory(key) {
         html += `<tr class="summary-row"><td>${esc(s.name)}</td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
       } else {
         html += `<tr class="clickable" onclick="location.hash='#/read/${s.uid}?en_author=${s.en_author}&zh_author=${s.zh_author}'">
-          <td>${esc(s.name)}</td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
+          <td>${esc(s.name)}<span class="sc-links"><a class="sc-link-small" href="${s.en_url}" target="_blank" onclick="event.stopPropagation()">EN</a><a class="sc-link-small" href="${s.zh_url}" target="_blank" onclick="event.stopPropagation()">中</a></span></td><td>${esc(s.focus)}</td><td>${esc(s.summary)}</td></tr>`;
       }
     }
     html += '</tbody></table>';
@@ -329,42 +340,52 @@ async function fetchZh(uid, author) {
   return await r.json();
 }
 
-function stripHtml(html) {
-  if (!html) return '';
-  return html.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
+
+function formatZhHtml(rawHtml) {
+  if (!rawHtml) return '';
+  let h = rawHtml;
+  h = h.replace(/<!DOCTYPE[^>]*>/gi, '');
+  h = h.replace(/<\/?html[^>]*>/gi, '');
+  h = h.replace(/<head>[\s\S]*?<\/head>/gi, '');
+  h = h.replace(/<\/?body[^>]*>/gi, '');
+  return h.trim();
 }
 
-function convertChinese(text) {
-  return useTraditional ? toTraditional(text) : text;
+function convertChineseHtml(html) {
+  if (!html) return '';
+  return useTraditional ? html : toSimplified(html);
 }
 
 function renderReaderContent(uid, enData, zhData, info) {
-  // Extract segments
   const root = enData.root_text || {};
   const trans = enData.translation_text || {};
   const order = enData.keys_order || Object.keys(trans);
 
-  // Extract Chinese text
-  let zhText = '';
+  let zhHtml = '';
   if (zhData && zhData.translation && zhData.translation.text) {
-    zhText = stripHtml(zhData.translation.text);
+    zhHtml = formatZhHtml(zhData.translation.text);
+  } else if (zhData && zhData.root_text && zhData.root_text.text) {
+    zhHtml = formatZhHtml(zhData.root_text.text);
   }
 
-  // Build toolbar + content container
+  const blurb = zhData?.suttaplex?.blurb || '';
+  const zhTitle = zhData?.suttaplex?.translated_title || zhData?.translation?.title || '';
+  const paliTitle = zhData?.suttaplex?.original_title || '';
+
   let html = `<button class="back-btn" onclick="history.back()">← 返回</button>`;
-  if (info) {
-    html += `<div class="reader-meta"><h2>${esc(info.name)}</h2>`;
-    if (info.focus) html += `<div class="meta-focus">重点: ${esc(info.focus)}</div>`;
-    if (info.summary) html += `<div class="meta-summary">${esc(info.summary)}</div>`;
-    html += '</div>';
+
+  html += `<div class="reader-meta"><h2>${esc(info?.name || uid)}${zhTitle ? ' · ' + esc(useTraditional ? zhTitle : toSimplified(zhTitle)) : ''}${paliTitle ? ' <span style="font-size:0.7em;color:var(--text-light);font-style:italic">' + esc(paliTitle) + '</span>' : ''}</h2>`;
+  if (info?.focus) html += `<div class="meta-focus">重点: ${esc(info.focus)}</div>`;
+  if (info?.summary) html += `<div class="meta-summary">${esc(info.summary)}</div>`;
+  html += '</div>';
+
+  if (blurb) {
+    html += `<div class="blurb-box"><span class="blurb-label">概括:</span>${esc(useTraditional ? blurb : toSimplified(blurb))}</div>`;
   }
 
   html += `<div class="toolbar" id="reader-toolbar">
     <div class="tb-group">
       <button class="tb-btn${readerMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
-      <button class="tb-btn${readerMode==='pali-en'?' active':''}" data-mode="pali-en">巴利-英文</button>
-      <button class="tb-btn${readerMode==='pali-zh'?' active':''}" data-mode="pali-zh">巴利-中文</button>
-      <button class="tb-btn${readerMode==='en-zh'?' active':''}" data-mode="en-zh">英中对照</button>
       <button class="tb-btn${readerMode==='en'?' active':''}" data-mode="en">单独英文</button>
       <button class="tb-btn${readerMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
     </div>
@@ -379,8 +400,7 @@ function renderReaderContent(uid, enData, zhData, info) {
 
   app.innerHTML = html;
 
-  // Store data for re-render
-  window._readerData = { order, root, trans, zhText, uid };
+  window._readerData = { order, root, trans, zhHtml, uid, blurb, zhTitle, paliTitle, info };
 
   // Toolbar events
   document.getElementById('reader-toolbar').addEventListener('click', e => {
@@ -398,6 +418,11 @@ function renderReaderContent(uid, enData, zhData, info) {
   document.getElementById('s2t-btn').addEventListener('click', () => {
     useTraditional = !useTraditional;
     document.getElementById('s2t-btn').textContent = useTraditional ? '切换简体' : '切换繁体';
+    const d = window._readerData;
+    if (d.blurb) {
+      const bb = document.querySelector('.blurb-box');
+      if (bb) bb.innerHTML = `<span class="blurb-label">概括:</span>${esc(useTraditional ? d.blurb : toSimplified(d.blurb))}`;
+    }
     buildReaderBody();
   });
 
@@ -405,9 +430,9 @@ function renderReaderContent(uid, enData, zhData, info) {
 }
 
 function buildReaderBody() {
-  const { order, root, trans, zhText } = window._readerData;
+  const { order, root, trans, zhHtml } = window._readerData;
   const body = document.getElementById('reader-body');
-  const zhConverted = convertChinese(zhText);
+  const zhOut = zhHtml ? convertChineseHtml(zhHtml) : '';
 
   let html = '';
 
@@ -423,43 +448,11 @@ function buildReaderBody() {
       html += '</div>';
     }
     html += '</div><div class="side-col"><h3>中文</h3>';
-    if (zhConverted) {
-      html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
+    if (zhOut) {
+      html += `<div class="zh-formatted">${zhOut}</div>`;
     } else {
       html += '<div style="color:var(--text-light);font-style:italic">此经文暂无中文译文</div>';
     }
-    html += '</div></div>';
-  } else if (readerMode === 'pali-en') {
-    for (const key of order) {
-      const p = root[key] || '';
-      const e = trans[key] || '';
-      if (!p && !e) continue;
-      html += '<div class="segment-block">';
-      if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
-      if (e) html += `<div class="seg-en">${esc(e)}</div>`;
-      html += '</div>';
-    }
-  } else if (readerMode === 'pali-zh') {
-    html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3>';
-    if (showPali) {
-      for (const key of order) {
-        const p = root[key] || '';
-        if (p) html += `<div class="seg-pali" style="margin-bottom:8px">${esc(p)}</div>`;
-      }
-    } else {
-      html += '<div style="color:var(--text-light);font-style:italic">巴利语已隐藏</div>';
-    }
-    html += '</div><div class="side-col"><h3>中文</h3>';
-    html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
-    html += '</div></div>';
-  } else if (readerMode === 'en-zh') {
-    html += '<div class="side-by-side"><div class="side-col"><h3>English</h3>';
-    for (const key of order) {
-      const e = trans[key] || '';
-      if (e) html += `<div class="seg-en" style="margin-bottom:8px">${esc(e)}</div>`;
-    }
-    html += '</div><div class="side-col"><h3>中文</h3>';
-    html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
     html += '</div></div>';
   } else if (readerMode === 'en') {
     for (const key of order) {
@@ -472,17 +465,21 @@ function buildReaderBody() {
       html += '</div>';
     }
   } else if (readerMode === 'zh') {
-    if (showPali) {
-      html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3>';
-      for (const key of order) {
-        const p = root[key] || '';
-        if (p) html += `<div class="seg-pali" style="margin-bottom:8px">${esc(p)}</div>`;
+    if (zhOut) {
+      if (showPali) {
+        html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3>';
+        for (const key of order) {
+          const p = root[key] || '';
+          if (p) html += `<div class="seg-pali" style="margin-bottom:8px">${esc(p)}</div>`;
+        }
+        html += '</div><div class="side-col"><h3>中文</h3>';
+        html += `<div class="zh-formatted">${zhOut}</div>`;
+        html += '</div></div>';
+      } else {
+        html += `<div class="zh-formatted">${zhOut}</div>`;
       }
-      html += '</div><div class="side-col"><h3>中文</h3>';
-      html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
-      html += '</div></div>';
     } else {
-      html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
+      html += '<div style="color:var(--text-light);font-style:italic;text-align:center;padding:40px">此经文暂无中文译文</div>';
     }
   }
 
