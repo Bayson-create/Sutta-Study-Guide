@@ -197,7 +197,7 @@ function toSimplified(text) {
 let DATA = null;
 let useTraditional = false;
 let showPali = true;
-let readerMode = 'pali-en';
+let readerMode = 'trilingual';
 
 const app = document.getElementById('app');
 
@@ -361,6 +361,7 @@ function renderReaderContent(uid, enData, zhData, info) {
 
   html += `<div class="toolbar" id="reader-toolbar">
     <div class="tb-group">
+      <button class="tb-btn${readerMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
       <button class="tb-btn${readerMode==='pali-en'?' active':''}" data-mode="pali-en">巴利-英文</button>
       <button class="tb-btn${readerMode==='pali-zh'?' active':''}" data-mode="pali-zh">巴利-中文</button>
       <button class="tb-btn${readerMode==='en-zh'?' active':''}" data-mode="en-zh">英中对照</button>
@@ -410,7 +411,25 @@ function buildReaderBody() {
 
   let html = '';
 
-  if (readerMode === 'pali-en') {
+  if (readerMode === 'trilingual') {
+    html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3>';
+    for (const key of order) {
+      const p = root[key] || '';
+      const e = trans[key] || '';
+      if (!p && !e) continue;
+      html += '<div class="segment-block" style="margin-bottom:10px">';
+      if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
+      if (e) html += `<div class="seg-en">${esc(e)}</div>`;
+      html += '</div>';
+    }
+    html += '</div><div class="side-col"><h3>中文</h3>';
+    if (zhConverted) {
+      html += `<div class="seg-zh">${esc(zhConverted)}</div>`;
+    } else {
+      html += '<div style="color:var(--text-light);font-style:italic">此经文暂无中文译文</div>';
+    }
+    html += '</div></div>';
+  } else if (readerMode === 'pali-en') {
     for (const key of order) {
       const p = root[key] || '';
       const e = trans[key] || '';
