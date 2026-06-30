@@ -720,19 +720,19 @@
           "intro": "",
           "suttas": [
             {
-              "uid": "dhs",
+              "uid": "ds",
               "name": "Dhammasaṅgaṇī",
-              "focus": "",
+              "focus": "法的分类背景，非个人叙事",
               "summary": "可作为理解佛陀觉悟所分析之“法”的分类背景，但不叙述佛陀个人经历。",
-              "en_url": "https://suttacentral.net/dhs/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
-              "zh_url": "https://suttacentral.net/dhs/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_url": "https://suttacentral.net/ds/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/ds/zh/zhuang?lang=en&reference=none&highlight=false",
               "en_author": "sujato",
               "zh_author": "zhuang"
             },
             {
               "uid": "vb",
               "name": "Vibhaṅga",
-              "focus": "",
+              "focus": "蕴处界谛根缘起念处分析",
               "summary": "对蕴、处、界、谛、根、缘起、念处等作分析，可与 SN 12、SN 22、SN 35、SN 36 中佛陀自述觉悟前观察经验合读。",
               "en_url": "https://suttacentral.net/vb/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/vb/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -742,7 +742,7 @@
             {
               "uid": "patthana",
               "name": "Paṭṭhāna",
-              "focus": "",
+              "focus": "二十四缘、缘起思想展开",
               "summary": "详论二十四缘，可作为佛陀所证缘起思想的阿毗达摩展开；不含个人叙事。",
               "en_url": "https://suttacentral.net/patthana/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/patthana/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -1813,12 +1813,12 @@
               "zh_author": "zhuang"
             },
             {
-              "uid": "dtk",
+              "uid": "dt",
               "name": "Dhātukathā",
               "focus": "界论、蕴处界关系",
               "summary": "讨论诸法与蕴、处、界之间的关系，适合进阶理解“界”的分类逻辑。",
-              "en_url": "https://suttacentral.net/dtk/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
-              "zh_url": "https://suttacentral.net/dtk/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_url": "https://suttacentral.net/dt/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dt/zh/zhuang?lang=en&reference=none&highlight=false",
               "en_author": "sujato",
               "zh_author": "zhuang"
             },
@@ -1827,7 +1827,7 @@
               "name": "Paṭṭhāna",
               "focus": "二十四缘",
               "summary": "《发趣论》系统展开条件关系，是阿毗达摩缘论的核心。",
-              "en_url": "https://suttacentral.net/patthana/en/sujato?lang=en",
+              "en_url": "https://suttacentral.net/patthana/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/patthana/zh/zhuang?lang=en&reference=none&highlight=false",
               "en_author": "sujato",
               "zh_author": "zhuang"

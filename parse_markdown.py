@@ -196,6 +196,10 @@ def parse_markdown(filepath, category_key):
 # Manually composed concise "focus" tags for entries whose source tables
 # have no 重点/禅修重点/概念重点 column. Keyed by exact sutta name.
 FOCUS_PATCH = {
+    # buddha: 阿毗达摩 Abhidhamma Piṭaka
+    "Dhammasaṅgaṇī": "法的分类背景，非个人叙事",
+    "Vibhaṅga": "蕴处界谛根缘起念处分析",
+    "Paṭṭhāna": "二十四缘、缘起思想展开",
     # laypeople: SN 41 Citta Saṁyutta
     "SN 41.1 Saṁyojana Sutta": "结与被结缚之法",
     "SN 41.2 Isidatta 1": "界的多样性",
