@@ -397,6 +397,11 @@ async function fetchZh(uid, author) {
 }
 
 
+function stripTags(s) {
+  if (!s) return '';
+  return s.replace(/<[^>]+>/g, '');
+}
+
 function formatZhHtml(rawHtml) {
   if (!rawHtml) return '';
   let h = rawHtml;
@@ -426,7 +431,7 @@ function renderReaderContent(uid, enData, zhData, info) {
     zhHtml = formatZhHtml(zhData.root_text.text);
   }
 
-  const blurb = zhData?.suttaplex?.blurb || '';
+  const blurb = stripTags(zhData?.suttaplex?.blurb || '');
   const zhTitle = zhData?.suttaplex?.translated_title || zhData?.translation?.title || '';
   const paliTitle = zhData?.suttaplex?.original_title || '';
 
