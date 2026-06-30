@@ -30,7 +30,8 @@ FILES = {
     },
 }
 
-BASE = Path("")
+import os
+BASE = Path(os.environ.get("SUTTA_NOTES_DIR", ""))
 
 def extract_uid_from_url(url):
     m = re.search(r'suttacentral\.net/([^/]+)/', url)
