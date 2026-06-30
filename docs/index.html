@@ -144,11 +144,29 @@ a:hover { text-decoration: underline; }
 .seg-en { line-height: 1.7; }
 .seg-zh { line-height: 2; font-size: 1.02em; }
 .zh-formatted { line-height: 2; }
-.zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 8px; font-weight: 700; }
-.zh-formatted header { text-align: center; margin-bottom: 16px; color: var(--text-light); }
+.zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 20px; font-weight: 700; }
+.zh-formatted h2 { font-size: 1.12em; color: var(--accent); font-weight: 700; margin: 24px 0 12px; }
+.zh-formatted h3, .zh-formatted h4 { font-size: 1.02em; color: var(--text); font-weight: 700; margin: 18px 0 8px; }
+.zh-formatted header { text-align: center; margin-bottom: 16px; color: var(--text-light); font-size: 0.85em; }
 .zh-formatted header ul { list-style: none; font-size: 0.9em; }
 .zh-formatted p { margin-bottom: 10px; text-indent: 2em; text-align: justify; }
 .zh-formatted article { padding: 0; }
+
+/* Pali-English formatted structure, mirrored from .zh-formatted */
+.en-formatted .seg-division { text-align: center; color: var(--text-light); font-size: 0.85em; margin-bottom: 4px; }
+.en-formatted .seg-division .seg-pali { font-size: 0.9em; }
+.en-formatted .seg-title { text-align: center; margin: 16px 0 20px; }
+.en-formatted .seg-title .seg-pali { font-size: 1.05em; font-style: italic; color: var(--pali-color); margin-bottom: 2px; }
+.en-formatted .seg-title .seg-en { font-size: 1.3em; font-weight: 700; color: var(--accent); }
+.en-formatted .seg-h2 { margin: 24px 0 12px; }
+.en-formatted .seg-h2 .seg-en { font-size: 1.12em; font-weight: 700; color: var(--accent); }
+.en-formatted .seg-h2 .seg-pali { font-size: 0.95em; }
+.en-formatted .seg-h3, .en-formatted .seg-h4 { margin: 18px 0 8px; }
+.en-formatted .seg-h3 .seg-en, .en-formatted .seg-h4 .seg-en { font-size: 1.02em; font-weight: 700; color: var(--text); }
+.en-formatted .seg-h3 .seg-pali, .en-formatted .seg-h4 .seg-pali { font-size: 0.92em; }
+.en-formatted .para-block { margin-bottom: 14px; }
+.en-formatted .para-block .segment-block { margin-bottom: 8px; }
+.en-formatted .para-block .segment-block:last-child { margin-bottom: 0; }
 .blurb-box { background: var(--accent-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; font-size: 0.95em; color: var(--text); line-height: 1.7; }
 .blurb-box .blurb-label { font-weight: 700; color: var(--accent); margin-right: 6px; }
 .sc-links { display: inline-flex; gap: 6px; margin-left: 8px; }
@@ -397,7 +415,9 @@ function convertChineseHtml(html) {
 function renderReaderContent(uid, enData, zhData, info) {
   const root = enData.root_text || {};
   const trans = enData.translation_text || {};
+  const htmlText = enData.html_text || {};
   const order = enData.keys_order || Object.keys(trans);
+  const segStructure = buildSegStructure(order, htmlText);
 
   let zhHtml = '';
   if (zhData && zhData.translation && zhData.translation.text) {
@@ -438,7 +458,7 @@ function renderReaderContent(uid, enData, zhData, info) {
 
   app.innerHTML = html;
 
-  window._readerData = { order, root, trans, zhHtml, uid, blurb, zhTitle, paliTitle, info };
+  window._readerData = { order, root, trans, zhHtml, uid, blurb, zhTitle, paliTitle, info, segStructure };
   updateScLink();
 
   // Toolbar events
@@ -486,8 +506,63 @@ function updateScLink() {
   area.innerHTML = `<a class="sc-link" href="${url}" target="_blank">${label}</a>`;
 }
 
+function buildSegStructure(order, htmlText) {
+  const blocks = [];
+  let currentPara = null;
+  for (const key of order) {
+    const h = htmlText[key] || '';
+    if (/sutta-title/.test(h)) { blocks.push({type: 'title', keys: [key]}); currentPara = null; continue; }
+    if (/class=['"]division['"]/.test(h)) { blocks.push({type: 'division', keys: [key]}); currentPara = null; continue; }
+    const hm = h.match(/<h([2-4])[^>]*>/);
+    if (hm) { blocks.push({type: 'h' + hm[1], keys: [key]}); currentPara = null; continue; }
+
+    if (/<p[ >]/.test(h)) {
+      currentPara = {type: 'para', keys: [key]};
+      blocks.push(currentPara);
+    } else if (currentPara) {
+      currentPara.keys.push(key);
+    } else {
+      currentPara = {type: 'para', keys: [key]};
+      blocks.push(currentPara);
+    }
+    if (/<\/p>/.test(h)) currentPara = null;
+  }
+  return blocks;
+}
+
+function renderEnFormatted(segStructure, root, trans) {
+  let html = '<div class="en-formatted">';
+  for (const block of segStructure) {
+    const keys = block.keys.filter(k => (root[k] || trans[k]));
+    if (keys.length === 0) continue;
+
+    if (block.type === 'para') {
+      html += '<div class="para-block">';
+      for (const key of keys) {
+        const p = root[key] || '', e = trans[key] || '';
+        html += '<div class="segment-block">';
+        if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
+        if (e) html += `<div class="seg-en">${esc(e)}</div>`;
+        html += '</div>';
+      }
+      html += '</div>';
+    } else {
+      const cls = block.type === 'title' ? 'seg-title' : block.type === 'division' ? 'seg-division' : 'seg-' + block.type;
+      for (const key of keys) {
+        const p = root[key] || '', e = trans[key] || '';
+        html += `<div class="${cls}">`;
+        if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
+        if (e) html += `<div class="seg-en">${esc(e)}</div>`;
+        html += '</div>';
+      }
+    }
+  }
+  html += '</div>';
+  return html;
+}
+
 function buildReaderBody() {
-  const { order, root, trans, zhHtml } = window._readerData;
+  const { order, root, trans, zhHtml, segStructure } = window._readerData;
   const body = document.getElementById('reader-body');
   const zhOut = zhHtml ? convertChineseHtml(zhHtml) : '';
 
@@ -495,15 +570,7 @@ function buildReaderBody() {
 
   if (readerMode === 'trilingual') {
     html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3>';
-    for (const key of order) {
-      const p = root[key] || '';
-      const e = trans[key] || '';
-      if (!p && !e) continue;
-      html += '<div class="segment-block" style="margin-bottom:10px">';
-      if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
-      if (e) html += `<div class="seg-en">${esc(e)}</div>`;
-      html += '</div>';
-    }
+    html += renderEnFormatted(segStructure, root, trans);
     html += '</div><div class="side-col"><h3>中文</h3>';
     if (zhOut) {
       html += `<div class="zh-formatted">${zhOut}</div>`;
@@ -512,23 +579,12 @@ function buildReaderBody() {
     }
     html += '</div></div>';
   } else if (readerMode === 'en') {
-    for (const key of order) {
-      const p = root[key] || '';
-      const e = trans[key] || '';
-      if (!e) continue;
-      html += '<div class="segment-block">';
-      if (showPali && p) html += `<div class="seg-pali">${esc(p)}</div>`;
-      html += `<div class="seg-en">${esc(e)}</div>`;
-      html += '</div>';
-    }
+    html += renderEnFormatted(segStructure, root, trans);
   } else if (readerMode === 'zh') {
     if (zhOut) {
       if (showPali) {
         html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3>';
-        for (const key of order) {
-          const p = root[key] || '';
-          if (p) html += `<div class="seg-pali" style="margin-bottom:8px">${esc(p)}</div>`;
-        }
+        html += renderEnFormatted(segStructure, root, {});
         html += '</div><div class="side-col"><h3>中文</h3>';
         html += `<div class="zh-formatted">${zhOut}</div>`;
         html += '</div></div>';
