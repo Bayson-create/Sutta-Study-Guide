@@ -29,7 +29,11 @@ body {
   color: var(--text);
   line-height: 1.7;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+.container { flex: 1 0 auto; }
+.site-footer { flex-shrink: 0; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -62,6 +66,53 @@ a:hover { text-decoration: underline; }
 .card .icon { font-size: 2.4em; display: block; margin-bottom: 12px; }
 .card .card-title { font-size: 1.15em; font-weight: 700; color: var(--text); margin-bottom: 6px; }
 .card .card-title-en { font-size: 0.82em; color: var(--text-light); }
+
+/* Research entry & section */
+.research-divider { display: flex; align-items: center; gap: 14px; margin: 36px 0 18px; color: var(--text-light); font-size: 0.85em; }
+.research-divider::before, .research-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.research-card {
+  background: linear-gradient(135deg, var(--bg-warm), var(--card-bg));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+  display: flex; align-items: center; gap: 18px;
+}
+.research-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); border-color: var(--accent-light); }
+.research-card .icon { font-size: 2.2em; flex-shrink: 0; }
+.research-card .research-card-title { font-size: 1.1em; font-weight: 700; color: var(--text); }
+.research-card .research-card-sub { font-size: 0.82em; color: var(--text-light); margin-top: 3px; }
+
+.research-item-card {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 28px 24px; cursor: pointer; transition: all 0.2s; box-shadow: var(--shadow); text-align: center;
+}
+.research-item-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); border-color: var(--accent-light); }
+.research-item-card .icon { font-size: 2.4em; display: block; margin-bottom: 12px; }
+.research-item-card .title { font-size: 1.12em; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.research-item-card .desc { font-size: 0.85em; color: var(--text-light); line-height: 1.6; }
+
+/* Markdown reader (concepts) */
+.md-reader { max-width: 760px; margin: 0 auto; }
+.md-reader h1 { font-size: 1.4em; color: var(--accent); font-weight: 700; margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+.md-reader h1:first-child { margin-top: 0; }
+.md-reader h2 { font-size: 1.1em; color: var(--text); font-weight: 700; margin: 20px 0 10px; }
+.md-reader p { margin-bottom: 12px; text-align: justify; line-height: 1.85; }
+.md-reader strong { color: var(--accent); font-weight: 700; }
+.md-reader hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+.md-reader ol, .md-reader ul { margin: 0 0 12px 1.6em; }
+.md-reader li { margin-bottom: 4px; line-height: 1.8; }
+.md-reader table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92em; }
+.md-reader th, .md-reader td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+.md-reader th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
+.md-reader tr:nth-child(even) td { background: var(--hover-bg); }
+
+/* Timeline embed */
+.timeline-frame-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.timeline-frame-wrap iframe { width: 100%; height: 78vh; border: none; display: block; }
+.timeline-toolbar { display: flex; justify-content: flex-end; padding: 10px 16px; }
 
 /* Back button */
 .back-btn {
@@ -286,9 +337,16 @@ function route() {
   } else if (hash.startsWith('#/category/')) {
     const key = hash.slice(11);
     renderCategory(key);
+  } else if (hash === '#/research') {
+    renderResearchHome();
+  } else if (hash === '#/research/concepts') {
+    renderResearchConcepts();
+  } else if (hash === '#/research/timeline') {
+    renderResearchTimeline();
   } else {
     renderHome();
   }
+  window.scrollTo(0, 0);
 }
 window.addEventListener('hashchange', route);
 
@@ -316,7 +374,142 @@ function renderHome() {
     </div>`;
   }
   html += '</div>';
+
+  html += '<div class="research-divider">个人研究成果</div>';
+  html += `<div class="research-card" onclick="location.hash='#/research'">
+    <span class="icon">🔭</span>
+    <div>
+      <div class="research-card-title">个人研究成果总结</div>
+      <div class="research-card-sub">Personal Research &mdash; 佛法概念解说 · 佛教历史时间轴</div>
+    </div>
+  </div>`;
+
   app.innerHTML = html;
+}
+
+// === RESEARCH HOME ===
+function renderResearchHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>🔭 个人研究成果</h2><div class="cat-en">Personal Research</div></div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/concepts'">
+    <span class="icon">📜</span>
+    <div class="title">全面佛法概念解说</div>
+    <div class="desc">二十八个核心法义，从正见、四圣谛、缘起到涅槃，系统整理上座部佛教知识体系</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/timeline'">
+    <span class="icon">🗺️</span>
+    <div class="title">佛教历史时间轴</div>
+    <div class="desc">可交互的佛教历史流程图，涵盖印度本土、南传、汉传、藏传及东亚传播脉络</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: CONCEPTS READER ===
+let _conceptsMdCache = null;
+async function renderResearchConcepts() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📜 全面佛法概念解说</h2><div class="cat-en">A Comprehensive Guide to Buddhist Concepts</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_conceptsMdCache) {
+      const res = await fetch('research/buddhist-concepts.md');
+      _conceptsMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdToHtml(_conceptsMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
+      <div class="cat-header"><h2>📜 全面佛法概念解说</h2><div class="cat-en">A Comprehensive Guide to Buddhist Concepts</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: TIMELINE (iframe embed of standalone interactive HTML) ===
+function renderResearchTimeline() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🗺️ 佛教历史时间轴</h2><div class="cat-en">Buddhist History Timeline</div></div>`;
+  html += `<div class="timeline-frame-wrap">
+    <div class="timeline-toolbar"><a href="research/buddhist-history-timeline.html" target="_blank">在新标签页打开 ↗</a></div>
+    <iframe src="research/buddhist-history-timeline.html" title="佛教历史时间轴" loading="lazy"></iframe>
+  </div>`;
+  app.innerHTML = html;
+}
+
+// === Minimal Markdown -> HTML converter ===
+function mdToHtml(md) {
+  const lines = md.split('\n');
+  let html = '';
+  let i = 0;
+  let listBuf = null; // {type:'ol'|'ul', items:[]}
+
+  function flushList() {
+    if (!listBuf) return;
+    const tag = listBuf.type;
+    html += `<${tag}>` + listBuf.items.map(it => `<li>${inlineMd(it)}</li>`).join('') + `</${tag}>`;
+    listBuf = null;
+  }
+
+  while (i < lines.length) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    if (!trimmed) { flushList(); i++; continue; }
+
+    if (trimmed === '---') { flushList(); html += '<hr>'; i++; continue; }
+
+    const h1 = trimmed.match(/^#\s+(.+)/);
+    if (h1) { flushList(); html += `<h1>${inlineMd(h1[1])}</h1>`; i++; continue; }
+
+    const h2 = trimmed.match(/^##\s+(.+)/);
+    if (h2) { flushList(); html += `<h2>${inlineMd(h2[1])}</h2>`; i++; continue; }
+
+    // Table block
+    if (trimmed.startsWith('|') && lines[i + 1] && /^\s*\|?\s*-+\s*\|/.test(lines[i + 1])) {
+      flushList();
+      const headerCells = trimmed.split('|').map(c => c.trim()).filter((c, idx, arr) => !(idx === 0 && c === '') && !(idx === arr.length - 1 && c === ''));
+      i += 2;
+      let rows = [];
+      while (i < lines.length && lines[i].trim().startsWith('|')) {
+        const cells = lines[i].trim().split('|').map(c => c.trim()).filter((c, idx, arr) => !(idx === 0 && c === '') && !(idx === arr.length - 1 && c === ''));
+        rows.push(cells);
+        i++;
+      }
+      html += '<table><thead><tr>' + headerCells.map(c => `<th>${inlineMd(c)}</th>`).join('') + '</tr></thead><tbody>';
+      for (const r of rows) html += '<tr>' + r.map(c => `<td>${inlineMd(c)}</td>`).join('') + '</tr>';
+      html += '</tbody></table>';
+      continue;
+    }
+
+    const ol = trimmed.match(/^(\d+)\.\s+(.+)/);
+    if (ol) {
+      if (!listBuf || listBuf.type !== 'ol') { flushList(); listBuf = {type: 'ol', items: []}; }
+      listBuf.items.push(ol[2]);
+      i++; continue;
+    }
+
+    const ul = trimmed.match(/^[-*]\s+(.+)/);
+    if (ul) {
+      if (!listBuf || listBuf.type !== 'ul') { flushList(); listBuf = {type: 'ul', items: []}; }
+      listBuf.items.push(ul[1]);
+      i++; continue;
+    }
+
+    flushList();
+    html += `<p>${inlineMd(trimmed)}</p>`;
+    i++;
+  }
+  flushList();
+  return html;
+}
+
+function inlineMd(text) {
+  let t = esc(text);
+  t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  return t;
 }
 
 function linkifySuttaRefs(text) {

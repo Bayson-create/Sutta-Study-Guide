@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<title>佛教历史流程图（时间轴版）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;background:#f8fafc;color:#1e293b}
+#header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e2e8f0;padding:8px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 1px 4px #0001}
+#header h1{font-size:15px;font-weight:700;color:#1e293b;white-space:nowrap}
+#legend{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.leg{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#475569}
+.leg-box{width:12px;height:12px;border-radius:2px;border:1px solid #94a3b8;flex-shrink:0}
+#container{overflow-x:auto;overflow-y:auto;padding:0}
+#tooltip{position:fixed;display:none;background:rgba(15,23,42,0.95);color:#e2e8f0;padding:8px 12px;border-radius:6px;font-size:12px;max-width:320px;line-height:1.6;pointer-events:none;z-index:200;box-shadow:0 4px 16px #0004}
+</style>
+</head>
+<body>
+<div id="header">
+  <h1>佛教历史流程图（时间轴版）</h1>
+  <div id="legend">
+    <span class="leg"><span class="leg-box" style="background:#f8fafc"></span>早期历史主干</span>
+    <span class="leg"><span class="leg-box" style="background:#e0f2fe"></span>三藏／圣典</span>
+    <span class="leg"><span class="leg-box" style="background:#fef3c7"></span>部派总览</span>
+    <span class="leg"><span class="leg-box" style="background:#dbeafe"></span>上座部系</span>
+    <span class="leg"><span class="leg-box" style="background:#ede9fe"></span>大众部系</span>
+    <span class="leg"><span class="leg-box" style="background:#bbf7d0"></span>大乘新兴</span>
+    <span class="leg"><span class="leg-box" style="background:#fecaca"></span>密教后发</span>
+    <span class="leg"><span class="leg-box" style="background:#dcfce7"></span>南传</span>
+    <span class="leg"><span class="leg-box" style="background:#eef2ff"></span>汉传</span>
+    <span class="leg"><span class="leg-box" style="background:#fef9c3"></span>东亚（韩国）</span>
+    <span class="leg"><span class="leg-box" style="background:#fce7f3"></span>东亚（日本）</span>
+    <span class="leg"><span class="leg-box" style="background:#ecfccb"></span>东亚（越南）</span>
+    <span class="leg"><span class="leg-box" style="background:#e0f2fe"></span>东亚（台湾）／汉译经典</span>
+    <span class="leg"><span class="leg-box" style="background:#ffedd5"></span>印度衰落／律总结</span>
+    <span class="leg"><span class="leg-box" style="background:#ffe4e6"></span>三大体系成型</span>
+  </div>
+</div>
+<div id="container"><svg id="chart"></svg></div>
+<div id="tooltip"></div>
+<script>
+const COL_LABEL={
+  op:'早期历史主干',c:'三藏/圣典',pai:'部派佛教',
+  da:'大乘',nan:'南传',han:'汉传',
+  ea:'东亚传播',ac:'汉译经典入华',zang:'藏传',ind:'印度衰落',end:'总结'
+};
+const NODES=[
+  {id:'st',  col:'op', year:-480,fill:'#dcfce7',label:'佛陀在世',desc:'释迦牟尼佛陀住世教化'},
+  {id:'op1', col:'op', year:-479,fill:'#f8fafc',label:'佛陀口传法与律\n尚未形成书面三藏',desc:'佛陀以口传教法与律，尚无书面三藏。法(Dhamma)与律(Vinaya)构成佛陀教法；早期保存方式主要是口诵、记忆与僧团共同传诵。'},
+  {id:'op2', col:'op', year:-477,fill:'#f8fafc',label:'佛灭后3个月\n第一次王舍城结集',desc:'佛灭后3个月，马哈咖沙巴主持，500阿拉汉在王舍城结集。先诵律藏（伍巴离），后诵法藏（阿难）。确立"尚未制定者不制，已制定者不废"原则'},
+  {id:'op3', col:'op', year:-476,fill:'#f8fafc',label:'共同保存法与律\n未形成上座部宗派',desc:'第一次结集确立共同诵持法与律、保持戒律完整的原则；但经律传统中此时尚未明确分出"上座部"。后来的上座部/长老系可把这种守护律法的精神视为自身源头，而不是把第一次结集等同于宗派成立。'},
+  {id:'op4', col:'op', year:-380,fill:'#f8fafc',label:'佛灭后100年\n第二次韦沙离结集',desc:'佛灭约100年，亚思主持，700阿拉汉在韦沙离结集。因瓦基族比库接受金银等十件事引发争议，历时八个月重结三藏'},
+  {id:'op5', col:'op', year:-375,fill:'#fef3c7',label:'律仪解释争议→僧团分裂\n上座部 VS 大众部',desc:'第二次结集后，因戒律实践与律仪解释分歧，僧团发生根本分裂；直接争议应理解为律学与僧团规范问题，而不是以抽象教义争论为起点。保守派为上座部(Theravāda)，另一方因人多势众称大众部(Mahāsaṅghika)'},
+  {id:'op6', col:'op', year:-268,fill:'#f8fafc',label:'佛灭二百余年\n阿首咖王时代',desc:'孔雀王朝阿首咖王（约前268–前232在位）笃信佛教，普施僧众，广修塔寺。石刻显示其"法"的影响远及西方诸国'},
+  {id:'op7', col:'op', year:-250,fill:'#dbeafe',label:'第三次巴嗒厘子城结集\n整顿僧团、结集完整三藏',desc:'阿首咖王时代，摩嘎利子·帝思主持，1000阿拉汉在华氏城结集，历时九个月，完整诵出三藏。清除外道、整顿僧团（此次结集主要见于南传记载）'},
+  {id:'op8', col:'op', year:-249,fill:'#dbeafe',label:'派遣九大弘法使团向外传教',desc:'第三次结集后，派出九大使团向印度内外弘法。向南至斯里兰卡、金地（今缅甸/泰国一带）；向北至犍陀罗、迦湿弥罗等'},
+  {id:'op9', col:'op', year:-247,fill:'#ecfdf5',label:'向南：传入斯里兰卡\n缅甸、泰国、柬埔寨、老挝',desc:'佛教向南传播，经斯里兰卡辐射东南亚各地，形成南传上座部传统'},
+  {id:'op10',col:'op', year:-200,fill:'#eef2ff',label:'向北：经中亚西域\n传入中国汉地',desc:'佛教沿丝绸之路北传，经中亚、西域进入中国汉地，形成汉传佛教'},
+  {id:'op11',col:'han',year:100, fill:'#eef2ff',label:'汉传佛教再传\n韩国、日本、越南',desc:'汉传佛教经由中国传播至朝鲜半岛、日本列岛、越南，形成东亚佛教圈'},
+  {id:'op12',col:'zang',year:650,fill:'#f5f3ff',label:'印度后期大乘密教入西藏\n形成藏传佛教',desc:'印度大乘密教经由多条路线传入吐蕃，结合本土苯教，形成具有独特特色的藏传佛教'},
+  {id:'op13',col:'op', year:-80, fill:'#ecfdf5',label:'佛灭约500年\n三藏在斯里兰卡书写成文',desc:'约前1世纪，巴利三藏在斯里兰卡（大寺）开始系统书写成文。此前早期教法主要依靠口诵、记忆和僧团共同传诵保存，可标示为"未成文献阶段"。'},
+  {id:'op14',col:'op', year:300, fill:'#fff7ed',label:'婆罗门复兴 梵语兴起\n印度佛教逐步梵语化',desc:'约3世纪起，笈多王朝时代婆罗门文化复兴，梵语在宫廷和学术中取得高地位。佛教为在竞争中存活，将经典逐步梵语化'},
+  {id:'op15',col:'op', year:700, fill:'#fff7ed',label:'印度佛教历经正法→像法→末法\n1500年兴衰',desc:'印度本土佛教经历约1500年（广义约1600-1700年）的兴衰演变'},
+  {id:'c1', col:'c',  year:-479,fill:'#e0f2fe',label:'佛教 = Buddha sāsana\n佛陀教法：法 Dhamma + 律 Vinaya',desc:'佛教（巴利语Buddha sāsana）的核心是"法"（经藏+论藏）与"律"（律藏）两大部分，合称三藏'},
+  {id:'c2', col:'c',  year:-478,fill:'#e0f2fe',label:'法：经藏 + 论藏\n律：僧团生活规范',desc:'法包括佛陀教导的法义和修行方法，律是出家人的生活行为规范'},
+  {id:'c3', col:'c',  year:-477,fill:'#e0f2fe',label:'早期以口诵、记忆、共同传诵保存\n尚未形成书面三藏',desc:'佛陀在世时，法与律主要依靠口诵、记忆和僧团共同传诵保存，并没有书面文字记录'},
+  {id:'c4', col:'c',  year:-380,fill:'#e0f2fe',label:'巴利语：圣典语\n保存最完整古老的早期佛教圣典系统之一',desc:'巴利语（Pāḷi）是保存早期佛教文献最重要的圣典语言，与佛世前后中印度中古方言有密切渊源'},
+  {id:'c5', col:'c',  year:-80, fill:'#e0f2fe',label:'三藏：律藏 / 经藏 / 论藏\n经藏五部；论藏七论；律藏五大册',desc:'南传巴利三藏完整结构：律藏（Vinaya Piṭaka）、经藏（Sutta Piṭaka，含长部、中部、相应部、增支部、小部）、论藏（Abhidhamma Piṭaka，含七论）'},
+  {id:'c6', col:'c',  year:1955,fill:'#e0f2fe',label:'1954-1956 缅甸仰光\n第六次三藏圣典结集',desc:'1954年5月17日至1956年5月24日，在缅甸仰光举行第六次三藏结集，校勘确认三藏圣典'},
+  {id:'n_root',   col:'pai',year:-350,fill:'#fef3c7',label:'第一岔：约前4-前3世纪\n上座部系与大众部系根本分裂',desc:'约前4至前3世纪之间，佛教僧团发生根本分裂，形成上座部系（Sthāvira）和大众部系（Mahāsāṃghika）两大系统。这一层级应先于后来的二级部派分化来理解。'},
+  {id:'n_mahadev',col:'pai',year:-340,fill:'#fff7ed',label:'大天五事（后期传说）\n阿罗汉观争论',desc:'大天五事是后期论书中解释根本分裂的重要叙述，但不宜作为唯一确定原因。较早律藏材料中，第二次结集的直接争议是十事（Dasavatthu），如受持金银、非时饮食等戒律实践问题；现代学界通常对大天五事的历史可靠性保持谨慎。'},
+  {id:'n_sthav',  col:'pai',year:-350,fill:'#dbeafe',label:'上座部系\n长老权威、戒律保存；继续分出多支',desc:'上座部系（Sthāvira）强调长老权威和严守戒律，继续分化出分别说部、说一切有部、犊子部等多个支派。南传上座部是此系统后来的现存传承之一。'},
+  {id:'n_maha',   col:'pai',year:-330,fill:'#ede9fe',label:'大众部系\n强调佛陀超越性；影响大乘佛陀观\n7世纪后独立身份渐不可见',desc:'大众部系（Mahāsāṃghika）强调佛陀的出世间超越性，对大乘佛陀观有重要影响。7世纪后独立身份渐趋不明，许多思想遗产融入北传佛教环境。'},
+  {id:'n_vibh',   col:'pai',year:-270,fill:'#dbeafe',label:'分别说部\n反对三世实有；南传常追溯此系',desc:'分别说部（Vibhajjavāda）反对说一切有部的"三世实有"说，南传上座部常将自身追溯至此系。其立场与南传阿毗达摩和后来的《清净道论》传统更接近。'},
+  {id:'n_sarva',  col:'pai',year:-270,fill:'#dbeafe',label:'说一切有部\n三世实有；阿毗达摩发达',desc:'说一切有部（Sarvāstivāda）主张过去、现在、未来三世诸法"实有"，其阿毗达摩论书传统非常发达，对汉传阿毗达摩、俱舍学和藏传宗义学影响很大。'},
+  {id:'n_vatsi',  col:'pai',year:-280,fill:'#dbeafe',label:'犊子部\n补特伽罗：非即蕴亦非离蕴',desc:'犊子部（Vātsīputrīya）提出独特的"补特伽罗"（Pudgala）论，认为补特伽罗"非即蕴亦非离蕴"'},
+  {id:'n_tamra',  col:'pai',year:-250,fill:'#dbeafe',label:'赤铜鍱部/铜鍱部\n斯里兰卡上座部来源',desc:'铜鍱部（Tāmraśāṭīya）是斯里兰卡上座部传统的来源，通过摩哂陀传法斯里兰卡，保存巴利文三藏，并成为后世南传正统自我理解的重要源头。'},
+  {id:'n_dharma', col:'pai',year:-250,fill:'#dbeafe',label:'法藏部\n《四分律》成为汉传僧团受戒基础',desc:'法藏部（Dharmaguptaka）的律藏《四分律》5世纪初译入汉地，后成为汉传、朝鲜、越南、日本僧尼受戒的核心律藏基础。'},
+  {id:'n_mahi',   col:'pai',year:-250,fill:'#dbeafe',label:'化地部\n遗产：汉译《五分律》',desc:'化地部（Mahīśāsaka）的律藏后被汉译为《五分律》，与《四分律》和根本说一切有部律共同显示北传地区保存了多种部派律藏遗产。'},
+  {id:'n_vaib',   col:'pai',year:-200,fill:'#dbeafe',label:'毗婆沙师\n《大毗婆沙论》为权威',desc:'毗婆沙师（Vaibhāṣika）以《大毗婆沙论》为权威，是说一切有部的论书传统。南传《清净道论》没有接纳其三世实有体系。'},
+  {id:'n_saut',   col:'pai',year:-200,fill:'#dbeafe',label:'经量部\n重经轻论；影响唯识、因明、藏传宗义学',desc:'经量部（Sautrāntika）以经为量，不重视阿毗达摩论书，其思想对唯识学、因明学和藏传宗义学产生重要影响。'},
+  {id:'n_mula',   col:'pai',year:-200,fill:'#dbeafe',label:'根本说一切有部\n其律成为藏传比丘戒基础',desc:'根本说一切有部（Mūlasarvāstivāda）的律藏《根本说一切有部律》后成为藏传佛教比丘戒的基础，是藏传制度结构中的部派律藏遗产。'},
+  {id:'n_sammi',  col:'pai',year:-200,fill:'#dbeafe',label:'正量部\n延续补特伽罗论；玄奘时仍为印度大部派之一',desc:'正量部（Sāṃmitīya）延续犊子部的补特伽罗论，在7世纪玄奘访印时仍是印度主要部派之一。'},
+  {id:'n_loko',   col:'pai',year:-300,fill:'#ede9fe',label:'说出世部\n佛陀出世间性；《大事》',desc:'说出世部（Lokottaravāda）是大众部系的支派，其典籍《大事》(Mahāvastu)对研究大乘佛陀观有重要价值。'},
+  {id:'n_bahu',   col:'pai',year:-300,fill:'#ede9fe',label:'多闻部\n重视深义，调和声闻与大乘倾向',desc:'多闻部（Bahuśrutīya）重视经典深义，在声闻与大乘之间采取调和态度。'},
+  {id:'n_cait',   col:'pai',year:-300,fill:'#ede9fe',label:'制多山部/案达罗支派\n塔崇拜、南印度、早期大乘环境',desc:'制多山部（Caityaka）流行于南印度，与塔崇拜相关，处于早期大乘兴起的环境中。'},
+  {id:'n_kasy',   col:'pai',year:-250,fill:'#dbeafe',label:'饮光部\n资料较少，见于部派目录',desc:'饮光部（Kāśyapīya）关于其教义和历史的资料相对较少，主要见于各部派目录的记录。'},
+  {id:'n_later',  col:'pai',year:500, fill:'#fef3c7',label:'其他部派"消亡"\n独立僧团与完整三藏传承消失\n律藏、论书、思想遗产仍存',desc:'随着历史演变，各部派作为独立僧团逐渐消亡，但其律藏、阿毗达摩论书和思想遗产仍以不同形式保存在三大传统中'},
+  {id:'m0', col:'da',year:-50, fill:'#bbf7d0',label:'前1世纪-后2世纪\n大乘经典运动与菩萨道运动出现\n跨部派、跨地区；非独立戒律僧团',desc:'约前1世纪至公元2世纪，大乘（Mahāyāna）经典运动和菩萨道运动在印度各地兴起。大乘不是新的部派，也不是独立的戒律僧团，而是在部派僧团框架内发展的跨部派思想与经典运动。'},
+  {id:'m_split',col:'da',year:20,  fill:'#bbf7d0',label:'第二岔：南传独立\n北传大乘化',desc:'前1世纪至后2世纪出现第二个关键分岔：南传上座部保留部派形态和巴利三藏传统；北传地区则把部派经律论与大乘经论结合，逐步形成以大乘为主体的汉传体系，并为后来的藏传显密结构奠基。'},
+  {id:'m1', col:'da',year:100, fill:'#bbf7d0',label:'大乘核心\n菩提心、菩萨行、六波罗蜜\n方便、多佛多净土',desc:'大乘核心教义：发菩提心、修菩萨行、修习六波罗蜜；以方便法门利益众生；信仰多佛多净土的宇宙观。'},
+  {id:'m2', col:'da',year:50,  fill:'#bbf7d0',label:'早期般若经\n《八千颂般若》约前1-后1世纪\n空性传统早期层',desc:'《八千颂般若经》（Aṣṭasāhasrikā Prajñāpāramitā）是现存最早的大乘经典之一，奠定了空性（śūnyatā）传统的基础。'},
+  {id:'m3', col:'da',year:100, fill:'#bbf7d0',label:'净土/佛国类早期经典\n《阿閦佛国经》《般舟三昧经》《无量寿经》\n约前1-后2世纪',desc:'净土类早期大乘经典群，描述清净佛国和往生修行，是净土信仰的经典依据。'},
+  {id:'m4', col:'da',year:100, fill:'#bbf7d0',label:'《法华经》\n核心约1世纪，扩展至2世纪\n一乘、方便、久远佛',desc:'《妙法莲华经》（Saddharmapuṇḍarīka-sūtra）核心约成立于1世纪，强调"一乘"、方便法门和久远实成佛陀观，对天台宗影响尤为深远。'},
+  {id:'m5', col:'da',year:150, fill:'#bbf7d0',label:'《维摩诘经》\n约1-2世纪\n居士菩萨、不可思议解脱',desc:'《维摩诘所说经》约成立于1-2世纪，以居士维摩诘为主角，阐述不可思议解脱境界，对禅宗有深远影响。'},
+  {id:'m6', col:'da',year:200, fill:'#bbf7d0',label:'《华严经》系统\n约2-4世纪汇编\n十地、入法界、法界缘起',desc:'《华严经》（Avataṃsaka-sūtra）约2-4世纪间逐步汇编，展示宏大的法界缘起世界观，对华严宗、禅宗有根本性影响。'},
+  {id:'m7', col:'da',year:300, fill:'#bbf7d0',label:'如来藏/佛性经典\n《如来藏经》《胜鬘经》《大般涅槃经》\n约3-5世纪',desc:'如来藏（tathāgatagarbha）系列经典约成立于3-5世纪，主张一切众生皆有佛性，对东亚佛教和禅宗影响深远。'},
+  {id:'m8', col:'da',year:300, fill:'#bbf7d0',label:'《解深密经》\n约3-4世纪\n三性、三无性、三转法轮',desc:'《解深密经》约成立于3-4世纪，阐述三性（遍计所执、依他起、圆成实）和三转法轮说，是唯识宗的重要经典依据。'},
+  {id:'m9', col:'da',year:400, fill:'#bbf7d0',label:'《楞伽经》\n约4世纪\n如来藏、唯识、心识与禅宗传统',desc:'《楞伽经》约成立于4世纪，融合如来藏与唯识思想，对禅宗传统（达摩传法）有特别重要的意义。'},
+  {id:'m10',col:'da',year:200, fill:'#bbf7d0',label:'《金刚经》\n约2-4世纪，402年鸠摩罗什译出',desc:'《金刚般若波罗蜜经》约成立于2-4世纪，402年由鸠摩罗什译出，"应无所住而生其心"对禅宗有深远影响。'},
+  {id:'m11',col:'da',year:600, fill:'#bbf7d0',label:'《心经》\n现行短本至少7世纪已流传\n起源有争议',desc:'《般若波罗蜜多心经》现行最广流传的短本，至少7世纪已流传，可能源于汉地对大般若经的摘要编集，起源仍有争议。'},
+  {id:'m12',col:'da',year:200, fill:'#bbf7d0',label:'龙树 约2-3世纪\n中观：缘起性空、二谛、中道',desc:'龙树（Nāgārjuna，约2-3世纪）建立中观（Mādhyamaka）哲学体系，以"缘起性空"破除一切执著，对大乘哲学影响最为深远。'},
+  {id:'m13',col:'da',year:350, fill:'#bbf7d0',label:'无著、世亲 约4-5世纪\n瑜伽行/唯识：阿赖耶识、三性、转识成智',desc:'无著（Asaṅga）和世亲（Vasubandhu）兄弟建立瑜伽行/唯识（Yogācāra）学派，以阿赖耶识为核心。'},
+  {id:'m14',col:'da',year:650, fill:'#fecaca',label:'6-8世纪\n密教/金刚乘成熟\n咒、印、曼荼罗、灌顶、本尊瑜伽',desc:'6-8世纪印度金刚乘（Vajrayāna）密教体系成熟，以咒语、手印、曼荼罗、灌顶和本尊瑜伽为特色修行方法。它是后期发展，不能与早期大乘经典运动混为同一阶段。'},
+  {id:'m15',col:'da',year:900, fill:'#f5f3ff',label:'8-12世纪\n那烂陀、超戒寺等大型寺院\n显密并行、国际求法网络',desc:'8-12世纪那烂陀寺、超戒寺（Vikramaśīla）等大型寺院大学成为佛教国际学术中心，显教与密教并行发展'},
+  {id:'t1', col:'nan',year:-247,fill:'#dcfce7',label:'前3世纪传统：摩哂陀入斯里兰卡\n阿育王后九大使团之一',desc:'马兴德尊者（Mahinda）领队传法至斯里兰卡，将上座部佛教带至狮子洲（Sri Lanka）。这是南传上座部传承自我叙述中的关键源头。'},
+  {id:'t_split',col:'nan',year:20,  fill:'#dcfce7',label:'南传上座部\n保留部派形式\n巴利三藏与大寺传统',desc:'南传上座部沿斯里兰卡大寺传统发展，系统保存巴利三藏和巴利律，后世通常不承认大乘经典为佛说经典。这一路线可理解为"经典原文（巴利三藏）+论疏诠释（《清净道论》）"的连续传统。'},
+  {id:'t2', col:'nan',year:-80, fill:'#dcfce7',label:'前1世纪：巴利三藏在斯里兰卡书写成文',desc:'约前1世纪，巴利语三藏在斯里兰卡大寺（Mahāvihāra）书写成文'},
+  {id:'t3', col:'nan',year:-80, fill:'#dcfce7',label:'阿努拉德普勒三大寺院\n大寺 / 无畏山寺 / 祇陀林寺',desc:'斯里兰卡阿努拉德普勒时期形成三大寺院：大寺（Mahāvihāra，保守正统）、无畏山寺（Abhayagiri）、祇陀林寺（Jetavana）'},
+  {id:'t4', col:'nan',year:-80, fill:'#dcfce7',label:'大寺\n保守，强调巴利三藏与上座部正统',desc:'大寺代表斯里兰卡上座部保守正统，以坚守巴利三藏、巴利律和上座部教义为特色。后来的觉音注疏与《清净道论》即在这一传统中取得规范地位。'},
+  {id:'t5', col:'nan',year:-80, fill:'#dcfce7',label:'无畏山寺、祇陀林寺\n较开放接触大乘/密教材料',desc:'无畏山寺和祇陀林寺相对开放，曾接触大乘和密教材料'},
+  {id:'t6', col:'nan',year:1170,fill:'#dcfce7',label:'1153-1186 波罗迦罗摩巴忽一世改革\n整顿僧团，统一到大寺系统',desc:'斯里兰卡国王波罗迦罗摩巴忽一世于12世纪进行重大佛教改革，将三寺统一到大寺系统之下'},
+  {id:'t7', col:'nan',year:1200,fill:'#dcfce7',label:'11-13世纪以后\n斯里兰卡戒统与巴利传统影响东南亚',desc:'11-13世纪后，斯里兰卡大寺系统的戒统和巴利传统对东南亚各地上座部佛教产生深远影响'},
+  {id:'t8', col:'nan',year:1400,fill:'#dcfce7',label:'南传上座部特色\n巴利三藏、律藏、托钵\n离非时食、半月诵戒、止观禅修',desc:'现代南传上座部的核心特色：依巴利三藏为圣典、严守律藏（含托钵、离非时食等）、修习止观禅修'},
+  {id:'t9', col:'nan',year:2020,fill:'#dcfce7',label:'现代中心\n斯里兰卡、缅甸、泰国、老挝、柬埔寨等',desc:'现代南传上座部主要流行于斯里兰卡、缅甸、泰国、老挝、柬埔寨等东南亚国家，并通过现代禅修运动、跨国僧团教育和全球弘法网络继续扩展。'},
+  {id:'h0', col:'han',year:80,  fill:'#eef2ff',label:'东汉1-2世纪\n佛教经西域/中亚进入汉地\n早期非纯大乘也非纯部派',desc:'东汉时代，佛教经西域和中亚丝绸之路传入中国汉地。早期既有部派佛教的禅观类文本，也有大乘经典。汉传佛教后来形成"大乘思想为主体、部派律藏为制度基础"的复合结构。'},
+  {id:'h1', col:'han',year:148, fill:'#eef2ff',label:'148年后 安世高译经\n禅观、阿毗达摩、早期佛教',desc:'安世高（约2世纪，安息国人）入洛阳，系统汉译部派佛教禅观、阿毗达摩和早期佛教典籍'},
+  {id:'h2', col:'han',year:167, fill:'#eef2ff',label:'167-186 支娄迦谶译经\n早期大乘；179《般舟三昧经》',desc:'支娄迦谶是早期大乘经典汉译的先驱，于179年译出《般舟三昧经》等重要大乘经典'},
+  {id:'h3', col:'han',year:250, fill:'#eef2ff',label:'3世纪 支谦、竺法护等\n大量大乘经典译入',desc:'支谦、竺法护等译经师翻译了大量大乘经典，包括早期《法华经》《维摩诘经》等'},
+  {id:'h4', col:'han',year:350, fill:'#eef2ff',label:'4世纪 道安、慧远\n译经目录、僧团规范、庐山净土传统',desc:'道安编制译经目录，制定僧团规范；慧远在庐山建立净土修行传统'},
+  {id:'h5', col:'han',year:401, fill:'#eef2ff',label:'401-413 鸠摩罗什长安译场\n《法华》《维摩》《金刚》《中论》等',desc:'鸠摩罗什（344-413年）在长安主持大规模译经，译出《妙法莲华经》《维摩诘经》《金刚经》《中论》等，是汉传佛教译经史上最重要的里程碑之一'},
+  {id:'h6', col:'han',year:450, fill:'#eef2ff',label:'魏晋南北朝义学\n般若、涅槃、成实、毗昙、地论、摄论',desc:'魏晋南北朝时期，围绕般若、涅槃、《成实论》《俱舍论》《十地经论》《摄大乘论》等展开深入义学研究'},
+  {id:'h7', col:'han',year:560, fill:'#eef2ff',label:'天台宗 智顗 538-597\n《法华》圆教；一心三观、三谛圆融、止观双修',desc:'智顗（538-597年）创立天台宗，以《法华经》为最高圆教，建立一心三观、三谛圆融的判教体系'},
+  {id:'h8', col:'han',year:570, fill:'#eef2ff',label:'三论宗 吉藏 549-623\n中观三论；破邪显正、二谛中道',desc:'吉藏（549-623年）集三论宗之大成，弘扬中观二谛中道思想'},
+  {id:'h9', col:'han',year:650, fill:'#eef2ff',label:'法相宗 玄奘/窥基\n唯识、八识、三性、五位百法',desc:'玄奘（602-664年）西行取经归来后，与弟子窥基创立法相宗（唯识宗），以八识、三性三无性为核心'},
+  {id:'h10',col:'han',year:650, fill:'#eef2ff',label:'华严宗 法藏 643-712\n法界缘起、事事无碍、十玄门',desc:'法藏（643-712年）建立华严宗，阐发法界缘起、事事无碍的宏大世界观'},
+  {id:'h11',col:'han',year:640, fill:'#eef2ff',label:'律宗 道宣 596-667\n《四分律》；汉传受戒基础来自法藏部律',desc:'道宣（596-667年）创立南山律宗，以《四分律》（法藏部律）为汉传僧尼受戒基础'},
+  {id:'h12',col:'han',year:650, fill:'#eef2ff',label:'净土宗 善导 613-681\n信愿念佛、往生极乐\n后成最普及法门之一',desc:'善导（613-681年）是净土宗实际创立者，以信愿持名念佛、往生极乐净土为修行目标'},
+  {id:'h13',col:'han',year:700, fill:'#eef2ff',label:'禅宗 6-8世纪形成，唐宋制度化\n顿悟、见性、公案、师徒传法',desc:'禅宗6-8世纪在汉地逐渐形成，唐代六祖惠能（638-713年）确立顿悟宗风，以见性成佛、公案为特色'},
+  {id:'h14',col:'han',year:720, fill:'#eef2ff',label:'唐密 8世纪\n善无畏、金刚智、不空\n真言、曼荼罗、灌顶',desc:'8世纪善无畏（637-735年）、金刚智（669-741年）、不空（705-774年）相继来华传密法，建立唐密'},
+  {id:'h15',col:'han',year:843, fill:'#eef2ff',label:'841-846 会昌法难\n重创寺院经济和义学宗派',desc:'唐武宗会昌年间大规模灭佛，重创天台、三论、唯识、华严等义学宗派，禅宗和净土宗相对更具生命力'},
+  {id:'h16',col:'han',year:1000,fill:'#eef2ff',label:'宋以后\n禅宗成寺院主流框架，净土普及，禅净融合',desc:'宋代以后，禅宗成为汉传佛教寺院的主流框架，净土法门在民间广泛普及，禅净融合成为主要修行趋向'},
+  {id:'h17',col:'han',year:1400,fill:'#eef2ff',label:'明清以后\n禅净双修、宗派边界淡化、综合实践',desc:'明清时代，禅净双修成为主流，宗派边界逐渐淡化，汉传佛教呈现综合实践的特点'},
+  {id:'h18',col:'han',year:1900,fill:'#eef2ff',label:'近现代复兴\n太虚、印顺、虚云、弘一、印光等',desc:'近现代汉传佛教复兴运动：太虚倡人生佛教；印顺推动佛学现代研究；虚云振兴禅宗；弘一复兴南山律宗；印光弘扬净土'},
+  {id:'h19',col:'han',year:1000,fill:'#eef2ff',label:'东亚传播\n中国→韩国、日本、越南\n汉语系/东亚佛教圈',desc:'汉传佛教沿着文化圈传播至朝鲜半岛（约4世纪）、日本（约6世纪）和越南，形成以汉语经典为共同纽带的东亚佛教文化圈'},
+  {id:'tb0', col:'zang',year:640, fill:'#f5f3ff',label:'7世纪 松赞干布时期\n佛教由尼泊尔、中国等方向传入吐蕃',desc:'松赞干布（约617-650年）统治时期，通过尼泊尔赤尊公主和唐朝文成公主带来的佛像，佛教开始在吐蕃传播'},
+  {id:'tb1', col:'zang',year:775, fill:'#f5f3ff',label:'755-797 赤松德赞时期\n寂护、莲花生入藏；桑耶寺建立\n第一批藏人出家',desc:'赤松德赞（742-797年）时期：寂护（Śāntarakṣita）和莲花生大士（Padmasambhava）入藏；779年桑耶寺建立；第一批七位藏人正式出家'},
+  {id:'tb2', col:'zang',year:793, fill:'#f5f3ff',label:'792-794 传统：桑耶辩论\n反映吐蕃选择印度佛教体系为正统的记忆',desc:'792-794年桑耶寺辩论：印度方（莲花戒，渐悟论）对阵汉地方（大乘和尚，顿悟论）。吐蕃最终选择以印度佛教为正统'},
+  {id:'tb3', col:'zang',year:842, fill:'#f5f3ff',label:'842前后 朗达玛灭佛 / 吐蕃王朝崩解\n制度性支持瓦解，进入所谓黑暗期',desc:'朗达玛（838-842年在位）灭佛，吐蕃王朝随后崩解，藏传佛教进入约100年的"黑暗期"（前弘期结束）'},
+  {id:'tb4', col:'zang',year:1000,fill:'#f5f3ff',label:'10世纪后期-11世纪\n后弘期开始；新译派兴起',desc:'约978年起，后弘期（phyi dar）开始。仁钦桑波等大译师赴印度学习，带回新的印度密法，新译派（gsar ma pa）兴起'},
+  {id:'tb5', col:'zang',year:1042,fill:'#f5f3ff',label:'982-1054 阿底峡，1042入藏\n噶当派、道次第、修心传统',desc:'阿底峡（Atiśa，982-1054年）于1042年应邀入藏，传授"菩提道灯论"，奠定藏传佛教道次第修行体系的基础，弟子创立噶当派'},
+  {id:'tb6', col:'zang',year:1100,fill:'#f5f3ff',label:'宁玛派\n旧译密续、莲花生、伏藏传统\n"旧派"身份随新译派更清楚',desc:'宁玛派（Rnying ma pa，旧译派）以前弘期传入的密续和莲花生大士的伏藏（gter ma）教法为特色，是最古老的藏传佛教宗派'},
+  {id:'tb7', col:'zang',year:1100,fill:'#f5f3ff',label:'噶举派 11-12世纪\n玛尔巴、密勒日巴、冈波巴\n大手印传统',desc:'噶举派（bka\' brgyud pa）11-12世纪形成：玛尔巴赴印度学法，弟子密勒日巴苦修成就，再传冈波巴建立寺院制度，以大手印（Mahāmudrā）为核心'},
+  {id:'tb8', col:'zang',year:1073,fill:'#f5f3ff',label:'萨迦派 1073萨迦寺\n昆氏家族；13世纪与蒙古关系\n八思巴与忽必烈',desc:'萨迦派（Sa skya pa）1073年建萨迦寺。13世纪八思巴（1235-1280年）成为元世祖忽必烈国师，藏传佛教政治影响力达到顶峰'},
+  {id:'tb9', col:'zang',year:1409,fill:'#f5f3ff',label:'格鲁派 宗喀巴 1357-1419\n1409甘丹寺；重戒律、学制、显密次第',desc:'格鲁派（dGe lugs pa，"善规派"）由宗喀巴（1357-1419年）创立，1409年建甘丹寺。重视严格戒律、系统学制，建立显宗与密宗的修行次第'},
+  {id:'tb10',col:'zang',year:1578,fill:'#f5f3ff',label:'1578 "达赖喇嘛"称号\n俺答汗授予索南嘉措；前两世追认',desc:'1578年蒙古俺答汗授予索南嘉措"达赖喇嘛"称号，并追认前两世，确立了这一传承制度'},
+  {id:'tb11',col:'zang',year:1642,fill:'#f5f3ff',label:'1642 五世达赖建立甘丹颇章政权\n格鲁派取得政治主导',desc:'1642年五世达赖喇嘛在蒙古固始汗支持下建立甘丹颇章政权，格鲁派取得西藏政教主导地位'},
+  {id:'tb12',col:'zang',year:1820,fill:'#f5f3ff',label:'19世纪 利美运动\n跨宗派保存教法：蒋贡康楚、蒋扬钦哲等',desc:'"利美运动"（Ris med，不分派运动）兴起，蒋贡康楚、蒋扬钦哲等跨越宗派界限，系统收集和保存各派濒临失传的教法与仪轨'},
+  {id:'tb13',col:'zang',year:1960,fill:'#f5f3ff',label:'1959以后\n藏传佛教全球传播',desc:'1959年达赖喇嘛流亡印度后，藏传佛教师在全球范围内弘法，使藏传佛教在欧美、东亚及全球广泛传播'},
+  {id:'tb14',col:'zang',year:1300,fill:'#f5f3ff',label:'藏传特色\n根本说一切有部律 + 大乘中观/唯识\n印度后期密教\n灌顶、曼荼罗、本尊瑜伽、护法体系',desc:'藏传佛教独特结构：以根本说一切有部律为比丘戒基础；以印度大乘中观、唯识哲学为理论核心；以印度后期密教（Vajrayāna）为修行最高层次。它不是单纯的"密教"，而是部派律、大乘显教和密教三层融合。'},
+  {id:'d1', col:'ind',year:600, fill:'#ffedd5',label:'6-8世纪以后\n婆罗门/印度教传统复兴\n梵语学术文化强势',desc:'6-8世纪以后，婆罗门教和印度教传统强势复兴，梵语在宫廷、学术、宗教和文学中占主导地位，佛教面临激烈竞争'},
+  {id:'d2', col:'ind',year:700, fill:'#ffedd5',label:'佛教逐步梵语化\n佛教混合梵语、标准梵语成为许多经论用语',desc:'随着婆罗门文化的强势，印度佛教经典逐步梵语化，以佛教混合梵语或标准梵语书写'},
+  {id:'d3', col:'ind',year:800, fill:'#ffedd5',label:'8-12世纪\n显教、大乘、密教并存\n大型寺院大学繁荣',desc:'8-12世纪，那烂陀、超戒寺（Vikramaśīla）等大型寺院大学达到全盛，显教大乘与密教并存'},
+  {id:'d4', col:'ind',year:1200,fill:'#ffedd5',label:'12-13世纪\n印度本土佛教大规模衰落\n王权支持转移、寺院经济变化、军事破坏等多因素',desc:'12-13世纪印度佛教大规模衰落，多重因素共同作用：印度教的挑战、王权支持转移、伊斯兰军队对寺院的军事破坏（1193年超戒寺、1203年那烂陀寺遭毁）'},
+  {id:'d5', col:'ind',year:1250,fill:'#ffedd5',label:'部派作为独立僧团消失\n但遗产继续：巴利律/法藏部律/根本说一切有部律',desc:'部派佛教作为独立的僧团和三藏传承系统基本消亡，但其律藏遗产以不同形式保存在三大传统中'},
+  {id:'d6', col:'ind',year:1300,fill:'#ffedd5',label:'三大现存律藏传统\n南传：巴利律\n汉传：法藏部《四分律》\n藏传：根本说一切有部律',desc:'现今全球三大佛教律藏传统：南传巴利律藏（赤铜鍱部/上座部传统）、汉传法藏部《四分律》、藏传根本说一切有部律。《五分律》等其他汉译律藏虽未成为主流受戒制度，仍保存重要部派律学遗产。'},
+  {id:'ac0', col:'ac', year:100, fill:'#e0f2fe',label:'汉传佛教经典基础不是纯大乘\n三类材料共同构成：\n①阿含/律藏/阿毗达摩\n②大乘经论\n③后期密教经典与仪轨',desc:'汉传佛教经典体系由三类材料复合构成：部派佛教的阿含经、律藏、阿毗达摩；大乘经典和论书；唐代以后密教经典与仪轨'},
+  {id:'ac1', col:'ac', year:150, fill:'#e0f2fe',label:'2世纪起：安世高入洛阳\n先译禅观、数息观、四谛、十二因缘、阿毗昙类\n部派佛教修行技术和教义分析先行入华',desc:'2世纪起安世高在洛阳译经，部派佛教的禅观技术、阿毗达摩教义分析等先行进入汉地'},
+  {id:'ac2', col:'ac', year:200, fill:'#e0f2fe',label:'2-4世纪：单经零散汉译阶段\n支娄迦谶、支谦、竺法护等\n部派经典、大乘经典、禅观、本生譬喻交错输入',desc:'2-4世纪是汉译经典的早期积累阶段，各类经典交错输入，呈现多元混合的局面'},
+  {id:'ac3', col:'ac', year:-400,fill:'#f0f9ff',label:'阿含/尼柯耶雏形\n佛灭后数代口传分类\n长篇、中篇、主题相应、数字递增',desc:'佛灭后数代，经典在口传过程中按内容特点分类，形成四阿含/四尼柯耶的基本分类格局'},
+  {id:'ac4', col:'ac', year:-200,fill:'#f0f9ff',label:'约前3-前1世纪：部派经藏定型\n各部派拥有自己的\n《长阿含》《中阿含》《杂阿含》《增一阿含》等',desc:'约前3至前1世纪，各部派逐渐形成自己的经藏版本'},
+  {id:'ac5', col:'ac', year:100, fill:'#f0f9ff',label:'前1世纪-后4世纪：写本与跨地域传播\n梵文、佛教混合梵语、中古印度语\n犍陀罗语、中亚传本并存',desc:'前1世纪至后4世纪，经典以多种语言形式在各地流传，形成复杂的多语言传本体系'},
+  {id:'ac6', col:'ac', year:390, fill:'#bae6fd',label:'384-443：整部四阿含陆续汉译\n中国不是此时首次"编成阿含"\n而是翻译已在印度部派中成型的经藏集合',desc:'384-443年间，四部阿含陆续完整汉译。这是翻译已在印度各部派中成型的经藏，而非在中国重新"编成阿含"'},
+  {id:'ac7', col:'ac', year:398, fill:'#dbeafe',label:'《中阿含》T26 397-398\n瞿昙僧伽提婆译\n多归说一切有部或相关传统\n平行巴利《中部》',desc:'《中阿含经》（T26，222经），瞿昙僧伽提婆于397-398年译出，与巴利《中部》（Majjhima Nikāya，152经）内容大体平行'},
+  {id:'ac8', col:'ac', year:390, fill:'#dbeafe',label:'《增一阿含》T125\n约384初译，397-398修订/重译\n传统复杂；与《增支部》平行但差异最大',desc:'《增一阿含经》（T125），传译史较复杂。与巴利《增支部》（Aṅguttara Nikāya）内容平行，但在四部阿含中差异最大'},
+  {id:'ac9', col:'ac', year:413, fill:'#dbeafe',label:'《长阿含》T1 413\n佛陀耶舍、竺佛念译\n多归法藏部\n平行巴利《长部》',desc:'《长阿含经》（T1，30经），413年由佛陀耶舍与竺佛念合译，多归法藏部传统，与巴利《长部》（Dīgha Nikāya，34经）内容大体平行'},
+  {id:'ac10',col:'ac', year:443, fill:'#dbeafe',label:'《杂阿含》T99 435-443\n求那跋陀罗译\n多归说一切有部\n平行巴利《相应部》；研究早期佛教关键材料',desc:'《杂阿含经》（T99），求那跋陀罗于435-443年译出，与巴利《相应部》（Saṃyutta Nikāya）最为接近'},
+  {id:'ac11',col:'ac', year:450, fill:'#e0f2fe',label:'别译杂阿含与大量单经译本\n现代研究以巴利尼柯耶、汉译阿含\n梵文残片、犍陀罗写本、藏译平行互校',desc:'除四部主要阿含外，还有大量别译和单行经典。现代研究以多种传本进行比较互校'},
+  {id:'ac12',col:'ac', year:650, fill:'#fef3c7',label:'4-8世纪：目录鉴别阶段\n道安目录、僧祐《出三藏记集》\n智昇730《开元释教录》\n建立汉文佛典知识秩序',desc:'道安、僧祐（445-518年）、智昇于730年编《开元释教录》，系统鉴别真伪、建立汉文佛典的知识秩序'},
+  {id:'ac13',col:'ac', year:1000,fill:'#fef3c7',label:'10-13世纪后：汉文大藏经入藏与雕版\n北宋《开宝藏》开启雕版大藏经传统\n阿含被固定为大藏经一部分',desc:'北宋（971-983年）《开宝藏》是中国第一部雕版大藏经，阿含经在此时被固定为大藏经的一个部分'},
+  {id:'ac14',col:'ac', year:1920,fill:'#fef3c7',label:'19-21世纪：近现代校勘与学术重估\n《大正藏》、CBETA\n阿含与巴利尼柯耶比较研究兴起',desc:'《大正新脩大藏经》（1924-1934年）科学校勘；CBETA数字化大藏经；学术界系统推进阿含与巴利尼柯耶比较研究'},
+  {id:'ac15',col:'ac', year:410, fill:'#dcfce7',label:'律藏入华：汉传僧团制度的部派基础\n汉传思想以大乘为主，但出家戒律来自部派律藏',desc:'律藏汉译是建立汉传僧团制度的关键：汉传佛教思想以大乘为主，但出家人的受戒基础来自部派律藏（主要是法藏部《四分律》）'},
+  {id:'ac16',col:'ac', year:407, fill:'#dcfce7',label:'《十诵律》404-409\n说一切有部律\n早期在中国有影响',desc:'鸠摩罗什等译《十诵律》（404-409年），属说一切有部律藏，早期在汉地有重要影响'},
+  {id:'ac17',col:'ac', year:411, fill:'#dcfce7',label:'《四分律》410-412\n法藏部律\n后成为中国、韩国、越南及日本传统受戒核心律藏',desc:'佛陀耶舍等译《四分律》（410-412年），属法藏部律藏，60卷。经道宣南山律宗的弘扬，成为汉传受戒标准律藏'},
+  {id:'ac18',col:'ac', year:417, fill:'#dcfce7',label:'《摩诃僧祇律》416-418\n大众部律\n由佛陀跋陀罗、法显等译出',desc:'法显从印度带回、与佛陀跋陀罗合译的《摩诃僧祇律》（416-418年），属大众部律藏'},
+  {id:'ac19',col:'ac', year:423, fill:'#dcfce7',label:'《五分律》422-423\n化地部律\n保存化地部律藏传统',desc:'佛陀什等译《五分律》（422-423年），属化地部律藏，30卷，保存化地部律藏的珍贵内容'},
+  {id:'ac20',col:'ac', year:710, fill:'#dcfce7',label:'《根本说一切有部律》唐代7-8世纪\n义净等译\n汉地未成主流；藏传佛教以此为比丘戒基础',desc:'义净（635-713年）译《根本说一切有部律》，在汉地虽未成主流，却是藏传佛教比丘戒的基础'},
+  {id:'ac21',col:'ac', year:640, fill:'#bbf7d0',label:'道宣596-667 南山律宗\n以《四分律》为中心\n确立"汉传大乘思想 + 法藏部律藏"的复合结构',desc:'道宣在终南山建立南山律宗，确立了汉传佛教"大乘思想+部派律藏"的制度性复合结构'},
+  {id:'ac22',col:'ac', year:200, fill:'#f5f3ff',label:'阿毗达摩与部派论书入华\n说一切有部阿毗达摩影响最大',desc:'《俱舍论》《大毗婆沙论》等部派阿毗达摩论书译入汉地，说一切有部阿毗达摩体系影响最为深远'},
+  {id:'ac25',col:'ac', year:600, fill:'#fde68a',label:'部派经典在汉传中的作用\n阿含：早期教法基础\n律藏：僧团制度基础\n阿毗达摩：分析语言\n保留非大乘早期佛教记忆',desc:'部派经典在汉传佛教中发挥四重作用：阿含保存早期教法基础；律藏规范僧团制度；阿毗达摩提供哲学分析语言；整体保留早期非大乘佛教的记忆'},
+  {id:'ac26',col:'ac', year:800, fill:'#fdba74',label:'结论：汉传佛教是复合型传统\n部派律藏为制度基础\n阿含/阿毗达摩为早期教义资源\n大乘经论为思想主体\n唐以后吸收密教仪轨',desc:'汉传佛教的本质是多层次复合型传统：以部派律藏为僧团制度基础，以阿含经和阿毗达摩为早期教义资源，以大乘经典和论书为思想主体，唐代以后又吸收密教仪轨'},
+  {id:'e', col:'end',year:2020,fill:'#ffe4e6',label:'南传/北传/藏传三大佛教体系成型',desc:'经过约2500年的发展演变，佛教最终形成三大主要传统：南传上座部佛教（巴利语系）、北传大乘佛教/汉传佛教（汉语系）、藏传佛教（藏语系，显密合修）'},
+
+  // ── 南传补充：觉音、泰国/缅甸史、近现代禅修、云南 ──
+  {id:'buddhaghosa',col:'nan',year:430, fill:'#dcfce7',label:'觉音 Buddhaghosa 约5世纪\n《清净道论》\n南传上座部规范诠释',desc:'觉音（Buddhaghosa，约5世纪）在斯里兰卡大寺编著《清净道论》（Visuddhimagga）及大量巴利注疏，系统化南传上座部戒定慧、四十业处、十六观智修道体系。它不是三藏本身，而是巴利三藏之后的规范性论疏诠释；其沉默或不接纳说一切有部、大众部、大乘等体系，反映南传大寺传统的边界。'},
+  {id:'thai_early',col:'nan',year:700, fill:'#dcfce7',label:'6-11世纪 泰国地区\n孟族/高棉/大乘/密教\n多元佛教并存',desc:'6-11世纪泰国地区（堕罗钵底等孟族王国、高棉帝国影响区域）存在孟族佛教、高棉佛教、大乘、密教、婆罗门和地方信仰并存局面，并非单一早期南传上座部。13世纪素可泰兴起后，兰卡系上座部才成为泰族王权佛教核心。'},
+  {id:'bagan',     col:'nan',year:1060,fill:'#dcfce7',label:'1044-1077 蒲甘阿奴律陀\n缅甸上座部国家化\n压制阿利僧等混杂密教',desc:'阿奴律陀（Anawrahta，1044-1077在位）在善阿罗汉（Shin Arahan）影响下推动上座部成为蒲甘王权正统，传统说从直通取得三藏，压制阿利僧等混杂密教群体。现代学界认为阿奴律陀确是缅甸统一和上座部国家化的重要节点，但"征服直通取经"细节可能含有后世合法性叙事。蒲甘成为东南亚重要佛教中心。'},
+  {id:'thai_sukhothai',col:'nan',year:1260,fill:'#dcfce7',label:'13世纪 素可泰王国\n兰卡系上座部成主流\n兰甘亨王·《三界论》',desc:'13世纪素可泰王国通过迎请斯里兰卡系长老，使大寺传统上座部成为泰族王权佛教核心。兰甘亨王与斯里兰卡系上座部关系密切，立泰王著《三界论》是重要文献，为后来法宗派改革奠定基础。'},
+  {id:'mandalay5', col:'nan',year:1856,fill:'#dcfce7',label:'1853-1878 缅甸明东王\n第五次三藏结集\n曼德勒729块石经',desc:'明东王（Mindon，1853-1878在位）于曼德勒主持第五次三藏结集，在729块大理石板上刻写巴利三藏，象征缅甸王权对三藏保存的护持，是缅甸王权佛教护法的高峰。石经至今保存于曼德勒固都陶佛塔（世界最大的书）。'},
+  {id:'thai_reform',col:'nan',year:1850,fill:'#dcfce7',label:'19世纪 蒙固王/拉玛四世\n法宗派（Dhammayut）改革\n严格戒律·巴利学习',desc:'蒙固王出家期间创立法宗派（Dhammayut Nikāya），强调更严格的戒律、系统巴利学习和对正统上座部的回归；成为拉玛四世后推行国家宗教政策。为阿姜绍、阿姜曼等泰国森林传统的兴起提供了制度和精神环境。'},
+  {id:'colonial_myanmar',col:'nan',year:1885,fill:'#dcfce7',label:'1885年后 英国殖民缅甸\n王权佛教秩序瓦解\n内观大众化背景',desc:'1885年英国吞并缅甸上缅甸，国王被流放，王权不再作为僧团最高护持者。僧团教育、在家佛教组织、印刷出版和民族主义佛教随之转型。这是雷迪西亚多将内观修行推向在家大众的直接历史背景（Erik Braun语）。'},
+  {id:'ledi',      col:'nan',year:1900,fill:'#dcfce7',label:'雷迪西亚多 1846-1923\n内观推向在家大众\n现代内观运动关键先驱',desc:'雷迪西亚多（Ledi Sayadaw，1846-1923）处于英国殖民、王权佛教秩序崩解和佛教现代化的历史压力中，把阿毗达摩理解、内观修行和护持佛法的责任推向更广大的在家众，是现代内观运动的"关键建筑师"（Erik Braun语）。其影响延伸至乌巴庆—葛印卡和马哈希两大系统。'},
+  {id:'ajahn_man', col:'nan',year:1910,fill:'#dcfce7',label:'阿姜绍 1859-1941\n阿姜曼 1870-1949\n泰国森林传统形成',desc:'阿姜绍·甘塔西罗（1859-1941）和阿姜曼·布里达陀（1870-1949）与法宗派背景密切，强调严格持戒、头陀行（dhutaṅga）、森林独居、禅修实证和回归早期僧团理想。阿姜曼弟子（阿姜帖、阿姜摩诃布瓦、阿姜查等）传承影响尤大，阿姜查（1918-1992）将森林传统带向西方。'},
+  {id:'mahasi',    col:'nan',year:1949,fill:'#dcfce7',label:'马哈希西亚多 1904-1982\n四念处密集禅修·腹部起伏标记法\n国际传播最广的上座部禅修系统',desc:'马哈希西亚多（Mahāsi Sayadaw，1904-1982）强调以四念处为基础的密集禅修，以腹部起伏观察为入手，行住坐卧持续标记（noting/labelling）。1949年仰光Mahāsi Sāsana Yeiktha建立后迅速制度化，成为国际上最广泛传播的上座部禅修系统之一，并传入斯里兰卡、泰国、印度、欧美和东亚。'},
+  {id:'yangon6',   col:'nan',year:1954,fill:'#dcfce7',label:'1954-1956 缅甸仰光\n第六次三藏结集\nKaba Aye·巴利三藏校勘',desc:'第六次三藏结集（Chaṭṭha Saṅgāyana）于1954年卫塞节在缅甸仰光Kaba Aye的Mahā Pāsāṇa Guhā开幕，1956年卫塞节圆满，配合南传传统佛灭2500年纪念。吴努政府支持，约2500位来自南传国家的长老参与，逐句校勘巴利三藏、注疏和复注，形成现代印刷与数字化所依的Chaṭṭha Saṅgāyana版本。马哈希西亚多任发问者和最终编辑之一，明昆西亚多等负责答诵。'},
+  {id:'goenka',    col:'nan',year:1969,fill:'#dcfce7',label:'乌巴庆 1899-1971\n葛印卡 1924-2013\n十日内观课程全球化',desc:'乌巴庆（U Ba Khin，1899-1971）在缅甸政府官员和在家众中推广内观，建立国际禅修中心。葛印卡（S. N. Goenka，1924-2013）从其系统出发，1969年后把十日内观课程带到印度和全球；高度课程化、非宗派化表达强，强调安般准备、全身感受扫描、保持平等心。是现代全球内观和世俗正念运动的重要来源之一。'},
+  {id:'yunnan',    col:'nan',year:1300,fill:'#dcfce7',label:'13世纪后 云南西双版纳\n南传上座部制度化\n傣族贝叶经·寺塔遍村落',desc:'13世纪后南传上座部在云南西双版纳等地稳定制度化，与傣文等区域文字系统结合，寺塔遍布傣族村落。主要传播对象：傣族（傣泐、傣那）、布朗族、德昂族、阿昌族等，与缅甸、泰国、老挝等地东南亚佛教网络密切相连。地方派别（润派、多列派、摆庄派、左抵派等）在此阶段形成。'},
+  {id:'yunnan_revival',col:'nan',year:1985,fill:'#dcfce7',label:'1980年代后\n云南南传佛教复兴\n与东南亚跨境网络重连',desc:'1980年代后，云南南传佛教在改革开放背景下逐步复兴：寺院重建，僧人教育恢复，与缅甸、泰国、老挝等地的跨境佛教网络重新活跃；傣泐、布朗等群体佛教生活复兴。21世纪进入跨境和现代教育语境（云南佛学院、湄公河区域佛教复兴、旅游与非遗保护等）。'},
+
+  // ── 东亚传播：韩国 ──
+  {id:'kr1',col:'ea',year:372, fill:'#fefce8',label:'372年 高句丽\n384年 百济\n佛教传入朝鲜半岛',desc:'372年高句丽正式接受佛教（前秦苻坚遣使送经像）；384年百济接受佛教（东晋僧摩罗难陀）。百济后来成为佛教传入日本的重要中介。'},
+  {id:'kr2',col:'ea',year:527, fill:'#fefce8',label:'527/528年 新罗\n三国时期完成接受佛教\n佛教国家化',desc:'新罗527/528年正式承认佛教（异次顿殉教传说），完成朝鲜半岛三国时期全面接受佛教。佛教成为新罗国家建设和王权合法性的重要资源。'},
+  {id:'kr3',col:'ea',year:617, fill:'#fefce8',label:'元晓 617-686\n义湘 625-702\n和诤思想·华严传播',desc:'元晓以圆融和诤（회통）思想著称，试图调和各部派和大乘宗派之争；义湘赴唐跟随法藏学华严，回新罗建立华严思想，对韩国佛教影响深远。两人是新罗佛教思想史高度的代表。'},
+  {id:'kr4',col:'ea',year:1000,fill:'#fefce8',label:'918-1392 高丽时期\n高丽大藏经雕造\n知讷 1158-1210 定慧双修',desc:'高丽时期佛教国家化，雕造《高丽大藏经》（13世纪，现存最完整的汉文大藏经版本之一）是东亚佛教史重大事件。知讷（Jinul，1158-1210）推动定慧双修、顿悟渐修，建立曹溪宗制度，是韩国禅宗关键人物。'},
+  {id:'kr5',col:'ea',year:1420,fill:'#fefce8',label:'1392-1910 朝鲜王朝\n儒学国家化·佛教受压制\n山林僧团延续',desc:'朝鲜王朝以儒学为国家意识形态，僧侣社会地位下降，城市内不得有寺院，但山林僧团和禅修传统得以延续。近现代曹溪宗成为韩国佛教主流，继承高丽禅宗传统。'},
+
+  // ── 东亚传播：日本 ──
+  {id:'jp1',col:'ea',year:545, fill:'#fce7f3',label:'538/552年\n百济传佛教入日本\n圣德太子·国家伦理',desc:'百济王向日本朝廷献上佛像、经典和法具（538年或552年，两种传统说法），是日本佛教史的开端。圣德太子（574-622年）将佛教用于支持国家伦理和王权秩序，制定《十七条宪法》以"以和为贵""敬三宝"为要义。'},
+  {id:'jp2',col:'ea',year:740, fill:'#fce7f3',label:'710-784 奈良佛教\n南都六宗\n东大寺大佛·国家护持',desc:'奈良时期形成三论、成实、法相、俱舍、华严、律宗等南都六宗，以学派和国家寺院（国分寺体系）为中心；756年东大寺大佛（毗卢遮那佛）开光是国家护持佛教的象征。'},
+  {id:'jp3',col:'ea',year:800, fill:'#fce7f3',label:'最澄 767-822 天台宗\n空海 774-835 真言宗\n比叡山·高野山',desc:'最澄（Saichō，767-822）从唐引入天台，建立比叡山延历寺，平安佛教与贵族文化、密教仪轨和神佛习合密切结合；空海（Kūkai，774-835）从唐学密教，建立真言宗（高野山金刚峯寺），带回密教仪轨、曼荼罗和灌顶体系。两宗成为平安时代主流，也是镰仓新佛教的母土。'},
+  {id:'jp4',col:'ea',year:1200,fill:'#fce7f3',label:'1133-1282 镰仓新佛教\n法然净土·亲鸾真宗\n荣西临济·道元曹洞·日莲',desc:'法然（1133-1212）净土宗；亲鸾（1173-1263）净土真宗；一遍（1239-1289）时宗；荣西（1141-1215）临济禅；道元（1200-1253）曹洞禅；日莲（1222-1282）日莲宗。日本佛教大众化、宗派化的高峰，各以简明有力的实践（称名、坐禅、信心、法华题目）为特色。'},
+  {id:'jp5',col:'ea',year:1700,fill:'#fce7f3',label:'1603-1868 江户寺檀制度\n佛教纳入幕府户籍管理\n葬式佛教形态',desc:'江户幕府寺檀制度（寺请制度）使佛教寺院成为幕府户籍管理机构，每户须隶属一寺；佛教与民间生活制度性结合，也形成"葬式佛教"等形态，对近代佛教批判和改革产生影响。'},
+  {id:'jp6',col:'ea',year:1870,fill:'#fce7f3',label:'1868年后 明治维新\n神佛分离·废佛毁释\n日本佛教现代重组',desc:'1868年明治政府推行神佛分离令，破坏神佛习合体制；民间废佛毁释运动损毁大量寺院。随后各传统宗派、在家佛教团体和新宗教并存发展，日本佛教进入现代重组时期。'},
+
+  // ── 东亚传播：越南 ──
+  {id:'vn1',col:'ea',year:400, fill:'#ecfccb',label:'约1-6世纪 越南\n早期多元佛教\n汉传大乘+海路来源',desc:'约西元初前后，佛教经海路和中国路线进入越南北部（交州）。2-6世纪交州成为中国、印度、东南亚佛教网络的重要节点，有汉传大乘和海路来自印度的多元来源。越南佛教早期的多元性与其地处东西交汇的地理位置密切相关。'},
+  {id:'vn2',col:'ea',year:1220,fill:'#ecfccb',label:'10-14世纪 李朝陈朝\n竹林禅派·陈仁宗\n越南本土禅宗高峰',desc:'李朝（1009-1225）、陈朝（1225-1400）是越南佛教兴盛时期，汉传大乘和禅高度发展。13世纪陈仁宗（Trần Nhân Tông，1258-1308）出家后创立竹林禅派（Trúc Lâm），将禅修、国家治理和越南本土身份相结合，是越南独特佛教—政治传统的高峰。后黎以来儒学国家化使佛教地位下降，但民间信仰延续。'},
+
+  // ── 东亚传播：台湾 ──
+  {id:'tw1',col:'ea',year:1920,fill:'#e0f2fe',label:'1895-1945 日本殖民台湾\n净土真宗·曹洞·临济等入台\n现代佛教制度整形期',desc:'日本殖民期净土真宗、曹洞宗、临济宗、真言宗、日莲宗等随殖民统治进入台湾，影响佛教教育组织和现代化。1949年前后大陆僧侣（慈航、印顺、东初、白圣等）迁台，带来汉传僧团制度与思想资源，奠定现代台湾佛教基础。'},
+  {id:'tw2',col:'ea',year:1965,fill:'#e0f2fe',label:'1960年代后 台湾\n人间佛教·四大山头\n全球汉传传播中心',desc:'1960年代后人间佛教和大型组织兴起：佛光山（星云，1927-2023）、慈济（证严，1937-）、法鼓山（圣严，1930-2009）、中台山并称"四大山头"，以社会参与和人间佛教为特色。台湾同时也有葛印卡、马哈希、帕奥等南传内观系统影响，成为20-21世纪汉传佛教在全球传播的重要中心。'},
+
+  // ── 藏传：隆钦巴 ──
+  {id:'longchen',col:'zang',year:1330,fill:'#f5f3ff',label:'隆钦巴 1292-1361\n宁玛大圆满系统化\n《七宝藏》',desc:'隆钦巴（Longchenpa，藏文Klong chen rab byams pa，1292-1361）是宁玛派大圆满（Dzogchen）思想最重要的系统化者，著《七宝藏》（mdzod bdun）等重要论典，将大圆满彻却、妥噶修行体系化。对后世宁玛派和19世纪利美运动影响深远。'},
+];
+
+const EDGES=[
+  ['st','op1','solid'],['op1','op2','solid'],['op2','op3','solid'],['op3','op4','solid'],
+  ['op4','op5','solid'],['op5','op6','solid'],['op6','op7','solid'],['op7','op8','solid'],
+  ['op8','op9','solid'],['op8','op10','solid'],
+  ['op7','op13','solid'],['op13','c5','solid'],
+  ['op6','op14','dashed'],['op14','op15','solid'],['op14','m14','dashed'],['op14','d1','solid'],
+  ['op15','m0','solid'],['op15','d4','solid'],['op15','e','dashed'],
+  ['op9','t1','solid'],['op9','e','dashed'],
+  ['op10','h0','solid'],['op10','ac0','dashed'],['op10','ac1','dashed'],
+  ['op11','e','dashed'],['op12','e','dashed'],['op12','tb0','solid'],
+  ['op1','c1','solid'],['c1','c2','solid'],['c2','c3','solid'],['c3','c4','solid'],['c4','c5','solid'],['c5','c6','solid'],
+  ['op5','n_root','solid'],['n_root','n_mahadev','dashed'],['n_root','n_sthav','solid'],['n_root','n_maha','solid'],
+  ['n_sthav','n_vibh','solid'],['n_sthav','n_sarva','solid'],['n_sthav','n_vatsi','solid'],
+  ['n_vibh','n_tamra','solid'],['n_vibh','n_dharma','solid'],['n_vibh','n_mahi','solid'],['n_vibh','n_kasy','solid'],
+  ['n_sarva','n_vaib','solid'],['n_sarva','n_saut','solid'],['n_sarva','n_mula','solid'],
+  ['n_sarva','n_later','dashed'],['n_sarva','ac7','dashed'],['n_sarva','ac10','dashed'],
+  ['n_maha','n_loko','solid'],['n_maha','n_bahu','solid'],['n_maha','n_cait','solid'],['n_maha','ac18','dashed'],
+  ['n_vatsi','n_sammi','solid'],
+  ['n_loko','n_later','dashed'],['n_bahu','n_later','dashed'],['n_cait','n_later','dashed'],
+  ['n_dharma','n_later','dashed'],['n_dharma','h11','dashed'],['n_dharma','ac9','dashed'],['n_dharma','ac17','dashed'],
+  ['n_mahi','ac19','dashed'],
+  ['n_mula','n_later','dashed'],['n_mula','tb14','dashed'],['n_mula','ac20','dashed'],
+  ['n_sammi','n_later','dashed'],['n_tamra','t3','solid'],['n_later','d5','solid'],
+  ['m0','m_split','solid'],['m_split','m1','solid'],['m_split','t_split','solid'],['m_split','h0','solid'],['m_split','tb14','dashed'],
+  ['t_split','t3','dashed'],['t_split','buddhaghosa','dashed'],
+  ['m1','m2','solid'],['m1','m3','solid'],['m1','m4','solid'],['m1','m5','solid'],
+  ['m1','m6','solid'],['m1','m7','solid'],['m1','m8','solid'],['m1','m9','solid'],
+  ['m2','m10','solid'],['m2','m11','solid'],['m2','m12','solid'],
+  ['m7','m13','solid'],['m8','m13','solid'],
+  ['m3','h12','dashed'],['m6','h10','dashed'],['m12','h8','dashed'],['m13','h9','dashed'],
+  ['m14','h14','dashed'],['m14','m15','solid'],['m14','tb0','dashed'],
+  ['m12','m15','solid'],['m13','m15','solid'],
+  ['op9','t1','solid'],['t1','t2','solid'],['t2','t3','solid'],['t3','t4','solid'],['t3','t5','solid'],
+  ['t4','t6','solid'],['t5','t6','solid'],['t6','t7','solid'],['t7','t8','solid'],['t8','t9','solid'],['t9','e','solid'],
+  ['op10','h0','solid'],['h0','h1','solid'],['h0','ac1','solid'],
+  ['h1','h2','solid'],['h2','h3','solid'],['h2','ac2','solid'],['h3','h4','solid'],['h4','h5','solid'],
+  ['h5','h6','solid'],
+  ['h6','h7','solid'],['h6','h8','solid'],['h6','h9','solid'],['h6','h10','solid'],
+  ['h6','h11','solid'],['h6','h12','solid'],['h6','h13','solid'],['h6','h14','solid'],
+  ['h7','h15','solid'],['h8','h15','solid'],['h9','h15','solid'],['h10','h15','solid'],
+  ['h11','h15','solid'],['h12','h15','solid'],['h13','h15','solid'],['h14','h15','solid'],
+  ['h11','ac21','dashed'],
+  ['h15','h16','solid'],['h16','h17','solid'],['h16','h19','solid'],
+  ['h17','h18','solid'],['h19','op11','solid'],
+  ['ac0','ac1','solid'],['ac1','ac2','solid'],['ac2','ac3','solid'],['ac2','ac15','solid'],['ac2','ac22','solid'],
+  ['ac3','ac4','solid'],['ac4','ac5','solid'],['ac5','ac6','solid'],
+  ['ac6','ac7','solid'],['ac6','ac8','solid'],['ac6','ac9','solid'],['ac6','ac10','solid'],['ac6','ac11','solid'],
+  ['ac11','ac12','solid'],['ac12','ac13','solid'],['ac13','ac14','solid'],
+  ['ac15','ac16','solid'],['ac15','ac17','solid'],['ac15','ac18','solid'],['ac15','ac19','solid'],['ac15','ac20','solid'],
+  ['ac17','ac21','dashed'],
+  ['ac7','ac25','solid'],['ac8','ac25','solid'],['ac9','ac25','solid'],['ac10','ac25','solid'],
+  ['ac25','ac26','solid'],['d6','ac26','dashed'],
+  ['tb0','tb1','solid'],['tb1','tb2','solid'],['tb2','tb3','solid'],['tb3','tb4','solid'],
+  ['tb4','tb5','solid'],['tb4','tb6','solid'],['tb4','tb7','solid'],['tb4','tb8','solid'],['tb4','tb9','solid'],
+  ['tb8','tb11','dashed'],['tb9','tb10','solid'],['tb10','tb11','solid'],
+  ['tb11','tb12','solid'],['tb12','tb13','solid'],['tb13','e','solid'],
+  ['tb6','tb14','dashed'],['tb7','tb14','dashed'],['tb8','tb14','dashed'],['tb9','tb14','dashed'],
+  ['d1','d2','solid'],['d2','d3','solid'],['d3','d4','solid'],['d4','d5','solid'],
+  ['d5','d6','solid'],
+
+  // ── 南传补充边 ──
+  ['t2','buddhaghosa','solid'],['buddhaghosa','t4','dashed'],['buddhaghosa','t6','dashed'],
+  ['t1','thai_early','dashed'],
+  ['thai_early','bagan','dashed'],['thai_early','thai_sukhothai','dashed'],
+  ['t7','bagan','dashed'],['t7','thai_sukhothai','solid'],
+  ['bagan','thai_sukhothai','dashed'],
+  ['thai_sukhothai','thai_reform','solid'],
+  ['thai_reform','ajahn_man','solid'],
+  ['t7','mandalay5','dashed'],
+  ['mandalay5','colonial_myanmar','solid'],
+  ['colonial_myanmar','ledi','solid'],
+  ['ledi','mahasi','solid'],['ledi','goenka','dashed'],
+  ['mahasi','yangon6','solid'],['c6','yangon6','dashed'],['yangon6','goenka','dashed'],['yangon6','t9','dashed'],
+  ['ajahn_man','t9','solid'],['mahasi','t9','solid'],['goenka','t9','dashed'],
+  ['t7','yunnan','dashed'],['yunnan','yunnan_revival','solid'],
+  ['yunnan_revival','t9','dashed'],
+
+  // ── 东亚：韩国 ──
+  ['op11','kr1','solid'],['kr1','kr2','solid'],['kr2','kr3','solid'],['kr3','kr4','solid'],['kr4','kr5','solid'],
+  ['h10','kr3','dashed'],['h13','kr4','dashed'],
+
+  // ── 东亚：日本 ──
+  ['op11','jp1','solid'],['jp1','jp2','solid'],['jp2','jp3','solid'],['jp3','jp4','solid'],['jp4','jp5','solid'],['jp5','jp6','solid'],
+  ['h7','jp3','dashed'],['h12','jp4','dashed'],['h13','jp4','dashed'],['h14','jp3','dashed'],
+
+  // ── 东亚：越南 ──
+  ['op11','vn1','solid'],['vn1','vn2','solid'],
+  ['h13','vn2','dashed'],
+
+  // ── 东亚：台湾 ──
+  ['tw1','tw2','solid'],['h18','tw2','dashed'],
+  ['kr5','e','dashed'],['jp6','e','dashed'],['vn2','e','dashed'],['tw2','e','dashed'],
+
+  // ── 藏传：隆钦巴 ──
+  ['tb6','longchen','solid'],['longchen','tb12','dashed'],
+];
+
+const PAD_TOP=60,PAD_BOT=80,PAD_L=96,NODE_W=158,COL_GAP=20;
+const YEAR_MIN=-500,YEAR_MAX=2020,PX_PER_YEAR=1.35;
+const MODERN_STRETCH_START=1800,MODERN_EXTRA_PX_PER_YEAR=2.9;
+// fixed font metrics
+const FONT_SIZE=9, LINE_H=13, H_PAD=12, NODE_H_MIN=44;
+const MAX_LINE_W=NODE_W-14; // 7px padding each side
+
+const COL_ORDER=['op','c','pai','da','nan','han','ea','ac','zang','ind','end'];
+const COL_X={};
+let cx=PAD_L;
+COL_ORDER.forEach(k=>{COL_X[k]=cx;cx+=NODE_W+COL_GAP;});
+const SVG_W=cx+20;
+function yearToY(y){
+  const base=PAD_TOP+(y-YEAR_MIN)*PX_PER_YEAR;
+  return y>MODERN_STRETCH_START?base+(y-MODERN_STRETCH_START)*MODERN_EXTRA_PX_PER_YEAR:base;
+}
+
+// estimate pixel width of a string at FONT_SIZE
+function estW(line){let w=0;for(const c of line)w+=c.charCodeAt(0)>127?FONT_SIZE:FONT_SIZE*0.58;return w;}
+
+// wrap a single raw line into display lines that fit MAX_LINE_W
+function wrapLine(line){
+  if(estW(line)<=MAX_LINE_W)return[line];
+  const res=[];let cur='';
+  for(const ch of line){
+    const t=cur+ch;
+    if(estW(t)>MAX_LINE_W&&cur.length>0){res.push(cur);cur=ch;}else cur=t;
+  }
+  if(cur)res.push(cur);return res;
+}
+
+// pre-compute wrapped lines and dynamic height for every node
+const nodeMap={};
+NODES.forEach(n=>{
+  nodeMap[n.id]=n;
+  n._lines=n.label.split('\n').flatMap(l=>wrapLine(l));
+  n._h=Math.max(NODE_H_MIN, n._lines.length*LINE_H+H_PAD);
+});
+
+function buildLayout(){
+  const byCol={};
+  COL_ORDER.forEach(c=>{byCol[c]=[];});
+  NODES.forEach(n=>{if(byCol[n.col])byCol[n.col].push(n);});
+  COL_ORDER.forEach(col=>{
+    const ns=byCol[col];
+    ns.sort((a,b)=>a.year-b.year);
+    let lastBottom=-9999;
+    ns.forEach(n=>{
+      let y=yearToY(n.year)-n._h/2;
+      if(y<lastBottom+3)y=lastBottom+3;
+      n._y=y;
+      lastBottom=y+n._h;
+    });
+  });
+}
+buildLayout();
+
+// SVG height = tallest node bottom + padding
+let maxNodeBottom=yearToY(YEAR_MAX);
+NODES.forEach(n=>{if(n._y!==undefined)maxNodeBottom=Math.max(maxNodeBottom,n._y+n._h);});
+const SVG_H=maxNodeBottom+PAD_BOT;
+
+const ERAS=[
+  {y1:-500,y2:-300,label:'前6-前4世纪\n佛陀时代与早期僧团',color:'#f0fdf4'},
+  {y1:-300,y2:-100,label:'前3-前2世纪\n阿育王弘法·部派分化',color:'#eff6ff'},
+  {y1:-100,y2:200, label:'前1-后2世纪\n三藏书写·大乘兴起',color:'#fefce8'},
+  {y1:200, y2:600, label:'3-6世纪\n大乘哲学·各地传播',color:'#fff7ed'},
+  {y1:600, y2:900, label:'7-9世纪\n唐代佛教·藏传初传',color:'#f0f9ff'},
+  {y1:900, y2:1300,label:'10-13世纪\n各宗派成熟·印度衰落',color:'#fdf4ff'},
+  {y1:1300,y2:1700,label:'14-17世纪\n藏传兴盛·明清汉传',color:'#fff1f2'},
+  {y1:1700,y2:2020,label:'18世纪-现代\n现代传播与复兴',color:'#f0fdf4'},
+];
+
+function makeSVG(){
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.getElementById('chart');
+  svg.setAttribute('xmlns',ns);
+  svg.setAttribute('width',SVG_W);
+  svg.setAttribute('height',SVG_H);
+  svg.setAttribute('viewBox',`0 0 ${SVG_W} ${SVG_H}`);
+  svg.innerHTML='';
+
+  const defs=document.createElementNS(ns,'defs');
+  const marker=document.createElementNS(ns,'marker');
+  marker.setAttribute('id','arr');marker.setAttribute('markerWidth','7');
+  marker.setAttribute('markerHeight','5');marker.setAttribute('refX','6');marker.setAttribute('refY','2.5');
+  marker.setAttribute('orient','auto');
+  const poly=document.createElementNS(ns,'polygon');
+  poly.setAttribute('points','0 0, 7 2.5, 0 5');poly.setAttribute('fill','#94a3b8');
+  marker.appendChild(poly);defs.appendChild(marker);
+  svg.appendChild(defs);
+
+  ERAS.forEach(era=>{
+    const r=document.createElementNS(ns,'rect');
+    const y1=yearToY(era.y1),y2=yearToY(era.y2);
+    r.setAttribute('x','0');r.setAttribute('y',y1);
+    r.setAttribute('width',SVG_W);r.setAttribute('height',y2-y1);
+    r.setAttribute('fill',era.color);r.setAttribute('opacity','0.5');
+    svg.appendChild(r);
+    const lbl=document.createElementNS(ns,'text');
+    lbl.setAttribute('x',SVG_W-6);lbl.setAttribute('y',(y1+y2)/2-5);
+    lbl.setAttribute('text-anchor','end');lbl.setAttribute('font-size','9');
+    lbl.setAttribute('fill','#94a3b8');lbl.setAttribute('font-family','sans-serif');
+    era.label.split('\n').forEach((line,i)=>{
+      const ts=document.createElementNS(ns,'tspan');
+      ts.setAttribute('x',SVG_W-6);ts.setAttribute('dy',i===0?'0':'12');
+      ts.textContent=line;lbl.appendChild(ts);
+    });
+    svg.appendChild(lbl);
+  });
+
+  const axisX=PAD_L-32;
+  const axisLine=document.createElementNS(ns,'line');
+  axisLine.setAttribute('x1',axisX);axisLine.setAttribute('y1',PAD_TOP);
+  axisLine.setAttribute('x2',axisX);axisLine.setAttribute('y2',SVG_H-PAD_BOT);
+  axisLine.setAttribute('stroke','#cbd5e1');axisLine.setAttribute('stroke-width','1.5');
+  svg.appendChild(axisLine);
+
+  COL_ORDER.forEach(col=>{
+    const t=document.createElementNS(ns,'text');
+    t.setAttribute('x',COL_X[col]+NODE_W/2);t.setAttribute('y',PAD_TOP-14);
+    t.setAttribute('text-anchor','middle');t.setAttribute('font-size','10');
+    t.setAttribute('font-weight','600');t.setAttribute('fill','#475569');
+    t.setAttribute('font-family','sans-serif');
+    t.textContent=COL_LABEL[col]||col;
+    svg.appendChild(t);
+  });
+
+  for(let yr=YEAR_MIN;yr<=YEAR_MAX;yr+=100){
+    const y=yearToY(yr);
+    const tick=document.createElementNS(ns,'line');
+    tick.setAttribute('x1',axisX-4);tick.setAttribute('y1',y);
+    tick.setAttribute('x2',axisX+4);tick.setAttribute('y2',y);
+    tick.setAttribute('stroke','#94a3b8');tick.setAttribute('stroke-width','1');
+    svg.appendChild(tick);
+    const lbl=document.createElementNS(ns,'text');
+    lbl.setAttribute('x',axisX-6);lbl.setAttribute('y',y+3);
+    lbl.setAttribute('text-anchor','end');lbl.setAttribute('font-size','8');
+    lbl.setAttribute('fill','#94a3b8');lbl.setAttribute('font-family','sans-serif');
+    lbl.textContent=yr<0?`前${-yr}`:String(yr);
+    svg.appendChild(lbl);
+    const grid=document.createElementNS(ns,'line');
+    grid.setAttribute('x1',axisX);grid.setAttribute('y1',y);
+    grid.setAttribute('x2',SVG_W);grid.setAttribute('y2',y);
+    grid.setAttribute('stroke','#e2e8f0');grid.setAttribute('stroke-width','0.4');
+    grid.setAttribute('stroke-dasharray','3,4');
+    svg.appendChild(grid);
+  }
+
+  const edgeG=document.createElementNS(ns,'g');
+  EDGES.forEach(([fromId,toId,style])=>{
+    const fn=nodeMap[fromId],tn=nodeMap[toId];
+    if(!fn||!tn||fn._y===undefined||tn._y===undefined)return;
+    const fx=COL_X[fn.col]+NODE_W/2;
+    const fy=fn._y+fn._h;
+    const tx=COL_X[tn.col]+NODE_W/2;
+    const ty=tn._y;
+    const path=document.createElementNS(ns,'path');
+    const midY=(fy+ty)/2;
+    const d=`M ${fx} ${fy} C ${fx} ${midY}, ${tx} ${midY}, ${tx} ${ty}`;
+    path.setAttribute('d',d);
+    path.setAttribute('fill','none');
+    path.setAttribute('stroke',style==='dashed'?'#a0b0c8':'#64748b');
+    path.setAttribute('stroke-width','0.9');
+    path.setAttribute('stroke-dasharray',style==='dashed'?'4,3':'none');
+    path.setAttribute('marker-end','url(#arr)');
+    path.setAttribute('opacity','0.65');
+    edgeG.appendChild(path);
+  });
+  svg.appendChild(edgeG);
+
+  const nodeG=document.createElementNS(ns,'g');
+  NODES.forEach(n=>{
+    if(n._y===undefined)return;
+    const x=COL_X[n.col],y=n._y;
+    const g=document.createElementNS(ns,'g');
+    g.style.cursor='pointer';
+
+    const rect=document.createElementNS(ns,'rect');
+    rect.setAttribute('x',x);rect.setAttribute('y',y);
+    rect.setAttribute('width',NODE_W);rect.setAttribute('height',n._h);
+    rect.setAttribute('rx','5');rect.setAttribute('fill',n.fill);
+    rect.setAttribute('stroke','#94a3b8');rect.setAttribute('stroke-width','0.8');
+
+    const totalTextH=n._lines.length*LINE_H;
+    const startY=y+(n._h-totalTextH)/2+FONT_SIZE;
+    const labelEls=n._lines.map((line,i)=>{
+      const t=document.createElementNS(ns,'text');
+      t.setAttribute('x',x+NODE_W/2);t.setAttribute('y',startY+i*LINE_H);
+      t.setAttribute('text-anchor','middle');t.setAttribute('font-size',FONT_SIZE);
+      t.setAttribute('font-family','"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif');
+      t.setAttribute('fill','#1e293b');t.setAttribute('pointer-events','none');
+      t.textContent=line;return t;
+    });
+
+    g.appendChild(rect);labelEls.forEach(el=>g.appendChild(el));
+    g.addEventListener('mouseenter',e=>showTip(e,n));
+    g.addEventListener('mousemove',moveTip);
+    g.addEventListener('mouseleave',hideTip);
+    nodeG.appendChild(g);
+  });
+  svg.appendChild(nodeG);
+}
+
+const tooltip=document.getElementById('tooltip');
+function showTip(e,n){
+  tooltip.innerHTML=`<strong>${n.label.replace(/\n/g,' ')}</strong><br>${n.desc||''}`;
+  tooltip.style.display='block';moveTip(e);
+}
+function moveTip(e){
+  let x=e.clientX+14,y=e.clientY-10;
+  const tw=tooltip.offsetWidth,th=tooltip.offsetHeight;
+  if(x+tw>window.innerWidth-10)x=e.clientX-tw-14;
+  if(y+th>window.innerHeight-10)y=e.clientY-th-10;
+  tooltip.style.left=x+'px';tooltip.style.top=y+'px';
+}
+function hideTip(){tooltip.style.display='none';}
+
+makeSVG();
+document.getElementById('container').style.height=(window.innerHeight-50)+'px';
+</script>
+</body>
+</html>
