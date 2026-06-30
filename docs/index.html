@@ -97,6 +97,10 @@ a:hover { text-decoration: underline; }
 .site-footer .footer-dhamma { font-size: 0.88em; color: var(--accent); font-style: italic; margin-bottom: 6px; }
 .site-footer .footer-links { font-size: 0.78em; color: var(--text-light); }
 .site-footer .footer-links a { color: var(--accent); }
+.copyright-panel { display: none; max-width: 640px; margin: 14px auto 0; padding: 14px 18px; background: var(--accent-bg); border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.78em; color: var(--text-light); line-height: 1.7; text-align: left; }
+.copyright-panel p { margin-bottom: 8px; }
+.copyright-panel p:last-child { margin-bottom: 0; }
+.copyright-panel a { color: var(--accent); }
 
 /* Sutta Table */
 .sutta-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
@@ -220,10 +224,13 @@ a:hover { text-decoration: underline; }
 <div class="site-footer">
   <div class="footer-dhamma">法布施胜一切施 · Sabbadānaṃ dhammadānaṃ jināti（Dhp 354）</div>
   <div class="footer-links">
-    巴利原文与译文据 <a href="https://suttacentral.net" target="_blank">SuttaCentral</a> 以
-    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a> 公开 ·
-    英译 Bhikkhu Sujato / Brahmali · 中译 莊春江 ·
-    <a href="https://github.com/Bayson-create/Sutta-Study-Guide" target="_blank">GitHub</a>
+    © 2026 <a href="https://github.com/Bayson-create" target="_blank">Bayson-create</a> ·
+    <a href="https://github.com/Bayson-create/Sutta-Study-Guide" target="_blank">GitHub</a> ·
+    <a href="javascript:void(0)" onclick="document.getElementById('copyrightPanel').style.display=document.getElementById('copyrightPanel').style.display==='none'?'block':'none'">版权说明</a>
+  </div>
+  <div class="copyright-panel" id="copyrightPanel">
+    <p>本项目（主题摘要、阅读器网页与解析脚本）由 <a href="https://github.com/Bayson-create" target="_blank">Bayson-create</a> 设计开发，代码以 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a> 开源，原创文字内容以 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> 共享，欢迎自由使用、转载、二次开发，敬请注明出处。</p>
+    <p>巴利原文与英、中译文均来自 <a href="https://suttacentral.net" target="_blank">SuttaCentral</a>，以 <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a> 公开；英译主要为 Bhikkhu Sujato / Brahmali，中译主要为莊春江。详见 <a href="https://github.com/Bayson-create/Sutta-Study-Guide#版权声明--copyright-notice" target="_blank">完整版权声明</a>。</p>
   </div>
 </div>
 
