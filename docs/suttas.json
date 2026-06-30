@@ -8,6 +8,7 @@
         {
           "title": "",
           "section": "",
+          "intro": "",
           "suttas": [
             {
               "uid": "",
@@ -84,6 +85,7 @@
         {
           "title": "律藏 Vinaya Piṭaka",
           "section": "律藏 Vinaya Piṭaka",
+          "intro": "",
           "suttas": [
             {
               "uid": "pli-tv-kd1",
@@ -130,6 +132,7 @@
         {
           "title": "长部 Dīgha Nikāya",
           "section": "长部 Dīgha Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "dn14",
@@ -176,6 +179,7 @@
         {
           "title": "中部 Majjhima Nikāya",
           "section": "中部 Majjhima Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "mn4",
@@ -332,6 +336,7 @@
         {
           "title": "相应部 Saṁyutta Nikāya",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn4.1",
@@ -488,6 +493,7 @@
         {
           "title": "增支部 Aṅguttara Nikāya",
           "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "an3.39",
@@ -554,6 +560,7 @@
         {
           "title": "小部 Khuddaka Nikāya",
           "section": "小部 Khuddaka Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "khp",
@@ -710,6 +717,7 @@
         {
           "title": "阿毗达摩 Abhidhamma Piṭaka",
           "section": "阿毗达摩 Abhidhamma Piṭaka",
+          "intro": "",
           "suttas": [
             {
               "uid": "dhs",
@@ -823,6 +831,7 @@
         {
           "title": "长部 Dīgha Nikāya",
           "section": "长部 Dīgha Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "dn1",
@@ -889,6 +898,7 @@
         {
           "title": "中部 Majjhima Nikāya",
           "section": "中部 Majjhima Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "mn9",
@@ -1085,6 +1095,7 @@
         {
           "title": "缘起相应 SN 12",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn12.1",
@@ -1171,6 +1182,7 @@
         {
           "title": "蕴相应 SN 22",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn22.48",
@@ -1257,6 +1269,7 @@
         {
           "title": "处、受、道、觉支等相应",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn35.23",
@@ -1443,6 +1456,7 @@
         {
           "title": "增支部 Aṅguttara Nikāya",
           "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "an3.61",
@@ -1649,6 +1663,7 @@
         {
           "title": "小部 Khuddaka Nikāya",
           "section": "小部 Khuddaka Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "snp4.12",
@@ -1765,6 +1780,7 @@
         {
           "title": "律藏与阿毗达摩的概念材料",
           "section": "律藏与阿毗达摩的概念材料",
+          "intro": "",
           "suttas": [
             {
               "uid": "pitaka",
@@ -1942,6 +1958,7 @@
         {
           "title": "长部 Dīgha Nikāya",
           "section": "长部 Dīgha Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "dn2",
@@ -1988,6 +2005,7 @@
         {
           "title": "中部 Majjhima Nikāya",
           "section": "中部 Majjhima Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "mn14",
@@ -2194,6 +2212,7 @@
         {
           "title": "个人居士与家庭修行",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn22.1",
@@ -2210,11 +2229,12 @@
         {
           "title": "SN 41 Citta Saṁyutta：质多居士相应",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "质多是巴利藏中最重要的在家男弟子之一。此相应显示：在家居士不只是布施者，也能理解甚深法义、与比丘讨论禅定和解脱，并在临终时教诫亲属。",
           "suttas": [
             {
               "uid": "sn41.1",
               "name": "SN 41.1 Saṁyojana Sutta",
-              "focus": "",
+              "focus": "结与被结缚之法",
               "summary": "质多辨析“结”与“被结缚之法”的差别，显示在家弟子能掌握阿毗达摩式的精细法义。",
               "en_url": "https://suttacentral.net/sn41.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.1/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2224,7 +2244,7 @@
             {
               "uid": "sn41.2",
               "name": "SN 41.2 Isidatta 1",
-              "focus": "",
+              "focus": "界的多样性",
               "summary": "质多请比丘应供并问“界的多样性”，年轻比丘 Isidatta 作答。",
               "en_url": "https://suttacentral.net/sn41.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.2/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2234,7 +2254,7 @@
             {
               "uid": "sn41.3",
               "name": "SN 41.3 Isidatta 2",
-              "focus": "",
+              "focus": "十种无记见、有身见",
               "summary": "质多问十种无记见的根源，Isidatta 指向有身见。",
               "en_url": "https://suttacentral.net/sn41.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.3/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2244,7 +2264,7 @@
             {
               "uid": "sn41.4",
               "name": "SN 41.4 Mahaka",
-              "focus": "",
+              "focus": "神通示现、居士信心",
               "summary": "质多见 Mahaka 比丘示现神通，凸显居士与僧众互动中的信心、供养和鉴别。",
               "en_url": "https://suttacentral.net/sn41.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.4/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2254,7 +2274,7 @@
             {
               "uid": "sn41.5",
               "name": "SN 41.5 Kāmabhū 1",
-              "focus": "",
+              "focus": "一轮车譬喻",
               "summary": "Kāmabhū 以偈问法，质多解释“一轮车”等譬喻，展现在家人的法义理解力。",
               "en_url": "https://suttacentral.net/sn41.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.5/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2264,7 +2284,7 @@
             {
               "uid": "sn41.6",
               "name": "SN 41.6 Kāmabhū 2",
-              "focus": "",
+              "focus": "身语心行、灭尽定",
               "summary": "质多问身行、语行、心行与灭尽定相关问题，内容深入禅定心理学。",
               "en_url": "https://suttacentral.net/sn41.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.6/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2274,7 +2294,7 @@
             {
               "uid": "sn41.7",
               "name": "SN 41.7 Godatta",
-              "focus": "",
+              "focus": "无量、空、无相解脱",
               "summary": "讨论无量、无所有、空、无相等解脱的同异，显示在家弟子可涉入高级禅观概念。",
               "en_url": "https://suttacentral.net/sn41.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.7/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2284,7 +2304,7 @@
             {
               "uid": "sn41.8",
               "name": "SN 41.8 Nigaṇṭha Nātaputta",
-              "focus": "",
+              "focus": "信与知、亲证经验",
               "summary": "质多与耆那教主论“信”与“知”，强调亲证经验高于盲信。",
               "en_url": "https://suttacentral.net/sn41.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.8/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2294,7 +2314,7 @@
             {
               "uid": "sn41.9",
               "name": "SN 41.9 Kassapa",
-              "focus": "",
+              "focus": "苦行无果",
               "summary": "质多与裸形外道旧友对话，引导对方承认多年苦行未得真实成就。",
               "en_url": "https://suttacentral.net/sn41.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.9/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2304,7 +2324,7 @@
             {
               "uid": "sn41.10",
               "name": "SN 41.10 Gilānadassana",
-              "focus": "",
+              "focus": "临终安慰、死亡观",
               "summary": "质多临终时反而安慰、教导亲属，表现成熟在家圣弟子的死亡观。",
               "en_url": "https://suttacentral.net/sn41.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn41.10/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2316,11 +2336,12 @@
         {
           "title": "SN 42 Gāmaṇi Saṁyutta：村长相应",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "此相应多以村长、首领、职业人和地方精英为对象，集中讨论职业伦理、祭祀、暴力、表演、邪见、布施和苦的止息。",
           "suttas": [
             {
               "uid": "sn42.1",
               "name": "SN 42.1 Caṇḍa Sutta",
-              "focus": "",
+              "focus": "止息愤怒",
               "summary": "暴躁首领问如何舍弃易怒；佛陀从反应模式与内心训练解释止息愤怒。",
               "en_url": "https://suttacentral.net/sn42.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.1/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2330,7 +2351,7 @@
             {
               "uid": "sn42.2",
               "name": "SN 42.2 Tālapuṭa Sutta",
-              "focus": "",
+              "focus": "表演职业与业",
               "summary": "演艺团长问演员死后是否生天；佛陀指出以激发贪嗔痴为业的表演不会导向善趣。",
               "en_url": "https://suttacentral.net/sn42.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.2/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2340,7 +2361,7 @@
             {
               "uid": "sn42.3",
               "name": "SN 42.3 Yodhājīva Sutta",
-              "focus": "",
+              "focus": "战死与业",
               "summary": "职业战士问战死是否生天；佛陀否定以杀害心投入战争能生善趣的说法。",
               "en_url": "https://suttacentral.net/sn42.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.3/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2350,7 +2371,7 @@
             {
               "uid": "sn42.6",
               "name": "SN 42.6 Asibandhakaputta Sutta",
-              "focus": "",
+              "focus": "仪式与业的譬喻",
               "summary": "首领问仪式能否把亡者送上天；佛陀以石沉水、油浮水譬喻说明业比祈祷更根本。",
               "en_url": "https://suttacentral.net/sn42.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.6/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2360,7 +2381,7 @@
             {
               "uid": "sn42.7",
               "name": "SN 42.7 Khettūpama Sutta",
-              "focus": "",
+              "focus": "说法深浅、教化次第",
               "summary": "佛陀以田地譬喻说明为何对不同人说法深浅不同，涉及在家听法根器与教化次第。",
               "en_url": "https://suttacentral.net/sn42.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.7/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2370,7 +2391,7 @@
             {
               "uid": "sn42.8",
               "name": "SN 42.8 Saṅkhadhamā Sutta",
-              "focus": "",
+              "focus": "罪感、戒行、心解脱",
               "summary": "讨论耆那教业论、悔罪与慈心解脱；适合比较在家修行中的罪感、戒行和心解脱。",
               "en_url": "https://suttacentral.net/sn42.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.8/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2380,7 +2401,7 @@
             {
               "uid": "sn42.9",
               "name": "SN 42.9 Kula Sutta",
-              "focus": "",
+              "focus": "家族衰败的因缘",
               "summary": "佛陀解释家族衰败不能简单归咎于供养僧团，而有多种现实原因。",
               "en_url": "https://suttacentral.net/sn42.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.9/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2390,7 +2411,7 @@
             {
               "uid": "sn42.10",
               "name": "SN 42.10 Maṇicūḷaka Sutta",
-              "focus": "",
+              "focus": "比丘受金银、僧俗经济",
               "summary": "王臣批评比丘受金银，首领 Maṇicūḷaka 为佛教戒律辩护；涉及僧俗经济边界。",
               "en_url": "https://suttacentral.net/sn42.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.10/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2400,7 +2421,7 @@
             {
               "uid": "sn42.11",
               "name": "SN 42.11 Bhadraka Sutta",
-              "focus": "",
+              "focus": "爱取与苦",
               "summary": "首领问苦的生起与止息；佛陀从他自己村落中亲爱对象的失去来说明爱取与苦。",
               "en_url": "https://suttacentral.net/sn42.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.11/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2410,7 +2431,7 @@
             {
               "uid": "sn42.12",
               "name": "SN 42.12 Rāsiya Sutta",
-              "focus": "",
+              "focus": "中道、苦行误解",
               "summary": "佛陀否定“完全拒绝一切苦行”的误解，说明远离纵欲与自苦两边的中道。",
               "en_url": "https://suttacentral.net/sn42.12/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.12/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2420,7 +2441,7 @@
             {
               "uid": "sn42.13",
               "name": "SN 42.13 Pāṭaliya Sutta",
-              "focus": "",
+              "focus": "神通与可验证的转化",
               "summary": "首领问神通与真实知识；佛陀把重点转向可验证的业、戒与内在转化。",
               "en_url": "https://suttacentral.net/sn42.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn42.13/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2432,11 +2453,12 @@
         {
           "title": "SN 55 Sotāpatti Saṁyutta：入流与在家圣弟子",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn55.16",
               "name": "SN 55.16 Mittāmacca 1",
-              "focus": "",
+              "focus": "入流四支、亲友",
               "summary": "佛陀教导应鼓励亲友具足入流四支：佛、法、僧不坏净与圣戒。",
               "en_url": "https://suttacentral.net/sn55.16/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.16/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2446,7 +2468,7 @@
             {
               "uid": "sn55.17",
               "name": "SN 55.17 Mittāmacca 2",
-              "focus": "",
+              "focus": "入流四支、亲友责任",
               "summary": "延续鼓励亲友入流四支的主题，显示在家人有责任把亲友导向稳固善法。",
               "en_url": "https://suttacentral.net/sn55.17/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.17/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2456,7 +2478,7 @@
             {
               "uid": "sn55.21",
               "name": "SN 55.21 Mahānāma 1",
-              "focus": "",
+              "focus": "临终失念、信戒闻施慧",
               "summary": "Mahānāma 担心临终失念堕恶趣，佛陀以长期信戒闻施慧的倾向安慰他。",
               "en_url": "https://suttacentral.net/sn55.21/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.21/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2466,7 +2488,7 @@
             {
               "uid": "sn55.22",
               "name": "SN 55.22 Mahānāma 2",
-              "focus": "",
+              "focus": "善法倾向、树喻",
               "summary": "与前经相近，说明长期修习善法的心会趋向善趣，如树倾斜后倒向一边。",
               "en_url": "https://suttacentral.net/sn55.22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.22/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2476,7 +2498,7 @@
             {
               "uid": "sn55.23",
               "name": "SN 55.23 Godhā Sakka",
-              "focus": "",
+              "focus": "入流三支或四支",
               "summary": "Mahānāma 与 Godhā 讨论入流者三支或四支，佛陀厘清信、戒、慧等结构。",
               "en_url": "https://suttacentral.net/sn55.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.23/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2486,7 +2508,7 @@
             {
               "uid": "sn55.24",
               "name": "SN 55.24 Sarakāni 1",
-              "focus": "",
+              "focus": "法随行者、信随行者",
               "summary": "Sarakāni 虽曾饮酒，死后仍被佛陀记说为入流，引发议论；佛陀解释法随行者、信随行者等层次。",
               "en_url": "https://suttacentral.net/sn55.24/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.24/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2496,7 +2518,7 @@
             {
               "uid": "sn55.25",
               "name": "SN 55.25 Sarakāni 2",
-              "focus": "",
+              "focus": "不轻率否定圣道进展",
               "summary": "继续说明不能以表面缺失轻率否定一个在家人的圣道进展。",
               "en_url": "https://suttacentral.net/sn55.25/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.25/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2506,7 +2528,7 @@
             {
               "uid": "sn55.26",
               "name": "SN 55.26 Anāthapiṇḍika 1",
-              "focus": "",
+              "focus": "病中入流四支",
               "summary": "给孤独长者病中，舍利弗提醒他已具足入流四支，以稳定其心。",
               "en_url": "https://suttacentral.net/sn55.26/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.26/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2516,7 +2538,7 @@
             {
               "uid": "sn55.27",
               "name": "SN 55.27 Anāthapiṇḍika 2",
-              "focus": "",
+              "focus": "佛法僧戒不坏净",
               "summary": "阿难探病，给孤独长者自述具足对佛法僧戒的不坏净。",
               "en_url": "https://suttacentral.net/sn55.27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.27/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2526,7 +2548,7 @@
             {
               "uid": "sn55.28",
               "name": "SN 55.28 Bhayaverūpasanta 1",
-              "focus": "",
+              "focus": "五怖畏、入流四支、缘起",
               "summary": "说明在家圣弟子如何远离五种怖畏怨仇、具足入流四支、见缘起法。",
               "en_url": "https://suttacentral.net/sn55.28/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.28/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2536,7 +2558,7 @@
             {
               "uid": "sn55.29",
               "name": "SN 55.29 Bhayaverūpasanta 2",
-              "focus": "",
+              "focus": "戒信正见、无畏",
               "summary": "同主题的另一版本，强调戒、信与正见带来的无畏。",
               "en_url": "https://suttacentral.net/sn55.29/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.29/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2546,7 +2568,7 @@
             {
               "uid": "sn55.30",
               "name": "SN 55.30 Nandaka Licchavi",
-              "focus": "",
+              "focus": "入流四支、闻法优先",
               "summary": "佛陀向离车族大臣 Nandaka 说入流四支；Nandaka 宁可延迟公务也要完成听法。",
               "en_url": "https://suttacentral.net/sn55.30/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn55.30/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2558,6 +2580,7 @@
         {
           "title": "增支部 Aṅguttara Nikāya",
           "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "an3.65",
@@ -2834,6 +2857,7 @@
         {
           "title": "小部 Khuddaka Nikāya",
           "section": "小部 Khuddaka Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "snp2.4",
@@ -2880,11 +2904,12 @@
         {
           "title": "律藏中与在家众有关的主题",
           "section": "律藏中与在家众有关的主题",
+          "intro": "",
           "suttas": [
             {
               "uid": "pitaka",
               "name": "受戒、依止、供养关系",
-              "focus": "",
+              "focus": "居士供养与僧俗信心",
               "summary": "律藏叙述居士供养、请求说法、提供住处与资具，也规定比丘如何接受供养、不得损害施主信心。",
               "en_url": "https://suttacentral.net/pitaka/vinaya?lang=en",
               "zh_url": "",
@@ -2894,7 +2919,7 @@
             {
               "uid": "pli-tv-bu-vb",
               "name": "金钱、交易、资具",
-              "focus": "",
+              "focus": "比丘金钱戒律、僧俗经济边界",
               "summary": "尼萨耆波逸提等规则限制比丘受金银、买卖、积蓄，保护僧团不被在家经济逻辑吞没。可与 SN 42.10 合读。",
               "en_url": "https://suttacentral.net/pli-tv-bu-vb/en/brahmali?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/pli-tv-bu-vb/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2904,7 +2929,7 @@
             {
               "uid": "pli-tv-kd",
               "name": "僧团公共程序与在家信众",
-              "focus": "",
+              "focus": "僧团制度与在家护法",
               "summary": "犍度部分包含僧团制度、安居、自恣、医药、衣物、住处等规定，背景常涉及在家护法者。",
               "en_url": "https://suttacentral.net/pli-tv-kd/en/brahmali?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/pli-tv-kd/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -2973,6 +2998,7 @@
         {
           "title": "长部 Dīgha Nikāya",
           "section": "长部 Dīgha Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "dn2",
@@ -3039,6 +3065,7 @@
         {
           "title": "中部 Majjhima Nikāya",
           "section": "中部 Majjhima Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "mn10",
@@ -3475,6 +3502,7 @@
         {
           "title": "缘起、五蕴、六处、受",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn12.23",
@@ -3601,11 +3629,12 @@
         {
           "title": "SN 40 Moggallāna Saṁyutta：禅定经验相应",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn40.1",
               "name": "SN 40.1-4",
-              "focus": "",
+              "focus": "四禅心不稳之指导",
               "summary": "目犍连回忆自己修初禅至四禅时曾遇到心不稳，佛陀逐一指导他安住各禅。",
               "en_url": "https://suttacentral.net/sn40.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn40.1/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3615,7 +3644,7 @@
             {
               "uid": "sn40.5",
               "name": "SN 40.5-8",
-              "focus": "",
+              "focus": "四无色定障碍与指导",
               "summary": "说明目犍连修空无边处、识无边处、无所有处、非想非非想处时的障碍与佛陀指导。",
               "en_url": "https://suttacentral.net/sn40.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn40.5/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3625,7 +3654,7 @@
             {
               "uid": "sn40.9",
               "name": "SN 40.9",
-              "focus": "",
+              "focus": "无相定",
               "summary": "目犍连修无相定时得佛陀指导，是无相心定的重要文本。",
               "en_url": "https://suttacentral.net/sn40.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn40.9/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3635,7 +3664,7 @@
             {
               "uid": "sn40.10",
               "name": "SN 40.10-11",
-              "focus": "",
+              "focus": "深定、神通与教化",
               "summary": "以目犍连神通与天界问答为背景，显示深定、神通与正法教化之间的关系。",
               "en_url": "https://suttacentral.net/sn40.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn40.10/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3647,11 +3676,12 @@
         {
           "title": "SN 46 Bojjhaṅga Saṁyutta：七觉支",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn46.2",
               "name": "SN 46.2 Kāya",
-              "focus": "",
+              "focus": "七觉支之食",
               "summary": "说明七觉支也需要“食”：如理作意可滋养念、择法、精进、喜、轻安、定、舍。",
               "en_url": "https://suttacentral.net/sn46.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.2/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3661,7 +3691,7 @@
             {
               "uid": "sn46.3",
               "name": "SN 46.3 Sīla",
-              "focus": "",
+              "focus": "闻法忆持思惟修习路径",
               "summary": "把七觉支放在听法、忆持、思惟、修习的路径中说明。",
               "en_url": "https://suttacentral.net/sn46.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.3/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3671,7 +3701,7 @@
             {
               "uid": "sn46.14",
               "name": "SN 46.14-16 Gilāna",
-              "focus": "",
+              "focus": "病中诵念七觉支",
               "summary": "病中诵念七觉支可令大迦叶、目犍连、佛陀身心安稳，是病中禅修与忆念法的经典组。",
               "en_url": "https://suttacentral.net/sn46.14/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.14/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3681,7 +3711,7 @@
             {
               "uid": "sn46.51",
               "name": "SN 46.51 Āhāra",
-              "focus": "",
+              "focus": "五盖七觉支滋养条件",
               "summary": "详细说明五盖与七觉支各自的滋养条件，极适合诊断禅修时昏沉、掉举、疑等问题。",
               "en_url": "https://suttacentral.net/sn46.51/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.51/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3691,7 +3721,7 @@
             {
               "uid": "sn46.52",
               "name": "SN 46.52 Pariyāya",
-              "focus": "",
+              "focus": "佛教与外道说五盖七觉支之别",
               "summary": "比较佛教与外道也谈五盖、七觉支时的差别：佛陀能详细说明其因缘与修法。",
               "en_url": "https://suttacentral.net/sn46.52/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.52/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3701,7 +3731,7 @@
             {
               "uid": "sn46.53",
               "name": "SN 46.53 Aggi",
-              "focus": "",
+              "focus": "调节精进与定力",
               "summary": "心沉时应修择法、精进、喜；心亢奋时应修轻安、定、舍，是调节精进与定力的实用指南。",
               "en_url": "https://suttacentral.net/sn46.53/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.53/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3711,7 +3741,7 @@
             {
               "uid": "sn46.54",
               "name": "SN 46.54 Mettāsahagata",
-              "focus": "",
+              "focus": "四无量与七觉支",
               "summary": "说明四无量与七觉支结合修习，可导向心解脱。",
               "en_url": "https://suttacentral.net/sn46.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.54/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3721,7 +3751,7 @@
             {
               "uid": "sn46.55",
               "name": "SN 46.55 Saṅgārava",
-              "focus": "",
+              "focus": "五盖譬喻、去盖",
               "summary": "以水譬喻五盖如何遮蔽记忆与明智，说明禅修中去盖的重要性。",
               "en_url": "https://suttacentral.net/sn46.55/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn46.55/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3733,11 +3763,12 @@
         {
           "title": "SN 47 Satipaṭṭhāna Saṁyutta：念处相应",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn47.1",
               "name": "SN 47.1-4",
-              "focus": "",
+              "focus": "四念处一乘道",
               "summary": "基本说明四念处是一乘道；新学、有学、阿罗汉都应依不同层次修习念处。",
               "en_url": "https://suttacentral.net/sn47.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.1/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3747,7 +3778,7 @@
             {
               "uid": "sn47.6",
               "name": "SN 47.6 Sakuṇagghi",
-              "focus": "",
+              "focus": "鹰鹌鹑譬喻、安住自境",
               "summary": "鹰与鹌鹑譬喻：禅修者应安住自家境界，即四念处，不应外驰于感官境界。",
               "en_url": "https://suttacentral.net/sn47.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.6/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3757,7 +3788,7 @@
             {
               "uid": "sn47.8",
               "name": "SN 47.8 Sūda",
-              "focus": "",
+              "focus": "厨师譬喻、反馈调整",
               "summary": "厨师譬喻：观察心喜欢何种所缘，善巧调整修习，是禅修反馈机制的经典譬喻。",
               "en_url": "https://suttacentral.net/sn47.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.8/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3767,7 +3798,7 @@
             {
               "uid": "sn47.10",
               "name": "SN 47.10 Bhikkhunupassaya",
-              "focus": "",
+              "focus": "念处修习层层增上",
               "summary": "阿难听尼众报告念处修习进展，说明念处可令修行层层增上。",
               "en_url": "https://suttacentral.net/sn47.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.10/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3777,7 +3808,7 @@
             {
               "uid": "sn47.20",
               "name": "SN 47.20 Janapadakalyāṇī",
-              "focus": "",
+              "focus": "头顶油钵譬喻、正念",
               "summary": "头顶油钵譬喻：在诱人境界中保持正念，如同不让油洒出。",
               "en_url": "https://suttacentral.net/sn47.20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.20/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3787,7 +3818,7 @@
             {
               "uid": "sn47.35",
               "name": "SN 47.35 Sati",
-              "focus": "",
+              "focus": "正念与正知之别",
               "summary": "区分正念与正知：正念是四念处，正知是明了行为与心理过程。",
               "en_url": "https://suttacentral.net/sn47.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.35/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3797,7 +3828,7 @@
             {
               "uid": "sn47.40",
               "name": "SN 47.40 Vibhaṅga",
-              "focus": "",
+              "focus": "四念处定义",
               "summary": "对四念处作简明定义并展开分析，是念处相应中的纲要经。",
               "en_url": "https://suttacentral.net/sn47.40/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.40/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3807,7 +3838,7 @@
             {
               "uid": "sn47.42",
               "name": "SN 47.42 Samudaya",
-              "focus": "",
+              "focus": "四念处集灭",
               "summary": "说明身、受、心、法四念处各自观察对象的集起与灭去。",
               "en_url": "https://suttacentral.net/sn47.42/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.42/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3817,7 +3848,7 @@
             {
               "uid": "sn47.43",
               "name": "SN 47.43 Magga",
-              "focus": "",
+              "focus": "梵天劝请、念处为道",
               "summary": "佛陀忆述成道后梵天劝请转法轮，四念处被标示为通向清净的道路。",
               "en_url": "https://suttacentral.net/sn47.43/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.43/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3827,7 +3858,7 @@
             {
               "uid": "sn47.44",
               "name": "SN 47.44-47",
-              "focus": "",
+              "focus": "发展四念处之基础训练",
               "summary": "强调应发展四念处；以持戒、断恶行、独修请教等语境说明念处作为基础训练。",
               "en_url": "https://suttacentral.net/sn47.44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn47.44/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3839,11 +3870,12 @@
         {
           "title": "SN 48、SN 51、SN 54：根、神足、安般",
           "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "sn48.10",
               "name": "SN 48.10 Vibhaṅga 2",
-              "focus": "",
+              "focus": "五根分析",
               "summary": "分析信、精进、念、定、慧五根，是理解禅修能力结构的核心经文。",
               "en_url": "https://suttacentral.net/sn48.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn48.10/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3853,7 +3885,7 @@
             {
               "uid": "sn48.38",
               "name": "SN 48.38-40",
-              "focus": "",
+              "focus": "五受根",
               "summary": "分析苦、乐、忧、喜、舍五受根，说明受与禅定、解脱的关系。",
               "en_url": "https://suttacentral.net/sn48.38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn48.38/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3863,7 +3895,7 @@
             {
               "uid": "sn48.50",
               "name": "SN 48.50 Āpaṇa",
-              "focus": "",
+              "focus": "不疑三宝、五根",
               "summary": "舍利弗说明圣弟子对佛、法、僧与修道不疑，并解释五根通向解脱。",
               "en_url": "https://suttacentral.net/sn48.50/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn48.50/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3873,7 +3905,7 @@
             {
               "uid": "sn51.13",
               "name": "SN 51.13 Chandasamādhi",
-              "focus": "",
+              "focus": "欲定勤行成就神足",
               "summary": "分析欲定勤行成就神足，说明欲、精进、心、观四神足的结构。",
               "en_url": "https://suttacentral.net/sn51.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn51.13/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3883,7 +3915,7 @@
             {
               "uid": "sn51.15",
               "name": "SN 51.15 Uṇṇābha",
-              "focus": "",
+              "focus": "欲在禅修中的善用",
               "summary": "阿难向婆罗门解释：修道是为了断欲，但也要以善欲作为动力，显示“欲”在禅修中的善用。",
               "en_url": "https://suttacentral.net/sn51.15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn51.15/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3893,7 +3925,7 @@
             {
               "uid": "sn51.20",
               "name": "SN 51.20 Vibhaṅga",
-              "focus": "",
+              "focus": "四神足详细分析",
               "summary": "对四神足作详细分析：欲、精进、心、观与定、勤行相结合。",
               "en_url": "https://suttacentral.net/sn51.20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn51.20/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3903,7 +3935,7 @@
             {
               "uid": "sn54.1",
               "name": "SN 54.1-5",
-              "focus": "",
+              "focus": "安般念利益与果位",
               "summary": "安般念的利益、与觉支结合、导向不还与阿罗汉果等。",
               "en_url": "https://suttacentral.net/sn54.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn54.1/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3913,7 +3945,7 @@
             {
               "uid": "sn54.6",
               "name": "SN 54.6 Ariṭṭha",
-              "focus": "",
+              "focus": "安般念理解不完整",
               "summary": "佛陀指出 Ariṭṭha 对安般念的理解还不完整，并引出更完整的十六阶安般。",
               "en_url": "https://suttacentral.net/sn54.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn54.6/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3923,7 +3955,7 @@
             {
               "uid": "sn54.7",
               "name": "SN 54.7-11",
-              "focus": "",
+              "focus": "安般念安稳清明",
               "summary": "佛陀赞叹安般念带来的安稳、清明与住处；包括佛陀三个月以安般念为多住。",
               "en_url": "https://suttacentral.net/sn54.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn54.7/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3933,7 +3965,7 @@
             {
               "uid": "sn54.13",
               "name": "SN 54.13-16",
-              "focus": "",
+              "focus": "安般念圆满念处觉支",
               "summary": "说明安般念如何圆满四念处、七觉支、明与解脱，与 MN 118 构成平行核心文本。",
               "en_url": "https://suttacentral.net/sn54.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn54.13/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3943,7 +3975,7 @@
             {
               "uid": "sn54.17",
               "name": "SN 54.17-20",
-              "focus": "",
+              "focus": "安般念断结漏尽",
               "summary": "安般念导向断结、拔除随眠、遍知时间流转与漏尽。",
               "en_url": "https://suttacentral.net/sn54.17/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/sn54.17/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -3955,6 +3987,7 @@
         {
           "title": "增支部 Aṅguttara Nikāya",
           "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "an1.575",
@@ -4381,6 +4414,7 @@
         {
           "title": "小部 Khuddaka Nikāya",
           "section": "小部 Khuddaka Nikāya",
+          "intro": "",
           "suttas": [
             {
               "uid": "snp1.8",
@@ -4497,11 +4531,12 @@
         {
           "title": "律藏中与禅修有关的主题",
           "section": "律藏中与禅修有关的主题",
+          "intro": "",
           "suttas": [
             {
               "uid": "pli-tv-kd",
               "name": "住处、安居、独处",
-              "focus": "",
+              "focus": "住处规则与禅修环境",
               "summary": "犍度中关于住处、雨安居、林住、卧具、僧团秩序的规则，目标之一是让修行者有稳定环境持戒、学习与禅修。",
               "en_url": "https://suttacentral.net/pli-tv-kd/en/brahmali?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/pli-tv-kd/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -4511,7 +4546,7 @@
             {
               "uid": "pli-tv-bu-vb",
               "name": "坐卧具与资具节制",
-              "focus": "",
+              "focus": "资具节制与少欲知足",
               "summary": "律藏限制奢华坐卧具、积蓄、交易与不当求取，减少欲贪与社交负担，为少欲知足和禅修远离服务。",
               "en_url": "https://suttacentral.net/pli-tv-bu-vb/en/brahmali?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
               "zh_url": "https://suttacentral.net/pli-tv-bu-vb/zh/zhuang?lang=en&reference=none&highlight=false",
@@ -4521,7 +4556,7 @@
             {
               "uid": "pitaka",
               "name": "羯磨与僧团清净",
-              "focus": "",
+              "focus": "僧团清净制度",
               "summary": "布萨、自恣、忏悔、处罚等制度维护僧团清净；清净共同体是禅修者信心、惭愧与安稳的外缘。",
               "en_url": "https://suttacentral.net/pitaka/vinaya?lang=en",
               "zh_url": "",

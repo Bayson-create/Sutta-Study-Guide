@@ -60,6 +60,7 @@ def parse_markdown(filepath, category_key):
     current_section = ""
     current_subsection = ""
     suttas = []
+    section_intros = {}  # key: subsection or section title -> intro text
 
     i = 0
     while i < len(lines):
@@ -70,6 +71,20 @@ def parse_markdown(filepath, category_key):
             current_subsection = ""
         elif line.startswith('### '):
             current_subsection = line[4:].strip()
+            # Capture intro paragraph: scan ahead past blank lines until a table or another heading
+            j = i + 1
+            intro_lines = []
+            while j < len(lines):
+                nxt = lines[j].strip()
+                if not nxt:
+                    j += 1
+                    continue
+                if nxt.startswith('|') or nxt.startswith('#'):
+                    break
+                intro_lines.append(nxt)
+                j += 1
+            if intro_lines:
+                section_intros[current_subsection] = ' '.join(intro_lines)
         elif line.startswith('|') and i + 1 < len(lines) and '---' in lines[i + 1]:
             header_cells = parse_table_row(line)
             i += 1  # skip separator
@@ -174,7 +189,94 @@ def parse_markdown(filepath, category_key):
                 if len(cells) >= 2 and cells[0] not in ('主题', '术语/概念'):
                     themes.append({"topic": cells[0], "suttas": cells[1]})
 
-    return suttas, themes
+    return suttas, themes, section_intros
+
+
+# Manually composed concise "focus" tags for entries whose source tables
+# have no 重点/禅修重点/概念重点 column. Keyed by exact sutta name.
+FOCUS_PATCH = {
+    # laypeople: SN 41 Citta Saṁyutta
+    "SN 41.1 Saṁyojana Sutta": "结与被结缚之法",
+    "SN 41.2 Isidatta 1": "界的多样性",
+    "SN 41.3 Isidatta 2": "十种无记见、有身见",
+    "SN 41.4 Mahaka": "神通示现、居士信心",
+    "SN 41.5 Kāmabhū 1": "一轮车譬喻",
+    "SN 41.6 Kāmabhū 2": "身语心行、灭尽定",
+    "SN 41.7 Godatta": "无量、空、无相解脱",
+    "SN 41.8 Nigaṇṭha Nātaputta": "信与知、亲证经验",
+    "SN 41.9 Kassapa": "苦行无果",
+    "SN 41.10 Gilānadassana": "临终安慰、死亡观",
+    # laypeople: SN 42 Gāmaṇi Saṁyutta
+    "SN 42.1 Caṇḍa Sutta": "止息愤怒",
+    "SN 42.2 Tālapuṭa Sutta": "表演职业与业",
+    "SN 42.3 Yodhājīva Sutta": "战死与业",
+    "SN 42.6 Asibandhakaputta Sutta": "仪式与业的譬喻",
+    "SN 42.7 Khettūpama Sutta": "说法深浅、教化次第",
+    "SN 42.8 Saṅkhadhamā Sutta": "罪感、戒行、心解脱",
+    "SN 42.9 Kula Sutta": "家族衰败的因缘",
+    "SN 42.10 Maṇicūḷaka Sutta": "比丘受金银、僧俗经济",
+    "SN 42.11 Bhadraka Sutta": "爱取与苦",
+    "SN 42.12 Rāsiya Sutta": "中道、苦行误解",
+    "SN 42.13 Pāṭaliya Sutta": "神通与可验证的转化",
+    # laypeople: SN 55 Sotāpatti Saṁyutta
+    "SN 55.16 Mittāmacca 1": "入流四支、亲友",
+    "SN 55.17 Mittāmacca 2": "入流四支、亲友责任",
+    "SN 55.21 Mahānāma 1": "临终失念、信戒闻施慧",
+    "SN 55.22 Mahānāma 2": "善法倾向、树喻",
+    "SN 55.23 Godhā Sakka": "入流三支或四支",
+    "SN 55.24 Sarakāni 1": "法随行者、信随行者",
+    "SN 55.25 Sarakāni 2": "不轻率否定圣道进展",
+    "SN 55.26 Anāthapiṇḍika 1": "病中入流四支",
+    "SN 55.27 Anāthapiṇḍika 2": "佛法僧戒不坏净",
+    "SN 55.28 Bhayaverūpasanta 1": "五怖畏、入流四支、缘起",
+    "SN 55.29 Bhayaverūpasanta 2": "戒信正见、无畏",
+    "SN 55.30 Nandaka Licchavi": "入流四支、闻法优先",
+    # laypeople: 律藏主题
+    "受戒、依止、供养关系": "居士供养与僧俗信心",
+    "金钱、交易、资具": "比丘金钱戒律、僧俗经济边界",
+    "僧团公共程序与在家信众": "僧团制度与在家护法",
+    # meditation: SN 40 Moggallāna Saṁyutta
+    "SN 40.1-4": "四禅心不稳之指导",
+    "SN 40.5-8": "四无色定障碍与指导",
+    "SN 40.9": "无相定",
+    "SN 40.10-11": "深定、神通与教化",
+    # meditation: SN 46 Bojjhaṅga Saṁyutta
+    "SN 46.2 Kāya": "七觉支之食",
+    "SN 46.3 Sīla": "闻法忆持思惟修习路径",
+    "SN 46.14-16 Gilāna": "病中诵念七觉支",
+    "SN 46.51 Āhāra": "五盖七觉支滋养条件",
+    "SN 46.52 Pariyāya": "佛教与外道说五盖七觉支之别",
+    "SN 46.53 Aggi": "调节精进与定力",
+    "SN 46.54 Mettāsahagata": "四无量与七觉支",
+    "SN 46.55 Saṅgārava": "五盖譬喻、去盖",
+    # meditation: SN 47 Satipaṭṭhāna Saṁyutta
+    "SN 47.1-4": "四念处一乘道",
+    "SN 47.6 Sakuṇagghi": "鹰鹌鹑譬喻、安住自境",
+    "SN 47.8 Sūda": "厨师譬喻、反馈调整",
+    "SN 47.10 Bhikkhunupassaya": "念处修习层层增上",
+    "SN 47.20 Janapadakalyāṇī": "头顶油钵譬喻、正念",
+    "SN 47.35 Sati": "正念与正知之别",
+    "SN 47.40 Vibhaṅga": "四念处定义",
+    "SN 47.42 Samudaya": "四念处集灭",
+    "SN 47.43 Magga": "梵天劝请、念处为道",
+    "SN 47.44-47": "发展四念处之基础训练",
+    # meditation: SN 48/51/54
+    "SN 48.10 Vibhaṅga 2": "五根分析",
+    "SN 48.38-40": "五受根",
+    "SN 48.50 Āpaṇa": "不疑三宝、五根",
+    "SN 51.13 Chandasamādhi": "欲定勤行成就神足",
+    "SN 51.15 Uṇṇābha": "欲在禅修中的善用",
+    "SN 51.20 Vibhaṅga": "四神足详细分析",
+    "SN 54.1-5": "安般念利益与果位",
+    "SN 54.6 Ariṭṭha": "安般念理解不完整",
+    "SN 54.7-11": "安般念安稳清明",
+    "SN 54.13-16": "安般念圆满念处觉支",
+    "SN 54.17-20": "安般念断结漏尽",
+    # meditation: 律藏主题
+    "住处、安居、独处": "住处规则与禅修环境",
+    "坐卧具与资具节制": "资具节制与少欲知足",
+    "羯磨与僧团清净": "僧团清净制度",
+}
 
 
 def main():
@@ -186,7 +288,10 @@ def main():
             print(f"WARNING: {filepath} not found")
             continue
 
-        suttas, themes = parse_markdown(filepath, key)
+        suttas, themes, section_intros = parse_markdown(filepath, key)
+        for s in suttas:
+            if not s["focus"] and s["name"] in FOCUS_PATCH:
+                s["focus"] = FOCUS_PATCH[s["name"]]
         print(f"{key}: {len(suttas)} suttas, {len(themes)} themes")
 
         # Group by section
@@ -198,6 +303,7 @@ def main():
                 sections_map[sec_key] = {
                     "title": sec_key,
                     "section": s["section"],
+                    "intro": section_intros.get(sec_key, ""),
                     "suttas": []
                 }
                 sections_order.append(sec_key)
