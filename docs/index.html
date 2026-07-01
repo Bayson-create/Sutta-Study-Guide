@@ -32,8 +32,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-.container { flex: 1 0 auto; }
+.container { flex: 1 0 auto; min-width: 0; width: 100%; }
 .site-footer { flex-shrink: 0; }
+body { overflow-x: hidden; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -179,10 +180,41 @@ a:hover { text-decoration: underline; }
   margin: 0 0 12px; padding: 10px 14px; background: var(--accent-bg);
   border-left: 3px solid var(--accent-light); border-radius: 4px;
 }
-.framework-table-wrap { margin-bottom: 24px; overflow-x: auto; }
-.framework-table-wrap .section-title { margin-top: 18px; }
-.framework-table { min-width: 620px; }
-.framework-table td { line-height: 1.65; }
+.framework-overview {
+  margin: 20px 0 28px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--card-bg); box-shadow: var(--shadow); overflow: hidden;
+}
+.framework-overview > summary {
+  cursor: pointer; padding: 14px 20px; font-weight: 700; color: var(--accent);
+  background: var(--accent-bg); list-style: none; display: flex; align-items: center; gap: 8px;
+  user-select: none;
+}
+.framework-overview > summary::-webkit-details-marker { display: none; }
+.framework-overview > summary::before { content: '▶'; font-size: 0.75em; transition: transform 0.15s; }
+.framework-overview[open] > summary::before { transform: rotate(90deg); }
+.framework-overview > summary .fo-sub { font-weight: 400; color: var(--text-light); font-size: 0.82em; }
+.framework-overview-body { padding: 4px 20px 18px; }
+.framework-table-wrap { margin: 16px 0; position: relative; }
+.framework-table-wrap .subsection-title { font-size: 0.95em; margin: 14px 0 6px; }
+.framework-table-scroll {
+  overflow-x: auto; border: 1px solid var(--border); border-radius: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+.framework-table-scroll::after {
+  /* subtle right-edge fade to hint more content is scrollable */
+  content: ''; position: sticky; top: 0; right: 0; float: right;
+  width: 0; height: 0;
+}
+.framework-table { min-width: 560px; width: 100%; font-size: 0.88em; }
+.framework-table td { line-height: 1.6; }
+.framework-table th, .framework-table td { white-space: normal; }
+.scroll-hint { font-size: 0.75em; color: var(--text-light); margin: 4px 0 0; text-align: right; }
+.scroll-hint::before { content: '⇔ 可左右滑动查看完整表格 / swipe to see more'; }
+
+/* Index-style framework tables rendered as compact tag pills at page bottom */
+.framework-index-section { margin-top: 28px; }
+.framework-index-section h4 { font-size: 1em; color: var(--accent); margin: 16px 0 8px; }
+.framework-index-section h4:first-child { margin-top: 0; }
 
 /* Footer */
 .site-footer { text-align: center; padding: 28px 20px; margin-top: 20px; border-top: 1px solid var(--border); }
@@ -595,22 +627,34 @@ function renderCategory(key) {
   html += `<div class="cat-header"><h2>${cat.icon} ${cat.title}</h2><div class="cat-en">${cat.title_en}</div></div>`;
 
   if (cat.framework_tables && cat.framework_tables.length) {
-    for (const table of cat.framework_tables) {
-      html += `<div class="framework-table-wrap"><div class="section-title">${esc(table.heading)}</div>`;
-      html += '<table class="sutta-table framework-table"><thead><tr>';
-      for (const header of table.headers) {
-        html += `<th>${esc(header)}</th>`;
-      }
-      html += '</tr></thead><tbody>';
-      for (const row of table.rows) {
-        html += '<tr>';
-        for (const cell of row) {
-          html += `<td>${linkifySuttaRefs(esc(cell))}</td>`;
+    // Split framework tables: "...索引" tables are reference lookups (render as
+    // compact tag pills at the bottom, matching cat.themes styling); the rest
+    // are overview/mapping tables (render in a collapsible block up top so
+    // they don't bury the actual clickable sutta cards under a wall of tables).
+    const overviewTables = cat.framework_tables.filter(t => !t.heading.endsWith('索引'));
+    const indexTables = cat.framework_tables.filter(t => t.heading.endsWith('索引'));
+
+    if (overviewTables.length) {
+      html += `<details class="framework-overview" open><summary>📋 框架总览 <span class="fo-sub">点击收起/展开 · ${overviewTables.length} 个概念地图</span></summary><div class="framework-overview-body">`;
+      for (const table of overviewTables) {
+        html += `<div class="framework-table-wrap"><div class="subsection-title">${esc(table.heading)}</div>`;
+        html += '<div class="framework-table-scroll"><table class="sutta-table framework-table"><thead><tr>';
+        for (const header of table.headers) {
+          html += `<th>${esc(header)}</th>`;
         }
-        html += '</tr>';
+        html += '</tr></thead><tbody>';
+        for (const row of table.rows) {
+          html += '<tr>';
+          for (const cell of row) {
+            html += `<td>${linkifySuttaRefs(esc(cell))}</td>`;
+          }
+          html += '</tr>';
+        }
+        html += '</tbody></table></div><div class="scroll-hint"></div></div>';
       }
-      html += '</tbody></table></div>';
+      html += '</div></details>';
     }
+    cat._indexTables = indexTables; // stashed for rendering at the bottom
   }
 
   let isFirstSection = true;
@@ -655,6 +699,20 @@ function renderCategory(key) {
       html += `<span class="theme-tag"><b>${esc(t.topic)}</b>: ${linkifySuttaRefs(esc(t.suttas))}</span>`;
     }
     html += '</div></div>';
+  }
+
+  if (cat._indexTables && cat._indexTables.length) {
+    html += '<div class="themes-section framework-index-section"><h3>参考索引</h3>';
+    for (const table of cat._indexTables) {
+      html += `<h4>${esc(table.heading)}</h4><div>`;
+      for (const row of table.rows) {
+        if (row.length >= 2 && row[0]) {
+          html += `<span class="theme-tag"><b>${esc(row[0])}</b>: ${linkifySuttaRefs(esc(row[1]))}</span>`;
+        }
+      }
+      html += '</div>';
+    }
+    html += '</div>';
   }
   app.innerHTML = html;
 }
