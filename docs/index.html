@@ -110,6 +110,75 @@ a:hover { text-decoration: underline; }
 .md-reader th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
 .md-reader tr:nth-child(even) td { background: var(--hover-bg); }
 
+/* Bodhi essays reader */
+.bodhi-reader { max-width: 900px; margin: 0 auto; }
+.bodhi-intro {
+  background: var(--accent-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; margin-bottom: 28px; font-size: 0.92em; line-height: 1.8; color: var(--text);
+}
+.bodhi-intro .label { font-weight: 700; color: var(--accent); }
+.bodhi-essay {
+  margin-bottom: 32px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--card-bg); box-shadow: var(--shadow); overflow: hidden;
+}
+.bodhi-essay-header {
+  padding: 18px 24px; background: linear-gradient(135deg, var(--bg-warm), var(--card-bg));
+  border-bottom: 1px solid var(--border);
+}
+.bodhi-essay-header .bodhi-num {
+  display: inline-block; font-size: 0.78em; color: var(--text-light);
+  letter-spacing: 0.05em; margin-bottom: 4px;
+}
+.bodhi-essay-header h3 { font-size: 1.2em; color: var(--accent); margin: 2px 0 2px; }
+.bodhi-essay-header .bodhi-en-title { font-size: 0.92em; color: var(--text-light); font-style: italic; margin-bottom: 8px; }
+.bodhi-essay-header .bodhi-link {
+  display: inline-flex; align-items: center; gap: 4px; font-size: 0.82em;
+  padding: 3px 10px; border: 1px solid var(--accent-light); border-radius: 12px;
+  color: var(--accent); background: var(--card-bg);
+}
+.bodhi-essay-header .bodhi-link:hover { background: var(--accent-light); color: #fff; text-decoration: none; }
+.bodhi-summary { padding: 18px 24px; font-size: 0.95em; line-height: 1.9; text-align: justify; }
+.bodhi-summary .bodhi-label {
+  font-weight: 700; color: var(--accent); display: block; margin-bottom: 6px; font-size: 0.85em;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.bodhi-mindmap { padding: 4px 20px 22px; text-align: center; }
+.bodhi-mindmap img {
+  max-width: 100%; border-radius: 6px; border: 1px solid var(--border); cursor: zoom-in;
+  transition: box-shadow 0.15s;
+}
+.bodhi-mindmap img:hover { box-shadow: 0 4px 14px rgba(100,80,40,0.18); }
+.bodhi-mindmap .bodhi-caption { font-size: 0.76em; color: var(--text-light); margin-top: 8px; }
+.bodhi-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.bodhi-toc a {
+  font-size: 0.82em; padding: 5px 12px; border: 1px solid var(--border); border-radius: 14px;
+  background: var(--card-bg); color: var(--text);
+}
+.bodhi-toc a:hover { background: var(--hover-bg); border-color: var(--accent-light); text-decoration: none; }
+
+/* Visuddhimagga (清净之道) reader */
+.vism-chapter-grid { margin-top: 20px; }
+.vism-chapter-card { position: relative; }
+.vism-chapter-num { font-size: 0.75em; color: var(--text-light); letter-spacing: 0.04em; margin-bottom: 4px; }
+.vism-heading { color: var(--accent); font-weight: 700; margin: 22px 0 10px; }
+.zh-formatted .vism-heading:first-child { margin-top: 0; }
+.vism-part-title {
+  font-size: 0.95em; font-weight: 700; color: var(--text-light); margin: 22px 0 10px;
+  padding-bottom: 4px; border-bottom: 1px dashed var(--border);
+}
+.en-formatted .vism-part-title:first-child { margin-top: 0; }
+.vism-verse {
+  font-style: italic; color: var(--text); background: var(--accent-bg); border-left: 3px solid var(--accent-light);
+  padding: 10px 16px; margin: 12px 0; line-height: 1.9; font-size: 0.95em;
+}
+.vism-fnref { color: var(--accent); cursor: pointer; font-size: 0.82em; }
+.vism-page { font-size: 0.72em; color: var(--text-light); background: var(--hover-bg); border-radius: 3px; padding: 0 4px; margin-right: 2px; }
+.vism-footnotes { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--text-light); }
+.vism-footnotes ol { padding-left: 1.4em; }
+.vism-footnotes li { margin-bottom: 8px; line-height: 1.7; }
+.vism-fn-id { color: var(--accent); font-weight: 600; margin-right: 4px; }
+.vism-chapnav { display: flex; justify-content: space-between; margin-top: 20px; }
+
 /* Timeline embed */
 .container.container-wide { max-width: 1600px; }
 .timeline-frame-wrap {
@@ -404,6 +473,13 @@ function route() {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
     renderResearchTimeline();
+  } else if (hash === '#/research/bodhi') {
+    renderResearchBodhi();
+  } else if (hash === '#/research/vism') {
+    renderVismHome();
+  } else if (hash.startsWith('#/research/vism/read/')) {
+    const num = parseInt(hash.slice('#/research/vism/read/'.length), 10);
+    renderVismReader(num);
   } else {
     renderHome();
   }
@@ -468,6 +544,16 @@ function renderResearchHome() {
     <div class="title">佛教简史和教义演化</div>
     <div class="desc">谌飚（禅世界网站）弘法讲座 PPT，2019 年大觉寺讲稿 — 点击在新标签页打开</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/bodhi'">
+    <span class="icon">🌳</span>
+    <div class="title">菩提比丘论文总结</div>
+    <div class="desc">Bhikkhu Bodhi 十一篇随笔精读：戒学根基、缘起、皈依、宗教对话与佛教教育，附原创概括与思维导图</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/vism'">
+    <span class="icon">🪷</span>
+    <div class="title">清净之道</div>
+    <div class="desc">《清净道论》二十三品全本三语阅读器 — 巴利语·英语·中文对照，逐品研读戒、定、慧三学</div>
+  </div>`;
   html += '</div>';
   html += `<div class="research-note">
     《佛教简史和教义演化》讲义由谌飚（CHEN Biao）编制并在大觉寺公开弘法讲座中使用，来源：
@@ -494,6 +580,289 @@ async function renderResearchConcepts() {
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       <div class="cat-header"><h2>📜 全面佛法概念解说</h2><div class="cat-en">A Comprehensive Guide to Buddhist Concepts</div></div>
       ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: BODHI ESSAYS ===
+const BODHI_ESSAYS = [
+  {
+    title_zh: "滋养根本",
+    title_en: "Nourishing the Roots",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/wheel259.html",
+    img: "research/bodhi-images/01-nourishing-the-roots.png",
+    summary: "这是一本由四篇短文合编的小册子。第一篇以树为喻：信心是种子，戒（sīla）是根，定是树干，慧是枝叶花果——根若不稳，修行难有实质成长；戒不只是外在禁令，更是清净心性的具象表达。第二篇转向业与轮回：有情世界形态万千，根源不在外力主宰，而在心之善恶意志的自身抉择，每一念都在悄悄决定未来的升沉。第三篇处理“福德”：多数人只把福德理解为求健康财富的世俗手段，作者提醒福德真正的价值在于净化心相续、为智慧的生起铺路，两种资粮缺一不可。第四篇收束于“觉悟”：苦并非外在强加，而是缘起和合之相；唯有如实智慧才能连根拔除无明，书本知识终究替代不了亲身实证。四篇合看，构成一条从戒到慧、层层递进的完整修行地图。",
+  },
+  {
+    title_zh: "归依佛陀",
+    title_en: "Refuge in the Buddha",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_21.html",
+    img: "research/bodhi-images/02-refuge-in-the-buddha.png",
+    summary: "作者指出，归依佛陀不是一次性的宣誓，而是随修行加深而不断成熟的持续过程——初学者不必一开始就完全通透轮回与解脱的全部义理。文章特别纠正两类常见误读：一是把佛陀神化为救世主式的绝对本体，二是把佛陀降格为纯粹的伦理学家或禅修技巧传授者。真正的归依，落在对“正等正觉者”（sammā-sambuddha）这一定位的如实认知：佛陀是无师自悟、圆满穷尽真理、而后宣说以助众生破无明的觉者，这份归依既指向乔达摩这位历史人物，也指向他所证得、可被验证的“佛德”本身。文章最后强调，佛陀只能指路而不能代人解脱——真实的皈依必须落实为自己一步步的修行实践，信心也随实修的验证而由浅入深，直至坚定不移。",
+  },
+  {
+    title_zh: "超越性缘起",
+    title_en: "Transcendental Dependent Arising",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/wheel277.html",
+    img: "research/bodhi-images/03-transcendental-dependent-arising.png",
+    summary: "本文以《相应部》SN 12.23（优波尼沙经）为核心文本，指出缘起法则并不只解释轮回如何流转，同样也支配着解脱之路如何次第展开——世俗与出世间共用同一套条件性法则。世俗十二支缘起（无明→行→识→……→老死）描述苦如何生起并循环；而鲜少被论及的“超验缘起”十一支则描述苦如何转化为觉悟的动力：苦缘信、信缘喜、喜缘轻安、轻安缘乐、乐缘定、定缘如实知见、知见缘厌离、厌离缘离贪，直至解脱与漏尽智。这条链条说明，对苦的深刻体认本身可以成为信心的近因，而非仅是修行的阻力；止（禅定）与观（内观智慧）必须相互配合，单靠压伏烦恼无法根除烦恼。离贪是第一个真正超越世间的阶段，标志着心第一次直接触及无为的涅槃。作者借此论证，“佛陀只教导苦与苦的止息”这一古老宣示，正是因为苦生与苦灭两个方向，其实统摄于同一条缘起法则之内。",
+  },
+  {
+    title_zh: "关于开放的思考",
+    title_en: "A Note on Openness",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_17.html",
+    img: "research/bodhi-images/04-a-note-on-openness.png",
+    summary: "作者审视当代文化中盛行的“开放性”（openness）观念——即温和地全盘接纳一切经验、不加评判、不设边界，并指出许多现代佛法诠释者已悄然把佛法改造成实现这种“开放”的工具，宣称禅修的目标就是培养无分别的觉知、随顺一切生起而不加抗拒。但作者认为这与佛陀原本的教导存在根本落差：佛陀教导的核心恰恰是“审慎”（appamāda）——持续、警觉、带有道德判断力的自我省察，而非放弃分辨。文章进一步指出，“开放论”背后隐含着一种把二元对立一概视为虚妄分别、把万物本体设想为纯善同一的世界观；但审慎所依托的佛法实相观认为，向善净化与向恶沉沦的分野真实存在，业果不虚，一念之择足以决定长远祸福。放弃分辨、全盘敞开看似温柔，实则可能模糊了通往解脱与滑向轮回这两条路径之间至关重要的界限——正如经文所言，审慎是不死之道，放逸是死亡之路。",
+  },
+  {
+    title_zh: "包容与多元",
+    title_en: "Tolerance and Diversity",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_24.html",
+    img: "research/bodhi-images/05-tolerance-and-diversity.png",
+    summary: "面对全球化时代宗教直接碰撞的局面，作者主张佛教应以“中道”回应“信仰多元”这一难题，既不滑向排他好斗的原教旨主义，也不滑向为求包容而抹平教义差异的“精神普遍论”。前者强硬独尊自宗、贬低他教，这与佛教温和包容的伦理底色本就相悖；后者则主张一切宗教内核相通、只是山路万千终归同一月光，看似消解了冲突，实则回避了真实存在的教义分歧。作者指出，佛陀明确说唯有在其教法中才具备通往究竟解脱（无余涅槃）的完整道路与方法——这是基于对“解脱”这一目标本身精确界定后的立场表态，而非傲慢排他。真正的宗教包容，不是靠假装大家本质相同，而是坦然承认差异根深蒂固、难以弥合，同时依然充分尊重他人自由信仰、追寻不同道路的权利；对其他宗教中中正的伦理教导，佛教也乐于承认其能引人向善、趋向人天安乐，即便这与断尽轮回的终极解脱并非同一件事。",
+  },
+  {
+    title_zh: "佛法与不二论",
+    title_en: "Dhamma and Non-duality",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_27.html",
+    img: "research/bodhi-images/06-dhamma-and-nonduality.png",
+    summary: "文章比较了两大“不二论”体系——印度教吠檀多的“梵我合一”与大乘佛教“轮回涅槃无别、性空同一”的见地——并从上座部立场出发，逐一辨明其与巴利经典的根本分歧。吠檀多以恒常真我（阿特曼）等同宇宙绝对实在为终极见地，而上座部彻底否定任何形式的“恒常真我”，主张人只是五蕴和合，具足无常、苦、无我三共相；大乘不二论虽形式不同，但同样预设某种超越差别的统一本体，这在巴利三藏中并无对应依据。作者强调，佛陀教法的独特之处，恰恰在于它不为追求形而上的“合一”而牺牲对真实二元分野（如轮回与涅槃、善与不善、染与净）的如实承认——四圣谛之所以被称为“圣”，正因为它们真实、不虚、恒常如是。文章进而在戒、定、慧三个维度上逐一对比：上座部认为善恶界限对凡夫到阿罗汉全程有效、禅修是老实的心灵净化工程、智慧是如实照见诸法各自差别而非消融差别，这些立场都与非二元体系的“超越善恶”“烦恼即菩提”“证悟即证入统一本体”直接相左。结论是：上座部宁可放弃形而上合一所带来的心理安慰，也要如实安住于真实分野，因为这才是更贴近解脱实相的道路。",
+  },
+  {
+    title_zh: "佛教教育的宗旨",
+    title_en: "Aims of Buddhist Education",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_35.html",
+    img: "research/bodhi-images/07-aims-of-buddhist-education.png",
+    summary: "作者从当代主流教育的普遍困境切入：课堂程式化、学生倦怠焦躁、教师陷入体制与理想的两难，根源在于教育丢失了“引出心中理解力、培养成熟负责成年人”这一本真目标，全面滑向商业化、职业化。以斯里兰卡佛教学校为例，作者主张世俗体制教育与佛法教育应有分工：前者主攻谋生技能，后者应承担塑造人格心性的核心责任，具体展开为五大素养——信（对三宝的深信，是整个教育体系的根基）、施（慷慨舍己，对治自私与贪执）、戒（兼具德行与心智双重维度）、闻（广泛研读、积累正法知识）、慧（般若智慧，是解脱的直接工具，也是全部教育环节最终指向的顶峰）。信与施调伏情感人格，闻与慧开发理智心智，戒则贯通身心两面，五者均衡发展，才是佛教教育“人格与心智同步圆满”的完整图景，其终点正对应佛陀成道时生起的“见、知、智、明、光”。",
+  },
+  {
+    title_zh: "迈向理解的门槛",
+    title_en: "Toward a Threshold of Understanding",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_30.html",
+    img: "research/bodhi-images/08-toward-a-threshold-of-understanding.png",
+    summary: "这篇文章回应了教皇若望·保禄二世在著作中评价佛教救赎论“全然消极”所引发的斯里兰卡舆论风波。作者首先指出，“消极”与“积极”的判断本身因参照系而异：基督教以永恒灵魂与人格化神合一为准绳，自然将佛教无常无我、终归涅槃的教法判为“消极”，但这只是立场差异，并非佛教教法本身有所欠缺。文章进而系统澄清教皇言论中的几处误读：其一，佛教并非只谈出世解脱、无法指导世俗生活——佛陀实际上为在家众开示了大量涉及伦理、婚姻、营生、社会关系的教法，构成“现世之善、未来之善、究竟之善”三层完整的善果体系，涅槃是终极目标而非唯一内容；其二，“苦”（dukkha）不等于“邪恶”，而是有漏、缺憾、受迫的状态，佛陀教法的任务是断除内心无明与贪爱，而非否定或毁灭客观世界；其三，涅槃所依托的“舍”（upekkhā）并非对世间冷漠麻木，而是慈悲喜舍四梵住的圆满顶点，佛陀成道后四十五年游化弘法、利益天人的实际行迹，本身就反驳了“佛教教人彻底避世冷漠”这一指控。",
+  },
+  {
+    title_zh: "苏布拉马的问题",
+    title_en: "Subrahma's Problem",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_37.html",
+    img: "research/bodhi-images/09-subrahmas-problem.png",
+    summary: "文章由一段经文引入：天神苏布拉马向佛陀倾诉，自己虽身处优越之境，内心却“总是”焦躁不安、心神不宁。作者借此指出，现代人常把不安全感归咎于外在秩序的松弛（犯罪增多、人际失序），于是不断加固门锁与安防，但即便外在防护齐备，深层的焦虑依然如影随形——这说明真正的病灶从来不在外部世界，而在于心本身。心是觉知在时间中流转的显现，永远从无法追回的过去流向充满未知的未来，这种结构性的不确定性，加上我们本能地想要抓住无常之物、抗拒变化流逝，正是持续焦虑滋生的根源。佛陀对苏布拉马的回应给出的解方并非更多的外在保护，而是彻底的向内舍弃：唯有透过如实照见“一切法无我、无我所”的智慧,才能从根本上消融执取；一旦执著止息,即使身处生老病死的洪流之中，心也能获得一种不假外求、无所不在的真实安稳——所谓“无怖畏者”，正是在放下一切之后所证得的境界。",
+  },
+  {
+    title_zh: "生活方式与心灵修行",
+    title_en: "Lifestyles and Spiritual Progress",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_39.html",
+    img: "research/bodhi-images/10-lifestyles-and-spiritual-progress.png",
+    summary: "文章探讨了一个常见疑问：出家与在家两种生活方式，是否影响修行进度？作者的回答是：八正道对出家与在家众完全平等开放，出家身份本身并不附带任何“速成”特权；但从外在条件而言，标准僧团生活——彻底舍离家庭财产与世俗身份、极简知足、以完整戒律自律、免于世俗杂务——的确构成了最有利于修行的理想环境。在家修行者则大致分为两种主流模式：多数人采取“渐积福德型”，依信、施、戒、正见循序积累善业，志在渐修渐证；少数人志在“今生直证觉悟型”，需要以严苛持戒与高强度禅修去模仿并逼近出家生活的舍离与自律结构——这条路之所以走得通，恰恰是因为它在效仿僧团的生活范式，而非绕开它。两种模式并非彼此排斥，日常可循渐修之路，同时抽出专属时段践行深度精进。文章最后强调，理想僧团生活只是提供了最优外在条件，并不保证个体修行必然更快——现实中不乏在家精进者善根深厚、修为反超部分持戒僧人的例子，佛陀评判修行高下从不以出家或在家的身份论定，而只看修行本身正确与否。",
+  },
+  {
+    title_zh: "通往知识的两条道路",
+    title_en: "Two Paths to Knowledge",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/bps-essay_42.html",
+    img: "research/bodhi-images/11-two-paths-to-knowledge.png",
+    summary: "作者从西方文明科学与宗教长期割裂这一固有矛盾切入：科学声称掌握客观确凿的知识体系，传统宗教则依托超自然信条与自律牺牲，二者分裂的后果之一，是价值被科学世界观逐出“客观实在”的范畴，沦为主观臆想，许多人转而投向消费主义与享乐主义这类“世俗宗教”以填补空虚。作者指出佛教提供了第三条路径：它与科学一样区分表象与实质、追求如实真理，但所求知识的性质截然不同——科学志在建立可公开验证的客观知识体系，佛教志在通过内在转化而“觉悟”，知识的价值不在于事实本身，而在于它是否能带来生命的实际转变。更关键的是,作者主张价值本身具备客观实在性,如同物理定律一样内嵌于现实本质,而非社会文化或个人喜好的投射——这意味着人生价值的高下真伪同样可以通过内观省察加以客观考察、分层评判。现代科学发现万物流变、无恒定终极实体，这与佛教“无我”的表象契合，但佛教对无我的要求远不止智性认同，而必须落实为对内心最细微执取的持续观照与断除。文章最后呼吁佛教思想家与开明科学家展开对话，让客观知识与内在智慧相互滋养,而非彼此对立——真正的圆满，正是佛陀所代表的“知世间者”（lokavidū）与“智行圆满者”（vijjācaraṇasampanno）的双重成就。",
+  },
+];
+
+function renderResearchBodhi() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🌳 菩提比丘论文总结</h2><div class="cat-en">Essays by Bhikkhu Bodhi — Summaries &amp; Mind Maps</div></div>`;
+
+  html += `<div class="bodhi-reader">`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本页：</span>
+    以下十一篇随笔均出自 Bhikkhu Bodhi（菩提比丘），原文发表于
+    <a href="https://www.accesstoinsight.org" target="_blank">Access to Insight</a>
+    与 BPS（Buddhist Publication Society）。每篇下方的"概括"由本站编者综合原文内容独立撰写，
+    随后附上研读时整理的思维导图；点击标题旁的按钮可在新标签页阅读英文原文。
+  </div>`;
+
+  html += '<div class="bodhi-toc">';
+  BODHI_ESSAYS.forEach((e, i) => {
+    html += `<a href="javascript:void(0)" onclick="document.getElementById('bodhi-${i}').scrollIntoView({behavior:'smooth',block:'start'})">${i + 1}. ${esc(e.title_zh)}</a>`;
+  });
+  html += '</div>';
+
+  BODHI_ESSAYS.forEach((e, i) => {
+    html += `<div class="bodhi-essay" id="bodhi-${i}">
+      <div class="bodhi-essay-header">
+        <div class="bodhi-num">第 ${i + 1} 篇 / ${BODHI_ESSAYS.length}</div>
+        <h3>${esc(e.title_zh)}</h3>
+        <div class="bodhi-en-title">${esc(e.title_en)}</div>
+        <a class="bodhi-link" href="${e.url}" target="_blank">阅读原文 ↗</a>
+      </div>
+      <div class="bodhi-summary"><span class="bodhi-label">概括</span>${esc(e.summary)}</div>
+      <div class="bodhi-mindmap">
+        <img src="${e.img}" alt="${esc(e.title_zh)} 思维导图" loading="lazy" onclick="window.open('${e.img}','_blank')">
+        <div class="bodhi-caption">思维导图 · 点击查看大图</div>
+      </div>
+    </div>`;
+  });
+
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: VISUDDHIMAGGA (清净之道) ===
+let vismReaderMode = 'trilingual';
+let vismShowPali = true;
+let _vismIndexCache = null;
+
+const VISM_CHAPTER_ICONS = ['🕯️','🌾','🎯','🟤','🔷','💀','🙏','📿','🕊️','🌫️','🧘','✨','👁️','🧩','🔭','⚖️','🌳','👀','❓','🛤️','🚶','💎','🎓'];
+
+async function loadVismIndex() {
+  if (_vismIndexCache) return _vismIndexCache;
+  const res = await fetch('research/vism-data/vism_index.json');
+  _vismIndexCache = await res.json();
+  return _vismIndexCache;
+}
+
+async function renderVismHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🪷 清净之道</h2><div class="cat-en">Visuddhimagga — The Path of Purification, in 23 Chapters</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本书：</span>
+    《清净道论》（Visuddhimagga）为公元五世纪觉音尊者（Buddhaghosa）所著，是上座部佛教最重要的义理纲要之一，
+    以戒、定、慧三学为骨架，逐一注释展开。本阅读器左侧为巴利语与英译（Ñāṇamoli 尊者译本）逐句对照，
+    右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、单独英文、单独中文三种模式，并可显示/隐藏巴利语。
+  </div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载章节目录...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    const idx = await loadVismIndex();
+    let cardsHtml = '<div class="cards vism-chapter-grid">';
+    idx.chapters.forEach((c, i) => {
+      cardsHtml += `<div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/read/${c.chapter}'">
+        <span class="icon">${VISM_CHAPTER_ICONS[i] || '📖'}</span>
+        <div class="vism-chapter-num">第 ${c.chapter} 品 / 23</div>
+        <div class="title">${esc(c.title_zh.replace(/\s*-\s*清净道论$/, ''))}</div>
+        <div class="desc">${esc(c.title_en)}</div>
+      </div>`;
+    });
+    cardsHtml += '</div>';
+    app.querySelector('.loading').outerHTML = cardsHtml;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">目录加载失败: ${e.message}</div>`;
+  }
+}
+
+function vismSectionHtml(sec) {
+  const tag = sec.level >= 2 ? 'h4' : 'h3';
+  return `<${tag} class="vism-heading">${sec.heading}</${tag}>${sec.html}`;
+}
+
+function vismFootnotesHtml(footnotes) {
+  const ids = Object.keys(footnotes);
+  if (!ids.length) return '';
+  let html = '<div class="vism-footnotes"><h4 class="vism-heading">注释</h4><ol>';
+  for (const id of ids) {
+    html += `<li id="vismfn-${id}"><span class="vism-fn-id">[${id}]</span> ${esc(footnotes[id])}</li>`;
+  }
+  html += '</ol></div>';
+  return html;
+}
+
+function renderVismPaliEn(peData) {
+  let html = '';
+  for (const part of peData.parts) {
+    if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
+    html += '<div class="para-block">';
+    for (const row of part.rows) {
+      html += '<div class="segment-block">';
+      if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
+      html += `<div class="seg-en">${esc(row.english)}</div>`;
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+  return html;
+}
+
+function buildVismReaderBody() {
+  const { peData, zhData } = window._vismData;
+  const body = document.getElementById('vism-reader-body');
+  const zhContentHtml = (zhData.intro_html || '') + zhData.sections.map(vismSectionHtml).join('') + vismFootnotesHtml(zhData.footnotes);
+
+  let html = '';
+  if (vismReaderMode === 'trilingual') {
+    html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
+    html += renderVismPaliEn(peData);
+    html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
+    html += zhContentHtml;
+    html += '</div></div></div>';
+  } else if (vismReaderMode === 'en') {
+    html += `<div class="en-formatted">${renderVismPaliEn(peData)}</div>`;
+  } else if (vismReaderMode === 'zh') {
+    if (vismShowPali) {
+      html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3><div class="en-formatted">';
+      const savedMode = vismReaderMode;
+      html += renderVismPaliEn({ parts: peData.parts.map(p => ({ title: p.title, rows: p.rows.map(r => ({ pali: r.pali, english: '' })) })) });
+      html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
+      html += zhContentHtml;
+      html += '</div></div></div>';
+    } else {
+      html += `<div class="zh-formatted">${zhContentHtml}</div>`;
+    }
+  }
+  body.innerHTML = html;
+}
+
+async function renderVismReader(chapterNum) {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
+  html += '<div class="loading"><div class="spinner"></div><div>正在加载章节数据...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    const idx = await loadVismIndex();
+    const meta = idx.chapters.find(c => c.chapter === chapterNum);
+    const numStr = String(chapterNum).padStart(2, '0');
+    const [peData, zhData] = await Promise.all([
+      fetch(`research/vism-data/pe_chap${numStr}.json`).then(r => r.json()),
+      fetch(`research/vism-data/zh_chap${numStr}.json`).then(r => r.json()),
+    ]);
+
+    let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
+    out += `<div class="reader-meta"><h2>${meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title}</h2>`;
+    if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
+    out += '</div>';
+
+    out += `<div class="toolbar" id="vism-toolbar">
+      <div class="tb-group">
+        <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
+        <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
+        <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
+      </div>
+      <div class="tb-sep"></div>
+      <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
+    </div>`;
+
+    out += '<div class="reader-content" id="vism-reader-body"></div>';
+
+    out += '<div class="vism-chapnav">';
+    if (chapterNum > 1) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum - 1}'">← 第 ${chapterNum - 1} 品</button>`;
+    if (chapterNum < 23) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum + 1}'">第 ${chapterNum + 1} 品 →</button>`;
+    out += '</div>';
+
+    app.innerHTML = out;
+    window._vismData = { peData, zhData };
+
+    document.getElementById('vism-toolbar').addEventListener('click', e => {
+      const btn = e.target.closest('[data-mode]');
+      if (btn) {
+        vismReaderMode = btn.dataset.mode;
+        document.querySelectorAll('#vism-toolbar [data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === vismReaderMode));
+        buildVismReaderBody();
+      }
+    });
+    document.getElementById('vism-pali-toggle').addEventListener('change', e => {
+      vismShowPali = e.target.checked;
+      buildVismReaderBody();
+    });
+
+    buildVismReaderBody();
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
