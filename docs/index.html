@@ -110,9 +110,46 @@ a:hover { text-decoration: underline; }
 .md-reader tr:nth-child(even) td { background: var(--hover-bg); }
 
 /* Timeline embed */
-.timeline-frame-wrap { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.timeline-frame-wrap iframe { width: 100%; height: 78vh; border: none; display: block; }
-.timeline-toolbar { display: flex; justify-content: flex-end; padding: 10px 16px; }
+.container.container-wide { max-width: 1600px; }
+.timeline-frame-wrap {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+}
+.timeline-frame-wrap iframe {
+  width: 100%; border: none; display: block; background: #fff;
+  height: min(82vh, 900px);
+}
+.timeline-toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 16px; border-bottom: 1px solid var(--border); background: var(--accent-bg);
+  gap: 10px; flex-wrap: wrap;
+}
+.timeline-toolbar .tb-hint { font-size: 0.8em; color: var(--text-light); }
+.timeline-toolbar .tb-actions { display: flex; gap: 8px; }
+.timeline-btn {
+  padding: 6px 14px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--card-bg); cursor: pointer; font-family: inherit;
+  font-size: 0.85em; color: var(--text); transition: all 0.15s; white-space: nowrap;
+}
+.timeline-btn:hover { background: var(--hover-bg); border-color: var(--accent-light); }
+
+/* Fullscreen mode: wrapper takes over the viewport */
+.timeline-frame-wrap:fullscreen { border-radius: 0; display: flex; flex-direction: column; }
+.timeline-frame-wrap:fullscreen iframe { flex: 1 1 auto; height: auto; }
+.timeline-frame-wrap:-webkit-full-screen { border-radius: 0; display: flex; flex-direction: column; }
+.timeline-frame-wrap:-webkit-full-screen iframe { flex: 1 1 auto; height: auto; }
+
+@media (max-width: 700px) {
+  .timeline-frame-wrap iframe { height: 60vh; }
+  .timeline-toolbar { justify-content: center; }
+}
+
+/* Research resource note (e.g. PDF attribution) */
+.research-note {
+  margin-top: 14px; padding: 12px 16px; background: var(--accent-bg);
+  border-left: 3px solid var(--accent-light); border-radius: 4px;
+  font-size: 0.82em; color: var(--text-light); line-height: 1.7;
+}
 
 /* Back button */
 .back-btn {
@@ -329,6 +366,7 @@ async function init() {
 // Router
 function route() {
   const hash = location.hash || '#/';
+  app.classList.toggle('container-wide', hash === '#/research/timeline');
   if (hash.startsWith('#/read/')) {
     const rest = hash.slice(7);
     const [uid, query] = rest.split('?');
@@ -402,7 +440,17 @@ function renderResearchHome() {
     <div class="title">佛教历史时间轴</div>
     <div class="desc">可交互的佛教历史流程图，涵盖印度本土、南传、汉传、藏传及东亚传播脉络</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="window.open('research/buddhist-history-lecture-chenbiao-2019.pdf','_blank')">
+    <span class="icon">📄</span>
+    <div class="title">佛教简史和教义演化</div>
+    <div class="desc">谌飚（禅世界网站）弘法讲座 PPT，2019 年大觉寺讲稿 — 点击在新标签页打开</div>
+  </div>`;
   html += '</div>';
+  html += `<div class="research-note">
+    《佛教简史和教义演化》讲义由谌飚（CHEN Biao）编制并在大觉寺公开弘法讲座中使用，来源：
+    <a href="https://chanworld.org" target="_blank">禅世界网站 chanworld.org</a>。原作者在文末声明"非本文档作者的文字和图片的版权归原作者和机构所有"；
+    本站在此收录仅供个人学习交流引用，版权归原作者与相关机构所有，如涉及权利问题请联系移除。
+  </div>`;
   app.innerHTML = html;
 }
 
@@ -432,11 +480,39 @@ async function renderResearchConcepts() {
 function renderResearchTimeline() {
   let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
   html += `<div class="cat-header"><h2>🗺️ 佛教历史时间轴</h2><div class="cat-en">Buddhist History Timeline</div></div>`;
-  html += `<div class="timeline-frame-wrap">
-    <div class="timeline-toolbar"><a href="research/buddhist-history-timeline.html" target="_blank">在新标签页打开 ↗</a></div>
+  html += `<div class="timeline-frame-wrap" id="timelineWrap">
+    <div class="timeline-toolbar">
+      <span class="tb-hint">图表可在框内左右/上下滚动；平板与小屏建议点击"全屏查看"</span>
+      <div class="tb-actions">
+        <button class="timeline-btn" id="timelineFsBtn" onclick="toggleTimelineFullscreen()">⤢ 全屏查看</button>
+        <a class="timeline-btn" href="research/buddhist-history-timeline.html" target="_blank">在新标签页打开 ↗</a>
+      </div>
+    </div>
     <iframe src="research/buddhist-history-timeline.html" title="佛教历史时间轴" loading="lazy"></iframe>
   </div>`;
   app.innerHTML = html;
+
+  const wrap = document.getElementById('timelineWrap');
+  const fsBtn = document.getElementById('timelineFsBtn');
+  const updateFsBtn = () => {
+    const isFs = document.fullscreenElement === wrap || document.webkitFullscreenElement === wrap;
+    fsBtn.textContent = isFs ? '⤡ 退出全屏' : '⤢ 全屏查看';
+  };
+  document.addEventListener('fullscreenchange', updateFsBtn);
+  document.addEventListener('webkitfullscreenchange', updateFsBtn);
+}
+
+function toggleTimelineFullscreen() {
+  const wrap = document.getElementById('timelineWrap');
+  if (!wrap) return;
+  const isFs = document.fullscreenElement === wrap || document.webkitFullscreenElement === wrap;
+  if (isFs) {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  } else if (wrap.requestFullscreen) {
+    wrap.requestFullscreen();
+  } else if (wrap.webkitRequestFullscreen) {
+    wrap.webkitRequestFullscreen();
+  }
 }
 
 // === Minimal Markdown -> HTML converter ===
