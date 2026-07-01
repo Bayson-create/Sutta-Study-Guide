@@ -178,6 +178,7 @@ a:hover { text-decoration: underline; }
 .vism-footnotes li { margin-bottom: 8px; line-height: 1.7; }
 .vism-fn-id { color: var(--accent); font-weight: 600; margin-right: 4px; }
 .vism-chapnav { display: flex; justify-content: space-between; margin-top: 20px; }
+.vism-toc-page .vism-verse { font-style: normal; font-size: 0.88em; line-height: 2.1; background: transparent; border-left: none; padding: 0; margin: 0; }
 
 /* Timeline embed */
 .container.container-wide { max-width: 1600px; }
@@ -477,9 +478,11 @@ function route() {
     renderResearchBodhi();
   } else if (hash === '#/research/vism') {
     renderVismHome();
+  } else if (hash === '#/research/vism/toc') {
+    renderVismToc();
   } else if (hash.startsWith('#/research/vism/read/')) {
-    const num = parseInt(hash.slice('#/research/vism/read/'.length), 10);
-    renderVismReader(num);
+    const rest = hash.slice('#/research/vism/read/'.length);
+    renderVismReader(rest === 'nidana' ? 'nidana' : parseInt(rest, 10));
   } else {
     renderHome();
   }
@@ -728,6 +731,20 @@ async function renderVismHome() {
     以戒、定、慧三学为骨架，逐一注释展开。本阅读器左侧为巴利语与英译（Ñāṇamoli 尊者译本）逐句对照，
     右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、单独英文、单独中文三种模式，并可显示/隐藏巴利语。
   </div>`;
+  html += `<div class="cards vism-chapter-grid">
+    <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/read/nidana'">
+      <span class="icon">📯</span>
+      <div class="vism-chapter-num">序论</div>
+      <div class="title">序论</div>
+      <div class="desc">Introductory Discourse (Nidānakathā) — 全书正文之前的缘起偈颂与因缘谈</div>
+    </div>
+    <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/toc'">
+      <span class="icon">🗂️</span>
+      <div class="vism-chapter-num">细目</div>
+      <div class="title">细目</div>
+      <div class="desc">纸本版详细目录 — 逐品、逐节、逐条列出全书结构（原书页码，供参考）</div>
+    </div>
+  </div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载章节目录...</div></div>';
   app.innerHTML = html;
 
@@ -816,17 +833,19 @@ async function renderVismReader(chapterNum) {
   app.innerHTML = html;
 
   try {
+    const isNidana = chapterNum === 'nidana';
     const idx = await loadVismIndex();
-    const meta = idx.chapters.find(c => c.chapter === chapterNum);
-    const numStr = String(chapterNum).padStart(2, '0');
+    const meta = isNidana ? null : idx.chapters.find(c => c.chapter === chapterNum);
+    const fileTag = isNidana ? 'nidana' : String(chapterNum).padStart(2, '0');
     const [peData, zhData] = await Promise.all([
-      fetch(`research/vism-data/pe_chap${numStr}.json`).then(r => r.json()),
-      fetch(`research/vism-data/zh_chap${numStr}.json`).then(r => r.json()),
+      fetch(`research/vism-data/pe_${fileTag === 'nidana' ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json()),
+      fetch(`research/vism-data/zh_${fileTag === 'nidana' ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json()),
     ]);
 
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
-    out += `<div class="reader-meta"><h2>${meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title}</h2>`;
-    if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
+    out += `<div class="reader-meta"><h2>${isNidana ? '序论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
+    if (isNidana) out += '<div class="meta-focus">Introductory Discourse (Nidānakathā)</div>';
+    else if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
     out += '</div>';
 
     out += `<div class="toolbar" id="vism-toolbar">
@@ -842,8 +861,14 @@ async function renderVismReader(chapterNum) {
     out += '<div class="reader-content" id="vism-reader-body"></div>';
 
     out += '<div class="vism-chapnav">';
-    if (chapterNum > 1) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum - 1}'">← 第 ${chapterNum - 1} 品</button>`;
-    if (chapterNum < 23) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum + 1}'">第 ${chapterNum + 1} 品 →</button>`;
+    if (isNidana) {
+      out += '<span></span>';
+      out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/1'">第 1 品 →</button>`;
+    } else {
+      if (chapterNum === 1) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/nidana'">← 序论</button>`;
+      else out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum - 1}'">← 第 ${chapterNum - 1} 品</button>`;
+      if (chapterNum < 23) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum + 1}'">第 ${chapterNum + 1} 品 →</button>`;
+    }
     out += '</div>';
 
     app.innerHTML = out;
@@ -863,6 +888,21 @@ async function renderVismReader(chapterNum) {
     });
 
     buildVismReaderBody();
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+async function renderVismToc() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
+  html += `<div class="cat-header"><h2>🗂️ 细目</h2><div class="cat-en">Detailed Table of Contents (paper edition)</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    const data = await fetch('research/vism-data/zh_toc.json').then(r => r.json());
+    const content = (data.intro_html || '') + data.sections.map(vismSectionHtml).join('') + vismFootnotesHtml(data.footnotes);
+    app.querySelector('.loading').outerHTML = `<div class="zh-formatted vism-toc-page">${content}</div>`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
