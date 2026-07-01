@@ -179,6 +179,10 @@ a:hover { text-decoration: underline; }
   margin: 0 0 12px; padding: 10px 14px; background: var(--accent-bg);
   border-left: 3px solid var(--accent-light); border-radius: 4px;
 }
+.framework-table-wrap { margin-bottom: 24px; overflow-x: auto; }
+.framework-table-wrap .section-title { margin-top: 18px; }
+.framework-table { min-width: 620px; }
+.framework-table td { line-height: 1.65; }
 
 /* Footer */
 .site-footer { text-align: center; padding: 28px 20px; margin-top: 20px; border-top: 1px solid var(--border); }
@@ -602,6 +606,25 @@ function renderCategory(key) {
 
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>${cat.icon} ${cat.title}</h2><div class="cat-en">${cat.title_en}</div></div>`;
+
+  if (cat.framework_tables && cat.framework_tables.length) {
+    for (const table of cat.framework_tables) {
+      html += `<div class="framework-table-wrap"><div class="section-title">${esc(table.heading)}</div>`;
+      html += '<table class="sutta-table framework-table"><thead><tr>';
+      for (const header of table.headers) {
+        html += `<th>${esc(header)}</th>`;
+      }
+      html += '</tr></thead><tbody>';
+      for (const row of table.rows) {
+        html += '<tr>';
+        for (const cell of row) {
+          html += `<td>${linkifySuttaRefs(esc(cell))}</td>`;
+        }
+        html += '</tr>';
+      }
+      html += '</tbody></table></div>';
+    }
+  }
 
   let isFirstSection = true;
   let lastSectionShown = '';

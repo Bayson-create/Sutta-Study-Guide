@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse the 4 Buddhist sutta markdown files into a JSON data file."""
+"""Parse Buddhist sutta guide markdown files into a JSON data file."""
 import json, re, sys
 from pathlib import Path
 
@@ -28,6 +28,35 @@ FILES = {
         "icon": "🧘",
         "path": "巴利三藏禅修相关经文整理.md",
     },
+    "expression": {
+        "title": "表达、表现与修辞手法",
+        "title_en": "Expression & Rhetoric",
+        "icon": "🎭",
+        "path": "巴利三藏中佛陀表达方式、表现手法与修辞手法相关经文整理.md",
+    },
+    "language_traps": {
+        "title": "语言陷阱与处理方式",
+        "title_en": "Language Traps & Responses",
+        "icon": "🧩",
+        "path": "巴利三藏中佛陀遇到的语言陷阱与处理方式整理.md",
+    },
+}
+
+# H2 headings whose tables are framework/overview mappings (type -> function ->
+# example suttas as plain text), not individual sutta reference rows. Their
+# rows are captured separately as `framework_tables` instead of being folded
+# into `suttas`, so they don't pollute categories with fake zero-link entries.
+FRAMEWORK_HEADINGS = {
+    "三部分区分",
+    "一、表达方式总览",
+    "二、表现手法总览",
+    "三、修辞手法总览",
+    "三层关系地图",
+    "总体地图：语言陷阱与佛陀处理方式",
+    "按表达方式索引",
+    "按表现手法索引",
+    "按修辞手法索引",
+    "按处理方式索引",
 }
 
 import os
@@ -49,9 +78,15 @@ def extract_link_url(cell):
     return ""
 
 def parse_table_row(row):
-    cells = [c.strip() for c in row.split('|')]
-    cells = [c for c in cells if c != '']
-    return cells
+    # Only strip the leading/trailing empty artifacts produced by a row that
+    # starts and ends with '|'; preserve genuinely empty cells in between
+    # (e.g. a blank 中文链接 column) so column indices stay aligned.
+    row = row.strip()
+    if row.startswith('|'):
+        row = row[1:]
+    if row.endswith('|'):
+        row = row[:-1]
+    return [c.strip() for c in row.split('|')]
 
 def parse_markdown(filepath, category_key):
     text = filepath.read_text(encoding='utf-8')
@@ -60,16 +95,20 @@ def parse_markdown(filepath, category_key):
     sections = []
     current_section = ""
     current_subsection = ""
+    current_heading_raw = ""  # exact H2 heading text, tracked regardless of skip-list
     suttas = []
     section_intros = {}  # key: subsection or section title -> intro text
+    framework_tables = []  # overview/mapping tables (type -> function -> example refs)
 
     i = 0
     while i < len(lines):
         line = lines[i].strip()
 
-        if line.startswith('## ') and not line.startswith('## 收录口径') and not line.startswith('## 总体线索') and not line.startswith('## 主题索引') and not line.startswith('## 阅读顺序'):
-            current_section = line[3:].strip()
-            current_subsection = ""
+        if line.startswith('## '):
+            current_heading_raw = line[3:].strip()
+            if not line.startswith('## 收录口径') and not line.startswith('## 总体线索') and not line.startswith('## 主题索引') and not line.startswith('## 阅读顺序'):
+                current_section = line[3:].strip()
+                current_subsection = ""
         elif line.startswith('### '):
             current_subsection = line[4:].strip()
             # Capture intro paragraph: scan ahead past blank lines until a table or another heading
@@ -90,6 +129,19 @@ def parse_markdown(filepath, category_key):
             header_cells = parse_table_row(line)
             i += 1  # skip separator
             i += 1  # start data rows
+
+            if current_heading_raw in FRAMEWORK_HEADINGS:
+                # Overview/mapping table: capture rows as-is, don't scrape as sutta entries.
+                fw_rows = []
+                while i < len(lines) and lines[i].strip().startswith('|'):
+                    fw_rows.append(parse_table_row(lines[i].strip()))
+                    i += 1
+                framework_tables.append({
+                    "heading": current_heading_raw,
+                    "headers": header_cells,
+                    "rows": fw_rows,
+                })
+                continue
 
             while i < len(lines) and lines[i].strip().startswith('|'):
                 cells = parse_table_row(lines[i].strip())
@@ -190,7 +242,7 @@ def parse_markdown(filepath, category_key):
                 if len(cells) >= 2 and cells[0] not in ('主题', '术语/概念'):
                     themes.append({"topic": cells[0], "suttas": cells[1]})
 
-    return suttas, themes, section_intros
+    return suttas, themes, section_intros, framework_tables
 
 
 # Manually composed concise "focus" tags for entries whose source tables
@@ -293,7 +345,7 @@ def main():
             print(f"WARNING: {filepath} not found")
             continue
 
-        suttas, themes, section_intros = parse_markdown(filepath, key)
+        suttas, themes, section_intros, framework_tables = parse_markdown(filepath, key)
         for s in suttas:
             if not s["focus"] and s["name"] in FOCUS_PATCH:
                 s["focus"] = FOCUS_PATCH[s["name"]]
@@ -322,6 +374,7 @@ def main():
             "icon": info["icon"],
             "sections": [sections_map[k] for k in sections_order],
             "themes": themes,
+            "framework_tables": framework_tables,
         }
 
     out = Path(__file__).parent / "docs" / "suttas.json"

@@ -8,11 +8,13 @@ Pāli Canon Study Guide with trilingual reader (Pāli · English · Chinese)
 
 ## Features
 
-- **4 thematic guides** with 406 suttas:
+- **6 thematic guides** with 661 suttas:
   - ☸️ The Buddha's Life & Experience (佛陀个人经历与经验)
   - 📖 Key Terms & Concepts (术语与概念)
   - 🏠 For Lay Practitioners (在家众相关)
   - 🧘 Meditation Practice (禅修相关)
+  - 🎭 Expression & Rhetoric (表达、表现与修辞手法)
+  - 🧩 Language Traps & Responses (语言陷阱与处理方式)
 - **Trilingual reader** fetching live from SuttaCentral API:
   - Pāli-English line-by-line (default)
   - Pāli-Chinese side by side
@@ -27,7 +29,7 @@ All sutta texts are fetched from [SuttaCentral](https://suttacentral.net) API.
 
 ## 版权声明 · Copyright Notice
 
-本项目（四份主题经文摘要、分类整理、阅读器网页与解析脚本）由 **[Bayson-create](https://github.com/Bayson-create)** 设计开发，© 2026 Bayson-create。代码以 [MIT License](https://opensource.org/licenses/MIT) 开源；摘要、分类等原创文字内容以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 共享——欢迎自由使用、转载、修改、二次开发，但请注明出处并附本仓库链接。
+本项目（主题经文摘要、分类整理、阅读器网页与解析脚本）由 **[Bayson-create](https://github.com/Bayson-create)** 设计开发，© 2026 Bayson-create。代码以 [MIT License](https://opensource.org/licenses/MIT) 开源；摘要、分类等原创文字内容以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 共享——欢迎自由使用、转载、修改、二次开发，但请注明出处并附本仓库链接。
 
 本着"法布施胜一切施"（*Sabbadānaṃ dhammadānaṃ jināti*，《法句经》354 偈）的精神，作者不以此项目牟利，亦不限制非商业性的自由传播。
 

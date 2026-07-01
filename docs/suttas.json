@@ -821,7 +821,8 @@
           "topic": "过去生与波罗蜜",
           "suttas": "MN 81, MN 83, DN 30, Jātaka, Buddhavaṃsa, Cariyāpiṭaka"
         }
-      ]
+      ],
+      "framework_tables": []
     },
     "concepts": {
       "title": "术语与概念",
@@ -1948,7 +1949,8 @@
           "topic": "阿毗达摩术语系统",
           "suttas": "Dhammasaṅgaṇī, Vibhaṅga, Dhātukathā, Paṭṭhāna"
         }
-      ]
+      ],
+      "framework_tables": []
     },
     "laypeople": {
       "title": "在家众相关",
@@ -2988,7 +2990,8 @@
           "topic": "国王与政治伦理",
           "suttas": "DN 2, DN 5, MN 87, MN 88, MN 90"
         }
-      ]
+      ],
+      "framework_tables": []
     },
     "meditation": {
       "title": "禅修相关",
@@ -4638,6 +4641,3194 @@
         {
           "topic": "在家禅修入口",
           "suttas": "MN 52, AN 5.176, AN 6.10, AN 11.13, Snp 1.8"
+        }
+      ],
+      "framework_tables": []
+    },
+    "expression": {
+      "title": "表达、表现与修辞手法",
+      "title_en": "Expression & Rhetoric",
+      "icon": "🎭",
+      "sections": [
+        {
+          "title": "长部 Dīgha Nikāya",
+          "section": "长部 Dīgha Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "dn1",
+              "name": "DN 1 Brahmajāla Sutta",
+              "focus": "网喻、分类穷尽、反讽",
+              "summary": "佛陀把六十二种见解编织成一张“梵网”，用穷举分类展示各类形而上学观点如何依触、受、爱而生。修辞重点不是逐一辩胜，而是把所有见解放回缘起结构中。",
+              "en_url": "https://suttacentral.net/dn1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn2",
+              "name": "DN 2 Sāmaññaphala Sutta",
+              "focus": "渐次训练、王问佛答",
+              "summary": "阿阇世王问沙门现世果报，佛陀不用抽象定义回答，而用从信、出家、戒、根律仪、正念、知足、禅那到三明的渐次铺陈，形成完整“阶梯式说法”。",
+              "en_url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn3",
+              "name": "DN 3 Ambaṭṭha Sutta",
+              "focus": "反问、血统反讽、身份倒转",
+              "summary": "佛陀通过追问 Ambattha 的家族源流，反转其婆罗门优越感，显示道德与智慧高于出身。修辞上使用身份讽刺、层层追问和价值重排。",
+              "en_url": "https://suttacentral.net/dn3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn9",
+              "name": "DN 9 Poṭṭhapāda Sutta",
+              "focus": "概念澄清、搁置无益问题",
+              "summary": "佛陀面对关于想、我、世界等问题，区分可导向修行的说明与不应回答的形而上学追问。修辞重点是“重新设定问题边界”。",
+              "en_url": "https://suttacentral.net/dn9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn9/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn11",
+              "name": "DN 11 Kevaddha Sutta",
+              "focus": "故事嵌套、反神通修辞",
+              "summary": "佛陀拒绝以神通招徕信众，转而讲述比丘寻问“四大何处灭无余”的故事，连梵天也不能答，最后回到佛法中的智慧。它用幽默叙事削弱神通崇拜。",
+              "en_url": "https://suttacentral.net/dn11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn11/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn13",
+              "name": "DN 13 Tevijja Sutta",
+              "focus": "道路譬喻、盲传讽刺",
+              "summary": "佛陀批评婆罗门声称知道通往梵天之路却无人亲见梵天，并以道路、阶梯、河岸等譬喻说明无根据传承的荒谬，再给出四无量心作为真正“梵住”。",
+              "en_url": "https://suttacentral.net/dn13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn13/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn15",
+              "name": "DN 15 Mahānidāna Sutta",
+              "focus": "缘起链条、递进追问",
+              "summary": "佛陀以“若无此，彼是否可有”的方式层层展开缘起，使听者沿着生、老死、名色、识等关系逆向观察。修辞上是分析性递进。",
+              "en_url": "https://suttacentral.net/dn15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn15/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn16",
+              "name": "DN 16 Mahāparinibbāna Sutta",
+              "focus": "遗教、重复叮嘱、场景叙事",
+              "summary": "佛陀晚年游行、病痛、舍寿与入灭的长篇叙事中，多次使用“自洲自依、法洲法依”等重复教诫，使最后教法具有遗嘱式重量。",
+              "en_url": "https://suttacentral.net/dn16/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn16/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn21",
+              "name": "DN 21 Sakkapañha Sutta",
+              "focus": "天王问答、链式因果",
+              "summary": "帝释连续发问，佛陀以“从所爱所憎、欲、寻、戏论”等关系回答冲突根源。修辞上将宇宙性提问压回可观察的心理链条。",
+              "en_url": "https://suttacentral.net/dn21/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn21/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn22",
+              "name": "DN 22 Mahāsatipaṭṭhāna Sutta",
+              "focus": "公式重复、清单化观察",
+              "summary": "四念处经以固定句式反复展开身、受、心、法观察，形成可背诵、可实践、可自我检查的修辞结构。重复本身就是训练方法。",
+              "en_url": "https://suttacentral.net/dn22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn22/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn27",
+              "name": "DN 27 Aggañña Sutta",
+              "focus": "起源寓言、社会讽刺",
+              "summary": "佛陀用世界形成和社会阶层起源的故事，反讽婆罗门天生高贵论。它把神圣血统叙事改写为道德、行为和制度形成史。",
+              "en_url": "https://suttacentral.net/dn27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn27/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn30",
+              "name": "DN 30 Lakkhaṇa Sutta",
+              "focus": "身相与业果叙事",
+              "summary": "佛陀用三十二大人相说明过去善业与今生相貌的对应关系。修辞上把抽象业果转成可见身体符号，再由身体符号引回伦理实践。",
+              "en_url": "https://suttacentral.net/dn30/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn30/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn31",
+              "name": "DN 31 Sigālovāda Sutta",
+              "focus": "方向譬喻、在家伦理地图",
+              "summary": "佛陀把礼拜六方重新解释为父母、师长、妻子、朋友、雇工、沙门婆罗门等关系义务，使一个仪式动作转化为完整伦理地图。",
+              "en_url": "https://suttacentral.net/dn31/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn31/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "中部 Majjhima Nikāya",
+          "section": "中部 Majjhima Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "mn4",
+              "name": "MN 4 Bhayabherava Sutta",
+              "focus": "自传叙事、恐惧现场化",
+              "summary": "佛陀回忆自己成道前如何在森林和墓地面对恐惧。修辞上不是抽象谈勇气，而是把恐惧放入行住坐卧的具体场景中。",
+              "en_url": "https://suttacentral.net/mn4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn4/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn10",
+              "name": "MN 10 Satipaṭṭhāna Sutta",
+              "focus": "重复公式、观察脚本",
+              "summary": "四念处以“内观、外观、内外观；生起、灭去、生灭”等重复句式组织经验，是佛陀把修行方法写成心智脚本的代表。",
+              "en_url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn10/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn12",
+              "name": "MN 12 Mahāsīhanāda Sutta",
+              "focus": "狮子吼、能力枚举、苦行回忆",
+              "summary": "佛陀回应诋毁时，枚举十力、四无畏等如来能力，并叙述过去极端苦行。修辞重点是以权威性自述建立教学可信度。",
+              "en_url": "https://suttacentral.net/mn12/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn12/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn19",
+              "name": "MN 19 Dvedhāvitakka Sutta",
+              "focus": "二分对比、牧牛譬喻",
+              "summary": "佛陀把寻思分成欲、嗔、害与出离、无嗔、无害两组，再用雨季牧牛与旱季牧牛作比，说明心的训练方法。",
+              "en_url": "https://suttacentral.net/mn19/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn19/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn21",
+              "name": "MN 21 Kakacūpama Sutta",
+              "focus": "锯喻、极端例证",
+              "summary": "佛陀用“即使被强盗以锯截肢，也不应生嗔”的极端譬喻，把忍辱训练推到不可误解的边界。",
+              "en_url": "https://suttacentral.net/mn21/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn21/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn22",
+              "name": "MN 22 Alagaddūpama Sutta",
+              "focus": "水蛇喻、筏喻、错取法",
+              "summary": "佛陀用抓蛇方式说明错学佛法会伤人，又用筏喻说明法是渡河工具，不应执取。此经是佛陀“反执著修辞”的核心文本。",
+              "en_url": "https://suttacentral.net/mn22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn22/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn26",
+              "name": "MN 26 Ariyapariyesanā Sutta",
+              "focus": "圣求 / 非圣求对比、自传",
+              "summary": "佛陀用“追求会老病死之物”与“追求不老不死之法”的对比，重构出家动机，并以自传叙事说明教学起点。",
+              "en_url": "https://suttacentral.net/mn26/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn26/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn27",
+              "name": "MN 27 Cūḷahatthipadopama Sutta",
+              "focus": "象迹譬喻、渐次验证",
+              "summary": "佛陀以追踪象迹说明不要过早断定“这就是大象”，引出对导师和教法的渐次验证，再铺陈完整修行阶梯。",
+              "en_url": "https://suttacentral.net/mn27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn27/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn29",
+              "name": "MN 29 Mahāsāropama Sutta",
+              "focus": "树心譬喻、目标层级",
+              "summary": "佛陀以求树心者误取枝叶、树皮等为喻，说明修行人不应停在利养、戒、定、知见等中间成果。",
+              "en_url": "https://suttacentral.net/mn29/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn29/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn30",
+              "name": "MN 30 Cūḷasāropama Sutta",
+              "focus": "树心譬喻简版",
+              "summary": "与 MN 29 同类，继续用树心说明不要把修行副产品当成终点。修辞功能是层层剥离“看似已得”的误认。",
+              "en_url": "https://suttacentral.net/mn30/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn30/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn35",
+              "name": "MN 35 Cūḷasaccaka Sutta",
+              "focus": "交叉诘问、身体控制反问",
+              "summary": "佛陀通过反问萨遮迦是否能命令色受想行识如愿，迫使对方承认五蕴非我。修辞上接近法庭式诘问。",
+              "en_url": "https://suttacentral.net/mn35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn35/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn36",
+              "name": "MN 36 Mahāsaccaka Sutta",
+              "focus": "苦行叙事、中道发现",
+              "summary": "佛陀用亲身经历讲述极端苦行、童年初禅回忆与三明证得。修辞上以自传纠正“苦越多越神圣”的观念。",
+              "en_url": "https://suttacentral.net/mn36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn36/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn38",
+              "name": "MN 38 Mahātaṇhāsaṅkhaya Sutta",
+              "focus": "反误解、缘起重述",
+              "summary": "佛陀纠正“识流转不变”的误解，通过缘起、受胎、滋养、四食等结构说明识依条件而生。修辞重点是拆除错误概念的连续性幻觉。",
+              "en_url": "https://suttacentral.net/mn38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn38/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn39",
+              "name": "MN 39 Mahā-Assapura Sutta",
+              "focus": "名称反讽、渐次定义",
+              "summary": "佛陀追问“什么才配称为沙门婆罗门”，把社会称号转化为行为、戒、心、慧的渐次标准。",
+              "en_url": "https://suttacentral.net/mn39/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn39/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn49",
+              "name": "MN 49 Brahmanimantanika Sutta",
+              "focus": "神界戏剧、权威拆解",
+              "summary": "佛陀进入梵天世界，揭示梵天自以为永恒全知的局限。修辞上以戏剧化场景拆解最高神权威。",
+              "en_url": "https://suttacentral.net/mn49/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn49/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn54",
+              "name": "MN 54 Potaliya Sutta",
+              "focus": "欲乐七喻",
+              "summary": "佛陀用骨头、肉块、草炬、炭坑、梦、借物、树果等譬喻说明欲乐的危险，使“欲的过患”具象化。",
+              "en_url": "https://suttacentral.net/mn54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn54/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn56",
+              "name": "MN 56 Upāli Sutta",
+              "focus": "论辩反转、渐次说法",
+              "summary": "佛陀与尼乾子弟子优婆离辩论业的轻重，并在对方心柔软后渐次说施、戒、天、欲患、出离、四谛。修辞上先破错误，再顺势引导。",
+              "en_url": "https://suttacentral.net/mn56/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn56/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn58",
+              "name": "MN 58 Abhayarājakumāra Sutta",
+              "focus": "婴儿譬喻、说话伦理",
+              "summary": "佛陀用父母为救婴儿即使让孩子疼痛也会取出口中异物的譬喻，说明如来只在适当时说真实、有益之语。",
+              "en_url": "https://suttacentral.net/mn58/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn58/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn61",
+              "name": "MN 61 Ambalaṭṭhikarāhulovāda Sutta",
+              "focus": "镜喻、空水器喻",
+              "summary": "佛陀教诫罗睺罗，以镜子譬喻行动前后反省，以空水器等譬喻故意妄语者的修行空洞。",
+              "en_url": "https://suttacentral.net/mn61/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn61/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn62",
+              "name": "MN 62 Mahārāhulovāda Sutta",
+              "focus": "元素譬喻、宽广心训练",
+              "summary": "佛陀教罗睺罗把心修得如地、水、火、风、虚空，不被可意不可意触恼。修辞是把心理训练身体化、自然化。",
+              "en_url": "https://suttacentral.net/mn62/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn62/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn63",
+              "name": "MN 63 Cūḷamālukya Sutta",
+              "focus": "毒箭譬喻、搁置形上学",
+              "summary": "佛陀用中箭者拒绝治疗、先追问箭手身份的故事，说明世界常无常等问题若不导向灭苦，就不应占据修行中心。",
+              "en_url": "https://suttacentral.net/mn63/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn63/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn66",
+              "name": "MN 66 Laṭukikopama Sutta",
+              "focus": "鹌鹑譬喻、微细束缚",
+              "summary": "佛陀用小鹌鹑被藤蔓困住的譬喻，说明看似微小的执著也会束缚心；同时比较从欲乐到禅乐的更高乐。",
+              "en_url": "https://suttacentral.net/mn66/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn66/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn72",
+              "name": "MN 72 Aggivacchagotta Sutta",
+              "focus": "火灭譬喻、语言边界",
+              "summary": "面对如来死后存在与否的问题，佛陀用火依燃料而燃、燃料尽则不可按方位寻找的譬喻，说明概念分类的失效。",
+              "en_url": "https://suttacentral.net/mn72/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn72/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn75",
+              "name": "MN 75 Māgaṇḍiya Sutta",
+              "focus": "癞病譬喻、欲乐反转",
+              "summary": "佛陀用癞病人烤火抓伤反觉为乐的譬喻，说明凡夫把欲乐误认为真实快乐。修辞上把“享乐”翻转为“病态缓解”。",
+              "en_url": "https://suttacentral.net/mn75/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn75/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn86",
+              "name": "MN 86 Aṅgulimāla Sutta",
+              "focus": "叙事反转、短句点醒",
+              "summary": "佛陀对杀人者央掘魔罗说“我已停下，你也停下”，以悖论式短句使追逐者转向内在止息，是转化叙事的典型。",
+              "en_url": "https://suttacentral.net/mn86/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn86/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn87",
+              "name": "MN 87 Piyajātika Sutta",
+              "focus": "逆耳命题、经验验证",
+              "summary": "佛陀说“愁悲苦忧恼从所爱而生”，与世俗直觉相反；经文通过国王和王后的经验间接验证此命题。",
+              "en_url": "https://suttacentral.net/mn87/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn87/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn95",
+              "name": "MN 95 Caṅkī Sutta",
+              "focus": "盲人队列、知识谦逊",
+              "summary": "佛陀用一列盲人相牵的譬喻批评只靠传统传闻，并区分护真、觉真、达真。修辞重点是把认识论拆成可检查阶段。",
+              "en_url": "https://suttacentral.net/mn95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn107",
+              "name": "MN 107 Gaṇakamoggallāna Sutta",
+              "focus": "会计训练譬喻、次第教学",
+              "summary": "佛陀以会计师逐步教学作比，说明佛法训练也有次第，但学生是否达到终点取决于实践。",
+              "en_url": "https://suttacentral.net/mn107/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn107/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn109",
+              "name": "MN 109 Mahāpuṇṇama Sutta",
+              "focus": "五蕴问答、重复破我",
+              "summary": "佛陀以一连串关于五蕴的问答，重复推进无常、苦、非我、厌离、离贪、解脱的结构，是交叉问答与公式重复结合的代表。",
+              "en_url": "https://suttacentral.net/mn109/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn109/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn117",
+              "name": "MN 117 Mahācattārīsaka Sutta",
+              "focus": "分类定义、正见统摄",
+              "summary": "佛陀分析有漏正见、圣正见以及八支圣道内部关系。修辞上以定义、分类、从属关系建立严密概念网。",
+              "en_url": "https://suttacentral.net/mn117/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn117/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn118",
+              "name": "MN 118 Ānāpānasati Sutta",
+              "focus": "十六步排比、四念处映射",
+              "summary": "佛陀以十六个“他训练：我将……”的重复句式组织安般念，并映射四念处和七觉支，是实践说明的排比典范。",
+              "en_url": "https://suttacentral.net/mn118/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn118/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn119",
+              "name": "MN 119 Kāyagatāsati Sutta",
+              "focus": "身体清单、禅那譬喻",
+              "summary": "佛陀以姿势、身体部位、元素、尸观和禅那譬喻组织身念，使身体成为连续观察对象。",
+              "en_url": "https://suttacentral.net/mn119/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn119/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn125",
+              "name": "MN 125 Dantabhūmi Sutta",
+              "focus": "驯象譬喻、训练模型",
+              "summary": "佛陀用驯象过程比喻调伏弟子，从离家、戒、根律仪到念处、禅那、解脱，完整展示“训练型修辞”。",
+              "en_url": "https://suttacentral.net/mn125/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn125/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn129",
+              "name": "MN 129 Bālapaṇḍita Sutta",
+              "focus": "愚智对比、地狱天堂图像",
+              "summary": "佛陀以强烈图像对比愚人与智者的现世和来世果报，使用恐怖想象与庄严想象形成伦理震动。",
+              "en_url": "https://suttacentral.net/mn129/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn129/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn130",
+              "name": "MN 130 Devadūta Sutta",
+              "focus": "天使 / 信使譬喻、审判叙事",
+              "summary": "佛陀把老、病、死、受刑等经验称为“天使”或警讯，用阎魔审问的叙事让听者反省自己是否已看见生命警告。",
+              "en_url": "https://suttacentral.net/mn130/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn130/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn135",
+              "name": "MN 135 Cūḷakammavibhaṅga Sutta",
+              "focus": "因果对照、问答分类",
+              "summary": "佛陀以杀生与短寿、不杀与长寿等成对结构解释业果差异。修辞上通过一问一答和因果对照建立伦理可理解性。",
+              "en_url": "https://suttacentral.net/mn135/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn135/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn139",
+              "name": "MN 139 Araṇavibhaṅga Sutta",
+              "focus": "语言分析、避免伤害",
+              "summary": "佛陀区分可说不可说、赞毁方式、地方语与通用语等，显示修辞伦理：语言应真实、有益、无争。",
+              "en_url": "https://suttacentral.net/mn139/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn139/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn140",
+              "name": "MN 140 Dhātuvibhaṅga Sutta",
+              "focus": "隐名教学、元素分析",
+              "summary": "佛陀匿名教导 Pukkusāti，以六界、六触处、十八意行等分析推进到不执著。修辞上克制身份权威，只让法义本身发挥作用。",
+              "en_url": "https://suttacentral.net/mn140/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn140/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn148",
+              "name": "MN 148 Chachakka Sutta",
+              "focus": "六六法、矩阵式重复",
+              "summary": "佛陀用六内处、六外处、六识、六触、六受、六爱构成矩阵，反复推进“非我”观察，是分析式排比的高密度文本。",
+              "en_url": "https://suttacentral.net/mn148/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn148/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn152",
+              "name": "MN 152 Indriyabhāvanā Sutta",
+              "focus": "训练定义反转",
+              "summary": "佛陀重定义“根修习”：不是不见不闻，而是在见闻中不被可意不可意牵引。修辞上先否定流行定义，再给出实践定义。",
+              "en_url": "https://suttacentral.net/mn152/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn152/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "相应部 Saṁyutta Nikāya",
+          "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "sn4.1",
+              "name": "SN 4.1-25 Māra Saṁyutta",
+              "focus": "与魔对话、短偈反击",
+              "summary": "魔相应保存佛陀面对诱惑、恐吓和质疑时的短句、偈颂和识破式回应。修辞特点是迅速命名对方意图，使魔失去力量。",
+              "en_url": "https://suttacentral.net/sn4.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn4.1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn6.1",
+              "name": "SN 6.1 Brahmāyācana Sutta",
+              "focus": "梵天劝请、众生莲喻",
+              "summary": "佛陀成道后观察众生根机，使用池中莲花深浅不同的意象，说明为何仍应说法。修辞功能是把“难懂的法”与“可成熟的听众”同时呈现。",
+              "en_url": "https://suttacentral.net/sn6.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn6.1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn7.2",
+              "name": "SN 7.2 Akkosa Sutta",
+              "focus": "礼物譬喻、辱骂不受",
+              "summary": "婆罗门辱骂佛陀，佛陀反问若礼物不被接受归谁所有，以此说明不接收辱骂则辱骂归还骂者。",
+              "en_url": "https://suttacentral.net/sn7.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn7.2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.15",
+              "name": "SN 12.15 Kaccānagotta Sutta",
+              "focus": "中道定义、二边破除",
+              "summary": "佛陀以“世间多依有与无二边”开场，说明缘起正见离常见断见。修辞上用极简对比切开形而上学执著。",
+              "en_url": "https://suttacentral.net/sn12.15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.15/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.23",
+              "name": "SN 12.23 Upanisa Sutta",
+              "focus": "逆向因果链、正向阶梯",
+              "summary": "佛陀把苦、信、喜、乐、定、如实知见、厌离、离贪、解脱等连成因果链，显示痛苦也可成为解脱阶梯。",
+              "en_url": "https://suttacentral.net/sn12.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.23/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.63",
+              "name": "SN 12.63 Puttamaṁsa Sutta",
+              "focus": "四食四喻、震撼图像",
+              "summary": "佛陀用子肉、剥皮牛、火坑、被矛刺等譬喻说明四食的危险，迫使听者不再浪漫化滋养与存在。",
+              "en_url": "https://suttacentral.net/sn12.63/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.63/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.65",
+              "name": "SN 12.65 Nagara Sutta",
+              "focus": "古城旧道譬喻",
+              "summary": "佛陀把发现缘起和八正道比作发现通往古城的旧路，强调觉悟是重新发现古圣道，而不是创造私人哲学。",
+              "en_url": "https://suttacentral.net/sn12.65/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.65/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn15.3",
+              "name": "SN 15.3 Assu Sutta",
+              "focus": "大海夸张、轮回震撼",
+              "summary": "佛陀说众生长久轮回中流下的泪水多于四大海水。修辞上用极端数量意象制造厌离感。",
+              "en_url": "https://suttacentral.net/sn15.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn15.3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn15.5",
+              "name": "SN 15.5 Pabbata Sutta",
+              "focus": "山喻、时间尺度",
+              "summary": "佛陀用大山被百年一拂仍会磨尽来说明劫的漫长，使抽象时间变成可想象图像。",
+              "en_url": "https://suttacentral.net/sn15.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn15.5/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn20.1",
+              "name": "SN 20.1-12 Opamma Saṁyutta",
+              "focus": "譬喻相应总集",
+              "summary": "譬喻相应集中保存屋顶梁、指甲土、鼓钉等短譬喻，常以一个日常物象迅速说明正法衰退、稀有性、精进或危险。",
+              "en_url": "https://suttacentral.net/sn20.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn20.1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.59",
+              "name": "SN 22.59 Anattalakkhaṇa Sutta",
+              "focus": "五蕴反问、重复推进",
+              "summary": "佛陀逐一询问五蕴是否常、乐、可作为“这是我”，用重复问答将听者带到非我结论。",
+              "en_url": "https://suttacentral.net/sn22.59/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.59/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.79",
+              "name": "SN 22.79 Khajjanīya Sutta",
+              "focus": "词源解释、功能定义",
+              "summary": "佛陀解释五蕴为何如此命名，并说明它们如何“啃食”经验主体。修辞上通过词义和功能把抽象分类变得可观察。",
+              "en_url": "https://suttacentral.net/sn22.79/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.79/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.95",
+              "name": "SN 22.95 Pheṇapiṇḍūpama Sutta",
+              "focus": "泡沫、幻影等五喻",
+              "summary": "佛陀以泡沫、水泡、阳焰、芭蕉、幻术比喻五蕴，逐项削弱“坚实自我”的直觉。",
+              "en_url": "https://suttacentral.net/sn22.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.100",
+              "name": "SN 22.100 Gaddulabaddha Sutta",
+              "focus": "拴狗譬喻",
+              "summary": "佛陀以狗被拴在柱子上绕行，比喻凡夫围绕五蕴转动，显示“我执”并非自由，而是被系缚。",
+              "en_url": "https://suttacentral.net/sn22.100/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.100/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.101",
+              "name": "SN 22.101 Vāsijaṭa Sutta",
+              "focus": "斧柄渐磨譬喻",
+              "summary": "佛陀以斧柄日日使用而渐渐磨损作比，说明持续观五蕴能逐渐磨尽烦恼，即使短期不明显。",
+              "en_url": "https://suttacentral.net/sn22.101/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.101/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.28",
+              "name": "SN 35.28 Ādittapariyāya Sutta",
+              "focus": "火燃隐喻、全域重复",
+              "summary": "佛陀反复说眼、色、眼识、触、受乃至意法“一切燃烧”，用火的总隐喻覆盖六处经验。",
+              "en_url": "https://suttacentral.net/sn35.28/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.28/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.95",
+              "name": "SN 35.95 Māluṅkyaputta Sutta",
+              "focus": "极简公式、感官截断",
+              "summary": "佛陀教“见只是见，闻只是闻”，用极短公式切断从感官到我执的增殖，是高度浓缩的修辞。",
+              "en_url": "https://suttacentral.net/sn35.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.238",
+              "name": "SN 35.238 Āsīvisopama Sutta",
+              "focus": "毒蛇、空村、盗贼等连环喻",
+              "summary": "佛陀用四毒蛇、五杀手、空村、六盗贼、洪流等连续譬喻说明身心处境危险，最后指向渡河到彼岸。",
+              "en_url": "https://suttacentral.net/sn35.238/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.238/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn36.6",
+              "name": "SN 36.6 Sallatha Sutta",
+              "focus": "双箭譬喻",
+              "summary": "佛陀用第一支身体痛箭和第二支心理反应箭，说明圣弟子与凡夫面对苦受的差异。",
+              "en_url": "https://suttacentral.net/sn36.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn36.6/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn42.7",
+              "name": "SN 42.7 Khettūpama Sutta",
+              "focus": "田地譬喻、教学优先级",
+              "summary": "佛陀以良田、中田、劣田说明为什么先为僧众、再为在家信众、再为外道说法，呈现教学资源的次第安排。",
+              "en_url": "https://suttacentral.net/sn42.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn42.7/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn42.8",
+              "name": "SN 42.8 Saṅkha Sutta",
+              "focus": "海螺譬喻、慈心广大",
+              "summary": "佛陀以海螺声向四方传播，比喻修慈者心量广大，能使有限恶业不易压倒心。",
+              "en_url": "https://suttacentral.net/sn42.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn42.8/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn45.8",
+              "name": "SN 45.8 Maggavibhaṅga Sutta",
+              "focus": "八正道定义、公式化说明",
+              "summary": "佛陀逐一定义八正道各支，修辞上是最简洁的法数定义文本，适合作为背诵和教学骨架。",
+              "en_url": "https://suttacentral.net/sn45.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn45.8/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn46.51",
+              "name": "SN 46.51 Āhāra Sutta",
+              "focus": "食物隐喻、条件分析",
+              "summary": "佛陀把五盖和七觉支的增长条件称为“食”，用营养隐喻说明心理状态如何被喂养或断粮。",
+              "en_url": "https://suttacentral.net/sn46.51/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn46.51/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn46.55",
+              "name": "SN 46.55 Saṅgārava Sutta",
+              "focus": "水喻五盖",
+              "summary": "佛陀以染色水、沸水、藻水、风动水、浑水比喻五盖遮蔽心，使“心不明”成为可见图像。",
+              "en_url": "https://suttacentral.net/sn46.55/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn46.55/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn47.6",
+              "name": "SN 47.6 Sakuṇagghi Sutta",
+              "focus": "鹰与鹌鹑譬喻",
+              "summary": "佛陀用鹰抓鹌鹑、鹌鹑回到自家田地而脱险的故事，说明比丘应住于自家境界，即四念处。",
+              "en_url": "https://suttacentral.net/sn47.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn47.6/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn47.8",
+              "name": "SN 47.8 Sūda Sutta",
+              "focus": "厨师譬喻、反馈机制",
+              "summary": "佛陀用聪明厨师观察主人喜好作比，说明修行者应观察心对何种所缘得定，善巧调整。",
+              "en_url": "https://suttacentral.net/sn47.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn47.8/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn47.19",
+              "name": "SN 47.19 Sedaka Sutta",
+              "focus": "杂技譬喻、自护护他",
+              "summary": "佛陀用师徒杂技表演说明“保护自己即保护他人，保护他人即保护自己”，把伦理与念处训练统一起来。",
+              "en_url": "https://suttacentral.net/sn47.19/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn47.19/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn47.20",
+              "name": "SN 47.20 Janapadakalyāṇī Sutta",
+              "focus": "油钵譬喻、注意力训练",
+              "summary": "佛陀设想一人头顶满油钵穿过美女歌舞人群，身后有人持剑监督，以此说明正念必须严密。",
+              "en_url": "https://suttacentral.net/sn47.20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn47.20/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn54.13",
+              "name": "SN 54.13 Ānanda Sutta",
+              "focus": "安般念功能连锁",
+              "summary": "佛陀说明安般念如何圆满四念处、四念处如何圆满七觉支、七觉支如何圆满明解脱。修辞上是层层嵌套的修行链条。",
+              "en_url": "https://suttacentral.net/sn54.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn54.13/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn56.11",
+              "name": "SN 56.11 Dhammacakkappavattana Sutta",
+              "focus": "中道、四谛、三转十二行相",
+              "summary": "佛陀初转法轮以“二边不可亲近”开场，再用四谛和三转十二行相组织觉悟内容，是定义、对比和重复的经典组合。",
+              "en_url": "https://suttacentral.net/sn56.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn56.11/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn56.31",
+              "name": "SN 56.31 Siṁsapā Sutta",
+              "focus": "树叶譬喻、教学取舍",
+              "summary": "佛陀以手中树叶和林中树叶对比，说明自己所知甚多，但只教导导向涅槃者。",
+              "en_url": "https://suttacentral.net/sn56.31/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn56.31/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn56.48",
+              "name": "SN 56.48 Chiggaḷayuga Sutta",
+              "focus": "盲龟浮木譬喻",
+              "summary": "佛陀用盲龟百年一浮、恰遇有孔浮木的譬喻说明得人身和闻法极难，制造稀有感与紧迫感。",
+              "en_url": "https://suttacentral.net/sn56.48/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn56.48/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "增支部 Aṅguttara Nikāya",
+          "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "an1.1-10",
+              "name": "AN 1.1-10 Rūpādivagga",
+              "focus": "单句重复、警觉开场",
+              "summary": "增支部开头以极简重复句式说明色、声、香、味、触对心的强大牵引。修辞上用单一结构连续敲击注意力。",
+              "en_url": "https://suttacentral.net/an1.1-10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an1.1-10/zh/mahinda2?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "mahinda2"
+            },
+            {
+              "uid": "an3.39",
+              "name": "AN 3.39 Sukhumāla Sutta",
+              "focus": "青年奢华与老病死反省",
+              "summary": "佛陀回忆年轻时奢华生活，再以老、病、死三种观察打破青春、健康、生命骄慢。修辞是自传对比。",
+              "en_url": "https://suttacentral.net/an3.39/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an3.39/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an3.65",
+              "name": "AN 3.65 Kesamuttisutta / Kālāma Sutta",
+              "focus": "认识论排除法、经验检验",
+              "summary": "佛陀列举不应单靠传闻、传统、经典、推理、师威等，再引导以贪嗔痴及其后果检验善恶。修辞上先排除伪依据，再建立实践检验。",
+              "en_url": "https://suttacentral.net/an3.65/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an3.65/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an3.100",
+              "name": "AN 3.100 Loṇakapalla Sutta",
+              "focus": "盐块譬喻",
+              "summary": "佛陀用一撮盐投小杯与投恒河的差异，说明同样恶业在狭小心与广大心中的果报呈现不同。",
+              "en_url": "https://suttacentral.net/an3.100/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an3.100/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.24",
+              "name": "AN 4.24 Kāḷakārāma Sutta",
+              "focus": "悖论式如来语言",
+              "summary": "佛陀说如来所见闻觉知不以常规方式执取，形成近乎悖论的表达，用来阻断听者把佛陀经验对象化。",
+              "en_url": "https://suttacentral.net/an4.24/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.24/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.36",
+              "name": "AN 4.36 Doṇa Sutta",
+              "focus": "莲花譬喻、自我定位",
+              "summary": "佛陀以莲花生于水中而不染水，说明自己生于世间而不被世间污染，因此称为佛陀。",
+              "en_url": "https://suttacentral.net/an4.36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.36/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.111",
+              "name": "AN 4.111 Kesi Sutta",
+              "focus": "驯马譬喻、教学策略",
+              "summary": "佛陀与驯马师 Kesi 对话，用温和、严厉、温严并用等方式说明调教弟子的不同策略。",
+              "en_url": "https://suttacentral.net/an4.111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.111/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an5.23",
+              "name": "AN 5.23 Upakkilesa Sutta",
+              "focus": "金垢譬喻",
+              "summary": "佛陀以金有杂质不能柔软明亮，比喻心被五盖污染时不堪运用。",
+              "en_url": "https://suttacentral.net/an5.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an5.23/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an5.57",
+              "name": "AN 5.57 Upajjhatthana Sutta",
+              "focus": "五事常思惟、重复警句",
+              "summary": "佛陀列出老、病、死、别离、业为己有五种应常思惟之事。修辞上以短句重复建立日常观照清单。",
+              "en_url": "https://suttacentral.net/an5.57/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an5.57/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an5.159",
+              "name": "AN 5.159 Udāyī Sutta",
+              "focus": "说法五条件、教学伦理",
+              "summary": "佛陀列出说法应次第、有理由、出于慈心、不为利养、不伤己他。修辞上是对“说法行为”本身的规范化。",
+              "en_url": "https://suttacentral.net/an5.159/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an5.159/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an6.55",
+              "name": "AN 6.55 Soṇa Sutta",
+              "focus": "琴弦譬喻、中道调节",
+              "summary": "佛陀以琴弦太紧太松都不能发好声，教精进过度的 Soṇa 调整努力。修辞上把心理调节转成音乐经验。",
+              "en_url": "https://suttacentral.net/an6.55/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an6.55/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an7.46",
+              "name": "AN 7.46 Aggi Sutta",
+              "focus": "火的多重隐喻",
+              "summary": "佛陀区分应照料之火与应舍断之火，把家庭伦理、供养对象和贪嗔痴之火放在同一意象系统内。",
+              "en_url": "https://suttacentral.net/an7.46/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an7.46/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an7.63",
+              "name": "AN 7.63 Bhariyā Sutta",
+              "focus": "七种妻子、类型化教导",
+              "summary": "佛陀用杀人者、盗贼、主人、母亲、姐妹、朋友、女仆七类妻子进行类型化教导，使家庭伦理变成可自检画像。",
+              "en_url": "https://suttacentral.net/an7.63/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an7.63/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an8.53",
+              "name": "AN 8.53 Gotamī Sutta",
+              "focus": "八条判准、法义过滤器",
+              "summary": "佛陀给摩诃波阇波提八条判准，用于判断何者是法、律、导师教导。修辞上是高度实用的鉴别清单。",
+              "en_url": "https://suttacentral.net/an8.53/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an8.53/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an8.54",
+              "name": "AN 8.54 Dīghajāṇu Sutta",
+              "focus": "在家四现法乐、四来世乐",
+              "summary": "佛陀以法数结构整理在家人的财富、守护、善友、均衡生活及信戒施慧。修辞重点是把世俗生活纳入可执行清单。",
+              "en_url": "https://suttacentral.net/an8.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an8.54/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an8.70",
+              "name": "AN 8.70 Bhūmicāla Sutta",
+              "focus": "地震八因、宇宙化叙事",
+              "summary": "佛陀列举大地震八因，并涉及如来寿行。修辞上用宇宙事件表现佛陀生命节点的重要性。",
+              "en_url": "https://suttacentral.net/an8.70/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an8.70/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an9.35",
+              "name": "AN 9.35 Gāvī Sutta",
+              "focus": "愚牛上山譬喻",
+              "summary": "佛陀用不熟悉山路的牛贸然上山作比，说明禅修者未熟练低层定而急求高层定会失败。",
+              "en_url": "https://suttacentral.net/an9.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an9.35/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an9.41",
+              "name": "AN 9.41 Tapussa Sutta",
+              "focus": "经验转化叙事",
+              "summary": "佛陀说自己成道前也曾不乐出离，但通过见欲过患和出离安稳而转变。修辞上用亲身经验降低听者的心理距离。",
+              "en_url": "https://suttacentral.net/an9.41/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an9.41/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an10.61",
+              "name": "AN 10.61 Avijjā Sutta",
+              "focus": "无明食物链、条件递进",
+              "summary": "佛陀用“食”的结构说明无明有其滋养条件，直到不善友、听闻非法等；也说明明与解脱的滋养链。",
+              "en_url": "https://suttacentral.net/an10.61/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an10.61/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "小部 Khuddaka Nikāya",
+          "section": "小部 Khuddaka Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "dhp1-20",
+              "name": "Dhp 1-20 Yamakavagga",
+              "focus": "对偶、格言、强反差",
+              "summary": "法句经开篇以“意为先导”等对偶句建立心与行为的关系，用怨与不怨、放逸与不放逸等强对比形成格言式修辞。",
+              "en_url": "https://suttacentral.net/dhp1-20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dhp1-20/zh/yun?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "yun"
+            },
+            {
+              "uid": "dhp33-43",
+              "name": "Dhp 33-43 Cittavagga",
+              "focus": "心的譬喻",
+              "summary": "法句经心品用颤动、难护、难制、箭匠调箭等意象说明调心，短偈把心理训练压缩成可背诵图像。",
+              "en_url": "https://suttacentral.net/dhp33-43/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dhp33-43/zh/yun?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "yun"
+            },
+            {
+              "uid": "dhp76-89",
+              "name": "Dhp 76-89 Paṇḍitavagga",
+              "focus": "工匠喻、智者画像",
+              "summary": "法句经贤品用治水者、箭匠、木匠等手艺人比喻自我训练，并以智者不动如岩等意象塑造修行人格。",
+              "en_url": "https://suttacentral.net/dhp76-89/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dhp76-89/zh/yun?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "yun"
+            },
+            {
+              "uid": "ud1.10",
+              "name": "Ud 1.10 Bāhiya Sutta",
+              "focus": "极简悖论、感官截断",
+              "summary": "佛陀对 Bāhiya 说“在所见中只是所见”等，直接截断识别、拥有和自我化过程，是最浓缩的解脱修辞之一。",
+              "en_url": "https://suttacentral.net/ud1.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ud4.5",
+              "name": "Ud 4.5 Nāga Sutta",
+              "focus": "大象喻、独处赞叹",
+              "summary": "佛陀离开争执僧团后，以离群大象比喻独处安稳。修辞上将退隐从消极逃避重塑为尊严与清净。",
+              "en_url": "https://suttacentral.net/ud4.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ud6.4",
+              "name": "Ud 6.4 Nānātitthiya Sutta 1",
+              "focus": "盲人与象寓言",
+              "summary": "佛陀用盲人各摸象一处而争论整体的寓言，批评外道各执局部经验为全体真理。",
+              "en_url": "https://suttacentral.net/ud6.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ud8.1",
+              "name": "Ud 8.1 Nibbānapaṭisaṁyutta Sutta 1",
+              "focus": "否定式语言、不可对象化",
+              "summary": "涅槃相关感兴语多用“有不生、不成、不作、无为”等否定式表达，避免把涅槃说成普通对象。",
+              "en_url": "https://suttacentral.net/ud8.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "iti27",
+              "name": "Iti 27 Mettābhāvanā Sutta",
+              "focus": "功德比较、慈心突出",
+              "summary": "佛陀用比较结构说明短暂慈心修习也胜过巨大布施功德，修辞上通过价值排序凸显心的品质。",
+              "en_url": "https://suttacentral.net/iti27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "iti38",
+              "name": "Iti 38 Vitakka Sutta",
+              "focus": "两种常起念、简洁自述",
+              "summary": "佛陀说自己常起远离与不害两种念头。修辞上用极简自述呈现觉者心的日常方向。",
+              "en_url": "https://suttacentral.net/iti38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "iti44",
+              "name": "Iti 44 Nibbānadhātu Sutta",
+              "focus": "二分定义、涅槃分类",
+              "summary": "佛陀以有余依、无余依两类说明涅槃界，用最小分类帮助听者避免把涅槃理解成单一死亡状态。",
+              "en_url": "https://suttacentral.net/iti44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp1.1",
+              "name": "Snp 1.1 Uraga Sutta",
+              "focus": "蛇蜕皮喻、重复副歌",
+              "summary": "经文反复以蛇蜕旧皮比喻修行者舍弃此岸彼岸，副歌式重复形成强烈诗性记忆。",
+              "en_url": "https://suttacentral.net/snp1.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp1.3",
+              "name": "Snp 1.3 Khaggavisāṇa Sutta",
+              "focus": "犀牛角副歌、独行理想",
+              "summary": "以“如犀牛角独行”的重复句式赞叹远离与独处。修辞核心是副歌带来的节奏和理想形象。",
+              "en_url": "https://suttacentral.net/snp1.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp1.8",
+              "name": "Snp 1.8 Mettā Sutta",
+              "focus": "母子譬喻、愿文排比",
+              "summary": "慈经用母亲保护独子的譬喻说明无量慈，并以愿文式排比扩展到一切众生。",
+              "en_url": "https://suttacentral.net/snp1.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/snp1.8/zh/liangjun?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "liangjun"
+            },
+            {
+              "uid": "snp2.1",
+              "name": "Snp 2.1 Ratana Sutta",
+              "focus": "宝喻、护卫偈",
+              "summary": "宝经以佛、法、僧三宝为核心，用重复祝愿形成护卫性诗偈结构，兼具赞颂、记忆和仪式功能。",
+              "en_url": "https://suttacentral.net/snp2.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp2.4",
+              "name": "Snp 2.4 Maṅgala Sutta",
+              "focus": "吉祥重定义、清单排比",
+              "summary": "佛陀把吉祥从占兆转为伦理、修行、家庭、智慧和涅槃的层级清单，是“重新定义民间概念”的典型。",
+              "en_url": "https://suttacentral.net/snp2.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/snp2.4/zh/metta?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "metta"
+            },
+            {
+              "uid": "snp3.2",
+              "name": "Snp 3.2 Padhāna Sutta",
+              "focus": "魔军人格化、战斗隐喻",
+              "summary": "经文把贪欲、不满、饥渴、爱欲、昏沉等称为魔军，佛陀以战斗隐喻表达成道前的精神决战。",
+              "en_url": "https://suttacentral.net/snp3.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp3.11",
+              "name": "Snp 3.11 Nālaka Sutta",
+              "focus": "预言叙事、牟尼画像",
+              "summary": "前半以阿私陀预言构成佛传诗性叙事，后半以牟尼修行标准塑造理想修行者。",
+              "en_url": "https://suttacentral.net/snp3.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.1",
+              "name": "Snp 4.1 Kāma Sutta",
+              "focus": "否定式、反立场、去执论辩",
+              "summary": "八颂品开端围绕欲乐展开，以“不执取见”“不依两边”的表达风格拆除立场执著。",
+              "en_url": "https://suttacentral.net/snp4.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.1",
+              "name": "Snp 5.1 Vatthugāthā",
+              "focus": "问答诗、逐问递进",
+              "summary": "彼岸道品序分引出多位婆罗门青年逐一发问的结构，形成从疑问到彼岸的问答诗体框架。",
+              "en_url": "https://suttacentral.net/snp5.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ja1",
+              "name": "Ja 1 Apaṇṇaka Jātaka",
+              "focus": "本生故事、寓言化伦理",
+              "summary": "本生经以佛陀过去生故事展示布施、忍辱、真实、智慧、慈悲等德目；此经可作为本生寓言化教法的入口。",
+              "en_url": "https://suttacentral.net/ja1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ja547",
+              "name": "Ja 547 Vessantara Jātaka",
+              "focus": "极端布施叙事",
+              "summary": "维山达罗本生以极端布施制造伦理张力，迫使读者面对波罗蜜理想与普通亲情伦理之间的冲突。",
+              "en_url": "https://suttacentral.net/ja547/en/cowell-rouse?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "cowell",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "律藏 Vinaya Piṭaka",
+          "section": "律藏 Vinaya Piṭaka",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "pli-tv-kd1",
+              "name": "Vinaya Mahākhandhaka, Pli Tv Kd 1",
+              "focus": "叙事修辞、成道后七周、初转法轮",
+              "summary": "律藏大品第一犍度保存成道后、梵天劝请、初转法轮和早期僧团建立的连续叙事。它不是以修辞分类为目的，但保留了佛陀早期说法场景和重复教导。",
+              "en_url": "https://suttacentral.net/pli-tv-kd1/en/brahmali?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "brahmali",
+              "zh_author": "zhuang"
+            }
+          ]
+        }
+      ],
+      "themes": [],
+      "framework_tables": [
+        {
+          "heading": "三部分区分",
+          "headers": [
+            "部分",
+            "关注对象",
+            "判断标准"
+          ],
+          "rows": [
+            [
+              "表达方式",
+              "佛陀“怎样说话”",
+              "句式、语气、开场、称呼、教诫、劝勉、定义、印可、自述、说话伦理。"
+            ],
+            [
+              "表现手法",
+              "经文“怎样呈现”",
+              "场景、人物、行动、冲突、反转、空间移动、心理描写、象征意象、仪式制度、宇宙化叙事。"
+            ],
+            [
+              "修辞手法",
+              "语言“怎样产生说服和记忆效果”",
+              "譬喻、反问、对比、重复、排比、渐次、寓言、讽刺、沉默、悖论、诗偈。"
+            ]
+          ]
+        },
+        {
+          "heading": "一、表达方式总览",
+          "headers": [
+            "表达方式",
+            "功能",
+            "典型经文"
+          ],
+          "rows": [
+            [
+              "开场与听众称呼",
+              "建立说法现场、对象关系和权威语境",
+              "DN 2, MN 10, SN 56.11, AN 1.1-10"
+            ],
+            [
+              "直接教诫 / 命令式表达",
+              "把法义转为明确可做、可戒、可修的行动",
+              "MN 61, MN 118, AN 5.57, AN 5.159"
+            ],
+            [
+              "劝勉 / 许可 / 邀请",
+              "引导听者注意、靠近、实践或离开",
+              "DN 16, MN 26, SN 56.11, AN 6.55"
+            ],
+            [
+              "结论 / 印可表达",
+              "标记说法完成、听者理解或法义被确认",
+              "DN 31, MN 58, AN 3.65"
+            ],
+            [
+              "自述经验",
+              "用佛陀亲身经历建立教学可信度",
+              "MN 4, MN 19, MN 26, MN 36, AN 3.39, AN 9.41"
+            ],
+            [
+              "伦理语言 / 说话准则",
+              "规定何时说、如何说、为何说",
+              "MN 58, MN 139, SN 45.8, AN 5.159"
+            ],
+            [
+              "公式化定义",
+              "把法义压缩成可背诵、可复述的标准定义",
+              "SN 45.8, MN 117, MN 148, DN 33"
+            ]
+          ]
+        },
+        {
+          "heading": "二、表现手法总览",
+          "headers": [
+            "表现手法",
+            "功能",
+            "典型经文"
+          ],
+          "rows": [
+            [
+              "叙事场景 / 行动展开",
+              "通过地点、行动、来去坐立形成说法现场",
+              "DN 16, MN 86, Vinaya Mahākhandhaka"
+            ],
+            [
+              "人物对照 / 群像表现",
+              "用智愚、僧俗、婆罗门与沙门等对照展示法义",
+              "DN 3, DN 27, MN 129, AN 7.63"
+            ],
+            [
+              "戏剧冲突 / 反转",
+              "通过挑战、沉默、折服、转化制造教学张力",
+              "DN 11, MN 35, MN 49, MN 86"
+            ],
+            [
+              "本生 / 过去生叙事",
+              "用过去生故事表达德目、波罗蜜和长期因果",
+              "MN 81, MN 83, Ja 1, Ja 547"
+            ],
+            [
+              "宇宙化 / 神话场景",
+              "借梵天、帝释、天界、地震、魔等扩大法义尺度",
+              "DN 11, DN 21, SN 6.1, AN 8.70"
+            ],
+            [
+              "身体 / 感官呈现",
+              "用眼耳鼻舌身意、受、病痛、尸观等呈现经验结构",
+              "MN 10, MN 119, SN 35.28, SN 36.6"
+            ],
+            [
+              "象征 / 物象意象",
+              "用火、水、箭、毒、树叶、莲花、轮、田等物象承载法义",
+              "SN 56.31, SN 36.6, AN 4.36, AN 3.100"
+            ],
+            [
+              "仪式 / 制度场景",
+              "借供养、礼敬、布萨、出家、僧团制度呈现法的社会形态",
+              "DN 31, MN 142, Vinaya Mahākhandhaka"
+            ],
+            [
+              "空间移动 / 旅程结构",
+              "以游行、入城、渡河、去往彼处组织叙事和修行方向",
+              "DN 16, MN 26, Snp 5.1"
+            ],
+            [
+              "心理描写 / 内心独白",
+              "通过“我想”“他想”“心生恐惧/欢喜”等呈现转化过程",
+              "MN 4, MN 19, MN 36, AN 9.41"
+            ]
+          ]
+        },
+        {
+          "heading": "三、修辞手法总览",
+          "headers": [
+            "修辞手法",
+            "功能",
+            "典型经文"
+          ],
+          "rows": [
+            [
+              "譬喻 / 明喻",
+              "把抽象法义转成可感知经验",
+              "MN 22 筏喻、SN 22.95 泡沫、SN 36.6 双箭、SN 56.31 树叶"
+            ],
+            [
+              "寓言 / 故事",
+              "让听者在情境中自行看见荒谬或方向",
+              "DN 11 梵天故事、DN 27 起源讽刺、MN 63 毒箭、Ud 6.4 盲人与象"
+            ],
+            [
+              "渐次铺陈",
+              "从熟悉经验一步步导向出世间目标",
+              "DN 2、MN 27、MN 39、MN 107、MN 125"
+            ],
+            [
+              "重复 / 排比",
+              "强化记忆，逐项拆解五蕴、六处、四谛等结构",
+              "DN 22、MN 10、MN 109、MN 148、SN 22.59"
+            ],
+            [
+              "反问 / 交叉诘问",
+              "让对方承认经验事实，再推出结论",
+              "MN 35、MN 56、SN 22.59、AN 3.65"
+            ],
+            [
+              "对比",
+              "显示两条道路、两类心、两种果报",
+              "MN 19、MN 129、AN 3.65、Dhp 1-26"
+            ],
+            [
+              "枚举 / 法数",
+              "形成可背诵、可教学、可检查的结构",
+              "DN 33、AN 各集、SN 45.8、SN 46.51"
+            ],
+            [
+              "反讽 / 社会批判",
+              "拆解婆罗门血统、祭祀、神通崇拜等权威",
+              "DN 1、DN 3、DN 11、DN 27、MN 95"
+            ],
+            [
+              "沉默 / 搁置",
+              "对不导向解脱的问题拒绝进入错误框架",
+              "DN 9、MN 63、MN 72"
+            ],
+            [
+              "诗偈 / 格言",
+              "以节奏、对偶、浓缩语形成记忆钩子",
+              "Dhp、Snp、Ud、Iti"
+            ],
+            [
+              "悖论式表达",
+              "打断概念执著，指向非取著经验",
+              "AN 4.24、Ud 1.10、Snp 4"
+            ],
+            [
+              "身体化 / 感官化语言",
+              "把法义落回身体、火、箭、毒、田、海、山等经验",
+              "SN 35.28、SN 36.6、SN 42.7、SN 56.48"
+            ]
+          ]
+        },
+        {
+          "heading": "三层关系地图",
+          "headers": [
+            "层级",
+            "方式",
+            "说明"
+          ],
+          "rows": [
+            [
+              "表达方式",
+              "开场、称呼、教诫、劝勉、定义、印可、自述、说话伦理",
+              "解决“佛陀以什么句式和语气说”。"
+            ],
+            [
+              "表现手法",
+              "场景、人物、行动、冲突、旅程、心理、制度、象征、宇宙化叙事",
+              "解决“经文如何把法义呈现成可感知的场面”。"
+            ],
+            [
+              "修辞手法",
+              "譬喻、反问、对比、重复、渐次、讽刺、沉默、诗偈、悖论",
+              "解决“语言如何说服、破执、增强记忆”。"
+            ]
+          ]
+        },
+        {
+          "heading": "按表达方式索引",
+          "headers": [
+            "表达方式",
+            "推荐深读经文"
+          ],
+          "rows": [
+            [
+              "开场与听众称呼",
+              "DN 2, MN 10, SN 56.11, AN 1.1-10"
+            ],
+            [
+              "直接教诫 / 命令式表达",
+              "MN 61, MN 118, AN 5.57, AN 5.159"
+            ],
+            [
+              "劝勉 / 许可 / 邀请",
+              "DN 16, MN 26, SN 56.11, AN 6.55"
+            ],
+            [
+              "结论 / 印可表达",
+              "DN 31, MN 58, AN 3.65"
+            ],
+            [
+              "自述经验",
+              "MN 4, MN 19, MN 26, MN 36, AN 3.39, AN 9.41"
+            ],
+            [
+              "伦理语言 / 说话准则",
+              "MN 58, MN 139, SN 45.8, AN 5.159"
+            ],
+            [
+              "公式化定义",
+              "SN 45.8, MN 117, MN 148, DN 33"
+            ]
+          ]
+        },
+        {
+          "heading": "按表现手法索引",
+          "headers": [
+            "表现手法",
+            "推荐深读经文"
+          ],
+          "rows": [
+            [
+              "叙事场景 / 行动展开",
+              "DN 16, MN 86, Vinaya Mahākhandhaka"
+            ],
+            [
+              "人物对照 / 群像表现",
+              "DN 3, DN 27, MN 129, AN 7.63"
+            ],
+            [
+              "戏剧冲突 / 反转",
+              "DN 11, MN 35, MN 49, MN 86"
+            ],
+            [
+              "本生 / 过去生叙事",
+              "MN 81, MN 83, Ja 1, Ja 547"
+            ],
+            [
+              "宇宙化 / 神话场景",
+              "DN 11, DN 21, SN 6.1, AN 8.70"
+            ],
+            [
+              "身体 / 感官呈现",
+              "MN 10, MN 119, SN 35.28, SN 36.6"
+            ],
+            [
+              "象征 / 物象意象",
+              "SN 56.31, SN 36.6, AN 4.36, AN 3.100"
+            ],
+            [
+              "仪式 / 制度场景",
+              "DN 31, MN 142, Vinaya Mahākhandhaka"
+            ],
+            [
+              "空间移动 / 旅程结构",
+              "DN 16, MN 26, Snp 5.1"
+            ],
+            [
+              "心理描写 / 内心独白",
+              "MN 4, MN 19, MN 36, AN 9.41"
+            ]
+          ]
+        },
+        {
+          "heading": "按修辞手法索引",
+          "headers": [
+            "修辞手法",
+            "推荐深读经文"
+          ],
+          "rows": [
+            [
+              "筏喻 / 渡河 / 彼岸",
+              "MN 22, SN 12.65, SN 35.238"
+            ],
+            [
+              "火喻",
+              "SN 35.28, AN 7.46, MN 72"
+            ],
+            [
+              "箭喻",
+              "SN 36.6, MN 63, Dhp 76-89"
+            ],
+            [
+              "毒 / 蛇 / 危险喻",
+              "MN 22, SN 35.238"
+            ],
+            [
+              "动物喻",
+              "MN 66, SN 47.6, AN 9.35, Snp 1.3"
+            ],
+            [
+              "水 / 海 / 河喻",
+              "SN 15.3, SN 46.55, SN 56.31, MN 22"
+            ],
+            [
+              "田地 / 种植喻",
+              "SN 42.7, SN 20.1-12, AN 3.100"
+            ],
+            [
+              "身体与疾病喻",
+              "MN 75, SN 36.6, SN 12.63"
+            ],
+            [
+              "工匠 / 技艺喻",
+              "DN 2, MN 107, AN 6.55, Dhp 76-89"
+            ],
+            [
+              "渐次训练",
+              "DN 2, MN 27, MN 39, MN 56, MN 107, MN 125"
+            ],
+            [
+              "五蕴反问",
+              "SN 22.59, MN 35, MN 109, MN 148"
+            ],
+            [
+              "六处重复",
+              "SN 35.28, MN 148, SN 35.95"
+            ],
+            [
+              "形上学搁置",
+              "DN 9, MN 63, MN 72"
+            ],
+            [
+              "社会讽刺",
+              "DN 3, DN 13, DN 27"
+            ],
+            [
+              "诗偈副歌",
+              "Snp 1.1, Snp 1.3, Snp 1.8, Dhp 1-20"
+            ],
+            [
+              "悖论式短句",
+              "AN 4.24, MN 86, Ud 1.10"
+            ],
+            [
+              "价值重定义",
+              "DN 31, Snp 2.4, AN 8.53"
+            ]
+          ]
+        }
+      ]
+    },
+    "language_traps": {
+      "title": "语言陷阱与处理方式",
+      "title_en": "Language Traps & Responses",
+      "icon": "🧩",
+      "sections": [
+        {
+          "title": "长部 Dīgha Nikāya",
+          "section": "长部 Dīgha Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "dn1",
+              "name": "DN 1 Brahmajāla Sutta",
+              "focus": "见解之网、赞毁陷阱",
+              "summary": "佛陀先处理外人赞佛毁佛的问题：弟子不应因毁谤而愤怒，也不应因赞叹而欢喜自满；随后列举六十二见，显示大量哲学语言都从触、受、爱、取而来。处理方式：不在见解网中争胜，而是看见见解生起的条件。",
+              "en_url": "https://suttacentral.net/dn1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn3",
+              "name": "DN 3 Ambaṭṭha Sutta",
+              "focus": "血统傲慢、身份话语",
+              "summary": "Ambaṭṭha 以婆罗门血统轻慢释迦族与佛陀。佛陀没有直接情绪反击，而是追问其家族来历，反转血统优越叙事，并把真正高贵建立在德行与智慧上。",
+              "en_url": "https://suttacentral.net/dn3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn4",
+              "name": "DN 4 Soṇadaṇḍa Sutta",
+              "focus": "婆罗门资格定义",
+              "summary": "Soṇadaṇḍa 被迫面对“什么才使人成为婆罗门”的问题。佛陀通过层层追问，让对方承认血统、咒术、肤色等都可舍，核心在戒与慧。处理方式：重定义身份词。",
+              "en_url": "https://suttacentral.net/dn4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn4/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn5",
+              "name": "DN 5 Kūṭadanta Sutta",
+              "focus": "祭祀语言与暴力包装",
+              "summary": "Kūṭadanta 问祭祀，佛陀不用“神圣传统”回答，而讲无杀害祭祀与布施、戒、修行的更高供养。处理方式：把祭祀话语从牺牲暴力转向伦理和修行。",
+              "en_url": "https://suttacentral.net/dn5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn5/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn8",
+              "name": "DN 8 Mahāsīhanāda Sutta",
+              "focus": "苦行定义与外道挑战",
+              "summary": "裸行者 Kassapa 以苦行标准衡量沙门价值。佛陀说明外在苦行不等于清净，关键在戒、心、慧。处理方式：拆穿“越苦越圣”的语言前提。",
+              "en_url": "https://suttacentral.net/dn8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn8/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn9",
+              "name": "DN 9 Poṭṭhapāda Sutta",
+              "focus": "自我与世界的形上学套问",
+              "summary": "Poṭṭhapāda 等人围绕想、我、世界、如来死后状态发问。佛陀区分有益与无益问题，对不导向解脱的设问不作决定性回答，而说明想的次第止息与可修证路径。",
+              "en_url": "https://suttacentral.net/dn9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn9/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn11",
+              "name": "DN 11 Kevaṭṭa Sutta",
+              "focus": "神通宣传陷阱",
+              "summary": "Kevaṭṭa 请求佛陀用神通吸引信众。佛陀拒绝把教法包装成奇观，并讲述比丘追问“四大何处灭无余”直到梵天也答不出的故事。处理方式：拒绝表演型语言，转向直接灭苦的智慧。",
+              "en_url": "https://suttacentral.net/dn11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn11/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn12",
+              "name": "DN 12 Lohicca Sutta",
+              "focus": "“证得者不应教人”之见",
+              "summary": "Lohicca 主张若有人证得善法，不应教别人，因为教人是贪着。佛陀用反问和譬喻指出此见会断人善利。处理方式：区分吝法与慈悲教学。",
+              "en_url": "https://suttacentral.net/dn12/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn12/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn13",
+              "name": "DN 13 Tevijja Sutta",
+              "focus": "传统权威与空洞宣称",
+              "summary": "婆罗门声称知道通往梵天之道，却无人亲见梵天。佛陀用盲人队列、呼唤未见女子、造无阶梯楼梯等譬喻揭示语言承诺空洞，并把“与梵天共住”重定义为四无量心。",
+              "en_url": "https://suttacentral.net/dn13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn13/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn15",
+              "name": "DN 15 Mahānidāna Sutta",
+              "focus": "名色、识与概念实体化",
+              "summary": "阿难以为缘起容易理解。佛陀指出缘起甚深，逐步分析名色、识、触、受、爱等互依。处理方式：把语言中的“人”“我”“世界”还原为条件结构，避免把名称当实体。",
+              "en_url": "https://suttacentral.net/dn15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn15/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn16",
+              "name": "DN 16 Mahāparinibbāna Sutta",
+              "focus": "遗教语言、权威依赖陷阱",
+              "summary": "佛陀临终前防止弟子把个人权威当依靠，反复教导“自洲自依、法洲法依”，并给出以法与律核对教说的标准。处理方式：把权威从个人声音转回可核对的法与律。",
+              "en_url": "https://suttacentral.net/dn16/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn16/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn21",
+              "name": "DN 21 Sakkapañha Sutta",
+              "focus": "崇高提问中的心理根源",
+              "summary": "帝释以天界身份提出冲突、嫉妒、爱憎等问题。佛陀不被天王身份语言带偏，而把问题还原到欲、寻、戏论等心理链条。处理方式：从宏大叙事降回可观察心理。",
+              "en_url": "https://suttacentral.net/dn21/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn21/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn23",
+              "name": "DN 23 Pāyāsi Sutta",
+              "focus": "唯物断灭论、经验主义陷阱",
+              "summary": "Pāyāsi 以“我没看见来世”为由否定来世与业果。虽主要由 Kumāra Kassapa 回答，但体现佛教处理语言陷阱的典型方式：不用权威压服，而用一连串譬喻指出其经验检验方法本身错误。",
+              "en_url": "https://suttacentral.net/dn23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn23/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn24",
+              "name": "DN 24 Pāthika Sutta",
+              "focus": "神通竞赛与虚假宣称",
+              "summary": "经文处理外道关于神通、宇宙起源和导师威望的挑战。佛陀不进入表演竞赛，而揭示对方言行不一致和虚假宣传。处理方式：拆穿语言包装，不让教法被娱乐化、竞赛化。",
+              "en_url": "https://suttacentral.net/dn24/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn24/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn25",
+              "name": "DN 25 Udumbarika Sutta",
+              "focus": "苦行辩论与自我标榜",
+              "summary": "Nigrodha 等外道以苦行和论辩挑战佛陀。佛陀分析苦行何时有垢、何时无垢，避免被“苦行者/非苦行者”的标签带偏。处理方式：按贪慢和解脱功能评估实践语言。",
+              "en_url": "https://suttacentral.net/dn25/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn25/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn27",
+              "name": "DN 27 Aggañña Sutta",
+              "focus": "种姓神话与起源话语",
+              "summary": "婆罗门以“梵天口生”建立语言权威。佛陀用社会起源叙事反讽种姓神话，说明阶层称谓是行为和制度形成的结果，不是终极本质。",
+              "en_url": "https://suttacentral.net/dn27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn27/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "dn29",
+              "name": "DN 29 Pāsādika Sutta",
+              "focus": "教团崩解后的言说秩序",
+              "summary": "尼乾子死后教团争乱，佛陀说明完整教法、正当合诵和僧团和合的重要。处理方式：防止导师死后语言碎片化、各执一端而引发宗派争端。",
+              "en_url": "https://suttacentral.net/dn29/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/dn29/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "中部 Majjhima Nikāya",
+          "section": "中部 Majjhima Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "mn1",
+              "name": "MN 1 Mūlapariyāya Sutta",
+              "focus": "概念化根本陷阱",
+              "summary": "佛陀分析凡夫、学人、阿罗汉、如来对地、水、火、风、天、梵、涅槃等概念的不同认知方式。凡夫在“地为地”之后继续想象、占有、认同。处理方式：直指语言命名之后的“想、执、慢”的根本机制。",
+              "en_url": "https://suttacentral.net/mn1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn2",
+              "name": "MN 2 Sabbāsava Sutta",
+              "focus": "不如理作意与自我追问",
+              "summary": "佛陀列出“我过去存在吗、我是什么、未来会怎样”等不如理作意问题，说明这些问题会生起六十二见一类的我见。处理方式：不沿着自我叙事追问，而以如理作意观察苦、集、灭、道。",
+              "en_url": "https://suttacentral.net/mn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn11",
+              "name": "MN 11 Cūḷasīhanāda Sutta",
+              "focus": "“唯我宗派有沙门”之排他语言",
+              "summary": "佛陀说明若某教法中没有八正道，就没有真正的沙门果；有八正道才有四双八辈。处理方式：不以宗派名称判断真假，而以道支结构判断教法能否导向解脱。",
+              "en_url": "https://suttacentral.net/mn11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn11/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn18",
+              "name": "MN 18 Madhupiṇḍika Sutta",
+              "focus": "戏论增殖陷阱",
+              "summary": "经文说明从眼色触受想开始，如何生起概念、语言与戏论，最终导致争执。佛陀处理方式是追溯语言增殖的条件链，让人从源头截断“我与世界”的叙事膨胀。",
+              "en_url": "https://suttacentral.net/mn18/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn18/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn22",
+              "name": "MN 22 Alagaddūpama Sutta",
+              "focus": "错学佛法、断灭论误解",
+              "summary": "Arittha 错说佛陀认为障碍法无障碍；经中还处理有人把佛法误作断灭论。佛陀召来当事人核对，严厉纠正，并用水蛇喻、筏喻说明法不可错取、不可执取。",
+              "en_url": "https://suttacentral.net/mn22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn22/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn35",
+              "name": "MN 35 Cūḷasaccaka Sutta",
+              "focus": "诡辩与我能控制五蕴",
+              "summary": "Saccaka 以辩才挑战佛陀，围绕“色受想行识是我”展开。佛陀不与其玩辞令，而反问其是否能命令五蕴如愿，迫使其承认非我。处理方式：从抽象立场拉回经验可控性。",
+              "en_url": "https://suttacentral.net/mn35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn35/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn38",
+              "name": "MN 38 Mahātaṇhāsaṅkhaya Sutta",
+              "focus": "识恒常论误引",
+              "summary": "Sāti 错说“同一识流转轮回”。佛陀召来核问，指出自己一贯说识依条件生起，并用缘起、四食、受胎等结构纠正。处理方式：公开核对原话，重建条件语言。",
+              "en_url": "https://suttacentral.net/mn38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn38/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn44",
+              "name": "MN 44 Cūḷavedalla Sutta",
+              "focus": "定义混乱与精密问答",
+              "summary": "Visākha 向 Dhammadinnā 问身见、八正道、受想灭等。虽非佛陀亲答，但为佛陀认可。处理方式是用精确定义拆解模糊词，显示佛法语言不能靠泛泛理解。",
+              "en_url": "https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn44/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn48",
+              "name": "MN 48 Kosambiya Sutta",
+              "focus": "僧团争论与共同语言",
+              "summary": "拘赏弥比丘争执，佛陀教导慈身业、慈语业、共同受用和圣见。处理方式：语言冲突不能只靠辩赢解决，要重建共同生活和共同见地。",
+              "en_url": "https://suttacentral.net/mn48/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn48/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn49",
+              "name": "MN 49 Brahmanimantanika Sutta",
+              "focus": "最高神权威话语",
+              "summary": "梵天自称常住、全能、创造者。佛陀进入其天界，直接揭示其认知边界。处理方式：不被神圣话语吓住，以更深知见拆穿权威自我叙事。",
+              "en_url": "https://suttacentral.net/mn49/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn49/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn56",
+              "name": "MN 56 Upāli Sutta",
+              "focus": "宗派辩论陷阱",
+              "summary": "Upāli 受尼乾子鼓动来辩论业。佛陀先澄清概念，再让对方看到自宗立场问题；当 Upāli 信服后，佛陀还劝他继续供养原师。处理方式：辩论不转为胜负羞辱，而转为诚实理解和慈悲收束。",
+              "en_url": "https://suttacentral.net/mn56/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn56/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn58",
+              "name": "MN 58 Abhayarājakumāra Sutta",
+              "focus": "两难套问与说话伦理",
+              "summary": "Nigaṇṭha 设计问题让 Abhaya 套佛陀：如来是否会说令他人不悦的话。佛陀拆掉二分陷阱，说明话语要按真实、有益、适时来判断，不按悦耳刺耳简单二分。",
+              "en_url": "https://suttacentral.net/mn58/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn58/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn60",
+              "name": "MN 60 Apaṇṇaka Sutta",
+              "focus": "悬置中也要避免错误赌注",
+              "summary": "佛陀面对不能立即亲证的来世、业果等问题，不要求盲信，而提出“无误原则”：若选择无害、持戒、正见，即使对方暂不能证明形上真相，也更安全。处理方式：把争论改成实践风险评估。",
+              "en_url": "https://suttacentral.net/mn60/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn60/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn63",
+              "name": "MN 63 Cūḷamālukya Sutta",
+              "focus": "十无记问题",
+              "summary": "Mālukyaputta 以世界常无常、如来死后存在不存在等问题威胁还俗。佛陀用毒箭喻说明这些问题不解决老病死苦，处理方式是拒绝让修行被无益问题绑架。",
+              "en_url": "https://suttacentral.net/mn63/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn63/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn64",
+              "name": "MN 64 Mahāmālukya Sutta",
+              "focus": "“儿童无身见”式概念误判",
+              "summary": "Mālukyaputta 对结使有误解，佛陀指出婴儿虽无明确“身见”语言，却潜伏随眠。处理方式：区分显性观念与潜在倾向，避免被表面语言骗过。",
+              "en_url": "https://suttacentral.net/mn64/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn64/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn72",
+              "name": "MN 72 Aggivaccha Sutta",
+              "focus": "如来死后存在与否",
+              "summary": "Vacchagotta 问如来死后存在、不存在、亦存在亦不存在、非存在非不存在。佛陀用火依燃料而燃、燃料尽不可按方向寻找的譬喻，显示问题预设失效。",
+              "en_url": "https://suttacentral.net/mn72/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn72/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn74",
+              "name": "MN 74 Dīghanakha Sutta",
+              "focus": "“我不接受一切见”之见",
+              "summary": "Dīghanakha 宣称自己不接受一切见。佛陀指出这本身也是一种见，并引导观察身受无常。处理方式：揭露反立场本身仍是立场，再转入经验观察。",
+              "en_url": "https://suttacentral.net/mn74/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn74/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn76",
+              "name": "MN 76 Sandaka Sutta",
+              "focus": "错误教义的语言分类",
+              "summary": "阿难向 Sandaka 分析四种非梵行住和四种不安慰梵行，涵盖无因论、无作用论、宿命论等。处理方式：把迷人的宗教口号分类检验，看其是否导致可修、可证、可安稳。",
+              "en_url": "https://suttacentral.net/mn76/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn76/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn84",
+              "name": "MN 84 Madhura Sutta",
+              "focus": "种姓平等的论证",
+              "summary": "Avantiputta 问婆罗门是否最高。Mahākaccāna 以财富、犯罪、出家、德行等反问说明四姓在道德和解脱上无本质差别。处理方式：从现实功能拆穿身份神话。",
+              "en_url": "https://suttacentral.net/mn84/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn84/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn87",
+              "name": "MN 87 Piyajātika Sutta",
+              "focus": "悦耳世俗语与逆耳真相",
+              "summary": "佛陀说“忧悲苦恼从所爱而生”，违背世俗语言中“爱必然幸福”的预设。处理方式：不迎合悦耳话，而让事实在经验中被验证。",
+              "en_url": "https://suttacentral.net/mn87/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn87/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn90",
+              "name": "MN 90 Kaṇṇakatthala Sutta",
+              "focus": "平等与差别的政治提问",
+              "summary": "波斯匿王问四种姓是否有差别。佛陀不落入社会身份口号，而区分社会称谓与善恶、修行能力、解脱可能性。处理方式：拆分问题层次。",
+              "en_url": "https://suttacentral.net/mn90/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn90/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn93",
+              "name": "MN 93 Assalāyana Sutta",
+              "focus": "婆罗门血统论的逐项拆解",
+              "summary": "Assalāyana 被派来维护婆罗门优越论。佛陀用生育、混血、道德、火种、奴隶等反问拆解其主张。处理方式：让身份理论在具体事实前自我瓦解。",
+              "en_url": "https://suttacentral.net/mn93/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn93/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn95",
+              "name": "MN 95 Caṅkī Sutta",
+              "focus": "传统、圣典、推理的轻信陷阱",
+              "summary": "佛陀批评仅凭口传、传承、经典、推理、师威就断言“唯此真实”。处理方式：区分护真、觉真、达真，建立从信任到亲证的认识阶梯。",
+              "en_url": "https://suttacentral.net/mn95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn96",
+              "name": "MN 96 Esukārī Sutta",
+              "focus": "职业义务与种姓话语",
+              "summary": "Esukārī 以婆罗门规定的四姓服务关系发问。佛陀把“应服务谁”改为“服务是否让人更善、更恶”。处理方式：用伦理后果替代阶层规定。",
+              "en_url": "https://suttacentral.net/mn96/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn96/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn98",
+              "name": "MN 98 Vāseṭṭha Sutta",
+              "focus": "“婆罗门”称谓重定义",
+              "summary": "两位青年争论婆罗门由出生还是行为决定。佛陀用生物分类和人类行为说明：人成为婆罗门不由出生，而由行为与修行。处理方式：把称谓从血统改写为实践。",
+              "en_url": "https://suttacentral.net/mn98/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn98/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn99",
+              "name": "MN 99 Subha Sutta",
+              "focus": "婆罗门职业优越论",
+              "summary": "Subha 以婆罗门传统话语询问在家、出家、祭祀和道德。佛陀把讨论从阶层身份转向行为质量、因果和修行结果。处理方式：从“谁说”转到“做什么导致什么”。",
+              "en_url": "https://suttacentral.net/mn99/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn99/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn101",
+              "name": "MN 101 Devadaha Sutta",
+              "focus": "以旧业解释一切的陷阱",
+              "summary": "尼乾子以过去业解释当下苦乐，并主张苦行消业。佛陀用反问和经验检验指出其理论不能被当事人确认。处理方式：要求理论能说明可观察经验，而不是用单一口号吞掉所有因果。",
+              "en_url": "https://suttacentral.net/mn101/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn101/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn102",
+              "name": "MN 102 Pañcattaya Sutta",
+              "focus": "未来论、过去论与概念迷宫",
+              "summary": "经文分析各种关于过去、未来、无想、非想非非想等见解。佛陀处理方式是穷尽分类后指出它们依取著而立，不把精细概念误认为解脱。",
+              "en_url": "https://suttacentral.net/mn102/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn102/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn105",
+              "name": "MN 105 Sunakkhatta Sutta",
+              "focus": "误把暂时体验说成究竟",
+              "summary": "经文处理修行者证得某些平静状态后自以为究竟的问题。佛陀用中毒箭等譬喻说明若烦恼根未除，语言宣称“已得”会成为危险。",
+              "en_url": "https://suttacentral.net/mn105/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn105/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn109",
+              "name": "MN 109 Mahāpuṇṇama Sutta",
+              "focus": "五蕴问答与“谁执取”陷阱",
+              "summary": "比丘问若五蕴非我，谁受业果。佛陀指出问题仍预设一个承受者，并用五蕴无常、苦、非我反复问答纠正。处理方式：不回答“谁”，而拆除“谁”的前提。",
+              "en_url": "https://suttacentral.net/mn109/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn109/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn117",
+              "name": "MN 117 Mahācattārīsaka Sutta",
+              "focus": "正见、邪见与概念分层",
+              "summary": "佛陀区分有漏正见、圣正见、正语、正业等道支关系。处理方式：不让同一个词“正见”含混使用，而分清层级、条件和功能。",
+              "en_url": "https://suttacentral.net/mn117/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn117/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn136",
+              "name": "MN 136 Mahākammavibhaṅga Sutta",
+              "focus": "业果简化与过度概括",
+              "summary": "有人见善人堕恶趣、恶人生善趣，便得出片面结论。佛陀说明业果复杂，不能用单一案例建立绝对命题。处理方式：承认因果复杂性，防止语言从个案跳到错误总括。",
+              "en_url": "https://suttacentral.net/mn136/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn136/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn138",
+              "name": "MN 138 Uddesavibhaṅga Sutta",
+              "focus": "意识被外境语言牵走",
+              "summary": "佛陀说明比丘如何在外境和内在分别中不使心散乱、不执取。处理方式：不让“此可爱、此可厌”等语言牵动识的安住。",
+              "en_url": "https://suttacentral.net/mn138/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn138/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn139",
+              "name": "MN 139 Araṇavibhaṅga Sutta",
+              "focus": "语言伤害与地方语执著",
+              "summary": "佛陀分析什么话会引起诤论，教导不执著地方语、不越界称说、不以语言伤人。处理方式：建立无诤的说话方式，兼顾真实、约定和不害。",
+              "en_url": "https://suttacentral.net/mn139/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn139/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn140",
+              "name": "MN 140 Dhātuvibhaṅga Sutta",
+              "focus": "人称身份与匿名教学",
+              "summary": "Pukkusāti 不认识佛陀本人。佛陀不借身份压服，而以六界、六触处、十八意行分析引导。处理方式：让法义本身工作，降低“谁在说”的语言权威。",
+              "en_url": "https://suttacentral.net/mn140/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn140/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn148",
+              "name": "MN 148 Chachakka Sutta",
+              "focus": "六处矩阵防止“我化”",
+              "summary": "佛陀把六内处、六外处、六识、六触、六受、六爱组成矩阵，说明任何“我经验”的语言都可还原为条件链。处理方式：用分析矩阵替代自我叙事。",
+              "en_url": "https://suttacentral.net/mn148/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn148/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "mn152",
+              "name": "MN 152 Indriyabhāvanā Sutta",
+              "focus": "“不见不闻才是修根”的误定义",
+              "summary": "有人把根修习理解为不见不闻。佛陀重定义根修习：在见闻中不被可意不可意牵引。处理方式：先否定错误定义，再给出可实践定义。",
+              "en_url": "https://suttacentral.net/mn152/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/mn152/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "相应部 Saṁyutta Nikāya",
+          "section": "相应部 Saṁyutta Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "sn7.2",
+              "name": "SN 7.2 Akkosa Sutta",
+              "focus": "辱骂陷阱",
+              "summary": "婆罗门辱骂佛陀，试图诱发反击。佛陀用“礼物不被接受归谁所有”的反问说明：辱骂若不被接收，仍归骂者。处理方式是不接语言钩子。",
+              "en_url": "https://suttacentral.net/sn7.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn7.2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.15",
+              "name": "SN 12.15 Kaccānagotta Sutta",
+              "focus": "有无二边",
+              "summary": "佛陀指出世间多依“有”和“无”二边。正见不是选择一边，而是如实见缘起生灭。处理方式：以缘起中道化解二分语言。",
+              "en_url": "https://suttacentral.net/sn12.15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.15/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.20",
+              "name": "SN 12.20 Paccaya Sutta",
+              "focus": "“佛造真理”误解",
+              "summary": "佛陀说明缘起法性不因如来出世与否而改变，如来只是觉悟并教示。处理方式：避免把教法语言误解为个人创造或权威命令。",
+              "en_url": "https://suttacentral.net/sn12.20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.20/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.35",
+              "name": "SN 12.35 Avijjāpaccaya Sutta",
+              "focus": "自作他作二分",
+              "summary": "围绕苦由自作、他作、自他作、无因作等设问，佛陀以缘起回答。处理方式：不接受行动者实体的前提，而说明条件依存。",
+              "en_url": "https://suttacentral.net/sn12.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.35/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.46",
+              "name": "SN 12.46 Aññatara Brāhmaṇa Sutta",
+              "focus": "“谁受苦”陷阱",
+              "summary": "婆罗门追问谁造作、谁感受。佛陀指出这落入常见或断见，改以缘起说明苦的生灭。处理方式：从“谁”转为“依什么条件”。",
+              "en_url": "https://suttacentral.net/sn12.46/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.46/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.48",
+              "name": "SN 12.48 Lokāyatika Sutta",
+              "focus": "世界论者的二边问题",
+              "summary": "世俗论者以一切存在、一切不存在等问法求答。佛陀不选边，而以十二缘起说明世界经验如何生灭。",
+              "en_url": "https://suttacentral.net/sn12.48/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.48/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn12.67",
+              "name": "SN 12.67 Naḷakalāpī Sutta",
+              "focus": "相互依存而非单一因",
+              "summary": "经文以芦束相依而立说明名色与识互相依存。处理方式：用互依譬喻避免语言把因果简化成单线实体。",
+              "en_url": "https://suttacentral.net/sn12.67/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn12.67/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.1",
+              "name": "SN 24.1 Vāta Sutta",
+              "focus": "见相应：世界常住论",
+              "summary": "见相应集中处理大量“世界常、世界无常、有限、无限、身命一异、如来死后存在不存在”等见。SN 24.1 代表“世界常住”这类命题。处理方式：显示这些见依五蕴执取而生，应从蕴的集灭而非命题争胜入手。",
+              "en_url": "https://suttacentral.net/sn24.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.2",
+              "name": "SN 24.2 Etaṁmama Sutta",
+              "focus": "“这是我的”语言",
+              "summary": "此经代表把五蕴经验用“这是我的、这是我、这是我的自我”语言占有而生见。处理方式：观五蕴如实无常、苦、非我，拔掉所有格语言。",
+              "en_url": "https://suttacentral.net/sn24.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.3",
+              "name": "SN 24.3 So Attā Sutta",
+              "focus": "“彼即是我”语言",
+              "summary": "此经代表把某种经验或原则认作自我。佛陀处理方式不是提出另一个自我定义，而是追溯该见如何依蕴、触、受、取而成。",
+              "en_url": "https://suttacentral.net/sn24.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.18",
+              "name": "SN 24.18 Nevahotinanahotitathāgata Sutta",
+              "focus": "如来死后非有非无",
+              "summary": "此经代表如来死后“四句分别”中的细分命题。处理方式：不在四句中选边，而说明这类见依五蕴与取著建构；如来不可从被取的蕴中安立。",
+              "en_url": "https://suttacentral.net/sn24.18/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.18/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.37",
+              "name": "SN 24.37 Rūpī Attā Sutta",
+              "focus": "有色自我论",
+              "summary": "此经代表“自我是有色的”一类自我定义。处理方式：把自我形上学翻译回色蕴执取，观察色的无常与不可主宰。",
+              "en_url": "https://suttacentral.net/sn24.37/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.37/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.38",
+              "name": "SN 24.38 Arūpī Attā Sutta",
+              "focus": "无色自我论",
+              "summary": "此经代表把自我说成无色、精神性、非物质实体的语言。处理方式：不因其更抽象就认可，而同样放回五蕴执取与见取中分析。",
+              "en_url": "https://suttacentral.net/sn24.38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.38/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.39",
+              "name": "SN 24.39 Rūpī ca Arūpī ca Attā Sutta",
+              "focus": "有色又无色的折中见",
+              "summary": "此经代表把自我说成兼具两边的折中命题。处理方式：指出折中语言仍未离开自我设定；关键不是调和概念，而是断除执取。",
+              "en_url": "https://suttacentral.net/sn24.39/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.39/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn24.44",
+              "name": "SN 24.44 Adukkhamasukhī Sutta",
+              "focus": "自我感受状态定义",
+              "summary": "此经代表以乐、苦、不苦不乐等感受状态定义自我。处理方式：把“我是某种感受者/状态”还原为受蕴的生灭。",
+              "en_url": "https://suttacentral.net/sn24.44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn24.44/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.59",
+              "name": "SN 22.59 Anattalakkhaṇa Sutta",
+              "focus": "“这是我”语法",
+              "summary": "佛陀逐一问五蕴是否常、乐、可控、适合视为我。处理方式：用重复反问拆除“我、我所、我之自我”的语法习惯。",
+              "en_url": "https://suttacentral.net/sn22.59/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.59/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.81",
+              "name": "SN 22.81 Pālileyyasutta",
+              "focus": "独处中的“我是”残留",
+              "summary": "经文分析即使远离，也可能仍围绕五蕴生“我是”的微细认同。处理方式：继续观五蕴集灭，不把静处语言误认为解脱。",
+              "en_url": "https://suttacentral.net/sn22.81/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.81/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.85",
+              "name": "SN 22.85 Yamaka Sutta",
+              "focus": "阿罗汉断灭论误解",
+              "summary": "Yamaka 误以为阿罗汉身坏后断灭无有。舍利弗引导他从五蕴中找不到如来。处理方式：不把如来等同五蕴，也不落入断灭语言。",
+              "en_url": "https://suttacentral.net/sn22.85/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.85/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.86",
+              "name": "SN 22.86 Anurādha Sutta",
+              "focus": "如来死后四句",
+              "summary": "Anurādha 被外道问如来死后存在与否。佛陀教他从五蕴中不可得如来，因此四句都不适用。处理方式：先拆“如来是什么”的前提。",
+              "en_url": "https://suttacentral.net/sn22.86/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.86/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.89",
+              "name": "SN 22.89 Khemaka Sutta",
+              "focus": "“我是”与“这是我”的差别",
+              "summary": "Khemaka 说明虽不认为五蕴是我，但仍有微细“我是”的气味。处理方式：区分粗重身见与微细我慢，避免语言上会说非我却内心仍执著。",
+              "en_url": "https://suttacentral.net/sn22.89/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.89/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.90",
+              "name": "SN 22.90 Channa Sutta",
+              "focus": "空性语言引发恐惧",
+              "summary": "Channa 听闻一切法非我后心生恐惧，转向寻找依靠。处理方式：以缘起中道安顿非我语言，避免把非我听成虚无。",
+              "en_url": "https://suttacentral.net/sn22.90/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.90/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.94",
+              "name": "SN 22.94 Puppha Sutta",
+              "focus": "“我与世间争”误解",
+              "summary": "佛陀说自己不与世间争，是世间与他争；他只是如实说有为法无常。处理方式：把争论从个人对抗还原为是否如实知见。",
+              "en_url": "https://suttacentral.net/sn22.94/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.94/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn22.95",
+              "name": "SN 22.95 Pheṇapiṇḍūpama Sutta",
+              "focus": "五蕴实体感",
+              "summary": "五蕴被语言命名后容易显得坚实。佛陀用泡沫、水泡、阳焰、芭蕉、幻术比喻五蕴空薄。处理方式：用譬喻削弱实体化语言。",
+              "en_url": "https://suttacentral.net/sn22.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn22.95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.23",
+              "name": "SN 35.23 Sabba Sutta",
+              "focus": "“一切”这个词的边界",
+              "summary": "佛陀定义“一切”为眼与色、耳与声乃至意与法。若有人离开六处另立“一切”，只是空谈。处理方式：给宏大词语设经验边界。",
+              "en_url": "https://suttacentral.net/sn35.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.23/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.82",
+              "name": "SN 35.82 Lokapañhā Sutta",
+              "focus": "“世界”这个词的定义",
+              "summary": "佛陀把“世界”解释为在六处中坏灭者，而不是抽象宇宙论对象。处理方式：把世界论语言转成可观的经验生灭。",
+              "en_url": "https://suttacentral.net/sn35.82/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.82/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.95",
+              "name": "SN 35.95 Mālukyaputta Sutta",
+              "focus": "见闻后的占有语言",
+              "summary": "佛陀教“在所见中只是所见”，不在见闻觉知中追加“我在其中”。处理方式：截断感官经验后的命名、占有和自我增殖。",
+              "en_url": "https://suttacentral.net/sn35.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn35.248",
+              "name": "SN 35.248 Yavakalāpī Sutta",
+              "focus": "六处束缚与追问根源",
+              "summary": "佛陀以谷束等譬喻说明六处与贪爱缠缚。处理方式：不在外境名称上争论，而回到内外处接触后的贪染。",
+              "en_url": "https://suttacentral.net/sn35.248/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn35.248/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn36.6",
+              "name": "SN 36.6 Salla Sutta",
+              "focus": "苦受叙事增殖",
+              "summary": "凡夫在身体苦受之外，又以抗拒、抱怨、身份叙事射出第二支箭。处理方式：区分身体苦与心理增殖，停止第二箭。",
+              "en_url": "https://suttacentral.net/sn36.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn36.6/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn41.3",
+              "name": "SN 41.3 Isidatta Sutta 2",
+              "focus": "身见定义",
+              "summary": "质多罗居士问身见，Isidatta 以五蕴二十种我见说明。处理方式：把“我见”这个词拆成具体语言形式：色是我、我有色、色在我中、我在色中等。",
+              "en_url": "https://suttacentral.net/sn41.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn41.3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.1",
+              "name": "SN 44.1 Khemā Sutta",
+              "focus": "如来死后四句的不可适用",
+              "summary": "Khemā 对波斯匿王说明，如来死后存在等四句都不适合。处理方式：用大海难量譬喻说明已解脱者不可用普通概念计量。",
+              "en_url": "https://suttacentral.net/sn44.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.1/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.2",
+              "name": "SN 44.2 Anurādha Sutta",
+              "focus": "如来不可在五蕴外安立",
+              "summary": "Anurādha 面对如来死后四句问题。佛陀引导他在五蕴中找不到如来，也不能离五蕴另立如来。处理方式：拆除问题对象。",
+              "en_url": "https://suttacentral.net/sn44.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.2/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.3",
+              "name": "SN 44.3-6 Sāriputta-Koṭṭhika Suttas",
+              "focus": "无记问题的成组训练",
+              "summary": "舍利弗与大拘絺罗围绕世界常无常、如来死后等问题多次问答。处理方式：把无记问题与五蕴、六处、触受等可观结构连接，显示不回答不是逃避，而是问题不成立。",
+              "en_url": "https://suttacentral.net/sn44.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.3/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.7",
+              "name": "SN 44.7 Moggallāna Sutta",
+              "focus": "神通弟子也不落四句",
+              "summary": "目犍连处理如来死后问题，仍不以神通权威回答四句。处理方式：即使有超常能力，也不把不可安立者对象化。",
+              "en_url": "https://suttacentral.net/sn44.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.7/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.8",
+              "name": "SN 44.8 Vacchagotta Sutta",
+              "focus": "Vaccha 的形上学追问",
+              "summary": "Vacchagotta 反复以十无记追问。佛陀处理方式是一贯不进入常断、有无、如来死后四句框架，而把重点放在离取。",
+              "en_url": "https://suttacentral.net/sn44.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.8/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.9",
+              "name": "SN 44.9 Kutūhalasālā Sutta",
+              "focus": "公开辩论场的好奇心陷阱",
+              "summary": "游方者聚集处以好奇和争论推动形上学问答。佛陀处理方式：不把正法变成公共辩论场的谈资。",
+              "en_url": "https://suttacentral.net/sn44.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.9/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.10",
+              "name": "SN 44.10 Ānanda Sutta",
+              "focus": "佛陀为何沉默",
+              "summary": "Vacchagotta 问有我、无我，佛陀沉默。事后佛陀对阿难说明：答有我会落常见，答无我会令迷惑者更迷惑。处理方式：沉默不是无知，而是避免加固错见。",
+              "en_url": "https://suttacentral.net/sn44.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.10/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn44.11",
+              "name": "SN 44.11 Sabhiya Kaccāna Sutta",
+              "focus": "十无记的说明",
+              "summary": "经文说明如来对世界常无常等问题不作记说，因为它们不导向厌离、离贪、灭、寂静、证智、觉悟、涅槃。处理方式：用解脱价值筛选问题。",
+              "en_url": "https://suttacentral.net/sn44.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn44.11/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "sn56.31",
+              "name": "SN 56.31 Sīsapāvana Sutta",
+              "focus": "知识炫耀陷阱",
+              "summary": "佛陀以手中树叶与林中树叶说明：所知很多，但只教导导向解脱的部分。处理方式：语言不以全面炫示为目标，而以灭苦相关性为边界。",
+              "en_url": "https://suttacentral.net/sn56.31/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/sn56.31/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "增支部 Aṅguttara Nikāya",
+          "section": "增支部 Aṅguttara Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "an3.65",
+              "name": "AN 3.65 Kesamutti / Kālāma Sutta",
+              "focus": "权威语言与轻信",
+              "summary": "佛陀对 Kālāma 人说，不应仅因传闻、传统、经典、逻辑、师威而接受主张；应观察贪嗔痴及其后果。处理方式：把语言权威交给可验证的伦理经验。",
+              "en_url": "https://suttacentral.net/an3.65/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an3.65/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.24",
+              "name": "AN 4.24 Kāḷakārāma Sutta",
+              "focus": "如来不可被见闻觉知框住",
+              "summary": "佛陀以悖论式语言说明如来对所见闻觉知不作通常执取。处理方式：用反常规表达防止听者把佛陀知见对象化、概念化。",
+              "en_url": "https://suttacentral.net/an4.24/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.24/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.42",
+              "name": "AN 4.42 Pañhabyākaraṇa Sutta",
+              "focus": "四种答问方式",
+              "summary": "佛陀列出问题有四种回答：一向记、分别记、反问记、舍置记。处理方式：不被问题形式牵着走，而先判断问题类型。",
+              "en_url": "https://suttacentral.net/an4.42/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.42/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.77",
+              "name": "AN 4.77 Acinteyya Sutta",
+              "focus": "不可思议推测",
+              "summary": "佛陀列出四种不可思议：佛境界、禅境界、业果、世界思维等，若思维会导致狂乱困扰。处理方式：给认知设边界，不让语言推测吞没修行。",
+              "en_url": "https://suttacentral.net/an4.77/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.77/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an4.111",
+              "name": "AN 4.111 Kesi Sutta",
+              "focus": "教学语言的软硬陷阱",
+              "summary": "驯马师 Kesi 问佛陀如何调教弟子。佛陀说明有时温和、有时严厉、有时兼用；若全无可教则舍置。处理方式：语言强度随对象和目的调整。",
+              "en_url": "https://suttacentral.net/an4.111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an4.111/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an5.159",
+              "name": "AN 5.159 Udāyī Sutta",
+              "focus": "说法动机陷阱",
+              "summary": "佛陀列出说法五条件：次第、有理由、出于慈心、不为利养、不伤己他。处理方式：净化说法者的语言动机，避免法语变成名利工具。",
+              "en_url": "https://suttacentral.net/an5.159/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an5.159/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an7.54",
+              "name": "AN 7.54 Abyākata Sutta",
+              "focus": "无记问题清单",
+              "summary": "经文直接列出未被记说的问题。处理方式：把不可导向解脱的问题标为无记，使修行者知道哪些语言轨道不必进入。",
+              "en_url": "https://suttacentral.net/an7.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an7.54/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an7.56",
+              "name": "AN 7.56 Tissabrahmā Sutta",
+              "focus": "天界语境中的无记问题",
+              "summary": "即使问题出现在天界或梵天语境中，佛陀仍不让形上学好奇心凌驾解脱目标。处理方式：不因提问者身份升高而改变问题筛选标准。",
+              "en_url": "https://suttacentral.net/an7.56/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an7.56/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an8.53",
+              "name": "AN 8.53 Saṁkhitta Sutta",
+              "focus": "伪佛法识别",
+              "summary": "佛陀给摩诃波阇波提八条判准：若导向离贪、离系、少欲、知足、远离、精进等，才可知是法与律。处理方式：用结果标准识别漂亮但偏离解脱的语言。",
+              "en_url": "https://suttacentral.net/an8.53/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an8.53/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an10.93",
+              "name": "AN 10.93 Kiṁdiṭṭhika Sutta",
+              "focus": "“你持什么见”陷阱",
+              "summary": "外道问佛弟子持何见。经文显示佛法不是为了建立某个可争胜的见，而是知苦、集、灭、道。处理方式：不以身份见解回应身份见解。",
+              "en_url": "https://suttacentral.net/an10.93/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an10.93/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an10.94",
+              "name": "AN 10.94 Vajjiyamāhita Sutta",
+              "focus": "外道归类佛陀",
+              "summary": "外道试图给佛陀贴上某种见解标签。佛弟子说明佛陀教导的是断除贪嗔痴和四圣谛，不是可归入常见断见的立场。处理方式：拒绝被标签化。",
+              "en_url": "https://suttacentral.net/an10.94/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an10.94/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an10.95",
+              "name": "AN 10.95 Uttiya Sutta",
+              "focus": "“全世界都会得度吗”",
+              "summary": "Uttiya 追问是否全世界、半世界、三分之一世界会由佛陀得度。佛陀不回答数量预测，而用守门人譬喻说明导师只教入门道路，是否入城取决于行者实践。",
+              "en_url": "https://suttacentral.net/an10.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an10.95/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "an10.96",
+              "name": "AN 10.96 Kokanuda Sutta",
+              "focus": "是否持有某种见",
+              "summary": "Kokanuda 问阿难是否持世界常、无常等见。阿难说明如来不以这些见来定位，而知见生起与止息。处理方式：从“你站哪边”转为“见如何生灭”。",
+              "en_url": "https://suttacentral.net/an10.96/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/an10.96/zh/zhuang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        },
+        {
+          "title": "小部 Khuddaka Nikāya",
+          "section": "小部 Khuddaka Nikāya",
+          "intro": "",
+          "suttas": [
+            {
+              "uid": "ud1.10",
+              "name": "Ud 1.10 Bāhiya Sutta",
+              "focus": "感官语言的即时截断",
+              "summary": "佛陀对 Bāhiya 说“在所见中只是所见”等。处理方式：不让见闻觉知继续生成“我见、我闻、我在其中”的语言结构。",
+              "en_url": "https://suttacentral.net/ud1.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ud6.4",
+              "name": "Ud 6.4 Nānātitthiya Sutta 1",
+              "focus": "盲人摸象、局部经验绝对化",
+              "summary": "佛陀用盲人摸象的寓言说明外道各执局部经验为整体真理，因语言定义不同而争论。处理方式：揭示片面经验如何伪装成全体真理。",
+              "en_url": "https://suttacentral.net/ud6.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "ud4.8",
+              "name": "Ud 4.8 Sundarī Sutta",
+              "focus": "诽谤与舆论陷阱",
+              "summary": "佛陀面对外道制造的诽谤舆论，没有以愤怒反击，而以忍耐和事实自明回应。处理方式：不让恶意语言决定自身行为。",
+              "en_url": "https://suttacentral.net/ud4.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp2.7",
+              "name": "Snp 2.7 Brāhmaṇadhammika Sutta",
+              "focus": "婆罗门传统的堕落叙事",
+              "summary": "经文对婆罗门传统从简朴到贪求祭祀利益的变化作批判。处理方式：用历史叙事拆解“传统天然神圣”的语言。",
+              "en_url": "https://suttacentral.net/snp2.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "https://suttacentral.net/snp2.7/zh/fang?lang=en&reference=none&highlight=false",
+              "en_author": "sujato",
+              "zh_author": "fang"
+            },
+            {
+              "uid": "snp3.3",
+              "name": "Snp 3.3 Subhāsita Sutta",
+              "focus": "善说与恶说",
+              "summary": "佛陀定义善说之语：善说、依法、可爱、真实等。处理方式：用明确标准区分漂亮话、伤人话和真正有益的话。",
+              "en_url": "https://suttacentral.net/snp3.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp3.9",
+              "name": "Snp 3.9 Vāseṭṭha Sutta",
+              "focus": "婆罗门称谓之争",
+              "summary": "与 MN 98 平行，处理“出生还是行为决定婆罗门”的争论。处理方式：以行为和修行重定义身份称谓。",
+              "en_url": "https://suttacentral.net/snp3.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.1",
+              "name": "Snp 4.1 Kāma Sutta",
+              "focus": "欲望语言",
+              "summary": "经文说明欲乐如何以可爱对象的语言诱导执著。处理方式：看见欲望叙事背后的束缚和失落。",
+              "en_url": "https://suttacentral.net/snp4.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.2",
+              "name": "Snp 4.2 Guhaṭṭhaka Sutta",
+              "focus": "洞穴喻与隐蔽执著",
+              "summary": "经文把执著欲望和见解者比作困在洞穴中。处理方式：不是装饰语言，而是揭示人如何躲在自我叙事里看不见出口。",
+              "en_url": "https://suttacentral.net/snp4.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.3",
+              "name": "Snp 4.3 Duṭṭhaṭṭhaka Sutta",
+              "focus": "被诽谤与被赞誉",
+              "summary": "经文处理被人恶说、赞誉、争论时如何不动。处理方式：不以名声语言建立自我，也不因他人评价进入争执。",
+              "en_url": "https://suttacentral.net/snp4.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.4",
+              "name": "Snp 4.4 Suddhaṭṭhaka Sutta",
+              "focus": "“清净来自见解”陷阱",
+              "summary": "经文批评执某种见、戒禁、知识为清净来源。处理方式：不把清净外包给可宣称的立场或仪式语言。",
+              "en_url": "https://suttacentral.net/snp4.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.5",
+              "name": "Snp 4.5 Paramaṭṭhaka Sutta",
+              "focus": "“最高见”陷阱",
+              "summary": "经文批评执某一见为最高、因此轻视他人的心态。处理方式：放下以见解建构自我优越。",
+              "en_url": "https://suttacentral.net/snp4.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.8",
+              "name": "Snp 4.8 Pasūra Sutta",
+              "focus": "辩论舞台与胜负语言",
+              "summary": "Pasūra 型辩者追逐辩论胜利、掌声和名声。处理方式：揭示争胜语言本身由慢与执见推动，不把法变成竞技。",
+              "en_url": "https://suttacentral.net/snp4.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.9",
+              "name": "Snp 4.9 Māgaṇḍiya Sutta",
+              "focus": "以欲乐标准评判解脱",
+              "summary": "Māgaṇḍiya 以世俗欲乐框架理解佛陀的舍离。处理方式：佛陀以欲患和寂静重排价值，不接受“快乐=欲乐”的语言前提。",
+              "en_url": "https://suttacentral.net/snp4.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.11",
+              "name": "Snp 4.11 Kalahavivāda Sutta",
+              "focus": "争吵从何而来",
+              "summary": "经文追问争执、悲伤、贪爱、我所、欲望、接触等如何相依而生。处理方式：不只劝人别吵，而是追溯语言冲突的心理根。",
+              "en_url": "https://suttacentral.net/snp4.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.12",
+              "name": "Snp 4.12 Cūḷabyūha Sutta",
+              "focus": "小型阵列：各宗互斥",
+              "summary": "经文描写各派都说“唯此真实，其余虚妄”。处理方式：揭示互斥语言背后的执见结构，而不是加入某一阵营。",
+              "en_url": "https://suttacentral.net/snp4.12/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.13",
+              "name": "Snp 4.13 Mahābyūha Sutta",
+              "focus": "大型阵列：宗派话语战争",
+              "summary": "经文进一步展示宗派见解如何形成阵列、互相攻击、追求胜利。处理方式：离开“以见胜见”的战场。",
+              "en_url": "https://suttacentral.net/snp4.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.14",
+              "name": "Snp 4.14 Tuvaṭaka Sutta",
+              "focus": "快速止息戏论",
+              "summary": "经文提出如何迅速寂静，重点在不执著见、戒禁、知识和自我评价。处理方式：从根上减少语言制造的我慢。",
+              "en_url": "https://suttacentral.net/snp4.14/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp4.15",
+              "name": "Snp 4.15 Attadaṇḍa Sutta",
+              "focus": "暴力与恐惧的语言根",
+              "summary": "经文从“持杖”引出恐惧、争斗和对立。处理方式：看见冲突语言与自我防卫、占有之间的关系。",
+              "en_url": "https://suttacentral.net/snp4.15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.1",
+              "name": "Snp 5.1 Vatthugāthā",
+              "focus": "问答诗的设问框架",
+              "summary": "彼岸道品序分引出一系列青年提问。处理方式：把疑问组织成朝向彼岸的修行问答，而非无边争论。",
+              "en_url": "https://suttacentral.net/snp5.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.5",
+              "name": "Snp 5.5 Mettagūmāṇavapucchā",
+              "focus": "苦从何来",
+              "summary": "Mettagū 问苦的来源和渡越。佛陀把问题转向执取、所有感和欲爱。处理方式：把“世界为何苦”的大问落到“取著如何生苦”。",
+              "en_url": "https://suttacentral.net/snp5.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.6",
+              "name": "Snp 5.6 Dhotakamāṇavapucchā",
+              "focus": "求导师替我解脱",
+              "summary": "Dhotaka 请求佛陀解救自己。佛陀的处理不是替代修行，而是指示其在现法中自见、舍取。处理方式：防止求救语言变成依赖。",
+              "en_url": "https://suttacentral.net/snp5.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.7",
+              "name": "Snp 5.7 Upasīvamāṇavapucchā",
+              "focus": "解脱者死后如何",
+              "summary": "Upasīva 问解脱者灭后是否存在。佛陀以火焰被风吹灭不可计量作答，避免把解脱者放回存在/不存在语言。",
+              "en_url": "https://suttacentral.net/snp5.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.8",
+              "name": "Snp 5.8 Nandamāṇavapucchā",
+              "focus": "圣者、知识与称谓",
+              "summary": "Nanda 问怎样才是牟尼、婆罗门、智者。佛陀不按称号回答，而按离贪、离取、知见清净来重定义。",
+              "en_url": "https://suttacentral.net/snp5.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            },
+            {
+              "uid": "snp5.14",
+              "name": "Snp 5.14 Udayamāṇavapucchā",
+              "focus": "以问答导向止息",
+              "summary": "Udaya 问无明如何破除、识如何止息等。佛陀把问题导向舍喜、念、慧和识的止息。处理方式：让问题服务于修行结构。",
+              "en_url": "https://suttacentral.net/snp5.14/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin",
+              "zh_url": "",
+              "en_author": "sujato",
+              "zh_author": "zhuang"
+            }
+          ]
+        }
+      ],
+      "themes": [],
+      "framework_tables": [
+        {
+          "heading": "总体地图：语言陷阱与佛陀处理方式",
+          "headers": [
+            "语言陷阱",
+            "表现",
+            "佛陀处理方式",
+            "代表经文"
+          ],
+          "rows": [
+            [
+              "形而上学套问",
+              "世界常无常、如来死后存在不存在等",
+              "不进入错误框架；说明此问不导向厌离、离贪、灭苦",
+              "DN 9, MN 63, MN 72, SN 44.10"
+            ],
+            [
+              "二边设问",
+              "有/无、常/断、自作/他作",
+              "改以缘起中道回答",
+              "SN 12.15, SN 12.35, SN 12.46, SN 12.48"
+            ],
+            [
+              "我见语法",
+              "“我是谁”“我曾存在吗”“这是我”",
+              "转向五蕴、六处、触受的条件分析",
+              "MN 109, SN 22.59, SN 22.85, SN 22.89"
+            ],
+            [
+              "词语实体化",
+              "把名词当实体，把概念当真实对象",
+              "分析名色、触、受、想、语言增殖的形成",
+              "DN 15, MN 18, MN 38"
+            ],
+            [
+              "误引佛说",
+              "把佛法说成断灭论、识恒常论、欲可行等",
+              "召来当事人，公开核对，重述正义",
+              "MN 22, MN 38, MN 105"
+            ],
+            [
+              "辩论争胜",
+              "为胜负、立场、名声而问",
+              "揭示争论心理，转向止息诤论",
+              "Snp 4.8, Snp 4.11, MN 95"
+            ],
+            [
+              "传统权威话语",
+              "因传承、经典、老师、推理而轻信",
+              "不盲信；以贪嗔痴、善恶果报和亲身知见检验",
+              "AN 3.65, MN 95"
+            ],
+            [
+              "身份与血统语言",
+              "婆罗门、刹帝利、出身高低",
+              "把身份词重定义为行为、戒德、智慧",
+              "DN 3, DN 27, MN 90, MN 99"
+            ],
+            [
+              "神通与神圣包装",
+              "以神通、梵天、祭祀制造权威",
+              "拆穿权威话语，转向智慧与解脱",
+              "DN 11, DN 13, MN 49"
+            ],
+            [
+              "辱骂挑衅",
+              "以骂詈、羞辱诱发反击",
+              "不接收语言礼物；保持无嗔",
+              "SN 7.2"
+            ],
+            [
+              "赞叹与自我膨胀",
+              "听到赞佛、赞法后执著名声",
+              "不因赞毁动摇；回到法与律",
+              "DN 1, DN 16"
+            ],
+            [
+              "语言伦理混乱",
+              "真话、假话、刺耳话、适时话混淆",
+              "建立“真实、有益、适时、慈心”的说话标准",
+              "MN 58, MN 139, AN 5.159"
+            ],
+            [
+              "不可思议推测",
+              "推测佛境界、业果细节、世界起源",
+              "标为不可思议，避免心狂乱",
+              "AN 4.77"
+            ],
+            [
+              "感官语言增殖",
+              "见闻后立刻生“我”“我的”“我在其中”",
+              "“见只是见”；截断命名占有",
+              "Ud 1.10, SN 35.95"
+            ]
+          ]
+        },
+        {
+          "heading": "按处理方式索引",
+          "headers": [
+            "处理方式",
+            "经文"
+          ],
+          "rows": [
+            [
+              "直接舍置无益问题",
+              "DN 9, MN 63, MN 72, SN 44.10, SN 44.11"
+            ],
+            [
+              "以缘起中道化解二边",
+              "SN 12.15, SN 12.35, SN 12.46, SN 12.48, SN 12.67"
+            ],
+            [
+              "反问拆除我见",
+              "MN 2, MN 35, MN 109, SN 22.59, SN 22.85, SN 22.86, SN 24.1-44"
+            ],
+            [
+              "公开核对并纠正误引",
+              "MN 22, MN 38, MN 105"
+            ],
+            [
+              "以定义和分类澄清词义",
+              "MN 44, MN 117, MN 139, AN 4.42"
+            ],
+            [
+              "用譬喻显示问题荒谬",
+              "DN 13, DN 23, MN 63, MN 72, SN 22.95, Ud 6.4"
+            ],
+            [
+              "用伦理后果检验语言",
+              "AN 3.65, MN 60, MN 95, AN 8.53"
+            ],
+            [
+              "拒绝身份与权威包装",
+              "DN 3, DN 11, DN 27, MN 49, MN 90"
+            ],
+            [
+              "不接辱骂与赞毁",
+              "DN 1, SN 7.2"
+            ],
+            [
+              "建立正语标准",
+              "MN 58, MN 139, AN 5.159"
+            ],
+            [
+              "截断感官后的语言增殖",
+              "MN 1, MN 18, Ud 1.10, SN 35.23, SN 35.82, SN 35.95"
+            ],
+            [
+              "把宏大问题降回可观察经验",
+              "DN 21, MN 87, Snp 5.5"
+            ]
+          ]
         }
       ]
     }
