@@ -122,6 +122,13 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius); font-size: 0.92em; line-height: 2; text-align: center; color: var(--text);
 }
 .md-formula-note { display: block; font-size: 0.7em; color: var(--text-light); font-style: italic; }
+.md-figure { margin: 18px 0; text-align: center; }
+.md-figure img {
+  max-width: 100%; border-radius: 6px; border: 1px solid var(--border); cursor: zoom-in;
+  transition: box-shadow 0.15s;
+}
+.md-figure img:hover { box-shadow: 0 4px 14px rgba(100,80,40,0.18); }
+.md-figure figcaption { font-size: 0.78em; color: var(--text-light); margin-top: 6px; }
 
 /* Bodhi essays reader */
 .bodhi-reader { max-width: 900px; margin: 0 auto; }
@@ -1068,6 +1075,14 @@ function mdToHtml(md) {
       }
       html += '<blockquote>' + quoteLines.filter(l => l).map(l => `<p>${inlineMd(l)}</p>`).join('') + '</blockquote>';
       continue;
+    }
+
+    // Standalone image line: ![alt](url)
+    const img = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (img) {
+      flushList();
+      html += `<figure class="md-figure"><img src="${esc(img[2])}" alt="${esc(img[1])}" loading="lazy" onclick="window.open(this.src,'_blank')">${img[1] ? `<figcaption>${esc(img[1])}</figcaption>` : ''}</figure>`;
+      i++; continue;
     }
 
     // Table block
