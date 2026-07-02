@@ -1,5 +1,7 @@
 # 佛教历史：从三藏结集到三大传承
 
+> 本节内容转引自玛欣德比库（Mahinda Bhikkhu）在新加坡帕奥禅修中心（PAMC）"阿毗达摩讲座"第一讲的讲稿《阿毗达摩讲要》"序论"部分，原文发布于 [quanxue.cn](https://www.quanxue.cn/ct_fojia/abidamoindex.html)，版权归原作者与讲座主办方所有，此处仅供个人学习引用。以下"上座部简史"及后续各节均为本站作者原创整理。
+
 ![佛教三藏结集与南北传播示意图](research/history-images/buddhist-history-overview.png)
 ## 一、佛教与三藏
 
