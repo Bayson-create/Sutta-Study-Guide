@@ -498,6 +498,8 @@ function route() {
     renderResearchBodhi();
   } else if (hash === '#/research/theravada-mahayana') {
     renderResearchTheravadaMahayana();
+  } else if (hash === '#/research/dharma-protectors') {
+    renderResearchDharmaProtectors();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -586,6 +588,11 @@ function renderResearchHome() {
     <div class="title">上座部与大乘简史</div>
     <div class="desc">大寺派存续、缅甸与高棉的改宗、玄奘西游所见、"小乘"称谓的由来，以及定慧关系的跨宗派技术对比</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/dharma-protectors'">
+    <span class="icon">📯</span>
+    <div class="title">护法宣言</div>
+    <div class="desc">仿《共产党宣言》体例写成的僧团批判檄文——教义变异、供养垄断与教权集中如何异化僧团，以及护法运动对各方立场的分野</div>
+  </div>`;
   html += '</div>';
   html += `<div class="research-note">
     《佛教简史和教义演化》讲义由谌飚（CHEN Biao）编制并在大觉寺公开弘法讲座中使用，来源：
@@ -633,6 +640,28 @@ async function renderResearchTheravadaMahayana() {
     const body = `<div class="md-reader">${mdToHtml(_theravadaMahayanaMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       <div class="cat-header"><h2>🕉️ 上座部与大乘简史</h2><div class="cat-en">A Short History of Theravāda &amp; Mahāyāna</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: DHARMA PROTECTORS MANIFESTO ===
+let _dharmaProtectorsMdCache = null;
+async function renderResearchDharmaProtectors() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📯 护法宣言</h2><div class="cat-en">A Manifesto for the Dharma Protectors</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_dharmaProtectorsMdCache) {
+      const res = await fetch('research/dharma-protectors-manifesto.md');
+      _dharmaProtectorsMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdToHtml(_dharmaProtectorsMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
+      <div class="cat-header"><h2>📯 护法宣言</h2><div class="cat-en">A Manifesto for the Dharma Protectors</div></div>
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
