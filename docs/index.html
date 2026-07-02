@@ -129,6 +129,12 @@ a:hover { text-decoration: underline; }
 }
 .md-figure img:hover { box-shadow: 0 4px 14px rgba(100,80,40,0.18); }
 .md-figure figcaption { font-size: 0.78em; color: var(--text-light); margin-top: 6px; }
+.md-reader h4 { font-size: 0.95em; color: var(--text); font-weight: 700; margin: 16px 0 8px; }
+.md-scripture {
+  margin: 12px 0 18px; padding: 12px 18px; background: var(--card-bg); border: 1px solid var(--border);
+  border-left: 3px solid var(--pali-color, var(--accent-light)); border-radius: 0 6px 6px 0;
+  font-size: 0.92em; line-height: 1.9; color: var(--text); white-space: normal;
+}
 
 /* Bodhi essays reader */
 .bodhi-reader { max-width: 900px; margin: 0 auto; }
@@ -500,6 +506,8 @@ function route() {
     renderResearchTheravadaMahayana();
   } else if (hash === '#/research/dharma-protectors') {
     renderResearchDharmaProtectors();
+  } else if (hash === '#/research/two-religions') {
+    renderResearchTwoReligions();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -593,6 +601,11 @@ function renderResearchHome() {
     <div class="title">护法宣言</div>
     <div class="desc">僧团批判檄文——教义变异、供养垄断与教权集中如何异化僧团，以及护法运动对各方立场的分野</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/two-religions'">
+    <span class="icon">☯️</span>
+    <div class="title">上座部与两大宗教</div>
+    <div class="desc">从上座部立场分别检视《圣经》《古兰经》的内在一致性，再以四维度（教义、伦理、终极关怀、历史语境）对两大经典做交叉比较</div>
+  </div>`;
   html += '</div>';
   html += `<div class="research-note">
     《佛教简史和教义演化》讲义由谌飚（CHEN Biao）编制并在大觉寺公开弘法讲座中使用，来源：
@@ -665,6 +678,57 @@ async function renderResearchDharmaProtectors() {
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: TWO RELIGIONS (圣经 / 古兰经 / 对比) ===
+const TWO_RELIGIONS_TABS = [
+  { key: 'bible', label: '圣经', file: 'research/two-religions-bible.md' },
+  { key: 'quran', label: '古兰经', file: 'research/two-religions-quran.md' },
+  { key: 'comparison', label: '两大经典对比', file: 'research/two-religions-comparison.md' },
+];
+let twoReligionsTab = 'bible';
+const _twoReligionsMdCache = {};
+
+function twoReligionsToolbarHtml() {
+  return `<div class="toolbar" id="two-religions-toolbar">
+    <div class="tb-group">
+      ${TWO_RELIGIONS_TABS.map(t => `<button class="tb-btn${twoReligionsTab === t.key ? ' active' : ''}" data-tab="${t.key}">${t.label}</button>`).join('')}
+    </div>
+  </div>`;
+}
+
+async function renderResearchTwoReligions() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>☯️ 上座部与两大宗教</h2><div class="cat-en">Theravāda, the Bible, and the Qur'an</div></div>`;
+  html += twoReligionsToolbarHtml();
+  html += '<div class="reader-content" id="two-religions-body"><div class="loading"><div class="spinner"></div><div>加载中...</div></div></div>';
+  app.innerHTML = html;
+
+  document.getElementById('two-religions-toolbar').addEventListener('click', e => {
+    const btn = e.target.closest('[data-tab]');
+    if (btn) {
+      twoReligionsTab = btn.dataset.tab;
+      document.querySelectorAll('#two-religions-toolbar [data-tab]').forEach(b => b.classList.toggle('active', b.dataset.tab === twoReligionsTab));
+      buildTwoReligionsBody();
+    }
+  });
+
+  buildTwoReligionsBody();
+}
+
+async function buildTwoReligionsBody() {
+  const body = document.getElementById('two-religions-body');
+  const tab = TWO_RELIGIONS_TABS.find(t => t.key === twoReligionsTab);
+  body.innerHTML = '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  try {
+    if (!_twoReligionsMdCache[tab.key]) {
+      const res = await fetch(tab.file);
+      _twoReligionsMdCache[tab.key] = await res.text();
+    }
+    body.innerHTML = `<div class="md-reader">${mdToHtml(_twoReligionsMdCache[tab.key])}</div>`;
+  } catch (e) {
+    body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
 
@@ -1070,6 +1134,24 @@ function mdToHtml(md) {
     if (!trimmed) { flushList(); i++; continue; }
 
     if (trimmed === '---') { flushList(); html += '<hr>'; i++; continue; }
+
+    // Fenced code block: ``` ... ``` (used here for quoted scripture verses
+    // and numbered lists that want to keep their exact line breaks)
+    if (trimmed.startsWith('```')) {
+      flushList();
+      const codeLines = [];
+      i++;
+      while (i < lines.length && !lines[i].trim().startsWith('```')) {
+        codeLines.push(lines[i]);
+        i++;
+      }
+      i++; // skip closing fence
+      html += `<div class="md-scripture">${codeLines.map(l => inlineMd(l)).join('<br>')}</div>`;
+      continue;
+    }
+
+    const h4 = trimmed.match(/^####\s+(.+)/);
+    if (h4) { flushList(); html += `<h4>${inlineMd(h4[1])}</h4>`; i++; continue; }
 
     const h1 = trimmed.match(/^#\s+(.+)/);
     if (h1) { flushList(); html += `<h1>${inlineMd(h1[1])}</h1>`; i++; continue; }
