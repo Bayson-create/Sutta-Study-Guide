@@ -482,7 +482,9 @@ function route() {
     renderVismToc();
   } else if (hash.startsWith('#/research/vism/read/')) {
     const rest = hash.slice('#/research/vism/read/'.length);
-    renderVismReader(rest === 'nidana' ? 'nidana' : parseInt(rest, 10));
+    const [idPart, query] = rest.split('?');
+    const secParam = new URLSearchParams(query || '').get('sec');
+    renderVismReader(idPart === 'nidana' ? 'nidana' : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
   } else {
     renderHome();
   }
@@ -766,9 +768,10 @@ async function renderVismHome() {
   }
 }
 
-function vismSectionHtml(sec) {
+function vismSectionHtml(sec, idx) {
   const tag = sec.level >= 2 ? 'h4' : 'h3';
-  return `<${tag} class="vism-heading">${sec.heading}</${tag}>${sec.html}`;
+  const id = idx !== undefined ? ` id="vism-sec-${idx}"` : '';
+  return `<${tag} class="vism-heading"${id}>${sec.heading}</${tag}>${sec.html}`;
 }
 
 function vismFootnotesHtml(footnotes) {
@@ -801,9 +804,15 @@ function renderVismPaliEn(peData) {
 function buildVismReaderBody() {
   const { peData, zhData } = window._vismData;
   const body = document.getElementById('vism-reader-body');
-  const zhContentHtml = (zhData.intro_html || '') + zhData.sections.map(vismSectionHtml).join('') + vismFootnotesHtml(zhData.footnotes);
+  const zhContentHtml = (zhData.intro_html || '') + zhData.sections.map((sec, i) => vismSectionHtml(sec, i)).join('') + vismFootnotesHtml(zhData.footnotes);
 
   let html = '';
+  if (!peData) {
+    html += `<div class="blurb-box"><span class="blurb-label">说明:</span>此部分在现有数据来源中暂无对应的巴利语／英译逐句对照，故仅显示中文译文。</div>`;
+    html += `<div class="zh-formatted">${zhContentHtml}</div>`;
+    body.innerHTML = html;
+    return;
+  }
   if (vismReaderMode === 'trilingual') {
     html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
     html += renderVismPaliEn(peData);
@@ -827,7 +836,7 @@ function buildVismReaderBody() {
   body.innerHTML = html;
 }
 
-async function renderVismReader(chapterNum) {
+async function renderVismReader(chapterNum, secIdx) {
   let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
   html += '<div class="loading"><div class="spinner"></div><div>正在加载章节数据...</div></div>';
   app.innerHTML = html;
@@ -837,10 +846,8 @@ async function renderVismReader(chapterNum) {
     const idx = await loadVismIndex();
     const meta = isNidana ? null : idx.chapters.find(c => c.chapter === chapterNum);
     const fileTag = isNidana ? 'nidana' : String(chapterNum).padStart(2, '0');
-    const [peData, zhData] = await Promise.all([
-      fetch(`research/vism-data/pe_${fileTag === 'nidana' ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json()),
-      fetch(`research/vism-data/zh_${fileTag === 'nidana' ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json()),
-    ]);
+    const zhData = await fetch(`research/vism-data/zh_${isNidana ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json());
+    const peData = isNidana ? null : await fetch(`research/vism-data/pe_chap${fileTag}.json`).then(r => r.json());
 
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
     out += `<div class="reader-meta"><h2>${isNidana ? '序论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
@@ -848,15 +855,17 @@ async function renderVismReader(chapterNum) {
     else if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
     out += '</div>';
 
-    out += `<div class="toolbar" id="vism-toolbar">
-      <div class="tb-group">
-        <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
-        <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
-        <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
-      </div>
-      <div class="tb-sep"></div>
-      <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
-    </div>`;
+    if (peData) {
+      out += `<div class="toolbar" id="vism-toolbar">
+        <div class="tb-group">
+          <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
+          <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
+          <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
+        </div>
+        <div class="tb-sep"></div>
+        <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
+      </div>`;
+    }
 
     out += '<div class="reader-content" id="vism-reader-body"></div>';
 
@@ -874,20 +883,27 @@ async function renderVismReader(chapterNum) {
     app.innerHTML = out;
     window._vismData = { peData, zhData };
 
-    document.getElementById('vism-toolbar').addEventListener('click', e => {
-      const btn = e.target.closest('[data-mode]');
-      if (btn) {
-        vismReaderMode = btn.dataset.mode;
-        document.querySelectorAll('#vism-toolbar [data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === vismReaderMode));
+    if (peData) {
+      document.getElementById('vism-toolbar').addEventListener('click', e => {
+        const btn = e.target.closest('[data-mode]');
+        if (btn) {
+          vismReaderMode = btn.dataset.mode;
+          document.querySelectorAll('#vism-toolbar [data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === vismReaderMode));
+          buildVismReaderBody();
+        }
+      });
+      document.getElementById('vism-pali-toggle').addEventListener('change', e => {
+        vismShowPali = e.target.checked;
         buildVismReaderBody();
-      }
-    });
-    document.getElementById('vism-pali-toggle').addEventListener('change', e => {
-      vismShowPali = e.target.checked;
-      buildVismReaderBody();
-    });
+      });
+    }
 
     buildVismReaderBody();
+
+    if (secIdx !== null && secIdx !== undefined && !isNaN(secIdx)) {
+      const el = document.getElementById('vism-sec-' + secIdx);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
@@ -895,13 +911,14 @@ async function renderVismReader(chapterNum) {
 
 async function renderVismToc() {
   let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
-  html += `<div class="cat-header"><h2>🗂️ 细目</h2><div class="cat-en">Detailed Table of Contents (paper edition)</div></div>`;
+  html += `<div class="cat-header"><h2>🗂️ 细目</h2><div class="cat-en">Detailed Table of Contents (paper edition, Chinese only)</div></div>`;
+  html += `<div class="blurb-box"><span class="blurb-label">说明:</span>本细目取自纸本简体版《清净道论》目录，英译原书未见对应的详细分节目录，故此页仅有中文版。点击各品、各节标题可直接跳转到阅读器中对应位置。</div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
   app.innerHTML = html;
 
   try {
     const data = await fetch('research/vism-data/zh_toc.json').then(r => r.json());
-    const content = (data.intro_html || '') + data.sections.map(vismSectionHtml).join('') + vismFootnotesHtml(data.footnotes);
+    const content = (data.intro_html || '') + data.sections.map((sec, i) => vismSectionHtml(sec, i)).join('') + vismFootnotesHtml(data.footnotes);
     app.querySelector('.loading').outerHTML = `<div class="zh-formatted vism-toc-page">${content}</div>`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
