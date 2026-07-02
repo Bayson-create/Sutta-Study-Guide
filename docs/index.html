@@ -567,7 +567,7 @@ function renderResearchHome() {
   html += `<div class="research-item-card" onclick="location.hash='#/research/bodhi'">
     <span class="icon">🌳</span>
     <div class="title">菩提比丘论文总结</div>
-    <div class="desc">Bhikkhu Bodhi 十一篇随笔精读：戒学根基、缘起、皈依、宗教对话与佛教教育，附原创概括与思维导图</div>
+    <div class="desc">Bhikkhu Bodhi 十二篇随笔精读：阿罗汉与菩萨之辨、戒学根基、缘起、皈依、宗教对话与佛教教育，附原创概括与思维导图</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/vism'">
     <span class="icon">🪷</span>
@@ -634,6 +634,13 @@ async function renderResearchTheravadaMahayana() {
 
 // === RESEARCH: BODHI ESSAYS ===
 const BODHI_ESSAYS = [
+  {
+    title_zh: "阿罗汉、菩萨与佛陀",
+    title_en: "Arahants, Bodhisattvas, and Buddhas",
+    url: "https://www.accesstoinsight.org/lib/authors/bodhi/arahantsbodhisattvas.html",
+    img: "research/bodhi-images/00-arahants-bodhisattvas-and-buddhas.png",
+    summary: "本篇处理上座部阿罗汉理想与大乘菩萨理想之间长期的宗派张力，作者拒绝“尼柯耶原教旨主义”与“大乘优越论”两种片面立场，转而回到文献本身求证。他提出一个比喻：两大体系如同从大殿的东、西两门观望同一尊佛像——尼柯耶取历史写实视角，见凡人出身、亲历生老病死、初求自了的乔达摩；大乘取宇宙形而上视角，见历劫修行、圆满波罗蜜的菩萨行者。就尼柯耶本身而言，佛陀与阿罗汉同证涅槃、同断五蕴束缚，区别只在教化职能与遍知根器等“对他而言”的功德，而非解脱本质的高下。真正的疑难在于：尼柯耶从未记载佛陀劝弟子行菩萨道，但他自身的殊胜显然需要累世准备——作者坦承这一断层无法被文献直接弥合，只能从入胎瑞相、兜率天等零星线索中窥见菩萨思想的种子。他进而追溯部派佛教如何在过渡期发展出十方多佛、本生故事与利他叙事，为菩萨道提供了历史土壤，并逐一驳斥“阿罗汉只顾自利”“菩萨只重社会关怀而荒废禅定”两种刻板印象——历代阿罗汉弟子与菩萨论师同样都是深耕禅观与教化的实修者。最后，他给出判准：任何路径只要恪守四圣谛、三法印与戒定慧三学，且不将原始教法贬为已被超越的权宜之说，就应被视为佛法真实展开的历史形态，而非彼此排斥的对立选项。",
+  },
   {
     title_zh: "滋养根本",
     title_en: "Nourishing the Roots",
@@ -720,7 +727,7 @@ function renderResearchBodhi() {
   html += `<div class="bodhi-reader">`;
   html += `<div class="bodhi-intro">
     <span class="label">关于本页：</span>
-    以下十一篇随笔均出自 Bhikkhu Bodhi（菩提比丘），原文发表于
+    以下十二篇随笔均出自 Bhikkhu Bodhi（菩提比丘），原文发表于
     <a href="https://www.accesstoinsight.org" target="_blank">Access to Insight</a>
     与 BPS（Buddhist Publication Society）。每篇下方的"概括"由本站编者综合原文内容独立撰写，
     随后附上研读时整理的思维导图；点击标题旁的按钮可在新标签页阅读英文原文。
