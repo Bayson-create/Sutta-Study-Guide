@@ -847,7 +847,7 @@ async function renderVismReader(chapterNum, secIdx) {
     const meta = isNidana ? null : idx.chapters.find(c => c.chapter === chapterNum);
     const fileTag = isNidana ? 'nidana' : String(chapterNum).padStart(2, '0');
     const zhData = await fetch(`research/vism-data/zh_${isNidana ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json());
-    const peData = isNidana ? null : await fetch(`research/vism-data/pe_chap${fileTag}.json`).then(r => r.json());
+    const peData = await fetch(`research/vism-data/pe_${isNidana ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json());
 
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
     out += `<div class="reader-meta"><h2>${isNidana ? '序论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
