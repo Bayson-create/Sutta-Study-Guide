@@ -516,6 +516,8 @@ function route() {
     renderResearchTwoReligions();
   } else if (hash === '#/research/contemporary-buddhism') {
     renderResearchContemporaryBuddhism();
+  } else if (hash === '#/research/contemporary-views') {
+    renderResearchContemporaryViews();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -618,6 +620,11 @@ function renderResearchHome() {
     <span class="icon">🧭</span>
     <div class="title">当代佛教体系反思</div>
     <div class="desc">从道次第的引入、学诚事件的权力结构，到汉传、藏传、上座部三大体系"人祸"与"法祸"的原典判准，附完整参考来源</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/contemporary-views'">
+    <span class="icon">⚖️</span>
+    <div class="title">当代佛教观点对照</div>
+    <div class="desc">以《论事》异说总纲与《梵网经》六十二见为判准，逐条对照济群法师、主流汉传、藏传、日本禅宗观点，附总对照表</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -761,6 +768,28 @@ async function renderResearchContemporaryBuddhism() {
     const body = `<div class="md-reader">${mdWithFootnotes(_contemporaryBuddhismMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       <div class="cat-header"><h2>🧭 当代佛教体系反思</h2><div class="cat-en">Lamrim, the Xuecheng Affair, and Contemporary Buddhist Institutions</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: CONTEMPORARY VIEWS COMPARISON ===
+let _contemporaryViewsMdCache = null;
+async function renderResearchContemporaryViews() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>⚖️ 当代佛教观点对照</h2><div class="cat-en">Kathāvatthu Heterodoxies, the 62 Views, and Contemporary Buddhist Views</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_contemporaryViewsMdCache) {
+      const res = await fetch('research/contemporary-views-comparison.md');
+      _contemporaryViewsMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_contemporaryViewsMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
+      <div class="cat-header"><h2>⚖️ 当代佛教观点对照</h2><div class="cat-en">Kathāvatthu Heterodoxies, the 62 Views, and Contemporary Buddhist Views</div></div>
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
