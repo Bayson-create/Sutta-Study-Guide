@@ -209,6 +209,8 @@ a:hover { text-decoration: underline; }
 .vism-footnotes ol { padding-left: 1.4em; }
 .vism-footnotes li { margin-bottom: 8px; line-height: 1.7; }
 .vism-fn-id { color: var(--accent); font-weight: 600; margin-right: 4px; }
+.vism-fn-back { font-size: 0.8em; text-decoration: none; margin-left: 4px; }
+.vism-en-notes { font-style: normal; }
 .vism-chapnav { display: flex; justify-content: space-between; margin-top: 20px; }
 .vism-toc-page .vism-verse { font-style: normal; font-size: 0.88em; line-height: 2.1; background: transparent; border-left: none; padding: 0; margin: 0; }
 
@@ -535,7 +537,7 @@ function route() {
     const rest = hash.slice('#/research/vism/read/'.length);
     const [idPart, query] = rest.split('?');
     const secParam = new URLSearchParams(query || '').get('sec');
-    renderVismReader(idPart === 'nidana' ? 'nidana' : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
+    renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
   } else {
     renderHome();
   }
@@ -1102,6 +1104,12 @@ async function renderVismHome() {
         <div class="desc">${esc(c.title_en)}</div>
       </div>`;
     });
+    cardsHtml += `<div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/read/conclusion'">
+      <span class="icon">🏁</span>
+      <div class="vism-chapter-num">结论</div>
+      <div class="title">结论</div>
+      <div class="desc">Nigamanakathā — 全书正文之后的结语，觉音尊者自述造论因缘</div>
+    </div>`;
     cardsHtml += '</div>';
     app.querySelector('.loading').outerHTML = cardsHtml;
   } catch (e) {
@@ -1109,16 +1117,24 @@ async function renderVismHome() {
   }
 }
 
-function vismSectionHtml(sec, idx) {
+function vismSectionHtml(sec, idx, overrideHtml) {
   const tag = sec.level >= 2 ? 'h4' : 'h3';
   const id = idx !== undefined ? ` id="vism-sec-${idx}"` : '';
-  return `<${tag} class="vism-heading"${id}>${sec.heading}</${tag}>${sec.html}`;
+  const body = overrideHtml !== undefined ? overrideHtml : sec.html;
+  return `<${tag} class="vism-heading"${id}>${sec.heading}</${tag}>${body}`;
 }
 
-function vismFootnotesHtml(footnotes) {
+// Renders the RST footnote-definition list ("附注" in most chapters). When a
+// chapter's own "附注" heading is otherwise empty (its body was entirely
+// ".. [id] text" directives, already extracted into `footnotes` at parse
+// time), the list is rendered directly under that heading instead of a
+// second, unlabeled "注释" block tacked onto the end of the chapter.
+function vismFootnotesHtml(footnotes, showHeading) {
   const ids = Object.keys(footnotes);
   if (!ids.length) return '';
-  let html = '<div class="vism-footnotes"><h4 class="vism-heading">注释</h4><ol>';
+  let html = '<div class="vism-footnotes">';
+  if (showHeading) html += '<h4 class="vism-heading">注释</h4>';
+  html += '<ol>';
   for (const id of ids) {
     html += `<li id="vismfn-${id}"><span class="vism-fn-id">[${id}]</span> ${esc(footnotes[id])}</li>`;
   }
@@ -1126,7 +1142,43 @@ function vismFootnotesHtml(footnotes) {
   return html;
 }
 
-function renderVismPaliEn(peData) {
+function buildZhSectionsHtml(sections, footnotes) {
+  let consumed = false;
+  let html = '';
+  sections.forEach((sec, i) => {
+    if (sec.heading === '附注' && !sec.html && Object.keys(footnotes).length) {
+      html += vismSectionHtml(sec, i, vismFootnotesHtml(footnotes, false));
+      consumed = true;
+    } else {
+      html += vismSectionHtml(sec, i);
+    }
+  });
+  if (!consumed) html += vismFootnotesHtml(footnotes, true);
+  return html;
+}
+
+// Assigns an id to the first inline reference of each footnote (both the
+// Chinese "[NN-NNN]" refs and the "[N]" English translator-note refs) and
+// appends a "↩" back-link into the corresponding list item, so navigation
+// works in both directions from either language's reader column.
+function wireVismFootnoteBacklinks(container) {
+  const seen = new Set();
+  container.querySelectorAll('.vism-fnref[data-fn]').forEach(el => {
+    const fn = el.dataset.fn;
+    if (!seen.has(fn)) {
+      el.id = 'vismfnref-' + fn;
+      seen.add(fn);
+    }
+  });
+  container.querySelectorAll('.vism-footnotes li[id], .vism-en-notes li[id]').forEach(li => {
+    const fn = li.id.replace(/^vismfn-|^vismennote-/, '');
+    if (seen.has(fn) && !li.querySelector('.vism-fn-back')) {
+      li.insertAdjacentHTML('beforeend', ` <a class="vism-fn-back" href="#vismfnref-${fn}">↩</a>`);
+    }
+  });
+}
+
+function renderVismPaliEn(peData, notesOut) {
   let html = '';
   for (const part of peData.parts) {
     if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
@@ -1134,7 +1186,13 @@ function renderVismPaliEn(peData) {
     for (const row of part.rows) {
       html += '<div class="segment-block">';
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      html += `<div class="seg-en">${esc(row.english)}</div>`;
+      html += '<div class="seg-en">' + esc(row.english);
+      if (row.note && notesOut) {
+        const n = notesOut.length + 1;
+        notesOut.push(row.note);
+        html += ` <sup class="vism-fnref" data-fn="en-${n}">[${n}]</sup>`;
+      }
+      html += '</div>';
       html += '</div>';
     }
     html += '</div>';
@@ -1142,30 +1200,43 @@ function renderVismPaliEn(peData) {
   return html;
 }
 
+function vismEnNotesHtml(notes) {
+  if (!notes.length) return '';
+  let html = '<div class="vism-en-notes vism-footnotes"><h4 class="vism-heading">Notes</h4><ol>';
+  notes.forEach((note, i) => {
+    html += `<li id="vismennote-en-${i + 1}"><span class="vism-fn-id">[${i + 1}]</span> ${esc(note)}</li>`;
+  });
+  html += '</ol></div>';
+  return html;
+}
+
 function buildVismReaderBody() {
   const { peData, zhData } = window._vismData;
   const body = document.getElementById('vism-reader-body');
-  const zhContentHtml = (zhData.intro_html || '') + zhData.sections.map((sec, i) => vismSectionHtml(sec, i)).join('') + vismFootnotesHtml(zhData.footnotes);
+  const zhContentHtml = (zhData.intro_html || '') + buildZhSectionsHtml(zhData.sections, zhData.footnotes);
 
   let html = '';
   if (!peData) {
     html += `<div class="blurb-box"><span class="blurb-label">说明:</span>此部分在现有数据来源中暂无对应的巴利语／英译逐句对照，故仅显示中文译文。</div>`;
     html += `<div class="zh-formatted">${zhContentHtml}</div>`;
     body.innerHTML = html;
+    wireVismFootnoteBacklinks(body);
     return;
   }
   if (vismReaderMode === 'trilingual') {
+    const enNotes = [];
     html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
-    html += renderVismPaliEn(peData);
+    html += renderVismPaliEn(peData, enNotes);
+    html += vismEnNotesHtml(enNotes);
     html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
     html += zhContentHtml;
     html += '</div></div></div>';
   } else if (vismReaderMode === 'en') {
-    html += `<div class="en-formatted">${renderVismPaliEn(peData)}</div>`;
+    const enNotes = [];
+    html += `<div class="en-formatted">${renderVismPaliEn(peData, enNotes)}${vismEnNotesHtml(enNotes)}</div>`;
   } else if (vismReaderMode === 'zh') {
     if (vismShowPali) {
       html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3><div class="en-formatted">';
-      const savedMode = vismReaderMode;
       html += renderVismPaliEn({ parts: peData.parts.map(p => ({ title: p.title, rows: p.rows.map(r => ({ pali: r.pali, english: '' })) })) });
       html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
       html += zhContentHtml;
@@ -1175,6 +1246,7 @@ function buildVismReaderBody() {
     }
   }
   body.innerHTML = html;
+  wireVismFootnoteBacklinks(body);
 }
 
 async function renderVismReader(chapterNum, secIdx) {
@@ -1184,15 +1256,18 @@ async function renderVismReader(chapterNum, secIdx) {
 
   try {
     const isNidana = chapterNum === 'nidana';
+    const isConclusion = chapterNum === 'conclusion';
+    const isSpecial = isNidana || isConclusion;
     const idx = await loadVismIndex();
-    const meta = isNidana ? null : idx.chapters.find(c => c.chapter === chapterNum);
-    const fileTag = isNidana ? 'nidana' : String(chapterNum).padStart(2, '0');
-    const zhData = await fetch(`research/vism-data/zh_${isNidana ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json());
-    const peData = await fetch(`research/vism-data/pe_${isNidana ? 'nidana' : 'chap' + fileTag}.json`).then(r => r.json());
+    const meta = isSpecial ? null : idx.chapters.find(c => c.chapter === chapterNum);
+    const fileTag = isSpecial ? chapterNum : String(chapterNum).padStart(2, '0');
+    const zhData = await fetch(`research/vism-data/zh_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
+    const peData = await fetch(`research/vism-data/pe_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
 
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
-    out += `<div class="reader-meta"><h2>${isNidana ? '序论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
+    out += `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
     if (isNidana) out += '<div class="meta-focus">Introductory Discourse (Nidānakathā)</div>';
+    else if (isConclusion) out += '<div class="meta-focus">Nigamanakathā</div>';
     else if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
     out += '</div>';
 
@@ -1214,10 +1289,14 @@ async function renderVismReader(chapterNum, secIdx) {
     if (isNidana) {
       out += '<span></span>';
       out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/1'">第 1 品 →</button>`;
+    } else if (isConclusion) {
+      out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/23'">← 第 23 品</button>`;
+      out += '<span></span>';
     } else {
       if (chapterNum === 1) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/nidana'">← 序论</button>`;
       else out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum - 1}'">← 第 ${chapterNum - 1} 品</button>`;
       if (chapterNum < 23) out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/${chapterNum + 1}'">第 ${chapterNum + 1} 品 →</button>`;
+      else out += `<button class="back-btn" onclick="location.hash='#/research/vism/read/conclusion'">结论 →</button>`;
     }
     out += '</div>';
 
@@ -1259,7 +1338,7 @@ async function renderVismToc() {
 
   try {
     const data = await fetch('research/vism-data/zh_toc.json').then(r => r.json());
-    const content = (data.intro_html || '') + data.sections.map((sec, i) => vismSectionHtml(sec, i)).join('') + vismFootnotesHtml(data.footnotes);
+    const content = (data.intro_html || '') + buildZhSectionsHtml(data.sections, data.footnotes);
     app.querySelector('.loading').outerHTML = `<div class="zh-formatted vism-toc-page">${content}</div>`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
