@@ -135,6 +135,12 @@ a:hover { text-decoration: underline; }
   border-left: 3px solid var(--pali-color, var(--accent-light)); border-radius: 0 6px 6px 0;
   font-size: 0.92em; line-height: 1.9; color: var(--text); white-space: normal;
 }
+.md-fnref { font-size: 0.78em; }
+.md-fnref a { color: var(--accent); }
+.md-footnotes { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--text-light); }
+.md-footnotes h3 { color: var(--accent); }
+.md-footnotes ol { padding-left: 1.4em; }
+.md-footnotes li { margin-bottom: 8px; line-height: 1.7; word-break: break-all; }
 
 /* Bodhi essays reader */
 .bodhi-reader { max-width: 900px; margin: 0 auto; }
@@ -508,6 +514,8 @@ function route() {
     renderResearchDharmaProtectors();
   } else if (hash === '#/research/two-religions') {
     renderResearchTwoReligions();
+  } else if (hash === '#/research/contemporary-buddhism') {
+    renderResearchContemporaryBuddhism();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -605,6 +613,11 @@ function renderResearchHome() {
     <span class="icon">☯️</span>
     <div class="title">上座部与两大宗教</div>
     <div class="desc">从上座部立场分别检视《圣经》《古兰经》的内在一致性，再以四维度（教义、伦理、终极关怀、历史语境）对两大经典做交叉比较</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/contemporary-buddhism'">
+    <span class="icon">🧭</span>
+    <div class="title">当代佛教体系反思</div>
+    <div class="desc">从道次第的引入、学诚事件的权力结构，到汉传、藏传、上座部三大体系"人祸"与"法祸"的原典判准，附完整参考来源</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -729,6 +742,28 @@ async function buildTwoReligionsBody() {
     body.innerHTML = `<div class="md-reader">${mdToHtml(_twoReligionsMdCache[tab.key])}</div>`;
   } catch (e) {
     body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: CONTEMPORARY BUDDHISM REFLECTIONS ===
+let _contemporaryBuddhismMdCache = null;
+async function renderResearchContemporaryBuddhism() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🧭 当代佛教体系反思</h2><div class="cat-en">Lamrim, the Xuecheng Affair, and Contemporary Buddhist Institutions</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_contemporaryBuddhismMdCache) {
+      const res = await fetch('research/contemporary-buddhism-reflections.md');
+      _contemporaryBuddhismMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_contemporaryBuddhismMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
+      <div class="cat-header"><h2>🧭 当代佛教体系反思</h2><div class="cat-en">Lamrim, the Xuecheng Affair, and Contemporary Buddhist Institutions</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
 
@@ -1240,6 +1275,41 @@ function inlineMd(text) {
   t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, label, url) => `<a href="${url}" target="_blank">${label}</a>`);
   return t;
+}
+
+// Pulls out MultiMarkdown/Pandoc-style footnotes ([^label]: text definitions
+// and [^label] inline refs), relocating the definitions to a numbered list at
+// the end of the document rather than leaving them stranded mid-text.
+function mdWithFootnotes(md) {
+  const lines = md.split('\n');
+  const defs = {};
+  const bodyLines = [];
+  for (const line of lines) {
+    const m = line.match(/^\[\^([\w-]+)\]:\s*(.*)$/);
+    if (m) { defs[m[1]] = m[2]; continue; }
+    if (/^##+\s+参考来源\s*$/.test(line.trim())) continue;
+    bodyLines.push(line);
+  }
+
+  const order = [];
+  const body = bodyLines.join('\n').replace(/\[\^([\w-]+)\]/g, (m, label) => {
+    if (!(label in defs)) return m;
+    if (!order.includes(label)) order.push(label);
+    return `${label}`;
+  });
+
+  let html = mdToHtml(body);
+  html = html.replace(/([\w-]+)/g, (m, label) => {
+    const n = order.indexOf(label) + 1;
+    return `<sup class="md-fnref"><a href="#mdfn-${label}">[${n}]</a></sup>`;
+  });
+
+  if (order.length) {
+    html += '<div class="md-footnotes"><h3>参考来源</h3><ol>' +
+      order.map(l => `<li id="mdfn-${l}">${inlineMd(defs[l])}</li>`).join('') +
+      '</ol></div>';
+  }
+  return html;
 }
 
 function linkifySuttaRefs(text) {
