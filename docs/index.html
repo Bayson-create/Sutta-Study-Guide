@@ -527,6 +527,8 @@ function route() {
     renderPsychAdler();
   } else if (hash === '#/research/psychology/questions') {
     renderPsychQuestions();
+  } else if (hash === '#/research/psychology/bicameral') {
+    renderPsychBicameral();
   } else if (hash === '#/research/psychology/carnegie') {
     renderPsychCarnegie();
   } else if (hash === '#/research/vism') {
@@ -829,6 +831,11 @@ function renderResearchPsychologyHome() {
     <div class="title">学会提问</div>
     <div class="desc">《学会提问》（第11版）逐章深度评析——批判性思维与原典对话</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/psychology/bicameral'">
+    <span class="icon">🧩</span>
+    <div class="title">双脑人意识的起源</div>
+    <div class="desc">Julian Jaynes《双脑人意识的起源》逐章深度评析——意识、双脑心智与巴利三藏的原典对话</div>
+  </div>`;
   html += '</div>';
 
   html += '<div class="research-divider">成功学</div>';
@@ -920,6 +927,27 @@ async function renderPsychQuestions() {
     const body = `<div class="md-reader">${mdWithFootnotes(_psychQuestionsMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>
       <div class="cat-header"><h2>❓ 学会提问</h2><div class="cat-en">Asking the Right Questions</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+let _psychBicameralMdCache = null;
+async function renderPsychBicameral() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>`;
+  html += `<div class="cat-header"><h2>🧩 双脑人意识的起源</h2><div class="cat-en">The Origin of Consciousness in the Breakdown of the Bicameral Mind</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_psychBicameralMdCache) {
+      const res = await fetch('research/psychology/bicameral-mind-origin.md');
+      _psychBicameralMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_psychBicameralMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>
+      <div class="cat-header"><h2>🧩 双脑人意识的起源</h2><div class="cat-en">The Origin of Consciousness in the Breakdown of the Bicameral Mind</div></div>
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
