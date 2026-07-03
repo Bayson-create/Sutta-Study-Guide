@@ -96,7 +96,7 @@ a:hover { text-decoration: underline; }
 .research-item-card .desc { font-size: 0.85em; color: var(--text-light); line-height: 1.6; }
 
 /* Markdown reader (concepts) */
-.md-reader { max-width: 760px; margin: 0 auto; }
+.md-reader { max-width: 760px; margin: 0 auto; overflow-wrap: break-word; word-break: break-word; }
 .md-reader h1 { font-size: 1.4em; color: var(--accent); font-weight: 700; margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
 .md-reader h1:first-child { margin-top: 0; }
 .md-reader h2 { font-size: 1.1em; color: var(--text); font-weight: 700; margin: 20px 0 10px; }
@@ -196,7 +196,7 @@ a:hover { text-decoration: underline; }
 .zh-formatted .vism-heading:first-child { margin-top: 0; }
 .vism-part-title {
   font-size: 0.95em; font-weight: 700; color: var(--text-light); margin: 22px 0 10px;
-  padding-bottom: 4px; border-bottom: 1px dashed var(--border);
+  padding-bottom: 4px; border-bottom: 1px dashed var(--border); overflow-wrap: break-word; word-break: break-word;
 }
 .en-formatted .vism-part-title:first-child { margin-top: 0; }
 .vism-verse {
@@ -376,9 +376,9 @@ a:hover { text-decoration: underline; }
 
 /* Segment display */
 .segment-block { margin-bottom: 14px; }
-.seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; }
-.seg-en { line-height: 1.7; }
-.seg-zh { line-height: 2; font-size: 1.02em; }
+.seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; overflow-wrap: break-word; word-break: break-word; }
+.seg-en { line-height: 1.7; overflow-wrap: break-word; word-break: break-word; }
+.seg-zh { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .zh-formatted { line-height: 2; }
 .zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 20px; font-weight: 700; }
 .zh-formatted h2 { font-size: 1.12em; color: var(--accent); font-weight: 700; margin: 24px 0 12px; }
@@ -413,6 +413,7 @@ a:hover { text-decoration: underline; }
 
 /* Side by side */
 .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.side-col { min-width: 0; }
 .side-col h3 { font-size: 1em; color: var(--accent); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 
 /* Loading / Error */
