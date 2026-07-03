@@ -519,6 +519,14 @@ function route() {
     renderResearchContemporaryBuddhism();
   } else if (hash === '#/research/contemporary-views') {
     renderResearchContemporaryViews();
+  } else if (hash === '#/research/psychology') {
+    renderResearchPsychologyHome();
+  } else if (hash === '#/research/psychology/adler') {
+    renderPsychAdler();
+  } else if (hash === '#/research/psychology/questions') {
+    renderPsychQuestions();
+  } else if (hash === '#/research/psychology/carnegie') {
+    renderPsychCarnegie();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -626,6 +634,11 @@ function renderResearchHome() {
     <span class="icon">⚖️</span>
     <div class="title">当代佛教观点对照</div>
     <div class="desc">以《论事》异说总纲与《梵网经》六十二见为判准，逐条对照济群法师、主流汉传、藏传、日本禅宗观点，附总对照表</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/psychology'">
+    <span class="icon">🧠</span>
+    <div class="title">对心理学和成功学的反思</div>
+    <div class="desc">阿德勒个体心理学、《学会提问》批判性思维、卡耐基处世哲学，逐章结合巴利三藏与《清净道论》评析</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -791,6 +804,120 @@ async function renderResearchContemporaryViews() {
     const body = `<div class="md-reader">${mdWithFootnotes(_contemporaryViewsMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       <div class="cat-header"><h2>⚖️ 当代佛教观点对照</h2><div class="cat-en">Kathāvatthu Heterodoxies, the 62 Views, and Contemporary Buddhist Views</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: PSYCHOLOGY & SELF-HELP REFLECTIONS ===
+function renderResearchPsychologyHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🧠 对心理学和成功学的反思</h2><div class="cat-en">Reflections on Psychology and Self-Help Literature</div></div>`;
+
+  html += '<div class="research-divider">心理学</div>';
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/psychology/adler'">
+    <span class="icon">🌱</span>
+    <div class="title">阿德勒</div>
+    <div class="desc">《自卑与超越》《理解人性》逐章深度评析，及阿德勒个体心理学完整总结，结合巴利三藏与《清净道论》对话</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/psychology/questions'">
+    <span class="icon">❓</span>
+    <div class="title">学会提问</div>
+    <div class="desc">《学会提问》（第11版）逐章深度评析——批判性思维与原典对话</div>
+  </div>`;
+  html += '</div>';
+
+  html += '<div class="research-divider">成功学</div>';
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/psychology/carnegie'">
+    <span class="icon">🤝</span>
+    <div class="title">卡耐基</div>
+    <div class="desc">《人性的优点》《人性的弱点》与《卡耐基魅力口才与人际关系》评析，结合巴利三藏与《清净道论》</div>
+  </div>`;
+  html += '</div>';
+
+  app.innerHTML = html;
+}
+
+const PSYCH_ADLER_TABS = [
+  { key: 'inferiority', label: '自卑与超越', file: 'research/psychology/adler-inferiority-superiority.md' },
+  { key: 'humannature', label: '理解人性', file: 'research/psychology/adler-understanding-human-nature.md' },
+  { key: 'summary', label: '阿德勒总结', file: 'research/psychology/adler-summary.md' },
+];
+const PSYCH_CARNEGIE_TABS = [
+  { key: 'humannature', label: '人性的优点与弱点', file: 'research/psychology/carnegie-human-nature.md' },
+  { key: 'charisma', label: '魅力口才与人际关系', file: 'research/psychology/carnegie-charisma-communication.md' },
+];
+
+const _tabReaderCache = {};
+const _tabReaderCurrent = {};
+
+function renderTabbedMdReader(pageKey, icon, title, titleEn, tabs) {
+  if (!_tabReaderCurrent[pageKey]) _tabReaderCurrent[pageKey] = tabs[0].key;
+
+  let html = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>`;
+  html += `<div class="cat-header"><h2>${icon} ${title}</h2><div class="cat-en">${titleEn}</div></div>`;
+  html += `<div class="toolbar" id="tabreader-toolbar-${pageKey}">
+    <div class="tb-group">
+      ${tabs.map(t => `<button class="tb-btn${_tabReaderCurrent[pageKey] === t.key ? ' active' : ''}" data-tab="${t.key}">${t.label}</button>`).join('')}
+    </div>
+  </div>`;
+  html += `<div class="reader-content" id="tabreader-body-${pageKey}"><div class="loading"><div class="spinner"></div><div>加载中...</div></div></div>`;
+  app.innerHTML = html;
+
+  document.getElementById(`tabreader-toolbar-${pageKey}`).addEventListener('click', e => {
+    const btn = e.target.closest('[data-tab]');
+    if (btn) {
+      _tabReaderCurrent[pageKey] = btn.dataset.tab;
+      document.querySelectorAll(`#tabreader-toolbar-${pageKey} [data-tab]`).forEach(b => b.classList.toggle('active', b.dataset.tab === _tabReaderCurrent[pageKey]));
+      buildTabReaderBody(pageKey, tabs);
+    }
+  });
+
+  buildTabReaderBody(pageKey, tabs);
+}
+
+async function buildTabReaderBody(pageKey, tabs) {
+  const body = document.getElementById(`tabreader-body-${pageKey}`);
+  const tab = tabs.find(t => t.key === _tabReaderCurrent[pageKey]);
+  body.innerHTML = '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  try {
+    const cacheKey = pageKey + ':' + tab.key;
+    if (!_tabReaderCache[cacheKey]) {
+      const res = await fetch(tab.file);
+      _tabReaderCache[cacheKey] = await res.text();
+    }
+    body.innerHTML = `<div class="md-reader">${mdWithFootnotes(_tabReaderCache[cacheKey])}</div>`;
+  } catch (e) {
+    body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+function renderPsychAdler() {
+  renderTabbedMdReader('adler', '🌱', '阿德勒', 'Adlerian Individual Psychology', PSYCH_ADLER_TABS);
+}
+
+function renderPsychCarnegie() {
+  renderTabbedMdReader('carnegie', '🤝', '卡耐基', 'Dale Carnegie', PSYCH_CARNEGIE_TABS);
+}
+
+let _psychQuestionsMdCache = null;
+async function renderPsychQuestions() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>`;
+  html += `<div class="cat-header"><h2>❓ 学会提问</h2><div class="cat-en">Asking the Right Questions</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_psychQuestionsMdCache) {
+      const res = await fetch('research/psychology/critical-thinking-questions.md');
+      _psychQuestionsMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_psychQuestionsMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>
+      <div class="cat-header"><h2>❓ 学会提问</h2><div class="cat-en">Asking the Right Questions</div></div>
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
