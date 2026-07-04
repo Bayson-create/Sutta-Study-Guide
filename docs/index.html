@@ -209,7 +209,6 @@ a:hover { text-decoration: underline; }
 .vism-footnotes ol { padding-left: 1.4em; }
 .vism-footnotes li { margin-bottom: 8px; line-height: 1.7; }
 .vism-fn-id { color: var(--accent); font-weight: 600; margin-right: 4px; }
-.vism-fn-back { font-size: 0.8em; text-decoration: none; margin-left: 4px; }
 .vism-en-notes { font-style: normal; }
 .vism-chapnav { display: flex; justify-content: space-between; margin-top: 20px; }
 .vism-toc-page .vism-verse { font-style: normal; font-size: 0.88em; line-height: 2.1; background: transparent; border-left: none; padding: 0; margin: 0; }
@@ -416,7 +415,7 @@ a:hover { text-decoration: underline; }
 /* Side by side */
 .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .side-col { min-width: 0; }
-.side-col h3 { font-size: 1em; color: var(--accent); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.side-col > h3 { font-size: 1em; color: var(--accent); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 
 /* Loading / Error */
 .loading { text-align: center; padding: 60px 20px; color: var(--text-light); }
@@ -1185,24 +1184,21 @@ function buildZhSectionsHtml(sections, footnotes) {
   return html;
 }
 
-// Assigns an id to the first inline reference of each footnote (both the
-// Chinese "[NN-NNN]" refs and the "[N]" English translator-note refs) and
-// appends a "↩" back-link into the corresponding list item, so navigation
-// works in both directions from either language's reader column.
-function wireVismFootnoteBacklinks(container) {
-  const seen = new Set();
-  container.querySelectorAll('.vism-fnref[data-fn]').forEach(el => {
-    const fn = el.dataset.fn;
-    if (!seen.has(fn)) {
-      el.id = 'vismfnref-' + fn;
-      seen.add(fn);
-    }
-  });
-  container.querySelectorAll('.vism-footnotes li[id], .vism-en-notes li[id]').forEach(li => {
-    const fn = li.id.replace(/^vismfn-|^vismennote-/, '');
-    if (seen.has(fn) && !li.querySelector('.vism-fn-back')) {
-      li.insertAdjacentHTML('beforeend', ` <a class="vism-fn-back" href="#vismfnref-${fn}">↩</a>`);
-    }
+// Lets clicking an inline footnote ref ([NN-NNN] for Chinese, [N] for the
+// English translator notes) scroll straight to its definition. Uses a
+// delegated click handler with scrollIntoView rather than a real <a href>,
+// since this is a hash-routed SPA — an href of "#vismfn-01-012" would change
+// location.hash, fire the router, match no known route, and fall through to
+// the home page instead of just scrolling.
+function wireVismFootnoteLinks(container) {
+  if (container._vismFnWired) return;
+  container._vismFnWired = true;
+  container.addEventListener('click', e => {
+    const ref = e.target.closest('.vism-fnref[data-fn]');
+    if (!ref) return;
+    const fn = ref.dataset.fn;
+    const target = document.getElementById('vismfn-' + fn) || document.getElementById('vismennote-' + fn);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 }
 
@@ -1248,7 +1244,7 @@ function buildVismReaderBody() {
     html += `<div class="blurb-box"><span class="blurb-label">说明:</span>此部分在现有数据来源中暂无对应的巴利语／英译逐句对照，故仅显示中文译文。</div>`;
     html += `<div class="zh-formatted">${zhContentHtml}</div>`;
     body.innerHTML = html;
-    wireVismFootnoteBacklinks(body);
+    wireVismFootnoteLinks(body);
     return;
   }
   if (vismReaderMode === 'trilingual') {
@@ -1274,7 +1270,7 @@ function buildVismReaderBody() {
     }
   }
   body.innerHTML = html;
-  wireVismFootnoteBacklinks(body);
+  wireVismFootnoteLinks(body);
 }
 
 async function renderVismReader(chapterNum, secIdx) {
