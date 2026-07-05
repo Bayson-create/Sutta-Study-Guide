@@ -136,6 +136,10 @@ a:hover { text-decoration: underline; }
   font-size: 0.92em; line-height: 1.9; color: var(--text); white-space: normal;
 }
 .md-fnref { font-size: 0.78em; }
+.md-reader pre.mermaid {
+  margin: 16px 0; padding: 14px; background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow-x: auto; text-align: center;
+}
 .md-fnref a { color: var(--accent); }
 .md-footnotes { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--text-light); }
 .md-footnotes h3 { color: var(--accent); }
@@ -534,6 +538,8 @@ function route() {
     renderForestMonksHome();
   } else if (hash.startsWith('#/research/forest-monks/')) {
     renderForestMonkReader(hash.slice('#/research/forest-monks/'.length));
+  } else if (hash === '#/research/buddhist-trends') {
+    renderResearchBuddhistTrends();
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -651,6 +657,11 @@ function renderResearchHome() {
     <span class="icon">🌲</span>
     <div class="title">森林比丘的修行之道</div>
     <div class="desc">《阿姜曼正传》《美琪乔》《沙门》《帕蒂帕达》逐章总结——泰国森林传统头陀行者的修证历程</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-trends'">
+    <span class="icon">📈</span>
+    <div class="title">佛教发展趋势</div>
+    <div class="desc">全球佛教徒人口变迁的多口径数据分析——大乘、上座部、藏传三大传统的地域消长与西方传播趋势</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -1011,6 +1022,28 @@ async function renderForestMonkReader(key) {
       <div class="cat-header"><h2>${m.icon} ${esc(m.title)}</h2><div class="cat-en">${esc(m.title_en)}</div></div>
       <div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>
       ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+let _buddhistTrendsMdCache = null;
+async function renderResearchBuddhistTrends() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📈 佛教发展趋势</h2><div class="cat-en">Global Buddhist Population Trends</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_buddhistTrendsMdCache) {
+      const res = await fetch('research/buddhist-trends.md');
+      _buddhistTrendsMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_buddhistTrendsMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
+      <div class="cat-header"><h2>📈 佛教发展趋势</h2><div class="cat-en">Global Buddhist Population Trends</div></div>
+      ${body}`;
+    renderMermaidDiagrams();
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
@@ -1494,9 +1527,11 @@ function mdToHtml(md) {
     if (trimmed === '---') { flushList(); html += '<hr>'; i++; continue; }
 
     // Fenced code block: ``` ... ``` (used here for quoted scripture verses
-    // and numbered lists that want to keep their exact line breaks)
+    // and numbered lists that want to keep their exact line breaks). A
+    // ```mermaid fence instead renders as a live diagram via mermaid.js.
     if (trimmed.startsWith('```')) {
       flushList();
+      const lang = trimmed.slice(3).trim();
       const codeLines = [];
       i++;
       while (i < lines.length && !lines[i].trim().startsWith('```')) {
@@ -1504,7 +1539,11 @@ function mdToHtml(md) {
         i++;
       }
       i++; // skip closing fence
-      html += `<div class="md-scripture">${codeLines.map(l => inlineMd(l)).join('<br>')}</div>`;
+      if (lang === 'mermaid') {
+        html += `<pre class="mermaid">${esc(codeLines.join('\n'))}</pre>`;
+      } else {
+        html += `<div class="md-scripture">${codeLines.map(l => inlineMd(l)).join('<br>')}</div>`;
+      }
       continue;
     }
 
@@ -1990,6 +2029,13 @@ function buildReaderBody() {
 
 // Start
 init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+  function renderMermaidDiagrams() {
+    if (window.mermaid) mermaid.run({ querySelector: '.mermaid' });
+  }
 </script>
 </body>
 </html>
