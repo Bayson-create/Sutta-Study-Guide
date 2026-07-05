@@ -530,6 +530,10 @@ function route() {
     renderPsychBicameral();
   } else if (hash === '#/research/psychology/carnegie') {
     renderPsychCarnegie();
+  } else if (hash === '#/research/forest-monks') {
+    renderForestMonksHome();
+  } else if (hash.startsWith('#/research/forest-monks/')) {
+    renderForestMonkReader(hash.slice('#/research/forest-monks/'.length));
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -642,6 +646,11 @@ function renderResearchHome() {
     <span class="icon">🧠</span>
     <div class="title">对心理学和成功学的反思</div>
     <div class="desc">阿德勒个体心理学、《学会提问》批判性思维、卡耐基处世哲学，逐章结合巴利三藏与《清净道论》评析</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/forest-monks'">
+    <span class="icon">🌲</span>
+    <div class="title">森林比丘的修行之道</div>
+    <div class="desc">《阿姜曼正传》《美琪乔》《沙门》《帕蒂帕达》逐章总结——泰国森林传统头陀行者的修证历程</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -947,6 +956,60 @@ async function renderPsychBicameral() {
     const body = `<div class="md-reader">${mdWithFootnotes(_psychBicameralMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>
       <div class="cat-header"><h2>🧩 双脑人意识的起源</h2><div class="cat-en">The Origin of Consciousness in the Breakdown of the Bicameral Mind</div></div>
+      ${body}`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: FOREST MONKS ===
+const FOREST_MONKS = [
+  { key: 'mun', icon: '🕯️', title: '阿姜曼', title_en: 'Ajaan Mun', desc: '《阿姜曼正传》逐章总结——泰国森林传统开创者的修证历程', file: 'research/forest-monks/mun-biography-summary.md', pdf: 'research/forest-monks/pdfs/mun.pdf' },
+  { key: 'mck', icon: '🌸', title: '美琪乔', title_en: 'Maechee Kaew', desc: '《美琪乔——一位阿罗汉尼修道证果之旅》章节总结——森林传统女性修行者的证悟历程', file: 'research/forest-monks/maechee-koi-summary.md', pdf: 'research/forest-monks/pdfs/mck.pdf' },
+  { key: 'samana', icon: '🚶', title: '沙门', title_en: 'Samana', desc: '《沙门》（Samana）完整章节总结——头陀行者的林居生活与修行纪实', file: 'research/forest-monks/samana-summary.md', pdf: 'research/forest-monks/pdfs/sasamma.pdf' },
+  { key: 'patipada', icon: '🧘', title: '帕蒂帕达', title_en: 'Paṭipadā', desc: '《帕蒂帕达：阿姜曼的修行之道》全书章节总结——阿姜曼弟子群像与修行道路', file: 'research/forest-monks/patipada-summary.md', pdf: 'research/forest-monks/pdfs/patipada.pdf' },
+];
+
+function renderForestMonksHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🌲 森林比丘的修行之道</h2><div class="cat-en">The Forest Monks' Path of Practice</div></div>`;
+  html += '<div class="cards">';
+  FOREST_MONKS.forEach(m => {
+    html += `<div class="research-item-card" onclick="location.hash='#/research/forest-monks/${m.key}'">
+      <span class="icon">${m.icon}</span>
+      <div class="title">${esc(m.title)}</div>
+      <div class="desc">${esc(m.desc)}</div>
+    </div>`;
+  });
+  html += '</div>';
+  html += `<div class="research-note">
+    《阿姜曼正传》《美琪乔——一位阿罗汉尼修道证果之旅》《沙门》《帕蒂帕达：阿姜曼的修行之道》中文版原著，
+    由 <a href="https://forestdhamma.org/books/%e4%b8%ad%e6%96%87-chinese-books/" target="_blank">Forest Dhamma Publications 中文书籍</a> 授权公开发布。
+    版权归原作者与 Forest Dhamma Publications 所有，本站在此收录仅供个人学习交流引用，如涉及权利问题请联系移除。
+  </div>`;
+  app.innerHTML = html;
+}
+
+const _forestMonkMdCache = {};
+async function renderForestMonkReader(key) {
+  const m = FOREST_MONKS.find(x => x.key === key);
+  if (!m) { renderForestMonksHome(); return; }
+
+  let html = `<button class="back-btn" onclick="location.hash='#/research/forest-monks'">← 返回森林比丘的修行之道</button>`;
+  html += `<div class="cat-header"><h2>${m.icon} ${esc(m.title)}</h2><div class="cat-en">${esc(m.title_en)}</div></div>`;
+  html += `<div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_forestMonkMdCache[key]) {
+      const res = await fetch(m.file);
+      _forestMonkMdCache[key] = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_forestMonkMdCache[key])}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/forest-monks'">← 返回森林比丘的修行之道</button>
+      <div class="cat-header"><h2>${m.icon} ${esc(m.title)}</h2><div class="cat-en">${esc(m.title_en)}</div></div>
+      <div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
