@@ -2033,8 +2033,18 @@ init();
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
-  function renderMermaidDiagrams() {
-    if (window.mermaid) mermaid.run({ querySelector: '.mermaid' });
+  // On a full page load landing directly on a hash with mermaid diagrams,
+  // route() can fire and fetch the markdown before this CDN script tag
+  // (further down the document) has finished loading, so wait for it here
+  // rather than assuming it's already ready.
+  async function renderMermaidDiagrams() {
+    for (let tries = 0; !window.mermaid && tries < 50; tries++) {
+      await new Promise(r => setTimeout(r, 100));
+    }
+    if (window.mermaid) {
+      mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+      mermaid.run({ querySelector: '.mermaid' });
+    }
   }
 </script>
 </body>
