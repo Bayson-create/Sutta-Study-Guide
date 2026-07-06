@@ -540,6 +540,10 @@ function route() {
     renderForestMonkReader(hash.slice('#/research/forest-monks/'.length));
   } else if (hash === '#/research/buddhist-trends') {
     renderResearchBuddhistTrends();
+  } else if (hash === '#/research/theravada-modern') {
+    renderTheravadaModernHome();
+  } else if (hash.startsWith('#/research/theravada-modern/')) {
+    renderTheravadaModernReader(hash.slice('#/research/theravada-modern/'.length));
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -662,6 +666,11 @@ function renderResearchHome() {
     <span class="icon">📈</span>
     <div class="title">佛教发展趋势</div>
     <div class="desc">全球佛教徒人口变迁的多口径数据分析——大乘、上座部、藏传三大传统的地域消长与西方传播趋势</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/theravada-modern'">
+    <span class="icon">📘</span>
+    <div class="title">上座部现代作品</div>
+    <div class="desc">《八正道》（菩提比丘）与《念住：通往证悟的直接之道》（无著比丘）章节总结</div>
   </div>`;
   html += '</div>';
   html += `<div class="research-note">
@@ -1044,6 +1053,66 @@ async function renderResearchBuddhistTrends() {
       <div class="cat-header"><h2>📈 佛教发展趋势</h2><div class="cat-en">Global Buddhist Population Trends</div></div>
       ${body}`;
     renderMermaidDiagrams();
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: THERAVADA MODERN WORKS ===
+const THERAVADA_MODERN_WORKS = [
+  {
+    key: 'noble-eightfold-path', icon: '☸️', title: '八正道', title_en: 'The Noble Eightfold Path — Way to the End of Suffering',
+    desc: '菩提比丘（Bhikkhu Bodhi）著，趣向苦灭的道路，逐章总结',
+    file: 'research/theravada-modern/noble-eightfold-path-summary.md',
+    pdf: 'research/theravada-modern/pdfs/noble-eightfold-path.pdf',
+    copyright: '《八正道：趣向苦灭的道路》由菩提比丘（Bhikkhu Bodhi）著，香光书乡编译组译，香光书乡出版社出版。版权归原作者与出版社所有，本站收录仅供个人学习交流引用。',
+  },
+  {
+    key: 'satipatthana-direct-path', icon: '🧘', title: '念住：通往证悟的直接之道', title_en: 'Satipaṭṭhāna — The Direct Path to Realization',
+    desc: '无著比丘（Bhikkhu Anālayo）著，逐章总结',
+    file: 'research/theravada-modern/satipatthana-direct-path-summary.md',
+    pdf: 'research/theravada-modern/pdfs/satipatthana-direct-path.pdf',
+    copyright: '《念住：通往证悟的直接之道》Satipaṭṭhāna: The Direct Path to Realization，© 2003 by Bhikkhu Anālayo；中译本 © 2012 香光书乡出版社（嘉义香光书乡，2013），香光书乡编译组译。原书声明允许非商业性、内容不变的电子版复制传播；本站收录仅供个人学习交流引用，版权归原作者与出版社所有。',
+  },
+];
+
+function renderTheravadaModernHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📘 上座部现代作品</h2><div class="cat-en">Modern Theravāda Works</div></div>`;
+  html += '<div class="cards">';
+  THERAVADA_MODERN_WORKS.forEach(w => {
+    html += `<div class="research-item-card" onclick="location.hash='#/research/theravada-modern/${w.key}'">
+      <span class="icon">${w.icon}</span>
+      <div class="title">${esc(w.title)}</div>
+      <div class="desc">${esc(w.desc)}</div>
+    </div>`;
+  });
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+const _theravadaModernMdCache = {};
+async function renderTheravadaModernReader(key) {
+  const w = THERAVADA_MODERN_WORKS.find(x => x.key === key);
+  if (!w) { renderTheravadaModernHome(); return; }
+
+  let html = `<button class="back-btn" onclick="location.hash='#/research/theravada-modern'">← 返回上座部现代作品</button>`;
+  html += `<div class="cat-header"><h2>${w.icon} ${esc(w.title)}</h2><div class="cat-en">${esc(w.title_en)}</div></div>`;
+  html += `<div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${w.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_theravadaModernMdCache[key]) {
+      const res = await fetch(w.file);
+      _theravadaModernMdCache[key] = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_theravadaModernMdCache[key])}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/theravada-modern'">← 返回上座部现代作品</button>
+      <div class="cat-header"><h2>${w.icon} ${esc(w.title)}</h2><div class="cat-en">${esc(w.title_en)}</div></div>
+      <div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${w.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>
+      ${body}
+      <div class="research-note">${esc(w.copyright)}</div>`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
