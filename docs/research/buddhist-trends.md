@@ -52,6 +52,21 @@ Pew 的解释很清楚：佛教下降主要来自两个因素。一是东亚佛�
 
 Pew 2025 还指出，2020 年全球佛教徒中约 98% 居住在亚太地区。亚洲以外虽然有增长，但基数太小，无法抵消东亚下降。[1]
 
+### “十年增长率”图片数据核对与修正版
+
+图片中的表格有两个核心问题。第一，它把“约 2010 年”到“约 2020-2026 年”混称为“十年周期”，但 2010 到 2026 是 16 年；如果用 2026 年估计数，CAGR 不能按 10 年计算。第二，上座部佛教和大乘佛教的数据不是各国普查直接给出的宗派人口，必须标为结构性估算；尤其“上座部 1.35 亿到 1.88 亿、增长 39.2%”和“大乘 3.42 亿到 3.12 亿”都不稳妥，因为 Pew 2025 的全球佛教徒总数本身是 2010 年约 3.43 亿、2020 年约 3.24 亿。[1]
+
+更谨慎的修正版如下。为保持可比性，主表统一采用 2010-2020 口径；宗派拆分只作为结构性估算，不写成官方普查。
+
+|宗教/传统|2010 基准人口|2020 近期人口|2010-2020 增长率|2010-2020 CAGR|数据可靠性与修正说明|
+|---|---:|---:|---:|---:|---|
+|伊斯兰教|约 16.0 亿|约 20.2 亿|约 +26%|约 2.4%|Pew 2025 显示伊斯兰教是 2010-2020 年增长最快的主要宗教之一；若使用 2026 年约 21 亿估计，不能再称为十年周期。[23]|
+|基督教|约 21.7 亿|约 22.7 亿-23.8 亿|约 +5%-10%|约 0.5%-1.0%|基督教仍是最大宗教，但其全球占比下降；原图 24.0 亿更接近 2020 后估计或宽口径，不宜和 2010 做“十年”直接比较。[23]|
+|上座部/南传佛教|约 1.23 亿-1.40 亿|约 1.50 亿-1.60 亿|约 +14%-30%|约 1.3%-2.7%|这是结构性估算。若只算泰国、缅甸、斯里兰卡、柬埔寨、老挝，增长主要来自人口自然增长；若把印度新佛教、云南南传和海外内观/移民社群也纳入，口径会更高，但不能称为“信仰认同爆发”。[1][22]|
+|汉传/东亚大乘佛教|约 1.8 亿上下|约 1.45 亿-1.55 亿|约 -15%-20%|约 -1.6%-2.2%|原图“大乘 3.42 亿到 3.12 亿”不成立，因为 3.42 亿接近 Pew 2025 的全球佛教徒总数，不是大乘佛教人口。下降主要来自中国、日本、韩国等东亚正式身份流失。[1][22]|
+
+总结：原图的方向判断有一部分是对的，即伊斯兰教增长快、基督教温和增长但占比承压、东亚大乘正式身份下降、上座部相对更稳。但原图把不同年份、不同口径、不同宗派估算混在一张表里，导致 CAGR 和增长率被放大。修正后，更可靠的表达是：2010-2020 年全球佛教总人数下降约 5%，下降主要由东亚大乘身份流失驱动；上座部/南传并非“爆发式皈依增长”，而是依靠东南亚人口基本盘、印度新佛教和海外移民/禅修网络，呈现相对稳定或温和上升。
+
 ### 重要修正：全球第一大佛教国家取决于口径
 
 旧口径下，Pew 2012 曾估计全球约一半佛教徒在中国，全球佛教徒总量约 4.88 亿。[2] 但 Pew 2025 的 2020 正式身份口径中，泰国约 6800 万佛教徒，占全国约 94%；中国约 5300 万，占全国约 4%。[1]
@@ -87,6 +102,8 @@ Pew 2025 还指出，2020 年全球佛教徒中约 98% 居住在亚太地区。�
 |大洋洲|2010：约 60 万上下|2020：约 65 万-70 万|温和增长|澳大利亚和新西兰的亚洲移民推动增长。|
 |拉丁美洲|2010：约 40 万上下|2020：约 40 万-50 万|大致稳定或小幅增长|日本移民后裔和本土化日本佛教为主体。|
 |非洲|2010：约 20 万上下|2020：约 25 万|小幅增长|基数很小，主要由南亚、斯里兰卡、华人和毛里求斯相关社群构成。|
+
+图表颜色说明：Mermaid 会按渲染器主题自动给不同曲线分配颜色，颜色本身没有固定宗教或地区含义；阅读时以每张图前的“图例”表和图中曲线名称为准。
 
 图例：
 
@@ -825,3 +842,5 @@ Pew 2025 估计，欧洲佛教徒从 2010 到 2020 年增长约 26%，到 2020 �
 [21] State Council Information Office of the People's Republic of China. White papers and related religious affairs materials on freedom of religious belief, Tibetan Buddhism, and religion in Tibetan areas; commonly cited figures include about 1,700 Tibetan Buddhist venues and 46,000 monks and nuns in the Tibet Autonomous Region, and broader Tibetan-area institutional estimates. https://english.www.gov.cn/archive/white_paper/
 
 [22] Peter Harvey. *An Introduction to Buddhism: Teachings, History and Practices*, 2nd ed., Cambridge University Press, 2013. Commonly cited 2010 structure: East Asian Mahayana about 53%, Theravada about 36%, Vajrayana about 6% of Buddhists; useful as a tradition-structure baseline rather than an official census.
+
+[23] Pew Research Center. 2025. *How the Global Religious Landscape Changed From 2010 to 2020*; global Christian and Muslim population change, including Islam's faster growth and Christianity's declining share of world population. https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
