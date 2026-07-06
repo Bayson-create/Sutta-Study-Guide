@@ -990,6 +990,13 @@ const FOREST_MONKS = [
   { key: 'patipada', icon: '🧘', title: '帕蒂帕达', title_en: 'Paṭipadā', desc: '《帕蒂帕达：阿姜曼的修行之道》全书章节总结——阿姜曼弟子群像与修行道路', file: 'research/forest-monks/patipada-summary.md', pdf: 'research/forest-monks/pdfs/patipada.pdf' },
 ];
 
+const FOREST_DHAMMA_WORKS = [
+  { key: 'forest-dhamma', icon: '🌳', title: '森林达摩', title_en: 'Forest Dhamma', desc: '《森林达摩》全书总结', file: 'research/forest-monks/forest-dhamma/forest-dhamma-summary.md' },
+  { key: 'inner-quality', icon: '💎', title: '内在的品质', title_en: 'A Life of Inner Quality', desc: '《内在的品质》全书总结', file: 'research/forest-monks/forest-dhamma/inner-quality-summary.md' },
+  { key: 'boowa-in-london', icon: '🇬🇧', title: '阿姜摩诃布瓦在伦敦', title_en: 'Ajaan Mahā Boowa in London', desc: '《阿姜摩诃布瓦在伦敦》全书总结', file: 'research/forest-monks/forest-dhamma/boowa-in-london-summary.md' },
+  { key: 'amata-dhamma', icon: '♾️', title: '不死法', title_en: 'Amata Dhamma', desc: '《不死法》——六篇达摩开示，全书总结', file: 'research/forest-monks/forest-dhamma/amata-dhamma-summary.md' },
+];
+
 function renderForestMonksHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
   html += `<div class="cat-header"><h2>🌲 森林比丘的修行之道</h2><div class="cat-en">The Forest Monks' Path of Practice</div></div>`;
@@ -1007,17 +1014,31 @@ function renderForestMonksHome() {
     由 <a href="https://forestdhamma.org/books/%e4%b8%ad%e6%96%87-chinese-books/" target="_blank">Forest Dhamma Publications 中文书籍</a> 授权公开发布。
     版权归原作者与 Forest Dhamma Publications 所有，本站在此收录仅供个人学习交流引用，如涉及权利问题请联系移除。
   </div>`;
+
+  html += '<div class="research-divider">森林法</div>';
+  html += '<div class="cards">';
+  FOREST_DHAMMA_WORKS.forEach(m => {
+    html += `<div class="research-item-card" onclick="location.hash='#/research/forest-monks/${m.key}'">
+      <span class="icon">${m.icon}</span>
+      <div class="title">${esc(m.title)}</div>
+      <div class="desc">${esc(m.desc)}</div>
+    </div>`;
+  });
+  html += '</div>';
+
   app.innerHTML = html;
 }
 
 const _forestMonkMdCache = {};
 async function renderForestMonkReader(key) {
-  const m = FOREST_MONKS.find(x => x.key === key);
+  const m = FOREST_MONKS.find(x => x.key === key) || FOREST_DHAMMA_WORKS.find(x => x.key === key);
   if (!m) { renderForestMonksHome(); return; }
+
+  const pdfLink = m.pdf ? `<div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>` : '';
 
   let html = `<button class="back-btn" onclick="location.hash='#/research/forest-monks'">← 返回森林比丘的修行之道</button>`;
   html += `<div class="cat-header"><h2>${m.icon} ${esc(m.title)}</h2><div class="cat-en">${esc(m.title_en)}</div></div>`;
-  html += `<div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>`;
+  html += pdfLink;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
   app.innerHTML = html;
 
@@ -1029,7 +1050,7 @@ async function renderForestMonkReader(key) {
     const body = `<div class="md-reader">${mdWithFootnotes(_forestMonkMdCache[key])}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/forest-monks'">← 返回森林比丘的修行之道</button>
       <div class="cat-header"><h2>${m.icon} ${esc(m.title)}</h2><div class="cat-en">${esc(m.title_en)}</div></div>
-      <div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${m.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>
+      ${pdfLink}
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
