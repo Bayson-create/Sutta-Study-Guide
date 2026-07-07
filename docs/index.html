@@ -1789,6 +1789,10 @@ function mdToHtml(md) {
 function inlineMd(text) {
   let t = esc(text);
   t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // _italic_ — require a non-word char (or start) before the opening "_" and
+  // a non-word char (or end) after the closing one, so this doesn't fire
+  // inside snake_case_identifiers or file_names_like_this.
+  t = t.replace(/(^|[^\w])_([^_\n]+)_(?!\w)/g, (m, pre, content) => `${pre}<em>${content}</em>`);
   t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, label, url) => `<a href="${url}" target="_blank">${label}</a>`);
   return t;
 }
