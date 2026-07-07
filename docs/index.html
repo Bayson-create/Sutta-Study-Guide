@@ -1793,6 +1793,9 @@ function inlineMd(text) {
   // a non-word char (or end) after the closing one, so this doesn't fire
   // inside snake_case_identifiers or file_names_like_this.
   t = t.replace(/(^|[^\w])_([^_\n]+)_(?!\w)/g, (m, pre, content) => `${pre}<em>${content}</em>`);
+  // *italic* — single asterisks left after **bold** has already consumed all
+  // double-asterisk pairs above.
+  t = t.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
   t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, label, url) => `<a href="${url}" target="_blank">${label}</a>`);
   return t;
 }
