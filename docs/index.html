@@ -544,6 +544,10 @@ function route() {
     renderTheravadaModernHome();
   } else if (hash.startsWith('#/research/theravada-modern/')) {
     renderTheravadaModernReader(hash.slice('#/research/theravada-modern/'.length));
+  } else if (hash === '#/research/great-chronicles') {
+    renderGreatChroniclesHome();
+  } else if (hash.startsWith('#/research/great-chronicles/')) {
+    renderGreatChroniclesReader(hash.slice('#/research/great-chronicles/'.length));
   } else if (hash === '#/research/vism') {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
@@ -606,6 +610,11 @@ function renderResearchHome() {
     <span class="icon">📜</span>
     <div class="title">全面佛法概念解说</div>
     <div class="desc">二十八个核心法义，从正见、四圣谛、缘起到涅槃，系统整理上座部佛教知识体系</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/great-chronicles'">
+    <span class="icon">📚</span>
+    <div class="title">大佛史</div>
+    <div class="desc">《大佛史》（The Great Chronicles of the Buddhas）全书内容</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/timeline'">
     <span class="icon">🗺️</span>
@@ -1095,6 +1104,13 @@ const THERAVADA_MODERN_WORKS = [
     pdf: 'research/theravada-modern/pdfs/satipatthana-direct-path.pdf',
     copyright: '《念住：通往证悟的直接之道》Satipaṭṭhāna: The Direct Path to Realization，© 2003 by Bhikkhu Anālayo；中译本 © 2012 香光书乡出版社（嘉义香光书乡，2013），香光书乡编译组译。原书声明允许非商业性、内容不变的电子版复制传播；本站收录仅供个人学习交流引用，版权归原作者与出版社所有。',
   },
+  {
+    key: 'in-the-buddhas-words', icon: '📖', title: '佛陀的话语：巴利文经典文集', title_en: 'In the Buddha\'s Words — An Anthology of Discourses from the Pali Canon',
+    desc: '菩提比丘（Bhikkhu Bodhi）编译，巴利三藏主题文集，逐章总结',
+    file: 'research/theravada-modern/in-the-buddhas-words-summary.md',
+    pdf: 'research/theravada-modern/pdfs/in-the-buddhas-words.pdf',
+    copyright: '《佛陀的话语——巴利文经典文集》In the Buddha\'s Words: An Anthology of Discourses from the Pali Canon，由菩提比丘（Bhikkhu Bodhi）编译。版权归原作者所有，本站收录仅供个人学习交流引用，如涉及权利问题请联系移除。',
+  },
 ];
 
 function renderTheravadaModernHome() {
@@ -1134,6 +1150,54 @@ async function renderTheravadaModernReader(key) {
       <div style="text-align:right;margin-bottom:12px"><a class="back-btn" href="${w.pdf}" target="_blank">📄 查看 PDF 原著 ↗</a></div>
       ${body}
       <div class="research-note">${esc(w.copyright)}</div>`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: GREAT CHRONICLES OF THE BUDDHAS ===
+const GREAT_CHRONICLES_WORKS = [
+  {
+    key: 'great-chronicles', icon: '📚', title: '大佛史', title_en: 'The Great Chronicles of the Buddhas',
+    desc: '《大佛史》全书内容',
+    file: 'research/great-chronicles/great-chronicles-of-the-buddhas.md',
+  },
+];
+
+function renderGreatChroniclesHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📚 大佛史</h2><div class="cat-en">The Great Chronicles of the Buddhas</div></div>`;
+  html += '<div class="cards">';
+  GREAT_CHRONICLES_WORKS.forEach(w => {
+    html += `<div class="research-item-card" onclick="location.hash='#/research/great-chronicles/${w.key}'">
+      <span class="icon">${w.icon}</span>
+      <div class="title">${esc(w.title)}</div>
+      <div class="desc">${esc(w.desc)}</div>
+    </div>`;
+  });
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+const _greatChroniclesMdCache = {};
+async function renderGreatChroniclesReader(key) {
+  const w = GREAT_CHRONICLES_WORKS.find(x => x.key === key);
+  if (!w) { renderGreatChroniclesHome(); return; }
+
+  let html = `<button class="back-btn" onclick="location.hash='#/research/great-chronicles'">← 返回大佛史</button>`;
+  html += `<div class="cat-header"><h2>${w.icon} ${esc(w.title)}</h2><div class="cat-en">${esc(w.title_en)}</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_greatChroniclesMdCache[key]) {
+      const res = await fetch(w.file);
+      _greatChroniclesMdCache[key] = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_greatChroniclesMdCache[key])}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/great-chronicles'">← 返回大佛史</button>
+      <div class="cat-header"><h2>${w.icon} ${esc(w.title)}</h2><div class="cat-en">${esc(w.title_en)}</div></div>
+      ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
