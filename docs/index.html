@@ -117,6 +117,7 @@ a:hover { text-decoration: underline; }
 }
 .md-reader blockquote p { margin-bottom: 6px; }
 .md-reader blockquote p:last-child { margin-bottom: 0; }
+.md-reader blockquote .callout-title { font-style: normal; font-weight: 700; color: var(--accent); }
 .md-formula {
   margin: 14px 0 20px; padding: 14px 18px; background: var(--card-bg); border: 1px dashed var(--accent-light);
   border-radius: var(--radius); font-size: 0.92em; line-height: 2; text-align: center; color: var(--text);
@@ -592,7 +593,6 @@ function renderHome() {
   html += '</div>';
 
   html += '<div class="research-divider">个人研究成果</div>';
-  html += '<div class="cards" style="margin:10px 0 30px">';
   html += `<div class="research-card" onclick="location.hash='#/research'">
     <span class="icon">🔭</span>
     <div>
@@ -600,14 +600,6 @@ function renderHome() {
       <div class="research-card-sub">Personal Research &mdash; 佛法概念解说 · 佛教历史时间轴</div>
     </div>
   </div>`;
-  html += `<div class="research-card" onclick="location.hash='#/research/abhidhamma-comparison'">
-    <span class="icon">📐</span>
-    <div>
-      <div class="research-card-title">三家法体系对应研究</div>
-      <div class="research-card-sub">唯识百法／有部七十五法／上座部阿毗达摩 · 综述与逐项对应矩阵</div>
-    </div>
-  </div>`;
-  html += '</div>';
 
   app.innerHTML = html;
 }
@@ -710,11 +702,6 @@ function renderResearchHome() {
 let _abhidhammaOverviewMdCache = null;
 let _abhidhammaMatrixMdCache = null;
 
-// Insert an anchor in the raw matrix markdown so [[wiki-link]] can scroll to it
-function abhidhammaMatrixMdWithAnchor(md) {
-  return md.replace(/^(# .+)$/m, '<span id="abhidhamma-matrix"></span>\n$1');
-}
-
 async function renderAbhidhammaComparison() {
   let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
   html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda</div></div>`;
@@ -731,9 +718,10 @@ async function renderAbhidhammaComparison() {
       _abhidhammaMatrixMdCache = await res.text();
     }
 
-    // Frontmatter is stripped globally in mdToHtml(); wiki-links parsed globally in inlineMd()
+    // Frontmatter is stripped globally in mdToHtml(); wiki-links parsed globally in
+    // inlineMd(), resolving to whichever heading's own id matches (see slugifyHeading()).
     const overviewHtml = mdWithFootnotes(_abhidhammaOverviewMdCache);
-    const matrixHtml = mdWithFootnotes(abhidhammaMatrixMdWithAnchor(_abhidhammaMatrixMdCache));
+    const matrixHtml = mdWithFootnotes(_abhidhammaMatrixMdCache);
 
     html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
     html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda Paramattha Dhammas</div></div>`;
@@ -1728,11 +1716,18 @@ function toggleTimelineFullscreen() {
   }
 }
 
+// Derives a stable heading id from its raw markdown text, used both to tag
+// every rendered h1-h4 (so any heading is scroll-to-able) and to resolve
+// [[wiki-link]] targets, so the two always agree without a manual id.
+function slugifyHeading(text) {
+  return text.replace(/[*_`]/g, '').trim().replace(/\s+/g, '-').replace(/[^\w一-鿿-]/g, '');
+}
+
 // Wiki-link map: [[key]] → route/anchor with display label
 const WIKI_LINKS = {
   '上座部究竟法——有部七十五法——唯识百法逐项对应矩阵': {
     label: '对应矩阵',
-    anchorId: 'abhidhamma-matrix',
+    anchorId: slugifyHeading('上座部究竟法——有部七十五法——唯识百法逐项对应矩阵'),
   },
 };
 
@@ -1785,16 +1780,16 @@ function mdToHtml(md) {
     }
 
     const h4 = trimmed.match(/^####\s+(.+)/);
-    if (h4) { flushList(); html += `<h4>${inlineMd(h4[1])}</h4>`; i++; continue; }
+    if (h4) { flushList(); html += `<h4 id="${slugifyHeading(h4[1])}">${inlineMd(h4[1])}</h4>`; i++; continue; }
 
     const h1 = trimmed.match(/^#\s+(.+)/);
-    if (h1) { flushList(); html += `<h1>${inlineMd(h1[1])}</h1>`; i++; continue; }
+    if (h1) { flushList(); html += `<h1 id="${slugifyHeading(h1[1])}">${inlineMd(h1[1])}</h1>`; i++; continue; }
 
     const h3 = trimmed.match(/^###\s+(.+)/);
-    if (h3) { flushList(); html += `<h3>${inlineMd(h3[1])}</h3>`; i++; continue; }
+    if (h3) { flushList(); html += `<h3 id="${slugifyHeading(h3[1])}">${inlineMd(h3[1])}</h3>`; i++; continue; }
 
     const h2 = trimmed.match(/^##\s+(.+)/);
-    if (h2) { flushList(); html += `<h2>${inlineMd(h2[1])}</h2>`; i++; continue; }
+    if (h2) { flushList(); html += `<h2 id="${slugifyHeading(h2[1])}">${inlineMd(h2[1])}</h2>`; i++; continue; }
 
     // Display formula: a single line wrapped in $$...$$, written with LaTeX
     // \textbf/\underbrace/\text macros. No math renderer here, so unwrap the
@@ -1810,7 +1805,7 @@ function mdToHtml(md) {
       i++; continue;
     }
 
-    // Blockquote (Obsidian callout-style ">" quote lines)
+    // Blockquote, including Obsidian callouts ("> [!type] Title" as the first line)
     if (trimmed.startsWith('>')) {
       flushList();
       const quoteLines = [];
@@ -1818,7 +1813,16 @@ function mdToHtml(md) {
         quoteLines.push(lines[i].trim().replace(/^>\s?/, ''));
         i++;
       }
-      html += '<blockquote>' + quoteLines.filter(l => l).map(l => `<p>${inlineMd(l)}</p>`).join('') + '</blockquote>';
+      const filtered = quoteLines.filter(l => l);
+      const calloutMatch = filtered[0] && filtered[0].match(/^\[!(\w+)\]\s*(.*)$/);
+      let bodyHtml;
+      if (calloutMatch) {
+        const title = calloutMatch[2] || calloutMatch[1];
+        bodyHtml = `<p class="callout-title">${inlineMd(title)}</p>` + filtered.slice(1).map(l => `<p>${inlineMd(l)}</p>`).join('');
+      } else {
+        bodyHtml = filtered.map(l => `<p>${inlineMd(l)}</p>`).join('');
+      }
+      html += '<blockquote>' + bodyHtml + '</blockquote>';
       continue;
     }
 
