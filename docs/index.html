@@ -508,6 +508,8 @@ function route() {
     renderCategory(key);
   } else if (hash === '#/research') {
     renderResearchHome();
+  } else if (hash === '#/research/abhidhamma-comparison') {
+    renderAbhidhammaComparison();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -590,6 +592,7 @@ function renderHome() {
   html += '</div>';
 
   html += '<div class="research-divider">个人研究成果</div>';
+  html += '<div class="cards" style="margin:10px 0 30px">';
   html += `<div class="research-card" onclick="location.hash='#/research'">
     <span class="icon">🔭</span>
     <div>
@@ -597,6 +600,14 @@ function renderHome() {
       <div class="research-card-sub">Personal Research &mdash; 佛法概念解说 · 佛教历史时间轴</div>
     </div>
   </div>`;
+  html += `<div class="research-card" onclick="location.hash='#/research/abhidhamma-comparison'">
+    <span class="icon">📐</span>
+    <div>
+      <div class="research-card-title">三家法体系对应研究</div>
+      <div class="research-card-sub">唯识百法／有部七十五法／上座部阿毗达摩 · 综述与逐项对应矩阵</div>
+    </div>
+  </div>`;
+  html += '</div>';
 
   app.innerHTML = html;
 }
@@ -606,6 +617,11 @@ function renderResearchHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🔭 个人研究成果</h2><div class="cat-en">Personal Research</div></div>`;
   html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/abhidhamma-comparison'">
+    <span class="icon">📐</span>
+    <div class="title">唯识百法／有部七十五法／上座部阿毗达摩对应研究</div>
+    <div class="desc">三个佛教法数体系的标准分类与逐项对照矩阵——52心所、89心、28色对应分析、北传反向查漏表，以及严谨的比较方法论</div>
+  </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/concepts'">
     <span class="icon">📜</span>
     <div class="title">全面佛法概念解说</div>
@@ -688,6 +704,52 @@ function renderResearchHome() {
     本站在此收录仅供个人学习交流引用，版权归原作者与相关机构所有，如涉及权利问题请联系移除。
   </div>`;
   app.innerHTML = html;
+}
+
+// === RESEARCH: ABHIDHAMMA COMPARISON (综述 + 矩阵) ===
+let _abhidhammaOverviewMdCache = null;
+let _abhidhammaMatrixMdCache = null;
+
+// Insert an anchor in the raw matrix markdown so [[wiki-link]] can scroll to it
+function abhidhammaMatrixMdWithAnchor(md) {
+  return md.replace(/^(# .+)$/m, '<span id="abhidhamma-matrix"></span>\n$1');
+}
+
+async function renderAbhidhammaComparison() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_abhidhammaOverviewMdCache) {
+      const res = await fetch('research/abhidhamma-comparison/overview.md');
+      _abhidhammaOverviewMdCache = await res.text();
+    }
+    if (!_abhidhammaMatrixMdCache) {
+      const res = await fetch('research/abhidhamma-comparison/matrix.md');
+      _abhidhammaMatrixMdCache = await res.text();
+    }
+
+    // Frontmatter is stripped globally in mdToHtml(); wiki-links parsed globally in inlineMd()
+    const overviewHtml = mdWithFootnotes(_abhidhammaOverviewMdCache);
+    const matrixHtml = mdWithFootnotes(abhidhammaMatrixMdWithAnchor(_abhidhammaMatrixMdCache));
+
+    html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+    html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda Paramattha Dhammas</div></div>`;
+
+    // Overview section (second file, placed first)
+    html += `<div class="research-divider">综述与比较方法论</div>`;
+    html += `<div class="md-reader">${overviewHtml}</div>`;
+
+    // Matrix section (first file, placed second)
+    html += `<div class="research-divider" style="margin-top:48px">对应矩阵</div>`;
+    html += `<div class="md-reader">${matrixHtml}</div>`;
+
+    app.innerHTML = html;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
 }
 
 // === RESEARCH: CONCEPTS READER ===
@@ -1666,8 +1728,21 @@ function toggleTimelineFullscreen() {
   }
 }
 
+// Wiki-link map: [[key]] → route/anchor with display label
+const WIKI_LINKS = {
+  '上座部究竟法——有部七十五法——唯识百法逐项对应矩阵': {
+    label: '对应矩阵',
+    anchorId: 'abhidhamma-matrix',
+  },
+};
+
 // === Minimal Markdown -> HTML converter ===
 function mdToHtml(md) {
+  // Strip YAML frontmatter (---...---) at the start of the file
+  if (md.startsWith('---')) {
+    const end = md.indexOf('\n---\n', 3);
+    if (end !== -1) md = md.slice(end + 5);
+  }
   const lines = md.split('\n');
   let html = '';
   let i = 0;
@@ -1805,6 +1880,15 @@ function inlineMd(text) {
   // double-asterisk pairs above.
   t = t.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
   t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, label, url) => `<a href="${url}" target="_blank">${label}</a>`);
+  // Obsidian [[wiki-link]]: map to route or scroll-to-anchor
+  t = t.replace(/\[\[([^\]]+)\]\]/g, (m, key) => {
+    const entry = WIKI_LINKS[key];
+    if (!entry) return m;
+    if (entry.anchorId) {
+      return `<a href="#${entry.anchorId}" class="wiki-link" onclick="var el=document.getElementById('${entry.anchorId}');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});return false">${entry.label}</a>`;
+    }
+    return `<a href="${entry.route}" class="wiki-link">${entry.label}</a>`;
+  });
   return t;
 }
 
