@@ -509,8 +509,12 @@ function route() {
     renderCategory(key);
   } else if (hash === '#/research') {
     renderResearchHome();
-  } else if (hash === '#/research/abhidhamma-comparison') {
+  } else if (hash === '#/research/buddhist-systems-comparison') {
+    renderBuddhistSystemsComparisonHome();
+  } else if (hash === '#/research/buddhist-systems-comparison/abhidhamma') {
     renderAbhidhammaComparison();
+  } else if (hash === '#/research/buddhist-systems-comparison/lamrim') {
+    renderLamrimAbridged();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -609,10 +613,10 @@ function renderResearchHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🔭 个人研究成果</h2><div class="cat-en">Personal Research</div></div>`;
   html += '<div class="cards">';
-  html += `<div class="research-item-card" onclick="location.hash='#/research/abhidhamma-comparison'">
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison'">
     <span class="icon">📐</span>
-    <div class="title">唯识百法／有部七十五法／上座部阿毗达摩对应研究</div>
-    <div class="desc">三个佛教法数体系的标准分类与逐项对照矩阵——52心所、89心、28色对应分析、北传反向查漏表，以及严谨的比较方法论</div>
+    <div class="title">佛教体系对应研究</div>
+    <div class="desc">不同佛教体系间的严谨比较研究——从阿毗达摩法数体系的逐项对应矩阵，到藏传道次第与上座部立场的评析对话</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/concepts'">
     <span class="icon">📜</span>
@@ -698,23 +702,47 @@ function renderResearchHome() {
   app.innerHTML = html;
 }
 
+// === RESEARCH: BUDDHIST SYSTEMS COMPARISON (hub) ===
+function renderBuddhistSystemsComparisonHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📐 佛教体系对应研究</h2><div class="cat-en">Comparative Studies Across Buddhist Systems</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本项目：</span>
+    佛教在不同部派与传承中发展出各自的义理框架，同一实相常被不同体系用不同的名相与结构来安立。
+    本项目收录严谨的跨体系比较研究：既有对法数分类逐项对应的精确考据，也有对整套修行道次第的义理评析。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison/abhidhamma'">
+    <span class="icon">📐</span>
+    <div class="title">唯识百法／有部七十五法／上座部阿毗达摩对应研究</div>
+    <div class="desc">三个佛教法数体系的标准分类与逐项对照矩阵——52心所、89心、28色对应分析、北传反向查漏表，以及严谨的比较方法论</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison/lamrim'">
+    <span class="icon">🏔️</span>
+    <div class="title">菩提道次第与上座部对话</div>
+    <div class="desc">宗喀巴《菩提道次第略论》逐章总结，以三士道（下士、中士、上士）为纲，并从上座部立场逐点评析其与巴利传统的教义分野</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
 // === RESEARCH: ABHIDHAMMA COMPARISON (综述 + 矩阵) ===
 let _abhidhammaOverviewMdCache = null;
 let _abhidhammaMatrixMdCache = null;
 
 async function renderAbhidhammaComparison() {
-  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  let html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
   html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda</div></div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
   app.innerHTML = html;
 
   try {
     if (!_abhidhammaOverviewMdCache) {
-      const res = await fetch('research/abhidhamma-comparison/overview.md');
+      const res = await fetch('research/buddhist-systems-comparison/overview.md');
       _abhidhammaOverviewMdCache = await res.text();
     }
     if (!_abhidhammaMatrixMdCache) {
-      const res = await fetch('research/abhidhamma-comparison/matrix.md');
+      const res = await fetch('research/buddhist-systems-comparison/matrix.md');
       _abhidhammaMatrixMdCache = await res.text();
     }
 
@@ -723,7 +751,7 @@ async function renderAbhidhammaComparison() {
     const overviewHtml = mdWithFootnotes(_abhidhammaOverviewMdCache);
     const matrixHtml = mdWithFootnotes(_abhidhammaMatrixMdCache);
 
-    html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+    html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
     html += `<div class="cat-header"><h2>📐 三家法体系对应研究</h2><div class="cat-en">Abhidhamma Comparison — Abhidharma 100 Dharmas · 75 Dharmas · Theravāda Paramattha Dhammas</div></div>`;
 
     // Overview section (second file, placed first)
@@ -735,6 +763,27 @@ async function renderAbhidhammaComparison() {
     html += `<div class="md-reader">${matrixHtml}</div>`;
 
     app.innerHTML = html;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+let _lamrimAbridgedMdCache = null;
+async function renderLamrimAbridged() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
+  html += `<div class="cat-header"><h2>🏔️ 菩提道次第与上座部对话</h2><div class="cat-en">Lamrim Chung-lun (Abridged) — A Theravāda Dialogue</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+
+  try {
+    if (!_lamrimAbridgedMdCache) {
+      const res = await fetch('research/buddhist-systems-comparison/lamrim-abridged-summary.md');
+      _lamrimAbridgedMdCache = await res.text();
+    }
+    const body = `<div class="md-reader">${mdWithFootnotes(_lamrimAbridgedMdCache)}</div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>
+      <div class="cat-header"><h2>🏔️ 菩提道次第与上座部对话</h2><div class="cat-en">Lamrim Chung-lun (Abridged) — A Theravāda Dialogue</div></div>
+      ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
