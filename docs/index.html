@@ -967,7 +967,7 @@ async function renderResearchConcepts() {
 }
 
 // === RESEARCH: THERAVADA / MAHAYANA HISTORY ===
-let _theravadaMahayanaMdCache = null;
+let _theravadaMahayanaHistoryMdCache = null;
 async function renderResearchTheravadaMahayana() {
   let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
   html += `<div class="cat-header"><h2>🕉️ 上座部与大乘简史</h2><div class="cat-en">A Short History of Theravāda &amp; Mahāyāna</div></div>`;
@@ -975,11 +975,11 @@ async function renderResearchTheravadaMahayana() {
   app.innerHTML = html;
 
   try {
-    if (!_theravadaMahayanaMdCache) {
+    if (!_theravadaMahayanaHistoryMdCache) {
       const res = await fetch('research/theravada-mahayana-history.md');
-      _theravadaMahayanaMdCache = await res.text();
+      _theravadaMahayanaHistoryMdCache = await res.text();
     }
-    const body = `<div class="md-reader">${mdToHtml(_theravadaMahayanaMdCache)}</div>`;
+    const body = `<div class="md-reader">${mdToHtml(_theravadaMahayanaHistoryMdCache)}</div>`;
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       <div class="cat-header"><h2>🕉️ 上座部与大乘简史</h2><div class="cat-en">A Short History of Theravāda &amp; Mahāyāna</div></div>
       ${body}`;
