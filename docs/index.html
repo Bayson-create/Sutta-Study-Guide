@@ -515,6 +515,8 @@ function route() {
     renderAbhidhammaComparison();
   } else if (hash === '#/research/buddhist-systems-comparison/lamrim') {
     renderLamrimAbridged();
+  } else if (hash === '#/research/buddhist-systems-comparison/theravada-mahayana') {
+    renderTheravadaMahayana();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -722,6 +724,11 @@ function renderBuddhistSystemsComparisonHome() {
     <div class="title">菩提道次第与上座部对话</div>
     <div class="desc">宗喀巴《菩提道次第略论》逐章总结，以三士道（下士、中士、上士）为纲，并从上座部立场逐点评析其与巴利传统的教义分野</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison/theravada-mahayana'">
+    <span class="icon">⚖️</span>
+    <div class="title">上座部与大乘、汉传、密教、藏传的分歧与对话</div>
+    <div class="desc">两篇系统性研究：其一纵览各传统（中观、唯识、禅宗、净土、天台、华严、密教、大手印、大圆满等）的完整修行次第，以上座部七清净为基线逐一比对；其二从教义层面厘清上座部对大乘、汉传与藏传的系统性判断，辨明共同接受、可对话与原则冲突三类边界</div>
+  </div>`;
   html += '</div>';
   app.innerHTML = html;
 }
@@ -786,6 +793,56 @@ async function renderLamrimAbridged() {
       ${body}`;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: THERAVADA vs MAHAYANA (修行次第对照 + 教义分歧) ===
+const THERAVADA_MAHAYANA_TABS = [
+  { key: 'practice', label: '修行次第完整对照', file: 'research/buddhist-systems-comparison/theravada-mahayana/practice-comparison.md' },
+  { key: 'doctrine', label: '教义系统性分歧', file: 'research/buddhist-systems-comparison/theravada-mahayana/doctrinal-divergence.md' },
+];
+let theravadaMahayanaTab = 'practice';
+const _theravadaMahayanaMdCache = {};
+
+function theravadaMahayanaToolbarHtml() {
+  return `<div class="toolbar" id="theravada-mahayana-toolbar">
+    <div class="tb-group">
+      ${THERAVADA_MAHAYANA_TABS.map(t => `<button class="tb-btn${theravadaMahayanaTab === t.key ? ' active' : ''}" data-tab="${t.key}">${t.label}</button>`).join('')}
+    </div>
+  </div>`;
+}
+
+async function renderTheravadaMahayana() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
+  html += `<div class="cat-header"><h2>⚖️ 上座部与大乘、汉传、密教、藏传的分歧与对话</h2><div class="cat-en">Theravāda in Dialogue with Mahāyāna, Chinese Buddhism, and Vajrayāna</div></div>`;
+  html += theravadaMahayanaToolbarHtml();
+  html += '<div class="reader-content" id="theravada-mahayana-body"><div class="loading"><div class="spinner"></div><div>加载中...</div></div></div>';
+  app.innerHTML = html;
+
+  document.getElementById('theravada-mahayana-toolbar').addEventListener('click', e => {
+    const btn = e.target.closest('[data-tab]');
+    if (btn) {
+      theravadaMahayanaTab = btn.dataset.tab;
+      document.querySelectorAll('#theravada-mahayana-toolbar [data-tab]').forEach(b => b.classList.toggle('active', b.dataset.tab === theravadaMahayanaTab));
+      buildTheravadaMahayanaBody();
+    }
+  });
+
+  buildTheravadaMahayanaBody();
+}
+
+async function buildTheravadaMahayanaBody() {
+  const body = document.getElementById('theravada-mahayana-body');
+  const tab = THERAVADA_MAHAYANA_TABS.find(t => t.key === theravadaMahayanaTab);
+  body.innerHTML = '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  try {
+    if (!_theravadaMahayanaMdCache[tab.key]) {
+      const res = await fetch(tab.file);
+      _theravadaMahayanaMdCache[tab.key] = await res.text();
+    }
+    body.innerHTML = `<div class="md-reader">${mdWithFootnotes(_theravadaMahayanaMdCache[tab.key])}</div>`;
+  } catch (e) {
+    body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
 
