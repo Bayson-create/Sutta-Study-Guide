@@ -517,6 +517,14 @@ function route() {
     renderLamrimAbridged();
   } else if (hash === '#/research/buddhist-systems-comparison/theravada-mahayana') {
     renderTheravadaMahayana();
+  } else if (hash === '#/research/pali-source-texts') {
+    renderPaliSourceTextsHome();
+  } else if (hash === '#/research/pali-source-texts/vinaya') {
+    renderVinayaHome();
+  } else if (hash === '#/research/pali-source-texts/vinaya/sutta-vibhanga') {
+    renderSuttaVibhanga();
+  } else if (hash === '#/research/pali-source-texts/vinaya/samantapasadika') {
+    renderSamantapasadika();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -615,6 +623,11 @@ function renderResearchHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🔭 个人研究成果</h2><div class="cat-en">Personal Research</div></div>`;
   html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts'">
+    <span class="icon">📖</span>
+    <div class="title">原始佛教文献研究</div>
+    <div class="desc">对巴利三藏及早期注释文献的深度研究——逐章总结、结构分析与义理解说，以原典为依据还原上座部教法的细节与脉络</div>
+  </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison'">
     <span class="icon">📐</span>
     <div class="title">佛教体系对应研究</div>
@@ -843,6 +856,91 @@ async function buildTheravadaMahayanaBody() {
     body.innerHTML = `<div class="md-reader">${mdWithFootnotes(_theravadaMahayanaMdCache[tab.key])}</div>`;
   } catch (e) {
     body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: PALI SOURCE TEXTS HUB ===
+function renderPaliSourceTextsHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📖 原始佛教文献研究</h2><div class="cat-en">Studies in Primary Buddhist Texts — Pāli Canon & Early Commentaries</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本项目：</span>
+    本项目以巴利三藏及早期注释文献为对象，通过逐章总结与结构分析，还原上座部教法在文本层面的细节与脉络。
+    研究坚守「原文事实、文本结构、现代解释三者分开处理」的原则，以期为修行者和研究者提供贴近原典的参考资料。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/vinaya'">
+    <span class="icon">⚖️</span>
+    <div class="title">律藏研究</div>
+    <div class="desc">巴利律藏的文本研究——《经分别》逐章总结与制戒机制分析、《善见律毗婆沙》全书重组详解，覆盖比丘与比丘尼学处、结集历史、僧团治理及戒律义理</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: VINAYA HUB ===
+function renderVinayaHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts'">← 返回原始佛教文献研究</button>`;
+  html += `<div class="cat-header"><h2>⚖️ 律藏研究</h2><div class="cat-en">Vinaya Studies — Sutta-vibhaṅga & Samantapāsādikā</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本板块：</span>
+    收录两篇律藏深度文本研究：《经分别》覆盖比丘 227 条、比丘尼 311 条戒律的制戒因缘与分别判罪逻辑；
+    《善见律毗婆沙》则以全书六品为骨架，重组梳理三次结集历史、律学义理与僧团自净机制。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/vinaya/sutta-vibhanga'">
+    <span class="icon">📜</span>
+    <div class="title">巴利律藏《经分别》逐章总览与深度总结</div>
+    <div class="desc">Sutta-vibhaṅga（比丘《大分别》+ 比丘尼《分别》）全文结构解析——制戒机制、227＋311 条戒的类别总表、逐章因缘与判罪原则，附制戒公式意译及无罪分说明</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/vinaya/samantapasadika'">
+    <span class="icon">🏛️</span>
+    <div class="title">《善见律毗婆沙》全书重组详解</div>
+    <div class="desc">T24n1462 萧齐译本全书六品重组——从三次结集与传承建立，到「戒止恶→不悔→三昧→慧→涅槃」因果链的展开，涵盖阿育王弘法、分律争议与完整律学义理体系</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: SUTTA-VIBHANGA READER ===
+let _suttaVibhangaMdCache = null;
+async function renderSuttaVibhanga() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/vinaya'">← 返回律藏研究</button>`;
+  html += `<div class="cat-header"><h2>📜 巴利律藏《经分别》逐章总览与深度总结</h2><div class="cat-en">Sutta-vibhaṅga — Chapter-by-Chapter Analysis of the Bhikkhu & Bhikkhunī Pātimokkha</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_suttaVibhangaMdCache) {
+      const res = await fetch('research/pali-source-texts/vinaya/sutta-vibhanga.md');
+      _suttaVibhangaMdCache = await res.text();
+    }
+    const body = document.createElement('div');
+    body.className = 'md-reader';
+    body.innerHTML = mdWithFootnotes(_suttaVibhangaMdCache);
+    app.querySelector('.loading').replaceWith(body);
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: SAMANTAPASADIKA READER ===
+let _samantapasadikaMdCache = null;
+async function renderSamantapasadika() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/vinaya'">← 返回律藏研究</button>`;
+  html += `<div class="cat-header"><h2>🏛️ 《善见律毗婆沙》全书重组详解</h2><div class="cat-en">Samantapāsādikā — A Restructured Commentary on the Vinaya Piṭaka</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_samantapasadikaMdCache) {
+      const res = await fetch('research/pali-source-texts/vinaya/samantapasadika.md');
+      _samantapasadikaMdCache = await res.text();
+    }
+    const body = document.createElement('div');
+    body.className = 'md-reader';
+    body.innerHTML = mdWithFootnotes(_samantapasadikaMdCache);
+    app.querySelector('.loading').replaceWith(body);
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
 
