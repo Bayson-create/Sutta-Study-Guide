@@ -517,6 +517,8 @@ function route() {
     renderLamrimAbridged();
   } else if (hash === '#/research/buddhist-systems-comparison/theravada-mahayana') {
     renderTheravadaMahayana();
+  } else if (hash === '#/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha') {
+    renderBuddhaghosaTsongkhapaAtisha();
   } else if (hash === '#/research/pali-source-texts') {
     renderPaliSourceTextsHome();
   } else if (hash === '#/research/pali-source-texts/vinaya') {
@@ -742,6 +744,11 @@ function renderBuddhistSystemsComparisonHome() {
     <div class="title">上座部与大乘、汉传、密教、藏传的分歧与对话</div>
     <div class="desc">两篇系统性研究：其一纵览各传统（中观、唯识、禅宗、净土、天台、华严、密教、大手印、大圆满等）的完整修行次第，以上座部七清净为基线逐一比对；其二从教义层面厘清上座部对大乘、汉传与藏传的系统性判断，辨明共同接受、可对话与原则冲突三类边界</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha'">
+    <span class="icon">📋</span>
+    <div class="title">觉音、宗喀巴与阿底峡：原文资料底稿</div>
+    <div class="desc">三位祖师著作的原典汇编——《清净道论》《菩提道灯论》《菩提道次第略论》在造论发心、传承归属、开篇定位与结篇回向诸方面的原文对照，附汉译及出处标注，供比较研究使用</div>
+  </div>`;
   html += '</div>';
   app.innerHTML = html;
 }
@@ -856,6 +863,27 @@ async function buildTheravadaMahayanaBody() {
     body.innerHTML = `<div class="md-reader">${mdWithFootnotes(_theravadaMahayanaMdCache[tab.key])}</div>`;
   } catch (e) {
     body.innerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: BUDDHAGHOSA / TSONGKHAPA / ATISHA SOURCES ===
+let _buddhaghosaTsongkhapaAtishaMdCache = null;
+async function renderBuddhaghosaTsongkhapaAtisha() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
+  html += `<div class="cat-header"><h2>📋 觉音、宗喀巴与阿底峡：原文资料底稿</h2><div class="cat-en">Buddhaghosa, Tsongkhapa & Atiśa — Primary Source Dossier</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_buddhaghosaTsongkhapaAtishaMdCache) {
+      const res = await fetch('research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md');
+      _buddhaghosaTsongkhapaAtishaMdCache = await res.text();
+    }
+    const body = document.createElement('div');
+    body.className = 'md-reader';
+    body.innerHTML = mdWithFootnotes(_buddhaghosaTsongkhapaAtishaMdCache);
+    app.querySelector('.loading').replaceWith(body);
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
 
