@@ -446,7 +446,7 @@
 
 #### 1. 基本原则
 
-> "After that he should avoid a monastery unfavourable to the development of concentration and go to live in one that is favourable." (IV.1；与前文 III.28 的承接说明相关)
+> “此后，他应当避开不利于修习定的精舍，前往有利于修习定的精舍居住。”（IV.1；与前文 III.28 的承接说明相关）
 
 这一原则的基础是对禅修者身心状态的认识。良好的外部环境对于训练容易分散的心识是极其重要的。
 
@@ -477,7 +477,7 @@
 
 **作者原文评述** (IV.18之后的总结偈)：
 
-> "One that has any of those eighteen faults should be understood as unfavourable. And this is said in the commentary: A large abode, a new abode, One tumbling down, one near a road..."（IV.18之后）
+> “凡具有这十八种过失中任何一种的精舍，都应当视为不适宜。注释中这样说：大精舍、新精舍、破败的精舍、靠近道路的精舍……”（IV.18之后）
 
 这些障碍的共同特点是它们都会破坏内在的寂静与专注，使心识受到外部刺激的频繁干扰。
 
@@ -485,7 +485,7 @@
 
 相反，一个理想的修行场所应具备以下特征 (IV.19)：
 
-> "And how has a lodging five factors, bhikkhus? Here, bhikkhus, (1) a lodging is not too far, not too near, and has a path for going and coming; (2) it is little frequented by day with little sound and few voices by night; (3) there is little contact with gadflies, flies, wind, burning sun and creeping things; (4) one who lives there easily obtains robes, alms food, lodging and medicine; (5) elder bhikkhus living there are learned and can explain what is unrevealed and remove doubts."（IV.19；引 A V 15）
+> “比丘们，精舍具备哪五种条件？比丘们，在这里，精舍不太远，也不太近，并且有往来道路；白天少有人来，夜间声音和人声很少；虻、蝇、风、烈日和爬虫等扰害很少；居住者容易获得衣服、乞食、住处和药物；住在那里的长老比丘多闻，能够解释未明之处并消除疑惑。”（IV.19；引 A V 15）
 
 这五个因素分别代表：
 
@@ -503,7 +503,7 @@
 
 第四章在IV.22中对地元素禅修对象做了完整的定义：
 
-> "One who is learning the earth kasina apprehends the sign in earth that is either made up or not made up; that is bounded, not unbounded; limited, not unlimited; with a periphery, not without a periphery; circumscribed, not uncircumscribed; either the size of a bushel (cuppa) or the size of a saucer (sara)..."（IV.22）
+> “正在学习地遍的禅修者，应当把握地上的禅相：它可以是制作出来的，也可以不是制作出来的；有界限而非无界限；有限而非无限；有周边而非无周边；有边界而非无边界；大小可以如一斗，也可以如一碟……”（IV.22）
 
 **核心特征**：
 - **可见性** - 必须是可以感知的物质对象
@@ -517,7 +517,7 @@
 
 根据原文描述 (IV.24)：
 
-> "But when a man has had no such previous practice, he should make a kasina, guarding against the four faults of a kasina and not overlooking any of the directions for the meditation subject learnt from the teacher."（IV.24）
+> “不过，若一个人过去没有这样的修习，就应当制作一个遍相，同时防止遍相的四种过失，并且不忽略从老师那里学来的任何业处指导。”（IV.24）
 
 禅修者应该使用：
 - 河边或溪流边的土壤（特定的颜色——如刚刚河水冲出的土壤）
@@ -529,7 +529,7 @@
 
 如果自然土地不适合，禅修者可以制作一个便携式的地元素：
 
-> "Of these, a portable one should be made by tying rags of leather or matting onto four sticks and smearing thereon a disk of the size already mentioned."（IV.25）
+> “其中，便携式遍相应当把皮革或席片绑在四根木棍上制成框架，再在上面涂抹一个前面所说大小的圆盘。”（IV.25）
 
 具体步骤：
 1. 用皮革或垫子绑在四根木竿上制成框架
@@ -539,7 +539,7 @@
 
 **重要的警告** (IV.29)：
 
-> "The colour should not be reviewed. The characteristic should not be given attention. But rather, while not ignoring the colour, attention should be given to the characteristic; which is earth; seeing it as advantageous, the mind-door impulsion should be directed to it..."（IV.29）
+> “不应观察颜色，也不应把注意力放在颜色的特征上；而应在不忽略颜色的同时，把注意力放在它的特征——地——上；见其有益，便应令意门速行心转向它……”（IV.29）
 
 这指示禅修者不要过度关注颜色的审美品质，而应专注于"地性"这一本质特征。
 
@@ -551,7 +551,7 @@
 
 禅修者首先要通过反复观看来建立心理形象：
 
-> "So, after seating himself in the way stated, he should review the dangers in sense desires in the way beginning, "Sense desires give little enjoyment" (M I 91) and arouse longing for the escape from sense desires, for the surmounting of all suffering... Then he should open his eyes moderately, apprehend the sign..."
+> “如前所述坐好之后，他应当以‘感官欲乐少、苦多’（M I 91）等开头的方式观察感官欲的危险，并生起出离感官欲、超越一切痛苦的愿望……然后，他应适度睁眼，把握禅相……”
 
 **方法**：
 - 打开眼睛适度地观看禅修对象
@@ -560,7 +560,7 @@
 
 **第二步：眼睛开闭的平衡 (IV.28)**
 
-> "If he opens his eyes too wide, they get fatigued and the disk becomes too obvious, which prevents the sign becoming apparent to him. If he opens them too little, the disk is not obvious enough, and his mind becomes drowsy..."（IV.28）
+> “如果他把眼睛睁得太大，眼睛会疲劳，圆盘也会显得过于明显，反而使禅相无法显现；如果睁得太小，圆盘又不够明显，心便会昏昧……”（IV.28）
 
 禅修者需要找到适当的开眼程度：
 - 眼睛不能过度开放（会导致疲劳）
@@ -568,13 +568,13 @@
 
 **第三步：建立反标记 (Counter-sign) (IV.31)**
 
-> "As he does so, the hindrances eventually become suppressed, the defilements subside, the mind becomes concentrated with access concentration, and the counterpart sign arises."（IV.31）
+> “当他这样修习时，五盖最终受到压伏，烦恼平息，心以近行定而集中，反标记便生起。”（IV.31）
 
 在持续的观看中，会逐渐产生一个心理显现，称为“反标记”；原文把它说明为定心中由想所生的显现，不宜写成普通意义上的外物“纯净投影”。
 
 **第四步：反标记与学习标记的区别 (IV.31)**
 
-> "The difference between the earlier learning sign and the counterpart sign is this. In the learning sign any fault in the kasina is apparent. But the counterpart sign [126] appears as if breaking out from the learning sign..."（IV.31）
+> “前面的学习标记与反标记之间有这样的差别：在学习标记中，遍相的任何缺陷都显现出来；但反标记却好像从学习标记中突破出来……”（IV.31）
 - **学习标记** (learning sign) - 直接来自感官的印象，可能有缺陷
 - **反标记** (counterpart sign) - 在定心中由想所生的清净显现；原文还限定它非色非形，不能由眼识直接认知
 
@@ -592,11 +592,11 @@
 
 当心识变得异常稳定和纯净时，禅修者达到了"近行定"——这是进入深层禅定的入口。
 
-> "When, while he is developing it in this way, it comes into focus as he adverts with his eyes shut exactly as it does with his eyes open, then the learning sign is said to have been produced. After its production he should no longer sit in that place. He should return to his own quarters and go on developing it."（IV.30）
+> “当他这样修习时，闭着眼作意，禅相恰如睁眼时一样清晰，这时便说学习标记已经生起。标记生起后，他不应再坐在那里，而应回到自己的住处继续修习。”（IV.30）
 
 **第七步：消除"脚洗延迟" (Removing Delay) (IV.30)**
 
-> "But in order to avoid the delay of foot-washing, a pair of single-soled sandals and a walking stick are desirable... he can put his sandals on, take his walking stick, and go back to the place to re-apprehend the sign there."（IV.30）
+> “不过，为了避免洗脚造成的延误，最好准备一双单底木屐和一根手杖……这样他可以穿上木屐，拿起手杖，回到原处在那里重新把握禅相。”（IV.30）
 
 禅修者需要找到一个平衡：既要返回修行场所继续练习，又要避免不必要的延迟。
 
@@ -606,14 +606,14 @@
 
 根据原文的关键段落：
 
-> "Now concentration is of two kinds, that is to say, access concentration and absorption concentration: the mind becomes concentrated in two ways, that is, on the plane of access and on the plane of obtainment."（IV.32）
+> “定有两种，即近行定和安止定；心以两种方式集中，也就是集中于近行的层面和获得的层面。”（IV.32）
 
 **近行定 (Access Concentration)**：
 - 心变得稳定和专注
 - 因禅支尚未充分强固，心有时取禅相为所缘，有时重新转入有分心；原文并未在此处把它概括为一般意义上的“保持外部世界认知”
 - 是进入更深层禅定的必要阶段
 
-> "In the learning sign any fault in the kasina is apparent. But the counterpart sign [126] appears as if breaking out from the learning sign, and a hundred times, a thousand times more purified, like a mother-of-pearl dish well washed, like the moon's disk coming out from behind a cloud, like cranes against a thundercloud. But it has neither colour nor shape; for if it had, it would be cognizable by the eye, gross, susceptible of comprehension by insight, and stamped with the three characteristics. But it is not like that. For it is born only of perception in one who has obtained concentration, being a mere mode of appearance."（IV.31）
+> “在学习标记中，遍相的任何缺陷都显现出来；但反标记好像从学习标记中突破出来，并且比它洁净百倍、千倍：如洗得洁净的螺钿盘，如从云后显现的月轮，如雷云映衬下的鹤群。然而，反标记没有颜色，也没有形状；若有颜色或形状，它就会成为眼识所能认识的粗显之物，能够由观慧理解，并带有三种特征。但它并非如此；它只是在已得定者心中由想生起的一种显现方式。”（IV.31）
 
 **禅定 (Absorption Concentration)**：
 - 心完全沉没于对象中
@@ -622,14 +622,14 @@
 
 #### 2. 因素的强度差异 (IV.33)
 
-> "The difference between the two kinds of concentration is this. The factors are not strong in access. It is because they are not strong that when access has arisen, the mind now makes the sign its object and now re-enters the life-continuum, just as when a young child is lifted up and stood on its feet, it continually rocks backwards and forwards."（IV.33）
+> “两种定的差别如下：近行定中的禅支并不强固。正因为它们不强固，近行定生起时，心一会儿以禅相为所缘，一会儿又回到有分心，就像小孩子被扶起来站立时不断前后摇晃一样。”（IV.33）
 近行定中的各种心理因素（如信心、精进、念想等）相对较弱，因此心识容易摇摆。而在真正的禅定中，这些因素都非常强大，能够支持持久的专注。
 
 ### 第四部分：反标记标志的特征 (IV.31)
 
 作者给出了识别真正的反标记的标准：
 
-> "Like a mother-of-pearl dish well washed, like the moon's disk coming out from behind a cloud, like cranes against a thundercloud: for if it had, it would be cognizable by the eye, gross, susceptible of comprehension by insight, and stamped with the three characteristics."（IV.31）
+> “它如洗得洁净的螺钿盘，如从云后显现的月轮，如雷云映衬下的鹤群；否则，若它具有颜色或形状，便会成为眼识所能认识的粗显之物，能够由观慧理解，并带有三种特征。”（IV.31）
 
 反标记的特征：
 1. **纯净性** - 如同被洗净的珍珠盘
@@ -644,7 +644,7 @@
 
 原文强调 (IV.34)：
 
-> "The arousing of the counterpart sign, which arises together with access concentration, is very difficult. Therefore if he is able to arrive at absorption in that same session by extending the sign, it is good. If not, then he must guard the sign diligently as if it were the focus of a Wheel-turning Monarch (World-ruler)."（IV.34）
+> “与近行定一同生起的反标记很难引发。因此，如果他能在同一座中扩展禅相而达到安止，那是很好的；若不能，就必须像守护转轮王（世界统治者）的目标一样，勤奋地守护禅相。”（IV.34）
 
 这暗示了禅定发展的两条可能路径：
 1. **直接深化** - 在同一坐中进入禅定
@@ -705,19 +705,19 @@
 以下是第四章中最重要的原文引用：
 
 1. **修行环境的重要性**：
-   > "After that he should avoid a monastery unfavourable to the development of concentration and go to live in one that is favourable." (IV.1；与前文 III.28 的承接说明相关)
+   > “此后，他应当避开不利于修习定的精舍，前往有利于修习定的精舍居住。”（IV.1；与前文 III.28 的承接说明相关）
 
 2. **地元素的定义**：
-   > "One who is learning the earth kasina apprehends the sign in earth that is either made up or not made up..." (IV.22)
+   > “正在学习地遍的禅修者，应当把握地上的禅相：它可以是制作出来的，也可以不是制作出来的……”（IV.22）
 
 3. **观看方法**：
-   > "If he opens his eyes too wide, they get fatigued and the disk becomes too obvious... If he opens them too little, the disk is not obvious enough, and his mind becomes drowsy..." (IV.28)
+   > “如果他把眼睛睁得太大，眼睛会疲劳，圆盘也会显得过于明显；如果睁得太小，圆盘又不够明显，心便会昏昧……”（IV.28）
 
 4. **反标记的出现**：
-   > "Like a mother-of-pearl dish well washed, like the moon's disk coming out from behind a cloud, like cranes against a thundercloud..." (IV.31)
+   > “它如洗得洁净的螺钿盘，如从云后显现的月轮，如雷云映衬下的鹤群……”（IV.31）
 
 5. **两种集中**：
-   > "Now concentration is of two kinds, that is to say, access concentration and absorption concentration..." (IV.32)
+   > “定有两种，即近行定和安止定……”（IV.32）
 
 6. **最终目的**：此处不保留原稿中无法确认且语法损坏的英文引文；地遍的修习目的应结合本章关于禅修对象、定力与障碍的具体说明理解。
 
@@ -727,7 +727,7 @@
 
 #### 1. 清净基础 (Making the basis clean) (IV.43)
 
-> "When his head hair, nails and body hair are long, or when the body is soiled, when there is a stain on the bowl, the bowl should be baked. The bed, chair, etc., should be cleaned up."（IV.43）
+> “当他的头发、指甲和体毛过长，或身体污秽时；当钵上有污渍时，就应把钵烧煮清洁；床、椅等也应清理干净。”（IV.43）
 
 这首先涉及物质环保与修行环境的清洁。禅修者需要在进入禅定前确保外部环境和自己的身体都是清净的。
 
@@ -735,7 +735,7 @@
 
 #### 2. 维持平衡的能力 (Maintaining balanced faculties) (IV.45-49)
 
-> "For if the faith faculty is strong and the others weak, then the energy faculty cannot perform its function of exerting, the mindfulness faculty its function of establishing, the concentration faculty its function of directing and the understanding faculty its function of seeing."（IV.45）
+> “因为如果信根强而其他诸根弱，精进根就不能发挥努力的作用，念根不能发挥建立的作用，定根不能发挥导引的作用，慧根不能发挥观察的作用。”（IV.45）
 
 这是十种技能中的一项。原文说明信根过强而其余偏弱会造成失衡；以下“平衡”是对其调节作用的概括，不扩写为必须达到可量化的“完美平衡”：
 - **信** (Faith) - 不能太强（会导致盲信），也不能太弱（会导致怀疑）
@@ -751,7 +751,7 @@
 3. **善巧于相**（skill in the sign，IV.50）：善于使尚未生起的禅相生起。
 4. **应当策励心时策励心**（IV.51–56）：心因懈怠而低沉时，以调查法等觉支和八种悚惧事策励，并忆念佛、法、僧的功德。
 
-> "If his mind is slack with over-laxness of energy, etc., then, instead of developing the three enlightenment factors beginning with tranquillity, he should develop those beginning with investigation-of-states."（IV.51）
+> “如果他的心因精进过于松弛等原因而懈怠，就不应修习以轻安为首的三个觉支，而应修习以择法为首的觉支。”（IV.51）
 5. **应当制止心时制止心**（IV.57–62）：心躁动时，以轻安、定、舍等觉支令其安静；原文还列出促成这些觉支生起的条件。
 6. **应当鼓励心时鼓励心**（IV.63）：心因慧力不足或未得寂静乐而消沉时，观察生、老、病、死及轮回等八种悚惧事，并忆念三宝功德。
 7. **应当舍心时以舍观察**（IV.64）：心已平稳、专注、不懈怠时，不再额外策励或制止，如车夫看马平稳前进。
@@ -765,7 +765,7 @@
 
 作者用五个具体的比喻来说明禅定中心的平衡：
 
-> "When a too clever bee learns that a flower on a tree is blooming, it sets out hurriedly, overshoots the mark, turns back, and arrives when the pollen is finished..."（IV.67）
+> “一只过于聪明的蜜蜂得知树上有花开放，便匆忙飞去，飞过了目标，又转身回来；等它到达时，花粉已经没有了……”（IV.67）
 
 这些比喻展示了在达到禅定中需要避免的过度与不足的错误：
 
@@ -779,7 +779,7 @@
 
 #### 5. 心理状态的引导 (IV.74-76)
 
-> "So, while he is guiding his mind in this way, confronting the sign, [then knowing]: 'Now absorption will succeed,' there arises in him mind-door adverting with that same earth kasina as its object, interrupting [the occurrence of consciousness as] life-continuum..."（IV.74）
+> “当他这样引导自己的心、面对禅相时，便知道：‘现在安止将会成功。’于是，以同一地遍为所缘的意门转向心在他心中生起，中断了有分心的相续……”（IV.74）
 
 当相关条件具足时，心可转向禅定。这个过程包括：
 - 选择一个清晰的禅修对象
@@ -792,7 +792,7 @@
 
 #### 1. 进入禅那的标志
 
-> "At this point, 'Quite secluded from sense desires, secluded from unprofitable things he enters upon and dwells in the first jhāna, which is accompanied by applied and sustained thought with happiness and bliss born of seclusion' (Vibh 245)"
+> “这时，他远离感官欲，远离不善法，进入并住于第一禅那；第一禅那伴随着寻、伺，以及由远离而生的喜与乐。”（Vibh 245）
 
 进入第一禅那的条件：
 - **远离感官欲与不善法** - 原文的“离”首先指离欲与五盖，不宜扩写为对所有外部刺激一概“不感知”
@@ -805,17 +805,17 @@
 根据原文的详细分析，第一禅那包含以下特征：
 
 **Applied thinking (vitakka)** (IV.88-90)：
-> "Applied thinking (vitakka); hitting upon, is what is meant. It has the characteristic of directing the mind onto an object (mounting the mind on the object). Its function is to strike at and thresh—for the meditator is said, in virtue of it, to have the object struck at by applied thought, threshed by applied thought."（IV.88）
+> “寻（vitakka）：意思是接触、撞击。它的特征是把心导向所缘（使心登上所缘）；它的作用是敲击和捶打——因此说禅修者凭借它使所缘受到寻的敲击、受到寻的捶打。”（IV.88）
 
 **Sustained thinking (vicāra)** (IV.91)：
-> "Sustained thinking is like the hand that rubs, when one grips a lump of metal disk with one hand and rubs it with powder and oil and a woollen pad with the other hand. Likewise, when a potter has spun his wheel with a stroke on the stick and is making a dish [143]..."（IV.91）
+> “伺就像擦拭的手：一只手握住金属圆片，另一只手用粉末、油和羊毛垫擦拭它。同样，陶工用棍棒推动陶轮旋转、制作器皿时也是如此……”（IV.91）
 
 **Happiness (pīti)** (IV.94)：
-> "Happiness and bliss: it refreshes (pīṇayati), thus it is happiness (pīti). It has the characteristic of endearing (sampiyāyanā). Its function is to refresh the body and the mind; or its function is of five kinds as minor happiness, momentary happiness, showering happiness, uplifting happiness, and pervading (rapturous) happiness."（IV.94）
+> “喜与乐：它使人滋润、焕发（pīṇayati），所以称为喜（pīti）。它的特征是令人喜爱（sampiyāyanā），作用是使身体和心焕发；或者说，它有五种作用：小喜、刹那喜、继起喜、踊跃喜和遍满喜。”（IV.94）
 
 #### 3. 禅那的深层体验
 
-> "Born of seclusion: here secludedness (vivitta) is seclusion (viveka); the meaning is disappearance of hindrances. Or alternatively, it is secluded (vivitta), thus it is seclusion. The meaning is, the collection of states associated with the jhāna is secluded from hindrances."（IV.93）
+> “由远离而生：这里，‘远离’（vivitta）就是‘离’（viveka），意思是五盖消失。或者说，因为它是远离的（vivitta），所以称为离；意思是，与禅那相应的一组诸法远离了五盖。”（IV.93）
 
 第一禅那的体验是：
 - 远离感官欲与不善法（五盖被压伏；这不等于外部感官功能永久停止）
@@ -901,7 +901,7 @@
 
 对于没有先前经验的禅修者：
 
-> "One who is learning the water kasina should apprehend the sign in water that is 'either made up or not made up,' and so all the rest should be repeated in detail."（V.2）
+> “正在学习水遍的禅修者，应当把握水上的禅相，知道它‘可以是制作出来的，也可以不是制作出来的’；其余各项都应依此详细重复说明。”（V.2）
 
 具体步骤：
 - 填充一个四脚水壶或碗，用未被污垢污染的水
@@ -912,7 +912,7 @@
 
 #### 反标记的特征 (V.4)
 
-> "As he develops it in this way the two signs eventually arise in him in the way already described. Here, however, the learning sign has the appearance of moving. But when someone apprehends it in a kasina that is not made up no fault in the kasina is evident [in the learning sign], and no firebrand, or pile of embers or ashes, or smoke appears in it. The counterpart sign appears motionless like a piece of red cloth set in space, like a gold fan, like a gold column."（V.4）
+> “当他这样修习时，两个禅相最终会如前所述在他心中生起。不过这里的学习标记显得在移动；而当他在未经制作的遍相上把握禅相时，遍相的任何缺陷都不会在学习标记中显现，也不会出现火把、余烬堆、灰堆或烟。反标记则静止不动，如悬在空中的红布、金扇或金柱。”（V.4）
 
 ### 二、火元素Kasina (Tejo-kasina)
 
@@ -920,7 +920,7 @@
 
 作者提供了详细的制作方法：
 
-> "Anyone who wants to develop the fire kasina should apprehend the sign in fire. Herein, when someone with merit, having had previous practice, is apprehending the sign, it arises for him in any sort of fire, not made up as he looks at the fiery combustion in a lamp's flame or in a furnace or in a place for baking bowls or in a forest conflagration..."（V.5）
+> “任何想修习火遍的人，都应当把握火上的禅相。这里，具备福德且过去修习过的人在把握禅相时，无论他观察灯火、炉火、烧钵处的火，还是森林大火中未经制作的火焰，禅相都能在他面前生起……”（V.5）
 
 具体步骤：
 1. 分割一些湿木头、干燥并断成短块
@@ -933,13 +933,13 @@
 
 #### 反标记的特征
 
-> "As he develops it in this way the two signs eventually arise in him as already described. Herein, the learning sign appears like [the fire to keep] sinking down as the flame keeps detaching itself [172] But when someone apprehends it in a kasina that is not made up no firebrand, or pile of embers or ashes, or smoke appears in it. The counterpart sign appears motionless like a piece of red cloth set in space, like a gold fan, like a gold column."（V.8）
+> “当他这样修习时，两个禅相最终会如前所述在他心中生起。这里，随着火焰不断脱落，学习标记显得像火在逐渐下沉；但当他在未经制作的遍相上把握禅相时，其中不会出现火把、余烬堆、灰堆或烟。反标记则静止不动，如悬在空中的红布、金扇或金柱。”（V.8）
 
 ### 三、风元素Kasina (Vāyo-kasina)
 
 #### 修习方法 (V.9-11)
 
-> "Anyone who wants to develop the air kasina should apprehend the sign in air. And that is done either by sight or by touch."（V.9）
+> “任何想修习风遍的人，都应当把握风上的禅相；这可以通过视觉，也可以通过触觉来完成。”（V.9）
 
 观察风的方式：
 - 通过观察事物被风吹动
@@ -948,7 +948,7 @@
 
 #### 建立反标记
 
-> "Here the learning sign appears to move like the swirl of hot [steam] on rice gruel just withdrawn from an oven. The counterpart sign is quiet and motionless."（V.11）
+> “这里，学习标记显得在移动，就像刚从炉中取出的米粥上升腾的热气一样；反标记则安静而不动。”（V.11）
 
 ### 四、颜色Kasinas：蓝、黄、红、白、光
 
@@ -957,7 +957,7 @@
 对于所有颜色kasinas，作者提供了统一的框架：
 
 **蓝色Kasina (V.12-14)：**
-> "One who is learning the blue kasina apprehends the sign in blue, whether in a flower or in a cloth or in a colour element."（V.12）
+> “正在学习青遍的禅修者，应当在蓝色的花、布，或色元素上把握青色的禅相。”（V.12）
 
 制作方法：
 - 选择蓝色花朵（如blue lotuses或girikinika花）
@@ -977,7 +977,7 @@
 - 或白色布或颜色元素
 
 **光Kasina (V.21-23)：**
-> "One who is learning the light kasina apprehends the sign in light in a hole in a wall, or a keyhole, or in a window opening."（V.21）
+> “正在学习光遍的禅修者，应当在墙上的孔洞、锁孔或窗洞所透出的光中把握禅相。”（V.21）
 
 方法：
 - 在墙上打一个孔
@@ -988,7 +988,7 @@
 
 #### 定义与修习 (V.24-26)
 
-> "Of the limited-space kasina it is said: 'One who is learning the space kasina apprehends the sign in a hole in a wall, or in a keyhole, or in a window opening.'"（V.24）
+> “关于有限虚空遍，有这样的说法：‘正在学习虚空遍的禅修者，应当在墙上的孔洞、锁孔或窗洞中把握禅相。’”（V.24）
 
 制作方法：
 1. 在良好的墙或皮革中打一个孔
@@ -1001,14 +1001,7 @@
 
 作者以一首诗总结了所有kasinas的目的：
 
-> "He with Ten Powers, who all things did see,
-> Tells ten kasinas, each of which can be
-> The cause of fourfold and of fivefold jhāna,
-> The fine-material sphere's own master key.
-> Now, knowing their descriptions and the way
-> To tackle each and how they are developed,
-> There are some further points that will repay
-> Study each with its special part to play."（V.27）
+> “具足十力、洞见一切的世尊，宣说十种遍；每一种都能成为四禅与五禅的因，是色界定的关键。如今既已知道它们的定义、修习方法以及如何发展，就还应进一步学习一些要点，分别了解每一种遍的特殊作用。”（V.27）
 
 ### 第五章的结构性补充
 
@@ -1042,13 +1035,13 @@
 
 污秽观在本章中尤其被用于对治贪欲强烈、执著身体美的人；不将“专门针对”理解为排除其他修行者。
 
-> "Therefore should one undertake this meditation subject in the way stated here; one who shuns hindrance by karma and by defilement, and who fosters faith, zeal and understanding by listening to the Dhamma, frequenting good men, and so on."（VI.1）
+> “因此，应当依这里所说的方式修习这个业处：避开业的障碍和烦恼的障碍，并通过听闻法、亲近善人等方式培育信心、热忱和智慧。”（VI.1）
 
 ### 十种污秽的定义
 
 #### 1. 膨胀(The Bloated) - Uddhumātaka (VI.1)
 
-> "The bloated: it is bloated (uddhumita) because bloated by gradual dilation and swelling after (uddhana) the close of life, as a bellows is with wind."（VI.1）
+> “膨胀：它称为膨胀（uddhumita），是因为生命结束后逐渐扩大、肿胀（uddhana），就像风箱被风吹胀一样。”（VI.1）
 
 特征：
 - 尸体因腐烂而膨胀和肿胀
@@ -1056,7 +1049,7 @@
 
 #### 2. 淤黑(The Livid) - Vinilaka (VI.1-2)
 
-> "The livid: what has patchy discolouration is called livid (vinila). What is livid (vinila) is vile (kucchita) because of repulsiveness, thus it is 'the livid' (vinilaka)."（VI.2）
+> “淤黑：颜色斑驳不均的称为淤黑（vinila）；淤黑之物因令人厌恶而称为污秽（kucchita），所以称为‘淤黑者’（vinilaka）。”（VI.2）
 
 特征：
 - 尸体出现变色和瘀伤
@@ -1064,7 +1057,7 @@
 
 #### 3. 脓烂(The Festering) - Vipūbaka (VI.3)
 
-> "The festering: what is trickling with pus in broken places is festering. What is festering is the same as 'the festering.' Or alternatively, what is festering is vile (kucchita) because of repulsiveness, thus it is 'the festering.'"（VI.3）
+> “脓烂：破裂处有脓液流出的就是脓烂；脓烂之物就称为‘脓烂者’。或者说，脓烂之物因令人厌恶而称为污秽（kucchita），所以称为‘脓烂者’。”（VI.3）
 
 特征：
 - 尸体开始分解并流出液体
@@ -1072,7 +1065,7 @@
 
 #### 4. 破裂(The Cut Up) - Vicchiddaka (VI.4)
 
-> "The cut up: what has been opened up by cutting it in two is called cut up. What is cut up is the same as 'the cut up.' Or alternatively, what is cut up is vile (kucchita) because of repulsiveness, thus it is 'the cut up.'"（VI.4）
+> “破裂：被切成两半而裂开的称为破裂；破裂之物就称为‘破裂者’。或者说，破裂之物因令人厌恶而称为污秽（kucchita），所以称为‘破裂者’。”（VI.4）
 
 特征：
 - 尸体被分解或腐烂而开裂
@@ -1080,42 +1073,42 @@
 
 #### 5. 啃咬(The Gnawed) - Vikkhayitaka (VI.5)
 
-> "The gnawed: what has been chewed here and there in various ways by dogs, jackals, etc., is what is gnawed (vikkhāyita). What is gnawed (vikkhāyita) is vile (kucchita) because of repulsiveness, thus it is 'the gnawed' (vikkhāyitaka)."（VI.5）
+> “啃咬：被狗、豺等在各处以不同方式啃食的，称为被啃咬（vikkhāyita）；被啃咬之物因令人厌恶而称为污秽（kucchita），所以称为‘被啃咬者’（vikkhāyitaka）。”（VI.5）
 
 特征：
 - 野生动物对尸体造成的损伤
 
 #### 6. 散落(The Scattered) - Vikkhittaka (VI.6)
 
-> "The scattered: what is strewed about is scattered. What is scattered is the same as 'the scattered.' Or alternatively, what is scattered is vile (kucchita) because of repulsiveness, thus it is 'the scattered.'"（VI.6）
+> “散落：四处散布的就是散落；散落之物就称为‘散落者’。或者说，散落之物因令人厌恶而称为污秽（kucchita），所以称为‘散落者’。”（VI.6）
 
 特征：
 - 尸体的骨骼和残骸分散开来
 
 #### 7. 砍伐(The Hacked and Scattered) - Hata-vikkhittaka (VI.7)
 
-> "The hacked and scattered: it is hacked, and it is scattered in the way just described, thus it is 'hacked and scattered' (hata-vikkhittaka). This is a term for a corpse scattered in the way just described after it has been hacked with a knife, there a foot, there the head."（VI.7）
+> “砍碎而散落：它被砍碎，又按照前面所说的方式散落，所以称为‘砍碎而散落’（hata-vikkhittaka）。这个名称指的是被刀砍碎后散落的尸体：这里有脚，那里有头。”（VI.7）
 
 特征：
 - 尸体被分解成碎片
 
 #### 8. 流血(The Bleeding) - Lohitaka (VI.8)
 
-> "The bleeding: it sprinkles, scatters blood (lohita), and it trickles here and there, thus it is 'the bleeding.' This is a term for a corpse smeared with trickling blood."（VI.8）
+> “流血：它喷洒、散落鲜血（lohita），并且血液从各处流淌，所以称为‘流血者’。这个名称指的是沾满流淌鲜血的尸体。”（VI.8）
 
 特征：
 - 尸体上有血液痕迹
 
 #### 9. 蛆虫(The Worm-Infested) - Puḷuvaka (VI.9)
 
-> "The worm-infested: it is maggots that are called worms; it sprinkles worms, thus it is worm-infested. This is a term for a corpse full of maggots."（VI.9）
+> “蛆虫：蛆被称为虫；尸体散布着蛆，所以称为蛆虫遍布。这个名称指的是充满蛆虫的尸体。”（VI.9）
 
 特征：
 - 尸体因分解而充满蛆虫
 
 #### 10. 骨骼(The Skeleton) - Atthika (VI.10)
 
-> "A skeleton: bone (atthi) is the same as skeleton (atthika). Or alternatively, bone (atthi) is vile (kucchita) because of repulsiveness, thus it is a skeleton (atthika). This is a term both for a single bone and for a framework of bones."（VI.10）
+> “骨骼：骨（atthi）与骨骼（atthika）是同义词。或者说，骨因令人厌恶而称为污秽（kucchita），所以称为骨骼（atthika）。这个名称既可指一根骨头，也可指骨头组成的骨架。”（VI.10）
 
 特征：
 - 所有软组织腐烂后只剩骨骼
@@ -1124,7 +1117,7 @@
 
 #### 第一阶段：获得适当的指导 (VI.12)
 
-> "Herein, when a meditator wants to develop the jhāna called 'of the bloated' by arousing the sign of the bloated on a bloated body, he should in the way already described approach a teacher of the kind mentioned under the earth kasina and learn the meditation subject from him."（VI.12）
+> “这里，禅修者若想在膨胀的尸体上引发膨胀相，修习称为‘膨胀’的禅那，就应依照前述方式接近地遍一节所说的那类导师，并向他学习业处。”（VI.12）
 
 关键要求：
 - 需要找到一位有资格的教师
@@ -1141,7 +1134,7 @@
 
 #### 第三阶段：获得权限和安全准备 (VI.17-18)
 
-> "Therefore he should inform a bhikkhu of the kind described and then set out eager to see the sign, and as happy and joyful as a warrior-noble (khattiya) on his way to the scene of anointing, as one going to offer libations at the hall of sacrifice, or as a pauper on his way to unearth a hidden treasure."（VI.18）
+> “因此，他应当先通知一位如前所述的比丘，然后怀着急于见到禅相的心出发；应当像刹帝利武士前往灌顶场所、像前往祭堂献供的人，或像准备挖出隐藏宝藏的穷人一样，满心欢喜、喜悦。”（VI.18）
 
 操作安全：
 - 获得高级僧侣的权限
@@ -1152,7 +1145,7 @@
 
 污秽观的目的是培养非贪欲的心理：
 
-> "For this is said: 'One who is learning the bloated sign of foulness goes alone with no companion, with unremitting mindfulness established, with his sense faculties turned inwards, with his mind not turned outwards, reviewing the path gone by and come by. In the place where the bloated sign of foulness [has been left] he notes any stone or termite-mound or creeper.'"（VI.19–20）
+> “经中说：‘正在学习膨胀不净相的人，应当独自前往，不带同伴；建立不间断的正念，使诸根向内收摄，不使心向外驰散，同时观察自己走过和走来的道路。在放置膨胀不净相的地方，他应当记住任何石头、蚁丘或藤蔓。’”（VI.19–20）
 
 关键态度：
 - 独处，没有伴侣
@@ -1170,7 +1163,7 @@
 
 作者承认污秽观会引起恐惧和反抗：
 
-> "Now, as to the questions beginning with 'what is the purpose?' … characterizing the surrounding signs? The intention of the answer that begins with the words, has non-delusion for its purpose, is this: If someone goes at the wrong time to the place where the sign of the bloated is, and opens his eyes for the purpose of apprehending the sign by characterizing the surrounding signs, then as soon as he looks the dead body he perceives as if it were standing up and threatening..."（VI.56–58）
+> “至于从‘目的是什么？’等开始的问题……为什么要辨认周围的标志？以‘以不痴为目的’开头的回答，其意如下：如果有人在不适当的时间来到放置膨胀相的地方，为了通过辨认周围标志而把握禅相便睁开眼睛，那么他一看见尸体，就会觉得尸体仿佛站起来威胁自己……”（VI.56–58）
 
 克服这些困难的方法：
 1. 不要让恐惧阻止你
@@ -1182,7 +1175,7 @@
 
 污秽观的定力范围也有明确限制：原文说明十种污秽可达到近行定及初禅，但不能据此概括为通向更高禅那；相关说明见 VI.68 及其后文。
 
-> "So when the sign has vanished in this way, the bhikkhu should sit down in his night quarters or in his day quarters and first of all review the path gone by and come by up to the place where he is actually sitting cross-legged, doing it in this way..."（VI.62）
+> “因此，当禅相这样消失后，比丘应在夜间住处或白天住处坐下，首先观察自己走来和走去的道路，一直观察到当前盘腿而坐的地方；应当如此修习……”（VI.62）
 
 其在本章中可确认的作用是：
 1. 依本章所述对治身体美的贪欲
@@ -1215,7 +1208,7 @@
 
 #### 基本理论 (VII.1)
 
-> "Now, ten recollections were listed next after the ten kinds of foulness (III.105). As to these: Mindfulness (sati) itself is recollection (anussati) because it arises again and again; or alternatively, the mindfulness (sati) that is proper (anurūpa) for a clansman gone forth out of faith, since it occurs only in those instances where it should occur, is 'recollection' (anussati)."（VII.1）
+> “在十种不净之后，列出了十种忆念（III.105）。关于这些：念（sati）本身就是忆念（anussati），因为它一次又一次地生起；或者说，出于信心而出家的善男子所适合的念，因为它只在应当生起的场合生起，所以称为‘忆念’（anussati）。”（VII.1）
 
 全书总说列出十种忆念；第七章正文详述其中前六项，后四项（死随念、身至念、入出息念、寂止随念）属于第八章：
 
@@ -1234,17 +1227,17 @@
 
 #### 修习方法 (VII.2-3)
 
-> "Now, a meditator with absolute confidence who wants to develop firstly the recollection of the Enlightened One among these ten should go into solitary retreat in a favourable abode and recollect the special qualities of the Enlightened One, the Blessed One, as follows: 'That Blessed One is such since he is accomplished, fully enlightened, endowed with [clear] vision and [virtuous] conduct, sublime, the knower of worlds, the incomparable leader of men to be tamed, the teacher of gods and men, enlightened and blessed.'"（VII.2；引 M I 37、A III 285）
+> “现在，若一位信心坚定的禅修者想首先修习十种忆念中的佛随念，就应当到适宜的住处独居，忆念世尊、觉者的特殊功德如下：‘那位世尊是应供者、正等正觉者、明行具足者、善逝、世间解、无上调御丈夫、天人师、佛、世尊。’”（VII.2；引 M I 37、A III 285）
 
 禅修者需要认真思考佛陀的十个特质：
 
-> "Here is the way he recollects: 'That Blessed One is such since he is accomplished, he is such since he is fully enlightened, ... he is such since he is blessed'—he is so for these several reasons, is what is meant."（VII.3）
+> “他忆念的方法如下：‘那位世尊因为是应供者，所以如此；因为是正等正觉者，所以如此；……因为是世尊，所以如此。’意思是，他由于这些不同的理由而成为这样的人。”（VII.3）
 
 #### 佛陀的特质分析 (VII.4-25)
 
 作者详细阐述了"成就"(accomplished)的含义：
 
-> "Herein, what he recollects firstly is that the Blessed One is accomplished (arahanta) for the following reasons: (i) because of remoteness (āraka), (ii) because of his enemies (ari), (iii) the spokes (ara) having been destroyed (hata), (iv) because of his worthiness (araha) of requisites, etc., and (v) because of absence of secret (rahābhāva) evil-doing."（VII.4）
+> “这里，他首先忆念世尊之所以为应供者（arahanta），有以下几个理由：（一）因为远离（āraka）；（二）因为摧毁了敌人（ari）；（三）因为轮辐（ara）已经被摧毁（hata）；（四）因为值得接受衣食等资具（araha）；（五）因为没有隐藏的恶行（rahābhāva）。”（VII.4）
 
 这包括五个相互补充的解释：
 - 他远离所有的污点
@@ -1255,7 +1248,7 @@
 
 #### 完全开悟的含义 (VII.26)
 
-> "He is fully enlightened (sammāsambuddha) because he has discovered (buddha) all things rightly (sammā) and by himself (sāmaṃ)."（VII.26）
+> “他是正等正觉者（sammāsambuddha），因为他以正确的方式（sammā）、亲自（sāmaṃ）觉知了一切法（buddha）。”（VII.26）
 
 这里的“发现一切法”在随后解释中具体联系到四谛及应知、应遍知、应断、应证、应修等事项；不能脱离该上下文简化成无条件的“同时直接知道所有事物”。
 
@@ -1263,7 +1256,7 @@
 
 虽然章节中提到，但作者强调了法的特殊性：
 
-> "The recollection arisen inspired by the Law is the recollection of the Dhamma. This is a term for mindfulness with the special qualities of the Law's being well proclaimed, etc., as its object."（VII.1）
+> “由法所启发而生起的忆念，就是法随念。这是以法善说等特殊功德为所缘的念之名称。”（VII.1）
 
 法（Dhamma）指的是：
 - 佛陀教导的道路
@@ -1274,19 +1267,19 @@
 
 僧团（Sangha）代表了修行者们的共同体：
 
-> "The recollection arisen inspired by the Community is the recollection of the Sangha. This is a term for mindfulness with the Community's special qualities of being entered on the good way, etc., as its object."（VII.1）
+> “由僧团所启发而生起的忆念，就是僧随念。这是以僧团已进入善道等特殊功德为所缘的念之名称。”（VII.1）
 
 ### 四、对戒律的忆念
 
-> "The recollection arisen inspired by virtue is the recollection of virtue. This is a term for mindfulness with the special qualities of virtue's untornness, etc., as its object."（VII.1）
+> “由戒所启发而生起的忆念，就是戒随念。这是以戒不破、不裂等特殊功德为所缘的念之名称。”（VII.1）
 
 ### 五、对布施的忆念
 
-> "The recollection arisen inspired by generosity is the recollection of generosity. This is a term for mindfulness with generosity's special qualities of free generosity, etc., as its object."（VII.1）
+> “由布施所启发而生起的忆念，就是施随念。这是以布施的慷慨无吝等特殊功德为所缘的念之名称。”（VII.1）
 
 ### 六、对天神的忆念
 
-> "The recollection arisen inspired by deities is the recollection of deities. This is a term for mindfulness with the special qualities of one's own faith, etc., as its object with deities standing as witnesses."（VII.1）
+> “由诸天所启发而生起的忆念，就是天随念。这是以自己的信心等特殊功德为所缘、以诸天作为见证者的念之名称。”（VII.1）
 
 ### 第七章的关键特征
 
@@ -1294,7 +1287,7 @@
 
 与kasinas不同，忆念法不一定导向高级禅定状态。原文明确说：
 
-> "Those that bring access only and which absorption: the eight recollections—excepting mindfulness occupied with the body and mindfulness of breathing—the perception of foulness in nutriment, and the defining of the four elements, are ten meditation subjects that bring access only."（III.106）
+> “只带来近行定而不带来安止定的，是十种业处：八种忆念——除去身至念和入出息念——以及食物厌想和四界差别观。”（III.106）
 
 这意味着大多数忆念法只能达到近行定，不能达到吸收定。
 
@@ -1308,7 +1301,7 @@
 
 第七章强调了知识的重要性，这与前几章强调的直接感知观察形成对比：
 
-> "Understanding of discernment of conditions thus, 'Ignorance is a cause, formations are causally arisen, and both these states are causally arisen'; is knowledge of the causal relationship of states."（VII.20；引 Paṭis I 50）
+> “如这样辨别条件：‘无明是因，行是由因生起的；这两种法都是由因生起的。’这种理解，就是对诸法因果关系的知识。”（VII.20；引 Paṭis I 50）
 
 这种理解涉及对因果关系（Dependent Origination）的深刻洞察。
 
@@ -1322,7 +1315,7 @@
 
 原文的最后段落总结了这一点：
 
-> "Here the Master's possession of vision shows the greatness of understanding, and his possession of conduct the greatness of his compassion... It was through understanding that the Blessed One reached the kingdom of the Dhamma, and through compassion that he became the bestower of the Dhamma. It was through understanding that he felt revulsion for the round of rebirths, and through compassion that he bore it."（VII.32 注释 9）
+> “这里，大师具足明见，显示智慧的伟大；具足行持，显示慈悲的伟大……世尊凭借智慧到达法界，凭借慈悲成为法的施者；凭借智慧对轮回生起厌离，凭借慈悲承担轮回。”（VII.32 注释 9）
 
 ### 第七章章末总说（VII.119–128）
 
@@ -1373,31 +1366,31 @@
 
 #### 死亡的定义 (VIII.1-3)
 
-> "Now comes the description of the development of mindfulness of death, which was listed next (III.105). Herein, death (maraṇa) is the interruption of the life faculty included within [the limits of] a single becoming (existence)."（VIII.1）
+> “现在开始说明死随念的修习；死随念在前面的总说中列为下一项（III.105）。这里，死亡（maraṇa）是包含在一次有（存在）之中的命根中断。”（VIII.1）
 
 作者进一步区分了几种死亡的类型：
 
 1. **及时的死亡** - 由于寿命完成而自然发生
 2. **非及时的死亡** - 由于业力在生命跨度中断而发生
 
-> "Herein, timely death comes about with the exhaustion of merit or with the exhaustion of a life span or with both. Untimely death comes about owing to the result of [former] rebirth-producing kamma's having finished ripening although favourable conditions for prolonging the continuity of a life span may still be present."（VIII.2）
+> “这里，及时死亡是由于福德耗尽、寿命耗尽，或二者同时耗尽而发生的。非时死亡则是由于过去能产生投生的业已经成熟完毕，虽然延续寿命的有利条件可能仍然存在。”（VIII.2）
 
 #### 修习方法 (VIII.4-7)
 
 禅修者应该按以下方式进行对死亡的忆念：
 
-> "One who wants to develop this should go into solitary retreat and exercise attention wisely in this way: 'Death will take place; the life faculty will be interrupted,' or 'Death, death.'"（VIII.4）
+> “想修习此法的人，应当独居，并以适当的方式作意：‘死亡将会发生，命根将会中断’，或者作意：‘死亡，死亡。’”（VIII.4）
 
 但重要的是，这不应该导致恐惧，而应该导致紧迫感：
 
-> "If he exercises his attention unwisely in recollecting the [possible] death of an agreeable person, sorrow arises, as in a mother on recollecting the death of her beloved child she bore; and gladness arises in recollecting the death of a disagreeable person, as in enemies on recollecting the death of their enemies; and no sense of urgency arises on recollecting the death of neutral people, as happens in a corpse-burner on seeing a dead body; and sorrow arises on recollecting one's own death, as happens in a timid person on seeing a murderer with a poised sword."（VIII.5）
+> “如果他以不恰当的方式忆念可爱之人的死亡，就会生起悲伤，正如母亲忆念自己所生爱子的死亡时一样；忆念讨厌之人的死亡时会生起喜悦，正如敌人忆念仇敌的死亡时一样；忆念中立之人的死亡时不会生起紧迫感，正如焚尸者看见尸体时一样；忆念自己的死亡时会生起悲伤，正如胆怯的人看见手持利剑的杀人者时一样。”（VIII.5）
 
 #### 八种回忆死亡的方式 (VIII.8-39)
 
 作者给出了八种忆念死亡的角度；原稿此前只展开了前四项，现补齐完整分类：
 
 1. **作为杀人者的外观** (VIII.9)
-   > "Herein, as having the appearance of a murderer: he should do his recollecting thus, 'Just as a murderer appears with a sword, thinking, 'I shall cut off this man's head,' and applies it to his neck, so death appears.'"
+   > “这里，应当把死亡忆念为杀人者的样子：‘正如杀人者手持利剑出现，想着“我要砍下这个人的头”，并把剑放到他的脖子上一样，死亡也如此出现。’”
 
 2. **成就的败坏**（VIII.14–15）：健康、青春、生命等成就都以败坏为结局。
 
@@ -1417,7 +1410,7 @@
 
 当禅修者正确地开发死亡忆念时：
 
-> "When some exercise it merely in this way their hindrances get suppressed, their mindfulness becomes established with death as its object, and the meditation subject reaches access."（VIII.7）
+> “有些人仅仅这样修习时，五盖便受到压伏；以死亡为所缘的正念得以建立，业处达到近行定。”（VIII.7）
 
 这导致对生命的紧迫感，激发禅修者更加努力地追求精神进步。
 
@@ -1427,9 +1420,9 @@
 
 第八章强调，死亡不是一个偶然事件，而是存在的基本特征：
 
-> "As life keeps dwindling steadily
-> Till mortals' span, like water pools
-> In failing rills, is all used up"（VIII.12）
+> “生命不断稳定地减少，
+> 直到凡人的寿命如干涸溪流中的水潭，
+> 全部耗尽。”（VIII.12）
 
 #### 2. 对死亡的冥想如何激发修行
 
@@ -1442,7 +1435,7 @@
 
 作者强调，对死亡的冥想应该是平衡的，既不应该导致绝望，也不应该导致对死亡的冷漠：
 
-> "So this death, which comes along with birth, is like a murderer with poised sword. And like the murderer who applies the sword to the neck, it carries off life and never returns to bring it back."（VIII.13）
+> “因此，伴随出生而来的死亡，就像手持利剑、伺机而动的杀人者；它像杀人者把剑放到脖子上一样夺走生命，而且永不返回将生命带回。”（VIII.13）
 
 ---
 
@@ -1473,7 +1466,7 @@
 
 #### 32个身体部分 (VIII.42-91)
 
-> "What is intended here as mindfulness occupied with the body is the thirty-two aspects. This meditation subject is taught as the direction of attention to repulsiveness thus..."（VIII.42）
+> “这里所谓的身至念，是指三十二个部分。这个业处的教导，是把注意力引向不净，方法如下……”（VIII.42）
 
 这32个部分包括：头发、体毛、指甲、牙齿、皮肤；肌肉、筋、骨、骨髓、肾；心、肝、膈、脾、肺；大肠、小肠、胃中物、粪便、脑；胆汁、痰、脓、血、汗、脂肪、泪、油脂、唾液、鼻涕、关节滑液、尿液。原文的重点是逐项确定颜色、形状、方向、位置与界限，而不是将其概括为“上体/下体”等现代解剖分区。
 
@@ -1481,7 +1474,7 @@
 
 作者详细描述了学习这个禅修对象的方法：
 
-> "Herein, the sevenfold skill in learning should be told thus: (1) as verbal recitation, (2) as mental recitation, (3) as to colour, (4) as to shape, (5) as to direction, (6) as to location, (7) as to delimitation."（VIII.48）
+> “这里，应当这样说明学习的七种技巧：（一）言语诵读；（二）心中诵读；（三）颜色；（四）形状；（五）方向；（六）位置；（七）界限。”（VIII.48）
 
 这包括：
 1. **言语诵读** - 通过言语重复每个部分
@@ -1539,7 +1532,7 @@
 
 #### 16个基础 (VIII.145-146)
 
-> "It has been described by the Blessed One as having sixteen bases thus: 'And how developed, bhikkhu, how practiced much, is both peaceful and sublime, it is an unadulterated blissful abiding, and it banishes at once and stills evil unprofitable thoughts as soon as they arise.'"（VIII.145）
+> “世尊这样说明它具有十六个基础：‘比丘，入出息念如何修习、如何多修，才会既寂静又殊胜，成为纯净而快乐的住处，并且在不善、不利的念头一生起时立即将其驱除、平息？’”（VIII.145）
 
 这16个基础分为四组，每组四项（每项都包含吸气与呼气）：
 
@@ -1575,7 +1568,7 @@
 
 禅修者需要理解呼吸不仅是物理现象，而是：
 
-> "In-breaths and out-breaths tranquilizing the bodily formation are a body. The establishment (foundation) is mindfulness. The contemplation is knowledge."（VIII.185）
+> “使身行平静的入息和出息就是身；建立（基础）就是正念；观照就是知识。”（VIII.185）
 
 这意味着：
 - 吸入与呼出及其平静化属于“身”的范围；
@@ -1587,13 +1580,13 @@
 
 对呼吸的忆念可以从定的修习延伸到对诸行生灭的观照；“最高理解”是编者概括：
 
-> "He reaches contemplation of dissolution by abandoning [attention to] arising. When all formations have appeared as terror owing to the contemplation of their incessant dissolution, he becomes dispassionate towards them... his greed for them fades away, and he is liberated from them."（VIII.224）
+> “他放弃对生起的注意，转而达到坏灭随观。当一切行因持续不断的坏灭而显现为可怖时，他对它们离贪……对它们的贪欲消退，于是从它们中解脱。”（VIII.224）
 
 ### 四、寂止随念（Recollection of Peace，VIII.245–250）
 
 寂止随念是第八章列出的第十项忆念。修行者以涅槃及其止息苦、止息渴爱等寂静功德为所缘，而不是把它简化成一般意义上的放松或情绪平静：
 
-> "Bhikkhus, in so far as there are dhammas, whether formed or unformed, fading away is pronounced the best of them, that is to say, the disillusionment of vanity, the elimination of thirst, the abolition of reliance, the termination of the round, the destruction of craving, fading away, cessation, Nibbāna"（A II 34，引于 VIII.245）
+> “比丘们，在一切有为或无为法中，离欲被宣说为最上者，也就是幻妄的醒悟、渴爱的消除、依止的废除、轮回的终止、爱欲的灭尽、离贪、止息、涅槃。”（A II 34，引于 VIII.245）
 
 原文随后解释“寂止”所包含的止息、离渴爱、终止轮回等义项；本节应理解为以涅槃的寂静功德作忆念对象，不能据此把忆念本身等同于已经证得涅槃。
 
@@ -1661,25 +1654,25 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 四梵住在第三章中已被提及为禅修对象（III.105），本章展开详细说明。
 
-> "The four divine abidings were mentioned next to the recollections as meditation subjects (III.105). They are loving-kindness, compassion, gladness and equanimity. A meditator, who wants to develop firstly loving-kindness among these, if he is a beginner, should sever the impediments and learn the meditation subject." (IX.1)
+> “四梵住在忆念之后被列为禅修业处（III.105）。它们是慈、悲、喜和舍。禅修者若想首先修习其中的慈，且还是初学者，就应切断障碍并学习业处。”（IX.1）
 
 作者开宗明义：学习四梵住的首要条件是"切断障碍"（sever the impediments）、学习禅修对象，并在用餐后消除由饮食引起的昏沉，在安静处安坐。
 
 #### 2. 修习慈心前的核心准备：认识仇恨的危险与忍辱的利益
 
-> "Why? Because hate has to be abandoned and patience attained in the development of this meditation subject, and he cannot abandon unseen dangers and attain unknown advantages." (IX.2)
+> “为什么？因为在修习这个业处时，必须舍弃仇恨、获得忍辱；如果不这样做，他就无法舍弃尚未看见的危险，也无法获得尚未知道的利益。”（IX.2）
 
 慈心修习的核心对立面是"仇恨"（hate），其替代品是"忍辱"（patience）。因此禅修者在开始之前，必须先用经文审视仇恨的危害：
 
-> "Friends, when a man hates, is a prey to hate and his mind is obsessed by hate, he kills living things, and …" (A I 216)
+> “朋友们，一个人心怀仇恨，成为仇恨的猎物，心被仇恨占据时，就会杀害众生……”（A I 216）
 
 同时要记住忍辱的殊胜：
 
-> "No higher rule, the Buddhas say, than patience,
-> And no Nibbāna higher than forbearance" (D II 49; Dhp 184)
+> “诸佛说，没有比忍辱更高的戒律，
+> 也没有比宽忍更高的涅槃。”（D II 49；Dhp 184）
 
-> "Patience in force, in strong array:
-> 'Tis him I call a brahman" (Dhp 399)
+> “能在强力和强大阵势面前保持忍耐，
+> 我称这样的人为婆罗门。”（Dhp 399）
 
 这一准备工作建立了修慈的心理基础：仇恨是需要对治的毒药，忍辱是涵养慈心的土壤。
 
@@ -1693,7 +1686,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **中性的人**（neutral person）：对其修慈会令人感到疲劳
 - **敌对的人**（hostile person）：会引发愤怒
 
-> "Anger springs up in him if he recollects a hostile person. That is why it should not be developed at first towards an antipathetic person and the rest." (IX.5)
+> “如果他忆念敌对的人，愤怒就会在心中生起。因此，最初不应对反感的人以及其余几类人修习慈心。”（IX.5）
 
 特别说明：**不应对异性修习慈心**，否则会引起欲望。一位长老的案例说明了这一点：他向妻子修习慈心，整夜挣扎于欲望（"fighting against the wall"）。
 
@@ -1701,14 +1694,14 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 2. 应最初对自己修习慈心
 
-> "First of all it should be developed only towards oneself, doing it repeatedly thus: 'May I be happy and free from suffering' or 'May I keep myself free from enmity, affliction and anxiety and live happily.'" (IX.8)
+> “首先只能对自己修习慈心，反复作意：‘愿我快乐、远离痛苦’，或：‘愿我远离敌意、苦恼和焦虑，快乐地生活。’”（IX.8）
 
 但这并非说将自身列为慈心的永久对象，而是**以自身为榜样**（making oneself the example）：
 
-> "I visited all quarters with my mind
-> Nor found I any dearer than myself;
-> Self is likewise to every other dear;
-> Who loves himself will never harm another" (S I 75; Ud 47)
+> “我用心遍访一切方向，
+> 找不到比自己更亲爱者；
+> 对其他人而言自己也同样亲爱；
+> 爱自己的人绝不会伤害他人。”（S I 75；Ud 47）
 
 这是慈心扩展的一个心理起点：原文以“愿我安乐”等作意开始，再逐步向其他对象扩展；“自然向外扩展”是编者对修习过程的概括。
 
@@ -1731,19 +1724,19 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 方法二：自我教诫，引用经典 (IX.15-22)
 
-> "He should reflect upon the saw
-> With other figures of such kind,
-> And strive, and strive repeatedly,
-> To leave resentment far behind."（IX.15）
+> “他应当思惟锯子的譬喻，
+> 以及其他类似的譬喻，
+> 一再努力、不断努力，
+> 将怨恨远远抛在身后。”（IX.15）
 
 引用佛陀教导："比丘们，即使强盗用两手锯的方式残忍地截断你的四肢，若你因此怀恨，便不是在实践我的教导。"(M I 129)
 
 接着引用一段长诗，阐明愤怒的徒劳：
 
-> "Since states last but a moment's time
-> Those aggregates, by which was done
-> The odious act, have ceased, so now
-> What is it you are angry with?" (IX.22)
+> “诸法只存在一刹那；
+> 造成可憎行为的那些聚合已经灭去，
+> 那么现在，
+> 你究竟在对什么生气？”（IX.22）
 
 这首诗从时间角度说明：当愤怒升起时，那个"做了伤害之事"的诸行（聚合）早已消失，因此实际上没有可以愤怒的对象。
 
@@ -1753,10 +1746,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 同样对对方也这样观照："他怀有仇恨对他自己有什么好处？……他像一个想打另一个人但却抓起了燃烧的炭火、使自己先受伤的人。"(IX.24)
 
-> "When a fool hates a man that has no hate,
-> Is purified and free from every blemish,
-> Such evil he will find comes back on him,
-> As does fine dust thrown up against the wind" (Dhp 125)
+> “愚人若憎恨一个不怀恨、清净而无瑕疵的人，那种恶行终将反过来落到自己身上，如同逆风扬起的细尘。”（Dhp 125）
 
 #### 方法四：审视导师的往昔行为 (IX.25-35)
 
@@ -1767,21 +1757,19 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 **阐达比丘本生故事**（Cūla-Dhammapāla Jātaka）：作为婴儿，父王命人砍断其四肢，母后哀叹，但他坚守无恨之心。
 **大象恰丹达本生**（Chaddanta）：被毒箭刺中，象王问猎人："你的目的是什么？" 并主动奉上自己的象牙以完成使命。
 
-> "The brave aspire, the wise will not lose heart;
-> I see myself as I had wished to be" (Ja I 267)
+> “勇者有所追求，智者不会灰心；我看见自己正如我所愿成为的那样。”（Ja I 267）
 
 这些故事的逻辑论证是：若连造血和牺牲一切的人都不怀恨，你这微不足道的偶尔受到伤害怎能生恨？
 
 #### 方法五：审视轮回的无始性 (IX.36)
 
-> "Bhikkhus, it is not easy to find a being who has not formerly been your mother … your father … your brother … your sister … your son … your daughter" (S II 189-90)
+> “比丘们，要找到一个过去不曾做过你母亲、父亲、兄弟、姐妹、儿子或女儿的众生，并不容易。”（S II 189–190）
 
 这一方法通过认识"在无始的轮回中，每一众生都曾是我的亲人"，从根本上消解了仇恨的基础——对方与"我"之间的分别。
 
 #### 方法六：审视慈心的十一种利益 (IX.37)
 
-> "Bhikkhus, when the mind-deliverance of loving-kindness is cultivated, developed, much practiced, made the vehicle, made the foundation, established, consolidated, and properly undertaken, eleven blessings can be expected. What are the eleven?
-> A man sleeps in comfort, wakes in comfort, and dreams no evil dreams, he is dear to human beings, he is dear to non-human beings, deities guard him, fire and poison and weapons do not affect him, his mind is easily concentrated, the expression of his face is serene, he dies unconfused, if he penetrates no higher he will be reborn in the Brahma-world." (A V 342) (IX.37)
+> “比丘们，当慈心的心解脱被修习、发展、多修，成为车辆、成为基础，建立、巩固并正确实行时，可以期待十一种利益。哪十一种？人睡得安稳，醒得安稳，不做恶梦；为人所爱，为非人所爱；诸天守护他；火、毒和武器不能伤害他；心容易集中；面容安详；死时心不迷乱；若未能证得更高成就，则投生梵天界。”（A V 342）（IX.37）
 
 这十一种利益形成了修慈的巨大动力。
 
@@ -1789,13 +1777,13 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 若以上方法皆无效，应对敌人进行"分析为元素"：
 
-> "Now, you who have gone forth into homelessness, when you are angry with him, what is it you are angry with? Is it head hairs you are angry with? Or body hairs? Or nails? … Or is it the earth element in the head hairs you are angry with? Or the water element? Or the fire element? Or the air element?" (IX.38)
+> “你们这些出家人，当你对他生气时，你究竟在气什么？是在气头发吗？还是体毛？还是指甲？……是在气头发中的地界吗？还是水界？火界？风界？”（IX.38）
 
 将人解析为四大元素和五蕴之后，"仇恨找不到立足点，就像芥子在针尖上或绘于空中一般。" 这是将概念性的"敌人"还原为无自性之法集合的分析技术。
 
 #### 最后手段：布施交换 (IX.39)
 
-> "If he cannot effect the resolution into elements, he should try the giving of a gift. It can either be given by himself to the other or accepted by himself from the other."（IX.39）
+> “如果他无法把对方分析为诸界，就应当尝试赠送礼物；可以由自己送给对方，也可以接受对方送来的礼物。”（IX.39）
 
 原文把赠礼列为消除怨恨的最后方法；“受礼者自然产生善意”是编者对其心理作用的解释。
 
@@ -1803,30 +1791,19 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 消除怨恨之后，禅修者进行**"突破屏障"**（breaking down the barriers）的练习：
 
-> "Then he can turn his mind with loving-kindness towards that hostile person too, just as towards the one who is dear, the very dear friend, and the neutral person. Then he should break down the barriers by practicing loving-kindness over and over again, accomplishing mental impartiality towards the four persons." (IX.40)
+> “然后，他也可以像对待亲爱者、最亲爱的朋友和中性者那样，将慈心转向那位敌对者。接着，他应反复修习慈心，打破界限，对这四类人达到心的平等。”（IX.40）
 
 **屏障被突破的判别标准**（IX.41）：
 
 作者用一个生动案例说明：假设禅修者与亲爱者、中性者、仇人坐在一处，强盗来索要一人作祭祀用——若禅修者此时对四人（含自身）无法平等看待，屏障未被突破。只有当他不愿任何一人被伤害时，屏障才算突破。
 
-> "When he discriminates between
-> The four, that is, himself, the dear,
-> The neutral, and the hostile one,
-> Then 'skilled' is not the name he gets,
-> Nor 'having amity at will,'
-> But only 'kindly towards beings.'
-> Now, when a bhikkhu's barriers
-> Have all the four been broken down,
-> He treats with equal amity
-> The whole world with its deities;
-> Far more distinguished than the first
-> Is he who knows no barriers." (IX.42)
+> “当他区别这四者——自己、亲爱者、中性者和敌对者——就不能称为‘善巧者’，也不能称为‘随意拥有友爱者’，只能称为‘对众生慈爱者’。然而，当比丘对这四者的界限都被打破时，他便以平等的友爱对待包括诸天在内的整个世界；不知界限的人，远比前者更加卓越。”（IX.42）
 
 ### 第五部分：慈心禅那的获得与遍一切处
 
 原文在说明突破屏障后，描述禅那可在同一相（sign）上生起；这里不把“生起”表述为对所有修行者的自然必然结果：
 
-> "He reaches absorption in the way described under the earth kasina without trouble by cultivating, developing, and repeatedly practicing that same sign." (IX.43)
+> “他通过培育、发展并反复修习同一禅相，就能像地遍一节所说的那样毫不困难地达到安止。”（IX.43）
 
 至此，禅修者达到**第一禅那**，它抛弃了五种障碍、具备五种禅那要素、以十种方式是善巧的，并伴随着慈心。通过继续修习，可达第二、第三禅那（四禅体系）或第二、第三、第四禅那（五禅体系）。
 
@@ -1835,10 +1812,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 慈心禅那的完整修习包括三种遍覆方式：
 
 **1. 无特定范围的遍覆（Unspecified pervasion，5种方式）**
-> "May all beings be free from enmity, affliction and anxiety, and live happily. May all breathing things … all creatures … all persons … all those who have a personality …" (Patis II 130)
+> “愿一切众生远离敌意、苦恼和焦虑，快乐地生活。愿一切有呼吸者……一切有情……一切人……一切具有个体性的众生……”（Paṭis II 130）
 
 **2. 特定范围的遍覆（Specified pervasion，7种方式）**
-> "May all women be free from enmity, affliction and anxiety, and live happily. May all men … all Noble Ones … all not Noble Ones … all deities … all human beings … all in states of loss be free from enmity, affliction and anxiety, and live happily." (Patis II 131)
+> “愿一切女人远离敌意、苦恼和焦虑，快乐地生活。愿一切男人……一切圣者……一切非圣者……一切诸天……一切人类……一切处于恶趣者，都远离敌意、苦恼和焦虑，快乐地生活。”（Paṭis II 131）
 
 **3. 方向性的遍覆（Directional pervasion，10个方向）**
 东、西、北、南、东北、西北、东南、西南、下方、上方——各个方向的一切众生均被慈心遍覆。
@@ -1879,11 +1856,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 而应以**处于苦境的人**开始：
 
-> "In the Vibhaṅga it is said: 'And how does a bhikkhu dwell pervading one direction with his heart endued with compassion? Just as he would feel compassion on seeing an unlucky, unfortunate person, so he pervades all beings with compassion.'" (Vibh 273)
+> “《分别论》中说：‘比丘如何以充满悲的心遍满一个方向而住？正如他看见一个不幸、遭遇苦难的人时会生起悲心，他也以悲遍满一切众生。’”（Vibh 273）
 
 最初应观想一个"可怜之人"——被截去手脚、坐在贫民收容所中、被蛆虫啃咬、在哀鸣的人：
 
-> "This being has indeed been reduced to misery; if only he could be freed from this suffering!"（IX.79）
+> “这个众生确实已经陷入悲惨境地；但愿他能够从这种痛苦中解脱！”（IX.79）
 
 若找不到这样的人，可对**即将受刑的恶人**生起悲心——虽然他此刻快乐，但他缺少善业，终将面临苦难。(IX.79)
 
@@ -1897,7 +1874,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **最初修习的对象是"好友"**（boon companion，boosom friend），这是一个"看到好事就先笑起来、然后再说话"的人——原文把这类好友列为随喜的最近起因：
 
-> "Or on seeing or hearing about a dear person being happy, cheerful and glad, gladness can be aroused thus: 'This being is indeed glad. How good, how excellent!'" (IX.85)
+> “或者，看见或听说亲爱的人快乐、欢欣、喜悦时，可以这样生起随喜：‘这个众生确实很喜悦。多么好，多么优秀！’”（IX.85）
 
 若好友已经落难，可通过回忆过去的快乐或展望未来的成功来唤起随喜。依次向亲爱者、中性者、敌对者修习，最终获得第三（四禅体系）或第四（五禅体系）禅那。
 
@@ -1911,7 +1888,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 2. 修习方法
 
-> "He should arouse equanimity (upekkhā) by looking on with equanimity (ajjhupekkhitvā) at a person who is normally neutral; after that at a dear person, and the rest." (IX.88)
+> “他应先以平等心（ajjhupekkhitvā）观察通常的中性者，从而生起舍（upekkhā）；之后再对亲爱者以及其余对象修习。”（IX.88）
 
 依次向中性者、亲爱者、敌对者修习，最终突破屏障，获得第四禅那——"以平静和单点性为特征"，对应于地、水、火、风元素禅那的第四禅。
 
@@ -1941,7 +1918,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 喜：驱逐厌倦（aversion/boredom）
 - 舍：驱逐贪爱和怨恨（greed and resentment）
 
-> "For this is the escape from ill will, friends, that is to say, the mind-deliverance of loving-kindness … For this is the escape from cruelty, friends, that is to say, the mind-deliverance of compassion … For this is the escape from boredom, friends, that is to say, the mind-deliverance of gladness … For this is the escape from greed, friends, that is to say, the mind-deliverance of equanimity" (D III 248)
+> “朋友们，慈心的心解脱就是对恶意的出离……朋友们，悲心的心解脱就是对残忍的出离……朋友们，喜心的心解脱就是对厌烦的出离……朋友们，舍心的心解脱就是对贪欲的出离。”（D III 248）
 
 #### 4. 近敌与远敌 (IX.98-101)
 
@@ -1963,21 +1940,18 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 近敌 = **无知的冷漠舍（equanimity of unknowing）**：即愚痴者的漠然，两者外形相似但本质迥异。
 - 远敌 = **贪爱与怨恨（greed and resentment）**：两者完全对立。
 
-> "It is not possible to practice loving-kindness and feel anger simultaneously." (IX.98)
+> “不可能一面修习慈心，一面同时感到愤怒。”（IX.98）
 
-> "The equanimity based on the home life … is called equanimity of unknowing" (M III 219) (IX.101)
+> “以在家生活为基础的舍……称为无知之舍。”（M III 219）（IX.101）
 
 #### 5. 四问解答 (IX.105-107)
 
 **为何叫"神圣住所"（divine abidings）？**
-> "The divineness of the abiding should be understood here in the sense of best and in the sense of immaculate. For these abidings are the best in being the right attitude towards beings. And just as Brahmā gods abide with immaculate minds, so the meditators who associate themselves with these abidings abide on an equal footing with Brahmā gods." (IX.106)
+> “这里，‘神圣住所’中的神圣，应从最胜和无瑕两方面理解。因为这些住所是对待众生的正确态度中最胜的；又如梵天以无瑕的心安住，修习这些住所的禅修者也与梵天处于同等地位。”（IX.106）
 
 **为何是四种？为何叫"无量（measureless states）"？**
 
-> "Their number four is due to paths to purity
-> And other sets of four; their order to their aim
-> As welfare and the rest. Their scope is found to be
-> Immeasurable, so 'measureless states' their name." (IX.107)
+> “它们之所以是四种，是因为有通向清净的道路以及其他四类法；它们的次第，是依照福祉等各自目的而定。它们的范围不可测量，所以称为‘无量之法’。”（IX.107）
 
 四梵住依次对应于：促进众生福利、消除众生痛苦、随众生之喜而喜、以平等心看待众生——这是原文列出的四个相应方向；不把它扩大为覆盖与众生关系的全部可能面向。
 
@@ -1991,14 +1965,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "When a fool hates a man that has no hate,
-> Is purified and free from every blemish,
-> Such evil he will find comes back on him,
-> As does fine dust thrown up against the wind" (Dhp 125)
+> “愚人若憎恨一个不怀恨、清净而无瑕疵的人，那种恶行终将反过来落到自己身上，如同逆风扬起的细尘。”（Dhp 125）
 
-> "May all beings be free from enmity, affliction and anxiety, and live happily." (Patis II 130) — 慈心遍覆的标准公式
+> “愿一切众生远离敌意、苦恼和焦虑，快乐地生活。”（Paṭis II 130）——慈心遍覆的标准公式
 
-> "Loving-kindness is characterized here as promoting the aspect of welfare. Its function is to prefer welfare. It is manifested as the removal of annoyance. Its proximate cause is seeing loveableness in beings. It succeeds when it makes ill will subside, and it fails when it produces (selfish) affection." (IX.93)
+> “这里，慈的特征是促进福祉；作用是偏向福祉；显现为消除恼害；近因是看见众生的可爱性。它在使嗔恚平息时成功，在产生（自私的）爱着时失败。”（IX.93）
 
 ---
 
@@ -2032,7 +2003,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 修习空无边处的前提是禅修者已经达到**色界第四禅那**，并对色法（物质性）感到厌离。
 
-> "Now, as to the four immaterial states mentioned next to the divine abidings (III.105), one who wants firstly to develop the base consisting of boundless space sees in gross physical matter danger through the wielding of sticks, etc., because of the words: ''It is in virtue of matter that wielding of sticks, wielding of knives, quarrels, brawls and disputes takes place.'" (X.1)
+> “现在，关于四梵住之后列出的四种无色状态（III.105），想首先修习空无边处的人，应当从粗显色法中看见挥杖等行为的危险，因为经中说：‘正是由于色法，才会发生挥杖、挥刀、争吵、斗殴和争执。’”（X.1）
 
 觉音尊者用**逃蛇人和逃仇人的比喻**来说明这一厌离的心理过程(X.3-4)：
 
@@ -2043,7 +2014,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 2. 实际操作方法
 
-> "So when he has thus become disgusted with (dispassionate towards) the kasina materiality, the object of the fourth jhāna, and wants to get away from it, he achieves mastery in the five ways." (X.5)
+> “当他这样对作为第四禅所缘的遍相色法感到厌离，并希望从中脱离时，就以五种方式获得自在。”（X.5）
 
 达成掌握（mastery in five ways）后，他进入第四禅那：
 1. 看到"此禅那以我已厌离的物质为对象"
@@ -2053,7 +2024,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 然后他**将kasina的物质相扩展到整个世界范围**，再**去掉（remove）kasina的物质相**，只剩下"空间"（space）。
 
 关键解释：
-> "When he is removing it, he neither folds it up like a mat nor withdraws it like a cake from a tin. It is simply that he does not advert to it or give attention to it or review it; it is when he neither adverts to it nor gives attention to it nor reviews it, but gives his attention exclusively to the space touched by it, [regarding that] as 'space, space,' that he is said to 'remove the kasina.'" (X.7)
+> “所谓移除遍相，并不是像折叠席子那样把它卷起来，也不是像从模具中取出糕点那样把它抽出来；只是他不再转向它、不再注意它，也不再观察它。当他不转向、不注意、不观察遍相，而专门注意被遍相触及的空间，并作意‘空间，空间’时，就说他‘移除了遍相’。”（X.7）
 
 **物质相的去除不是在外部物理上去除，而是内在注意力的转移**——从物质相转到"空间"。
 
@@ -2068,7 +2039,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 经典说明：
 
-> "With the complete surmounting (samatikkamā) of perceptions of matter, with the disappearance of perceptions of resistance, [aware of] 'unbounded space,' he enters upon and dwells in the base consisting of boundless space." (Vibh 245) (X.12)
+> “完全超越色的想，抵达触碍想的消失，并作意‘无边的空间’，他进入并住于空无边处。”（Vibh 245）（X.12）
 
 #### 词义分析
 
@@ -2081,21 +2052,21 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 **"无边空间"**（unbounded space）：称为"无边"因其无始无终，是去除kasina物质后留下的空间。(X.23)
 
 **"空无边处"**（Ākāsānañcāyatana）：
-> "'Unbounded space' is a 'base' (āyatana) in the sense of habitat for the jhāna whose nature it is to be associated with it ... it is the 'base consisting of boundless space.'" (X.24)
+> “‘无边的空间’之所以称为‘处’（āyatana），是因为它是与之相应的禅那的居处……因此称为‘空无边处’。”（X.24）
 
 ### 第三部分：识无边处（第二无色禅）
 
 修习识无边处，禅修者须先**精通空无边处五种方式**，然后看到空无边处的危险：
 
-> "This attainment has fine-material jhāna as its near enemy, and it is not as peaceful as the base consisting of boundless consciousness." (X.25)
+> “这个等至以色界禅那为近敌，并不像识无边处那样寂静。”（X.25）
 
 厌离后，他将注意力转向**曾遍覆空间的那个识本身**：
 
-> "He should give his attention to the base consisting of boundless consciousness as peaceful, adverting again and again as 'consciousness, consciousness' to the consciousness that occurred pervading that space [as its object]." (X.25)
+> “他应将识无边处作意为寂静，反复把曾经遍满那一空间的识作为所缘，作意‘识，识’。”（X.25）
 
 #### 经典引用
 
-> "By completely surmounting (samatikkamma) the base consisting of boundless space, [aware of] 'unbounded consciousness,' he enters upon and dwells in the base consisting of boundless consciousness." (Vibh 245) (X.27)
+> “完全超越空无边处，并作意‘无边的识’，他进入并住于识无边处。”（Vibh 245）（X.27）
 
 词义：**"识无边处"**（Viññāṇañcāyatana）以曾遍覆空间的那个识（consciousness）为新的无边对象，通过将已知的空无边处识本身作为所缘。(X.28-31)
 
@@ -2103,23 +2074,23 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 修习无所有处，禅修者须先精通识无边处，然后看到它的危险：
 
-> "This attainment has the base consisting of boundless space as its near enemy, and it is not as peaceful as the base consisting of nothingness." (X.32)
+> “这个等至以空无边处为近敌，并不像无所有处那样寂静。”（X.32）
 
 厌离后，他将注意力转向**那个识的"无"（non-existence，voidness）**：
 
-> "He should give his attention to the base consisting of nothingness as peaceful. He should give attention to the [present] non-existence, voidness, secluded aspect, of that same [past] consciousness belonging to the base consisting of boundless space." (X.32)
+> “他应将无所有处作意为寂静；应注意属于空无边处的那个过去之识如今的不存在、空无和离隔的一面。”（X.32）
 
 作意方式：
-> "Without giving [further] attention to that consciousness, he should [now] advert again and again in this way, 'there is not, there is not,' or 'void, void,' or 'secluded, secluded.'" (X.33)
+> “不再进一步注意那个识之后，他应当反复作意：‘没有，没有’，或‘空，空’，或‘离隔，离隔’。”（X.33）
 
 觉音用一个生动的比喻来说明(X.35)：一个人看到一屋子聚在一起的比丘，离开后回来，站在门口看，只看到了空（bhikkhus已离去），他没有想"这么多比丘已死、这么多已离开"，而只是看到了那里的空（void）。同样，禅修者用禅定之眼看属于识无边处的识——当那个识因作意于"那里无"而消失时，只看到其空虚（non-existence）。
 
 #### 经典说明
 
-> "By completely surmounting the base consisting of boundless consciousness, [aware that] 'There is nothing,' he enters upon and dwells in the base consisting of nothingness." (Vibh 245) (X.36)
+> “完全超越识无边处，并觉知‘没有任何东西’，他进入并住于无所有处。”（Vibh 245）（X.36）
 
 词义：**"无所有处"**（Ākiñcaññāyatana）：
-> "There is nothing (natthi kiñci): what is meant is that he gives his attention thus, 'there is not, there is not,' or 'void, void,' or 'secluded, secluded.'" (X.38)
+> “‘没有任何东西’（natthi kiñci）的意思是，他这样作意：‘没有，没有’，或‘空，空’，或‘离隔，离隔’。”（X.38）
 
 **非想非非想处**中的"无所有"是指识无边处的那个识的非存在状态（akiñcañña，non-owning）。(X.39)
 
@@ -2127,17 +2098,17 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 修习非想非非想处须先精通无所有处，然后看到无所有处的危险：
 
-> "Perception is a boil, perception is a dart … this is peaceful, that is to say, neither perception nor non-perception" (M II 231) (X.40)
+> “想是疮，想是刺……这才是寂静，也就是非想非非想。”（M II 231）（X.40）
 
 厌离后，他将注意力转向**无所有处本身，将其作为"平静的"（peaceful）**：
 
-> "He should advert again and again to that attainment of the base consisting of nothingness that has occurred making non-existence its object, adverting to it as 'peaceful, peaceful,' and he should give his attention to it, review it and strike at it with thought and applied thought." (X.40)
+> “他应反复转向已经生起、以不存在为所缘的无所有处等至，作意‘寂静，寂静’，并注意它、观察它，以寻和伺触及它。”（X.40）
 
 进入非想非非想处后，意识在吸收中以**四种心理聚合（mental aggregates）**作为对象——即无所有处禅那本身的四种组成部分。(X.41)
 
 #### 经典说明
 
-> "By completely surmounting the base consisting of nothingness he enters upon and dwells in the base consisting of neither perception nor non-perception." (Vibh 245) (X.42)
+> “完全超越无所有处，他进入并住于非想非非想处。”（Vibh 245）（X.42）
 
 #### 词义解析
 
@@ -2147,7 +2118,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 觉音用**碗中油**的比喻(X.51)：沙弥用油擦了一只碗放置一旁。当问到"碗里有没有油"时，若说"有油"则不对（因油已被用掉，只有残留），若说"没有油"也不对（碗壁上仍有油迹）。同样，非想非非想处的感知既非粗到称为"感知"，又非无到称为"非感知"。
 
-> "The attainment with residual formations is the fourth immaterial attainment whose formations have reached a state of extreme subtlety." (X.47)
+> “带有残余诸行的等至，是第四种无色等至；其中的诸行已经达到极其微细的状态。”（X.47）
 
 ### 第六部分：四种无色定的相互依存与章末总结（X.52–66）
 
@@ -2161,7 +2132,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 觉音在章末揭示了四梵住与四无色禅之间的关联：
 
-> "The mind-deliverance of loving-kindness has beauty as the highest, I say … The mind-deliverance of compassion has the base consisting of boundless space as the highest, I say … The mind-deliverance of gladness has the base consisting of boundless consciousness as the highest I say … The mind-deliverance of equanimity has the base consisting of nothingness as the highest, I say." (S V 119-21) (IX.119)
+> “我说，慈心的心解脱以美为最高……我说，悲心的心解脱以空无边处为最高……我说，喜心的心解脱以识无边处为最高……我说，舍心的心解脱以无所有处为最高。”（S V 119–121）（IX.119）
 
 **各梵住通向特定无色禅的逻辑**：
 
@@ -2177,7 +2148,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 章末揭示四梵住如何帮助大菩萨（Great Beings）完善十种波罗蜜（perfections）：
 
-> "For the Great Beings' minds retain their balance by giving preference to beings' welfare, by dislike of beings' suffering, by desire for the various successes achieved by beings to last, and by impartiality towards all beings."（IX.124）
+> “大菩萨的心之所以保持平衡，是因为优先考虑众生的福祉，厌恶众生的痛苦，希望众生获得的各种成就长久存在，并且平等对待一切众生。”（IX.124）
 
 - 以下逐项对应属于编者根据原文作的归纳，不应当作 IX.124 的逐字列举：通过慈心，大菩萨以布施（**giving**）回馈众生；
 - 通过戒律（**virtue**），避免伤害众生；
@@ -2196,11 +2167,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "He neither folds it [the kasina] up like a mat nor withdraws it like a cake from a tin. It is simply that he does not advert to it or give attention to it." (X.7) — 说明"去除kasina"的内在心理操作
+> “他既不把它［遍相］像席子一样折起，也不把它像从模具中取出的糕点一样抽出；只是他不再转向它，也不再注意它。”（X.7）——说明“去除遍相”的内在心理操作
 
-> "There is nothing (natthi kiñci): he makes that same consciousness non-existent, makes it absent, makes it disappear, sees that 'there is nothing.'" (Vibh 262) (X.38) — 无所有处的核心体验
+> “‘没有任何东西’（natthi kiñci）：他使那个识成为不存在，使它缺席，使它消失，看见‘没有任何东西’。”（Vibh 262）（X.38）——无所有处的核心体验
 
-> "Perception is a boil, perception is a dart … this is peaceful, that is to say, neither perception nor non-perception." (M II 231) (X.40) — 非想非非想处被描述为超越粗感知的和平境界
+> “想是疮，想是刺……这才是寂静，也就是非想非非想。”（M II 231）（X.40）——非想非非想处被描述为超越粗显知觉的寂静境界
 
 ---
 
@@ -2227,7 +2198,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 #### 1. 基本概念
 
 "食物"（āhāra）的词义：
-> "It nourishes (āharati, lit. 'brings on'), thus it is nutriment (āhāra, lit. 'bringing on')." (XI.1)
+> “它滋养（āharati，字面义为‘带来’），所以称为食（āhāra，字面义为‘带来之物’）。”（XI.1）
 
 食物有四类：
 - **段食**（kabalinkārāhāra）：可以入口的物质食物
@@ -2238,7 +2209,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 本章专注于**段食**——即可吃、可喝、可咀嚼、可尝的食物。
 
 四种食物及其危险性：
-> "When there is physical nutriment there is attachment, which brings peril; when there is nutriment as contact there is approaching, which brings peril; when there is nutriment as mental volition there is rebirth-linking, which brings peril." (XI.3)
+> “有段食时，就有会带来危险的执取；有触食时，就有会带来危险的趋近；有意思食时，就有会带来危险的结生。”（XI.3）
 
 原文在同一处还补充：识食滋养结生时的名色，并以“一百支长矛”的譬喻说明其危险；因此不能因 XI.3 的引文句式只列前三项，就把识食从四类食物的危险说明中遗漏。
 
@@ -2250,7 +2221,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 即使在出门托钵之前，比丘就已经要面对无数不净之事：清扫神殿台阶、打水、扫地，然后穿上僧袍（如包裹脓疮般绑紧腰带、如包骷髅般裹好上身），取出食钵（如取药罐般）。行走途中，遇见大象尸体、马尸、蛇尸、狗尸，不得不闻其气味。
 
-> "As he goes thus, from the time when he steps down from his bed or chair he has to tread on a carpet covered with the dust of his feet, geckos' droppings, and so on. Next he has to see the doorstep, which is more repulsive than the inside of the room since it is often fouled with the droppings of rats, bats, and so on." (XI.7)
+> “他这样前行时，从床或椅子上下来开始，就要踩在铺席上；席上满是脚上的尘土、壁虎的粪便等。接着还要看门槛；门槛常被老鼠、蝙蝠等的粪便弄脏，比房内更加令人厌恶。”（XI.7）
 
 **第二：寻食（Seeking）**
 
@@ -2259,12 +2230,12 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 **第三：使用（Using）**
 
 当他将食物放入口中：
-> "And when its good appearance has been spoilt by his squeezing it up, and it has been made into a ball and put into his mouth, then the lower teeth function as a mortar, the upper teeth as a pestle, and the tongue as a hand. It gets pounded there with the pestle of the teeth like a dog's dinner in a dog's trough, while he turns it over and over with his tongue; then the thin spittle at the tip of the tongue smears it, and the thick spittle behind the middle of the tongue smears it, and the filth from the teeth in the parts where a tooth-stick cannot reach smears it." (XI.15)
+> “当食物被他挤压成团、放入口中，原有的美好外观被破坏后，下牙就像臼，上牙就像杵，舌头就像手。食物在那里被牙齿这根杵捣碎，如狗槽中的狗食；他用舌头反复翻动它。接着，舌尖的稀薄唾液、舌头中部后方的浓稠唾液，以及牙齿在牙签无法触及之处的污垢，都把它涂抹得一塌糊涂。”（XI.15）
 
 **第四：分泌（Secretion）**
 
 进入消化道后，被胆汁、痰液、脓、血液等分泌物所浸泡：
-> "It becomes as utterly nauseating as if smeared with thick madhuka oil" (XI.17)
+> “它变得极其令人作呕，仿佛涂满了浓稠的 Madhuka 油。”（XI.17）
 
 **第五：容器（Receptacle）**
 
@@ -2285,10 +2256,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 **第九：流出（Outflow）**
 
 进食时由一个门进入（口），但流出时由九个门流出：
-> "The food and drink so greatly prized—
-> The crisp to chew, the soft to suck—
-> Go in all by a single door,
-> But by nine doors come oozing out." (XI.23)
+> “如此珍爱的食物和饮料——
+> 酥脆可嚼的、柔软可吸的——
+> 都从一个门进入，
+> 却从九个门渗流出来。”（XI.23）
 
 进食时人们喜气洋洋、贪婪热切；第二天排泄时却羞耻厌恶。"单一夜晚便足以使之腐烂"。
 
@@ -2298,7 +2269,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 3. 修法成果
 
-> "When a bhikkhu devotes himself to this perception of repulsiveness in nutriment, his mind retreats, retracts and recoils from craving for flavours. He nourishes himself with nutriment without vanity and only for the purpose of crossing over suffering, as one who seeks to cross over the desert eats his own dead child's flesh (S II 98)." (XI.26)
+> “当比丘专心修习这种食物厌想时，他的心从对滋味的渴爱中退却、收缩、回避。他不以自负之心受用食物，只为了越过痛苦；正如想穿越沙漠的人会吃自己死去孩子的肉。”（S II 98；XI.26）
 
 通过对食物不净的修习，禅修者能够：
 - 理解物质聚合体（五欲之贪）
@@ -2313,7 +2284,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 "界定"（vavatthāna）是通过标定个别自性（individual essences）来理解对象。"四大元素界定"是：
 
-> "Attention given to elements, 'the meditation subject consisting of elements' and 'defining of the four elements' all mean the same thing." (XI.27)
+> “对诸界的注意、‘由诸界组成的业处’以及‘四界差别观’，三者意思相同。”（XI.27）
 
 四大元素的界定以两种方式给出：**简略方式**（brief）和**详细方式**（detail）。
 
@@ -2321,11 +2292,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 在《大念处经》（Mahāsatipaṭṭhāna Sutta，D II 294）中简略给出：
 
-> "Bhikkhus, just as though a skilled butcher or butcher's apprentice had killed a cow and were seated at the crossroads with it cut up into pieces, so too, bhikkhus, a bhikkhu reviews this body however placed, however disposed, as consisting of elements: In this body there are the earth element, the water element, the fire element, and the air element." (D II 294) (XI.28)
+> “比丘们，正如熟练的屠夫或屠夫学徒杀死一头牛，把它切成块后坐在十字路口；同样，比丘无论身体处于何种姿势、何种状态，都应观察它由诸界组成：此身中有地界、水界、火界和风界。”（D II 294）（XI.28）
 
 **屠夫比喻的哲学意义**（XI.30）：
 
-> "Just as the butcher, while feeding the cow … does not lose the perception 'cow' so long as he has not carved it up and divided it into parts; but when he has divided it up … the perception 'cow' loses and the perception 'meat' occurs … so too this bhikkhu, while still a foolish ordinary person—does not lose the perception 'living being' or 'man' or 'person' so long as he does not, by resolution of the compact into elements, review this body … But when he does review it as consisting of elements, he loses the perception 'living being.'"（XI.30）
+> “正如屠夫在喂养牛时，只要还没有把牛切开、分成各个部分，就不会失去‘牛’的知觉；但当他把牛分割开来时，‘牛’的知觉消失，‘肉’的知觉生起……同样，这位比丘仍是愚钝凡夫时，只要还没有通过把整体分解为诸界来观察此身，就不会失去‘有情’、‘人’或‘个人’的知觉；但当他观察此身由诸界组成时，‘有情’的知觉便消失。”（XI.30）
 
 这是关键的认识论转变：**将"人"或"众生"的整体概念分解为四大元素，消解了"我"或"自我"的实体概念**。
 
@@ -2335,25 +2306,25 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **地元素（Earth Element）**：
 
-> "And what is the internal earth element, friends? Whatever there is internally in oneself that is hard, harsh, and clung to (acquired through kamma), that is to say, head hairs, body hairs, teeth, nails, skin, flesh, sinews, bones, bone marrow, kidney, heart, liver, midriff, spleen, lungs, bowels, entrails, gorge, dung, or whatever else there is internally in oneself that is hard, harsh, and clung to—this is called the internal earth element." (M I 185) (XI.31)
+> “朋友们，什么是内地界？凡是自身内部坚硬、粗糙并被执取的东西（由业取得），也就是头发、体毛、牙齿、指甲、皮肤、肉、筋、骨、骨髓、肾、心、肝、膈、脾、肺、肠、肚肠、胃中物、粪，或自身内部其他坚硬、粗糙并被执取的东西，都称为内地界。”（M I 185）（XI.31）
 
 地元素的特征：硬（hard）、粗（harsh）——前者是特性，后者是形态。
 
 **水元素（Water Element）**：
 
-> "Whatever there is internally in oneself that is water, watery, and clung to, that is to say, bile, phlegm, pus, blood, sweat, fat, tears, grease, spittle, snot, oil of the joints, and urine … this is called the internal water element." (M I 187) (XI.31)
+> “凡是自身内部属于水、具有水性并被执取的东西，也就是胆汁、痰、脓、血、汗、脂肪、泪、油脂、唾液、鼻涕、关节油和尿液……都称为内水界。”（M I 187）（XI.31）
 
 水元素特征：流动性（watery）。其功能：内水元素是凝聚（cohesion）的承担者。(XI.35)
 
 **火元素（Fire Element）**：
 
-> "Whatever there is internally in oneself that is fire, fiery, and clung to, that is to say, that whereby one is warmed, ages, and burns up, and whereby what is eaten, drunk, chewed and tasted gets completely digested … this is called the internal fire element." (M I 188) (XI.31)
+> “凡是自身内部属于火、具有火性并被执取的东西，也就是使人温暖、衰老、燃烧发热，并使所吃、所喝、所嚼、所尝之物完全消化的东西……都称为内火界。”（M I 188）（XI.31）
 
 火元素体现为：令身体温暖、令人衰老、令身体燃烧发热、令食物完全消化。其功能：成熟（ripening/maturing）。(XI.36)
 
 **风元素（Air Element）**：
 
-> "Whatever there is internally in oneself that is air, airy, and clung to, that is to say, up-going winds, down-going winds, winds in the belly, winds in the bowels, winds that course through all the limbs, in-breath and out-breath … this is called the internal air element." (M I 188) (XI.31)
+> “凡是自身内部属于风、具有风性并被执取的东西，也就是上行风、下行风、腹内风、肠内风、遍行于全身肢体的风、入息和出息……都称为内风界。”（M I 188）（XI.31）
 
 风元素体现为：上行气（引起呕吐）、下行气（排出粪尿）、腹内气、肠内气、遍身气（使肢体屈伸）、入息和出息。其功能：扩张（distension），以及运动（movement）。(XI.37)
 
@@ -2370,7 +2341,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **(1) 以组成简略修法**（With Constituents in Brief）：
 
-> "In twenty parts what has the stiffened mode is the earth element, in twelve parts the liquid called water with the mode of cohesion is the water element, in four parts what matures (what has the mode of ripening) is the fire element, and in six parts what has the mode of distending is the air element." (XI.46)
+> “在二十个部分中，具有坚硬状态的是地界；在十二个部分中，称为水、具有凝聚状态的是水界；在四个部分中，具有成熟（成熟状态）的是火界；在六个部分中，具有扩张状态的是风界。”（XI.46）
 
 **(2) 以组成分析修法**（With Constituents by Analysis）：
 
@@ -2378,7 +2349,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **(3) 以特征简略修法**（With Characteristics in Brief）：
 
-> "In this body what is stiffedness or harshness is the earth element, what is cohesion or fluidity is the water element, what is maturing (ripening) or heat is the fire element, what is distension or movement is the air element." (XI.41)
+> “此身中，坚硬或粗糙的是地界；凝聚或流动的是水界；成熟或热是火界；扩张或运动是风界。”（XI.41）
 
 **(4) 以特征分析修法**（With Characteristics by Analysis）：
 
@@ -2388,7 +2359,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 四大元素界定只达到**近行定**（access concentration），因其对象是具有个别自性（individual essences）的法：
 
-> "Concentration arises in him, which is reinforced by understanding that illuminates the classification of the elements, and which is only access and does not reach absorption because it has states with individual essences as its object." (XI.44)
+> “他生起了定；这种定由照亮诸界分类的理解所增强，但只是近行定而不能达到安止，因为它以具有个别自性的诸法为所缘。”（XI.44）
 
 然而这种专注为进入观慧修行（Part III 智慧篇）奠定了基础——通过界定元素，禅修者消解了对"人"或"众生"的概念性执著。
 
@@ -2404,12 +2375,12 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "The food and drink so greatly prized—
-> The crisp to chew, the soft to suck—
-> Go in all by a single door,
-> But by nine doors come oozing out." (XI.23)
+> “如此珍爱的食物和饮料——
+> 酥脆可嚼的、柔软可吸的——
+> 都从一个门进入，
+> 却从九个门渗流出来。”（XI.23）
 
-> "Bhikkhus, just as though a skilled butcher … had killed a cow and were seated at the crossroads … a bhikkhu reviews this body … as consisting of elements: In this body there are the earth element, the water element, the fire element, and the air element." (D II 294)
+> “比丘们，正如熟练的屠夫杀死一头牛、把它切成块后坐在十字路口……同样，比丘观察此身由诸界组成：此身中有地界、水界、火界和风界。”（D II 294）
 
 ---
 
@@ -2430,7 +2401,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 3. **按粒子**（particles）：地元素可分解至最细的原子（paramāṇu），水元素凝聚它，火元素熟化它，风元素扩张它——四者协同运作，产生性别差异、大小、长短、软硬等一切形态。
 
 4. **按特征等**（characteristic, etc.）：
-   > "The earth element has the characteristic of hardness. Its function is to act as a foundation. It is manifested as receiving. The water element has the characteristic of trickling … The fire element has the characteristic of heat … manifested as a continued supply of softness. The air element has the characteristic of distending … manifested as conveying." (XI.93)
+   > “地界的特征是坚硬，作用是作为基础，显现为接受；水界的特征是流淌……火界的特征是热……显现为持续供应柔软；风界的特征是扩张……显现为传送。”（XI.93）
 
 5. **按起源**（how originated）：头发等属"业起"（kamma-originated）；眼泪、汗液等属"温度起"或"业起"两类；呼吸属"识起"（consciousness-originated）。
 
@@ -2447,7 +2418,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 其中最深刻的是"与大物相似"——元素之间相互支持却不相互包含，就像夜叉（yakkhīnī）女精灵那样令人迷惑：
 
-> "So too, these elements conceal each their own characteristic and function classed as hardness, etc., by means of a pleasing skin colour of women's and men's bodies, etc., and pleasing shapes of limbs and pleasing gestures of fingers, toes and eyebrows, and they deceive simple people by concealing their own functions and characteristics." (XI.100)
+> “同样，这些界借助男女身体悦目的肤色，以及四肢和手指、脚趾、眉毛悦目的形状和姿态，隐藏各自被归为坚硬等的特征和作用；它们遮蔽自身的作用与特征，欺骗了单纯的人。”（XI.100）
 
 这可作为编者对四大分析与身体美执取关系的认识论归纳；“无明的根源之一”不是 XI.100 对该比喻的直接结论。
 
@@ -2455,7 +2426,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 章末总结了整个定力篇：
 
-> "This concentration as intended here is twofold, that is to say, access concentration and absorption concentration." (XI.119)
+> “这里所说的定有两种，即近行定和安止定。”（XI.119）
 
 **原文列举的发展定力的五种利益**（XI.120；以下为条目转述）：
 1. **当下乐住**（blissful abiding here and now）
@@ -2466,12 +2437,12 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "Defining the four elements
-> Is ever the wise man's resort;
-> The noble meditator lion
-> Will make this mighty theme his sport." (XI.117)
+> “四界差别观，
+> 永远是智者的依处；
+> 高贵的狮子般禅修者，
+> 将以这伟大的主题为游戏。”（XI.117）
 
-> "Bhikkhus, develop concentration; a bhikkhu who is concentrated understands correctly." (S III 13) (XI.121)
+> “比丘们，应当修习定；有定的比丘能如实正确地理解。”（S III 13）（XI.121）
 
 章末还补充三项限定：具足八等至并希求神通者，以禅那作为直接知识的基础；尚未失去禅那、希求梵天生者，可由定力获得相应的善趣/梵天果报；已具八等至的圣者若希求灭尽定，则以定力作为其近因（XI.122–125）。XI.126 随后明确宣告“定”的题目至此已完整解释，故第十一章并非在 XI.122 提前结束。
 
@@ -2511,7 +2482,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 神变通（Iddhividha，kinds of supernormal power）的修习要求极高：
 
-> "If a meditator wants to begin performing the transformation by supernormal power described as, 'Having been one, he becomes many,' etc., he must achieve the eight attainments in each of the eight kasinas ending with the white kasina. He must also have complete control of his mind in the following fourteen ways." (XII.2)
+> “若禅修者想开始施展‘原来是一个，他变成多个’等神变，就必须在八种遍中每一种上都达到八种等至，直到白遍为止；还必须以以下十四种方式完全掌控自己的心。”（XII.2）
 
 **14种心识掌握方式**（XII.3-7）：
 
@@ -2537,7 +2508,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 为了进行神通，意识需具备八种品质(XII.13-19)：
 
-> "When his concentrated mind is thus purified, bright, unblemished, rid of defilement, and has become malleable, wieldy, steady, and attained to imperturbability, he directs, he inclines, his mind to the kinds of supernormal power." (D I 77) (XII.13)
+> “当他的定心如此清净、明亮、无瑕、远离烦恼，变得柔软、可用、稳定并达到不动时，他便把心导向、倾向于各种神变。”（D I 77）（XII.13）
 
 逐一解释：
 - **净化**（purified）：通过正念等至状态的净化
@@ -2578,7 +2549,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **定力介入神通**的例子：大德舍利弗（Sāriputta）被夜叉敲头，因在禅定中而无事（Ud 39）。大德善揭（Sañjīva）在灭尽定中，牧牛人误以为他已死而点火，整件袈裟无一角被烧。(XII.31-32)
 
 - **圣者神通**的例子（XII.36-38）：
-  > "If a bhikkhu with cankers destroyed possesses this kind of success, then when in the case of a disagreeable object he is practicing pervasion with loving-kindness or giving attention to it as elements, he dwells perceiving the unrepulsive in the repulsive." (XII.37)
+  > “如果一位已灭尽烦恼的比丘具备这种神通，那么面对令人厌恶的所缘时，他若修习慈心遍覆，或将其作意为诸界，就能在令人厌恶之中安住而见到不厌恶。”（XII.37）
 
 - **福德者神通**的例子（XII.40-42）：Jotika居士的水晶宫殿和六十四棵愿望树从地涌现；Jatilaka的金石八十肘高……
 
@@ -2592,7 +2563,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 5. **决意**（resolve with knowledge）
 
 **四神足**（XII.50）：
-> "What are the four bases (roads) for success (road to power)? Here a bhikkhu develops the basis for success (road to power) that possesses both concentration due to zeal and the will to strive … due to energy … due to [natural purity of] consciousness … due to inquiry and the will to strive." (Patis II 205)
+> “什么是成功的四种基础（通向神通的道路）？这里，比丘修习一种成功之道，它同时具备由欲而生的定和努力的意愿……具备由精进而生的定……具备由心而生的定……具备由观而生的定和努力的意愿。”（Paṭis II 205）
 
 即：以**欲**（zeal）为首的神足、以**精进**为首的神足、以**心**为首的神足、以**观**（inquiry）为首的神足。
 
@@ -2612,14 +2583,14 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 须阁般陀卡入法后四个月仍背不出一首偈子。被兄长驱逐出寺院门口时，佛陀看见，引导他反复念诵"去污、去尘"。他随后顿悟并证得阿罗汉，同时生起六种神通。第二天，他将自己倍增至千个，填满了香果园（mango grove）：
 
-> "Now, having multiplied himself
-> Up to a thousand, Panthaka
-> Sat in the pleasant mango wood
-> Until the time should be announced." (Th 563) (XII.65)
+> “如今，须阁般陀卡
+> 将自己变成一千个，
+> 坐在宜人的芒果林中，
+> 直到宣布用餐的时间。”（Th 563）（XII.65）
 
 #### 5. 种种神变能力的详细阐述
 
-> "Having been one, [he becomes many]; having been many, he becomes one. He appears and vanishes. He goes unhindered through walls, through enclosures, through mountains, as though in open space. He dives in and out of the earth as though in water. He goes on unbroken water as though on earth. Seated cross-legged he travels in space like a winged bird. With his hand he touches and strokes the moon and sun so mighty and powerful. He wields bodily mastery even as far as the Brahma-world." (D I 77) (XII.48)
+> “原来是一个，他变成多个；原来是多个，他变成一个。他显现又消失。他无碍地穿过墙壁、围墙和山，如同穿过空旷之处；他潜入地下又从地下出来，如同在水中；他在未断裂的水面上行走，如同在地面上；盘腿而坐，像有翼的鸟一样在空中行进。他用手触摸、抚摩强大有力的月亮和太阳；他的身体自在甚至可以达到梵天界。”（D I 77）（XII.48）
 
 对每种能力的具体解释：
 - **由一成多**：通过意志（resolve）实现
@@ -2652,16 +2623,16 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 第十二章把神通说明为依止禅那、掌握及意志等条件而生的修习结果；“神通不是神秘天赋”“禅那是自然果实”等，是编者的解释，不作为觉音的原句。神变通的直接基础仍是**意志**（adhiṭṭhāna，resolve）及其所依的定力。
 
-> "He attains the ability to be a witness, through realization by direct-knowledge, of any state realizable by direct-knowledge to which his mind inclines, whenever there is an occasion." (M III 96)（XI.122；此处是定力总结中的跨章引文，不是 XII. 神通正文段落）
+> “只要有适当机会，他便能通过直接知识的证实现为任何可由直接知识证实、且心所趋向的状态的见证者。”（M III 96）（XI.122；此处是定力总结中的跨章引文，不是 XII. 神通正文段落）
 
 **代表性引文**：
 
-> "Having been one, he becomes many; having been many, he becomes one. He appears and vanishes. He goes unhindered through walls, through enclosures, through mountains, as though in open space." (D I 77) (XII.48)
+> “原来是一个，他变成多个；原来是多个，他变成一个。他显现又消失。他无碍地穿过墙壁、围墙和山，如同穿过空旷之处。”（D I 77）（XII.48）
 
-> "Now greed it is, not dust, that we call 'dirt,'
-> And 'dirt' is just a term in use for greed;
-> This greed the wise reject, and they abide
-> Keeping the Law of him that has no greed." (Nidd I 505) (XII.63)
+> “我们称为‘尘垢’的，其实是贪欲，并不是尘土；
+> ‘尘垢’只是贪欲的一个通用名称。
+> 智者舍弃这种贪欲，
+> 依循那位无贪者的法而安住。”（Nidd I 505）（XII.63）
 
 ---
 
@@ -2689,7 +2660,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 天耳的本质
 
-> "He directs, he inclines, his mind to the divine ear element. With the divine ear element, which is purified and surpasses the human, he hears both kinds of sounds, the divine and the human, those that are far as well as near." (D I 79) (XIII.1)
+> “他把心导向、倾向于天耳界。凭借这种清净而超越人耳的天耳界，他听见天界和人界两类声音，既听见远处的，也听见近处的。”（D I 79）（XIII.1）
 
 **"天"耳**的两层含义：
 - 类似于诸天（deities）的耳识——因为诸天的耳元素由善行所生的业产生，无胆汁痰液等障碍，能感知遥远对象
@@ -2703,7 +2674,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 禅修者从禅那为基础出定，先作意近处的粗显声音（如狮子林的声音、鼓声、诵经声），然后逐渐过渡到更细微、更遥远的声音：
 
-> "Beginning in this way with quite gross sounds, he should successively advert to more and more subtle sounds. He should give attention to the sound sign of the sounds in the eastern direction, in the western direction … in all directions." (XIII.4)
+> “应从这样相当粗显的声音开始，依次转向越来越细微的声音；应注意东方声音的声相、西方声音的声相……以及各个方向的声音。”（XIII.4）
 
 从一指宽到一跨到一拉塔那（24指宽）到所在房间到道场所在村落，直至整个世界球。(XIII.6)
 
@@ -2711,7 +2682,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 本章按神通的掌握方式说明，具备相应能力时可听取远近等声音；“无需重入禅那即可随时听闻任何声音”是扩大解释，不作为 XIII 章原文的无条件结论：
 
-> "One who has reached direct-knowledge in this way hears also by means of direct-knowledge without re-entering the basic jhāna any sound that has come within the space touched by the basic jhāna's object." (XIII.7)
+> “以这种方式达到直接知识的人，即使不重新进入基础禅那，也能凭借直接知识听见任何进入基础禅那所缘触及空间的声音。”（XIII.7）
 
 即使是梵天世界的鼓声、铙钹声等，他都能分辨，并能明确说"这是鼓声，这是铙钹声"。
 
@@ -2721,7 +2692,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 基本说明
 
-> "He penetrates with his mind the minds of other beings, of other persons, and understands them thus: he understands [the manner of] consciousness affected by greed as affected by greed, and understands [the manner of] consciousness unaffected by greed as unaffected by greed … he understands the liberated [manner of] consciousness as liberated, and the unliberated [manner of] consciousness as unliberated." (D I 79) (XIII.8)
+> “他以自己的心洞察其他众生、其他人的心，并如此理解：他知道被贪影响的心是被贪影响的，知道未被贪影响的心是未被贪影响的……他知道解脱的心是解脱的，知道未解脱的心是未解脱的。”（D I 79）（XIII.8）
 
 他心通能辨别的16种意识状态包括：
 - 贪染/无贪 (with/without greed)
@@ -2737,7 +2708,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 他心通以**天眼通**为准备工作：
 
-> "This is successfully done through the divine eye, which constitutes its preliminary work. Therefore the bhikkhu should extend light, and he should seek out another's [manner of] consciousness by keeping under observation with the divine eye the colour of the blood present with the matter of the physical heart as its support." (XIII.9)
+> “这要通过作为前行的天眼来成功完成。因此，比丘应扩展光明，并以天眼观察依心脏物质为支持的血液颜色，从而查知他人的心。”（XIII.9）
 
 具体方法：观察对方心血的颜色——
 - 伴随喜悦的意识存在时，血液红如榕树果
@@ -2756,7 +2727,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 知悉一切欲界、色界、无色界的意识类型后：
 
-> "Wherever the [manner of] consciousness in the immaterial modes, whose physical-heart matter can he observe? Whose material alteration [originated] by the faculties can he look at? No one's. The province of a possessor of supernormal power is [simply] this, namely, wherever the [manner of] consciousness he adverts to is, there he knows it according to these sixteen classes." (XIII.10)
+> “对于无色界的心，他能观察谁的心脏物质？他能看见谁由诸根引起的物质变化？谁也不能。神通者的范围只是这样：无论他转向哪一种心，就在那里依照这十六类了知它。”（XIII.10）
 
 ### 第三部分：宿命通（Recollection of Past Lives，XIII.24-73）
 
@@ -2764,7 +2735,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 基本说明
 
-> "He recollects his manifold past lives, that is to say, one birth, two births … He recollects his manifold past lives with their aspects and particulars." (D I 81) (XIII.25)
+> “他忆念种种过去世，也就是一生、两生……他忆念种种过去世及其方面和细节。”（D I 81）（XIII.25）
 
 所谓"一出生"（one birth）包括：名字、种姓、容貌、食物、苦乐经历和寿命。
 
@@ -2793,7 +2764,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 4. 六种人的宿命通范围（XIII.19；相关分类见 XIII.16–19）
 
-> "Among these beings with recollection of past lives, the sectarians' vision of past lives seems like the light of a glow-worm, that of ordinary disciples like the light of a candle, that of the great disciples like the light of a torch, that of the chief disciples like the light of the morning star, that of Paccekabuddhas like the light of the moon, and that of Buddhas like the glorious autumn sun's disk with its thousand rays." (XIII.19)
+> “在这些具宿命忆念的众生中，外道的宿命观如萤火之光；普通弟子的宿命观如烛光；大弟子的如火炬之光；上首弟子的如晨星之光；辟支佛的如月光；佛陀的则如光辉秋日、放射千道光芒的日轮。”（XIII.19）
 
 | 种类 | 能回忆范围 | 比喻 |
 |------|------------|------|
@@ -2814,7 +2785,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 3. **风灭**：巨风摧毁世界球，山峰与山峰相撞，直至粉碎，直至毗诃跋拉梵天（Vehapphala-world）。
 
 **世界毁灭的根本原因**（XIII.64）：
-> "When one of the roots of the unprofitable becomes conspicuous, the world is destroyed accordingly. When greed is more conspicuous, it is destroyed by fire … When hate is more conspicuous, it is destroyed by water … When delusion is more conspicuous, it is destroyed by wind."（XIII.64）
+> “当不善法的某一根变得突出时，世界便相应地被毁灭。贪欲更突出时，世界被火毁灭……嗔恨更突出时，被水毁灭……愚痴更突出时，被风毁灭。”（XIII.64）
 
 **新世界的重建**（XIII.44-53）：来自阿婆萨拉梵天的众生落入新世界，最初是自发光明的意成身，以喜悦为食。他们因食用地之精华而失去光明，天生欲望逐渐出现——从地之精华到稻米，再到划分土地、盗窃、惩罚、选举第一王（Mahā-Sammata，"被众人认可者"）——这就是人类社会的起源神话（XIII.53-54）。
 
@@ -2826,7 +2797,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 基本说明
 
-> "With the divine eye, which is purified and surpasses the human, he sees beings passing away and reappearing, inferior and superior, fair and ugly, fortunate and unfortunate, and he understands how beings pass on according to their actions." (D I 82) (XIII.73)
+> “凭借清净而超越人眼的天眼，他看见众生死去和再生，有卑劣的、有高贵的，有美的、有丑的，有幸运的、有不幸的；他了知众生如何依自己的业而流转。”（D I 82）（XIII.73）
 
 天眼的"清净"：无胆汁痰液等遮蔽，能看遥远之物。
 
@@ -2839,13 +2810,13 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 从禅那出定后，扩展光明（āloka）：
 
-> "The bhikkhu should attain jhāna as basis for direct-knowledge, and emerge. Then, in the way beginning 'Let there be light,' he should extend light in the ten directions, and with the divine eye extended thus, he should discern the visible object by means of the light." (XIII.78)
+> “比丘应当获得作为直接知识基础的禅那，然后出定。接着，以‘愿有光明’等方式向十方扩展光明，并以如此扩展的天眼借助光明辨别可见对象。”（XIII.78）
 
 从近处的可见对象开始，逐步扩展到整个世界球。
 
 #### 4. 了知业与果报
 
-> "Here beings who were possessed of bad conduct of body … reappear after the dissolution of the body, after death, in the states of deprivation, in an unhappy destination, in perdition, even in hell. But beings who were possessed of good conduct of body … after the dissolution of the body, after death, reappear in a happy destination, even in the heavenly world." (D I 82) (XIII.73)
+> “有些众生身行恶劣……身体毁坏、死亡后，投生于苦界、恶趣、险难处，甚至地狱；但有些众生身行善良……身体毁坏、死亡后，投生于善趣，甚至天界。”（D I 82）（XIII.73）
 
 通过天眼观察众生的种种行为（ten courses of action），理解业果的法则：
 
@@ -2878,7 +2849,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "He penetrates with his mind the minds of other beings … he understands [the manner of] consciousness affected by greed as affected by greed." (D I 79) (XIII.8) — 他心通的基本能力
+> “他以自己的心洞察其他众生的心……知道被贪影响的心是被贪影响的心。”（D I 79）（XIII.8）——他心通的基本能力
 
 
 ---
@@ -2908,34 +2879,25 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 从定力到智慧的过渡
 
-> "Now, concentration was described under the heading of *consciousness* in the stanza:
-> When a wise man, established well in virtue,
-> Develops consciousness and understanding (I.1).
-> And that has been developed in all its aspects by the bhikkhu who is thus possessed of the more advanced development of concentration … But *understanding* comes next and that has still to be developed." (XIV.1)
+> “现在，偈颂中以‘心’为题已经说明了定：‘智者善安住于戒，修习心与慧’（I.1）。这已经由具备更高阶段定力发展的比丘，在各个方面修习完成……接下来是‘慧’，而慧仍有待修习。”（XIV.1）
 
 觉音以全书开章之偈颂作为过渡点，明确指出：定力（第二部分）已阐述完毕，现在进入**智慧**（paññā）的阐发。将智慧称为“整个《净化之道》的核心与终点”属于编者的结构性概括，不作为本段原文结论。
 
 #### 2. 关于智慧的六个问题
 
-> "In order, therefore, to deal with the detailed method of its development there is the following set of questions:
-> (i) What is understanding?
-> (ii) In what sense is it understanding?
-> (iii) What are its characteristic, function, manifestation, and proximate cause?
-> (iv) How many kinds of understanding are there?
-> (v) How is it developed?
-> (vi) What are the benefits of developing understanding?" (XIV.1)
+> “因此，为了说明它的详细修习方法，提出以下问题：（一）什么是慧？（二）在什么意义上称为慧？（三）慧的特征、作用、显现和近因是什么？（四）慧有多少种？（五）如何修习慧？（六）修习慧有什么利益？”（XIV.1）
 
 ### 第二部分：智慧的本质分析
 
 #### 1. 智慧是什么？
 
-> "Understanding (paññā) is of many sorts and has various aspects. An answer that attempted to explain it all would accomplish neither its intention nor its purpose, and would, besides, lead to distraction; so we shall confine ourselves to the kind intended here, which is understanding consisting in insight knowledge associated with profitable consciousness." (XIV.2)
+> “慧（paññā）有许多种类，也有各种方面。若试图全部解释，既不能达到意图，也不能达到目的，反而会导致散乱；所以我们只说明这里所指的那一种慧，即与善心相应、由观智构成的慧。”（XIV.2）
 
 这里界定了特定范围的智慧：**与善心（profitable consciousness）相应的洞见知识**，而非一般知识或世俗智慧。
 
 #### 2. 智慧的意义（XIV.3）
 
-> "It is understanding (paññā) in the sense of act of understanding (pajānana). What is this act of understanding? It is knowing (jānana) in a particular mode separate from the modes of perceiving (sañjānana) and cognizing (vijānana)."（XIV.3）
+> “它之所以称为慧（paññā），是因为具有理解（pajānana）的作用。什么是这种理解？就是以一种不同于感知（sañjānana）和识知（vijānana）的特殊方式了知（jānana）。”（XIV.3）
 
 觉音用**三者精妙对比**区分感知（saññā）、意识（viññāṇa）和智慧（paññā）：
 
@@ -2945,7 +2907,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 3. 著名的金币比喻（XIV.4-5）
 
-> "Suppose there were three people, a child without discretion, a villager, and a money-changer, who saw a heap of coins lying on a money-changer's counter. The child without discretion knows merely that the coins are figured and ornamented, long, square or round … And the villager knows that they are figured and ornamented, etc., and that they are reckoned as valuable … but he does not know such distinctions as, 'This one is genuine, this is false, this is half-value.' The money-changer knows all those kinds, and he does so by looking at the coin, and by listening to the sound of it when struck, and by smelling its smell, tasting its taste, and weighing it in his hand, and he knows that it was made in a certain village or town or city or on a certain mountain or by a certain master." (XIV.4)
+> “假设有三个人：一个没有判断力的孩子、一个村民和一个兑换钱币的人，看见兑换钱币者柜台上堆着一堆钱币。孩子只知道钱币有图案和装饰，或长、方、圆……村民知道它们有图案和装饰，也知道它们被视为有价值……但不知道‘这个是真的，那个是假的，这个只值一半’等区别。兑换钱币者则知道所有这些种类；他观察钱币，听敲击时的声音，闻它的气味，尝它的味道，用手掂量它，并知道它是在某个村、镇、城市、山上，或由某位工匠制作的。”（XIV.4）
 
 - **感知** = 孩子（只知外形）
 - **意识** = 村人（能区分真假，但不知来源）
@@ -2955,7 +2917,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 4. 智慧的特征、功能、显现、近因（XIV.7）
 
-> "Understanding has the characteristic of penetrating the individual essences of states. Its function is to abolish the darkness of delusion, which conceals the individual essences of states. It is manifested as non-delusion. Because of the words, 'One who is concentrated knows and sees correctly' (A V 3), its proximate cause is concentration." (XIV.7)
+> “慧的特征是穿透诸法的个别自性；作用是消除遮蔽诸法个别自性的愚痴黑暗；显现为不痴。由于经中说‘有定者如实正确地知见’（A V 3），所以定是它的近因。”（XIV.7）
 
 | 方面 | 内容 |
 |------|------|
@@ -2993,7 +2955,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 4. **辩辩**（paṭibhāna-paṭisambhidā，discrimination of perspicuity）：了知各种知识自身的性质和范围。
 
 觉音列举了丰富的例子：
-> "(a) 'Knowledge about suffering is the discrimination of meaning. Knowledge about the origin of suffering is the discrimination of law. [Knowledge about the cessation of suffering is the discrimination of meaning.] Knowledge about the way leading to the cessation of suffering is the discrimination of law.'" (XIV.24)
+> “（一）‘关于苦的知识是义辩；关于苦因的知识是法辩；［关于苦灭的知识是义辩；］关于通往苦灭之道的知识是法辩。’”（XIV.24）
 
 这个例子展示了义辩和法辩的实际应用：苦谛（suffering）属于果（意义/结果），集谛（origin）属于因（法则/条件）。
 
@@ -3021,7 +2983,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **色蕴的深层分析**：
 
-> "The group of materiality is all materiality whatever, whether past, future or present, internal or external, gross or subtle, inferior or superior, far or near: this is called the group of materiality." (M III 16简述)
+> “无论过去、未来或现在，内在或外在，粗或细，劣或胜，远或近，任何色法都是色蕴；这称为色蕴。”（M III 16 简述）
 
 色蕴的11个维度分析：
 1. **三时**（过去、现在、未来）
@@ -3051,7 +3013,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 感知的特征（XIV.130）：其特征是感知；功能是作相，以便再次认出“这是同一个”；显现是依所取之相进行解释；近因是以各种方式显现的所缘境。
 
 觉音用**木匠作标记**比喻感知（XIV.130）：
-> "Like the carpentry-worker's or the forester's recognition by the mark he has made, so perception is like the forester who makes a mark on the tree he wishes to remember."（XIV.130）
+> “正如木匠或林务员凭借自己所作的标记来辨认一样，想也如此：它就像林务员在想要记住的树上作标记。”（XIV.130）
 
 **感知的危险**（编者归纳；原文 XIV.130 的稻草人比喻）：
 - 感知是幻觉的来源——一个蜃景（fata morgana）引起旅人渴望水的感知是错误感知（distorted perception）。
@@ -3061,7 +3023,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 行（formations/mental formations）包括**50种心所**（cetasika），是意志、意向和各种心理因素的聚合，具有"主动塑造"（saṅkhāroti，constructing/conditioning）的含义：
 
-> “They have the characteristic of forming. Their function is to accumulate. They are manifested as intervening.” (XIV.132)
+> “它们的特征是造作；作用是积集；显现为介入。”（XIV.132）
 
 50种行包括：
 - **共一切心心所**（universals）：13种（触、受、想、思、一境性、命根、作意等）
@@ -3122,9 +3084,9 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "Understanding has the characteristic of penetrating the individual essences of states. Its function is to abolish the darkness of delusion, which conceals the individual essences of states." (XIV.7)
+> “慧的特征是穿透诸法的个别自性；作用是消除遮蔽诸法个别自性的愚痴黑暗。”（XIV.7）
 
-> "Suppose there were three people, a child without discretion, a villager, and a money-changer … The money-changer knows all those kinds … This may be understood as an illustration [of the difference between perception, consciousness, and understanding]." (XIV.4)
+> “假设有三个人：没有判断力的孩子、村民和兑换钱币者……兑换钱币者知道所有这些种类……这可以用来说明感知、意识和慧之间的差别。”（XIV.4）
 
 > “They have the characteristic of forming. Their function is to accumulate.” (XIV.132)
 
@@ -3155,7 +3117,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 十二处列举
 
-> "[481] The 'bases' (XIV.32) are the twelve bases, that is to say, the eye base, visible-data base, ear base, sound base, nose base, odour base, tongue base, flavour base, body base, tangible-data base, mind base, mental-data base." (XV.1)
+> “[481] ‘处’（XIV.32）就是十二处，即眼处、色处、耳处、声处、鼻处、香处、舌处、味处、身处、触处、意处和法处。”（XV.1）
 
 十二处对应六个认知系统（感官门＋感官对象）：
 
@@ -3172,7 +3134,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 觉音对"处"（āyatana）作**三层词义解析**：
 
-> "base (āyatana) should be understood as such (a) because of its actuating (āyatana), (b) because of being the range (tanana) of the origins (āya), and (c) because of leading on (nayana) what is actuated (āyata)." (XV.4)
+> “‘处’（āyatana）应如此理解：（一）因为它具有激活（āyatana）的作用；（二）因为它是诸起源（āya）的范围（tanana）；（三）因为它引导（nayana）被激活之物（āyata）继续运作。”（XV.4）
 
 - **actuating**（āyatana，激活）：意识及其伴生状态在眼等处中被激活、运作
 - **range**（tanana，范围）：眼等是相应起源的范围——提供意识运作的场域
@@ -3193,9 +3155,9 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 **（5）略与广**（XV.13-14）：略说十二处是名色（mentality-materiality）；广说则每处均有无限种类
 **（6）如何观察**（XV.15-16）：
 
-> "here all formed bases should be regarded as having no provenance and no destination. For they do not come from anywhere prior to their rise, nor do they go anywhere after their fall." (XV.15)
+> “这里，一切有为处都应被视为没有来处，也没有去处；因为它们生起以前并不是从某处来，坏灭以后也不是去往某处。”（XV.15）
 
-> "Furthermore, the internal bases should be regarded as an empty village because they are devoid of lastingness, pleasure, and self; and the external ones as village-raiding robbers (S IV 175) because they raid the internal ones." (XV.16)
+> “此外，内处应被视为空村，因为它们没有恒常、快乐和自我；外处则应被视为劫掠村庄的盗贼（S IV 175），因为它们劫掠内处。”（XV.16）
 
 **内处如空村**（原文用以说明其无常、苦、无我），**外处如土匪**——这是 XV.16 的比喻：外处“侵扰”内处。至于“强迫意识产生”以及“苦的根源之一”，属于编者的延伸解释，不作为该段落的直译。
 
@@ -3203,7 +3165,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 十八界列举
 
-> "The 'elements' next to that (XIV.32) are the eighteen elements, that is to say, eye element, visible-data element, eye-consciousness element; ear element, sound element, ear-consciousness element; nose element, odour element, nose-consciousness element; tongue element, flavour element, tongue-consciousness element; body element, tangible-data element, body-consciousness element; mind element, mental-data element, mind-consciousness element." (XV.17)
+> “‘界’紧接在‘处’之后（XIV.32），就是十八界，即眼界、色界、眼识界；耳界、声界、耳识界；鼻界、香界、鼻识界；舌界、味界、舌识界；身界、触界、身识界；意界、法界、意识界。”（XV.17）
 
 十八界在十二处的六对基础上，为每对感官/对象加上对应的**意识界**，共18个。
 
@@ -3216,13 +3178,13 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **anuvīdhīyate**（被持续分类）：有情被这些界持续分类入轮回
 - **dhārenti**（承载自性）：界使各法的个别自性得以承载显现
 
-> "Furthermore, 'element' is a term for what is soulless; and for the purpose of abolishing the perception of soul the Blessed One accordingly taught the elements." (XV.22)
+> “此外，‘界’是无灵魂之物的名称；因此，为了消除灵魂的知觉，世尊相应地教导了诸界。”（XV.22）
 
 **界的核心教义意义**：用"界"这个概念消除在意识中感知"灵魂"的错误认知。意识有多种（眼识、耳识等），且依缘而起，本质上是无主的（soulless）。
 
 #### 3. 为何恰好十八界（XV.32-33）
 
-> "Furthermore, they are stated as eighteen for the purpose of eliminating the kind of perception to be found in those who perceive a soul in consciousness, the individual essence of which is cognizing; for there are beings who perceive a soul in consciousness, the individual essence of which is cognizing." (XV.32)
+> “此外，之所以说有十八界，是为了消除这样一种知觉：有些人把个别自性为识知的意识看成灵魂；确实有众生把个别自性为识知的意识看成灵魂。”（XV.32）
 
 十八界通过显示意识的**多样性**（眼识/耳识等各不同），并在相关因缘分析中说明各识依相应条件而起，服务于消除"有一个不变的灵魂在认知"的邪见；“依眼+色而生眼识”是编者举例，不扩写为 XV.32 单独的逐字结论。
 
@@ -3243,10 +3205,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 受蕴如箭，想与行蕴如疾病，意识蕴如始终无离于受（病）的病人
 
 **无为界**（Nibbāna，涅槃）= 不死、安宁、安全：
-> "The unformed element, however, should be regarded as deathless, as peace, as safety. Why? Because it is the opposite of all ill." (XV.40)
+> “然而，无为界应被视为不死、寂静和安全。为什么？因为它是一切不善和苦的对立面。”（XV.40）
 
 **意识界**（mind-consciousness element）= **森林猴子**（forest monkey）：
-> "The mind-consciousness element should be regarded as a forest monkey, because it does not stay still on its object; or as a wild horse, because it is difficult to tame; or as a stick flung into the air, because it falls anyhow; or as a stage dancer, because it adopts the guise of the various defilements such as greed and hate." (XV.43)
+> “意识界应被视为森林猴，因为它不会安住于所缘；或视为野马，因为难以驯服；或视为抛向空中的木棍，因为它会任意落下；或视为舞台上的舞者，因为它会采取贪、嗔等各种烦恼的姿态。”（XV.43）
 
 这个比喻生动传达了意识的不稳定、难以驯服的本质，为禅修训练心智提供了生动的动机。
 
@@ -3259,11 +3221,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "Base (āyatana) should be understood because of its actuating, because of being the range of the origins, and because of leading on what is actuated." (XV.4)
+> “‘处’应从激活、作为诸起源的范围以及引导被激活之物这几个意义来理解。”（XV.4）
 
-> "The internal bases should be regarded as an empty village … and the external ones as village-raiding robbers because they raid the internal ones." (XV.16)
+> “内处应被视为空村……外处应被视为劫掠村庄的盗贼，因为它们劫掠内处。”（XV.16）
 
-> "Element is a term for what is soulless; and for the purpose of abolishing the perception of soul the Blessed One taught the elements." (XV.22)
+> “‘界’是无灵魂之物的名称；为了消除灵魂的知觉，世尊教导了诸界。”（XV.22）
 
 ---
 
@@ -3304,11 +3266,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 2. "根"的词义（XVI.3-6）
 
-> "What is this meaning of faculty (rulership—indriyattha) that they have? (a) The meaning of being the mark of a ruler (inda) is the meaning of faculty (rulership). (b) The meaning of being taught by a ruler is the meaning of faculty, (c) The meaning of being seen by a ruler is the meaning of faculty, (d) The meaning of having been prepared by a ruler is the meaning of faculty, (e) The meaning of having been fostered by a ruler is the meaning of faculty." (XVI.4)
+> “它们具有怎样的‘根’（统治、indriyattha）之义？（一）作为统治者（inda）的标志；（二）由统治者教导；（三）由统治者看见；（四）由统治者准备；（五）由统治者培育——这些都称为‘根’之义。”（XVI.4）
 
 "根"（indriya）的词根是**inda**（因陀罗，统治者），因此"根"意为"统治者的标志"，即对其领域具有**主权支配力**的能力。
 
-> "Furthermore, they are faculties (rulership) in the sense of lordship called predominance. For predominance of the eye, etc., is implied in the occurrence of eye-consciousness, etc., because of the (consciousness') keenness when that [faculty] is keen and slowness when it is slow." (XVI.6)
+> “此外，它们称为根，是因为具有称为主导性的主权。眼根等的主导性包含在眼识等的生起中：根锐利时，识也敏锐；根迟钝时，识也迟钝。”（XVI.6）
 
 眼根的健锐决定眼识的健锐——这就是"根"在认知中发挥主导作用的含义。
 
@@ -3323,7 +3285,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 | 功能（XVI.10）  | 每根发挥其特定的主导功能 |
 | 所在界（XVI.11） | 五官根属欲界；意根、命根、舍根属四界；喜根属三界；最后三根属出世间 |
 
-> "The monk who knows the urgent need / To keep the faculties restrained / By fully understanding them / Will make an end of suffering." (XVI.11)
+> “比丘完全了知诸根，
+> 知道守护诸根的迫切必要；
+> 他将使诸根受到制约，
+> 终结一切痛苦。”（XVI.11）
 
 ### 第二部分：四圣谛（Sacca，XVI.13-85+）
 
@@ -3367,8 +3332,8 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 道谛 = 八正道
 
 **为何称"圣谛"（Noble Truths）**（XVI.20-22）：
-> "They are called Noble Truths because the Noble Ones, the Buddhas, etc., penetrate them." (XVI.20)
-> "Besides, the Noble Truths are the Truths that are Noble. To be noble is to be not unreal; the meaning is, not deceptive." (XVI.22)
+> “它们之所以称为圣谛，是因为圣者、诸佛等洞见了它们。”（XVI.20）
+> “此外，圣谛就是圣的真理。所谓圣，就是不虚假；意思是不欺骗。”（XVI.22）
 
 圣谛之"圣"有双重含义：（a）圣者所知之谛；（b）诸谛本身是真实不虚（不欺骗的）的真理。
 
@@ -3378,11 +3343,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **（i）生**（XVI.32-43）：
 
-> "birth is suffering, ageing is suffering, sickness is suffering, death is suffering, sorrow, lamentation, pain, grief, and despair are suffering, association with the unloved is suffering, separation from the loved is suffering, not to get what one wants is suffering, in short, the five aggregates [as objects] of clinging are suffering." (Vibh 99)
+> “生是苦，老是苦，病是苦，死是苦，愁、悲、苦、忧、恼是苦，与不爱者相遇是苦，与爱者分离是苦，求不得是苦；简言之，五取蕴是苦。”（Vibh 99）
 
 觉音以极具冲击力的文字描述婴儿在母胎中的苦（XVI.37）：
 
-> "When this being is born in the mother's womb, he is not born inside a blue or red or white lotus, etc., but on the contrary, like a worm in rotting fish, rotting dough, cesspools, etc., he is born in the belly in a position that is below the receptacle for undigested food (stomach), above the receptacle for digested food (rectum), between the belly-lining and the backbone, which is very cramped, quite dark, pervaded by very fetid draughts redolent of various smells of ordure." (XVI.37)
+> “这个众生在母胎中出生时，并不是出生在蓝、红或白色莲花之中；相反，他像腐鱼、腐面团、粪坑中的虫一样，出生在腹部：位于未消化食物的容器（胃）之下、已消化食物的容器（直肠）之上，处在腹膜与脊柱之间；那里十分狭窄、极其黑暗，充满带着各种粪便气味的恶臭气流。”（XVI.37）
 
 生之苦的七个层次：胎内之苦、妊娠之苦、流产之苦、分娩之苦、出生后触摸之苦、自我伤害之苦、他人伤害之苦。
 
@@ -3390,7 +3355,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 老有广义（一切有为法的老性）和狭义（身体衰老）两种。狭义老的苦：肢体沉重、诸根衰退、青春消逝、记忆衰退、力量消退、外表失去吸引力、老朽迟钝。
 
 **（iii）死**（XVI.46-47）：
-> "Ageing … has the characteristic of ripening. Its function is to lead on towards their termination. Death has the characteristic of a fall. Its function is to disjoin. It is manifested as absence from the destiny [in which there was the rebirth]."（XVI.46–47）
+> “老具有成熟的特征；作用是引导诸法走向终结。死具有堕落的特征；作用是使其分离；显现为不再处于曾经投生的去处。”（XVI.46–47）
 
 **（iv）愁**（XVI.48）：亲人损失引起的心灼感，内耗心的特征
 **（v）悲**（XVI.49）：口头呼号，特征是宣称德行与过失
@@ -3404,7 +3369,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **（xii）五取蕴**（XVI.57-60）：
 
-> "the aggregates [as objects] of clinging have birth as their initial suffering, ageing as their medial suffering, and death as their final suffering." (XVI.59)
+> “五取蕴以生为最初的苦，以老为中间的苦，以死为最后的苦。”（XVI.59）
 
 五取蕴是所有苦的总括——苦如同海水，哪怕一滴也含整个大海的味道。
 
@@ -3415,7 +3380,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 4. 集谛：渴爱的三种形式（XVI.61）
 
-> "craving which produces further becoming, is accompanied by delight and greed, delighting in this and that, that is to say, craving for sense desires, craving for becoming, craving for non-becoming." (Vibh 101)
+> “这种渴爱会产生后有，伴随着欢喜和贪，喜爱此处和彼处；也就是欲爱、有爱和无有爱。”（Vibh 101）
 
 三种渴爱的细分：
 - **欲爱**（kāma-taṇhā）：对五欲的渴爱
@@ -3427,7 +3392,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 觉音用11组问答驳斥"涅槃不存在"的主张：
 
 **[Q1] 涅槃不可知故不存在？**
-> "[A] That is not so, because it is apprehensible [by some, namely, the nobles ones] by the [right] means." (XVI.67)
+> “[答]并非如此，因为它可以通过正确的方法被［某些人，即圣者］把握。”（XVI.67）
 
 **[Q2] 涅槃是五蕴灭后的"不存在"？**
 [A] 不是，因为那样的话道路就是徒劳的，但道路并不徒劳，因为它确实到达了涅槃。
@@ -3436,14 +3401,14 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 [A] 不是，否则阿罗汉也只是"消灭"，那推论就矛盾了。
 
 **[Q8] 涅槃既然是无为，就不能被道路创造？**
-> "[A] That is not so, because it is not arousable by the path; it is only reachable, not arousable, by the path; that is why it is uncreated. It is because it is uncreated that it is free from ageing and death." (XVI.71)
+> “[答]并非如此，因为涅槃不是由道生起的；道只能到达它，不能使它生起，所以它是无为的。正因为它是无为的，所以不受老死。”（XVI.71）
 
-> "And what is more, the fallacy then follows that Nibbāna would be temporary, have the characteristic of being formed, and be obtainable regardless of right effort … But it is because the kind of destruction called 'cessation consisting in non-arising,' [that is, Nibbāna,] serves figuratively speaking as decisive-support [for the path] that [Nibbāna] is called 'destruction' as a metaphor for it." (XVI.70)
+> “此外，还会产生这样的谬误：涅槃将是暂时的，具有有为的特征，并且不论是否正确努力都能获得……然而，之所以把涅槃比喻为‘灭’，是因为被称为‘不生起之灭’的这种灭，譬喻而言，成为道的决定性所依。”（XVI.70）
 
 最终定论（XVI.73-74）：
-> "The aforesaid logical reasoning proves that only this [that is, Nibbāna] is permanent [precisely because it is uncreated]; and it is immaterial because it transcends the individual essence of matter."（XVI.73）
+> “上述逻辑推理证明，只有这个［即涅槃］是常，因为它是无为的；它也是非物质的，因为它超越物质的个别自性。”（XVI.73）
 
-> "Bhikkhus, there is an unborn, an unbecome, an unmade, an unformed." (It 37; Ud 80)
+> “比丘们，有不生、不成为、非所造、非有为者。”（It 37；Ud 80）
 
 涅槃有两种：
 - **有余涅槃**（with result of past clinging left）：阿罗汉在世，过去业产生的蕴仍存在
@@ -3451,7 +3416,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 6. 道谛：八正道（XVI.75-85）
 
-> "Briefly (see XXII.31 for details), when a meditator is progressing towards the penetration of the four truths, his eye of understanding with Nibbāna as its object eliminates the inherent tendency to ignorance, and that is right view." (XVI.76)
+> “简言之（详情见 XXII.31），当禅修者趋向洞见四谛时，他以涅槃为所缘的慧眼消除无明的潜在倾向，这就是正见。”（XVI.76）
 
 八正道各支在悟道刹那（path moment）的同时生起：
 - **正见**（right view）：以涅槃为对象，消除无明的潜在倾向，特征是正确看见
@@ -3461,7 +3426,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **正念**（right mindfulness）：以涅槃为对象的正念
 - **正定**（right concentration）：路的吸收集中，以涅槃为对象
 
-> "There is no pain but is affliction / And naught that is not pain afflicts / This certainty that it afflicts / Is what is reckoned here as truth." (XVI.25诗偈)
+> “凡是痛苦，都是逼迫；
+> 凡非痛苦，便不逼迫；
+> 这种‘它在逼迫’的确定性，
+> 在这里被称为真理。”（XVI.25 诗偈）
 
 #### 7. 知识的功能、四谛的内容划分与比喻（XVI.84–91）
 
@@ -3493,11 +3461,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "They are called Noble Truths because the Noble Ones, the Buddhas, etc., penetrate them … the Noble Truths are the Truths that are Noble. To be noble is to be not unreal; the meaning is, not deceptive." (XVI.20, 22)
+> “它们之所以称为圣谛，是因为圣者、诸佛等洞见了它们……圣谛就是圣的真理。所谓圣，就是不虚假，意思是不欺骗。”（XVI.20、22）
 
-> "Bhikkhus, there is an unborn, an unbecome, an unmade, an unformed." (XVI.74)
+> “比丘们，有不生、不成为、非所造、非有为者。”（XVI.74）
 
-> "Just as a lion directs his strength against the man who shot the arrow at him, not against the arrow, so the Buddhas deal with the cause, not with the fruit. But just as dogs, when struck with a clod, snarl and bite the clod and do not attack the striker, so the sectarians who want to make suffering cease devote themselves to mutilating the body, not to causing cessation of defilements." (XVI.63注)
+> “正如狮子把力量对准射箭的人，而不是对准箭；诸佛也对治原因，而不是果。又如狗被土块击中时，会对土块咆哮、啃咬，却不攻击投掷者；同样，那些想使痛苦止息的外道只致力于残害身体，而不是导致烦恼止息。”（XVI.63 注）
 
 ---
 
@@ -3525,18 +3493,18 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 两种区分
 
-> "the states beginning with ignorance that should be understood as dependent origination … the states beginning with ageing-and-death that should be understood as dependently-originated states." (XVII.2-3)
+> “以无明为首、应理解为缘起的诸法……以老死为首、应理解为缘生法的诸法。”（XVII.2–3）
 
 觉音明确区分两个概念：
 
 - **缘起**（paṭicca-samuppāda）= **作为条件的诸法**（无明、行等），即条件本身
 - **缘生法**（paṭicca-samuppanna-dhammā）= **由条件所产生的诸法**（行、识等），即被条件产生的结果
 
-> "The states that are conditions should be understood as the dependent origination. The states generated by such and such conditions are dependently-originated states." (XVII.4)
+> “作为条件的诸法，应理解为缘起；由这些条件生起的诸法，应理解为缘生法。”（XVII.4）
 
 #### 2. 缘起的特征（XVII.5-6）
 
-> "So, bhikkhus, that herein which is reality, not unreality, not otherness, specific conditionality: that is called dependent origination." (S II 25f.)
+> “因此，比丘们，这里所谓真实、不虚妄、不异、各别的条件性，就称为缘起。”（S II 25 以下）
 
 缘起具有四个本质特征：
 - **真实性**（reality）：不是虚构的
@@ -3544,7 +3512,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **非他性**（not otherness）：条件与果之间没有混淆——眼条件生眼识，不生耳识
 - **特异性条件性**（specific conditionality，idappaccayatā）：特定条件产生特定结果，不多不少
 
-> "Because particular states are produced by particular conditions, neither less nor more, it is called reality (suchness)." (XVII.6)
+> “因为特定的诸法由特定的条件生起，不会少也不会多，所以称为真实（如是性）。”（XVII.6）
 
 这四重特征揭示了缘起的**中道本质**：既反对偶然论（无原因的产生），也反对决定论（一个原因产生所有结果），更反对常见论（永恒自我在轮回）和断见论（死后一切灭尽）。
 
@@ -3562,16 +3530,16 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - **paṭicca**（依凭）：意为"有所依凭，不离开"（not without that）；意指因果不能互相脱离
 - **samuppāda**（共同生起）：sam = 一起（together），uppāda = 正确地生起（rightly arising）；即"不是单独地或无因地，而是共同生起"
 
-> "It is dependent (paṭicco) and a co-arising (samuppādo), thus in this way also it is dependent origination (paṭicca-samuppāda)." (XVII.18)
+> “它是依赖的（paṭicco），也是共同生起的（samuppādo），因此也称为缘起（paṭicca-samuppāda）。”（XVII.18）
 
 **缘起作为中道的深义**（XVII.21-24）：
 
-> "The first [word 'dependent'] will deny the false view of eternity and so on, and the second will prevent the nihilistic type of view." (XVII.21)
+> “第一个词［‘依赖’］将否定常见等错误见解，第二个词则防止断灭论一类的见解。”（XVII.21）
 
 - "依凭"（dependent）否定常见论：事物是依赖条件而生的，不是永恒的
 - "共同生起"（co-arising）防止断灭论：条件组合生起果，此果再生起下一个条件，链条不断裂
 
-> "the whole expression 'dependent origination' (paṭicca-samuppāda) represents the middle way, which rejects the doctrines, 'He who acts is he who reaps' and 'One acts while another reaps' (S II 20)." (XVII.24)
+> “‘缘起’（paṭicca-samuppāda）这一完整表达代表中道，拒绝‘行动者就是受果者’和‘一人行动、另一人受果’这两种主张。”（S II 20）（XVII.24）
 
 ### 第三部分：四种教学方式（XVII.27-35）
 
@@ -3586,7 +3554,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **为何以无明为起始**（XVII.36-41）：
 
-> "Ignorance is stated as the beginning not because it has no condition … but there is a figurative way in which it can be treated as the root cause. What way is that? When it is made to serve as a starting point in an exposition of the round [of becoming]." (XVII.36)
+> “无明被说成起点，并不是因为它没有条件……不过，有一种譬喻性的方式可以把它当作根本原因。是哪一种方式？就是在说明轮回［有］时，把它作为起点。”（XVII.36）
 
 无明没有绝对的第一因（经云：无明的条件是漏），但在轮回的解释中，无明是最具代表性的起始点——因为无明和有爱（craving for becoming）是产生善恶业的两个最突出的原因（XVII.37-40）。
 
@@ -3625,7 +3593,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **老死**（jarāmaraṇa）：相关苦谛分析见第十六章 XVI.32–47；本章 XVII.57 进一步放入缘起支的条件链中说明。
 
-> "Ignorance has the characteristic of unknowing. Its function is to confuse. It is manifested as concealing. Its proximate cause is cankers. Formations have the characteristic of forming. Their function is to accumulate. They are manifested as volition. Their proximate cause is ignorance." (XVII.51)
+> “无明的特征是不知；作用是混乱；显现为遮蔽；近因是诸漏。行的特征是造作；作用是积集；显现为意志；近因是无明。”（XVII.51）
 
 ### 第五部分：二十四缘体系（XVII.65-100）
 
@@ -3679,7 +3647,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 对于不善业行，无明以多种方式作为条件（所缘缘、所缘增上缘、亲依止缘、无间缘、等无间缘等）。
 对于不动业行，无明只作为亲依止缘一种条件。
 
-> "Nor from a single cause arise / One fruit or many, nor one fruit from many; / 'Tis helpful, though, to utilize / One cause and fruit as representative." (XVII.105)
+> “一个果或多个果，
+> 不会从单一原因生起；
+> 一个果也不会由多种原因生起；
+> 不过，以一个因和一个果作为代表来说明，是有帮助的。”（XVII.105）
 
 这首偈颂说明：不能把一项原因与一项或多项结果、或多项原因与一项结果作机械的一一对应；以一个原因和一个结果作代表，是教学上的方便。佛陀以无明为代表性原因（因为它是根本性的、显而易见的、且不普遍于所有法），但这并不意味着实际上只有无明一个条件。这里不再把偈颂扩大解释为“只有多种原因共同产生多种结果”的普遍定律。
 
@@ -3723,11 +3694,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "That herein which is reality, not unreality, not otherness, specific conditionality: that is called dependent origination." (S II 25f., XVII.5)
+> “这里所谓真实、不虚妄、不异、各别的条件性，就称为缘起。”（S II 25 以下；XVII.5）
 
-> "The whole expression 'dependent origination' represents the middle way, which rejects the doctrines, 'He who acts is he who reaps' and 'One acts while another reaps'." (XVII.24)
+> “‘缘起’这一完整表达代表中道，拒绝‘行动者就是受果者’和‘一人行动、另一人受果’这两种主张。”（XVII.24）
 
-> "Nor from a single cause arise one fruit or many … 'Tis helpful, though, to utilize one cause and fruit as representative." (XVII.105)
+> “一个果或多个果不会从单一原因生起……不过，以一个因和一个果作为代表来说明，是有帮助的。”（XVII.105）
 
 ---
 
@@ -3750,7 +3721,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 ### 第一部分：见清净的位置与方法论
 
-> "Now, it was said earlier (XIV.32) that he 'should first fortify his knowledge by learning and questioning about those things that are the soil' after he has perfected the two purifications—purification of virtue and purification of consciousness … But it was said above (XIV.32) that 'The five purifications … are the trunk.'" (XVIII.1-2)
+> “前面（XIV.32）说过，在完成戒清净和心清净这两种净化后，他‘首先应当通过学习、询问那些作为土壤的事物来巩固自己的知识’……但上面（XIV.32）又说：‘五种净化……是树干。’”（XVIII.1–2）
 
 见清净是**五种清净之树干**（trunk）的第一种：
 1. 见清净（purification of view）
@@ -3791,13 +3762,13 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - "此身中一切物质，皆由四大种和以四大种为依托的派生物质构成"——这是色
 - 心基和法界——这是名
 
-> "This mentality and this materiality are called 'mentality-materiality.'" (XVIII.14引用 M I 222)
+> “这种名法和这种色法，称为‘名色’。”（XVIII.14，引 M I 222）
 
 ### 第三部分：名法不显时的处理（XVIII.15-17）
 
 当修行者辨明色法却无法看清名法时，觉音给出三个生动比喻：
 
-> "Just as, when a man with eyes looks for the reflection of his face in a dirty looking-glass and sees no reflection, he does not throw the looking-glass away … on the contrary, he polishes it again and again, and then the reflection becomes plain of itself when the looking-glass is clean." (XVIII.16)
+> “正如有眼睛的人在肮脏的镜子中寻找自己的面容，却看不见倒影时，并不会把镜子扔掉……相反，他会一次又一次地擦拭镜子；镜子干净后，倒影自然就清晰了。”（XVIII.16）
 
 - **脏镜子比喻**：继续打磨（专注于色法），名法可随之被辨明
 - **芝麻油比喻**：不断润湿芝麻粉，持续压榨，终出油脂
@@ -3822,11 +3793,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 这是本章最重要的认识论突破：
 
-> "He defines the four immaterial aggregates that have thus become evident through contact, etc., as 'mentality.' And he defines their objects, namely, the four primaries and the materiality derived from the four primaries, as 'materiality.' So, as one who opens a box with a knife, as one who splits a twin palmyra bulb in two, he defines all states of the three planes as 'mentality-materiality,' and he concludes that over and above mere mentality-materiality there is nothing else that is a being or a person or a deity or a Brahmā." (XVIII.24)
+> “他把这样通过触等显现出来的四种非色蕴界定为‘名’，把它们的对象——四大种及由四大种所造的色——界定为‘色’。于是，他像用刀打开盒子、像把一枚双生棕榈果劈成两半一样，将三界的一切法界定为‘名色’，并得出结论：除了单纯的名色之外，没有任何有情、人、天神或梵天。”（XVIII.24）
 
 **车喻**（XVIII.25-28）：
 
-> "Just as when the component parts such as axles, wheels, frame poles, etc., are arranged in a certain way, there comes to be the mere term of common usage 'chariot,' yet in the ultimate sense when each part is examined there is no chariot … just too, when there are the five aggregates [as objects] of clinging, there comes to be the mere term of common usage 'a being,' 'a person,' yet in the ultimate sense, when each component is examined, there is no being as a basis for the assumption 'I am' or 'I'; in the ultimate sense there is only mentality-materiality." (XVIII.28)
+> “正如车轴、车轮、车架等部件以某种方式组合后，只产生一个通俗名称‘车’，但从究竟意义看，逐一检查各部件并没有车……同样，当五取蕴存在时，只产生通俗名称‘有情’、‘人’；但从究竟意义看，逐一检查各部分，并没有任何有情作为‘我是’或‘我’这种假定的基础；究竟而言，只有名色。”（XVIII.28）
 
 使用了系列比喻：
 - 车的零件聚合 = "车"的约定称谓（chariot = assemblage of parts）
@@ -3835,7 +3806,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 当各部分单独检视时：无车、无房、无众生。正确的见是：**在究竟义中，只有名色，没有"我"或"人"的基础**。
 
-> "The vision of one who sees in this way is called correct vision." (XVIII.28末)
+> “以这种方式看见者的见，被称为正见。”（XVIII.28 末）
 
 **常见与断见的危险**（XVIII.29-30）：
 拒绝此正见而坚持"有一个永恒众生"的人，会陷入常见或断见——因为那个假设的众生要么是永恒的（常见），要么是会被消灭的（断见）。
@@ -3845,7 +3816,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 名（mentality）和色（materiality）互相依存，不是孤立存在的：
 
 **芦苇束比喻**（XVIII.32）：
-> "Just as when two sheaves of reeds are propped one against the other, each one gives the other consolidating support, and when one falls the other falls, so too, in the five-constituent becoming mentality-materiality occurs as an interdependent state, each of its components giving the other consolidating support, and when one falls owing to death, the other falls too." (XVIII.32)
+> “正如两捆芦苇彼此倚靠，一捆为另一捆提供支撑；一捆倒下，另一捆也倒下。同样，在五蕴有中，名色以相互依存的状态发生，每一部分都为另一部分提供支撑；一部分因死亡而倒下时，另一部分也倒下。”（XVIII.32）
 
 名与色互相是支撑——一方倒，另一方亦倒。
 
@@ -3856,7 +3827,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **盲人与跛子的比喻**（XVIII.35）：
 
-> "A man born blind and a stool-crawling cripple wanted to go somewhere. The blind man said to the cripple, 'Look, I can do what should be done by legs, but I have no eyes with which to see what is rough and smooth.' The cripple said, 'Look, I can do what should be done by eyes, but I have no legs with which to go and come.' The blind man was delighted, and he made the cripple climb up on his shoulder." (XVIII.35)
+> “一个天生失明的人和一个只能在凳子上爬行的瘸子想去某处。盲人对瘸子说：‘看，我能做腿该做的事，却没有眼睛看清粗糙和平滑。’瘸子说：‘看，我能做眼睛该做的事，却没有腿来往。’盲人很高兴，就让瘸子爬到自己的肩上。”（XVIII.35）
 
 - **盲人**（无眼之人）= 色法：有动力但无认知能力
 - **跛子**（无腿之人）= 名法：有认知但无独立运作能力
@@ -3864,7 +3835,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 结论（XVIII.37）：
 
-> "The correct vision of mentality and materiality, which, after defining mentality-materiality by these various methods, has been established on the plane of non-confusion by overcoming the perception of a being, is what should be understood as purification of view. Other terms for it are 'defining of mentality-materiality' and 'delimitation of formations.'" (XVIII.37)
+> “通过这些方法界定名色，并超越有情的知觉，在不混乱的层面建立起来的名色正见，应理解为见清净。它的其他名称是‘名色界定’和‘诸行限定’。”（XVIII.37）
 
 ### 本章总结（编者归纳）
 
@@ -3876,11 +3847,17 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "Over and above mere mentality-materiality there is nothing else that is a being or a person or a deity or a Brahmā." (XVIII.24)
+> “除了单纯的名色之外，没有任何有情、人、天神或梵天。”（XVIII.24）
 
-> "The mental and material are really here, / But here there is no human being to be found, / For it is void and merely fashioned like a doll— / Just suffering piled up like grass and sticks." (Ancients' verse, XVIII.31)
+> “名色确实存在，
+> 但这里找不到任何人；
+> 它是空的，只是像木偶一样被造作，
+> 只是如草木堆积的痛苦。”（古人偈，XVIII.31）
 
-> "They cannot come to be by their own strength, / Or yet maintain themselves by their own strength; / Relying for support on other states, / Weak in themselves, and formed, they come to be." (XVIII.36诗偈)
+> “它们不能凭自己的力量生起，
+> 也不能凭自己的力量维持；
+> 依靠其他诸法作为支持，
+> 自身脆弱而有为，它们才得以生起。”（XVIII.36 诗偈）
 
 ---
 
@@ -3890,7 +3867,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 第十九章"度疑清净的描述"（Kaṅkhāvitaraṇa-visuddhi-niddesa）是七清净中第四种清净，通过**辨别名色的条件**来处理对三时（过去、现在、未来）的疑惑。这一清净在见清净（已见名色）的基础上更进一步——不仅辨认名色，还辨别名色的条件；原文以此处理“我在过去是否存在”等十六类疑惑，不把它扩大为一般形而上学论证的无条件彻底消解。
 
-> "Knowledge established by overcoming doubt about the three divisions of time by means of discerning the conditions of that same mentality-materiality is called 'purification by overcoming doubt.'" (XIX.1)
+> “通过辨别同一名色的条件，超越对三时的疑惑而确立的知识，称为‘度疑清净’。”（XIX.1）
 
 本章篇幅较短，但内容极其精要——它将前两章的哲学分析转化为**禅修者的实际观察**。
 
@@ -3909,7 +3886,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 #### 1. 无原因也无创造者（XIX.3）
 
-> "Firstly this mentality-materiality is not causeless, because if that were so, it would follow that [having no causes to differentiate it,] it would be identical everywhere always and for all. It has no Overlord, etc., because of the non-existence of any Overlord. And because, if people then argue that mentality-materiality itself is its Overlord, etc., then it follows that their mentality-materiality, which they call the Overlord, etc., would itself be causeless." (XIX.3)
+> “首先，这个名色并非无因；如果无因，就会因为没有区别它的原因而在任何地方、任何时候、对所有人都完全相同。它也没有主宰者等，因为不存在任何主宰者。若有人说名色本身就是主宰者等，那么他们所谓的主宰者名色本身也将成为无因。”（XIX.3）
 
 名色不是无因的（否则一切名色将完全相同），也不是由任何主宰者（Overlord）创造的（否则那主宰者本身也需要解释）。因此**必定有条件**。
 
@@ -3922,11 +3899,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 4. **业**（kamma）= 根因，使身生起
 5. **食**（nutriment）= 条件，如乳母的奶水维持婴儿
 
-> "When it is born thus, its causes (root-causes) are the four things, namely, ignorance, craving, clinging, and kamma, since it is they that bring about its birth; and nutriment is its condition, since it is that that consolidates it." (XIX.4)
+> “名色如此出生时，其因（根本原因）是四种，即无明、渴爱、取和业，因为正是它们导致出生；食是它的条件，因为食使它得到巩固。”（XIX.4）
 
 #### 3. 名身的条件（XIX.5）
 
-> "Due to eye and to visible object eye-consciousness arises." (S II 72; M I 111)
+> “由于眼和色，眼识生起。”（S II 72；M I 111）
 
 名法（心识）总是因条件而生——眼＋色对象 → 眼识；耳＋声 → 耳识，等等。每次认知事件都是条件性的，没有一个独立存在的"认识者"。
 
@@ -3937,7 +3914,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 色法的条件：四重——业、识、温度、食
 
 **(b) 逆序缘起观**（XIX.11）：
-> "This is called aging-and-death of formations; it comes to be when there is birth, and birth when there is becoming, and becoming when there is clinging … consciousness when there are formations, and formations when there is ignorance."（XIX.11）
+> “这称为诸行的老死；有生时便有老死，有有时便有生，有取时便有有……有行时便有识，有无明时便有行。”（XIX.11）
 
 **(c) 顺序缘起观**（XIX.12）：
 "So, with ignorance as condition there are formations" (M I 261)
@@ -3986,7 +3963,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 ### 第二部分：16种疑惑的消解（XIX.6, XIX.19）
 
-> "When he has seen it in this way, all his uncertainty is abandoned, that is to say, the five kinds of uncertainty about the past stated thus: 'Was I in the past? Was I not in the past? What was I in the past? How was I in the past? Having been what, what was I in the past?' (M I 8), and also the five kinds of uncertainty about the future … and also the six kinds of uncertainty about the present stated thus: 'Am I? Am I not? What am I? How am I? Whence will this being have come? Whither will it be bound?'" (XIX.6)
+> “他这样看见后，一切疑惑都被舍断，也就是关于过去的五种疑惑：‘我过去存在吗？过去不存在吗？过去是什么？过去怎样？过去曾是什么？’（M I 8）；以及关于未来的五种疑惑……还有关于现在的六种疑惑：‘我存在吗？我不存在吗？我是什么？我是怎样的？这个有情从哪里来？将往哪里去？’”（XIX.6）
 
 通过在禅修中辨别“名色由条件产生”，修行者依本章所述可处理对三时的十六类疑惑；“自然消解”改为“依辨别而逐步舍弃”：
 - **过去5种**："我过去是否存在？过去是什么？如何存在？"等
@@ -3997,15 +3974,18 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 ### 第三部分：无作者无受者（XIX.19-20）
 
-> "In all kinds of becoming, generation, destiny, station, and abode there appears only mentality-materiality, which occurs by means of linking of cause with fruit. He sees no doer over and above the doing, no experiencer of the result over and above the occurrence of the result." (XIX.19)
+> “在一切有、出生、趣、识住和居处中，显现的只有名色；名色通过因与果的连接而发生。他看不到造作之外另有作者，也看不到结果发生之外另有受果者。”（XIX.19）
 
 著名的古代偈颂（XIX.20）：
 
-> "There is no doer of a deed / Or one who reaps the deed's result; / Phenomena alone flow on— / No other view than this is right.（XIX.20）
+> “没有行为的作者，
+> 也没有收获行为果报的人；
+> 只有诸法不断流转——
+> 除此之外没有正确的见解。”（XIX.20）
 >
-> And so, while kamma and result / Thus causally maintain their round, / As seed and tree succeed in turn, / No first beginning can be shown.（XIX.20）
+> “因此，当业与果如此依因果维持轮回，如种子和树交替相续时，无法显示最初的开始。”（XIX.20）
 >
-> For here there is no Brahmā God, / Creator of the round of births, / Phenomena alone flow on— / Cause and component their condition."（XIX.20）
+> “这里没有梵天神、轮回的创造者；只有诸法不断流转，因与成分互为条件。”（XIX.20）
 
 **业与果的相互空性**（XIX.20诗中展现）：
 - 业中无果，果中无业——两者各自空（void of each other）
@@ -4014,11 +3994,11 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 ### 第四部分：度疑清净的结论（XIX.24-27）
 
-> "The knowledge that has been established by the overcoming of doubt about the three periods of time by discerning the conditions of mentality-materiality according to the various methods should be understood as 'purification by overcoming doubt.' Other terms for it are 'knowledge of the relations of states' and 'correct knowledge' and 'right vision.'" (XIX.25)
+> “通过各种方法辨别名色的条件，超越对三时的疑惑而确立的知识，应理解为‘度疑清净’。它的其他名称是‘诸法关系智’、‘正知’和‘正见’。”（XIX.25）
 
 这一阶段的禅修者被称为**"小入流者"**（lesser stream-enterer, XIX.27）：
 
-> "When a man practicing insight has become possessed of this knowledge, he has found comfort in the Buddhas' Dispensation, he has found a foothold, he is certain of his destiny, he is called a 'lesser stream-enterer.'" (XIX.27)
+> “修习观的人具备这种知识后，便在佛陀的教法中找到安稳，找到立足处，确定自己的归宿；他被称为‘小入流者’。”（XIX.27）
 
 这是一个极为重要的说明——即使尚未证悟圣果，仅仅通过这种智慧层次的禅修者，也已在某种意义上"找到了立足之地"，对佛法的实践有了坚定的信心。
 
@@ -4031,9 +4011,15 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "There is no doer of a deed / Or one who reaps the deed's result; / Phenomena alone flow on— / No other view than this is right." (XIX.20)
+> “没有行为的作者，
+> 也没有收获行为果报的人；
+> 只有诸法不断流转——
+> 除此之外没有正确的见解。”（XIX.20）
 
-> "For here there is no Brahmā God, / Creator of the round of births, / Phenomena alone flow on— / Cause and component their condition." (XIX.20)
+> “这里没有梵天神，
+> 没有轮回的创造者；
+> 只有诸法不断流转——
+> 因与成分互为条件。”（XIX.20）
 
 ---
 
@@ -4057,7 +4043,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 ### 第一部分：三种遍知（XX.3-5）
 
-> "There are three kinds of mundane full-understanding, that is, full-understanding as the known, full-understanding as investigation, and full-understanding as abandoning." (XX.3)
+> “世间的遍知有三种，即作为已知的遍知、作为审察的遍知和作为舍断的遍知。”（XX.3）
 
 | 遍知种类 | 范围 | 主要特征 |
 |--------|------|--------|
@@ -4098,7 +4084,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 23. 四无色定（four immaterial attainments）
 24. 十二缘起支（twelve members of dependent origination）
 
-> "Bhikkhus, all is to be directly known. And what is all that is to be directly known? Eye is to be directly known; visible objects are to be directly known … Ignorance is to be directly known … ageing-and-death is to be directly known." (XX.10引Pāṭis I 5f.)
+> “比丘们，一切都应被直接了知。什么是一切应被直接了知的？眼应被直接了知，色应被直接了知……无明应被直接了知……老死应被直接了知。”（XX.10，引 Paṭis I 5 以下）
 
 这24类构成原文列出的遍知对象框架；但原文紧接着说明，其中包含的出世间状态在此阶段不应处理，因为它们“不适合以遍知来作意”（XX.12）。因此，这里应理解为遍知对象的分类框架，而不是声称本节已经对一切有为、出世间现象无遗漏地完成了观照。
 
@@ -4106,7 +4092,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **核心方法**：对每一类对象，以过去/现在/未来×内/外×粗/细×劣/胜×远/近 = 11种方式，观察它是无常、苦、无我：
 
-> "Any materiality whatever, whether past, future or present, internal or external, gross or subtle, inferior or superior, far or near—he defines all materiality as impermanent: this is one kind of comprehension. He defines it as painful … He defines it as not-self." (XX.6)
+> “任何色法，无论过去、未来或现在，内在或外在，粗或细，劣或胜，远或近，他都界定一切色法为无常：这是一种遍知；他界定它为苦……他界定它为无我。”（XX.6）
 
 **以无常观为例**（XX.14）：
 - 过去的物质是"毁灭义的无常"——已被毁灭，未能传来此世
@@ -4124,7 +4110,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 遍知无常、苦、无我时，以40种描述性词汇加强观照（XX.18-19）：
 
 将五蕴/12处/18界等观为：
-> "impermanent, as a disease, a boil, a dart, a calamity, an affliction, as alien, disintegrating, as a plague, a disaster, a terror, a menace, as fickle, perishable, unenduring, as no protection, no shelter, no refuge, as empty, vain, void, not-self, as a danger, as subject to change, as having no core, as the root of calamity, as murderous, as due to be annihilated, as subject to cankers, as formed, as Māra's bait, as subject to birth, to ageing, to illness, to death … to defilement." (XX.18引Pāṭis II 238)
+> “无常、如病、如疮、如刺、如灾祸、如苦恼、如异己、如坏灭、如瘟疫、如灾难、如恐怖、如威胁；如善变、可坏、不持久；无保护、无庇护、无避难处；空、虚、空无、无我；危险、会变异、无核心；灾祸之根、杀戮者、应被灭除者；有漏、有为、魔罗的诱饵；会生、会老、会病、会死……会染污。”（XX.18，引 Paṭis II 238）
 
 这40种描述提供了从不同角度洞见无常、苦、无我的丰富工具。以其中几种为例：
 
@@ -4189,9 +4175,9 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 
 **代表性引文**：
 
-> "Materiality, whether past, future, or present, is impermanent in the sense of destruction, painful in the sense of terror, not-self in the sense of having no core." (XX.6综述)
+> “色法无论过去、未来或现在，在坏灭的意义上是无常，在可怖的意义上是苦，在没有核心的意义上是无我。”（XX.6 综述）
 
-> "He comprehends each aggregate as impermanent because of non-endlessness … as painful because of oppression by rise and fall … as not-self in the sense of having no core." (XX.19)
+> “他因为不无限延续而遍知每一蕴为无常……因为被生灭逼迫而遍知为苦……因为没有核心而遍知为无我。”（XX.19）
 
 ---
 
@@ -4245,10 +4231,12 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 8. 征服厌倦（无聊）与官能享乐
 
 **代表性引文**（XXI.18）：
-> "What is impermanent, painful, not-self, is not something to delight in; and what is not something to delight in is not something to arouse greed for; consequently, when that field of formations is seen as impermanent, painful, not-self, in accordance with the contemplation of dissolution, then he becomes dispassionate, he does not delight; he causes fading away of greed, he does not inflame it."（XXI.18）
+> “无常、苦、无我的，不是值得喜爱的；不是值得喜爱的，就不值得生起贪欲。因此，当他依照坏灭随观，看见那一片诸行为无常、苦、无我时，便离贪，不再喜爱；他使贪欲褪去，而不使它增长。”（XXI.18）
 
 **比喻**（XXI.27）：
-> "And he who looks upon the world / As one who looks upon a bubble, / As one who looks upon a mirage, / Is out of sight of Death the King" (Dhp 170).
+> “谁若把世界看作泡沫，
+> 把世界看作幻象，
+> 他便超越死王的视线。”（Dhp 170）
 
 ---
 
@@ -4282,7 +4270,10 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 | (3.a) 理解怖畏为世间的 | 生起是世间的……绝望是世间的 | (3.b) 不生起是出世间的 |
 | (4.a) 理解怖畏为行法 | 生起是行法……绝望是行法 | (4.b) 不生起是涅槃 |
 
-> "He contemplates as suffering / Arising, occurrence, and the sign, / Accumulation, rebirth-linking— / And this his knowledge is of danger. / He contemplates as bliss no arising, / And no occurrence, and no sign…"（XXI.37节中偈颂）
+> “他观生起、发生和相，
+> 观积集、结生为苦——
+> 这就是他的过患智。
+> 他观不生起、不发生、无相为乐……”（XXI.37 节中偈颂）
 
 ---
 
@@ -4360,7 +4351,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 有大智慧（慧根强）者 → 空解脱
 
 **代表性引文**（XXI.70，引Paṭis II 58）：
-> "When one who has great resolution brings [formations] to mind as impermanent, he acquires the signless liberation. When one who has great tranquillity brings [them] to mind as painful, he acquires the desireless liberation. When one who has great wisdom brings [them] to mind as not-self, he acquires the void liberation."（XXI.70；引 Paṭis II 58）
+> “具有大决意的人把［诸行］作意为无常，便获得无相解脱；具有大寂静的人把它们作意为苦，便获得无愿解脱；具有大智慧的人把它们作意为无我，便获得空解脱。”（XXI.70；引 Paṭis II 58）
 
 #### 7.4 七种圣者的分类（XXI.74-78）
 
@@ -4380,7 +4371,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 中间：为寻求出离手段而审察 = **审察随观智**
 - 高峰：以平等心安住 = **行舍智**
 
-> "Desire for deliverance, and contemplation of reflection, and equanimity about formations: these things are one in meaning and only the letter is different" (Paṭis II 64).
+> “求解脱、审察随观以及对诸行的舍，这些事在意义上相同，只是文字不同。”（Paṭis II 64）
 
 ---
 
@@ -4415,7 +4406,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 - 与后续的三十七菩提品（道支）相符顺
 - "如同一位正义的国王，坐在审判席上，不带偏见，既遵从法官们的判决，也遵从古老的皇家惯例，随顺就是这样。"
 
-> "Knowledge is in conformity with truth." (XXI.133)
+> “知识与真理相应。”（XXI.133）
 
 ---
 
@@ -4466,7 +4457,12 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 5. **出起趋向道智**：随顺智被置于观智向道智、涅槃过渡的末端；将其表述为“绝对不可逆转、无法回到凡俗状态”超出了本节引文的直接范围，故这里只保留其趋向性。
 
 **代表性引文**（XXI.136最后偈颂）：
-> "The Greatest Sage did thus proclaim / This insight stilled and purified, / That to emergence leads beside, / With many a neatly chosen name. / The round of rebirth's slough of pain / Is vast and terrible; a man / Wisely should strive as best he can, / If he would this emergence gain."（XXI.136）
+> “大圣者如此宣说这寂静而清净的观智，
+> 也以许多精心选择的名称，
+> 说明它通向出起。
+> 轮回的痛苦泥沼广大而可怖；
+> 若人希望获得出起，
+> 就应以智慧尽力精进。”（XXI.136）
 
 ---
 
@@ -4625,9 +4621,9 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 #### 2.4 结论（XXII.129）
 
 本章以回应全书开篇偈颂作结：
-> "When a wise man, established well in virtue, / Develops consciousness and understanding" (I.1)
+> “智者善安住于戒，修习心与慧。”（I.1）
 
-> "After he has perfected the two purifications that are the 'roots,' then he can develop the five purifications that are the 'trunk'" (XIV.32). At this point the detailed exposition of the system for developing understanding in the proper way as it has been handed down is completed. So the question, "How should it be developed?" (XIV.32) is now answered.
+> “完成作为‘根’的两种清净后，他便能修习作为‘树干’的五种清净。”（XIV.32）至此，依传承正确修习慧的体系已经详细说明完毕；因此，“应当如何修习？”（XIV.32）这个问题也得到回答。
 
 ### 本章总结（编者归纳）
 
@@ -4642,7 +4638,7 @@ Kasinas → 污秽观 → 忆念法 → 最终理解
 4. **道智同时完成四功能**：这是整个修行体系的顶点——知苦、断集、证灭、修道在同一刹那同时完成，如灯同时燃芯、驱暗、发光、耗油。
 
 **代表性引文**（XXII.92-94，灯的比喻）：
-> "Just as a lamp performs the four functions simultaneously in a single moment—it burns the wick, dispels darkness, makes light appear, and uses up the oil—so, too, path knowledge penetrates to the four truths simultaneously in a single moment—it penetrates to suffering by penetrating to it with full-understanding, penetrates to origination by penetrating to it with abandoning, penetrates to the path by penetrating to it with developing, and penetrates to cessation by penetrating to it with realizing."（XXII.92–94）
+> “正如灯在一刹那同时发挥四种作用：燃烧灯芯、驱散黑暗、显现光明、耗尽灯油；同样，道智在一刹那同时洞见四谛：以遍知洞见苦，以舍断洞见集，以修习洞见道，以作证洞见灭。”（XXII.92–94）
 
 ---
 
@@ -4671,7 +4667,12 @@ D. 成为供养的应受者（世界及神明的最高供养）
 世间慧的修习从辨别名色开始，去除**以身见开头的各种烦恼**；出世间慧在道智刹那去除**以诸结开头的各种烦恼**。
 
 **偈颂**（XXIII.2）：
-> "With dreadful thump the thunderbolt / Annihilates the rock. / The fire whipped by the driving wind / Annihilates the wood. / The radiant orb of solar flame / Annihilates the dark. / Developed understanding, too, / Annihilates inveterate / Defilements' netted overgrowth, / The source of every woe. / This blessing in this very life / A man himself may know."（XXIII.2）
+> “雷霆以可怖的轰鸣摧毁岩石；
+> 疾风鼓动的烈火摧毁木头；
+> 光辉的太阳火轮摧毁黑暗；
+> 修习成就的慧也摧毁根深蒂固、纠缠不清的烦恼丛，
+> 一切苦难的根源。
+> 人在此生便能亲自知道这份福佑。”（XXIII.2）
 
 ### 二、利益B：体验圣果之味（XXIII.3-15）
 
@@ -4701,7 +4702,13 @@ D. 成为供养的应受者（世界及神明的最高供养）
 **重要澄清**（XXIII.11）：在训练者（非阿罗汉）情况下，果（而非道）会在果定中升起，因为其倾向是趋向果。
 
 #### 2.2 最后的偈颂（XXIII.15）：
-> "Asceticism's fruit sublime, / Which tranquilizes all distress, / Its beauty from the Deathless draws, / Its calm from lack of worldliness. / Of a sweet purifying bliss / It is the fountainhead besides, / Whose honey-sweet ambrosia / A deathless sustenance provides."（XXIII.15）
+> “沙门行的殊胜果，
+> 能使一切苦恼平静；
+> 它从不死中取得美，
+> 从离世俗中取得寂静。
+> 它也是甜美清净之乐的源头，
+> 其蜜般甘美的甘露，
+> 提供不死的滋养。”（XXIII.15）
 
 ### 三、利益C：灭尽定（nirodha-samāpatti）（XXIII.16-52）
 
@@ -4747,7 +4754,13 @@ D. 成为供养的应受者（世界及神明的最高供养）
 
 #### 3.3 "灭尽定"的本质（XXIII.52）
 
-> "This too is an attainment which / A Noble One may cultivate; / The peace it gives is reckoned as / Nibbāna here and now. / A wise man by developing / The noble understanding can / With it himself endow; / So this ability is called / A boon of understanding, too, / The noble paths allow."（XXIII.52）
+> “这也是圣者能够修习的等至；
+> 它所给予的寂静，
+> 在这里、就在当下被称为涅槃。
+> 智者通过修习圣慧，
+> 可以使自己具备它；
+> 因此，这种能力也被称为慧的福佑，
+> 是诸圣道所允许的。”（XXIII.52）
 
 此偈的“reckoned as Nibbāna here and now”是本章所引的评价性表述，不能据此把灭尽定等同于涅槃；本章前文已明确区分二者（XXIII.51–52）。
 
@@ -4769,13 +4782,16 @@ D. 成为供养的应受者（世界及神明的最高供养）
 ### 全书结论（编者归纳）
 
 第二十三章末及全书以回归开篇偈颂作结——作者 Buddhaghosa 在第一章 I.1 引用了这段偈颂：
-> "When a wise man, established well in virtue, / Develops consciousness and understanding, / Then as a bhikkhu ardent and sagacious, / He succeeds in disentangling this tangle" (I.1)
+> “智者善安住于戒，
+> 修习心与慧；
+> 于是这位精进而明智的比丘，
+> 成功解开了这团纠结。”（I.1）
 
 按本笔记的结构归纳，这一偈颂可与戒（第I-II章）→定（第III-XIII章）→慧（第XIV-XXIII章）的展开相互对照；“已经被完全诠释”是编者总结，不作为原文自评。
 
 **全书结语中的校勘说明与祝愿**：
 
-> "Now, at this point that has all been expounded. And herein: / Now, that the exposition as set forth / Is almost free from errors and from flaws / After collating all the expositions / Of all these meanings classed as virtue and so on / Stated in the commentarial system / Of the five Nikāyas—for this reason / Let meditators pure in understanding / Desiring purification duly show / Reverence for this *Path of Purification*."（XXIII.60之后，全书结语）
+> “现在，在这一点上，一切都已经阐述完毕。这里，在汇集五部尼柯耶注释体系中所说、归为戒等类别的全部义理之后，这一阐述几乎没有错误和缺失；因此，愿那些慧清净、渴望清净的禅修者，恭敬这部《清净道论》。”（XXIII.60 之后，全书结语）
 
 ### 第二十三章总结（编者归纳）
 
@@ -4792,7 +4808,10 @@ D. 成为供养的应受者（世界及神明的最高供养）
 全书以结语偈颂和祝愿作结；“不仅是理论汇编、而是实践指南”是编者对全书功能的概括。
 
 **代表性引文**（XXIII.60，全书最后偈颂）：
-> "The noble understanding, when / Developed, will these blessings win; / Accordingly discerning men / Rejoice exceedingly therein."（XXIII.60）
+> “圣慧一旦修习，
+> 就会获得这些福佑；
+> 因此，善于辨别的人，
+> 对此欢喜不已。”（XXIII.60）
 
 ---
 
