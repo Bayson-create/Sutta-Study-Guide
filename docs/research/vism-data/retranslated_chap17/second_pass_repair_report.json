@@ -1,0 +1,408 @@
+{
+  "source": "pe_chap17.repaired.json",
+  "items": [
+    {
+      "record_id": "chap17-part01-row0049",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "但观察条件不断绝，就能摧毁断灭见。",
+      "after_translation": "但观察条件不断绝，就能摧毁断灭见。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part01-row0048",
+        "chap17-part01-row0050"
+      ]
+    },
+    {
+      "record_id": "chap17-part01-row0054",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "单纯生起中并没有这四种深奥。",
+      "after_translation": "单纯生起中并没有这四种深奥。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part01-row0053",
+        "chap17-part01-row0055"
+      ]
+    },
+    {
+      "record_id": "chap17-part01-row0067",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "世尊说：“因此，阿难，这就是老死的原因、根源、集起和条件，即生；乃至行的原因就是无明。”经文明确说无明等本身是原因，并没有说它们的变化是原因。",
+      "after_translation": "而他们的这种说法并不成立。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part01-row0066",
+        "chap17-part01-row0068"
+      ]
+    },
+    {
+      "record_id": "chap17-part01-row0165",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "有人从藤蔓根部开始，割断根部，拖取整条藤蔓；世尊也从“以无明为缘而有行”一直说到“以生为缘而有老死”。",
+      "after_translation": "“这个身体以及外在的名色，二者相依；依二者而有触，以及六处；凡夫被它们触及，便体验苦乐。”经文如此说。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part01-row0164",
+        "chap17-part01-row0166"
+      ]
+    },
+    {
+      "record_id": "chap17-part02-row0015",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "正如神通意志，掉举意志也不是识的缘。",
+      "after_translation": "正如神通意志，掉举意志也不是识的缘。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part02-row0014",
+        "chap17-part02-row0016"
+      ]
+    },
+    {
+      "record_id": "chap17-part02-row0020",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "因为无明存在时，行也存在。",
+      "after_translation": "因为无明存在时，行也存在。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part02-row0019",
+        "chap17-part02-row0021"
+      ]
+    },
+    {
+      "record_id": "chap17-part03-row0018",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "因为它并不成就那些色法的善等状态，但也不能说它不是缘。",
+      "after_translation": "因为它并不成就那些色法的善等状态，但也不能说它不是缘。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part03-row0017",
+        "chap17-part03-row0019"
+      ]
+    },
+    {
+      "record_id": "chap17-part03-row0121",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "以专注观察作用给予帮助的七种禅支，除双五识中的苦乐二受外，无论善等哪一类，都是禅缘。",
+      "after_translation": "经中还说：“在结生刹那，异熟无记的诸根，以根缘帮助相应的诸蕴和业生色。”",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part03-row0120",
+        "chap17-part03-row0122"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0012",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "如果只有无明，就会陷入单一原因论。",
+      "after_translation": "这个无明在许多方面成为缘：在贪等依无明生起时，是所缘缘；在把它看重而品尝时，是所缘增上缘和所缘亲依止缘；在被无明迷惑、看不见过患而造作杀生等时，是亲依止缘；对于其余心路过程，则是无间等缘。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0011",
+        "chap17-part04-row0013"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0020",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "例如时节、土地、种子和水等多个原因，会产生芽这一类包含色、香、味等的多个结果。",
+      "after_translation": "一个不会由一个原因产生，多个原因也不会只产生一个结果；但在说明一个因一个果时，仍有其意义。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0019",
+        "chap17-part04-row0021"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0052",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "无明成为它们缘的情形，正如前面说的迷惑者把轮回苦当作快乐并造作其原因。",
+      "after_translation": "因此应知，无明虽就异熟而言必定产生不可喜果，就自性而言虽属有过，却仍能依各自的处所、作用和自性相违或不相违，以及相似或不相似的缘，成为这些福行等的缘。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0051",
+        "chap17-part04-row0053"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0055",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "因此造作这三种行；无明是它们的缘，因为这种迷惑遍及三类行。",
+      "after_translation": "它作为无明之缘的状态，正如前面以“对苦等的无明尚未断除者……”等方式所说明的那样。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0054",
+        "chap17-part04-row0056"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0073",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "无明平息，他便寂静而行。",
+      "after_translation": "因此说道：",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0072",
+        "chap17-part04-row0074"
+      ]
+    },
+    {
+      "record_id": "chap17-part04-row0079",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "无明平息，他便寂静而行。",
+      "after_translation": "无明平息，他便寂静而行。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part04-row0078",
+        "chap17-part04-row0080"
+      ]
+    },
+    {
+      "record_id": "chap17-part05-row0033",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "同一无色界善业已经造作并积集，超越一切色想后，空无边处等相应的异熟识生起。",
+      "after_translation": "经中说：",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part05-row0032",
+        "chap17-part05-row0034"
+      ]
+    },
+    {
+      "record_id": "chap17-part05-row0186",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "这里所举的识并未从过去有来到此处；它们是由属于过去有的原因生起的，因此可用回声、灯火、印章和映像等作譬喻。",
+      "after_translation": "相续连接，所以既不是同一，也不是差别。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part05-row0185",
+        "chap17-part05-row0187"
+      ]
+    },
+    {
+      "record_id": "chap17-part05-row0209",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "对此应知，行是因已造作而成为缘，并非因为现存或不存在；它们也不恒常带来果。",
+      "after_translation": "这些行由于已造作而成为缘，并非恒常带来果；这里应以保证、担保等为譬喻。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part05-row0208",
+        "chap17-part05-row0210"
+      ]
+    },
+    {
+      "record_id": "chap17-part05-row0220",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "现在为消除对三十二种异熟识的迷惑，应依结生和现行说明：",
+      "after_translation": "现在为消除对三十二种异熟识的迷惑，应依结生和现行说明：",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part05-row0219",
+        "chap17-part05-row0221"
+      ]
+    },
+    {
+      "record_id": "chap17-part05-row0234",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "在现行中成为六种识的缘，但不成为结生缘。",
+      "after_translation": "在现行中成为六种识的缘，但不成为结生缘。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part05-row0233",
+        "chap17-part05-row0235"
+      ]
+    },
+    {
+      "record_id": "chap17-part06-row0028",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "由于声音并不确定，只在有时出现，所以除去这两种偶发法后，应知这九十七种法依各自可能，都是一切有情以识为缘的名色。",
+      "after_translation": "由于声音并不确定，只在有时出现，所以除去这两种偶发法后，应知这九十七种法依各自可能，都是一切有情以识为缘的名色。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part06-row0027",
+        "chap17-part06-row0029"
+      ]
+    },
+    {
+      "record_id": "chap17-part06-row0030",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "这些法成为识缘的情形，我们将在后文说明。",
+      "after_translation": "这些法成为识缘的情形，我们将在后文说明。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part06-row0029",
+        "chap17-part06-row0031"
+      ]
+    },
+    {
+      "record_id": "chap17-part06-row0039",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "作为名色原因的识，依异熟与非异熟分为两类。",
+      "after_translation": "作为名色原因的识，依异熟与非异熟分为两类。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part06-row0038",
+        "chap17-part06-row0040"
+      ]
+    },
+    {
+      "record_id": "chap17-part06-row0040",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "在无想有情中，色由业生起；在五蕴有的现行中，色由福行等所成的识作为缘而生起。",
+      "after_translation": "在无想有情中，色由业生起；在五蕴有的现行中，色由福行等所成的识作为缘而生起。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part06-row0039",
+        "chap17-part06-row0041"
+      ]
+    },
+    {
+      "record_id": "chap17-part08-row0028",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "这就是“以六处为缘而有触”一项的详细说明。",
+      "after_translation": "这就是“以六处为缘而有触”一项的详细说明。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part08-row0027",
+        "chap17-part09-row0001"
+      ]
+    },
+    {
+      "record_id": "chap17-part10-row0007",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "同一所缘若与“恒常、永恒”的常见一起运作，就称为有爱。",
+      "after_translation": "当色爱在眼前的色所缘上，以欲乐滋味贪享而运作时，称为欲爱。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part10-row0006",
+        "chap17-part10-row0008"
+      ]
+    },
+    {
+      "record_id": "chap17-part11-row0007",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "同样，见本身是取，所以叫见取。",
+      "after_translation": "这里“取”是坚固执取；“取”字中的 upa- 有坚固之义，如“强烈疲劳”等词中的用法。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part11-row0006",
+        "chap17-part11-row0008"
+      ]
+    },
+    {
+      "record_id": "chap17-part11-row0042",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "在一个有中通常先有执我，随后执著常见或断见；执著“这个自我是常恒”后，为使自我清净而执取戒禁；执著“自我将断灭”后，则相应生起欲取。",
+      "after_translation": "这里，无始轮回中没有烦恼第一次生起的情形，所以严格说不称为烦恼的生起次第。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part11-row0041",
+        "chap17-part11-row0043"
+      ]
+    },
+    {
+      "record_id": "chap17-part11-row0044",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "见取等首先被断除，因为它们是须陀洹道所断。",
+      "after_translation": "见取等首先被断除，因为它们是须陀洹道所断。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part11-row0043",
+        "chap17-part11-row0045"
+      ]
+    },
+    {
+      "record_id": "chap17-part12-row0042",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "但在“以取为缘而有有”中，由于也包括生有，所以说的是善、不善和不确定法。",
+      "after_translation": "但在“以取为缘而有有”中，由于也包括生有，所以说的是善、不善和不确定法。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part12-row0041",
+        "chap17-part12-row0043"
+      ]
+    },
+    {
+      "record_id": "chap17-part12-row0048",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_mismatch_repaired",
+      "modified": true,
+      "before_translation": "因此，以欲取为缘，有两个欲有；其中还包含想有和五蕴有；有两个色有，其中包含想有、无想有、一蕴有和五蕴有；无色有也有两个。",
+      "after_translation": "色有和无色有也应依此方法理解。",
+      "basis": "当前译文含有相邻条目的专名、数字或句义，而本条 Pāli 的句法与新译文直接对应。",
+      "adjacent_record_ids": [
+        "chap17-part12-row0047",
+        "chap17-part12-row0049"
+      ]
+    },
+    {
+      "record_id": "chap17-part12-row0068",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "uncertain_or_false_positive",
+      "modified": false,
+      "before_translation": "所以有人说，依戒禁取不会有色有或无色有；这种说法不应接受。",
+      "after_translation": "所以有人说，依戒禁取不会有色有或无色有；这种说法不应接受。",
+      "basis": "逐条对照当前、前后相邻 Pāli 后，当前译文可解释为本条句义或跨句上下文；没有足够证据移动或重译。",
+      "adjacent_record_ids": [
+        "chap17-part12-row0067",
+        "chap17-part12-row0069"
+      ]
+    }
+  ]
+}

@@ -433,6 +433,11 @@ a:hover { text-decoration: underline; }
 
 .reader-content { padding: 20px 0; }
 
+/* Parallel trilingual mode */
+.parallel-block .segment-block { margin-bottom: 16px; padding-bottom: 12px; }
+.seg-chinese { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
+.seg-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
+
 /* Mobile */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
@@ -1648,7 +1653,8 @@ async function renderVismHome() {
     <span class="label">关于本书：</span>
     《清净道论》（Visuddhimagga）为公元五世纪觉音尊者（Buddhaghosa）所著，是上座部佛教最重要的义理纲要之一，
     以戒、定、慧三学为骨架，逐一注释展开。本阅读器左侧为巴利语与英译（Ñāṇamoli 尊者译本）逐句对照，
-    右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、单独英文、单独中文三种模式，并可显示/隐藏巴利语。
+    右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、单独英文、单独中文、逐句三语对照四种模式，并可显示/隐藏巴利语。
+    部分章节新增逐句汉译（直接译自巴利语），在"逐句三语对照"模式下逐句呈现巴利语、英译与新增汉译。
   </div>`;
   html += `<div class="cards vism-chapter-grid">
     <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/read/nidana'">
@@ -1781,6 +1787,27 @@ function vismEnNotesHtml(notes) {
   return html;
 }
 
+function renderVismParallel(peData) {
+  let html = '<div class="parallel-block">';
+  for (const part of peData.parts) {
+    if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
+    for (const row of part.rows) {
+      html += '<div class="segment-block">';
+      if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
+      html += `<div class="seg-en">${esc(row.english)}</div>`;
+      if (row.chinese_translation) {
+        html += `<div class="seg-chinese">${esc(row.chinese_translation)}</div>`;
+        if (row.translation_note) {
+          html += `<div class="seg-tn">${esc(row.translation_note)}</div>`;
+        }
+      }
+      html += '</div>';
+    }
+  }
+  html += '</div>';
+  return html;
+}
+
 function buildVismReaderBody() {
   const { peData, zhData } = window._vismData;
   const body = document.getElementById('vism-reader-body');
@@ -1815,6 +1842,13 @@ function buildVismReaderBody() {
     } else {
       html += `<div class="zh-formatted">${zhContentHtml}</div>`;
     }
+  } else if (vismReaderMode === 'parallel') {
+    const peRt = window._vismData.peRetranslated;
+    if (peRt) {
+      html += renderVismParallel(peRt);
+    } else {
+      html += `<div class="blurb-box"><span class="blurb-label">说明:</span>本章尚无逐句汉译数据，请切换其他阅读模式。</div>`;
+    }
   }
   body.innerHTML = html;
   wireVismFootnoteLinks(body);
@@ -1835,6 +1869,18 @@ async function renderVismReader(chapterNum, secIdx) {
     const zhData = await fetch(`research/vism-data/zh_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
     const peData = await fetch(`research/vism-data/pe_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
 
+    // Load retranslated per-row Chinese translation if available for this chapter
+    let peRetranslated = null;
+    if (!isSpecial) {
+      try {
+        const chapStr = String(chapterNum).padStart(2, '0');
+        peRetranslated = await fetch(`research/vism-data/retranslated_chap${chapStr}/pe_chap${chapStr}.final.json`).then(r => r.json());
+      } catch (e) { /* retranslated data not available for this chapter */ }
+    }
+    if (vismReaderMode === 'parallel' && !peRetranslated) {
+      vismReaderMode = 'trilingual';
+    }
+
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
     out += `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
     if (isNidana) out += '<div class="meta-focus">Introductory Discourse (Nidānakathā)</div>';
@@ -1848,6 +1894,7 @@ async function renderVismReader(chapterNum, secIdx) {
           <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
           <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
           <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
+          ${peRetranslated ? `<button class="tb-btn${vismReaderMode==='parallel'?' active':''}" data-mode="parallel">逐句三语对照</button>` : ''}
         </div>
         <div class="tb-sep"></div>
         <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
@@ -1872,7 +1919,7 @@ async function renderVismReader(chapterNum, secIdx) {
     out += '</div>';
 
     app.innerHTML = out;
-    window._vismData = { peData, zhData };
+    window._vismData = { peData, zhData, peRetranslated };
 
     if (peData) {
       document.getElementById('vism-toolbar').addEventListener('click', e => {

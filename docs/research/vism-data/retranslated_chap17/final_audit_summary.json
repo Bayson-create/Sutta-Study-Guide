@@ -1,0 +1,13 @@
+{
+  "total_records": 1370,
+  "aligned": 420,
+  "likely_shifted_previous": 13,
+  "likely_shifted_next": 7,
+  "boundary_mismatch": 156,
+  "uncertain": 774,
+  "suspicious_ranges": 1,
+  "repaired_records_checked": 31,
+  "new_high_confidence_issues": 20,
+  "validation_status": "needs_manual_review",
+  "random_sample_size": 50
+}

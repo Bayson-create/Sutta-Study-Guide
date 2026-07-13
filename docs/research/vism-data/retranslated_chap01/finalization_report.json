@@ -1,0 +1,30 @@
+{
+  "input_files":["pe_chap01.json","pe_chap01.repaired.json","repair_report.json","unresolved_alignment_items.json","current_alignment_audit.json","current_suspicious_ranges.json","current_audit_summary.json","repair_integrity_check.json","terminology.json"],
+  "output_file":"pe_chap01.final.json",
+  "scope":"chap01-part10-row0003 through chap01-part10-row0017; requested row0018-row0020 do not exist in this 17-row part",
+  "semantic_units":[
+    {"unit":"五戒及不取、不邪淫、妄语、两舌、恶口、绮语、贪欲、瞋恚、邪见","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false},
+    {"unit":"欲贪、瞋恚、昏沉睡眠、掉举、疑、无明、不乐的对治","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false},
+    {"unit":"初禅至第四禅的对治","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false},
+    {"unit":"四无色定的对治","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false},
+    {"unit":"无常、苦、无我、厌离、离贪、灭、舍离等观法","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false},
+    {"unit":"须陀洹道至阿罗汉道所断烦恼","record_ids":["chap01-part10-row0004"],"status":"present_after_repair","omitted":false,"duplicated":false,"merged_in_error":false}
+  ],
+  "actual_modifications":[
+    {"record_id":"chap01-part10-row0004","changed_fields":["chinese_translation"],"reason":"该条 Pāli 包含完整对治法长列举；补回与自身 Pāli 对应的完整现代汉语译文。"},
+    {"record_id":"chap01-part10-row0007","changed_fields":["chinese_translation"],"reason":"补足本句因果连接并保留句界，不将下一条 Pāli 合并进来。"},
+    {"record_id":"chap01-part10-row0008","changed_fields":["chinese_translation"],"reason":"将连续错位链恢复为 Tasmā... 所对应的结论句。"},
+    {"record_id":"chap01-part10-row0009","changed_fields":["chinese_translation"],"reason":"恢复 Itare cattāro dhammā... 的自身译文。"},
+    {"record_id":"chap01-part10-row0010","changed_fields":["chinese_translation"],"reason":"恢复 Sīlaṭṭho... 的自身译文。"},
+    {"record_id":"chap01-part10-row0011","changed_fields":["chinese_translation"],"reason":"恢复五种戒的总结句。"},
+    {"record_id":"chap01-part10-row0012","changed_fields":["chinese_translation"],"reason":"恢复“什么是戒？”问句。"},
+    {"record_id":"chap01-part10-row0013","changed_fields":["chinese_translation"],"reason":"恢复“在什么意义上是戒？”问句。"},
+    {"record_id":"chap01-part10-row0014","changed_fields":["chinese_translation"],"reason":"恢复特征、作用、现起、近因问句。"},
+    {"record_id":"chap01-part10-row0015","changed_fields":["chinese_translation","needs_review"],"reason":"恢复功德问句；移除因错位造成的错误人工复核标记。"},
+    {"record_id":"chap01-part10-row0016","changed_fields":["chinese_translation"],"reason":"恢复戒的种类问句。"},
+    {"record_id":"chap01-part10-row0017","changed_fields":["chinese_translation"],"reason":"补回 Imesaṃ pañhānaṃ vissajjanaṃ niṭṭhitaṃ 的结束句。"}
+  ],
+  "before_translation":"长篇对治法此前错误地出现在 repair_report 的 row0005 before_translation；其实际 Pāli 对应 row0004，现已完整定位并写入 row0004。",
+  "unresolved_count":0,
+  "validation_status":"ready_to_archive"
+}

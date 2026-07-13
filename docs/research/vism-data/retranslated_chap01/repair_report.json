@@ -1,0 +1,239 @@
+{
+  "source": "pe_chap01.json",
+  "items": [
+    {
+      "record_id": "chap01-part03-row0094",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "audit_false_positive_or_uncertain",
+      "modified": false,
+      "before_translation": "若有人戒行圆满，并努力获得定，",
+      "after_translation": "若有人戒行圆满，并努力获得定，",
+      "reason": "对照当前、前后 Pāli 后，当前译文可由本条句义或跨句表达解释，缺乏明确错位证据，保留原译文。",
+      "related_record_ids": [
+        "chap01-part03-row0093",
+        "chap01-part03-row0095"
+      ]
+    },
+    {
+      "record_id": "chap01-part05-row0037",
+      "original_classification": "aligned",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "因此，即使防护是在速行心的时刻生起，也说成是在眼根上有防护。",
+      "after_translation": "城门关闭时，盗贼便不能进入；同样，当速行心中的戒等生起时，眼门也受到防护，有分心、意门转向心等心路过程也受到防护。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part05-row0036",
+        "chap01-part05-row0038"
+      ]
+    },
+    {
+      "record_id": "chap01-part05-row0038",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "在“以耳听声”等句中，也应作同样的理解。",
+      "after_translation": "因此，虽然防护是在速行心的刹那生起的，仍说是在眼根上有防护。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part05-row0037",
+        "chap01-part05-row0039"
+      ]
+    },
+    {
+      "record_id": "chap01-part05-row0039",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "简要说来，应当知道，根律仪戒的特征就是避免把色等所缘执取为烦恼相，以及避免取总相、细相等。",
+      "after_translation": "“以耳听声”等句也应作同样的理解。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part05-row0038",
+        "chap01-part05-row0040"
+      ]
+    },
+    {
+      "record_id": "chap01-part05-row0040",
+      "original_classification": "boundary_mismatch",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "接下来说明根律仪戒之后所说的活命清净戒。所谓“为活命而制定的六条学处”，就是以下这些学处：",
+      "after_translation": "简要说来，应知根律仪戒的特征，就是避免在色等所缘上执取烦恼随眠的相，以及避免执取总相、细相等。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part05-row0039",
+        "chap01-part06-row0001"
+      ]
+    },
+    {
+      "record_id": "chap01-part06-row0140",
+      "original_classification": "likely_shifted_next",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "因此，前面所说的邪命，是因违犯为活命制定的六条学处，以及欺骗、奉承、暗示、贬损性谈话、以利求利等恶法而产生的；对一切形式的邪命都离弃，这就是活命清净戒。",
+      "after_translation": "应知，这些恶法依《梵网经》中所说的方式，包括占卜肢相、征兆、灾异、梦、相、鼠咬、火供和勺供等许多恶法。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part06-row0139",
+        "chap01-part06-row0141"
+      ]
+    },
+    {
+      "record_id": "chap01-part06-row0141",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "这里的语义解释如下。",
+      "after_translation": "因此，前面所说的邪命，是因违犯为活命制定的六条学处，以及欺骗、奉承、暗示、贬损性谈话、以利求利等恶法而产生的；对一切形式的邪命都离弃，这就是活命清净戒。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part06-row0140",
+        "chap01-part06-row0142"
+      ]
+    },
+    {
+      "record_id": "chap01-part06-row0142",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "依靠它而生活，所以称为活命。",
+      "after_translation": "这里是这些词的语义解释。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part06-row0141",
+        "chap01-part06-row0143"
+      ]
+    },
+    {
+      "record_id": "chap01-part07-row0071",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "其中，狮子、老虎等是明显的障碍。",
+      "after_translation": "狮子、老虎等是明显的障碍。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part07-row0070",
+        "chap01-part07-row0072"
+      ]
+    },
+    {
+      "record_id": "chap01-part07-row0072",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "贪欲、瞋恚等是隐蔽的障碍。",
+      "after_translation": "贪欲、瞋恚等是隐蔽的障碍。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part07-row0071",
+        "chap01-part07-row0073"
+      ]
+    },
+    {
+      "record_id": "chap01-part07-row0073",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "比丘了解并反省何处没有防护，何处会因看见不适宜的色等而造成伤害；这样受用住处时，应知他是如理审察住处，为了消除气候障碍。",
+      "after_translation": "比丘了解并反省何处没有防护，何处会因看见不适宜的色等而造成伤害；这样受用住处时，应知他是如理审察住处，为了消除气候障碍而受用住处。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part07-row0072",
+        "chap01-part07-row0074"
+      ]
+    },
+    {
+      "record_id": "chap01-part07-row0074",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "“病者所需的药物和资具”中，资具是对疾病的对治、走向相反方向的意思。",
+      "after_translation": "“病者所需的药物和资具”中，资具是对疾病的对治，意思是走向相反方向。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part07-row0073",
+        "chap01-part07-row0075"
+      ]
+    },
+    {
+      "record_id": "chap01-part07-row0075",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "这是任何适合病者之物的名称。",
+      "after_translation": "这是任何适合病者之物的名称。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part07-row0074",
+        "chap01-part07-row0076"
+      ]
+    },
+    {
+      "record_id": "chap01-part10-row0003",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "《无碍解道》中说：",
+      "after_translation": "“五种戒：舍弃杀生是戒，离弃是戒，意志是戒，防护是戒，不违犯是戒。”",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part10-row0002",
+        "chap01-part10-row0004"
+      ]
+    },
+    {
+      "record_id": "chap01-part10-row0004",
+      "original_classification": "aligned",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "“五种戒：舍弃杀生是戒，离弃是戒，意志是戒，防护是戒，不违犯是戒。",
+      "after_translation": "对于不取、不邪淫、妄语、两舌、恶口、绮语、贪欲、瞋恚、邪见，以及以出离对治欲贪等种种烦恼的舍弃，也都称为戒。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part10-row0003",
+        "chap01-part10-row0005"
+      ]
+    },
+    {
+      "record_id": "chap01-part10-row0005",
+      "original_classification": "likely_shifted_previous",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "对于不取、不邪淫、妄语、两舌、恶口、绮语、贪欲、瞋恚、邪见，以及以出离对治欲贪、以不瞋对治瞋恚、以光明想对治昏沉睡眠、以不散乱对治掉举、以分别法对治疑惑、以智慧对治无明、以喜悦对治不乐、以初禅对治五盖、以第二禅对治寻伺、以第三禅对治喜、以第四禅对治苦乐、以空无边处定对治色想和有对想等；以识无边处定对治空无边处想，以无所有处定对治识无边处想，以非想非非想处定对治无所有处想；以观无常对治常想，以观苦对治乐想，以观无我对治我想，以观厌离对治喜爱，以观离贪对治贪，以观灭对治集，以观舍离对治取，以观坏灭对治坚实想，以观消散对治积聚，以观变易对治恒常想，以观无相对治相，以观无愿对治愿，以观空对治执著，以增上慧法观对治执取实质，以如实知见对治迷乱执著，以观过患对治住著，以审察对治不审察，以转向对治结缚执著；以须陀洹道舍弃见所断烦恼，以斯陀含道舍弃粗重烦恼，以阿那含道舍弃细微烦恼，以阿罗汉道舍弃一切烦恼——这一切都是戒：离、意志、防护和不违犯也都是戒。”",
+      "after_translation": "这类戒使心不后悔，导向喜悦、欢喜、轻安、悦意、修习、增长、庄严、资助、围绕、圆满，并导向彻底厌离、离贪、灭、寂静、神通、正觉和涅槃。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part10-row0004",
+        "chap01-part10-row0006"
+      ]
+    },
+    {
+      "record_id": "chap01-part10-row0006",
+      "original_classification": "uncertain",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "这类戒使心不后悔，导向喜悦、欢喜、轻安、悦意、修习、增长、庄严、资助、围绕、圆满，并导向彻底厌离、离贪、灭、寂静、神通、正觉和涅槃。”",
+      "after_translation": "这里所谓“舍弃”，并不是另有一种法，只是前面所说杀生等不生起。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part10-row0005",
+        "chap01-part10-row0007"
+      ]
+    },
+    {
+      "record_id": "chap01-part10-row0007",
+      "original_classification": "aligned",
+      "final_judgment": "confirmed_misalignment_repaired",
+      "modified": true,
+      "before_translation": "这里所谓“舍弃”并不是另有一种法，只是前面所说杀生等不生起。",
+      "after_translation": "因为各种舍弃以作为相应善法的依止为特征，并且由于使心不动摇而成为受持。",
+      "reason": "当前译文的术语、列举或句义明确属于相邻条目；新译文直接对应本条 Pāli。",
+      "related_record_ids": [
+        "chap01-part10-row0006",
+        "chap01-part10-row0008"
+      ]
+    }
+  ]
+}

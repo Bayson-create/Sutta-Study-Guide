@@ -1,0 +1,12 @@
+{
+  "total_records": 925,
+  "aligned": 213,
+  "likely_shifted_previous": 2,
+  "likely_shifted_next": 0,
+  "boundary_mismatch": 165,
+  "translation_error": 0,
+  "uncertain": 545,
+  "high_confidence_issues": 0,
+  "suspicious_ranges": 0,
+  "validation_status": "needs_manual_review"
+}

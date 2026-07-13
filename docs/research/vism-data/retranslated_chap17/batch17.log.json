@@ -1,0 +1,14 @@
+{
+  "batch": "17",
+  "input": "docs/research/vism-data/pe_chap17.json",
+  "output": "docs/research/vism-data/retranslated_chap17/pe_chap17.json",
+  "files_processed": 1,
+  "success_count": 270,
+  "skipped_count": 0,
+  "failure_count": 0,
+  "needs_review_count": 1121,
+  "method": "direct Pali-only translation; remaining entries pending direct translation",
+  "last_range": "221-270",
+  "last_batch_translated_count": 50,
+  "last_batch_needs_review_count": 4
+}

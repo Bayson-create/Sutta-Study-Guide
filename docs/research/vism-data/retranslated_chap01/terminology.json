@@ -1,0 +1,125 @@
+{
+  "terms": [
+    {
+      "pali": "sīla",
+      "unified_chinese": "戒",
+      "other_translations": [
+        "戒德"
+      ],
+      "usage": "本章核心术语；具体复合词按其语法功能处理。"
+    },
+    {
+      "pali": "samādhi",
+      "unified_chinese": "定",
+      "other_translations": [
+        "禅定",
+        "三昧"
+      ],
+      "usage": "与 sīla、paññā 并列时译为定。"
+    },
+    {
+      "pali": "paññā",
+      "unified_chinese": "慧",
+      "other_translations": [
+        "智慧",
+        "般若"
+      ],
+      "usage": "与 sīla、samādhi 并列时译为慧。"
+    },
+    {
+      "pali": "cetanā",
+      "unified_chinese": "意志",
+      "other_translations": [
+        "思",
+        "思心所"
+      ],
+      "usage": "本章 sīla 分类中指有意向性的心理活动；具体语境可译为意志。"
+    },
+    {
+      "pali": "cetasika",
+      "unified_chinese": "心所",
+      "other_translations": [
+        "心所法"
+      ],
+      "usage": "指与心相应的心理因素。"
+    },
+    {
+      "pali": "saṃvara",
+      "unified_chinese": "防护",
+      "other_translations": [
+        "律仪",
+        "约束"
+      ],
+      "usage": "作为总类名译为防护；复合词依对象译为相应律仪。"
+    },
+    {
+      "pali": "virati",
+      "unified_chinese": "离",
+      "other_translations": [
+        "戒除",
+        "不作"
+      ],
+      "usage": "指对不善行为的离弃或不作。"
+    },
+    {
+      "pali": "paccaya",
+      "unified_chinese": "资具",
+      "other_translations": ["所依", "条件"],
+      "usage": "paccayapaṭisevana 语境中指衣食住药等生活资具。"
+    },
+    {
+      "pali": "khanti",
+      "unified_chinese": "忍耐",
+      "other_translations": ["忍辱", "堪忍"],
+      "usage": "khantisaṃvara 中指对寒热等不适的忍受。"
+    },
+    {
+      "pali": "vīriya",
+      "unified_chinese": "精进",
+      "other_translations": ["努力"],
+      "usage": "vīriyasaṃvara 中指防止不善念生起的精进。"
+    },
+    {
+      "pali": "ājīvapārisuddhi",
+      "unified_chinese": "活命清净",
+      "other_translations": ["正命清净"],
+      "usage": "指使谋生方式清净、不以不当手段维生。"
+    },
+    {
+      "pali": "lakkhaṇa",
+      "unified_chinese": "特征",
+      "other_translations": ["相"],
+      "usage": "与 rasa、paccupaṭṭhāna、padaṭṭhāna 并列时译为特征。"
+    },
+    {
+      "pali": "rasa",
+      "unified_chinese": "作用",
+      "other_translations": ["味"],
+      "usage": "论书分析术语，指法的功能或作用，不作味觉义。"
+    },
+    {
+      "pali": "paccupaṭṭhāna",
+      "unified_chinese": "现起",
+      "other_translations": ["表现"],
+      "usage": "指某法显现、呈现为可把握状态的方式。"
+    },
+    {
+      "pali": "padaṭṭhāna",
+      "unified_chinese": "近因",
+      "other_translations": ["足处"],
+      "usage": "指直接、亲近的因。"
+    },
+    {
+      "pali": "ānisaṃsa",
+      "unified_chinese": "功德",
+      "other_translations": ["利益", "果报"],
+      "usage": "在戒的语境中指持戒所获得的利益和功德。"
+    },
+    {
+      "pali": "avippaṭisāra",
+      "unified_chinese": "不后悔",
+      "other_translations": ["无悔", "不自责"],
+      "usage": "指因无犯戒而不生悔恨、自责。"
+    }
+  ]
+}
