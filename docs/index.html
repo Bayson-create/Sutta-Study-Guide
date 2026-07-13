@@ -596,6 +596,8 @@ function route() {
     renderVismHome();
   } else if (hash === '#/research/vism/toc') {
     renderVismToc();
+  } else if (hash === '#/research/vism/summary') {
+    renderVismSummary();
   } else if (hash.startsWith('#/research/vism/read/')) {
     const rest = hash.slice('#/research/vism/read/'.length);
     const [idPart, query] = rest.split('?');
@@ -1817,6 +1819,12 @@ async function renderVismHome() {
       <div class="title">细目</div>
       <div class="desc">纸本版详细目录 — 逐品、逐节、逐条列出全书结构（原书页码，供参考）</div>
     </div>
+    <div class="research-item-card vism-chapter-card" onclick="location.hash=\'#/research/vism/summary\'">
+      <span class="icon">📝</span>
+      <div class="vism-chapter-num">深度总结</div>
+      <div class="title">《清净道论》逐章深度总结</div>
+      <div class="desc">觉音尊者原著的结构性解读——三学框架、各章要义、修行次第与全书脉络的总览分析</div>
+    </div>
   </div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载章节目录...</div></div>';
   app.innerHTML = html;
@@ -2106,6 +2114,28 @@ async function renderVismToc() {
     const data = await fetch('research/vism-data/zh_toc.json').then(r => r.json());
     const content = (data.intro_html || '') + buildZhSectionsHtml(data.sections, data.footnotes);
     app.querySelector('.loading').outerHTML = `<div class="zh-formatted vism-toc-page">${content}</div>`;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: VISM SUMMARY READER ===
+let _vismSummaryMdCache = null;
+async function renderVismSummary() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
+  html += `<div class="cat-header"><h2>📝 《清净道论》逐章深度总结</h2><div class="cat-en">Visuddhimagga — Chapter-by-Chapter Structural Analysis</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_vismSummaryMdCache) {
+      const res = await fetch('research/vism-data/vism-summary.md');
+      _vismSummaryMdCache = await res.text();
+    }
+    const body = document.createElement('div');
+    body.className = 'md-reader';
+    body.innerHTML = mdToHtml(_vismSummaryMdCache);
+    app.querySelector('.loading').replaceWith(body);
+    window.scrollTo(0, 0);
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
