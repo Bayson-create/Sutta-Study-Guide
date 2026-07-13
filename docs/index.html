@@ -438,6 +438,16 @@ a:hover { text-decoration: underline; }
 .seg-chinese { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .seg-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
 
+/* Papancasudani reader */
+.papanca-reader { max-width: 820px; margin: 0 auto; }
+.papanca-block { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.papanca-block:last-child { border-bottom: none; }
+.papanca-pali { font-style: italic; color: var(--pali-color); font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; overflow-wrap: break-word; word-break: break-word; }
+.papanca-zh { line-height: 2; font-size: 1.02em; color: var(--text); overflow-wrap: break-word; word-break: break-word; }
+.papanca-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 4px; padding: 4px 10px; background: var(--accent-bg); border-radius: 4px; }
+.papanca-pali-term { font-weight: 600; font-style: italic; color: var(--accent); font-size: 0.95em; }
+.papanca-term-note { font-size: 0.9em; line-height: 1.6; color: var(--text-light); }
+
 /* Mobile */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
@@ -532,6 +542,16 @@ function route() {
     renderSuttaVibhanga();
   } else if (hash === '#/research/pali-source-texts/vinaya/samantapasadika') {
     renderSamantapasadika();
+  } else if (hash === '#/research/pali-source-texts/sutta') {
+    renderSuttaHome();
+  } else if (hash === '#/research/pali-source-texts/sutta/majjhima') {
+    renderMajjhimaHome();
+  } else if (hash.startsWith('#/research/pali-source-texts/sutta/majjhima/papancasudani/part1')) {
+    renderPapancasudaniPart1();
+  } else if (hash.startsWith('#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology')) {
+    renderPapancasudaniTerminology();
+  } else if (hash === '#/research/pali-source-texts/sutta/majjhima/papancasudani') {
+    renderPapancasudaniHome();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -907,6 +927,11 @@ function renderPaliSourceTextsHome() {
     <div class="title">律藏研究</div>
     <div class="desc">巴利律藏的文本研究——《经分别》逐章总结与制戒机制分析、《善见律毗婆沙》全书重组详解，覆盖比丘与比丘尼学处、结集历史、僧团治理及戒律义理</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta'">
+    <span class="icon">📜</span>
+    <div class="title">经藏研究</div>
+    <div class="desc">巴利经藏（Sutta Piṭaka）的文本研究与双语阅读——包括中部注释《Papañcasūdanī 破除戏论》等早期注释文献的原文与翻译对照</div>
+  </div>`;
   html += '</div>';
   app.innerHTML = html;
 }
@@ -972,6 +997,129 @@ async function renderSamantapasadika() {
     body.className = 'md-reader';
     body.innerHTML = mdWithFootnotes(_samantapasadikaMdCache);
     app.querySelector('.loading').replaceWith(body);
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: SUTTA PITAKA (经藏) HUB ===
+function renderSuttaHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts'">← 返回原始佛教文献研究</button>`;
+  html += `<div class="cat-header"><h2>📜 经藏研究</h2><div class="cat-en">Sutta Piṭaka — The Collection of Discourses</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本板块：</span>
+    巴利经藏（Sutta Piṭaka）是上座部佛教中保存佛陀言教的根本文献，分为五部（Nikāya）。
+    本板块收录经藏相关文本研究与双语阅读资料，涵盖注释文献（Aṭṭhakathā）的原文对照与翻译。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima'">
+    <span class="icon">📗</span>
+    <div class="title">中部</div>
+    <div class="desc">Majjhima Nikāya — 中部及其注释《Papañcasūdanī 破除戏论》的原文与翻译</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: MAJJHIMA NIKAYA (中部) HUB ===
+function renderMajjhimaHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta'">← 返回经藏研究</button>`;
+  html += `<div class="cat-header"><h2>📗 中部</h2><div class="cat-en">Majjhima Nikāya — The Middle-Length Discourses</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本板块：</span>
+    中部（Majjhima Nikāya）收录佛陀中篇说法，共 152 经。
+    本板块收录中部注释《Papañcasūdanī 破除戏论》（觉音尊者著）的巴利语原文与汉译对照阅读。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">
+    <span class="icon">📖</span>
+    <div class="title">中部注释《Papañcasūdanī 破除戏论》</div>
+    <div class="desc">Majjhima Nikāya Aṭṭhakathā — 觉音尊者著，第一部分包含「根本法门经」注释的巴利-汉译逐句对照</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: PAPANCASUDANI HOME ===
+function renderPapancasudaniHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima'">← 返回中部</button>`;
+  html += `<div class="cat-header"><h2>📖 中部注释《Papañcasūdanī 破除戏论》</h2><div class="cat-en">Papañcasūdanī — Majjhima Nikāya Aṭṭhakathā by Bhadantācariya Buddhaghosa</div></div>`;
+  html += `<div class="bodhi-intro">
+    <span class="label">关于本书：</span>
+    《Papañcasūdanī 破除戏论》为觉音尊者（Buddhaghosa）所著中部注释，是其对《中部》全部 152 经的义理疏解。
+    本阅读器收录第一部分「根本法门经」（Mūlapariyāyasutta）注释的巴利语原文（经 OCR 校对）与汉译逐句对照，以及相关术语表。
+  </div>`;
+  html += '<div class="cards">';
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani/part1'">
+    <span class="icon">📖</span>
+    <div class="title">第一部分</div>
+    <div class="desc">「根本法门经」注释（Mūlapariyāyasuttavaṇṇanā）— 巴利语原文与汉译逐句对照，1159 段</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology'">
+    <span class="icon">📚</span>
+    <div class="title">术语表</div>
+    <div class="desc">第一部分核心术语的译法统一表 — 33 条术语，含首选译法、替代译法及用法说明</div>
+  </div>`;
+  html += '</div>';
+  app.innerHTML = html;
+}
+
+// === RESEARCH: PAPANCASUDANI PART 1 READER ===
+let _papancasudaniPt1Cache = null;
+async function renderPapancasudaniPart1() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
+  html += `<div class="cat-header"><h2>📖 第一部分：根本法门经注释</h2><div class="cat-en">Mūlapariyāyasuttavaṇṇanā — Pāli-Chinese Parallel Reading</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_papancasudaniPt1Cache) {
+      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json');
+      _papancasudaniPt1Cache = await res.json();
+    }
+    let bodyHtml = '<div class="reader-content papanca-reader">';
+    for (const item of _papancasudaniPt1Cache) {
+      bodyHtml += '<div class="papanca-block">';
+      bodyHtml += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
+      bodyHtml += `<div class="papanca-zh">${esc(item.chinese_translation)}</div>`;
+      if (item.translation_note && item.translation_note.length > 0) {
+        for (const note of item.translation_note) {
+          bodyHtml += `<div class="papanca-tn">${esc(note)}</div>`;
+        }
+      }
+      bodyHtml += '</div>';
+    }
+    bodyHtml += '</div>';
+    app.querySelector('.loading').outerHTML = bodyHtml;
+  } catch (e) {
+    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+// === RESEARCH: PAPANCASUDANI TERMINOLOGY READER ===
+let _papancasudaniTermCache = null;
+async function renderPapancasudaniTerminology() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
+  html += `<div class="cat-header"><h2>📚 术语表</h2><div class="cat-en">Glossary of Key Terms — Preferred Translations & Usage Notes</div></div>`;
+  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
+  app.innerHTML = html;
+  try {
+    if (!_papancasudaniTermCache) {
+      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/terminology.json');
+      _papancasudaniTermCache = await res.json();
+    }
+    let bodyHtml = '<div class="reader-content">';
+    bodyHtml += '<table class="sutta-table"><thead><tr><th>巴利语</th><th>首选译法</th><th>词性</th><th>替代译法</th><th>用法说明</th></tr></thead><tbody>';
+    for (const item of _papancasudaniTermCache) {
+      bodyHtml += '<tr>';
+      bodyHtml += `<td><span class="papanca-pali-term">${esc(item.pali)}</span></td>`;
+      bodyHtml += `<td><strong>${esc(item.preferred_translation)}</strong></td>`;
+      bodyHtml += `<td>${esc(item.part_of_speech)}</td>`;
+      bodyHtml += `<td>${item.alternative_translations && item.alternative_translations.length ? item.alternative_translations.map(t => esc(t)).join('、') : '—'}</td>`;
+      bodyHtml += `<td class="papanca-term-note">${esc(item.usage_note)}</td>`;
+      bodyHtml += '</tr>';
+    }
+    bodyHtml += '</tbody></table></div>';
+    app.querySelector('.loading').outerHTML = bodyHtml;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }

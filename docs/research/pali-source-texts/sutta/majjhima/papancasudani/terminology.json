@@ -1,0 +1,270 @@
+[
+  {
+    "pali": "Dhamma",
+    "preferred_translation": "法",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "本试运行中指佛法或教法。",
+    "first_occurrence_id": "pt1-mula-para-002"
+  },
+  {
+    "pali": "Saṅgha",
+    "preferred_translation": "僧团",
+    "alternative_translations": [
+      "僧伽"
+    ],
+    "part_of_speech": "名词",
+    "usage_note": "指圣弟子僧团。",
+    "first_occurrence_id": "pt1-mula-para-003"
+  },
+  {
+    "pali": "Majjhimanikāya",
+    "preferred_translation": "《中部》",
+    "alternative_translations": [],
+    "part_of_speech": "专名",
+    "usage_note": "中部尼柯耶。",
+    "first_occurrence_id": "pt1-mula-para-005"
+  },
+  {
+    "pali": "Visuddhimagga",
+    "preferred_translation": "《清净道论》",
+    "alternative_translations": [],
+    "part_of_speech": "专名",
+    "usage_note": "佛教论书名。",
+    "first_occurrence_id": "pt1-mula-para-013"
+  },
+  {
+    "pali": "evaṃ",
+    "preferred_translation": "这样",
+    "alternative_translations": [],
+    "part_of_speech": "副词",
+    "usage_note": "本段依语境译为指示或方式副词。",
+    "first_occurrence_id": "pt1-mula-para-024"
+  },
+  {
+    "pali": "sekha",
+    "preferred_translation": "有学",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "指尚在学习、修习并未完成解脱的圣者。",
+    "first_occurrence_id": "pt1-mula-para-095"
+  },
+  {
+    "pali": "arahant",
+    "preferred_translation": "阿罗汉",
+    "alternative_translations": [
+      "漏尽者"
+    ],
+    "part_of_speech": "名词",
+    "usage_note": "依上下文分别使用身份名或解释性译名。",
+    "first_occurrence_id": "pt1-mula-para-105"
+  },
+  {
+    "pali": "āsava",
+    "preferred_translation": "漏",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "指烦恼流或漏。",
+    "first_occurrence_id": "pt1-mula-para-106"
+  },
+  {
+    "pali": "pariññā",
+    "preferred_translation": "遍知",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "指对法的完整了知。",
+    "first_occurrence_id": "pt1-mula-para-097"
+  },
+  {
+    "pali": "satipaṭṭhāna",
+    "preferred_translation": "念住",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "四念住的修习框架。",
+    "first_occurrence_id": "pt1-mula-para-845"
+  },
+  {
+    "pali": "ekāyana",
+    "preferred_translation": "一趣道",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "导向涅槃的唯一道路；依上下文保留道义。",
+    "first_occurrence_id": "pt1-mula-para-882"
+  },
+  {
+    "pali": "kāyānupassanā",
+    "preferred_translation": "身随观",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "以身体为所缘的念住观察。",
+    "first_occurrence_id": "pt1-mula-para-858"
+  },
+  {
+    "pali": "vedanānupassanā",
+    "preferred_translation": "受随观",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "以感受为所缘的念住观察。",
+    "first_occurrence_id": "pt1-mula-para-858"
+  },
+  {
+    "pali": "cittānupassanā",
+    "preferred_translation": "心随观",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "以心的状态为所缘的念住观察。",
+    "first_occurrence_id": "pt1-mula-para-858"
+  },
+  {
+    "pali": "dhammānupassanā",
+    "preferred_translation": "法随观",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "以诸法类别与特征为所缘的念住观察。",
+    "first_occurrence_id": "pt1-mula-para-858"
+  },
+  {
+    "pali": "nīvaraṇa",
+    "preferred_translation": "盖",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "障碍禅修与正知的五盖。",
+    "first_occurrence_id": "pt1-mula-para-345"
+  },
+  {
+    "pali": "bojjhaṅga",
+    "preferred_translation": "觉支",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "导向觉悟的七觉支。",
+    "first_occurrence_id": "pt1-mula-para-1096"
+  },
+  {
+    "pali": "saṃyojana",
+    "preferred_translation": "结",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "束缚众生于轮回的结。",
+    "first_occurrence_id": "pt1-mula-para-215"
+  },
+  {
+    "pali": "kāmacchanda",
+    "preferred_translation": "欲贪",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "五盖之一，通常指对欲乐的贪求。",
+    "first_occurrence_id": "pt1-mula-para-1065"
+  },
+  {
+    "pali": "byāpāda",
+    "preferred_translation": "嗔害",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "五盖之一，愿他者受损害。",
+    "first_occurrence_id": "pt1-mula-para-1070"
+  },
+  {
+    "pali": "thīnamiddha",
+    "preferred_translation": "昏沉睡眠",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "五盖之一，心身的昏沉与迟钝。",
+    "first_occurrence_id": "pt1-mula-para-703"
+  },
+  {
+    "pali": "uddhaccakukkucca",
+    "preferred_translation": "掉举后悔",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "五盖之一，心散乱与追悔不安。",
+    "first_occurrence_id": "pt1-mula-para-1076"
+  },
+  {
+    "pali": "vicikicchā",
+    "preferred_translation": "疑",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "五盖之一，对修行与法的犹豫。",
+    "first_occurrence_id": "pt1-mula-para-607"
+  },
+  {
+    "pali": "sampajañña",
+    "preferred_translation": "正知",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "对行为、目的、适宜性和无痴的清楚了知。",
+    "first_occurrence_id": "pt1-mula-para-924"
+  },
+  {
+    "pali": "sati",
+    "preferred_translation": "念",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "忆念并保持所缘的心所。",
+    "first_occurrence_id": "pt1-mula-para-014"
+  },
+  {
+    "pali": "samādhi",
+    "preferred_translation": "定",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "心的专一与稳定。",
+    "first_occurrence_id": "pt1-mula-para-039"
+  },
+  {
+    "pali": "upekkhā",
+    "preferred_translation": "舍",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "平等、不偏的心态；觉支语境译为舍觉支。",
+    "first_occurrence_id": "pt1-mula-para-263"
+  },
+  {
+    "pali": "āhāra",
+    "preferred_translation": "食",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "维持身心过程的四种条件。",
+    "first_occurrence_id": "pt1-mula-para-780"
+  },
+  {
+    "pali": "taṇhā",
+    "preferred_translation": "渴爱",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "对欲、有或无有的贪求。",
+    "first_occurrence_id": "pt1-mula-para-079"
+  },
+  {
+    "pali": "dukkhasacca",
+    "preferred_translation": "苦谛",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "四圣谛中的苦及其如实性质。",
+    "first_occurrence_id": "pt1-mula-para-460"
+  },
+  {
+    "pali": "samudayasacca",
+    "preferred_translation": "集谛",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "苦的生起及其条件。",
+    "first_occurrence_id": "pt1-mula-para-946"
+  },
+  {
+    "pali": "nirodhasacca",
+    "preferred_translation": "灭谛",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "苦与其条件的止息。",
+    "first_occurrence_id": "pt1-mula-para-947"
+  },
+  {
+    "pali": "maggasacca",
+    "preferred_translation": "道谛",
+    "alternative_translations": [],
+    "part_of_speech": "名词",
+    "usage_note": "导向苦灭的圣道。",
+    "first_occurrence_id": "pt1-mula-para-769"
+  }
+]
