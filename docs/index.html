@@ -95,6 +95,36 @@ a:hover { text-decoration: underline; }
 .research-item-card .title { font-size: 1.12em; font-weight: 700; color: var(--text); margin-bottom: 6px; }
 .research-item-card .desc { font-size: 0.85em; color: var(--text-light); line-height: 1.6; }
 
+/* Community: Q&A / Forum / Blog */
+.community-list-item {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 20px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s; box-shadow: var(--shadow);
+}
+.community-list-item:hover { box-shadow: var(--shadow-hover); border-color: var(--accent-light); }
+.community-list-item .title { font-size: 1.05em; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.community-list-item .meta { font-size: 0.8em; color: var(--text-light); }
+.community-post { max-width: 760px; margin: 0 auto; }
+.community-post .body { white-space: pre-wrap; line-height: 1.7; margin: 16px 0; }
+.community-reply {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 18px; margin-bottom: 10px;
+}
+.community-reply .meta { font-size: 0.78em; color: var(--text-light); margin-top: 6px; }
+.community-form { margin-top: 20px; }
+.community-form input, .community-form textarea {
+  width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--border);
+  border-radius: var(--radius); font-family: inherit; font-size: 0.95em; margin-bottom: 10px;
+}
+.community-form textarea { min-height: 100px; resize: vertical; }
+.community-form button, .community-tabs button {
+  background: var(--accent); color: #fff; border: none; border-radius: var(--radius);
+  padding: 10px 20px; font-size: 0.9em; cursor: pointer; transition: background 0.2s;
+}
+.community-form button:hover { background: var(--accent-light); }
+.community-tabs { margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+.community-tabs button { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+.community-tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
 /* Markdown reader (concepts) */
 .md-reader { max-width: 760px; margin: 0 auto; overflow-wrap: break-word; word-break: break-word; }
 .md-reader h1 { font-size: 1.4em; color: var(--accent); font-weight: 700; margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
@@ -491,6 +521,12 @@ for(let i=0;i<S2T_S.length;i++){if(!_s2tMap[S2T_S[i]])_s2tMap[S2T_S[i]]=S2T_T[i]
 function toTraditional(text) { return [...text].map(ch => _s2tMap[ch] || ch).join(''); }
 function toSimplified(text) { return [...text].map(ch => _t2sMap[ch] || ch).join(''); }
 
+// Dynamic backend (Q&A / Forum / Blog) — see azure/README.md for deployment.
+// Point this at http://localhost:8000 for local dev, or the deployed Azure Container Apps URL in production.
+const API_BASE = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+  ? 'http://localhost:8000'
+  : 'https://sutta-api.agreeablemeadow-9da329ca.swedencentral.azurecontainerapps.io';
+
 // State
 let DATA = null;
 let useTraditional = false;
@@ -603,6 +639,18 @@ function route() {
     const [idPart, query] = rest.split('?');
     const secParam = new URLSearchParams(query || '').get('sec');
     renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
+  } else if (hash === '#/qa') {
+    renderQAHome();
+  } else if (hash.startsWith('#/qa/')) {
+    renderQADetail(hash.slice('#/qa/'.length));
+  } else if (hash === '#/forum') {
+    renderForumHome();
+  } else if (hash.startsWith('#/forum/')) {
+    renderForumDetail(hash.slice('#/forum/'.length));
+  } else if (hash === '#/blog') {
+    renderBlogHome();
+  } else if (hash.startsWith('#/blog/')) {
+    renderBlogDetail(hash.slice('#/blog/'.length));
   } else {
     renderHome();
   }
@@ -641,6 +689,25 @@ function renderHome() {
     <div>
       <div class="research-card-title">个人研究成果总结</div>
       <div class="research-card-sub">Personal Research &mdash; 佛法概念解说 · 佛教历史时间轴</div>
+    </div>
+  </div>`;
+
+  html += '<div class="research-divider">社区</div>';
+  html += `<div class="cards">
+    <div class="card" onclick="location.hash='#/qa'">
+      <span class="icon">❓</span>
+      <div class="card-title">问答</div>
+      <div class="card-title-en">Q&amp;A</div>
+    </div>
+    <div class="card" onclick="location.hash='#/forum'">
+      <span class="icon">🧵</span>
+      <div class="card-title">论坛</div>
+      <div class="card-title-en">Forum</div>
+    </div>
+    <div class="card" onclick="location.hash='#/blog'">
+      <span class="icon">📝</span>
+      <div class="card-title">博客</div>
+      <div class="card-title-en">Blog</div>
     </div>
   </div>`;
 
@@ -2746,6 +2813,295 @@ function buildReaderBody() {
   }
 
   body.innerHTML = html;
+}
+
+// === COMMUNITY: Q&A / FORUM / BLOG ===
+// Minimal auth: a JWT from the azure/ backend, kept in localStorage.
+function communityToken() { return localStorage.getItem('sutta_token'); }
+
+function communityAuthHeaders() {
+  const token = communityToken();
+  return token ? { 'Authorization': `Bearer ${token}` } : {};
+}
+
+async function communityEnsureLoggedIn() {
+  if (communityToken()) return true;
+  const doRegister = confirm('需要登录才能发布内容。\n点击"确定"注册新账号，点击"取消"登录已有账号。');
+  const email = prompt('邮箱:');
+  if (!email) return false;
+  const password = prompt('密码:');
+  if (!password) return false;
+  try {
+    if (doRegister) {
+      const displayName = prompt('显示名称:') || email.split('@')[0];
+      const res = await fetch(`${API_BASE}/api/auth/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password, display_name: displayName }),
+      });
+      if (!res.ok) throw new Error((await res.json()).detail || '注册失败');
+    }
+    const loginRes = await fetch(`${API_BASE}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    });
+    if (!loginRes.ok) throw new Error((await loginRes.json()).detail || '登录失败');
+    const { access_token } = await loginRes.json();
+    localStorage.setItem('sutta_token', access_token);
+    return true;
+  } catch (e) {
+    alert(e.message);
+    return false;
+  }
+}
+
+function communityFormatDate(iso) {
+  return new Date(iso).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+}
+
+function communityEscape(str) {
+  const div = document.createElement('div');
+  div.textContent = str || '';
+  return div.innerHTML;
+}
+
+// --- Q&A ---
+async function renderQAHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>❓ 问答</h2><div class="cat-en">Q&amp;A</div></div>`;
+  html += `<div class="community-form">
+    <input id="qa-new-title" placeholder="问题标题">
+    <textarea id="qa-new-body" placeholder="详细描述你的问题…"></textarea>
+    <button onclick="communitySubmitQuestion()">提交问题</button>
+  </div>`;
+  html += `<div id="qa-list" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/questions`);
+    if (!res.ok) throw new Error('接口暂不可用');
+    const data = await res.json();
+    const list = document.getElementById('qa-list');
+    if (!data.items.length) {
+      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无问题，来提第一个吧</div>';
+      return;
+    }
+    list.outerHTML = data.items.map(q => `
+      <div class="community-list-item" onclick="location.hash='#/qa/${q.id}'">
+        <div class="title">${communityEscape(q.title)}</div>
+        <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)} · ${q.status === 'answered' ? '已解答' : '待解答'}</div>
+      </div>`).join('');
+  } catch (e) {
+    document.getElementById('qa-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md）</div>`;
+  }
+}
+
+async function communitySubmitQuestion() {
+  const title = document.getElementById('qa-new-title').value.trim();
+  const body = document.getElementById('qa-new-body').value.trim();
+  if (!title || !body) { alert('请填写标题和内容'); return; }
+  if (!(await communityEnsureLoggedIn())) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/questions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ title, body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    renderQAHome();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function renderQADetail(id) {
+  let html = `<button class="back-btn" onclick="location.hash='#/qa'">← 返回问答列表</button>`;
+  html += `<div id="qa-detail" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/questions/${id}`);
+    if (!res.ok) throw new Error('问题不存在或接口暂不可用');
+    const q = await res.json();
+    let detail = `<div class="community-post">
+      <h2>${communityEscape(q.title)}</h2>
+      <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)}</div>
+      <div class="body">${communityEscape(q.body)}</div>
+      <h3>回答 (${q.answers.length})</h3>`;
+    detail += q.answers.map(a => `
+      <div class="community-reply">
+        <div class="body">${communityEscape(a.body)}</div>
+        <div class="meta">${communityEscape(a.author.display_name)} · ${communityFormatDate(a.created_at)}</div>
+      </div>`).join('');
+    detail += `<div class="community-form">
+      <textarea id="qa-answer-body" placeholder="写下你的回答…"></textarea>
+      <button onclick="communitySubmitAnswer('${id}')">提交回答</button>
+    </div></div>`;
+    document.getElementById('qa-detail').outerHTML = detail;
+  } catch (e) {
+    document.getElementById('qa-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+async function communitySubmitAnswer(questionId) {
+  const body = document.getElementById('qa-answer-body').value.trim();
+  if (!body) { alert('请输入回答内容'); return; }
+  if (!(await communityEnsureLoggedIn())) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/questions/${questionId}/answers`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    renderQADetail(questionId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+// --- Forum ---
+async function renderForumHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>🧵 论坛</h2><div class="cat-en">Forum</div></div>`;
+  html += `<div class="community-form">
+    <input id="forum-new-category" placeholder="分类（例如：修行心得、经典讨论）">
+    <input id="forum-new-title" placeholder="帖子标题">
+    <textarea id="forum-new-body" placeholder="正文…"></textarea>
+    <button onclick="communitySubmitTopic()">发布帖子</button>
+  </div>`;
+  html += `<div id="forum-list" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics`);
+    if (!res.ok) throw new Error('接口暂不可用');
+    const data = await res.json();
+    const list = document.getElementById('forum-list');
+    if (!data.items.length) {
+      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无帖子，来发第一篇吧</div>';
+      return;
+    }
+    list.outerHTML = data.items.map(t => `
+      <div class="community-list-item" onclick="location.hash='#/forum/${t.id}'">
+        <div class="title">[${communityEscape(t.category)}] ${communityEscape(t.title)}</div>
+        <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+      </div>`).join('');
+  } catch (e) {
+    document.getElementById('forum-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md）</div>`;
+  }
+}
+
+async function communitySubmitTopic() {
+  const category = document.getElementById('forum-new-category').value.trim() || '综合讨论';
+  const title = document.getElementById('forum-new-title').value.trim();
+  const body = document.getElementById('forum-new-body').value.trim();
+  if (!title || !body) { alert('请填写标题和内容'); return; }
+  if (!(await communityEnsureLoggedIn())) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ category, title, body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '发布失败');
+    renderForumHome();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function renderForumDetail(id) {
+  let html = `<button class="back-btn" onclick="location.hash='#/forum'">← 返回论坛列表</button>`;
+  html += `<div id="forum-detail" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics/${id}`);
+    if (!res.ok) throw new Error('帖子不存在或接口暂不可用');
+    const t = await res.json();
+    let detail = `<div class="community-post">
+      <h2>${communityEscape(t.title)}</h2>
+      <div class="meta">[${communityEscape(t.category)}] ${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+      <div class="body">${communityEscape(t.body)}</div>
+      <h3>回复 (${t.replies.length})</h3>`;
+    detail += t.replies.map(r => `
+      <div class="community-reply">
+        <div class="body">${communityEscape(r.body)}</div>
+        <div class="meta">${communityEscape(r.author.display_name)} · ${communityFormatDate(r.created_at)}</div>
+      </div>`).join('');
+    detail += `<div class="community-form">
+      <textarea id="forum-reply-body" placeholder="写下你的回复…"></textarea>
+      <button onclick="communitySubmitReply('${id}')">提交回复</button>
+    </div></div>`;
+    document.getElementById('forum-detail').outerHTML = detail;
+  } catch (e) {
+    document.getElementById('forum-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
+}
+
+async function communitySubmitReply(topicId) {
+  const body = document.getElementById('forum-reply-body').value.trim();
+  if (!body) { alert('请输入回复内容'); return; }
+  if (!(await communityEnsureLoggedIn())) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics/${topicId}/replies`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    renderForumDetail(topicId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+// --- Blog ---
+async function renderBlogHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>📝 博客</h2><div class="cat-en">Blog</div></div>`;
+  html += `<div id="blog-list" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/blog/posts`);
+    if (!res.ok) throw new Error('接口暂不可用');
+    const data = await res.json();
+    const list = document.getElementById('blog-list');
+    if (!data.items.length) {
+      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无博客文章</div>';
+      return;
+    }
+    list.outerHTML = data.items.map(p => `
+      <div class="community-list-item" onclick="location.hash='#/blog/${p.slug}'">
+        <div class="title">${communityEscape(p.title)}</div>
+        <div class="meta">${communityEscape(p.author.display_name)} · ${communityFormatDate(p.published_at || p.created_at)}</div>
+      </div>`).join('');
+  } catch (e) {
+    document.getElementById('blog-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md。发布博客文章需通过 API 或后台以 editor/admin 角色创建）</div>`;
+  }
+}
+
+async function renderBlogDetail(slug) {
+  let html = `<button class="back-btn" onclick="location.hash='#/blog'">← 返回博客列表</button>`;
+  html += `<div id="blog-detail" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/blog/posts/${slug}`);
+    if (!res.ok) throw new Error('文章不存在或接口暂不可用');
+    const p = await res.json();
+    const detail = `<div class="community-post">
+      <h2>${communityEscape(p.title)}</h2>
+      <div class="meta">${communityEscape(p.author.display_name)} · ${communityFormatDate(p.published_at || p.created_at)}</div>
+      <div class="body">${inlineMd ? inlineMd(p.body_markdown) : communityEscape(p.body_markdown)}</div>
+    </div>`;
+    document.getElementById('blog-detail').outerHTML = detail;
+  } catch (e) {
+    document.getElementById('blog-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+  }
 }
 
 // Start

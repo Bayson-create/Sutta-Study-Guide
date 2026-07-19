@@ -27,6 +27,10 @@ Pāli Canon Study Guide with trilingual reader (Pāli · English · Chinese)
 
 All sutta texts are fetched from [SuttaCentral](https://suttacentral.net) API.
 
+## 动态服务（问答 / 论坛 / 博客）
+
+本仓库（`docs/`）保持纯静态，继续由 GitHub Pages 发布。问答、论坛、博客等动态功能由一个独立的私有后端服务提供（不在本仓库中），页面通过 `fetch()` 跨域调用该服务的 API。
+
 ## 版权声明 · Copyright Notice
 
 本项目（主题经文摘要、分类整理、阅读器网页与解析脚本）由 **[Bayson-create](https://github.com/Bayson-create)** 设计开发，© 2026 Bayson-create。代码以 [MIT License](https://opensource.org/licenses/MIT) 开源；摘要、分类等原创文字内容以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 共享——欢迎自由使用、转载、修改、二次开发，但请注明出处并附本仓库链接。
