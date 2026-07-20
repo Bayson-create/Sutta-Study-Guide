@@ -104,12 +104,12 @@ a:hover { text-decoration: underline; }
 .community-list-item .title { font-size: 1.05em; font-weight: 700; color: var(--text); margin-bottom: 4px; }
 .community-list-item .meta { font-size: 0.8em; color: var(--text-light); }
 .community-post { max-width: 760px; margin: 0 auto; }
-.community-post .body { white-space: pre-wrap; line-height: 1.7; margin: 16px 0; }
+.community-post .body { line-height: 1.7; margin: 16px 0; }
 .community-reply {
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px 18px; margin-bottom: 10px;
 }
-.community-reply .meta { font-size: 0.78em; color: var(--text-light); margin-top: 6px; }
+.community-reply .meta { font-size: 0.78em; color: var(--text-light); margin-top: 6px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .community-form { margin-top: 20px; }
 .community-form input, .community-form textarea {
   width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--border);
@@ -124,6 +124,145 @@ a:hover { text-decoration: underline; }
 .community-tabs { margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
 .community-tabs button { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
 .community-tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Toolbar: search + filters + primary action, shared by blog/forum/qa */
+.community-toolbar {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 18px;
+}
+.community-search {
+  flex: 1 1 240px; padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px;
+  font-size: 0.9em; font-family: inherit; background: var(--card-bg); color: var(--text);
+}
+.community-search:focus { outline: none; border-color: var(--accent-light); }
+.community-primary-btn {
+  background: var(--accent); color: #fff; border: none; border-radius: 999px;
+  padding: 9px 20px; font-size: 0.9em; font-weight: 600; cursor: pointer; white-space: nowrap; transition: background 0.2s;
+}
+.community-primary-btn:hover { background: var(--accent-light); }
+.community-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.community-chip {
+  padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--card-bg);
+  color: var(--text-light); font-size: 0.82em; cursor: pointer; transition: all 0.15s; white-space: nowrap;
+}
+.community-chip:hover { border-color: var(--accent-light); color: var(--text); }
+.community-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.community-empty { color: var(--text-light); text-align: center; padding: 40px 20px; }
+
+/* Medium-style blog cards */
+.blog-card {
+  padding: 22px 4px; border-bottom: 1px solid var(--border); cursor: pointer; transition: opacity 0.15s;
+}
+.blog-card:hover { opacity: 0.82; }
+.blog-card .blog-card-title { font-size: 1.3em; font-weight: 700; color: var(--text); margin-bottom: 6px; font-family: Georgia, 'Songti SC', serif; }
+.blog-card .blog-card-excerpt { font-size: 0.92em; color: var(--text-light); line-height: 1.6; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-card .blog-card-meta { font-size: 0.78em; color: var(--text-light); display: flex; align-items: center; gap: 8px; }
+.blog-card .blog-card-meta .author { font-weight: 600; color: var(--text); }
+
+/* Blog reading view — Medium-like typography */
+.blog-reader-title { font-family: Georgia, 'Songti SC', serif; font-size: 2em; font-weight: 700; color: var(--text); line-height: 1.25; margin-bottom: 12px; }
+.blog-reader-meta { font-size: 0.85em; color: var(--text-light); margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.blog-reader-meta .author { font-weight: 700; color: var(--text); }
+
+/* Discourse-style forum rows */
+.forum-row {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background 0.15s;
+}
+.forum-row:hover { background: var(--hover-bg); }
+.forum-row .forum-row-main { flex: 1; min-width: 0; }
+.forum-row .forum-row-title { font-size: 1em; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.forum-row .forum-row-meta { font-size: 0.78em; color: var(--text-light); }
+.forum-row .forum-row-count {
+  flex-shrink: 0; text-align: center; min-width: 44px; padding: 4px 10px; border-radius: 8px;
+  background: var(--accent-bg); color: var(--accent); font-weight: 700; font-size: 0.9em;
+}
+.forum-row .forum-row-count .count-label { display: block; font-size: 0.65em; font-weight: 400; color: var(--text-light); }
+.category-badge {
+  display: inline-block; font-size: 0.72em; font-weight: 600; padding: 2px 9px; border-radius: 999px;
+  background: var(--accent-bg); color: var(--accent); margin-right: 6px; vertical-align: middle;
+}
+
+/* Markdown editor — toolbar + split textarea/preview */
+.md-editor { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; background: var(--card-bg); }
+.md-editor-toolbar { display: flex; gap: 2px; padding: 6px 8px; border-bottom: 1px solid var(--border); background: var(--hover-bg); flex-wrap: wrap; }
+.md-editor-toolbar button {
+  background: transparent; border: none; border-radius: 4px; padding: 5px 9px; cursor: pointer;
+  font-size: 0.85em; color: var(--text-light); font-family: inherit;
+}
+.md-editor-toolbar button:hover { background: var(--card-bg); color: var(--accent); }
+.md-editor-panes { display: flex; min-height: 320px; }
+.md-editor-panes .md-editor-input, .md-editor-panes .md-editor-preview { flex: 1; min-width: 0; }
+.md-editor-panes .md-editor-input {
+  border: none; resize: vertical; padding: 16px; font-family: 'SF Mono', Menlo, monospace; font-size: 0.88em;
+  line-height: 1.6; background: var(--card-bg); color: var(--text); border-right: 1px solid var(--border);
+}
+.md-editor-panes .md-editor-input:focus { outline: none; }
+.md-editor-preview { padding: 16px 20px; overflow-y: auto; max-height: 600px; }
+.md-editor-preview.md-reader h1 { font-size: 1.3em; margin: 0 0 12px; }
+@media (max-width: 760px) {
+  .md-editor-panes { flex-direction: column; }
+  .md-editor-panes .md-editor-input { border-right: none; border-bottom: 1px solid var(--border); }
+}
+
+/* Ownership actions (edit/delete) shown on the author's own content */
+.owner-actions { display: flex; gap: 8px; margin: 10px 0; }
+.owner-actions button {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 5px 14px; font-size: 0.82em; cursor: pointer; color: var(--text-light);
+}
+.owner-actions button:hover { color: var(--accent); border-color: var(--accent-light); }
+.owner-actions button.danger:hover { color: #c0392b; border-color: #e0a0a0; }
+
+/* Bookmark toggle */
+.bookmark-btn {
+  background: none; border: 1px solid var(--border); border-radius: 999px; padding: 5px 14px;
+  cursor: pointer; font-size: 0.85em; color: var(--text-light);
+}
+.bookmark-btn.active { background: var(--accent-bg); color: var(--accent); border-color: var(--accent-light); }
+
+/* Auth modal (replaces prompt()-based login) */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center;
+  justify-content: center; z-index: 1000; padding: 20px;
+}
+.modal-box {
+  background: var(--card-bg); border-radius: var(--radius); padding: 28px 26px; max-width: 380px; width: 100%;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+.modal-box h3 { margin: 0 0 4px; color: var(--text); }
+.modal-box .modal-sub { font-size: 0.82em; color: var(--text-light); margin-bottom: 18px; }
+.modal-box input {
+  width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--border);
+  border-radius: var(--radius); font-family: inherit; font-size: 0.95em; margin-bottom: 10px;
+}
+.modal-box .modal-actions { display: flex; gap: 10px; margin-top: 12px; }
+.modal-box .modal-actions button {
+  flex: 1; padding: 10px; border-radius: var(--radius); border: none; cursor: pointer; font-size: 0.9em;
+}
+.modal-box .modal-submit { background: var(--accent); color: #fff; }
+.modal-box .modal-cancel { background: var(--hover-bg); color: var(--text); }
+.modal-box .modal-switch { text-align: center; margin-top: 14px; font-size: 0.82em; color: var(--text-light); }
+.modal-box .modal-switch a { color: var(--accent); cursor: pointer; }
+.modal-error { color: #c0392b; font-size: 0.82em; margin: -4px 0 10px; }
+
+/* Profile page */
+.profile-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.profile-avatar {
+  width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 1.4em; font-weight: 700; flex-shrink: 0;
+}
+.profile-header .name { font-size: 1.2em; font-weight: 700; color: var(--text); }
+.profile-header .email { font-size: 0.85em; color: var(--text-light); }
+.profile-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--border); margin-bottom: 20px; flex-wrap: wrap; }
+.profile-tabs button {
+  background: none; border: none; padding: 10px 16px; font-size: 0.9em; color: var(--text-light);
+  cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.profile-tabs button.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.profile-section { max-width: 560px; }
+.profile-field-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
+.profile-field-row label { width: 90px; flex-shrink: 0; font-size: 0.88em; color: var(--text-light); }
+.profile-field-row input { flex: 1; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); font-family: inherit; }
 
 /* Markdown reader (concepts) */
 .md-reader { max-width: 760px; margin: 0 auto; overflow-wrap: break-word; word-break: break-word; }
@@ -645,12 +784,22 @@ function route() {
     renderQADetail(hash.slice('#/qa/'.length));
   } else if (hash === '#/forum') {
     renderForumHome();
+  } else if (hash === '#/forum/new') {
+    renderForumEditor(null);
+  } else if (hash.startsWith('#/forum/edit/')) {
+    renderForumEditor(hash.slice('#/forum/edit/'.length));
   } else if (hash.startsWith('#/forum/')) {
     renderForumDetail(hash.slice('#/forum/'.length));
   } else if (hash === '#/blog') {
     renderBlogHome();
+  } else if (hash === '#/blog/new') {
+    renderBlogEditor(null);
+  } else if (hash.startsWith('#/blog/edit/')) {
+    renderBlogEditor(hash.slice('#/blog/edit/'.length));
   } else if (hash.startsWith('#/blog/')) {
     renderBlogDetail(hash.slice('#/blog/'.length));
+  } else if (hash === '#/profile') {
+    renderProfile();
   } else {
     renderHome();
   }
@@ -708,6 +857,11 @@ function renderHome() {
       <span class="icon">📝</span>
       <div class="card-title">博客</div>
       <div class="card-title-en">Blog</div>
+    </div>
+    <div class="card" onclick="location.hash='#/profile'">
+      <span class="icon">👤</span>
+      <div class="card-title">个人</div>
+      <div class="card-title-en">Profile</div>
     </div>
   </div>`;
 
@@ -2816,7 +2970,7 @@ function buildReaderBody() {
 }
 
 // === COMMUNITY: Q&A / FORUM / BLOG ===
-// Minimal auth: a JWT from the azure/ backend, kept in localStorage.
+// Auth: a JWT from the backend API, kept in localStorage.
 function communityToken() { return localStorage.getItem('sutta_token'); }
 
 function communityAuthHeaders() {
@@ -2824,36 +2978,109 @@ function communityAuthHeaders() {
   return token ? { 'Authorization': `Bearer ${token}` } : {};
 }
 
-async function communityEnsureLoggedIn() {
-  if (communityToken()) return true;
-  const doRegister = confirm('需要登录才能发布内容。\n点击"确定"注册新账号，点击"取消"登录已有账号。');
-  const email = prompt('邮箱:');
-  if (!email) return false;
-  const password = prompt('密码:');
-  if (!password) return false;
+function communityLogout() {
+  localStorage.removeItem('sutta_token');
+  communityCurrentUser = null;
+  location.hash = '#/';
+  route();
+}
+
+// Cached current-user object (id/display_name/email/role), fetched once per session.
+let communityCurrentUser = undefined; // undefined = not yet fetched, null = fetched but not logged in
+
+async function communityFetchCurrentUser(force = false) {
+  if (!force && communityCurrentUser !== undefined) return communityCurrentUser;
+  if (!communityToken()) { communityCurrentUser = null; return null; }
   try {
-    if (doRegister) {
-      const displayName = prompt('显示名称:') || email.split('@')[0];
-      const res = await fetch(`${API_BASE}/api/auth/register`, {
+    const res = await fetch(`${API_BASE}/api/auth/me`, { headers: communityAuthHeaders() });
+    if (!res.ok) { communityCurrentUser = null; return null; }
+    communityCurrentUser = await res.json();
+    return communityCurrentUser;
+  } catch (e) {
+    communityCurrentUser = null;
+    return null;
+  }
+}
+
+function communityIsOwner(authorId) {
+  return !!(communityCurrentUser && (communityCurrentUser.id === authorId || communityCurrentUser.role === 'admin'));
+}
+
+// Resolves true once logged in (showing an auth modal if needed), false if the user cancels.
+function communityRequireLogin() {
+  return new Promise(async (resolve) => {
+    const user = await communityFetchCurrentUser();
+    if (user) { resolve(true); return; }
+    communityShowAuthModal('login', resolve);
+  });
+}
+
+function communityShowAuthModal(mode, resolve) {
+  const existing = document.getElementById('community-auth-modal');
+  if (existing) existing.remove();
+
+  const isLogin = mode === 'login';
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.id = 'community-auth-modal';
+  overlay.innerHTML = `
+    <div class="modal-box">
+      <h3>${isLogin ? '登录' : '注册新账号'}</h3>
+      <div class="modal-sub">${isLogin ? '登录后才能发布内容、收藏和评论' : '几秒钟即可完成'}</div>
+      <div id="auth-modal-error" class="modal-error" style="display:none"></div>
+      ${!isLogin ? '<input id="auth-modal-name" placeholder="显示名称">' : ''}
+      <input id="auth-modal-email" type="email" placeholder="邮箱">
+      <input id="auth-modal-password" type="password" placeholder="密码">
+      <div class="modal-actions">
+        <button class="modal-cancel" id="auth-modal-cancel">取消</button>
+        <button class="modal-submit" id="auth-modal-submit">${isLogin ? '登录' : '注册'}</button>
+      </div>
+      <div class="modal-switch">${isLogin ? '还没有账号？' : '已经有账号？'} <a id="auth-modal-switch">${isLogin ? '注册' : '登录'}</a></div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const close = (result) => { overlay.remove(); resolve(result); };
+  document.getElementById('auth-modal-cancel').onclick = () => close(false);
+  overlay.onclick = (e) => { if (e.target === overlay) close(false); };
+  document.getElementById('auth-modal-switch').onclick = () => {
+    overlay.remove();
+    communityShowAuthModal(isLogin ? 'register' : 'login', resolve);
+  };
+  document.getElementById('auth-modal-submit').onclick = async () => {
+    const email = document.getElementById('auth-modal-email').value.trim();
+    const password = document.getElementById('auth-modal-password').value;
+    const errorEl = document.getElementById('auth-modal-error');
+    errorEl.style.display = 'none';
+    if (!email || !password) {
+      errorEl.textContent = '请填写邮箱和密码';
+      errorEl.style.display = 'block';
+      return;
+    }
+    try {
+      if (!isLogin) {
+        const displayName = document.getElementById('auth-modal-name').value.trim() || email.split('@')[0];
+        const res = await fetch(`${API_BASE}/api/auth/register`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password, display_name: displayName }),
+        });
+        if (!res.ok) throw new Error((await res.json()).detail || '注册失败');
+      }
+      const loginRes = await fetch(`${API_BASE}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password, display_name: displayName }),
+        body: JSON.stringify({ email, password }),
       });
-      if (!res.ok) throw new Error((await res.json()).detail || '注册失败');
+      if (!loginRes.ok) throw new Error((await loginRes.json()).detail || '登录失败');
+      const { access_token } = await loginRes.json();
+      localStorage.setItem('sutta_token', access_token);
+      await communityFetchCurrentUser(true);
+      close(true);
+    } catch (e) {
+      errorEl.textContent = e.message;
+      errorEl.style.display = 'block';
     }
-    const loginRes = await fetch(`${API_BASE}/api/auth/login`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password }),
-    });
-    if (!loginRes.ok) throw new Error((await loginRes.json()).detail || '登录失败');
-    const { access_token } = await loginRes.json();
-    localStorage.setItem('sutta_token', access_token);
-    return true;
-  } catch (e) {
-    alert(e.message);
-    return false;
-  }
+  };
 }
 
 function communityFormatDate(iso) {
@@ -2864,6 +3091,17 @@ function communityEscape(str) {
   const div = document.createElement('div');
   div.textContent = str || '';
   return div.innerHTML;
+}
+
+// A short plain-text excerpt from markdown, for Medium-style cards.
+function communityExcerpt(markdown, len = 140) {
+  const plain = (markdown || '')
+    .replace(/^#+\s+/gm, '')
+    .replace(/[*_`>#-]/g, '')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/\n+/g, ' ')
+    .trim();
+  return plain.length > len ? plain.slice(0, len) + '…' : plain;
 }
 
 // Azure 后端为省钱设置了 --min-replicas 0，闲置一段时间后会缩容到零；
@@ -2893,10 +3131,124 @@ function communityTimeoutMessage(e) {
   return `加载失败: ${e.message}`;
 }
 
+// --- Markdown editor: toolbar + textarea + live preview, shared by blog & forum ---
+function communityEditorHtml(idPrefix, initialValue) {
+  return `<div class="md-editor">
+    <div class="md-editor-toolbar">
+      <button type="button" onclick="communityEditorWrap('${idPrefix}','**','**')" title="加粗"><b>B</b></button>
+      <button type="button" onclick="communityEditorWrap('${idPrefix}','_','_')" title="斜体"><i>I</i></button>
+      <button type="button" onclick="communityEditorPrefix('${idPrefix}','## ')" title="标题">H2</button>
+      <button type="button" onclick="communityEditorPrefix('${idPrefix}','### ')" title="小标题">H3</button>
+      <button type="button" onclick="communityEditorPrefix('${idPrefix}','- ')" title="列表">•</button>
+      <button type="button" onclick="communityEditorPrefix('${idPrefix}','1. ')" title="有序列表">1.</button>
+      <button type="button" onclick="communityEditorPrefix('${idPrefix}','> ')" title="引用">"</button>
+      <button type="button" onclick="communityEditorWrap('${idPrefix}','\`','\`')" title="代码">&lt;/&gt;</button>
+      <button type="button" onclick="communityEditorWrap('${idPrefix}','[','](https://)')" title="链接">🔗</button>
+    </div>
+    <div class="md-editor-panes">
+      <textarea class="md-editor-input" id="${idPrefix}-input" oninput="communityEditorUpdatePreview('${idPrefix}')" placeholder="支持 Markdown：# 标题、**加粗**、- 列表、&gt; 引用……">${communityEscape(initialValue || '')}</textarea>
+      <div class="md-editor-preview md-reader" id="${idPrefix}-preview"></div>
+    </div>
+  </div>`;
+}
+
+function communityEditorUpdatePreview(idPrefix) {
+  const input = document.getElementById(`${idPrefix}-input`);
+  const preview = document.getElementById(`${idPrefix}-preview`);
+  if (!input || !preview) return;
+  preview.innerHTML = input.value.trim() ? mdToHtml(input.value) : '<p style="color:var(--text-light)">预览会显示在这里…</p>';
+}
+
+function communityEditorInit(idPrefix) {
+  communityEditorUpdatePreview(idPrefix);
+}
+
+function communityEditorWrap(idPrefix, before, after) {
+  const input = document.getElementById(`${idPrefix}-input`);
+  const start = input.selectionStart, end = input.selectionEnd;
+  const selected = input.value.slice(start, end);
+  input.value = input.value.slice(0, start) + before + selected + after + input.value.slice(end);
+  input.focus();
+  input.selectionStart = start + before.length;
+  input.selectionEnd = start + before.length + selected.length;
+  communityEditorUpdatePreview(idPrefix);
+}
+
+function communityEditorPrefix(idPrefix, prefix) {
+  const input = document.getElementById(`${idPrefix}-input`);
+  const start = input.selectionStart;
+  const lineStart = input.value.lastIndexOf('\n', start - 1) + 1;
+  input.value = input.value.slice(0, lineStart) + prefix + input.value.slice(lineStart);
+  input.focus();
+  communityEditorUpdatePreview(idPrefix);
+}
+
+function communityEditorValue(idPrefix) {
+  const input = document.getElementById(`${idPrefix}-input`);
+  return input ? input.value.trim() : '';
+}
+
+// --- Bookmarks ---
+async function communityBookmarkButtonHtml(contentType, contentId) {
+  const user = await communityFetchCurrentUser();
+  if (!user) return '';
+  let active = false;
+  try {
+    const res = await fetch(`${API_BASE}/api/bookmarks?content_type=${contentType}`, { headers: communityAuthHeaders() });
+    if (res.ok) {
+      const data = await res.json();
+      active = data.items.some(b => b.content_id === contentId);
+    }
+  } catch (e) { /* ignore, default to not-bookmarked */ }
+  return `<button class="bookmark-btn${active ? ' active' : ''}" id="bookmark-btn-${contentId}"
+    onclick="communityToggleBookmark('${contentType}','${contentId}',this)">${active ? '★ 已收藏' : '☆ 收藏'}</button>`;
+}
+
+async function communityToggleBookmark(contentType, contentId, btn) {
+  if (!(await communityRequireLogin())) return;
+  const active = btn.classList.contains('active');
+  try {
+    if (active) {
+      const res = await fetch(`${API_BASE}/api/bookmarks?content_type=${contentType}&content_id=${contentId}`, {
+        method: 'DELETE', headers: communityAuthHeaders(),
+      });
+      if (!res.ok && res.status !== 404) throw new Error('取消收藏失败');
+      btn.classList.remove('active');
+      btn.textContent = '☆ 收藏';
+    } else {
+      const res = await fetch(`${API_BASE}/api/bookmarks`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ content_type: contentType, content_id: contentId }),
+      });
+      if (!res.ok && res.status !== 400) throw new Error('收藏失败');
+      btn.classList.add('active');
+      btn.textContent = '★ 已收藏';
+    }
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+// --- Ownership actions (edit/delete), shared by qa/forum/blog ---
+function communityOwnerActionsHtml(authorId, editHash, onDelete) {
+  if (!communityIsOwner(authorId)) return '';
+  return `<div class="owner-actions">
+    <button onclick="location.hash='${editHash}'">✎ 编辑</button>
+    <button class="danger" onclick="${onDelete}">🗑 删除</button>
+  </div>`;
+}
+
+
 // --- Q&A ---
-async function renderQAHome() {
+async function renderQAHome(searchQuery) {
+  await communityFetchCurrentUser();
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>❓ 问答</h2><div class="cat-en">Q&amp;A</div></div>`;
+  html += `<div class="community-toolbar">
+    <input class="community-search" id="qa-search" placeholder="搜索问题…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityQASearch()">
+    <button class="community-primary-btn" onclick="communityQASearch()">🔍 搜索</button>
+  </div>`;
   html += `<div class="community-form">
     <input id="qa-new-title" placeholder="问题标题">
     <textarea id="qa-new-body" placeholder="详细描述你的问题…"></textarea>
@@ -2907,19 +3259,21 @@ async function renderQAHome() {
 
   const slowHint = communityShowSlowHint('qa-list');
   try {
-    const res = await communityFetchWithTimeout(`${API_BASE}/api/qa/questions`);
+    const url = new URL(`${API_BASE}/api/qa/questions`);
+    if (searchQuery) url.searchParams.set('q', searchQuery);
+    const res = await communityFetchWithTimeout(url);
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('qa-list');
     if (!data.items.length) {
-      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无问题，来提第一个吧</div>';
+      list.outerHTML = `<div class="community-empty">${searchQuery ? '没有找到匹配的问题' : '暂无问题，来提第一个吧'}</div>`;
       return;
     }
     list.outerHTML = data.items.map(q => `
       <div class="community-list-item" onclick="location.hash='#/qa/${q.id}'">
         <div class="title">${communityEscape(q.title)}</div>
-        <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)} · ${q.status === 'answered' ? '已解答' : '待解答'}</div>
+        <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)} · ${q.status === 'answered' ? '已解答' : '待解答'} · ${q.answer_count} 个回答</div>
       </div>`).join('');
   } catch (e) {
     clearTimeout(slowHint);
@@ -2927,11 +3281,16 @@ async function renderQAHome() {
   }
 }
 
+function communityQASearch() {
+  const q = document.getElementById('qa-search').value.trim();
+  renderQAHome(q);
+}
+
 async function communitySubmitQuestion() {
   const title = document.getElementById('qa-new-title').value.trim();
   const body = document.getElementById('qa-new-body').value.trim();
   if (!title || !body) { alert('请填写标题和内容'); return; }
-  if (!(await communityEnsureLoggedIn())) return;
+  if (!(await communityRequireLogin())) return;
   try {
     const res = await fetch(`${API_BASE}/api/qa/questions`, {
       method: 'POST',
@@ -2946,6 +3305,7 @@ async function communitySubmitQuestion() {
 }
 
 async function renderQADetail(id) {
+  await communityFetchCurrentUser();
   let html = `<button class="back-btn" onclick="location.hash='#/qa'">← 返回问答列表</button>`;
   html += `<div id="qa-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
@@ -2956,15 +3316,21 @@ async function renderQADetail(id) {
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('问题不存在或接口暂不可用');
     const q = await res.json();
+    const bookmarkHtml = await communityBookmarkButtonHtml('question', q.id);
     let detail = `<div class="community-post">
       <h2>${communityEscape(q.title)}</h2>
       <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)}</div>
-      <div class="body">${communityEscape(q.body)}</div>
+      ${communityOwnerActionsHtml(q.author.id, '#/qa/' + q.id, `communityDeleteQuestion('${q.id}')`)}
+      <div style="margin:10px 0">${bookmarkHtml}</div>
+      <div class="body md-reader">${mdToHtml(q.body)}</div>
       <h3>回答 (${q.answers.length})</h3>`;
     detail += q.answers.map(a => `
       <div class="community-reply">
-        <div class="body">${communityEscape(a.body)}</div>
-        <div class="meta">${communityEscape(a.author.display_name)} · ${communityFormatDate(a.created_at)}</div>
+        <div class="body md-reader" data-raw="${communityEscape(a.body)}">${mdToHtml(a.body)}</div>
+        <div class="meta">
+          <span>${communityEscape(a.author.display_name)} · ${communityFormatDate(a.created_at)}</span>
+          ${communityIsOwner(a.author.id) ? `<span class="owner-actions" style="margin:0"><button onclick="communityEditAnswer('${a.id}','${q.id}',this)">✎ 编辑</button><button class="danger" onclick="communityDeleteAnswer('${a.id}','${q.id}')">🗑 删除</button></span>` : ''}
+        </div>
       </div>`).join('');
     detail += `<div class="community-form">
       <textarea id="qa-answer-body" placeholder="写下你的回答…"></textarea>
@@ -2980,7 +3346,7 @@ async function renderQADetail(id) {
 async function communitySubmitAnswer(questionId) {
   const body = document.getElementById('qa-answer-body').value.trim();
   if (!body) { alert('请输入回答内容'); return; }
-  if (!(await communityEnsureLoggedIn())) return;
+  if (!(await communityRequireLogin())) return;
   try {
     const res = await fetch(`${API_BASE}/api/qa/questions/${questionId}/answers`, {
       method: 'POST',
@@ -2994,34 +3360,93 @@ async function communitySubmitAnswer(questionId) {
   }
 }
 
+async function communityDeleteQuestion(id) {
+  if (!confirm('确定删除这个问题吗？此操作不可撤销。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/questions/${id}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    location.hash = '#/qa';
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+function communityEditAnswer(answerId, questionId, btnEl) {
+  const replyDiv = btnEl.closest('.community-reply');
+  const bodyDiv = replyDiv.querySelector('.body');
+  const currentText = bodyDiv.dataset.raw || bodyDiv.textContent;
+  bodyDiv.innerHTML = `<textarea id="edit-answer-${answerId}" style="width:100%;min-height:80px">${communityEscape(currentText)}</textarea>
+    <div class="owner-actions"><button onclick="communitySaveAnswer('${answerId}','${questionId}')">保存</button></div>`;
+}
+
+async function communitySaveAnswer(answerId, questionId) {
+  const body = document.getElementById(`edit-answer-${answerId}`).value.trim();
+  if (!body) { alert('内容不能为空'); return; }
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/answers/${answerId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+    renderQADetail(questionId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communityDeleteAnswer(answerId, questionId) {
+  if (!confirm('确定删除这个回答吗？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/qa/answers/${answerId}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    renderQADetail(questionId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+
 // --- Forum ---
-async function renderForumHome() {
+let communityForumCategory = null;
+
+async function renderForumHome(searchQuery, category) {
+  await communityFetchCurrentUser();
+  communityForumCategory = category || null;
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🧵 论坛</h2><div class="cat-en">Forum</div></div>`;
-  html += `<div class="community-form">
-    <input id="forum-new-category" placeholder="分类（例如：修行心得、经典讨论）">
-    <input id="forum-new-title" placeholder="帖子标题">
-    <textarea id="forum-new-body" placeholder="正文…"></textarea>
-    <button onclick="communitySubmitTopic()">发布帖子</button>
+  html += `<div class="community-toolbar">
+    <input class="community-search" id="forum-search" placeholder="搜索帖子…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityForumSearch()">
+    <button class="community-primary-btn" onclick="communityForumSearch()">🔍 搜索</button>
+    <button class="community-primary-btn" onclick="communityForumNewTopic()">✎ 发布主题</button>
   </div>`;
+  html += `<div id="forum-chips" class="community-chips"></div>`;
   html += `<div id="forum-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  loadForumCategories(category);
+
   const slowHint = communityShowSlowHint('forum-list');
   try {
-    const res = await communityFetchWithTimeout(`${API_BASE}/api/forum/topics`);
+    const url = new URL(`${API_BASE}/api/forum/topics`);
+    if (searchQuery) url.searchParams.set('q', searchQuery);
+    if (category) url.searchParams.set('category', category);
+    const res = await communityFetchWithTimeout(url);
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('forum-list');
     if (!data.items.length) {
-      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无帖子，来发第一篇吧</div>';
+      list.outerHTML = `<div class="community-empty">${searchQuery || category ? '没有找到匹配的帖子' : '暂无帖子，来发第一篇吧'}</div>`;
       return;
     }
     list.outerHTML = data.items.map(t => `
-      <div class="community-list-item" onclick="location.hash='#/forum/${t.id}'">
-        <div class="title">[${communityEscape(t.category)}] ${communityEscape(t.title)}</div>
-        <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+      <div class="forum-row" onclick="location.hash='#/forum/${t.id}'">
+        <div class="forum-row-main">
+          <div class="forum-row-title"><span class="category-badge">${communityEscape(t.category)}</span>${communityEscape(t.title)}</div>
+          <div class="forum-row-meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+        </div>
+        <div class="forum-row-count">${t.reply_count}<span class="count-label">回复</span></div>
       </div>`).join('');
   } catch (e) {
     clearTimeout(slowHint);
@@ -3029,26 +3454,73 @@ async function renderForumHome() {
   }
 }
 
-async function communitySubmitTopic() {
-  const category = document.getElementById('forum-new-category').value.trim() || '综合讨论';
-  const title = document.getElementById('forum-new-title').value.trim();
-  const body = document.getElementById('forum-new-body').value.trim();
-  if (!title || !body) { alert('请填写标题和内容'); return; }
-  if (!(await communityEnsureLoggedIn())) return;
+async function loadForumCategories(activeCategory) {
   try {
-    const res = await fetch(`${API_BASE}/api/forum/topics`, {
-      method: 'POST',
+    const res = await fetch(`${API_BASE}/api/forum/categories`);
+    if (!res.ok) return;
+    const cats = await res.json();
+    const chipsEl = document.getElementById('forum-chips');
+    if (!chipsEl) return;
+    let html = `<div class="community-chip${!activeCategory ? ' active' : ''}" onclick="renderForumHome(null,null)">全部</div>`;
+    html += cats.map(c => `<div class="community-chip${activeCategory === c.category ? ' active' : ''}" onclick="renderForumHome(null,'${communityEscape(c.category)}')">${communityEscape(c.category)} (${c.count})</div>`).join('');
+    chipsEl.innerHTML = html;
+  } catch (e) { /* categories are a nice-to-have; ignore failures */ }
+}
+
+function communityForumSearch() {
+  const q = document.getElementById('forum-search').value.trim();
+  renderForumHome(q, communityForumCategory);
+}
+
+async function communityForumNewTopic() {
+  if (!(await communityRequireLogin())) return;
+  location.hash = '#/forum/new';
+}
+
+async function renderForumEditor(topicId) {
+  if (!(await communityRequireLogin())) { location.hash = '#/forum'; return; }
+  const isEdit = !!topicId;
+  let existing = null;
+  if (isEdit) {
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/forum/topics/${topicId}`);
+    if (!res.ok) { alert('帖子不存在'); location.hash = '#/forum'; return; }
+    existing = await res.json();
+    if (!communityIsOwner(existing.author.id)) { alert('只能编辑自己的帖子'); location.hash = '#/forum/' + topicId; return; }
+  }
+  let html = `<button class="back-btn" onclick="location.hash='${isEdit ? '#/forum/' + topicId : '#/forum'}'">← 取消</button>`;
+  html += `<div class="cat-header"><h2>${isEdit ? '✎ 编辑主题' : '✎ 发布新主题'}</h2></div>`;
+  html += `<div class="community-form">
+    <input id="forum-editor-category" placeholder="分类（例如：修行心得、经典讨论）" value="${communityEscape(existing?.category || '')}">
+    <input id="forum-editor-title" placeholder="帖子标题" value="${communityEscape(existing?.title || '')}">
+    ${communityEditorHtml('forum-editor', existing?.body || '')}
+    <button onclick="communitySaveTopic(${isEdit ? `'${topicId}'` : 'null'})">${isEdit ? '保存修改' : '发布'}</button>
+  </div>`;
+  app.innerHTML = html;
+  communityEditorInit('forum-editor');
+}
+
+async function communitySaveTopic(topicId) {
+  const category = document.getElementById('forum-editor-category').value.trim() || '综合讨论';
+  const title = document.getElementById('forum-editor-title').value.trim();
+  const body = communityEditorValue('forum-editor');
+  if (!title || !body) { alert('请填写标题和正文'); return; }
+  try {
+    const url = topicId ? `${API_BASE}/api/forum/topics/${topicId}` : `${API_BASE}/api/forum/topics`;
+    const res = await fetch(url, {
+      method: topicId ? 'PATCH' : 'POST',
       headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
       body: JSON.stringify({ category, title, body }),
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '发布失败');
-    renderForumHome();
+    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+    const saved = await res.json();
+    location.hash = '#/forum/' + saved.id;
   } catch (e) {
     alert(e.message);
   }
 }
 
 async function renderForumDetail(id) {
+  await communityFetchCurrentUser();
   let html = `<button class="back-btn" onclick="location.hash='#/forum'">← 返回论坛列表</button>`;
   html += `<div id="forum-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
@@ -3059,15 +3531,22 @@ async function renderForumDetail(id) {
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('帖子不存在或接口暂不可用');
     const t = await res.json();
+    const bookmarkHtml = await communityBookmarkButtonHtml('forum_topic', t.id);
     let detail = `<div class="community-post">
-      <h2>${communityEscape(t.title)}</h2>
-      <div class="meta">[${communityEscape(t.category)}] ${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
-      <div class="body">${communityEscape(t.body)}</div>
+      <span class="category-badge">${communityEscape(t.category)}</span>
+      <h2 style="display:inline">${communityEscape(t.title)}</h2>
+      <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+      ${communityOwnerActionsHtml(t.author.id, '#/forum/edit/' + t.id, `communityDeleteTopic('${t.id}')`)}
+      <div style="margin:10px 0">${bookmarkHtml}</div>
+      <div class="body md-reader">${mdToHtml(t.body)}</div>
       <h3>回复 (${t.replies.length})</h3>`;
     detail += t.replies.map(r => `
       <div class="community-reply">
-        <div class="body">${communityEscape(r.body)}</div>
-        <div class="meta">${communityEscape(r.author.display_name)} · ${communityFormatDate(r.created_at)}</div>
+        <div class="body md-reader" data-raw="${communityEscape(r.body)}">${mdToHtml(r.body)}</div>
+        <div class="meta">
+          <span>${communityEscape(r.author.display_name)} · ${communityFormatDate(r.created_at)}</span>
+          ${communityIsOwner(r.author.id) ? `<span class="owner-actions" style="margin:0"><button onclick="communityEditReply('${r.id}','${t.id}',this)">✎ 编辑</button><button class="danger" onclick="communityDeleteReply('${r.id}','${t.id}')">🗑 删除</button></span>` : ''}
+        </div>
       </div>`).join('');
     detail += `<div class="community-form">
       <textarea id="forum-reply-body" placeholder="写下你的回复…"></textarea>
@@ -3083,7 +3562,7 @@ async function renderForumDetail(id) {
 async function communitySubmitReply(topicId) {
   const body = document.getElementById('forum-reply-body').value.trim();
   if (!body) { alert('请输入回复内容'); return; }
-  if (!(await communityEnsureLoggedIn())) return;
+  if (!(await communityRequireLogin())) return;
   try {
     const res = await fetch(`${API_BASE}/api/forum/topics/${topicId}/replies`, {
       method: 'POST',
@@ -3097,28 +3576,85 @@ async function communitySubmitReply(topicId) {
   }
 }
 
+async function communityDeleteTopic(id) {
+  if (!confirm('确定删除这个主题吗？此操作不可撤销。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics/${id}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    location.hash = '#/forum';
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+function communityEditReply(replyId, topicId, btnEl) {
+  const replyDiv = btnEl.closest('.community-reply');
+  const bodyDiv = replyDiv.querySelector('.body');
+  const currentText = bodyDiv.dataset.raw || bodyDiv.textContent;
+  bodyDiv.innerHTML = `<textarea id="edit-reply-${replyId}" style="width:100%;min-height:80px">${communityEscape(currentText)}</textarea>
+    <div class="owner-actions"><button onclick="communitySaveReply('${replyId}','${topicId}')">保存</button></div>`;
+}
+
+async function communitySaveReply(replyId, topicId) {
+  const body = document.getElementById(`edit-reply-${replyId}`).value.trim();
+  if (!body) { alert('内容不能为空'); return; }
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/replies/${replyId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ body }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+    renderForumDetail(topicId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communityDeleteReply(replyId, topicId) {
+  if (!confirm('确定删除这条回复吗？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/replies/${replyId}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    renderForumDetail(topicId);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+
 // --- Blog ---
-async function renderBlogHome() {
+async function renderBlogHome(searchQuery) {
+  const user = await communityFetchCurrentUser();
+  const canWrite = user && (user.role === 'editor' || user.role === 'admin');
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>📝 博客</h2><div class="cat-en">Blog</div></div>`;
+  html += `<div class="community-toolbar">
+    <input class="community-search" id="blog-search" placeholder="搜索文章…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityBlogSearch()">
+    <button class="community-primary-btn" onclick="communityBlogSearch()">🔍 搜索</button>
+    ${canWrite ? `<button class="community-primary-btn" onclick="location.hash='#/blog/new'">✎ 写文章</button>` : ''}
+  </div>`;
   html += `<div id="blog-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
   const slowHint = communityShowSlowHint('blog-list');
   try {
-    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts`);
+    const url = new URL(`${API_BASE}/api/blog/posts`);
+    if (searchQuery) url.searchParams.set('q', searchQuery);
+    const res = await communityFetchWithTimeout(url);
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('blog-list');
     if (!data.items.length) {
-      list.outerHTML = '<div style="color:var(--text-light);text-align:center;padding:20px">暂无博客文章</div>';
+      list.outerHTML = `<div class="community-empty">${searchQuery ? '没有找到匹配的文章' : (canWrite ? '暂无博客文章，来写第一篇吧' : '暂无博客文章')}</div>`;
       return;
     }
     list.outerHTML = data.items.map(p => `
-      <div class="community-list-item" onclick="location.hash='#/blog/${p.slug}'">
-        <div class="title">${communityEscape(p.title)}</div>
-        <div class="meta">${communityEscape(p.author.display_name)} · ${communityFormatDate(p.published_at || p.created_at)}</div>
+      <div class="blog-card" onclick="location.hash='#/blog/${p.slug}'">
+        <div class="blog-card-title">${communityEscape(p.title)}</div>
+        <div class="blog-card-excerpt">${communityEscape(communityExcerpt(p.body_markdown))}</div>
+        <div class="blog-card-meta"><span class="author">${communityEscape(p.author.display_name)}</span><span>·</span><span>${communityFormatDate(p.published_at || p.created_at)}</span></div>
       </div>`).join('');
   } catch (e) {
     clearTimeout(slowHint);
@@ -3126,21 +3662,101 @@ async function renderBlogHome() {
   }
 }
 
+function communityBlogSearch() {
+  const q = document.getElementById('blog-search').value.trim();
+  renderBlogHome(q);
+}
+
+function communitySlugify(title) {
+  return title.toLowerCase()
+    .replace(/[^\w一-龥\s-]/g, '')
+    .trim().replace(/\s+/g, '-').slice(0, 80) || 'post-' + Date.now();
+}
+
+async function renderBlogEditor(slug) {
+  const loggedIn = await communityRequireLogin();
+  if (!loggedIn) { location.hash = '#/blog'; return; }
+  const user = await communityFetchCurrentUser();
+  if (!user || (user.role !== 'editor' && user.role !== 'admin')) {
+    alert('只有 editor 或 admin 角色才能发布博客文章');
+    location.hash = '#/blog';
+    return;
+  }
+  const isEdit = !!slug;
+  let existing = null;
+  if (isEdit) {
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts/${slug}`, { headers: communityAuthHeaders() });
+    if (!res.ok) { alert('文章不存在'); location.hash = '#/blog'; return; }
+    existing = await res.json();
+    if (!communityIsOwner(existing.author.id)) { alert('只能编辑自己的文章'); location.hash = '#/blog/' + slug; return; }
+  }
+  let html = `<button class="back-btn" onclick="location.hash='${isEdit ? '#/blog/' + slug : '#/blog'}'">← 取消</button>`;
+  html += `<div class="cat-header"><h2>${isEdit ? '✎ 编辑文章' : '✎ 写新文章'}</h2></div>`;
+  html += `<div class="community-form">
+    <input id="blog-editor-title" placeholder="文章标题" value="${communityEscape(existing?.title || '')}" oninput="communityBlogTitleChanged()">
+    <input id="blog-editor-slug" placeholder="URL slug（英文/数字/短横线，自动生成，可修改）" value="${communityEscape(existing?.slug || '')}">
+    ${communityEditorHtml('blog-editor', existing?.body_markdown || '')}
+    <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+      <label style="font-size:0.9em;color:var(--text-light)"><input type="checkbox" id="blog-editor-publish" ${!existing || existing.status === 'published' ? 'checked' : ''}> 立即发布（取消勾选则保存为草稿）</label>
+    </div>
+    <button style="margin-top:10px" onclick="communitySaveBlogPost(${isEdit ? `'${slug}'` : 'null'})">${isEdit ? '保存修改' : '发布文章'}</button>
+  </div>`;
+  app.innerHTML = html;
+  communityEditorInit('blog-editor');
+  window.communityBlogSlugTouched = isEdit; // don't auto-slugify when editing an existing post
+}
+
+function communityBlogTitleChanged() {
+  if (window.communityBlogSlugTouched) return;
+  const title = document.getElementById('blog-editor-title').value.trim();
+  document.getElementById('blog-editor-slug').value = communitySlugify(title);
+}
+
+async function communitySaveBlogPost(slug) {
+  const title = document.getElementById('blog-editor-title').value.trim();
+  const newSlug = document.getElementById('blog-editor-slug').value.trim() || communitySlugify(title);
+  const body_markdown = communityEditorValue('blog-editor');
+  const status = document.getElementById('blog-editor-publish').checked ? 'published' : 'draft';
+  if (!title || !body_markdown) { alert('请填写标题和正文'); return; }
+  try {
+    const url = slug ? `${API_BASE}/api/blog/posts/${slug}` : `${API_BASE}/api/blog/posts`;
+    const payload = slug ? { title, slug: newSlug, body_markdown, status } : { title, slug: newSlug, body_markdown, status };
+    const res = await fetch(url, {
+      method: slug ? 'PATCH' : 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+    const saved = await res.json();
+    location.hash = '#/blog/' + saved.slug;
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
 async function renderBlogDetail(slug) {
+  await communityFetchCurrentUser();
   let html = `<button class="back-btn" onclick="location.hash='#/blog'">← 返回博客列表</button>`;
   html += `<div id="blog-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
   const slowHint = communityShowSlowHint('blog-detail');
   try {
-    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts/${slug}`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts/${slug}`, { headers: communityAuthHeaders() });
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('文章不存在或接口暂不可用');
     const p = await res.json();
+    const bookmarkHtml = await communityBookmarkButtonHtml('blog_post', p.id);
     const detail = `<div class="community-post">
-      <h2>${communityEscape(p.title)}</h2>
-      <div class="meta">${communityEscape(p.author.display_name)} · ${communityFormatDate(p.published_at || p.created_at)}</div>
-      <div class="body">${inlineMd ? inlineMd(p.body_markdown) : communityEscape(p.body_markdown)}</div>
+      ${p.status === 'draft' ? '<div class="category-badge" style="background:#eda10022;color:#b8860b">草稿</div>' : ''}
+      <div class="blog-reader-title">${communityEscape(p.title)}</div>
+      <div class="blog-reader-meta">
+        <span class="author">${communityEscape(p.author.display_name)}</span>
+        <span>${communityFormatDate(p.published_at || p.created_at)}</span>
+      </div>
+      ${communityOwnerActionsHtml(p.author.id, '#/blog/edit/' + p.slug, `communityDeleteBlogPost('${p.slug}')`)}
+      <div style="margin:10px 0">${bookmarkHtml}</div>
+      <div class="body md-reader">${mdToHtml(p.body_markdown)}</div>
     </div>`;
     document.getElementById('blog-detail').outerHTML = detail;
   } catch (e) {
@@ -3148,6 +3764,211 @@ async function renderBlogDetail(slug) {
     document.getElementById('blog-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
+
+async function communityDeleteBlogPost(slug) {
+  if (!confirm('确定删除这篇文章吗？此操作不可撤销。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/blog/posts/${slug}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    location.hash = '#/blog';
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+
+// --- Profile ---
+let communityProfileTab = 'settings';
+
+async function renderProfile() {
+  const user = await communityFetchCurrentUser();
+  if (!user) {
+    let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+    html += `<div class="community-empty">请先登录查看个人资料<br><br><button class="community-primary-btn" onclick="communityProfileLoginPrompt()">登录 / 注册</button></div>`;
+    app.innerHTML = html;
+    return;
+  }
+
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="profile-header">
+    <div class="profile-avatar">${communityEscape((user.display_name || '?')[0].toUpperCase())}</div>
+    <div>
+      <div class="name">${communityEscape(user.display_name)}</div>
+      <div class="email">${communityEscape(user.email)}</div>
+    </div>
+    <button style="margin-left:auto" class="owner-actions-btn" onclick="communityLogout()">退出登录</button>
+  </div>`;
+  html += `<div class="profile-tabs">
+    <button class="${communityProfileTab === 'settings' ? 'active' : ''}" onclick="communityProfileSwitchTab('settings',this)">资料设置</button>
+    <button class="${communityProfileTab === 'questions' ? 'active' : ''}" onclick="communityProfileSwitchTab('questions',this)">我的问题</button>
+    <button class="${communityProfileTab === 'topics' ? 'active' : ''}" onclick="communityProfileSwitchTab('topics',this)">我的论坛</button>
+    <button class="${communityProfileTab === 'posts' ? 'active' : ''}" onclick="communityProfileSwitchTab('posts',this)">我的博客</button>
+    <button class="${communityProfileTab === 'bookmarks' ? 'active' : ''}" onclick="communityProfileSwitchTab('bookmarks',this)">我的收藏</button>
+  </div>`;
+  html += `<div id="profile-tab-content" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+  communityLoadProfileTab(communityProfileTab, user);
+}
+
+function communityProfileLoginPrompt() {
+  communityRequireLogin().then(ok => { if (ok) renderProfile(); });
+}
+
+function communityProfileSwitchTab(tab, btnEl) {
+  communityProfileTab = tab;
+  document.querySelectorAll('.profile-tabs button').forEach(b => b.classList.remove('active'));
+  btnEl.classList.add('active');
+  communityLoadProfileTab(tab, communityCurrentUser);
+}
+
+async function communityLoadProfileTab(tab, user) {
+  const content = document.getElementById('profile-tab-content');
+  content.className = 'loading';
+  content.textContent = '加载中…';
+
+  if (tab === 'settings') {
+    content.className = 'profile-section';
+    content.innerHTML = `
+      <h3 style="margin-top:0">基本信息</h3>
+      <div class="profile-field-row"><label>显示名称</label><input id="profile-display-name" value="${communityEscape(user.display_name)}"></div>
+      <div class="profile-field-row"><label>邮箱</label><input id="profile-email" type="email" value="${communityEscape(user.email)}"></div>
+      <button onclick="communitySaveProfileBasics()">保存</button>
+      <h3>修改密码</h3>
+      <div class="profile-field-row"><label>当前密码</label><input id="profile-current-password" type="password"></div>
+      <div class="profile-field-row"><label>新密码</label><input id="profile-new-password" type="password"></div>
+      <button onclick="communitySavePassword()">修改密码</button>
+    `;
+    return;
+  }
+
+  if (tab === 'questions') {
+    await communityLoadProfileList(content, `${API_BASE}/api/qa/questions?author_id=${user.id}`, (q) =>
+      `<div class="community-list-item" onclick="location.hash='#/qa/${q.id}'">
+        <div class="title">${communityEscape(q.title)}</div>
+        <div class="meta">${communityFormatDate(q.created_at)} · ${q.status === 'answered' ? '已解答' : '待解答'}</div>
+      </div>`, '还没有提过问题');
+    return;
+  }
+
+  if (tab === 'topics') {
+    await communityLoadProfileList(content, `${API_BASE}/api/forum/topics?author_id=${user.id}`, (t) =>
+      `<div class="community-list-item" onclick="location.hash='#/forum/${t.id}'">
+        <div class="title"><span class="category-badge">${communityEscape(t.category)}</span>${communityEscape(t.title)}</div>
+        <div class="meta">${communityFormatDate(t.created_at)} · ${t.reply_count} 条回复</div>
+      </div>`, '还没有发过帖子');
+    return;
+  }
+
+  if (tab === 'posts') {
+    try {
+      const res = await fetch(`${API_BASE}/api/blog/posts/mine`, { headers: communityAuthHeaders() });
+      if (!res.ok) throw new Error('加载失败');
+      const data = await res.json();
+      content.className = '';
+      content.innerHTML = data.items.length ? data.items.map(p => `
+        <div class="community-list-item" onclick="location.hash='#/blog/${p.slug}'">
+          <div class="title">${communityEscape(p.title)} ${p.status === 'draft' ? '<span class="category-badge" style="background:#eda10022;color:#b8860b">草稿</span>' : ''}</div>
+          <div class="meta">${communityFormatDate(p.published_at || p.created_at)}</div>
+        </div>`).join('') : '<div class="community-empty">还没有写过文章</div>';
+    } catch (e) {
+      content.className = 'error-msg';
+      content.textContent = e.message;
+    }
+    return;
+  }
+
+  if (tab === 'bookmarks') {
+    try {
+      const res = await fetch(`${API_BASE}/api/bookmarks`, { headers: communityAuthHeaders() });
+      if (!res.ok) throw new Error('加载失败');
+      const data = await res.json();
+      if (!data.items.length) {
+        content.className = '';
+        content.innerHTML = '<div class="community-empty">还没有收藏任何内容</div>';
+        return;
+      }
+      const resolved = await Promise.all(data.items.map(async (b) => {
+        try {
+          if (b.content_type === 'question') {
+            const r = await fetch(`${API_BASE}/api/qa/questions/${b.content_id}`);
+            const q = await r.json();
+            return { icon: '❓', title: q.title, hash: '#/qa/' + q.id };
+          } else if (b.content_type === 'forum_topic') {
+            const r = await fetch(`${API_BASE}/api/forum/topics/${b.content_id}`);
+            const t = await r.json();
+            return { icon: '🧵', title: t.title, hash: '#/forum/' + t.id };
+          } else if (b.content_type === 'blog_post') {
+            const r = await fetch(`${API_BASE}/api/blog/posts/by-id/${b.content_id}`);
+            const p = await r.json();
+            return { icon: '📝', title: p.title, hash: '#/blog/' + p.slug };
+          }
+        } catch (e) {
+          return null;
+        }
+      }));
+      content.className = '';
+      content.innerHTML = resolved.filter(Boolean).map(r => `
+        <div class="community-list-item" onclick="location.hash='${r.hash}'">
+          <div class="title">${r.icon} ${communityEscape(r.title)}</div>
+        </div>`).join('') || '<div class="community-empty">收藏的内容可能已被删除</div>';
+    } catch (e) {
+      content.className = 'error-msg';
+      content.textContent = e.message;
+    }
+    return;
+  }
+}
+
+async function communityLoadProfileList(content, url, renderItem, emptyText) {
+  try {
+    const res = await fetch(url, { headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('加载失败');
+    const data = await res.json();
+    content.className = '';
+    content.innerHTML = data.items.length ? data.items.map(renderItem).join('') : `<div class="community-empty">${emptyText}</div>`;
+  } catch (e) {
+    content.className = 'error-msg';
+    content.textContent = e.message;
+  }
+}
+
+async function communitySaveProfileBasics() {
+  const display_name = document.getElementById('profile-display-name').value.trim();
+  const email = document.getElementById('profile-email').value.trim();
+  try {
+    const res = await fetch(`${API_BASE}/api/auth/me`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ display_name, email }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+    await communityFetchCurrentUser(true);
+    alert('已保存');
+    renderProfile();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communitySavePassword() {
+  const current_password = document.getElementById('profile-current-password').value;
+  const new_password = document.getElementById('profile-new-password').value;
+  if (!current_password || !new_password) { alert('请填写当前密码和新密码'); return; }
+  try {
+    const res = await fetch(`${API_BASE}/api/auth/me`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ current_password, new_password }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '修改失败');
+    alert('密码已修改');
+    document.getElementById('profile-current-password').value = '';
+    document.getElementById('profile-new-password').value = '';
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
 
 // Start
 init();
