@@ -2866,6 +2866,33 @@ function communityEscape(str) {
   return div.innerHTML;
 }
 
+// Azure 后端为省钱设置了 --min-replicas 0，闲置一段时间后会缩容到零；
+// 冷启动（重新拉起容器 + 从 Blob 恢复数据库）可能需要十几到几十秒。
+// 这里给一个更友好的等待提示，并给请求加超时保护，避免看起来像卡死。
+function communityShowSlowHint(elementId, delayMs = 4000) {
+  return setTimeout(() => {
+    const el = document.getElementById(elementId);
+    if (el) el.innerHTML = '<div class="spinner"></div><div>加载中…首次访问可能需要等待后端唤醒，最长约 30 秒，请耐心等待</div>';
+  }, delayMs);
+}
+
+async function communityFetchWithTimeout(url, opts = {}, timeoutMs = 45000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...opts, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function communityTimeoutMessage(e) {
+  if (e.name === 'AbortError') {
+    return '请求超时——后端可能仍在冷启动，请等待约 30 秒后刷新页面重试';
+  }
+  return `加载失败: ${e.message}`;
+}
+
 // --- Q&A ---
 async function renderQAHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
@@ -2878,8 +2905,10 @@ async function renderQAHome() {
   html += `<div id="qa-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('qa-list');
   try {
-    const res = await fetch(`${API_BASE}/api/qa/questions`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/qa/questions`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('qa-list');
@@ -2893,7 +2922,8 @@ async function renderQAHome() {
         <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)} · ${q.status === 'answered' ? '已解答' : '待解答'}</div>
       </div>`).join('');
   } catch (e) {
-    document.getElementById('qa-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md）</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('qa-list').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -2920,8 +2950,10 @@ async function renderQADetail(id) {
   html += `<div id="qa-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('qa-detail');
   try {
-    const res = await fetch(`${API_BASE}/api/qa/questions/${id}`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/qa/questions/${id}`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('问题不存在或接口暂不可用');
     const q = await res.json();
     let detail = `<div class="community-post">
@@ -2940,7 +2972,8 @@ async function renderQADetail(id) {
     </div></div>`;
     document.getElementById('qa-detail').outerHTML = detail;
   } catch (e) {
-    document.getElementById('qa-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('qa-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -2974,8 +3007,10 @@ async function renderForumHome() {
   html += `<div id="forum-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('forum-list');
   try {
-    const res = await fetch(`${API_BASE}/api/forum/topics`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/forum/topics`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('forum-list');
@@ -2989,7 +3024,8 @@ async function renderForumHome() {
         <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
       </div>`).join('');
   } catch (e) {
-    document.getElementById('forum-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md）</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('forum-list').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -3017,8 +3053,10 @@ async function renderForumDetail(id) {
   html += `<div id="forum-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('forum-detail');
   try {
-    const res = await fetch(`${API_BASE}/api/forum/topics/${id}`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/forum/topics/${id}`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('帖子不存在或接口暂不可用');
     const t = await res.json();
     let detail = `<div class="community-post">
@@ -3037,7 +3075,8 @@ async function renderForumDetail(id) {
     </div></div>`;
     document.getElementById('forum-detail').outerHTML = detail;
   } catch (e) {
-    document.getElementById('forum-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('forum-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -3065,8 +3104,10 @@ async function renderBlogHome() {
   html += `<div id="blog-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('blog-list');
   try {
-    const res = await fetch(`${API_BASE}/api/blog/posts`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('blog-list');
@@ -3080,7 +3121,8 @@ async function renderBlogHome() {
         <div class="meta">${communityEscape(p.author.display_name)} · ${communityFormatDate(p.published_at || p.created_at)}</div>
       </div>`).join('');
   } catch (e) {
-    document.getElementById('blog-list').outerHTML = `<div class="error-msg">加载失败: ${e.message}（后端服务可能尚未部署，参见 azure/README.md。发布博客文章需通过 API 或后台以 editor/admin 角色创建）</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('blog-list').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -3089,8 +3131,10 @@ async function renderBlogDetail(slug) {
   html += `<div id="blog-detail" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  const slowHint = communityShowSlowHint('blog-detail');
   try {
-    const res = await fetch(`${API_BASE}/api/blog/posts/${slug}`);
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/blog/posts/${slug}`);
+    clearTimeout(slowHint);
     if (!res.ok) throw new Error('文章不存在或接口暂不可用');
     const p = await res.json();
     const detail = `<div class="community-post">
@@ -3100,7 +3144,8 @@ async function renderBlogDetail(slug) {
     </div>`;
     document.getElementById('blog-detail').outerHTML = detail;
   } catch (e) {
-    document.getElementById('blog-detail').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+    clearTimeout(slowHint);
+    document.getElementById('blog-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
