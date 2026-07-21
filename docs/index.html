@@ -21,6 +21,14 @@
   --radius: 10px;
   --pali-color: #9a8a70;
   --toolbar-bg: #f0ebe3;
+  --l1: #a33b2e; --l1-bg: #fbeeec;
+  --l2: #c07a2e; --l2-bg: #fcf1e6;
+  --l3: #4a7c4e; --l3-bg: #eef4ee;
+  --l4: #2f8a7a; --l4-bg: #e9f5f2;
+  --l5: #3f6fa3; --l5-bg: #eaf1f8;
+  --l6: #7c5aa3; --l6-bg: #f2eef8;
+  --l7: #8a4d7e; --l7-bg: #f6eef4;
+  --l8: #a8783a; --l8-bg: #f9f1e6;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
@@ -617,6 +625,105 @@ a:hover { text-decoration: underline; }
 .papanca-pali-term { font-weight: 600; font-style: italic; color: var(--accent); font-size: 0.95em; }
 .papanca-term-note { font-size: 0.9em; line-height: 1.6; color: var(--text-light); }
 
+/* === 法义溯源 Dhamma Lineage === */
+.site-nav { display: flex; justify-content: center; gap: 22px; margin-top: 14px; font-size: 0.92em; flex-wrap: wrap; }
+.site-nav a { color: var(--text-light); }
+.site-nav a.active, .site-nav a:hover { color: var(--accent); }
+
+.dhamma-searchbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 24px 0 8px; }
+.dhamma-searchbar input {
+  flex: 1; min-width: 220px; padding: 11px 16px; border: 1px solid var(--border);
+  border-radius: 999px; font-size: 1em; font-family: inherit; background: var(--card-bg);
+}
+.dhamma-mode-toggle { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; flex-shrink: 0; }
+.dhamma-mode-toggle button {
+  padding: 10px 16px; border: none; background: var(--card-bg); color: var(--text-light);
+  cursor: pointer; font-family: inherit; font-size: 0.88em; white-space: nowrap;
+}
+.dhamma-mode-toggle button.active { background: var(--accent); color: #fff; }
+.dhamma-submode-row { display: flex; align-items: center; gap: 10px; margin: 6px 0 18px; font-size: 0.85em; color: var(--text-light); }
+.dhamma-submode-row .dhamma-mode-toggle button { padding: 6px 12px; font-size: 0.85em; }
+.dhamma-badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.78em; background: var(--accent-bg); color: var(--accent); }
+
+.dhamma-layers { display: flex; flex-direction: column; gap: 14px; margin: 24px 0; }
+.dhamma-band { display: flex; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--card-bg); }
+.dhamma-band-label {
+  flex: 0 0 128px; color: #fff; padding: 16px 10px; display: flex; flex-direction: column;
+  justify-content: center; text-align: center; font-weight: 700; gap: 3px;
+}
+.dhamma-band-label .n { font-size: 0.9em; opacity: 0.92; }
+.dhamma-band-label .s { font-size: 1.05em; }
+.dhamma-band-body { flex: 1; padding: 16px 20px; }
+.dhamma-band-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.dhamma-band-head .count { font-size: 0.85em; color: var(--text-light); }
+.dhamma-band-tagline { color: var(--text-light); font-size: 0.88em; margin: 0; }
+.dhamma-band-empty { color: var(--text-light); font-size: 0.9em; }
+.dhamma-cardgroup-label { font-size: 0.8em; color: var(--text-light); margin: 10px 0 5px; font-weight: 700; }
+.dhamma-cardgroup-label:first-child { margin-top: 0; }
+.dhamma-cards { display: flex; flex-wrap: wrap; gap: 8px; }
+.dhamma-card-pair { display: flex; gap: 8px; border: 1px dashed var(--border); border-radius: 8px; padding: 6px; }
+.dhamma-card {
+  border: 1px solid var(--border); border-radius: 8px; padding: 9px 13px; background: var(--hover-bg);
+  cursor: pointer; font-size: 0.9em; display: flex; flex-direction: column; align-items: center;
+  gap: 3px; min-width: 90px; text-align: center; transition: all 0.15s;
+}
+.dhamma-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent-light); }
+.dhamma-card .count { font-size: 0.75em; color: var(--text-light); }
+.dhamma-card.other { opacity: 0.82; font-style: italic; }
+.dhamma-card.empty { opacity: 0.4; cursor: default; }
+.dhamma-card.empty:hover { transform: none; box-shadow: none; }
+.dhamma-early-link { margin-top: 8px; }
+.dhamma-early-link a { font-size: 0.85em; }
+
+.dhamma-drilldown { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px; }
+.dhamma-drilldown h5 { margin: 0 0 8px; font-size: 0.95em; color: var(--text); }
+.dhamma-drilldown .text-list { columns: 2 220px; list-style: none; margin: 0; padding: 0; }
+.dhamma-drilldown .text-list li { padding: 3px 0; break-inside: avoid; }
+.dhamma-drilldown-close { float: right; background: none; border: none; color: var(--text-light); cursor: pointer; font-size: 0.85em; }
+
+.dhamma-results-heading { font-size: 1.05em; margin: 20px 0 12px; color: var(--text); }
+
+.dhamma-ai-synthesis {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px 24px; box-shadow: var(--shadow); margin-bottom: 20px; line-height: 1.85;
+}
+.dhamma-ai-synthesis h3, .dhamma-ai-synthesis h4, .dhamma-ai-synthesis h5 { color: var(--accent); margin: 14px 0 6px; }
+.dhamma-ai-synthesis h3:first-child, .dhamma-ai-synthesis h4:first-child { margin-top: 0; }
+.dhamma-ai-synthesis p { margin: 8px 0; }
+.dhamma-ai-synthesis ul { margin: 6px 0; padding-left: 22px; }
+.dhamma-ai-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.82em; color: var(--text-light); margin-bottom: 10px; }
+
+.dhamma-layer-section { margin-bottom: 16px; }
+.dhamma-layer-section-head {
+  display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--bg-warm);
+  border-radius: 8px; cursor: pointer; font-weight: 700; color: var(--text);
+}
+.dhamma-layer-section-head .count { font-weight: 400; color: var(--text-light); font-size: 0.85em; }
+.dhamma-layer-section-body { display: none; padding: 10px 4px 4px; }
+.dhamma-layer-section.open .dhamma-layer-section-body { display: block; }
+.dhamma-hit-list { list-style: none; margin: 0; padding: 0; }
+.dhamma-hit-list li { padding: 10px 0; border-top: 1px solid var(--border); }
+.dhamma-hit-list li:first-child { border-top: none; }
+.dhamma-hit-list a.title { color: var(--accent); font-weight: 700; text-decoration: none; }
+.dhamma-hit-list a.title:hover { text-decoration: underline; }
+.dhamma-hit-list .meta { color: var(--text-light); font-size: 0.8em; margin-left: 8px; }
+.dhamma-hit-list .source-tag { display: inline-block; font-size: 0.72em; padding: 1px 7px; border-radius: 999px; margin-left: 6px; }
+.dhamma-hit-list .source-tag.ai { background: #e6f0fa; color: #2f6fa3; }
+.dhamma-hit-list .source-tag.keyword { background: #f0ebe3; color: var(--text-light); }
+.dhamma-hit-list mark.snippet {
+  display: block; background: var(--accent-bg); color: var(--text); font-size: 0.88em; margin-top: 6px;
+  padding: 8px 12px; border-left: 3px solid var(--accent); border-radius: 3px; line-height: 1.6;
+}
+.dhamma-hit-list .hl { background: #fce9a8; color: inherit; padding: 0 1px; border-radius: 2px; }
+.dhamma-empty-note { color: var(--text-light); font-size: 0.88em; padding: 8px 0; }
+
+/* Reader */
+.dhamma-reader-meta { color: var(--text-light); font-size: 0.9em; margin-bottom: 4px; }
+.dhamma-reader-juan { color: var(--accent); font-size: 1.05em; margin: 22px 0 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+.dhamma-reader-para { line-height: 2; font-size: 1.02em; margin-bottom: 10px; }
+.dhamma-reader-para mark { background: #fce9a8; padding: 1px 2px; border-radius: 2px; }
+.dhamma-reader-toolbar { display: flex; gap: 10px; margin-bottom: 12px; }
+
 /* Mobile */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
@@ -626,6 +733,10 @@ a:hover { text-decoration: underline; }
   .sutta-table td:first-child { white-space: normal; }
   .site-header h1 { font-size: 1.4em; }
   .container { padding: 14px; }
+  .dhamma-band { flex-direction: column; }
+  .dhamma-band-label { flex-direction: row; justify-content: center; gap: 8px; padding: 10px; }
+  .dhamma-searchbar { flex-direction: column; align-items: stretch; }
+  .dhamma-drilldown .text-list { columns: 1; }
 }
 </style>
 </head>
@@ -634,6 +745,14 @@ a:hover { text-decoration: underline; }
 <div class="site-header">
   <h1>☸ 巴利语三藏学习指南</h1>
   <div class="subtitle">Pāli Canon Study Guide &mdash; SuttaCentral</div>
+  <div class="site-nav">
+    <a href="#/dhamma">🧬 法义溯源</a>
+    <a href="#/">首页</a>
+    <a href="#/qa">问答</a>
+    <a href="#/forum">论坛</a>
+    <a href="#/blog">博客</a>
+    <a href="#/profile">个人</a>
+  </div>
 </div>
 
 <div class="container" id="app"></div>
@@ -800,6 +919,13 @@ function route() {
     renderBlogDetail(hash.slice('#/blog/'.length));
   } else if (hash === '#/profile') {
     renderProfile();
+  } else if (hash.startsWith('#/dhamma/read/')) {
+    const rest = hash.slice('#/dhamma/read/'.length);
+    const [id, query] = rest.split('?');
+    const p = new URLSearchParams(query || '');
+    renderDhammaReader(decodeURIComponent(id), p.has('off') ? parseInt(p.get('off'), 10) : null, p.has('len') ? parseInt(p.get('len'), 10) : 1);
+  } else if (hash === '#/dhamma') {
+    renderDhammaHome();
   } else {
     renderHome();
   }
@@ -822,7 +948,14 @@ function findSutta(uid) {
 // === HOME VIEW ===
 function renderHome() {
   const cats = DATA.categories;
-  let html = '<div class="cards">';
+  let html = `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
+    <span class="icon">🧬</span>
+    <div>
+      <div class="research-card-title">法义溯源 · Dhamma Lineage</div>
+      <div class="research-card-sub">沿思想史八层结构浏览汉文大藏经全文，AI 语义综合溯源 / 关键词精确命中</div>
+    </div>
+  </div>`;
+  html += '<div class="cards">';
   for (const [key, cat] of Object.entries(cats)) {
     html += `<div class="card" onclick="location.hash='#/category/${key}'">
       <span class="icon">${cat.icon}</span>
@@ -3969,6 +4102,782 @@ async function communitySavePassword() {
   }
 }
 
+// ============================================================
+// === 法义溯源 Dhamma Lineage ===
+// dhamma-lineage (github.com/Bayson-create/dhamma-lineage) is now purely
+// a data source: its corpus index, per-document plain text, and bigram
+// search index are fetched cross-origin (GitHub Pages sends
+// Access-Control-Allow-Origin: *) rather than duplicated into this repo.
+// All page logic lives here so browsing, both search modes, and the
+// reader share one route table, one auth session and one visual design
+// with the rest of the site.
+// ============================================================
+
+const DHAMMA_DATA_BASE = 'https://bayson-create.github.io/dhamma-lineage';
+const DHAMMA_LAYER_NAMES = {
+  1: '第1层 · 巴利经律、阿含', 2: '第2层 · 巴利注疏、复注', 3: '第3层 · 部派阿毘达磨',
+  4: '第4层 · 部派体系论', 5: '第5层 · 大乘经典及基础体系论', 6: '第6层 · 成熟体系论',
+  7: '第7层 · 哲学体系与宗派体系', 8: '第8层 · 现代法师',
+};
+const DHAMMA_LAYER_ORDER = [1, 2, 3, 4, 5, 6, 7, 8];
+const DHAMMA_LAYER_TAGLINES = {
+  1: '佛陀亲说，最原始的教法记录', 2: '对早期经典的注释与复注，阐释经义', 8: '依止前人教法，弘扬佛法，利益众生',
+};
+
+let dhammaIndex = null, dhammaIndexById = null, dhammaLayerCards = null;
+let dhammaMode = 'browse';       // 'browse' | 'search-normal' | 'search-trace'
+let dhammaTraceMode = 'ai';      // 'ai' | 'keyword'
+let dhammaSearchSeq = 0;
+
+async function ensureDhammaData() {
+  if (dhammaIndex) return;
+  const [idxRes, cardsRes] = await Promise.all([
+    fetch(`${DHAMMA_DATA_BASE}/data/index.json`),
+    fetch(`${DHAMMA_DATA_BASE}/data/layer_cards.json`),
+  ]);
+  dhammaIndex = await idxRes.json();
+  dhammaIndexById = new Map(dhammaIndex.map(r => [r.id, r]));
+  dhammaLayerCards = await cardsRes.json();
+}
+
+// --- ported from dhamma-lineage/site/doctext.js ---
+function dhammaParseFulltext(raw) {
+  const paragraphs = [];
+  let offset = 0;
+  for (const line of raw.split('\n')) {
+    if (!line) continue;
+    const tab = line.indexOf('\t');
+    const juan = tab === -1 ? '' : line.slice(0, tab);
+    const text = tab === -1 ? line : line.slice(tab + 1);
+    if (!text) continue;
+    paragraphs.push({ juan, text, offset });
+    offset += text.length;
+  }
+  return paragraphs;
+}
+function dhammaFullTextOf(paragraphs) { return paragraphs.map(p => p.text).join(''); }
+function dhammaParagraphAtOffset(paragraphs, offset) {
+  let lo = 0, hi = paragraphs.length - 1, ans = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (paragraphs[mid].offset <= offset) { ans = mid; lo = mid + 1; } else { hi = mid - 1; }
+  }
+  return ans;
+}
+
+// --- ported from dhamma-lineage/site/collapsible.js ---
+const DHAMMA_COLLAPSE_THRESHOLD = 5;
+let dhammaClxCounter = 0;
+function dhammaCollapsibleItems(items, threshold = DHAMMA_COLLAPSE_THRESHOLD, unit = '项') {
+  if (items.length <= threshold) return items.join('');
+  const groupId = `dclx-${++dhammaClxCounter}`;
+  const visible = items.slice(0, threshold).join('');
+  const remaining = items.length - threshold;
+  const hidden = items.slice(threshold).map(li => li.replace(/^<li/, `<li hidden data-dclx-group="${groupId}"`)).join('');
+  return visible + hidden + `<li class="dclx-toggle-row"><button type="button" class="dclx-toggle" data-group="${groupId}" data-remaining="${remaining}" data-total="${items.length}" data-unit="${unit}">展开其余 ${remaining} ${unit}（共 ${items.length}）</button></li>`;
+}
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.dclx-toggle');
+  if (!btn) return;
+  const items = document.querySelectorAll(`[data-dclx-group="${btn.dataset.group}"]`);
+  const opening = items.length > 0 && items[0].hidden;
+  items.forEach(el => (el.hidden = !opening));
+  btn.textContent = opening ? '收起' : `展开其余 ${btn.dataset.remaining} ${btn.dataset.unit}（共 ${btn.dataset.total}）`;
+});
+
+// --- ported from dhamma-lineage/site/fulltext-search.js (bigram inverted index) ---
+let dhammaManifest = null, dhammaDocIds = null;
+const DHAMMA_MAX_MATCHES = 40;
+async function dhammaEnsureManifest() {
+  if (!dhammaManifest) {
+    dhammaManifest = await (await fetch(`${DHAMMA_DATA_BASE}/data/search_index/manifest.json`)).json();
+    dhammaDocIds = await (await fetch(`${DHAMMA_DATA_BASE}/data/search_index/doc_ids.json`)).json();
+  }
+}
+function dhammaNormalizeForSearch(text) {
+  const simplified = typeof toSimplified === 'function' ? toSimplified(text) : text;
+  return typeof toTraditional === 'function' ? toTraditional(simplified) : simplified;
+}
+const DHAMMA_CRC_TABLE = (() => {
+  const table = [];
+  for (let n = 0; n < 256; n++) {
+    let c = n;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+    table[n] = c >>> 0;
+  }
+  return table;
+})();
+function dhammaCrc32(str) {
+  const bytes = new TextEncoder().encode(str);
+  let crc = 0xffffffff;
+  for (const b of bytes) crc = DHAMMA_CRC_TABLE[(crc ^ b) & 0xff] ^ (crc >>> 8);
+  return (crc ^ 0xffffffff) >>> 0;
+}
+function dhammaBucketFor(bigram, buckets) { return ((dhammaCrc32(bigram) % buckets) + buckets) % buckets; }
+function dhammaBigramsOf(text) {
+  const out = [];
+  for (let i = 0; i < text.length - 1; i++) out.push(text.slice(i, i + 2));
+  if (out.length === 0 && text.length === 1) out.push(text);
+  return out;
+}
+const dhammaShardCache = new Map();
+async function dhammaLoadShard(fname) {
+  if (dhammaShardCache.has(fname)) return dhammaShardCache.get(fname);
+  const data = await (await fetch(`${DHAMMA_DATA_BASE}/data/search_index/${fname}`)).json();
+  dhammaShardCache.set(fname, data);
+  return data;
+}
+const dhammaDocCache = new Map();
+async function dhammaFetchDocRecord(docId) {
+  if (dhammaDocCache.has(docId)) return dhammaDocCache.get(docId);
+  const promise = (async () => {
+    const raw = await (await fetch(`${DHAMMA_DATA_BASE}/data/fulltext/${docId}.txt`)).text();
+    const paragraphs = dhammaParseFulltext(raw);
+    return { paragraphs, fullText: dhammaFullTextOf(paragraphs) };
+  })();
+  dhammaDocCache.set(docId, promise);
+  return promise;
+}
+function dhammaSnippetAround(text, offset, len) {
+  const start = Math.max(0, offset - 20);
+  const end = Math.min(text.length, offset + len + 20);
+  return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+}
+function dhammaBuildMatch(record, offset, len, term) {
+  const paraIndex = dhammaParagraphAtOffset(record.paragraphs, offset);
+  const juan = record.paragraphs[paraIndex] ? record.paragraphs[paraIndex].juan : '';
+  return { offset, juan, term, snippet: dhammaSnippetAround(record.fullText, offset, len) };
+}
+function dhammaIntersect(a, b) {
+  const [small, big] = a.size <= b.size ? [a, b] : [b, a];
+  const out = new Set();
+  for (const x of small) if (big.has(x)) out.add(x);
+  return out;
+}
+async function dhammaFullTextSearch(query, { limit = 200 } = {}) {
+  await dhammaEnsureManifest();
+  const q = dhammaNormalizeForSearch(query).trim();
+  if (q.length < 1) return [];
+  let candidateInts = null;
+  if (q.length === 1) {
+    candidateInts = new Set(dhammaDocIds.map((_, i) => i));
+  } else {
+    const grams = dhammaBigramsOf(q);
+    for (const bg of grams) {
+      const shard = await dhammaLoadShard(`shard_${String(dhammaBucketFor(bg, dhammaManifest.buckets)).padStart(3, '0')}.json`);
+      const ids = shard[bg];
+      if (!ids) continue;
+      const idSet = new Set(ids);
+      candidateInts = candidateInts === null ? idSet : dhammaIntersect(candidateInts, idSet);
+      if (candidateInts.size === 0) break;
+    }
+    if (candidateInts === null) {
+      candidateInts = new Set(dhammaDocIds.map((_, i) => i));
+      candidateInts.__unindexedFallback = true;
+    }
+  }
+  const candidateArray = Array.from(candidateInts);
+  const capped = candidateInts.__unindexedFallback && candidateArray.length > 1200;
+  const toScan = capped ? candidateArray.slice(0, 1200) : candidateArray;
+  const results = [];
+  let cursor = 0;
+  async function worker() {
+    while (cursor < toScan.length && results.length < limit) {
+      const intId = toScan[cursor++];
+      const docId = dhammaDocIds[intId];
+      const record = await dhammaFetchDocRecord(docId);
+      const matches = [];
+      let from = 0;
+      while (matches.length < DHAMMA_MAX_MATCHES) {
+        const idx = record.fullText.indexOf(q, from);
+        if (idx === -1) break;
+        matches.push(dhammaBuildMatch(record, idx, q.length, q));
+        from = idx + q.length;
+      }
+      if (matches.length === 0) continue;
+      const truncated = record.fullText.indexOf(q, from) !== -1;
+      results.push({ docId, relevance: 1, matches, truncated });
+    }
+  }
+  await Promise.all(Array.from({ length: 16 }, worker));
+  if (capped) results.truncatedScan = true;
+  return results;
+}
+const DHAMMA_PUNCT_RE = /[\s,.，。！？；：、""''《》〈〉「」『』（）()\[\]—…·\-~,!?;:]+/;
+function dhammaSegmentQuery(query) { return query.split(DHAMMA_PUNCT_RE).filter(Boolean); }
+function dhammaQueryBigrams(query) {
+  const grams = new Set();
+  for (const seg of dhammaSegmentQuery(query)) {
+    if (seg.length === 1) { grams.add(seg); continue; }
+    for (let i = 0; i < seg.length - 1; i++) grams.add(seg.slice(i, i + 2));
+  }
+  return Array.from(grams);
+}
+async function dhammaFuzzySentenceSearch(query, { limit = 60 } = {}) {
+  await dhammaEnsureManifest();
+  const norm = dhammaNormalizeForSearch(query).trim();
+  if (!norm) return [];
+  const grams = dhammaQueryBigrams(norm);
+  if (grams.length === 0) return [];
+  const scores = new Map();
+  let effectiveN = 0;
+  const informativeGrams = [];
+  for (const bg of grams) {
+    if (bg.length < 2) continue;
+    const shard = await dhammaLoadShard(`shard_${String(dhammaBucketFor(bg, dhammaManifest.buckets)).padStart(3, '0')}.json`);
+    const ids = shard[bg];
+    if (!ids) continue;
+    effectiveN++;
+    informativeGrams.push(bg);
+    for (const id of ids) scores.set(id, (scores.get(id) || 0) + 1);
+  }
+  if (effectiveN === 0) {
+    const err = new Error('query has no bigram informative enough to search on');
+    err.code = 'NO_INFORMATIVE_TERMS';
+    throw err;
+  }
+  const ranked = Array.from(scores.entries()).map(([intId, count]) => ({ intId, count, relevance: count / effectiveN }))
+    .sort((a, b) => b.count - a.count).slice(0, limit);
+  const results = [];
+  let cursor = 0;
+  async function worker() {
+    while (cursor < ranked.length) {
+      const item = ranked[cursor++];
+      const docId = dhammaDocIds[item.intId];
+      const record = await dhammaFetchDocRecord(docId);
+      const matches = [];
+      for (const bg of informativeGrams) {
+        if (matches.length >= DHAMMA_MAX_MATCHES) break;
+        let from = 0;
+        while (matches.length < DHAMMA_MAX_MATCHES) {
+          const idx = record.fullText.indexOf(bg, from);
+          if (idx === -1) break;
+          matches.push(dhammaBuildMatch(record, idx, bg.length, bg));
+          from = idx + bg.length;
+        }
+      }
+      matches.sort((a, b) => a.offset - b.offset);
+      results.push({ docId, score: item.count, relevance: item.relevance, matches, truncated: matches.length >= DHAMMA_MAX_MATCHES });
+    }
+  }
+  await Promise.all(Array.from({ length: 12 }, worker));
+  results.sort((a, b) => b.score - a.score);
+  results.effectiveGramCount = effectiveN;
+  return results;
+}
+
+function dhammaEscapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function dhammaHighlightTerm(snippet, term) {
+  const escSnippet = dhammaEscapeHtml(snippet), escTerm = dhammaEscapeHtml(term);
+  const idx = escSnippet.indexOf(escTerm);
+  if (idx === -1) return escSnippet;
+  return escSnippet.slice(0, idx) + `<b class="hl">${escTerm}</b>` + escSnippet.slice(idx + escTerm.length);
+}
+
+// === Homepage: browse (layer cards) + search mode toggle ===
+async function renderDhammaHome() {
+  app.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:40px;">加载藏经目录中…</p>';
+  await ensureDhammaData();
+  dhammaRenderShell();
+}
+
+function dhammaRenderShell(preserveQuery) {
+  const q = preserveQuery !== undefined ? preserveQuery : (document.getElementById('dhammaSearchInput') ? document.getElementById('dhammaSearchInput').value : '');
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>🧬 法义溯源</h2><div class="cat-en">Dhamma Lineage — 沿思想史八层结构浏览汉文大藏经</div></div>`;
+  html += `<div class="dhamma-searchbar">
+    <input id="dhammaSearchInput" type="text" placeholder="按经名/作者检索，或输入一个观点做法义溯源…" value="${dhammaEscapeHtml(q)}">
+    <div class="dhamma-mode-toggle">
+      <button type="button" data-mode="search-normal" class="${dhammaMode === 'search-normal' ? 'active' : ''}">普通搜索</button>
+      <button type="button" data-mode="search-trace" class="${dhammaMode === 'search-trace' ? 'active' : ''}">法义溯源搜索</button>
+    </div>
+  </div>`;
+  if (dhammaMode === 'search-trace') {
+    html += `<div class="dhamma-submode-row">
+      <span>模式：</span>
+      <div class="dhamma-mode-toggle">
+        <button type="button" data-trace-mode="ai" class="${dhammaTraceMode === 'ai' ? 'active' : ''}">🤖 AI 语义综合（默认）</button>
+        <button type="button" data-trace-mode="keyword" class="${dhammaTraceMode === 'keyword' ? 'active' : ''}">🔤 关键词命中</button>
+      </div>
+      <span class="dhamma-badge">当前：${dhammaTraceMode === 'ai' ? 'AI RAG' : '关键词精确/模糊命中'}</span>
+    </div>`;
+  }
+  html += `<div id="dhammaResults"></div>`;
+  html += `<div id="dhammaBrowse"></div>`;
+  app.innerHTML = html;
+
+  const input = document.getElementById('dhammaSearchInput');
+  input.addEventListener('input', dhammaDebounce(() => dhammaRunSearch(input.value), 350));
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') dhammaRunSearch(input.value); });
+  document.querySelectorAll('.dhamma-mode-toggle [data-mode]').forEach(btn => {
+    btn.addEventListener('click', () => { dhammaMode = btn.dataset.mode; dhammaRenderShell(input.value); if (input.value.trim()) dhammaRunSearch(input.value); });
+  });
+  document.querySelectorAll('.dhamma-mode-toggle [data-trace-mode]').forEach(btn => {
+    btn.addEventListener('click', () => { dhammaTraceMode = btn.dataset.traceMode; dhammaRenderShell(input.value); if (input.value.trim()) dhammaRunSearch(input.value); });
+  });
+
+  if (q.trim()) {
+    dhammaRunSearch(q);
+  } else {
+    dhammaRenderBrowse();
+  }
+}
+
+function dhammaDebounce(fn, ms) {
+  let t;
+  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+}
+
+function dhammaRunSearch(q) {
+  const results = document.getElementById('dhammaResults');
+  const browse = document.getElementById('dhammaBrowse');
+  if (!q.trim()) {
+    results.innerHTML = '';
+    dhammaRenderBrowse();
+    return;
+  }
+  browse.innerHTML = '';
+  if (dhammaMode === 'search-normal') {
+    dhammaRunNormalSearch(q);
+  } else if (dhammaMode === 'search-trace') {
+    if (dhammaTraceMode === 'ai') dhammaRunAiTrace(q);
+    else dhammaRunKeywordTrace(q);
+  } else {
+    results.innerHTML = '';
+    dhammaRenderBrowse();
+  }
+}
+
+// === Browse view: colored per-layer bands with curated cards ===
+function dhammaGroupByLayer(records) {
+  const groups = {};
+  for (const l of DHAMMA_LAYER_ORDER) groups[l] = [];
+  for (const r of records) if (DHAMMA_LAYER_ORDER.includes(r.layer)) groups[r.layer].push(r);
+  return groups;
+}
+function dhammaRenderCard(card, accentVar) {
+  const empty = card.count === 0;
+  const cls = ['dhamma-card', card.id === 'other' ? 'other' : '', empty ? 'empty' : ''].filter(Boolean).join(' ');
+  const el = document.createElement('div');
+  el.className = cls;
+  el.innerHTML = `<span>${card.label}</span><span class="count">${card.count} 篇</span>`;
+  if (!empty) el.addEventListener('click', () => dhammaToggleDrilldown(el, card));
+  return el;
+}
+function dhammaToggleDrilldown(cardEl, card) {
+  const body = cardEl.closest('.dhamma-band-body');
+  const existing = body.querySelector('.dhamma-drilldown');
+  const already = existing && existing.dataset.cardId === card.id;
+  if (existing) existing.remove();
+  if (already) return;
+  const panel = document.createElement('div');
+  panel.className = 'dhamma-drilldown';
+  panel.dataset.cardId = card.id;
+  const items = card.ids.map(id => dhammaIndexById.get(id)).filter(Boolean)
+    .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'zh-Hans-CN'));
+  const listHtml = items.map(r => `<li><a href="#/dhamma/read/${encodeURIComponent(r.id)}">${dhammaEscapeHtml(r.title || r.id)}</a></li>`).join('');
+  panel.innerHTML = `<button class="dhamma-drilldown-close">收起 ✕</button><h5>${card.label}（${items.length} 篇）</h5><ul class="text-list">${listHtml}</ul>`;
+  panel.querySelector('.dhamma-drilldown-close').addEventListener('click', () => panel.remove());
+  body.appendChild(panel);
+}
+const DHAMMA_LAYER4_ORDER = ['visuddhimagga', 'vimuttimagga', 'abhidhammattha', 'mahavibhasa', 'kosa', 'nyayanusara', 'other'];
+const DHAMMA_PAIRED_IDS = new Set(['madhyamaka_base', 'mahaprajnaparamita_sastra']);
+function dhammaRenderLayerCards(layer) {
+  let cards = dhammaLayerCards[String(layer)];
+  if (!cards) return null;
+  if (layer === 4) {
+    const byId = Object.fromEntries(cards.map(c => [c.id, c]));
+    cards = DHAMMA_LAYER4_ORDER.map(id => byId[id]).filter(Boolean);
+  }
+  const wrap = document.createElement('div');
+  const groups = new Map();
+  for (const c of cards) {
+    const key = c.group || '__default__';
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(c);
+  }
+  for (const [groupLabel, groupCards] of groups) {
+    if (groupLabel !== '__default__') {
+      const label = document.createElement('div');
+      label.className = 'dhamma-cardgroup-label';
+      label.textContent = groupLabel;
+      wrap.appendChild(label);
+    }
+    const row = document.createElement('div');
+    row.className = 'dhamma-cards';
+    let i = 0;
+    while (i < groupCards.length) {
+      const c = groupCards[i];
+      if (DHAMMA_PAIRED_IDS.has(c.id) && i + 1 < groupCards.length && DHAMMA_PAIRED_IDS.has(groupCards[i + 1].id)) {
+        const pair = document.createElement('div');
+        pair.className = 'dhamma-card-pair';
+        pair.appendChild(dhammaRenderCard(c));
+        pair.appendChild(dhammaRenderCard(groupCards[i + 1]));
+        row.appendChild(pair);
+        i += 2;
+      } else {
+        row.appendChild(dhammaRenderCard(c));
+        i += 1;
+      }
+    }
+    wrap.appendChild(row);
+  }
+  return wrap;
+}
+function dhammaRenderBrowse() {
+  const main = document.getElementById('dhammaBrowse');
+  if (!main) return;
+  main.innerHTML = '';
+  main.className = 'dhamma-layers';
+  const groups = dhammaGroupByLayer(dhammaIndex);
+  for (const layer of DHAMMA_LAYER_ORDER) {
+    const items = groups[layer];
+    const band = document.createElement('div');
+    band.className = 'dhamma-band';
+    const label = document.createElement('div');
+    label.className = 'dhamma-band-label';
+    label.style.background = `var(--l${layer})`;
+    const [num, short] = (DHAMMA_LAYER_NAMES[layer] || '').split(' · ');
+    label.innerHTML = `<span class="n">${num}</span><span class="s">${short || ''}</span>`;
+    band.appendChild(label);
+    const body = document.createElement('div');
+    body.className = 'dhamma-band-body';
+    body.style.background = `var(--l${layer}-bg)`;
+    const head = document.createElement('div');
+    head.className = 'dhamma-band-head';
+    head.innerHTML = `<span class="count">${items.length} 篇</span>`;
+    if (DHAMMA_LAYER_TAGLINES[layer]) {
+      const tag = document.createElement('p');
+      tag.className = 'dhamma-band-tagline';
+      tag.textContent = DHAMMA_LAYER_TAGLINES[layer];
+      head.appendChild(tag);
+    }
+    body.appendChild(head);
+    if (items.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'dhamma-band-empty';
+      empty.textContent = '（空白 — 当前语料中未检索到归属此层的文本）';
+      body.appendChild(empty);
+    } else {
+      const cardsEl = dhammaRenderLayerCards(layer);
+      if (cardsEl) {
+        body.appendChild(cardsEl);
+      } else {
+        const row = document.createElement('div');
+        row.className = 'dhamma-cards';
+        row.appendChild(dhammaRenderCard({ id: 'all', label: '浏览全部', count: items.length, ids: items.map(r => r.id) }));
+        body.appendChild(row);
+      }
+    }
+    if (layer === 1) {
+      const link = document.createElement('div');
+      link.className = 'dhamma-early-link';
+      link.innerHTML = `<a href="https://bayson-create.github.io/Early-Buddhist/" target="_blank" rel="noopener">→ 早期佛教研究站点 Early-Buddhist（另一站点，新窗口打开）</a>`;
+      body.appendChild(link);
+    }
+    band.appendChild(body);
+    main.appendChild(band);
+  }
+}
+
+// === 普通搜索 mode: title/author filter + full-text bigram search, merged one view ===
+async function dhammaRunNormalSearch(q) {
+  const mySeq = ++dhammaSearchSeq;
+  const results = document.getElementById('dhammaResults');
+  results.innerHTML = `<p class="dhamma-empty-note">检索"${dhammaEscapeHtml(q)}"中…</p>`;
+
+  const qTrad = typeof toTraditional === 'function' ? toTraditional(q) : q;
+  const titleMatches = dhammaIndex.filter(r => (r.title || '').includes(qTrad) || (r.author || '').includes(qTrad));
+
+  const useFuzzy = q.length > 6;
+  let ftResults = [];
+  let mode = useFuzzy ? 'fuzzy' : 'exact';
+  try {
+    ftResults = useFuzzy ? await dhammaFuzzySentenceSearch(q, { limit: 200 }) : await dhammaFullTextSearch(q, { limit: 200 });
+    if (!useFuzzy && ftResults.length === 0) { ftResults = await dhammaFuzzySentenceSearch(q, { limit: 200 }); mode = 'fuzzy'; }
+  } catch (err) {
+    if (err.code !== 'NO_INFORMATIVE_TERMS') { /* fall through with empty ftResults */ }
+  }
+  if (mySeq !== dhammaSearchSeq) return;
+
+  let html = '';
+  if (titleMatches.length > 0) {
+    html += `<h3 class="dhamma-results-heading">经名/作者匹配（${titleMatches.length}）</h3><ul class="dhamma-hit-list">`;
+    html += titleMatches.slice(0, 40).map(r => `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(r.id)}">${dhammaEscapeHtml(r.title || r.id)}</a><span class="meta">${dhammaEscapeHtml(r.author || '')}</span></li>`).join('');
+    html += '</ul>';
+  }
+
+  if (ftResults.length > 0) {
+    const modeLabel = mode === 'fuzzy' ? '模糊匹配（按关键词覆盖度排序）' : '精确匹配';
+    html += `<h3 class="dhamma-results-heading">正文检索结果（${ftResults.length} 篇命中，${modeLabel}）</h3>`;
+    const groups = dhammaGroupHitsByLayer(ftResults);
+    html += dhammaRenderHitLayerSections(groups, mode, 'keyword');
+  } else if (titleMatches.length === 0) {
+    html += `<p class="dhamma-empty-note">未检索到与"${dhammaEscapeHtml(q)}"相关的经名或正文内容。</p>`;
+  }
+  results.innerHTML = html;
+  dhammaWireLayerSections();
+}
+
+function dhammaGroupHitsByLayer(hitResults) {
+  const groups = {};
+  for (const l of DHAMMA_LAYER_ORDER) groups[l] = [];
+  groups[0] = [];
+  for (const item of hitResults) {
+    const rec = dhammaIndexById.get(item.docId);
+    if (!rec) continue;
+    const layer = DHAMMA_LAYER_ORDER.includes(rec.layer) ? rec.layer : 0;
+    groups[layer].push({ rec, item });
+  }
+  return groups;
+}
+
+function dhammaRenderHitLayerSections(groups, mode, sourceTag) {
+  let html = '';
+  for (const layer of [...DHAMMA_LAYER_ORDER, 0]) {
+    const items = groups[layer];
+    if (!items || items.length === 0) continue;
+    const label = layer === 0 ? '未归入八层 · 参考资料' : DHAMMA_LAYER_NAMES[layer];
+    const docLis = items.map(({ rec, item }) => {
+      const rel = mode === 'fuzzy' ? `<span class="meta">匹配度 ${Math.round(item.relevance * 100)}%</span>` : '';
+      const positionLis = item.matches.map(m => {
+        const href = `#/dhamma/read/${encodeURIComponent(rec.id)}?off=${m.offset}&len=${m.term.length}`;
+        return `<li><a href="${href}">${m.juan ? `卷${dhammaEscapeHtml(m.juan)} · ` : ''}${dhammaHighlightTerm(m.snippet, m.term)}</a></li>`;
+      });
+      const tag = `<span class="source-tag ${sourceTag}">${sourceTag === 'ai' ? 'AI语义' : '关键词'}</span>`;
+      return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(rec.title || rec.id)}</a>${tag}${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
+    });
+    html += `<div class="dhamma-layer-section open" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${label}</span><span class="count">${items.length} 篇</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(docLis, 5, '篇')}</ul></div></div>`;
+  }
+  return html;
+}
+
+function dhammaWireLayerSections() {
+  document.querySelectorAll('.dhamma-layer-section-head').forEach(head => {
+    head.addEventListener('click', () => head.closest('.dhamma-layer-section').classList.toggle('open'));
+  });
+}
+
+// === 法义溯源搜索 · 关键词命中 mode (client-side bigram trace, per-layer hit/blank) ===
+async function dhammaRunKeywordTrace(q) {
+  const mySeq = ++dhammaSearchSeq;
+  const results = document.getElementById('dhammaResults');
+  results.innerHTML = `<p class="dhamma-empty-note">正在逐层检索"${dhammaEscapeHtml(q)}"…</p>`;
+
+  const useFuzzy = q.length > 6;
+  const RELEVANCE_HIT = 0.5, RELEVANCE_SHOW = 0.34;
+  let hitResults;
+  try {
+    if (useFuzzy) {
+      hitResults = await dhammaFuzzySentenceSearch(q, { limit: 400 });
+    } else {
+      const exact = await dhammaFullTextSearch(q, { limit: 400 });
+      hitResults = exact.map(r => ({ ...r, relevance: 1 }));
+      if (hitResults.length === 0) hitResults = await dhammaFuzzySentenceSearch(q, { limit: 400 });
+    }
+  } catch (err) {
+    if (mySeq !== dhammaSearchSeq) return;
+    if (err.code === 'NO_INFORMATIVE_TERMS') {
+      results.innerHTML = `<p class="dhamma-empty-note">"${dhammaEscapeHtml(q)}"里没有可用于检索的常见词组，换个说法试试。</p>`;
+      return;
+    }
+    results.innerHTML = `<p class="dhamma-empty-note">检索出错：${dhammaEscapeHtml(String(err))}</p>`;
+    return;
+  }
+  if (mySeq !== dhammaSearchSeq) return;
+
+  const shown = hitResults.filter(r => r.relevance >= RELEVANCE_SHOW);
+  const groups = dhammaGroupHitsByLayer(shown);
+  const hitLayers = DHAMMA_LAYER_ORDER.filter(l => (groups[l] || []).some(({ item }) => item.relevance >= RELEVANCE_HIT));
+
+  let html = `<div class="dhamma-ai-meta"><span>关键词命中：字符双字组精确/模糊匹配，逐层展示，空白层级本身即是证据</span><span class="dhamma-badge">关键词命中模式</span></div>`;
+  html += `<p class="dhamma-results-heading">命中层级：${hitLayers.length ? hitLayers.map(l => '第' + l + '层').join('、') : '无'}；空白层级：${DHAMMA_LAYER_ORDER.filter(l => !hitLayers.includes(l)).map(l => '第' + l + '层').join('、') || '无'}</p>`;
+
+  for (const layer of DHAMMA_LAYER_ORDER) {
+    const items = (groups[layer] || []).sort((a, b) => b.item.relevance - a.item.relevance);
+    const isHit = items.some(({ item }) => item.relevance >= RELEVANCE_HIT);
+    html += `<div class="dhamma-layer-section ${isHit ? 'open' : ''}" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${DHAMMA_LAYER_NAMES[layer]}</span><span class="count">${isHit ? items.length + ' 篇命中' : '空白'}</span></div><div class="dhamma-layer-section-body">`;
+    if (!isHit) {
+      html += `<p class="dhamma-empty-note">此层未检索到与该表述充分相关的文字——空白本身就是一种证据：提示这个说法可能是后起的表达，而非承自这一层的固定术语。</p>`;
+    } else {
+      const docLis = items.map(({ rec, item }) => {
+        const rel = useFuzzy ? `<span class="meta">匹配度 ${Math.round(item.relevance * 100)}%</span>` : '';
+        const positionLis = item.matches.map(m => {
+          const href = `#/dhamma/read/${encodeURIComponent(rec.id)}?off=${m.offset}&len=${m.term.length}`;
+          return `<li><a href="${href}">${m.juan ? `卷${dhammaEscapeHtml(m.juan)} · ` : ''}${dhammaHighlightTerm(m.snippet, m.term)}</a></li>`;
+        });
+        return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(rec.title || rec.id)}</a><span class="source-tag keyword">关键词</span>${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
+      });
+      html += `<ul class="dhamma-hit-list">${dhammaCollapsibleItems(docLis, 5, '篇')}</ul>`;
+    }
+    html += `</div></div>`;
+  }
+  results.innerHTML = html;
+  dhammaWireLayerSections();
+}
+
+// === 法义溯源搜索 · AI RAG mode (backend /api/dhamma/trace) ===
+const dhammaFulltextCache = new Map();
+async function dhammaFetchFulltextParagraphs(id) {
+  if (dhammaFulltextCache.has(id)) return dhammaFulltextCache.get(id);
+  const p = fetch(`${DHAMMA_DATA_BASE}/data/fulltext/${encodeURIComponent(id)}.txt`)
+    .then(res => res.ok ? res.text() : null).then(raw => raw ? dhammaParseFulltext(raw) : null).catch(() => null);
+  dhammaFulltextCache.set(id, p);
+  return p;
+}
+function dhammaFindSnippetOffset(fullText, snippet) {
+  const stripped = snippet.replace(/\s+/g, '');
+  for (const cand of [snippet, stripped]) {
+    if (!cand) continue;
+    const idx = fullText.indexOf(cand);
+    if (idx !== -1) return { offset: idx, len: cand.length };
+  }
+  if (stripped.length > 40) {
+    const mid = stripped.slice(10, 40);
+    const idx = fullText.indexOf(mid);
+    if (idx !== -1) return { offset: idx, len: mid.length };
+  }
+  return null;
+}
+async function dhammaBuildHitHref(h) {
+  const base = h.dhamma_lineage_id ? `#/dhamma/read/${encodeURIComponent(h.dhamma_lineage_id)}` : h.cbeta_url;
+  if (!h.dhamma_lineage_id) return base;
+  const paragraphs = await dhammaFetchFulltextParagraphs(h.dhamma_lineage_id);
+  if (!paragraphs) return base;
+  const hit = dhammaFindSnippetOffset(dhammaFullTextOf(paragraphs), h.snippet);
+  if (!hit) return base;
+  return `${base}?off=${hit.offset}&len=${hit.len}`;
+}
+function dhammaRenderSynthesisMarkdown(text) {
+  const lines = dhammaEscapeHtml(text).split('\n');
+  let html = '', inList = false;
+  for (const line of lines) {
+    if (/^####\s+/.test(line)) { html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
+    if (/^###\s+/.test(line)) { html += `<h4>${line.replace(/^###\s+/, '')}</h4>`; continue; }
+    if (/^##\s+/.test(line)) { html += `<h3>${line.replace(/^##\s+/, '')}</h3>`; continue; }
+    if (/^\*\s+/.test(line) || /^-\s+/.test(line)) { if (!inList) { html += '<ul>'; inList = true; } html += `<li>${line.replace(/^[*-]\s+/, '')}</li>`; continue; }
+    if (inList) { html += '</ul>'; inList = false; }
+    if (line.trim() === '') continue;
+    html += `<p>${line}</p>`;
+  }
+  if (inList) html += '</ul>';
+  return html.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+}
+const DHAMMA_AI_LAYER_LABELS = Object.assign({}, DHAMMA_LAYER_NAMES, { found_but_unclassified: '已收录但未分层', unmatched: '未匹配到分层索引' });
+
+async function dhammaRunAiTrace(q) {
+  const mySeq = ++dhammaSearchSeq;
+  const results = document.getElementById('dhammaResults');
+  if (!communityToken()) {
+    results.innerHTML = `<p class="dhamma-empty-note">AI 语义综合溯源需要登录。<a href="#/profile">前往登录</a>，或切换到"关键词命中"模式无需登录即可使用。</p>`;
+    return;
+  }
+  results.innerHTML = `<p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒…</p>`;
+  let data;
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/trace?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
+    if (!res.ok) {
+      let detail = `请求失败（HTTP ${res.status}）`;
+      try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
+      const e = new Error(detail); e.status = res.status; throw e;
+    }
+    data = await res.json();
+  } catch (err) {
+    if (mySeq !== dhammaSearchSeq) return;
+    if (err.status === 402) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
+    else if (err.status === 429) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
+    else if (err.status === 401) results.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
+    else results.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
+    return;
+  }
+  if (mySeq !== dhammaSearchSeq) return;
+
+  let html = `<div class="dhamma-ai-meta"><span>${data.from_cache ? '命中缓存，本次未消耗额度' : `本次消耗 ¥${data.charged_rmb.toFixed(4)}${data.remaining_balance_rmb !== null ? `，剩余额度 ¥${data.remaining_balance_rmb.toFixed(4)}` : ''}`}</span><span class="dhamma-badge">AI RAG 模式 · 共 ${data.hit_count} 条命中</span></div>`;
+  html += `<div class="dhamma-ai-synthesis">${dhammaRenderSynthesisMarkdown(data.synthesis)}</div>`;
+
+  const keys = [...DHAMMA_LAYER_ORDER.map(String), 'found_but_unclassified', 'unmatched'];
+  const allHits = [];
+  for (const key of keys) {
+    const hits = data.layers[key] || [];
+    if (hits.length === 0) continue;
+    const layerNum = parseInt(key, 10);
+    const isNamedLayer = !isNaN(layerNum);
+    html += `<div class="dhamma-layer-section ${isNamedLayer ? 'open' : ''}" data-layer="${key}"><div class="dhamma-layer-section-head"><span>${DHAMMA_AI_LAYER_LABELS[key] || key}</span><span class="count">${hits.length} 条</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">`;
+    hits.forEach((h, i) => {
+      const hitId = `dai-hit-${key}-${i}`;
+      allHits.push({ hitId, h });
+      html += `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ai">AI语义</span><span class="meta">${dhammaEscapeHtml(h.cbeta_id)}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><mark class="snippet">${dhammaEscapeHtml(h.snippet)}</mark></li>`;
+    });
+    html += `</ul></div></div>`;
+  }
+  results.innerHTML = html;
+  dhammaWireLayerSections();
+
+  await Promise.all(allHits.map(async ({ hitId, h }) => {
+    const href = await dhammaBuildHitHref(h);
+    const a = document.querySelector(`#${hitId} .hit-link`);
+    if (a && href) a.href = href;
+  }));
+}
+
+// === Reader, restyled to Sutta-Study-Guide's design language ===
+async function renderDhammaReader(id, highlightOffset, highlightLen) {
+  app.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:40px;">加载经文中…</p>';
+  await ensureDhammaData();
+  const rec = dhammaIndexById.get(id);
+  if (!rec) { app.innerHTML = `<button class="back-btn" onclick="location.hash='#/dhamma'">← 返回法义溯源</button><p>目录中未找到该经文。</p>`; return; }
+
+  let raw;
+  try {
+    const res = await fetch(`${DHAMMA_DATA_BASE}/data/fulltext/${encodeURIComponent(id)}.txt`);
+    if (!res.ok) throw new Error('正文文件加载失败');
+    raw = await res.text();
+  } catch (e) {
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/dhamma'">← 返回法义溯源</button><p>正文加载失败：${dhammaEscapeHtml(e.message)}</p>`;
+    return;
+  }
+  const paragraphs = dhammaParseFulltext(raw);
+
+  let html = `<button class="back-btn" onclick="location.hash='#/dhamma'">← 返回法义溯源</button>`;
+  html += `<div class="cat-header"><h2>${dhammaEscapeHtml(rec.title || rec.id)}</h2><div class="cat-en">${dhammaEscapeHtml(rec.author || '')} ${rec.extent ? '　' + dhammaEscapeHtml(rec.extent) : ''}　CBETA: ${rec.canon}.${rec.vol}.${rec.no}</div></div>`;
+  html += `<div class="dhamma-reader-toolbar"><button class="tb-btn" id="dhammaScriptToggle">显示繁体</button></div>`;
+  html += `<div id="dhammaReaderContent"></div>`;
+  app.innerHTML = html;
+
+  let scriptMode = 'simplified';
+  const hlParaIndex = highlightOffset !== null ? dhammaParagraphAtOffset(paragraphs, highlightOffset) : -1;
+  function convert(text) { return scriptMode === 'simplified' ? (typeof toSimplified === 'function' ? toSimplified(text) : text) : text; }
+  function renderBody() {
+    const content = document.getElementById('dhammaReaderContent');
+    if (paragraphs.length === 0) { content.innerHTML = '<p>此文本未提取到可显示的段落。</p>'; return; }
+    let out = '';
+    let currentJuan = null;
+    paragraphs.forEach((para, i) => {
+      if (para.juan && para.juan !== currentJuan) { currentJuan = para.juan; out += `<h3 class="dhamma-reader-juan">卷 ${dhammaEscapeHtml(currentJuan)}</h3>`; }
+      if (i === hlParaIndex) {
+        const localStart = Math.max(0, highlightOffset - para.offset);
+        const localEnd = Math.min(para.text.length, localStart + (highlightLen || 1));
+        const before = convert(para.text.slice(0, localStart)), hit = convert(para.text.slice(localStart, localEnd)), after = convert(para.text.slice(localEnd));
+        out += `<p class="dhamma-reader-para" id="dhamma-hit">${dhammaEscapeHtml(before)}<mark>${dhammaEscapeHtml(hit)}</mark>${dhammaEscapeHtml(after)}</p>`;
+      } else {
+        out += `<p class="dhamma-reader-para">${dhammaEscapeHtml(convert(para.text))}</p>`;
+      }
+    });
+    content.innerHTML = out;
+    if (hlParaIndex !== -1) {
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      setTimeout(() => { const el = document.getElementById('dhamma-hit'); if (el) el.scrollIntoView({ behavior: 'auto', block: 'center' }); }, 60);
+    }
+  }
+  document.getElementById('dhammaScriptToggle').addEventListener('click', () => {
+    scriptMode = scriptMode === 'simplified' ? 'traditional' : 'simplified';
+    document.getElementById('dhammaScriptToggle').textContent = scriptMode === 'simplified' ? '显示繁体' : '显示简体';
+    renderBody();
+  });
+  renderBody();
+}
 
 // Start
 init();
