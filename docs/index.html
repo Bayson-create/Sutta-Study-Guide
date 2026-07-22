@@ -158,12 +158,20 @@ a:hover { text-decoration: underline; }
 
 /* Medium-style blog cards */
 .blog-card {
-  padding: 22px 4px; border-bottom: 1px solid var(--border); cursor: pointer; transition: opacity 0.15s;
+  padding: 22px 4px; border-bottom: 1px solid var(--border); transition: opacity 0.15s;
 }
-.blog-card:hover { opacity: 0.82; }
-.blog-card .blog-card-title { font-size: 1.3em; font-weight: 700; color: var(--text); margin-bottom: 6px; font-family: Georgia, 'Songti SC', serif; }
-.blog-card .blog-card-excerpt { font-size: 0.92em; color: var(--text-light); line-height: 1.6; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-card .blog-card-title { font-size: 1.3em; font-weight: 700; color: var(--text); margin-bottom: 6px; font-family: Georgia, 'Songti SC', serif; cursor: pointer; }
+.blog-card .blog-card-title:hover { opacity: 0.82; }
+.blog-card .blog-card-excerpt { font-size: 0.92em; color: var(--text-light); line-height: 1.6; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
 .blog-card .blog-card-meta { font-size: 0.78em; color: var(--text-light); display: flex; align-items: center; gap: 8px; }
+.blog-card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.tag-chip {
+  display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.75em;
+  background: var(--accent-bg); color: var(--accent); cursor: pointer; white-space: nowrap;
+}
+.tag-chip.active { background: var(--accent); color: #fff; }
+.blog-active-tags { font-size: 0.85em; color: var(--text-light); margin: -8px 0 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.tag-clear-btn { border: none; background: none; color: var(--accent); cursor: pointer; font-size: 0.9em; font-family: inherit; }
 .blog-card .blog-card-meta .author { font-weight: 600; color: var(--text); }
 
 /* Blog reading view — Medium-like typography */
@@ -189,6 +197,12 @@ a:hover { text-decoration: underline; }
   display: inline-block; font-size: 0.72em; font-weight: 600; padding: 2px 9px; border-radius: 999px;
   background: var(--accent-bg); color: var(--accent); margin-right: 6px; vertical-align: middle;
 }
+.like-btn {
+  padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg);
+  color: var(--text); font-size: 0.9em; cursor: pointer; font-family: inherit;
+}
+.like-btn.liked { border-color: #e0455a; color: #e0455a; background: #fdeef0; }
+.like-btn:disabled { opacity: 0.6; cursor: default; }
 
 /* Markdown editor — toolbar + split textarea/preview */
 .md-editor { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; background: var(--card-bg); }
@@ -271,6 +285,14 @@ a:hover { text-decoration: underline; }
 .profile-field-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
 .profile-field-row label { width: 90px; flex-shrink: 0; font-size: 0.88em; color: var(--text-light); }
 .profile-field-row input { flex: 1; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); font-family: inherit; }
+.quota-stat-grid { display: flex; gap: 12px; flex-wrap: wrap; margin: 10px 0 18px; }
+.quota-stat { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 18px; background: var(--card-bg); min-width: 100px; }
+.quota-stat .label { display: block; font-size: 0.78em; color: var(--text-light); }
+.quota-stat .value { display: block; font-size: 1.15em; font-weight: 700; color: var(--accent); margin-top: 2px; }
+.quota-unlimited { color: #2c7a3f; font-weight: 700; padding: 8px 0; }
+.form-msg { font-size: 0.88em; margin-top: 6px; min-height: 1.2em; }
+.form-msg.success-msg { color: #2c7a3f; background: none; padding: 0; text-align: left; }
+.form-msg.error-msg { color: #a04040; background: none; padding: 0; text-align: left; }
 
 /* Markdown reader (concepts) */
 .md-reader { max-width: 760px; margin: 0 auto; overflow-wrap: break-word; word-break: break-word; }
@@ -706,7 +728,25 @@ a:hover { text-decoration: underline; }
 .dhamma-ai-synthesis h3:first-child, .dhamma-ai-synthesis h4:first-child { margin-top: 0; }
 .dhamma-ai-synthesis p { margin: 8px 0; }
 .dhamma-ai-synthesis ul { margin: 6px 0; padding-left: 22px; }
-.dhamma-ai-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.82em; color: var(--text-light); margin-bottom: 10px; }
+.dhamma-ai-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.82em; color: var(--text-light); margin-bottom: 4px; flex-wrap: wrap; gap: 8px; }
+.dhamma-ai-meta-right { display: flex; align-items: center; gap: 8px; }
+.dhamma-search-timer { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; }
+.dhamma-copy-btn {
+  padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg);
+  color: var(--text); font-size: 0.85em; cursor: pointer; font-family: inherit;
+}
+.dhamma-copy-btn:hover { border-color: var(--accent-light); background: var(--hover-bg); }
+.dhamma-copy-msg { font-size: 0.8em; margin: 0 0 10px; min-height: 1.2em; }
+.dhamma-copy-msg.ok { color: #2c7a3f; }
+.dhamma-copy-msg.error { color: #a04040; }
+.dhamma-summary-card { border-left-color: var(--accent); background: var(--bg-warm); }
+.dhamma-view-toggle { display: flex; gap: 8px; margin: 4px 0 14px; }
+.dhamma-view-toggle button {
+  padding: 7px 16px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg);
+  color: var(--text-light); font-size: 0.88em; cursor: pointer; font-family: inherit;
+}
+.dhamma-view-toggle button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.dhamma-graph-frame { width: 100%; height: 640px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; }
 
 .dhamma-layer-section { margin-bottom: 16px; }
 .dhamma-layer-section-head {
@@ -950,8 +990,9 @@ function route() {
     renderForumEditor(hash.slice('#/forum/edit/'.length));
   } else if (hash.startsWith('#/forum/')) {
     renderForumDetail(hash.slice('#/forum/'.length));
-  } else if (hash === '#/blog') {
-    renderBlogHome();
+  } else if (hash === '#/blog' || hash.startsWith('#/blog?')) {
+    const bp = new URLSearchParams(hash.includes('?') ? hash.slice(hash.indexOf('?') + 1) : '');
+    renderBlogHome(bp.get('q') || '', bp.getAll('tag'));
   } else if (hash === '#/blog/new') {
     renderBlogEditor(null);
   } else if (hash.startsWith('#/blog/edit/')) {
@@ -3625,7 +3666,7 @@ async function renderForumHome(searchQuery, category) {
       <div class="forum-row" onclick="location.hash='#/forum/${t.id}'">
         <div class="forum-row-main">
           <div class="forum-row-title"><span class="category-badge">${communityEscape(t.category)}</span>${communityEscape(t.title)}</div>
-          <div class="forum-row-meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+          <div class="forum-row-meta">${communityEscape(t.author.display_name)} · 最近活跃 ${communityFormatDate(t.last_active_at)} · 👁 ${t.view_count} · ❤ ${t.like_count}</div>
         </div>
         <div class="forum-row-count">${t.reply_count}<span class="count-label">回复</span></div>
       </div>`).join('');
@@ -3700,7 +3741,7 @@ async function communitySaveTopic(topicId) {
   }
 }
 
-async function renderForumDetail(id) {
+async function renderForumDetail(id, skipViewCount) {
   await communityFetchCurrentUser();
   let html = `<button class="back-btn" onclick="location.hash='#/forum'">← 返回论坛列表</button>`;
   html += `<div id="forum-detail" class="loading">加载中…</div>`;
@@ -3712,13 +3753,22 @@ async function renderForumDetail(id) {
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('帖子不存在或接口暂不可用');
     const t = await res.json();
+    // Bumps view_count + last_active_at exactly once per detail-page
+    // visit. Fire-and-forget: never blocks rendering, and a failure here
+    // shouldn't break the page. Not awaited, not retried, and this
+    // function only runs once per navigation (route() calls
+    // renderForumDetail once per hashchange), so this can't double-count
+    // from a re-render.
+    if (!skipViewCount) {
+      fetch(`${API_BASE}/api/forum/topics/${t.id}/view`, { method: 'POST', headers: communityAuthHeaders() }).catch(() => {});
+    }
     const bookmarkHtml = await communityBookmarkButtonHtml('forum_topic', t.id);
     let detail = `<div class="community-post">
       <span class="category-badge">${communityEscape(t.category)}</span>
       <h2 style="display:inline">${communityEscape(t.title)}</h2>
-      <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)}</div>
+      <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)} · 最近活跃 ${communityFormatDate(t.last_active_at)} · 👁 ${t.view_count}</div>
       ${communityOwnerActionsHtml(t.author.id, '#/forum/edit/' + t.id, `communityDeleteTopic('${t.id}')`)}
-      <div style="margin:10px 0">${bookmarkHtml}</div>
+      <div style="margin:10px 0">${bookmarkHtml} <button id="forum-like-btn" class="like-btn ${t.liked_by_me ? 'liked' : ''}" onclick="communityToggleLike('${t.id}', this)">${t.liked_by_me ? '❤' : '🤍'} <span id="forum-like-count">${t.like_count}</span></button></div>
       <div class="body md-reader">${mdToHtml(t.body)}</div>
       <h3>回复 (${t.replies.length})</h3>`;
     detail += t.replies.map(r => `
@@ -3740,6 +3790,30 @@ async function renderForumDetail(id) {
   }
 }
 
+let communityLikeInFlight = false;
+async function communityToggleLike(topicId, btnEl) {
+  if (!(await communityRequireLogin())) return;
+  if (communityLikeInFlight) return; // guards against double-click spamming the request
+  communityLikeInFlight = true;
+  const wasLiked = btnEl.classList.contains('liked');
+  btnEl.disabled = true;
+  try {
+    const res = await fetch(`${API_BASE}/api/forum/topics/${topicId}/like`, {
+      method: wasLiked ? 'DELETE' : 'POST',
+      headers: communityAuthHeaders(),
+    });
+    if (!res.ok) throw new Error('操作失败');
+    const t = await res.json();
+    btnEl.classList.toggle('liked', t.liked_by_me);
+    btnEl.innerHTML = `${t.liked_by_me ? '❤' : '🤍'} <span id="forum-like-count">${t.like_count}</span>`;
+  } catch (e) {
+    alert('点赞失败：' + e.message);
+  } finally {
+    btnEl.disabled = false;
+    communityLikeInFlight = false;
+  }
+}
+
 async function communitySubmitReply(topicId) {
   const body = document.getElementById('forum-reply-body').value.trim();
   if (!body) { alert('请输入回复内容'); return; }
@@ -3751,7 +3825,7 @@ async function communitySubmitReply(topicId) {
       body: JSON.stringify({ body }),
     });
     if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
-    renderForumDetail(topicId);
+    renderForumDetail(topicId, true);
   } catch (e) {
     alert(e.message);
   }
@@ -3805,36 +3879,45 @@ async function communityDeleteReply(replyId, topicId) {
 
 
 // --- Blog ---
-async function renderBlogHome(searchQuery) {
+async function renderBlogHome(searchQuery, activeTags) {
+  activeTags = activeTags || [];
   const user = await communityFetchCurrentUser();
   const canWrite = user && (user.role === 'editor' || user.role === 'admin');
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>📝 博客</h2><div class="cat-en">Blog</div></div>`;
   html += `<div class="community-toolbar">
-    <input class="community-search" id="blog-search" placeholder="搜索文章…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityBlogSearch()">
+    <input class="community-search" id="blog-search" placeholder="搜索文章或标签…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityBlogSearch()">
     <button class="community-primary-btn" onclick="communityBlogSearch()">🔍 搜索</button>
     ${canWrite ? `<button class="community-primary-btn" onclick="location.hash='#/blog/new'">✎ 写文章</button>` : ''}
   </div>`;
+  html += `<div id="blog-tag-filter" class="community-chips"></div>`;
+  if (activeTags.length) {
+    html += `<div class="blog-active-tags">按标签筛选：${activeTags.map(t => `<span class="tag-chip active">${communityEscape(t)}</span>`).join('')} <button class="tag-clear-btn" onclick="renderBlogHome('${communityEscape(searchQuery || '')}',[])">✕ 清除筛选</button></div>`;
+  }
   html += `<div id="blog-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
+
+  loadBlogTagFilter(activeTags, searchQuery);
 
   const slowHint = communityShowSlowHint('blog-list');
   try {
     const url = new URL(`${API_BASE}/api/blog/posts`);
     if (searchQuery) url.searchParams.set('q', searchQuery);
+    activeTags.forEach(t => url.searchParams.append('tag', t));
     const res = await communityFetchWithTimeout(url);
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
     const list = document.getElementById('blog-list');
     if (!data.items.length) {
-      list.outerHTML = `<div class="community-empty">${searchQuery ? '没有找到匹配的文章' : (canWrite ? '暂无博客文章，来写第一篇吧' : '暂无博客文章')}</div>`;
+      list.outerHTML = `<div class="community-empty">${searchQuery || activeTags.length ? '没有找到匹配的文章' : (canWrite ? '暂无博客文章，来写第一篇吧' : '暂无博客文章')}</div>`;
       return;
     }
     list.outerHTML = data.items.map(p => `
-      <div class="blog-card" onclick="location.hash='#/blog/${p.slug}'">
-        <div class="blog-card-title">${communityEscape(p.title)}</div>
-        <div class="blog-card-excerpt">${communityEscape(communityExcerpt(p.body_markdown))}</div>
+      <div class="blog-card">
+        <div class="blog-card-title" onclick="location.hash='#/blog/${p.slug}'">${communityEscape(p.title)}</div>
+        <div class="blog-card-excerpt" onclick="location.hash='#/blog/${p.slug}'">${communityEscape(communityExcerpt(p.body_markdown))}</div>
+        ${(p.tags || []).length ? `<div class="blog-card-tags">${p.tags.map(t => `<span class="tag-chip" onclick="event.stopPropagation();communityFilterByTag('${communityEscape(t)}')">${communityEscape(t)}</span>`).join('')}</div>` : ''}
         <div class="blog-card-meta"><span class="author">${communityEscape(p.author.display_name)}</span><span>·</span><span>${communityFormatDate(p.published_at || p.created_at)}</span></div>
       </div>`).join('');
   } catch (e) {
@@ -3843,9 +3926,40 @@ async function renderBlogHome(searchQuery) {
   }
 }
 
+async function loadBlogTagFilter(activeTags, searchQuery) {
+  try {
+    const res = await fetch(`${API_BASE}/api/blog/tags`);
+    if (!res.ok) return;
+    const tags = await res.json();
+    const el = document.getElementById('blog-tag-filter');
+    if (!el || !tags.length) return;
+    el.innerHTML = tags.map(t => `<div class="community-chip${activeTags.includes(t.name) ? ' active' : ''}" onclick="communityFilterByTag('${communityEscape(t.name)}')">${communityEscape(t.name)} (${t.count})</div>`).join('');
+  } catch (e) { /* tag chips are a nice-to-have */ }
+}
+
+function communityFilterByTag(tag) {
+  // Multi-tag state lives in the URL (?tag=a&tag=b) so it survives
+  // refresh/back-forward/sharing, per spec. Clicking an already-active
+  // tag toggles it off.
+  const params = new URLSearchParams(location.hash.includes('?') ? location.hash.slice(location.hash.indexOf('?') + 1) : '');
+  let tags = params.getAll('tag');
+  tags = tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag];
+  const q = params.get('q') || '';
+  const newParams = new URLSearchParams();
+  if (q) newParams.set('q', q);
+  tags.forEach(t => newParams.append('tag', t));
+  location.hash = '#/blog' + (newParams.toString() ? '?' + newParams.toString() : '');
+}
+
 function communityBlogSearch() {
   const q = document.getElementById('blog-search').value.trim();
-  renderBlogHome(q);
+  const params = new URLSearchParams(location.hash.includes('?') ? location.hash.slice(location.hash.indexOf('?') + 1) : '');
+  const tags = params.getAll('tag');
+  const newParams = new URLSearchParams();
+  if (q) newParams.set('q', q);
+  tags.forEach(t => newParams.append('tag', t));
+  location.hash = '#/blog' + (newParams.toString() ? '?' + newParams.toString() : '');
+  if (!q && !tags.length) renderBlogHome('', []); // hash didn't change, route() won't fire - render directly
 }
 
 function communitySlugify(title) {
@@ -3876,6 +3990,7 @@ async function renderBlogEditor(slug) {
   html += `<div class="community-form">
     <input id="blog-editor-title" placeholder="文章标题" value="${communityEscape(existing?.title || '')}" oninput="communityBlogTitleChanged()">
     <input id="blog-editor-slug" placeholder="URL slug（英文/数字/短横线，自动生成，可修改）" value="${communityEscape(existing?.slug || '')}">
+    <input id="blog-editor-tags" placeholder="标签，用逗号分隔，例如：佛教史, 修行心得" value="${communityEscape((existing?.tags || []).join(', '))}">
     ${communityEditorHtml('blog-editor', existing?.body_markdown || '')}
     <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
       <label style="font-size:0.9em;color:var(--text-light)"><input type="checkbox" id="blog-editor-publish" ${!existing || existing.status === 'published' ? 'checked' : ''}> 立即发布（取消勾选则保存为草稿）</label>
@@ -3898,10 +4013,13 @@ async function communitySaveBlogPost(slug) {
   const newSlug = document.getElementById('blog-editor-slug').value.trim() || communitySlugify(title);
   const body_markdown = communityEditorValue('blog-editor');
   const status = document.getElementById('blog-editor-publish').checked ? 'published' : 'draft';
+  // Server also normalizes (trim/dedupe/drop-empty), this is just so the
+  // UI doesn't show untrimmed junk while waiting on the response.
+  const tags = document.getElementById('blog-editor-tags').value.split(',').map(t => t.trim()).filter(Boolean);
   if (!title || !body_markdown) { alert('请填写标题和正文'); return; }
   try {
     const url = slug ? `${API_BASE}/api/blog/posts/${slug}` : `${API_BASE}/api/blog/posts`;
-    const payload = slug ? { title, slug: newSlug, body_markdown, status } : { title, slug: newSlug, body_markdown, status };
+    const payload = { title, slug: newSlug, body_markdown, status, tags };
     const res = await fetch(url, {
       method: slug ? 'PATCH' : 'POST',
       headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
@@ -3935,6 +4053,7 @@ async function renderBlogDetail(slug) {
         <span class="author">${communityEscape(p.author.display_name)}</span>
         <span>${communityFormatDate(p.published_at || p.created_at)}</span>
       </div>
+      ${(p.tags || []).length ? `<div class="blog-card-tags">${p.tags.map(t => `<span class="tag-chip" onclick="location.hash='#/blog?' + new URLSearchParams([['tag','${communityEscape(t)}']]).toString()">${communityEscape(t)}</span>`).join('')}</div>` : ''}
       ${communityOwnerActionsHtml(p.author.id, '#/blog/edit/' + p.slug, `communityDeleteBlogPost('${p.slug}')`)}
       <div style="margin:10px 0">${bookmarkHtml}</div>
       <div class="body md-reader">${mdToHtml(p.body_markdown)}</div>
@@ -3985,6 +4104,7 @@ async function renderProfile() {
     <button class="${communityProfileTab === 'topics' ? 'active' : ''}" onclick="communityProfileSwitchTab('topics',this)">我的论坛</button>
     <button class="${communityProfileTab === 'posts' ? 'active' : ''}" onclick="communityProfileSwitchTab('posts',this)">我的博客</button>
     <button class="${communityProfileTab === 'bookmarks' ? 'active' : ''}" onclick="communityProfileSwitchTab('bookmarks',this)">我的收藏</button>
+    <button class="${communityProfileTab === 'quota' ? 'active' : ''}" onclick="communityProfileSwitchTab('quota',this)">AI 额度</button>
   </div>`;
   html += `<div id="profile-tab-content" class="loading">加载中…</div>`;
   app.innerHTML = html;
@@ -4097,6 +4217,76 @@ async function communityLoadProfileTab(tab, user) {
       content.textContent = e.message;
     }
     return;
+  }
+
+  if (tab === 'quota') {
+    await communityRenderQuotaTab(content, user);
+    return;
+  }
+}
+
+async function communityRenderQuotaTab(content, user) {
+  content.className = 'profile-section';
+  content.innerHTML = '加载中…';
+  let quota, stats;
+  try {
+    [quota, stats] = await Promise.all([
+      fetch(`${API_BASE}/api/dhamma/quota`, { headers: communityAuthHeaders() }).then(r => r.json()),
+      fetch(`${API_BASE}/api/dhamma/usage-stats`, { headers: communityAuthHeaders() }).then(r => r.json()),
+    ]);
+  } catch (e) {
+    content.className = 'error-msg';
+    content.textContent = '加载失败：' + e.message;
+    return;
+  }
+
+  let html = `<h3 style="margin-top:0">法义溯源 AI 额度</h3>`;
+  if (quota.is_unlimited) {
+    html += `<p class="quota-unlimited">✓ 管理员账号 · AI 语义综合溯源不限量使用</p>`;
+  } else {
+    html += `<div class="quota-stat-grid">
+      <div class="quota-stat"><span class="label">剩余额度</span><span class="value">¥${quota.rmb_balance.toFixed(4)}</span></div>
+      <div class="quota-stat"><span class="label">累计已用</span><span class="value">¥${quota.total_spent_rmb.toFixed(4)}</span></div>
+    </div>`;
+    if (quota.rmb_balance <= 0) html += `<p class="error-msg" style="padding:8px 0">额度已用完，请联系管理员充值。</p>`;
+  }
+  html += `<h4>Token 使用统计</h4>
+    <div class="quota-stat-grid">
+      <div class="quota-stat"><span class="label">今日</span><span class="value">${stats.today_tokens.toLocaleString()}</span></div>
+      <div class="quota-stat"><span class="label">本周</span><span class="value">${stats.week_tokens.toLocaleString()}</span></div>
+      <div class="quota-stat"><span class="label">总计</span><span class="value">${stats.total_tokens.toLocaleString()}</span></div>
+    </div>`;
+
+  if (user.role === 'admin') {
+    html += `<h4>管理员：分配额度</h4>
+      <div class="profile-field-row"><label>用户邮箱</label><input id="quota-grant-email" type="email" placeholder="member@example.com"></div>
+      <div class="profile-field-row"><label>调整额度（元）</label><input id="quota-grant-amount" type="number" step="0.01" value="10"></div>
+      <p style="font-size:0.8em;color:var(--text-light);margin:-8px 0 10px 100px">正数为增加，负数为扣减</p>
+      <button onclick="communityGrantQuota()">提交</button>
+      <p id="quota-grant-msg" class="form-msg"></p>`;
+  }
+  content.innerHTML = html;
+}
+
+async function communityGrantQuota() {
+  const msg = document.getElementById('quota-grant-msg');
+  const email = document.getElementById('quota-grant-email').value.trim();
+  const addRmb = parseFloat(document.getElementById('quota-grant-amount').value);
+  if (!email || !Number.isFinite(addRmb) || addRmb === 0) { msg.textContent = '请输入有效的邮箱和非零金额'; msg.className = 'form-msg error-msg'; return; }
+  msg.textContent = '处理中…';
+  msg.className = 'form-msg';
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/admin/grant`, {
+      method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ email, add_rmb: addRmb }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '充值失败');
+    msg.textContent = data.is_unlimited ? `${data.email} 是管理员账号，无需充值。` : `已充值，${data.email} 当前余额 ¥${data.rmb_balance.toFixed(2)}`;
+    msg.className = 'form-msg success-msg';
+  } catch (e) {
+    msg.textContent = e.message;
+    msg.className = 'form-msg error-msg';
   }
 }
 
@@ -4449,7 +4639,7 @@ function dhammaRenderShell(preserveQuery, autoSearch) {
     html += `<div class="dhamma-submode-row">
       <span>模式：</span>
       <div class="dhamma-mode-toggle">
-        <button type="button" data-trace-mode="ai" class="${dhammaTraceMode === 'ai' ? 'active' : ''}">🤖 AI 语义综合（默认）</button>
+        <button type="button" data-trace-mode="ai" class="${dhammaTraceMode === 'ai' ? 'active' : ''}">🤖 AI 语义综合</button>
         <button type="button" data-trace-mode="keyword" class="${dhammaTraceMode === 'keyword' ? 'active' : ''}">🔤 关键词命中</button>
       </div>
       <span class="dhamma-badge">当前：${dhammaTraceMode === 'ai' ? 'AI RAG' : '关键词精确/模糊命中'}</span>
@@ -4532,7 +4722,7 @@ function dhammaRenderCard(card, accentVar) {
   const cls = ['dhamma-card', card.id === 'other' ? 'other' : '', empty ? 'empty' : ''].filter(Boolean).join(' ');
   const el = document.createElement('div');
   el.className = cls;
-  el.innerHTML = `<span>${card.label}</span><span class="count">${card.count} 篇</span>`;
+  el.innerHTML = `<span>${toSimplified(card.label)}</span><span class="count">${card.count} 篇</span>`;
   if (!empty) el.addEventListener('click', () => dhammaToggleDrilldown(el, card));
   return el;
 }
@@ -4548,7 +4738,7 @@ function dhammaToggleDrilldown(cardEl, card) {
   const items = card.ids.map(id => dhammaIndexById.get(id)).filter(Boolean)
     .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'zh-Hans-CN'));
   const listHtml = items.map(r => `<li><a href="#/dhamma/read/${encodeURIComponent(r.id)}" title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(r.title || r.id)}</a></li>`).join('');
-  panel.innerHTML = `<button class="dhamma-drilldown-close">收起 ✕</button><h5>${card.label}（${items.length} 篇）</h5><ul class="text-list">${listHtml}</ul>`;
+  panel.innerHTML = toSimplified(`<button class="dhamma-drilldown-close">收起 ✕</button><h5>${card.label}（${items.length} 篇）</h5><ul class="text-list">${listHtml}</ul>`);
   panel.querySelector('.dhamma-drilldown-close').addEventListener('click', () => panel.remove());
   body.appendChild(panel);
 }
@@ -4694,7 +4884,7 @@ async function dhammaRunNormalSearch(q) {
   } else if (titleMatches.length === 0) {
     html += `<p class="dhamma-empty-note">未检索到与"${dhammaEscapeHtml(q)}"相关的经名或正文内容。</p>`;
   }
-  results.innerHTML = html;
+  results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
 }
 
@@ -4795,7 +4985,7 @@ async function dhammaRunKeywordTrace(q) {
     }
     html += `</div></div>`;
   }
-  results.innerHTML = html;
+  results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
 }
 
@@ -4856,6 +5046,12 @@ function dhammaRenderSynthesisMarkdown(text) {
   const lines = dhammaEscapeHtml(text).split('\n');
   let html = '', inList = false;
   for (const line of lines) {
+    // A line that is ONLY a dash/dashes (— or --- etc, however many, any
+    // whitespace) is a structural separator between blocks (e.g. left
+    // over between the analysis prose and the next "#### 第N层" heading)
+    // - drop it. A "—" that's part of real sentence content never appears
+    // alone on its own line, so this can't accidentally eat prose.
+    if (/^[—\-–\s]+$/.test(line) && /[—\-–]/.test(line)) continue;
     if (/^####\s+/.test(line)) { html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
     if (/^###\s+/.test(line)) { html += `<h4>${line.replace(/^###\s+/, '')}</h4>`; continue; }
     if (/^##\s+/.test(line)) { html += `<h3>${line.replace(/^##\s+/, '')}</h3>`; continue; }
@@ -4899,13 +5095,20 @@ function dhammaSplitSynthesisByLayer(text) {
 
 async function dhammaRunAiTrace(q) {
   const mySeq = ++dhammaSearchSeq;
+  dhammaGraphLoadedFor = null; // a fresh search invalidates any previously loaded graph
   const results = document.getElementById('dhammaResults');
   if (!communityToken()) {
     results.innerHTML = `<p class="dhamma-empty-note">AI 语义综合溯源需要登录。<a href="#/profile">前往登录</a>，或切换到"关键词命中"模式无需登录即可使用。</p>`;
     return;
   }
-  results.innerHTML = `<p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒…</p>`;
-  let data;
+  results.innerHTML = `<p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒… <span id="dhammaSearchTimer" class="dhamma-search-timer">0.0s</span></p>`;
+  const timerStart = performance.now();
+  const timerEl = () => document.getElementById('dhammaSearchTimer');
+  const timerHandle = setInterval(() => {
+    const el = timerEl();
+    if (el) el.textContent = ((performance.now() - timerStart) / 1000).toFixed(1) + 's';
+  }, 100);
+  let data, elapsedSeconds;
   try {
     const res = await fetch(`${API_BASE}/api/dhamma/trace?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
     if (!res.ok) {
@@ -4915,6 +5118,7 @@ async function dhammaRunAiTrace(q) {
     }
     data = await res.json();
   } catch (err) {
+    clearInterval(timerHandle);
     if (mySeq !== dhammaSearchSeq) return;
     if (err.status === 402) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
     else if (err.status === 429) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
@@ -4922,9 +5126,32 @@ async function dhammaRunAiTrace(q) {
     else results.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
     return;
   }
+  clearInterval(timerHandle);
+  elapsedSeconds = (performance.now() - timerStart) / 1000;
   if (mySeq !== dhammaSearchSeq) return;
 
-  let html = `<div class="dhamma-ai-meta"><span>${data.from_cache ? '命中缓存，本次未消耗额度' : `本次消耗 ¥${data.charged_rmb.toFixed(4)}${data.remaining_balance_rmb !== null ? `，剩余额度 ¥${data.remaining_balance_rmb.toFixed(4)}` : ''}`}</span><span class="dhamma-badge">AI RAG 模式 · 共 ${data.hit_count} 条命中</span></div>`;
+  const tokensLabel = data.from_cache
+    ? '命中缓存，未消耗 Tokens'
+    : `本次消耗 ${data.request_total_tokens.toLocaleString()} tokens（输入 ${data.request_input_tokens.toLocaleString()} / 输出 ${data.request_output_tokens.toLocaleString()}）`;
+  let html = `<div class="dhamma-ai-meta">
+    <span>${tokensLabel} · 用时 ${elapsedSeconds.toFixed(1)}s</span>
+    <span class="dhamma-ai-meta-right">
+      <span class="dhamma-badge">AI RAG 模式 · 共 ${data.hit_count} 条命中</span>
+      <button type="button" class="dhamma-copy-btn" id="dhammaCopyMdBtn">复制 Markdown</button>
+    </span>
+  </div><p id="dhammaCopyMsg" class="dhamma-copy-msg"></p>`;
+
+  // 分层分析 / 关系图谱 view toggle: both views belong to this same
+  // search result. The graph is fetched lazily (only on first switch to
+  // it), independently of the layered analysis already rendered below,
+  // so it never blocks or re-triggers the AI search. Switching views is
+  // pure show/hide - the layered-analysis DOM (scroll position, open
+  // <details>) is never torn down.
+  html += `<div class="dhamma-view-toggle">
+    <button type="button" class="active" data-view="layers" id="dhammaViewLayersBtn">分层分析</button>
+    <button type="button" data-view="graph" id="dhammaViewGraphBtn">关系图谱</button>
+  </div>`;
+  html += `<div id="dhammaLayersView">`;
 
   const { intro, byLayer, outro } = dhammaSplitSynthesisByLayer(data.synthesis);
   if (intro.trim()) html += `<div class="dhamma-ai-synthesis dhamma-ai-intro">${dhammaRenderSynthesisMarkdown(intro)}</div>`;
@@ -4961,15 +5188,78 @@ async function dhammaRunAiTrace(q) {
     </div>`;
   }
 
-  if (outro.trim()) html += `<div class="dhamma-ai-synthesis dhamma-ai-outro">${dhammaRenderSynthesisMarkdown(outro)}</div>`;
+  if (outro.trim()) {
+    html += `<div class="dhamma-layer-card dhamma-summary-card" data-layer="summary">
+      <div class="dhamma-layer-card-head"><span>📌 总结与结论</span></div>
+      <div class="dhamma-ai-synthesis">${dhammaRenderSynthesisMarkdown(outro)}</div>
+    </div>`;
+  }
+  html += `</div>`; // #dhammaLayersView
+  html += `<div id="dhammaGraphView" hidden>
+    <p class="dhamma-empty-note" id="dhammaGraphStatus">切换到此视图后加载关系图谱…</p>
+    <iframe id="dhammaGraphFrame" class="dhamma-graph-frame" hidden></iframe>
+  </div>`;
 
-  results.innerHTML = html;
+  results.innerHTML = toSimplified(html);
+
+  document.getElementById('dhammaViewLayersBtn').addEventListener('click', () => dhammaSwitchAiView('layers'));
+  document.getElementById('dhammaViewGraphBtn').addEventListener('click', () => dhammaSwitchAiView('graph', q));
+
+  document.getElementById('dhammaCopyMdBtn').addEventListener('click', () => dhammaCopySynthesisMarkdown(data));
 
   const hrefById = await dhammaBuildHitHrefs(allHits);
   for (const { hitId } of allHits) {
     const a = document.querySelector(`#${hitId} .hit-link`);
     const href = hrefById.get(hitId);
     if (a && href) a.href = href;
+  }
+}
+
+async function dhammaCopySynthesisMarkdown(data) {
+  const msg = document.getElementById('dhammaCopyMsg');
+  try {
+    await navigator.clipboard.writeText(data.synthesis);
+    msg.textContent = '已复制 Markdown';
+    msg.className = 'dhamma-copy-msg ok';
+  } catch (e) {
+    msg.textContent = '复制失败：' + e.message;
+    msg.className = 'dhamma-copy-msg error';
+  }
+  setTimeout(() => { if (msg) { msg.textContent = ''; msg.className = 'dhamma-copy-msg'; } }, 3000);
+}
+
+let dhammaGraphLoadedFor = null; // query the graph iframe currently holds, so switching back and forth doesn't re-fetch
+
+function dhammaSwitchAiView(view, q) {
+  document.getElementById('dhammaViewLayersBtn').classList.toggle('active', view === 'layers');
+  document.getElementById('dhammaViewGraphBtn').classList.toggle('active', view === 'graph');
+  document.getElementById('dhammaLayersView').hidden = view !== 'layers';
+  document.getElementById('dhammaGraphView').hidden = view !== 'graph';
+  if (view === 'graph') dhammaLoadGraphView(q);
+}
+
+async function dhammaLoadGraphView(q) {
+  if (dhammaGraphLoadedFor === q) return; // already loaded, no re-fetch
+  const status = document.getElementById('dhammaGraphStatus');
+  const frame = document.getElementById('dhammaGraphFrame');
+  status.hidden = false;
+  status.textContent = '正在生成关系图谱…';
+  frame.hidden = true;
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/trace/graph?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
+    if (!res.ok) {
+      let detail = `请求失败（HTTP ${res.status}）`;
+      try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
+      throw new Error(detail);
+    }
+    const graphHtml = await res.text();
+    frame.srcdoc = graphHtml;
+    frame.hidden = false;
+    status.hidden = true;
+    dhammaGraphLoadedFor = q;
+  } catch (err) {
+    // A graph failure never touches the already-rendered layered analysis - it's a separate view entirely.
+    status.textContent = `关系图谱生成失败：${err.message}`;
   }
 }
 
@@ -5020,7 +5310,7 @@ async function renderDhammaReader(id, highlightOffset, highlightLen, hitOffs, hi
   let highlightsOn = hits.length > 0;
 
   let html = `<button class="back-btn" onclick="location.hash='#/dhamma'">← 返回法义溯源</button>`;
-  html += `<div class="cat-header"><h2>${dhammaEscapeHtml(rec.title || rec.id)}</h2><div class="cat-en">${dhammaEscapeHtml(rec.author || '')} ${rec.extent ? '　' + dhammaEscapeHtml(rec.extent) : ''}　CBETA: ${rec.canon}.${rec.vol}.${rec.no}</div></div>`;
+  html += toSimplified(`<div class="cat-header"><h2>${dhammaEscapeHtml(rec.title || rec.id)}</h2><div class="cat-en">${dhammaEscapeHtml(rec.author || '')} ${rec.extent ? '　' + dhammaEscapeHtml(rec.extent) : ''}</div></div>`) + `<div class="cat-en">CBETA: ${rec.canon}.${rec.vol}.${rec.no}</div>`;
   html += `<div class="dhamma-reader-toolbar">
     <button class="tb-btn" id="dhammaScriptToggle">显示繁体</button>
     ${hits.length > 0 ? `<span class="dhamma-hit-nav" id="dhammaHitNav">
