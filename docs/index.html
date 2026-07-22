@@ -5939,6 +5939,7 @@ async function gotamaSend() {
           let flag = '';
           if (evt.hit_iteration_limit) flag += '<div class="gotama-msg-flag">⚠ 已达检索预算上限，回答可能不完整</div>';
           if (evt.citation_warning) flag += '<div class="gotama-msg-flag">⚠ 部分链接因无法核实来源已被移除</div>';
+          if (evt.save_failed) flag += '<div class="gotama-msg-flag">⚠ 回答生成成功，但保存到历史记录失败，刷新页面后此消息可能丢失</div>';
           gotamaMessages[gotamaMessages.length - 1] = {
             ...evt.assistant_message,
             request_input_tokens: evt.request_input_tokens,
@@ -5960,7 +5961,6 @@ async function gotamaSend() {
     gotamaRenderMessages();
   } catch (e) {
     document.getElementById('gotamaThinking')?.remove();
-    gotamaMessages.pop(); // remove the incomplete streaming placeholder
     const msg = e.status === 402
       ? `${e.message} <a href="#/profile">前往账号页面</a>`
       : e.status === 409
@@ -5968,8 +5968,24 @@ async function gotamaSend() {
         : e.status === 401
           ? '登录已过期，请<a href="#/profile">重新登录</a>'
           : communityTimeoutMessage(e);
-    gotamaRenderMessages();
-    document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg assistant"><div class="gotama-msg-body error-msg">${msg}</div></div>`);
+    // The streaming placeholder (last message) may already have real,
+    // already-displayed content by the time this fires (a "final" event
+    // never arrived, or an "error" event landed mid-stream) - discarding
+    // it here was the actual bug users hit ("输出到一半被替换"): a
+    // failure *after* successful generation (e.g. a save error) was
+    // wiping a perfectly good, already-shown answer. Only drop the
+    // placeholder if it's still genuinely empty; otherwise keep the
+    // partial text and just flag it instead of hiding it.
+    const last = gotamaMessages[gotamaMessages.length - 1];
+    if (last && last.role === 'assistant' && last._streaming && last.content && last.content.trim()) {
+      last._streaming = false;
+      last._flag = `<div class="gotama-msg-flag">⚠ 连接中断，以上内容可能不完整（${communityEscape(msg.replace(/<[^>]+>/g, ''))}）</div>`;
+      gotamaRenderMessages();
+    } else {
+      if (last && last.role === 'assistant' && last._streaming) gotamaMessages.pop(); // still empty - nothing worth keeping
+      gotamaRenderMessages();
+      document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg assistant"><div class="gotama-msg-body error-msg">${msg}</div></div>`);
+    }
   } finally {
     document.getElementById('gotamaThinking')?.remove();
     gotamaSending = false;
