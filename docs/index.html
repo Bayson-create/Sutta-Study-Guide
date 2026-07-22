@@ -716,12 +716,13 @@ a:hover { text-decoration: underline; }
 .dhamma-search-btn:disabled { opacity: 0.6; cursor: default; }
 .dhamma-mode-toggle { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; flex-shrink: 0; }
 .dhamma-mode-toggle button {
-  padding: 10px 16px; border: none; background: var(--card-bg); color: var(--text-light);
-  cursor: pointer; font-family: inherit; font-size: 0.88em; white-space: nowrap;
+  flex: 1; padding: 10px 16px; border: none; background: var(--card-bg); color: var(--text-light);
+  cursor: pointer; font-family: inherit; font-size: 0.88em; white-space: nowrap; text-align: center;
 }
 .dhamma-mode-toggle button.active { background: var(--accent); color: #fff; }
 .dhamma-submode-row { display: flex; align-items: center; gap: 10px; margin: 6px 0 18px; font-size: 0.85em; color: var(--text-light); }
-.dhamma-submode-row .dhamma-mode-toggle button { padding: 6px 12px; font-size: 0.85em; }
+.dhamma-submode-row .dhamma-mode-toggle { flex-shrink: 1; }
+.dhamma-submode-row .dhamma-mode-toggle button { flex: none; padding: 6px 12px; font-size: 0.85em; }
 .dhamma-badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.78em; background: var(--accent-bg); color: var(--accent); }
 
 .dhamma-layers { display: flex; flex-direction: column; gap: 14px; margin: 24px 0; }
