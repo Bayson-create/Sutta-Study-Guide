@@ -5218,8 +5218,12 @@ async function dhammaRunAiTrace(q) {
 async function dhammaCopySynthesisMarkdown(data) {
   const msg = document.getElementById('dhammaCopyMsg');
   try {
-    await navigator.clipboard.writeText(data.synthesis);
-    msg.textContent = '已复制 Markdown';
+    // P0-2: results display simplified by default, so the copy should
+    // match what's on screen - toSimplified() is pure CJK-to-CJK (no
+    // markdown syntax characters are in the S2T/T2S map) so this can't
+    // corrupt the Markdown structure itself.
+    await navigator.clipboard.writeText(toSimplified(data.synthesis));
+    msg.textContent = '已复制 Markdown（简体）';
     msg.className = 'dhamma-copy-msg ok';
   } catch (e) {
     msg.textContent = '复制失败：' + e.message;
