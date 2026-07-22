@@ -193,6 +193,8 @@ a:hover { text-decoration: underline; }
   background: var(--accent-bg); color: var(--accent); font-weight: 700; font-size: 0.9em;
 }
 .forum-row .forum-row-count .count-label { display: block; font-size: 0.65em; font-weight: 400; color: var(--text-light); }
+.forum-row .forum-row-stats { display: flex; gap: 8px; flex-shrink: 0; }
+.forum-row .forum-row-active { flex-shrink: 0; font-size: 0.72em; color: var(--text-light); text-align: right; min-width: 90px; line-height: 1.5; }
 .category-badge {
   display: inline-block; font-size: 0.72em; font-weight: 600; padding: 2px 9px; border-radius: 999px;
   background: var(--accent-bg); color: var(--accent); margin-right: 6px; vertical-align: middle;
@@ -3666,9 +3668,14 @@ async function renderForumHome(searchQuery, category) {
       <div class="forum-row" onclick="location.hash='#/forum/${t.id}'">
         <div class="forum-row-main">
           <div class="forum-row-title"><span class="category-badge">${communityEscape(t.category)}</span>${communityEscape(t.title)}</div>
-          <div class="forum-row-meta">${communityEscape(t.author.display_name)} · 最近活跃 ${communityFormatDate(t.last_active_at)} · 👁 ${t.view_count} · ❤ ${t.like_count}</div>
+          <div class="forum-row-meta">${communityEscape(t.author.display_name)}</div>
         </div>
-        <div class="forum-row-count">${t.reply_count}<span class="count-label">回复</span></div>
+        <div class="forum-row-stats">
+          <div class="forum-row-count">${t.view_count}<span class="count-label">浏览</span></div>
+          <div class="forum-row-count">${t.like_count}<span class="count-label">点赞</span></div>
+          <div class="forum-row-count">${t.reply_count}<span class="count-label">回复</span></div>
+        </div>
+        <div class="forum-row-active">最近活跃<br>${communityFormatDate(t.last_active_at)}</div>
       </div>`).join('');
   } catch (e) {
     clearTimeout(slowHint);
@@ -5070,26 +5077,44 @@ const DHAMMA_AI_LAYER_LABELS = Object.assign({}, DHAMMA_LAYER_NAMES, { found_but
 // layer's prose and its raw citations can render in one merged card
 // instead of two separated blocks. Text before the first heading (or
 // after the last, e.g. an "整体溯源总结") is returned separately.
+// Structure-based, not text-based: the summary/conclusion section is
+// identified as "whatever #### heading comes after the last 第N层
+// section", regardless of its actual title wording ("总结与结论" vs
+// "总结与溯源判断" vs anything else the model phrases it as). Matching a
+// specific title string would silently break the moment the model's
+// phrasing drifts; matching heading *position* relative to the layer
+// headings can't.
 function dhammaSplitSynthesisByLayer(text) {
   const lines = text.split('\n');
   const byLayer = new Map();
-  let intro = [], outro = [], current = null, currentLines = null;
-  const flush = () => {
+  let intro = [], outro = [], current = null, currentLines = [];
+  let sawLayerHeading = false, inOutro = false;
+  const flushLayer = () => {
     if (current !== null) byLayer.set(current, currentLines.join('\n'));
-    else if (currentLines) (byLayer.size === 0 ? intro : outro).push(...currentLines);
   };
-  currentLines = [];
   for (const line of lines) {
-    const m = line.match(/^####\s*第(\d)层/);
-    if (m) {
-      flush();
-      current = parseInt(m[1], 10);
+    const headingMatch = line.match(/^####\s*(.*)$/);
+    const layerMatch = headingMatch && headingMatch[1].match(/^第(\d)层/);
+    if (layerMatch) {
+      flushLayer();
+      sawLayerHeading = true;
+      inOutro = false;
+      current = parseInt(layerMatch[1], 10);
       currentLines = [line];
-    } else {
+    } else if (headingMatch && sawLayerHeading && !inOutro) {
+      flushLayer();
+      current = null;
+      inOutro = true;
+      outro.push(line);
+    } else if (inOutro) {
+      outro.push(line);
+    } else if (current !== null) {
       currentLines.push(line);
+    } else {
+      intro.push(line);
     }
   }
-  flush();
+  flushLayer();
   return { intro: intro.join('\n'), byLayer, outro: outro.join('\n') };
 }
 
@@ -5110,7 +5135,10 @@ async function dhammaRunAiTrace(q) {
   }, 100);
   let data, elapsedSeconds;
   try {
-    const res = await fetch(`${API_BASE}/api/dhamma/trace?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
+    // AI synthesis can legitimately take 20-30s, well past the 45s default
+    // - use a longer budget so a real timeout (not just a slow LLM call)
+    // still aborts and stops the timer, rather than hanging indefinitely.
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/dhamma/trace?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() }, 90000);
     if (!res.ok) {
       let detail = `请求失败（HTTP ${res.status}）`;
       try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
@@ -5123,6 +5151,7 @@ async function dhammaRunAiTrace(q) {
     if (err.status === 402) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
     else if (err.status === 429) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
     else if (err.status === 401) results.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
+    else if (err.name === 'AbortError') results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(communityTimeoutMessage(err))}</p>`;
     else results.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
     return;
   }
@@ -5241,6 +5270,16 @@ function dhammaSwitchAiView(view, q) {
   document.getElementById('dhammaGraphView').hidden = view !== 'graph';
   if (view === 'graph') dhammaLoadGraphView(q);
 }
+
+// The graph is embedded via iframe.srcdoc, so a node click inside it can't
+// navigate the outer SPA directly - it postMessage()s us instead (see
+// graph_render.py's _READER_LINK_SCRIPT). Registered once at module load,
+// not per-graph-load, since the listener has no per-query state itself.
+window.addEventListener('message', (e) => {
+  const data = e.data;
+  if (!data || data.type !== 'dhamma-graph-open-reader' || !data.dhammaLineageId) return;
+  location.hash = `#/dhamma/read/${encodeURIComponent(data.dhammaLineageId)}`;
+});
 
 async function dhammaLoadGraphView(q) {
   if (dhammaGraphLoadedFor === q) return; // already loaded, no re-fetch
