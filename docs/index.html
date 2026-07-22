@@ -229,7 +229,6 @@ a:hover { text-decoration: underline; }
 .gotama-msg-sources ul { margin: 6px 0 0 0; padding-left: 18px; }
 .gotama-msg-sources a { color: var(--accent); }
 .gotama-msg-trace { margin-top: 8px; font-size: 0.78em; color: var(--text-light); }
-.gotama-msg-trace-empty { opacity: 0.75; }
 .gotama-msg-trace summary { cursor: pointer; }
 .gotama-msg-trace ul { margin: 6px 0 0 0; padding-left: 4px; list-style: none; }
 .gotama-msg-trace li { padding: 2px 0; }
@@ -945,6 +944,24 @@ async function init() {
     app.innerHTML = '<div class="error-msg">无法加载经文数据: ' + e.message + '</div>';
   }
 }
+
+// Safety net: route() dispatches to async render functions without
+// awaiting them, so a rejection inside one of those (a fetch failing
+// partway through a render, a race between two quick route changes,
+// etc.) becomes an *unhandled* promise rejection - route()'s own
+// try/catch (in init(), see above) has already returned by the time
+// that happens, so nothing normally catches it. Left unhandled, the
+// user is stuck on whatever was already in #app - typically just the
+// "加载中…" placeholder a render function set before its await, which
+// reads as a blank page. This won't identify the specific cause, but it
+// guarantees the user always gets a retry affordance instead of silence.
+window.addEventListener('unhandledrejection', (event) => {
+  if (!app) return;
+  const isEmptyish = !app.innerHTML.trim() || /加载中|正在/.test(app.innerHTML) && app.innerHTML.length < 400;
+  if (!isEmptyish) return; // a route that already rendered real content shouldn't be clobbered by an unrelated background rejection
+  console.error('Unhandled render error:', event.reason);
+  app.innerHTML = `<div class="error-msg">页面加载遇到问题，请<a href="javascript:location.reload()">刷新重试</a>。</div>`;
+});
 
 // Router
 function route() {
@@ -5798,12 +5815,8 @@ function gotamaMessageMetaHtml(m) {
 }
 
 const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄' };
-// Always renders something, even for zero tool calls - so "本轮未联网
-//检索" is visible whenever the model answers (including a "没有出处"
-// claim) without having actually searched, instead of silently showing
-// nothing and leaving that ambiguous.
 function gotamaToolTraceHtml(trace) {
-  if (!trace || !trace.length) return `<div class="gotama-msg-trace gotama-msg-trace-empty">🔍 本轮未联网检索</div>`;
+  if (!trace || !trace.length) return '';
   return `<details class="gotama-msg-trace"><summary>查看本轮检索过程（${trace.length} 步）</summary><ul>${trace.map(t =>
     `<li>${_GOTAMA_TOOL_ICON[t.tool] || '·'} ${communityEscape(t.label)}${t.detail ? '：' + communityEscape(t.detail) : ''}${t.ok ? '' : ' <span class="gotama-trace-fail">（失败）</span>'}</li>`
   ).join('')}</ul></details>`;
