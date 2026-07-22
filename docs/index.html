@@ -4196,6 +4196,7 @@ async function renderProfile() {
     <button class="${communityProfileTab === 'posts' ? 'active' : ''}" onclick="communityProfileSwitchTab('posts',this)">我的博客</button>
     <button class="${communityProfileTab === 'bookmarks' ? 'active' : ''}" onclick="communityProfileSwitchTab('bookmarks',this)">我的收藏</button>
     <button class="${communityProfileTab === 'quota' ? 'active' : ''}" onclick="communityProfileSwitchTab('quota',this)">AI 额度</button>
+    <button class="${communityProfileTab === 'api-config' ? 'active' : ''}" onclick="communityProfileSwitchTab('api-config',this)">自定义 API</button>
     ${user.role === 'admin' ? `<button class="${communityProfileTab === 'admin-members' ? 'active' : ''}" onclick="communityProfileSwitchTab('admin-members',this)">成员管理</button>` : ''}
   </div>`;
   html += `<div id="profile-tab-content" class="loading">加载中…</div>`;
@@ -4316,9 +4317,95 @@ async function communityLoadProfileTab(tab, user) {
     return;
   }
 
+  if (tab === 'api-config') {
+    await communityRenderApiConfigTab(content);
+    return;
+  }
+
   if (tab === 'admin-members') {
     await communityRenderAdminMembersTab(content);
     return;
+  }
+}
+
+async function communityRenderApiConfigTab(content) {
+  content.className = 'profile-section';
+  content.innerHTML = '加载中…';
+  let config;
+  try {
+    const res = await fetch(`${API_BASE}/api/user/api-config`, { headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('加载失败');
+    config = await res.json();
+  } catch (e) {
+    content.className = 'error-msg';
+    content.textContent = '加载失败：' + e.message;
+    return;
+  }
+
+  const hasConfig = !!config;
+  content.innerHTML = `
+    <h3 style="margin-top:0">自定义模型 API</h3>
+    <p style="color:var(--text-light);font-size:0.9em;margin-top:-8px">
+      配置你自己的 OpenAI 兼容模型服务（Base URL + API Key + 模型名），"问问乔达摩先生"等 AI 功能将优先使用你自己的配置，不再扣除站内 AI 额度。
+      API Key 加密保存，保存后仅显示掩码，不会再明文返回。
+    </p>
+    <div class="profile-field-row"><label>Base URL</label><input id="api-config-base-url" placeholder="https://api.example.com/v1" value="${communityEscape(hasConfig ? config.base_url : '')}"></div>
+    <div class="profile-field-row"><label>模型名称</label><input id="api-config-model" placeholder="例如 gpt-4o-mini" value="${communityEscape(hasConfig ? config.model_name : '')}"></div>
+    <div class="profile-field-row"><label>API Key</label><input id="api-config-key" type="password" placeholder="${hasConfig ? communityEscape(config.api_key_masked) + '（留空则保持不变）' : '首次保存必须填写'}"></div>
+    <div class="profile-field-row"><label>启用</label><input id="api-config-enabled" type="checkbox" style="width:auto" ${!hasConfig || config.enabled ? 'checked' : ''}></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+      <button onclick="communitySaveApiConfig()">保存</button>
+      <button onclick="communityTestApiConfig()">测试连接</button>
+      ${hasConfig ? `<button onclick="communityDeleteApiConfig()" style="color:#c0392b">删除配置</button>` : ''}
+    </div>
+    <div id="api-config-test-result" style="margin-top:10px;font-size:0.9em"></div>
+    ${hasConfig ? `<div style="margin-top:10px;color:var(--text-light);font-size:0.85em">上次更新：${communityFormatDate(config.updated_at)}</div>` : ''}
+  `;
+}
+
+async function communitySaveApiConfig() {
+  const base_url = document.getElementById('api-config-base-url').value.trim();
+  const model_name = document.getElementById('api-config-model').value.trim();
+  const api_key = document.getElementById('api-config-key').value;
+  const enabled = document.getElementById('api-config-enabled').checked;
+  if (!base_url || !model_name) { alert('请填写 Base URL 和模型名称'); return; }
+  try {
+    const res = await fetch(`${API_BASE}/api/user/api-config`, {
+      method: 'PUT', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ base_url, model_name, api_key: api_key || undefined, enabled }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '保存失败');
+    communityLoadProfileTab('api-config', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communityTestApiConfig() {
+  const resultEl = document.getElementById('api-config-test-result');
+  resultEl.textContent = '正在测试连接…';
+  resultEl.style.color = 'var(--text-light)';
+  try {
+    const res = await fetch(`${API_BASE}/api/user/api-config/test`, { method: 'POST', headers: communityAuthHeaders() });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '测试失败');
+    resultEl.textContent = (data.ok ? '✓ ' : '✗ ') + data.message;
+    resultEl.style.color = data.ok ? '#2e7d32' : '#c0392b';
+  } catch (e) {
+    resultEl.textContent = '✗ ' + e.message;
+    resultEl.style.color = '#c0392b';
+  }
+}
+
+async function communityDeleteApiConfig() {
+  if (!confirm('确认删除自定义 API 配置？删除后 AI 功能将改用站内默认模型与额度。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/user/api-config`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) { const data = await res.json().catch(() => ({})); throw new Error(data.detail || '删除失败'); }
+    communityLoadProfileTab('api-config', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
   }
 }
 
