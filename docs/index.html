@@ -228,6 +228,14 @@ a:hover { text-decoration: underline; }
 .gotama-msg-sources summary { cursor: pointer; }
 .gotama-msg-sources ul { margin: 6px 0 0 0; padding-left: 18px; }
 .gotama-msg-sources a { color: var(--accent); }
+.gotama-msg-trace { margin-top: 8px; font-size: 0.78em; color: var(--text-light); }
+.gotama-msg-trace summary { cursor: pointer; }
+.gotama-msg-trace ul { margin: 6px 0 0 0; padding-left: 4px; list-style: none; }
+.gotama-msg-trace li { padding: 2px 0; }
+.gotama-trace-fail { color: #b8534a; }
+.gotama-msg-body blockquote { margin: 6px 0; padding: 4px 12px; border-left: 3px solid var(--border); color: var(--text-light); }
+.gotama-msg-body hr { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
+.gotama-msg-body a { color: var(--accent); word-break: break-all; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
 .gotama-msg-meta { margin-top: 6px; font-size: 0.72em; color: var(--text-light); }
 .gotama-empty-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-light); gap: 8px; text-align: center; padding: 20px; }
@@ -5752,25 +5760,32 @@ async function gotamaDeleteConv(id) {
 // Small dedicated renderer (not dhammaRenderSynthesisMarkdown - that one
 // strips structural dashes specific to the dhamma synthesis prompt shape,
 // which doesn't apply here) - headings, bold, italic, strikethrough,
-// lists, paragraphs. Escaped first so raw HTML in a message can't inject.
+// blockquotes, horizontal rules, lists, paragraphs, and auto-linked bare
+// URLs. Escaped first so raw HTML in a message can't inject.
 function gotamaRenderMarkdown(text) {
   const lines = dhammaEscapeHtml(text || '').split('\n');
-  let html = '', inList = false;
+  let html = '', inList = false, inQuote = false;
   const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
+  const closeQuote = () => { if (inQuote) { html += '</blockquote>'; inQuote = false; } };
   for (const line of lines) {
-    if (/^###\s+/.test(line)) { closeList(); html += `<h5>${line.replace(/^###\s+/, '')}</h5>`; continue; }
-    if (/^##\s+/.test(line)) { closeList(); html += `<h4>${line.replace(/^##\s+/, '')}</h4>`; continue; }
-    if (/^#\s+/.test(line)) { closeList(); html += `<h3>${line.replace(/^#\s+/, '')}</h3>`; continue; }
+    if (/^(---+|\*\*\*+)\s*$/.test(line)) { closeList(); closeQuote(); html += '<hr>'; continue; }
+    if (/^###\s+/.test(line)) { closeList(); closeQuote(); html += `<h5>${line.replace(/^###\s+/, '')}</h5>`; continue; }
+    if (/^##\s+/.test(line)) { closeList(); closeQuote(); html += `<h4>${line.replace(/^##\s+/, '')}</h4>`; continue; }
+    if (/^#\s+/.test(line)) { closeList(); closeQuote(); html += `<h3>${line.replace(/^#\s+/, '')}</h3>`; continue; }
+    if (/^&gt;\s?/.test(line)) { closeList(); if (!inQuote) { html += '<blockquote>'; inQuote = true; } html += `<p>${line.replace(/^&gt;\s?/, '')}</p>`; continue; }
+    closeQuote();
     if (/^[*-]\s+/.test(line)) { if (!inList) { html += '<ul>'; inList = true; } html += `<li>${line.replace(/^[*-]\s+/, '')}</li>`; continue; }
     closeList();
     if (line.trim() === '') continue;
     html += `<p>${line}</p>`;
   }
   closeList();
+  closeQuote();
   return html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/~~(.+?)~~/g, '<s>$1</s>')
-    .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>');
+    .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>')
+    .replace(/(https?:\/\/[^\s<)\]"']+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
 }
 
 function gotamaMessageMetaHtml(m) {
@@ -5778,6 +5793,14 @@ function gotamaMessageMetaHtml(m) {
   const parts = [`输入 ${m.request_input_tokens ?? 0}`, `输出 ${m.request_output_tokens ?? 0}`, `共 ${m.request_total_tokens} tokens`];
   if (m.elapsed_seconds) parts.push(`用时 ${m.elapsed_seconds.toFixed(1)}s`);
   return `<div class="gotama-msg-meta">${parts.join(' · ')}</div>`;
+}
+
+const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄' };
+function gotamaToolTraceHtml(trace) {
+  if (!trace || !trace.length) return '';
+  return `<details class="gotama-msg-trace"><summary>查看本轮检索过程（${trace.length} 步）</summary><ul>${trace.map(t =>
+    `<li>${_GOTAMA_TOOL_ICON[t.tool] || '·'} ${communityEscape(t.label)}${t.detail ? '：' + communityEscape(t.detail) : ''}${t.ok ? '' : ' <span class="gotama-trace-fail">（失败）</span>'}</li>`
+  ).join('')}</ul></details>`;
 }
 
 function gotamaSourcesHtml(sources) {
@@ -5799,7 +5822,7 @@ function gotamaRenderMessages() {
       return `<div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>`;
     }
     const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
-    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>`;
+    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
