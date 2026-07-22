@@ -229,11 +229,12 @@ a:hover { text-decoration: underline; }
 .gotama-msg-sources ul { margin: 6px 0 0 0; padding-left: 18px; }
 .gotama-msg-sources a { color: var(--accent); }
 .gotama-msg-trace { margin-top: 8px; font-size: 0.78em; color: var(--text-light); }
+.gotama-msg-trace-empty { opacity: 0.75; }
 .gotama-msg-trace summary { cursor: pointer; }
 .gotama-msg-trace ul { margin: 6px 0 0 0; padding-left: 4px; list-style: none; }
 .gotama-msg-trace li { padding: 2px 0; }
 .gotama-trace-fail { color: #b8534a; }
-.gotama-msg-body blockquote { margin: 6px 0; padding: 4px 12px; border-left: 3px solid var(--border); color: var(--text-light); }
+.gotama-msg-body blockquote { margin: 6px 0; padding: 4px 12px; border-left: 3px solid var(--accent-light, var(--accent)); background: rgba(0,0,0,0.04); color: var(--text); }
 .gotama-msg-body hr { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
 .gotama-msg-body a { color: var(--accent); word-break: break-all; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
@@ -744,6 +745,7 @@ a:hover { text-decoration: underline; }
  * whenever widths vary even slightly. Grid's auto-fill columns are shared
  * across all rows, which is what keeps a wrapped second row lined up. */
 .dhamma-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; align-items: stretch; }
+.dhamma-cards + .dhamma-cards { margin-top: 10px; }
 .dhamma-card-pair {
   grid-column: span 2; display: flex; gap: 8px; border: 2px solid var(--accent-light);
   border-radius: 8px; padding: 6px; background: var(--hover-bg);
@@ -5796,8 +5798,12 @@ function gotamaMessageMetaHtml(m) {
 }
 
 const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄' };
+// Always renders something, even for zero tool calls - so "本轮未联网
+//检索" is visible whenever the model answers (including a "没有出处"
+// claim) without having actually searched, instead of silently showing
+// nothing and leaving that ambiguous.
 function gotamaToolTraceHtml(trace) {
-  if (!trace || !trace.length) return '';
+  if (!trace || !trace.length) return `<div class="gotama-msg-trace gotama-msg-trace-empty">🔍 本轮未联网检索</div>`;
   return `<details class="gotama-msg-trace"><summary>查看本轮检索过程（${trace.length} 步）</summary><ul>${trace.map(t =>
     `<li>${_GOTAMA_TOOL_ICON[t.tool] || '·'} ${communityEscape(t.label)}${t.detail ? '：' + communityEscape(t.detail) : ''}${t.ok ? '' : ' <span class="gotama-trace-fail">（失败）</span>'}</li>`
   ).join('')}</ul></details>`;
