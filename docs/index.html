@@ -4112,6 +4112,7 @@ async function renderProfile() {
     <button class="${communityProfileTab === 'posts' ? 'active' : ''}" onclick="communityProfileSwitchTab('posts',this)">我的博客</button>
     <button class="${communityProfileTab === 'bookmarks' ? 'active' : ''}" onclick="communityProfileSwitchTab('bookmarks',this)">我的收藏</button>
     <button class="${communityProfileTab === 'quota' ? 'active' : ''}" onclick="communityProfileSwitchTab('quota',this)">AI 额度</button>
+    ${user.role === 'admin' ? `<button class="${communityProfileTab === 'admin-members' ? 'active' : ''}" onclick="communityProfileSwitchTab('admin-members',this)">成员管理</button>` : ''}
   </div>`;
   html += `<div id="profile-tab-content" class="loading">加载中…</div>`;
   app.innerHTML = html;
@@ -4230,6 +4231,83 @@ async function communityLoadProfileTab(tab, user) {
     await communityRenderQuotaTab(content, user);
     return;
   }
+
+  if (tab === 'admin-members') {
+    await communityRenderAdminMembersTab(content);
+    return;
+  }
+}
+
+async function communityRenderAdminMembersTab(content) {
+  content.className = 'profile-section';
+  content.innerHTML = '加载中…';
+  let users, requests;
+  try {
+    [users, requests] = await Promise.all([
+      fetch(`${API_BASE}/api/admin/users`, { headers: communityAuthHeaders() }).then(r => r.json()),
+      fetch(`${API_BASE}/api/admin/quota-requests?status=pending`, { headers: communityAuthHeaders() }).then(r => r.json()),
+    ]);
+  } catch (e) {
+    content.className = 'error-msg';
+    content.textContent = '加载失败：' + e.message;
+    return;
+  }
+
+  let html = `<h3 style="margin-top:0">待处理的额度申请</h3>`;
+  html += requests.length ? requests.map(r => `
+    <div class="community-list-item">
+      <div class="title">${communityEscape(r.user_email)}</div>
+      <div class="meta">${communityFormatDate(r.created_at)}${r.note ? ' · ' + communityEscape(r.note) : ''}</div>
+      <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+        <input type="number" step="0.01" value="10" style="width:90px" id="qr-amount-${r.id}">
+        <button onclick="communityDecideQuotaRequest('${r.id}', true)">批准</button>
+        <button onclick="communityDecideQuotaRequest('${r.id}', false)">拒绝</button>
+      </div>
+    </div>`).join('') : '<div class="community-empty">暂无待处理的申请</div>';
+
+  html += `<h3>成员与权限</h3>`;
+  html += users.map(u => `
+    <div class="community-list-item">
+      <div class="title">${communityEscape(u.display_name)} <span style="font-weight:400;color:var(--text-light)">${communityEscape(u.email)}</span></div>
+      <div class="meta">当前角色：${u.role === 'admin' ? '管理员' : u.role === 'editor' ? '编辑' : '成员'}</div>
+      <div style="margin-top:6px">
+        ${u.role === 'admin'
+          ? `<button onclick="communitySetUserRole('${u.id}','member')">降级为成员</button>`
+          : `<button onclick="communitySetUserRole('${u.id}','admin')">设为管理员</button>`}
+      </div>
+    </div>`).join('');
+  content.innerHTML = html;
+}
+
+async function communitySetUserRole(userId, role) {
+  if (!confirm(role === 'admin' ? '确认将该用户设为管理员？' : '确认将该管理员降级为普通成员？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/users/${userId}/role`, {
+      method: 'PATCH', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ role }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '操作失败');
+    communityLoadProfileTab('admin-members', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communityDecideQuotaRequest(requestId, approve) {
+  const amountEl = document.getElementById(`qr-amount-${requestId}`);
+  const addRmb = approve ? parseFloat(amountEl.value) || 0 : 0;
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/quota-requests/${requestId}/decide`, {
+      method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ approve, add_rmb: addRmb }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '操作失败');
+    communityLoadProfileTab('admin-members', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
 }
 
 async function communityRenderQuotaTab(content, user) {
@@ -4264,6 +4342,10 @@ async function communityRenderQuotaTab(content, user) {
       <div class="quota-stat"><span class="label">总计</span><span class="value">${stats.total_tokens.toLocaleString()}</span></div>
     </div>`;
 
+  if (!quota.is_unlimited) {
+    html += `<h4>申请额度</h4><div id="quota-request-area">加载中…</div>`;
+  }
+
   if (user.role === 'admin') {
     html += `<h4>管理员：分配额度</h4>
       <div class="profile-field-row"><label>用户邮箱</label><input id="quota-grant-email" type="email" placeholder="member@example.com"></div>
@@ -4273,6 +4355,68 @@ async function communityRenderQuotaTab(content, user) {
       <p id="quota-grant-msg" class="form-msg"></p>`;
   }
   content.innerHTML = html;
+  if (!quota.is_unlimited) await communityRenderQuotaRequestArea();
+}
+
+async function communityRenderQuotaRequestArea() {
+  const area = document.getElementById('quota-request-area');
+  if (!area) return;
+  let mine;
+  try {
+    mine = await fetch(`${API_BASE}/api/dhamma/quota-requests/mine`, { headers: communityAuthHeaders() }).then(r => r.json());
+  } catch (e) {
+    area.innerHTML = `<p class="error-msg">加载申请记录失败</p>`;
+    return;
+  }
+  const pending = mine.find(r => r.status === 'pending');
+  const statusLabel = { pending: '待处理', approved: '已批准', rejected: '已拒绝', cancelled: '已取消' };
+  let html = '';
+  if (pending) {
+    html += `<p>你有一条待处理的额度申请（提交于 ${communityFormatDate(pending.created_at)}）</p>
+      <button onclick="communityCancelQuotaRequest('${pending.id}')">取消申请</button>`;
+  } else {
+    html += `<div class="profile-field-row"><label>申请说明（可选）</label><input id="quota-request-note" placeholder="例如：正在写论文，需要额外额度"></div>
+      <button onclick="communitySubmitQuotaRequest()">向管理员申请额度</button>`;
+  }
+  html += `<p id="quota-request-msg" class="form-msg"></p>`;
+  if (mine.length) {
+    html += `<div style="margin-top:10px">${mine.slice(0, 5).map(r => `
+      <div class="community-list-item">
+        <div class="meta">${communityFormatDate(r.created_at)} · ${statusLabel[r.status] || r.status}${r.decided_note ? ' · ' + communityEscape(r.decided_note) : ''}</div>
+      </div>`).join('')}</div>`;
+  }
+  area.innerHTML = html;
+}
+
+async function communitySubmitQuotaRequest() {
+  const msg = document.getElementById('quota-request-msg');
+  const note = document.getElementById('quota-request-note').value.trim();
+  msg.textContent = '提交中…';
+  msg.className = 'form-msg';
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/quota-requests`, {
+      method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ note }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '提交失败');
+    await communityRenderQuotaRequestArea();
+  } catch (e) {
+    msg.textContent = e.message;
+    msg.className = 'form-msg error-msg';
+  }
+}
+
+async function communityCancelQuotaRequest(requestId) {
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/quota-requests/${requestId}/cancel`, {
+      method: 'POST', headers: communityAuthHeaders(),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '取消失败');
+    await communityRenderQuotaRequestArea();
+  } catch (e) {
+    alert(e.message);
+  }
 }
 
 async function communityGrantQuota() {
