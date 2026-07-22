@@ -228,6 +228,9 @@ a:hover { text-decoration: underline; }
 .gotama-msg-sources summary { cursor: pointer; }
 .gotama-msg-sources ul { margin: 6px 0 0 0; padding-left: 18px; }
 .gotama-msg-sources a { color: var(--accent); }
+.gotama-msg-sources li { margin-bottom: 4px; }
+.gotama-source-order { color: var(--text-light); }
+.gotama-source-meta { display: block; font-size: 0.9em; opacity: 0.7; margin-left: 16px; }
 .gotama-msg-trace { margin-top: 8px; font-size: 0.78em; color: var(--text-light); }
 .gotama-msg-trace summary { cursor: pointer; }
 .gotama-msg-trace ul { margin: 6px 0 0 0; padding-left: 4px; list-style: none; }
@@ -5825,9 +5828,12 @@ function gotamaToolTraceHtml(trace) {
 
 function gotamaSourcesHtml(sources) {
   if (!sources || !sources.length) return '';
-  return `<details class="gotama-msg-sources"><summary>参考来源（${sources.length}）</summary><ul>${sources.map(s =>
-    `<li><a href="${communityEscape(s.url)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || s.url)}</a>${s.fetched ? '' : ' <span style="opacity:0.7">（仅摘要，未抓取正文）</span>'}</li>`
-  ).join('')}</ul></details>`;
+  return `<details class="gotama-msg-sources"><summary>参考来源（${sources.length}）</summary><ul>${sources.map((s, i) => {
+    const order = s.order || (i + 1);
+    const typeLabel = s.fetched ? '已读取正文' : '搜索结果';
+    return `<li><span class="gotama-source-order">${order}.</span> <a href="${communityEscape(s.url)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || s.url)}</a>
+      <span class="gotama-source-meta">${communityEscape(s.domain || '')} · ${typeLabel}</span></li>`;
+  }).join('')}</ul></details>`;
 }
 
 function gotamaRenderMessages() {
@@ -5908,6 +5914,7 @@ async function gotamaSend() {
     let buffer = '';
     let sawFinal = false;
     let sawError = null;
+    let fetchedPageCount = 0;
     const thinkingEl = () => document.getElementById('gotamaThinking');
 
     while (true) {
@@ -5923,15 +5930,29 @@ async function gotamaSend() {
         try { evt = JSON.parse(line.slice(5).trim()); } catch (_) { continue; }
 
         if (evt.type === 'delta') {
-          thinkingEl()?.remove();
+          if (thinkingEl()) thinkingEl().textContent = '正在整理回答…';
           const last = gotamaMessages[gotamaMessages.length - 1];
+          if (!last.content) thinkingEl()?.remove(); // only clear the status line once real text starts appearing
           last.content += evt.text;
           document.getElementById('gotamaLastAssistantBody').innerHTML = gotamaRenderMarkdown(last.content);
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'tool_start') {
-          const label = evt.tool_name === 'web_search' ? '正在搜索…' : '正在读取网页…';
+          const label = evt.tool_name === 'web_search'
+            ? (evt.detail ? `正在搜索：${evt.detail}` : '正在搜索相关资料…')
+            : (evt.detail ? `正在阅读：${evt.detail}` : '正在读取网页…');
           if (thinkingEl()) thinkingEl().textContent = label;
-          else el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">${label}</div>`);
+          else el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">${communityEscape(label)}</div>`);
+          el.scrollTop = el.scrollHeight;
+        } else if (evt.type === 'tool_end') {
+          if (!thinkingEl()) continue;
+          if (evt.tool_name === 'web_search') {
+            thinkingEl().textContent = evt.ok ? `找到 ${evt.result_count || 0} 个来源，正在核对引用…` : '搜索未返回结果，继续处理…';
+          } else {
+            if (evt.ok) fetchedPageCount += 1;
+            thinkingEl().textContent = evt.ok
+              ? `已读取 ${fetchedPageCount} 个来源正文，正在核对引用…`
+              : '该网页读取失败，继续处理…';
+          }
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'final') {
           sawFinal = true;
