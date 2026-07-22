@@ -229,6 +229,7 @@ a:hover { text-decoration: underline; }
 .gotama-msg-sources ul { margin: 6px 0 0 0; padding-left: 18px; }
 .gotama-msg-sources a { color: var(--accent); }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
+.gotama-msg-meta { margin-top: 6px; font-size: 0.72em; color: var(--text-light); }
 .gotama-empty-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-light); gap: 8px; text-align: center; padding: 20px; }
 .gotama-input-bar { border-top: 1px solid var(--border); padding: 12px 16px; display: flex; gap: 10px; align-items: flex-end; }
 .gotama-input-bar textarea { flex: 1; resize: none; min-height: 42px; max-height: 160px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95em; background: var(--card-bg); color: var(--text); }
@@ -5725,6 +5726,44 @@ async function gotamaDeleteConv(id) {
   }
 }
 
+// Small dedicated renderer (not dhammaRenderSynthesisMarkdown - that one
+// strips structural dashes specific to the dhamma synthesis prompt shape,
+// which doesn't apply here) - headings, bold, italic, strikethrough,
+// lists, paragraphs. Escaped first so raw HTML in a message can't inject.
+function gotamaRenderMarkdown(text) {
+  const lines = dhammaEscapeHtml(text || '').split('\n');
+  let html = '', inList = false;
+  const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
+  for (const line of lines) {
+    if (/^###\s+/.test(line)) { closeList(); html += `<h5>${line.replace(/^###\s+/, '')}</h5>`; continue; }
+    if (/^##\s+/.test(line)) { closeList(); html += `<h4>${line.replace(/^##\s+/, '')}</h4>`; continue; }
+    if (/^#\s+/.test(line)) { closeList(); html += `<h3>${line.replace(/^#\s+/, '')}</h3>`; continue; }
+    if (/^[*-]\s+/.test(line)) { if (!inList) { html += '<ul>'; inList = true; } html += `<li>${line.replace(/^[*-]\s+/, '')}</li>`; continue; }
+    closeList();
+    if (line.trim() === '') continue;
+    html += `<p>${line}</p>`;
+  }
+  closeList();
+  return html
+    .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+    .replace(/~~(.+?)~~/g, '<s>$1</s>')
+    .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>');
+}
+
+function gotamaMessageMetaHtml(m) {
+  if (!m.request_total_tokens && m.request_total_tokens !== 0) return '';
+  const parts = [`输入 ${m.request_input_tokens ?? 0}`, `输出 ${m.request_output_tokens ?? 0}`, `共 ${m.request_total_tokens} tokens`];
+  if (m.elapsed_seconds) parts.push(`用时 ${m.elapsed_seconds.toFixed(1)}s`);
+  return `<div class="gotama-msg-meta">${parts.join(' · ')}</div>`;
+}
+
+function gotamaSourcesHtml(sources) {
+  if (!sources || !sources.length) return '';
+  return `<details class="gotama-msg-sources"><summary>参考来源（${sources.length}）</summary><ul>${sources.map(s =>
+    `<li><a href="${communityEscape(s.url)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || s.url)}</a>${s.fetched ? '' : ' <span style="opacity:0.7">（仅摘要，未抓取正文）</span>'}</li>`
+  ).join('')}</ul></details>`;
+}
+
 function gotamaRenderMessages() {
   const el = document.getElementById('gotamaMessages');
   if (!el) return;
@@ -5732,17 +5771,12 @@ function gotamaRenderMessages() {
     el.innerHTML = `<div class="gotama-empty-state">👋 向乔达摩先生提一个问题吧<br><span style="font-size:0.85em">基于巴利三藏的 AI 视角诠释，回答会尽量引用可核实的来源，但不代表佛陀本人的真实教导</span></div>`;
     return;
   }
-  el.innerHTML = gotamaMessages.map(m => {
+  el.innerHTML = gotamaMessages.map((m, i) => {
     if (m.role === 'user') {
-      return `<div class="gotama-msg user">${communityEscape(m.content)}</div>`;
+      return `<div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>`;
     }
-    let sourcesHtml = '';
-    if (m.sources && m.sources.length) {
-      sourcesHtml = `<details class="gotama-msg-sources"><summary>参考来源（${m.sources.length}）</summary><ul>${m.sources.map(s =>
-        `<li><a href="${communityEscape(s.url)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || s.url)}</a>${s.fetched ? '' : ' <span style="opacity:0.7">（仅摘要，未抓取正文）</span>'}</li>`
-      ).join('')}</ul></details>`;
-    }
-    return `<div class="gotama-msg assistant"><div class="gotama-msg-body">${communityEscape(m.content)}</div>${sourcesHtml}</div>`;
+    const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
+    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
@@ -5759,6 +5793,7 @@ async function gotamaSend() {
   btn.textContent = '思考中…';
   input.value = '';
   input.disabled = true;
+  const startedAt = performance.now();
 
   try {
     let convId = gotamaActiveId;
@@ -5776,36 +5811,91 @@ async function gotamaSend() {
     }
 
     gotamaMessages.push({ role: 'user', content, sources: [], created_at: new Date().toISOString() });
+    gotamaMessages.push({ role: 'assistant', content: '', sources: [], created_at: new Date().toISOString(), _streaming: true });
     gotamaRenderMessages();
-    document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">乔达摩先生正在检索经典、组织回答…（可能需要一分钟）</div>`);
+    const el = document.getElementById('gotamaMessages');
+    el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">乔达摩先生正在组织回答…</div>`);
+    el.scrollTop = el.scrollHeight;
 
+    const controller = new AbortController();
     // Tool loop can take a while (multiple search/fetch rounds) - a much
     // longer budget than the usual 45s default, consistent with how the
     // AI trace search also widens its timeout for a genuinely slow call.
-    const res = await communityFetchWithTimeout(
-      `${API_BASE}/api/gotama/conversations/${convId}/messages`,
-      { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()), body: JSON.stringify({ content }) },
-      150000
-    );
-    const data = await res.json();
+    const timeoutId = setTimeout(() => controller.abort(), 150000);
+    const res = await fetch(`${API_BASE}/api/gotama/conversations/${convId}/messages`, {
+      method: 'POST',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ content }),
+      signal: controller.signal,
+    });
     if (!res.ok) {
-      const detail = data.detail || '请求失败';
+      let detail = '请求失败';
+      try { detail = (await res.json()).detail || detail; } catch (_) {}
       throw Object.assign(new Error(detail), { status: res.status });
     }
 
-    gotamaMessages[gotamaMessages.length - 1] = data.user_message;
-    let flag = '';
-    if (data.hit_iteration_limit) flag += '<div class="gotama-msg-flag">⚠ 已达检索轮次上限，回答可能不完整</div>';
-    if (data.citation_warning) flag += '<div class="gotama-msg-flag">⚠ 部分链接因无法核实来源已被移除</div>';
-    gotamaMessages.push({ ...data.assistant_message, _flag: flag });
-    gotamaLoadConversations(); // refresh title (may have been auto-set) and ordering
+    // Manual SSE parsing over fetch's streaming body - EventSource can't
+    // send the Authorization header a POST body needs, so this reads the
+    // text/event-stream response directly instead.
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    let sawFinal = false;
+    let sawError = null;
+    const thinkingEl = () => document.getElementById('gotamaThinking');
 
-    const el = document.getElementById('gotamaMessages');
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const events = buffer.split('\n\n');
+      buffer = events.pop();
+      for (const raw of events) {
+        const line = raw.split('\n').find(l => l.startsWith('data:'));
+        if (!line) continue;
+        let evt;
+        try { evt = JSON.parse(line.slice(5).trim()); } catch (_) { continue; }
+
+        if (evt.type === 'delta') {
+          thinkingEl()?.remove();
+          const last = gotamaMessages[gotamaMessages.length - 1];
+          last.content += evt.text;
+          document.getElementById('gotamaLastAssistantBody').innerHTML = gotamaRenderMarkdown(last.content);
+          el.scrollTop = el.scrollHeight;
+        } else if (evt.type === 'tool_start') {
+          const label = evt.tool_name === 'web_search' ? '正在搜索…' : '正在读取网页…';
+          if (thinkingEl()) thinkingEl().textContent = label;
+          else el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">${label}</div>`);
+          el.scrollTop = el.scrollHeight;
+        } else if (evt.type === 'final') {
+          sawFinal = true;
+          gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
+          const elapsed = (performance.now() - startedAt) / 1000;
+          let flag = '';
+          if (evt.hit_iteration_limit) flag += '<div class="gotama-msg-flag">⚠ 已达检索预算上限，回答可能不完整</div>';
+          if (evt.citation_warning) flag += '<div class="gotama-msg-flag">⚠ 部分链接因无法核实来源已被移除</div>';
+          gotamaMessages[gotamaMessages.length - 1] = {
+            ...evt.assistant_message,
+            request_input_tokens: evt.request_input_tokens,
+            request_output_tokens: evt.request_output_tokens,
+            request_total_tokens: evt.request_total_tokens,
+            elapsed_seconds: elapsed,
+            _flag: flag,
+          };
+          gotamaLoadConversations(); // refresh title (may have been auto-set) and ordering
+        } else if (evt.type === 'error') {
+          sawError = evt.detail || '请求失败';
+        }
+      }
+    }
+    clearTimeout(timeoutId);
+
+    if (sawError) throw new Error(sawError);
+    if (!sawFinal) throw new Error('连接中断，回答可能不完整');
     gotamaRenderMessages();
-    if (flag) el.insertAdjacentHTML('beforeend', flag);
-    el.scrollTop = el.scrollHeight;
   } catch (e) {
     document.getElementById('gotamaThinking')?.remove();
+    gotamaMessages.pop(); // remove the incomplete streaming placeholder
     const msg = e.status === 402
       ? `${e.message} <a href="#/profile">前往账号页面</a>`
       : e.status === 409
@@ -5813,6 +5903,7 @@ async function gotamaSend() {
         : e.status === 401
           ? '登录已过期，请<a href="#/profile">重新登录</a>'
           : communityTimeoutMessage(e);
+    gotamaRenderMessages();
     document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg assistant"><div class="gotama-msg-body error-msg">${msg}</div></div>`);
   } finally {
     document.getElementById('gotamaThinking')?.remove();
