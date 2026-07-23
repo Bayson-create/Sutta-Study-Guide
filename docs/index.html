@@ -4257,6 +4257,7 @@ async function renderProfile() {
     <button class="${communityProfileTab === 'bookmarks' ? 'active' : ''}" onclick="communityProfileSwitchTab('bookmarks',this)">我的收藏</button>
     <button class="${communityProfileTab === 'quota' ? 'active' : ''}" onclick="communityProfileSwitchTab('quota',this)">AI 额度</button>
     <button class="${communityProfileTab === 'api-config' ? 'active' : ''}" onclick="communityProfileSwitchTab('api-config',this)">自定义 API</button>
+    <button class="${communityProfileTab === 'search-api-config' ? 'active' : ''}" onclick="communityProfileSwitchTab('search-api-config',this)">自定义搜索 API</button>
     ${user.role === 'admin' ? `<button class="${communityProfileTab === 'admin-members' ? 'active' : ''}" onclick="communityProfileSwitchTab('admin-members',this)">成员管理</button>` : ''}
   </div>`;
   html += `<div id="profile-tab-content" class="loading">加载中…</div>`;
@@ -4382,6 +4383,11 @@ async function communityLoadProfileTab(tab, user) {
     return;
   }
 
+  if (tab === 'search-api-config') {
+    await communityRenderSearchApiConfigTab(content);
+    return;
+  }
+
   if (tab === 'admin-members') {
     await communityRenderAdminMembersTab(content);
     return;
@@ -4469,6 +4475,89 @@ async function communityDeleteApiConfig() {
   }
 }
 
+async function communityRenderSearchApiConfigTab(content) {
+  content.className = 'profile-section';
+  content.innerHTML = '加载中…';
+  let config;
+  try {
+    const res = await fetch(`${API_BASE}/api/user/search-api-config`, { headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('加载失败');
+    config = await res.json();
+  } catch (e) {
+    content.className = 'error-msg';
+    content.textContent = '加载失败：' + e.message;
+    return;
+  }
+
+  const hasConfig = !!config;
+  content.innerHTML = `
+    <h3 style="margin-top:0">自定义搜索 API</h3>
+    <p style="color:var(--text-light);font-size:0.9em;margin-top:-8px">
+      配置你自己的 Tavily 或 Brave Search API Key，"问问乔达摩先生"等需要联网搜索的功能将优先使用你自己的 Key，
+      不占用站内 Tavily/Brave 的共享配额，也不会从你的额度中扣费。API Key 加密保存，保存后仅显示掩码，不会再明文返回。
+    </p>
+    <div class="profile-field-row"><label>服务商</label>
+      <select id="search-api-config-provider">
+        <option value="tavily" ${hasConfig && config.provider === 'tavily' ? 'selected' : ''}>Tavily</option>
+        <option value="brave" ${hasConfig && config.provider === 'brave' ? 'selected' : ''}>Brave Search</option>
+      </select>
+    </div>
+    <div class="profile-field-row"><label>API Key</label><input id="search-api-config-key" type="password" placeholder="${hasConfig ? communityEscape(config.api_key_masked) + '（留空则保持不变）' : '首次保存必须填写'}"></div>
+    <div class="profile-field-row"><label>启用</label><input id="search-api-config-enabled" type="checkbox" style="width:auto" ${!hasConfig || config.enabled ? 'checked' : ''}></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+      <button onclick="communitySaveSearchApiConfig()">保存</button>
+      <button onclick="communityTestSearchApiConfig()">测试连接</button>
+      ${hasConfig ? `<button onclick="communityDeleteSearchApiConfig()" style="color:#c0392b">删除配置</button>` : ''}
+    </div>
+    <div id="search-api-config-test-result" style="margin-top:10px;font-size:0.9em"></div>
+    ${hasConfig ? `<div style="margin-top:10px;color:var(--text-light);font-size:0.85em">上次更新：${communityFormatDate(config.updated_at)}</div>` : ''}
+  `;
+}
+
+async function communitySaveSearchApiConfig() {
+  const provider = document.getElementById('search-api-config-provider').value;
+  const api_key = document.getElementById('search-api-config-key').value;
+  const enabled = document.getElementById('search-api-config-enabled').checked;
+  try {
+    const res = await fetch(`${API_BASE}/api/user/search-api-config`, {
+      method: 'PUT', headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
+      body: JSON.stringify({ provider, api_key: api_key || undefined, enabled }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '保存失败');
+    communityLoadProfileTab('search-api-config', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function communityTestSearchApiConfig() {
+  const resultEl = document.getElementById('search-api-config-test-result');
+  resultEl.textContent = '正在测试连接…';
+  resultEl.style.color = 'var(--text-light)';
+  try {
+    const res = await fetch(`${API_BASE}/api/user/search-api-config/test`, { method: 'POST', headers: communityAuthHeaders() });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || '测试失败');
+    resultEl.textContent = (data.ok ? '✓ ' : '✗ ') + data.message;
+    resultEl.style.color = data.ok ? '#2e7d32' : '#c0392b';
+  } catch (e) {
+    resultEl.textContent = '✗ ' + e.message;
+    resultEl.style.color = '#c0392b';
+  }
+}
+
+async function communityDeleteSearchApiConfig() {
+  if (!confirm('确认删除自定义搜索 API 配置？删除后搜索功能将改用站内共享的 Tavily/Brave 配额。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/user/search-api-config`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) { const data = await res.json().catch(() => ({})); throw new Error(data.detail || '删除失败'); }
+    communityLoadProfileTab('search-api-config', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
 async function communityRenderAdminMembersTab(content) {
   content.className = 'profile-section';
   content.innerHTML = '加载中…';
@@ -4485,10 +4574,10 @@ async function communityRenderAdminMembersTab(content) {
     return;
   }
 
-  let html = `<h3 style="margin-top:0">搜索 API（Tavily）用量</h3>`;
+  let html = `<h3 style="margin-top:0">搜索 API 用量</h3>`;
   html += `<div class="community-list-item">
-    <div class="title">本月已用 ${tavily.monthly_used} / ${tavily.monthly_limit}，剩余 ${tavily.monthly_remaining} 次</div>
-    <div class="meta">按自然月统计，含请求失败但仍计入 Tavily 配额的调用</div>
+    <div class="title">Tavily：本月已用 ${tavily.tavily_monthly_used} / ${tavily.tavily_monthly_limit}，剩余 ${tavily.tavily_monthly_remaining} 次</div>
+    <div class="meta">按自然月统计，含请求失败但仍计入配额的调用；Brave 作为 Tavily 用完后的衔接方案，本月已用 ${tavily.brave_monthly_used} 次（Brave 未公布硬性月配额，故不展示"剩余"）</div>
   </div>`;
   html += tavily.per_user.length ? `
     <div style="overflow-x:auto">
@@ -5557,21 +5646,46 @@ async function dhammaRunAiTrace(q) {
     results.innerHTML = `<p class="dhamma-empty-note">AI 语义综合溯源需要登录。<a href="#/profile">前往登录</a>，或切换到"关键词命中"模式无需登录即可使用。</p>`;
     return;
   }
-  // Start the relation-graph fetch in parallel with the layer-analysis
-  // request below, rather than waiting for the user to switch to the
-  // "关系图谱" tab afterward - see dhammaKickOffGraphFetch's comment for
-  // why this is safe (independent backend calls, no shared quota/LLM
-  // dependency). If the layer-analysis request itself fails (e.g. no
-  // quota), this pre-fetch is left to resolve on its own - dhammaLoadGraphView
-  // will just pick it up if the user opens the graph tab regardless.
+
+  // 分层分析 and 关系图谱 are independent backend calls (see
+  // dhammaKickOffGraphFetch's comment - the graph never waits on the
+  // LLM synthesis, it only reuses trace()'s already-cached FoJin search
+  // results). Both the toggle buttons and both view containers are
+  // built and shown immediately, before either request resolves, so the
+  // user can switch to "关系图谱" right away instead of it only
+  // appearing once 分层分析 finishes - each panel independently shows
+  // its own loading state and fills in as its own request completes.
   dhammaKickOffGraphFetch(q);
-  results.innerHTML = `<p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒… <span id="dhammaSearchTimer" class="dhamma-search-timer">0.0s</span></p>`;
+  results.innerHTML = `
+    <div class="dhamma-view-toggle">
+      <button type="button" class="active" data-view="layers" id="dhammaViewLayersBtn">分层分析</button>
+      <button type="button" data-view="graph" id="dhammaViewGraphBtn">关系图谱</button>
+    </div>
+    <div id="dhammaLayersView">
+      <p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒… <span id="dhammaSearchTimer" class="dhamma-search-timer">0.0s</span></p>
+    </div>
+    <div id="dhammaGraphView" hidden>
+      <p class="dhamma-empty-note" id="dhammaGraphStatus">正在生成关系图谱…</p>
+      <iframe id="dhammaGraphFrame" class="dhamma-graph-frame" hidden></iframe>
+      <div id="dhammaGraphExplain" class="dhamma-ai-synthesis" hidden></div>
+    </div>
+  `;
+  document.getElementById('dhammaViewLayersBtn').addEventListener('click', () => dhammaSwitchAiView('layers'));
+  document.getElementById('dhammaViewGraphBtn').addEventListener('click', () => dhammaSwitchAiView('graph', q));
+  // Loads (not just displays-when-clicked) right away, in parallel with
+  // the layer-analysis request below - the earlier "lazy, only on tab
+  // switch" behavior was exactly why the graph tab used to only appear
+  // after 分层分析 finished, since the tab itself didn't exist until
+  // trace() succeeded and rebuilt the whole results HTML.
+  dhammaLoadGraphView(q);
+
   const timerStart = performance.now();
   const timerEl = () => document.getElementById('dhammaSearchTimer');
   const timerHandle = setInterval(() => {
     const el = timerEl();
     if (el) el.textContent = ((performance.now() - timerStart) / 1000).toFixed(1) + 's';
   }, 100);
+  const layersView = () => document.getElementById('dhammaLayersView');
   let data, elapsedSeconds;
   try {
     // AI synthesis can legitimately take 20-30s, well past the 45s default
@@ -5587,11 +5701,16 @@ async function dhammaRunAiTrace(q) {
   } catch (err) {
     clearInterval(timerHandle);
     if (mySeq !== dhammaSearchSeq) return;
-    if (err.status === 402) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
-    else if (err.status === 429) results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
-    else if (err.status === 401) results.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
-    else if (err.name === 'AbortError') results.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(communityTimeoutMessage(err))}</p>`;
-    else results.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
+    // Only the layers panel shows the failure - the graph panel (and its
+    // own loading/result state) is a fully separate concern and must
+    // keep working even if 分层分析 itself failed (e.g. no quota left).
+    const lv = layersView();
+    if (!lv) return;
+    if (err.status === 402) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
+    else if (err.status === 429) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
+    else if (err.status === 401) lv.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
+    else if (err.name === 'AbortError') lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(communityTimeoutMessage(err))}</p>`;
+    else lv.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
     return;
   }
   clearInterval(timerHandle);
@@ -5608,18 +5727,6 @@ async function dhammaRunAiTrace(q) {
       <button type="button" class="dhamma-copy-btn" id="dhammaCopyMdBtn">复制 Markdown</button>
     </span>
   </div><p id="dhammaCopyMsg" class="dhamma-copy-msg"></p>`;
-
-  // 分层分析 / 关系图谱 view toggle: both views belong to this same
-  // search result. The graph is fetched lazily (only on first switch to
-  // it), independently of the layered analysis already rendered below,
-  // so it never blocks or re-triggers the AI search. Switching views is
-  // pure show/hide - the layered-analysis DOM (scroll position, open
-  // <details>) is never torn down.
-  html += `<div class="dhamma-view-toggle">
-    <button type="button" class="active" data-view="layers" id="dhammaViewLayersBtn">分层分析</button>
-    <button type="button" data-view="graph" id="dhammaViewGraphBtn">关系图谱</button>
-  </div>`;
-  html += `<div id="dhammaLayersView">`;
 
   const { intro, byLayer, outro } = dhammaSplitSynthesisByLayer(data.synthesis);
   if (intro.trim()) html += `<div class="dhamma-ai-synthesis dhamma-ai-intro">${dhammaRenderSynthesisMarkdown(intro)}</div>`;
@@ -5662,17 +5769,10 @@ async function dhammaRunAiTrace(q) {
       <div class="dhamma-ai-synthesis">${dhammaRenderSynthesisMarkdown(outro)}</div>
     </div>`;
   }
-  html += `</div>`; // #dhammaLayersView
-  html += `<div id="dhammaGraphView" hidden>
-    <p class="dhamma-empty-note" id="dhammaGraphStatus">切换到此视图后加载关系图谱…</p>
-    <iframe id="dhammaGraphFrame" class="dhamma-graph-frame" hidden></iframe>
-    <div id="dhammaGraphExplain" class="dhamma-ai-synthesis" hidden></div>
-  </div>`;
 
-  results.innerHTML = toSimplified(html);
-
-  document.getElementById('dhammaViewLayersBtn').addEventListener('click', () => dhammaSwitchAiView('layers'));
-  document.getElementById('dhammaViewGraphBtn').addEventListener('click', () => dhammaSwitchAiView('graph', q));
+  const lv = layersView();
+  if (!lv) return; // user navigated away/started a new search - graph view (if any) manages its own state independently
+  lv.innerHTML = toSimplified(html);
 
   document.getElementById('dhammaCopyMdBtn').addEventListener('click', () => dhammaCopySynthesisMarkdown(data));
 
