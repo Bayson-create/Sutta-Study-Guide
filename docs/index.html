@@ -5476,6 +5476,14 @@ async function dhammaRunAiTrace(q) {
     results.innerHTML = `<p class="dhamma-empty-note">AI 语义综合溯源需要登录。<a href="#/profile">前往登录</a>，或切换到"关键词命中"模式无需登录即可使用。</p>`;
     return;
   }
+  // Start the relation-graph fetch in parallel with the layer-analysis
+  // request below, rather than waiting for the user to switch to the
+  // "关系图谱" tab afterward - see dhammaKickOffGraphFetch's comment for
+  // why this is safe (independent backend calls, no shared quota/LLM
+  // dependency). If the layer-analysis request itself fails (e.g. no
+  // quota), this pre-fetch is left to resolve on its own - dhammaLoadGraphView
+  // will just pick it up if the user opens the graph tab regardless.
+  dhammaKickOffGraphFetch(q);
   results.innerHTML = `<p class="dhamma-empty-note">正在检索并请 AI 分析"${dhammaEscapeHtml(q)}"，可能需要二三十秒… <span id="dhammaSearchTimer" class="dhamma-search-timer">0.0s</span></p>`;
   const timerStart = performance.now();
   const timerEl = () => document.getElementById('dhammaSearchTimer');
@@ -5577,6 +5585,7 @@ async function dhammaRunAiTrace(q) {
   html += `<div id="dhammaGraphView" hidden>
     <p class="dhamma-empty-note" id="dhammaGraphStatus">切换到此视图后加载关系图谱…</p>
     <iframe id="dhammaGraphFrame" class="dhamma-graph-frame" hidden></iframe>
+    <div id="dhammaGraphExplain" class="dhamma-ai-synthesis" hidden></div>
   </div>`;
 
   results.innerHTML = toSimplified(html);
@@ -5631,28 +5640,92 @@ window.addEventListener('message', (e) => {
   location.hash = `#/dhamma/read/${encodeURIComponent(data.dhammaLineageId)}`;
 });
 
+// Pure data fetch, no DOM access - lets the graph request start the
+// instant a search is submitted (in parallel with /api/dhamma/trace),
+// well before the DOM elements it would render into even exist yet
+// (those are only created once the trace response comes back and
+// dhammaRunAiTrace builds the results HTML). trace() and trace/graph
+// are independent backend calls - the graph endpoint doesn't touch the
+// DeepSeek quota or wait on the LLM synthesis, it only reuses FoJin's
+// (separately cached) search results plus FoJin's KG API - so starting
+// both at once costs no extra real backend work, just overlaps their
+// wall-clock latency instead of paying it twice in sequence.
+let dhammaGraphPromiseFor = null;
+let dhammaGraphPromise = null;
+let dhammaGraphStartedAt = 0;
+function dhammaFetchGraphHtml(q) {
+  return fetch(`${API_BASE}/api/dhamma/trace/graph?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() })
+    .then(async (res) => {
+      if (!res.ok) {
+        let detail = `请求失败（HTTP ${res.status}）`;
+        try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
+        throw new Error(detail);
+      }
+      return res.text();
+    });
+}
+// Called at the top of dhammaRunAiTrace, before awaiting the trace
+// response, so the graph starts generating concurrently rather than
+// only after the user manually switches to the "关系图谱" tab.
+function dhammaKickOffGraphFetch(q) {
+  dhammaGraphPromiseFor = q;
+  dhammaGraphStartedAt = performance.now();
+  dhammaGraphPromise = dhammaFetchGraphHtml(q);
+  // Swallow here so an early failure doesn't surface as an unhandled
+  // rejection before anything is listening yet - dhammaLoadGraphView
+  // re-awaits the same promise and handles the real error/display.
+  dhammaGraphPromise.catch(() => {});
+}
+
 async function dhammaLoadGraphView(q) {
   if (dhammaGraphLoadedFor === q) return; // already loaded, no re-fetch
   const status = document.getElementById('dhammaGraphStatus');
   const frame = document.getElementById('dhammaGraphFrame');
   status.hidden = false;
-  status.textContent = '正在生成关系图谱…';
   frame.hidden = true;
+  // Reuse the in-flight/completed fetch kicked off in parallel with the
+  // layer-analysis request if it's for the same query; only start a
+  // fresh one if the graph was never pre-fetched for this q (e.g. an
+  // older code path, or the pre-fetch failed and got cleared).
+  const usingPrefetch = dhammaGraphPromiseFor === q && dhammaGraphPromise;
+  status.textContent = usingPrefetch ? '关系图谱生成中（与分层分析并行计算）…' : '正在生成关系图谱…';
+  const startedAt = usingPrefetch ? dhammaGraphStartedAt : performance.now();
+  const promise = usingPrefetch ? dhammaGraphPromise : dhammaFetchGraphHtml(q);
   try {
-    const res = await fetch(`${API_BASE}/api/dhamma/trace/graph?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
+    const graphHtml = await promise;
+    const elapsed = ((performance.now() - startedAt) / 1000).toFixed(1);
+    frame.srcdoc = graphHtml;
+    frame.hidden = false;
+    status.hidden = true;
+    status.textContent = `图谱已生成（用时 ${elapsed}s）`;
+    dhammaGraphLoadedFor = q;
+    dhammaLoadGraphExplanation(q);
+  } catch (err) {
+    // A graph failure never touches the already-rendered layered analysis - it's a separate view entirely.
+    status.textContent = `关系图谱生成失败：${err.message}`;
+  }
+}
+
+// Independent card explaining the just-generated graph, based on its
+// real node/edge data (see graph_explain.py) - a failure here (or the
+// explanation simply not being ready yet) never blocks or hides the
+// graph itself, which is already visible by the time this runs.
+async function dhammaLoadGraphExplanation(q) {
+  const box = document.getElementById('dhammaGraphExplain');
+  if (!box) return;
+  box.hidden = false;
+  box.innerHTML = '<p class="dhamma-empty-note">正在生成图谱解释…</p>';
+  try {
+    const res = await fetch(`${API_BASE}/api/dhamma/trace/graph/explanation?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
     if (!res.ok) {
       let detail = `请求失败（HTTP ${res.status}）`;
       try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
       throw new Error(detail);
     }
-    const graphHtml = await res.text();
-    frame.srcdoc = graphHtml;
-    frame.hidden = false;
-    status.hidden = true;
-    dhammaGraphLoadedFor = q;
+    const data = await res.json();
+    box.innerHTML = dhammaRenderSynthesisMarkdown(data.explanation || '（本次图谱暂无可解释内容）');
   } catch (err) {
-    // A graph failure never touches the already-rendered layered analysis - it's a separate view entirely.
-    status.textContent = `关系图谱生成失败：${err.message}`;
+    box.innerHTML = `<p class="dhamma-empty-note">图谱解释生成失败：${dhammaEscapeHtml(err.message)}</p>`;
   }
 }
 
