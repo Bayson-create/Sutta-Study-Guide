@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>巴利三藏禅修细节点修习流程图</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #f4f1ea; touch-action: none; }
+  #stage { position: fixed; inset: 0; overflow: hidden; cursor: grab; }
+  #stage.dragging { cursor: grabbing; }
+  #canvas { position: absolute; top: 0; left: 0; transform-origin: 0 0; will-change: transform; }
+  #canvas img { display: block; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+  #controls {
+    position: fixed; right: 12px; bottom: 12px; z-index: 10; display: flex; flex-direction: column; gap: 6px;
+  }
+  #controls button {
+    width: 40px; height: 40px; border-radius: 8px; border: 1px solid #ccc4b0; background: #fffefb;
+    color: #3a3226; font-size: 18px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+  #controls button:active { background: #efe9db; }
+  #hint {
+    position: fixed; left: 12px; top: 12px; z-index: 10; background: rgba(255,254,251,0.9); color: #55503f;
+    font: 12px/1.5 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; padding: 6px 10px; border-radius: 8px;
+    border: 1px solid #ccc4b0; max-width: 60vw;
+  }
+  @media (max-width: 640px) { #hint { font-size: 11px; padding: 5px 8px; } #controls button { width: 36px; height: 36px; } }
+</style>
+</head>
+<body>
+<div id="hint">初次打开已自动适配窗口；点击右下角 + / − 缩放，拖动画布查看细节，⟲ 重置视图</div>
+<div id="stage">
+  <div id="canvas"><img id="img" src="assets/pali-meditation-flowchart.svg" alt="巴利三藏禅修细节点修习流程图"></div>
+</div>
+<div id="controls">
+  <button id="zoomIn" title="放大" aria-label="放大">+</button>
+  <button id="zoomOut" title="缩小" aria-label="缩小">−</button>
+  <button id="zoomReset" title="重置视图" aria-label="重置视图">⟲</button>
+</div>
+<script>
+(function () {
+  const stage = document.getElementById('stage');
+  const canvas = document.getElementById('canvas');
+  const img = document.getElementById('img');
+  const hint = document.getElementById('hint');
+
+  let scale = 1, x = 0, y = 0, fitScale = 1;
+  let naturalW = 0, naturalH = 0;
+
+  function apply() {
+    canvas.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+  }
+
+  function fitToWindow() {
+    if (!naturalW || !naturalH) return;
+    const pad = 0; // image already has its own crop margin
+    const availW = stage.clientWidth - pad;
+    const availH = stage.clientHeight - pad;
+    fitScale = Math.min(availW / naturalW, availH / naturalH);
+    scale = fitScale;
+    x = (stage.clientWidth - naturalW * scale) / 2;
+    y = (stage.clientHeight - naturalH * scale) / 2;
+    apply();
+  }
+
+  function clampScale(s) {
+    return Math.min(Math.max(s, fitScale * 0.5), fitScale * 8);
+  }
+
+  function zoomAt(clientX, clientY, factor) {
+    const rect = stage.getBoundingClientRect();
+    const px = clientX - rect.left, py = clientY - rect.top;
+    const worldX = (px - x) / scale, worldY = (py - y) / scale;
+    scale = clampScale(scale * factor);
+    x = px - worldX * scale;
+    y = py - worldY * scale;
+    apply();
+  }
+
+  // SVG intrinsic size comes from its own width/height attributes (set
+  // in pt, matching the cropped viewBox 1:1) - naturalWidth/Height on
+  // the <img> reflect those once loaded.
+  img.addEventListener('load', () => {
+    naturalW = img.naturalWidth;
+    naturalH = img.naturalHeight;
+    canvas.style.width = naturalW + 'px';
+    canvas.style.height = naturalH + 'px';
+    fitToWindow();
+  });
+  window.addEventListener('resize', () => { if (naturalW) fitToWindow(); });
+
+  // Desktop: wheel to zoom (ctrl/cmd not required - this is a dedicated viewer, not a scrolling page).
+  stage.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    zoomAt(e.clientX, e.clientY, factor);
+  }, { passive: false });
+
+  // Drag to pan - enabled at any zoom level (a no-op at fit-scale since
+  // content already fills the view, but simplest to just always allow it
+  // rather than special-casing "only after the user has zoomed in").
+  let dragging = false, lastX = 0, lastY = 0;
+  stage.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'touch' && activePointers.size > 0) return; // let pinch handling own multi-touch
+    dragging = true; lastX = e.clientX; lastY = e.clientY;
+    stage.classList.add('dragging');
+    stage.setPointerCapture(e.pointerId);
+  });
+  stage.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    x += e.clientX - lastX;
+    y += e.clientY - lastY;
+    lastX = e.clientX; lastY = e.clientY;
+    apply();
+  });
+  function endDrag(e) { dragging = false; stage.classList.remove('dragging'); }
+  stage.addEventListener('pointerup', endDrag);
+  stage.addEventListener('pointercancel', endDrag);
+  stage.addEventListener('pointerleave', endDrag);
+
+  // Two-finger pinch zoom (touch only) - tracked separately from the
+  // single-pointer drag handler above via a live pointerId->point map.
+  const activePointers = new Map();
+  let pinchStartDist = 0, pinchStartScale = 1, pinchMidpoint = null;
+  stage.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'touch') return;
+    activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (activePointers.size === 2) {
+      dragging = false; stage.classList.remove('dragging');
+      const pts = Array.from(activePointers.values());
+      pinchStartDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+      pinchStartScale = scale;
+      pinchMidpoint = { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
+    }
+  });
+  stage.addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'touch' || !activePointers.has(e.pointerId)) return;
+    activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (activePointers.size === 2 && pinchStartDist > 0) {
+      const pts = Array.from(activePointers.values());
+      const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+      const targetScale = clampScale(pinchStartScale * (dist / pinchStartDist));
+      const rect = stage.getBoundingClientRect();
+      const px = pinchMidpoint.x - rect.left, py = pinchMidpoint.y - rect.top;
+      const worldX = (px - x) / scale, worldY = (py - y) / scale;
+      scale = targetScale;
+      x = px - worldX * scale;
+      y = py - worldY * scale;
+      apply();
+    }
+  });
+  function clearTouch(e) {
+    if (e.pointerType !== 'touch') return;
+    activePointers.delete(e.pointerId);
+    pinchStartDist = 0;
+  }
+  stage.addEventListener('pointerup', clearTouch);
+  stage.addEventListener('pointercancel', clearTouch);
+  stage.addEventListener('pointerleave', clearTouch);
+
+  document.getElementById('zoomIn').addEventListener('click', () => {
+    const r = stage.getBoundingClientRect();
+    zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1.3);
+  });
+  document.getElementById('zoomOut').addEventListener('click', () => {
+    const r = stage.getBoundingClientRect();
+    zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1 / 1.3);
+  });
+  document.getElementById('zoomReset').addEventListener('click', fitToWindow);
+
+  // Hide the hint after first interaction so it doesn't linger over the diagram.
+  ['pointerdown', 'wheel'].forEach(evt => stage.addEventListener(evt, () => { hint.style.display = 'none'; }, { once: true }));
+})();
+</script>
+</body>
+</html>

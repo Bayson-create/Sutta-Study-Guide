@@ -970,7 +970,7 @@ window.addEventListener('unhandledrejection', (event) => {
 // Router
 function route() {
   const hash = location.hash || '#/';
-  app.classList.toggle('container-wide', hash === '#/research/timeline');
+  app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
   if (hash.startsWith('#/read/')) {
     const rest = hash.slice(7);
     const [uid, query] = rest.split('?');
@@ -1013,6 +1013,8 @@ function route() {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
     renderResearchTimeline();
+  } else if (hash === '#/research/pali-meditation-flowchart') {
+    renderPaliMeditationFlowchart();
   } else if (hash === '#/research/bodhi') {
     renderResearchBodhi();
   } else if (hash === '#/research/theravada-mahayana') {
@@ -1210,6 +1212,11 @@ function renderResearchHome() {
     <span class="icon">📄</span>
     <div class="title">佛教简史和教义演化</div>
     <div class="desc">谌飚（禅世界网站）弘法讲座 PPT，2019 年大觉寺讲稿 — 点击在新标签页打开</div>
+  </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-meditation-flowchart'">
+    <span class="icon">🧘</span>
+    <div class="title">巴利三藏禅修细节点修习流程图</div>
+    <div class="desc">依 177 条经文整理的禅修节点全景图——从戒学基础、五盖对治，到安止定次第与观慧进阶，逐节点附经号出处</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/bodhi'">
     <span class="icon">🌳</span>
@@ -2698,6 +2705,52 @@ function renderResearchTimeline() {
 
 function toggleTimelineFullscreen() {
   const wrap = document.getElementById('timelineWrap');
+  if (!wrap) return;
+  const isFs = document.fullscreenElement === wrap || document.webkitFullscreenElement === wrap;
+  if (isFs) {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  } else if (wrap.requestFullscreen) {
+    wrap.requestFullscreen();
+  } else if (wrap.webkitRequestFullscreen) {
+    wrap.webkitRequestFullscreen();
+  }
+}
+
+// === RESEARCH: PALI MEDITATION FLOWCHART (cropped SVG in a custom pan/zoom viewer) ===
+// The viewer itself (pali-meditation-flowchart-viewer.html) is a standalone
+// page - own fit-to-window default, wheel/pinch zoom, drag-to-pan, reset -
+// embedded here the same way the timeline embeds its own standalone HTML:
+// iframe + toolbar with fullscreen toggle, plus a separate "打开原始尺寸版本"
+// link that goes straight to the raw (cropped, not the viewer wrapper) SVG
+// file so it opens at true vector size/quality in a new tab.
+function renderPaliMeditationFlowchart() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>🧘 巴利三藏禅修细节点修习流程图</h2><div class="cat-en">Pāli Canon Meditation Practice Flowchart</div></div>`;
+  html += `<p style="color:var(--text-light);margin:-8px 0 16px">依据《巴利三藏禅修相关经文整理》177 条经文阅读审计整理的禅修节点全景图：从戒学基础、五盖诊断与对治，到所缘建立、安止定次第，再到观慧进阶与果证，每个节点均附主要经号出处（MN/SN/AN/DN 等）。</p>`;
+  html += `<div class="timeline-frame-wrap" id="paliFlowchartWrap">
+    <div class="timeline-toolbar">
+      <span class="tb-hint">已自动适配窗口显示；框内可缩放/拖动查看细节，移动端支持双指缩放</span>
+      <div class="tb-actions">
+        <button class="timeline-btn" id="paliFlowchartFsBtn" onclick="togglePaliFlowchartFullscreen()">⤢ 全屏查看</button>
+        <a class="timeline-btn" href="research/assets/pali-meditation-flowchart.svg" target="_blank">在新标签页打开原始尺寸版本 ↗</a>
+      </div>
+    </div>
+    <iframe src="research/pali-meditation-flowchart-viewer.html" title="巴利三藏禅修细节点修习流程图" loading="lazy"></iframe>
+  </div>`;
+  app.innerHTML = html;
+
+  const wrap = document.getElementById('paliFlowchartWrap');
+  const fsBtn = document.getElementById('paliFlowchartFsBtn');
+  const updateFsBtn = () => {
+    const isFs = document.fullscreenElement === wrap || document.webkitFullscreenElement === wrap;
+    fsBtn.textContent = isFs ? '⤡ 退出全屏' : '⤢ 全屏查看';
+  };
+  document.addEventListener('fullscreenchange', updateFsBtn);
+  document.addEventListener('webkitfullscreenchange', updateFsBtn);
+}
+
+function togglePaliFlowchartFullscreen() {
+  const wrap = document.getElementById('paliFlowchartWrap');
   if (!wrap) return;
   const isFs = document.fullscreenElement === wrap || document.webkitFullscreenElement === wrap;
   if (isFs) {
