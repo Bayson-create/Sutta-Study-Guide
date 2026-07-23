@@ -2868,6 +2868,13 @@ function mdToHtml(md) {
 
 function inlineMd(text) {
   let t = esc(text);
+  // A literal "\n" (backslash + n, not an actual newline) marks a
+  // line-break that has to survive staying on ONE physical markdown
+  // line - used for table-cell content that's logically multi-line
+  // (e.g. a quote plus its citation) but can't contain a real newline
+  // without breaking the cell out of its row. Must run after esc()
+  // escapes real HTML, so it can't be spoofed by escaped user content.
+  t = t.replace(/\\n/g, '<br>');
   t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   // _italic_ — require a non-word char (or start) before the opening "_" and
   // a non-word char (or end) after the closing one, so this doesn't fire
