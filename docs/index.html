@@ -4472,11 +4472,12 @@ async function communityDeleteApiConfig() {
 async function communityRenderAdminMembersTab(content) {
   content.className = 'profile-section';
   content.innerHTML = '加载中…';
-  let users, requests;
+  let users, requests, tavily;
   try {
-    [users, requests] = await Promise.all([
+    [users, requests, tavily] = await Promise.all([
       fetch(`${API_BASE}/api/admin/users`, { headers: communityAuthHeaders() }).then(r => r.json()),
       fetch(`${API_BASE}/api/admin/quota-requests?status=pending`, { headers: communityAuthHeaders() }).then(r => r.json()),
+      fetch(`${API_BASE}/api/admin/tavily-usage`, { headers: communityAuthHeaders() }).then(r => r.json()),
     ]);
   } catch (e) {
     content.className = 'error-msg';
@@ -4484,7 +4485,27 @@ async function communityRenderAdminMembersTab(content) {
     return;
   }
 
-  let html = `<h3 style="margin-top:0">待处理的额度申请</h3>`;
+  let html = `<h3 style="margin-top:0">搜索 API（Tavily）用量</h3>`;
+  html += `<div class="community-list-item">
+    <div class="title">本月已用 ${tavily.monthly_used} / ${tavily.monthly_limit}，剩余 ${tavily.monthly_remaining} 次</div>
+    <div class="meta">按自然月统计，含请求失败但仍计入 Tavily 配额的调用</div>
+  </div>`;
+  html += tavily.per_user.length ? `
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;margin-top:8px;font-size:0.9em">
+      <thead><tr style="text-align:left;border-bottom:1px solid var(--border)">
+        <th style="padding:6px 8px">用户</th><th style="padding:6px 8px">今日</th><th style="padding:6px 8px">本月</th>
+      </tr></thead>
+      <tbody>${tavily.per_user.map(u => `
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:6px 8px">${communityEscape(u.email)}</td>
+          <td style="padding:6px 8px">${u.today_count}</td>
+          <td style="padding:6px 8px">${u.month_count}</td>
+        </tr>`).join('')}</tbody>
+    </table>
+    </div>` : '<div class="community-empty">本月尚无搜索调用记录</div>';
+
+  html += `<h3>待处理的额度申请</h3>`;
   html += requests.length ? requests.map(r => `
     <div class="community-list-item">
       <div class="title">${communityEscape(r.user_email)}</div>
