@@ -5320,17 +5320,52 @@ async function dhammaFetchFulltextParagraphs(id) {
   dhammaFulltextCache.set(id, p);
   return p;
 }
-function dhammaFindSnippetOffset(fullText, snippet) {
-  const stripped = snippet.replace(/\s+/g, '');
-  for (const cand of [snippet, stripped]) {
-    if (!cand) continue;
-    const idx = fullText.indexOf(cand);
-    if (idx !== -1) return { offset: idx, len: cand.length };
+// Strips whitespace from `text` and returns both the stripped string and
+// a map from each stripped-string index back to its original index in
+// `text` - needed because AI-hit snippets (from FoJin's API) and the
+// reader's own fulltext files each insert whitespace (newlines vs literal
+// spaces) at different line-wrap points for the same underlying source
+// text. Stripping only one side (the historical bug here) leaves the
+// other side's internal spaces breaking the exact-substring match even
+// though the actual character content agrees - confirmed against real
+// data: dhamma-lineage's T32n1648 fulltext has "正見者，四 諦智" (with a
+// literal space) exactly where FoJin's snippet has "正見者，四\n諦智".
+function dhammaStripWhitespaceWithMap(text) {
+  let stripped = '';
+  const map = [];
+  for (let i = 0; i < text.length; i++) {
+    if (/\s/.test(text[i])) continue;
+    stripped += text[i];
+    map.push(i);
   }
-  if (stripped.length > 40) {
-    const mid = stripped.slice(10, 40);
-    const idx = fullText.indexOf(mid);
-    if (idx !== -1) return { offset: idx, len: mid.length };
+  return { stripped, map };
+}
+function dhammaFindSnippetOffset(fullText, snippet) {
+  // Cheap exact-match attempt first (no allocation of the stripped map)
+  // in case the raw snippet already lines up as-is.
+  const rawIdx = fullText.indexOf(snippet);
+  if (rawIdx !== -1) return { offset: rawIdx, len: snippet.length };
+
+  const { stripped: strippedSnippet } = dhammaStripWhitespaceWithMap(snippet);
+  if (!strippedSnippet) return null;
+  const { stripped: strippedFull, map } = dhammaStripWhitespaceWithMap(fullText);
+
+  const tryMatch = (needle) => {
+    if (!needle) return null;
+    const idx = strippedFull.indexOf(needle);
+    if (idx === -1) return null;
+    const start = map[idx];
+    const end = map[idx + needle.length - 1] + 1;
+    return { offset: start, len: end - start };
+  };
+
+  const direct = tryMatch(strippedSnippet);
+  if (direct) return direct;
+
+  if (strippedSnippet.length > 40) {
+    const mid = strippedSnippet.slice(10, 40);
+    const midMatch = tryMatch(mid);
+    if (midMatch) return midMatch;
   }
   return null;
 }
