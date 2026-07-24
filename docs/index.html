@@ -6313,20 +6313,24 @@ async function gotamaSend() {
           document.getElementById('gotamaLastAssistantBody').innerHTML = gotamaRenderMarkdown(last.content);
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'tool_start') {
-          const label = evt.tool_name === 'web_search'
+          const label = (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central')
             ? (evt.detail ? `正在搜索：${evt.detail}` : '正在搜索相关资料…')
             : evt.tool_name === 'read_skill_reference'
             ? (evt.detail ? `正在查阅调研底稿：${evt.detail}` : '正在查阅调研底稿…')
+            : evt.tool_name === 'fetch_sutta_text'
+            ? (evt.detail ? `正在读取经文：${evt.detail}` : '正在读取经文全文…')
             : (evt.detail ? `正在阅读：${evt.detail}` : '正在读取网页…');
           if (thinkingEl()) thinkingEl().textContent = label;
           else el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">${communityEscape(label)}</div>`);
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'tool_end') {
           if (!thinkingEl()) continue;
-          if (evt.tool_name === 'web_search') {
+          if (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central') {
             thinkingEl().textContent = evt.ok ? `找到 ${evt.result_count || 0} 个来源，正在核对引用…` : '搜索未返回结果，继续处理…';
           } else if (evt.tool_name === 'read_skill_reference') {
             thinkingEl().textContent = evt.ok ? '已读取调研底稿，正在整理回答…' : '调研底稿读取失败，继续处理…';
+          } else if (evt.tool_name === 'fetch_sutta_text') {
+            thinkingEl().textContent = evt.ok ? '已读取经文全文，正在核对引用…' : '经文读取失败，继续处理…';
           } else {
             if (evt.ok) fetchedPageCount += 1;
             thinkingEl().textContent = evt.ok
