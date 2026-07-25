@@ -239,6 +239,9 @@ a:hover { text-decoration: underline; }
 .gotama-msg-body blockquote { margin: 6px 0; padding: 4px 12px; border-left: 3px solid var(--accent-light, var(--accent)); background: rgba(0,0,0,0.04); color: var(--text); }
 .gotama-msg-body hr { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
 .gotama-msg-body a { color: var(--accent); word-break: break-all; }
+.gotama-msg-body table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.92em; white-space: normal; }
+.gotama-msg-body th, .gotama-msg-body td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
+.gotama-msg-body th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
 .gotama-msg-meta { margin-top: 6px; font-size: 0.72em; color: var(--text-light); }
 .gotama-empty-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-light); gap: 8px; text-align: center; padding: 20px; }
@@ -784,6 +787,9 @@ a:hover { text-decoration: underline; }
 .dhamma-ai-synthesis h3:first-child, .dhamma-ai-synthesis h4:first-child { margin-top: 0; }
 .dhamma-ai-synthesis p { margin: 8px 0; }
 .dhamma-ai-synthesis ul { margin: 6px 0; padding-left: 22px; }
+.dhamma-ai-synthesis table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.92em; }
+.dhamma-ai-synthesis th, .dhamma-ai-synthesis td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
+.dhamma-ai-synthesis th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
 .dhamma-ai-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.82em; color: var(--text-light); margin-bottom: 4px; flex-wrap: wrap; gap: 8px; }
 .dhamma-ai-meta-right { display: flex; align-items: center; gap: 8px; }
 .dhamma-search-timer { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; }
@@ -5572,13 +5578,18 @@ async function dhammaBuildHitHrefs(allHits) {
 function dhammaRenderSynthesisMarkdown(text) {
   const lines = dhammaEscapeHtml(text).split('\n');
   let html = '', inList = false;
-  for (const line of lines) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     // A line that is ONLY a dash/dashes (— or --- etc, however many, any
     // whitespace) is a structural separator between blocks (e.g. left
     // over between the analysis prose and the next "#### 第N层" heading)
     // - drop it. A "—" that's part of real sentence content never appears
-    // alone on its own line, so this can't accidentally eat prose.
+    // alone on its own line, so this can't accidentally eat prose. This
+    // never matches a table separator row ("|---|---|") since "|" isn't
+    // in the character class, so it can't eat table structure either.
     if (/^[—\-–\s]+$/.test(line) && /[—\-–]/.test(line)) continue;
+    const table = _gotamaParseTableAt(lines, i);
+    if (table) { if (inList) { html += '</ul>'; inList = false; } html += table[0]; i = table[1] - 1; continue; }
     if (/^####\s+/.test(line)) { html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
     if (/^###\s+/.test(line)) { html += `<h4>${line.replace(/^###\s+/, '')}</h4>`; continue; }
     if (/^##\s+/.test(line)) { html += `<h3>${line.replace(/^##\s+/, '')}</h3>`; continue; }
@@ -6161,13 +6172,42 @@ async function gotamaDeleteConv(id) {
 // which doesn't apply here) - headings, bold, italic, strikethrough,
 // blockquotes, horizontal rules, lists, paragraphs, and auto-linked bare
 // URLs. Escaped first so raw HTML in a message can't inject.
+// Parses a GFM table block starting at lines[i] (a "|"-prefixed header
+// line immediately followed by a "|---|---|"-style separator line) into
+// <table> markup, matching mdToHtml's table handling so tables look the
+// same everywhere in the app. Returns [html, nextIndex], or null if
+// lines[i] isn't actually a table start (caller falls through to normal
+// line handling in that case).
+function _gotamaParseTableAt(lines, i) {
+  const header = lines[i];
+  if (!header.trim().startsWith('|') || !lines[i + 1] || !/^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/.test(lines[i + 1])) {
+    return null;
+  }
+  const splitRow = (row) => row.trim().split('|').map(c => c.trim()).filter((c, idx, arr) => !(idx === 0 && c === '') && !(idx === arr.length - 1 && c === ''));
+  const headerCells = splitRow(header);
+  let j = i + 2;
+  const rows = [];
+  while (j < lines.length && lines[j].trim().startsWith('|')) {
+    rows.push(splitRow(lines[j]));
+    j++;
+  }
+  let html = '<table><thead><tr>' + headerCells.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>';
+  for (const r of rows) html += '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>';
+  html += '</tbody></table>';
+  return [html, j];
+}
+
 function gotamaRenderMarkdown(text) {
   const lines = dhammaEscapeHtml(text || '').split('\n');
   let html = '', inList = false, inQuote = false;
   const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
   const closeQuote = () => { if (inQuote) { html += '</blockquote>'; inQuote = false; } };
-  for (const line of lines) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     if (/^(---+|\*\*\*+)\s*$/.test(line)) { closeList(); closeQuote(); html += '<hr>'; continue; }
+    const table = _gotamaParseTableAt(lines, i);
+    if (table) { closeList(); closeQuote(); html += table[0]; i = table[1] - 1; continue; }
+    if (/^####\s+/.test(line)) { closeList(); closeQuote(); html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
     if (/^###\s+/.test(line)) { closeList(); closeQuote(); html += `<h5>${line.replace(/^###\s+/, '')}</h5>`; continue; }
     if (/^##\s+/.test(line)) { closeList(); closeQuote(); html += `<h4>${line.replace(/^##\s+/, '')}</h4>`; continue; }
     if (/^#\s+/.test(line)) { closeList(); closeQuote(); html += `<h3>${line.replace(/^#\s+/, '')}</h3>`; continue; }
