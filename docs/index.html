@@ -973,6 +973,41 @@ window.addEventListener('unhandledrejection', (event) => {
   app.innerHTML = `<div class="error-msg">页面加载遇到问题，请<a href="javascript:location.reload()">刷新重试</a>。</div>`;
 });
 
+// Mobile browsers throttle/suspend a backgrounded tab's JS and can kill
+// its network connections outright to save battery - a long-running
+// streaming request (Gotama chat) or a single slow request (AI-mode
+// 法义溯源 search) that was mid-flight when the tab was backgrounded can
+// come back looking "stuck": no more deltas arriving, no error thrown
+// either (the read just never resolves again), because nothing ever
+// told the UI the connection died. Both send paths already track enough
+// state (gotamaLastChunkAt/gotamaActiveController, dhammaLastAiQuery) to
+// tell "plausibly actually stuck" apart from "user glanced away for two
+// seconds while it kept working fine" - recover on return to foreground
+// instead of leaving the user staring at a permanent "thinking" spinner
+// with no way out but a manual page reload.
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return;
+
+  if (gotamaSending && gotamaActiveController && Date.now() - gotamaLastChunkAt > 15000) {
+    gotamaActiveController.abort(); // triggers gotamaSend's existing catch-block recovery (keeps partial content if any, flags it)
+    if (gotamaActiveId) {
+      // The backend saves the user+assistant messages independently of
+      // whether the client is still watching (see routers/gotama.py's
+      // dedicated per-turn session) - the real answer is very likely
+      // already sitting in the database even though this tab's stream
+      // died before showing it. Give the abort's own catch block a beat
+      // to run first, then reconcile from the server's actual record.
+      setTimeout(() => { if (gotamaActiveId) gotamaLoadConversation(gotamaActiveId); }, 400);
+    }
+  }
+
+  if (dhammaLastAiQuery && location.hash.startsWith('#/dhamma')) {
+    const q = dhammaLastAiQuery;
+    dhammaLastAiQuery = null;
+    dhammaRunAiTrace(q);
+  }
+});
+
 // Router
 function route() {
   const hash = location.hash || '#/';
@@ -4864,6 +4899,7 @@ let dhammaIndex = null, dhammaIndexById = null, dhammaLayerCards = null;
 let dhammaMode = 'search-normal'; // 'search-normal' | 'search-trace' (browse view shows whenever the input is empty, regardless of mode)
 let dhammaTraceMode = 'ai';      // 'ai' | 'keyword'
 let dhammaSearchSeq = 0;
+let dhammaLastAiQuery = null; // set while an AI-mode trace request is in flight, cleared on success/non-timeout-failure - lets visibilitychange retry a request the tab backgrounding silently killed
 let dhammaSearchInFlight = false;
 
 async function ensureDhammaData() {
@@ -5657,6 +5693,15 @@ async function dhammaRunAiTrace(q) {
     results.innerHTML = `<p class="dhamma-empty-note">AI 语义综合溯源需要登录。<a href="#/profile">前往登录</a>，或切换到"关键词命中"模式无需登录即可使用。</p>`;
     return;
   }
+  // Tracked so the visibilitychange handler below can silently retry
+  // this exact query if the request never resolved because the tab got
+  // backgrounded mid-request (see communityFetchWithTimeout's flat
+  // wall-clock AbortController - the OS/browser can also just kill a
+  // backgrounded tab's network connection outright, which no client-side
+  // timer tuning can prevent). A retry is cheap even if the original
+  // attempt actually finished server-side first: /api/dhamma/trace is
+  // cached by query hash, so it just returns instantly from cache.
+  dhammaLastAiQuery = q;
 
   // 分层分析 and 关系图谱 are independent backend calls (see
   // dhammaKickOffGraphFetch's comment - the graph never waits on the
@@ -5709,8 +5754,13 @@ async function dhammaRunAiTrace(q) {
       const e = new Error(detail); e.status = res.status; throw e;
     }
     data = await res.json();
+    dhammaLastAiQuery = null; // succeeded - nothing to retry on visibility restore
   } catch (err) {
     clearInterval(timerHandle);
+    // An AbortError is left tracked (not cleared) so becoming visible
+    // again can retry it silently - every other failure (bad input,
+    // no quota, expired login) is a real outcome retrying can't fix.
+    if (err.name !== 'AbortError') dhammaLastAiQuery = null;
     if (mySeq !== dhammaSearchSeq) return;
     // Only the layers panel shows the failure - the graph panel (and its
     // own loading/result state) is a fully separate concern and must
@@ -6054,6 +6104,11 @@ let gotamaConversations = [];
 let gotamaActiveId = null;
 let gotamaMessages = [];
 let gotamaSending = false;
+// The in-flight send's AbortController, if any - used by the
+// visibilitychange handler below to tell "still genuinely sending" apart
+// from "the stream got interrupted while the tab was backgrounded".
+let gotamaActiveController = null;
+let gotamaLastChunkAt = 0;
 
 async function renderGotamaChat(conversationId) {
   const user = await communityFetchCurrentUser();
@@ -6306,10 +6361,19 @@ async function gotamaSend() {
     el.scrollTop = el.scrollHeight;
 
     const controller = new AbortController();
-    // Tool loop can take a while (multiple search/fetch rounds) - a much
-    // longer budget than the usual 45s default, consistent with how the
-    // AI trace search also widens its timeout for a genuinely slow call.
-    const timeoutId = setTimeout(() => controller.abort(), 150000);
+    gotamaActiveController = controller;
+    gotamaLastChunkAt = Date.now();
+    // Tool loop can take a while (multiple search/fetch rounds), so this
+    // needs a much longer budget than the usual 45s default - but a flat
+    // wall-clock deadline from request start is actively wrong on mobile:
+    // backgrounding the tab (switching apps) doesn't pause this timer,
+    // so a few minutes in another app is enough to blow a 150s total
+    // budget even though the server was never stuck - the request just
+    // wasn't being watched. Reset on every received chunk instead (an
+    // inactivity timeout, not a total-duration one) - a genuinely stuck
+    // request still gets caught, a backgrounded-but-healthy one doesn't.
+    let timeoutId = setTimeout(() => controller.abort(), 150000);
+    const resetTimeout = () => { clearTimeout(timeoutId); timeoutId = setTimeout(() => controller.abort(), 150000); };
     const res = await fetch(`${API_BASE}/api/gotama/conversations/${convId}/messages`, {
       method: 'POST',
       headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
@@ -6335,6 +6399,8 @@ async function gotamaSend() {
 
     while (true) {
       const { done, value } = await reader.read();
+      resetTimeout();
+      gotamaLastChunkAt = Date.now();
       if (done) break;
       buffer += decoder.decode(value, { stream: true });
       const events = buffer.split('\n\n');
@@ -6435,6 +6501,7 @@ async function gotamaSend() {
   } finally {
     document.getElementById('gotamaThinking')?.remove();
     gotamaSending = false;
+    gotamaActiveController = null;
     btn.disabled = false;
     btn.textContent = '发送';
     input.disabled = false;
