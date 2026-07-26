@@ -242,8 +242,34 @@ a:hover { text-decoration: underline; }
 .gotama-msg-body table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.92em; white-space: normal; }
 .gotama-msg-body th, .gotama-msg-body td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
 .gotama-msg-body th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
+.gotama-msg-body p { margin: 8px 0; }
+.gotama-msg-body ul { margin: 8px 0; padding-left: 22px; }
+.gotama-msg-body li { margin-bottom: 5px; line-height: 1.6; }
+.gotama-msg-body h3, .gotama-msg-body h4, .gotama-msg-body h5 { margin: 14px 0 6px; color: var(--accent); }
+.gotama-msg-body h3:first-child, .gotama-msg-body h4:first-child, .gotama-msg-body h5:first-child { margin-top: 0; }
+.gotama-msg-body pre { margin: 10px 0; padding: 10px 12px; background: rgba(0,0,0,0.05); border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: pre; font-size: 0.85em; line-height: 1.5; }
+.gotama-msg-body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.gotama-msg-body p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+.dhamma-ai-synthesis pre { margin: 10px 0; padding: 10px 12px; background: rgba(0,0,0,0.05); border-radius: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: pre; font-size: 0.85em; line-height: 1.5; }
+.dhamma-ai-synthesis code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.dhamma-ai-synthesis p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
 .gotama-msg-meta { margin-top: 6px; font-size: 0.72em; color: var(--text-light); }
+.gotama-msg-row.user { align-self: flex-end; max-width: 78%; display: flex; align-items: flex-end; gap: 6px; }
+.gotama-msg-row.user:has(.gotama-msg-editing) { flex-direction: column; align-items: stretch; width: 100%; }
+.gotama-msg-row.user .gotama-msg.user { max-width: none; }
+.gotama-icon-btn { background: none; border: none; cursor: pointer; padding: 4px; border-radius: 6px; font-size: 0.9em; line-height: 1; opacity: 0.55; transition: opacity 0.15s, background 0.15s; }
+.gotama-icon-btn:hover { opacity: 1; background: var(--hover-bg); }
+.gotama-msg-action { flex-shrink: 0; margin-bottom: 4px; }
+.gotama-msg.assistant .gotama-msg-action { display: block; margin-top: 4px; }
+.gotama-msg-editing { width: 100%; }
+.gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
+.gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
+.gotama-edit-actions .gotama-icon-btn { opacity: 1; padding: 5px 12px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font-size: 0.82em; }
+.gotama-edit-actions .gotama-icon-btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (max-width: 720px) {
+  .gotama-msg-row.user { max-width: 90%; }
+}
 .gotama-empty-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-light); gap: 8px; text-align: center; padding: 20px; }
 .gotama-input-bar { border-top: 1px solid var(--border); padding: 12px 16px; display: flex; gap: 10px; align-items: flex-end; }
 .gotama-input-bar textarea { flex: 1; resize: none; min-height: 42px; max-height: 160px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95em; background: var(--card-bg); color: var(--text); }
@@ -5614,6 +5640,7 @@ async function dhammaBuildHitHrefs(allHits) {
 function dhammaRenderSynthesisMarkdown(text) {
   const lines = dhammaEscapeHtml(text).split('\n');
   let html = '', inList = false;
+  const fenceBlocks = [];
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     // A line that is ONLY a dash/dashes (— or --- etc, however many, any
@@ -5624,6 +5651,15 @@ function dhammaRenderSynthesisMarkdown(text) {
     // never matches a table separator row ("|---|---|") since "|" isn't
     // in the character class, so it can't eat table structure either.
     if (/^[—\-–\s]+$/.test(line) && /[—\-–]/.test(line)) continue;
+    const fence = _gotamaParseFenceAt(lines, i);
+    if (fence) {
+      if (inList) { html += '</ul>'; inList = false; }
+      const token = ` FENCE${fenceBlocks.length} `;
+      fenceBlocks.push(fence[0]);
+      html += token;
+      i = fence[1] - 1;
+      continue;
+    }
     const table = _gotamaParseTableAt(lines, i);
     if (table) { if (inList) { html += '</ul>'; inList = false; } html += table[0]; i = table[1] - 1; continue; }
     if (/^####\s+/.test(line)) { html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
@@ -5635,7 +5671,8 @@ function dhammaRenderSynthesisMarkdown(text) {
     html += `<p>${line}</p>`;
   }
   if (inList) html += '</ul>';
-  return html.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+  html = html.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+  return html.replace(/ FENCE(\d+) /g, (m, idx) => fenceBlocks[+idx]);
 }
 const DHAMMA_AI_LAYER_LABELS = Object.assign({}, DHAMMA_LAYER_NAMES, { found_but_unclassified: '已收录但未分层', unmatched: '未匹配到分层索引' });
 
@@ -6104,6 +6141,9 @@ let gotamaConversations = [];
 let gotamaActiveId = null;
 let gotamaMessages = [];
 let gotamaSending = false;
+// Index into gotamaMessages of the user message currently being edited
+// in-place (see gotamaRenderMessages' user-message branch), or null.
+let gotamaEditingIndex = null;
 // The in-flight send's AbortController, if any - used by the
 // visibilitychange handler below to tell "still genuinely sending" apart
 // from "the stream got interrupted while the tab was backgrounded".
@@ -6252,14 +6292,44 @@ function _gotamaParseTableAt(lines, i) {
   return [html, j];
 }
 
+// Lines are already HTML-escaped by dhammaEscapeHtml() before this runs,
+// so the fence content is safe to drop straight into <pre><code> as-is -
+// no further escaping, and no inline markdown (bold/italic/links) is
+// applied inside a fence, matching normal code-block semantics.
+function _gotamaParseFenceAt(lines, i) {
+  if (!/^```/.test(lines[i].trim())) return null;
+  let j = i + 1;
+  const codeLines = [];
+  while (j < lines.length && !/^```/.test(lines[j].trim())) {
+    codeLines.push(lines[j]);
+    j++;
+  }
+  return [`<pre><code>${codeLines.join('\n')}</code></pre>`, j + 1];
+}
+
 function gotamaRenderMarkdown(text) {
   const lines = dhammaEscapeHtml(text || '').split('\n');
   let html = '', inList = false, inQuote = false;
+  // Fence blocks are pulled out into placeholders before the inline
+  // bold/italic/link replaces run below (those are global regexes over
+  // the whole string) - otherwise "**" or a bare URL inside a code
+  // sample would get corrupted into <b>/<a> markup instead of staying
+  // literal code text.
+  const fenceBlocks = [];
   const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
   const closeQuote = () => { if (inQuote) { html += '</blockquote>'; inQuote = false; } };
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (/^(---+|\*\*\*+)\s*$/.test(line)) { closeList(); closeQuote(); html += '<hr>'; continue; }
+    const fence = _gotamaParseFenceAt(lines, i);
+    if (fence) {
+      closeList(); closeQuote();
+      const token = ` FENCE${fenceBlocks.length} `;
+      fenceBlocks.push(fence[0]);
+      html += token;
+      i = fence[1] - 1;
+      continue;
+    }
     const table = _gotamaParseTableAt(lines, i);
     if (table) { closeList(); closeQuote(); html += table[0]; i = table[1] - 1; continue; }
     if (/^####\s+/.test(line)) { closeList(); closeQuote(); html += `<h5>${line.replace(/^####\s+/, '')}</h5>`; continue; }
@@ -6275,11 +6345,12 @@ function gotamaRenderMarkdown(text) {
   }
   closeList();
   closeQuote();
-  return html
+  html = html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/~~(.+?)~~/g, '<s>$1</s>')
     .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>')
     .replace(/(https?:\/\/[^\s<)\]"']+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+  return html.replace(/ FENCE(\d+) /g, (m, idx) => fenceBlocks[+idx]);
 }
 
 function gotamaMessageMetaHtml(m) {
@@ -6316,25 +6387,116 @@ function gotamaRenderMessages() {
   }
   el.innerHTML = gotamaMessages.map((m, i) => {
     if (m.role === 'user') {
-      return `<div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>`;
+      if (i === gotamaEditingIndex) {
+        return `<div class="gotama-msg-row user">
+          <div class="gotama-msg user gotama-msg-editing">
+            <textarea id="gotamaEditTextarea" class="gotama-edit-textarea">${communityEscape(m.content)}</textarea>
+          </div>
+          <div class="gotama-edit-actions">
+            <button type="button" class="gotama-icon-btn" onclick="gotamaCancelEdit()">取消</button>
+            <button type="button" class="gotama-icon-btn gotama-icon-btn-primary" onclick="gotamaConfirmEdit(${i})">重新发送</button>
+          </div>
+        </div>`;
+      }
+      const editBtn = (m.id && !gotamaSending)
+        ? `<button type="button" class="gotama-icon-btn gotama-msg-action" title="编辑并重新发送" onclick="gotamaStartEdit(${i})">✏️</button>`
+        : '';
+      return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>${editBtn}</div>`;
     }
     const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
-    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>`;
+    const regenBtn = (m.id && !m._streaming && !gotamaSending && gotamaMessages[i - 1]?.id)
+      ? `<button type="button" class="gotama-icon-btn gotama-msg-action" title="重新生成这条回答" onclick="gotamaRegenerate(${i})">🔄</button>`
+      : '';
+    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}${regenBtn}</div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
 
-async function gotamaSend() {
+// Deletes `fromMessageId` and every message after it in the active
+// conversation (see the backend's truncate_from_message docstring for
+// why this one endpoint backs both regenerate and edit-resend).
+async function gotamaTruncateFrom(fromMessageId) {
+  const res = await fetch(`${API_BASE}/api/gotama/conversations/${gotamaActiveId}/messages/${fromMessageId}`, {
+    method: 'DELETE', headers: communityAuthHeaders(),
+  });
+  if (!res.ok && res.status !== 204) {
+    let detail = '删除失败';
+    try { detail = (await res.json()).detail || detail; } catch (_) {}
+    throw new Error(detail);
+  }
+}
+
+// Regenerating an assistant reply removes it AND the user turn that
+// produced it (truncate-from the user message), then resends that same
+// user text - net visible effect is "this reply changed, everything
+// after it is gone", same as editing that user turn would look like.
+async function gotamaRegenerate(i) {
+  if (gotamaSending) return;
+  const userMsg = gotamaMessages[i - 1];
+  if (!userMsg || userMsg.role !== 'user' || !userMsg.id) return;
+  if (!confirm('重新生成这条回答？该回答之后的对话内容也会被移除。')) return;
+  try {
+    await gotamaTruncateFrom(userMsg.id);
+  } catch (e) {
+    alert(e.message);
+    return;
+  }
+  const content = userMsg.content;
+  gotamaMessages.splice(i - 1);
+  gotamaRenderMessages();
+  gotamaSend(content);
+}
+
+function gotamaStartEdit(i) {
+  if (gotamaSending) return;
+  gotamaEditingIndex = i;
+  gotamaRenderMessages();
+  const ta = document.getElementById('gotamaEditTextarea');
+  if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+}
+
+function gotamaCancelEdit() {
+  gotamaEditingIndex = null;
+  gotamaRenderMessages();
+}
+
+// Edits truncate-from the message being edited itself (not from i-1) -
+// unlike regenerate, there's no separate "paired reply" to also remove
+// first; deleting this user message already takes its assistant reply
+// (and anything after) with it via the same forward-truncate.
+async function gotamaConfirmEdit(i) {
+  const ta = document.getElementById('gotamaEditTextarea');
+  const content = ta ? ta.value.trim() : '';
+  if (!content) return;
+  const userMsg = gotamaMessages[i];
+  if (!userMsg || !userMsg.id) return;
+  try {
+    await gotamaTruncateFrom(userMsg.id);
+  } catch (e) {
+    alert(e.message);
+    return;
+  }
+  gotamaEditingIndex = null;
+  gotamaMessages.splice(i);
+  gotamaRenderMessages();
+  gotamaSend(content);
+}
+
+// `overrideContent`, when given (by gotamaRegenerate/gotamaConfirmEdit),
+// skips reading from and clearing the input box - those callers already
+// removed the messages being replaced and are resending programmatically,
+// not from what the user just typed into the box.
+async function gotamaSend(overrideContent) {
   if (gotamaSending) return;
   const input = document.getElementById('gotamaInput');
-  const content = input.value.trim();
+  const content = overrideContent !== undefined ? overrideContent : input.value.trim();
   if (!content) return;
 
   gotamaSending = true;
   const btn = document.getElementById('gotamaSendBtn');
   btn.disabled = true;
   btn.textContent = '思考中…';
-  input.value = '';
+  if (overrideContent === undefined) input.value = '';
   input.disabled = true;
   const startedAt = performance.now();
 
