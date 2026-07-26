@@ -258,10 +258,15 @@ a:hover { text-decoration: underline; }
 .gotama-msg-row.user { align-self: flex-end; max-width: 78%; display: flex; align-items: flex-end; gap: 6px; }
 .gotama-msg-row.user:has(.gotama-msg-editing) { flex-direction: column; align-items: stretch; width: 100%; }
 .gotama-msg-row.user .gotama-msg.user { max-width: none; }
-.gotama-icon-btn { background: none; border: none; cursor: pointer; padding: 4px; border-radius: 6px; font-size: 0.9em; line-height: 1; opacity: 0.55; transition: opacity 0.15s, background 0.15s; }
-.gotama-icon-btn:hover { opacity: 1; background: var(--hover-bg); }
-.gotama-msg-action { flex-shrink: 0; margin-bottom: 4px; }
-.gotama-msg.assistant .gotama-msg-action { display: block; margin-top: 4px; }
+.gotama-icon-btn { background: none; border: none; cursor: pointer; padding: 5px; border-radius: 6px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; color: var(--text-light); opacity: 0.6; transition: opacity 0.15s, background 0.15s, color 0.15s; }
+.gotama-icon-btn:hover { opacity: 1; background: var(--hover-bg); color: var(--text); }
+/* Action row sits directly under the bubble, hugging its bottom-right
+   corner - not overlapping it (an overlapping badge would cover message
+   text on short replies) but visually anchored to that corner the way
+   the reference design's icon row is. */
+.gotama-msg-actions { display: flex; gap: 2px; margin-top: 2px; }
+.gotama-msg-actions.assistant { align-self: flex-start; }
+.gotama-msg-actions.user { align-self: flex-end; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
 .gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
@@ -6361,6 +6366,32 @@ function gotamaMessageMetaHtml(m) {
 }
 
 const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄' };
+
+// Minimal outline SVG icons (16px, currentColor stroke) matching the
+// simple line-icon style of the reference design - not emoji, so they
+// stay a consistent weight/size regardless of platform emoji font.
+const _GOTAMA_ICON_COPY = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+const _GOTAMA_ICON_REGEN = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"></path><path d="M21 3v6h-6"></path></svg>';
+const _GOTAMA_ICON_EDIT = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>';
+const _GOTAMA_ICON_CHECK = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+// Copies the RAW markdown source (not the rendered HTML) - what the user
+// would actually want to paste elsewhere and have keep working as
+// markdown. Swaps the icon to a checkmark briefly so the click has
+// visible feedback, same idea as the existing dhamma-copy-btn pattern.
+async function gotamaCopyMarkdown(i, btnEl) {
+  const content = gotamaMessages[i]?.content || '';
+  try {
+    await navigator.clipboard.writeText(content);
+    if (btnEl) {
+      const original = btnEl.innerHTML;
+      btnEl.innerHTML = _GOTAMA_ICON_CHECK;
+      setTimeout(() => { btnEl.innerHTML = original; }, 1200);
+    }
+  } catch (e) {
+    alert('复制失败：' + e.message);
+  }
+}
 function gotamaToolTraceHtml(trace) {
   if (!trace || !trace.length) return '';
   return `<details class="gotama-msg-trace"><summary>查看本轮检索过程（${trace.length} 步）</summary><ul>${trace.map(t =>
@@ -6398,16 +6429,21 @@ function gotamaRenderMessages() {
           </div>
         </div>`;
       }
-      const editBtn = (m.id && !gotamaSending)
-        ? `<button type="button" class="gotama-icon-btn gotama-msg-action" title="编辑并重新发送" onclick="gotamaStartEdit(${i})">✏️</button>`
+      const editRow = (m.id && !gotamaSending)
+        ? `<div class="gotama-msg-actions user"><button type="button" class="gotama-icon-btn" title="编辑并重新发送" onclick="gotamaStartEdit(${i})">${_GOTAMA_ICON_EDIT}</button></div>`
         : '';
-      return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>${editBtn}</div>`;
+      return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div></div>${editRow}`;
     }
     const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
-    const regenBtn = (m.id && !m._streaming && !gotamaSending && gotamaMessages[i - 1]?.id)
-      ? `<button type="button" class="gotama-icon-btn gotama-msg-action" title="重新生成这条回答" onclick="gotamaRegenerate(${i})">🔄</button>`
-      : '';
-    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}${regenBtn}</div>`;
+    let actionsRow = '';
+    if (m.id && !m._streaming && !gotamaSending) {
+      const copyBtn = `<button type="button" class="gotama-icon-btn" title="复制 Markdown" onclick="gotamaCopyMarkdown(${i}, this)">${_GOTAMA_ICON_COPY}</button>`;
+      const regenBtn = gotamaMessages[i - 1]?.id
+        ? `<button type="button" class="gotama-icon-btn" title="重新生成这条回答" onclick="gotamaRegenerate(${i})">${_GOTAMA_ICON_REGEN}</button>`
+        : '';
+      actionsRow = `<div class="gotama-msg-actions assistant">${copyBtn}${regenBtn}</div>`;
+    }
+    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>${actionsRow}`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
@@ -6655,6 +6691,18 @@ async function gotamaSend(overrideContent) {
       last._streaming = false;
       last._flag = `<div class="gotama-msg-flag">⚠ 连接中断，以上内容可能不完整（${communityEscape(msg.replace(/<[^>]+>/g, ''))}）</div>`;
       gotamaRenderMessages();
+    } else if (gotamaActiveId) {
+      // Nothing worth keeping locally (no partial answer ever streamed),
+      // but the backend commits the user's own message the moment it's
+      // received - before generation even starts (see routers/gotama.py) -
+      // so it's very likely already durably saved even though this turn
+      // failed. Reconcile from the server instead of leaving a dead-end
+      // error bubble with no way to retry: this picks up that message
+      // with its real id, which is what makes the ✏️ edit-and-resend
+      // icon (the retry path for an answer-less question) show up.
+      gotamaLoadConversation(gotamaActiveId).then(() => {
+        document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg-flag" style="align-self:center">⚠ ${msg}，可点击上方问题旁的 ✏️ 重新发送</div>`);
+      });
     } else {
       if (last && last.role === 'assistant' && last._streaming) gotamaMessages.pop(); // still empty - nothing worth keeping
       gotamaRenderMessages();
