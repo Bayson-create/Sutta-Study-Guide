@@ -255,18 +255,28 @@ a:hover { text-decoration: underline; }
 .dhamma-ai-synthesis p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
 .gotama-msg-meta { margin-top: 6px; font-size: 0.72em; color: var(--text-light); }
-.gotama-msg-row.user { align-self: flex-end; max-width: 78%; display: flex; align-items: flex-end; gap: 6px; }
-.gotama-msg-row.user:has(.gotama-msg-editing) { flex-direction: column; align-items: stretch; width: 100%; }
+/* Both the assistant and user wrappers are column flexboxes whose OWN
+   width shrink-wraps to their widest child (the bubble) rather than
+   stretching to the full message-list width - that's what makes the
+   action row's align-items:flex-end land flush with the bubble/meta
+   text's own right edge instead of snapping to the far right of the
+   whole page (a mismatch when the bubble is much narrower than the
+   page, which was the actual complaint). */
+.gotama-msg-wrap.assistant { align-self: flex-start; max-width: 78%; display: flex; flex-direction: column; align-items: flex-end; }
+.gotama-msg-row.user { align-self: flex-end; max-width: 78%; display: flex; flex-direction: column; align-items: flex-end; }
+.gotama-msg-row.user:has(.gotama-msg-editing) { align-items: stretch; width: 100%; }
 .gotama-msg-row.user .gotama-msg.user { max-width: none; }
+.gotama-msg-wrap.assistant .gotama-msg.assistant { max-width: none; }
 .gotama-icon-btn { background: none; border: none; cursor: pointer; padding: 5px; border-radius: 6px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; color: var(--text-light); opacity: 0.6; transition: opacity 0.15s, background 0.15s, color 0.15s; }
 .gotama-icon-btn:hover { opacity: 1; background: var(--hover-bg); color: var(--text); }
 /* Action row sits directly under the bubble, hugging its bottom-right
    corner - not overlapping it (an overlapping badge would cover message
    text on short replies) but visually anchored to that corner the way
-   the reference design's icon row is. */
-.gotama-msg-actions { display: flex; gap: 2px; margin-top: 2px; }
-.gotama-msg-actions.assistant { align-self: flex-end; }
-.gotama-msg-actions.user { align-self: flex-end; }
+   the reference design's icon row is. Same margin-top on both sides
+   (governed by this one shared rule, not each side's own separate
+   layout) so the user-edit-icon gap and assistant-copy/regen-icon gap
+   read as identical, not just coincidentally close. */
+.gotama-msg-actions { display: flex; gap: 2px; margin-top: 4px; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
 .gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
@@ -6450,10 +6460,17 @@ function gotamaRenderMessages() {
           </div>
         </div>`;
       }
+      // editRow lives INSIDE the same width-constrained wrapper as the
+      // bubble (not as a separate top-level flex child of #gotamaMessages)
+      // so its top margin is controlled by the same CSS rule the
+      // assistant side uses (see .gotama-msg-actions margin-top below) -
+      // as a sibling of #gotamaMessages it would instead inherit that
+      // container's own (much larger) row gap, producing a visibly
+      // different spacing than the assistant side even with identical CSS.
       const editRow = (m.id && !gotamaSending)
         ? `<div class="gotama-msg-actions user"><button type="button" class="gotama-icon-btn" title="编辑并重新发送" onclick="gotamaStartEdit(${i})">${_GOTAMA_ICON_EDIT}</button></div>`
         : '';
-      return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div></div>${editRow}`;
+      return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>${editRow}</div>`;
     }
     const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
     let actionsRow = '';
@@ -6464,7 +6481,13 @@ function gotamaRenderMessages() {
         : '';
       actionsRow = `<div class="gotama-msg-actions assistant">${copyBtn}${regenBtn}</div>`;
     }
-    return `<div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>${actionsRow}`;
+    // Wrapped in gotama-msg-wrap (max-width matching the bubble, not the
+    // full message-list width) so the action row's right edge lines up
+    // with the bubble/meta-line's own right edge instead of snapping to
+    // the far right of the whole page - that mismatch (icons pinned to
+    // the page edge while the narrower bubble+meta text sat far to their
+    // left) was the actual complaint, not the right-vs-left choice itself.
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${gotamaMessageMetaHtml(m)}${m._flag || ''}</div>${actionsRow}</div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
