@@ -286,9 +286,15 @@ a:hover { text-decoration: underline; }
    same margin-top. Needs an explicit width to have room to push the
    icons to the far end while the wrapper's own align-items:flex-end
    would otherwise just shrink-wrap this row to its content. */
-.gotama-msg-actions.assistant { width: 100%; justify-content: space-between; }
-.gotama-msg-actions.assistant:has(.gotama-msg-meta:empty),
-.gotama-msg-actions.assistant:not(:has(.gotama-msg-meta)) { justify-content: flex-end; }
+/* .has-meta is set in JS (gotamaRenderMessages), not inferred in CSS via
+   :has() - that was unreliable in practice (a message reloaded from the
+   server, e.g. after the background-recovery reconcile path, has no
+   token/time stats at all since the backend never persists them - see
+   gotamaMessageMetaHtml - so metaText is '' and no .gotama-msg-meta
+   element exists, but the space-between rule was still winning and
+   spreading the two icons across the full row width instead of falling
+   back to a tight flex-end pair). Explicit class, no ambiguity. */
+.gotama-msg-actions.assistant.has-meta { width: 100%; justify-content: space-between; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
 .gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
@@ -6509,7 +6515,7 @@ function gotamaRenderMessages() {
     // icon row itself. One combined row after the bubble, using that
     // same margin-top once, makes the two sides' bubble-to-row distance
     // actually equal instead of just superficially sharing a CSS value.
-    const footerRow = (metaText || icons) ? `<div class="gotama-msg-actions assistant">${metaText}${icons}</div>` : '';
+    const footerRow = (metaText || icons) ? `<div class="gotama-msg-actions assistant${metaText ? ' has-meta' : ''}">${metaText}${icons}</div>` : '';
     // Wrapped in gotama-msg-wrap (max-width matching the bubble, not the
     // full message-list width) so the action row's right edge lines up
     // with the bubble/meta-line's own right edge instead of snapping to
