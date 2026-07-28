@@ -406,6 +406,9 @@ a:hover { text-decoration: underline; }
 .md-reader th, .md-reader td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
 .md-reader th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
 .md-reader tr:nth-child(even) td { background: var(--hover-bg); }
+.md-reader pre:not(.mermaid) { display: block; max-width: 100%; box-sizing: border-box; margin: 16px 0; padding: 12px 14px; background: var(--hover-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; white-space: pre; overflow-wrap: normal; word-break: normal; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.88em; line-height: 1.55; text-align: left; }
+.md-reader pre:not(.mermaid) code { font-family: inherit; }
+.md-reader p code { padding: 1px 5px; background: var(--hover-bg); border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
 .md-reader h3 { font-size: 1em; color: var(--accent); font-weight: 700; margin: 18px 0 8px; }
 .md-reader blockquote {
   margin: 10px 0 16px; padding: 10px 16px; background: var(--accent-bg);
@@ -2860,7 +2863,8 @@ const WIKI_LINKS = {
 };
 
 // === Minimal Markdown -> HTML converter ===
-function mdToHtml(md) {
+function mdToHtml(md, options = {}) {
+  const renderFencedCode = options.fencedCode === true;
   // Strip YAML frontmatter (---...---) at the start of the file
   if (md.startsWith('---')) {
     const end = md.indexOf('\n---\n', 3);
@@ -2901,6 +2905,10 @@ function mdToHtml(md) {
       i++; // skip closing fence
       if (lang === 'mermaid') {
         html += `<pre class="mermaid">${esc(codeLines.join('\n'))}</pre>`;
+      } else if (renderFencedCode) {
+        // Community content uses fences for diagrams and code. Preserve their
+        // whitespace and alignment instead of collapsing them into prose.
+        html += `<pre><code>${esc(codeLines.join('\n'))}</code></pre>`;
       } else {
         html += `<div class="md-scripture">${codeLines.map(l => inlineMd(l)).join('<br>')}</div>`;
       }
@@ -3007,6 +3015,12 @@ function mdToHtml(md) {
   }
   flushList();
   return html;
+}
+
+// Blog, QA, forum, and their editor previews share the code-friendly fenced
+// block renderer; research readers retain their existing scripture styling.
+function communityMarkdownToHtml(md) {
+  return mdToHtml(md, { fencedCode: true });
 }
 
 function inlineMd(text) {
@@ -3627,7 +3641,7 @@ function communityEditorUpdatePreview(idPrefix) {
   const input = document.getElementById(`${idPrefix}-input`);
   const preview = document.getElementById(`${idPrefix}-preview`);
   if (!input || !preview) return;
-  preview.innerHTML = input.value.trim() ? mdToHtml(input.value) : '<p style="color:var(--text-light)">预览会显示在这里…</p>';
+  preview.innerHTML = input.value.trim() ? communityMarkdownToHtml(input.value) : '<p style="color:var(--text-light)">预览会显示在这里…</p>';
 }
 
 function communityEditorInit(idPrefix) {
@@ -3793,11 +3807,11 @@ async function renderQADetail(id) {
       <div class="meta">${communityEscape(q.author.display_name)} · ${communityFormatDate(q.created_at)}</div>
       ${communityOwnerActionsHtml(q.author.id, '#/qa/' + q.id, `communityDeleteQuestion('${q.id}')`)}
       <div style="margin:10px 0">${bookmarkHtml}</div>
-      <div class="body md-reader">${mdToHtml(q.body)}</div>
+      <div class="body md-reader">${communityMarkdownToHtml(q.body)}</div>
       <h3>回答 (${q.answers.length})</h3>`;
     detail += q.answers.map(a => `
       <div class="community-reply">
-        <div class="body md-reader" data-raw="${communityEscape(a.body)}">${mdToHtml(a.body)}</div>
+        <div class="body md-reader" data-raw="${communityEscape(a.body)}">${communityMarkdownToHtml(a.body)}</div>
         <div class="meta">
           <span>${communityEscape(a.author.display_name)} · ${communityFormatDate(a.created_at)}</span>
           ${communityIsOwner(a.author.id) ? `<span class="owner-actions" style="margin:0"><button onclick="communityEditAnswer('${a.id}','${q.id}',this)">✎ 编辑</button><button class="danger" onclick="communityDeleteAnswer('${a.id}','${q.id}')">🗑 删除</button></span>` : ''}
@@ -4023,11 +4037,11 @@ async function renderForumDetail(id, skipViewCount) {
       <div class="meta">${communityEscape(t.author.display_name)} · ${communityFormatDate(t.created_at)} · 最近活跃 ${communityFormatDate(t.last_active_at)} · 👁 ${t.view_count}</div>
       ${communityOwnerActionsHtml(t.author.id, '#/forum/edit/' + t.id, `communityDeleteTopic('${t.id}')`)}
       <div style="margin:10px 0">${bookmarkHtml} <button id="forum-like-btn" class="like-btn ${t.liked_by_me ? 'liked' : ''}" onclick="communityToggleLike('${t.id}', this)">${t.liked_by_me ? '❤' : '🤍'} <span id="forum-like-count">${t.like_count}</span></button></div>
-      <div class="body md-reader">${mdToHtml(t.body)}</div>
+      <div class="body md-reader">${communityMarkdownToHtml(t.body)}</div>
       <h3>回复 (${t.replies.length})</h3>`;
     detail += t.replies.map(r => `
       <div class="community-reply">
-        <div class="body md-reader" data-raw="${communityEscape(r.body)}">${mdToHtml(r.body)}</div>
+        <div class="body md-reader" data-raw="${communityEscape(r.body)}">${communityMarkdownToHtml(r.body)}</div>
         <div class="meta">
           <span>${communityEscape(r.author.display_name)} · ${communityFormatDate(r.created_at)}</span>
           ${communityIsOwner(r.author.id) ? `<span class="owner-actions" style="margin:0"><button onclick="communityEditReply('${r.id}','${t.id}',this)">✎ 编辑</button><button class="danger" onclick="communityDeleteReply('${r.id}','${t.id}')">🗑 删除</button></span>` : ''}
@@ -4310,7 +4324,7 @@ async function renderBlogDetail(slug) {
       ${(p.tags || []).length ? `<div class="blog-card-tags">${p.tags.map(t => `<span class="tag-chip" onclick="location.hash='#/blog?' + new URLSearchParams([['tag','${communityEscape(t)}']]).toString()">${communityEscape(t)}</span>`).join('')}</div>` : ''}
       ${communityOwnerActionsHtml(p.author.id, '#/blog/edit/' + p.slug, `communityDeleteBlogPost('${p.slug}')`)}
       <div style="margin:10px 0">${bookmarkHtml}</div>
-      <div class="body md-reader">${mdToHtml(p.body_markdown)}</div>
+      <div class="body md-reader">${communityMarkdownToHtml(p.body_markdown)}</div>
     </div>`;
     document.getElementById('blog-detail').outerHTML = detail;
   } catch (e) {
