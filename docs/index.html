@@ -254,9 +254,9 @@ a:hover { text-decoration: underline; }
 .dhamma-ai-synthesis code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .dhamma-ai-synthesis p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
-/* Inline now (a <span>, not its own margined block) - lives inside the
-   same .gotama-msg-actions row as the icons, see that rule below. */
-.gotama-msg-meta { font-size: 0.72em; color: var(--text-light); }
+/* Token/time information is independent from the assistant action row. It
+   can wrap or grow without changing the action buttons' position. */
+.gotama-msg-meta { display: block; margin-top: 4px; font-size: 0.72em; color: var(--text-light); }
 /* Both the assistant and user wrappers are column flexboxes whose OWN
    width shrink-wraps to their widest child (the bubble) rather than
    stretching to the full message-list width - that's what makes the
@@ -279,22 +279,7 @@ a:hover { text-decoration: underline; }
    layout) so the user-edit-icon gap and assistant-copy/regen-icon gap
    read as identical, not just coincidentally close. */
 .gotama-msg-actions { display: flex; align-items: center; gap: 2px; margin-top: 4px; }
-/* Meta text (token/time stats) shares this row with the icons instead
-   of stacking above it as its own margined block - see the comment at
-   this row's call site for why that stacking was what actually broke
-   the equal-distance-from-the-bubble goal despite both sides using the
-   same margin-top. Needs an explicit width to have room to push the
-   icons to the far end while the wrapper's own align-items:flex-end
-   would otherwise just shrink-wrap this row to its content. */
-/* .has-meta is set in JS (gotamaRenderMessages), not inferred in CSS via
-   :has() - that was unreliable in practice (a message reloaded from the
-   server, e.g. after the background-recovery reconcile path, has no
-   token/time stats at all since the backend never persists them - see
-   gotamaMessageMetaHtml - so metaText is '' and no .gotama-msg-meta
-   element exists, but the space-between rule was still winning and
-   spreading the two icons across the full row width instead of falling
-   back to a tight flex-end pair). Explicit class, no ambiguity. */
-.gotama-msg-actions.assistant.has-meta { width: 100%; justify-content: space-between; }
+.gotama-msg-actions.assistant { width: 100%; justify-content: flex-end; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
 .gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
@@ -6407,11 +6392,6 @@ function gotamaRenderMarkdown(text) {
   return html.replace(/ FENCE(\d+) /g, (m, idx) => fenceBlocks[+idx]);
 }
 
-// Returns bare inline content (no own block/margin) - this now shares a
-// single flex row with the action icons (see gotamaRenderMessages) so
-// there's exactly one gap between the colored bubble and whatever comes
-// after it, matching the user side exactly instead of stacking a
-// separately-margined meta line in front of the icons.
 function gotamaMessageMetaHtml(m) {
   if (!m.request_total_tokens && m.request_total_tokens !== 0) return '';
   const parts = [`输入 ${m.request_input_tokens ?? 0}`, `输出 ${m.request_output_tokens ?? 0}`, `共 ${m.request_total_tokens} tokens`];
@@ -6505,24 +6485,11 @@ function gotamaRenderMessages() {
       icons = `${copyBtn}${regenBtn}`;
     }
     const metaText = gotamaMessageMetaHtml(m);
-    // Meta text (token/time stats) and the action icons now share ONE
-    // row instead of stacking as two separately-margined blocks - a
-    // standalone meta line above the icons meant the icons' real
-    // distance from the colored bubble was "meta line's own margin +
-    // its text height + the icons' own margin" (visibly much larger
-    // than the user side, which has nothing between its bubble and its
-    // edit icon) even though both used the same margin-top value on the
-    // icon row itself. One combined row after the bubble, using that
-    // same margin-top once, makes the two sides' bubble-to-row distance
-    // actually equal instead of just superficially sharing a CSS value.
-    const footerRow = (metaText || icons) ? `<div class="gotama-msg-actions assistant${metaText ? ' has-meta' : ''}">${metaText}${icons}</div>` : '';
-    // Wrapped in gotama-msg-wrap (max-width matching the bubble, not the
-    // full message-list width) so the action row's right edge lines up
-    // with the bubble/meta-line's own right edge instead of snapping to
-    // the far right of the whole page - that mismatch (icons pinned to
-    // the page edge while the narrower bubble+meta text sat far to their
-    // left) was the actual complaint, not the right-vs-left choice itself.
-    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}</div>${footerRow}</div>`;
+    // Keep the action row immediately after the assistant bubble. Token/time
+    // metadata stays below the trace/source content and cannot determine the
+    // buttons' horizontal or vertical position.
+    const actionRow = icons ? `<div class="gotama-msg-actions assistant">${icons}</div>` : '';
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
