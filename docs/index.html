@@ -265,7 +265,7 @@ a:hover { text-decoration: underline; }
    text on short replies) but visually anchored to that corner the way
    the reference design's icon row is. */
 .gotama-msg-actions { display: flex; gap: 2px; margin-top: 2px; }
-.gotama-msg-actions.assistant { align-self: flex-start; }
+.gotama-msg-actions.assistant { align-self: flex-end; }
 .gotama-msg-actions.user { align-self: flex-end; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
@@ -2953,7 +2953,15 @@ function mdToHtml(md) {
     }
 
     // Table block
-    if (trimmed.startsWith('|') && lines[i + 1] && /^\s*\|?\s*-+\s*\|/.test(lines[i + 1])) {
+    // The separator regex must match the WHOLE line, not just a prefix,
+    // and must accept the standard GFM alignment colons (:---, ---:,
+    // :---:) - a bare `-+\s*\|` prefix check only worked by luck when a
+    // table's first column happened to have no colon; a table starting
+    // "|:------|" (left-align on column 1, common output from many
+    // markdown table generators and from LLM-authored content) has a
+    // colon immediately where this used to require a dash, so it never
+    // matched at all and silently fell through to raw "| a | b |" text.
+    if (trimmed.startsWith('|') && lines[i + 1] && /^\s*\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?\s*$/.test(lines[i + 1])) {
       flushList();
       const headerCells = trimmed.split('|').map(c => c.trim()).filter((c, idx, arr) => !(idx === 0 && c === '') && !(idx === arr.length - 1 && c === ''));
       i += 2;
@@ -3009,6 +3017,18 @@ function inlineMd(text) {
   // double-asterisk pairs above.
   t = t.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
   t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, label, url) => `<a href="${url}" target="_blank">${label}</a>`);
+  // [[sutta:uid]] or [[sutta:uid|custom label]] - jumps to the local
+  // built-in reader (#/read/uid, see renderReader()) instead of an
+  // external suttacentral.net link, so clicking a sutta reference inside
+  // a blog post/forum reply/QA answer/research page stays in-app. Kept
+  // as its own [[...]] prefix rather than a new bracket syntax so it
+  // reuses the exact same double-bracket convention authors already know
+  // from the Obsidian wiki-links below, just namespaced by "sutta:".
+  // uid pattern matches SuttaCentral's real scheme (letters, digits,
+  // dots, optional dash-range - e.g. an5.196, mn10, dn16, an1.235-247).
+  t = t.replace(/\[\[sutta:([a-z]+[\d.]+(?:-\d+)?)(?:\|([^\]]+))?\]\]/gi, (m, uid, label) => {
+    return `<a href="#/read/${uid}" class="wiki-link sutta-ref-link">${label || uid}</a>`;
+  });
   // Obsidian [[wiki-link]]: map to route or scroll-to-anchor
   t = t.replace(/\[\[([^\]]+)\]\]/g, (m, key) => {
     const entry = WIKI_LINKS[key];
@@ -3584,6 +3604,7 @@ function communityEditorHtml(idPrefix, initialValue) {
       <button type="button" onclick="communityEditorPrefix('${idPrefix}','> ')" title="引用">"</button>
       <button type="button" onclick="communityEditorWrap('${idPrefix}','\`','\`')" title="代码">&lt;/&gt;</button>
       <button type="button" onclick="communityEditorWrap('${idPrefix}','[','](https://)')" title="链接">🔗</button>
+      <button type="button" onclick="communityEditorWrap('${idPrefix}','[[sutta:',']]')" title="插入经文链接：[[sutta:an5.196]]，可选 [[sutta:an5.196|自定义标题]]，点击后跳转本站内置阅读器">📖</button>
     </div>
     <div class="md-editor-panes">
       <textarea class="md-editor-input" id="${idPrefix}-input" oninput="communityEditorUpdatePreview('${idPrefix}')" placeholder="支持 Markdown：# 标题、**加粗**、- 列表、&gt; 引用……">${communityEscape(initialValue || '')}</textarea>
@@ -6668,8 +6689,17 @@ async function gotamaSend(overrideContent) {
 
     if (sawError) throw new Error(sawError);
     if (!sawFinal) throw new Error('连接中断，回答可能不完整');
+    // Action icons (copy/regenerate/edit) are conditioned on !gotamaSending
+    // (see gotamaRenderMessages) - flip it here, before this render, not
+    // only in the `finally` below which runs after it. Otherwise this
+    // render happens while still "sending", so the icons stay hidden
+    // until some *later* unrelated render (e.g. navigating away and back)
+    // happens to run after `finally` has already reset the flag - the
+    // exact bug this comment is fixing.
+    gotamaSending = false;
     gotamaRenderMessages();
   } catch (e) {
+    gotamaSending = false;
     document.getElementById('gotamaThinking')?.remove();
     const msg = e.status === 402
       ? `${e.message} <a href="#/profile">前往账号页面</a>`
