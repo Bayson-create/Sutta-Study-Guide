@@ -271,15 +271,12 @@ a:hover { text-decoration: underline; }
 .gotama-msg-wrap.assistant .gotama-msg.assistant { max-width: none; }
 .gotama-icon-btn { background: none; border: none; cursor: pointer; padding: 5px; border-radius: 6px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; color: var(--text-light); opacity: 0.6; transition: opacity 0.15s, background 0.15s, color 0.15s; }
 .gotama-icon-btn:hover { opacity: 1; background: var(--hover-bg); color: var(--text); }
-/* Action row sits directly under the bubble, hugging its bottom-right
-   corner - not overlapping it (an overlapping badge would cover message
-   text on short replies) but visually anchored to that corner the way
-   the reference design's icon row is. Same margin-top on both sides
-   (governed by this one shared rule, not each side's own separate
-   layout) so the user-edit-icon gap and assistant-copy/regen-icon gap
-   read as identical, not just coincidentally close. */
+/* The assistant action row is anchored to the bubble wrapper and removed
+   from normal flow. This keeps it at the bubble's bottom-right without
+   pushing the trace/source rows downward. */
 .gotama-msg-actions { display: flex; align-items: center; gap: 2px; margin-top: 4px; }
-.gotama-msg-actions.assistant { width: 100%; justify-content: flex-end; }
+.gotama-msg-bubble { position: relative; }
+.gotama-msg-actions.assistant { position: absolute; top: 100%; right: 0; width: auto; justify-content: flex-end; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
 .gotama-edit-actions { display: flex; gap: 8px; margin-top: 6px; justify-content: flex-end; width: 100%; }
@@ -6485,11 +6482,11 @@ function gotamaRenderMessages() {
       icons = `${copyBtn}${regenBtn}`;
     }
     const metaText = gotamaMessageMetaHtml(m);
-    // Keep the action row immediately after the assistant bubble. Token/time
-    // metadata stays below the trace/source content and cannot determine the
-    // buttons' horizontal or vertical position.
+    // Anchor the action row to a wrapper around the colored bubble. It is
+    // positioned visually at the bubble's bottom-right, but removed from
+    // normal flow so trace/source rows begin at their natural position.
     const actionRow = icons ? `<div class="gotama-msg-actions assistant">${icons}</div>` : '';
-    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
