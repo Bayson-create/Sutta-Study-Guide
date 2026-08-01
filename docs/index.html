@@ -276,6 +276,7 @@ a:hover { text-decoration: underline; }
    pushing the trace/source rows downward. */
 .gotama-msg-actions { display: flex; align-items: center; gap: 2px; margin-top: 4px; }
 .gotama-msg-bubble { position: relative; min-width: 0; max-width: 100%; }
+.gotama-msg-bubble.reserve-action-space { margin-bottom: 29px; }
 .gotama-msg-actions.assistant { position: absolute; top: 100%; right: 0; width: auto; justify-content: flex-end; }
 .gotama-msg-editing { width: 100%; }
 .gotama-edit-textarea { width: 100%; min-height: 60px; resize: vertical; box-sizing: border-box; padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.4); font-family: inherit; font-size: 0.95em; background: rgba(255,255,255,0.12); color: inherit; }
@@ -301,6 +302,19 @@ a:hover { text-decoration: underline; }
   .gotama-mobile-toggle { display: inline-flex; align-items: center; gap: 6px; margin: 0 0 10px; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font-size: 0.85em; cursor: pointer; }
   .gotama-sidebar-backdrop.open { display: block; position: absolute; inset: 0; z-index: 5; background: rgba(0,0,0,0.35); }
 }
+
+/* Shown at the top of an editor when unsaved work was recovered from localStorage */
+.draft-restored-hint {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-bottom: 10px; padding: 8px 12px; border-radius: 8px;
+  background: #fff8e1; border: 1px solid #f0dfa8; color: #8a6d1b; font-size: 0.85em;
+}
+.draft-restored-hint button {
+  margin-left: auto; padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  border: 1px solid #d8c489; background: transparent; color: inherit;
+  font-family: inherit; font-size: 0.95em;
+}
+.draft-restored-hint button:hover { background: rgba(0,0,0,0.05); }
 
 /* Markdown editor — toolbar + split textarea/preview */
 .md-editor { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; background: var(--card-bg); }
@@ -1055,6 +1069,9 @@ document.addEventListener('visibilitychange', () => {
 // Router
 function route() {
   const hash = location.hash || '#/';
+  // Pages that want the backend kept awake restart this themselves; every
+  // other navigation should stop paying for pings it doesn't need.
+  communityKeepWarmStop();
   app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
   if (hash.startsWith('#/read/')) {
     const rest = hash.slice(7);
@@ -3471,19 +3488,41 @@ function communityLogout() {
 
 // Cached current-user object (id/display_name/email/role), fetched once per session.
 let communityCurrentUser = undefined; // undefined = not yet fetched, null = fetched but not logged in
+// True when the last /api/auth/me attempt couldn't reach the backend, as
+// opposed to the backend telling us the token is bad. These are completely
+// different situations that used to be collapsed into "logged out".
+let communityAuthCheckFailed = false;
 
 async function communityFetchCurrentUser(force = false) {
   if (!force && communityCurrentUser !== undefined) return communityCurrentUser;
-  if (!communityToken()) { communityCurrentUser = null; return null; }
+  if (!communityToken()) { communityCurrentUser = null; communityAuthCheckFailed = false; return null; }
   try {
-    const res = await fetch(`${API_BASE}/api/auth/me`, { headers: communityAuthHeaders() });
-    if (!res.ok) { communityCurrentUser = null; return null; }
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/auth/me`, { headers: communityAuthHeaders() });
+    // Only the server saying "this token is no good" means logged out.
+    if (res.status === 401 || res.status === 403) {
+      communityCurrentUser = null;
+      communityAuthCheckFailed = false;
+      return null;
+    }
+    if (!res.ok) { communityAuthCheckFailed = true; return communityCurrentUser || null; }
     communityCurrentUser = await res.json();
+    communityAuthCheckFailed = false;
     return communityCurrentUser;
   } catch (e) {
-    communityCurrentUser = null;
-    return null;
+    // A network failure here is overwhelmingly "the container is cold", not
+    // "the token expired". Caching null on it used to downgrade the whole
+    // session to logged-out, which popped a login modal at submit time and,
+    // in the editors, navigated away and destroyed everything typed.
+    communityAuthCheckFailed = true;
+    return communityCurrentUser || null;
   }
+}
+
+// True when we hold a token but simply couldn't verify it. Callers should
+// let the real request proceed - it carries the token, and the server will
+// answer 401 authoritatively if it genuinely is invalid.
+function communityAuthUnverified() {
+  return communityAuthCheckFailed && !!communityToken();
 }
 
 function communityIsOwner(authorId) {
@@ -3495,6 +3534,9 @@ function communityRequireLogin() {
   return new Promise(async (resolve) => {
     const user = await communityFetchCurrentUser();
     if (user) { resolve(true); return; }
+    // Couldn't verify rather than genuinely logged out - don't demand a
+    // re-login (and don't let editors bail out to the list page over it).
+    if (communityAuthUnverified()) { resolve(true); return; }
     communityShowAuthModal('login', resolve);
   });
 }
@@ -3613,6 +3655,204 @@ function communityTimeoutMessage(e) {
     return '请求超时——后端可能仍在冷启动，请等待约 30 秒后刷新页面重试';
   }
   return `加载失败: ${e.message}`;
+}
+
+// --- Writes that survive a cold start ---------------------------------
+// Reads have had a timeout for a while; writes had neither timeout nor
+// retry, so the first submit after an idle period - the one that has to
+// wake a scaled-to-zero container - surfaced as a bare "提交失败" alert.
+//
+// Only failures that prove the request never reached the app are retried:
+// a fetch-level network error (TypeError) and the ingress's own 502/503/504.
+// A timeout is deliberately NOT retried - the server may well have
+// processed it, and silently duplicating someone's post is worse than
+// making them press the button again (their draft is saved either way).
+async function communityWriteFetch(url, opts = {}, { attempts = 3, timeoutMs = 60000, onRetry } = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    let retryable = false;
+    try {
+      const res = await communityFetchWithTimeout(url, opts, timeoutMs);
+      if (res.status === 502 || res.status === 503 || res.status === 504) {
+        lastError = new Error(`后端暂时不可用（${res.status}）`);
+        retryable = true;
+      } else {
+        return res;
+      }
+    } catch (e) {
+      lastError = e;
+      retryable = e instanceof TypeError; // network-level failure, never reached the app
+    }
+    if (!retryable || attempt === attempts) break;
+    if (onRetry) onRetry(attempt, attempts);
+    await new Promise(r => setTimeout(r, 2000 * attempt));
+  }
+  throw lastError;
+}
+
+// Turns a failed write into a message that says what actually happened and,
+// crucially, reassures that nothing was lost - every editor autosaves.
+function communityWriteErrorMessage(e) {
+  if (e.name === 'AbortError') {
+    return '请求超时，后端可能仍在唤醒。你的内容已自动保存为草稿，请稍候再试一次。';
+  }
+  if (e instanceof TypeError) {
+    return '无法连接后端（可能正在冷启动）。你的内容已自动保存为草稿，请稍候再试一次。';
+  }
+  return e.message;
+}
+
+// Runs a write behind its own submit button: disables it, reports cold-start
+// retries in place of the label, and always restores it. `fn` receives an
+// onRetry callback to hand to communityWriteFetch.
+async function communityRunSubmit(btnEl, busyText, fn) {
+  const original = btnEl ? btnEl.textContent : null;
+  if (btnEl) { btnEl.disabled = true; btnEl.textContent = busyText; }
+  try {
+    return await fn((attempt, attempts) => {
+      if (btnEl) btnEl.textContent = `后端正在唤醒，重试中（${attempt}/${attempts - 1}）…`;
+    });
+  } finally {
+    if (btnEl) { btnEl.disabled = false; btnEl.textContent = original; }
+  }
+}
+
+// --- Draft autosave ----------------------------------------------------
+// The backend runs with minReplicas=0 to keep the bill near zero, so it
+// scales to zero after a few idle minutes. That makes a long editing
+// session the exact worst case: type for ten minutes, and the submit has
+// to wake a cold container. Before this, any failure in that window - or
+// simply navigating away afterwards - threw away everything typed, because
+// nothing but the auth token was ever persisted.
+//
+// So every editor mirrors its fields to localStorage on a debounce, and the
+// draft is cleared only once the server has confirmed the write.
+const COMMUNITY_DRAFT_PREFIX = 'sutta_draft:';
+const COMMUNITY_DRAFT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+
+function communityFieldValue(el) {
+  return el.type === 'checkbox' ? el.checked : el.value;
+}
+
+function communitySetFieldValue(el, value) {
+  if (el.type === 'checkbox') el.checked = !!value;
+  else el.value = value;
+}
+
+function communityDraftSave(key, values) {
+  try {
+    localStorage.setItem(COMMUNITY_DRAFT_PREFIX + key, JSON.stringify({ t: Date.now(), v: values }));
+  } catch (e) { /* quota/private mode - autosave is best-effort, never break typing */ }
+}
+
+function communityDraftLoad(key) {
+  try {
+    const raw = localStorage.getItem(COMMUNITY_DRAFT_PREFIX + key);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || !parsed.v || Date.now() - (parsed.t || 0) > COMMUNITY_DRAFT_TTL_MS) {
+      communityDraftClear(key);
+      return null;
+    }
+    return parsed.v;
+  } catch (e) { return null; }
+}
+
+function communityDraftClear(key) {
+  try { localStorage.removeItem(COMMUNITY_DRAFT_PREFIX + key); } catch (e) { /* ignore */ }
+}
+
+// Binds autosave to a set of fields and restores a draft if one is newer
+// than what the page loaded with. `fieldIds` are element ids; the caller
+// passes them in the same order every time so the stored shape is stable.
+// Returns true if a draft was actually restored.
+function communityDraftBind(key, fieldIds) {
+  const els = fieldIds.map(id => document.getElementById(id)).filter(Boolean);
+  if (!els.length) return false;
+  const initial = {};
+  els.forEach(el => { initial[el.id] = communityFieldValue(el); });
+
+  const draft = communityDraftLoad(key);
+  // A draft that matches what's already on screen isn't worth announcing -
+  // that's just a leftover from a finished edit, not unsaved work.
+  const hasNewContent = draft && els.some(el => draft[el.id] !== undefined && draft[el.id] !== initial[el.id]);
+  if (hasNewContent) {
+    els.forEach(el => { if (draft[el.id] !== undefined) communitySetFieldValue(el, draft[el.id]); });
+    communityDraftRefreshPreviews(els);
+    communityDraftShowRestoredHint(key, els, initial);
+  }
+
+  let timer = null;
+  const save = () => {
+    // Typing is the signal that there's now work worth protecting, so this
+    // is also where the backend gets kept awake - readers who never type
+    // cost nothing, and the container stays up for exactly the window
+    // where a scale-to-zero would hurt.
+    communityKeepWarmStart();
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const values = {};
+      els.forEach(el => { values[el.id] = communityFieldValue(el); });
+      communityDraftSave(key, values);
+    }, 400);
+  };
+  els.forEach(el => { el.addEventListener('input', save); el.addEventListener('change', save); });
+  return hasNewContent;
+}
+
+// Setting .value programmatically doesn't fire the input event the live
+// preview is wired to, so a restored draft would show its markdown source
+// with an empty preview pane beside it until the next keystroke.
+function communityDraftRefreshPreviews(els) {
+  els.forEach(el => {
+    if (el.classList.contains('md-editor-input')) communityEditorUpdatePreview(el.id.replace(/-input$/, ''));
+  });
+}
+
+function communityDraftShowRestoredHint(key, els, initial) {
+  const anchor = els[0].closest('.community-form') || els[0].parentElement;
+  if (!anchor) return;
+  const bar = document.createElement('div');
+  bar.className = 'draft-restored-hint';
+  bar.innerHTML = `<span>已恢复上次未提交的草稿</span><button type="button">放弃草稿</button>`;
+  bar.querySelector('button').onclick = () => {
+    els.forEach(el => communitySetFieldValue(el, initial[el.id]));
+    communityDraftClear(key);
+    communityDraftRefreshPreviews(els);
+    bar.remove();
+  };
+  anchor.insertBefore(bar, anchor.firstChild);
+}
+
+// --- Keep the backend warm while an editor is open --------------------
+// Scale-to-zero is what makes submits slow and failure-prone, but paying
+// for an always-on replica to fix it is the expensive answer. Pinging
+// /health only while an editor is actually open covers precisely the
+// window that hurts, and costs a few vCPU-seconds per editing session -
+// comfortably inside the monthly free grant.
+let communityKeepWarmTimer = null;
+let communityKeepWarmUntil = 0;
+const COMMUNITY_KEEP_WARM_WINDOW_MS = 15 * 60 * 1000;
+
+// Called on every keystroke, so it must be idempotent: each call only
+// extends a sliding window, and at most one interval ever runs. The single
+// immediate ping on the first keystroke is deliberate - it wakes a cold
+// container while the user is still typing rather than at submit time.
+function communityKeepWarmStart() {
+  communityKeepWarmUntil = Date.now() + COMMUNITY_KEEP_WARM_WINDOW_MS;
+  if (communityKeepWarmTimer) return;
+  const ping = () => {
+    if (Date.now() > communityKeepWarmUntil) { communityKeepWarmStop(); return; }
+    if (document.visibilityState !== 'visible') return;
+    fetch(`${API_BASE}/health`, { cache: 'no-store' }).catch(() => {});
+  };
+  ping();
+  communityKeepWarmTimer = setInterval(ping, 120000);
+}
+
+function communityKeepWarmStop() {
+  if (communityKeepWarmTimer) { clearInterval(communityKeepWarmTimer); communityKeepWarmTimer = null; }
+  communityKeepWarmUntil = 0;
 }
 
 // --- Markdown editor: toolbar + textarea + live preview, shared by blog & forum ---
@@ -3737,10 +3977,11 @@ async function renderQAHome(searchQuery) {
   html += `<div class="community-form">
     <input id="qa-new-title" placeholder="问题标题">
     <textarea id="qa-new-body" placeholder="详细描述你的问题…"></textarea>
-    <button onclick="communitySubmitQuestion()">提交问题</button>
+    <button onclick="communitySubmitQuestion(this)">提交问题</button>
   </div>`;
   html += `<div id="qa-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
+  communityDraftBind('qa:new', ['qa-new-title', 'qa-new-body']);
 
   const slowHint = communityShowSlowHint('qa-list');
   try {
@@ -3771,21 +4012,24 @@ function communityQASearch() {
   renderQAHome(q);
 }
 
-async function communitySubmitQuestion() {
+async function communitySubmitQuestion(btnEl) {
   const title = document.getElementById('qa-new-title').value.trim();
   const body = document.getElementById('qa-new-body').value.trim();
   if (!title || !body) { alert('请填写标题和内容'); return; }
   if (!(await communityRequireLogin())) return;
   try {
-    const res = await fetch(`${API_BASE}/api/qa/questions`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-      body: JSON.stringify({ title, body }),
+    await communityRunSubmit(btnEl, '提交中…', async (onRetry) => {
+      const res = await communityWriteFetch(`${API_BASE}/api/qa/questions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ title, body }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    communityDraftClear('qa:new'); // only once the server has it
     renderQAHome();
   } catch (e) {
-    alert(e.message);
+    alert(communityWriteErrorMessage(e));
   }
 }
 
@@ -3819,29 +4063,33 @@ async function renderQADetail(id) {
       </div>`).join('');
     detail += `<div class="community-form">
       <textarea id="qa-answer-body" placeholder="写下你的回答…"></textarea>
-      <button onclick="communitySubmitAnswer('${id}')">提交回答</button>
+      <button onclick="communitySubmitAnswer('${id}', this)">提交回答</button>
     </div></div>`;
     document.getElementById('qa-detail').outerHTML = detail;
+    communityDraftBind(`qa:answer:${id}`, ['qa-answer-body']);
   } catch (e) {
     clearTimeout(slowHint);
     document.getElementById('qa-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
-async function communitySubmitAnswer(questionId) {
+async function communitySubmitAnswer(questionId, btnEl) {
   const body = document.getElementById('qa-answer-body').value.trim();
   if (!body) { alert('请输入回答内容'); return; }
   if (!(await communityRequireLogin())) return;
   try {
-    const res = await fetch(`${API_BASE}/api/qa/questions/${questionId}/answers`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-      body: JSON.stringify({ body }),
+    await communityRunSubmit(btnEl, '提交中…', async (onRetry) => {
+      const res = await communityWriteFetch(`${API_BASE}/api/qa/questions/${questionId}/answers`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ body }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    communityDraftClear(`qa:answer:${questionId}`);
     renderQADetail(questionId);
   } catch (e) {
-    alert(e.message);
+    alert(communityWriteErrorMessage(e));
   }
 }
 
@@ -3983,29 +4231,37 @@ async function renderForumEditor(topicId) {
     <input id="forum-editor-category" placeholder="分类（例如：修行心得、经典讨论）" value="${communityEscape(existing?.category || '')}">
     <input id="forum-editor-title" placeholder="帖子标题" value="${communityEscape(existing?.title || '')}">
     ${communityEditorHtml('forum-editor', existing?.body || '')}
-    <button onclick="communitySaveTopic(${isEdit ? `'${topicId}'` : 'null'})">${isEdit ? '保存修改' : '发布'}</button>
+    <button onclick="communitySaveTopic(${isEdit ? `'${topicId}'` : 'null'}, this)">${isEdit ? '保存修改' : '发布'}</button>
   </div>`;
   app.innerHTML = html;
   communityEditorInit('forum-editor');
+  communityDraftBind(communityForumDraftKey(topicId), ['forum-editor-category', 'forum-editor-title', 'forum-editor-input']);
 }
 
-async function communitySaveTopic(topicId) {
+function communityForumDraftKey(topicId) {
+  return topicId ? `forum:edit:${topicId}` : 'forum:new';
+}
+
+async function communitySaveTopic(topicId, btnEl) {
   const category = document.getElementById('forum-editor-category').value.trim() || '综合讨论';
   const title = document.getElementById('forum-editor-title').value.trim();
   const body = communityEditorValue('forum-editor');
   if (!title || !body) { alert('请填写标题和正文'); return; }
   try {
     const url = topicId ? `${API_BASE}/api/forum/topics/${topicId}` : `${API_BASE}/api/forum/topics`;
-    const res = await fetch(url, {
-      method: topicId ? 'PATCH' : 'POST',
-      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-      body: JSON.stringify({ category, title, body }),
+    const saved = await communityRunSubmit(btnEl, '保存中…', async (onRetry) => {
+      const res = await communityWriteFetch(url, {
+        method: topicId ? 'PATCH' : 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ category, title, body }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+      return res.json();
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
-    const saved = await res.json();
+    communityDraftClear(communityForumDraftKey(topicId));
     location.hash = '#/forum/' + saved.id;
   } catch (e) {
-    alert(e.message);
+    alert(communityWriteErrorMessage(e));
   }
 }
 
@@ -4049,9 +4305,10 @@ async function renderForumDetail(id, skipViewCount) {
       </div>`).join('');
     detail += `<div class="community-form">
       <textarea id="forum-reply-body" placeholder="写下你的回复…"></textarea>
-      <button onclick="communitySubmitReply('${id}')">提交回复</button>
+      <button onclick="communitySubmitReply('${id}', this)">提交回复</button>
     </div></div>`;
     document.getElementById('forum-detail').outerHTML = detail;
+    communityDraftBind(`forum:reply:${id}`, ['forum-reply-body']);
   } catch (e) {
     clearTimeout(slowHint);
     document.getElementById('forum-detail').outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
@@ -4082,20 +4339,23 @@ async function communityToggleLike(topicId, btnEl) {
   }
 }
 
-async function communitySubmitReply(topicId) {
+async function communitySubmitReply(topicId, btnEl) {
   const body = document.getElementById('forum-reply-body').value.trim();
   if (!body) { alert('请输入回复内容'); return; }
   if (!(await communityRequireLogin())) return;
   try {
-    const res = await fetch(`${API_BASE}/api/forum/topics/${topicId}/replies`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-      body: JSON.stringify({ body }),
+    await communityRunSubmit(btnEl, '提交中…', async (onRetry) => {
+      const res = await communityWriteFetch(`${API_BASE}/api/forum/topics/${topicId}/replies`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ body }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '提交失败');
+    communityDraftClear(`forum:reply:${topicId}`);
     renderForumDetail(topicId, true);
   } catch (e) {
-    alert(e.message);
+    alert(communityWriteErrorMessage(e));
   }
 }
 
@@ -4240,7 +4500,10 @@ async function renderBlogEditor(slug) {
   const loggedIn = await communityRequireLogin();
   if (!loggedIn) { location.hash = '#/blog'; return; }
   const user = await communityFetchCurrentUser();
-  if (!user || (user.role !== 'editor' && user.role !== 'admin')) {
+  // Skip the role gate when we simply couldn't reach the backend to check -
+  // the server enforces it on save anyway, and bouncing someone out of the
+  // editor over a cold-start blip is exactly how work used to get lost.
+  if (!communityAuthUnverified() && (!user || (user.role !== 'editor' && user.role !== 'admin'))) {
     alert('只有 editor 或 admin 角色才能发布博客文章');
     location.hash = '#/blog';
     return;
@@ -4263,11 +4526,18 @@ async function renderBlogEditor(slug) {
     <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
       <label style="font-size:0.9em;color:var(--text-light)"><input type="checkbox" id="blog-editor-publish" ${!existing || existing.status === 'published' ? 'checked' : ''}> 立即发布（取消勾选则保存为草稿）</label>
     </div>
-    <button style="margin-top:10px" onclick="communitySaveBlogPost(${isEdit ? `'${slug}'` : 'null'})">${isEdit ? '保存修改' : '发布文章'}</button>
+    <button style="margin-top:10px" onclick="communitySaveBlogPost(${isEdit ? `'${slug}'` : 'null'}, this)">${isEdit ? '保存修改' : '发布文章'}</button>
   </div>`;
   app.innerHTML = html;
   communityEditorInit('blog-editor');
   window.communityBlogSlugTouched = isEdit; // don't auto-slugify when editing an existing post
+  communityDraftBind(communityBlogDraftKey(slug), [
+    'blog-editor-title', 'blog-editor-slug', 'blog-editor-tags', 'blog-editor-input', 'blog-editor-publish',
+  ]);
+}
+
+function communityBlogDraftKey(slug) {
+  return slug ? `blog:edit:${slug}` : 'blog:new';
 }
 
 function communityBlogTitleChanged() {
@@ -4276,7 +4546,7 @@ function communityBlogTitleChanged() {
   document.getElementById('blog-editor-slug').value = communitySlugify(title);
 }
 
-async function communitySaveBlogPost(slug) {
+async function communitySaveBlogPost(slug, btnEl) {
   const title = document.getElementById('blog-editor-title').value.trim();
   const newSlug = document.getElementById('blog-editor-slug').value.trim() || communitySlugify(title);
   const body_markdown = communityEditorValue('blog-editor');
@@ -4288,16 +4558,19 @@ async function communitySaveBlogPost(slug) {
   try {
     const url = slug ? `${API_BASE}/api/blog/posts/${slug}` : `${API_BASE}/api/blog/posts`;
     const payload = { title, slug: newSlug, body_markdown, status, tags };
-    const res = await fetch(url, {
-      method: slug ? 'PATCH' : 'POST',
-      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-      body: JSON.stringify(payload),
+    const saved = await communityRunSubmit(btnEl, '保存中…', async (onRetry) => {
+      const res = await communityWriteFetch(url, {
+        method: slug ? 'PATCH' : 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify(payload),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+      return res.json();
     });
-    if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
-    const saved = await res.json();
+    communityDraftClear(communityBlogDraftKey(slug));
     location.hash = '#/blog/' + saved.slug;
   } catch (e) {
-    alert(e.message);
+    alert(communityWriteErrorMessage(e));
   }
 }
 
@@ -6228,12 +6501,22 @@ async function renderGotamaChat(conversationId) {
       </div>
     </div>`;
 
+  // A half-typed question is worth exactly as much as a half-written post,
+  // so the chat box gets the same autosave treatment as the editors.
+  communityDraftBind(gotamaDraftKey(), ['gotamaInput']);
+
   await gotamaLoadConversations();
   if (conversationId) {
     await gotamaLoadConversation(conversationId);
   } else {
     gotamaRenderMessages();
   }
+}
+
+// Keyed per conversation so switching threads doesn't drag an unsent
+// question along with you.
+function gotamaDraftKey() {
+  return `gotama:${gotamaActiveId || 'new'}`;
 }
 
 async function gotamaLoadConversations() {
@@ -6499,8 +6782,10 @@ function gotamaRenderMessages() {
     // Anchor the action row to a wrapper around the colored bubble. It is
     // positioned visually at the bubble's bottom-right, but removed from
     // normal flow so trace/source rows begin at their natural position.
+    const hasTrailingAssistantContent = Boolean((m.tool_trace && m.tool_trace.length) || (m.sources && m.sources.length) || m._flag || metaText);
+    const actionSpaceClass = icons && !hasTrailingAssistantContent ? ' reserve-action-space' : '';
     const actionRow = icons ? `<div class="gotama-msg-actions assistant">${icons}</div>` : '';
-    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble${actionSpaceClass}"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
@@ -6584,21 +6869,28 @@ async function gotamaSend(overrideContent) {
   const input = document.getElementById('gotamaInput');
   const content = overrideContent !== undefined ? overrideContent : input.value.trim();
   if (!content) return;
+  // Captured before the send, because a first message creates the
+  // conversation and moves gotamaActiveId off null - clearing afterwards
+  // would target the new conversation's key and leave the 'new' draft behind.
+  const draftKey = gotamaDraftKey();
 
   gotamaSending = true;
   const btn = document.getElementById('gotamaSendBtn');
   btn.disabled = true;
   btn.textContent = '思考中…';
-  if (overrideContent === undefined) input.value = '';
+  // The input is NOT cleared here. Creating the conversation below can fail
+  // against a cold backend, and clearing first meant the question was gone
+  // from the box with no way to get it back. It's cleared once the request
+  // is actually under way (see below).
   input.disabled = true;
   const startedAt = performance.now();
 
   try {
     let convId = gotamaActiveId;
     if (!convId) {
-      const createRes = await fetch(`${API_BASE}/api/gotama/conversations`, {
+      const createRes = await communityWriteFetch(`${API_BASE}/api/gotama/conversations`, {
         method: 'POST', headers: communityAuthHeaders(),
-      });
+      }, { onRetry: () => { btn.textContent = '唤醒后端中…'; } });
       if (!createRes.ok) throw new Error('创建会话失败');
       const conv = await createRes.json();
       convId = conv.id;
@@ -6607,6 +6899,14 @@ async function gotamaSend(overrideContent) {
       history.replaceState(null, '', `#/gotama/${convId}`);
       gotamaRenderConvList();
     }
+
+    // The conversation exists now, so the question is safely on its way -
+    // only at this point is it safe to take it out of the input box.
+    if (overrideContent === undefined) {
+      input.value = '';
+      communityDraftClear(draftKey);
+    }
+    btn.textContent = '思考中…';
 
     gotamaMessages.push({ role: 'user', content, sources: [], created_at: new Date().toISOString() });
     gotamaMessages.push({ role: 'assistant', content: '', sources: [], created_at: new Date().toISOString(), _streaming: true });
@@ -6770,9 +7070,13 @@ async function gotamaSend(overrideContent) {
         document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg-flag" style="align-self:center">⚠ ${msg}，可点击上方问题旁的 ✏️ 重新发送</div>`);
       });
     } else {
+      // No conversation was ever created, so this failed before the send
+      // even started - which also means the question is still sitting in
+      // the input box (and in localStorage). Say so, rather than showing a
+      // bare "Failed to fetch" that reads like the text is gone.
       if (last && last.role === 'assistant' && last._streaming) gotamaMessages.pop(); // still empty - nothing worth keeping
       gotamaRenderMessages();
-      document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg assistant"><div class="gotama-msg-body error-msg">${msg}</div></div>`);
+      document.getElementById('gotamaMessages').insertAdjacentHTML('beforeend', `<div class="gotama-msg assistant"><div class="gotama-msg-body error-msg">${communityEscape(communityWriteErrorMessage(e))}</div></div>`);
     }
   } finally {
     document.getElementById('gotamaThinking')?.remove();
