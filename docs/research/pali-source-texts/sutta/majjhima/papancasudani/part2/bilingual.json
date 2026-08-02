@@ -326,13 +326,7 @@
     "translation_note": [
       "本段为外道徒的哀号，重复对比自己与佛陀弟子，强调供养的果报。",
       "'nippabhā' 译为'失去光辉'，'kacchupilakādiparikinṇasarīrā' 译为'身体布满疥疮、小脓疱等'。",
-      "'paridevanti' 译为'哀号'，'viravanti' 译为'叫喊'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3057851239669422,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'paridevanti' 译为'哀号'，'viravanti' 译为'叫喊'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -381,13 +375,7 @@
     "translation_note": [
       "'catasso parisā' 译为'四众'，指比丘、比丘尼、优婆塞、优婆夷。",
       "'titthiyā' 译为'外道'，'samaṇabhāva' 译为'沙门性'。",
-      "'atthuppatti' 译为'故事的因缘'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.240740740740741,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'atthuppatti' 译为'故事的因缘'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -544,13 +532,7 @@
     "translation_note": [
       "'akhettatā' 译为'非福田'，'sukhettatā' 译为'良福田'，'khettatā' 译为'福田'。",
       "'ariyavaṃsa' 译为'圣种姓'，指圣者的传承。",
-      "引文出自《长部》，重复强调八支道与沙门的关系。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1083333333333334,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "引文出自《长部》，重复强调八支道与沙门的关系。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -674,13 +656,7 @@
       "'titthakara' 译为'造渡口者'，即邪见创始人。",
       "'titthiya' 译为'外道'，'titthiyasāvaka' 译为'外道弟子'。",
       "'paribbājaka' 译为'游行沙门'，指游方者。",
-      "'assāsa' 译为'息'，'bala' 译为'力'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.246913580246914,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'assāsa' 译为'息'，'bala' 译为'力'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -803,13 +779,7 @@
       "'pasāda' 译为'净信'，'Buddhaguṇa' 译为'佛德'，'Dhammaguṇa' 译为'法德'。",
       "'ariyakanta' 译为'圣者所爱'，'pañca sīlāni' 译为'五戒'。",
       "'bhavantaraga' 译为'转生到他处'，'vītikkamati' 译为'违犯'。",
-      "'cakkavattirajja' 译为'转轮王王国'，'khuddakamakkhikā' 译为'小苍蝇'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.282051282051282,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'cakkavattirajja' 译为'转轮王王国'，'khuddakamakkhikā' 译为'小苍蝇'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1444,13 +1414,7 @@
       "paṃsukūlasaññā 译为粪扫想。",
       "rājamuddikā 译为王印。",
       "maṃsapesī 译为肉团。",
-      "suvaṇṇabimbasadiso 译为像金像一样。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8243243243243243,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "suvaṇṇabimbasadiso 译为像金像一样。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1532,13 +1496,7 @@
     ],
     "translation_note": [
       "Vajjī 译为跋耆。",
-      "yojana 译为由旬。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2452830188679247,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "yojana 译为由旬。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1582,13 +1540,7 @@
     ],
     "translation_note": [
       "gāvuta 译为半由旬。",
-      "Vesālī 译为毗舍离。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6777777777777778,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Vesālī 译为毗舍离。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1634,13 +1586,7 @@
       "Ambapālivana 译为庵婆波利林。",
       "Jīvakambavana 译为耆婆庵婆林。",
       "Gandhakuṭi 译为香室。",
-      "gāvuta 译为半由旬。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0727272727272728,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "gāvuta 译为半由旬。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1685,13 +1631,7 @@
     "translation_note": [
       "“超人法”指超越常人的法，此处特指圣者智见。",
       "“十善业道”为佛教术语，指十种善行。",
-      "“离车子”为种族名。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.127450980392157,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“离车子”为种族名。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1741,13 +1681,7 @@
       "“道”指八正道或圣道。",
       "“果”指道果。",
       "“省察智”指省察所证之智。",
-      "“一切知智”指佛陀的遍知智慧。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.948905109489051,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“一切知智”指佛陀的遍知智慧。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1795,13 +1729,7 @@
       "“审察”指审察、考察。",
       "“现量”指直接体验。",
       "“转轮王”为佛教理想中的圣王。",
-      "“四种姓”指婆罗门、刹帝利、吠舍、首陀罗。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.775,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“四种姓”指婆罗门、刹帝利、吠舍、首陀罗。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1884,13 +1812,7 @@
     "translation_note": [
       "“入出息念”指观呼吸的禅修。",
       "“须陀洹、斯陀含、阿那含”为声闻四果中的前三果。",
-      "“阿周那”为印度史诗《摩诃婆罗多》中的英雄，此处比喻毒箭。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2347826086956522,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“阿周那”为印度史诗《摩诃婆罗多》中的英雄，此处比喻毒箭。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1936,13 +1858,7 @@
     "translation_note": [
       "“悲悯”指慈悲心。",
       "“满月”比喻佛陀的圆满。",
-      "“乞食”为比丘的修行方式。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7613636363636365,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“乞食”为比丘的修行方式。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2008,13 +1924,7 @@
     "translation_note": [
       "“亲依止”（upanissaya）为巴利佛教术语，指强有力的所缘或条件。",
       "“自身”（attabhāva）按术语表译为“自身”。",
-      "“道与果”（maggaphala）指修行证悟的圣道与圣果。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.329268292682927,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“道与果”（maggaphala）指修行证悟的圣道与圣果。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2197,13 +2107,7 @@
       "“天眼”（dibbacakkhu）、“天耳界”（dibbasotadhātu）等术语按术语表翻译。",
       "“十力者”（Dasabala）指佛陀。",
       "“亲依止”（upanissaya）指条件或因缘。",
-      "“嫉妒悭吝”（issāmaccariya）为复合词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1592356687898089,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“嫉妒悭吝”（issāmaccariya）为复合词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2305,13 +2209,7 @@
     "translation_note": [
       "“称赞”（vaṇṇa）与“功德”（guṇo）为同义词。",
       "“出离之因”（niyyānika）指导向解脱。",
-      "“四阿僧祇劫”（cattāri asaṅkheyyāni）为极长时间单位。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4705882352941178,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“四阿僧祇劫”（cattāri asaṅkheyyāni）为极长时间单位。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2474,13 +2372,7 @@
       "“超人法”（uttarimanussadhamma）按术语表翻译。",
       "“法随逐智”（dhammanvaya）指对法的推理智。",
       "“善星”（Sunakkhatta）为人名。",
-      "“一切知智”（sabbaññutañāṇa）等为佛陀的智慧。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9325842696629214,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“一切知智”（sabbaññutañāṇa）等为佛陀的智慧。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2618,13 +2510,7 @@
     "translation_note": [
       "“法随逐”（dhammānvayo）指对法的推理智。",
       "“一切知智”（sabbaññutañāṇa）为佛陀的智慧。",
-      "“超人法”（uttarimanussadhamma）按术语表翻译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0425531914893615,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“超人法”（uttarimanussadhamma）按术语表翻译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2716,13 +2602,7 @@
       "tisso vijjā 译为“三明”，指宿命明、天眼明、漏尽明。",
       "dasabalañāṇa 译为“十力智”，指佛陀的十种智力。",
       "Bāriputtā 是“巴厘子”的音译，指舍利弗。",
-      "puññussayasampatti 译为“福德积累的成就”，其中 sampatti 按术语表译为“享受”或“成就”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2745098039215685,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "puññussayasampatti 译为“福德积累的成就”，其中 sampatti 按术语表译为“享受”或“成就”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2992,13 +2872,7 @@
     "translation_note": [
       "“迦罗瓦迦”等为象的专名，音译。",
       "“那罗延力”指如来的力量，那罗延为印度神话中的大力士。",
-      "“十万”原文为 koṭisahassa，即千亿，但按上下文译为十万。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.263157894736842,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“十万”原文为 koṭisahassa，即千亿，但按上下文译为十万。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3389,13 +3263,7 @@
     "translation_note": [
       "术语 'āsabha' 译为“公牛之处”，基于术语表 'sīhanāda' 的狮子吼比喻，但此处为公牛，故保留直译。",
       "术语 'parissaya' 译为“危难”，符合术语表。",
-      "术语 'pariyāya' 在此处译为“同义词”，而非“时机”，因上下文指“这也是它的同义词”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3442622950819672,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'pariyāya' 在此处译为“同义词”，而非“时机”，因上下文指“这也是它的同义词”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3475,12 +3343,6 @@
       {
         "type": "ratio_rewrite_segmented",
         "segments": 35
-      },
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.014971521562245729,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
       }
     ],
     "needs_review": true,
@@ -3561,13 +3423,7 @@
       "“入村乞食”的比喻解释。",
       "“祇树给孤独园”为地名。",
       "“沙门乔达摩”指佛陀。",
-      "“遍知诸欲”指彻底了知并舍弃欲望。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7142857142857142,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“遍知诸欲”指彻底了知并舍弃欲望。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3663,13 +3519,7 @@
       "“初禅”、“无色有”、“无想有”为禅定层次。",
       "“不还果道”、“阿罗汉果道”为证果之道。",
       "“如来”为佛陀称号。",
-      "“裂开的金子”比喻两者表面相似但实质不同。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2755905511811023,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“裂开的金子”比喻两者表面相似但实质不同。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3732,13 +3582,7 @@
       "“不欢喜”和“不拒绝”表示外道对佛陀说法持中立态度。",
       "“盲目的”比喻无知。",
       "“佛教的气味”指说法带有佛教特色。",
-      "“地方居民”指不精通教理的人。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.24,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“地方居民”指不精通教理的人。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3874,13 +3718,7 @@
       "“samārakādisu”译为“与魔等”",
       "“tīṇi ṭhānāni”译为“三种情况”",
       "“pañcahi sattalokaṃ”译为“五趣众生”",
-      "“ārādheyya, paritoseyya”译为“满足、喜悦”",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3173076923076923,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“ārādheyya, paritoseyya”译为“满足、喜悦”"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3924,12 +3762,6 @@
       {
         "type": "ratio_rewrite_segmented",
         "segments": 7
-      },
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.13986013986013987,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
       }
     ],
     "needs_review": true,
@@ -3975,13 +3807,7 @@
       "“如是我闻”为经典开头语。",
       "“释迦”为种族名。",
       "“迦毗罗卫”为城市名。",
-      "“尼拘律园”为园林名。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“尼拘律园”为园林名。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4063,13 +3889,7 @@
     "translation_note": [
       "“一来果”为四沙门果之一。",
       "“贪、嗔、痴”为三不善根。",
-      "引文出处保留原文。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2840909090909092,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "引文出处保留原文。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4113,13 +3933,7 @@
     ],
     "translation_note": [
       "“一来道”为证得一来果之道。",
-      "“省察”为圣弟子对道果等的观察。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6694915254237288,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“省察”为圣弟子对道果等的观察。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4293,13 +4107,7 @@
       "‘yathābhūtaṃ yathāsabhāvaṃ’ 译为‘如实、如自性’。",
       "‘sammā nayena kāraṇena’ 译为‘以正理、以原因’。",
       "‘vipassanāpaññāya’ 译为‘以观智’。",
-      "‘Heṭṭhāmaggadvayañāṇena’ 译为‘以初道与第二道之智’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.0775193798449612,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘Heṭṭhāmaggadvayañāṇena’ 译为‘以初道与第二道之智’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4501,13 +4309,7 @@
       "‘sāvattano sābhogo’ 译为‘有回转、有倾向’。",
       "‘vikkhambhanappahānassa’ 译为‘镇伏舍断’。",
       "‘samucchedappahānassa’ 译为‘正断舍断’。",
-      "‘abhāvā’ 译为‘不存在’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3733333333333333,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘abhāvā’ 译为‘不存在’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4679,13 +4481,7 @@
       "‘Aññaṃ vā tato santataraṃ’ 译为‘或比那更寂静的其它’。",
       "‘upari jhānadvayañ c'eva cattāro ca maggā’ 译为‘上二禅以及四道’。",
       "‘Paccaññāsiṃ’ 译为‘我随知’。",
-      "‘pati-aññāsiṃ’ 译为‘我认知’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.471698113207547,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘pati-aññāsiṃ’ 译为‘我认知’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4778,13 +4574,7 @@
       "kāmānaṃ assādo 译为“诸欲的乐味”。",
       "nissaraṇaṃ 译为“出离”。",
       "kāmasukhallikānuyogo 译为“欲乐追求”，attakilamathānuyogo 译为“苦行追求”。",
-      "phalasamāpattisīsena 译为“以果等至为首”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1363636363636362,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "phalasamāpattisīsena 译为“以果等至为首”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5007,13 +4797,7 @@
       "opakkamikā 译为“以自苦行”，指以自身努力产生。",
       "sabbaññū sabbadassāvī 译为“一切知、一切见”。",
       "aparisesaṃ ñāṇadassanaṃ 译为“无余的智见”。",
-      "satataṃ 和 samitaṃ 都译为“常”和“相续”，作为同义词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9206349206349206,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "satataṃ 和 samitaṃ 都译为“常”和“相续”，作为同义词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6025,13 +5809,7 @@
       "Bimbisāra 译为“频毗娑罗”。",
       "ekantasukhapaṭisaṃvedī 译为“感受纯粹乐”。",
       "kathāpatiṭṭhāpanatthaṃ 译为“为了确立谈话”。",
-      "uttānatthaṃ 译为“显了之义”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.4888888888888889,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "uttānatthaṃ 译为“显了之义”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6105,13 +5883,7 @@
       "“跋耆国”为古印度国名。",
       "“孙苏摩罗山”为城市名，字面意为“鳄鱼山”。",
       "“贝萨迦拉林”为树林名。",
-      "“鹿野苑”为地名，因施无畏于鹿而得名。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1159420289855073,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“鹿野苑”为地名，因施无畏于鹿而得名。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6341,13 +6113,7 @@
       "“不善取”意为不正确地接受。",
       "“反诘”指反过来质问。",
       "“以异覆异”指用另一件事掩盖此事。",
-      "“行处”指行为、经历。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.30879345603271985,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“行处”指行为、经历。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6427,13 +6193,7 @@
     "translation_note": [
       "“心荒芜”指心的障碍、僵化。",
       "“系缚”指束缚。",
-      "“增长、茁壮、广大”为三种层次。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9268292682926829,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“增长、茁壮、广大”为三种层次。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6478,13 +6238,7 @@
       "“导师”指佛陀。",
       "“三十二大丈夫相”为佛陀身相。",
       "“一切知智”即佛智。",
-      "“心荒芜”为术语，指心的障碍。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.186046511627907,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“心荒芜”为术语，指心的障碍。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6530,13 +6284,7 @@
     "translation_note": [
       "“教法”指所学习之三藏，“证法”指道果涅槃。",
       "“四向四果”即须陀洹向等。",
-      "“同梵行者”指同修梵行之人。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2058823529411764,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“同梵行者”指同修梵行之人。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6582,13 +6330,7 @@
     "translation_note": [
       "“所依之欲”指欲界之事物，“烦恼之欲”指贪欲。",
       "“四种清净戒”为术语，指别解脱律仪戒等。",
-      "“梵行”指离淫。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2682926829268293,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“梵行”指离淫。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6705,13 +6447,7 @@
       "术语 'chanda' 译为 '欲'。",
       "术语 'padhāna' 译为 '勤励'。",
       "术语 'saṅkhāra' 译为 '行'。",
-      "术语 'samādhi' 译为 '定'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7407407407407407,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'samādhi' 译为 '定'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6852,13 +6588,7 @@
       "术语 'kilesa' 译为 '烦恼'。",
       "术语 'sambodhi' 译为 '正觉'。",
       "术语 'yogakkhema' 译为 '安稳'。",
-      "术语 'arahatta' 译为 '阿罗汉果'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9024390243902438,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'arahatta' 译为 '阿罗汉果'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7460,13 +7190,7 @@
       "术语 'kapāla' 译为 '壳'。",
       "术语 'sambādha' 译为 '狭窄'。",
       "术语 'sukhavihāra' 译为 '安乐住处'。",
-      "术语 'gāmakkhetta' 译为 '乡村田野'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8047619047619048,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'gāmakkhetta' 译为 '乡村田野'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7520,13 +7244,7 @@
       "tividhānupassanā 指三种随观（无常、苦、无我）。",
       "bhavattaya 指三有（欲有、色有、无色有）。",
       "kantisineha 译为“爱染湿润”。",
-      "abhiññāpakkhe 译为“神通之翼”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2991452991452992,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "abhiññāpakkhe 译为“神通之翼”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7580,13 +7298,7 @@
     "translation_note": [
       "Dh. 285 为法句经第285偈。",
       "paṭisaṅkhāpahāna 译为“随观舍断”，vikkhambhanappahāna 译为“镇伏舍断”，samucchedappahāna 译为“正断舍断”，paṭippassaddhippahāna 译为“安息舍断”。",
-      "cetokhila 译为“心荒芜”，cetovinibandha 译为“心系缚”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5462962962962963,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "cetokhila 译为“心荒芜”，cetovinibandha 译为“心系缚”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7642,13 +7354,7 @@
       "samanadhamma 译为“沙门法”。",
       "yogakkhema 译为“安稳”。",
       "paripantha 译为“障碍”。",
-      "aruṇuggamana 译为“日出”，suriyatthaṅgamana 译为“日落”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2540983606557377,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "aruṇuggamana 译为“日出”，suriyatthaṅgamana 译为“日落”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7793,13 +7499,7 @@
     ],
     "translation_note": [
       "“Saṅkhā pī”可能为“saṅkhā”的变体，此处按“saṅkhā”理解。",
-      "“dārukalāpasataṃ”等为列举，表示各种劳役。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.125,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“dārukalāpasataṃ”等为列举，表示各种劳役。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8095,13 +7795,7 @@
     ],
     "translation_note": [
       "“terunabeluvarukkhassa”可能指三棵贝卢瓦树，但具体含义待考。",
-      "“daṇḍacittatāya”意为“持杖之心”，可能指其身份或习惯。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.367816091954023,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“daṇḍacittatāya”意为“持杖之心”，可能指其身份或习惯。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8585,13 +8279,7 @@
     ],
     "translation_note": [
       "“cakkavattiparibhogā”可能指“转轮王的享受”，但具体指什么待考。",
-      "“apūyiko”意为“无敬”，可能指提婆达多不受尊敬。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9921875,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“apūyiko”意为“无敬”，可能指提婆达多不受尊敬。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8651,13 +8339,7 @@
     ],
     "translation_note": [
       "根据上下文补全了省略的 'dukkhan ti vutte sukhan ti vadamāno' 等，使译文完整。",
-      "术语 'kilesa' 译为 '烦恼'，'kukkucca' 译为 '后悔'，'saññā' 译为 '想'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.7931034482758621,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'kilesa' 译为 '烦恼'，'kukkucca' 译为 '后悔'，'saññā' 译为 '想'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8709,13 +8391,7 @@
     ],
     "translation_note": [
       "术语 'alāṭaka' 译为 '火把'，'valibhaṅga' 译为 '皱纹'。",
-      "原文有 '?' 表示存疑，译文保留。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.53125,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "原文有 '?' 表示存疑，译文保留。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8771,13 +8447,7 @@
     ],
     "translation_note": [
       "术语 'Dasabala' 译为 '十力者'（指佛陀）。",
-      "根据上下文，'kiṃvādī' 译为 '说何语'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5593220338983051,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "根据上下文，'kiṃvādī' 译为 '说何语'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8936,13 +8606,7 @@
       "'papañcasaññāsaṅkhā'译为'戏论想之名'。",
       "'koṭṭhāso'译为'部分'。",
       "'samudācaranti'译为'生起'。",
-      "'abhinanditabbaṃ'译为'应喜乐'，'abhivaditabbaṃ'译为'应称赞'，'ajjhosetabbaṃ'译为'应执取'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4444444444444444,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'abhinanditabbaṃ'译为'应喜乐'，'abhivaditabbaṃ'译为'应称赞'，'ajjhosetabbaṃ'译为'应执取'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9110,13 +8774,7 @@
     ],
     "translation_note": [
       "“集谛”为术语，指苦的生起之因。",
-      "引用经文时，保持原文结构。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9435483870967742,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "引用经文时，保持原文结构。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9227,13 +8885,7 @@
     ],
     "translation_note": [
       "“灭谛”为术语，指苦的灭尽。",
-      "“寻伺”为禅支，此处保留。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“寻伺”为禅支，此处保留。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9453,13 +9105,7 @@
       "“brahmabhūto”译为“梵”，指最胜者。",
       "“vattā”和“pavattā”分别译为“说法者”和“转起者”。",
       "“ninnetā”译为“引导者”。",
-      "“amatassa dātā”译为“不死的给予者”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1450381679389312,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“amatassa dātā”译为“不死的给予者”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9597,13 +9243,7 @@
     "translation_note": [
       "“Agaruṃ karitvā”直译为“不尊重地做”，但根据注释，这里指“不使尊重”，即不使法变得难以理解。",
       "“sāvakapāramīñāṇe”指声闻弟子的最高智慧。",
-      "“Sinerupādāto vālikaṃ uddharamāno”比喻从须弥山取沙，表示极难。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4565217391304348,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“Sinerupādāto vālikaṃ uddharamāno”比喻从须弥山取沙，表示极难。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9845,13 +9485,7 @@
     "translation_note": [
       "“yaṃ kho no”中的“no”是“amhākaṃ”的缩略，表示“我们的”。",
       "“saṅgaṇhanto”意为“摄受、引导”。",
-      "“uddeso”指“教导、开示”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6607142857142858,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“uddeso”指“教导、开示”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9981,13 +9615,7 @@
     "translation_note": [
       "nissayabhavena 与 ārammaṇabhāvena 为依止与所缘之义。",
       "catusamuṭṭhānika-rūpa 指四种所起色。",
-      "papañcasaññāsaṅkhā 指戏论想之名称。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3544303797468353,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "papañcasaññāsaṅkhā 指戏论想之名称。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10098,13 +9726,7 @@
     ],
     "translation_note": [
       "savitakkacittesu 指有寻之心。",
-      "atītānāgatagahaṇaṃ 指取过去未来。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9833333333333334,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "atītānāgatagahaṇaṃ 指取过去未来。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10302,13 +9924,7 @@
       "kāmapaṭisaṃyutto 与欲相应。",
       "nekkhammavitakko 出离寻。",
       "mettāpubbabhāga 慈心之前分。",
-      "karuṇāpubbabhāga 悲心之前分。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1875,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "karuṇāpubbabhāga 悲心之前分。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10441,13 +10057,7 @@
       "nekkhammavitakkādayo 译为“出离寻等”，指善寻。",
       "kusalavāraṃ 译为“善法之流”，指善心流。",
       "akusalajavanavārā 译为“不善速行心之流”，指不善速行心。",
-      "mantena kaṇhasappaṃ uppīletvā 译为“用咒语压住黑蛇”，比喻抑制不善寻。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7340425531914894,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "mantena kaṇhasappaṃ uppīletvā 译为“用咒语压住黑蛇”，比喻抑制不善寻。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10659,13 +10269,7 @@
       "dukkarakārikāya 译为“苦行期间”，指六年苦行。",
       "adhimattakasimaṃ 译为“极度瘦弱”，指身体极度消瘦。",
       "paṇītapaṇītāhārā 译为“种种精美食物”，指上等食物。",
-      "samuggatatārāgaṇaṃ viya nabhaṃ 译为“犹如众星拱月”，比喻身体光明。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1730769230769231,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "samuggatatārāgaṇaṃ viya nabhaṃ 译为“犹如众星拱月”，比喻身体光明。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10774,13 +10378,7 @@
       "ruru-pasāda-ruru-rohitamigādike 译为“赤鹿、黄鹿等”，指鹿的种类。",
       "manuññapattaravane 译为“悦意的树叶声中”，指环境悦人。",
       "nīluppala-kumuda-kamalādi-sañchannāni 译为“被青莲花、白莲花、红莲花等覆盖”，指水塘中莲花盛开。",
-      "manikkhandhasadisanimmalajalāvahatiṃ 译为“其水清澈如摩尼宝”，形容河水清澈。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3333333333333333,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "manikkhandhasadisanimmalajalāvahatiṃ 译为“其水清澈如摩尼宝”，形容河水清澈。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10910,13 +10508,7 @@
       "“两种痛苦”指自他之苦。",
       "“义住”指 'atthasamāpatti'，即安住于义。",
       "“五通”指 'pañcābhiññā'。",
-      "“水中水泡”比喻无常灭尽。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.935483870967742,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“水中水泡”比喻无常灭尽。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10976,13 +10568,7 @@
     ],
     "translation_note": [
       "“过雨、过热、过冷”指极端天气。",
-      "“心变异”指心的状态改变。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3043478260869565,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“心变异”指心的状态改变。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11113,13 +10699,7 @@
       "“浮躁、散乱”指心的掉举与散乱。",
       "“无恐惧的森林”指没有危险的森林。",
       "“畜生道”指动物界。",
-      "“杀、缚”指刑罚。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2133333333333334,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“杀、缚”指刑罚。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11162,13 +10742,7 @@
       }
     ],
     "translation_note": [
-      "术语 'kāmavitakka' 译为 '欲寻'，'nekkhammavitakka' 译为 '出离寻'，依据术语表。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8987341772151899,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'kāmavitakka' 译为 '欲寻'，'nekkhammavitakka' 译为 '出离寻'，依据术语表。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11210,13 +10784,7 @@
       }
     ],
     "translation_note": [
-      "术语 'nekkhamma' 译为 '出离'，'kusala' 译为 '善'，'nibbāna' 译为 '涅槃'，依据术语表。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1395348837209303,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'nekkhamma' 译为 '出离'，'kusala' 译为 '善'，'nibbāna' 译为 '涅槃'，依据术语表。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11295,13 +10863,7 @@
       }
     ],
     "translation_note": [
-      "术语 'lokiya' 译为 '世间'，'lokuttara' 译为 '出世间'，'nibbāna' 译为 '涅槃'，'sacchikiriyā' 译为 '现证'，'samādhi' 译为 '定'，依据术语表。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.375,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "术语 'lokiya' 译为 '世间'，'lokuttara' 译为 '出世间'，'nibbāna' 译为 '涅槃'，'sacchikiriyā' 译为 '现证'，'samādhi' 译为 '定'，依据术语表。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11351,13 +10913,7 @@
       "‘Sādhukaṃ āropemī’ 译为‘善巧地提升’，‘āropemī’ 有‘举起、提升’之意。",
       "‘ūhaññī’ 为 ‘ūhanati’ 的被动态，译为‘被扰乱’。",
       "‘ugghāṭiyittha’ 为 ‘ugghāṭeti’ 的被动态，译为‘被搅动’。",
-      "‘saṃvattatū’ 译为‘导向’，‘uddhaccāya’ 为‘散乱’的与格。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.864406779661017,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘saṃvattatū’ 译为‘导向’，‘uddhaccāya’ 为‘散乱’的与格。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11449,13 +11005,7 @@
       "‘cittaṃ haññati, vihaññati, vipphandati, uddhataṃ hoti’ 译为‘心被打击、被恼乱、颤动、变得散乱’。",
       "‘paridametvā’ 译为‘调伏’。",
       "‘mudukaṃ katvā’ 译为‘使它柔软’。",
-      "‘samassāsetvā’ 译为‘使它平静’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5396825396825398,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘samassāsetvā’ 译为‘使它平静’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11510,13 +11060,7 @@
       "‘kenaci eva karaṇīyena’ 译为‘因某种事务’。",
       "‘santhambhitvā’ 译为‘休息’。",
       "‘saṅgāmānīttharaṇaka-’ 译为‘能渡过战场的’。",
-      "‘bahukāratarā’ 译为‘更有帮助的’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9387755102040817,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘bahukāratarā’ 译为‘更有帮助的’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11561,13 +11105,7 @@
       }
     ],
     "translation_note": [
-      "根据上下文，'thāmajātā' 译为 '已具威力'，'thāmajātaṃ karoti' 译为 '使其具足威力'。'sakaṭabhāraṃ' 译为 '车乘之重'，'nāvābhāraṃ' 译为 '船载之重'。'suppaṭṭhitaṃ' 译为 '善至之处'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2875,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "根据上下文，'thāmajātā' 译为 '已具威力'，'thāmajātaṃ karoti' 译为 '使其具足威力'。'sakaṭabhāraṃ' 译为 '车乘之重'，'nāvābhāraṃ' 译为 '船载之重'。'suppaṭṭhitaṃ' 译为 '善至之处'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11610,13 +11148,7 @@
       }
     ],
     "translation_note": [
-      "'kaṇhapakkhe' 译为 '黑分'，指经中前分。'atthadīpikāya upamāya' 译为 '以义释之喻'。'satiuppādanamattam' 译为 '生起忆念'。'ekāvajjanena' 译为 '以一次作意'。'ekappahārena' 译为 '以一次发力'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2337662337662338,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'kaṇhapakkhe' 译为 '黑分'，指经中前分。'atthadīpikāya upamāya' 译为 '以义释之喻'。'satiuppādanamattam' 译为 '生起忆念'。'ekāvajjanena' 译为 '以一次作意'。'ekappahārena' 译为 '以一次发力'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11659,13 +11191,7 @@
       }
     ],
     "translation_note": [
-      "原文不完整，译文仅基于现有部分。'pāṭiyekko anusandhi' 译为 '特殊的衔接'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4285714285714286,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "原文不完整，译文仅基于现有部分。'pāṭiyekko anusandhi' 译为 '特殊的衔接'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11712,13 +11238,7 @@
       "'okacāra' 和 'okacārikā' 分别译为“陷阱”和“陷阱中的母鹿”，保持比喻。",
       "'migaluddako' 译为“猎人”。",
       "'satti' 译为“矛”。",
-      "'aṅgulisankhalikā' 译为“指锁”，比喻紧密相连。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9634703196347032,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'aṅgulisankhalikā' 译为“指锁”，比喻紧密相连。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11763,13 +11283,7 @@
     ],
     "translation_note": [
       "'nandirāga' 译为“喜贪”，指喜与贪的结合。",
-      "'vattadukkhasattighāta' 译为“轮回之苦的矛击”，比喻痛苦如矛刺。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1142857142857143,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'vattadukkhasattighāta' 译为“轮回之苦的矛击”，比喻痛苦如矛刺。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11815,13 +11329,7 @@
       "'okacārikā' 译为“母鹿”，指陷阱中的诱饵。",
       "'usūyaṃ karoti' 译为“竖起耳朵”，表示警觉。",
       "'migasatti' 译为“鹿矛”，指猎鹿用的矛。",
-      "'vattadukkhasatti' 译为“轮回之苦的矛”，比喻痛苦如矛刺。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1891891891891893,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'vattadukkhasatti' 译为“轮回之苦的矛”，比喻痛苦如矛刺。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11871,13 +11379,7 @@
     "translation_note": [
       "'hitacārena' 译为'以利益众生的慈心'。",
       "'tuṇhībhūtena' 译为'默然'。",
-      "'dhammacakkappavattanato' 译为'从转法轮开始'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1486486486486487,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'dhammacakkappavattanato' 译为'从转法轮开始'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11927,13 +11429,7 @@
       "'adhicitta' 译为'增上心'。",
       "'vipassanāpādakā aṭṭhasamāpatticittāni' 译为'作为观禅基础的八等至心'。",
       "'yuttappayuttenā' 译为'相应、从事'。",
-      "'mūlakammaṭṭhāna' 译为'根本业处'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2911392405063291,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'mūlakammaṭṭhāna' 译为'根本业处'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11982,13 +11478,7 @@
     "translation_note": [
       "'nimitta' 译为'相'，此处指业处的所缘。",
       "'upakkilesa' 译为'烦恼垢染'。",
-      "'abbuda' 译为'障碍'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5555555555555556,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'abbuda' 译为'障碍'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12066,13 +11556,7 @@
       "术语 'khetta' 译为 '田'，'ārammaṇa' 译为 '所缘'。",
       "'chandasahagatā' 译为 '与喜俱行'，'rāgasampayuttā' 译为 '与贪相应'。",
       "'domanassa' 译为 '忧悲'，'vicikicchā' 译为 '疑'，'uddhacca' 译为 '掉举'。",
-      "'iṭṭhānitṭhāsamapekkhitesu' 译为 '未观察可爱与不可爱的'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7575757575757576,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'iṭṭhānitṭhāsamapekkhitesu' 译为 '未观察可爱与不可爱的'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12135,13 +11619,7 @@
     ],
     "translation_note": [
       "术语 'nimitta' 译为 '相'，'asubhabhāvanā' 译为 '不净想'，'aniccamānasikāro' 译为 '作意无常'，'mettābhāvanā' 译为 '修慈心'，'dhātumanasikāro' 译为 '作意界'，'pañcadhammāupanissayo' 译为 '依止于五种法'。",
-      "'kusalūpasaṃhitaṃ' 译为 '与善相应的'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3125,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'kusalūpasaṃhitaṃ' 译为 '与善相应的'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12210,13 +11688,7 @@
       "术语 'asubhato' 译为 '从不净的角度'，'upasaṃharati' 译为 '作意'。",
       "'sāratto' 译为 '执着'，'attabhāvo' 译为 '身体'，'asuci' 译为 '不净'，'paggharati' 译为 '滴漏'。",
       "'kaṭhalapūrito' 译为 '充满污秽'，'duggandho' 译为 '恶臭'，'jeguccho' 译为 '可厌'，'paṭikkūlo' 译为 '可憎'，'dvattiṃsakunapasañcayo' 译为 '三十二种不净物的积聚'。",
-      "'assāmika-tāvakālikabhāvavasena' 译为 '依“无所有者”和“暂时性”'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'assāmika-tāvakālikabhāvavasena' 译为 '依“无所有者”和“暂时性”'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12318,13 +11790,7 @@
       "“Kakacopamovāda”译为“锯喻教诫”，指《锯喻经》中的教诫。",
       "“mettā bhāvetabbā”译为“应修习慈心”。",
       "“aññaṃ nimittaṃ”译为“另一种相”，指不同于嗔恚的所缘。",
-      "“dhātumanasikāra”译为“界作意”，指观察诸界以平息嗔恚。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4516129032258065,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“dhātumanasikāra”译为“界作意”，指观察诸界以平息嗔恚。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12491,13 +11957,7 @@
       "“dandakammaṃ”译为“罚罚”，指惩罚措施。",
       "“kaṅkhaṃ vinodeti”译为“消除疑惑”。",
       "“pākaṭo”译为“明了”。",
-      "“cheko”译为“善巧”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4146341463414633,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“cheko”译为“善巧”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12628,13 +12088,7 @@
       "“paṭipakkhabhūtāni”译为“属于敌对法的”，指作为敌对法。",
       "“suppahīnā”译为“完全舍断”，指彻底断除。",
       "“nibbāpenti”译为“熄灭”，指使火熄灭。",
-      "“sunibbuto”译为“完全熄灭”，指彻底熄灭。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5569620253164558,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“sunibbuto”译为“完全熄灭”，指彻底熄灭。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12730,13 +12184,7 @@
     "translation_note": [
       "「与善相应」指与善法相关。",
       "「内所缘」指心内的所缘。",
-      "比喻中，板喻心，不平的桩喻不善寻，细桩喻善相。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2837837837837838,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "比喻中，板喻心，不平的桩喻不善寻，细桩喻善相。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12901,13 +12349,7 @@
     "translation_note": [
       "「蛇尸」等比喻不净。",
       "「有罪、有苦报」说明不善法的性质。",
-      "「令身远离之语」指教导远离恶行的话语。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.127659574468085,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "「令身远离之语」指教导远离恶行的话语。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13425,13 +12867,7 @@
       "「无念、无作意」即不忆念、不思惟。",
       "「其它所缘」指转移注意力。",
       "「钻木」等是具体转移注意力的方法。",
-      "「新业」指新的工作。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9659090909090909,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "「新业」指新的工作。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13525,13 +12961,7 @@
       "“appanāya pāpesi”译为“使达到安止”，指使业处达到安止定。",
       "“saññaṃ adāsi”译为“报告”，字面为“给予标记”，此处指告知戒师。",
       "“utusappāyaṃ”译为“适宜的气候”，指有利的天气条件。",
-      "“dhātuyo”译为“舍利”，指遗骨。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.391304347826087,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“dhātuyo”译为“舍利”，指遗骨。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13631,13 +13061,7 @@
       "“vitakkamūlapabbaṃ”译为“寻的根本部分”，指经中关于寻的根源的章节。",
       "“saṅkhāra”译为“行”，指造作、条件。",
       "“santhāna”译为“安住”，指确立、稳定。",
-      "“mūlañ ca mūlā mūlañ ca”译为“根本和根本的根本”，指直接原因和间接原因。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.98989898989899,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“mūlañ ca mūlā mūlañ ca”译为“根本和根本的根本”，指直接原因和间接原因。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13714,13 +13138,7 @@
       "“mūlakammaṭṭhāne”译为“根本业处”，指基础禅修所缘。",
       "“cittaṭṭhapanakālo”译为“将心安住之时”，指安住心。",
       "“phalasamāpattiyā”按术语表译为“果等至”。",
-      "“Daddabhajātakena”译为“达达巴本生”，指本生经故事。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.640625,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“Daddabhajātakena”译为“达达巴本生”，指本生经故事。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -14098,13 +13516,7 @@
     "translation_note": [
       "根据上下文，'thaddhamudukena' 意为‘以强硬和柔和的方式’，即‘软硬兼施’。",
       "‘Daddabhāyati’ 是拟声词，表示‘哒哒’声。",
-      "‘mūlā mūlaṃ’ 意为‘从根源到根源’，即‘追根究底’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1083333333333334,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘mūlā mūlaṃ’ 意为‘从根源到根源’，即‘追根究底’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -14445,13 +13857,7 @@
     "translation_note": [
       "‘nipannatthānaṃ’ 意为‘躺卧之处’。",
       "‘daddabhakkanti’ 是拟声词，表示‘哒哒’声。",
-      "‘migavāhinī’ 意为‘鹿群’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3461538461538463,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘migavāhinī’ 意为‘鹿群’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -14868,13 +14274,7 @@
       "‘mucchāpetaṃ’ 意为‘使之昏迷’。",
       "‘paṭimallena’ 意为‘与……搏斗’。",
       "‘ke ca tumhe, ko cāhaṃ’ 意为‘你们是谁？我又是谁？’",
-      "‘Kāmaṃ taco ca nhāru ca aṭṭhi ca avasissatu’ 意为‘宁可皮、筋、骨都耗尽’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8852459016393442,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘Kāmaṃ taco ca nhāru ca aṭṭhi ca avasissatu’ 意为‘宁可皮、筋、骨都耗尽’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15107,13 +14507,7 @@
       "‘ādīnavapabbe’译为‘过患之节’。",
       "‘asatipabbe’译为‘失念之节’。",
       "‘vitakkamūlabhedapabbe’译为‘寻根破之节’。",
-      "‘abhiniggaṇhanapabbe’译为‘抑制之节’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2616822429906542,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘abhiniggaṇhanapabbe’译为‘抑制之节’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15341,13 +14735,7 @@
       "‘vasibhāvakāradassanatthaṃ’译为‘为显示其熟练状态之相’。",
       "‘vasībhūtattā’译为‘因已熟练之故’。",
       "‘Acchecchi tanhaṃ’译为‘断渴爱’。",
-      "‘Sabbāsavasutte’译为‘《一切漏经》’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2439024390243902,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘Sabbāsavasutte’译为‘《一切漏经》’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15496,13 +14884,7 @@
       "‘saṅkhā’译为‘名’。",
       "‘udapādi’译为‘生起’。",
       "‘Pabbajitam pi naṃ’译为‘即使出家后’。",
-      "‘sañjānanti’译为‘认知’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9591836734693877,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘sañjānanti’译为‘认知’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15620,13 +15002,7 @@
     "translation_note": [
       "术语 'velā' 根据上下文译为“时间”，但 'kālavelā' 译为“时时间”，'sīmavelā' 译为“界限时间”，'sīlavelā' 译为“戒时间”。",
       "“setughāto”译为“桥的破坏”，其中“setu”译为“桥”。",
-      "“dutthullāpatti”译为“粗恶罪”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.0210526315789474,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“dutthullāpatti”译为“粗恶罪”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15727,13 +15103,7 @@
       "“pacanakottanādīni”译为“做饭、纺线等”。",
       "“anācārā”译为“行为不端”，'dubbacā'译为“难教”，'pagabbhā'译为“大胆”。",
       "“pupphapūjā”译为“花供”，'āsanadhovana'译为“洗座位”，'paribhaṇḍa-karaṇa'译为“打扫”。",
-      "“Vinayadhārānaṃ”译为“律藏师”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.0941176470588236,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“Vinayadhārānaṃ”译为“律藏师”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15825,13 +15195,7 @@
     "translation_note": [
       "“parivenadvāraṃ”译为“房门”，指比丘的居所。",
       "“ovāda”译为“教导”，'paṭisanthāra'译为“款待”，'uddesa'译为“诵戒”。",
-      "“kukkuccako”译为“有恶作”，指常怀悔恨。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“kukkuccako”译为“有恶作”，指常怀悔恨。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15941,13 +15305,7 @@
       "avaṇṇo: 不名誉",
       "oramissati: 将消除",
       "ādivacanaṃ: 等等的话",
-      "Āmenti: 同意",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8035714285714286,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Āmenti: 同意"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15988,12 +15346,6 @@
       {
         "type": "ratio_rewrite_segmented",
         "segments": 8
-      },
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.08564814814814815,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
       }
     ],
     "needs_review": true,
@@ -16099,13 +15451,7 @@
       "“呵责圣者”指诽谤圣者。",
       "“忏悔”指请求原谅。",
       "“罪聚”指戒律中的罪类。",
-      "“自称比丘身份”指未还俗。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1041666666666667,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“自称比丘身份”指未还俗。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -16203,13 +15549,7 @@
       "“须陀洹”等为四果中的前三果。",
       "“眼识所识”指通过眼识认知的。",
       "“敷具、覆盖物”指床垫、被子等。",
-      "“色、声、香、触”指女人的色等五欲。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.96,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“色、声、香、触”指女人的色等五欲。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -16296,13 +15636,7 @@
       "“无畏智”指四无畏智。",
       "“树桩和荆棘”比喻障碍。",
       "“胜者教法之轮”指佛法。",
-      "“如是我不了知”是经文中的句子。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6875,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“如是我不了知”是经文中的句子。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -16526,13 +15860,7 @@
       "“samanuyuñjanti”等术语按字面直译。",
       "“atthikaṅkhalūpamā”等复合词按“如……之喻”处理。",
       "“thāmasā”和“parāmāsā”为工具格，译为“以……之力”和“以……执取”。",
-      "“abhinivissa voharatī”译为“决意后言说或开示”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.7386363636363636,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“abhinivissa voharatī”译为“决意后言说或开示”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -16748,13 +16076,7 @@
       "“attano ajjhāsayena”译为“根据我自己的意愿”。",
       "“sammukhā”译为“在面前”。",
       "“dve kathā kathetuṃ”译为“说两种话”。",
-      "“kassa ... ājānāsi”为反问句，译为“你从哪里知道……？”",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6610169491525424,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“kassa ... ājānāsi”为反问句，译为“你从哪里知道……？”"
     ],
     "needs_review": true,
     "review_reason": [
@@ -16797,12 +16119,6 @@
       {
         "type": "ratio_rewrite_segmented",
         "segments": 23
-      },
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.0405853119823302,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
       }
     ],
     "needs_review": true,
@@ -16882,13 +16198,7 @@
     ],
     "translation_note": [
       "“具寿”为巴利语 āyasmā 的常见译法。",
-      "“童子迦叶”为 Kumārakassapa 的意译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4107142857142858,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“童子迦叶”为 Kumārakassapa 的意译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17045,13 +16355,7 @@
     "translation_note": [
       "“莲花佛”为 Padumuttara 的意译。",
       "“商主之子”为 seṭṭhiputto 的意译。",
-      "“沙门法”为 samaṇadhamma 的意译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“沙门法”为 samaṇadhamma 的意译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17192,13 +16496,7 @@
     "translation_note": [
       "“德叉始罗”为 Takkasilā 的音译。",
       "“富楼那”为 Pukkusāti 的音译，或译“布萨帝”。",
-      "“陶工会堂”为 kumbhakārasālā 的意译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9545454545454546,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“陶工会堂”为 kumbhakārasālā 的意译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17492,13 +16790,7 @@
       "Dasabala 指佛陀。",
       "Upālitthera 即优波离长老。",
       "Visākha 是著名的女居士。",
-      "Kumāra-Kassapo 意为童子迦叶。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.824742268041237,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Kumāra-Kassapo 意为童子迦叶。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17815,13 +17107,7 @@
       "Andhavana 意为盲人林，此处音译。",
       "Appāyuka-Buddha 指寿命短的佛陀。",
       "Dīghāyuka-Buddha 指寿命长的佛陀。",
-      "Kassapa 指迦叶佛。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Kassapa 指迦叶佛。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18255,13 +17541,7 @@
       "cetiya 指佛塔。",
       "itthakā 指砖块。",
       "haritala 为雌黄，manosilā 为青金石。",
-      "Pathavindhara 意为持地。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.43,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Pathavindhara 意为持地。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18411,13 +17691,7 @@
       "阿那含：不还果。",
       "由旬：长度单位。",
       "宝塔：供奉舍利的建筑。",
-      "阎浮提：印度大陆。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.425,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "阎浮提：印度大陆。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18569,13 +17843,7 @@
     "translation_note": [
       "宝瓶：比喻财富自动聚集。",
       "铜板：最小的货币单位。",
-      "爱着：执着。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2881355932203389,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "爱着：执着。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18643,13 +17911,7 @@
     "translation_note": [
       "圣弟子：指阿那含圣者。",
       "灯焰：比喻眼睛。",
-      "安达林：地名，意为盲人林。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5375,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "安达林：地名，意为盲人林。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18809,13 +18071,7 @@
     "translation_note": [
       "Andhavana 直译为‘盲林’，依上下文保留。",
       "chadditajanapade 指‘六国之中’，未详考，直译。",
-      "sekhapaṭipadāya 依术语表译为‘有学之道’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0681818181818183,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "sekhapaṭipadāya 依术语表译为‘有学之道’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19007,13 +18263,7 @@
     "translation_note": [
       "‘某位天神’的‘某位’（aññatarā）依上下文译为‘某位’。",
       "‘大威力夜叉’中的‘大威力’（mahesakkha）直译。",
-      "‘渴爱灭尽之解脱’（taṇhāsaṅkhayavimutti）依术语表译‘渴爱’为‘渴爱’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2765957446808511,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘渴爱灭尽之解脱’（taṇhāsaṅkhayavimutti）依术语表译‘渴爱’为‘渴爱’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19113,13 +18363,7 @@
     "translation_note": [
       "‘abhikkanta’一词多义，依上下文分别译为‘过去’、‘殊胜’、‘端正’、‘随喜’。",
       "‘波罗提木叉’（pātimokkha）为专名，保留音译。",
-      "‘中夜之后’（majjhimayāmasamanantare）直译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.6060606060606061,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "‘中夜之后’（majjhimayāmasamanantare）直译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19259,13 +18503,7 @@
       "“可爱”对应 iṭṭha。",
       "“悦意”对应 manāpa。",
       "“自身”对应 attabhāva。",
-      "“造作之身”对应 abhisaṅkhata kāya。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8787878787878788,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“造作之身”对应 abhisaṅkhata kāya。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19384,13 +18622,7 @@
       "“分裂僧团”对应 saṅghabheda。",
       "“漏尽者”对应 kevalī。",
       "“已修梵行者”对应 vusitavā。",
-      "“最上士”对应 uttamapurisa。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.375,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“最上士”对应 uttamapurisa。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19522,13 +18754,7 @@
       "“正等正觉者”对应 Sammāsambuddha。",
       "“具寿”对应 āyasmā。",
       "“竹林”对应 Veḷuvana。",
-      "“安达林”对应 Andhavana。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.5283018867924528,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“安达林”对应 Andhavana。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19629,13 +18855,7 @@
     ],
     "translation_note": [
       "“沙门用语”指使用“沙门”等称呼。",
-      "“行梵行者”为术语表指定翻译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7462686567164178,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“行梵行者”为术语表指定翻译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19776,13 +18996,7 @@
       "“正等正觉者”为术语表指定翻译。",
       "“沙门法”为术语表指定翻译。",
       "“阿耨达池”为专名。",
-      "“北俱卢洲”为专名。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8807339449541285,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“北俱卢洲”为专名。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19892,13 +19106,7 @@
       "“净居天”为专名。",
       "“苏帕罗卡港口”为专名。",
       "“婆醯耶”为专名。",
-      "引文出自《自说经》第8经。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.963855421686747,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "引文出自《自说经》第8经。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20003,13 +19211,7 @@
       "'samanadhammam' 指沙门法。",
       "'Brahmaloke ṭhito va' 意为 '在梵天界中'。",
       "'ratanāvaliṃ ganthento viya' 意为 '犹如编织宝鬘'。",
-      "'samanasaññāsamudācāravasena' 意为 '由于沙门之想生起的行相'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5432098765432098,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'samanasaññāsamudācāravasena' 意为 '由于沙门之想生起的行相'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20107,13 +19309,7 @@
       "'turitālapana' 意为 '急速呼唤'。",
       "'naḷāṭa' 意为 '额头'。",
       "'tilaka' 意为 '斑点'。",
-      "'parivārakapada' 意为 '辅助词'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1296296296296295,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'parivārakapada' 意为 '辅助词'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20347,13 +19543,7 @@
       "'sovatthika' 意为 '吉祥结'。",
       "'adhiṭṭhita' 意为 '加持的'。",
       "'yāvasattamā kulaparivattā' 意为 '直到第七代子孙'。",
-      "'nissakka' 意为 '指代'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.16,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "'nissakka' 意为 '指代'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20467,13 +19657,7 @@
       "“vammiko”译为“白蚁丘”，根据上下文。",
       "“vantako”译为“吐出者”，指吐出众生。",
       "“vantussayo”译为“吐出堆积”，指被吐出物堆积。",
-      "“vantasinehasambandho”译为“吐出湿润相连”，指与吐出的湿润相关。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.9710144927536232,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“vantasinehasambandho”译为“吐出湿润相连”，指与吐出的湿润相关。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21081,13 +20265,7 @@
       "“gilānasālā”译为“病室”。",
       "“susāna”译为“坟场”。",
       "“sūtighara”译为“产房”。",
-      "“vaccakuti”译为“厕所”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.6397849462365591,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“vaccakuti”译为“厕所”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21441,13 +20619,7 @@
       "“bhedana”译为“破坏”。",
       "“viddhaṃsana”译为“散灭”。",
       "“vaddhiparihāni”译为“增长与减损”。",
-      "“samudayatthaṅgama”译为“生起与灭尽”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.7582417582417582,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“samudayatthaṅgama”译为“生起与灭尽”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21494,13 +20666,7 @@
     ],
     "translation_note": [
       "“冒烟”在此喻指寻思（vitakka）。",
-      "引文中的“梵授”为 Brahmadatta 的意译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.3944954128440367,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "引文中的“梵授”为 Brahmadatta 的意译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21547,13 +20713,7 @@
       }
     ],
     "translation_note": [
-      "“如来之语”指前文所述“婆罗门”等名号。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8863636363636364,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“如来之语”指前文所述“婆罗门”等名号。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21601,13 +20761,7 @@
     ],
     "translation_note": [
       "“有学”指尚在修学阶段的圣者。",
-      "“随慧而行”意为以慧为导。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.125,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“随慧而行”意为以慧为导。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -21793,13 +20947,7 @@
       "khipāhi: 扔掉",
       "kuddālaṃ: 锄头",
       "samehi pādehi: 以平稳的脚",
-      "patiṭṭhāya: 站立",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5396825396825398,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "patiṭṭhāya: 站立"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22128,13 +21276,7 @@
       "paripācanabhāvo: 成熟性",
       "vitthambhanabhāvo: 支持性",
       "catudhātuvavatthāna: 四界分别",
-      "kāyapariggaho: 身之把握",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4050632911392404,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "kāyapariggaho: 身之把握"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22458,13 +21600,7 @@
       "nibbānasampāpakaṃ ñāṇagamanaṃ: 通往涅槃的智之行",
       "pacchijjati: 被阻断",
       "kammatthāna-uggaha-paripucchā: 业处之受持与询问",
-      "avijjāpahānaṃ: 无明之舍断",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 0.8507462686567164,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "avijjāpahānaṃ: 无明之舍断"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22596,13 +21732,7 @@
     "translation_note": [
       "“膨胀的”指瞋怒的比喻。",
       "“贝卢瓦果”为音译，指一种果实。",
-      "“敌人之口”比喻死亡或毁灭。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.0535714285714286,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“敌人之口”比喻死亡或毁灭。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22706,13 +21836,7 @@
     "translation_note": [
       "“业处”指禅修所缘。",
       "“魔”指烦恼魔、蕴魔等。",
-      "“正思择”指如理作意。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.62,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“正思择”指如理作意。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22876,13 +22000,7 @@
     "translation_note": [
       "“根本业处”指基础禅修所缘。",
       "“疑”为五盖之一。",
-      "“受持与询问”指学习业处的方法。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3580246913580247,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“受持与询问”指学习业处的方法。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22973,13 +22091,7 @@
     ],
     "translation_note": [
       "“水桶”喻指五盖，因水桶漏水，善法无法留存。",
-      "“镇伏”与“彼分”是两种舍断方式。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4181818181818182,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“镇伏”与“彼分”是两种舍断方式。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23058,13 +22170,7 @@
     ],
     "translation_note": [
       "“龟”喻五取蕴，因龟有五部分。",
-      "“欲贪”即对五蕴的贪爱。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2272727272727273,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“欲贪”即对五蕴的贪爱。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23143,13 +22249,7 @@
     ],
     "translation_note": [
       "“刀砧”喻五欲功德，因众生被欲贪所杀。",
-      "“所缘欲”指外在欲乐对象，“烦恼欲”指内在贪欲。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3863636363636365,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "“所缘欲”指外在欲乐对象，“烦恼欲”指内在贪欲。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23191,13 +22291,7 @@
       }
     ],
     "translation_note": [
-      "根据上下文，'vatta' 译为“轮回”，'nandīrāga' 译为“喜贪”，'catutthamagga' 译为“第四道”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.294871794871795,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "根据上下文，'vatta' 译为“轮回”，'nandīrāga' 译为“喜贪”，'catutthamagga' 译为“第四道”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23239,13 +22333,7 @@
       }
     ],
     "translation_note": [
-      "根据上下文，'nāga' 译为“龙”，'khīṇāsava' 译为“漏尽者”，'Buddhanāga' 译为“佛龙”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4918032786885247,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "根据上下文，'nāga' 译为“龙”，'khīṇāsava' 译为“漏尽者”，'Buddhanāga' 译为“佛龙”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23287,13 +22375,7 @@
       }
     ],
     "translation_note": [
-      "根据上下文，'kammatthāna' 译为“业处”，'vipassanā' 译为“观智”，'arahatta' 译为“阿罗汉果”，'paṭihāriya' 译为“神变”，'ratanarāsi' 译为“宝聚”，'kūṭa' 译为“顶珠”，'yathānusandhi' 译为“随顺的关联”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7894736842105263,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "根据上下文，'kammatthāna' 译为“业处”，'vipassanā' 译为“观智”，'arahatta' 译为“阿罗汉果”，'paṭihāriya' 译为“神变”，'ratanarāsi' 译为“宝聚”，'kūṭa' 译为“顶珠”，'yathānusandhi' 译为“随顺的关联”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23449,13 +22531,7 @@
     "translation_note": [
       "Rathavinitasuttam 译为《车乘经》",
       "Mandhātu-Mahāgovinda 为专名，音译",
-      "Kalandakanivāpa 译为迦兰陀迦施食处",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4230769230769231,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Kalandakanivāpa 译为迦兰陀迦施食处"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23730,13 +22806,7 @@
     ],
     "translation_note": [
       "kāḷaka 译为黑松鼠",
-      "abhayaghosana 译为无畏的布告",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8888888888888888,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "abhayaghosana 译为无畏的布告"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24001,13 +23071,7 @@
       "Jātibhūmi 译为生处",
       "ekaddhajamālā 意为一幢花鬘",
       "Nandanavana 译为欢喜园",
-      "pavāritapavāraṇā 译为已进行自恣",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.169230769230769,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "pavāritapavāraṇā 译为已进行自恣"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24155,13 +23219,7 @@
     "translation_note": [
       "根据上下文，'tīṇi ādivacanaṃ' 可能指三句开头语，但原文为 'tī'，可能为 'tīṇi' 的缩写。",
       "'samada' 可能为 'samāda' 的笔误，但未修正。",
-      "注释部分 '1 B. S. omü. 2 B. S. \"*vatthaharo. 136 Majjhimanikāyatthakathā' 保留原文，未翻译。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.85,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "注释部分 '1 B. S. omü. 2 B. S. \"*vatthaharo. 136 Majjhimanikāyatthakathā' 保留原文，未翻译。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -66295,12 +65353,6 @@
       {
         "type": "ratio_rewrite_segmented",
         "segments": 8
-      },
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9857035364936042,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
       }
     ],
     "needs_review": true,
@@ -66344,13 +65396,7 @@
     ],
     "translation_note": [
       "标题 Mahā-Sīhanādasutta 译为《大狮子吼经》。",
-      "Vesālī 译为毗舍离。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.235294117647059,
-        "threshold": 2.33,
-        "reason": "分界点前该记录的中文汉字/巴利语词数低于后段基准。"
-      }
+      "Vesālī 译为毗舍离。"
     ],
     "review_reason": [
       "OCR 错误较多，已根据上下文修正。",

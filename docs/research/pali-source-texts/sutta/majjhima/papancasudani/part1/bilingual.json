@@ -72,13 +72,7 @@
     ],
     "translation_note": [
       "Buddhabhāvaṃ 指佛果，即成佛的状态。",
-      "gatamalaṃ 意为已去除垢秽，即无烦恼。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "gatamalaṃ 意为已去除垢秽，即无烦恼。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -411,13 +405,7 @@
     "translation_note": [
       "abhiññāyo 指六神通。",
       "paññāsaṅkalana-nicchayo 意为智慧抉择。",
-      "dhātāyatanindriyāni 为界、处、根的复合词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4166666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "dhātāyatanindriyāni 为界、处、根的复合词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -498,13 +486,7 @@
     ],
     "translation_note": [
       "yasmā...tasmā 表示因果关系，译为'因为...所以...'。",
-      "bhiyyo 意为'更'，此处与 na 连用表示'不再'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9285714285714286,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "bhiyyo 意为'更'，此处与 na 连用表示'不再'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -550,13 +532,7 @@
     "translation_note": [
       "Majjhe 指上文语境中的中部注释书。",
       "Visuddhimaggo 为书名《清净道论》。",
-      "catunnaṃ āgamānaṃ 指四部尼迦耶。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.090909090909091,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "catunnaṃ āgamānaṃ 指四部尼迦耶。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -601,13 +577,7 @@
     ],
     "translation_note": [
       "Icceva kato 意为“如此作已”，指上文所述。",
-      "Majjhimasaṅgītivā 指“中部集诵”，即中部经典。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "Majjhimasaṅgītivā 指“中部集诵”，即中部经典。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -720,13 +690,7 @@
     ],
     "translation_note": [
       "diyaḍḍha-suttasataṃ 意为“一百五十”，即一个半百。",
-      "dve ca suttantā 意为“又二部经”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "dve ca suttantā 意为“又二部经”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -801,13 +765,7 @@
       }
     ],
     "translation_note": [
-      "数字表达按巴利语习惯译为中文数字。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "数字表达按巴利语习惯译为中文数字。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -917,13 +875,7 @@
       }
     ],
     "translation_note": [
-      "anusandhi 按术语表译为“衔接”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "anusandhi 按术语表译为“衔接”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1105,13 +1057,7 @@
       }
     ],
     "translation_note": [
-      "nidāna 译为“序分”，nipātapada 译为“虚词”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0833333333333335,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "nidāna 译为“序分”，nipātapada 译为“虚词”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1147,14 +1093,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -1193,14 +1132,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -1312,14 +1244,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8181818181818181,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -1394,13 +1319,7 @@
       }
     ],
     "translation_note": [
-      "‘sotaviññāṇādi-viññāṇa-’为复合词，意为‘耳识等识’，此处为未完成句。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sotaviññāṇādi-viññāṇa-’为复合词，意为‘耳识等识’，此处为未完成句。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1510,13 +1429,7 @@
       }
     ],
     "translation_note": [
-      "‘anavasesataṃ’意为‘无余性、彻底性’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘anavasesataṃ’意为‘无余性、彻底性’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1589,13 +1502,7 @@
       }
     ],
     "translation_note": [
-      "‘sabhāve’为处格，意为‘在自性中’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sabhāve’为处格，意为‘在自性中’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1848,13 +1755,7 @@
       }
     ],
     "translation_note": [
-      "paccatta-upayoga-karaṇa-sampadāna-sāmivacana-padapūraṇesu 为复合词，列举了 vo 的六种用法：paccatta（自反）、upayoga（宾语）、karaṇa（工具）、sampadāna（与格）、sāmivacana（属格）、padapūraṇa（填充音节）。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0833333333333335,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "paccatta-upayoga-karaṇa-sampadāna-sāmivacana-padapūraṇesu 为复合词，列举了 vo 的六种用法：paccatta（自反）、upayoga（宾语）、karaṇa（工具）、sampadāna（与格）、sāmivacana（属格）、padapūraṇa（填充音节）。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -1999,13 +1900,7 @@
       }
     ],
     "translation_note": [
-      "uccamānaṃ 为现在分词，意为“正在被说”，此处译为“正被我宣说”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "uccamānaṃ 为现在分词，意为“正在被说”，此处译为“正被我宣说”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2114,13 +2009,7 @@
       }
     ],
     "translation_note": [
-      "vitthārato pi 意为“详细地”，修饰 bhāsissāmī。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "vitthārato pi 意为“详细地”，修饰 bhāsissāmī。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2156,14 +2045,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -2306,14 +2188,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5714285714285714,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -2564,14 +2439,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.130434782608696,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -2608,13 +2476,7 @@
     ],
     "translation_note": [
       "parijānāti 译为“遍知”，与术语表一致。",
-      "tīhi pariññāhi 译为“三种遍知”，保持数词和术语。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2222222222222223,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "tīhi pariññāhi 译为“三种遍知”，保持数词和术语。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2832,13 +2694,7 @@
     ],
     "translation_note": [
       "upādārūpa 译为“所造色”，依据术语表。",
-      "gahitesu 和 gahitam 均译为“已被把握”，保持被动语态。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.111111111111111,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "gahitesu 和 gahitam 均译为“已被把握”，保持被动语态。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2876,13 +2732,7 @@
     ],
     "translation_note": [
       "attato 译为“为自我”，表示从自我角度。",
-      "samanupassati 译为“随观”，保持复合动词的意味。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.375,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "samanupassati 译为“随观”，保持复合动词的意味。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -2991,13 +2841,7 @@
       }
     ],
     "translation_note": [
-      "‘vattati’译为‘运转’，指心随境转。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘vattati’译为‘运转’，指心随境转。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3034,13 +2878,7 @@
       }
     ],
     "translation_note": [
-      "‘maññanā’译为‘思量’，指虚妄分别。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘maññanā’译为‘思量’，指虚妄分别。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3257,13 +3095,7 @@
       }
     ],
     "translation_note": [
-      "‘uppattiṃ’译为‘生起’，指思心生起。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘uppattiṃ’译为‘生起’，指思心生起。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -3299,14 +3131,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -3341,14 +3166,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -3563,14 +3381,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -3605,14 +3416,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -3647,14 +3451,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -3725,14 +3522,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -4667,14 +4457,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -4709,14 +4492,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -4859,14 +4635,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -4905,13 +4674,7 @@
       "Tasmātiha 为 tasmā + iti + ha 的连音，译为“因此”。",
       "sabbaso 意为“完全地”。",
       "taṇhānaṃ khayā virāgā nirodhā cāgā paṭinissaggā 为复合词，表示“渴爱的灭尽、离欲、止息、舍弃、遣除”。",
-      "anuttaraṃ sammāsambodhiṃ abhisambuddho 译为“现证无上正等正觉”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2142857142857144,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "anuttaraṃ sammāsambodhiṃ abhisambuddho 译为“现证无上正等正觉”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -4988,13 +4751,7 @@
       "abhaññāsi 是 ājānāti 的过去时，译为“了知”。",
       "paṭivijjhi 是 paṭivijjhati 的过去时，译为“通达”。",
       "patto 是 pāpuṇāti 的过去分词，译为“获得”。",
-      "adhigato 是 adhigacchati 的过去分词，译为“证得”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "adhigato 是 adhigacchati 的过去分词，译为“证得”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5106,13 +4863,7 @@
       "mānabhañjanatthaṃ 意为“为了破除慢的目的”。",
       "desitañca pana etaṃ suttaṃ 意为“这部经被教导”。",
       "sutvā 是 suṇāti 的绝对分词，译为“听闻后”。",
-      "cintayiṃsu 是 cinteti 的过去时，译为“思惟”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "cintayiṃsu 是 cinteti 的过去时，译为“思惟”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5149,13 +4900,7 @@
       }
     ],
     "translation_note": [
-      "diṭṭhigatiko 译为“持有邪见者”，sekho 译为“有学者”，arahā 译为“阿罗汉”，Tathāgato 译为“如来”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.230769230769231,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "diṭṭhigatiko 译为“持有邪见者”，sekho 译为“有学者”，arahā 译为“阿罗汉”，Tathāgato 译为“如来”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5192,13 +4937,7 @@
       }
     ],
     "translation_note": [
-      "mūlapariyāyassa 译为“根本法门”，antaṃ 译为“边际”，koṭiṃ 译为“顶端”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0588235294117645,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "mūlapariyāyassa 译为“根本法门”，antaṃ 译为“边际”，koṭiṃ 译为“顶端”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5344,13 +5083,7 @@
       }
     ],
     "translation_note": [
-      "antarākathāya 译为“中间谈话”，sannisinnā 译为“聚集而坐”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "antarākathāya 译为“中间谈话”，sannisinnā 译为“聚集而坐”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5497,13 +5230,7 @@
     "translation_note": [
       "māṇavakā 译为“婆罗门青年”，与术语表一致。",
       "mānasaṃ uppādetvā 意为“生起傲慢”。",
-      "agāravā 意为“不恭敬的”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "agāravā 意为“不恭敬的”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5540,13 +5267,7 @@
       }
     ],
     "translation_note": [
-      "mānaniggahan 意为“傲慢的折伏”或“对傲慢的抑制”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "mānaniggahan 意为“傲慢的折伏”或“对傲慢的抑制”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5802,13 +5523,7 @@
       "mankubhūtā 意为“沮丧的”。",
       "pattakkhandhā 意为“垂肩的”。",
       "adhomukhā 意为“低头的”。",
-      "tuṇhī 意为“沉默的”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2222222222222223,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "tuṇhī 意为“沉默的”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -5880,14 +5595,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -5922,14 +5630,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -6000,14 +5701,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -6045,13 +5739,7 @@
     ],
     "translation_note": [
       "bhūtapacaniṃ 指煮已生之食，此处隐喻。",
-      "taṇhāya bhūte pacantiyā 为依格结构，表示因渴爱而煮。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.111111111111111,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "taṇhāya bhūte pacantiyā 为依格结构，表示因渴爱而煮。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6305,13 +5993,7 @@
     ],
     "translation_note": [
       "Taṃ 指代前文提到的树。",
-      "Jetena rājakumārena 为工具格，表示由杰塔王子。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "Jetena rājakumārena 为工具格，表示由杰塔王子。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6709,13 +6391,7 @@
     ],
     "translation_note": [
       "cakkhuto 等为从格，表示来源。",
-      "savanti pavattanti 为同义复合，强调流出与转起。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "savanti pavattanti 为同义复合，强调流出与转起。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6825,13 +6501,7 @@
     ],
     "translation_note": [
       "diṭṭhadhammikānaṃ 译为“现法中的”，samparāyikānaṃ 译为“来世中的”。",
-      "saṃvarāya 译为“为了防护”，paṭighātāya 译为“为了破除”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.090909090909091,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "saṃvarāya 译为“为了防护”，paṭighātāya 译为“为了破除”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6869,13 +6539,7 @@
     ],
     "translation_note": [
       "Sālāyatane 根据术语表译为“在会堂中”。",
-      "kāmāsavo, bhavāsavo, avijjāsavo 分别译为“欲漏、有漏、无明漏”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "kāmāsavo, bhavāsavo, avijjāsavo 分别译为“欲漏、有漏、无明漏”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6913,13 +6577,7 @@
     ],
     "translation_note": [
       "dassanā pahātabbehi 译为“应通过见所断除的”，saddhiṃ 译为“与……一起”。",
-      "sattadhā 译为“以七种方式”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sattadhā 译为“以七种方式”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -6955,14 +6613,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.076923076923077,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -7105,14 +6756,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -7219,14 +6863,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.090909090909091,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -7480,13 +7117,7 @@
     "translation_note": [
       "avijjāsavo 为 avijjā + āsavo 的连音，译为“无明漏”。",
       "catūsu saccesu 为“四圣谛”的处格复数。",
-      "aññāṇaṃ 为“无知”之义。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "aññāṇaṃ 为“无知”之义。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7668,13 +7299,7 @@
     ],
     "translation_note": [
       "ayoniso manasikārato 为“非正理作意”的从格，yoniso manasikārato 为“正理作意”的从格。",
-      "uppajjanti 为“生起”，pahīyanti 为“被舍断”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "uppajjanti 为“生起”，pahīyanti 为“被舍断”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7713,13 +7338,7 @@
     ],
     "translation_note": [
       "kathā nu kho 'smi ti 意为“我是如何”，attano khandhesu 为“在自己的诸蕴中”，jīvo nāma atthi ti 为“有名为命者”。",
-      "saṇṭhānākāraṃ 为“形状方式”，nissāya 为“依于”，kaṅkhati 为“疑惑”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "saṇṭhānākāraṃ 为“形状方式”，nissāya 为“依于”，kaṅkhati 为“疑惑”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7829,13 +7448,7 @@
       }
     ],
     "translation_note": [
-      "“sassatadiṭṭhi”译为“常见”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“sassatadiṭṭhi”译为“常见”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7873,13 +7486,7 @@
       }
     ],
     "translation_note": [
-      "“ucchedadiṭṭhi”译为“断见”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7272727272727273,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“ucchedadiṭṭhi”译为“断见”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7917,13 +7524,7 @@
       }
     ],
     "translation_note": [
-      "“saññākkhandha”译为“想蕴”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“saññākkhandha”译为“想蕴”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -7962,13 +7563,7 @@
     "translation_note": [
       "attanā va anattānaṃ ti 意为‘以自己或非自己’，表示两种错误见解。",
       "saññākkhandhaṃ attā ti gahetvā 意为‘执取想蕴为我’。",
-      "itare cattāro anattā ti gaṇhāti 意为‘执取其余四者为非我’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9230769230769231,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "itare cattāro anattā ti gaṇhāti 意为‘执取其余四者为非我’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8007,13 +7602,7 @@
     "translation_note": [
       "anattanā va attānaṃ ti 意为‘以非自己或自己’，表示与上一句相反的两种见解。",
       "saññākkhandhaṃ anattā ti gahetvā 意为‘执取想蕴为非我’。",
-      "itare cattāro attā ti gaṇhāti 意为‘执取其余四者为我’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9230769230769231,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "itare cattāro attā ti gaṇhāti 意为‘执取其余四者为我’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8051,13 +7640,7 @@
     ],
     "translation_note": [
       "vado ti vadatī ti vado 是词源解释，意为‘语者，因言说故为语’。",
-      "vacīkammassa kārako ti vuttaṃ hoti 意为‘被称为语业的作者’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "vacīkammassa kārako ti vuttaṃ hoti 意为‘被称为语业的作者’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8093,14 +7676,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.625,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -8135,14 +7711,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7142857142857142,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -8213,14 +7782,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -8368,13 +7930,7 @@
     "translation_note": [
       "“ariyasāvako”译为“圣弟子”，其中“ariya”依术语表译为“圣”。",
       "“ariyadhammassa kovido”译为“精通圣法”，其中“kovida”意为“精通、熟练”。",
-      "“ariyadhamme suvinīto”译为“于圣法善修习”，其中“suvinīta”意为“善调伏、善修习”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“ariyadhamme suvinīto”译为“于圣法善修习”，其中“suvinīta”意为“善调伏、善修习”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8413,13 +7969,7 @@
     ],
     "translation_note": [
       "“idaṃ dukkhan ti”为直接引语，译为“此是苦”。",
-      "“yoniso manasikaroti”译为“如理作意”，为佛教术语。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“yoniso manasikaroti”译为“如理作意”，为佛教术语。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8674,13 +8224,7 @@
     "translation_note": [
       "“upāyena pathena”为工具格，译为“以方便、以方法”。",
       "“paṭisaṅkhāya”译为“审察”，与“paṭisaṅkhā”同源。",
-      "“ñatvā paccavekkhitvā”译为“了知、省思”，为两个并列的动名词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“ñatvā paccavekkhitvā”译为“了知、省思”，为两个并列的动名词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8791,13 +8335,7 @@
     "translation_note": [
       "javana 依术语表译为“速行”，此处指速行心。",
       "muṭṭhasacca 译为“失念”，与 sati 的“念”相对。",
-      "akkhanti 译为“不宽容”，kosajja 译为“懈怠”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5625,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "akkhanti 译为“不宽容”，kosajja 译为“懈怠”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -8871,13 +8409,7 @@
     ],
     "translation_note": [
       "satisaṃvaro 译为“念的守护”，其中 sati 依术语表译为“念”。",
-      "adhippeto 意为“所指的、意图的”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "adhippeto 意为“所指的、意图的”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9095,13 +8627,7 @@
     ],
     "translation_note": [
       "attā 译为“我”，sattā 译为“众生”。",
-      "diṭṭhāsavo 译为“见漏”，指由邪见产生的烦恼。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "diṭṭhāsavo 译为“见漏”，指由邪见产生的烦恼。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9212,13 +8738,7 @@
       }
     ],
     "translation_note": [
-      "'Paṭisaṅkhā'译为'审察'，'yoniso'译为'如理'，'cīvaraṃ'译为'衣服'，'paṭisevati'译为'受用'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "'Paṭisaṅkhā'译为'审察'，'yoniso'译为'如理'，'cīvaraṃ'译为'衣服'，'paṭisevati'译为'受用'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9293,13 +8813,7 @@
       }
     ],
     "translation_note": [
-      "'khamo hoti'译为'忍耐'，'sītassā'为'sītassa'的连音，译为'寒冷'，'khamati'译为'忍耐'，'sahati'译为'忍受'，'na kampati'译为'不摇动'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7272727272727273,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "'khamo hoti'译为'忍耐'，'sītassā'为'sītassa'的连音，译为'寒冷'，'khamati'译为'忍耐'，'sahati'译为'忍受'，'na kampati'译为'不摇动'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9338,13 +8852,7 @@
       }
     ],
     "translation_note": [
-      "'dve tayo vāre'译为'两三次'，'bhattaṃ'译为'食物'，'pānīyaṃ'译为'饮水'，'alabhitvā'译为'没有得到'，'kammatthānaṃ'译为'业处'，'na vijahati'译为'不舍弃'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5384615384615385,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "'dve tayo vāre'译为'两三次'，'bhattaṃ'译为'食物'，'pānīyaṃ'译为'饮水'，'alabhitvā'译为'没有得到'，'kammatthānaṃ'译为'业处'，'na vijahati'译为'不舍弃'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -9452,14 +8960,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -9962,14 +9463,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -10112,14 +9606,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -10587,13 +10074,7 @@
       }
     ],
     "translation_note": [
-      "viveko 译为“远离”，vivittatā 译为“寂静性”，pañcavidho 译为“五种”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "viveko 译为“远离”，vivittatā 译为“寂静性”，pañcavidho 译为“五种”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -10775,13 +10256,7 @@
       }
     ],
     "translation_note": [
-      "arahattaṃ 译为“阿罗汉果”，vaṭṭadukkhassa 译为“轮回之苦”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "arahattaṃ 译为“阿罗汉果”，vaṭṭadukkhassa 译为“轮回之苦”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11862,13 +11337,7 @@
       }
     ],
     "translation_note": [
-      "yāvadattho 译为“适量”，yāvatako 译为“一切所需”，nipphanno 译为“圆满达成”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "yāvadattho 译为“适量”，yāvatako 译为“一切所需”，nipphanno 译为“圆满达成”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -11905,13 +11374,7 @@
       }
     ],
     "translation_note": [
-      "解释“atha”一词的含义，指代特定时间。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "解释“atha”一词的含义，指代特定时间。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12164,13 +11627,7 @@
       }
     ],
     "translation_note": [
-      "“āmisānaṃ”指物质性的供养，与法施相对。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7142857142857142,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“āmisānaṃ”指物质性的供养，与法施相对。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12243,13 +11700,7 @@
       }
     ],
     "translation_note": [
-      "“aṅkusena”比喻为钩，用来调伏。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“aṅkusena”比喻为钩，用来调伏。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -12321,14 +11772,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -12363,14 +11807,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.3076923076923075,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -12405,14 +11842,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.176470588235294,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -12519,14 +11949,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -12633,14 +12056,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -13071,14 +12487,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -13223,13 +12632,7 @@
       }
     ],
     "translation_note": [
-      "直译：长老比丘们应受责备。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "直译：长老比丘们应受责备。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13302,13 +12705,7 @@
       }
     ],
     "translation_note": [
-      "Lobhādī 为 Lobhādi 的复数宾格，意为“贪等”；cittavivekaṃ 为“心之远离”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "Lobhādī 为 Lobhādi 的复数宾格，意为“贪等”；cittavivekaṃ 为“心之远离”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13525,13 +12922,7 @@
       }
     ],
     "translation_note": [
-      "pahātabbā 为未来分词，意为“应被舍弃”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.0909090909090908,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "pahātabbā 为未来分词，意为“应被舍弃”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -13639,14 +13030,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2857142857142858,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -13681,14 +13065,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14011,14 +13388,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14053,14 +13423,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.625,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14383,14 +13746,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14533,14 +13889,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14863,14 +14212,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -14941,14 +14283,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -15091,14 +14426,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -15457,14 +14785,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -15681,13 +15002,7 @@
       }
     ],
     "translation_note": [
-      "根据术语表，'nīvaraṇa' 译为 '盖'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "根据术语表，'nīvaraṇa' 译为 '盖'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -15723,14 +15038,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16197,14 +15505,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16239,14 +15540,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16317,14 +15611,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16395,14 +15682,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16725,14 +16005,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4285714285714286,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -16911,14 +16184,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5555555555555556,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -17277,14 +16543,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -17391,14 +16650,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -17433,14 +16685,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -17477,13 +16722,7 @@
       }
     ],
     "translation_note": [
-      "“avijjā”译为“无明”，“vijjā”译为“明”，“tamo”译为“黑暗”，“āloko”译为“光明”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“avijjā”译为“无明”，“vijjā”译为“明”，“tamo”译为“黑暗”，“āloko”译为“光明”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17592,13 +16831,7 @@
       }
     ],
     "translation_note": [
-      "“kāmāsavā”为“欲漏”（从格），表示从欲漏中解脱。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“kāmāsavā”为“欲漏”（从格），表示从欲漏中解脱。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17672,13 +16905,7 @@
       }
     ],
     "translation_note": [
-      "“itthattāya”译为“此后有”，指未来的存在状态。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“itthattāya”译为“此后有”，指未来的存在状态。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -17900,13 +17127,7 @@
     "translation_note": [
       "“Abhikkantaṃ”译为“殊妙”，依据术语表。",
       "“bho Gotama”为呼格，译为“乔达摩尊师”。",
-      "“abbhanumodanaṃ”意为“随喜、赞叹”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“abbhanumodanaṃ”意为“随喜、赞叹”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18052,13 +17273,7 @@
     ],
     "translation_note": [
       "“Buddhaṃ”、“dhammaṃ”、“saṅghaṃ”为宾格，分别译为“佛”、“法”、“僧团”。",
-      "“saraṇaṃ gacchāmi”意为“去皈依”，即“皈依”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“saraṇaṃ gacchāmi”意为“去皈依”，即“皈依”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18099,13 +17314,7 @@
       "“ariyamaggo”译为“圣道”，依据术语表“ariya”译为“圣”。",
       "“nibbānaṃ”译为“涅槃”。",
       "“ariyaphalāni”译为“圣果”。",
-      "“pariyattidhammo”译为“教法”，指经典的学习。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“pariyattidhammo”译为“教法”，指经典的学习。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -18177,14 +17386,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -18579,14 +17781,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.2727272727272727,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -18621,14 +17816,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -18701,13 +17889,7 @@
     ],
     "translation_note": [
       "veramaṇiyo 指离杀生等五种学处，译为“离”或“离（学处）”。",
-      "upāsaka 译为“在家众”或“优婆塞”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "upāsaka 译为“在家众”或“优婆塞”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19032,13 +18214,7 @@
       }
     ],
     "translation_note": [
-      "gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19075,13 +18251,7 @@
       }
     ],
     "translation_note": [
-      "sattā 译为“众生”，narā 译为“男子”，posā 译为“士夫”或“人”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sattā 译为“众生”，narā 译为“男子”，posā 译为“士夫”或“人”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19190,13 +18360,7 @@
       }
     ],
     "translation_note": [
-      "‘paramatthadesanā’译为‘最胜义的教导’，指佛陀关于究竟法的开示。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘paramatthadesanā’译为‘最胜义的教导’，指佛陀关于究竟法的开示。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19521,13 +18685,7 @@
       }
     ],
     "translation_note": [
-      "‘sāṅgaṇo’译为‘有垢者’，‘samannāgato’译为‘具有’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sāṅgaṇo’译为‘有垢者’，‘samannāgato’译为‘具有’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19564,13 +18722,7 @@
       }
     ],
     "translation_note": [
-      "‘ajjhattaṃ’译为‘内’，‘aṅgaṇaṃ’译为‘垢’，‘yathābhūtaṃ’译为‘如实’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘ajjhattaṃ’译为‘内’，‘aṅgaṇaṃ’译为‘垢’，‘yathābhūtaṃ’译为‘如实’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19646,13 +18798,7 @@
     ],
     "translation_note": [
       "“āvuso”译为“朋友”，是巴利语中对同修者的称呼。",
-      "“kāraṇaṃ pucchati”直译为“问原因”，这里指询问原因和条件。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“kāraṇaṃ pucchati”直译为“问原因”，这里指询问原因和条件。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19727,13 +18873,7 @@
     "translation_note": [
       "“kāṃsapāti”指铜制的钵或盘。",
       "“pariyonaddhā”意为被覆盖、包裹。",
-      "“pariyodapeyyuṃ”是“pariyodapeti”的潜在式，意为“能使清净”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“pariyodapeyyuṃ”是“pariyodapeti”的潜在式，意为“能使清净”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -19916,13 +19056,7 @@
     "translation_note": [
       "“Parisuddhe sīle”是处格，意为“在清净的戒中”。",
       "“patiṭṭhāya”是绝对分词，意为“依止、建立”。",
-      "“Buddhavacanaṃ”指佛陀的教导或言教。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“Buddhavacanaṃ”指佛陀的教导或言教。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20031,13 +19165,7 @@
       }
     ],
     "translation_note": [
-      "tadaṅga-nivāraṇaṃ 译为'彼分制止'，指以观智暂时压制烦恼。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "tadaṅga-nivāraṇaṃ 译为'彼分制止'，指以观智暂时压制烦恼。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20290,13 +19418,7 @@
       }
     ],
     "translation_note": [
-      "icchā 译为'欲望'，此处指贪欲。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "icchā 译为'欲望'，此处指贪欲。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20405,13 +19527,7 @@
       }
     ],
     "translation_note": [
-      "kodhābhibhūto 译为'被嗔恚所胜'，domanassābhibhūto 译为'被忧受所胜'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "kodhābhibhūto 译为'被嗔恚所胜'，domanassābhibhūto 译为'被忧受所胜'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -20447,14 +19563,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -20957,14 +20066,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -21611,14 +20713,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -21726,13 +20821,7 @@
       }
     ],
     "translation_note": [
-      "sampannasīlā 译为“具足戒”，paripuṇṇasīlā 译为“戒行圆满”，sīlasaṅgino 译为“与戒相应”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sampannasīlā 译为“具足戒”，paripuṇṇasīlā 译为“戒行圆满”，sīlasaṅgino 译为“与戒相应”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22021,13 +21110,7 @@
       }
     ],
     "translation_note": [
-      "samādāya 译为“受持”，sikkhatha 译为“学”，sikkhāpadesū 译为“于学处”，taṃ taṃ sikkhāpadaṃ 译为“彼彼学处”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.3333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "samādāya 译为“受持”，sikkhatha 译为“学”，sikkhāpadesū 译为“于学处”，taṃ taṃ sikkhāpadaṃ 译为“彼彼学处”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22424,13 +21507,7 @@
       }
     ],
     "translation_note": [
-      "cittekaggatā 译为“心一境性”，samāpattiṃ samāpajjati 译为“进入等至”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "cittekaggatā 译为“心一境性”，samāpattiṃ samāpajjati 译为“进入等至”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22542,13 +21619,7 @@
     ],
     "translation_note": [
       "‘lābhī assan’为祈愿式，译为‘我将获得’。",
-      "‘sīlādiguṇasampanno’意为‘具足戒等功德’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sīlādiguṇasampanno’意为‘具足戒等功德’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22946,13 +22017,7 @@
     ],
     "translation_note": [
       "‘saṃyojanāni’译为‘结’，即束缚。",
-      "‘sakkāyadiṭṭhi’译为‘身见’，‘vicikicchā’译为‘疑’，‘sīlabbataparāmāso’译为‘戒禁取’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sakkāyadiṭṭhi’译为‘身见’，‘vicikicchā’译为‘疑’，‘sīlabbataparāmāso’译为‘戒禁取’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -22990,13 +22055,7 @@
     ],
     "translation_note": [
       "‘Sotāpanno’译为‘入流者’。",
-      "‘maggena phalassa nāmaṃ dinnā’意为‘通过道给予果的名称’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘maggena phalassa nāmaṃ dinnā’意为‘通过道给予果的名称’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23105,13 +22164,7 @@
       }
     ],
     "translation_note": [
-      "sakaṃ lokaṃ 直译为‘自己的世间’，此处指欲界或人间。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7142857142857142,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sakaṃ lokaṃ 直译为‘自己的世间’，此处指欲界或人间。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23400,13 +22453,7 @@
       }
     ],
     "translation_note": [
-      "anekavihitaṃ iddhividhaṃ 意为‘多种神通种类’，paccanubhaveyya 为‘体验’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "anekavihitaṃ iddhividhaṃ 意为‘多种神通种类’，paccanubhaveyya 为‘体验’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -23911,13 +22958,7 @@
       }
     ],
     "translation_note": [
-      "jāti-ādīni 指‘生等’，unnativasena 意为‘以高举的状态’，pavatto 为‘转起’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "jāti-ādīni 指‘生等’，unnativasena 意为‘以高举的状态’，pavatto 为‘转起’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24061,14 +23102,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -24391,14 +23425,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -24577,14 +23604,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -24621,13 +23641,7 @@
     ],
     "translation_note": [
       "mettāsahagatena cetasā 译为“与慈俱行之心”，其中 cetasā 为具格，表示伴随状态。",
-      "ekaṃ disaṃ pharitvā 意为“遍满一方”，pharitvā 是 pharati 的绝对分词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "ekaṃ disaṃ pharitvā 意为“遍满一方”，pharitvā 是 pharati 的绝对分词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24738,13 +23752,7 @@
     "translation_note": [
       "dukkhassa samudayassa pahānūpāyassa nirodhassa ca 是四个属格名词，分别对应苦、集、道、灭，但顺序为苦、集、道、灭，译文按传统顺序调整。",
       "saccāni 为复数主格，意为“诸圣谛”。",
-      "vavatthitāni honti 意为“已被确定”，vavatthita 是过去分词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "vavatthitāni honti 意为“已被确定”，vavatthita 是过去分词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24782,13 +23790,7 @@
     ],
     "translation_note": [
       "Kāmāsavā 和 bhavāsavā 分别是“欲漏”和“有漏”，为复合词。",
-      "cittaṃ vimuccati 直译为“心被解脱”，此处译为“之心解脱”更自然。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "cittaṃ vimuccati 直译为“心被解脱”，此处译为“之心解脱”更自然。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -24899,13 +23901,7 @@
     "translation_note": [
       "maññi 为 maññati 的过去式，意为“认为”。",
       "Bāhukāya nadiyā 为“巴胡迦河”，属格或工具格，此处作来源。",
-      "pāpaṃ pavāhetvā 为“洗除罪恶”，pavāhetvā 为绝对分词。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "pāpaṃ pavāhetvā 为“洗除罪恶”，pavāhetvā 为绝对分词。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25017,13 +24013,7 @@
       "Sabbabhūtesu 为“于一切众生”，处格复数。",
       "karohi 为 karoti 的命令式第二人称单数。",
       "khemaṃ 为“安稳”。",
-      "sace musā na bhaṇasi 为“如果你不说妄语”，条件句。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sace musā na bhaṇasi 为“如果你不说妄语”，条件句。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25064,13 +24054,7 @@
       "adinnaṃ nādiyāsi 为“不应取未给与之物”，ādiyāsi 为 ādiyati 的潜在式。",
       "saddahāno 为“具信心”，现在分词。",
       "amaccharī 为“无悭吝”。",
-      "bhavāhi 为 bhavati 的命令式第二人称单数。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "bhavāhi 为 bhavati 的命令式第二人称单数。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25180,13 +24164,7 @@
     ],
     "translation_note": [
       "vūpakaṭṭho 译为“远离（愦闹）”，指身远离。",
-      "pahitatto 译为“决心坚定”，指心已致力于修行。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "pahitatto 译为“决心坚定”，指心已致力于修行。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25296,13 +24274,7 @@
     ],
     "translation_note": [
       "这是阿罗汉的定型表述。",
-      "vusitaṃ brahmacariyaṃ 直译为“梵行已住”，意即“梵行已立”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "vusitaṃ brahmacariyaṃ 直译为“梵行已住”，意即“梵行已立”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25484,13 +24456,7 @@
     ],
     "translation_note": [
       "soḷasavidhaṃ kiccaṃ 指四谛各四行相，共十六种作用。",
-      "niṭṭhāpitaṃ 译为“圆满完成”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "niṭṭhāpitaṃ 译为“圆满完成”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -25598,14 +24564,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -25820,14 +24779,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -25970,14 +24922,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -26086,13 +25031,7 @@
       }
     ],
     "translation_note": [
-      "ekaggamattaṃ 意为'一境性'，diṭṭhadhammasukhavihāro 译为'现法乐住'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "ekaggamattaṃ 意为'一境性'，diṭṭhadhammasukhavihāro 译为'现法乐住'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -26130,13 +25069,7 @@
       }
     ],
     "translation_note": [
-      "vihārā 译为'住处'，jhānāni 译为'禅定'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "vihārā 译为'住处'，jhānāni 译为'禅定'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -26173,13 +25106,7 @@
       }
     ],
     "translation_note": [
-      "sallekho 译为'削减'，指削减烦恼的修行。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sallekho 译为'削减'，指削减烦恼的修行。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -26827,14 +25754,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -26905,14 +25825,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -27127,14 +26040,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.090909090909091,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -27421,14 +26327,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -27463,14 +26362,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -27505,14 +26397,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -27657,13 +26542,7 @@
     ],
     "translation_note": [
       "Sammādiṭṭhipuggalo 为复合词，意为“具有正见之人”。",
-      "tividho 意为“三种”，指三种类型。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "tividho 意为“三种”，指三种类型。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -27737,13 +26616,7 @@
     ],
     "translation_note": [
       "niyatāya 意为“确定的、决定的”，指圣者所拥有的正见是确定的。",
-      "samannāgato 意为“具备、具有”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "samannāgato 意为“具备、具有”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -27853,13 +26726,7 @@
     ],
     "translation_note": [
       "pajānāti 意为“了知、理解”。",
-      "kusalamūlaṃ 意为“善根”，即善法的根本。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "kusalamūlaṃ 意为“善根”，即善法的根本。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28076,13 +26943,7 @@
       }
     ],
     "translation_note": [
-      "sambhārā 译为“资具”，指构成邪淫的要素。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sambhārā 译为“资具”，指构成邪淫的要素。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28191,13 +27052,7 @@
       }
     ],
     "translation_note": [
-      "sambhārā 译为“资具”，指构成妄语的要素。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sambhārā 译为“资具”，指构成妄语的要素。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28630,13 +27485,7 @@
       }
     ],
     "translation_note": [
-      "akusalamūlaṃ 译为“不善根”，与术语表对应。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.1666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "akusalamūlaṃ 译为“不善根”，与术语表对应。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28673,13 +27522,7 @@
       }
     ],
     "translation_note": [
-      "直译：贪（lobho）被染着（lubbhati），嗔（doso）被恼害（dussati），痴（moho）被迷蒙（muyhati）。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "直译：贪（lobho）被染着（lubbhati），嗔（doso）被恼害（dussati），痴（moho）被迷蒙（muyhati）。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28716,13 +27559,7 @@
       }
     ],
     "translation_note": [
-      "veramaṇī 译为“离（学处）”，kusalaṃ 译为“善”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "veramaṇī 译为“离（学处）”，kusalaṃ 译为“善”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -28939,13 +27776,7 @@
       }
     ],
     "translation_note": [
-      "sukhavedanaṃ 译为“乐受”，upekkhāvedanaṃ 译为“舍受”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sukhavedanaṃ 译为“乐受”，upekkhāvedanaṃ 译为“舍受”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -29018,13 +27849,7 @@
       }
     ],
     "translation_note": [
-      "kusalamūlaṃ 依术语表译为“善根”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4285714285714286,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "kusalamūlaṃ 依术语表译为“善根”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -29133,13 +27958,7 @@
       }
     ],
     "translation_note": [
-      "Diṭṭhimānānusayaṃ 为 diṭṭhi-māna-anusayaṃ 的复合词，译为“见与慢的随眠”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "Diṭṭhimānānusayaṃ 为 diṭṭhi-māna-anusayaṃ 的复合词，译为“见与慢的随眠”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -29176,13 +27995,7 @@
       }
     ],
     "translation_note": [
-      "Diṭṭheva dhamme 为 diṭṭhe eva dhamme 的连音，意为“在现法中”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "Diṭṭheva dhamme 为 diṭṭhe eva dhamme 的连音，意为“在现法中”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -29254,14 +28067,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -29332,14 +28138,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -29482,14 +28281,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30100,14 +28892,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30142,14 +28927,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30184,14 +28962,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30478,14 +29249,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30556,14 +29320,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -30814,14 +29571,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -31073,13 +29823,7 @@
       }
     ],
     "translation_note": [
-      "assāda 译为“执取”，指对乐受的味着。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "assāda 译为“执取”，指对乐受的味着。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -31404,13 +30148,7 @@
       }
     ],
     "translation_note": [
-      "cetanā 译为“思”，manasikāro 译为“作意”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "cetanā 译为“思”，manasikāro 译为“作意”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -31447,13 +30185,7 @@
       }
     ],
     "translation_note": [
-      "upādāya 译为“依于”，vattamānaṃ 译为“存在”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "upādāya 译为“依于”，vattamānaṃ 译为“存在”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -31526,13 +30258,7 @@
       }
     ],
     "translation_note": [
-      "cakkhumhi 为 cakkhu 的处格，译为“在眼处”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "cakkhumhi 为 cakkhu 的处格，译为“在眼处”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -31713,13 +30439,7 @@
       }
     ],
     "translation_note": [
-      "saṅkhārānaṃ 为复数属格，译为“诸行的”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.75,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "saṅkhārānaṃ 为复数属格，译为“诸行的”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -31902,13 +30622,7 @@
     "translation_note": [
       "Kurūsu 为复数处格，译为“在拘楼国”。",
       "Kammāsadhamme 为处格，译为“在剑磨瑟昙”。",
-      "nigame 为处格，译为“在城”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "nigame 为处格，译为“在城”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -32018,13 +30732,7 @@
     ],
     "translation_note": [
       "parisā 译为“集会”，指四众弟子。",
-      "anuyuttā 译为“随行”，表示致力于。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "anuyuttā 译为“随行”，表示致力于。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -32135,13 +30843,7 @@
     ],
     "translation_note": [
       "Buddharakkhito 为比丘名，译为“觉护”。",
-      "manasikāsi 为过去式，译为“作意”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "manasikāsi 为过去式，译为“作意”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -33835,13 +32537,7 @@
     ],
     "translation_note": [
       "bhāvitā bahulīkatā 为过去分词，译为“已修习、已多作”。",
-      "paripūrenti 译为“圆满”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "paripūrenti 译为“圆满”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -33985,14 +32681,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -34315,14 +33004,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -34501,14 +33183,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -34544,13 +33219,7 @@
       }
     ],
     "translation_note": [
-      "byāpādo 译为瞋恚，saṅgahaṃ gacchati 译为被纳入会合。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "byāpādo 译为瞋恚，saṅgahaṃ gacchati 译为被纳入会合。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -34839,13 +33508,7 @@
       }
     ],
     "translation_note": [
-      "此处列举与念相关的术语，satisampajaññaṃ 依术语表译为念与正知。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "此处列举与念相关的术语，satisampajaññaṃ 依术语表译为念与正知。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -34882,13 +33545,7 @@
       }
     ],
     "translation_note": [
-      "kāyo 译为身体，pañcūpādānakkhandhā 译为五取蕴，lokoti vuccanti 译为被称为世间。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "kāyo 译为身体，pañcūpādānakkhandhā 译为五取蕴，lokoti vuccanti 译为被称为世间。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -35068,14 +33725,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -35398,14 +34048,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -35512,14 +34155,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.7777777777777777,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -35663,13 +34299,7 @@
       }
     ],
     "translation_note": [
-      "‘taṃ’指代‘cittaṃ’，‘vāyaṃ’为‘vāya’（风）的宾格。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘taṃ’指代‘cittaṃ’，‘vāyaṃ’为‘vāya’（风）的宾格。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -35742,13 +34372,7 @@
       }
     ],
     "translation_note": [
-      "‘ṭhānāya’为‘ṭhāna’（站立）的与格，表目的；‘viññattiṃ’为‘viññatti’（表业）的宾格。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘ṭhānāya’为‘ṭhāna’（站立）的与格，表目的；‘viññattiṃ’为‘viññatti’（表业）的宾格。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -35785,13 +34409,7 @@
       }
     ],
     "translation_note": [
-      "‘sammiñjanaṃ’为‘sammiñjana’（弯曲）的宾格；‘nisajjā’为‘nisajjā’（坐）的主格。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘sammiñjanaṃ’为‘sammiñjana’（弯曲）的宾格；‘nisajjā’为‘nisajjā’（坐）的主格。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -35827,14 +34445,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -35905,14 +34516,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4444444444444444,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -36559,14 +35163,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -36709,14 +35306,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -36787,14 +35377,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -37045,14 +35628,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -37304,13 +35880,7 @@
       }
     ],
     "translation_note": [
-      "直译，保持原文结构。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "直译，保持原文结构。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37455,13 +36025,7 @@
       }
     ],
     "translation_note": [
-      "“attā”译为“我”，指灵魂或自我。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8571428571428572,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“attā”译为“我”，指灵魂或自我。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37642,13 +36206,7 @@
       }
     ],
     "translation_note": [
-      "“asappāyaṃ”译为“不适当的”，指不适合修行的条件。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "“asappāyaṃ”译为“不适当的”，指不适合修行的条件。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37721,13 +36279,7 @@
       }
     ],
     "translation_note": [
-      "sundaraṃ cīvaraṃ 译为“好的衣服”，somanassaṃ 按术语表译为“喜悦”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "sundaraṃ cīvaraṃ 译为“好的衣服”，somanassaṃ 按术语表译为“喜悦”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37764,13 +36316,7 @@
       }
     ],
     "translation_note": [
-      "asundaraṃ cīvaraṃ 译为“不好的衣服”，domanassaṃ 按术语表译为“忧悲”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "asundaraṃ cīvaraṃ 译为“不好的衣服”，domanassaṃ 按术语表译为“忧悲”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37807,13 +36353,7 @@
       }
     ],
     "translation_note": [
-      "pattadhāraṇe 译为“在持钵时”，piṇḍāya caranto 译为“去乞食”，bhikkhaṃ 译为“食物”。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "pattadhāraṇe 译为“在持钵时”，piṇḍāya caranto 译为“去乞食”，bhikkhaṃ 译为“食物”。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -37924,13 +36464,7 @@
       }
     ],
     "translation_note": [
-      "直译保持原文结构，'pi' 译为 '也'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "直译保持原文结构，'pi' 译为 '也'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -38005,13 +36539,7 @@
     ],
     "translation_note": [
       "'Asite pīte khāyite sāyite' 为四个过去分词，分别对应食、饮、嚼、尝。",
-      "'aṭṭhavidho attho' 译为 '八种利益'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.2857142857142856,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "'aṭṭhavidho attho' 译为 '八种利益'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -38049,13 +36577,7 @@
     ],
     "translation_note": [
       "'davāya' 译为 '游戏'，'madāya' 译为 '陶醉'，'maṇḍanāya' 译为 '装饰'，'vibhūsanāya' 译为 '庄严'。",
-      "'āhāraṃ āhāreti' 译为 '取食'，其中 'āhāra' 按术语表译为 '食'。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.9,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "'āhāraṃ āhāreti' 译为 '取食'，其中 'āhāra' 按术语表译为 '食'。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -38091,14 +36613,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.8333333333333333,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -38385,14 +36900,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.125,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -38499,14 +37007,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.6666666666666667,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -38577,14 +37078,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.142857142857143,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -38655,14 +37149,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -39237,14 +37724,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.25,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -39423,14 +37903,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -40581,14 +39054,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.1666666666666665,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -40839,14 +39305,7 @@
         "reason": "由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。"
       }
     ],
-    "translation_note": [
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.5714285714285714,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
-    ],
+    "translation_note": [],
     "needs_review": true,
     "review_reason": [
       "DeepSeek-V4-Flash 模型初稿；需人工核对 OCR、句界、术语、专名、数字和译文完整性。",
@@ -40883,13 +39342,7 @@
     ],
     "translation_note": [
       "‘satto’为‘satta’（有情）的误拼，此处按‘satta’理解。",
-      "‘vicikicchato’为现在分词，表‘犹豫者’。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.625,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘vicikicchato’为现在分词，表‘犹豫者’。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -40963,13 +39416,7 @@
       }
     ],
     "translation_note": [
-      "‘issā’译为‘嫉妒’，符合术语表。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.875,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘issā’译为‘嫉妒’，符合术语表。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -41619,13 +40066,7 @@
     ],
     "translation_note": [
       "‘samā’为‘相等’之意。",
-      "‘saṃyojitā’为‘结合’之意。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "‘saṃyojitā’为‘结合’之意。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -41951,13 +40392,7 @@
     ],
     "translation_note": [
       "cāgaṃ 译为“舍离”，指布施中的舍弃。",
-      "paccavekkhantassa 为现在分词，表“回顾”之义。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "paccavekkhantassa 为现在分词，表“回顾”之义。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -42931,13 +41366,7 @@
     ],
     "translation_note": [
       "ekāyano 译为“唯一的”，强调此道独一。",
-      "visuddhiyā 为与格，表目的。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 2.0,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "visuddhiyā 为与格，表目的。"
     ],
     "needs_review": true,
     "review_reason": [
@@ -43227,13 +41656,7 @@
     ],
     "translation_note": [
       "yo koci 译为“无论任何”，表示不定。",
-      "bhāveyya 为祈愿语气，表“修习”之义。",
-      {
-        "type": "ratio_rewrite",
-        "old_ratio": 1.4615384615384615,
-        "threshold": 2.33,
-        "reason": "pt1 记录的中文汉字/巴利语词数低于统一参考比例。"
-      }
+      "bhāveyya 为祈愿语气，表“修习”之义。"
     ],
     "needs_review": true,
     "review_reason": [
