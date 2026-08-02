@@ -935,36 +935,90 @@ a:hover { text-decoration: underline; }
 .dhamma-hit-nav { display: flex; gap: 6px; align-items: center; }
 .dhamma-hit-counter { font-size: 0.82em; color: var(--text-light); padding: 0 4px; white-space: nowrap; }
 
-/* Site-wide search */
-.site-search-bar { display: flex; gap: 8px; margin-bottom: 16px; }
-.site-search-input, .home-search-input {
-  flex: 1; min-width: 0; padding: 10px 12px; font-size: 1em;
-  border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text);
-}
-.site-search-input:focus, .home-search-input:focus { outline: none; border-color: var(--accent); }
-.home-search { display: flex; gap: 8px; margin-bottom: 22px; }
-/* Every hit in the document is marked in the dim tone; the one currently
- * navigated to gets the bright tone plus scroll-margin so it doesn't land
- * flush against the viewport top. Mirrors the dhamma reader deliberately. */
+/* Site-wide search - built from the same tokens as the community pages so
+ * the search box, buttons and result cards read as one interface. */
+.site-search-bar { display: flex; gap: 10px; margin-bottom: 18px; }
+.home-search { display: flex; gap: 10px; margin-bottom: 22px; }
+/* .community-search carries flex:1 1 240px for the community list pages.
+ * That basis is fine along a row, but these bars turn into a column on
+ * narrow screens, where flex-basis applies to *height* and stretches the
+ * input into a huge pill. Pin it to its natural height in both directions. */
+.site-search-bar .community-search, .home-search .community-search { flex: 1 1 auto; min-width: 0; }
+/* Hit highlighting inside a reader. Every hit is marked in the dim tone; the
+ * one being navigated to gets the bright tone plus scroll-margin so it never
+ * lands under the sticky bars. Matches the dhamma reader deliberately. */
 .md-reader mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
 .md-reader mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
 .search-hit-bar {
   position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 8px;
-  align-items: center; padding: 8px 10px; margin-bottom: 12px;
-  background: #fdf6e3; border: 1px solid var(--border); border-radius: 6px;
+  align-items: center; padding: 9px 14px; margin-bottom: 14px;
+  background: var(--accent-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .search-hit-bar button {
-  padding: 4px 10px; font-size: 0.82em; cursor: pointer;
-  border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text);
+  padding: 5px 14px; font-size: 0.82em; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: var(--card-bg); color: var(--text); transition: all 0.2s;
 }
-.search-hit-bar button:hover { border-color: var(--accent); color: var(--accent); }
+.search-hit-bar button:hover { border-color: var(--accent-light); color: var(--accent); background: var(--hover-bg); }
 .search-hit-term { font-weight: 700; color: var(--accent); }
 .search-hit-counter { font-size: 0.82em; color: var(--text-light); white-space: nowrap; }
+
+/* AI synthesis over search results - opt in, never automatic */
+.search-synth-cta {
+  display: flex; gap: 12px; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; padding: 14px 16px; margin-bottom: 18px;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--accent-bg);
+}
+.search-synth-cta .meta { display: block; color: var(--text-light); font-size: 0.84em; margin-top: 4px; line-height: 1.6; }
+.search-synth-panel {
+  padding: 16px 18px; margin-bottom: 20px;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--card-bg); box-shadow: var(--shadow);
+}
+.search-synth-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; margin-bottom: 12px; }
+.search-synth-head strong { color: var(--accent); }
+.search-synth-head .meta { color: var(--text-light); font-size: 0.82em; }
+.search-synth-warn {
+  padding: 9px 12px; margin: 0 0 12px; border-radius: 8px;
+  background: #fdf0c8; color: #7a5c00; font-size: 0.86em; line-height: 1.7;
+}
+/* .md-reader is reused here for its typography, but its page-reader
+ * max-width + auto margins would centre the answer inside the panel and
+ * leave a lopsided gutter. Inside the panel the panel sets the measure. */
+.search-synth-answer { font-size: 0.98em; max-width: none; margin: 0; }
+.search-synth-answer h2 { font-size: 1.1em; margin: 20px 0 8px; color: var(--accent); }
+.search-synth-answer h3 { font-size: 0.98em; margin: 14px 0 6px; }
+.search-synth-answer > :first-child { margin-top: 0; }
+a.cite {
+  display: inline-block; padding: 0 6px; margin: 0 2px; border-radius: 999px;
+  background: var(--accent-bg); border: 1px solid var(--border);
+  color: var(--accent); font-size: 0.76em; font-weight: 700;
+  text-decoration: none; vertical-align: 1px; transition: all 0.15s;
+}
+a.cite:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cite-bad { color: #a33b2e; font-weight: 700; }
+.search-synth-ev { margin-top: 16px; border-top: 1px solid var(--border); }
+.search-synth-ev summary { cursor: pointer; color: var(--accent); font-size: 0.88em; font-weight: 600; padding: 10px 0 6px; }
+.search-ev-list { list-style: none; margin: 4px 0 0; padding: 0; }
+.search-ev-list li { display: flex; gap: 10px; padding: 11px 0; border-top: 1px solid var(--border); scroll-margin-top: 80px; }
+.search-ev-list li:first-child { border-top: none; }
+.search-ev-list .ev-num { color: var(--accent); font-weight: 700; font-size: 0.82em; white-space: nowrap; padding-top: 1px; }
+.search-ev-list .ev-src { font-size: 0.86em; font-weight: 600; }
+.search-ev-list .ev-src a { color: var(--accent); text-decoration: none; }
+.search-ev-list .ev-src a:hover { text-decoration: underline; }
+.search-ev-list .ev-text { margin: 5px 0 0; font-size: 0.88em; color: var(--text-light); line-height: 1.8; }
+@keyframes evFlash { from { background: #fce9a8; } to { background: transparent; } }
+.search-ev-list li.ev-flash { animation: evFlash 1.5s ease-out; }
+.search-synth-foot { margin: 14px 0 0; color: var(--text-light); font-size: 0.8em; line-height: 1.6; }
 
 /* Mobile */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
   .site-search-bar, .home-search { flex-direction: column; }
+  .site-search-bar .community-search, .home-search .community-search { flex: 0 0 auto; width: 100%; }
+  .search-synth-cta { flex-direction: column; align-items: stretch; }
   .side-by-side { grid-template-columns: 1fr; }
   .toolbar { padding: 8px 10px; gap: 6px; }
   .tb-btn { padding: 4px 8px; font-size: 0.75em; }
@@ -1404,7 +1458,9 @@ function searchScanBlocks(blocks, needle) {
     const nt = searchNormalize(text);
     let i = nt.indexOf(needle);
     while (i !== -1) {
-      hits.push({ off: i, text, heading: blocks[bi].h, head: !!blocks[bi].head });
+      // bi is kept so evidence extraction can pull the neighbouring blocks
+      // for context - a matched line alone is often too short to reason from.
+      hits.push({ bi, off: i, text, heading: blocks[bi].h, head: !!blocks[bi].head });
       if (hits.length >= SEARCH_MAX_HITS_PER_DOC) return { hits, truncated: true };
       i = nt.indexOf(needle, i + needle.length);
     }
@@ -1450,6 +1506,83 @@ function searchHitHref(doc, hit, term, len) {
 }
 
 let searchSeq = 0;
+// What the last completed search found, kept so the AI synthesis can rank
+// and quote it without re-scanning the corpus.
+let searchLastRun = null;
+
+// --- ranking + evidence extraction (the retrieval half of the synthesis) ---
+
+const SEARCH_EVIDENCE_MAX = 18;
+const SEARCH_EVIDENCE_PER_DOC = 3;
+const SEARCH_EVIDENCE_MIN_CHARS = 120;
+const SEARCH_EVIDENCE_MAX_CHARS = 560;
+
+// A hit's worth as evidence. Term frequency alone would rank a passing
+// mention level with a definition, so weight the things that actually
+// indicate the passage is *about* the query: the query appearing in the
+// heading, several occurrences in one block, and enough prose around the
+// match to stand on its own.
+function searchScoreHit(hit, needle, blocks) {
+  const nt = searchNormalize(hit.text);
+  let occurrences = 0;
+  for (let i = nt.indexOf(needle); i !== -1; i = nt.indexOf(needle, i + needle.length)) occurrences++;
+  let score = 1 + Math.min(occurrences - 1, 3) * 0.6;
+  const nh = searchNormalize(hit.heading || '');
+  if (nh.includes(needle)) score += 2.2;          // the section is on-topic
+  if (hit.head) score += 0.8;                     // the match is a heading itself
+  score += Math.min(hit.text.length / 260, 1.4);  // enough context to be quotable
+  // A match near the start of a block is usually the subject of the
+  // sentence rather than an aside.
+  if (hit.off < 40) score += 0.4;
+  return score;
+}
+
+// Widen a matched line into a self-contained passage using its neighbours.
+function searchExpandPassage(blocks, bi) {
+  let text = blocks[bi] ? blocks[bi].t : '';
+  let lo = bi, hi = bi;
+  while (text.length < SEARCH_EVIDENCE_MIN_CHARS && (lo > 0 || hi < blocks.length - 1)) {
+    if (hi < blocks.length - 1 && !blocks[hi + 1].head) { hi++; text += ' ' + blocks[hi].t; continue; }
+    if (lo > 0 && !blocks[lo - 1].head) { lo--; text = blocks[lo].t + ' ' + text; continue; }
+    break;
+  }
+  return text.length > SEARCH_EVIDENCE_MAX_CHARS ? text.slice(0, SEARCH_EVIDENCE_MAX_CHARS) + '…' : text;
+}
+
+// Rank across everything found, then cap per document. The cap is what
+// buys coverage: without it a single long file that repeats the term can
+// fill the whole evidence budget and the answer silently reflects one
+// source's view instead of the corpus's.
+function searchSelectEvidence(run) {
+  const scored = [];
+  for (const d of run.docs) {
+    const local = d.hits
+      .map(h => ({ doc: d.doc, hit: h, blocks: d.blocks, score: searchScoreHit(h, run.needle, d.blocks) }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, SEARCH_EVIDENCE_PER_DOC);
+    scored.push(...local);
+  }
+  // 经文总结 entries are short, curated descriptions - good orienting
+  // evidence, so a couple ride along rather than being crowded out.
+  const suttaEvidence = run.suttaHits.slice(0, 3).map(h => ({
+    score: 1.6,
+    source: `经文总结 · ${h.catTitle}`,
+    heading: [h.section, h.name].filter(Boolean).join(' · '),
+    text: h.text,
+    // Cited sutta evidence has to be checkable too, so carry the reader
+    // route; entries without a uid fall back to their category page.
+    _href: h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`,
+  }));
+  scored.sort((a, b) => b.score - a.score);
+  const docEvidence = scored.slice(0, SEARCH_EVIDENCE_MAX - suttaEvidence.length).map(s => ({
+    source: s.doc.title,
+    heading: s.hit.heading || '',
+    text: searchExpandPassage(s.blocks, s.hit.bi),
+    _doc: s.doc,
+    _hit: s.hit,
+  }));
+  return [...suttaEvidence, ...docEvidence];
+}
 
 async function renderSearchPage(q) {
   const mySeq = ++searchSeq;
@@ -1457,22 +1590,31 @@ async function renderSearchPage(q) {
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🔍 全站搜索</h2><div class="cat-en">Full-text search across the sutta guide and every research document</div></div>`;
   html += `<div class="site-search-bar">
-    <input id="siteSearchInput" class="site-search-input" placeholder="搜索经文总结与全部研究文稿…" value="${esc(q)}">
+    <input id="siteSearchInput" class="community-search" placeholder="搜索经文总结与全部研究文稿…" value="${esc(q)}">
     <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
   </div>`;
-  html += `<div id="searchStatus" class="dhamma-empty-note"></div><div id="searchResults"></div>`;
+  html += `<div id="searchStatus" class="dhamma-empty-note"></div>`;
+  html += `<div id="searchSynthBox"></div><div id="searchResults"></div>`;
   app.innerHTML = html;
 
   const input = document.getElementById('siteSearchInput');
   input.addEventListener('keydown', e => { if (e.key === 'Enter') siteSearchGo(); });
+  // Land in the box with the cursor after the existing query, so refining a
+  // search is just typing - no click, no re-selecting. Skipped on touch, where
+  // focusing would throw up the keyboard over the results the user came to see.
+  if (!matchMedia('(pointer: coarse)').matches) {
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  }
   const status = document.getElementById('searchStatus');
   const results = document.getElementById('searchResults');
-  if (!q) { status.textContent = '输入关键词，检索 6 部经文总结与 40 篇研究文稿的全文。'; input.focus(); return; }
+  if (!q) { status.textContent = '输入关键词，检索 6 部经文总结与 40 篇研究文稿的全文。'; return; }
 
   const needle = searchNormalize(q);
   const len = needle.length;
   let docsDone = 0, totalHits = 0, docsWithHits = 0;
   const table = searchDocTable();
+  const run = { query: q, needle, docs: [], suttaHits: [] };
   const setStatus = () => {
     status.textContent = `「${q}」— 已检索 ${docsDone}/${table.length} 篇研究文稿，命中 ${totalHits} 处（${docsWithHits} 篇）`;
   };
@@ -1480,6 +1622,7 @@ async function renderSearchPage(q) {
 
   // 经文总结 first: DATA is already in memory, so these appear instantly.
   const suttaHits = searchScanSuttas(needle);
+  run.suttaHits = suttaHits;
   if (suttaHits.length) {
     totalHits += suttaHits.length;
     const lis = suttaHits.map(h => {
@@ -1502,6 +1645,7 @@ async function renderSearchPage(q) {
     if (hits.length) {
       docsWithHits++;
       totalHits += hits.length;
+      run.docs.push({ doc, blocks, hits });
       const lis = hits.map(h => {
         const href = searchHitHref(doc, h, q, len);
         const where = h.heading && !h.head ? `<span class="meta">${esc(h.heading)}</span>` : '';
@@ -1520,6 +1664,148 @@ async function renderSearchPage(q) {
   dhammaWireLayerSections();
   if (totalHits === 0) status.textContent = `未检索到与「${q}」相关的内容。`;
   else status.textContent = `「${q}」— 共命中 ${totalHits} 处，分布在 ${docsWithHits + (suttaHits.length ? 1 : 0)} 个来源。`;
+
+  searchLastRun = totalHits ? run : null;
+  searchRenderSynthPrompt();
+}
+
+// --- AI synthesis ---
+
+// Opt-in, never automatic: a synthesis is a paid model call, so it happens
+// only when the reader asks for one. The keyword results above are complete
+// and usable on their own.
+function searchRenderSynthPrompt() {
+  const box = document.getElementById('searchSynthBox');
+  if (!box) return;
+  if (!searchLastRun) { box.innerHTML = ''; return; }
+  const n = searchSelectEvidence(searchLastRun).length;
+  box.innerHTML = `<div class="search-synth-cta">
+    <div>
+      <strong>AI 综合回答</strong>
+      <span class="meta">从上述结果中挑选 ${n} 段证据，交由 AI 归纳出直接答案、观点分组与分歧点，并逐条标注出处。</span>
+    </div>
+    <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">✨ 生成综合回答</button>
+  </div>`;
+}
+
+let searchSynthInFlight = false;
+
+async function searchRunSynthesis() {
+  if (searchSynthInFlight || !searchLastRun) return;
+  const box = document.getElementById('searchSynthBox');
+  const run = searchLastRun;
+  const evidence = searchSelectEvidence(run);
+  if (!evidence.length) return;
+
+  // Login is enforced by the endpoint too (401); this just avoids spending a
+  // round trip to be told so, and opens the site's own login modal in place
+  // rather than navigating away from the results.
+  if (!(await communityRequireLogin())) return;
+
+  searchSynthInFlight = true;
+  box.innerHTML = `<div class="search-synth-panel"><div class="loading"><div class="spinner"></div><div>正在综合 ${evidence.length} 段证据…</div></div></div>`;
+  try {
+    const res = await communityWriteFetch(`${API_BASE}/api/search/synthesize`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({
+        query: run.query,
+        passages: evidence.map(e => ({ source: e.source, heading: e.heading, text: e.text })),
+      }),
+    }, { attempts: 2, timeoutMs: 120000 });
+    if (!res.ok) {
+      let detail = '';
+      try { detail = (await res.json()).detail || ''; } catch (e) { /* non-JSON error body */ }
+      // 401 always overrides: FastAPI's own detail is the English
+      // "Not authenticated", which is not something to show a reader.
+      if (res.status === 401) detail = '登录状态已失效，请重新登录后再试。';
+      if (res.status === 402) detail = detail || '免费额度已用完。';
+      const err = new Error(detail || `综合失败（HTTP ${res.status}）`);
+      // The server's own wording is more actionable than the generic
+      // network-failure text (which quota/auth errors are not).
+      err.fromServer = true;
+      throw err;
+    }
+    const data = await res.json();
+    searchRenderSynthesis(run, evidence, data);
+  } catch (e) {
+    const msg = e && e.fromServer ? e.message : communityWriteErrorMessage(e);
+    box.innerHTML = `<div class="search-synth-panel">
+      <p class="error-msg">${esc(msg || '综合失败，请稍后再试。')}</p>
+      <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">重试</button></div>`;
+  } finally {
+    searchSynthInFlight = false;
+  }
+}
+
+function searchRenderSynthesis(run, evidence, data) {
+  const box = document.getElementById('searchSynthBox');
+  const cit = data.citations || {};
+  // Citations are rendered as links into the passage list below, and each
+  // passage links on into the document with the term highlighted - so every
+  // claim can be checked against the text it came from in two clicks.
+  const answerHtml = mdToHtml(data.answer || '').replace(/\[(\d{1,3})\]/g, (m, n) => {
+    const i = parseInt(n, 10);
+    if (!(i >= 1 && i <= evidence.length)) return `<span class="cite-bad" title="引用了不存在的证据编号">[${n}]</span>`;
+    return `<a class="cite" href="#" onclick="searchJumpToEvidence(${i});return false">[${n}]</a>`;
+  });
+
+  const warn = (cit.invalid_indices && cit.invalid_indices.length)
+    ? `<p class="search-synth-warn">⚠ 回答中出现了 ${cit.invalid_indices.length} 个不存在的引用编号（${cit.invalid_indices.join('、')}），这部分内容缺乏证据支持，请以下方原文为准。</p>`
+    : '';
+
+  const items = evidence.map((e, idx) => {
+    const i = idx + 1;
+    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e._href || null);
+    const title = `${esc(e.source)}${e.heading ? ' · ' + esc(e.heading) : ''}`;
+    const link = href ? `<a href="${href}">${title} →</a>` : title;
+    return `<li id="search-ev-${i}"><span class="ev-num">[${i}]</span><div><div class="ev-src">${link}</div><p class="ev-text">${esc(e.text)}</p></div></li>`;
+  }).join('');
+
+  box.innerHTML = `<div class="search-synth-panel">
+    <div class="search-synth-head">
+      <strong>✨ AI 综合回答</strong>
+      <span class="meta">「${esc(run.query)}」 · 引用 ${cit.cited_count || 0}/${evidence.length} 段证据 · ${data.total_tokens || 0} tokens${
+        data.provider_type === 'custom' ? ' · 使用你自己的 API' : ` · 本次花费 ${(data.charged_rmb || 0).toFixed(4)} 元`}</span>
+    </div>
+    ${warn}
+    <div class="md-reader search-synth-answer">${answerHtml}</div>
+    <details class="search-synth-ev" open>
+      <summary>证据原文（${evidence.length} 段，点击标题跳转到原文并高亮）</summary>
+      <ol class="search-ev-list">${items}</ol>
+    </details>
+    <p class="search-synth-foot">回答仅依据上列证据生成，不代表资料库之外的观点。请以原文为准。</p>
+  </div>`;
+}
+
+// Scroll an element to the middle of the viewport, animating when the engine
+// actually will. Smooth scrolling silently does nothing in some engines, and
+// gives up outright over the distances these documents reach (40000px), so
+// this checks whether anything moved and falls back to an instant jump.
+// Landing on the target matters more than animating to it.
+function searchScrollIntoView(el) {
+  const before = window.scrollY;
+  const far = Math.abs(el.getBoundingClientRect().top - window.innerHeight / 2) > 2000;
+  el.scrollIntoView({ behavior: far ? 'auto' : 'smooth', block: 'center' });
+  if (far) return;
+  setTimeout(() => {
+    if (Math.abs(window.scrollY - before) >= 4) return;   // it animated, leave it
+    const r = el.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > window.innerHeight) el.scrollIntoView({ behavior: 'auto', block: 'center' });
+  }, 260);
+}
+
+function searchJumpToEvidence(i) {
+  const el = document.getElementById(`search-ev-${i}`);
+  if (!el) return;
+  const det = el.closest('details');
+  if (det) det.open = true;
+  // Restart the flash first: the forced reflow it needs cancels an
+  // already-running smooth scroll, so the scroll has to come last.
+  el.classList.remove('ev-flash');
+  void el.offsetWidth;
+  el.classList.add('ev-flash');
+  searchScrollIntoView(el);
 }
 
 function siteSearchGo() {
@@ -1637,12 +1923,7 @@ function searchInstallHitNav(roots, term, current) {
     idx = (idx + ms.length) % ms.length;
     ms.forEach((m, i) => m.classList.toggle('active', i === idx));
     bar.querySelector('.search-hit-counter').textContent = `${idx + 1} / ${ms.length}`;
-    if (!scroll) return;
-    // Smooth scrolling silently gives up over long distances - these documents
-    // run to 40000px, so arriving from a search result would leave the page
-    // sitting at the top with the hit far below. Animate only short hops.
-    const dist = Math.abs(ms[idx].getBoundingClientRect().top - window.innerHeight / 2);
-    ms[idx].scrollIntoView({ behavior: dist > 2000 ? 'auto' : 'smooth', block: 'center' });
+    if (scroll) searchScrollIntoView(ms[idx]);
   };
 
   bar.addEventListener('click', e => {
@@ -1697,7 +1978,7 @@ function searchApplyPendingHighlight() {
 function renderHome() {
   const cats = DATA.categories;
   let html = `<div class="home-search">
-    <input id="homeSearchInput" class="home-search-input" placeholder="🔍 搜索经文总结与全部研究文稿…" onkeydown="if(event.key==='Enter') siteSearchGo()">
+    <input id="homeSearchInput" class="community-search" placeholder="🔍 搜索经文总结与全部研究文稿…" onkeydown="if(event.key==='Enter') siteSearchGo()">
     <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
   </div>`;
   html += `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
