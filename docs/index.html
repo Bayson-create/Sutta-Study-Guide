@@ -760,6 +760,8 @@ a:hover { text-decoration: underline; }
 .papanca-zh { line-height: 2; font-size: 1.02em; color: var(--text); overflow-wrap: break-word; word-break: break-word; }
 .papanca-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 4px; padding: 4px 10px; background: var(--accent-bg); border-radius: 4px; }
 .papanca-sutta-marker { margin: 18px 0 8px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--accent-bg); color: var(--accent); font-weight: 600; }
+.papanca-sutta-marker-link { color: inherit; text-decoration: none; border-bottom: 1px dashed currentColor; }
+.papanca-sutta-marker-link:hover, .papanca-sutta-marker-link:focus-visible { text-decoration: underline; }
 .papanca-pali-term { font-weight: 600; font-style: italic; color: var(--accent); font-size: 0.95em; }
 .papanca-term-note { font-size: 0.9em; line-height: 1.6; color: var(--text-light); }
 
@@ -1731,7 +1733,14 @@ function formatPapancaNote(note) {
 function renderPapancaSuttaMarker(context) {
   if (!context || !context.is_new_sutta_start) return '';
   const name = context.sutta_name_pali_ocr || context.commentary_section_raw || '新经文';
-  return `<div class="papanca-sutta-marker">📖 新经文注释开始：${esc(name)}</div>`;
+  const uids = Array.isArray(context.suttacentral_uids) ? context.suttacentral_uids : [];
+  if (!uids.length) return `<div class="papanca-sutta-marker">📖 新经文注释开始：${esc(name)}</div>`;
+  const pieces = name.split(/\s*\/\s*/);
+  const linkedName = (pieces.length === uids.length ? pieces : [name]).map((piece, index) => {
+    const uid = uids[Math.min(index, uids.length - 1)];
+    return `<a class="papanca-sutta-marker-link" href="#/read/${uid}?en_author=sujato&zh_author=zhuang">${esc(piece)}</a>`;
+  }).join(' / ');
+  return `<div class="papanca-sutta-marker" data-sutta-context="${esc(context.context_id || '')}">📖 新经文注释开始：${linkedName}</div>`;
 }
 async function renderPapancasudaniPart1() {
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
