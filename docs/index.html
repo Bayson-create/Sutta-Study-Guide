@@ -935,9 +935,36 @@ a:hover { text-decoration: underline; }
 .dhamma-hit-nav { display: flex; gap: 6px; align-items: center; }
 .dhamma-hit-counter { font-size: 0.82em; color: var(--text-light); padding: 0 4px; white-space: nowrap; }
 
+/* Site-wide search */
+.site-search-bar { display: flex; gap: 8px; margin-bottom: 16px; }
+.site-search-input, .home-search-input {
+  flex: 1; min-width: 0; padding: 10px 12px; font-size: 1em;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text);
+}
+.site-search-input:focus, .home-search-input:focus { outline: none; border-color: var(--accent); }
+.home-search { display: flex; gap: 8px; margin-bottom: 22px; }
+/* Every hit in the document is marked in the dim tone; the one currently
+ * navigated to gets the bright tone plus scroll-margin so it doesn't land
+ * flush against the viewport top. Mirrors the dhamma reader deliberately. */
+.md-reader mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
+.md-reader mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
+.search-hit-bar {
+  position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 8px;
+  align-items: center; padding: 8px 10px; margin-bottom: 12px;
+  background: #fdf6e3; border: 1px solid var(--border); border-radius: 6px;
+}
+.search-hit-bar button {
+  padding: 4px 10px; font-size: 0.82em; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text);
+}
+.search-hit-bar button:hover { border-color: var(--accent); color: var(--accent); }
+.search-hit-term { font-weight: 700; color: var(--accent); }
+.search-hit-counter { font-size: 0.82em; color: var(--text-light); white-space: nowrap; }
+
 /* Mobile */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
+  .site-search-bar, .home-search { flex-direction: column; }
   .side-by-side { grid-template-columns: 1fr; }
   .toolbar { padding: 8px 10px; gap: 6px; }
   .tb-btn { padding: 4px 8px; font-size: 0.75em; }
@@ -999,6 +1026,10 @@ const API_BASE = location.hostname === 'localhost' || location.hostname === '127
 
 // State
 let DATA = null;
+// Set by route() from ?hl=/?anc=, consumed by whichever md reader renders
+// next. Declared up here so route() never touches it in its temporal dead
+// zone, whatever order the sections below happen to be in.
+let searchPendingHighlight = null;
 let useTraditional = false;
 let showPali = true;
 let readerMode = 'trilingual';
@@ -1071,16 +1102,25 @@ document.addEventListener('visibilitychange', () => {
 
 // Router
 function route() {
-  const hash = location.hash || '#/';
+  const rawHash = location.hash || '#/';
+  // One query-string parse for every route. Search-result links append
+  // ?hl=/?anc= (what to highlight and where) and ?tab= (which tab of a
+  // multi-file reader to open) to routes that previously never carried a
+  // query, so splitting the path off once here keeps every `hash === '#/x'`
+  // comparison below matching when a query is present.
+  const qIdx = rawHash.indexOf('?');
+  const hash = qIdx === -1 ? rawHash : rawHash.slice(0, qIdx);
+  const routeParams = new URLSearchParams(qIdx === -1 ? '' : rawHash.slice(qIdx + 1));
+  // Consumed by whichever reader renders next - see searchApplyPendingHighlight.
+  searchPendingHighlight = routeParams.get('hl')
+    ? { term: routeParams.get('hl'), anchor: routeParams.get('anc') || '' }
+    : null;
   // Pages that want the backend kept awake restart this themselves; every
   // other navigation should stop paying for pings it doesn't need.
   communityKeepWarmStop();
   app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
   if (hash.startsWith('#/read/')) {
-    const rest = hash.slice(7);
-    const [uid, query] = rest.split('?');
-    const params = new URLSearchParams(query || '');
-    renderReader(uid, params.get('en_author') || 'sujato', params.get('zh_author') || 'zhuang');
+    renderReader(hash.slice(7), routeParams.get('en_author') || 'sujato', routeParams.get('zh_author') || 'zhuang');
   } else if (hash.startsWith('#/category/')) {
     const key = hash.slice(11);
     renderCategory(key);
@@ -1093,7 +1133,7 @@ function route() {
   } else if (hash === '#/research/buddhist-systems-comparison/lamrim') {
     renderLamrimAbridged();
   } else if (hash === '#/research/buddhist-systems-comparison/theravada-mahayana') {
-    renderTheravadaMahayana();
+    renderTheravadaMahayana(routeParams.get('tab'));
   } else if (hash === '#/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha') {
     renderBuddhaghosaTsongkhapaAtisha();
   } else if (hash === '#/research/pali-source-texts') {
@@ -1131,7 +1171,7 @@ function route() {
   } else if (hash === '#/research/dharma-protectors') {
     renderResearchDharmaProtectors();
   } else if (hash === '#/research/two-religions') {
-    renderResearchTwoReligions();
+    renderResearchTwoReligions(routeParams.get('tab'));
   } else if (hash === '#/research/contemporary-buddhism') {
     renderResearchContemporaryBuddhism();
   } else if (hash === '#/research/contemporary-views') {
@@ -1139,13 +1179,13 @@ function route() {
   } else if (hash === '#/research/psychology') {
     renderResearchPsychologyHome();
   } else if (hash === '#/research/psychology/adler') {
-    renderPsychAdler();
+    renderPsychAdler(routeParams.get('tab'));
   } else if (hash === '#/research/psychology/questions') {
     renderPsychQuestions();
   } else if (hash === '#/research/psychology/bicameral') {
     renderPsychBicameral();
   } else if (hash === '#/research/psychology/carnegie') {
-    renderPsychCarnegie();
+    renderPsychCarnegie(routeParams.get('tab'));
   } else if (hash === '#/research/forest-monks') {
     renderForestMonksHome();
   } else if (hash.startsWith('#/research/forest-monks/')) {
@@ -1167,9 +1207,8 @@ function route() {
   } else if (hash === '#/research/vism/summary') {
     renderVismSummary();
   } else if (hash.startsWith('#/research/vism/read/')) {
-    const rest = hash.slice('#/research/vism/read/'.length);
-    const [idPart, query] = rest.split('?');
-    const secParam = new URLSearchParams(query || '').get('sec');
+    const idPart = hash.slice('#/research/vism/read/'.length);
+    const secParam = routeParams.get('sec');
     renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
   } else if (hash === '#/qa') {
     renderQAHome();
@@ -1183,9 +1222,8 @@ function route() {
     renderForumEditor(hash.slice('#/forum/edit/'.length));
   } else if (hash.startsWith('#/forum/')) {
     renderForumDetail(hash.slice('#/forum/'.length));
-  } else if (hash === '#/blog' || hash.startsWith('#/blog?')) {
-    const bp = new URLSearchParams(hash.includes('?') ? hash.slice(hash.indexOf('?') + 1) : '');
-    renderBlogHome(bp.get('q') || '', bp.getAll('tag'));
+  } else if (hash === '#/blog') {
+    renderBlogHome(routeParams.get('q') || '', routeParams.getAll('tag'));
   } else if (hash === '#/blog/new') {
     renderBlogEditor(null);
   } else if (hash.startsWith('#/blog/edit/')) {
@@ -1195,9 +1233,8 @@ function route() {
   } else if (hash === '#/profile') {
     renderProfile();
   } else if (hash.startsWith('#/dhamma/read/')) {
-    const rest = hash.slice('#/dhamma/read/'.length);
-    const [id, query] = rest.split('?');
-    const p = new URLSearchParams(query || '');
+    const id = hash.slice('#/dhamma/read/'.length);
+    const p = routeParams;
     const off = p.has('off') ? parseInt(p.get('off'), 10) : null;
     const len = p.has('len') ? parseInt(p.get('len'), 10) : 1;
     // offs/lens (comma-separated) carry every hit position within this doc
@@ -1212,10 +1249,14 @@ function route() {
     renderGotamaChat(hash.slice('#/gotama/'.length));
   } else if (hash === '#/gotama') {
     renderGotamaChat(null);
+  } else if (hash === '#/search') {
+    renderSearchPage(routeParams.get('q') || '');
   } else {
     renderHome();
   }
   window.scrollTo(0, 0);
+  // After the scroll reset, so the hit's own scrollIntoView wins.
+  searchApplyPendingHighlight();
 }
 window.addEventListener('hashchange', route);
 
@@ -1231,10 +1272,435 @@ function findSutta(uid) {
   return null;
 }
 
+// ============================================================
+// SITE-WIDE SEARCH (全站搜索)
+// ============================================================
+// Two corpora, merged into one result view:
+//   - the 6 经文总结 in suttas.json, already in memory as DATA (51K chars)
+//   - the 40 research .md files under docs/research/
+//
+// The .md are fetched live instead of being searched through a generated
+// index. Measured: the corpus is 1085 KB gzipped and a prebuilt index of it
+// came to 1072 KB - the same bytes - while adding a build step this repo has
+// no CI to run, and going stale the moment a .md changes. Fetching the real
+// files keeps results identical to what is actually on GitHub, and shares
+// the readers' own HTTP cache. A bigram inverted index was measured too and
+// was *larger* than the corpus (2362 KB), so matching is a plain scan: ~1M
+// chars of indexOf is a few ms.
+
+const SEARCH_SNIPPET_RADIUS = 42;
+const SEARCH_ANCHOR_LEN = 24;
+const SEARCH_MAX_HITS_PER_DOC = 40;
+
+// The 15 .md that each own a whole route. The other 25 are derived from the
+// same arrays the readers use, so the table can't drift from reality.
+const SEARCH_SINGLE_DOCS = [
+  ['research/buddhist-concepts.md', '#/research/concepts', '佛学核心概念', '研究成果'],
+  ['research/theravada-mahayana-history.md', '#/research/theravada-mahayana', '上座部与大乘的历史', '研究成果'],
+  ['research/dharma-protectors-manifesto.md', '#/research/dharma-protectors', '护法宣言', '研究成果'],
+  ['research/contemporary-buddhism-reflections.md', '#/research/contemporary-buddhism', '当代佛教体系反思', '研究成果'],
+  ['research/contemporary-views-comparison.md', '#/research/contemporary-views', '当代观点对比', '研究成果'],
+  ['research/buddhist-trends.md', '#/research/buddhist-trends', '佛教思潮', '研究成果'],
+  ['research/psychology/critical-thinking-questions.md', '#/research/psychology/questions', '学会提问', '心理学与成功学'],
+  ['research/psychology/bicameral-mind-origin.md', '#/research/psychology/bicameral', '二分心智的起源', '心理学与成功学'],
+  ['research/vism-data/vism-summary.md', '#/research/vism/summary', '清净道论总结', '清净道论'],
+  ['research/buddhist-systems-comparison/overview.md', '#/research/buddhist-systems-comparison/abhidhamma', '三家法体系对应 · 综述', '佛教体系对应研究'],
+  ['research/buddhist-systems-comparison/matrix.md', '#/research/buddhist-systems-comparison/abhidhamma', '三家法体系对应 · 矩阵', '佛教体系对应研究'],
+  ['research/buddhist-systems-comparison/lamrim-abridged-summary.md', '#/research/buddhist-systems-comparison/lamrim', '菩提道次第与上座部对话', '佛教体系对应研究'],
+  ['research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md', '#/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha', '觉音·宗喀巴·阿底峡 文献', '佛教体系对应研究'],
+  ['research/pali-source-texts/vinaya/sutta-vibhanga.md', '#/research/pali-source-texts/vinaya/sutta-vibhanga', '巴利律藏《经分别》', '原始佛教文献'],
+  ['research/pali-source-texts/vinaya/samantapasadika.md', '#/research/pali-source-texts/vinaya/samantapasadika', '《善见律毗婆沙》', '原始佛教文献'],
+];
+
+function searchDocTable() {
+  const t = [];
+  const add = (file, route, title, group) => { if (file) t.push({ file, route, title, group }); };
+  for (const [file, route, title, group] of SEARCH_SINGLE_DOCS) add(file, route, title, group);
+  const name = m => m.title || m.label || m.key;
+  FOREST_MONKS.forEach(m => add(m.file, `#/research/forest-monks/${m.key}`, name(m), '森林比丘'));
+  FOREST_DHAMMA_WORKS.forEach(m => add(m.file, `#/research/forest-monks/${m.key}`, name(m), '森林比丘'));
+  THERAVADA_MODERN_WORKS.forEach(m => add(m.file, `#/research/theravada-modern/${m.key}`, name(m), '现代上座部'));
+  GREAT_CHRONICLES_WORKS.forEach(m => add(m.file, `#/research/great-chronicles/${m.key}`, name(m), '大佛史'));
+  // These four render several files behind one route with the active tab in
+  // a module variable, so their links carry ?tab= and the readers below read
+  // it back - without that, 10 of the 40 documents are simply unreachable.
+  TWO_RELIGIONS_TABS.forEach(m => add(m.file, `#/research/two-religions?tab=${m.key}`, name(m), '上座部与两大宗教'));
+  THERAVADA_MAHAYANA_TABS.forEach(m => add(m.file, `#/research/buddhist-systems-comparison/theravada-mahayana?tab=${m.key}`, name(m), '上座部与大乘'));
+  PSYCH_ADLER_TABS.forEach(m => add(m.file, `#/research/psychology/adler?tab=${m.key}`, name(m), '阿德勒'));
+  PSYCH_CARNEGIE_TABS.forEach(m => add(m.file, `#/research/psychology/carnegie?tab=${m.key}`, name(m), '卡耐基'));
+  return t;
+}
+
+// Fold simplified/traditional to one canonical form. Both maps are strictly
+// per-character, so offsets survive the fold and can be used to index back
+// into the original text.
+function searchNormalize(s) { return toTraditional(toSimplified(s || '')); }
+
+function searchStripInline(s) {
+  return s
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+    .replace(/\[\^[\w-]+\]/g, '')
+    .replace(/\[\[([^\]]*)\]\]/g, '$1')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/<[^>]+>/g, '')
+    .replace(/[*_`~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Split markdown into the same visible text blocks the readers end up
+// showing, each tagged with the heading it sits under.
+function searchParseMd(md) {
+  if (md.startsWith('---')) {
+    const end = md.indexOf('\n---\n', 3);
+    if (end !== -1) md = md.slice(end + 5);
+  }
+  const blocks = [];
+  let heading = '';
+  let inFence = false;
+  for (const raw of md.split('\n')) {
+    const line = raw.trim();
+    if (line.startsWith('```')) { inFence = !inFence; continue; }
+    if (!line) continue;
+    if (!inFence) {
+      const h = line.match(/^(#{1,6})\s+(.+)$/);
+      if (h) {
+        heading = searchStripInline(h[2]);
+        if (heading) blocks.push({ t: heading, h: heading, head: true });
+        continue;
+      }
+      if (/^\|[\s:|-]+\|$/.test(line)) continue;   // table delimiter row
+      if (/^([-*_])\1{2,}$/.test(line)) continue;  // horizontal rule
+    }
+    let t = line;
+    if (t.startsWith('|')) t = t.replace(/^\||\|$/g, '').split('|').map(c => c.trim()).filter(Boolean).join('  ');
+    t = t.replace(/^[-*+]\s+/, '').replace(/^\d+[.)]\s+/, '').replace(/^>\s?/, '');
+    t = searchStripInline(t);
+    if (t) blocks.push({ t, h: heading });
+  }
+  return blocks;
+}
+
+const searchMdCache = new Map();   // file -> parsed blocks, for the session
+
+async function searchFetchDoc(doc) {
+  let blocks = searchMdCache.get(doc.file);
+  if (blocks) return blocks;
+  try {
+    const res = await fetch(doc.file);
+    if (!res.ok) throw new Error(res.status);
+    blocks = searchParseMd(await res.text());
+  } catch (e) {
+    blocks = [];
+  }
+  searchMdCache.set(doc.file, blocks);
+  return blocks;
+}
+
+function searchScanBlocks(blocks, needle) {
+  const hits = [];
+  for (let bi = 0; bi < blocks.length; bi++) {
+    const text = blocks[bi].t;
+    const nt = searchNormalize(text);
+    let i = nt.indexOf(needle);
+    while (i !== -1) {
+      hits.push({ off: i, text, heading: blocks[bi].h, head: !!blocks[bi].head });
+      if (hits.length >= SEARCH_MAX_HITS_PER_DOC) return { hits, truncated: true };
+      i = nt.indexOf(needle, i + needle.length);
+    }
+  }
+  return { hits, truncated: false };
+}
+
+function searchScanSuttas(needle) {
+  const out = [];
+  if (!DATA || !DATA.categories) return out;
+  for (const [catKey, cat] of Object.entries(DATA.categories)) {
+    for (const sec of cat.sections) {
+      for (const s of sec.suttas) {
+        const text = [s.name, s.focus, s.summary].filter(Boolean).join(' · ');
+        const i = searchNormalize(text).indexOf(needle);
+        if (i === -1) continue;
+        out.push({
+          text, off: i, catKey, catTitle: cat.title,
+          section: sec.title || '', name: s.name || '', uid: s.uid || '',
+        });
+      }
+    }
+  }
+  return out;
+}
+
+// Snippet with the match marked using sentinels, so escaping happens before
+// any tag is introduced.
+function searchSnippetHtml(text, off, len) {
+  const s = Math.max(0, off - SEARCH_SNIPPET_RADIUS);
+  const e = Math.min(text.length, off + len + SEARCH_SNIPPET_RADIUS);
+  return (s > 0 ? '\u2026' : '')
+    + esc(text.slice(s, off))
+    + '<mark>' + esc(text.slice(off, off + len)) + '</mark>'
+    + esc(text.slice(off + len, e))
+    + (e < text.length ? '\u2026' : '');
+}
+
+function searchHitHref(doc, hit, term, len) {
+  const anchor = hit.text.slice(hit.off, hit.off + Math.max(len, SEARCH_ANCHOR_LEN));
+  const sep = doc.route.includes('?') ? '&' : '?';
+  return `${doc.route}${sep}hl=${encodeURIComponent(term)}&anc=${encodeURIComponent(anchor)}`;
+}
+
+let searchSeq = 0;
+
+async function renderSearchPage(q) {
+  const mySeq = ++searchSeq;
+  q = (q || '').trim();
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>🔍 全站搜索</h2><div class="cat-en">Full-text search across the sutta guide and every research document</div></div>`;
+  html += `<div class="site-search-bar">
+    <input id="siteSearchInput" class="site-search-input" placeholder="搜索经文总结与全部研究文稿…" value="${esc(q)}">
+    <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
+  </div>`;
+  html += `<div id="searchStatus" class="dhamma-empty-note"></div><div id="searchResults"></div>`;
+  app.innerHTML = html;
+
+  const input = document.getElementById('siteSearchInput');
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') siteSearchGo(); });
+  const status = document.getElementById('searchStatus');
+  const results = document.getElementById('searchResults');
+  if (!q) { status.textContent = '输入关键词，检索 6 部经文总结与 40 篇研究文稿的全文。'; input.focus(); return; }
+
+  const needle = searchNormalize(q);
+  const len = needle.length;
+  let docsDone = 0, totalHits = 0, docsWithHits = 0;
+  const table = searchDocTable();
+  const setStatus = () => {
+    status.textContent = `「${q}」— 已检索 ${docsDone}/${table.length} 篇研究文稿，命中 ${totalHits} 处（${docsWithHits} 篇）`;
+  };
+  setStatus();
+
+  // 经文总结 first: DATA is already in memory, so these appear instantly.
+  const suttaHits = searchScanSuttas(needle);
+  if (suttaHits.length) {
+    totalHits += suttaHits.length;
+    const lis = suttaHits.map(h => {
+      const href = h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`;
+      return `<li><a class="title" href="${href}">${esc(h.name || h.uid)}</a><span class="meta">${esc(h.catTitle)}${h.section ? ' · ' + esc(h.section) : ''}</span><p class="snippet">${searchSnippetHtml(h.text, h.off, len)}</p></li>`;
+    });
+    results.insertAdjacentHTML('beforeend',
+      `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>经文总结</span><span class="count">${suttaHits.length} 处</span></div>` +
+      `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '处')}</ul></div></div>`);
+    setStatus();
+  }
+
+  // Research documents stream in as each file lands, so the first hits show
+  // in a couple of hundred ms rather than after the whole ~1 MB corpus.
+  await Promise.all(table.map(async doc => {
+    const blocks = await searchFetchDoc(doc);
+    if (mySeq !== searchSeq) return;
+    docsDone++;
+    const { hits, truncated } = searchScanBlocks(blocks, needle);
+    if (hits.length) {
+      docsWithHits++;
+      totalHits += hits.length;
+      const lis = hits.map(h => {
+        const href = searchHitHref(doc, h, q, len);
+        const where = h.heading && !h.head ? `<span class="meta">${esc(h.heading)}</span>` : '';
+        return `<li><a href="${href}">${searchSnippetHtml(h.text, h.off, len)}</a>${where}</li>`;
+      });
+      results.insertAdjacentHTML('beforeend',
+        `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head">` +
+        `<span>${esc(doc.title)}<span class="meta" style="margin-left:8px">${esc(doc.group)}</span></span>` +
+        `<span class="count">${hits.length}${truncated ? '+' : ''} 处</span></div>` +
+        `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 5, '处')}</ul></div></div>`);
+    }
+    setStatus();
+  }));
+
+  if (mySeq !== searchSeq) return;
+  dhammaWireLayerSections();
+  if (totalHits === 0) status.textContent = `未检索到与「${q}」相关的内容。`;
+  else status.textContent = `「${q}」— 共命中 ${totalHits} 处，分布在 ${docsWithHits + (suttaHits.length ? 1 : 0)} 个来源。`;
+}
+
+function siteSearchGo() {
+  const el = document.getElementById('siteSearchInput') || document.getElementById('homeSearchInput');
+  const v = (el && el.value || '').trim();
+  const next = v ? `#/search?q=${encodeURIComponent(v)}` : '#/search';
+  if (location.hash === next) renderSearchPage(v); else location.hash = next;
+}
+
+// --- highlight the hit inside whichever reader the result linked to ---
+
+// Anchors on the matched text rather than a heading id or a raw character
+// offset: heading slugs are not unique in this corpus (one file has 55
+// duplicates) and offsets do not survive the markdown->HTML transform, but
+// the matched words themselves render verbatim.
+function searchHighlightIn(roots, term, anchor) {
+  const nterm = searchNormalize(term);
+  if (!nterm || !roots.length) return;
+
+  // Some pages render several .md-reader blocks (the abhidhamma route shows
+  // overview.md and matrix.md one after the other), so treat them as one
+  // continuous document - highlighting only the first would make every hit
+  // in the later file unreachable.
+  const nodes = [];
+  for (const root of roots) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: n => (n.parentNode && n.parentNode.closest('script,style,mark'))
+        ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    });
+    for (let n; (n = walker.nextNode());) if (n.nodeValue) nodes.push(n);
+  }
+  if (!nodes.length) return;
+
+  let full = '';
+  const map = [];
+  for (const node of nodes) {
+    for (let i = 0; i < node.nodeValue.length; i++) map.push([node, i]);
+    full += node.nodeValue;
+  }
+  const nfull = searchNormalize(full);
+
+  const hits = [];
+  for (let i = nfull.indexOf(nterm); i !== -1; i = nfull.indexOf(nterm, i + nterm.length)) hits.push(i);
+  if (!hits.length) return;
+
+  // Pick the occurrence nearest the anchor text. Compared with whitespace
+  // removed, because the index collapsed runs of it and the DOM did not.
+  let target = 0;
+  const sanchor = searchNormalize(anchor || '').replace(/\s+/g, '');
+  if (sanchor) {
+    let sfull = '';
+    const smap = [];
+    for (let k = 0; k < nfull.length; k++) if (!/\s/.test(nfull[k])) { sfull += nfull[k]; smap.push(k); }
+    const si = sfull.indexOf(sanchor);
+    if (si !== -1) {
+      const pos = smap[si];
+      let best = Infinity;
+      hits.forEach((h, idx) => { const d = Math.abs(h - pos); if (d < best) { best = d; target = idx; } });
+    }
+  }
+
+  // Back to front: extracting a later range never invalidates the map entries
+  // for earlier offsets, since a split text node keeps its leading half.
+  for (let k = hits.length - 1; k >= 0; k--) {
+    const [sNode, sOff] = map[hits[k]];
+    const [eNode, eOff] = map[hits[k] + nterm.length - 1];
+    try {
+      const range = document.createRange();
+      range.setStart(sNode, sOff);
+      range.setEnd(eNode, eOff + 1);
+      const mark = document.createElement('mark');
+      mark.className = 'search-hit';
+      mark.appendChild(range.extractContents());
+      range.insertNode(mark);
+    } catch (e) { /* a hit straddling element boundaries is skipped, not fatal */ }
+  }
+  searchInstallHitNav(roots, term, target);
+}
+
+function searchAllMarks(roots) {
+  const out = [];
+  for (const r of roots) out.push(...r.querySelectorAll('mark.search-hit'));
+  return out;
+}
+
+function searchInstallHitNav(roots, term, current) {
+  const all = searchAllMarks(roots);
+  if (!all.length) return;
+  let idx = Math.min(current, all.length - 1);
+
+  const bar = document.createElement('div');
+  bar.className = 'search-hit-bar';
+  bar.innerHTML = `<span class="search-hit-term">\u300c${esc(term)}\u300d</span>
+    <button type="button" data-d="-1">\u2191 \u4e0a\u4e00\u5904</button>
+    <span class="search-hit-counter"></span>
+    <button type="button" data-d="1">\u2193 \u4e0b\u4e00\u5904</button>
+    <button type="button" data-clear="1">\u6e05\u9664\u9ad8\u4eae</button>`;
+  roots[0].parentNode.insertBefore(bar, roots[0]);
+
+  // Tabbed readers already have a sticky .toolbar at top:0 (z-index 100),
+  // which would sit right on top of this bar. Park below whatever sticky
+  // header this page has, and push the scroll target past both so a hit
+  // never lands underneath them.
+  const tb = app.querySelector('.toolbar');
+  const offset = (tb && getComputedStyle(tb).position === 'sticky') ? Math.round(tb.getBoundingClientRect().height) : 0;
+  // Overlap by a pixel: a fractional toolbar height otherwise leaves a seam
+  // that scrolling text shows through.
+  bar.style.top = Math.max(0, offset - 1) + 'px';
+  const margin = (offset + bar.offsetHeight + 18) + 'px';
+  roots.forEach(r => r.style.setProperty('--search-hit-offset', margin));
+
+  const sync = (scroll) => {
+    const ms = searchAllMarks(roots);
+    if (!ms.length) return;
+    idx = (idx + ms.length) % ms.length;
+    ms.forEach((m, i) => m.classList.toggle('active', i === idx));
+    bar.querySelector('.search-hit-counter').textContent = `${idx + 1} / ${ms.length}`;
+    if (!scroll) return;
+    // Smooth scrolling silently gives up over long distances - these documents
+    // run to 40000px, so arriving from a search result would leave the page
+    // sitting at the top with the hit far below. Animate only short hops.
+    const dist = Math.abs(ms[idx].getBoundingClientRect().top - window.innerHeight / 2);
+    ms[idx].scrollIntoView({ behavior: dist > 2000 ? 'auto' : 'smooth', block: 'center' });
+  };
+
+  bar.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    if (b.dataset.clear) {
+      searchAllMarks(roots).forEach(m => {
+        const p = m.parentNode;
+        while (m.firstChild) p.insertBefore(m.firstChild, m);
+        p.removeChild(m);
+        p.normalize();
+      });
+      bar.remove();
+      return;
+    }
+    idx += Number(b.dataset.d);
+    sync(true);
+  });
+
+  sync(false);
+  setTimeout(() => sync(true), 80);
+}
+
+// Readers render asynchronously after route() returns, so wait for the
+// .md-reader blocks to appear rather than editing all ~20 render functions.
+function searchApplyPendingHighlight() {
+  const want = searchPendingHighlight;
+  if (!want) return;
+  searchPendingHighlight = null;
+  let done = false;
+  const finish = () => { done = true; obs.disconnect(); clearTimeout(timer); };
+  const tryApply = () => {
+    if (done) return;
+    const roots = Array.from(app.querySelectorAll('.md-reader')).filter(r => !r.dataset.searchHl);
+    if (!roots.length) return;
+    // A page can build its readers in more than one pass; give the DOM a beat
+    // to settle so every .md-reader is present before numbering the hits.
+    finish();
+    setTimeout(() => {
+      const final = Array.from(app.querySelectorAll('.md-reader'));
+      final.forEach(r => { r.dataset.searchHl = '1'; });
+      searchHighlightIn(final, want.term, want.anchor);
+    }, 60);
+  };
+  const obs = new MutationObserver(tryApply);
+  obs.observe(app, { childList: true, subtree: true });
+  const timer = setTimeout(finish, 20000);
+  tryApply();
+}
+
 // === HOME VIEW ===
 function renderHome() {
   const cats = DATA.categories;
-  let html = `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
+  let html = `<div class="home-search">
+    <input id="homeSearchInput" class="home-search-input" placeholder="🔍 搜索经文总结与全部研究文稿…" onkeydown="if(event.key==='Enter') siteSearchGo()">
+    <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
+  </div>`;
+  html += `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
     <span class="icon">🧬</span>
     <div>
       <div class="research-card-title">法义溯源 · Dhamma Lineage</div>
@@ -1504,7 +1970,8 @@ function theravadaMahayanaToolbarHtml() {
   </div>`;
 }
 
-async function renderTheravadaMahayana() {
+async function renderTheravadaMahayana(tab) {
+  if (tab && THERAVADA_MAHAYANA_TABS.some(t => t.key === tab)) theravadaMahayanaTab = tab;
   let html = `<button class="back-btn" onclick="location.hash='#/research/buddhist-systems-comparison'">← 返回佛教体系对应研究</button>`;
   html += `<div class="cat-header"><h2>⚖️ 上座部与大乘、汉传、密教、藏传的分歧与对话</h2><div class="cat-en">Theravāda in Dialogue with Mahāyāna, Chinese Buddhism, and Vajrayāna</div></div>`;
   html += theravadaMahayanaToolbarHtml();
@@ -1949,7 +2416,10 @@ function twoReligionsToolbarHtml() {
   </div>`;
 }
 
-async function renderResearchTwoReligions() {
+async function renderResearchTwoReligions(tab) {
+  // ?tab= lets a search hit open the file it actually matched; without it
+  // this route always showed 圣经 and the other two were unreachable.
+  if (tab && TWO_RELIGIONS_TABS.some(t => t.key === tab)) twoReligionsTab = tab;
   let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
   html += `<div class="cat-header"><h2>☯️ 上座部与两大宗教</h2><div class="cat-en">Theravāda, the Bible, and the Qur'an</div></div>`;
   html += twoReligionsToolbarHtml();
@@ -2076,7 +2546,8 @@ const PSYCH_CARNEGIE_TABS = [
 const _tabReaderCache = {};
 const _tabReaderCurrent = {};
 
-function renderTabbedMdReader(pageKey, icon, title, titleEn, tabs) {
+function renderTabbedMdReader(pageKey, icon, title, titleEn, tabs, tab) {
+  if (tab && tabs.some(t => t.key === tab)) _tabReaderCurrent[pageKey] = tab;
   if (!_tabReaderCurrent[pageKey]) _tabReaderCurrent[pageKey] = tabs[0].key;
 
   let html = `<button class="back-btn" onclick="location.hash='#/research/psychology'">← 返回心理学与成功学</button>`;
@@ -2117,12 +2588,12 @@ async function buildTabReaderBody(pageKey, tabs) {
   }
 }
 
-function renderPsychAdler() {
-  renderTabbedMdReader('adler', '🌱', '阿德勒', 'Adlerian Individual Psychology', PSYCH_ADLER_TABS);
+function renderPsychAdler(tab) {
+  renderTabbedMdReader('adler', '🌱', '阿德勒', 'Adlerian Individual Psychology', PSYCH_ADLER_TABS, tab);
 }
 
-function renderPsychCarnegie() {
-  renderTabbedMdReader('carnegie', '🤝', '卡耐基', 'Dale Carnegie', PSYCH_CARNEGIE_TABS);
+function renderPsychCarnegie(tab) {
+  renderTabbedMdReader('carnegie', '🤝', '卡耐基', 'Dale Carnegie', PSYCH_CARNEGIE_TABS, tab);
 }
 
 let _psychQuestionsMdCache = null;
