@@ -2199,19 +2199,18 @@ function searchJumpToEvidence(i) {
 }
 
 function siteSearchGo() {
-  // The home box has no scope picker of its own - a fresh visit from there
-  // always starts at the default (站内搜索 alone). Re-submitting from the
-  // search page itself (its own input present) preserves whatever scopes
-  // are currently checked, so retyping a query doesn't quietly drop them.
-  const onSearchPage = !!document.getElementById('siteSearchInput');
+  // Both the home box and the search page itself carry a scope picker now,
+  // so whichever one the reader just used is already reflected in
+  // searchActiveScopes - carry it forward either way, rather than only
+  // preserving it when starting from the search page.
   const el = document.getElementById('siteSearchInput') || document.getElementById('homeSearchInput');
   const v = (el && el.value || '').trim();
   const params = new URLSearchParams();
   if (v) params.set('q', v);
-  if (onSearchPage) params.set('scope', searchScopeQueryString());
+  params.set('scope', searchScopeQueryString());
   const qs = params.toString();
   const next = qs ? `#/search?${qs}` : '#/search';
-  if (location.hash === next) renderSearchPage(v, onSearchPage ? searchScopeQueryString() : undefined);
+  if (location.hash === next) renderSearchPage(v, searchScopeQueryString());
   else location.hash = next;
 }
 
@@ -2389,6 +2388,7 @@ function renderHome() {
     <input id="homeSearchInput" class="community-search" placeholder="🔍 搜索经文总结与全部研究文稿…" onkeydown="if(event.key==='Enter') siteSearchGo()">
     <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
   </div>`;
+  html += searchScopeCheckboxesHtml();
   html += `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
     <span class="icon">🧬</span>
     <div>
@@ -2440,6 +2440,9 @@ function renderHome() {
   </div>`;
 
   app.innerHTML = html;
+  document.querySelectorAll('.search-scope-row input[data-scope]').forEach(cb => {
+    cb.addEventListener('change', () => { searchActiveScopes[cb.dataset.scope] = cb.checked; });
+  });
 }
 
 // === RESEARCH HOME ===
