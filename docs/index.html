@@ -945,7 +945,7 @@ a:hover { text-decoration: underline; }
  * input into a huge pill. Pin it to its natural height in both directions. */
 .site-search-bar .community-search, .home-search .community-search { flex: 1 1 auto; min-width: 0; }
 /* Search scope picker (站内搜索 / 法义溯源 / Early Buddhist) */
-.search-scope-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 16px; font-size: 0.9em; }
+.search-scope-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 24px; font-size: 0.9em; }
 .search-scope-label { color: var(--text-light); }
 .search-scope-opt { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
 .search-scope-opt input { accent-color: var(--accent); cursor: pointer; }
@@ -962,8 +962,8 @@ a:hover { text-decoration: underline; }
 /* Hit highlighting inside a reader. Every hit is marked in the dim tone; the
  * one being navigated to gets the bright tone plus scroll-margin so it never
  * lands under the sticky bars. Matches the dhamma reader deliberately. */
-.md-reader mark.search-hit, .papanca-reader mark.search-hit, #vism-reader-body mark.search-hit, .papanca-term-table mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
-.md-reader mark.search-hit.active, .papanca-reader mark.search-hit.active, #vism-reader-body mark.search-hit.active, .papanca-term-table mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
+.md-reader mark.search-hit, .papanca-reader mark.search-hit, #vism-reader-body mark.search-hit, .papanca-term-table mark.search-hit, #reader-body mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
+.md-reader mark.search-hit.active, .papanca-reader mark.search-hit.active, #vism-reader-body mark.search-hit.active, .papanca-term-table mark.search-hit.active, #reader-body mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
 .search-hit-bar {
   position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 8px;
   align-items: center; padding: 9px 14px; margin-bottom: 14px;
@@ -1468,10 +1468,26 @@ function searchEbSiteLink(item, query) {
   // it doesn't change location.hash), so this is the closest honest
   // equivalent: its documented ?q=&lang=&coll= auto-search opens with the
   // same query already run, landing one click from the exact hit rather
-  // than zero.
+  // than zero. Kept as a secondary "查看原文" link once searchEbReaderHref
+  // exists (below) - useful when the two sites' translators differ enough
+  // that the internal reader doesn't have the exact matched wording.
   const p = new URLSearchParams({ q: query, lang: 'zh' });
   if (item.c) p.set('coll', item.c);
   return `${EARLY_BUDDHIST_BASE}/?${p.toString()}`;
+}
+
+// Early Buddhist hits carry a bare uid (mn117, dn16, ...) that is exactly
+// what this site's own #/read/{uid} reader takes - so a hit can jump
+// straight into our bilingual reader instead of bouncing to an external
+// site, with the matched term highlighted the same way every other
+// in-site search result is. hl/anc are read by route() for any route, not
+// just #/search, so this needs no new plumbing on the reader side.
+function searchEbReaderHref(item, term) {
+  if (!item.u) return null;
+  const anchor = (item.z || '').slice(0, SEARCH_ANCHOR_LEN + 16);
+  const p = new URLSearchParams({ en_author: 'sujato', zh_author: 'zhuang' });
+  if (term) { p.set('hl', term); p.set('anc', anchor); }
+  return `#/read/${encodeURIComponent(item.u)}?${p.toString()}`;
 }
 
 // vism_index.json's per-chapter titles, fetched once and cached - only
@@ -1772,14 +1788,22 @@ function searchDhammaEvidence(dhammaRun) {
 
 function searchEbEvidence(ebRun, query) {
   if (!ebRun || !ebRun.hits) return [];
-  return ebRun.hits.slice(0, 8).map(item => ({
-    score: 1.5 + Math.min((item._score || 0) / 8, 2),
-    source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
-    heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
-    text: item.z || '',
-    _href: searchEbSiteLink(item, query),
-    _external: true,
-  }));
+  return ebRun.hits.slice(0, 8).map(item => {
+    const term = (item._matchedWords || [])[0] || query;
+    const readerHref = searchEbReaderHref(item, term);
+    return {
+      score: 1.5 + Math.min((item._score || 0) / 8, 2),
+      source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
+      heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
+      text: item.z || '',
+      // Same in-site reader as the results list, so a citation click follows
+      // the same path as every other source instead of leaving the page;
+      // the original-translator link rides along as a secondary reference.
+      _href: readerHref || searchEbSiteLink(item, query),
+      _extraHref: readerHref ? searchEbSiteLink(item, query) : null,
+      _extraLabel: '查看原文',
+    };
+  });
 }
 
 // Rank across everything found, then cap per document. The cap is what
@@ -2010,17 +2034,28 @@ async function renderSearchPage(q, scopeParam) {
       run.eb = { hits };
       if (hits.length) {
         const lis = hits.slice(0, 60).map(item => {
-          const href = searchEbSiteLink(item, q);
-          const collLabel = EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c;
           const words = item._matchedWords || [];
+          const term = words[0] || q;
+          // Primary click stays on this site, in the same bilingual reader
+          // every other sutta link here uses, with the term highlighted the
+          // same way any other search hit is. Early Buddhist's own auto-search
+          // rides along as a small secondary link, for the cases where its
+          // translator differs from this reader's default (sujato/zhuang) -
+          // then the exact matched wording is only in the original.
+          const readerHref = searchEbReaderHref(item, term);
+          const extHref = searchEbSiteLink(item, q);
+          const collLabel = EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c;
           let snippet = esc(item.z || '');
           for (const w of words) { if (!w) continue; const ew = esc(w); snippet = snippet.split(ew).join(`<mark>${ew}</mark>`); }
-          return `<li><a href="${href}" target="_blank" rel="noopener">${esc(item.t || item.u)} <span class="ext-badge">↗ 外部网站</span></a>` +
+          const titleLink = readerHref
+            ? `<a class="title" href="${readerHref}">${esc(item.t || item.u)}</a>`
+            : esc(item.t || item.u);
+          return `<li>${titleLink} <a href="${extHref}" target="_blank" rel="noopener" class="ext-badge">↗ 查看原文</a>` +
             `<span class="meta">${esc(collLabel)} · ${esc(item.u)}${item.a ? ' · ' + esc(item.a) + ' 译' : ''}</span>` +
             `<p class="snippet">${snippet}</p></li>`;
         });
         results.insertAdjacentHTML('beforeend', wrapScope('eb',
-          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>Early Buddhist 检索结果<span class="meta" style="margin-left:8px">外部站点 · 点击在新标签页打开</span></span><span class="count">${hits.length} 条</span></div>` +
+          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>Early Buddhist 检索结果<span class="meta" style="margin-left:8px">点击经名进入本站阅读器，"查看原文"在新标签页打开原始译本</span></span><span class="count">${hits.length} 条</span></div>` +
           `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '条')}</ul></div></div>`));
         totalHits += hits.length;
       }
@@ -2143,12 +2178,15 @@ function searchRenderSynthesis(run, evidence, data) {
     const i = idx + 1;
     const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e._href || null);
     const title = `${esc(e.source)}${e.heading ? ' · ' + esc(e.heading) : ''}`;
-    // External evidence (Early Buddhist) has no exact in-page anchor to land
-    // on - it opens that site's own search, already run, in a new tab; the
-    // badge says so rather than pretending it's the same kind of link.
-    const link = !href ? title
+    // Evidence with no exact in-page anchor (Early Buddhist without a usable
+    // uid) opens that site's own search, already run, in a new tab; the badge
+    // says so rather than pretending it's the same kind of link. Evidence
+    // that DOES land in this site's own reader may still carry a secondary
+    // link to the original translator's exact wording alongside it.
+    let link = !href ? title
       : e._external ? `<a href="${href}" target="_blank" rel="noopener">${title} <span class="ext-badge">↗ 外部</span></a>`
       : `<a href="${href}">${title} →</a>`;
+    if (e._extraHref) link += ` <a href="${e._extraHref}" target="_blank" rel="noopener" class="ext-badge">↗ ${esc(e._extraLabel || '查看原文')}</a>`;
     return `<li id="search-ev-${i}"><span class="ev-num">[${i}]</span><div><div class="ev-src">${link}</div><p class="ev-text">${esc(e.text)}</p></div></li>`;
   }).join('');
 
@@ -2351,7 +2389,15 @@ function searchInstallHitNav(roots, term, current) {
 // unique, but included in this selector list for consistency with the rest -
 // vism-sec-N anchors inside it handle exact positioning, this handles the
 // term marking on top of that).
-const SEARCH_HIGHLIGHT_ROOTS = '.md-reader, .papanca-reader, #vism-reader-body, .papanca-term-table';
+// #reader-body is the SuttaCentral bilingual reader (#/read/{uid}) - an
+// Early Buddhist hit's uid lands there directly. That reader fetches
+// SuttaCentral's own sujato/zhuang translation live, which is not always
+// the same translator Early Buddhist's snippet matched against (Dīgha
+// texts there often use 巴宙, not zhuang), so the exact wording - and
+// therefore the highlight - is a best-effort match, not a guarantee; when
+// it doesn't land, this degrades the same way every other highlight miss
+// on this site already does (silently, no error), never a hang.
+const SEARCH_HIGHLIGHT_ROOTS = '.md-reader, .papanca-reader, #vism-reader-body, .papanca-term-table, #reader-body';
 
 // Readers render asynchronously after route() returns, so wait for the
 // highlight-root containers to appear rather than editing every render
