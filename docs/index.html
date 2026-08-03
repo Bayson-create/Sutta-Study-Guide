@@ -962,8 +962,8 @@ a:hover { text-decoration: underline; }
 /* Hit highlighting inside a reader. Every hit is marked in the dim tone; the
  * one being navigated to gets the bright tone plus scroll-margin so it never
  * lands under the sticky bars. Matches the dhamma reader deliberately. */
-.md-reader mark.search-hit, .papanca-reader mark.search-hit, #vism-reader-body mark.search-hit, .papanca-term-table mark.search-hit, #reader-body mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
-.md-reader mark.search-hit.active, .papanca-reader mark.search-hit.active, #vism-reader-body mark.search-hit.active, .papanca-term-table mark.search-hit.active, #reader-body mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
+.md-reader mark.search-hit, .papanca-reader mark.search-hit, #vism-reader-body mark.search-hit, .papanca-term-table mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
+.md-reader mark.search-hit.active, .papanca-reader mark.search-hit.active, #vism-reader-body mark.search-hit.active, .papanca-term-table mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
 .search-hit-bar {
   position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 8px;
   align-items: center; padding: 9px 14px; margin-bottom: 14px;
@@ -1463,31 +1463,25 @@ async function searchRunEarlyBuddhist(q) {
   return results;
 }
 
+// Early-Buddhist's own reader has no per-hit URL by default - viewFullText()
+// just toggles a div, never touching location.hash or .search - so a plain
+// link there could only ever reopen the results page, not the exact hit.
+// Fixed upstream instead of worked around: Early-Buddhist/docs/index.html's
+// URL-param bootstrap now also accepts ?view=<uid>, and when present calls
+// viewFullText(uid, coll, lang, '', 0, au, mt) directly - the exact same
+// call a real click on a zh result card makes (see renderResultCard there),
+// just built from params instead of an inline onclick. mt (item.z) is the
+// precise sentence the search engine scored; that site's own
+// formatChineseText() matches it as a substring to find and mark
+// .active-match, which is what makes this land on the right paragraph
+// rather than just the right sutta. Verified locally against a real build
+// of that site before this went in.
 function searchEbSiteLink(item, query) {
-  // That site has no per-hit URL of its own (viewFullText() toggles a div,
-  // it doesn't change location.hash), so this is the closest honest
-  // equivalent: its documented ?q=&lang=&coll= auto-search opens with the
-  // same query already run, landing one click from the exact hit rather
-  // than zero. Kept as a secondary "查看原文" link once searchEbReaderHref
-  // exists (below) - useful when the two sites' translators differ enough
-  // that the internal reader doesn't have the exact matched wording.
-  const p = new URLSearchParams({ q: query, lang: 'zh' });
+  const p = new URLSearchParams({ view: item.u, lang: 'zh', q: query });
   if (item.c) p.set('coll', item.c);
+  if (item.au) p.set('au', item.au);
+  if (item.z) p.set('mt', item.z);
   return `${EARLY_BUDDHIST_BASE}/?${p.toString()}`;
-}
-
-// Early Buddhist hits carry a bare uid (mn117, dn16, ...) that is exactly
-// what this site's own #/read/{uid} reader takes - so a hit can jump
-// straight into our bilingual reader instead of bouncing to an external
-// site, with the matched term highlighted the same way every other
-// in-site search result is. hl/anc are read by route() for any route, not
-// just #/search, so this needs no new plumbing on the reader side.
-function searchEbReaderHref(item, term) {
-  if (!item.u) return null;
-  const anchor = (item.z || '').slice(0, SEARCH_ANCHOR_LEN + 16);
-  const p = new URLSearchParams({ en_author: 'sujato', zh_author: 'zhuang' });
-  if (term) { p.set('hl', term); p.set('anc', anchor); }
-  return `#/read/${encodeURIComponent(item.u)}?${p.toString()}`;
 }
 
 // vism_index.json's per-chapter titles, fetched once and cached - only
@@ -1788,22 +1782,14 @@ function searchDhammaEvidence(dhammaRun) {
 
 function searchEbEvidence(ebRun, query) {
   if (!ebRun || !ebRun.hits) return [];
-  return ebRun.hits.slice(0, 8).map(item => {
-    const term = (item._matchedWords || [])[0] || query;
-    const readerHref = searchEbReaderHref(item, term);
-    return {
-      score: 1.5 + Math.min((item._score || 0) / 8, 2),
-      source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
-      heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
-      text: item.z || '',
-      // Same in-site reader as the results list, so a citation click follows
-      // the same path as every other source instead of leaving the page;
-      // the original-translator link rides along as a secondary reference.
-      _href: readerHref || searchEbSiteLink(item, query),
-      _extraHref: readerHref ? searchEbSiteLink(item, query) : null,
-      _extraLabel: '查看原文',
-    };
-  });
+  return ebRun.hits.slice(0, 8).map(item => ({
+    score: 1.5 + Math.min((item._score || 0) / 8, 2),
+    source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
+    heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
+    text: item.z || '',
+    _href: searchEbSiteLink(item, query),
+    _external: true,
+  }));
 }
 
 // Rank across everything found, then cap per document. The cap is what
@@ -2035,27 +2021,16 @@ async function renderSearchPage(q, scopeParam) {
       if (hits.length) {
         const lis = hits.slice(0, 60).map(item => {
           const words = item._matchedWords || [];
-          const term = words[0] || q;
-          // Primary click stays on this site, in the same bilingual reader
-          // every other sutta link here uses, with the term highlighted the
-          // same way any other search hit is. Early Buddhist's own auto-search
-          // rides along as a small secondary link, for the cases where its
-          // translator differs from this reader's default (sujato/zhuang) -
-          // then the exact matched wording is only in the original.
-          const readerHref = searchEbReaderHref(item, term);
-          const extHref = searchEbSiteLink(item, q);
+          const href = searchEbSiteLink(item, q);
           const collLabel = EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c;
           let snippet = esc(item.z || '');
           for (const w of words) { if (!w) continue; const ew = esc(w); snippet = snippet.split(ew).join(`<mark>${ew}</mark>`); }
-          const titleLink = readerHref
-            ? `<a class="title" href="${readerHref}">${esc(item.t || item.u)}</a>`
-            : esc(item.t || item.u);
-          return `<li>${titleLink} <a href="${extHref}" target="_blank" rel="noopener" class="ext-badge">↗ 查看原文</a>` +
+          return `<li><a class="title" href="${href}" target="_blank" rel="noopener">${esc(item.t || item.u)} <span class="ext-badge">↗ 外部网站</span></a>` +
             `<span class="meta">${esc(collLabel)} · ${esc(item.u)}${item.a ? ' · ' + esc(item.a) + ' 译' : ''}</span>` +
             `<p class="snippet">${snippet}</p></li>`;
         });
         results.insertAdjacentHTML('beforeend', wrapScope('eb',
-          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>Early Buddhist 检索结果<span class="meta" style="margin-left:8px">点击经名进入本站阅读器，"查看原文"在新标签页打开原始译本</span></span><span class="count">${hits.length} 条</span></div>` +
+          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>Early Buddhist 检索结果<span class="meta" style="margin-left:8px">点击直接跳转到 Early Buddhist 网站阅读器的命中句段</span></span><span class="count">${hits.length} 条</span></div>` +
           `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '条')}</ul></div></div>`));
         totalHits += hits.length;
       }
@@ -2389,15 +2364,7 @@ function searchInstallHitNav(roots, term, current) {
 // unique, but included in this selector list for consistency with the rest -
 // vism-sec-N anchors inside it handle exact positioning, this handles the
 // term marking on top of that).
-// #reader-body is the SuttaCentral bilingual reader (#/read/{uid}) - an
-// Early Buddhist hit's uid lands there directly. That reader fetches
-// SuttaCentral's own sujato/zhuang translation live, which is not always
-// the same translator Early Buddhist's snippet matched against (Dīgha
-// texts there often use 巴宙, not zhuang), so the exact wording - and
-// therefore the highlight - is a best-effort match, not a guarantee; when
-// it doesn't land, this degrades the same way every other highlight miss
-// on this site already does (silently, no error), never a hang.
-const SEARCH_HIGHLIGHT_ROOTS = '.md-reader, .papanca-reader, #vism-reader-body, .papanca-term-table, #reader-body';
+const SEARCH_HIGHLIGHT_ROOTS = '.md-reader, .papanca-reader, #vism-reader-body, .papanca-term-table';
 
 // Readers render asynchronously after route() returns, so wait for the
 // highlight-root containers to appear rather than editing every render
