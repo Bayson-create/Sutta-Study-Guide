@@ -944,11 +944,26 @@ a:hover { text-decoration: underline; }
  * narrow screens, where flex-basis applies to *height* and stretches the
  * input into a huge pill. Pin it to its natural height in both directions. */
 .site-search-bar .community-search, .home-search .community-search { flex: 1 1 auto; min-width: 0; }
+/* Search scope picker (站内搜索 / 法义溯源 / Early Buddhist) */
+.search-scope-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 16px; font-size: 0.9em; }
+.search-scope-label { color: var(--text-light); }
+.search-scope-opt { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
+.search-scope-opt input { accent-color: var(--accent); cursor: pointer; }
+/* Only shown when >1 scope is active - groups that scope's own result
+ * sections under one heading so three corpora don't blur into one list. */
+.search-scope-group { margin-bottom: 22px; }
+.search-scope-group-head {
+  font-size: 0.82em; font-weight: 700; color: var(--text-light); text-transform: uppercase;
+  letter-spacing: 0.04em; padding-bottom: 6px; margin-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+/* Early Buddhist results link out to a page this site does not control -
+ * that has to be visually obvious before the click, not just on hover. */
+.ext-badge { font-size: 0.72em; font-weight: 600; color: var(--text-light); }
 /* Hit highlighting inside a reader. Every hit is marked in the dim tone; the
  * one being navigated to gets the bright tone plus scroll-margin so it never
  * lands under the sticky bars. Matches the dhamma reader deliberately. */
-.md-reader mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
-.md-reader mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
+.md-reader mark.search-hit, .papanca-reader mark.search-hit, #vism-reader-body mark.search-hit, .papanca-term-table mark.search-hit { background: #fdf0c8; padding: 1px 2px; border-radius: 2px; }
+.md-reader mark.search-hit.active, .papanca-reader mark.search-hit.active, #vism-reader-body mark.search-hit.active, .papanca-term-table mark.search-hit.active { background: #fce9a8; font-weight: 700; scroll-margin-top: var(--search-hit-offset, 90px); }
 .search-hit-bar {
   position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 8px;
   align-items: center; padding: 9px 14px; margin-bottom: 14px;
@@ -1304,7 +1319,7 @@ function route() {
   } else if (hash === '#/gotama') {
     renderGotamaChat(null);
   } else if (hash === '#/search') {
-    renderSearchPage(routeParams.get('q') || '');
+    renderSearchPage(routeParams.get('q') || '', routeParams.get('scope'));
   } else {
     renderHome();
   }
@@ -1366,9 +1381,118 @@ const SEARCH_SINGLE_DOCS = [
   ['research/pali-source-texts/vinaya/samantapasadika.md', '#/research/pali-source-texts/vinaya/samantapasadika', '《善见律毗婆沙》', '原始佛教文献'],
 ];
 
-function searchDocTable() {
+// ============================================================
+// SEARCH SCOPES (范围): 站内搜索 / 法义溯源 / Early Buddhist
+// ============================================================
+// Default is 站内搜索 alone; the other two are opt-in per-search, not
+// because they're lower quality, but because each is its own cross-origin
+// fetch (法义溯源's bigram shards, Early-Buddhist's BM25 shards) that a
+// reader searching this site's own content has no reason to pay for
+// unless they ask.
+
+const SEARCH_SCOPE_LABELS = { site: '站内搜索', dhamma: '法义溯源', eb: 'Early Buddhist' };
+let searchActiveScopes = { site: true, dhamma: false, eb: false };
+
+// --- 法义溯源 scope: reuses the exact-then-fuzzy pipeline dhammaRunNormalSearch
+// already uses for its own search page, just returning data instead of
+// rendering it directly, so this one result set can feed both the results
+// list and the AI synthesis evidence picker. ---
+async function searchRunDhamma(q) {
+  await ensureDhammaData();
+  const qTrad = typeof toTraditional === 'function' ? toTraditional(q) : q;
+  const titleMatches = dhammaIndex.filter(r => (r.title || '').includes(qTrad) || (r.author || '').includes(qTrad));
+  const useFuzzy = q.length > 6;
+  let hits = [];
+  try {
+    hits = useFuzzy ? await dhammaFuzzySentenceSearch(q, { limit: 60 }) : await dhammaFullTextSearch(q, { limit: 60 });
+    if (!useFuzzy && hits.length === 0) hits = await dhammaFuzzySentenceSearch(q, { limit: 60 });
+  } catch (e) { /* NO_INFORMATIVE_TERMS or similar - hits stays empty */ }
+  return { titleMatches, hits };
+}
+
+// --- Early Buddhist scope: bridges to https://bayson-create.github.io/Early-Buddhist,
+// a separate static site with no backend of its own. Its search_engine.js
+// implements word-level BM25 (see file header there) and is loaded here
+// exactly as its own page loads it - the only change is patching fetchJson
+// to resolve its relative data paths (word_index_zh/..., search_index_zh_N.json)
+// against that site's origin instead of this one, since a <script> tag's
+// src does not affect where a *fetch call inside it* resolves relative URLs.
+// window.EarlyBuddhistAPI is that site's own documented public entry point
+// (its index.html literally publishes usage examples for external callers),
+// but its `search()` wrapper touches a #collectionFilter DOM element that
+// only exists on that page; engineSearch() underneath it is the same
+// tokenizer+BM25+resolve pipeline with no DOM dependency, so this calls
+// that directly instead.
+const EARLY_BUDDHIST_BASE = 'https://bayson-create.github.io/Early-Buddhist';
+const EARLY_BUDDHIST_COLLECTIONS = {
+  '经藏/长部_dn': '长部 DN', '经藏/中部_mn': '中部 MN', '经藏/相应部_sn': '相应部 SN',
+  '经藏/增支部_an': '增支部 AN', '经藏/小部_kn': '小部 KN',
+  '律藏/pli-tv-bu-pm': '比丘波提木叉', '律藏/pli-tv-bu-vb': '比丘经分别',
+  '律藏/pli-tv-bi-pm': '比丘尼波提木叉', '律藏/pli-tv-bi-vb': '比丘尼经分别',
+  '律藏/pli-tv-kd': '犍度', '律藏/pli-tv-pvr': '附随',
+  '论藏/ds': '法集论', '论藏/dt': '界论', '论藏/kv': '论事', '论藏/patthana': '发趣论',
+  '论藏/pp': '人施设论', '论藏/vb': '分别论', '论藏/ya': '双论', 'xplayground/other': '其他',
+};
+let _ebEngine = null;   // { engineSearch } once loaded, or a rejected promise on failure
+
+async function searchEnsureEarlyBuddhist() {
+  if (_ebEngine) return _ebEngine;
+  _ebEngine = (async () => {
+    const res = await fetch(`${EARLY_BUDDHIST_BASE}/search_engine.js`);
+    if (!res.ok) throw new Error(`无法加载 Early Buddhist 搜索引擎 (HTTP ${res.status})`);
+    let src = await res.text();
+    const patched = src.replace(
+      'async function fetchJson(path) {\n  const res = await fetch(path);',
+      'async function fetchJson(path) {\n  const res = await fetch(EB_BASE + "/" + path);'
+    );
+    if (patched === src) throw new Error('Early Buddhist 搜索引擎的接口已变更，桥接失效');
+    // toS/toT are that site's own names for exactly our toSimplified/
+    // toTraditional (same _t2sMap/_s2tMap convention); EN_STOP only matters
+    // for its lang='en' path, which this integration never calls, but is
+    // supplied so the file doesn't throw if that path is ever reached.
+    const factory = new Function('EB_BASE', 'toS', 'toT', 'EN_STOP',
+      patched + '\nreturn { engineSearch };');
+    return factory(EARLY_BUDDHIST_BASE, toSimplified, toTraditional, new Set());
+  })();
+  return _ebEngine;
+}
+
+async function searchRunEarlyBuddhist(q) {
+  const engine = await searchEnsureEarlyBuddhist();
+  const { results } = await engine.engineSearch(q, 'zh', { limit: 30 });
+  return results;
+}
+
+function searchEbSiteLink(item, query) {
+  // That site has no per-hit URL of its own (viewFullText() toggles a div,
+  // it doesn't change location.hash), so this is the closest honest
+  // equivalent: its documented ?q=&lang=&coll= auto-search opens with the
+  // same query already run, landing one click from the exact hit rather
+  // than zero.
+  const p = new URLSearchParams({ q: query, lang: 'zh' });
+  if (item.c) p.set('coll', item.c);
+  return `${EARLY_BUDDHIST_BASE}/?${p.toString()}`;
+}
+
+// vism_index.json's per-chapter titles, fetched once and cached - only
+// needed for display labels, not for the search itself.
+let _searchVismTitles = null;
+async function searchVismTitles() {
+  if (_searchVismTitles) return _searchVismTitles;
+  try {
+    const idx = await (await fetch('research/vism-data/vism_index.json')).json();
+    _searchVismTitles = new Map(idx.chapters.map(c => [c.chapter, c.title_zh.replace(/\s*-\s*清净道论$/, '')]));
+  } catch (e) {
+    _searchVismTitles = new Map();
+  }
+  return _searchVismTitles;
+}
+
+async function searchDocTable() {
   const t = [];
-  const add = (file, route, title, group) => { if (file) t.push({ file, route, title, group }); };
+  const add = (file, route, title, group, kind = 'md', extra) => {
+    if (file) t.push(Object.assign({ file, route, title, group, kind }, extra));
+  };
   for (const [file, route, title, group] of SEARCH_SINGLE_DOCS) add(file, route, title, group);
   const name = m => m.title || m.label || m.key;
   FOREST_MONKS.forEach(m => add(m.file, `#/research/forest-monks/${m.key}`, name(m), '森林比丘'));
@@ -1382,6 +1506,25 @@ function searchDocTable() {
   THERAVADA_MAHAYANA_TABS.forEach(m => add(m.file, `#/research/buddhist-systems-comparison/theravada-mahayana?tab=${m.key}`, name(m), '上座部与大乘'));
   PSYCH_ADLER_TABS.forEach(m => add(m.file, `#/research/psychology/adler?tab=${m.key}`, name(m), '阿德勒'));
   PSYCH_CARNEGIE_TABS.forEach(m => add(m.file, `#/research/psychology/carnegie?tab=${m.key}`, name(m), '卡耐基'));
+
+  // Papañcasūdanī and 清净道论 are JSON-backed readers (bilingual.json /
+  // zh_chapNN.json), not markdown - previously invisible to search entirely,
+  // so routes like #/research/.../papancasudani and #/research/vism/read/2
+  // had no way to be reached from a search hit.
+  const PAPANCA_BASE = 'research/pali-source-texts/sutta/majjhima/papancasudani';
+  add(`${PAPANCA_BASE}/part1/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part1', '破除戏论疏 · 第一部分：根本法门经注释', '巴利注疏', 'papanca');
+  add(`${PAPANCA_BASE}/part2/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part2', '破除戏论疏 · 第二部分：中部多部经注释', '巴利注疏', 'papanca');
+  add(`${PAPANCA_BASE}/part3/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part3', '破除戏论疏 · 第三部分：中部多部经注释', '巴利注疏', 'papanca');
+  add(`${PAPANCA_BASE}/terminology.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology', '破除戏论疏 · 术语表', '巴利注疏', 'term');
+
+  const vismTitles = await searchVismTitles();
+  add('research/vism-data/zh_nidana.json', '#/research/vism/read/nidana', '清净道论 · 序论', '清净道论', 'vism', { vismChapter: 'nidana' });
+  for (let ch = 1; ch <= 23; ch++) {
+    add(`research/vism-data/zh_chap${String(ch).padStart(2, '0')}.json`, `#/research/vism/read/${ch}`,
+      `清净道论 · ${vismTitles.get(ch) || '第' + ch + '品'}`, '清净道论', 'vism', { vismChapter: ch });
+  }
+  add('research/vism-data/zh_conclusion.json', '#/research/vism/read/conclusion', '清净道论 · 结论', '清净道论', 'vism', { vismChapter: 'conclusion' });
+
   return t;
 }
 
@@ -1437,13 +1580,60 @@ function searchParseMd(md) {
 
 const searchMdCache = new Map();   // file -> parsed blocks, for the session
 
+function searchStripHtmlTags(html) {
+  return searchStripInline((html || '').replace(/<[^>]+>/g, ' '));
+}
+
+// Papañcasūdanī's bilingual.json: one record per Pāli-Chinese paragraph
+// pair. Indexed on the Chinese translation (what a query actually matches);
+// falls back to the corrected Pāli only when no translation exists, so a
+// record is never silently dropped from the corpus.
+function searchParsePapanca(json) {
+  const blocks = [];
+  for (const item of json) {
+    const t = searchStripInline(item.chinese_translation || item.corrected_pali || '');
+    if (!t) continue;
+    const ctx = item.source && item.source.sutta_context;
+    const h = (ctx && (ctx.sutta_name_pali_ocr || ctx.commentary_section_raw)) || '';
+    blocks.push({ t, h });
+  }
+  return blocks;
+}
+
+// terminology.json: one row per glossary term.
+function searchParseTerm(json) {
+  return json.map(item => {
+    const alt = (item.alternative_translations || []).join('、');
+    const t = searchStripInline([item.pali, item.preferred_translation, alt, item.usage_note].filter(Boolean).join(' · '));
+    return { t, h: item.pali || '' };
+  }).filter(b => b.t);
+}
+
+// zh_chapNN.json (清净道论): one block per section, tagged with its index in
+// `sections` so a hit can link straight to ?sec=<idx> - the same anchor
+// renderVismReader() already uses, giving this corpus exact-section jumps
+// that the highlight-only corpora below don't have.
+function searchParseVism(json) {
+  const blocks = [];
+  const intro = searchStripHtmlTags(json.intro_html);
+  if (intro) blocks.push({ t: intro, h: json.title || '' });
+  (json.sections || []).forEach((sec, idx) => {
+    const t = searchStripHtmlTags(sec.html);
+    if (t) blocks.push({ t, h: sec.heading || '', _sec: idx });
+  });
+  return blocks;
+}
+
 async function searchFetchDoc(doc) {
   let blocks = searchMdCache.get(doc.file);
   if (blocks) return blocks;
   try {
     const res = await fetch(doc.file);
     if (!res.ok) throw new Error(res.status);
-    blocks = searchParseMd(await res.text());
+    if (doc.kind === 'papanca') blocks = searchParsePapanca(await res.json());
+    else if (doc.kind === 'term') blocks = searchParseTerm(await res.json());
+    else if (doc.kind === 'vism') blocks = searchParseVism(await res.json());
+    else blocks = searchParseMd(await res.text());
   } catch (e) {
     blocks = [];
   }
@@ -1460,7 +1650,8 @@ function searchScanBlocks(blocks, needle) {
     while (i !== -1) {
       // bi is kept so evidence extraction can pull the neighbouring blocks
       // for context - a matched line alone is often too short to reason from.
-      hits.push({ bi, off: i, text, heading: blocks[bi].h, head: !!blocks[bi].head });
+      // _sec (vism only) carries the exact ?sec= anchor for that block.
+      hits.push({ bi, off: i, text, heading: blocks[bi].h, head: !!blocks[bi].head, _sec: blocks[bi]._sec });
       if (hits.length >= SEARCH_MAX_HITS_PER_DOC) return { hits, truncated: true };
       i = nt.indexOf(needle, i + needle.length);
     }
@@ -1501,8 +1692,15 @@ function searchSnippetHtml(text, off, len) {
 
 function searchHitHref(doc, hit, term, len) {
   const anchor = hit.text.slice(hit.off, hit.off + Math.max(len, SEARCH_ANCHOR_LEN));
-  const sep = doc.route.includes('?') ? '&' : '?';
-  return `${doc.route}${sep}hl=${encodeURIComponent(term)}&anc=${encodeURIComponent(anchor)}`;
+  // vism sections have an exact ?sec= anchor (the id renderVismReader()
+  // already scrolls to on load); hl/anc still ride along so the term itself
+  // gets marked, not just the section it's in.
+  let route = doc.route;
+  if (doc.kind === 'vism' && hit._sec !== undefined) {
+    route += (route.includes('?') ? '&' : '?') + `sec=${hit._sec}`;
+  }
+  const sep = route.includes('?') ? '&' : '?';
+  return `${route}${sep}hl=${encodeURIComponent(term)}&anc=${encodeURIComponent(anchor)}`;
 }
 
 let searchSeq = 0;
@@ -1553,7 +1751,55 @@ function searchExpandPassage(blocks, bi) {
 // buys coverage: without it a single long file that repeats the term can
 // fill the whole evidence budget and the answer silently reflects one
 // source's view instead of the corpus's.
+function searchDhammaEvidence(dhammaRun) {
+  if (!dhammaRun || !dhammaRun.hits) return [];
+  const out = [];
+  for (const item of dhammaRun.hits) {
+    const rec = dhammaIndexById.get(item.docId);
+    if (!rec) continue;
+    for (const m of item.matches.slice(0, 2)) {
+      out.push({
+        score: 1.8 + (item.relevance || 1),
+        source: `法义溯源 · ${rec.title || rec.id}`,
+        heading: m.juan ? `卷${m.juan}` : '',
+        text: m.snippet,
+        _href: `#/dhamma/read/${encodeURIComponent(rec.id)}?off=${m.offset}&len=${m.term.length}`,
+      });
+    }
+  }
+  return out;
+}
+
+function searchEbEvidence(ebRun, query) {
+  if (!ebRun || !ebRun.hits) return [];
+  return ebRun.hits.slice(0, 8).map(item => ({
+    score: 1.5 + Math.min((item._score || 0) / 8, 2),
+    source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
+    heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
+    text: item.z || '',
+    _href: searchEbSiteLink(item, query),
+    _external: true,
+  }));
+}
+
+// Rank across everything found, then cap per document. The cap is what
+// buys coverage: without it a single long file that repeats the term can
+// fill the whole evidence budget and the answer silently reflects one
+// source's view instead of the corpus's.
+//
+// 法义溯源/Early Buddhist evidence is reserved a slice of the budget up
+// front rather than competing on the same score scale as the site's own
+// heuristic ranking: their scores (bigram relevance, BM25) are not
+// commensurate with it, and a reader who explicitly turned a scope on
+// should see it actually reach the synthesis, not get quietly outscored
+// out of the evidence set by an unrelated ranking function.
 function searchSelectEvidence(run) {
+  let budget = SEARCH_EVIDENCE_MAX;
+  const reserved = [];
+  if (run.dhamma) { const e = searchDhammaEvidence(run.dhamma).slice(0, 4); reserved.push(...e); budget -= e.length; }
+  if (run.eb) { const e = searchEbEvidence(run.eb, run.query).slice(0, 4); reserved.push(...e); budget -= e.length; }
+  budget = Math.max(0, budget);
+
   const scored = [];
   for (const d of run.docs) {
     const local = d.hits
@@ -1564,7 +1810,7 @@ function searchSelectEvidence(run) {
   }
   // 经文总结 entries are short, curated descriptions - good orienting
   // evidence, so a couple ride along rather than being crowded out.
-  const suttaEvidence = run.suttaHits.slice(0, 3).map(h => ({
+  const suttaEvidence = run.suttaHits.slice(0, Math.min(3, budget)).map(h => ({
     score: 1.6,
     source: `经文总结 · ${h.catTitle}`,
     heading: [h.section, h.name].filter(Boolean).join(' · '),
@@ -1573,32 +1819,71 @@ function searchSelectEvidence(run) {
     // route; entries without a uid fall back to their category page.
     _href: h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`,
   }));
+  budget -= suttaEvidence.length;
   scored.sort((a, b) => b.score - a.score);
-  const docEvidence = scored.slice(0, SEARCH_EVIDENCE_MAX - suttaEvidence.length).map(s => ({
+  const docEvidence = scored.slice(0, Math.max(0, budget)).map(s => ({
     source: s.doc.title,
     heading: s.hit.heading || '',
     text: searchExpandPassage(s.blocks, s.hit.bi),
     _doc: s.doc,
     _hit: s.hit,
   }));
-  return [...suttaEvidence, ...docEvidence];
+  return [...reserved, ...suttaEvidence, ...docEvidence];
 }
 
-async function renderSearchPage(q) {
+function searchScopeCheckboxesHtml() {
+  const opt = (key) => `<label class="search-scope-opt">
+    <input type="checkbox" data-scope="${key}" ${searchActiveScopes[key] ? 'checked' : ''}>
+    ${esc(SEARCH_SCOPE_LABELS[key])}
+  </label>`;
+  return `<div class="search-scope-row">
+    <span class="search-scope-label">范围：</span>
+    ${opt('site')}${opt('dhamma')}${opt('eb')}
+  </div>`;
+}
+
+function searchScopeQueryString() {
+  return Object.keys(SEARCH_SCOPE_LABELS).filter(k => searchActiveScopes[k]).join(',');
+}
+
+function searchScopeToggle(key, checked) {
+  searchActiveScopes[key] = checked;
+  const input = document.getElementById('siteSearchInput');
+  const q = (input && input.value || '').trim();
+  const next = `#/search?q=${encodeURIComponent(q)}&scope=${encodeURIComponent(searchScopeQueryString())}`;
+  if (location.hash === next) renderSearchPage(q, searchScopeQueryString()); else location.hash = next;
+}
+
+async function renderSearchPage(q, scopeParam) {
   const mySeq = ++searchSeq;
   q = (q || '').trim();
+  // scopeParam is only absent (URLSearchParams.get returns null when the key
+  // is missing) on a fresh #/search?q=... with no &scope= at all - default to
+  // 站内搜索 alone. Once present (even ''), it is authoritative, including
+  // the all-unchecked case.
+  if (scopeParam != null) {
+    const set = new Set(scopeParam.split(',').filter(Boolean));
+    searchActiveScopes = { site: set.has('site'), dhamma: set.has('dhamma'), eb: set.has('eb') };
+  } else {
+    searchActiveScopes = { site: true, dhamma: false, eb: false };
+  }
+
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
-  html += `<div class="cat-header"><h2>🔍 全站搜索</h2><div class="cat-en">Full-text search across the sutta guide and every research document</div></div>`;
+  html += `<div class="cat-header"><h2>🔍 全站搜索</h2><div class="cat-en">Full-text search across the sutta guide, every research document, 法义溯源 and Early Buddhist</div></div>`;
   html += `<div class="site-search-bar">
     <input id="siteSearchInput" class="community-search" placeholder="搜索经文总结与全部研究文稿…" value="${esc(q)}">
     <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
   </div>`;
+  html += searchScopeCheckboxesHtml();
   html += `<div id="searchStatus" class="dhamma-empty-note"></div>`;
   html += `<div id="searchSynthBox"></div><div id="searchResults"></div>`;
   app.innerHTML = html;
 
   const input = document.getElementById('siteSearchInput');
   input.addEventListener('keydown', e => { if (e.key === 'Enter') siteSearchGo(); });
+  document.querySelectorAll('.search-scope-row input[data-scope]').forEach(cb => {
+    cb.addEventListener('change', () => searchScopeToggle(cb.dataset.scope, cb.checked));
+  });
   // Land in the box with the cursor after the existing query, so refining a
   // search is just typing - no click, no re-selecting. Skipped on touch, where
   // focusing would throw up the keyboard over the results the user came to see.
@@ -1608,62 +1893,162 @@ async function renderSearchPage(q) {
   }
   const status = document.getElementById('searchStatus');
   const results = document.getElementById('searchResults');
-  if (!q) { status.textContent = '输入关键词，检索 6 部经文总结与 40 篇研究文稿的全文。'; return; }
+  if (!q) { status.textContent = '输入关键词，检索 6 部经文总结、全部研究文稿，以及所选范围内的其他资料源。'; return; }
+
+  const activeCount = Object.values(searchActiveScopes).filter(Boolean).length;
+  if (activeCount === 0) { status.textContent = '请至少选择一个搜索范围。'; return; }
 
   const needle = searchNormalize(q);
   const len = needle.length;
-  let docsDone = 0, totalHits = 0, docsWithHits = 0;
-  const table = searchDocTable();
-  const run = { query: q, needle, docs: [], suttaHits: [] };
+  let totalHits = 0;
+  const run = { query: q, needle, docs: [], suttaHits: [], dhamma: null, eb: null };
+  const scopeStatus = { site: '', dhamma: '', eb: '' };
   const setStatus = () => {
-    status.textContent = `「${q}」— 已检索 ${docsDone}/${table.length} 篇研究文稿，命中 ${totalHits} 处（${docsWithHits} 篇）`;
+    status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') || '检索中…';
   };
-  setStatus();
 
-  // 经文总结 first: DATA is already in memory, so these appear instantly.
-  const suttaHits = searchScanSuttas(needle);
-  run.suttaHits = suttaHits;
-  if (suttaHits.length) {
-    totalHits += suttaHits.length;
-    const lis = suttaHits.map(h => {
-      const href = h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`;
-      return `<li><a class="title" href="${href}">${esc(h.name || h.uid)}</a><span class="meta">${esc(h.catTitle)}${h.section ? ' · ' + esc(h.section) : ''}</span><p class="snippet">${searchSnippetHtml(h.text, h.off, len)}</p></li>`;
-    });
-    results.insertAdjacentHTML('beforeend',
-      `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>经文总结</span><span class="count">${suttaHits.length} 处</span></div>` +
-      `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '处')}</ul></div></div>`);
+  // When more than one scope is active, each gets its own labelled group so
+  // results from three different corpora don't blur into one undifferentiated
+  // list; with only the (default) site scope on, this stays exactly the flat
+  // list it always was, since a redundant single-scope header adds nothing.
+  const wrapScope = (key, innerHtml) => {
+    if (activeCount <= 1) return innerHtml;
+    return `<div class="search-scope-group"><div class="search-scope-group-head">${esc(SEARCH_SCOPE_LABELS[key])}</div>${innerHtml}</div>`;
+  };
+
+  async function runSiteScope() {
+    let docsDone = 0, docsWithHits = 0, siteHits = 0;
+    const table = await searchDocTable();
+    scopeStatus.site = `站内：已检索 0/${table.length} 篇`;
+    setStatus();
+
+    let siteHtml = '';
+    // 经文总结 first: DATA is already in memory, so these appear instantly.
+    const suttaHits = searchScanSuttas(needle);
+    run.suttaHits = suttaHits;
+    if (suttaHits.length) {
+      siteHits += suttaHits.length;
+      const lis = suttaHits.map(h => {
+        const href = h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`;
+        return `<li><a class="title" href="${href}">${esc(h.name || h.uid)}</a><span class="meta">${esc(h.catTitle)}${h.section ? ' · ' + esc(h.section) : ''}</span><p class="snippet">${searchSnippetHtml(h.text, h.off, len)}</p></li>`;
+      });
+      siteHtml = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>经文总结</span><span class="count">${suttaHits.length} 处</span></div>` +
+        `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '处')}</ul></div></div>`;
+      results.insertAdjacentHTML('beforeend', wrapScope('site', siteHtml));
+      totalHits += suttaHits.length;
+      setStatus();
+    }
+
+    // Research documents stream in as each file lands, so the first hits show
+    // in a couple of hundred ms rather than after the whole corpus lands.
+    await Promise.all(table.map(async doc => {
+      const blocks = await searchFetchDoc(doc);
+      if (mySeq !== searchSeq) return;
+      docsDone++;
+      const { hits, truncated } = searchScanBlocks(blocks, needle);
+      if (hits.length) {
+        docsWithHits++;
+        siteHits += hits.length;
+        run.docs.push({ doc, blocks, hits });
+        const lis = hits.map(h => {
+          const href = searchHitHref(doc, h, q, len);
+          const where = h.heading && !h.head ? `<span class="meta">${esc(h.heading)}</span>` : '';
+          return `<li><a href="${href}">${searchSnippetHtml(h.text, h.off, len)}</a>${where}</li>`;
+        });
+        results.insertAdjacentHTML('beforeend', wrapScope('site',
+          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head">` +
+          `<span>${esc(doc.title)}<span class="meta" style="margin-left:8px">${esc(doc.group)}</span></span>` +
+          `<span class="count">${hits.length}${truncated ? '+' : ''} 处</span></div>` +
+          `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 5, '处')}</ul></div></div>`));
+        totalHits += hits.length;
+      }
+      scopeStatus.site = `站内：已检索 ${docsDone}/${table.length} 篇，命中 ${siteHits} 处（${docsWithHits} 篇）`;
+      setStatus();
+    }));
+  }
+
+  async function runDhammaScope() {
+    scopeStatus.dhamma = '法义溯源：检索中…';
+    setStatus();
+    try {
+      const dhammaRun = await searchRunDhamma(q);
+      if (mySeq !== searchSeq) return;
+      run.dhamma = dhammaRun;
+      let dhammaHits = 0;
+      let dhammaHtml = '';
+      if (dhammaRun.titleMatches.length) {
+        dhammaHits += dhammaRun.titleMatches.length;
+        const lis = dhammaRun.titleMatches.slice(0, 20).map(r =>
+          `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(r.id)}">${esc(r.title || r.id)}</a><span class="meta">${esc(r.author || '')}</span></li>`);
+        dhammaHtml += `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>经名/作者匹配</span><span class="count">${dhammaRun.titleMatches.length} 篇</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '篇')}</ul></div></div>`;
+      }
+      for (const item of dhammaRun.hits) {
+        const rec = dhammaIndexById.get(item.docId);
+        if (!rec) continue;
+        dhammaHits += item.matches.length;
+        const lis = item.matches.map(m => {
+          const href = `#/dhamma/read/${encodeURIComponent(rec.id)}?off=${m.offset}&len=${m.term.length}`;
+          return `<li><a href="${href}">${m.juan ? `卷${esc(m.juan)} · ` : ''}${dhammaHighlightTerm(m.snippet, m.term)}</a></li>`;
+        });
+        dhammaHtml += `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>${esc(rec.title || rec.id)}</span><span class="count">${item.matches.length}${item.truncated ? '+' : ''} 处</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 5, '处')}</ul></div></div>`;
+      }
+      if (dhammaHtml) results.insertAdjacentHTML('beforeend', wrapScope('dhamma', dhammaHtml));
+      totalHits += dhammaHits;
+      scopeStatus.dhamma = `法义溯源：命中 ${dhammaHits} 处`;
+    } catch (e) {
+      scopeStatus.dhamma = `法义溯源：检索失败（${esc(e.message || String(e))}）`;
+    }
     setStatus();
   }
 
-  // Research documents stream in as each file lands, so the first hits show
-  // in a couple of hundred ms rather than after the whole ~1 MB corpus.
-  await Promise.all(table.map(async doc => {
-    const blocks = await searchFetchDoc(doc);
-    if (mySeq !== searchSeq) return;
-    docsDone++;
-    const { hits, truncated } = searchScanBlocks(blocks, needle);
-    if (hits.length) {
-      docsWithHits++;
-      totalHits += hits.length;
-      run.docs.push({ doc, blocks, hits });
-      const lis = hits.map(h => {
-        const href = searchHitHref(doc, h, q, len);
-        const where = h.heading && !h.head ? `<span class="meta">${esc(h.heading)}</span>` : '';
-        return `<li><a href="${href}">${searchSnippetHtml(h.text, h.off, len)}</a>${where}</li>`;
-      });
-      results.insertAdjacentHTML('beforeend',
-        `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head">` +
-        `<span>${esc(doc.title)}<span class="meta" style="margin-left:8px">${esc(doc.group)}</span></span>` +
-        `<span class="count">${hits.length}${truncated ? '+' : ''} 处</span></div>` +
-        `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 5, '处')}</ul></div></div>`);
+  async function runEbScope() {
+    scopeStatus.eb = 'Early Buddhist：检索中…';
+    setStatus();
+    try {
+      const hits = await searchRunEarlyBuddhist(q);
+      if (mySeq !== searchSeq) return;
+      run.eb = { hits };
+      if (hits.length) {
+        const lis = hits.slice(0, 60).map(item => {
+          const href = searchEbSiteLink(item, q);
+          const collLabel = EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c;
+          const words = item._matchedWords || [];
+          let snippet = esc(item.z || '');
+          for (const w of words) { if (!w) continue; const ew = esc(w); snippet = snippet.split(ew).join(`<mark>${ew}</mark>`); }
+          return `<li><a href="${href}" target="_blank" rel="noopener">${esc(item.t || item.u)} <span class="ext-badge">↗ 外部网站</span></a>` +
+            `<span class="meta">${esc(collLabel)} · ${esc(item.u)}${item.a ? ' · ' + esc(item.a) + ' 译' : ''}</span>` +
+            `<p class="snippet">${snippet}</p></li>`;
+        });
+        results.insertAdjacentHTML('beforeend', wrapScope('eb',
+          `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>Early Buddhist 检索结果<span class="meta" style="margin-left:8px">外部站点 · 点击在新标签页打开</span></span><span class="count">${hits.length} 条</span></div>` +
+          `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '条')}</ul></div></div>`));
+        totalHits += hits.length;
+      }
+      scopeStatus.eb = `Early Buddhist：命中 ${hits.length} 条`;
+    } catch (e) {
+      run.eb = { hits: [] };
+      scopeStatus.eb = `Early Buddhist：检索失败（${esc(e.message || String(e))}）`;
     }
     setStatus();
-  }));
+  }
+
+  const jobs = [];
+  if (searchActiveScopes.site) jobs.push(runSiteScope());
+  if (searchActiveScopes.dhamma) jobs.push(runDhammaScope());
+  if (searchActiveScopes.eb) jobs.push(runEbScope());
+  await Promise.all(jobs);
 
   if (mySeq !== searchSeq) return;
   dhammaWireLayerSections();
-  if (totalHits === 0) status.textContent = `未检索到与「${q}」相关的内容。`;
-  else status.textContent = `「${q}」— 共命中 ${totalHits} 处，分布在 ${docsWithHits + (suttaHits.length ? 1 : 0)} 个来源。`;
+  // A per-scope failure (network error, cross-origin bridge broken, etc.)
+  // must stay visible even when the overall hit count is 0 - otherwise the
+  // generic "nothing found" message quietly hides a real error from both
+  // the reader and whoever has to debug it.
+  if (totalHits === 0) {
+    const scopeErrs = Object.values(scopeStatus).filter(Boolean).join(' ｜ ');
+    status.textContent = scopeErrs ? `${scopeErrs} ｜ 未检索到与「${q}」相关的内容。` : `未检索到与「${q}」相关的内容。`;
+  }
+  else status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') + ` ｜ 共 ${totalHits} 处`;
 
   searchLastRun = totalHits ? run : null;
   searchRenderSynthPrompt();
@@ -1758,7 +2143,12 @@ function searchRenderSynthesis(run, evidence, data) {
     const i = idx + 1;
     const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e._href || null);
     const title = `${esc(e.source)}${e.heading ? ' · ' + esc(e.heading) : ''}`;
-    const link = href ? `<a href="${href}">${title} →</a>` : title;
+    // External evidence (Early Buddhist) has no exact in-page anchor to land
+    // on - it opens that site's own search, already run, in a new tab; the
+    // badge says so rather than pretending it's the same kind of link.
+    const link = !href ? title
+      : e._external ? `<a href="${href}" target="_blank" rel="noopener">${title} <span class="ext-badge">↗ 外部</span></a>`
+      : `<a href="${href}">${title} →</a>`;
     return `<li id="search-ev-${i}"><span class="ev-num">[${i}]</span><div><div class="ev-src">${link}</div><p class="ev-text">${esc(e.text)}</p></div></li>`;
   }).join('');
 
@@ -1809,10 +2199,20 @@ function searchJumpToEvidence(i) {
 }
 
 function siteSearchGo() {
+  // The home box has no scope picker of its own - a fresh visit from there
+  // always starts at the default (站内搜索 alone). Re-submitting from the
+  // search page itself (its own input present) preserves whatever scopes
+  // are currently checked, so retyping a query doesn't quietly drop them.
+  const onSearchPage = !!document.getElementById('siteSearchInput');
   const el = document.getElementById('siteSearchInput') || document.getElementById('homeSearchInput');
   const v = (el && el.value || '').trim();
-  const next = v ? `#/search?q=${encodeURIComponent(v)}` : '#/search';
-  if (location.hash === next) renderSearchPage(v); else location.hash = next;
+  const params = new URLSearchParams();
+  if (v) params.set('q', v);
+  if (onSearchPage) params.set('scope', searchScopeQueryString());
+  const qs = params.toString();
+  const next = qs ? `#/search?${qs}` : '#/search';
+  if (location.hash === next) renderSearchPage(v, onSearchPage ? searchScopeQueryString() : undefined);
+  else location.hash = next;
 }
 
 // --- highlight the hit inside whichever reader the result linked to ---
@@ -1947,8 +2347,16 @@ function searchInstallHitNav(roots, term, current) {
   setTimeout(() => sync(true), 80);
 }
 
+// Every container a search hit can land in: markdown readers, the
+// Papañcasūdanī bilingual reader, and the 清净道论 reader (whose #id is
+// unique, but included in this selector list for consistency with the rest -
+// vism-sec-N anchors inside it handle exact positioning, this handles the
+// term marking on top of that).
+const SEARCH_HIGHLIGHT_ROOTS = '.md-reader, .papanca-reader, #vism-reader-body, .papanca-term-table';
+
 // Readers render asynchronously after route() returns, so wait for the
-// .md-reader blocks to appear rather than editing all ~20 render functions.
+// highlight-root containers to appear rather than editing every render
+// function individually.
 function searchApplyPendingHighlight() {
   const want = searchPendingHighlight;
   if (!want) return;
@@ -1957,13 +2365,13 @@ function searchApplyPendingHighlight() {
   const finish = () => { done = true; obs.disconnect(); clearTimeout(timer); };
   const tryApply = () => {
     if (done) return;
-    const roots = Array.from(app.querySelectorAll('.md-reader')).filter(r => !r.dataset.searchHl);
+    const roots = Array.from(app.querySelectorAll(SEARCH_HIGHLIGHT_ROOTS)).filter(r => !r.dataset.searchHl);
     if (!roots.length) return;
     // A page can build its readers in more than one pass; give the DOM a beat
-    // to settle so every .md-reader is present before numbering the hits.
+    // to settle so every container is present before numbering the hits.
     finish();
     setTimeout(() => {
-      const final = Array.from(app.querySelectorAll('.md-reader'));
+      const final = Array.from(app.querySelectorAll(SEARCH_HIGHLIGHT_ROOTS));
       final.forEach(r => { r.dataset.searchHl = '1'; });
       searchHighlightIn(final, want.term, want.anchor);
     }, 60);
@@ -2597,7 +3005,7 @@ async function renderPapancasudaniTerminology() {
       _papancasudaniTermCache = await res.json();
     }
     let bodyHtml = '<div class="reader-content">';
-    bodyHtml += '<table class="sutta-table"><thead><tr><th>巴利语</th><th>首选译法</th><th>词性</th><th>替代译法</th><th>用法说明</th></tr></thead><tbody>';
+    bodyHtml += '<table class="sutta-table papanca-term-table"><thead><tr><th>巴利语</th><th>首选译法</th><th>词性</th><th>替代译法</th><th>用法说明</th></tr></thead><tbody>';
     for (const item of _papancasudaniTermCache) {
       bodyHtml += '<tr>';
       bodyHtml += `<td><span class="papanca-pali-term">${esc(item.pali)}</span></td>`;
