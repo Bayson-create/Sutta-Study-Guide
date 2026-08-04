@@ -2061,7 +2061,9 @@ async function renderSearchPage(q, scopeParam) {
   else status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') + ` ｜ 共 ${totalHits} 处`;
 
   searchLastRun = totalHits ? run : null;
-  searchRenderSynthPrompt();
+  // A synthesis left running for this same query is picked back up rather
+  // than offering the button again as though nothing had happened.
+  if (!(await searchResumeSynthesis(q))) searchRenderSynthPrompt();
 }
 
 // --- AI synthesis ---
@@ -2085,6 +2087,120 @@ function searchRenderSynthPrompt() {
 
 let searchSynthInFlight = false;
 
+// ============================================================
+// DETACHED AI JOBS (后台继续输出)
+// ============================================================
+// Generation runs server-side detached from the request that started it, so
+// closing the tab or locking the phone no longer aborts an answer that has
+// already been paid for. These helpers are what let a returning reader pick
+// the answer back up: the server replays everything produced while they
+// were away, so "attach" and "re-attach" are the same call.
+
+const AI_JOB_KEY_PREFIX = 'sutta_ai_job_';
+// A job the reader hasn't come back for within an hour is not something
+// they're still waiting on - don't ambush them with it days later.
+const AI_JOB_MAX_AGE_MS = 3600000;
+
+function aiJobRemember(kind, jobId, ref) {
+  try {
+    localStorage.setItem(AI_JOB_KEY_PREFIX + kind, JSON.stringify({ job_id: jobId, ref, ts: Date.now() }));
+  } catch (e) { /* private mode / quota - reattach is a bonus, not a requirement */ }
+}
+
+function aiJobForget(kind) {
+  try { localStorage.removeItem(AI_JOB_KEY_PREFIX + kind); } catch (e) {}
+}
+
+function aiJobPending(kind) {
+  try {
+    const raw = localStorage.getItem(AI_JOB_KEY_PREFIX + kind);
+    if (!raw) return null;
+    const saved = JSON.parse(raw);
+    if (!saved || !saved.job_id || Date.now() - (saved.ts || 0) > AI_JOB_MAX_AGE_MS) {
+      aiJobForget(kind);
+      return null;
+    }
+    return saved;
+  } catch (e) { return null; }
+}
+
+// Reads an SSE body frame by frame, handing each parsed event to onEvent.
+// EventSource can't carry an Authorization header, so every one of these
+// streams is read off fetch() by hand - same approach the Gotama reader has
+// always used.
+async function aiJobConsume(res, onEvent) {
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+    const frames = buffer.split('\n\n');
+    buffer = frames.pop();
+    for (const raw of frames) {
+      const line = raw.split('\n').find(l => l.startsWith('data:'));
+      if (!line) continue;
+      let evt;
+      try { evt = JSON.parse(line.slice(5).trim()); } catch (e) { continue; }
+      onEvent(evt);
+    }
+  }
+}
+
+async function aiJobAttach(jobId, onEvent) {
+  const res = await fetch(`${API_BASE}/api/ai-jobs/${encodeURIComponent(jobId)}/stream`, {
+    headers: communityAuthHeaders(),
+  });
+  if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+  await aiJobConsume(res, onEvent);
+}
+
+// --- search synthesis over the streaming endpoint ---
+
+function searchSynthStreamPanel(query, text) {
+  return `<div class="search-synth-panel">
+    <div class="search-synth-head">
+      <strong>✨ AI 综合回答</strong>
+      <span class="meta">「${esc(query)}」 · 生成中…（可以关闭页面，回来后会看到完整结果）</span>
+    </div>
+    <div class="md-reader search-synth-answer">${mdToHtml(text)}</div>
+  </div>`;
+}
+
+// One event handler for both a fresh run and a re-attach. `evidence` is the
+// locally-selected evidence when we still have it (it carries the jump-to-
+// source links); on a re-attach after a reload it's null and the final
+// event's own passage list is used instead, which renders the same sources
+// without the deep links.
+function searchSynthHandler(query, evidence, onDone) {
+  const box = () => document.getElementById('searchSynthBox');
+  let text = '';
+  return (evt) => {
+    const el = box();
+    if (!el) return;
+    if (evt.type === 'job') {
+      aiJobRemember('search_synth', evt.job_id, evt.ref || query);
+    } else if (evt.type === 'delta') {
+      text += evt.text;
+      el.innerHTML = searchSynthStreamPanel(query, text);
+    } else if (evt.type === 'final') {
+      aiJobForget('search_synth');
+      const ev = evidence || (evt.passages || []).map(p => ({
+        source: p.source, heading: p.heading, text: p.text,
+      }));
+      searchRenderSynthesis({ query, needle: searchNormalize(query) }, ev, evt);
+      if (onDone) onDone();
+    } else if (evt.type === 'error') {
+      aiJobForget('search_synth');
+      el.innerHTML = `<div class="search-synth-panel">
+        <p class="error-msg">${esc(evt.detail || '综合失败，请稍后再试。')}</p>
+        <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">重试</button></div>`;
+      if (onDone) onDone();
+    }
+  };
+}
+
 async function searchRunSynthesis() {
   if (searchSynthInFlight || !searchLastRun) return;
   const box = document.getElementById('searchSynthBox');
@@ -2100,14 +2216,14 @@ async function searchRunSynthesis() {
   searchSynthInFlight = true;
   box.innerHTML = `<div class="search-synth-panel"><div class="loading"><div class="spinner"></div><div>正在综合 ${evidence.length} 段证据…</div></div></div>`;
   try {
-    const res = await communityWriteFetch(`${API_BASE}/api/search/synthesize`, {
+    const res = await fetch(`${API_BASE}/api/search/synthesize/stream`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
       body: JSON.stringify({
         query: run.query,
         passages: evidence.map(e => ({ source: e.source, heading: e.heading, text: e.text })),
       }),
-    }, { attempts: 2, timeoutMs: 120000 });
+    });
     if (!res.ok) {
       let detail = '';
       try { detail = (await res.json()).detail || ''; } catch (e) { /* non-JSON error body */ }
@@ -2121,8 +2237,7 @@ async function searchRunSynthesis() {
       err.fromServer = true;
       throw err;
     }
-    const data = await res.json();
-    searchRenderSynthesis(run, evidence, data);
+    await aiJobConsume(res, searchSynthHandler(run.query, evidence));
   } catch (e) {
     const msg = e && e.fromServer ? e.message : communityWriteErrorMessage(e);
     box.innerHTML = `<div class="search-synth-panel">
@@ -2131,6 +2246,33 @@ async function searchRunSynthesis() {
   } finally {
     searchSynthInFlight = false;
   }
+}
+
+// Called when the search page renders: if a synthesis was left running for
+// this same query, pick it back up instead of showing the "生成综合回答"
+// button as though nothing had happened.
+async function searchResumeSynthesis(query) {
+  const pending = aiJobPending('search_synth');
+  if (!pending || !communityToken()) return false;
+  if (pending.ref && query && pending.ref !== query) return false;
+  const box = document.getElementById('searchSynthBox');
+  if (!box) return false;
+  box.innerHTML = `<div class="search-synth-panel"><div class="loading"><div class="spinner"></div><div>正在接回上次的 AI 综合…</div></div></div>`;
+  searchSynthInFlight = true;
+  try {
+    // searchLastRun is rebuilt by the search that just ran, so its evidence
+    // (and with it the jump-to-source links) is reused when the query still
+    // matches what the job was started for.
+    const evidence = searchLastRun && searchLastRun.query === pending.ref
+      ? searchSelectEvidence(searchLastRun) : null;
+    await aiJobAttach(pending.job_id, searchSynthHandler(pending.ref || query, evidence));
+  } catch (e) {
+    aiJobForget('search_synth');
+    searchRenderSynthPrompt();
+  } finally {
+    searchSynthInFlight = false;
+  }
+  return true;
 }
 
 function searchRenderSynthesis(run, evidence, data) {
@@ -6780,6 +6922,47 @@ async function renderDhammaHome() {
   app.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:40px;">加载藏经目录中…</p>';
   await ensureDhammaData();
   dhammaRenderShell();
+  dhammaResumeTraceJob();
+}
+
+// A trace left running when the reader closed the page is picked back up
+// here. The server kept generating, so this replays the layers plus
+// whatever synthesis landed meanwhile and then follows the rest live.
+async function dhammaResumeTraceJob() {
+  const pending = aiJobPending('dhamma_trace');
+  if (!pending || !communityToken()) return;
+  const q = pending.ref || '';
+  const input = document.getElementById('dhammaSearchInput');
+  if (input && !input.value) input.value = q;
+
+  const mySeq = ++dhammaSearchSeq;
+  const results = document.getElementById('dhammaResults');
+  if (!results) return;
+  results.innerHTML = `
+    <div class="dhamma-view-toggle">
+      <button type="button" class="active" data-view="layers" id="dhammaViewLayersBtn">分层分析</button>
+      <button type="button" data-view="graph" id="dhammaViewGraphBtn">关系图谱</button>
+    </div>
+    <div id="dhammaLayersView"><p class="dhamma-empty-note">正在接回离开时未完成的分析「${dhammaEscapeHtml(q)}」…</p></div>
+    <div id="dhammaGraphView" hidden>
+      <p class="dhamma-empty-note" id="dhammaGraphStatus">正在生成关系图谱…</p>
+      <iframe id="dhammaGraphFrame" class="dhamma-graph-frame" hidden></iframe>
+      <div id="dhammaGraphExplain" class="dhamma-ai-synthesis" hidden></div>
+    </div>`;
+  document.getElementById('dhammaViewLayersBtn').addEventListener('click', () => dhammaSwitchAiView('layers'));
+  document.getElementById('dhammaViewGraphBtn').addEventListener('click', () => dhammaSwitchAiView('graph', q));
+  if (q) dhammaLoadGraphView(q);
+
+  const timerStart = performance.now();
+  try {
+    await aiJobAttach(pending.job_id, dhammaTraceHandler(q, mySeq, timerStart, null));
+  } catch (e) {
+    aiJobForget('dhamma_trace');
+    if (mySeq === dhammaSearchSeq) {
+      const lv = document.getElementById('dhammaLayersView');
+      if (lv) lv.innerHTML = `<p class="dhamma-empty-note">未能接回上次的分析，请重新搜索。</p>`;
+    }
+  }
 }
 
 function dhammaRenderShell(preserveQuery, autoSearch) {
@@ -7378,46 +7561,108 @@ async function dhammaRunAiTrace(q) {
     const el = timerEl();
     if (el) el.textContent = ((performance.now() - timerStart) / 1000).toFixed(1) + 's';
   }, 100);
-  const layersView = () => document.getElementById('dhammaLayersView');
-  let data, elapsedSeconds;
   try {
-    // AI synthesis can legitimately take 20-30s, well past the 45s default
-    // - use a longer budget so a real timeout (not just a slow LLM call)
-    // still aborts and stops the timer, rather than hanging indefinitely.
-    const res = await communityFetchWithTimeout(`${API_BASE}/api/dhamma/trace?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() }, 90000);
+    const res = await fetch(`${API_BASE}/api/dhamma/trace/stream?q=${encodeURIComponent(q)}`, {
+      headers: communityAuthHeaders(),
+    });
     if (!res.ok) {
       let detail = `请求失败（HTTP ${res.status}）`;
       try { const err = await res.json(); if (err.detail) detail = err.detail; } catch (_) {}
       const e = new Error(detail); e.status = res.status; throw e;
     }
-    data = await res.json();
-    dhammaLastAiQuery = null; // succeeded - nothing to retry on visibility restore
+    await aiJobConsume(res, dhammaTraceHandler(q, mySeq, timerStart, timerHandle));
+    dhammaLastAiQuery = null; // reached the server - nothing to retry on visibility restore
   } catch (err) {
     clearInterval(timerHandle);
-    // An AbortError is left tracked (not cleared) so becoming visible
-    // again can retry it silently - every other failure (bad input,
-    // no quota, expired login) is a real outcome retrying can't fix.
     if (err.name !== 'AbortError') dhammaLastAiQuery = null;
     if (mySeq !== dhammaSearchSeq) return;
-    // Only the layers panel shows the failure - the graph panel (and its
-    // own loading/result state) is a fully separate concern and must
-    // keep working even if 分层分析 itself failed (e.g. no quota left).
-    const lv = layersView();
-    if (!lv) return;
-    if (err.status === 402) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
-    else if (err.status === 429) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
-    else if (err.status === 401) lv.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
-    else if (err.name === 'AbortError') lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(communityTimeoutMessage(err))}</p>`;
-    else lv.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
-    return;
+    dhammaShowTraceError(err);
   }
-  clearInterval(timerHandle);
-  elapsedSeconds = (performance.now() - timerStart) / 1000;
-  if (mySeq !== dhammaSearchSeq) return;
+}
 
-  const tokensLabel = data.from_cache
+// Turns trace stream events into the view. Shared by a fresh run and by a
+// re-attach, which is what makes leaving the page mid-analysis safe: the
+// server replays the layers event and everything generated since, so this
+// rebuilds the identical view.
+function dhammaTraceHandler(q, mySeq, timerStart, timerHandle) {
+  let synthesis = '';
+  let layersData = null;
+  let renderPending = false;
+  const stale = () => mySeq !== undefined && mySeq !== dhammaSearchSeq;
+
+  // Re-rendering markdown on every token would burn the main thread for no
+  // visible benefit; a short coalescing window keeps it smooth while still
+  // looking continuous.
+  const scheduleFill = () => {
+    if (renderPending) return;
+    renderPending = true;
+    setTimeout(() => {
+      renderPending = false;
+      if (!stale()) dhammaFillSynthesisSlots(synthesis);
+    }, 120);
+  };
+
+  return (evt) => {
+    if (stale()) return;
+    if (evt.type === 'job') {
+      aiJobRemember('dhamma_trace', evt.job_id, evt.ref || q);
+    } else if (evt.type === 'layers') {
+      layersData = evt;
+      // The citations are on screen the moment retrieval finishes, instead
+      // of waiting for synthesis to also complete - retrieval is a large
+      // share of the wall clock and the panel used to stay empty for all
+      // of it.
+      dhammaRenderTraceView(q, {
+        layers: evt.layers, hit_count: evt.hit_count, synthesis: '', from_cache: evt.from_cache,
+      }, { streaming: true });
+    } else if (evt.type === 'delta') {
+      synthesis += evt.text;
+      scheduleFill();
+    } else if (evt.type === 'final') {
+      aiJobForget('dhamma_trace');
+      clearInterval(timerHandle);
+      const elapsedSeconds = (performance.now() - timerStart) / 1000;
+      const full = Object.assign({}, evt, {
+        layers: (layersData && layersData.layers) || {},
+        hit_count: (layersData && layersData.hit_count) || 0,
+        synthesis: evt.synthesis || synthesis,
+      });
+      dhammaRenderTraceView(q, full, { streaming: false, elapsedSeconds });
+    } else if (evt.type === 'error') {
+      aiJobForget('dhamma_trace');
+      clearInterval(timerHandle);
+      dhammaShowTraceError(Object.assign(new Error(evt.detail || '分析失败'), { fromServer: true }));
+    }
+  };
+}
+
+function dhammaShowTraceError(err) {
+  // Only the layers panel shows the failure - the graph panel (and its own
+  // loading/result state) is a fully separate concern and must keep working
+  // even if 分层分析 itself failed (e.g. no quota left).
+  const lv = document.getElementById('dhammaLayersView');
+  if (!lv) return;
+  if (err.status === 402) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)} <a href="#/profile">前往账号页面</a></p>`;
+  else if (err.status === 429) lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(err.message)}</p>`;
+  else if (err.status === 401) lv.innerHTML = `<p class="dhamma-empty-note">登录已过期，请<a href="#/profile">重新登录</a>。</p>`;
+  else if (err.name === 'AbortError') lv.innerHTML = `<p class="dhamma-empty-note">${dhammaEscapeHtml(communityTimeoutMessage(err))}</p>`;
+  else lv.innerHTML = `<p class="dhamma-empty-note">分析失败：${dhammaEscapeHtml(err.message)}</p>`;
+}
+
+// Renders the whole 分层分析 view from a trace payload.
+//
+// Split out of dhammaRunAiTrace so the streaming path can call it as soon
+// as the layers arrive - with `streaming` true and no synthesis yet - and
+// then fill the analysis slots in place as text comes in. The citation
+// cards are therefore built once, from the layers event, and never rebuilt
+// mid-stream.
+async function dhammaRenderTraceView(q, data, { streaming = false, elapsedSeconds = 0 } = {}) {
+  const layersView = () => document.getElementById('dhammaLayersView');
+  const tokensLabel = streaming
+    ? '正在生成…'
+    : data.from_cache
     ? '命中缓存，未消耗 Tokens'
-    : `本次消耗 ${data.request_total_tokens.toLocaleString()} tokens（输入 ${data.request_input_tokens.toLocaleString()} / 输出 ${data.request_output_tokens.toLocaleString()}）`;
+    : `本次消耗 ${(data.request_total_tokens || 0).toLocaleString()} tokens（输入 ${(data.request_input_tokens || 0).toLocaleString()} / 输出 ${(data.request_output_tokens || 0).toLocaleString()}）`;
   let html = `<div class="dhamma-ai-meta">
     <span>${tokensLabel} · 用时 ${elapsedSeconds.toFixed(1)}s</span>
     <span class="dhamma-ai-meta-right">
@@ -7426,8 +7671,12 @@ async function dhammaRunAiTrace(q) {
     </span>
   </div><p id="dhammaCopyMsg" class="dhamma-copy-msg"></p>`;
 
-  const { intro, byLayer, outro } = dhammaSplitSynthesisByLayer(data.synthesis);
-  if (intro.trim()) html += `<div class="dhamma-ai-synthesis dhamma-ai-intro">${dhammaRenderSynthesisMarkdown(intro)}</div>`;
+  const { intro, byLayer, outro } = dhammaSplitSynthesisByLayer(data.synthesis || '');
+  // Always present, even when empty: while the synthesis streams in,
+  // dhammaFillSynthesisSlots() writes into these containers in place, so
+  // the citation cards built from the layers event stay put instead of the
+  // whole view being torn down and rebuilt on every chunk.
+  html += `<div class="dhamma-ai-synthesis dhamma-ai-intro" id="dai-intro"${intro.trim() ? '' : ' hidden'}>${dhammaRenderSynthesisMarkdown(intro)}</div>`;
 
   // Merged per-layer cards: the LLM's analysis for a layer and that
   // layer's raw citations render in one card, not as a synthesis blob
@@ -7438,6 +7687,9 @@ async function dhammaRunAiTrace(q) {
     const hits = data.layers[key] || [];
     const layerNum = parseInt(key, 10);
     const analysisText = !isNaN(layerNum) ? byLayer.get(layerNum) : null;
+    // While streaming, a layer with citations but no analysis yet still has
+    // to render - that card is where its analysis will be written when the
+    // model reaches this layer.
     if (hits.length === 0 && !analysisText) continue;
 
     const citeListId = `dai-cites-${key}`;
@@ -7454,25 +7706,27 @@ async function dhammaRunAiTrace(q) {
       </details>`;
     }
 
+    const emptyNote = streaming
+      ? '<p class="dhamma-empty-note dai-pending">正在分析…</p>'
+      : '<p class="dhamma-empty-note">（AI 未对此层单独展开分析，以下为检索到的相关原文，仅供参考）</p>';
     html += `<div class="dhamma-layer-card" data-layer="${key}">
       <div class="dhamma-layer-card-head"><span>${DHAMMA_AI_LAYER_LABELS[key] || key}</span><span class="count">${hits.length} 条引用</span></div>
-      ${analysisText ? `<div class="dhamma-ai-synthesis">${dhammaRenderSynthesisMarkdown(analysisText)}</div>` : '<p class="dhamma-empty-note">（AI 未对此层单独展开分析，以下为检索到的相关原文，仅供参考）</p>'}
+      <div class="dhamma-ai-synthesis" id="dai-analysis-${key}">${analysisText ? dhammaRenderSynthesisMarkdown(analysisText) : emptyNote}</div>
       ${citesHtml}
     </div>`;
   }
 
-  if (outro.trim()) {
-    html += `<div class="dhamma-layer-card dhamma-summary-card" data-layer="summary">
-      <div class="dhamma-layer-card-head"><span>📌 总结与结论</span></div>
-      <div class="dhamma-ai-synthesis">${dhammaRenderSynthesisMarkdown(outro)}</div>
-    </div>`;
-  }
+  html += `<div class="dhamma-layer-card dhamma-summary-card" data-layer="summary" id="dai-summary-card"${outro.trim() ? '' : ' hidden'}>
+    <div class="dhamma-layer-card-head"><span>📌 总结与结论</span></div>
+    <div class="dhamma-ai-synthesis" id="dai-summary">${dhammaRenderSynthesisMarkdown(outro)}</div>
+  </div>`;
 
   const lv = layersView();
   if (!lv) return; // user navigated away/started a new search - graph view (if any) manages its own state independently
   lv.innerHTML = toSimplified(html);
 
-  document.getElementById('dhammaCopyMdBtn').addEventListener('click', () => dhammaCopySynthesisMarkdown(data));
+  const copyBtn = document.getElementById('dhammaCopyMdBtn');
+  if (copyBtn) copyBtn.addEventListener('click', () => dhammaCopySynthesisMarkdown(data));
 
   const hrefById = await dhammaBuildHitHrefs(allHits);
   for (const { hitId } of allHits) {
@@ -7480,6 +7734,27 @@ async function dhammaRunAiTrace(q) {
     const href = hrefById.get(hitId);
     if (a && href) a.href = href;
   }
+}
+
+// Writes streamed synthesis into the already-rendered cards, without
+// touching their citations. The split is by `#### 第N层` headings, so a
+// layer's card fills the moment the model reaches that layer - which is
+// also why the prompt now pins that heading format explicitly.
+function dhammaFillSynthesisSlots(text) {
+  const { intro, byLayer, outro } = dhammaSplitSynthesisByLayer(text || '');
+  const introEl = document.getElementById('dai-intro');
+  if (introEl) {
+    introEl.innerHTML = toSimplified(dhammaRenderSynthesisMarkdown(intro));
+    introEl.hidden = !intro.trim();
+  }
+  for (const [layerNum, analysis] of byLayer) {
+    const el = document.getElementById(`dai-analysis-${layerNum}`);
+    if (el) el.innerHTML = toSimplified(dhammaRenderSynthesisMarkdown(analysis));
+  }
+  const summaryEl = document.getElementById('dai-summary');
+  const summaryCard = document.getElementById('dai-summary-card');
+  if (summaryEl) summaryEl.innerHTML = toSimplified(dhammaRenderSynthesisMarkdown(outro));
+  if (summaryCard) summaryCard.hidden = !outro.trim();
 }
 
 async function dhammaCopySynthesisMarkdown(data) {
@@ -7833,8 +8108,59 @@ async function gotamaLoadConversation(id) {
     gotamaMessages = data.messages;
     gotamaRenderConvList();
     gotamaRenderMessages();
+    await gotamaResumeJob(id);
   } catch (e) {
     messagesEl.innerHTML = `<div class="gotama-empty-state error-msg">${communityEscape(e.message)}</div>`;
+  }
+}
+
+// If a turn in this conversation was still generating when the reader left,
+// rejoin it. The server kept generating regardless, so this replays what was
+// produced meanwhile and then follows the rest live - the answer is never
+// lost just because the page went away.
+async function gotamaResumeJob(conversationId) {
+  const pending = aiJobPending('gotama');
+  if (!pending || pending.ref !== String(conversationId) || gotamaSending) return;
+
+  const el = document.getElementById('gotamaMessages');
+  if (!el) return;
+  gotamaSending = true;
+  // The assistant slot the replayed deltas will stream into. The user's own
+  // message was committed server-side the moment it was received, so it is
+  // already in the history loaded above.
+  gotamaMessages.push({ role: 'assistant', content: '', _resumed: true });
+  gotamaRenderMessages();
+  el.insertAdjacentHTML('beforeend', '<div class="gotama-thinking" id="gotamaThinking">正在接回离开时未完成的回答…</div>');
+
+  try {
+    await aiJobAttach(pending.job_id, (evt) => {
+      const thinking = () => document.getElementById('gotamaThinking');
+      if (evt.type === 'delta') {
+        const last = gotamaMessages[gotamaMessages.length - 1];
+        if (!last.content) thinking()?.remove();
+        last.content += evt.text;
+        const body = document.getElementById('gotamaLastAssistantBody');
+        if (body) body.innerHTML = gotamaRenderMarkdown(last.content);
+        el.scrollTop = el.scrollHeight;
+      } else if (evt.type === 'final') {
+        aiJobForget('gotama');
+        thinking()?.remove();
+        gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
+        gotamaMessages[gotamaMessages.length - 1] = evt.assistant_message;
+      } else if (evt.type === 'error') {
+        aiJobForget('gotama');
+        thinking()?.remove();
+      }
+    });
+  } catch (e) {
+    aiJobForget('gotama');
+  } finally {
+    gotamaSending = false;
+    // Drop the placeholder if nothing ever arrived, so an interrupted turn
+    // doesn't leave an empty assistant bubble behind.
+    const last = gotamaMessages[gotamaMessages.length - 1];
+    if (last && last._resumed && !last.content) gotamaMessages.pop();
+    gotamaRenderMessages();
   }
 }
 
@@ -8276,8 +8602,14 @@ async function gotamaSend(overrideContent) {
               : '该网页读取失败，继续处理…';
           }
           el.scrollTop = el.scrollHeight;
+        } else if (evt.type === 'job') {
+          // Generation is detached server-side, so this handle is what
+          // lets a reader who closes the tab mid-answer rejoin the same
+          // turn when they come back (see gotamaResumeJob).
+          aiJobRemember('gotama', evt.job_id, evt.ref || String(gotamaActiveId || ''));
         } else if (evt.type === 'final') {
           sawFinal = true;
+          aiJobForget('gotama');
           gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
           const elapsed = (performance.now() - startedAt) / 1000;
           let flag = '';
@@ -8294,6 +8626,7 @@ async function gotamaSend(overrideContent) {
           };
           gotamaLoadConversations(); // refresh title (may have been auto-set) and ordering
         } else if (evt.type === 'error') {
+          aiJobForget('gotama');
           sawError = evt.detail || '请求失败';
         }
       }
