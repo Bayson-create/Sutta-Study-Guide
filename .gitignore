@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 .claude/
+scripts/.venv/
 
 # Backend code lives in a separate private repo (sutta-study-guide-backend),
 # not in this public repo. This local copy is for development only.

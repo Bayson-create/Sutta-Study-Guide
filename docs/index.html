@@ -1287,9 +1287,15 @@ function route() {
   } else if (hash.startsWith('#/research/pali-source-texts/sutta/majjhima/papancasudani/part3')) {
     renderPapancasudaniPart3();
   } else if (hash.startsWith('#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology')) {
-    renderPapancasudaniTerminology();
+    // Moved: the term table now covers vism too, so it lives at a neutral
+    // route rather than under papancasudani. Redirected, not just
+    // re-rendered, so the URL bar and back button reflect where it
+    // actually lives - old links (including any already shared) still work.
+    location.hash = '#/research/terminology';
   } else if (hash === '#/research/pali-source-texts/sutta/majjhima/papancasudani') {
     renderPapancasudaniHome();
+  } else if (hash === '#/research/terminology') {
+    renderSharedTerminology();
   } else if (hash === '#/research/concepts') {
     renderResearchConcepts();
   } else if (hash === '#/research/timeline') {
@@ -1588,7 +1594,7 @@ async function searchDocTable() {
   add(`${PAPANCA_BASE}/part1/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part1', '破除戏论疏 · 第一部分：根本法门经注释', '巴利注疏', 'papanca');
   add(`${PAPANCA_BASE}/part2/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part2', '破除戏论疏 · 第二部分：中部多部经注释', '巴利注疏', 'papanca');
   add(`${PAPANCA_BASE}/part3/bilingual.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/part3', '破除戏论疏 · 第三部分：中部多部经注释', '巴利注疏', 'papanca');
-  add(`${PAPANCA_BASE}/terminology.json`, '#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology', '破除戏论疏 · 术语表', '巴利注疏', 'term');
+  add('research/shared-terminology.json', '#/research/terminology', '术语表 · 清净道论 + 破除戏论疏', '巴利注疏', 'term');
 
   const vismTitles = await searchVismTitles();
   add('research/vism-data/zh_nidana.json', '#/research/vism/read/nidana', '清净道论 · 序论', '清净道论', 'vism', { vismChapter: 'nidana' });
@@ -3316,10 +3322,10 @@ function renderPapancasudaniHome() {
     <div class="title">第三部分</div>
     <div class="desc">《中部》多部经注释 — 巴利语原文与汉译逐句对照，2134 段</div>
   </div>`;
-  html += `<div class="research-item-card" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani/terminology'">
+  html += `<div class="research-item-card" onclick="location.hash='#/research/terminology'">
     <span class="icon">📚</span>
     <div class="title">术语表</div>
-    <div class="desc">第一至第三部分核心术语的译法统一表 — 3491 条术语，含首选译法、替代译法及用法说明</div>
+    <div class="desc">与《清净道论》共用一张全书术语表 — 3498 条，含首选译法、替代译法及用法说明</div>
   </div>`;
   html += '</div>';
   app.innerHTML = html;
@@ -3394,16 +3400,23 @@ async function renderPapancasudaniPart1() { return renderPapancasudaniPart(1); }
 async function renderPapancasudaniPart2() { return renderPapancasudaniPart(2); }
 async function renderPapancasudaniPart3() { return renderPapancasudaniPart(3); }
 
-// === RESEARCH: PAPANCASUDANI TERMINOLOGY READER ===
-let _papancasudaniTermCache = null;
-// Terms are shared across all three parts, so an edit here is deliberately
+// === RESEARCH: SHARED TERMINOLOGY (清净道论 + 破除戏论疏 共用一张表) ===
+// Built by scripts/build_shared_terminology.py from papancasudani's own
+// 3491-term table plus the 17 terms shared identically across every
+// retranslated_chap*/terminology.json (see that script for the merge and
+// conflict-resolution rules). Terms are shared across all 28 files (25
+// vism chapters + 3 papanca parts), so an edit here is deliberately
 // heavier-weight than a translation edit: saving prompts a scan of every
-// sentence in part1-3 that still contains the old rendering, and the user
+// sentence in all 28 that still contains the old rendering, and the user
 // picks which of those to update alongside the term itself (see
-// termSyncScanAndConfirm below). doc_key "papanca" is the term table's own
-// overlay namespace, distinct from the per-part translation doc_keys.
-const TERM_DOC_KEY = 'papanca';
-const TERM_PART_DOCS = ['papanca:part1', 'papanca:part2', 'papanca:part3'];
+// termSyncScanAndConfirm below). doc_key "canon" is the term table's own
+// overlay namespace, distinct from the per-file translation doc_keys.
+let _papancasudaniTermCache = null;
+const TERM_DOC_KEY = 'canon';
+const TERM_PART_DOCS = [
+  'papanca:part1', 'papanca:part2', 'papanca:part3',
+  'vism:nidana', ...Array.from({ length: 23 }, (_, i) => `vism:${i + 1}`), 'vism:conclusion',
+];
 let _papancasudaniTermOverlay = null;
 
 function termCurrentEntry(pali) {
@@ -3428,14 +3441,15 @@ function termRowHtml(item) {
   </tr>`;
 }
 
-async function renderPapancasudaniTerminology() {
-  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
-  html += `<div class="cat-header"><h2>📚 术语表</h2><div class="cat-en">Glossary of Key Terms — Preferred Translations & Usage Notes</div></div>`;
+async function renderSharedTerminology() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>`;
+  html += `<div class="cat-header"><h2>📚 术语表</h2><div class="cat-en">Glossary of Key Terms — 清净道论 + 破除戏论疏 共用</div></div>`;
+  html += `<p style="color:var(--text-light);margin:-8px 0 16px">《清净道论》二十五品与《Papañcasūdanī 破除戏论》三部分共用同一张术语表：改一处，可在全书范围内确认并同步已有译文。</p>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
   app.innerHTML = html;
   try {
     if (!_papancasudaniTermCache) {
-      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/terminology.json');
+      const res = await fetch('research/shared-terminology.json');
       _papancasudaniTermCache = await res.json();
     }
     await communityFetchCurrentUser();
@@ -3522,39 +3536,17 @@ async function termHandleClick(e) {
 // files the backend never sees, so those are scanned here and merged in -
 // each such candidate carries `old_text` so sync-apply can create that
 // row's overlay with the pre-replacement text as its frozen default.
-async function termScanStaticCandidates(oldTranslation, newTranslation) {
-  const found = [];
-  for (let p = 1; p <= 3; p++) {
-    const docKey = `papanca:part${p}`;
-    let staticItems, overlay;
-    try {
-      [staticItems, overlay] = await Promise.all([
-        fetch(`research/pali-source-texts/sutta/majjhima/papancasudani/part${p}/bilingual.json`).then(r => r.json()),
-        transLoadDoc(docKey),
-      ]);
-    } catch (e) { continue; }
-    for (const item of staticItems) {
-      if (overlay.units[item.id]) continue; // already covered by the backend scan
-      const text = item.chinese_translation || '';
-      const occurrences = text.split(oldTranslation).length - 1;
-      if (occurrences > 0) {
-        found.push({ doc_key: docKey, unit_key: item.id, old_text: text, new_text: text.split(oldTranslation).join(newTranslation), occurrences });
-      }
-    }
-  }
-  return found;
-}
-
+// The backend merges the packaged static index with the DB overlay itself
+// (app/routers/translations.py's sync-scan, backed by
+// app/data/term-scan-index.json - see scripts/build_term_scan_index.py),
+// so a single request here already covers every sentence in all 28 files,
+// edited or not.
 async function termSyncScanAndConfirm(pali, oldTranslation, newTranslation, termReason) {
   const params = new URLSearchParams({
     old_translation: oldTranslation, new_translation: newTranslation, part_docs: TERM_PART_DOCS.join(','),
   });
-  const [dbCandidates, staticCandidates] = await Promise.all([
-    fetch(`${API_BASE}/api/terminology/${encodeURIComponent(TERM_DOC_KEY)}/${encodeURIComponent(pali)}/sync-scan?${params}`)
-      .then(r => r.ok ? r.json() : []).catch(() => []),
-    termScanStaticCandidates(oldTranslation, newTranslation),
-  ]);
-  const candidates = [...dbCandidates, ...staticCandidates];
+  const candidates = await fetch(`${API_BASE}/api/terminology/${encodeURIComponent(TERM_DOC_KEY)}/${encodeURIComponent(pali)}/sync-scan?${params}`)
+    .then(r => r.ok ? r.json() : []).catch(() => []);
   if (!candidates.length) return;
 
   const defaultReason = `术语表统一：${pali} ${oldTranslation} → ${newTranslation}`;
@@ -4311,6 +4303,12 @@ async function renderVismHome() {
       <div class="vism-chapter-num">深度总结</div>
       <div class="title">《清净道论》逐章深度总结</div>
       <div class="desc">觉音尊者原著的结构性解读——三学框架、各章要义、修行次第与全书脉络的总览分析</div>
+    </div>
+    <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/terminology'">
+      <span class="icon">📚</span>
+      <div class="vism-chapter-num">术语表</div>
+      <div class="title">术语表</div>
+      <div class="desc">与《Papañcasūdanī 破除戏论》共用一张全书术语表 — 3498 条</div>
     </div>
   </div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载章节目录...</div></div>';
