@@ -75,9 +75,74 @@ MIN_SPACING_SECONDS = SERVER_WINDOW_SECONDS / CLIENT_MAX_CALLS  # 6.0s
 
 HTTP_TIMEOUT = 180
 
+# Live status for the local dashboard. This lives under docs/research/vism-data
+# because that is the directory the dashboard container bind-mounts; the
+# progress file next to this script is deliberately separate (it is the resume
+# ledger and must survive independently of any monitoring).
+STATUS_DIR = ROOT / "docs/research/vism-data/.retranslation-dashboard"
+RECENT_KEPT = 8
+
 
 class RateLimitError(RuntimeError):
     pass
+
+
+class StatusWriter:
+    """Publishes live progress for the dashboard to read.
+
+    Written atomically (temp file + rename) because the dashboard polls every
+    2 seconds and would otherwise eventually read a half-flushed file and show
+    a parse error instead of progress.
+    """
+
+    def __init__(self, path: Path, meta: dict):
+        self.path = path
+        self.state = dict(meta)
+        self.state.update({
+            "kind": "api-retranslate",
+            "status": "starting",
+            "pid": os.getpid(),
+            "started_at": time.time(),
+            "done_count": 0, "failed": 0, "rate_limited": 0,
+            "throughput_per_min": 0.0, "eta_minutes": None,
+            "current_unit": None, "recent": [], "latency": {},
+        })
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.flush()
+
+    def update(self, **fields) -> None:
+        self.state.update(fields)
+        self.flush()
+
+    def note_done(self, unit_key: str, text: str, elapsed: float, stats: dict,
+                  latencies: list, remaining: int) -> None:
+        rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0.0
+        recent = ([{"unit_key": unit_key, "text": text[:120], "at": time.time()}]
+                  + self.state.get("recent", []))[:RECENT_KEPT]
+        self.state.update({
+            "status": "running",
+            "done_count": stats["ok"], "failed": stats["failed"],
+            "rate_limited": stats["rate_limited"],
+            "current_unit": unit_key, "recent": recent,
+            "throughput_per_min": round(rate, 2),
+            "eta_minutes": round(remaining / rate, 1) if rate > 0 else None,
+            "latency": {
+                "min": round(min(latencies), 2), "max": round(max(latencies), 2),
+                "mean": round(sum(latencies) / len(latencies), 2),
+            } if latencies else {},
+        })
+        self.flush()
+
+    def flush(self) -> None:
+        self.state["updated_at"] = time.time()
+        tmp = self.path.with_suffix(".tmp")
+        try:
+            tmp.write_text(json.dumps(self.state, ensure_ascii=False), encoding="utf-8")
+            tmp.replace(self.path)
+        except Exception:
+            # Losing a status write must never interrupt translation - the
+            # dashboard is an observer, not part of the job.
+            pass
 
 
 def _request(url, *, method="GET", body=None, token=None, timeout=HTTP_TIMEOUT):
@@ -215,11 +280,17 @@ def main() -> None:
     ap.add_argument("--overwrite-human", action="store_true",
                     help="also replace sentences a person edited by hand (default: skip)")
     ap.add_argument("--progress", default=None, help="progress file (default: alongside this script)")
+    ap.add_argument("--status", default=None,
+                    help="live status file for the dashboard "
+                         "(default: docs/research/vism-data/.retranslation-dashboard/)")
     args = ap.parse_args()
 
     doc_key = f"vism:{args.chapter}"
     progress_path = Path(args.progress) if args.progress else (
         ROOT / f"scripts/.retranslate-{args.chapter}-progress.json"
+    )
+    status_path = Path(args.status) if args.status else (
+        STATUS_DIR / f"api-retranslate-vism-{args.chapter}.json"
     )
 
     rows = load_chapter_rows(args.chapter)
@@ -270,11 +341,20 @@ def main() -> None:
     started = time.monotonic()
     stats = {"ok": 0, "failed": 0, "rate_limited": 0, "retried": 0}
     latencies = []
-    print()
+    status = StatusWriter(status_path, {
+        "doc_key": doc_key, "chapter": args.chapter, "start": args.start,
+        "total": len(todo), "already_done": len(done),
+        "skipped_human": [r[0] for r in skipped_human],
+        "client_max_calls": CLIENT_MAX_CALLS, "server_max_calls": SERVER_MAX_CALLS,
+        "minutes_limit": args.minutes,
+    })
+    print(f"  live status -> {status_path}\n")
 
+    stop_reason = "finished"
     for i, (unit_key, pali, _old_zh, part_title) in enumerate(todo, 1):
         if args.minutes and (time.monotonic() - started) >= args.minutes * 60:
             print(f"\n-- reached {args.minutes:g} min limit, stopping (resumable) --")
+            stop_reason = "time_limit"
             break
 
         context = f"清净道论 第{args.chapter}品" + (f" {part_title}" if part_title else "")
@@ -291,6 +371,9 @@ def main() -> None:
                 stats["rate_limited"] += 1
                 delay = limiter.backoff_after_429()
                 print(f"  !! 429 on {unit_key} (attempt {attempt}) - backing off {delay:.1f}s")
+                status.update(status="rate_limited", current_unit=unit_key,
+                              rate_limited=stats["rate_limited"],
+                              backoff_until=time.time() + delay)
                 time.sleep(delay)
                 stats["retried"] += 1
             except Exception as exc:
@@ -299,6 +382,7 @@ def main() -> None:
 
         if not text:
             stats["failed"] += 1
+            status.update(failed=stats["failed"], current_unit=unit_key)
             continue
 
         try:
@@ -309,6 +393,7 @@ def main() -> None:
         except Exception as exc:
             print(f"  !! {unit_key} save failed: {exc}")
             stats["failed"] += 1
+            status.update(failed=stats["failed"], current_unit=unit_key)
             continue
 
         stats["ok"] += 1
@@ -318,10 +403,19 @@ def main() -> None:
 
         elapsed = time.monotonic() - started
         rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0
+        status.note_done(unit_key, text, elapsed, stats, latencies,
+                         remaining=len(todo) - stats["ok"] - stats["failed"])
         print(f"[{i}/{len(todo)}] {unit_key}  {elapsed / 60:5.1f}min  "
               f"{rate:4.1f}/min  429s={stats['rate_limited']}  {text[:48]}")
 
     elapsed = time.monotonic() - started
+    remaining = len(todo) - stats["ok"] - stats["failed"]
+    status.update(status="stopped" if remaining else "done",
+                  stop_reason=stop_reason, current_unit=None,
+                  done_count=stats["ok"], failed=stats["failed"],
+                  rate_limited=stats["rate_limited"], remaining=remaining,
+                  elapsed_minutes=round(elapsed / 60, 1), eta_minutes=None)
+
     print(f"\n{'=' * 60}")
     print(f"translated : {stats['ok']}")
     print(f"failed     : {stats['failed']}")

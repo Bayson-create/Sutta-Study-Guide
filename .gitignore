@@ -10,3 +10,6 @@ azure/
 
 # Bulk retranslation progress files (local run state, not content)
 scripts/.retranslate-*-progress.json
+
+# Local retranslation dashboard runtime state (logs + live status files)
+docs/research/vism-data/.retranslation-dashboard/
