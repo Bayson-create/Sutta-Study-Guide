@@ -358,10 +358,18 @@ a:hover { text-decoration: underline; }
 .modal-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center;
   justify-content: center; z-index: 1000; padding: 20px;
+  /* On mobile, focusing an input opens the virtual keyboard, which shrinks
+     the visual viewport without necessarily reflowing this fixed overlay -
+     without a scroll escape hatch, the submit button can end up rendered
+     below the keyboard where no tap can reach it. Letting the overlay
+     itself scroll keeps every control reachable regardless. */
+  overflow-y: auto;
 }
 .modal-box {
   background: var(--card-bg); border-radius: var(--radius); padding: 28px 26px; max-width: 380px; width: 100%;
   box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  max-height: calc(100vh - 40px); overflow-y: auto; margin: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .modal-box h3 { margin: 0 0 4px; color: var(--text); }
 .modal-box .modal-sub { font-size: 0.82em; color: var(--text-light); margin-bottom: 18px; }
@@ -764,6 +772,61 @@ a:hover { text-decoration: underline; }
 .papanca-sutta-marker-link:hover, .papanca-sutta-marker-link:focus-visible { text-decoration: underline; }
 .papanca-pali-term { font-weight: 600; font-style: italic; color: var(--accent); font-size: 0.95em; }
 .papanca-term-note { font-size: 0.9em; line-height: 1.6; color: var(--text-light); }
+
+/* === Shared per-sentence translation editor (vism 逐句三语对照 + papanca) === */
+.trans-slot { position: relative; }
+.trans-empty { color: var(--text-light); font-style: italic; font-size: 0.95em; }
+.trans-actions { display: flex; gap: 6px; margin-top: 4px; opacity: 0.55; transition: opacity 0.15s; flex-wrap: wrap; }
+.trans-slot:hover .trans-actions, .trans-actions:focus-within { opacity: 1; }
+.trans-btn {
+  font-size: 0.72em; padding: 2px 8px; border: 1px solid var(--border); border-radius: 4px;
+  background: var(--card-bg); color: var(--text-light); cursor: pointer; font-family: inherit;
+  transition: all 0.15s; line-height: 1.6;
+}
+.trans-btn:hover { border-color: var(--accent-light); color: var(--accent); background: var(--hover-bg); }
+.trans-btn:disabled { opacity: 0.5; cursor: default; }
+.trans-meta { font-size: 0.72em; color: var(--text-light); margin-top: 3px; }
+.trans-meta .trans-reason-toggle { cursor: pointer; border-bottom: 1px dashed var(--text-light); }
+.trans-note-view { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
+.trans-form { margin-top: 6px; padding: 10px; background: var(--accent-bg); border-radius: 6px; border: 1px solid var(--border); }
+.trans-form label { display: block; font-size: 0.75em; color: var(--text-light); margin: 6px 0 2px; }
+.trans-form label:first-child { margin-top: 0; }
+.trans-form textarea, .trans-form input[type=text] {
+  width: 100%; font-family: inherit; font-size: 0.92em; padding: 6px 8px; border: 1px solid var(--border);
+  border-radius: 4px; background: var(--card-bg); color: var(--text); resize: vertical;
+}
+.trans-form .trans-hint { font-size: 0.7em; color: var(--text-light); margin-top: 2px; }
+.trans-form-actions { display: flex; gap: 8px; margin-top: 10px; }
+.trans-form-actions .trans-btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.trans-form-actions .trans-btn.primary:hover { background: var(--accent-light); }
+.trans-diff { margin-top: 8px; padding: 10px; background: var(--accent-bg); border-radius: 6px; border: 1px solid var(--border); font-size: 0.9em; }
+.trans-diff-old { color: var(--text-light); text-decoration: line-through; margin-bottom: 4px; }
+.trans-diff-new { color: var(--text); font-weight: 600; }
+.trans-history { margin-top: 8px; font-size: 0.82em; }
+.trans-history-item { padding: 6px 0; border-top: 1px solid var(--border); }
+.trans-history-item .trans-history-meta { color: var(--text-light); font-size: 0.85em; }
+.trans-stale-flag { color: #a04040; font-size: 0.72em; margin-left: 4px; }
+
+/* Terminology sync-confirmation modal */
+.term-sync-overlay {
+  position: fixed; inset: 0; background: rgba(40,32,20,0.45); z-index: 1000;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.term-sync-modal {
+  background: var(--card-bg); border-radius: var(--radius); padding: 24px;
+  max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; box-shadow: var(--shadow-hover);
+}
+.term-sync-modal h3 { color: var(--accent); margin-bottom: 8px; }
+.term-sync-modal .trans-hint { font-size: 0.85em; margin-bottom: 14px; }
+.term-sync-modal label:not(.term-sync-item) { display: block; font-size: 0.8em; color: var(--text-light); margin: 10px 0 4px; }
+.term-sync-modal input[type=text] {
+  width: 100%; font-family: inherit; font-size: 0.92em; padding: 6px 8px;
+  border: 1px solid var(--border); border-radius: 4px; background: var(--bg);
+}
+.term-sync-list { max-height: 40vh; overflow-y: auto; border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; }
+.term-sync-item { display: flex; gap: 8px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+.term-sync-item:last-child { border-bottom: none; }
+.term-sync-item input { margin-top: 4px; cursor: pointer; }
 
 /* === 法义溯源 Dhamma Lineage === */
 .site-nav { display: flex; justify-content: center; gap: 22px; margin-top: 14px; font-size: 0.92em; flex-wrap: wrap; }
@@ -3001,6 +3064,220 @@ function renderMajjhimaHome() {
   app.innerHTML = html;
 }
 
+// === Shared per-sentence translation overlay ===
+// Used by both the vism 逐句三语对照 reader and the papancasudani part1-3
+// readers: a shared DB overlay sits on top of each doc's static JSON (see
+// backend app/routers/translations.py). The static JSON's own translation,
+// if any, is the frozen "default" - editing only ever moves "current"; the
+// full history stays inspectable/revertable by anyone, editing requires
+// login. Loaded once per doc_key per page load; edits patch the cache
+// in-place, no full-page reload needed to see them.
+const TRANS_DOC_CACHE = {};       // doc_key -> { doc_key, units: {unit_key: unitObj} }
+const TRANS_STATIC_MAP = {};      // "doc|unit" -> { pali, context, text, note } (from static JSON, for cancel/mitra)
+const TRANS_PENDING_MITRA = {};   // "doc|unit" -> translated text awaiting overwrite confirmation
+
+async function transLoadDoc(docKey) {
+  if (TRANS_DOC_CACHE[docKey]) return TRANS_DOC_CACHE[docKey];
+  const data = await fetch(`${API_BASE}/api/translations?doc=${encodeURIComponent(docKey)}`)
+    .then(r => r.ok ? r.json() : { doc_key: docKey, units: {} })
+    .catch(() => ({ doc_key: docKey, units: {} }));
+  TRANS_DOC_CACHE[docKey] = data;
+  return data;
+}
+function transUnit(docKey, unitKey) {
+  const doc = TRANS_DOC_CACHE[docKey];
+  return (doc && doc.units[unitKey]) || null;
+}
+async function transSave(docKey, unitKey, body) {
+  const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
+  const unit = await res.json();
+  const doc = TRANS_DOC_CACHE[docKey] || (TRANS_DOC_CACHE[docKey] = { doc_key: docKey, units: {} });
+  doc.units[unitKey] = unit;
+  return unit;
+}
+async function transHistory(docKey, unitKey) {
+  const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}/history`);
+  return res.ok ? res.json() : [];
+}
+async function mitraTranslate(pali, context) {
+  const res = await fetch(`${API_BASE}/api/mitra/translate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+    body: JSON.stringify({ pali, context: context || '' }),
+  });
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || 'Dharmamitra 翻译失败');
+  return (await res.json()).text;
+}
+
+// Renders the read-only (or login-gated action bar) view of one sentence's
+// translation slot. `pali`/`context` are kept in TRANS_STATIC_MAP so later
+// clicks (edit/mitra/cancel) don't need to re-derive them from the DOM.
+function transSlotHtml(docKey, unitKey, staticText, staticNote, pali, context) {
+  // Static per-unit notes can arrive as non-string pipeline metadata from
+  // some source files (e.g. a list of English processing notes rather than
+  // a reader-facing Chinese annotation) - never let that reach the DB or
+  // crash the row.
+  if (typeof staticNote !== 'string') staticNote = '';
+  TRANS_STATIC_MAP[`${docKey}|${unitKey}`] = { pali: pali || '', context: context || '', text: staticText || '', note: staticNote };
+  const unit = transUnit(docKey, unitKey);
+  const text = unit ? unit.current_text : (staticText || '');
+  const note = unit ? unit.note : staticNote;
+  const isEmpty = !text || !text.trim();
+  let html = `<div class="trans-slot" data-doc="${esc(docKey)}" data-unit="${esc(unitKey)}">`;
+  html += `<div class="trans-text" data-role="text">${isEmpty ? '<span class="trans-empty">（尚无译文，欢迎认领翻译）</span>' : esc(text)}</div>`;
+  if (note && note.trim()) html += `<div class="trans-note-view" data-role="note">${esc(note)}</div>`;
+  if (unit && unit.last_reason) {
+    const who = unit.updated_by ? esc(unit.updated_by.display_name) : '匿名';
+    const when = unit.updated_at ? new Date(unit.updated_at).toLocaleDateString('zh-CN') : '';
+    html += `<div class="trans-meta">最后由 ${who} 修改${when ? ' · ' + when : ''} · 理由：${esc(unit.last_reason)}</div>`;
+  }
+  if (communityCurrentUser) {
+    html += `<div class="trans-actions">
+      <button class="trans-btn" data-act="${isEmpty ? 'new' : 'edit'}">${isEmpty ? '＋ 新建译文' : '✎ 编辑'}</button>
+      <button class="trans-btn" data-act="mitra">✦ Dharmamitra</button>
+      ${unit ? '<button class="trans-btn" data-act="history">历史</button>' : ''}
+    </div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+function transRerenderSlot(docKey, unitKey) {
+  const el = document.querySelector(`.trans-slot[data-doc="${CSS.escape(docKey)}"][data-unit="${CSS.escape(unitKey)}"]`);
+  if (!el) return;
+  const s = TRANS_STATIC_MAP[`${docKey}|${unitKey}`] || {};
+  el.outerHTML = transSlotHtml(docKey, unitKey, s.text, s.note, s.pali, s.context);
+}
+
+function transRenderForm(docKey, unitKey, text, note, reasonPlaceholder) {
+  const el = document.querySelector(`.trans-slot[data-doc="${CSS.escape(docKey)}"][data-unit="${CSS.escape(unitKey)}"]`);
+  if (!el) return;
+  el.innerHTML = `<div class="trans-form">
+    <label>译文</label>
+    <textarea data-role="text-input" rows="3">${esc(text || '')}</textarea>
+    <label>注释</label>
+    <textarea data-role="note-input" rows="2">${esc(note || '')}</textarea>
+    <label>修改理由 <span class="trans-hint">（所有人可见）</span></label>
+    <input type="text" data-role="reason-input" placeholder="${esc(reasonPlaceholder || '例如：订正译名、补全首译')}">
+    <div class="trans-form-actions">
+      <button class="trans-btn primary" data-act="save">保存</button>
+      <button class="trans-btn" data-act="cancel">取消</button>
+    </div>
+  </div>`;
+  el.querySelector('[data-role="text-input"]').focus();
+}
+
+async function transHandleClick(e) {
+  const btn = e.target.closest('[data-act]');
+  if (!btn) return;
+  const slot = btn.closest('.trans-slot');
+  if (!slot) return;
+  const docKey = slot.dataset.doc, unitKey = slot.dataset.unit;
+  const key = `${docKey}|${unitKey}`;
+  const act = btn.dataset.act;
+
+  if (act === 'edit' || act === 'new') {
+    const unit = transUnit(docKey, unitKey);
+    const s = TRANS_STATIC_MAP[key] || {};
+    transRenderForm(docKey, unitKey, unit ? unit.current_text : s.text, unit ? unit.note : s.note, act === 'new' ? '例如：首译' : '');
+  } else if (act === 'cancel') {
+    transRerenderSlot(docKey, unitKey);
+  } else if (act === 'save') {
+    const form = slot.querySelector('.trans-form');
+    const text = form.querySelector('[data-role="text-input"]').value.trim();
+    const note = form.querySelector('[data-role="note-input"]').value.trim();
+    const reason = form.querySelector('[data-role="reason-input"]').value.trim();
+    if (!text) { alert('译文不能为空'); return; }
+    if (!reason && !confirm('未填写修改理由，仍要保存？')) return;
+    const saveBtn = form.querySelector('[data-act="save"]');
+    saveBtn.disabled = true; saveBtn.textContent = '保存中…';
+    try {
+      await transSave(docKey, unitKey, { text, note, reason, source: 'human' });
+      transRerenderSlot(docKey, unitKey);
+    } catch (err) {
+      alert(err.message);
+      saveBtn.disabled = false; saveBtn.textContent = '保存';
+    }
+  } else if (act === 'mitra') {
+    const s = TRANS_STATIC_MAP[key] || {};
+    if (!s.pali) { alert('缺少巴利语原文，无法调用 Dharmamitra'); return; }
+    btn.disabled = true; btn.textContent = '翻译中…';
+    try {
+      const translated = await mitraTranslate(s.pali, s.context);
+      const unit = transUnit(docKey, unitKey);
+      const currentText = unit ? unit.current_text : s.text;
+      if (!currentText || !currentText.trim()) {
+        await transSave(docKey, unitKey, { text: translated, note: unit ? unit.note : s.note, reason: 'Dharmamitra 首译', source: 'dharmamitra' });
+        transRerenderSlot(docKey, unitKey);
+      } else {
+        TRANS_PENDING_MITRA[key] = translated;
+        slot.innerHTML = `<div class="trans-text">${esc(currentText)}</div>
+          <div class="trans-diff">
+            <div class="trans-diff-old">${esc(currentText)}</div>
+            <div class="trans-diff-new">${esc(translated)}</div>
+            <label>修改理由 <span class="trans-hint">（所有人可见）</span></label>
+            <input type="text" data-role="reason-input" value="Dharmamitra 机器翻译覆盖">
+            <div class="trans-form-actions">
+              <button class="trans-btn primary" data-act="mitra-confirm">覆盖现有译文</button>
+              <button class="trans-btn" data-act="mitra-cancel">取消</button>
+            </div>
+          </div>`;
+      }
+    } catch (err) {
+      alert(err.message);
+      btn.disabled = false; btn.textContent = '✦ Dharmamitra';
+    }
+  } else if (act === 'mitra-confirm') {
+    const translated = TRANS_PENDING_MITRA[key];
+    const reason = slot.querySelector('[data-role="reason-input"]').value.trim() || 'Dharmamitra 机器翻译覆盖';
+    const unit = transUnit(docKey, unitKey);
+    try {
+      await transSave(docKey, unitKey, { text: translated, note: unit ? unit.note : '', reason, source: 'dharmamitra' });
+      delete TRANS_PENDING_MITRA[key];
+      transRerenderSlot(docKey, unitKey);
+    } catch (err) { alert(err.message); }
+  } else if (act === 'mitra-cancel') {
+    delete TRANS_PENDING_MITRA[key];
+    transRerenderSlot(docKey, unitKey);
+  } else if (act === 'history') {
+    btn.disabled = true; btn.textContent = '加载中…';
+    const revisions = await transHistory(docKey, unitKey);
+    btn.disabled = false; btn.textContent = '历史';
+    let html = '<div class="trans-history">';
+    if (!revisions.length) {
+      html += '<div class="trans-history-item">暂无历史记录</div>';
+    } else {
+      revisions.forEach((rev, i) => {
+        const who = rev.author ? esc(rev.author.display_name) : '匿名';
+        const when = new Date(rev.created_at).toLocaleString('zh-CN');
+        html += `<div class="trans-history-item">
+          <div>${esc(rev.text)}</div>
+          <div class="trans-history-meta">${who} · ${when} · ${rev.source === 'dharmamitra' ? 'Dharmamitra' : '人工'} · 理由：${esc(rev.reason || '（未填写）')}</div>
+          ${communityCurrentUser ? `<button class="trans-btn" data-act="restore" data-idx="${i}">恢复此版本</button>` : ''}
+        </div>`;
+      });
+    }
+    html += '<button class="trans-btn" data-act="history-close">收起</button></div>';
+    slot.dataset.revisions = JSON.stringify(revisions);
+    const existing = slot.querySelector('.trans-history');
+    if (existing) existing.outerHTML = html; else slot.insertAdjacentHTML('beforeend', html);
+  } else if (act === 'history-close') {
+    const existing = slot.querySelector('.trans-history');
+    if (existing) existing.remove();
+  } else if (act === 'restore') {
+    const revisions = JSON.parse(slot.dataset.revisions || '[]');
+    const rev = revisions[Number(btn.dataset.idx)];
+    if (!rev) return;
+    transRenderForm(docKey, unitKey, rev.text, rev.note, `恢复到 ${new Date(rev.created_at).toLocaleDateString('zh-CN')} 的版本`);
+  }
+}
+app.addEventListener('click', transHandleClick);
+
 // === RESEARCH: PAPANCASUDANI HOME ===
 function renderPapancasudaniHome() {
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima'">← 返回中部</button>`;
@@ -3056,54 +3333,37 @@ function renderPapancaSuttaMarker(context) {
   }).join(' / ');
   return `<div class="papanca-sutta-marker" data-sutta-context="${esc(context.context_id || '')}">📖 新经文注释开始：${linkedName}</div>`;
 }
-async function renderPapancasudaniPart1() {
-  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
-  html += `<div class="cat-header"><h2>📖 第一部分：根本法门经注释</h2><div class="cat-en">Mūlapariyāyasuttavaṇṇanā — Pāli-Chinese Parallel Reading</div></div>`;
-  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
-  app.innerHTML = html;
-  try {
-    if (!_papancasudaniPt1Cache) {
-      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json');
-      _papancasudaniPt1Cache = await res.json();
-    }
-    let bodyHtml = '<div class="reader-content papanca-reader">';
-    for (const item of _papancasudaniPt1Cache) {
-      bodyHtml += renderPapancaSuttaMarker(item.source && item.source.sutta_context);
-      bodyHtml += '<div class="papanca-block">';
-      bodyHtml += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
-      bodyHtml += `<div class="papanca-zh">${esc(item.chinese_translation)}</div>`;
-      if (item.translation_note && item.translation_note.length > 0) {
-        for (const note of item.translation_note) {
-          bodyHtml += `<div class="papanca-tn">${esc(formatPapancaNote(note))}</div>`;
-        }
-      }
-      bodyHtml += '</div>';
-    }
-    bodyHtml += '</div>';
-    app.querySelector('.loading').outerHTML = bodyHtml;
-  } catch (e) {
-    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
-  }
-}
+const PAPANCA_PART_META = {
+  1: { title: '📖 第一部分：根本法门经注释', en: 'Mūlapariyāyasuttavaṇṇanā — Pāli-Chinese Parallel Reading', file: 'part1/bilingual.json' },
+  2: { title: '📖 第二部分：中部多部经注释', en: 'Papañcasūdanī — Part 2 Pāli-Chinese Parallel Reading', file: 'part2/bilingual.json' },
+  3: { title: '📖 第三部分：中部多部经注释', en: 'Papañcasūdanī — Part 3 Pāli-Chinese Parallel Reading', file: 'part3/bilingual.json' },
+};
+const _papancasudaniPartCache = {};
 
-// === RESEARCH: PAPANCASUDANI PART 2 READER ===
-let _papancasudaniPt2Cache = null;
-async function renderPapancasudaniPart2() {
+// Each papanca item already carries a stable id (e.g. "pt1-mula-para-001")
+// straight from bilingual.json, and its own chinese_translation is what the
+// translation overlay treats as the frozen default for that unit.
+async function renderPapancasudaniPart(partNum) {
+  const meta = PAPANCA_PART_META[partNum];
+  const docKey = `papanca:part${partNum}`;
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
-  html += `<div class="cat-header"><h2>📖 第二部分：中部多部经注释</h2><div class="cat-en">Papañcasūdanī — Part 2 Pāli-Chinese Parallel Reading</div></div>`;
+  html += `<div class="cat-header"><h2>${meta.title}</h2><div class="cat-en">${esc(meta.en)}</div></div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
   app.innerHTML = html;
   try {
-    if (!_papancasudaniPt2Cache) {
-      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json');
-      _papancasudaniPt2Cache = await res.json();
+    if (!_papancasudaniPartCache[partNum]) {
+      const res = await fetch(`research/pali-source-texts/sutta/majjhima/papancasudani/${meta.file}`);
+      _papancasudaniPartCache[partNum] = await res.json();
     }
+    await communityFetchCurrentUser();
+    await transLoadDoc(docKey);
     let bodyHtml = '<div class="reader-content papanca-reader">';
-    for (const item of _papancasudaniPt2Cache) {
+    for (const item of _papancasudaniPartCache[partNum]) {
+      const context = (item.source && item.source.sutta_context && item.source.sutta_context.commentary_section_raw) || '';
       bodyHtml += renderPapancaSuttaMarker(item.source && item.source.sutta_context);
       bodyHtml += '<div class="papanca-block">';
       bodyHtml += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
-      bodyHtml += `<div class="papanca-zh">${esc(item.chinese_translation)}</div>`;
+      bodyHtml += transSlotHtml(docKey, item.id, item.chinese_translation, '', item.corrected_pali, context);
       if (item.translation_note && item.translation_note.length > 0) {
         for (const note of item.translation_note) {
           bodyHtml += `<div class="papanca-tn">${esc(formatPapancaNote(note))}</div>`;
@@ -3117,41 +3377,44 @@ async function renderPapancasudaniPart2() {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
 }
-
-// === RESEARCH: PAPANCASUDANI PART 3 READER ===
-let _papancasudaniPt3Cache = null;
-async function renderPapancasudaniPart3() {
-  let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
-  html += `<div class="cat-header"><h2>📖 第三部分：中部多部经注释</h2><div class="cat-en">Papañcasūdanī — Part 3 Pāli-Chinese Parallel Reading</div></div>`;
-  html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
-  app.innerHTML = html;
-  try {
-    if (!_papancasudaniPt3Cache) {
-      const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json');
-      _papancasudaniPt3Cache = await res.json();
-    }
-    let bodyHtml = '<div class="reader-content papanca-reader">';
-    for (const item of _papancasudaniPt3Cache) {
-      bodyHtml += renderPapancaSuttaMarker(item.source && item.source.sutta_context);
-      bodyHtml += '<div class="papanca-block">';
-      bodyHtml += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
-      bodyHtml += `<div class="papanca-zh">${esc(item.chinese_translation)}</div>`;
-      if (item.translation_note && item.translation_note.length > 0) {
-        for (const note of item.translation_note) {
-          bodyHtml += `<div class="papanca-tn">${esc(formatPapancaNote(note))}</div>`;
-        }
-      }
-      bodyHtml += '</div>';
-    }
-    bodyHtml += '</div>';
-    app.querySelector('.loading').outerHTML = bodyHtml;
-  } catch (e) {
-    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
-  }
-}
+async function renderPapancasudaniPart1() { return renderPapancasudaniPart(1); }
+async function renderPapancasudaniPart2() { return renderPapancasudaniPart(2); }
+async function renderPapancasudaniPart3() { return renderPapancasudaniPart(3); }
 
 // === RESEARCH: PAPANCASUDANI TERMINOLOGY READER ===
 let _papancasudaniTermCache = null;
+// Terms are shared across all three parts, so an edit here is deliberately
+// heavier-weight than a translation edit: saving prompts a scan of every
+// sentence in part1-3 that still contains the old rendering, and the user
+// picks which of those to update alongside the term itself (see
+// termSyncScanAndConfirm below). doc_key "papanca" is the term table's own
+// overlay namespace, distinct from the per-part translation doc_keys.
+const TERM_DOC_KEY = 'papanca';
+const TERM_PART_DOCS = ['papanca:part1', 'papanca:part2', 'papanca:part3'];
+let _papancasudaniTermOverlay = null;
+
+function termCurrentEntry(pali) {
+  return (_papancasudaniTermOverlay && _papancasudaniTermOverlay.entries[pali]) || null;
+}
+
+function termRowHtml(item) {
+  const entry = termCurrentEntry(item.pali);
+  const translation = entry ? entry.current_translation : item.preferred_translation;
+  let metaHtml = '';
+  if (entry && entry.last_reason) {
+    const who = entry.updated_by ? esc(entry.updated_by.display_name) : '匿名';
+    metaHtml = `<div class="trans-meta">最后由 ${who} 修改 · 理由：${esc(entry.last_reason)}</div>`;
+  }
+  const editBtn = communityCurrentUser ? `<button class="trans-btn" data-term-act="edit">✎ 编辑</button>` : '';
+  return `<tr data-pali="${esc(item.pali)}">
+    <td><span class="papanca-pali-term">${esc(item.pali)}</span></td>
+    <td><strong data-role="term-text">${esc(translation)}</strong>${metaHtml}${editBtn ? `<div class="trans-actions">${editBtn}</div>` : ''}</td>
+    <td>${esc(item.part_of_speech)}</td>
+    <td>${item.alternative_translations && item.alternative_translations.length ? item.alternative_translations.map(t => esc(t)).join('、') : '—'}</td>
+    <td class="papanca-term-note">${esc(item.usage_note)}</td>
+  </tr>`;
+}
+
 async function renderPapancasudaniTerminology() {
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
   html += `<div class="cat-header"><h2>📚 术语表</h2><div class="cat-en">Glossary of Key Terms — Preferred Translations & Usage Notes</div></div>`;
@@ -3162,22 +3425,176 @@ async function renderPapancasudaniTerminology() {
       const res = await fetch('research/pali-source-texts/sutta/majjhima/papancasudani/terminology.json');
       _papancasudaniTermCache = await res.json();
     }
+    await communityFetchCurrentUser();
+    _papancasudaniTermOverlay = await fetch(`${API_BASE}/api/terminology?doc=${encodeURIComponent(TERM_DOC_KEY)}`)
+      .then(r => r.ok ? r.json() : { entries: {} }).catch(() => ({ entries: {} }));
     let bodyHtml = '<div class="reader-content">';
-    bodyHtml += '<table class="sutta-table papanca-term-table"><thead><tr><th>巴利语</th><th>首选译法</th><th>词性</th><th>替代译法</th><th>用法说明</th></tr></thead><tbody>';
+    bodyHtml += '<table class="sutta-table papanca-term-table" id="papanca-term-table"><thead><tr><th>巴利语</th><th>首选译法</th><th>词性</th><th>替代译法</th><th>用法说明</th></tr></thead><tbody>';
     for (const item of _papancasudaniTermCache) {
-      bodyHtml += '<tr>';
-      bodyHtml += `<td><span class="papanca-pali-term">${esc(item.pali)}</span></td>`;
-      bodyHtml += `<td><strong>${esc(item.preferred_translation)}</strong></td>`;
-      bodyHtml += `<td>${esc(item.part_of_speech)}</td>`;
-      bodyHtml += `<td>${item.alternative_translations && item.alternative_translations.length ? item.alternative_translations.map(t => esc(t)).join('、') : '—'}</td>`;
-      bodyHtml += `<td class="papanca-term-note">${esc(item.usage_note)}</td>`;
-      bodyHtml += '</tr>';
+      bodyHtml += termRowHtml(item);
     }
     bodyHtml += '</tbody></table></div>';
     app.querySelector('.loading').outerHTML = bodyHtml;
+    document.getElementById('papanca-term-table').addEventListener('click', termHandleClick);
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
   }
+}
+
+function termRerenderRow(pali) {
+  const item = _papancasudaniTermCache.find(t => t.pali === pali);
+  const tr = document.querySelector(`#papanca-term-table tr[data-pali="${CSS.escape(pali)}"]`);
+  if (item && tr) tr.outerHTML = termRowHtml(item);
+}
+
+async function termHandleClick(e) {
+  const btn = e.target.closest('[data-term-act]');
+  if (!btn) return;
+  const tr = btn.closest('tr');
+  const pali = tr.dataset.pali;
+  const act = btn.dataset.termAct;
+  const item = _papancasudaniTermCache.find(t => t.pali === pali);
+  const entry = termCurrentEntry(pali);
+  const currentTranslation = entry ? entry.current_translation : item.preferred_translation;
+
+  if (act === 'edit') {
+    const cell = tr.children[1];
+    cell.innerHTML = `<div class="trans-form">
+      <label>译法</label>
+      <input type="text" data-role="term-input" value="${esc(currentTranslation)}">
+      <label>修改理由 <span class="trans-hint">（所有人可见；保存后将扫描全书三部分并让你确认是否同步替换）</span></label>
+      <input type="text" data-role="term-reason">
+      <div class="trans-form-actions">
+        <button class="trans-btn primary" data-term-act="save">保存</button>
+        <button class="trans-btn" data-term-act="cancel">取消</button>
+      </div>
+    </div>`;
+    cell.querySelector('[data-role="term-input"]').focus();
+  } else if (act === 'cancel') {
+    termRerenderRow(pali);
+  } else if (act === 'save') {
+    const cell = tr.children[1];
+    const newTranslation = cell.querySelector('[data-role="term-input"]').value.trim();
+    const reason = cell.querySelector('[data-role="term-reason"]').value.trim();
+    if (!newTranslation) { alert('译法不能为空'); return; }
+    if (!reason && !confirm('未填写修改理由，仍要保存？')) return;
+    const saveBtn = cell.querySelector('[data-term-act="save"]');
+    saveBtn.disabled = true; saveBtn.textContent = '保存中…';
+    try {
+      const res = await fetch(`${API_BASE}/api/terminology/${encodeURIComponent(TERM_DOC_KEY)}/${encodeURIComponent(pali)}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ translation: newTranslation, reason }),
+      });
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
+      const updated = await res.json();
+      _papancasudaniTermOverlay.entries[pali] = updated;
+      termRerenderRow(pali);
+      if (newTranslation !== currentTranslation) {
+        await termSyncScanAndConfirm(pali, currentTranslation, newTranslation, reason);
+      }
+    } catch (err) {
+      alert(err.message);
+    }
+  }
+}
+
+// After a term's translation changes, find every sentence in part1-3 whose
+// current text still contains the old rendering and let the user pick
+// which ones to update - a blind find/replace would corrupt any sentence
+// that happens to share a common single-character term (e.g. 法, 想).
+// The backend can only scan sentences that already have an overlay row
+// (app/routers/translations.py's sync-scan queries the `translations`
+// table). Untouched sentences still live only in the static bilingual.json
+// files the backend never sees, so those are scanned here and merged in -
+// each such candidate carries `old_text` so sync-apply can create that
+// row's overlay with the pre-replacement text as its frozen default.
+async function termScanStaticCandidates(oldTranslation, newTranslation) {
+  const found = [];
+  for (let p = 1; p <= 3; p++) {
+    const docKey = `papanca:part${p}`;
+    let staticItems, overlay;
+    try {
+      [staticItems, overlay] = await Promise.all([
+        fetch(`research/pali-source-texts/sutta/majjhima/papancasudani/part${p}/bilingual.json`).then(r => r.json()),
+        transLoadDoc(docKey),
+      ]);
+    } catch (e) { continue; }
+    for (const item of staticItems) {
+      if (overlay.units[item.id]) continue; // already covered by the backend scan
+      const text = item.chinese_translation || '';
+      const occurrences = text.split(oldTranslation).length - 1;
+      if (occurrences > 0) {
+        found.push({ doc_key: docKey, unit_key: item.id, old_text: text, new_text: text.split(oldTranslation).join(newTranslation), occurrences });
+      }
+    }
+  }
+  return found;
+}
+
+async function termSyncScanAndConfirm(pali, oldTranslation, newTranslation, termReason) {
+  const params = new URLSearchParams({
+    old_translation: oldTranslation, new_translation: newTranslation, part_docs: TERM_PART_DOCS.join(','),
+  });
+  const [dbCandidates, staticCandidates] = await Promise.all([
+    fetch(`${API_BASE}/api/terminology/${encodeURIComponent(TERM_DOC_KEY)}/${encodeURIComponent(pali)}/sync-scan?${params}`)
+      .then(r => r.ok ? r.json() : []).catch(() => []),
+    termScanStaticCandidates(oldTranslation, newTranslation),
+  ]);
+  const candidates = [...dbCandidates, ...staticCandidates];
+  if (!candidates.length) return;
+
+  const defaultReason = `术语表统一：${pali} ${oldTranslation} → ${newTranslation}`;
+  let itemsHtml = candidates.map((c, i) => `
+    <label class="term-sync-item">
+      <input type="checkbox" data-role="sync-check" data-idx="${i}" checked>
+      <div>
+        <div class="trans-diff-old">${esc(c.old_text)}</div>
+        <div class="trans-diff-new">${esc(c.new_text)}</div>
+        <div class="trans-history-meta">${esc(c.doc_key)} · 出现 ${c.occurrences} 处</div>
+      </div>
+    </label>`).join('');
+
+  const overlay = document.createElement('div');
+  overlay.className = 'term-sync-overlay';
+  overlay.innerHTML = `<div class="term-sync-modal">
+    <h3>同步术语修改到已有译文？</h3>
+    <p class="trans-hint">「${esc(pali)}」的译法已改为「${esc(newTranslation)}」。以下 ${candidates.length} 句现有译文仍包含旧译「${esc(oldTranslation)}」，可勾选需要一并更新的句子（默认全选）。</p>
+    <div class="term-sync-list">${itemsHtml}</div>
+    <label>同步理由</label>
+    <input type="text" id="term-sync-reason" value="${esc(defaultReason)}">
+    <div class="trans-form-actions">
+      <button class="trans-btn primary" id="term-sync-apply">同步选中的句子</button>
+      <button class="trans-btn" id="term-sync-skip">不同步，保留原文</button>
+    </div>
+  </div>`;
+  document.body.appendChild(overlay);
+
+  return new Promise(resolve => {
+    overlay.querySelector('#term-sync-skip').addEventListener('click', () => { overlay.remove(); resolve(); });
+    overlay.querySelector('#term-sync-apply').addEventListener('click', async () => {
+      const applyBtn = overlay.querySelector('#term-sync-apply');
+      applyBtn.disabled = true; applyBtn.textContent = '同步中…';
+      const reason = overlay.querySelector('#term-sync-reason').value.trim() || defaultReason;
+      const items = [...overlay.querySelectorAll('[data-role="sync-check"]:checked')].map(cb => {
+        const c = candidates[Number(cb.dataset.idx)];
+        return { doc_key: c.doc_key, unit_key: c.unit_key, new_text: c.new_text, old_text: c.old_text };
+      });
+      try {
+        await fetch(`${API_BASE}/api/terminology/${encodeURIComponent(TERM_DOC_KEY)}/${encodeURIComponent(pali)}/sync-apply`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+          body: JSON.stringify({ reason, items }),
+        });
+        // Invalidate any already-loaded translation doc caches for the
+        // affected parts so a reader who navigates there next sees the
+        // synced text instead of a stale in-memory copy.
+        for (const d of TERM_PART_DOCS) delete TRANS_DOC_CACHE[d];
+      } catch (err) { alert(err.message); }
+      overlay.remove();
+      resolve();
+    });
+  });
 }
 
 // === RESEARCH: CONCEPTS READER ===
@@ -4000,23 +4417,56 @@ function vismEnNotesHtml(notes) {
   return html;
 }
 
-function renderVismParallel(peData) {
+// `raw` is whatever retranslated data exists for this chapter, in either
+// shape found on disk: a {chapter,parts:[{title,rows:[...]}]} .final.json,
+// or a flat results.json array of {part_index,row_index,...} rows (still
+// mid-translation, produced incrementally by the retranslation pipeline).
+// Both align 1:1 by position with peData's own parts/rows (same source
+// file), so either merges onto peData - which always exists - by index.
+// That means every chapter gets 逐句三语对照, even ones with zero
+// retranslated data yet: the Chinese slot just starts empty and editable.
+function vismNormalizeParallel(peData, raw) {
+  const zhByPos = {};
+  if (Array.isArray(raw)) {
+    for (const r of raw) {
+      // results.json's own translation_note is an array of pipeline notes
+      // in English (e.g. "Raw machine output is preserved verbatim"), not
+      // a reader-facing Chinese annotation - only .final.json's string
+      // notes are meant to be shown here.
+      zhByPos[`${r.part_index - 1}-${r.row_index - 1}`] = { text: r.chinese_translation || '', note: typeof r.translation_note === 'string' ? r.translation_note : '' };
+    }
+  } else if (raw && Array.isArray(raw.parts)) {
+    raw.parts.forEach((part, pi) => {
+      (part.rows || []).forEach((row, ri) => {
+        // Even .final.json rows sometimes carry translation_note as a list
+        // of pipeline notes (same as results.json) rather than a string -
+        // only show it when it's actually reader-facing prose.
+        zhByPos[`${pi}-${ri}`] = { text: row.chinese_translation || '', note: typeof row.translation_note === 'string' ? row.translation_note : '' };
+      });
+    });
+  }
+  return peData.parts.map((part, pi) => ({
+    title: part.title,
+    rows: part.rows.map((row, ri) => {
+      const zh = zhByPos[`${pi}-${ri}`] || { text: '', note: '' };
+      return { pali: row.pali, english: row.english, chinese_translation: zh.text, translation_note: zh.note };
+    }),
+  }));
+}
+
+function renderVismParallel(docKey, chapterTitle, parts) {
   let html = '<div class="parallel-block">';
-  for (const part of peData.parts) {
+  parts.forEach((part, pi) => {
     if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
-    for (const row of part.rows) {
+    part.rows.forEach((row, ri) => {
+      const unitKey = `p${pi + 1}-r${ri + 1}`;
       html += '<div class="segment-block">';
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
       html += `<div class="seg-en">${esc(row.english)}</div>`;
-      if (row.chinese_translation) {
-        html += `<div class="seg-chinese">${esc(row.chinese_translation)}</div>`;
-        if (row.translation_note) {
-          html += `<div class="seg-tn">${esc(row.translation_note)}</div>`;
-        }
-      }
+      html += transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle);
       html += '</div>';
-    }
-  }
+    });
+  });
   html += '</div>';
   return html;
 }
@@ -4056,12 +4506,8 @@ function buildVismReaderBody() {
       html += `<div class="zh-formatted">${zhContentHtml}</div>`;
     }
   } else if (vismReaderMode === 'parallel') {
-    const peRt = window._vismData.peRetranslated;
-    if (peRt) {
-      html += renderVismParallel(peRt);
-    } else {
-      html += `<div class="blurb-box"><span class="blurb-label">说明:</span>本章尚无逐句汉译数据，请切换其他阅读模式。</div>`;
-    }
+    const { vismDocKey, vismChapterTitle, vismParallelParts } = window._vismData;
+    html += renderVismParallel(vismDocKey, vismChapterTitle, vismParallelParts);
   }
   body.innerHTML = html;
   wireVismFootnoteLinks(body);
@@ -4082,17 +4528,30 @@ async function renderVismReader(chapterNum, secIdx) {
     const zhData = await fetch(`research/vism-data/zh_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
     const peData = await fetch(`research/vism-data/pe_${isSpecial ? chapterNum : 'chap' + fileTag}.json`).then(r => r.json());
 
-    // Load retranslated per-row Chinese translation if available for this chapter
+    // Load retranslated per-row Chinese translation if available for this
+    // chapter. The retranslation pipeline leaves chapters in different
+    // states: some have a finished `pe_chapNN.final.json`
+    // ({parts:[{title,rows}]}, same shape as peData), others only have a
+    // `results.json` (a flat, possibly-partial array of {part_index,
+    // row_index,...} rows straight from the in-progress pipeline run).
+    // Either merges onto peData by position in vismNormalizeParallel();
+    // chapters with neither still get the parallel view, just fully empty.
     let peRetranslated = null;
     if (!isSpecial) {
+      const chapStr = String(chapterNum).padStart(2, '0');
       try {
-        const chapStr = String(chapterNum).padStart(2, '0');
-        peRetranslated = await fetch(`research/vism-data/retranslated_chap${chapStr}/pe_chap${chapStr}.final.json`).then(r => r.json());
-      } catch (e) { /* retranslated data not available for this chapter */ }
+        peRetranslated = await fetch(`research/vism-data/retranslated_chap${chapStr}/pe_chap${chapStr}.final.json`).then(r => r.ok ? r.json() : Promise.reject());
+      } catch (e) {
+        try {
+          peRetranslated = await fetch(`research/vism-data/retranslated_chap${chapStr}/results.json`).then(r => r.ok ? r.json() : Promise.reject());
+        } catch (e2) { /* no retranslated data at all for this chapter yet */ }
+      }
     }
-    if (vismReaderMode === 'parallel' && !peRetranslated) {
-      vismReaderMode = 'trilingual';
-    }
+    const vismDocKey = `vism:${chapterNum}`;
+    const vismChapterTitle = isNidana ? '序论' : isConclusion ? '结论' : (meta ? meta.title_zh : zhData.title);
+    const vismParallelParts = peData ? vismNormalizeParallel(peData, peRetranslated) : [];
+    await communityFetchCurrentUser();
+    if (peData) await transLoadDoc(vismDocKey);
 
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
     out += `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
@@ -4107,7 +4566,7 @@ async function renderVismReader(chapterNum, secIdx) {
           <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
           <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
           <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
-          ${peRetranslated ? `<button class="tb-btn${vismReaderMode==='parallel'?' active':''}" data-mode="parallel">逐句三语对照</button>` : ''}
+          <button class="tb-btn${vismReaderMode==='parallel'?' active':''}" data-mode="parallel">逐句三语对照</button>
         </div>
         <div class="tb-sep"></div>
         <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
@@ -4132,7 +4591,7 @@ async function renderVismReader(chapterNum, secIdx) {
     out += '</div>';
 
     app.innerHTML = out;
-    window._vismData = { peData, zhData, peRetranslated };
+    window._vismData = { peData, zhData, peRetranslated, vismDocKey, vismChapterTitle, vismParallelParts };
 
     if (peData) {
       document.getElementById('vism-toolbar').addEventListener('click', e => {
