@@ -3088,11 +3088,24 @@ function transUnit(docKey, unitKey) {
   const doc = TRANS_DOC_CACHE[docKey];
   return (doc && doc.units[unitKey]) || null;
 }
+async function transPaliSha1(pali) {
+  if (!pali || !window.crypto?.subtle) return null;
+  const bytes = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(pali));
+  return [...new Uint8Array(bytes)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
 async function transSave(docKey, unitKey, body) {
+  const staticRow = TRANS_STATIC_MAP[`${docKey}|${unitKey}`] || {};
+  const requestBody = { ...body };
+  // Preserve the immutable static JSON value when the first edit creates the
+  // overlay row. The backend ignores this field for existing rows, so later
+  // edits can never rewrite the default. Empty static text intentionally
+  // falls back to the first non-empty write on the backend.
+  if (requestBody.default_text === undefined) requestBody.default_text = staticRow.text || '';
+  if (requestBody.pali_sha1 === undefined && staticRow.pali) requestBody.pali_sha1 = await transPaliSha1(staticRow.pali);
   const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-    body: JSON.stringify(body),
+    body: JSON.stringify(requestBody),
   });
   if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
   const unit = await res.json();
