@@ -3163,9 +3163,29 @@ async function mitraTranslateDirect(pali, context) {
   return toSimplified(data.translation);
 }
 
+async function mitraCacheDirectResult(pali, context, text) {
+  const res = await fetch(`${API_BASE}/api/mitra/cache`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+    body: JSON.stringify({ pali, context: context || '', text }),
+  });
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || 'Dharmamitra 缓存回写失败');
+}
+
 async function mitraTranslate(pali, context) {
   try {
-    return await mitraTranslateDirect(pali, context);
+    const text = await mitraTranslateDirect(pali, context);
+    // Caching is deliberately best-effort: the user already has a valid
+    // direct result, so a transient cache/auth failure must not make the UI
+    // invoke Dharmamitra again through the proxy or report the translation as
+    // failed. A future fallback can still use this entry when the write does
+    // succeed.
+    try {
+      await mitraCacheDirectResult(pali, context, text);
+    } catch (cacheErr) {
+      console.warn('Dharmamitra 直连成功，但缓存回写失败：', cacheErr);
+    }
+    return text;
   } catch (err) {
     console.warn('Dharmamitra 直连失败，回退到服务端代理：', err);
   }
