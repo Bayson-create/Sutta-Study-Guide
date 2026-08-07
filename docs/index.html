@@ -3379,72 +3379,19 @@ async function transHistory(docKey, unitKey) {
   const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}/history`);
   return res.ok ? res.json() : [];
 }
-// Dharmamitra's cat-translate endpoint has open CORS (verified:
-// access-control-allow-origin: * on both the preflight and the real
-// response) but a shared-across-all-callers rate limit of 10/min. The
-// backend proxy funnels every user in this app through one Container
-// App replica, i.e. one outbound IP - so all concurrent editors share
-// that single 10/min bucket. Calling straight from the browser instead
-// gives each editor their own IP and therefore their own bucket, which
-// is what actually fixes the ceiling; the backend proxy stays as a
-// fallback for whenever the direct call can't be made (CORS revoked
-// upstream, network blocked, the user's own IP already spent its
-// quota, etc.) so the feature never just stops working.
-const DHARMAMITRA_DIRECT_URL = 'https://dharmamitra.org/api-search/cat-translate/v1/translate';
-
-async function mitraTranslateDirect(pali, context) {
-  const res = await communityFetchWithTimeout(DHARMAMITRA_DIRECT_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      input_pali: pali,
-      input_tibetan: '', input_chinese: '', input_sanskrit: '',
-      context: context || '',
-      focus: 'pali',
-      target_language: 'modern chinese',
-      // Kept byte-identical to app/dharmamitra.py's style_instruction so
-      // the direct and proxied paths ask the model for the same thing.
-      style_instruction: '简体中文，佛学术语准确，保持原文的庄重语气',
-    }),
-  }, 90000); // matches the backend proxy's own ceiling (dharmamitra.py REQUEST_TIMEOUT)
-  if (!res.ok) throw new Error(`Dharmamitra 直连 HTTP ${res.status}`);
-  const data = await res.json();
-  if (!data.translation) throw new Error('Dharmamitra 直连返回了空翻译');
-  // The API already returns simplified Chinese, but the backend proxy
-  // additionally runs every result through OpenCC t2s as a defensive
-  // normalization pass (see app/dharmamitra.py's docstring) - toSimplified
-  // is this page's existing char-map equivalent (used elsewhere for the
-  // same purpose), applied here so the direct path can't silently return
-  // a lower-quality (unnormalized) result than the proxied one.
-  return toSimplified(data.translation);
-}
-
-async function mitraCacheDirectResult(pali, context, text) {
-  const res = await fetch(`${API_BASE}/api/mitra/cache`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-    body: JSON.stringify({ pali, context: context || '', text }),
-  });
-  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || 'Dharmamitra 缓存回写失败');
-}
-
+// Browser-direct calls to Dharmamitra's cat-translate endpoint were tried
+// and reverted: its real (non-preflight) response sends the
+// Access-Control-Allow-Origin header TWICE ("*, *"), which every browser
+// rejects as a CORS violation regardless of the header's value - verified
+// via console errors, not assumed. curl doesn't enforce CORS, so this only
+// showed up once actually exercised from a browser. Worse than merely not
+// working: the server executes the translation (confirmed via response
+// timing - ~1s per call, matching a real translation, right up until the
+// rate limit kicks in) and spends a rate-limit slot before the browser
+// discards the reply, so every attempt burned one slot on the user's own
+// IP for nothing and then fell back to the proxy anyway, doubling upstream
+// usage instead of spreading it. Proxy-only, as it was before.
 async function mitraTranslate(pali, context) {
-  try {
-    const text = await mitraTranslateDirect(pali, context);
-    // Caching is deliberately best-effort: the user already has a valid
-    // direct result, so a transient cache/auth failure must not make the UI
-    // invoke Dharmamitra again through the proxy or report the translation as
-    // failed. A future fallback can still use this entry when the write does
-    // succeed.
-    try {
-      await mitraCacheDirectResult(pali, context, text);
-    } catch (cacheErr) {
-      console.warn('Dharmamitra 直连成功，但缓存回写失败：', cacheErr);
-    }
-    return text;
-  } catch (err) {
-    console.warn('Dharmamitra 直连失败，回退到服务端代理：', err);
-  }
   const res = await fetch(`${API_BASE}/api/mitra/translate`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
