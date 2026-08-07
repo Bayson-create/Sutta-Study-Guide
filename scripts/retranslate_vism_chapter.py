@@ -141,6 +141,34 @@ class RateLimitError(RuntimeError):
     pass
 
 
+def _request_with_retries(*args, attempts: int = 5, **kwargs):
+    """Wraps _request for the two startup calls (login, overlay fetch) that
+    happen before the per-sentence loop's own retry logic exists.
+
+    Without this, a single transient failure here - seen live: the login
+    endpoint or the overlay fetch timing out while this container itself was
+    mid-restart - crashed the whole process with an uncaught traceback before
+    a single sentence was translated. The dashboard then recorded that as a
+    hard "failed" outcome, which overstates it: nothing was actually lost
+    (the next queued attempt resumes from the live overlay same as any other
+    run), but the run never got the chance to try again on its own.
+    """
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return _request(*args, **kwargs)
+        except RateLimitError:
+            raise  # handled by the caller's own pacing logic, not this
+        except Exception as exc:
+            last_exc = exc
+            if attempt < attempts:
+                delay = min(5.0 * attempt, 30.0)
+                print(f"  !! startup request failed (attempt {attempt}/{attempts}), "
+                      f"retrying in {delay:.0f}s: {exc}")
+                time.sleep(delay)
+    raise last_exc
+
+
 # Set by SIGTERM so a pause finishes the sentence in flight and then stops at a
 # clean boundary. Killing mid-request would leave a translation paid for but
 # never saved, and a status file still claiming the run is live.
@@ -352,6 +380,12 @@ def main() -> None:
                          "the static JSON or the backend overlay carries a non-empty text - "
                          "the union, so work already done through either route is never "
                          "repeated. This is what the dashboard queue uses.")
+    ap.add_argument("--not-dharmamitra", action="store_true",
+                    help="translate every sentence in the chapter whose overlay row is not "
+                         "already source=dharmamitra, overwriting whatever text is there now "
+                         "(old static translation, an older machine pass, etc.) - unlike "
+                         "--fill-gaps, having *some* text does not exempt a sentence. Human "
+                         "edits are still skipped unless --overwrite-human is also given.")
     ap.add_argument("--end", default=None, help="unit_key to stop after (default: end of chapter)")
     ap.add_argument("--minutes", type=float, default=None, help="stop after N minutes (resumable)")
     ap.add_argument("--api-base", default=os.environ.get("SUTTA_API_BASE", DEFAULT_API))
@@ -372,14 +406,15 @@ def main() -> None:
         STATUS_DIR / f"api-retranslate-vism-{args.chapter}.json"
     )
 
-    if bool(args.start) == bool(args.fill_gaps):
-        sys.exit("FAILED: pass exactly one of --start or --fill-gaps")
+    modes = [bool(args.start), args.fill_gaps, args.not_dharmamitra]
+    if sum(modes) != 1:
+        sys.exit("FAILED: pass exactly one of --start, --fill-gaps, --not-dharmamitra")
 
     rows = load_chapter_rows(args.chapter)
     keys = [r[0] for r in rows]
 
     # Which sentences a person edited by hand - never clobber those silently.
-    overlay = _request(f"{args.api_base}/api/translations?doc={doc_key}")["units"]
+    overlay = _request_with_retries(f"{args.api_base}/api/translations?doc={doc_key}")["units"]
     human = {k for k, v in overlay.items() if v.get("source") == "human"}
 
     if args.fill_gaps:
@@ -392,6 +427,15 @@ def main() -> None:
         translated |= {r[0] for r in rows if (r[2] or "").strip()}
         todo_all = [r for r in rows if r[1] and r[0] not in translated]
         span = f"whole chapter, gaps only ({len(translated)} already translated)"
+    elif args.not_dharmamitra:
+        # source=dharmamitra is the exact field this script itself sets on
+        # every successful write (see save_one below) - "already translated
+        # by Dharmamitra" means exactly this, not "has some text", so a row
+        # with an old static/human/other-source translation is redone and
+        # overwritten same as an empty one.
+        done_by_dharmamitra = {k for k, v in overlay.items() if v.get("source") == "dharmamitra"}
+        todo_all = [r for r in rows if r[1] and r[0] not in done_by_dharmamitra]
+        span = f"whole chapter, not yet Dharmamitra-translated ({len(done_by_dharmamitra)} already are)"
     else:
         if args.start not in keys:
             sys.exit(f"FAILED: --start {args.start} not found in {doc_key}")
@@ -414,8 +458,12 @@ def main() -> None:
     # progress file says done, and the sentence is never revisited. In
     # --start mode the progress file is still the resume ledger, since there
     # the whole point is to overwrite sentences that already have text.
+    # --not-dharmamitra shares --fill-gaps's reasoning for bypassing the
+    # progress file: its own "already done" check is a fresh read of the live
+    # overlay every run, which is the only authority a lost write cannot fool.
+    trust_progress_file = not (args.fill_gaps or args.not_dharmamitra)
     todo = [r for r in todo_all
-            if (args.fill_gaps or r[0] not in done)
+            if (not trust_progress_file or r[0] not in done)
             and (args.overwrite_human or r[0] not in human)]
 
     print(f"chapter {args.chapter}  doc_key={doc_key}")
@@ -439,7 +487,7 @@ def main() -> None:
     password = os.environ.get("SUTTA_API_PASSWORD")
     if not email or not password:
         sys.exit("FAILED: set SUTTA_API_EMAIL and SUTTA_API_PASSWORD")
-    token = _request(f"{args.api_base}/api/auth/login", method="POST",
+    token = _request_with_retries(f"{args.api_base}/api/auth/login", method="POST",
                      body={"email": email, "password": password})["access_token"]
 
     limiter = WindowLimiter(CLIENT_MAX_CALLS, SERVER_WINDOW_SECONDS, MIN_SPACING_SECONDS)
@@ -448,7 +496,8 @@ def main() -> None:
              "batched": 0, "batch_rejected": 0}
     latencies = []
     status = StatusWriter(status_path, {
-        "doc_key": doc_key, "chapter": args.chapter, "start": args.start or "fill-gaps",
+        "doc_key": doc_key, "chapter": args.chapter,
+        "start": args.start or ("not-dharmamitra" if args.not_dharmamitra else "fill-gaps"),
         "total": len(todo), "already_done": len(done),
         "skipped_human": [r[0] for r in skipped_human],
         "client_max_calls": CLIENT_MAX_CALLS, "server_max_calls": SERVER_MAX_CALLS,
