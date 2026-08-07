@@ -3123,7 +3123,52 @@ async function transHistory(docKey, unitKey) {
   const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}/history`);
   return res.ok ? res.json() : [];
 }
+// Dharmamitra's cat-translate endpoint has open CORS (verified:
+// access-control-allow-origin: * on both the preflight and the real
+// response) but a shared-across-all-callers rate limit of 10/min. The
+// backend proxy funnels every user in this app through one Container
+// App replica, i.e. one outbound IP - so all concurrent editors share
+// that single 10/min bucket. Calling straight from the browser instead
+// gives each editor their own IP and therefore their own bucket, which
+// is what actually fixes the ceiling; the backend proxy stays as a
+// fallback for whenever the direct call can't be made (CORS revoked
+// upstream, network blocked, the user's own IP already spent its
+// quota, etc.) so the feature never just stops working.
+const DHARMAMITRA_DIRECT_URL = 'https://dharmamitra.org/api-search/cat-translate/v1/translate';
+
+async function mitraTranslateDirect(pali, context) {
+  const res = await communityFetchWithTimeout(DHARMAMITRA_DIRECT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      input_pali: pali,
+      input_tibetan: '', input_chinese: '', input_sanskrit: '',
+      context: context || '',
+      focus: 'pali',
+      target_language: 'modern chinese',
+      // Kept byte-identical to app/dharmamitra.py's style_instruction so
+      // the direct and proxied paths ask the model for the same thing.
+      style_instruction: '简体中文，佛学术语准确，保持原文的庄重语气',
+    }),
+  }, 90000); // matches the backend proxy's own ceiling (dharmamitra.py REQUEST_TIMEOUT)
+  if (!res.ok) throw new Error(`Dharmamitra 直连 HTTP ${res.status}`);
+  const data = await res.json();
+  if (!data.translation) throw new Error('Dharmamitra 直连返回了空翻译');
+  // The API already returns simplified Chinese, but the backend proxy
+  // additionally runs every result through OpenCC t2s as a defensive
+  // normalization pass (see app/dharmamitra.py's docstring) - toSimplified
+  // is this page's existing char-map equivalent (used elsewhere for the
+  // same purpose), applied here so the direct path can't silently return
+  // a lower-quality (unnormalized) result than the proxied one.
+  return toSimplified(data.translation);
+}
+
 async function mitraTranslate(pali, context) {
+  try {
+    return await mitraTranslateDirect(pali, context);
+  } catch (err) {
+    console.warn('Dharmamitra 直连失败，回退到服务端代理：', err);
+  }
   const res = await fetch(`${API_BASE}/api/mitra/translate`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },

@@ -50,6 +50,8 @@ Usage:
 import argparse
 import json
 import os
+import re
+import signal
 import sys
 import time
 import urllib.error
@@ -82,9 +84,73 @@ HTTP_TIMEOUT = 180
 STATUS_DIR = ROOT / "docs/research/vism-data/.retranslation-dashboard"
 RECENT_KEPT = 8
 
+# How many times the whole set of failed sentences is retried after the main
+# pass. Failures here are transient (upstream 5xx, dropped connection); a
+# sentence that fails three separate passes minutes apart is reported rather
+# than retried forever, so the queue can move on to the next chapter.
+RETRY_ROUNDS = 3
+
+# Sentences per Dharmamitra call. The binding constraint on this whole job is
+# *requests*, not sentences: Dharmamitra's quota cuts off after roughly 250
+# calls regardless of how much text each carried. Batching is therefore worth
+# far more than pacing - at 20/call the remaining ~8600 sentences need ~430
+# requests instead of 8600.
+#
+# Measured before choosing 20: batches of 2/5/10/15/20/30/40 all returned
+# correctly numbered output, and the 20 *longest* sentences in ch17 (8381
+# chars in one call) came back complete in 12.6s. 40 works, but a larger
+# batch means a larger blast radius when one has to be redone, and batch
+# output is already ~10% terser than solo output; 20 keeps both in hand.
+BATCH_SIZE = 20
+
+# Instruction sent with a batch. The numbering is the alignment contract, and
+# results are matched on the number the model *returns*, never on line order -
+# so a reordered response still lands correctly, and only a genuinely
+# mis-numbered one is rejected.
+BATCH_STYLE = (
+    "简体中文，佛学术语准确。输入是编号的多个句子，请逐句翻译，"
+    "输出必须保持相同编号、相同数量、相同顺序，每行一条，格式为「编号. 译文」，"
+    "不要合并或拆分句子，不要添加任何额外说明。"
+)
+SOLO_STYLE = "简体中文，佛学术语准确，保持原文的庄重语气"
+
+# Dharmamitra has a hard quota behind cat-translate, separate from our own
+# backend's per-minute limiter (which raises RateLimitError and is handled
+# inline in translate_one). Observed directly: a run held a steady 10/min for
+# ~25 minutes (~250 calls), then every call failed with an upstream
+# "429 Too Many Requests" wrapped in our backend's 502 for the rest of a
+# 115-minute run (897 straight failures) - a fixed per-minute backoff cannot
+# see this because our own limiter never trips; the request round-trips fine
+# and fails downstream of it. Recovery took at least that long: a probe run
+# ~2 hours after the failures began succeeded again.
+#
+# Detected here as a *streak* of consecutive failures (of any kind - a quota
+# cliff and a real outage look identical from this side), rather than by
+# matching the exact wording of the error, so a differently-worded quota
+# message or a full outage triggers the same protection. Below the streak
+# threshold, an isolated failure is treated as transient (network blip, one
+# bad response) and left to the ordinary retry rounds instead.
+QUOTA_STREAK_THRESHOLD = 5
+QUOTA_COOLDOWN_START_SECONDS = 120.0
+QUOTA_COOLDOWN_MAX_SECONDS = 1800.0  # 30 min ceiling; keeps a chapter resumable
+                                      # within one dashboard poll cycle's worth
+                                      # of patience rather than sleeping for hours.
+
 
 class RateLimitError(RuntimeError):
     pass
+
+
+# Set by SIGTERM so a pause finishes the sentence in flight and then stops at a
+# clean boundary. Killing mid-request would leave a translation paid for but
+# never saved, and a status file still claiming the run is live.
+_stop_requested = False
+
+
+def _request_stop(_signum, _frame) -> None:
+    global _stop_requested
+    _stop_requested = True
+    print("\n-- stop requested, finishing current sentence then exiting --", flush=True)
 
 
 class StatusWriter:
@@ -272,7 +338,20 @@ def load_chapter_rows(chapter: str):
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--chapter", default="17")
-    ap.add_argument("--start", required=True, help="unit_key to start from, e.g. p1-r80")
+    ap.add_argument("--start", default=None,
+                    help="unit_key to start from, e.g. p1-r80. Re-translates everything "
+                         "from there on, including sentences that already have a translation. "
+                         "Mutually exclusive with --fill-gaps.")
+    ap.add_argument("--batch-size", type=int, default=BATCH_SIZE,
+                    help=f"sentences per Dharmamitra call (default {BATCH_SIZE}; 1 disables "
+                         f"batching). A batch is only written if it comes back complete and "
+                         f"correctly numbered, otherwise its sentences are redone one by one.")
+    ap.add_argument("--fill-gaps", action="store_true",
+                    help="translate only sentences with no translation yet, anywhere in the "
+                         "chapter, and skip the ones that have one. 'Has a translation' means "
+                         "the static JSON or the backend overlay carries a non-empty text - "
+                         "the union, so work already done through either route is never "
+                         "repeated. This is what the dashboard queue uses.")
     ap.add_argument("--end", default=None, help="unit_key to stop after (default: end of chapter)")
     ap.add_argument("--minutes", type=float, default=None, help="stop after N minutes (resumable)")
     ap.add_argument("--api-base", default=os.environ.get("SUTTA_API_BASE", DEFAULT_API))
@@ -293,28 +372,54 @@ def main() -> None:
         STATUS_DIR / f"api-retranslate-vism-{args.chapter}.json"
     )
 
+    if bool(args.start) == bool(args.fill_gaps):
+        sys.exit("FAILED: pass exactly one of --start or --fill-gaps")
+
     rows = load_chapter_rows(args.chapter)
     keys = [r[0] for r in rows]
-    if args.start not in keys:
-        sys.exit(f"FAILED: --start {args.start} not found in {doc_key}")
-    lo = keys.index(args.start)
-    hi = keys.index(args.end) + 1 if args.end else len(rows)
-    todo_all = [r for r in rows[lo:hi] if r[1]]
-
-    done = set()
-    if progress_path.exists():
-        done = set(json.loads(progress_path.read_text(encoding="utf-8")).get("done", []))
 
     # Which sentences a person edited by hand - never clobber those silently.
     overlay = _request(f"{args.api_base}/api/translations?doc={doc_key}")["units"]
     human = {k for k, v in overlay.items() if v.get("source") == "human"}
 
+    if args.fill_gaps:
+        # A sentence counts as translated if either source has text for it.
+        # The two disagree per chapter in both directions - ch3/15/19 exist
+        # only in the overlay, ch1 mostly only in the static file - so taking
+        # the union is what stops the queue re-spending hours on sentences
+        # that were already done through the other route.
+        translated = {k for k, v in overlay.items() if (v.get("current_text") or "").strip()}
+        translated |= {r[0] for r in rows if (r[2] or "").strip()}
+        todo_all = [r for r in rows if r[1] and r[0] not in translated]
+        span = f"whole chapter, gaps only ({len(translated)} already translated)"
+    else:
+        if args.start not in keys:
+            sys.exit(f"FAILED: --start {args.start} not found in {doc_key}")
+        lo = keys.index(args.start)
+        hi = keys.index(args.end) + 1 if args.end else len(rows)
+        todo_all = [r for r in rows[lo:hi] if r[1]]
+        span = f"{args.start} .. {keys[hi - 1]}"
+
+    done = set()
+    if progress_path.exists():
+        done = set(json.loads(progress_path.read_text(encoding="utf-8")).get("done", []))
+
     skipped_human = [r for r in todo_all if r[0] in human and not args.overwrite_human]
+    # --fill-gaps deliberately ignores the progress file when choosing work:
+    # `todo_all` is already derived from the live overlay, which is the only
+    # authority on what actually got stored. Trusting the progress file on top
+    # of it can permanently skip a sentence whose write was acknowledged but
+    # lost - which really happened here, when a PUT was accepted by a replica
+    # being drained during a deploy. The overlay says untranslated, the
+    # progress file says done, and the sentence is never revisited. In
+    # --start mode the progress file is still the resume ledger, since there
+    # the whole point is to overwrite sentences that already have text.
     todo = [r for r in todo_all
-            if r[0] not in done and (args.overwrite_human or r[0] not in human)]
+            if (args.fill_gaps or r[0] not in done)
+            and (args.overwrite_human or r[0] not in human)]
 
     print(f"chapter {args.chapter}  doc_key={doc_key}")
-    print(f"  range {args.start} .. {keys[hi - 1]}   sentences with Pāli: {len(todo_all)}")
+    print(f"  range {span}   sentences with Pāli: {len(todo_all)}")
     print(f"  already done (progress file): {len(done)}")
     print(f"  hand-edited, skipping:        {len(skipped_human)}"
           + (f"  {[r[0] for r in skipped_human]}" if skipped_human else ""))
@@ -339,10 +444,11 @@ def main() -> None:
 
     limiter = WindowLimiter(CLIENT_MAX_CALLS, SERVER_WINDOW_SECONDS, MIN_SPACING_SECONDS)
     started = time.monotonic()
-    stats = {"ok": 0, "failed": 0, "rate_limited": 0, "retried": 0}
+    stats = {"ok": 0, "failed": 0, "rate_limited": 0, "retried": 0,
+             "batched": 0, "batch_rejected": 0}
     latencies = []
     status = StatusWriter(status_path, {
-        "doc_key": doc_key, "chapter": args.chapter, "start": args.start,
+        "doc_key": doc_key, "chapter": args.chapter, "start": args.start or "fill-gaps",
         "total": len(todo), "already_done": len(done),
         "skipped_human": [r[0] for r in skipped_human],
         "client_max_calls": CLIENT_MAX_CALLS, "server_max_calls": SERVER_MAX_CALLS,
@@ -350,15 +456,106 @@ def main() -> None:
     })
     print(f"  live status -> {status_path}\n")
 
-    stop_reason = "finished"
-    for i, (unit_key, pali, _old_zh, part_title) in enumerate(todo, 1):
-        if args.minutes and (time.monotonic() - started) >= args.minutes * 60:
-            print(f"\n-- reached {args.minutes:g} min limit, stopping (resumable) --")
-            stop_reason = "time_limit"
-            break
+    signal.signal(signal.SIGTERM, _request_stop)
+    signal.signal(signal.SIGINT, _request_stop)
 
+    def out_of_time() -> bool:
+        if _stop_requested:
+            return True
+        return bool(args.minutes) and (time.monotonic() - started) >= args.minutes * 60
+
+    def save_one(unit_key, text, label) -> bool:
+        try:
+            _request(f"{args.api_base}/api/translations/{doc_key}/{unit_key}",
+                     method="PUT", token=token,
+                     body={"text": text, "reason": "Dharmamitra 重新翻译（cat-translate）",
+                           "source": "dharmamitra"})
+        except Exception as exc:
+            print(f"  !! {label} {unit_key} save failed: {exc}")
+            return False
+        stats["ok"] += 1
+        done.add(unit_key)
+        progress_path.write_text(json.dumps({"doc_key": doc_key, "done": sorted(done)},
+                                            ensure_ascii=False), encoding="utf-8")
+        return True
+
+    def parse_batch(out: str, n: int) -> dict:
+        """Pull `n` numbered translations out of one batch response.
+
+        Results are keyed on the number the model *returned*, never on line
+        order, so a response that comes back reordered still lands on the
+        right sentence. Only genuinely wrong numbering is unrecoverable, and
+        the caller rejects the whole batch in that case.
+        """
+        found: dict[int, str] = {}
+        for line in out.splitlines():
+            m = re.match(r"\s*(\d+)\s*[.、)．]\s*(.+)", line)
+            if not m:
+                continue
+            idx = int(m.group(1))
+            body = m.group(2).strip()
+            # First occurrence wins: a duplicate number means the model
+            # emitted something we cannot attribute, and silently taking the
+            # later one could overwrite a correct line with a wrong one.
+            if 1 <= idx <= n and idx not in found and body:
+                found[idx] = body
+        return found
+
+    def translate_batch(chunk, label) -> bool:
+        """Translate up to BATCH_SIZE sentences in one call.
+
+        Returns True only if every sentence in the chunk was translated and
+        saved. Anything less and the caller falls back to one-at-a-time, so a
+        malformed batch costs time but can never put a translation on the
+        wrong sentence.
+        """
+        payload = "\n".join(f"{i}. {pali}" for i, (_k, pali, _z, _t) in enumerate(chunk, 1))
+        titles = {t for (_k, _p, _z, t) in chunk if t}
+        context = f"清净道论 第{args.chapter}品" + (f" {sorted(titles)[0]}" if len(titles) == 1 else "")
+        for attempt in range(1, 5):
+            limiter.wait_for_slot()
+            t0 = time.monotonic()
+            try:
+                out = _request(f"{args.api_base}/api/mitra/translate", method="POST",
+                               body={"pali": payload, "context": context, "batch": True},
+                               token=token)["text"]
+                latencies.append(time.monotonic() - t0)
+            except RateLimitError:
+                stats["rate_limited"] += 1
+                delay = limiter.backoff_after_429()
+                print(f"  !! 429 on batch of {len(chunk)} (attempt {attempt}) - backing off {delay:.1f}s")
+                status.update(status="rate_limited", rate_limited=stats["rate_limited"],
+                              backoff_until=time.time() + delay)
+                time.sleep(delay)
+                stats["retried"] += 1
+                continue
+            except Exception as exc:
+                print(f"  !! {label} batch of {len(chunk)} failed: {exc}")
+                return False
+
+            got = parse_batch(out, len(chunk))
+            if len(got) != len(chunk):
+                missing = sorted(set(range(1, len(chunk) + 1)) - set(got))
+                print(f"  !! {label} batch returned {len(got)}/{len(chunk)} "
+                      f"(missing {missing[:6]}) - falling back to one-by-one")
+                stats["batch_rejected"] += 1
+                return False
+
+            for i, (unit_key, _pali, _zh, _title) in enumerate(chunk, 1):
+                if not save_one(unit_key, got[i], label):
+                    return False
+            stats["batched"] += len(chunk)
+            return True
+        return False
+
+    def translate_one(unit_key, pali, part_title, label):
+        """Translate and save one sentence. Returns the text, or None on
+        failure. 429s are retried inline here (they are a pacing problem, and
+        the backoff is computed from our own window); anything else returns
+        None and is left for the retry rounds below, since a transient network
+        or 5xx error deserves a fresh attempt later rather than a tight loop
+        against a service that is already unhappy."""
         context = f"清净道论 第{args.chapter}品" + (f" {part_title}" if part_title else "")
-        text = None
         for attempt in range(1, 5):
             limiter.wait_for_slot()
             t0 = time.monotonic()
@@ -366,7 +563,6 @@ def main() -> None:
                 text = _request(f"{args.api_base}/api/mitra/translate", method="POST",
                                 body={"pali": pali, "context": context}, token=token)["text"]
                 latencies.append(time.monotonic() - t0)
-                break
             except RateLimitError:
                 stats["rate_limited"] += 1
                 delay = limiter.backoff_after_429()
@@ -376,38 +572,119 @@ def main() -> None:
                               backoff_until=time.time() + delay)
                 time.sleep(delay)
                 stats["retried"] += 1
+                continue
             except Exception as exc:
-                print(f"  !! {unit_key} translate failed: {exc}")
+                print(f"  !! {label} {unit_key} translate failed: {exc}")
+                return None
+
+            return text if save_one(unit_key, text, label) else None
+        return None
+
+    stop_reason = "finished"
+    pending_retry: list = []
+    consecutive_failures = 0
+    cooldown_seconds = QUOTA_COOLDOWN_START_SECONDS
+
+    def attempt(unit_key, pali, part_title, label):
+        """translate_one, plus quota-cliff detection shared by the main pass
+        and the retry rounds. A streak of failures past the threshold pauses
+        for an escalating cooldown before the *next* attempt (of any
+        sentence) rather than immediately hammering on - see the constants'
+        docstring for why a fixed per-minute backoff cannot catch this."""
+        nonlocal consecutive_failures, cooldown_seconds
+        text = translate_one(unit_key, pali, part_title, label)
+        if text is not None:
+            consecutive_failures = 0
+            cooldown_seconds = QUOTA_COOLDOWN_START_SECONDS
+            return text
+
+        consecutive_failures += 1
+        if consecutive_failures >= QUOTA_STREAK_THRESHOLD:
+            print(f"\n  !! {consecutive_failures} failures in a row - this looks like "
+                  f"Dharmamitra's own quota, not a transient error. "
+                  f"Cooling down {cooldown_seconds:.0f}s before continuing.")
+            status.update(status="quota_cooldown", consecutive_failures=consecutive_failures,
+                          cooldown_seconds=cooldown_seconds,
+                          cooldown_until=time.time() + cooldown_seconds)
+            slept = 0.0
+            while slept < cooldown_seconds and not out_of_time():
+                step = min(5.0, cooldown_seconds - slept)
+                time.sleep(step)
+                slept += step
+            consecutive_failures = 0
+            cooldown_seconds = min(cooldown_seconds * 2, QUOTA_COOLDOWN_MAX_SECONDS)
+        return None
+
+    done_before = stats["ok"]
+    position = 0
+    while position < len(todo):
+        if out_of_time():
+            stop_reason = "stopped" if _stop_requested else "time_limit"
+            why = "stop requested" if _stop_requested else f"reached {args.minutes:g} min limit"
+            print(f"\n-- {why}, stopping (resumable) --")
+            break
+
+        chunk = todo[position:position + args.batch_size]
+        position += len(chunk)
+
+        # One request for the whole chunk. Only if it comes back complete and
+        # correctly numbered is any of it written; otherwise every sentence in
+        # it is redone individually, so a bad batch costs requests, never
+        # correctness.
+        if len(chunk) > 1 and translate_batch(chunk, ""):
+            elapsed = time.monotonic() - started
+            rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0
+            last_key, _p, _z, _t = chunk[-1]
+            status.note_done(last_key, f"[批次 {len(chunk)} 句]", elapsed, stats, latencies,
+                             remaining=len(todo) - (stats["ok"] - done_before) - len(pending_retry))
+            print(f"[{position}/{len(todo)}] batch x{len(chunk)} -> {last_key}  "
+                  f"{elapsed / 60:5.1f}min  {rate:4.1f}/min  429s={stats['rate_limited']}")
+            consecutive_failures = 0
+            continue
+
+        for unit_key, pali, old_zh, part_title in chunk:
+            if out_of_time():
+                stop_reason = "stopped" if _stop_requested else "time_limit"
                 break
+            text = attempt(unit_key, pali, part_title, "")
+            if text is None:
+                pending_retry.append((unit_key, pali, old_zh, part_title))
+                status.update(status="running", failed=len(pending_retry), current_unit=unit_key)
+                continue
+            elapsed = time.monotonic() - started
+            rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0
+            status.note_done(unit_key, text, elapsed, stats, latencies,
+                             remaining=len(todo) - (stats["ok"] - done_before) - len(pending_retry))
+            print(f"[{position}/{len(todo)}] {unit_key}  {elapsed / 60:5.1f}min  "
+                  f"{rate:4.1f}/min  429s={stats['rate_limited']}  {text[:48]}")
 
-        if not text:
-            stats["failed"] += 1
-            status.update(failed=stats["failed"], current_unit=unit_key)
-            continue
+    # Retry rounds. Failures are usually transient (a 5xx from the upstream
+    # model, a dropped connection), so they are retried after the main pass
+    # rather than immediately - by then the condition that caused them has
+    # usually cleared, and the sentence is not blocking the rest of the run.
+    # The same quota-cliff cooldown in attempt() applies here too: a chapter
+    # that hit the cliff near its end arrives at these rounds still owing
+    # the cooldown, not free of it.
+    for round_no in range(1, RETRY_ROUNDS + 1):
+        if not pending_retry or out_of_time():
+            break
+        batch, pending_retry = pending_retry, []
+        print(f"\n-- retry round {round_no}/{RETRY_ROUNDS}: {len(batch)} sentence(s) --")
+        status.update(status="retrying", retry_round=round_no, retry_pending=len(batch))
+        for unit_key, pali, old_zh, part_title in batch:
+            if out_of_time():
+                pending_retry.append((unit_key, pali, old_zh, part_title))
+                stop_reason = "time_limit"
+                continue
+            text = attempt(unit_key, pali, part_title, f"[retry{round_no}]")
+            if text is None:
+                pending_retry.append((unit_key, pali, old_zh, part_title))
+            else:
+                print(f"  ok on retry: {unit_key}  {text[:48]}")
+                status.note_done(unit_key, text, time.monotonic() - started, stats,
+                                 latencies, remaining=len(pending_retry))
 
-        try:
-            _request(f"{args.api_base}/api/translations/{doc_key}/{unit_key}",
-                     method="PUT", token=token,
-                     body={"text": text, "reason": "Dharmamitra 重新翻译（cat-translate）",
-                           "source": "dharmamitra"})
-        except Exception as exc:
-            print(f"  !! {unit_key} save failed: {exc}")
-            stats["failed"] += 1
-            status.update(failed=stats["failed"], current_unit=unit_key)
-            continue
-
-        stats["ok"] += 1
-        done.add(unit_key)
-        progress_path.write_text(json.dumps({"doc_key": doc_key, "done": sorted(done)},
-                                            ensure_ascii=False), encoding="utf-8")
-
-        elapsed = time.monotonic() - started
-        rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0
-        status.note_done(unit_key, text, elapsed, stats, latencies,
-                         remaining=len(todo) - stats["ok"] - stats["failed"])
-        print(f"[{i}/{len(todo)}] {unit_key}  {elapsed / 60:5.1f}min  "
-              f"{rate:4.1f}/min  429s={stats['rate_limited']}  {text[:48]}")
-
+    stats["failed"] = len(pending_retry)
     elapsed = time.monotonic() - started
     remaining = len(todo) - stats["ok"] - stats["failed"]
     status.update(status="stopped" if remaining else "done",
