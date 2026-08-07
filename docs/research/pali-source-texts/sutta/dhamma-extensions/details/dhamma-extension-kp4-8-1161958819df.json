@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "kp4-8",
+  "layer": "core",
+  "canonical_group_id": "kp4-8",
+  "label": "8法",
+  "number": 8,
+  "members": [
+    "正见",
+    "正志",
+    "正语",
+    "正业",
+    "正命",
+    "正精进",
+    "正念",
+    "正定"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "8法",
+      "number": 8,
+      "members": [
+        "正见",
+        "正志",
+        "正语",
+        "正业",
+        "正命",
+        "正精进",
+        "正念",
+        "正定"
+      ],
+      "source_paragraphs": [
+        "What is the eight? The noble eightfold path."
+      ],
+      "source_text": "What is the eight? The noble eightfold path.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=8%E6%B3%95",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 8法",
+          "text": "What is the eight? The noble eightfold path.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=8%E6%B3%95"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 8法",
+        "text": "What is the eight? The noble eightfold path.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=8%E6%B3%95"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：8法（8法）\n\n## 直接回答\n8法即八正道，是佛教修行中的八种正确途径 [1]。\n\n## 要点展开\n### 法组定义\n8法指八正道，是佛教修行的核心教法之一 [1]。\n\n### 成员解释\n- **正见**：正确的见解和观念，是八正道之首 [1]。\n- **正志**：正确的志向和意图 [1]。\n- **正语**：正确的言语，避免妄语、恶口等 [1]。\n- **正业**：正确的行为，避免杀生、偷盗等 [1]。\n- **正命**：正确的谋生方式，不从事不正当职业 [1]。\n- **正精进**：正确的努力，精进修行 [1]。\n- **正念**：正确的念想，保持觉知 [1]。\n- **正定**：正确的禅定，专注一心 [1]。\n\n## 证据覆盖情况\n现有证据仅提及8法即八正道，未对每个成员的具体定义展开说明。\n\n## 引用\n- [1] Kp 4 · 童问 · 8法 — https://suttacentral.net/kp4?lang=zh&q=8%E6%B3%95\n  > What is the eight? The noble eightfold path.",
+    "answer_markdown": "## 直接回答\n8法即八正道，是佛教修行中的八种正确途径 [1]。\n\n## 要点展开\n### 法组定义\n8法指八正道，是佛教修行的核心教法之一 [1]。\n\n### 成员解释\n- **正见**：正确的见解和观念，是八正道之首 [1]。\n- **正志**：正确的志向和意图 [1]。\n- **正语**：正确的言语，避免妄语、恶口等 [1]。\n- **正业**：正确的行为，避免杀生、偷盗等 [1]。\n- **正命**：正确的谋生方式，不从事不正当职业 [1]。\n- **正精进**：正确的努力，精进修行 [1]。\n- **正念**：正确的念想，保持觉知 [1]。\n- **正定**：正确的禅定，专注一心 [1]。\n\n## 证据覆盖情况\n现有证据仅提及8法即八正道，未对每个成员的具体定义展开说明。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "正见：八正道之首，指正确的见解和观念 [1]。",
+    "正志：指正确的志向和意图 [1]。",
+    "正语：指正确的言语，避免妄语等 [1]。",
+    "正业：指正确的行为，避免杀生等 [1]。",
+    "正命：指正确的谋生方式 [1]。",
+    "正精进：指正确的努力，精进修行 [1]。",
+    "正念：指正确的念想，保持觉知 [1]。",
+    "正定：指正确的禅定，专注一心 [1]。"
+  ]
+}

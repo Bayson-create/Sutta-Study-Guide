@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "id": "kp4-3",
+  "layer": "core",
+  "canonical_group_id": "kp4-3",
+  "label": "3法",
+  "number": 3,
+  "members": [
+    "苦受",
+    "乐受",
+    "不苦不乐受"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "3法",
+      "number": 3,
+      "members": [
+        "苦受",
+        "乐受",
+        "不苦不乐受"
+      ],
+      "source_paragraphs": [
+        "What is the three? Three feelings."
+      ],
+      "source_text": "What is the three? Three feelings.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=3%E6%B3%95",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 3法",
+          "text": "What is the three? Three feelings.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=3%E6%B3%95"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 3法",
+        "text": "What is the three? Three feelings.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=3%E6%B3%95"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：3法（3法）\n\n## 直接回答\n3法指三种受（feelings），即苦受、乐受、不苦不乐受 [1]。\n\n## 要点展开\n### 法组定义\n3法（Three）在此处明确为“三种受”（Three feelings） [1]。\n\n### 成员解释\n- **苦受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n- **乐受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n- **不苦不乐受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n\n## 证据覆盖情况\n现有证据仅给出法组名称“三种受”及其成员列表，未对各受的具体含义、分类依据或相互关系作任何说明。\n\n## 引用\n- [1] Kp 4 · 童问 · 3法 — https://suttacentral.net/kp4?lang=zh&q=3%E6%B3%95\n  > What is the three? Three feelings.",
+    "answer_markdown": "## 直接回答\n3法指三种受（feelings），即苦受、乐受、不苦不乐受 [1]。\n\n## 要点展开\n### 法组定义\n3法（Three）在此处明确为“三种受”（Three feelings） [1]。\n\n### 成员解释\n- **苦受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n- **乐受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n- **不苦不乐受**：属于三种受之一，但现有证据未单独展开其定义或特征 [1]。\n\n## 证据覆盖情况\n现有证据仅给出法组名称“三种受”及其成员列表，未对各受的具体含义、分类依据或相互关系作任何说明。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "苦受是三种受之一，但现有证据未提供其具体定义或特征。",
+    "乐受是三种受之一，但现有证据未提供其具体定义或特征。",
+    "不苦不乐受是三种受之一，但现有证据未提供其具体定义或特征。"
+  ]
+}

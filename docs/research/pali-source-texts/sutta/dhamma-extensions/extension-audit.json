@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-07T17:24:56.671Z",
+  "counts": {
+    "core": 57,
+    "system": 10,
+    "formal": 67,
+    "review": 20,
+    "sources": 10
+  },
+  "formal_without_exact_members": [],
+  "review_groups": [
+    {
+      "id": "an1027-1",
+      "label": "1法 · 1法",
+      "number": 1,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-2",
+      "label": "2法 · two",
+      "number": 2,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-3",
+      "label": "3法 · three",
+      "number": 3,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-4",
+      "label": "4法 · four",
+      "number": 4,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-5",
+      "label": "5法 · five",
+      "number": 5,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-6",
+      "label": "6法 · six",
+      "number": 6,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-7",
+      "label": "7法 · seven",
+      "number": 7,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-8",
+      "label": "8法 · eight",
+      "number": 8,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-9",
+      "label": "9法 · nine",
+      "number": 9,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1027-10",
+      "label": "10法 · ten",
+      "number": 10,
+      "member_count": 0,
+      "source_uids": [
+        "an1027"
+      ]
+    },
+    {
+      "id": "an1028-1",
+      "label": "1法 · 1法",
+      "number": 1,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-2",
+      "label": "2法 · two",
+      "number": 2,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-3",
+      "label": "3法 · three",
+      "number": 3,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-4",
+      "label": "4法 · four",
+      "number": 4,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-5",
+      "label": "5法 · five",
+      "number": 5,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-6",
+      "label": "6法 · six",
+      "number": 6,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-7",
+      "label": "7法 · seven",
+      "number": 7,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-8",
+      "label": "8法 · eight",
+      "number": 8,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-9",
+      "label": "9法 · nine",
+      "number": 9,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    },
+    {
+      "id": "an1028-10",
+      "label": "10法 · ten",
+      "number": 10,
+      "member_count": 0,
+      "source_uids": [
+        "an1028"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "id": "kp4-5",
+  "layer": "core",
+  "canonical_group_id": "kp4-5",
+  "label": "5法",
+  "number": 5,
+  "members": [
+    "色受取蕴",
+    "受受取蕴",
+    "想受取蕴",
+    "行受取蕴",
+    "识受取蕴"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "5法",
+      "number": 5,
+      "members": [
+        "色受取蕴",
+        "受受取蕴",
+        "想受取蕴",
+        "行受取蕴",
+        "识受取蕴"
+      ],
+      "source_paragraphs": [
+        "What is the five? Five grasping aggregates."
+      ],
+      "source_text": "What is the five? Five grasping aggregates.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=5%E6%B3%95",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 5法",
+          "text": "What is the five? Five grasping aggregates.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=5%E6%B3%95"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 5法",
+        "text": "What is the five? Five grasping aggregates.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=5%E6%B3%95"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：5法（5法）\n\n## 直接回答\n5法即五取蕴，指色受取蕴、受受取蕴、想受取蕴、行受取蕴、识受取蕴这五种执取的对象[1]。\n\n## 要点展开\n### 法组定义\n5法在《Kp 4 · 童问》中被定义为“五取蕴”（five grasping aggregates），即五种被执取的蕴[1]。\n\n### 成员解释\n- **色受取蕴**：指色蕴作为被执取的对象，属于五取蕴之一[1]。\n- **受受取蕴**：指受蕴作为被执取的对象，属于五取蕴之一[1]。\n- **想受取蕴**：指想蕴作为被执取的对象，属于五取蕴之一[1]。\n- **行受取蕴**：指行蕴作为被执取的对象，属于五取蕴之一[1]。\n- **识受取蕴**：指识蕴作为被执取的对象，属于五取蕴之一[1]。\n\n## 证据覆盖情况\n现有证据仅给出“五取蕴”这一总称，未对各蕴的具体定义或执取机制作进一步说明。\n\n## 引用\n- [1] Kp 4 · 童问 · 5法 — https://suttacentral.net/kp4?lang=zh&q=5%E6%B3%95\n  > What is the five? Five grasping aggregates.",
+    "answer_markdown": "## 直接回答\n5法即五取蕴，指色受取蕴、受受取蕴、想受取蕴、行受取蕴、识受取蕴这五种执取的对象[1]。\n\n## 要点展开\n### 法组定义\n5法在《Kp 4 · 童问》中被定义为“五取蕴”（five grasping aggregates），即五种被执取的蕴[1]。\n\n### 成员解释\n- **色受取蕴**：指色蕴作为被执取的对象，属于五取蕴之一[1]。\n- **受受取蕴**：指受蕴作为被执取的对象，属于五取蕴之一[1]。\n- **想受取蕴**：指想蕴作为被执取的对象，属于五取蕴之一[1]。\n- **行受取蕴**：指行蕴作为被执取的对象，属于五取蕴之一[1]。\n- **识受取蕴**：指识蕴作为被执取的对象，属于五取蕴之一[1]。\n\n## 证据覆盖情况\n现有证据仅给出“五取蕴”这一总称，未对各蕴的具体定义或执取机制作进一步说明。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "色受取蕴：五取蕴之一，指色蕴作为被执取的对象[1]。",
+    "受受取蕴：五取蕴之一，指受蕴作为被执取的对象[1]。",
+    "想受取蕴：五取蕴之一，指想蕴作为被执取的对象[1]。",
+    "行受取蕴：五取蕴之一，指行蕴作为被执取的对象[1]。",
+    "识受取蕴：五取蕴之一，指识蕴作为被执取的对象[1]。"
+  ]
+}

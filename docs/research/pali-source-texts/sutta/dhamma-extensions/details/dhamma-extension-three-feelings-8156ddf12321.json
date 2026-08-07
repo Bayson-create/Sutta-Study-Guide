@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "id": "three-feelings",
+  "layer": "system",
+  "canonical_group_id": "three-feelings",
+  "label": "三受",
+  "number": 3,
+  "members": [
+    "苦受",
+    "乐受",
+    "不苦不乐受"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "三受",
+      "number": 3,
+      "members": [
+        "苦受",
+        "乐受",
+        "不苦不乐受"
+      ],
+      "source_paragraphs": [
+        "Three feelings."
+      ],
+      "source_text": "Three feelings.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=%E4%B8%89%E5%8F%97",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 三受",
+          "text": "Three feelings.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=%E4%B8%89%E5%8F%97"
+        }
+      ]
+    },
+    {
+      "source_uid": "mn59",
+      "collection": "中部",
+      "language": "en",
+      "parallel_group": "mn59-feelings",
+      "label": "三受",
+      "number": 3,
+      "members": [
+        "苦受",
+        "乐受",
+        "不苦不乐受"
+      ],
+      "source_paragraphs": [
+        "“Chamberlain, the Buddha has spoken of three feelings:",
+        "pleasant, painful, and neutral.",
+        "The Buddha has spoken of these three feelings.”",
+        "“Sir, Udāyī, the Buddha hasn’t spoken of three feelings.",
+        "pleasant and painful.",
+        "The Buddha said that neutral feeling is included as a peaceful and subtle kind of pleasure.”",
+        "“The Buddha hasn’t spoken of three feelings,",
+        "“The Buddha hasn’t spoken of three feelings,"
+      ],
+      "source_text": "“Chamberlain, the Buddha has spoken of three feelings: pleasant, painful, and neutral. The Buddha has spoken of these three feelings.” “Sir, Udāyī, the Buddha hasn’t spoken of three feelings. pleasant and painful. The Buddha said that neutral feeling is included as a peaceful and subtle kind of pleasure.” “The Buddha hasn’t spoken of three feelings, “The Buddha hasn’t spoken of three feelings,",
+      "source_url": "https://suttacentral.net/mn59?lang=zh&q=%E4%B8%89%E5%8F%97",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "MN 59 · 多种受经 · 三受",
+          "text": "“Chamberlain, the Buddha has spoken of three feelings: pleasant, painful, and neutral. The Buddha has spoken of these three feelings.” “Sir, Udāyī, the Buddha hasn’t spoken of three feelings. pleasant and painful. The Buddha said that neutral feeling is included as a peaceful and subtle kind of pleasure.” “The Buddha hasn’t spoken of three feelings, “The Buddha hasn’t spoken of three feelings,",
+          "href": "https://suttacentral.net/mn59?lang=zh&q=%E4%B8%89%E5%8F%97"
+        }
+      ]
+    },
+    {
+      "source_uid": "da11",
+      "collection": "长阿含",
+      "language": "lzh",
+      "parallel_group": "dn34-dasuttara",
+      "label": "三受",
+      "number": 3,
+      "members": [
+        "苦受",
+        "乐受",
+        "不苦不乐受"
+      ],
+      "source_paragraphs": [
+        "「又有三成法、 T 0057c11三修法、三觉法、三灭法、三证法。云何三成 T 0057c12法？一者親近善友，二者耳聞法音，三法法 T 0057c13成就。云何三修法？謂三三昧：空三昧、无想 T 0057c14三昧、无作三昧。云何三觉法？謂三受：苦受、樂 T 0057c15受、不苦不樂受。云何三灭法？謂三爱：欲爱、有 T 0057c16爱、无有爱。云何三证法？謂三明：宿命智、天眼 T 0057c17智、漏盡智。"
+      ],
+      "source_text": "「又有三成法、 T 0057c11三修法、三觉法、三灭法、三证法。云何三成 T 0057c12法？一者親近善友，二者耳聞法音，三法法 T 0057c13成就。云何三修法？謂三三昧：空三昧、无想 T 0057c14三昧、无作三昧。云何三觉法？謂三受：苦受、樂 T 0057c15受、不苦不樂受。云何三灭法？謂三爱：欲爱、有 T 0057c16爱、无有爱。云何三证法？謂三明：宿命智、天眼 T 0057c17智、漏盡智。",
+      "source_url": "https://suttacentral.net/da11?lang=zh&q=%E4%B8%89%E5%8F%97",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "DĀ 11 · 增一经 · 三受",
+          "text": "「又有三成法、 T 0057c11三修法、三觉法、三灭法、三证法。云何三成 T 0057c12法？一者親近善友，二者耳聞法音，三法法 T 0057c13成就。云何三修法？謂三三昧：空三昧、无想 T 0057c14三昧、无作三昧。云何三觉法？謂三受：苦受、樂 T 0057c15受、不苦不樂受。云何三灭法？謂三爱：欲爱、有 T 0057c16爱、无有爱。云何三证法？謂三明：宿命智、天眼 T 0057c17智、漏盡智。",
+          "href": "https://suttacentral.net/da11?lang=zh&q=%E4%B8%89%E5%8F%97"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 三受",
+        "text": "Three feelings.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=%E4%B8%89%E5%8F%97"
+      },
+      {
+        "kind": "source",
+        "label": "MN 59 · 多种受经 · 三受",
+        "text": "“Chamberlain, the Buddha has spoken of three feelings: pleasant, painful, and neutral. The Buddha has spoken of these three feelings.” “Sir, Udāyī, the Buddha hasn’t spoken of three feelings. pleasant and painful. The Buddha said that neutral feeling is included as a peaceful and subtle kind of pleasure.” “The Buddha hasn’t spoken of three feelings, “The Buddha hasn’t spoken of three feelings,",
+        "href": "https://suttacentral.net/mn59?lang=zh&q=%E4%B8%89%E5%8F%97"
+      },
+      {
+        "kind": "source",
+        "label": "DĀ 11 · 增一经 · 三受",
+        "text": "「又有三成法、 T 0057c11三修法、三觉法、三灭法、三证法。云何三成 T 0057c12法？一者親近善友，二者耳聞法音，三法法 T 0057c13成就。云何三修法？謂三三昧：空三昧、无想 T 0057c14三昧、无作三昧。云何三觉法？謂三受：苦受、樂 T 0057c15受、不苦不樂受。云何三灭法？謂三爱：欲爱、有 T 0057c16爱、无有爱。云何三证法？謂三明：宿命智、天眼 T 0057c17智、漏盡智。",
+        "href": "https://suttacentral.net/da11?lang=zh&q=%E4%B8%89%E5%8F%97"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：三受（3法）\n\n## 直接回答\n三受是佛教中关于感受的三种分类，即苦受、乐受和不苦不乐受 [3]。这一分类在《Kp 4》中被简称为“Three feelings” [1]，在《MN 59》中则具体列举为“pleasant, painful, and neutral” [2]。\n\n## 要点展开\n### 定义与列举\n- 三受指苦受、乐受、不苦不乐受 [3]。\n- 《MN 59》中佛陀明确说有三种受：乐受、苦受、不苦不乐受 [2]。\n\n### 在经典中的位置\n- 《Kp 4》仅提及“三种受”这一名称，未展开具体内容 [1]。\n- 《DĀ 11》将三受列为“三觉法”，与三成法、三修法、三灭法、三证法并列 [3]。\n\n### 争议与解释\n- 《MN 59》中记载了优陀夷的异议，他认为佛陀只说两种受（乐与苦），而将不苦不乐受归为“寂静而微细的乐” [2]。\n\n## 分歧与张力\n《MN 59》内部存在分歧：佛陀宣称三种受，而优陀夷主张两种受，并将不苦不乐受视为一种特殊的乐受 [2]。这一分歧反映了对“受”的分类标准的不同理解。\n\n## 证据覆盖情况\n现有证据覆盖了三受的名称、具体列举及其在经典中的位置，但未涉及三受的详细定义、生起条件或修行意义。关于三受的争议仅在《MN 59》中提及，其他证据未涉及。\n\n## 引用\n- [1] Kp 4 · 童问 · 三受 — https://suttacentral.net/kp4?lang=zh&q=%E4%B8%89%E5%8F%97\n  > Three feelings.\n- [2] MN 59 · 多种受经 · 三受 — https://suttacentral.net/mn59?lang=zh&q=%E4%B8%89%E5%8F%97\n  > “Chamberlain, the Buddha has spoken of three feelings: pleasant, painful, and neutral. The Buddha has spoken of these three feelings.” “Sir, Udāyī, the Buddha hasn’t spoken of three feelings. pleasant and painful. The Buddha said that neutral feeling is included as a peaceful and subtle kind of pleasure.” “The Buddha hasn’t spoken of three feelings, “The Buddha hasn’t spoken of three feelings,\n- [3] DĀ 11 · 增一经 · 三受 — https://suttacentral.net/da11?lang=zh&q=%E4%B8%89%E5%8F%97\n  > 「又有三成法、 T 0057c11三修法、三觉法、三灭法、三证法。云何三成 T 0057c12法？一者親近善友，二者耳聞法音，三法法 T 0057c13成就。云何三修法？謂三三昧：空三昧、无想 T 0057c14三昧、无作三昧。云何三觉法？謂三受：苦受、樂 T 0057c15受、不苦不樂受。云何三灭法？謂三爱：欲爱、有 T 0057c16爱、无有爱。云何三证法？謂三明：宿命智、天眼 T 0057c17智、漏盡智。",
+    "answer_markdown": "## 直接回答\n三受是佛教中关于感受的三种分类，即苦受、乐受和不苦不乐受 [3]。这一分类在《Kp 4》中被简称为“Three feelings” [1]，在《MN 59》中则具体列举为“pleasant, painful, and neutral” [2]。\n\n## 要点展开\n### 定义与列举\n- 三受指苦受、乐受、不苦不乐受 [3]。\n- 《MN 59》中佛陀明确说有三种受：乐受、苦受、不苦不乐受 [2]。\n\n### 在经典中的位置\n- 《Kp 4》仅提及“三种受”这一名称，未展开具体内容 [1]。\n- 《DĀ 11》将三受列为“三觉法”，与三成法、三修法、三灭法、三证法并列 [3]。\n\n### 争议与解释\n- 《MN 59》中记载了优陀夷的异议，他认为佛陀只说两种受（乐与苦），而将不苦不乐受归为“寂静而微细的乐” [2]。\n\n## 分歧与张力\n《MN 59》内部存在分歧：佛陀宣称三种受，而优陀夷主张两种受，并将不苦不乐受视为一种特殊的乐受 [2]。这一分歧反映了对“受”的分类标准的不同理解。\n\n## 证据覆盖情况\n现有证据覆盖了三受的名称、具体列举及其在经典中的位置，但未涉及三受的详细定义、生起条件或修行意义。关于三受的争议仅在《MN 59》中提及，其他证据未涉及。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "苦受：在三受中列为第一种，指痛苦的感受，在《MN 59》中称为“painful” [2]，在《DĀ 11》中称为“苦受” [3]。",
+    "乐受：在三受中列为第二种，指快乐的感受，在《MN 59》中称为“pleasant” [2]，在《DĀ 11》中称为“乐受” [3]。",
+    "不苦不乐受：在三受中列为第三种，指非苦非乐的感受，在《MN 59》中称为“neutral” [2]，在《DĀ 11》中称为“不苦不乐受” [3]；但《MN 59》中优陀夷认为它应归为乐受 [2]。"
+  ]
+}

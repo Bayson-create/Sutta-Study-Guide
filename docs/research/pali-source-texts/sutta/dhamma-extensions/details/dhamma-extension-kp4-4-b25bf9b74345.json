@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "kp4-4",
+  "layer": "core",
+  "canonical_group_id": "kp4-4",
+  "label": "4法",
+  "number": 4,
+  "members": [
+    "苦圣谛",
+    "集圣谛",
+    "灭圣谛",
+    "道圣谛"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "4法",
+      "number": 4,
+      "members": [
+        "苦圣谛",
+        "集圣谛",
+        "灭圣谛",
+        "道圣谛"
+      ],
+      "source_paragraphs": [
+        "What is the four? Four noble truths."
+      ],
+      "source_text": "What is the four? Four noble truths.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=4%E6%B3%95",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 4法",
+          "text": "What is the four? Four noble truths.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=4%E6%B3%95"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 4法",
+        "text": "What is the four? Four noble truths.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=4%E6%B3%95"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：4法（4法）\n\n## 直接回答\n4法即四圣谛，包括苦圣谛、集圣谛、灭圣谛、道圣谛 [1]。现有证据仅给出法组名称与成员数目，未对各圣谛的具体定义展开说明。\n\n## 要点展开\n### 法组整体定义\n4法指四圣谛，是佛教核心教法之一 [1]。\n\n### 苦圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 集圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 灭圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 道圣谛\n证据仅列出其名，未解释其义 [1]。\n\n## 证据覆盖情况\n现有证据仅确认4法即四圣谛及其成员名称，未覆盖各圣谛的具体定义、内容或相互关系。\n\n## 引用\n- [1] Kp 4 · 童问 · 4法 — https://suttacentral.net/kp4?lang=zh&q=4%E6%B3%95\n  > What is the four? Four noble truths.",
+    "answer_markdown": "## 直接回答\n4法即四圣谛，包括苦圣谛、集圣谛、灭圣谛、道圣谛 [1]。现有证据仅给出法组名称与成员数目，未对各圣谛的具体定义展开说明。\n\n## 要点展开\n### 法组整体定义\n4法指四圣谛，是佛教核心教法之一 [1]。\n\n### 苦圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 集圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 灭圣谛\n证据仅列出其名，未解释其义 [1]。\n\n### 道圣谛\n证据仅列出其名，未解释其义 [1]。\n\n## 证据覆盖情况\n现有证据仅确认4法即四圣谛及其成员名称，未覆盖各圣谛的具体定义、内容或相互关系。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "苦圣谛：证据仅列出名称，未说明其定义或内容 [1]。",
+    "集圣谛：证据仅列出名称，未说明其定义或内容 [1]。",
+    "灭圣谛：证据仅列出名称，未说明其定义或内容 [1]。",
+    "道圣谛：证据仅列出名称，未说明其定义或内容 [1]。"
+  ]
+}

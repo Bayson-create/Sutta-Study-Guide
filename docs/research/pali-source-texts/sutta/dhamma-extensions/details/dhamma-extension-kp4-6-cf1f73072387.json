@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "kp4-6",
+  "layer": "core",
+  "canonical_group_id": "kp4-6",
+  "label": "6法",
+  "number": 6,
+  "members": [
+    "眼内处",
+    "耳内处",
+    "鼻内处",
+    "舌内处",
+    "身内处",
+    "意内处"
+  ],
+  "occurrences": [
+    {
+      "source_uid": "kp4",
+      "collection": "Khuddakapāṭha",
+      "language": "en",
+      "parallel_group": "kp4-numbered",
+      "label": "6法",
+      "number": 6,
+      "members": [
+        "眼内处",
+        "耳内处",
+        "鼻内处",
+        "舌内处",
+        "身内处",
+        "意内处"
+      ],
+      "source_paragraphs": [
+        "What is the six? Six interior sense fields."
+      ],
+      "source_text": "What is the six? Six interior sense fields.",
+      "source_url": "https://suttacentral.net/kp4?lang=zh&q=6%E6%B3%95",
+      "member_count_status": "confirmed",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Kp 4 · 童问 · 6法",
+          "text": "What is the six? Six interior sense fields.",
+          "href": "https://suttacentral.net/kp4?lang=zh&q=6%E6%B3%95"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "evidence": [
+      {
+        "kind": "source",
+        "label": "Kp 4 · 童问 · 6法",
+        "text": "What is the six? Six interior sense fields.",
+        "href": "https://suttacentral.net/kp4?lang=zh&q=6%E6%B3%95"
+      }
+    ],
+    "early_buddhist_queries": [],
+    "site_hits": [],
+    "ai_status": "ready",
+    "ai_full_markdown": "# AI 综合回答：6法（6法）\n\n## 直接回答\n6法指六内处，即眼内处、耳内处、鼻内处、舌内处、身内处、意内处 [1]。\n\n## 要点展开\n### 整体定义\n6法即六内处，是六种内在的感知器官或功能领域 [1]。\n\n### 成员解释\n- **眼内处**：视觉的感知基础 [1]。\n- **耳内处**：听觉的感知基础 [1]。\n- **鼻内处**：嗅觉的感知基础 [1]。\n- **舌内处**：味觉的感知基础 [1]。\n- **身内处**：触觉的感知基础 [1]。\n- **意内处**：思维或意识的感知基础 [1]。\n\n## 证据覆盖情况\n现有证据仅给出六内处的名称列表，未对各成员的具体功能或定义展开说明。\n\n## 引用\n- [1] Kp 4 · 童问 · 6法 — https://suttacentral.net/kp4?lang=zh&q=6%E6%B3%95\n  > What is the six? Six interior sense fields.",
+    "answer_markdown": "## 直接回答\n6法指六内处，即眼内处、耳内处、鼻内处、舌内处、身内处、意内处 [1]。\n\n## 要点展开\n### 整体定义\n6法即六内处，是六种内在的感知器官或功能领域 [1]。\n\n### 成员解释\n- **眼内处**：视觉的感知基础 [1]。\n- **耳内处**：听觉的感知基础 [1]。\n- **鼻内处**：嗅觉的感知基础 [1]。\n- **舌内处**：味觉的感知基础 [1]。\n- **身内处**：触觉的感知基础 [1]。\n- **意内处**：思维或意识的感知基础 [1]。\n\n## 证据覆盖情况\n现有证据仅给出六内处的名称列表，未对各成员的具体功能或定义展开说明。",
+    "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+    "model": "deepseek-v4-flash"
+  },
+  "expanded_points": [
+    "眼内处是六内处之一，属于六法中的第一个成员 [1]。",
+    "耳内处是六内处之一，属于六法中的第二个成员 [1]。",
+    "鼻内处是六内处之一，属于六法中的第三个成员 [1]。",
+    "舌内处是六内处之一，属于六法中的第四个成员 [1]。",
+    "身内处是六内处之一，属于六法中的第五个成员 [1]。",
+    "意内处是六内处之一，属于六法中的第六个成员 [1]。"
+  ]
+}
