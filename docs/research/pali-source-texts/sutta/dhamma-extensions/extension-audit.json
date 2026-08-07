@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T17:24:56.671Z",
+  "generated_at": "2026-08-07T17:35:26.186Z",
   "counts": {
     "core": 57,
     "system": 10,
     "formal": 67,
-    "review": 20,
+    "review": 23,
     "sources": 10
   },
   "formal_without_exact_members": [],
@@ -188,6 +188,33 @@
       "member_count": 0,
       "source_uids": [
         "an1028"
+      ]
+    },
+    {
+      "id": "da11-6-成就",
+      "label": "6法 · 成就",
+      "number": 6,
+      "member_count": 0,
+      "source_uids": [
+        "da11"
+      ]
+    },
+    {
+      "id": "da11-7-证知",
+      "label": "7法 · 证知",
+      "number": 7,
+      "member_count": 0,
+      "source_uids": [
+        "da11"
+      ]
+    },
+    {
+      "id": "da11-8-成就",
+      "label": "8法 · 成就",
+      "number": 8,
+      "member_count": 0,
+      "source_uids": [
+        "da11"
       ]
     }
   ]
