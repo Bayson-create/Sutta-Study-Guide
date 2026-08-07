@@ -38,12 +38,12 @@ competes with itself. 429 handling remains as a backstop, not the plan.
 Resumability: a progress file records every finished unit_key, so the run can
 be stopped and restarted without redoing work or double-charging the window.
 
-Usage:
+Usage (after the chapter's archived sample has been approved):
     export SUTTA_API_EMAIL=... SUTTA_API_PASSWORD=...
-    python3 scripts/retranslate_vism_chapter.py --chapter 17 --start p1-r80
-    python3 scripts/retranslate_vism_chapter.py --chapter 17 --start p1-r80 \
+    python3 scripts/retranslate_vism_chapter.py --chapter 17 --mode retranslate-dharmamitra
+    python3 scripts/retranslate_vism_chapter.py --chapter 17 --mode fill-gaps \
         --minutes 15                      # stop after 15 minutes, resumable
-    python3 scripts/retranslate_vism_chapter.py --chapter 17 --start p1-r80 \
+    python3 scripts/retranslate_vism_chapter.py --chapter 1 --mode retranslate-dharmamitra --limit 20 \
         --dry-run                         # translate nothing, just plan
 """
 
@@ -103,16 +103,10 @@ RETRY_ROUNDS = 3
 # output is already ~10% terser than solo output; 20 keeps both in hand.
 BATCH_SIZE = 20
 
-# Instruction sent with a batch. The numbering is the alignment contract, and
-# results are matched on the number the model *returns*, never on line order -
-# so a reordered response still lands correctly, and only a genuinely
-# mis-numbered one is rejected.
-BATCH_STYLE = (
-    "简体中文，佛学术语准确。输入是编号的多个句子，请逐句翻译，"
-    "输出必须保持相同编号、相同数量、相同顺序，每行一条，格式为「编号. 译文」，"
-    "不要合并或拆分句子，不要添加任何额外说明。"
-)
-SOLO_STYLE = "简体中文，佛学术语准确，保持原文的庄重语气"
+# The API chooses Dharmamitra's provider-default style.  Batch requests add
+# only a numbering contract server-side; this script keeps no prose-style
+# instruction of its own.
+STYLE_CONFIGURATION = "provider-default; batch-numbering-only"
 
 # Dharmamitra has a hard quota behind cat-translate, separate from our own
 # backend's per-minute limiter (which raises RateLimitError and is handled
@@ -363,35 +357,54 @@ def load_chapter_rows(chapter: str):
     return rows
 
 
+def select_rows(rows, overlay: dict, mode: str, limit: int | None = None):
+    """Select work from the current production overlay, never from progress.
+
+    Returning the intermediate selection makes the safety contract testable:
+    a human row is never selected, and `retranslate-dharmamitra` is exactly
+    the currently-machine-translated subset rather than a stale local idea of
+    what a prior run may have written.
+    """
+    human = {key for key, value in overlay.items() if value.get("source") == "human"}
+    if mode == "fill-gaps":
+        translated = {key for key, value in overlay.items() if (value.get("current_text") or "").strip()}
+        translated |= {row[0] for row in rows if (row[2] or "").strip()}
+        todo_all = [row for row in rows if row[1] and row[0] not in translated]
+        span = f"whole chapter, gaps only ({len(translated)} already translated)"
+    elif mode == "not-dharmamitra":
+        done_by_dharmamitra = {key for key, value in overlay.items() if value.get("source") == "dharmamitra"}
+        todo_all = [row for row in rows if row[1] and row[0] not in done_by_dharmamitra]
+        span = f"whole chapter, not yet Dharmamitra-translated ({len(done_by_dharmamitra)} already are)"
+    elif mode == "retranslate-dharmamitra":
+        done_by_dharmamitra = {
+            key for key, value in overlay.items()
+            if value.get("source") == "dharmamitra" and (value.get("current_text") or "").strip()
+        }
+        todo_all = [row for row in rows if row[1] and row[0] in done_by_dharmamitra]
+        span = f"whole chapter, current Dharmamitra rows ({len(done_by_dharmamitra)} selected)"
+    else:
+        raise ValueError(f"unknown mode: {mode}")
+    skipped_human = [row for row in todo_all if row[0] in human]
+    todo = [row for row in todo_all if row[0] not in human]
+    return todo_all, todo[:limit] if limit is not None else todo, skipped_human, span
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--chapter", default="17")
-    ap.add_argument("--start", default=None,
-                    help="unit_key to start from, e.g. p1-r80. Re-translates everything "
-                         "from there on, including sentences that already have a translation. "
-                         "Mutually exclusive with --fill-gaps.")
+    ap.add_argument("--mode", required=True,
+                    choices=("fill-gaps", "not-dharmamitra", "retranslate-dharmamitra"),
+                    help="fill missing rows, replace non-machine rows, or retranslate only "
+                         "current source=dharmamitra rows")
     ap.add_argument("--batch-size", type=int, default=BATCH_SIZE,
                     help=f"sentences per Dharmamitra call (default {BATCH_SIZE}; 1 disables "
                          f"batching). A batch is only written if it comes back complete and "
                          f"correctly numbered, otherwise its sentences are redone one by one.")
-    ap.add_argument("--fill-gaps", action="store_true",
-                    help="translate only sentences with no translation yet, anywhere in the "
-                         "chapter, and skip the ones that have one. 'Has a translation' means "
-                         "the static JSON or the backend overlay carries a non-empty text - "
-                         "the union, so work already done through either route is never "
-                         "repeated. This is what the dashboard queue uses.")
-    ap.add_argument("--not-dharmamitra", action="store_true",
-                    help="translate every sentence in the chapter whose overlay row is not "
-                         "already source=dharmamitra, overwriting whatever text is there now "
-                         "(old static translation, an older machine pass, etc.) - unlike "
-                         "--fill-gaps, having *some* text does not exempt a sentence. Human "
-                         "edits are still skipped unless --overwrite-human is also given.")
-    ap.add_argument("--end", default=None, help="unit_key to stop after (default: end of chapter)")
+    ap.add_argument("--limit", type=int, default=None,
+                    help="process at most N selected rows (use 20 for the chapter-1 pilot)")
     ap.add_argument("--minutes", type=float, default=None, help="stop after N minutes (resumable)")
     ap.add_argument("--api-base", default=os.environ.get("SUTTA_API_BASE", DEFAULT_API))
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--overwrite-human", action="store_true",
-                    help="also replace sentences a person edited by hand (default: skip)")
     ap.add_argument("--progress", default=None, help="progress file (default: alongside this script)")
     ap.add_argument("--status", default=None,
                     help="live status file for the dashboard "
@@ -406,65 +419,28 @@ def main() -> None:
         STATUS_DIR / f"api-retranslate-vism-{args.chapter}.json"
     )
 
-    modes = [bool(args.start), args.fill_gaps, args.not_dharmamitra]
-    if sum(modes) != 1:
-        sys.exit("FAILED: pass exactly one of --start, --fill-gaps, --not-dharmamitra")
+    if args.limit is not None and args.limit < 1:
+        sys.exit("FAILED: --limit must be at least 1")
 
     rows = load_chapter_rows(args.chapter)
-    keys = [r[0] for r in rows]
 
-    # Which sentences a person edited by hand - never clobber those silently.
     overlay = _request_with_retries(f"{args.api_base}/api/translations?doc={doc_key}")["units"]
-    human = {k for k, v in overlay.items() if v.get("source") == "human"}
-
-    if args.fill_gaps:
-        # A sentence counts as translated if either source has text for it.
-        # The two disagree per chapter in both directions - ch3/15/19 exist
-        # only in the overlay, ch1 mostly only in the static file - so taking
-        # the union is what stops the queue re-spending hours on sentences
-        # that were already done through the other route.
-        translated = {k for k, v in overlay.items() if (v.get("current_text") or "").strip()}
-        translated |= {r[0] for r in rows if (r[2] or "").strip()}
-        todo_all = [r for r in rows if r[1] and r[0] not in translated]
-        span = f"whole chapter, gaps only ({len(translated)} already translated)"
-    elif args.not_dharmamitra:
-        # source=dharmamitra is the exact field this script itself sets on
-        # every successful write (see save_one below) - "already translated
-        # by Dharmamitra" means exactly this, not "has some text", so a row
-        # with an old static/human/other-source translation is redone and
-        # overwritten same as an empty one.
-        done_by_dharmamitra = {k for k, v in overlay.items() if v.get("source") == "dharmamitra"}
-        todo_all = [r for r in rows if r[1] and r[0] not in done_by_dharmamitra]
-        span = f"whole chapter, not yet Dharmamitra-translated ({len(done_by_dharmamitra)} already are)"
-    else:
-        if args.start not in keys:
-            sys.exit(f"FAILED: --start {args.start} not found in {doc_key}")
-        lo = keys.index(args.start)
-        hi = keys.index(args.end) + 1 if args.end else len(rows)
-        todo_all = [r for r in rows[lo:hi] if r[1]]
-        span = f"{args.start} .. {keys[hi - 1]}"
+    todo_all, todo, skipped_human, span = select_rows(rows, overlay, args.mode, args.limit)
 
     done = set()
     if progress_path.exists():
         done = set(json.loads(progress_path.read_text(encoding="utf-8")).get("done", []))
 
-    skipped_human = [r for r in todo_all if r[0] in human and not args.overwrite_human]
-    # --fill-gaps deliberately ignores the progress file when choosing work:
+    # The live-overlay modes deliberately ignore the progress file when choosing work:
     # `todo_all` is already derived from the live overlay, which is the only
     # authority on what actually got stored. Trusting the progress file on top
     # of it can permanently skip a sentence whose write was acknowledged but
     # lost - which really happened here, when a PUT was accepted by a replica
     # being drained during a deploy. The overlay says untranslated, the
-    # progress file says done, and the sentence is never revisited. In
-    # --start mode the progress file is still the resume ledger, since there
-    # the whole point is to overwrite sentences that already have text.
-    # --not-dharmamitra shares --fill-gaps's reasoning for bypassing the
+    # progress file says done, and the sentence is never revisited.
+    # --not-dharmamitra and --retranslate-dharmamitra share --fill-gaps's reasoning for bypassing the
     # progress file: its own "already done" check is a fresh read of the live
     # overlay every run, which is the only authority a lost write cannot fool.
-    trust_progress_file = not (args.fill_gaps or args.not_dharmamitra)
-    todo = [r for r in todo_all
-            if (not trust_progress_file or r[0] not in done)
-            and (args.overwrite_human or r[0] not in human)]
 
     print(f"chapter {args.chapter}  doc_key={doc_key}")
     print(f"  range {span}   sentences with Pāli: {len(todo_all)}")
@@ -497,7 +473,8 @@ def main() -> None:
     latencies = []
     status = StatusWriter(status_path, {
         "doc_key": doc_key, "chapter": args.chapter,
-        "start": args.start or ("not-dharmamitra" if args.not_dharmamitra else "fill-gaps"),
+        "mode": args.mode, "style_configuration": STYLE_CONFIGURATION,
+        "limit": args.limit,
         "total": len(todo), "already_done": len(done),
         "skipped_human": [r[0] for r in skipped_human],
         "client_max_calls": CLIENT_MAX_CALLS, "server_max_calls": SERVER_MAX_CALLS,
@@ -517,7 +494,7 @@ def main() -> None:
         try:
             _request(f"{args.api_base}/api/translations/{doc_key}/{unit_key}",
                      method="PUT", token=token,
-                     body={"text": text, "reason": "Dharmamitra 重新翻译（cat-translate）",
+                     body={"text": text, "reason": "Dharmamitra 默认模式现代汉语重译",
                            "source": "dharmamitra"})
         except Exception as exc:
             print(f"  !! {label} {unit_key} save failed: {exc}")
