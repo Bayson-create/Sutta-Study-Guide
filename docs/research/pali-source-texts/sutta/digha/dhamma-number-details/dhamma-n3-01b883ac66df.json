@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-01b883ac66df",
+    "number": 3,
+    "label": "三学",
+    "member_items": [
+      "增上戒学",
+      "增上心学",
+      "增上慧学"
+    ],
+    "group_ids": [
+      "dn33-n3-g47"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三学",
+      "增上戒学",
+      "增上心学",
+      "增上慧学"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三学」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：增上戒学、增上心学、增上慧学。[1]\n\n## 所含各法\n### 增上戒学\n经文将「增上戒学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《三学经第一》命中：什么是增上戒学？。[3]\n### 增上心学\n经文将「增上心学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《三学经第一》命中：什么是增上心学？。[4]\n### 增上慧学\n经文将「增上慧学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《止经》命中：非观法增上慧的得到者吗？。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三学",
+          "text": "三学：增上戒学、增上心学、增上慧学。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "三学经第一",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%B8%80"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "什么是增上戒学？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "什么是增上心学？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.54",
+          "text": "非观法增上慧的得到者吗？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.54&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9D%9E%E8%A7%80%E6%B3%95%E5%A2%9E%E4%B8%8A%E6%85%A7%E7%9A%84%E5%BE%97%E5%88%B0%E8%80%85%E5%97%8E%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "这些是三学。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.90",
+          "text": "三学经第二",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%BA%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.90",
+          "text": "这些是三学。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.86",
+          "text": "在那里，这三学行这所有之总摄。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.86&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.87",
+          "text": "在那里，这三学行这所有之总摄。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.88",
+          "text": "在那里，这三学行这所有之总摄。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.88&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "有这三学，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E5%AD%B8%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.89",
+          "text": "这被称为增上戒学。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三学",
+          "hits": [
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三学经第一",
+              "score": 13.261719477980675,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%B8%80"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是三学。",
+              "score": 13.261719477980675,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三学经第二",
+              "score": 13.261719477980675,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%BA%8C"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是三学。",
+              "score": 13.261719477980675,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.86",
+              "collection": "经藏/增支部_an",
+              "title": "学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在那里，这三学行这所有之总摄。",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.86&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+            },
+            {
+              "uid": "an3.87",
+              "collection": "经藏/增支部_an",
+              "title": "学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在那里，这三学行这所有之总摄。",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+            },
+            {
+              "uid": "an3.88",
+              "collection": "经藏/增支部_an",
+              "title": "学经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在那里，这三学行这所有之总摄。",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.88&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E9%80%99%E4%B8%89%E5%AD%B8%E8%A1%8C%E9%80%99%E6%89%80%E6%9C%89%E4%B9%8B%E7%B8%BD%E6%94%9D%E3%80%82"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三学，哪三个呢？",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E5%AD%B8%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "增上戒学",
+          "hits": [
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是增上戒学？",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%EF%BC%9F"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为增上戒学。",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是增上戒学？",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%EF%BC%9F"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为增上戒学。",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学。",
+              "score": 26.737641401878783,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学。",
+              "score": 26.737641401878783,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.86",
+              "collection": "经藏/增支部_an",
+              "title": "学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学，比丘们！",
+              "score": 25.12333564195132,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.86&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.87",
+              "collection": "经藏/增支部_an",
+              "title": "学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学，比丘们！",
+              "score": 25.12333564195132,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "增上心学",
+          "hits": [
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是增上心学？",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%EF%BC%9F"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为增上心学。",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是增上心学？",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%EF%BC%9F"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为增上心学。",
+              "score": 27.282142393695583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.89",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学。",
+              "score": 23.766792357225587,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学。",
+              "score": 23.766792357225587,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.86",
+              "collection": "经藏/增支部_an",
+              "title": "学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学，比丘们！",
+              "score": 22.331853903956734,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.86&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.87",
+              "collection": "经藏/增支部_an",
+              "title": "学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒学、增上心学、增上慧学，比丘们！",
+              "score": 22.331853903956734,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "增上慧学",
+          "hits": [
+            {
+              "uid": "an10.54",
+              "collection": "经藏/增支部_an",
+              "title": "止经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "非观法增上慧的得到者吗？",
+              "score": 10.117241395488863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.54&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9D%9E%E8%A7%80%E6%B3%95%E5%A2%9E%E4%B8%8A%E6%85%A7%E7%9A%84%E5%BE%97%E5%88%B0%E8%80%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十无学法：无学正见、无学正志、无学正语、无学正业、无学正命、无学正精进、无学正念、无学正定、无学正智、无学正解脱。",
+              "score": 9.977741189749564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E7%84%A1%E5%AD%B8%E6%B3%95%EF%BC%9A%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%A6%8B%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%BF%97%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%AA%9E%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E6%A5%AD%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%91%BD%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E7%B2%BE%E9%80%B2%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%BF%B5%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%AE%9A%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E6%99%BA%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%A7%A3%E8%84%AB%E3%80%82"
+            },
+            {
+              "uid": "an10.54",
+              "collection": "经藏/增支部_an",
+              "title": "止经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我是观法增上慧的得到者吗？",
+              "score": 9.637016510436538,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.54&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E6%98%AF%E8%A7%80%E6%B3%95%E5%A2%9E%E4%B8%8A%E6%85%A7%E7%9A%84%E5%BE%97%E5%88%B0%E8%80%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "an10.55",
+              "collection": "经藏/增支部_an",
+              "title": "退失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我是观法增上慧的得到者吗？",
+              "score": 9.637016510436538,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.55&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E6%98%AF%E8%A7%80%E6%B3%95%E5%A2%9E%E4%B8%8A%E6%85%A7%E7%9A%84%E5%BE%97%E5%88%B0%E8%80%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "dn8",
+              "collection": "经藏/长部_dn",
+              "title": "狮子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而在这里，我有更好的增上慧。",
+              "score": 9.637016510436538,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn8&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%80%8C%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%E6%88%91%E6%9C%89%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%A2%9E%E4%B8%8A%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十无学法：无学正见、无学正志、无学正语、无学正业、无学正命、无学正精进、无学正念、无学正定、无学正智、无学正解脱，这些是应该被作证的十法。",
+              "score": 9.574388849976994,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E7%84%A1%E5%AD%B8%E6%B3%95%EF%BC%9A%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%A6%8B%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%BF%97%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%AA%9E%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E6%A5%AD%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%91%BD%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E7%B2%BE%E9%80%B2%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%BF%B5%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E5%AE%9A%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E6%99%BA%E3%80%81%E7%84%A1%E5%AD%B8%E6%AD%A3%E8%A7%A3%E8%84%AB%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an3.90",
+              "collection": "经藏/增支部_an",
+              "title": "三学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "增上戒、增上心、增上慧，",
+              "score": 9.20031447020741,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%EF%BC%8C"
+            },
+            {
+              "uid": "an10.111",
+              "collection": "经藏/增支部_an",
+              "title": "无学经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "被称为『无学，无学』，大德！",
+              "score": 8.89079062644805,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.111&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E7%84%A1%E5%AD%B8%EF%BC%8C%E7%84%A1%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g47",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 47,
+      "label": "三学",
+      "members": "增上戒学、增上心学、增上慧学",
+      "member_items": [
+        "增上戒学",
+        "增上心学",
+        "增上慧学"
+      ],
+      "dn34_status": null,
+      "source_text": "三学：增上戒学、增上心学、增上慧学。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8"
+    }
+  ]
+}

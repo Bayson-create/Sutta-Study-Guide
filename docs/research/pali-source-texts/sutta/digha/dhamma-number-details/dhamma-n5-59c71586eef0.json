@@ -1,0 +1,739 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-59c71586eef0",
+    "number": 5,
+    "label": "五根",
+    "member_items": [
+      "信根",
+      "活力根",
+      "念根",
+      "定根",
+      "慧根"
+    ],
+    "group_ids": [
+      "dn33-n5-g20",
+      "dn34-n5-g6"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "五根",
+      "信根",
+      "活力根",
+      "念根",
+      "定根",
+      "慧根"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五根」属于 5 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：信根、活力根、念根、定根、慧根。[1]\n- DN34：信根、活力根、念根、定根、慧根。[2]\n\n## 所含各法\n### 信根\n经文将「信根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《解析经第一》命中：什么是信根？。[4]\n### 活力根\n经文将「活力根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《解析经第一》命中：什么是活力根？。[5]\n### 念根\n经文将「念根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《解析经第一》命中：什么是念根？。[6]\n### 定根\n经文将「定根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《解析经第一》命中：什么是定根？。[7]\n### 慧根\n经文将「慧根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《解析经第一》命中：什么是慧根？。[8]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五根",
+          "text": "下一个五根：信根、活力根、念根、定根、慧根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E6%A0%B9%E3%80%81%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%81%E5%BF%B5%E6%A0%B9%E3%80%81%E5%AE%9A%E6%A0%B9%E3%80%81%E6%85%A7%E6%A0%B9"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 五根",
+          "text": "（六）哪些是殊胜分的五法呢？五根：信根、活力根、念根、定根、慧根，这些是殊胜分的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E6%A0%B9%E3%80%81%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%81%E5%BF%B5%E6%A0%B9%E3%80%81%E5%AE%9A%E6%A0%B9%E3%80%81%E6%85%A7%E6%A0%B9"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.65",
+          "text": "有这五根，哪五根呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.65&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.9",
+          "text": "什么是信根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.9",
+          "text": "什么是活力根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.9",
+          "text": "什么是念根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.9",
+          "text": "什么是定根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.9",
+          "text": "什么是慧根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.66",
+          "text": "有这五根，哪五根呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.66&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.1",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.1&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.8",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.8&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.12",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.12&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.13",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.13&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-buddhism-reflections.md",
+          "text": "奥禅师（Pa-Auk Sayadaw）《智慧之光》：名色分别智、缘摄受智的不可替代性、毕陵伽婆蹉公案的正确复述、摩诃那伽长老自认阿罗汉六十年的公案 - 《南传菩萨道》：布施波罗蜜章节（僧伽施分类、不分别受者身份地位而布施）、持戒波罗蜜章节（身不正行、语不正行、活命遍净戒、布萨戒） - 《阿姜曼正传》《破布包裹的纯金》：森林派与建制的历史张力、僧王为阿姜孔玛僧团力排众议的案例、头陀行传统 - 《相应部》：定经（禅定的强制性规定）、根相应（信根与慧根平衡） - 《大念处经》：四念处不可代理的\"自观其心\"原则 - 《法句经》第 142 偈：戒行清净者\"彼即是比丘\"，不分在家出家",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BF%A1%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "saka）”。只要他们的“慧”不是脱离定力的口头禅，而是在清净定力的托底之下，极其敏锐、精进地去解脱名色法，三藏圣典和历代长老对此会给予最崇高、最热烈的赞叹与随喜（Anumodana）。 以下是原始佛教和上座部对“精进于慧”者的顶级随喜与崇高评价： --- ## 一、 《巴利三藏》的至高随喜：称赞智慧为“世间之光” 在经典中，佛陀常用最壮丽的辞藻来随喜那些在智慧上勇猛精进的弟子，将智慧视为斩断黑暗的终极武器。 ## 1. 赞叹慧根 - 经典出处：《增支部》 - 佛陀原文： > \"Paññā hi seṭṭhā kusalā vadanti\" > “在诸善法中，智慧被称为最殊胜。” - 经典出处：《相应部》 - 佛陀原文： > \"Natthi paññāsamā ābhā\" > “没有任何光明可与智慧相比。” ## 2. 赞叹智慧之光 - 经典出处：《法句经》 - 佛陀原文： > “Cando tapati ādicco...paññāya tapati muni 月亮发光，太阳发光，...圣者以智慧而放光。” --- ## 二、 圣典对“随法行者”与“纯观行者”的专属赞誉 上座部承认，由于众生过去世累积的因缘（波罗蜜）不同，人的根器分为两",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%85%A7%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透过观照三相证入圣道。 --- # 二十二、五根（Pañcendriyāni） **五根** 根（indriya）意为\"主控\"，五根是统御修行成就的五种心力： 1. 信根（saddhā-indriya）：对佛法僧与正道的坚定信念 2. 精进根（vīriya-indriya）：四正勤的努力 3. 念根（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "| 义成部 Siddhatthika | 与王山部共有：心心所分类为虚构；布施只是心法；今生所施可维持他世生命；一切由业；重罪整劫报 | 业力泛化、心理主义化 | | Gokulika | 世界纯是炽燃痛苦 | 极端苦观，近似把苦谛实体化、绝对化 | | Bhadrayanika | 见谛分段获得 | 圣道分割化 | | 化地部 Mahisasaka | 八正道实为五支；二种苦灭；禅定阶段可立即转；十二因缘无为；空间无为；三道支是色法；五根不属世间 | 道支、无为、禅定与色心分类偏差 | | 北道派 Uttarapathaka | 痛中有喜；记忆和未来思维无所缘；梦心无记；无意重罪不免责；有障有缚也可解脱；凡夫可得决定智；胎儿/梦者可证真理；在家人、婴儿、胎儿、梦者可成阿罗汉；佛无悲心；佛教可重造；唯施者能净施；真如说；空间无为；一条道非四道 | 混合了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**（Purejāta-paccaya） 11. **后生缘**（Pacchājāta-paccaya） 12. **数数习行缘**（Āsevana-paccaya） 13. **业缘**（Kamma-paccaya） 14. **异熟缘**（Vipāka-paccaya） 15. **食缘**（Āhāra-paccaya） 16. **根缘**（Indriya-paccaya）：其中特别讨论了\"男根、女根\"为何不算作此缘所摄的\"缘法\"，而只算\"控制\"（因为它们并不具备\"产生、支持、维持\"三种作用中的任何一种，但确实对身体的性征形态施加控制力——譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五根",
+          "hits": [
+            {
+              "uid": "sn48.65",
+              "collection": "经藏/相应部_sn",
+              "title": "果经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五根，哪五根呢？",
+              "score": 10.897998825736874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.65&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.66",
+              "collection": "经藏/相应部_sn",
+              "title": "果经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五根，哪五根呢？",
+              "score": 10.897998825736874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.66&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.1",
+              "collection": "经藏/相应部_sn",
+              "title": "单纯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.1&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.8",
+              "collection": "经藏/相应部_sn",
+              "title": "应该被见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.8&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.12",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.12&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.13",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.13&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.14",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.14&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "信根",
+          "hits": [
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是信根？",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为信根。",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是信根？",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为信根。",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是信根？",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为信根。",
+              "score": 11.141277126909854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个信是信根。",
+              "score": 10.524637079327887,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E4%BF%A1%E6%98%AF%E4%BF%A1%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个信是信根。",
+              "score": 10.524637079327887,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E4%BF%A1%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E4%BF%A1%E6%98%AF%E4%BF%A1%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "活力根",
+          "hits": [
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力根？",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力根。",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力根？",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力根。",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力根？",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力根。",
+              "score": 19.71790840031543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个活力是活力根。",
+              "score": 19.51864066678867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E6%B4%BB%E5%8A%9B%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个活力是活力根。",
+              "score": 19.51864066678867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E6%B4%BB%E5%8A%9B%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E6%B4%BB%E5%8A%9B%E6%98%AF%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "念根",
+          "hits": [
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是念根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为念根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%BF%B5%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是念根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为念根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%BF%B5%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是念根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为念根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%BF%B5%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个念是念根。",
+              "score": 11.110684282387089,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E5%BF%B5%E6%98%AF%E5%BF%B5%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个念是念根。",
+              "score": 11.110684282387089,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E5%BF%B5%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E5%BF%B5%E6%98%AF%E5%BF%B5%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "定根",
+          "hits": [
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是定根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为定根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%AE%9A%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是定根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为定根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%AE%9A%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是定根？",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为定根。",
+              "score": 11.761660922523825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%AE%9A%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个定是定根。",
+              "score": 11.110684282387089,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E5%AE%9A%E6%98%AF%E5%AE%9A%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个定是定根。",
+              "score": 11.110684282387089,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E5%AE%9A%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E5%AE%9A%E6%98%AF%E5%AE%9A%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "慧根",
+          "hits": [
+            {
+              "uid": "sn48.9",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧根？",
+              "score": 12.689352579398548,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.9&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.10",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧根？",
+              "score": 12.689352579398548,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.11",
+              "collection": "经藏/相应部_sn",
+              "title": "获得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧根？",
+              "score": 12.689352579398548,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.11&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个慧是慧根。",
+              "score": 11.987030674179506,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E6%85%A7%E6%98%AF%E6%85%A7%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.50",
+              "collection": "经藏/相应部_sn",
+              "title": "阿巴那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他的那个慧是慧根。",
+              "score": 11.987030674179506,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.50&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E7%9A%84%E9%82%A3%E5%80%8B%E6%85%A7%E6%98%AF%E6%85%A7%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "an3.21",
+              "collection": "经藏/增支部_an",
+              "title": "三弥达经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这个人的慧根增上。",
+              "score": 11.358374845464498,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.21&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E5%80%8B%E4%BA%BA%E7%9A%84%E6%85%A7%E6%A0%B9%E5%A2%9E%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "sn48.43",
+              "collection": "经藏/相应部_sn",
+              "title": "娑鸡多经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡慧力者，是慧根。",
+              "score": 11.358374845464498,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.43&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E6%85%A7%E5%8A%9B%E8%80%85%EF%BC%8C%E6%98%AF%E6%85%A7%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.43",
+              "collection": "经藏/相应部_sn",
+              "title": "娑鸡多经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡慧力者，是慧根。",
+              "score": 11.358374845464498,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.43&lang=zh&q=%E6%85%A7%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E6%85%A7%E5%8A%9B%E8%80%85%EF%BC%8C%E6%98%AF%E6%85%A7%E6%A0%B9%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-buddhism-reflections.md",
+          "heading": "站内搜索命中",
+          "text": "奥禅师（Pa-Auk Sayadaw）《智慧之光》：名色分别智、缘摄受智的不可替代性、毕陵伽婆蹉公案的正确复述、摩诃那伽长老自认阿罗汉六十年的公案 - 《南传菩萨道》：布施波罗蜜章节（僧伽施分类、不分别受者身份地位而布施）、持戒波罗蜜章节（身不正行、语不正行、活命遍净戒、布萨戒） - 《阿姜曼正传》《破布包裹的纯金》：森林派与建制的历史张力、僧王为阿姜孔玛僧团力排众议的案例、头陀行传统 - 《相应部》：定经（禅定的强制性规定）、根相应（信根与慧根平衡） - 《大念处经》：四念处不可代理的\"自观其心\"原则 - 《法句经》第 142 偈：戒行清净者\"彼即是比丘\"，不分在家出家",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BF%A1%E6%A0%B9&scope=site",
+          "query": "信根"
+        },
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "saka）”。只要他们的“慧”不是脱离定力的口头禅，而是在清净定力的托底之下，极其敏锐、精进地去解脱名色法，三藏圣典和历代长老对此会给予最崇高、最热烈的赞叹与随喜（Anumodana）。 以下是原始佛教和上座部对“精进于慧”者的顶级随喜与崇高评价： --- ## 一、 《巴利三藏》的至高随喜：称赞智慧为“世间之光” 在经典中，佛陀常用最壮丽的辞藻来随喜那些在智慧上勇猛精进的弟子，将智慧视为斩断黑暗的终极武器。 ## 1. 赞叹慧根 - 经典出处：《增支部》 - 佛陀原文： > \"Paññā hi seṭṭhā kusalā vadanti\" > “在诸善法中，智慧被称为最殊胜。” - 经典出处：《相应部》 - 佛陀原文： > \"Natthi paññāsamā ābhā\" > “没有任何光明可与智慧相比。” ## 2. 赞叹智慧之光 - 经典出处：《法句经》 - 佛陀原文： > “Cando tapati ādicco...paññāya tapati muni 月亮发光，太阳发光，...圣者以智慧而放光。” --- ## 二、 圣典对“随法行者”与“纯观行者”的专属赞誉 上座部承认，由于众生过去世累积的因缘（波罗蜜）不同，人的根器分为两",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%85%A7%E6%A0%B9&scope=site",
+          "query": "慧根"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透过观照三相证入圣道。 --- # 二十二、五根（Pañcendriyāni） **五根** 根（indriya）意为\"主控\"，五根是统御修行成就的五种心力： 1. 信根（saddhā-indriya）：对佛法僧与正道的坚定信念 2. 精进根（vīriya-indriya）：四正勤的努力 3. 念根（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "| 义成部 Siddhatthika | 与王山部共有：心心所分类为虚构；布施只是心法；今生所施可维持他世生命；一切由业；重罪整劫报 | 业力泛化、心理主义化 | | Gokulika | 世界纯是炽燃痛苦 | 极端苦观，近似把苦谛实体化、绝对化 | | Bhadrayanika | 见谛分段获得 | 圣道分割化 | | 化地部 Mahisasaka | 八正道实为五支；二种苦灭；禅定阶段可立即转；十二因缘无为；空间无为；三道支是色法；五根不属世间 | 道支、无为、禅定与色心分类偏差 | | 北道派 Uttarapathaka | 痛中有喜；记忆和未来思维无所缘；梦心无记；无意重罪不免责；有障有缚也可解脱；凡夫可得决定智；胎儿/梦者可证真理；在家人、婴儿、胎儿、梦者可成阿罗汉；佛无悲心；佛教可重造；唯施者能净施；真如说；空间无为；一条道非四道 | 混合了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**（Purejāta-paccaya） 11. **后生缘**（Pacchājāta-paccaya） 12. **数数习行缘**（Āsevana-paccaya） 13. **业缘**（Kamma-paccaya） 14. **异熟缘**（Vipāka-paccaya） 15. **食缘**（Āhāra-paccaya） 16. **根缘**（Indriya-paccaya）：其中特别讨论了\"男根、女根\"为何不算作此缘所摄的\"缘法\"，而只算\"控制\"（因为它们并不具备\"产生、支持、维持\"三种作用中的任何一种，但确实对身体的性征形态施加控制力——譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "当下之苦的生起和止息\"——这正是四圣谛因果原则的日常版本，不待来世验证，此生此刻便可体会。 ### 测试导师：求解经（III,4） 针对\"如何辨别一位自称开悟的导师是否名副其实\"这一普遍的灵性难题，佛陀教弟子可通过观察其言行举止，推断其心是否已离贪嗔痴；甚至鼓励弟子**直接询问**佛陀本人的心理状态，以求验证。 ### 信与慧的关系：刹帝利经（III,5） 本章最后澄清信心（saddhā）在修行中的定位：信心并非可有可无，而是\"五根之首\"。菩提比丘特别指出，《求解经》单独看容易让人误以为\"只有证悟才产生信心\"，但完整的图像应是：信心让人踏入修行之门，证悟则让信心变得\"坚定而不退转\"——两者相辅相成，而非互斥。 ### 整理建议 本章的五段经文（教义不是秘密→没有教条或迷信→苦的升起止息→测试导师→信心与亲身体证）呈现一条清楚的递进：**先破除对秘密教义和盲信的疑虑→再给出可亲身验证的实例→再教如何测试导师是否可信→最后说明信心在修行体系中的合理位置**。原书顺序已相当合理，唯\"没有教条或迷信\"一节附录一、二内容较庞杂（多为专家学者对婆罗门教义的辩论考据），可视为辅助性延伸材料，一般读者可略过，不影响主线理解。 --- ## 第四章：当生可见的福乐（The Happiness Visibl",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g20",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 20,
+      "label": "五根",
+      "members": "信根、活力根、念根、定根、慧根",
+      "member_items": [
+        "信根",
+        "活力根",
+        "念根",
+        "定根",
+        "慧根"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个五根：信根、活力根、念根、定根、慧根。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E6%A0%B9%E3%80%81%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%81%E5%BF%B5%E6%A0%B9%E3%80%81%E5%AE%9A%E6%A0%B9%E3%80%81%E6%85%A7%E6%A0%B9"
+    },
+    {
+      "id": "dn34-n5-g6",
+      "sutta": "dn34",
+      "number": 5,
+      "order": 6,
+      "label": "五根",
+      "members": "信根、活力根、念根、定根、慧根",
+      "member_items": [
+        "信根",
+        "活力根",
+        "念根",
+        "定根",
+        "慧根"
+      ],
+      "dn34_status": "胜分法",
+      "source_text": "（六）哪些是殊胜分的五法呢？五根：信根、活力根、念根、定根、慧根，这些是殊胜分的五法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E6%A0%B9%E3%80%81%E6%B4%BB%E5%8A%9B%E6%A0%B9%E3%80%81%E5%BF%B5%E6%A0%B9%E3%80%81%E5%AE%9A%E6%A0%B9%E3%80%81%E6%85%A7%E6%A0%B9"
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-e7504d62e582",
+    "number": 3,
+    "label": "三火",
+    "member_items": [
+      "贪火",
+      "嗔恚火",
+      "愚痴火"
+    ],
+    "group_ids": [
+      "dn33-n3-g32"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三火",
+      "贪火",
+      "嗔恚火",
+      "愚痴火",
+      "嗔火",
+      "痴火"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三火」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：贪火、嗔恚火、愚痴火。[1]\n\n## 所含各法\n### 贪火\n经文将「贪火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《火经第二经》命中：贪火、嗔火、痴火。。[3]\n### 嗔恚火\n经文将「嗔恚火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三火：贪火、嗔恚火、愚痴火。。[1]\n### 愚痴火\n经文将「愚痴火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三火：贪火、嗔恚火、愚痴火。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 39 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 2 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三火",
+          "text": "三火：贪火、嗔恚火、愚痴火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三火：贪火、嗔恚火、愚痴火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "贪火、嗔火、痴火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "为何这贪火应该被舍断，应该被回避，不应该被实行呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E9%80%99%E8%B2%AA%E7%81%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E8%BF%B4%E9%81%BF%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E8%A2%AB%E5%AF%A6%E8%A1%8C%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.46",
+          "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.28",
+          "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "他以身行恶行后，以语行恶行后，以意行恶行后，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，因此，这贪火应该被舍断，应该被回避，不应该被实行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E8%BA%AB%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%AA%9E%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E6%84%8F%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E8%B2%AA%E7%81%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E8%BF%B4%E9%81%BF%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E8%A2%AB%E5%AF%A6%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn57",
+          "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.233",
+          "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.234",
+          "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.234&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.200",
+          "text": "这样是从嗔恚生嗔恚。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.200",
+          "text": "从情爱生情爱、从情爱生嗔恚、从嗔恚生情爱、从嗔恚生嗔恚。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "则信、精进等诸根亦无法各尽其责。\"书中逐一说明智慧如何统摄其余九种波罗蜜使其成为真正的\"波罗蜜\"而非世俗善行。 - **精进波罗蜜**：\"缺乏精进者，甚至无法开始救度众生出离轮回苦海之大业；具中等精进者，虽肯着手却往往半途而废；唯具足最上等精进者，方能不顾自身安危、一往无前，直至圆满一切智。\" - **忍辱波罗蜜**：\"忍辱能驱散与一切善法为敌的嗔恚，是善人获取美德的坚不可摧之武器；是能压伏他人的菩萨庄严；是沙门婆罗门的力量源泉；是熄灭嗔火的清凉水流；是化解恶人粗言恶语之毒的神奇解药。\" ### 二谛论——世俗谛与胜义谛 在阐释\"真实波罗蜜\"时，书中展开了全书教理最为精妙深邃的一段哲学论述——**世俗谛**（sammuti-sacca）与**胜义谛**（paramattha-sacca）的辨析： 世俗谛是依循世间约定俗成的\"名相\"而成立的真实——譬如世人依形貌称\"此为男子\"\"此为女子\"\"此为牛\"\"此为马\"，若依此约定称谓而言，即是世俗谛。胜义谛则是超越名相、依究竟意义而真实存在之法——譬如\"能了知种种所缘者为心\"，此了知之性即是胜义谛，因其确实依究竟意义而存在。 书中以生动的对话形式呈现\"依名相认知者\"（perceptionist）与\"依智慧分析者\"（analyst）之间的认知鸿沟：依名相认知者",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9E%8B%E7%81%AB&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/forest-dhamma/amata-dhamma-summary.md",
+          "text": "断猜测谁是什么果位，不如依四圣谛在自己心中培养四阶沙门。 这不是否定外在善知识，而是把重心放回可验证之处：若遇到真正有德有法的老师，应当珍惜；但更不能错失自己心中可能生起的道果。外求圣者的热闹，不能代替内在烦恼的止息。 --- ## 五、不死法：两种 amata 与心没有墓地（第五篇《不死法》） 第五篇是全书标题的来源。阿姜摩诃布瓦先用干燥森林遇火的譬喻说心：若心长期缺乏佛法滋养，就像干旱森林，烦恼之火一来便难以扑灭。贪、嗔、痴三火不断烧心；这正是《火经》所说的燃烧。 他还用“保险库”比喻修行。世间银行会把贵重物放入安全处，但我们是否在心中为自己的福德、善法、智慧建立了安全处？若心没有正念智慧作守护，所积善法仍可能被烦恼夺走。 ### 真正的“不死”不是继续轮回 本篇最关键的辨析，是两种 **amata**。一种是仍随 **vaṭṭa cakka**，即生死轮转而流动的“不死”：心不断投生，不断承担五蕴，不断预订墓地。另一种才是 **vivaṭṭa**：不再随轮转而转，烦恼已被智慧粉碎，心不再被业与无明推向新的负担。 阿姜摩诃布瓦的表达非常有力： > “the citta has no cemetery.” 心没有墓地。烦恼被彻底击碎之后，可以检验心是否也一同毁灭；答案是否定的。心本",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%81%AB&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三火",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 11.224968172969845,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+              "score": 9.057129073230643,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "贪火",
+          "hits": [
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火。",
+              "score": 11.870437036404407,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 9.976297636715591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "为何这贪火应该被舍断，应该被回避，不应该被实行呢？",
+              "score": 9.59359062411989,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E9%80%99%E8%B2%AA%E7%81%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E8%BF%B4%E9%81%BF%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E8%A2%AB%E5%AF%A6%E8%A1%8C%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 6.746652402952255,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 5.806739206456408,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 5.806739206456408,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 5.806739206456408,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以身行恶行后，以语行恶行后，以意行恶行后，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，因此，这贪火应该被舍断，应该被回避，不应该被实行。",
+              "score": 4.897085956269156,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E8%B2%AA%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E8%BA%AB%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%AA%9E%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E6%84%8F%E8%A1%8C%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E8%B2%AA%E7%81%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E8%BF%B4%E9%81%BF%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E8%A2%AB%E5%AF%A6%E8%A1%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "嗔恚火",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 27.43450225057269,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "mn57",
+              "collection": "经藏/中部_mn",
+              "title": "守狗戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.075871903389455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.233",
+              "collection": "经藏/增支部_an",
+              "title": "详细经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.234",
+              "collection": "经藏/增支部_an",
+              "title": "受那葛亚那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.234&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是从嗔恚生嗔恚。",
+              "score": 23.991315587925826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从情爱生情爱、从情爱生嗔恚、从嗔恚生情爱、从嗔恚生嗔恚。",
+              "score": 23.930800890466863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样是从嗔恚生嗔恚呢？",
+              "score": 23.27082930367404,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn57",
+              "collection": "经藏/中部_mn",
+              "title": "守狗戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人为作无嗔恚的身行，为作无嗔恚的语行，为作无嗔恚的意行，他为作无嗔恚的身行后，为作无嗔恚的语行后，为作无嗔恚的意行后，往生到无嗔恚的世界，当往生到无嗔恚的世界时，无嗔恚的触接触他，当他被无嗔恚的触接触时，感受无嗔恚的、一向乐的感受，犹如遍净天的天神。",
+              "score": 22.624127892646616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E4%B8%80%E5%90%91%E6%A8%82%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E9%81%8D%E6%B7%A8%E5%A4%A9%E7%9A%84%E5%A4%A9%E7%A5%9E%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "愚痴火",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 20.85677089670552,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dhp235-255",
+              "collection": "经藏/小部_kn",
+              "title": "垢秽品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无网等于愚痴，",
+              "score": 9.953306614539121,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp235-255&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E7%B6%B2%E7%AD%89%E6%96%BC%E6%84%9A%E7%99%A1%EF%BC%8C"
+            },
+            {
+              "uid": "dhp334-359",
+              "collection": "经藏/小部_kn",
+              "title": "爱欲品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "愚痴害世人。",
+              "score": 9.953306614539121,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp334-359&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%84%9A%E7%99%A1%E5%AE%B3%E4%B8%96%E4%BA%BA%E3%80%82"
+            },
+            {
+              "uid": "an10.23",
+              "collection": "经藏/增支部_an",
+              "title": "身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "愚痴……比丘们！",
+              "score": 9.431308766340075,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.23&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%84%9A%E7%99%A1%E2%80%A6%E2%80%A6%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.174",
+              "collection": "经藏/增支部_an",
+              "title": "业之起源经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "愚痴是业之起源与生起；",
+              "score": 9.431308766340075,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.174&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%84%9A%E7%99%A1%E6%98%AF%E6%A5%AD%E4%B9%8B%E8%B5%B7%E6%BA%90%E8%88%87%E7%94%9F%E8%B5%B7%EF%BC%9B"
+            },
+            {
+              "uid": "dhp383-423",
+              "collection": "经藏/小部_kn",
+              "title": "波罗门品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "并逾愚痴轮回海，",
+              "score": 9.431308766340075,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp383-423&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%A6%E8%B8%B0%E6%84%9A%E7%99%A1%E8%BC%AA%E8%BF%B4%E6%B5%B7%EF%BC%8C"
+            },
+            {
+              "uid": "sn12.19",
+              "collection": "经藏/相应部_sn",
+              "title": "贤智者与愚痴者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贤智者与愚痴者经",
+              "score": 9.431308766340075,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.19&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B3%A2%E6%99%BA%E8%80%85%E8%88%87%E6%84%9A%E7%99%A1%E8%80%85%E7%B6%93"
+            },
+            {
+              "uid": "mn1",
+              "collection": "经藏/中部_mn",
+              "title": "根本法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他觉知火为火；",
+              "score": 9.291286045908889,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn1&lang=zh&q=%E6%84%9A%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E8%A6%BA%E7%9F%A5%E7%81%AB%E7%82%BA%E7%81%AB%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "嗔火",
+          "hits": [
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火。",
+              "score": 18.84174032797208,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 18.363947634978004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "为何这嗔火应该被舍断，应该被回避，不应该被实行呢？",
+              "score": 14.665161748966506,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E9%80%99%E7%9E%8B%E7%81%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E8%BF%B4%E9%81%BF%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E8%A2%AB%E5%AF%A6%E8%A1%8C%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 10.708845198341567,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn1",
+              "collection": "经藏/中部_mn",
+              "title": "根本法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他觉知火为火；",
+              "score": 9.291286045908889,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn1&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E8%A6%BA%E7%9F%A5%E7%81%AB%E7%82%BA%E7%81%AB%EF%BC%9B"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是七种火。",
+              "score": 9.291286045908889,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%83%E7%A8%AE%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dhp129-145",
+              "collection": "经藏/小部_kn",
+              "title": "刀杖品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "为劫火焚烧。",
+              "score": 9.291286045908889,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp129-145&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%82%BA%E5%8A%AB%E7%81%AB%E7%84%9A%E7%87%92%E3%80%82"
+            },
+            {
+              "uid": "sn1.72",
+              "collection": "经藏/相应部_sn",
+              "title": "车经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是火的表征？",
+              "score": 9.291286045908889,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.72&lang=zh&q=%E7%9E%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%81%AB%E7%9A%84%E8%A1%A8%E5%BE%B5%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "痴火",
+          "hits": [
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火。",
+              "score": 12.398943303470904,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 7.0470329252316235,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 6.065272068592926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 6.065272068592926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.28",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说『以贪火、嗔火、痴火燃烧，以生、老、死、愁、悲、苦、忧、绝望燃烧』。",
+              "score": 6.065272068592926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.28&lang=zh&q=%E7%99%A1%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E3%80%8E%E4%BB%A5%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E7%87%83%E7%87%92%EF%BC%8C%E4%BB%A5%E7%94%9F%E3%80%81%E8%80%81%E3%80%81%E6%AD%BB%E3%80%81%E6%84%81%E3%80%81%E6%82%B2%E3%80%81%E8%8B%A6%E3%80%81%E6%86%82%E3%80%81%E7%B5%95%E6%9C%9B%E7%87%83%E7%87%92%E3%80%8F%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "则信、精进等诸根亦无法各尽其责。\"书中逐一说明智慧如何统摄其余九种波罗蜜使其成为真正的\"波罗蜜\"而非世俗善行。 - **精进波罗蜜**：\"缺乏精进者，甚至无法开始救度众生出离轮回苦海之大业；具中等精进者，虽肯着手却往往半途而废；唯具足最上等精进者，方能不顾自身安危、一往无前，直至圆满一切智。\" - **忍辱波罗蜜**：\"忍辱能驱散与一切善法为敌的嗔恚，是善人获取美德的坚不可摧之武器；是能压伏他人的菩萨庄严；是沙门婆罗门的力量源泉；是熄灭嗔火的清凉水流；是化解恶人粗言恶语之毒的神奇解药。\" ### 二谛论——世俗谛与胜义谛 在阐释\"真实波罗蜜\"时，书中展开了全书教理最为精妙深邃的一段哲学论述——**世俗谛**（sammuti-sacca）与**胜义谛**（paramattha-sacca）的辨析： 世俗谛是依循世间约定俗成的\"名相\"而成立的真实——譬如世人依形貌称\"此为男子\"\"此为女子\"\"此为牛\"\"此为马\"，若依此约定称谓而言，即是世俗谛。胜义谛则是超越名相、依究竟意义而真实存在之法——譬如\"能了知种种所缘者为心\"，此了知之性即是胜义谛，因其确实依究竟意义而存在。 书中以生动的对话形式呈现\"依名相认知者\"（perceptionist）与\"依智慧分析者\"（analyst）之间的认知鸿沟：依名相认知者",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9E%8B%E7%81%AB&scope=site",
+          "query": "嗔火"
+        },
+        {
+          "source": "docs/research/forest-monks/forest-dhamma/amata-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "断猜测谁是什么果位，不如依四圣谛在自己心中培养四阶沙门。 这不是否定外在善知识，而是把重心放回可验证之处：若遇到真正有德有法的老师，应当珍惜；但更不能错失自己心中可能生起的道果。外求圣者的热闹，不能代替内在烦恼的止息。 --- ## 五、不死法：两种 amata 与心没有墓地（第五篇《不死法》） 第五篇是全书标题的来源。阿姜摩诃布瓦先用干燥森林遇火的譬喻说心：若心长期缺乏佛法滋养，就像干旱森林，烦恼之火一来便难以扑灭。贪、嗔、痴三火不断烧心；这正是《火经》所说的燃烧。 他还用“保险库”比喻修行。世间银行会把贵重物放入安全处，但我们是否在心中为自己的福德、善法、智慧建立了安全处？若心没有正念智慧作守护，所积善法仍可能被烦恼夺走。 ### 真正的“不死”不是继续轮回 本篇最关键的辨析，是两种 **amata**。一种是仍随 **vaṭṭa cakka**，即生死轮转而流动的“不死”：心不断投生，不断承担五蕴，不断预订墓地。另一种才是 **vivaṭṭa**：不再随轮转而转，烦恼已被智慧粉碎，心不再被业与无明推向新的负担。 阿姜摩诃布瓦的表达非常有力： > “the citta has no cemetery.” 心没有墓地。烦恼被彻底击碎之后，可以检验心是否也一同毁灭；答案是否定的。心本",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%81%AB&scope=site",
+          "query": "三火"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g32",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 32,
+      "label": "三火",
+      "members": "贪火、嗔恚火、愚痴火",
+      "member_items": [
+        "贪火",
+        "嗔恚火",
+        "愚痴火"
+      ],
+      "dn34_status": null,
+      "source_text": "三火：贪火、嗔恚火、愚痴火。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB"
+    }
+  ]
+}

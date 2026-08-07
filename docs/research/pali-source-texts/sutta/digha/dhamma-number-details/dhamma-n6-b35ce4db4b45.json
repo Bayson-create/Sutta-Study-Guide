@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n6-b35ce4db4b45",
+    "number": 6,
+    "label": "六内处",
+    "member_items": [
+      "眼处",
+      "耳处",
+      "鼻处",
+      "舌处",
+      "身处",
+      "意处"
+    ],
+    "group_ids": [
+      "dn33-n6-g1"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "六内处",
+      "眼处",
+      "耳处",
+      "鼻处",
+      "舌处",
+      "身处",
+      "意处"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「六内处」属于 6 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：眼处、耳处、鼻处、舌处、身处、意处。[1]\n\n## 所含各法\n### 眼处\n经文将「眼处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《六处分别经》命中：有眼处、耳处、鼻处、舌处、身处、意处。。[3]\n### 耳处\n经文将「耳处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《六处分别经》命中：有眼处、耳处、鼻处、舌处、身处、意处。。[3]\n### 鼻处\n经文将「鼻处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《六处分别经》命中：有眼处、耳处、鼻处、舌处、身处、意处。。[3]\n### 舌处\n经文将「舌处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《六处分别经》命中：有眼处、耳处、鼻处、舌处、身处、意处。。[3]\n### 身处\n经文将「身处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《六处分别经》命中：有眼处、耳处、鼻处、舌处、身处、意处。。[3]\n### 意处\n经文将「意处」列为「六内处」的一个成员。Early Buddhist 用该名词检索时，在《意的制止经》命中：「从能制止意处，从那里苦不来找他，。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 7 个关键词，冻结 49 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 六内处",
+          "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp4",
+          "text": "六内处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%85%AD%E5%85%A7%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn137",
+          "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.24",
+          "text": "「从能制止意处，从那里苦不来找他，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.24&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%9E%E8%83%BD%E5%88%B6%E6%AD%A2%E6%84%8F%E8%99%95%EF%BC%8C%E5%BE%9E%E9%82%A3%E8%A3%A1%E8%8B%A6%E4%B8%8D%E4%BE%86%E6%89%BE%E4%BB%96%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "六内处，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "『六内处应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "而，『六内处应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.14",
+          "text": "应该回答：『六内处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%87%89%E8%A9%B2%E5%9B%9E%E7%AD%94%EF%BC%9A%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn105",
+          "text": "『伤口』，这是对于六内处的同义语；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn105&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%82%B7%E5%8F%A3%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.241",
+          "text": "『此岸』，这是对于六内处的同义语；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.241&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%AD%A4%E5%B2%B8%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn146",
+          "text": "『内部的肉』，这是对于六内处的同义语；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%A7%E9%83%A8%E7%9A%84%E8%82%89%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.14",
+          "text": "』即：眼处、……（中略）识处，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E5%8D%B3%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%AD%98%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "六内处",
+          "hits": [
+            {
+              "uid": "kp4",
+              "collection": "经藏/小部_kn",
+              "title": "问童子",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "六内处。",
+              "score": 13.87915386172381,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%85%AD%E5%85%A7%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处，比丘们！",
+              "score": 12.34280538027021,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『六内处应该体会。",
+              "score": 11.695491065665527,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『六内处应该体会。",
+              "score": 11.112689755056865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该回答：『六内处。",
+              "score": 11.112689755056865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%87%89%E8%A9%B2%E5%9B%9E%E7%AD%94%EF%BC%9A%E3%80%8E%E5%85%AD%E5%85%A7%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn105",
+              "collection": "经藏/中部_mn",
+              "title": "善星经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『伤口』，这是对于六内处的同义语；",
+              "score": 9.667463467248973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn105&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%82%B7%E5%8F%A3%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.241",
+              "collection": "经藏/相应部_sn",
+              "title": "像树干那样经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『此岸』，这是对于六内处的同义语；",
+              "score": 9.667463467248973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.241&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%AD%A4%E5%B2%B8%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『内部的肉』，这是对于六内处的同义语；",
+              "score": 9.265785819482376,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%A7%E9%83%A8%E7%9A%84%E8%82%89%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%B0%8D%E6%96%BC%E5%85%AD%E5%85%A7%E8%99%95%E7%9A%84%E5%90%8C%E7%BE%A9%E8%AA%9E%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "眼处",
+          "hits": [
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.23916135874958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.23916135874958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』即：眼处、……（中略）识处，比丘们！",
+              "score": 9.23916135874958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E5%8D%B3%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%AD%98%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 8.909987391528333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.909987391528333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十处：眼处、色处、耳处、声处、鼻处、气味处、舌处、味道处、身处、所触处，这些是应该被遍知的十法。",
+              "score": 5.674970652043452,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%89%B2%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E8%81%B2%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E6%B0%A3%E5%91%B3%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E5%91%B3%E9%81%93%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%89%80%E8%A7%B8%E8%99%95%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未受教导的一般人在眼处被合意与不合意的色击打……（中略）在舌处被合意与不合意的味道击打……（中略）在意处被合意与不合意的法击打，比丘们！",
+              "score": 5.313259622117065,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E7%9C%BC%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E5%9C%A8%E7%9C%BC%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E8%89%B2%E6%93%8A%E6%89%93%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%88%8C%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E5%91%B3%E9%81%93%E6%93%8A%E6%89%93%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E6%84%8F%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E6%B3%95%E6%93%8A%E6%89%93%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "耳处",
+          "hits": [
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.839516735908168,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十处：眼处、色处、耳处、声处、鼻处、气味处、舌处、味道处、身处、所触处，这些是应该被遍知的十法。",
+              "score": 5.830675713640466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%80%B3%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%89%B2%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E8%81%B2%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E6%B0%A3%E5%91%B3%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E5%91%B3%E9%81%93%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%89%80%E8%A7%B8%E8%99%95%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "鼻处",
+          "hits": [
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.839516735908168,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十处：眼处、色处、耳处、声处、鼻处、气味处、舌处、味道处、身处、所触处，这些是应该被遍知的十法。",
+              "score": 5.830675713640466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%BC%BB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%89%B2%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E8%81%B2%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E6%B0%A3%E5%91%B3%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E5%91%B3%E9%81%93%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%89%80%E8%A7%B8%E8%99%95%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "舌处",
+          "hits": [
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.357434395721079,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.357434395721079,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 9.02404658232013,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.02404658232013,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.713597469418637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十处：眼处、色处、耳处、声处、鼻处、气味处、舌处、味道处、身处、所触处，这些是应该被遍知的十法。",
+              "score": 5.747617506847614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%89%B2%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E8%81%B2%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E6%B0%A3%E5%91%B3%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E5%91%B3%E9%81%93%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%89%80%E8%A7%B8%E8%99%95%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未受教导的一般人在眼处被合意与不合意的色击打……（中略）在舌处被合意与不合意的味道击打……（中略）在意处被合意与不合意的法击打，比丘们！",
+              "score": 5.381276114883554,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E8%88%8C%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E5%9C%A8%E7%9C%BC%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E8%89%B2%E6%93%8A%E6%89%93%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%88%8C%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E5%91%B3%E9%81%93%E6%93%8A%E6%89%93%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E6%84%8F%E8%99%95%E8%A2%AB%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E7%9A%84%E6%B3%95%E6%93%8A%E6%89%93%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "身处",
+          "hits": [
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.23916135874958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.23916135874958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 8.909987391528333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.909987391528333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "十处：眼处、色处、耳处、声处、鼻处、气味处、舌处、味道处、身处、所触处，这些是应该被遍知的十法。",
+              "score": 5.674970652043452,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%8D%81%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%89%B2%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E8%81%B2%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E6%B0%A3%E5%91%B3%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E5%91%B3%E9%81%93%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%89%80%E8%A7%B8%E8%99%95%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%8D%81%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "耳听声音后……（中略）鼻闻气味后……（中略）舌尝味道后……（中略）身处所触后……（中略）意识合意法后，在合意与不合意之法上都是身已住立的、心已住立的，自身内被善建立、善解脱时，库达利亚！",
+              "score": 3.3764102369388973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%81%BD%E8%81%B2%E9%9F%B3%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%BC%BB%E8%81%9E%E6%B0%A3%E5%91%B3%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E5%9A%90%E5%91%B3%E9%81%93%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%BA%AB%E8%99%95%E6%89%80%E8%A7%B8%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%AD%98%E5%90%88%E6%84%8F%E6%B3%95%E5%BE%8C%EF%BC%8C%E5%9C%A8%E5%90%88%E6%84%8F%E8%88%87%E4%B8%8D%E5%90%88%E6%84%8F%E4%B9%8B%E6%B3%95%E4%B8%8A%E9%83%BD%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%BF%83%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%EF%BC%8C%E8%87%AA%E8%BA%AB%E5%85%A7%E8%A2%AB%E5%96%84%E5%BB%BA%E7%AB%8B%E3%80%81%E5%96%84%E8%A7%A3%E8%84%AB%E6%99%82%EF%BC%8C%E5%BA%AB%E9%81%94%E5%88%A9%E4%BA%9E%EF%BC%81"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘耳听声音后……（中略）鼻闻气味后……（中略）舌尝味道后……（中略）身处所触后……（中略）意识合意之法后，不贪求、不喜、不产生贪，他的身是已住立的、心是已住立的，自身内被善建立、善解脱，又，意识不合意之法后，不气馁、无未住立的心、无心意的悲哀、无心的恶意，他是身已住立的、心已住立的，自身内被善建立、善解脱。",
+              "score": 2.2929149291609194,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E8%BA%AB%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E8%80%B3%E8%81%BD%E8%81%B2%E9%9F%B3%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%BC%BB%E8%81%9E%E6%B0%A3%E5%91%B3%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E5%9A%90%E5%91%B3%E9%81%93%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%BA%AB%E8%99%95%E6%89%80%E8%A7%B8%E5%BE%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%AD%98%E5%90%88%E6%84%8F%E4%B9%8B%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%B8%8D%E8%B2%AA%E6%B1%82%E3%80%81%E4%B8%8D%E5%96%9C%E3%80%81%E4%B8%8D%E7%94%A2%E7%94%9F%E8%B2%AA%EF%BC%8C%E4%BB%96%E7%9A%84%E8%BA%AB%E6%98%AF%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%BF%83%E6%98%AF%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%EF%BC%8C%E8%87%AA%E8%BA%AB%E5%85%A7%E8%A2%AB%E5%96%84%E5%BB%BA%E7%AB%8B%E3%80%81%E5%96%84%E8%A7%A3%E8%84%AB%EF%BC%8C%E5%8F%88%EF%BC%8C%E6%84%8F%E8%AD%98%E4%B8%8D%E5%90%88%E6%84%8F%E4%B9%8B%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%B0%A3%E9%A4%92%E3%80%81%E7%84%A1%E6%9C%AA%E4%BD%8F%E7%AB%8B%E7%9A%84%E5%BF%83%E3%80%81%E7%84%A1%E5%BF%83%E6%84%8F%E7%9A%84%E6%82%B2%E5%93%80%E3%80%81%E7%84%A1%E5%BF%83%E7%9A%84%E6%83%A1%E6%84%8F%EF%BC%8C%E4%BB%96%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%BF%83%E5%B7%B2%E4%BD%8F%E7%AB%8B%E7%9A%84%EF%BC%8C%E8%87%AA%E8%BA%AB%E5%85%A7%E8%A2%AB%E5%96%84%E5%BB%BA%E7%AB%8B%E3%80%81%E5%96%84%E8%A7%A3%E8%84%AB%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "意处",
+          "hits": [
+            {
+              "uid": "sn1.24",
+              "collection": "经藏/相应部_sn",
+              "title": "意的制止经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「从能制止意处，从那里苦不来找他，",
+              "score": 11.138708423940123,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.24&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%9E%E8%83%BD%E5%88%B6%E6%AD%A2%E6%84%8F%E8%99%95%EF%BC%8C%E5%BE%9E%E9%82%A3%E8%A3%A1%E8%8B%A6%E4%B8%8D%E4%BE%86%E6%89%BE%E4%BB%96%EF%BC%8C"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.492657680876082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼处、耳处、鼻处、舌处、身处、意处，比丘们！",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 9.154452115786771,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E5%85%A7%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六处：眼处、耳处、鼻处、舌处、身处、意处。",
+              "score": 8.839516735908168,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%84%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E8%99%95%EF%BC%9A%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n6-g1",
+      "sutta": "dn33",
+      "number": 6,
+      "order": 1,
+      "label": "六内处",
+      "members": "眼处、耳处、鼻处、舌处、身处、意处",
+      "member_items": [
+        "眼处",
+        "耳处",
+        "鼻处",
+        "舌处",
+        "身处",
+        "意处"
+      ],
+      "dn34_status": null,
+      "source_text": "六内处：眼处、耳处、鼻处、舌处、身处、意处。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E5%85%A7%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%99%95%E3%80%81%E8%80%B3%E8%99%95%E3%80%81%E9%BC%BB%E8%99%95%E3%80%81%E8%88%8C%E8%99%95%E3%80%81%E8%BA%AB%E8%99%95%E3%80%81%E6%84%8F%E8%99%95"
+    }
+  ]
+}

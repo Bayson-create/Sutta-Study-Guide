@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n2-c6951f4ce3ea",
+    "number": 2,
+    "label": "念与正知",
+    "member_items": [
+      "念与正知"
+    ],
+    "group_ids": [
+      "dn33-n2-g18"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "念与正知"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「念与正知」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：念与正知。[1]\n\n## 所含各法\n### 念与正知\n经文将「念与正知」列为「念与正知」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：念与正知。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 念与正知",
+          "text": "念与正知。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "念与正知。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.83-92",
+          "text": "念与正知，以不放逸为第十二。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.83-92&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%EF%BC%8C%E4%BB%A5%E4%B8%8D%E6%94%BE%E9%80%B8%E7%82%BA%E7%AC%AC%E5%8D%81%E4%BA%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "念已忘失与不正知。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn118",
+          "text": "我说念已忘失、不正知者无入出息念。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn118&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E8%80%85%E7%84%A1%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.30",
+          "text": "『他拒绝这正念法足后，将指出念已忘失、不正知的［真］沙门或婆罗门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.30&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%BB%96%E6%8B%92%E7%B5%95%E9%80%99%E6%AD%A3%E5%BF%B5%E6%B3%95%E8%B6%B3%E5%BE%8C%EF%BC%8C%E5%B0%87%E6%8C%87%E5%87%BA%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E7%9A%84%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.52",
+          "text": "凡对于自身内之法的念，那是念觉支；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.52&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%87%AA%E8%BA%AB%E5%85%A7%E4%B9%8B%E6%B3%95%E7%9A%84%E5%BF%B5%EF%BC%8C%E9%82%A3%E6%98%AF%E5%BF%B5%E8%A6%BA%E6%94%AF%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn37.23",
+          "text": "念已现前经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.23&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BF%B5%E5%B7%B2%E7%8F%BE%E5%89%8D%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.30",
+          "text": "如果尊师呵责、反驳正念法足，则念已忘失、不正知的沙门、婆罗门们应该被你赞赏、应该被你尊敬。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.30&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8A%E5%B8%AB%E5%91%B5%E8%B2%AC%E3%80%81%E5%8F%8D%E9%A7%81%E6%AD%A3%E5%BF%B5%E6%B3%95%E8%B6%B3%EF%BC%8C%E5%89%87%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E7%9A%84%E6%B2%99%E9%96%80%E3%80%81%E5%A9%86%E7%BE%85%E9%96%80%E5%80%91%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%A0%E8%AE%9A%E8%B3%9E%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%A0%E5%B0%8A%E6%95%AC%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "念与正知",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念与正知。",
+              "score": 21.71286205528955,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%E3%80%82"
+            },
+            {
+              "uid": "sn12.83-92",
+              "collection": "经藏/相应部_sn",
+              "title": "师经第二等十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念与正知，以不放逸为第十二。",
+              "score": 18.57904319860281,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.83-92&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%EF%BC%8C%E4%BB%A5%E4%B8%8D%E6%94%BE%E9%80%B8%E7%82%BA%E7%AC%AC%E5%8D%81%E4%BA%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念已忘失与不正知。",
+              "score": 16.887673284441583,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5%E3%80%82"
+            },
+            {
+              "uid": "mn118",
+              "collection": "经藏/中部_mn",
+              "title": "入出息念经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说念已忘失、不正知者无入出息念。",
+              "score": 12.686992827435775,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn118&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E8%80%85%E7%84%A1%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E3%80%82"
+            },
+            {
+              "uid": "an4.30",
+              "collection": "经藏/增支部_an",
+              "title": "游行者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『他拒绝这正念法足后，将指出念已忘失、不正知的［真］沙门或婆罗门。",
+              "score": 9.737877167436169,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.30&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%BB%96%E6%8B%92%E7%B5%95%E9%80%99%E6%AD%A3%E5%BF%B5%E6%B3%95%E8%B6%B3%E5%BE%8C%EF%BC%8C%E5%B0%87%E6%8C%87%E5%87%BA%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E7%9A%84%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "sn46.52",
+              "collection": "经藏/相应部_sn",
+              "title": "法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡对于自身内之法的念，那是念觉支；",
+              "score": 9.259302066039202,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.52&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%87%AA%E8%BA%AB%E5%85%A7%E4%B9%8B%E6%B3%95%E7%9A%84%E5%BF%B5%EF%BC%8C%E9%82%A3%E6%98%AF%E5%BF%B5%E8%A6%BA%E6%94%AF%EF%BC%9B"
+            },
+            {
+              "uid": "sn37.23",
+              "collection": "经藏/相应部_sn",
+              "title": "念已现前经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念已现前经",
+              "score": 9.032359194382005,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.23&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BF%B5%E5%B7%B2%E7%8F%BE%E5%89%8D%E7%B6%93"
+            },
+            {
+              "uid": "an4.30",
+              "collection": "经藏/增支部_an",
+              "title": "游行者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果尊师呵责、反驳正念法足，则念已忘失、不正知的沙门、婆罗门们应该被你赞赏、应该被你尊敬。",
+              "score": 8.92791094531217,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.30&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8A%E5%B8%AB%E5%91%B5%E8%B2%AC%E3%80%81%E5%8F%8D%E9%A7%81%E6%AD%A3%E5%BF%B5%E6%B3%95%E8%B6%B3%EF%BC%8C%E5%89%87%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E7%9A%84%E6%B2%99%E9%96%80%E3%80%81%E5%A9%86%E7%BE%85%E9%96%80%E5%80%91%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%A0%E8%AE%9A%E8%B3%9E%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%A0%E5%B0%8A%E6%95%AC%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n2-g18",
+      "sutta": "dn33",
+      "number": 2,
+      "order": 18,
+      "label": "念与正知",
+      "members": "念与正知",
+      "member_items": [
+        "念与正知"
+      ],
+      "dn34_status": null,
+      "source_text": "念与正知。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5"
+    }
+  ]
+}

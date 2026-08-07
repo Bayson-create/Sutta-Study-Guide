@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-0e04bb01becb",
+    "number": 3,
+    "label": "三界",
+    "member_items": [
+      "低劣界",
+      "中界",
+      "胜妙界"
+    ],
+    "group_ids": [
+      "dn33-n3-g15"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三界",
+      "低劣界",
+      "中界",
+      "胜妙界"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三界」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：低劣界、中界、胜妙界。[1]\n\n## 所含各法\n### 低劣界\n经文将「低劣界」列为「三界」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三界：低劣界、中界、胜妙界。。[1]\n### 中界\n经文将「中界」列为「三界」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三界：低劣界、中界、胜妙界。。[1]\n### 胜妙界\n经文将「胜妙界」列为「三界」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三界：低劣界、中界、胜妙界。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 18 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三界",
+          "text": "下一个三界：低劣界、中界、胜妙界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn115",
+          "text": "当知道、看到这三界时，阿难！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E9%81%93%E3%80%81%E7%9C%8B%E5%88%B0%E9%80%99%E4%B8%89%E7%95%8C%E6%99%82%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三界：低劣界、中界、胜妙界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三界：欲界、色界、无色界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三界：色界、无色界、灭界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%E3%80%81%E6%BB%85%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn115",
+          "text": "有这三界：欲界、色界、无色界，阿难！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "由三界所组成：欲界、色界、无色界，这些是应该被证知的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%94%B1%E4%B8%89%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三不善界：欲界、恶意界、加害界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn97",
+          "text": "饿鬼界比畜生界好。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn97&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E7%95%8C%E6%AF%94%E7%95%9C%E7%94%9F%E7%95%8C%E5%A5%BD%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn21",
+          "text": "世间有许多界、种种界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn49",
+          "text": "这样，在证智上我既与你不同，何来更低劣呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E5%9C%A8%E8%AD%89%E6%99%BA%E4%B8%8A%E6%88%91%E6%97%A2%E8%88%87%E4%BD%A0%E4%B8%8D%E5%90%8C%EF%BC%8C%E4%BD%95%E4%BE%86%E6%9B%B4%E4%BD%8E%E5%8A%A3%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.76",
+          "text": "像这样，业为田地，识为种子，渴爱为湿润，无明所盖、渴爱所系之众生的识被住立在胜妙界，这样，有未来再生的诞生。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.76&lang=zh&q=%E5%8B%9D%E5%A6%99%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%A5%AD%E7%82%BA%E7%94%B0%E5%9C%B0%EF%BC%8C%E8%AD%98%E7%82%BA%E7%A8%AE%E5%AD%90%EF%BC%8C%E6%B8%B4%E6%84%9B%E7%82%BA%E6%BF%95%E6%BD%A4%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E8%93%8B%E3%80%81%E6%B8%B4%E6%84%9B%E6%89%80%E7%B9%AB%E4%B9%8B%E7%9C%BE%E7%94%9F%E7%9A%84%E8%AD%98%E8%A2%AB%E4%BD%8F%E7%AB%8B%E5%9C%A8%E5%8B%9D%E5%A6%99%E7%95%8C%EF%BC%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E6%9C%89%E6%9C%AA%E4%BE%86%E5%86%8D%E7%94%9F%E7%9A%84%E8%AA%95%E7%94%9F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.77",
+          "text": "像这样，业为田地，识为种子，渴爱为湿润，无明所盖、渴爱所系之众生的思与希求被住立在胜妙界，这样，有未来再生的诞生。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.77&lang=zh&q=%E5%8B%9D%E5%A6%99%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%A5%AD%E7%82%BA%E7%94%B0%E5%9C%B0%EF%BC%8C%E8%AD%98%E7%82%BA%E7%A8%AE%E5%AD%90%EF%BC%8C%E6%B8%B4%E6%84%9B%E7%82%BA%E6%BF%95%E6%BD%A4%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E8%93%8B%E3%80%81%E6%B8%B4%E6%84%9B%E6%89%80%E7%B9%AB%E4%B9%8B%E7%9C%BE%E7%94%9F%E7%9A%84%E6%80%9D%E8%88%87%E5%B8%8C%E6%B1%82%E8%A2%AB%E4%BD%8F%E7%AB%8B%E5%9C%A8%E5%8B%9D%E5%A6%99%E7%95%8C%EF%BC%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E6%9C%89%E6%9C%AA%E4%BE%86%E5%86%8D%E7%94%9F%E7%9A%84%E8%AA%95%E7%94%9F%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "uttanikāya)；相应的意思是按内容分门别类，比如把佛陀所说的“五蕴”编在一起， “六处”编在一起，“界”编在一起，“四圣谛”编在一起、“缘起”编在一起，称为《相应部》。一共有 56 相应，7762篇经文。 4.《增支部》(Aṅguttaranikāya)。增(uttara)，是增加、更上的意思。aṅga 是部分、支。增支的编辑方法是按法数把佛陀所讲的与数目有关的经文编集在一起。比如 “二法”有止、观，名、色等。“三法”有三受、三界等。由“一法”编到“十一法”，因此《增支部》有十一集，共收录9557 篇经文。 5.《小部》(Khuddakanikāya)。这里的“小”并非篇幅小，亦非微不足道，而是内容庞杂，把前面四部以外的所有经典都收编在内。例如属于诗歌集体裁的《法句》《长老偈》《长老尼偈》等，都收编在《小部》。《小部》在《经藏》五部中分量最大，一共有 15 部，即：《小诵》《法句》《自说》《如是语》《经集》《天宫故事》《鬼故事》《长老偈》《长老尼偈》《本生》《义释》《无碍解道》《传记》《佛陀史》和《所行藏》。在缅甸，则再加上《导论》《藏释》和《弥林德问》而成 18 部。 ## 十三、论藏 《论藏》 (Abhidhammapiṭaka)的论(abhidhamma)，古音译为“阿毗达摩、阿毗",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "对六境时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明的层次** 雷迪禅师引入\"住地\"（āsava，即\"漏\"的基底）概念：最初的心意被无明浸染，成为生死轮回的主要教唆者。无明如风，吹动三界大海，激起烦恼波澜。 无明也有三个层次（与身见相同）：犯罪层次（显现为恶行）、缠烦恼层次（显现为恶意）、随眠层次（潜藏于心流中，尚未显现）。 **",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "可分为四大板块：** 1. **理论基础板块**——《内观手册》（观智与名色的解析）与《发趣论手册》（二十四种因缘关系的哲学基础），二者共同构成理解一切\"缘起现象\"的阿毗达摩工具箱。 2. **正见建立板块**——《正见手册》，专门破斥三种邪见（宿作因见、神造见、无因见），建立\"业自己有\"（kammassakatā）的正见，是全书的伦理与信仰基石。 3. **宇宙与真理板块**——《法则手册》（五种自然法则、二谛、大劫、不可思议之事、三界、缘起）与《四谛手册》（对四圣谛尤其是苦谛的极详尽展开），二者从宏观宇宙论与微观身心论两个角度说明\"苦\"的真相。 4. **实修板块**——《菩提分手册》（三十七道品的系统解说）、《道支手册》（八正道的具体修法，尤其是如何在日常生活中次第建立戒定慧三学）、《五种光明》（以\"五种愚痴、五种光明\"的框架总摄前面各手册的内观次第）。附录则以问答与专论形式，处理业力遗传等具体问题，以及证悟无我之后现世与来世的巨大利益。 原书夹杂大量未译的巴利术语（因为雷迪大长老习惯用同义堆叠的方式反复申说一个概念），并附有大量译注。以下总结在忠实原意的基础上，尽量把巴利术语义译并保留，重要的原文引述会标出，同一主题在不同手册中重复出现的内容（例如\"业自己有\"\"无我\"\"缘起\"等）将在各章节中",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "体（亦需推理） #### 三、平衡诸界与六对相反素质 **「平衡诸界的相对素质是：硬与软，粗与滑，重与轻，流动与粘，热与冷，支持与推动。」**若某相过强，专注其对立面平衡之，例如流动过强时多注意粘性。一分钟内至少能重复照见三圈。 #### 四、十种培育定力的方法 1. 有次序（地→水→火→风） 2. 不太快 3. 不太慢 4. 避开干扰 5. 跨越观念（不只念名称，须知其真实自性相） 6. 除掉不清晰（每界至少保留一相，不可减至三界或两界） 7. 辨明诸相 8-10. 依《增上心经》《无上清凉经》《觉支经》平衡五根七觉支 #### 五、色聚的出现——近行定的标志 修习深入时，全身呈现灰色烟→白如棉花→如云朵→如冰块玻璃般剔透明亮。原文说明，这些明净色法是五根，称为**「净色」**（pasada）。继续观照透明体、寻找内部小空间时，透明体会粉碎成许多名为**「色聚」**（rupa kalapa）的极微粒子；此时已达心清净（citta visuddhi），可进入色业处修见清净。 --- ## 第九章：色业处的基本理论 ### 核心论点：二十八色法的分类体系与三遍知的修学框架 本章是**「色业处」**的理论基础，建立整个色法辨明的知识框架。 #### 一、三遍知——一切修观的总纲 佛陀",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "**编者归纳**：思（意志）在行蕴的说明中承担“积集”等作用，因此行蕴可作为观察业行与轮回条件的重要分析框架；“行蕴是生死轮回的主要推动力”是综合性教义概括，不应冒充 XIV.132 的直接结论。 #### 5. 识蕴（Viññāṇakkhandha，Group of Consciousness） 意识（consciousness/viññāṇa）有**89种**（或按不同分类为121种），按以下方式分类： **按界分类**（三界）： - 欲界意识（sense-sphere consciousness）：54种 - 色界意识（fine-material-sphere consciousness）：15种 - 无色界意识（immaterial-sphere consciousness）：12种 - 出世间意识（supramundane consciousness）：8或40种 意识的特征（XIV.81–82；分类见 XIV.83–124）： - **特征**：认识（knowing，cognizing） - **功能**：先驱（precursor）——所有心理活动的前导 - **显现**：结生（rebirth-linking）——在每次投生时作为结生识 **识蕴的关键作用**： 在缘起法（de",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三界",
+          "hits": [
+            {
+              "uid": "mn115",
+              "collection": "经藏/中部_mn",
+              "title": "多界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当知道、看到这三界时，阿难！",
+              "score": 11.138708423940123,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E9%81%93%E3%80%81%E7%9C%8B%E5%88%B0%E9%80%99%E4%B8%89%E7%95%8C%E6%99%82%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：欲界、色界、无色界。",
+              "score": 10.67590137904736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：色界、无色界、灭界。",
+              "score": 10.67590137904736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%E3%80%81%E6%BB%85%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn115",
+              "collection": "经藏/中部_mn",
+              "title": "多界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三界：欲界、色界、无色界，阿难！",
+              "score": 10.250018882740996,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：低劣界、中界、胜妙界。",
+              "score": 10.250018882740996,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "由三界所组成：欲界、色界、无色界，这些是应该被证知的三法。",
+              "score": 8.839516735908168,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%94%B1%E4%B8%89%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E8%89%B2%E7%95%8C%E3%80%81%E7%84%A1%E8%89%B2%E7%95%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "低劣界",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：低劣界、中界、胜妙界。",
+              "score": 18.566471041210278,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善界：欲界、恶意界、加害界。",
+              "score": 9.487508641156182,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn97",
+              "collection": "经藏/中部_mn",
+              "title": "达那若尼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "饿鬼界比畜生界好。",
+              "score": 9.40297157204888,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn97&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E7%95%8C%E6%AF%94%E7%95%9C%E7%94%9F%E7%95%8C%E5%A5%BD%E3%80%82"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "世间有许多界、种种界。",
+              "score": 9.111846921506194,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn49",
+              "collection": "经藏/中部_mn",
+              "title": "梵天的邀请经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样，在证智上我既与你不同，何来更低劣呢？",
+              "score": 8.983045741485185,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E5%9C%A8%E8%AD%89%E6%99%BA%E4%B8%8A%E6%88%91%E6%97%A2%E8%88%87%E4%BD%A0%E4%B8%8D%E5%90%8C%EF%BC%8C%E4%BD%95%E4%BE%86%E6%9B%B4%E4%BD%8E%E5%8A%A3%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn49",
+              "collection": "经藏/中部_mn",
+              "title": "梵天的邀请经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样，在证智上我既与你不同，何来更低劣呢？",
+              "score": 8.983045741485185,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E5%9C%A8%E8%AD%89%E6%99%BA%E4%B8%8A%E6%88%91%E6%97%A2%E8%88%87%E4%BD%A0%E4%B8%8D%E5%90%8C%EF%BC%8C%E4%BD%95%E4%BE%86%E6%9B%B4%E4%BD%8E%E5%8A%A3%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn49",
+              "collection": "经藏/中部_mn",
+              "title": "梵天的邀请经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样，在证智上我既与你不同，何来更低劣呢？",
+              "score": 8.983045741485185,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E5%9C%A8%E8%AD%89%E6%99%BA%E4%B8%8A%E6%88%91%E6%97%A2%E8%88%87%E4%BD%A0%E4%B8%8D%E5%90%8C%EF%BC%8C%E4%BD%95%E4%BE%86%E6%9B%B4%E4%BD%8E%E5%8A%A3%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn49",
+              "collection": "经藏/中部_mn",
+              "title": "梵天的邀请经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样，在证智上我既与你不同，何来更低劣呢？",
+              "score": 8.983045741485185,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E4%BD%8E%E5%8A%A3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E5%9C%A8%E8%AD%89%E6%99%BA%E4%B8%8A%E6%88%91%E6%97%A2%E8%88%87%E4%BD%A0%E4%B8%8D%E5%90%8C%EF%BC%8C%E4%BD%95%E4%BE%86%E6%9B%B4%E4%BD%8E%E5%8A%A3%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "中界",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：低劣界、中界、胜妙界。",
+              "score": 11.746185456041808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%AD%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "胜妙界",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三界：低劣界、中界、胜妙界。",
+              "score": 10.881651125348144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%8B%9D%E5%A6%99%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%95%8C%EF%BC%9A%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "an3.76",
+              "collection": "经藏/增支部_an",
+              "title": "有经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "像这样，业为田地，识为种子，渴爱为湿润，无明所盖、渴爱所系之众生的识被住立在胜妙界，这样，有未来再生的诞生。",
+              "score": 6.333703395936575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.76&lang=zh&q=%E5%8B%9D%E5%A6%99%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%A5%AD%E7%82%BA%E7%94%B0%E5%9C%B0%EF%BC%8C%E8%AD%98%E7%82%BA%E7%A8%AE%E5%AD%90%EF%BC%8C%E6%B8%B4%E6%84%9B%E7%82%BA%E6%BF%95%E6%BD%A4%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E8%93%8B%E3%80%81%E6%B8%B4%E6%84%9B%E6%89%80%E7%B9%AB%E4%B9%8B%E7%9C%BE%E7%94%9F%E7%9A%84%E8%AD%98%E8%A2%AB%E4%BD%8F%E7%AB%8B%E5%9C%A8%E5%8B%9D%E5%A6%99%E7%95%8C%EF%BC%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E6%9C%89%E6%9C%AA%E4%BE%86%E5%86%8D%E7%94%9F%E7%9A%84%E8%AA%95%E7%94%9F%E3%80%82"
+            },
+            {
+              "uid": "an3.77",
+              "collection": "经藏/增支部_an",
+              "title": "有经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "像这样，业为田地，识为种子，渴爱为湿润，无明所盖、渴爱所系之众生的思与希求被住立在胜妙界，这样，有未来再生的诞生。",
+              "score": 6.189976786063165,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.77&lang=zh&q=%E5%8B%9D%E5%A6%99%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%A5%AD%E7%82%BA%E7%94%B0%E5%9C%B0%EF%BC%8C%E8%AD%98%E7%82%BA%E7%A8%AE%E5%AD%90%EF%BC%8C%E6%B8%B4%E6%84%9B%E7%82%BA%E6%BF%95%E6%BD%A4%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E8%93%8B%E3%80%81%E6%B8%B4%E6%84%9B%E6%89%80%E7%B9%AB%E4%B9%8B%E7%9C%BE%E7%94%9F%E7%9A%84%E6%80%9D%E8%88%87%E5%B8%8C%E6%B1%82%E8%A2%AB%E4%BD%8F%E7%AB%8B%E5%9C%A8%E5%8B%9D%E5%A6%99%E7%95%8C%EF%BC%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E6%9C%89%E6%9C%AA%E4%BE%86%E5%86%8D%E7%94%9F%E7%9A%84%E8%AA%95%E7%94%9F%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "uttanikāya)；相应的意思是按内容分门别类，比如把佛陀所说的“五蕴”编在一起， “六处”编在一起，“界”编在一起，“四圣谛”编在一起、“缘起”编在一起，称为《相应部》。一共有 56 相应，7762篇经文。 4.《增支部》(Aṅguttaranikāya)。增(uttara)，是增加、更上的意思。aṅga 是部分、支。增支的编辑方法是按法数把佛陀所讲的与数目有关的经文编集在一起。比如 “二法”有止、观，名、色等。“三法”有三受、三界等。由“一法”编到“十一法”，因此《增支部》有十一集，共收录9557 篇经文。 5.《小部》(Khuddakanikāya)。这里的“小”并非篇幅小，亦非微不足道，而是内容庞杂，把前面四部以外的所有经典都收编在内。例如属于诗歌集体裁的《法句》《长老偈》《长老尼偈》等，都收编在《小部》。《小部》在《经藏》五部中分量最大，一共有 15 部，即：《小诵》《法句》《自说》《如是语》《经集》《天宫故事》《鬼故事》《长老偈》《长老尼偈》《本生》《义释》《无碍解道》《传记》《佛陀史》和《所行藏》。在缅甸，则再加上《导论》《藏释》和《弥林德问》而成 18 部。 ## 十三、论藏 《论藏》 (Abhidhammapiṭaka)的论(abhidhamma)，古音译为“阿毗达摩、阿毗",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "对六境时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明的层次** 雷迪禅师引入\"住地\"（āsava，即\"漏\"的基底）概念：最初的心意被无明浸染，成为生死轮回的主要教唆者。无明如风，吹动三界大海，激起烦恼波澜。 无明也有三个层次（与身见相同）：犯罪层次（显现为恶行）、缠烦恼层次（显现为恶意）、随眠层次（潜藏于心流中，尚未显现）。 **",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "可分为四大板块：** 1. **理论基础板块**——《内观手册》（观智与名色的解析）与《发趣论手册》（二十四种因缘关系的哲学基础），二者共同构成理解一切\"缘起现象\"的阿毗达摩工具箱。 2. **正见建立板块**——《正见手册》，专门破斥三种邪见（宿作因见、神造见、无因见），建立\"业自己有\"（kammassakatā）的正见，是全书的伦理与信仰基石。 3. **宇宙与真理板块**——《法则手册》（五种自然法则、二谛、大劫、不可思议之事、三界、缘起）与《四谛手册》（对四圣谛尤其是苦谛的极详尽展开），二者从宏观宇宙论与微观身心论两个角度说明\"苦\"的真相。 4. **实修板块**——《菩提分手册》（三十七道品的系统解说）、《道支手册》（八正道的具体修法，尤其是如何在日常生活中次第建立戒定慧三学）、《五种光明》（以\"五种愚痴、五种光明\"的框架总摄前面各手册的内观次第）。附录则以问答与专论形式，处理业力遗传等具体问题，以及证悟无我之后现世与来世的巨大利益。 原书夹杂大量未译的巴利术语（因为雷迪大长老习惯用同义堆叠的方式反复申说一个概念），并附有大量译注。以下总结在忠实原意的基础上，尽量把巴利术语义译并保留，重要的原文引述会标出，同一主题在不同手册中重复出现的内容（例如\"业自己有\"\"无我\"\"缘起\"等）将在各章节中",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "体（亦需推理） #### 三、平衡诸界与六对相反素质 **「平衡诸界的相对素质是：硬与软，粗与滑，重与轻，流动与粘，热与冷，支持与推动。」**若某相过强，专注其对立面平衡之，例如流动过强时多注意粘性。一分钟内至少能重复照见三圈。 #### 四、十种培育定力的方法 1. 有次序（地→水→火→风） 2. 不太快 3. 不太慢 4. 避开干扰 5. 跨越观念（不只念名称，须知其真实自性相） 6. 除掉不清晰（每界至少保留一相，不可减至三界或两界） 7. 辨明诸相 8-10. 依《增上心经》《无上清凉经》《觉支经》平衡五根七觉支 #### 五、色聚的出现——近行定的标志 修习深入时，全身呈现灰色烟→白如棉花→如云朵→如冰块玻璃般剔透明亮。原文说明，这些明净色法是五根，称为**「净色」**（pasada）。继续观照透明体、寻找内部小空间时，透明体会粉碎成许多名为**「色聚」**（rupa kalapa）的极微粒子；此时已达心清净（citta visuddhi），可进入色业处修见清净。 --- ## 第九章：色业处的基本理论 ### 核心论点：二十八色法的分类体系与三遍知的修学框架 本章是**「色业处」**的理论基础，建立整个色法辨明的知识框架。 #### 一、三遍知——一切修观的总纲 佛陀",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "**编者归纳**：思（意志）在行蕴的说明中承担“积集”等作用，因此行蕴可作为观察业行与轮回条件的重要分析框架；“行蕴是生死轮回的主要推动力”是综合性教义概括，不应冒充 XIV.132 的直接结论。 #### 5. 识蕴（Viññāṇakkhandha，Group of Consciousness） 意识（consciousness/viññāṇa）有**89种**（或按不同分类为121种），按以下方式分类： **按界分类**（三界）： - 欲界意识（sense-sphere consciousness）：54种 - 色界意识（fine-material-sphere consciousness）：15种 - 无色界意识（immaterial-sphere consciousness）：12种 - 出世间意识（supramundane consciousness）：8或40种 意识的特征（XIV.81–82；分类见 XIV.83–124）： - **特征**：认识（knowing，cognizing） - **功能**：先驱（precursor）——所有心理活动的前导 - **显现**：结生（rebirth-linking）——在每次投生时作为结生识 **识蕴的关键作用**： 在缘起法（de",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        },
+        {
+          "source": "docs/research/forest-monks/patipada-summary.md",
+          "heading": "站内搜索命中",
+          "text": "此身而立于此颤抖。」 这场\"心灵拉锯战\"持续近一个时辰，阿姜曼终于放下执着，心中生起对老虎的慈悲，甚至\"渴望抚摸牠、与牠嬉戏\"。他提灯寻虎却遍寻不获，心中忽有声音警示： > 「你为何寻牠？正觉与妄想皆在你心中，不在任何有情或此虎身上……这两种状态皆是你心所现，不属他人。」 摩诃布瓦并摘录一段阿姜曼当时的禅悦体验，极为动人： > 「所体验的温柔慈心，是与一切有情和谐共处的亲密感。无论是怨敌、人类、诸天、帝释、梵天、夜叉、魔众，乃至三界一切众生，此刻皆不再视为敌人。」 --- ## 第六章 古老的传统修行（头陀行）——十三支的义理与功德 本章系统整理十三头陀支中与森林修行密切相关的四支，阐明其\"矫治性格执着\"的深层用意，并纠正一般人对头陀行\"只是苦行表演\"的误解。 ### 一、树下住（Rukkhamūla） 阿姜曼认为此支功德最为殊胜，因菩提树下正是佛陀成道之处，双树林下亦是佛陀般涅盘之地。他解释茅屋与树下之别： > 「住在与世隔绝森林中的小茅屋里可能是一种享乐……而在荒林的树底下坐着，因为没有防护，也无处可逃或舒适坐卧……他的正念与心识时刻同在。」 他曾以第一人称语气激励弟子： > 「如果我的比丘弟子想要了解自己，想要知道他们自己是否是修行圆满的比丘……他们都应该去修持『树下住』的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%95%8C&scope=site",
+          "query": "三界"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g15",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 15,
+      "label": "三界",
+      "members": "低劣界、中界、胜妙界",
+      "member_items": [
+        "低劣界",
+        "中界",
+        "胜妙界"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个三界：低劣界、中界、胜妙界。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BD%8E%E5%8A%A3%E7%95%8C%E3%80%81%E4%B8%AD%E7%95%8C%E3%80%81%E5%8B%9D%E5%A6%99%E7%95%8C"
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-85689c5b9153",
+    "number": 4,
+    "label": "四界",
+    "member_items": [
+      "地界",
+      "水界",
+      "火界",
+      "风界"
+    ],
+    "group_ids": [
+      "dn33-n4-g16"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四界",
+      "地界",
+      "水界",
+      "火界",
+      "风界"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四界」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：地界、水界、火界、风界。[1]\n\n## 所含各法\n### 地界\n经文将「地界」列为「四界」的一个成员。Early Buddhist 用该名词检索时，在《地界经》命中：地界经。[3]\n### 水界\n经文将「水界」列为「四界」的一个成员。Early Buddhist 用该名词检索时，在《象足迹譬喻大经》命中：什么是水界？。[4]\n### 火界\n经文将「火界」列为「四界」的一个成员。Early Buddhist 用该名词检索时，在《象足迹譬喻大经》命中：什么是火界？。[5]\n### 风界\n经文将「风界」列为「四界」的一个成员。Early Buddhist 用该名词检索时，在《象足迹譬喻大经》命中：什么是风界？。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四界",
+          "text": "四界：地界、水界、火界、风界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%9C%B0%E7%95%8C%E3%80%81%E6%B0%B4%E7%95%8C%E3%80%81%E7%81%AB%E7%95%8C%E3%80%81%E9%A2%A8%E7%95%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.30",
+          "text": "这些是四界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.30&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn25.9",
+          "text": "地界经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn25.9&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%95%8C%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "什么是水界？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B0%B4%E7%95%8C%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "什么是火界？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%81%AB%E7%95%8C%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "什么是风界？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%A2%A8%E7%95%8C%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.37",
+          "text": "有这些四界，哪四个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.38",
+          "text": "有这些四界，哪四个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.38&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.39",
+          "text": "有这些四界，哪四个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.39&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四界：地界、水界、火界、风界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%95%8C%EF%BC%9A%E5%9C%B0%E7%95%8C%E3%80%81%E6%B0%B4%E7%95%8C%E3%80%81%E7%81%AB%E7%95%8C%E3%80%81%E9%A2%A8%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.177",
+          "text": "当比丘在四界上认为不是我，不是我所，罗侯罗！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.177&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%AF%94%E4%B8%98%E5%9C%A8%E5%9B%9B%E7%95%8C%E4%B8%8A%E8%AA%8D%E7%82%BA%E4%B8%8D%E6%98%AF%E6%88%91%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%88%91%E6%89%80%EF%BC%8C%E7%BE%85%E4%BE%AF%E7%BE%85%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.37",
+          "text": "凡任何沙门或婆罗门不如实了知这些四界的乐味、过患、出离者，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E3%80%81%E9%81%8E%E6%82%A3%E3%80%81%E5%87%BA%E9%9B%A2%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.37",
+          "text": "凡任何沙门或婆罗门如实了知这些四界的乐味、过患、出离者，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E3%80%81%E9%81%8E%E6%82%A3%E3%80%81%E5%87%BA%E9%9B%A2%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "atipaṭṭhānā） **定义** 四念处（satipaṭṭhāna，念住）是《大念处经》（Mahāsatipaṭṭhāna Sutta，《长部》第22经）的核心教说，被佛陀称为\"唯一之道\"（ekāyano maggo）——净化众生、超越忧愁与哭泣、消除苦与悲、成就正道、证悟涅槃的唯一道路。 **四种念住** 1. 身随观（kāyānupassanā）：以正念持续观察身体——呼吸（安般念）、四威仪、正知、身分（三十二身分）、四界分别、九种墓地观 2. 受随观（vedanānupassanā）：观察受的生起与灭去——乐受、苦受、舍受，世间与出世间之别 3. 心随观（cittānupassanā）：观察心的各种状态——有贪心、无贪心、有嗔心、散乱心、定心等 4. 法随观（dhammānupassanā）：观察五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "**第四光明（三相通达智）**：如实照见名色现象的**无常、苦、无我**三相——这正是《毗婆舍那手册》中\"三种遍知\"的实修完成，也是一切诸佛、辟支佛、阿罗汉共同证得的智慧。 **第五光明（涅槃通达智）**：即四道智，证悟\"寂静\"（Santi）真实存在并亲自体证之——五种愚痴至此彻底止息，永不再生。 ### 二、六界的具体观修方法 本章末对**地、水、火**三界给出了极为细致的实修观照指导（风、空、识三界因体例，从略）： - **地界（Pathavī-dhātu）观法**：以坚硬或柔软的性质为所缘，不与颜色、形状等概念混淆。雷迪大长老指出，此观照应先从自身开始（例如从头顶依次照见全身各部位），继而扩展到山河大地——一旦透彻理解自身的地界，理解外部世界（乃至须弥山、铁围山、大地本身）的地界便会轻而易举，最终推及一切有情众生。他特别提醒：**若不能清晰观照究竟法（地水火风等），便无法真正照见\"生灭\"，也就无法真正体证无常、苦、无我。** - **水界（Āpo-dhātu）观法**：以黏结性、流动性为所缘。用了母鸡孵蛋的譬喻说明\"火界\"（热）与其余三界的关系——正如母鸡若不持续以体温孵化，鸡蛋便无法孵化成小鸡，反而腐坏；地水风三界唯有在火界（热性）的作用下，才能真正\"成熟、强化\"。文中还有一个精彩的譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9C%B0%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "极致展现。 ### 六随念：在家人最常用的禅修法门 念佛、念法、念僧（忆念三宝功德）、念戒、念施、念天——这是几百年来在家众最普及的禅修方式，即便尚未证得高深禅定，也能借由忆念升华心灵，贴近修行理想。 ### 四念住：最完整的禅修系统 本章篇幅最大、地位最重的部分是《念住经》——被公认为最完整的禅修法门系统，涵盖身、受、心、法四个观照范畴，共二十一种所缘： 1. **身念住**（14种所缘）：正念出入息、四威仪、正知、不净观、四界分别观、墓园九相（观尸体腐化的九个阶段）； 2. **受念住**：观乐受、苦受、不苦不乐受，及其身心二分； 3. **心念住**：观八组对比的心理状态（有贪心/无贪心、有嗔心/无嗔心等）； 4. **法念住**：以佛法的分类观照现象——五盖、五蕴、内外六处、七觉支、四圣谛。 菩提比丘特别指出，经文开头\"已经调伏对于世间的贪欲与忧恼\"这一表述，很可能是描述**修行本身就是克服贪欲与忧恼的方法**，而非要求修行者先克服烦恼才能开始修行——这是对念住经常见误解的重要澄清。他也指出四念住的修习隐含由浅入深的次第：修身念住渐入定的微妙状态，修受、心念住渐趋心的解脱，修法念住则转向观禅的核心——五盖、五蕴、六处、七觉支，最终引发四圣谛的智慧，**\"把心从烦恼中解脱并达到涅槃\"*",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/satipatthana-direct-path-summary.md",
+          "text": "而是每一种念住都必须完成的深化路线。*若只观察对象，却不观察生灭，就停在识别；若能观察生灭，却仍抓住观察者身份，也还没有达到重诵的终点*。真正成熟的念住，是**在清楚知道中不依赖、不执取**。 这一章也把念住与缘起连接起来。*经验的生起和灭去不是随机发生，而是依条件展开。*看见条件性，执取就失去实体依据。 ## 第六章：身 第六章是全书最长的一章，因为身随观是最直接、最稳固的入门。作者依《念住经》顺序讨论观呼吸、姿势、动作、身分、四界、腐尸观和死随念。它们共同完成一件事：把我的身体还原为会呼吸、会移动、由元素构成、终将败坏的身体过程。 **观呼吸**是身随观的第一门。呼吸自然、持续、明显，适合培养稳定觉知。它既能带来定，也能打开观。作者还联系《安那般那念经》的十六步骤，说明呼吸并不只属于身念住，它可以逐渐展开到受、心、法，成为完整道路的线索。 **姿势和动作**把念住带入日常生活。经文中的走、站、坐、卧，以及屈伸、穿衣、进食等动作，说明修行不只发生在坐垫上。正知让行动不再完全由习惯驱动，而是在行动中知道行动。 **身分和四界观**继续拆解身体执著。身体被观察为发、毛、爪、齿、皮等部分，也被观察为地、水、火、风的功能组合。这不是为了厌恶身体，而是为了拆除对身体的美化、身份投射和所有权感。 *",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "须经历如此的身心痛苦才能知见四圣谛，反之，我说可以身舒心悦地知见四圣谛。」** 三喻并置，先以极限逼迫，再以慈悲解脱——彰显四圣谛的无上价值，也奠定了帕奥禅法系统、可验证、重视身心安稳的总体风格。 **禅师生平：** 帕奥禅师九岁出家，二十岁受比丘戒，三十岁后于森林苦修十余年，将《清净道论》的理论与止观实践深度融合，兼习头陀行。1981年接任帕奥丛林禅院住持后，所授禅法以**「戒清净」**为基，依七清净、十六观智次第，一般由安般念或四界分别观入门，最终证得道果。此后以八年完成五本巨著《趣向涅盘之道》，并于1996年获缅甸政府颁授**「大禅师」**荣誉。 --- ## 第一章：刹那定与观禅 ### 核心论点：禅修必须具足正定，刹那定之辨析 本章堪称全书的理论基石，以严密的论证厘清了一个纠缠南传佛教界的关键争议——修观禅是否需要证得禅那？刹那定的本质究竟是什么？ #### 一、正定是八正道不可或缺的一支 帕奥禅师开宗明义：**「那些认为证悟涅盘是不需要修定的人，事实上已经从八正道中除去了一支，而只剩下七正道。每位禅修者应该自己反省，试想只修七正道是否能够到达涅盘？」** 佛陀在《相应部·定经》中教导比丘应修习定，因为得定者能如实知见五蕴及其生灭之因。这意味着缺乏定力的禅修者，既难以看到色聚",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四界",
+          "hits": [
+            {
+              "uid": "sn14.30",
+              "collection": "经藏/相应部_sn",
+              "title": "四界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四界。",
+              "score": 13.752080481981151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.30&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn14.37",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这些四界，哪四个呢？",
+              "score": 10.636198301343319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn14.38",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这些四界，哪四个呢？",
+              "score": 10.636198301343319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.38&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn14.39",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这些四界，哪四个呢？",
+              "score": 10.636198301343319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.39&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四界：地界、水界、火界、风界。",
+              "score": 9.752342235202237,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%95%8C%EF%BC%9A%E5%9C%B0%E7%95%8C%E3%80%81%E6%B0%B4%E7%95%8C%E3%80%81%E7%81%AB%E7%95%8C%E3%80%81%E9%A2%A8%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "an4.177",
+              "collection": "经藏/增支部_an",
+              "title": "罗侯罗经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当比丘在四界上认为不是我，不是我所，罗侯罗！",
+              "score": 8.67145949916835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.177&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%AF%94%E4%B8%98%E5%9C%A8%E5%9B%9B%E7%95%8C%E4%B8%8A%E8%AA%8D%E7%82%BA%E4%B8%8D%E6%98%AF%E6%88%91%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%88%91%E6%89%80%EF%BC%8C%E7%BE%85%E4%BE%AF%E7%BE%85%EF%BC%81"
+            },
+            {
+              "uid": "sn14.37",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何沙门或婆罗门不如实了知这些四界的乐味、过患、出离者，比丘们！",
+              "score": 7.806266457045214,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E3%80%81%E9%81%8E%E6%82%A3%E3%80%81%E5%87%BA%E9%9B%A2%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn14.37",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何沙门或婆罗门如实了知这些四界的乐味、过患、出离者，比丘们！",
+              "score": 7.806266457045214,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.37&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E9%80%99%E4%BA%9B%E5%9B%9B%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E3%80%81%E9%81%8E%E6%82%A3%E3%80%81%E5%87%BA%E9%9B%A2%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "地界",
+          "hits": [
+            {
+              "uid": "sn25.9",
+              "collection": "经藏/相应部_sn",
+              "title": "地界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地界经",
+              "score": 11.525072852470073,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn25.9&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%95%8C%E7%B6%93"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是地界？",
+              "score": 10.849817124546515,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%9C%B0%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "sn14.33",
+              "collection": "经藏/相应部_sn",
+              "title": "如果没有这个经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果没有这地界的过患，众生就不会在这地界上厌。",
+              "score": 10.798144146230804,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.33&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E9%80%99%E5%9C%B0%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%EF%BC%8C%E7%9C%BE%E7%94%9F%E5%B0%B1%E4%B8%8D%E6%9C%83%E5%9C%A8%E9%80%99%E5%9C%B0%E7%95%8C%E4%B8%8A%E5%8E%AD%E3%80%82"
+            },
+            {
+              "uid": "sn14.33",
+              "collection": "经藏/相应部_sn",
+              "title": "如果没有这个经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果没有这地界的乐味，众生就不会在这地界上贪著；",
+              "score": 10.492237154894434,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.33&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E9%80%99%E5%9C%B0%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%EF%BC%8C%E7%9C%BE%E7%94%9F%E5%B0%B1%E4%B8%8D%E6%9C%83%E5%9C%A8%E9%80%99%E5%9C%B0%E7%95%8C%E4%B8%8A%E8%B2%AA%E8%91%97%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.33",
+              "collection": "经藏/相应部_sn",
+              "title": "如果没有这个经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但因为有这地界的过患，因此，众生在地界上厌。",
+              "score": 10.492237154894434,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.33&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%86%E5%9B%A0%E7%82%BA%E6%9C%89%E9%80%99%E5%9C%B0%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E7%9C%BE%E7%94%9F%E5%9C%A8%E5%9C%B0%E7%95%8C%E4%B8%8A%E5%8E%AD%E3%80%82"
+            },
+            {
+              "uid": "sn14.33",
+              "collection": "经藏/相应部_sn",
+              "title": "如果没有这个经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果没有这地界的出离，众生就不会在这地界上出离；",
+              "score": 10.492237154894434,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.33&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E9%80%99%E5%9C%B0%E7%95%8C%E7%9A%84%E5%87%BA%E9%9B%A2%EF%BC%8C%E7%9C%BE%E7%94%9F%E5%B0%B1%E4%B8%8D%E6%9C%83%E5%9C%A8%E9%80%99%E5%9C%B0%E7%95%8C%E4%B8%8A%E5%87%BA%E9%9B%A2%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.32",
+              "collection": "经藏/相应部_sn",
+              "title": "行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我过去从事于遍求地界的乐味，证得了那地界的所有乐味，我以慧善见了所有地界的乐味之所及。",
+              "score": 10.378224626559987,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.32&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E9%81%8E%E5%8E%BB%E5%BE%9E%E4%BA%8B%E6%96%BC%E9%81%8D%E6%B1%82%E5%9C%B0%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%EF%BC%8C%E8%AD%89%E5%BE%97%E4%BA%86%E9%82%A3%E5%9C%B0%E7%95%8C%E7%9A%84%E6%89%80%E6%9C%89%E6%A8%82%E5%91%B3%EF%BC%8C%E6%88%91%E4%BB%A5%E6%85%A7%E5%96%84%E8%A6%8B%E4%BA%86%E6%89%80%E6%9C%89%E5%9C%B0%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E4%B9%8B%E6%89%80%E5%8F%8A%E3%80%82"
+            },
+            {
+              "uid": "sn14.32",
+              "collection": "经藏/相应部_sn",
+              "title": "行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我过去从事于遍求地界的过患，证得了那地界的所有过患，我以慧善见了所有地界的过患之所及。",
+              "score": 10.378224626559987,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.32&lang=zh&q=%E5%9C%B0%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E9%81%8E%E5%8E%BB%E5%BE%9E%E4%BA%8B%E6%96%BC%E9%81%8D%E6%B1%82%E5%9C%B0%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%EF%BC%8C%E8%AD%89%E5%BE%97%E4%BA%86%E9%82%A3%E5%9C%B0%E7%95%8C%E7%9A%84%E6%89%80%E6%9C%89%E9%81%8E%E6%82%A3%EF%BC%8C%E6%88%91%E4%BB%A5%E6%85%A7%E5%96%84%E8%A6%8B%E4%BA%86%E6%89%80%E6%9C%89%E5%9C%B0%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%E4%B9%8B%E6%89%80%E5%8F%8A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "水界",
+          "hits": [
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是水界？",
+              "score": 11.042973092449067,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是水界？",
+              "score": 11.042973092449067,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn140",
+              "collection": "经藏/中部_mn",
+              "title": "界分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是水界？",
+              "score": 11.042973092449067,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn140&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的水界？",
+              "score": 9.884683005502865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自身内的水界。",
+              "score": 9.884683005502865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E6%B0%B4%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的水界？",
+              "score": 9.884683005502865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自身内的水界。",
+              "score": 9.884683005502865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E6%B0%B4%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn140",
+              "collection": "经藏/中部_mn",
+              "title": "界分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的水界？",
+              "score": 9.884683005502865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn140&lang=zh&q=%E6%B0%B4%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E6%B0%B4%E7%95%8C%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "火界",
+          "hits": [
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是火界？",
+              "score": 11.246485172157788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%81%AB%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是火界？",
+              "score": 11.246485172157788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%81%AB%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn140",
+              "collection": "经藏/中部_mn",
+              "title": "界分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是火界？",
+              "score": 11.246485172157788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn140&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%81%AB%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的火界？",
+              "score": 10.066848838822413,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E7%81%AB%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自身内的火界。",
+              "score": 10.066848838822413,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E7%81%AB%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的火界？",
+              "score": 10.066848838822413,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E7%81%AB%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自身内的火界。",
+              "score": 10.066848838822413,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E7%81%AB%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn140",
+              "collection": "经藏/中部_mn",
+              "title": "界分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的火界？",
+              "score": 10.066848838822413,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn140&lang=zh&q=%E7%81%AB%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E7%81%AB%E7%95%8C%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "风界",
+          "hits": [
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是风界？",
+              "score": 11.228429541805335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%A2%A8%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn62",
+              "collection": "经藏/中部_mn",
+              "title": "教诫罗侯罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是风界？",
+              "score": 11.228429541805335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn62&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%A2%A8%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn140",
+              "collection": "经藏/中部_mn",
+              "title": "界分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是风界？",
+              "score": 11.228429541805335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn140&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%A2%A8%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "sn14.32",
+              "collection": "经藏/相应部_sn",
+              "title": "行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我过去从事于遍求风界的乐味，证得了那风界的所有乐味，我以慧善见了所有风界的乐味之所及。",
+              "score": 10.740380473761066,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.32&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E9%81%8E%E5%8E%BB%E5%BE%9E%E4%BA%8B%E6%96%BC%E9%81%8D%E6%B1%82%E9%A2%A8%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%EF%BC%8C%E8%AD%89%E5%BE%97%E4%BA%86%E9%82%A3%E9%A2%A8%E7%95%8C%E7%9A%84%E6%89%80%E6%9C%89%E6%A8%82%E5%91%B3%EF%BC%8C%E6%88%91%E4%BB%A5%E6%85%A7%E5%96%84%E8%A6%8B%E4%BA%86%E6%89%80%E6%9C%89%E9%A2%A8%E7%95%8C%E7%9A%84%E6%A8%82%E5%91%B3%E4%B9%8B%E6%89%80%E5%8F%8A%E3%80%82"
+            },
+            {
+              "uid": "sn14.32",
+              "collection": "经藏/相应部_sn",
+              "title": "行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我过去从事于遍求风界的过患，证得了那风界的所有过患，我以慧善见了所有风界的过患之所及。",
+              "score": 10.740380473761066,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.32&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E9%81%8E%E5%8E%BB%E5%BE%9E%E4%BA%8B%E6%96%BC%E9%81%8D%E6%B1%82%E9%A2%A8%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%EF%BC%8C%E8%AD%89%E5%BE%97%E4%BA%86%E9%82%A3%E9%A2%A8%E7%95%8C%E7%9A%84%E6%89%80%E6%9C%89%E9%81%8E%E6%82%A3%EF%BC%8C%E6%88%91%E4%BB%A5%E6%85%A7%E5%96%84%E8%A6%8B%E4%BA%86%E6%89%80%E6%9C%89%E9%A2%A8%E7%95%8C%E7%9A%84%E9%81%8E%E6%82%A3%E4%B9%8B%E6%89%80%E5%8F%8A%E3%80%82"
+            },
+            {
+              "uid": "sn14.32",
+              "collection": "经藏/相应部_sn",
+              "title": "行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我过去从事于遍求风界的出离，证得了那风界的所有出离，我以慧善见了所有风界的出离之所及。",
+              "score": 10.543417142747751,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.32&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E9%81%8E%E5%8E%BB%E5%BE%9E%E4%BA%8B%E6%96%BC%E9%81%8D%E6%B1%82%E9%A2%A8%E7%95%8C%E7%9A%84%E5%87%BA%E9%9B%A2%EF%BC%8C%E8%AD%89%E5%BE%97%E4%BA%86%E9%82%A3%E9%A2%A8%E7%95%8C%E7%9A%84%E6%89%80%E6%9C%89%E5%87%BA%E9%9B%A2%EF%BC%8C%E6%88%91%E4%BB%A5%E6%85%A7%E5%96%84%E8%A6%8B%E4%BA%86%E6%89%80%E6%9C%89%E9%A2%A8%E7%95%8C%E7%9A%84%E5%87%BA%E9%9B%A2%E4%B9%8B%E6%89%80%E5%8F%8A%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自身内的风界？",
+              "score": 10.050687051502605,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E9%A2%A8%E7%95%8C%EF%BC%9F"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自身内的风界。",
+              "score": 10.050687051502605,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E9%A2%A8%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E8%BA%AB%E5%85%A7%E7%9A%84%E9%A2%A8%E7%95%8C%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "atipaṭṭhānā） **定义** 四念处（satipaṭṭhāna，念住）是《大念处经》（Mahāsatipaṭṭhāna Sutta，《长部》第22经）的核心教说，被佛陀称为\"唯一之道\"（ekāyano maggo）——净化众生、超越忧愁与哭泣、消除苦与悲、成就正道、证悟涅槃的唯一道路。 **四种念住** 1. 身随观（kāyānupassanā）：以正念持续观察身体——呼吸（安般念）、四威仪、正知、身分（三十二身分）、四界分别、九种墓地观 2. 受随观（vedanānupassanā）：观察受的生起与灭去——乐受、苦受、舍受，世间与出世间之别 3. 心随观（cittānupassanā）：观察心的各种状态——有贪心、无贪心、有嗔心、散乱心、定心等 4. 法随观（dhammānupassanā）：观察五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site",
+          "query": "四界"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "**第四光明（三相通达智）**：如实照见名色现象的**无常、苦、无我**三相——这正是《毗婆舍那手册》中\"三种遍知\"的实修完成，也是一切诸佛、辟支佛、阿罗汉共同证得的智慧。 **第五光明（涅槃通达智）**：即四道智，证悟\"寂静\"（Santi）真实存在并亲自体证之——五种愚痴至此彻底止息，永不再生。 ### 二、六界的具体观修方法 本章末对**地、水、火**三界给出了极为细致的实修观照指导（风、空、识三界因体例，从略）： - **地界（Pathavī-dhātu）观法**：以坚硬或柔软的性质为所缘，不与颜色、形状等概念混淆。雷迪大长老指出，此观照应先从自身开始（例如从头顶依次照见全身各部位），继而扩展到山河大地——一旦透彻理解自身的地界，理解外部世界（乃至须弥山、铁围山、大地本身）的地界便会轻而易举，最终推及一切有情众生。他特别提醒：**若不能清晰观照究竟法（地水火风等），便无法真正照见\"生灭\"，也就无法真正体证无常、苦、无我。** - **水界（Āpo-dhātu）观法**：以黏结性、流动性为所缘。用了母鸡孵蛋的譬喻说明\"火界\"（热）与其余三界的关系——正如母鸡若不持续以体温孵化，鸡蛋便无法孵化成小鸡，反而腐坏；地水风三界唯有在火界（热性）的作用下，才能真正\"成熟、强化\"。文中还有一个精彩的譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9C%B0%E7%95%8C&scope=site",
+          "query": "地界"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "极致展现。 ### 六随念：在家人最常用的禅修法门 念佛、念法、念僧（忆念三宝功德）、念戒、念施、念天——这是几百年来在家众最普及的禅修方式，即便尚未证得高深禅定，也能借由忆念升华心灵，贴近修行理想。 ### 四念住：最完整的禅修系统 本章篇幅最大、地位最重的部分是《念住经》——被公认为最完整的禅修法门系统，涵盖身、受、心、法四个观照范畴，共二十一种所缘： 1. **身念住**（14种所缘）：正念出入息、四威仪、正知、不净观、四界分别观、墓园九相（观尸体腐化的九个阶段）； 2. **受念住**：观乐受、苦受、不苦不乐受，及其身心二分； 3. **心念住**：观八组对比的心理状态（有贪心/无贪心、有嗔心/无嗔心等）； 4. **法念住**：以佛法的分类观照现象——五盖、五蕴、内外六处、七觉支、四圣谛。 菩提比丘特别指出，经文开头\"已经调伏对于世间的贪欲与忧恼\"这一表述，很可能是描述**修行本身就是克服贪欲与忧恼的方法**，而非要求修行者先克服烦恼才能开始修行——这是对念住经常见误解的重要澄清。他也指出四念住的修习隐含由浅入深的次第：修身念住渐入定的微妙状态，修受、心念住渐趋心的解脱，修法念住则转向观禅的核心——五盖、五蕴、六处、七觉支，最终引发四圣谛的智慧，**\"把心从烦恼中解脱并达到涅槃\"*",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site",
+          "query": "四界"
+        },
+        {
+          "source": "docs/research/theravada-modern/satipatthana-direct-path-summary.md",
+          "heading": "站内搜索命中",
+          "text": "而是每一种念住都必须完成的深化路线。*若只观察对象，却不观察生灭，就停在识别；若能观察生灭，却仍抓住观察者身份，也还没有达到重诵的终点*。真正成熟的念住，是**在清楚知道中不依赖、不执取**。 这一章也把念住与缘起连接起来。*经验的生起和灭去不是随机发生，而是依条件展开。*看见条件性，执取就失去实体依据。 ## 第六章：身 第六章是全书最长的一章，因为身随观是最直接、最稳固的入门。作者依《念住经》顺序讨论观呼吸、姿势、动作、身分、四界、腐尸观和死随念。它们共同完成一件事：把我的身体还原为会呼吸、会移动、由元素构成、终将败坏的身体过程。 **观呼吸**是身随观的第一门。呼吸自然、持续、明显，适合培养稳定觉知。它既能带来定，也能打开观。作者还联系《安那般那念经》的十六步骤，说明呼吸并不只属于身念住，它可以逐渐展开到受、心、法，成为完整道路的线索。 **姿势和动作**把念住带入日常生活。经文中的走、站、坐、卧，以及屈伸、穿衣、进食等动作，说明修行不只发生在坐垫上。正知让行动不再完全由习惯驱动，而是在行动中知道行动。 **身分和四界观**继续拆解身体执著。身体被观察为发、毛、爪、齿、皮等部分，也被观察为地、水、火、风的功能组合。这不是为了厌恶身体，而是为了拆除对身体的美化、身份投射和所有权感。 *",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site",
+          "query": "四界"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "须经历如此的身心痛苦才能知见四圣谛，反之，我说可以身舒心悦地知见四圣谛。」** 三喻并置，先以极限逼迫，再以慈悲解脱——彰显四圣谛的无上价值，也奠定了帕奥禅法系统、可验证、重视身心安稳的总体风格。 **禅师生平：** 帕奥禅师九岁出家，二十岁受比丘戒，三十岁后于森林苦修十余年，将《清净道论》的理论与止观实践深度融合，兼习头陀行。1981年接任帕奥丛林禅院住持后，所授禅法以**「戒清净」**为基，依七清净、十六观智次第，一般由安般念或四界分别观入门，最终证得道果。此后以八年完成五本巨著《趣向涅盘之道》，并于1996年获缅甸政府颁授**「大禅师」**荣誉。 --- ## 第一章：刹那定与观禅 ### 核心论点：禅修必须具足正定，刹那定之辨析 本章堪称全书的理论基石，以严密的论证厘清了一个纠缠南传佛教界的关键争议——修观禅是否需要证得禅那？刹那定的本质究竟是什么？ #### 一、正定是八正道不可或缺的一支 帕奥禅师开宗明义：**「那些认为证悟涅盘是不需要修定的人，事实上已经从八正道中除去了一支，而只剩下七正道。每位禅修者应该自己反省，试想只修七正道是否能够到达涅盘？」** 佛陀在《相应部·定经》中教导比丘应修习定，因为得定者能如实知见五蕴及其生灭之因。这意味着缺乏定力的禅修者，既难以看到色聚",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site",
+          "query": "四界"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "、戒随念、施随念、天随念、死随念、身随念、出入息随念、寂静随念 **四梵住**（four divine abidings）：慈、悲、喜、舍 **四无色界**（four immaterial states）：空无边处、识无边处、无所有处、非想非非想处 **一想业处**（one perception）：食厌想（perception of repulsiveness in nutriment） **一分别业处**（one defining）：四界差别（defining of the four elements） 作者进一步按十个角度对这四十业处进行分类学分析： 1. **枚举**（enumeration）：如上述四十 2. **易难**（access vs. absorption）：八个随念（除身念与出入息随念外）、食厌想、四界差别仅带近行定；其余皆带禅那 3. **禅那品类**：十遍与出入息念带四禅；十不净与身念带初禅；前三梵住带三禅；舍无量与四无色界带四禅 4. **超越**（surmounting）：在同一所缘中由下一禅超越至上一禅（如在地遍上由初禅超越至二禅）；或由低层无色界之所缘超越到高层无色界（如由空无边处超越到识无边处） 5. **延展与非延展**：仅十遍须延展（以便听神通或他心通），其余皆",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%95%8C&scope=site",
+          "query": "四界"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g16",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 16,
+      "label": "四界",
+      "members": "地界、水界、火界、风界",
+      "member_items": [
+        "地界",
+        "水界",
+        "火界",
+        "风界"
+      ],
+      "dn34_status": null,
+      "source_text": "四界：地界、水界、火界、风界。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%9C%B0%E7%95%8C%E3%80%81%E6%B0%B4%E7%95%8C%E3%80%81%E7%81%AB%E7%95%8C%E3%80%81%E9%A2%A8%E7%95%8C"
+    }
+  ]
+}

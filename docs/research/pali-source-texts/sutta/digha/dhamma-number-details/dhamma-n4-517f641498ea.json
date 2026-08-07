@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-517f641498ea",
+    "number": 4,
+    "label": "四种胎",
+    "member_items": [
+      "卵生胎",
+      "胎生胎",
+      "湿生胎",
+      "化生胎"
+    ],
+    "group_ids": [
+      "dn33-n4-g36"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四种胎",
+      "卵生胎",
+      "胎生胎",
+      "湿生胎",
+      "化生胎"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四种胎」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：卵生胎、胎生胎、湿生胎、化生胎。[1]\n\n## 所含各法\n### 卵生胎\n经文将「卵生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为卵生胎。。[3]\n### 胎生胎\n经文将「胎生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为胎生胎。。[4]\n### 湿生胎\n经文将「湿生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为湿生胎。。[5]\n### 化生胎\n经文将「化生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为化生胎。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四种胎",
+          "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这些是四种胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这被称为卵生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这被称为胎生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这被称为湿生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这被称为化生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "有这四种胎，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn29.1",
+          "text": "这些是四种龙的出生（胎）。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn29.2",
+          "text": "这些是四种龙的出生（胎）。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.2&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn29.1",
+          "text": "有这四种龙的出生（胎），哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn29.2",
+          "text": "有这四种龙的出生（胎），哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.2&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn30.1",
+          "text": "这些是四种金翅鸟的出生（胎）。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn30.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%87%91%E7%BF%85%E9%B3%A5%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四种胎",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种胎。",
+              "score": 23.621726315855124,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 22.475139244175697,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种胎，哪四种呢？",
+              "score": 22.17181167523808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn29.1",
+              "collection": "经藏/相应部_sn",
+              "title": "单纯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种龙的出生（胎）。",
+              "score": 17.191151962444327,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+            },
+            {
+              "uid": "sn29.2",
+              "collection": "经藏/相应部_sn",
+              "title": "更胜妙经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种龙的出生（胎）。",
+              "score": 17.191151962444327,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.2&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+            },
+            {
+              "uid": "sn29.1",
+              "collection": "经藏/相应部_sn",
+              "title": "单纯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种龙的出生（胎），哪四种呢？",
+              "score": 17.09003892870449,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn29.2",
+              "collection": "经藏/相应部_sn",
+              "title": "更胜妙经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种龙的出生（胎），哪四种呢？",
+              "score": 17.09003892870449,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.2&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E9%BE%8D%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn30.1",
+              "collection": "经藏/相应部_sn",
+              "title": "单纯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种金翅鸟的出生（胎）。",
+              "score": 16.878585563127153,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn30.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%87%91%E7%BF%85%E9%B3%A5%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "卵生胎",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为卵生胎。",
+              "score": 28.556368313374705,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是卵生胎呢？",
+              "score": 27.058739094338407,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%8D%B5%E7%94%9F%E8%83%8E%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 25.76901560355745,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 25.732908780152968,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为胎生胎。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种胎。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dhp320-333",
+              "collection": "经藏/小部_kn",
+              "title": "象",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "愚者数入胎 。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp320-333&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%84%9A%E8%80%85%E6%95%B8%E5%85%A5%E8%83%8E+%E3%80%82"
+            },
+            {
+              "uid": "sn29.11-20",
+              "collection": "经藏/相应部_sn",
+              "title": "卵生布施之资助经十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "卵生布施之资助经十则",
+              "score": 10.894914753368074,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.11-20&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B5%E7%94%9F%E5%B8%83%E6%96%BD%E4%B9%8B%E8%B3%87%E5%8A%A9%E7%B6%93%E5%8D%81%E5%89%87"
+            }
+          ]
+        },
+        {
+          "query": "胎生胎",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为胎生胎。",
+              "score": 29.541683689327165,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是胎生胎呢？",
+              "score": 27.992379933781237,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%83%8E%E7%94%9F%E8%83%8E%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 26.472588371375558,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 23.784042763160496,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dhp383-423",
+              "collection": "经藏/小部_kn",
+              "title": "波罗门品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "非从母胎生。",
+              "score": 12.286171599784117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp383-423&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9D%9E%E5%BE%9E%E6%AF%8D%E8%83%8E%E7%94%9F%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为卵生胎。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种胎。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dhp320-333",
+              "collection": "经藏/小部_kn",
+              "title": "象",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "愚者数入胎 。",
+              "score": 11.347175351677617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp320-333&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%84%9A%E8%80%85%E6%95%B8%E5%85%A5%E8%83%8E+%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "湿生胎",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为湿生胎。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是湿生胎呢？",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%BF%95%E7%94%9F%E8%83%8E%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 11.066696307330785,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 9.84013957921,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "化生胎",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为化生胎。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是化生胎呢？",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%8C%96%E7%94%9F%E8%83%8E%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 11.066696307330785,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+              "score": 9.84013957921,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g36",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 36,
+      "label": "四种胎",
+      "members": "卵生胎、胎生胎、湿生胎、化生胎",
+      "member_items": [
+        "卵生胎",
+        "胎生胎",
+        "湿生胎",
+        "化生胎"
+      ],
+      "dn34_status": null,
+      "source_text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E"
+    }
+  ]
+}

@@ -1,0 +1,724 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n6-156ef884f0e7",
+    "number": 6,
+    "label": "六识身",
+    "member_items": [
+      "眼识",
+      "耳识",
+      "鼻识",
+      "舌识",
+      "身识",
+      "意识"
+    ],
+    "group_ids": [
+      "dn33-n6-g3"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "六识身",
+      "眼识",
+      "耳识",
+      "鼻识",
+      "舌识",
+      "身识",
+      "意识"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「六识身」属于 6 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：眼识、耳识、鼻识、舌识、身识、意识。[1]\n\n## 所含各法\n### 眼识\n经文将「眼识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量眼识，不在眼识中思量，不从眼识思量，不思量『眼识是我的』。。[3]\n### 耳识\n经文将「耳识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《非你们的经第一》命中：耳识非你们的，你们要舍断！。[4]\n### 鼻识\n经文将「鼻识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《教诫阐陀经》命中：在鼻、鼻识……阐陀学友！。[5]\n### 舌识\n经文将「舌识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量舌识，不在舌识中思量，不从舌识思量，不思量『舌识是我的』。。[6]\n### 身识\n经文将「身识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《教诫阐陀经》命中：在身、身识……阐陀学友！。[7]\n### 意识\n经文将「意识」列为「六识身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量意识，不在意识中思量，不从意识思量，不思量『意识是我的』。。[8]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 7 个关键词，冻结 55 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 六识身",
+          "text": "六识身：眼识、耳识、鼻识、舌识、身识、意识。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%AD%98%E3%80%81%E8%80%B3%E8%AD%98%E3%80%81%E9%BC%BB%E8%AD%98%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%BA%AB%E8%AD%98%E3%80%81%E6%84%8F%E8%AD%98"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "『六识身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量眼识，不在眼识中思量，不从眼识思量，不思量『眼识是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%BC%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%9C%BC%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E7%9C%BC%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.101",
+          "text": "耳识非你们的，你们要舍断！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%AD%98%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn144",
+          "text": "在鼻、鼻识……阐陀学友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E9%BC%BB%E3%80%81%E9%BC%BB%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量舌识，不在舌识中思量，不从舌识思量，不思量『舌识是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E8%88%8C%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E8%88%8C%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E8%88%8C%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E8%88%8C%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn144",
+          "text": "在身、身识……阐陀学友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E8%BA%AB%E3%80%81%E8%BA%AB%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量意识，不在意识中思量，不从意识思量，不思量『意识是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E6%84%8F%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E6%84%8F%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E6%84%8F%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "而，『六识身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn137",
+          "text": "『六识身应该体会』像这样，这被说，这是缘于此而说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E6%AD%A4%E8%80%8C%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "六识身：眼识、耳识、鼻识、舌识、身识、意识。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%AD%98%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%AD%98%E3%80%81%E8%80%B3%E8%AD%98%E3%80%81%E9%BC%BB%E8%AD%98%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%BA%AB%E8%AD%98%E3%80%81%E6%84%8F%E8%AD%98%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn137",
+          "text": "而，『六识身应该体会』像这样，这被说，这是缘于什么而说呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E4%BB%80%E9%BA%BC%E8%80%8C%E8%AA%AA%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "「六内处应该体会，六外处应该体会，六识身应该体会，六触身应该体会，六受身应该体会，六渴爱身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%A4%96%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%8F%97%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E6%B8%B4%E6%84%9B%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "六识身",
+          "hits": [
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『六识身应该体会。",
+              "score": 13.283414621906497,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『六识身应该体会。",
+              "score": 12.621485045154273,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『六识身应该体会』像这样，这被说，这是缘于此而说。",
+              "score": 9.02404658232013,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E6%AD%A4%E8%80%8C%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六识身：眼识、耳识、鼻识、舌识、身识、意识。",
+              "score": 8.423798353013614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%AD%98%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%AD%98%E3%80%81%E8%80%B3%E8%AD%98%E3%80%81%E9%BC%BB%E8%AD%98%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%BA%AB%E8%AD%98%E3%80%81%E6%84%8F%E8%AD%98%E3%80%82"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『六识身应该体会』像这样，这被说，这是缘于什么而说呢？",
+              "score": 8.152655202069752,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E4%BB%80%E9%BA%BC%E8%80%8C%E8%AA%AA%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「六内处应该体会，六外处应该体会，六识身应该体会，六触身应该体会，六受身应该体会，六渴爱身应该体会。",
+              "score": 5.747617506847614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%A4%96%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%8F%97%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E6%B8%B4%E6%84%9B%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「六内处应该体会，六外处应该体会，六识身应该体会，六触身应该体会，十八种意的近伺察应该体会，三十六种众生足迹应该体会，在那里，依止这个，你们应该舍断那个，有三个念住圣者亲近，当亲近时，圣者足以教诫群众，对训练师们来说，他被称为『被调伏人的无上调御者』，这是六处分别的总说。",
+              "score": 2.8121549719733587,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%A4%96%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%8D%81%E5%85%AB%E7%A8%AE%E6%84%8F%E7%9A%84%E8%BF%91%E4%BC%BA%E5%AF%9F%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E4%B8%89%E5%8D%81%E5%85%AD%E7%A8%AE%E7%9C%BE%E7%94%9F%E8%B6%B3%E8%B7%A1%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E4%BE%9D%E6%AD%A2%E9%80%99%E5%80%8B%EF%BC%8C%E4%BD%A0%E5%80%91%E6%87%89%E8%A9%B2%E6%8D%A8%E6%96%B7%E9%82%A3%E5%80%8B%EF%BC%8C%E6%9C%89%E4%B8%89%E5%80%8B%E5%BF%B5%E4%BD%8F%E8%81%96%E8%80%85%E8%A6%AA%E8%BF%91%EF%BC%8C%E7%95%B6%E8%A6%AA%E8%BF%91%E6%99%82%EF%BC%8C%E8%81%96%E8%80%85%E8%B6%B3%E4%BB%A5%E6%95%99%E8%AA%A1%E7%BE%A4%E7%9C%BE%EF%BC%8C%E5%B0%8D%E8%A8%93%E7%B7%B4%E5%B8%AB%E5%80%91%E4%BE%86%E8%AA%AA%EF%BC%8C%E4%BB%96%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E8%A2%AB%E8%AA%BF%E4%BC%8F%E4%BA%BA%E7%9A%84%E7%84%A1%E4%B8%8A%E8%AA%BF%E5%BE%A1%E8%80%85%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E5%85%AD%E8%99%95%E5%88%86%E5%88%A5%E7%9A%84%E7%B8%BD%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "眼识",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量眼识，不在眼识中思量，不从眼识思量，不思量『眼识是我的』。",
+              "score": 10.843478525506864,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%BC%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%9C%BC%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E7%9C%BC%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.90",
+              "collection": "经藏/相应部_sn",
+              "title": "扰动经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不应该思量眼识，不应该在眼识中思量，不应该从眼识思量，不应该思量『眼识是我的』；",
+              "score": 10.257659604127745,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.90&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%87%89%E8%A9%B2%E6%80%9D%E9%87%8F%E7%9C%BC%E8%AD%98%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E5%9C%A8%E7%9C%BC%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E5%BE%9E%E7%9C%BC%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%EF%BC%9B"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果说：『眼识是我。",
+              "score": 9.461403630313693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E8%AA%AA%EF%BC%9A%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼识是无常的。",
+              "score": 9.461403630313693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.148",
+              "collection": "经藏/相应部_sn",
+              "title": "苦－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼识是苦的。",
+              "score": 9.461403630313693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.148&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E8%8B%A6%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.149",
+              "collection": "经藏/相应部_sn",
+              "title": "无我－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼识是无我的。",
+              "score": 9.461403630313693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.149&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%AD%98%E6%98%AF%E7%84%A1%E6%88%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn25.3",
+              "collection": "经藏/相应部_sn",
+              "title": "识经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼识是无常的、变易、变异；",
+              "score": 9.012308734463232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn25.3&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E8%AE%8A%E6%98%93%E3%80%81%E8%AE%8A%E7%95%B0%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.65",
+              "collection": "经藏/相应部_sn",
+              "title": "三弥提问魔经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有眼，有色，有眼识，有能被眼识所识之法的地方，就有魔或魔的安立；",
+              "score": 8.977504829642543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.65&lang=zh&q=%E7%9C%BC%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E7%9C%BC%EF%BC%8C%E6%9C%89%E8%89%B2%EF%BC%8C%E6%9C%89%E7%9C%BC%E8%AD%98%EF%BC%8C%E6%9C%89%E8%83%BD%E8%A2%AB%E7%9C%BC%E8%AD%98%E6%89%80%E8%AD%98%E4%B9%8B%E6%B3%95%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E6%9C%89%E9%AD%94%E6%88%96%E9%AD%94%E7%9A%84%E5%AE%89%E7%AB%8B%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "耳识",
+          "hits": [
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "耳识非你们的，你们要舍断！",
+              "score": 10.636198301343319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%AD%98%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘耳与声生耳识……（中略）比丘们！",
+              "score": 9.752342235202237,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%B7%A3%E8%80%B3%E8%88%87%E8%81%B2%E7%94%9F%E8%80%B3%E8%AD%98%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "妳们怎么想：耳识是常的，或是无常的呢？",
+              "score": 9.363302311686896,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%B3%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E8%80%B3%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "妳们怎么想：耳识是常的，或是无常的呢？",
+              "score": 9.363302311686896,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%B3%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E8%80%B3%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.65",
+              "collection": "经藏/相应部_sn",
+              "title": "三弥提问魔经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有耳，有声音，有耳识，有能被耳识所识之法的地方，就有魔或魔的安立；",
+              "score": 7.098059107102263,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.65&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%80%B3%EF%BC%8C%E6%9C%89%E8%81%B2%E9%9F%B3%EF%BC%8C%E6%9C%89%E8%80%B3%E8%AD%98%EF%BC%8C%E6%9C%89%E8%83%BD%E8%A2%AB%E8%80%B3%E8%AD%98%E6%89%80%E8%AD%98%E4%B9%8B%E6%B3%95%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E6%9C%89%E9%AD%94%E6%88%96%E9%AD%94%E7%9A%84%E5%AE%89%E7%AB%8B%EF%BC%9B"
+            },
+            {
+              "uid": "an11.118-165",
+              "collection": "经藏/增支部_an",
+              "title": "",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……在眼识上……在耳识上.……在鼻识上.……在舌识上.……在身识上.……在意识上.……。",
+              "score": 5.095034498611756,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.118-165&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E2%80%A6%E2%80%A6%E5%9C%A8%E7%9C%BC%E8%AD%98%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E8%80%B3%E8%AD%98%E4%B8%8A.%E2%80%A6%E2%80%A6%E5%9C%A8%E9%BC%BB%E8%AD%98%E4%B8%8A.%E2%80%A6%E2%80%A6%E5%9C%A8%E8%88%8C%E8%AD%98%E4%B8%8A.%E2%80%A6%E2%80%A6%E5%9C%A8%E8%BA%AB%E8%AD%98%E4%B8%8A.%E2%80%A6%E2%80%A6%E5%9C%A8%E6%84%8F%E8%AD%98%E4%B8%8A.%E2%80%A6%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "就让我只这么作意：「这样，耳是无常的，声音是无常的，耳识是无常的，耳触是无常的，凡以这耳触为缘生起的或乐、或苦、或不苦不乐受也都是无常的。",
+              "score": 4.9867854703200285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%B1%E8%AE%93%E6%88%91%E5%8F%AA%E9%80%99%E9%BA%BC%E4%BD%9C%E6%84%8F%EF%BC%9A%E3%80%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E8%80%B3%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E8%81%B2%E9%9F%B3%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E8%80%B3%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E8%80%B3%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E5%87%A1%E4%BB%A5%E9%80%99%E8%80%B3%E8%A7%B8%E7%82%BA%E7%B7%A3%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%96%E6%A8%82%E3%80%81%E6%88%96%E8%8B%A6%E3%80%81%E6%88%96%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E4%B9%9F%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn18.3",
+              "collection": "经藏/相应部_sn",
+              "title": "识经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当这么看时，已受教导的圣弟子在眼识上厌，……（中略）在耳识上厌……在鼻识上厌……在舌识上厌……在身识上厌……在意识上厌；",
+              "score": 4.3411599287262455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.3&lang=zh&q=%E8%80%B3%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E9%80%99%E9%BA%BC%E7%9C%8B%E6%99%82%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E5%9C%A8%E7%9C%BC%E8%AD%98%E4%B8%8A%E5%8E%AD%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%80%B3%E8%AD%98%E4%B8%8A%E5%8E%AD%E2%80%A6%E2%80%A6%E5%9C%A8%E9%BC%BB%E8%AD%98%E4%B8%8A%E5%8E%AD%E2%80%A6%E2%80%A6%E5%9C%A8%E8%88%8C%E8%AD%98%E4%B8%8A%E5%8E%AD%E2%80%A6%E2%80%A6%E5%9C%A8%E8%BA%AB%E8%AD%98%E4%B8%8A%E5%8E%AD%E2%80%A6%E2%80%A6%E5%9C%A8%E6%84%8F%E8%AD%98%E4%B8%8A%E5%8E%AD%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "鼻识",
+          "hits": [
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在鼻、鼻识……阐陀学友！",
+              "score": 9.675699089247475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E9%BC%BB%E3%80%81%E9%BC%BB%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「鼻识是常的，或是无常的呢？",
+              "score": 9.675699089247475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E9%BC%BB%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「鼻识是常的，或是无常的呢？",
+              "score": 9.675699089247475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E9%BC%BB%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "鼻识非你们的，你们要舍断！",
+              "score": 9.675699089247475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%BC%BB%E8%AD%98%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn35.65",
+              "collection": "经藏/相应部_sn",
+              "title": "三弥提问魔经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有鼻，有气味，有鼻识，有能被鼻识所识之法的地方，就有魔或魔的安立；",
+              "score": 9.64002028084926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.65&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%BC%BB%EF%BC%8C%E6%9C%89%E6%B0%A3%E5%91%B3%EF%BC%8C%E6%9C%89%E9%BC%BB%E8%AD%98%EF%BC%8C%E6%9C%89%E8%83%BD%E8%A2%AB%E9%BC%BB%E8%AD%98%E6%89%80%E8%AD%98%E4%B9%8B%E6%B3%95%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E6%9C%89%E9%AD%94%E6%88%96%E9%AD%94%E7%9A%84%E5%AE%89%E7%AB%8B%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于鼻与气味而生起识，就被名为鼻识；",
+              "score": 9.256251443210322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E9%BC%BB%E8%88%87%E6%B0%A3%E5%91%B3%E8%80%8C%E7%94%9F%E8%B5%B7%E8%AD%98%EF%BC%8C%E5%B0%B1%E8%A2%AB%E5%90%8D%E7%82%BA%E9%BC%BB%E8%AD%98%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于鼻与气味而生起识，就被名为鼻识；",
+              "score": 9.256251443210322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E9%BC%BB%E8%88%87%E6%B0%A3%E5%91%B3%E8%80%8C%E7%94%9F%E8%B5%B7%E8%AD%98%EF%BC%8C%E5%B0%B1%E8%A2%AB%E5%90%8D%E7%82%BA%E9%BC%BB%E8%AD%98%EF%BC%9B"
+            },
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在鼻、鼻识……舍利弗学友！",
+              "score": 9.256251443210322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E9%BC%BB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E9%BC%BB%E3%80%81%E9%BC%BB%E8%AD%98%E2%80%A6%E2%80%A6%E8%88%8D%E5%88%A9%E5%BC%97%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "舌识",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量舌识，不在舌识中思量，不从舌识思量，不思量『舌识是我的』。",
+              "score": 12.764351304175714,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E8%88%8C%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E8%88%8C%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E8%88%8C%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E8%88%8C%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『舌识是无常的。",
+              "score": 9.820973271838557,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E8%88%8C%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.87",
+              "collection": "经藏/相应部_sn",
+              "title": "阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在舌、舌识、能被舌识所识知之法上看见什么、证知什么后，你认为舌、舌识、能被舌识所识知之法：『这不是我的，我不是这个，这不是我的真我。",
+              "score": 9.41176457069467,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.87&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E8%88%8C%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E8%88%8C%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%E4%B8%8A%E7%9C%8B%E8%A6%8B%E4%BB%80%E9%BA%BC%E3%80%81%E8%AD%89%E7%9F%A5%E4%BB%80%E9%BA%BC%E5%BE%8C%EF%BC%8C%E4%BD%A0%E8%AA%8D%E7%82%BA%E8%88%8C%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E8%88%8C%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%EF%BC%9A%E3%80%8E%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%EF%BC%8C%E6%88%91%E4%B8%8D%E6%98%AF%E9%80%99%E5%80%8B%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%E7%9C%9F%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "sn35.87",
+              "collection": "经藏/相应部_sn",
+              "title": "阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在舌、舌识、能被舌识所识知之法上看见灭、证知灭后，我认为舌、舌识、能被舌识所识知之法：『这不是我的，我不是这个，这不是我的真我。",
+              "score": 9.300725600740796,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.87&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E8%88%8C%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E8%88%8C%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%E4%B8%8A%E7%9C%8B%E8%A6%8B%E6%BB%85%E3%80%81%E8%AD%89%E7%9F%A5%E6%BB%85%E5%BE%8C%EF%BC%8C%E6%88%91%E8%AA%8D%E7%82%BA%E8%88%8C%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E8%88%8C%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%EF%BC%9A%E3%80%8E%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%EF%BC%8C%E6%88%91%E4%B8%8D%E6%98%AF%E9%80%99%E5%80%8B%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%E7%9C%9F%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在舌、舌识……阐陀学友！",
+              "score": 8.930897165773368,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E8%88%8C%E3%80%81%E8%88%8C%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「舌识是常的，或是无常的呢？",
+              "score": 8.930897165773368,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E8%88%8C%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「舌识是常的，或是无常的呢？",
+              "score": 8.930897165773368,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E8%88%8C%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舌识非你们的，你们要舍断！",
+              "score": 8.930897165773368,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%88%8C%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%88%8C%E8%AD%98%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "身识",
+          "hits": [
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在身、身识……阐陀学友！",
+              "score": 9.81425832454856,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E8%BA%AB%E3%80%81%E8%BA%AB%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「身识是常的，或是无常的呢？",
+              "score": 9.81425832454856,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E8%BA%AB%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「身识是常的，或是无常的呢？",
+              "score": 9.81425832454856,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E8%BA%AB%E8%AD%98%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.65",
+              "collection": "经藏/相应部_sn",
+              "title": "三弥提问魔经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身，有所触，有身识，有能被身识所识之法的地方，就有魔或魔的安立；",
+              "score": 9.778068583724428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.65&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%EF%BC%8C%E6%9C%89%E6%89%80%E8%A7%B8%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%AD%98%EF%BC%8C%E6%9C%89%E8%83%BD%E8%A2%AB%E8%BA%AB%E8%AD%98%E6%89%80%E8%AD%98%E4%B9%8B%E6%B3%95%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E6%9C%89%E9%AD%94%E6%88%96%E9%AD%94%E7%9A%84%E5%AE%89%E7%AB%8B%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于身与所触而生起识，就被名为身识；",
+              "score": 9.388804048442854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E8%BA%AB%E8%88%87%E6%89%80%E8%A7%B8%E8%80%8C%E7%94%9F%E8%B5%B7%E8%AD%98%EF%BC%8C%E5%B0%B1%E8%A2%AB%E5%90%8D%E7%82%BA%E8%BA%AB%E8%AD%98%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于身与所触而生起识，就被名为身识；",
+              "score": 9.388804048442854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E8%BA%AB%E8%88%87%E6%89%80%E8%A7%B8%E8%80%8C%E7%94%9F%E8%B5%B7%E8%AD%98%EF%BC%8C%E5%B0%B1%E8%A2%AB%E5%90%8D%E7%82%BA%E8%BA%AB%E8%AD%98%EF%BC%9B"
+            },
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你认为身、身识……阐陀学友！",
+              "score": 9.388804048442854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%A0%E8%AA%8D%E7%82%BA%E8%BA%AB%E3%80%81%E8%BA%AB%E8%AD%98%E2%80%A6%E2%80%A6%E9%97%A1%E9%99%80%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在身、身识……舍利弗学友！",
+              "score": 9.388804048442854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E8%BA%AB%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E8%BA%AB%E3%80%81%E8%BA%AB%E8%AD%98%E2%80%A6%E2%80%A6%E8%88%8D%E5%88%A9%E5%BC%97%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "意识",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量意识，不在意识中思量，不从意识思量，不思量『意识是我的』。",
+              "score": 10.301639058373663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E6%84%8F%E8%AD%98%EF%BC%8C%E4%B8%8D%E5%9C%A8%E6%84%8F%E8%AD%98%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E6%84%8F%E8%AD%98%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果说：『意识是我。",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E8%AA%AA%EF%BC%9A%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "sn35.95",
+              "collection": "经藏/相应部_sn",
+              "title": "摩罗迦子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从［所意识到的］法生起，",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.95&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%EF%BC%BB%E6%89%80%E6%84%8F%E8%AD%98%E5%88%B0%E7%9A%84%EF%BC%BD%E6%B3%95%E7%94%9F%E8%B5%B7%EF%BC%8C"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意识是无常的。",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.148",
+              "collection": "经藏/相应部_sn",
+              "title": "苦－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意识是苦的。",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.148&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E8%8B%A6%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.149",
+              "collection": "经藏/相应部_sn",
+              "title": "无我－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意识是无我的。",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.149&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%AD%98%E6%98%AF%E7%84%A1%E6%88%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.234",
+              "collection": "经藏/相应部_sn",
+              "title": "优陀夷经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于意与法而生起意识吗？",
+              "score": 7.926146769034673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.234&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%84%8F%E8%88%87%E6%B3%95%E8%80%8C%E7%94%9F%E8%B5%B7%E6%84%8F%E8%AD%98%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "mn144",
+              "collection": "经藏/中部_mn",
+              "title": "教诫阐陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在意、意识、能被意识所识知之法上看见什么、证知什么后，你认为意、意识、能被意识所识知之法：『这不是我的，我不是这个，这不是我的真我。",
+              "score": 7.595889458006956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn144&lang=zh&q=%E6%84%8F%E8%AD%98&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E6%84%8F%E3%80%81%E6%84%8F%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%8F%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%E4%B8%8A%E7%9C%8B%E8%A6%8B%E4%BB%80%E9%BA%BC%E3%80%81%E8%AD%89%E7%9F%A5%E4%BB%80%E9%BA%BC%E5%BE%8C%EF%BC%8C%E4%BD%A0%E8%AA%8D%E7%82%BA%E6%84%8F%E3%80%81%E6%84%8F%E8%AD%98%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%8F%E8%AD%98%E6%89%80%E8%AD%98%E7%9F%A5%E4%B9%8B%E6%B3%95%EF%BC%9A%E3%80%8E%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%EF%BC%8C%E6%88%91%E4%B8%8D%E6%98%AF%E9%80%99%E5%80%8B%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%E7%9C%9F%E6%88%91%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n6-g3",
+      "sutta": "dn33",
+      "number": 6,
+      "order": 3,
+      "label": "六识身",
+      "members": "眼识、耳识、鼻识、舌识、身识、意识",
+      "member_items": [
+        "眼识",
+        "耳识",
+        "鼻识",
+        "舌识",
+        "身识",
+        "意识"
+      ],
+      "dn34_status": null,
+      "source_text": "六识身：眼识、耳识、鼻识、舌识、身识、意识。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%AD%98%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%AD%98%E3%80%81%E8%80%B3%E8%AD%98%E3%80%81%E9%BC%BB%E8%AD%98%E3%80%81%E8%88%8C%E8%AD%98%E3%80%81%E8%BA%AB%E8%AD%98%E3%80%81%E6%84%8F%E8%AD%98"
+    }
+  ]
+}

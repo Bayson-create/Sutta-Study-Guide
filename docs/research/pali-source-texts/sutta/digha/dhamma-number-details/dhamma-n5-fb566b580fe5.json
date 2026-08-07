@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-fb566b580fe5",
+    "number": 5,
+    "label": "五上分结",
+    "member_items": [
+      "色贪",
+      "无色贪",
+      "慢",
+      "掉举",
+      "无明"
+    ],
+    "group_ids": [
+      "dn33-n5-g8"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五上分结",
+      "色贪",
+      "无色贪",
+      "掉举",
+      "无明"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五上分结」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色贪、无色贪、慢、掉举、无明。[1]\n\n## 所含各法\n### 色贪\n经文将「色贪」列为「五上分结」的一个成员。Early Buddhist 用该名词检索时，在《苦蕴大经》命中：凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。。[3]\n### 无色贪\n经文将「无色贪」列为「五上分结」的一个成员。Early Buddhist 用该名词检索时，在《朋友经》命中：不完成戒而『他将舍断欲贪或色贪或无色贪。。[4]\n### 慢\n经文将「慢」列为「五上分结」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[1]\n### 掉举\n经文将「掉举」列为「五上分结」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有掉举后悔盖；。[5]\n### 无明\n经文将「无明」列为「五上分结」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：行，无明是因，无明是集，无明所生，无明是根源。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五上分结",
+          "text": "五上分结：色贪、无色贪、慢、掉举、无明。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.70",
+          "text": "这是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.70&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn13",
+          "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn13&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.67",
+          "text": "不完成戒而『他将舍断欲贪或色贪或无色贪。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.67&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E6%8D%A8%E6%96%B7%E6%AC%B2%E8%B2%AA%E6%88%96%E8%89%B2%E8%B2%AA%E6%88%96%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有掉举后悔盖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.13",
+          "text": "这是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.170",
+          "text": "这些是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.130",
+          "text": "这些是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.130&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.95-104",
+          "text": "这些是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.95-104&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.115-124",
+          "text": "这些是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.115-124&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.169-178",
+          "text": "这些是五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.169-178&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.26",
+          "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.26&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五上分结",
+          "hits": [
+            {
+              "uid": "an9.70",
+              "collection": "经藏/增支部_an",
+              "title": "上分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.70&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn46.130",
+              "collection": "经藏/相应部_sn",
+              "title": "上分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.130&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn47.95-104",
+              "collection": "经藏/相应部_sn",
+              "title": "上分等经十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.95-104&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn48.115-124",
+              "collection": "经藏/相应部_sn",
+              "title": "暴流经十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.115-124&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn48.169-178",
+              "collection": "经藏/相应部_sn",
+              "title": "暴流经十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五上分结。",
+              "score": 27.66840496175591,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.169-178&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "色贪",
+          "hits": [
+            {
+              "uid": "mn13",
+              "collection": "经藏/中部_mn",
+              "title": "苦蕴大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+              "score": 14.821628541595897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn13&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "sn22.26",
+              "collection": "经藏/相应部_sn",
+              "title": "乐味经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+              "score": 14.821628541595897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.26&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "sn22.57",
+              "collection": "经藏/相应部_sn",
+              "title": "七处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+              "score": 14.821628541595897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "sn35.14",
+              "collection": "经藏/相应部_sn",
+              "title": "正觉以前经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡对于色之欲贪的调伏、欲贪的舍断，这是色的出离。",
+              "score": 14.821628541595897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.14&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%B0%8D%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡关于色之欲贪的调伏、欲贪的舍断者，这是色的出离。",
+              "score": 14.44447617572308,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E9%97%9C%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡关于色之欲贪的调伏、欲贪的舍断者，这是关于色的出离。",
+              "score": 13.74496517142371,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E9%97%9C%E6%96%BC%E8%89%B2%E4%B9%8B%E6%AC%B2%E8%B2%AA%E7%9A%84%E8%AA%BF%E4%BC%8F%E3%80%81%E6%AC%B2%E8%B2%AA%E7%9A%84%E6%8D%A8%E6%96%B7%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E9%97%9C%E6%96%BC%E8%89%B2%E7%9A%84%E5%87%BA%E9%9B%A2%E3%80%82"
+            },
+            {
+              "uid": "an9.70",
+              "collection": "经藏/增支部_an",
+              "title": "上分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 13.695456794716572,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.70&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 13.695456794716572,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "无色贪",
+          "hits": [
+            {
+              "uid": "an6.67",
+              "collection": "经藏/增支部_an",
+              "title": "朋友经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成戒而『他将舍断欲贪或色贪或无色贪。",
+              "score": 15.55218230248956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.67&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E6%8D%A8%E6%96%B7%E6%AC%B2%E8%B2%AA%E6%88%96%E8%89%B2%E8%B2%AA%E6%88%96%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%82"
+            },
+            {
+              "uid": "an6.67",
+              "collection": "经藏/增支部_an",
+              "title": "朋友经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成戒而『他将舍断欲贪或色贪或无色贪。",
+              "score": 15.55218230248956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.67&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E6%8D%A8%E6%96%B7%E6%AC%B2%E8%B2%AA%E6%88%96%E8%89%B2%E8%B2%AA%E6%88%96%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%82"
+            },
+            {
+              "uid": "an9.70",
+              "collection": "经藏/增支部_an",
+              "title": "上分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.70&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn46.130",
+              "collection": "经藏/相应部_sn",
+              "title": "上分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.130&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn47.95-104",
+              "collection": "经藏/相应部_sn",
+              "title": "上分等经十则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色贪、无色贪、慢、掉举、无明，比丘们！",
+              "score": 14.73363249956607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.95-104&lang=zh&q=%E7%84%A1%E8%89%B2%E8%B2%AA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "掉举",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有掉举后悔盖；",
+              "score": 10.02534085625934,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "an4.61",
+              "collection": "经藏/增支部_an",
+              "title": "有益的行为经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『掉举后悔是心的小杂染。",
+              "score": 9.549478121338911,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.61&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E6%98%AF%E5%BF%83%E7%9A%84%E5%B0%8F%E9%9B%9C%E6%9F%93%E3%80%82"
+            },
+            {
+              "uid": "an4.61",
+              "collection": "经藏/增支部_an",
+              "title": "有益的行为经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『掉举后悔是心的小杂染。",
+              "score": 9.549478121338911,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.61&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E6%98%AF%E5%BF%83%E7%9A%84%E5%B0%8F%E9%9B%9C%E6%9F%93%E3%80%82"
+            },
+            {
+              "uid": "an6.55",
+              "collection": "经藏/增支部_an",
+              "title": "受那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "过于发动活力，则导向掉举；",
+              "score": 9.549478121338911,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.55&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%81%8E%E6%96%BC%E7%99%BC%E5%8B%95%E6%B4%BB%E5%8A%9B%EF%BC%8C%E5%89%87%E5%B0%8E%E5%90%91%E6%8E%89%E8%88%89%EF%BC%9B"
+            },
+            {
+              "uid": "an6.116",
+              "collection": "经藏/增支部_an",
+              "title": "掉举经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "掉举、不自制、放逸，比丘们！",
+              "score": 9.1167428889985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.116&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8E%89%E8%88%89%E3%80%81%E4%B8%8D%E8%87%AA%E5%88%B6%E3%80%81%E6%94%BE%E9%80%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.12",
+              "collection": "经藏/增支部_an",
+              "title": "五支经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "掉举后悔、疑惑，全都不被发现。",
+              "score": 9.1167428889985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.12&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E3%80%81%E7%96%91%E6%83%91%EF%BC%8C%E5%85%A8%E9%83%BD%E4%B8%8D%E8%A2%AB%E7%99%BC%E7%8F%BE%E3%80%82"
+            },
+            {
+              "uid": "an5.51",
+              "collection": "经藏/增支部_an",
+              "title": "障碍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "掉举后悔是心的障碍与压制、慧的减弱之盖；",
+              "score": 8.359151851524876,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E6%98%AF%E5%BF%83%E7%9A%84%E9%9A%9C%E7%A4%99%E8%88%87%E5%A3%93%E5%88%B6%E3%80%81%E6%85%A7%E7%9A%84%E6%B8%9B%E5%BC%B1%E4%B9%8B%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "sn46.39",
+              "collection": "经藏/相应部_sn",
+              "title": "树木经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "掉举后悔是心的障碍与压制、慧的减弱之盖；",
+              "score": 8.359151851524876,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.39&lang=zh&q=%E6%8E%89%E8%88%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E6%98%AF%E5%BF%83%E7%9A%84%E9%9A%9C%E7%A4%99%E8%88%87%E5%A3%93%E5%88%B6%E3%80%81%E6%85%A7%E7%9A%84%E6%B8%9B%E5%BC%B1%E4%B9%8B%E8%93%8B%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "无明",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "sn12.11",
+              "collection": "经藏/相应部_sn",
+              "title": "食经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            },
+            {
+              "uid": "sn12.35",
+              "collection": "经藏/相应部_sn",
+              "title": "无明为缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明为缘经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.35&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%82%BA%E7%B7%A3%E7%B6%93"
+            },
+            {
+              "uid": "sn12.36",
+              "collection": "经藏/相应部_sn",
+              "title": "无明为缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明为缘经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.36&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%82%BA%E7%B7%A3%E7%B6%93"
+            },
+            {
+              "uid": "sn22.113",
+              "collection": "经藏/相应部_sn",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.113&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            },
+            {
+              "uid": "sn45.1",
+              "collection": "经藏/相应部_sn",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.1&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g8",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 8,
+      "label": "五上分结",
+      "members": "色贪、无色贪、慢、掉举、无明",
+      "member_items": [
+        "色贪",
+        "无色贪",
+        "慢",
+        "掉举",
+        "无明"
+      ],
+      "dn34_status": null,
+      "source_text": "五上分结：色贪、无色贪、慢、掉举、无明。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%B2%AA%E3%80%81%E7%84%A1%E8%89%B2%E8%B2%AA%E3%80%81%E6%85%A2%E3%80%81%E6%8E%89%E8%88%89%E3%80%81%E7%84%A1%E6%98%8E"
+    }
+  ]
+}

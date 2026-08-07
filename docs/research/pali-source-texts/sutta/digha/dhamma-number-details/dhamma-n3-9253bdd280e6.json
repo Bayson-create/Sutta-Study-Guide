@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-9253bdd280e6",
+    "number": 3,
+    "label": "三住",
+    "member_items": [
+      "天住",
+      "梵住",
+      "圣住"
+    ],
+    "group_ids": [
+      "dn33-n3-g59"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三住",
+      "天住",
+      "梵住",
+      "圣住"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三住」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：天住、梵住、圣住。[1]\n\n## 所含各法\n### 天住\n经文将「天住」列为「三住」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三住：天住、梵住、圣住。。[1]\n### 梵住\n经文将「梵住」列为「三住」的一个成员。Early Buddhist 用该名词检索时，在《慈悲经》命中：于此之教，是云梵住。。[3]\n### 圣住\n经文将「圣住」列为「三住」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三住：天住、梵住、圣住。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 15 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三住",
+          "text": "三住：天住、梵住、圣住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三住：天住、梵住、圣住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BD%8F%EF%BC%9A%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp9",
+          "text": "于此之教，是云梵住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=%E6%96%BC%E6%AD%A4%E4%B9%8B%E6%95%99%EF%BC%8C%E6%98%AF%E4%BA%91%E6%A2%B5%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · snp1.8",
+          "text": "于此之教，是云梵住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=%E6%96%BC%E6%AD%A4%E4%B9%8B%E6%95%99%EF%BC%8C%E6%98%AF%E4%BA%91%E6%A2%B5%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp9",
+          "text": "应当守住(慈)念，这就是所谓的「梵住」。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%87%89%E7%95%B6%E5%AE%88%E4%BD%8F%28%E6%85%88%29%E5%BF%B5%EF%BC%8C%E9%80%99%E5%B0%B1%E6%98%AF%E6%89%80%E8%AC%82%E7%9A%84%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · snp1.8",
+          "text": "应当守住(慈)念，这就是所谓的「梵住」。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%87%89%E7%95%B6%E5%AE%88%E4%BD%8F%28%E6%85%88%29%E5%BF%B5%EF%BC%8C%E9%80%99%E5%B0%B1%E6%98%AF%E6%89%80%E8%AC%82%E7%9A%84%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.192",
+          "text": "他修习这四梵住后，以身体的崩解，死后往生到梵天世界，兜那！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.192&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BF%AE%E7%BF%92%E9%80%99%E5%9B%9B%E6%A2%B5%E4%BD%8F%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%A2%B5%E5%A4%A9%E4%B8%96%E7%95%8C%EF%BC%8C%E5%85%9C%E9%82%A3%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn54.12",
+          "text": "「圣住」、「梵住」、「如来住」者，那是入出息念之定，当正确地说时，他能说：「圣住」、「梵住」、「如来住」。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.12&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.95",
+          "text": "那时，比丘们住于梵住，即：在喜悦心解脱中，当已欢悦时，则喜被生；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.95&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%E4%BD%8F%E6%96%BC%E6%A2%B5%E4%BD%8F%EF%BC%8C%E5%8D%B3%EF%BC%9A%E5%9C%A8%E5%96%9C%E6%82%85%E5%BF%83%E8%A7%A3%E8%84%AB%E4%B8%AD%EF%BC%8C%E7%95%B6%E5%B7%B2%E6%AD%A1%E6%82%85%E6%99%82%EF%BC%8C%E5%89%87%E5%96%9C%E8%A2%AB%E7%94%9F%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn54.11",
+          "text": "当正确地说时，凡能说：『圣住』、『梵住』、『如来住』者，那是入出息念之定，当正确地说时，他能说：『圣住』、『梵住』、『如来住』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.11&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E5%87%A1%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn54.12",
+          "text": "当正确地说时，凡能说：「圣住」、「梵住」、「如来住」者，那是入出息念之定，当正确地说时，他能说：「圣住」、「梵住」、「如来住」。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.12&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E5%87%A1%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "本生经》（Jataka）：这是南传佛教流传最广、最受村民热爱的经典。里面详细记录了释迦牟尼佛在前世作为菩萨时，化身为国王、学者甚至动物，为了利益众生而慷慨布施、甚至不惜牺牲生命的伟大故事。 - 《佛种姓经》（Buddhavamsa）：详细记录了过去二十四佛的生平，以及释迦牟尼佛在过去生中如何遇到这些佛、如何发愿成佛、并受到授记的经历。上座部不仅不排斥菩萨，反而同样将“菩萨行”视为佛教历史上最神圣的传承。 ## 4. 无处不在的慈悲：四梵住与“慈心禅” 说上座部“冷漠”是极大的误解。在实际修行中，上座部极其重视“慈、悲、喜、舍”四无量心（四梵住）。 - 慈心禅（Metta Bhavana）：这是南传上座部最核心、最普及的禅修方法之一。修行者每天都要系统地将慈爱、和平、愿他人没有痛苦的愿望，从自身扩散到亲人、朋友、甚至敌人和宇宙中的一切众生。这种润物细无声的慈悲，构成了东南亚国家平民社会善良、温和的文化基调。 --- ## 💡 总结 世界佛教徒联谊会（WFB）早在1950年就已经达成共识：在现代佛教话语体系中，应当完全废除“小乘”这个带有贬义和误导性的词汇。 那些所谓的“小乘”想法，只是当年印度某些部派中少数人的僵化偏见。真正的南传上座部，是一条既有务实解脱（阿罗汉路径），又包含了对菩萨行（成",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "七道品的关系** 四神足是三十七道品的第三组，居四念处与五根之间，是从念处到根力的过渡。其中，欲（意志）是一切修行的起点，无强烈的修道意欲（chanda），道品难以完成。 --- # 二十四、止观（Samatha-vipassanā） **止（Samatha）** 止即心的平静、稳定、一境性（ekaggatā）。修止的目标是培育禅那（jhāna）。《清净道论》列出四十种业处（kammaṭṭhāna），包括安般念（出入息观）、四梵住（慈悲喜舍）、十遍处（kasiṇa）、不净观等。 止成就的标志：近行定（upacāra-samādhi）或安止定（appanā-samādhi，即禅那）。四色界禅（初禅至第四禅）和四无色界禅（空无边处至非想非非想处）是止的完整成就。 **观（Vipassanā）** 观是以智如实观察五蕴（名色）的无常、苦、无我三相（三法印）。观禅的次第即是七清净后五清净加十六观智的完整架构。观智从名色分别智开始，经缘摄受智、思惟智、生灭随观智、坏灭随观智……直至道智和果智。 **止观的关系** 阿姜查：\"禅坐就如同一根木头，内观和审视是木头的一端，平静与专注则是另一端。如果你举起整块木头，两端必会同时被举起。\" 两条修行路线： - 止观行者（samatha-yānika",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "）：身体与心理上直接的痛苦感受； - **行苦**（Saṅkhāra-dukkhatā）：一切有为法必须持续被\"制造、维持\"才能存在的负担性质； - **坏苦**（Vipariṇāma-dukkhatā）：因变异、崩坏而带来的痛苦。 雷迪大长老依次分析**梵天界、天界、人间、以及四恶趣**各自承受这三重苦的具体样态： - **梵天**：因禅定力强，行苦极重（须以极大的努力维持梵天的禅定境界，\"百人中难有一人能舍弃欲乐、不顾生死地修习梵住而后生梵天\"），行苦深重但苦苦较轻，坏苦（梵天寿尽而堕落，甚至可能直接堕入阿鼻地狱）姗姗来迟但极为惨烈。 - **天界**：行苦较轻（布施持戒比修禅定容易千倍），但欲贪之火燃烧全身，苦苦深重；寿命一尽便骤然堕落，坏苦来得又急又快，\"如烈火骤然被浇灭\"。 - **人间**：三种苦都极为深重——受孕、出生之苦，寒暑劳作、谋生纳税之苦，六根门\"如魔鬼一般\"需要不断供养才能安抚的苦，以及随时可能死亡的坏苦。雷迪大长老细数了人间苦的种种具体情态：耕作之劳、事君之劳、养家之劳、维持体面之劳，乃至外道苦行者\"近火受热、近水受寒\"式的无益苦行，皆在此列。 - **四恶趣**（地狱、饿鬼、阿修罗、畜生）：苦苦最为剧烈——地狱众生\"骨肉脏腑俱化为炽热的红炭，皮肤中窜出条条火舌\"，历经千百",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "标志而把握禅相便睁开眼睛，那么他一看见尸体，就会觉得尸体仿佛站起来威胁自己……”（VI.56–58） 克服这些困难的方法： 1. 不要让恐惧阻止你 2. 站在安全的距离 3. 使用正念强化 4. 可能需要教师的进一步指导 ### 污秽观与禅定的关系 污秽观的定力范围也有明确限制：原文说明十种污秽可达到近行定及初禅，但不能据此概括为通向更高禅那；相关说明见 VI.68 及其后文。 > “因此，当禅相这样消失后，比丘应在夜间住处或白天住处坐下，首先观察自己走来和走去的道路，一直观察到当前盘腿而坐的地方；应当如此修习……”（VI.62） 其在本章中可确认的作用是： 1. 依本章所述对治身体美的贪欲 2. 依不净相及其发展方法进行观察 3. “为进一步的灵性发展创造基础”属于编者的修行脉络归纳 ### 十种污秽相的差别与章末论证（VI.69–94） 原文在 VI.69–80 逐一说明青瘀、脓烂、断裂、啮食、散裂、斫裂散、血涂、虫啮和骨骼等相如何替换“膨胀”相的名称与观察方式：学习相与反标记的显现各有差异，例如青瘀相呈斑驳色，脓烂相似有流动而反标记静止，断裂/散裂相分别显出裂口或间隙，而骨骼相必须以“骨骼”的不净个体特征把握，不能只当作白色遍来观察（VI.69–80）。 原文还说明：十种污秽虽有十",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/bicameral-mind-origin.md",
+          "text": "的危险**： ``` 音乐产生的喜悦 ↓ 对持续喜悦的渴望 ↓ 对音乐的执着 ↓ = 痛苦的基础 ``` **经典参照：SN 46.51《滋养经》(Āhāra Sutta)** ``` SN 46.51 讨论五盖与七觉支如何被\"滋养\"或\"削弱\"。 它能支持一个较谨慎的说法：心理状态依条件增强或衰退； 但它并未直接讨论音乐，也不能被当作音乐心理学的原典引文。 ``` #### 📖【清净道论对应】 **清净道论第九章《梵住》(Brahmavihāras)** Vism. IX 主要讨论慈、悲、喜、舍四梵住，并不提供\"音乐可以用于禅修\"的明确教义。因此这里应改为谨慎解释： ``` 音乐和诗歌可以影响心的情绪与注意， 但佛教修行的核心不是外部刺激， 而是以正念、定和慧训练心。 ``` **这对诗歌的力量的解释**： Jaynes 说诗歌绕过左半球的逻辑，直接诉诸右半球。 从佛教心理学角度看，诗歌的力量可能来自： 1. **隐喻的准确性** —— 指向真实 2. **节奏的节奏** —— 使心稳定 3. **情感的真实性** —— 与听者的核心关切相共鸣 但所有这些都涉及**整个心灵**（不仅是\"右半球\"）的参与，而且： - 伟大的诗歌需要**有意识的创作** - 对诗歌的深",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三住",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三住：天住、梵住、圣住。",
+              "score": 13.34302296732179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BD%8F%EF%BC%9A%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "天住",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三住：天住、梵住、圣住。",
+              "score": 13.34302296732179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A4%A9%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BD%8F%EF%BC%9A%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "梵住",
+          "hits": [
+            {
+              "uid": "kp9",
+              "collection": "经藏/小部_kn",
+              "title": "慈悲经",
+              "author": "Wuxing",
+              "translator": "wuxing",
+              "text": "于此之教，是云梵住。",
+              "score": 11.112689755056865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=%E6%96%BC%E6%AD%A4%E4%B9%8B%E6%95%99%EF%BC%8C%E6%98%AF%E4%BA%91%E6%A2%B5%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "snp1.8",
+              "collection": "经藏/小部_kn",
+              "title": "慈悲经",
+              "author": "Wuxing",
+              "translator": "wuxing",
+              "text": "于此之教，是云梵住。",
+              "score": 11.112689755056865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=%E6%96%BC%E6%AD%A4%E4%B9%8B%E6%95%99%EF%BC%8C%E6%98%AF%E4%BA%91%E6%A2%B5%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三住：天住、梵住、圣住。",
+              "score": 10.105545213338766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BD%8F%EF%BC%9A%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "kp9",
+              "collection": "经藏/小部_kn",
+              "title": "慈经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "应当守住(慈)念，这就是所谓的「梵住」。",
+              "score": 8.238829659974874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%87%89%E7%95%B6%E5%AE%88%E4%BD%8F%28%E6%85%88%29%E5%BF%B5%EF%BC%8C%E9%80%99%E5%B0%B1%E6%98%AF%E6%89%80%E8%AC%82%E7%9A%84%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%82"
+            },
+            {
+              "uid": "snp1.8",
+              "collection": "经藏/小部_kn",
+              "title": "慈经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "应当守住(慈)念，这就是所谓的「梵住」。",
+              "score": 8.238829659974874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%87%89%E7%95%B6%E5%AE%88%E4%BD%8F%28%E6%85%88%29%E5%BF%B5%EF%BC%8C%E9%80%99%E5%B0%B1%E6%98%AF%E6%89%80%E8%AC%82%E7%9A%84%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%82"
+            },
+            {
+              "uid": "an5.192",
+              "collection": "经藏/增支部_an",
+              "title": "兜那婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他修习这四梵住后，以身体的崩解，死后往生到梵天世界，兜那！",
+              "score": 7.671958171457337,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.192&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BF%AE%E7%BF%92%E9%80%99%E5%9B%9B%E6%A2%B5%E4%BD%8F%E5%BE%8C%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%A2%B5%E5%A4%A9%E4%B8%96%E7%95%8C%EF%BC%8C%E5%85%9C%E9%82%A3%EF%BC%81"
+            },
+            {
+              "uid": "sn54.12",
+              "collection": "经藏/相应部_sn",
+              "title": "会困惑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「圣住」、「梵住」、「如来住」者，那是入出息念之定，当正确地说时，他能说：「圣住」、「梵住」、「如来住」。",
+              "score": 6.936563753722718,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.12&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E3%80%82"
+            },
+            {
+              "uid": "an3.95",
+              "collection": "经藏/增支部_an",
+              "title": "团体经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，比丘们住于梵住，即：在喜悦心解脱中，当已欢悦时，则喜被生；",
+              "score": 6.743928159435847,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.95&lang=zh&q=%E6%A2%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%E4%BD%8F%E6%96%BC%E6%A2%B5%E4%BD%8F%EF%BC%8C%E5%8D%B3%EF%BC%9A%E5%9C%A8%E5%96%9C%E6%82%85%E5%BF%83%E8%A7%A3%E8%84%AB%E4%B8%AD%EF%BC%8C%E7%95%B6%E5%B7%B2%E6%AD%A1%E6%82%85%E6%99%82%EF%BC%8C%E5%89%87%E5%96%9C%E8%A2%AB%E7%94%9F%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "圣住",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三住：天住、梵住、圣住。",
+              "score": 11.837084368037187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BD%8F%EF%BC%9A%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn54.12",
+              "collection": "经藏/相应部_sn",
+              "title": "会困惑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「圣住」、「梵住」、「如来住」者，那是入出息念之定，当正确地说时，他能说：「圣住」、「梵住」、「如来住」。",
+              "score": 8.125112365902392,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.12&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E3%80%82"
+            },
+            {
+              "uid": "sn54.11",
+              "collection": "经藏/相应部_sn",
+              "title": "一奢能伽罗经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当正确地说时，凡能说：『圣住』、『梵住』、『如来住』者，那是入出息念之定，当正确地说时，他能说：『圣住』、『梵住』、『如来住』。",
+              "score": 7.1274694382653285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.11&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E5%87%A1%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn54.11",
+              "collection": "经藏/相应部_sn",
+              "title": "一奢能伽罗经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当正确地说时，凡能说：『圣住』、『梵住』、『如来住』者，那是入出息念之定，当正确地说时，他能说：『圣住』、『梵住』、『如来住』。",
+              "score": 7.1274694382653285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.11&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E5%87%A1%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8E%E8%81%96%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E6%A2%B5%E4%BD%8F%E3%80%8F%E3%80%81%E3%80%8E%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn54.12",
+              "collection": "经藏/相应部_sn",
+              "title": "会困惑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当正确地说时，凡能说：「圣住」、「梵住」、「如来住」者，那是入出息念之定，当正确地说时，他能说：「圣住」、「梵住」、「如来住」。",
+              "score": 7.1274694382653285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.12&lang=zh&q=%E8%81%96%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E5%87%A1%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E4%B9%8B%E5%AE%9A%EF%BC%8C%E7%95%B6%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AA%AA%E6%99%82%EF%BC%8C%E4%BB%96%E8%83%BD%E8%AA%AA%EF%BC%9A%E3%80%8C%E8%81%96%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E6%A2%B5%E4%BD%8F%E3%80%8D%E3%80%81%E3%80%8C%E5%A6%82%E4%BE%86%E4%BD%8F%E3%80%8D%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "本生经》（Jataka）：这是南传佛教流传最广、最受村民热爱的经典。里面详细记录了释迦牟尼佛在前世作为菩萨时，化身为国王、学者甚至动物，为了利益众生而慷慨布施、甚至不惜牺牲生命的伟大故事。 - 《佛种姓经》（Buddhavamsa）：详细记录了过去二十四佛的生平，以及释迦牟尼佛在过去生中如何遇到这些佛、如何发愿成佛、并受到授记的经历。上座部不仅不排斥菩萨，反而同样将“菩萨行”视为佛教历史上最神圣的传承。 ## 4. 无处不在的慈悲：四梵住与“慈心禅” 说上座部“冷漠”是极大的误解。在实际修行中，上座部极其重视“慈、悲、喜、舍”四无量心（四梵住）。 - 慈心禅（Metta Bhavana）：这是南传上座部最核心、最普及的禅修方法之一。修行者每天都要系统地将慈爱、和平、愿他人没有痛苦的愿望，从自身扩散到亲人、朋友、甚至敌人和宇宙中的一切众生。这种润物细无声的慈悲，构成了东南亚国家平民社会善良、温和的文化基调。 --- ## 💡 总结 世界佛教徒联谊会（WFB）早在1950年就已经达成共识：在现代佛教话语体系中，应当完全废除“小乘”这个带有贬义和误导性的词汇。 那些所谓的“小乘”想法，只是当年印度某些部派中少数人的僵化偏见。真正的南传上座部，是一条既有务实解脱（阿罗汉路径），又包含了对菩萨行（成",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site",
+          "query": "梵住"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "七道品的关系** 四神足是三十七道品的第三组，居四念处与五根之间，是从念处到根力的过渡。其中，欲（意志）是一切修行的起点，无强烈的修道意欲（chanda），道品难以完成。 --- # 二十四、止观（Samatha-vipassanā） **止（Samatha）** 止即心的平静、稳定、一境性（ekaggatā）。修止的目标是培育禅那（jhāna）。《清净道论》列出四十种业处（kammaṭṭhāna），包括安般念（出入息观）、四梵住（慈悲喜舍）、十遍处（kasiṇa）、不净观等。 止成就的标志：近行定（upacāra-samādhi）或安止定（appanā-samādhi，即禅那）。四色界禅（初禅至第四禅）和四无色界禅（空无边处至非想非非想处）是止的完整成就。 **观（Vipassanā）** 观是以智如实观察五蕴（名色）的无常、苦、无我三相（三法印）。观禅的次第即是七清净后五清净加十六观智的完整架构。观智从名色分别智开始，经缘摄受智、思惟智、生灭随观智、坏灭随观智……直至道智和果智。 **止观的关系** 阿姜查：\"禅坐就如同一根木头，内观和审视是木头的一端，平静与专注则是另一端。如果你举起整块木头，两端必会同时被举起。\" 两条修行路线： - 止观行者（samatha-yānika",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site",
+          "query": "梵住"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "）：身体与心理上直接的痛苦感受； - **行苦**（Saṅkhāra-dukkhatā）：一切有为法必须持续被\"制造、维持\"才能存在的负担性质； - **坏苦**（Vipariṇāma-dukkhatā）：因变异、崩坏而带来的痛苦。 雷迪大长老依次分析**梵天界、天界、人间、以及四恶趣**各自承受这三重苦的具体样态： - **梵天**：因禅定力强，行苦极重（须以极大的努力维持梵天的禅定境界，\"百人中难有一人能舍弃欲乐、不顾生死地修习梵住而后生梵天\"），行苦深重但苦苦较轻，坏苦（梵天寿尽而堕落，甚至可能直接堕入阿鼻地狱）姗姗来迟但极为惨烈。 - **天界**：行苦较轻（布施持戒比修禅定容易千倍），但欲贪之火燃烧全身，苦苦深重；寿命一尽便骤然堕落，坏苦来得又急又快，\"如烈火骤然被浇灭\"。 - **人间**：三种苦都极为深重——受孕、出生之苦，寒暑劳作、谋生纳税之苦，六根门\"如魔鬼一般\"需要不断供养才能安抚的苦，以及随时可能死亡的坏苦。雷迪大长老细数了人间苦的种种具体情态：耕作之劳、事君之劳、养家之劳、维持体面之劳，乃至外道苦行者\"近火受热、近水受寒\"式的无益苦行，皆在此列。 - **四恶趣**（地狱、饿鬼、阿修罗、畜生）：苦苦最为剧烈——地狱众生\"骨肉脏腑俱化为炽热的红炭，皮肤中窜出条条火舌\"，历经千百",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site",
+          "query": "梵住"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "标志而把握禅相便睁开眼睛，那么他一看见尸体，就会觉得尸体仿佛站起来威胁自己……”（VI.56–58） 克服这些困难的方法： 1. 不要让恐惧阻止你 2. 站在安全的距离 3. 使用正念强化 4. 可能需要教师的进一步指导 ### 污秽观与禅定的关系 污秽观的定力范围也有明确限制：原文说明十种污秽可达到近行定及初禅，但不能据此概括为通向更高禅那；相关说明见 VI.68 及其后文。 > “因此，当禅相这样消失后，比丘应在夜间住处或白天住处坐下，首先观察自己走来和走去的道路，一直观察到当前盘腿而坐的地方；应当如此修习……”（VI.62） 其在本章中可确认的作用是： 1. 依本章所述对治身体美的贪欲 2. 依不净相及其发展方法进行观察 3. “为进一步的灵性发展创造基础”属于编者的修行脉络归纳 ### 十种污秽相的差别与章末论证（VI.69–94） 原文在 VI.69–80 逐一说明青瘀、脓烂、断裂、啮食、散裂、斫裂散、血涂、虫啮和骨骼等相如何替换“膨胀”相的名称与观察方式：学习相与反标记的显现各有差异，例如青瘀相呈斑驳色，脓烂相似有流动而反标记静止，断裂/散裂相分别显出裂口或间隙，而骨骼相必须以“骨骼”的不净个体特征把握，不能只当作白色遍来观察（VI.69–80）。 原文还说明：十种污秽虽有十",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E4%BD%8F&scope=site",
+          "query": "天住"
+        },
+        {
+          "source": "docs/research/psychology/bicameral-mind-origin.md",
+          "heading": "站内搜索命中",
+          "text": "的危险**： ``` 音乐产生的喜悦 ↓ 对持续喜悦的渴望 ↓ 对音乐的执着 ↓ = 痛苦的基础 ``` **经典参照：SN 46.51《滋养经》(Āhāra Sutta)** ``` SN 46.51 讨论五盖与七觉支如何被\"滋养\"或\"削弱\"。 它能支持一个较谨慎的说法：心理状态依条件增强或衰退； 但它并未直接讨论音乐，也不能被当作音乐心理学的原典引文。 ``` #### 📖【清净道论对应】 **清净道论第九章《梵住》(Brahmavihāras)** Vism. IX 主要讨论慈、悲、喜、舍四梵住，并不提供\"音乐可以用于禅修\"的明确教义。因此这里应改为谨慎解释： ``` 音乐和诗歌可以影响心的情绪与注意， 但佛教修行的核心不是外部刺激， 而是以正念、定和慧训练心。 ``` **这对诗歌的力量的解释**： Jaynes 说诗歌绕过左半球的逻辑，直接诉诸右半球。 从佛教心理学角度看，诗歌的力量可能来自： 1. **隐喻的准确性** —— 指向真实 2. **节奏的节奏** —— 使心稳定 3. **情感的真实性** —— 与听者的核心关切相共鸣 但所有这些都涉及**整个心灵**（不仅是\"右半球\"）的参与，而且： - 伟大的诗歌需要**有意识的创作** - 对诗歌的深",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site",
+          "query": "梵住"
+        },
+        {
+          "source": "docs/research/psychology/adler-inferiority-superiority.md",
+          "heading": "站内搜索命中",
+          "text": "业决定。这样的人反而会在职业上表现得更为放松与有效。 --- ## 第十一章 个体与社会群体 ### 阿德勒的核心主张 - **社交兴趣**（Gemeinschaftsgefühl）是心理健康的核心指标 - 一个健康的人应该关心他人的福祉，而非仅仅自己的利益 - 社交兴趣需要从早期就培养 - 没有社交兴趣的人容易陷入神经官能症、犯罪等心理问题 ### 巴利三藏主题参照（已校订） **《增支部》和《相应部》中关于慈、悲、善行与梵住的经群**：佛陀论述了**慈心**（metta）与**悲心**（karuna）的修习——对所有众生的无条件的爱与同情。这不是道德义务，而是通过修习而自然生起的心理状态。 **《长部·第三十一经·善生经》（DN 31, Sigalovada Sutta）及《经集·檀尼耶经》**：佛陀与檀尼耶的对话中，佛陀指出，无论一个人在社会中的位置如何，**与他人的联系与相互支持**是生命中的基本事实。 ### 《清净道论》主题参照（已校订） 觉音详细论述了**四种梵行**（Brahmavihāra）： - **慈心**（mettā）：对所有众生的友善之心 - **悲心**（karuna）：对他人的同情与帮助的愿望 - **喜心**（mudita）：为他人的成功而高兴 - *",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%A2%B5%E4%BD%8F&scope=site",
+          "query": "梵住"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g59",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 59,
+      "label": "三住",
+      "members": "天住、梵住、圣住",
+      "member_items": [
+        "天住",
+        "梵住",
+        "圣住"
+      ],
+      "dn34_status": null,
+      "source_text": "三住：天住、梵住、圣住。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A4%A9%E4%BD%8F%E3%80%81%E6%A2%B5%E4%BD%8F%E3%80%81%E8%81%96%E4%BD%8F"
+    }
+  ]
+}

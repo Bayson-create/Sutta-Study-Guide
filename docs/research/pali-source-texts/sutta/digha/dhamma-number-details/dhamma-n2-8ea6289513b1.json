@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n2-8ea6289513b1",
+    "number": 2,
+    "label": "名与色",
+    "member_items": [
+      "名与色"
+    ],
+    "group_ids": [
+      "dn33-n2-g1",
+      "dn34-n2-g3"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "名与色"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「名与色」属于 2 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：名与色。[1]\n- DN34：名与色。[2]\n\n## 所含各法\n### 名与色\n经文将「名与色」列为「名与色」的一个成员。Early Buddhist 用该名词检索时，在《问童子》命中：名与色。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 名与色",
+          "text": "名与色。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%90%8D%E8%88%87%E8%89%B2"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 名与色",
+          "text": "（三）哪些是应该被遍知的二法呢？名与色，这些是应该被遍知的二法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%90%8D%E8%88%87%E8%89%B2"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp4",
+          "text": "名与色。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%90%8D%E8%88%87%E8%89%B2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "名与色。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "名与色，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.27",
+          "text": "名与色在何处被破坏无余？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%E5%9C%A8%E4%BD%95%E8%99%95%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.27",
+          "text": "在这里名与色被破坏无余。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn11",
+          "text": "在哪里名与色，被破灭无余？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E5%93%AA%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E8%A2%AB%E7%A0%B4%E6%BB%85%E7%84%A1%E9%A4%98%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn11",
+          "text": "在这里名与色，被破灭无余，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E8%A2%AB%E7%A0%B4%E6%BB%85%E7%84%A1%E9%A4%98%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.23",
+          "text": "所有名与色之处，被破坏无余，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.23&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%89%80%E6%9C%89%E5%90%8D%E8%88%87%E8%89%B2%E4%B9%8B%E8%99%95%EF%BC%8C%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%EF%BC%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "名与色",
+          "hits": [
+            {
+              "uid": "kp4",
+              "collection": "经藏/小部_kn",
+              "title": "问童子",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "名与色。",
+              "score": 14.827880165766118,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%90%8D%E8%88%87%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名与色。",
+              "score": 14.827880165766118,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名与色，比丘们！",
+              "score": 13.186512730631906,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn1.27",
+              "collection": "经藏/相应部_sn",
+              "title": "溪流经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名与色在何处被破坏无余？",
+              "score": 12.494950465225104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%90%8D%E8%88%87%E8%89%B2%E5%9C%A8%E4%BD%95%E8%99%95%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%EF%BC%9F"
+            },
+            {
+              "uid": "sn1.27",
+              "collection": "经藏/相应部_sn",
+              "title": "溪流经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里名与色被破坏无余。",
+              "score": 12.494950465225104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.27&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%E3%80%82"
+            },
+            {
+              "uid": "dn11",
+              "collection": "经藏/长部_dn",
+              "title": "给哇得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在哪里名与色，被破灭无余？",
+              "score": 11.872311068021723,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E5%93%AA%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E8%A2%AB%E7%A0%B4%E6%BB%85%E7%84%A1%E9%A4%98%EF%BC%9F"
+            },
+            {
+              "uid": "dn11",
+              "collection": "经藏/长部_dn",
+              "title": "给哇得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里名与色，被破灭无余，",
+              "score": 11.872311068021723,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%8D%E8%88%87%E8%89%B2%EF%BC%8C%E8%A2%AB%E7%A0%B4%E6%BB%85%E7%84%A1%E9%A4%98%EF%BC%8C"
+            },
+            {
+              "uid": "sn1.23",
+              "collection": "经藏/相应部_sn",
+              "title": "结缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所有名与色之处，被破坏无余，",
+              "score": 11.308780062377403,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.23&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%89%80%E6%9C%89%E5%90%8D%E8%88%87%E8%89%B2%E4%B9%8B%E8%99%95%EF%BC%8C%E8%A2%AB%E7%A0%B4%E5%A3%9E%E7%84%A1%E9%A4%98%EF%BC%8C"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n2-g1",
+      "sutta": "dn33",
+      "number": 2,
+      "order": 1,
+      "label": "名与色",
+      "members": "名与色",
+      "member_items": [
+        "名与色"
+      ],
+      "dn34_status": null,
+      "source_text": "名与色。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%90%8D%E8%88%87%E8%89%B2"
+    },
+    {
+      "id": "dn34-n2-g3",
+      "sutta": "dn34",
+      "number": 2,
+      "order": 3,
+      "label": "名与色",
+      "members": "名与色",
+      "member_items": [
+        "名与色"
+      ],
+      "dn34_status": "应遍知",
+      "source_text": "（三）哪些是应该被遍知的二法呢？名与色，这些是应该被遍知的二法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%90%8D%E8%88%87%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%90%8D%E8%88%87%E8%89%B2"
+    }
+  ]
+}

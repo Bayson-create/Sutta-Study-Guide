@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-5fc912cd12b3",
+    "number": 3,
+    "label": "三善巧",
+    "member_items": [
+      "增益善巧",
+      "损减善巧",
+      "方法善巧"
+    ],
+    "group_ids": [
+      "dn33-n3-g54"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三善巧",
+      "增益善巧",
+      "损减善巧",
+      "方法善巧"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三善巧」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：增益善巧、损减善巧、方法善巧。[1]\n\n## 所含各法\n### 增益善巧\n经文将「增益善巧」列为「三善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三善巧：增益善巧、损减善巧、方法善巧。。[1]\n### 损减善巧\n经文将「损减善巧」列为「三善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三善巧：增益善巧、损减善巧、方法善巧。。[1]\n### 方法善巧\n经文将「方法善巧」列为「三善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三善巧：增益善巧、损减善巧、方法善巧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 1 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三善巧",
+          "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn34",
+          "text": "我对这世间是善巧的、对其他世间是善巧的、对魔之领域是善巧的、对非魔之领域是善巧的、对死之领域是善巧的、对不死之领域是善巧的，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn34&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%B0%8D%E9%80%99%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E5%85%B6%E4%BB%96%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%9D%9E%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E4%B8%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "等至善巧与出等至善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp360-382",
+          "text": "善巧而寂静，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%96%84%E5%B7%A7%E8%80%8C%E5%AF%82%E9%9D%9C%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "界善巧与作意善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%95%8C%E5%96%84%E5%B7%A7%E8%88%87%E4%BD%9C%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "处善巧与缘起善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn34.28-34",
+          "text": "……有关于定的顺意善巧与关于定的出定善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.28-34&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E9%A0%86%E6%84%8F%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E5%87%BA%E5%AE%9A%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn34.35-40",
+          "text": "……有关于定的顺意善巧与关于定的所缘善巧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.35-40&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E9%A0%86%E6%84%8F%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%89%80%E7%B7%A3%E5%96%84%E5%B7%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.37",
+          "text": "天众将损减，阿修罗众将充满。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.37&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A4%A9%E7%9C%BE%E5%B0%87%E6%90%8D%E6%B8%9B%EF%BC%8C%E9%98%BF%E4%BF%AE%E7%BE%85%E7%9C%BE%E5%B0%87%E5%85%85%E6%BB%BF%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.37",
+          "text": "天众将充满，阿修罗众将损减。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.37&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A4%A9%E7%9C%BE%E5%B0%87%E5%85%85%E6%BB%BF%EF%BC%8C%E9%98%BF%E4%BF%AE%E7%BE%85%E7%9C%BE%E5%B0%87%E6%90%8D%E6%B8%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn29",
+          "text": "应该教导的方法",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn29&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%87%89%E8%A9%B2%E6%95%99%E5%B0%8E%E7%9A%84%E6%96%B9%E6%B3%95"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.64",
+          "text": "什么是它游走的方法？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.64&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%83%E9%81%8A%E8%B5%B0%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "text": "，并认为这些德行不能彼此割裂。 差异主要在组织方式： - 《略论》以菩提心统摄菩萨行，并以方便与智慧双运、福德与智慧二资粮说明六度。 - 《南传菩萨道》把出离、真实、决意、慈、舍分别列出，同时依普通、中等、究竟三层说明波罗蜜的深化。 因此，更准确的表述不是“大乘靠空性，上座部靠品德”，而是：二者都重视智慧与德行，但对智慧、佛果、空性及波罗蜜圆满条件的解释不同。 --- ## 二、波罗蜜的基础、污染与清净 ### 1. 大悲与方法善巧智 《南传菩萨道》将波罗蜜概括为： > “波罗蜜是那些以大悲心和行善之方法善巧智为基础的圣洁素质，例如布施、持戒等。而且这些素质必须不受渴爱、我慢与邪见所污染。” ——《南传菩萨道》第七章“杂集”，PDF 第48页。 这里有三个不可分割的条件： 1. 以利益众生的大悲心为动机； 2. 具有使善行导向正等正觉的方法善巧智； 3. 不被渴爱、我慢、邪见等烦恼污染。 这不是说每一次普通善行都已经达到绝对清净，而是用以区分一般善业与趋向佛果的波罗蜜行。 ### 2. “分别心”的具体含义 《南传菩萨道》在“污染波罗蜜的因素”中说： > “对布施之物之间有分别心，与对受者之间有分别心便污染了布施波罗蜜。” ——《南传菩萨道》第七章“杂集”，PDF 第83",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三善巧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+              "score": 11.746185456041808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "增益善巧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+              "score": 26.382127365538437,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "mn34",
+              "collection": "经藏/中部_mn",
+              "title": "牧牛者小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我对这世间是善巧的、对其他世间是善巧的、对魔之领域是善巧的、对非魔之领域是善巧的、对死之领域是善巧的、对不死之领域是善巧的，比丘们！",
+              "score": 11.455092187079593,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn34&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%B0%8D%E9%80%99%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E5%85%B6%E4%BB%96%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%9D%9E%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E4%B8%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "等至善巧与出等至善巧。",
+              "score": 10.902614417137169,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "善巧而寂静，",
+              "score": 10.316001527161207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%96%84%E5%B7%A7%E8%80%8C%E5%AF%82%E9%9D%9C%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "界善巧与作意善巧。",
+              "score": 9.745038288377765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%95%8C%E5%96%84%E5%B7%A7%E8%88%87%E4%BD%9C%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "处善巧与缘起善巧。",
+              "score": 9.745038288377765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "sn34.28-34",
+              "collection": "经藏/相应部_sn",
+              "title": "根本出定与顺意经等七则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……有关于定的顺意善巧与关于定的出定善巧。",
+              "score": 9.701184080505021,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.28-34&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E9%A0%86%E6%84%8F%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E5%87%BA%E5%AE%9A%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "sn34.35-40",
+              "collection": "经藏/相应部_sn",
+              "title": "根本顺意与所缘经等六则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……有关于定的顺意善巧与关于定的所缘善巧。",
+              "score": 9.701184080505021,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.35-40&lang=zh&q=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E9%A0%86%E6%84%8F%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%89%80%E7%B7%A3%E5%96%84%E5%B7%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "损减善巧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+              "score": 25.757097864999103,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "mn34",
+              "collection": "经藏/中部_mn",
+              "title": "牧牛者小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我对这世间是善巧的、对其他世间是善巧的、对魔之领域是善巧的、对非魔之领域是善巧的、对死之领域是善巧的、对不死之领域是善巧的，比丘们！",
+              "score": 11.455092187079593,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn34&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%B0%8D%E9%80%99%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E5%85%B6%E4%BB%96%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%9D%9E%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E4%B8%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.37",
+              "collection": "经藏/增支部_an",
+              "title": "四大王经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天众将损减，阿修罗众将充满。",
+              "score": 11.203610926401451,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.37&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A4%A9%E7%9C%BE%E5%B0%87%E6%90%8D%E6%B8%9B%EF%BC%8C%E9%98%BF%E4%BF%AE%E7%BE%85%E7%9C%BE%E5%B0%87%E5%85%85%E6%BB%BF%E3%80%82"
+            },
+            {
+              "uid": "an3.37",
+              "collection": "经藏/增支部_an",
+              "title": "四大王经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天众将充满，阿修罗众将损减。",
+              "score": 11.203610926401451,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.37&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A4%A9%E7%9C%BE%E5%B0%87%E5%85%85%E6%BB%BF%EF%BC%8C%E9%98%BF%E4%BF%AE%E7%BE%85%E7%9C%BE%E5%B0%87%E6%90%8D%E6%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "等至善巧与出等至善巧。",
+              "score": 10.902614417137169,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "善巧而寂静，",
+              "score": 10.316001527161207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%96%84%E5%B7%A7%E8%80%8C%E5%AF%82%E9%9D%9C%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "界善巧与作意善巧。",
+              "score": 9.745038288377765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%95%8C%E5%96%84%E5%B7%A7%E8%88%87%E4%BD%9C%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "处善巧与缘起善巧。",
+              "score": 9.745038288377765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "方法善巧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善巧：增益善巧、损减善巧、方法善巧。",
+              "score": 20.787730025283615,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "mn34",
+              "collection": "经藏/中部_mn",
+              "title": "牧牛者小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我对这世间是善巧的、对其他世间是善巧的、对魔之领域是善巧的、对非魔之领域是善巧的、对死之领域是善巧的、对不死之领域是善巧的，比丘们！",
+              "score": 11.455092187079593,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn34&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%B0%8D%E9%80%99%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E5%85%B6%E4%BB%96%E4%B8%96%E9%96%93%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E9%9D%9E%E9%AD%94%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%E3%80%81%E5%B0%8D%E4%B8%8D%E6%AD%BB%E4%B9%8B%E9%A0%98%E5%9F%9F%E6%98%AF%E5%96%84%E5%B7%A7%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "等至善巧与出等至善巧。",
+              "score": 10.902614417137169,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E3%80%82"
+            },
+            {
+              "uid": "dn29",
+              "collection": "经藏/长部_dn",
+              "title": "清净经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该教导的方法",
+              "score": 10.716520493966476,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn29&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%87%89%E8%A9%B2%E6%95%99%E5%B0%8E%E7%9A%84%E6%96%B9%E6%B3%95"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "善巧而寂静，",
+              "score": 10.316001527161207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%96%84%E5%B7%A7%E8%80%8C%E5%AF%82%E9%9D%9C%EF%BC%8C"
+            },
+            {
+              "uid": "sn1.64",
+              "collection": "经藏/相应部_sn",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是它游走的方法？",
+              "score": 10.123389595951961,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.64&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%83%E9%81%8A%E8%B5%B0%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9F"
+            },
+            {
+              "uid": "sn1.65",
+              "collection": "经藏/相应部_sn",
+              "title": "结缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是它游走的方法？",
+              "score": 10.123389595951961,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.65&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%83%E9%81%8A%E8%B5%B0%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "界善巧与作意善巧。",
+              "score": 9.745038288377765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%95%8C%E5%96%84%E5%B7%A7%E8%88%87%E4%BD%9C%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "heading": "站内搜索命中",
+          "text": "，并认为这些德行不能彼此割裂。 差异主要在组织方式： - 《略论》以菩提心统摄菩萨行，并以方便与智慧双运、福德与智慧二资粮说明六度。 - 《南传菩萨道》把出离、真实、决意、慈、舍分别列出，同时依普通、中等、究竟三层说明波罗蜜的深化。 因此，更准确的表述不是“大乘靠空性，上座部靠品德”，而是：二者都重视智慧与德行，但对智慧、佛果、空性及波罗蜜圆满条件的解释不同。 --- ## 二、波罗蜜的基础、污染与清净 ### 1. 大悲与方法善巧智 《南传菩萨道》将波罗蜜概括为： > “波罗蜜是那些以大悲心和行善之方法善巧智为基础的圣洁素质，例如布施、持戒等。而且这些素质必须不受渴爱、我慢与邪见所污染。” ——《南传菩萨道》第七章“杂集”，PDF 第48页。 这里有三个不可分割的条件： 1. 以利益众生的大悲心为动机； 2. 具有使善行导向正等正觉的方法善巧智； 3. 不被渴爱、我慢、邪见等烦恼污染。 这不是说每一次普通善行都已经达到绝对清净，而是用以区分一般善业与趋向佛果的波罗蜜行。 ### 2. “分别心”的具体含义 《南传菩萨道》在“污染波罗蜜的因素”中说： > “对布施之物之间有分别心，与对受者之间有分别心便污染了布施波罗蜜。” ——《南传菩萨道》第七章“杂集”，PDF 第83",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7&scope=site",
+          "query": "方法善巧"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g54",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 54,
+      "label": "三善巧",
+      "members": "增益善巧、损减善巧、方法善巧",
+      "member_items": [
+        "增益善巧",
+        "损减善巧",
+        "方法善巧"
+      ],
+      "dn34_status": null,
+      "source_text": "三善巧：增益善巧、损减善巧、方法善巧。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7"
+    }
+  ]
+}

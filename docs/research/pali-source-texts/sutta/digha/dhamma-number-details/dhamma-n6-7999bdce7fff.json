@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n6-7999bdce7fff",
+    "number": 6,
+    "label": "六想身",
+    "member_items": [
+      "色想",
+      "声想",
+      "气味想",
+      "味道想",
+      "所触想",
+      "法想"
+    ],
+    "group_ids": [
+      "dn33-n6-g6"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "六想身",
+      "色想",
+      "声想",
+      "气味想",
+      "味道想",
+      "所触想",
+      "法想"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「六想身」属于 6 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色想、声想、气味想、味道想、所触想、法想。[1]\n\n## 所含各法\n### 色想\n经文将「色想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《独自静坐经》命中：入虚空无边处者，色想被灭了；。[3]\n### 声想\n经文将「声想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：六想身：色想、声想、气味想、味道想、所触想、法想。。[1]\n### 气味想\n经文将「气味想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：六想身：色想、声想、气味想、味道想、所触想、法想。。[1]\n### 味道想\n经文将「味道想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：六想身：色想、声想、气味想、味道想、所触想、法想。。[1]\n### 所触想\n经文将「所触想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：六想身：色想、声想、气味想、味道想、所触想、法想。。[1]\n### 法想\n经文将「法想」列为「六想身」的一个成员。Early Buddhist 用该名词检索时，在《非种种遍求经》命中：非缘法意向生起法想；。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 7 个关键词，冻结 45 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 1 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 六想身",
+          "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E6%83%B3%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E6%83%B3%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn36.11",
+          "text": "入虚空无边处者，色想被灭了；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.11&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E4%BA%86%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.8",
+          "text": "非缘法意向生起法想；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.8&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E7%B7%A3%E6%B3%95%E6%84%8F%E5%90%91%E7%94%9F%E8%B5%B7%E6%B3%95%E6%83%B3%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.31",
+          "text": "对已入虚空无边处者来说，色想被灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "对已入虚空无边处者来说，色想被灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "对已入虚空无边处者来说，色想被灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn18.6",
+          "text": "你们怎么想：色想是常的，还是无常的呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.6&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%82%84%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn36.15",
+          "text": "……（中略）入虚空无边处者，色想被安息了；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.15&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E5%AE%89%E6%81%AF%E4%BA%86%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn36.17",
+          "text": "……（中略）入虚空无边处者，色想被安息了；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.17&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E5%AE%89%E6%81%AF%E4%BA%86%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.63",
+          "text": "有这六想：色想、声想、气味想、味道想、所触想、法想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.56",
+          "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.57",
+          "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "text": "aining） **这是全书最长的章节之一（1055行），说明了修行的衰退与真正全心投入的稀有性。** **\"四大洪水\"——现代修行的困难** > \"有感官之洪、成为之洪、见之洪和无明之洪。这四种遮蔽和包围众生的心。它们比淹没我们田地、村庄或城镇的水更糟糕。\" **\"过去的严格与现在的松懈\"——文明化的陷阱** > \"现在，有些日子我必须派人告诉他们停止说话，找出那里发生了什么。我想知道他们是否在进行拳击比赛；噪音太大了，我无法想象发生了什么。所以，一次又一次，我必须禁止他们闲聊。\" > \"在过去的条件中，我们从来没有碗或盘子。一切都放在一起进入化缘碗。现在那是做不到的。所以如果一百个和尚在吃东西，我们需要五个人来洗后面的碗。有时他们仍然在洗时，已经是法谈时间。这种事情会造成复杂。\" **\"咖啡与糖——习惯的堡垒\"** 这是一个令人难忘的故事，讲述了一个老夫妇（先生和太太）来出家但无法放弃早晨咖啡的习惯： > \"作为即刻他们被授于出家身份，一个朋友为他们带来咖啡和糖。他们生活在森林中修行冥想，但他们有在早上起来的习惯……他们储存了他们的小屋……但在这里，我们会有我们的早晨诵经和冥想，然后立即和尚会准备去化缘……\" **\"即使狗都无法承受\"** > \"甚至狗都无法在这里生活——这就是",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%B3%95%E6%83%B3&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "六想身",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 9.477685473501696,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E6%83%B3%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "色想",
+          "hits": [
+            {
+              "uid": "sn36.11",
+              "collection": "经藏/相应部_sn",
+              "title": "独自静坐经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入虚空无边处者，色想被灭了；",
+              "score": 8.832194702817622,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.11&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E4%BA%86%EF%BC%9B"
+            },
+            {
+              "uid": "an9.31",
+              "collection": "经藏/增支部_an",
+              "title": "次第灭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对已入虚空无边处者来说，色想被灭。",
+              "score": 8.449313502889071,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对已入虚空无边处者来说，色想被灭。",
+              "score": 8.449313502889071,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对已入虚空无边处者来说，色想被灭。",
+              "score": 8.449313502889071,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B0%8D%E5%B7%B2%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn18.6",
+              "collection": "经藏/相应部_sn",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们怎么想：色想是常的，还是无常的呢？",
+              "score": 7.77519436316982,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.6&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%82%84%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn36.15",
+              "collection": "经藏/相应部_sn",
+              "title": "阿难经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）入虚空无边处者，色想被安息了；",
+              "score": 7.200694880291902,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.15&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E5%AE%89%E6%81%AF%E4%BA%86%EF%BC%9B"
+            },
+            {
+              "uid": "sn36.17",
+              "collection": "经藏/相应部_sn",
+              "title": "众多经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）入虚空无边处者，色想被安息了；",
+              "score": 7.200694880291902,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.17&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%85%A5%E8%99%9B%E7%A9%BA%E7%84%A1%E9%82%8A%E8%99%95%E8%80%85%EF%BC%8C%E8%89%B2%E6%83%B3%E8%A2%AB%E5%AE%89%E6%81%AF%E4%BA%86%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 6.273598092354571,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "声想",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 8.573211602340804,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六想：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 8.305864477980148,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 7.595307976943272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.57",
+              "collection": "经藏/相应部_sn",
+              "title": "七处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 7.595307976943272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E8%81%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "气味想",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 13.021591568492088,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六想：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 12.69903041430441,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "sn18.12-20",
+              "collection": "经藏/相应部_sn",
+              "title": "色经等九则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色想……（中略）声音想……气味想……味道想……所触想……法想……",
+              "score": 11.192542905093248,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.12-20&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%81%B2%E9%9F%B3%E6%83%B3%E2%80%A6%E2%80%A6%E6%B0%A3%E5%91%B3%E6%83%B3%E2%80%A6%E2%80%A6%E5%91%B3%E9%81%93%E6%83%B3%E2%80%A6%E2%80%A6%E6%89%80%E8%A7%B8%E6%83%B3%E2%80%A6%E2%80%A6%E6%B3%95%E6%83%B3%E2%80%A6%E2%80%A6"
+            },
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 11.112923389444436,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.57",
+              "collection": "经藏/相应部_sn",
+              "title": "七处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 11.112923389444436,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对色的想是一种，对声的想是一种，对气味的想是一种，对味道的想是一种，对所触的想是一种，对法的想是一种，比丘们！",
+              "score": 10.652866406207059,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E8%89%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E8%81%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B0%A3%E5%91%B3%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E5%91%B3%E9%81%93%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%89%80%E8%A7%B8%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B3%95%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn18.6",
+              "collection": "经藏/相应部_sn",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「声音想……（中略）气味想……味道想……所触想……法想是常的，还是无常的呢？",
+              "score": 9.984121331968892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.6&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%81%B2%E9%9F%B3%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%B0%A3%E5%91%B3%E6%83%B3%E2%80%A6%E2%80%A6%E5%91%B3%E9%81%93%E6%83%B3%E2%80%A6%E2%80%A6%E6%89%80%E8%A7%B8%E6%83%B3%E2%80%A6%E2%80%A6%E6%B3%95%E6%83%B3%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%82%84%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.243",
+              "collection": "经藏/相应部_sn",
+              "title": "漏出法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "气味征服比丘，非比丘征服气味；",
+              "score": 9.17657670917955,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.243&lang=zh&q=%E6%B0%A3%E5%91%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B0%A3%E5%91%B3%E5%BE%81%E6%9C%8D%E6%AF%94%E4%B8%98%EF%BC%8C%E9%9D%9E%E6%AF%94%E4%B8%98%E5%BE%81%E6%9C%8D%E6%B0%A3%E5%91%B3%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "味道想",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 12.779884549017101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六想：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 12.464860789167943,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 10.640730284605297,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.57",
+              "collection": "经藏/相应部_sn",
+              "title": "七处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 10.640730284605297,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对色的想是一种，对声的想是一种，对气味的想是一种，对味道的想是一种，对所触的想是一种，对法的想是一种，比丘们！",
+              "score": 10.271347138022417,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E8%89%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E8%81%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B0%A3%E5%91%B3%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E5%91%B3%E9%81%93%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%89%80%E8%A7%B8%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B3%95%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn18.12-20",
+              "collection": "经藏/相应部_sn",
+              "title": "色经等九则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色想……（中略）声音想……气味想……味道想……所触想……法想……",
+              "score": 10.090684409344513,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.12-20&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%81%B2%E9%9F%B3%E6%83%B3%E2%80%A6%E2%80%A6%E6%B0%A3%E5%91%B3%E6%83%B3%E2%80%A6%E2%80%A6%E5%91%B3%E9%81%93%E6%83%B3%E2%80%A6%E2%80%A6%E6%89%80%E8%A7%B8%E6%83%B3%E2%80%A6%E2%80%A6%E6%B3%95%E6%83%B3%E2%80%A6%E2%80%A6"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）舌被灭之处，则味道想被灭；",
+              "score": 10.029010336589138,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E5%91%B3%E9%81%93%E6%83%B3%E8%A2%AB%E6%BB%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）舌被灭之处，则味道想被灭；",
+              "score": 10.029010336589138,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E5%91%B3%E9%81%93%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E5%91%B3%E9%81%93%E6%83%B3%E8%A2%AB%E6%BB%85%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "所触想",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 11.805889513188335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E6%83%B3%E8%BA%AB%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六想：色想、声想、气味想、味道想、所触想、法想。",
+              "score": 11.51288839521937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 10.735783644360847,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.57",
+              "collection": "经藏/相应部_sn",
+              "title": "七处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有六类想：色想、声想、气味想、味道想、所触想、法想，比丘们！",
+              "score": 10.735783644360847,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.57&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%85%AD%E9%A1%9E%E6%83%B3%EF%BC%9A%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对色的想是一种，对声的想是一种，对气味的想是一种，对味道的想是一种，对所触的想是一种，对法的想是一种，比丘们！",
+              "score": 10.382457405710065,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E8%89%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E8%81%B2%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B0%A3%E5%91%B3%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E5%91%B3%E9%81%93%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%89%80%E8%A7%B8%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E5%B0%8D%E6%B3%95%E7%9A%84%E6%83%B3%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn18.12-20",
+              "collection": "经藏/相应部_sn",
+              "title": "色经等九则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色想……（中略）声音想……气味想……味道想……所触想……法想……",
+              "score": 10.014115104801451,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.12-20&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%81%B2%E9%9F%B3%E6%83%B3%E2%80%A6%E2%80%A6%E6%B0%A3%E5%91%B3%E6%83%B3%E2%80%A6%E2%80%A6%E5%91%B3%E9%81%93%E6%83%B3%E2%80%A6%E2%80%A6%E6%89%80%E8%A7%B8%E6%83%B3%E2%80%A6%E2%80%A6%E6%B3%95%E6%83%B3%E2%80%A6%E2%80%A6"
+            },
+            {
+              "uid": "sn18.6",
+              "collection": "经藏/相应部_sn",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「声音想……（中略）气味想……味道想……所触想……法想是常的，还是无常的呢？",
+              "score": 9.519838710971014,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn18.6&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%81%B2%E9%9F%B3%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%B0%A3%E5%91%B3%E6%83%B3%E2%80%A6%E2%80%A6%E5%91%B3%E9%81%93%E6%83%B3%E2%80%A6%E2%80%A6%E6%89%80%E8%A7%B8%E6%83%B3%E2%80%A6%E2%80%A6%E6%B3%95%E6%83%B3%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%82%84%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.243",
+              "collection": "经藏/相应部_sn",
+              "title": "漏出法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所触征服比丘，非比丘征服所触；",
+              "score": 9.319980001666893,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.243&lang=zh&q=%E6%89%80%E8%A7%B8%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%89%80%E8%A7%B8%E5%BE%81%E6%9C%8D%E6%AF%94%E4%B8%98%EF%BC%8C%E9%9D%9E%E6%AF%94%E4%B8%98%E5%BE%81%E6%9C%8D%E6%89%80%E8%A7%B8%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "法想",
+          "hits": [
+            {
+              "uid": "sn14.8",
+              "collection": "经藏/相应部_sn",
+              "title": "非种种遍求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "非缘法意向生起法想；",
+              "score": 11.279174038213352,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.8&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E7%B7%A3%E6%B3%95%E6%84%8F%E5%90%91%E7%94%9F%E8%B5%B7%E6%B3%95%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.10",
+              "collection": "经藏/相应部_sn",
+              "title": "外部的种种触经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "非缘法意向生起法想；",
+              "score": 11.279174038213352,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.10&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E7%B7%A3%E6%B3%95%E6%84%8F%E5%90%91%E7%94%9F%E8%B5%B7%E6%B3%95%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn35.117",
+              "collection": "经藏/相应部_sn",
+              "title": "欲的种类经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那处应该被体会……（中略）意被灭之处，则法想被灭。",
+              "score": 7.786895282519977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.117&lang=zh&q=%E6%B3%95%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E8%99%95%E6%87%89%E8%A9%B2%E8%A2%AB%E9%AB%94%E6%9C%83%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E8%A2%AB%E6%BB%85%E4%B9%8B%E8%99%95%EF%BC%8C%E5%89%87%E6%B3%95%E6%83%B3%E8%A2%AB%E6%BB%85%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "heading": "站内搜索命中",
+          "text": "aining） **这是全书最长的章节之一（1055行），说明了修行的衰退与真正全心投入的稀有性。** **\"四大洪水\"——现代修行的困难** > \"有感官之洪、成为之洪、见之洪和无明之洪。这四种遮蔽和包围众生的心。它们比淹没我们田地、村庄或城镇的水更糟糕。\" **\"过去的严格与现在的松懈\"——文明化的陷阱** > \"现在，有些日子我必须派人告诉他们停止说话，找出那里发生了什么。我想知道他们是否在进行拳击比赛；噪音太大了，我无法想象发生了什么。所以，一次又一次，我必须禁止他们闲聊。\" > \"在过去的条件中，我们从来没有碗或盘子。一切都放在一起进入化缘碗。现在那是做不到的。所以如果一百个和尚在吃东西，我们需要五个人来洗后面的碗。有时他们仍然在洗时，已经是法谈时间。这种事情会造成复杂。\" **\"咖啡与糖——习惯的堡垒\"** 这是一个令人难忘的故事，讲述了一个老夫妇（先生和太太）来出家但无法放弃早晨咖啡的习惯： > \"作为即刻他们被授于出家身份，一个朋友为他们带来咖啡和糖。他们生活在森林中修行冥想，但他们有在早上起来的习惯……他们储存了他们的小屋……但在这里，我们会有我们的早晨诵经和冥想，然后立即和尚会准备去化缘……\" **\"即使狗都无法承受\"** > \"甚至狗都无法在这里生活——这就是",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%B3%95%E6%83%B3&scope=site",
+          "query": "法想"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n6-g6",
+      "sutta": "dn33",
+      "number": 6,
+      "order": 6,
+      "label": "六想身",
+      "members": "色想、声想、气味想、味道想、所触想、法想",
+      "member_items": [
+        "色想",
+        "声想",
+        "气味想",
+        "味道想",
+        "所触想",
+        "法想"
+      ],
+      "dn34_status": null,
+      "source_text": "六想身：色想、声想、气味想、味道想、所触想、法想。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E6%83%B3%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E6%83%B3%E3%80%81%E8%81%B2%E6%83%B3%E3%80%81%E6%B0%A3%E5%91%B3%E6%83%B3%E3%80%81%E5%91%B3%E9%81%93%E6%83%B3%E3%80%81%E6%89%80%E8%A7%B8%E6%83%B3%E3%80%81%E6%B3%95%E6%83%B3"
+    }
+  ]
+}

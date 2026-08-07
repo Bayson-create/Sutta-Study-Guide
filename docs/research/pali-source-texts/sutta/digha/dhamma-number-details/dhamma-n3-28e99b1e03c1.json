@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-28e99b1e03c1",
+    "number": 3,
+    "label": "三慧",
+    "member_items": [
+      "思所成慧",
+      "闻所成慧",
+      "修习所成慧"
+    ],
+    "group_ids": [
+      "dn33-n3-g43"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三慧",
+      "思所成慧",
+      "闻所成慧",
+      "修习所成慧"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三慧」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：思所成慧、闻所成慧、修习所成慧。[1]\n\n## 所含各法\n### 思所成慧\n经文将「思所成慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三慧：思所成慧、闻所成慧、修习所成慧。。[1]\n### 闻所成慧\n经文将「闻所成慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三慧：思所成慧、闻所成慧、修习所成慧。。[1]\n### 修习所成慧\n经文将「修习所成慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三慧：思所成慧、闻所成慧、修习所成慧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 19 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 1 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三慧",
+          "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.37",
+          "text": "这是旧业，应该被看作被造作的、被思所制造的、能被感受的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.37&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.146",
+          "text": "眼是旧业，应该被看作被造作的、被思所制造的、能被感受的……（中略）舌是旧业，应该被看作被造作的、被思所制造的、能被感受的……（中略）意是旧业，应该被看作被造作的、被思所制造的、能被感受的，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.146&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn52",
+          "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 13 修习地遍…修习水遍…修习火遍…修习风遍…修习青遍…修习黄遍…修习红遍…修习白遍…修习虚空遍…修习识遍…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+13+%E4%BF%AE%E4%B9%A0%E5%9C%B0%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%B0%B4%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%81%AB%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%A3%8E%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%9D%92%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%BB%84%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%BA%A2%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%99%BD%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%99%9A%E7%A9%BA%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%AF%86%E9%81%8D%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 9 修习正见…修习正思惟…修习正语…修习正业…修习正命…修习正精进…修习正念…修习正定…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+9+%E4%BF%AE%E4%B9%A0%E6%AD%A3%E8%A7%81%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E6%80%9D%E6%83%9F%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E8%AF%AD%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E4%B8%9A%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%91%BD%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E7%B2%BE%E8%BF%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%AE%9A%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三修习：身修习、心修习、慧修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 17 修习初禅俱行的信根…修习精进根…修习念根…修习定根…修习慧根…修习信力…修习精进力…修习念力…修习定力…修习慧力…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+17+%E4%BF%AE%E4%B9%A0%E5%88%9D%E7%A6%85%E4%BF%B1%E8%A1%8C%E7%9A%84%E4%BF%A1%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E4%BF%A1%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E5%8A%9B%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 7 修习信力…修习精进力…修习念力…修习定力…修习慧力…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+7+%E4%BF%AE%E4%B9%A0%E4%BF%A1%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E5%8A%9B%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 16 修习佛随念…修习法随念…修习僧随念…修习戒随念…修习舍随念…修习天随念…修习入出息念…修习死念…修习身至念…修习寂止随念…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+16+%E4%BF%AE%E4%B9%A0%E4%BD%9B%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%B3%95%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%83%A7%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%88%92%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%8D%A8%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%A4%A9%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%BB%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%BA%AB%E8%87%B3%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AF%82%E6%AD%A2%E9%9A%8F%E5%BF%B5%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.394-574",
+          "text": "SC 6 修习信根…修习精进根…修习念根…修习定根…修习慧根…。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+6+%E4%BF%AE%E4%B9%A0%E4%BF%A1%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E6%A0%B9%E2%80%A6%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "的实例——如**大僧护尊者**、**质多古陀伽尊者**（面对美色诱惑不为所动而弃舍生命以护戒）、**大弥多尊者**、**舍利弗尊者**（持戒之典范）、**芒果食迦大帝须尊者**等诸位圣者持戒的动人故事，逐一说明\"四种清净戒\"（波罗提木叉律仪戒、根律仪戒、活命遍净戒、资具依止戒）的圆满践行之道。 ### 出离波罗蜜、智慧波罗蜜、精进波罗蜜的详析 出离波罗蜜详述\"五种森林住处的分类\"及\"两种出离\"；智慧波罗蜜详述\"三种智慧\"（闻所成慧、思所成慧、修所成慧）及\"发展智慧的七种方法\"，并援引**《妓女苏拉萨本生》**说明智慧观照世俗情爱本质的透彻洞见；精进波罗蜜详述\"发展精进的十一种因素\"，并以**大光明王（弥赛萨达本生）** 的传奇一生为精进精神的典范。 ### 忍辱、真实、决意、慈、舍波罗蜜的详析 **忍辱波罗蜜**援引**富楼那尊者的忍辱**（甘愿前往凶险的输那波兰多迦国弘法、纵使遭受恶言诽谤乃至肉体伤害亦不生嗔恨）及**帝释天的忍辱**（面对阿修罗的挑衅辱骂仍保持庄严不动）为典范，并详列\"九种引发嗔恨之因\"及\"八种力量\"的分类体系。 **真实波罗蜜**除前述精妙的\"二谛论\"外，还详述\"四圣谛\"（苦、集、灭、道）的完整教理，并援引大量本生故事说明真实语的三种功能——**为取信于人而说真实语**（",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 11.691359261723187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+              "score": 10.39556917540405,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "思所成慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+              "score": 29.700673982295417,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "sn12.37",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是旧业，应该被看作被造作的、被思所制造的、能被感受的。",
+              "score": 7.971817717704187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.37&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.146",
+              "collection": "经藏/相应部_sn",
+              "title": "业灭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼是旧业，应该被看作被造作的、被思所制造的、能被感受的……（中略）舌是旧业，应该被看作被造作的、被思所制造的、能被感受的……（中略）意是旧业，应该被看作被造作的、被思所制造的、能被感受的，比丘们！",
+              "score": 7.749764971841446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.146&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%88%8C%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E6%98%AF%E8%88%8A%E6%A5%AD%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E3%80%81%E8%83%BD%E8%A2%AB%E6%84%9F%E5%8F%97%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn52",
+              "collection": "经藏/中部_mn",
+              "title": "八城人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+              "score": 7.6877968242259875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn52",
+              "collection": "经藏/中部_mn",
+              "title": "八城人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+              "score": 7.6877968242259875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn52",
+              "collection": "经藏/中部_mn",
+              "title": "八城人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+              "score": 7.6877968242259875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn52",
+              "collection": "经藏/中部_mn",
+              "title": "八城人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+              "score": 7.6877968242259875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn52",
+              "collection": "经藏/中部_mn",
+              "title": "八城人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他了知：『凡任何被造作的、被思所制造的都是无常的、灭法。",
+              "score": 7.6877968242259875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn52&lang=zh&q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A2%AB%E9%80%A0%E4%BD%9C%E7%9A%84%E3%80%81%E8%A2%AB%E6%80%9D%E6%89%80%E8%A3%BD%E9%80%A0%E7%9A%84%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E6%BB%85%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "闻所成慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+              "score": 32.00039499243014,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "修习所成慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+              "score": 18.354128399834927,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 13 修习地遍…修习水遍…修习火遍…修习风遍…修习青遍…修习黄遍…修习红遍…修习白遍…修习虚空遍…修习识遍…。",
+              "score": 7.348940639868022,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+13+%E4%BF%AE%E4%B9%A0%E5%9C%B0%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%B0%B4%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%81%AB%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%A3%8E%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%9D%92%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E9%BB%84%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%BA%A2%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%99%BD%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%99%9A%E7%A9%BA%E9%81%8D%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%AF%86%E9%81%8D%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 9 修习正见…修习正思惟…修习正语…修习正业…修习正命…修习正精进…修习正念…修习正定…。",
+              "score": 7.311941327121311,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+9+%E4%BF%AE%E4%B9%A0%E6%AD%A3%E8%A7%81%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E6%80%9D%E6%83%9F%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E8%AF%AD%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E4%B8%9A%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%91%BD%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E7%B2%BE%E8%BF%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%A3%E5%AE%9A%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三修习：身修习、心修习、慧修习。",
+              "score": 7.258052713004297,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 17 修习初禅俱行的信根…修习精进根…修习念根…修习定根…修习慧根…修习信力…修习精进力…修习念力…修习定力…修习慧力…。",
+              "score": 7.145012016137553,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+17+%E4%BF%AE%E4%B9%A0%E5%88%9D%E7%A6%85%E4%BF%B1%E8%A1%8C%E7%9A%84%E4%BF%A1%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E4%BF%A1%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E5%8A%9B%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 7 修习信力…修习精进力…修习念力…修习定力…修习慧力…。",
+              "score": 6.9597695839165254,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+7+%E4%BF%AE%E4%B9%A0%E4%BF%A1%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E5%8A%9B%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E5%8A%9B%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 16 修习佛随念…修习法随念…修习僧随念…修习戒随念…修习舍随念…修习天随念…修习入出息念…修习死念…修习身至念…修习寂止随念…。",
+              "score": 6.952095600383999,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+16+%E4%BF%AE%E4%B9%A0%E4%BD%9B%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%B3%95%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%83%A7%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%88%92%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%8D%A8%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%A4%A9%E9%9A%8F%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%AD%BB%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E8%BA%AB%E8%87%B3%E5%BF%B5%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AF%82%E6%AD%A2%E9%9A%8F%E5%BF%B5%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 6 修习信根…修习精进根…修习念根…修习定根…修习慧根…。",
+              "score": 6.86696273188841,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+6+%E4%BF%AE%E4%B9%A0%E4%BF%A1%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E6%A0%B9%E2%80%A6%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "的实例——如**大僧护尊者**、**质多古陀伽尊者**（面对美色诱惑不为所动而弃舍生命以护戒）、**大弥多尊者**、**舍利弗尊者**（持戒之典范）、**芒果食迦大帝须尊者**等诸位圣者持戒的动人故事，逐一说明\"四种清净戒\"（波罗提木叉律仪戒、根律仪戒、活命遍净戒、资具依止戒）的圆满践行之道。 ### 出离波罗蜜、智慧波罗蜜、精进波罗蜜的详析 出离波罗蜜详述\"五种森林住处的分类\"及\"两种出离\"；智慧波罗蜜详述\"三种智慧\"（闻所成慧、思所成慧、修所成慧）及\"发展智慧的七种方法\"，并援引**《妓女苏拉萨本生》**说明智慧观照世俗情爱本质的透彻洞见；精进波罗蜜详述\"发展精进的十一种因素\"，并以**大光明王（弥赛萨达本生）** 的传奇一生为精进精神的典范。 ### 忍辱、真实、决意、慈、舍波罗蜜的详析 **忍辱波罗蜜**援引**富楼那尊者的忍辱**（甘愿前往凶险的输那波兰多迦国弘法、纵使遭受恶言诽谤乃至肉体伤害亦不生嗔恨）及**帝释天的忍辱**（面对阿修罗的挑衅辱骂仍保持庄严不动）为典范，并详列\"九种引发嗔恨之因\"及\"八种力量\"的分类体系。 **真实波罗蜜**除前述精妙的\"二谛论\"外，还详述\"四圣谛\"（苦、集、灭、道）的完整教理，并援引大量本生故事说明真实语的三种功能——**为取信于人而说真实语**（",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7&scope=site",
+          "query": "思所成慧"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g43",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 43,
+      "label": "三慧",
+      "members": "思所成慧、闻所成慧、修习所成慧",
+      "member_items": [
+        "思所成慧",
+        "闻所成慧",
+        "修习所成慧"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7"
+    }
+  ]
+}

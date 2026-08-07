@@ -1,0 +1,533 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-c327a026ee87",
+    "number": 4,
+    "label": "四智",
+    "member_items": [
+      "法智",
+      "类比智",
+      "他心智",
+      "世俗智"
+    ],
+    "group_ids": [
+      "dn33-n4-g11",
+      "dn34-n4-g8"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "四智",
+      "法智",
+      "类比智",
+      "他心智",
+      "世俗智"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四智」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：法智、类比智、他心智、世俗智。[1]\n- DN34：法智、类比智、他心智、世俗智。[2]\n\n## 所含各法\n### 法智\n经文将「法智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n### 类比智\n经文将「类比智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n### 他心智\n经文将「他心智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《烦恼的灭尽经》命中：「大通智、神通、天耳，他心、可能、业，。[4]\n### 世俗智\n经文将「世俗智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 5 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四智",
+          "text": "四智：法智、类比智、他心智、世俗智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 四智",
+          "text": "（八）哪些是应该使之生出的四法呢？四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四智：法智、类比智、他心智、世俗智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn52.24",
+          "text": "「大通智、神通、天耳，他心、可能、业，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.24&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%A4%A7%E9%80%9A%E6%99%BA%E3%80%81%E7%A5%9E%E9%80%9A%E3%80%81%E5%A4%A9%E8%80%B3%EF%BC%8C%E4%BB%96%E5%BF%83%E3%80%81%E5%8F%AF%E8%83%BD%E3%80%81%E6%A5%AD%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个四智：苦智、苦集智、苦灭智、导向苦灭道迹智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E5%9B%9B%E6%99%BA%EF%BC%9A%E8%8B%A6%E6%99%BA%E3%80%81%E8%8B%A6%E9%9B%86%E6%99%BA%E3%80%81%E8%8B%A6%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.12",
+          "text": "我已知道法的类比：『大德！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.12&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn16",
+          "text": "我已知道法的类比：『大德！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn28",
+          "text": "我已知道法的类比：『大德！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "天眼智",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.70",
+          "text": "法住智在前，然后涅槃智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.70&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B3%95%E4%BD%8F%E6%99%BA%E5%9C%A8%E5%89%8D%EF%BC%8C%E7%84%B6%E5%BE%8C%E6%B6%85%E6%A7%83%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "意生神通智",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%84%8F%E7%94%9F%E7%A5%9E%E9%80%9A%E6%99%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "各种神通智",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%90%84%E7%A8%AE%E7%A5%9E%E9%80%9A%E6%99%BA"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "生起\"**——这是佛教最核心的十二支因果链，也是\"苦如何生起\"的完整说明；反向（无明灭则行灭……）则是\"苦如何止息\"的完整说明。 （缘起）法的定性经进一步指出，缘起法则**\"不论诸如来出现，或诸如来不出现，那个界住立、法安住性、法决定性\"**——这是自然法则，佛陀只是发现它、揭示它，并非创造它。菩提比丘称这种分析每一现象\"生起、灭去、灭去之道\"的方式为**\"四谛模式\"**，并指出它在整部尼柯耶中反复出现，是理解一切现象的主要方法。四十四智事经则将此模式系统化地应用在十二支的每一支上，形成完整的\"智慧地图\"。 迦旃延氏经（此处菩提比丘称缘起为\"中道的教学\"）说明缘起如何避免落入\"常见\"（有一恒常不变的自我）与\"断见\"（死后一切断灭）两个极端，这正是佛教\"中道\"哲学最精确的表述。 **（五）四圣谛**——本章压轴主题。**\"一把树叶\"经**是全书最动人的比喻之一：佛陀以手取少量申恕树叶，问比丘：\"我手中的树叶，与森林里的树叶，哪个较多？\"比丘答森林里的多。佛陀说：**\"这经我证知而不对你们说的多……因为这不具利益，不是梵行的基础，不导向厌、离贪、灭、寂静、证智、正觉、涅槃，因此它不为我所说。\"** 佛陀所说的，只是\"苦、苦集、苦灭、导向苦灭道迹\"——这四圣谛。这一比喻精妙地回应了第七章开篇摩罗迦比丘执",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "6. 远近、大小与身行的控制（XII.69–136） 原文随后把“神通成功”推进到更细的操作说明：修行者依止作为直接知识基础的禅那，出定后作前行与决意，可以使远处显近、近处显远，使多变少、少变多，也可在特定叙述中改变食物的味道或使水呈现为乳酥等（XII.119–128）。这些段落不是在宣称普通人的物理能力，而是在解释《清净道论》所引《无碍解道》关于“决意”的条件性模型。 原文还说明了到梵天界的几种表现：以天眼见其色、以天耳闻其声、以他心智知其心；若要以可见身或不可见身前往，则分别说明“心随身转”或“身随心转”，并以轻快的感受作为相应条件（XII.119–136）。这些内容应与“意成身”区分：有些只是远距离知觉或决意，并不等于已经实际施展身体神变。 #### 7. 变化神通与意所成身（XII.137–139） 原文在章末明确区分两类能力： - **变化神通**（success as transformation）：从通常形相变现为男孩、龙、金翅鸟、阿修罗、帝释、天神、梵天、海、岩石、狮、虎、豹、象、马、车、步兵或军阵等；其操作被说明为依止以地遍等为所缘、作为直接知识基础的第四禅，出定后决意“让我成为……”或“让那里出现……”（XII.137–138）。 - **意所成身**（success as",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%96%E5%BF%83%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "法尊者对此说提出了明确的批评：\"此说并不完整。因为'圆满正觉'（即阿罗汉道智或一切智）纯粹是究竟法（胜义谛）层面之事；而'寂静奠基'所指的乃是彻底止息轮回诸苦、亦即完全的寂灭，这唯有在证入涅槃或般涅槃之时方能真正达成。\"换言之，仅仅\"证悟\"尚不足以说\"寂静已然圆满\"，因为烦恼虽断，色身与诸蕴仍在，轮回之苦尚未彻底止息。 ### （三）\"其他之师\"说：初转法轮之时方才圆满 这一派主张，四种奠基要到佛陀在鹿野苑宣说《转法轮经》、生起\"说法智\"（desanā-ñāṇa）的那一刻，才算圆满。 其论证是：佛陀过去世\"真实奠基\"的积累，透过宣说四圣谛时依次生起的\"谛智\"（了知此为真谛）、\"作智\"（了知对此真谛应尽何种责任）、\"已作智\"（了知对此真谛应尽的责任已经完成）这三重智慧模式，于每一圣谛上都圆满成就——\"真实\"于此方才圆满；透过将正法作为最伟大的布施施予众生，\"舍离\"于此方才圆满；透过自身证得离垢之寂静、并令他人也同样证得，\"寂静\"于此方才圆满；透过彻底通达一切众生的根性倾向与潜伏烦恼，\"智慧\"于此方才圆满。 大迦叶护法尊者同样批评此说：\"此说亦不完整。因为四种奠基真正圆满，须待佛陀应尽的'佛陀之责'（Buddha-kicca）全部完成之后。而初转法轮，不过是佛陀开始履行其职责的起点，远远谈不上'已经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%B3%95%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/theravada-mahayana/doctrinal-divergence.md",
+          "text": "位凌驾于四道四果； 6. 阿罗汉果属于较低、未究竟层次。 上座部缘起是： > 此有故彼有，此生故彼生。 它强调具体条件关系，不必然推出： > 任一现象完整包含一切现象，且彼此无碍相即。 --- # 十三、汉传法相唯识宗 主要分歧已经见于前述唯识部分，此外还包括： - 五位百法不是上座部阿毗达摩分类； - 八识不是上座部心识分类； - 二无我、二障的结构不同； - 转八识成四智不是上座部四道四果； - 五种姓学说不是上座部标准根机理论； - 法身、报身、化身不是上座部佛身分类。 但两者在精细心识分析、业种相续、禅定和烦恼分类上，具有较强的比较研究价值。 --- # 十四、《大乘起信论》及东亚真如心体系 重要概念： - 一心 - 真如门 - 生灭门 - 本觉 - 始觉 - 不觉 - 熏习 - 阿赖耶识 - 如来藏 上座部最难接受的是： > 一个“一心”同时作为绝对真如和生灭现象的根本。 原因是上座部一般不会让一个心体同时具备： - 无为 - 常住 - 不生灭 - 又生起世间诸法",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/theravada-mahayana/practice-comparison.md",
+          "text": "：错误安立的主客体； - 依他起性：依因缘生起的识流； - 圆成实性：依他起中永离能所二取的真实性。 ## 4. 与上座部的对应 可以功能比较： |唯识|上座部近似项目| |---|---| |观察虚妄分别|观察想、见、心行| |观察识流|心路过程、名法| |破能所执|六处、触、受、爱之缘起分析| |转依|道智断烦恼后心流根本改变| 但不能等同： - 阿赖耶识不等于有分心； - 转八识成四智不等于四道四果； - 三性不等于无常、苦、无我三相； - 唯识五位不等于七清净。 --- # 十、如来藏型修行 如来藏体系常见两种方向。 ## 1. 除垢显净型 修行逻辑是： 1. 心性本来清净； 2. 烦恼属于客尘； 3. 修道不是制造佛性； 4. 而是去除覆盖； 5. 佛性功德最终完全显露。 这种路线容易产生强烈修行信心。 ## 2. 实体化风险 若行者寻找： - 一个永恒觉知； - 不受条件影响的心体； - 身心背后的真正主人； - 纯净、常乐我的内在佛体， 上座部会认为修行已经从无我观转向细微我执。 ## 3. 与上座",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四智",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智。",
+              "score": 10.464213279572158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个四智：苦智、苦集智、苦灭智、导向苦灭道迹智。",
+              "score": 9.072127049774792,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E5%9B%9B%E6%99%BA%EF%BC%9A%E8%8B%A6%E6%99%BA%E3%80%81%E8%8B%A6%E9%9B%86%E6%99%BA%E3%80%81%E8%8B%A6%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+              "score": 8.50631643151603,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "法智",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智。",
+              "score": 10.794360126538967,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%B3%95%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+              "score": 8.774691461165826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%B3%95%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "类比智",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智。",
+              "score": 22.079164395066215,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+              "score": 18.404568304234232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn47.12",
+              "collection": "经藏/相应部_sn",
+              "title": "那难陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已知道法的类比：『大德！",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.12&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "般涅槃大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已知道法的类比：『大德！",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已知道法的类比：『大德！",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天眼智",
+              "score": 9.11522732241788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+            },
+            {
+              "uid": "sn12.70",
+              "collection": "经藏/相应部_sn",
+              "title": "苏尸摩经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "法住智在前，然后涅槃智。",
+              "score": 9.06912730042443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.70&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B3%95%E4%BD%8F%E6%99%BA%E5%9C%A8%E5%89%8D%EF%BC%8C%E7%84%B6%E5%BE%8C%E6%B6%85%E6%A7%83%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "意生神通智",
+              "score": 8.58116480154897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%84%8F%E7%94%9F%E7%A5%9E%E9%80%9A%E6%99%BA"
+            }
+          ]
+        },
+        {
+          "query": "他心智",
+          "hits": [
+            {
+              "uid": "sn52.24",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼的灭尽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「大通智、神通、天耳，他心、可能、业，",
+              "score": 14.761344057645992,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.24&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%A4%A7%E9%80%9A%E6%99%BA%E3%80%81%E7%A5%9E%E9%80%9A%E3%80%81%E5%A4%A9%E8%80%B3%EF%BC%8C%E4%BB%96%E5%BF%83%E3%80%81%E5%8F%AF%E8%83%BD%E3%80%81%E6%A5%AD%EF%BC%8C"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天眼智",
+              "score": 9.11522732241788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+            },
+            {
+              "uid": "sn12.70",
+              "collection": "经藏/相应部_sn",
+              "title": "苏尸摩经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "法住智在前，然后涅槃智。",
+              "score": 9.06912730042443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.70&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B3%95%E4%BD%8F%E6%99%BA%E5%9C%A8%E5%89%8D%EF%BC%8C%E7%84%B6%E5%BE%8C%E6%B6%85%E6%A7%83%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "意生神通智",
+              "score": 8.58116480154897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%84%8F%E7%94%9F%E7%A5%9E%E9%80%9A%E6%99%BA"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "各种神通智",
+              "score": 8.58116480154897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%90%84%E7%A8%AE%E7%A5%9E%E9%80%9A%E6%99%BA"
+            },
+            {
+              "uid": "sn12.33",
+              "collection": "经藏/相应部_sn",
+              "title": "智之事经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "老死智、老死集智、老死灭智、导向老死灭道迹智，生智、生集智、生灭智、导向生灭道迹智，有智、有集智、有灭智、导向有灭道迹智，取智、取集智、取灭智、导向取灭道迹智，渴爱智、渴爱集智、渴爱灭智、导向渴爱灭道迹智，受智、受集智、受灭智、导向受灭道迹智，触智……（中略）六处智……名色智……识智……行智、行集智、行灭智、导向行灭道迹智。",
+              "score": 8.567039668163128,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.33&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%81%E6%AD%BB%E6%99%BA%E3%80%81%E8%80%81%E6%AD%BB%E9%9B%86%E6%99%BA%E3%80%81%E8%80%81%E6%AD%BB%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E8%80%81%E6%AD%BB%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E7%94%9F%E6%99%BA%E3%80%81%E7%94%9F%E9%9B%86%E6%99%BA%E3%80%81%E7%94%9F%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E7%94%9F%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E6%9C%89%E6%99%BA%E3%80%81%E6%9C%89%E9%9B%86%E6%99%BA%E3%80%81%E6%9C%89%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E5%8F%96%E6%99%BA%E3%80%81%E5%8F%96%E9%9B%86%E6%99%BA%E3%80%81%E5%8F%96%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E5%8F%96%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E6%B8%B4%E6%84%9B%E6%99%BA%E3%80%81%E6%B8%B4%E6%84%9B%E9%9B%86%E6%99%BA%E3%80%81%E6%B8%B4%E6%84%9B%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E6%B8%B4%E6%84%9B%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E5%8F%97%E6%99%BA%E3%80%81%E5%8F%97%E9%9B%86%E6%99%BA%E3%80%81%E5%8F%97%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E5%8F%97%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%EF%BC%8C%E8%A7%B8%E6%99%BA%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%85%AD%E8%99%95%E6%99%BA%E2%80%A6%E2%80%A6%E5%90%8D%E8%89%B2%E6%99%BA%E2%80%A6%E2%80%A6%E8%AD%98%E6%99%BA%E2%80%A6%E2%80%A6%E8%A1%8C%E6%99%BA%E3%80%81%E8%A1%8C%E9%9B%86%E6%99%BA%E3%80%81%E8%A1%8C%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E8%A1%8C%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他人解脱智的教导",
+              "score": 8.106220159991212,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%96%E4%BA%BA%E8%A7%A3%E8%84%AB%E6%99%BA%E7%9A%84%E6%95%99%E5%B0%8E"
+            },
+            {
+              "uid": "an5.93",
+              "collection": "经藏/增支部_an",
+              "title": "记说经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正确地记说完全智，这是五种完全智的记说。",
+              "score": 8.069740891933082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.93&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%A8%98%E8%AA%AA%E5%AE%8C%E5%85%A8%E6%99%BA%EF%BC%8C%E9%80%99%E6%98%AF%E4%BA%94%E7%A8%AE%E5%AE%8C%E5%85%A8%E6%99%BA%E7%9A%84%E8%A8%98%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "世俗智",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智。",
+              "score": 18.658543721376468,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+              "score": 15.578309132230213,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dhp167-178",
+              "collection": "经藏/小部_kn",
+              "title": "世品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "莫增长世俗 。",
+              "score": 12.286171599784117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp167-178&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E8%8E%AB%E5%A2%9E%E9%95%B7%E4%B8%96%E4%BF%97+%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天眼智",
+              "score": 9.11522732241788,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+            },
+            {
+              "uid": "sn12.70",
+              "collection": "经藏/相应部_sn",
+              "title": "苏尸摩经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "法住智在前，然后涅槃智。",
+              "score": 9.06912730042443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.70&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B3%95%E4%BD%8F%E6%99%BA%E5%9C%A8%E5%89%8D%EF%BC%8C%E7%84%B6%E5%BE%8C%E6%B6%85%E6%A7%83%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "sn35.132",
+              "collection": "经藏/相应部_sn",
+              "title": "鲁西遮经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些婆罗门象征，只用来增加他们的世俗的利益。",
+              "score": 8.855336420973261,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.132&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E5%A9%86%E7%BE%85%E9%96%80%E8%B1%A1%E5%BE%B5%EF%BC%8C%E5%8F%AA%E7%94%A8%E4%BE%86%E5%A2%9E%E5%8A%A0%E4%BB%96%E5%80%91%E7%9A%84%E4%B8%96%E4%BF%97%E7%9A%84%E5%88%A9%E7%9B%8A%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "意生神通智",
+              "score": 8.58116480154897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%84%8F%E7%94%9F%E7%A5%9E%E9%80%9A%E6%99%BA"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "各种神通智",
+              "score": 8.58116480154897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E4%B8%96%E4%BF%97%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%90%84%E7%A8%AE%E7%A5%9E%E9%80%9A%E6%99%BA"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "生起\"**——这是佛教最核心的十二支因果链，也是\"苦如何生起\"的完整说明；反向（无明灭则行灭……）则是\"苦如何止息\"的完整说明。 （缘起）法的定性经进一步指出，缘起法则**\"不论诸如来出现，或诸如来不出现，那个界住立、法安住性、法决定性\"**——这是自然法则，佛陀只是发现它、揭示它，并非创造它。菩提比丘称这种分析每一现象\"生起、灭去、灭去之道\"的方式为**\"四谛模式\"**，并指出它在整部尼柯耶中反复出现，是理解一切现象的主要方法。四十四智事经则将此模式系统化地应用在十二支的每一支上，形成完整的\"智慧地图\"。 迦旃延氏经（此处菩提比丘称缘起为\"中道的教学\"）说明缘起如何避免落入\"常见\"（有一恒常不变的自我）与\"断见\"（死后一切断灭）两个极端，这正是佛教\"中道\"哲学最精确的表述。 **（五）四圣谛**——本章压轴主题。**\"一把树叶\"经**是全书最动人的比喻之一：佛陀以手取少量申恕树叶，问比丘：\"我手中的树叶，与森林里的树叶，哪个较多？\"比丘答森林里的多。佛陀说：**\"这经我证知而不对你们说的多……因为这不具利益，不是梵行的基础，不导向厌、离贪、灭、寂静、证智、正觉、涅槃，因此它不为我所说。\"** 佛陀所说的，只是\"苦、苦集、苦灭、导向苦灭道迹\"——这四圣谛。这一比喻精妙地回应了第七章开篇摩罗迦比丘执",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site",
+          "query": "四智"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "6. 远近、大小与身行的控制（XII.69–136） 原文随后把“神通成功”推进到更细的操作说明：修行者依止作为直接知识基础的禅那，出定后作前行与决意，可以使远处显近、近处显远，使多变少、少变多，也可在特定叙述中改变食物的味道或使水呈现为乳酥等（XII.119–128）。这些段落不是在宣称普通人的物理能力，而是在解释《清净道论》所引《无碍解道》关于“决意”的条件性模型。 原文还说明了到梵天界的几种表现：以天眼见其色、以天耳闻其声、以他心智知其心；若要以可见身或不可见身前往，则分别说明“心随身转”或“身随心转”，并以轻快的感受作为相应条件（XII.119–136）。这些内容应与“意成身”区分：有些只是远距离知觉或决意，并不等于已经实际施展身体神变。 #### 7. 变化神通与意所成身（XII.137–139） 原文在章末明确区分两类能力： - **变化神通**（success as transformation）：从通常形相变现为男孩、龙、金翅鸟、阿修罗、帝释、天神、梵天、海、岩石、狮、虎、豹、象、马、车、步兵或军阵等；其操作被说明为依止以地遍等为所缘、作为直接知识基础的第四禅，出定后决意“让我成为……”或“让那里出现……”（XII.137–138）。 - **意所成身**（success as",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%96%E5%BF%83%E6%99%BA&scope=site",
+          "query": "他心智"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "法尊者对此说提出了明确的批评：\"此说并不完整。因为'圆满正觉'（即阿罗汉道智或一切智）纯粹是究竟法（胜义谛）层面之事；而'寂静奠基'所指的乃是彻底止息轮回诸苦、亦即完全的寂灭，这唯有在证入涅槃或般涅槃之时方能真正达成。\"换言之，仅仅\"证悟\"尚不足以说\"寂静已然圆满\"，因为烦恼虽断，色身与诸蕴仍在，轮回之苦尚未彻底止息。 ### （三）\"其他之师\"说：初转法轮之时方才圆满 这一派主张，四种奠基要到佛陀在鹿野苑宣说《转法轮经》、生起\"说法智\"（desanā-ñāṇa）的那一刻，才算圆满。 其论证是：佛陀过去世\"真实奠基\"的积累，透过宣说四圣谛时依次生起的\"谛智\"（了知此为真谛）、\"作智\"（了知对此真谛应尽何种责任）、\"已作智\"（了知对此真谛应尽的责任已经完成）这三重智慧模式，于每一圣谛上都圆满成就——\"真实\"于此方才圆满；透过将正法作为最伟大的布施施予众生，\"舍离\"于此方才圆满；透过自身证得离垢之寂静、并令他人也同样证得，\"寂静\"于此方才圆满；透过彻底通达一切众生的根性倾向与潜伏烦恼，\"智慧\"于此方才圆满。 大迦叶护法尊者同样批评此说：\"此说亦不完整。因为四种奠基真正圆满，须待佛陀应尽的'佛陀之责'（Buddha-kicca）全部完成之后。而初转法轮，不过是佛陀开始履行其职责的起点，远远谈不上'已经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%B3%95%E6%99%BA&scope=site",
+          "query": "法智"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/theravada-mahayana/doctrinal-divergence.md",
+          "heading": "站内搜索命中",
+          "text": "位凌驾于四道四果； 6. 阿罗汉果属于较低、未究竟层次。 上座部缘起是： > 此有故彼有，此生故彼生。 它强调具体条件关系，不必然推出： > 任一现象完整包含一切现象，且彼此无碍相即。 --- # 十三、汉传法相唯识宗 主要分歧已经见于前述唯识部分，此外还包括： - 五位百法不是上座部阿毗达摩分类； - 八识不是上座部心识分类； - 二无我、二障的结构不同； - 转八识成四智不是上座部四道四果； - 五种姓学说不是上座部标准根机理论； - 法身、报身、化身不是上座部佛身分类。 但两者在精细心识分析、业种相续、禅定和烦恼分类上，具有较强的比较研究价值。 --- # 十四、《大乘起信论》及东亚真如心体系 重要概念： - 一心 - 真如门 - 生灭门 - 本觉 - 始觉 - 不觉 - 熏习 - 阿赖耶识 - 如来藏 上座部最难接受的是： > 一个“一心”同时作为绝对真如和生灭现象的根本。 原因是上座部一般不会让一个心体同时具备： - 无为 - 常住 - 不生灭 - 又生起世间诸法",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site",
+          "query": "四智"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/theravada-mahayana/practice-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "：错误安立的主客体； - 依他起性：依因缘生起的识流； - 圆成实性：依他起中永离能所二取的真实性。 ## 4. 与上座部的对应 可以功能比较： |唯识|上座部近似项目| |---|---| |观察虚妄分别|观察想、见、心行| |观察识流|心路过程、名法| |破能所执|六处、触、受、爱之缘起分析| |转依|道智断烦恼后心流根本改变| 但不能等同： - 阿赖耶识不等于有分心； - 转八识成四智不等于四道四果； - 三性不等于无常、苦、无我三相； - 唯识五位不等于七清净。 --- # 十、如来藏型修行 如来藏体系常见两种方向。 ## 1. 除垢显净型 修行逻辑是： 1. 心性本来清净； 2. 烦恼属于客尘； 3. 修道不是制造佛性； 4. 而是去除覆盖； 5. 佛性功德最终完全显露。 这种路线容易产生强烈修行信心。 ## 2. 实体化风险 若行者寻找： - 一个永恒觉知； - 不受条件影响的心体； - 身心背后的真正主人； - 纯净、常乐我的内在佛体， 上座部会认为修行已经从无我观转向细微我执。 ## 3. 与上座",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site",
+          "query": "四智"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g11",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 11,
+      "label": "四智",
+      "members": "法智、类比智、他心智、世俗智",
+      "member_items": [
+        "法智",
+        "类比智",
+        "他心智",
+        "世俗智"
+      ],
+      "dn34_status": null,
+      "source_text": "四智：法智、类比智、他心智、世俗智。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+    },
+    {
+      "id": "dn34-n4-g8",
+      "sutta": "dn34",
+      "number": 4,
+      "order": 8,
+      "label": "四智",
+      "members": "法智、类比智、他心智、世俗智",
+      "member_items": [
+        "法智",
+        "类比智",
+        "他心智",
+        "世俗智"
+      ],
+      "dn34_status": "应生出",
+      "source_text": "（八）哪些是应该使之生出的四法呢？四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+    }
+  ]
+}

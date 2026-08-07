@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-356359cee648",
+    "number": 5,
+    "label": "五趣",
+    "member_items": [
+      "地狱",
+      "畜生",
+      "饿鬼",
+      "人",
+      "天"
+    ],
+    "group_ids": [
+      "dn33-n5-g4"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五趣",
+      "地狱",
+      "畜生",
+      "饿鬼"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五趣」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：地狱、畜生、饿鬼、人、天。[1]\n\n## 所含各法\n### 地狱\n经文将「地狱」列为「五趣」的一个成员。Early Buddhist 用该名词检索时，在《地狱人地狱等经》命中：地狱人地狱等经。[3]\n### 畜生\n经文将「畜生」列为「五趣」的一个成员。Early Buddhist 用该名词检索时，在《畜生论经》命中：畜生论经。[4]\n### 饿鬼\n经文将「饿鬼」列为「五趣」的一个成员。Early Buddhist 用该名词检索时，在《饿鬼天饿鬼界经》命中：饿鬼天饿鬼界经。[5]\n### 人\n经文将「人」列为「五趣」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[1]\n### 天\n经文将「天」列为「五趣」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 28 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五趣",
+          "text": "五趣：地狱、畜生、饿鬼、人、天。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%9C%B0%E7%8D%84%E3%80%81%E7%95%9C%E7%94%9F%E3%80%81%E9%A4%93%E9%AC%BC%E3%80%81%E4%BA%BA%E3%80%81%E5%A4%A9"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "这是五趣。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%B6%A3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.114-116",
+          "text": "地狱人地狱等经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.114-116&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E4%BA%BA%E5%9C%B0%E7%8D%84%E7%AD%89%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.10",
+          "text": "畜生论经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.10&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%9C%E7%94%9F%E8%AB%96%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.131",
+          "text": "饿鬼天饿鬼界经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.131&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E5%A4%A9%E9%A4%93%E9%AC%BC%E7%95%8C%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.68",
+          "text": "这是五趣。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.68&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%B6%A3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.131",
+          "text": "五趣中略品第十一，其摄颂：",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.131&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E8%B6%A3%E4%B8%AD%E7%95%A5%E5%93%81%E7%AC%AC%E5%8D%81%E4%B8%80%EF%BC%8C%E5%85%B6%E6%94%9D%E9%A0%8C%EF%BC%9A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五趣：地狱、畜生、饿鬼、人、天。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%B6%A3%EF%BC%9A%E5%9C%B0%E7%8D%84%E3%80%81%E7%95%9C%E7%94%9F%E3%80%81%E9%A4%93%E9%AC%BC%E3%80%81%E4%BA%BA%E3%80%81%E5%A4%A9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.117-119",
+          "text": "地狱天地狱等经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.117-119&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E5%A4%A9%E5%9C%B0%E7%8D%84%E7%AD%89%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.89",
+          "text": "二十阿诃诃地狱等于一古木达地狱；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.89&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%8C%E5%8D%81%E9%98%BF%E8%A8%B6%E8%A8%B6%E5%9C%B0%E7%8D%84%E7%AD%89%E6%96%BC%E4%B8%80%E5%8F%A4%E6%9C%A8%E9%81%94%E5%9C%B0%E7%8D%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn6.10",
+          "text": "二十阿诃诃地狱等于一古木达地狱；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn6.10&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%8C%E5%8D%81%E9%98%BF%E8%A8%B6%E8%A8%B6%E5%9C%B0%E7%8D%84%E7%AD%89%E6%96%BC%E4%B8%80%E5%8F%A4%E6%9C%A8%E9%81%94%E5%9C%B0%E7%8D%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.64",
+          "text": "地狱经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.64&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.145",
+          "text": "地狱经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.145&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E7%B6%93"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "禅定容易千倍），但欲贪之火燃烧全身，苦苦深重；寿命一尽便骤然堕落，坏苦来得又急又快，\"如烈火骤然被浇灭\"。 - **人间**：三种苦都极为深重——受孕、出生之苦，寒暑劳作、谋生纳税之苦，六根门\"如魔鬼一般\"需要不断供养才能安抚的苦，以及随时可能死亡的坏苦。雷迪大长老细数了人间苦的种种具体情态：耕作之劳、事君之劳、养家之劳、维持体面之劳，乃至外道苦行者\"近火受热、近水受寒\"式的无益苦行，皆在此列。 - **四恶趣**（地狱、饿鬼、阿修罗、畜生）：苦苦最为剧烈——地狱众生\"骨肉脏腑俱化为炽热的红炭，皮肤中窜出条条火舌\"，历经千百亿年而不得解脱，直至恶业耗尽为止。 雷迪大长老还引用了一个极具视觉冲击力的意象说明众生数量之悬殊：**\"人天善趣二十七处的居民总数，甚至比不上缅甸一地蚂蚁的数量\"**；**阿鼻地狱之拥挤，如竹筒中塞满芥子**——以此说明恶趣众生远多于善趣，而唯有布施、持戒、修定三种善业，才能使众生在临终时\"客观化\"一个善业而投生善趣。 ### 三、如何被业与五蕴\"谋杀\"——轮回流转的机制 本手册用了一个极具张力的意象来说明\"我见\"如何让众生反复堕落：**\"色蕴是杀手，受想行识亦是杀手\"**（引自《相应部》）。雷迪大长老解释：任何死亡都必然伴随身体的破坏、变异，正是**五蕴本身的\"变化法则\"（V",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/carnegie-human-nature.md",
+          "text": "am）。 贪求赞美属于\"行\"（samkhara），而行恰是轮回之因。 ``` ### 《清净道论》的深度注疏评价 **觉音尊者在第二章《持戒波罗蜜》的论述**（如你已检索的内容）： > 概括：虚伪有五种表现：虚伪地用资具、虚伪地说接近证悟的课题、虚伪的威仪、虚谈、暗示...... 这些虚伪的共同点是：为了获得供养和他人的赞美与尊敬。 > > 虽然表面上这些行为似乎能获得利益，但实际上它们是邪命， **邪命的果报是堕入地狱、饿鬼、畜生三恶道**。 即使不堕入恶道，转生为人时也会因此而贫穷、低贱、短命。\" **《清净道论》第20章《阿罗汉的品质》的论述**： > 概括：真正的修行者不执著于他人的赞美，也不追求他人的尊敬。 若一个修行人因被赞美而欢喜，或因被批评而沮丧， 则此人的心仍被烦恼所奴役，远未达到阿罗汉的清净境界。 --- ## 争议二：关于「利用人心」vs「慈悲心」的本质区别 ### 卡耐基的心理学策略 **《人性的优点》关键方法**： > 概括：要想让人们配合你，你必须了解他们内心最深的需求...... 当你满足了他们的需求，他们自然会帮助你实现目标。 **本质分析**：这是一种**互惠利用关系**，不是真正的给予。 ### 巴利三藏对「慈悲心」（mettā）的定义 #",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/patipada-summary.md",
+          "text": "』与『戒』是大师佛陀的解脱心。」 ### 第三节：与毒蛇相遇 阿姜措不顾村民警告，执意住进有\"洞主\"黑蛇盘踞的石窟，以业力信念自我壮胆： > 「如果一个人的大限寿命已到，那么就算人在家中躲，祸依然会从天而降……即使我前去那个洞窟里居住，如果我的阳寿未尽，我依然可以继续过着比丘的生活。」 面对来势汹汹的毒蛇，他以慈心相待、以\"平等观\"化解对立： > 「说不定你比我有更成熟、更强大的波罗蜜……可能当你此生的寿命结束之后，你便可脱离畜生之躯……然后很可能比我还要快获得波罗蜜与解脱成就。」 蛇最终\"以一种顺服的态度趴在地上\"，此后每日来访，人蛇和睦相处，摩诃布瓦借此申论慈心不可思议的感化力量。本节末尾亦附阿姜措论\"死亡观\"的自白：「他随缘接纳死亡的到来，放下一切，没有顾虑与罣碍，潇洒自在」，堪称头陀比丘生死观的典范表述。 ### 第四节：与各种不同的老虎相遇 本节记录数则老虎奇遇：其一为幻化之虎——阿姜措靠近时老虎骤然消失无踪，阿姜曼解释此乃天神神通变现，非真实老虎；其二为龙王故事——阿姜曼、阿姜措与湄公河畔龙族的互动，龙王因不信任比丘而在水中下毒，阿姜曼以神通洞悉并令其悔改： > 「为什么你们要在对人与动物都有帮助的水中放毒？……如果龙害怕恶业及下地狱，就应该赶紧去把水中的毒给解除。」 龙",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "_…… \"诸比丘！于世间，一人之出现极为稀有：谁？如来、阿罗汉、正等正觉者是也。\" 注疏进一步说明：仅布施一项波罗蜜，纵使行之一次、十次乃至百千万亿次，纵使行之一日、一月、一年乃至百千亿大劫，皆不足以成佛；唯有历经至少四阿僧祇劫又十万大劫，无间断、至诚恳切地圆满一切波罗蜜，方能成佛。 ### 八不幸之境 vs 一幸运之境 本章末尾详述佛教特有的\"八无暇\"（akkhaṇa）教义（据《增支部》AN 8.29）： 1. 地狱道 2. 畜生道 3. 饿鬼道 4. 无想天梵天（asañña-satta） 5. 边地（无缘闻法之地） 6. 持坚固邪见者 7. 诸根缺陷者 8. 佛未出世之时 与之相对，\"佛陀出世\"乃唯一之\"幸运境\"（Buddhuppāda-navama-khaṇa）。书末以恳切的劝勉作结： > \"当今良善佛弟子，既生而为人、诸根具足、持正见，又值佛法住世之时……若仍疏懈于戒定慧之修习，实乃错失黄金良机。堕入八无暇之几率既多且频，而生逢佛法之机缘则极为稀罕。唯愿诸位于此殊胜机缘中，精勤修习戒定慧三学，直至证悟。\" --- ## 第三章：婆罗门苏梅达 ### 缘起：舍利弗尊者之请 本章开篇交代整部《佛种姓经》的说法因缘：佛陀成道后首次回迦毘罗卫城，释迦族长老因傲慢不肯礼敬，佛陀遂于虚",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md",
+          "text": "不同根性，必须学习相应的道路，所以三乘之道都可成为菩萨利益众生的方便。大乘道必须包含其他乘所具有的断除烦恼和证得功德，因此一切佛语都属于成佛大乘道的支分。 ### 9.2 谤法、恶业与断罪 #### 觉音《清净道论》：嗔恚恶业与三种菩提 > 任何你所造的善恶业，我将是它的继承者。而且现在由于你的（嗔所起的）业，你既不得等正觉，亦不能得辟支菩提、声闻地、梵天、帝释、转轮王、王侯等的任何地位，但此业将把你从佛教开除出去，成为受残食的（畜生）等，并将生到地狱等的大苦处。 出处：觉音《清净道论》第九品“说梵住品”，叶均译，印刷页 302；相应段落为 Vism IX.23。 **今译：**人所造的善业或恶业，终究由自己承受结果。由嗔恚所生的恶业，会使人不能获得正等正觉、辟支菩提、声闻果等成就，并可能离开佛法、堕入恶趣和地狱等大苦处。 #### 阿底峡《菩提道灯论》：断罪及欲 > 损害心忿心，悭吝与嫉妒；从今至证道，此等终不起。当修行梵行，当断罪及欲。 出处：阿底峡《菩提道灯论》，CBETA G148n2518_p0443a08。 **今译：**从现在直到证道，都不应生起害心、嗔恨、悭吝和嫉妒；应修清净梵行，断除罪恶和欲望。 #### 宗喀巴《菩提道次第略论》：谤法罪障 > 若以诸大经论，唯讲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五趣",
+          "hits": [
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五趣。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%B6%A3%E3%80%82"
+            },
+            {
+              "uid": "an9.68",
+              "collection": "经藏/增支部_an",
+              "title": "趣经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五趣。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.68&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%B6%A3%E3%80%82"
+            },
+            {
+              "uid": "sn56.131",
+              "collection": "经藏/相应部_sn",
+              "title": "饿鬼天饿鬼界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五趣中略品第十一，其摄颂：",
+              "score": 13.272566954679581,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.131&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E8%B6%A3%E4%B8%AD%E7%95%A5%E5%93%81%E7%AC%AC%E5%8D%81%E4%B8%80%EF%BC%8C%E5%85%B6%E6%94%9D%E9%A0%8C%EF%BC%9A"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五趣：地狱、畜生、饿鬼、人、天。",
+              "score": 10.217623347138558,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%B6%A3%EF%BC%9A%E5%9C%B0%E7%8D%84%E3%80%81%E7%95%9C%E7%94%9F%E3%80%81%E9%A4%93%E9%AC%BC%E3%80%81%E4%BA%BA%E3%80%81%E5%A4%A9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "地狱",
+          "hits": [
+            {
+              "uid": "sn56.114-116",
+              "collection": "经藏/相应部_sn",
+              "title": "地狱人地狱等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱人地狱等经",
+              "score": 9.633568883989506,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.114-116&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E4%BA%BA%E5%9C%B0%E7%8D%84%E7%AD%89%E7%B6%93"
+            },
+            {
+              "uid": "sn56.117-119",
+              "collection": "经藏/相应部_sn",
+              "title": "地狱天地狱等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱天地狱等经",
+              "score": 9.633568883989506,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.117-119&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E5%A4%A9%E5%9C%B0%E7%8D%84%E7%AD%89%E7%B6%93"
+            },
+            {
+              "uid": "an10.89",
+              "collection": "经藏/增支部_an",
+              "title": "瞿迦梨迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "二十阿诃诃地狱等于一古木达地狱；",
+              "score": 8.710187686196047,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.89&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%8C%E5%8D%81%E9%98%BF%E8%A8%B6%E8%A8%B6%E5%9C%B0%E7%8D%84%E7%AD%89%E6%96%BC%E4%B8%80%E5%8F%A4%E6%9C%A8%E9%81%94%E5%9C%B0%E7%8D%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn6.10",
+              "collection": "经藏/相应部_sn",
+              "title": "瞿迦梨迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "二十阿诃诃地狱等于一古木达地狱；",
+              "score": 8.710187686196047,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn6.10&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%8C%E5%8D%81%E9%98%BF%E8%A8%B6%E8%A8%B6%E5%9C%B0%E7%8D%84%E7%AD%89%E6%96%BC%E4%B8%80%E5%8F%A4%E6%9C%A8%E9%81%94%E5%9C%B0%E7%8D%84%EF%BC%9B"
+            },
+            {
+              "uid": "an4.64",
+              "collection": "经藏/增支部_an",
+              "title": "地狱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱经",
+              "score": 8.48341691964586,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.64&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E7%B6%93"
+            },
+            {
+              "uid": "an5.145",
+              "collection": "经藏/增支部_an",
+              "title": "地狱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱经",
+              "score": 8.48341691964586,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.145&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E7%B6%93"
+            },
+            {
+              "uid": "an5.173",
+              "collection": "经藏/增支部_an",
+              "title": "地狱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱经",
+              "score": 8.48341691964586,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.173&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E7%B6%93"
+            },
+            {
+              "uid": "dhp306-319",
+              "collection": "经藏/小部_kn",
+              "title": "地狱品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "地狱品",
+              "score": 8.48341691964586,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp306-319&lang=zh&q=%E5%9C%B0%E7%8D%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%9C%B0%E7%8D%84%E5%93%81"
+            }
+          ]
+        },
+        {
+          "query": "畜生",
+          "hits": [
+            {
+              "uid": "sn56.10",
+              "collection": "经藏/相应部_sn",
+              "title": "畜生论经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "畜生论经",
+              "score": 10.352846161963246,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.10&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%9C%E7%94%9F%E8%AB%96%E7%B6%93"
+            },
+            {
+              "uid": "sn56.103",
+              "collection": "经藏/相应部_sn",
+              "title": "人死畜生经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "人死畜生经",
+              "score": 9.746271369711167,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.103&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%BA%E6%AD%BB%E7%95%9C%E7%94%9F%E7%B6%93"
+            },
+            {
+              "uid": "mn110",
+              "collection": "经藏/中部_mn",
+              "title": "满月小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "地狱或畜生界。",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn110&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%B0%E7%8D%84%E6%88%96%E7%95%9C%E7%94%9F%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn55.1",
+              "collection": "经藏/相应部_sn",
+              "title": "转轮王经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从畜生界解脱；",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.1&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E7%95%9C%E7%94%9F%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从畜生界解脱；",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E7%95%9C%E7%94%9F%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从畜生界解脱；",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E7%95%9C%E7%94%9F%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从畜生界解脱；",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E7%95%9C%E7%94%9F%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从畜生界解脱；",
+              "score": 9.206841179374239,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E7%95%9C%E7%94%9F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E7%95%9C%E7%94%9F%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "饿鬼",
+          "hits": [
+            {
+              "uid": "sn56.131",
+              "collection": "经藏/相应部_sn",
+              "title": "饿鬼天饿鬼界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "饿鬼天饿鬼界经",
+              "score": 12.957846705214443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.131&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E5%A4%A9%E9%A4%93%E9%AC%BC%E7%95%8C%E7%B6%93"
+            },
+            {
+              "uid": "sn56.104",
+              "collection": "经藏/相应部_sn",
+              "title": "人死饿鬼界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "人死饿鬼界经",
+              "score": 10.742248150585086,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.104&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%BA%E6%AD%BB%E9%A4%93%E9%AC%BC%E7%95%8C%E7%B6%93"
+            },
+            {
+              "uid": "sn55.1",
+              "collection": "经藏/相应部_sn",
+              "title": "转轮王经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.1&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.24",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从饿鬼界解脱；",
+              "score": 10.147693295225219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.24&lang=zh&q=%E9%A4%93%E9%AC%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%BE%9E%E9%A4%93%E9%AC%BC%E7%95%8C%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "禅定容易千倍），但欲贪之火燃烧全身，苦苦深重；寿命一尽便骤然堕落，坏苦来得又急又快，\"如烈火骤然被浇灭\"。 - **人间**：三种苦都极为深重——受孕、出生之苦，寒暑劳作、谋生纳税之苦，六根门\"如魔鬼一般\"需要不断供养才能安抚的苦，以及随时可能死亡的坏苦。雷迪大长老细数了人间苦的种种具体情态：耕作之劳、事君之劳、养家之劳、维持体面之劳，乃至外道苦行者\"近火受热、近水受寒\"式的无益苦行，皆在此列。 - **四恶趣**（地狱、饿鬼、阿修罗、畜生）：苦苦最为剧烈——地狱众生\"骨肉脏腑俱化为炽热的红炭，皮肤中窜出条条火舌\"，历经千百亿年而不得解脱，直至恶业耗尽为止。 雷迪大长老还引用了一个极具视觉冲击力的意象说明众生数量之悬殊：**\"人天善趣二十七处的居民总数，甚至比不上缅甸一地蚂蚁的数量\"**；**阿鼻地狱之拥挤，如竹筒中塞满芥子**——以此说明恶趣众生远多于善趣，而唯有布施、持戒、修定三种善业，才能使众生在临终时\"客观化\"一个善业而投生善趣。 ### 三、如何被业与五蕴\"谋杀\"——轮回流转的机制 本手册用了一个极具张力的意象来说明\"我见\"如何让众生反复堕落：**\"色蕴是杀手，受想行识亦是杀手\"**（引自《相应部》）。雷迪大长老解释：任何死亡都必然伴随身体的破坏、变异，正是**五蕴本身的\"变化法则\"（V",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        },
+        {
+          "source": "docs/research/psychology/carnegie-human-nature.md",
+          "heading": "站内搜索命中",
+          "text": "am）。 贪求赞美属于\"行\"（samkhara），而行恰是轮回之因。 ``` ### 《清净道论》的深度注疏评价 **觉音尊者在第二章《持戒波罗蜜》的论述**（如你已检索的内容）： > 概括：虚伪有五种表现：虚伪地用资具、虚伪地说接近证悟的课题、虚伪的威仪、虚谈、暗示...... 这些虚伪的共同点是：为了获得供养和他人的赞美与尊敬。 > > 虽然表面上这些行为似乎能获得利益，但实际上它们是邪命， **邪命的果报是堕入地狱、饿鬼、畜生三恶道**。 即使不堕入恶道，转生为人时也会因此而贫穷、低贱、短命。\" **《清净道论》第20章《阿罗汉的品质》的论述**： > 概括：真正的修行者不执著于他人的赞美，也不追求他人的尊敬。 若一个修行人因被赞美而欢喜，或因被批评而沮丧， 则此人的心仍被烦恼所奴役，远未达到阿罗汉的清净境界。 --- ## 争议二：关于「利用人心」vs「慈悲心」的本质区别 ### 卡耐基的心理学策略 **《人性的优点》关键方法**： > 概括：要想让人们配合你，你必须了解他们内心最深的需求...... 当你满足了他们的需求，他们自然会帮助你实现目标。 **本质分析**：这是一种**互惠利用关系**，不是真正的给予。 ### 巴利三藏对「慈悲心」（mettā）的定义 #",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        },
+        {
+          "source": "docs/research/forest-monks/patipada-summary.md",
+          "heading": "站内搜索命中",
+          "text": "』与『戒』是大师佛陀的解脱心。」 ### 第三节：与毒蛇相遇 阿姜措不顾村民警告，执意住进有\"洞主\"黑蛇盘踞的石窟，以业力信念自我壮胆： > 「如果一个人的大限寿命已到，那么就算人在家中躲，祸依然会从天而降……即使我前去那个洞窟里居住，如果我的阳寿未尽，我依然可以继续过着比丘的生活。」 面对来势汹汹的毒蛇，他以慈心相待、以\"平等观\"化解对立： > 「说不定你比我有更成熟、更强大的波罗蜜……可能当你此生的寿命结束之后，你便可脱离畜生之躯……然后很可能比我还要快获得波罗蜜与解脱成就。」 蛇最终\"以一种顺服的态度趴在地上\"，此后每日来访，人蛇和睦相处，摩诃布瓦借此申论慈心不可思议的感化力量。本节末尾亦附阿姜措论\"死亡观\"的自白：「他随缘接纳死亡的到来，放下一切，没有顾虑与罣碍，潇洒自在」，堪称头陀比丘生死观的典范表述。 ### 第四节：与各种不同的老虎相遇 本节记录数则老虎奇遇：其一为幻化之虎——阿姜措靠近时老虎骤然消失无踪，阿姜曼解释此乃天神神通变现，非真实老虎；其二为龙王故事——阿姜曼、阿姜措与湄公河畔龙族的互动，龙王因不信任比丘而在水中下毒，阿姜曼以神通洞悉并令其悔改： > 「为什么你们要在对人与动物都有帮助的水中放毒？……如果龙害怕恶业及下地狱，就应该赶紧去把水中的毒给解除。」 龙",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "_…… \"诸比丘！于世间，一人之出现极为稀有：谁？如来、阿罗汉、正等正觉者是也。\" 注疏进一步说明：仅布施一项波罗蜜，纵使行之一次、十次乃至百千万亿次，纵使行之一日、一月、一年乃至百千亿大劫，皆不足以成佛；唯有历经至少四阿僧祇劫又十万大劫，无间断、至诚恳切地圆满一切波罗蜜，方能成佛。 ### 八不幸之境 vs 一幸运之境 本章末尾详述佛教特有的\"八无暇\"（akkhaṇa）教义（据《增支部》AN 8.29）： 1. 地狱道 2. 畜生道 3. 饿鬼道 4. 无想天梵天（asañña-satta） 5. 边地（无缘闻法之地） 6. 持坚固邪见者 7. 诸根缺陷者 8. 佛未出世之时 与之相对，\"佛陀出世\"乃唯一之\"幸运境\"（Buddhuppāda-navama-khaṇa）。书末以恳切的劝勉作结： > \"当今良善佛弟子，既生而为人、诸根具足、持正见，又值佛法住世之时……若仍疏懈于戒定慧之修习，实乃错失黄金良机。堕入八无暇之几率既多且频，而生逢佛法之机缘则极为稀罕。唯愿诸位于此殊胜机缘中，精勤修习戒定慧三学，直至证悟。\" --- ## 第三章：婆罗门苏梅达 ### 缘起：舍利弗尊者之请 本章开篇交代整部《佛种姓经》的说法因缘：佛陀成道后首次回迦毘罗卫城，释迦族长老因傲慢不肯礼敬，佛陀遂于虚",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md",
+          "heading": "站内搜索命中",
+          "text": "不同根性，必须学习相应的道路，所以三乘之道都可成为菩萨利益众生的方便。大乘道必须包含其他乘所具有的断除烦恼和证得功德，因此一切佛语都属于成佛大乘道的支分。 ### 9.2 谤法、恶业与断罪 #### 觉音《清净道论》：嗔恚恶业与三种菩提 > 任何你所造的善恶业，我将是它的继承者。而且现在由于你的（嗔所起的）业，你既不得等正觉，亦不能得辟支菩提、声闻地、梵天、帝释、转轮王、王侯等的任何地位，但此业将把你从佛教开除出去，成为受残食的（畜生）等，并将生到地狱等的大苦处。 出处：觉音《清净道论》第九品“说梵住品”，叶均译，印刷页 302；相应段落为 Vism IX.23。 **今译：**人所造的善业或恶业，终究由自己承受结果。由嗔恚所生的恶业，会使人不能获得正等正觉、辟支菩提、声闻果等成就，并可能离开佛法、堕入恶趣和地狱等大苦处。 #### 阿底峡《菩提道灯论》：断罪及欲 > 损害心忿心，悭吝与嫉妒；从今至证道，此等终不起。当修行梵行，当断罪及欲。 出处：阿底峡《菩提道灯论》，CBETA G148n2518_p0443a08。 **今译：**从现在直到证道，都不应生起害心、嗔恨、悭吝和嫉妒；应修清净梵行，断除罪恶和欲望。 #### 宗喀巴《菩提道次第略论》：谤法罪障 > 若以诸大经论，唯讲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        },
+        {
+          "source": "docs/research/pali-source-texts/vinaya/samantapasadika.md",
+          "heading": "站内搜索命中",
+          "text": "复强调授戒的资格与程序：僧数、界限、闻见、身根条件、和尚阿阇梨的腊数与教导能力皆不可草率。因为出家不是私人宣言，而是进入一个可教、可学、可承担责任的共同体。 ### D. 判罪的总方法：先看心、事、境、方便与完成点 大量看似繁琐的案例，实际上在建立精准的判准。可概括为： 1. **动机与认知**：是否有欲心、盗心、杀心？是否明知、故作、误认？有些性罪须心行俱具；有些制罪即使无心仍须注意。 2. **对境与关系**：对象是人、非人、畜生，或是女众、僧物、私物？是否有主、已舍、亲属、受托？对境不同，罪阶不同。 3. **行为阶段**：初方便、随方便、临结成与事成，罪可由突吉罗、偷兰遮递进至重罪。譬如盗物，触、动、离本处；教人偷盗，起教、受教、实际离处，各有不同后果。 4. **时间、空间、界与僧数**：明相、非时、聚落界、船渡、安居界、布萨界、法会人数，都是使行为可明确判定、可共同验证的条件。 5. **可否忏悔与如何修复**：波罗夷不可复本；僧残须依僧作法；偷兰遮、波逸提、提舍尼、突吉罗等依其法忏悔。目的不是贴标签，而是止恶、发露、恢复清净关系。 ### E. 四波罗夷：最重的边界不是恐吓，而是保护信任 本品对四重戒作极细的因缘释： - **淫戒**：重点在欲心、相触、入处与是否受逼迫。以优钵",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%95%9C%E7%94%9F&scope=site",
+          "query": "畜生"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g4",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 4,
+      "label": "五趣",
+      "members": "地狱、畜生、饿鬼、人、天",
+      "member_items": [
+        "地狱",
+        "畜生",
+        "饿鬼",
+        "人",
+        "天"
+      ],
+      "dn34_status": null,
+      "source_text": "五趣：地狱、畜生、饿鬼、人、天。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%B6%A3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%9C%B0%E7%8D%84%E3%80%81%E7%95%9C%E7%94%9F%E3%80%81%E9%A4%93%E9%AC%BC%E3%80%81%E4%BA%BA%E3%80%81%E5%A4%A9"
+    }
+  ]
+}

@@ -1,25 +1,36 @@
 #!/usr/bin/env python3
-"""Build the evidence-bound DN33/DN34 dharma-number research dataset.
+"""Build the DN33/DN34 dhamma-number research dataset.
 
-The source snapshot is the public Early Buddhist export.  This builder keeps
-the source paragraph verbatim, extracts only explicitly labelled numbered
-groups, computes conservative same-number correspondences, and produces a
-static evidence-only synthesis.  It intentionally does not call a model API.
+The browser already uses Early Buddhist's own public tokenizer/BM25 engine.
+Its batch results are frozen in ``dhamma-early-buddhist-cache.json`` by the
+companion browser collection pass, then joined here with source paragraphs and
+the site's local research search.  No personal API key or model endpoint is
+used: every pre-generated synthesis is constrained to the retained evidence.
+
+Install build dependencies with ``python3 -m pip install -r
+scripts/requirements-digha-dhamma-numbers.txt``.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
+from collections import defaultdict
 from pathlib import Path
 from urllib.parse import quote
 
 from bs4 import BeautifulSoup
+from opencc import OpenCC
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "docs/research/pali-source-texts/sutta/digha/data"
-OUT = ROOT / "docs/research/pali-source-texts/sutta/digha/dhamma-numbers.json"
+BASE = ROOT / "docs/research/pali-source-texts/sutta/digha"
+DATA_DIR = BASE / "data"
+OUT = BASE / "dhamma-numbers.json"
+DETAIL_DIR = BASE / "dhamma-number-details"
+PLAN = BASE / "dhamma-search-plan.json"
+EB_CACHE = BASE / "dhamma-early-buddhist-cache.json"
 CHINESE = DATA_DIR / "dn33-dn34-chinese.json"
 
 NUMS = "一二三四五六七八九十"
@@ -28,9 +39,39 @@ COLLECTION = "经藏/长部_dn"
 EB_BASE = "https://bayson-create.github.io/Early-Buddhist/"
 SITE_BASE = "https://bayson-create.github.io/Sutta-Study-Guide/"
 
+DN34_STATUS = {
+    "多所助益": "多所助",
+    "應該被修習": "应修习",
+    "應該被遍知": "应遍知",
+    "應該被捨斷": "应舍断",
+    "退分": "退分法",
+    "殊勝分": "胜分法",
+    "難貫通": "难贯通",
+    "應該使之生出": "应生出",
+    "應該被證知": "应证知",
+    "應該被作證": "应作证",
+}
+T2S = OpenCC("t2s")
+# OpenCC retains some variant characters.  Align those with this site’s
+# established mainland Buddhist terminology after its general conversion.
+DISPLAY_REPLACEMENTS = str.maketrans({"瞋": "嗔"})
+
 
 def compact(text: str) -> str:
     return " ".join(text.split())
+
+
+def displayify(value):
+    """Convert all reader-facing Chinese values at build time, not in CSS/JS."""
+    if isinstance(value, str):
+        return T2S.convert(value).translate(DISPLAY_REPLACEMENTS)
+    if isinstance(value, list):
+        return [displayify(item) for item in value]
+    if isinstance(value, dict):
+        # Stable identifiers and URLs must retain their original machine form.
+        preserved = {"id", "group_ids", "suttas", "sutta", "href", "source_url", "collection", "uid"}
+        return {key: (item if key in preserved else displayify(item)) for key, item in value.items()}
+    return value
 
 
 def section_paragraphs(soup: BeautifulSoup, heading: str) -> list[str]:
@@ -52,6 +93,26 @@ def is_closure(text: str, numeral: str) -> bool:
     return f"這些是{numeral}法" in text or f"這些是{numeral}十法" in text
 
 
+def member_items(value: str) -> list[str]:
+    """Keep source enumerations intact when prose cannot be split safely."""
+    value = value.strip(" ，。")
+    if "、" not in value:
+        return [value] if value else []
+    return [part.strip(" ，。") for part in value.split("、") if part.strip(" ，。")]
+
+
+def clean_label(value: str) -> str:
+    value = re.sub(r"^[一二三四五六七八九十]法·", "", value)
+    return value.replace("下一個", "").replace("如來的", "").strip(" ，。")
+
+
+def dn34_status(source_text: str) -> str | None:
+    for raw, display in DN34_STATUS.items():
+        if f"{raw}的" in source_text or f"{raw}之" in source_text:
+            return display
+    return None
+
+
 def parse_rows(text: dict) -> list[dict]:
     uid = text["uid"]
     soup = BeautifulSoup(text["zh_legacy"][0]["html"], "html.parser")
@@ -63,38 +124,33 @@ def parse_rows(text: dict) -> list[dict]:
             continue
         close_at = next((i for i, p in enumerate(paragraphs) if is_closure(p, numeral)), len(paragraphs))
         if uid == "dn34":
-            candidates = [
-                p for p in paragraphs[1:close_at]
-                if re.match(r"^（[一二三四五六七八九十]）", p)
-            ]
+            candidates = [p for p in paragraphs[1:close_at] if re.match(r"^（[一二三四五六七八九十]）", p)]
         elif numeral == "一":
             candidates = paragraphs[:1]
         elif numeral == "二":
             candidates = paragraphs[1:close_at]
         else:
-            # Explicit group labels begin with the section numeral (possibly
-            # preceded by 下一個/如來的). Explanatory paragraphs begin with
-            # 學友們/再者 and are deliberately excluded.
             prefix = re.compile(rf"^(?:下一個)?(?:如來的)?{numeral}")
             candidates = [p for p in paragraphs[1:close_at] if prefix.match(p)]
 
         for order, source_text in enumerate(candidates, 1):
+            status = None
             if uid == "dn34":
+                status = dn34_status(source_text)
                 tail = source_text.split("呢？", 1)[1] if "呢？" in source_text else source_text
-                label = tail.split("，這些是", 1)[0].strip(" ，")
-                # A first colon inside the label marks the named sub-list.
                 member_text = tail.split("，這些是", 1)[0].strip(" ，")
+                label = member_text
                 if "：" in member_text:
                     explicit, remainder = member_text.split("：", 1)
-                    if len(explicit) <= 32:
+                    if len(explicit) <= 48:
                         label, member_text = explicit.strip(), remainder.strip()
             elif numeral == "一":
                 label = "一法"
                 marker = "哪一法呢？"
                 member_text = source_text.split(marker, 1)[1].split("，這是一法", 1)[0].strip(" ，") if marker in source_text else source_text
             elif numeral == "二":
-                label = f"二法·{source_text.rstrip('。')}"
-                member_text = source_text.rstrip("。")
+                label = source_text.rstrip("。")
+                member_text = label
             else:
                 label = source_text.split("：", 1)[0].strip()
                 member_text = source_text.split("：", 1)[1].split("。", 1)[0].strip() if "：" in source_text else source_text.rstrip("。")
@@ -103,46 +159,104 @@ def parse_rows(text: dict) -> list[dict]:
                 "sutta": uid,
                 "number": NUM_VALUE[numeral],
                 "order": order,
-                "label": label,
+                "label": clean_label(label),
                 "members": member_text,
                 "member_items": member_items(member_text),
+                "dn34_status": status,
                 "source_text": source_text,
-                "source_paragraph": order,
             })
     return rows
 
 
 def normalize(value: str) -> str:
-    value = value.replace("下一個", "").replace("如來的", "")
+    value = clean_label(value)
     value = re.sub(r"[（(].*?[）)]", "", value)
-    value = re.sub(r"[，、。；：！？\s\[\]【】]", "", value)
-    return value
-
-
-def member_items(value: str) -> list[str]:
-    """Expose explicit ``、``-separated members without inventing a list."""
-    value = value.strip(" ，。")
-    if "、" not in value:
-        return [value] if value else []
-    return [part.strip(" ，。") for part in value.split("、") if part.strip(" ，。")]
+    return re.sub(r"[，、。；：！？\s\[\]【】'‘’“”\"-]", "", value)
 
 
 def source_url(row: dict) -> str:
-    query = row["label"] if row["label"] else row["members"][:24]
-    params = {
-        "view": row["sutta"],
-        "lang": "zh",
-        "q": query,
-        "coll": COLLECTION,
-        "mt": row["members"][:160],
-    }
+    query = row["label"] or row["members"][:24]
+    params = {"view": row["sutta"], "lang": "zh", "q": query, "coll": COLLECTION, "mt": row["members"][:160]}
     return EB_BASE + "?" + "&".join(f"{k}={quote(str(v), safe='')}" for k, v in params.items())
 
 
-def site_search_hits(label: str, members: str) -> list[dict]:
-    """Find stable, local-site evidence without calling the synthesis API."""
-    terms = [label, members.split("、", 1)[0].strip()]
-    terms = [t for t in terms if len(t) >= 2]
+def stable_id(number: int, values: list[str]) -> str:
+    digest = hashlib.sha1("|".join(values).encode("utf-8")).hexdigest()[:12]
+    return f"dhamma-n{number}-{digest}"
+
+
+def score_match(a: dict, b: dict) -> float:
+    al, bl = normalize(a["label"]), normalize(b["label"])
+    am, bm = normalize(a["members"]), normalize(b["members"])
+    if al and al == bl and am == bm:
+        return 1.0
+    if al and al == bl and (am in bm or bm in am):
+        return 0.96
+    if am and am == bm:
+        return 0.94
+    return 0.0
+
+
+def build_entries(rows: list[dict]) -> list[dict]:
+    by_number: dict[int, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
+    for row in rows:
+        by_number[row["number"]][row["sutta"]].append(row)
+    entries: list[dict] = []
+    for number, sides in sorted(by_number.items()):
+        left, right = sides["dn33"], sides["dn34"]
+        used: set[str] = set()
+        for a in left:
+            candidates = sorted(((score_match(a, b), b) for b in right if b["id"] not in used), key=lambda pair: pair[0], reverse=True)
+            score, b = candidates[0] if candidates else (0.0, None)
+            group_ids = [a["id"]]
+            if b is not None and score >= 0.92:
+                used.add(b["id"])
+                group_ids.append(b["id"])
+            entries.append(make_entry(number, group_ids, rows))
+        for b in right:
+            if b["id"] not in used:
+                entries.append(make_entry(number, [b["id"]], rows))
+    return entries
+
+
+def make_entry(number: int, group_ids: list[str], rows: list[dict]) -> dict:
+    by_id = {row["id"]: row for row in rows}
+    sources = [by_id[group_id] for group_id in group_ids]
+    preferred = next((row for row in sources if row["sutta"] == "dn33"), sources[0])
+    terms = search_terms(sources)
+    return {
+        "id": stable_id(number, [normalize(preferred["label"]), normalize(preferred["members"]), *sorted(group_ids)]),
+        "number": number,
+        "label": preferred["label"],
+        "member_items": preferred["member_items"],
+        "group_ids": group_ids,
+        "suttas": [row["sutta"] for row in sources],
+        "search_terms": terms,
+    }
+
+
+def search_terms(sources: list[dict]) -> list[str]:
+    values: list[str] = []
+    for row in sources:
+        values.append(row["label"])
+        candidates = row["member_items"]
+        if len(candidates) <= 12:
+            values.extend(candidates)
+        for item in candidates:
+            # The short forms are the concept queries requested for the
+            # three unwholesome roots and work for analogous compounds too.
+            values.append(item.replace("貪欲", "貪").replace("瞋恚", "瞋").replace("愚癡", "癡"))
+    out: list[str] = []
+    for value in values:
+        value = compact(value).strip(" ，。")
+        if not (2 <= len(value) <= 96) or value in out:
+            continue
+        out.append(value)
+    return out[:14]
+
+
+def site_search_hits(terms: list[str]) -> list[dict]:
+    """Freeze the same local research corpus the site-wide scope reads."""
     hits: list[dict] = []
     seen: set[str] = set()
     paths = list((ROOT / "docs/research").rglob("*.md")) + [ROOT / "docs/suttas.json"]
@@ -151,139 +265,182 @@ def site_search_hits(label: str, members: str) -> list[dict]:
             text = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        term = next((t for t in terms if t in text), None)
+        term = next((term for term in terms if term in text), None)
         if not term:
             continue
         pos = text.find(term)
-        start = max(0, pos - 180)
-        end = min(len(text), pos + max(240, len(term) + 180))
-        snippet = compact(text[start:end]).replace("\u0000", "")
         key = f"{path}:{pos}"
         if key in seen:
             continue
         seen.add(key)
+        snippet = compact(text[max(0, pos - 220):min(len(text), pos + max(340, len(term) + 220))]).replace("\u0000", "")
         rel = path.relative_to(ROOT).as_posix()
-        query = quote(label or term, safe="")
         hits.append({
             "source": rel,
             "heading": "站内搜索命中",
             "text": snippet,
-            "href": f"{SITE_BASE}#/search?q={query}&scope=site",
+            "href": f"{SITE_BASE}#/search?q={quote(term, safe='')}&scope=site",
+            "query": term,
         })
-        if len(hits) >= 3:
+        if len(hits) >= 6:
             break
     return hits
 
 
-def common_score(a: dict, b: dict) -> float:
-    a_label, b_label = normalize(a["label"]), normalize(b["label"])
-    a_mem, b_mem = normalize(a["members"]), normalize(b["members"])
-    if a_label and (a_label == b_label or a_label in b_mem or b_label in a_mem):
-        return 1.0
-    # Character trigrams are robust to small translation differences while
-    # still requiring several shared meaningful characters.
-    def grams(s: str) -> set[str]:
-        return {s[i : i + 3] for i in range(max(0, len(s) - 2))}
-    ga, gb = grams(a_mem), grams(b_mem)
-    if not ga or not gb:
-        return 0.0
-    return len(ga & gb) / len(ga | gb)
+def load_eb_cache() -> dict[str, list[dict]]:
+    if not EB_CACHE.exists():
+        return {}
+    try:
+        raw = json.loads(EB_CACHE.read_text(encoding="utf-8"))
+        return raw.get("queries", raw) if isinstance(raw, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
 
 
-def relation(score: float) -> str:
-    if score >= 0.92:
-        return "同一法组"
-    if score >= 0.28:
-        return "部分重叠或相关"
-    return "同数但未确认同组"
+def collect_eb(terms: list[str], cache: dict[str, list[dict]]) -> tuple[list[dict], list[dict]]:
+    batches = [{"query": term, "hits": cache.get(term, [])} for term in terms]
+    all_hits: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+    for batch in batches:
+        for hit in batch["hits"]:
+            key = (str(hit.get("uid", "")), str(hit.get("text", "")))
+            if not key[0] or key in seen:
+                continue
+            seen.add(key)
+            all_hits.append(hit)
+    return batches, all_hits
 
 
-def synthesize(row: dict, counterpart: dict | None, site_hits: list[dict]) -> dict:
-    evidence = [{
-        "id": "eb-self",
-        "label": f"Early Buddhist · {row['sutta'].upper()} · {row['label']}",
-        "text": row["source_text"],
-        "href": row["source_url"],
-        "kind": "early_buddhist",
-    }]
-    if counterpart:
+def evidence_for(entry: dict, row_map: dict[str, dict], site_hits: list[dict], eb_batches: list[dict]) -> list[dict]:
+    evidence: list[dict] = []
+    for group_id in entry["group_ids"]:
+        row = row_map[group_id]
         evidence.append({
-            "id": "eb-counterpart",
-            "label": f"Early Buddhist · {counterpart['sutta'].upper()} · {counterpart['label']}",
-            "text": counterpart["source_text"],
-            "href": counterpart["source_url"],
-            "kind": "early_buddhist",
+            "kind": "source", "label": f"Early Buddhist · {row['sutta'].upper()} · {row['label']}",
+            "text": row["source_text"], "href": source_url(row),
         })
-    for i, hit in enumerate(site_hits, 1):
-        evidence.append({**hit, "id": f"site-{i}", "kind": "site"})
-    refs = " ".join(f"[{i}]" for i in range(1, len(evidence) + 1))
-    counterpart_text = (
-        f"DN{counterpart['sutta'][2:]} 也列出「{counterpart['label']}」，可作为对应法组；两处原文见 [1][2]。"
-        if counterpart
-        else "在另一部经的同一法数中没有达到可确认的同组对应；当前结论只覆盖本经原文 [1]。"
-    )
-    site_text = (
-        f"站内检索找到 {len(site_hits)} 处相关资料，作为解释背景，不替代两部经的原文。"
-        if site_hits
-        else "站内检索暂未找到稳定的同名命中，不能据此补充经文之外的内容。"
-    )
-    answer = "\n".join([
+    # First pass gives every queried concept one voice; only then add more
+    # high-ranked passages.  This is crucial for multi-member groups: a
+    # broad group-name query must not consume the whole citation budget.
+    eb_hits: list[dict] = []
+    for batch in eb_batches:
+        if batch["hits"]:
+            eb_hits.append(batch["hits"][0])
+    for batch in eb_batches:
+        eb_hits.extend(batch["hits"][1:])
+    seen: set[tuple[str, str]] = set()
+    for hit in eb_hits:
+        key = (str(hit.get("uid", "")), str(hit.get("text", "")))
+        if key in seen:
+            continue
+        seen.add(key)
+        evidence.append({
+            "kind": "early_buddhist", "label": f"Early Buddhist · {hit.get('collection', '')} · {hit.get('uid', '')}",
+            "text": hit.get("text", ""), "href": hit.get("href", ""),
+        })
+        if len(evidence) >= 13:
+            break
+    for hit in site_hits[:5]:
+        evidence.append({"kind": "site", "label": hit["source"], "text": hit["text"], "href": hit["href"]})
+    return evidence[:18]
+
+
+def synthesize(entry: dict, row_map: dict[str, dict], site_hits: list[dict], eb_batches: list[dict], eb_hits: list[dict]) -> dict:
+    evidence = evidence_for(entry, row_map, site_hits, eb_batches)
+    by_group = {group_id: index + 1 for index, group_id in enumerate(entry["group_ids"])}
+    sources = [row_map[group_id] for group_id in entry["group_ids"]]
+    primary = sources[0]
+    members = primary["member_items"] or [primary["members"]]
+    same_text = "DN33 与 DN34 都列出这一法组，原文可对照阅读。" if len(sources) == 2 else f"当前只在 {primary['sutta'].upper()} 的这一处明确列出。"
+    lines = [
         "## 直接回答",
-        f"这是《{row['sutta'].upper()}》中的{row['number']}法法组「{row['label']}」，原文明确列出：{row['members']}。[1]",
+        f"「{entry['label']}」属于 {entry['number']} 法。{same_text} 成员以经文逐项列举为准。[1]",
         "",
-        "## 对应关系",
-        counterpart_text,
+        "## 法组构成",
+    ]
+    for row in sources:
+        lines.append(f"- {row['sutta'].upper()}：{row['members']}。[{by_group[row['id']]}]")
+    lines.extend(["", "## 所含各法"])
+    for item in members:
+        relevant_queries = [item, item.replace("貪欲", "貪").replace("瞋恚", "瞋").replace("愚癡", "癡")]
+        hit = next((candidate for batch in eb_batches if batch["query"] in relevant_queries for candidate in batch["hits"]), None)
+        matching = next((index + 1 for index, evidence_item in enumerate(evidence) if hit and hit.get("text") == evidence_item["text"]), 1)
+        lines.append(f"### {item}")
+        if hit:
+            title = hit.get("title") or hit.get("uid") or "Early Buddhist"
+            excerpt = compact(hit.get("text", ""))[:220]
+            lines.append(f"经文将「{item}」列为「{entry['label']}」的一个成员。Early Buddhist 用该名词检索时，在《{title}》命中：{excerpt}。[{matching}]")
+        else:
+            lines.append(f"经文将「{item}」列为「{entry['label']}」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[{matching}]")
+    eb_count = sum(len(batch["hits"]) for batch in eb_batches)
+    lines.extend([
         "",
-        "## 要点展开",
-        f"- 经文功能：该法组被放在第 {row['number']} 法的分类中；成员以原文列举为准。[1]",
-        f"- 站内资料：{site_text}",
+        "## 检索综合",
+        f"Early Buddhist 已按法组名及成员分别检索 {len(entry['search_terms'])} 个关键词，冻结 {eb_count} 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。",
+        f"站内资料库命中 {len(site_hits)} 条，作为解释背景；经文原文仍为本条的首要依据。",
         "",
         "## 证据覆盖情况",
-        f"本条综合使用 {refs}；原文证据优先，站内资料只用于补充检索背景。",
+        "本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
     ])
-    return {"answer_markdown": answer, "evidence": evidence, "generated_by": "Codex evidence-bound static synthesis"}
+    return {
+        "answer_markdown": "\n".join(lines),
+        "evidence": evidence,
+        "generated_by": "Codex evidence-bound static synthesis",
+        "early_buddhist_queries": eb_batches,
+        "site_hits": site_hits,
+    }
 
 
-def build() -> dict:
+def summary_group(row: dict) -> dict:
+    """Keep the first-screen index small; full source text lives per detail."""
+    return {key: row.get(key) for key in (
+        "id", "sutta", "number", "label", "members", "member_items", "dn34_status"
+    )}
+
+
+def summary_entry(entry: dict) -> dict:
+    return {key: entry.get(key) for key in (
+        "id", "number", "label", "group_ids", "suttas", "search_terms"
+    )}
+
+
+def build() -> tuple[dict, dict[str, dict]]:
     raw = json.loads(CHINESE.read_text(encoding="utf-8"))
-    rows = [r for text in raw["texts"] for r in parse_rows(text)]
+    rows = [row for text in raw["texts"] for row in parse_rows(text)]
     for row in rows:
         row["source_url"] = source_url(row)
-        row["site_query"] = row["label"] or row["members"][:40]
-    by_num = {}
-    for row in rows:
-        by_num.setdefault((row["number"], row["sutta"]), []).append(row)
-    for row in rows:
-        other = by_num.get((row["number"], "dn34" if row["sutta"] == "dn33" else "dn33"), [])
-        scored = sorted(((common_score(row, candidate), candidate) for candidate in other), key=lambda x: x[0], reverse=True)
-        top_score, top = scored[0] if scored else (0.0, None)
-        row["correspondence"] = [] if top is None else [{"id": top["id"], "score": round(top_score, 3), "relation": relation(top_score)}]
-        hits = site_search_hits(row["label"], row["members"])
-        row["site_hits"] = hits
-        row["ai"] = synthesize(row, top if top_score >= 0.92 else None, hits)
-    counts = {
-        "dn33": sum(r["sutta"] == "dn33" for r in rows),
-        "dn34": sum(r["sutta"] == "dn34" for r in rows),
-        "total": len(rows),
-    }
-    return {
-        "version": 1,
+    row_map = {row["id"]: row for row in rows}
+    entries = build_entries(rows)
+    cache = load_eb_cache()
+    for entry in entries:
+        site_hits = site_search_hits(entry["search_terms"])
+        eb_batches, eb_hits = collect_eb(entry["search_terms"], cache)
+        entry["research"] = synthesize(entry, row_map, site_hits, eb_batches, eb_hits)
+    result = {
+        "version": 3,
         "generated_at": raw["metadata"].get("generated_at"),
-        "source": {
-            "provider": "Early Buddhist",
-            "collection": COLLECTION,
-            "full_text_files": [
-                "data/dn33-dn34-chinese.json",
-                "data/dn33-dn34-english.json",
-            ],
-            "external_reader": EB_BASE,
-        },
-        "counts": counts,
-        "groups": rows,
+        "source": {"provider": "Early Buddhist", "collection": COLLECTION, "external_reader": EB_BASE,
+                   "full_text_files": ["data/dn33-dn34-chinese.json", "data/dn33-dn34-english.json"]},
+        "counts": {"dn33": sum(row["sutta"] == "dn33" for row in rows), "dn34": sum(row["sutta"] == "dn34" for row in rows), "entries": len(entries)},
+        "groups": [summary_group(row) for row in rows],
+        "entries": [summary_entry(entry) for entry in entries],
     }
+    details = {
+        entry["id"]: {
+            "version": 1,
+            "entry": entry,
+            "groups": [row_map[group_id] for group_id in entry["group_ids"]],
+        }
+        for entry in entries
+    }
+    PLAN.write_text(json.dumps({"version": 1, "queries": sorted({term for entry in entries for term in entry["search_terms"]})}, ensure_ascii=False, indent=2), encoding="utf-8")
+    return displayify(result), {key: displayify(detail) for key, detail in details.items()}
 
 
 if __name__ == "__main__":
-    result = build()
+    result, details = build()
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(result["counts"], ensure_ascii=False))
+    DETAIL_DIR.mkdir(parents=True, exist_ok=True)
+    for entry_id, detail in details.items():
+        (DETAIL_DIR / f"{entry_id}.json").write_text(json.dumps(detail, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps({**result["counts"], "details": len(details), "planned_queries": len(json.loads(PLAN.read_text(encoding="utf-8"))["queries"])}, ensure_ascii=False))

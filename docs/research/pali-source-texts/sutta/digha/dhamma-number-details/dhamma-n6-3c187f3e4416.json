@@ -1,0 +1,734 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n6-3c187f3e4416",
+    "number": 6,
+    "label": "六触身",
+    "member_items": [
+      "眼触",
+      "耳触",
+      "鼻触",
+      "舌触",
+      "身触",
+      "意触"
+    ],
+    "group_ids": [
+      "dn33-n6-g4"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "六触身",
+      "眼触",
+      "耳触",
+      "鼻触",
+      "舌触",
+      "身触",
+      "意触"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「六触身」属于 6 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：眼触、耳触、鼻触、舌触、身触、意触。[1]\n\n## 所含各法\n### 眼触\n经文将「眼触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量眼触，不在眼触中思量，不从眼触思量，不思量『眼触是我的』。。[3]\n### 耳触\n经文将「耳触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《非你们的经第一》命中：耳触非你们的，你们要舍断！。[4]\n### 鼻触\n经文将「鼻触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《非你们的经第一》命中：鼻触非你们的，你们要舍断！。[5]\n### 舌触\n经文将「舌触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量舌触，不在舌触中思量，不从舌触思量，不思量『舌触是我的』。。[6]\n### 身触\n经文将「身触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《愚者与贤者经》命中：那女宝有这样的身触：犹如绵絮或木棉絮。。[7]\n### 意触\n经文将「意触」列为「六触身」的一个成员。Early Buddhist 用该名词检索时，在《根绝所适合的经》命中：不思量意触，不在意触中思量，不从意触思量，不思量『意触是我的』。。[8]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 7 个关键词，冻结 56 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 六触身",
+          "text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "『六触身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量眼触，不在眼触中思量，不从眼触思量，不思量『眼触是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%BC%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%9C%BC%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E7%9C%BC%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.101",
+          "text": "耳触非你们的，你们要舍断！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.101",
+          "text": "鼻触非你们的，你们要舍断！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%BC%BB%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量舌触，不在舌触中思量，不从舌触思量，不思量『舌触是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E8%88%8C%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E8%88%8C%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E8%88%8C%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E8%88%8C%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn129",
+          "text": "那女宝有这样的身触：犹如绵絮或木棉絮。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn129&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E5%A5%B3%E5%AF%B6%E6%9C%89%E9%80%99%E6%A8%A3%E7%9A%84%E8%BA%AB%E8%A7%B8%EF%BC%9A%E7%8C%B6%E5%A6%82%E7%B6%BF%E7%B5%AE%E6%88%96%E6%9C%A8%E6%A3%89%E7%B5%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.30",
+          "text": "不思量意触，不在意触中思量，不从意触思量，不思量『意触是我的』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E6%84%8F%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E6%84%8F%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E6%84%8F%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "而，『六触身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn137",
+          "text": "『六触身应该体会』像这样，这被说，这是缘于此而说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E6%AD%A4%E8%80%8C%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn148",
+          "text": "「六内处应该体会，六外处应该体会，六识身应该体会，六触身应该体会，六受身应该体会，六渴爱身应该体会。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%A4%96%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%8F%97%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E6%B8%B4%E6%84%9B%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn137",
+          "text": "而，『六触身应该体会』像这样，这被说，这是缘于什么而说呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E4%BB%80%E9%BA%BC%E8%80%8C%E8%AA%AA%E5%91%A2%EF%BC%9F"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "六触身",
+          "hits": [
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『六触身应该体会。",
+              "score": 21.731429244145694,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『六触身应该体会。",
+              "score": 20.699925427755012,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『六触身应该体会』像这样，这被说，这是缘于此而说。",
+              "score": 15.002903873133222,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E6%AD%A4%E8%80%8C%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 15.002903873133222,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「六内处应该体会，六外处应该体会，六识身应该体会，六触身应该体会，六受身应该体会，六渴爱身应该体会。",
+              "score": 14.144266309697887,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8C%E5%85%AD%E5%85%A7%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%A4%96%E8%99%95%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%AD%98%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E5%8F%97%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%EF%BC%8C%E5%85%AD%E6%B8%B4%E6%84%9B%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%82"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『六触身应该体会』像这样，这被说，这是缘于什么而说呢？",
+              "score": 13.599351717796342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%85%AD%E8%A7%B8%E8%BA%AB%E6%87%89%E8%A9%B2%E9%AB%94%E6%9C%83%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E8%A2%AB%E8%AA%AA%EF%BC%8C%E9%80%99%E6%98%AF%E7%B7%A3%E6%96%BC%E4%BB%80%E9%BA%BC%E8%80%8C%E8%AA%AA%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn4.17",
+              "collection": "经藏/相应部_sn",
+              "title": "六触处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六触处经",
+              "score": 12.825247878484161,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.17&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%99%95%E7%B6%93"
+            },
+            {
+              "uid": "sn35.71",
+              "collection": "经藏/相应部_sn",
+              "title": "六触处经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六触处经第一",
+              "score": 12.073814702933362,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.71&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%99%95%E7%B6%93%E7%AC%AC%E4%B8%80"
+            }
+          ]
+        },
+        {
+          "query": "眼触",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量眼触，不在眼触中思量，不从眼触思量，不思量『眼触是我的』。",
+              "score": 11.469417384641101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%BC%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%9C%BC%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E7%9C%BC%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.90",
+              "collection": "经藏/相应部_sn",
+              "title": "扰动经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不应该思量眼触，不应该在眼触中思量，不应该从眼触思量，不应该思量『眼触是我的』；",
+              "score": 10.938105361892825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.90&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%87%89%E8%A9%B2%E6%80%9D%E9%87%8F%E7%9C%BC%E8%A7%B8%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E5%9C%A8%E7%9C%BC%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E5%BE%9E%E7%9C%BC%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E6%80%9D%E9%87%8F%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%EF%BC%9B"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果说：『眼触是我。",
+              "score": 8.824642858370057,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E8%AA%AA%EF%BC%9A%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼触是无常的。",
+              "score": 8.824642858370057,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.148",
+              "collection": "经藏/相应部_sn",
+              "title": "苦－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼触是苦的。",
+              "score": 8.824642858370057,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.148&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E8%8B%A6%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.149",
+              "collection": "经藏/相应部_sn",
+              "title": "无我－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『眼触是无我的。",
+              "score": 8.824642858370057,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.149&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E7%9C%BC%E8%A7%B8%E6%98%AF%E7%84%A1%E6%88%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn25.4",
+              "collection": "经藏/相应部_sn",
+              "title": "触经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼触是无常的、变易、变异；",
+              "score": 8.405772443339913,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn25.4&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E8%AE%8A%E6%98%93%E3%80%81%E8%AE%8A%E7%95%B0%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.62",
+              "collection": "经藏/相应部_sn",
+              "title": "一切取的耗尽经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「眼触是常的，还是无常的呢？",
+              "score": 8.024864309403132,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.62&lang=zh&q=%E7%9C%BC%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E7%9C%BC%E8%A7%B8%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%82%84%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "耳触",
+          "hits": [
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "耳触非你们的，你们要舍断！",
+              "score": 9.551949284682252,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn4.19",
+              "collection": "经藏/相应部_sn",
+              "title": "农夫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "耳是你的，声音是你的，耳触与识处是你的，但，波旬！",
+              "score": 8.408811709263224,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.19&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E8%81%B2%E9%9F%B3%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E8%80%B3%E8%A7%B8%E8%88%87%E8%AD%98%E8%99%95%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E4%BD%86%EF%BC%8C%E6%B3%A2%E6%97%AC%EF%BC%81"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 8.086236007743624,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "sn4.19",
+              "collection": "经藏/相应部_sn",
+              "title": "农夫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "没有耳，没有声音，没有耳触与识处之处，波旬！",
+              "score": 7.787495025339191,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.19&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E8%80%B3%EF%BC%8C%E6%B2%92%E6%9C%89%E8%81%B2%E9%9F%B3%EF%BC%8C%E6%B2%92%E6%9C%89%E8%80%B3%E8%A7%B8%E8%88%87%E8%AD%98%E8%99%95%E4%B9%8B%E8%99%95%EF%BC%8C%E6%B3%A2%E6%97%AC%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 7.251677551374034,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六类触：眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 7.010499352103539,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E9%A1%9E%E8%A7%B8%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六类触：眼触、耳触、鼻触、舌触、身触、意触，比丘们！",
+              "score": 6.5732683751834315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E9%A1%9E%E8%A7%B8%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn25.4",
+              "collection": "经藏/相应部_sn",
+              "title": "触经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "耳触……鼻触……舌触……身触……意触是无常的、变易、变异。",
+              "score": 6.3744863239485525,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn25.4&lang=zh&q=%E8%80%B3%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%80%B3%E8%A7%B8%E2%80%A6%E2%80%A6%E9%BC%BB%E8%A7%B8%E2%80%A6%E2%80%A6%E8%88%8C%E8%A7%B8%E2%80%A6%E2%80%A6%E8%BA%AB%E8%A7%B8%E2%80%A6%E2%80%A6%E6%84%8F%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E8%AE%8A%E6%98%93%E3%80%81%E8%AE%8A%E7%95%B0%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "鼻触",
+          "hits": [
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "鼻触非你们的，你们要舍断！",
+              "score": 9.49470043459774,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%BC%BB%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn4.19",
+              "collection": "经藏/相应部_sn",
+              "title": "农夫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "鼻是你的，气味是你的，鼻触与识处是你的，但，波旬！",
+              "score": 8.358414163528296,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.19&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%BC%BB%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E6%B0%A3%E5%91%B3%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E9%BC%BB%E8%A7%B8%E8%88%87%E8%AD%98%E8%99%95%E6%98%AF%E4%BD%A0%E7%9A%84%EF%BC%8C%E4%BD%86%EF%BC%8C%E6%B3%A2%E6%97%AC%EF%BC%81"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 8.037771793879166,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "sn4.19",
+              "collection": "经藏/相应部_sn",
+              "title": "农夫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "没有鼻，没有气味，没有鼻触与识处之处，波旬！",
+              "score": 7.740821291847489,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.19&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E9%BC%BB%EF%BC%8C%E6%B2%92%E6%9C%89%E6%B0%A3%E5%91%B3%EF%BC%8C%E6%B2%92%E6%9C%89%E9%BC%BB%E8%A7%B8%E8%88%87%E8%AD%98%E8%99%95%E4%B9%8B%E8%99%95%EF%BC%8C%E6%B3%A2%E6%97%AC%EF%BC%81"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "就让我只这么作意：「这样，鼻是无常的，气味是无常的，鼻识是无常的，鼻触是无常的，凡以这鼻触为缘生起的或乐、或苦、或不苦不乐受也都是无常的。",
+              "score": 7.313466152775946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%B1%E8%AE%93%E6%88%91%E5%8F%AA%E9%80%99%E9%BA%BC%E4%BD%9C%E6%84%8F%EF%BC%9A%E3%80%8C%E9%80%99%E6%A8%A3%EF%BC%8C%E9%BC%BB%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%B0%A3%E5%91%B3%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%BC%BB%E8%AD%98%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E9%BC%BB%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E5%87%A1%E4%BB%A5%E9%80%99%E9%BC%BB%E8%A7%B8%E7%82%BA%E7%B7%A3%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%96%E6%A8%82%E3%80%81%E6%88%96%E8%8B%A6%E3%80%81%E6%88%96%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E4%B9%9F%E9%83%BD%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.24",
+              "collection": "经藏/相应部_sn",
+              "title": "舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……凡以这鼻触为缘生起的或乐、或苦、或不苦不乐受都应该被舍断。",
+              "score": 7.208215197395086,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.24&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%E5%87%A1%E4%BB%A5%E9%80%99%E9%BC%BB%E8%A7%B8%E7%82%BA%E7%B7%A3%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%96%E6%A8%82%E3%80%81%E6%88%96%E8%8B%A6%E3%80%81%E6%88%96%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E9%83%BD%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 7.208215197395086,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E8%A7%B8%E8%BA%AB%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六类触：眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 6.968482480524275,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E9%BC%BB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E9%A1%9E%E8%A7%B8%EF%BC%9A%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "舌触",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量舌触，不在舌触中思量，不从舌触思量，不思量『舌触是我的』。",
+              "score": 12.865546731999427,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E8%88%8C%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E8%88%8C%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E8%88%8C%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E8%88%8C%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『舌触是无常的。",
+              "score": 9.898833679171895,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E8%88%8C%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舌触非你们的，你们要舍断！",
+              "score": 9.001701074096102,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%88%8C%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn35.121",
+              "collection": "经藏/相应部_sn",
+              "title": "教诫罗侯罗经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「舌触是常的，或是无常的呢？",
+              "score": 9.001701074096102,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.121&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E8%88%8C%E8%A7%B8%E6%98%AF%E5%B8%B8%E7%9A%84%EF%BC%8C%E6%88%96%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.162",
+              "collection": "经藏/相应部_sn",
+              "title": "拘𫄨罗－无常经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舌触是无常的，在那里你应该舍断欲；",
+              "score": 9.001701074096102,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.162&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%88%8C%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%E4%BD%A0%E6%87%89%E8%A9%B2%E6%8D%A8%E6%96%B7%E6%AC%B2%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.93",
+              "collection": "经藏/相应部_sn",
+              "title": "一对经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于无常缘而生起的舌触，哪里有常的呢？",
+              "score": 8.253669881510714,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.93&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E7%84%A1%E5%B8%B8%E7%B7%A3%E8%80%8C%E7%94%9F%E8%B5%B7%E7%9A%84%E8%88%8C%E8%A7%B8%EF%BC%8C%E5%93%AA%E8%A3%A1%E6%9C%89%E5%B8%B8%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 7.620421464446849,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "sn35.94",
+              "collection": "经藏/相应部_sn",
+              "title": "不调御－不护经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舌触处不调御、不守护、不保护、不防护，是苦的带来者。",
+              "score": 7.077418854588888,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.94&lang=zh&q=%E8%88%8C%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%88%8C%E8%A7%B8%E8%99%95%E4%B8%8D%E8%AA%BF%E5%BE%A1%E3%80%81%E4%B8%8D%E5%AE%88%E8%AD%B7%E3%80%81%E4%B8%8D%E4%BF%9D%E8%AD%B7%E3%80%81%E4%B8%8D%E9%98%B2%E8%AD%B7%EF%BC%8C%E6%98%AF%E8%8B%A6%E7%9A%84%E5%B8%B6%E4%BE%86%E8%80%85%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "身触",
+          "hits": [
+            {
+              "uid": "mn129",
+              "collection": "经藏/中部_mn",
+              "title": "愚者与贤者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那女宝有这样的身触：犹如绵絮或木棉絮。",
+              "score": 7.599662870258559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn129&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E5%A5%B3%E5%AF%B6%E6%9C%89%E9%80%99%E6%A8%A3%E7%9A%84%E8%BA%AB%E8%A7%B8%EF%BC%9A%E7%8C%B6%E5%A6%82%E7%B6%BF%E7%B5%AE%E6%88%96%E6%9C%A8%E6%A3%89%E7%B5%AE%E3%80%82"
+            },
+            {
+              "uid": "dn17",
+              "collection": "经藏/长部_dn",
+              "title": "大善见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那女宝有这样的身触：犹如绵絮或木棉絮。",
+              "score": 7.599662870258559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn17&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E5%A5%B3%E5%AF%B6%E6%9C%89%E9%80%99%E6%A8%A3%E7%9A%84%E8%BA%AB%E8%A7%B8%EF%BC%9A%E7%8C%B6%E5%A6%82%E7%B6%BF%E7%B5%AE%E6%88%96%E6%9C%A8%E6%A3%89%E7%B5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』但未以身触达后住于八解脱，比丘们！",
+              "score": 7.296497518747856,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E4%BD%86%E6%9C%AA%E4%BB%A5%E8%BA%AB%E8%A7%B8%E9%81%94%E5%BE%8C%E4%BD%8F%E6%96%BC%E5%85%AB%E8%A7%A3%E8%84%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』且以身触达后住于八解脱，比丘们！",
+              "score": 7.296497518747856,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E4%B8%94%E4%BB%A5%E8%BA%AB%E8%A7%B8%E9%81%94%E5%BE%8C%E4%BD%8F%E6%96%BC%E5%85%AB%E8%A7%A3%E8%84%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn137",
+              "collection": "经藏/中部_mn",
+              "title": "六处分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼触、耳触、鼻触、舌触、身触、意触。",
+              "score": 7.016591999736972,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn137&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8%E3%80%82"
+            },
+            {
+              "uid": "an6.1",
+              "collection": "经藏/增支部_an",
+              "title": "应该被奉献经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以身触所触后，既不快乐也不难过而住于平静的，正念、正知；",
+              "score": 6.516616009440191,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.1&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E8%BA%AB%E8%A7%B8%E6%89%80%E8%A7%B8%E5%BE%8C%EF%BC%8C%E6%97%A2%E4%B8%8D%E5%BF%AB%E6%A8%82%E4%B9%9F%E4%B8%8D%E9%9B%A3%E9%81%8E%E8%80%8C%E4%BD%8F%E6%96%BC%E5%B9%B3%E9%9D%9C%E7%9A%84%EF%BC%8C%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.36",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡身体的乐，身体的喜悦，身触所生乐与喜悦的感受，比丘们！",
+              "score": 6.516616009440191,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.36&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E8%BA%AB%E9%AB%94%E7%9A%84%E6%A8%82%EF%BC%8C%E8%BA%AB%E9%AB%94%E7%9A%84%E5%96%9C%E6%82%85%EF%BC%8C%E8%BA%AB%E8%A7%B8%E6%89%80%E7%94%9F%E6%A8%82%E8%88%87%E5%96%9C%E6%82%85%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn48.36",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡身体的苦，身体的不喜悦，身触所生苦与不喜悦的感受，比丘们！",
+              "score": 6.516616009440191,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.36&lang=zh&q=%E8%BA%AB%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E8%BA%AB%E9%AB%94%E7%9A%84%E8%8B%A6%EF%BC%8C%E8%BA%AB%E9%AB%94%E7%9A%84%E4%B8%8D%E5%96%9C%E6%82%85%EF%BC%8C%E8%BA%AB%E8%A7%B8%E6%89%80%E7%94%9F%E8%8B%A6%E8%88%87%E4%B8%8D%E5%96%9C%E6%82%85%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "意触",
+          "hits": [
+            {
+              "uid": "sn35.30",
+              "collection": "经藏/相应部_sn",
+              "title": "根绝所适合的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不思量意触，不在意触中思量，不从意触思量，不思量『意触是我的』。",
+              "score": 10.80848039546673,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.30&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E6%80%9D%E9%87%8F%E6%84%8F%E8%A7%B8%EF%BC%8C%E4%B8%8D%E5%9C%A8%E6%84%8F%E8%A7%B8%E4%B8%AD%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E5%BE%9E%E6%84%8F%E8%A7%B8%E6%80%9D%E9%87%8F%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果说：『意触是我。",
+              "score": 9.071799294706004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E8%AA%AA%EF%BC%9A%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E6%88%91%E3%80%82"
+            },
+            {
+              "uid": "sn35.147",
+              "collection": "经藏/相应部_sn",
+              "title": "无常－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意触是无常的。",
+              "score": 9.071799294706004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.147&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.148",
+              "collection": "经藏/相应部_sn",
+              "title": "苦－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意触是苦的。",
+              "score": 9.071799294706004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.148&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E8%8B%A6%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.149",
+              "collection": "经藏/相应部_sn",
+              "title": "无我－适于涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』看『意触是无我的。",
+              "score": 9.071799294706004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.149&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E7%9C%8B%E3%80%8E%E6%84%8F%E8%A7%B8%E6%98%AF%E7%84%A1%E6%88%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn35.93",
+              "collection": "经藏/相应部_sn",
+              "title": "一对经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡这三法的会合、集合、结合，被称为意触，意触也是无常的、变易、变异。",
+              "score": 8.607826614735679,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.93&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E9%80%99%E4%B8%89%E6%B3%95%E7%9A%84%E6%9C%83%E5%90%88%E3%80%81%E9%9B%86%E5%90%88%E3%80%81%E7%B5%90%E5%90%88%EF%BC%8C%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%84%8F%E8%A7%B8%EF%BC%8C%E6%84%8F%E8%A7%B8%E4%B9%9F%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%81%E8%AE%8A%E6%98%93%E3%80%81%E8%AE%8A%E7%95%B0%E3%80%82"
+            },
+            {
+              "uid": "sn14.5",
+              "collection": "经藏/相应部_sn",
+              "title": "种种受经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘眼界生起眼触，缘眼触生起眼触所生受，非缘眼触所生受生起眼触，非缘眼触生起眼界，……（中略）缘意界生起意触，缘意触生起意触所生受，非缘意触所生受生起意触，非缘意触生起意界。",
+              "score": 8.587927601708271,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.5&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E7%9C%BC%E7%95%8C%E7%94%9F%E8%B5%B7%E7%9C%BC%E8%A7%B8%EF%BC%8C%E7%B7%A3%E7%9C%BC%E8%A7%B8%E7%94%9F%E8%B5%B7%E7%9C%BC%E8%A7%B8%E6%89%80%E7%94%9F%E5%8F%97%EF%BC%8C%E9%9D%9E%E7%B7%A3%E7%9C%BC%E8%A7%B8%E6%89%80%E7%94%9F%E5%8F%97%E7%94%9F%E8%B5%B7%E7%9C%BC%E8%A7%B8%EF%BC%8C%E9%9D%9E%E7%B7%A3%E7%9C%BC%E8%A7%B8%E7%94%9F%E8%B5%B7%E7%9C%BC%E7%95%8C%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%B7%A3%E6%84%8F%E7%95%8C%E7%94%9F%E8%B5%B7%E6%84%8F%E8%A7%B8%EF%BC%8C%E7%B7%A3%E6%84%8F%E8%A7%B8%E7%94%9F%E8%B5%B7%E6%84%8F%E8%A7%B8%E6%89%80%E7%94%9F%E5%8F%97%EF%BC%8C%E9%9D%9E%E7%B7%A3%E6%84%8F%E8%A7%B8%E6%89%80%E7%94%9F%E5%8F%97%E7%94%9F%E8%B5%B7%E6%84%8F%E8%A7%B8%EF%BC%8C%E9%9D%9E%E7%B7%A3%E6%84%8F%E8%A7%B8%E7%94%9F%E8%B5%B7%E6%84%8F%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn35.101",
+              "collection": "经藏/相应部_sn",
+              "title": "非你们的经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "意触非你们的，你们要舍断！",
+              "score": 8.24962092523721,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.101&lang=zh&q=%E6%84%8F%E8%A7%B8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%84%8F%E8%A7%B8%E9%9D%9E%E4%BD%A0%E5%80%91%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E6%8D%A8%E6%96%B7%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n6-g4",
+      "sutta": "dn33",
+      "number": 6,
+      "order": 4,
+      "label": "六触身",
+      "members": "眼触、耳触、鼻触、舌触、身触、意触",
+      "member_items": [
+        "眼触",
+        "耳触",
+        "鼻触",
+        "舌触",
+        "身触",
+        "意触"
+      ],
+      "dn34_status": null,
+      "source_text": "六触身：眼触、耳触、鼻触、舌触、身触、意触。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AD%E8%A7%B8%E8%BA%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E8%A7%B8%E3%80%81%E8%80%B3%E8%A7%B8%E3%80%81%E9%BC%BB%E8%A7%B8%E3%80%81%E8%88%8C%E8%A7%B8%E3%80%81%E8%BA%AB%E8%A7%B8%E3%80%81%E6%84%8F%E8%A7%B8"
+    }
+  ]
+}

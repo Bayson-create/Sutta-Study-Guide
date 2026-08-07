@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-a11ca6ad4343",
+    "number": 4,
+    "label": "四取",
+    "member_items": [
+      "欲取",
+      "见取",
+      "戒禁取",
+      "［真］我论取"
+    ],
+    "group_ids": [
+      "dn33-n4-g35"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四取",
+      "欲取",
+      "见取",
+      "戒禁取",
+      "［真］我论取"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四取」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲取、见取、戒禁取、［真］我论取。[1]\n\n## 所含各法\n### 欲取\n经文将「欲取」列为「四取」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：欲取、见取、戒禁取、［真］我论取。。[3]\n### 见取\n经文将「见取」列为「四取」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：欲取、见取、戒禁取、［真］我论取。。[3]\n### 戒禁取\n经文将「戒禁取」列为「四取」的一个成员。Early Buddhist 用该名词检索时，在《玛鲁迦大经》命中：他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；。[4]\n### ［真］我论取\n经文将「［真］我论取」列为「四取」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：欲取、见取、戒禁取、［真］我论取。。[3]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 33 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四取",
+          "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "欲取、见取、戒禁取、［真］我论取。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn64",
+          "text": "他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E4%B8%8D%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E4%BB%96%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E5%90%AB%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.174",
+          "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn9",
+          "text": "有这四种取：欲取、见取、戒禁取、［真］我论取。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.2",
+          "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn38.12",
+          "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，道友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.12&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "如来、阿罗汉、遍正觉者自称为一切取论的遍知者，他完全安立一切取论的遍知：安立欲取的遍知，安立见取的遍知，安立戒禁取的遍知，安立［真］我论取的遍知，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E4%BE%86%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E3%80%81%E9%81%8D%E6%AD%A3%E8%A6%BA%E8%80%85%E8%87%AA%E7%A8%B1%E7%82%BA%E4%B8%80%E5%88%87%E5%8F%96%E8%AB%96%E7%9A%84%E9%81%8D%E7%9F%A5%E8%80%85%EF%BC%8C%E4%BB%96%E5%AE%8C%E5%85%A8%E5%AE%89%E7%AB%8B%E4%B8%80%E5%88%87%E5%8F%96%E8%AB%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%9A%E5%AE%89%E7%AB%8B%E6%AC%B2%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%E8%A6%8B%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn15",
+          "text": "如果取完全地、全部地、无论什么、无论如何都不存在，即：欲取、见取、戒禁取、［真］我论取，当一切取都不存在时，以取之灭，有是否还能被了知呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%8F%96%E5%AE%8C%E5%85%A8%E5%9C%B0%E3%80%81%E5%85%A8%E9%83%A8%E5%9C%B0%E3%80%81%E7%84%A1%E8%AB%96%E4%BB%80%E9%BA%BC%E3%80%81%E7%84%A1%E8%AB%96%E5%A6%82%E4%BD%95%E9%83%BD%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E7%95%B6%E4%B8%80%E5%88%87%E5%8F%96%E9%83%BD%E4%B8%8D%E5%AD%98%E5%9C%A8%E6%99%82%EF%BC%8C%E4%BB%A5%E5%8F%96%E4%B9%8B%E6%BB%85%EF%BC%8C%E6%9C%89%E6%98%AF%E5%90%A6%E9%82%84%E8%83%BD%E8%A2%AB%E4%BA%86%E7%9F%A5%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn44.6",
+          "text": "在取中欢乐、在取中得欢乐、在取中得喜悦、不如实知、见取灭者，他会想：『死后如来存在。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn44.6&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%96%E4%B8%AD%E6%AD%A1%E6%A8%82%E3%80%81%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E6%AD%A1%E6%A8%82%E3%80%81%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E5%96%9C%E6%82%85%E3%80%81%E4%B8%8D%E5%A6%82%E5%AF%A6%E7%9F%A5%E3%80%81%E8%A6%8B%E5%8F%96%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E6%9C%83%E6%83%B3%EF%BC%9A%E3%80%8E%E6%AD%BB%E5%BE%8C%E5%A6%82%E4%BE%86%E5%AD%98%E5%9C%A8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn44.6",
+          "text": "但，不在取中欢乐、不在取中得欢乐、不在取中得喜悦、如实知、见取灭者，他不会想：『死后如来存在。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn44.6&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%86%EF%BC%8C%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E6%AD%A1%E6%A8%82%E3%80%81%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E6%AD%A1%E6%A8%82%E3%80%81%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E5%96%9C%E6%82%85%E3%80%81%E5%A6%82%E5%AF%A6%E7%9F%A5%E3%80%81%E8%A6%8B%E5%8F%96%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E4%B8%8D%E6%9C%83%E6%83%B3%EF%BC%9A%E3%80%8E%E6%AD%BB%E5%BE%8C%E5%A6%82%E4%BE%86%E5%AD%98%E5%9C%A8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn64",
+          "text": "他住于心被戒禁取缠缚、征服，不如实了知已生起的戒禁取之出离，戒禁取成为他的惯习而未被排除，则它是下分结；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E6%88%92%E7%A6%81%E5%8F%96%E6%88%90%E7%82%BA%E4%BB%96%E7%9A%84%E6%85%A3%E7%BF%92%E8%80%8C%E6%9C%AA%E8%A2%AB%E6%8E%92%E9%99%A4%EF%BC%8C%E5%89%87%E5%AE%83%E6%98%AF%E4%B8%8B%E5%88%86%E7%B5%90%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "va） **爱（Taṇhā）** 爱是渴爱、执取的动力根源。《转法轮经》明确说，爱是集谛——苦聚的根本成因。爱有三种：欲爱（对感官境界的渴爱）、有爱（对存在的渴爱，关联于常见）、无有爱（对不存在的渴爱，关联于断见）。 爱的生起：\"受缘爱\"——感受（特别是乐受）是爱的直接燃料。六根对六境时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "| 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无为、寂静、常，但绝不说涅槃是我。涅槃常，不等于有常我。** ## 1. 《论事》全书异说总纲 《论事》是上座部阿毗达磨中针对部派异说的论辩集。它不是中立宗教学目录，而是以分别说部/上座部立场审查佛教内部争论。核心方法是：把对方命题逼到与无我、刹那生灭、业果、圣道、涅槃、戒定慧相冲突处。 ### 1.1 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "悟是什么\"这个最初的提问，首尾圆满呼应。 ### 四双八辈：圣者的阶梯 每个果位分为\"道\"（修道中）与\"果\"（已证得）两阶段，合称四双八辈：趣向入流→入流果→趣向一来→一来果→趣向不还→不还果→趣向阿罗汉→阿罗汉。前七类统称\"有学\"（仍在受训练），阿罗汉为\"无学\"（训练已圆满）。 十结（烦恼的十种束缚）的断除进度，是划分四果最精确的标尺： |圣弟子种类|所断之结|所剩之轮回类型| |---|---|---| |入流果|身见、疑、戒禁取（三结）|人道或天道中最多轮回七次| |一来果|三结已断，并削弱欲贪、嗔恚、无明|在欲界再轮回一次| |不还果|加断欲贪、嗔恚（合称五下分结）|投生到色界净居天，不再返欲界| |阿罗汉|加断色贪、无色贪、傲慢、掉举、无明（五上分结）|不再轮回| ### 两种根性的入流之道：随法行者与随信行者 在证得初果之前，尚有\"随法行者\"（以智慧为主）与\"随信行者\"（以信仰为主）的区分——菩提比丘指出，这说明**同样走向初果的路上，行者可依主要根性（慧根或信根）而有不同的侧重**，这也呼应了第三章\"信与慧\"的讨论。 ### 在家与出家：果位并非出家人的专利 菩提比丘特别澄清一个常见的迷思：虽然通常证得阿罗汉果的多是比丘、比丘尼，但这并不表示在家弟子绝无可能证得阿罗汉果。经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "信（作为根和力） - 以四种方式找到的：定（作为根、力、觉支和道支） - 以五种方式找到的：慧（作为神足、根、力、觉支和道支） - 以八种方式找到的：正念（作为四念处、根、力、觉支和道支） - 以九种方式找到的：精进（作为四正勤、神足、根、力、觉支和道支） #### 2.2 应被断除的状态及断除之行为（XXII.47-91） 本节系统列出通过四道智断除的诸烦恼群： **结（saṃyojana，十种）**： - 五下分结：身见、疑、戒禁取见、欲贪、嗔恚 - 五上分结：色贪、无色贪、慢、掉举、无明 **烦恼（kilesa，十种）**：贪、嗔、痴、慢、邪见、疑、昏沉、掉举、无惭、无愧 **邪道（micchā-magga，十种）**：邪见、邪思维、邪语、邪业、邪命、邪精进、邪念、邪定、邪智、邪解脱 **各道断除的具体内容**（XXII.64-76）： - **第一道（入流道）**断：身见、疑、戒禁取见；在烦恼分类中断除邪见与疑，并断除相应的错误见、错误语、错误业、错误命等项目 - **第二道（一来道）**进一步断除足以导致堕落的粗重欲贪与嗔恚；其余较粗的感官贪与嗔恚由第二道处理 - **第三道（不还道）**断除残余的微细感官贪与嗔恚，以及相应的潜在倾向 - **第四道（阿罗汉道）**断：五上分结；贪",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/patipada-summary.md",
+          "text": "师的幻象——一旦表演结束，一切消失无踪。附录并特别澄清\"想（saññā）\"应译为\"记忆\"而非流行的\"知觉（perception）\"，理由是后者混淆了整个心识运作与单一蕴的界限。 **十三头陀支**：完整列出十三支苦行的具体内容（着补丁衣、只穿三衣、托钵乞食、次第乞食不越户、日中一食、一钵进食、饱食即止、住林间、住树下、露地住、住坟间、随处而安、常坐不卧），可与第六章的深度阐述对照参看。 **十结（Saṁyojana）**：身见、疑、戒禁取、欲贪、嗔恚、色界贪、无色界贪、慢、掉举、无明，共十项束缚众生轮回的心结，并说明四道（须陀洹、斯陀含、阿那含、阿罗汉）如何依次断除，可视为全书所述一切\"锻炼心\"之修行最终指向的教理坐标。 --- ## 总结：贯穿全书的三条主线 通读二十章，可见全书虽以人物传记与灵异事迹为外壳，内里实则贯穿三条彼此交织的主线： **其一，\"心是唯一战场\"**——从第一章\"业处\"到第二十章\"缘起法的两个面向\"，反复强调修行的成败不在森林、洞窟、老虎或鬼神，而在这一颗心是否被正念正智所照见、所降伏。 **其二，\"以恐惧、痛苦、艰困为磨刀石\"**——第一、二、五章的老虎调心、第四章的悬崖打坐、第十一章的静坐苦受、第十九章阿姜布罗姆的荒野行脚，皆是同一逻辑的不同变奏：唯有逼到绝境，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四取",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 10.878274358892973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "欲取",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取。",
+              "score": 9.431350380153516,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn45.174",
+              "collection": "经藏/相应部_sn",
+              "title": "取经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 8.734479580125091,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.734479580125091,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.133504970215915,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 7.609906452439681,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn38.12",
+              "collection": "经藏/相应部_sn",
+              "title": "取的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，道友！",
+              "score": 7.609906452439681,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.12&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如来、阿罗汉、遍正觉者自称为一切取论的遍知者，他完全安立一切取论的遍知：安立欲取的遍知，安立见取的遍知，安立戒禁取的遍知，安立［真］我论取的遍知，比丘们！",
+              "score": 4.372709433187486,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E4%BE%86%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E3%80%81%E9%81%8D%E6%AD%A3%E8%A6%BA%E8%80%85%E8%87%AA%E7%A8%B1%E7%82%BA%E4%B8%80%E5%88%87%E5%8F%96%E8%AB%96%E7%9A%84%E9%81%8D%E7%9F%A5%E8%80%85%EF%BC%8C%E4%BB%96%E5%AE%8C%E5%85%A8%E5%AE%89%E7%AB%8B%E4%B8%80%E5%88%87%E5%8F%96%E8%AB%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%9A%E5%AE%89%E7%AB%8B%E6%AC%B2%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%E8%A6%8B%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E5%AE%89%E7%AB%8B%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E7%9A%84%E9%81%8D%E7%9F%A5%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn15",
+              "collection": "经藏/长部_dn",
+              "title": "大因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果取完全地、全部地、无论什么、无论如何都不存在，即：欲取、见取、戒禁取、［真］我论取，当一切取都不存在时，以取之灭，有是否还能被了知呢？",
+              "score": 4.293303389734639,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E6%AC%B2%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%8F%96%E5%AE%8C%E5%85%A8%E5%9C%B0%E3%80%81%E5%85%A8%E9%83%A8%E5%9C%B0%E3%80%81%E7%84%A1%E8%AB%96%E4%BB%80%E9%BA%BC%E3%80%81%E7%84%A1%E8%AB%96%E5%A6%82%E4%BD%95%E9%83%BD%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E7%95%B6%E4%B8%80%E5%88%87%E5%8F%96%E9%83%BD%E4%B8%8D%E5%AD%98%E5%9C%A8%E6%99%82%EF%BC%8C%E4%BB%A5%E5%8F%96%E4%B9%8B%E6%BB%85%EF%BC%8C%E6%9C%89%E6%98%AF%E5%90%A6%E9%82%84%E8%83%BD%E8%A2%AB%E4%BA%86%E7%9F%A5%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "见取",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取。",
+              "score": 9.363302311686896,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn45.174",
+              "collection": "经藏/相应部_sn",
+              "title": "取经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 8.67145949916835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.67145949916835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.074820976855692,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 7.555000270988731,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn38.12",
+              "collection": "经藏/相应部_sn",
+              "title": "取的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，道友！",
+              "score": 7.555000270988731,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.12&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "sn44.6",
+              "collection": "经藏/相应部_sn",
+              "title": "舍利弗与拘𫄨罗经第四",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在取中欢乐、在取中得欢乐、在取中得喜悦、不如实知、见取灭者，他会想：『死后如来存在。",
+              "score": 6.007942785298931,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn44.6&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%96%E4%B8%AD%E6%AD%A1%E6%A8%82%E3%80%81%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E6%AD%A1%E6%A8%82%E3%80%81%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E5%96%9C%E6%82%85%E3%80%81%E4%B8%8D%E5%A6%82%E5%AF%A6%E7%9F%A5%E3%80%81%E8%A6%8B%E5%8F%96%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E6%9C%83%E6%83%B3%EF%BC%9A%E3%80%8E%E6%AD%BB%E5%BE%8C%E5%A6%82%E4%BE%86%E5%AD%98%E5%9C%A8%E3%80%82"
+            },
+            {
+              "uid": "sn44.6",
+              "collection": "经藏/相应部_sn",
+              "title": "舍利弗与拘𫄨罗经第四",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但，不在取中欢乐、不在取中得欢乐、不在取中得喜悦、如实知、见取灭者，他不会想：『死后如来存在。",
+              "score": 5.449943116680714,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn44.6&lang=zh&q=%E8%A6%8B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%86%EF%BC%8C%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E6%AD%A1%E6%A8%82%E3%80%81%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E6%AD%A1%E6%A8%82%E3%80%81%E4%B8%8D%E5%9C%A8%E5%8F%96%E4%B8%AD%E5%BE%97%E5%96%9C%E6%82%85%E3%80%81%E5%A6%82%E5%AF%A6%E7%9F%A5%E3%80%81%E8%A6%8B%E5%8F%96%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E4%B8%8D%E6%9C%83%E6%83%B3%EF%BC%9A%E3%80%8E%E6%AD%BB%E5%BE%8C%E5%A6%82%E4%BE%86%E5%AD%98%E5%9C%A8%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "戒禁取",
+          "hits": [
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；",
+              "score": 11.353365906714975,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E4%B8%8D%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E4%BB%96%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E5%90%AB%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心被戒禁取缠缚、征服，不如实了知已生起的戒禁取之出离，戒禁取成为他的惯习而未被排除，则它是下分结；",
+              "score": 10.95867110638322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E6%88%92%E7%A6%81%E5%8F%96%E6%88%90%E7%82%BA%E4%BB%96%E7%9A%84%E6%85%A3%E7%BF%92%E8%80%8C%E6%9C%AA%E8%A2%AB%E6%8E%92%E9%99%A4%EF%BC%8C%E5%89%87%E5%AE%83%E6%98%AF%E4%B8%8B%E5%88%86%E7%B5%90%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但戒禁取的烦恼潜在趋势潜伏于其中；",
+              "score": 9.974988708483778,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E6%BD%9B%E4%BC%8F%E6%96%BC%E5%85%B6%E4%B8%AD%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三结：有身见、疑、戒禁取。",
+              "score": 9.110144629636737,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%B5%90%EF%BC%9A%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E7%96%91%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.383301808814814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "an10.76",
+              "collection": "经藏/增支部_an",
+              "title": "三法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断有身见、舍断疑、舍断戒禁取，比丘们！",
+              "score": 8.383301808814814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.76&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E6%8D%A8%E6%96%B7%E7%96%91%E3%80%81%E6%8D%A8%E6%96%B7%E6%88%92%E7%A6%81%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.76",
+              "collection": "经藏/增支部_an",
+              "title": "三法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断有身见、不舍断疑、不舍断戒禁取，比丘们！",
+              "score": 8.061704708590776,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.76&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E4%B8%8D%E6%8D%A8%E6%96%B7%E7%96%91%E3%80%81%E4%B8%8D%E6%8D%A8%E6%96%B7%E6%88%92%E7%A6%81%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.174",
+              "collection": "经藏/相应部_sn",
+              "title": "取经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 7.763870019844056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "［真］我论取",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取。",
+              "score": 27.7360222403068,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn45.174",
+              "collection": "经藏/相应部_sn",
+              "title": "取经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 25.686641904604098,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 25.686641904604098,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取。",
+              "score": 23.91927620675275,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 22.37946063966352,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn38.12",
+              "collection": "经藏/相应部_sn",
+              "title": "取的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种取：欲取、见取、戒禁取、［真］我论取，道友！",
+              "score": 22.37946063966352,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.12&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%8F%96%EF%BC%9A%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这［真］是不可思议，尊者憍户迦！",
+              "score": 16.53137604366041,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%98%AF%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AD%B0%EF%BC%8C%E5%B0%8A%E8%80%85%E6%86%8D%E6%88%B6%E8%BF%A6%EF%BC%81"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这［真］是未曾有，这么繁忙、这么多事要作而来此。",
+              "score": 14.699151687958626,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%98%AF%E6%9C%AA%E6%9B%BE%E6%9C%89%EF%BC%8C%E9%80%99%E9%BA%BD%E7%B9%81%E5%BF%99%E3%80%81%E9%80%99%E9%BA%BC%E5%A4%9A%E4%BA%8B%E8%A6%81%E4%BD%9C%E8%80%8C%E4%BE%86%E6%AD%A4%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "va） **爱（Taṇhā）** 爱是渴爱、执取的动力根源。《转法轮经》明确说，爱是集谛——苦聚的根本成因。爱有三种：欲爱（对感官境界的渴爱）、有爱（对存在的渴爱，关联于常见）、无有爱（对不存在的渴爱，关联于断见）。 爱的生起：\"受缘爱\"——感受（特别是乐受）是爱的直接燃料。六根对六境时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%8F%96&scope=site",
+          "query": "四取"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "| 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无为、寂静、常，但绝不说涅槃是我。涅槃常，不等于有常我。** ## 1. 《论事》全书异说总纲 《论事》是上座部阿毗达磨中针对部派异说的论辩集。它不是中立宗教学目录，而是以分别说部/上座部立场审查佛教内部争论。核心方法是：把对方命题逼到与无我、刹那生灭、业果、圣道、涅槃、戒定慧相冲突处。 ### 1.1 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "悟是什么\"这个最初的提问，首尾圆满呼应。 ### 四双八辈：圣者的阶梯 每个果位分为\"道\"（修道中）与\"果\"（已证得）两阶段，合称四双八辈：趣向入流→入流果→趣向一来→一来果→趣向不还→不还果→趣向阿罗汉→阿罗汉。前七类统称\"有学\"（仍在受训练），阿罗汉为\"无学\"（训练已圆满）。 十结（烦恼的十种束缚）的断除进度，是划分四果最精确的标尺： |圣弟子种类|所断之结|所剩之轮回类型| |---|---|---| |入流果|身见、疑、戒禁取（三结）|人道或天道中最多轮回七次| |一来果|三结已断，并削弱欲贪、嗔恚、无明|在欲界再轮回一次| |不还果|加断欲贪、嗔恚（合称五下分结）|投生到色界净居天，不再返欲界| |阿罗汉|加断色贪、无色贪、傲慢、掉举、无明（五上分结）|不再轮回| ### 两种根性的入流之道：随法行者与随信行者 在证得初果之前，尚有\"随法行者\"（以智慧为主）与\"随信行者\"（以信仰为主）的区分——菩提比丘指出，这说明**同样走向初果的路上，行者可依主要根性（慧根或信根）而有不同的侧重**，这也呼应了第三章\"信与慧\"的讨论。 ### 在家与出家：果位并非出家人的专利 菩提比丘特别澄清一个常见的迷思：虽然通常证得阿罗汉果的多是比丘、比丘尼，但这并不表示在家弟子绝无可能证得阿罗汉果。经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "信（作为根和力） - 以四种方式找到的：定（作为根、力、觉支和道支） - 以五种方式找到的：慧（作为神足、根、力、觉支和道支） - 以八种方式找到的：正念（作为四念处、根、力、觉支和道支） - 以九种方式找到的：精进（作为四正勤、神足、根、力、觉支和道支） #### 2.2 应被断除的状态及断除之行为（XXII.47-91） 本节系统列出通过四道智断除的诸烦恼群： **结（saṃyojana，十种）**： - 五下分结：身见、疑、戒禁取见、欲贪、嗔恚 - 五上分结：色贪、无色贪、慢、掉举、无明 **烦恼（kilesa，十种）**：贪、嗔、痴、慢、邪见、疑、昏沉、掉举、无惭、无愧 **邪道（micchā-magga，十种）**：邪见、邪思维、邪语、邪业、邪命、邪精进、邪念、邪定、邪智、邪解脱 **各道断除的具体内容**（XXII.64-76）： - **第一道（入流道）**断：身见、疑、戒禁取见；在烦恼分类中断除邪见与疑，并断除相应的错误见、错误语、错误业、错误命等项目 - **第二道（一来道）**进一步断除足以导致堕落的粗重欲贪与嗔恚；其余较粗的感官贪与嗔恚由第二道处理 - **第三道（不还道）**断除残余的微细感官贪与嗔恚，以及相应的潜在倾向 - **第四道（阿罗汉道）**断：五上分结；贪",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/forest-monks/patipada-summary.md",
+          "heading": "站内搜索命中",
+          "text": "师的幻象——一旦表演结束，一切消失无踪。附录并特别澄清\"想（saññā）\"应译为\"记忆\"而非流行的\"知觉（perception）\"，理由是后者混淆了整个心识运作与单一蕴的界限。 **十三头陀支**：完整列出十三支苦行的具体内容（着补丁衣、只穿三衣、托钵乞食、次第乞食不越户、日中一食、一钵进食、饱食即止、住林间、住树下、露地住、住坟间、随处而安、常坐不卧），可与第六章的深度阐述对照参看。 **十结（Saṁyojana）**：身见、疑、戒禁取、欲贪、嗔恚、色界贪、无色界贪、慢、掉举、无明，共十项束缚众生轮回的心结，并说明四道（须陀洹、斯陀含、阿那含、阿罗汉）如何依次断除，可视为全书所述一切\"锻炼心\"之修行最终指向的教理坐标。 --- ## 总结：贯穿全书的三条主线 通读二十章，可见全书虽以人物传记与灵异事迹为外壳，内里实则贯穿三条彼此交织的主线： **其一，\"心是唯一战场\"**——从第一章\"业处\"到第二十章\"缘起法的两个面向\"，反复强调修行的成败不在森林、洞窟、老虎或鬼神，而在这一颗心是否被正念正智所照见、所降伏。 **其二，\"以恐惧、痛苦、艰困为磨刀石\"**——第一、二、五章的老虎调心、第四章的悬崖打坐、第十一章的静坐苦受、第十九章阿姜布罗姆的荒野行脚，皆是同一逻辑的不同变奏：唯有逼到绝境，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "heading": "站内搜索命中",
+          "text": "满足）、数数舍身、数数结生、数数高下、无伴独往。 并破世间乐有自性之想：「贪增广故现前乐受，多是于苦渐息灭位，妄起乐觉，全无未作观待除苦，所显自性真乐。」——此即三苦之行苦（samskāra-dukkha）的微细义。 **别苦**：人间（饥渴寒热、生老病死）、非天（嫉妒与天争战）、欲天（死殁五相、高下变易）、上界天（行苦，烦恼随逐）。 ### 四、思维集谛流转次第 **烦恼生起理趣**（十根本烦恼：贪嗔慢无明疑、坏聚见边执见见取戒禁取邪见）： > 「量释论云：有我故知他，执二故起嗔，与此等系属，生一切过患。」 烦恼过患：引《入行论》：「嗔爱等怨敌，全无手足形，非智亦非勇，如何驱役我……大力烦恼敌，须弥若相遇，灰尘且无剩，能刹那掷我。」 **聚集业理**：思业（令心造作之心所意业）、思己业（由彼思发起身语业）。 **死没及结生之理**（五分详述）： - 死缘（三种：寿尽、福尽、不平等） - 死心（善心/不善心/无记心死亡之相） - 从何摄暖（不善从上分、善从下分；俱从心处舍识） - 死后成办中有（中有眼无障隔如天眼，当生何趣即彼身形） - 次于生有受生道理（胎生之颠倒见与贪爱结生） ### 五、能趣解脱道之自性 **以何等身灭除生死**：引《亲友书》，强调须于得暇满身时断生死。出家较",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g35",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 35,
+      "label": "四取",
+      "members": "欲取、见取、戒禁取、［真］我论取",
+      "member_items": [
+        "欲取",
+        "见取",
+        "戒禁取",
+        "［真］我论取"
+      ],
+      "dn34_status": null,
+      "source_text": "四取：欲取、见取、戒禁取、［真］我论取。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96"
+    }
+  ]
+}

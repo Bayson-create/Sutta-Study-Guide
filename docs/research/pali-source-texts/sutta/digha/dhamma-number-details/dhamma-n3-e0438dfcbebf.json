@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-e0438dfcbebf",
+    "number": 3,
+    "label": "三种色的摄取",
+    "member_items": [
+      "可见有对色",
+      "不可见有对色",
+      "不可见无对色"
+    ],
+    "group_ids": [
+      "dn33-n3-g34"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三种色的摄取",
+      "可见有对色",
+      "不可见有对色",
+      "不可见无对色"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三种色的摄取」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：可见有对色、不可见有对色、不可见无对色。[1]\n\n## 所含各法\n### 可见有对色\n经文将「可见有对色」列为「三种色的摄取」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种色的摄取：可见有对色、不可见有对色、不可见无对色。。[1]\n### 不可见有对色\n经文将「不可见有对色」列为「三种色的摄取」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种色的摄取：可见有对色、不可见有对色、不可见无对色。。[1]\n### 不可见无对色\n经文将「不可见无对色」列为「三种色的摄取」的一个成员。Early Buddhist 用该名词检索时，在《不可爱经》命中：不可爱经。[3]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三种色的摄取",
+          "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96%EF%BC%9A%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.87",
+          "text": "不可爱经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.87&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%8F%AF%E6%84%9B%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.22",
+          "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.39",
+          "text": "有这三种傲慢，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.60",
+          "text": "有这三种神变，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.70",
+          "text": "有三种布萨，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.70&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E4%B8%89%E7%A8%AE%E5%B8%83%E8%96%A9%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.95",
+          "text": "有这三种团体，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.95&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%9C%98%E9%AB%94%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.117",
+          "text": "有这三种坏失，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%A3%9E%E5%A4%B1%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.117",
+          "text": "有这三种具足，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%85%B7%E8%B6%B3%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.35",
+          "text": "如果对色有烦恼潜在趋势者，则以此为名。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.35&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%BB%A5%E6%AD%A4%E7%82%BA%E5%90%8D%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.36",
+          "text": "如果对色有烦恼潜在趋势者，则可被推量；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.46",
+          "text": "直接可见的法经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.46&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B3%95%E7%B6%93"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三种色的摄取",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+              "score": 23.8799653286333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96%EF%BC%9A%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "an9.22",
+              "collection": "经藏/增支部_an",
+              "title": "未调马经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+              "score": 9.4917888475245,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "an3.39",
+              "collection": "经藏/增支部_an",
+              "title": "奢华经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种傲慢，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.60",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种神变，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.70",
+              "collection": "经藏/增支部_an",
+              "title": "布萨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有三种布萨，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.70&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E4%B8%89%E7%A8%AE%E5%B8%83%E8%96%A9%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.95",
+              "collection": "经藏/增支部_an",
+              "title": "团体经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种团体，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.95&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%9C%98%E9%AB%94%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.117",
+              "collection": "经藏/增支部_an",
+              "title": "坏失与具足经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种坏失，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%A3%9E%E5%A4%B1%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.117",
+              "collection": "经藏/增支部_an",
+              "title": "坏失与具足经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种具足，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%85%B7%E8%B6%B3%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "可见有对色",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+              "score": 28.98650534308353,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96%EF%BC%9A%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "sn22.35",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则以此为名。",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.35&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%BB%A5%E6%AD%A4%E7%82%BA%E5%90%8D%E3%80%82"
+            },
+            {
+              "uid": "sn22.35",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则以此为名。",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.35&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%BB%A5%E6%AD%A4%E7%82%BA%E5%90%8D%E3%80%82"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则可被推量；",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则可被推量；",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "an9.46",
+              "collection": "经藏/增支部_an",
+              "title": "直接可见的法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "直接可见的法经",
+              "score": 9.94590467715626,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.46&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B3%95%E7%B6%93"
+            },
+            {
+              "uid": "sn22.155",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当有色时，执取色后，对色执著，则生起有身见。",
+              "score": 9.939620281464158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.155&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%9C%89%E8%89%B2%E6%99%82%EF%BC%8C%E5%9F%B7%E5%8F%96%E8%89%B2%E5%BE%8C%EF%BC%8C%E5%B0%8D%E8%89%B2%E5%9F%B7%E8%91%97%EF%BC%8C%E5%89%87%E7%94%9F%E8%B5%B7%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "an6.47",
+              "collection": "经藏/增支部_an",
+              "title": "直接可见经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "直接可见经第一",
+              "score": 9.395425314377103,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.47&lang=zh&q=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%B6%93%E7%AC%AC%E4%B8%80"
+            }
+          ]
+        },
+        {
+          "query": "不可见有对色",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+              "score": 17.209720717993548,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96%EF%BC%9A%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色无烦恼潜在趋势者，则不可被推量；",
+              "score": 15.90765645729149,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E7%84%A1%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%B8%8D%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色无烦恼潜在趋势者，则不可被推量；",
+              "score": 15.90765645729149,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E7%84%A1%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%B8%8D%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.35",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则以此为名。",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.35&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%BB%A5%E6%AD%A4%E7%82%BA%E5%90%8D%E3%80%82"
+            },
+            {
+              "uid": "sn22.35",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则以此为名。",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.35&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E4%BB%A5%E6%AD%A4%E7%82%BA%E5%90%8D%E3%80%82"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则可被推量；",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.36",
+              "collection": "经藏/相应部_sn",
+              "title": "某位比丘经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果对色有烦恼潜在趋势者，则可被推量；",
+              "score": 12.646764443096092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.36&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E5%B0%8D%E8%89%B2%E6%9C%89%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%80%85%EF%BC%8C%E5%89%87%E5%8F%AF%E8%A2%AB%E6%8E%A8%E9%87%8F%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.80",
+              "collection": "经藏/相应部_sn",
+              "title": "托钵经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有二种见：有见与无有见。",
+              "score": 12.09410404123569,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "不可见无对色",
+          "hits": [
+            {
+              "uid": "an10.87",
+              "collection": "经藏/增支部_an",
+              "title": "不可爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不可爱经",
+              "score": 10.509182937223187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.87&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%8F%AF%E6%84%9B%E7%B6%93"
+            },
+            {
+              "uid": "kp5",
+              "collection": "经藏/小部_kn",
+              "title": "吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "愚者不可思惟而思惟之，不可论说而论说之，不可行者而修习之。",
+              "score": 10.438435650357462,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%84%9A%E8%80%85%E4%B8%8D%E5%8F%AF%E6%80%9D%E6%83%9F%E8%80%8C%E6%80%9D%E6%83%9F%E4%B9%8B%EF%BC%8C%E4%B8%8D%E5%8F%AF%E8%AB%96%E8%AA%AA%E8%80%8C%E8%AB%96%E8%AA%AA%E4%B9%8B%EF%BC%8C%E4%B8%8D%E5%8F%AF%E8%A1%8C%E8%80%85%E8%80%8C%E4%BF%AE%E7%BF%92%E4%B9%8B%E3%80%82"
+            },
+            {
+              "uid": "snp2.4",
+              "collection": "经藏/小部_kn",
+              "title": "大吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "愚者不可思惟而思惟之，不可论说而论说之，不可行者而修习之。",
+              "score": 10.438435650357462,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp2.4&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%84%9A%E8%80%85%E4%B8%8D%E5%8F%AF%E6%80%9D%E6%83%9F%E8%80%8C%E6%80%9D%E6%83%9F%E4%B9%8B%EF%BC%8C%E4%B8%8D%E5%8F%AF%E8%AB%96%E8%AA%AA%E8%80%8C%E8%AB%96%E8%AA%AA%E4%B9%8B%EF%BC%8C%E4%B8%8D%E5%8F%AF%E8%A1%8C%E8%80%85%E8%80%8C%E4%BF%AE%E7%BF%92%E4%B9%8B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+              "score": 10.129796257896936,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96%EF%BC%9A%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2%E3%80%82"
+            },
+            {
+              "uid": "an3.115",
+              "collection": "经藏/增支部_an",
+              "title": "不可测量者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不可测量者经",
+              "score": 9.34587230548158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.115&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%8F%AF%E6%B8%AC%E9%87%8F%E8%80%85%E7%B6%93"
+            },
+            {
+              "uid": "dhp90-99",
+              "collection": "经藏/小部_kn",
+              "title": "阿罗汉品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "踪迹不可得。",
+              "score": 9.34587230548158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E8%B9%A4%E8%B7%A1%E4%B8%8D%E5%8F%AF%E5%BE%97%E3%80%82"
+            },
+            {
+              "uid": "dhp90-99",
+              "collection": "经藏/小部_kn",
+              "title": "阿罗汉品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "踪迹不可得。",
+              "score": 9.34587230548158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E8%B9%A4%E8%B7%A1%E4%B8%8D%E5%8F%AF%E5%BE%97%E3%80%82"
+            },
+            {
+              "uid": "dhp116-128",
+              "collection": "经藏/小部_kn",
+              "title": "恶品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "不可数数作；",
+              "score": 9.34587230548158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E5%8F%AF%E6%95%B8%E6%95%B8%E4%BD%9C%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g34",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 34,
+      "label": "三种色的摄取",
+      "members": "可见有对色、不可见有对色、不可见无对色",
+      "member_items": [
+        "可见有对色",
+        "不可见有对色",
+        "不可见无对色"
+      ],
+      "dn34_status": null,
+      "source_text": "三种色的摄取：可见有对色、不可见有对色、不可见无对色。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%89%B2%E7%9A%84%E6%94%9D%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E6%9C%89%E5%B0%8D%E8%89%B2%E3%80%81%E4%B8%8D%E5%8F%AF%E8%A6%8B%E7%84%A1%E5%B0%8D%E8%89%B2"
+    }
+  ]
+}

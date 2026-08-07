@@ -1,0 +1,558 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-af808aac4d78",
+    "number": 4,
+    "label": "四圣言说",
+    "member_items": [
+      "戒绝妄语",
+      "戒绝离间语",
+      "戒绝粗恶语",
+      "戒绝杂秽语"
+    ],
+    "group_ids": [
+      "dn33-n4-g42"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四圣言说",
+      "戒绝妄语",
+      "戒绝离间语",
+      "戒绝粗恶语",
+      "戒绝杂秽语"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四圣言说」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语。[1]\n\n## 所含各法\n### 戒绝妄语\n经文将「戒绝妄语」列为「四圣言说」的一个成员。Early Buddhist 用该名词检索时，在《回避经》命中：对妄语来说，戒绝妄语是回避的。。[3]\n### 戒绝离间语\n经文将「戒绝离间语」列为「四圣言说」的一个成员。Early Buddhist 用该名词检索时，在《回避经》命中：对离间语来说，戒绝离间语是回避的。。[4]\n### 戒绝粗恶语\n经文将「戒绝粗恶语」列为「四圣言说」的一个成员。Early Buddhist 用该名词检索时，在《离间语经》命中：［……］自己是离离间语者、劝导他人戒绝离间语、戒绝离间语认可者、称赞戒绝离间语，比丘们！。[5]\n### 戒绝杂秽语\n经文将「戒绝杂秽语」列为「四圣言说」的一个成员。Early Buddhist 用该名词检索时，在《优楼频螺经第二》命中：「凡以掉举心，说许多杂秽［语］者，。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四圣言说",
+          "text": "四圣言说：戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四圣种姓：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%81%96%E7%A8%AE%E5%A7%93%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.175",
+          "text": "对妄语来说，戒绝妄语是回避的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E5%A6%84%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.175",
+          "text": "对离间语来说，戒绝离间语是回避的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%9B%A2%E9%96%93%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.268",
+          "text": "［……］自己是离离间语者、劝导他人戒绝离间语、戒绝离间语认可者、称赞戒绝离间语，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.268&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E2%80%A6%E2%80%A6%EF%BC%BD%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%E3%80%81%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E8%AA%8D%E5%8F%AF%E8%80%85%E3%80%81%E7%A8%B1%E8%AE%9A%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.22",
+          "text": "「凡以掉举心，说许多杂秽［语］者，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.22&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%87%A1%E4%BB%A5%E6%8E%89%E8%88%89%E5%BF%83%EF%BC%8C%E8%AA%AA%E8%A8%B1%E5%A4%9A%E9%9B%9C%E7%A9%A2%EF%BC%BB%E8%AA%9E%EF%BC%BD%E8%80%85%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.22",
+          "text": "言说句经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.22&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E5%8F%A5%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.250",
+          "text": "言说经第一",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.250&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%B8%80"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.251",
+          "text": "言说经第二",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.251&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%BA%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.252",
+          "text": "言说经第三",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.252&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%B8%89"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.253",
+          "text": "言说经第四",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.253&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E5%9B%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.217",
+          "text": "言说路径经第一",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.217&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E8%B7%AF%E5%BE%91%E7%B6%93%E7%AC%AC%E4%B8%80"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.218",
+          "text": "言说路径经第二",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.218&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E8%B7%AF%E5%BE%91%E7%B6%93%E7%AC%AC%E4%BA%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四圣言说",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四圣种姓：学友们！",
+              "score": 15.442334145148372,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%81%96%E7%A8%AE%E5%A7%93%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.22",
+              "collection": "经藏/增支部_an",
+              "title": "言说句经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说句经",
+              "score": 10.717840718667082,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.22&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E5%8F%A5%E7%B6%93"
+            },
+            {
+              "uid": "an4.250",
+              "collection": "经藏/增支部_an",
+              "title": "言说经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说经第一",
+              "score": 10.089880841198612,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.250&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%B8%80"
+            },
+            {
+              "uid": "an4.251",
+              "collection": "经藏/增支部_an",
+              "title": "言说经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说经第二",
+              "score": 10.089880841198612,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.251&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%BA%8C"
+            },
+            {
+              "uid": "an4.252",
+              "collection": "经藏/增支部_an",
+              "title": "言说经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说经第三",
+              "score": 10.089880841198612,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.252&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E4%B8%89"
+            },
+            {
+              "uid": "an4.253",
+              "collection": "经藏/增支部_an",
+              "title": "言说经第四",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说经第四",
+              "score": 10.089880841198612,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.253&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E7%B6%93%E7%AC%AC%E5%9B%9B"
+            },
+            {
+              "uid": "an4.217",
+              "collection": "经藏/增支部_an",
+              "title": "言说路径经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说路径经第一",
+              "score": 9.531432780788615,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.217&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E8%B7%AF%E5%BE%91%E7%B6%93%E7%AC%AC%E4%B8%80"
+            },
+            {
+              "uid": "an4.218",
+              "collection": "经藏/增支部_an",
+              "title": "言说路径经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "言说路径经第二",
+              "score": 9.531432780788615,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.218&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A8%80%E8%AA%AA%E8%B7%AF%E5%BE%91%E7%B6%93%E7%AC%AC%E4%BA%8C"
+            }
+          ]
+        },
+        {
+          "query": "戒绝妄语",
+          "hits": [
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对妄语来说，戒绝妄语是回避的。",
+              "score": 21.160337786688444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E5%A6%84%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an10.169",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "妄语是此岸，戒绝妄语是彼岸；",
+              "score": 20.82970750877144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.169&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%84%E8%AA%9E%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "an10.170",
+              "collection": "经藏/增支部_an",
+              "title": "此岸经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "妄语是此岸，戒绝妄语是彼岸；",
+              "score": 20.82970750877144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.170&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%84%E8%AA%9E%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "mn73",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "妄语是不善的，戒绝妄语是善的；",
+              "score": 20.5725506259471,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%84%E8%AA%9E%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "an4.267",
+              "collection": "经藏/增支部_an",
+              "title": "妄语经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［……］自己是离妄语者、劝导他人戒绝妄语、戒绝妄语认可者、称赞戒绝妄语，比丘们！",
+              "score": 19.815730013253877,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.267&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E2%80%A6%E2%80%A6%EF%BC%BD%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E5%A6%84%E8%AA%9E%E8%80%85%E3%80%81%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E8%AA%8D%E5%8F%AF%E8%80%85%E3%80%81%E7%A8%B1%E8%AE%9A%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 19.35411773197427,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn117",
+              "collection": "经藏/中部_mn",
+              "title": "四十大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离两舌、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 19.35411773197427,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn117&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E5%85%A9%E8%88%8C%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，学友们！",
+              "score": 19.35411773197427,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "戒绝离间语",
+          "hits": [
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对离间语来说，戒绝离间语是回避的。",
+              "score": 28.497099201970986,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%9B%A2%E9%96%93%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an4.268",
+              "collection": "经藏/增支部_an",
+              "title": "离间语经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［……］自己是离离间语者、劝导他人戒绝离间语、戒绝离间语认可者、称赞戒绝离间语，比丘们！",
+              "score": 27.45153321458505,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.268&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E2%80%A6%E2%80%A6%EF%BC%BD%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%E3%80%81%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E8%AA%8D%E5%8F%AF%E8%80%85%E3%80%81%E7%A8%B1%E8%AE%9A%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn54",
+              "collection": "经藏/中部_mn",
+              "title": "迫得利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "依止于不离间语，离间语应该被舍断；",
+              "score": 23.960950131641923,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn54&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BE%9D%E6%AD%A2%E6%96%BC%E4%B8%8D%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%8C%E9%9B%A2%E9%96%93%E8%AA%9E%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "an4.203",
+              "collection": "经藏/增支部_an",
+              "title": "七业经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是离离间语者，且劝导他人戒绝离间语；",
+              "score": 23.878912135162647,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.203&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%EF%BC%8C%E4%B8%94%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%9B"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 23.310028148844342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，学友们！",
+              "score": 23.310028148844342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 23.310028148844342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 23.310028148844342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "戒绝粗恶语",
+          "hits": [
+            {
+              "uid": "an4.268",
+              "collection": "经藏/增支部_an",
+              "title": "离间语经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［……］自己是离离间语者、劝导他人戒绝离间语、戒绝离间语认可者、称赞戒绝离间语，比丘们！",
+              "score": 18.49137312536112,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.268&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E2%80%A6%E2%80%A6%EF%BC%BD%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%E3%80%81%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E8%AA%8D%E5%8F%AF%E8%80%85%E3%80%81%E7%A8%B1%E8%AE%9A%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对离间语来说，戒绝离间语是回避的。",
+              "score": 16.708239320847536,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%9B%A2%E9%96%93%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，学友们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四圣言说：戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语。",
+              "score": 15.94985860578444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA%EF%BC%9A%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%E3%80%82"
+            },
+            {
+              "uid": "an4.203",
+              "collection": "经藏/增支部_an",
+              "title": "七业经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是离离间语者，且劝导他人戒绝离间语；",
+              "score": 14.785373567720088,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.203&lang=zh&q=%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%EF%BC%8C%E4%B8%94%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "戒绝杂秽语",
+          "hits": [
+            {
+              "uid": "an4.22",
+              "collection": "经藏/增支部_an",
+              "title": "优楼频螺经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「凡以掉举心，说许多杂秽［语］者，",
+              "score": 18.4985198420915,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.22&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%87%A1%E4%BB%A5%E6%8E%89%E8%88%89%E5%BF%83%EF%BC%8C%E8%AA%AA%E8%A8%B1%E5%A4%9A%E9%9B%9C%E7%A9%A2%EF%BC%BB%E8%AA%9E%EF%BC%BD%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "an4.268",
+              "collection": "经藏/增支部_an",
+              "title": "离间语经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［……］自己是离离间语者、劝导他人戒绝离间语、戒绝离间语认可者、称赞戒绝离间语，比丘们！",
+              "score": 18.49137312536112,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.268&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E2%80%A6%E2%80%A6%EF%BC%BD%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9B%A2%E9%9B%A2%E9%96%93%E8%AA%9E%E8%80%85%E3%80%81%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E8%AA%8D%E5%8F%AF%E8%80%85%E3%80%81%E7%A8%B1%E8%AE%9A%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对离间语来说，戒绝离间语是回避的。",
+              "score": 16.708239320847536,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%9B%A2%E9%96%93%E8%AA%9E%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，学友们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语，比丘们！",
+              "score": 16.696178983100307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四圣言说：戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语。",
+              "score": 15.94985860578444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA%EF%BC%9A%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g42",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 42,
+      "label": "四圣言说",
+      "members": "戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语",
+      "member_items": [
+        "戒绝妄语",
+        "戒绝离间语",
+        "戒绝粗恶语",
+        "戒绝杂秽语"
+      ],
+      "dn34_status": null,
+      "source_text": "四圣言说：戒绝妄语、戒绝离间语、戒绝粗恶语、戒绝杂秽语。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%81%96%E8%A8%80%E8%AA%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E7%B5%95%E5%A6%84%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%A2%E9%96%93%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E7%B2%97%E6%83%A1%E8%AA%9E%E3%80%81%E6%88%92%E7%B5%95%E9%9B%9C%E7%A9%A2%E8%AA%9E"
+    }
+  ]
+}

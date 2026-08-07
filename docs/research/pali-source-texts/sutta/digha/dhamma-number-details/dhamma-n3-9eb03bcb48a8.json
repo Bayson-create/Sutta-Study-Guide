@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-9eb03bcb48a8",
+    "number": 3,
+    "label": "三种边",
+    "member_items": [
+      "有身边",
+      "有身之集边",
+      "有身之灭边"
+    ],
+    "group_ids": [
+      "dn33-n3-g25"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三种边",
+      "有身边",
+      "有身之集边",
+      "有身之灭边"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三种边」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有身边、有身之集边、有身之灭边。[1]\n\n## 所含各法\n### 有身边\n经文将「有身边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种边：有身边、有身之集边、有身之灭边。。[1]\n### 有身之集边\n经文将「有身之集边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《有身经》命中：这被称为有身之集。。[3]\n### 有身之灭边\n经文将「有身之灭边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《边经》命中：什么是导向有身之灭道迹边？。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三种边",
+          "text": "三种边：有身边、有身之集边、有身之灭边。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三种边：有身边、有身之集边、有身之灭边。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E9%82%8A%EF%BC%9A%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.105",
+          "text": "这被称为有身之集。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.103",
+          "text": "什么是导向有身之灭道迹边？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.62",
+          "text": "边地经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.62&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%8A%E5%9C%B0%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.116",
+          "text": "世间边之行经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.116&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%96%E9%96%93%E9%82%8A%E4%B9%8B%E8%A1%8C%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.22",
+          "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.103",
+          "text": "这些是四个边。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%80%8B%E9%82%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn1",
+          "text": "有边无边论",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn1&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E9%82%8A%E7%84%A1%E9%82%8A%E8%AB%96"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.39",
+          "text": "有这三种傲慢，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.60",
+          "text": "有这三种神变，哪三种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.103",
+          "text": "这被称为导向有身之灭道迹边。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.103",
+          "text": "有身边、有身之集边、有身之灭边、导向有身之灭道迹边。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三种边",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种边：有身边、有身之集边、有身之灭边。",
+              "score": 15.110029364112512,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E9%82%8A%EF%BC%9A%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn56.62",
+              "collection": "经藏/相应部_sn",
+              "title": "边地经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "边地经",
+              "score": 10.432819763860389,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.62&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%8A%E5%9C%B0%E7%B6%93"
+            },
+            {
+              "uid": "sn35.116",
+              "collection": "经藏/相应部_sn",
+              "title": "世间边之行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "世间边之行经",
+              "score": 9.821559306410787,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.116&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%96%E9%96%93%E9%82%8A%E4%B9%8B%E8%A1%8C%E7%B6%93"
+            },
+            {
+              "uid": "an9.22",
+              "collection": "经藏/增支部_an",
+              "title": "未调马经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+              "score": 9.4917888475245,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四个边。",
+              "score": 9.277962129081256,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%80%8B%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "dn1",
+              "collection": "经藏/长部_dn",
+              "title": "梵网经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有边无边论",
+              "score": 9.277962129081256,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn1&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E9%82%8A%E7%84%A1%E9%82%8A%E8%AB%96"
+            },
+            {
+              "uid": "an3.39",
+              "collection": "经藏/增支部_an",
+              "title": "奢华经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种傲慢，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.60",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种神变，哪三种呢？",
+              "score": 9.13195914204363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "有身边",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种边：有身边、有身之集边、有身之灭边。",
+              "score": 19.910863074120766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E9%82%8A%EF%BC%9A%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向有身之灭道迹边？",
+              "score": 19.871862233962588,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向有身之灭道迹边。",
+              "score": 19.871862233962588,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身边、有身之集边、有身之灭边、导向有身之灭道迹边。",
+              "score": 18.97893667263179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.155",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身见经",
+              "score": 12.727756178059819,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.155&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E8%A6%8B%E7%B6%93"
+            },
+            {
+              "uid": "sn38.15",
+              "collection": "经藏/相应部_sn",
+              "title": "有身的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身的询问经",
+              "score": 11.982035055697684,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.15&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E7%9A%84%E8%A9%A2%E5%95%8F%E7%B6%93"
+            },
+            {
+              "uid": "an4.33",
+              "collection": "经藏/增支部_an",
+              "title": "狮子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［听闻：］有身之灭，有身之生起，",
+              "score": 11.587140313933489,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.33&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%EF%BC%BB%E8%81%BD%E8%81%9E%EF%BC%9A%EF%BC%BD%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%EF%BC%8C%E6%9C%89%E8%BA%AB%E4%B9%8B%E7%94%9F%E8%B5%B7%EF%BC%8C"
+            },
+            {
+              "uid": "sn22.44",
+              "collection": "经藏/相应部_sn",
+              "title": "道迹经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为『导向有身之集道迹、导向有身之集道迹』。",
+              "score": 11.587140313933489,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.44&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%81%93%E8%B7%A1%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%81%93%E8%B7%A1%E3%80%8F%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有身之集边",
+          "hits": [
+            {
+              "uid": "sn22.105",
+              "collection": "经藏/相应部_sn",
+              "title": "有身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有身之集。",
+              "score": 33.61591792101716,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E3%80%82"
+            },
+            {
+              "uid": "sn22.105",
+              "collection": "经藏/相应部_sn",
+              "title": "有身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将教导你们有身、有身之集、有身之灭、导向有身之灭道迹，你们要听！",
+              "score": 23.318183494683286,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%BD%A0%E5%80%91%E6%9C%89%E8%BA%AB%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种边：有身边、有身之集边、有身之灭边。",
+              "score": 19.910863074120766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E9%82%8A%EF%BC%9A%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向有身之灭道迹边？",
+              "score": 19.871862233962588,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向有身之灭道迹边。",
+              "score": 19.871862233962588,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身边、有身之集边、有身之灭边、导向有身之灭道迹边。",
+              "score": 18.97893667263179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.155",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身见经",
+              "score": 12.727756178059819,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.155&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E8%A6%8B%E7%B6%93"
+            },
+            {
+              "uid": "sn38.15",
+              "collection": "经藏/相应部_sn",
+              "title": "有身的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身的询问经",
+              "score": 11.982035055697684,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.15&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E7%9A%84%E8%A9%A2%E5%95%8F%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "有身之灭边",
+          "hits": [
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向有身之灭道迹边？",
+              "score": 30.875893905202933,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向有身之灭道迹边。",
+              "score": 30.875893905202933,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.105",
+              "collection": "经藏/相应部_sn",
+              "title": "有身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有身之灭。",
+              "score": 26.97675053722989,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn22.44",
+              "collection": "经藏/相应部_sn",
+              "title": "道迹经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为『导向有身之灭道迹、导向有身之灭道迹』。",
+              "score": 26.135344796303688,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.44&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn22.103",
+              "collection": "经藏/相应部_sn",
+              "title": "边经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身边、有身之集边、有身之灭边、导向有身之灭道迹边。",
+              "score": 26.132643513165654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.44",
+              "collection": "经藏/相应部_sn",
+              "title": "道迹经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向有身之灭道迹？",
+              "score": 24.28817842327807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.44&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.105",
+              "collection": "经藏/相应部_sn",
+              "title": "有身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向有身之灭道迹？",
+              "score": 24.28817842327807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.105",
+              "collection": "经藏/相应部_sn",
+              "title": "有身经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向有身之灭道迹。",
+              "score": 24.28817842327807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g25",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 25,
+      "label": "三种边",
+      "members": "有身边、有身之集边、有身之灭边",
+      "member_items": [
+        "有身边",
+        "有身之集边",
+        "有身之灭边"
+      ],
+      "dn34_status": null,
+      "source_text": "三种边：有身边、有身之集边、有身之灭边。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A"
+    }
+  ]
+}

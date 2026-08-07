@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-07fe9ef84233",
+    "number": 3,
+    "label": "三眼",
+    "member_items": [
+      "肉眼",
+      "天眼",
+      "慧眼"
+    ],
+    "group_ids": [
+      "dn33-n3-g46"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三眼",
+      "肉眼",
+      "天眼",
+      "慧眼"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三眼」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：肉眼、天眼、慧眼。[1]\n\n## 所含各法\n### 肉眼\n经文将「肉眼」列为「三眼」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三眼：肉眼、天眼、慧眼。。[1]\n### 天眼\n经文将「天眼」列为「三眼」的一个成员。Early Buddhist 用该名词检索时，在《天眼经》命中：天眼经。[3]\n### 慧眼\n经文将「慧眼」列为「三眼」的一个成员。Early Buddhist 用该名词检索时，在《毘陀罗大经》命中：以慧眼而了知能被了解的法。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 20 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三眼",
+          "text": "三眼：肉眼、天眼、慧眼。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三眼：肉眼、天眼、慧眼。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%9C%BC%EF%BC%9A%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn52.23",
+          "text": "天眼经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.23&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn43",
+          "text": "以慧眼而了知能被了解的法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E6%85%A7%E7%9C%BC%E8%80%8C%E4%BA%86%E7%9F%A5%E8%83%BD%E8%A2%AB%E7%9E%AD%E8%A7%A3%E7%9A%84%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn23",
+          "text": "这样的他方世界不是像你想的以这肉眼能见的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn23&lang=zh&q=%E8%82%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BB%96%E6%96%B9%E4%B8%96%E7%95%8C%E4%B8%8D%E6%98%AF%E5%83%8F%E4%BD%A0%E6%83%B3%E7%9A%84%E4%BB%A5%E9%80%99%E8%82%89%E7%9C%BC%E8%83%BD%E8%A6%8B%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn23",
+          "text": "这样的他方世界不是像你想的以这肉眼能见的，亲王！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn23&lang=zh&q=%E8%82%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BB%96%E6%96%B9%E4%B8%96%E7%95%8C%E4%B8%8D%E6%98%AF%E5%83%8F%E4%BD%A0%E6%83%B3%E7%9A%84%E4%BB%A5%E9%80%99%E8%82%89%E7%9C%BC%E8%83%BD%E8%A6%8B%E7%9A%84%EF%BC%8C%E8%A6%AA%E7%8E%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "天眼智",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.15",
+          "text": "这些比丘全是有天眼者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.15&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%AF%94%E4%B8%98%E5%85%A8%E6%98%AF%E6%9C%89%E5%A4%A9%E7%9C%BC%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn16",
+          "text": "导师以天眼使苦尽而证湼槃．",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E5%B0%8E%E5%B8%AB%E4%BB%A5%E5%A4%A9%E7%9C%BC%E4%BD%BF%E8%8B%A6%E7%9B%A1%E8%80%8C%E8%AD%89%E6%B9%BC%E6%A7%83%EF%BC%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn8.12",
+          "text": "我知道过去的住所，天眼已被净化，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn8.12&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E7%9F%A5%E9%81%93%E9%81%8E%E5%8E%BB%E7%9A%84%E4%BD%8F%E6%89%80%EF%BC%8C%E5%A4%A9%E7%9C%BC%E5%B7%B2%E8%A2%AB%E6%B7%A8%E5%8C%96%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn32",
+          "text": "比丘以清净、超越人的天眼观察千世界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn32&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E4%BB%A5%E6%B8%85%E6%B7%A8%E3%80%81%E8%B6%85%E8%B6%8A%E4%BA%BA%E7%9A%84%E5%A4%A9%E7%9C%BC%E8%A7%80%E5%AF%9F%E5%8D%83%E4%B8%96%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.188-197",
+          "text": "SC 5 …天眼第一者，即阿奴卢特。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.188-197&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+5+%E2%80%A6%E5%A4%A9%E7%9C%BC%E7%AC%AC%E4%B8%80%E8%80%85%EF%BC%8C%E5%8D%B3%E9%98%BF%E5%A5%B4%E5%8D%A2%E7%89%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn41.1",
+          "text": "这是你的好获得，你有在甚深佛语上涉入的慧眼。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.1&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BD%A0%E7%9A%84%E5%A5%BD%E7%8D%B2%E5%BE%97%EF%BC%8C%E4%BD%A0%E6%9C%89%E5%9C%A8%E7%94%9A%E6%B7%B1%E4%BD%9B%E8%AA%9E%E4%B8%8A%E6%B6%89%E5%85%A5%E7%9A%84%E6%85%A7%E7%9C%BC%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛身幻化论/僧团抽象化/戒律取消化”高危异说 | | 未归属异说 | 解脱逐渐实现；天眼天耳只是推论；天人有自制；阿罗汉可同时六舍；空无边处无为；无色界只是认识无色物；受是善恶；七返者第七生仍不保证；时间长度预定；禅定世间；色有道德伴随；凡夫可经验三果心；阿罗汉可疑可被超越 | 多数是分类边界不清或把修行状态对象化 | ## 2. 《梵网经》六十二见 DN 1 的六十二见分为两大类：**十八种关于过去的见**，**四十四种关于未来的见**。佛陀的判定非常清楚：这些见解不是因为“思辨很高级”，而是由触、受、爱、取推动；只要执著它们，就仍在网中。 ### 2.1 十八种关于过去的见 | 类别 | 数量 | 内容 | |---|---:|---| | 常住论 | 4 | 以禅定宿命忆念或推论为根据，认为我与世界常住不变 | | 部分常住论 | 4 |",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "），雷迪大长老列出了通常无法记忆前世的几类情形（夭折的孩童、老迈昏聩而死者、沉溺于烟酒者、母亲怀孕期间体弱多病或操劳过度者），以及通常能记忆前世的几类情形（未转生人间而直接投生天界、梵天界或地狱者；因意外猝死于健康状态、且母亲怀孕期间健康清净者；以及历经多世持续修行、发愿获得此能力者；佛陀、阿罗汉与圣者则天然具备此能力，称为\"宿住随念智\"）。 **问题五：五神通是什么？是否唯佛陀独有？** 答：五神通（神变通、天耳通、他心通、宿命通、天眼通）不仅佛陀具足，阿罗汉、圣者乃至依教如法修行的凡夫也能证得——当今之所以罕见证得此五通者，只是因为世人缺乏为此付出的精进努力，而非教法本身有所欠缺。 --- ## 附录二：无我的利益（Anattānisaṃsa） 本附录节选自雷迪大长老的《无我手册》（Anatta-Dīpanī），专门论述**证悟无我特相（Anatta-lakkhaṇa）**——即彻底根除\"身见\"（Sakkāya-diṭṭhi）——所带来的巨大利益，是对《正见手册》第三部分内容的深化与补充。 ### 一、对过去业的利益 雷迪大长老用了两个极具画面感的譬喻说明\"身见\"的危险性与根除身见的解脱意义： > **棕榈果的譬喻**：棕榈树上的果实，只要果柄尚存一分坚固，便依附树梢；一旦果柄衰弱，便",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "佛陀\"的一种矫正与升华。 ### 寻求觉悟的三重叙述 菩提比丘特别点出，经藏中至少有两套关于菩萨求道历程的叙述被交织使用： 1. **圣求经（II,3(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完毕时，**\"大",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "因。如此，其心**「是软，又堪任、又极光净、及不易坏」**，最终**「为漏尽而正确得定」**。 三种平衡的精要： - **精进过度**→心掉举散乱；**定过度**→心懈怠厌烦；**舍过度**→心陷愚痴。 - 定与精进的平衡，再加上平等心的守护，是获得**「极光净」**的关键。 #### 二、四种智慧之光 《增支部·光明经》与《放光经》列举四种光：日光、月光、火光、智慧之光。而疏钞又将**「智慧之光」**细分为四种： 1. **天眼通之光**——强而明亮 2. **光明遍之光**——所有遍禅皆有 3. **奢摩他修习心之光**——从预备定、近行定至最高止禅皆有 4. **毗婆舍那随染之光**——生灭智阶段尤为突出 #### 三、智慧之光的究竟本质：色法而非名法 帕奥禅师引《清净道论疏钞》作出精妙解析：**「毗婆舍那的光明由毗婆舍那的心等起，在自相续中所散发的光明色，由时节等起。」** 光的来源有**两重**： 1. **心生色聚的颜色界**——每一个奢摩他或毗婆舍那修习心都会产生心生色，心生色聚中的**「颜色界」**便是一种明亮的色法（bhasuram rupam）。 2. **时节生色聚的颜色界**——心生色聚中的火界（时节），进一步向外扩散制造时节生色聚，其中的颜色界随禅智的深浅向外",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "### 核心论证结构 1. **神变通的基础：禅那掌握** → 从禅定到神通的路径 2. **神变通的十四种形式** → 各种神变能力的系统分类 3. **神变通的实践方法** → 意愿（adhiṭṭhāna）的作用 4. **神变通的经典解释** → 词义分析与验证 5. **天耳通** → 听闻遥远声音的能力 6. **他心通** → 感知他人心识状态 7. **宿命通** → 详细回忆过去世 8. **天眼通** → 清净的肉眼与心眼 ### 第一部分：神变通（Iddhividha）的修习基础 #### 1. 修习神通的先决条件 神变通（Iddhividha，kinds of supernormal power）的修习要求极高： > “若禅修者想开始施展‘原来是一个，他变成多个’等神变，就必须在八种遍中每一种上都达到八种等至，直到白遍为止；还必须以以下十四种方式完全掌控自己的心。”（XII.2） **14种心识掌握方式**（XII.3-7）： 涉及对禅那（jhāna）顺序、逆序、跳跃，以及对禅修对象（kasina）顺序、逆序、跳跃，以及禅那因素和对象界定等的掌握方式。具体包括： - 按kasina顺序达禅那 - 按kasina逆序达禅那 - 按顺逆序 - 按jhāna顺序 - 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%82%89%E7%9C%BC&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三眼",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三眼：肉眼、天眼、慧眼。",
+              "score": 13.34302296732179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%9C%BC%EF%BC%9A%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "肉眼",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三眼：肉眼、天眼、慧眼。",
+              "score": 12.36095934559085,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%82%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%9C%BC%EF%BC%9A%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "dn23",
+              "collection": "经藏/长部_dn",
+              "title": "波亚西经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的他方世界不是像你想的以这肉眼能见的。",
+              "score": 11.825103977162659,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn23&lang=zh&q=%E8%82%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BB%96%E6%96%B9%E4%B8%96%E7%95%8C%E4%B8%8D%E6%98%AF%E5%83%8F%E4%BD%A0%E6%83%B3%E7%9A%84%E4%BB%A5%E9%80%99%E8%82%89%E7%9C%BC%E8%83%BD%E8%A6%8B%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "dn23",
+              "collection": "经藏/长部_dn",
+              "title": "波亚西经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的他方世界不是像你想的以这肉眼能见的，亲王！",
+              "score": 10.881651125348144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn23&lang=zh&q=%E8%82%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BB%96%E6%96%B9%E4%B8%96%E7%95%8C%E4%B8%8D%E6%98%AF%E5%83%8F%E4%BD%A0%E6%83%B3%E7%9A%84%E4%BB%A5%E9%80%99%E8%82%89%E7%9C%BC%E8%83%BD%E8%A6%8B%E7%9A%84%EF%BC%8C%E8%A6%AA%E7%8E%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "天眼",
+          "hits": [
+            {
+              "uid": "sn52.23",
+              "collection": "经藏/相应部_sn",
+              "title": "天眼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天眼经",
+              "score": 10.927223098151565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.23&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E7%B6%93"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "天眼智",
+              "score": 10.927223098151565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A9%E7%9C%BC%E6%99%BA"
+            },
+            {
+              "uid": "sn14.15",
+              "collection": "经藏/相应部_sn",
+              "title": "经行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些比丘全是有天眼者。",
+              "score": 8.333865753435669,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.15&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%AF%94%E4%B8%98%E5%85%A8%E6%98%AF%E6%9C%89%E5%A4%A9%E7%9C%BC%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "南传大般湼槃经",
+              "author": "巴宙",
+              "translator": "pachow",
+              "text": "导师以天眼使苦尽而证湼槃．",
+              "score": 8.333865753435669,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E5%B0%8E%E5%B8%AB%E4%BB%A5%E5%A4%A9%E7%9C%BC%E4%BD%BF%E8%8B%A6%E7%9B%A1%E8%80%8C%E8%AD%89%E6%B9%BC%E6%A7%83%EF%BC%8E"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三眼：肉眼、天眼、慧眼。",
+              "score": 7.956216075905318,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%9C%BC%EF%BC%9A%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "sn8.12",
+              "collection": "经藏/相应部_sn",
+              "title": "婆耆舍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我知道过去的住所，天眼已被净化，",
+              "score": 7.611309100851695,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn8.12&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E7%9F%A5%E9%81%93%E9%81%8E%E5%8E%BB%E7%9A%84%E4%BD%8F%E6%89%80%EF%BC%8C%E5%A4%A9%E7%9C%BC%E5%B7%B2%E8%A2%AB%E6%B7%A8%E5%8C%96%EF%BC%8C"
+            },
+            {
+              "uid": "mn32",
+              "collection": "经藏/中部_mn",
+              "title": "牛角大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘以清净、超越人的天眼观察千世界。",
+              "score": 7.295063505881312,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn32&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E4%BB%A5%E6%B8%85%E6%B7%A8%E3%80%81%E8%B6%85%E8%B6%8A%E4%BA%BA%E7%9A%84%E5%A4%A9%E7%9C%BC%E8%A7%80%E5%AF%9F%E5%8D%83%E4%B8%96%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "an1.188-197",
+              "collection": "经藏/增支部_an",
+              "title": "十四、第一品　1．第一品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 5 …天眼第一者，即阿奴卢特。",
+              "score": 7.295063505881312,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.188-197&lang=zh&q=%E5%A4%A9%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+5+%E2%80%A6%E5%A4%A9%E7%9C%BC%E7%AC%AC%E4%B8%80%E8%80%85%EF%BC%8C%E5%8D%B3%E9%98%BF%E5%A5%B4%E5%8D%A2%E7%89%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "慧眼",
+          "hits": [
+            {
+              "uid": "mn43",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以慧眼而了知能被了解的法。",
+              "score": 12.96631984981534,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E6%85%A7%E7%9C%BC%E8%80%8C%E4%BA%86%E7%9F%A5%E8%83%BD%E8%A2%AB%E7%9E%AD%E8%A7%A3%E7%9A%84%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三眼：肉眼、天眼、慧眼。",
+              "score": 11.203610926401451,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%9C%BC%EF%BC%9A%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "sn41.1",
+              "collection": "经藏/相应部_sn",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是你的好获得，你有在甚深佛语上涉入的慧眼。",
+              "score": 10.272603511963363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.1&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BD%A0%E7%9A%84%E5%A5%BD%E7%8D%B2%E5%BE%97%EF%BC%8C%E4%BD%A0%E6%9C%89%E5%9C%A8%E7%94%9A%E6%B7%B1%E4%BD%9B%E8%AA%9E%E4%B8%8A%E6%B6%89%E5%85%A5%E7%9A%84%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "sn41.5",
+              "collection": "经藏/相应部_sn",
+              "title": "迦摩浮经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是你的好获得，你有在甚深佛语上涉入的慧眼。",
+              "score": 10.272603511963363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.5&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BD%A0%E7%9A%84%E5%A5%BD%E7%8D%B2%E5%BE%97%EF%BC%8C%E4%BD%A0%E6%9C%89%E5%9C%A8%E7%94%9A%E6%B7%B1%E4%BD%9B%E8%AA%9E%E4%B8%8A%E6%B6%89%E5%85%A5%E7%9A%84%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "sn41.7",
+              "collection": "经藏/相应部_sn",
+              "title": "苟达多经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是你的好获得，你有在甚深佛语上涉入的慧眼。",
+              "score": 10.272603511963363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.7&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BD%A0%E7%9A%84%E5%A5%BD%E7%8D%B2%E5%BE%97%EF%BC%8C%E4%BD%A0%E6%9C%89%E5%9C%A8%E7%94%9A%E6%B7%B1%E4%BD%9B%E8%AA%9E%E4%B8%8A%E6%B6%89%E5%85%A5%E7%9A%84%E6%85%A7%E7%9C%BC%E3%80%82"
+            },
+            {
+              "uid": "an1.333-377",
+              "collection": "经藏/增支部_an",
+              "title": "十六、一法巴利　 4．第四品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 5 …同样地，诸比库，那些具足圣慧眼的有情很少，而比这更多的是无明、愚昧的有情。",
+              "score": 6.854831151561604,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.333-377&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+5+%E2%80%A6%E5%90%8C%E6%A0%B7%E5%9C%B0%EF%BC%8C%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E9%82%A3%E4%BA%9B%E5%85%B7%E8%B6%B3%E8%81%96%E6%85%A7%E7%9C%BC%E7%9A%84%E6%9C%89%E6%83%85%E5%BE%88%E5%B0%91%EF%BC%8C%E8%80%8C%E6%AF%94%E8%BF%99%E6%9B%B4%E5%A4%9A%E7%9A%84%E6%98%AF%E6%97%A0%E6%98%8E%E3%80%81%E6%84%9A%E6%98%A7%E7%9A%84%E6%9C%89%E6%83%85%E3%80%82"
+            },
+            {
+              "uid": "an4.158",
+              "collection": "经藏/增支部_an",
+              "title": "退失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪的广大状态、嗔的广大状态、痴的广大状态、在深澈［事物］的可能或不可能上他的慧眼不进入。",
+              "score": 6.854831151561604,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.158&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%9A%84%E5%BB%A3%E5%A4%A7%E7%8B%80%E6%85%8B%E3%80%81%E7%9E%8B%E7%9A%84%E5%BB%A3%E5%A4%A7%E7%8B%80%E6%85%8B%E3%80%81%E7%99%A1%E7%9A%84%E5%BB%A3%E5%A4%A7%E7%8B%80%E6%85%8B%E3%80%81%E5%9C%A8%E6%B7%B1%E6%BE%88%EF%BC%BB%E4%BA%8B%E7%89%A9%EF%BC%BD%E7%9A%84%E5%8F%AF%E8%83%BD%E6%88%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%B8%8A%E4%BB%96%E7%9A%84%E6%85%A7%E7%9C%BC%E4%B8%8D%E9%80%B2%E5%85%A5%E3%80%82"
+            },
+            {
+              "uid": "an4.158",
+              "collection": "经藏/增支部_an",
+              "title": "退失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪的稀少状态、嗔的稀少状态、痴的稀少状态、在深澈［事物］的可能或不可能上他的慧眼进入。",
+              "score": 6.854831151561604,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.158&lang=zh&q=%E6%85%A7%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%9A%84%E7%A8%80%E5%B0%91%E7%8B%80%E6%85%8B%E3%80%81%E7%9E%8B%E7%9A%84%E7%A8%80%E5%B0%91%E7%8B%80%E6%85%8B%E3%80%81%E7%99%A1%E7%9A%84%E7%A8%80%E5%B0%91%E7%8B%80%E6%85%8B%E3%80%81%E5%9C%A8%E6%B7%B1%E6%BE%88%EF%BC%BB%E4%BA%8B%E7%89%A9%EF%BC%BD%E7%9A%84%E5%8F%AF%E8%83%BD%E6%88%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%B8%8A%E4%BB%96%E7%9A%84%E6%85%A7%E7%9C%BC%E9%80%B2%E5%85%A5%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛身幻化论/僧团抽象化/戒律取消化”高危异说 | | 未归属异说 | 解脱逐渐实现；天眼天耳只是推论；天人有自制；阿罗汉可同时六舍；空无边处无为；无色界只是认识无色物；受是善恶；七返者第七生仍不保证；时间长度预定；禅定世间；色有道德伴随；凡夫可经验三果心；阿罗汉可疑可被超越 | 多数是分类边界不清或把修行状态对象化 | ## 2. 《梵网经》六十二见 DN 1 的六十二见分为两大类：**十八种关于过去的见**，**四十四种关于未来的见**。佛陀的判定非常清楚：这些见解不是因为“思辨很高级”，而是由触、受、爱、取推动；只要执著它们，就仍在网中。 ### 2.1 十八种关于过去的见 | 类别 | 数量 | 内容 | |---|---:|---| | 常住论 | 4 | 以禅定宿命忆念或推论为根据，认为我与世界常住不变 | | 部分常住论 | 4 |",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site",
+          "query": "天眼"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "），雷迪大长老列出了通常无法记忆前世的几类情形（夭折的孩童、老迈昏聩而死者、沉溺于烟酒者、母亲怀孕期间体弱多病或操劳过度者），以及通常能记忆前世的几类情形（未转生人间而直接投生天界、梵天界或地狱者；因意外猝死于健康状态、且母亲怀孕期间健康清净者；以及历经多世持续修行、发愿获得此能力者；佛陀、阿罗汉与圣者则天然具备此能力，称为\"宿住随念智\"）。 **问题五：五神通是什么？是否唯佛陀独有？** 答：五神通（神变通、天耳通、他心通、宿命通、天眼通）不仅佛陀具足，阿罗汉、圣者乃至依教如法修行的凡夫也能证得——当今之所以罕见证得此五通者，只是因为世人缺乏为此付出的精进努力，而非教法本身有所欠缺。 --- ## 附录二：无我的利益（Anattānisaṃsa） 本附录节选自雷迪大长老的《无我手册》（Anatta-Dīpanī），专门论述**证悟无我特相（Anatta-lakkhaṇa）**——即彻底根除\"身见\"（Sakkāya-diṭṭhi）——所带来的巨大利益，是对《正见手册》第三部分内容的深化与补充。 ### 一、对过去业的利益 雷迪大长老用了两个极具画面感的譬喻说明\"身见\"的危险性与根除身见的解脱意义： > **棕榈果的譬喻**：棕榈树上的果实，只要果柄尚存一分坚固，便依附树梢；一旦果柄衰弱，便",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site",
+          "query": "天眼"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "佛陀\"的一种矫正与升华。 ### 寻求觉悟的三重叙述 菩提比丘特别点出，经藏中至少有两套关于菩萨求道历程的叙述被交织使用： 1. **圣求经（II,3(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完毕时，**\"大",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site",
+          "query": "天眼"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "因。如此，其心**「是软，又堪任、又极光净、及不易坏」**，最终**「为漏尽而正确得定」**。 三种平衡的精要： - **精进过度**→心掉举散乱；**定过度**→心懈怠厌烦；**舍过度**→心陷愚痴。 - 定与精进的平衡，再加上平等心的守护，是获得**「极光净」**的关键。 #### 二、四种智慧之光 《增支部·光明经》与《放光经》列举四种光：日光、月光、火光、智慧之光。而疏钞又将**「智慧之光」**细分为四种： 1. **天眼通之光**——强而明亮 2. **光明遍之光**——所有遍禅皆有 3. **奢摩他修习心之光**——从预备定、近行定至最高止禅皆有 4. **毗婆舍那随染之光**——生灭智阶段尤为突出 #### 三、智慧之光的究竟本质：色法而非名法 帕奥禅师引《清净道论疏钞》作出精妙解析：**「毗婆舍那的光明由毗婆舍那的心等起，在自相续中所散发的光明色，由时节等起。」** 光的来源有**两重**： 1. **心生色聚的颜色界**——每一个奢摩他或毗婆舍那修习心都会产生心生色，心生色聚中的**「颜色界」**便是一种明亮的色法（bhasuram rupam）。 2. **时节生色聚的颜色界**——心生色聚中的火界（时节），进一步向外扩散制造时节生色聚，其中的颜色界随禅智的深浅向外",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site",
+          "query": "天眼"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "### 核心论证结构 1. **神变通的基础：禅那掌握** → 从禅定到神通的路径 2. **神变通的十四种形式** → 各种神变能力的系统分类 3. **神变通的实践方法** → 意愿（adhiṭṭhāna）的作用 4. **神变通的经典解释** → 词义分析与验证 5. **天耳通** → 听闻遥远声音的能力 6. **他心通** → 感知他人心识状态 7. **宿命通** → 详细回忆过去世 8. **天眼通** → 清净的肉眼与心眼 ### 第一部分：神变通（Iddhividha）的修习基础 #### 1. 修习神通的先决条件 神变通（Iddhividha，kinds of supernormal power）的修习要求极高： > “若禅修者想开始施展‘原来是一个，他变成多个’等神变，就必须在八种遍中每一种上都达到八种等至，直到白遍为止；还必须以以下十四种方式完全掌控自己的心。”（XII.2） **14种心识掌握方式**（XII.3-7）： 涉及对禅那（jhāna）顺序、逆序、跳跃，以及对禅修对象（kasina）顺序、逆序、跳跃，以及禅那因素和对象界定等的掌握方式。具体包括： - 按kasina顺序达禅那 - 按kasina逆序达禅那 - 按顺逆序 - 按jhāna顺序 - 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%82%89%E7%9C%BC&scope=site",
+          "query": "肉眼"
+        },
+        {
+          "source": "docs/research/forest-monks/maechee-koi-summary.md",
+          "heading": "站内搜索命中",
+          "text": "身世与丧母之痛 普泰族的迁徙史、卉晒村的地理人文背景，引出主角出生：1901年11月8日，达颂法官与妻子端的幼女**达白**（意为\"引人注目\"）出生。达白自幼便\"仿佛知道某些事物但却说不出来\"，常向母亲描述\"跟随一团团的光去美妙的地方漫游\"——多年后她才明白，这些是过去世同修的天人前来接引她的心识。 五岁那年，母亲猝逝，达白在葬礼上目睹火化全程，\"透过家人的扶持，逐渐从悲痛中走出来\"，父女关系由此变得格外亲密。她开始向父亲讲述自己的天眼经验——七岁时回忆起前生\"曾经当过医生、公主……甚至还曾经投生为一只鸡\"，父亲达颂却因忧虑\"她将一辈子背负污名\"而严令她噤声。 **要点**：这一章埋下了美琪乔一生的两条主线——**与生俱来的神通禀赋**，以及**普泰乡村社会对女性天赋的压抑**。 ### 2.《战士般无畏的精神》——阿姜扫与佛法的传入 1914年，头陀僧**阿姜扫**行脚至卉晒村，达颂协助建立邦克朗洞森林道场。阿姜扫既不否定普泰族原有的鬼神信仰，也不认可以牺牲贿赂鬼神： > \"大家不必害怕，只要你们禅修，专注念'佛陀、佛陀、佛陀'，神灵就不会干扰你们。\" 十三岁的达白随家人礼佛，被阿姜扫一句话深深震动： > \"无论如何，这个布施的功德根本无法跟出家当美琪在森林禅修相比较，美琪是一切有情众",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A4%A9%E7%9C%BC&scope=site",
+          "query": "天眼"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g46",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 46,
+      "label": "三眼",
+      "members": "肉眼、天眼、慧眼",
+      "member_items": [
+        "肉眼",
+        "天眼",
+        "慧眼"
+      ],
+      "dn34_status": null,
+      "source_text": "三眼：肉眼、天眼、慧眼。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%9C%BC&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%82%89%E7%9C%BC%E3%80%81%E5%A4%A9%E7%9C%BC%E3%80%81%E6%85%A7%E7%9C%BC"
+    }
+  ]
+}

@@ -1,0 +1,784 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n7-b4ff0b3bf2d3",
+    "number": 7,
+    "label": "七圣财",
+    "member_items": [
+      "信财",
+      "戒财",
+      "惭财",
+      "愧财",
+      "听闻财",
+      "施舍财",
+      "慧财"
+    ],
+    "group_ids": [
+      "dn33-n7-g1",
+      "dn34-n7-g1"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "七圣财",
+      "信财",
+      "戒财",
+      "惭财",
+      "愧财",
+      "听闻财",
+      "施舍财",
+      "慧财"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「七圣财」属于 7 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。[1]\n- DN34：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。[2]\n\n## 所含各法\n### 信财\n经文将「信财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财经》命中：什么是信财？。[4]\n### 戒财\n经文将「戒财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财经》命中：什么是戒财？。[5]\n### 惭财\n经文将「惭财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财的扩大经》命中：什么是惭财？。[6]\n### 愧财\n经文将「愧财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财的扩大经》命中：什么是愧财？。[7]\n### 听闻财\n经文将「听闻财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。。[1]\n### 施舍财\n经文将「施舍财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财经》命中：什么是施舍财？。[8]\n### 慧财\n经文将「慧财」列为「七圣财」的一个成员。Early Buddhist 用该名词检索时，在《财经》命中：什么是慧财？。[9]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 8 个关键词，冻结 58 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 七圣财",
+          "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 七圣财",
+          "text": "（一）哪些是多所助益的七法呢？七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.47",
+          "text": "什么是信财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.47",
+          "text": "什么是戒财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%88%92%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.6",
+          "text": "什么是惭财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%9A%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.6",
+          "text": "什么是愧财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%84%A7%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.47",
+          "text": "什么是施舍财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%96%BD%E6%8D%A8%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.47",
+          "text": "什么是慧财？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E8%B2%A1%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.47",
+          "text": "这被称为信财。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E8%B2%A1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.6",
+          "text": "这被称为信财。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E8%B2%A1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.6",
+          "text": "什么是信财呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E8%B2%A1%E5%91%A2%EF%BC%9F"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "七圣财",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+              "score": 8.774691461165826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+              "score": 7.591088523513802,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "信财",
+          "hits": [
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是信财？",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为信财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为信财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%A1%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是信财呢？",
+              "score": 13.085351440043857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%A1%E8%B2%A1%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an7.7",
+              "collection": "经藏/增支部_an",
+              "title": "郁伽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.7&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、所闻财、施舍财、慧财。",
+              "score": 9.431350380153516,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E4%BF%A1%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "戒财",
+          "hits": [
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是戒财？",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%88%92%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为戒财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%88%92%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为戒财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%88%92%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是戒财呢？",
+              "score": 13.085351440043857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%88%92%E8%B2%A1%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an7.7",
+              "collection": "经藏/增支部_an",
+              "title": "郁伽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「信财、戒财，惭与愧财，",
+              "score": 10.713497177972666,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.7&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%EF%BC%8C%E6%85%9A%E8%88%87%E6%84%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、所闻财、施舍财、慧财。",
+              "score": 9.431350380153516,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%88%92%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "惭财",
+          "hits": [
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是惭财？",
+              "score": 14.652399703154956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%9A%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为惭财。",
+              "score": 14.652399703154956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%9A%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.7",
+              "collection": "经藏/增支部_an",
+              "title": "郁伽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财，郁伽！",
+              "score": 8.049609938875474,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.7&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%83%81%E4%BC%BD%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+              "score": 7.79859081451422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+              "score": 6.746652402952255,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn30",
+              "collection": "经藏/长部_dn",
+              "title": "相经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他是富有者、大富者、大财富者，这些是他的财，即：信财、戒财、惭财、愧财、所闻财、施舍财、慧财，当成为佛陀时，他得到这个。",
+              "score": 4.99489521076796,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%85%9A%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%96%E6%98%AF%E5%AF%8C%E6%9C%89%E8%80%85%E3%80%81%E5%A4%A7%E5%AF%8C%E8%80%85%E3%80%81%E5%A4%A7%E8%B2%A1%E5%AF%8C%E8%80%85%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E4%BB%96%E7%9A%84%E8%B2%A1%EF%BC%8C%E5%8D%B3%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E7%95%B6%E6%88%90%E7%82%BA%E4%BD%9B%E9%99%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%BE%97%E5%88%B0%E9%80%99%E5%80%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "愧财",
+          "hits": [
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是愧财？",
+              "score": 14.652399703154956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%84%A7%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为愧财。",
+              "score": 14.652399703154956,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%84%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财。",
+              "score": 8.603462191726862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.7",
+              "collection": "经藏/增支部_an",
+              "title": "郁伽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财，郁伽！",
+              "score": 8.049609938875474,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.7&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%83%81%E4%BC%BD%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+              "score": 7.79859081451422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+              "score": 6.746652402952255,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn30",
+              "collection": "经藏/长部_dn",
+              "title": "相经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他是富有者、大富者、大财富者，这些是他的财，即：信财、戒财、惭财、愧财、所闻财、施舍财、慧财，当成为佛陀时，他得到这个。",
+              "score": 4.99489521076796,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%84%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%96%E6%98%AF%E5%AF%8C%E6%9C%89%E8%80%85%E3%80%81%E5%A4%A7%E5%AF%8C%E8%80%85%E3%80%81%E5%A4%A7%E8%B2%A1%E5%AF%8C%E8%80%85%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E4%BB%96%E7%9A%84%E8%B2%A1%EF%BC%8C%E5%8D%B3%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E7%95%B6%E6%88%90%E7%82%BA%E4%BD%9B%E9%99%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%BE%97%E5%88%B0%E9%80%99%E5%80%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "听闻财",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+              "score": 17.564482874592123,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+              "score": 15.563451394074196,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "财的简要经",
+              "score": 12.51020231335456,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%A1%E7%9A%84%E7%B0%A1%E8%A6%81%E7%B6%93"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "财的扩大经",
+              "score": 12.51020231335456,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%A1%E7%9A%84%E6%93%B4%E5%A4%A7%E7%B6%93"
+            },
+            {
+              "uid": "dhp60-75",
+              "collection": "经藏/小部_kn",
+              "title": "愚品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "何有子与财？",
+              "score": 12.51020231335456,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp60-75&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%BD%95%E6%9C%89%E5%AD%90%E8%88%87%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是施舍财？",
+              "score": 11.81779589873137,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%96%BD%E6%8D%A8%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为施舍财。",
+              "score": 11.81779589873137,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五种财。",
+              "score": 11.81779589873137,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E8%81%BD%E8%81%9E%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E7%A8%AE%E8%B2%A1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "施舍财",
+          "hits": [
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是施舍财？",
+              "score": 26.608953248457283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%96%BD%E6%8D%A8%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为施舍财。",
+              "score": 26.608953248457283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是施舍财？",
+              "score": 26.608953248457283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%96%BD%E6%8D%A8%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为施舍财。",
+              "score": 26.608953248457283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+              "score": 19.288866677858945,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、所闻财、施舍财、慧财。",
+              "score": 19.178572504162226,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+              "score": 17.055236051921607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%81%96%E8%B2%A1%EF%BC%9A%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%83%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、惭财、愧财、所闻财、施舍财、慧财。",
+              "score": 16.53941466457433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E6%96%BD%E6%8D%A8%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "慧财",
+          "hits": [
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧财？",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧财？",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E8%B2%A1%EF%BC%9F"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧财。",
+              "score": 13.852024121847219,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.5",
+              "collection": "经藏/增支部_an",
+              "title": "财的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所闻财与施舍，第七是慧财。",
+              "score": 11.781231770982565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.5&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%89%80%E8%81%9E%E8%B2%A1%E8%88%87%E6%96%BD%E6%8D%A8%EF%BC%8C%E7%AC%AC%E4%B8%83%E6%98%AF%E6%85%A7%E8%B2%A1%E3%80%82"
+            },
+            {
+              "uid": "an7.6",
+              "collection": "经藏/增支部_an",
+              "title": "财的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所闻财与施舍，第七是慧财，",
+              "score": 11.781231770982565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.6&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%89%80%E8%81%9E%E8%B2%A1%E8%88%87%E6%96%BD%E6%8D%A8%EF%BC%8C%E7%AC%AC%E4%B8%83%E6%98%AF%E6%85%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an7.7",
+              "collection": "经藏/增支部_an",
+              "title": "郁伽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所闻财与施舍，第七是慧财，",
+              "score": 11.781231770982565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.7&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%89%80%E8%81%9E%E8%B2%A1%E8%88%87%E6%96%BD%E6%8D%A8%EF%BC%8C%E7%AC%AC%E4%B8%83%E6%98%AF%E6%85%A7%E8%B2%A1%EF%BC%8C"
+            },
+            {
+              "uid": "an5.47",
+              "collection": "经藏/增支部_an",
+              "title": "财经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "信财、戒财、所闻财、施舍财、慧财。",
+              "score": 9.431350380153516,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.47&lang=zh&q=%E6%85%A7%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%89%80%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n7-g1",
+      "sutta": "dn33",
+      "number": 7,
+      "order": 1,
+      "label": "七圣财",
+      "members": "信财、戒财、惭财、愧财、听闻财、施舍财、慧财",
+      "member_items": [
+        "信财",
+        "戒财",
+        "惭财",
+        "愧财",
+        "听闻财",
+        "施舍财",
+        "慧财"
+      ],
+      "dn34_status": null,
+      "source_text": "七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1"
+    },
+    {
+      "id": "dn34-n7-g1",
+      "sutta": "dn34",
+      "number": 7,
+      "order": 1,
+      "label": "七圣财",
+      "members": "信财、戒财、惭财、愧财、听闻财、施舍财、慧财",
+      "member_items": [
+        "信财",
+        "戒财",
+        "惭财",
+        "愧财",
+        "听闻财",
+        "施舍财",
+        "慧财"
+      ],
+      "dn34_status": "多所助",
+      "source_text": "（一）哪些是多所助益的七法呢？七圣财：信财、戒财、惭财、愧财、听闻财、施舍财、慧财，这些是多所助益的七法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%83%E8%81%96%E8%B2%A1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BF%A1%E8%B2%A1%E3%80%81%E6%88%92%E8%B2%A1%E3%80%81%E6%85%9A%E8%B2%A1%E3%80%81%E6%84%A7%E8%B2%A1%E3%80%81%E8%81%BD%E8%81%9E%E8%B2%A1%E3%80%81%E6%96%BD%E6%8D%A8%E8%B2%A1%E3%80%81%E6%85%A7%E8%B2%A1"
+    }
+  ]
+}

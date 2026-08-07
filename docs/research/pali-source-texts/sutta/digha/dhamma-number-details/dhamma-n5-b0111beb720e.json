@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-b0111beb720e",
+    "number": 5,
+    "label": "五净居",
+    "member_items": [
+      "无烦",
+      "无热",
+      "善现",
+      "善见",
+      "阿迦腻咤"
+    ],
+    "group_ids": [
+      "dn33-n5-g14"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五净居",
+      "无烦",
+      "无热",
+      "善现",
+      "善见",
+      "阿迦腻咤"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五净居」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：无烦、无热、善现、善见、阿迦腻咤。[1]\n\n## 所含各法\n### 无烦\n经文将「无烦」列为「五净居」的一个成员。Early Buddhist 用该名词检索时，在《如手经》命中：对三法的不厌足，如手到达无烦天。。[3]\n### 无热\n经文将「无热」列为「五净居」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：五净居：无烦、无热、善现、善见、阿迦腻咤。。[1]\n### 善现\n经文将「善现」列为「五净居」的一个成员。Early Buddhist 用该名词检索时，在《念的善现起者经》命中：念的善现起者经。[4]\n### 善见\n经文将「善见」列为「五净居」的一个成员。Early Buddhist 用该名词检索时，在《渴爱的灭尽大经》命中：』被［你们］以正确之慧如实善见了吗？。[5]\n### 阿迦腻咤\n经文将「阿迦腻咤」列为「五净居」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：五净居：无烦、无热、善现、善见、阿迦腻咤。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 30 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五净居",
+          "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%B7%A8%E5%B1%85&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%B7%A8%E5%B1%85&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.127",
+          "text": "对三法的不厌足，如手到达无烦天。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.127&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E4%B8%89%E6%B3%95%E7%9A%84%E4%B8%8D%E5%8E%AD%E8%B6%B3%EF%BC%8C%E5%A6%82%E6%89%8B%E5%88%B0%E9%81%94%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.122",
+          "text": "念的善现起者经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.122&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn38",
+          "text": "』被［你们］以正确之慧如实善见了吗？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E8%A2%AB%EF%BC%BB%E4%BD%A0%E5%80%91%EF%BC%BD%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E4%BA%86%E5%97%8E%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.50",
+          "text": "「往生于无烦天，七位比丘已解脱，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.50&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%80%E7%94%9F%E6%96%BC%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%8C%E4%B8%83%E4%BD%8D%E6%AF%94%E4%B8%98%E5%B7%B2%E8%A7%A3%E8%84%AB%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn2.24",
+          "text": "「往生于无烦天，七位比丘已解脱，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn2.24&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%80%E7%94%9F%E6%96%BC%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%8C%E4%B8%83%E4%BD%8D%E6%AF%94%E4%B8%98%E5%B7%B2%E8%A7%A3%E8%84%AB%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn14",
+          "text": "那时，我与无烦天［的天神］一起前往无热天……（中略）比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E7%84%A1%E7%86%B1%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn14",
+          "text": "那时，我与无烦天、无热天［的天神］一起前往善现天……（中略）比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E7%8F%BE%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn14",
+          "text": "那时，我与无烦天、无热天、善现天、善见天［的天神］一起前往阿迦腻咤天，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%E3%80%81%E5%96%84%E8%A6%8B%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E5%A4%A9%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn14",
+          "text": "那时，我与无烦天、无热天、善现天［的天神］一起前往善见天……（中略）比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E8%A6%8B%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.65",
+          "text": "当存在不再生时，此乐应该可以被预期：无冷、无热、无饥、无渴、无粪、无尿、无火触、无棒杖触、无刀触、无亲族朋友会合后他们激怒［我］，道友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.65&lang=zh&q=%E7%84%A1%E7%86%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E5%AD%98%E5%9C%A8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%99%82%EF%BC%8C%E6%AD%A4%E6%A8%82%E6%87%89%E8%A9%B2%E5%8F%AF%E4%BB%A5%E8%A2%AB%E9%A0%90%E6%9C%9F%EF%BC%9A%E7%84%A1%E5%86%B7%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E7%84%A1%E9%A3%A2%E3%80%81%E7%84%A1%E6%B8%B4%E3%80%81%E7%84%A1%E7%B3%9E%E3%80%81%E7%84%A1%E5%B0%BF%E3%80%81%E7%84%A1%E7%81%AB%E8%A7%B8%E3%80%81%E7%84%A1%E6%A3%92%E6%9D%96%E8%A7%B8%E3%80%81%E7%84%A1%E5%88%80%E8%A7%B8%E3%80%81%E7%84%A1%E8%A6%AA%E6%97%8F%E6%9C%8B%E5%8F%8B%E6%9C%83%E5%90%88%E5%BE%8C%E4%BB%96%E5%80%91%E6%BF%80%E6%80%92%EF%BC%BB%E6%88%91%EF%BC%BD%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.130",
+          "text": "「病人、念的善现起者，二则看护者、二则损寿，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E7%97%85%E4%BA%BA%E3%80%81%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%EF%BC%8C%E4%BA%8C%E5%89%87%E7%9C%8B%E8%AD%B7%E8%80%85%E3%80%81%E4%BA%8C%E5%89%87%E6%90%8D%E5%A3%BD%EF%BC%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五净居",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 10.878274358892973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%B7%A8%E5%B1%85&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无烦",
+          "hits": [
+            {
+              "uid": "an3.127",
+              "collection": "经藏/增支部_an",
+              "title": "如手经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对三法的不厌足，如手到达无烦天。",
+              "score": 10.7963219462795,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.127&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E4%B8%89%E6%B3%95%E7%9A%84%E4%B8%8D%E5%8E%AD%E8%B6%B3%EF%BC%8C%E5%A6%82%E6%89%8B%E5%88%B0%E9%81%94%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%82"
+            },
+            {
+              "uid": "sn1.50",
+              "collection": "经藏/相应部_sn",
+              "title": "额低葛勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「往生于无烦天，七位比丘已解脱，",
+              "score": 9.504263024557144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.50&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%80%E7%94%9F%E6%96%BC%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%8C%E4%B8%83%E4%BD%8D%E6%AF%94%E4%B8%98%E5%B7%B2%E8%A7%A3%E8%84%AB%EF%BC%8C"
+            },
+            {
+              "uid": "sn2.24",
+              "collection": "经藏/相应部_sn",
+              "title": "额低葛勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「往生于无烦天，七位比丘已解脱，",
+              "score": 9.504263024557144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn2.24&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%BE%80%E7%94%9F%E6%96%BC%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%8C%E4%B8%83%E4%BD%8D%E6%AF%94%E4%B8%98%E5%B7%B2%E8%A7%A3%E8%84%AB%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 8.802004799527028,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天［的天神］一起前往无热天……（中略）比丘们！",
+              "score": 7.429595729908507,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E7%84%A1%E7%86%B1%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天［的天神］一起前往善现天……（中略）比丘们！",
+              "score": 6.794002943635873,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E7%8F%BE%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天、善现天、善见天［的天神］一起前往阿迦腻咤天，比丘们！",
+              "score": 6.6056349587476815,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%E3%80%81%E5%96%84%E8%A6%8B%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E5%A4%A9%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天、善现天［的天神］一起前往善见天……（中略）比丘们！",
+              "score": 6.2585883960122946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%84%A1%E7%85%A9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E8%A6%8B%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "无热",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 10.39556917540405,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E7%86%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an10.65",
+              "collection": "经藏/增支部_an",
+              "title": "乐经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当存在不再生时，此乐应该可以被预期：无冷、无热、无饥、无渴、无粪、无尿、无火触、无棒杖触、无刀触、无亲族朋友会合后他们激怒［我］，道友！",
+              "score": 5.204294426433514,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.65&lang=zh&q=%E7%84%A1%E7%86%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E5%AD%98%E5%9C%A8%E4%B8%8D%E5%86%8D%E7%94%9F%E6%99%82%EF%BC%8C%E6%AD%A4%E6%A8%82%E6%87%89%E8%A9%B2%E5%8F%AF%E4%BB%A5%E8%A2%AB%E9%A0%90%E6%9C%9F%EF%BC%9A%E7%84%A1%E5%86%B7%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E7%84%A1%E9%A3%A2%E3%80%81%E7%84%A1%E6%B8%B4%E3%80%81%E7%84%A1%E7%B3%9E%E3%80%81%E7%84%A1%E5%B0%BF%E3%80%81%E7%84%A1%E7%81%AB%E8%A7%B8%E3%80%81%E7%84%A1%E6%A3%92%E6%9D%96%E8%A7%B8%E3%80%81%E7%84%A1%E5%88%80%E8%A7%B8%E3%80%81%E7%84%A1%E8%A6%AA%E6%97%8F%E6%9C%8B%E5%8F%8B%E6%9C%83%E5%90%88%E5%BE%8C%E4%BB%96%E5%80%91%E6%BF%80%E6%80%92%EF%BC%BB%E6%88%91%EF%BC%BD%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "善现",
+          "hits": [
+            {
+              "uid": "an5.122",
+              "collection": "经藏/增支部_an",
+              "title": "念的善现起者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念的善现起者经",
+              "score": 12.990939414744103,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.122&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%E7%B6%93"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 8.67145949916835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an5.130",
+              "collection": "经藏/增支部_an",
+              "title": "损失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「病人、念的善现起者，二则看护者、二则损寿，",
+              "score": 8.36251168300791,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E7%97%85%E4%BA%BA%E3%80%81%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%EF%BC%8C%E4%BA%8C%E5%89%87%E7%9C%8B%E8%AD%B7%E8%80%85%E3%80%81%E4%BA%8C%E5%89%87%E6%90%8D%E5%A3%BD%EF%BC%8C"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天［的天神］一起前往善现天……（中略）比丘们！",
+              "score": 6.69323895007814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E7%8F%BE%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天、善现天、善见天［的天神］一起前往阿迦腻咤天，比丘们！",
+              "score": 6.507664709993008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%E3%80%81%E5%96%84%E8%A6%8B%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E5%A4%A9%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，我与无烦天、无热天、善现天［的天神］一起前往善见天……（中略）比丘们！",
+              "score": 6.165765303934151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%88%91%E8%88%87%E7%84%A1%E7%85%A9%E5%A4%A9%E3%80%81%E7%84%A1%E7%86%B1%E5%A4%A9%E3%80%81%E5%96%84%E7%8F%BE%E5%A4%A9%EF%BC%BB%E7%9A%84%E5%A4%A9%E7%A5%9E%EF%BC%BD%E4%B8%80%E8%B5%B7%E5%89%8D%E5%BE%80%E5%96%84%E8%A6%8B%E5%A4%A9%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.245",
+              "collection": "经藏/增支部_an",
+              "title": "学的效益经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他是自身内念的善现起者：『像这样，我将观察未以慧观察的法，或已观察的法将处处资助慧。",
+              "score": 5.857998056325921,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.245&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E4%BB%96%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%EF%BC%9A%E3%80%8E%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%88%91%E5%B0%87%E8%A7%80%E5%AF%9F%E6%9C%AA%E4%BB%A5%E6%85%A7%E8%A7%80%E5%AF%9F%E7%9A%84%E6%B3%95%EF%BC%8C%E6%88%96%E5%B7%B2%E8%A7%80%E5%AF%9F%E7%9A%84%E6%B3%95%E5%B0%87%E8%99%95%E8%99%95%E8%B3%87%E5%8A%A9%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an4.245",
+              "collection": "经藏/增支部_an",
+              "title": "学的效益经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他是自身内念的善现起者：『像这样，我将触达未以解脱触达的法，或已触达的法将处处资助慧。",
+              "score": 5.857998056325921,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.245&lang=zh&q=%E5%96%84%E7%8F%BE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E4%BB%96%E6%98%AF%E8%87%AA%E8%BA%AB%E5%85%A7%E5%BF%B5%E7%9A%84%E5%96%84%E7%8F%BE%E8%B5%B7%E8%80%85%EF%BC%9A%E3%80%8E%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%88%91%E5%B0%87%E8%A7%B8%E9%81%94%E6%9C%AA%E4%BB%A5%E8%A7%A3%E8%84%AB%E8%A7%B8%E9%81%94%E7%9A%84%E6%B3%95%EF%BC%8C%E6%88%96%E5%B7%B2%E8%A7%B8%E9%81%94%E7%9A%84%E6%B3%95%E5%B0%87%E8%99%95%E8%99%95%E8%B3%87%E5%8A%A9%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "善见",
+          "hits": [
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』被［你们］以正确之慧如实善见了吗？",
+              "score": 8.902025418372709,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E8%A2%AB%EF%BC%BB%E4%BD%A0%E5%80%91%EF%BC%BD%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E4%BA%86%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』被［你们］以正确之慧如实善见了吗？",
+              "score": 8.902025418372709,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E8%A2%AB%EF%BC%BB%E4%BD%A0%E5%80%91%EF%BC%BD%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E4%BA%86%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』被［你们］以正确之慧如实善见了吗？",
+              "score": 8.902025418372709,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E8%A2%AB%EF%BC%BB%E4%BD%A0%E5%80%91%EF%BC%BD%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E4%BA%86%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "mn116",
+              "collection": "经藏/中部_mn",
+              "title": "仙吞经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名叫善见的辟支佛是这座仙吞山中的久住者；",
+              "score": 8.546906288591316,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn116&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%90%8D%E5%8F%AB%E5%96%84%E8%A6%8B%E7%9A%84%E8%BE%9F%E6%94%AF%E4%BD%9B%E6%98%AF%E9%80%99%E5%BA%A7%E4%BB%99%E5%90%9E%E5%B1%B1%E4%B8%AD%E7%9A%84%E4%B9%85%E4%BD%8F%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn3.13",
+              "collection": "经藏/相应部_sn",
+              "title": "一桶煮好的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，憍萨罗国波斯匿王召唤学生婆罗门善见：",
+              "score": 8.546906288591316,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.13&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E6%86%8D%E8%96%A9%E7%BE%85%E5%9C%8B%E6%B3%A2%E6%96%AF%E5%8C%BF%E7%8E%8B%E5%8F%AC%E5%96%9A%E5%AD%B8%E7%94%9F%E5%A9%86%E7%BE%85%E9%96%80%E5%96%84%E8%A6%8B%EF%BC%9A"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们之前就已以正确之慧如实善见此：『这六识身是无常的。",
+              "score": 8.219033054276,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%80%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%B7%B2%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E6%AD%A4%EF%BC%9A%E3%80%8E%E9%80%99%E5%85%AD%E8%AD%98%E8%BA%AB%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "mn146",
+              "collection": "经藏/中部_mn",
+              "title": "难达葛教诫经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们之前就已以正确之慧如实善见此：『这六识身是无常的。",
+              "score": 8.219033054276,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn146&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E5%80%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%B7%B2%E4%BB%A5%E6%AD%A3%E7%A2%BA%E4%B9%8B%E6%85%A7%E5%A6%82%E5%AF%A6%E5%96%84%E8%A6%8B%E6%AD%A4%EF%BC%9A%E3%80%8E%E9%80%99%E5%85%AD%E8%AD%98%E8%BA%AB%E6%98%AF%E7%84%A1%E5%B8%B8%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn3.13",
+              "collection": "经藏/相应部_sn",
+              "title": "一桶煮好的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当时，学生婆罗门善见站在憍萨罗国波斯匿王背后。",
+              "score": 8.219033054276,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.13&lang=zh&q=%E5%96%84%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%99%82%EF%BC%8C%E5%AD%B8%E7%94%9F%E5%A9%86%E7%BE%85%E9%96%80%E5%96%84%E8%A6%8B%E7%AB%99%E5%9C%A8%E6%86%8D%E8%96%A9%E7%BE%85%E5%9C%8B%E6%B3%A2%E6%96%AF%E5%8C%BF%E7%8E%8B%E8%83%8C%E5%BE%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "阿迦腻咤",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 24.567826289615354,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+              "score": 20.737209471218225,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an1.235-247",
+              "collection": "经藏/增支部_an",
+              "title": "十四、第一品　 5．第五品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 4 …持律第一者，即巴嗒咤拉。",
+              "score": 10.881651125348144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.235-247&lang=zh&q=%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+4+%E2%80%A6%E6%8C%81%E5%BE%8B%E7%AC%AC%E4%B8%80%E8%80%85%EF%BC%8C%E5%8D%B3%E5%B7%B4%E5%97%92%E5%90%92%E6%8B%89%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g14",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 14,
+      "label": "五净居",
+      "members": "无烦、无热、善现、善见、阿迦腻咤",
+      "member_items": [
+        "无烦",
+        "无热",
+        "善现",
+        "善见",
+        "阿迦腻咤"
+      ],
+      "dn34_status": null,
+      "source_text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%B7%A8%E5%B1%85&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-26a99f21f903",
+    "number": 3,
+    "label": "三明",
+    "member_items": [
+      "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明"
+    ],
+    "group_ids": [
+      "dn33-n3-g58",
+      "dn34-n3-g10"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "三明",
+      "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三明」属于 3 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。[1]\n- DN34：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。[2]\n\n## 所含各法\n### 前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明\n经文将「前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明」列为「三明」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 2 个关键词，冻结 16 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 5 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三明",
+          "text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 三明",
+          "text": "（十）哪些是应该被作证的三法呢？三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明，这些是应该被作证的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn13",
+          "text": "三明经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%EF%BC%9A%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn71",
+          "text": "三明与婆蹉经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn71&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E8%88%87%E5%A9%86%E8%B9%89%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.58",
+          "text": "「这样是三明婆罗门，像这样也是三明婆罗门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E9%80%99%E6%A8%A3%E6%98%AF%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E4%B9%9F%E6%98%AF%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.58",
+          "text": "婆罗门的三明者不值圣者之律中的三明者之十六分之一。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B8%8D%E5%80%BC%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B9%8B%E5%8D%81%E5%85%AD%E5%88%86%E4%B9%8B%E4%B8%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.59",
+          "text": "婆罗门的三明者不值圣者之律中的三明者之十六分之一。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.59&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B8%8D%E5%80%BC%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B9%8B%E5%8D%81%E5%85%AD%E5%88%86%E4%B9%8B%E4%B8%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn91",
+          "text": "怎样成为三明者？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn91&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%88%90%E7%82%BA%E4%B8%89%E6%98%8E%E8%80%85%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn13",
+          "text": "三明经第十三终了。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E7%B6%93%E7%AC%AC%E5%8D%81%E4%B8%89%E7%B5%82%E4%BA%86%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.58",
+          "text": "婆罗门们安立的三明婆罗门是一种，但圣者之律中的三明者是另一种。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E5%80%91%E5%AE%89%E7%AB%8B%E7%9A%84%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E4%BD%86%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E6%98%AF%E5%8F%A6%E4%B8%80%E7%A8%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明，这些是应该被作证的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%EF%BC%9A%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "前世住处回忆之智",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "有许多人相信现在是“末法时期”。不过，上座部佛教认为现在不是末法时期，而是正法时期。因为上座部佛教提到：正法住世 5000 年！ 上座部佛教所说的 “住世正法” 与印度三期佛法的 “正法”有所不同。印度佛教的正法时期，是指那个时期的佛法在教法、经典、修行方法上几乎一致，相差不会太大。印度三期佛法的“正法”是从这个角度上来说的。 对于“住世正法”，在《长部义注》中提及正法将住世五千年： **“以得达无碍解者住立一千年，以六通千年，以三明千年，纯观者千年，以巴帝摩卡住立千年。”**(D.A.3.161) 在《相应部义注》、《增支部义注》以及律复注《心义解疏》中也有类似的说法。 南传上座部佛教所说的住世正法是从教理(pariyatti)、修行(paṭipatti)与证果(paṭivedha)三个角度来说的： 1.教理： 上座部佛教相信三藏圣典、佛陀的言教还在； 2.修行：现在上座部佛教还有系统、完整的禅修方法，也就是南传的止观禅法、戒定慧的传承还在； 3.证悟：这个时期还可以证悟圣道圣果。 上座部佛教所讲的正法是从以上三个角度来说的。 这种说法和北传佛教所说的正像末三期佛法很相似。北传佛教提到：正法时期是有教、有行、有证；像法时期是有教、有行、无证；末法时期是有教、无行、无证。例如唐代良贲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "佛陀\"对\"神话佛陀\"的一种矫正与升华。 ### 寻求觉悟的三重叙述 菩提比丘特别点出，经藏中至少有两套关于菩萨求道历程的叙述被交织使用： 1. **圣求经（II,3(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/adler-understanding-human-nature.md",
+          "text": "某种物质或神秘的东西，而是**一种活动方式** - 所有精神活动都遵循**统一性原则**——指向某个明确的目标 - 无意识并非弗洛伊德所说的抑制的欲望，而是**我们还未明确意识到的目标追求** ### 巴利三藏主题参照（已校订） **《相应部·蕴相应》**：佛陀论述了**心（citta）**的本质。心不是某个独立的实体，而是**对客体的认知活动**。每一个心的生起都伴随着特定的意图（cetana）与对象。 **《中部·第四十四经·三明经》**：佛陀说，\"心\"的特点是**它指向（namati）不同的对象**。心本身没有固定的本性，而是根据前一刻的业行（karma）与当前的条件而生起。 ### 《清净道论》主题参照（已校订） 觉音详细论述了**行蕴**（sankhāra）与**识蕴**（viññāṇa）的关系： - 行蕴是**意志与思惟的活动**，它指向特定的对象 - 识蕴是**对这些活动的认知** - 这两者合作创造了一个有方向的、有目的的心理活动流 ### 融合性评析 **同调之处**： - 两者都强调心的**活动性与动向性**——不是被动的，而是主动朝向对象 - 两者都认识到**目标或意向**在心理活动中的核心作用 - 两者都拒绝**机械的刺激-反应模型** **根本分歧**：",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "地，宣告： > \"为求此座，我历经无数生世，未曾有一次布施未行、一次持戒未守、一次苦行未做……大地虽无情识，却对你我一视同仁，公正无私，此刻将为我作证。\" 大地随即震动，如陶轮般旋转，山岳轰鸣。魔王进退失据，弃旗抛戟，仓皇溃逃，其大军亦随之溃散——是为卫塞月满月日日落之前的伟大胜利。诸天梵众欢呼相告\"胜利属于佛陀\"（_Jayo hi Buddhassa sirīmato ayaṁ_），一时传遍龙、金翅鸟、诸天、诸梵各界。 ### 三明与正等正觉 降魔之后，太子于当夜三时依次证得三明： **初夜——宿命通**（Pubbe-nivāsānussati-ñāṇa）：忆知无数前生，自苏梅达隐者之世乃至最近的兜率天设觉睹一世，尽皆了了分明。 **中夜——天眼通**（Dibba-cakkhu-ñāṇa）：彻见一切众生依业受生之相——如何因恶业堕入四恶趣，如何因善业转生善趣，由此断除十六种疑惑，达\"度疑清净\"（kaṅkhā-vitaraṇa-visuddhi）。 **后夜——漏尽通**（Āsavakkhaya-ñāṇa）：以极其锐利的\"大金刚观智\"，观照十二缘起支——无明、行、识、名色、六入、触、受、爱、取、有、生、老死——于1,200,000亿个此等法上，如实照见其无常、苦、无我三相，历经知见清净之九",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/suttas.json",
+          "text": "se\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn36\", \"name\": \"MN 36 Mahāsaccaka Sutta\", \"focus\": \"苦行、中道、童年初禅、三明\", \"summary\": \"佛陀向萨遮迦详细叙述极端苦行、几乎饿死、回忆童年树下初禅、接受食物、修四禅并于夜三时证得宿命智、天眼智、漏尽智。\", \"en_url\": \"https://suttacentral.net/mn36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn36/zh/zhuang?lang=en&reference=none&highlight=false\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三明",
+          "hits": [
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三明经",
+              "score": 11.383480292817787,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E7%B6%93"
+            },
+            {
+              "uid": "mn71",
+              "collection": "经藏/中部_mn",
+              "title": "三明与婆蹉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三明与婆蹉经",
+              "score": 10.716520493966476,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn71&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E8%88%87%E5%A9%86%E8%B9%89%E7%B6%93"
+            },
+            {
+              "uid": "an3.58",
+              "collection": "经藏/增支部_an",
+              "title": "低葛那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「这样是三明婆罗门，像这样也是三明婆罗门。",
+              "score": 10.66548234975188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E9%80%99%E6%A8%A3%E6%98%AF%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E4%B9%9F%E6%98%AF%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an3.58",
+              "collection": "经藏/增支部_an",
+              "title": "低葛那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "婆罗门的三明者不值圣者之律中的三明者之十六分之一。",
+              "score": 10.077832747576402,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B8%8D%E5%80%BC%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B9%8B%E5%8D%81%E5%85%AD%E5%88%86%E4%B9%8B%E4%B8%80%E3%80%82"
+            },
+            {
+              "uid": "an3.59",
+              "collection": "经藏/增支部_an",
+              "title": "若奴索尼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "婆罗门的三明者不值圣者之律中的三明者之十六分之一。",
+              "score": 10.077832747576402,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.59&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B8%8D%E5%80%BC%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E4%B9%8B%E5%8D%81%E5%85%AD%E5%88%86%E4%B9%8B%E4%B8%80%E3%80%82"
+            },
+            {
+              "uid": "mn91",
+              "collection": "经藏/中部_mn",
+              "title": "梵寿经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样成为三明者？",
+              "score": 9.592471802477332,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn91&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%88%90%E7%82%BA%E4%B8%89%E6%98%8E%E8%80%85%EF%BC%9F"
+            },
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三明经第十三终了。",
+              "score": 9.592471802477332,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%E7%B6%93%E7%AC%AC%E5%8D%81%E4%B8%89%E7%B5%82%E4%BA%86%E3%80%82"
+            },
+            {
+              "uid": "an3.58",
+              "collection": "经藏/增支部_an",
+              "title": "低葛那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "婆罗门们安立的三明婆罗门是一种，但圣者之律中的三明者是另一种。",
+              "score": 9.551558424107728,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.58&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E5%80%91%E5%AE%89%E7%AB%8B%E7%9A%84%E4%B8%89%E6%98%8E%E5%A9%86%E7%BE%85%E9%96%80%E6%98%AF%E4%B8%80%E7%A8%AE%EF%BC%8C%E4%BD%86%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E6%98%8E%E8%80%85%E6%98%AF%E5%8F%A6%E4%B8%80%E7%A8%AE%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。",
+              "score": 101.50026612635503,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%EF%BC%9A%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明，这些是应该被作证的三法。",
+              "score": 91.15087017893354,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%98%8E%EF%BC%9A%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "前世住处回忆之智",
+              "score": 30.972900210963644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "前世住处回忆之智的教导",
+              "score": 29.348536781930925,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E7%9A%84%E6%95%99%E5%B0%8E"
+            },
+            {
+              "uid": "an6.64",
+              "collection": "经藏/增支部_an",
+              "title": "狮子吼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "则如来如其如实智已知的前世住处之回忆，以如实智解说被询问前世住处之回忆的问题。",
+              "score": 27.752935841340996,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.64&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%89%87%E5%A6%82%E4%BE%86%E5%A6%82%E5%85%B6%E5%A6%82%E5%AF%A6%E6%99%BA%E5%B7%B2%E7%9F%A5%E7%9A%84%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E4%B9%8B%E5%9B%9E%E6%86%B6%EF%BC%8C%E4%BB%A5%E5%A6%82%E5%AF%A6%E6%99%BA%E8%A7%A3%E8%AA%AA%E8%A2%AB%E8%A9%A2%E5%95%8F%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E4%B9%8B%E5%9B%9E%E6%86%B6%E7%9A%84%E5%95%8F%E9%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "关于前世住处回忆之智，这是无上的。",
+              "score": 25.772020671870763,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%97%9C%E6%96%BC%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an6.64",
+              "collection": "经藏/增支部_an",
+              "title": "狮子吼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "则如来如其如实智已知的众生死亡与往生，以如实智解说被询问众生死亡与往生的问题。",
+              "score": 25.403856394753603,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.64&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%89%87%E5%A6%82%E4%BE%86%E5%A6%82%E5%85%B6%E5%A6%82%E5%AF%A6%E6%99%BA%E5%B7%B2%E7%9F%A5%E7%9A%84%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%EF%BC%8C%E4%BB%A5%E5%A6%82%E5%AF%A6%E6%99%BA%E8%A7%A3%E8%AA%AA%E8%A2%AB%E8%A9%A2%E5%95%8F%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "关于众生死亡与往生之智，这是无上的。",
+              "score": 23.4038300918156,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%97%9C%E6%96%BC%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "有许多人相信现在是“末法时期”。不过，上座部佛教认为现在不是末法时期，而是正法时期。因为上座部佛教提到：正法住世 5000 年！ 上座部佛教所说的 “住世正法” 与印度三期佛法的 “正法”有所不同。印度佛教的正法时期，是指那个时期的佛法在教法、经典、修行方法上几乎一致，相差不会太大。印度三期佛法的“正法”是从这个角度上来说的。 对于“住世正法”，在《长部义注》中提及正法将住世五千年： **“以得达无碍解者住立一千年，以六通千年，以三明千年，纯观者千年，以巴帝摩卡住立千年。”**(D.A.3.161) 在《相应部义注》、《增支部义注》以及律复注《心义解疏》中也有类似的说法。 南传上座部佛教所说的住世正法是从教理(pariyatti)、修行(paṭipatti)与证果(paṭivedha)三个角度来说的： 1.教理： 上座部佛教相信三藏圣典、佛陀的言教还在； 2.修行：现在上座部佛教还有系统、完整的禅修方法，也就是南传的止观禅法、戒定慧的传承还在； 3.证悟：这个时期还可以证悟圣道圣果。 上座部佛教所讲的正法是从以上三个角度来说的。 这种说法和北传佛教所说的正像末三期佛法很相似。北传佛教提到：正法时期是有教、有行、有证；像法时期是有教、有行、无证；末法时期是有教、无行、无证。例如唐代良贲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site",
+          "query": "三明"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "佛陀\"对\"神话佛陀\"的一种矫正与升华。 ### 寻求觉悟的三重叙述 菩提比丘特别点出，经藏中至少有两套关于菩萨求道历程的叙述被交织使用： 1. **圣求经（II,3(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site",
+          "query": "三明"
+        },
+        {
+          "source": "docs/research/psychology/adler-understanding-human-nature.md",
+          "heading": "站内搜索命中",
+          "text": "某种物质或神秘的东西，而是**一种活动方式** - 所有精神活动都遵循**统一性原则**——指向某个明确的目标 - 无意识并非弗洛伊德所说的抑制的欲望，而是**我们还未明确意识到的目标追求** ### 巴利三藏主题参照（已校订） **《相应部·蕴相应》**：佛陀论述了**心（citta）**的本质。心不是某个独立的实体，而是**对客体的认知活动**。每一个心的生起都伴随着特定的意图（cetana）与对象。 **《中部·第四十四经·三明经》**：佛陀说，\"心\"的特点是**它指向（namati）不同的对象**。心本身没有固定的本性，而是根据前一刻的业行（karma）与当前的条件而生起。 ### 《清净道论》主题参照（已校订） 觉音详细论述了**行蕴**（sankhāra）与**识蕴**（viññāṇa）的关系： - 行蕴是**意志与思惟的活动**，它指向特定的对象 - 识蕴是**对这些活动的认知** - 这两者合作创造了一个有方向的、有目的的心理活动流 ### 融合性评析 **同调之处**： - 两者都强调心的**活动性与动向性**——不是被动的，而是主动朝向对象 - 两者都认识到**目标或意向**在心理活动中的核心作用 - 两者都拒绝**机械的刺激-反应模型** **根本分歧**：",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site",
+          "query": "三明"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "地，宣告： > \"为求此座，我历经无数生世，未曾有一次布施未行、一次持戒未守、一次苦行未做……大地虽无情识，却对你我一视同仁，公正无私，此刻将为我作证。\" 大地随即震动，如陶轮般旋转，山岳轰鸣。魔王进退失据，弃旗抛戟，仓皇溃逃，其大军亦随之溃散——是为卫塞月满月日日落之前的伟大胜利。诸天梵众欢呼相告\"胜利属于佛陀\"（_Jayo hi Buddhassa sirīmato ayaṁ_），一时传遍龙、金翅鸟、诸天、诸梵各界。 ### 三明与正等正觉 降魔之后，太子于当夜三时依次证得三明： **初夜——宿命通**（Pubbe-nivāsānussati-ñāṇa）：忆知无数前生，自苏梅达隐者之世乃至最近的兜率天设觉睹一世，尽皆了了分明。 **中夜——天眼通**（Dibba-cakkhu-ñāṇa）：彻见一切众生依业受生之相——如何因恶业堕入四恶趣，如何因善业转生善趣，由此断除十六种疑惑，达\"度疑清净\"（kaṅkhā-vitaraṇa-visuddhi）。 **后夜——漏尽通**（Āsavakkhaya-ñāṇa）：以极其锐利的\"大金刚观智\"，观照十二缘起支——无明、行、识、名色、六入、触、受、爱、取、有、生、老死——于1,200,000亿个此等法上，如实照见其无常、苦、无我三相，历经知见清净之九",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site",
+          "query": "三明"
+        },
+        {
+          "source": "docs/suttas.json",
+          "heading": "站内搜索命中",
+          "text": "se\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn36\", \"name\": \"MN 36 Mahāsaccaka Sutta\", \"focus\": \"苦行、中道、童年初禅、三明\", \"summary\": \"佛陀向萨遮迦详细叙述极端苦行、几乎饿死、回忆童年树下初禅、接受食物、修四禅并于夜三时证得宿命智、天眼智、漏尽智。\", \"en_url\": \"https://suttacentral.net/mn36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn36/zh/zhuang?lang=en&reference=none&highlight=false\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%98%8E&scope=site",
+          "query": "三明"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g58",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 58,
+      "label": "三明",
+      "members": "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明",
+      "member_items": [
+        "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明"
+      ],
+      "dn34_status": null,
+      "source_text": "三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E"
+    },
+    {
+      "id": "dn34-n3-g10",
+      "sutta": "dn34",
+      "number": 3,
+      "order": 10,
+      "label": "三明",
+      "members": "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明",
+      "member_items": [
+        "前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明"
+      ],
+      "dn34_status": "应作证",
+      "source_text": "（十）哪些是应该被作证的三法呢？三明：前世住处回忆之智明，众生死亡与往生之智明，诸烦恼的灭尽之智明，这些是应该被作证的三法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%E6%98%8E%EF%BC%8C%E8%AB%B8%E7%85%A9%E6%83%B1%E7%9A%84%E6%BB%85%E7%9B%A1%E4%B9%8B%E6%99%BA%E6%98%8E"
+    }
+  ]
+}

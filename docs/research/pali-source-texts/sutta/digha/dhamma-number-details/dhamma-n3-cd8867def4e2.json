@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-cd8867def4e2",
+    "number": 3,
+    "label": "三渴爱",
+    "member_items": [
+      "欲的渴爱",
+      "有的渴爱",
+      "虚无的渴爱"
+    ],
+    "group_ids": [
+      "dn33-n3-g16",
+      "dn34-n3-g4"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "三渴爱",
+      "欲的渴爱",
+      "有的渴爱",
+      "虚无的渴爱"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三渴爱」属于 3 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的渴爱、有的渴爱、虚无的渴爱。[1]\n- DN34：欲的渴爱、有的渴爱、虚无的渴爱。[2]\n\n## 所含各法\n### 欲的渴爱\n经文将「欲的渴爱」列为「三渴爱」的一个成员。Early Buddhist 用该名词检索时，在《渴爱经》命中：欲的渴爱、有的渴爱、虚无的渴爱，比丘们！。[4]\n### 有的渴爱\n经文将「有的渴爱」列为「三渴爱」的一个成员。Early Buddhist 用该名词检索时，在《渴爱的询问经》命中：有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！。[5]\n### 虚无的渴爱\n经文将「虚无的渴爱」列为「三渴爱」的一个成员。Early Buddhist 用该名词检索时，在《渴爱经》命中：欲的渴爱、有的渴爱、虚无的渴爱，比丘们！。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三渴爱",
+          "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 三渴爱",
+          "text": "（四）哪些是应该被舍断的三法呢？三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.170",
+          "text": "欲的渴爱、有的渴爱、虚无的渴爱，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn38.10",
+          "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三渴爱：欲的渴爱、色渴爱、无色渴爱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E7%84%A1%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三渴爱：色渴爱、无色渴爱、灭渴爱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E7%84%A1%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E6%BB%85%E6%B8%B4%E6%84%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.106",
+          "text": "欲的渴爱、有的渴爱、虚无的渴爱，这三有应该被舍断。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三渴爱",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 20.59059246818797,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三渴爱：欲的渴爱、色渴爱、无色渴爱。",
+              "score": 19.583402679338135,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E7%84%A1%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三渴爱：色渴爱、无色渴爱、灭渴爱。",
+              "score": 19.583402679338135,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E7%84%A1%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E6%BB%85%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+              "score": 18.2652933047422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "欲的渴爱",
+          "hits": [
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，比丘们！",
+              "score": 17.019559085604744,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 16.8615558553635,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，这三有应该被舍断。",
+              "score": 16.162046947769852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三渴爱：欲的渴爱、色渴爱、无色渴爱。",
+              "score": 16.125385855307556,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%81%E7%84%A1%E8%89%B2%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "sn38.10",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+              "score": 15.785255587429733,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+              "score": 15.153426628444803,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是这导致再生、伴随欢喜与贪、到处欢喜的渴爱，即：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 13.382222921767424,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%98%AF%E9%80%99%E5%B0%8E%E8%87%B4%E5%86%8D%E7%94%9F%E3%80%81%E4%BC%B4%E9%9A%A8%E6%AD%A1%E5%96%9C%E8%88%87%E8%B2%AA%E3%80%81%E5%88%B0%E8%99%95%E6%AD%A1%E5%96%9C%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是这导致再生、伴随欢喜与贪、到处欢喜的渴爱，即：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 13.382222921767424,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%98%AF%E9%80%99%E5%B0%8E%E8%87%B4%E5%86%8D%E7%94%9F%E3%80%81%E4%BC%B4%E9%9A%A8%E6%AD%A1%E5%96%9C%E8%88%87%E8%B2%AA%E3%80%81%E5%88%B0%E8%99%95%E6%AD%A1%E5%96%9C%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有的渴爱",
+          "hits": [
+            {
+              "uid": "sn38.10",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+              "score": 14.83937813290972,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那目标是有渴爱的还是离渴爱的呢？",
+              "score": 14.795944093647863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E7%9B%AE%E6%A8%99%E6%98%AF%E6%9C%89%E6%B8%B4%E6%84%9B%E7%9A%84%E9%82%84%E6%98%AF%E9%9B%A2%E6%B8%B4%E6%84%9B%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明与有的渴爱。",
+              "score": 14.357110151217503,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，比丘们！",
+              "score": 14.238908698524293,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "mn115",
+              "collection": "经藏/中部_mn",
+              "title": "多界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "虚无的渴爱",
+          "hits": [
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，比丘们！",
+              "score": 19.415456479352272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 19.126702936864927,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，这三有应该被舍断。",
+              "score": 18.332909409350258,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "sn38.10",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+              "score": 17.742852422237767,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+              "score": 16.94229607224933,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是这导致再生、伴随欢喜与贪、到处欢喜的渴爱，即：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 15.452097918726283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%98%AF%E9%80%99%E5%B0%8E%E8%87%B4%E5%86%8D%E7%94%9F%E3%80%81%E4%BC%B4%E9%9A%A8%E6%AD%A1%E5%96%9C%E8%88%87%E8%B2%AA%E3%80%81%E5%88%B0%E8%99%95%E6%AD%A1%E5%96%9C%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是这导致再生、伴随欢喜与贪、到处欢喜的渴爱，即：欲的渴爱、有的渴爱、虚无的渴爱。",
+              "score": 15.452097918726283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%98%AF%E9%80%99%E5%B0%8E%E8%87%B4%E5%86%8D%E7%94%9F%E3%80%81%E4%BC%B4%E9%9A%A8%E6%AD%A1%E5%96%9C%E8%88%87%E8%B2%AA%E3%80%81%E5%88%B0%E8%99%95%E6%AD%A1%E5%96%9C%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是这导致再生、伴随欢喜与贪、到处欢喜的渴爱，即：欲的渴爱、有的渴爱、虚无的渴爱，学友们！",
+              "score": 14.859696503497444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%98%AF%E9%80%99%E5%B0%8E%E8%87%B4%E5%86%8D%E7%94%9F%E3%80%81%E4%BC%B4%E9%9A%A8%E6%AD%A1%E5%96%9C%E8%88%87%E8%B2%AA%E3%80%81%E5%88%B0%E8%99%95%E6%AD%A1%E5%96%9C%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g16",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 16,
+      "label": "三渴爱",
+      "members": "欲的渴爱、有的渴爱、虚无的渴爱",
+      "member_items": [
+        "欲的渴爱",
+        "有的渴爱",
+        "虚无的渴爱"
+      ],
+      "dn34_status": null,
+      "source_text": "三渴爱：欲的渴爱、有的渴爱、虚无的渴爱。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B"
+    },
+    {
+      "id": "dn34-n3-g4",
+      "sutta": "dn34",
+      "number": 3,
+      "order": 4,
+      "label": "三渴爱",
+      "members": "欲的渴爱、有的渴爱、虚无的渴爱",
+      "member_items": [
+        "欲的渴爱",
+        "有的渴爱",
+        "虚无的渴爱"
+      ],
+      "dn34_status": "应舍断",
+      "source_text": "（四）哪些是应该被舍断的三法呢？三渴爱：欲的渴爱、有的渴爱、虚无的渴爱，这些是应该被舍断的三法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-fbc16cb8f1f4",
+    "number": 3,
+    "label": "三有",
+    "member_items": [
+      "欲有",
+      "色有",
+      "无色有"
+    ],
+    "group_ids": [
+      "dn33-n3-g21"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三有",
+      "欲有",
+      "色有",
+      "无色有"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三有」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲有、色有、无色有。[1]\n\n## 所含各法\n### 欲有\n经文将「欲有」列为「三有」的一个成员。Early Buddhist 用该名词检索时，在《住处经第二》命中：有以欲为缘的感受，也有以欲的平息为缘的感受；。[3]\n### 色有\n经文将「色有」列为「三有」的一个成员。Early Buddhist 用该名词检索时，在《毘陀罗大经》命中：有三有：欲有、色有、无色有。。[4]\n### 无色有\n经文将「无色有」列为「三有」的一个成员。Early Buddhist 用该名词检索时，在《精神的经》命中：有关于无色的解脱，为精神的解脱。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 5 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三有",
+          "text": "三有：欲有、色有、无色有。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三有：欲有、色有、无色有。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.12",
+          "text": "有以欲为缘的感受，也有以欲的平息为缘的感受；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.12&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E4%B9%9F%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%9A%84%E5%B9%B3%E6%81%AF%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn43",
+          "text": "有三有：欲有、色有、无色有。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn36.31",
+          "text": "有关于无色的解脱，为精神的解脱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.31&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%97%9C%E6%96%BC%E7%84%A1%E8%89%B2%E7%9A%84%E8%A7%A3%E8%84%AB%EF%BC%8C%E7%82%BA%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%A7%A3%E8%84%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.23",
+          "text": "缘于决定而有欲贪；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.23&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn15",
+          "text": "缘于决定而有欲贪；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "缘于决定而有欲贪；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.11",
+          "text": "有以欲为缘的感受；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.11&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.164",
+          "text": "欲有、色有、无色有，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.164&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.105",
+          "text": "欲有、色有、无色有，这三有应该被舍断。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.105&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.76",
+          "text": "如果没有色界报果的业，你们是否能安立色有呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.76&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E8%89%B2%E7%95%8C%E5%A0%B1%E6%9E%9C%E7%9A%84%E6%A5%AD%EF%BC%8C%E4%BD%A0%E5%80%91%E6%98%AF%E5%90%A6%E8%83%BD%E5%AE%89%E7%AB%8B%E8%89%B2%E6%9C%89%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.77",
+          "text": "如果没有色界报果的业，你们是否能安立色有呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.77&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E8%89%B2%E7%95%8C%E5%A0%B1%E6%9E%9C%E7%9A%84%E6%A5%AD%EF%BC%8C%E4%BD%A0%E5%80%91%E6%98%AF%E5%90%A6%E8%83%BD%E5%AE%89%E7%AB%8B%E8%89%B2%E6%9C%89%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明的层次** 雷迪禅师引入\"住地\"（āsava，即\"漏\"的基底）概念：最初的心意被无明浸染，成为生死轮回的主要教唆者。无明如风，吹动三界大海，激起烦恼波澜。 无明也有三个层次（与身见相同）：犯罪层次（显现为恶行）、缠烦恼层次（显现为恶意）、随眠层次（潜藏于心流中，尚未显现）。 **无明与",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%9C%89&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛身幻化论/僧团抽象化/戒律取消化”高危异说 | | 未归属异说 | 解脱逐渐实现；天眼天耳只是推论；天人有自制；阿罗汉可同时六舍；空无边处无为；无色界只是认识无色物；受是善恶；七返者第七生仍不保证；时间长度预定；禅定世间；色有道德伴随；凡夫可经验三果心；阿罗汉可疑可被超越 | 多数是分类边界不清或把修行状态对象化 | ## 2. 《梵网经》六十二见 DN 1 的六十二见分为两大类：**十八种关于过去的见**，**四十四种关于未来的见**。佛陀的判定非常清楚：这些见解不是因为“思辨很高级”，而是由触、受、爱、取推动；只要执著它们，就仍在网中。 ### 2.1 十八种关于过去的见 | 类别 | 数量 | 内容 | |---|---:|---| | 常住论 | 4 | 以禅定宿命忆念或推论为根据，认为我与世界常住不变 | | 部分常住论 | 4 | 认为某些神/梵天/我常住，其他众生无常；常由梵天创世经验误读而来 | | 有边无边论 | 4 | 世界有限、无限、亦有限亦无限、非有限非无限",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%89%B2%E6%9C%89&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/overview.md",
+          "text": "及其条件关系绘制心物过程 巴利《法集论》（Dhammasaṅgaṇī）从善、不善、无记等矩阵分析诸法；《分别论》《界论》《人施设论》《双论》《发趣论》分别从蕴、处、界、概念、逻辑配对和二十四缘等角度展开。后期《摄阿毗达摩义论》（Abhidhammatthasaṅgaha）把传统压缩为便于教学的四类究竟法： 1. 心（citta）； 2. 心所（cetasika）； 3. 色（rūpa）； 4. 涅槃（nibbāna）。 心、心所、色有生灭，是有为；涅槃不由条件生起，是无为。四究竟法的原文纲要和89/121心、52心所、28色的解释，见阿耨楼陀《摄阿毗达摩义论》及菩提比丘编注的 *A Comprehensive Manual of Abhidhamma*（[Buddhist Publication Society PDF](https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf)）。 89心扩为121心，是将出世间的四道、四果八心分别配入五禅层次，增加32项；不是发现了另一组实体，也不是不同宗派各自认可不同数量的“心灵”。上座部不另立“心不相应行”一位：某些北传不相应法的功能被分配给心所、色法的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%89%B2%E6%9C%89&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "text": "、圣教住世、有人随教修行、具足悲愍助缘。此处的重点不是泛泛赞叹人身，而是指出这种人身是能修完整道次第的所依。 随后说明“义大”与“难得”。义大有两层：现前可依此身造集善趣因，究竟可依此身趣入解脱与一切智。难得则从因、果、譬喻三门说明：能得暇满的清净戒、布施、愿力极少；从三恶趣或无暇处转得此身极难；经典以盲龟浮木等譬喻显示其稀有。因此本论反复推动读者立即取心要，而不是把修法推给未来。 最后建立三士道总纲：下士希求后世善趣，中士希求出离三有，上士为利一切有情希求佛果。三士不是三条互不相干的道路，而是渐次摄持：中士、上士也须具备下士的业果与皈依基础；上士也须具备中士的出离心，否则所谓利他容易停留在世间善愿。故本论在进入卷二前，先说明以三士夫道摄一切佛语，并说明次第引导的理由。 --- ## 【卷二：共下士道】 **内容概要** 下士道的目标是：不执现世，希求后世善趣，以皈依和业果为核心修持。 ### 一、修念死 **（一）不修念死之过患** 人人口说必死，但心中常执「今日不死」，故劳心于现世，不思后世。引《四百论》：「凡三世主宰，自死无教导，若如是多睡，无有暴于此。」 **（二）修念死之利益** 若能真实修念死，则能推动自他趣入殊胜道位。此处引《大涅槃经》：「一切耕耘中秋实第一，一切迹印",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%9C%89&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md",
+          "text": "等六种行相而各自得证胜位的。 出处：觉音《清净道论》第三品“说取业处品”，叶均译，印刷页 116–117；相应段落为 Vism III.128。 **今译：**过去、未来和现在的声闻圣者、辟支佛、正等正觉佛，都依无贪、无嗔、无痴、出家、远离和出离这六种心行，各自证得相应的成就。 #### 阿底峡《菩提道灯论》：下、中、上三士 > 由下中及上，应知有三士；当书彼等相，各各之差别。若以何方便，唯于生死乐；但求自利益，知为下士夫。背弃三有乐，遮止诸恶业；但求自寂灭，彼名为中士。若以自身苦，比他一切苦；欲求永尽者，彼是上士夫。 出处：阿底峡《菩提道灯论》，CBETA G148n2518_p0442a01-p0442a03。 **今译：**修行人可分为下、中、上三类。只求生死中的安乐、只为自己利益而修的人，是下士；厌弃三界安乐、止息恶业、只求自己寂灭的人，是中士；由自己的苦推及一切众生的苦，并希望令这些苦永远止息的人，是上士。 #### 宗喀巴《菩提道次第略论》：大乘道摄入其他乘的断证功德 > 如其所有一切佛语教授，了解此中是一补特伽罗成佛广大之道，此复随其所应，有许道之主要，有许道之支分，因诸菩萨所欲求事，是成世间义利，所调伏者有三种种姓，须学彼等各各之道，故说三乘道者，是菩萨所许能成义利之方便",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%9C%89&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三有",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三有：欲有、色有、无色有。",
+              "score": 12.234232828571022,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "欲有",
+          "hits": [
+            {
+              "uid": "sn45.12",
+              "collection": "经藏/相应部_sn",
+              "title": "住处经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有以欲为缘的感受，也有以欲的平息为缘的感受；",
+              "score": 12.333987108611502,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.12&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E4%B9%9F%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%9A%84%E5%B9%B3%E6%81%AF%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%9B"
+            },
+            {
+              "uid": "an9.23",
+              "collection": "经藏/增支部_an",
+              "title": "根植于渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于决定而有欲贪；",
+              "score": 11.570816182856127,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.23&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn15",
+              "collection": "经藏/长部_dn",
+              "title": "大因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于决定而有欲贪；",
+              "score": 11.570816182856127,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘于决定而有欲贪；",
+              "score": 11.570816182856127,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B7%A3%E6%96%BC%E6%B1%BA%E5%AE%9A%E8%80%8C%E6%9C%89%E6%AC%B2%E8%B2%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn45.11",
+              "collection": "经藏/相应部_sn",
+              "title": "住处经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有以欲为缘的感受；",
+              "score": 11.416541044957572,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.11&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BB%A5%E6%AC%B2%E7%82%BA%E7%B7%A3%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%9B"
+            },
+            {
+              "uid": "mn43",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有三有：欲有、色有、无色有。",
+              "score": 11.103626177442601,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            },
+            {
+              "uid": "sn45.164",
+              "collection": "经藏/相应部_sn",
+              "title": "有经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲有、色有、无色有，比丘们！",
+              "score": 11.103626177442601,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.164&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三有：欲有、色有、无色有。",
+              "score": 11.103626177442601,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "色有",
+          "hits": [
+            {
+              "uid": "mn43",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有三有：欲有、色有、无色有。",
+              "score": 10.069561939612946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            },
+            {
+              "uid": "sn45.164",
+              "collection": "经藏/相应部_sn",
+              "title": "有经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲有、色有、无色有，比丘们！",
+              "score": 10.069561939612946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.164&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三有：欲有、色有、无色有。",
+              "score": 10.069561939612946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            },
+            {
+              "uid": "an6.105",
+              "collection": "经藏/增支部_an",
+              "title": "有经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲有、色有、无色有，这三有应该被舍断。",
+              "score": 9.296992373549891,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.105&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "an3.76",
+              "collection": "经藏/增支部_an",
+              "title": "有经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果没有色界报果的业，你们是否能安立色有呢？",
+              "score": 8.953520746896762,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.76&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E8%89%B2%E7%95%8C%E5%A0%B1%E6%9E%9C%E7%9A%84%E6%A5%AD%EF%BC%8C%E4%BD%A0%E5%80%91%E6%98%AF%E5%90%A6%E8%83%BD%E5%AE%89%E7%AB%8B%E8%89%B2%E6%9C%89%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.77",
+              "collection": "经藏/增支部_an",
+              "title": "有经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果没有色界报果的业，你们是否能安立色有呢？",
+              "score": 8.953520746896762,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.77&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E8%89%B2%E7%95%8C%E5%A0%B1%E6%9E%9C%E7%9A%84%E6%A5%AD%EF%BC%8C%E4%BD%A0%E5%80%91%E6%98%AF%E5%90%A6%E8%83%BD%E5%AE%89%E7%AB%8B%E8%89%B2%E6%9C%89%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种有：欲有、色有、无色有，学友们！",
+              "score": 8.634523618216607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种有：欲有、色有、无色有，比丘们！",
+              "score": 8.634523618216607,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "无色有",
+          "hits": [
+            {
+              "uid": "sn36.31",
+              "collection": "经藏/相应部_sn",
+              "title": "精神的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有关于无色的解脱，为精神的解脱。",
+              "score": 12.670874809296295,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.31&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%97%9C%E6%96%BC%E7%84%A1%E8%89%B2%E7%9A%84%E8%A7%A3%E8%84%AB%EF%BC%8C%E7%82%BA%E7%B2%BE%E7%A5%9E%E7%9A%84%E8%A7%A3%E8%84%AB%E3%80%82"
+            },
+            {
+              "uid": "mn43",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有三有：欲有、色有、无色有。",
+              "score": 12.31257864781804,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn43&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            },
+            {
+              "uid": "sn45.164",
+              "collection": "经藏/相应部_sn",
+              "title": "有经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲有、色有、无色有，比丘们！",
+              "score": 12.31257864781804,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.164&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三有：欲有、色有、无色有。",
+              "score": 12.31257864781804,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%E3%80%82"
+            },
+            {
+              "uid": "an6.105",
+              "collection": "经藏/增支部_an",
+              "title": "有经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲有、色有、无色有，这三有应该被舍断。",
+              "score": 11.461794855525948,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.105&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E9%80%99%E4%B8%89%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种有：欲有、色有、无色有，学友们！",
+              "score": 11.159310432482982,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn12.2",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种有：欲有、色有、无色有，比丘们！",
+              "score": 11.159310432482982,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.2&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn38.13",
+              "collection": "经藏/相应部_sn",
+              "title": "有的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种有：欲有、色有、无色有，道友！",
+              "score": 11.159310432482982,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.13&lang=zh&q=%E7%84%A1%E8%89%B2%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%9C%89%EF%BC%9A%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "时，未以正念守护，则乐受生贪，苦受生嗔，舍受被无明遮蔽，皆可引发渴爱。 **取（Upādāna）** 取是爱的强化——执著、抓取。共有四种（见\"四取\"条目）。取使存在的驱动力从流动变成固着，\"有\"由此生起。 **有（Bhava）** 有（bhava，\"存在\"）是\"取\"的结果，也是\"生\"的条件。有分两层：业有（kamma-bhava，产生投生之业的意志活动）与生有（upapatti-bhava，由业引生的具体存在形态）。有分三界：欲有、色有、无色有。 **三者的连结** 爱→取→有，是轮回三世因果链的核心驱动段。消除爱（断除集谛），取与有的链条断裂，轮回终止。这是修行最核心的断除目标。 --- # 十二、无明（Avijjā） **定义** 无明是对四圣谛的不知见，是缘起链的第一支，也是一切烦恼与轮回的终极根源。《分别论》（Vibhaṅga）定义：不知苦、不知集、不知灭、不知道，是为无明。 **无明的层次** 雷迪禅师引入\"住地\"（āsava，即\"漏\"的基底）概念：最初的心意被无明浸染，成为生死轮回的主要教唆者。无明如风，吹动三界大海，激起烦恼波澜。 无明也有三个层次（与身见相同）：犯罪层次（显现为恶行）、缠烦恼层次（显现为恶意）、随眠层次（潜藏于心流中，尚未显现）。 **无明与",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%9C%89&scope=site",
+          "query": "欲有"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛身幻化论/僧团抽象化/戒律取消化”高危异说 | | 未归属异说 | 解脱逐渐实现；天眼天耳只是推论；天人有自制；阿罗汉可同时六舍；空无边处无为；无色界只是认识无色物；受是善恶；七返者第七生仍不保证；时间长度预定；禅定世间；色有道德伴随；凡夫可经验三果心；阿罗汉可疑可被超越 | 多数是分类边界不清或把修行状态对象化 | ## 2. 《梵网经》六十二见 DN 1 的六十二见分为两大类：**十八种关于过去的见**，**四十四种关于未来的见**。佛陀的判定非常清楚：这些见解不是因为“思辨很高级”，而是由触、受、爱、取推动；只要执著它们，就仍在网中。 ### 2.1 十八种关于过去的见 | 类别 | 数量 | 内容 | |---|---:|---| | 常住论 | 4 | 以禅定宿命忆念或推论为根据，认为我与世界常住不变 | | 部分常住论 | 4 | 认为某些神/梵天/我常住，其他众生无常；常由梵天创世经验误读而来 | | 有边无边论 | 4 | 世界有限、无限、亦有限亦无限、非有限非无限",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%89%B2%E6%9C%89&scope=site",
+          "query": "色有"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/overview.md",
+          "heading": "站内搜索命中",
+          "text": "及其条件关系绘制心物过程 巴利《法集论》（Dhammasaṅgaṇī）从善、不善、无记等矩阵分析诸法；《分别论》《界论》《人施设论》《双论》《发趣论》分别从蕴、处、界、概念、逻辑配对和二十四缘等角度展开。后期《摄阿毗达摩义论》（Abhidhammatthasaṅgaha）把传统压缩为便于教学的四类究竟法： 1. 心（citta）； 2. 心所（cetasika）； 3. 色（rūpa）； 4. 涅槃（nibbāna）。 心、心所、色有生灭，是有为；涅槃不由条件生起，是无为。四究竟法的原文纲要和89/121心、52心所、28色的解释，见阿耨楼陀《摄阿毗达摩义论》及菩提比丘编注的 *A Comprehensive Manual of Abhidhamma*（[Buddhist Publication Society PDF](https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf)）。 89心扩为121心，是将出世间的四道、四果八心分别配入五禅层次，增加32项；不是发现了另一组实体，也不是不同宗派各自认可不同数量的“心灵”。上座部不另立“心不相应行”一位：某些北传不相应法的功能被分配给心所、色法的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%89%B2%E6%9C%89&scope=site",
+          "query": "色有"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "heading": "站内搜索命中",
+          "text": "、圣教住世、有人随教修行、具足悲愍助缘。此处的重点不是泛泛赞叹人身，而是指出这种人身是能修完整道次第的所依。 随后说明“义大”与“难得”。义大有两层：现前可依此身造集善趣因，究竟可依此身趣入解脱与一切智。难得则从因、果、譬喻三门说明：能得暇满的清净戒、布施、愿力极少；从三恶趣或无暇处转得此身极难；经典以盲龟浮木等譬喻显示其稀有。因此本论反复推动读者立即取心要，而不是把修法推给未来。 最后建立三士道总纲：下士希求后世善趣，中士希求出离三有，上士为利一切有情希求佛果。三士不是三条互不相干的道路，而是渐次摄持：中士、上士也须具备下士的业果与皈依基础；上士也须具备中士的出离心，否则所谓利他容易停留在世间善愿。故本论在进入卷二前，先说明以三士夫道摄一切佛语，并说明次第引导的理由。 --- ## 【卷二：共下士道】 **内容概要** 下士道的目标是：不执现世，希求后世善趣，以皈依和业果为核心修持。 ### 一、修念死 **（一）不修念死之过患** 人人口说必死，但心中常执「今日不死」，故劳心于现世，不思后世。引《四百论》：「凡三世主宰，自死无教导，若如是多睡，无有暴于此。」 **（二）修念死之利益** 若能真实修念死，则能推动自他趣入殊胜道位。此处引《大涅槃经》：「一切耕耘中秋实第一，一切迹印",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%9C%89&scope=site",
+          "query": "三有"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/buddhaghosa-tsongkhapa-atisha-sources.md",
+          "heading": "站内搜索命中",
+          "text": "等六种行相而各自得证胜位的。 出处：觉音《清净道论》第三品“说取业处品”，叶均译，印刷页 116–117；相应段落为 Vism III.128。 **今译：**过去、未来和现在的声闻圣者、辟支佛、正等正觉佛，都依无贪、无嗔、无痴、出家、远离和出离这六种心行，各自证得相应的成就。 #### 阿底峡《菩提道灯论》：下、中、上三士 > 由下中及上，应知有三士；当书彼等相，各各之差别。若以何方便，唯于生死乐；但求自利益，知为下士夫。背弃三有乐，遮止诸恶业；但求自寂灭，彼名为中士。若以自身苦，比他一切苦；欲求永尽者，彼是上士夫。 出处：阿底峡《菩提道灯论》，CBETA G148n2518_p0442a01-p0442a03。 **今译：**修行人可分为下、中、上三类。只求生死中的安乐、只为自己利益而修的人，是下士；厌弃三界安乐、止息恶业、只求自己寂灭的人，是中士；由自己的苦推及一切众生的苦，并希望令这些苦永远止息的人，是上士。 #### 宗喀巴《菩提道次第略论》：大乘道摄入其他乘的断证功德 > 如其所有一切佛语教授，了解此中是一补特伽罗成佛广大之道，此复随其所应，有许道之主要，有许道之支分，因诸菩萨所欲求事，是成世间义利，所调伏者有三种种姓，须学彼等各各之道，故说三乘道者，是菩萨所许能成义利之方便",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%9C%89&scope=site",
+          "query": "三有"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g21",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 21,
+      "label": "三有",
+      "members": "欲有、色有、无色有",
+      "member_items": [
+        "欲有",
+        "色有",
+        "无色有"
+      ],
+      "dn34_status": null,
+      "source_text": "三有：欲有、色有、无色有。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%9C%89&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%9C%89%E3%80%81%E8%89%B2%E6%9C%89%E3%80%81%E7%84%A1%E8%89%B2%E6%9C%89"
+    }
+  ]
+}

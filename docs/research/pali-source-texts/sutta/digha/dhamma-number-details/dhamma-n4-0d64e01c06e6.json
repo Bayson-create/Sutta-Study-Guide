@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-0d64e01c06e6",
+    "number": 4,
+    "label": "四入流支",
+    "member_items": [
+      "善人的结交",
+      "听闻正法",
+      "如理作意",
+      "法随法行"
+    ],
+    "group_ids": [
+      "dn33-n4-g13"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四入流支",
+      "善人的结交",
+      "听闻正法",
+      "如理作意",
+      "法随法行"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四入流支」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：善人的结交、听闻正法、如理作意、法随法行。[1]\n\n## 所含各法\n### 善人的结交\n经文将「善人的结交」列为「四入流支」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：结交善人，听闻正法，法、随法行，这些是多所助益的三法。。[3]\n### 听闻正法\n经文将「听闻正法」列为「四入流支」的一个成员。Early Buddhist 用该名词检索时，在《摩诃男经》命中：自己是欲听闻正法者，但不劝导他人正法之听闻；。[4]\n### 如理作意\n经文将「如理作意」列为「四入流支」的一个成员。Early Buddhist 用该名词检索时，在《自身内无常的欢喜的灭尽经》命中：你们要如理作意意，你们要如实认知意之无常。。[5]\n### 法随法行\n经文将「法随法行」列为「四入流支」的一个成员。Early Buddhist 用该名词检索时，在《吉祥经》命中：行正道︰dhammacariyā(法行)是指十善业道。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四入流支",
+          "text": "四入流支：善人的结交、听闻正法、如理作意、法随法行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4%E3%80%81%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E3%80%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%81%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.50",
+          "text": "这是四入流支。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.50&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "结交善人，听闻正法，法、随法行，这些是多所助益的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B5%90%E4%BA%A4%E5%96%84%E4%BA%BA%EF%BC%8C%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%EF%BC%8C%E6%B3%95%E3%80%81%E9%9A%A8%E6%B3%95%E8%A1%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.25",
+          "text": "自己是欲听闻正法者，但不劝导他人正法之听闻；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.25&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E6%AC%B2%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E8%80%85%EF%BC%8C%E4%BD%86%E4%B8%8D%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%AD%A3%E6%B3%95%E4%B9%8B%E8%81%BD%E8%81%9E%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.158",
+          "text": "你们要如理作意意，你们要如实认知意之无常。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.158&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%84%8F%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E5%AF%A6%E8%AA%8D%E7%9F%A5%E6%84%8F%E4%B9%8B%E7%84%A1%E5%B8%B8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp5",
+          "text": "行正道︰dhammacariyā(法行)是指十善业道。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%A1%8C%E6%AD%A3%E9%81%93%EF%B8%B0dhammacariy%C4%81%28%E6%B3%95%E8%A1%8C%29%E6%98%AF%E6%8C%87%E5%8D%81%E5%96%84%E6%A5%AD%E9%81%93%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四入流者的支：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%85%A5%E6%B5%81%E8%80%85%E7%9A%84%E6%94%AF%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.50",
+          "text": "有四入流支，哪四个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.50&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.5",
+          "text": "亲近善人是入流支，听闻正法是入流支，如理作意是入流支，法、随法行是入流支。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.5&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A6%AA%E8%BF%91%E5%96%84%E4%BA%BA%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E6%B3%95%E3%80%81%E9%9A%A8%E6%B3%95%E8%A1%8C%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.5",
+          "text": "这被称为『入流支、入流支』，舍利弗！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.5&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%81%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%8F%EF%BC%8C%E8%88%8D%E5%88%A9%E5%BC%97%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.26",
+          "text": "尊者舍利弗是大慧者，确实是因为他能以十种方式解析四入流支。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.26&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%8A%E8%80%85%E8%88%8D%E5%88%A9%E5%BC%97%E6%98%AF%E5%A4%A7%E6%85%A7%E8%80%85%EF%BC%8C%E7%A2%BA%E5%AF%A6%E6%98%AF%E5%9B%A0%E7%82%BA%E4%BB%96%E8%83%BD%E4%BB%A5%E5%8D%81%E7%A8%AE%E6%96%B9%E5%BC%8F%E8%A7%A3%E6%9E%90%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.42",
+          "text": "具备这四入流支。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.42&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%B7%E5%82%99%E9%80%99%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四入流支：善人的结交、听闻正法、如理作意、法随法行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%9A%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4%E3%80%81%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E3%80%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%81%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "叹为“不盲目的正见” - 经典出处：《增支部》AN 2.121–122 - 圣典原文：佛陀指出，要生起解脱的出世间正见，有两个绝对必要的条件： > \"Dve'me, bhikkhave, paccayā sammādiṭṭhiyā uppādāya. Katame dve? Parato ca ghoso, yoniso ca manasikāro.\" > “诸比丘！有两种缘使正见生起。哪两种？他音（来自他人的教导）与如理作意。” - 圣典评价：上座部极度随喜这种精进，因为没有对巴利三藏、法义（如四圣谛、十二因缘、五蕴）的精进修习，修行人就会变成“盲人摸象”。 ## 2. 赞叹为“法随法行”的圣者资粮 - 经典出处：《相应部·入流相应》 - 圣典原文：“sappurisa-saṃsevo saddhammasavanaṃ yoniso manasikāro dhammānudhammapaṭipatti 亲近善知识 听闻正法 如理作意 法随法行” - 佛陀将“常随法学、精进思惟”列为证得初果须陀洹（预流果）的四大必备条件之一（四预流支：亲近善士、听闻正法、如理作意、法随法行）。上座部评价这种人是“正走在圣人的阶梯上”，他的智力精进正在为他未来在打坐中“瞬间证悟”疯狂地刷经验值（累",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完毕时，**\"大地震动，空中出现比天神更耀眼的巨光\"**，诸天辗转传诵佳音；而全经最平实的结尾，却只是佛陀简短地祝贺憍陈如尊者证得法眼净——由绚烂归于平淡，象征正法明灯自此",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "；思则催促其它心所各作其事，如木匠助手或前方采花者，是最忙碌的心所。 **14个不善心所：** - 4遍一切不善心心所：痴、无惭、无愧、掉举 - 3贪因组：贪、邪见、我慢 - 4嗔因组：嗔、嫉、悭、恶作 - 1昏沉与睡眠：昏沉、睡眠（各算一个） - 1疑：犹豫不决 **25个美心所：** 包括19遍一切美心心所（信、念、惭、愧、无贪、无嗔等）、3离心所（正语、正业、正命）、2无量心所（悲、喜）、1慧根。 #### 三、心路过程与如理作意 名业处并非笼统地**「看念头」**，而是依六门心路过程逐刹那辨别名法。以眼门为例，色所缘同时撞击眼净色与有分意界时，眼门心路与后续意门心路生起；禅修者须辨别五门转向、眼识、领受、推度、确定、速行、彼所缘，以及随后的意门转向、速行、彼所缘。 关键在于转向心与确定心如何作意：若把所缘确定为色所缘、色法、无常、苦、无我或不净，即属如理作意，善速行心路生起；若是不如理作意，则不善速行心路生起。这使禅修者能亲自辨别善、不善名法如何依所缘与作意而起。 #### 四、内外观与四念处的会通 名业处还强调内观与外观必须轮流。只观内五蕴不能证道，只观外五蕴也不能证道；只观色法或只观名法，同样不能完成至出起观。禅修者要在内、外、名、色之间反复辨别，使观智强而有力。 本章最后",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "件，因为食使它得到巩固。”（XIX.4） #### 3. 名身的条件（XIX.5） > “由于眼和色，眼识生起。”（S II 72；M I 111） 名法（心识）总是因条件而生——眼＋色对象 → 眼识；耳＋声 → 耳识，等等。每次认知事件都是条件性的，没有一个独立存在的\"认识者\"。 #### 4. 五种辨别方式（XIX.7-18） **(a) 一般与特殊条件**： - 名法的条件：普遍条件（六内处和六外处）和非普遍条件（如信、如理作意等） - 色法的条件：四重——业、识、温度、食 **(b) 逆序缘起观**（XIX.11）： > “这称为诸行的老死；有生时便有老死，有有时便有生，有取时便有有……有行时便有识，有无明时便有行。”（XIX.11） **(c) 顺序缘起观**（XIX.12）： \"So, with ignorance as condition there are formations\" (M I 261) **(d) 通过业轮与业果轮**（XIX.13-18）： **过去业过程中的五个成分**（XIX.13）： 1. 痴（delusion）= 无明 2. 积集（accumulation）= 行 3. 执取（attachment）= 爱 4. 执握（embracing）= 取",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "ā huraṁ vā…** \"无论此世、他世有何财富，乃至天界有何殊胜珍宝，都没有任何一种能与如来相比。佛陀之中具足如此殊胜之宝；以此真实，愿得安乐！\" 阿难先绕三重城墙诵前三偈、以佛钵净水遍洒城中；非人纷纷退散，疫病随之平息。佛陀随后亲自宣说完整十七偈，依次赞叹佛、法、僧以及四双八辈圣者的殊胜功德，并连续七日重复开示。原书又详论护卫经能否生效，不只取决于声音：诵者须具慈心、发音准确、理解经义而不求世俗回报；听者也须具信、持戒、专注与如理作意。如此，《宝经》不是脱离德行和理解的机械咒语，而是以三宝真实功德为依止的谛语。 --- ## 第二十二章（乙）：罗希尼河之争、五百比丘与大会 ### 罗希尼河之争与诸则本生 释迦、拘利两族因罗希尼河灌溉用水分配不均而口角升级，终至双方陈兵对峙、蓄势待发。佛陀于当日清晨遍观世间，预见亲往调停可化干戈为玉帛，遂独自一人于黄昏时分乘虚空而至，端坐两军之间，身放青光令天色骤暗，令双方心生悚惧而息兵罢战。 佛陀依次问：\"水价值几何？\"\"微不足道。\"\"土地价值几何？\"\"不可估量。\"\"刹帝利的生命价值几何？\"\"不可估量。\"遂教诲：\"为何要为区区之水，毁掉无价的生命？\"随即接连宣说多则本生：树神与熊因挑拨而两败俱伤，警示不可轻率结怨；兔子听见果实坠叶，误以为大地崩裂，群",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四入流支",
+          "hits": [
+            {
+              "uid": "sn55.50",
+              "collection": "经藏/相应部_sn",
+              "title": "支经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四入流支。",
+              "score": 33.707679060821555,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.50&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四入流者的支：学友们！",
+              "score": 27.462385231328685,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%85%A5%E6%B5%81%E8%80%85%E7%9A%84%E6%94%AF%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn55.50",
+              "collection": "经藏/相应部_sn",
+              "title": "支经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有四入流支，哪四个呢？",
+              "score": 26.401433535291762,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.50&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E5%93%AA%E5%9B%9B%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn55.5",
+              "collection": "经藏/相应部_sn",
+              "title": "舍利弗经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "亲近善人是入流支，听闻正法是入流支，如理作意是入流支，法、随法行是入流支。",
+              "score": 24.097650247329288,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.5&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A6%AA%E8%BF%91%E5%96%84%E4%BA%BA%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E6%B3%95%E3%80%81%E9%9A%A8%E6%B3%95%E8%A1%8C%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "sn55.5",
+              "collection": "经藏/相应部_sn",
+              "title": "舍利弗经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "亲近善人是入流支，听闻正法是入流支，如理作意是入流支，法、随法行是入流支。",
+              "score": 24.097650247329288,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.5&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A6%AA%E8%BF%91%E5%96%84%E4%BA%BA%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%8C%E6%B3%95%E3%80%81%E9%9A%A8%E6%B3%95%E8%A1%8C%E6%98%AF%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "sn55.5",
+              "collection": "经藏/相应部_sn",
+              "title": "舍利弗经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为『入流支、入流支』，舍利弗！",
+              "score": 21.828328984457627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.5&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%81%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%8F%EF%BC%8C%E8%88%8D%E5%88%A9%E5%BC%97%EF%BC%81"
+            },
+            {
+              "uid": "sn55.26",
+              "collection": "经藏/相应部_sn",
+              "title": "给孤独经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "尊者舍利弗是大慧者，确实是因为他能以十种方式解析四入流支。",
+              "score": 20.951793036039096,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.26&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%8A%E8%80%85%E8%88%8D%E5%88%A9%E5%BC%97%E6%98%AF%E5%A4%A7%E6%85%A7%E8%80%85%EF%BC%8C%E7%A2%BA%E5%AF%A6%E6%98%AF%E5%9B%A0%E7%82%BA%E4%BB%96%E8%83%BD%E4%BB%A5%E5%8D%81%E7%A8%AE%E6%96%B9%E5%BC%8F%E8%A7%A3%E6%9E%90%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "sn12.42",
+              "collection": "经藏/相应部_sn",
+              "title": "五恐怖的仇恨经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "具备这四入流支。",
+              "score": 20.777049542617547,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.42&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%B7%E5%82%99%E9%80%99%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "善人的结交",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "结交善人，听闻正法，法、随法行，这些是多所助益的三法。",
+              "score": 14.751646636706964,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%B5%90%E4%BA%A4%E5%96%84%E4%BA%BA%EF%BC%8C%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%EF%BC%8C%E6%B3%95%E3%80%81%E9%9A%A8%E6%B3%95%E8%A1%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四入流支：善人的结交、听闻正法、如理作意、法随法行。",
+              "score": 14.41059119330525,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF%EF%BC%9A%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4%E3%80%81%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E3%80%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%81%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an3.26",
+              "collection": "经藏/增支部_an",
+              "title": "应该被结交经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被结交经",
+              "score": 11.379359424158107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E7%B5%90%E4%BA%A4%E7%B6%93"
+            },
+            {
+              "uid": "an10.155",
+              "collection": "经藏/增支部_an",
+              "title": "应该被结交经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被结交经",
+              "score": 11.379359424158107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.155&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E7%B5%90%E4%BA%A4%E7%B6%93"
+            },
+            {
+              "uid": "an4.201",
+              "collection": "经藏/增支部_an",
+              "title": "学处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "善人与比善人更善人的，你们要听！",
+              "score": 10.55624983525821,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.201&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%84%E4%BA%BA%E8%88%87%E6%AF%94%E5%96%84%E4%BA%BA%E6%9B%B4%E5%96%84%E4%BA%BA%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "an4.202",
+              "collection": "经藏/增支部_an",
+              "title": "无信者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "善人与比善人更善人的，你们要听！",
+              "score": 10.55624983525821,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.202&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%84%E4%BA%BA%E8%88%87%E6%AF%94%E5%96%84%E4%BA%BA%E6%9B%B4%E5%96%84%E4%BA%BA%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "an4.203",
+              "collection": "经藏/增支部_an",
+              "title": "七业经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "善人与比善人更善人的，你们要听！",
+              "score": 10.55624983525821,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.203&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%84%E4%BA%BA%E8%88%87%E6%AF%94%E5%96%84%E4%BA%BA%E6%9B%B4%E5%96%84%E4%BA%BA%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "an4.204",
+              "collection": "经藏/增支部_an",
+              "title": "十业经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "善人与比善人更善人的，你们要听！",
+              "score": 10.55624983525821,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.204&lang=zh&q=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%84%E4%BA%BA%E8%88%87%E6%AF%94%E5%96%84%E4%BA%BA%E6%9B%B4%E5%96%84%E4%BA%BA%E7%9A%84%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "听闻正法",
+          "hits": [
+            {
+              "uid": "an8.25",
+              "collection": "经藏/增支部_an",
+              "title": "摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是欲听闻正法者，但不劝导他人正法之听闻；",
+              "score": 19.681102085134107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.25&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E6%AC%B2%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E8%80%85%EF%BC%8C%E4%BD%86%E4%B8%8D%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%AD%A3%E6%B3%95%E4%B9%8B%E8%81%BD%E8%81%9E%EF%BC%9B"
+            },
+            {
+              "uid": "an8.25",
+              "collection": "经藏/增支部_an",
+              "title": "摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是欲听闻正法者，也劝导他人正法之听闻；",
+              "score": 19.681102085134107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.25&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E6%AC%B2%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E8%80%85%EF%BC%8C%E4%B9%9F%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%AD%A3%E6%B3%95%E4%B9%8B%E8%81%BD%E8%81%9E%EF%BC%9B"
+            },
+            {
+              "uid": "an8.26",
+              "collection": "经藏/增支部_an",
+              "title": "耆婆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是欲听闻正法者，但不劝导他人正法之听闻；",
+              "score": 19.681102085134107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.26&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E6%AC%B2%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E8%80%85%EF%BC%8C%E4%BD%86%E4%B8%8D%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%AD%A3%E6%B3%95%E4%B9%8B%E8%81%BD%E8%81%9E%EF%BC%9B"
+            },
+            {
+              "uid": "an8.26",
+              "collection": "经藏/增支部_an",
+              "title": "耆婆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是欲听闻正法者，也劝导他人正法之听闻；",
+              "score": 19.681102085134107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.26&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E6%AC%B2%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E8%80%85%EF%BC%8C%E4%B9%9F%E5%8B%B8%E5%B0%8E%E4%BB%96%E4%BA%BA%E6%AD%A3%E6%B3%95%E4%B9%8B%E8%81%BD%E8%81%9E%EF%BC%9B"
+            },
+            {
+              "uid": "mn75",
+              "collection": "经藏/中部_mn",
+              "title": "马更地亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "因此你将听闻正法；",
+              "score": 18.217151338520253,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn75&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%A0%E6%AD%A4%E4%BD%A0%E5%B0%87%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%EF%BC%9B"
+            },
+            {
+              "uid": "an5.250",
+              "collection": "经藏/增支部_an",
+              "title": "净信人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当不听闻正法时，他从正法衰退，比丘们！",
+              "score": 17.59709685469859,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.250&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E4%B8%8D%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%99%82%EF%BC%8C%E4%BB%96%E5%BE%9E%E6%AD%A3%E6%B3%95%E8%A1%B0%E9%80%80%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.250",
+              "collection": "经藏/增支部_an",
+              "title": "净信人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当不听闻正法时，他从正法衰退，比丘们！",
+              "score": 17.59709685469859,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.250&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E4%B8%8D%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%99%82%EF%BC%8C%E4%BB%96%E5%BE%9E%E6%AD%A3%E6%B3%95%E8%A1%B0%E9%80%80%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.250",
+              "collection": "经藏/增支部_an",
+              "title": "净信人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当不听闻正法时，他从正法衰退，比丘们！",
+              "score": 17.59709685469859,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.250&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E4%B8%8D%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E6%99%82%EF%BC%8C%E4%BB%96%E5%BE%9E%E6%AD%A3%E6%B3%95%E8%A1%B0%E9%80%80%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "如理作意",
+          "hits": [
+            {
+              "uid": "sn35.158",
+              "collection": "经藏/相应部_sn",
+              "title": "自身内无常的欢喜的灭尽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们要如理作意意，你们要如实认知意之无常。",
+              "score": 15.292704890114535,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.158&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%84%8F%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E5%AF%A6%E8%AA%8D%E7%9F%A5%E6%84%8F%E4%B9%8B%E7%84%A1%E5%B8%B8%E3%80%82"
+            },
+            {
+              "uid": "sn46.36",
+              "collection": "经藏/相应部_sn",
+              "title": "如理作意经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理作意经",
+              "score": 13.87915386172381,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.36&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E7%B6%93"
+            },
+            {
+              "uid": "sn35.158",
+              "collection": "经藏/相应部_sn",
+              "title": "自身内无常的欢喜的灭尽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘如理作意意，如实认知意之无常，则在意上厌，以欢喜的灭尽而贪灭尽；",
+              "score": 12.625617906428117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.158&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%84%8F%EF%BC%8C%E5%A6%82%E5%AF%A6%E8%AA%8D%E7%9F%A5%E6%84%8F%E4%B9%8B%E7%84%A1%E5%B8%B8%EF%BC%8C%E5%89%87%E5%9C%A8%E6%84%8F%E4%B8%8A%E5%8E%AD%EF%BC%8C%E4%BB%A5%E6%AD%A1%E5%96%9C%E7%9A%84%E6%BB%85%E7%9B%A1%E8%80%8C%E8%B2%AA%E6%BB%85%E7%9B%A1%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.52",
+              "collection": "经藏/相应部_sn",
+              "title": "欢喜的灭尽经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们要如理作意想……比丘们！",
+              "score": 10.105545213338766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.52&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%83%B3%E2%80%A6%E2%80%A6%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理作意遍满者使正念、正知充满；",
+              "score": 9.667463467248973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E9%81%8D%E6%BB%BF%E8%80%85%E4%BD%BF%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%E5%85%85%E6%BB%BF%EF%BC%9B"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理作意遍满者使正念、正知充满；",
+              "score": 9.667463467248973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E9%81%8D%E6%BB%BF%E8%80%85%E4%BD%BF%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%E5%85%85%E6%BB%BF%EF%BC%9B"
+            },
+            {
+              "uid": "an10.62",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理作意遍满者使正念、正知充满；",
+              "score": 9.667463467248973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E9%81%8D%E6%BB%BF%E8%80%85%E4%BD%BF%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%E5%85%85%E6%BB%BF%EF%BC%9B"
+            },
+            {
+              "uid": "mn78",
+              "collection": "经藏/中部_mn",
+              "title": "沙门木地葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断意恶行后，修习意善行；",
+              "score": 9.0528367117707,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E6%84%8F%E6%83%A1%E8%A1%8C%E5%BE%8C%EF%BC%8C%E4%BF%AE%E7%BF%92%E6%84%8F%E5%96%84%E8%A1%8C%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "法随法行",
+          "hits": [
+            {
+              "uid": "kp5",
+              "collection": "经藏/小部_kn",
+              "title": "吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "行正道︰dhammacariyā(法行)是指十善业道。",
+              "score": 9.760689909605814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%A1%8C%E6%AD%A3%E9%81%93%EF%B8%B0dhammacariy%C4%81%28%E6%B3%95%E8%A1%8C%29%E6%98%AF%E6%8C%87%E5%8D%81%E5%96%84%E6%A5%AD%E9%81%93%E3%80%82"
+            },
+            {
+              "uid": "snp2.4",
+              "collection": "经藏/小部_kn",
+              "title": "大吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "行正道︰dhammacariyā(法行)是指十善业道。",
+              "score": 9.760689909605814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp2.4&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%A1%8C%E6%AD%A3%E9%81%93%EF%B8%B0dhammacariy%C4%81%28%E6%B3%95%E8%A1%8C%29%E6%98%AF%E6%8C%87%E5%8D%81%E5%96%84%E6%A5%AD%E9%81%93%E3%80%82"
+            },
+            {
+              "uid": "dn30",
+              "collection": "经藏/长部_dn",
+              "title": "相经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「他在善行上是先导者，在法上是法行的欢喜者，",
+              "score": 9.760689909605814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8C%E4%BB%96%E5%9C%A8%E5%96%84%E8%A1%8C%E4%B8%8A%E6%98%AF%E5%85%88%E5%B0%8E%E8%80%85%EF%BC%8C%E5%9C%A8%E6%B3%95%E4%B8%8A%E6%98%AF%E6%B3%95%E8%A1%8C%E7%9A%84%E6%AD%A1%E5%96%9C%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "mn129",
+              "collection": "经藏/中部_mn",
+              "title": "愚者与贤者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "因为在这里没有法行、正行，善业、福业，比丘们！",
+              "score": 8.41752418185772,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn129&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%A0%E7%82%BA%E5%9C%A8%E9%80%99%E8%A3%A1%E6%B2%92%E6%9C%89%E6%B3%95%E8%A1%8C%E3%80%81%E6%AD%A3%E8%A1%8C%EF%BC%8C%E5%96%84%E6%A5%AD%E3%80%81%E7%A6%8F%E6%A5%AD%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn56.47",
+              "collection": "经藏/相应部_sn",
+              "title": "有孔之轭经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "因为在这里没有法行、正行，善业、福业，比丘们！",
+              "score": 8.41752418185772,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.47&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9B%A0%E7%82%BA%E5%9C%A8%E9%80%99%E8%A3%A1%E6%B2%92%E6%9C%89%E6%B3%95%E8%A1%8C%E3%80%81%E6%AD%A3%E8%A1%8C%EF%BC%8C%E5%96%84%E6%A5%AD%E3%80%81%E7%A6%8F%E6%A5%AD%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an8.5",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这八种世间法随世间转，且世间也随［这］八种世间法转，哪八种呢？",
+              "score": 8.054687029567242,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%8C%E5%93%AA%E5%85%AB%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这八种世间法随世间转，且世间也随［这］八种世间法转，哪八种呢？",
+              "score": 8.054687029567242,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%8C%E5%93%AA%E5%85%AB%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+              "score": 6.977306478833356,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "叹为“不盲目的正见” - 经典出处：《增支部》AN 2.121–122 - 圣典原文：佛陀指出，要生起解脱的出世间正见，有两个绝对必要的条件： > \"Dve'me, bhikkhave, paccayā sammādiṭṭhiyā uppādāya. Katame dve? Parato ca ghoso, yoniso ca manasikāro.\" > “诸比丘！有两种缘使正见生起。哪两种？他音（来自他人的教导）与如理作意。” - 圣典评价：上座部极度随喜这种精进，因为没有对巴利三藏、法义（如四圣谛、十二因缘、五蕴）的精进修习，修行人就会变成“盲人摸象”。 ## 2. 赞叹为“法随法行”的圣者资粮 - 经典出处：《相应部·入流相应》 - 圣典原文：“sappurisa-saṃsevo saddhammasavanaṃ yoniso manasikāro dhammānudhammapaṭipatti 亲近善知识 听闻正法 如理作意 法随法行” - 佛陀将“常随法学、精进思惟”列为证得初果须陀洹（预流果）的四大必备条件之一（四预流支：亲近善士、听闻正法、如理作意、法随法行）。上座部评价这种人是“正走在圣人的阶梯上”，他的智力精进正在为他未来在打坐中“瞬间证悟”疯狂地刷经验值（累",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "(1)）**：讲述菩萨先后参访阿罗罗‧迦罗摩（教无所有处定）与郁陀罗‧罗摩子（教非想非非想处定），发现\"此法不导向厌、离贪、灭、寂静、证智、正觉、涅槃\"，于是离开二师，独自摸索。 2. **萨遮迦大经（II,3(2)）**：补足了苦行的细节，并生动描绘证悟过程——四禅、三明（宿命明、天眼明、漏尽明）。经中著名的\"三喻\"（湿木喻、远离水的湿木喻、干木喻）说明唯有彻底断除欲贪，才能证得无上正觉。 3. **缘起的发现**：佛陀证悟之夜，以\"如理作意\"层层逆观老死之因，最终发现缘起法——这才是佛教哲学的基石。菩提比丘特别强调：**缘起并非\"赞扬万物相互联系\"的抒情概念，而是精确表达苦生起与灭去所依赖的因缘条件**。 ### 梵天劝请与初转法轮 证悟之后，佛陀犹豫是否说法，此时\"大梵天王 Brahmā Sahampati 突然从天而降\"，请佛陀为\"眼里有少许尘垢的\"众生说法——这一情节可以按字面理解，也可以视为佛陀内心挣扎的象征，菩提比丘认为两层意义可能同时成立。佛陀最终决定向五比丘说法，宣说中道（八正道）与四圣谛。转法轮经记载，佛陀说法完毕时，**\"大地震动，空中出现比天神更耀眼的巨光\"**，诸天辗转传诵佳音；而全经最平实的结尾，却只是佛陀简短地祝贺憍陈如尊者证得法眼净——由绚烂归于平淡，象征正法明灯自此",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "；思则催促其它心所各作其事，如木匠助手或前方采花者，是最忙碌的心所。 **14个不善心所：** - 4遍一切不善心心所：痴、无惭、无愧、掉举 - 3贪因组：贪、邪见、我慢 - 4嗔因组：嗔、嫉、悭、恶作 - 1昏沉与睡眠：昏沉、睡眠（各算一个） - 1疑：犹豫不决 **25个美心所：** 包括19遍一切美心心所（信、念、惭、愧、无贪、无嗔等）、3离心所（正语、正业、正命）、2无量心所（悲、喜）、1慧根。 #### 三、心路过程与如理作意 名业处并非笼统地**「看念头」**，而是依六门心路过程逐刹那辨别名法。以眼门为例，色所缘同时撞击眼净色与有分意界时，眼门心路与后续意门心路生起；禅修者须辨别五门转向、眼识、领受、推度、确定、速行、彼所缘，以及随后的意门转向、速行、彼所缘。 关键在于转向心与确定心如何作意：若把所缘确定为色所缘、色法、无常、苦、无我或不净，即属如理作意，善速行心路生起；若是不如理作意，则不善速行心路生起。这使禅修者能亲自辨别善、不善名法如何依所缘与作意而起。 #### 四、内外观与四念处的会通 名业处还强调内观与外观必须轮流。只观内五蕴不能证道，只观外五蕴也不能证道；只观色法或只观名法，同样不能完成至出起观。禅修者要在内、外、名、色之间反复辨别，使观智强而有力。 本章最后",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "件，因为食使它得到巩固。”（XIX.4） #### 3. 名身的条件（XIX.5） > “由于眼和色，眼识生起。”（S II 72；M I 111） 名法（心识）总是因条件而生——眼＋色对象 → 眼识；耳＋声 → 耳识，等等。每次认知事件都是条件性的，没有一个独立存在的\"认识者\"。 #### 4. 五种辨别方式（XIX.7-18） **(a) 一般与特殊条件**： - 名法的条件：普遍条件（六内处和六外处）和非普遍条件（如信、如理作意等） - 色法的条件：四重——业、识、温度、食 **(b) 逆序缘起观**（XIX.11）： > “这称为诸行的老死；有生时便有老死，有有时便有生，有取时便有有……有行时便有识，有无明时便有行。”（XIX.11） **(c) 顺序缘起观**（XIX.12）： \"So, with ignorance as condition there are formations\" (M I 261) **(d) 通过业轮与业果轮**（XIX.13-18）： **过去业过程中的五个成分**（XIX.13）： 1. 痴（delusion）= 无明 2. 积集（accumulation）= 行 3. 执取（attachment）= 爱 4. 执握（embracing）= 取",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "ā huraṁ vā…** \"无论此世、他世有何财富，乃至天界有何殊胜珍宝，都没有任何一种能与如来相比。佛陀之中具足如此殊胜之宝；以此真实，愿得安乐！\" 阿难先绕三重城墙诵前三偈、以佛钵净水遍洒城中；非人纷纷退散，疫病随之平息。佛陀随后亲自宣说完整十七偈，依次赞叹佛、法、僧以及四双八辈圣者的殊胜功德，并连续七日重复开示。原书又详论护卫经能否生效，不只取决于声音：诵者须具慈心、发音准确、理解经义而不求世俗回报；听者也须具信、持戒、专注与如理作意。如此，《宝经》不是脱离德行和理解的机械咒语，而是以三宝真实功德为依止的谛语。 --- ## 第二十二章（乙）：罗希尼河之争、五百比丘与大会 ### 罗希尼河之争与诸则本生 释迦、拘利两族因罗希尼河灌溉用水分配不均而口角升级，终至双方陈兵对峙、蓄势待发。佛陀于当日清晨遍观世间，预见亲往调停可化干戈为玉帛，遂独自一人于黄昏时分乘虚空而至，端坐两军之间，身放青光令天色骤暗，令双方心生悚惧而息兵罢战。 佛陀依次问：\"水价值几何？\"\"微不足道。\"\"土地价值几何？\"\"不可估量。\"\"刹帝利的生命价值几何？\"\"不可估量。\"遂教诲：\"为何要为区区之水，毁掉无价的生命？\"随即接连宣说多则本生：树神与熊因挑拨而两败俱伤，警示不可轻率结怨；兔子听见果实坠叶，误以为大地崩裂，群",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "heading": "站内搜索命中",
+          "text": "彼；虽杀恒河沙，相等阿罗汉，谤法者罪障，仍是大于彼。」 📚 **巴利三藏评析**：巴利传统中毁谤正法确是重大过失；但本论把大乘、金刚乘等一切教法都纳入“佛语教授”的整体框架，因此其“谤法”范围明显大于上座部的经典范围。上座部所说正法主要指四圣谛、八正道、缘起等早期教义，不包括后期密续。 --- ## 【三】听者说者法轨评析 ### 六想框架的评析 > 「安立自如病者想……殷重受持作医病想」 📚 **巴利三藏评析**：比丘应以如理作意（yoniso manasikāra）听法，此框架与AN 4.163等经文的「法随法行」（dhammānudhammappaṭipatti）精神一致，可接受。但「于说法者生起似佛想」，若超越善知识之意，将上师神格化，则与巴利传统中「唯以法为洲」（SN 22.43 dhammadīpā）的精神有张力。 📖 **清净道论评析**：Vism. 第三章取业处时，强调弟子择师须考察上师是否亲证三摩地，并非一味恭敬，仍有辨别。 --- ## 【四】依止善知识评析——最关键评析 ### 「于上师起如佛想」之核心评析 > 「凡能调伏他人之上师，必先能调伏自续……于自上师亦复如是，一切过失相全舍，而生分别功德心。」 「若是根本上师，不论有无大小过失，于彼断除分别罪缘心，否",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F&scope=site",
+          "query": "如理作意"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g13",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 13,
+      "label": "四入流支",
+      "members": "善人的结交、听闻正法、如理作意、法随法行",
+      "member_items": [
+        "善人的结交",
+        "听闻正法",
+        "如理作意",
+        "法随法行"
+      ],
+      "dn34_status": null,
+      "source_text": "四入流支：善人的结交、听闻正法、如理作意、法随法行。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%85%A5%E6%B5%81%E6%94%AF&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%96%84%E4%BA%BA%E7%9A%84%E7%B5%90%E4%BA%A4%E3%80%81%E8%81%BD%E8%81%9E%E6%AD%A3%E6%B3%95%E3%80%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%81%E6%B3%95%E9%9A%A8%E6%B3%95%E8%A1%8C"
+    }
+  ]
+}

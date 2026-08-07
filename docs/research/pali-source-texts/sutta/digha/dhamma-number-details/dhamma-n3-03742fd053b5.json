@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-03742fd053b5",
+    "number": 3,
+    "label": "三无上",
+    "member_items": [
+      "看见无上",
+      "道迹无上",
+      "解脱无上"
+    ],
+    "group_ids": [
+      "dn33-n3-g49"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三无上",
+      "看见无上",
+      "道迹无上",
+      "解脱无上"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三无上」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：看见无上、道迹无上、解脱无上。[1]\n\n## 所含各法\n### 看见无上\n经文将「看见无上」列为「三无上」的一个成员。Early Buddhist 用该名词检索时，在《经》命中：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！。[3]\n### 道迹无上\n经文将「道迹无上」列为「三无上」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三无上：看见无上、道迹无上、解脱无上。。[1]\n### 解脱无上\n经文将「解脱无上」列为「三无上」的一个成员。Early Buddhist 用该名词检索时，在《南传大般湼槃经》命中：戒定慧与无上解脱．。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三无上",
+          "text": "三无上：看见无上、道迹无上、解脱无上。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三无上：看见无上、道迹无上、解脱无上。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.140",
+          "text": "无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.140&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn16",
+          "text": "戒定慧与无上解脱．",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E6%88%92%E5%AE%9A%E6%85%A7%E8%88%87%E7%84%A1%E4%B8%8A%E8%A7%A3%E8%84%AB%EF%BC%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.40",
+          "text": "自增上、世间增上、法增上。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.40&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%A2%9E%E4%B8%8A%E3%80%81%E4%B8%96%E9%96%93%E5%A2%9E%E4%B8%8A%E3%80%81%E6%B3%95%E5%A2%9E%E4%B8%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn6",
+          "text": "更上的心能了知为「更上的心」，无更上的心能了知为「无更上的心」；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn6&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn10",
+          "text": "了知『更上的心』为更上的心，了知『无更上的心』为无更上的心；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BA%86%E7%9F%A5%E3%80%8E%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%EF%BC%8C%E4%BA%86%E7%9F%A5%E3%80%8E%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn12",
+          "text": "更上的心了知为「更上的心」，无更上的心了知为「无更上的心」；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn73",
+          "text": "更上的心能了知为「更上的心」，无更上的心能了知为「无更上的心」；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn77",
+          "text": "更上的心了知为『更上的心』，无更上的心了知为『无更上的心』；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn77&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.30",
+          "text": "「凡得到无上的看见，无上的听闻，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%87%A1%E5%BE%97%E5%88%B0%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.30",
+          "text": "有这六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三无上",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三无上：看见无上、道迹无上、解脱无上。",
+              "score": 22.211191014693537,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "an3.40",
+              "collection": "经藏/增支部_an",
+              "title": "增上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自增上、世间增上、法增上。",
+              "score": 6.764113116932362,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.40&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%A2%9E%E4%B8%8A%E3%80%81%E4%B8%96%E9%96%93%E5%A2%9E%E4%B8%8A%E3%80%81%E6%B3%95%E5%A2%9E%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "mn6",
+              "collection": "经藏/中部_mn",
+              "title": "希望经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更上的心能了知为「更上的心」，无更上的心能了知为「无更上的心」；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn6&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "了知『更上的心』为更上的心，了知『无更上的心』为无更上的心；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BA%86%E7%9F%A5%E3%80%8E%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%EF%BC%8C%E4%BA%86%E7%9F%A5%E3%80%8E%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%EF%BC%9B"
+            },
+            {
+              "uid": "mn12",
+              "collection": "经藏/中部_mn",
+              "title": "师子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更上的心了知为「更上的心」，无更上的心了知为「无更上的心」；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+            },
+            {
+              "uid": "mn73",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更上的心能了知为「更上的心」，无更上的心能了知为「无更上的心」；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+            },
+            {
+              "uid": "mn77",
+              "collection": "经藏/中部_mn",
+              "title": "色古巫大夷大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更上的心了知为『更上的心』，无更上的心了知为『无更上的心』；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn77&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%9B"
+            },
+            {
+              "uid": "mn77",
+              "collection": "经藏/中部_mn",
+              "title": "色古巫大夷大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更上的心了知为『更上的心』，无更上的心了知为『无更上的心』；",
+              "score": 6.609620312527319,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn77&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%8C%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8E%E7%84%A1%E6%9B%B4%E4%B8%8A%E7%9A%84%E5%BF%83%E3%80%8F%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "看见无上",
+          "hits": [
+            {
+              "uid": "an6.140",
+              "collection": "经藏/增支部_an",
+              "title": "经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+              "score": 16.3849043484042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.140&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+              "score": 16.3849043484042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「凡得到无上的看见，无上的听闻，",
+              "score": 16.371054476600023,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%87%A1%E5%BE%97%E5%88%B0%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%EF%BC%8C"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+              "score": 16.12997118900151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+            },
+            {
+              "uid": "an6.8",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+              "score": 15.647710293337836,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.8&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为无上的看见，像这样是无上的看见。",
+              "score": 15.576495600745584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，这些是应该被证知的六法。",
+              "score": 15.198503580221924,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E5%85%AD%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为无上的学，像这样是无上的看见、无上的听闻、无上的利得、无上的学。",
+              "score": 13.78160087187901,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "道迹无上",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三无上：看见无上、道迹无上、解脱无上。",
+              "score": 13.71750765577725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "an6.140",
+              "collection": "经藏/增支部_an",
+              "title": "经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+              "score": 10.457185283828638,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.140&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+              "score": 10.457185283828638,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+              "score": 10.335904654408433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+            },
+            {
+              "uid": "an6.8",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+              "score": 10.101591623325886,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.8&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，这些是应该被证知的六法。",
+              "score": 9.877666759860826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E5%85%AD%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为无上的服侍，像这样是无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍。",
+              "score": 9.772886372438727,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%82"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为无上的学，像这样是无上的看见、无上的听闻、无上的利得、无上的学。",
+              "score": 9.466541373772866,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "解脱无上",
+          "hits": [
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "南传大般湼槃经",
+              "author": "巴宙",
+              "translator": "pachow",
+              "text": "戒定慧与无上解脱．",
+              "score": 17.84555439156336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E6%88%92%E5%AE%9A%E6%85%A7%E8%88%87%E7%84%A1%E4%B8%8A%E8%A7%A3%E8%84%AB%EF%BC%8E"
+            },
+            {
+              "uid": "dn28",
+              "collection": "经藏/长部_dn",
+              "title": "能净信经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "关于他人解脱智，这是无上的。",
+              "score": 13.149778035419573,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%97%9C%E6%96%BC%E4%BB%96%E4%BA%BA%E8%A7%A3%E8%84%AB%E6%99%BA%EF%BC%8C%E9%80%99%E6%98%AF%E7%84%A1%E4%B8%8A%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an4.1",
+              "collection": "经藏/增支部_an",
+              "title": "随觉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「戒、定、慧，以及无上的解脱，",
+              "score": 12.347805092392914,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%88%92%E3%80%81%E5%AE%9A%E3%80%81%E6%85%A7%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%84%A1%E4%B8%8A%E7%9A%84%E8%A7%A3%E8%84%AB%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三无上：看见无上、道迹无上、解脱无上。",
+              "score": 11.874123194447916,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "mn35",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样心解脱的比丘有三种无上的具备：见无上、行无上、解脱无上。",
+              "score": 11.406878818052842,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn35&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E5%BF%83%E8%A7%A3%E8%84%AB%E7%9A%84%E6%AF%94%E4%B8%98%E6%9C%89%E4%B8%89%E7%A8%AE%E7%84%A1%E4%B8%8A%E7%9A%84%E5%85%B7%E5%82%99%EF%BC%9A%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E8%A1%8C%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "an6.140",
+              "collection": "经藏/增支部_an",
+              "title": "经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆，比丘们！",
+              "score": 10.457185283828638,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.140&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "六无上：无上的看见、无上的听闻、无上的利得、无上的学、无上的服侍、无上的回忆。",
+              "score": 10.457185283828638,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AD%E7%84%A1%E4%B8%8A%EF%BC%9A%E7%84%A1%E4%B8%8A%E7%9A%84%E7%9C%8B%E8%A6%8B%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E8%81%BD%E8%81%9E%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%88%A9%E5%BE%97%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%AD%B8%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E6%9C%8D%E4%BE%8D%E3%80%81%E7%84%A1%E4%B8%8A%E7%9A%84%E5%9B%9E%E6%86%B6%E3%80%82"
+            },
+            {
+              "uid": "sn4.4",
+              "collection": "经藏/相应部_sn",
+              "title": "魔网经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以如理作意、如理正勤，我的无上解脱已到达、已作证，比丘们！",
+              "score": 10.378246249935351,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn4.4&lang=zh&q=%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%A5%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%81%E5%A6%82%E7%90%86%E6%AD%A3%E5%8B%A4%EF%BC%8C%E6%88%91%E7%9A%84%E7%84%A1%E4%B8%8A%E8%A7%A3%E8%84%AB%E5%B7%B2%E5%88%B0%E9%81%94%E3%80%81%E5%B7%B2%E4%BD%9C%E8%AD%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g49",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 49,
+      "label": "三无上",
+      "members": "看见无上、道迹无上、解脱无上",
+      "member_items": [
+        "看见无上",
+        "道迹无上",
+        "解脱无上"
+      ],
+      "dn34_status": null,
+      "source_text": "三无上：看见无上、道迹无上、解脱无上。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%84%A1%E4%B8%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%8B%E8%A6%8B%E7%84%A1%E4%B8%8A%E3%80%81%E9%81%93%E8%B7%A1%E7%84%A1%E4%B8%8A%E3%80%81%E8%A7%A3%E8%84%AB%E7%84%A1%E4%B8%8A"
+    }
+  ]
+}

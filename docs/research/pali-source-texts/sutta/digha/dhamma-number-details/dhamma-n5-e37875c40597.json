@@ -1,0 +1,633 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-e37875c40597",
+    "number": 5,
+    "label": "五下分结",
+    "member_items": [
+      "有身见",
+      "疑",
+      "戒禁取",
+      "欲的意欲",
+      "恶意"
+    ],
+    "group_ids": [
+      "dn33-n5-g7"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五下分结",
+      "有身见",
+      "戒禁取",
+      "欲的意欲",
+      "恶意"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五下分结」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有身见、疑、戒禁取、欲的意欲、恶意。[1]\n\n## 所含各法\n### 有身见\n经文将「有身见」列为「五下分结」的一个成员。Early Buddhist 用该名词检索时，在《毘陀罗小经》命中：怎样没有有身见呢？。[3]\n### 疑\n经文将「疑」列为「五下分结」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[1]\n### 戒禁取\n经文将「戒禁取」列为「五下分结」的一个成员。Early Buddhist 用该名词检索时，在《玛鲁迦大经》命中：他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；。[4]\n### 欲的意欲\n经文将「欲的意欲」列为「五下分结」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘离欲的意欲生起离欲的热恼；。[5]\n### 恶意\n经文将「恶意」列为「五下分结」的一个成员。Early Buddhist 用该名词检索时，在《婆蹉大经》命中：恶意是不善的，无恶意是善的；。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五下分结",
+          "text": "五下分结：有身见、疑、戒禁取、欲的意欲、恶意。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E7%96%91%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E3%80%81%E6%83%A1%E6%84%8F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.13",
+          "text": "五下分结、五上分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%81%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn44",
+          "text": "怎样没有有身见呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%B2%92%E6%9C%89%E6%9C%89%E8%BA%AB%E8%A6%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn64",
+          "text": "他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E4%B8%8D%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E4%BB%96%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E5%90%AB%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.12",
+          "text": "缘离欲的意欲生起离欲的热恼；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E7%9A%84%E7%86%B1%E6%83%B1%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn73",
+          "text": "恶意是不善的，无恶意是善的；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.67",
+          "text": "这是五下分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.67&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.13",
+          "text": "这是五下分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.180",
+          "text": "这些是五下分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.180&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.13",
+          "text": "什么是五下分结呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn64",
+          "text": "我忆持世尊所教导的五下分结。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.56",
+          "text": "波估那比丘的心未从五下分结解脱，当他听了说法后，心已从五下分结解脱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.56&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%B3%A2%E4%BC%B0%E9%82%A3%E6%AF%94%E4%B8%98%E7%9A%84%E5%BF%83%E6%9C%AA%E5%BE%9E%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E8%A7%A3%E8%84%AB%EF%BC%8C%E7%95%B6%E4%BB%96%E8%81%BD%E4%BA%86%E8%AA%AA%E6%B3%95%E5%BE%8C%EF%BC%8C%E5%BF%83%E5%B7%B2%E5%BE%9E%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E8%A7%A3%E8%84%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn64",
+          "text": "这是舍断五下分结的道与道迹。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%8D%A8%E6%96%B7%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E9%81%93%E8%88%87%E9%81%93%E8%B7%A1%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "diṭṭhi-visuddhi）的核心成就。以相（lakkhana）、味（rasa）、现起（paccupaṭṭhāna）、足处（padaṭṭhāna）而正确理解名色，名为见清净，即正见成就的标志。 **正见与无见的对比** 无正见（邪见，micchā-diṭṭhi）是随眠层面最根本的缠缚之一。身见（sakkāya-diṭṭhi）是最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "| 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无为、寂静、常，但绝不说涅槃是我。涅槃常，不等于有常我。** ## 1. 《论事》全书异说总纲 《论事》是上座部阿毗达磨中针对部派异说的论辩集。它不是中立宗教学目录，而是以分别说部/上座部立场审查佛教内部争论。核心方法是：把对方命题逼到与无我、刹那生灭、业果、圣道、涅槃、戒定慧相冲突处。 ### 1.1 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "悟是什么\"这个最初的提问，首尾圆满呼应。 ### 四双八辈：圣者的阶梯 每个果位分为\"道\"（修道中）与\"果\"（已证得）两阶段，合称四双八辈：趣向入流→入流果→趣向一来→一来果→趣向不还→不还果→趣向阿罗汉→阿罗汉。前七类统称\"有学\"（仍在受训练），阿罗汉为\"无学\"（训练已圆满）。 十结（烦恼的十种束缚）的断除进度，是划分四果最精确的标尺： |圣弟子种类|所断之结|所剩之轮回类型| |---|---|---| |入流果|身见、疑、戒禁取（三结）|人道或天道中最多轮回七次| |一来果|三结已断，并削弱欲贪、嗔恚、无明|在欲界再轮回一次| |不还果|加断欲贪、嗔恚（合称五下分结）|投生到色界净居天，不再返欲界| |阿罗汉|加断色贪、无色贪、傲慢、掉举、无明（五上分结）|不再轮回| ### 两种根性的入流之道：随法行者与随信行者 在证得初果之前，尚有\"随法行者\"（以智慧为主）与\"随信行者\"（以信仰为主）的区分——菩提比丘指出，这说明**同样走向初果的路上，行者可依主要根性（慧根或信根）而有不同的侧重**，这也呼应了第三章\"信与慧\"的讨论。 ### 在家与出家：果位并非出家人的专利 菩提比丘特别澄清一个常见的迷思：虽然通常证得阿罗汉果的多是比丘、比丘尼，但这并不表示在家弟子绝无可能证得阿罗汉果。经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "信（作为根和力） - 以四种方式找到的：定（作为根、力、觉支和道支） - 以五种方式找到的：慧（作为神足、根、力、觉支和道支） - 以八种方式找到的：正念（作为四念处、根、力、觉支和道支） - 以九种方式找到的：精进（作为四正勤、神足、根、力、觉支和道支） #### 2.2 应被断除的状态及断除之行为（XXII.47-91） 本节系统列出通过四道智断除的诸烦恼群： **结（saṃyojana，十种）**： - 五下分结：身见、疑、戒禁取见、欲贪、嗔恚 - 五上分结：色贪、无色贪、慢、掉举、无明 **烦恼（kilesa，十种）**：贪、嗔、痴、慢、邪见、疑、昏沉、掉举、无惭、无愧 **邪道（micchā-magga，十种）**：邪见、邪思维、邪语、邪业、邪命、邪精进、邪念、邪定、邪智、邪解脱 **各道断除的具体内容**（XXII.64-76）： - **第一道（入流道）**断：身见、疑、戒禁取见；在烦恼分类中断除邪见与疑，并断除相应的错误见、错误语、错误业、错误命等项目 - **第二道（一来道）**进一步断除足以导致堕落的粗重欲贪与嗔恚；其余较粗的感官贪与嗔恚由第二道处理 - **第三道（不还道）**断除残余的微细感官贪与嗔恚，以及相应的潜在倾向 - **第四道（阿罗汉道）**断：五上分结；贪",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/patipada-summary.md",
+          "text": "师的幻象——一旦表演结束，一切消失无踪。附录并特别澄清\"想（saññā）\"应译为\"记忆\"而非流行的\"知觉（perception）\"，理由是后者混淆了整个心识运作与单一蕴的界限。 **十三头陀支**：完整列出十三支苦行的具体内容（着补丁衣、只穿三衣、托钵乞食、次第乞食不越户、日中一食、一钵进食、饱食即止、住林间、住树下、露地住、住坟间、随处而安、常坐不卧），可与第六章的深度阐述对照参看。 **十结（Saṁyojana）**：身见、疑、戒禁取、欲贪、嗔恚、色界贪、无色界贪、慢、掉举、无明，共十项束缚众生轮回的心结，并说明四道（须陀洹、斯陀含、阿那含、阿罗汉）如何依次断除，可视为全书所述一切\"锻炼心\"之修行最终指向的教理坐标。 --- ## 总结：贯穿全书的三条主线 通读二十章，可见全书虽以人物传记与灵异事迹为外壳，内里实则贯穿三条彼此交织的主线： **其一，\"心是唯一战场\"**——从第一章\"业处\"到第二十章\"缘起法的两个面向\"，反复强调修行的成败不在森林、洞窟、老虎或鬼神，而在这一颗心是否被正念正智所照见、所降伏。 **其二，\"以恐惧、痛苦、艰困为磨刀石\"**——第一、二、五章的老虎调心、第四章的悬崖打坐、第十一章的静坐苦受、第十九章阿姜布罗姆的荒野行脚，皆是同一逻辑的不同变奏：唯有逼到绝境，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五下分结",
+          "hits": [
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五下分结、五上分结。",
+              "score": 26.267665981700713,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%81%E4%BA%94%E4%B8%8A%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "an9.67",
+              "collection": "经藏/增支部_an",
+              "title": "下分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五下分结。",
+              "score": 25.428720171963867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.67&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五下分结。",
+              "score": 25.428720171963867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "sn45.180",
+              "collection": "经藏/相应部_sn",
+              "title": "下分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五下分结。",
+              "score": 25.428720171963867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.180&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "an10.13",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是五下分结呢？",
+              "score": 24.095119417333095,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.13&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我忆持世尊所教导的五下分结。",
+              "score": 22.894428732619645,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E3%80%82"
+            },
+            {
+              "uid": "an6.56",
+              "collection": "经藏/增支部_an",
+              "title": "波估那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "波估那比丘的心未从五下分结解脱，当他听了说法后，心已从五下分结解脱。",
+              "score": 22.24951287947947,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.56&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%B3%A2%E4%BC%B0%E9%82%A3%E6%AF%94%E4%B8%98%E7%9A%84%E5%BF%83%E6%9C%AA%E5%BE%9E%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E8%A7%A3%E8%84%AB%EF%BC%8C%E7%95%B6%E4%BB%96%E8%81%BD%E4%BA%86%E8%AA%AA%E6%B3%95%E5%BE%8C%EF%BC%8C%E5%BF%83%E5%B7%B2%E5%BE%9E%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E8%A7%A3%E8%84%AB%E3%80%82"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是舍断五下分结的道与道迹。",
+              "score": 21.8077219934325,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%8D%A8%E6%96%B7%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E9%81%93%E8%88%87%E9%81%93%E8%B7%A1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有身见",
+          "hits": [
+            {
+              "uid": "mn44",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样没有有身见呢？",
+              "score": 18.81904783224125,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%B2%92%E6%9C%89%E6%9C%89%E8%BA%AB%E8%A6%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn35.136",
+              "collection": "经藏/相应部_sn",
+              "title": "在色中欢乐经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有身之灭，圣者们见安乐，",
+              "score": 15.774689114442323,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.136&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%EF%BC%8C%E8%81%96%E8%80%85%E5%80%91%E8%A6%8B%E5%AE%89%E6%A8%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当知、见色为苦的时，有身见被舍断；",
+              "score": 15.691364591618552,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E3%80%81%E8%A6%8B%E8%89%B2%E7%82%BA%E8%8B%A6%E7%9A%84%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当知、见眼为苦的时，有身见被舍断；",
+              "score": 15.210125122581104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E3%80%81%E8%A6%8B%E7%9C%BC%E7%82%BA%E8%8B%A6%E7%9A%84%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当这样知、这样见时，有身见被舍断。",
+              "score": 15.065405500628138,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E9%80%99%E6%A8%A3%E7%9F%A5%E3%80%81%E9%80%99%E6%A8%A3%E8%A6%8B%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当知、见眼识为苦的时，有身见被舍断；",
+              "score": 15.058023871355294,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E3%80%81%E8%A6%8B%E7%9C%BC%E8%AD%98%E7%82%BA%E8%8B%A6%E7%9A%84%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当知、见眼触为苦的时，有身见被舍断；",
+              "score": 15.058023871355294,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E7%9F%A5%E3%80%81%E8%A6%8B%E7%9C%BC%E8%A7%B8%E7%82%BA%E8%8B%A6%E7%9A%84%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.166",
+              "collection": "经藏/相应部_sn",
+              "title": "有身见之舍断经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当如何知、如何见时，有身见被舍断呢？",
+              "score": 14.487472028448135,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.166&lang=zh&q=%E6%9C%89%E8%BA%AB%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E5%A6%82%E4%BD%95%E7%9F%A5%E3%80%81%E5%A6%82%E4%BD%95%E8%A6%8B%E6%99%82%EF%BC%8C%E6%9C%89%E8%BA%AB%E8%A6%8B%E8%A2%AB%E6%8D%A8%E6%96%B7%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "戒禁取",
+          "hits": [
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；",
+              "score": 11.353365906714975,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E4%B8%8D%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E4%BB%96%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E5%90%AB%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心被戒禁取缠缚、征服，不如实了知已生起的戒禁取之出离，戒禁取成为他的惯习而未被排除，则它是下分结；",
+              "score": 10.95867110638322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E6%88%92%E7%A6%81%E5%8F%96%E6%88%90%E7%82%BA%E4%BB%96%E7%9A%84%E6%85%A3%E7%BF%92%E8%80%8C%E6%9C%AA%E8%A2%AB%E6%8E%92%E9%99%A4%EF%BC%8C%E5%89%87%E5%AE%83%E6%98%AF%E4%B8%8B%E5%88%86%E7%B5%90%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但戒禁取的烦恼潜在趋势潜伏于其中；",
+              "score": 9.974988708483778,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E6%BD%9B%E4%BC%8F%E6%96%BC%E5%85%B6%E4%B8%AD%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三结：有身见、疑、戒禁取。",
+              "score": 9.110144629636737,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%B5%90%EF%BC%9A%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E7%96%91%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取。",
+              "score": 8.383301808814814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%E3%80%82"
+            },
+            {
+              "uid": "an10.76",
+              "collection": "经藏/增支部_an",
+              "title": "三法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断有身见、舍断疑、舍断戒禁取，比丘们！",
+              "score": 8.383301808814814,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.76&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E6%8D%A8%E6%96%B7%E7%96%91%E3%80%81%E6%8D%A8%E6%96%B7%E6%88%92%E7%A6%81%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.76",
+              "collection": "经藏/增支部_an",
+              "title": "三法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断有身见、不舍断疑、不舍断戒禁取，比丘们！",
+              "score": 8.061704708590776,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.76&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E4%B8%8D%E6%8D%A8%E6%96%B7%E7%96%91%E3%80%81%E4%B8%8D%E6%8D%A8%E6%96%B7%E6%88%92%E7%A6%81%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.174",
+              "collection": "经藏/相应部_sn",
+              "title": "取经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲取、见取、戒禁取、［真］我论取，比丘们！",
+              "score": 7.763870019844056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.174&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E5%8F%96%E3%80%81%E8%A6%8B%E5%8F%96%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%EF%BC%BB%E7%9C%9F%EF%BC%BD%E6%88%91%E8%AB%96%E5%8F%96%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "欲的意欲",
+          "hits": [
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘离欲的意欲生起离欲的热恼；",
+              "score": 18.49226044932738,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E7%9A%84%E7%86%B1%E6%83%B1%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘欲的意向生起欲的意欲；",
+              "score": 17.772144443794794,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%EF%BC%9B"
+            },
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有欲的意欲盖；",
+              "score": 17.772144443794794,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他如其未生起欲的意欲之生起而了知，如其已生起欲的意欲之舍断而了知，如其已舍断欲的意欲之未来不生起而了知。",
+              "score": 17.405114653826224,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E5%A6%82%E5%85%B6%E6%9C%AA%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%8D%A8%E6%96%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E6%8D%A8%E6%96%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%9C%AA%E4%BE%86%E4%B8%8D%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%E3%80%82"
+            },
+            {
+              "uid": "an3.121",
+              "collection": "经藏/增支部_an",
+              "title": "清净经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他如其未生起欲的意欲之生起而了知，如其已生起欲的意欲之舍断而了知，如其已舍断欲的意欲之未来不生起而了知。",
+              "score": 17.405114653826224,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.121&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E4%BB%96%E5%A6%82%E5%85%B6%E6%9C%AA%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%8D%A8%E6%96%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E6%8D%A8%E6%96%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%9C%AA%E4%BE%86%E4%B8%8D%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%E3%80%82"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他如其未生起欲的意欲之生起而了知，如其已生起欲的意欲之舍断而了知，如其已舍断欲的意欲之未来不生起而了知。",
+              "score": 17.405114653826224,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E5%A6%82%E5%85%B6%E6%9C%AA%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%8D%A8%E6%96%B7%E8%80%8C%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%A6%82%E5%85%B6%E5%B7%B2%E6%8D%A8%E6%96%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E4%B9%8B%E6%9C%AA%E4%BE%86%E4%B8%8D%E7%94%9F%E8%B5%B7%E8%80%8C%E4%BA%86%E7%9F%A5%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』当没有自己的欲的意欲时，他了知：『我没有自己的欲的意欲。",
+              "score": 17.292645656799333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E7%95%B6%E6%B2%92%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E6%99%82%EF%BC%8C%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%B2%92%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E3%80%82"
+            },
+            {
+              "uid": "an3.121",
+              "collection": "经藏/增支部_an",
+              "title": "清净经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』当没有自己的欲的意欲时，他了知：『我没有自己的欲的意欲。",
+              "score": 17.292645656799333,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.121&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E7%95%B6%E6%B2%92%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E6%99%82%EF%BC%8C%E4%BB%96%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%B2%92%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "恶意",
+          "hits": [
+            {
+              "uid": "mn73",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "恶意是不善的，无恶意是善的；",
+              "score": 9.685143771156106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "an10.169",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "恶意是此岸，无恶意是彼岸；",
+              "score": 9.685143771156106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.169&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "an10.170",
+              "collection": "经藏/增支部_an",
+              "title": "此岸经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "恶意是此岸，无恶意是彼岸；",
+              "score": 9.685143771156106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.170&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对恶意心来说，无恶意是回避的。",
+              "score": 9.375702214452758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E6%83%A1%E6%84%8F%E5%BF%83%E4%BE%86%E8%AA%AA%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘恶意界生起恶意想；",
+              "score": 9.375702214452758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%83%A1%E6%84%8F%E7%95%8C%E7%94%9F%E8%B5%B7%E6%83%A1%E6%84%8F%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘恶意想生起恶意的意向；",
+              "score": 9.375702214452758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%83%A1%E6%84%8F%E6%83%B3%E7%94%9F%E8%B5%B7%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘无恶意界生起无恶意想；",
+              "score": 9.375702214452758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E7%94%9F%E8%B5%B7%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘无恶意想生起无恶意的意向；",
+              "score": 9.375702214452758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%83%A1%E6%84%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E7%94%9F%E8%B5%B7%E7%84%A1%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "diṭṭhi-visuddhi）的核心成就。以相（lakkhana）、味（rasa）、现起（paccupaṭṭhāna）、足处（padaṭṭhāna）而正确理解名色，名为见清净，即正见成就的标志。 **正见与无见的对比** 无正见（邪见，micchā-diṭṭhi）是随眠层面最根本的缠缚之一。身见（sakkāya-diṭṭhi）是最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "| 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无为、寂静、常，但绝不说涅槃是我。涅槃常，不等于有常我。** ## 1. 《论事》全书异说总纲 《论事》是上座部阿毗达磨中针对部派异说的论辩集。它不是中立宗教学目录，而是以分别说部/上座部立场审查佛教内部争论。核心方法是：把对方命题逼到与无我、刹那生灭、业果、圣道、涅槃、戒定慧相冲突处。 ### 1.1 按",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "悟是什么\"这个最初的提问，首尾圆满呼应。 ### 四双八辈：圣者的阶梯 每个果位分为\"道\"（修道中）与\"果\"（已证得）两阶段，合称四双八辈：趣向入流→入流果→趣向一来→一来果→趣向不还→不还果→趣向阿罗汉→阿罗汉。前七类统称\"有学\"（仍在受训练），阿罗汉为\"无学\"（训练已圆满）。 十结（烦恼的十种束缚）的断除进度，是划分四果最精确的标尺： |圣弟子种类|所断之结|所剩之轮回类型| |---|---|---| |入流果|身见、疑、戒禁取（三结）|人道或天道中最多轮回七次| |一来果|三结已断，并削弱欲贪、嗔恚、无明|在欲界再轮回一次| |不还果|加断欲贪、嗔恚（合称五下分结）|投生到色界净居天，不再返欲界| |阿罗汉|加断色贪、无色贪、傲慢、掉举、无明（五上分结）|不再轮回| ### 两种根性的入流之道：随法行者与随信行者 在证得初果之前，尚有\"随法行者\"（以智慧为主）与\"随信行者\"（以信仰为主）的区分——菩提比丘指出，这说明**同样走向初果的路上，行者可依主要根性（慧根或信根）而有不同的侧重**，这也呼应了第三章\"信与慧\"的讨论。 ### 在家与出家：果位并非出家人的专利 菩提比丘特别澄清一个常见的迷思：虽然通常证得阿罗汉果的多是比丘、比丘尼，但这并不表示在家弟子绝无可能证得阿罗汉果。经",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "信（作为根和力） - 以四种方式找到的：定（作为根、力、觉支和道支） - 以五种方式找到的：慧（作为神足、根、力、觉支和道支） - 以八种方式找到的：正念（作为四念处、根、力、觉支和道支） - 以九种方式找到的：精进（作为四正勤、神足、根、力、觉支和道支） #### 2.2 应被断除的状态及断除之行为（XXII.47-91） 本节系统列出通过四道智断除的诸烦恼群： **结（saṃyojana，十种）**： - 五下分结：身见、疑、戒禁取见、欲贪、嗔恚 - 五上分结：色贪、无色贪、慢、掉举、无明 **烦恼（kilesa，十种）**：贪、嗔、痴、慢、邪见、疑、昏沉、掉举、无惭、无愧 **邪道（micchā-magga，十种）**：邪见、邪思维、邪语、邪业、邪命、邪精进、邪念、邪定、邪智、邪解脱 **各道断除的具体内容**（XXII.64-76）： - **第一道（入流道）**断：身见、疑、戒禁取见；在烦恼分类中断除邪见与疑，并断除相应的错误见、错误语、错误业、错误命等项目 - **第二道（一来道）**进一步断除足以导致堕落的粗重欲贪与嗔恚；其余较粗的感官贪与嗔恚由第二道处理 - **第三道（不还道）**断除残余的微细感官贪与嗔恚，以及相应的潜在倾向 - **第四道（阿罗汉道）**断：五上分结；贪",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/forest-monks/patipada-summary.md",
+          "heading": "站内搜索命中",
+          "text": "师的幻象——一旦表演结束，一切消失无踪。附录并特别澄清\"想（saññā）\"应译为\"记忆\"而非流行的\"知觉（perception）\"，理由是后者混淆了整个心识运作与单一蕴的界限。 **十三头陀支**：完整列出十三支苦行的具体内容（着补丁衣、只穿三衣、托钵乞食、次第乞食不越户、日中一食、一钵进食、饱食即止、住林间、住树下、露地住、住坟间、随处而安、常坐不卧），可与第六章的深度阐述对照参看。 **十结（Saṁyojana）**：身见、疑、戒禁取、欲贪、嗔恚、色界贪、无色界贪、慢、掉举、无明，共十项束缚众生轮回的心结，并说明四道（须陀洹、斯陀含、阿那含、阿罗汉）如何依次断除，可视为全书所述一切\"锻炼心\"之修行最终指向的教理坐标。 --- ## 总结：贯穿全书的三条主线 通读二十章，可见全书虽以人物传记与灵异事迹为外壳，内里实则贯穿三条彼此交织的主线： **其一，\"心是唯一战场\"**——从第一章\"业处\"到第二十章\"缘起法的两个面向\"，反复强调修行的成败不在森林、洞窟、老虎或鬼神，而在这一颗心是否被正念正智所照见、所降伏。 **其二，\"以恐惧、痛苦、艰困为磨刀石\"**——第一、二、五章的老虎调心、第四章的悬崖打坐、第十一章的静坐苦受、第十九章阿姜布罗姆的荒野行脚，皆是同一逻辑的不同变奏：唯有逼到绝境，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/lamrim-abridged-summary.md",
+          "heading": "站内搜索命中",
+          "text": "满足）、数数舍身、数数结生、数数高下、无伴独往。 并破世间乐有自性之想：「贪增广故现前乐受，多是于苦渐息灭位，妄起乐觉，全无未作观待除苦，所显自性真乐。」——此即三苦之行苦（samskāra-dukkha）的微细义。 **别苦**：人间（饥渴寒热、生老病死）、非天（嫉妒与天争战）、欲天（死殁五相、高下变易）、上界天（行苦，烦恼随逐）。 ### 四、思维集谛流转次第 **烦恼生起理趣**（十根本烦恼：贪嗔慢无明疑、坏聚见边执见见取戒禁取邪见）： > 「量释论云：有我故知他，执二故起嗔，与此等系属，生一切过患。」 烦恼过患：引《入行论》：「嗔爱等怨敌，全无手足形，非智亦非勇，如何驱役我……大力烦恼敌，须弥若相遇，灰尘且无剩，能刹那掷我。」 **聚集业理**：思业（令心造作之心所意业）、思己业（由彼思发起身语业）。 **死没及结生之理**（五分详述）： - 死缘（三种：寿尽、福尽、不平等） - 死心（善心/不善心/无记心死亡之相） - 从何摄暖（不善从上分、善从下分；俱从心处舍识） - 死后成办中有（中有眼无障隔如天眼，当生何趣即彼身形） - 次于生有受生道理（胎生之颠倒见与贪爱结生） ### 五、能趣解脱道之自性 **以何等身灭除生死**：引《亲友书》，强调须于得暇满身时断生死。出家较",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E7%A6%81%E5%8F%96&scope=site",
+          "query": "戒禁取"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g7",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 7,
+      "label": "五下分结",
+      "members": "有身见、疑、戒禁取、欲的意欲、恶意",
+      "member_items": [
+        "有身见",
+        "疑",
+        "戒禁取",
+        "欲的意欲",
+        "恶意"
+      ],
+      "dn34_status": null,
+      "source_text": "五下分结：有身见、疑、戒禁取、欲的意欲、恶意。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E8%A6%8B%E3%80%81%E7%96%91%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E3%80%81%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E3%80%81%E6%83%A1%E6%84%8F"
+    }
+  ]
+}

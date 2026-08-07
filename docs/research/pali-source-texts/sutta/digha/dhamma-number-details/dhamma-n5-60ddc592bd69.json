@@ -1,0 +1,666 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-60ddc592bd69",
+    "number": 5,
+    "label": "五盖",
+    "member_items": [
+      "欲的意欲盖",
+      "恶意盖",
+      "惛沈睡眠盖",
+      "掉举后悔盖",
+      "疑惑盖"
+    ],
+    "group_ids": [
+      "dn33-n5-g6",
+      "dn34-n5-g4"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "五盖",
+      "欲的意欲盖",
+      "恶意盖",
+      "惛沈睡眠盖",
+      "掉举后悔盖",
+      "疑惑盖"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五盖」属于 5 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。[1]\n- DN34：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。[2]\n\n## 所含各法\n### 欲的意欲盖\n经文将「欲的意欲盖」列为「五盖」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有欲的意欲盖；。[4]\n### 恶意盖\n经文将「恶意盖」列为「五盖」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有恶意盖；。[5]\n### 惛沈睡眠盖\n经文将「惛沈睡眠盖」列为「五盖」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有惛沈睡眠盖；。[6]\n### 掉举后悔盖\n经文将「掉举后悔盖」列为「五盖」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有掉举后悔盖；。[7]\n### 疑惑盖\n经文将「疑惑盖」列为「五盖」的一个成员。Early Buddhist 用该名词检索时，在《障碍与盖经》命中：那时没有疑惑盖。。[8]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五盖",
+          "text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 五盖",
+          "text": "（四）哪些是应该被舍断的五法呢？五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，这些是应该被舍断的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn99",
+          "text": "这些是五盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn99&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有欲的意欲盖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有恶意盖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%83%A1%E6%84%8F%E8%93%8B%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有惛沈睡眠盖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有掉举后悔盖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.38",
+          "text": "那时没有疑惑盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.64",
+          "text": "这是五盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.178",
+          "text": "这些是五盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.61",
+          "text": "我说：五盖是有食物的，非无食物的，而什么是五盖之食物呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E8%AA%AA%EF%BC%9A%E4%BA%94%E8%93%8B%E6%98%AF%E6%9C%89%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E9%9D%9E%E7%84%A1%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%93%8B%E4%B9%8B%E9%A3%9F%E7%89%A9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.62",
+          "text": "我说：五盖是有食物的，非无食物的，而什么是五盖之食物呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E8%AA%AA%EF%BC%9A%E4%BA%94%E8%93%8B%E6%98%AF%E6%9C%89%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E9%9D%9E%E7%84%A1%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%93%8B%E4%B9%8B%E9%A3%9F%E7%89%A9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.61",
+          "text": "应该回答：『五盖。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E5%9B%9E%E7%AD%94%EF%BC%9A%E3%80%8E%E4%BA%94%E8%93%8B%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五盖",
+          "hits": [
+            {
+              "uid": "mn99",
+              "collection": "经藏/中部_mn",
+              "title": "苏玻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五盖。",
+              "score": 10.617811624171036,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn99&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an9.64",
+              "collection": "经藏/增支部_an",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五盖。",
+              "score": 10.617811624171036,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn45.178",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五盖。",
+              "score": 10.617811624171036,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说：五盖是有食物的，非无食物的，而什么是五盖之食物呢？",
+              "score": 9.222768886728478,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E8%AA%AA%EF%BC%9A%E4%BA%94%E8%93%8B%E6%98%AF%E6%9C%89%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E9%9D%9E%E7%84%A1%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%93%8B%E4%B9%8B%E9%A3%9F%E7%89%A9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an10.62",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我说：五盖是有食物的，非无食物的，而什么是五盖之食物呢？",
+              "score": 9.222768886728478,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E8%AA%AA%EF%BC%9A%E4%BA%94%E8%93%8B%E6%98%AF%E6%9C%89%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E9%9D%9E%E7%84%A1%E9%A3%9F%E7%89%A9%E7%9A%84%EF%BC%8C%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%93%8B%E4%B9%8B%E9%A3%9F%E7%89%A9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该回答：『五盖。",
+              "score": 9.030514136031584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E5%9B%9E%E7%AD%94%EF%BC%9A%E3%80%8E%E4%BA%94%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an10.62",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该回答：『五盖。",
+              "score": 9.030514136031584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E5%9B%9E%E7%AD%94%EF%BC%9A%E3%80%8E%E4%BA%94%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an10.62",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五盖遍满者使无明充满；",
+              "score": 9.030514136031584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E8%93%8B%E9%81%8D%E6%BB%BF%E8%80%85%E4%BD%BF%E7%84%A1%E6%98%8E%E5%85%85%E6%BB%BF%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "欲的意欲盖",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有欲的意欲盖；",
+              "score": 28.97602260236184,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "an5.52",
+              "collection": "经藏/增支部_an",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 26.64547212416997,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.52&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.5",
+              "collection": "经藏/相应部_sn",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 26.64547212416997,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.5&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an9.64",
+              "collection": "经藏/增支部_an",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 25.65516090589942,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.178",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 25.65516090589942,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，袜谢德！",
+              "score": 25.65516090589942,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E8%A5%AA%E8%AC%9D%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 25.65516090589942,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%93%8B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "mn99",
+              "collection": "经藏/中部_mn",
+              "title": "苏玻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，学生婆罗门！",
+              "score": 25.191950798847415,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn99&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E5%AD%B8%E7%94%9F%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "恶意盖",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有恶意盖；",
+              "score": 22.307009008408603,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%83%A1%E6%84%8F%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "an5.52",
+              "collection": "经藏/增支部_an",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 21.895326742285008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.52&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.5",
+              "collection": "经藏/相应部_sn",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 21.895326742285008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.5&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an9.64",
+              "collection": "经藏/增支部_an",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 21.14872290330107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.178",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 21.14872290330107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，袜谢德！",
+              "score": 21.14872290330107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E8%A5%AA%E8%AC%9D%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 21.14872290330107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%93%8B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "mn99",
+              "collection": "经藏/中部_mn",
+              "title": "苏玻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，学生婆罗门！",
+              "score": 20.796959311824466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn99&lang=zh&q=%E6%83%A1%E6%84%8F%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E5%AD%B8%E7%94%9F%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "惛沈睡眠盖",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有惛沈睡眠盖；",
+              "score": 42.07699957407587,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "sn46.40",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "惛沈睡眠盖是……（中略）比丘们！",
+              "score": 35.362865758318065,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.40&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E6%98%AF%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡心与惛沈睡眠俱行、与惛沈睡眠相应者，比丘们！",
+              "score": 35.004178656078444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E5%BF%83%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E4%BF%B1%E8%A1%8C%E3%80%81%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E7%9B%B8%E6%87%89%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn8",
+              "collection": "经藏/中部_mn",
+              "title": "削减经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对被惛沈睡眠缠缚的男子来说，有为了回避的离惛沈睡眠。",
+              "score": 34.11345947778272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn8&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E8%A2%AB%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E7%BA%8F%E7%B8%9B%E7%9A%84%E7%94%B7%E5%AD%90%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%9C%89%E7%82%BA%E4%BA%86%E5%9B%9E%E9%81%BF%E7%9A%84%E9%9B%A2%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E3%80%82"
+            },
+            {
+              "uid": "sn46.24",
+              "collection": "经藏/相应部_sn",
+              "title": "不如理作意经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未生起的惛沈睡眠不生起，已生起的惛沈睡眠被舍断；",
+              "score": 34.11345947778272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.24&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%AA%E7%94%9F%E8%B5%B7%E7%9A%84%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E4%B8%8D%E7%94%9F%E8%B5%B7%EF%BC%8C%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡欲与惛沈睡眠俱行、与惛沈睡眠相应者，比丘们！",
+              "score": 34.11345947778272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E6%AC%B2%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E4%BF%B1%E8%A1%8C%E3%80%81%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E7%9B%B8%E6%87%89%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡活力与惛沈睡眠俱行、与惛沈睡眠相应者，比丘们！",
+              "score": 34.11345947778272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E6%B4%BB%E5%8A%9B%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E4%BF%B1%E8%A1%8C%E3%80%81%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E7%9B%B8%E6%87%89%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡考察与惛沈睡眠俱行、与惛沈睡眠相应者，比丘们！",
+              "score": 34.11345947778272,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E8%80%83%E5%AF%9F%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E4%BF%B1%E8%A1%8C%E3%80%81%E8%88%87%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E7%9B%B8%E6%87%89%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "掉举后悔盖",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有掉举后悔盖；",
+              "score": 33.57339255007301,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%EF%BC%9B"
+            },
+            {
+              "uid": "sn46.40",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "掉举后悔盖是……（中略）比丘们！",
+              "score": 27.99357054495489,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.40&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E6%98%AF%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.52",
+              "collection": "经藏/增支部_an",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 26.123188474960468,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.52&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.5",
+              "collection": "经藏/相应部_sn",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 26.123188474960468,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.5&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an9.64",
+              "collection": "经藏/增支部_an",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 25.070476008667857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.178",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 25.070476008667857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，袜谢德！",
+              "score": 25.070476008667857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E8%A5%AA%E8%AC%9D%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 25.070476008667857,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%93%8B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "疑惑盖",
+          "hits": [
+            {
+              "uid": "sn46.38",
+              "collection": "经藏/相应部_sn",
+              "title": "障碍与盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时没有疑惑盖。",
+              "score": 23.57112406068825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.38&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E6%99%82%E6%B2%92%E6%9C%89%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an5.52",
+              "collection": "经藏/增支部_an",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 19.00436896932298,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.52&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.5",
+              "collection": "经藏/相应部_sn",
+              "title": "不善聚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 19.00436896932298,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.5&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "an9.64",
+              "collection": "经藏/增支部_an",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 18.342301049461884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.64&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.178",
+              "collection": "经藏/相应部_sn",
+              "title": "盖经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，比丘们！",
+              "score": 18.342301049461884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.178&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn13",
+              "collection": "经藏/长部_dn",
+              "title": "三明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，袜谢德！",
+              "score": 18.342301049461884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn13&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%EF%BC%8C%E8%A5%AA%E8%AC%9D%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+              "score": 18.342301049461884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%93%8B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B%E3%80%82"
+            },
+            {
+              "uid": "sn46.52",
+              "collection": "经藏/相应部_sn",
+              "title": "法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡有自身内之疑惑者，那是盖；",
+              "score": 18.330068633150887,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.52&lang=zh&q=%E7%96%91%E6%83%91%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E6%9C%89%E8%87%AA%E8%BA%AB%E5%85%A7%E4%B9%8B%E7%96%91%E6%83%91%E8%80%85%EF%BC%8C%E9%82%A3%E6%98%AF%E8%93%8B%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g6",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 6,
+      "label": "五盖",
+      "members": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖",
+      "member_items": [
+        "欲的意欲盖",
+        "恶意盖",
+        "惛沈睡眠盖",
+        "掉举后悔盖",
+        "疑惑盖"
+      ],
+      "dn34_status": null,
+      "source_text": "五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B"
+    },
+    {
+      "id": "dn34-n5-g4",
+      "sutta": "dn34",
+      "number": 5,
+      "order": 4,
+      "label": "五盖",
+      "members": "欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖",
+      "member_items": [
+        "欲的意欲盖",
+        "恶意盖",
+        "惛沈睡眠盖",
+        "掉举后悔盖",
+        "疑惑盖"
+      ],
+      "dn34_status": "应舍断",
+      "source_text": "（四）哪些是应该被舍断的五法呢？五盖：欲的意欲盖、恶意盖、惛沈睡眠盖、掉举后悔盖、疑惑盖，这些是应该被舍断的五法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E8%93%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E6%AC%B2%E8%93%8B%E3%80%81%E6%83%A1%E6%84%8F%E8%93%8B%E3%80%81%E6%83%9B%E6%B2%88%E7%9D%A1%E7%9C%A0%E8%93%8B%E3%80%81%E6%8E%89%E8%88%89%E5%BE%8C%E6%82%94%E8%93%8B%E3%80%81%E7%96%91%E6%83%91%E8%93%8B"
+    }
+  ]
+}

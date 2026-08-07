@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-5e84f7b7417b",
+    "number": 3,
+    "label": "三牟尼行",
+    "member_items": [
+      "身牟尼行",
+      "语牟尼行",
+      "意牟尼行"
+    ],
+    "group_ids": [
+      "dn33-n3-g53"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三牟尼行",
+      "身牟尼行",
+      "语牟尼行",
+      "意牟尼行"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三牟尼行」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：身牟尼行、语牟尼行、意牟尼行。[1]\n\n## 所含各法\n### 身牟尼行\n经文将「身牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为身牟尼行。。[3]\n### 语牟尼行\n经文将「语牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为语牟尼行。。[4]\n### 意牟尼行\n经文将「意牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为意牟尼行。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 13 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三牟尼行",
+          "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "这被称为身牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "这被称为语牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "这被称为意牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "什么是身牟尼行呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "身牟尼行、语牟尼行、意牟尼行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "什么是语牟尼行呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.122",
+          "text": "什么是意牟尼行呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三牟尼行",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+              "score": 13.34302296732179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "身牟尼行",
+          "hits": [
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为身牟尼行。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是身牟尼行呢？",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身牟尼行、语牟尼行、意牟尼行。",
+              "score": 13.272566954679581,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "语牟尼行",
+          "hits": [
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为语牟尼行。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是语牟尼行呢？",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身牟尼行、语牟尼行、意牟尼行。",
+              "score": 13.272566954679581,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "意牟尼行",
+          "hits": [
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为意牟尼行。",
+              "score": 15.605491954405409,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是意牟尼行呢？",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.122",
+              "collection": "经藏/增支部_an",
+              "title": "牟尼行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身牟尼行、语牟尼行、意牟尼行。",
+              "score": 13.272566954679581,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g53",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 53,
+      "label": "三牟尼行",
+      "members": "身牟尼行、语牟尼行、意牟尼行",
+      "member_items": [
+        "身牟尼行",
+        "语牟尼行",
+        "意牟尼行"
+      ],
+      "dn34_status": null,
+      "source_text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C"
+    }
+  ]
+}

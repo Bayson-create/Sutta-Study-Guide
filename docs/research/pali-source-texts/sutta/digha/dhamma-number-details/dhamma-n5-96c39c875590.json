@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-96c39c875590",
+    "number": 5,
+    "label": "五不还",
+    "member_items": [
+      "中般涅槃",
+      "生般涅槃",
+      "无行般涅槃",
+      "有行般涅槃",
+      "上流到阿迦腻咤"
+    ],
+    "group_ids": [
+      "dn33-n5-g15"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五不还",
+      "中般涅槃",
+      "生般涅槃",
+      "无行般涅槃",
+      "有行般涅槃",
+      "上流到阿迦腻咤"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五不还」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。[1]\n\n## 所含各法\n### 中般涅槃\n经文将「中般涅槃」列为「五不还」的一个成员。Early Buddhist 用该名词检索时，在《结经》命中：中般涅槃者的。。[3]\n### 生般涅槃\n经文将「生般涅槃」列为「五不还」的一个成员。Early Buddhist 用该名词检索时，在《详细经第一》命中：较之弱者是生般涅槃者；。[4]\n### 无行般涅槃\n经文将「无行般涅槃」列为「五不还」的一个成员。Early Buddhist 用该名词检索时，在《详细经第一》命中：较之弱者是无行般涅槃者；。[5]\n### 有行般涅槃\n经文将「有行般涅槃」列为「五不还」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。。[1]\n### 上流到阿迦腻咤\n经文将「上流到阿迦腻咤」列为「五不还」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五不还",
+          "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "五之问题、五之总说、五之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.131",
+          "text": "中般涅槃者的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.131&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.15",
+          "text": "较之弱者是生般涅槃者；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.15",
+          "text": "较之弱者是无行般涅槃者；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "五之问题、五之总说、五之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『五之问题、五之总说、五之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "而，『五之问题、五之总说、五之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "而，『五之问题、五之总说、五之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.5",
+          "text": "「应该切断五、应该舍断五，且应该再修习五，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.5&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E6%87%89%E8%A9%B2%E5%88%87%E6%96%B7%E4%BA%94%E3%80%81%E6%87%89%E8%A9%B2%E6%8D%A8%E6%96%B7%E4%BA%94%EF%BC%8C%E4%B8%94%E6%87%89%E8%A9%B2%E5%86%8D%E4%BF%AE%E7%BF%92%E4%BA%94%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn37.14",
+          "text": "五怨恨经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.14&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E6%80%A8%E6%81%A8%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.1",
+          "text": "这些是五学力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.1&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%AD%B8%E5%8A%9B%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五不还",
+          "hits": [
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五之问题、五之总说、五之解说；",
+              "score": 12.051652620819686,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五之问题、五之总说、五之解说；",
+              "score": 12.051652620819686,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『五之问题、五之总说、五之解说。",
+              "score": 11.786954775608198,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『五之问题、五之总说、五之解说。",
+              "score": 11.533634480824954,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『五之问题、五之总说、五之解说。",
+              "score": 11.533634480824954,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%BA%94%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%BA%94%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%BA%94%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "sn1.5",
+              "collection": "经藏/相应部_sn",
+              "title": "切断多少经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「应该切断五、应该舍断五，且应该再修习五，",
+              "score": 10.835047569319117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.5&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E6%87%89%E8%A9%B2%E5%88%87%E6%96%B7%E4%BA%94%E3%80%81%E6%87%89%E8%A9%B2%E6%8D%A8%E6%96%B7%E4%BA%94%EF%BC%8C%E4%B8%94%E6%87%89%E8%A9%B2%E5%86%8D%E4%BF%AE%E7%BF%92%E4%BA%94%EF%BC%8C"
+            },
+            {
+              "uid": "sn37.14",
+              "collection": "经藏/相应部_sn",
+              "title": "五怨恨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五怨恨经",
+              "score": 10.480962305673113,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.14&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E6%80%A8%E6%81%A8%E7%B6%93"
+            },
+            {
+              "uid": "an5.1",
+              "collection": "经藏/增支部_an",
+              "title": "简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五学力。",
+              "score": 9.900868926677553,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.1&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%AD%B8%E5%8A%9B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "中般涅槃",
+          "hits": [
+            {
+              "uid": "an4.131",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "中般涅槃者的。",
+              "score": 23.446178798438993,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.131&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是中般涅槃者；",
+              "score": 21.109472514662663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.16",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是中般涅槃者；",
+              "score": 21.109472514662663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.16&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.17",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是中般涅槃者；",
+              "score": 21.109472514662663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.17&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.24",
+              "collection": "经藏/相应部_sn",
+              "title": "一种子者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是中般涅槃者；",
+              "score": 21.109472514662663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.24&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "mn124",
+              "collection": "经藏/中部_mn",
+              "title": "巴古勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "尊者巴古勒坐在比丘僧团中般涅槃。",
+              "score": 18.364145751079985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn124&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8A%E8%80%85%E5%B7%B4%E5%8F%A4%E5%8B%92%E5%9D%90%E5%9C%A8%E6%AF%94%E4%B8%98%E5%83%A7%E5%9C%98%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+              "score": 18.18689156616137,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an10.63",
+              "collection": "经藏/增支部_an",
+              "title": "达究竟经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "中般涅槃者、生般涅槃者、无行般涅槃者、有行般涅槃者、上流到阿迦腻咤者，这五种离开这里后究竟。",
+              "score": 15.696440556164916,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.63&lang=zh&q=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%8C%E9%80%99%E4%BA%94%E7%A8%AE%E9%9B%A2%E9%96%8B%E9%80%99%E8%A3%A1%E5%BE%8C%E7%A9%B6%E7%AB%9F%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "生般涅槃",
+          "hits": [
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是生般涅槃者；",
+              "score": 21.576262471276433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.16",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是生般涅槃者；",
+              "score": 21.576262471276433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.16&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.17",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是生般涅槃者；",
+              "score": 21.576262471276433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.17&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.24",
+              "collection": "经藏/相应部_sn",
+              "title": "一种子者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是生般涅槃者；",
+              "score": 21.576262471276433,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.24&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn54.5",
+              "collection": "经藏/相应部_sn",
+              "title": "大果经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）为生般涅槃者。",
+              "score": 18.770228792351688,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.5&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%82%BA%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+              "score": 17.739844728417644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an3.87",
+              "collection": "经藏/增支部_an",
+              "title": "学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以五下分结的灭尽，为生般涅槃者：他以五下分结的灭尽，为中般涅槃者。",
+              "score": 15.963673623603047,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%EF%BC%8C%E7%82%BA%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9A%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%EF%BC%8C%E7%82%BA%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an7.55",
+              "collection": "经藏/增支部_an",
+              "title": "人之趣处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』……（中略）他以五下分结的灭尽而为生般涅槃者。",
+              "score": 15.426488794035906,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.55&lang=zh&q=%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%E8%80%8C%E7%82%BA%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无行般涅槃",
+          "hits": [
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是无行般涅槃者；",
+              "score": 20.58828694300266,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.16",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是无行般涅槃者；",
+              "score": 20.58828694300266,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.16&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.17",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是无行般涅槃者；",
+              "score": 20.58828694300266,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.17&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.24",
+              "collection": "经藏/相应部_sn",
+              "title": "一种子者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是无行般涅槃者；",
+              "score": 20.58828694300266,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.24&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "an4.169",
+              "collection": "经藏/增支部_an",
+              "title": "有行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而怎样一个人是当生无行般涅槃者？",
+              "score": 18.722367775365015,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.169&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%E6%80%8E%E6%A8%A3%E4%B8%80%E5%80%8B%E4%BA%BA%E6%98%AF%E7%95%B6%E7%94%9F%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9F"
+            },
+            {
+              "uid": "an3.87",
+              "collection": "经藏/增支部_an",
+              "title": "学经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以五下分结的灭尽，为无行般涅槃者；",
+              "score": 17.9107413472193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.87&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%EF%BC%8C%E7%82%BA%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "an4.169",
+              "collection": "经藏/增支部_an",
+              "title": "有行经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样，一个人是当生无行般涅槃者。",
+              "score": 17.9107413472193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.169&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%EF%BC%8C%E4%B8%80%E5%80%8B%E4%BA%BA%E6%98%AF%E7%95%B6%E7%94%9F%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "sn54.5",
+              "collection": "经藏/相应部_sn",
+              "title": "大果经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）为无行般涅槃者。",
+              "score": 17.9107413472193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn54.5&lang=zh&q=%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%82%BA%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有行般涅槃",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+              "score": 16.56897045282498,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an10.63",
+              "collection": "经藏/增支部_an",
+              "title": "达究竟经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "中般涅槃者、生般涅槃者、无行般涅槃者、有行般涅槃者、上流到阿迦腻咤者，这五种离开这里后究竟。",
+              "score": 14.120798980833479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.63&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%8C%E9%80%99%E4%BA%94%E7%A8%AE%E9%9B%A2%E9%96%8B%E9%80%99%E8%A3%A1%E5%BE%8C%E7%A9%B6%E7%AB%9F%E3%80%82"
+            },
+            {
+              "uid": "an10.64",
+              "collection": "经藏/增支部_an",
+              "title": "不坏净经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "中般涅槃者、生般涅槃者、无行般涅槃者、有行般涅槃者、上流到阿迦腻咤者，这五种离开这里后究竟。",
+              "score": 14.120798980833479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.64&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%8C%E9%80%99%E4%BA%94%E7%A8%AE%E9%9B%A2%E9%96%8B%E9%80%99%E8%A3%A1%E5%BE%8C%E7%A9%B6%E7%AB%9F%E3%80%82"
+            },
+            {
+              "uid": "sn55.25",
+              "collection": "经藏/相应部_sn",
+              "title": "释迦族人色勒那尼经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』对法……（中略）对僧团……（中略），他具备捷慧、速慧，但没解脱，他以五下分结的灭尽而为中般涅槃者、生般涅槃者、无行般涅槃者、有行般涅槃者、上流到阿迦腻咤者，摩诃男！",
+              "score": 9.923321841968257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.25&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E5%B0%8D%E6%B3%95%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%EF%BC%8C%E4%BB%96%E5%85%B7%E5%82%99%E6%8D%B7%E6%85%A7%E3%80%81%E9%80%9F%E6%85%A7%EF%BC%8C%E4%BD%86%E6%B2%92%E8%A7%A3%E8%84%AB%EF%BC%8C%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%E8%80%8C%E7%82%BA%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%8C%E6%91%A9%E8%A8%B6%E7%94%B7%EF%BC%81"
+            },
+            {
+              "uid": "mn1",
+              "collection": "经藏/中部_mn",
+              "title": "根本法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他觉知涅槃为涅槃；",
+              "score": 8.644672643893584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn1&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E8%A6%BA%E7%9F%A5%E6%B6%85%E6%A7%83%E7%82%BA%E6%B6%85%E6%A7%83%EF%BC%9B"
+            },
+            {
+              "uid": "an9.12",
+              "collection": "经藏/增支部_an",
+              "title": "有余依经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "某个人在戒上是全分行者，在定上是全分行者，在慧上是适量行者，他以五下分结的灭尽而为生般涅槃者……（中略）无行般涅槃者……（中略）有行般涅槃者……（中略）上流到阿迦腻咤者，舍利弗！",
+              "score": 8.602949726174733,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.12&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9F%90%E5%80%8B%E4%BA%BA%E5%9C%A8%E6%88%92%E4%B8%8A%E6%98%AF%E5%85%A8%E5%88%86%E8%A1%8C%E8%80%85%EF%BC%8C%E5%9C%A8%E5%AE%9A%E4%B8%8A%E6%98%AF%E5%85%A8%E5%88%86%E8%A1%8C%E8%80%85%EF%BC%8C%E5%9C%A8%E6%85%A7%E4%B8%8A%E6%98%AF%E9%81%A9%E9%87%8F%E8%A1%8C%E8%80%85%EF%BC%8C%E4%BB%96%E4%BB%A5%E4%BA%94%E4%B8%8B%E5%88%86%E7%B5%90%E7%9A%84%E6%BB%85%E7%9B%A1%E8%80%8C%E7%82%BA%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E8%80%85%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%8C%E8%88%8D%E5%88%A9%E5%BC%97%EF%BC%81"
+            },
+            {
+              "uid": "mn1",
+              "collection": "经藏/中部_mn",
+              "title": "根本法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "觉知涅槃为涅槃后，思量涅槃、在涅槃中思量、从涅槃思量、思量『涅槃是我的』而欢喜涅槃，那是什么原因呢？",
+              "score": 8.357087395287508,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn1&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A6%BA%E7%9F%A5%E6%B6%85%E6%A7%83%E7%82%BA%E6%B6%85%E6%A7%83%E5%BE%8C%EF%BC%8C%E6%80%9D%E9%87%8F%E6%B6%85%E6%A7%83%E3%80%81%E5%9C%A8%E6%B6%85%E6%A7%83%E4%B8%AD%E6%80%9D%E9%87%8F%E3%80%81%E5%BE%9E%E6%B6%85%E6%A7%83%E6%80%9D%E9%87%8F%E3%80%81%E6%80%9D%E9%87%8F%E3%80%8E%E6%B6%85%E6%A7%83%E6%98%AF%E6%88%91%E7%9A%84%E3%80%8F%E8%80%8C%E6%AD%A1%E5%96%9C%E6%B6%85%E6%A7%83%EF%BC%8C%E9%82%A3%E6%98%AF%E4%BB%80%E9%BA%BC%E5%8E%9F%E5%9B%A0%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn44",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "梵行是基于涅槃，涅槃为彼岸，涅槃为终结。",
+              "score": 8.240552692438158,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%A2%B5%E8%A1%8C%E6%98%AF%E5%9F%BA%E6%96%BC%E6%B6%85%E6%A7%83%EF%BC%8C%E6%B6%85%E6%A7%83%E7%82%BA%E5%BD%BC%E5%B2%B8%EF%BC%8C%E6%B6%85%E6%A7%83%E7%82%BA%E7%B5%82%E7%B5%90%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "上流到阿迦腻咤",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+              "score": 29.053688833988474,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E4%B8%8D%E9%82%84%EF%BC%9A%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五净居：无烦、无热、善现、善见、阿迦腻咤。",
+              "score": 24.567826289615354,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B7%A8%E5%B1%85%EF%BC%9A%E7%84%A1%E7%85%A9%E3%80%81%E7%84%A1%E7%86%B1%E3%80%81%E5%96%84%E7%8F%BE%E3%80%81%E5%96%84%E8%A6%8B%E3%80%81%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E3%80%82"
+            },
+            {
+              "uid": "an4.131",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "上流到阿迦腻咤者的。",
+              "score": 13.793589600971254,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.131&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "dhp209-220",
+              "collection": "经藏/小部_kn",
+              "title": "喜爱品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "是名上流人 。",
+              "score": 12.463359518131874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp209-220&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%98%AF%E5%90%8D%E4%B8%8A%E6%B5%81%E4%BA%BA+%E3%80%82"
+            },
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是上流到阿迦腻咤者；",
+              "score": 12.409722781944865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.16",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是上流到阿迦腻咤者；",
+              "score": 12.409722781944865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.16&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.17",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是上流到阿迦腻咤者；",
+              "score": 12.409722781944865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.17&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.24",
+              "collection": "经藏/相应部_sn",
+              "title": "一种子者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是上流到阿迦腻咤者；",
+              "score": 12.409722781944865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.24&lang=zh&q=%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92%E8%80%85%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g15",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 15,
+      "label": "五不还",
+      "members": "中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤",
+      "member_items": [
+        "中般涅槃",
+        "生般涅槃",
+        "无行般涅槃",
+        "有行般涅槃",
+        "上流到阿迦腻咤"
+      ],
+      "dn34_status": null,
+      "source_text": "五不还：中般涅槃、生般涅槃、无行般涅槃、有行般涅槃、上流到阿迦腻咤。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E4%B8%8D%E9%82%84&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%AD%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%94%9F%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E7%84%A1%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E6%9C%89%E8%A1%8C%E8%88%AC%E6%B6%85%E6%A7%83%E3%80%81%E4%B8%8A%E6%B5%81%E5%88%B0%E9%98%BF%E8%BF%A6%E8%86%A9%E5%90%92"
+    }
+  ]
+}

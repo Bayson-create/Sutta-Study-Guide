@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-b28a680a1d56",
+    "number": 3,
+    "label": "三种慢",
+    "member_items": [
+      "『我是优胜者』的慢",
+      "『我是同等者』的慢",
+      "『我是下劣者』的慢"
+    ],
+    "group_ids": [
+      "dn33-n3-g23"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三种慢",
+      "『我是优胜者』的慢",
+      "『我是同等者』的慢",
+      "『我是下劣者』的慢"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三种慢」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。[1]\n\n## 所含各法\n### 『我是优胜者』的慢\n经文将「『我是优胜者』的慢」列为「三种慢」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。。[1]\n### 『我是同等者』的慢\n经文将「『我是同等者』的慢」列为「三种慢」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。。[1]\n### 『我是下劣者』的慢\n经文将「『我是下劣者』的慢」列为「三种慢」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三种慢",
+          "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.162",
+          "text": "有这三种慢。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.106",
+          "text": "哪三种慢应该被舍断呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%93%AA%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.162",
+          "text": "有这三种慢，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.106",
+          "text": "慢、卑慢、极慢，这三种慢应该被舍断。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%85%A2%E3%80%81%E5%8D%91%E6%85%A2%E3%80%81%E6%A5%B5%E6%85%A2%EF%BC%8C%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.106",
+          "text": "这三种渴爱与三种慢应该被舍断，哪三种渴爱应该被舍断呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%E8%88%87%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.106",
+          "text": "当比丘的这种渴爱与三种慢被舍断时，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%AF%94%E4%B8%98%E7%9A%84%E9%80%99%E7%A8%AE%E6%B8%B4%E6%84%9B%E8%88%87%E4%B8%89%E7%A8%AE%E6%85%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%E6%99%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.20",
+          "text": "当对三种慢不动摇时，对他来说没有『相同或殊胜』。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.20&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E5%B0%8D%E4%B8%89%E7%A8%AE%E6%85%A2%E4%B8%8D%E5%8B%95%E6%90%96%E6%99%82%EF%BC%8C%E5%B0%8D%E4%BB%96%E4%BE%86%E8%AA%AA%E6%B2%92%E6%9C%89%E3%80%8E%E7%9B%B8%E5%90%8C%E6%88%96%E6%AE%8A%E5%8B%9D%E3%80%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.108",
+          "text": "我是优胜者经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.108&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.248",
+          "text": "『我是』，这是与慢有关的；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.162",
+          "text": "『我是优胜者』之慢、『我是同等者』之慢、『我是下劣者』之慢，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.248",
+          "text": "『我将是』，这是与慢有关的；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三种慢",
+          "hits": [
+            {
+              "uid": "sn45.162",
+              "collection": "经藏/相应部_sn",
+              "title": "慢经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种慢。",
+              "score": 21.97448243133492,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%E3%80%82"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "哪三种慢应该被舍断呢？",
+              "score": 18.8453607012621,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%93%AA%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.162",
+              "collection": "经藏/相应部_sn",
+              "title": "慢经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种慢，哪三个呢？",
+              "score": 17.991381935304563,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+              "score": 17.528161406689083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%82"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "慢、卑慢、极慢，这三种慢应该被舍断。",
+              "score": 16.934726327211386,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%85%A2%E3%80%81%E5%8D%91%E6%85%A2%E3%80%81%E6%A5%B5%E6%85%A2%EF%BC%8C%E9%80%99%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E3%80%82"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这三种渴爱与三种慢应该被舍断，哪三种渴爱应该被舍断呢？",
+              "score": 16.865135481185302,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%E8%88%87%E4%B8%89%E7%A8%AE%E6%85%A2%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an6.106",
+              "collection": "经藏/增支部_an",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当比丘的这种渴爱与三种慢被舍断时，比丘们！",
+              "score": 15.838248149623466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.106&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%AF%94%E4%B8%98%E7%9A%84%E9%80%99%E7%A8%AE%E6%B8%B4%E6%84%9B%E8%88%87%E4%B8%89%E7%A8%AE%E6%85%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%E6%99%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn1.20",
+              "collection": "经藏/相应部_sn",
+              "title": "三弥提经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当对三种慢不动摇时，对他来说没有『相同或殊胜』。",
+              "score": 14.667979607559484,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.20&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E5%B0%8D%E4%B8%89%E7%A8%AE%E6%85%A2%E4%B8%8D%E5%8B%95%E6%90%96%E6%99%82%EF%BC%8C%E5%B0%8D%E4%BB%96%E4%BE%86%E8%AA%AA%E6%B2%92%E6%9C%89%E3%80%8E%E7%9B%B8%E5%90%8C%E6%88%96%E6%AE%8A%E5%8B%9D%E3%80%8F%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "『我是优胜者』的慢",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+              "score": 31.65184304582494,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%82"
+            },
+            {
+              "uid": "sn35.108",
+              "collection": "经藏/相应部_sn",
+              "title": "我是优胜者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我是优胜者经",
+              "score": 21.63672477704004,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.108&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E7%B6%93"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是』，这是与慢有关的；",
+              "score": 19.928929758088955,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn45.162",
+              "collection": "经藏/相应部_sn",
+              "title": "慢经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是优胜者』之慢、『我是同等者』之慢、『我是下劣者』之慢，比丘们！",
+              "score": 19.8551961627288,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是』，这是与慢有关的；",
+              "score": 18.651539794213186,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是这个』，这是与慢有关的；",
+              "score": 18.645334653315913,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E9%80%99%E5%80%8B%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将不是』，这是与慢有关的；",
+              "score": 17.673050624551937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E4%B8%8D%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是有色的』，这是与慢有关的；",
+              "score": 17.396909208543313,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E6%9C%89%E8%89%B2%E7%9A%84%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "『我是同等者』的慢",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+              "score": 32.17614708630708,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%82"
+            },
+            {
+              "uid": "sn45.162",
+              "collection": "经藏/相应部_sn",
+              "title": "慢经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是优胜者』之慢、『我是同等者』之慢、『我是下劣者』之慢，比丘们！",
+              "score": 20.830442798388447,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.162&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E4%B9%8B%E6%85%A2%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是』，这是与慢有关的；",
+              "score": 19.928929758088955,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是』，这是与慢有关的；",
+              "score": 18.651539794213186,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是这个』，这是与慢有关的；",
+              "score": 18.645334653315913,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E9%80%99%E5%80%8B%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.108",
+              "collection": "经藏/相应部_sn",
+              "title": "我是优胜者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当有眼时，执取眼后，对眼执著，有『我是优胜者』，或有『我是同等者』，或有『我是下劣者』。",
+              "score": 18.082746182156313,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.108&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%9C%89%E7%9C%BC%E6%99%82%EF%BC%8C%E5%9F%B7%E5%8F%96%E7%9C%BC%E5%BE%8C%EF%BC%8C%E5%B0%8D%E7%9C%BC%E5%9F%B7%E8%91%97%EF%BC%8C%E6%9C%89%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%EF%BC%8C%E6%88%96%E6%9C%89%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%EF%BC%8C%E6%88%96%E6%9C%89%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将不是』，这是与慢有关的；",
+              "score": 17.673050624551937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E4%B8%8D%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是有色的』，这是与慢有关的；",
+              "score": 17.396909208543313,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E6%9C%89%E8%89%B2%E7%9A%84%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "『我是下劣者』的慢",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+              "score": 24.782304842787045,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%85%A2%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%82"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是』，这是与慢有关的；",
+              "score": 19.928929758088955,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是』，这是与慢有关的；",
+              "score": 18.651539794213186,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我是这个』，这是与慢有关的；",
+              "score": 18.645334653315913,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E6%98%AF%E9%80%99%E5%80%8B%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "an10.22",
+              "collection": "经藏/增支部_an",
+              "title": "言说句经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』将知道：『下劣的是下劣。",
+              "score": 18.3815153316398,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.22&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E5%B0%87%E7%9F%A5%E9%81%93%EF%BC%9A%E3%80%8E%E4%B8%8B%E5%8A%A3%E7%9A%84%E6%98%AF%E4%B8%8B%E5%8A%A3%E3%80%82"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将不是』，这是与慢有关的；",
+              "score": 17.673050624551937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E4%B8%8D%E6%98%AF%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是有色的』，这是与慢有关的；",
+              "score": 17.396909208543313,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E6%9C%89%E8%89%B2%E7%9A%84%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.248",
+              "collection": "经藏/相应部_sn",
+              "title": "麦捆经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『我将是无色的』，这是与慢有关的；",
+              "score": 17.396909208543313,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.248&lang=zh&q=%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E6%88%91%E5%B0%87%E6%98%AF%E7%84%A1%E8%89%B2%E7%9A%84%E3%80%8F%EF%BC%8C%E9%80%99%E6%98%AF%E8%88%87%E6%85%A2%E6%9C%89%E9%97%9C%E7%9A%84%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g23",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 23,
+      "label": "三种慢",
+      "members": "『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢",
+      "member_items": [
+        "『我是优胜者』的慢",
+        "『我是同等者』的慢",
+        "『我是下劣者』的慢"
+      ],
+      "dn34_status": null,
+      "source_text": "三种慢：『我是优胜者』的慢、『我是同等者』的慢、『我是下劣者』的慢。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%85%A2&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E3%80%8E%E6%88%91%E6%98%AF%E5%84%AA%E5%8B%9D%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E5%90%8C%E7%AD%89%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2%E3%80%81%E3%80%8E%E6%88%91%E6%98%AF%E4%B8%8B%E5%8A%A3%E8%80%85%E3%80%8F%E7%9A%84%E6%85%A2"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-74240db8ffec",
+    "number": 3,
+    "label": "三善界",
+    "member_items": [
+      "离欲界",
+      "无恶意界",
+      "无加害界"
+    ],
+    "group_ids": [
+      "dn33-n3-g12"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三善界",
+      "离欲界",
+      "无恶意界",
+      "无加害界"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三善界」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：离欲界、无恶意界、无加害界。[1]\n\n## 所含各法\n### 离欲界\n经文将「离欲界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《喜爱品》命中：离欲乐无忧，。[3]\n### 无恶意界\n经文将「无恶意界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《智者品》命中：定善而无恶。。[4]\n### 无加害界\n经文将「无加害界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《界经》命中：欲界、恶意界、加害界，比丘们！。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三善界",
+          "text": "三善界：离欲界、无恶意界、无加害界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三善界：离欲界、无恶意界、无加害界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E7%95%8C%EF%BC%9A%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp209-220",
+          "text": "离欲乐无忧，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp209-220&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2%E6%A8%82%E7%84%A1%E6%86%82%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp76-89",
+          "text": "定善而无恶。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp76-89&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%AE%9A%E5%96%84%E8%80%8C%E7%84%A1%E6%83%A1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.111",
+          "text": "欲界、恶意界、加害界，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.111&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp273-289",
+          "text": "离欲 法中胜，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp273-289&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2+%E6%B3%95%E4%B8%AD%E5%8B%9D%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp334-359",
+          "text": "SC 352 离欲无染者，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp334-359&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=SC+352+%E9%9B%A2%E6%AC%B2%E7%84%A1%E6%9F%93%E8%80%85%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.55",
+          "text": "「如果倾心离欲与心的独居，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.55&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%A6%82%E6%9E%9C%E5%82%BE%E5%BF%83%E9%9B%A2%E6%AC%B2%E8%88%87%E5%BF%83%E7%9A%84%E7%8D%A8%E5%B1%85%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三不善界：欲界、恶意界、加害界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn97",
+          "text": "饿鬼界比畜生界好。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn97&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E7%95%8C%E6%AF%94%E7%95%9C%E7%94%9F%E7%95%8C%E5%A5%BD%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn21",
+          "text": "世间有许多界、种种界。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.54",
+          "text": "离欲贪之贪染后，是梵天世界的往生者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.54&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E8%B2%AA%E4%B9%8B%E8%B2%AA%E6%9F%93%E5%BE%8C%EF%BC%8C%E6%98%AF%E6%A2%B5%E5%A4%A9%E4%B8%96%E7%95%8C%E7%9A%84%E5%BE%80%E7%94%9F%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp116-128",
+          "text": "不作恶者便无恶。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E4%BD%9C%E6%83%A1%E8%80%85%E4%BE%BF%E7%84%A1%E6%83%A1%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三善界",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善界：离欲界、无恶意界、无加害界。",
+              "score": 11.746185456041808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E7%95%8C%EF%BC%9A%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "离欲界",
+          "hits": [
+            {
+              "uid": "dhp209-220",
+              "collection": "经藏/小部_kn",
+              "title": "喜爱品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "离欲乐无忧，",
+              "score": 12.240497349720798,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp209-220&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2%E6%A8%82%E7%84%A1%E6%86%82%EF%BC%8C"
+            },
+            {
+              "uid": "dhp273-289",
+              "collection": "经藏/小部_kn",
+              "title": "道品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "离欲 法中胜，",
+              "score": 12.240497349720798,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp273-289&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2+%E6%B3%95%E4%B8%AD%E5%8B%9D%EF%BC%8C"
+            },
+            {
+              "uid": "dhp334-359",
+              "collection": "经藏/小部_kn",
+              "title": "爱欲品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "SC 352 离欲无染者，",
+              "score": 10.956599741642092,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp334-359&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=SC+352+%E9%9B%A2%E6%AC%B2%E7%84%A1%E6%9F%93%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "an6.55",
+              "collection": "经藏/增支部_an",
+              "title": "受那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「如果倾心离欲与心的独居，",
+              "score": 9.91646802078773,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.55&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%A6%82%E6%9E%9C%E5%82%BE%E5%BF%83%E9%9B%A2%E6%AC%B2%E8%88%87%E5%BF%83%E7%9A%84%E7%8D%A8%E5%B1%85%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善界：欲界、恶意界、加害界。",
+              "score": 9.487508641156182,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn97",
+              "collection": "经藏/中部_mn",
+              "title": "达那若尼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "饿鬼界比畜生界好。",
+              "score": 9.40297157204888,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn97&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E7%95%8C%E6%AF%94%E7%95%9C%E7%94%9F%E7%95%8C%E5%A5%BD%E3%80%82"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "世间有许多界、种种界。",
+              "score": 9.111846921506194,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "an6.54",
+              "collection": "经藏/增支部_an",
+              "title": "如法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "离欲贪之贪染后，是梵天世界的往生者。",
+              "score": 9.056697759237439,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.54&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E8%B2%AA%E4%B9%8B%E8%B2%AA%E6%9F%93%E5%BE%8C%EF%BC%8C%E6%98%AF%E6%A2%B5%E5%A4%A9%E4%B8%96%E7%95%8C%E7%9A%84%E5%BE%80%E7%94%9F%E8%80%85%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无恶意界",
+          "hits": [
+            {
+              "uid": "dhp76-89",
+              "collection": "经藏/小部_kn",
+              "title": "智者品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "定善而无恶。",
+              "score": 12.787656613859337,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp76-89&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%AE%9A%E5%96%84%E8%80%8C%E7%84%A1%E6%83%A1%E3%80%82"
+            },
+            {
+              "uid": "dhp116-128",
+              "collection": "经藏/小部_kn",
+              "title": "恶品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "不作恶者便无恶。",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E4%BD%9C%E6%83%A1%E8%80%85%E4%BE%BF%E7%84%A1%E6%83%A1%E3%80%82"
+            },
+            {
+              "uid": "dhp129-145",
+              "collection": "经藏/小部_kn",
+              "title": "刀杖品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无恶无害者，",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp129-145&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%83%A1%E7%84%A1%E5%AE%B3%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "dhp197-208",
+              "collection": "经藏/小部_kn",
+              "title": "乐品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无恶如嗔恨，",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp197-208&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%83%A1%E5%A6%82%E7%9E%8B%E6%81%A8%EF%BC%8C"
+            },
+            {
+              "uid": "sn14.3",
+              "collection": "经藏/相应部_sn",
+              "title": "非种种触经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼界、……（中略）意界。",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.3&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E7%95%8C%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn14.4",
+              "collection": "经藏/相应部_sn",
+              "title": "种种受经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼界、……（中略）意界。",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.4&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E7%95%8C%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn14.5",
+              "collection": "经藏/相应部_sn",
+              "title": "种种受经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼界、……（中略）意界。",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.5&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E7%95%8C%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%84%8F%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "sn22.87",
+              "collection": "经藏/相应部_sn",
+              "title": "跋迦梨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你的死必将是无恶的，你的命终必将是无罪恶的。",
+              "score": 9.890289089909265,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.87&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E7%9A%84%E6%AD%BB%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E6%83%A1%E7%9A%84%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%91%BD%E7%B5%82%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E7%BD%AA%E6%83%A1%E7%9A%84%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无加害界",
+          "hits": [
+            {
+              "uid": "an6.111",
+              "collection": "经藏/增支部_an",
+              "title": "界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲界、恶意界、加害界，比丘们！",
+              "score": 19.802707944928954,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.111&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善界：离欲界、无恶意界、无加害界。",
+              "score": 19.091283107985493,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E7%95%8C%EF%BC%9A%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn115",
+              "collection": "经藏/中部_mn",
+              "title": "多界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这六界：欲界、离欲界、恶意界、无恶意界、加害界、无加害界，阿难！",
+              "score": 18.851432939909127,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%85%AD%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善界：欲界、恶意界、加害界。",
+              "score": 17.664014416589183,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "an6.111",
+              "collection": "经藏/增支部_an",
+              "title": "界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对欲界的舍断应该修习离欲界、对恶意界的舍断应该修习无恶意界、对加害界的舍断应该修习不加害界，比丘们！",
+              "score": 16.498197765544653,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.111&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E6%AC%B2%E7%95%8C%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E5%B0%8D%E6%83%A1%E6%84%8F%E7%95%8C%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%B0%8D%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E4%B8%8D%E5%8A%A0%E5%AE%B3%E7%95%8C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘加害界生起加害想；",
+              "score": 11.167918339284336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘加害想生起加害的意向；",
+              "score": 11.167918339284336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E6%83%B3%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘不加害界生起不加害想；",
+              "score": 11.167918339284336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E4%B8%8D%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g12",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 12,
+      "label": "三善界",
+      "members": "离欲界、无恶意界、无加害界",
+      "member_items": [
+        "离欲界",
+        "无恶意界",
+        "无加害界"
+      ],
+      "dn34_status": null,
+      "source_text": "三善界：离欲界、无恶意界、无加害界。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C"
+    }
+  ]
+}

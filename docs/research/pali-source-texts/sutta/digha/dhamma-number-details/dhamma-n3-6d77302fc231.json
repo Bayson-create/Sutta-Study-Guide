@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-6d77302fc231",
+    "number": 3,
+    "label": "三积集",
+    "member_items": [
+      "邪性决定的积集",
+      "正性决定的积集",
+      "不定的积集"
+    ],
+    "group_ids": [
+      "dn33-n3-g28"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三积集",
+      "邪性决定的积集",
+      "正性决定的积集",
+      "不定的积集"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三积集」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：邪性决定的积集、正性决定的积集、不定的积集。[1]\n\n## 所含各法\n### 邪性决定的积集\n经文将「邪性决定的积集」列为「三积集」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三积集：邪性决定的积集、正性决定的积集、不定的积集。。[1]\n### 正性决定的积集\n经文将「正性决定的积集」列为「三积集」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三积集：邪性决定的积集、正性决定的积集、不定的积集。。[1]\n### 不定的积集\n经文将「不定的积集」列为「三积集」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三积集：邪性决定的积集、正性决定的积集、不定的积集。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三积集",
+          "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A9%8D%E9%9B%86%EF%BC%9A%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.103",
+          "text": "邪性经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.103&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%AA%E6%80%A7%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.21",
+          "text": "邪性经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%AA%E6%80%A7%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.132",
+          "text": "这是十邪性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.132&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%8D%81%E9%82%AA%E6%80%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.21",
+          "text": "这被称为邪性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%82%AA%E6%80%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.21",
+          "text": "什么是邪性呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%82%AA%E6%80%A7%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.103",
+          "text": "邪性来到失败而非成功。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.103&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%AA%E6%80%A7%E4%BE%86%E5%88%B0%E5%A4%B1%E6%95%97%E8%80%8C%E9%9D%9E%E6%88%90%E5%8A%9F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.30",
+          "text": "邪性品第三，其摄颂：",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.30&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%AA%E6%80%A7%E5%93%81%E7%AC%AC%E4%B8%89%EF%BC%8C%E5%85%B6%E6%94%9D%E9%A0%8C%EF%BC%9A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.151",
+          "text": "正性决定经第一",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.151&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%B8%80"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.152",
+          "text": "正性决定经第二",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.152&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%BA%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.153",
+          "text": "正性决定经第三",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.153&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%B8%89"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.160",
+          "text": "「三则正性决定，三则正法的消失，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.160&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%B8%89%E5%89%87%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%EF%BC%8C%E4%B8%89%E5%89%87%E6%AD%A3%E6%B3%95%E7%9A%84%E6%B6%88%E5%A4%B1%EF%BC%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三积集",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+              "score": 10.878274358892973,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A9%8D%E9%9B%86%EF%BC%9A%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "邪性决定的积集",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+              "score": 43.44456022452044,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A9%8D%E9%9B%86%EF%BC%9A%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%82"
+            },
+            {
+              "uid": "an10.103",
+              "collection": "经藏/增支部_an",
+              "title": "邪性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "邪性经",
+              "score": 14.326313073882373,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.103&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%AA%E6%80%A7%E7%B6%93"
+            },
+            {
+              "uid": "sn45.21",
+              "collection": "经藏/相应部_sn",
+              "title": "邪性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "邪性经",
+              "score": 14.326313073882373,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%AA%E6%80%A7%E7%B6%93"
+            },
+            {
+              "uid": "an10.132",
+              "collection": "经藏/增支部_an",
+              "title": "第十经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是十邪性。",
+              "score": 13.48693226588237,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.132&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%8D%81%E9%82%AA%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn45.21",
+              "collection": "经藏/相应部_sn",
+              "title": "邪性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为邪性。",
+              "score": 13.48693226588237,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%82%AA%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn45.21",
+              "collection": "经藏/相应部_sn",
+              "title": "邪性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是邪性呢？",
+              "score": 12.74046644697897,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.21&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%82%AA%E6%80%A7%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an10.103",
+              "collection": "经藏/增支部_an",
+              "title": "邪性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "邪性来到失败而非成功。",
+              "score": 11.470718900445744,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.103&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%AA%E6%80%A7%E4%BE%86%E5%88%B0%E5%A4%B1%E6%95%97%E8%80%8C%E9%9D%9E%E6%88%90%E5%8A%9F%E3%80%82"
+            },
+            {
+              "uid": "sn45.30",
+              "collection": "经藏/相应部_sn",
+              "title": "郁低雅经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "邪性品第三，其摄颂：",
+              "score": 11.470718900445744,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.30&lang=zh&q=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%AA%E6%80%A7%E5%93%81%E7%AC%AC%E4%B8%89%EF%BC%8C%E5%85%B6%E6%94%9D%E9%A0%8C%EF%BC%9A"
+            }
+          ]
+        },
+        {
+          "query": "正性决定的积集",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+              "score": 41.39449508874978,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A9%8D%E9%9B%86%EF%BC%9A%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%82"
+            },
+            {
+              "uid": "an5.151",
+              "collection": "经藏/增支部_an",
+              "title": "正性决定经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正性决定经第一",
+              "score": 25.335661913161218,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.151&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%B8%80"
+            },
+            {
+              "uid": "an5.152",
+              "collection": "经藏/增支部_an",
+              "title": "正性决定经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正性决定经第二",
+              "score": 25.335661913161218,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.152&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%BA%8C"
+            },
+            {
+              "uid": "an5.153",
+              "collection": "经藏/增支部_an",
+              "title": "正性决定经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正性决定经第三",
+              "score": 25.335661913161218,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.153&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%B6%93%E7%AC%AC%E4%B8%89"
+            },
+            {
+              "uid": "an5.160",
+              "collection": "经藏/增支部_an",
+              "title": "难排除经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「三则正性决定，三则正法的消失，",
+              "score": 19.844077453864482,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.160&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E4%B8%89%E5%89%87%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%EF%BC%8C%E4%B8%89%E5%89%87%E6%AD%A3%E6%B3%95%E7%9A%84%E6%B6%88%E5%A4%B1%EF%BC%8C"
+            },
+            {
+              "uid": "an6.98",
+              "collection": "经藏/增支部_an",
+              "title": "无常经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这是不可能的，『不具备随顺忍者将进入正性决定。",
+              "score": 17.560324138765992,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.98&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E9%80%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84%EF%BC%8C%E3%80%8E%E4%B8%8D%E5%85%B7%E5%82%99%E9%9A%A8%E9%A0%86%E5%BF%8D%E8%80%85%E5%B0%87%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "an6.101",
+              "collection": "经藏/增支部_an",
+              "title": "涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这是不可能的，『不具备随顺忍者将进入正性决定。",
+              "score": 17.560324138765992,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.101&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E9%80%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84%EF%BC%8C%E3%80%8E%E4%B8%8D%E5%85%B7%E5%82%99%E9%9A%A8%E9%A0%86%E5%BF%8D%E8%80%85%E5%B0%87%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "an6.98",
+              "collection": "经藏/增支部_an",
+              "title": "无常经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这是可能的，『具备随顺忍者将进入正性决定。",
+              "score": 16.911568836604207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.98&lang=zh&q=%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E9%80%99%E6%98%AF%E5%8F%AF%E8%83%BD%E7%9A%84%EF%BC%8C%E3%80%8E%E5%85%B7%E5%82%99%E9%9A%A8%E9%A0%86%E5%BF%8D%E8%80%85%E5%B0%87%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "不定的积集",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+              "score": 32.37601277647068,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A9%8D%E9%9B%86%EF%BC%9A%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%82"
+            },
+            {
+              "uid": "mn4",
+              "collection": "经藏/中部_mn",
+              "title": "恐怖与害怕经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当那个心是这样入定的、遍净的、净化的、无秽的、离染污的、可塑的、适合作业的、住立的、到达不动的时，我使心转向许多前世住处回忆之智。",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn4&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E9%82%A3%E5%80%8B%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E9%81%8D%E6%B7%A8%E7%9A%84%E3%80%81%E6%B7%A8%E5%8C%96%E7%9A%84%E3%80%81%E7%84%A1%E7%A9%A2%E7%9A%84%E3%80%81%E9%9B%A2%E6%9F%93%E6%B1%A1%E7%9A%84%E3%80%81%E5%8F%AF%E5%A1%91%E7%9A%84%E3%80%81%E9%81%A9%E5%90%88%E4%BD%9C%E6%A5%AD%E7%9A%84%E3%80%81%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%88%B0%E9%81%94%E4%B8%8D%E5%8B%95%E7%9A%84%E6%99%82%EF%BC%8C%E6%88%91%E4%BD%BF%E5%BF%83%E8%BD%89%E5%90%91%E8%A8%B1%E5%A4%9A%E5%89%8D%E4%B8%96%E4%BD%8F%E8%99%95%E5%9B%9E%E6%86%B6%E4%B9%8B%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "mn4",
+              "collection": "经藏/中部_mn",
+              "title": "恐怖与害怕经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当那个心是这样入定的、遍净的、净化的、无秽的、离染污的、可塑的、适合作业的、住立的、到达不动的之时，我使心转向众生死亡与往生之智，我以清净、超越人的天眼，看见当众生死时、往生时，在下劣、胜妙，美、丑，幸、不幸中，了知众生依业流转：『这些众生诸君，具备身恶行、语恶行、意恶行，斥责圣者，邪见与持邪见之业行，他们以身体的崩解，死后已往生到苦界、恶趣、下界、地狱，或者这些众生诸君，具备身善行、语善行、意善行，不斥责圣者，正见与持正见之业行，他们以身体的崩解，死后已往生到善趣、天界。",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn4&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E9%82%A3%E5%80%8B%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E9%81%8D%E6%B7%A8%E7%9A%84%E3%80%81%E6%B7%A8%E5%8C%96%E7%9A%84%E3%80%81%E7%84%A1%E7%A9%A2%E7%9A%84%E3%80%81%E9%9B%A2%E6%9F%93%E6%B1%A1%E7%9A%84%E3%80%81%E5%8F%AF%E5%A1%91%E7%9A%84%E3%80%81%E9%81%A9%E5%90%88%E4%BD%9C%E6%A5%AD%E7%9A%84%E3%80%81%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%88%B0%E9%81%94%E4%B8%8D%E5%8B%95%E7%9A%84%E4%B9%8B%E6%99%82%EF%BC%8C%E6%88%91%E4%BD%BF%E5%BF%83%E8%BD%89%E5%90%91%E7%9C%BE%E7%94%9F%E6%AD%BB%E4%BA%A1%E8%88%87%E5%BE%80%E7%94%9F%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%88%91%E4%BB%A5%E6%B8%85%E6%B7%A8%E3%80%81%E8%B6%85%E8%B6%8A%E4%BA%BA%E7%9A%84%E5%A4%A9%E7%9C%BC%EF%BC%8C%E7%9C%8B%E8%A6%8B%E7%95%B6%E7%9C%BE%E7%94%9F%E6%AD%BB%E6%99%82%E3%80%81%E5%BE%80%E7%94%9F%E6%99%82%EF%BC%8C%E5%9C%A8%E4%B8%8B%E5%8A%A3%E3%80%81%E5%8B%9D%E5%A6%99%EF%BC%8C%E7%BE%8E%E3%80%81%E9%86%9C%EF%BC%8C%E5%B9%B8%E3%80%81%E4%B8%8D%E5%B9%B8%E4%B8%AD%EF%BC%8C%E4%BA%86%E7%9F%A5%E7%9C%BE%E7%94%9F%E4%BE%9D%E6%A5%AD%E6%B5%81%E8%BD%89%EF%BC%9A%E3%80%8E%E9%80%99%E4%BA%9B%E7%9C%BE%E7%94%9F%E8%AB%B8%E5%90%9B%EF%BC%8C%E5%85%B7%E5%82%99%E8%BA%AB%E6%83%A1%E8%A1%8C%E3%80%81%E8%AA%9E%E6%83%A1%E8%A1%8C%E3%80%81%E6%84%8F%E6%83%A1%E8%A1%8C%EF%BC%8C%E6%96%A5%E8%B2%AC%E8%81%96%E8%80%85%EF%BC%8C%E9%82%AA%E8%A6%8B%E8%88%87%E6%8C%81%E9%82%AA%E8%A6%8B%E4%B9%8B%E6%A5%AD%E8%A1%8C%EF%BC%8C%E4%BB%96%E5%80%91%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%B7%B2%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E6%88%96%E8%80%85%E9%80%99%E4%BA%9B%E7%9C%BE%E7%94%9F%E8%AB%B8%E5%90%9B%EF%BC%8C%E5%85%B7%E5%82%99%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C%EF%BC%8C%E4%B8%8D%E6%96%A5%E8%B2%AC%E8%81%96%E8%80%85%EF%BC%8C%E6%AD%A3%E8%A6%8B%E8%88%87%E6%8C%81%E6%AD%A3%E8%A6%8B%E4%B9%8B%E6%A5%AD%E8%A1%8C%EF%BC%8C%E4%BB%96%E5%80%91%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%B7%B2%E5%BE%80%E7%94%9F%E5%88%B0%E5%96%84%E8%B6%A3%E3%80%81%E5%A4%A9%E7%95%8C%E3%80%82"
+            },
+            {
+              "uid": "mn4",
+              "collection": "经藏/中部_mn",
+              "title": "恐怖与害怕经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当那个心是这样入定的、遍净的、净化的、无秽的、离染污的、可塑的、适合作业的、住立的、到达不动的之时，我使心转向烦恼之灭尽智。",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn4&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E9%82%A3%E5%80%8B%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E9%81%8D%E6%B7%A8%E7%9A%84%E3%80%81%E6%B7%A8%E5%8C%96%E7%9A%84%E3%80%81%E7%84%A1%E7%A9%A2%E7%9A%84%E3%80%81%E9%9B%A2%E6%9F%93%E6%B1%A1%E7%9A%84%E3%80%81%E5%8F%AF%E5%A1%91%E7%9A%84%E3%80%81%E9%81%A9%E5%90%88%E4%BD%9C%E6%A5%AD%E7%9A%84%E3%80%81%E4%BD%8F%E7%AB%8B%E7%9A%84%E3%80%81%E5%88%B0%E9%81%94%E4%B8%8D%E5%8B%95%E7%9A%84%E4%B9%8B%E6%99%82%EF%BC%8C%E6%88%91%E4%BD%BF%E5%BF%83%E8%BD%89%E5%90%91%E7%85%A9%E6%83%B1%E4%B9%8B%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "mn6",
+              "collection": "经藏/中部_mn",
+              "title": "希望经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "得定的心能了知为「得定的心」，未得定的心能了知为「未得定的心」；",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn6&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%8C%E6%9C%AA%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E8%83%BD%E4%BA%86%E7%9F%A5%E7%82%BA%E3%80%8C%E6%9C%AA%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E3%80%8D%EF%BC%9B"
+            },
+            {
+              "uid": "mn8",
+              "collection": "经藏/中部_mn",
+              "title": "削减经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对邪定的男子来说，有为了回避的正定。",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn8&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E9%82%AA%E5%AE%9A%E7%9A%84%E7%94%B7%E5%AD%90%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%9C%89%E7%82%BA%E4%BA%86%E5%9B%9E%E9%81%BF%E7%9A%84%E6%AD%A3%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "mn8",
+              "collection": "经藏/中部_mn",
+              "title": "削减经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对邪定的男子来说，有为了般涅槃的正定。",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn8&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E9%82%AA%E5%AE%9A%E7%9A%84%E7%94%B7%E5%AD%90%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%9C%89%E7%82%BA%E4%BA%86%E8%88%AC%E6%B6%85%E6%A7%83%E7%9A%84%E6%AD%A3%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "了知『得定的心』为得定的心，了知『未得定的心』为未得定的心；",
+              "score": 0.3,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BA%86%E7%9F%A5%E3%80%8E%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%EF%BC%8C%E4%BA%86%E7%9F%A5%E3%80%8E%E6%9C%AA%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%E3%80%8F%E7%82%BA%E6%9C%AA%E5%BE%97%E5%AE%9A%E7%9A%84%E5%BF%83%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g28",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 28,
+      "label": "三积集",
+      "members": "邪性决定的积集、正性决定的积集、不定的积集",
+      "member_items": [
+        "邪性决定的积集",
+        "正性决定的积集",
+        "不定的积集"
+      ],
+      "dn34_status": null,
+      "source_text": "三积集：邪性决定的积集、正性决定的积集、不定的积集。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A9%8D%E9%9B%86&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%82%AA%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86%E3%80%81%E4%B8%8D%E5%AE%9A%E7%9A%84%E7%A9%8D%E9%9B%86"
+    }
+  ]
+}

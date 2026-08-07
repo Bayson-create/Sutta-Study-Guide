@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-d26f8328f0f1",
+    "number": 3,
+    "label": "三障碍",
+    "member_items": [
+      "贪障碍",
+      "嗔恚障碍",
+      "愚痴障碍"
+    ],
+    "group_ids": [
+      "dn33-n3-g31"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三障碍",
+      "贪障碍",
+      "嗔恚障碍",
+      "愚痴障碍",
+      "嗔障碍",
+      "痴障碍"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三障碍」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：贪障碍、嗔恚障碍、愚痴障碍。[1]\n\n## 所含各法\n### 贪障碍\n经文将「贪障碍」列为「三障碍」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三障碍：贪障碍、嗔恚障碍、愚痴障碍。。[1]\n### 嗔恚障碍\n经文将「嗔恚障碍」列为「三障碍」的一个成员。Early Buddhist 用该名词检索时，在《守狗戒者经》命中：这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。。[3]\n### 愚痴障碍\n经文将「愚痴障碍」列为「三障碍」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三障碍：贪障碍、嗔恚障碍、愚痴障碍。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三障碍",
+          "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn57",
+          "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.6",
+          "text": "这是比这个障碍更障碍；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.6",
+          "text": "更被称为障碍的另一个障碍。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.6",
+          "text": "什么是比这个障碍更障碍；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.6",
+          "text": "我们有比这个障碍更障碍；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%80%91%E6%9C%89%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn55.6",
+          "text": "更被称为障碍的另一个障碍呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.51",
+          "text": "障碍经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9A%9C%E7%A4%99%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.233",
+          "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三障碍",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 23.01839906975568,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比这个障碍更障碍；",
+              "score": 11.156900982975616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是比这个障碍更障碍；",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "贪障碍",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 18.511179584091344,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比这个障碍更障碍；",
+              "score": 11.156900982975616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是比这个障碍更障碍；",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们有比这个障碍更障碍；",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%80%91%E6%9C%89%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍呢？",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.51",
+              "collection": "经藏/增支部_an",
+              "title": "障碍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "障碍经",
+              "score": 10.17206216320281,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E8%B2%AA%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9A%9C%E7%A4%99%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "嗔恚障碍",
+          "hits": [
+            {
+              "uid": "mn57",
+              "collection": "经藏/中部_mn",
+              "title": "守狗戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.075871903389455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 25.061302073398767,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "an4.233",
+              "collection": "经藏/增支部_an",
+              "title": "详细经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.234",
+              "collection": "经藏/增支部_an",
+              "title": "受那葛亚那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.234&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是从嗔恚生嗔恚。",
+              "score": 23.991315587925826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从情爱生情爱、从情爱生嗔恚、从嗔恚生情爱、从嗔恚生嗔恚。",
+              "score": 23.930800890466863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E6%83%85%E6%84%9B%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E6%83%85%E6%84%9B%E3%80%81%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样是从嗔恚生嗔恚呢？",
+              "score": 23.27082930367404,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn57",
+              "collection": "经藏/中部_mn",
+              "title": "守狗戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人为作无嗔恚的身行，为作无嗔恚的语行，为作无嗔恚的意行，他为作无嗔恚的身行后，为作无嗔恚的语行后，为作无嗔恚的意行后，往生到无嗔恚的世界，当往生到无嗔恚的世界时，无嗔恚的触接触他，当他被无嗔恚的触接触时，感受无嗔恚的、一向乐的感受，犹如遍净天的天神。",
+              "score": 22.624127892646616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E4%B8%80%E5%90%91%E6%A8%82%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E9%81%8D%E6%B7%A8%E5%A4%A9%E7%9A%84%E5%A4%A9%E7%A5%9E%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "愚痴障碍",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 19.245367779460384,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比这个障碍更障碍；",
+              "score": 11.156900982975616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是比这个障碍更障碍；",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们有比这个障碍更障碍；",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%80%91%E6%9C%89%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍呢？",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.51",
+              "collection": "经藏/增支部_an",
+              "title": "障碍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "障碍经",
+              "score": 10.17206216320281,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9A%9C%E7%A4%99%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "嗔障碍",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 17.906042167169165,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比这个障碍更障碍；",
+              "score": 11.156900982975616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是比这个障碍更障碍；",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们有比这个障碍更障碍；",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%80%91%E6%9C%89%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍呢？",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.51",
+              "collection": "经藏/增支部_an",
+              "title": "障碍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "障碍经",
+              "score": 10.17206216320281,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E7%9E%8B%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9A%9C%E7%A4%99%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "痴障碍",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+              "score": 11.318505395430748,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E9%9A%9C%E7%A4%99%EF%BC%9A%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比这个障碍更障碍；",
+              "score": 11.156900982975616,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是比这个障碍更障碍；",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍。",
+              "score": 10.788671624876423,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E3%80%82"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我们有比这个障碍更障碍；",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%80%91%E6%9C%89%E6%AF%94%E9%80%99%E5%80%8B%E9%9A%9C%E7%A4%99%E6%9B%B4%E9%9A%9C%E7%A4%99%EF%BC%9B"
+            },
+            {
+              "uid": "sn55.6",
+              "collection": "经藏/相应部_sn",
+              "title": "侍从官经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更被称为障碍的另一个障碍呢？",
+              "score": 10.443972215012682,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.6&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9B%B4%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%9C%E7%A4%99%E7%9A%84%E5%8F%A6%E4%B8%80%E5%80%8B%E9%9A%9C%E7%A4%99%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.51",
+              "collection": "经藏/增支部_an",
+              "title": "障碍经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "障碍经",
+              "score": 10.17206216320281,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.51&lang=zh&q=%E7%99%A1%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9A%9C%E7%A4%99%E7%B6%93"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g31",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 31,
+      "label": "三障碍",
+      "members": "贪障碍、嗔恚障碍、愚痴障碍",
+      "member_items": [
+        "贪障碍",
+        "嗔恚障碍",
+        "愚痴障碍"
+      ],
+      "dn34_status": null,
+      "source_text": "三障碍：贪障碍、嗔恚障碍、愚痴障碍。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E9%9A%9C%E7%A4%99&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E9%9A%9C%E7%A4%99%E3%80%81%E7%9E%8B%E6%81%9A%E9%9A%9C%E7%A4%99%E3%80%81%E6%84%9A%E7%99%A1%E9%9A%9C%E7%A4%99"
+    }
+  ]
+}

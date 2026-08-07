@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-19aa8bcdb51a",
+    "number": 3,
+    "label": "三慧",
+    "member_items": [
+      "有学慧",
+      "无学慧",
+      "非有学非无学慧"
+    ],
+    "group_ids": [
+      "dn33-n3-g42"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三慧",
+      "有学慧",
+      "无学慧",
+      "非有学非无学慧"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三慧」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有学慧、无学慧、非有学非无学慧。[1]\n\n## 所含各法\n### 有学慧\n经文将「有学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n### 无学慧\n经文将「无学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n### 非有学非无学慧\n经文将「非有学非无学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 14 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三慧",
+          "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.108",
+          "text": "这里，比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.108&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.12",
+          "text": "比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，这样是具备五支的比丘。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.12&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E5%85%B7%E5%82%99%E4%BA%94%E6%94%AF%E7%9A%84%E6%AF%94%E4%B8%98%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三人：有学人、无学人、非有学非无学人。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp360-382",
+          "text": "非有故无忧，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9D%9E%E6%9C%89%E6%95%85%E7%84%A1%E6%86%82%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.55",
+          "text": "『那会非有，那会非我所；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.55",
+          "text": "「『那会非有，那会非我所；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.55",
+          "text": "比丘怎么能从『那会非有，那会非我所；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E6%80%8E%E9%BA%BC%E8%83%BD%E5%BE%9E%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.55",
+          "text": "比丘这么行：『那会非有，那会非我所；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E9%BA%BC%E8%A1%8C%EF%BC%9A%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 11.691359261723187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三慧：思所成慧、闻所成慧、修习所成慧。",
+              "score": 10.39556917540405,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有学慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 12.234232828571022,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无学慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 15.90599568016778,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an5.108",
+              "collection": "经藏/增支部_an",
+              "title": "无学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，比丘们！",
+              "score": 6.484263113201752,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.108&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.12",
+              "collection": "经藏/增支部_an",
+              "title": "五支经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，这样是具备五支的比丘。",
+              "score": 6.333703395936575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.12&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E5%85%B7%E5%82%99%E4%BA%94%E6%94%AF%E7%9A%84%E6%AF%94%E4%B8%98%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "非有学非无学慧",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 42.3535659094886,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三人：有学人、无学人、非有学非无学人。",
+              "score": 24.479227920622677,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "非有故无忧，",
+              "score": 12.276179968588846,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9D%9E%E6%9C%89%E6%95%85%E7%84%A1%E6%86%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn22.55",
+              "collection": "经藏/相应部_sn",
+              "title": "优陀那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『那会非有，那会非我所；",
+              "score": 9.49470043459774,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.55",
+              "collection": "经藏/相应部_sn",
+              "title": "优陀那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「『那会非有，那会非我所；",
+              "score": 9.083099194172053,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.55",
+              "collection": "经藏/相应部_sn",
+              "title": "优陀那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘怎么能从『那会非有，那会非我所；",
+              "score": 8.358414163528296,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E6%80%8E%E9%BA%BC%E8%83%BD%E5%BE%9E%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+            },
+            {
+              "uid": "an7.55",
+              "collection": "经藏/增支部_an",
+              "title": "人之趣处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘这么行：『那会非有，那会非我所；",
+              "score": 8.037771793879166,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E9%BA%BC%E8%A1%8C%EF%BC%9A%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+            },
+            {
+              "uid": "an7.55",
+              "collection": "经藏/增支部_an",
+              "title": "人之趣处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘这么行：『那会非有，那会非我所；",
+              "score": 8.037771793879166,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E9%BA%BC%E8%A1%8C%EF%BC%9A%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g42",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 42,
+      "label": "三慧",
+      "members": "有学慧、无学慧、非有学非无学慧",
+      "member_items": [
+        "有学慧",
+        "无学慧",
+        "非有学非无学慧"
+      ],
+      "dn34_status": null,
+      "source_text": "三慧：有学慧、无学慧、非有学非无学慧。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7"
+    }
+  ]
+}

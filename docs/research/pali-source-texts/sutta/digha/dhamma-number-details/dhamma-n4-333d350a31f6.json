@@ -1,0 +1,558 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-333d350a31f6",
+    "number": 4,
+    "label": "四圣谛",
+    "member_items": [
+      "苦圣谛",
+      "苦集圣谛",
+      "苦灭圣谛",
+      "导向苦灭道迹圣谛"
+    ],
+    "group_ids": [
+      "dn34-n4-g9"
+    ],
+    "suttas": [
+      "dn34"
+    ],
+    "search_terms": [
+      "四圣谛",
+      "苦圣谛",
+      "苦集圣谛",
+      "苦灭圣谛",
+      "导向苦灭道迹圣谛"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四圣谛」属于 4 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。[1]\n\n## 所含各法\n### 苦圣谛\n经文将「苦圣谛」列为「四圣谛」的一个成员。Early Buddhist 用该名词检索时，在《念住大经》命中：这被称为苦圣谛。。[3]\n### 苦集圣谛\n经文将「苦集圣谛」列为「四圣谛」的一个成员。Early Buddhist 用该名词检索时，在《念住大经》命中：什么是苦集圣谛？。[4]\n### 苦灭圣谛\n经文将「苦灭圣谛」列为「四圣谛」的一个成员。Early Buddhist 用该名词检索时，在《善男子经第一》命中：苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。。[5]\n### 导向苦灭道迹圣谛\n经文将「导向苦灭道迹圣谛」列为「四圣谛」的一个成员。Early Buddhist 用该名词检索时，在《念住大经》命中：什么是导向苦灭道迹圣谛？。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 四圣谛",
+          "text": "（九）哪些是应该被证知的四法呢？四圣谛：苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛，这些是应该被证知的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp4",
+          "text": "四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn10",
+          "text": "这被称为苦圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn10",
+          "text": "什么是苦集圣谛？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.3",
+          "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.3&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn10",
+          "text": "什么是导向苦灭道迹圣谛？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.13",
+          "text": "这些是四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.13&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.14",
+          "text": "这些是四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.23",
+          "text": "这些是四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.23&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.29",
+          "text": "这些是四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.29&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp179-196",
+          "text": "得见四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp179-196&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%BE%97%E8%A6%8B%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.15",
+          "text": "我忆持世尊所教导的四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.15&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.16",
+          "text": "我忆持世尊所教导的四圣谛。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.16&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四圣谛",
+          "hits": [
+            {
+              "uid": "kp4",
+              "collection": "经藏/小部_kn",
+              "title": "问童子",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "四圣谛。",
+              "score": 11.600890367609088,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.13",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四圣谛。",
+              "score": 10.921192480227633,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.13&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四圣谛。",
+              "score": 10.921192480227633,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.23",
+              "collection": "经藏/相应部_sn",
+              "title": "遍正觉者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四圣谛。",
+              "score": 10.921192480227633,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.23&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.29",
+              "collection": "经藏/相应部_sn",
+              "title": "应该被遍知经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四圣谛。",
+              "score": 10.921192480227633,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.29&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "dhp179-196",
+              "collection": "经藏/小部_kn",
+              "title": "佛陀品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "得见四圣谛。",
+              "score": 10.316733532303838,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp179-196&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%BE%97%E8%A6%8B%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.15",
+              "collection": "经藏/相应部_sn",
+              "title": "忆持经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我忆持世尊所教导的四圣谛。",
+              "score": 9.775675880524172,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.15&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.16",
+              "collection": "经藏/相应部_sn",
+              "title": "忆持经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我忆持世尊所教导的四圣谛。",
+              "score": 9.775675880524172,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.16&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%86%B6%E6%8C%81%E4%B8%96%E5%B0%8A%E6%89%80%E6%95%99%E5%B0%8E%E7%9A%84%E5%9B%9B%E8%81%96%E8%AB%A6%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "苦圣谛",
+          "hits": [
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是苦圣谛？",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而什么是苦圣谛？",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.13",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.13&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦圣谛。",
+              "score": 12.205644634897736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E8%8B%A6%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "苦集圣谛",
+          "hits": [
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是苦集圣谛？",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦集圣谛。",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是苦集圣谛？",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦集圣谛。",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而什么是苦集圣谛？",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦集圣谛。",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.13",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦集圣谛。",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.13&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为苦集圣谛。",
+              "score": 24.601011720878674,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "苦灭圣谛",
+          "hits": [
+            {
+              "uid": "sn56.3",
+              "collection": "经藏/相应部_sn",
+              "title": "善男子经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.3&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.4",
+              "collection": "经藏/相应部_sn",
+              "title": "善男子经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.4&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.13",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.13&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.14",
+              "collection": "经藏/相应部_sn",
+              "title": "内处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.14&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.24",
+              "collection": "经藏/相应部_sn",
+              "title": "阿罗汉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.24&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.26",
+              "collection": "经藏/相应部_sn",
+              "title": "朋友经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.26&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.27",
+              "collection": "经藏/相应部_sn",
+              "title": "真实经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.27&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "sn56.28",
+              "collection": "经藏/相应部_sn",
+              "title": "世间经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛。",
+              "score": 23.40431435622932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.28&lang=zh&q=%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "导向苦灭道迹圣谛",
+          "hits": [
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向苦灭道迹圣谛？",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向苦灭道迹圣谛。",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向苦灭道迹圣谛？",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向苦灭道迹圣谛。",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而什么是导向苦灭道迹圣谛？",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向苦灭道迹圣谛。",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是导向苦灭道迹圣谛？",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%EF%BC%9F"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为导向苦灭道迹圣谛。",
+              "score": 34.841523762176315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn34-n4-g9",
+      "sutta": "dn34",
+      "number": 4,
+      "order": 9,
+      "label": "四圣谛",
+      "members": "苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛",
+      "member_items": [
+        "苦圣谛",
+        "苦集圣谛",
+        "苦灭圣谛",
+        "导向苦灭道迹圣谛"
+      ],
+      "dn34_status": "应证知",
+      "source_text": "（九）哪些是应该被证知的四法呢？四圣谛：苦圣谛、苦集圣谛、苦灭圣谛、导向苦灭道迹圣谛，这些是应该被证知的四法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E8%81%96%E8%AB%A6&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E9%9B%86%E8%81%96%E8%AB%A6%E3%80%81%E8%8B%A6%E6%BB%85%E8%81%96%E8%AB%A6%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%81%96%E8%AB%A6"
+    }
+  ]
+}

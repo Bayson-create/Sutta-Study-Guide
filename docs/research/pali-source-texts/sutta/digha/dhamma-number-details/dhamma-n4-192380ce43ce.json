@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-192380ce43ce",
+    "number": 4,
+    "label": "四沙门果",
+    "member_items": [
+      "入流果",
+      "一来果",
+      "不还果",
+      "阿罗汉果"
+    ],
+    "group_ids": [
+      "dn33-n4-g15",
+      "dn34-n4-g10"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "四沙门果",
+      "入流果",
+      "一来果",
+      "不还果",
+      "阿罗汉果"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四沙门果」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：入流果、一来果、不还果、阿罗汉果。[1]\n- DN34：入流果、一来果、不还果、阿罗汉果。[2]\n\n## 所含各法\n### 入流果\n经文将「入流果」列为「四沙门果」的一个成员。Early Buddhist 用该名词检索时，在《古得旦得经》命中：入流果的作证。[4]\n### 一来果\n经文将「一来果」列为「四沙门果」的一个成员。Early Buddhist 用该名词检索时，在《沙门法经第一》命中：入流果、一来果、不还果、阿罗汉果，比丘们！。[5]\n### 不还果\n经文将「不还果」列为「四沙门果」的一个成员。Early Buddhist 用该名词检索时，在《富吉经》命中：不还果被你记说。。[6]\n### 阿罗汉果\n经文将「阿罗汉果」列为「四沙门果」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四沙门果：入流果、一来果、不还果、阿罗汉果。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 2 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四沙门果",
+          "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 四沙门果",
+          "text": "（十）哪些是应该被作证的四法呢？四沙门果：入流果、一来果、不还果、阿罗汉果，这些是应该被作证的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn5",
+          "text": "入流果的作证",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn5&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E7%9A%84%E4%BD%9C%E8%AD%89"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.35",
+          "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.29",
+          "text": "不还果被你记说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.29&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E9%82%84%E6%9E%9C%E8%A2%AB%E4%BD%A0%E8%A8%98%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "四沙门果：入流果、一来果、不还果、阿罗汉果，这些是应该被作证的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "沙门果的问题",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%B2%99%E9%96%80%E6%9E%9C%E7%9A%84%E5%95%8F%E9%A1%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "更胜妙的沙门果",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9B%B4%E5%8B%9D%E5%A6%99%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.35",
+          "text": "什么是沙门果？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.35",
+          "text": "这被称为沙门果。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B2%99%E9%96%80%E6%9E%9C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn16",
+          "text": "实无沙门果．",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E5%AF%A6%E7%84%A1%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%8E"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn2",
+          "text": "这是比直接可见的沙门果更卓越、更胜妙之直接可见的沙门果。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C%E6%9B%B4%E5%8D%93%E8%B6%8A%E3%80%81%E6%9B%B4%E5%8B%9D%E5%A6%99%E4%B9%8B%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "是，善生听完后自请做\"等同奴婢\"的妻子（顺从而无嗔），这反映了古印度的婚姻伦理观，读者可结合时代背景理解，不必照搬字面。 ### 正命与财富观 佛陀教导财富应\"通过积极的努力……合法获得\"，且应同时满足自己、供养家人、也要惠及\"有德行的沙门及婆罗门\"。追求现世乐的同时，佛陀也提醒在家弟子不应以此为满足，还应培养**信、戒、舍、慧**四种美德，为来世的幸福铺路——换言之，在家人的理想典范，不是仅仅供养僧团的\"虔诚出资者\"，而是**已证入流果的圣者**。 ### 群体社会：从僧团规范到社会稳定 本节最富现实意义的，是\"社会稳定的七项原则\"（跋耆七不衰退法）：摩揭陀国阿阇世王欲攻打跋耆国，佛陀借此机会向阿难开示七种使一国不衰退的条件： 1. 经常集合、时常集合，保持公共议事的活力； 2. 和合地集合、和合地结束、和合地处理公共事务； 3. 不任意设立旧法未设立者，也不断绝已经设立的法，而依循往昔跋耆人所立制度； 4. 恭敬、尊重、崇敬族中长老，并认为长老的意见值得听取； 5. 不强拉良家妇人与良家少女，不以暴力破坏家庭与女性安全； 6. 恭敬、尊重内外塔庙，不使既有合法供养衰损； 7. 如法守护阿罗汉与修行人，使未来未至者愿意前来，已来者能安乐居住。 阿阇世王的大臣听闻后判断：跋耆人只要具备这些原",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%85%A5%E6%B5%81%E6%9E%9C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "明月 **弓箭手比喻**（XXII.12-13）： - 种姓智 = 举棒给弓箭手的人（给出信号） - 道智 = 弓箭手（不停顿地射中目标） **第一道的利益**（XXII.14）： - 刺穿贪嗔痴的聚集 - 干涸轮回苦海 - 关闭一切堕落之门 - 提供七种圣财的实际体验 - 舍弃八邪道 - 消除一切敌意与恐惧 - 导向成为如来法子 - 获得数百种其他祝福 #### 1.2 四道四果与八种圣者（XXII.15-31） **第一果（入流果）**（XXII.15-21）： - 随即生起两三个果报意识 - 此后意识进入生命流，然后以复审为目的升起 - 五种复审：复审道、复审果、复审舍弃的烦恼、复审尚存的烦恼、复审涅槃 - 此入流者最多七次投生于天界和人界，而后证得苦的终结 **第二道与第二果（一来）**（XXII.22-24）： - 通过削弱贪欲和嗔恚（五下分结中的感官贪与嗔恚） - 还来者：再回此世一次，即得苦的终结 **第三道与第三果（不还）**（XXII.25-27）： - 通过彻底断除贪欲和嗔恚 - 不还者：死后以化生方式出现于净居天，在那里证得涅槃，不再返回此界 **第四道与第四果（阿罗汉）**（XXII.28-31）： - 通过断除剩余五上分结（色界贪、无色界贪、慢、掉举、无明） -",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%85%A5%E6%B5%81%E6%9E%9C&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四沙门果",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+              "score": 25.10512967523762,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四沙门果：入流果、一来果、不还果、阿罗汉果，这些是应该被作证的四法。",
+              "score": 22.356558032508094,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "沙门果的问题",
+              "score": 19.146883535686342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%B2%99%E9%96%80%E6%9E%9C%E7%9A%84%E5%95%8F%E9%A1%8C"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "更胜妙的沙门果",
+              "score": 19.146883535686342,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9B%B4%E5%8B%9D%E5%A6%99%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C"
+            },
+            {
+              "uid": "sn45.35",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是沙门果？",
+              "score": 18.087154472312193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.35",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为沙门果。",
+              "score": 18.087154472312193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B2%99%E9%96%80%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "南传大般湼槃经",
+              "author": "巴宙",
+              "translator": "pachow",
+              "text": "实无沙门果．",
+              "score": 18.087154472312193,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E5%AF%A6%E7%84%A1%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%8E"
+            },
+            {
+              "uid": "dn2",
+              "collection": "经藏/长部_dn",
+              "title": "沙门果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是比直接可见的沙门果更卓越、更胜妙之直接可见的沙门果。",
+              "score": 17.523015526481057,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%98%AF%E6%AF%94%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C%E6%9B%B4%E5%8D%93%E8%B6%8A%E3%80%81%E6%9B%B4%E5%8B%9D%E5%A6%99%E4%B9%8B%E7%9B%B4%E6%8E%A5%E5%8F%AF%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E6%9E%9C%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "入流果",
+          "hits": [
+            {
+              "uid": "dn5",
+              "collection": "经藏/长部_dn",
+              "title": "古得旦得经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果的作证",
+              "score": 23.10087589122407,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn5&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E7%9A%84%E4%BD%9C%E8%AD%89"
+            },
+            {
+              "uid": "sn55.27",
+              "collection": "经藏/相应部_sn",
+              "title": "给孤独经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果被你记说。",
+              "score": 21.822303870576334,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.27&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E8%A2%AB%E4%BD%A0%E8%A8%98%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "sn55.39",
+              "collection": "经藏/相应部_sn",
+              "title": "葛利钩达经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果被你记说。",
+              "score": 21.822303870576334,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.39&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E8%A2%AB%E4%BD%A0%E8%A8%98%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "sn55.53",
+              "collection": "经藏/相应部_sn",
+              "title": "法施经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果被你们记说。",
+              "score": 20.67784041693902,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.53&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E8%A2%AB%E4%BD%A0%E5%80%91%E8%A8%98%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+              "score": 20.104245777651162,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn45.35",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 19.828441246461885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.37",
+              "collection": "经藏/相应部_sn",
+              "title": "婆罗门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 19.828441246461885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.37&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.39",
+              "collection": "经藏/相应部_sn",
+              "title": "梵行经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 19.828441246461885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.39&lang=zh&q=%E5%85%A5%E6%B5%81%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "一来果",
+          "hits": [
+            {
+              "uid": "sn45.35",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 22.517078418399834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.37",
+              "collection": "经藏/相应部_sn",
+              "title": "婆罗门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 22.517078418399834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.37&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.39",
+              "collection": "经藏/相应部_sn",
+              "title": "梵行经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 22.517078418399834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.39&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+              "score": 20.347102490478544,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn48.18",
+              "collection": "经藏/相应部_sn",
+              "title": "行者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是为了一来果的作证之向道者；",
+              "score": 20.24710445186618,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.18&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%82%BA%E4%BA%86%E4%B8%80%E4%BE%86%E6%9E%9C%E7%9A%84%E4%BD%9C%E8%AD%89%E4%B9%8B%E5%90%91%E9%81%93%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "an6.98",
+              "collection": "经藏/增支部_an",
+              "title": "无常经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这是不可能的，『不进入正性决定者将作证入流果或一来果或不还果或阿罗汉果。",
+              "score": 19.776919235083625,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.98&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E9%80%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84%EF%BC%8C%E3%80%8E%E4%B8%8D%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E8%80%85%E5%B0%87%E4%BD%9C%E8%AD%89%E5%85%A5%E6%B5%81%E6%9E%9C%E6%88%96%E4%B8%80%E4%BE%86%E6%9E%9C%E6%88%96%E4%B8%8D%E9%82%84%E6%9E%9C%E6%88%96%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "an6.101",
+              "collection": "经藏/增支部_an",
+              "title": "涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这是不可能的，『不进入正性决定者将作证入流果或一来果或不还果或阿罗汉果。",
+              "score": 19.776919235083625,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.101&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E9%80%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84%EF%BC%8C%E3%80%8E%E4%B8%8D%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E6%B1%BA%E5%AE%9A%E8%80%85%E5%B0%87%E4%BD%9C%E8%AD%89%E5%85%A5%E6%B5%81%E6%9E%9C%E6%88%96%E4%B8%80%E4%BE%86%E6%9E%9C%E6%88%96%E4%B8%8D%E9%82%84%E6%9E%9C%E6%88%96%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn55.56",
+              "collection": "经藏/相应部_sn",
+              "title": "一来果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）导向一来果的作证。",
+              "score": 19.405848695600618,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.56&lang=zh&q=%E4%B8%80%E4%BE%86%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8E%E5%90%91%E4%B8%80%E4%BE%86%E6%9E%9C%E7%9A%84%E4%BD%9C%E8%AD%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "不还果",
+          "hits": [
+            {
+              "uid": "sn47.29",
+              "collection": "经藏/相应部_sn",
+              "title": "富吉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不还果被你记说。",
+              "score": 12.988627637534568,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.29&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E9%82%84%E6%9E%9C%E8%A2%AB%E4%BD%A0%E8%A8%98%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "sn47.30",
+              "collection": "经藏/相应部_sn",
+              "title": "摩那提那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不还果被你记说。",
+              "score": 12.988627637534568,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.30&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%8D%E9%82%84%E6%9E%9C%E8%A2%AB%E4%BD%A0%E8%A8%98%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an6.65",
+              "collection": "经藏/增支部_an",
+              "title": "不还果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断这六法，他不可能作证不还果。",
+              "score": 10.636473705201269,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.65&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E9%80%99%E5%85%AD%E6%B3%95%EF%BC%8C%E4%BB%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn22.123",
+              "collection": "经藏/相应部_sn",
+              "title": "多闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）不还果。",
+              "score": 10.636473705201269,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.123&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "an6.65",
+              "collection": "经藏/增支部_an",
+              "title": "不还果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断这六法后，他可能作证不还果。",
+              "score": 10.181670235785104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.65&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E9%80%99%E5%85%AD%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%BB%96%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn48.18",
+              "collection": "经藏/相应部_sn",
+              "title": "行者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "较之弱者是为了不还果的作证之向道者；",
+              "score": 10.181670235785104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.18&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%BC%83%E4%B9%8B%E5%BC%B1%E8%80%85%E6%98%AF%E7%82%BA%E4%BA%86%E4%B8%8D%E9%82%84%E6%9E%9C%E7%9A%84%E4%BD%9C%E8%AD%89%E4%B9%8B%E5%90%91%E9%81%93%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "an6.65",
+              "collection": "经藏/增支部_an",
+              "title": "不还果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断六法，他不可能作证不还果，哪六个呢？",
+              "score": 9.034975780511475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.65&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E5%85%AD%E6%B3%95%EF%BC%8C%E4%BB%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E4%B8%8D%E9%82%84%E6%9E%9C%EF%BC%8C%E5%93%AA%E5%85%AD%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an6.65",
+              "collection": "经藏/增支部_an",
+              "title": "不还果经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断六法后，他可能作证不还果，哪六个呢？",
+              "score": 8.711396382639842,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.65&lang=zh&q=%E4%B8%8D%E9%82%84%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E5%85%AD%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%BB%96%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E4%B8%8D%E9%82%84%E6%9E%9C%EF%BC%8C%E5%93%AA%E5%85%AD%E5%80%8B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "阿罗汉果",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+              "score": 15.894905725582571,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C%EF%BC%9A%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "sn45.35",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 15.877609263640098,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.35&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.37",
+              "collection": "经藏/相应部_sn",
+              "title": "婆罗门法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 15.877609263640098,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.37&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.39",
+              "collection": "经藏/相应部_sn",
+              "title": "梵行经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "入流果、一来果、不还果、阿罗汉果，比丘们！",
+              "score": 15.877609263640098,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.39&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.257-263",
+              "collection": "经藏/增支部_an",
+              "title": "第二禅等七经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断这五法，他不可能作证阿罗汉果。",
+              "score": 15.376282558733124,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.257-263&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E9%80%99%E4%BA%94%E6%B3%95%EF%BC%8C%E4%BB%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "an5.257-263",
+              "collection": "经藏/增支部_an",
+              "title": "第二禅等七经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断这五法，他可能作证阿罗汉果。",
+              "score": 15.376282558733124,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.257-263&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E9%80%99%E4%BA%94%E6%B3%95%EF%BC%8C%E4%BB%96%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "an5.265-271",
+              "collection": "经藏/增支部_an",
+              "title": "下一个第二禅等七经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不舍断这五法，他不可能作证阿罗汉果。",
+              "score": 15.376282558733124,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.265-271&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%8D%A8%E6%96%B7%E9%80%99%E4%BA%94%E6%B3%95%EF%BC%8C%E4%BB%96%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            },
+            {
+              "uid": "an5.265-271",
+              "collection": "经藏/增支部_an",
+              "title": "下一个第二禅等七经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断这五法，他可能作证阿罗汉果。",
+              "score": 15.376282558733124,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.265-271&lang=zh&q=%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E9%80%99%E4%BA%94%E6%B3%95%EF%BC%8C%E4%BB%96%E5%8F%AF%E8%83%BD%E4%BD%9C%E8%AD%89%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "是，善生听完后自请做\"等同奴婢\"的妻子（顺从而无嗔），这反映了古印度的婚姻伦理观，读者可结合时代背景理解，不必照搬字面。 ### 正命与财富观 佛陀教导财富应\"通过积极的努力……合法获得\"，且应同时满足自己、供养家人、也要惠及\"有德行的沙门及婆罗门\"。追求现世乐的同时，佛陀也提醒在家弟子不应以此为满足，还应培养**信、戒、舍、慧**四种美德，为来世的幸福铺路——换言之，在家人的理想典范，不是仅仅供养僧团的\"虔诚出资者\"，而是**已证入流果的圣者**。 ### 群体社会：从僧团规范到社会稳定 本节最富现实意义的，是\"社会稳定的七项原则\"（跋耆七不衰退法）：摩揭陀国阿阇世王欲攻打跋耆国，佛陀借此机会向阿难开示七种使一国不衰退的条件： 1. 经常集合、时常集合，保持公共议事的活力； 2. 和合地集合、和合地结束、和合地处理公共事务； 3. 不任意设立旧法未设立者，也不断绝已经设立的法，而依循往昔跋耆人所立制度； 4. 恭敬、尊重、崇敬族中长老，并认为长老的意见值得听取； 5. 不强拉良家妇人与良家少女，不以暴力破坏家庭与女性安全； 6. 恭敬、尊重内外塔庙，不使既有合法供养衰损； 7. 如法守护阿罗汉与修行人，使未来未至者愿意前来，已来者能安乐居住。 阿阇世王的大臣听闻后判断：跋耆人只要具备这些原",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%85%A5%E6%B5%81%E6%9E%9C&scope=site",
+          "query": "入流果"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "明月 **弓箭手比喻**（XXII.12-13）： - 种姓智 = 举棒给弓箭手的人（给出信号） - 道智 = 弓箭手（不停顿地射中目标） **第一道的利益**（XXII.14）： - 刺穿贪嗔痴的聚集 - 干涸轮回苦海 - 关闭一切堕落之门 - 提供七种圣财的实际体验 - 舍弃八邪道 - 消除一切敌意与恐惧 - 导向成为如来法子 - 获得数百种其他祝福 #### 1.2 四道四果与八种圣者（XXII.15-31） **第一果（入流果）**（XXII.15-21）： - 随即生起两三个果报意识 - 此后意识进入生命流，然后以复审为目的升起 - 五种复审：复审道、复审果、复审舍弃的烦恼、复审尚存的烦恼、复审涅槃 - 此入流者最多七次投生于天界和人界，而后证得苦的终结 **第二道与第二果（一来）**（XXII.22-24）： - 通过削弱贪欲和嗔恚（五下分结中的感官贪与嗔恚） - 还来者：再回此世一次，即得苦的终结 **第三道与第三果（不还）**（XXII.25-27）： - 通过彻底断除贪欲和嗔恚 - 不还者：死后以化生方式出现于净居天，在那里证得涅槃，不再返回此界 **第四道与第四果（阿罗汉）**（XXII.28-31）： - 通过断除剩余五上分结（色界贪、无色界贪、慢、掉举、无明） -",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%85%A5%E6%B5%81%E6%9E%9C&scope=site",
+          "query": "入流果"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g15",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 15,
+      "label": "四沙门果",
+      "members": "入流果、一来果、不还果、阿罗汉果",
+      "member_items": [
+        "入流果",
+        "一来果",
+        "不还果",
+        "阿罗汉果"
+      ],
+      "dn34_status": null,
+      "source_text": "四沙门果：入流果、一来果、不还果、阿罗汉果。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C"
+    },
+    {
+      "id": "dn34-n4-g10",
+      "sutta": "dn34",
+      "number": 4,
+      "order": 10,
+      "label": "四沙门果",
+      "members": "入流果、一来果、不还果、阿罗汉果",
+      "member_items": [
+        "入流果",
+        "一来果",
+        "不还果",
+        "阿罗汉果"
+      ],
+      "dn34_status": "应作证",
+      "source_text": "（十）哪些是应该被作证的四法呢？四沙门果：入流果、一来果、不还果、阿罗汉果，这些是应该被作证的四法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%B2%99%E9%96%80%E6%9E%9C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%85%A5%E6%B5%81%E6%9E%9C%E3%80%81%E4%B8%80%E4%BE%86%E6%9E%9C%E3%80%81%E4%B8%8D%E9%82%84%E6%9E%9C%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E6%9E%9C"
+    }
+  ]
+}

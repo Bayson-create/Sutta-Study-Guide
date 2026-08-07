@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-c147192bd83d",
+    "number": 4,
+    "label": "四力",
+    "member_items": [
+      "活力之力",
+      "念力",
+      "定力",
+      "慧力"
+    ],
+    "group_ids": [
+      "dn33-n4-g26"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四力",
+      "活力之力",
+      "念力",
+      "定力",
+      "慧力"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四力」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：活力之力、念力、定力、慧力。[1]\n\n## 所含各法\n### 活力之力\n经文将「活力之力」列为「四力」的一个成员。Early Buddhist 用该名词检索时，在《扩大经》命中：什么是活力之力？。[3]\n### 念力\n经文将「念力」列为「四力」的一个成员。Early Buddhist 用该名词检索时，在《扩大经》命中：什么是念力？。[4]\n### 定力\n经文将「定力」列为「四力」的一个成员。Early Buddhist 用该名词检索时，在《扩大经》命中：什么是定力？。[5]\n### 慧力\n经文将「慧力」列为「四力」的一个成员。Early Buddhist 用该名词检索时，在《扩大经》命中：什么是慧力？。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四力",
+          "text": "四力：活力之力、念力、定力、慧力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E5%BF%B5%E5%8A%9B%E3%80%81%E5%AE%9A%E5%8A%9B%E3%80%81%E6%85%A7%E5%8A%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.152",
+          "text": "这些是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.152&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.2",
+          "text": "什么是活力之力？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.14",
+          "text": "什么是念力？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E5%8A%9B%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.14",
+          "text": "什么是定力？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E5%8A%9B%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.2",
+          "text": "什么是慧力？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E5%8A%9B%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.153",
+          "text": "这是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.153&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.154",
+          "text": "这是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.154&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.155",
+          "text": "这是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.155&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.261",
+          "text": "这些是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.261&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.5",
+          "text": "这是四力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四力：活力之力、念力、定力、慧力。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8A%9B%EF%BC%9A%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E5%BF%B5%E5%8A%9B%E3%80%81%E5%AE%9A%E5%8A%9B%E3%80%81%E6%85%A7%E5%8A%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.5",
+          "text": "我有四力：慧力、活力之力、无罪力、摄力，劣慧者才会害怕活命的恐怖；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E6%9C%89%E5%9B%9B%E5%8A%9B%EF%BC%9A%E6%85%A7%E5%8A%9B%E3%80%81%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E7%84%A1%E7%BD%AA%E5%8A%9B%E3%80%81%E6%94%9D%E5%8A%9B%EF%BC%8C%E5%8A%A3%E6%85%A7%E8%80%85%E6%89%8D%E6%9C%83%E5%AE%B3%E6%80%95%E6%B4%BB%E5%91%BD%E7%9A%84%E6%81%90%E6%80%96%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "“资粮位”的漫长与模糊：大乘修行分为五位（资粮位、加行位、通达位、修习位、究竟位）。大乘认为凡夫要修满“十信、十住、十行、十回向”这四十个阶位，才能达到“初地菩萨”（登地）。这期间需要经历整整一个阿僧祇劫。对于一个当下的凡夫来说，这四开四十个阶位在日常生活中极其抽象，缺乏具体的、能量化的、可检测的指标。 - “凡圣不分”与口头禅：大乘（尤其是后期的禅宗、某些如来藏学派）强调“凡俗即菩提”、“顿悟成佛”、“在红尘中练心”。这导致很多缺乏定力的初学者，在还没有断除一丝一毫贪嗔痴、甚至连最基本的五戒都持不好的情况下，就误以为自己是在行“大乘的无相布施”或“游戏人间”。这种“以凡滥圣”的现象，在修学路线上极易走火入魔。 - 缺乏具体的“定慧路线图”：大乘经典（如《金刚经》、《华严经》）往往在境界和原理上描绘得极度宏大、圆融、优美，但在“如何从呼吸开始修定，如何辨识色法、名法，如何一步步证得十六观智”这些具体的、临床手术式的原始佛教心理实修技术上，缺乏像上座部《清净道论》那样 step-by-step 的指导。 相反，上座部的菩萨道具有极强的“数据化”和“可操作性”。它规定你要成佛，就必须去刷“十波罗蜜”的经验值，每一项波罗蜜都有具体的行为准则和可量化的标准，凡夫一听就能在日常生活中去践行，没有任何玄虚的空间",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可动摇——信力、精进力、念力、定力、慧力。阿姜查的弟子在证悟时描述：\"在信、精进、正念、定与慧等五根五力的合力支持下，无明的堡垒被攻破了。\" **五根与七清净** 五根在七清净的修道结构中贯穿始终：信支撑戒清净，精进支撑各层清净，念是所有念处修习的基础，定是心清净，慧是从见清净直至道智的全程核心。 --- # 二十三、四神足（Cattāro Iddhipādā） **定义** 神足（iddhipāda，\"如意足\"）意为成就（iddhi）的基础（pāda），是达成心灵成就的四种支撑力。 **四种神足** 1. 欲神足（chanda-iddhipāda）：强烈的意欲、善法的愿望 2. 勤神足（vīriya-iddhipāda）：坚持不懈的精进 3. 心神足（citta-iddhipā",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BF%B5%E5%8A%9B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "断，唯有阿罗汉般涅槃时的最后死心，才不再引发结生心，如同\"最后一位母亲没有女儿\"。 5. **等无间缘**（Samanantara-paccaya）：与无间缘所摄同类，说明名法之间\"完全没有间隔\"（不同于色法单位之间尚有虚空间隔），故称为\"彻底的无间\"。文中特别讨论了灭尽定（Nirodhasamāpatti）与无想有情天（Asaññasatta）中，看似\"心流中断\"长达七日或五百大劫的特殊情形，说明这并非无间缘的真正断绝，而是其运作被禅定力或业力\"延后\"。 6. **俱生缘**（Sahajāta-paccaya）：同时生起、彼此扶持的关系，譬喻如太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "有素的心又如何带来幸福与解脱。**\"随着心的成长和升华，幸福、自由和平静就会油然而生\"**——这奠定了全章\"心为根本，一切法由心生\"的基调。 ### 止与观：两条腿走路 菩提比丘清楚地界定：止（samatha）令心从贪欲、恶念等烦恼情绪中解脱；观（vipassanā）令心洞悉诸法实相，从无明中解脱。两者缺一不可，且修行次第因人而异，经中至少提到四种进路： 1. 先止后观（传统路线，止达禅那后修观）； 2. 先观后止（利根者先以基本定力观照实相，再回头修定以巩固）； 3. 止观交替并进； 4. 因对佛法生起强烈激情而自然入定（较特殊、不易复制的路线）。 止观最终须双运俱足，才能引发\"出世间智\"，依次断除十结，证得入流、一来、不还、阿罗汉四个果位。 ### 五盖：修定的主要障碍 贪欲盖、嗔恚盖、惛沉睡眠盖、掉举恶作盖、疑盖——五盖如同\"浊水令我们无法在碗里看清自己的脸之倒影\"，是禅修的头号敌人，必须先去除，止观才能成功生起。 ### 净化如炼金：心的纯化四阶段 本章用一个极为生动的比喻描述禅修净化心的过程——**如同炼金匠冶炼黄金**：先去除粗重的身语意恶行，再去除中等的不善念头（淫欲、恶意、害人之想），再去除更微细的胡思乱想，最后连对法本身的执著也要放下——这是最细微、最容易被忽略的最后一",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "而构成它的优势：止禅阶段心只须稳定于一个清楚、连续、适合专注的所缘，直到禅相成熟、证得禅那。 当禅修者从第四禅出定后，才依注释所说，取入息出息或诸禅支为观察入口，转向究竟法：或观察入出息的四界，辨明色聚与色法；或观察禅那名法，再进入名色、缘起与三相观。也就是说，安般念能清楚地完成**「先止后观」**的转换。 #### 四、护持日常修行与长期波罗蜜 安般念不仅是一次坐禅中的技术，也是一种可长期反复培育的业处。它能帮助禅修者积累定力、念力与观智所需的波罗蜜；当其它业处不稳时，也可回到呼吸所缘重新令心安定。 从全书体系看，安般念的功德不在于单独替代全部修行，而在于它能把心训练到可工作的状态：清晰、稳定、柔软、堪任。这样的心再去辨明色法、名法、因果与三相，才有可能真正进入帕奥禅法所要求的次第。 --- ## 第七章：四护卫禅 ### 核心论点：慈心观、佛随念、不净观、死随念的次第修法与护卫功能 **「四护卫禅」**之名，正因这四种禅法如护卫般守护禅修者：慈心观令人不易遭遇厄难与非人干扰；佛随念令心清晰明亮；不净观对治贪欲；死随念在悚惧退失、心攀外缘时激发出离心。 #### 一、慈心观（Metta Bhavana）——证至第三禅 **修习对象的规则：** - 单一对象时，不可选异性（以防贪欲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BF%B5%E5%8A%9B&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四力",
+          "hits": [
+            {
+              "uid": "an4.152",
+              "collection": "经藏/增支部_an",
+              "title": "信力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.152&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.153",
+              "collection": "经藏/增支部_an",
+              "title": "慧力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.153&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.154",
+              "collection": "经藏/增支部_an",
+              "title": "念力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.154&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.155",
+              "collection": "经藏/增支部_an",
+              "title": "省察力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.155&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.261",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.261&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四力。",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四力：活力之力、念力、定力、慧力。",
+              "score": 9.862809352958978,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8A%9B%EF%BC%9A%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E5%BF%B5%E5%8A%9B%E3%80%81%E5%AE%9A%E5%8A%9B%E3%80%81%E6%85%A7%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我有四力：慧力、活力之力、无罪力、摄力，劣慧者才会害怕活命的恐怖；",
+              "score": 7.257255029523437,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E6%9C%89%E5%9B%9B%E5%8A%9B%EF%BC%9A%E6%85%A7%E5%8A%9B%E3%80%81%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E7%84%A1%E7%BD%AA%E5%8A%9B%E3%80%81%E6%94%9D%E5%8A%9B%EF%BC%8C%E5%8A%A3%E6%85%A7%E8%80%85%E6%89%8D%E6%9C%83%E5%AE%B3%E6%80%95%E6%B4%BB%E5%91%BD%E7%9A%84%E6%81%90%E6%80%96%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "活力之力",
+          "hits": [
+            {
+              "uid": "an5.2",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力之力？",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.2",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力之力。",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力之力？",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力之力。",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力之力？",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力之力。",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为活力之力。",
+              "score": 23.067314197960336,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是活力之力呢？",
+              "score": 21.85755659263571,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "念力",
+          "hits": [
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是念力？",
+              "score": 12.55302234618151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为念力。",
+              "score": 12.55302234618151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%BF%B5%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是念力？",
+              "score": 12.55302234618151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BF%B5%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为念力。",
+              "score": 12.55302234618151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%BF%B5%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念力与定力。",
+              "score": 12.55302234618151,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E5%8A%9B%E8%88%87%E5%AE%9A%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an5.15",
+              "collection": "经藏/增支部_an",
+              "title": "应该被见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念力应该在哪里被见？",
+              "score": 11.236344199538344,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.15&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BF%B5%E5%8A%9B%E6%87%89%E8%A9%B2%E5%9C%A8%E5%93%AA%E8%A3%A1%E8%A2%AB%E8%A6%8B%EF%BC%9F"
+            },
+            {
+              "uid": "an7.3",
+              "collection": "经藏/增支部_an",
+              "title": "力的简要经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念力与定，第七是慧，",
+              "score": 10.676422765784647,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.3&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BF%B5%E5%8A%9B%E8%88%87%E5%AE%9A%EF%BC%8C%E7%AC%AC%E4%B8%83%E6%98%AF%E6%85%A7%EF%BC%8C"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念力与定，第七是慧，",
+              "score": 10.676422765784647,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E5%BF%B5%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BF%B5%E5%8A%9B%E8%88%87%E5%AE%9A%EF%BC%8C%E7%AC%AC%E4%B8%83%E6%98%AF%E6%85%A7%EF%BC%8C"
+            }
+          ]
+        },
+        {
+          "query": "定力",
+          "hits": [
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是定力？",
+              "score": 12.312732980506446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为定力。",
+              "score": 12.312732980506446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%AE%9A%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是定力？",
+              "score": 12.312732980506446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%AE%9A%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为定力。",
+              "score": 12.312732980506446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%AE%9A%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "念力与定力。",
+              "score": 12.312732980506446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E5%8A%9B%E8%88%87%E5%AE%9A%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an5.15",
+              "collection": "经藏/增支部_an",
+              "title": "应该被见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "定力应该在哪里被见？",
+              "score": 11.02125862526347,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.15&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%9A%E5%8A%9B%E6%87%89%E8%A9%B2%E5%9C%A8%E5%93%AA%E8%A3%A1%E8%A2%AB%E8%A6%8B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.15",
+              "collection": "经藏/增支部_an",
+              "title": "应该被见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，定力应该在四禅上被见。",
+              "score": 9.522971435758356,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.15&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E5%AE%9A%E5%8A%9B%E6%87%89%E8%A9%B2%E5%9C%A8%E5%9B%9B%E7%A6%AA%E4%B8%8A%E8%A2%AB%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "an6.72",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "具备这六法的比丘，不能达到定力。",
+              "score": 9.522971435758356,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.72&lang=zh&q=%E5%AE%9A%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%B7%E5%82%99%E9%80%99%E5%85%AD%E6%B3%95%E7%9A%84%E6%AF%94%E4%B8%98%EF%BC%8C%E4%B8%8D%E8%83%BD%E9%81%94%E5%88%B0%E5%AE%9A%E5%8A%9B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "慧力",
+          "hits": [
+            {
+              "uid": "an5.2",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧力？",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.2",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧力。",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.2&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧力？",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an5.14",
+              "collection": "经藏/增支部_an",
+              "title": "扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧力。",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.14&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧力？",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E5%8A%9B%EF%BC%9F"
+            },
+            {
+              "uid": "an7.4",
+              "collection": "经藏/增支部_an",
+              "title": "力的扩大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧力。",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.4&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为慧力。",
+              "score": 11.787499479696837,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%85%A7%E5%8A%9B%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是慧力呢？",
+              "score": 11.135092744164114,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E6%85%A7%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%85%A7%E5%8A%9B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "“资粮位”的漫长与模糊：大乘修行分为五位（资粮位、加行位、通达位、修习位、究竟位）。大乘认为凡夫要修满“十信、十住、十行、十回向”这四十个阶位，才能达到“初地菩萨”（登地）。这期间需要经历整整一个阿僧祇劫。对于一个当下的凡夫来说，这四开四十个阶位在日常生活中极其抽象，缺乏具体的、能量化的、可检测的指标。 - “凡圣不分”与口头禅：大乘（尤其是后期的禅宗、某些如来藏学派）强调“凡俗即菩提”、“顿悟成佛”、“在红尘中练心”。这导致很多缺乏定力的初学者，在还没有断除一丝一毫贪嗔痴、甚至连最基本的五戒都持不好的情况下，就误以为自己是在行“大乘的无相布施”或“游戏人间”。这种“以凡滥圣”的现象，在修学路线上极易走火入魔。 - 缺乏具体的“定慧路线图”：大乘经典（如《金刚经》、《华严经》）往往在境界和原理上描绘得极度宏大、圆融、优美，但在“如何从呼吸开始修定，如何辨识色法、名法，如何一步步证得十六观智”这些具体的、临床手术式的原始佛教心理实修技术上，缺乏像上座部《清净道论》那样 step-by-step 的指导。 相反，上座部的菩萨道具有极强的“数据化”和“可操作性”。它规定你要成佛，就必须去刷“十波罗蜜”的经验值，每一项波罗蜜都有具体的行为准则和可量化的标准，凡夫一听就能在日常生活中去践行，没有任何玄虚的空间",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site",
+          "query": "定力"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可动摇——信力、精进力、念力、定力、慧力。阿姜查的弟子在证悟时描述：\"在信、精进、正念、定与慧等五根五力的合力支持下，无明的堡垒被攻破了。\" **五根与七清净** 五根在七清净的修道结构中贯穿始终：信支撑戒清净，精进支撑各层清净，念是所有念处修习的基础，定是心清净，慧是从见清净直至道智的全程核心。 --- # 二十三、四神足（Cattāro Iddhipādā） **定义** 神足（iddhipāda，\"如意足\"）意为成就（iddhi）的基础（pāda），是达成心灵成就的四种支撑力。 **四种神足** 1. 欲神足（chanda-iddhipāda）：强烈的意欲、善法的愿望 2. 勤神足（vīriya-iddhipāda）：坚持不懈的精进 3. 心神足（citta-iddhipā",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BF%B5%E5%8A%9B&scope=site",
+          "query": "念力"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "断，唯有阿罗汉般涅槃时的最后死心，才不再引发结生心，如同\"最后一位母亲没有女儿\"。 5. **等无间缘**（Samanantara-paccaya）：与无间缘所摄同类，说明名法之间\"完全没有间隔\"（不同于色法单位之间尚有虚空间隔），故称为\"彻底的无间\"。文中特别讨论了灭尽定（Nirodhasamāpatti）与无想有情天（Asaññasatta）中，看似\"心流中断\"长达七日或五百大劫的特殊情形，说明这并非无间缘的真正断绝，而是其运作被禅定力或业力\"延后\"。 6. **俱生缘**（Sahajāta-paccaya）：同时生起、彼此扶持的关系，譬喻如太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site",
+          "query": "定力"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "有素的心又如何带来幸福与解脱。**\"随着心的成长和升华，幸福、自由和平静就会油然而生\"**——这奠定了全章\"心为根本，一切法由心生\"的基调。 ### 止与观：两条腿走路 菩提比丘清楚地界定：止（samatha）令心从贪欲、恶念等烦恼情绪中解脱；观（vipassanā）令心洞悉诸法实相，从无明中解脱。两者缺一不可，且修行次第因人而异，经中至少提到四种进路： 1. 先止后观（传统路线，止达禅那后修观）； 2. 先观后止（利根者先以基本定力观照实相，再回头修定以巩固）； 3. 止观交替并进； 4. 因对佛法生起强烈激情而自然入定（较特殊、不易复制的路线）。 止观最终须双运俱足，才能引发\"出世间智\"，依次断除十结，证得入流、一来、不还、阿罗汉四个果位。 ### 五盖：修定的主要障碍 贪欲盖、嗔恚盖、惛沉睡眠盖、掉举恶作盖、疑盖——五盖如同\"浊水令我们无法在碗里看清自己的脸之倒影\"，是禅修的头号敌人，必须先去除，止观才能成功生起。 ### 净化如炼金：心的纯化四阶段 本章用一个极为生动的比喻描述禅修净化心的过程——**如同炼金匠冶炼黄金**：先去除粗重的身语意恶行，再去除中等的不善念头（淫欲、恶意、害人之想），再去除更微细的胡思乱想，最后连对法本身的执著也要放下——这是最细微、最容易被忽略的最后一",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site",
+          "query": "定力"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "而构成它的优势：止禅阶段心只须稳定于一个清楚、连续、适合专注的所缘，直到禅相成熟、证得禅那。 当禅修者从第四禅出定后，才依注释所说，取入息出息或诸禅支为观察入口，转向究竟法：或观察入出息的四界，辨明色聚与色法；或观察禅那名法，再进入名色、缘起与三相观。也就是说，安般念能清楚地完成**「先止后观」**的转换。 #### 四、护持日常修行与长期波罗蜜 安般念不仅是一次坐禅中的技术，也是一种可长期反复培育的业处。它能帮助禅修者积累定力、念力与观智所需的波罗蜜；当其它业处不稳时，也可回到呼吸所缘重新令心安定。 从全书体系看，安般念的功德不在于单独替代全部修行，而在于它能把心训练到可工作的状态：清晰、稳定、柔软、堪任。这样的心再去辨明色法、名法、因果与三相，才有可能真正进入帕奥禅法所要求的次第。 --- ## 第七章：四护卫禅 ### 核心论点：慈心观、佛随念、不净观、死随念的次第修法与护卫功能 **「四护卫禅」**之名，正因这四种禅法如护卫般守护禅修者：慈心观令人不易遭遇厄难与非人干扰；佛随念令心清晰明亮；不净观对治贪欲；死随念在悚惧退失、心攀外缘时激发出离心。 #### 一、慈心观（Metta Bhavana）——证至第三禅 **修习对象的规则：** - 单一对象时，不可选异性（以防贪欲",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BF%B5%E5%8A%9B&scope=site",
+          "query": "念力"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "**作者**：Bhadantācariya Buddhaghosa（觉音尊者） **译者**：Bhikkhu Ñāṇamoli（那罗摩利比库） **版本**：2011年第四版 --- ## 总体框架 《清净之道》分为三大部分： - **Part I：戒律 (Sila)** - 第1-2章：关于道德修养的基础 - **Part II：定力/禅定 (Samādhi)** - 第3-13章：关于心理集中和禅修的详细指导 - **Part III：智慧 (Paññā)** - 第14-23章：关于如实理解名色、缘起与四谛的智慧修习 ### 引用与编者说明 本文中的“§”指相应章节的正文段落号；由于原书每章的段落号会重新从1开始，正式核对时应以“章号.段落号”作为唯一定位方式，例如“XI.24”，而不能单独使用“§24”。D、M、S、A、Sn、Ud、Vibh、Patis、Nidd等标记指被《清净道论》引用的外部经典或论书。带有“编者分析”“结构性解读”等性质的文字，不视为觉音尊者原文。 --- ## 第一章 戒之解说（Sīla-niddesa，Description of Virtue） ###",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%9A%E5%8A%9B&scope=site",
+          "query": "定力"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g26",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 26,
+      "label": "四力",
+      "members": "活力之力、念力、定力、慧力",
+      "member_items": [
+        "活力之力",
+        "念力",
+        "定力",
+        "慧力"
+      ],
+      "dn34_status": null,
+      "source_text": "四力：活力之力、念力、定力、慧力。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8A%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B4%BB%E5%8A%9B%E4%B9%8B%E5%8A%9B%E3%80%81%E5%BF%B5%E5%8A%9B%E3%80%81%E5%AE%9A%E5%8A%9B%E3%80%81%E6%85%A7%E5%8A%9B"
+    }
+  ]
+}

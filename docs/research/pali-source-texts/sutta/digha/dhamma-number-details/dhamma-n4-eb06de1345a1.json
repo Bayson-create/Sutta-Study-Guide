@@ -1,0 +1,558 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-eb06de1345a1",
+    "number": 4,
+    "label": "四种系缚",
+    "member_items": [
+      "贪婪的身系缚",
+      "恶意的身系缚",
+      "戒禁取的身系缚",
+      "这是真理之执著的身系缚"
+    ],
+    "group_ids": [
+      "dn33-n4-g34"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四种系缚",
+      "贪婪的身系缚",
+      "恶意的身系缚",
+      "戒禁取的身系缚",
+      "这是真理之执著的身系缚"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四种系缚」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。[1]\n\n## 所含各法\n### 贪婪的身系缚\n经文将「贪婪的身系缚」列为「四种系缚」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。。[1]\n### 恶意的身系缚\n经文将「恶意的身系缚」列为「四种系缚」的一个成员。Early Buddhist 用该名词检索时，在《系缚经》命中：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！。[4]\n### 戒禁取的身系缚\n经文将「戒禁取的身系缚」列为「四种系缚」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。。[1]\n### 这是真理之执著的身系缚\n经文将「这是真理之执著的身系缚」列为「四种系缚」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四种系缚",
+          "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.175",
+          "text": "这些是四种系缚。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.175",
+          "text": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%EF%BC%BB%E5%8F%AA%E6%9C%89%EF%BC%BD%E9%80%99%E6%98%AF%E7%9C%9F%E5%AF%A6%E4%B9%8B%E5%9F%B7%E6%8C%81%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.175",
+          "text": "有这四种系缚，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.175",
+          "text": "为了这四种系缚的证智、遍知、灭尽、舍断，……（中略）这八支圣道应该被修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%82%BA%E4%BA%86%E9%80%99%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%E7%9A%84%E8%AD%89%E6%99%BA%E3%80%81%E9%81%8D%E7%9F%A5%E3%80%81%E6%BB%85%E7%9B%A1%E3%80%81%E6%8D%A8%E6%96%B7%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.206",
+          "text": "系缚经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.206&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn3.10",
+          "text": "系缚经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.175",
+          "text": "系缚经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn3",
+          "text": "舍断被血统说系缚与被种姓说系缚与被慢心说系缚与被嫁娶系缚后，有无上明与行具足的作证。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn3&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E8%A2%AB%E8%A1%80%E7%B5%B1%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E7%A8%AE%E5%A7%93%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E6%85%A2%E5%BF%83%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E5%AB%81%E5%A8%B6%E7%B9%AB%E7%B8%9B%E5%BE%8C%EF%BC%8C%E6%9C%89%E7%84%A1%E4%B8%8A%E6%98%8E%E8%88%87%E8%A1%8C%E5%85%B7%E8%B6%B3%E7%9A%84%E4%BD%9C%E8%AD%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn73",
+          "text": "贪婪是不善的，不贪婪是善的；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.169",
+          "text": "贪婪是此岸，不贪婪是彼岸；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.169&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.170",
+          "text": "贪婪是此岸，不贪婪是彼岸；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.170&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四种系缚",
+          "hits": [
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是四种系缚。",
+              "score": 20.38385772743496,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种系缚，哪四种呢？",
+              "score": 19.520840003317165,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+              "score": 17.875180948350735,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "为了这四种系缚的证智、遍知、灭尽、舍断，……（中略）这八支圣道应该被修习。",
+              "score": 10.211063830826106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%82%BA%E4%BA%86%E9%80%99%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%E7%9A%84%E8%AD%89%E6%99%BA%E3%80%81%E9%81%8D%E7%9F%A5%E3%80%81%E6%BB%85%E7%9B%A1%E3%80%81%E6%8D%A8%E6%96%B7%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "an5.206",
+              "collection": "经藏/增支部_an",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.206&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn3.10",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "dn3",
+              "collection": "经藏/长部_dn",
+              "title": "安玻德经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断被血统说系缚与被种姓说系缚与被慢心说系缚与被嫁娶系缚后，有无上明与行具足的作证。",
+              "score": 9.77236535237394,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn3&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E8%A2%AB%E8%A1%80%E7%B5%B1%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E7%A8%AE%E5%A7%93%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E6%85%A2%E5%BF%83%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E5%AB%81%E5%A8%B6%E7%B9%AB%E7%B8%9B%E5%BE%8C%EF%BC%8C%E6%9C%89%E7%84%A1%E4%B8%8A%E6%98%8E%E8%88%87%E8%A1%8C%E5%85%B7%E8%B6%B3%E7%9A%84%E4%BD%9C%E8%AD%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "贪婪的身系缚",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+              "score": 28.472815281990997,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！",
+              "score": 27.715385638643074,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%EF%BC%BB%E5%8F%AA%E6%9C%89%EF%BC%BD%E9%80%99%E6%98%AF%E7%9C%9F%E5%AF%A6%E4%B9%8B%E5%9F%B7%E6%8C%81%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn73",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪是不善的，不贪婪是善的；",
+              "score": 10.899651203971551,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "an10.169",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪是此岸，不贪婪是彼岸；",
+              "score": 10.899651203971551,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.169&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "an10.170",
+              "collection": "经藏/增支部_an",
+              "title": "此岸经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪是此岸，不贪婪是彼岸；",
+              "score": 10.899651203971551,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.170&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            },
+            {
+              "uid": "an10.175",
+              "collection": "经藏/增支部_an",
+              "title": "回避经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对贪婪来说，不贪婪是回避的。",
+              "score": 10.899651203971551,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.175&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E8%B2%AA%E5%A9%AA%E4%BE%86%E8%AA%AA%EF%BC%8C%E4%B8%8D%E8%B2%AA%E5%A9%AA%E6%98%AF%E8%BF%B4%E9%81%BF%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn42.8",
+              "collection": "经藏/相应部_sn",
+              "title": "吹海螺者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断贪婪后，他是不贪婪者；",
+              "score": 10.551405982653801,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn42.8&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E8%B2%AA%E5%A9%AA%E5%BE%8C%EF%BC%8C%E4%BB%96%E6%98%AF%E4%B8%8D%E8%B2%AA%E5%A9%AA%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn42.13",
+              "collection": "经藏/相应部_sn",
+              "title": "玻得里亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断贪婪后，是不贪婪者；",
+              "score": 10.551405982653801,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn42.13&lang=zh&q=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E8%B2%AA%E5%A9%AA%E5%BE%8C%EF%BC%8C%E6%98%AF%E4%B8%8D%E8%B2%AA%E5%A9%AA%E8%80%85%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "恶意的身系缚",
+          "hits": [
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！",
+              "score": 27.1126589666013,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%EF%BC%BB%E5%8F%AA%E6%9C%89%EF%BC%BD%E9%80%99%E6%98%AF%E7%9C%9F%E5%AF%A6%E4%B9%8B%E5%9F%B7%E6%8C%81%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+              "score": 26.636051907709522,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "an5.206",
+              "collection": "经藏/增支部_an",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.206&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn3.10",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.10&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "dn3",
+              "collection": "经藏/长部_dn",
+              "title": "安玻德经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍断被血统说系缚与被种姓说系缚与被慢心说系缚与被嫁娶系缚后，有无上明与行具足的作证。",
+              "score": 9.77236535237394,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn3&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%8D%A8%E6%96%B7%E8%A2%AB%E8%A1%80%E7%B5%B1%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E7%A8%AE%E5%A7%93%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E6%85%A2%E5%BF%83%E8%AA%AA%E7%B9%AB%E7%B8%9B%E8%88%87%E8%A2%AB%E5%AB%81%E5%A8%B6%E7%B9%AB%E7%B8%9B%E5%BE%8C%EF%BC%8C%E6%9C%89%E7%84%A1%E4%B8%8A%E6%98%8E%E8%88%87%E8%A1%8C%E5%85%B7%E8%B6%B3%E7%9A%84%E4%BD%9C%E8%AD%89%E3%80%82"
+            },
+            {
+              "uid": "mn73",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "恶意是不善的，无恶意是善的；",
+              "score": 9.685143771156106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn73&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%96%84%E7%9A%84%EF%BC%9B"
+            },
+            {
+              "uid": "an10.169",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "恶意是此岸，无恶意是彼岸；",
+              "score": 9.685143771156106,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.169&lang=zh&q=%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%83%A1%E6%84%8F%E6%98%AF%E6%AD%A4%E5%B2%B8%EF%BC%8C%E7%84%A1%E6%83%A1%E6%84%8F%E6%98%AF%E5%BD%BC%E5%B2%B8%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "戒禁取的身系缚",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+              "score": 27.6159717381558,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！",
+              "score": 26.614786608847073,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%EF%BC%BB%E5%8F%AA%E6%9C%89%EF%BC%BD%E9%80%99%E6%98%AF%E7%9C%9F%E5%AF%A6%E4%B9%8B%E5%9F%B7%E6%8C%81%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心不被戒禁取缠缚、征服，如实了知已生起的戒禁取之出离，他的戒禁取含烦恼潜在趋势被舍断；",
+              "score": 11.353365906714975,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E4%B8%8D%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E4%BB%96%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E5%90%AB%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E8%A2%AB%E6%8D%A8%E6%96%B7%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他住于心被戒禁取缠缚、征服，不如实了知已生起的戒禁取之出离，戒禁取成为他的惯习而未被排除，则它是下分结；",
+              "score": 10.95867110638322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%BF%83%E8%A2%AB%E6%88%92%E7%A6%81%E5%8F%96%E7%BA%8F%E7%B8%9B%E3%80%81%E5%BE%81%E6%9C%8D%EF%BC%8C%E4%B8%8D%E5%A6%82%E5%AF%A6%E4%BA%86%E7%9F%A5%E5%B7%B2%E7%94%9F%E8%B5%B7%E7%9A%84%E6%88%92%E7%A6%81%E5%8F%96%E4%B9%8B%E5%87%BA%E9%9B%A2%EF%BC%8C%E6%88%92%E7%A6%81%E5%8F%96%E6%88%90%E7%82%BA%E4%BB%96%E7%9A%84%E6%85%A3%E7%BF%92%E8%80%8C%E6%9C%AA%E8%A2%AB%E6%8E%92%E9%99%A4%EF%BC%8C%E5%89%87%E5%AE%83%E6%98%AF%E4%B8%8B%E5%88%86%E7%B5%90%EF%BC%9B"
+            },
+            {
+              "uid": "mn64",
+              "collection": "经藏/中部_mn",
+              "title": "玛鲁迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但戒禁取的烦恼潜在趋势潜伏于其中；",
+              "score": 10.274988708483779,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn64&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E6%BD%9B%E4%BC%8F%E6%96%BC%E5%85%B6%E4%B8%AD%EF%BC%9B"
+            },
+            {
+              "uid": "an5.206",
+              "collection": "经藏/增支部_an",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.206&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn3.10",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.10&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "系缚经",
+              "score": 9.846877415566292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "这是真理之执著的身系缚",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+              "score": 34.29677753385071,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B%EF%BC%9A%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.175",
+              "collection": "经藏/相应部_sn",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、［只有］这是真实之执持的身系缚，比丘们！",
+              "score": 21.805346798441793,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.175&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%EF%BC%BB%E5%8F%AA%E6%9C%89%EF%BC%BD%E9%80%99%E6%98%AF%E7%9C%9F%E5%AF%A6%E4%B9%8B%E5%9F%B7%E6%8C%81%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.206",
+              "collection": "经藏/增支部_an",
+              "title": "系缚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五种心系缚。",
+              "score": 15.139860921774892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.206&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E7%A8%AE%E5%BF%83%E7%B9%AB%E7%B8%9B%E3%80%82"
+            },
+            {
+              "uid": "mn98",
+              "collection": "经藏/中部_mn",
+              "title": "袜谢德经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已超越执著、已离系缚者，我说他是婆罗门。",
+              "score": 14.115569283695134,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn98&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B7%B2%E8%B6%85%E8%B6%8A%E5%9F%B7%E8%91%97%E3%80%81%E5%B7%B2%E9%9B%A2%E7%B9%AB%E7%B8%9B%E8%80%85%EF%BC%8C%E6%88%91%E8%AA%AA%E4%BB%96%E6%98%AF%E5%A9%86%E7%BE%85%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "sn22.76",
+              "collection": "经藏/相应部_sn",
+              "title": "阿罗汉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无学智已生起，这是最后身，",
+              "score": 12.539559936215436,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.76&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%99%BA%E5%B7%B2%E7%94%9F%E8%B5%B7%EF%BC%8C%E9%80%99%E6%98%AF%E6%9C%80%E5%BE%8C%E8%BA%AB%EF%BC%8C"
+            },
+            {
+              "uid": "an10.2",
+              "collection": "经藏/增支部_an",
+              "title": "应该意图经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "喜者的身变得宁静，这是法性。",
+              "score": 12.260468509922028,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.2&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%9C%E8%80%85%E7%9A%84%E8%BA%AB%E8%AE%8A%E5%BE%97%E5%AF%A7%E9%9D%9C%EF%BC%8C%E9%80%99%E6%98%AF%E6%B3%95%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an11.2",
+              "collection": "经藏/增支部_an",
+              "title": "应该作思经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "喜者的身变得宁静，这是法性。",
+              "score": 12.260468509922028,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.2&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%9C%E8%80%85%E7%9A%84%E8%BA%AB%E8%AE%8A%E5%BE%97%E5%AF%A7%E9%9D%9C%EF%BC%8C%E9%80%99%E6%98%AF%E6%B3%95%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an10.2",
+              "collection": "经藏/增支部_an",
+              "title": "应该意图经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身宁静者感受乐，这是法性。",
+              "score": 11.310478570060154,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.2&lang=zh&q=%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E5%AF%A7%E9%9D%9C%E8%80%85%E6%84%9F%E5%8F%97%E6%A8%82%EF%BC%8C%E9%80%99%E6%98%AF%E6%B3%95%E6%80%A7%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g34",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 34,
+      "label": "四种系缚",
+      "members": "贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚",
+      "member_items": [
+        "贪婪的身系缚",
+        "恶意的身系缚",
+        "戒禁取的身系缚",
+        "这是真理之执著的身系缚"
+      ],
+      "dn34_status": null,
+      "source_text": "四种系缚：贪婪的身系缚、恶意的身系缚、戒禁取的身系缚、这是真理之执著的身系缚。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E7%B9%AB%E7%B8%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E5%A9%AA%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E6%88%92%E7%A6%81%E5%8F%96%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B%E3%80%81%E9%80%99%E6%98%AF%E7%9C%9F%E7%90%86%E4%B9%8B%E5%9F%B7%E8%91%97%E7%9A%84%E8%BA%AB%E7%B9%AB%E7%B8%9B"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-48fa0224825b",
+    "number": 3,
+    "label": "三举罪事",
+    "member_items": [
+      "以看见",
+      "以听闻",
+      "以怀疑"
+    ],
+    "group_ids": [
+      "dn33-n3-g39"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三举罪事",
+      "以看见",
+      "以听闻",
+      "以怀疑"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三举罪事」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：以看见、以听闻、以怀疑。[1]\n\n## 所含各法\n### 以看见\n经文将「以看见」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《黑园经》命中：像这样，如来看见能被看见的后，不思量看见的，不思量没看见的，不思量能被看见的，不思量看见者；。[3]\n### 以听闻\n经文将「以听闻」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《黑园经》命中：听闻能被听闻的后，不思量听闻的，不思量没听闻的，不思量能被听闻的，不思量听闻者；。[4]\n### 以怀疑\n经文将「以怀疑」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《地狱品》命中：怀疑修梵行，。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三举罪事",
+          "text": "三举罪事：以看见、以听闻、以怀疑。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三举罪事：以看见、以听闻、以怀疑。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B%EF%BC%9A%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.24",
+          "text": "像这样，如来看见能被看见的后，不思量看见的，不思量没看见的，不思量能被看见的，不思量看见者；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E5%A6%82%E4%BE%86%E7%9C%8B%E8%A6%8B%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E8%80%85%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.24",
+          "text": "听闻能被听闻的后，不思量听闻的，不思量没听闻的，不思量能被听闻的，不思量听闻者；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%81%BD%E8%81%9E%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E8%80%85%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp306-319",
+          "text": "怀疑修梵行，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp306-319&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%87%B7%E7%96%91%E4%BF%AE%E6%A2%B5%E8%A1%8C%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.30",
+          "text": "凡看见苦集者，他也看见苦，也看见苦灭，也看见导向苦灭道迹；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.30",
+          "text": "凡看见苦灭者，他也看见苦，也看见苦集，也看见导向苦灭道迹；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.30",
+          "text": "凡看见导向苦灭道迹者，他也看见苦，也看见苦集，也看见苦灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn29",
+          "text": "他看见剃刀很利之面，但没看见刀锋，这被称为：『当看见时，他没看见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn29&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%96%E7%9C%8B%E8%A6%8B%E5%89%83%E5%88%80%E5%BE%88%E5%88%A9%E4%B9%8B%E9%9D%A2%EF%BC%8C%E4%BD%86%E6%B2%92%E7%9C%8B%E8%A6%8B%E5%88%80%E9%8B%92%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%EF%BC%9A%E3%80%8E%E7%95%B6%E7%9C%8B%E8%A6%8B%E6%99%82%EF%BC%8C%E4%BB%96%E6%B2%92%E7%9C%8B%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn135",
+          "text": "因为，短寿的人被看见，长寿的人被看见，多病的人被看见，少病的人被看见，丑陋的人被看见，美貌的人被看见，无影响力的人被看见，有影响力的人被看见，贫穷的人被看见，大财富的人被看见，卑贱出生的人被看见，高贵出生的人被看见，劣慧的人被看见，有慧的人被看见，乔达摩先生！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn135&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%A0%E7%82%BA%EF%BC%8C%E7%9F%AD%E5%A3%BD%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%95%B7%E5%A3%BD%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%A4%9A%E7%97%85%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%B0%91%E7%97%85%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%86%9C%E9%99%8B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%BE%8E%E8%B2%8C%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%84%A1%E5%BD%B1%E9%9F%BF%E5%8A%9B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E6%9C%89%E5%BD%B1%E9%9F%BF%E5%8A%9B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E8%B2%A7%E7%AA%AE%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%A4%A7%E8%B2%A1%E5%AF%8C%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%8D%91%E8%B3%A4%E5%87%BA%E7%94%9F%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%AB%98%E8%B2%B4%E5%87%BA%E7%94%9F%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%8A%A3%E6%85%A7%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E6%9C%89%E6%85%A7%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%96%AC%E9%81%94%E6%91%A9%E5%85%88%E7%94%9F%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn56.30",
+          "text": "有看见苦，也看见苦集，也看见苦灭，也看见导向苦灭道迹者吗？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%80%85%E5%97%8E%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn41",
+          "text": "』他没看见的说：『我看见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn41&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E6%B2%92%E7%9C%8B%E8%A6%8B%E7%9A%84%E8%AA%AA%EF%BC%9A%E3%80%8E%E6%88%91%E7%9C%8B%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn29.7",
+          "text": "听闻经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.7&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三举罪事",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三举罪事：以看见、以听闻、以怀疑。",
+              "score": 31.911486306791108,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B%EF%BC%9A%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "以看见",
+          "hits": [
+            {
+              "uid": "an4.24",
+              "collection": "经藏/增支部_an",
+              "title": "黑园经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "像这样，如来看见能被看见的后，不思量看见的，不思量没看见的，不思量能被看见的，不思量看见者；",
+              "score": 7.406985540708061,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E5%A6%82%E4%BE%86%E7%9C%8B%E8%A6%8B%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn56.30",
+              "collection": "经藏/相应部_sn",
+              "title": "牛主经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡看见苦集者，他也看见苦，也看见苦灭，也看见导向苦灭道迹；",
+              "score": 7.289790636304705,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+            },
+            {
+              "uid": "sn56.30",
+              "collection": "经藏/相应部_sn",
+              "title": "牛主经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡看见苦灭者，他也看见苦，也看见苦集，也看见导向苦灭道迹；",
+              "score": 7.289790636304705,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+            },
+            {
+              "uid": "sn56.30",
+              "collection": "经藏/相应部_sn",
+              "title": "牛主经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡看见导向苦灭道迹者，他也看见苦，也看见苦集，也看见苦灭。",
+              "score": 7.169815636430578,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "dn29",
+              "collection": "经藏/长部_dn",
+              "title": "清净经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他看见剃刀很利之面，但没看见刀锋，这被称为：『当看见时，他没看见。",
+              "score": 7.169815636430578,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn29&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%96%E7%9C%8B%E8%A6%8B%E5%89%83%E5%88%80%E5%BE%88%E5%88%A9%E4%B9%8B%E9%9D%A2%EF%BC%8C%E4%BD%86%E6%B2%92%E7%9C%8B%E8%A6%8B%E5%88%80%E9%8B%92%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%EF%BC%9A%E3%80%8E%E7%95%B6%E7%9C%8B%E8%A6%8B%E6%99%82%EF%BC%8C%E4%BB%96%E6%B2%92%E7%9C%8B%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "mn135",
+              "collection": "经藏/中部_mn",
+              "title": "业分别小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "因为，短寿的人被看见，长寿的人被看见，多病的人被看见，少病的人被看见，丑陋的人被看见，美貌的人被看见，无影响力的人被看见，有影响力的人被看见，贫穷的人被看见，大财富的人被看见，卑贱出生的人被看见，高贵出生的人被看见，劣慧的人被看见，有慧的人被看见，乔达摩先生！",
+              "score": 7.156073879758332,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn135&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%A0%E7%82%BA%EF%BC%8C%E7%9F%AD%E5%A3%BD%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%95%B7%E5%A3%BD%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%A4%9A%E7%97%85%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%B0%91%E7%97%85%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%86%9C%E9%99%8B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%BE%8E%E8%B2%8C%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E7%84%A1%E5%BD%B1%E9%9F%BF%E5%8A%9B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E6%9C%89%E5%BD%B1%E9%9F%BF%E5%8A%9B%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E8%B2%A7%E7%AA%AE%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%A4%A7%E8%B2%A1%E5%AF%8C%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%8D%91%E8%B3%A4%E5%87%BA%E7%94%9F%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E9%AB%98%E8%B2%B4%E5%87%BA%E7%94%9F%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%8A%A3%E6%85%A7%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E6%9C%89%E6%85%A7%E7%9A%84%E4%BA%BA%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BC%8C%E5%96%AC%E9%81%94%E6%91%A9%E5%85%88%E7%94%9F%EF%BC%81"
+            },
+            {
+              "uid": "sn56.30",
+              "collection": "经藏/相应部_sn",
+              "title": "牛主经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有看见苦，也看见苦集，也看见苦灭，也看见导向苦灭道迹者吗？",
+              "score": 7.053725779839395,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%80%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "mn41",
+              "collection": "经藏/中部_mn",
+              "title": "沙拉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』他没看见的说：『我看见。",
+              "score": 6.743978036683212,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn41&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E3%80%8F%E4%BB%96%E6%B2%92%E7%9C%8B%E8%A6%8B%E7%9A%84%E8%AA%AA%EF%BC%9A%E3%80%8E%E6%88%91%E7%9C%8B%E8%A6%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "以听闻",
+          "hits": [
+            {
+              "uid": "an4.24",
+              "collection": "经藏/增支部_an",
+              "title": "黑园经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "听闻能被听闻的后，不思量听闻的，不思量没听闻的，不思量能被听闻的，不思量听闻者；",
+              "score": 9.03687477009488,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%81%BD%E8%81%9E%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "sn29.7",
+              "collection": "经藏/相应部_sn",
+              "title": "听闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "听闻经",
+              "score": 7.894848784567718,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.7&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93"
+            },
+            {
+              "uid": "an5.202",
+              "collection": "经藏/增支部_an",
+              "title": "法的听闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "法的听闻经",
+              "score": 7.432288423248428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.202&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%B3%95%E7%9A%84%E8%81%BD%E8%81%9E%E7%B6%93"
+            },
+            {
+              "uid": "an6.88",
+              "collection": "经藏/增支部_an",
+              "title": "欲听闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲听闻经",
+              "score": 7.432288423248428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.88&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E8%81%BD%E8%81%9E%E7%B6%93"
+            },
+            {
+              "uid": "sn29.8",
+              "collection": "经藏/相应部_sn",
+              "title": "听闻经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "听闻经第二",
+              "score": 7.432288423248428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.8&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93%E7%AC%AC%E4%BA%8C"
+            },
+            {
+              "uid": "sn29.9",
+              "collection": "经藏/相应部_sn",
+              "title": "听闻经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "听闻经第三",
+              "score": 7.432288423248428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.9&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93%E7%AC%AC%E4%B8%89"
+            },
+            {
+              "uid": "sn29.10",
+              "collection": "经藏/相应部_sn",
+              "title": "听闻经第四",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "听闻经第四",
+              "score": 7.432288423248428,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.10&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93%E7%AC%AC%E5%9B%9B"
+            },
+            {
+              "uid": "an6.30",
+              "collection": "经藏/增支部_an",
+              "title": "无上经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "某人去听闻大鼓声、去听闻琵琶琴声、去听闻歌唱声，或去听闻各种不同的，或去听闻邪见、邪行的沙门或婆罗门的法，比丘们！",
+              "score": 7.291027668342597,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.30&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9F%90%E4%BA%BA%E5%8E%BB%E8%81%BD%E8%81%9E%E5%A4%A7%E9%BC%93%E8%81%B2%E3%80%81%E5%8E%BB%E8%81%BD%E8%81%9E%E7%90%B5%E7%90%B6%E7%90%B4%E8%81%B2%E3%80%81%E5%8E%BB%E8%81%BD%E8%81%9E%E6%AD%8C%E5%94%B1%E8%81%B2%EF%BC%8C%E6%88%96%E5%8E%BB%E8%81%BD%E8%81%9E%E5%90%84%E7%A8%AE%E4%B8%8D%E5%90%8C%E7%9A%84%EF%BC%8C%E6%88%96%E5%8E%BB%E8%81%BD%E8%81%9E%E9%82%AA%E8%A6%8B%E3%80%81%E9%82%AA%E8%A1%8C%E7%9A%84%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E7%9A%84%E6%B3%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "以怀疑",
+          "hits": [
+            {
+              "uid": "dhp306-319",
+              "collection": "经藏/小部_kn",
+              "title": "地狱品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "怀疑修梵行，",
+              "score": 10.197589410208884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp306-319&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%87%B7%E7%96%91%E4%BF%AE%E6%A2%B5%E8%A1%8C%EF%BC%8C"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当怀疑『这是已生者吗？",
+              "score": 8.745473360715808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E6%87%B7%E7%96%91%E3%80%8E%E9%80%99%E6%98%AF%E5%B7%B2%E7%94%9F%E8%80%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn42.13",
+              "collection": "经藏/相应部_sn",
+              "title": "玻得里亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在困惑之处，你的怀疑生起。",
+              "score": 8.745473360715808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn42.13&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%9B%B0%E6%83%91%E4%B9%8B%E8%99%95%EF%BC%8C%E4%BD%A0%E7%9A%84%E6%87%B7%E7%96%91%E7%94%9F%E8%B5%B7%E3%80%82"
+            },
+            {
+              "uid": "sn44.9",
+              "collection": "经藏/相应部_sn",
+              "title": "论议堂经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在困惑之处，你的怀疑生起。",
+              "score": 8.745473360715808,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn44.9&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%9B%B0%E6%83%91%E4%B9%8B%E8%99%95%EF%BC%8C%E4%BD%A0%E7%9A%84%E6%87%B7%E7%96%91%E7%94%9F%E8%B5%B7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三举罪事：以看见、以听闻、以怀疑。",
+              "score": 8.587229810395112,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B%EF%BC%9A%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82"
+            },
+            {
+              "uid": "mn92",
+              "collection": "经藏/中部_mn",
+              "title": "谢勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "请你排除关于我的怀疑，婆罗门！",
+              "score": 8.349171657252077,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn92&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%AB%8B%E4%BD%A0%E6%8E%92%E9%99%A4%E9%97%9C%E6%96%BC%E6%88%91%E7%9A%84%E6%87%B7%E7%96%91%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            },
+            {
+              "uid": "an3.65",
+              "collection": "经藏/增支部_an",
+              "title": "给瑟目大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在困惑之处，你们的怀疑生起。",
+              "score": 8.349171657252077,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.65&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E5%9B%B0%E6%83%91%E4%B9%8B%E8%99%95%EF%BC%8C%E4%BD%A0%E5%80%91%E7%9A%84%E6%87%B7%E7%96%91%E7%94%9F%E8%B5%B7%E3%80%82"
+            },
+            {
+              "uid": "snp3.7",
+              "collection": "经藏/小部_kn",
+              "title": "谢勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "请你排除关于我的怀疑，婆罗门！",
+              "score": 8.349171657252077,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp3.7&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=zhuang&mt=%E8%AB%8B%E4%BD%A0%E6%8E%92%E9%99%A4%E9%97%9C%E6%96%BC%E6%88%91%E7%9A%84%E6%87%B7%E7%96%91%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g39",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 39,
+      "label": "三举罪事",
+      "members": "以看见、以听闻、以怀疑",
+      "member_items": [
+        "以看见",
+        "以听闻",
+        "以怀疑"
+      ],
+      "dn34_status": null,
+      "source_text": "三举罪事：以看见、以听闻、以怀疑。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91"
+    }
+  ]
+}

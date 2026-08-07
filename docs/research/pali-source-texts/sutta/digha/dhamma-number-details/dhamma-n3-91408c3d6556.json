@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-91408c3d6556",
+    "number": 3,
+    "label": "三烦恼",
+    "member_items": [
+      "欲的烦恼",
+      "有的烦恼",
+      "无明的烦恼"
+    ],
+    "group_ids": [
+      "dn33-n3-g20"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三烦恼",
+      "欲的烦恼",
+      "有的烦恼",
+      "无明的烦恼"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三烦恼」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的烦恼、有的烦恼、无明的烦恼。[1]\n\n## 所含各法\n### 欲的烦恼\n经文将「欲的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《烦恼经》命中：欲的烦恼、有的烦恼、无明的烦恼，比丘们！。[3]\n### 有的烦恼\n经文将「有的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《有烦恼经》命中：有烦恼经。[4]\n### 无明的烦恼\n经文将「无明的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《洞察经》命中：无明是烦恼的起源与生起。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三烦恼",
+          "text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.163",
+          "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.163&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.139",
+          "text": "有烦恼经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.139&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E7%85%A9%E6%83%B1%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.63",
+          "text": "无明是烦恼的起源与生起。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E6%98%AF%E7%85%A9%E6%83%B1%E7%9A%84%E8%B5%B7%E6%BA%90%E8%88%87%E7%94%9F%E8%B5%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "而，『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "这是三不善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "这是三善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E5%96%84%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.50",
+          "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.50&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三烦恼",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 19.163361446803627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『三之问题、三之总说、三之解说。",
+              "score": 10.37563197763958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 9.428650425498729,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三善根。",
+              "score": 9.428650425498729,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "欲的烦恼",
+          "hits": [
+            {
+              "uid": "sn45.163",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+              "score": 15.768493733261355,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.163&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn47.50",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+              "score": 15.768493733261355,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.50&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 15.577047936117589,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 15.221318908994823,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 15.221318908994823,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "sn38.8",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼，道友！",
+              "score": 14.565230011355995,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.8&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "般涅槃大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已遍修习慧的心就完全地解脱烦恼，即：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 12.794872480451858,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B7%B2%E9%81%8D%E4%BF%AE%E7%BF%92%E6%85%A7%E7%9A%84%E5%BF%83%E5%B0%B1%E5%AE%8C%E5%85%A8%E5%9C%B0%E8%A7%A3%E8%84%AB%E7%85%A9%E6%83%B1%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "般涅槃大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已遍修习慧的心就完全地解脱烦恼，即：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 12.794872480451858,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B7%B2%E9%81%8D%E4%BF%AE%E7%BF%92%E6%85%A7%E7%9A%84%E5%BF%83%E5%B0%B1%E5%AE%8C%E5%85%A8%E5%9C%B0%E8%A7%A3%E8%84%AB%E7%85%A9%E6%83%B1%EF%BC%8C%E5%8D%B3%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有的烦恼",
+          "hits": [
+            {
+              "uid": "an10.139",
+              "collection": "经藏/增支部_an",
+              "title": "有烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有烦恼经",
+              "score": 14.17803223153571,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.139&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E7%85%A9%E6%83%B1%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 14.175224760881438,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+              "score": 14.175224760881438,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
+            },
+            {
+              "uid": "sn38.8",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种烦恼：欲的烦恼、有的烦恼、无明的烦恼，道友！",
+              "score": 13.653242156171364,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.8&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "sn45.163",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+              "score": 13.03788596027464,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.163&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn47.50",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+              "score": 13.03788596027464,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.50&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.139",
+              "collection": "经藏/增支部_an",
+              "title": "有烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有烦恼法。",
+              "score": 12.690907881172063,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.139&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E7%85%A9%E6%83%B1%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn121",
+              "collection": "经藏/中部_mn",
+              "title": "空小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "心从有的烦恼解脱；",
+              "score": 12.647726138598811,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%BF%83%E5%BE%9E%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E8%A7%A3%E8%84%AB%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "无明的烦恼",
+          "hits": [
+            {
+              "uid": "an6.63",
+              "collection": "经藏/增支部_an",
+              "title": "洞察经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明是烦恼的起源与生起。",
+              "score": 16.295373374414083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E6%98%AF%E7%85%A9%E6%83%B1%E7%9A%84%E8%B5%B7%E6%BA%90%E8%88%87%E7%94%9F%E8%B5%B7%E3%80%82"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对不苦不乐受根绝无明烦恼潜在趋势，舍断无明；",
+              "score": 15.89988469649315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E6%A0%B9%E7%B5%95%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%EF%BC%8C%E6%8D%A8%E6%96%B7%E7%84%A1%E6%98%8E%EF%BC%9B"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对不苦不乐受根绝无明烦恼潜在趋势，舍断无明；",
+              "score": 15.89988469649315,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E6%A0%B9%E7%B5%95%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%EF%BC%8C%E6%8D%A8%E6%96%B7%E7%84%A1%E6%98%8E%EF%BC%9B"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对不苦不乐受未根绝无明烦恼潜在趋势，未舍断无明；",
+              "score": 15.399126014352564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E6%9C%AA%E6%A0%B9%E7%B5%95%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%EF%BC%8C%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%84%A1%E6%98%8E%EF%BC%9B"
+            },
+            {
+              "uid": "mn148",
+              "collection": "经藏/中部_mn",
+              "title": "六个六经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对不苦不乐受未根绝无明烦恼潜在趋势，未舍断无明；",
+              "score": 15.399126014352564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn148&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E4%B8%8D%E8%8B%A6%E4%B8%8D%E6%A8%82%E5%8F%97%E6%9C%AA%E6%A0%B9%E7%B5%95%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%EF%BC%8C%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%84%A1%E6%98%8E%EF%BC%9B"
+            },
+            {
+              "uid": "mn18",
+              "collection": "经藏/中部_mn",
+              "title": "蜜丸经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这就是无明烦恼潜在趋势的结束；",
+              "score": 15.362938849314602,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn18&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E5%B0%B1%E6%98%AF%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E7%9A%84%E7%B5%90%E6%9D%9F%EF%BC%9B"
+            },
+            {
+              "uid": "mn18",
+              "collection": "经藏/中部_mn",
+              "title": "蜜丸经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这就是无明烦恼潜在趋势的结束；",
+              "score": 15.362938849314602,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn18&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E5%B0%B1%E6%98%AF%E7%84%A1%E6%98%8E%E7%85%A9%E6%83%B1%E6%BD%9B%E5%9C%A8%E8%B6%A8%E5%8B%A2%E7%9A%84%E7%B5%90%E6%9D%9F%EF%BC%9B"
+            },
+            {
+              "uid": "sn45.163",
+              "collection": "经藏/相应部_sn",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+              "score": 15.349535975167932,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.163&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g20",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 20,
+      "label": "三烦恼",
+      "members": "欲的烦恼、有的烦恼、无明的烦恼",
+      "member_items": [
+        "欲的烦恼",
+        "有的烦恼",
+        "无明的烦恼"
+      ],
+      "dn34_status": null,
+      "source_text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1"
+    }
+  ]
+}

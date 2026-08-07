@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-5c27147d4b7b",
+    "number": 3,
+    "label": "三人",
+    "member_items": [
+      "有学人",
+      "无学人",
+      "非有学非无学人"
+    ],
+    "group_ids": [
+      "dn33-n3-g36"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三人",
+      "有学人",
+      "无学人",
+      "非有学非无学人"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三人」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有学人、无学人、非有学非无学人。[1]\n\n## 所含各法\n### 有学人\n经文将「有学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《有学经》命中：你对迦毘罗卫城释迦族人说有学的行道者。。[3]\n### 无学人\n经文将「无学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《有学经》命中：』住立于无学阶位的无学比丘了知：『我是无学。。[4]\n### 非有学非无学人\n经文将「非有学非无学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 4 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三人",
+          "text": "三人：有学人、无学人、非有学非无学人。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三人：有学人、无学人、非有学非无学人。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn53",
+          "text": "你对迦毘罗卫城释迦族人说有学的行道者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn53&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%A0%E5%B0%8D%E8%BF%A6%E6%AF%98%E7%BE%85%E8%A1%9B%E5%9F%8E%E9%87%8B%E8%BF%A6%E6%97%8F%E4%BA%BA%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E8%A1%8C%E9%81%93%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.53",
+          "text": "』住立于无学阶位的无学比丘了知：『我是无学。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.63",
+          "text": "让我们杀了这所爱的、合意的独子，然后腌制成肉干，吃著儿子的肉，这样能度脱那剩余的荒漠，不要我们三人全都灭亡。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.63&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%AE%93%E6%88%91%E5%80%91%E6%AE%BA%E4%BA%86%E9%80%99%E6%89%80%E6%84%9B%E7%9A%84%E3%80%81%E5%90%88%E6%84%8F%E7%9A%84%E7%8D%A8%E5%AD%90%EF%BC%8C%E7%84%B6%E5%BE%8C%E9%86%83%E8%A3%BD%E6%88%90%E8%82%89%E4%B9%BE%EF%BC%8C%E5%90%83%E8%91%97%E5%85%92%E5%AD%90%E7%9A%84%E8%82%89%EF%BC%8C%E9%80%99%E6%A8%A3%E8%83%BD%E5%BA%A6%E8%84%AB%E9%82%A3%E5%89%A9%E9%A4%98%E7%9A%84%E8%8D%92%E6%BC%A0%EF%BC%8C%E4%B8%8D%E8%A6%81%E6%88%91%E5%80%91%E4%B8%89%E4%BA%BA%E5%85%A8%E9%83%BD%E6%BB%85%E4%BA%A1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "有时，大海里的水立于七人高的高度、六人高的高度、五人高的高度、四人高的高度、三人高的高度、二人高的高度、一人高的高度，学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E6%99%82%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%80%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn17",
+          "text": "咕萨瓦帝王都有四种颜色的大门：一个门是金制的，一个门是银制的，一个门是琉璃的，一个门是水晶制的，每个门前埋有七根埋入三人深的十二人高石柱：一根是金制的，一根是银制的，一根是琉璃制的，一根是水晶制的，一根是红宝石制的，一根是琥珀制的，一根全是宝物制的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn17&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%92%95%E8%96%A9%E7%93%A6%E5%B8%9D%E7%8E%8B%E9%83%BD%E6%9C%89%E5%9B%9B%E7%A8%AE%E9%A1%8F%E8%89%B2%E7%9A%84%E5%A4%A7%E9%96%80%EF%BC%9A%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E7%90%89%E7%92%83%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E6%AF%8F%E5%80%8B%E9%96%80%E5%89%8D%E5%9F%8B%E6%9C%89%E4%B8%83%E6%A0%B9%E5%9F%8B%E5%85%A5%E4%B8%89%E4%BA%BA%E6%B7%B1%E7%9A%84%E5%8D%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9F%B3%E6%9F%B1%EF%BC%9A%E4%B8%80%E6%A0%B9%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%89%E7%92%83%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%B4%85%E5%AF%B6%E7%9F%B3%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%A5%E7%8F%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E5%85%A8%E6%98%AF%E5%AF%B6%E7%89%A9%E8%A3%BD%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.66",
+          "text": "以第五个太阳的出现，大海里一百由旬的水下沈了，大海里二百由旬的水下沈了，大海里三百由旬的水下沈了，大海里四百由旬的水下沈了，大海里五百由旬的水下沈了，大海里六百由旬的水下沈了，大海里七百由旬的水下沈了，大海里的水立于七棵棕榈树的高度、六棵棕榈树的高度、五棵棕榈树的高度、四棵棕榈树的高度、三棵棕榈树的高度、二棵棕榈树的高度，大海里的水立于一棵棕榈树的高度，大海里的水立于七人高的高度、六人高的高度、五人高的高度、四人高的高度、三人高的高度、二人高的高度、一人高的高度、半人高的高度、腰部高的高度、膝部高的高度，大海里的水立于脚踝高的高度，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.66&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E7%AC%AC%E4%BA%94%E5%80%8B%E5%A4%AA%E9%99%BD%E7%9A%84%E5%87%BA%E7%8F%BE%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%80%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%BA%8C%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%89%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E5%9B%9B%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%BA%94%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E5%85%AD%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%83%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%80%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%80%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%8D%8A%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E8%85%B0%E9%83%A8%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E8%86%9D%E9%83%A8%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E8%85%B3%E8%B8%9D%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.85",
+          "text": "被称为『有学，有学』，大德！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.85&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%EF%BC%8C%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%A4%A7%E5%BE%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.13",
+          "text": "被称为『有学、有学』，大德！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.13&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%E3%80%81%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%A4%A7%E5%BE%B7%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.26",
+          "text": "被称为『有学、有学』，学友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%E3%80%81%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%AD%B8%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn53",
+          "text": "请你为迦毘罗卫城释迦族人说明有学的行道者，我的背痛，我要伸展它。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn53&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%AB%8B%E4%BD%A0%E7%82%BA%E8%BF%A6%E6%AF%98%E7%BE%85%E8%A1%9B%E5%9F%8E%E9%87%8B%E8%BF%A6%E6%97%8F%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%89%E5%AD%B8%E7%9A%84%E8%A1%8C%E9%81%93%E8%80%85%EF%BC%8C%E6%88%91%E7%9A%84%E8%83%8C%E7%97%9B%EF%BC%8C%E6%88%91%E8%A6%81%E4%BC%B8%E5%B1%95%E5%AE%83%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/bicameral-mind-origin.md",
+          "text": "性** - 我们感觉意识连续流淌，但实际上有无数\"盲点\"。 - 视网膜的盲点实验：你不自觉地补全视野，导致\"连续\"的错觉。 - **评价**: 巧妙的论证。Jaynes用神经学事实说话，而非纯哲学推理。 3. **意识不是经验的复制(Consciousness is not a copy of experience)** - 回忆中充满虚构：回想进入房间时，你\"看到\"自己进入，但那是第三人称视角，你从未见过那样。 - 意识的回忆是\"必定如此\"的叙述，不是录像。 - **评价**: 这对\"意识即内部录像机\"的直觉是深刻的挑战。心理学研究支持这点（记忆的可塑性、错误记忆）。 4. **意识不必要于概念形成** - 动物也有概念（蜜蜂有\"花\"的概念）。 - 概念是行为等价物的分类，不在意识里。 - **评价**: 有说服力，但存疑。人类抽象概念（如\"正义\"）的形成是否真的无意识？Jaynes可能过度概括。 5. **意识不必要于学习** - 信号学习（Pavlov 反射）：无意识学习；有意识反而阻碍。 - 技能学习：学钢琴、打字时，有意识反而破坏表现。 - 问题解决：拿硬币实",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/critical-thinking-questions.md",
+          "text": "|---| |理由是为了证明主张的正确性|理由是为了理解苦的来源与止息| |强调逻辑形式的有效性|强调现象的实际因果联系| |可以停留在理论层面|必须导向实践与解脱| |线性因果关系（A→B）|网络因果关系（多因多缘）| ### 《业报经》(MN 135) - 因果相对性 **故事**：两个人遭遇同样的灾难 ``` 第一人说：\"这是命运（niyati），我无能为力\" 第二人说：\"这是我过去业报（kammavipāka）的结果\" 第三人说：\"这只是巧合（yadṛcchika）\" 佛陀教导： \"后两种解释都有一定的合理性…… 但最有益的理解是看清你现在如何应对这个困境\" ``` **隐含消息**： - 同样的事件可以有多个\"理由\"解释 - 选择哪个理由取决于你想达到什么目的 - 最好的理由是**帮助你走出苦难的理由** --- ## 《清净道论》主题参照（已校订） ### 第一至七章：修行的因果链 ``` 持戒(sīla) ↓ [理由：无悔疚感] 心不悔疚(anutthiya) ↓ [理由：安乐感] 欢喜(pāmojja) ↓ [理由：放松] 轻安(passaddhi) ↓ [理由：明晰] 乐(sukha) ↓ [理由：安住于乐] 心一境性(samādhi/定)",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "## 六王子与理发师优波离 然而有六位王子——跋提（Bhaddiya，时任释迦执政首领）、阿那律（Anuruddha）、阿难（Ānanda）、跋衍（Bhagu）、金毗罗（Kimila）、提婆达多（Devadatta）——因未及时响应而遭他族非议。 阿那律因家境极度优渥，竟从未听闻\"没有\"（natthi）一词——书中生动讲述他与两位玩伴争论\"食物之源\"的童趣故事：金毗罗以为是粮仓，跋提以为是煮饭的锅，阿那律则坚称是\"镶满宝石的金盘\"，三人皆不知稻米实际从何而来。当阿那律第四次向母亲索要点心而母亲实在无以为继，只得回答\"没有点心了\"（natthi）时，年幼的阿那律竟以为\"natthi\"是某种糕点名称，命侍从\"去取natthi糕来\"！母亲无奈以空金杯相叠而遣之，护城诸天因怕耽误了阿那律前世作为穷人安纳跋罗（Annabhāra）供养辟支佛的祈愿（\"愿我此后不闻'没有'二字\"），赶紧以天界美食填满金杯，自此阿那律终生只知天赐糕点、不解\"人间事务\"的真正含义。 阿那律最终说服兄长摩诃男让自己出家（\"你留下打理家务，我出家\"），又以\"若我出家，你也必须出家\"的执着劝服执政的挚友跋提国王——跋提从七年逐步讨价还价到七日，终于应允。六王子率兵出城，抵达末罗国境后遣散卫队，将随身珠宝赠予理发师优波离（Upāli）作为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "text": "名字上是盐，实质仍是沙子，煮不出咸味\"。 阿姜查特别指出，\"解脱\"这个词本身也是一种施设，用来指称\"超越施设的东西\"，可施设本身仍有其存在的必要——没有施设我们将无法沟通、无法称呼彼此。 关于\"对与错\"，他提出了一个深刻的相对主义立场，但落脚于实用标准： > \"在究竟层面，我们其实并不真正知道什么是对、什么是错……但在实用的层面，我们可以说：'对'是不伤害自己也不伤害他人。\" 本章结尾讲了一个经典寓言——**四人林中闻鸡鸣**，三人说是母鸡叫，一人坚持是公鸡叫，争论到落泪，其实\"无论说母鸡或公鸡，都只是名字\"，若直接说\"根本没有母鸡公鸡\"，争论便自然终止。以此指出世间对错之争永无休止，唯有智慧才能超越。 **要点提炼**： - 一切世俗名相（姓名、身份、金钱、礼俗）皆是施设，本身\"空无自性\"，但有实用价值； - 知施设而不迷执于施设，即是解脱之钥； - 对错、善恶之争在世俗层面永无定论，唯有以\"是否伤害自他\"为实用准绳； - 佛法修行的完成之处是\"无所有处\"——放下一切争论与执著的休止符。 --- ### 第四章：无所住（No Abiding） **核心内容**： 本章从阿姜查自述早年对坐禅、经行的怀疑写起，颇具个人色彩： > \"一开始我甚至不相信打坐。我看不出闭着眼睛干坐有什么用",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三人",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三人：有学人、无学人、非有学非无学人。",
+              "score": 10.420471326947467,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
+            },
+            {
+              "uid": "sn12.63",
+              "collection": "经藏/相应部_sn",
+              "title": "像儿子的肉那样经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "让我们杀了这所爱的、合意的独子，然后腌制成肉干，吃著儿子的肉，这样能度脱那剩余的荒漠，不要我们三人全都灭亡。",
+              "score": 6.065272068592926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.63&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%AE%93%E6%88%91%E5%80%91%E6%AE%BA%E4%BA%86%E9%80%99%E6%89%80%E6%84%9B%E7%9A%84%E3%80%81%E5%90%88%E6%84%8F%E7%9A%84%E7%8D%A8%E5%AD%90%EF%BC%8C%E7%84%B6%E5%BE%8C%E9%86%83%E8%A3%BD%E6%88%90%E8%82%89%E4%B9%BE%EF%BC%8C%E5%90%83%E8%91%97%E5%85%92%E5%AD%90%E7%9A%84%E8%82%89%EF%BC%8C%E9%80%99%E6%A8%A3%E8%83%BD%E5%BA%A6%E8%84%AB%E9%82%A3%E5%89%A9%E9%A4%98%E7%9A%84%E8%8D%92%E6%BC%A0%EF%BC%8C%E4%B8%8D%E8%A6%81%E6%88%91%E5%80%91%E4%B8%89%E4%BA%BA%E5%85%A8%E9%83%BD%E6%BB%85%E4%BA%A1%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有时，大海里的水立于七人高的高度、六人高的高度、五人高的高度、四人高的高度、三人高的高度、二人高的高度、一人高的高度，学友们！",
+              "score": 5.217282424830545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E6%99%82%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%80%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn17",
+              "collection": "经藏/长部_dn",
+              "title": "大善见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "咕萨瓦帝王都有四种颜色的大门：一个门是金制的，一个门是银制的，一个门是琉璃的，一个门是水晶制的，每个门前埋有七根埋入三人深的十二人高石柱：一根是金制的，一根是银制的，一根是琉璃制的，一根是水晶制的，一根是红宝石制的，一根是琥珀制的，一根全是宝物制的。",
+              "score": 3.434011537441901,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn17&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%92%95%E8%96%A9%E7%93%A6%E5%B8%9D%E7%8E%8B%E9%83%BD%E6%9C%89%E5%9B%9B%E7%A8%AE%E9%A1%8F%E8%89%B2%E7%9A%84%E5%A4%A7%E9%96%80%EF%BC%9A%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E7%90%89%E7%92%83%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E6%AF%8F%E5%80%8B%E9%96%80%E5%89%8D%E5%9F%8B%E6%9C%89%E4%B8%83%E6%A0%B9%E5%9F%8B%E5%85%A5%E4%B8%89%E4%BA%BA%E6%B7%B1%E7%9A%84%E5%8D%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9F%B3%E6%9F%B1%EF%BC%9A%E4%B8%80%E6%A0%B9%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%89%E7%92%83%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%B4%85%E5%AF%B6%E7%9F%B3%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%A5%E7%8F%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E5%85%A8%E6%98%AF%E5%AF%B6%E7%89%A9%E8%A3%BD%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an7.66",
+              "collection": "经藏/增支部_an",
+              "title": "七个太阳经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以第五个太阳的出现，大海里一百由旬的水下沈了，大海里二百由旬的水下沈了，大海里三百由旬的水下沈了，大海里四百由旬的水下沈了，大海里五百由旬的水下沈了，大海里六百由旬的水下沈了，大海里七百由旬的水下沈了，大海里的水立于七棵棕榈树的高度、六棵棕榈树的高度、五棵棕榈树的高度、四棵棕榈树的高度、三棵棕榈树的高度、二棵棕榈树的高度，大海里的水立于一棵棕榈树的高度，大海里的水立于七人高的高度、六人高的高度、五人高的高度、四人高的高度、三人高的高度、二人高的高度、一人高的高度、半人高的高度、腰部高的高度、膝部高的高度，大海里的水立于脚踝高的高度，比丘们！",
+              "score": 1.66308787482492,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.66&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E7%AC%AC%E4%BA%94%E5%80%8B%E5%A4%AA%E9%99%BD%E7%9A%84%E5%87%BA%E7%8F%BE%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%80%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%BA%8C%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%89%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E5%9B%9B%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%BA%94%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E5%85%AD%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E4%B8%83%E7%99%BE%E7%94%B1%E6%97%AC%E7%9A%84%E6%B0%B4%E4%B8%8B%E6%B2%88%E4%BA%86%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%80%E6%A3%B5%E6%A3%95%E6%AB%9A%E6%A8%B9%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%80%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%8D%8A%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E8%85%B0%E9%83%A8%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E8%86%9D%E9%83%A8%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E8%85%B3%E8%B8%9D%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "有学人",
+          "hits": [
+            {
+              "uid": "mn53",
+              "collection": "经藏/中部_mn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你对迦毘罗卫城释迦族人说有学的行道者。",
+              "score": 14.419328103962851,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn53&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%A0%E5%B0%8D%E8%BF%A6%E6%AF%98%E7%BE%85%E8%A1%9B%E5%9F%8E%E9%87%8B%E8%BF%A6%E6%97%8F%E4%BA%BA%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E8%A1%8C%E9%81%93%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an3.85",
+              "collection": "经藏/增支部_an",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "被称为『有学，有学』，大德！",
+              "score": 10.824572351049257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.85&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%EF%BC%8C%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn45.13",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "被称为『有学、有学』，大德！",
+              "score": 10.824572351049257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.13&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%E3%80%81%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%A4%A7%E5%BE%B7%EF%BC%81"
+            },
+            {
+              "uid": "sn47.26",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "被称为『有学、有学』，学友！",
+              "score": 10.824572351049257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E6%9C%89%E5%AD%B8%E3%80%81%E6%9C%89%E5%AD%B8%E3%80%8F%EF%BC%8C%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn53",
+              "collection": "经藏/中部_mn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "请你为迦毘罗卫城释迦族人说明有学的行道者，我的背痛，我要伸展它。",
+              "score": 10.723629678017494,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn53&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%AB%8B%E4%BD%A0%E7%82%BA%E8%BF%A6%E6%AF%98%E7%BE%85%E8%A1%9B%E5%9F%8E%E9%87%8B%E8%BF%A6%E6%97%8F%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%89%E5%AD%B8%E7%9A%84%E8%A1%8C%E9%81%93%E8%80%85%EF%BC%8C%E6%88%91%E7%9A%84%E8%83%8C%E7%97%9B%EF%BC%8C%E6%88%91%E8%A6%81%E4%BC%B8%E5%B1%95%E5%AE%83%E3%80%82"
+            },
+            {
+              "uid": "sn12.31",
+              "collection": "经藏/相应部_sn",
+              "title": "已生成的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是有学。",
+              "score": 10.559265147948253,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.31&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%9C%89%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn12.31",
+              "collection": "经藏/相应部_sn",
+              "title": "已生成的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是有学。",
+              "score": 10.559265147948253,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.31&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%9C%89%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.73",
+              "collection": "经藏/增支部_an",
+              "title": "释迦族人摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有学的戒。",
+              "score": 9.97483791495765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.73&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E5%AD%B8%E7%9A%84%E6%88%92%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无学人",
+          "hits": [
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 12.176671937515597,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 12.176671937515597,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn47.27",
+              "collection": "经藏/相应部_sn",
+              "title": "完全经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么情形是无学呢？",
+              "score": 11.590228289581948,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.27&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%83%85%E5%BD%A2%E6%98%AF%E7%84%A1%E5%AD%B8%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么法门，由此法门来到住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 10.702455096348443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%B3%95%E9%96%80%EF%BC%8C%E7%94%B1%E6%AD%A4%E6%B3%95%E9%96%80%E4%BE%86%E5%88%B0%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这也是法门，由此法门来到住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 10.702455096348443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E9%80%99%E4%B9%9F%E6%98%AF%E6%B3%95%E9%96%80%EF%BC%8C%E7%94%B1%E6%AD%A4%E6%B3%95%E9%96%80%E4%BE%86%E5%88%B0%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "an3.73",
+              "collection": "经藏/增支部_an",
+              "title": "释迦族人摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "说有学的定，也说无学的定；",
+              "score": 10.01459240622518,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.73&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E5%AE%9A%EF%BC%8C%E4%B9%9F%E8%AA%AA%E7%84%A1%E5%AD%B8%E7%9A%84%E5%AE%9A%EF%BC%9B"
+            },
+            {
+              "uid": "an3.73",
+              "collection": "经藏/增支部_an",
+              "title": "释迦族人摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "说有学的慧，也说无学的慧。",
+              "score": 10.01459240622518,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.73&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E6%85%A7%EF%BC%8C%E4%B9%9F%E8%AA%AA%E7%84%A1%E5%AD%B8%E7%9A%84%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an3.73",
+              "collection": "经藏/增支部_an",
+              "title": "释迦族人摩诃男经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "说有学的定，也说无学的定；",
+              "score": 10.01459240622518,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.73&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E5%AE%9A%EF%BC%8C%E4%B9%9F%E8%AA%AA%E7%84%A1%E5%AD%B8%E7%9A%84%E5%AE%9A%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "非有学非无学人",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三慧：有学慧、无学慧、非有学非无学慧。",
+              "score": 25.496326017099488,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三人：有学人、无学人、非有学非无学人。",
+              "score": 24.479227920622677,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "非有故无忧，",
+              "score": 12.276179968588846,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9D%9E%E6%9C%89%E6%95%85%E7%84%A1%E6%86%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 12.176671937515597,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 12.176671937515597,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn47.27",
+              "collection": "经藏/相应部_sn",
+              "title": "完全经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么情形是无学呢？",
+              "score": 11.590228289581948,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.27&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%83%85%E5%BD%A2%E6%98%AF%E7%84%A1%E5%AD%B8%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么法门，由此法门来到住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 10.702455096348443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%B3%95%E9%96%80%EF%BC%8C%E7%94%B1%E6%AD%A4%E6%B3%95%E9%96%80%E4%BE%86%E5%88%B0%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            },
+            {
+              "uid": "sn48.53",
+              "collection": "经藏/相应部_sn",
+              "title": "有学经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』这也是法门，由此法门来到住立于无学阶位的无学比丘了知：『我是无学。",
+              "score": 10.702455096348443,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E9%80%99%E4%B9%9F%E6%98%AF%E6%B3%95%E9%96%80%EF%BC%8C%E7%94%B1%E6%AD%A4%E6%B3%95%E9%96%80%E4%BE%86%E5%88%B0%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/psychology/bicameral-mind-origin.md",
+          "heading": "站内搜索命中",
+          "text": "性** - 我们感觉意识连续流淌，但实际上有无数\"盲点\"。 - 视网膜的盲点实验：你不自觉地补全视野，导致\"连续\"的错觉。 - **评价**: 巧妙的论证。Jaynes用神经学事实说话，而非纯哲学推理。 3. **意识不是经验的复制(Consciousness is not a copy of experience)** - 回忆中充满虚构：回想进入房间时，你\"看到\"自己进入，但那是第三人称视角，你从未见过那样。 - 意识的回忆是\"必定如此\"的叙述，不是录像。 - **评价**: 这对\"意识即内部录像机\"的直觉是深刻的挑战。心理学研究支持这点（记忆的可塑性、错误记忆）。 4. **意识不必要于概念形成** - 动物也有概念（蜜蜂有\"花\"的概念）。 - 概念是行为等价物的分类，不在意识里。 - **评价**: 有说服力，但存疑。人类抽象概念（如\"正义\"）的形成是否真的无意识？Jaynes可能过度概括。 5. **意识不必要于学习** - 信号学习（Pavlov 反射）：无意识学习；有意识反而阻碍。 - 技能学习：学钢琴、打字时，有意识反而破坏表现。 - 问题解决：拿硬币实",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
+        },
+        {
+          "source": "docs/research/psychology/critical-thinking-questions.md",
+          "heading": "站内搜索命中",
+          "text": "|---| |理由是为了证明主张的正确性|理由是为了理解苦的来源与止息| |强调逻辑形式的有效性|强调现象的实际因果联系| |可以停留在理论层面|必须导向实践与解脱| |线性因果关系（A→B）|网络因果关系（多因多缘）| ### 《业报经》(MN 135) - 因果相对性 **故事**：两个人遭遇同样的灾难 ``` 第一人说：\"这是命运（niyati），我无能为力\" 第二人说：\"这是我过去业报（kammavipāka）的结果\" 第三人说：\"这只是巧合（yadṛcchika）\" 佛陀教导： \"后两种解释都有一定的合理性…… 但最有益的理解是看清你现在如何应对这个困境\" ``` **隐含消息**： - 同样的事件可以有多个\"理由\"解释 - 选择哪个理由取决于你想达到什么目的 - 最好的理由是**帮助你走出苦难的理由** --- ## 《清净道论》主题参照（已校订） ### 第一至七章：修行的因果链 ``` 持戒(sīla) ↓ [理由：无悔疚感] 心不悔疚(anutthiya) ↓ [理由：安乐感] 欢喜(pāmojja) ↓ [理由：放松] 轻安(passaddhi) ↓ [理由：明晰] 乐(sukha) ↓ [理由：安住于乐] 心一境性(samādhi/定)",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "## 六王子与理发师优波离 然而有六位王子——跋提（Bhaddiya，时任释迦执政首领）、阿那律（Anuruddha）、阿难（Ānanda）、跋衍（Bhagu）、金毗罗（Kimila）、提婆达多（Devadatta）——因未及时响应而遭他族非议。 阿那律因家境极度优渥，竟从未听闻\"没有\"（natthi）一词——书中生动讲述他与两位玩伴争论\"食物之源\"的童趣故事：金毗罗以为是粮仓，跋提以为是煮饭的锅，阿那律则坚称是\"镶满宝石的金盘\"，三人皆不知稻米实际从何而来。当阿那律第四次向母亲索要点心而母亲实在无以为继，只得回答\"没有点心了\"（natthi）时，年幼的阿那律竟以为\"natthi\"是某种糕点名称，命侍从\"去取natthi糕来\"！母亲无奈以空金杯相叠而遣之，护城诸天因怕耽误了阿那律前世作为穷人安纳跋罗（Annabhāra）供养辟支佛的祈愿（\"愿我此后不闻'没有'二字\"），赶紧以天界美食填满金杯，自此阿那律终生只知天赐糕点、不解\"人间事务\"的真正含义。 阿那律最终说服兄长摩诃男让自己出家（\"你留下打理家务，我出家\"），又以\"若我出家，你也必须出家\"的执着劝服执政的挚友跋提国王——跋提从七年逐步讨价还价到七日，终于应允。六王子率兵出城，抵达末罗国境后遣散卫队，将随身珠宝赠予理发师优波离（Upāli）作为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
+        },
+        {
+          "source": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "heading": "站内搜索命中",
+          "text": "名字上是盐，实质仍是沙子，煮不出咸味\"。 阿姜查特别指出，\"解脱\"这个词本身也是一种施设，用来指称\"超越施设的东西\"，可施设本身仍有其存在的必要——没有施设我们将无法沟通、无法称呼彼此。 关于\"对与错\"，他提出了一个深刻的相对主义立场，但落脚于实用标准： > \"在究竟层面，我们其实并不真正知道什么是对、什么是错……但在实用的层面，我们可以说：'对'是不伤害自己也不伤害他人。\" 本章结尾讲了一个经典寓言——**四人林中闻鸡鸣**，三人说是母鸡叫，一人坚持是公鸡叫，争论到落泪，其实\"无论说母鸡或公鸡，都只是名字\"，若直接说\"根本没有母鸡公鸡\"，争论便自然终止。以此指出世间对错之争永无休止，唯有智慧才能超越。 **要点提炼**： - 一切世俗名相（姓名、身份、金钱、礼俗）皆是施设，本身\"空无自性\"，但有实用价值； - 知施设而不迷执于施设，即是解脱之钥； - 对错、善恶之争在世俗层面永无定论，唯有以\"是否伤害自他\"为实用准绳； - 佛法修行的完成之处是\"无所有处\"——放下一切争论与执著的休止符。 --- ### 第四章：无所住（No Abiding） **核心内容**： 本章从阿姜查自述早年对坐禅、经行的怀疑写起，颇具个人色彩： > \"一开始我甚至不相信打坐。我看不出闭着眼睛干坐有什么用",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g36",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 36,
+      "label": "三人",
+      "members": "有学人、无学人、非有学非无学人",
+      "member_items": [
+        "有学人",
+        "无学人",
+        "非有学非无学人"
+      ],
+      "dn34_status": null,
+      "source_text": "三人：有学人、无学人、非有学非无学人。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA"
+    }
+  ]
+}

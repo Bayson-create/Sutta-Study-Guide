@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-c6b9c4e205a0",
+    "number": 3,
+    "label": "三定",
+    "member_items": [
+      "空定",
+      "无相定",
+      "无愿定"
+    ],
+    "group_ids": [
+      "dn33-n3-g51"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三定",
+      "空定",
+      "无相定",
+      "无愿定"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三定」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：空定、无相定、无愿定。[1]\n\n## 所含各法\n### 空定\n经文将「空定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《空定经》命中：空定经。[3]\n### 无相定\n经文将「无相定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《托钵经》命中：修习无相定，这是很适当的。。[4]\n### 无愿定\n经文将「无愿定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《无为经》命中：是无愿定，比丘们！。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 21 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三定",
+          "text": "下一个三定：空定、无相定、无愿定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三定：空定、无相定、无愿定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn43.4",
+          "text": "空定经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.4&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%A9%BA%E5%AE%9A%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.80",
+          "text": "修习无相定，这是很适当的。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E7%84%A1%E7%9B%B8%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BF%AE%E7%BF%92%E7%84%A1%E7%9B%B8%E5%AE%9A%EF%BC%8C%E9%80%99%E6%98%AF%E5%BE%88%E9%81%A9%E7%95%B6%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn43.12",
+          "text": "是无愿定，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.12&lang=zh&q=%E7%84%A1%E9%A1%98%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "而，『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn43.12",
+          "text": "是空定，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.12&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%A9%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三定",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三定：空定、无相定、无愿定。",
+              "score": 15.933099012723156,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+              "score": 15.026566358057346,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+              "score": 14.7558220578458,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『三之问题、三之总说、三之解说。",
+              "score": 10.37563197763958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "空定",
+          "hits": [
+            {
+              "uid": "sn43.4",
+              "collection": "经藏/相应部_sn",
+              "title": "空定经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "空定经",
+              "score": 16.257283674446555,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.4&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%A9%BA%E5%AE%9A%E7%B6%93"
+            },
+            {
+              "uid": "sn43.12",
+              "collection": "经藏/相应部_sn",
+              "title": "无为经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是空定，比丘们！",
+              "score": 14.457688876763825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.12&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%A9%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.183-352",
+              "collection": "经藏/增支部_an",
+              "title": "－352经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "空定、无相定、无愿定，比丘们！",
+              "score": 11.837084368037187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.183-352&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn43.4",
+              "collection": "经藏/相应部_sn",
+              "title": "空定经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是空定、无相定、无愿定，比丘们！",
+              "score": 11.837084368037187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.4&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三定：空定、无相定、无愿定。",
+              "score": 10.420471326947467,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%A9%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无相定",
+          "hits": [
+            {
+              "uid": "sn22.80",
+              "collection": "经藏/相应部_sn",
+              "title": "托钵经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "修习无相定，这是很适当的。",
+              "score": 13.968642305186735,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E7%84%A1%E7%9B%B8%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BF%AE%E7%BF%92%E7%84%A1%E7%9B%B8%E5%AE%9A%EF%BC%8C%E9%80%99%E6%98%AF%E5%BE%88%E9%81%A9%E7%95%B6%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an3.183-352",
+              "collection": "经藏/增支部_an",
+              "title": "－352经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "空定、无相定、无愿定，比丘们！",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.183-352&lang=zh&q=%E7%84%A1%E7%9B%B8%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn43.4",
+              "collection": "经藏/相应部_sn",
+              "title": "空定经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是空定、无相定、无愿定，比丘们！",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.4&lang=zh&q=%E7%84%A1%E7%9B%B8%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三定：空定、无相定、无愿定。",
+              "score": 10.625224240299474,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E7%9B%B8%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无愿定",
+          "hits": [
+            {
+              "uid": "sn43.12",
+              "collection": "经藏/相应部_sn",
+              "title": "无为经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是无愿定，比丘们！",
+              "score": 14.741769493175008,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.12&lang=zh&q=%E7%84%A1%E9%A1%98%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.183-352",
+              "collection": "经藏/增支部_an",
+              "title": "－352经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "空定、无相定、无愿定，比丘们！",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.183-352&lang=zh&q=%E7%84%A1%E9%A1%98%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn43.4",
+              "collection": "经藏/相应部_sn",
+              "title": "空定经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是空定、无相定、无愿定，比丘们！",
+              "score": 12.069672456800644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.4&lang=zh&q=%E7%84%A1%E9%A1%98%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三定：空定、无相定、无愿定。",
+              "score": 10.625224240299474,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E9%A1%98%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g51",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 51,
+      "label": "三定",
+      "members": "空定、无相定、无愿定",
+      "member_items": [
+        "空定",
+        "无相定",
+        "无愿定"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个三定：空定、无相定、无愿定。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A"
+    }
+  ]
+}

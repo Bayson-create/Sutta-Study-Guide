@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-4dd204e805fe",
+    "number": 3,
+    "label": "三修习",
+    "member_items": [
+      "身修习",
+      "心修习",
+      "慧修习"
+    ],
+    "group_ids": [
+      "dn33-n3-g48"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三修习",
+      "身修习",
+      "心修习",
+      "慧修习"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三修习」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：身修习、心修习、慧修习。[1]\n\n## 所含各法\n### 身修习\n经文将「身修习」列为「三修习」的一个成员。Early Buddhist 用该名词检索时，在《萨遮迦大经》命中：这样是身已修习与心已修习。。[3]\n### 心修习\n经文将「心修习」列为「三修习」的一个成员。Early Buddhist 用该名词检索时，在《萨遮迦大经》命中：身已修习与心已修习。。[4]\n### 慧修习\n经文将「慧修习」列为「三修习」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三修习：身修习、心修习、慧修习。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三修习",
+          "text": "三修习：身修习、心修习、慧修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三修习：身修习、心修习、慧修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn36",
+          "text": "这样是身已修习与心已修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn36",
+          "text": "身已修习与心已修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.107",
+          "text": "对这三法的舍断，三法应该被修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.107&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%80%99%E4%B8%89%E6%B3%95%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E4%B8%89%E6%B3%95%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.6",
+          "text": "三善行如何被修习、如何被多修习而使四念住完成呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%89%E5%96%84%E8%A1%8C%E5%A6%82%E4%BD%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%A6%82%E4%BD%95%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E8%80%8C%E4%BD%BF%E5%9B%9B%E5%BF%B5%E4%BD%8F%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.6",
+          "text": "当根的自制被修习、被多修习时，使三善行完成。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%A0%B9%E7%9A%84%E8%87%AA%E5%88%B6%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E6%99%82%EF%BC%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.183-352",
+          "text": "为了贪的证智，应该修习三法，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.183-352&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BA%86%E8%B2%AA%E7%9A%84%E8%AD%89%E6%99%BA%EF%BC%8C%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E4%B8%89%E6%B3%95%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.6",
+          "text": "根的自制如何被修习、如何被多修习而使三善行完成呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A0%B9%E7%9A%84%E8%87%AA%E5%88%B6%E5%A6%82%E4%BD%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%A6%82%E4%BD%95%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E8%80%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.6",
+          "text": "当什么法被修习、被多修习时，使三善行完成呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E4%BB%80%E9%BA%BC%E6%B3%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E6%99%82%EF%BC%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.107",
+          "text": "对这三法的舍断，三法应该被修习，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.107&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%80%99%E4%B8%89%E6%B3%95%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E4%B8%89%E6%B3%95%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn36",
+          "text": "什么是身已修习与心已修习呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn36",
+          "text": "但，你所听到的身之修习是什么？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%EF%BC%8C%E4%BD%A0%E6%89%80%E8%81%BD%E5%88%B0%E7%9A%84%E8%BA%AB%E4%B9%8B%E4%BF%AE%E7%BF%92%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三修习",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三修习：身修习、心修习、慧修习。",
+              "score": 17.908557025900247,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "an6.107",
+              "collection": "经藏/增支部_an",
+              "title": "贪经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对这三法的舍断，三法应该被修习。",
+              "score": 13.66800543822364,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.107&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%80%99%E4%B8%89%E6%B3%95%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E4%B8%89%E6%B3%95%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善行如何被修习、如何被多修习而使四念住完成呢？",
+              "score": 12.901398742765519,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%89%E5%96%84%E8%A1%8C%E5%A6%82%E4%BD%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%A6%82%E4%BD%95%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E8%80%8C%E4%BD%BF%E5%9B%9B%E5%BF%B5%E4%BD%8F%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当根的自制被修习、被多修习时，使三善行完成。",
+              "score": 12.42356915970013,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%A0%B9%E7%9A%84%E8%87%AA%E5%88%B6%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E6%99%82%EF%BC%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E3%80%82"
+            },
+            {
+              "uid": "an3.183-352",
+              "collection": "经藏/增支部_an",
+              "title": "－352经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "为了贪的证智，应该修习三法，哪三个呢？",
+              "score": 12.187902834826232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.183-352&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BA%86%E8%B2%AA%E7%9A%84%E8%AD%89%E6%99%BA%EF%BC%8C%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E4%B8%89%E6%B3%95%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "根的自制如何被修习、如何被多修习而使三善行完成呢？",
+              "score": 11.966653051858517,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A0%B9%E7%9A%84%E8%87%AA%E5%88%B6%E5%A6%82%E4%BD%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%A6%82%E4%BD%95%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E8%80%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn46.6",
+              "collection": "经藏/相应部_sn",
+              "title": "库达利亚经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当什么法被修习、被多修习时，使三善行完成呢？",
+              "score": 11.675935944516088,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.6&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E4%BB%80%E9%BA%BC%E6%B3%95%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%81%E8%A2%AB%E5%A4%9A%E4%BF%AE%E7%BF%92%E6%99%82%EF%BC%8C%E4%BD%BF%E4%B8%89%E5%96%84%E8%A1%8C%E5%AE%8C%E6%88%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an6.107",
+              "collection": "经藏/增支部_an",
+              "title": "贪经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对这三法的舍断，三法应该被修习，哪三个呢？",
+              "score": 11.570697711496091,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.107&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E9%80%99%E4%B8%89%E6%B3%95%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E4%B8%89%E6%B3%95%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "身修习",
+          "hits": [
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是身已修习与心已修习。",
+              "score": 16.06110233219364,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是身已修习与心已修习呢？",
+              "score": 15.471025538908918,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但，你所听到的身之修习是什么？",
+              "score": 15.310730153736172,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%EF%BC%8C%E4%BD%A0%E6%89%80%E8%81%BD%E5%88%B0%E7%9A%84%E8%BA%AB%E4%B9%8B%E4%BF%AE%E7%BF%92%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三修习：身修习、心修习、慧修习。",
+              "score": 15.28366520919099,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "先前你所说的身之修习，那在圣者之律中非如法的身之修习，阿基毘舍那！",
+              "score": 15.248668441167194,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%85%88%E5%89%8D%E4%BD%A0%E6%89%80%E8%AA%AA%E7%9A%84%E8%BA%AB%E4%B9%8B%E4%BF%AE%E7%BF%92%EF%BC%8C%E9%82%A3%E5%9C%A8%E8%81%96%E8%80%85%E4%B9%8B%E5%BE%8B%E4%B8%AD%E9%9D%9E%E5%A6%82%E6%B3%95%E7%9A%84%E8%BA%AB%E4%B9%8B%E4%BF%AE%E7%BF%92%EF%BC%8C%E9%98%BF%E5%9F%BA%E6%AF%98%E8%88%8D%E9%82%A3%EF%BC%81"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你不知道身之修习，将从哪里知道心之修习呢？",
+              "score": 14.415499239834533,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E8%BA%AB%E4%B9%8B%E4%BF%AE%E7%BF%92%EF%BC%8C%E5%B0%87%E5%BE%9E%E5%93%AA%E8%A3%A1%E7%9F%A5%E9%81%93%E5%BF%83%E4%B9%8B%E4%BF%AE%E7%BF%92%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 14.083898068942615,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 14.083898068942615,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E8%BA%AB%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "心修习",
+          "hits": [
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身已修习与心已修习。",
+              "score": 14.307846916899626,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "an1.21-30",
+              "collection": "经藏/增支部_an",
+              "title": "三、不堪任品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "诸比库，心修习则堪任。",
+              "score": 13.67597456474886,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.21-30&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E5%BF%83%E4%BF%AE%E4%B9%A0%E5%88%99%E5%A0%AA%E4%BB%BB%E3%80%82"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘这样以无遮蔽、不被覆盖的心修习有光辉的心。",
+              "score": 13.247307886695111,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BB%A5%E7%84%A1%E9%81%AE%E8%94%BD%E3%80%81%E4%B8%8D%E8%A2%AB%E8%A6%86%E8%93%8B%E7%9A%84%E5%BF%83%E4%BF%AE%E7%BF%92%E6%9C%89%E5%85%89%E8%BC%9D%E7%9A%84%E5%BF%83%E3%80%82"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘这样以无遮蔽、不被覆盖的心修习有光辉的心。",
+              "score": 13.247307886695111,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BB%A5%E7%84%A1%E9%81%AE%E8%94%BD%E3%80%81%E4%B8%8D%E8%A2%AB%E8%A6%86%E8%93%8B%E7%9A%84%E5%BF%83%E4%BF%AE%E7%BF%92%E6%9C%89%E5%85%89%E8%BC%9D%E7%9A%84%E5%BF%83%E3%80%82"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是身已修习与心已修习。",
+              "score": 13.245333513123738,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%BA%AB%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%88%87%E5%BF%83%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘如何以无遮蔽、不被覆盖的心修习有光辉的心呢？",
+              "score": 12.823123626861964,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E5%A6%82%E4%BD%95%E4%BB%A5%E7%84%A1%E9%81%AE%E8%94%BD%E3%80%81%E4%B8%8D%E8%A2%AB%E8%A6%86%E8%93%8B%E7%9A%84%E5%BF%83%E4%BF%AE%E7%BF%92%E6%9C%89%E5%85%89%E8%BC%9D%E7%9A%84%E5%BF%83%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn51.20",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "比丘如何以无遮蔽、不被覆盖的心修习有光辉的心呢？",
+              "score": 12.823123626861964,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn51.20&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E5%A6%82%E4%BD%95%E4%BB%A5%E7%84%A1%E9%81%AE%E8%94%BD%E3%80%81%E4%B8%8D%E8%A2%AB%E8%A6%86%E8%93%8B%E7%9A%84%E5%BF%83%E4%BF%AE%E7%BF%92%E6%9C%89%E5%85%89%E8%BC%9D%E7%9A%84%E5%BF%83%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn36",
+              "collection": "经藏/中部_mn",
+              "title": "萨遮迦大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "但，你所听到的心之修习是什么？",
+              "score": 12.821226154452056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn36&lang=zh&q=%E5%BF%83%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%86%EF%BC%8C%E4%BD%A0%E6%89%80%E8%81%BD%E5%88%B0%E7%9A%84%E5%BF%83%E4%B9%8B%E4%BF%AE%E7%BF%92%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "慧修习",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三修习：身修习、心修习、慧修习。",
+              "score": 13.462284252123776,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BF%AE%E7%BF%92%EF%BC%9A%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "sn48.56",
+              "collection": "经藏/相应部_sn",
+              "title": "已住立经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "慧根到达圆满的修习，比丘们！",
+              "score": 12.066751115560166,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.56&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%85%A7%E6%A0%B9%E5%88%B0%E9%81%94%E5%9C%93%E6%BB%BF%E7%9A%84%E4%BF%AE%E7%BF%92%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 11.65195346228479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 11.65195346228479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 11.65195346228479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an10.24",
+              "collection": "经藏/增支部_an",
+              "title": "大纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我已修习身、已修习戒、已修习心、已修习慧。",
+              "score": 11.65195346228479,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.24&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B7%B2%E4%BF%AE%E7%BF%92%E8%BA%AB%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%88%92%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E5%BF%83%E3%80%81%E5%B7%B2%E4%BF%AE%E7%BF%92%E6%85%A7%E3%80%82"
+            },
+            {
+              "uid": "an1.394-574",
+              "collection": "经藏/增支部_an",
+              "title": "十八、后弹指顷品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "SC 6 修习信根…修习精进根…修习念根…修习定根…修习慧根…。",
+              "score": 11.3136318475738,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.394-574&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=SC+6+%E4%BF%AE%E4%B9%A0%E4%BF%A1%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E7%B2%BE%E8%BF%9B%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%BF%B5%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E5%AE%9A%E6%A0%B9%E2%80%A6%E4%BF%AE%E4%B9%A0%E6%85%A7%E6%A0%B9%E2%80%A6%E3%80%82"
+            },
+            {
+              "uid": "sn55.74",
+              "collection": "经藏/相应部_sn",
+              "title": "洞察慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当这四法已修习、已多修习时，导向洞察慧的状态。",
+              "score": 10.93065264565192,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.74&lang=zh&q=%E6%85%A7%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E9%80%99%E5%9B%9B%E6%B3%95%E5%B7%B2%E4%BF%AE%E7%BF%92%E3%80%81%E5%B7%B2%E5%A4%9A%E4%BF%AE%E7%BF%92%E6%99%82%EF%BC%8C%E5%B0%8E%E5%90%91%E6%B4%9E%E5%AF%9F%E6%85%A7%E7%9A%84%E7%8B%80%E6%85%8B%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g48",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 48,
+      "label": "三修习",
+      "members": "身修习、心修习、慧修习",
+      "member_items": [
+        "身修习",
+        "心修习",
+        "慧修习"
+      ],
+      "dn34_status": null,
+      "source_text": "三修习：身修习、心修习、慧修习。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BF%AE%E7%BF%92&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E4%BF%AE%E7%BF%92%E3%80%81%E5%BF%83%E4%BF%AE%E7%BF%92%E3%80%81%E6%85%A7%E4%BF%AE%E7%BF%92"
+    }
+  ]
+}

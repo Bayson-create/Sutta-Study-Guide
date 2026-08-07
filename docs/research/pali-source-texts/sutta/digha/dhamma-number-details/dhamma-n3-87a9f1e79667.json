@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-87a9f1e79667",
+    "number": 3,
+    "label": "三种苦性",
+    "member_items": [
+      "苦苦性",
+      "行苦性",
+      "变易苦性"
+    ],
+    "group_ids": [
+      "dn33-n3-g27"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三种苦性",
+      "苦苦性",
+      "行苦性",
+      "变易苦性"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三种苦性」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：苦苦性、行苦性、变易苦性。[1]\n\n## 所含各法\n### 苦苦性\n经文将「苦苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《苦性经》命中：苦苦性、行苦性、变易苦性，比丘们！。[3]\n### 行苦性\n经文将「行苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《苦性经》命中：苦苦性、行苦性、变易苦性，比丘们！。[3]\n### 变易苦性\n经文将「变易苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种苦性：苦苦性、行苦性、变易苦性。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 27 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三种苦性",
+          "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.165",
+          "text": "这些是三种苦性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.165",
+          "text": "苦苦性、行苦性、变易苦性，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn38.14",
+          "text": "有这三种苦性：苦苦性、行苦性、变易苦性，道友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.165",
+          "text": "有这三种苦性，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.165",
+          "text": "苦性经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E6%80%A7%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.165",
+          "text": "为了这三种苦性的证智、遍知、灭尽、舍断，……（中略）这八支圣道应该被修习。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%82%BA%E4%BA%86%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E7%9A%84%E8%AD%89%E6%99%BA%E3%80%81%E9%81%8D%E7%9F%A5%E3%80%81%E6%BB%85%E7%9B%A1%E3%80%81%E6%8D%A8%E6%96%B7%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.22",
+          "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.2",
+          "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.111-120",
+          "text": "「寻求、慢、烦恼，有与苦性三则，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.111-120&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn46.165-174",
+          "text": "「寻求、慢、烦恼，有与苦性三则，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.165-174&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三种苦性",
+          "hits": [
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是三种苦性。",
+              "score": 26.226893883335265,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+              "score": 23.757575788129614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn38.14",
+              "collection": "经藏/相应部_sn",
+              "title": "苦的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性：苦苦性、行苦性、变易苦性，道友！",
+              "score": 21.686635903683047,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性，哪三个呢？",
+              "score": 21.47300016308612,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦性经",
+              "score": 14.414772881088695,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E6%80%A7%E7%B6%93"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "为了这三种苦性的证智、遍知、灭尽、舍断，……（中略）这八支圣道应该被修习。",
+              "score": 13.138066950231742,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%82%BA%E4%BA%86%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E7%9A%84%E8%AD%89%E6%99%BA%E3%80%81%E9%81%8D%E7%9F%A5%E3%80%81%E6%BB%85%E7%9B%A1%E3%80%81%E6%8D%A8%E6%96%B7%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦苦性、行苦性、变易苦性，比丘们！",
+              "score": 9.623367496558748,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.22",
+              "collection": "经藏/增支部_an",
+              "title": "未调马经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！",
+              "score": 9.4917888475245,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "苦苦性",
+          "hits": [
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦苦性、行苦性、变易苦性，比丘们！",
+              "score": 24.089135067662134,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+              "score": 23.12817255852807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn38.14",
+              "collection": "经藏/相应部_sn",
+              "title": "苦的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性：苦苦性、行苦性、变易苦性，道友！",
+              "score": 20.656132504224274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "an8.2",
+              "collection": "经藏/增支部_an",
+              "title": "慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+              "score": 9.481091923353143,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an8.2",
+              "collection": "经藏/增支部_an",
+              "title": "慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+              "score": 9.481091923353143,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an8.2",
+              "collection": "经藏/增支部_an",
+              "title": "慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+              "score": 9.481091923353143,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an8.2",
+              "collection": "经藏/增支部_an",
+              "title": "慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+              "score": 9.481091923353143,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "an8.2",
+              "collection": "经藏/增支部_an",
+              "title": "慧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』此法导向可爱性、尊重性、修习性、平等性、一致性。",
+              "score": 9.481091923353143,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "行苦性",
+          "hits": [
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦苦性、行苦性、变易苦性，比丘们！",
+              "score": 11.333777584646818,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%A1%8C%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+              "score": 10.881651125348144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A1%8C%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn38.14",
+              "collection": "经藏/相应部_sn",
+              "title": "苦的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性：苦苦性、行苦性、变易苦性，道友！",
+              "score": 9.7185727467712,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E8%A1%8C%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "变易苦性",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三种苦性：苦苦性、行苦性、变易苦性。",
+              "score": 20.58918262000405,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦苦性、行苦性、变易苦性，比丘们！",
+              "score": 19.83504183965019,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn38.14",
+              "collection": "经藏/相应部_sn",
+              "title": "苦的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性：苦苦性、行苦性、变易苦性，道友！",
+              "score": 18.79204270949257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦性经",
+              "score": 14.414772881088695,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E6%80%A7%E7%B6%93"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是三种苦性。",
+              "score": 12.819134224222578,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E3%80%82"
+            },
+            {
+              "uid": "sn45.165",
+              "collection": "经藏/相应部_sn",
+              "title": "苦性经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种苦性，哪三个呢？",
+              "score": 10.49553456508472,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn46.111-120",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「寻求、慢、烦恼，有与苦性三则，",
+              "score": 9.239472626533855,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.111-120&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C"
+            },
+            {
+              "uid": "sn46.165-174",
+              "collection": "经藏/相应部_sn",
+              "title": "再一个寻求等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「寻求、慢、烦恼，有与苦性三则，",
+              "score": 9.239472626533855,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.165-174&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g27",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 27,
+      "label": "三种苦性",
+      "members": "苦苦性、行苦性、变易苦性",
+      "member_items": [
+        "苦苦性",
+        "行苦性",
+        "变易苦性"
+      ],
+      "dn34_status": null,
+      "source_text": "三种苦性：苦苦性、行苦性、变易苦性。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7"
+    }
+  ]
+}

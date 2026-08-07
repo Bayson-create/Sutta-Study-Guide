@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-90a2afd24bdc",
+    "number": 3,
+    "label": "三善想",
+    "member_items": [
+      "离欲想",
+      "无恶意想",
+      "无加害想"
+    ],
+    "group_ids": [
+      "dn33-n3-g10"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三善想",
+      "离欲想",
+      "无恶意想",
+      "无加害想"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三善想」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：离欲想、无恶意想、无加害想。[1]\n\n## 所含各法\n### 离欲想\n经文将「离欲想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘离欲界生起离欲想；。[3]\n### 无恶意想\n经文将「无恶意想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《欢喜的灭尽经第二》命中：你们要如理作意想……比丘们！。[4]\n### 无加害想\n经文将「无加害想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘加害界生起加害想；。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三善想",
+          "text": "三善想：离欲想、无恶意想、无加害想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三善想：离欲想、无恶意想、无加害想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.12",
+          "text": "缘离欲界生起离欲想；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E7%95%8C%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E6%83%B3%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.52",
+          "text": "你们要如理作意想……比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.52&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%83%B3%E2%80%A6%E2%80%A6%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn14.12",
+          "text": "缘加害界生起加害想；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三善寻：离欲寻、无恶意寻、无加害寻。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B0%8B%EF%BC%9A%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三不善想：欲想、恶意想、加害想。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3%EF%BC%9A%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn72",
+          "text": "这样是想，这样是想的集，这样是想的灭没；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn72&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.110",
+          "text": "欲想、恶意想、加害想，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.110&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.21",
+          "text": "这样是想，这样是想的集，这样是想的灭没；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.21&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.22",
+          "text": "这样是想，这样是想的集，这样是想的灭没；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.22&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "这样是想，这样是想的集，这样是想的灭没；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an6.75",
+          "text": "离欲寻、无恶意寻、不加害寻、离欲想、无恶意想、不加害想，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.75&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三善想",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善想：离欲想、无恶意想、无加害想。",
+              "score": 21.811482297785147,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善寻：离欲寻、无恶意寻、无加害寻。",
+              "score": 10.794360126538967,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B0%8B%EF%BC%9A%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善想：欲想、恶意想、加害想。",
+              "score": 6.541625105954733,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3%EF%BC%9A%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "mn72",
+              "collection": "经藏/中部_mn",
+              "title": "婆蹉火经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是想，这样是想的集，这样是想的灭没；",
+              "score": 6.224217665258274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn72&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+            },
+            {
+              "uid": "an6.110",
+              "collection": "经藏/增支部_an",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲想、恶意想、加害想，比丘们！",
+              "score": 6.224217665258274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.110&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn12.21",
+              "collection": "经藏/相应部_sn",
+              "title": "十力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是想，这样是想的集，这样是想的灭没；",
+              "score": 6.224217665258274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.21&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+            },
+            {
+              "uid": "sn12.22",
+              "collection": "经藏/相应部_sn",
+              "title": "十力经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是想，这样是想的集，这样是想的灭没；",
+              "score": 6.224217665258274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.22&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是想，这样是想的集，这样是想的灭没；",
+              "score": 6.224217665258274,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "离欲想",
+          "hits": [
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘离欲界生起离欲想；",
+              "score": 13.699460202025922,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E7%95%8C%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善想：离欲想、无恶意想、无加害想。",
+              "score": 10.420471326947467,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.75",
+              "collection": "经藏/增支部_an",
+              "title": "苦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "离欲寻、无恶意寻、不加害寻、离欲想、无恶意想、不加害想，比丘们！",
+              "score": 7.899469539738903,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.75&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.110",
+              "collection": "经藏/增支部_an",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "对欲想的舍断应该修习离欲想、对恶意想的舍断应该修习无恶意想、对加害想的舍断应该修习不加害想，比丘们！",
+              "score": 6.6862730096844825,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.110&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B0%8D%E6%AC%B2%E6%83%B3%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E5%B0%8D%E6%83%A1%E6%84%8F%E6%83%B3%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%B0%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%E7%9A%84%E6%8D%A8%E6%96%B7%E6%87%89%E8%A9%B2%E4%BF%AE%E7%BF%92%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn78",
+              "collection": "经藏/中部_mn",
+              "title": "沙门木地葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "［虽然］想有众多的、种种的、各式各样种类的，［但］离欲想、无恶意想、无加害想，像这样是善的意向之等起。",
+              "score": 6.065272068592926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%EF%BC%BB%E9%9B%96%E7%84%B6%EF%BC%BD%E6%83%B3%E6%9C%89%E7%9C%BE%E5%A4%9A%E7%9A%84%E3%80%81%E7%A8%AE%E7%A8%AE%E7%9A%84%E3%80%81%E5%90%84%E5%BC%8F%E5%90%84%E6%A8%A3%E7%A8%AE%E9%A1%9E%E7%9A%84%EF%BC%8C%EF%BC%BB%E4%BD%86%EF%BC%BD%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E5%96%84%E7%9A%84%E6%84%8F%E5%90%91%E4%B9%8B%E7%AD%89%E8%B5%B7%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无恶意想",
+          "hits": [
+            {
+              "uid": "sn22.52",
+              "collection": "经藏/相应部_sn",
+              "title": "欢喜的灭尽经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们要如理作意想……比丘们！",
+              "score": 13.34302296732179,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.52&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%83%B3%E2%80%A6%E2%80%A6%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dhp76-89",
+              "collection": "经藏/小部_kn",
+              "title": "智者品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "定善而无恶。",
+              "score": 12.787656613859337,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp76-89&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%AE%9A%E5%96%84%E8%80%8C%E7%84%A1%E6%83%A1%E3%80%82"
+            },
+            {
+              "uid": "dhp116-128",
+              "collection": "经藏/小部_kn",
+              "title": "恶品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "不作恶者便无恶。",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E4%BD%9C%E6%83%A1%E8%80%85%E4%BE%BF%E7%84%A1%E6%83%A1%E3%80%82"
+            },
+            {
+              "uid": "dhp129-145",
+              "collection": "经藏/小部_kn",
+              "title": "刀杖品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无恶无害者，",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp129-145&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%83%A1%E7%84%A1%E5%AE%B3%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "dhp197-208",
+              "collection": "经藏/小部_kn",
+              "title": "乐品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无恶如嗔恨，",
+              "score": 12.079893841870991,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp197-208&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%83%A1%E5%A6%82%E7%9E%8B%E6%81%A8%EF%BC%8C"
+            },
+            {
+              "uid": "sn22.87",
+              "collection": "经藏/相应部_sn",
+              "title": "跋迦梨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你的死必将是无恶的，你的命终必将是无罪恶的。",
+              "score": 9.890289089909265,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.87&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E7%9A%84%E6%AD%BB%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E6%83%A1%E7%9A%84%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%91%BD%E7%B5%82%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E7%BD%AA%E6%83%A1%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn22.87",
+              "collection": "经藏/相应部_sn",
+              "title": "跋迦梨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你的死必将是无恶的，你的命终必将是无罪恶的。",
+              "score": 9.890289089909265,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.87&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E7%9A%84%E6%AD%BB%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E6%83%A1%E7%9A%84%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%91%BD%E7%B5%82%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E7%BD%AA%E6%83%A1%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn55.21",
+              "collection": "经藏/相应部_sn",
+              "title": "摩诃男经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你的死必将是无恶的，你的命终必将是无罪恶的。",
+              "score": 9.890289089909265,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn55.21&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E7%9A%84%E6%AD%BB%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E6%83%A1%E7%9A%84%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%91%BD%E7%B5%82%E5%BF%85%E5%B0%87%E6%98%AF%E7%84%A1%E7%BD%AA%E6%83%A1%E7%9A%84%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无加害想",
+          "hits": [
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘加害界生起加害想；",
+              "score": 17.390752641957906,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "sn14.12",
+              "collection": "经藏/相应部_sn",
+              "title": "有因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "缘不加害界生起不加害想；",
+              "score": 17.21684511553833,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E4%B8%8D%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B"
+            },
+            {
+              "uid": "mn124",
+              "collection": "经藏/中部_mn",
+              "title": "巴古勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）加害想。",
+              "score": 15.250427559008717,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn124&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+            },
+            {
+              "uid": "an6.74",
+              "collection": "经藏/增支部_an",
+              "title": "那个禅经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲寻、恶意寻、加害寻、欲想、恶意想、加害想，比丘们！",
+              "score": 14.957130062260866,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.74&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E5%B0%8B%E3%80%81%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.74",
+              "collection": "经藏/增支部_an",
+              "title": "那个禅经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲寻、恶意寻、加害寻、欲想、恶意想、加害想，比丘们！",
+              "score": 14.957130062260866,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.74&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E5%B0%8B%E3%80%81%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.75",
+              "collection": "经藏/增支部_an",
+              "title": "苦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲寻、恶意寻、加害寻、欲想、恶意想、加害想，比丘们！",
+              "score": 14.957130062260866,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.75&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E5%B0%8B%E3%80%81%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an6.110",
+              "collection": "经藏/增支部_an",
+              "title": "想经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲想、恶意想、加害想，比丘们！",
+              "score": 14.845700231042292,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.110&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三善想：离欲想、无恶意想、无加害想。",
+              "score": 14.781619267659325,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g10",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 10,
+      "label": "三善想",
+      "members": "离欲想、无恶意想、无加害想",
+      "member_items": [
+        "离欲想",
+        "无恶意想",
+        "无加害想"
+      ],
+      "dn34_status": null,
+      "source_text": "三善想：离欲想、无恶意想、无加害想。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3"
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-97783ef5727c",
+    "number": 5,
+    "label": "五根",
+    "member_items": [
+      "眼根",
+      "耳根",
+      "鼻根",
+      "舌根",
+      "身根"
+    ],
+    "group_ids": [
+      "dn33-n5-g18"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五根",
+      "眼根",
+      "耳根",
+      "鼻根",
+      "舌根",
+      "身根"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五根」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：眼根、耳根、鼻根、舌根、身根。[1]\n\n## 所含各法\n### 眼根\n经文将「眼根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《沙门婆罗门经第二》命中：凡任何沙门或婆罗门了知眼根、了知眼根集、了知眼根灭、了知导向眼根灭道迹；。[3]\n### 耳根\n经文将「耳根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：如理省察而住于耳根自制之已防护。。[4]\n### 鼻根\n经文将「鼻根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：……（中略）住于鼻根自制之已防护。。[5]\n### 舌根\n经文将「舌根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《根具足者经》命中：如果当在舌根上住于生灭随观时，他在舌根上厌，……（中略）比丘！。[6]\n### 身根\n经文将「身根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：……（中略）住于身根自制之已防护。。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五根",
+          "text": "五根：眼根、耳根、鼻根、舌根、身根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.65",
+          "text": "有这五根，哪五根呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.65&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.30",
+          "text": "凡任何沙门或婆罗门了知眼根、了知眼根集、了知眼根灭、了知导向眼根灭道迹；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.30&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E9%9B%86%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E6%BB%85%E3%80%81%E4%BA%86%E7%9F%A5%E5%B0%8E%E5%90%91%E7%9C%BC%E6%A0%B9%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn2",
+          "text": "如理省察而住于耳根自制之已防护。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E7%90%86%E7%9C%81%E5%AF%9F%E8%80%8C%E4%BD%8F%E6%96%BC%E8%80%B3%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn2",
+          "text": "……（中略）住于鼻根自制之已防护。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%BC%BB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn35.154",
+          "text": "如果当在舌根上住于生灭随观时，他在舌根上厌，……（中略）比丘！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.154&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E7%95%B6%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E4%BD%8F%E6%96%BC%E7%94%9F%E6%BB%85%E9%9A%A8%E8%A7%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E5%8E%AD%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn2",
+          "text": "……（中略）住于身根自制之已防护。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E8%BA%AB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.66",
+          "text": "有这五根，哪五根呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.66&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.1",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.1&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.8",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.8&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.12",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.12&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.13",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.13&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn48.14",
+          "text": "这些是五根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.14&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透过观照三相证入圣道。 --- # 二十二、五根（Pañcendriyāni） **五根** 根（indriya）意为\"主控\"，五根是统御修行成就的五种心力： 1. 信根（saddhā-indriya）：对佛法僧与正道的坚定信念 2. 精进根（vīriya-indriya）：四正勤的努力 3. 念根（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "| 义成部 Siddhatthika | 与王山部共有：心心所分类为虚构；布施只是心法；今生所施可维持他世生命；一切由业；重罪整劫报 | 业力泛化、心理主义化 | | Gokulika | 世界纯是炽燃痛苦 | 极端苦观，近似把苦谛实体化、绝对化 | | Bhadrayanika | 见谛分段获得 | 圣道分割化 | | 化地部 Mahisasaka | 八正道实为五支；二种苦灭；禅定阶段可立即转；十二因缘无为；空间无为；三道支是色法；五根不属世间 | 道支、无为、禅定与色心分类偏差 | | 北道派 Uttarapathaka | 痛中有喜；记忆和未来思维无所缘；梦心无记；无意重罪不免责；有障有缚也可解脱；凡夫可得决定智；胎儿/梦者可证真理；在家人、婴儿、胎儿、梦者可成阿罗汉；佛无悲心；佛教可重造；唯施者能净施；真如说；空间无为；一条道非四道 | 混合了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**（Purejāta-paccaya） 11. **后生缘**（Pacchājāta-paccaya） 12. **数数习行缘**（Āsevana-paccaya） 13. **业缘**（Kamma-paccaya） 14. **异熟缘**（Vipāka-paccaya） 15. **食缘**（Āhāra-paccaya） 16. **根缘**（Indriya-paccaya）：其中特别讨论了\"男根、女根\"为何不算作此缘所摄的\"缘法\"，而只算\"控制\"（因为它们并不具备\"产生、支持、维持\"三种作用中的任何一种，但确实对身体的性征形态施加控制力——譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "当下之苦的生起和止息\"——这正是四圣谛因果原则的日常版本，不待来世验证，此生此刻便可体会。 ### 测试导师：求解经（III,4） 针对\"如何辨别一位自称开悟的导师是否名副其实\"这一普遍的灵性难题，佛陀教弟子可通过观察其言行举止，推断其心是否已离贪嗔痴；甚至鼓励弟子**直接询问**佛陀本人的心理状态，以求验证。 ### 信与慧的关系：刹帝利经（III,5） 本章最后澄清信心（saddhā）在修行中的定位：信心并非可有可无，而是\"五根之首\"。菩提比丘特别指出，《求解经》单独看容易让人误以为\"只有证悟才产生信心\"，但完整的图像应是：信心让人踏入修行之门，证悟则让信心变得\"坚定而不退转\"——两者相辅相成，而非互斥。 ### 整理建议 本章的五段经文（教义不是秘密→没有教条或迷信→苦的升起止息→测试导师→信心与亲身体证）呈现一条清楚的递进：**先破除对秘密教义和盲信的疑虑→再给出可亲身验证的实例→再教如何测试导师是否可信→最后说明信心在修行体系中的合理位置**。原书顺序已相当合理，唯\"没有教条或迷信\"一节附录一、二内容较庞杂（多为专家学者对婆罗门教义的辩论考据），可视为辅助性延伸材料，一般读者可略过，不影响主线理解。 --- ## 第四章：当生可见的福乐（The Happiness Visibl",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "花树干、尖木、长绳、烟、蜘蛛网、云、莲花、月亮、太阳（粗糙感类）。 原文说：**「于不同的人生起不同形态的禅相，因为这禅相是从『想』（sabba）生。」**这里的重点是：同一安般念业处，会因禅修者对呼吸的不同**「想」**而呈现不同禅相。 处理禅相的原则：不要玩弄、改变或追逐禅相。若禅相出现在远处，不要转移注意力，只须继续专注呼吸的接触点；当似相稳定出现于该处，能专注于似相一小时以上，即可提升至安止定（禅那）。 #### 四、平衡五根与七觉支 **五根平衡：** 原文强调，信与慧、定与精进的平衡为诸圣者所赞叹。信强慧弱则容易流于迷信，慧强信弱则可能趋向邪黠。 信慧须均等：相信三宝与业报，相信安般念确实能证禅那；慧须觉察似相，推动如实知见。 定精进须均等：精进强而定弱会倾向掉举，定强而精进弱则会倾向怠惰。 **念的特殊地位：** 念在任何业处都不可或缺，原文以盐适合一切调味品、大臣处理一切政务作比喻。念永远守护心，平衡五根的失调。 **七觉支：** 当心萎靡退缩时，修择法、精进、喜觉支（振奋心）；当心掉举散乱时，修轻安、定、舍觉支（平息心）；念觉支则恒常运作。 #### 五、禅那的五自在与逐禅升进 进入初禅后，必须熟练五自在：转向（出定后观察禅支）、入定、住定、出定、省察。五自在纯熟后",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五根",
+          "hits": [
+            {
+              "uid": "sn48.65",
+              "collection": "经藏/相应部_sn",
+              "title": "果经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五根，哪五根呢？",
+              "score": 10.897998825736874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.65&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.66",
+              "collection": "经藏/相应部_sn",
+              "title": "果经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五根，哪五根呢？",
+              "score": 10.897998825736874,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.66&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn48.1",
+              "collection": "经藏/相应部_sn",
+              "title": "单纯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.1&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.8",
+              "collection": "经藏/相应部_sn",
+              "title": "应该被见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.8&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.12",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.12&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.13",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.13&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.14",
+              "collection": "经藏/相应部_sn",
+              "title": "简要经第三",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.14&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.15",
+              "collection": "经藏/相应部_sn",
+              "title": "详细经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五根。",
+              "score": 9.99237659284937,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.15&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "眼根",
+          "hits": [
+            {
+              "uid": "sn48.30",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何沙门或婆罗门了知眼根、了知眼根集、了知眼根灭、了知导向眼根灭道迹；",
+              "score": 12.39912619096198,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.30&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E9%9B%86%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E6%BB%85%E3%80%81%E4%BA%86%E7%9F%A5%E5%B0%8E%E5%90%91%E7%9C%BC%E6%A0%B9%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+            },
+            {
+              "uid": "sn48.30",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何沙门或婆罗门不了知眼根、不了知眼根集、不了知眼根灭、不了知导向眼根灭道迹；",
+              "score": 11.677836988157186,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.30&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%B8%8D%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E3%80%81%E4%B8%8D%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E9%9B%86%E3%80%81%E4%B8%8D%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E6%BB%85%E3%80%81%E4%B8%8D%E4%BA%86%E7%9F%A5%E5%B0%8E%E5%90%91%E7%9C%BC%E6%A0%B9%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B"
+            },
+            {
+              "uid": "sn35.154",
+              "collection": "经藏/相应部_sn",
+              "title": "根具足者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果当在眼根上住于生灭随观时，他在眼根上厌，……（中略）比丘！",
+              "score": 9.491747857742842,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.154&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E7%95%B6%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E4%BD%8F%E6%96%BC%E7%94%9F%E6%BB%85%E9%9A%A8%E8%A7%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E5%8E%AD%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%EF%BC%81"
+            },
+            {
+              "uid": "mn27",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；",
+              "score": 8.66151841584693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn27&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；",
+              "score": 8.66151841584693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B"
+            },
+            {
+              "uid": "mn51",
+              "collection": "经藏/中部_mn",
+              "title": "耿达勒葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；",
+              "score": 8.66151841584693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B"
+            },
+            {
+              "uid": "mn94",
+              "collection": "经藏/中部_mn",
+              "title": "苟德木柯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；",
+              "score": 8.66151841584693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B"
+            },
+            {
+              "uid": "mn101",
+              "collection": "经藏/中部_mn",
+              "title": "天臂经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "他以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；",
+              "score": 8.66151841584693,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn101&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%96%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "耳根",
+          "hits": [
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理省察而住于耳根自制之已防护。",
+              "score": 10.105545213338766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E7%90%86%E7%9C%81%E5%AF%9F%E8%80%8C%E4%BD%8F%E6%96%BC%E8%80%B3%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+            },
+            {
+              "uid": "an6.58",
+              "collection": "经藏/增支部_an",
+              "title": "烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如理省察而住于耳根自制之已防护。",
+              "score": 10.105545213338766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.58&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E7%90%86%E7%9C%81%E5%AF%9F%E8%80%8C%E4%BD%8F%E6%96%BC%E8%80%B3%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "SC 16 如理思择已，守护耳根防护而住。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=SC+16+%E5%A6%82%E7%90%86%E6%80%9D%E6%93%87%E5%B7%B2%EF%BC%8C%E5%AE%88%E8%AD%B7%E8%80%B3%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "停止耳根被尖锐的、燃烧的、灼热的、炽热的铁钉破坏！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%81%9C%E6%AD%A2%E8%80%B3%E6%A0%B9%E8%A2%AB%E5%B0%96%E9%8A%B3%E7%9A%84%E3%80%81%E7%87%83%E7%87%92%E7%9A%84%E3%80%81%E7%81%BC%E7%86%B1%E7%9A%84%E3%80%81%E7%86%BE%E7%86%B1%E7%9A%84%E9%90%B5%E9%87%98%E7%A0%B4%E5%A3%9E%EF%BC%81"
+            },
+            {
+              "uid": "sn48.28",
+              "collection": "经藏/相应部_sn",
+              "title": "正觉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.28&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.29",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.29&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.42",
+              "collection": "经藏/相应部_sn",
+              "title": "巫男巴婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根，婆罗门！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.42&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五根：眼根、耳根、鼻根、舌根、身根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%A0%B9%EF%BC%9A%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "鼻根",
+          "hits": [
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）住于鼻根自制之已防护。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%BC%BB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "SC 17 如理思择已，守护鼻根防护而住。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=SC+17+%E5%A6%82%E7%90%86%E6%80%9D%E6%93%87%E5%B7%B2%EF%BC%8C%E5%AE%88%E8%AD%B7%E9%BC%BB%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "停止鼻根被尖锐的、燃烧的、灼热的、炽热的指甲剪破坏！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%81%9C%E6%AD%A2%E9%BC%BB%E6%A0%B9%E8%A2%AB%E5%B0%96%E9%8A%B3%E7%9A%84%E3%80%81%E7%87%83%E7%87%92%E7%9A%84%E3%80%81%E7%81%BC%E7%86%B1%E7%9A%84%E3%80%81%E7%86%BE%E7%86%B1%E7%9A%84%E6%8C%87%E7%94%B2%E5%89%AA%E7%A0%B4%E5%A3%9E%EF%BC%81"
+            },
+            {
+              "uid": "sn48.28",
+              "collection": "经藏/相应部_sn",
+              "title": "正觉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.28&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.29",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.29&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.42",
+              "collection": "经藏/相应部_sn",
+              "title": "巫男巴婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根，婆罗门！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.42&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五根：眼根、耳根、鼻根、舌根、身根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%A0%B9%EF%BC%9A%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "因彼无守护鼻根防护而住之时，彼等诸漏忧戚热恼可生起；",
+              "score": 7.945295632466446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=%E5%9B%A0%E5%BD%BC%E7%84%A1%E5%AE%88%E8%AD%B7%E9%BC%BB%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E4%B9%8B%E6%99%82%EF%BC%8C%E5%BD%BC%E7%AD%89%E8%AB%B8%E6%BC%8F%E6%86%82%E6%85%BC%E7%86%B1%E6%83%B1%E5%8F%AF%E7%94%9F%E8%B5%B7%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "舌根",
+          "hits": [
+            {
+              "uid": "sn35.154",
+              "collection": "经藏/相应部_sn",
+              "title": "根具足者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果当在舌根上住于生灭随观时，他在舌根上厌，……（中略）比丘！",
+              "score": 10.404637688023941,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.154&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E7%95%B6%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E4%BD%8F%E6%96%BC%E7%94%9F%E6%BB%85%E9%9A%A8%E8%A7%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E5%8E%AD%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%EF%BC%81"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）住于舌根自制之已防护。",
+              "score": 8.778292828133177,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E8%88%8C%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "SC 18 如理思择已，守护舌根防护而住。",
+              "score": 8.778292828133177,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=SC+18+%E5%A6%82%E7%90%86%E6%80%9D%E6%93%87%E5%B7%B2%EF%BC%8C%E5%AE%88%E8%AD%B7%E8%88%8C%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "停止舌根被尖锐的、燃烧的、灼热的、炽热的剃刀破坏！",
+              "score": 8.44154322960665,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%81%9C%E6%AD%A2%E8%88%8C%E6%A0%B9%E8%A2%AB%E5%B0%96%E9%8A%B3%E7%9A%84%E3%80%81%E7%87%83%E7%87%92%E7%9A%84%E3%80%81%E7%81%BC%E7%86%B1%E7%9A%84%E3%80%81%E7%86%BE%E7%86%B1%E7%9A%84%E5%89%83%E5%88%80%E7%A0%B4%E5%A3%9E%EF%BC%81"
+            },
+            {
+              "uid": "sn48.28",
+              "collection": "经藏/相应部_sn",
+              "title": "正觉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.44154322960665,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.28&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.29",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.44154322960665,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.29&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.42",
+              "collection": "经藏/相应部_sn",
+              "title": "巫男巴婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根，婆罗门！",
+              "score": 8.44154322960665,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.42&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五根：眼根、耳根、鼻根、舌根、身根。",
+              "score": 8.44154322960665,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%A0%B9%EF%BC%9A%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "身根",
+          "hits": [
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切烦恼经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "……（中略）住于身根自制之已防护。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E8%BA%AB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "SC 19 如理思择已，守护身根防护而住。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=SC+19+%E5%A6%82%E7%90%86%E6%80%9D%E6%93%87%E5%B7%B2%EF%BC%8C%E5%AE%88%E8%AD%B7%E8%BA%AB%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn35.235",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "停止身根被尖锐的、燃烧的、灼热的、炽热的矛破坏！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn35.235&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%81%9C%E6%AD%A2%E8%BA%AB%E6%A0%B9%E8%A2%AB%E5%B0%96%E9%8A%B3%E7%9A%84%E3%80%81%E7%87%83%E7%87%92%E7%9A%84%E3%80%81%E7%81%BC%E7%86%B1%E7%9A%84%E3%80%81%E7%86%BE%E7%86%B1%E7%9A%84%E7%9F%9B%E7%A0%B4%E5%A3%9E%EF%BC%81"
+            },
+            {
+              "uid": "sn48.28",
+              "collection": "经藏/相应部_sn",
+              "title": "正觉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.28&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.29",
+              "collection": "经藏/相应部_sn",
+              "title": "沙门婆罗门经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根、意根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.29&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%81%E6%84%8F%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "sn48.42",
+              "collection": "经藏/相应部_sn",
+              "title": "巫男巴婆罗门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "眼根、耳根、鼻根、舌根、身根，婆罗门！",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.42&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%EF%BC%8C%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五根：眼根、耳根、鼻根、舌根、身根。",
+              "score": 8.554884573457977,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%A0%B9%EF%BC%9A%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn2",
+              "collection": "经藏/中部_mn",
+              "title": "一切漏经",
+              "author": "庄博蕙",
+              "translator": "hui",
+              "text": "因彼无守护身根防护而住之时，彼等诸漏忧戚热恼可生起；",
+              "score": 7.945295632466446,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=%E5%9B%A0%E5%BD%BC%E7%84%A1%E5%AE%88%E8%AD%B7%E8%BA%AB%E6%A0%B9%E9%98%B2%E8%AD%B7%E8%80%8C%E4%BD%8F%E4%B9%8B%E6%99%82%EF%BC%8C%E5%BD%BC%E7%AD%89%E8%AB%B8%E6%BC%8F%E6%86%82%E6%85%BC%E7%86%B1%E6%83%B1%E5%8F%AF%E7%94%9F%E8%B5%B7%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最终须以名色究竟法为所缘，透过观照三相证入圣道。 --- # 二十二、五根（Pañcendriyāni） **五根** 根（indriya）意为\"主控\"，五根是统御修行成就的五种心力： 1. 信根（saddhā-indriya）：对佛法僧与正道的坚定信念 2. 精进根（vīriya-indriya）：四正勤的努力 3. 念根（sati-indriya）：对四念处的持续正念 4. 定根（samādhi-indriya）：四禅那的专注力 5. 慧根（paññā-indriya）：四圣谛的如实知见 **五根的平衡** 信与慧须平衡（信过强则盲目，慧过强则狡猾）；精进与定须平衡（精进过强则掉举，定过强则昏沉）；念居中央，永远不嫌多。这是《增支部》阐述的根平衡原理。 **五根转为五力** 五根强化后成五力（pañcabalāni），不可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "| 义成部 Siddhatthika | 与王山部共有：心心所分类为虚构；布施只是心法；今生所施可维持他世生命；一切由业；重罪整劫报 | 业力泛化、心理主义化 | | Gokulika | 世界纯是炽燃痛苦 | 极端苦观，近似把苦谛实体化、绝对化 | | Bhadrayanika | 见谛分段获得 | 圣道分割化 | | 化地部 Mahisasaka | 八正道实为五支；二种苦灭；禅定阶段可立即转；十二因缘无为；空间无为；三道支是色法；五根不属世间 | 道支、无为、禅定与色心分类偏差 | | 北道派 Uttarapathaka | 痛中有喜；记忆和未来思维无所缘；梦心无记；无意重罪不免责；有障有缚也可解脱；凡夫可得决定智；胎儿/梦者可证真理；在家人、婴儿、胎儿、梦者可成阿罗汉；佛无悲心；佛教可重造；唯施者能净施；真如说；空间无为；一条道非四道 | 混合了伦理、圣道、佛身、真如、空间、修行资格等多重争议 | | 因缘论者 Hetuvadin | 苦只限有机痛苦；慧不属世间；禅定是出世间且只导向无想天；可把快乐转给他人；五根不作用于世间 | 苦谛缩小化、禅定目标偏差、功德转移实体化 | | 方广部/大空派 Vetulyaka | 佛不真实住世；供佛无果；僧团只是抽象概念不能受供；同意即可性行为 | 典型“佛",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "太阳升起时，光与热同时俱生；又如三根木棍互相依靠而立——一根倒，三根俱倒。 7. **相互缘**（Aññamañña-paccaya）：心与心所互为因果，相互支持，如\"三根木棍互靠\"的譬喻在此再度被引用，强调\"心若无心所为伴，则不能单独生起\"。 8. **依止缘**（Nissaya-paccaya）：分为\"俱生依止\"\"前生依止\"\"前生所缘依止\"三类，说明六根作为\"前生依止\"如何支持相应六识的生起——譬喻如小提琴唯有琴弓拉动琴弦才能发声，五根亦唯有对应尘境撞击才能引发相应的识。 9. **亲依止缘**（Upanissaya-paccaya） 10. **前生缘**（Purejāta-paccaya） 11. **后生缘**（Pacchājāta-paccaya） 12. **数数习行缘**（Āsevana-paccaya） 13. **业缘**（Kamma-paccaya） 14. **异熟缘**（Vipāka-paccaya） 15. **食缘**（Āhāra-paccaya） 16. **根缘**（Indriya-paccaya）：其中特别讨论了\"男根、女根\"为何不算作此缘所摄的\"缘法\"，而只算\"控制\"（因为它们并不具备\"产生、支持、维持\"三种作用中的任何一种，但确实对身体的性征形态施加控制力——譬喻",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "当下之苦的生起和止息\"——这正是四圣谛因果原则的日常版本，不待来世验证，此生此刻便可体会。 ### 测试导师：求解经（III,4） 针对\"如何辨别一位自称开悟的导师是否名副其实\"这一普遍的灵性难题，佛陀教弟子可通过观察其言行举止，推断其心是否已离贪嗔痴；甚至鼓励弟子**直接询问**佛陀本人的心理状态，以求验证。 ### 信与慧的关系：刹帝利经（III,5） 本章最后澄清信心（saddhā）在修行中的定位：信心并非可有可无，而是\"五根之首\"。菩提比丘特别指出，《求解经》单独看容易让人误以为\"只有证悟才产生信心\"，但完整的图像应是：信心让人踏入修行之门，证悟则让信心变得\"坚定而不退转\"——两者相辅相成，而非互斥。 ### 整理建议 本章的五段经文（教义不是秘密→没有教条或迷信→苦的升起止息→测试导师→信心与亲身体证）呈现一条清楚的递进：**先破除对秘密教义和盲信的疑虑→再给出可亲身验证的实例→再教如何测试导师是否可信→最后说明信心在修行体系中的合理位置**。原书顺序已相当合理，唯\"没有教条或迷信\"一节附录一、二内容较庞杂（多为专家学者对婆罗门教义的辩论考据），可视为辅助性延伸材料，一般读者可略过，不影响主线理解。 --- ## 第四章：当生可见的福乐（The Happiness Visibl",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "花树干、尖木、长绳、烟、蜘蛛网、云、莲花、月亮、太阳（粗糙感类）。 原文说：**「于不同的人生起不同形态的禅相，因为这禅相是从『想』（sabba）生。」**这里的重点是：同一安般念业处，会因禅修者对呼吸的不同**「想」**而呈现不同禅相。 处理禅相的原则：不要玩弄、改变或追逐禅相。若禅相出现在远处，不要转移注意力，只须继续专注呼吸的接触点；当似相稳定出现于该处，能专注于似相一小时以上，即可提升至安止定（禅那）。 #### 四、平衡五根与七觉支 **五根平衡：** 原文强调，信与慧、定与精进的平衡为诸圣者所赞叹。信强慧弱则容易流于迷信，慧强信弱则可能趋向邪黠。 信慧须均等：相信三宝与业报，相信安般念确实能证禅那；慧须觉察似相，推动如实知见。 定精进须均等：精进强而定弱会倾向掉举，定强而精进弱则会倾向怠惰。 **念的特殊地位：** 念在任何业处都不可或缺，原文以盐适合一切调味品、大臣处理一切政务作比喻。念永远守护心，平衡五根的失调。 **七觉支：** 当心萎靡退缩时，修择法、精进、喜觉支（振奋心）；当心掉举散乱时，修轻安、定、舍觉支（平息心）；念觉支则恒常运作。 #### 五、禅那的五自在与逐禅升进 进入初禅后，必须熟练五自在：转向（出定后观察禅支）、入定、住定、出定、省察。五自在纯熟后",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "边的空间’，他进入并住于空无边处。”（Vibh 245）（X.12） #### 词义分析 **\"完全超越物质想\"**（complete surmounting of perceptions of matter）：两层含义： - 色界禅那的感知（作为禅那）本身 - 以物质相（如地禅）为对象的感知 **“抵触想的消失”**（disappearance of perceptions of resistance）：原文在无色等至的说明中说五根门所缘的色、声、香、味、触等“抵触想”被超越；这里不扩大为一般意义上所有感官功能永久消失。(X.16) **\"无边空间\"**（unbounded space）：称为\"无边\"因其无始无终，是去除kasina物质后留下的空间。(X.23) **\"空无边处\"**（Ākāsānañcāyatana）： > “‘无边的空间’之所以称为‘处’（āyatana），是因为它是与之相应的禅那的居处……因此称为‘空无边处’。”（X.24） ### 第三部分：识无边处（第二无色禅） 修习识无边处，禅修者须先**精通空无边处五种方式**，然后看到空无边处的危险： > “这个等至以色界禅那为近敌，并不像识无边处那样寂静。”（X.25） 厌离后，他将注意力转向**曾遍覆空间的那个识本",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
+          "query": "五根"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g18",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 18,
+      "label": "五根",
+      "members": "眼根、耳根、鼻根、舌根、身根",
+      "member_items": [
+        "眼根",
+        "耳根",
+        "鼻根",
+        "舌根",
+        "身根"
+      ],
+      "dn34_status": null,
+      "source_text": "五根：眼根、耳根、鼻根、舌根、身根。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9"
+    }
+  ]
+}

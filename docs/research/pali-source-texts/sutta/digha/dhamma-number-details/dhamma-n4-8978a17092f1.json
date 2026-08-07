@@ -1,0 +1,558 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-8978a17092f1",
+    "number": 4,
+    "label": "四种人",
+    "member_items": [
+      "不动沙门",
+      "红莲花沙门",
+      "白莲花沙门",
+      "沙门中的柔软沙门"
+    ],
+    "group_ids": [
+      "dn33-n4-g50"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四种人",
+      "不动沙门",
+      "红莲花沙门",
+      "白莲花沙门",
+      "沙门中的柔软沙门"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四种人」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。[1]\n\n## 所含各法\n### 不动沙门\n经文将「不动沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是不动沙门。。[3]\n### 红莲花沙门\n经文将「红莲花沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《雨神的女儿经第一》命中：我是红莲，红莲是雨神的女儿。。[4]\n### 白莲花沙门\n经文将「白莲花沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是白莲花沙门。。[5]\n### 沙门中的柔软沙门\n经文将「沙门中的柔软沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是沙门中的柔软沙门。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四种人",
+          "text": "下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种人：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.87",
+          "text": "这样的人是不动沙门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.39",
+          "text": "我是红莲，红莲是雨神的女儿。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.39&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%98%AF%E7%B4%85%E8%93%AE%EF%BC%8C%E7%B4%85%E8%93%AE%E6%98%AF%E9%9B%A8%E7%A5%9E%E7%9A%84%E5%A5%B3%E5%85%92%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.87",
+          "text": "这样的人是白莲花沙门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.87",
+          "text": "这样的人是沙门中的柔软沙门。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn5",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn51",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn60",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn66",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn66&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn94",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn136",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn136&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.5",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四种人",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种人：学友们！",
+              "score": 15.328570905974832,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn5",
+              "collection": "经藏/中部_mn",
+              "title": "无秽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn51",
+              "collection": "经藏/中部_mn",
+              "title": "耿达勒葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn60",
+              "collection": "经藏/中部_mn",
+              "title": "无风险经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn66",
+              "collection": "经藏/中部_mn",
+              "title": "鹌鹑譬喻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn66&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn94",
+              "collection": "经藏/中部_mn",
+              "title": "苟德木柯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn136",
+              "collection": "经藏/中部_mn",
+              "title": "业分别大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn136&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.5",
+              "collection": "经藏/增支部_an",
+              "title": "顺流经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "不动沙门",
+          "hits": [
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是不动沙门。",
+              "score": 17.775357851616533,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是不动沙门。",
+              "score": 17.775357851616533,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是不动沙门。",
+              "score": 17.775357851616533,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是不动沙门呢？",
+              "score": 16.889588986137042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是不动沙门呢？",
+              "score": 16.889588986137042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.89",
+              "collection": "经藏/增支部_an",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是不动沙门呢？",
+              "score": 16.889588986137042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.89&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是不动沙门呢？",
+              "score": 16.889588986137042,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.95",
+              "collection": "经藏/增支部_an",
+              "title": "不动的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不动的经",
+              "score": 10.61426813741979,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.95&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%8B%95%E7%9A%84%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "红莲花沙门",
+          "hits": [
+            {
+              "uid": "sn1.39",
+              "collection": "经藏/相应部_sn",
+              "title": "雨神的女儿经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我是红莲，红莲是雨神的女儿。",
+              "score": 13.428652164610593,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.39&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%98%AF%E7%B4%85%E8%93%AE%EF%BC%8C%E7%B4%85%E8%93%AE%E6%98%AF%E9%9B%A8%E7%A5%9E%E7%9A%84%E5%A5%B3%E5%85%92%E3%80%82"
+            },
+            {
+              "uid": "an6.54",
+              "collection": "经藏/增支部_an",
+              "title": "如法经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲求花者们拿走花；",
+              "score": 11.695491065665527,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.54&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E6%B1%82%E8%8A%B1%E8%80%85%E5%80%91%E6%8B%BF%E8%B5%B0%E8%8A%B1%EF%BC%9B"
+            },
+            {
+              "uid": "sn11.9",
+              "collection": "经藏/相应部_sn",
+              "title": "林野处仙人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如在头上的种种花之花环，",
+              "score": 11.695491065665527,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn11.9&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E5%9C%A8%E9%A0%AD%E4%B8%8A%E7%9A%84%E7%A8%AE%E7%A8%AE%E8%8A%B1%E4%B9%8B%E8%8A%B1%E7%92%B0%EF%BC%8C"
+            },
+            {
+              "uid": "dhp360-382",
+              "collection": "经藏/小部_kn",
+              "title": "比丘品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "SC 377 如跋悉迦 花，",
+              "score": 11.112689755056865,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=SC+377+%E5%A6%82%E8%B7%8B%E6%82%89%E8%BF%A6+%E8%8A%B1%EF%BC%8C"
+            },
+            {
+              "uid": "mn116",
+              "collection": "经藏/中部_mn",
+              "title": "仙吞经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "居大、若延大、红莲与青莲，更上红莲、所护、山岳，",
+              "score": 10.974251249737152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn116&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B1%85%E5%A4%A7%E3%80%81%E8%8B%A5%E5%BB%B6%E5%A4%A7%E3%80%81%E7%B4%85%E8%93%AE%E8%88%87%E9%9D%92%E8%93%AE%EF%BC%8C%E6%9B%B4%E4%B8%8A%E7%B4%85%E8%93%AE%E3%80%81%E6%89%80%E8%AD%B7%E3%80%81%E5%B1%B1%E5%B2%B3%EF%BC%8C"
+            },
+            {
+              "uid": "mn85",
+              "collection": "经藏/中部_mn",
+              "title": "菩提王子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当时，菩提王子名叫红莲的宫殿刚完成不久，未被沙门、婆罗门，或任何人住过。",
+              "score": 10.023925857585501,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn85&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%95%B6%E6%99%82%EF%BC%8C%E8%8F%A9%E6%8F%90%E7%8E%8B%E5%AD%90%E5%90%8D%E5%8F%AB%E7%B4%85%E8%93%AE%E7%9A%84%E5%AE%AE%E6%AE%BF%E5%89%9B%E5%AE%8C%E6%88%90%E4%B8%8D%E4%B9%85%EF%BC%8C%E6%9C%AA%E8%A2%AB%E6%B2%99%E9%96%80%E3%80%81%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E6%88%96%E4%BB%BB%E4%BD%95%E4%BA%BA%E4%BD%8F%E9%81%8E%E3%80%82"
+            },
+            {
+              "uid": "an7.69",
+              "collection": "经藏/增支部_an",
+              "title": "昼度树经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "每当三十三天的昼度黑檀树花盛开时，比丘们！",
+              "score": 9.265785819482376,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.69&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%8F%E7%95%B6%E4%B8%89%E5%8D%81%E4%B8%89%E5%A4%A9%E7%9A%84%E6%99%9D%E5%BA%A6%E9%BB%91%E6%AA%80%E6%A8%B9%E8%8A%B1%E7%9B%9B%E9%96%8B%E6%99%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an7.69",
+              "collection": "经藏/增支部_an",
+              "title": "昼度树经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那时，圣弟子花盛开，如三十三天的昼度黑檀树。",
+              "score": 8.896155578912152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.69&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E6%99%82%EF%BC%8C%E8%81%96%E5%BC%9F%E5%AD%90%E8%8A%B1%E7%9B%9B%E9%96%8B%EF%BC%8C%E5%A6%82%E4%B8%89%E5%8D%81%E4%B8%89%E5%A4%A9%E7%9A%84%E6%99%9D%E5%BA%A6%E9%BB%91%E6%AA%80%E6%A8%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "白莲花沙门",
+          "hits": [
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是白莲花沙门。",
+              "score": 20.73322007629268,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是白莲花沙门。",
+              "score": 20.73322007629268,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是白莲花沙门。",
+              "score": 20.73322007629268,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是白莲花沙门呢？",
+              "score": 19.700057144889627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是白莲花沙门呢？",
+              "score": 19.700057144889627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.89",
+              "collection": "经藏/增支部_an",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是白莲花沙门呢？",
+              "score": 19.700057144889627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.89&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是白莲花沙门呢？",
+              "score": 19.700057144889627,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不动沙门、白莲花沙门、红莲花沙门、沙门中的柔软沙门。",
+              "score": 18.071332318520938,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "沙门中的柔软沙门",
+          "hits": [
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是沙门中的柔软沙门。",
+              "score": 33.19994076370816,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样的人是沙门中的柔软沙门。",
+              "score": 33.19994076370816,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an4.87",
+              "collection": "经藏/增支部_an",
+              "title": "儿子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是沙门中的柔软沙门呢？",
+              "score": 31.960156844253188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.88",
+              "collection": "经藏/增支部_an",
+              "title": "结经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是沙门中的柔软沙门呢？",
+              "score": 31.960156844253188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.88&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.89",
+              "collection": "经藏/增支部_an",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是沙门中的柔软沙门呢？",
+              "score": 31.960156844253188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.89&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.90",
+              "collection": "经藏/增支部_an",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "怎样的人是沙门中的柔软沙门呢？",
+              "score": 31.960156844253188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.90&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%80%8E%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.104",
+              "collection": "经藏/增支部_an",
+              "title": "柔软沙门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "具备这五法的比丘是沙门中的柔软沙门。",
+              "score": 31.960156844253188,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.104&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%B7%E5%82%99%E9%80%99%E4%BA%94%E6%B3%95%E7%9A%84%E6%AF%94%E4%B8%98%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
+            },
+            {
+              "uid": "an5.104",
+              "collection": "经藏/增支部_an",
+              "title": "柔软沙门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "柔软沙门经",
+              "score": 29.08217533508551,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.104&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E7%B6%93"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g50",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 50,
+      "label": "四种人",
+      "members": "不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门",
+      "member_items": [
+        "不动沙门",
+        "红莲花沙门",
+        "白莲花沙门",
+        "沙门中的柔软沙门"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80"
+    }
+  ]
+}

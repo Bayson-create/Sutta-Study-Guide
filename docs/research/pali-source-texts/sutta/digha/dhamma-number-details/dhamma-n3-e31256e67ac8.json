@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-e31256e67ac8",
+    "number": 3,
+    "label": "三智",
+    "member_items": [
+      "过去的部分之智",
+      "未来的部分之智",
+      "现在的部分之智"
+    ],
+    "group_ids": [
+      "dn34-n3-g8"
+    ],
+    "suttas": [
+      "dn34"
+    ],
+    "search_terms": [
+      "三智",
+      "过去的部分之智",
+      "未来的部分之智",
+      "现在的部分之智"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三智」属于 3 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：过去的部分之智、未来的部分之智、现在的部分之智。[1]\n\n## 所含各法\n### 过去的部分之智\n经文将「过去的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n### 未来的部分之智\n经文将「未来的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n### 现在的部分之智\n经文将「现在的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 三智",
+          "text": "（八）哪些是应该使之生出的三法呢？三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn37.29",
+          "text": "部分经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.29&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.26",
+          "text": "部分经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn10",
+          "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn141",
+          "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.8",
+          "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn22",
+          "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.50",
+          "text": "那部分涅槃经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.50&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E9%83%A8%E5%88%86%E6%B6%85%E6%A7%83%E7%B6%93"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三智",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+              "score": 8.643081340003775,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "过去的部分之智",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+              "score": 28.40531022541569,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn37.29",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.29&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "sn47.26",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，学友们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.50",
+              "collection": "经藏/增支部_an",
+              "title": "那部分涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那部分涅槃经",
+              "score": 10.132457545558875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.50&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E9%83%A8%E5%88%86%E6%B6%85%E6%A7%83%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "未来的部分之智",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+              "score": 27.969930839373724,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn37.29",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.29&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "sn47.26",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，学友们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.50",
+              "collection": "经藏/增支部_an",
+              "title": "那部分涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那部分涅槃经",
+              "score": 10.132457545558875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.50&lang=zh&q=%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E9%83%A8%E5%88%86%E6%B6%85%E6%A7%83%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "现在的部分之智",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+              "score": 25.487325165942266,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn37.29",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn37.29&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "sn47.26",
+              "collection": "经藏/相应部_sn",
+              "title": "部分经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "部分经",
+              "score": 10.763067252343852,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn141",
+              "collection": "经藏/中部_mn",
+              "title": "谛分别经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，学友们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.8",
+              "collection": "经藏/相应部_sn",
+              "title": "解析经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn22",
+              "collection": "经藏/长部_dn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+              "score": 10.614854837607083,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.50",
+              "collection": "经藏/增支部_an",
+              "title": "那部分涅槃经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那部分涅槃经",
+              "score": 10.132457545558875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.50&lang=zh&q=%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E9%83%A8%E5%88%86%E6%B6%85%E6%A7%83%E7%B6%93"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn34-n3-g8",
+      "sutta": "dn34",
+      "number": 3,
+      "order": 8,
+      "label": "三智",
+      "members": "过去的部分之智、未来的部分之智、现在的部分之智",
+      "member_items": [
+        "过去的部分之智",
+        "未来的部分之智",
+        "现在的部分之智"
+      ],
+      "dn34_status": "应生出",
+      "source_text": "（八）哪些是应该使之生出的三法呢？三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA"
+    }
+  ]
+}

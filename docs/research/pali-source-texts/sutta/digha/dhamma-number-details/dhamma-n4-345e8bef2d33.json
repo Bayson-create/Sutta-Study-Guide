@@ -1,0 +1,541 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-345e8bef2d33",
+    "number": 4,
+    "label": "四摄事",
+    "member_items": [
+      "布施",
+      "爱语",
+      "利行",
+      "平等"
+    ],
+    "group_ids": [
+      "dn33-n4-g40"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四摄事",
+      "布施",
+      "爱语",
+      "利行",
+      "平等"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四摄事」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：布施、爱语、利行、平等。[1]\n\n## 所含各法\n### 布施\n经文将「布施」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《布施事经》命中：布施事经。[3]\n### 爱语\n经文将「爱语」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《相经》命中：「布施与利行，爱语与平等，。[4]\n### 利行\n经文将「利行」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《相经》命中：「布施与利行，爱语与平等，。[4]\n### 平等\n经文将「平等」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《惭经》命中：获得苦的结束后，在不平等中平等地行。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 31 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四摄事",
+          "text": "四摄事：布施、爱语、利行、平等。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四摄事：布施、爱语、利行、平等。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%94%9D%E4%BA%8B%EF%BC%9A%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.33",
+          "text": "布施事经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.33&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B8%83%E6%96%BD%E4%BA%8B%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn30",
+          "text": "「布施与利行，爱语与平等，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8C%E5%B8%83%E6%96%BD%E8%88%87%E5%88%A9%E8%A1%8C%EF%BC%8C%E6%84%9B%E8%AA%9E%E8%88%87%E5%B9%B3%E7%AD%89%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn1.18",
+          "text": "获得苦的结束后，在不平等中平等地行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.18&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%8D%B2%E5%BE%97%E8%8B%A6%E7%9A%84%E7%B5%90%E6%9D%9F%E5%BE%8C%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%B9%B3%E7%AD%89%E4%B8%AD%E5%B9%B3%E7%AD%89%E5%9C%B0%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp5",
+          "text": "自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · snp2.4",
+          "text": "自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp2.4&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn16",
+          "text": "大迦叶的事",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A7%E8%BF%A6%E8%91%89%E7%9A%84%E4%BA%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn21",
+          "text": "守护者之事",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%AE%88%E8%AD%B7%E8%80%85%E4%B9%8B%E4%BA%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn24",
+          "text": "善星的事",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn24&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%96%84%E6%98%9F%E7%9A%84%E4%BA%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn3",
+          "text": "玻科勒沙低的事",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn3&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%8E%BB%E7%A7%91%E5%8B%92%E6%B2%99%E4%BD%8E%E7%9A%84%E4%BA%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn6",
+          "text": "婆罗门使者的事",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn6&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E4%BD%BF%E8%80%85%E7%9A%84%E4%BA%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn24.5",
+          "text": "无布施经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.5&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%B8%83%E6%96%BD%E7%B6%93"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-buddhism-reflections.md",
+          "text": "他摸小孩的头\"已被列为不当身体接触的具体案例之一，遑论要求儿童与自己有更亲密的口部接触。**这个行为，无论以任何文化解释（藏地传统玩笑、长辈逗弄晚辈等辩护说法）都不能被戒律标准豁免。用毕陵伽婆蹉公案确立的原则检验：这个行为是否需要被\"解释\"才能被接受？需要。那么这就已经足以说明问题。** - **性别歧视言论：** 他曾说如果有女性达赖喇嘛，应当\"有吸引力\"之类，后又道歉。这类言论物化女性、贬低女性佛教修行者的证悟能力，与《南传菩萨道》布施波罗蜜章节\"不分别受者身份地位\"的平等精神背道而驰。佛陀在世时期允许并承认比丘尼证得阿罗汉果（大爱道等），从未以外貌作为修行成就的评判标准。 - **冷战时期与 CIA 关系：** 公开资料显示，第十四世达赖喇嘛及流亡藏人组织曾在 1950 年代末至 1970 年代中期获得 CIA 支持，其中包括每年向达赖喇嘛个人支付 18 万美元，其办公室称大部分用于流亡政府活动。[^cia-tibet] 这说明西藏问题从一开始就不是纯宗教议题，而嵌入冷战地缘政治。 - **政教合一体制的既得利益者身份：** 达赖喇嘛在 1959 年之前作为西藏政教合一体制的最高领袖，这个体制本身与佛陀在世时期反对种姓制度、主张僧团内部平等的精神存在张力。用戒律\"活命遍净戒\"标准衡量：依靠世袭宗教",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-quran.md",
+          "text": "（个人努力与真主的怜悯） --- ### 2.2 五个伦理议题的深层对话 #### **议题一：他人的苦难** **古兰经的态度**（《光章》24:33）： ``` 《光章》24:33（意译）： \"你们的奴婢中要求订约赎身者， 如果你们知道他们有善意，就应当与他们订约； 你们就应当从真主赋予你们的财富中给予他们。\" ``` **内核**：真主赐予你财富，是为了帮助需要的人；拒绝就是拒绝真主的恩典 **上座部佛法的态度**（布施教义概述）： ``` 布施的果报不在于给了多少， 而在于给予时的心—— 是否出自同情、是否无悔、是否不期回报。 ``` **内核**：帮助他人的道德价值不在于道德律令，而在于**消除自己的贪心与我慢** **对话点**： - 古兰经问：\"我对贫困者有什么责任？\"→ 因为真主给我，我也有责任 - 佛法问：\"我为何要帮助他人？\"→ 因为帮助会清净我自己的心 **在家伦理层面的融合**： 两者都导向同样的行为结果（帮助他人），但**心理机制不同** - 古兰经信徒：出于对真主的敬畏和责任感 - 佛教信徒：出于对自我烦恼的了解和消除它的欲望 **古兰经的内在一致性评价**：强且有力，因为真主的权威是绝对的 **佛法的内在一致性评价**：更激进，因为它不需要外在权",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "瓦基族(Vajjiputtaka)比库们向在家人要钱。他们在每个月的斋日用铜钵装满水后，放在比库僧众中，开口向前来的在家人要钱: “朋友们，你们给僧众钱吧！僧众们需要资财。”那个时候，从西方地区来的一位名叫亚思·咖甘嗒咖子的阿罗汉见到之后，对韦沙离的居士们说: “**朋友们，请不要给僧众们金钱，金银对沙门释迦子是不允许的，沙门释迦子不能使用金银，沙门释迦子不能接受金银，沙门释迦子放弃珠宝黄金、远离金银。**”但那些居士听了之后，仍然把钱布施给僧众。 当时，瓦基族的比库们将所乞得的钱收齐后，再平分给所有的比库，人人有份，但亚思尊者不肯接受。那些比库很气愤，指责亚思尊者骂詈、诽谤有信心的居士，使他们失去信心，责令他向居士们道歉，并要举他的罪。于是亚思尊者到其他地方，邀请了许多长老、上座一起来到韦沙离城，共同裁决此事。据说当时前来参加裁决的一共有七百位比库。 由于人数众多，双方各选了四位长老作为代表，共同判断瓦基族比库们的行为到底符不符合佛陀的教导。当时，在僧团会议中一共讨论了十件有关瓦基族比库认为是允许的戒律问题。比如允许将盐贮存在器皿中， 在无盐时食用；太阳过了正午二指量还可以继续进食， 允许饮用虽经发酵、但尚未酿成酒的饮料等，但最主要的问题还是围绕着接受金银钱这件事。那个时候佛陀般涅槃才一百年，还有",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "色界是否具六根、无色界是否有色、空间是否无为、时间是否实有 | 世界结构必须服从缘起与阿毗达磨分类，不能随意实体化 | | 因果/业 | 一切是否皆由业、地与老死是否业果、果是否再生果、业与积集是否分离、无意罪是否成罪 | 业很重要，但不是唯一原因；意乐是业的核心 | | 无为/涅槃 | 四谛、十二因缘、空间、灭尽定、涅槃是否无为；涅槃是否善法；空是否对象化 | 无为主要指涅槃；不能把概念、禅定、空间等随意升格为无为 | | 伦理 | 布施、功德、戒、表业/无表业、潜随眠、无意行为、梦中行为是否有道德性 | 道德判断以意乐、烦恼、智慧、行为条件综合判定 | ### 1.2 按部派/异说群整理 | 部派/群体 | 主要异说 | 对应问题 | |---|---|---| | 犊子部/跋耆子部 Vajjiputtaka | 有持续的“人/补特伽罗”；阿罗汉可退 | 近似人格实体论；削弱无我与圣果确定性 | | 正量部 Sammitiya | 天中无梵行；断惑渐断；凡夫能断欲嗔；补特伽罗持续；阿罗汉可退；色法可为业果；中有；色界有六根与欲 | 倾向把人格、业果、修道进程作实体化或连续物理解 | | 说一切有部 Sabbatthivada | 三世法实有；证悟可分段取得；意识流可即三昧；阿罗汉可退 | “一切",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-bible.md",
+          "text": "（实践层面）： - 戒杀、戒盗、戒邪淫、戒妄语 — 都禁止伤害他人 - 都将**守戒**视为道德生活的基础 **根本差异**： |维度|五戒（佛教）|十诫（一神教）| |---|---|---| |**来源**|佛陀说：这些是自然后果法则|上帝启示：绝对命令| |**理由**|因果律 — 杀生导致被杀的业报|神圣意志 — \"因为我说\"| |**第一位**|不杀生（不伤害）|唯一至上的神（宗教排他性）| |**关于他者**|所有众生平等（一切众生都怕死）|你的邻人 = 同族群/信仰者| |**超越性的联系**|无 — 戒律是独立的伦理体系|有 — 爱上帝是万法之首| |**违反后果**|自然业报（必然的因果链）|神圣审判（外在的惩罚）| |**酒与醉**|禁酒（保持正念）|葡萄酒在圣餐中圣化| ### 圣经的一致性问题 #2 **不可杀人 vs. 吩咐杀人**： 士师记、撒母耳记中充满了上帝吩咐以色列人进行的大屠杀—— > \"这城和其中所有的都要在耶和华面前毁灭……又将城中所有的，不拘男女老少、牛羊和驴，都用刀杀尽。\"（《约书亚记》6:17、6:21，和合本，节录） 这直接违反了\"不可杀人\"的诫命。基督教神学通常的辩护是： - \"那是不同的时代的不同律法\" - \"上帝有最终的道德权威，所",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B9%B3%E7%AD%89&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四摄事",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四摄事：布施、爱语、利行、平等。",
+              "score": 19.843827404111924,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%94%9D%E4%BA%8B%EF%BC%9A%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82"
+            },
+            {
+              "uid": "kp5",
+              "collection": "经藏/小部_kn",
+              "title": "吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。",
+              "score": 13.405482937964868,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "snp2.4",
+              "collection": "经藏/小部_kn",
+              "title": "大吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。",
+              "score": 13.405482937964868,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp2.4&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "般涅槃大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "大迦叶的事",
+              "score": 9.766386746189617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A7%E8%BF%A6%E8%91%89%E7%9A%84%E4%BA%8B"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "守护者之事",
+              "score": 9.766386746189617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%AE%88%E8%AD%B7%E8%80%85%E4%B9%8B%E4%BA%8B"
+            },
+            {
+              "uid": "dn24",
+              "collection": "经藏/长部_dn",
+              "title": "波梨经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "善星的事",
+              "score": 9.766386746189617,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn24&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%96%84%E6%98%9F%E7%9A%84%E4%BA%8B"
+            },
+            {
+              "uid": "dn3",
+              "collection": "经藏/长部_dn",
+              "title": "安玻德经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "玻科勒沙低的事",
+              "score": 9.19417269809639,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn3&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%8E%BB%E7%A7%91%E5%8B%92%E6%B2%99%E4%BD%8E%E7%9A%84%E4%BA%8B"
+            },
+            {
+              "uid": "dn6",
+              "collection": "经藏/长部_dn",
+              "title": "摩诃里经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "婆罗门使者的事",
+              "score": 9.19417269809639,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn6&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A9%86%E7%BE%85%E9%96%80%E4%BD%BF%E8%80%85%E7%9A%84%E4%BA%8B"
+            }
+          ]
+        },
+        {
+          "query": "布施",
+          "hits": [
+            {
+              "uid": "an8.33",
+              "collection": "经藏/增支部_an",
+              "title": "布施事经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "布施事经",
+              "score": 8.983929365184817,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.33&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B8%83%E6%96%BD%E4%BA%8B%E7%B6%93"
+            },
+            {
+              "uid": "sn24.5",
+              "collection": "经藏/相应部_sn",
+              "title": "无布施经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无布施经",
+              "score": 8.983929365184817,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.5&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%B8%83%E6%96%BD%E7%B6%93"
+            },
+            {
+              "uid": "sn1.41",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "所布施的有乐果，没布施的不像那样，",
+              "score": 8.938493379150323,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.41&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%89%80%E5%B8%83%E6%96%BD%E7%9A%84%E6%9C%89%E6%A8%82%E6%9E%9C%EF%BC%8C%E6%B2%92%E5%B8%83%E6%96%BD%E7%9A%84%E4%B8%8D%E5%83%8F%E9%82%A3%E6%A8%A3%EF%BC%8C"
+            },
+            {
+              "uid": "an5.148",
+              "collection": "经藏/增支部_an",
+              "title": "善人的布施经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有信地施与布施，恭敬地施与布施，适时地施与布施，有怜悯心地施与布施，不伤害自己与他人后施与布施。",
+              "score": 8.911451719798663,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.148&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E4%BF%A1%E5%9C%B0%E6%96%BD%E8%88%87%E5%B8%83%E6%96%BD%EF%BC%8C%E6%81%AD%E6%95%AC%E5%9C%B0%E6%96%BD%E8%88%87%E5%B8%83%E6%96%BD%EF%BC%8C%E9%81%A9%E6%99%82%E5%9C%B0%E6%96%BD%E8%88%87%E5%B8%83%E6%96%BD%EF%BC%8C%E6%9C%89%E6%86%90%E6%86%AB%E5%BF%83%E5%9C%B0%E6%96%BD%E8%88%87%E5%B8%83%E6%96%BD%EF%BC%8C%E4%B8%8D%E5%82%B7%E5%AE%B3%E8%87%AA%E5%B7%B1%E8%88%87%E4%BB%96%E4%BA%BA%E5%BE%8C%E6%96%BD%E8%88%87%E5%B8%83%E6%96%BD%E3%80%82"
+            },
+            {
+              "uid": "an3.52",
+              "collection": "经藏/增支部_an",
+              "title": "二位婆罗门经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们就要以布施抢救，所布施的是善被抢救的。",
+              "score": 8.670060334786793,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.52&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BD%A0%E5%80%91%E5%B0%B1%E8%A6%81%E4%BB%A5%E5%B8%83%E6%96%BD%E6%90%B6%E6%95%91%EF%BC%8C%E6%89%80%E5%B8%83%E6%96%BD%E7%9A%84%E6%98%AF%E5%96%84%E8%A2%AB%E6%90%B6%E6%95%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn1.41",
+              "collection": "经藏/相应部_sn",
+              "title": "燃烧经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们就要以布施抢救，所布施的是善被抢救的。",
+              "score": 8.670060334786793,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.41&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E5%B0%B1%E8%A6%81%E4%BB%A5%E5%B8%83%E6%96%BD%E6%90%B6%E6%95%91%EF%BC%8C%E6%89%80%E5%B8%83%E6%96%BD%E7%9A%84%E6%98%AF%E5%96%84%E8%A2%AB%E6%90%B6%E6%95%91%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "an5.35",
+              "collection": "经藏/增支部_an",
+              "title": "布施的效益经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "布施的效益经",
+              "score": 8.45755961110543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.35&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B8%83%E6%96%BD%E7%9A%84%E6%95%88%E7%9B%8A%E7%B6%93"
+            },
+            {
+              "uid": "an5.36",
+              "collection": "经藏/增支部_an",
+              "title": "适时的布施经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "适时的布施经",
+              "score": 8.45755961110543,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.36&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%81%A9%E6%99%82%E7%9A%84%E5%B8%83%E6%96%BD%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "爱语",
+          "hits": [
+            {
+              "uid": "dn30",
+              "collection": "经藏/长部_dn",
+              "title": "相经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「布施与利行，爱语与平等，",
+              "score": 12.64257141627103,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8C%E5%B8%83%E6%96%BD%E8%88%87%E5%88%A9%E8%A1%8C%EF%BC%8C%E6%84%9B%E8%AA%9E%E8%88%87%E5%B9%B3%E7%AD%89%EF%BC%8C"
+            },
+            {
+              "uid": "dn31",
+              "collection": "经藏/长部_dn",
+              "title": "辛额勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "布施与爱语，以及凡在这里者利行，",
+              "score": 11.54644455835654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn31&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B8%83%E6%96%BD%E8%88%87%E6%84%9B%E8%AA%9E%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%87%A1%E5%9C%A8%E9%80%99%E8%A3%A1%E8%80%85%E5%88%A9%E8%A1%8C%EF%BC%8C"
+            },
+            {
+              "uid": "an4.32",
+              "collection": "经藏/增支部_an",
+              "title": "摄经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「这里，布施与爱语，以及利行，",
+              "score": 11.066696307330785,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.32&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E9%80%99%E8%A3%A1%EF%BC%8C%E5%B8%83%E6%96%BD%E8%88%87%E6%84%9B%E8%AA%9E%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%88%A9%E8%A1%8C%EF%BC%8C"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在爱语中这是最高的，即：对希求者、倾耳者一再地教导法，比丘们！",
+              "score": 8.858341728655605,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E6%84%9B%E8%AA%9E%E4%B8%AD%E9%80%99%E6%98%AF%E6%9C%80%E9%AB%98%E7%9A%84%EF%BC%8C%E5%8D%B3%EF%BC%9A%E5%B0%8D%E5%B8%8C%E6%B1%82%E8%80%85%E3%80%81%E5%82%BE%E8%80%B3%E8%80%85%E4%B8%80%E5%86%8D%E5%9C%B0%E6%95%99%E5%B0%8E%E6%B3%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "利行",
+          "hits": [
+            {
+              "uid": "dn30",
+              "collection": "经藏/长部_dn",
+              "title": "相经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「布施与利行，爱语与平等，",
+              "score": 12.947684525788647,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E5%88%A9%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8C%E5%B8%83%E6%96%BD%E8%88%87%E5%88%A9%E8%A1%8C%EF%BC%8C%E6%84%9B%E8%AA%9E%E8%88%87%E5%B9%B3%E7%AD%89%EF%BC%8C"
+            },
+            {
+              "uid": "dn31",
+              "collection": "经藏/长部_dn",
+              "title": "辛额勒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "布施与爱语，以及凡在这里者利行，",
+              "score": 11.825103977162659,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn31&lang=zh&q=%E5%88%A9%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%B8%83%E6%96%BD%E8%88%87%E6%84%9B%E8%AA%9E%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%87%A1%E5%9C%A8%E9%80%99%E8%A3%A1%E8%80%85%E5%88%A9%E8%A1%8C%EF%BC%8C"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在利行中这是最高的，即：劝导无信者使确立、建立信具足；",
+              "score": 9.7185727467712,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%88%A9%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E5%88%A9%E8%A1%8C%E4%B8%AD%E9%80%99%E6%98%AF%E6%9C%80%E9%AB%98%E7%9A%84%EF%BC%8C%E5%8D%B3%EF%BC%9A%E5%8B%B8%E5%B0%8E%E7%84%A1%E4%BF%A1%E8%80%85%E4%BD%BF%E7%A2%BA%E7%AB%8B%E3%80%81%E5%BB%BA%E7%AB%8B%E4%BF%A1%E5%85%B7%E8%B6%B3%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "平等",
+          "hits": [
+            {
+              "uid": "sn1.18",
+              "collection": "经藏/相应部_sn",
+              "title": "惭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "获得苦的结束后，在不平等中平等地行。",
+              "score": 12.08047115016357,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.18&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%8D%B2%E5%BE%97%E8%8B%A6%E7%9A%84%E7%B5%90%E6%9D%9F%E5%BE%8C%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%B9%B3%E7%AD%89%E4%B8%AD%E5%B9%B3%E7%AD%89%E5%9C%B0%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "sn1.7",
+              "collection": "经藏/相应部_sn",
+              "title": "未确知者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那些正觉者正确了知，在不平等中平等地行。",
+              "score": 11.73823636116399,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.7&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E4%BA%9B%E6%AD%A3%E8%A6%BA%E8%80%85%E6%AD%A3%E7%A2%BA%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%B9%B3%E7%AD%89%E4%B8%AD%E5%B9%B3%E7%AD%89%E5%9C%B0%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "sn1.8",
+              "collection": "经藏/相应部_sn",
+              "title": "极忘失者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那些正觉者正确了知，在不平等中平等地行。",
+              "score": 11.73823636116399,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.8&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%A3%E4%BA%9B%E6%AD%A3%E8%A6%BA%E8%80%85%E6%AD%A3%E7%A2%BA%E4%BA%86%E7%9F%A5%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%B9%B3%E7%AD%89%E4%B8%AD%E5%B9%B3%E7%AD%89%E5%9C%B0%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "一来者与一来者平等；",
+              "score": 11.466458988477793,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%80%E4%BE%86%E8%80%85%E8%88%87%E4%B8%80%E4%BE%86%E8%80%85%E5%B9%B3%E7%AD%89%EF%BC%9B"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不还者与不还者平等；",
+              "score": 11.466458988477793,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E9%82%84%E8%80%85%E8%88%87%E4%B8%8D%E9%82%84%E8%80%85%E5%B9%B3%E7%AD%89%EF%BC%9B"
+            },
+            {
+              "uid": "an8.24",
+              "collection": "经藏/增支部_an",
+              "title": "如手经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "』我就以平等摄集他。",
+              "score": 10.865104368325245,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.24&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%88%91%E5%B0%B1%E4%BB%A5%E5%B9%B3%E7%AD%89%E6%94%9D%E9%9B%86%E4%BB%96%E3%80%82"
+            },
+            {
+              "uid": "an9.5",
+              "collection": "经藏/增支部_an",
+              "title": "力经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "阿罗汉与阿罗汉平等，比丘们！",
+              "score": 10.32368229120107,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.5&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%98%BF%E7%BE%85%E6%BC%A2%E8%88%87%E9%98%BF%E7%BE%85%E6%BC%A2%E5%B9%B3%E7%AD%89%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.32",
+              "collection": "经藏/增支部_an",
+              "title": "摄经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在诸法上平等，处处都适当的，",
+              "score": 9.833658484531862,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.32&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E8%AB%B8%E6%B3%95%E4%B8%8A%E5%B9%B3%E7%AD%89%EF%BC%8C%E8%99%95%E8%99%95%E9%83%BD%E9%81%A9%E7%95%B6%E7%9A%84%EF%BC%8C"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-buddhism-reflections.md",
+          "heading": "站内搜索命中",
+          "text": "他摸小孩的头\"已被列为不当身体接触的具体案例之一，遑论要求儿童与自己有更亲密的口部接触。**这个行为，无论以任何文化解释（藏地传统玩笑、长辈逗弄晚辈等辩护说法）都不能被戒律标准豁免。用毕陵伽婆蹉公案确立的原则检验：这个行为是否需要被\"解释\"才能被接受？需要。那么这就已经足以说明问题。** - **性别歧视言论：** 他曾说如果有女性达赖喇嘛，应当\"有吸引力\"之类，后又道歉。这类言论物化女性、贬低女性佛教修行者的证悟能力，与《南传菩萨道》布施波罗蜜章节\"不分别受者身份地位\"的平等精神背道而驰。佛陀在世时期允许并承认比丘尼证得阿罗汉果（大爱道等），从未以外貌作为修行成就的评判标准。 - **冷战时期与 CIA 关系：** 公开资料显示，第十四世达赖喇嘛及流亡藏人组织曾在 1950 年代末至 1970 年代中期获得 CIA 支持，其中包括每年向达赖喇嘛个人支付 18 万美元，其办公室称大部分用于流亡政府活动。[^cia-tibet] 这说明西藏问题从一开始就不是纯宗教议题，而嵌入冷战地缘政治。 - **政教合一体制的既得利益者身份：** 达赖喇嘛在 1959 年之前作为西藏政教合一体制的最高领袖，这个体制本身与佛陀在世时期反对种姓制度、主张僧团内部平等的精神存在张力。用戒律\"活命遍净戒\"标准衡量：依靠世袭宗教",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
+          "query": "布施"
+        },
+        {
+          "source": "docs/research/two-religions-quran.md",
+          "heading": "站内搜索命中",
+          "text": "（个人努力与真主的怜悯） --- ### 2.2 五个伦理议题的深层对话 #### **议题一：他人的苦难** **古兰经的态度**（《光章》24:33）： ``` 《光章》24:33（意译）： \"你们的奴婢中要求订约赎身者， 如果你们知道他们有善意，就应当与他们订约； 你们就应当从真主赋予你们的财富中给予他们。\" ``` **内核**：真主赐予你财富，是为了帮助需要的人；拒绝就是拒绝真主的恩典 **上座部佛法的态度**（布施教义概述）： ``` 布施的果报不在于给了多少， 而在于给予时的心—— 是否出自同情、是否无悔、是否不期回报。 ``` **内核**：帮助他人的道德价值不在于道德律令，而在于**消除自己的贪心与我慢** **对话点**： - 古兰经问：\"我对贫困者有什么责任？\"→ 因为真主给我，我也有责任 - 佛法问：\"我为何要帮助他人？\"→ 因为帮助会清净我自己的心 **在家伦理层面的融合**： 两者都导向同样的行为结果（帮助他人），但**心理机制不同** - 古兰经信徒：出于对真主的敬畏和责任感 - 佛教信徒：出于对自我烦恼的了解和消除它的欲望 **古兰经的内在一致性评价**：强且有力，因为真主的权威是绝对的 **佛法的内在一致性评价**：更激进，因为它不需要外在权",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
+          "query": "布施"
+        },
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "瓦基族(Vajjiputtaka)比库们向在家人要钱。他们在每个月的斋日用铜钵装满水后，放在比库僧众中，开口向前来的在家人要钱: “朋友们，你们给僧众钱吧！僧众们需要资财。”那个时候，从西方地区来的一位名叫亚思·咖甘嗒咖子的阿罗汉见到之后，对韦沙离的居士们说: “**朋友们，请不要给僧众们金钱，金银对沙门释迦子是不允许的，沙门释迦子不能使用金银，沙门释迦子不能接受金银，沙门释迦子放弃珠宝黄金、远离金银。**”但那些居士听了之后，仍然把钱布施给僧众。 当时，瓦基族的比库们将所乞得的钱收齐后，再平分给所有的比库，人人有份，但亚思尊者不肯接受。那些比库很气愤，指责亚思尊者骂詈、诽谤有信心的居士，使他们失去信心，责令他向居士们道歉，并要举他的罪。于是亚思尊者到其他地方，邀请了许多长老、上座一起来到韦沙离城，共同裁决此事。据说当时前来参加裁决的一共有七百位比库。 由于人数众多，双方各选了四位长老作为代表，共同判断瓦基族比库们的行为到底符不符合佛陀的教导。当时，在僧团会议中一共讨论了十件有关瓦基族比库认为是允许的戒律问题。比如允许将盐贮存在器皿中， 在无盐时食用；太阳过了正午二指量还可以继续进食， 允许饮用虽经发酵、但尚未酿成酒的饮料等，但最主要的问题还是围绕着接受金银钱这件事。那个时候佛陀般涅槃才一百年，还有",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
+          "query": "布施"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "色界是否具六根、无色界是否有色、空间是否无为、时间是否实有 | 世界结构必须服从缘起与阿毗达磨分类，不能随意实体化 | | 因果/业 | 一切是否皆由业、地与老死是否业果、果是否再生果、业与积集是否分离、无意罪是否成罪 | 业很重要，但不是唯一原因；意乐是业的核心 | | 无为/涅槃 | 四谛、十二因缘、空间、灭尽定、涅槃是否无为；涅槃是否善法；空是否对象化 | 无为主要指涅槃；不能把概念、禅定、空间等随意升格为无为 | | 伦理 | 布施、功德、戒、表业/无表业、潜随眠、无意行为、梦中行为是否有道德性 | 道德判断以意乐、烦恼、智慧、行为条件综合判定 | ### 1.2 按部派/异说群整理 | 部派/群体 | 主要异说 | 对应问题 | |---|---|---| | 犊子部/跋耆子部 Vajjiputtaka | 有持续的“人/补特伽罗”；阿罗汉可退 | 近似人格实体论；削弱无我与圣果确定性 | | 正量部 Sammitiya | 天中无梵行；断惑渐断；凡夫能断欲嗔；补特伽罗持续；阿罗汉可退；色法可为业果；中有；色界有六根与欲 | 倾向把人格、业果、修道进程作实体化或连续物理解 | | 说一切有部 Sabbatthivada | 三世法实有；证悟可分段取得；意识流可即三昧；阿罗汉可退 | “一切",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
+          "query": "布施"
+        },
+        {
+          "source": "docs/research/two-religions-bible.md",
+          "heading": "站内搜索命中",
+          "text": "（实践层面）： - 戒杀、戒盗、戒邪淫、戒妄语 — 都禁止伤害他人 - 都将**守戒**视为道德生活的基础 **根本差异**： |维度|五戒（佛教）|十诫（一神教）| |---|---|---| |**来源**|佛陀说：这些是自然后果法则|上帝启示：绝对命令| |**理由**|因果律 — 杀生导致被杀的业报|神圣意志 — \"因为我说\"| |**第一位**|不杀生（不伤害）|唯一至上的神（宗教排他性）| |**关于他者**|所有众生平等（一切众生都怕死）|你的邻人 = 同族群/信仰者| |**超越性的联系**|无 — 戒律是独立的伦理体系|有 — 爱上帝是万法之首| |**违反后果**|自然业报（必然的因果链）|神圣审判（外在的惩罚）| |**酒与醉**|禁酒（保持正念）|葡萄酒在圣餐中圣化| ### 圣经的一致性问题 #2 **不可杀人 vs. 吩咐杀人**： 士师记、撒母耳记中充满了上帝吩咐以色列人进行的大屠杀—— > \"这城和其中所有的都要在耶和华面前毁灭……又将城中所有的，不拘男女老少、牛羊和驴，都用刀杀尽。\"（《约书亚记》6:17、6:21，和合本，节录） 这直接违反了\"不可杀人\"的诫命。基督教神学通常的辩护是： - \"那是不同的时代的不同律法\" - \"上帝有最终的道德权威，所",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B9%B3%E7%AD%89&scope=site",
+          "query": "平等"
+        },
+        {
+          "source": "docs/research/two-religions-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "摩太前书6:10： \"贪财是万恶之根。\"（和合本；更准确可作\"贪财是各样恶事的一根源\"） 但马太福音19:24： \"财主进天国是难的...\" 启示录18:11-13描述了一个商业中心的繁荣， 其中包括\"奴隶和人的灵魂\"的贸易。 ``` **分析**： |维度|佛法|古兰经|圣经| |---|---|---|---| |**财富的本质**|无常且易造成执着|真主的恩赐，但考验|容易导致不义，但本身非恶| |**富人的责任**|通过布施减少执着|明确的天课（zakat）义务|模糊的\"爱邻人\"道德| |**经济不义的根源**|贪心（lobha）|违背真主的命令|爱财（philarguria）| |**解决方式**|改变心态，消解贪执|建立伊斯兰金融体系|精神救赎（重新定向内心）| |**可操作性**|低 - 依赖个人修行|高 - 有明确的法律制度|中等 - 基于内心转变| |**对贫富差距的应对**|被动的|主动的（强制的税收再分配）|依赖慈善与个人选择| **深层对比**： **古兰经的经济伦理的特点**： - 最清晰的社会经济政策（天课制度） - 禁止高利贷（riba），替代了利息制的债务制度 - 强调社群责任（部分财富属于社群） - 这创造了一个**制度性的财富再分配** **圣经的经济",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
+          "query": "布施"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g40",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 40,
+      "label": "四摄事",
+      "members": "布施、爱语、利行、平等",
+      "member_items": [
+        "布施",
+        "爱语",
+        "利行",
+        "平等"
+      ],
+      "dn34_status": null,
+      "source_text": "四摄事：布施、爱语、利行、平等。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89"
+    }
+  ]
+}

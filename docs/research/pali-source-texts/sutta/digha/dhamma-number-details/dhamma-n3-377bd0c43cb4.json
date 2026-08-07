@@ -1,0 +1,407 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-377bd0c43cb4",
+    "number": 3,
+    "label": "三行",
+    "member_items": [
+      "福行",
+      "非福行",
+      "不动行"
+    ],
+    "group_ids": [
+      "dn33-n3-g35"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三行",
+      "福行",
+      "非福行",
+      "不动行"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三行」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：福行、非福行、不动行。[1]\n\n## 所含各法\n### 福行\n经文将「福行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三行：福行、非福行、不动行。。[1]\n### 非福行\n经文将「非福行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《审虑经》命中：如果造作非福行，则识有非福的转生；。[3]\n### 不动行\n经文将「不动行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《审虑经》命中：如果造作不动行，则识有不动的转生。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 23 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 2 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三行",
+          "text": "三行：福行、非福行、不动行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三行：福行、非福行、不动行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.51",
+          "text": "如果造作非福行，则识有非福的转生；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E9%9D%9E%E7%A6%8F%E7%9A%84%E8%BD%89%E7%94%9F%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.51",
+          "text": "如果造作不动行，则识有不动的转生。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E4%B8%8D%E5%8B%95%E7%9A%84%E8%BD%89%E7%94%9F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三清净行：身清净行、语清净行、意清净行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%85%E6%B7%A8%E8%A1%8C%EF%BC%9A%E8%BA%AB%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp9",
+          "text": "W-X 三 不为智者所非难，不作任何卑贱行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · snp1.8",
+          "text": "W-X 三 不为智者所非难，不作任何卑贱行。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.51",
+          "text": "你们怎么想：烦恼已尽的比丘会造作福行、造作非福行、造作不动行吗？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E7%85%A9%E6%83%B1%E5%B7%B2%E7%9B%A1%E7%9A%84%E6%AF%94%E4%B8%98%E6%9C%83%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%E5%97%8E%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn14",
+          "text": "有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "积习之余绪）。书中举比楞陀跋蹉尊者（Pilinda Vaccha）为例——他前世五百世皆生于高慢的婆罗门世家，即使证得阿罗汉后仍会不自觉地称呼他人为\"贱人\"，此非烦恼未断，而纯属累世积习之惯性反应，唯佛陀断除烦恼之彻底，连此等习气亦荡然无存。 2. **无秘密行恶义**——佛陀断尽一切烦恼及习气，故无论显处隐处，绝无造作恶行之可能。 3. **摧毁轮回之轮辐义**——以\"轮回之轮\"为喻：无明与有爱为轮毂，三种\"行\"（福行、非福行、不动行）为轮辐，老死为轮辋，烦恼漏为轮轴。佛陀以四道智之利斧，将此轮辐彻底击碎，故称阿罗汉。 4. **值得供养义**——佛陀出世时，无论天人皆唯独供养佛陀而非其他神只；大梵天沙杭巴提曾献上须弥山大小的花环，频毗娑罗王、憍萨罗王等尽力供养，佛陀涅槃后阿育王更耗资九亿六千万建八万四千座寺塔以为纪念——此皆彰显佛陀无与伦比的戒、定、慧、解脱、解脱智见五种功德，堪受三界至高供养。 ### 二、正等正觉（Sammā-sambuddha） 佛陀以自身智慧无师自证正法，且能将所证之法教导他人，二者兼备方称\"正等正觉\"。辟支佛虽亦无师自悟，却无法教导他人证悟，故仅称\"独觉\"（Sambuddha）而非\"正等正觉\"；声闻弟子虽能教人，却是依师而悟，非自",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%A6%8F%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/suttas.json",
+          "text": "false\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn44\", \"name\": \"MN 44 Cūḷavedalla Sutta\", \"focus\": \"有身见、八正道、三行、受想灭\", \"summary\": \"Dhammadinnā 比丘尼解释有身、集灭道、八正道、定、三行、受想灭、无相心解脱等，是术语解释密度最高的经之一。\", \"en_url\": \"https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn44/zh/zhuang?lang=en&reference=none&highlight=fal",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三行",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三行：福行、非福行、不动行。",
+              "score": 16.362256698253795,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三清净行：身清净行、语清净行、意清净行。",
+              "score": 16.07249537473924,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%85%E6%B7%A8%E8%A1%8C%EF%BC%9A%E8%BA%AB%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "kp9",
+              "collection": "经藏/小部_kn",
+              "title": "慈悲经",
+              "author": "Wuxing",
+              "translator": "wuxing",
+              "text": "W-X 三 不为智者所非难，不作任何卑贱行。",
+              "score": 11.46270658229076,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "snp1.8",
+              "collection": "经藏/小部_kn",
+              "title": "慈悲经",
+              "author": "Wuxing",
+              "translator": "wuxing",
+              "text": "W-X 三 不为智者所非难，不作任何卑贱行。",
+              "score": 11.46270658229076,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "福行",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三行：福行、非福行、不动行。",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们怎么想：烦恼已尽的比丘会造作福行、造作非福行、造作不动行吗？",
+              "score": 7.659566701318278,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E7%85%A9%E6%83%B1%E5%B7%B2%E7%9B%A1%E7%9A%84%E6%AF%94%E4%B8%98%E6%9C%83%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+              "score": 7.222722354437335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+              "score": 7.222722354437335,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我是出家者，有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+              "score": 6.483214327654101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E6%98%AF%E5%87%BA%E5%AE%B6%E8%80%85%EF%BC%8C%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以无明的褪去，明的生起，他不造作福行，不造作非福行，不造作不动行，当不造作、不制造思时，他在世间中不执取任何事物。",
+              "score": 6.321407890746488,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%A5%E7%84%A1%E6%98%8E%E7%9A%84%E8%A4%AA%E5%8E%BB%EF%BC%8C%E6%98%8E%E7%9A%84%E7%94%9F%E8%B5%B7%EF%BC%8C%E4%BB%96%E4%B8%8D%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E7%95%B6%E4%B8%8D%E9%80%A0%E4%BD%9C%E3%80%81%E4%B8%8D%E8%A3%BD%E9%80%A0%E6%80%9D%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E4%B8%8D%E5%9F%B7%E5%8F%96%E4%BB%BB%E4%BD%95%E4%BA%8B%E7%89%A9%E3%80%82"
+            },
+            {
+              "uid": "dn14",
+              "collection": "经藏/长部_dn",
+              "title": "譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这位名叫出家者，有好的法行、好的正行、好的善行、好的福行、好的不害、好的怜愍生类。",
+              "score": 6.321407890746488,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E4%BD%8D%E5%90%8D%E5%8F%AB%E5%87%BA%E5%AE%B6%E8%80%85%EF%BC%8C%E6%9C%89%E5%A5%BD%E7%9A%84%E6%B3%95%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E6%AD%A3%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E5%96%84%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E7%A6%8F%E8%A1%8C%E3%80%81%E5%A5%BD%E7%9A%84%E4%B8%8D%E5%AE%B3%E3%80%81%E5%A5%BD%E7%9A%84%E6%86%90%E6%84%8D%E7%94%9F%E9%A1%9E%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "非福行",
+          "hits": [
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果造作非福行，则识有非福的转生；",
+              "score": 11.54644455835654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E9%9D%9E%E7%A6%8F%E7%9A%84%E8%BD%89%E7%94%9F%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三行：福行、非福行、不动行。",
+              "score": 11.54644455835654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们怎么想：烦恼已尽的比丘会造作福行、造作非福行、造作不动行吗？",
+              "score": 8.054687029567242,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E7%85%A9%E6%83%B1%E5%B7%B2%E7%9B%A1%E7%9A%84%E6%AF%94%E4%B8%98%E6%9C%83%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以无明的褪去，明的生起，他不造作福行，不造作非福行，不造作不动行，当不造作、不制造思时，他在世间中不执取任何事物。",
+              "score": 6.647499020726134,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%A5%E7%84%A1%E6%98%8E%E7%9A%84%E8%A4%AA%E5%8E%BB%EF%BC%8C%E6%98%8E%E7%9A%84%E7%94%9F%E8%B5%B7%EF%BC%8C%E4%BB%96%E4%B8%8D%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E7%95%B6%E4%B8%8D%E9%80%A0%E4%BD%9C%E3%80%81%E4%B8%8D%E8%A3%BD%E9%80%A0%E6%80%9D%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E4%B8%8D%E5%9F%B7%E5%8F%96%E4%BB%BB%E4%BD%95%E4%BA%8B%E7%89%A9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "不动行",
+          "hits": [
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果造作不动行，则识有不动的转生。",
+              "score": 11.54644455835654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E4%B8%8D%E5%8B%95%E7%9A%84%E8%BD%89%E7%94%9F%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三行：福行、非福行、不动行。",
+              "score": 11.54644455835654,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你们怎么想：烦恼已尽的比丘会造作福行、造作非福行、造作不动行吗？",
+              "score": 8.054687029567242,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E7%85%A9%E6%83%B1%E5%B7%B2%E7%9B%A1%E7%9A%84%E6%AF%94%E4%B8%98%E6%9C%83%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.51",
+              "collection": "经藏/相应部_sn",
+              "title": "审虑经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以无明的褪去，明的生起，他不造作福行，不造作非福行，不造作不动行，当不造作、不制造思时，他在世间中不执取任何事物。",
+              "score": 6.647499020726134,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%A5%E7%84%A1%E6%98%8E%E7%9A%84%E8%A4%AA%E5%8E%BB%EF%BC%8C%E6%98%8E%E7%9A%84%E7%94%9F%E8%B5%B7%EF%BC%8C%E4%BB%96%E4%B8%8D%E9%80%A0%E4%BD%9C%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E4%B8%8D%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E7%95%B6%E4%B8%8D%E9%80%A0%E4%BD%9C%E3%80%81%E4%B8%8D%E8%A3%BD%E9%80%A0%E6%80%9D%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E4%B8%8D%E5%9F%B7%E5%8F%96%E4%BB%BB%E4%BD%95%E4%BA%8B%E7%89%A9%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "积习之余绪）。书中举比楞陀跋蹉尊者（Pilinda Vaccha）为例——他前世五百世皆生于高慢的婆罗门世家，即使证得阿罗汉后仍会不自觉地称呼他人为\"贱人\"，此非烦恼未断，而纯属累世积习之惯性反应，唯佛陀断除烦恼之彻底，连此等习气亦荡然无存。 2. **无秘密行恶义**——佛陀断尽一切烦恼及习气，故无论显处隐处，绝无造作恶行之可能。 3. **摧毁轮回之轮辐义**——以\"轮回之轮\"为喻：无明与有爱为轮毂，三种\"行\"（福行、非福行、不动行）为轮辐，老死为轮辋，烦恼漏为轮轴。佛陀以四道智之利斧，将此轮辐彻底击碎，故称阿罗汉。 4. **值得供养义**——佛陀出世时，无论天人皆唯独供养佛陀而非其他神只；大梵天沙杭巴提曾献上须弥山大小的花环，频毗娑罗王、憍萨罗王等尽力供养，佛陀涅槃后阿育王更耗资九亿六千万建八万四千座寺塔以为纪念——此皆彰显佛陀无与伦比的戒、定、慧、解脱、解脱智见五种功德，堪受三界至高供养。 ### 二、正等正觉（Sammā-sambuddha） 佛陀以自身智慧无师自证正法，且能将所证之法教导他人，二者兼备方称\"正等正觉\"。辟支佛虽亦无师自悟，却无法教导他人证悟，故仅称\"独觉\"（Sambuddha）而非\"正等正觉\"；声闻弟子虽能教人，却是依师而悟，非自",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%A6%8F%E8%A1%8C&scope=site",
+          "query": "福行"
+        },
+        {
+          "source": "docs/suttas.json",
+          "heading": "站内搜索命中",
+          "text": "false\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn44\", \"name\": \"MN 44 Cūḷavedalla Sutta\", \"focus\": \"有身见、八正道、三行、受想灭\", \"summary\": \"Dhammadinnā 比丘尼解释有身、集灭道、八正道、定、三行、受想灭、无相心解脱等，是术语解释密度最高的经之一。\", \"en_url\": \"https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn44/zh/zhuang?lang=en&reference=none&highlight=fal",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site",
+          "query": "三行"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g35",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 35,
+      "label": "三行",
+      "members": "福行、非福行、不动行",
+      "member_items": [
+        "福行",
+        "非福行",
+        "不动行"
+      ],
+      "dn34_status": null,
+      "source_text": "三行：福行、非福行、不动行。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C"
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-8ad43c71628b",
+    "number": 3,
+    "label": "三火",
+    "member_items": [
+      "应被供食者之火",
+      "屋主之火",
+      "应该被供养者之火"
+    ],
+    "group_ids": [
+      "dn33-n3-g33"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三火",
+      "应被供食者之火",
+      "屋主之火",
+      "应该被供养者之火"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三火」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：应被供食者之火、屋主之火、应该被供养者之火。[1]\n\n## 所含各法\n### 应被供食者之火\n经文将「应被供食者之火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：下一个三火：应被供食者之火、屋主之火、应该被供养者之火。。[1]\n### 屋主之火\n经文将「屋主之火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《火经第二经》命中：应该被奉献者之火、屋主之火、应该被供养者之火。。[4]\n### 应该被供养者之火\n经文将「应该被供养者之火」列为「三火」的一个成员。Early Buddhist 用该名词检索时，在《火经第二经》命中：应该被奉献者之火、屋主之火、应该被供养者之火。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 26 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 1 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三火",
+          "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三火：贪火、嗔恚火、愚痴火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "应该被奉献者之火、屋主之火、应该被供养者之火。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.46",
+          "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "这被称为应该被供养者之火，因此，这应该被供养者之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "什么是屋主之火呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.23",
+          "text": "应会合礼敬你：大无畏者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.23&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E6%9C%83%E5%90%88%E7%A6%AE%E6%95%AC%E4%BD%A0%EF%BC%9A%E5%A4%A7%E7%84%A1%E7%95%8F%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "什么是应该被奉献者之火呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn8",
+          "text": "不应实行的、名为不应实行的；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn8&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8D%E6%87%89%E5%AF%A6%E8%A1%8C%E7%9A%84%E3%80%81%E5%90%8D%E7%82%BA%E4%B8%8D%E6%87%89%E5%AF%A6%E8%A1%8C%E7%9A%84%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "这被称为屋主之火，因此，这屋主之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.47",
+          "text": "这被称为应该被奉献者之火，那是什么原因呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E9%82%A3%E6%98%AF%E4%BB%80%E9%BA%BC%E5%8E%9F%E5%9B%A0%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn7.13",
+          "text": "「他被应该被供养者供养，他被应该被恭敬者恭敬，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn7.13&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E4%BB%96%E8%A2%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%BE%9B%E9%A4%8A%EF%BC%8C%E4%BB%96%E8%A2%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%81%AD%E6%95%AC%E8%80%85%E6%81%AD%E6%95%AC%EF%BC%8C"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/forest-dhamma/amata-dhamma-summary.md",
+          "text": "断猜测谁是什么果位，不如依四圣谛在自己心中培养四阶沙门。 这不是否定外在善知识，而是把重心放回可验证之处：若遇到真正有德有法的老师，应当珍惜；但更不能错失自己心中可能生起的道果。外求圣者的热闹，不能代替内在烦恼的止息。 --- ## 五、不死法：两种 amata 与心没有墓地（第五篇《不死法》） 第五篇是全书标题的来源。阿姜摩诃布瓦先用干燥森林遇火的譬喻说心：若心长期缺乏佛法滋养，就像干旱森林，烦恼之火一来便难以扑灭。贪、嗔、痴三火不断烧心；这正是《火经》所说的燃烧。 他还用“保险库”比喻修行。世间银行会把贵重物放入安全处，但我们是否在心中为自己的福德、善法、智慧建立了安全处？若心没有正念智慧作守护，所积善法仍可能被烦恼夺走。 ### 真正的“不死”不是继续轮回 本篇最关键的辨析，是两种 **amata**。一种是仍随 **vaṭṭa cakka**，即生死轮转而流动的“不死”：心不断投生，不断承担五蕴，不断预订墓地。另一种才是 **vivaṭṭa**：不再随轮转而转，烦恼已被智慧粉碎，心不再被业与无明推向新的负担。 阿姜摩诃布瓦的表达非常有力： > “the citta has no cemetery.” 心没有墓地。烦恼被彻底击碎之后，可以检验心是否也一同毁灭；答案是否定的。心本",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%81%AB&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三火",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三火：贪火、嗔恚火、愚痴火。",
+              "score": 11.224968172969845,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%81%AB%EF%BC%9A%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E6%81%9A%E7%81%AB%E3%80%81%E6%84%9A%E7%99%A1%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+              "score": 9.057129073230643,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "应被供食者之火",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+              "score": 24.612710705839774,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被奉献者之火、屋主之火、应该被供养者之火。",
+              "score": 20.17559170360371,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 16.078046789111422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为应该被供养者之火，因此，这应该被供养者之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+              "score": 15.9653966885954,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是屋主之火呢？",
+              "score": 12.96631984981534,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.23",
+              "collection": "经藏/增支部_an",
+              "title": "世间经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应会合礼敬你：大无畏者。",
+              "score": 12.745217528067059,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.23&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E6%9C%83%E5%90%88%E7%A6%AE%E6%95%AC%E4%BD%A0%EF%BC%9A%E5%A4%A7%E7%84%A1%E7%95%8F%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是应该被奉献者之火呢？",
+              "score": 12.32019151199565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn8",
+              "collection": "经藏/长部_dn",
+              "title": "狮子吼大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不应实行的、名为不应实行的；",
+              "score": 11.383997426069767,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn8&lang=zh&q=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8D%E6%87%89%E5%AF%A6%E8%A1%8C%E7%9A%84%E3%80%81%E5%90%8D%E7%82%BA%E4%B8%8D%E6%87%89%E5%AF%A6%E8%A1%8C%E7%9A%84%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "屋主之火",
+          "hits": [
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被奉献者之火、屋主之火、应该被供养者之火。",
+              "score": 24.347451731642586,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是屋主之火呢？",
+              "score": 23.63974633026681,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+              "score": 21.65147491760027,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 19.141264171423312,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为屋主之火，因此，这屋主之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+              "score": 17.923136430106695,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是应该被奉献者之火呢？",
+              "score": 12.32019151199565,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为应该被奉献者之火，那是什么原因呢？",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E9%82%A3%E6%98%AF%E4%BB%80%E9%BA%BC%E5%8E%9F%E5%9B%A0%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为应该被供养者之火，因此，这应该被供养者之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+              "score": 9.10658005487688,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "应该被供养者之火",
+          "hits": [
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被奉献者之火、屋主之火、应该被供养者之火。",
+              "score": 32.05756196801944,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+              "score": 27.603850097409477,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E7%81%AB%EF%BC%9A%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%82"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为应该被供养者之火，因此，这应该被供养者之火，恭敬、尊重、尊敬、崇敬后，应该被适当地、安乐地保持。",
+              "score": 25.933862312445566,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E9%80%99%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%EF%BC%8C%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E9%87%8D%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E5%B4%87%E6%95%AC%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%A9%E7%95%B6%E5%9C%B0%E3%80%81%E5%AE%89%E6%A8%82%E5%9C%B0%E4%BF%9D%E6%8C%81%E3%80%82"
+            },
+            {
+              "uid": "an7.46",
+              "collection": "经藏/增支部_an",
+              "title": "火经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪火、嗔火、痴火、应该被奉献者之火、屋主之火、应该被供养者之火、薪火，比丘们！",
+              "score": 24.885215502024757,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.46&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E7%81%AB%E3%80%81%E7%9E%8B%E7%81%AB%E3%80%81%E7%99%A1%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E8%96%AA%E7%81%AB%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn7.13",
+              "collection": "经藏/相应部_sn",
+              "title": "提婆西多经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「他被应该被供养者供养，他被应该被恭敬者恭敬，",
+              "score": 20.99762230761064,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn7.13&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E4%BB%96%E8%A2%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%BE%9B%E9%A4%8A%EF%BC%8C%E4%BB%96%E8%A2%AB%E6%87%89%E8%A9%B2%E8%A2%AB%E6%81%AD%E6%95%AC%E8%80%85%E6%81%AD%E6%95%AC%EF%BC%8C"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是应该被奉献者之火呢？",
+              "score": 18.842450533387584,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E5%A5%89%E7%8D%BB%E8%80%85%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn6.3",
+              "collection": "经藏/相应部_sn",
+              "title": "梵天经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "应该被供养者，明智者，已亲自修习者，应该为天与人所供养，",
+              "score": 18.480781675157232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn6.3&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%EF%BC%8C%E6%98%8E%E6%99%BA%E8%80%85%EF%BC%8C%E5%B7%B2%E8%A6%AA%E8%87%AA%E4%BF%AE%E7%BF%92%E8%80%85%EF%BC%8C%E6%87%89%E8%A9%B2%E7%82%BA%E5%A4%A9%E8%88%87%E4%BA%BA%E6%89%80%E4%BE%9B%E9%A4%8A%EF%BC%8C"
+            },
+            {
+              "uid": "an7.47",
+              "collection": "经藏/增支部_an",
+              "title": "火经第二经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是应该被供养者之火呢？",
+              "score": 17.706276488431634,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.47&lang=zh&q=%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/forest-monks/forest-dhamma/amata-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "断猜测谁是什么果位，不如依四圣谛在自己心中培养四阶沙门。 这不是否定外在善知识，而是把重心放回可验证之处：若遇到真正有德有法的老师，应当珍惜；但更不能错失自己心中可能生起的道果。外求圣者的热闹，不能代替内在烦恼的止息。 --- ## 五、不死法：两种 amata 与心没有墓地（第五篇《不死法》） 第五篇是全书标题的来源。阿姜摩诃布瓦先用干燥森林遇火的譬喻说心：若心长期缺乏佛法滋养，就像干旱森林，烦恼之火一来便难以扑灭。贪、嗔、痴三火不断烧心；这正是《火经》所说的燃烧。 他还用“保险库”比喻修行。世间银行会把贵重物放入安全处，但我们是否在心中为自己的福德、善法、智慧建立了安全处？若心没有正念智慧作守护，所积善法仍可能被烦恼夺走。 ### 真正的“不死”不是继续轮回 本篇最关键的辨析，是两种 **amata**。一种是仍随 **vaṭṭa cakka**，即生死轮转而流动的“不死”：心不断投生，不断承担五蕴，不断预订墓地。另一种才是 **vivaṭṭa**：不再随轮转而转，烦恼已被智慧粉碎，心不再被业与无明推向新的负担。 阿姜摩诃布瓦的表达非常有力： > “the citta has no cemetery.” 心没有墓地。烦恼被彻底击碎之后，可以检验心是否也一同毁灭；答案是否定的。心本",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E7%81%AB&scope=site",
+          "query": "三火"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g33",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 33,
+      "label": "三火",
+      "members": "应被供食者之火、屋主之火、应该被供养者之火",
+      "member_items": [
+        "应被供食者之火",
+        "屋主之火",
+        "应该被供养者之火"
+      ],
+      "dn34_status": null,
+      "source_text": "下一个三火：应被供食者之火、屋主之火、应该被供养者之火。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%81%AB&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%87%89%E8%A2%AB%E4%BE%9B%E9%A3%9F%E8%80%85%E4%B9%8B%E7%81%AB%E3%80%81%E5%B1%8B%E4%B8%BB%E4%B9%8B%E7%81%AB%E3%80%81%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BE%9B%E9%A4%8A%E8%80%85%E4%B9%8B%E7%81%AB"
+    }
+  ]
+}

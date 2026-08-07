@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n2-512728423b2a",
+    "number": 2,
+    "label": "有见与无有见",
+    "member_items": [
+      "有见与无有见"
+    ],
+    "group_ids": [
+      "dn33-n2-g3"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "有见与无有见"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「有见与无有见」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有见与无有见。[1]\n\n## 所含各法\n### 有见与无有见\n经文将「有见与无有见」列为「有见与无有见」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：凡任何执著无有见、陷入无有见、固执无有见的沙门婆罗门，他们是有见的反对者。。[2]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 有见与无有见",
+          "text": "有见与无有见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "凡任何执著无有见、陷入无有见、固执无有见的沙门婆罗门，他们是有见的反对者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "有这二种见：有见与无有见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.80",
+          "text": "有二种见：有见与无有见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "有见与无有见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "凡任何执著有见、陷入有见、固执有见的沙门婆罗门，他们是无有见的反对者；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp221-234",
+          "text": "无有悲忧处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp221-234&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E6%82%B2%E6%86%82%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp60-75",
+          "text": "我且无有我，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp60-75&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%88%91%E4%B8%94%E7%84%A1%E6%9C%89%E6%88%91%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · dhp90-99",
+          "text": "无有苦恼者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E8%8B%A6%E6%83%B1%E8%80%85%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "有见与无有见",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何执著无有见、陷入无有见、固执无有见的沙门婆罗门，他们是有见的反对者。",
+              "score": 21.06968136752279,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这二种见：有见与无有见。",
+              "score": 18.67878868747637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "sn22.80",
+              "collection": "经藏/相应部_sn",
+              "title": "托钵经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有二种见：有见与无有见。",
+              "score": 18.67878868747637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有见与无有见。",
+              "score": 18.443886891792122,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何执著有见、陷入有见、固执有见的沙门婆罗门，他们是无有见的反对者；",
+              "score": 14.021803180357756,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%EF%BC%9B"
+            },
+            {
+              "uid": "dhp221-234",
+              "collection": "经藏/小部_kn",
+              "title": "忿怒品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无有悲忧处。",
+              "score": 11.840552778932885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp221-234&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E6%82%B2%E6%86%82%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dhp60-75",
+              "collection": "经藏/小部_kn",
+              "title": "愚品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "我且无有我，",
+              "score": 11.185209684435867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp60-75&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%88%91%E4%B8%94%E7%84%A1%E6%9C%89%E6%88%91%EF%BC%8C"
+            },
+            {
+              "uid": "dhp90-99",
+              "collection": "经藏/小部_kn",
+              "title": "阿罗汉品",
+              "author": "叶均",
+              "translator": "yun",
+              "text": "无有苦恼者。",
+              "score": 11.185209684435867,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E8%8B%A6%E6%83%B1%E8%80%85%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n2-g3",
+      "sutta": "dn33",
+      "number": 2,
+      "order": 3,
+      "label": "有见与无有见",
+      "members": "有见与无有见",
+      "member_items": [
+        "有见与无有见"
+      ],
+      "dn34_status": null,
+      "source_text": "有见与无有见。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B"
+    }
+  ]
+}

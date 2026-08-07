@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-71fa88be0b62",
+    "number": 3,
+    "label": "三寻求",
+    "member_items": [
+      "欲的寻求",
+      "有的寻求",
+      "梵行的寻求"
+    ],
+    "group_ids": [
+      "dn33-n3-g22"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三寻求",
+      "欲的寻求",
+      "有的寻求",
+      "梵行的寻求"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三寻求」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的寻求、有的寻求、梵行的寻求。[1]\n\n## 所含各法\n### 欲的寻求\n经文将「欲的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《退去者经》命中：「欲的寻求、有的寻求，连同梵行的寻求，。[3]\n### 有的寻求\n经文将「有的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《退去者经》命中：「欲的寻求、有的寻求，连同梵行的寻求，。[3]\n### 梵行的寻求\n经文将「梵行的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三寻求：欲的寻求、有的寻求、梵行的寻求。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三寻求",
+          "text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%B0%8B%E6%B1%82%EF%BC%9A%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.38",
+          "text": "「欲的寻求、有的寻求，连同梵行的寻求，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E9%80%A3%E5%90%8C%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.161",
+          "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三寻求",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
+              "score": 24.56521903787425,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%B0%8B%E6%B1%82%EF%BC%9A%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82"
+            },
+            {
+              "uid": "an4.38",
+              "collection": "经藏/增支部_an",
+              "title": "退去者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「欲的寻求、有的寻求，连同梵行的寻求，",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.38&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E9%80%A3%E5%90%8C%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 11.454338234277232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "欲的寻求",
+          "hits": [
+            {
+              "uid": "an4.38",
+              "collection": "经藏/增支部_an",
+              "title": "退去者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「欲的寻求、有的寻求，连同梵行的寻求，",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E9%80%A3%E5%90%8C%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 20.503590412933136,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "有的寻求",
+          "hits": [
+            {
+              "uid": "an4.38",
+              "collection": "经藏/增支部_an",
+              "title": "退去者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「欲的寻求、有的寻求，连同梵行的寻求，",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.38&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E9%80%A3%E5%90%8C%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 17.583578772759545,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "梵行的寻求",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
+              "score": 18.786609485736438,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%B0%8B%E6%B1%82%EF%BC%9A%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn45.161",
+              "collection": "经藏/相应部_sn",
+              "title": "寻求经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的寻求、有的寻求、梵行的寻求，比丘们！",
+              "score": 18.706816432321883,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g22",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 22,
+      "label": "三寻求",
+      "members": "欲的寻求、有的寻求、梵行的寻求",
+      "member_items": [
+        "欲的寻求",
+        "有的寻求",
+        "梵行的寻求"
+      ],
+      "dn34_status": null,
+      "source_text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82"
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-092d33d26e60",
+    "number": 3,
+    "label": "三不善根",
+    "member_items": [
+      "贪欲不善根",
+      "嗔恚不善根",
+      "愚痴不善根"
+    ],
+    "group_ids": [
+      "dn33-n3-g1",
+      "dn34-n3-g5"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "三不善根",
+      "贪欲不善根",
+      "嗔恚不善根",
+      "愚痴不善根",
+      "贪不善根",
+      "嗔不善根",
+      "痴不善根"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三不善根」属于 3 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：贪欲不善根、嗔恚不善根、愚痴不善根。[1]\n- DN34：贪欲不善根、嗔恚不善根、愚痴不善根。[2]\n\n## 所含各法\n### 贪欲不善根\n经文将「贪欲不善根」列为「三不善根」的一个成员。Early Buddhist 用该名词检索时，在《不善根经》命中：贪欲不善根、嗔不善根、痴不善根。。[4]\n### 嗔恚不善根\n经文将「嗔恚不善根」列为「三不善根」的一个成员。Early Buddhist 用该名词检索时，在《正见经》命中：贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！。[5]\n### 愚痴不善根\n经文将「愚痴不善根」列为「三不善根」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 7 个关键词，冻结 56 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 2 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三不善根",
+          "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 三不善根",
+          "text": "（五）哪些是退分的三法呢？三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "这是三不善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "贪欲不善根、嗔不善根、痴不善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn9",
+          "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "有这三不善根，哪三个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.69",
+          "text": "不善根经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn9",
+          "text": "什么是不善根？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn57",
+          "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.233",
+          "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.234",
+          "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.234&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "漏（diṭṭhāsava）：对邪见的执着（在有些文本中单列） **漏与集谛** 《阿毗达摩》将集谛广义化为\"作为漏之所缘和能够导致生死轮转的一切善恶法\"——即任何能推动轮回的心行，无论善恶，皆属集谛范畴。这是理解业力与轮回的精密框架。 **漏尽** 四圣道智彻底灭除诸漏，尤其阿罗汉道断无明漏，称\"漏尽\"。漏尽者不再受生，死后般无余涅槃。 --- # 十八、三毒（Tīṇi Akusalamūlāni） **定义** 三毒（三不善根）是一切不善法的根源： 1. 贪（lobha）：渴爱、执取、黏着——在心中制造\"我欲此\"的牵引力 2. 嗔（dosa）：恼怒、憎恨、排斥——制造\"我拒此\"的推力 3. 痴（moha）：无明、混乱、不明真相——制造颠倒的认知基础 **三毒与六根** 阿姜查：\"'风'——外尘接触感官，造成贪嗔痴的生起……'火'——贪和嗔会造成我们说错或做错，痴会导引我们将好的视为坏的，将坏的视为好的；丑的视为美的，美的视为丑的。\" **三毒与轮回** 雷迪禅师指出，贪嗔痴各有三个层次（犯罪、缠烦恼、随眠），须以戒定慧三学分别对治。 **三毒与道** 正精进（sammā-vāyāma）的四正勤，正是以三毒为对治目标：断已生不善，防未生不善，生已生善，增益已生善。 ---",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "战栗\"。 **3. 纷乱的世界——暴力与纷争的根源** 本节追问社会冲突的根本原因，四则经文层层剥茧：在家人因\"欲\"而诤，出家人因\"见\"而诤；帝释天问佛，佛陀揭示嫉妒悭吝源于\"可爱、不可爱\"，再溯源到\"意欲\"，再溯源到\"寻\"，最终溯源到\"虚妄想\"（papañca，戏论/妄想分别）；因缘大经给出一条完整的因果暗链：**\"缘于受有渴爱；缘于渴爱而有遍求……缘于守护之故而有拿杖、拿刀、斗诤……\"**；不善根经则把一切暴力压迫归结于贪、嗔、痴三不善根：\"凡贪欲者被贪欲征服，心被占据……我是有力量者，我需要力量。\" **4. 轮回没有第一因** 本章压轴的四则譬喻经文（草木喻、泥球喻、岩山喻、恒河沙喻）以惊人的想象力描绘轮回之久远无尽：把南赡部洲一切草木削成四指宽的小片，一片代表一位母亲，也数不完自己母亲的母亲；把大地捏成枣核大的泥丸，一颗代表一位父亲，也数不完；一座长宽高各一由旬的大岩石山，每百年以布擦拭一次，也会先被磨尽，而一劫尚未过去。结论只有一句反复出现的呼唤：**\"到此，就足以要对一切行厌！足以要离染！足以要解脱！\"** 被绳子系住的狗之譬喻收束本章：凡夫如同被拴在柱子上的狗，只能绕着五蕴\"这根柱子\"打转，无法解脱。 ### 本章的整理建议 原书按\"导论\"先陈述全章逻辑，再依序列出经文，顺序已相",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&scope=site"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三不善根",
+          "hits": [
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 30.448921113296045,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 29.057344996469368,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 26.668206530250032,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三不善根，哪三个呢？",
+              "score": 23.549946747862553,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 15.771566016716537,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 14.75469834514056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "贪欲不善根",
+          "hits": [
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 29.310684258665283,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 26.121912757289746,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 25.857810284180157,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 23.94171114562231,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "嗔恚不善根",
+          "hits": [
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 30.758586691048404,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 29.43135047708613,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 26.764697168342906,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn57",
+              "collection": "经藏/中部_mn",
+              "title": "守狗戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人为作有嗔恚的与无嗔恚的身行，为作有嗔恚的与无嗔恚的语行，为作有嗔恚的与无嗔恚的意行，他为作有嗔恚的与无嗔恚的身行后，为作有嗔恚的与无嗔恚的语行后，为作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.075871903389455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn57&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E7%82%BA%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.233",
+              "collection": "经藏/增支部_an",
+              "title": "详细经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.233&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an4.234",
+              "collection": "经藏/增支部_an",
+              "title": "受那葛亚那经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某人行作有嗔恚的与无嗔恚的身行，行作有嗔恚的与无嗔恚的语行，行作有嗔恚的与无嗔恚的意行，他行作有嗔恚的与无嗔恚的身行后，行作有嗔恚的与无嗔恚的语行后，行作有嗔恚的与无嗔恚的意行后，往生到有嗔恚的与无嗔恚的世界，当往生到有嗔恚的与无嗔恚的世界时，有嗔恚的与无嗔恚的触接触他，当他被有嗔恚的与无嗔恚的触接触时，感受有嗔恚的与无嗔恚的、混合了乐与苦的感受，犹如人、某些天神、某些堕恶处者。",
+              "score": 25.002318388293084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.234&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%BA%BA%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%EF%BC%8C%E4%BB%96%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%BA%AB%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%AA%9E%E8%A1%8C%E5%BE%8C%EF%BC%8C%E8%A1%8C%E4%BD%9C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E6%84%8F%E8%A1%8C%E5%BE%8C%EF%BC%8C%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E7%95%B6%E5%BE%80%E7%94%9F%E5%88%B0%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E4%B8%96%E7%95%8C%E6%99%82%EF%BC%8C%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E4%BB%96%EF%BC%8C%E7%95%B6%E4%BB%96%E8%A2%AB%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E8%A7%B8%E6%8E%A5%E8%A7%B8%E6%99%82%EF%BC%8C%E6%84%9F%E5%8F%97%E6%9C%89%E7%9E%8B%E6%81%9A%E7%9A%84%E8%88%87%E7%84%A1%E7%9E%8B%E6%81%9A%E7%9A%84%E3%80%81%E6%B7%B7%E5%90%88%E4%BA%86%E6%A8%82%E8%88%87%E8%8B%A6%E7%9A%84%E6%84%9F%E5%8F%97%EF%BC%8C%E7%8C%B6%E5%A6%82%E4%BA%BA%E3%80%81%E6%9F%90%E4%BA%9B%E5%A4%A9%E7%A5%9E%E3%80%81%E6%9F%90%E4%BA%9B%E5%A2%AE%E6%83%A1%E8%99%95%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 24.96701521392399,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "an4.200",
+              "collection": "经藏/增支部_an",
+              "title": "情爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这样是从嗔恚生嗔恚。",
+              "score": 23.991315587925826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.200&lang=zh&q=%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E5%BE%9E%E7%9E%8B%E6%81%9A%E7%94%9F%E7%9E%8B%E6%81%9A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "愚痴不善根",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 23.741083411746338,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 23.319051154130396,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 21.754747311843744,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 15.771566016716537,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "贪不善根",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 15.84771484046601,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 15.771566016716537,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 14.821323626845595,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 14.75469834514056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E8%B2%AA%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "嗔不善根",
+          "hits": [
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 24.96701521392399,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 23.02492387931907,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 22.3650346784448,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 20.584033424065012,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "痴不善根",
+          "hits": [
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲不善根、嗔不善根、痴不善根。",
+              "score": 24.522968717292102,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+              "score": 15.84771484046601,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+              "score": 14.821323626845595,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9A%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "贪欲是不善根，嗔恚是不善根，愚痴是不善根，学友们！",
+              "score": 14.75469834514056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%B2%AA%E6%AC%B2%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E7%9E%8B%E6%81%9A%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E6%84%9A%E7%99%A1%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不善根经",
+              "score": 14.242511256566575,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%96%84%E6%A0%B9%E7%B6%93"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "mn9",
+              "collection": "经藏/中部_mn",
+              "title": "正见经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是不善根？",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E6%A0%B9%EF%BC%9F"
+            },
+            {
+              "uid": "an3.69",
+              "collection": "经藏/增支部_an",
+              "title": "不善根经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是三不善根。",
+              "score": 13.408040409473307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "漏（diṭṭhāsava）：对邪见的执着（在有些文本中单列） **漏与集谛** 《阿毗达摩》将集谛广义化为\"作为漏之所缘和能够导致生死轮转的一切善恶法\"——即任何能推动轮回的心行，无论善恶，皆属集谛范畴。这是理解业力与轮回的精密框架。 **漏尽** 四圣道智彻底灭除诸漏，尤其阿罗汉道断无明漏，称\"漏尽\"。漏尽者不再受生，死后般无余涅槃。 --- # 十八、三毒（Tīṇi Akusalamūlāni） **定义** 三毒（三不善根）是一切不善法的根源： 1. 贪（lobha）：渴爱、执取、黏着——在心中制造\"我欲此\"的牵引力 2. 嗔（dosa）：恼怒、憎恨、排斥——制造\"我拒此\"的推力 3. 痴（moha）：无明、混乱、不明真相——制造颠倒的认知基础 **三毒与六根** 阿姜查：\"'风'——外尘接触感官，造成贪嗔痴的生起……'火'——贪和嗔会造成我们说错或做错，痴会导引我们将好的视为坏的，将坏的视为好的；丑的视为美的，美的视为丑的。\" **三毒与轮回** 雷迪禅师指出，贪嗔痴各有三个层次（犯罪、缠烦恼、随眠），须以戒定慧三学分别对治。 **三毒与道** 正精进（sammā-vāyāma）的四正勤，正是以三毒为对治目标：断已生不善，防未生不善，生已生善，增益已生善。 ---",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&scope=site",
+          "query": "三不善根"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "战栗\"。 **3. 纷乱的世界——暴力与纷争的根源** 本节追问社会冲突的根本原因，四则经文层层剥茧：在家人因\"欲\"而诤，出家人因\"见\"而诤；帝释天问佛，佛陀揭示嫉妒悭吝源于\"可爱、不可爱\"，再溯源到\"意欲\"，再溯源到\"寻\"，最终溯源到\"虚妄想\"（papañca，戏论/妄想分别）；因缘大经给出一条完整的因果暗链：**\"缘于受有渴爱；缘于渴爱而有遍求……缘于守护之故而有拿杖、拿刀、斗诤……\"**；不善根经则把一切暴力压迫归结于贪、嗔、痴三不善根：\"凡贪欲者被贪欲征服，心被占据……我是有力量者，我需要力量。\" **4. 轮回没有第一因** 本章压轴的四则譬喻经文（草木喻、泥球喻、岩山喻、恒河沙喻）以惊人的想象力描绘轮回之久远无尽：把南赡部洲一切草木削成四指宽的小片，一片代表一位母亲，也数不完自己母亲的母亲；把大地捏成枣核大的泥丸，一颗代表一位父亲，也数不完；一座长宽高各一由旬的大岩石山，每百年以布擦拭一次，也会先被磨尽，而一劫尚未过去。结论只有一句反复出现的呼唤：**\"到此，就足以要对一切行厌！足以要离染！足以要解脱！\"** 被绳子系住的狗之譬喻收束本章：凡夫如同被拴在柱子上的狗，只能绕着五蕴\"这根柱子\"打转，无法解脱。 ### 本章的整理建议 原书按\"导论\"先陈述全章逻辑，再依序列出经文，顺序已相",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&scope=site",
+          "query": "三不善根"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g1",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 1,
+      "label": "三不善根",
+      "members": "贪欲不善根、嗔恚不善根、愚痴不善根",
+      "member_items": [
+        "贪欲不善根",
+        "嗔恚不善根",
+        "愚痴不善根"
+      ],
+      "dn34_status": null,
+      "source_text": "三不善根：贪欲不善根、嗔恚不善根、愚痴不善根。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9"
+    },
+    {
+      "id": "dn34-n3-g5",
+      "sutta": "dn34",
+      "number": 3,
+      "order": 5,
+      "label": "三不善根",
+      "members": "贪欲不善根、嗔恚不善根、愚痴不善根",
+      "member_items": [
+        "贪欲不善根",
+        "嗔恚不善根",
+        "愚痴不善根"
+      ],
+      "dn34_status": "退分法",
+      "source_text": "（五）哪些是退分的三法呢？三不善根：贪欲不善根、嗔恚不善根、愚痴不善根，这些是退分的三法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%B2%AA%E6%AC%B2%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E7%9E%8B%E6%81%9A%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%81%E6%84%9A%E7%99%A1%E4%B8%8D%E5%96%84%E6%A0%B9"
+    }
+  ]
+}

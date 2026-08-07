@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-a79f9bb69bdc",
+    "number": 5,
+    "label": "五蕴",
+    "member_items": [
+      "色蕴",
+      "受蕴",
+      "想蕴",
+      "行蕴",
+      "识蕴"
+    ],
+    "group_ids": [
+      "dn33-n5-g1"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五蕴",
+      "色蕴",
+      "受蕴",
+      "想蕴",
+      "行蕴",
+      "识蕴"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五蕴」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色蕴、受蕴、想蕴、行蕴、识蕴。[1]\n\n## 所含各法\n### 色蕴\n经文将「色蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有色蕴之说？。[3]\n### 受蕴\n经文将「受蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有受蕴之说？。[4]\n### 想蕴\n经文将「想蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有想蕴之说？。[5]\n### 行蕴\n经文将「行蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有行蕴之说？。[6]\n### 识蕴\n经文将「识蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有识蕴之说？。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 46 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五蕴",
+          "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.48",
+          "text": "什么是五蕴？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%98%8A%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "什么因、什么缘而有色蕴之说？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "什么因、什么缘而有受蕴之说？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "什么因、什么缘而有想蕴之说？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "什么因、什么缘而有行蕴之说？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "什么因、什么缘而有识蕴之说？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.48",
+          "text": "这些被称为五蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BA%94%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.76",
+          "text": "遍知五蕴后，在七善法的范围中，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.76&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%81%8D%E7%9F%A5%E4%BA%94%E8%98%8A%E5%BE%8C%EF%BC%8C%E5%9C%A8%E4%B8%83%E5%96%84%E6%B3%95%E7%9A%84%E7%AF%84%E5%9C%8D%E4%B8%AD%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.96-614",
+          "text": "属于行境的个别有八则，在五蕴与单独的上。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.96-614&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B1%AC%E6%96%BC%E8%A1%8C%E5%A2%83%E7%9A%84%E5%80%8B%E5%88%A5%E6%9C%89%E5%85%AB%E5%89%87%EF%BC%8C%E5%9C%A8%E4%BA%94%E8%98%8A%E8%88%87%E5%96%AE%E7%8D%A8%E7%9A%84%E4%B8%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.22",
+          "text": "「五蕴确实是负担，人是荷负担者，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.22&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E4%BA%94%E8%98%8A%E7%A2%BA%E5%AF%A6%E6%98%AF%E8%B2%A0%E6%93%94%EF%BC%8C%E4%BA%BA%E6%98%AF%E8%8D%B7%E8%B2%A0%E6%93%94%E8%80%85%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.48",
+          "text": "我将教导五蕴与五取蕴，你们要听！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%BA%94%E8%98%8A%E8%88%87%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五蕴",
+          "hits": [
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是五蕴？",
+              "score": 14.485717056367521,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%98%8A%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些被称为五蕴。",
+              "score": 13.68397115657992,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BA%94%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.76",
+              "collection": "经藏/相应部_sn",
+              "title": "阿罗汉经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "遍知五蕴后，在七善法的范围中，",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.76&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%81%8D%E7%9F%A5%E4%BA%94%E8%98%8A%E5%BE%8C%EF%BC%8C%E5%9C%A8%E4%B8%83%E5%96%84%E6%B3%95%E7%9A%84%E7%AF%84%E5%9C%8D%E4%B8%AD%EF%BC%8C"
+            },
+            {
+              "uid": "an7.96-614",
+              "collection": "经藏/增支部_an",
+              "title": "－614经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "属于行境的个别有八则，在五蕴与单独的上。",
+              "score": 10.272603511963363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.96-614&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B1%AC%E6%96%BC%E8%A1%8C%E5%A2%83%E7%9A%84%E5%80%8B%E5%88%A5%E6%9C%89%E5%85%AB%E5%89%87%EF%BC%8C%E5%9C%A8%E4%BA%94%E8%98%8A%E8%88%87%E5%96%AE%E7%8D%A8%E7%9A%84%E4%B8%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.22",
+              "collection": "经藏/相应部_sn",
+              "title": "负担经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「五蕴确实是负担，人是荷负担者，",
+              "score": 10.272603511963363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.22&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E4%BA%94%E8%98%8A%E7%A2%BA%E5%AF%A6%E6%98%AF%E8%B2%A0%E6%93%94%EF%BC%8C%E4%BA%BA%E6%98%AF%E8%8D%B7%E8%B2%A0%E6%93%94%E8%80%85%EF%BC%8C"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将教导五蕴与五取蕴，你们要听！",
+              "score": 9.862809352958978,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%BA%94%E8%98%8A%E8%88%87%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.484455935617017,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn16",
+              "collection": "经藏/长部_dn",
+              "title": "南传大般湼槃经",
+              "author": "巴宙",
+              "translator": "pachow",
+              "text": "因为人类的生命是由四大（地水火风）、五蕴、六根，及不计其数的各种细胞、神经系统、呼吸系统、骨节、皮肤、毛发等所组成，并由经常的饮食、营养、医药、衣著、屋舍等之供给与庇护，才能生存与发出种种活动。",
+              "score": 3.7421923676198268,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=pachow&mt=%E5%9B%A0%E7%82%BA%E4%BA%BA%E9%A1%9E%E7%9A%84%E7%94%9F%E5%91%BD%E6%98%AF%E7%94%B1%E5%9B%9B%E5%A4%A7%EF%BC%88%E5%9C%B0%E6%B0%B4%E7%81%AB%E9%A2%A8%EF%BC%89%E3%80%81%E4%BA%94%E8%98%8A%E3%80%81%E5%85%AD%E6%A0%B9%EF%BC%8C%E5%8F%8A%E4%B8%8D%E8%A8%88%E5%85%B6%E6%95%B8%E7%9A%84%E5%90%84%E7%A8%AE%E7%B4%B0%E8%83%9E%E3%80%81%E7%A5%9E%E7%B6%93%E7%B3%BB%E7%B5%B1%E3%80%81%E5%91%BC%E5%90%B8%E7%B3%BB%E7%B5%B1%E3%80%81%E9%AA%A8%E7%AF%80%E3%80%81%E7%9A%AE%E8%86%9A%E3%80%81%E6%AF%9B%E9%AB%AE%E7%AD%89%E6%89%80%E7%B5%84%E6%88%90%EF%BC%8C%E4%B8%A6%E7%94%B1%E7%B6%93%E5%B8%B8%E7%9A%84%E9%A3%B2%E9%A3%9F%E3%80%81%E7%87%9F%E9%A4%8A%E3%80%81%E9%86%AB%E8%97%A5%E3%80%81%E8%A1%A3%E8%91%97%E3%80%81%E5%B1%8B%E8%88%8D%E7%AD%89%E4%B9%8B%E4%BE%9B%E7%B5%A6%E8%88%87%E5%BA%87%E8%AD%B7%EF%BC%8C%E6%89%8D%E8%83%BD%E7%94%9F%E5%AD%98%E8%88%87%E7%99%BC%E5%87%BA%E7%A8%AE%E7%A8%AE%E6%B4%BB%E5%8B%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "色蕴",
+          "hits": [
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有色蕴之说？",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四大为因、四大为缘而有色蕴之说；",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%9B%E5%A4%A7%E7%82%BA%E5%9B%A0%E3%80%81%E5%9B%9B%E5%A4%A7%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有色蕴之说？",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四大为因、四大为缘而有色蕴之说；",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9B%9B%E5%A4%A7%E7%82%BA%E5%9B%A0%E3%80%81%E5%9B%9B%E5%A4%A7%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.484455935617017,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何色，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为色蕴；",
+              "score": 5.610413368056725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%89%B2%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%89%B2%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何色，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为色蕴。",
+              "score": 5.610413368056725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%89%B2%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%89%B2%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何色，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为色蕴。",
+              "score": 5.610413368056725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%89%B2%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%89%B2%E8%98%8A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "受蕴",
+          "hits": [
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有受蕴之说？",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有受蕴之说；",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有受蕴之说？",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有受蕴之说；",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.716400807265076,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何受，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为受蕴；",
+              "score": 5.747617506847614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%8F%97%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8F%97%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "an7.96-614",
+              "collection": "经藏/增支部_an",
+              "title": "－614经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在五蕴上……（中略）在色蕴上……（中略）在受蕴上……（中略）在想蕴上……（中略）在行蕴上……（中略）在识蕴上住于随观无常、……（中略）住于随观苦、……（中略）在眼上住于随观无我、……（中略）住于随观灭尽、……（中略）住于随观消散、……（中略）住于随观离贪、……（中略）住于随观灭、……（中略）住于随观断念、……（中略）为世间的无上福田。",
+              "score": 1.9777378960345848,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.96-614&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E4%BA%94%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%89%B2%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%8F%97%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E6%83%B3%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%A1%8C%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%AD%98%E8%98%8A%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E5%B8%B8%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E8%8B%A6%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E7%9C%BC%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E6%88%91%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E7%9B%A1%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%B6%88%E6%95%A3%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E9%9B%A2%E8%B2%AA%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%96%B7%E5%BF%B5%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%82%BA%E4%B8%96%E9%96%93%E7%9A%84%E7%84%A1%E4%B8%8A%E7%A6%8F%E7%94%B0%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "想蕴",
+          "hits": [
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有想蕴之说？",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有想蕴之说；",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有想蕴之说？",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有想蕴之说；",
+              "score": 10.9800370806657,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.716400807265076,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何想，不论过去、未来、现在，……（中略）或远、或近，这被称为想蕴；",
+              "score": 6.833018149593594,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%83%B3%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%83%B3%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "an7.96-614",
+              "collection": "经藏/增支部_an",
+              "title": "－614经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在五蕴上……（中略）在色蕴上……（中略）在受蕴上……（中略）在想蕴上……（中略）在行蕴上……（中略）在识蕴上住于随观无常、……（中略）住于随观苦、……（中略）在眼上住于随观无我、……（中略）住于随观灭尽、……（中略）住于随观消散、……（中略）住于随观离贪、……（中略）住于随观灭、……（中略）住于随观断念、……（中略）为世间的无上福田。",
+              "score": 1.9777378960345848,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.96-614&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E4%BA%94%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%89%B2%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%8F%97%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E6%83%B3%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%A1%8C%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%AD%98%E8%98%8A%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E5%B8%B8%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E8%8B%A6%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E7%9C%BC%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E6%88%91%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E7%9B%A1%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%B6%88%E6%95%A3%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E9%9B%A2%E8%B2%AA%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%96%B7%E5%BF%B5%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%82%BA%E4%B8%96%E9%96%93%E7%9A%84%E7%84%A1%E4%B8%8A%E7%A6%8F%E7%94%B0%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "行蕴",
+          "hits": [
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有行蕴之说？",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有行蕴之说；",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有行蕴之说？",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "触为因、触为缘而有行蕴之说；",
+              "score": 10.841255201288181,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A7%B8%E7%82%BA%E5%9B%A0%E3%80%81%E8%A7%B8%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.59359062411989,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何行，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为行蕴；",
+              "score": 5.674970652043452,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A1%8C%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A1%8C%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何受……（中略）凡任何想……凡任何行，不论过去、未来、现在，或内、或外，或粗、或细……（中略）这被称为行蕴。",
+              "score": 4.712526063950489,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%8F%97%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%87%A1%E4%BB%BB%E4%BD%95%E6%83%B3%E2%80%A6%E2%80%A6%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A1%8C%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A1%8C%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an7.96-614",
+              "collection": "经藏/增支部_an",
+              "title": "－614经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在五蕴上……（中略）在色蕴上……（中略）在受蕴上……（中略）在想蕴上……（中略）在行蕴上……（中略）在识蕴上住于随观无常、……（中略）住于随观苦、……（中略）在眼上住于随观无我、……（中略）住于随观灭尽、……（中略）住于随观消散、……（中略）住于随观离贪、……（中略）住于随观灭、……（中略）住于随观断念、……（中略）为世间的无上福田。",
+              "score": 1.9527403318085834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.96-614&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E4%BA%94%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%89%B2%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%8F%97%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E6%83%B3%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%A1%8C%E8%98%8A%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E8%AD%98%E8%98%8A%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E5%B8%B8%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E8%8B%A6%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E7%9C%BC%E4%B8%8A%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E7%84%A1%E6%88%91%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E7%9B%A1%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%B6%88%E6%95%A3%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E9%9B%A2%E8%B2%AA%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%BB%85%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%9A%A8%E8%A7%80%E6%96%B7%E5%BF%B5%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E7%82%BA%E4%B8%96%E9%96%93%E7%9A%84%E7%84%A1%E4%B8%8A%E7%A6%8F%E7%94%B0%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "识蕴",
+          "hits": [
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有识蕴之说？",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名色为因、名色为缘而有识蕴之说。",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%90%8D%E8%89%B2%E7%82%BA%E5%9B%A0%E3%80%81%E5%90%8D%E8%89%B2%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么因、什么缘而有识蕴之说？",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "名色为因、名色为缘而有识蕴之说。",
+              "score": 10.717927340455963,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%90%8D%E8%89%B2%E7%82%BA%E5%9B%A0%E3%80%81%E5%90%8D%E8%89%B2%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+              "score": 9.484455935617017,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何识，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为识蕴。",
+              "score": 5.610413368056725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%AD%98%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何识，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为识蕴。",
+              "score": 5.610413368056725,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E8%AD%98%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AD%98%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡任何受……凡任何想……凡任何行……凡任何识，不论过去、未来、现在，或内、或外，或粗、或细，或下劣、或胜妙，或远、或近，这被称为识蕴。",
+              "score": 4.1856722994441,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%8F%97%E2%80%A6%E2%80%A6%E5%87%A1%E4%BB%BB%E4%BD%95%E6%83%B3%E2%80%A6%E2%80%A6%E5%87%A1%E4%BB%BB%E4%BD%95%E8%A1%8C%E2%80%A6%E2%80%A6%E5%87%A1%E4%BB%BB%E4%BD%95%E8%AD%98%EF%BC%8C%E4%B8%8D%E8%AB%96%E9%81%8E%E5%8E%BB%E3%80%81%E6%9C%AA%E4%BE%86%E3%80%81%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%96%E5%85%A7%E3%80%81%E6%88%96%E5%A4%96%EF%BC%8C%E6%88%96%E7%B2%97%E3%80%81%E6%88%96%E7%B4%B0%EF%BC%8C%E6%88%96%E4%B8%8B%E5%8A%A3%E3%80%81%E6%88%96%E5%8B%9D%E5%A6%99%EF%BC%8C%E6%88%96%E9%81%A0%E3%80%81%E6%88%96%E8%BF%91%EF%BC%8C%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AD%98%E8%98%8A%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g1",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 1,
+      "label": "五蕴",
+      "members": "色蕴、受蕴、想蕴、行蕴、识蕴",
+      "member_items": [
+        "色蕴",
+        "受蕴",
+        "想蕴",
+        "行蕴",
+        "识蕴"
+      ],
+      "dn34_status": null,
+      "source_text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A"
+    }
+  ]
+}

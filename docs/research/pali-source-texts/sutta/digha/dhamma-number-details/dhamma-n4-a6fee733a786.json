@@ -1,0 +1,577 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-a6fee733a786",
+    "number": 4,
+    "label": "四种轭",
+    "member_items": [
+      "欲之轭",
+      "有之轭",
+      "见之轭",
+      "无明之轭"
+    ],
+    "group_ids": [
+      "dn33-n4-g32",
+      "dn34-n4-g5"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "四种轭",
+      "欲之轭",
+      "有之轭",
+      "见之轭",
+      "无明之轭"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「四种轭」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲之轭、有之轭、见之轭、无明之轭。[1]\n- DN34：欲之轭、有之轭、见之轭、无明之轭。[2]\n\n## 所含各法\n### 欲之轭\n经文将「欲之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为欲之轭的离轭，像这样是欲之轭的离轭。。[4]\n### 有之轭\n经文将「有之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为有之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭。。[5]\n### 见之轭\n经文将「见之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为见之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭。。[6]\n### 无明之轭\n经文将「无明之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：如何是无明之轭的离轭呢？。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四种轭",
+          "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 四种轭",
+          "text": "（五）哪些是退分的四法呢？四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "这是四种轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "这被称为欲之轭的离轭，像这样是欲之轭的离轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "这被称为有之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "这被称为见之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "如何是无明之轭的离轭呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.173",
+          "text": "这是四种轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "有这四种轭，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.173",
+          "text": "有这四种轭，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种离轭：欲之轭的离轭、有之轭的离轭、见之轭的离轭、无明之轭的离轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.10",
+          "text": "这是四种离轭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "四种轭",
+          "hits": [
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四种轭。",
+              "score": 20.378130959844782,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四种轭。",
+              "score": 20.378130959844782,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 19.986987406233546,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种轭，哪四种呢？",
+              "score": 19.51615127113466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这四种轭，哪四种呢？",
+              "score": 19.51615127113466,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种离轭：欲之轭的离轭、有之轭的离轭、见之轭的离轭、无明之轭的离轭。",
+              "score": 18.54218341500383,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是四种离轭。",
+              "score": 18.537030406274194,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。",
+              "score": 18.514016548470174,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "欲之轭",
+          "hits": [
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为欲之轭的离轭，像这样是欲之轭的离轭。",
+              "score": 21.74506552729012,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为欲之轭，像这样是欲之轭。",
+              "score": 20.806429565576686,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%AC%B2%E4%B9%8B%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 19.906983246493372,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是欲之轭的离轭呢？",
+              "score": 19.84871194499639,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 19.558396605296824,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭的离轭、有之轭的离轭、见之离轭、无明之轭的离轭。",
+              "score": 19.51978377297131,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种离轭：欲之轭的离轭、有之轭的离轭、见之轭的离轭、无明之轭的离轭。",
+              "score": 19.164826975227427,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭，比丘们！",
+              "score": 19.06039728656379,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "有之轭",
+          "hits": [
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭。",
+              "score": 18.851040136448205,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为有之轭，像这样是欲之轭、有之轭。",
+              "score": 17.981084631869795,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E4%B9%8B%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 17.803531507971996,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如何是有之轭的离轭呢？",
+              "score": 17.246048104154834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭，比丘们！",
+              "score": 17.10682961797952,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭的离轭、有之轭的离轭、见之离轭、无明之轭的离轭。",
+              "score": 16.330610349143285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 15.904832767013216,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「被欲之轭、有之轭，这二者结缚，",
+              "score": 15.659485240031882,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E8%A2%AB%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%EF%BC%8C%E9%80%99%E4%BA%8C%E8%80%85%E7%B5%90%E7%B8%9B%EF%BC%8C"
+            }
+          ]
+        },
+        {
+          "query": "见之轭",
+          "hits": [
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭。",
+              "score": 20.459395931348038,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见之轭，像这样是欲之轭、有之轭、见之轭。",
+              "score": 20.190564728974305,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E4%B9%8B%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如何是见之轭的离轭呢？",
+              "score": 19.172942014142468,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如何是见之轭呢？",
+              "score": 17.51605686621215,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E8%A6%8B%E4%B9%8B%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 17.424748338351954,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭，比丘们！",
+              "score": 16.697846025053554,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 16.52613012753708,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭的离轭、有之轭的离轭、见之离轭、无明之轭的离轭。",
+              "score": 16.362210127985456,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无明之轭",
+          "hits": [
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如何是无明之轭的离轭呢？",
+              "score": 20.967106107995395,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如何是无明之轭呢？",
+              "score": 19.645126526205726,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 18.64799776518918,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+              "score": 17.851850115001827,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.173",
+              "collection": "经藏/相应部_sn",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭、有之轭、见之轭、无明之轭，比丘们！",
+              "score": 17.814867596085186,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲之轭的离轭、有之轭的离轭、见之离轭、无明之轭的离轭。",
+              "score": 17.50645769104724,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            },
+            {
+              "uid": "an4.10",
+              "collection": "经藏/增支部_an",
+              "title": "轭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为无明之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭、无明之轭的离轭，离被杂染的、再生的、有苦恼的、苦果报的、 将来有生老死的恶不善法结缚，因此，被称为『离轭安稳』。",
+              "score": 17.0907664061171,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E9%9B%A2%E8%A2%AB%E9%9B%9C%E6%9F%93%E7%9A%84%E3%80%81%E5%86%8D%E7%94%9F%E7%9A%84%E3%80%81%E6%9C%89%E8%8B%A6%E6%83%B1%E7%9A%84%E3%80%81%E8%8B%A6%E6%9E%9C%E5%A0%B1%E7%9A%84%E3%80%81+%E5%B0%87%E4%BE%86%E6%9C%89%E7%94%9F%E8%80%81%E6%AD%BB%E7%9A%84%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E7%B5%90%E7%B8%9B%EF%BC%8C%E5%9B%A0%E6%AD%A4%EF%BC%8C%E8%A2%AB%E7%A8%B1%E7%82%BA%E3%80%8E%E9%9B%A2%E8%BB%9B%E5%AE%89%E7%A9%A9%E3%80%8F%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种离轭：欲之轭的离轭、有之轭的离轭、见之轭的离轭、无明之轭的离轭。",
+              "score": 16.862366432128624,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%EF%BC%9A%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g32",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 32,
+      "label": "四种轭",
+      "members": "欲之轭、有之轭、见之轭、无明之轭",
+      "member_items": [
+        "欲之轭",
+        "有之轭",
+        "见之轭",
+        "无明之轭"
+      ],
+      "dn34_status": null,
+      "source_text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+    },
+    {
+      "id": "dn34-n4-g5",
+      "sutta": "dn34",
+      "number": 4,
+      "order": 5,
+      "label": "四种轭",
+      "members": "欲之轭、有之轭、见之轭、无明之轭",
+      "member_items": [
+        "欲之轭",
+        "有之轭",
+        "见之轭",
+        "无明之轭"
+      ],
+      "dn34_status": "退分法",
+      "source_text": "（五）哪些是退分的四法呢？四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+    }
+  ]
+}

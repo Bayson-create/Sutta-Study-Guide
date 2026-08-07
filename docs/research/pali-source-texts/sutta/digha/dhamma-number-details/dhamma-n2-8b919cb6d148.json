@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n2-8b919cb6d148",
+    "number": 2,
+    "label": "戒清净与见清净",
+    "member_items": [
+      "戒清净与见清净"
+    ],
+    "group_ids": [
+      "dn33-n2-g28"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "戒清净与见清净"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「戒清净与见清净」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：戒清净与见清净。[1]\n\n## 所含各法\n### 戒清净与见清净\n经文将「戒清净与见清净」列为「戒清净与见清净」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：戒清净与见清净。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 戒清净与见清净",
+          "text": "戒清净与见清净。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "戒清净与见清净。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn24",
+          "text": "戒清净是为了达成心清净；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn24&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E6%98%AF%E7%82%BA%E4%BA%86%E9%81%94%E6%88%90%E5%BF%83%E6%B8%85%E6%B7%A8%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn24",
+          "text": "见清净是为了达成解疑清净；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn24&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A6%8B%E6%B8%85%E6%B7%A8%E6%98%AF%E7%82%BA%E4%BA%86%E9%81%94%E6%88%90%E8%A7%A3%E7%96%91%E6%B8%85%E6%B7%A8%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.3",
+          "text": "已善清净的戒与端直的见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.3&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.15",
+          "text": "已善清净的戒与端直的见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.15&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn47.16",
+          "text": "已善清净的戒与端直的见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.16&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.120",
+          "text": "身清净、语清净、意清净。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.120&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E6%B8%85%E6%B7%A8%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.121",
+          "text": "身清净、语清净、意清净。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.121&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E6%B8%85%E6%B7%A8%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "戒清净与见清净",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒清净与见清净。",
+              "score": 37.27328381512331,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8%E3%80%82"
+            },
+            {
+              "uid": "mn24",
+              "collection": "经藏/中部_mn",
+              "title": "接力车经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒清净是为了达成心清净；",
+              "score": 30.720816682438276,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn24&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E6%98%AF%E7%82%BA%E4%BA%86%E9%81%94%E6%88%90%E5%BF%83%E6%B8%85%E6%B7%A8%EF%BC%9B"
+            },
+            {
+              "uid": "mn24",
+              "collection": "经藏/中部_mn",
+              "title": "接力车经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "见清净是为了达成解疑清净；",
+              "score": 28.40078089342589,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn24&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A6%8B%E6%B8%85%E6%B7%A8%E6%98%AF%E7%82%BA%E4%BA%86%E9%81%94%E6%88%90%E8%A7%A3%E7%96%91%E6%B8%85%E6%B7%A8%EF%BC%9B"
+            },
+            {
+              "uid": "sn47.3",
+              "collection": "经藏/相应部_sn",
+              "title": "比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已善清净的戒与端直的见。",
+              "score": 27.993409513918547,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.3&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.15",
+              "collection": "经藏/相应部_sn",
+              "title": "婆醯雅经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已善清净的戒与端直的见。",
+              "score": 27.993409513918547,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.15&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "sn47.16",
+              "collection": "经藏/相应部_sn",
+              "title": "郁低雅经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已善清净的戒与端直的见。",
+              "score": 27.993409513918547,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.16&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%96%84%E6%B8%85%E6%B7%A8%E7%9A%84%E6%88%92%E8%88%87%E7%AB%AF%E7%9B%B4%E7%9A%84%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "an3.120",
+              "collection": "经藏/增支部_an",
+              "title": "清净经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身清净、语清净、意清净。",
+              "score": 25.919567359030605,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.120&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E6%B8%85%E6%B7%A8%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E3%80%82"
+            },
+            {
+              "uid": "an3.121",
+              "collection": "经藏/增支部_an",
+              "title": "清净经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "身清净、语清净、意清净。",
+              "score": 25.919567359030605,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.121&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E6%B8%85%E6%B7%A8%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n2-g28",
+      "sutta": "dn33",
+      "number": 2,
+      "order": 28,
+      "label": "戒清净与见清净",
+      "members": "戒清净与见清净",
+      "member_items": [
+        "戒清净与见清净"
+      ],
+      "dn34_status": null,
+      "source_text": "戒清净与见清净。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E6%B8%85%E6%B7%A8%E8%88%87%E8%A6%8B%E6%B8%85%E6%B7%A8"
+    }
+  ]
+}

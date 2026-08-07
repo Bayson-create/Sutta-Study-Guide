@@ -1,0 +1,666 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-2b2cc72f81db",
+    "number": 5,
+    "label": "五取蕴",
+    "member_items": [
+      "色取蕴",
+      "受取蕴",
+      "想取蕴",
+      "行取蕴",
+      "识取蕴"
+    ],
+    "group_ids": [
+      "dn33-n5-g2",
+      "dn34-n5-g3"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "五取蕴",
+      "色取蕴",
+      "受取蕴",
+      "想取蕴",
+      "行取蕴",
+      "识取蕴"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「五取蕴」属于 5 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。[1]\n- DN34：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。[2]\n\n## 所含各法\n### 色取蕴\n经文将「色取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 受取蕴\n经文将「受取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 想取蕴\n经文将「想取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《象足迹譬喻大经》命中：凡像这样存在的想摄入于想取蕴中；。[5]\n### 行取蕴\n经文将「行取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 识取蕴\n经文将「识取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五取蕴",
+          "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 五取蕴",
+          "text": "（三）哪些是应该被遍知的五法呢？五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，这些是应该被遍知的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/小部_kn · kp4",
+          "text": "五取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.56",
+          "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "凡像这样存在的想摄入于想取蕴中；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%83%8F%E9%80%99%E6%A8%A3%E5%AD%98%E5%9C%A8%E7%9A%84%E6%83%B3%E6%94%9D%E5%85%A5%E6%96%BC%E6%83%B3%E5%8F%96%E8%98%8A%E4%B8%AD%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn28",
+          "text": "什么是五取蕴？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.66",
+          "text": "这是五取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.48",
+          "text": "什么是五取蕴？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn45.179",
+          "text": "这些是五取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.179&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.254",
+          "text": "五取蕴，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.254&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "五取蕴，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.48",
+          "text": "这些被称为五取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn109",
+          "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "五取蕴",
+          "hits": [
+            {
+              "uid": "kp4",
+              "collection": "经藏/小部_kn",
+              "title": "问童子",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "五取蕴。",
+              "score": 24.324197631487998,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是五取蕴？",
+              "score": 22.97791800716685,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F"
+            },
+            {
+              "uid": "an9.66",
+              "collection": "经藏/增支部_an",
+              "title": "五取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五取蕴。",
+              "score": 22.97791800716685,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是五取蕴？",
+              "score": 22.97791800716685,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F"
+            },
+            {
+              "uid": "sn45.179",
+              "collection": "经藏/相应部_sn",
+              "title": "取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五取蕴。",
+              "score": 22.97791800716685,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.179&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an4.254",
+              "collection": "经藏/增支部_an",
+              "title": "证智经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴，比丘们！",
+              "score": 21.772848755274765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.254&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴，比丘们！",
+              "score": 21.772848755274765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.48",
+              "collection": "经藏/相应部_sn",
+              "title": "蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些被称为五取蕴。",
+              "score": 21.772848755274765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "色取蕴",
+          "hits": [
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+              "score": 21.73902722274152,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.231161830301637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.231161830301637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.122",
+              "collection": "经藏/相应部_sn",
+              "title": "持戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.231161830301637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.122&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.203131313093444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an9.66",
+              "collection": "经藏/增支部_an",
+              "title": "五取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 20.7492480100488,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.123",
+              "collection": "经藏/相应部_sn",
+              "title": "多闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、……（中略）识取蕴。",
+              "score": 20.502873603244733,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.123&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 20.291170184712904,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "受取蕴",
+          "hits": [
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+              "score": 21.87012472613643,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.35789925844863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.35789925844863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.122",
+              "collection": "经藏/相应部_sn",
+              "title": "持戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 21.35789925844863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.122&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an9.66",
+              "collection": "经藏/增支部_an",
+              "title": "五取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 20.87190604500875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 20.65261017495461,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 20.410003250169325,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn112",
+              "collection": "经藏/中部_mn",
+              "title": "六纯净经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，学友！",
+              "score": 20.410003250169325,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn112&lang=zh&q=%E5%8F%97%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E5%AD%B8%E5%8F%8B%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "想取蕴",
+          "hits": [
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡像这样存在的想摄入于想取蕴中；",
+              "score": 11.825103977162659,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%83%8F%E9%80%99%E6%A8%A3%E5%AD%98%E5%9C%A8%E7%9A%84%E6%83%B3%E6%94%9D%E5%85%A5%E6%96%BC%E6%83%B3%E5%8F%96%E8%98%8A%E4%B8%AD%EF%BC%9B"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡像这样存在的想摄入于想取蕴中；",
+              "score": 11.825103977162659,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%83%8F%E9%80%99%E6%A8%A3%E5%AD%98%E5%9C%A8%E7%9A%84%E6%83%B3%E6%94%9D%E5%85%A5%E6%96%BC%E6%83%B3%E5%8F%96%E8%98%8A%E4%B8%AD%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.484303127656455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+              "score": 10.244422229535111,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五取蕴，即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.204691810858016,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.075820054655365,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.075820054655365,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.122",
+              "collection": "经藏/相应部_sn",
+              "title": "持戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.075820054655365,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.122&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "行取蕴",
+          "hits": [
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+              "score": 19.232375078141295,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.87631871585232,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.77919166299885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.77919166299885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.122",
+              "collection": "经藏/相应部_sn",
+              "title": "持戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.77919166299885,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.122&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.37105359784324,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an9.66",
+              "collection": "经藏/增支部_an",
+              "title": "五取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 18.34933864270835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn10",
+              "collection": "经藏/中部_mn",
+              "title": "念住大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 17.940904023792722,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E8%A1%8C%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        },
+        {
+          "query": "识取蕴",
+          "hits": [
+            {
+              "uid": "sn22.56",
+              "collection": "经藏/相应部_sn",
+              "title": "取［蕴］之遍轮转经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。",
+              "score": 18.45739606999182,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn109",
+              "collection": "经藏/中部_mn",
+              "title": "满月大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.026401495654564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.82",
+              "collection": "经藏/相应部_sn",
+              "title": "满月经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.026401495654564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.82&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.122",
+              "collection": "经藏/相应部_sn",
+              "title": "持戒者经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 18.026401495654564,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.122&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "sn22.123",
+              "collection": "经藏/相应部_sn",
+              "title": "多闻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即：色取蕴、……（中略）识取蕴。",
+              "score": 18.01854287390843,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.123&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 17.792018539347293,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn28",
+              "collection": "经藏/中部_mn",
+              "title": "象足迹譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "即色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 17.764126519163487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an9.66",
+              "collection": "经藏/增支部_an",
+              "title": "五取蕴经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，比丘们！",
+              "score": 17.617421273605355,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E8%AD%98%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g2",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 2,
+      "label": "五取蕴",
+      "members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
+      "member_items": [
+        "色取蕴",
+        "受取蕴",
+        "想取蕴",
+        "行取蕴",
+        "识取蕴"
+      ],
+      "dn34_status": null,
+      "source_text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+    },
+    {
+      "id": "dn34-n5-g3",
+      "sutta": "dn34",
+      "number": 5,
+      "order": 3,
+      "label": "五取蕴",
+      "members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
+      "member_items": [
+        "色取蕴",
+        "受取蕴",
+        "想取蕴",
+        "行取蕴",
+        "识取蕴"
+      ],
+      "dn34_status": "应遍知",
+      "source_text": "（三）哪些是应该被遍知的五法呢？五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，这些是应该被遍知的五法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+    }
+  ]
+}

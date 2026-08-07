@@ -1104,6 +1104,13 @@ a.cite:hover { background: var(--accent); border-color: var(--accent); color: #f
 .dhamma-group-card:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
 .dhamma-group-card summary { cursor: pointer; color: var(--accent); font-weight: 700; line-height: 1.5; }
 .dhamma-group-card summary::marker { color: var(--accent-light); }
+.dhamma-card-title { display: inline; }
+.dhamma-source-tag { display: inline-block; margin: 0 0 0 6px; padding: 1px 6px; border-radius: 999px; font-size: .7em; font-weight: 700; color: var(--text-light); background: var(--accent-bg); border: 1px solid var(--border); vertical-align: 1px; }
+.dhamma-source-tag.shared { color: var(--accent); }
+.dhamma-expanded-label { margin: 11px 0 4px; color: var(--text-light); font-size: .8em; font-weight: 700; }
+.dhamma-inline-source-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 9px; margin-top: 10px; }
+.dhamma-inline-source { padding: 10px; border-radius: 8px; background: var(--accent-bg); font-size: .88em; line-height: 1.7; }
+.dhamma-inline-source strong { color: var(--accent); }
 .dhamma-members { margin: 10px 0; padding-left: 19px; color: var(--text); font-size: .9em; line-height: 1.7; }
 .dhamma-members li::marker { color: var(--accent); }
 .dhamma-card-meta { color: var(--text-light); font-size: .78em; margin-top: 5px; }
@@ -1115,6 +1122,14 @@ a.cite:hover { background: var(--accent); border-color: var(--accent); color: #f
 .dhamma-source-card p { margin: 0; line-height: 1.8; font-size: .92em; }
 .dhamma-source-card a { color: var(--accent); }
 .dhamma-ai-copy { display: flex; justify-content: flex-end; margin: -4px 0 8px; }
+.dhamma-query-list { margin: 14px 0 0; border-top: 1px solid var(--border); }
+.dhamma-query-list > summary { cursor: pointer; color: var(--accent); font-weight: 600; padding: 10px 0; }
+.dhamma-query-item { padding: 10px 0; border-top: 1px solid var(--border); }
+.dhamma-query-item summary { cursor: pointer; font-size: .9em; color: var(--text); }
+.dhamma-query-count { color: var(--text-light); font-size: .82em; }
+.dhamma-query-hits { margin: 8px 0 0; padding-left: 18px; }
+.dhamma-query-hits li { margin: 7px 0; line-height: 1.65; font-size: .88em; }
+.dhamma-query-hits a { color: var(--accent); }
 .search-ev-list .ev-src { font-size: 0.86em; font-weight: 600; }
 .search-ev-list .ev-src a { color: var(--accent); text-decoration: none; }
 .search-ev-list .ev-src a:hover { text-decoration: underline; }
@@ -2184,9 +2199,9 @@ function searchRenderSynthPrompt() {
   box.innerHTML = `<div class="search-synth-cta">
     <div>
       <strong>AI 综合回答</strong>
-      <span class="meta">从上述结果中挑选 ${n} 段证据，交由 AI 归纳出直接答案、观点分组与分歧点，并逐条标注出处。登录后生成，结果可复制为 Markdown。</span>
+      <span class="meta">从上述结果中挑选 ${n} 段证据，交由 AI 归纳出直接答案、观点分组与分歧点，并逐条标注出处。</span>
     </div>
-    <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">🔐 登录后生成</button>
+    <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">✨ 生成综合回答</button>
   </div>`;
 }
 
@@ -2316,13 +2331,7 @@ async function searchRunSynthesis() {
   // Login is enforced by the endpoint too (401); this just avoids spending a
   // round trip to be told so, and opens the site's own login modal in place
   // rather than navigating away from the results.
-  if (!(await communityRequireLogin())) {
-    box.innerHTML = `<div class="search-synth-panel">
-      <div class="search-synth-head"><strong>AI 综合回答</strong><span class="meta">需要登录后才能生成，并保留逐条引用。</span></div>
-      <button type="button" class="community-primary-btn" onclick="searchRunSynthesis()">🔐 登录后生成</button>
-    </div>`;
-    return;
-  }
+  if (!(await communityRequireLogin())) return;
 
   searchSynthInFlight = true;
   box.innerHTML = `<div class="search-synth-panel"><div class="loading"><div class="spinner"></div><div>正在综合 ${evidence.length} 段证据…</div></div></div>`;
@@ -3149,6 +3158,7 @@ function renderSuttaHome() {
 
 // === RESEARCH: DN33/DN34 DHAMMA-NUMBER SUMMARY ===
 let _dhammaNumbersCache = null;
+let _dhammaNumberView = 'union';
 async function loadDhammaNumbers() {
   if (_dhammaNumbersCache) return _dhammaNumbersCache;
   const res = await fetch('research/pali-source-texts/sutta/digha/dhamma-numbers.json');
@@ -3157,77 +3167,141 @@ async function loadDhammaNumbers() {
   return _dhammaNumbersCache;
 }
 
-function dhammaNumberGroups(data, number) {
-  return data.groups.filter(g => !number || g.number === number);
+async function loadDhammaNumberDetail(id) {
+  const res = await fetch(`research/pali-source-texts/sutta/digha/dhamma-number-details/${encodeURIComponent(id)}.json`);
+  if (!res.ok) throw new Error(`法数详情加载失败（HTTP ${res.status}）`);
+  return res.json();
 }
 
-function dhammaGroupCard(group) {
-  const members = (group.member_items && group.member_items.length ? group.member_items : [group.members]).map(m => `<li>${esc(m)}</li>`).join('');
-  const counterpart = group.correspondence && group.correspondence[0];
+function dhammaText(value) { return esc(toSimplified(String(value || ''))); }
+
+function dhammaEntrySources(data, entry) {
+  const byId = new Map(data.groups.map(group => [group.id, group]));
+  return entry.group_ids.map(id => byId.get(id)).filter(Boolean);
+}
+
+function dhammaNumberChinese(number) {
+  return ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'][number] || String(number);
+}
+
+function dhammaEntryTitle(entry, sources, view) {
+  const dn34Only = sources.length === 1 && sources[0].sutta === 'dn34';
+  if ((view === 'dn34' || (view === 'union' && dn34Only)) && sources[0].dn34_status) {
+    return `${sources[0].dn34_status}的${dhammaNumberChinese(entry.number)}法`;
+  }
+  return entry.label;
+}
+
+function dhammaEntryTag(sources) {
+  const shared = sources.length === 2;
+  const label = shared ? 'DN33/DN34' : sources[0].sutta.toUpperCase();
+  return `<span class="dhamma-source-tag${shared ? ' shared' : ''}">${label}</span>`;
+}
+
+function dhammaInlineSource(group) {
+  const rawItems = group.member_items && group.member_items.length ? group.member_items : [group.members];
+  const repeatsLabel = rawItems.length === 1 && searchNormalize(rawItems[0]) === searchNormalize(group.label);
+  const items = repeatsLabel ? '' : `<ul class="dhamma-members">${rawItems.map(item => `<li>${dhammaText(item)}</li>`).join('')}</ul>`;
+  return `<div class="dhamma-inline-source"><strong>${group.sutta.toUpperCase()}</strong><div class="dhamma-expanded-label">${dhammaText(group.label)}</div>${items}</div>`;
+}
+
+function dhammaGroupCard(entry, data, view) {
+  // The focused DN33/DN34 views are deliberately single-text reading modes.
+  // Keep the bilateral comparison for the detail page and for union cards only.
+  const allSources = dhammaEntrySources(data, entry);
+  const sources = view === 'union' ? allSources : allSources.filter(group => group.sutta === view);
+  const title = dhammaEntryTitle(entry, sources, view);
+  const isDn34Summary = title !== entry.label;
   return `<details class="dhamma-group-card">
-    <summary>${esc(group.label)} <span class="dhamma-card-meta">${group.sutta.toUpperCase()} · ${group.number}法</span></summary>
-    <ul class="dhamma-members">${members}</ul>
-    <div class="dhamma-card-meta">${counterpart ? `对应 ${esc(counterpart.id)} · ${esc(counterpart.relation)}` : '暂无对应记录'}</div>
-    <a class="dhamma-detail-link" href="#/research/pali-source-texts/sutta/dhamma-numbers/detail?id=${encodeURIComponent(group.id)}">查看法数详情 →</a>
+    <summary><span class="dhamma-card-title">${dhammaText(title)}</span>${dhammaEntryTag(sources)}</summary>
+    ${isDn34Summary ? `<div class="dhamma-expanded-label">具体法组</div>` : ''}
+    <div class="dhamma-inline-source-grid">${sources.map(dhammaInlineSource).join('')}</div>
+    <a class="dhamma-detail-link" href="#/research/pali-source-texts/sutta/dhamma-numbers/detail?id=${encodeURIComponent(entry.id)}">查看法数详情与 AI 综合 →</a>
   </details>`;
+}
+
+function dhammaEntriesForView(data, view, number) {
+  return data.entries.filter(entry => entry.number === number && (view === 'union' || entry.suttas.includes(view)));
+}
+
+function dhammaNumberSetView(view) {
+  _dhammaNumberView = view;
+  renderDhammaNumbersSummary();
 }
 
 async function renderDhammaNumbersSummary() {
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta'">← 返回经藏研究</button>`;
   html += `<div class="cat-header"><h2>🔢 法数总结</h2><div class="cat-en">Dhamma-number concordance — DN33 & DN34</div></div>`;
-  html += `<div class="bodhi-intro"><span class="label">研究范围：</span>先保存 DN33《結集經》与 DN34《十增經》的中文、英文全文快照，再按经文明确列出的法数组全面整理。共收录 326 个法组；每条详情均保留原文、Early Buddhist 跳转、站内搜索命中与证据约束式预生成 AI 综合。<br><span class="dhamma-summary-note">全文快照：<a href="research/pali-source-texts/sutta/digha/data/dn33-dn34-chinese.json" target="_blank" rel="noopener">中文 JSON</a> · <a href="research/pali-source-texts/sutta/digha/data/dn33-dn34-english.json" target="_blank" rel="noopener">English JSON</a> · <a href="https://bayson-create.github.io/Early-Buddhist/" target="_blank" rel="noopener">Early Buddhist 阅读器 ↗</a></span></div>`;
+  html += `<div class="bodhi-intro"><span class="label">研究范围：</span>DN33《结集经》与 DN34《十增经》的明确法组。原始层共 326 组；并集视图会将两经共有法组折叠为一项，并保留两边原文、全站搜索与 Early Buddhist 全库检索证据。<br><span class="dhamma-summary-note">全文快照：<a href="research/pali-source-texts/sutta/digha/data/dn33-dn34-chinese.json" target="_blank" rel="noopener">中文 JSON</a> · <a href="research/pali-source-texts/sutta/digha/data/dn33-dn34-english.json" target="_blank" rel="noopener">English JSON</a> · <a href="https://bayson-create.github.io/Early-Buddhist/" target="_blank" rel="noopener">Early Buddhist 阅读器 ↗</a></span></div>`;
   html += '<div id="dhamma-number-summary-body"><div class="loading"><div class="spinner"></div><div>加载法数索引…</div></div></div>';
   app.innerHTML = html;
   try {
     const data = await loadDhammaNumbers();
     const body = app.querySelector('#dhamma-number-summary-body');
+    const labels = [['union', '并集展示'], ['dn33', 'DN33'], ['dn34', 'DN34']];
     const sections = Array.from({ length: 10 }, (_, i) => i + 1).map(n => {
-      const groups = dhammaNumberGroups(data, n);
-      return `<details class="dhamma-number-section" open><summary><span>${n}法</span><span class="dhamma-number-count">${groups.length} 个法组</span></summary><div class="dhamma-group-list">${groups.map(dhammaGroupCard).join('')}</div></details>`;
+      const entries = dhammaEntriesForView(data, _dhammaNumberView, n);
+      return `<details class="dhamma-number-section" ${n === 1 ? 'open' : ''}><summary><span>${n}法</span><span class="dhamma-number-count">${entries.length} 个法组</span></summary><div class="dhamma-group-list">${entries.map(entry => dhammaGroupCard(entry, data, _dhammaNumberView)).join('')}</div></details>`;
     }).join('');
-    body.innerHTML = `<div class="dhamma-summary-toolbar"><span class="dhamma-summary-note">点击法组可展开成员，进入详情查看两经原文与 AI 引用。</span></div>${sections}`;
+    body.innerHTML = `<div class="dhamma-summary-toolbar">${labels.map(([key, label]) => `<button type="button" class="dhamma-filter-btn ${_dhammaNumberView === key ? 'active' : ''}" onclick="dhammaNumberSetView('${key}')">${label}</button>`).join('')}<span class="dhamma-summary-note">DN34 先按十类功能概括；展开后才显示具体法组。共有项展开时并列显示两经。</span></div>${sections}`;
   } catch (e) {
     const body = app.querySelector('#dhamma-number-summary-body');
     if (body) body.innerHTML = `<div class="error-msg">${esc(e.message)}</div>`;
   }
 }
 
-function dhammaEvidenceMarkdown(group) {
-  const answer = group.ai && group.ai.answer_markdown ? group.ai.answer_markdown : '';
-  const lines = [`# ${group.label}（${group.sutta.toUpperCase()} · ${group.number}法）`, '', answer, '', '## 引用'];
-  (group.ai && group.ai.evidence || []).forEach((e, i) => {
-    lines.push(`- [${i + 1}] ${e.label || e.source || '来源'}${e.href ? ` — ${new URL(e.href, location.href).href}` : ''}`);
+function dhammaEvidenceMarkdown(state) {
+  if (!state) return '';
+  const { entry, sources } = state;
+  const research = entry.research || {};
+  const answer = research.answer_markdown ? toSimplified(research.answer_markdown) : '';
+  const lines = [`# ${toSimplified(entry.label)}（${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join('/')}）`, '', answer, '', '## 引用'];
+  (research.evidence || []).forEach((e, i) => {
+    lines.push(`- [${i + 1}] ${toSimplified(e.label || e.source || '来源')}${e.href ? ` — ${new URL(e.href, location.href).href}` : ''}`);
     if (e.text) lines.push(`  > ${String(e.text).replace(/\n+/g, ' ')}`);
   });
   return lines.join('\n');
 }
 
-function dhammaAnswerHtml(group) {
-  const answer = group.ai && group.ai.answer_markdown ? group.ai.answer_markdown : '暂无预生成回答。';
-  const evidence = group.ai && group.ai.evidence || [];
+function dhammaAnswerHtml(entry) {
+  const research = entry.research || {};
+  const answer = research.answer_markdown ? toSimplified(research.answer_markdown) : '暂无预生成回答。';
+  const evidence = research.evidence || [];
   return mdToHtml(answer).replace(/\[(\d{1,3})\]/g, (m, n) => {
     const i = Number(n);
     return i >= 1 && i <= evidence.length ? `<a class="cite" href="#dhamma-ev-${i}">[${n}]</a>` : `<span class="cite-bad">[${n}]</span>`;
   });
 }
 
+function dhammaSourceCard(group) {
+  const members = (group.member_items && group.member_items.length ? group.member_items : [group.members]).map(item => `<li>${dhammaText(item)}</li>`).join('');
+  return `<article class="dhamma-source-card"><h3>${group.sutta.toUpperCase()} · ${dhammaText(group.label)}</h3><p><strong>明确成员</strong></p><ul class="dhamma-members">${members}</ul><p><strong>经文原文：</strong>${dhammaText(group.source_text)}</p><p style="margin-top:10px"><a href="${group.source_url}" target="_blank" rel="noopener">在 Early Buddhist 中跳转查看 ↗</a></p></article>`;
+}
+
+function dhammaEbQueriesHtml(research) {
+  const batches = research.early_buddhist_queries || [];
+  const total = batches.reduce((count, batch) => count + (batch.hits || []).length, 0);
+  return `<details class="dhamma-query-list"><summary>Early Buddhist 全库检索（${batches.length} 个关键词，${total} 条冻结命中）</summary>${batches.map(batch => `<details class="dhamma-query-item"><summary>“${dhammaText(batch.query)}” <span class="dhamma-query-count">${(batch.hits || []).length} 条</span></summary><ol class="dhamma-query-hits">${(batch.hits || []).map(hit => `<li><a href="${hit.href}" target="_blank" rel="noopener">${dhammaText(hit.title || hit.uid || 'Early Buddhist')} · ${dhammaText(hit.uid)} ↗</a><br>${dhammaText(hit.text)}</li>`).join('') || '<li>未检索到结果。</li>'}</ol></details>`).join('')}</details>`;
+}
+
 async function renderDhammaNumberDetail(id) {
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/dhamma-numbers'">← 返回法数总结</button><div class="loading"><div class="spinner"></div><div>加载法数详情…</div></div>`;
   app.innerHTML = html;
   try {
-    const data = await loadDhammaNumbers();
-    const group = data.groups.find(g => g.id === id);
-    if (!group) throw new Error('未找到该法数组。');
-    const counterpartId = group.correspondence && group.correspondence[0] && group.correspondence[0].id;
-    const counterpart = counterpartId ? data.groups.find(g => g.id === counterpartId) : null;
+    const detail = await loadDhammaNumberDetail(id);
+    const entry = detail.entry;
+    if (!entry) throw new Error('未找到该法数组。');
+    const sources = dhammaEntrySources(detail, entry);
+    const research = entry.research || {};
     html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/dhamma-numbers'">← 返回法数总结</button>`;
-    html += `<div class="cat-header"><h2>${esc(group.label)}</h2><div class="cat-en">${group.sutta.toUpperCase()} · ${group.number}法 · ${esc(group.id)}</div></div>`;
-    html += `<div class="dhamma-detail-grid">${[group, counterpart].filter(Boolean).map(g => `<article class="dhamma-source-card"><h3>${g.sutta.toUpperCase()} · ${esc(g.label)}</h3><p><strong>明确成员：</strong>${esc(g.members)}</p><p style="margin-top:10px"><strong>经文原文：</strong>${esc(g.source_text)}</p><p style="margin-top:10px"><a href="${g.source_url}" target="_blank" rel="noopener">在 Early Buddhist 中跳转查看 ↗</a></p></article>`).join('')}</div>`;
-    html += `<div class="search-synth-panel"><div class="search-synth-head"><strong>✨ AI 综合回答</strong><span class="meta">证据约束式预生成 · ${esc(group.sutta.toUpperCase())} ${group.number}法</span><button type="button" class="search-synth-copy-btn" onclick="copyMarkdownText(dhammaEvidenceMarkdown(window.__dhammaDetail), this)">复制 Markdown</button></div><div class="md-reader search-synth-answer">${dhammaAnswerHtml(group)}</div>`;
-    html += `<details class="search-synth-ev" open><summary>证据与跳转（${(group.ai.evidence || []).length} 条）</summary><ol class="search-ev-list">${(group.ai.evidence || []).map((e, i) => `<li id="dhamma-ev-${i + 1}"><span class="ev-num">[${i + 1}]</span><div><div class="ev-src"><a href="${e.href || '#'}" target="_blank" rel="noopener">${esc(e.label || e.source || '来源')} ↗</a></div><p class="ev-text">${esc(e.text || '')}</p></div></li>`).join('')}</ol></details>`;
-    html += `<p class="search-synth-foot">站内命中 ${group.site_hits ? group.site_hits.length : 0} 处；原文证据优先，未找到的对应不会用推测补齐。</p></div>`;
+    html += `<div class="cat-header"><h2>${dhammaText(entry.label)}</h2><div class="cat-en">${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join(' / ')}</div></div>`;
+    html += `<div class="dhamma-detail-grid">${sources.map(dhammaSourceCard).join('')}</div>`;
+    html += `<div class="search-synth-panel"><div class="search-synth-head"><strong>✨ AI 综合回答</strong><span class="meta">预生成 · 全站搜索 + Early Buddhist 全库关键词检索</span><button type="button" class="search-synth-copy-btn" onclick="copyMarkdownText(dhammaEvidenceMarkdown(window.__dhammaDetail), this)">复制 Markdown</button></div><div class="md-reader search-synth-answer">${dhammaAnswerHtml(entry)}</div>`;
+    html += `<details class="search-synth-ev" open><summary>综合引用（${(research.evidence || []).length} 条）</summary><ol class="search-ev-list">${(research.evidence || []).map((e, i) => `<li id="dhamma-ev-${i + 1}"><span class="ev-num">[${i + 1}]</span><div><div class="ev-src"><a href="${e.href || '#'}" target="_blank" rel="noopener">${dhammaText(e.label || e.source || '来源')} ↗</a></div><p class="ev-text">${dhammaText(e.text || '')}</p></div></li>`).join('')}</ol></details>`;
+    html += dhammaEbQueriesHtml(research);
+    html += `<p class="search-synth-foot">全站搜索命中 ${(research.site_hits || []).length} 条；两经原文和 Early Buddhist 命中均可直接跳转核查。</p></div>`;
     app.innerHTML = html;
-    window.__dhammaDetail = group;
+    window.__dhammaDetail = { entry, sources };
   } catch (e) {
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/dhamma-numbers'">← 返回法数总结</button><div class="error-msg">${esc(e.message)}</div>`;
   }
@@ -5688,7 +5762,7 @@ function communityShowAuthModal(mode, resolve) {
   overlay.innerHTML = `
     <div class="modal-box">
       <h3>${isLogin ? '登录' : '注册新账号'}</h3>
-      <div class="modal-sub">${isLogin ? '登录后才能生成 AI 综合回答、发布内容、收藏和评论' : '注册后即可生成 AI 综合回答并参与社区功能'}</div>
+      <div class="modal-sub">${isLogin ? '登录后才能发布内容、收藏和评论' : '几秒钟即可完成'}</div>
       <div id="auth-modal-error" class="modal-error" style="display:none"></div>
       ${!isLogin ? '<input id="auth-modal-name" placeholder="显示名称">' : ''}
       <input id="auth-modal-email" type="email" placeholder="邮箱">

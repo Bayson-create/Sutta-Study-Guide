@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n3-ec96213096f4",
+    "number": 3,
+    "label": "三定",
+    "member_items": [
+      "有寻有伺定",
+      "无寻有伺定",
+      "无寻无伺定"
+    ],
+    "group_ids": [
+      "dn33-n3-g50"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "三定",
+      "有寻有伺定",
+      "无寻有伺定",
+      "无寻无伺定"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「三定」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有寻有伺定、无寻有伺定、无寻无伺定。[1]\n\n## 所含各法\n### 有寻有伺定\n经文将「有寻有伺定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三定：有寻有伺定、无寻有伺定、无寻无伺定。。[1]\n### 无寻有伺定\n经文将「无寻有伺定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三定：有寻有伺定、无寻有伺定、无寻无伺定。。[1]\n### 无寻无伺定\n经文将「无寻无伺定」列为「三定」的一个成员。Early Buddhist 用该名词检索时，在《有寻有伺经》命中：是有寻有伺的定、无寻只有伺定、无寻无伺定，比丘们！。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 三定",
+          "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "下一个三定：空定、无相定、无愿定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn43.3",
+          "text": "是有寻有伺的定、无寻只有伺定、无寻无伺定，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E5%8F%AA%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "三之问题、三之总说、三之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "而，『三之问题、三之总说、三之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn43.3",
+          "text": "有寻有伺经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn41.8",
+          "text": "你信沙门乔达摩［所说］的有无寻无伺定，有寻伺之灭吗？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E4%BF%A1%E6%B2%99%E9%96%80%E5%96%AC%E9%81%94%E6%91%A9%EF%BC%BB%E6%89%80%E8%AA%AA%EF%BC%BD%E7%9A%84%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E5%97%8E%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn41.8",
+          "text": "在这里，我对世尊不以信来到：有无寻无伺定，有寻伺之灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%E6%88%91%E5%B0%8D%E4%B8%96%E5%B0%8A%E4%B8%8D%E4%BB%A5%E4%BF%A1%E4%BE%86%E5%88%B0%EF%BC%9A%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E3%80%82"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "三定",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "下一个三定：空定、无相定、无愿定。",
+              "score": 15.933099012723156,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E5%AE%9A%EF%BC%9A%E7%A9%BA%E5%AE%9A%E3%80%81%E7%84%A1%E7%9B%B8%E5%AE%9A%E3%80%81%E7%84%A1%E9%A1%98%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+              "score": 15.026566358057346,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+              "score": 14.7558220578458,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三之问题、三之总说、三之解说；",
+              "score": 10.84163994652939,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『三之问题、三之总说、三之解说。",
+              "score": 10.603518352529285,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『三之问题、三之总说、三之解说。",
+              "score": 10.37563197763958,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有寻有伺定",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+              "score": 33.22268990683735,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+              "score": 26.834719464702836,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn43.3",
+              "collection": "经藏/相应部_sn",
+              "title": "有寻有伺经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是有寻有伺的定、无寻只有伺定、无寻无伺定，比丘们！",
+              "score": 26.05688912896299,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E5%8F%AA%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn43.3",
+              "collection": "经藏/相应部_sn",
+              "title": "有寻有伺经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有寻有伺经",
+              "score": 23.85483977718144,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%B6%93"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你信沙门乔达摩［所说］的有无寻无伺定，有寻伺之灭吗？",
+              "score": 12.272036686600254,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E4%BF%A1%E6%B2%99%E9%96%80%E5%96%AC%E9%81%94%E6%91%A9%EF%BC%BB%E6%89%80%E8%AA%AA%EF%BC%BD%E7%9A%84%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里，我对世尊不以信来到：有无寻无伺定，有寻伺之灭。",
+              "score": 12.272036686600254,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%E6%88%91%E5%B0%8D%E4%B8%96%E5%B0%8A%E4%B8%8D%E4%BB%A5%E4%BF%A1%E4%BE%86%E5%88%B0%EF%BC%9A%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "mn128",
+              "collection": "经藏/中部_mn",
+              "title": "小杂染经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我修习有寻有伺之定、无寻而只有伺之定、无寻无伺之定、有喜之定、无喜之定、悦意俱行之定、平静俱行之定。",
+              "score": 11.18539045227337,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn128&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E4%BF%AE%E7%BF%92%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E4%B9%8B%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E8%80%8C%E5%8F%AA%E6%9C%89%E4%BC%BA%E4%B9%8B%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E4%B9%8B%E5%AE%9A%E3%80%81%E6%9C%89%E5%96%9C%E4%B9%8B%E5%AE%9A%E3%80%81%E7%84%A1%E5%96%9C%E4%B9%8B%E5%AE%9A%E3%80%81%E6%82%85%E6%84%8F%E4%BF%B1%E8%A1%8C%E4%B9%8B%E5%AE%9A%E3%80%81%E5%B9%B3%E9%9D%9C%E4%BF%B1%E8%A1%8C%E4%B9%8B%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "mn20",
+              "collection": "经藏/中部_mn",
+              "title": "寻之止息经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "像这样，这些寻有苦果报。",
+              "score": 10.885523916830671,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn20&lang=zh&q=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E4%BA%9B%E5%B0%8B%E6%9C%89%E8%8B%A6%E6%9E%9C%E5%A0%B1%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无寻有伺定",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+              "score": 31.41007630617308,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "sn43.3",
+              "collection": "经藏/相应部_sn",
+              "title": "有寻有伺经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是有寻有伺的定、无寻只有伺定、无寻无伺定，比丘们！",
+              "score": 12.65582576666487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E5%8F%AA%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+              "score": 11.19437289975475,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "你信沙门乔达摩［所说］的有无寻无伺定，有寻伺之灭吗？",
+              "score": 8.060185103287614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E4%BF%A1%E6%B2%99%E9%96%80%E5%96%AC%E9%81%94%E6%91%A9%EF%BC%BB%E6%89%80%E8%AA%AA%EF%BC%BD%E7%9A%84%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里，我对世尊不以信来到：有无寻无伺定，有寻伺之灭。",
+              "score": 8.060185103287614,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%E6%88%91%E5%B0%8D%E4%B8%96%E5%B0%8A%E4%B8%8D%E4%BB%A5%E4%BF%A1%E4%BE%86%E5%88%B0%EF%BC%9A%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "当我这么知、这么见时，对哪位其他沙门、婆罗门以信来到：有无寻无伺定，有寻伺之灭呢？",
+              "score": 6.20336638595864,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%95%B6%E6%88%91%E9%80%99%E9%BA%BC%E7%9F%A5%E3%80%81%E9%80%99%E9%BA%BC%E8%A6%8B%E6%99%82%EF%BC%8C%E5%B0%8D%E5%93%AA%E4%BD%8D%E5%85%B6%E4%BB%96%E6%B2%99%E9%96%80%E3%80%81%E5%A9%86%E7%BE%85%E9%96%80%E4%BB%A5%E4%BF%A1%E4%BE%86%E5%88%B0%EF%BC%9A%E6%9C%89%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%9C%89%E5%B0%8B%E4%BC%BA%E4%B9%8B%E6%BB%85%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an3.60",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我入无寻、无伺定，以心熟知心后了知：『这位先生的意行那样朝向，这个心［接下来］将直接地寻思到那个寻。",
+              "score": 5.627216360670063,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%85%A5%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E4%BB%A5%E5%BF%83%E7%86%9F%E7%9F%A5%E5%BF%83%E5%BE%8C%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E9%80%99%E4%BD%8D%E5%85%88%E7%94%9F%E7%9A%84%E6%84%8F%E8%A1%8C%E9%82%A3%E6%A8%A3%E6%9C%9D%E5%90%91%EF%BC%8C%E9%80%99%E5%80%8B%E5%BF%83%EF%BC%BB%E6%8E%A5%E4%B8%8B%E4%BE%86%EF%BC%BD%E5%B0%87%E7%9B%B4%E6%8E%A5%E5%9C%B0%E5%B0%8B%E6%80%9D%E5%88%B0%E9%82%A3%E5%80%8B%E5%B0%8B%E3%80%82"
+            },
+            {
+              "uid": "an3.60",
+              "collection": "经藏/增支部_an",
+              "title": "伤歌逻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乔达摩尊师入无寻、无伺定，以心熟知心后了知：『这位先生的意行那样朝向，这个心［接下来］将直接地寻思到那个寻。",
+              "score": 5.377493637362254,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%96%AC%E9%81%94%E6%91%A9%E5%B0%8A%E5%B8%AB%E5%85%A5%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E4%BB%A5%E5%BF%83%E7%86%9F%E7%9F%A5%E5%BF%83%E5%BE%8C%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E9%80%99%E4%BD%8D%E5%85%88%E7%94%9F%E7%9A%84%E6%84%8F%E8%A1%8C%E9%82%A3%E6%A8%A3%E6%9C%9D%E5%90%91%EF%BC%8C%E9%80%99%E5%80%8B%E5%BF%83%EF%BC%BB%E6%8E%A5%E4%B8%8B%E4%BE%86%EF%BC%BD%E5%B0%87%E7%9B%B4%E6%8E%A5%E5%9C%B0%E5%B0%8B%E6%80%9D%E5%88%B0%E9%82%A3%E5%80%8B%E5%B0%8B%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "无寻无伺定",
+          "hits": [
+            {
+              "uid": "sn43.3",
+              "collection": "经藏/相应部_sn",
+              "title": "有寻有伺经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是有寻有伺的定、无寻只有伺定、无寻无伺定，比丘们！",
+              "score": 21.390905235177247,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn43.3&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E5%8F%AA%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+              "score": 14.592325553247257,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "三定：有寻有伺定、有寻无伺的定、无寻无伺定，这些是应该被修习的三法。",
+              "score": 14.244437454290496,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%AE%9A%EF%BC%9A%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E6%9C%89%E5%B0%8B%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里，［喜悦］如果［具备］有寻、有伺，［喜悦］如果［具备］无寻、无伺，那些［具备］无寻、无伺者是更胜妙的。",
+              "score": 14.024841616668363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%EF%BC%BB%E5%96%9C%E6%82%85%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%EF%BC%BB%E5%96%9C%E6%82%85%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E9%82%A3%E4%BA%9B%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E8%80%85%E6%98%AF%E6%9B%B4%E5%8B%9D%E5%A6%99%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里，［忧］如果［具备］有寻、有伺，［忧］如果［具备］无寻、无伺，那些［具备］无寻、无伺者是更胜妙的。",
+              "score": 14.024841616668363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%EF%BC%BB%E6%86%82%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%EF%BC%BB%E6%86%82%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E9%82%A3%E4%BA%9B%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E8%80%85%E6%98%AF%E6%9B%B4%E5%8B%9D%E5%A6%99%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "dn21",
+              "collection": "经藏/长部_dn",
+              "title": "帝释所问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "在这里，［平静］如果［具备］有寻、有伺，［平静］如果［具备］无寻、无伺，那些［具备］无寻、无伺者是更胜妙的。",
+              "score": 14.024841616668363,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E9%80%99%E8%A3%A1%EF%BC%8C%EF%BC%BB%E5%B9%B3%E9%9D%9C%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%EF%BC%BB%E5%B9%B3%E9%9D%9C%EF%BC%BD%E5%A6%82%E6%9E%9C%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E9%82%A3%E4%BA%9B%EF%BC%BB%E5%85%B7%E5%82%99%EF%BC%BD%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E8%80%85%E6%98%AF%E6%9B%B4%E5%8B%9D%E5%A6%99%E7%9A%84%E3%80%82"
+            },
+            {
+              "uid": "sn46.52",
+              "collection": "经藏/相应部_sn",
+              "title": "法门经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "凡无寻、无伺的定，那也是定觉支，『定觉支』像这样总说，经由这法门它成为二重。",
+              "score": 13.767076477276104,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.52&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%E7%9A%84%E5%AE%9A%EF%BC%8C%E9%82%A3%E4%B9%9F%E6%98%AF%E5%AE%9A%E8%A6%BA%E6%94%AF%EF%BC%8C%E3%80%8E%E5%AE%9A%E8%A6%BA%E6%94%AF%E3%80%8F%E5%83%8F%E9%80%99%E6%A8%A3%E7%B8%BD%E8%AA%AA%EF%BC%8C%E7%B6%93%E7%94%B1%E9%80%99%E6%B3%95%E9%96%80%E5%AE%83%E6%88%90%E7%82%BA%E4%BA%8C%E9%87%8D%E3%80%82"
+            },
+            {
+              "uid": "sn41.8",
+              "collection": "经藏/相应部_sn",
+              "title": "尼乾陀若提子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "只要我愿意，以寻与伺的平息，……（中略）我进入后住于［无寻、无伺，定而生喜、乐的］第二禅；",
+              "score": 11.458631646720756,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn41.8&lang=zh&q=%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%8F%AA%E8%A6%81%E6%88%91%E9%A1%98%E6%84%8F%EF%BC%8C%E4%BB%A5%E5%B0%8B%E8%88%87%E4%BC%BA%E7%9A%84%E5%B9%B3%E6%81%AF%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%88%91%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%EF%BC%BB%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E5%AE%9A%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%EF%BC%BD%E7%AC%AC%E4%BA%8C%E7%A6%AA%EF%BC%9B"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n3-g50",
+      "sutta": "dn33",
+      "number": 3,
+      "order": 50,
+      "label": "三定",
+      "members": "有寻有伺定、无寻有伺定、无寻无伺定",
+      "member_items": [
+        "有寻有伺定",
+        "无寻有伺定",
+        "无寻无伺定"
+      ],
+      "dn34_status": null,
+      "source_text": "三定：有寻有伺定、无寻有伺定、无寻无伺定。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E6%9C%89%E4%BC%BA%E5%AE%9A%E3%80%81%E7%84%A1%E5%B0%8B%E7%84%A1%E4%BC%BA%E5%AE%9A"
+    }
+  ]
+}

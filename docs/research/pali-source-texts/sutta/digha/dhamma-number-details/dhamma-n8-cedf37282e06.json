@@ -1,0 +1,577 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n8-cedf37282e06",
+    "number": 8,
+    "label": "八世间法",
+    "member_items": [
+      "得到与得不到",
+      "有名与无名",
+      "毁与誉",
+      "乐与苦"
+    ],
+    "group_ids": [
+      "dn33-n8-g9",
+      "dn34-n8-g3"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "八世间法",
+      "得到与得不到",
+      "有名与无名",
+      "毁与誉",
+      "乐与苦"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n「八世间法」属于 8 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：得到与得不到、有名与无名、毁与誉、乐与苦。[1]\n- DN34：得到与得不到、有名与无名、毁与誉、乐与苦。[2]\n\n## 所含各法\n### 得到与得不到\n经文将「得到与得不到」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《世间法经第一》命中：「得到得不到与有名无名，毁誉与乐苦，。[4]\n### 有名与无名\n经文将「有名与无名」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《世间法经第一》命中：「得到得不到与有名无名，毁誉与乐苦，。[4]\n### 毁与誉\n经文将「毁与誉」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。。[1]\n### 乐与苦\n经文将「乐与苦」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《乐的与苦的经》命中：乐的与苦的经。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 八世间法",
+          "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 八世间法",
+          "text": "（三）哪些是应该被遍知的八法呢？八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "八世间法，比丘们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.5",
+          "text": "「得到得不到与有名无名，毁誉与乐苦，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn24.43",
+          "text": "乐的与苦的经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.43&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E7%9A%84%E8%88%87%E8%8B%A6%E7%9A%84%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.51",
+          "text": "如果你接受八敬重法，则它将成为你的具足戒：",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%8E%A5%E5%8F%97%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E5%89%87%E5%AE%83%E5%B0%87%E6%88%90%E7%82%BA%E4%BD%A0%E7%9A%84%E5%85%B7%E8%B6%B3%E6%88%92%EF%BC%9A"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.51",
+          "text": "我预先为比丘尼安立八敬重法，有生之年不应该逾越。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E9%A0%90%E5%85%88%E7%82%BA%E6%AF%94%E4%B8%98%E5%B0%BC%E5%AE%89%E7%AB%8B%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E6%9C%89%E7%94%9F%E4%B9%8B%E5%B9%B4%E4%B8%8D%E6%87%89%E8%A9%B2%E9%80%BE%E8%B6%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "八之问题、八之总说、八之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "八之问题、八之总说、八之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "八大丈夫之寻：『这是少欲者的法，这不是强欲者的法；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E5%A4%A7%E4%B8%88%E5%A4%AB%E4%B9%8B%E5%B0%8B%EF%BC%9A%E3%80%8E%E9%80%99%E6%98%AF%E5%B0%91%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E5%BC%B7%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an8.6",
+          "text": "「得到得不到与有名无名，毁誉与乐苦，",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+        }
+      ],
+      "generated_by": "Codex evidence-bound static synthesis",
+      "early_buddhist_queries": [
+        {
+          "query": "八世间法",
+          "hits": [
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法，比丘们！",
+              "score": 24.45026899945919,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 16.31853422885917,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an8.51",
+              "collection": "经藏/增支部_an",
+              "title": "乔达弥经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "如果你接受八敬重法，则它将成为你的具足戒：",
+              "score": 14.15474432071331,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%8E%A5%E5%8F%97%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E5%89%87%E5%AE%83%E5%B0%87%E6%88%90%E7%82%BA%E4%BD%A0%E7%9A%84%E5%85%B7%E8%B6%B3%E6%88%92%EF%BC%9A"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+              "score": 13.99181663984941,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an8.51",
+              "collection": "经藏/增支部_an",
+              "title": "乔达弥经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我预先为比丘尼安立八敬重法，有生之年不应该逾越。",
+              "score": 13.06874626606434,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E9%A0%90%E5%85%88%E7%82%BA%E6%AF%94%E4%B8%98%E5%B0%BC%E5%AE%89%E7%AB%8B%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E6%9C%89%E7%94%9F%E4%B9%8B%E5%B9%B4%E4%B8%8D%E6%87%89%E8%A9%B2%E9%80%BE%E8%B6%8A%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八之问题、八之总说、八之解说；",
+              "score": 12.850311772404895,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八之问题、八之总说、八之解说；",
+              "score": 12.850311772404895,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八大丈夫之寻：『这是少欲者的法，这不是强欲者的法；",
+              "score": 12.794363486290827,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E5%A4%A7%E4%B8%88%E5%A4%AB%E4%B9%8B%E5%B0%8B%EF%BC%9A%E3%80%8E%E9%80%99%E6%98%AF%E5%B0%91%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E5%BC%B7%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "得到与得不到",
+          "hits": [
+            {
+              "uid": "an8.5",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「得到得不到与有名无名，毁誉与乐苦，",
+              "score": 17.235614227012444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「得到得不到与有名无名，毁誉与乐苦，",
+              "score": 17.235614227012444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+            },
+            {
+              "uid": "an3.22",
+              "collection": "经藏/增支部_an",
+              "title": "病人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，一种病人当得到适当的食物或得不到适当的食物，当得到适当的药物或得不到适当的药物，当得到适当的看护者或得不到适当的看护者时，他都不从那个病康复。",
+              "score": 14.767624184129307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E7%97%85%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E4%B8%8D%E5%BE%9E%E9%82%A3%E5%80%8B%E7%97%85%E5%BA%B7%E5%BE%A9%E3%80%82"
+            },
+            {
+              "uid": "an3.22",
+              "collection": "经藏/增支部_an",
+              "title": "病人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，一种病人当得到适当的食物或得不到适当的食物，当得到适当的药物或得不到适当的药物，当得到适当的看护者或得不到适当的看护者时，他都从那个病康复。",
+              "score": 14.767624184129307,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E7%97%85%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E5%BE%9E%E9%82%A3%E5%80%8B%E7%97%85%E5%BA%B7%E5%BE%A9%E3%80%82"
+            },
+            {
+              "uid": "mn76",
+              "collection": "经藏/中部_mn",
+              "title": "散达葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "团食应该不被我得到的， 因为那样得不到；",
+              "score": 14.714717870847222,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn76&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%98%E9%A3%9F%E6%87%89%E8%A9%B2%E4%B8%8D%E8%A2%AB%E6%88%91%E5%BE%97%E5%88%B0%E7%9A%84%EF%BC%8C+%E5%9B%A0%E7%82%BA%E9%82%A3%E6%A8%A3%E5%BE%97%E4%B8%8D%E5%88%B0%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 13.137917788469483,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
+              "score": 12.70670060226221,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an3.22",
+              "collection": "经藏/增支部_an",
+              "title": "病人经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，一种人当得到看见如来或得不到看见如来，当得到被如来教导的法律之听闻或得不到被如来教导的法律之听闻时，他都在善法上进入正性、决定。",
+              "score": 12.503738796828426,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E7%9C%8B%E8%A6%8B%E5%A6%82%E4%BE%86%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E7%9C%8B%E8%A6%8B%E5%A6%82%E4%BE%86%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%81%BD%E8%81%9E%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%81%BD%E8%81%9E%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E5%9C%A8%E5%96%84%E6%B3%95%E4%B8%8A%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E3%80%81%E6%B1%BA%E5%AE%9A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "有名与无名",
+          "hits": [
+            {
+              "uid": "an8.5",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「得到得不到与有名无名，毁誉与乐苦，",
+              "score": 22.15228986431923,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "「得到得不到与有名无名，毁誉与乐苦，",
+              "score": 22.15228986431923,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 17.035260562734834,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
+              "score": 16.468706582273338,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.192",
+              "collection": "经藏/增支部_an",
+              "title": "处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 14.70900973724962,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an4.192",
+              "collection": "经藏/增支部_an",
+              "title": "处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 14.70900973724962,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+              "score": 14.70900973724962,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an8.5",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
+              "score": 12.665213124734835,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "毁与誉",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 20.412566355808487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
+              "score": 19.729775836335214,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an4.192",
+              "collection": "经藏/增支部_an",
+              "title": "处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 17.609052367142517,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "an4.192",
+              "collection": "经藏/增支部_an",
+              "title": "处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
+              "score": 17.609052367142517,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+              "score": 17.609052367142517,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an8.5",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
+              "score": 15.145942056594567,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
+            },
+            {
+              "uid": "an8.6",
+              "collection": "经藏/增支部_an",
+              "title": "世间法经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
+              "score": 15.145942056594567,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
+            },
+            {
+              "uid": "kp5",
+              "collection": "经藏/小部_kn",
+              "title": "吉祥经",
+              "author": "Metta",
+              "translator": "metta",
+              "text": "接触世法，即面对八风(利、衰、誉、毁、称、讥、乐、苦)，心不动摇。",
+              "score": 14.755232367292791,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%8E%A5%E8%A7%B8%E4%B8%96%E6%B3%95%EF%BC%8C%E5%8D%B3%E9%9D%A2%E5%B0%8D%E5%85%AB%E9%A2%A8%28%E5%88%A9%E3%80%81%E8%A1%B0%E3%80%81%E8%AD%BD%E3%80%81%E6%AF%80%E3%80%81%E7%A8%B1%E3%80%81%E8%AD%8F%E3%80%81%E6%A8%82%E3%80%81%E8%8B%A6%29%EF%BC%8C%E5%BF%83%E4%B8%8D%E5%8B%95%E6%90%96%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "乐与苦",
+          "hits": [
+            {
+              "uid": "sn24.43",
+              "collection": "经藏/相应部_sn",
+              "title": "乐的与苦的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐的与苦的经",
+              "score": 16.02797656191481,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.43&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E7%9A%84%E8%88%87%E8%8B%A6%E7%9A%84%E7%B6%93"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "没有乐与苦吗？",
+              "score": 15.35893014985807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E6%A8%82%E8%88%87%E8%8B%A6%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "没有乐与苦吗？",
+              "score": 15.35893014985807,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E6%A8%82%E8%88%87%E8%8B%A6%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐与苦被自己所作吗？",
+              "score": 14.630948435355926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐与苦被其他所作吗？",
+              "score": 14.630948435355926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐与苦被自己所作吗？",
+              "score": 14.630948435355926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐与苦被其他所作吗？",
+              "score": 14.630948435355926,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn12.18",
+              "collection": "经藏/相应部_sn",
+              "title": "丁巴卢迦经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "乐与苦被自己与其他所作吗？",
+              "score": 13.9720754672998,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E8%88%87%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
+            }
+          ]
+        }
+      ],
+      "site_hits": []
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n8-g9",
+      "sutta": "dn33",
+      "number": 8,
+      "order": 9,
+      "label": "八世间法",
+      "members": "得到与得不到、有名与无名、毁与誉、乐与苦",
+      "member_items": [
+        "得到与得不到",
+        "有名与无名",
+        "毁与誉",
+        "乐与苦"
+      ],
+      "dn34_status": null,
+      "source_text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+    },
+    {
+      "id": "dn34-n8-g3",
+      "sutta": "dn34",
+      "number": 8,
+      "order": 3,
+      "label": "八世间法",
+      "members": "得到与得不到、有名与无名、毁与誉、乐与苦",
+      "member_items": [
+        "得到与得不到",
+        "有名与无名",
+        "毁与誉",
+        "乐与苦"
+      ],
+      "dn34_status": "应遍知",
+      "source_text": "（三）哪些是应该被遍知的八法呢？八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+    }
+  ]
+}
