@@ -530,7 +530,20 @@ def main() -> None:
                 stats["retried"] += 1
                 continue
             except Exception as exc:
-                print(f"  !! {label} batch of {len(chunk)} failed: {exc}")
+                # Falling back to one-by-one costs len(chunk) requests instead
+                # of 1, so a transient upstream hiccup must not trigger it -
+                # that would spend *more* of the very quota that is scarce.
+                # Retry the batch itself a few times first; only a batch that
+                # keeps failing is worth breaking apart.
+                if attempt < 3:
+                    delay = 15.0 * attempt
+                    print(f"  !! {label} batch of {len(chunk)} failed "
+                          f"(attempt {attempt}), retrying in {delay:.0f}s: {exc}")
+                    status.update(status="batch_retry", backoff_until=time.time() + delay)
+                    time.sleep(delay)
+                    continue
+                print(f"  !! {label} batch of {len(chunk)} failed {attempt}x, "
+                      f"falling back to one-by-one: {exc}")
                 return False
 
             got = parse_batch(out, len(chunk))
@@ -642,7 +655,8 @@ def main() -> None:
             consecutive_failures = 0
             continue
 
-        for unit_key, pali, old_zh, part_title in chunk:
+        chunk_start = position - len(chunk)
+        for offset, (unit_key, pali, old_zh, part_title) in enumerate(chunk, 1):
             if out_of_time():
                 stop_reason = "stopped" if _stop_requested else "time_limit"
                 break
@@ -655,7 +669,7 @@ def main() -> None:
             rate = stats["ok"] / (elapsed / 60) if elapsed > 0 else 0
             status.note_done(unit_key, text, elapsed, stats, latencies,
                              remaining=len(todo) - (stats["ok"] - done_before) - len(pending_retry))
-            print(f"[{position}/{len(todo)}] {unit_key}  {elapsed / 60:5.1f}min  "
+            print(f"[{chunk_start + offset}/{len(todo)}] {unit_key}  {elapsed / 60:5.1f}min  "
                   f"{rate:4.1f}/min  429s={stats['rate_limited']}  {text[:48]}")
 
     # Retry rounds. Failures are usually transient (a 5xx from the upstream
