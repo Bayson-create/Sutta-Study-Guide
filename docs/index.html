@@ -1133,6 +1133,7 @@ a.cite:hover { background: var(--accent); border-color: var(--accent); color: #f
 .search-ev-list .ev-src { font-size: 0.86em; font-weight: 600; }
 .search-ev-list .ev-src a { color: var(--accent); text-decoration: none; }
 .search-ev-list .ev-src a:hover { text-decoration: underline; }
+.dhamma-cite-missing { color: var(--text-light); font-style: italic; }
 .search-ev-list .ev-text { margin: 5px 0 0; font-size: 0.88em; color: var(--text-light); line-height: 1.8; }
 @keyframes evFlash { from { background: #fce9a8; } to { background: transparent; } }
 .search-ev-list li.ev-flash { animation: evFlash 1.5s ease-out; }
@@ -3252,30 +3253,163 @@ async function renderDhammaNumbersSummary() {
   }
 }
 
+function dhammaCleanHref(value) {
+  return String(value || '').trim().replace(/[)>\]}>.,;。；，）】》」]+$/g, '');
+}
+
+function dhammaAbsoluteHref(value) {
+  const href = dhammaCleanHref(value);
+  if (!href) return '';
+  try { return new URL(href, location.href).href; } catch (e) { return ''; }
+}
+
+function dhammaCitationKey(item) {
+  return `${dhammaCleanHref(item && item.href)}|${searchNormalize(item && item.text || '')}`;
+}
+
+function dhammaParseMarkdown(markdown) {
+  const raw = String(markdown || '').replace(/\r\n/g, '\n');
+  const match = raw.match(/(?:^|\n)##\s*引用\s*\n([\s\S]*)$/i);
+  if (!match) {
+    const inlineLinks = [];
+    const seenInline = new Set();
+    const inlinePattern = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+    let inline;
+    while ((inline = inlinePattern.exec(raw))) {
+      const href = dhammaCleanHref(inline[2]);
+      if (!href || seenInline.has(href)) continue;
+      seenInline.add(href);
+      inlineLinks.push({ label: inline[1].trim(), href, text: inline[1].trim() });
+    }
+    return { body: raw.trim(), appendix: [], inlineLinks };
+  }
+  const body = raw.slice(0, match.index).trim();
+  const lines = match[1].split('\n');
+  const appendix = [];
+  for (let i = 0; i < lines.length; i += 1) {
+    const row = lines[i].match(/^\s*[-*]\s*\[(\d+)\]\s*(.*?)\s+—\s+(https?:\/\/\S+)\s*$/);
+    if (!row) continue;
+    const quote = lines[i + 1] && /^\s*>\s?/.test(lines[i + 1])
+      ? lines[i + 1].replace(/^\s*>\s?/, '').trim() : '';
+    appendix.push({ index: Number(row[1]), label: row[2].trim(), href: dhammaCleanHref(row[3]), text: quote });
+  }
+  const inlineLinks = [];
+  const seenInline = new Set();
+  const inlinePattern = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+  let inline;
+  while ((inline = inlinePattern.exec(raw))) {
+    const href = dhammaCleanHref(inline[2]);
+    if (!href || seenInline.has(href)) continue;
+    seenInline.add(href);
+    inlineLinks.push({ label: inline[1].trim(), href, text: inline[1].trim() });
+  }
+  return { body, appendix, inlineLinks };
+}
+
+function dhammaCitationModel(entry) {
+  const research = entry && entry.research || {};
+  const parsed = dhammaParseMarkdown(research.ai_full_markdown || research.answer_markdown || '');
+  const evidence = [];
+  const seen = new Map();
+  const rawToCanonical = {};
+  (research.evidence || []).forEach((item, rawIndex) => {
+    const normalized = { ...item, href: dhammaCleanHref(item.href) };
+    const key = dhammaCitationKey(normalized);
+    let canonical = seen.get(key);
+    if (!canonical) {
+      evidence.push(normalized);
+      canonical = evidence.length;
+      seen.set(key, canonical);
+    }
+    rawToCanonical[rawIndex + 1] = canonical;
+  });
+  const citationMap = { ...rawToCanonical };
+  parsed.appendix.forEach((item) => {
+    const key = dhammaCitationKey(item);
+    let canonical = seen.get(key);
+    if (!canonical && item.href) {
+      const sameHref = evidence.findIndex(candidate => dhammaCleanHref(candidate.href) === item.href);
+      if (sameHref >= 0) canonical = sameHref + 1;
+    }
+    if (!canonical) {
+      evidence.push({ kind: 'ai_markdown', label: item.label, href: item.href, text: item.text });
+      canonical = evidence.length;
+      seen.set(key, canonical);
+    }
+    citationMap[item.index] = canonical;
+  });
+  parsed.inlineLinks.forEach((item) => {
+    const sameHref = evidence.findIndex(candidate => dhammaCleanHref(candidate.href) === item.href);
+    if (sameHref >= 0) return;
+    evidence.push({ kind: 'ai_markdown', label: item.label, href: item.href, text: item.text });
+    seen.set(dhammaCitationKey(item), evidence.length);
+  });
+  return { body: parsed.body, evidence, citationMap };
+}
+
+function dhammaAnswerBody(model, entry) {
+  let body = model.body || '';
+  body = body.replace(/^#\s*AI\s*综合回答[^\n]*\n+/i, '').trim();
+  return body || (entry && entry.research && entry.research.answer_markdown ? toSimplified(entry.research.answer_markdown) : '');
+}
+
+function dhammaRewriteCitations(markdown, model) {
+  return String(markdown || '').replace(/\[(\d{1,3})\]/g, (match, number) => {
+    const mapped = model.citationMap[Number(number)];
+    return mapped ? `[${mapped}]` : match;
+  });
+}
+
 function dhammaEvidenceMarkdown(state) {
   if (!state) return '';
   const { entry, sources } = state;
-  const research = entry.research || {};
-  if (research.ai_full_markdown) return toSimplified(research.ai_full_markdown);
-  const answer = research.answer_markdown ? toSimplified(research.answer_markdown) : '';
-  const lines = [`# ${toSimplified(entry.label)}（${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join('/')}）`, '', answer, '', '## 引用'];
-  (research.evidence || []).forEach((e, i) => {
-    lines.push(`- [${i + 1}] ${toSimplified(e.label || e.source || '来源')}${e.href ? ` — ${new URL(e.href, location.href).href}` : ''}`);
-    if (e.text) lines.push(`  > ${String(e.text).replace(/\n+/g, ' ')}`);
+  const model = dhammaCitationModel(entry);
+  const rawBody = dhammaAnswerBody(model, entry);
+  const body = dhammaRewriteCitations(toSimplified(rawBody), model);
+  const title = `# AI 综合回答：${toSimplified(entry.label)}（${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join('/')}）`;
+  const lines = [title, '', body, '', '## 引用'];
+  model.evidence.forEach((item, i) => {
+    const href = dhammaAbsoluteHref(item.href);
+    lines.push(`- [${i + 1}] ${toSimplified(item.label || item.source || '来源')}${href ? ` — ${href}` : ''}`);
+    if (item.text) lines.push(`  > ${String(toSimplified(item.text)).replace(/\n+/g, ' ')}`);
   });
   return lines.join('\n');
 }
 
 function dhammaAnswerHtml(entry) {
-  const research = entry.research || {};
-  const answer = research.ai_full_markdown || research.answer_markdown
-    ? toSimplified(research.ai_full_markdown || research.answer_markdown)
-    : '暂无预生成回答。';
-  const evidence = research.evidence || [];
-  return mdToHtml(answer).replace(/\[(\d{1,3})\]/g, (m, n) => {
-    const i = Number(n);
-    return i >= 1 && i <= evidence.length ? `<a class="cite" href="#dhamma-ev-${i}">[${n}]</a>` : `<span class="cite-bad">[${n}]</span>`;
+  const model = dhammaCitationModel(entry);
+  const body = dhammaAnswerBody(model, entry);
+  if (!body) return '暂无预生成回答。';
+  const answer = toSimplified(dhammaRewriteCitations(body, model));
+  return mdToHtml(answer).replace(/\[(\d{1,3})\]/g, (match, number) => {
+    const index = Number(number);
+    return index >= 1 && index <= model.evidence.length
+      ? `<a class="cite" href="#dhamma-ev-${index}" onclick="dhammaJumpToEvidence(${index});return false">[${number}]</a>`
+      : `<span class="cite-bad" title="引用了不存在的证据编号">[${number}]</span>`;
   });
+}
+
+function dhammaJumpToEvidence(index) {
+  const target = document.getElementById(`dhamma-ev-${index}`);
+  if (!target) return;
+  const details = target.closest('details');
+  if (details) details.open = true;
+  target.classList.remove('ev-flash');
+  void target.offsetWidth;
+  target.classList.add('ev-flash');
+  searchScrollIntoView(target);
+}
+
+function dhammaEvidenceListHtml(model) {
+  return model.evidence.map((item, i) => {
+    const href = dhammaAbsoluteHref(item.href);
+    const source = dhammaText(item.label || item.source || '来源');
+    const siteHref = href && (href.startsWith(`${location.origin}/`) || /https?:\/\/bayson-create\.github\.io\/Sutta-Study-Guide(?:\/|#|$)/i.test(href));
+    const sourceHtml = href
+      ? `<a href="${esc(href)}"${siteHref ? '' : ' target="_blank" rel="noopener"'}>${source} ↗</a>`
+      : `<span class="dhamma-cite-missing">${source}（暂无跳转地址）</span>`;
+    return `<li id="dhamma-ev-${i + 1}"><span class="ev-num">[${i + 1}]</span><div><div class="ev-src">${sourceHtml}</div><p class="ev-text">${dhammaText(item.text || '')}</p></div></li>`;
+  }).join('');
 }
 
 function dhammaSourceCard(group) {
@@ -3301,11 +3435,12 @@ async function renderDhammaNumberDetail(id) {
     if (!entry) throw new Error('未找到该法数组。');
     const sources = dhammaEntrySources(detail, entry);
     const research = entry.research || {};
+    const citationModel = dhammaCitationModel(entry);
     html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/dhamma-numbers'">← 返回法数总结</button>`;
     html += `<div class="cat-header"><h2>${dhammaText(entry.label)}</h2><div class="cat-en">${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join(' / ')}</div></div>`;
     html += `<div class="dhamma-detail-grid">${sources.map(dhammaSourceCard).join('')}</div>`;
     html += `<div class="search-synth-panel"><div class="search-synth-head"><strong>✨ AI 综合回答</strong><span class="meta">预生成 · 全站搜索 + Early Buddhist 全库关键词检索</span><button type="button" class="search-synth-copy-btn" onclick="copyMarkdownText(dhammaEvidenceMarkdown(window.__dhammaDetail), this)">复制 Markdown</button></div><div class="md-reader search-synth-answer">${dhammaAnswerHtml(entry)}</div>`;
-    html += `<details class="search-synth-ev" open><summary>综合引用（${(research.evidence || []).length} 条）</summary><ol class="search-ev-list">${(research.evidence || []).map((e, i) => `<li id="dhamma-ev-${i + 1}"><span class="ev-num">[${i + 1}]</span><div><div class="ev-src"><a href="${e.href || '#'}" target="_blank" rel="noopener">${dhammaText(e.label || e.source || '来源')} ↗</a></div><p class="ev-text">${dhammaText(e.text || '')}</p></div></li>`).join('')}</ol></details>`;
+    html += `<details class="search-synth-ev" open><summary>综合引用（${citationModel.evidence.length} 条）</summary><ol class="search-ev-list">${dhammaEvidenceListHtml(citationModel)}</ol></details>`;
     html += dhammaEbQueriesHtml(research);
     html += `<p class="search-synth-foot">全站搜索命中 ${(research.site_hits || []).length} 条；两经原文和 Early Buddhist 命中均可直接跳转核查。</p></div>`;
     app.innerHTML = html;
