@@ -5,7 +5,8 @@
     "number": 2,
     "label": "和顺与欢迎",
     "member_items": [
-      "和顺与欢迎"
+      "和顺",
+      "欢迎"
     ],
     "group_ids": [
       "dn33-n2-g15"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "和顺与欢迎"
+      "和顺与欢迎",
+      "和顺",
+      "欢迎"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「和顺与欢迎」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：和顺与欢迎。[1]\n\n## 所含各法\n### 和顺与欢迎\n经文将「和顺与欢迎」列为「和顺与欢迎」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：和顺与欢迎。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n根据现有证据，DN33 中明确列出“和顺与欢迎”这一法数条目 [1][2]。其他证据（MN32、MN37、MN49、MN76、MN83、MN108）仅出现“欢迎”或“欢迎你”的表述 [3][4][5][6][7][8]，未涉及“和顺”或“和顺与欢迎”的完整条目。\n\n## 要点展开\n### 和顺与欢迎的出处\n- DN33 明确列出“和顺与欢迎”作为一项法数 [1][2]。\n\n### 其他经文中的“欢迎”\n- 多部中部经文（MN32、MN37、MN49、MN76、MN83、MN108）出现“欢迎”或“欢迎你”的表述 [3][4][5][6][7][8]，但未与“和顺”并列。\n\n## 分歧与张力\n不同来源在表述上存在差异：DN33 将“和顺”与“欢迎”并列为一个条目 [1][2]，而其他经文仅单独使用“欢迎”或“欢迎你” [3][4][5][6][7][8]，未提及“和顺”。这可能反映不同经文对同一概念的不同侧重，但现有证据不足以判断其具体关系。\n\n## 证据覆盖情况\n现有证据覆盖了 DN33 中“和顺与欢迎”的明确列出，以及多部中部经文中“欢迎”的单独出现，但未提供“和顺”在其他经文中的用法，也未解释“和顺”与“欢迎”之间的具体关联。",
       "evidence": [
         {
           "kind": "source",
@@ -66,9 +69,39 @@
           "label": "Early Buddhist · 经藏/中部_mn · mn108",
           "text": "欢迎！",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn108&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-comparison.md",
+          "text": "## 1.4 第三对基本差异：人类的本质与使命 #### **古兰经：仆人（abd）的身份** ``` 《播种者章》51:56： \"我创造精灵和人类，只为要他们崇拜我。\" 《宴席章》5:116： \"真主说：麦尔彦之子尔撒啊！ 你曾对众人说：你们当舍真主而以我和我的母亲为二主吗？\" ``` **古兰经对人的理解**： - 人被创造是为了崇拜真主（51:56） - 人有自由意志（qadar）选择服从或违背 - 人生的终极目的是侍奉和顺从真主 - 但人可以通过信仰和善行获得真主的恩典 #### **圣经：上帝形象的承载者** ``` 创世记1:27： \"上帝就照着自己的形像造人， 乃是照着他的形像造男造女。\" 约翰福音1:12： \"凡接待他的，就是信他名的人， 他就赐他们权柄作上帝的儿女。\" ``` **圣经对人的理解**： - 人被创造带着上帝的形象（品格层面） - 人堕落了（原罪），失去了与上帝的和谐关系 - 通过基督的救赎，人可以成为\"上帝的儿女\" - 人的终极目的是与上帝建立爱的关系 **佛法视角的比较**： |维度|古兰经|圣经|佛法评价| |---|---|---|---| |**人的价值来源**|真主的创造 + 人的顺从|上帝的形象 + 上帝的爱|古兰经强调义务，圣经强调",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%92%8C%E9%A0%86&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/bicameral-mind-origin.md",
+          "text": "*建议引用格式**： ``` The Bicameral Mind vs. Theravada Buddhism: A Complete Scholarly Dialogue Based on the Pali Canon and Visuddhimagga (2026) 约 88,000 words of original analysis ``` --- **希望这个分析对您有所帮助。** 如果您有任何问题或进一步的想法，欢迎进行更深入的对话。 意识和解脱的问题值得我们最好的思考。 🙏 --- # 《双脑人意识的起源》与上座部佛教的对话 ## 结合巴利三藏和清净道论的透彻分析 **完成日期**: 2026年7月 **分析方法**: 原典对应 + 佛教视角批判 --- ## 导言：两种\"意识起源\"的哲学 在开始逐章分析之前，需要澄清一个根本的对话困难： ### Jaynes 的问题意识 - **问题**: 意识（现代自我观察、自我反思的能力）何时出现于人类历史上？ - **答案**: 约 3000-1000 年前，通过社会危机导致的脑神经适应 - **方法**: 从古代文献的心理学特征反推神经结构的变化 ### 佛教的问题意识 巴利三藏和清净道论的意识观（viññāṇ",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap06.json",
+          "text": "因逆风则尸体的臭气扑鼻，令脑昏乱，或使呕吐，而生后悔:「为什我要来这样的尸体之处!」所以应避逆风而顺风行。如果途中有山，或峭壁、岩石、篱笆、荆棘、流水、沼池，不可能顺风而行，则用衣角扪鼻而行，这是他的行的方法。</p><p>(2)(四方诸相的考察)这里走去的人，不应即刻去看不净相，须先确定方位; 因为所站的一方，若对于所缘不明显，则心亦不适于工作; 所公应该避逸那一方。如果所立之处对于所缘很明显的，则心亦适于工作，故应站在那里。对于逆风和顺风都应避免，站于逆风者未免为尸体的臭气所恼而散乱于心; 站在顺风者，如果那里有非人居留，则未免触怒他们而致灾害ン所以应该稍微避开而在不很多的顺风处站立、如是注意站立，亦不应离尸体过远与过近或在正头方及正足方站立，因为站得过远对于所缘不明显，过近则生恐怖。若站在正头方或正足方，则对一切不净相难得平等的认识。所以不过远过近近而视，当在尸体 的中部适当的地方站立。</p><p><span class=\\\"vism-page\\\">[183]</span></p><p>如是站立之人，「那里并有岩石……蔓藤等相」，当依此说考察四方诸相。其考察的方法如次:若在不净相的周围看见有石头，应该确定这石头的高、低、大、小、赤、黑、白、长及圆等。此后应该观察:「在这个地方是这个石头，这边是不",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%92%8C%E9%A0%86&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap17.json",
+          "text": "缘起 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-020\\\">[17-020]</sup> ：「诸比丘，无明缘行......及至......生缘老死」。（2）譬如彼等四人之中，一人先看见蔓的中部，他便割断中部，只拉其上部，取而使用。世尊这样从中间开始而至最后说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-021\\\">[17-021]</sup> ：「对于他的受而欢喜而欢迎而耽著者生起喜，那于受中的喜是取。以取为缘的是有。以有为缘的是生」。（3）譬如四人中的一人，先看见蔓的尾端，便执其尾端，从尾至根，取其全部而使用。世尊亦这样从最后而至最初说缘起 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-022\\\">[17-022]</sup> ：「我说生缘老死。诸比丘，是否生缘老死，你们的意思怎样？尊师，生缘老死，我们的意思是生缘老死。<span class=\\\"vism-page\\\">[524]</span>我说有缘生......乃至......无明缘行。诸比丘，是否无明缘行，你们的意思怎样？ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-023\\\">[17-023]</sup>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "B. S. omü. 2 B. S. “*vatthaharo. 136 Majjhimanikāyatthakathā petāraṃ paṭipattisampannaṃ bhikkhuṃ pucchanto idaṃ: “Ko nu kho, bhikkhave” ti ādivacanaṃ avoca.\", \"chinese_translation\": \"4. 世尊说了这样的话：“诸比丘，是否安好？”以这些言语对来客作了欢迎后，说了这样的话：“诸比丘，是谁说了这三句开头的话？”据说，那些比丘被世尊以欢迎的方式询问：“诸比丘，是否安好？是否以无疲劳的方式走完了路程？没有因乞食而疲劳吗？你们从何处来，诸比丘？”他们回答说：“我们从释迦族地区迦毗罗卫城村，从生处而来。”那时，世尊既没有询问净饭大王、也没有询问善觉、也没有询问释迦觉、也没有询问途头檀那、也没有询问阿弥头檀那、也没有询问阿弥提耶王妃、也没有询问摩诃波阇波提、也没有询问整个释迦族集会的健康。然而，他自己获得了十种谈论事，并且在那里……（注：原文有省略）询问具足正行的比丘时，说了这样的话：“诸比丘，是谁……”等开头的话。\", \"correction_note\": [ { \"type\": \"model",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "和顺与欢迎",
@@ -154,9 +187,55 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn108&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81"
             }
           ]
+        },
+        {
+          "query": "和顺",
+          "hits": []
+        },
+        {
+          "query": "欢迎",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/two-religions-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "## 1.4 第三对基本差异：人类的本质与使命 #### **古兰经：仆人（abd）的身份** ``` 《播种者章》51:56： \"我创造精灵和人类，只为要他们崇拜我。\" 《宴席章》5:116： \"真主说：麦尔彦之子尔撒啊！ 你曾对众人说：你们当舍真主而以我和我的母亲为二主吗？\" ``` **古兰经对人的理解**： - 人被创造是为了崇拜真主（51:56） - 人有自由意志（qadar）选择服从或违背 - 人生的终极目的是侍奉和顺从真主 - 但人可以通过信仰和善行获得真主的恩典 #### **圣经：上帝形象的承载者** ``` 创世记1:27： \"上帝就照着自己的形像造人， 乃是照着他的形像造男造女。\" 约翰福音1:12： \"凡接待他的，就是信他名的人， 他就赐他们权柄作上帝的儿女。\" ``` **圣经对人的理解**： - 人被创造带着上帝的形象（品格层面） - 人堕落了（原罪），失去了与上帝的和谐关系 - 通过基督的救赎，人可以成为\"上帝的儿女\" - 人的终极目的是与上帝建立爱的关系 **佛法视角的比较**： |维度|古兰经|圣经|佛法评价| |---|---|---|---| |**人的价值来源**|真主的创造 + 人的顺从|上帝的形象 + 上帝的爱|古兰经强调义务，圣经强调",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%92%8C%E9%A0%86&scope=site",
+          "query": "和顺"
+        },
+        {
+          "source": "docs/research/psychology/bicameral-mind-origin.md",
+          "heading": "站内搜索命中",
+          "text": "*建议引用格式**： ``` The Bicameral Mind vs. Theravada Buddhism: A Complete Scholarly Dialogue Based on the Pali Canon and Visuddhimagga (2026) 约 88,000 words of original analysis ``` --- **希望这个分析对您有所帮助。** 如果您有任何问题或进一步的想法，欢迎进行更深入的对话。 意识和解脱的问题值得我们最好的思考。 🙏 --- # 《双脑人意识的起源》与上座部佛教的对话 ## 结合巴利三藏和清净道论的透彻分析 **完成日期**: 2026年7月 **分析方法**: 原典对应 + 佛教视角批判 --- ## 导言：两种\"意识起源\"的哲学 在开始逐章分析之前，需要澄清一个根本的对话困难： ### Jaynes 的问题意识 - **问题**: 意识（现代自我观察、自我反思的能力）何时出现于人类历史上？ - **答案**: 约 3000-1000 年前，通过社会危机导致的脑神经适应 - **方法**: 从古代文献的心理学特征反推神经结构的变化 ### 佛教的问题意识 巴利三藏和清净道论的意识观（viññāṇ",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site",
+          "query": "欢迎"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap06.json",
+          "heading": "站内搜索命中",
+          "text": "因逆风则尸体的臭气扑鼻，令脑昏乱，或使呕吐，而生后悔:「为什我要来这样的尸体之处!」所以应避逆风而顺风行。如果途中有山，或峭壁、岩石、篱笆、荆棘、流水、沼池，不可能顺风而行，则用衣角扪鼻而行，这是他的行的方法。</p><p>(2)(四方诸相的考察)这里走去的人，不应即刻去看不净相，须先确定方位; 因为所站的一方，若对于所缘不明显，则心亦不适于工作; 所公应该避逸那一方。如果所立之处对于所缘很明显的，则心亦适于工作，故应站在那里。对于逆风和顺风都应避免，站于逆风者未免为尸体的臭气所恼而散乱于心; 站在顺风者，如果那里有非人居留，则未免触怒他们而致灾害ン所以应该稍微避开而在不很多的顺风处站立、如是注意站立，亦不应离尸体过远与过近或在正头方及正足方站立，因为站得过远对于所缘不明显，过近则生恐怖。若站在正头方或正足方，则对一切不净相难得平等的认识。所以不过远过近近而视，当在尸体 的中部适当的地方站立。</p><p><span class=\\\"vism-page\\\">[183]</span></p><p>如是站立之人，「那里并有岩石……蔓藤等相」，当依此说考察四方诸相。其考察的方法如次:若在不净相的周围看见有石头，应该确定这石头的高、低、大、小、赤、黑、白、长及圆等。此后应该观察:「在这个地方是这个石头，这边是不",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%92%8C%E9%A0%86&scope=site",
+          "query": "和顺"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap17.json",
+          "heading": "站内搜索命中",
+          "text": "缘起 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-020\\\">[17-020]</sup> ：「诸比丘，无明缘行......及至......生缘老死」。（2）譬如彼等四人之中，一人先看见蔓的中部，他便割断中部，只拉其上部，取而使用。世尊这样从中间开始而至最后说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-021\\\">[17-021]</sup> ：「对于他的受而欢喜而欢迎而耽著者生起喜，那于受中的喜是取。以取为缘的是有。以有为缘的是生」。（3）譬如四人中的一人，先看见蔓的尾端，便执其尾端，从尾至根，取其全部而使用。世尊亦这样从最后而至最初说缘起 <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-022\\\">[17-022]</sup> ：「我说生缘老死。诸比丘，是否生缘老死，你们的意思怎样？尊师，生缘老死，我们的意思是生缘老死。<span class=\\\"vism-page\\\">[524]</span>我说有缘生......乃至......无明缘行。诸比丘，是否无明缘行，你们的意思怎样？ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-023\\\">[17-023]</sup>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site",
+          "query": "欢迎"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "B. S. omü. 2 B. S. “*vatthaharo. 136 Majjhimanikāyatthakathā petāraṃ paṭipattisampannaṃ bhikkhuṃ pucchanto idaṃ: “Ko nu kho, bhikkhave” ti ādivacanaṃ avoca.\", \"chinese_translation\": \"4. 世尊说了这样的话：“诸比丘，是否安好？”以这些言语对来客作了欢迎后，说了这样的话：“诸比丘，是谁说了这三句开头的话？”据说，那些比丘被世尊以欢迎的方式询问：“诸比丘，是否安好？是否以无疲劳的方式走完了路程？没有因乞食而疲劳吗？你们从何处来，诸比丘？”他们回答说：“我们从释迦族地区迦毗罗卫城村，从生处而来。”那时，世尊既没有询问净饭大王、也没有询问善觉、也没有询问释迦觉、也没有询问途头檀那、也没有询问阿弥头檀那、也没有询问阿弥提耶王妃、也没有询问摩诃波阇波提、也没有询问整个释迦族集会的健康。然而，他自己获得了十种谈论事，并且在那里……（注：原文有省略）询问具足正行的比丘时，说了这样的话：“诸比丘，是谁……”等开头的话。\", \"correction_note\": [ { \"type\": \"model",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A1%E8%BF%8E&scope=site",
+          "query": "欢迎"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：和顺与欢迎\n\n## 直接回答\n根据现有证据，DN33 中明确列出“和顺与欢迎”这一法数条目 [1][2]。其他证据（MN32、MN37、MN49、MN76、MN83、MN108）仅出现“欢迎”或“欢迎你”的表述 [3][4][5][6][7][8]，未涉及“和顺”或“和顺与欢迎”的完整条目。\n\n## 要点展开\n### 和顺与欢迎的出处\n- DN33 明确列出“和顺与欢迎”作为一项法数 [1][2]。\n\n### 其他经文中的“欢迎”\n- 多部中部经文（MN32、MN37、MN49、MN76、MN83、MN108）出现“欢迎”或“欢迎你”的表述 [3][4][5][6][7][8]，但未与“和顺”并列。\n\n## 分歧与张力\n不同来源在表述上存在差异：DN33 将“和顺”与“欢迎”并列为一个条目 [1][2]，而其他经文仅单独使用“欢迎”或“欢迎你” [3][4][5][6][7][8]，未提及“和顺”。这可能反映不同经文对同一概念的不同侧重，但现有证据不足以判断其具体关系。\n\n## 证据覆盖情况\n现有证据覆盖了 DN33 中“和顺与欢迎”的明确列出，以及多部中部经文中“欢迎”的单独出现，但未提供“和顺”在其他经文中的用法，也未解释“和顺”与“欢迎”之间的具体关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 和顺与欢迎 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E\n  > 和顺与欢迎。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E%E3%80%82\n  > 和顺与欢迎。\n- [3] Early Buddhist · 经藏/中部_mn · mn32 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn32&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81\n  > 欢迎！\n- [4] Early Buddhist · 经藏/中部_mn · mn37 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn37&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81\n  > 欢迎！\n- [5] Early Buddhist · 经藏/中部_mn · mn49 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn49&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%E4%BD%A0%EF%BC%81\n  > 欢迎你！\n- [6] Early Buddhist · 经藏/中部_mn · mn76 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn76&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81\n  > 欢迎！\n- [7] Early Buddhist · 经藏/中部_mn · mn83 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn83&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81\n  > 欢迎！\n- [8] Early Buddhist · 经藏/中部_mn · mn108 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn108&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A1%E8%BF%8E%EF%BC%81\n  > 欢迎！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -167,12 +246,21 @@
       "order": 15,
       "label": "和顺与欢迎",
       "members": "和顺与欢迎",
+      "match_members": "和顺与欢迎",
       "member_items": [
-        "和顺与欢迎"
+        "和顺",
+        "欢迎"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "和顺与欢迎。"
+      ],
       "source_text": "和顺与欢迎。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%92%8C%E9%A0%86%E8%88%87%E6%AD%A1%E8%BF%8E",
+      "expanded_points": [
+        "和顺：指友善、顺从的态度，是法数中的一项。",
+        "欢迎：指对他人到来表示接纳和喜悦，与和顺并列。"
+      ]
     }
   ]
 }

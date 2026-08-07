@@ -22,13 +22,13 @@
       "慧武器"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三种武器」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：听闻武器、独居武器、慧武器。[1]\n\n## 所含各法\n### 听闻武器\n经文将「听闻武器」列为「三种武器」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种武器：听闻武器、独居武器、慧武器。。[1]\n### 独居武器\n经文将「独居武器」列为「三种武器」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种武器：听闻武器、独居武器、慧武器。。[1]\n### 慧武器\n经文将「慧武器」列为「三种武器」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种武器：听闻武器、独居武器、慧武器。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三种武器指听闻武器、独居武器、慧武器 [1][2]。其中听闻武器被描述为圣弟子用以舍断不善法、修习善法的工具 [4]。\n\n## 要点展开\n### 三种武器的构成\n- 三种武器为：听闻武器、独居武器、慧武器 [1][2]。\n\n### 听闻武器的功能\n- 听闻武器被比喻为国王边境城市中蓄积的武器，用于内部守护和外部防御，圣弟子以此舍断不善法、修习善法 [4][5]。\n\n## 分歧与张力\n不同来源对“武器”的用法存在差异：DN33 明确列出三种武器（听闻、独居、慧）[1][2]，而其他经文中的“武器”或相关概念（如无恶意、不加害、远离）并未与这三种武器直接对应 [3]，且部分经文提及“三种”但内容不同（如三种傲慢、三种神变）[7][8]，因此不能将这些内容混同。\n\n## 证据覆盖情况\n现有证据明确给出了三种武器的名称 [1][2]，并具体解释了听闻武器的功能 [4][5]，但未详细说明独居武器和慧武器的具体含义或作用。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三种武器",
           "text": "三种武器：听闻武器、独居武器、慧武器。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.7&lang=zh&q=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三种武器",
@@ -446,7 +446,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三种武器\n\n## 直接回答\n三种武器指听闻武器、独居武器、慧武器 [1][2]。其中听闻武器被描述为圣弟子用以舍断不善法、修习善法的工具 [4]。\n\n## 要点展开\n### 三种武器的构成\n- 三种武器为：听闻武器、独居武器、慧武器 [1][2]。\n\n### 听闻武器的功能\n- 听闻武器被比喻为国王边境城市中蓄积的武器，用于内部守护和外部防御，圣弟子以此舍断不善法、修习善法 [4][5]。\n\n## 分歧与张力\n不同来源对“武器”的用法存在差异：DN33 明确列出三种武器（听闻、独居、慧）[1][2]，而其他经文中的“武器”或相关概念（如无恶意、不加害、远离）并未与这三种武器直接对应 [3]，且部分经文提及“三种”但内容不同（如三种傲慢、三种神变）[7][8]，因此不能将这些内容混同。\n\n## 证据覆盖情况\n现有证据明确给出了三种武器的名称 [1][2]，并具体解释了听闻武器的功能 [4][5]，但未详细说明独居武器和慧武器的具体含义或作用。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三种武器 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8%E3%80%82\n  > 三种武器：听闻武器、独居武器、慧武器。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8%EF%BC%9A%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8%E3%80%82\n  > 三种武器：听闻武器、独居武器、慧武器。\n- [3] Early Buddhist · 经藏/相应部_sn · sn45.4 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.4&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%83%A1%E6%84%8F%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E3%80%81%E9%81%A0%E9%9B%A2%E7%82%BA%E5%85%B6%E6%AD%A6%E5%99%A8%EF%BC%8C\n  > 无恶意、不加害、远离为其武器，\n- [4] Early Buddhist · 经藏/增支部_an · an7.67 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an7.67&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E8%81%BD%E8%81%9E%E7%82%BA%E6%AD%A6%E5%99%A8%EF%BC%8C%E8%81%96%E5%BC%9F%E5%AD%90%E6%8D%A8%E6%96%B7%E4%B8%8D%E5%96%84%E6%B3%95%EF%BC%8C%E4%BF%AE%E7%BF%92%E5%96%84%E6%B3%95%EF%BC%9B\n  > 以听闻为武器，圣弟子舍断不善法，修习善法；\n- [5] Early Buddhist · 经藏/增支部_an · an7.67 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an7.67&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8C%B6%E5%A6%82%E5%9C%A8%E5%9C%8B%E7%8E%8B%E9%82%8A%E5%A2%83%E5%9F%8E%E5%B8%82%E4%B8%AD%EF%BC%8C%E7%82%BA%E4%BA%86%E5%85%A7%E9%83%A8%E7%9A%84%E5%AE%88%E8%AD%B7%EF%BC%8C%E7%82%BA%E4%BA%86%E5%A4%96%E9%83%A8%E7%9A%84%E9%98%B2%E7%A6%A6%EF%BC%8C%E8%A8%B1%E5%A4%9A%E6%AD%A6%E5%99%A8%EF%BC%9A%E5%BC%93%E7%AE%AD%E8%88%87%E6%89%8B%E6%8C%81%E6%AD%A6%E5%99%A8%E8%A2%AB%E8%93%84%E7%A9%8D%EF%BC%8C%E5%90%8C%E6%A8%A3%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 犹如在国王边境城市中，为了内部的守护，为了外部的防御，许多武器：弓箭与手持武器被蓄积，同样的，比丘们！\n- [6] Early Buddhist · 经藏/增支部_an · an9.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81\n  > 我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！\n- [7] Early Buddhist · 经藏/增支部_an · an3.39 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这三种傲慢，哪三种呢？\n- [8] Early Buddhist · 经藏/增支部_an · an3.60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这三种神变，哪三种呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +458,24 @@
       "number": 3,
       "order": 44,
       "label": "三种武器",
-      "members": "听闻武器、独居武器、慧武器",
+      "members": "听闻武器、独居武器、慧武器。",
+      "match_members": "听闻武器、独居武器、慧武器",
       "member_items": [
         "听闻武器",
         "独居武器",
         "慧武器"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三种武器：听闻武器、独居武器、慧武器。"
+      ],
       "source_text": "三种武器：听闻武器、独居武器、慧武器。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E6%AD%A6%E5%99%A8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%81%BD%E8%81%9E%E6%AD%A6%E5%99%A8%E3%80%81%E7%8D%A8%E5%B1%85%E6%AD%A6%E5%99%A8%E3%80%81%E6%85%A7%E6%AD%A6%E5%99%A8%E3%80%82",
+      "expanded_points": [
+        "听闻武器：指通过听闻佛法而获得的武器，能帮助圣弟子舍断不善法、修习善法 [4]。",
+        "独居武器：指通过独处禅修而获得的武器，但原文未详细展开其具体作用。",
+        "慧武器：指通过智慧而获得的武器，但原文未详细展开其具体作用。"
+      ]
     }
   ]
 }

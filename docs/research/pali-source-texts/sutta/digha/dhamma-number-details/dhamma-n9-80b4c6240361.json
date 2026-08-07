@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n9-80b4c6240361",
+    "number": 9,
+    "label": "九次第住处",
+    "member_items": [],
+    "group_ids": [
+      "dn33-n9-g5"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "九次第住处"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n\n“九次第住处”是由初禅、第二禅、第三禅、第四禅，以及虚空无边处、识无边处、无所有处、非想非非想处、想受灭依次构成的九种禅定住处 [1]。它表示比丘从离欲开始逐级进入并安住于这些定境，最后达到想受灭 [1]。这一法数标题见于 DN33、DN34 [3][4]；AN9.32 以“有这九次第住处”设问并以“这是九次第住处”作结 [6][2]，AN9.33 则称之为“九次第住处等至” [7][5]。\n\n## 要点展开\n\n### 九个次第成员\n\n- 初禅：离欲、离不善法后，住于有寻、有伺，离而生喜、乐。[1]\n- 第二禅：寻与伺平息后，住于无寻、无伺，定而生喜、乐。[1]\n- 第三禅：喜褪去后住于平静，正念、正知，以身感受乐，圣弟子宣说其“平静、专注、住于乐”。[1]\n- 第四禅：舍断乐与苦，先前喜、忧灭没，住于不苦不乐、由平静而正念遍净。[1]\n- 虚空无边处：超越一切色想，灭有对想，不作意种种想，知“虚空无边”而住。[1]\n- 识无边处：超越虚空无边处，知“识无边”而住。[1]\n- 无所有处：超越识无边处，知“什么都没有”而住。[1]\n- 非想非非想处：超越无所有处而住。[1]\n- 想受灭：超越非想非非想处而住于想受灭。[1]\n\n### 名称与出处\n\n- DN33 与 DN34 均以“九次第住处：学友们！”引出此条 [3][4]。\n- AN9.32 先问“有这九次第住处，那九个呢？”，随后以“这是九次第住处”收束 [6][2]。\n- AN9.33 使用“九次第住处等至”的表述，并说“这些是九次第住处等至” [7][5]。\n\n## 分歧与张力\n\n- 同一法数在不同文献中的用词略有差异：DN33、DN34 与 AN9.32 用“九次第住处” [2][3][4][6]，而 AN9.33 用“九次第住处等至” [5][7]。\n- 另外，AN9.31 还出现“九次第灭” [8][9]。证据只给出该术语和设问/结语，未显示其九项内容，也未说明它与“九次第住处”是同一系列还是另一个系统，因此不能据现有证据将二者等同或区分。\n\n## 证据覆盖情况\n\n证据完整给出了“九次第住处”的九个具体阶段 [1]，并提供了这一术语在 DN33、DN34、AN9.32、AN9.33 中的标题或起讫表述 [2][3][4][5][6][7]。但证据未覆盖 AN9.31“九次第灭”的具体内容及其与“九次第住处”的关系，也未呈现 DN34 在“九次第住处”标题下是否逐字列出与 DN33 相同的九项 [1][4]。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 九次第住处",
+          "text": "九次第住处：学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅。比丘以一切色想的超越，以有对想的灭没，以不作意种种想［而知］：『虚空是无边的』，进入后住于虚空无边处；以一切虚空无边处的超越［而知］：『识是无边的』，进入后住于识无边处；以一切识无边处的超越［而知］：『什么都没有』，进入后住于无所有处；以一切无所有处的超越，进入后住于非想非非想处。以一切非想非非想处的超越，进入后住于想受灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%BE%9E%E9%9B%A2%E6%AC%B2%E3%80%81%E9%9B%A2%E4%B8%8D%E5%96%84%E6%B3%95%E5%BE%8C%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%E9%9B%A2%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E5%88%9D%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%B0%8B%E8%88%87%E4%BC%BA%E7%9A%84%E5%B9%B3%E6%81%AF%EF%BC%8C%E8%87%AA%E4%BF%A1%EF%BC%8C%E4%B8%80%E5%BF%83%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E5%AE%9A%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%96%9C%E7%9A%84%E8%A4%AA%E5%8E%BB%E8%88%87%E4%BD%8F%E6%96%BC%E5%B9%B3%E9%9D%9C%EF%BC%8C%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E6%84%9F%E5%8F%97%E6%A8%82%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E8%81%96%E5%BC%9F%E5%AD%90%E5%AE%A3%E8%AA%AA%EF%BC%9A%E3%80%8E%E4%BB%96%E6%98%AF%E5%B9%B3%E9%9D%9C%E3%80%81%E5%B0%88%E6%B3%A8%E3%80%81%E4%BD%8F%E6%96%BC%E6%A8%82%E8%80%85%E3%80%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E7%A6%AA%EF%BC%9B%E4%BB%A5%E6%A8%82%E7%9A%84%E6%8D%A8%E6%96%B7%E8%88%87%E8%8B%A6%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E5%8F%8A%E4%BB%A5%E4%B9%8B%E5%89%8D%E5%96%9C%E6%82%85%E8%88%87%E6%86%82%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E4%B8%8D"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.32",
+          "text": "这是九次第住处。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "九次第住处：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "九次第住处：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.33",
+          "text": "这些是九次第住处等至。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.32",
+          "text": "有这九次第住处，那九个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.33",
+          "text": "什么是九次第住处等至呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.31",
+          "text": "这是九次第灭。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.31",
+          "text": "有这九次第灭，那九个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "九次第住处",
+          "hits": [
+            {
+              "uid": "an9.32",
+              "collection": "经藏/增支部_an",
+              "title": "次第住处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是九次第住处。",
+              "score": 34.44403529549187,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "九次第住处：学友们！",
+              "score": 31.0112544400056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "九次第住处：学友们！",
+              "score": 31.0112544400056,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.33",
+              "collection": "经藏/增支部_an",
+              "title": "次第住处等至经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是九次第住处等至。",
+              "score": 29.539274528028766,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E3%80%82"
+            },
+            {
+              "uid": "an9.32",
+              "collection": "经藏/增支部_an",
+              "title": "次第住处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这九次第住处，那九个呢？",
+              "score": 28.200700350085995,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an9.33",
+              "collection": "经藏/增支部_an",
+              "title": "次第住处等至经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是九次第住处等至呢？",
+              "score": 28.200700350085995,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an9.31",
+              "collection": "经藏/增支部_an",
+              "title": "次第灭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是九次第灭。",
+              "score": 27.595890248161886,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%E3%80%82"
+            },
+            {
+              "uid": "an9.31",
+              "collection": "经藏/增支部_an",
+              "title": "次第灭经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这九次第灭，那九个呢？",
+              "score": 22.593851884832134,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        }
+      ],
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：九次第住处\n\n## 直接回答\n\n“九次第住处”是由初禅、第二禅、第三禅、第四禅，以及虚空无边处、识无边处、无所有处、非想非非想处、想受灭依次构成的九种禅定住处 [1]。它表示比丘从离欲开始逐级进入并安住于这些定境，最后达到想受灭 [1]。这一法数标题见于 DN33、DN34 [3][4]；AN9.32 以“有这九次第住处”设问并以“这是九次第住处”作结 [6][2]，AN9.33 则称之为“九次第住处等至” [7][5]。\n\n## 要点展开\n\n### 九个次第成员\n\n- 初禅：离欲、离不善法后，住于有寻、有伺，离而生喜、乐。[1]\n- 第二禅：寻与伺平息后，住于无寻、无伺，定而生喜、乐。[1]\n- 第三禅：喜褪去后住于平静，正念、正知，以身感受乐，圣弟子宣说其“平静、专注、住于乐”。[1]\n- 第四禅：舍断乐与苦，先前喜、忧灭没，住于不苦不乐、由平静而正念遍净。[1]\n- 虚空无边处：超越一切色想，灭有对想，不作意种种想，知“虚空无边”而住。[1]\n- 识无边处：超越虚空无边处，知“识无边”而住。[1]\n- 无所有处：超越识无边处，知“什么都没有”而住。[1]\n- 非想非非想处：超越无所有处而住。[1]\n- 想受灭：超越非想非非想处而住于想受灭。[1]\n\n### 名称与出处\n\n- DN33 与 DN34 均以“九次第住处：学友们！”引出此条 [3][4]。\n- AN9.32 先问“有这九次第住处，那九个呢？”，随后以“这是九次第住处”收束 [6][2]。\n- AN9.33 使用“九次第住处等至”的表述，并说“这些是九次第住处等至” [7][5]。\n\n## 分歧与张力\n\n- 同一法数在不同文献中的用词略有差异：DN33、DN34 与 AN9.32 用“九次第住处” [2][3][4][6]，而 AN9.33 用“九次第住处等至” [5][7]。\n- 另外，AN9.31 还出现“九次第灭” [8][9]。证据只给出该术语和设问/结语，未显示其九项内容，也未说明它与“九次第住处”是同一系列还是另一个系统，因此不能据现有证据将二者等同或区分。\n\n## 证据覆盖情况\n\n证据完整给出了“九次第住处”的九个具体阶段 [1]，并提供了这一术语在 DN33、DN34、AN9.32、AN9.33 中的标题或起讫表述 [2][3][4][5][6][7]。但证据未覆盖 AN9.31“九次第灭”的具体内容及其与“九次第住处”的关系，也未呈现 DN34 在“九次第住处”标题下是否逐字列出与 DN33 相同的九项 [1][4]。\n\n## 引用\n- [1] Early Buddhist · DN33 · 九次第住处 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%BE%9E%E9%9B%A2%E6%AC%B2%E3%80%81%E9%9B%A2%E4%B8%8D%E5%96%84%E6%B3%95%E5%BE%8C%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%E9%9B%A2%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E5%88%9D%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%B0%8B%E8%88%87%E4%BC%BA%E7%9A%84%E5%B9%B3%E6%81%AF%EF%BC%8C%E8%87%AA%E4%BF%A1%EF%BC%8C%E4%B8%80%E5%BF%83%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E5%AE%9A%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%96%9C%E7%9A%84%E8%A4%AA%E5%8E%BB%E8%88%87%E4%BD%8F%E6%96%BC%E5%B9%B3%E9%9D%9C%EF%BC%8C%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E6%84%9F%E5%8F%97%E6%A8%82%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E8%81%96%E5%BC%9F%E5%AD%90%E5%AE%A3%E8%AA%AA%EF%BC%9A%E3%80%8E%E4%BB%96%E6%98%AF%E5%B9%B3%E9%9D%9C%E3%80%81%E5%B0%88%E6%B3%A8%E3%80%81%E4%BD%8F%E6%96%BC%E6%A8%82%E8%80%85%E3%80%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E7%A6%AA%EF%BC%9B%E4%BB%A5%E6%A8%82%E7%9A%84%E6%8D%A8%E6%96%B7%E8%88%87%E8%8B%A6%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E5%8F%8A%E4%BB%A5%E4%B9%8B%E5%89%8D%E5%96%9C%E6%82%85%E8%88%87%E6%86%82%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E4%B8%8D\n  > 九次第住处：学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅。比丘以一切色想的超越，以有对想的灭没，以不作意种种想［而知］：『虚空是无边的』，进入后住于虚空无边处；以一切虚空无边处的超越［而知］：『识是无边的』，进入后住于识无边处；以一切识无边处的超越［而知］：『什么都没有』，进入后住于无所有处；以一切无所有处的超越，进入后住于非想非非想处。以一切非想非非想处的超越，进入后住于想受灭。\n- [2] Early Buddhist · 经藏/增支部_an · an9.32 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E3%80%82\n  > 这是九次第住处。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 九次第住处：学友们！\n- [4] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 九次第住处：学友们！\n- [5] Early Buddhist · 经藏/增支部_an · an9.33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E3%80%82\n  > 这些是九次第住处等至。\n- [6] Early Buddhist · 经藏/增支部_an · an9.32 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.32&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F\n  > 有这九次第住处，那九个呢？\n- [7] Early Buddhist · 经藏/增支部_an · an9.33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95%E7%AD%89%E8%87%B3%E5%91%A2%EF%BC%9F\n  > 什么是九次第住处等至呢？\n- [8] Early Buddhist · 经藏/增支部_an · an9.31 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%E3%80%82\n  > 这是九次第灭。\n- [9] Early Buddhist · 经藏/增支部_an · an9.31 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.31&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B9%9D%E6%AC%A1%E7%AC%AC%E6%BB%85%EF%BC%8C%E9%82%A3%E4%B9%9D%E5%80%8B%E5%91%A2%EF%BC%9F\n  > 有这九次第灭，那九个呢？",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n9-g5",
+      "sutta": "dn33",
+      "number": 9,
+      "order": 5,
+      "label": "九次第住处",
+      "members": "学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅。比丘以一切色想的超越，以有对想的灭没，以不作意种种想［而知］：『虚空是无边的』，进入后住于虚空无边处；以一切虚空无边处的超越［而知］：『识是无边的』，进入后住于识无边处；以一切识无边处的超越［而知］：『什么都没有』，进入后住于无所有处；以一切无所有处的超越，进入后住于非想非非想处。以一切非想非非想处的超越，进入后住于想受灭。",
+      "match_members": "学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅",
+      "member_items": [],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "九次第住处：学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅。比丘以一切色想的超越，以有对想的灭没，以不作意种种想［而知］：『虚空是无边的』，进入后住于虚空无边处；以一切虚空无边处的超越［而知］：『识是无边的』，进入后住于识无边处；以一切识无边处的超越［而知］：『什么都没有』，进入后住于无所有处；以一切无所有处的超越，进入后住于非想非非想处。以一切非想非非想处的超越，进入后住于想受灭。"
+      ],
+      "source_text": "九次第住处：学友们！这里，比丘从离欲、离不善法后，进入后住于有寻、有伺，离而生喜、乐的初禅；以寻与伺的平息，自信，一心，进入后住于无寻、无伺，定而生喜、乐的第二禅；以喜的褪去与住于平静，正念、正知，以身体感受乐，进入后住于这圣弟子宣说：『他是平静、专注、住于乐者』的第三禅；以乐的舍断与苦的舍断，及以之前喜悦与忧的灭没，进入后住于不苦不乐，由平静而正念遍净的第四禅。比丘以一切色想的超越，以有对想的灭没，以不作意种种想［而知］：『虚空是无边的』，进入后住于虚空无边处；以一切虚空无边处的超越［而知］：『识是无边的』，进入后住于识无边处；以一切识无边处的超越［而知］：『什么都没有』，进入后住于无所有处；以一切无所有处的超越，进入后住于非想非非想处。以一切非想非非想处的超越，进入后住于想受灭。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B9%9D%E6%AC%A1%E7%AC%AC%E4%BD%8F%E8%99%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%BE%9E%E9%9B%A2%E6%AC%B2%E3%80%81%E9%9B%A2%E4%B8%8D%E5%96%84%E6%B3%95%E5%BE%8C%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E6%9C%89%E5%B0%8B%E3%80%81%E6%9C%89%E4%BC%BA%EF%BC%8C%E9%9B%A2%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E5%88%9D%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%B0%8B%E8%88%87%E4%BC%BA%E7%9A%84%E5%B9%B3%E6%81%AF%EF%BC%8C%E8%87%AA%E4%BF%A1%EF%BC%8C%E4%B8%80%E5%BF%83%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E7%84%A1%E5%B0%8B%E3%80%81%E7%84%A1%E4%BC%BA%EF%BC%8C%E5%AE%9A%E8%80%8C%E7%94%9F%E5%96%9C%E3%80%81%E6%A8%82%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%A6%AA%EF%BC%9B%E4%BB%A5%E5%96%9C%E7%9A%84%E8%A4%AA%E5%8E%BB%E8%88%87%E4%BD%8F%E6%96%BC%E5%B9%B3%E9%9D%9C%EF%BC%8C%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E7%9F%A5%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E6%84%9F%E5%8F%97%E6%A8%82%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E8%81%96%E5%BC%9F%E5%AD%90%E5%AE%A3%E8%AA%AA%EF%BC%9A%E3%80%8E%E4%BB%96%E6%98%AF%E5%B9%B3%E9%9D%9C%E3%80%81%E5%B0%88%E6%B3%A8%E3%80%81%E4%BD%8F%E6%96%BC%E6%A8%82%E8%80%85%E3%80%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E7%A6%AA%EF%BC%9B%E4%BB%A5%E6%A8%82%E7%9A%84%E6%8D%A8%E6%96%B7%E8%88%87%E8%8B%A6%E7%9A%84%E6%8D%A8%E6%96%B7%EF%BC%8C%E5%8F%8A%E4%BB%A5%E4%B9%8B%E5%89%8D%E5%96%9C%E6%82%85%E8%88%87%E6%86%82%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%8C%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E4%B8%8D",
+      "expanded_points": [
+        "初禅：离欲、离不善法后，住于有寻、有伺，离而生喜、乐。",
+        "第二禅：寻与伺平息后，住于无寻、无伺，定而生喜、乐。",
+        "第三禅：喜褪去后住于平静，正念、正知，以身感受乐，圣弟子宣说其“平静、专注、住于乐”。",
+        "第四禅：舍断乐与苦，先前喜、忧灭没，住于不苦不乐、由平静而正念遍净。",
+        "虚空无边处：超越一切色想，灭有对想，不作意种种想，知“虚空无边”而住。",
+        "识无边处：超越虚空无边处，知“识无边”而住。",
+        "无所有处：超越识无边处，知“什么都没有”而住。",
+        "非想非非想处：超越无所有处而住。",
+        "想受灭：超越非想非非想处而住于想受灭。"
+      ]
+    }
+  ]
+}

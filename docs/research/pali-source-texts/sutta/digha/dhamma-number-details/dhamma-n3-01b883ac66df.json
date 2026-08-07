@@ -22,13 +22,13 @@
       "增上慧学"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三学」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：增上戒学、增上心学、增上慧学。[1]\n\n## 所含各法\n### 增上戒学\n经文将「增上戒学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《三学经第一》命中：什么是增上戒学？。[3]\n### 增上心学\n经文将「增上心学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《三学经第一》命中：什么是增上心学？。[4]\n### 增上慧学\n经文将「增上慧学」列为「三学」的一个成员。Early Buddhist 用该名词检索时，在《止经》命中：非观法增上慧的得到者吗？。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三学指增上戒学、增上心学、增上慧学 [1][6][8]。这些内容在《DN33》及《增支部》的《三学经》中均有提及 [1][2][7]。\n\n## 要点展开\n### 三学的构成\n三学由增上戒学、增上心学、增上慧学组成 [1][6][8]。\n\n### 经典出处\n《DN33》明确列出三学 [1]；《增支部》AN 3.89 和 AN 3.90 均以“三学”为主题 [2][7]，并确认“这些是三学” [6][8]。\n\n### 具体内容\n证据中提出了“什么是增上戒学？”和“什么是增上心学？”的问题 [3][4]，但未给出具体定义。\n\n## 分歧与张力\n不同经典对三学的表述基本一致，未见明显分歧。\n\n## 证据覆盖情况\n现有证据覆盖了三学的名称、构成及经典出处，但未详细解释每一学的具体内容，也未涉及增上慧学的定义。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三学",
           "text": "三学：增上戒学、增上心学、增上慧学。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -101,9 +101,39 @@
           "label": "Early Buddhist · 经藏/增支部_an · an3.89",
           "text": "这被称为增上戒学。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-buddhism-reflections.md",
+          "text": "律对此类行为的判词从未含糊；汉传、藏传部分案例则属于后者，教义本身构成了辩护的一部分。 --- ## 一、最短总论：叙事线与结论方向 这条线索不是\"某一个法师出了问题\"，也不是\"某一派佛教有问题\"这么简单。完整的因果链和结论方向是： 1. 现代汉传佛教长期缺乏可执行、可检验、能把闻思与修证连接起来的大众修学体系——但用巴利三藏的标准看，**汉传真正缺失的不是\"体系知识\"（天台判教、华严五教这类理论体系极其精密），而是\"戒-定-慧三学中'定学'（心清净）的活传承\"**。 2. 藏传格鲁派\"道次第\"（Lamrim，宗喀巴《菩提道次第广论》一系专有名词，与上座部无关）因其体系性、次第感、组织训练能力，被部分汉传弘法者视为可借鉴资源。 3. 学诚和龙泉寺把\"道次第式组织化修学\"与强师徒权威、义工动员、互联网弘法、寺院行政权力结合，形成高度集权的宗教组织，这是律藏\"僧团共有、羯磨共治\"精神在汉传丛林制度千年演变中被架空的当代顶点表现。 4. 2018 年学诚事件暴露的不是单点丑闻，而是\"宗教权威、组织封闭、弟子依附、财务与工程权力、戒律监督失灵\"叠加后的系统性风险；用巴利三藏对圣者行为的标准检验：**任何需要神学话语来\"解释\"或\"合理化\"的行为，本身就已经证明行为者不是圣者**，这条原则贯穿本文对学诚、对",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-quran.md",
+          "text": "B%E5%8E%86%E5%8F%B2%E8%AF%AD%E5%A2%83%E7%A0%94%E7%A9%B6) --- ## 维度一：比较分析法 ### 1.1 方法论说明 **上座部佛法的基本框架**（来自巴利三藏 + 《清净道论》） |维度|内容| |---|---| |**核心假设**|心（citta）的觉知性为根本；轮回是由于心的染着与无明| |**真理结构**|四圣谛：苦、苦集、苦灭、趣苦灭道| |**方法论**|三学：增上戒、增上心（禅定）、增上慧（观智）| |**终极目标**|涅槃（无余涅槃）= 心的完全解脱，烦恼永灭| |**认识论**|直观与证悟（亲证实相）优于文字理解| |**时间观**|轮回无始，但每一生都有当下修行的机会| |**因果律**|业力（karma）= 行为的自然后果，不依靠外力| **古兰经的基本框架**（基于伊斯兰学术传统） |维度|内容| |---|---| |**核心假设**|真主（Allah）是唯一、绝对、超越的创造者；人被创造用以崇拜| |**真理结构**|启示真理：真主的唯一性（Tawhid）、先知制度、末世审判| |**方法论**|五功（信仰、念礼、课税、封斋、朝觐）+ 遵循先知言行（Sunnah）| |**终极目标**|天堂（Janna",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "）。 **四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "因见、神造见、无因见），建立\"业自己有\"（kammassakatā）的正见，是全书的伦理与信仰基石。 3. **宇宙与真理板块**——《法则手册》（五种自然法则、二谛、大劫、不可思议之事、三界、缘起）与《四谛手册》（对四圣谛尤其是苦谛的极详尽展开），二者从宏观宇宙论与微观身心论两个角度说明\"苦\"的真相。 4. **实修板块**——《菩提分手册》（三十七道品的系统解说）、《道支手册》（八正道的具体修法，尤其是如何在日常生活中次第建立戒定慧三学）、《五种光明》（以\"五种愚痴、五种光明\"的框架总摄前面各手册的内观次第）。附录则以问答与专论形式，处理业力遗传等具体问题，以及证悟无我之后现世与来世的巨大利益。 原书夹杂大量未译的巴利术语（因为雷迪大长老习惯用同义堆叠的方式反复申说一个概念），并附有大量译注。以下总结在忠实原意的基础上，尽量把巴利术语义译并保留，重要的原文引述会标出，同一主题在不同手册中重复出现的内容（例如\"业自己有\"\"无我\"\"缘起\"等）将在各章节中适当整合、避免冗余复述，并按照\"总—分—修\"的逻辑重新梳理顺序。 --- ## 第一部分：《毗婆舍那手册》（Vipassanā Dīpanī）——内观手册 ### 一、三种颠倒（Vipallāsa）与三种邪思（Maññanā） 开篇即点出一切轮",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "材\"是**不动摇的心解脱**。因此，修行不能把外在名闻、道德成就、禅定经验或知见成就误认作终点。 3. **道相应**：明确指出修行的目的是\"离欲……最后证入无余涅槃\"，而八正道正是达成此目标的途径。 ### 八正道：非按部就班的步骤，而是同时运作的要素 菩提比丘特别强调一个常见误解：八正道不是\"走完第一步才走第二步\"的线性流程，而更像**\"一根电缆由八根电线交织而成\"**——理想状态下，八个道支同时具足、彼此增上。八正道通常归纳为三学： - 戒（正语、正业、正命） - 定（正精进、正念、正定） - 慧（正见、正思维） ### 善知识：修行不是孤军奋战 与世人常以为\"修行全靠自己精进\"的观念相反，佛陀对阿难说：善知识不是\"精神生活的一半\"，而是**\"全部\"**——因为证得解脱依赖于与良师益友的紧密关系，而非纯粹的闭门造车。 ### 次第修习：以象足迹为喻的完整训练蓝图 本章篇幅最长、内容最丰富的部分，是《象足迹譬喻小经》所展现的\"次第修习\"（anupubbasikkhā）——一套完整的从凡夫到阿罗汉的训练蓝图： > 婆罗门若奴索尼向游行者必罗低葛请教何以对佛陀如此崇敬，必罗低葛以捕象师的比喻回答：熟练的捕象师见到森林中巨大的象足迹，尚不敢骤下\"这是大龙象\"的结论，因为驼背母象、高母象都可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三学",
@@ -446,7 +476,52 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-buddhism-reflections.md",
+          "heading": "站内搜索命中",
+          "text": "律对此类行为的判词从未含糊；汉传、藏传部分案例则属于后者，教义本身构成了辩护的一部分。 --- ## 一、最短总论：叙事线与结论方向 这条线索不是\"某一个法师出了问题\"，也不是\"某一派佛教有问题\"这么简单。完整的因果链和结论方向是： 1. 现代汉传佛教长期缺乏可执行、可检验、能把闻思与修证连接起来的大众修学体系——但用巴利三藏的标准看，**汉传真正缺失的不是\"体系知识\"（天台判教、华严五教这类理论体系极其精密），而是\"戒-定-慧三学中'定学'（心清净）的活传承\"**。 2. 藏传格鲁派\"道次第\"（Lamrim，宗喀巴《菩提道次第广论》一系专有名词，与上座部无关）因其体系性、次第感、组织训练能力，被部分汉传弘法者视为可借鉴资源。 3. 学诚和龙泉寺把\"道次第式组织化修学\"与强师徒权威、义工动员、互联网弘法、寺院行政权力结合，形成高度集权的宗教组织，这是律藏\"僧团共有、羯磨共治\"精神在汉传丛林制度千年演变中被架空的当代顶点表现。 4. 2018 年学诚事件暴露的不是单点丑闻，而是\"宗教权威、组织封闭、弟子依附、财务与工程权力、戒律监督失灵\"叠加后的系统性风险；用巴利三藏对圣者行为的标准检验：**任何需要神学话语来\"解释\"或\"合理化\"的行为，本身就已经证明行为者不是圣者**，这条原则贯穿本文对学诚、对",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        },
+        {
+          "source": "docs/research/two-religions-quran.md",
+          "heading": "站内搜索命中",
+          "text": "B%E5%8E%86%E5%8F%B2%E8%AF%AD%E5%A2%83%E7%A0%94%E7%A9%B6) --- ## 维度一：比较分析法 ### 1.1 方法论说明 **上座部佛法的基本框架**（来自巴利三藏 + 《清净道论》） |维度|内容| |---|---| |**核心假设**|心（citta）的觉知性为根本；轮回是由于心的染着与无明| |**真理结构**|四圣谛：苦、苦集、苦灭、趣苦灭道| |**方法论**|三学：增上戒、增上心（禅定）、增上慧（观智）| |**终极目标**|涅槃（无余涅槃）= 心的完全解脱，烦恼永灭| |**认识论**|直观与证悟（亲证实相）优于文字理解| |**时间观**|轮回无始，但每一生都有当下修行的机会| |**因果律**|业力（karma）= 行为的自然后果，不依靠外力| **古兰经的基本框架**（基于伊斯兰学术传统） |维度|内容| |---|---| |**核心假设**|真主（Allah）是唯一、绝对、超越的创造者；人被创造用以崇拜| |**真理结构**|启示真理：真主的唯一性（Tawhid）、先知制度、末世审判| |**方法论**|五功（信仰、念礼、课税、封斋、朝觐）+ 遵循先知言行（Sunnah）| |**终极目标**|天堂（Janna",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "）。 **四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "因见、神造见、无因见），建立\"业自己有\"（kammassakatā）的正见，是全书的伦理与信仰基石。 3. **宇宙与真理板块**——《法则手册》（五种自然法则、二谛、大劫、不可思议之事、三界、缘起）与《四谛手册》（对四圣谛尤其是苦谛的极详尽展开），二者从宏观宇宙论与微观身心论两个角度说明\"苦\"的真相。 4. **实修板块**——《菩提分手册》（三十七道品的系统解说）、《道支手册》（八正道的具体修法，尤其是如何在日常生活中次第建立戒定慧三学）、《五种光明》（以\"五种愚痴、五种光明\"的框架总摄前面各手册的内观次第）。附录则以问答与专论形式，处理业力遗传等具体问题，以及证悟无我之后现世与来世的巨大利益。 原书夹杂大量未译的巴利术语（因为雷迪大长老习惯用同义堆叠的方式反复申说一个概念），并附有大量译注。以下总结在忠实原意的基础上，尽量把巴利术语义译并保留，重要的原文引述会标出，同一主题在不同手册中重复出现的内容（例如\"业自己有\"\"无我\"\"缘起\"等）将在各章节中适当整合、避免冗余复述，并按照\"总—分—修\"的逻辑重新梳理顺序。 --- ## 第一部分：《毗婆舍那手册》（Vipassanā Dīpanī）——内观手册 ### 一、三种颠倒（Vipallāsa）与三种邪思（Maññanā） 开篇即点出一切轮",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "材\"是**不动摇的心解脱**。因此，修行不能把外在名闻、道德成就、禅定经验或知见成就误认作终点。 3. **道相应**：明确指出修行的目的是\"离欲……最后证入无余涅槃\"，而八正道正是达成此目标的途径。 ### 八正道：非按部就班的步骤，而是同时运作的要素 菩提比丘特别强调一个常见误解：八正道不是\"走完第一步才走第二步\"的线性流程，而更像**\"一根电缆由八根电线交织而成\"**——理想状态下，八个道支同时具足、彼此增上。八正道通常归纳为三学： - 戒（正语、正业、正命） - 定（正精进、正念、正定） - 慧（正见、正思维） ### 善知识：修行不是孤军奋战 与世人常以为\"修行全靠自己精进\"的观念相反，佛陀对阿难说：善知识不是\"精神生活的一半\"，而是**\"全部\"**——因为证得解脱依赖于与良师益友的紧密关系，而非纯粹的闭门造车。 ### 次第修习：以象足迹为喻的完整训练蓝图 本章篇幅最长、内容最丰富的部分，是《象足迹譬喻小经》所展现的\"次第修习\"（anupubbasikkhā）——一套完整的从凡夫到阿罗汉的训练蓝图： > 婆罗门若奴索尼向游行者必罗低葛请教何以对佛陀如此崇敬，必罗低葛以捕象师的比喻回答：熟练的捕象师见到森林中巨大的象足迹，尚不敢骤下\"这是大龙象\"的结论，因为驼背母象、高母象都可",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        },
+        {
+          "source": "docs/research/theravada-modern/noble-eightfold-path-summary.md",
+          "heading": "站内搜索命中",
+          "text": "会制造新的不满；苦行误以为身体是束缚的根源，却没有击中真正的问题。佛陀批判纵欲，是因为它粗浅、短暂、不导向目标；他批判苦行，是因为它把身体当作敌人，却没有看见真正的束缚在于被贪嗔痴占据的心。中道不是折中，而是绕开二者的错误，把身体作为修行工具，把心作为训练对象，把智慧作为最终断除无明的刀锋。 ## 第二章：正见 正见是全道的先导。作者先澄清：八支不是一个做完再做下一个的线性清单，更像一根绳索中互相缠绕的八股。为了训练方便，它们可归入三学：戒、定、慧。戒让行为不再成为烦恼的出口；定让心不再散乱；慧则直接对治无明。 这里出现一个表面矛盾：三学中“慧”在最后，八正道中“正见”却在第一。作者的解释很关键：修行一开始需要初步正见，否则不知道为何修、向哪里修；修行成熟后，又会生起更高层次的正见，即直接洞见四圣谛。换言之，**正见既是入口的地图，也是终点的亲见**。 作者用 “**forerunner and guide**” 形容正见。没有正见而修行，就像没有地图就上路，看似在移动，实际上可能只是原地打转，甚至离目标越来越远。正见让人知道自己的起点、目的地、沿途地标和危险区域。 作者把正见分为两层： 1. **世间正见**：理解业与果。人不是被偶然命运抛来抛去，而是行为的继承者。身体、语言、意念的行为会",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%AD%B8&scope=site",
+          "query": "三学"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三学\n\n## 直接回答\n三学指增上戒学、增上心学、增上慧学 [1][6][8]。这些内容在《DN33》及《增支部》的《三学经》中均有提及 [1][2][7]。\n\n## 要点展开\n### 三学的构成\n三学由增上戒学、增上心学、增上慧学组成 [1][6][8]。\n\n### 经典出处\n《DN33》明确列出三学 [1]；《增支部》AN 3.89 和 AN 3.90 均以“三学”为主题 [2][7]，并确认“这些是三学” [6][8]。\n\n### 具体内容\n证据中提出了“什么是增上戒学？”和“什么是增上心学？”的问题 [3][4]，但未给出具体定义。\n\n## 分歧与张力\n不同经典对三学的表述基本一致，未见明显分歧。\n\n## 证据覆盖情况\n现有证据覆盖了三学的名称、构成及经典出处，但未详细解释每一学的具体内容，也未涉及增上慧学的定义。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三学 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82\n  > 三学：增上戒学、增上心学、增上慧学。\n- [2] Early Buddhist · 经藏/增支部_an · an3.89 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%B8%80\n  > 三学经第一\n- [3] Early Buddhist · 经藏/增支部_an · an3.89 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%EF%BC%9F\n  > 什么是增上戒学？\n- [4] Early Buddhist · 经藏/增支部_an · an3.89 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%EF%BC%9F\n  > 什么是增上心学？\n- [5] Early Buddhist · 经藏/增支部_an · an10.54 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.54&lang=zh&q=%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9D%9E%E8%A7%80%E6%B3%95%E5%A2%9E%E4%B8%8A%E6%85%A7%E7%9A%84%E5%BE%97%E5%88%B0%E8%80%85%E5%97%8E%EF%BC%9F\n  > 非观法增上慧的得到者吗？\n- [6] Early Buddhist · 经藏/增支部_an · an3.89 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.89&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82\n  > 这些是三学。\n- [7] Early Buddhist · 经藏/增支部_an · an3.90 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E5%AD%B8%E7%B6%93%E7%AC%AC%E4%BA%8C\n  > 三学经第二\n- [8] Early Buddhist · 经藏/增支部_an · an3.90 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.90&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E5%AD%B8%E3%80%82\n  > 这些是三学。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +531,24 @@
       "number": 3,
       "order": 47,
       "label": "三学",
-      "members": "增上戒学、增上心学、增上慧学",
+      "members": "增上戒学、增上心学、增上慧学。",
+      "match_members": "增上戒学、增上心学、增上慧学",
       "member_items": [
         "增上戒学",
         "增上心学",
         "增上慧学"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三学：增上戒学、增上心学、增上慧学。"
+      ],
       "source_text": "三学：增上戒学、增上心学、增上慧学。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%AD%B8&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%A2%9E%E4%B8%8A%E6%88%92%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E5%BF%83%E5%AD%B8%E3%80%81%E5%A2%9E%E4%B8%8A%E6%85%A7%E5%AD%B8%E3%80%82",
+      "expanded_points": [
+        "增上戒学：三学之一，指戒的增上修习。",
+        "增上心学：三学之一，指心的增上修习。",
+        "增上慧学：三学之一，指慧的增上修习。"
+      ]
     }
   ]
 }

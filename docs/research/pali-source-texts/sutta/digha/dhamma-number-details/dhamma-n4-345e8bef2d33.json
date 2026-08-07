@@ -24,13 +24,13 @@
       "平等"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四摄事」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：布施、爱语、利行、平等。[1]\n\n## 所含各法\n### 布施\n经文将「布施」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《布施事经》命中：布施事经。[3]\n### 爱语\n经文将「爱语」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《相经》命中：「布施与利行，爱语与平等，。[4]\n### 利行\n经文将「利行」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《相经》命中：「布施与利行，爱语与平等，。[4]\n### 平等\n经文将「平等」列为「四摄事」的一个成员。Early Buddhist 用该名词检索时，在《惭经》命中：获得苦的结束后，在不平等中平等地行。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 31 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四摄事包括布施、爱语、利行、平等四项 [1][2]。其中“利行”的具体内涵在部分经典中有进一步阐释 [6][7]。\n\n## 要点展开\n### 四摄事的组成\n- 四摄事为布施、爱语、利行、平等 [1][2]。\n- 有经典以“布施与利行，爱语与平等”的次序列举 [4]。\n\n### 利行的具体内涵\n- “利行”指：无戒立戒，无信令信，悭者令舍，恶智令建立正智 [6][7]。\n\n## 分歧与张力\n- 关于四摄事的次序，[1][2] 列为“布施、爱语、利行、平等”，而 [4] 列为“布施、利行、爱语、平等”，次序略有不同，但内容一致。\n\n## 证据覆盖情况\n现有证据明确给出了四摄事的名称和利行的具体解释，但未涉及其他三项（布施、爱语、平等）的详细定义或实践方法。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四摄事",
           "text": "四摄事：布施、爱语、利行、平等。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -135,7 +135,7 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B9%B3%E7%AD%89&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四摄事",
@@ -516,7 +516,9 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%B8%83%E6%96%BD&scope=site",
           "query": "布施"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：四摄事\n\n## 直接回答\n四摄事包括布施、爱语、利行、平等四项 [1][2]。其中“利行”的具体内涵在部分经典中有进一步阐释 [6][7]。\n\n## 要点展开\n### 四摄事的组成\n- 四摄事为布施、爱语、利行、平等 [1][2]。\n- 有经典以“布施与利行，爱语与平等”的次序列举 [4]。\n\n### 利行的具体内涵\n- “利行”指：无戒立戒，无信令信，悭者令舍，恶智令建立正智 [6][7]。\n\n## 分歧与张力\n- 关于四摄事的次序，[1][2] 列为“布施、爱语、利行、平等”，而 [4] 列为“布施、利行、爱语、平等”，次序略有不同，但内容一致。\n\n## 证据覆盖情况\n现有证据明确给出了四摄事的名称和利行的具体解释，但未涉及其他三项（布施、爱语、平等）的详细定义或实践方法。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四摄事 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82\n  > 四摄事：布施、爱语、利行、平等。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%94%9D%E4%BA%8B%EF%BC%9A%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82\n  > 四摄事：布施、爱语、利行、平等。\n- [3] Early Buddhist · 经藏/增支部_an · an8.33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an8.33&lang=zh&q=%E5%B8%83%E6%96%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B8%83%E6%96%BD%E4%BA%8B%E7%B6%93\n  > 布施事经\n- [4] Early Buddhist · 经藏/长部_dn · dn30 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn30&lang=zh&q=%E6%84%9B%E8%AA%9E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E3%80%8C%E5%B8%83%E6%96%BD%E8%88%87%E5%88%A9%E8%A1%8C%EF%BC%8C%E6%84%9B%E8%AA%9E%E8%88%87%E5%B9%B3%E7%AD%89%EF%BC%8C\n  > 「布施与利行，爱语与平等，\n- [5] Early Buddhist · 经藏/相应部_sn · sn1.18 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn1.18&lang=zh&q=%E5%B9%B3%E7%AD%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%8D%B2%E5%BE%97%E8%8B%A6%E7%9A%84%E7%B5%90%E6%9D%9F%E5%BE%8C%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%B9%B3%E7%AD%89%E4%B8%AD%E5%B9%B3%E7%AD%89%E5%9C%B0%E8%A1%8C%E3%80%82\n  > 获得苦的结束后，在不平等中平等地行。\n- [6] Early Buddhist · 经藏/小部_kn · kp5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82\n  > 自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。\n- [7] Early Buddhist · 经藏/小部_kn · snp2.4 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=snp2.4&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E8%87%AA%E6%8C%81%E6%AD%A3%E8%AA%93%E9%A1%98%EF%BC%9A%E5%8D%B3%E3%80%8C%E5%9B%9B%E6%94%9D%E4%BA%8B%E3%80%8D%E7%9A%84%E3%80%8C%E5%88%A9%E8%A1%8C%E3%80%8D%EF%BC%9A%E7%84%A1%E6%88%92%E7%AB%8B%E6%88%92%EF%BC%8C%E7%84%A1%E4%BF%A1%E4%BB%A4%E4%BF%A1%EF%BC%8C%E6%85%B3%E8%80%85%E4%BB%A4%E6%8D%A8%EF%BC%8C%E6%83%A1%E6%99%BA%E4%BB%A4%E5%BB%BA%E7%AB%8B%E6%AD%A3%E6%99%BA%E3%80%82\n  > 自持正誓愿：即「四摄事」的「利行」：无戒立戒，无信令信，悭者令舍，恶智令建立正智。\n- [8] Early Buddhist · 经藏/长部_dn · dn16 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%A4%A7%E8%BF%A6%E8%91%89%E7%9A%84%E4%BA%8B\n  > 大迦叶的事",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -526,7 +528,8 @@
       "number": 4,
       "order": 40,
       "label": "四摄事",
-      "members": "布施、爱语、利行、平等",
+      "members": "布施、爱语、利行、平等。",
+      "match_members": "布施、爱语、利行、平等",
       "member_items": [
         "布施",
         "爱语",
@@ -534,8 +537,17 @@
         "平等"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四摄事：布施、爱语、利行、平等。"
+      ],
       "source_text": "四摄事：布施、爱语、利行、平等。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%94%9D%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%B8%83%E6%96%BD%E3%80%81%E6%84%9B%E8%AA%9E%E3%80%81%E5%88%A9%E8%A1%8C%E3%80%81%E5%B9%B3%E7%AD%89%E3%80%82",
+      "expanded_points": [
+        "布施：四摄事之一，指给予、施舍。",
+        "爱语：四摄事之一，指亲切、慈爱的语言。",
+        "利行：四摄事之一，指利益他人的行为，如无戒立戒、无信令信等。",
+        "平等：四摄事之一，指平等对待一切众生。"
+      ]
     }
   ]
 }

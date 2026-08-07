@@ -28,13 +28,13 @@
       "识取蕴"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「五取蕴」属于 5 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。[1]\n- DN34：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。[2]\n\n## 所含各法\n### 色取蕴\n经文将「色取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 受取蕴\n经文将「受取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 想取蕴\n经文将「想取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《象足迹譬喻大经》命中：凡像这样存在的想摄入于想取蕴中；。[5]\n### 行取蕴\n经文将「行取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n### 识取蕴\n经文将「识取蕴」列为「五取蕴」的一个成员。Early Buddhist 用该名词检索时，在《取［蕴］之遍轮转经》命中：色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n五取蕴是色取蕴、受取蕴、想取蕴、行取蕴、识取蕴这五类[1][2][4]。在《DN34》中，五取蕴被列为“应该被遍知的五法”[2]。\n\n## 要点展开\n### 定义与构成\n- 五取蕴包括色取蕴、受取蕴、想取蕴、行取蕴、识取蕴[1][2][4]。\n- 《DN33》和《DN34》均明确列出这五者[1][2]。\n\n### 在经典中的定位\n- 《DN34》将五取蕴归为“应该被遍知的五法”[2]。\n- 其他经典也提及五取蕴，如《小部》[3]、《相应部》[4][8]、《中部》[6]、《增支部》[7]。\n\n### 具体说明\n- 《中部》提到“想摄入于想取蕴中”，说明想取蕴与想的关系[5]。\n\n## 分歧与张力\n不同经典对五取蕴的列举一致，但《DN34》特别强调其作为“应该被遍知”的法，而其他经典未明确此定位[2]。\n\n## 证据覆盖情况\n现有证据覆盖了五取蕴的名称、构成及其在《DN34》中的定位，但未详细解释每一取蕴的具体含义或修行意义。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 五取蕴",
           "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
         },
         {
           "kind": "source",
@@ -107,9 +107,39 @@
           "label": "Early Buddhist · 经藏/中部_mn · mn109",
           "text": "即：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%8D%B3%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sacca）** 苦的根源是渴爱（taṇhā）。渴爱分三种：欲爱（kāma-taṇhā）、有爱（bhava-taṇhā）、无有爱（vibhava-taṇhā）。《增支部》完整引文明示，整个十二缘起链均属集谛：从无明到爱到取到有，皆是苦聚的升起原因。《阿毗达摩论》进一步扩展：不只爱，一切烦恼乃至能导致轮转的善业，广义上都是集谛。 **三",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "text": "三位使者\"，错过提醒的人终将在地狱受\"五种系缚刑罚\"之苦。 **2. 迷者的苦难——凡夫与圣弟子的分野** 本节不再谈身体上不可避免的老死，而谈**心理层面可以避免的\"第二支箭\"**。箭经的比喻极为精妙：\"犹如他们如果以箭射男子，如果接着以第二支箭射中他……\"未受教导的凡夫身苦之外又添心苦；已受教导的圣弟子\"感受一受：身的受而无心的受\"。同样的区分应用在\"八风\"（得失、誉毁、称讥、乐苦）上：凡夫随境浮沉，圣弟子\"心如止水\"。再进一步，五取蕴（色受想行识）的变异也是痛苦之源——凡夫因执取五蕴为\"我\"而战栗恐怖，圣弟子因不执取而\"经由不执取而无战栗\"。 **3. 纷乱的世界——暴力与纷争的根源** 本节追问社会冲突的根本原因，四则经文层层剥茧：在家人因\"欲\"而诤，出家人因\"见\"而诤；帝释天问佛，佛陀揭示嫉妒悭吝源于\"可爱、不可爱\"，再溯源到\"意欲\"，再溯源到\"寻\"，最终溯源到\"虚妄想\"（papañca，戏论/妄想分别）；因缘大经给出一条完整的因果暗链：**\"缘于受有渴爱；缘于渴爱而有遍求……缘于守护之故而有拿杖、拿刀、斗诤……\"**；不善根经则把一切暴力压迫归结于贪、嗔、痴三不善根：\"凡贪欲者被贪欲征服，心被占据……我是有力量者，我需要力量。\" **4. 轮回没有第一因** 本章压轴的四则譬喻经文（草",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "text": "三遍知的定义： - **知遍知（bata paribba）**：以名色分别智与缘摄受智辨明一切色法、名法及其因，重点是清楚知道所观对象究竟是什么。 - **度遍知（tirana paribba）**：从思惟智至生灭随观智，审察行法的无常、苦、无我，重点是以三相衡量与透视行法。 - **断遍知（pahana paribba）**：从坏灭随观智开始，暂时断除相应烦恼，最终以圣道彻底根除。 **「必须先透彻与毫无遗漏地辨明这作为观禅目标的五取蕴。」** #### 二、二十八种色法的完整体系 **18种真实色（自性色）：** - 四大（地水火风） - 五净色（眼耳鼻舌身净色） - 四境色（颜色、声、香、味）——触境由地火风三界组成 - 两种性根色（女根、男根） - 心色（意界与意识界的所依） - 命根色（维持业生色的生命） - 食色（段食中的食素） 18种真实色亦名：自性色、有相色（具三相）、完色（以业心时节食为因）、色色（强度变化的真实色）、思惟色（适于观禅目标）。 **10种非真实色：** - 空界（限制色）：色聚间的空间 - 两种表色：身表（身体动作）、语表（说话动作） - 五种变化色：色轻快性、色柔软性、色适应性（另加身表语表） - 四种相色：色积集（生时）、色相续（住时）、色老性（熟时",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "### 第五部分：五蕴的分类与五种蕴智（XIV.185–221） 第十四章后半段还从《毗崩伽》的分类继续说明五蕴： - 依过去、未来、现在，内、外，粗、细，劣、胜，远、近等十一种方式确定五蕴；其中“过去/现在/未来”还可依有情一生、相续、时段和刹那作不同层次的说明（XIV.185–196）。这些分类不能彼此混用，例如同一感受依种类、个别自性、修行者是否有等至及有漏/无漏，粗细判定可能不同（XIV.197–209）。 - “五蕴”与“五取蕴”须区分：后者指受漏及取所依的蕴，不能把一切五蕴无条件等同于五取蕴（XIV.210–215）。 - 原文还解释五蕴何以不多不少：相似的有为法可归入五组，五组是执取“我/我所”的最大范围，并能包含其他分类的蕴；并以病室、疾病、诱发、错误依止、病人等比喻说明五取蕴之间的关系（XIV.216–221）。 这部分把前面的五蕴定义推进到分类边界、取蕴范围和比喻解释；不能以 XIV.132 的行蕴分析作为本章结尾。 ### 本章总结（编者归纳） 第十四章通过六问式的系统分析，建立了智慧篇的概念框架，并通过五蕴的详细分析，将整个\"人\"（或任何有情众生）分解为五类现象聚合——色、受、想、行、识——没有任何一个聚合构成\"自我\"或\"灵魂\"，它们都是无常、苦和无自性（anattā）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/psychology/bicameral-mind-origin.md",
+          "text": "hāna Sutta): ``` \"Bhikkhu lives contemplating mind as mind (citte cittānupassī), ardent, clearly comprehending and mindful...\" ``` 严格说，MN 10 的四念处不是\"在意识中观察意识\"，而是观察身、受、心、法。其中\"心念处\"观察的是 citta 的状态；\"识\"（viññāṇa）作为五蕴之一，出现在法念处的五取蕴分析中。这里需要区分： - **感知功能** (cognitive function): 对感官对象的纯粹觉知 - **六识系统**: 眼识、耳识、鼻识、舌识、身识、意识——各有特定对象 - **缘起链条**的一环: 不是主人，而是过程中的一个节点 **关键经文** (SN 12.2《缘起分析经》- Paticca-samuppada-vibhanga Sutta): ``` \"From fabrications as a requisite condition comes consciousness. From consciousness as a requisite condition comes name-and-form.\" ``` 意识是**被条件",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "五取蕴",
@@ -622,7 +652,52 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sacca）** 苦的根源是渴爱（taṇhā）。渴爱分三种：欲爱（kāma-taṇhā）、有爱（bhava-taṇhā）、无有爱（vibhava-taṇhā）。《增支部》完整引文明示，整个十二缘起链均属集谛：从无明到爱到取到有，皆是苦聚的升起原因。《阿毗达摩论》进一步扩展：不只爱，一切烦恼乃至能导致轮转的善业，广义上都是集谛。 **三",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "三位使者\"，错过提醒的人终将在地狱受\"五种系缚刑罚\"之苦。 **2. 迷者的苦难——凡夫与圣弟子的分野** 本节不再谈身体上不可避免的老死，而谈**心理层面可以避免的\"第二支箭\"**。箭经的比喻极为精妙：\"犹如他们如果以箭射男子，如果接着以第二支箭射中他……\"未受教导的凡夫身苦之外又添心苦；已受教导的圣弟子\"感受一受：身的受而无心的受\"。同样的区分应用在\"八风\"（得失、誉毁、称讥、乐苦）上：凡夫随境浮沉，圣弟子\"心如止水\"。再进一步，五取蕴（色受想行识）的变异也是痛苦之源——凡夫因执取五蕴为\"我\"而战栗恐怖，圣弟子因不执取而\"经由不执取而无战栗\"。 **3. 纷乱的世界——暴力与纷争的根源** 本节追问社会冲突的根本原因，四则经文层层剥茧：在家人因\"欲\"而诤，出家人因\"见\"而诤；帝释天问佛，佛陀揭示嫉妒悭吝源于\"可爱、不可爱\"，再溯源到\"意欲\"，再溯源到\"寻\"，最终溯源到\"虚妄想\"（papañca，戏论/妄想分别）；因缘大经给出一条完整的因果暗链：**\"缘于受有渴爱；缘于渴爱而有遍求……缘于守护之故而有拿杖、拿刀、斗诤……\"**；不善根经则把一切暴力压迫归结于贪、嗔、痴三不善根：\"凡贪欲者被贪欲征服，心被占据……我是有力量者，我需要力量。\" **4. 轮回没有第一因** 本章压轴的四则譬喻经文（草",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        },
+        {
+          "source": "docs/research/theravada-modern/light-of-wisdom-summary.md",
+          "heading": "站内搜索命中",
+          "text": "三遍知的定义： - **知遍知（bata paribba）**：以名色分别智与缘摄受智辨明一切色法、名法及其因，重点是清楚知道所观对象究竟是什么。 - **度遍知（tirana paribba）**：从思惟智至生灭随观智，审察行法的无常、苦、无我，重点是以三相衡量与透视行法。 - **断遍知（pahana paribba）**：从坏灭随观智开始，暂时断除相应烦恼，最终以圣道彻底根除。 **「必须先透彻与毫无遗漏地辨明这作为观禅目标的五取蕴。」** #### 二、二十八种色法的完整体系 **18种真实色（自性色）：** - 四大（地水火风） - 五净色（眼耳鼻舌身净色） - 四境色（颜色、声、香、味）——触境由地火风三界组成 - 两种性根色（女根、男根） - 心色（意界与意识界的所依） - 命根色（维持业生色的生命） - 食色（段食中的食素） 18种真实色亦名：自性色、有相色（具三相）、完色（以业心时节食为因）、色色（强度变化的真实色）、思惟色（适于观禅目标）。 **10种非真实色：** - 空界（限制色）：色聚间的空间 - 两种表色：身表（身体动作）、语表（说话动作） - 五种变化色：色轻快性、色柔软性、色适应性（另加身表语表） - 四种相色：色积集（生时）、色相续（住时）、色老性（熟时",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "### 第五部分：五蕴的分类与五种蕴智（XIV.185–221） 第十四章后半段还从《毗崩伽》的分类继续说明五蕴： - 依过去、未来、现在，内、外，粗、细，劣、胜，远、近等十一种方式确定五蕴；其中“过去/现在/未来”还可依有情一生、相续、时段和刹那作不同层次的说明（XIV.185–196）。这些分类不能彼此混用，例如同一感受依种类、个别自性、修行者是否有等至及有漏/无漏，粗细判定可能不同（XIV.197–209）。 - “五蕴”与“五取蕴”须区分：后者指受漏及取所依的蕴，不能把一切五蕴无条件等同于五取蕴（XIV.210–215）。 - 原文还解释五蕴何以不多不少：相似的有为法可归入五组，五组是执取“我/我所”的最大范围，并能包含其他分类的蕴；并以病室、疾病、诱发、错误依止、病人等比喻说明五取蕴之间的关系（XIV.216–221）。 这部分把前面的五蕴定义推进到分类边界、取蕴范围和比喻解释；不能以 XIV.132 的行蕴分析作为本章结尾。 ### 本章总结（编者归纳） 第十四章通过六问式的系统分析，建立了智慧篇的概念框架，并通过五蕴的详细分析，将整个\"人\"（或任何有情众生）分解为五类现象聚合——色、受、想、行、识——没有任何一个聚合构成\"自我\"或\"灵魂\"，它们都是无常、苦和无自性（anattā）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        },
+        {
+          "source": "docs/research/psychology/bicameral-mind-origin.md",
+          "heading": "站内搜索命中",
+          "text": "hāna Sutta): ``` \"Bhikkhu lives contemplating mind as mind (citte cittānupassī), ardent, clearly comprehending and mindful...\" ``` 严格说，MN 10 的四念处不是\"在意识中观察意识\"，而是观察身、受、心、法。其中\"心念处\"观察的是 citta 的状态；\"识\"（viññāṇa）作为五蕴之一，出现在法念处的五取蕴分析中。这里需要区分： - **感知功能** (cognitive function): 对感官对象的纯粹觉知 - **六识系统**: 眼识、耳识、鼻识、舌识、身识、意识——各有特定对象 - **缘起链条**的一环: 不是主人，而是过程中的一个节点 **关键经文** (SN 12.2《缘起分析经》- Paticca-samuppada-vibhanga Sutta): ``` \"From fabrications as a requisite condition comes consciousness. From consciousness as a requisite condition comes name-and-form.\" ``` 意识是**被条件",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "土壤）。 涅槃亦可依修证时间的早晚分为两类：**有余依涅槃**（sa-upādisesa-nibbāna）——圣者仍在世时所经历的烦恼寂灭（以那件\"尚有主人的昂贵衣裳\"为喻）；**无余依涅槃**（anupādisesa-nibbāna）——圣者命终后五蕴名色彻底止息（以那件\"主人已逝的衣裳\"为喻）。 ### 四圣谛的详述 真实波罗蜜章节中，敏贡长老还对四圣谛作了远比正文详尽的系统阐释： **苦谛**（dukkha-sacca）：五取蕴（色受想行识）即是苦，是苦的全体。智者看待欲乐时，见到的是苦多乐少——如同有人被告知\"你可以在明日被处决之前，以转轮圣王的身份统治一日\"，尽管表面的享乐诱人，然而知晓翌日死亡这一大过患者，无一人会接受这个条件。唯有常见者才会以为欲乐是纯粹的幸福。 **集谛**（samudaya-sacca）：贪爱是苦的真实原因——正是因为贪爱驱使一切有情为更好的生活而奔波劳作，也正是贪爱驱使一切有情期望在来世获得更好的存在，因而不断造作新业，招致新的生命轮回。 **灭谛**（nirodha-sacca）与**道谛**（magga-sacca）：已如上详述。 ### 两种验证真实的方式与本生故事 书中将\"以真实语之力成就不可思议之事\"（saccakiriyā，\"真实语加持\"）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E5%8F%96%E8%98%8A&scope=site",
+          "query": "五取蕴"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：五取蕴\n\n## 直接回答\n五取蕴是色取蕴、受取蕴、想取蕴、行取蕴、识取蕴这五类[1][2][4]。在《DN34》中，五取蕴被列为“应该被遍知的五法”[2]。\n\n## 要点展开\n### 定义与构成\n- 五取蕴包括色取蕴、受取蕴、想取蕴、行取蕴、识取蕴[1][2][4]。\n- 《DN33》和《DN34》均明确列出这五者[1][2]。\n\n### 在经典中的定位\n- 《DN34》将五取蕴归为“应该被遍知的五法”[2]。\n- 其他经典也提及五取蕴，如《小部》[3]、《相应部》[4][8]、《中部》[6]、《增支部》[7]。\n\n### 具体说明\n- 《中部》提到“想摄入于想取蕴中”，说明想取蕴与想的关系[5]。\n\n## 分歧与张力\n不同经典对五取蕴的列举一致，但《DN34》特别强调其作为“应该被遍知”的法，而其他经典未明确此定位[2]。\n\n## 证据覆盖情况\n现有证据覆盖了五取蕴的名称、构成及其在《DN34》中的定位，但未详细解释每一取蕴的具体含义或修行意义。\n\n## 引用\n- [1] Early Buddhist · DN33 · 五取蕴 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82\n  > 五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。\n- [2] Early Buddhist · DN34 · 五取蕴 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A\n  > （三）哪些是应该被遍知的五法呢？五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，这些是应该被遍知的五法。\n- [3] Early Buddhist · 经藏/小部_kn · kp4 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82\n  > 五取蕴。\n- [4] Early Buddhist · 经藏/相应部_sn · sn22.56 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.56&lang=zh&q=%E8%89%B2%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%89%B2%E5%8F%96%E8%98%8A%EF%BC%8C%E5%8F%97%E5%8F%96%E8%98%8A%EF%BC%8C%E6%83%B3%E5%8F%96%E8%98%8A%EF%BC%8C%E8%A1%8C%E5%8F%96%E8%98%8A%EF%BC%8C%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82\n  > 色取蕴，受取蕴，想取蕴，行取蕴，识取蕴。\n- [5] Early Buddhist · 经藏/中部_mn · mn28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E6%83%B3%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E5%83%8F%E9%80%99%E6%A8%A3%E5%AD%98%E5%9C%A8%E7%9A%84%E6%83%B3%E6%94%9D%E5%85%A5%E6%96%BC%E6%83%B3%E5%8F%96%E8%98%8A%E4%B8%AD%EF%BC%9B\n  > 凡像这样存在的想摄入于想取蕴中；\n- [6] Early Buddhist · 经藏/中部_mn · mn28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F\n  > 什么是五取蕴？\n- [7] Early Buddhist · 经藏/增支部_an · an9.66 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.66&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%E3%80%82\n  > 这是五取蕴。\n- [8] Early Buddhist · 经藏/相应部_sn · sn22.48 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9F\n  > 什么是五取蕴？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -632,7 +707,8 @@
       "number": 5,
       "order": 2,
       "label": "五取蕴",
-      "members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
+      "members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+      "match_members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
       "member_items": [
         "色取蕴",
         "受取蕴",
@@ -641,8 +717,18 @@
         "识取蕴"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。"
+      ],
       "source_text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82",
+      "expanded_points": [
+        "色取蕴：指色法的取蕴，是五取蕴之一。",
+        "受取蕴：指感受的取蕴，是五取蕴之一。",
+        "想取蕴：指想（知觉）的取蕴，是五取蕴之一。",
+        "行取蕴：指行（意志活动）的取蕴，是五取蕴之一。",
+        "识取蕴：指识（意识）的取蕴，是五取蕴之一。"
+      ]
     },
     {
       "id": "dn34-n5-g3",
@@ -651,6 +737,7 @@
       "order": 3,
       "label": "五取蕴",
       "members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
+      "match_members": "色取蕴、受取蕴、想取蕴、行取蕴、识取蕴",
       "member_items": [
         "色取蕴",
         "受取蕴",
@@ -659,8 +746,18 @@
         "识取蕴"
       ],
       "dn34_status": "应遍知",
+      "source_paragraphs": [
+        "（三）哪些是应该被遍知的五法呢？五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，这些是应该被遍知的五法。"
+      ],
       "source_text": "（三）哪些是应该被遍知的五法呢？五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴，这些是应该被遍知的五法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%8F%96%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A",
+      "expanded_points": [
+        "色取蕴：色取蕴是五取蕴之一，属于应该被遍知的五法。",
+        "受取蕴：受取蕴是五取蕴之一，属于应该被遍知的五法。",
+        "想取蕴：想取蕴是五取蕴之一，属于应该被遍知的五法。",
+        "行取蕴：行取蕴是五取蕴之一，属于应该被遍知的五法。",
+        "识取蕴：识取蕴是五取蕴之一，属于应该被遍知的五法。"
+      ]
     }
   ]
 }

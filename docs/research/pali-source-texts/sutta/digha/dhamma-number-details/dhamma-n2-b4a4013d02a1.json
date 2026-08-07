@@ -5,7 +5,8 @@
     "number": 2,
     "label": "处善巧与非处善巧",
     "member_items": [
-      "处善巧与非处善巧"
+      "处善巧",
+      "非处善巧"
     ],
     "group_ids": [
       "dn33-n2-g12"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "处善巧与非处善巧"
+      "处善巧与非处善巧",
+      "处善巧",
+      "非处善巧"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「处善巧与非处善巧」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：处善巧与非处善巧。[1]\n\n## 所含各法\n### 处善巧与非处善巧\n经文将「处善巧与非处善巧」列为「处善巧与非处善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：处善巧与非处善巧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n处善巧与非处善巧是《DN33》中列出的一对法数，但现有证据仅给出其名称，未展开定义或具体内容 [1][2]。\n\n## 要点展开\n### 法数归属\n- 处善巧与非处善巧作为一对法数出现在《DN33》中 [1][2]。\n- 同一文献中另有“处善巧与缘起善巧”的表述 [3]，但未说明与“非处善巧”的关系。\n\n### 其他类似法数\n- 其他经典中也有类似“善巧/非善巧”或“如理/非如理”的成对概念，如“如理作意与非理作意” [4]、“圣遍求与非圣遍求” [5]、“非善人的布施” [6][7]，但均未涉及“处善巧”的具体含义。\n\n## 分歧与张力\n不同文献对“善巧”的配对对象不一致：《DN33》中“处善巧”与“非处善巧”配对 [1][2]，但同经另一处又与“缘起善巧”配对 [3]；其他经典则使用“如理/非如理” [4]、“圣/非圣” [5] 等不同判准。这些差异可能反映不同语境下的分类，但现有证据未说明其关系。\n\n## 证据覆盖情况\n现有证据仅确认“处善巧与非处善巧”作为法数名称存在于《DN33》，未提供其定义、内容或修行意义；也未覆盖“处善巧”的具体所指。",
       "evidence": [
         {
           "kind": "source",
@@ -66,9 +69,15 @@
           "label": "Early Buddhist · 经藏/增支部_an · an5.192",
           "text": "为何不与非受胎期的婆罗门妇女性交呢？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.192&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E4%B8%8D%E8%88%87%E9%9D%9E%E5%8F%97%E8%83%8E%E6%9C%9F%E7%9A%84%E5%A9%86%E7%BE%85%E9%96%80%E5%A9%A6%E5%A5%B3%E6%80%A7%E4%BA%A4%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "thu samannesito hoti ti attho. Sesay sabbattha uttanat- tham evā ti. Vīmaņysakasuitar sattamay. 48.\", \"chinese_translation\": \"如是我闻。此是《审察经》。其中“审察者”有三种：义审察者、行审察者、导师审察者。其中，“诸贤友，智者乃审察之人”（S. iii. 6）处，义审察者未涉及。“阿难，凡比丘于界善巧、于处善巧、于缘起善巧、于理非理善巧，至此，阿难，可称智者比丘为审察者”（M. iii. 62）处，行审察者未涉及。而在此经中，所指的是导师审察者。“心之随观”即心之观察、心之界定。“寻求”即寻觅、探求、审察。“如是了知”即为了如此知解。“于二法中如来应被审察”……善友依止。其广大性应如是了知：一时，尊者阿难思惟：“我之半分为自身之力，半分为善友之力。”因自性无法决断，往诣世尊而问：“世尊，此梵行的一半是善友、善伴、善随从。”（S. v. 2）世尊言：“阿难，莫作是说，莫作是说。阿难，此梵行全体即是善友、善伴、善随从。阿难，具善友、善伴、善随从之比丘，当可期望他修习八圣道、多修八圣道。” 再者，阿难，比丘以善友为依止——乃至——修习圣八支道，多修习圣八支道。阿难，于此，比丘修",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%99%95%E5%96%84%E5%B7%A7&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "处善巧与非处善巧",
@@ -154,9 +163,27 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.192&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E4%B8%8D%E8%88%87%E9%9D%9E%E5%8F%97%E8%83%8E%E6%9C%9F%E7%9A%84%E5%A9%86%E7%BE%85%E9%96%80%E5%A9%A6%E5%A5%B3%E6%80%A7%E4%BA%A4%E5%91%A2%EF%BC%9F"
             }
           ]
+        },
+        {
+          "query": "处善巧",
+          "hits": []
+        },
+        {
+          "query": "非处善巧",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "thu samannesito hoti ti attho. Sesay sabbattha uttanat- tham evā ti. Vīmaņysakasuitar sattamay. 48.\", \"chinese_translation\": \"如是我闻。此是《审察经》。其中“审察者”有三种：义审察者、行审察者、导师审察者。其中，“诸贤友，智者乃审察之人”（S. iii. 6）处，义审察者未涉及。“阿难，凡比丘于界善巧、于处善巧、于缘起善巧、于理非理善巧，至此，阿难，可称智者比丘为审察者”（M. iii. 62）处，行审察者未涉及。而在此经中，所指的是导师审察者。“心之随观”即心之观察、心之界定。“寻求”即寻觅、探求、审察。“如是了知”即为了如此知解。“于二法中如来应被审察”……善友依止。其广大性应如是了知：一时，尊者阿难思惟：“我之半分为自身之力，半分为善友之力。”因自性无法决断，往诣世尊而问：“世尊，此梵行的一半是善友、善伴、善随从。”（S. v. 2）世尊言：“阿难，莫作是说，莫作是说。阿难，此梵行全体即是善友、善伴、善随从。阿难，具善友、善伴、善随从之比丘，当可期望他修习八圣道、多修八圣道。” 再者，阿难，比丘以善友为依止——乃至——修习圣八支道，多修习圣八支道。阿难，于此，比丘修",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%99%95%E5%96%84%E5%B7%A7&scope=site",
+          "query": "处善巧"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：处善巧与非处善巧\n\n## 直接回答\n处善巧与非处善巧是《DN33》中列出的一对法数，但现有证据仅给出其名称，未展开定义或具体内容 [1][2]。\n\n## 要点展开\n### 法数归属\n- 处善巧与非处善巧作为一对法数出现在《DN33》中 [1][2]。\n- 同一文献中另有“处善巧与缘起善巧”的表述 [3]，但未说明与“非处善巧”的关系。\n\n### 其他类似法数\n- 其他经典中也有类似“善巧/非善巧”或“如理/非如理”的成对概念，如“如理作意与非理作意” [4]、“圣遍求与非圣遍求” [5]、“非善人的布施” [6][7]，但均未涉及“处善巧”的具体含义。\n\n## 分歧与张力\n不同文献对“善巧”的配对对象不一致：《DN33》中“处善巧”与“非处善巧”配对 [1][2]，但同经另一处又与“缘起善巧”配对 [3]；其他经典则使用“如理/非如理” [4]、“圣/非圣” [5] 等不同判准。这些差异可能反映不同语境下的分类，但现有证据未说明其关系。\n\n## 证据覆盖情况\n现有证据仅确认“处善巧与非处善巧”作为法数名称存在于《DN33》，未提供其定义、内容或修行意义；也未覆盖“处善巧”的具体所指。\n\n## 引用\n- [1] Early Buddhist · DN33 · 处善巧与非处善巧 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7\n  > 处善巧与非处善巧。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7%E3%80%82\n  > 处善巧与非处善巧。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7%E3%80%82\n  > 处善巧与缘起善巧。\n- [4] Early Buddhist · 经藏/中部_mn · mn2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=hui&mt=%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E8%88%87%E9%9D%9E%E7%90%86%E4%BD%9C%E6%84%8F%E3%80%82\n  > 如理作意与非理作意。\n- [5] Early Buddhist · 经藏/中部_mn · mn26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn26&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%A8%AE%E9%81%8D%E6%B1%82%EF%BC%9A%E8%81%96%E9%81%8D%E6%B1%82%E8%88%87%E9%9D%9E%E8%81%96%E9%81%8D%E6%B1%82%E3%80%82\n  > 有这二种遍求：圣遍求与非圣遍求。\n- [6] Early Buddhist · 经藏/中部_mn · mn110 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn110&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%9D%9E%E5%96%84%E4%BA%BA%E9%80%99%E6%A8%A3%E6%96%BD%E8%88%87%E9%9D%9E%E5%96%84%E4%BA%BA%E7%9A%84%E5%B8%83%E6%96%BD%E3%80%82\n  > 非善人这样施与非善人的布施。\n- [7] Early Buddhist · 经藏/中部_mn · mn110 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn110&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%9D%9E%E5%96%84%E4%BA%BA%E5%A6%82%E4%BD%95%E6%96%BD%E8%88%87%E9%9D%9E%E5%96%84%E4%BA%BA%E7%9A%84%E5%B8%83%E6%96%BD%E5%91%A2%EF%BC%9F\n  > 非善人如何施与非善人的布施呢？\n- [8] Early Buddhist · 经藏/增支部_an · an5.192 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.192&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%82%BA%E4%BD%95%E4%B8%8D%E8%88%87%E9%9D%9E%E5%8F%97%E8%83%8E%E6%9C%9F%E7%9A%84%E5%A9%86%E7%BE%85%E9%96%80%E5%A9%A6%E5%A5%B3%E6%80%A7%E4%BA%A4%E5%91%A2%EF%BC%9F\n  > 为何不与非受胎期的婆罗门妇女性交呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -167,12 +194,21 @@
       "order": 12,
       "label": "处善巧与非处善巧",
       "members": "处善巧与非处善巧",
+      "match_members": "处善巧与非处善巧",
       "member_items": [
-        "处善巧与非处善巧"
+        "处善巧",
+        "非处善巧"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "处善巧与非处善巧。"
+      ],
       "source_text": "处善巧与非处善巧。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7",
+      "expanded_points": [
+        "处善巧：指对处（感官与所缘）的善巧理解。",
+        "非处善巧：指对处的不善巧理解。"
+      ]
     }
   ]
 }

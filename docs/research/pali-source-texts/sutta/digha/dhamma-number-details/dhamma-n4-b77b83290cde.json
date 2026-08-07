@@ -4,13 +4,7 @@
     "id": "dhamma-n4-b77b83290cde",
     "number": 4,
     "label": "四念住",
-    "member_items": [
-      "学友们！这里，比丘住于在身上随观身，热心",
-      "正知",
-      "有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心",
-      "正知",
-      "有念，能调伏对于世间的贪与忧"
-    ],
+    "member_items": [],
     "group_ids": [
       "dn34-n4-g2"
     ],
@@ -18,14 +12,10 @@
       "dn34"
     ],
     "search_terms": [
-      "四念住",
-      "学友们！这里，比丘住于在身上随观身，热心",
-      "正知",
-      "有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心",
-      "有念，能调伏对于世间的贪与忧"
+      "四念住"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四念住」属于 4 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。[1]\n\n## 所含各法\n### 学友们！这里，比丘住于在身上随观身，热心\n经文将「学友们！这里，比丘住于在身上随观身，热心」列为「四念住」的一个成员。Early Buddhist 用该名词检索时，在《念住大经》命中：比丘这样住于在身上随观身。。[3]\n### 正知\n经文将「正知」列为「四念住」的一个成员。Early Buddhist 用该名词检索时，在《沙门果经》命中：正念与正知。[4]\n### 有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心\n经文将「有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心」列为「四念住」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。。[5]\n### 正知\n经文将「正知」列为「四念住」的一个成员。Early Buddhist 用该名词检索时，在《沙门果经》命中：正念与正知。[4]\n### 有念，能调伏对于世间的贪与忧\n经文将「有念，能调伏对于世间的贪与忧」列为「四念住」的一个成员。Early Buddhist 用该名词检索时，在《念住大经》命中：住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四念住是应该被修习的四法，包括在身上随观身、在受上随观受、在心上随观心、在法上随观法，修习时需热心、正知、有念，以调伏对世间的贪与忧 [1]。证据还表明四念住有具体的修习方法，并存在导向其修习的道迹 [7][8]。\n\n## 要点展开\n### 四念住的内容\n- 四念住包括身、受、心、法四个念住，具体为在身上随观身、在受上随观受、在心上随观心、在法上随观法 [1]。\n- 修习四念住时，需要具备热心、正知、有念，以调伏对世间的贪与忧 [1]。\n\n### 四念住的修习\n- 有经典明确提到“这样是比丘修习四念住、多修习四念住”，并进一步追问“比丘如何修习四念住、多修习四念住呢？” [3][7]。\n- 另有经典记载佛陀将教导四念住、四念住的修习，以及导向四念住的修习道迹 [8]。\n\n### 四念住的名称\n- 多部经典直接称“这些是四念住”或“这被称为四念住”，确认了四念住的名称 [4][5][6]。\n\n## 分歧与张力\n不同经典对四念住的表述侧重略有不同：DN34 详细列出了四念住的具体内容和修习要求 [1]，而其他经典（如 SN 系列）则更侧重于强调四念住的名称和修习的总体框架，未展开具体细节 [3][4][5][6][7][8]。这并非矛盾，而是详略差异。\n\n## 证据覆盖情况\n现有证据覆盖了四念住的定义、内容、修习方法和名称确认，但未提供四念住的具体修习步骤或详细解释，也未涉及四念住与其他法数的关联。",
       "evidence": [
         {
           "kind": "source",
@@ -38,30 +28,6 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn18",
           "text": "四念住",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn18&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%BF%B5%E4%BD%8F"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/中部_mn · mn10",
-          "text": "比丘这样住于在身上随观身。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/长部_dn · dn2",
-          "text": "正念与正知",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AD%A3%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/长部_dn · dn34",
-          "text": "在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/中部_mn · mn10",
-          "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -107,18 +73,6 @@
         },
         {
           "kind": "site",
-          "label": "docs/research/theravada-mahayana-history.md",
-          "text": "ghtarrow$ 4. 近住（心不再远离所缘） $\\rightarrow$ 5. 调顺（看到定力的功德，生起欣乐） $\\rightarrow$ 6. 寂静（平息内心粗重的贪嗔） $\\rightarrow$ 7. 最极寂静（微细的散乱也能立刻消灭） $\\rightarrow$ 8. 专注一趣（需要精进维持的长久入定） $\\rightarrow$ 9. 等持（不需要刻意用力，心自动任运入定）。 为了通关这九个台阶，你必须挥舞“正念”与“正知”两把武器，去克服“沉没（昏沉）”与“掉举（散乱）”两大障碍。 虽然“九住心”听起来极其严密，但在实际盘腿实修的微观技术层面，它存在两个隐患： - 所缘（修定对象）过于抽象和复杂：原始佛教修定最基础的是“呼吸”（安那般那）——这是一个纯物理的、随时在发生、不需要动脑的真实触觉。而藏传道次第修定，最推荐的所缘是“在脑海中观想一尊极其微小、散发着光芒的释迦牟尼佛像”。这需要极强的智力和心力去“凭空制造”一个意根的概念形象，在凡夫阶段极其容易导致头部缺氧、紧张和智力兴奋（掉举），反而阻碍了身心的自然寂静。 - 缺乏对“物质与心理现象”的微观手术：道次第的修定到了第九住心，紧接着要引发“轻安”，从而证得“奢摩他”。但它对证得奢摩他之后的智慧（毗婆舍那）路线，走向了极其宏大",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site"
-        },
-        {
-          "kind": "site",
-          "label": "docs/research/buddhist-concepts.md",
-          "text": "四念处（Cattāro Satipaṭṭhānā） **定义** 四念处（satipaṭṭhāna，念住）是《大念处经》（Mahāsatipaṭṭhāna Sutta，《长部》第22经）的核心教说，被佛陀称为\"唯一之道\"（ekāyano maggo）——净化众生、超越忧愁与哭泣、消除苦与悲、成就正道、证悟涅槃的唯一道路。 **四种念住** 1. 身随观（kāyānupassanā）：以正念持续观察身体——呼吸（安般念）、四威仪、正知、身分（三十二身分）、四界分别、九种墓地观 2. 受随观（vedanānupassanā）：观察受的生起与灭去——乐受、苦受、舍受，世间与出世间之别 3. 心随观（cittānupassanā）：观察心的各种状态——有贪心、无贪心、有嗔心、散乱心、定心等 4. 法随观（dhammānupassanā）：观察五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site"
-        },
-        {
-          "kind": "site",
           "label": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
           "text": "量心（慈悲喜舍）中，慈心禅特别被强调为对治嗔恨与恶意的良药。著名的\"锯子譬喻\"教导：即便遭遇最残酷的对待（如被强盗用两头锯子节节肢解），修行者仍应对加害者不起丝毫嗔心，继续散发慈心——这是佛教伦理中对\"忍辱\"与\"慈悲\"要求的极致展现。 ### 六随念：在家人最常用的禅修法门 念佛、念法、念僧（忆念三宝功德）、念戒、念施、念天——这是几百年来在家众最普及的禅修方式，即便尚未证得高深禅定，也能借由忆念升华心灵，贴近修行理想。 ### 四念住：最完整的禅修系统 本章篇幅最大、地位最重的部分是《念住经》——被公认为最完整的禅修法门系统，涵盖身、受、心、法四个观照范畴，共二十一种所缘： 1. **身念住**（14种所缘）：正念出入息、四威仪、正知、不净观、四界分别观、墓园九相（观尸体腐化的九个阶段）； 2. **受念住**：观乐受、苦受、不苦不乐受，及其身心二分； 3. **心念住**：观八组对比的心理状态（有贪心/无贪心、有嗔心/无嗔心等）； 4. **法念住**：以佛法的分类观照现象——五盖、五蕴、内外六处、七觉支、四圣谛。 菩提比丘特别指出，经文开头\"已经调伏对于世间的贪欲与忧恼\"这一表述，很可能是描述**修行本身就是克服贪欲与忧恼的方法**，而非要求修行者先克服烦恼才能开始修行——这是对念住经",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site"
@@ -131,12 +85,24 @@
         },
         {
           "kind": "site",
-          "label": "docs/research/vism-data/vism-summary.md",
-          "text": "而不能单独使用“§24”。D、M、S、A、Sn、Ud、Vibh、Patis、Nidd等标记指被《清净道论》引用的外部经典或论书。带有“编者分析”“结构性解读”等性质的文字，不视为觉音尊者原文。 --- ## 第一章 戒之解说（Sīla-niddesa，Description of Virtue） ### 一、本章在全书中的位置与开篇缘起 全书以一首出自《相应部》（S I 13）的偈颂开篇： > \"智者住于戒，修习心与慧，具热忱正知之比丘，能解此纠结。\"（I.1） 作者设问：\"这是为什么说的？\"由此引出一则因缘：一位天神夜访佛陀，问\"谁能解开内外之纠结\"，佛陀以此偈作答。觉音尊者随即宣告全论写作宗旨： > \"我今将阐明此同一偈颂的真实意涵，分为戒、定、慧……为使追求清净、却对通向清净的正道——戒、定、慧——没有正确认识的人，能够依此修行。\"（I.4） 由此确立全书的写作动机：为“欲求清净而无正知之路”者讲说通往涅槃（清净）的道路。\"清净\"被明确定义为涅槃本身：\"清净应理解为涅槃，因其远离一切垢染，故究竟清净；通往彼清净之道，即名为道。\"（I.5）这里的“完整道路”是编者对全书结构的概括，不作为 I.4–5 的逐字结论。 作者还指出，此道有时单由“慧”（观）教导，有时由“定与慧”教导，有时",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site"
+          "label": "docs/research/vism-data/zh_chap04.json",
+          "text": "ding\": \"附注\", \"html\": \"\"}, {\"level\": 1, \"heading\": \"校注\", \"html\": \"<p>〔校注04-001〕 （身离）关于「诸欲」的ㄧ句，</p><p>〔校注04-002〕 即因那人达到乐波罗蜜最上微妙之乐</p>\"}, {\"level\": 1, \"heading\": \"※ 补注 ※\", \"html\": \"<p>〔补注04-001〕 说明：于诸法中观法住热心正知念──观法住指身、受、心、法四念住中之“法念住”；英文版—ardent(热心的)。</p><p>可参考 <a href=\\\"{filename}yehchun/chap04%zh.rst\\\" target=\\\"_blank\\\">另一版本</a> 。</p>\"}], \"footnotes\": {\"04-001\": \"见底本八十九页。\", \"04-002\": \"伽乌多（gaavuta），一由旬的四分之一。\", \"04-003\": \"阎浮（jambu），是一种玫瑰色的小果。巴纳萨（pa.nasa），一种树干或枝上长的大果，俗称面包果，内心可食，子也可烹食，即菠萝蜜。\", \"04-004\": \"「南山」（Dakkhi.naa-Giri）──不是印度摩竭陀国的南山。即锡兰的南山寺，在纪元六世纪初，为界军（Dh",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_nidana.json",
+          "text": "ta-fn=\\\"00-007\\\">[00-007]</sup></div><div class=\\\"vism-verse\\\">有些地方，则为戒等的意思。所谓：<br>一切戒圆具，有慧善等持，<br>精进勤勇者，渡难渡暴流。 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-008\\\">[00-008]</sup></div><p>有些地方，是念住等的意思。所谓:「诸比丘，有情的清净……作证涅槃的一乘之道 ，即四念住。」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-009\\\">[00-009]</sup> 四正勤等亦然。</p><p>但在这里，佛陀解答天子的问题，是以戒等的意义来显示的。现在来略释本论最初的 颂意：</p><p>「住戒」，即安住于戒中。这里指圆满（受持）戒律的人而称为住戒者，所以圆满戒 律便是住戒的意义。「人」是有情。「有慧人」，是由业生三因结生的慧 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-010\\\">[00-010]</sup> ，为有慧者。「修习心与慧」，是修习三摩地（定）和毗钵舍那（观）的意思。这里是用「心 」字来显示三摩地，以「慧」字而名毗钵舍那。「有勤」，是有精进的人。因为精进",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap01.json",
+          "text": "/sup> 之德的善友为近依行处。因为依他可以闻所 未闻、已闻的更明白，解决疑惑，矫正意见，安息其心，或者跟他学习可以增信，亦得增 长戒、闻、舍、慧，故称近依行处。</p><p>什么是守护行处？兹有比丘，进入村落行于道上，收缩眼界仅见眼前一寻※01-005※ 之地，善加 防护而行，不见象（兵），不见马（兵）、车（兵）、步（兵）、妇女、男人，不看上， 不看下，不视四方和四维而行，是名守护行处。</p><p>什么是近缚行处，便是约束其心于四念住中。世尊说:「诸比丘！什么是比丘行处， 什么是你们的世袭传承，便是四念住」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"01-050\\\">[01-050]</sup> 。是名近缚行处。</p><p>这样的正行和行处具足圆满，故说．「正行与行处具足」。</p><p><span class=\\\"vism-page\\\">[020]</span> 「对于微细的罪过亦见其怖畏」，便是对于无意而犯的众学法 <sup class=\\\"vism-fnref\\\" data-fn=\\\"01-051\\\">[01-051]</sup> 及生起不善心等的微细罪过，亦能见其怖畏。</p><p>「受持与学习诸学处」，便是对于任何应当学习的学处都正持学习。</p",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四念住",
@@ -222,363 +188,9 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9B%9B%E5%BF%B5%E4%BD%8F%E6%98%AF%E5%AE%9A%E7%9B%B8%EF%BC%9B"
             }
           ]
-        },
-        {
-          "query": "学友们！这里，比丘住于在身上随观身，热心",
-          "hits": [
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "比丘这样住于在身上随观身。",
-              "score": 29.1321471401223,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E6%A8%A3%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%E3%80%82"
-            }
-          ]
-        },
-        {
-          "query": "正知",
-          "hits": [
-            {
-              "uid": "dn2",
-              "collection": "经藏/长部_dn",
-              "title": "沙门果经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "正念与正知",
-              "score": 8.219512931706763,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%AD%A3%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5"
-            },
-            {
-              "uid": "an8.81",
-              "collection": "经藏/增支部_an",
-              "title": "正念与正知经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "正念与正知经",
-              "score": 7.737930449849635,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.81&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%E7%B6%93"
-            },
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "念与正知。",
-              "score": 7.737930449849635,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E8%88%87%E6%AD%A3%E7%9F%A5%E3%80%82"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "随观身‧正知节",
-              "score": 7.309656586231573,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%9A%A8%E8%A7%80%E8%BA%AB%E2%80%A7%E6%AD%A3%E7%9F%A5%E7%AF%80"
-            },
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "正知节终了。",
-              "score": 7.309656586231573,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E7%9F%A5%E7%AF%80%E7%B5%82%E4%BA%86%E3%80%82"
-            },
-            {
-              "uid": "dhp1-20",
-              "collection": "经藏/小部_kn",
-              "title": "双品",
-              "author": "叶均",
-              "translator": "yun",
-              "text": "具足正知识，",
-              "score": 7.309656586231573,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp1-20&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%85%B7%E8%B6%B3%E6%AD%A3%E7%9F%A5%E8%AD%98%EF%BC%8C"
-            },
-            {
-              "uid": "sn22.95",
-              "collection": "经藏/相应部_sn",
-              "title": "像泡沫团那样经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "日夜正知与忆念。",
-              "score": 7.309656586231573,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.95&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%97%A5%E5%A4%9C%E6%AD%A3%E7%9F%A5%E8%88%87%E6%86%B6%E5%BF%B5%E3%80%82"
-            },
-            {
-              "uid": "dn22",
-              "collection": "经藏/长部_dn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "随观身‧正知节",
-              "score": 7.309656586231573,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%9A%A8%E8%A7%80%E8%BA%AB%E2%80%A7%E6%AD%A3%E7%9F%A5%E7%AF%80"
-            }
-          ]
-        },
-        {
-          "query": "有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心",
-          "hits": [
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。",
-              "score": 67.50904114509002,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上随观受……在心上随观心……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，比丘们！",
-              "score": 65.673707853727,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E9%9A%A8%E8%A7%80%E5%8F%97%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E9%9A%A8%E8%A7%80%E5%BF%83%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
-            },
-            {
-              "uid": "sn36.8",
-              "collection": "经藏/相应部_sn",
-              "title": "生病经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在受上随观受……住于在心上随观心……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，比丘们！",
-              "score": 65.00555664273693,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn36.8&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E5%8F%97%E4%B8%8A%E9%9A%A8%E8%A7%80%E5%8F%97%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E5%BF%83%E4%B8%8A%E9%9A%A8%E8%A7%80%E5%BF%83%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
-            },
-            {
-              "uid": "mn125",
-              "collection": "经藏/中部_mn",
-              "title": "已调御阶位经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……（中略）在心上……（中略）住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 64.4410680110511,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn125&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.2",
-              "collection": "经藏/相应部_sn",
-              "title": "念经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……（中略）在心上……（中略）住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 64.4410680110511,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.2&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.5",
-              "collection": "经藏/相应部_sn",
-              "title": "不善聚经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……（中略）在心上……（中略）住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 64.4410680110511,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.5&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.6",
-              "collection": "经藏/相应部_sn",
-              "title": "鹰经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……（中略）在心上……（中略）住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 64.4410680110511,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.6&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.7",
-              "collection": "经藏/相应部_sn",
-              "title": "猴子经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "在受上……（中略）在心上……（中略）住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 64.4410680110511,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.7&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            }
-          ]
-        },
-        {
-          "query": "有念，能调伏对于世间的贪与忧",
-          "hits": [
-            {
-              "uid": "mn10",
-              "collection": "经藏/中部_mn",
-              "title": "念住大经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "mn51",
-              "collection": "经藏/中部_mn",
-              "title": "耿达勒葛经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "mn51",
-              "collection": "经藏/中部_mn",
-              "title": "耿达勒葛经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.1",
-              "collection": "经藏/相应部_sn",
-              "title": "蓭婆巴利经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.1&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn47.37",
-              "collection": "经藏/相应部_sn",
-              "title": "欲经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧；",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.37&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B"
-            },
-            {
-              "uid": "sn47.38",
-              "collection": "经藏/相应部_sn",
-              "title": "被遍知经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧；",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.38&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B"
-            },
-            {
-              "uid": "sn47.95-104",
-              "collection": "经藏/相应部_sn",
-              "title": "上分等经十则",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.95-104&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%E3%80%82"
-            },
-            {
-              "uid": "sn48.10",
-              "collection": "经藏/相应部_sn",
-              "title": "解析经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "他住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；",
-              "score": 34.94237791739925,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn48.10&lang=zh&q=%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B"
-            }
-          ]
         }
       ],
       "site_hits": [
-        {
-          "source": "docs/research/theravada-mahayana-history.md",
-          "heading": "站内搜索命中",
-          "text": "ghtarrow$ 4. 近住（心不再远离所缘） $\\rightarrow$ 5. 调顺（看到定力的功德，生起欣乐） $\\rightarrow$ 6. 寂静（平息内心粗重的贪嗔） $\\rightarrow$ 7. 最极寂静（微细的散乱也能立刻消灭） $\\rightarrow$ 8. 专注一趣（需要精进维持的长久入定） $\\rightarrow$ 9. 等持（不需要刻意用力，心自动任运入定）。 为了通关这九个台阶，你必须挥舞“正念”与“正知”两把武器，去克服“沉没（昏沉）”与“掉举（散乱）”两大障碍。 虽然“九住心”听起来极其严密，但在实际盘腿实修的微观技术层面，它存在两个隐患： - 所缘（修定对象）过于抽象和复杂：原始佛教修定最基础的是“呼吸”（安那般那）——这是一个纯物理的、随时在发生、不需要动脑的真实触觉。而藏传道次第修定，最推荐的所缘是“在脑海中观想一尊极其微小、散发着光芒的释迦牟尼佛像”。这需要极强的智力和心力去“凭空制造”一个意根的概念形象，在凡夫阶段极其容易导致头部缺氧、紧张和智力兴奋（掉举），反而阻碍了身心的自然寂静。 - 缺乏对“物质与心理现象”的微观手术：道次第的修定到了第九住心，紧接着要引发“轻安”，从而证得“奢摩他”。但它对证得奢摩他之后的智慧（毗婆舍那）路线，走向了极其宏大",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site",
-          "query": "正知"
-        },
-        {
-          "source": "docs/research/buddhist-concepts.md",
-          "heading": "站内搜索命中",
-          "text": "四念处（Cattāro Satipaṭṭhānā） **定义** 四念处（satipaṭṭhāna，念住）是《大念处经》（Mahāsatipaṭṭhāna Sutta，《长部》第22经）的核心教说，被佛陀称为\"唯一之道\"（ekāyano maggo）——净化众生、超越忧愁与哭泣、消除苦与悲、成就正道、证悟涅槃的唯一道路。 **四种念住** 1. 身随观（kāyānupassanā）：以正念持续观察身体——呼吸（安般念）、四威仪、正知、身分（三十二身分）、四界分别、九种墓地观 2. 受随观（vedanānupassanā）：观察受的生起与灭去——乐受、苦受、舍受，世间与出世间之别 3. 心随观（cittānupassanā）：观察心的各种状态——有贪心、无贪心、有嗔心、散乱心、定心等 4. 法随观（dhammānupassanā）：观察五盖、五蕴、十二处、七觉支、四圣谛等诸法 **修行次第** 雷迪禅师指出：\"修习其中一念处，即已修习所有四念处。\"帕奥禅师进一步说明，以不同起点（色、受、识、触）辨别名色，对应不同的念处修法——均须兼观名色，方能证道。 **念住与阿毗达摩** 四念处的修习有两种路线：止观行者（先证禅那，再修观）与纯观行者（从四界分别观起步，证近行定，修观）。无论哪种路线，最",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site",
-          "query": "正知"
-        },
         {
           "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
           "heading": "站内搜索命中",
@@ -594,20 +206,36 @@
           "query": "四念住"
         },
         {
-          "source": "docs/research/vism-data/vism-summary.md",
+          "source": "docs/research/vism-data/zh_chap04.json",
           "heading": "站内搜索命中",
-          "text": "而不能单独使用“§24”。D、M、S、A、Sn、Ud、Vibh、Patis、Nidd等标记指被《清净道论》引用的外部经典或论书。带有“编者分析”“结构性解读”等性质的文字，不视为觉音尊者原文。 --- ## 第一章 戒之解说（Sīla-niddesa，Description of Virtue） ### 一、本章在全书中的位置与开篇缘起 全书以一首出自《相应部》（S I 13）的偈颂开篇： > \"智者住于戒，修习心与慧，具热忱正知之比丘，能解此纠结。\"（I.1） 作者设问：\"这是为什么说的？\"由此引出一则因缘：一位天神夜访佛陀，问\"谁能解开内外之纠结\"，佛陀以此偈作答。觉音尊者随即宣告全论写作宗旨： > \"我今将阐明此同一偈颂的真实意涵，分为戒、定、慧……为使追求清净、却对通向清净的正道——戒、定、慧——没有正确认识的人，能够依此修行。\"（I.4） 由此确立全书的写作动机：为“欲求清净而无正知之路”者讲说通往涅槃（清净）的道路。\"清净\"被明确定义为涅槃本身：\"清净应理解为涅槃，因其远离一切垢染，故究竟清净；通往彼清净之道，即名为道。\"（I.5）这里的“完整道路”是编者对全书结构的概括，不作为 I.4–5 的逐字结论。 作者还指出，此道有时单由“慧”（观）教导，有时由“定与慧”教导，有时",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site",
-          "query": "正知"
+          "text": "ding\": \"附注\", \"html\": \"\"}, {\"level\": 1, \"heading\": \"校注\", \"html\": \"<p>〔校注04-001〕 （身离）关于「诸欲」的ㄧ句，</p><p>〔校注04-002〕 即因那人达到乐波罗蜜最上微妙之乐</p>\"}, {\"level\": 1, \"heading\": \"※ 补注 ※\", \"html\": \"<p>〔补注04-001〕 说明：于诸法中观法住热心正知念──观法住指身、受、心、法四念住中之“法念住”；英文版—ardent(热心的)。</p><p>可参考 <a href=\\\"{filename}yehchun/chap04%zh.rst\\\" target=\\\"_blank\\\">另一版本</a> 。</p>\"}], \"footnotes\": {\"04-001\": \"见底本八十九页。\", \"04-002\": \"伽乌多（gaavuta），一由旬的四分之一。\", \"04-003\": \"阎浮（jambu），是一种玫瑰色的小果。巴纳萨（pa.nasa），一种树干或枝上长的大果，俗称面包果，内心可食，子也可烹食，即菠萝蜜。\", \"04-004\": \"「南山」（Dakkhi.naa-Giri）──不是印度摩竭陀国的南山。即锡兰的南山寺，在纪元六世纪初，为界军（Dh",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site",
+          "query": "四念住"
         },
         {
-          "source": "docs/research/forest-monks/samana-summary.md",
+          "source": "docs/research/vism-data/zh_nidana.json",
           "heading": "站内搜索命中",
-          "text": "烦恼与无明灭尽后的无执。它不依赖姿势、环境、情绪、禅相或身体条件；因此不会像定境一样生灭变化。 --- ## 第七章：中道之中 比起“疼痛与五蕴”，“中道之中”更直接针对一个常见误解：把中道理解成软弱、折中、舒服、不用力。 尊者批评许多人把中道理解成舒适的折中：稍微用功就怕过度，纵欲放逸却从不怕过度。他说烦恼也有自己的\"中\"，而它真正的\"中\"常常在枕头和垫褥中。 他用军人作譬喻：两个受过同样训练的人，一个上过战场，一个没有；真正知道战场情况的，一定是打过仗的人。中道也如此，不是记忆中的漂亮概念，而是在与烦恼交战时，知道应当用多少力量、何种方法、怎样对治。 ### 1. 中道不是懦弱 尊者说： > “道心坚决。” 真正的中道不是在烦恼和修行之间各退一步，而是以最适当、最有效的方法对治烦恼。面对强烈烦恼时，软弱不是中道；那只是烦恼给自己找的舒适解释。 尊者甚至说： > “你修行时要是懦弱就还未上路。” ### 2. 烦恼也会伪装成“中” 尊者批评一种看似温和、实则放逸的解释： > “所以，这是谁的‘中’？这只不过是烦恼的‘中’。” 当人说“不要太执着修行”“不要太用力”“随缘就好”时，必须检查这句话来自智慧，还是来自懒惰、贪舒服和怕吃苦。中道不是给烦恼让路，而是不落入无益苦行，",
-          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AD%A3%E7%9F%A5&scope=site",
-          "query": "正知"
+          "text": "ta-fn=\\\"00-007\\\">[00-007]</sup></div><div class=\\\"vism-verse\\\">有些地方，则为戒等的意思。所谓：<br>一切戒圆具，有慧善等持，<br>精进勤勇者，渡难渡暴流。 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-008\\\">[00-008]</sup></div><p>有些地方，是念住等的意思。所谓:「诸比丘，有情的清净……作证涅槃的一乘之道 ，即四念住。」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-009\\\">[00-009]</sup> 四正勤等亦然。</p><p>但在这里，佛陀解答天子的问题，是以戒等的意义来显示的。现在来略释本论最初的 颂意：</p><p>「住戒」，即安住于戒中。这里指圆满（受持）戒律的人而称为住戒者，所以圆满戒 律便是住戒的意义。「人」是有情。「有慧人」，是由业生三因结生的慧 <sup class=\\\"vism-fnref\\\" data-fn=\\\"00-010\\\">[00-010]</sup> ，为有慧者。「修习心与慧」，是修习三摩地（定）和毗钵舍那（观）的意思。这里是用「心 」字来显示三摩地，以「慧」字而名毗钵舍那。「有勤」，是有精进的人。因为精进",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site",
+          "query": "四念住"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap01.json",
+          "heading": "站内搜索命中",
+          "text": "/sup> 之德的善友为近依行处。因为依他可以闻所 未闻、已闻的更明白，解决疑惑，矫正意见，安息其心，或者跟他学习可以增信，亦得增 长戒、闻、舍、慧，故称近依行处。</p><p>什么是守护行处？兹有比丘，进入村落行于道上，收缩眼界仅见眼前一寻※01-005※ 之地，善加 防护而行，不见象（兵），不见马（兵）、车（兵）、步（兵）、妇女、男人，不看上， 不看下，不视四方和四维而行，是名守护行处。</p><p>什么是近缚行处，便是约束其心于四念住中。世尊说:「诸比丘！什么是比丘行处， 什么是你们的世袭传承，便是四念住」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"01-050\\\">[01-050]</sup> 。是名近缚行处。</p><p>这样的正行和行处具足圆满，故说．「正行与行处具足」。</p><p><span class=\\\"vism-page\\\">[020]</span> 「对于微细的罪过亦见其怖畏」，便是对于无意而犯的众学法 <sup class=\\\"vism-fnref\\\" data-fn=\\\"01-051\\\">[01-051]</sup> 及生起不善心等的微细罪过，亦能见其怖畏。</p><p>「受持与学习诸学处」，便是对于任何应当学习的学处都正持学习。</p",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site",
+          "query": "四念住"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "bhūtaṃ nappajānāti. Ajānanto sukhumatthānesu attano ñāṇaṃ carāpetvā lokiyasatipaṭṭhānesu abhinivisitvā lokuttaraṃ nibbattetuṃ na sakkoti —pe—paribāhiro hoti.\", \"chinese_translation\": \"“不善牧食”者，谓彼牧牛者，如不知五日、七日之轮替，不能如实了知四念住“此是世间、此是出世间”。由于不了知，于微细处令自己的智行走，执著于世间念住，不能生起出世间念住——乃至——成为外者。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将“paiicāhasat-”修正为“pañcāhasat-”，将“%”和“`”等符号删除，将“Mojjhimanikāyatthakathā tāhavāre”修正为“sattāhavāre”，将“satipatthüne”修正为“satipaṭṭhāne”，将“lokuttarā”保留，将“yathābhūtan”修正为“yathābhūtaṃ”，将",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&scope=site",
+          "query": "四念住"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：四念住\n\n## 直接回答\n四念住是应该被修习的四法，包括在身上随观身、在受上随观受、在心上随观心、在法上随观法，修习时需热心、正知、有念，以调伏对世间的贪与忧 [1]。证据还表明四念住有具体的修习方法，并存在导向其修习的道迹 [7][8]。\n\n## 要点展开\n### 四念住的内容\n- 四念住包括身、受、心、法四个念住，具体为在身上随观身、在受上随观受、在心上随观心、在法上随观法 [1]。\n- 修习四念住时，需要具备热心、正知、有念，以调伏对世间的贪与忧 [1]。\n\n### 四念住的修习\n- 有经典明确提到“这样是比丘修习四念住、多修习四念住”，并进一步追问“比丘如何修习四念住、多修习四念住呢？” [3][7]。\n- 另有经典记载佛陀将教导四念住、四念住的修习，以及导向四念住的修习道迹 [8]。\n\n### 四念住的名称\n- 多部经典直接称“这些是四念住”或“这被称为四念住”，确认了四念住的名称 [4][5][6]。\n\n## 分歧与张力\n不同经典对四念住的表述侧重略有不同：DN34 详细列出了四念住的具体内容和修习要求 [1]，而其他经典（如 SN 系列）则更侧重于强调四念住的名称和修习的总体框架，未展开具体细节 [3][4][5][6][7][8]。这并非矛盾，而是详略差异。\n\n## 证据覆盖情况\n现有证据覆盖了四念住的定义、内容、修习方法和名称确认，但未提供四念住的具体修习步骤或详细解释，也未涉及四念住与其他法数的关联。\n\n## 引用\n- [1] Early Buddhist · DN34 · 四念住 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82\n  > （二）哪些是应该被修习的四法呢？四念住：学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。\n- [2] Early Buddhist · 经藏/长部_dn · dn18 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn18&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%BF%B5%E4%BD%8F\n  > 四念住\n- [3] Early Buddhist · 经藏/相应部_sn · sn52.8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn52.8&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%AF%94%E4%B8%98%E4%BF%AE%E7%BF%92%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%81%E5%A4%9A%E4%BF%AE%E7%BF%92%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 这样是比丘修习四念住、多修习四念住。\n- [4] Early Buddhist · 经藏/相应部_sn · sn47.24 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.24&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 这些是四念住。\n- [5] Early Buddhist · 经藏/相应部_sn · sn47.36 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.36&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 这些是四念住。\n- [6] Early Buddhist · 经藏/相应部_sn · sn47.40 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.40&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 这被称为四念住。\n- [7] Early Buddhist · 经藏/相应部_sn · sn52.8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn52.8&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AF%94%E4%B8%98%E5%A6%82%E4%BD%95%E4%BF%AE%E7%BF%92%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%81%E5%A4%9A%E4%BF%AE%E7%BF%92%E5%9B%9B%E5%BF%B5%E4%BD%8F%E5%91%A2%EF%BC%9F\n  > 比丘如何修习四念住、多修习四念住呢？\n- [8] Early Buddhist · 经藏/相应部_sn · sn47.40 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.40&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%BD%A0%E5%80%91%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%81%E5%9B%9B%E5%BF%B5%E4%BD%8F%E7%9A%84%E4%BF%AE%E7%BF%92%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%B0%8E%E5%90%91%E5%9B%9B%E5%BF%B5%E4%BD%8F%E7%9A%84%E4%BF%AE%E7%BF%92%E9%81%93%E8%B7%A1%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81\n  > 我将教导你们四念住、四念住的修习，以及导向四念住的修习道迹，你们要听！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -618,16 +246,20 @@
       "order": 2,
       "label": "四念住",
       "members": "学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧",
-      "member_items": [
-        "学友们！这里，比丘住于在身上随观身，热心",
-        "正知",
-        "有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心",
-        "正知",
-        "有念，能调伏对于世间的贪与忧"
-      ],
+      "match_members": "学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧",
+      "member_items": [],
       "dn34_status": "应修习",
+      "source_paragraphs": [
+        "（二）哪些是应该被修习的四法呢？四念住：学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。"
+      ],
       "source_text": "（二）哪些是应该被修习的四法呢？四念住：学友们！这里，比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧；在受上……在心上……住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧，这些是应该被修习的四法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E5%BF%B5%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BD%8F%E6%96%BC%E5%9C%A8%E8%BA%AB%E4%B8%8A%E9%9A%A8%E8%A7%80%E8%BA%AB%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82%EF%BC%9B%E5%9C%A8%E5%8F%97%E4%B8%8A%E2%80%A6%E2%80%A6%E5%9C%A8%E5%BF%83%E4%B8%8A%E2%80%A6%E2%80%A6%E4%BD%8F%E6%96%BC%E5%9C%A8%E6%B3%95%E4%B8%8A%E9%9A%A8%E8%A7%80%E6%B3%95%EF%BC%8C%E7%86%B1%E5%BF%83%E3%80%81%E6%AD%A3%E7%9F%A5%E3%80%81%E6%9C%89%E5%BF%B5%EF%BC%8C%E8%83%BD%E8%AA%BF%E4%BC%8F%E5%B0%8D%E6%96%BC%E4%B8%96%E9%96%93%E7%9A%84%E8%B2%AA%E8%88%87%E6%86%82",
+      "expanded_points": [
+        "身念住：比丘住于在身上随观身，热心、正知、有念，能调伏对于世间的贪与忧。",
+        "受念住：比丘住于在受上随观受，热心、正知、有念，能调伏对于世间的贪与忧。",
+        "心念住：比丘住于在心上随观心，热心、正知、有念，能调伏对于世间的贪与忧。",
+        "法念住：比丘住于在法上随观法，热心、正知、有念，能调伏对于世间的贪与忧。"
+      ]
     }
   ]
 }

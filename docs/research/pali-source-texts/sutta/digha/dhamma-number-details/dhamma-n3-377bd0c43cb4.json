@@ -22,13 +22,13 @@
       "不动行"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三行」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：福行、非福行、不动行。[1]\n\n## 所含各法\n### 福行\n经文将「福行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三行：福行、非福行、不动行。。[1]\n### 非福行\n经文将「非福行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《审虑经》命中：如果造作非福行，则识有非福的转生；。[3]\n### 不动行\n经文将「不动行」列为「三行」的一个成员。Early Buddhist 用该名词检索时，在《审虑经》命中：如果造作不动行，则识有不动的转生。。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 23 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 2 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三行指福行、非福行、不动行 [1][2]。其中，造作非福行会导致识有非福的转生，造作不动行则导致识有不动的转生 [3][4]。\n\n## 要点展开\n### 三行的定义\n- 三行即福行、非福行、不动行 [1][2]。\n\n### 三行的果报\n- 造作非福行，识有非福的转生 [3]。\n- 造作不动行，识有不动的转生 [4]。\n\n## 证据覆盖情况\n现有证据明确给出了三行的名称，并部分说明了非福行与不动行的果报，但未涉及福行的具体果报，也未对三行进行详细展开。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三行",
           "text": "三行：福行、非福行、不动行。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -110,12 +110,30 @@
         },
         {
           "kind": "site",
-          "label": "docs/suttas.json",
-          "text": "false\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn44\", \"name\": \"MN 44 Cūḷavedalla Sutta\", \"focus\": \"有身见、八正道、三行、受想灭\", \"summary\": \"Dhammadinnā 比丘尼解释有身、集灭道、八正道、定、三行、受想灭、无相心解脱等，是术语解释密度最高的经之一。\", \"en_url\": \"https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn44/zh/zhuang?lang=en&reference=none&highlight=fal",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "）中，除了喜之外，除了喜之外，余者（三十五行）是第五善心相应的。第六善心与第五相同（有三十五行相应），只是由有行而起的一点差。其次第七善心，再除无痴外，和其余的（三十四行相应）。第八善心亦然（与三十四行相应），只是由有行而起的一点差别。</p><p>如第一（欲界善心）所说的（诸行）中，除了三种离（恶行） <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-090\\\">[14-090]</sup> 其余的（三十三行）是与色界第一善心相应的。第二（色界善心），除去寻（与三十二行相应），第三（色界善心）更除去伺（与三十一行相应），第四（色界善心）更除去喜（与三十行相应），第五（色界善心）更除去不定中的悲和喜（与二十八行相应）。在四无色善心中也是同样（与二十八行相应），这里只是在无色界的一点不同而已。</p><p>出世间的善心中，先说在初禅的（四）道识的（相应行），与第一色界善识中所说的相同，在第二禅等的（四道识的）种类，与第二色界识等中所说的相同。但这里没有悲、喜 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-091\\\">[14-091]</sup> ，却决定有离（三恶行） <sup class=\\\"vism-fnref\\\" data-fn=\\\"1",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap23.json",
+          "text": "为或无为、世间或出世间、完成或不完成？</p><p>此中：</p><p>（一）「什么是灭定」？是以次第而灭心及心所法之不转起。</p><p>（二）～（三）「谁入彼定？谁不入彼定」？一切凡夫、须陀洹、斯陀含、干观的※23-001※ 阿那含及阿罗汉不入定。获得八等至的阿那含及漏尽者（阿罗汉）入定。即如所说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"23-009\\\">[23-009]</sup> 「具二力故，三行安息故，以十六智行、九定行而得自在的慧，是灭定的智」。而此（灭定的（完成，除了获得八等至的阿那含及漏尽者之外，余者是没有的。所以只是彼等（二者）入定，余者不然。</p><p>这里，什么是「二力」？乃至什么是......「得自在者」？在这里我们可以不必说什么，因为都已解释其概举（即上面的引文）中说过。即所谓： <sup class=\\\"vism-fnref\\\" data-fn=\\\"23-010\\\">[23-010]</sup> 「二力，即止与观的二力。 <span class=\\\"vism-page\\\">[703]</span>什么是止力？以出离而得心一境性及不散乱是止力。以不嗔恚......以光明想......以不散乱......乃至以舍遣随观的入息......以舍",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap12.json",
+          "text": "自恣的布萨日，我要下行于僧伽施巿」。「唯然世尊」。长老拜过了十力（世尊），从原路回到群众的身边。长老在去与来时，都决意让群众看得到他。这是大目犍连长老初行显现神变。他回来将此消息告诉他们之后说：「你们不要以为僧伽施巿太远，明天早餐后出发去那里」。</p><p>世尊对帝释天王说：「大王，明天我要回到人间了」。天王命令毗首羯磨道：「朋友， <span class=\\\"vism-page\\\">[392]</span>世尊欲明日去人间，你当造阶三行，一以黄金造，一以白银造，一以宝珠造」。他便依命建造。第二天世尊站在须山顶，眺望东方世界。多千的轮回* <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-004\\\">[12-004]</sup> * 世界，忽然开朗，如一广场。如是见西方、北方及南方，亦如见东方的一样开朗。他见下至阿鼻地狱，上至阿迦腻咤（色究竟）天。他们说那一天实为世间的开显日。人能见天，天亦见人。并不是说人向上望，诸天向下望，一切都是对面相见的。世尊由中央的宝珠所造之阶下来，六欲诸天在左侧的金阶，净居天与大梵天在右侧的银阶。帝释天主替他拿衣钵，大梵天拿三由旬大的白伞，须夜摩天持牦牛尾的拂，健闼婆之子五顶持三伽鸟多大的毗罗梵崩陀的琴，奏乐以供如来。那一天看见世尊的人，实无一人",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_toc.json",
+          "text": "一九六<br> （II）水界二十部分的作意………………………………二０三<br> （III）火界四部分的作意………………………………二０七<br> （IV）风界六部分的作意…………………………………二０八<br> 3.以简略其相而修习…………………………………………二０九<br> 4.以分别其相而修习…………………………………………二一０<br> 十三行相的修法…………………………………………………二一０<br> 四界差别的功德…………………………………………………二二０<br> 论修定的结语……………………………………………………二二０<br> （从第三品至第十一品，这九品都是说修定的。在<br> 第三品中提出第七怎样修习的问题，至此解释完毕）<br><a href=\\\"#/research/vism/read/11?sec=2\\\"> 八、修定有什么功德……………………………………………………………二二一</a><br> 〔这是在第三品提出的第八个问题，说明修定有能得<br> （一）现法乐住（二）毗钵舍那（三）神通（四）胜有<br>",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三行",
@@ -377,13 +395,43 @@
           "query": "福行"
         },
         {
-          "source": "docs/suttas.json",
+          "source": "docs/research/vism-data/zh_chap14.json",
           "heading": "站内搜索命中",
-          "text": "false\", \"en_author\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"mn44\", \"name\": \"MN 44 Cūḷavedalla Sutta\", \"focus\": \"有身见、八正道、三行、受想灭\", \"summary\": \"Dhammadinnā 比丘尼解释有身、集灭道、八正道、定、三行、受想灭、无相心解脱等，是术语解释密度最高的经之一。\", \"en_url\": \"https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn44/zh/zhuang?lang=en&reference=none&highlight=fal",
+          "text": "）中，除了喜之外，除了喜之外，余者（三十五行）是第五善心相应的。第六善心与第五相同（有三十五行相应），只是由有行而起的一点差。其次第七善心，再除无痴外，和其余的（三十四行相应）。第八善心亦然（与三十四行相应），只是由有行而起的一点差别。</p><p>如第一（欲界善心）所说的（诸行）中，除了三种离（恶行） <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-090\\\">[14-090]</sup> 其余的（三十三行）是与色界第一善心相应的。第二（色界善心），除去寻（与三十二行相应），第三（色界善心）更除去伺（与三十一行相应），第四（色界善心）更除去喜（与三十行相应），第五（色界善心）更除去不定中的悲和喜（与二十八行相应）。在四无色善心中也是同样（与二十八行相应），这里只是在无色界的一点不同而已。</p><p>出世间的善心中，先说在初禅的（四）道识的（相应行），与第一色界善识中所说的相同，在第二禅等的（四道识的）种类，与第二色界识等中所说的相同。但这里没有悲、喜 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-091\\\">[14-091]</sup> ，却决定有离（三恶行） <sup class=\\\"vism-fnref\\\" data-fn=\\\"1",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site",
           "query": "三行"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap23.json",
+          "heading": "站内搜索命中",
+          "text": "为或无为、世间或出世间、完成或不完成？</p><p>此中：</p><p>（一）「什么是灭定」？是以次第而灭心及心所法之不转起。</p><p>（二）～（三）「谁入彼定？谁不入彼定」？一切凡夫、须陀洹、斯陀含、干观的※23-001※ 阿那含及阿罗汉不入定。获得八等至的阿那含及漏尽者（阿罗汉）入定。即如所说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"23-009\\\">[23-009]</sup> 「具二力故，三行安息故，以十六智行、九定行而得自在的慧，是灭定的智」。而此（灭定的（完成，除了获得八等至的阿那含及漏尽者之外，余者是没有的。所以只是彼等（二者）入定，余者不然。</p><p>这里，什么是「二力」？乃至什么是......「得自在者」？在这里我们可以不必说什么，因为都已解释其概举（即上面的引文）中说过。即所谓： <sup class=\\\"vism-fnref\\\" data-fn=\\\"23-010\\\">[23-010]</sup> 「二力，即止与观的二力。 <span class=\\\"vism-page\\\">[703]</span>什么是止力？以出离而得心一境性及不散乱是止力。以不嗔恚......以光明想......以不散乱......乃至以舍遣随观的入息......以舍",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site",
+          "query": "三行"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap12.json",
+          "heading": "站内搜索命中",
+          "text": "自恣的布萨日，我要下行于僧伽施巿」。「唯然世尊」。长老拜过了十力（世尊），从原路回到群众的身边。长老在去与来时，都决意让群众看得到他。这是大目犍连长老初行显现神变。他回来将此消息告诉他们之后说：「你们不要以为僧伽施巿太远，明天早餐后出发去那里」。</p><p>世尊对帝释天王说：「大王，明天我要回到人间了」。天王命令毗首羯磨道：「朋友， <span class=\\\"vism-page\\\">[392]</span>世尊欲明日去人间，你当造阶三行，一以黄金造，一以白银造，一以宝珠造」。他便依命建造。第二天世尊站在须山顶，眺望东方世界。多千的轮回* <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-004\\\">[12-004]</sup> * 世界，忽然开朗，如一广场。如是见西方、北方及南方，亦如见东方的一样开朗。他见下至阿鼻地狱，上至阿迦腻咤（色究竟）天。他们说那一天实为世间的开显日。人能见天，天亦见人。并不是说人向上望，诸天向下望，一切都是对面相见的。世尊由中央的宝珠所造之阶下来，六欲诸天在左侧的金阶，净居天与大梵天在右侧的银阶。帝释天主替他拿衣钵，大梵天拿三由旬大的白伞，须夜摩天持牦牛尾的拂，健闼婆之子五顶持三伽鸟多大的毗罗梵崩陀的琴，奏乐以供如来。那一天看见世尊的人，实无一人",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site",
+          "query": "三行"
+        },
+        {
+          "source": "docs/research/vism-data/zh_toc.json",
+          "heading": "站内搜索命中",
+          "text": "一九六<br> （II）水界二十部分的作意………………………………二０三<br> （III）火界四部分的作意………………………………二０七<br> （IV）风界六部分的作意…………………………………二０八<br> 3.以简略其相而修习…………………………………………二０九<br> 4.以分别其相而修习…………………………………………二一０<br> 十三行相的修法…………………………………………………二一０<br> 四界差别的功德…………………………………………………二二０<br> 论修定的结语……………………………………………………二二０<br> （从第三品至第十一品，这九品都是说修定的。在<br> 第三品中提出第七怎样修习的问题，至此解释完毕）<br><a href=\\\"#/research/vism/read/11?sec=2\\\"> 八、修定有什么功德……………………………………………………………二二一</a><br> 〔这是在第三品提出的第八个问题，说明修定有能得<br> （一）现法乐住（二）毗钵舍那（三）神通（四）胜有<br>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E8%A1%8C&scope=site",
+          "query": "三行"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap07.json",
+          "heading": "站内搜索命中",
+          "text": "他为远离，<br>无诸过恶，<br>称我主 <sup class=\\\"vism-fnref\\\" data-fn=\\\"07-004\\\">[07-004]</sup> 为阿罗汉。</div><p>（２）以道而破诸烦恼之贼，所以说「破贼故」为阿罗汉。</p><div class=\\\"vism-verse\\\">我主以般若之剑，<br>斩杀了<br>那称为贪等的烦恼之贼，<br>所以叫他为阿罗汉。</div><p>（３）以无明与有爱作成的谷，由福行等所成的辐，老与死的辋，贯以诸漏集成的轴，连接于三有的车的这个无始以来辗转轮回的车轮，世尊于菩提树下，以精进的两足，站在戒的地上，以信的手，执业尽智的斧，破一切辐，所以说「破辐故」为阿罗汉。或者轮回的轮是说无始以来的轮回流转，因为无明是根本故为谷，老死是最后故为辋，其余十法是以无明为根本，以老死为周边故为辐。</p><p><span class=\\\"vism-page\\\">[199]</span></p><p>（说十二支）对于苦等四谛的无智为无明，欲界的无明为欲界诸行的缘，色界的无明为色界诸行的缘，无色界的无明为无色界诸行的缘。欲界的诸行为欲界结生识的缘，余者（色界无色界的诸行）亦同样的（为色无色界结生识的缘）。欲界的结生识为欲界名色的缘。色界亦然。（无色界的结生识）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%A6%8F%E8%A1%8C&scope=site",
+          "query": "福行"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：三行\n\n## 直接回答\n三行指福行、非福行、不动行 [1][2]。其中，造作非福行会导致识有非福的转生，造作不动行则导致识有不动的转生 [3][4]。\n\n## 要点展开\n### 三行的定义\n- 三行即福行、非福行、不动行 [1][2]。\n\n### 三行的果报\n- 造作非福行，识有非福的转生 [3]。\n- 造作不动行，识有不动的转生 [4]。\n\n## 证据覆盖情况\n现有证据明确给出了三行的名称，并部分说明了非福行与不动行的果报，但未涉及福行的具体果报，也未对三行进行详细展开。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三行 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82\n  > 三行：福行、非福行、不动行。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%A1%8C%EF%BC%9A%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82\n  > 三行：福行、非福行、不动行。\n- [3] Early Buddhist · 经藏/相应部_sn · sn12.51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E9%9D%9E%E7%A6%8F%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E9%9D%9E%E7%A6%8F%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E9%9D%9E%E7%A6%8F%E7%9A%84%E8%BD%89%E7%94%9F%EF%BC%9B\n  > 如果造作非福行，则识有非福的转生；\n- [4] Early Buddhist · 经藏/相应部_sn · sn12.51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.51&lang=zh&q=%E4%B8%8D%E5%8B%95%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E9%80%A0%E4%BD%9C%E4%B8%8D%E5%8B%95%E8%A1%8C%EF%BC%8C%E5%89%87%E8%AD%98%E6%9C%89%E4%B8%8D%E5%8B%95%E7%9A%84%E8%BD%89%E7%94%9F%E3%80%82\n  > 如果造作不动行，则识有不动的转生。\n- [5] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%B8%85%E6%B7%A8%E8%A1%8C%EF%BC%9A%E8%BA%AB%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E8%AA%9E%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%81%E6%84%8F%E6%B8%85%E6%B7%A8%E8%A1%8C%E3%80%82\n  > 三清净行：身清净行、语清净行、意清净行。\n- [6] Early Buddhist · 经藏/小部_kn · kp9 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82\n  > W-X 三 不为智者所非难，不作任何卑贱行。\n- [7] Early Buddhist · 经藏/小部_kn · snp1.8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=wuxing&mt=W-X+%E4%B8%89+%E4%B8%8D%E7%82%BA%E6%99%BA%E8%80%85%E6%89%80%E9%9D%9E%E9%9B%A3%EF%BC%8C%E4%B8%8D%E4%BD%9C%E4%BB%BB%E4%BD%95%E5%8D%91%E8%B3%A4%E8%A1%8C%E3%80%82\n  > W-X 三 不为智者所非难，不作任何卑贱行。\n- [8] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 三之问题、三之总说、三之解说；",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -393,15 +441,24 @@
       "number": 3,
       "order": 35,
       "label": "三行",
-      "members": "福行、非福行、不动行",
+      "members": "福行、非福行、不动行。",
+      "match_members": "福行、非福行、不动行",
       "member_items": [
         "福行",
         "非福行",
         "不动行"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三行：福行、非福行、不动行。"
+      ],
       "source_text": "三行：福行、非福行、不动行。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A6%8F%E8%A1%8C%E3%80%81%E9%9D%9E%E7%A6%8F%E8%A1%8C%E3%80%81%E4%B8%8D%E5%8B%95%E8%A1%8C%E3%80%82",
+      "expanded_points": [
+        "福行：指能带来福报的业行。",
+        "非福行：指能带来非福报的业行。",
+        "不动行：指能带来不动果报的业行。"
+      ]
     }
   ]
 }

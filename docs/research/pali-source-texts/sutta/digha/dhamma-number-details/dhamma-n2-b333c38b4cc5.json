@@ -5,7 +5,8 @@
     "number": 2,
     "label": "由二界所组成",
     "member_items": [
-      "有为界与无为界"
+      "有为界",
+      "无为界"
     ],
     "group_ids": [
       "dn34-n2-g9"
@@ -15,10 +16,11 @@
     ],
     "search_terms": [
       "由二界所组成",
-      "有为界与无为界"
+      "有为界",
+      "无为界"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「由二界所组成」属于 2 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：有为界与无为界。[1]\n\n## 所含各法\n### 有为界与无为界\n经文将「有为界与无为界」列为「由二界所组成」的一个成员。Early Buddhist 用该名词检索时，在《多界经》命中：有这二界：有为界、无为界，阿难！。[3]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 2 个关键词，冻结 16 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n由二界所组成的二法是指有为界与无为界，这些是应该被证知的二法 [1][2]。\n\n## 要点展开\n### 二法的构成\n- 由二界所组成的二法，即有为界与无为界 [1][2]。\n- 这些二法被列为应该被证知的法 [1][2]。\n\n## 证据覆盖情况\n现有证据仅覆盖了“由二界所组成”这一法数的定义，未涉及其他方面。",
       "evidence": [
         {
           "kind": "source",
@@ -31,12 +33,6 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn34",
           "text": "由二界所组成：有为界与无为界，这些是应该被证知的二法。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90%EF%BC%9A%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/中部_mn · mn115",
-          "text": "有这二界：有为界、无为界，阿难！",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%95%8C%EF%BC%9A%E6%9C%89%E7%82%BA%E7%95%8C%E3%80%81%E7%84%A1%E7%82%BA%E7%95%8C%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
         },
         {
           "kind": "early_buddhist",
@@ -81,25 +77,37 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.79&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%EF%BC%9A%E8%81%96%E5%BC%9F%E5%AD%90%E6%8B%86%E8%A7%A3%E8%80%8C%E4%B8%8D%E7%B5%84%E6%88%90%EF%BC%9B"
         },
         {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an3.47",
-          "text": "有这三种无为的无为相，哪三种呢？",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.47&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%84%A1%E7%82%BA%E7%9A%84%E7%84%A1%E7%82%BA%E7%9B%B8%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "惑。 **证得初果（须陀洹）的巨大利益**（第十四节，本篇的高潮）：一旦彻底根除\"我见\"，破除身见及一切邪见后： - **不再堕入恶趣**：过去伴随生命的一切恶业种子彻底熄灭，未来也不再造作导致堕落恶趣的恶业； - **证得涅槃**：即\"有余依涅槃\"（Sa-upādisesa-nibbāna），烦恼彻底熄灭而蕴身尚存； - **不再死亡**：此涅槃状态永恒不变，称为\"不死界\"（Amata-dhātu）； - **无生**：此状态是\"无为界\"（Asaṅkhata-dhātu），是涅槃的别名； - 须陀洹**最多在人天之间往返七次**便证得究竟涅槃，且**永不堕入四恶道**。 雷迪大长老以佛陀时代舍卫城、波罗奈、毗舍离、王舍城等地\"数不清的居士证得须陀洹\"为例，说明此教法之殊胜与普及。 --- ## 第四部分：《法则手册》（Niyāma Dīpanī）——自然法则手册 本手册视野最为宏大，从宇宙论、认识论的高度阐述佛教对\"自然秩序\"的理解，共分六节，末附一段珍贵的学术通信（雷迪大长老与李斯·戴维斯夫人关于\"法性法则\"的书信讨论）。 ### 一、五种法性法则（Niyāma） 佛陀之所以能\"依自然法则而成正觉\"，是因为宇宙中存在五种运作不辍的秩序： 1. **时节法则**（Utu-niyāma",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site"
         },
         {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/长部_dn · dn21",
-          "text": "世间有许多界、种种界。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "/ range / leading on 3. **十二处的分类** → 内六处与外六处的对应 4. **如何观察十二处** → 无来处无去处，内处如空村，外处如强盗 5. **十八界的意义分析** → 七种方式解析\"界\"的含义 6. **\"界\"的词义** → dhātu的五重意义 7. **为何恰好十八界** → 消除\"意识中有灵魂\"的邪见 8. **各界的比喻** → 眼如鼓面、色如鼓槌、眼识如声 9. **如何观察十八界** → 有为界无自性，涅槃界（无为界）= 不死之安宁 ### 第一部分：十二处（Āyatana，XV.1-16） #### 1. 十二处列举 > “[481] ‘处’（XIV.32）就是十二处，即眼处、色处、耳处、声处、鼻处、香处、舌处、味处、身处、触处、意处和法处。”（XV.1） 十二处对应六个认知系统（感官门＋感官对象）： | 内处（Internal） | 外处（External） | |--------------|--------------| | 眼处（eye base） | 色处（visible-data base） | | 耳处（ear base） | 声处（sound base） | | 鼻处（nose base） | 香处（odo",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E7%82%BA%E7%95%8C&scope=site"
         },
         {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an6.38",
-          "text": "你怎么想：有精勤界……（中略）有努力界……有刚毅界……有存续界……有行动界吗？",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.38&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BD%A0%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E6%9C%89%E7%B2%BE%E5%8B%A4%E7%95%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%9C%89%E5%8A%AA%E5%8A%9B%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E5%89%9B%E6%AF%85%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E5%AD%98%E7%BA%8C%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E8%A1%8C%E5%8B%95%E7%95%8C%E5%97%8E%EF%BC%9F"
+          "kind": "site",
+          "label": "docs/research/buddhist-systems-comparison/matrix.md",
+          "text": "识所缘者：颜色、声、香、味及地火风三触境；水界不是身识直接所触。 - 五净色与两家五根是功能上的最强对应，但唯识以识变说明根境，不能据同名判定存在论一致。 - 上座部虚空界是限定色聚的所造色，不是有部/唯识的虚空无为。 - 身表、语表不是有部无表色；“表”与“无表”方向相反。 - 四种相色只说明色法；不能据此声称上座部把一切有为法的生住异灭都另立为四个究竟法。 --- ## 五、涅槃与三家无为法 依据AMA第6章末“涅槃”、Vbh无为界；《俱舍论》卷1；《百法明门论》《成唯识论》卷2。表中“无对应”仅指没有同定义的独立究竟法。 | ID | 主轴/反向项目 | 上座部 | 有部 | 唯识 | 判定 | |---|---|---|---|---|---| | T-N01 | 涅槃 nibbāna | 唯一无为究竟法；贪嗔痴止息、出离有为 | 择灭无为 | 择灭无为；亦与真如的证悟语境相关 | **高度对应但非无条件同一** | | N-A01 | 虚空无为 | 虚空概念不立为第二无为；虚空界T-R19是色 | 虚空无为 | 虚空无为 | 北传独立法；严禁等同T-R19 | | N-A02 | 非择灭无为 | 无独立究竟法 | 非择灭无为 | 非择灭无为 | 无；不由抉择慧所得的毕竟不生 | | N",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap15.json",
+          "text": "勤界、勤勇界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-021\\\">[15-021]</sup> 、劣界、中界、胜界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-022\\\">[15-022]</sup> 、地界、水界、火界、风界、空界、识界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-023\\\">[15-023]</sup> 、有为界、无为界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-025\\\">[15-025]</sup> 、多界、种种界的世间。</p><p>（问）既然这样，为什么不以不切界为限而只以此十八界为限呢？（答）因为所存的一切界，从自性上说，都可以含摄于此十八界之中的缘故。即「光明界」只不过是色界。「净界」亦与色等有关。何以故？因为它只是一种净的相，即净相而为净界，那净相是不能离开色等而存在的。或者说，善异熟识的所缘的色等为净界，所以净界只是色等而已。在「空无边处界」等之中，那心法则摄意识界中，余者（心所法）则摄于法界中，其次「想受灭界」，实无自性；只是（意识界及法界）二界的灭而已。「欲界」只是法界；即所谓 <sup class=\\\"vism-f",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E7%82%BA%E7%95%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap16.json",
+          "text": "，一切的「苦」，依其现起之性为一种。依名与色为二种。依欲、色、无色界的生起各别为三种。依四食为四种。依五取蕴的差别为五种。</p><p>「集」亦依其现起之性为一种。由于邪见的相应与不相应为二种。依欲爱、有爱、无有爱为三种。由四果道所断故为四种。由于色欢喜等 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-067\\\">[16-067]</sup> 的不同为五种。由于六爱身的不同为六种。</p><p>「灭」亦依无为界为一种。依于经说的有余依及无余依的差别为二种。由于三有的寂灭故为三种。由于四圣道而证故为四种。由于五欢喜(色声香味触的五欲)的寂灭故为五种。由于六爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "由二界所组成",
@@ -187,92 +195,53 @@
           ]
         },
         {
-          "query": "有为界与无为界",
-          "hits": [
-            {
-              "uid": "mn115",
-              "collection": "经藏/中部_mn",
-              "title": "多界经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "有这二界：有为界、无为界，阿难！",
-              "score": 31.58763669190042,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%95%8C%EF%BC%9A%E6%9C%89%E7%82%BA%E7%95%8C%E3%80%81%E7%84%A1%E7%82%BA%E7%95%8C%EF%BC%8C%E9%98%BF%E9%9B%A3%EF%BC%81"
-            },
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "由二界所组成：有为界与无为界，这些是应该被证知的二法。",
-              "score": 30.48061273505421,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90%EF%BC%9A%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "an3.47",
-              "collection": "经藏/增支部_an",
-              "title": "有为相经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "有这三种无为的无为相，哪三种呢？",
-              "score": 15.24087001087094,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.47&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%84%A1%E7%82%BA%E7%9A%84%E7%84%A1%E7%82%BA%E7%9B%B8%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F"
-            },
-            {
-              "uid": "dn21",
-              "collection": "经藏/长部_dn",
-              "title": "帝释所问经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "世间有许多界、种种界。",
-              "score": 14.476517018610245,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82"
-            },
-            {
-              "uid": "an6.38",
-              "collection": "经藏/增支部_an",
-              "title": "自己所作经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "你怎么想：有精勤界……（中略）有努力界……有刚毅界……有存续界……有行动界吗？",
-              "score": 12.48574690513769,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.38&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BD%A0%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E6%9C%89%E7%B2%BE%E5%8B%A4%E7%95%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%9C%89%E5%8A%AA%E5%8A%9B%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E5%89%9B%E6%AF%85%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E5%AD%98%E7%BA%8C%E7%95%8C%E2%80%A6%E2%80%A6%E6%9C%89%E8%A1%8C%E5%8B%95%E7%95%8C%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "mn44",
-              "collection": "经藏/中部_mn",
-              "title": "毘陀罗小经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "这八支圣道是有为的，或者无为的呢？",
-              "score": 12.375673399829154,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%98%AF%E6%9C%89%E7%82%BA%E7%9A%84%EF%BC%8C%E6%88%96%E8%80%85%E7%84%A1%E7%82%BA%E7%9A%84%E5%91%A2%EF%BC%9F"
-            },
-            {
-              "uid": "an3.47",
-              "collection": "经藏/增支部_an",
-              "title": "有为相经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "这是三种无为的无为相。",
-              "score": 11.724300523967994,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.47&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E7%A8%AE%E7%84%A1%E7%82%BA%E7%9A%84%E7%84%A1%E7%82%BA%E7%9B%B8%E3%80%82"
-            },
-            {
-              "uid": "an6.38",
-              "collection": "经藏/增支部_an",
-              "title": "自己所作经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "你怎么想：有开始界吗？",
-              "score": 11.544077385030672,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.38&lang=zh&q=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BD%A0%E6%80%8E%E9%BA%BC%E6%83%B3%EF%BC%9A%E6%9C%89%E9%96%8B%E5%A7%8B%E7%95%8C%E5%97%8E%EF%BC%9F"
-            }
-          ]
+          "query": "有为界",
+          "hits": []
+        },
+        {
+          "query": "无为界",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "惑。 **证得初果（须陀洹）的巨大利益**（第十四节，本篇的高潮）：一旦彻底根除\"我见\"，破除身见及一切邪见后： - **不再堕入恶趣**：过去伴随生命的一切恶业种子彻底熄灭，未来也不再造作导致堕落恶趣的恶业； - **证得涅槃**：即\"有余依涅槃\"（Sa-upādisesa-nibbāna），烦恼彻底熄灭而蕴身尚存； - **不再死亡**：此涅槃状态永恒不变，称为\"不死界\"（Amata-dhātu）； - **无生**：此状态是\"无为界\"（Asaṅkhata-dhātu），是涅槃的别名； - 须陀洹**最多在人天之间往返七次**便证得究竟涅槃，且**永不堕入四恶道**。 雷迪大长老以佛陀时代舍卫城、波罗奈、毗舍离、王舍城等地\"数不清的居士证得须陀洹\"为例，说明此教法之殊胜与普及。 --- ## 第四部分：《法则手册》（Niyāma Dīpanī）——自然法则手册 本手册视野最为宏大，从宇宙论、认识论的高度阐述佛教对\"自然秩序\"的理解，共分六节，末附一段珍贵的学术通信（雷迪大长老与李斯·戴维斯夫人关于\"法性法则\"的书信讨论）。 ### 一、五种法性法则（Niyāma） 佛陀之所以能\"依自然法则而成正觉\"，是因为宇宙中存在五种运作不辍的秩序： 1. **时节法则**（Utu-niyāma",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site",
+          "query": "无为界"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "/ range / leading on 3. **十二处的分类** → 内六处与外六处的对应 4. **如何观察十二处** → 无来处无去处，内处如空村，外处如强盗 5. **十八界的意义分析** → 七种方式解析\"界\"的含义 6. **\"界\"的词义** → dhātu的五重意义 7. **为何恰好十八界** → 消除\"意识中有灵魂\"的邪见 8. **各界的比喻** → 眼如鼓面、色如鼓槌、眼识如声 9. **如何观察十八界** → 有为界无自性，涅槃界（无为界）= 不死之安宁 ### 第一部分：十二处（Āyatana，XV.1-16） #### 1. 十二处列举 > “[481] ‘处’（XIV.32）就是十二处，即眼处、色处、耳处、声处、鼻处、香处、舌处、味处、身处、触处、意处和法处。”（XV.1） 十二处对应六个认知系统（感官门＋感官对象）： | 内处（Internal） | 外处（External） | |--------------|--------------| | 眼处（eye base） | 色处（visible-data base） | | 耳处（ear base） | 声处（sound base） | | 鼻处（nose base） | 香处（odo",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E7%82%BA%E7%95%8C&scope=site",
+          "query": "有为界"
+        },
+        {
+          "source": "docs/research/buddhist-systems-comparison/matrix.md",
+          "heading": "站内搜索命中",
+          "text": "识所缘者：颜色、声、香、味及地火风三触境；水界不是身识直接所触。 - 五净色与两家五根是功能上的最强对应，但唯识以识变说明根境，不能据同名判定存在论一致。 - 上座部虚空界是限定色聚的所造色，不是有部/唯识的虚空无为。 - 身表、语表不是有部无表色；“表”与“无表”方向相反。 - 四种相色只说明色法；不能据此声称上座部把一切有为法的生住异灭都另立为四个究竟法。 --- ## 五、涅槃与三家无为法 依据AMA第6章末“涅槃”、Vbh无为界；《俱舍论》卷1；《百法明门论》《成唯识论》卷2。表中“无对应”仅指没有同定义的独立究竟法。 | ID | 主轴/反向项目 | 上座部 | 有部 | 唯识 | 判定 | |---|---|---|---|---|---| | T-N01 | 涅槃 nibbāna | 唯一无为究竟法；贪嗔痴止息、出离有为 | 择灭无为 | 择灭无为；亦与真如的证悟语境相关 | **高度对应但非无条件同一** | | N-A01 | 虚空无为 | 虚空概念不立为第二无为；虚空界T-R19是色 | 虚空无为 | 虚空无为 | 北传独立法；严禁等同T-R19 | | N-A02 | 非择灭无为 | 无独立究竟法 | 非择灭无为 | 非择灭无为 | 无；不由抉择慧所得的毕竟不生 | | N",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site",
+          "query": "无为界"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap15.json",
+          "heading": "站内搜索命中",
+          "text": "勤界、勤勇界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-021\\\">[15-021]</sup> 、劣界、中界、胜界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-022\\\">[15-022]</sup> 、地界、水界、火界、风界、空界、识界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-023\\\">[15-023]</sup> 、有为界、无为界 <sup class=\\\"vism-fnref\\\" data-fn=\\\"15-025\\\">[15-025]</sup> 、多界、种种界的世间。</p><p>（问）既然这样，为什么不以不切界为限而只以此十八界为限呢？（答）因为所存的一切界，从自性上说，都可以含摄于此十八界之中的缘故。即「光明界」只不过是色界。「净界」亦与色等有关。何以故？因为它只是一种净的相，即净相而为净界，那净相是不能离开色等而存在的。或者说，善异熟识的所缘的色等为净界，所以净界只是色等而已。在「空无边处界」等之中，那心法则摄意识界中，余者（心所法）则摄于法界中，其次「想受灭界」，实无自性；只是（意识界及法界）二界的灭而已。「欲界」只是法界；即所谓 <sup class=\\\"vism-f",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E7%82%BA%E7%95%8C&scope=site",
+          "query": "有为界"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap16.json",
+          "heading": "站内搜索命中",
+          "text": "，一切的「苦」，依其现起之性为一种。依名与色为二种。依欲、色、无色界的生起各别为三种。依四食为四种。依五取蕴的差别为五种。</p><p>「集」亦依其现起之性为一种。由于邪见的相应与不相应为二种。依欲爱、有爱、无有爱为三种。由四果道所断故为四种。由于色欢喜等 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-067\\\">[16-067]</sup> 的不同为五种。由于六爱身的不同为六种。</p><p>「灭」亦依无为界为一种。依于经说的有余依及无余依的差别为二种。由于三有的寂灭故为三种。由于四圣道而证故为四种。由于五欢喜(色声香味触的五欲)的寂灭故为五种。由于六爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E7%82%BA%E7%95%8C&scope=site",
+          "query": "无为界"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：由二界所组成\n\n## 直接回答\n由二界所组成的二法是指有为界与无为界，这些是应该被证知的二法 [1][2]。\n\n## 要点展开\n### 二法的构成\n- 由二界所组成的二法，即有为界与无为界 [1][2]。\n- 这些二法被列为应该被证知的法 [1][2]。\n\n## 证据覆盖情况\n现有证据仅覆盖了“由二界所组成”这一法数的定义，未涉及其他方面。\n\n## 引用\n- [1] Early Buddhist · DN34 · 由二界所组成 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C\n  > （九）哪些是应该被证知的二法呢？由二界所组成：有为界与无为界，这些是应该被证知的二法。\n- [2] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90%EF%BC%9A%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82\n  > 由二界所组成：有为界与无为界，这些是应该被证知的二法。\n- [3] Early Buddhist · 经藏/相应部_sn · sn22.79 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.79&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E6%8B%86%E8%A7%A3%E8%80%8C%E4%B8%8D%E7%B5%84%E6%88%90%E4%BB%80%E9%BA%BC%EF%BC%9F\n  > 他拆解而不组成什么？\n- [4] Early Buddhist · 经藏/相应部_sn · sn22.79 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.79&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%96%E6%8B%86%E8%A7%A3%E8%80%8C%E4%B8%8D%E7%B5%84%E6%88%90%E8%89%B2%EF%BC%9B\n  > 他拆解而不组成色；\n- [5] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%A8%E9%83%A8%E7%94%B1%E4%B8%89%E5%93%81%E7%B5%84%E6%88%90%E3%80%82\n  > 全部由三品组成。\n- [6] Early Buddhist · 经藏/相应部_sn · sn35.228 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn35.228&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%8D%E4%BA%BA%E4%BE%86%E8%AA%AA%EF%BC%8C%E7%9C%BC%E6%98%AF%E6%B5%B7%EF%BC%8C%E5%85%B6%E6%80%A5%E6%B5%81%E6%98%AF%E8%89%B2%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%EF%BC%8C%E5%87%A1%E5%BE%81%E6%9C%8D%E8%89%B2%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%E6%80%A5%E6%B5%81%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 对人来说，眼是海，其急流是色所组成的，凡征服色所组成的急流者，比丘们！\n- [7] Early Buddhist · 经藏/相应部_sn · sn35.228 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn35.228&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%8D%E4%BA%BA%E4%BE%86%E8%AA%AA%EF%BC%8C%E8%88%8C%E6%98%AF%E6%B5%B7%EF%BC%8C%E5%85%B6%E6%80%A5%E6%B5%81%E6%98%AF%E5%91%B3%E9%81%93%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%EF%BC%8C%E5%87%A1%E5%BE%81%E6%9C%8D%E5%91%B3%E9%81%93%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%E6%80%A5%E6%B5%81%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 对人来说，舌是海，其急流是味道所组成的，凡征服味道所组成的急流者，比丘们！\n- [8] Early Buddhist · 经藏/相应部_sn · sn35.228 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn35.228&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B0%8D%E4%BA%BA%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%84%8F%E6%98%AF%E6%B5%B7%EF%BC%8C%E5%85%B6%E6%80%A5%E6%B5%81%E6%98%AF%E6%B3%95%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%EF%BC%8C%E5%87%A1%E5%BE%81%E6%9C%8D%E6%B3%95%E6%89%80%E7%B5%84%E6%88%90%E7%9A%84%E6%80%A5%E6%B5%81%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 对人来说，意是海，其急流是法所组成的，凡征服法所组成的急流者，比丘们！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -283,12 +252,21 @@
       "order": 9,
       "label": "由二界所组成",
       "members": "有为界与无为界",
+      "match_members": "有为界与无为界",
       "member_items": [
-        "有为界与无为界"
+        "有为界",
+        "无为界"
       ],
       "dn34_status": "应证知",
+      "source_paragraphs": [
+        "（九）哪些是应该被证知的二法呢？由二界所组成：有为界与无为界，这些是应该被证知的二法。"
+      ],
       "source_text": "（九）哪些是应该被证知的二法呢？由二界所组成：有为界与无为界，这些是应该被证知的二法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%94%B1%E4%BA%8C%E7%95%8C%E6%89%80%E7%B5%84%E6%88%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E7%82%BA%E7%95%8C%E8%88%87%E7%84%A1%E7%82%BA%E7%95%8C",
+      "expanded_points": [
+        "有为界：指有为法构成的界，是应该被证知的二法之一。",
+        "无为界：指无为法构成的界，是应该被证知的二法之一。"
+      ]
     }
   ]
 }

@@ -22,13 +22,13 @@
       "以怀疑"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三举罪事」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：以看见、以听闻、以怀疑。[1]\n\n## 所含各法\n### 以看见\n经文将「以看见」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《黑园经》命中：像这样，如来看见能被看见的后，不思量看见的，不思量没看见的，不思量能被看见的，不思量看见者；。[3]\n### 以听闻\n经文将「以听闻」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《黑园经》命中：听闻能被听闻的后，不思量听闻的，不思量没听闻的，不思量能被听闻的，不思量听闻者；。[4]\n### 以怀疑\n经文将「以怀疑」列为「三举罪事」的一个成员。Early Buddhist 用该名词检索时，在《地狱品》命中：怀疑修梵行，。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三举罪事指以看见、以听闻、以怀疑三种方式举发罪过 [1][2]。现有证据仅列出此三项，未涉及具体内容或适用条件。\n\n## 要点展开\n### 三举罪事的定义\n- 三举罪事为：以看见、以听闻、以怀疑 [1][2]。\n\n### 相关概念\n- 看见、听闻、怀疑在经文中常与认知和修行相关，如如来看见后不思量所见 [3]，听闻后不思量所闻 [4]，以及怀疑与梵行相关 [5]。\n\n## 证据覆盖情况\n现有证据仅直接列出三举罪事的三项名称，未说明其具体内容、适用场景或与相关概念（如看见、听闻、怀疑）的关联。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三举罪事",
           "text": "三举罪事：以看见、以听闻、以怀疑。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -101,9 +101,33 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn29.7",
           "text": "听闻经",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn29.7&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%81%BD%E8%81%9E%E7%B6%93"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "（cessation / dissolution）。 **灭随观智的四个特征**（XXI.20-21）： - *对象的置换*（substitution of the object）：见到物质性消逝后，转以见到那个意识的消逝为对象 - *理解的转移*（transference of understanding）：舍弃对生起的关注，专注于消逝 - *转向的力量*（the power of adverting）：看到物质性消逝后，能即刻转向以看见意识的消逝 - *由同一对象以推断定义两者*：以推理和归纳，将所见的消逝推广到未见的行法 **八种利益**（XXI.28）：修行者持续见到一切行法不断消逝，由此灭随观智带来八种利益： 1. 舍弃对\"变成\"的错误见解 2. 放弃对生命的执着 3. 对善法的持续精进 4. 清净的生活方式 5. 无更多焦虑 6. 无恐惧 7. 获得忍耐与温和 8. 征服厌倦（无聊）与官能享乐 **代表性引文**（XXI.18）： > “无常、苦、无我的，不是值得喜爱的；不是值得喜爱的，就不值得生起贪欲。因此，当他依照坏灭随观，看见那一片诸行为无常、苦、无我时，便离贪，不再喜爱；他使贪欲褪去，而不使它增长。”（XXI.18） **比喻**（XXI.27）： > “谁若把世界看作泡沫，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "><p>（８）对于所缘持心平等，或正持，或心的等持故为「定」。它有不散或不乱的特相；有统一俱生（心、心所）的作用，如水之于洗澡粉相似；以寂止为现状；以殊胜的乐为近因。当知于定中的心的静止，正如在无风之处的灯焰的静止一样。</p><p>（９）依此而（人）信故，或他自己信故或只是信故为「信」。它有信或信任的特相。有净信的作用，如能深水的摩尼宝珠；或有跳跃（从不信至信）的作用，如渡瀑流相似。以不玷污为现状，或以信解为现状。以起信之事为近因，或以听闻正法等的须陀洹支 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-083\\\">[14-083]</sup> 为近因。当知信如手、财产，及种子。 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-084\\\">[14-084]</sup></p><p>（１０）依此而（相应诸法）忆念故，或他自己忆念故，或只是忆念故为「念」。它有不使流去 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-085\\\">[14-085]</sup> 或* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-010\\\">[14-010]</sup> * 不忘失的作用。以守护或向境的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E8%81%BD%E8%81%9E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap12.json",
+          "text": "class=\\\"vism-fnref\\\" data-fn=\\\"12-072\\\">[12-072]</sup> 之上，向三十三天界去。此时，难陀优波难陀便起了这样的恶见：「真的，这些秃头沙门，次第的经过我的上方世界，出入于三十三天，自今以后，不许他们走在我的上面，散布他的足尘」，便起来跑到须弥山之麓，舍了他的真相，盘绕须弥山七匝，展开他的头在上面，又把头从上面向下，遮住三十三天，令不能见。当时尊者护国对世尊说：「尊师，从前我站在这里，可以看见须弥山，看见须弥山腰，看见三十三天，看见最胜宫，看见最胜宫上面的旗。尊师，何因何缘，现在却不能见须弥山......乃至不能见最胜宫上面的旗」？「护国，因为难陀优波难陀龙王对你们发怒了，他盘绕了须弥山七匝，以他的头遮住上面，而成黑暗」。「那末，尊师，让我去降伏他吧」：？世尊没有允许。于是尊者拔提，尊者罗候罗及一切比丘，都次第的起而请求，但世尊都没有允许。最后，大目犍长老说：「尊师，让我去降伏吧」。世尊听许道：「目犍连，去降伏他」。长老舍了自己的本相，化成龙王之形，盘绕须弥山十四匝，把自己的头放在他的头之上，把他和须弥山一起捆紧在里面。龙王即吐烟。 <span class=\\\"vism-page\\\">[400]</span>长老说：「不只是你的身体有烟，我也有的」，亦吐",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "n’ ev' āha:— \\\" Nirayaṃ tāva passāmi āvāsaṃ pāpakamminaṃ Ṭhānāni luddakammānaṃ dussīlānañ ca ye gati\\\" ti.\", \"chinese_translation\": \"在那里，“以哪一条”的意思是：大王，这些道路中，一条通往地狱，一条通往天界。其中，你以哪一条带我？意思是：以哪条道路去，在那里，恶行者们感受恶业的异熟，那样的地方是可以看见的。第二句也是如此。在《本生》中也有：“大王，最胜者，四方之主，我以哪条道路带你？是恶行者，还是造福者？”偈颂的意义就是这样。因此他说：“我先看地狱，恶行者的住处，凶恶行为者的处所，以及恶戒者的趣。”\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'katamend' 应为 'katamenā'，'ti' 正确，'mahārāja' 正确，'imesu' 正确，'maggesu' 正确，'eko' 正确，'nirayan' 应为 'nirayaṃ'，'gacchati' 正确，'devalokaņ' 应为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三举罪事",
@@ -376,7 +400,38 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "（cessation / dissolution）。 **灭随观智的四个特征**（XXI.20-21）： - *对象的置换*（substitution of the object）：见到物质性消逝后，转以见到那个意识的消逝为对象 - *理解的转移*（transference of understanding）：舍弃对生起的关注，专注于消逝 - *转向的力量*（the power of adverting）：看到物质性消逝后，能即刻转向以看见意识的消逝 - *由同一对象以推断定义两者*：以推理和归纳，将所见的消逝推广到未见的行法 **八种利益**（XXI.28）：修行者持续见到一切行法不断消逝，由此灭随观智带来八种利益： 1. 舍弃对\"变成\"的错误见解 2. 放弃对生命的执着 3. 对善法的持续精进 4. 清净的生活方式 5. 无更多焦虑 6. 无恐惧 7. 获得忍耐与温和 8. 征服厌倦（无聊）与官能享乐 **代表性引文**（XXI.18）： > “无常、苦、无我的，不是值得喜爱的；不是值得喜爱的，就不值得生起贪欲。因此，当他依照坏灭随观，看见那一片诸行为无常、苦、无我时，便离贪，不再喜爱；他使贪欲褪去，而不使它增长。”（XXI.18） **比喻**（XXI.27）： > “谁若把世界看作泡沫，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site",
+          "query": "以看见"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "><p>（８）对于所缘持心平等，或正持，或心的等持故为「定」。它有不散或不乱的特相；有统一俱生（心、心所）的作用，如水之于洗澡粉相似；以寂止为现状；以殊胜的乐为近因。当知于定中的心的静止，正如在无风之处的灯焰的静止一样。</p><p>（９）依此而（人）信故，或他自己信故或只是信故为「信」。它有信或信任的特相。有净信的作用，如能深水的摩尼宝珠；或有跳跃（从不信至信）的作用，如渡瀑流相似。以不玷污为现状，或以信解为现状。以起信之事为近因，或以听闻正法等的须陀洹支 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-083\\\">[14-083]</sup> 为近因。当知信如手、财产，及种子。 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-084\\\">[14-084]</sup></p><p>（１０）依此而（相应诸法）忆念故，或他自己忆念故，或只是忆念故为「念」。它有不使流去 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-085\\\">[14-085]</sup> 或* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-010\\\">[14-010]</sup> * 不忘失的作用。以守护或向境的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E8%81%BD%E8%81%9E&scope=site",
+          "query": "以听闻"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap12.json",
+          "heading": "站内搜索命中",
+          "text": "class=\\\"vism-fnref\\\" data-fn=\\\"12-072\\\">[12-072]</sup> 之上，向三十三天界去。此时，难陀优波难陀便起了这样的恶见：「真的，这些秃头沙门，次第的经过我的上方世界，出入于三十三天，自今以后，不许他们走在我的上面，散布他的足尘」，便起来跑到须弥山之麓，舍了他的真相，盘绕须弥山七匝，展开他的头在上面，又把头从上面向下，遮住三十三天，令不能见。当时尊者护国对世尊说：「尊师，从前我站在这里，可以看见须弥山，看见须弥山腰，看见三十三天，看见最胜宫，看见最胜宫上面的旗。尊师，何因何缘，现在却不能见须弥山......乃至不能见最胜宫上面的旗」？「护国，因为难陀优波难陀龙王对你们发怒了，他盘绕了须弥山七匝，以他的头遮住上面，而成黑暗」。「那末，尊师，让我去降伏他吧」：？世尊没有允许。于是尊者拔提，尊者罗候罗及一切比丘，都次第的起而请求，但世尊都没有允许。最后，大目犍长老说：「尊师，让我去降伏吧」。世尊听许道：「目犍连，去降伏他」。长老舍了自己的本相，化成龙王之形，盘绕须弥山十四匝，把自己的头放在他的头之上，把他和须弥山一起捆紧在里面。龙王即吐烟。 <span class=\\\"vism-page\\\">[400]</span>长老说：「不只是你的身体有烟，我也有的」，亦吐",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site",
+          "query": "以看见"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "n’ ev' āha:— \\\" Nirayaṃ tāva passāmi āvāsaṃ pāpakamminaṃ Ṭhānāni luddakammānaṃ dussīlānañ ca ye gati\\\" ti.\", \"chinese_translation\": \"在那里，“以哪一条”的意思是：大王，这些道路中，一条通往地狱，一条通往天界。其中，你以哪一条带我？意思是：以哪条道路去，在那里，恶行者们感受恶业的异熟，那样的地方是可以看见的。第二句也是如此。在《本生》中也有：“大王，最胜者，四方之主，我以哪条道路带你？是恶行者，还是造福者？”偈颂的意义就是这样。因此他说：“我先看地狱，恶行者的住处，凶恶行为者的处所，以及恶戒者的趣。”\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'katamend' 应为 'katamenā'，'ti' 正确，'mahārāja' 正确，'imesu' 正确，'maggesu' 正确，'eko' 正确，'nirayan' 应为 'nirayaṃ'，'gacchati' 正确，'devalokaņ' 应为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&scope=site",
+          "query": "以看见"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三举罪事\n\n## 直接回答\n三举罪事指以看见、以听闻、以怀疑三种方式举发罪过 [1][2]。现有证据仅列出此三项，未涉及具体内容或适用条件。\n\n## 要点展开\n### 三举罪事的定义\n- 三举罪事为：以看见、以听闻、以怀疑 [1][2]。\n\n### 相关概念\n- 看见、听闻、怀疑在经文中常与认知和修行相关，如如来看见后不思量所见 [3]，听闻后不思量所闻 [4]，以及怀疑与梵行相关 [5]。\n\n## 证据覆盖情况\n现有证据仅直接列出三举罪事的三项名称，未说明其具体内容、适用场景或与相关概念（如看见、听闻、怀疑）的关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三举罪事 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82\n  > 三举罪事：以看见、以听闻、以怀疑。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B%EF%BC%9A%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82\n  > 三举罪事：以看见、以听闻、以怀疑。\n- [3] Early Buddhist · 经藏/增支部_an · an4.24 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E5%A6%82%E4%BE%86%E7%9C%8B%E8%A6%8B%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E7%9C%8B%E8%A6%8B%E8%80%85%EF%BC%9B\n  > 像这样，如来看见能被看见的后，不思量看见的，不思量没看见的，不思量能被看见的，不思量看见者；\n- [4] Early Buddhist · 经藏/增支部_an · an4.24 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.24&lang=zh&q=%E4%BB%A5%E8%81%BD%E8%81%9E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%81%BD%E8%81%9E%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E6%B2%92%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%83%BD%E8%A2%AB%E8%81%BD%E8%81%9E%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%80%9D%E9%87%8F%E8%81%BD%E8%81%9E%E8%80%85%EF%BC%9B\n  > 听闻能被听闻的后，不思量听闻的，不思量没听闻的，不思量能被听闻的，不思量听闻者；\n- [5] Early Buddhist · 经藏/小部_kn · dhp306-319 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp306-319&lang=zh&q=%E4%BB%A5%E6%87%B7%E7%96%91&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%87%B7%E7%96%91%E4%BF%AE%E6%A2%B5%E8%A1%8C%EF%BC%8C\n  > 怀疑修梵行，\n- [6] Early Buddhist · 经藏/相应部_sn · sn56.30 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B\n  > 凡看见苦集者，他也看见苦，也看见苦灭，也看见导向苦灭道迹；\n- [7] Early Buddhist · 经藏/相应部_sn · sn56.30 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B\n  > 凡看见苦灭者，他也看见苦，也看见苦集，也看见导向苦灭道迹；\n- [8] Early Buddhist · 经藏/相应部_sn · sn56.30 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn56.30&lang=zh&q=%E4%BB%A5%E7%9C%8B%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E7%9C%8B%E8%A6%8B%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E8%80%85%EF%BC%8C%E4%BB%96%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E9%9B%86%EF%BC%8C%E4%B9%9F%E7%9C%8B%E8%A6%8B%E8%8B%A6%E6%BB%85%E3%80%82\n  > 凡看见导向苦灭道迹者，他也看见苦，也看见苦集，也看见苦灭。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -386,15 +441,24 @@
       "number": 3,
       "order": 39,
       "label": "三举罪事",
-      "members": "以看见、以听闻、以怀疑",
+      "members": "以看见、以听闻、以怀疑。",
+      "match_members": "以看见、以听闻、以怀疑",
       "member_items": [
         "以看见",
         "以听闻",
         "以怀疑"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三举罪事：以看见、以听闻、以怀疑。"
+      ],
       "source_text": "三举罪事：以看见、以听闻、以怀疑。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E8%88%89%E7%BD%AA%E4%BA%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%BB%A5%E7%9C%8B%E8%A6%8B%E3%80%81%E4%BB%A5%E8%81%BD%E8%81%9E%E3%80%81%E4%BB%A5%E6%87%B7%E7%96%91%E3%80%82",
+      "expanded_points": [
+        "以看见：指通过亲眼所见来举发罪过。",
+        "以听闻：指通过听他人所说来举发罪过。",
+        "以怀疑：指通过怀疑来举发罪过。"
+      ]
     }
   ]
 }

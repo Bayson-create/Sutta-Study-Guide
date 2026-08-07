@@ -3199,9 +3199,11 @@ function dhammaEntryTag(sources) {
 }
 
 function dhammaInlineSource(group) {
-  const rawItems = group.member_items && group.member_items.length ? group.member_items : [group.members];
-  const repeatsLabel = rawItems.length === 1 && searchNormalize(rawItems[0]) === searchNormalize(group.label);
-  const items = repeatsLabel ? '' : `<ul class="dhamma-members">${rawItems.map(item => `<li>${dhammaText(item)}</li>`).join('')}</ul>`;
+  const points = group.expanded_points && group.expanded_points.length
+    ? group.expanded_points
+    : (group.member_items && group.member_items.length ? group.member_items : [group.members]);
+  const repeatsLabel = points.length === 1 && searchNormalize(points[0]) === searchNormalize(group.label);
+  const items = repeatsLabel ? '' : `<div class="dhamma-expanded-label">展开要点</div><ul class="dhamma-members">${points.map(item => `<li>${dhammaText(item)}</li>`).join('')}</ul>`;
   return `<div class="dhamma-inline-source"><strong>${group.sutta.toUpperCase()}</strong><div class="dhamma-expanded-label">${dhammaText(group.label)}</div>${items}</div>`;
 }
 
@@ -3254,6 +3256,7 @@ function dhammaEvidenceMarkdown(state) {
   if (!state) return '';
   const { entry, sources } = state;
   const research = entry.research || {};
+  if (research.ai_full_markdown) return toSimplified(research.ai_full_markdown);
   const answer = research.answer_markdown ? toSimplified(research.answer_markdown) : '';
   const lines = [`# ${toSimplified(entry.label)}（${entry.number}法 · ${sources.map(group => group.sutta.toUpperCase()).join('/')}）`, '', answer, '', '## 引用'];
   (research.evidence || []).forEach((e, i) => {
@@ -3265,7 +3268,9 @@ function dhammaEvidenceMarkdown(state) {
 
 function dhammaAnswerHtml(entry) {
   const research = entry.research || {};
-  const answer = research.answer_markdown ? toSimplified(research.answer_markdown) : '暂无预生成回答。';
+  const answer = research.ai_full_markdown || research.answer_markdown
+    ? toSimplified(research.ai_full_markdown || research.answer_markdown)
+    : '暂无预生成回答。';
   const evidence = research.evidence || [];
   return mdToHtml(answer).replace(/\[(\d{1,3})\]/g, (m, n) => {
     const i = Number(n);
@@ -3274,8 +3279,11 @@ function dhammaAnswerHtml(entry) {
 }
 
 function dhammaSourceCard(group) {
-  const members = (group.member_items && group.member_items.length ? group.member_items : [group.members]).map(item => `<li>${dhammaText(item)}</li>`).join('');
-  return `<article class="dhamma-source-card"><h3>${group.sutta.toUpperCase()} · ${dhammaText(group.label)}</h3><p><strong>明确成员</strong></p><ul class="dhamma-members">${members}</ul><p><strong>经文原文：</strong>${dhammaText(group.source_text)}</p><p style="margin-top:10px"><a href="${group.source_url}" target="_blank" rel="noopener">在 Early Buddhist 中跳转查看 ↗</a></p></article>`;
+  const points = group.expanded_points && group.expanded_points.length
+    ? group.expanded_points
+    : (group.member_items && group.member_items.length ? group.member_items : [group.members]);
+  const members = points.map(item => `<li>${dhammaText(item)}</li>`).join('');
+  return `<article class="dhamma-source-card"><h3>${group.sutta.toUpperCase()} · ${dhammaText(group.label)}</h3><p><strong>展开要点</strong></p><ul class="dhamma-members">${members}</ul><p><strong>经文原文：</strong>${dhammaText(group.source_text)}</p><p style="margin-top:10px"><a href="${group.source_url}" target="_blank" rel="noopener">在 Early Buddhist 中跳转查看 ↗</a></p></article>`;
 }
 
 function dhammaEbQueriesHtml(research) {

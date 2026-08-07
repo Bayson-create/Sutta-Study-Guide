@@ -5,7 +5,8 @@
     "number": 2,
     "label": "尽智与无生智",
     "member_items": [
-      "尽智与无生智"
+      "尽智",
+      "无生智"
     ],
     "group_ids": [
       "dn33-n2-g33"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "尽智与无生智"
+      "尽智与无生智",
+      "尽智",
+      "无生智"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「尽智与无生智」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：尽智与无生智。[1]\n\n## 所含各法\n### 尽智与无生智\n经文将「尽智与无生智」列为「尽智与无生智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：尽智与无生智。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n尽智与无生智是应当使之生起的二法 [3]，在 DN33 中作为一组法数被列出 [1][2]。尽智（灭尽智）以解脱为近因 [6]，是有近因的 [7]，其内容为烦恼之灭尽 [4][8]。\n\n## 要点展开\n### 尽智与无生智的定位\n- 尽智与无生智在 DN33 中被列为二法 [1][2]。\n- DN34 指出，灭尽智与无生智是应该使之生出的二法 [3]。\n\n### 尽智（灭尽智）的近因与内容\n- 灭尽智以解脱为近因 [6]，且是有近因的，非无近因 [7]。\n- 灭尽智指烦恼之灭尽 [4]，比丘心入定后，可转向烦恼之灭尽智 [8]。\n\n## 分歧与张力\n- 证据中未显示尽智与无生智之间的明确区分，也未显示不同来源对二者关系的不同说法。\n\n## 证据覆盖情况\n现有证据覆盖了尽智与无生智作为二法的定位，以及灭尽智的近因和内容；但未涉及无生智的具体定义或与尽智的差异。",
       "evidence": [
         {
           "kind": "source",
@@ -66,9 +69,39 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn10",
           "text": "凡当比丘心是这样入定的、……（中略）他抽出心使转向烦恼之灭尽智。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn10&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%87%A1%E7%95%B6%E6%AF%94%E4%B8%98%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BB%96%E6%8A%BD%E5%87%BA%E5%BF%83%E4%BD%BF%E8%BD%89%E5%90%91%E7%85%A9%E6%83%B1%E4%B9%8B%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "节却各各不同\"的深意，与\"佛宝\"第九章\"二十四佛传\"的内容遥相呼应。 ### 十八种不可能的降生方式与佛陀十八不共法 书中列举佛陀降生时\"十八种绝无可能发生之奇事\"（如绝不会降生于卑贱之家、绝不会为异性怀抱等），并详述佛陀独具的**十八不共法**——包括四种无碍解智、六种唯佛独具之智（不共知）、以及**十力**（处非处智力、业异熟智力、种种胜解智力、种种界智力、根胜劣智力、遍趣行智力、静虑解脱等持等至智力、宿住随念智力、死生智力、漏尽智力）的详尽解释，末附雷迪大师所作的偈颂总结十八不共法的精要。 ### 菩萨降生、三十二相的深入解说 对\"佛宝\"正文第一章\"菩萨降生\"及\"三十二相\"两个专题作了大幅扩充——详述迦罗提毗罗仙人的完整故事、悉达多太子王族世系的详尽考据（奥迦迦王的传说、迦毘罗卫城的建立、释迦族与拘利族的起源、天维城的建立）、及三十二相中每一相对应的往昔业因（如足下平满相因往昔布施坚定不移、手足柔软如网缦相因往昔以四摄法摄受眷属等），逐相详加考证。 ### 缘起法专论 书中对\"缘起法\"（十二因缘：无明缘行、行缘识……乃至生缘老死）作了远比正文更为详尽的哲学分析，并附有\"一百零八种圣者分类\"的精密体系，是全书教理深度最高的段落之一。 --- ## 第二部分：《波罗蜜论》第一篇——十六",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap09.json",
+          "text": "iriya）、忍辱（khanti）、谛（sacca）、决意（adhi.t.thaana）、慈（mettaa）、舍（upekkhaa）。《解脱道论》卷六※09-005※ 所译的十波罗蜜为：施、戒、出、忍、谛、受持、慈、舍、精进、智慧。\", \"09-069\": \"十力（dasa-bala），如来的十力为：一处非处智力、二业异热智力、三遍趣行智力、四种种界智力、五种种胜解智力、六根上下智力、七禅解脱定等至智力、八宿住随念智力、九死生智力、十漏尽智力。南北两传相同。在巴利文献中说十力的，见M.Sutta l2；M.I,p.69ff.A.V,p.33ff；P.ts. II,p.174；Vibh.p.317,335ff.《解脱道论》卷八（大正三二．四二七c）。\", \"09-070\": \"四无畏（catu-vesaarjja）：一正等觉无畏，二漏永尽无畏，三说障法无畏，四说出道无畏。南北方所说同样。巴利佛教中见M.Sutta l2；M.I,p.71f；A.II,p.8f.\", \"09-071\": \"六不共智（cha asaadhaara.na-~naa.na）（不与声闻弟子所共）是巴利佛教所说，北传佛教无此名称。一、根上下智（indriyaparopariyatte ~naa.na），二、众生意乐随眠智（sattaa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap07.json",
+          "text": "]</sup> 为阿罗汉。</div><p>（２）以道而破诸烦恼之贼，所以说「破贼故」为阿罗汉。</p><div class=\\\"vism-verse\\\">我主以般若之剑，<br>斩杀了<br>那称为贪等的烦恼之贼，<br>所以叫他为阿罗汉。</div><p>（３）以无明与有爱作成的谷，由福行等所成的辐，老与死的辋，贯以诸漏集成的轴，连接于三有的车的这个无始以来辗转轮回的车轮，世尊于菩提树下，以精进的两足，站在戒的地上，以信的手，执业尽智的斧，破一切辐，所以说「破辐故」为阿罗汉。或者轮回的轮是说无始以来的轮回流转，因为无明是根本故为谷，老死是最后故为辋，其余十法是以无明为根本，以老死为周边故为辐。</p><p><span class=\\\"vism-page\\\">[199]</span></p><p>（说十二支）对于苦等四谛的无智为无明，欲界的无明为欲界诸行的缘，色界的无明为色界诸行的缘，无色界的无明为无色界诸行的缘。欲界的诸行为欲界结生识的缘，余者（色界无色界的诸行）亦同样的（为色无色界结生识的缘）。欲界的结生识为欲界名色的缘。色界亦然。（无色界的结生识）但为无色界的名的缘。欲界的名色为欲界六入的缘，色界的名色为色界的（眼耳意）三入的缘，无色界的名为无色界的（意）一入的缘。欲界的六入为欲界六种触的缘，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "catusaccapaṭicchādakataṃ vinodetvā āsavakkhayañāṇena tatiyaṃ jāyati.\", \"chinese_translation\": \"第一，出离（abhinibbidā）是第一智的区分。在第二等之中，也是同样的方法。然而，鸡雏从母胎一次、从蛋壳一次，如此出生两次。圣弟子以三明出生两次：以宿住智去除覆盖前世之黑暗而第一次出生；以天眼智去除覆盖有情死生之黑暗而第二次出生；以漏尽智去除覆盖四谛之黑暗而第三次出生。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'abhinibbhidá' 校正为 'abhinibbidā'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'tī' 校正为 'tī'（可能为 'ti' 之误，但保留原文）。\" }, { \"type\": \"model_reported_correction",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "园、粗园、交合园中，看见享受天界福乐的诸天子与天女，心想：“这些拥有如此自身成就者，将会有何等悦耳的声音呢？”于是想听声音，便亲近十力者，询问天耳界修习法。世尊知道他对天耳界没有亲依止，便不说修习法。因为诸佛不会为那些不会成就的人说修习法。他对世尊怀恨在心，心想：“我先询问天眼修习法，他为我说了，无论是否成就。我后来以男子汉的方式修成它，又询问天耳界修习法，他却不为我说。他一定是这样想：‘这位出家的国王，修成天眼智、天耳界智、他心智、漏尽智后，将与我平起平坐。’出于嫉妒悭吝，所以不为我说。”他更加怀恨，舍弃袈裟，恢复在家身份后，仍不沉默地游走，而是以虚妄、空洞之词诽谤十力者而游走。因此世尊说：“而他因嗔怒而说此言。”\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'upasafikamitvà' 校正为 'upasaṅkamitvā'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'dibbacakkhupari",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "尽智与无生智",
@@ -154,9 +187,83 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn10&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%87%A1%E7%95%B6%E6%AF%94%E4%B8%98%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BB%96%E6%8A%BD%E5%87%BA%E5%BF%83%E4%BD%BF%E8%BD%89%E5%90%91%E7%85%A9%E6%83%B1%E4%B9%8B%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%82"
             }
           ]
+        },
+        {
+          "query": "尽智",
+          "hits": []
+        },
+        {
+          "query": "无生智",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "尽智与无生智。",
+              "score": 16.486348574870217,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "灭尽智、无生智，这些是应该使之生出的二法。",
+              "score": 11.224968172969845,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%81%E7%84%A1%E7%94%9F%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82"
+            }
+          ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "节却各各不同\"的深意，与\"佛宝\"第九章\"二十四佛传\"的内容遥相呼应。 ### 十八种不可能的降生方式与佛陀十八不共法 书中列举佛陀降生时\"十八种绝无可能发生之奇事\"（如绝不会降生于卑贱之家、绝不会为异性怀抱等），并详述佛陀独具的**十八不共法**——包括四种无碍解智、六种唯佛独具之智（不共知）、以及**十力**（处非处智力、业异熟智力、种种胜解智力、种种界智力、根胜劣智力、遍趣行智力、静虑解脱等持等至智力、宿住随念智力、死生智力、漏尽智力）的详尽解释，末附雷迪大师所作的偈颂总结十八不共法的精要。 ### 菩萨降生、三十二相的深入解说 对\"佛宝\"正文第一章\"菩萨降生\"及\"三十二相\"两个专题作了大幅扩充——详述迦罗提毗罗仙人的完整故事、悉达多太子王族世系的详尽考据（奥迦迦王的传说、迦毘罗卫城的建立、释迦族与拘利族的起源、天维城的建立）、及三十二相中每一相对应的往昔业因（如足下平满相因往昔布施坚定不移、手足柔软如网缦相因往昔以四摄法摄受眷属等），逐相详加考证。 ### 缘起法专论 书中对\"缘起法\"（十二因缘：无明缘行、行缘识……乃至生缘老死）作了远比正文更为详尽的哲学分析，并附有\"一百零八种圣者分类\"的精密体系，是全书教理深度最高的段落之一。 --- ## 第二部分：《波罗蜜论》第一篇——十六",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap09.json",
+          "heading": "站内搜索命中",
+          "text": "iriya）、忍辱（khanti）、谛（sacca）、决意（adhi.t.thaana）、慈（mettaa）、舍（upekkhaa）。《解脱道论》卷六※09-005※ 所译的十波罗蜜为：施、戒、出、忍、谛、受持、慈、舍、精进、智慧。\", \"09-069\": \"十力（dasa-bala），如来的十力为：一处非处智力、二业异热智力、三遍趣行智力、四种种界智力、五种种胜解智力、六根上下智力、七禅解脱定等至智力、八宿住随念智力、九死生智力、十漏尽智力。南北两传相同。在巴利文献中说十力的，见M.Sutta l2；M.I,p.69ff.A.V,p.33ff；P.ts. II,p.174；Vibh.p.317,335ff.《解脱道论》卷八（大正三二．四二七c）。\", \"09-070\": \"四无畏（catu-vesaarjja）：一正等觉无畏，二漏永尽无畏，三说障法无畏，四说出道无畏。南北方所说同样。巴利佛教中见M.Sutta l2；M.I,p.71f；A.II,p.8f.\", \"09-071\": \"六不共智（cha asaadhaara.na-~naa.na）（不与声闻弟子所共）是巴利佛教所说，北传佛教无此名称。一、根上下智（indriyaparopariyatte ~naa.na），二、众生意乐随眠智（sattaa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap07.json",
+          "heading": "站内搜索命中",
+          "text": "]</sup> 为阿罗汉。</div><p>（２）以道而破诸烦恼之贼，所以说「破贼故」为阿罗汉。</p><div class=\\\"vism-verse\\\">我主以般若之剑，<br>斩杀了<br>那称为贪等的烦恼之贼，<br>所以叫他为阿罗汉。</div><p>（３）以无明与有爱作成的谷，由福行等所成的辐，老与死的辋，贯以诸漏集成的轴，连接于三有的车的这个无始以来辗转轮回的车轮，世尊于菩提树下，以精进的两足，站在戒的地上，以信的手，执业尽智的斧，破一切辐，所以说「破辐故」为阿罗汉。或者轮回的轮是说无始以来的轮回流转，因为无明是根本故为谷，老死是最后故为辋，其余十法是以无明为根本，以老死为周边故为辐。</p><p><span class=\\\"vism-page\\\">[199]</span></p><p>（说十二支）对于苦等四谛的无智为无明，欲界的无明为欲界诸行的缘，色界的无明为色界诸行的缘，无色界的无明为无色界诸行的缘。欲界的诸行为欲界结生识的缘，余者（色界无色界的诸行）亦同样的（为色无色界结生识的缘）。欲界的结生识为欲界名色的缘。色界亦然。（无色界的结生识）但为无色界的名的缘。欲界的名色为欲界六入的缘，色界的名色为色界的（眼耳意）三入的缘，无色界的名为无色界的（意）一入的缘。欲界的六入为欲界六种触的缘，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "catusaccapaṭicchādakataṃ vinodetvā āsavakkhayañāṇena tatiyaṃ jāyati.\", \"chinese_translation\": \"第一，出离（abhinibbidā）是第一智的区分。在第二等之中，也是同样的方法。然而，鸡雏从母胎一次、从蛋壳一次，如此出生两次。圣弟子以三明出生两次：以宿住智去除覆盖前世之黑暗而第一次出生；以天眼智去除覆盖有情死生之黑暗而第二次出生；以漏尽智去除覆盖四谛之黑暗而第三次出生。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'abhinibbhidá' 校正为 'abhinibbidā'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'tī' 校正为 'tī'（可能为 'ti' 之误，但保留原文）。\" }, { \"type\": \"model_reported_correction",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "园、粗园、交合园中，看见享受天界福乐的诸天子与天女，心想：“这些拥有如此自身成就者，将会有何等悦耳的声音呢？”于是想听声音，便亲近十力者，询问天耳界修习法。世尊知道他对天耳界没有亲依止，便不说修习法。因为诸佛不会为那些不会成就的人说修习法。他对世尊怀恨在心，心想：“我先询问天眼修习法，他为我说了，无论是否成就。我后来以男子汉的方式修成它，又询问天耳界修习法，他却不为我说。他一定是这样想：‘这位出家的国王，修成天眼智、天耳界智、他心智、漏尽智后，将与我平起平坐。’出于嫉妒悭吝，所以不为我说。”他更加怀恨，舍弃袈裟，恢复在家身份后，仍不沉默地游走，而是以虚妄、空洞之词诽谤十力者而游走。因此世尊说：“而他因嗔怒而说此言。”\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'upasafikamitvà' 校正为 'upasaṅkamitvā'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'dibbacakkhupari",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "], \"suttacentral_primary_uid\": \"mn4\" } }, \"raw_ocr\": \"Āsavānaṃ khayañāṇaṃ arahattamaggañāṇaṃ.\", \"corrected_pali\": \"Āsavānaṃ khayañāṇaṃ arahattamaggañāṇaṃ.\", \"chinese_translation\": \"漏尽智就是阿罗汉道智。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Āsavānaṃ khayañāṇaṃ arahattamaggañāṇaṃ.\", \"corrected\": \"Āsavānaṃ khayañāṇaṃ arahattamaggañāṇaṃ.\", \"reason\": \"Bhayabheravasuttavaṇṇanā中‘Āsavānaṃ’的 OCR 形式与校勘形式相同但仍存在文本不确定性；需结合相邻巴利语句、HTML 排版和页影像复核。\" } ], \"tr",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%9B%A1%E6%99%BA&scope=site",
+          "query": "尽智"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：尽智与无生智\n\n## 直接回答\n尽智与无生智是应当使之生起的二法 [3]，在 DN33 中作为一组法数被列出 [1][2]。尽智（灭尽智）以解脱为近因 [6]，是有近因的 [7]，其内容为烦恼之灭尽 [4][8]。\n\n## 要点展开\n### 尽智与无生智的定位\n- 尽智与无生智在 DN33 中被列为二法 [1][2]。\n- DN34 指出，灭尽智与无生智是应该使之生出的二法 [3]。\n\n### 尽智（灭尽智）的近因与内容\n- 灭尽智以解脱为近因 [6]，且是有近因的，非无近因 [7]。\n- 灭尽智指烦恼之灭尽 [4]，比丘心入定后，可转向烦恼之灭尽智 [8]。\n\n## 分歧与张力\n- 证据中未显示尽智与无生智之间的明确区分，也未显示不同来源对二者关系的不同说法。\n\n## 证据覆盖情况\n现有证据覆盖了尽智与无生智作为二法的定位，以及灭尽智的近因和内容；但未涉及无生智的具体定义或与尽智的差异。\n\n## 引用\n- [1] Early Buddhist · DN33 · 尽智与无生智 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA\n  > 尽智与无生智。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA%E3%80%82\n  > 尽智与无生智。\n- [3] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%81%E7%84%A1%E7%94%9F%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82\n  > 灭尽智、无生智，这些是应该使之生出的二法。\n- [4] Early Buddhist · 经藏/长部_dn · dn2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn2&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%85%A9%E6%83%B1%E4%B9%8B%E6%BB%85%E7%9B%A1%E6%99%BA\n  > 烦恼之灭尽智\n- [5] Early Buddhist · 经藏/相应部_sn · sn12.23 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.23&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%BB%85%E7%9B%A1%E6%99%BA%E7%9A%84%E8%BF%91%E5%9B%A0%E5%91%A2%EF%BC%9F\n  > 什么是灭尽智的近因呢？\n- [6] Early Buddhist · 经藏/相应部_sn · sn12.23 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.23&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%A5%E8%A7%A3%E8%84%AB%E7%82%BA%E8%BF%91%E5%9B%A0%E8%80%8C%E6%9C%89%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%82\n  > 以解脱为近因而有灭尽智。\n- [7] Early Buddhist · 经藏/相应部_sn · sn12.23 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.23&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E9%97%9C%E6%96%BC%E6%BB%85%E7%9B%A1%E7%9A%84%E6%BB%85%E7%9B%A1%E6%99%BA%E6%98%AF%E6%9C%89%E8%BF%91%E5%9B%A0%E7%9A%84%EF%BC%8C%E9%9D%9E%E7%84%A1%E8%BF%91%E5%9B%A0%E7%9A%84%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 我说关于灭尽的灭尽智是有近因的，非无近因的，比丘们！\n- [8] Early Buddhist · 经藏/长部_dn · dn10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn10&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%87%A1%E7%95%B6%E6%AF%94%E4%B8%98%E5%BF%83%E6%98%AF%E9%80%99%E6%A8%A3%E5%85%A5%E5%AE%9A%E7%9A%84%E3%80%81%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BB%96%E6%8A%BD%E5%87%BA%E5%BF%83%E4%BD%BF%E8%BD%89%E5%90%91%E7%85%A9%E6%83%B1%E4%B9%8B%E6%BB%85%E7%9B%A1%E6%99%BA%E3%80%82\n  > 凡当比丘心是这样入定的、……（中略）他抽出心使转向烦恼之灭尽智。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -167,12 +274,21 @@
       "order": 33,
       "label": "尽智与无生智",
       "members": "尽智与无生智",
+      "match_members": "尽智与无生智",
       "member_items": [
-        "尽智与无生智"
+        "尽智",
+        "无生智"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "尽智与无生智。"
+      ],
       "source_text": "尽智与无生智。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9B%A1%E6%99%BA%E8%88%87%E7%84%A1%E7%94%9F%E6%99%BA",
+      "expanded_points": [
+        "尽智：指烦恼灭尽之智，以解脱为近因，是有近因的。",
+        "无生智：与尽智并列，为应当使之生出的二法之一，但原文未展开其具体含义。"
+      ]
     }
   ]
 }

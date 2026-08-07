@@ -55,6 +55,7 @@ T2S = OpenCC("t2s")
 # OpenCC retains some variant characters.  Align those with this site’s
 # established mainland Buddhist terminology after its general conversion.
 DISPLAY_REPLACEMENTS = str.maketrans({"瞋": "嗔"})
+_SITE_DOCUMENTS: list[tuple[str, str]] | None = None
 
 
 def compact(text: str) -> str:
@@ -93,12 +94,28 @@ def is_closure(text: str, numeral: str) -> bool:
     return f"這些是{numeral}法" in text or f"這些是{numeral}十法" in text
 
 
-def member_items(value: str) -> list[str]:
-    """Keep source enumerations intact when prose cannot be split safely."""
-    value = value.strip(" ，。")
-    if "、" not in value:
-        return [value] if value else []
-    return [part.strip(" ，。") for part in value.split("、") if part.strip(" ，。")]
+def provisional_member_items(number: int, first_content: str, paragraphs: list[str]) -> list[str]:
+    """Extract only unambiguous member names for retrieval.
+
+    The display list is deliberately *not* derived here: long formulae such
+    as the seven stations of consciousness and the eight liberations need a
+    semantic summary, generated later from the complete source paragraphs.
+    This helper only provides safe search terms; it never silently pretends a
+    partial first sentence is the whole dhamma-number set.
+    """
+    if number == 1:
+        return [first_content.strip(" ，。")] if first_content.strip(" ，。") else []
+    first_content = first_content.split("，這些是", 1)[0].strip(" ，。")
+    simple = [part.strip(" ，。") for part in re.split(r"[、與]", first_content) if part.strip(" ，。")]
+    if len(simple) == number:
+        return simple
+    direct = [part.strip(" ，。") for part in paragraphs if part.strip(" ，。")]
+    if len(direct) == number:
+        return direct
+    sentences = [part.strip(" ，。") for part in re.split(r"。", "。".join(paragraphs)) if part.strip(" ，。")]
+    if len(sentences) == number:
+        return sentences
+    return []
 
 
 def clean_label(value: str) -> str:
@@ -113,6 +130,16 @@ def dn34_status(source_text: str) -> str | None:
     return None
 
 
+def _segments(paragraphs: list[str], starts: list[int], close_at: int) -> list[list[str]]:
+    """Group a title paragraph with every following paragraph up to the next title."""
+    out: list[list[str]] = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else close_at
+        if start < end:
+            out.append(paragraphs[start:end])
+    return out
+
+
 def parse_rows(text: dict) -> list[dict]:
     uid = text["uid"]
     soup = BeautifulSoup(text["zh_legacy"][0]["html"], "html.parser")
@@ -124,20 +151,22 @@ def parse_rows(text: dict) -> list[dict]:
             continue
         close_at = next((i for i, p in enumerate(paragraphs) if is_closure(p, numeral)), len(paragraphs))
         if uid == "dn34":
-            candidates = [p for p in paragraphs[1:close_at] if re.match(r"^（[一二三四五六七八九十]）", p)]
+            starts = [i for i, p in enumerate(paragraphs[:close_at]) if re.match(r"^（[一二三四五六七八九十]）", p)]
         elif numeral == "一":
-            candidates = paragraphs[:1]
+            starts = [0] if close_at else []
         elif numeral == "二":
-            candidates = paragraphs[1:close_at]
+            starts = list(range(1, close_at))
         else:
             prefix = re.compile(rf"^(?:下一個)?(?:如來的)?{numeral}")
-            candidates = [p for p in paragraphs[1:close_at] if prefix.match(p)]
+            starts = [i for i, p in enumerate(paragraphs[:close_at]) if i > 0 and prefix.match(p)]
 
-        for order, source_text in enumerate(candidates, 1):
+        for order, source_paragraphs in enumerate(_segments(paragraphs, starts, close_at), 1):
+            source_text = "\n\n".join(source_paragraphs)
+            first = source_paragraphs[0]
             status = None
             if uid == "dn34":
-                status = dn34_status(source_text)
-                tail = source_text.split("呢？", 1)[1] if "呢？" in source_text else source_text
+                status = dn34_status(first)
+                tail = first.split("呢？", 1)[1] if "呢？" in first else first
                 member_text = tail.split("，這些是", 1)[0].strip(" ，")
                 label = member_text
                 if "：" in member_text:
@@ -147,22 +176,25 @@ def parse_rows(text: dict) -> list[dict]:
             elif numeral == "一":
                 label = "一法"
                 marker = "哪一法呢？"
-                member_text = source_text.split(marker, 1)[1].split("，這是一法", 1)[0].strip(" ，") if marker in source_text else source_text
+                member_text = first.split(marker, 1)[1].split("，這是一法", 1)[0].strip(" ，") if marker in first else first
             elif numeral == "二":
-                label = source_text.rstrip("。")
+                label = first.rstrip("。")
                 member_text = label
             else:
-                label = source_text.split("：", 1)[0].strip()
-                member_text = source_text.split("：", 1)[1].split("。", 1)[0].strip() if "：" in source_text else source_text.rstrip("。")
+                label = first.split("：", 1)[0].strip()
+                member_text = first.split("：", 1)[1].strip() if "：" in first else first.rstrip("。")
+            display_paragraphs = [member_text, *source_paragraphs[1:]]
             rows.append({
                 "id": f"{uid}-n{NUM_VALUE[numeral]}-g{order}",
                 "sutta": uid,
                 "number": NUM_VALUE[numeral],
                 "order": order,
                 "label": clean_label(label),
-                "members": member_text,
-                "member_items": member_items(member_text),
+                "members": "\n\n".join(display_paragraphs),
+                "match_members": member_text.split("。", 1)[0].strip(" ，。"),
+                "member_items": provisional_member_items(NUM_VALUE[numeral], member_text, display_paragraphs),
                 "dn34_status": status,
+                "source_paragraphs": source_paragraphs,
                 "source_text": source_text,
             })
     return rows
@@ -190,6 +222,14 @@ def score_match(a: dict, b: dict) -> float:
     am, bm = normalize(a["members"]), normalize(b["members"])
     if al and al == bl and am == bm:
         return 1.0
+    # Long numbered formulae are now preserved in full paragraphs.  Their
+    # DN33/DN34 prose can legitimately differ while the named dhamma group is
+    # still the same; use the explicitly extracted members before comparing
+    # the full prose body.
+    if al and al == bl and a["member_items"] and a["member_items"] == b["member_items"]:
+        return 0.98
+    if al and al == bl and normalize(a.get("match_members", "")) == normalize(b.get("match_members", "")):
+        return 0.97
     if al and al == bl and (am in bm or bm in am):
         return 0.96
     if am and am == bm:
@@ -255,26 +295,42 @@ def search_terms(sources: list[dict]) -> list[str]:
     return out[:14]
 
 
-def site_search_hits(terms: list[str]) -> list[dict]:
-    """Freeze the same local research corpus the site-wide scope reads."""
-    hits: list[dict] = []
-    seen: set[str] = set()
-    paths = list((ROOT / "docs/research").rglob("*.md")) + [ROOT / "docs/suttas.json"]
+def site_documents() -> list[tuple[str, str]]:
+    """Load and simplify the static search corpus once for the whole batch."""
+    global _SITE_DOCUMENTS
+    if _SITE_DOCUMENTS is not None:
+        return _SITE_DOCUMENTS
+    research = ROOT / "docs/research"
+    paths = list(research.rglob("*.md"))
+    paths += list((research / "vism-data").glob("zh_*.json"))
+    paths += list((research / "pali-source-texts/sutta/majjhima/papancasudani").rglob("bilingual.json"))
+    paths += [ROOT / "docs/suttas.json"]
+    documents: list[tuple[str, str]] = []
     for path in paths:
         try:
             text = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        term = next((term for term in terms if term in text), None)
+        documents.append((path.relative_to(ROOT).as_posix(), T2S.convert(text).translate(DISPLAY_REPLACEMENTS)))
+    _SITE_DOCUMENTS = documents
+    return documents
+
+
+def site_search_hits(terms: list[str]) -> list[dict]:
+    """Freeze the same Markdown and JSON readers exposed by site-wide search."""
+    hits: list[dict] = []
+    seen: set[str] = set()
+    simplified_terms = [(term, T2S.convert(term).translate(DISPLAY_REPLACEMENTS)) for term in terms]
+    for rel, simplified_text in site_documents():
+        term, needle = next(((term, needle) for term, needle in simplified_terms if needle in simplified_text), (None, None))
         if not term:
             continue
-        pos = text.find(term)
-        key = f"{path}:{pos}"
+        pos = simplified_text.find(needle)
+        key = f"{rel}:{pos}"
         if key in seen:
             continue
         seen.add(key)
-        snippet = compact(text[max(0, pos - 220):min(len(text), pos + max(340, len(term) + 220))]).replace("\u0000", "")
-        rel = path.relative_to(ROOT).as_posix()
+        snippet = compact(simplified_text[max(0, pos - 220):min(len(simplified_text), pos + max(340, len(term) + 220))]).replace("\u0000", "")
         hits.append({
             "source": rel,
             "heading": "站内搜索命中",
@@ -394,7 +450,7 @@ def synthesize(entry: dict, row_map: dict[str, dict], site_hits: list[dict], eb_
 def summary_group(row: dict) -> dict:
     """Keep the first-screen index small; full source text lives per detail."""
     return {key: row.get(key) for key in (
-        "id", "sutta", "number", "label", "members", "member_items", "dn34_status"
+        "id", "sutta", "number", "label", "members", "member_items", "expanded_points", "dn34_status"
     )}
 
 
@@ -441,6 +497,12 @@ if __name__ == "__main__":
     result, details = build()
     OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     DETAIL_DIR.mkdir(parents=True, exist_ok=True)
+    # Detail files are generated artifacts with stable entry IDs.  Remove only
+    # obsolete files in this dedicated generated directory so a changed match
+    # never leaves an old route readable beside the new dataset.
+    for old_detail in DETAIL_DIR.glob("dhamma-n*.json"):
+        if old_detail.stem not in details:
+            old_detail.unlink()
     for entry_id, detail in details.items():
         (DETAIL_DIR / f"{entry_id}.json").write_text(json.dumps(detail, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({**result["counts"], "details": len(details), "planned_queries": len(json.loads(PLAN.read_text(encoding="utf-8"))["queries"])}, ensure_ascii=False))

@@ -22,13 +22,13 @@
       "非有学非无学慧"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三慧」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有学慧、无学慧、非有学非无学慧。[1]\n\n## 所含各法\n### 有学慧\n经文将「有学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n### 无学慧\n经文将「无学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n### 非有学非无学慧\n经文将「非有学非无学慧」列为「三慧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 14 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三慧指有学慧、无学慧、非有学非无学慧 [1][2]。另有说法将三慧分为思所成慧、闻所成慧、修习所成慧 [3]。\n\n## 要点展开\n### 三慧的两种分类\n- 第一种分类：有学慧、无学慧、非有学非无学慧 [1][2]。\n- 第二种分类：思所成慧、闻所成慧、修习所成慧 [3]。\n\n### 相关概念\n- 与“三慧”相关的“三人”概念：有学人、无学人、非有学非无学人 [6]。\n- 无学慧在五蕴等语境中出现，如“无学慧蕴” [4][5]。\n\n## 分歧与张力\n证据 [1][2] 将三慧定义为“有学慧、无学慧、非有学非无学慧”，而证据 [3] 将三慧定义为“思所成慧、闻所成慧、修习所成慧”。两者分类标准不同，前者基于修行阶段，后者基于慧的来源或性质。\n\n## 证据覆盖情况\n现有证据覆盖了三慧的两种分类，以及相关“三人”概念和无学慧的提及。但未涉及三慧的具体定义、修习方法或详细解释。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三慧",
           "text": "三慧：有学慧、无学慧、非有学非无学慧。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -89,9 +89,15 @@
           "label": "Early Buddhist · 经藏/增支部_an · an7.55",
           "text": "比丘这么行：『那会非有，那会非我所；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E9%80%99%E9%BA%BC%E8%A1%8C%EF%BC%9A%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "text": "} }, \"raw_ocr\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"corrected_pali\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"chinese_translation\": \"增上慧学就是无学慧、解脱和解脱知见诸蕴。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"corrected\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"reason\": \"Dhammadāyādasuttavaṇṇanā中‘Adhipaññāsikkhā’的 OCR 形式与校勘",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E5%AD%B8%E6%85%A7&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三慧",
@@ -254,7 +260,17 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "} }, \"raw_ocr\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"corrected_pali\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"chinese_translation\": \"增上慧学就是无学慧、解脱和解脱知见诸蕴。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"corrected\": \"Adhipaññāsikkhā asekkhā paññā-vimutti-vimuttiñāṇadassanakkhandhā.\", \"reason\": \"Dhammadāyādasuttavaṇṇanā中‘Adhipaññāsikkhā’的 OCR 形式与校勘",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E5%AD%B8%E6%85%A7&scope=site",
+          "query": "无学慧"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三慧\n\n## 直接回答\n三慧指有学慧、无学慧、非有学非无学慧 [1][2]。另有说法将三慧分为思所成慧、闻所成慧、修习所成慧 [3]。\n\n## 要点展开\n### 三慧的两种分类\n- 第一种分类：有学慧、无学慧、非有学非无学慧 [1][2]。\n- 第二种分类：思所成慧、闻所成慧、修习所成慧 [3]。\n\n### 相关概念\n- 与“三慧”相关的“三人”概念：有学人、无学人、非有学非无学人 [6]。\n- 无学慧在五蕴等语境中出现，如“无学慧蕴” [4][5]。\n\n## 分歧与张力\n证据 [1][2] 将三慧定义为“有学慧、无学慧、非有学非无学慧”，而证据 [3] 将三慧定义为“思所成慧、闻所成慧、修习所成慧”。两者分类标准不同，前者基于修行阶段，后者基于慧的来源或性质。\n\n## 证据覆盖情况\n现有证据覆盖了三慧的两种分类，以及相关“三人”概念和无学慧的提及。但未涉及三慧的具体定义、修习方法或详细解释。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三慧 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82\n  > 三慧：有学慧、无学慧、非有学非无学慧。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82\n  > 三慧：有学慧、无学慧、非有学非无学慧。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E4%B8%89%E6%85%A7%EF%BC%9A%E6%80%9D%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E8%81%9E%E6%89%80%E6%88%90%E6%85%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%89%80%E6%88%90%E6%85%A7%E3%80%82\n  > 下一个三慧：思所成慧、闻所成慧、修习所成慧。\n- [4] Early Buddhist · 经藏/增支部_an · an5.108 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.108&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 这里，比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，比丘们！\n- [5] Early Buddhist · 经藏/增支部_an · an10.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.12&lang=zh&q=%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AF%94%E4%B8%98%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E8%80%85%E3%80%81%E6%98%AF%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E5%85%B7%E5%82%99%E4%BA%94%E6%94%AF%E7%9A%84%E6%AF%94%E4%B8%98%E3%80%82\n  > 比丘是具备无学戒蕴者、是具备无学定蕴者、是具备无学慧蕴者、是具备无学解脱蕴者、是具备无学解脱智见蕴者，这样是具备五支的比丘。\n- [6] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82\n  > 三人：有学人、无学人、非有学非无学人。\n- [7] Early Buddhist · 经藏/小部_kn · dhp360-382 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp360-382&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9D%9E%E6%9C%89%E6%95%85%E7%84%A1%E6%86%82%EF%BC%8C\n  > 非有故无忧，\n- [8] Early Buddhist · 经藏/相应部_sn · sn22.55 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.55&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8E%E9%82%A3%E6%9C%83%E9%9D%9E%E6%9C%89%EF%BC%8C%E9%82%A3%E6%9C%83%E9%9D%9E%E6%88%91%E6%89%80%EF%BC%9B\n  > 『那会非有，那会非我所；",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -264,15 +280,24 @@
       "number": 3,
       "order": 42,
       "label": "三慧",
-      "members": "有学慧、无学慧、非有学非无学慧",
+      "members": "有学慧、无学慧、非有学非无学慧。",
+      "match_members": "有学慧、无学慧、非有学非无学慧",
       "member_items": [
         "有学慧",
         "无学慧",
         "非有学非无学慧"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三慧：有学慧、无学慧、非有学非无学慧。"
+      ],
       "source_text": "三慧：有学慧、无学慧、非有学非无学慧。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E6%85%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82",
+      "expanded_points": [
+        "有学慧：指有学人（尚未完成修行、仍需学习的圣者）所具备的智慧。",
+        "无学慧：指无学人（已完成修行、无需再学习的阿罗汉）所具备的智慧。",
+        "非有学非无学慧：指既非有学亦非无学之人（如凡夫）所具备的智慧。"
+      ]
     }
   ]
 }

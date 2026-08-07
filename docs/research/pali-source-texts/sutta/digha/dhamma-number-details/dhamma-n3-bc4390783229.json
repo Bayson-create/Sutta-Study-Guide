@@ -22,13 +22,13 @@
       "意善行"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三善行」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：身善行、语善行、意善行。[1]\n\n## 所含各法\n### 身善行\n经文将「身善行」列为「三善行」的一个成员。Early Buddhist 用该名词检索时，在《婆蹉火经》命中：这样是行，这样是行的集，这样是行的灭没；。[3]\n### 语善行\n经文将「语善行」列为「三善行」的一个成员。Early Buddhist 用该名词检索时，在《婆蹉火经》命中：这样是行，这样是行的集，这样是行的灭没；。[3]\n### 意善行\n经文将「意善行」列为「三善行」的一个成员。Early Buddhist 用该名词检索时，在《清净经》命中：凡以身、语、意善防护者，。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三善行指身善行、语善行、意善行 [1]。此外，相关经文还提到三善想（离欲想、无恶意想、无加害想）[2] 和三善寻（离欲寻、无恶意寻、无加害寻）[5]，但证据未明确说明三善行与后两者的关系。\n\n## 要点展开\n### 三善行的内容\n- 三善行包括身善行、语善行、意善行 [1]。\n\n### 相关概念\n- 三善想：离欲想、无恶意想、无加害想 [2]。\n- 三善寻：离欲寻、无恶意寻、无加害寻 [5]。\n\n### 防护与行\n- 有经文提到“以身、语、意善防护者” [4]，与三善行可能相关，但证据未明确等同。\n- 多段经文重复“这样是行，这样是行的集，这样是行的灭没” [3][6][7][8]，但未具体解释三善行。\n\n## 分歧与张力\n证据中未出现直接冲突，但三善行与三善想、三善寻的并列出现可能暗示不同分类，但证据未说明其关系。\n\n## 证据覆盖情况\n现有证据明确给出了三善行的具体内容，并提及三善想和三善寻，但未涉及三善行的意义、作用或与其他法数的关联。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三善行",
           "text": "三善行：身善行、语善行、意善行。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -95,9 +95,27 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn14",
           "text": "像这样是行，像这样是行的集，像这样是行的灭没；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn14&lang=zh&q=%E8%BA%AB%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E9%9B%86%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap17.json",
+          "text": "身，此身与外的名色为二种，由此二缘有触与六处，以此等触，愚者有苦受乐受」等。于此等的说法中：「以无明为缘而有行」，这样以无明一法为根本的说法，当知为此处之意。</p><p>－－如是当知先以说法的差别的抉择－－</p><p>2 「以义」，即以无明等句之义。即所谓： ``````````````````````````````````````</p><p>（无明）（1）以不应成就的身恶行等名为不当有－－那不当有而有，故为无明。（2）相反的，身善行等名为当有，那当有而不有，故为无明。（因为对于蕴的聚义），处的努力义，界的空义，根的增上义，谛的如实义，都不知故为无明。（4）不知以逼恼等而说苦等四种之义，故为无明。（5）于无始的轮回，令诸有情徘徊于一切始、趣、有、识住、有情居之中，故为无明。（6）奔走于第一义不存在的男女等之中，而不奔走于第一义存在的蕴等之中，故为无明。（7）障蔽眼等的所依、所缘及缘起、缘生法等之故为无明。</p><p>（缘）果从彼缘而来故为「缘」。「从缘」，是非无及不拒绝之义。「来」即生起及进行之义，又缘的意义为资助之义。无明即缘为「无明之缘」；所以说（由无明之缘）（而有行）。</p><p>（行），行作有为故为「行」。行有二种：（一）「由无明之缘而有行」的行；由于说行的语句而来的行。此中：（一）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%BA%AB%E5%96%84%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "asena veditabbo.\", \"chinese_translation\": \"触以何业异熟所生而触，彼等即触异熟。业为遗产，即业之遗产，我说彼等之遗产财物即是业。无恼害者，即无苦。于此轮，于身门转起之八欲界善思，名为身行。即彼于语门转起者，名为语行。于意门转起者，即彼之八及三下中思，名为无恼害意行。禅思且为欲界。如何？名为无恼害意行。生者，于遍作时及遍修时获得。欲界思与初禅思结合，第四禅思与第三禅思结合，如是于三门中，以身善行等差别之善思，当知即是行。第三轮当以两者混杂之方式而知。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'tī' 应为 'ti'，'tan' 应为 'taṃ'，'nesa)' 应为 'nesaṃ'，'avyapajjhan' 应为 'avyāpajjhaṃ'，'nidduk-' 应为 'niddukkhaṃ'，'atthakāmāvacara-' 应为 'aṭṭhakāmāvacara-'，'kāyasankhāro' 应为 'kāyasaṅkhāro'，'vacīsankhāro' 应为 'vacīsa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%BA%AB%E5%96%84%E8%A1%8C&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "etha, chandajātā ussāhajātā veyyāvaccaṃ karothā ti ādikathanakāle mettaṃ vacīkammaṃ nāma.\", \"chinese_translation\": \"21. 以慈心对比丘们进行行为规范的学习指导、业处开示、说法，乃至三藏佛语，都名为慈的语业。对在家人而言，说“我们去礼拜佛塔，我们去礼拜菩提树，我们将听闻正法，我们将作灯明、花鬘、香花供养，我们将受持三善行而住，我们将施设筹饭等，我们将施设雨安居供养，今天我们将供养僧团四资具，请僧团后准备嚼食、噉食等，铺设座位，准备饮用水，迎接僧团并请来，令坐于已设之座，怀着欢喜、热忱而努力作务”等，在这样说的时候，名为慈的语业。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'Bhikkhünar' 校正为 'Bhikkhūnaṃ'，'àcürapaüfiatti' 校正为 'ācārapaññatti'，'sikkhapanar' 校正为 'sikkhāpanaṃ'，'kammatthānakathanan' 校正为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%96%84%E8%A1%8C&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三善行",
@@ -440,7 +458,31 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap17.json",
+          "heading": "站内搜索命中",
+          "text": "身，此身与外的名色为二种，由此二缘有触与六处，以此等触，愚者有苦受乐受」等。于此等的说法中：「以无明为缘而有行」，这样以无明一法为根本的说法，当知为此处之意。</p><p>－－如是当知先以说法的差别的抉择－－</p><p>2 「以义」，即以无明等句之义。即所谓： ``````````````````````````````````````</p><p>（无明）（1）以不应成就的身恶行等名为不当有－－那不当有而有，故为无明。（2）相反的，身善行等名为当有，那当有而不有，故为无明。（因为对于蕴的聚义），处的努力义，界的空义，根的增上义，谛的如实义，都不知故为无明。（4）不知以逼恼等而说苦等四种之义，故为无明。（5）于无始的轮回，令诸有情徘徊于一切始、趣、有、识住、有情居之中，故为无明。（6）奔走于第一义不存在的男女等之中，而不奔走于第一义存在的蕴等之中，故为无明。（7）障蔽眼等的所依、所缘及缘起、缘生法等之故为无明。</p><p>（缘）果从彼缘而来故为「缘」。「从缘」，是非无及不拒绝之义。「来」即生起及进行之义，又缘的意义为资助之义。无明即缘为「无明之缘」；所以说（由无明之缘）（而有行）。</p><p>（行），行作有为故为「行」。行有二种：（一）「由无明之缘而有行」的行；由于说行的语句而来的行。此中：（一）",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%BA%AB%E5%96%84%E8%A1%8C&scope=site",
+          "query": "身善行"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "asena veditabbo.\", \"chinese_translation\": \"触以何业异熟所生而触，彼等即触异熟。业为遗产，即业之遗产，我说彼等之遗产财物即是业。无恼害者，即无苦。于此轮，于身门转起之八欲界善思，名为身行。即彼于语门转起者，名为语行。于意门转起者，即彼之八及三下中思，名为无恼害意行。禅思且为欲界。如何？名为无恼害意行。生者，于遍作时及遍修时获得。欲界思与初禅思结合，第四禅思与第三禅思结合，如是于三门中，以身善行等差别之善思，当知即是行。第三轮当以两者混杂之方式而知。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'tī' 应为 'ti'，'tan' 应为 'taṃ'，'nesa)' 应为 'nesaṃ'，'avyapajjhan' 应为 'avyāpajjhaṃ'，'nidduk-' 应为 'niddukkhaṃ'，'atthakāmāvacara-' 应为 'aṭṭhakāmāvacara-'，'kāyasankhāro' 应为 'kāyasaṅkhāro'，'vacīsankhāro' 应为 'vacīsa",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%BA%AB%E5%96%84%E8%A1%8C&scope=site",
+          "query": "身善行"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "etha, chandajātā ussāhajātā veyyāvaccaṃ karothā ti ādikathanakāle mettaṃ vacīkammaṃ nāma.\", \"chinese_translation\": \"21. 以慈心对比丘们进行行为规范的学习指导、业处开示、说法，乃至三藏佛语，都名为慈的语业。对在家人而言，说“我们去礼拜佛塔，我们去礼拜菩提树，我们将听闻正法，我们将作灯明、花鬘、香花供养，我们将受持三善行而住，我们将施设筹饭等，我们将施设雨安居供养，今天我们将供养僧团四资具，请僧团后准备嚼食、噉食等，铺设座位，准备饮用水，迎接僧团并请来，令坐于已设之座，怀着欢喜、热忱而努力作务”等，在这样说的时候，名为慈的语业。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 中 'Bhikkhünar' 校正为 'Bhikkhūnaṃ'，'àcürapaüfiatti' 校正为 'ācārapaññatti'，'sikkhapanar' 校正为 'sikkhāpanaṃ'，'kammatthānakathanan' 校正为",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E5%96%84%E8%A1%8C&scope=site",
+          "query": "三善行"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三善行\n\n## 直接回答\n三善行指身善行、语善行、意善行 [1]。此外，相关经文还提到三善想（离欲想、无恶意想、无加害想）[2] 和三善寻（离欲寻、无恶意寻、无加害寻）[5]，但证据未明确说明三善行与后两者的关系。\n\n## 要点展开\n### 三善行的内容\n- 三善行包括身善行、语善行、意善行 [1]。\n\n### 相关概念\n- 三善想：离欲想、无恶意想、无加害想 [2]。\n- 三善寻：离欲寻、无恶意寻、无加害寻 [5]。\n\n### 防护与行\n- 有经文提到“以身、语、意善防护者” [4]，与三善行可能相关，但证据未明确等同。\n- 多段经文重复“这样是行，这样是行的集，这样是行的灭没” [3][6][7][8]，但未具体解释三善行。\n\n## 分歧与张力\n证据中未出现直接冲突，但三善行与三善想、三善寻的并列出现可能暗示不同分类，但证据未说明其关系。\n\n## 证据覆盖情况\n现有证据明确给出了三善行的具体内容，并提及三善想和三善寻，但未涉及三善行的意义、作用或与其他法数的关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三善行 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C%E3%80%82\n  > 三善行：身善行、语善行、意善行。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三善想：离欲想、无恶意想、无加害想。\n- [3] Early Buddhist · 经藏/中部_mn · mn72 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn72&lang=zh&q=%E8%BA%AB%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B\n  > 这样是行，这样是行的集，这样是行的灭没；\n- [4] Early Buddhist · 经藏/相应部_sn · sn4.3 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn4.3&lang=zh&q=%E6%84%8F%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%A5%E8%BA%AB%E3%80%81%E8%AA%9E%E3%80%81%E6%84%8F%E5%96%84%E9%98%B2%E8%AD%B7%E8%80%85%EF%BC%8C\n  > 凡以身、语、意善防护者，\n- [5] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B0%8B%EF%BC%9A%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%82\n  > 三善寻：离欲寻、无恶意寻、无加害寻。\n- [6] Early Buddhist · 经藏/相应部_sn · sn12.21 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.21&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B\n  > 这样是行，这样是行的集，这样是行的灭没；\n- [7] Early Buddhist · 经藏/相应部_sn · sn12.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.22&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B\n  > 这样是行，这样是行的集，这样是行的灭没；\n- [8] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E8%A1%8C%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B\n  > 这样是行，这样是行的集，这样是行的灭没；",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -450,15 +492,24 @@
       "number": 3,
       "order": 4,
       "label": "三善行",
-      "members": "身善行、语善行、意善行",
+      "members": "身善行、语善行、意善行。",
+      "match_members": "身善行、语善行、意善行",
       "member_items": [
         "身善行",
         "语善行",
         "意善行"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三善行：身善行、语善行、意善行。"
+      ],
       "source_text": "三善行：身善行、语善行、意善行。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E5%96%84%E8%A1%8C%E3%80%81%E8%AA%9E%E5%96%84%E8%A1%8C%E3%80%81%E6%84%8F%E5%96%84%E8%A1%8C%E3%80%82",
+      "expanded_points": [
+        "身善行：指身体行为上的善行。",
+        "语善行：指言语上的善行。",
+        "意善行：指意念上的善行。"
+      ]
     }
   ]
 }

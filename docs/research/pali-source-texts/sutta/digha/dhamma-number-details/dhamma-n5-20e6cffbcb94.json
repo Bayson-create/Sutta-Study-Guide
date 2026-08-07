@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-20e6cffbcb94",
+    "number": 5,
+    "label": "五种损失",
+    "member_items": [],
+    "group_ids": [
+      "dn33-n5-g11"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "五种损失"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n五种损失包括亲族的损失、财富的损失、疾病的损失、戒的损失和见的损失 [1][3][5]。其中，戒的损失和见的损失会导致众生在身体崩解后往生到苦界、恶趣、下界、地狱，而亲族、财富、疾病的损失则不会 [1]。\n\n## 要点展开\n### 五种损失的内容\n- 五种损失具体为：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失 [1][3][5]。\n- 增支部AN5.130也提及这五种损失，并称之为“损失经” [2][4][6]。\n\n### 不同损失的结果差异\n- 众生不会因亲族、财富或疾病的损失而死后堕入恶趣 [1]。\n- 但众生会因戒的损失或见的损失，在身体崩解后往生到苦界、恶趣、下界、地狱 [1]。\n\n## 分歧与张力\n- 证据[7]提到“慧的损失”是惨重的损失，但未将其列入五种损失之中，也未说明其与五种损失的关系。这可能暗示存在其他类型的损失，但现有证据未明确说明其是否属于五种损失的范畴或与之并列。\n\n## 证据覆盖情况\n现有证据明确列出了五种损失的具体内容，并区分了不同损失在业报上的差异。但未涉及五种损失之外的损失类型（如慧的损失）是否属于同一体系，也未说明五种损失的完整出处或更多细节。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五种损失",
+          "text": "五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。学友们！众生不因亲族的损失或因财富的损失或因疾病的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，学友们！众生因戒的损失或见的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E4%B8%8D%E5%9B%A0%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E5%9B%A0%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.130",
+          "text": "这是五种损失。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%9A%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.130",
+          "text": "有这五种损失，哪五种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%8C%E5%93%AA%E4%BA%94%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.130",
+          "text": "亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.130",
+          "text": "损失经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%90%8D%E5%A4%B1%E7%B6%93"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an1.71-81",
+          "text": "诸比库，这是惨重的损失，即慧的损失。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.71-81&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E8%BF%99%E6%98%AF%E6%83%A8%E9%87%8D%E7%9A%84%E6%8D%9F%E5%A4%B1%EF%BC%8C%E5%8D%B3%E6%85%A7%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "五种损失",
+          "hits": [
+            {
+              "uid": "an5.130",
+              "collection": "经藏/增支部_an",
+              "title": "损失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这是五种损失。",
+              "score": 24.88972915716736,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。",
+              "score": 24.73848833454805,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%9A%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82"
+            },
+            {
+              "uid": "an5.130",
+              "collection": "经藏/增支部_an",
+              "title": "损失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五种损失，哪五种呢？",
+              "score": 19.019662917507993,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%8C%E5%93%AA%E4%BA%94%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an5.130",
+              "collection": "经藏/增支部_an",
+              "title": "损失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。",
+              "score": 14.96788281838644,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82"
+            },
+            {
+              "uid": "an5.130",
+              "collection": "经藏/增支部_an",
+              "title": "损失经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "损失经",
+              "score": 13.040207670222253,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%90%8D%E5%A4%B1%E7%B6%93"
+            },
+            {
+              "uid": "an1.71-81",
+              "collection": "经藏/增支部_an",
+              "title": "八、善友等品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "诸比库，这是惨重的损失，即慧的损失。",
+              "score": 12.584625577880487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.71-81&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E8%BF%99%E6%98%AF%E6%83%A8%E9%87%8D%E7%9A%84%E6%8D%9F%E5%A4%B1%EF%BC%8C%E5%8D%B3%E6%85%A7%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"
+            },
+            {
+              "uid": "an1.71-81",
+              "collection": "经藏/增支部_an",
+              "title": "八、善友等品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "诸比库，这是惨重的损失，即慧的损失。",
+              "score": 12.584625577880487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.71-81&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E8%BF%99%E6%98%AF%E6%83%A8%E9%87%8D%E7%9A%84%E6%8D%9F%E5%A4%B1%EF%BC%8C%E5%8D%B3%E6%85%A7%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"
+            },
+            {
+              "uid": "an1.71-81",
+              "collection": "经藏/增支部_an",
+              "title": "八、善友等品",
+              "author": "玛欣德尊者 译",
+              "translator": "mahinda2",
+              "text": "诸比库，这是惨重的损失，即慧的损失。",
+              "score": 12.584625577880487,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an1.71-81&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E8%BF%99%E6%98%AF%E6%83%A8%E9%87%8D%E7%9A%84%E6%8D%9F%E5%A4%B1%EF%BC%8C%E5%8D%B3%E6%85%A7%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：五种损失\n\n## 直接回答\n五种损失包括亲族的损失、财富的损失、疾病的损失、戒的损失和见的损失 [1][3][5]。其中，戒的损失和见的损失会导致众生在身体崩解后往生到苦界、恶趣、下界、地狱，而亲族、财富、疾病的损失则不会 [1]。\n\n## 要点展开\n### 五种损失的内容\n- 五种损失具体为：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失 [1][3][5]。\n- 增支部AN5.130也提及这五种损失，并称之为“损失经” [2][4][6]。\n\n### 不同损失的结果差异\n- 众生不会因亲族、财富或疾病的损失而死后堕入恶趣 [1]。\n- 但众生会因戒的损失或见的损失，在身体崩解后往生到苦界、恶趣、下界、地狱 [1]。\n\n## 分歧与张力\n- 证据[7]提到“慧的损失”是惨重的损失，但未将其列入五种损失之中，也未说明其与五种损失的关系。这可能暗示存在其他类型的损失，但现有证据未明确说明其是否属于五种损失的范畴或与之并列。\n\n## 证据覆盖情况\n现有证据明确列出了五种损失的具体内容，并区分了不同损失在业报上的差异。但未涉及五种损失之外的损失类型（如慧的损失）是否属于同一体系，也未说明五种损失的完整出处或更多细节。\n\n## 引用\n- [1] Early Buddhist · DN33 · 五种损失 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E4%B8%8D%E5%9B%A0%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E5%9B%A0%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%E3%80%82\n  > 五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。学友们！众生不因亲族的损失或因财富的损失或因疾病的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，学友们！众生因戒的损失或见的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱。\n- [2] Early Buddhist · 经藏/增支部_an · an5.130 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%E3%80%82\n  > 这是五种损失。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%9A%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82\n  > 五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。\n- [4] Early Buddhist · 经藏/增支部_an · an5.130 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1%EF%BC%8C%E5%93%AA%E4%BA%94%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这五种损失，哪五种呢？\n- [5] Early Buddhist · 经藏/增支部_an · an5.130 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82\n  > 亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。\n- [6] Early Buddhist · 经藏/增支部_an · an5.130 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.130&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%90%8D%E5%A4%B1%E7%B6%93\n  > 损失经\n- [7] Early Buddhist · 经藏/增支部_an · an1.71-81 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an1.71-81&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E8%BF%99%E6%98%AF%E6%83%A8%E9%87%8D%E7%9A%84%E6%8D%9F%E5%A4%B1%EF%BC%8C%E5%8D%B3%E6%85%A7%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82\n  > 诸比库，这是惨重的损失，即慧的损失。",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g11",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 11,
+      "label": "五种损失",
+      "members": "亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。学友们！众生不因亲族的损失或因财富的损失或因疾病的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，学友们！众生因戒的损失或见的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱。",
+      "match_members": "亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失",
+      "member_items": [],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。学友们！众生不因亲族的损失或因财富的损失或因疾病的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，学友们！众生因戒的损失或见的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱。"
+      ],
+      "source_text": "五种损失：亲族的损失、财富的损失、疾病的损失、戒的损失、见的损失。学友们！众生不因亲族的损失或因财富的损失或因疾病的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱，学友们！众生因戒的损失或见的损失，以身体的崩解，死后往生到苦界、恶趣、下界、地狱。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E7%A8%AE%E6%90%8D%E5%A4%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%81%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E4%B8%8D%E5%9B%A0%E8%A6%AA%E6%97%8F%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E8%B2%A1%E5%AF%8C%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E5%9B%A0%E7%96%BE%E7%97%85%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%9C%BE%E7%94%9F%E5%9B%A0%E6%88%92%E7%9A%84%E6%90%8D%E5%A4%B1%E6%88%96%E8%A6%8B%E7%9A%84%E6%90%8D%E5%A4%B1%EF%BC%8C%E4%BB%A5%E8%BA%AB%E9%AB%94%E7%9A%84%E5%B4%A9%E8%A7%A3%EF%BC%8C%E6%AD%BB%E5%BE%8C%E5%BE%80%E7%94%9F%E5%88%B0%E8%8B%A6%E7%95%8C%E3%80%81%E6%83%A1%E8%B6%A3%E3%80%81%E4%B8%8B%E7%95%8C%E3%80%81%E5%9C%B0%E7%8D%84%E3%80%82",
+      "expanded_points": [
+        "亲族的损失：指亲属或家族成员的丧失。",
+        "财富的损失：指财产或资源的丧失。",
+        "疾病的损失：指健康受损或患病。",
+        "戒的损失：指戒行或道德规范的破坏。",
+        "见的损失：指错误见解或邪见的产生。"
+      ]
+    }
+  ]
+}

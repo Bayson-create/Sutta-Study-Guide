@@ -22,13 +22,13 @@
       "意牟尼行"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三牟尼行」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：身牟尼行、语牟尼行、意牟尼行。[1]\n\n## 所含各法\n### 身牟尼行\n经文将「身牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为身牟尼行。。[3]\n### 语牟尼行\n经文将「语牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为语牟尼行。。[4]\n### 意牟尼行\n经文将「意牟尼行」列为「三牟尼行」的一个成员。Early Buddhist 用该名词检索时，在《牟尼行经》命中：这被称为意牟尼行。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 13 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三牟尼行指身牟尼行、语牟尼行、意牟尼行 [1][2][7]。其中，身牟尼行、语牟尼行、意牟尼行分别有对应的定义，但现有证据仅提供了名称和部分定义线索 [3][4][5][6][8]。\n\n## 要点展开\n### 三牟尼行的组成\n- 三牟尼行包括身牟尼行、语牟尼行、意牟尼行 [1][2][7]。\n\n### 各牟尼行的定义\n- 身牟尼行有明确的定义，但现有证据仅指出“这被称为身牟尼行” [3]，并提问“什么是身牟尼行呢？” [6]，未给出具体内容。\n- 语牟尼行有明确的定义，但现有证据仅指出“这被称为语牟尼行” [4]，并提问“什么是语牟尼行呢？” [8]，未给出具体内容。\n- 意牟尼行有明确的定义，但现有证据仅指出“这被称为意牟尼行” [5]，未给出具体内容。\n\n## 证据覆盖情况\n现有证据覆盖了三牟尼行的名称和基本构成，但未提供各牟尼行的具体定义内容，仅提示存在定义。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三牟尼行",
           "text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -79,7 +79,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三牟尼行",
@@ -232,7 +232,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三牟尼行\n\n## 直接回答\n三牟尼行指身牟尼行、语牟尼行、意牟尼行 [1][2][7]。其中，身牟尼行、语牟尼行、意牟尼行分别有对应的定义，但现有证据仅提供了名称和部分定义线索 [3][4][5][6][8]。\n\n## 要点展开\n### 三牟尼行的组成\n- 三牟尼行包括身牟尼行、语牟尼行、意牟尼行 [1][2][7]。\n\n### 各牟尼行的定义\n- 身牟尼行有明确的定义，但现有证据仅指出“这被称为身牟尼行” [3]，并提问“什么是身牟尼行呢？” [6]，未给出具体内容。\n- 语牟尼行有明确的定义，但现有证据仅指出“这被称为语牟尼行” [4]，并提问“什么是语牟尼行呢？” [8]，未给出具体内容。\n- 意牟尼行有明确的定义，但现有证据仅指出“这被称为意牟尼行” [5]，未给出具体内容。\n\n## 证据覆盖情况\n现有证据覆盖了三牟尼行的名称和基本构成，但未提供各牟尼行的具体定义内容，仅提示存在定义。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三牟尼行 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 三牟尼行：身牟尼行、语牟尼行、意牟尼行。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C%EF%BC%9A%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 三牟尼行：身牟尼行、语牟尼行、意牟尼行。\n- [3] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 这被称为身牟尼行。\n- [4] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 这被称为语牟尼行。\n- [5] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 这被称为意牟尼行。\n- [6] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F\n  > 什么是身牟尼行呢？\n- [7] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82\n  > 身牟尼行、语牟尼行、意牟尼行。\n- [8] Early Buddhist · 经藏/增支部_an · an3.122 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.122&lang=zh&q=%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E5%91%A2%EF%BC%9F\n  > 什么是语牟尼行呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -242,15 +244,24 @@
       "number": 3,
       "order": 53,
       "label": "三牟尼行",
-      "members": "身牟尼行、语牟尼行、意牟尼行",
+      "members": "身牟尼行、语牟尼行、意牟尼行。",
+      "match_members": "身牟尼行、语牟尼行、意牟尼行",
       "member_items": [
         "身牟尼行",
         "语牟尼行",
         "意牟尼行"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三牟尼行：身牟尼行、语牟尼行、意牟尼行。"
+      ],
       "source_text": "三牟尼行：身牟尼行、语牟尼行、意牟尼行。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%89%9F%E5%B0%BC%E8%A1%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%BA%AB%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E8%AA%9E%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%81%E6%84%8F%E7%89%9F%E5%B0%BC%E8%A1%8C%E3%80%82",
+      "expanded_points": [
+        "身牟尼行：指身体行为方面的牟尼行。",
+        "语牟尼行：指言语方面的牟尼行。",
+        "意牟尼行：指心意方面的牟尼行。"
+      ]
     }
   ]
 }

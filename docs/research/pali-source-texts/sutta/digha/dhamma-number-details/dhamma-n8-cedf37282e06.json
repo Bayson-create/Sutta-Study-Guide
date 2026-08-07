@@ -5,10 +5,14 @@
     "number": 8,
     "label": "八世间法",
     "member_items": [
-      "得到与得不到",
-      "有名与无名",
-      "毁与誉",
-      "乐与苦"
+      "得到",
+      "得不到",
+      "有名",
+      "无名",
+      "毁",
+      "誉",
+      "乐",
+      "苦"
     ],
     "group_ids": [
       "dn33-n8-g9",
@@ -20,19 +24,19 @@
     ],
     "search_terms": [
       "八世间法",
-      "得到与得不到",
-      "有名与无名",
-      "毁与誉",
-      "乐与苦"
+      "得到",
+      "得不到",
+      "有名",
+      "无名"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「八世间法」属于 8 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：得到与得不到、有名与无名、毁与誉、乐与苦。[1]\n- DN34：得到与得不到、有名与无名、毁与誉、乐与苦。[2]\n\n## 所含各法\n### 得到与得不到\n经文将「得到与得不到」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《世间法经第一》命中：「得到得不到与有名无名，毁誉与乐苦，。[4]\n### 有名与无名\n经文将「有名与无名」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《世间法经第一》命中：「得到得不到与有名无名，毁誉与乐苦，。[4]\n### 毁与誉\n经文将「毁与誉」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。。[1]\n### 乐与苦\n经文将「乐与苦」列为「八世间法」的一个成员。Early Buddhist 用该名词检索时，在《乐的与苦的经》命中：乐的与苦的经。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n八世间法指“得到与得不到、有名与无名、毁与誉、乐与苦”这四对相对法 [1][2][4][6]。DN34在“哪些是应该被遍知的八法？”的问题下给出同一列举，并明确说“这些是应该被遍知的八法” [2][6]。另有AN10.27仅出现“八世间法”的名目，未列出具体内容 [3]。\n\n## 要点展开\n### 八法的具体内容\n- 八世间法为四对：得到与得不到、有名与无名、毁与誉、乐与苦 [1][2][4][6]。\n- DN33与DN34的列举完全一致，均按“得到、得不到；有名、无名；毁、誉；乐、苦”的顺序呈现 [1][2][4][6]。\n\n### “应该被遍知”的定位\n- DN34将其放在“哪些是应该被遍知的八法？”的提问下，并在列举后说“这些是应该被遍知的八法” [2][6]。\n- DN33只是直接列出八世间法，没有附加“遍知”的说明 [1][4]。\n\n### 其他经文的提及\n- AN10.27中仅出现“八世间法，比丘们！”一句，未展开具体内容 [3]。\n\n## 分歧与张力\nDN33与DN34在八世间法的内容上完全一致，不存在冲突 [1][2][4][6]。差异在于DN34明确把八世间法纳入“应该被遍知”的框架，而DN33没有给出这一框架 [1][2][4][6]；AN10.27仅提及名目，无法与上述列举直接对照 [3]。这些是呈现层级的差异，不是法义矛盾。\n\n## 证据覆盖情况\n现有证据完整覆盖了八世间法的四对内容，以及它在DN33/DN34中的两种呈现方式；也显示AN10.27只是提到名称。但未覆盖每一法项的具体定义、对待八世间法的修行态度，以及其他经典中对该概念的进一步展开。多数检索到的段落（如八敬重法、当代佛教反思等）与八世间法无直接关联。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 八世间法",
           "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
         },
         {
           "kind": "source",
@@ -48,21 +52,9 @@
         },
         {
           "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an8.5",
-          "text": "「得到得不到与有名无名，毁誉与乐苦，",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
-        },
-        {
-          "kind": "early_buddhist",
           "label": "Early Buddhist · 经藏/长部_dn · dn33",
           "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/相应部_sn · sn24.43",
-          "text": "乐的与苦的经",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.43&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E7%9A%84%E8%88%87%E8%8B%A6%E7%9A%84%E7%B6%93"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -101,13 +93,37 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E5%A4%A7%E4%B8%88%E5%A4%AB%E4%B9%8B%E5%B0%8B%EF%BC%9A%E3%80%8E%E9%80%99%E6%98%AF%E5%B0%91%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E5%BC%B7%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%9B"
         },
         {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an8.6",
-          "text": "「得到得不到与有名无名，毁誉与乐苦，",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
+          "kind": "site",
+          "label": "docs/research/contemporary-buddhism-reflections.md",
+          "text": "传：两种不同性质的教义辩护空间 ### 1. 汉传的问题 汉传佛教的问题不是没有经典、没有祖师、没有文化，而是现代可执行系统弱： - 教理多，实践路径弱。 - 宗派多，共同基础弱。 - 仪式多，闻思修闭环弱。 - 寺院多，清净僧团少。 - 文化资本强，国际修行产品弱。 - 僧团传统名义强，戒律共同体实际弱。 济群在《当代佛教问题的思考》中说，今天具有良好道风和修学氛围的道场已经寥寥无几，许多寺院忙于旅游开发或经忏佛事，出家人难以得到法的滋养。[^jiqun-contemporary] 如第九节所述，汉传的额外风险点在于\"方便\"\"护法\"这类教义概念本身可以被系统性滥用为辩护工具，这是一种**相对间接、可以被其他大乘经论（如强调戒律根本性的经典）反驳和制衡**的风险。 ### 2. 藏传的问题：教义结构比汉传更直接、更系统 藏传佛教的问题不是没有体系，而是体系太容易与人格权威绑定： - 上师依止容易被绝对化。 - 密法保密性容易降低外部监督。 - 活佛、仁波切、灌顶、传承身份有强象征资本。 - 弟子若缺乏辨别能力，容易把服从当修行。 - 当藏传方法被汉地组织学习时，最危险的不是《广论》本身，而是\"权威依附结构\"被移植。 **藏传密宗三昧耶戒（samaya）核心条款之一就是不可诽谤、批评上师",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-quran.md",
+          "text": "题三：性与婚姻** **古兰经的立场**（《光章》24:26-31, 《妇女章》4:3-4）： ``` 《光章》24:30-31： \"你告诉信男们：他们应当降低视线， 保守贞操。 这对他们更为纯洁。 真主确是彻知他们的行为的。 你告诉信女们：她们应当降低视线， 保守贞操， 不要显露她们的美饰...\" ``` 古兰经的性伦理： 1. **性是真主的恩赐**，但必须在**婚姻框架内** 2. **对女性的保护**（多妻制中，每妻必须得到平等对待） 3. **对他人隐私的尊重**（不要刺探他人的房间） 4. **对于奴隶**（slave concubines，4:24）可以有性关系但有保护规定 **上座部佛法的立场**（律藏戒条与在家戒的概述、《清净道论·不净观》）： ``` 比丘不得有性行为（若有则违犯波罗夷，自动还俗）。 对在家人，第三戒通常指避免通奸、强暴、侵犯受保护者等邪淫行为。 ``` **关键差异**：佛法对性的视角是**不净观**（asubha） ``` 《清净道论》的修法概述： 观察身体的三十二个部分—— 毛发、身体、指甲、牙齿...血液、胆汁... 每一部分都不洁净、无常、令人厌离。 如果能看到，性欲会自然消退。 ``` **对话分析**： |角度|古兰经|上座部佛法|",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "为弟子们制定的学处好像烟一样，当他们的导师在世时就学习这些学处，他们的导师一去世就不再学习这些学处了。’**” 当时，马哈咖沙巴尊者在僧团中作甘马 （kamma,僧团表决会议），强调说： “**尚未制定者，不应再制；已经制定者，不应废除；只应继续受持所制定的学处！**”(Cv.441-442) 这是对待佛陀所制定的戒律与教法的基本原则。其实这些基本原则是佛陀在世时曾经多次强调过的，只不过在第一次结集时再由大迦叶尊者重新提出来，并且得到所有与会的阿罗汉们一致通过。③因为参加第一次结集的所有比库都是大长老，都是上座，所以他们的这一项决定就称为 Theravāda。Thera 是长老、上座，vāda 是观点、思想、学说，Theravāda 即上座部，上座们的观点、主张。上座长老们坚持以下三项原则： 1．佛陀没有制定的戒律、 没有说过的法，不应当添加。 2．佛陀已经制定的戒律、已经说过的法，不应废除，不应随意篡改、删改。 3．只应当遵行佛陀所制定的戒律、所教导的法。 也就是说，上座长老们认为：只有佛陀才有资格制定戒律，因为佛陀具有一切知智(sabbaññutā) 与大悲智(mahākaruṇā)。唯有同时具足这两种智慧， 才有资格制定戒律，但是除了佛陀之外，没有任何人拥有这样的资格。作为佛陀忠诚的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-comparison.md",
+          "text": "意图、对象、努力与结果成熟为未来苦果。 ``` **古兰经的立场**： ``` 《曙光章》113： \"你说：我求庇于曙光的主...\" 《讨伐章》9:29： \"你们要与不信真主末日...的人战斗， 直到他们亲手交纳丁税，并且表示屈服。\" ``` **圣经的立场**： ``` 马太福音5:39： \"有人打你的右脸， 连左脸也转过来由他打。\" 但启示录19:11-21： \"我看见天开了... 有一位骑白马的... 在他衣服和大腿上有名字写着： '万王之王，万主之主'... 众鸟聚集起来...吃了他们的肉。\" ``` **分析**： |维度|佛法|古兰经|圣经| |---|---|---|---| |**暴力的道德性**|绝对反对（产生业障）|在防卫与圣战中允许（有明确条件）|理论上完全反对，但末世论中有最终的神圣暴力| |**战争的正当性**|无|是的（为真主的宗教）|争议中（和平的言辞 vs 末世的暴力）| |**自卫权**|否定（建议逃离）|肯定（防卫战合法）|福音书模糊，末世论清晰| |**对手的人性**|被无明束缚的众生（值得同情）|拒绝真理的人（需要被改变或战胜）|充满邪恶的人（需要被救赎或审判）| |**战争后的和解**|通过修行消解因果债|如果敌人投降可接纳|通过基督的救赎超越|",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E5%90%8D&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "text": "果道智）| 与此相应，本篇也列出**五种正见**的进阶：第一是恒常存在于世间的**业自己有正见**；第二是以**名色分别智**破除极粗我见；第三是以**缘摄受智**破除\"作者\"\"受者\"之类粗我见；第四是以**内观智**破除细我见；第五是以**出世间道果智**根除极细我见。这一结构说明，\"正见\"不是单一观念，而是从伦理因果的确认，逐步推进到名色、因缘、三相与道果的完整智慧链条。 文中用**铁碗的譬喻**说明这四层我见的次第破除：一个人得到一个满是铁锈的铁碗，需要先除去外层的粗锈，才能逐层显露出如日月般光洁的碗身——四层我见的破除亦复如是，层层深入，直至道智现前，彻底根除极细我见与潜伏的疑惑。 **证得初果（须陀洹）的巨大利益**（第十四节，本篇的高潮）：一旦彻底根除\"我见\"，破除身见及一切邪见后： - **不再堕入恶趣**：过去伴随生命的一切恶业种子彻底熄灭，未来也不再造作导致堕落恶趣的恶业； - **证得涅槃**：即\"有余依涅槃\"（Sa-upādisesa-nibbāna），烦恼彻底熄灭而蕴身尚存； - **不再死亡**：此涅槃状态永恒不变，称为\"不死界\"（Amata-dhātu）； - **无生**：此状态是\"无为界\"（Asaṅkhata-dhātu），是涅槃的别名； - 须陀洹**最多在人天",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "八世间法",
@@ -195,347 +211,68 @@
           ]
         },
         {
-          "query": "得到与得不到",
-          "hits": [
-            {
-              "uid": "an8.5",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "「得到得不到与有名无名，毁誉与乐苦，",
-              "score": 17.235614227012444,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "「得到得不到与有名无名，毁誉与乐苦，",
-              "score": 17.235614227012444,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
-            },
-            {
-              "uid": "an3.22",
-              "collection": "经藏/增支部_an",
-              "title": "病人经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "这里，一种病人当得到适当的食物或得不到适当的食物，当得到适当的药物或得不到适当的药物，当得到适当的看护者或得不到适当的看护者时，他都不从那个病康复。",
-              "score": 14.767624184129307,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E7%97%85%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E4%B8%8D%E5%BE%9E%E9%82%A3%E5%80%8B%E7%97%85%E5%BA%B7%E5%BE%A9%E3%80%82"
-            },
-            {
-              "uid": "an3.22",
-              "collection": "经藏/增支部_an",
-              "title": "病人经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "这里，一种病人当得到适当的食物或得不到适当的食物，当得到适当的药物或得不到适当的药物，当得到适当的看护者或得不到适当的看护者时，他都从那个病康复。",
-              "score": 14.767624184129307,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E7%97%85%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E8%97%A5%E7%89%A9%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E9%81%A9%E7%95%B6%E7%9A%84%E7%9C%8B%E8%AD%B7%E8%80%85%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E5%BE%9E%E9%82%A3%E5%80%8B%E7%97%85%E5%BA%B7%E5%BE%A9%E3%80%82"
-            },
-            {
-              "uid": "mn76",
-              "collection": "经藏/中部_mn",
-              "title": "散达葛经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "团食应该不被我得到的， 因为那样得不到；",
-              "score": 14.714717870847222,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn76&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%9C%98%E9%A3%9F%E6%87%89%E8%A9%B2%E4%B8%8D%E8%A2%AB%E6%88%91%E5%BE%97%E5%88%B0%E7%9A%84%EF%BC%8C+%E5%9B%A0%E7%82%BA%E9%82%A3%E6%A8%A3%E5%BE%97%E4%B8%8D%E5%88%B0%EF%BC%9B"
-            },
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 13.137917788469483,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
-              "score": 12.70670060226221,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
-            },
-            {
-              "uid": "an3.22",
-              "collection": "经藏/增支部_an",
-              "title": "病人经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "这里，一种人当得到看见如来或得不到看见如来，当得到被如来教导的法律之听闻或得不到被如来教导的法律之听闻时，他都在善法上进入正性、决定。",
-              "score": 12.503738796828426,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.22&lang=zh&q=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E4%B8%80%E7%A8%AE%E4%BA%BA%E7%95%B6%E5%BE%97%E5%88%B0%E7%9C%8B%E8%A6%8B%E5%A6%82%E4%BE%86%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E7%9C%8B%E8%A6%8B%E5%A6%82%E4%BE%86%EF%BC%8C%E7%95%B6%E5%BE%97%E5%88%B0%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%81%BD%E8%81%9E%E6%88%96%E5%BE%97%E4%B8%8D%E5%88%B0%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E5%BE%8B%E4%B9%8B%E8%81%BD%E8%81%9E%E6%99%82%EF%BC%8C%E4%BB%96%E9%83%BD%E5%9C%A8%E5%96%84%E6%B3%95%E4%B8%8A%E9%80%B2%E5%85%A5%E6%AD%A3%E6%80%A7%E3%80%81%E6%B1%BA%E5%AE%9A%E3%80%82"
-            }
-          ]
+          "query": "得到",
+          "hits": []
         },
         {
-          "query": "有名与无名",
-          "hits": [
-            {
-              "uid": "an8.5",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "「得到得不到与有名无名，毁誉与乐苦，",
-              "score": 22.15228986431923,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "「得到得不到与有名无名，毁誉与乐苦，",
-              "score": 22.15228986431923,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%BE%97%E5%88%B0%E5%BE%97%E4%B8%8D%E5%88%B0%E8%88%87%E6%9C%89%E5%90%8D%E7%84%A1%E5%90%8D%EF%BC%8C%E6%AF%80%E8%AD%BD%E8%88%87%E6%A8%82%E8%8B%A6%EF%BC%8C"
-            },
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 17.035260562734834,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
-              "score": 16.468706582273338,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
-            },
-            {
-              "uid": "an4.192",
-              "collection": "经藏/增支部_an",
-              "title": "处经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 14.70900973724962,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "an4.192",
-              "collection": "经藏/增支部_an",
-              "title": "处经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 14.70900973724962,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
-              "score": 14.70900973724962,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "an8.5",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
-              "score": 12.665213124734835,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
-            }
-          ]
+          "query": "得不到",
+          "hits": []
         },
         {
-          "query": "毁与誉",
-          "hits": [
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 20.412566355808487,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "未受教导的一般人生起得到与得不到、有名与无名、毁与誉、乐与苦，已受教导的圣弟子也生起得到与得不到、有名与无名、毁与誉、乐与苦，在那里，比丘们！",
-              "score": 19.729775836335214,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%AA%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E4%B8%80%E8%88%AC%E4%BA%BA%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%B7%B2%E5%8F%97%E6%95%99%E5%B0%8E%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E4%B9%9F%E7%94%9F%E8%B5%B7%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
-            },
-            {
-              "uid": "an4.192",
-              "collection": "经藏/增支部_an",
-              "title": "处经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 17.609052367142517,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "an4.192",
-              "collection": "经藏/增支部_an",
-              "title": "处经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "且世间也随［这］八种世间法转：得到与得不到、有名与无名、毁与誉、乐与苦。",
-              "score": 17.609052367142517,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.192&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82"
-            },
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
-              "score": 17.609052367142517,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "an8.5",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
-              "score": 15.145942056594567,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.5&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
-            },
-            {
-              "uid": "an8.6",
-              "collection": "经藏/增支部_an",
-              "title": "世间法经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "得到与得不到、有名与无名、毁与誉、乐与苦，这八种世间法随世间转，且世间也随［这］八种世间法转。",
-              "score": 15.145942056594567,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an8.6&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E9%9A%A8%E4%B8%96%E9%96%93%E8%BD%89%EF%BC%8C%E4%B8%94%E4%B8%96%E9%96%93%E4%B9%9F%E9%9A%A8%EF%BC%BB%E9%80%99%EF%BC%BD%E5%85%AB%E7%A8%AE%E4%B8%96%E9%96%93%E6%B3%95%E8%BD%89%E3%80%82"
-            },
-            {
-              "uid": "kp5",
-              "collection": "经藏/小部_kn",
-              "title": "吉祥经",
-              "author": "Metta",
-              "translator": "metta",
-              "text": "接触世法，即面对八风(利、衰、誉、毁、称、讥、乐、苦)，心不动摇。",
-              "score": 14.755232367292791,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp5&lang=zh&q=%E6%AF%80%E8%88%87%E8%AD%BD&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E6%8E%A5%E8%A7%B8%E4%B8%96%E6%B3%95%EF%BC%8C%E5%8D%B3%E9%9D%A2%E5%B0%8D%E5%85%AB%E9%A2%A8%28%E5%88%A9%E3%80%81%E8%A1%B0%E3%80%81%E8%AD%BD%E3%80%81%E6%AF%80%E3%80%81%E7%A8%B1%E3%80%81%E8%AD%8F%E3%80%81%E6%A8%82%E3%80%81%E8%8B%A6%29%EF%BC%8C%E5%BF%83%E4%B8%8D%E5%8B%95%E6%90%96%E3%80%82"
-            }
-          ]
+          "query": "有名",
+          "hits": []
         },
         {
-          "query": "乐与苦",
-          "hits": [
-            {
-              "uid": "sn24.43",
-              "collection": "经藏/相应部_sn",
-              "title": "乐的与苦的经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐的与苦的经",
-              "score": 16.02797656191481,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn24.43&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E7%9A%84%E8%88%87%E8%8B%A6%E7%9A%84%E7%B6%93"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "没有乐与苦吗？",
-              "score": 15.35893014985807,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E6%A8%82%E8%88%87%E8%8B%A6%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "没有乐与苦吗？",
-              "score": 15.35893014985807,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%B2%92%E6%9C%89%E6%A8%82%E8%88%87%E8%8B%A6%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐与苦被自己所作吗？",
-              "score": 14.630948435355926,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐与苦被其他所作吗？",
-              "score": 14.630948435355926,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐与苦被自己所作吗？",
-              "score": 14.630948435355926,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐与苦被其他所作吗？",
-              "score": 14.630948435355926,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
-            },
-            {
-              "uid": "sn12.18",
-              "collection": "经藏/相应部_sn",
-              "title": "丁巴卢迦经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "乐与苦被自己与其他所作吗？",
-              "score": 13.9720754672998,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.18&lang=zh&q=%E6%A8%82%E8%88%87%E8%8B%A6&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%A8%82%E8%88%87%E8%8B%A6%E8%A2%AB%E8%87%AA%E5%B7%B1%E8%88%87%E5%85%B6%E4%BB%96%E6%89%80%E4%BD%9C%E5%97%8E%EF%BC%9F"
-            }
-          ]
+          "query": "无名",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-buddhism-reflections.md",
+          "heading": "站内搜索命中",
+          "text": "传：两种不同性质的教义辩护空间 ### 1. 汉传的问题 汉传佛教的问题不是没有经典、没有祖师、没有文化，而是现代可执行系统弱： - 教理多，实践路径弱。 - 宗派多，共同基础弱。 - 仪式多，闻思修闭环弱。 - 寺院多，清净僧团少。 - 文化资本强，国际修行产品弱。 - 僧团传统名义强，戒律共同体实际弱。 济群在《当代佛教问题的思考》中说，今天具有良好道风和修学氛围的道场已经寥寥无几，许多寺院忙于旅游开发或经忏佛事，出家人难以得到法的滋养。[^jiqun-contemporary] 如第九节所述，汉传的额外风险点在于\"方便\"\"护法\"这类教义概念本身可以被系统性滥用为辩护工具，这是一种**相对间接、可以被其他大乘经论（如强调戒律根本性的经典）反驳和制衡**的风险。 ### 2. 藏传的问题：教义结构比汉传更直接、更系统 藏传佛教的问题不是没有体系，而是体系太容易与人格权威绑定： - 上师依止容易被绝对化。 - 密法保密性容易降低外部监督。 - 活佛、仁波切、灌顶、传承身份有强象征资本。 - 弟子若缺乏辨别能力，容易把服从当修行。 - 当藏传方法被汉地组织学习时，最危险的不是《广论》本身，而是\"权威依附结构\"被移植。 **藏传密宗三昧耶戒（samaya）核心条款之一就是不可诽谤、批评上师",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site",
+          "query": "得到"
+        },
+        {
+          "source": "docs/research/two-religions-quran.md",
+          "heading": "站内搜索命中",
+          "text": "题三：性与婚姻** **古兰经的立场**（《光章》24:26-31, 《妇女章》4:3-4）： ``` 《光章》24:30-31： \"你告诉信男们：他们应当降低视线， 保守贞操。 这对他们更为纯洁。 真主确是彻知他们的行为的。 你告诉信女们：她们应当降低视线， 保守贞操， 不要显露她们的美饰...\" ``` 古兰经的性伦理： 1. **性是真主的恩赐**，但必须在**婚姻框架内** 2. **对女性的保护**（多妻制中，每妻必须得到平等对待） 3. **对他人隐私的尊重**（不要刺探他人的房间） 4. **对于奴隶**（slave concubines，4:24）可以有性关系但有保护规定 **上座部佛法的立场**（律藏戒条与在家戒的概述、《清净道论·不净观》）： ``` 比丘不得有性行为（若有则违犯波罗夷，自动还俗）。 对在家人，第三戒通常指避免通奸、强暴、侵犯受保护者等邪淫行为。 ``` **关键差异**：佛法对性的视角是**不净观**（asubha） ``` 《清净道论》的修法概述： 观察身体的三十二个部分—— 毛发、身体、指甲、牙齿...血液、胆汁... 每一部分都不洁净、无常、令人厌离。 如果能看到，性欲会自然消退。 ``` **对话分析**： |角度|古兰经|上座部佛法|",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site",
+          "query": "得到"
+        },
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "为弟子们制定的学处好像烟一样，当他们的导师在世时就学习这些学处，他们的导师一去世就不再学习这些学处了。’**” 当时，马哈咖沙巴尊者在僧团中作甘马 （kamma,僧团表决会议），强调说： “**尚未制定者，不应再制；已经制定者，不应废除；只应继续受持所制定的学处！**”(Cv.441-442) 这是对待佛陀所制定的戒律与教法的基本原则。其实这些基本原则是佛陀在世时曾经多次强调过的，只不过在第一次结集时再由大迦叶尊者重新提出来，并且得到所有与会的阿罗汉们一致通过。③因为参加第一次结集的所有比库都是大长老，都是上座，所以他们的这一项决定就称为 Theravāda。Thera 是长老、上座，vāda 是观点、思想、学说，Theravāda 即上座部，上座们的观点、主张。上座长老们坚持以下三项原则： 1．佛陀没有制定的戒律、 没有说过的法，不应当添加。 2．佛陀已经制定的戒律、已经说过的法，不应废除，不应随意篡改、删改。 3．只应当遵行佛陀所制定的戒律、所教导的法。 也就是说，上座长老们认为：只有佛陀才有资格制定戒律，因为佛陀具有一切知智(sabbaññutā) 与大悲智(mahākaruṇā)。唯有同时具足这两种智慧， 才有资格制定戒律，但是除了佛陀之外，没有任何人拥有这样的资格。作为佛陀忠诚的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site",
+          "query": "得到"
+        },
+        {
+          "source": "docs/research/two-religions-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "意图、对象、努力与结果成熟为未来苦果。 ``` **古兰经的立场**： ``` 《曙光章》113： \"你说：我求庇于曙光的主...\" 《讨伐章》9:29： \"你们要与不信真主末日...的人战斗， 直到他们亲手交纳丁税，并且表示屈服。\" ``` **圣经的立场**： ``` 马太福音5:39： \"有人打你的右脸， 连左脸也转过来由他打。\" 但启示录19:11-21： \"我看见天开了... 有一位骑白马的... 在他衣服和大腿上有名字写着： '万王之王，万主之主'... 众鸟聚集起来...吃了他们的肉。\" ``` **分析**： |维度|佛法|古兰经|圣经| |---|---|---|---| |**暴力的道德性**|绝对反对（产生业障）|在防卫与圣战中允许（有明确条件）|理论上完全反对，但末世论中有最终的神圣暴力| |**战争的正当性**|无|是的（为真主的宗教）|争议中（和平的言辞 vs 末世的暴力）| |**自卫权**|否定（建议逃离）|肯定（防卫战合法）|福音书模糊，末世论清晰| |**对手的人性**|被无明束缚的众生（值得同情）|拒绝真理的人（需要被改变或战胜）|充满邪恶的人（需要被救赎或审判）| |**战争后的和解**|通过修行消解因果债|如果敌人投降可接纳|通过基督的救赎超越|",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E5%90%8D&scope=site",
+          "query": "有名"
+        },
+        {
+          "source": "docs/research/theravada-modern/manuals-of-dhamma-summary.md",
+          "heading": "站内搜索命中",
+          "text": "果道智）| 与此相应，本篇也列出**五种正见**的进阶：第一是恒常存在于世间的**业自己有正见**；第二是以**名色分别智**破除极粗我见；第三是以**缘摄受智**破除\"作者\"\"受者\"之类粗我见；第四是以**内观智**破除细我见；第五是以**出世间道果智**根除极细我见。这一结构说明，\"正见\"不是单一观念，而是从伦理因果的确认，逐步推进到名色、因缘、三相与道果的完整智慧链条。 文中用**铁碗的譬喻**说明这四层我见的次第破除：一个人得到一个满是铁锈的铁碗，需要先除去外层的粗锈，才能逐层显露出如日月般光洁的碗身——四层我见的破除亦复如是，层层深入，直至道智现前，彻底根除极细我见与潜伏的疑惑。 **证得初果（须陀洹）的巨大利益**（第十四节，本篇的高潮）：一旦彻底根除\"我见\"，破除身见及一切邪见后： - **不再堕入恶趣**：过去伴随生命的一切恶业种子彻底熄灭，未来也不再造作导致堕落恶趣的恶业； - **证得涅槃**：即\"有余依涅槃\"（Sa-upādisesa-nibbāna），烦恼彻底熄灭而蕴身尚存； - **不再死亡**：此涅槃状态永恒不变，称为\"不死界\"（Amata-dhātu）； - **无生**：此状态是\"无为界\"（Asaṅkhata-dhātu），是涅槃的别名； - 须陀洹**最多在人天",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site",
+          "query": "得到"
+        },
+        {
+          "source": "docs/research/theravada-modern/in-the-buddhas-words-summary.md",
+          "heading": "站内搜索命中",
+          "text": "贪爱的熄灭，是老病死狂流中的安全岛屿**，超越有为世界却可以在有为世界中证得（此生即可证得）。 ### 教学的渐进策略 佛陀教学素以善巧著称：\"次第说法\"——先教布施持戒，让弟子心智逐渐成熟，接着才教授\"出世间\"的四圣谛。菩提比丘特别强调：即便有些弟子听法后立即开悟，这**不代表佛法简单易懂**，而是因为这些弟子在过去世已积累了足够的波罗蜜，根机成熟。佛法的核心论点与世俗思想背道而驰——**\"不是通过满足心的欲望，而是要降伏它，才能得到最大的快乐\"**——这对一般人而言是逆耳的真理。 ### 味、患、离——观照世界的三个时刻 这是本章最重要的方法论贡献： 1. **味（assāda）**：承认世间现象确实带来某种程度的满足感和喜乐，不否认欲乐的存在。 2. **患（ādīnava）**：进一步冷静审视，发现这种快乐充满各种问题——本质上\"无常，系缚于痛苦，终将变坏\"。 3. **离（nissaraṇa）**：在清楚认识危险之后，生起真正的出离心——**这不是逃避现实，而是最清醒、最理性的抉择**。 这一方法论被应用在四大、五蕴、六根等各个层面，佛陀甚至说，除非能以此方式全面观察世间，否则不能自称已证无上正等正觉。 ### 感官享乐的陷阱与见的过患 本章列举了佛陀舍离世务、认清欲乐危害的心",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site",
+          "query": "得到"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：八世间法\n\n## 直接回答\n八世间法指“得到与得不到、有名与无名、毁与誉、乐与苦”这四对相对法 [1][2][4][6]。DN34在“哪些是应该被遍知的八法？”的问题下给出同一列举，并明确说“这些是应该被遍知的八法” [2][6]。另有AN10.27仅出现“八世间法”的名目，未列出具体内容 [3]。\n\n## 要点展开\n### 八法的具体内容\n- 八世间法为四对：得到与得不到、有名与无名、毁与誉、乐与苦 [1][2][4][6]。\n- DN33与DN34的列举完全一致，均按“得到、得不到；有名、无名；毁、誉；乐、苦”的顺序呈现 [1][2][4][6]。\n\n### “应该被遍知”的定位\n- DN34将其放在“哪些是应该被遍知的八法？”的提问下，并在列举后说“这些是应该被遍知的八法” [2][6]。\n- DN33只是直接列出八世间法，没有附加“遍知”的说明 [1][4]。\n\n### 其他经文的提及\n- AN10.27中仅出现“八世间法，比丘们！”一句，未展开具体内容 [3]。\n\n## 分歧与张力\nDN33与DN34在八世间法的内容上完全一致，不存在冲突 [1][2][4][6]。差异在于DN34明确把八世间法纳入“应该被遍知”的框架，而DN33没有给出这一框架 [1][2][4][6]；AN10.27仅提及名目，无法与上述列举直接对照 [3]。这些是呈现层级的差异，不是法义矛盾。\n\n## 证据覆盖情况\n现有证据完整覆盖了八世间法的四对内容，以及它在DN33/DN34中的两种呈现方式；也显示AN10.27只是提到名称。但未覆盖每一法项的具体定义、对待八世间法的修行态度，以及其他经典中对该概念的进一步展开。多数检索到的段落（如八敬重法、当代佛教反思等）与八世间法无直接关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 八世间法 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82\n  > 八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。\n- [2] Early Buddhist · DN34 · 八世间法 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6\n  > （三）哪些是应该被遍知的八法呢？八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。\n- [3] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 八世间法，比丘们！\n- [4] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82\n  > 八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。\n- [5] Early Buddhist · 经藏/增支部_an · an8.51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%8E%A5%E5%8F%97%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E5%89%87%E5%AE%83%E5%B0%87%E6%88%90%E7%82%BA%E4%BD%A0%E7%9A%84%E5%85%B7%E8%B6%B3%E6%88%92%EF%BC%9A\n  > 如果你接受八敬重法，则它将成为你的具足戒：\n- [6] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95%EF%BC%9A%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82\n  > 八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。\n- [7] Early Buddhist · 经藏/增支部_an · an8.51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an8.51&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E9%A0%90%E5%85%88%E7%82%BA%E6%AF%94%E4%B8%98%E5%B0%BC%E5%AE%89%E7%AB%8B%E5%85%AB%E6%95%AC%E9%87%8D%E6%B3%95%EF%BC%8C%E6%9C%89%E7%94%9F%E4%B9%8B%E5%B9%B4%E4%B8%8D%E6%87%89%E8%A9%B2%E9%80%BE%E8%B6%8A%E3%80%82\n  > 我预先为比丘尼安立八敬重法，有生之年不应该逾越。\n- [8] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 八之问题、八之总说、八之解说；\n- [9] Early Buddhist · 经藏/增支部_an · an10.28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%85%AB%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%85%AB%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%85%AB%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 八之问题、八之总说、八之解说；\n- [10] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%85%AB%E5%A4%A7%E4%B8%88%E5%A4%AB%E4%B9%8B%E5%B0%8B%EF%BC%9A%E3%80%8E%E9%80%99%E6%98%AF%E5%B0%91%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%8C%E9%80%99%E4%B8%8D%E6%98%AF%E5%BC%B7%E6%AC%B2%E8%80%85%E7%9A%84%E6%B3%95%EF%BC%9B\n  > 八大丈夫之寻：『这是少欲者的法，这不是强欲者的法；\n- [11] docs/research/contemporary-buddhism-reflections.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site\n  > 传：两种不同性质的教义辩护空间 ### 1. 汉传的问题 汉传佛教的问题不是没有经典、没有祖师、没有文化，而是现代可执行系统弱： - 教理多，实践路径弱。 - 宗派多，共同基础弱。 - 仪式多，闻思修闭环弱。 - 寺院多，清净僧团少。 - 文化资本强，国际修行产品弱。 - 僧团传统名义强，戒律共同体实际弱。 济群在《当代佛教问题的思考》中说，今天具有良好道风和修学氛围的道场已经寥寥无几，许多寺院忙于旅游开发或经忏佛事，出家人难以得到法的滋养。[^jiqun-contemporary] 如第九节所述，汉传的额外风险点在于\"方便\"\"护法\"这类教义概念本身可以被系统性滥用为辩护工具，这是一种**相对间接、可以被其他大乘经论（如强调戒律根本性的经典）反驳和制衡**的风险。 ### 2. 藏传的问题：教义结构比汉传更直接、更系统 藏传佛教的问题不是没有体系，而是体系太容易与人格权威绑定： - 上师依止容易被绝对化。 - 密法保密性容易降低外部监督。 - 活佛、仁波切、灌顶、传承身份有强象征资本。 - 弟子若缺乏辨别能力，容易把服从当修行。 - 当藏传方法被汉地组织学习时，最危险的不是《广论》本身，而是\"权威依附结构\"被移植。 **藏传密宗三昧耶戒（samaya）核心条款之一就是不可诽谤、批评上师\n- [12] docs/research/two-religions-quran.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site\n  > 题三：性与婚姻** **古兰经的立场**（《光章》24:26-31, 《妇女章》4:3-4）： ``` 《光章》24:30-31： \"你告诉信男们：他们应当降低视线， 保守贞操。 这对他们更为纯洁。 真主确是彻知他们的行为的。 你告诉信女们：她们应当降低视线， 保守贞操， 不要显露她们的美饰...\" ``` 古兰经的性伦理： 1. **性是真主的恩赐**，但必须在**婚姻框架内** 2. **对女性的保护**（多妻制中，每妻必须得到平等对待） 3. **对他人隐私的尊重**（不要刺探他人的房间） 4. **对于奴隶**（slave concubines，4:24）可以有性关系但有保护规定 **上座部佛法的立场**（律藏戒条与在家戒的概述、《清净道论·不净观》）： ``` 比丘不得有性行为（若有则违犯波罗夷，自动还俗）。 对在家人，第三戒通常指避免通奸、强暴、侵犯受保护者等邪淫行为。 ``` **关键差异**：佛法对性的视角是**不净观**（asubha） ``` 《清净道论》的修法概述： 观察身体的三十二个部分—— 毛发、身体、指甲、牙齿...血液、胆汁... 每一部分都不洁净、无常、令人厌离。 如果能看到，性欲会自然消退。 ``` **对话分析**： |角度|古兰经|上座部佛法|\n- [13] docs/research/theravada-mahayana-history.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site\n  > 为弟子们制定的学处好像烟一样，当他们的导师在世时就学习这些学处，他们的导师一去世就不再学习这些学处了。’**” 当时，马哈咖沙巴尊者在僧团中作甘马 （kamma,僧团表决会议），强调说： “**尚未制定者，不应再制；已经制定者，不应废除；只应继续受持所制定的学处！**”(Cv.441-442) 这是对待佛陀所制定的戒律与教法的基本原则。其实这些基本原则是佛陀在世时曾经多次强调过的，只不过在第一次结集时再由大迦叶尊者重新提出来，并且得到所有与会的阿罗汉们一致通过。③因为参加第一次结集的所有比库都是大长老，都是上座，所以他们的这一项决定就称为 Theravāda。Thera 是长老、上座，vāda 是观点、思想、学说，Theravāda 即上座部，上座们的观点、主张。上座长老们坚持以下三项原则： 1．佛陀没有制定的戒律、 没有说过的法，不应当添加。 2．佛陀已经制定的戒律、已经说过的法，不应废除，不应随意篡改、删改。 3．只应当遵行佛陀所制定的戒律、所教导的法。 也就是说，上座长老们认为：只有佛陀才有资格制定戒律，因为佛陀具有一切知智(sabbaññutā) 与大悲智(mahākaruṇā)。唯有同时具足这两种智慧， 才有资格制定戒律，但是除了佛陀之外，没有任何人拥有这样的资格。作为佛陀忠诚的\n- [14] docs/research/two-religions-comparison.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E5%90%8D&scope=site\n  > 意图、对象、努力与结果成熟为未来苦果。 ``` **古兰经的立场**： ``` 《曙光章》113： \"你说：我求庇于曙光的主...\" 《讨伐章》9:29： \"你们要与不信真主末日...的人战斗， 直到他们亲手交纳丁税，并且表示屈服。\" ``` **圣经的立场**： ``` 马太福音5:39： \"有人打你的右脸， 连左脸也转过来由他打。\" 但启示录19:11-21： \"我看见天开了... 有一位骑白马的... 在他衣服和大腿上有名字写着： '万王之王，万主之主'... 众鸟聚集起来...吃了他们的肉。\" ``` **分析**： |维度|佛法|古兰经|圣经| |---|---|---|---| |**暴力的道德性**|绝对反对（产生业障）|在防卫与圣战中允许（有明确条件）|理论上完全反对，但末世论中有最终的神圣暴力| |**战争的正当性**|无|是的（为真主的宗教）|争议中（和平的言辞 vs 末世的暴力）| |**自卫权**|否定（建议逃离）|肯定（防卫战合法）|福音书模糊，末世论清晰| |**对手的人性**|被无明束缚的众生（值得同情）|拒绝真理的人（需要被改变或战胜）|充满邪恶的人（需要被救赎或审判）| |**战争后的和解**|通过修行消解因果债|如果敌人投降可接纳|通过基督的救赎超越|\n- [15] docs/research/theravada-modern/manuals-of-dhamma-summary.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%BE%97%E5%88%B0&scope=site\n  > 果道智）| 与此相应，本篇也列出**五种正见**的进阶：第一是恒常存在于世间的**业自己有正见**；第二是以**名色分别智**破除极粗我见；第三是以**缘摄受智**破除\"作者\"\"受者\"之类粗我见；第四是以**内观智**破除细我见；第五是以**出世间道果智**根除极细我见。这一结构说明，\"正见\"不是单一观念，而是从伦理因果的确认，逐步推进到名色、因缘、三相与道果的完整智慧链条。 文中用**铁碗的譬喻**说明这四层我见的次第破除：一个人得到一个满是铁锈的铁碗，需要先除去外层的粗锈，才能逐层显露出如日月般光洁的碗身——四层我见的破除亦复如是，层层深入，直至道智现前，彻底根除极细我见与潜伏的疑惑。 **证得初果（须陀洹）的巨大利益**（第十四节，本篇的高潮）：一旦彻底根除\"我见\"，破除身见及一切邪见后： - **不再堕入恶趣**：过去伴随生命的一切恶业种子彻底熄灭，未来也不再造作导致堕落恶趣的恶业； - **证得涅槃**：即\"有余依涅槃\"（Sa-upādisesa-nibbāna），烦恼彻底熄灭而蕴身尚存； - **不再死亡**：此涅槃状态永恒不变，称为\"不死界\"（Amata-dhātu）； - **无生**：此状态是\"无为界\"（Asaṅkhata-dhātu），是涅槃的别名； - 须陀洹**最多在人天",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -545,16 +282,34 @@
       "number": 8,
       "order": 9,
       "label": "八世间法",
-      "members": "得到与得不到、有名与无名、毁与誉、乐与苦",
+      "members": "得到与得不到、有名与无名、毁与誉、乐与苦。",
+      "match_members": "得到与得不到、有名与无名、毁与誉、乐与苦",
       "member_items": [
-        "得到与得不到",
-        "有名与无名",
-        "毁与誉",
-        "乐与苦"
+        "得到",
+        "得不到",
+        "有名",
+        "无名",
+        "毁",
+        "誉",
+        "乐",
+        "苦"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。"
+      ],
       "source_text": "八世间法：得到与得不到、有名与无名、毁与誉、乐与苦。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6%E3%80%82",
+      "expanded_points": [
+        "得到：世间法中的“得到”，指有所获得的情况。",
+        "得不到：世间法中的“得不到”，指未能获得或失去，与“得到”相对。",
+        "有名：世间法中的“有名”，指名望显扬、被人知晓。",
+        "无名：世间法中的“无名”，指不为人知、没有名望，与“有名”相对。",
+        "毁：世间法中的“毁”，指受到诋毁、批评。",
+        "誉：世间法中的“誉”，指受到称赞、赞誉，与“毁”相对。",
+        "乐：世间法中的“乐”，指愉悦、快乐。",
+        "苦：世间法中的“苦”，指痛苦、不愉悦，与“乐”相对。"
+      ]
     },
     {
       "id": "dn34-n8-g3",
@@ -563,15 +318,33 @@
       "order": 3,
       "label": "八世间法",
       "members": "得到与得不到、有名与无名、毁与誉、乐与苦",
+      "match_members": "得到与得不到、有名与无名、毁与誉、乐与苦",
       "member_items": [
-        "得到与得不到",
-        "有名与无名",
-        "毁与誉",
-        "乐与苦"
+        "得到",
+        "得不到",
+        "有名",
+        "无名",
+        "毁",
+        "誉",
+        "乐",
+        "苦"
       ],
       "dn34_status": "应遍知",
+      "source_paragraphs": [
+        "（三）哪些是应该被遍知的八法呢？八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。"
+      ],
       "source_text": "（三）哪些是应该被遍知的八法呢？八世间法：得到与得不到、有名与无名、毁与誉、乐与苦，这些是应该被遍知的八法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%85%AB%E4%B8%96%E9%96%93%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BE%97%E5%88%B0%E8%88%87%E5%BE%97%E4%B8%8D%E5%88%B0%E3%80%81%E6%9C%89%E5%90%8D%E8%88%87%E7%84%A1%E5%90%8D%E3%80%81%E6%AF%80%E8%88%87%E8%AD%BD%E3%80%81%E6%A8%82%E8%88%87%E8%8B%A6",
+      "expanded_points": [
+        "得到：作为应该被遍知的八法之一，“得到”指有所获得。",
+        "得不到：作为应该被遍知的八法之一，“得不到”指未能获得，与“得到”相对。",
+        "有名：作为应该被遍知的八法之一，“有名”指名望显扬。",
+        "无名：作为应该被遍知的八法之一，“无名”指不为人知，与“有名”相对。",
+        "毁：作为应该被遍知的八法之一，“毁”指受到诋毁。",
+        "誉：作为应该被遍知的八法之一，“誉”指受到称赞，与“毁”相对。",
+        "乐：作为应该被遍知的八法之一，“乐”指愉悦的感受。",
+        "苦：作为应该被遍知的八法之一，“苦”指痛苦的感受，与“乐”相对。"
+      ]
     }
   ]
 }

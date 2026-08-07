@@ -24,13 +24,13 @@
       "化生胎"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四种胎」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：卵生胎、胎生胎、湿生胎、化生胎。[1]\n\n## 所含各法\n### 卵生胎\n经文将「卵生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为卵生胎。。[3]\n### 胎生胎\n经文将「胎生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为胎生胎。。[4]\n### 湿生胎\n经文将「湿生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为湿生胎。。[5]\n### 化生胎\n经文将「化生胎」列为「四种胎」的一个成员。Early Buddhist 用该名词检索时，在《师子吼大经》命中：这被称为化生胎。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四种胎包括卵生胎、胎生胎、湿生胎和化生胎 [1][7]。这些分类在《长部·DN33》和《中部·MN12》中均有提及 [1][2][7][8]。\n\n## 要点展开\n### 四种胎的列举\n- 四种胎具体为：卵生胎、胎生胎、湿生胎、化生胎 [1][7]。\n- 在《中部·MN12》中，佛陀以“这些是四种胎”引出此分类 [2]，并逐一说明“这被称为卵生胎”等 [3][4][5][6]。\n\n### 经典出处\n- 此分类见于《长部·DN33》 [1][7] 和《中部·MN12》 [2][8]。\n\n## 证据覆盖情况\n现有证据明确列出了四种胎的名称，并确认其出现在两部经典中，但未详细解释每种胎的具体定义或特征。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四种胎",
           "text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,9 +103,15 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn30.1",
           "text": "这些是四种金翅鸟的出生（胎）。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn30.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%87%91%E7%BF%85%E9%B3%A5%E7%9A%84%E5%87%BA%E7%94%9F%EF%BC%88%E8%83%8E%EF%BC%89%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "} }, \"raw_ocr\": \"[11993] VésaWWutian* ti catuhi yonihi sabbakilesehi và visarjyuttar.\", \"corrected_pali\": \"Visaṃyuttan ti catūhi yonīhi sabbakilesehi vā visaṃyutta.\", \"chinese_translation\": \"“解脱”是指从四种胎生等以及一切烦恼中解脱。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'VésaWWutian*' 校正为 'Visaṃyuttan'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'catuhi yonihi' 校正为 'catūhi yonīhi'。\" }, { \"type\": \"model_reported_correction\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E8%83%8E&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四种胎",
@@ -453,7 +459,17 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "} }, \"raw_ocr\": \"[11993] VésaWWutian* ti catuhi yonihi sabbakilesehi và visarjyuttar.\", \"corrected_pali\": \"Visaṃyuttan ti catūhi yonīhi sabbakilesehi vā visaṃyutta.\", \"chinese_translation\": \"“解脱”是指从四种胎生等以及一切烦恼中解脱。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'VésaWWutian*' 校正为 'Visaṃyuttan'。\" }, { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'catuhi yonihi' 校正为 'catūhi yonīhi'。\" }, { \"type\": \"model_reported_correction\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E8%83%8E&scope=site",
+          "query": "四种胎"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四种胎\n\n## 直接回答\n四种胎包括卵生胎、胎生胎、湿生胎和化生胎 [1][7]。这些分类在《长部·DN33》和《中部·MN12》中均有提及 [1][2][7][8]。\n\n## 要点展开\n### 四种胎的列举\n- 四种胎具体为：卵生胎、胎生胎、湿生胎、化生胎 [1][7]。\n- 在《中部·MN12》中，佛陀以“这些是四种胎”引出此分类 [2]，并逐一说明“这被称为卵生胎”等 [3][4][5][6]。\n\n### 经典出处\n- 此分类见于《长部·DN33》 [1][7] 和《中部·MN12》 [2][8]。\n\n## 证据覆盖情况\n现有证据明确列出了四种胎的名称，并确认其出现在两部经典中，但未详细解释每种胎的具体定义或特征。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四种胎 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82\n  > 四种胎：卵生胎、胎生胎、湿生胎、化生胎。\n- [2] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%83%8E%E3%80%82\n  > 这些是四种胎。\n- [3] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8D%B5%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%82\n  > 这被称为卵生胎。\n- [4] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E8%83%8E%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%82\n  > 这被称为胎生胎。\n- [5] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E6%BF%95%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%82\n  > 这被称为湿生胎。\n- [6] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%8C%96%E7%94%9F%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82\n  > 这被称为化生胎。\n- [7] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%9A%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82\n  > 四种胎：卵生胎、胎生胎、湿生胎、化生胎。\n- [8] Early Buddhist · 经藏/中部_mn · mn12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn12&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%83%8E%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这四种胎，哪四种呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -463,7 +479,8 @@
       "number": 4,
       "order": 36,
       "label": "四种胎",
-      "members": "卵生胎、胎生胎、湿生胎、化生胎",
+      "members": "卵生胎、胎生胎、湿生胎、化生胎。",
+      "match_members": "卵生胎、胎生胎、湿生胎、化生胎",
       "member_items": [
         "卵生胎",
         "胎生胎",
@@ -471,8 +488,17 @@
         "化生胎"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四种胎：卵生胎、胎生胎、湿生胎、化生胎。"
+      ],
       "source_text": "四种胎：卵生胎、胎生胎、湿生胎、化生胎。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%83%8E&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%8D%B5%E7%94%9F%E8%83%8E%E3%80%81%E8%83%8E%E7%94%9F%E8%83%8E%E3%80%81%E6%BF%95%E7%94%9F%E8%83%8E%E3%80%81%E5%8C%96%E7%94%9F%E8%83%8E%E3%80%82",
+      "expanded_points": [
+        "卵生胎：从卵中出生的有情。",
+        "胎生胎：从母胎中出生的有情。",
+        "湿生胎：依湿气而生的有情。",
+        "化生胎：自然化现而生的有情。"
+      ]
     }
   ]
 }

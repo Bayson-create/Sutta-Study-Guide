@@ -22,13 +22,13 @@
       "无加害想"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三善想」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：离欲想、无恶意想、无加害想。[1]\n\n## 所含各法\n### 离欲想\n经文将「离欲想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘离欲界生起离欲想；。[3]\n### 无恶意想\n经文将「无恶意想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《欢喜的灭尽经第二》命中：你们要如理作意想……比丘们！。[4]\n### 无加害想\n经文将「无加害想」列为「三善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘加害界生起加害想；。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三善想包括离欲想、无恶意想、无加害想 [1][2]。其中，离欲想缘离欲界而生起 [3]，加害想缘加害界而生起 [5]。\n\n## 要点展开\n### 三善想的构成\n- 三善想为：离欲想、无恶意想、无加害想 [1][2]。\n- 与三善想相对，有三不善想：欲想、恶意想、加害想 [7]。\n\n### 相关概念\n- 另有“三善寻”：离欲寻、无恶意寻、无加害寻 [6]。\n- 想有生起之缘，如离欲想缘离欲界，加害想缘加害界 [3][5]。\n\n## 分歧与张力\n现有证据未显示不同来源对三善想本身有分歧，但 [3][5] 仅提及离欲想与加害想的生起，未涉及无恶意想，可能暗示不同文献侧重不同。\n\n## 证据覆盖情况\n现有证据明确给出了三善想的具体内容，并提及了与之相对的不善想和善寻，但未详细解释每一想的定义或修行方法，也未覆盖无恶意想的生起条件。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三善想",
           "text": "三善想：离欲想、无恶意想、无加害想。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.75&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%81%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E4%B8%8D%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三善想",
@@ -416,7 +416,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三善想\n\n## 直接回答\n三善想包括离欲想、无恶意想、无加害想 [1][2]。其中，离欲想缘离欲界而生起 [3]，加害想缘加害界而生起 [5]。\n\n## 要点展开\n### 三善想的构成\n- 三善想为：离欲想、无恶意想、无加害想 [1][2]。\n- 与三善想相对，有三不善想：欲想、恶意想、加害想 [7]。\n\n### 相关概念\n- 另有“三善寻”：离欲寻、无恶意寻、无加害寻 [6]。\n- 想有生起之缘，如离欲想缘离欲界，加害想缘加害界 [3][5]。\n\n## 分歧与张力\n现有证据未显示不同来源对三善想本身有分歧，但 [3][5] 仅提及离欲想与加害想的生起，未涉及无恶意想，可能暗示不同文献侧重不同。\n\n## 证据覆盖情况\n现有证据明确给出了三善想的具体内容，并提及了与之相对的不善想和善寻，但未详细解释每一想的定义或修行方法，也未覆盖无恶意想的生起条件。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三善想 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三善想：离欲想、无恶意想、无加害想。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%83%B3%EF%BC%9A%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三善想：离欲想、无恶意想、无加害想。\n- [3] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E9%9B%A2%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E7%95%8C%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E6%83%B3%EF%BC%9B\n  > 缘离欲界生起离欲想；\n- [4] Early Buddhist · 经藏/相应部_sn · sn22.52 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.52&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BD%A0%E5%80%91%E8%A6%81%E5%A6%82%E7%90%86%E4%BD%9C%E6%84%8F%E6%83%B3%E2%80%A6%E2%80%A6%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 你们要如理作意想……比丘们！\n- [5] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B\n  > 缘加害界生起加害想；\n- [6] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B0%8B%EF%BC%9A%E9%9B%A2%E6%AC%B2%E5%B0%8B%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%82\n  > 三善寻：离欲寻、无恶意寻、无加害寻。\n- [7] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3%EF%BC%9A%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三不善想：欲想、恶意想、加害想。\n- [8] Early Buddhist · 经藏/中部_mn · mn72 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn72&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E9%9B%86%EF%BC%8C%E9%80%99%E6%A8%A3%E6%98%AF%E6%83%B3%E7%9A%84%E6%BB%85%E6%B2%92%EF%BC%9B\n  > 这样是想，这样是想的集，这样是想的灭没；",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -426,15 +428,24 @@
       "number": 3,
       "order": 10,
       "label": "三善想",
-      "members": "离欲想、无恶意想、无加害想",
+      "members": "离欲想、无恶意想、无加害想。",
+      "match_members": "离欲想、无恶意想、无加害想",
       "member_items": [
         "离欲想",
         "无恶意想",
         "无加害想"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三善想：离欲想、无恶意想、无加害想。"
+      ],
       "source_text": "三善想：离欲想、无恶意想、无加害想。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E6%83%B3%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82",
+      "expanded_points": [
+        "离欲想：指远离欲望的想，是三善想之一。",
+        "无恶意想：指没有恶意的想，是三善想之一。",
+        "无加害想：指没有加害之心的想，是三善想之一。"
+      ]
     }
   ]
 }

@@ -22,13 +22,13 @@
       "梵行的寻求"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三寻求」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的寻求、有的寻求、梵行的寻求。[1]\n\n## 所含各法\n### 欲的寻求\n经文将「欲的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《退去者经》命中：「欲的寻求、有的寻求，连同梵行的寻求，。[3]\n### 有的寻求\n经文将「有的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《退去者经》命中：「欲的寻求、有的寻求，连同梵行的寻求，。[3]\n### 梵行的寻求\n经文将「梵行的寻求」列为「三寻求」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三寻求：欲的寻求、有的寻求、梵行的寻求。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三寻求即“欲的寻求、有的寻求、梵行的寻求”三种寻求 [1][2]。这一组名称在增支部经文中以“欲的寻求、有的寻求，连同梵行的寻求”出现 [3]，在相应部经文中也被称为“欲的寻求、有的寻求、梵行的寻求” [4]。\n\n## 要点展开\n### 名目与次序\n- 三寻求的三项为：欲的寻求、有的寻求、梵行的寻求 [1][2][4]。\n- 其中“欲的寻求”列于首位，“有的寻求”紧随其后，“梵行的寻求”列于末尾 [3][4]。\n\n### 来源分布\n- 长部 DN33 和相应部 SN45.161 都直接列出这三项 [1][2][4]。\n- 增支部 AN4.38 以“欲的寻求、有的寻求，连同梵行的寻求”的表述提及同一组法数 [3]。\n\n## 证据覆盖情况\n现有证据覆盖了三寻求的完整名目及其在不同经藏（长部、增支部、相应部）中的出现情况；未覆盖每个寻求的具体定义、为何称为“寻求”以及修行上的对治或舍离方法。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三寻求",
           "text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -49,7 +49,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三寻求",
@@ -392,7 +392,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三寻求\n\n## 直接回答\n三寻求即“欲的寻求、有的寻求、梵行的寻求”三种寻求 [1][2]。这一组名称在增支部经文中以“欲的寻求、有的寻求，连同梵行的寻求”出现 [3]，在相应部经文中也被称为“欲的寻求、有的寻求、梵行的寻求” [4]。\n\n## 要点展开\n### 名目与次序\n- 三寻求的三项为：欲的寻求、有的寻求、梵行的寻求 [1][2][4]。\n- 其中“欲的寻求”列于首位，“有的寻求”紧随其后，“梵行的寻求”列于末尾 [3][4]。\n\n### 来源分布\n- 长部 DN33 和相应部 SN45.161 都直接列出这三项 [1][2][4]。\n- 增支部 AN4.38 以“欲的寻求、有的寻求，连同梵行的寻求”的表述提及同一组法数 [3]。\n\n## 证据覆盖情况\n现有证据覆盖了三寻求的完整名目及其在不同经藏（长部、增支部、相应部）中的出现情况；未覆盖每个寻求的具体定义、为何称为“寻求”以及修行上的对治或舍离方法。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三寻求 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82\n  > 三寻求：欲的寻求、有的寻求、梵行的寻求。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%B0%8B%E6%B1%82%EF%BC%9A%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82\n  > 三寻求：欲的寻求、有的寻求、梵行的寻求。\n- [3] Early Buddhist · 经藏/增支部_an · an4.38 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.38&lang=zh&q=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E9%80%A3%E5%90%8C%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C\n  > 「欲的寻求、有的寻求，连同梵行的寻求，\n- [4] Early Buddhist · 经藏/相应部_sn · sn45.161 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.161&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 欲的寻求、有的寻求、梵行的寻求，比丘们！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -402,15 +404,24 @@
       "number": 3,
       "order": 22,
       "label": "三寻求",
-      "members": "欲的寻求、有的寻求、梵行的寻求",
+      "members": "欲的寻求、有的寻求、梵行的寻求。",
+      "match_members": "欲的寻求、有的寻求、梵行的寻求",
       "member_items": [
         "欲的寻求",
         "有的寻求",
         "梵行的寻求"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三寻求：欲的寻求、有的寻求、梵行的寻求。"
+      ],
       "source_text": "三寻求：欲的寻求、有的寻求、梵行的寻求。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%B0%8B%E6%B1%82&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%9C%89%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%81%E6%A2%B5%E8%A1%8C%E7%9A%84%E5%B0%8B%E6%B1%82%E3%80%82",
+      "expanded_points": [
+        "欲的寻求：指对“欲”的寻求，三寻求中列于首位。",
+        "有的寻求：指对“有”的寻求，三寻求中列于第二位。",
+        "梵行的寻求：指对“梵行”的寻求，三寻求中列于第三位。"
+      ]
     }
   ]
 }

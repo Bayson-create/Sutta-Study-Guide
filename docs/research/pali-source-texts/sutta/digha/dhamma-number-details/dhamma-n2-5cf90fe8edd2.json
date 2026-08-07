@@ -5,7 +5,8 @@
     "number": 2,
     "label": "恶言与恶友",
     "member_items": [
-      "恶言与恶友"
+      "恶言",
+      "恶友"
     ],
     "group_ids": [
       "dn33-n2-g6"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "恶言与恶友"
+      "恶言与恶友",
+      "恶言",
+      "恶友"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「恶言与恶友」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：恶言与恶友。[1]\n\n## 所含各法\n### 恶言与恶友\n经文将「恶言与恶友」列为「恶言与恶友」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：恶言与恶友。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n恶言指憎恶思惟、口出恶言，以及非恶言说、只说法等言语状态 [3][4]；恶友指导致大不利的同伴，且与不受谏并列为退分的二法 [5][7]。现有证据仅给出这些基本界定，未涉及更细的分类或对治方法。\n\n## 要点展开\n### 恶言\n- 恶言与憎恶思惟相关，表现为口出恶言 [3]。\n- 与恶言相对的是“非恶言说、只说法”，即无过失的、智者们所不应非难的言语 [4][8]。\n\n### 恶友\n- 恶友导致大不利 [5][6]。\n- 不受谏与恶友并列为退分的二法 [7]。\n\n## 证据覆盖情况\n现有证据覆盖了恶言与恶友的基本定义及其负面作用，但未涉及恶言的具体类型、恶友的详细特征或对治方法。",
       "evidence": [
         {
           "kind": "source",
@@ -66,9 +69,33 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn8.5",
           "text": "非恶言说，是无过失的与智者们所不应非难的。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn8.5&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E6%83%A1%E8%A8%80%E8%AA%AA%EF%BC%8C%E6%98%AF%E7%84%A1%E9%81%8E%E5%A4%B1%E7%9A%84%E8%88%87%E6%99%BA%E8%80%85%E5%80%91%E6%89%80%E4%B8%8D%E6%87%89%E9%9D%9E%E9%9B%A3%E7%9A%84%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "已圆满波罗蜜，为何仍需苦行六年：其一，为向人天梵众彰显其无与伦比之精进力；其二，为使自己成佛后忆念此段精进而心生欢喜，正如国王历经数场恶战方登王位，较之世袭继位者更能体会胜利之荣光；其三，为怜悯未来弟子——令后世佛弟子思惟\"世尊圆满波罗蜜四阿僧祇劫又十万大劫，尚且历经苦行方证一切智，况我辈乎？\"从而生起精进修行之信心。 书末更揭示因缘：其余菩萨仅苦行七日至一月不等，唯独我等菩萨须苦行六年，乃因往昔迦叶佛时代身为骄慢的婆罗门祭火时，曾出恶言：\"此等剃发之人如何能证悟道智一切智？觉悟谈何容易！\"因此业报，今生须历更长苦行以偿还。 --- ## 第七章：成就佛果 ### 改变修行方式 历经六年苦行未能证悟，太子反思：\"过去、未来、现在的沙门婆罗门，纵使苦行至此，亦不过如是……或许另有他道可证一切智。\"他忆起七岁耕田大典时于阎浮树下自然证得初禅之经历，认定入出息念（呼吸禅）方为正道，遂恢复正常饮食以恢复体力。 五比丘见太子恢复饮食，误以为其\"退转为追求物质享受者\"，愤而离去，前往波罗奈鹿野苑——历代诸佛必先说法之处。 ### 五大梦 太子独居十五日后，于卫塞月满月前夜连做五个大梦：（1）身卧大地，头枕喜马拉雅山，左右手分置东西海洋，双足置于南海——预示成佛；（2）脐生红茎小草，直冲云霄——预示宣",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E8%A8%80&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "tāya hoti. Imassāpi upāsakassa kiriyaparihāṇi jātā, apariniṭṭhitāya desanāya utṭhahitvā pakkanto.\", \"chinese_translation\": \"“与广大义理相应而去”的意思是：与广大义理相应而去了之后，应能证得入流果。然而，那些具有道果亲依止的人，即使在诸佛面前，也会有障碍吗？是的，会有。但这并非缘于佛陀，而是由于行为的退失或恶友。其中，行为的退失是这样发生的：如果法军统帅（舍利弗）了知多那若尼婆罗门的志向而说法，那位婆罗门本可成为入流者。如此，这是行为的退失。恶友的情况是这样：如果阿阇世王听从提婆达多的话，没有造作杀父之业，在《沙门果经》所说的那一天，他本可成为入流者。然而，由于听从他的话而造作了杀父之业，所以未能证得。如此，这是恶友的情况。这位优婆塞也发生了行为的退失，在说法未完成时，他起身离去了。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Mahatā' 校正为 'Mahatā'，'saņyutto' 校正为 'saṃyutto",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E5%8F%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "paribhedo, aniccatā, antaradhānaṃ. Paccayatthaṅgamo nāma sotāpattimaggo. Sotāpattimaggo hi diṭṭhīnaṃ samugghāto ti vutto.\", \"chinese_translation\": \"“它生起”等语中，两种见的生起有两类：刹那生起和缘起。刹那生起就是见解当下的产生；缘起则有八个处所，即蕴、无明、触、想、寻、非如理作意、恶友和从他处听闻的言说。经中说：“蕴也是见的处所；无明也是……触也是……想也是……寻也是……非如理作意也是……恶友也是……从他处听闻的言说也是见的处所。蕴是因，蕴是缘，能使见解生起、发动，所以蕴也是见的处所；无明……触……想……寻……非如理作意……恶友……从他处听闻的言说是因，是缘，能使见解生起、发动，所以从他处听闻的言说也是见的处所。”它们的灭去也只有两类：刹那灭去和缘灭去。刹那灭去是衰灭、变坏、破裂、完全破散、无常和消失；缘灭去则是入流道，因为入流道被称为对见的根除。\", \"correction_note\": [ { \"type\": \"character_confusion\", \"original\": \"28. [6",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E5%8F%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "text": "kosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"corrected_pali\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"chinese_translation\": \"听到因辱骂而说出的恶言后，他反观忍辱的功德，不为之动摇。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"corrected\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"reason\": \"Sabbāsavasuttavaṇṇanā中",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E8%A8%80&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "恶言与恶友",
@@ -154,9 +181,48 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn8.5&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E6%83%A1%E8%A8%80%E8%AA%AA%EF%BC%8C%E6%98%AF%E7%84%A1%E9%81%8E%E5%A4%B1%E7%9A%84%E8%88%87%E6%99%BA%E8%80%85%E5%80%91%E6%89%80%E4%B8%8D%E6%87%89%E9%9D%9E%E9%9B%A3%E7%9A%84%E3%80%82"
             }
           ]
+        },
+        {
+          "query": "恶言",
+          "hits": []
+        },
+        {
+          "query": "恶友",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "已圆满波罗蜜，为何仍需苦行六年：其一，为向人天梵众彰显其无与伦比之精进力；其二，为使自己成佛后忆念此段精进而心生欢喜，正如国王历经数场恶战方登王位，较之世袭继位者更能体会胜利之荣光；其三，为怜悯未来弟子——令后世佛弟子思惟\"世尊圆满波罗蜜四阿僧祇劫又十万大劫，尚且历经苦行方证一切智，况我辈乎？\"从而生起精进修行之信心。 书末更揭示因缘：其余菩萨仅苦行七日至一月不等，唯独我等菩萨须苦行六年，乃因往昔迦叶佛时代身为骄慢的婆罗门祭火时，曾出恶言：\"此等剃发之人如何能证悟道智一切智？觉悟谈何容易！\"因此业报，今生须历更长苦行以偿还。 --- ## 第七章：成就佛果 ### 改变修行方式 历经六年苦行未能证悟，太子反思：\"过去、未来、现在的沙门婆罗门，纵使苦行至此，亦不过如是……或许另有他道可证一切智。\"他忆起七岁耕田大典时于阎浮树下自然证得初禅之经历，认定入出息念（呼吸禅）方为正道，遂恢复正常饮食以恢复体力。 五比丘见太子恢复饮食，误以为其\"退转为追求物质享受者\"，愤而离去，前往波罗奈鹿野苑——历代诸佛必先说法之处。 ### 五大梦 太子独居十五日后，于卫塞月满月前夜连做五个大梦：（1）身卧大地，头枕喜马拉雅山，左右手分置东西海洋，双足置于南海——预示成佛；（2）脐生红茎小草，直冲云霄——预示宣",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E8%A8%80&scope=site",
+          "query": "恶言"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "tāya hoti. Imassāpi upāsakassa kiriyaparihāṇi jātā, apariniṭṭhitāya desanāya utṭhahitvā pakkanto.\", \"chinese_translation\": \"“与广大义理相应而去”的意思是：与广大义理相应而去了之后，应能证得入流果。然而，那些具有道果亲依止的人，即使在诸佛面前，也会有障碍吗？是的，会有。但这并非缘于佛陀，而是由于行为的退失或恶友。其中，行为的退失是这样发生的：如果法军统帅（舍利弗）了知多那若尼婆罗门的志向而说法，那位婆罗门本可成为入流者。如此，这是行为的退失。恶友的情况是这样：如果阿阇世王听从提婆达多的话，没有造作杀父之业，在《沙门果经》所说的那一天，他本可成为入流者。然而，由于听从他的话而造作了杀父之业，所以未能证得。如此，这是恶友的情况。这位优婆塞也发生了行为的退失，在说法未完成时，他起身离去了。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Mahatā' 校正为 'Mahatā'，'saņyutto' 校正为 'saṃyutto",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E5%8F%8B&scope=site",
+          "query": "恶友"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "paribhedo, aniccatā, antaradhānaṃ. Paccayatthaṅgamo nāma sotāpattimaggo. Sotāpattimaggo hi diṭṭhīnaṃ samugghāto ti vutto.\", \"chinese_translation\": \"“它生起”等语中，两种见的生起有两类：刹那生起和缘起。刹那生起就是见解当下的产生；缘起则有八个处所，即蕴、无明、触、想、寻、非如理作意、恶友和从他处听闻的言说。经中说：“蕴也是见的处所；无明也是……触也是……想也是……寻也是……非如理作意也是……恶友也是……从他处听闻的言说也是见的处所。蕴是因，蕴是缘，能使见解生起、发动，所以蕴也是见的处所；无明……触……想……寻……非如理作意……恶友……从他处听闻的言说是因，是缘，能使见解生起、发动，所以从他处听闻的言说也是见的处所。”它们的灭去也只有两类：刹那灭去和缘灭去。刹那灭去是衰灭、变坏、破裂、完全破散、无常和消失；缘灭去则是入流道，因为入流道被称为对见的根除。\", \"correction_note\": [ { \"type\": \"character_confusion\", \"original\": \"28. [6",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E5%8F%8B&scope=site",
+          "query": "恶友"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "kosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"corrected_pali\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"chinese_translation\": \"听到因辱骂而说出的恶言后，他反观忍辱的功德，不为之动摇。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"corrected\": \"Akkosavasena durutte vacanapathaṃ sutvā khantiguṇaṃ paccavekkhitvā na vedhati.\", \"reason\": \"Sabbāsavasuttavaṇṇanā中",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%83%A1%E8%A8%80&scope=site",
+          "query": "恶言"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：恶言与恶友\n\n## 直接回答\n恶言指憎恶思惟、口出恶言，以及非恶言说、只说法等言语状态 [3][4]；恶友指导致大不利的同伴，且与不受谏并列为退分的二法 [5][7]。现有证据仅给出这些基本界定，未涉及更细的分类或对治方法。\n\n## 要点展开\n### 恶言\n- 恶言与憎恶思惟相关，表现为口出恶言 [3]。\n- 与恶言相对的是“非恶言说、只说法”，即无过失的、智者们所不应非难的言语 [4][8]。\n\n### 恶友\n- 恶友导致大不利 [5][6]。\n- 不受谏与恶友并列为退分的二法 [7]。\n\n## 证据覆盖情况\n现有证据覆盖了恶言与恶友的基本定义及其负面作用，但未涉及恶言的具体类型、恶友的详细特征或对治方法。\n\n## 引用\n- [1] Early Buddhist · DN33 · 恶言与恶友 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B\n  > 恶言与恶友。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B%E3%80%82\n  > 恶言与恶友。\n- [3] Early Buddhist · 经藏/增支部_an · an6.54 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.54&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%86%8E%E6%83%A1%E6%80%9D%E6%83%9F%EF%BC%8C%E5%8F%A3%E5%87%BA%E6%83%A1%E8%A8%80%E7%9A%84%E4%BA%BA%EF%BC%8C\n  > 憎恶思惟，口出恶言的人，\n- [4] Early Buddhist · 经藏/相应部_sn · sn8.5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn8.5&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E6%83%A1%E8%A8%80%E8%AA%AA%E3%80%81%E5%8F%AA%E8%AA%AA%E6%B3%95%EF%BC%9B\n  > 非恶言说、只说法；\n- [5] Early Buddhist · 经藏/增支部_an · an1.82-97 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an1.82-97&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E6%81%B6%E5%8F%8B%E5%AF%BC%E8%87%B4%E5%A4%A7%E4%B8%8D%E5%88%A9%E3%80%82\n  > 诸比库，恶友导致大不利。\n- [6] Early Buddhist · 经藏/增支部_an · an1.98-139 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an1.98-139&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E8%AF%B8%E6%AF%94%E5%BA%93%EF%BC%8C%E6%81%B6%E5%8F%8B%E5%AF%BC%E8%87%B4%E5%A4%A7%E4%B8%8D%E5%88%A9%E3%80%82\n  > 诸比库，恶友导致大不利。\n- [7] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8D%E5%8F%97%E8%AB%AB%E8%88%87%E6%83%A1%E5%8F%8B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82\n  > 不受谏与恶友，这些是退分的二法。\n- [8] Early Buddhist · 经藏/相应部_sn · sn8.5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn8.5&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%9D%9E%E6%83%A1%E8%A8%80%E8%AA%AA%EF%BC%8C%E6%98%AF%E7%84%A1%E9%81%8E%E5%A4%B1%E7%9A%84%E8%88%87%E6%99%BA%E8%80%85%E5%80%91%E6%89%80%E4%B8%8D%E6%87%89%E9%9D%9E%E9%9B%A3%E7%9A%84%E3%80%82\n  > 非恶言说，是无过失的与智者们所不应非难的。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -167,12 +233,21 @@
       "order": 6,
       "label": "恶言与恶友",
       "members": "恶言与恶友",
+      "match_members": "恶言与恶友",
       "member_items": [
-        "恶言与恶友"
+        "恶言",
+        "恶友"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "恶言与恶友。"
+      ],
       "source_text": "恶言与恶友。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%83%A1%E8%A8%80%E8%88%87%E6%83%A1%E5%8F%8B",
+      "expanded_points": [
+        "恶言：指憎恶思惟、口出恶言，与善言相对。",
+        "恶友：指导致大不利的同伴，与善友相对。"
+      ]
     }
   ]
 }

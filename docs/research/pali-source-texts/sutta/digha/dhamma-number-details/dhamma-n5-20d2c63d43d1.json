@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-20d2c63d43d1",
+    "number": 5,
+    "label": "五个心荒芜",
+    "member_items": [],
+    "group_ids": [
+      "dn33-n5-g16",
+      "dn34-n5-g5"
+    ],
+    "suttas": [
+      "dn33",
+      "dn34"
+    ],
+    "search_terms": [
+      "五个心荒芜"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n五个心荒芜是五种导致比丘心不趋向精进修行的未断除的心理障碍，包括对大师、法、僧团、学处的怀疑犹豫，以及对同梵行者的愤怒不悦 [1][2]。这些心荒芜被列为退分的五法 [2]。\n\n## 要点展开\n### 定义与构成\n- 五个心荒芜具体为：对大师怀疑、犹豫，不信解、不确信；对法怀疑、犹豫；对僧团怀疑、犹豫；对学怀疑、犹豫；对同梵行者愤怒、不悦，心受打击，生起顽固 [1][2]。\n- 每一荒芜都导致心不弯向热心、专修、坚忍、勤奋，因此称为“未舍断的心荒芜” [1][2]。\n\n### 分类与定位\n- 在DN34中，五个心荒芜被明确列为“退分的五法” [2]。\n- 在AN9.71中，也提及“有这五个心荒芜” [5]。\n\n### 舍断与未舍断\n- 证据提到“五个未舍断的心荒芜” [6][8]，也提到“五个已舍断的心荒芜” [7]，但未具体说明舍断的方法或状态。\n\n## 分歧与张力\n不同经典对五个心荒芜的归类或表述略有差异：DN33和DN34直接列出五个心荒芜并说明其导致心不勤奋 [1][2]；而AN9.71仅提及“有这五个心荒芜” [5]，未展开细节。MN16和AN10.14则分别提到“未舍断”和“已舍断”的心荒芜 [6][7][8]，但未说明具体内容。这些差异可能源于不同经典对同一法数的不同侧重，但未构成根本冲突。\n\n## 证据覆盖情况\n现有证据覆盖了五个心荒芜的具体内容、作为退分法的定位，以及未舍断/已舍断的表述。但未覆盖舍断的方法、具体对治措施，以及各心荒芜的详细解释。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 五个心荒芜",
+          "text": "五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……对学怀疑、犹豫，……对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81%E4%B8%8D%E6%82%85%EF%BC%8C%E5%BF%83%E5%8F%97%E6%89%93%E6%93%8A%EF%BC%8C"
+        },
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 五个心荒芜",
+          "text": "（五）哪些是退分的五法呢？五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……（中略）对学怀疑、犹豫，……（中略）对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。这些是五个心荒芜，这些是退分的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "五个心荒芜：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "五个心荒芜：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an9.71",
+          "text": "有这五个心荒芜，哪五个呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.71&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%8C%E5%93%AA%E4%BA%94%E5%80%8B%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn16",
+          "text": "这些是五个未舍断的心荒芜。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn16",
+          "text": "这些是五个已舍断的心荒芜。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%B7%B2%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.14",
+          "text": "这些是五个未舍断的心荒芜。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.14&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.14",
+          "text": "这些是五个已舍断的心荒芜。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.14&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%B7%B2%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "这些是五个心荒芜，这些是退分的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "五个心荒芜",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五个心荒芜：学友们！",
+              "score": 27.833142144995637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五个心荒芜：学友们！",
+              "score": 27.833142144995637,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an9.71",
+              "collection": "经藏/增支部_an",
+              "title": "心荒芜经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这五个心荒芜，哪五个呢？",
+              "score": 27.36975794033567,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.71&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%8C%E5%93%AA%E4%BA%94%E5%80%8B%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn16",
+              "collection": "经藏/中部_mn",
+              "title": "心荒芜经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五个未舍断的心荒芜。",
+              "score": 25.606490773395983,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+            },
+            {
+              "uid": "mn16",
+              "collection": "经藏/中部_mn",
+              "title": "心荒芜经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五个已舍断的心荒芜。",
+              "score": 25.606490773395983,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%B7%B2%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.14",
+              "collection": "经藏/增支部_an",
+              "title": "心荒芜经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五个未舍断的心荒芜。",
+              "score": 25.606490773395983,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.14&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.14",
+              "collection": "经藏/增支部_an",
+              "title": "心荒芜经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五个已舍断的心荒芜。",
+              "score": 25.606490773395983,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.14&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%B7%B2%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这些是五个心荒芜，这些是退分的五法。",
+              "score": 24.213389449034985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：五个心荒芜\n\n## 直接回答\n五个心荒芜是五种导致比丘心不趋向精进修行的未断除的心理障碍，包括对大师、法、僧团、学处的怀疑犹豫，以及对同梵行者的愤怒不悦 [1][2]。这些心荒芜被列为退分的五法 [2]。\n\n## 要点展开\n### 定义与构成\n- 五个心荒芜具体为：对大师怀疑、犹豫，不信解、不确信；对法怀疑、犹豫；对僧团怀疑、犹豫；对学怀疑、犹豫；对同梵行者愤怒、不悦，心受打击，生起顽固 [1][2]。\n- 每一荒芜都导致心不弯向热心、专修、坚忍、勤奋，因此称为“未舍断的心荒芜” [1][2]。\n\n### 分类与定位\n- 在DN34中，五个心荒芜被明确列为“退分的五法” [2]。\n- 在AN9.71中，也提及“有这五个心荒芜” [5]。\n\n### 舍断与未舍断\n- 证据提到“五个未舍断的心荒芜” [6][8]，也提到“五个已舍断的心荒芜” [7]，但未具体说明舍断的方法或状态。\n\n## 分歧与张力\n不同经典对五个心荒芜的归类或表述略有差异：DN33和DN34直接列出五个心荒芜并说明其导致心不勤奋 [1][2]；而AN9.71仅提及“有这五个心荒芜” [5]，未展开细节。MN16和AN10.14则分别提到“未舍断”和“已舍断”的心荒芜 [6][7][8]，但未说明具体内容。这些差异可能源于不同经典对同一法数的不同侧重，但未构成根本冲突。\n\n## 证据覆盖情况\n现有证据覆盖了五个心荒芜的具体内容、作为退分法的定位，以及未舍断/已舍断的表述。但未覆盖舍断的方法、具体对治措施，以及各心荒芜的详细解释。\n\n## 引用\n- [1] Early Buddhist · DN33 · 五个心荒芜 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81%E4%B8%8D%E6%82%85%EF%BC%8C%E5%BF%83%E5%8F%97%E6%89%93%E6%93%8A%EF%BC%8C\n  > 五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……对学怀疑、犹豫，……对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。\n- [2] Early Buddhist · DN34 · 五个心荒芜 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81\n  > （五）哪些是退分的五法呢？五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……（中略）对学怀疑、犹豫，……（中略）对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。这些是五个心荒芜，这些是退分的五法。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 五个心荒芜：学友们！\n- [4] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 五个心荒芜：学友们！\n- [5] Early Buddhist · 经藏/增支部_an · an9.71 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.71&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA%EF%BC%8C%E5%93%AA%E4%BA%94%E5%80%8B%E5%91%A2%EF%BC%9F\n  > 有这五个心荒芜，哪五个呢？\n- [6] Early Buddhist · 经藏/中部_mn · mn16 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82\n  > 这些是五个未舍断的心荒芜。\n- [7] Early Buddhist · 经藏/中部_mn · mn16 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn16&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E5%B7%B2%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82\n  > 这些是五个已舍断的心荒芜。\n- [8] Early Buddhist · 经藏/增支部_an · an10.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.14&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%BA%94%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82\n  > 这些是五个未舍断的心荒芜。",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n5-g16",
+      "sutta": "dn33",
+      "number": 5,
+      "order": 16,
+      "label": "五个心荒芜",
+      "members": "学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……对学怀疑、犹豫，……对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。",
+      "match_members": "学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜",
+      "member_items": [],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……对学怀疑、犹豫，……对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。"
+      ],
+      "source_text": "五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……对学怀疑、犹豫，……对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81%E4%B8%8D%E6%82%85%EF%BC%8C%E5%BF%83%E5%8F%97%E6%89%93%E6%93%8A%EF%BC%8C",
+      "expanded_points": [
+        "对大师怀疑、犹豫，不信解、不确信，导致心不弯向热心、专修、坚忍、勤奋，为第一个未舍断的心荒芜。",
+        "对法怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第二个未舍断的心荒芜。",
+        "对僧团怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第三个未舍断的心荒芜。",
+        "对学怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第四个未舍断的心荒芜。",
+        "对同梵行者愤怒、不悦，心受打击，生起顽固，导致心不弯向热心、专修、坚忍、勤奋，为第五个未舍断的心荒芜。"
+      ]
+    },
+    {
+      "id": "dn34-n5-g5",
+      "sutta": "dn34",
+      "number": 5,
+      "order": 5,
+      "label": "五个心荒芜",
+      "members": "学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……（中略）对学怀疑、犹豫，……（中略）对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。这些是五个心荒芜",
+      "match_members": "学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜",
+      "member_items": [],
+      "dn34_status": "退分法",
+      "source_paragraphs": [
+        "（五）哪些是退分的五法呢？五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……（中略）对学怀疑、犹豫，……（中略）对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。这些是五个心荒芜，这些是退分的五法。"
+      ],
+      "source_text": "（五）哪些是退分的五法呢？五个心荒芜：学友们！这里，比丘对大师怀疑、犹豫，不信解、不确信；凡那位学友对大师怀疑、犹豫，不信解、不确信者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第一个未舍断的心荒芜。再者，学友们！比丘对法怀疑、犹豫，……（中略）对僧团怀疑、犹豫，……（中略）对学怀疑、犹豫，……（中略）对同梵行者愤怒、不悦，心受打击，生起顽固；凡那位比丘对同梵行者愤怒、不悦，心受打击，生起顽固者，他的心不弯向热心、专修、坚忍、勤奋；凡他的心不弯向热心、专修、坚忍、勤奋者，这是第五个未舍断的心荒芜。这些是五个心荒芜，这些是退分的五法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E5%80%8B%E5%BF%83%E8%8D%92%E8%95%AA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%EF%BC%9B%E5%87%A1%E9%82%A3%E4%BD%8D%E5%AD%B8%E5%8F%8B%E5%B0%8D%E5%A4%A7%E5%B8%AB%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E4%B8%8D%E4%BF%A1%E8%A7%A3%E3%80%81%E4%B8%8D%E7%A2%BA%E4%BF%A1%E8%80%85%EF%BC%8C%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%EF%BC%9B%E5%87%A1%E4%BB%96%E7%9A%84%E5%BF%83%E4%B8%8D%E5%BD%8E%E5%90%91%E7%86%B1%E5%BF%83%E3%80%81%E5%B0%88%E4%BF%AE%E3%80%81%E5%A0%85%E5%BF%8D%E3%80%81%E5%8B%A4%E5%A5%AE%E8%80%85%EF%BC%8C%E9%80%99%E6%98%AF%E7%AC%AC%E4%B8%80%E5%80%8B%E6%9C%AA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%BF%83%E8%8D%92%E8%95%AA%E3%80%82%E5%86%8D%E8%80%85%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E6%AF%94%E4%B8%98%E5%B0%8D%E6%B3%95%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%83%A7%E5%9C%98%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%AD%B8%E6%87%B7%E7%96%91%E3%80%81%E7%8C%B6%E8%B1%AB%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%B0%8D%E5%90%8C%E6%A2%B5%E8%A1%8C%E8%80%85%E6%86%A4%E6%80%92%E3%80%81",
+      "expanded_points": [
+        "对大师怀疑、犹豫，不信解、不确信，导致心不弯向热心、专修、坚忍、勤奋，为第一个未舍断的心荒芜。",
+        "对法怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第二个未舍断的心荒芜。",
+        "对僧团怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第三个未舍断的心荒芜。",
+        "对学怀疑、犹豫，导致心不弯向热心、专修、坚忍、勤奋，为第四个未舍断的心荒芜。",
+        "对同梵行者愤怒、不悦，心受打击，生起顽固，导致心不弯向热心、专修、坚忍、勤奋，为第五个未舍断的心荒芜。"
+      ]
+    }
+  ]
+}

@@ -22,13 +22,13 @@
       "教诫神变"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三神变」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：神通神变、记心神变、教诫神变。[1]\n\n## 所含各法\n### 神通神变\n经文将「神通神变」列为「三神变」的一个成员。Early Buddhist 用该名词检索时，在《给哇得经》命中：神通神变。[3]\n### 记心神变\n经文将「记心神变」列为「三神变」的一个成员。Early Buddhist 用该名词检索时，在《能净信经》命中：记心种类的教导。[4]\n### 教诫神变\n经文将「教诫神变」列为「三神变」的一个成员。Early Buddhist 用该名词检索时，在《给哇得经》命中：教诫神变。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三神变包括神通神变、记心神变和教诫神变 [1][2]。其中神通神变在多个文献中被提及 [3][6][7][8]，记心神变与记心种类的教导相关 [4]，教诫神变在DN11中被提及 [5]。\n\n## 要点展开\n### 三神变的组成\n- 三神变明确为神通神变、记心神变、教诫神变 [1][2]。\n\n### 神通神变\n- 神通神变在DN11、DN24和AN3.60中均有提及 [3][6][7][8]。\n- AN3.60中具体探讨了神通神变的定义和内容 [7][8]。\n\n### 记心神变\n- 记心神变与记心种类的教导相关，见于DN28 [4]。\n\n### 教诫神变\n- 教诫神变在DN11中被提及 [5]。\n\n## 分歧与张力\n不同文献对三神变的提及侧重不同：DN33和DN34（若涉及）给出完整列表 [1][2]，而其他文献如DN11、DN28、DN24、AN3.60分别单独提及某一神变 [3][4][5][6][7][8]，未在同一处完整列出三神变，但未发现相互矛盾之处。\n\n## 证据覆盖情况\n现有证据覆盖了三神变的名称及其在部分文献中的提及，但未详细解释各神变的具体定义或差异，尤其是记心神变和教诫神变的具体内容仅在个别文献中提及，缺乏详细阐述。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三神变",
           "text": "三神变：神通神变、记心神变、教诫神变。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E8%A8%98%E5%BF%83%E7%A8%AE%E9%A1%9E%EF%BC%9A%E5%A4%A7%E5%BE%B7%EF%BC%81"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三神变",
@@ -376,7 +376,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三神变\n\n## 直接回答\n三神变包括神通神变、记心神变和教诫神变 [1][2]。其中神通神变在多个文献中被提及 [3][6][7][8]，记心神变与记心种类的教导相关 [4]，教诫神变在DN11中被提及 [5]。\n\n## 要点展开\n### 三神变的组成\n- 三神变明确为神通神变、记心神变、教诫神变 [1][2]。\n\n### 神通神变\n- 神通神变在DN11、DN24和AN3.60中均有提及 [3][6][7][8]。\n- AN3.60中具体探讨了神通神变的定义和内容 [7][8]。\n\n### 记心神变\n- 记心神变与记心种类的教导相关，见于DN28 [4]。\n\n### 教诫神变\n- 教诫神变在DN11中被提及 [5]。\n\n## 分歧与张力\n不同文献对三神变的提及侧重不同：DN33和DN34（若涉及）给出完整列表 [1][2]，而其他文献如DN11、DN28、DN24、AN3.60分别单独提及某一神变 [3][4][5][6][7][8]，未在同一处完整列出三神变，但未发现相互矛盾之处。\n\n## 证据覆盖情况\n现有证据覆盖了三神变的名称及其在部分文献中的提及，但未详细解释各神变的具体定义或差异，尤其是记心神变和教诫神变的具体内容仅在个别文献中提及，缺乏详细阐述。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三神变 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A%E3%80%82\n  > 三神变：神通神变、记心神变、教诫神变。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A5%9E%E8%AE%8A%EF%BC%9A%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A%E3%80%82\n  > 三神变：神通神变、记心神变、教诫神变。\n- [3] Early Buddhist · 经藏/长部_dn · dn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A\n  > 神通神变\n- [4] Early Buddhist · 经藏/长部_dn · dn28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn28&lang=zh&q=%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%A8%98%E5%BF%83%E7%A8%AE%E9%A1%9E%E7%9A%84%E6%95%99%E5%B0%8E\n  > 记心种类的教导\n- [5] Early Buddhist · 经藏/长部_dn · dn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn11&lang=zh&q=%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A\n  > 教诫神变\n- [6] Early Buddhist · 经藏/长部_dn · dn24 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn24&lang=zh&q=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E7%9A%84%E4%BA%8B\n  > 神通神变的事\n- [7] Early Buddhist · 经藏/增支部_an · an3.60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%82\n  > 这被称为神通神变。\n- [8] Early Buddhist · 经藏/增支部_an · an3.60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E5%91%A2%EF%BC%9F\n  > 什么是神通神变呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -386,15 +388,24 @@
       "number": 3,
       "order": 60,
       "label": "三神变",
-      "members": "神通神变、记心神变、教诫神变",
+      "members": "神通神变、记心神变、教诫神变。",
+      "match_members": "神通神变、记心神变、教诫神变",
       "member_items": [
         "神通神变",
         "记心神变",
         "教诫神变"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三神变：神通神变、记心神变、教诫神变。"
+      ],
       "source_text": "三神变：神通神变、记心神变、教诫神变。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A5%9E%E8%AE%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%A5%9E%E9%80%9A%E7%A5%9E%E8%AE%8A%E3%80%81%E8%A8%98%E5%BF%83%E7%A5%9E%E8%AE%8A%E3%80%81%E6%95%99%E8%AA%A1%E7%A5%9E%E8%AE%8A%E3%80%82",
+      "expanded_points": [
+        "神通神变：指通过神通力展现的神变。",
+        "记心神变：指通过记心（了解他人心念）展现的神变。",
+        "教诫神变：指通过教诫（教导）展现的神变。"
+      ]
     }
   ]
 }

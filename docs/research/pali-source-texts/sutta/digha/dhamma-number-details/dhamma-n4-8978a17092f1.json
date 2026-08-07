@@ -24,13 +24,13 @@
       "沙门中的柔软沙门"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四种人」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。[1]\n\n## 所含各法\n### 不动沙门\n经文将「不动沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是不动沙门。。[3]\n### 红莲花沙门\n经文将「红莲花沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《雨神的女儿经第一》命中：我是红莲，红莲是雨神的女儿。。[4]\n### 白莲花沙门\n经文将「白莲花沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是白莲花沙门。。[5]\n### 沙门中的柔软沙门\n经文将「沙门中的柔软沙门」列为「四种人」的一个成员。Early Buddhist 用该名词检索时，在《儿子经》命中：这样的人是沙门中的柔软沙门。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n根据现有证据，四种人包括不动沙门、红莲花沙门、白莲花沙门和沙门中的柔软沙门 [1]。这些名称在经典中作为四种人的类别被提及 [1][2]。\n\n## 要点展开\n### 四种人的构成\n- 四种人包括：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门 [1]。\n- 经典中明确提到“四种人”这一概念 [2]。\n\n### 各成员的描述\n- 不动沙门：在增支部经典中有具体描述 [3]。\n- 红莲花沙门：在相应部经典中提及，但上下文可能不同 [4]。\n- 白莲花沙门：在增支部经典中有具体描述 [5]。\n- 沙门中的柔软沙门：在增支部经典中有具体描述 [6]。\n\n### 其他经典中的提及\n- 中部经典也提到“现在世间中存在这四种人” [7][8]。\n\n## 分歧与张力\n不同经典对四种人的描述可能侧重不同，例如红莲花沙门在相应部中的提及可能并非直接对应四种人的分类 [4]，而增支部和中部经典则明确将其作为四种人的组成部分 [3][5][6][7][8]。\n\n## 证据覆盖情况\n现有证据覆盖了四种人的名称和部分经典出处，但未提供每种人的详细定义或标准，也未说明不同经典之间是否存在差异。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四种人",
           "text": "下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,9 +103,33 @@
           "label": "Early Buddhist · 经藏/增支部_an · an4.5",
           "text": "现在世间中存在这四种人，哪四种呢？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap09.json",
+          "text": ">[09-004]</sup> 「忍辱无有胜」<br>等说的忍辱的功德。</div><p>（初学者当避免的慈的所缘）（瑜伽者）如是见其过患而为离于嗔恚心及知其功德而为忍辱（心）相应，当勤修于慈。勤修（于慈）者应先了知「对此等人最初应修慈，对此等人则绝对不应修慈」的人的差别。 <span class=\\\"vism-page\\\">[296]</span>即是此慈最初对（１）不爱的人，（２）极爱的朋友，（３）中间人（无关者），（４）敌人等的四种人不应修习；（５）不应专对异性修习，（６）绝对不应对死者修习。为什么最初不应对不爱等人修习呢？（１）因为（初学者）若把不爱者置于爱处是会疲倦的；（２）若把最爱的朋友置于无关系者之处是会疲倦的，因为对彼（极爱者）甚至现起少许的痛苦，也会使（修习者）呈现悲泣的状态；（３）若把无关系的人置于尊重敬爱之处也会疲倦的；（４）若对敌人随念则起忿怒。所以最初不应对不爱等人修习。</p><p>（不可对他修慈的人）（５）如果专对异性（修习），则修习者未免生贪欲。</p><p>据说：有一位大臣之子，一次问一位和自家亲切的长老道：「尊师！当对谁修慈？」长老答道：「对爱的人。」那（大臣子）以为自己的妻子是爱人，便对那女修慈（而生贪欲）要入她的房内，（于门外）叩壁终夜。</p><p>是故不应专",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "aye vuccanti” ti ettha nibbutā. “Santo have sabbhi pavedayanti” ti ettha paṇḍitā. Idha pana vijjamānā upalabbhamānā ti attho. “Attantapādisu attānaṃ tapati dukkhāpeti ti attantapo.”\", \"chinese_translation\": \"“Pessa，有四种人”这一句也是一个独立的衔接。这位Pessa说：“尊者，只要世尊在这样的人群中、在这样的百人群体中、在这样的众人中，都能了知众生的利与不利。”为了显示“我如此了知众生的利与不利”，世尊开始了这次说法。也可以与前面Kandara的谈话联系起来。因此说：“如乔达摩尊师正确地引导了比丘僧团。”世尊为了显示“我舍弃前面三种人，而引导第四种人走向利益之行”，也开始了这次说法。“寂静（santā）”是“存在（saṃvijjamānā）”一词的同义词。在“已去、已寂、已止息”中，这里“寂”指已灭。在“这些是圣者律中的寂静住处”中，指已涅槃。在“寂静者确实与善者宣说”中，指智者。而此处指存在、可得。“自苦行者”是指使自己受苦、折磨自己的人。\", \"correction_not",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "puggalo neyyo. Yassa puggalassa bahum pi suṇato bahum pi bhaṇato bahum pi dhārayato bahum pi vācayato na tāya jātiyā dhammābhisamayo hoti, ayaṃ vuccati puggalo padaparamo.\", \"chinese_translation\": \"46. 正如那些四种莲花，同样地，有四种人：敏知者、详解知者、应引导者、文句为最者。其中，那种人在说法时立即通达法，这种人称为“敏知者”。那种人在简要说法后，详细解释义理时通达法，这种人称为“详解知者”。那种人通过听闻、提问、如理作意、亲近善友、侍奉、承事而通达法，这种人称为“应引导者”。那种人即使多听、多说、多持、多诵，在此生也不通达法，这种人称为“文句为最者”。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Yath' eva' 修正为 'Yath' eva'。\" }, { \"type\": \"model_re",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "text": "/mn5\" ], \"suttacentral_primary_uid\": \"mn5\" } }, \"raw_ocr\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"corrected_pali\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"chinese_translation\": \"“四种人”是以计数来划分。\", \"correction_note\": [ { \"type\": \"model_assisted_draft\", \"reason\": \"由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。\" } ], \"translation_note\": [ \"gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。\" ], \"needs_review\": true, \"review_reason\": [ \"DeepSeek-V4-Flash 模型初稿；需人工核",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四种人",
@@ -533,7 +557,38 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap09.json",
+          "heading": "站内搜索命中",
+          "text": ">[09-004]</sup> 「忍辱无有胜」<br>等说的忍辱的功德。</div><p>（初学者当避免的慈的所缘）（瑜伽者）如是见其过患而为离于嗔恚心及知其功德而为忍辱（心）相应，当勤修于慈。勤修（于慈）者应先了知「对此等人最初应修慈，对此等人则绝对不应修慈」的人的差别。 <span class=\\\"vism-page\\\">[296]</span>即是此慈最初对（１）不爱的人，（２）极爱的朋友，（３）中间人（无关者），（４）敌人等的四种人不应修习；（５）不应专对异性修习，（６）绝对不应对死者修习。为什么最初不应对不爱等人修习呢？（１）因为（初学者）若把不爱者置于爱处是会疲倦的；（２）若把最爱的朋友置于无关系者之处是会疲倦的，因为对彼（极爱者）甚至现起少许的痛苦，也会使（修习者）呈现悲泣的状态；（３）若把无关系的人置于尊重敬爱之处也会疲倦的；（４）若对敌人随念则起忿怒。所以最初不应对不爱等人修习。</p><p>（不可对他修慈的人）（５）如果专对异性（修习），则修习者未免生贪欲。</p><p>据说：有一位大臣之子，一次问一位和自家亲切的长老道：「尊师！当对谁修慈？」长老答道：「对爱的人。」那（大臣子）以为自己的妻子是爱人，便对那女修慈（而生贪欲）要入她的房内，（于门外）叩壁终夜。</p><p>是故不应专",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "aye vuccanti” ti ettha nibbutā. “Santo have sabbhi pavedayanti” ti ettha paṇḍitā. Idha pana vijjamānā upalabbhamānā ti attho. “Attantapādisu attānaṃ tapati dukkhāpeti ti attantapo.”\", \"chinese_translation\": \"“Pessa，有四种人”这一句也是一个独立的衔接。这位Pessa说：“尊者，只要世尊在这样的人群中、在这样的百人群体中、在这样的众人中，都能了知众生的利与不利。”为了显示“我如此了知众生的利与不利”，世尊开始了这次说法。也可以与前面Kandara的谈话联系起来。因此说：“如乔达摩尊师正确地引导了比丘僧团。”世尊为了显示“我舍弃前面三种人，而引导第四种人走向利益之行”，也开始了这次说法。“寂静（santā）”是“存在（saṃvijjamānā）”一词的同义词。在“已去、已寂、已止息”中，这里“寂”指已灭。在“这些是圣者律中的寂静住处”中，指已涅槃。在“寂静者确实与善者宣说”中，指智者。而此处指存在、可得。“自苦行者”是指使自己受苦、折磨自己的人。\", \"correction_not",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "puggalo neyyo. Yassa puggalassa bahum pi suṇato bahum pi bhaṇato bahum pi dhārayato bahum pi vācayato na tāya jātiyā dhammābhisamayo hoti, ayaṃ vuccati puggalo padaparamo.\", \"chinese_translation\": \"46. 正如那些四种莲花，同样地，有四种人：敏知者、详解知者、应引导者、文句为最者。其中，那种人在说法时立即通达法，这种人称为“敏知者”。那种人在简要说法后，详细解释义理时通达法，这种人称为“详解知者”。那种人通过听闻、提问、如理作意、亲近善友、侍奉、承事而通达法，这种人称为“应引导者”。那种人即使多听、多说、多持、多诵，在此生也不通达法，这种人称为“文句为最者”。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Yath' eva' 修正为 'Yath' eva'。\" }, { \"type\": \"model_re",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "/mn5\" ], \"suttacentral_primary_uid\": \"mn5\" } }, \"raw_ocr\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"corrected_pali\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"chinese_translation\": \"“四种人”是以计数来划分。\", \"correction_note\": [ { \"type\": \"model_assisted_draft\", \"reason\": \"由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。\" } ], \"translation_note\": [ \"gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。\" ], \"needs_review\": true, \"review_reason\": [ \"DeepSeek-V4-Flash 模型初稿；需人工核",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四种人\n\n## 直接回答\n根据现有证据，四种人包括不动沙门、红莲花沙门、白莲花沙门和沙门中的柔软沙门 [1]。这些名称在经典中作为四种人的类别被提及 [1][2]。\n\n## 要点展开\n### 四种人的构成\n- 四种人包括：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门 [1]。\n- 经典中明确提到“四种人”这一概念 [2]。\n\n### 各成员的描述\n- 不动沙门：在增支部经典中有具体描述 [3]。\n- 红莲花沙门：在相应部经典中提及，但上下文可能不同 [4]。\n- 白莲花沙门：在增支部经典中有具体描述 [5]。\n- 沙门中的柔软沙门：在增支部经典中有具体描述 [6]。\n\n### 其他经典中的提及\n- 中部经典也提到“现在世间中存在这四种人” [7][8]。\n\n## 分歧与张力\n不同经典对四种人的描述可能侧重不同，例如红莲花沙门在相应部中的提及可能并非直接对应四种人的分类 [4]，而增支部和中部经典则明确将其作为四种人的组成部分 [3][5][6][7][8]。\n\n## 证据覆盖情况\n现有证据覆盖了四种人的名称和部分经典出处，但未提供每种人的详细定义或标准，也未说明不同经典之间是否存在差异。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四种人 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82\n  > 下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 四种人：学友们！\n- [3] Early Buddhist · 经藏/增支部_an · an4.87 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%82\n  > 这样的人是不动沙门。\n- [4] Early Buddhist · 经藏/相应部_sn · sn1.39 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn1.39&lang=zh&q=%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E6%98%AF%E7%B4%85%E8%93%AE%EF%BC%8C%E7%B4%85%E8%93%AE%E6%98%AF%E9%9B%A8%E7%A5%9E%E7%9A%84%E5%A5%B3%E5%85%92%E3%80%82\n  > 我是红莲，红莲是雨神的女儿。\n- [5] Early Buddhist · 经藏/增支部_an · an4.87 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%82\n  > 这样的人是白莲花沙门。\n- [6] Early Buddhist · 经藏/增支部_an · an4.87 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.87&lang=zh&q=%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%A8%A3%E7%9A%84%E4%BA%BA%E6%98%AF%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82\n  > 这样的人是沙门中的柔软沙门。\n- [7] Early Buddhist · 经藏/中部_mn · mn5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？\n- [8] Early Buddhist · 经藏/中部_mn · mn51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -543,7 +598,8 @@
       "number": 4,
       "order": 50,
       "label": "四种人",
-      "members": "不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门",
+      "members": "不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。",
+      "match_members": "不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门",
       "member_items": [
         "不动沙门",
         "红莲花沙门",
@@ -551,8 +607,17 @@
         "沙门中的柔软沙门"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。"
+      ],
       "source_text": "下一个四种人：不动沙门、红莲花沙门、白莲花沙门、沙门中的柔软沙门。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%8D%E5%8B%95%E6%B2%99%E9%96%80%E3%80%81%E7%B4%85%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E7%99%BD%E8%93%AE%E8%8A%B1%E6%B2%99%E9%96%80%E3%80%81%E6%B2%99%E9%96%80%E4%B8%AD%E7%9A%84%E6%9F%94%E8%BB%9F%E6%B2%99%E9%96%80%E3%80%82",
+      "expanded_points": [
+        "不动沙门：四种人中的第一种，具体描述见增支部经典。",
+        "红莲花沙门：四种人中的第二种，在相应部经典中提及。",
+        "白莲花沙门：四种人中的第三种，具体描述见增支部经典。",
+        "沙门中的柔软沙门：四种人中的第四种，具体描述见增支部经典。"
+      ]
     }
   ]
 }

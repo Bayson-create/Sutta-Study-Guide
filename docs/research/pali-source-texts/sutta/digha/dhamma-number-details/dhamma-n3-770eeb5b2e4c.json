@@ -22,13 +22,13 @@
       "加害的意向"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三不善意向」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的意向、恶意的意向、加害的意向。[1]\n\n## 所含各法\n### 欲的意向\n经文将「欲的意向」列为「三不善意向」的一个成员。Early Buddhist 用该名词检索时，在《沙门木地葛经》命中：欲的意向、恶意的意向、加害的意向，木匠！。[3]\n### 恶意的意向\n经文将「恶意的意向」列为「三不善意向」的一个成员。Early Buddhist 用该名词检索时，在《沙门木地葛经》命中：欲的意向、恶意的意向、加害的意向，木匠！。[3]\n### 加害的意向\n经文将「加害的意向」列为「三不善意向」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘加害想生起加害的意向；。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三不善意向指欲的意向、恶意的意向、加害的意向 [1][2]。这些意向被称为不善的意向 [6]，其生起有特定缘，如缘加害想生起加害的意向 [4]。\n\n## 要点展开\n### 定义与构成\n三不善意向包括欲的意向、恶意的意向、加害的意向 [1][2]。\n\n### 不善的判定\n这些意向被称为不善的意向 [6]，且存在与之相对的三善意向：离欲的意向、无恶意的意向、无加害的意向 [7]。\n\n### 生起之缘\n不善意向的生起有特定条件，例如缘加害想生起加害的意向 [4]。\n\n## 分歧与张力\n证据中未显示不同来源之间的分歧，但需注意 [3] 与 [1][2] 均列出相同三项，而 [4] 仅提及加害意向的生起，未涉及其他两项，这可能反映不同经文侧重不同，但并非冲突。\n\n## 证据覆盖情况\n现有证据覆盖了三不善意向的构成、不善的判定、相对的三善意向以及部分生起之缘，但未覆盖不善意向的灭尽（如 [8] 提出问题但未给出答案）及更详细的缘起链条。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三不善意向",
           "text": "三不善意向：欲的意向、恶意的意向、加害的意向。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%AC%B2%E6%83%B3%E7%94%9F%E8%B5%B7%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三不善意向",
@@ -446,7 +446,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三不善意向\n\n## 直接回答\n三不善意向指欲的意向、恶意的意向、加害的意向 [1][2]。这些意向被称为不善的意向 [6]，其生起有特定缘，如缘加害想生起加害的意向 [4]。\n\n## 要点展开\n### 定义与构成\n三不善意向包括欲的意向、恶意的意向、加害的意向 [1][2]。\n\n### 不善的判定\n这些意向被称为不善的意向 [6]，且存在与之相对的三善意向：离欲的意向、无恶意的意向、无加害的意向 [7]。\n\n### 生起之缘\n不善意向的生起有特定条件，例如缘加害想生起加害的意向 [4]。\n\n## 分歧与张力\n证据中未显示不同来源之间的分歧，但需注意 [3] 与 [1][2] 均列出相同三项，而 [4] 仅提及加害意向的生起，未涉及其他两项，这可能反映不同经文侧重不同，但并非冲突。\n\n## 证据覆盖情况\n现有证据覆盖了三不善意向的构成、不善的判定、相对的三善意向以及部分生起之缘，但未覆盖不善意向的灭尽（如 [8] 提出问题但未给出答案）及更详细的缘起链条。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三不善意向 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82\n  > 三不善意向：欲的意向、恶意的意向、加害的意向。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82\n  > 三不善意向：欲的意向、恶意的意向、加害的意向。\n- [3] Early Buddhist · 经藏/中部_mn · mn78 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%8C%E6%9C%A8%E5%8C%A0%EF%BC%81\n  > 欲的意向、恶意的意向、加害的意向，木匠！\n- [4] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E6%83%B3%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B\n  > 缘加害想生起加害的意向；\n- [5] Early Buddhist · 经藏/中部_mn · mn78 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%8D%E5%96%84%E7%9A%84%E6%84%8F%E5%90%91%E5%91%A2%EF%BC%9F\n  > 什么是不善的意向呢？\n- [6] Early Buddhist · 经藏/中部_mn · mn78 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%B8%8D%E5%96%84%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82\n  > 这些被称为不善的意向。\n- [7] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E6%84%8F%E5%90%91%EF%BC%9A%E9%9B%A2%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82\n  > 三善意向：离欲的意向、无恶意的意向、无加害的意向。\n- [8] Early Buddhist · 经藏/中部_mn · mn78 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn78&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E4%B8%8D%E5%96%84%E7%9A%84%E6%84%8F%E5%90%91%E5%9C%A8%E5%93%AA%E8%A3%A1%E7%84%A1%E9%A4%98%E6%BB%85%E5%91%A2%EF%BC%9F\n  > 这些不善的意向在哪里无余灭呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +458,24 @@
       "number": 3,
       "order": 7,
       "label": "三不善意向",
-      "members": "欲的意向、恶意的意向、加害的意向",
+      "members": "欲的意向、恶意的意向、加害的意向。",
+      "match_members": "欲的意向、恶意的意向、加害的意向",
       "member_items": [
         "欲的意向",
         "恶意的意向",
         "加害的意向"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三不善意向：欲的意向、恶意的意向、加害的意向。"
+      ],
       "source_text": "三不善意向：欲的意向、恶意的意向、加害的意向。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82",
+      "expanded_points": [
+        "欲的意向：指对感官欲乐的追求与倾向。",
+        "恶意的意向：指对他人的憎恨或伤害的意图。",
+        "加害的意向：指想要损害或折磨他人的意图。"
+      ]
     }
   ]
 }

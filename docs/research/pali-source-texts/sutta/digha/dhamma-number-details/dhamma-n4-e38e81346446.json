@@ -24,13 +24,13 @@
       "解脱蕴"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四法蕴」属于 4 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：戒蕴、定蕴、慧蕴、解脱蕴。[1]\n\n## 所含各法\n### 戒蕴\n经文将「戒蕴」列为「四法蕴」的一个成员。Early Buddhist 用该名词检索时，在《不尊重经第二》命中：不完成戒蕴而『他将完成定蕴。。[3]\n### 定蕴\n经文将「定蕴」列为「四法蕴」的一个成员。Early Buddhist 用该名词检索时，在《应该被结交经》命中：我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴；。[4]\n### 慧蕴\n经文将「慧蕴」列为「四法蕴」的一个成员。Early Buddhist 用该名词检索时，在《应该被结交经》命中：我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴；。[5]\n### 解脱蕴\n经文将「解脱蕴」列为「四法蕴」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。。[6]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 33 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四法蕴是指戒蕴、定蕴、慧蕴、解脱蕴 [1][2]。这些法蕴是佛教修行体系中的分类，其中戒蕴是基础，完成戒蕴后能完成定蕴 [3][7]。\n\n## 要点展开\n### 四法蕴的构成\n- 四法蕴包括戒蕴、定蕴、慧蕴、解脱蕴 [1][2]。\n- 在增支部经典中，也提到无学戒蕴、无学定蕴、无学慧蕴，显示这些法蕴在无学（阿罗汉）境界中的体现 [8]。\n\n### 法蕴之间的次第关系\n- 完成戒蕴后，才能完成定蕴 [3][7]。\n- 定蕴和慧蕴的完成可以相互资助，如“我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴” [4]，以及“我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴” [5]。\n\n## 分歧与张力\n- 关于法蕴的数目，DN33 和 DN34 存在差异：DN33 列出四法蕴（戒、定、慧、解脱） [1][2]，而 DN34 列出五法蕴（戒、定、慧、解脱、解脱智见） [6]。这显示不同经典对法蕴的分类有所不同。\n\n## 证据覆盖情况\n现有证据覆盖了四法蕴的构成及其次第关系，并提及五法蕴的差异，但未详细解释每个法蕴的具体定义或修行方法。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四法蕴",
           "text": "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,9 +103,39 @@
           "label": "Early Buddhist · 经藏/中部_mn · mn44",
           "text": "正语、正业、正命这些法被戒蕴包含；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E8%AA%9E%E3%80%81%E6%AD%A3%E6%A5%AD%E3%80%81%E6%AD%A3%E5%91%BD%E9%80%99%E4%BA%9B%E6%B3%95%E8%A2%AB%E6%88%92%E8%98%8A%E5%8C%85%E5%90%AB%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "*四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证悟道智的必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "是没有无漏的。然而此色由于聚的意义，是适合于蕴的意义，故说为蕴；此色由于聚义及有漏之义，则适合于取蕴，故说为取蕴。可是受等在蕴中说是无漏的，在取蕴中说是有漏的。在这里的取蕴，当知是「取著之氃的蕴为取蕴」的意义。然而在这里（清净道论）是把此等（蕴、取蕴）一切总括一起而单说为蕴的。</p><p>（Ⅲ）「以不增减」，为什么世尊只说五蕴而不多不少呢？（一）一切有为法依同分而类集为五之故，（二）是我与我所执的对象的最上之故，（三）此五蕴包摄其他（戒蕴等）之故。（一）于各种的有为法中，依其同分及总括为一起的方面说：即色依色的同分而集结一起为一蕴，受依受的同分而集结一起为一蕴，如是想等也一样。以说「一切有为法依同分而类集为五之故」。（二）于我与我所执的对象中以此色等五种为最上，即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-115\\\">[14-115]</sup> ：「* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-014\\\">[14-014]</sup> * 于现存的色中，由于取色而住著于色，生起这样的见：「这是我的，我是此，这是我自己」；于现存的受中.......想中......行中......乃至识中，由于取识而住著于识，生起这样的见：「",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap08.json",
+          "text": "他以自己的智与精进力，破了一切烦恼之贼，而得独觉──麟角独生者，亦不能脱离于死，我怎么能脱呢？</p><div class=\\\"vism-verse\\\">观察各种原因的大仙，<br>以智力而得漏尽的独生者，<br>以独行独住的麟角喻者，<br>他们也不得超越于死，<br>如我这等人，<br>更有何言说。</div><p>如是以辟支佛比较而念死。</p><p>（７）怎样以等正觉比较呢？彼世尊饰以八十种好及三十二相庄严的色身，一切种类清净的戒蕴等德宝成就的法身，大名，大福，大力，大神变，大慧都达到顶点，无等，无等等，无比 <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-029\\\">[08-029]</sup> 无双的阿罗汉等正觉者，如大火聚给雨水降下而消灭，他也给死雨降下而即座寂灭。</p><div class=\\\"vism-verse\\\">这样有大威力的大仙，<br>那死力也无耻无畏的逼来。<br>无耻无曰，<br>粉碎一切，<br>像我这样的有情，<br>怎不为死所战胜？</div><p>如是比较等正觉者而念死。</p><p>以这样共同的死，拿那些具有大名等及其他的人与自己比较，像那些殊胜的有情一样，念我也要死的则生侥得达近行定的业处。当如是自他比较而念死。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap16.json",
+          "text": "爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p><p>此中的正语等三种只是戒，所以因同种而包摄于戒蕴。在圣典中的「戒蕴中」虽以位格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-069\\\">[16-069]</sup> 来说明，然而应依作格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-070\\\">[16-070]</sup> 之义。其次于正精进等的三种之中，以定自已的法性是不能专注所缘而安止(入定)的，当它获得精进完成其策励的作用及念的完成其不忘的作用之时的帮助，便得安止。</p><p>这里有一个相当的譬喻:即如有朋友三人，为了祭祀共同进入园中，一人看见了盛开的瞻波伽",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "里的意思是：鸟知道在某处有果实成熟的树，从各方飞来，用爪、翅、喙等啄食、摇落那些果实。它们没有“这是今天的，这是明天的”的想法。当果实耗尽时，它们不守护树，也不在那里放翅、羽、爪、喙；而是对那树无牵挂，想往哪个方向就去，带着随身的负担起飞而去。同样，这位比丘无执着、无牵挂地出发，完全取用而后出发。62. [18023] “圣”是指无过失。“内”是指在自己的身上。“无过失之乐”是指无过失的乐。他以眼…… （“见色已”）：这是说，这位具备圣戒蕴的比丘，以眼识见色之后。其余各处应说的，在《清净道论》中已全部说明。“无杂染乐”是指不被烦恼所沾染的乐；“无散乱乐”也是同样说的。因为根律仪之乐，在见等之中，以见只是见等的方式运作，所以是无散乱的。\\n（“于前行、返回时”）：这位具备包括意根在内的六根律仪的比丘，在这些前行、返回等七种处所，以念与正知而行。其中应说的，在《念住经》中已经说了。\\n63. （“他以如此”等）这开示什么呢？它开示林居的资具具足。因为如果他没有这四种资具，他的林居就不会成功；他会与畜生或林居者相处。住于林中的天神们会想：“这样的恶比丘在林居做什么？”于是发出恐怖的声音，用手拍打头部，做出逃跑的样子。而“某某比丘进入林中后，做了如此这般的恶事”这样的恶名会传播开来。\\n然而，如果他有这四种资具",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四法蕴",
@@ -463,7 +493,52 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "*四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证悟道智的必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "是没有无漏的。然而此色由于聚的意义，是适合于蕴的意义，故说为蕴；此色由于聚义及有漏之义，则适合于取蕴，故说为取蕴。可是受等在蕴中说是无漏的，在取蕴中说是有漏的。在这里的取蕴，当知是「取著之氃的蕴为取蕴」的意义。然而在这里（清净道论）是把此等（蕴、取蕴）一切总括一起而单说为蕴的。</p><p>（Ⅲ）「以不增减」，为什么世尊只说五蕴而不多不少呢？（一）一切有为法依同分而类集为五之故，（二）是我与我所执的对象的最上之故，（三）此五蕴包摄其他（戒蕴等）之故。（一）于各种的有为法中，依其同分及总括为一起的方面说：即色依色的同分而集结一起为一蕴，受依受的同分而集结一起为一蕴，如是想等也一样。以说「一切有为法依同分而类集为五之故」。（二）于我与我所执的对象中以此色等五种为最上，即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-115\\\">[14-115]</sup> ：「* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-014\\\">[14-014]</sup> * 于现存的色中，由于取色而住著于色，生起这样的见：「这是我的，我是此，这是我自己」；于现存的受中.......想中......行中......乃至识中，由于取识而住著于识，生起这样的见：「",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap08.json",
+          "heading": "站内搜索命中",
+          "text": "他以自己的智与精进力，破了一切烦恼之贼，而得独觉──麟角独生者，亦不能脱离于死，我怎么能脱呢？</p><div class=\\\"vism-verse\\\">观察各种原因的大仙，<br>以智力而得漏尽的独生者，<br>以独行独住的麟角喻者，<br>他们也不得超越于死，<br>如我这等人，<br>更有何言说。</div><p>如是以辟支佛比较而念死。</p><p>（７）怎样以等正觉比较呢？彼世尊饰以八十种好及三十二相庄严的色身，一切种类清净的戒蕴等德宝成就的法身，大名，大福，大力，大神变，大慧都达到顶点，无等，无等等，无比 <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-029\\\">[08-029]</sup> 无双的阿罗汉等正觉者，如大火聚给雨水降下而消灭，他也给死雨降下而即座寂灭。</p><div class=\\\"vism-verse\\\">这样有大威力的大仙，<br>那死力也无耻无畏的逼来。<br>无耻无曰，<br>粉碎一切，<br>像我这样的有情，<br>怎不为死所战胜？</div><p>如是比较等正觉者而念死。</p><p>以这样共同的死，拿那些具有大名等及其他的人与自己比较，像那些殊胜的有情一样，念我也要死的则生侥得达近行定的业处。当如是自他比较而念死。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap16.json",
+          "heading": "站内搜索命中",
+          "text": "爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p><p>此中的正语等三种只是戒，所以因同种而包摄于戒蕴。在圣典中的「戒蕴中」虽以位格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-069\\\">[16-069]</sup> 来说明，然而应依作格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-070\\\">[16-070]</sup> 之义。其次于正精进等的三种之中，以定自已的法性是不能专注所缘而安止(入定)的，当它获得精进完成其策励的作用及念的完成其不忘的作用之时的帮助，便得安止。</p><p>这里有一个相当的譬喻:即如有朋友三人，为了祭祀共同进入园中，一人看见了盛开的瞻波伽",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "里的意思是：鸟知道在某处有果实成熟的树，从各方飞来，用爪、翅、喙等啄食、摇落那些果实。它们没有“这是今天的，这是明天的”的想法。当果实耗尽时，它们不守护树，也不在那里放翅、羽、爪、喙；而是对那树无牵挂，想往哪个方向就去，带着随身的负担起飞而去。同样，这位比丘无执着、无牵挂地出发，完全取用而后出发。62. [18023] “圣”是指无过失。“内”是指在自己的身上。“无过失之乐”是指无过失的乐。他以眼…… （“见色已”）：这是说，这位具备圣戒蕴的比丘，以眼识见色之后。其余各处应说的，在《清净道论》中已全部说明。“无杂染乐”是指不被烦恼所沾染的乐；“无散乱乐”也是同样说的。因为根律仪之乐，在见等之中，以见只是见等的方式运作，所以是无散乱的。\\n（“于前行、返回时”）：这位具备包括意根在内的六根律仪的比丘，在这些前行、返回等七种处所，以念与正知而行。其中应说的，在《念住经》中已经说了。\\n63. （“他以如此”等）这开示什么呢？它开示林居的资具具足。因为如果他没有这四种资具，他的林居就不会成功；他会与畜生或林居者相处。住于林中的天神们会想：“这样的恶比丘在林居做什么？”于是发出恐怖的声音，用手拍打头部，做出逃跑的样子。而“某某比丘进入林中后，做了如此这般的恶事”这样的恶名会传播开来。\\n然而，如果他有这四种资具",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "\"Adhisīlasikkhā asekkho sīlakkhandho, adhicittasikkhā asekkho samādhikkhandho.\", \"corrected_pali\": \"Adhisīlasikkhā asekkho sīlakkhandho, adhicittasikkhā asekkho samādhikkhandho.\", \"chinese_translation\": \"增上戒学就是无学戒蕴，增上心学就是无学定蕴。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Adhisīlasikkhā asekkho sīlakkhandho, adhicittasikkhā asekkho samādhikkhandho.\", \"corrected\": \"Adhisīlasikkhā asekkho sīlakkhandho, adhicittasikkhā asekkho samādhikkhandho.\", \"reason\": \"Dhammadāyādasuttavaṇṇanā中‘Adh",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四法蕴\n\n## 直接回答\n四法蕴是指戒蕴、定蕴、慧蕴、解脱蕴 [1][2]。这些法蕴是佛教修行体系中的分类，其中戒蕴是基础，完成戒蕴后能完成定蕴 [3][7]。\n\n## 要点展开\n### 四法蕴的构成\n- 四法蕴包括戒蕴、定蕴、慧蕴、解脱蕴 [1][2]。\n- 在增支部经典中，也提到无学戒蕴、无学定蕴、无学慧蕴，显示这些法蕴在无学（阿罗汉）境界中的体现 [8]。\n\n### 法蕴之间的次第关系\n- 完成戒蕴后，才能完成定蕴 [3][7]。\n- 定蕴和慧蕴的完成可以相互资助，如“我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴” [4]，以及“我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴” [5]。\n\n## 分歧与张力\n- 关于法蕴的数目，DN33 和 DN34 存在差异：DN33 列出四法蕴（戒、定、慧、解脱） [1][2]，而 DN34 列出五法蕴（戒、定、慧、解脱、解脱智见） [6]。这显示不同经典对法蕴的分类有所不同。\n\n## 证据覆盖情况\n现有证据覆盖了四法蕴的构成及其次第关系，并提及五法蕴的差异，但未详细解释每个法蕴的具体定义或修行方法。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四法蕴 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82\n  > 四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82\n  > 四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。\n- [3] Early Buddhist · 经藏/增支部_an · an5.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82\n  > 不完成戒蕴而『他将完成定蕴。\n- [4] Early Buddhist · 经藏/增支部_an · an3.26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%9B\n  > 我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴；\n- [5] Early Buddhist · 经藏/增支部_an · an3.26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%9B\n  > 我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴；\n- [6] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82\n  > 五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。\n- [7] Early Buddhist · 经藏/增支部_an · an5.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82\n  > 完成戒蕴而『他将完成定蕴。\n- [8] Early Buddhist · 经藏/增支部_an · an3.143 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.143&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82\n  > 无学戒蕴、无学定蕴、无学慧蕴。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -473,7 +548,8 @@
       "number": 4,
       "order": 25,
       "label": "四法蕴",
-      "members": "戒蕴、定蕴、慧蕴、解脱蕴",
+      "members": "戒蕴、定蕴、慧蕴、解脱蕴。",
+      "match_members": "戒蕴、定蕴、慧蕴、解脱蕴",
       "member_items": [
         "戒蕴",
         "定蕴",
@@ -481,8 +557,17 @@
         "解脱蕴"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。"
+      ],
       "source_text": "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82",
+      "expanded_points": [
+        "戒蕴：指戒律的集合，是修行基础。",
+        "定蕴：指禅定的集合，需在戒蕴基础上完成。",
+        "慧蕴：指智慧的集合，可与定蕴相互资助。",
+        "解脱蕴：指解脱的集合，是四法蕴之一。"
+      ]
     }
   ]
 }

@@ -5,7 +5,8 @@
     "number": 2,
     "label": "等至善巧与出等至善巧",
     "member_items": [
-      "等至善巧与出等至善巧"
+      "等至善巧",
+      "出等至善巧"
     ],
     "group_ids": [
       "dn33-n2-g9"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "等至善巧与出等至善巧"
+      "等至善巧与出等至善巧",
+      "等至善巧",
+      "出等至善巧"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「等至善巧与出等至善巧」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：等至善巧与出等至善巧。[1]\n\n## 所含各法\n### 等至善巧与出等至善巧\n经文将「等至善巧与出等至善巧」列为「等至善巧与出等至善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：等至善巧与出等至善巧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n等至善巧与出等至善巧是禅修者在定学上的两种重要技能，分别指善于进入等至（禅定）和善于从等至中退出 [1][2]。在增支部和相应部中，这两种善巧常与其他定学善巧（如持续、顺意、所缘、行境等）并列提及，构成对禅修者定力素养的完整描述 [3][4][5][6][7][8]。\n\n## 要点展开\n### 定义与基本含义\n- 等至善巧指善于进入禅定（等至），出等至善巧指善于从禅定中退出，二者是禅修者应具备的基本定学技能 [1][2]。\n- 在增支部中，佛陀强调应以等至善巧与出等至善巧进、出后，正确地告知他人，说明这两种善巧是指导禅修实践的重要依据 [3]。\n\n### 与其他定学善巧的关系\n- 相应部将等至善巧与持续善巧并列，说明禅修者不仅要善于进入，还要善于维持定境 [4]。\n- 相应部将等至善巧与出定善巧并列，与DN33的表述一致，强调进入与退出的对称性 [5]。\n- 相应部还提到等至善巧与顺意善巧、所缘善巧、行境善巧等，显示定学善巧是一个多维度的体系 [6][7][8]。\n\n## 分歧与张力\n不同经典对等至善巧的搭配对象有不同侧重：DN33仅提及等至善巧与出等至善巧两项 [1][2]；而相应部则将其与持续、顺意、所缘、行境等善巧并列，构成更广泛的分类 [4][6][7][8]。这并非矛盾，而是不同经典对定学善巧的列举详略不同，DN33可能只选取了最核心的两项。\n\n## 证据覆盖情况\n现有证据覆盖了等至善巧与出等善巧的基本定义及其在增支部、相应部中的并列关系，但未提供具体修习方法或详细解释，也未说明为何DN33仅列出这两项。",
       "evidence": [
         {
           "kind": "source",
@@ -74,7 +77,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.16&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%B1%BA%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "等至善巧与出等至善巧",
@@ -160,9 +163,19 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn34.16&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%B1%BA%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82"
             }
           ]
+        },
+        {
+          "query": "等至善巧",
+          "hits": []
+        },
+        {
+          "query": "出等至善巧",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：等至善巧与出等至善巧\n\n## 直接回答\n等至善巧与出等至善巧是禅修者在定学上的两种重要技能，分别指善于进入等至（禅定）和善于从等至中退出 [1][2]。在增支部和相应部中，这两种善巧常与其他定学善巧（如持续、顺意、所缘、行境等）并列提及，构成对禅修者定力素养的完整描述 [3][4][5][6][7][8]。\n\n## 要点展开\n### 定义与基本含义\n- 等至善巧指善于进入禅定（等至），出等至善巧指善于从禅定中退出，二者是禅修者应具备的基本定学技能 [1][2]。\n- 在增支部中，佛陀强调应以等至善巧与出等至善巧进、出后，正确地告知他人，说明这两种善巧是指导禅修实践的重要依据 [3]。\n\n### 与其他定学善巧的关系\n- 相应部将等至善巧与持续善巧并列，说明禅修者不仅要善于进入，还要善于维持定境 [4]。\n- 相应部将等至善巧与出定善巧并列，与DN33的表述一致，强调进入与退出的对称性 [5]。\n- 相应部还提到等至善巧与顺意善巧、所缘善巧、行境善巧等，显示定学善巧是一个多维度的体系 [6][7][8]。\n\n## 分歧与张力\n不同经典对等至善巧的搭配对象有不同侧重：DN33仅提及等至善巧与出等至善巧两项 [1][2]；而相应部则将其与持续、顺意、所缘、行境等善巧并列，构成更广泛的分类 [4][6][7][8]。这并非矛盾，而是不同经典对定学善巧的列举详略不同，DN33可能只选取了最核心的两项。\n\n## 证据覆盖情况\n现有证据覆盖了等至善巧与出等善巧的基本定义及其在增支部、相应部中的并列关系，但未提供具体修习方法或详细解释，也未说明为何DN33仅列出这两项。\n\n## 引用\n- [1] Early Buddhist · DN33 · 等至善巧与出等至善巧 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7\n  > 等至善巧与出等至善巧。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E3%80%82\n  > 等至善巧与出等至善巧。\n- [3] Early Buddhist · 经藏/增支部_an · an9.36 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.36&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E8%AA%AA%EF%BC%9A%E3%80%8E%E9%80%99%E4%BA%9B%E6%87%89%E8%A9%B2%E4%BB%A5%E7%A6%AA%E4%BF%AE%E8%80%85%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E9%80%B2%E3%80%81%E5%87%BA%E5%BE%8C%E6%AD%A3%E7%A2%BA%E5%9C%B0%E5%91%8A%E7%9F%A5%E3%80%82\n  > 我说：『这些应该以禅修者的等至善巧与出等至善巧进、出后正确地告知。\n- [4] Early Buddhist · 经藏/相应部_sn · sn34.11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn34.11&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%8C%81%E7%BA%8C%E5%96%84%E5%B7%A7%E3%80%82\n  > 这里，某一类禅修者有关于定的等至善巧与关于定的持续善巧。\n- [5] Early Buddhist · 经藏/相应部_sn · sn34.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn34.12&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E5%87%BA%E5%AE%9A%E5%96%84%E5%B7%A7%E3%80%82\n  > 这里，某一类禅修者有关于定的等至善巧与关于定的出定善巧。\n- [6] Early Buddhist · 经藏/相应部_sn · sn34.13 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn34.13&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E9%A0%86%E6%84%8F%E5%96%84%E5%B7%A7%E3%80%82\n  > 这里，某一类禅修者有关于定的等至善巧与关于定的顺意善巧。\n- [7] Early Buddhist · 经藏/相应部_sn · sn34.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn34.14&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E6%89%80%E7%B7%A3%E5%96%84%E5%B7%A7%E3%80%82\n  > 这里，某一类禅修者有关于定的等至善巧与关于定的所缘善巧。\n- [8] Early Buddhist · 经藏/相应部_sn · sn34.15 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn34.15&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E4%B8%80%E9%A1%9E%E7%A6%AA%E4%BF%AE%E8%80%85%E6%9C%89%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E9%97%9C%E6%96%BC%E5%AE%9A%E7%9A%84%E8%A1%8C%E5%A2%83%E5%96%84%E5%B7%A7%E3%80%82\n  > 这里，某一类禅修者有关于定的等至善巧与关于定的行境善巧。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -173,12 +186,21 @@
       "order": 9,
       "label": "等至善巧与出等至善巧",
       "members": "等至善巧与出等至善巧",
+      "match_members": "等至善巧与出等至善巧",
       "member_items": [
-        "等至善巧与出等至善巧"
+        "等至善巧",
+        "出等至善巧"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "等至善巧与出等至善巧。"
+      ],
       "source_text": "等至善巧与出等至善巧。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7%E8%88%87%E5%87%BA%E7%AD%89%E8%87%B3%E5%96%84%E5%B7%A7",
+      "expanded_points": [
+        "等至善巧：指善于进入禅定（等至）的善巧。",
+        "出等至善巧：指善于从禅定中退出的善巧。"
+      ]
     }
   ]
 }

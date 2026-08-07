@@ -5,7 +5,8 @@
     "number": 2,
     "label": "无明与有的渴爱",
     "member_items": [
-      "无明与有的渴爱"
+      "无明",
+      "有的渴爱"
     ],
     "group_ids": [
       "dn33-n2-g2",
@@ -16,10 +17,12 @@
       "dn34"
     ],
     "search_terms": [
-      "无明与有的渴爱"
+      "无明与有的渴爱",
+      "无明",
+      "有的渴爱"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「无明与有的渴爱」属于 2 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：无明与有的渴爱。[1]\n- DN34：无明与有的渴爱。[2]\n\n## 所含各法\n### 无明与有的渴爱\n经文将「无明与有的渴爱」列为「无明与有的渴爱」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：无明与有的渴爱。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n无明与有的渴爱在经文中被明确列为“应该被舍断的二法”[2][6]。其中，无明是行的因、集、所生与根源[4]，而有的渴爱是三种渴爱之一[5]，且无明遍满者使有的渴爱充满[7]。这些法应以证智舍断[8]。\n\n## 要点展开\n### 定义与分类\n- 无明与有的渴爱被并列为“应该被舍断的二法”[2][6]。\n- 有的渴爱是三种渴爱之一，另外两种是欲的渴爱和虚无的渴爱[5]。\n\n### 关系与作用\n- 无明是行的因、集、所生与根源[4]。\n- 无明遍满者使有的渴爱充满，有的渴爱有食物、这样完成[7]。\n\n### 舍断方式\n- 无明与有的渴爱是应以证智舍断的法[8]。\n\n## 分歧与张力\n不同来源对无明与有的渴爱的描述侧重不同：DN33和DN34仅将其列为应舍断的二法[1][2][6]，而其他经典（如MN11、SN38.10、AN10.62、MN149）则进一步说明了无明的作用、渴爱的分类以及舍断的方式[4][5][7][8]。这些描述并不冲突，但后者提供了更详细的背景。\n\n## 证据覆盖情况\n现有证据覆盖了无明与有的渴爱作为应舍断二法的基本定义、无明与行的关系、渴爱的分类以及舍断方式。但未涉及无明与有的渴爱在其他语境中的具体表现或修行细节。",
       "evidence": [
         {
           "kind": "source",
@@ -38,6 +41,18 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn33",
           "text": "无明与有的渴爱。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn11",
+          "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn38.10",
+          "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
         },
         {
           "kind": "early_buddhist",
@@ -74,9 +89,51 @@
           "label": "Early Buddhist · 经藏/中部_mn · mn11",
           "text": "那目标是有渴爱的还是离渴爱的呢？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E7%9B%AE%E6%A8%99%E6%98%AF%E6%9C%89%E6%B8%B4%E6%84%9B%E7%9A%84%E9%82%84%E6%98%AF%E9%9B%A2%E6%B8%B4%E6%84%9B%E7%9A%84%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn38",
+          "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.11",
+          "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-buddhism-reflections.md",
+          "text": "违戒行为时，原典设想的机制是\"公开澄清或公开举罪，二者必居其一\"，不存在\"行政切割后信息永久消失\"这个第三选项。学诚事件处理结局的不透明本身，就是对律藏\"僧团事务公开可问责\"精神的又一次偏离。 --- ## 四、学诚与济群法师的关系：机构交集、单向取经 在把学诚系统和济群体系并列讨论之前，有必要先厘清两人之间到底有没有直接关系，避免读者误以为\"济群参与了学诚的道次第推广\"或\"两人是同门师兄弟\"。 ### 1. 机构层面的交集，但无明确师承 学诚 1984 年考入中国佛学院本科班，1988 年毕业；济群法师 1984 年从中国佛学院第一届本科班毕业。两人的求学时间在中国佛学院有交叉，但目前可查资料未显示二人同班或存在直接师徒关系；济群 1979 年在福州鼓山涌泉寺普雨老和尚座下剃度，学诚 1982 年在福建广化寺剃度，剃度师不同，早年出家系统也不同。[^xuecheng-jiqun-bio] 二人后来都曾在中国佛教协会体系内任职（学诚曾任会长，济群曾/现任常务理事），存在机构性交集，但未检索到两人共同主持会议、公开合影或互相公开推荐文字的独立第三方记录。 **用巴利律藏戒师制度\"责任链条必须明确可追溯\"的标准衡量：** 这种\"机构交集但传承模糊\"的状态，本身也是汉传僧团教育谱系透明度不足的一个",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-quran.md",
+          "text": "*。 ### **维度二：伦理维度的对话** 深入探讨了五个具体伦理议题（他人苦难、冲突暴力、性与婚姻、财富正义、生死临终），揭示了： - 古兰经基于**外部权威与启示的他律伦理** - 佛法基于**内在因果与自救的自律伦理** - 两者在实践结果上收敛，但基础差异本质 ### **维度三：终极关怀论** 比较了两个传统如何回答\"我应该如何对待有限的生命\"这一根本问题： - 古兰经：为真主服务→永恒的人格存续 - 佛法：消除无明→寂灭的无我解脱 ### **维度四：历史语境研究** 揭示了为什么两个传统各自做出这些选择： - **古兰经**：为了统一分散的阿拉伯部落，选择了集中权威+明确律法+末世承诺 - **佛法**：为了打击种姓制度的权力垄断，选择了个人自救+因果自律+涅槃解脱 - 每个选择都有其深层理由，但也都产生了后遗症 --- ## 古兰经的内在一致性评价 **佛教视角认为古兰经是一部高度整合但建立在特定假设基础上的宗教经典**： ✓ **内在高度一致**：所有教义都指向真主，从个人伦理到国家治理形成完整体系 ✓ **伦理立场明确**：给了被压迫者希望，给了社区明确的规范 ✗ **但基于假设**：永恒的自我、绝对的外部权威、一次性的创世与末世 ✗ **且有",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "弟子说： - 批判原文： > “没有寂静作为基础的智慧，不是真正的智慧。有些人非常聪明，佛法讲得头头是道。但他们的心并不平静，这不是真智慧。思考不是智慧，智慧来自平静的心。心一直在追逐自己，就像狗追着牛车跑。人们想得太多，他们以为自己在修行，实际上只是一直在想。” --- ### 智慧法宝 在南传上座部的传统与巴利三藏中，“智慧（Paññā）”被尊为至高无上的“法宝”。佛陀在原始佛教经典中无数次开示，唯有智慧才能最终断除无明、斩断轮回。 那种“偏向于慧”的修行者，在上座部中被称为“随法行者（Dhammānusārī）”或“纯观行者/干观者（Sukkha-vipassaka）”。只要他们的“慧”不是脱离定力的口头禅，而是在清净定力的托底之下，极其敏锐、精进地去解脱名色法，三藏圣典和历代长老对此会给予最崇高、最热烈的赞叹与随喜（Anumodana）。 以下是原始佛教和上座部对“精进于慧”者的顶级随喜与崇高评价： --- ## 一、 《巴利三藏》的至高随喜：称赞智慧为“世间之光” 在经典中，佛陀常用最壮丽的辞藻来随喜那些在智慧上勇猛精进的弟子，将智慧视为斩断黑暗的终极武器。 ## 1. 赞叹慧根 - 经典出处：《增支部》 - 佛陀原文： > \"Paññā hi seṭṭh",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-trends.md",
+          "text": "期修学和城市禅修中心形成网络。其公开可验证的人口规模有限，但在中文佛教知识生产和年轻高知禅修圈中影响明显。 --- ## 西藏与藏传佛教：不能简单套用全球下降模型 西藏自治区和周边藏族地区的佛教情况，与汉地佛教明显不同。藏传佛教不仅是宗教身份，也是语言、节日、家庭礼仪、地方秩序和民族文化的一部分。 需要谨慎处理三个问题： 1. “几乎全民信仰”可以作为文化描述，但具体比例应避免写得过满。西藏和藏区还存在苯教、伊斯兰教、天主教、无明确宗教身份者，以及不同程度的文化佛教参与者。 2. 西藏自治区内寺院、僧尼、活动场所数据可以引用政府或国际宗教自由报告，但这些来源有政治立场差异，最好并列使用。 3. 藏传佛教向汉地和西方传播确实存在，但公开统计不足；更稳妥的表述是“影响力显著，精确人口规模仍缺少可靠调查”。 比较稳妥的结论是：藏传佛教区域的宗教身份与民族文化绑定更深，因此不太适合用“东亚城市世俗化导致佛教身份下降”这个单一模型解释。但人口、政策、教育、城市化和跨区域流动仍会改变其未来形态。 --- ## 上座部佛教：稳定基本盘与“技术出海” 上座部佛教的核心地区是泰国、缅甸、斯里兰卡、柬埔寨和老挝。它的全球人数超过 1 亿是可信的；如果把东南亚五国、斯里兰卡、印度新佛教和海外移民都纳入，规模",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sacca）** 苦的根源是渴爱（taṇhā）。渴爱分三种：欲爱（kāma-taṇhā）、有爱（bhava-taṇhā）、无有爱（vibhava-taṇhā）。《增支部》完整引文明示，整个十二缘起链均属集谛：从无明到爱到取到有，皆是苦聚的升起原因。《阿毗达摩论》进一步扩展：不只爱，一切烦恼乃至能导致轮转的善业，广义上都是集谛。 **三、灭谛（Nirodha-sacca）** 灭谛即涅槃（nibbāna），是渴爱的彻底止息与无余灭。涅槃是无为法（asaṅkhata），无因缘生起，永恒存在，以寂静为其相。《南传菩萨道》引舍利弗尊者：\"朋友，涅槃没有感受即是乐。\"涅槃分有余涅槃（阿罗汉仍住世时）与无余涅槃（五蕴彻底灭，不再受生）。 **四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikir",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "无明与有的渴爱",
@@ -162,9 +219,224 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E7%9B%AE%E6%A8%99%E6%98%AF%E6%9C%89%E6%B8%B4%E6%84%9B%E7%9A%84%E9%82%84%E6%98%AF%E9%9B%A2%E6%B8%B4%E6%84%9B%E7%9A%84%E5%91%A2%EF%BC%9F"
             }
           ]
+        },
+        {
+          "query": "无明",
+          "hits": [
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "sn12.11",
+              "collection": "经藏/相应部_sn",
+              "title": "食经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "行，无明是因，无明是集，无明所生，无明是根源。",
+              "score": 9.705888951190207,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82"
+            },
+            {
+              "uid": "an10.61",
+              "collection": "经藏/增支部_an",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.61&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            },
+            {
+              "uid": "sn12.35",
+              "collection": "经藏/相应部_sn",
+              "title": "无明为缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明为缘经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.35&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%82%BA%E7%B7%A3%E7%B6%93"
+            },
+            {
+              "uid": "sn12.36",
+              "collection": "经藏/相应部_sn",
+              "title": "无明为缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明为缘经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.36&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%82%BA%E7%B7%A3%E7%B6%93"
+            },
+            {
+              "uid": "sn22.113",
+              "collection": "经藏/相应部_sn",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.113&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            },
+            {
+              "uid": "sn45.1",
+              "collection": "经藏/相应部_sn",
+              "title": "无明经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明经",
+              "score": 8.873801855204585,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.1&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E7%B6%93"
+            }
+          ]
+        },
+        {
+          "query": "有的渴爱",
+          "hits": [
+            {
+              "uid": "sn38.10",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱的询问经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！",
+              "score": 14.83937813290972,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81"
+            },
+            {
+              "uid": "mn11",
+              "collection": "经藏/中部_mn",
+              "title": "狮子吼小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "那目标是有渴爱的还是离渴爱的呢？",
+              "score": 14.795944093647863,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%82%A3%E7%9B%AE%E6%A8%99%E6%98%AF%E6%9C%89%E6%B8%B4%E6%84%9B%E7%9A%84%E9%82%84%E6%98%AF%E9%9B%A2%E6%B8%B4%E6%84%9B%E7%9A%84%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无明与有的渴爱。",
+              "score": 14.357110151217503,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82"
+            },
+            {
+              "uid": "sn45.170",
+              "collection": "经藏/相应部_sn",
+              "title": "渴爱经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "欲的渴爱、有的渴爱、虚无的渴爱，比丘们！",
+              "score": 14.238908698524293,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.170&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "mn38",
+              "collection": "经藏/中部_mn",
+              "title": "渴爱的灭尽大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "mn115",
+              "collection": "经藏/中部_mn",
+              "title": "多界经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn115&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            },
+            {
+              "uid": "an3.61",
+              "collection": "经藏/增支部_an",
+              "title": "宗派教义等等经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "以受为缘而有渴爱；",
+              "score": 13.753055780547422,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.61&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%A5%E5%8F%97%E7%82%BA%E7%B7%A3%E8%80%8C%E6%9C%89%E6%B8%B4%E6%84%9B%EF%BC%9B"
+            }
+          ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/contemporary-buddhism-reflections.md",
+          "heading": "站内搜索命中",
+          "text": "违戒行为时，原典设想的机制是\"公开澄清或公开举罪，二者必居其一\"，不存在\"行政切割后信息永久消失\"这个第三选项。学诚事件处理结局的不透明本身，就是对律藏\"僧团事务公开可问责\"精神的又一次偏离。 --- ## 四、学诚与济群法师的关系：机构交集、单向取经 在把学诚系统和济群体系并列讨论之前，有必要先厘清两人之间到底有没有直接关系，避免读者误以为\"济群参与了学诚的道次第推广\"或\"两人是同门师兄弟\"。 ### 1. 机构层面的交集，但无明确师承 学诚 1984 年考入中国佛学院本科班，1988 年毕业；济群法师 1984 年从中国佛学院第一届本科班毕业。两人的求学时间在中国佛学院有交叉，但目前可查资料未显示二人同班或存在直接师徒关系；济群 1979 年在福州鼓山涌泉寺普雨老和尚座下剃度，学诚 1982 年在福建广化寺剃度，剃度师不同，早年出家系统也不同。[^xuecheng-jiqun-bio] 二人后来都曾在中国佛教协会体系内任职（学诚曾任会长，济群曾/现任常务理事），存在机构性交集，但未检索到两人共同主持会议、公开合影或互相公开推荐文字的独立第三方记录。 **用巴利律藏戒师制度\"责任链条必须明确可追溯\"的标准衡量：** 这种\"机构交集但传承模糊\"的状态，本身也是汉传僧团教育谱系透明度不足的一个",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        },
+        {
+          "source": "docs/research/two-religions-quran.md",
+          "heading": "站内搜索命中",
+          "text": "*。 ### **维度二：伦理维度的对话** 深入探讨了五个具体伦理议题（他人苦难、冲突暴力、性与婚姻、财富正义、生死临终），揭示了： - 古兰经基于**外部权威与启示的他律伦理** - 佛法基于**内在因果与自救的自律伦理** - 两者在实践结果上收敛，但基础差异本质 ### **维度三：终极关怀论** 比较了两个传统如何回答\"我应该如何对待有限的生命\"这一根本问题： - 古兰经：为真主服务→永恒的人格存续 - 佛法：消除无明→寂灭的无我解脱 ### **维度四：历史语境研究** 揭示了为什么两个传统各自做出这些选择： - **古兰经**：为了统一分散的阿拉伯部落，选择了集中权威+明确律法+末世承诺 - **佛法**：为了打击种姓制度的权力垄断，选择了个人自救+因果自律+涅槃解脱 - 每个选择都有其深层理由，但也都产生了后遗症 --- ## 古兰经的内在一致性评价 **佛教视角认为古兰经是一部高度整合但建立在特定假设基础上的宗教经典**： ✓ **内在高度一致**：所有教义都指向真主，从个人伦理到国家治理形成完整体系 ✓ **伦理立场明确**：给了被压迫者希望，给了社区明确的规范 ✗ **但基于假设**：永恒的自我、绝对的外部权威、一次性的创世与末世 ✗ **且有",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        },
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "弟子说： - 批判原文： > “没有寂静作为基础的智慧，不是真正的智慧。有些人非常聪明，佛法讲得头头是道。但他们的心并不平静，这不是真智慧。思考不是智慧，智慧来自平静的心。心一直在追逐自己，就像狗追着牛车跑。人们想得太多，他们以为自己在修行，实际上只是一直在想。” --- ### 智慧法宝 在南传上座部的传统与巴利三藏中，“智慧（Paññā）”被尊为至高无上的“法宝”。佛陀在原始佛教经典中无数次开示，唯有智慧才能最终断除无明、斩断轮回。 那种“偏向于慧”的修行者，在上座部中被称为“随法行者（Dhammānusārī）”或“纯观行者/干观者（Sukkha-vipassaka）”。只要他们的“慧”不是脱离定力的口头禅，而是在清净定力的托底之下，极其敏锐、精进地去解脱名色法，三藏圣典和历代长老对此会给予最崇高、最热烈的赞叹与随喜（Anumodana）。 以下是原始佛教和上座部对“精进于慧”者的顶级随喜与崇高评价： --- ## 一、 《巴利三藏》的至高随喜：称赞智慧为“世间之光” 在经典中，佛陀常用最壮丽的辞藻来随喜那些在智慧上勇猛精进的弟子，将智慧视为斩断黑暗的终极武器。 ## 1. 赞叹慧根 - 经典出处：《增支部》 - 佛陀原文： > \"Paññā hi seṭṭh",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        },
+        {
+          "source": "docs/research/buddhist-trends.md",
+          "heading": "站内搜索命中",
+          "text": "期修学和城市禅修中心形成网络。其公开可验证的人口规模有限，但在中文佛教知识生产和年轻高知禅修圈中影响明显。 --- ## 西藏与藏传佛教：不能简单套用全球下降模型 西藏自治区和周边藏族地区的佛教情况，与汉地佛教明显不同。藏传佛教不仅是宗教身份，也是语言、节日、家庭礼仪、地方秩序和民族文化的一部分。 需要谨慎处理三个问题： 1. “几乎全民信仰”可以作为文化描述，但具体比例应避免写得过满。西藏和藏区还存在苯教、伊斯兰教、天主教、无明确宗教身份者，以及不同程度的文化佛教参与者。 2. 西藏自治区内寺院、僧尼、活动场所数据可以引用政府或国际宗教自由报告，但这些来源有政治立场差异，最好并列使用。 3. 藏传佛教向汉地和西方传播确实存在，但公开统计不足；更稳妥的表述是“影响力显著，精确人口规模仍缺少可靠调查”。 比较稳妥的结论是：藏传佛教区域的宗教身份与民族文化绑定更深，因此不太适合用“东亚城市世俗化导致佛教身份下降”这个单一模型解释。但人口、政策、教育、城市化和跨区域流动仍会改变其未来形态。 --- ## 上座部佛教：稳定基本盘与“技术出海” 上座部佛教的核心地区是泰国、缅甸、斯里兰卡、柬埔寨和老挝。它的全球人数超过 1 亿是可信的；如果把东南亚五国、斯里兰卡、印度新佛教和海外移民都纳入，规模",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿毗达摩论注》明言：\"名色是五蕴，那五蕴是苦谛。\" **二、集谛（Samudaya-sacca）** 苦的根源是渴爱（taṇhā）。渴爱分三种：欲爱（kāma-taṇhā）、有爱（bhava-taṇhā）、无有爱（vibhava-taṇhā）。《增支部》完整引文明示，整个十二缘起链均属集谛：从无明到爱到取到有，皆是苦聚的升起原因。《阿毗达摩论》进一步扩展：不只爱，一切烦恼乃至能导致轮转的善业，广义上都是集谛。 **三、灭谛（Nirodha-sacca）** 灭谛即涅槃（nibbāna），是渴爱的彻底止息与无余灭。涅槃是无为法（asaṅkhata），无因缘生起，永恒存在，以寂静为其相。《南传菩萨道》引舍利弗尊者：\"朋友，涅槃没有感受即是乐。\"涅槃分有余涅槃（阿罗汉仍住世时）与无余涅槃（五蕴彻底灭，不再受生）。 **四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikir",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "法可为业果；中有；色界有六根与欲 | 倾向把人格、业果、修道进程作实体化或连续物理解 | | 说一切有部 Sabbatthivada | 三世法实有；证悟可分段取得；意识流可即三昧；阿罗汉可退 | “一切有”若实执，落入时间实体化 | | 迦叶部 Kassapika | 过去未来中有一部分存在 | 折中式三世实有 | | 大众部 Mahasanghika | 心与道德分离；道德成长机械化；他心可代作；佛遍满虚空；神通可违自然；阿罗汉仍有无明余结；阿罗汉可退 | 容易走向佛陀超验神话化与伦理机制化 | | 案达罗派 Andhaka 总称 | 识可持续一日；喊“苦”可诱发证悟；解脱可在有贪时发生并逐渐完成；无想天有识；空间、元素、业可见；现在与未来可知；过去未来作为“拥有”持续；禅定中感官颠倒；涅槃是善；禅定可作为目的 | 主要问题是把经验、语言、禅定、时间、涅槃对象化 | | 东山住部 Pubbaseliya | 禅定中可闻声；语声纯心理波；心与慧本质不同；欲界只指欲乐；阿罗汉知识可缺；四谛、十二因缘无为；中有；业可使阿罗汉退 | 对心、声、智、无为、阿罗汉的分类混乱 | | 西山住部 Aparaseliya | 与东山住部共有：一切仅刹那存在；胎儿器官非次第发展；可同时注意一切；阿罗汉可被魔污染；受记菩",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E7%84%A1%E6%98%8E&scope=site",
+          "query": "无明"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：无明与有的渴爱\n\n## 直接回答\n无明与有的渴爱在经文中被明确列为“应该被舍断的二法”[2][6]。其中，无明是行的因、集、所生与根源[4]，而有的渴爱是三种渴爱之一[5]，且无明遍满者使有的渴爱充满[7]。这些法应以证智舍断[8]。\n\n## 要点展开\n### 定义与分类\n- 无明与有的渴爱被并列为“应该被舍断的二法”[2][6]。\n- 有的渴爱是三种渴爱之一，另外两种是欲的渴爱和虚无的渴爱[5]。\n\n### 关系与作用\n- 无明是行的因、集、所生与根源[4]。\n- 无明遍满者使有的渴爱充满，有的渴爱有食物、这样完成[7]。\n\n### 舍断方式\n- 无明与有的渴爱是应以证智舍断的法[8]。\n\n## 分歧与张力\n不同来源对无明与有的渴爱的描述侧重不同：DN33和DN34仅将其列为应舍断的二法[1][2][6]，而其他经典（如MN11、SN38.10、AN10.62、MN149）则进一步说明了无明的作用、渴爱的分类以及舍断的方式[4][5][7][8]。这些描述并不冲突，但后者提供了更详细的背景。\n\n## 证据覆盖情况\n现有证据覆盖了无明与有的渴爱作为应舍断二法的基本定义、无明与行的关系、渴爱的分类以及舍断方式。但未涉及无明与有的渴爱在其他语境中的具体表现或修行细节。\n\n## 引用\n- [1] Early Buddhist · DN33 · 无明与有的渴爱 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B\n  > 无明与有的渴爱。\n- [2] Early Buddhist · DN34 · 无明与有的渴爱 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B\n  > （四）哪些是应该被舍断的二法呢？无明与有的渴爱，这些是应该被舍断的二法。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%82\n  > 无明与有的渴爱。\n- [4] Early Buddhist · 经藏/中部_mn · mn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E7%84%A1%E6%98%8E&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%A1%8C%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E5%9B%A0%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E9%9B%86%EF%BC%8C%E7%84%A1%E6%98%8E%E6%89%80%E7%94%9F%EF%BC%8C%E7%84%A1%E6%98%8E%E6%98%AF%E6%A0%B9%E6%BA%90%E3%80%82\n  > 行，无明是因，无明是集，无明所生，无明是根源。\n- [5] Early Buddhist · 经藏/相应部_sn · sn38.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn38.10&lang=zh&q=%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E6%B8%B4%E6%84%9B%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E3%80%81%E8%99%9B%E7%84%A1%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81\n  > 有这三种渴爱：欲的渴爱、有的渴爱、虚无的渴爱，道友！\n- [6] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%BA%8C%E6%B3%95%E3%80%82\n  > 无明与有的渴爱，这些是应该被舍断的二法。\n- [7] Early Buddhist · 经藏/增支部_an · an10.62 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.62&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E9%81%8D%E6%BB%BF%E8%80%85%E4%BD%BF%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E5%85%85%E6%BB%BF%EF%BC%8C%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%E9%80%99%E6%A8%A3%E6%9C%89%E9%A3%9F%E7%89%A9%EF%BC%8C%E9%80%99%E6%A8%A3%E5%AE%8C%E6%88%90%E3%80%82\n  > 无明遍满者使有的渴爱充满，有的渴爱这样有食物，这样完成。\n- [8] Early Buddhist · 经藏/中部_mn · mn149 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn149&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E4%BB%A5%E8%AD%89%E6%99%BA%E6%8D%A8%E6%96%B7%E7%9A%84%E6%B3%95%E3%80%82\n  > 无明与有的渴爱，这些是应以证智舍断的法。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -175,12 +447,21 @@
       "order": 2,
       "label": "无明与有的渴爱",
       "members": "无明与有的渴爱",
+      "match_members": "无明与有的渴爱",
       "member_items": [
-        "无明与有的渴爱"
+        "无明",
+        "有的渴爱"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "无明与有的渴爱。"
+      ],
       "source_text": "无明与有的渴爱。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B",
+      "expanded_points": [
+        "无明：作为二法之一，与有的渴爱并列，是应被舍断的法。",
+        "有的渴爱：作为二法之一，与无明并列，是应被舍断的法。"
+      ]
     },
     {
       "id": "dn34-n2-g4",
@@ -189,12 +470,21 @@
       "order": 4,
       "label": "无明与有的渴爱",
       "members": "无明与有的渴爱",
+      "match_members": "无明与有的渴爱",
       "member_items": [
-        "无明与有的渴爱"
+        "无明",
+        "有的渴爱"
       ],
       "dn34_status": "应舍断",
+      "source_paragraphs": [
+        "（四）哪些是应该被舍断的二法呢？无明与有的渴爱，这些是应该被舍断的二法。"
+      ],
       "source_text": "（四）哪些是应该被舍断的二法呢？无明与有的渴爱，这些是应该被舍断的二法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%84%A1%E6%98%8E%E8%88%87%E6%9C%89%E7%9A%84%E6%B8%B4%E6%84%9B",
+      "expanded_points": [
+        "无明：在应舍断的二法中，无明是其中之一。",
+        "有的渴爱：在应舍断的二法中，有的渴爱是其中之一。"
+      ]
     }
   ]
 }

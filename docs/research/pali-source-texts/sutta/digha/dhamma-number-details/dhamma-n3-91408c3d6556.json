@@ -22,13 +22,13 @@
       "无明的烦恼"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三烦恼」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲的烦恼、有的烦恼、无明的烦恼。[1]\n\n## 所含各法\n### 欲的烦恼\n经文将「欲的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《烦恼经》命中：欲的烦恼、有的烦恼、无明的烦恼，比丘们！。[3]\n### 有的烦恼\n经文将「有的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《有烦恼经》命中：有烦恼经。[4]\n### 无明的烦恼\n经文将「无明的烦恼」列为「三烦恼」的一个成员。Early Buddhist 用该名词检索时，在《洞察经》命中：无明是烦恼的起源与生起。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三烦恼指“欲的烦恼、有的烦恼、无明的烦恼”三项 [1][2][3][13]。这一列举在《长部·DN33》与《相应部》的多部经典中一致出现 [1][2][3][13]，是“烦恼”主题下的一组三法。\n\n## 要点展开\n### 三烦恼的列出\n- 《DN33》明确列出“三烦恼：欲的烦恼、有的烦恼、无明的烦恼” [1][2]。\n- 《相应部·SN45.163》与《相应部·SN47.50》以同样三项宣说“欲的烦恼、有的烦恼、无明的烦恼” [3][13]。\n\n### 无明的特殊位置\n- 另有一处说“无明是烦恼的起源与生起” [5]，将无明与烦恼的生起直接关联，可帮助理解无明在三烦恼中的意义。\n\n### 相邻法数辨析\n- 证据中还有“三不善根”“三善根”的列举 [11][12]，以及“有烦恼经”的经题 [4]和“三之问题、三之总说、三之解说”的格式 [6][7][8][9][10]，但证据没有显示它们等同于三烦恼。\n\n## 分歧与张力\n- 三烦恼的成员与排序在各出处一致 [1][2][3][13]，没有互相冲突的说法。\n- 侧重差异在于：并列三烦恼时无明只是其中一项 [1][2][3][13]；而《增支部·AN6.63》称“无明是烦恼的起源与生起” [5]，把无明置于根源位置。两者不必然冲突，但侧重点不同。\n\n## 证据覆盖情况\n现有证据完整覆盖了三烦恼的准确名称及其在多部经典中的重复出现，并提供了一条关于无明的起源性说明。但证据没有解释“欲”“有”“无明”各自的定义、三烦恼的断除方法，也未说明“有烦恼经” [4]和“三之问题”等格式 [6][7]与三烦恼的具体关联。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三烦恼",
           "text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.50&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三烦恼",
@@ -446,7 +446,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三烦恼\n\n## 直接回答\n三烦恼指“欲的烦恼、有的烦恼、无明的烦恼”三项 [1][2][3][13]。这一列举在《长部·DN33》与《相应部》的多部经典中一致出现 [1][2][3][13]，是“烦恼”主题下的一组三法。\n\n## 要点展开\n### 三烦恼的列出\n- 《DN33》明确列出“三烦恼：欲的烦恼、有的烦恼、无明的烦恼” [1][2]。\n- 《相应部·SN45.163》与《相应部·SN47.50》以同样三项宣说“欲的烦恼、有的烦恼、无明的烦恼” [3][13]。\n\n### 无明的特殊位置\n- 另有一处说“无明是烦恼的起源与生起” [5]，将无明与烦恼的生起直接关联，可帮助理解无明在三烦恼中的意义。\n\n### 相邻法数辨析\n- 证据中还有“三不善根”“三善根”的列举 [11][12]，以及“有烦恼经”的经题 [4]和“三之问题、三之总说、三之解说”的格式 [6][7][8][9][10]，但证据没有显示它们等同于三烦恼。\n\n## 分歧与张力\n- 三烦恼的成员与排序在各出处一致 [1][2][3][13]，没有互相冲突的说法。\n- 侧重差异在于：并列三烦恼时无明只是其中一项 [1][2][3][13]；而《增支部·AN6.63》称“无明是烦恼的起源与生起” [5]，把无明置于根源位置。两者不必然冲突，但侧重点不同。\n\n## 证据覆盖情况\n现有证据完整覆盖了三烦恼的准确名称及其在多部经典中的重复出现，并提供了一条关于无明的起源性说明。但证据没有解释“欲”“有”“无明”各自的定义、三烦恼的断除方法，也未说明“有烦恼经” [4]和“三之问题”等格式 [6][7]与三烦恼的具体关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三烦恼 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82\n  > 三烦恼：欲的烦恼、有的烦恼、无明的烦恼。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%85%A9%E6%83%B1%EF%BC%9A%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82\n  > 三烦恼：欲的烦恼、有的烦恼、无明的烦恼。\n- [3] Early Buddhist · 经藏/相应部_sn · sn45.163 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.163&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 欲的烦恼、有的烦恼、无明的烦恼，比丘们！\n- [4] Early Buddhist · 经藏/增支部_an · an10.139 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.139&lang=zh&q=%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E7%85%A9%E6%83%B1%E7%B6%93\n  > 有烦恼经\n- [5] Early Buddhist · 经藏/增支部_an · an6.63 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.63&lang=zh&q=%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E6%98%8E%E6%98%AF%E7%85%A9%E6%83%B1%E7%9A%84%E8%B5%B7%E6%BA%90%E8%88%87%E7%94%9F%E8%B5%B7%E3%80%82\n  > 无明是烦恼的起源与生起。\n- [6] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 三之问题、三之总说、三之解说；\n- [7] Early Buddhist · 经藏/增支部_an · an10.28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 三之问题、三之总说、三之解说；\n- [8] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82\n  > 『三之问题、三之总说、三之解说。\n- [9] Early Buddhist · 经藏/增支部_an · an10.28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82\n  > 『三之问题、三之总说、三之解说。\n- [10] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E4%B8%89%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E4%B8%89%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E4%B8%89%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82\n  > 而，『三之问题、三之总说、三之解说。\n- [11] Early Buddhist · 经藏/增支部_an · an3.69 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E4%B8%8D%E5%96%84%E6%A0%B9%E3%80%82\n  > 这是三不善根。\n- [12] Early Buddhist · 经藏/增支部_an · an3.69 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.69&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E4%B8%89%E5%96%84%E6%A0%B9%E3%80%82\n  > 这是三善根。\n- [13] Early Buddhist · 经藏/相应部_sn · sn47.50 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.50&lang=zh&q=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 欲的烦恼、有的烦恼、无明的烦恼，比丘们！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +458,24 @@
       "number": 3,
       "order": 20,
       "label": "三烦恼",
-      "members": "欲的烦恼、有的烦恼、无明的烦恼",
+      "members": "欲的烦恼、有的烦恼、无明的烦恼。",
+      "match_members": "欲的烦恼、有的烦恼、无明的烦恼",
       "member_items": [
         "欲的烦恼",
         "有的烦恼",
         "无明的烦恼"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。"
+      ],
       "source_text": "三烦恼：欲的烦恼、有的烦恼、无明的烦恼。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%85%A9%E6%83%B1&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E6%9C%89%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%81%E7%84%A1%E6%98%8E%E7%9A%84%E7%85%A9%E6%83%B1%E3%80%82",
+      "expanded_points": [
+        "欲的烦恼：三烦恼中的第一项，与有的烦恼、无明的烦恼并列为三烦恼。",
+        "有的烦恼：三烦恼中的第二项，与欲的烦恼、无明的烦恼并列为三烦恼。",
+        "无明的烦恼：三烦恼中的第三项，与欲的烦恼、有的烦恼并列为三烦恼。"
+      ]
     }
   ]
 }

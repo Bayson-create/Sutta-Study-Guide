@@ -22,13 +22,13 @@
       "加害想"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三不善想」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲想、恶意想、加害想。[1]\n\n## 所含各法\n### 欲想\n经文将「欲想」列为「三不善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘离欲想生起离欲的意向；。[3]\n### 恶意想\n经文将「恶意想」列为「三不善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘恶意界生起恶意想；。[4]\n### 加害想\n经文将「加害想」列为「三不善想」的一个成员。Early Buddhist 用该名词检索时，在《有因缘经》命中：缘加害界生起加害想；。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三不善想指欲想、恶意想、加害想 [1][2]。这些不善想与不善界、不善寻、不善意向等法数并列，构成一组不善的心理状态 [6][7][8]。\n\n## 要点展开\n### 定义\n三不善想明确为欲想、恶意想、加害想 [1][2]。\n\n### 相关法数\n与三不善想相关的还有三不善界（欲界、恶意界、加害界）[6]、三不善寻（欲寻、恶意寻、加害寻）[7]、三不善意向（欲的意向、恶意的意向、加害的意向）[8]。\n\n### 缘起关系\n不善想与不善界有缘起关系：缘恶意界生起恶意想 [4]，缘加害界生起加害想 [5]。此外，缘离欲想生起离欲的意向 [3]，这显示想与意向之间的关联。\n\n## 分歧与张力\n证据 [3] 提到“缘离欲想生起离欲的意向”，这涉及善法（离欲），而其他证据主要围绕不善法，但并未直接构成冲突，只是提供了想与意向之间缘起关系的另一侧面。\n\n## 证据覆盖情况\n现有证据明确给出了三不善想的定义及其相关法数（不善界、不善寻、不善意向），并部分说明了不善想与不善界、意向的缘起关系。但未覆盖三不善想的具体过患、对治方法或更详细的分类。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三不善想",
           "text": "三不善想：欲想、恶意想、加害想。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -101,9 +101,21 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn14.12",
           "text": "缘欲界生起欲想；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%AC%B2%E7%95%8C%E7%94%9F%E8%B5%B7%E6%AC%B2%E6%83%B3%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "中......行中......乃至识中，由于取识而住著于识，生起这样的见：「这是我的，我是此，这是我自己」。所以说「是我与我所执的对象的最上之故」。（三）关于其他所说的戒等的五法蕴，他们都包摄于这行蕴之中。所以说：「此五蕴包摄其他（戒蕴等）之故」。如是当知依不增不减而决择。</p><p>（Ⅳ）「以譬喻」，色取蕴如病院，因为它是象病人的识取蕴的基地（所依），门（根），所缘（境），有住所的意义之故。受取蕴，因起苦痛之故如病。想取蕴，因为由于欲想等而起与贪等相应的受，所以譬如病的等起因。行取蕴，因为是受的病的因缘，所以譬如不适当侍病。 <span class=\\\"vism-page\\\">[479]</span>如经中说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-116\\\">[14-116]</sup> ：「受是为觉受性而行作」；即是说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-117\\\">[14-117]</sup> 「因为行了不善业，积集起来，故成异熟报，生起苦俱的身识」。识取蕴，因为不脱离于受的病，所以譬如病人。此等五蕴，又如：牢狱、惩罚、犯罪、惩罚者、服罪者；亦如食器、食物、菜、侍候者、食者。如是当知以譬喻而决择。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%83%B3&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "l! dve domanassasahagatacittadvaya- sahajātā.1? *\", \"corrected_pali\": \"Kāmasaññādīsu kāmasaññā ti attha lobhasahagata- cittasahagatā jātā iti dve domanassasahagatacittadvaya- sahajātā.\", \"chinese_translation\": \"在欲想等之中，所谓“欲想”者，此处与贪俱行之心俱生；与忧俱行的二心俱生。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'Kamasaññadisu' 修正为 'Kāmasaññādīsu'，'kamasaññá' 修正为 'kāmasaññā'，'attha' 修正为 'attha'，'lobhasahagata- cittasahagatā!?' 修正为 'lobhasahagata- cittasahagatā'，'jātā ito!l!' 修正为 'jātā iti'，'dve domanassasahaga",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%83%B3&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三不善想",
@@ -446,7 +458,24 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "中......行中......乃至识中，由于取识而住著于识，生起这样的见：「这是我的，我是此，这是我自己」。所以说「是我与我所执的对象的最上之故」。（三）关于其他所说的戒等的五法蕴，他们都包摄于这行蕴之中。所以说：「此五蕴包摄其他（戒蕴等）之故」。如是当知依不增不减而决择。</p><p>（Ⅳ）「以譬喻」，色取蕴如病院，因为它是象病人的识取蕴的基地（所依），门（根），所缘（境），有住所的意义之故。受取蕴，因起苦痛之故如病。想取蕴，因为由于欲想等而起与贪等相应的受，所以譬如病的等起因。行取蕴，因为是受的病的因缘，所以譬如不适当侍病。 <span class=\\\"vism-page\\\">[479]</span>如经中说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-116\\\">[14-116]</sup> ：「受是为觉受性而行作」；即是说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-117\\\">[14-117]</sup> 「因为行了不善业，积集起来，故成异熟报，生起苦俱的身识」。识取蕴，因为不脱离于受的病，所以譬如病人。此等五蕴，又如：牢狱、惩罚、犯罪、惩罚者、服罪者；亦如食器、食物、菜、侍候者、食者。如是当知以譬喻而决择。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%83%B3&scope=site",
+          "query": "欲想"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "l! dve domanassasahagatacittadvaya- sahajātā.1? *\", \"corrected_pali\": \"Kāmasaññādīsu kāmasaññā ti attha lobhasahagata- cittasahagatā jātā iti dve domanassasahagatacittadvaya- sahajātā.\", \"chinese_translation\": \"在欲想等之中，所谓“欲想”者，此处与贪俱行之心俱生；与忧俱行的二心俱生。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"OCR 'Kamasaññadisu' 修正为 'Kāmasaññādīsu'，'kamasaññá' 修正为 'kāmasaññā'，'attha' 修正为 'attha'，'lobhasahagata- cittasahagatā!?' 修正为 'lobhasahagata- cittasahagatā'，'jātā ito!l!' 修正为 'jātā iti'，'dve domanassasahaga",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%AC%B2%E6%83%B3&scope=site",
+          "query": "欲想"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三不善想\n\n## 直接回答\n三不善想指欲想、恶意想、加害想 [1][2]。这些不善想与不善界、不善寻、不善意向等法数并列，构成一组不善的心理状态 [6][7][8]。\n\n## 要点展开\n### 定义\n三不善想明确为欲想、恶意想、加害想 [1][2]。\n\n### 相关法数\n与三不善想相关的还有三不善界（欲界、恶意界、加害界）[6]、三不善寻（欲寻、恶意寻、加害寻）[7]、三不善意向（欲的意向、恶意的意向、加害的意向）[8]。\n\n### 缘起关系\n不善想与不善界有缘起关系：缘恶意界生起恶意想 [4]，缘加害界生起加害想 [5]。此外，缘离欲想生起离欲的意向 [3]，这显示想与意向之间的关联。\n\n## 分歧与张力\n证据 [3] 提到“缘离欲想生起离欲的意向”，这涉及善法（离欲），而其他证据主要围绕不善法，但并未直接构成冲突，只是提供了想与意向之间缘起关系的另一侧面。\n\n## 证据覆盖情况\n现有证据明确给出了三不善想的定义及其相关法数（不善界、不善寻、不善意向），并部分说明了不善想与不善界、意向的缘起关系。但未覆盖三不善想的具体过患、对治方法或更详细的分类。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三不善想 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三不善想：欲想、恶意想、加害想。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3%EF%BC%9A%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82\n  > 三不善想：欲想、恶意想、加害想。\n- [3] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%AC%B2%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E9%9B%A2%E6%AC%B2%E6%83%B3%E7%94%9F%E8%B5%B7%E9%9B%A2%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%EF%BC%9B\n  > 缘离欲想生起离欲的意向；\n- [4] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E6%83%A1%E6%84%8F%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E6%83%A1%E6%84%8F%E7%95%8C%E7%94%9F%E8%B5%B7%E6%83%A1%E6%84%8F%E6%83%B3%EF%BC%9B\n  > 缘恶意界生起恶意想；\n- [5] Early Buddhist · 经藏/相应部_sn · sn14.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn14.12&lang=zh&q=%E5%8A%A0%E5%AE%B3%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E5%8A%A0%E5%AE%B3%E7%95%8C%E7%94%9F%E8%B5%B7%E5%8A%A0%E5%AE%B3%E6%83%B3%EF%BC%9B\n  > 缘加害界生起加害想；\n- [6] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82\n  > 三不善界：欲界、恶意界、加害界。\n- [7] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E5%B0%8B%EF%BC%9A%E6%AC%B2%E5%B0%8B%E3%80%81%E6%83%A1%E6%84%8F%E5%B0%8B%E3%80%81%E5%8A%A0%E5%AE%B3%E5%B0%8B%E3%80%82\n  > 三不善寻：欲寻、恶意寻、加害寻。\n- [8] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E6%84%8F%E5%90%91%EF%BC%9A%E6%AC%B2%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E6%83%A1%E6%84%8F%E7%9A%84%E6%84%8F%E5%90%91%E3%80%81%E5%8A%A0%E5%AE%B3%E7%9A%84%E6%84%8F%E5%90%91%E3%80%82\n  > 三不善意向：欲的意向、恶意的意向、加害的意向。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +485,24 @@
       "number": 3,
       "order": 9,
       "label": "三不善想",
-      "members": "欲想、恶意想、加害想",
+      "members": "欲想、恶意想、加害想。",
+      "match_members": "欲想、恶意想、加害想",
       "member_items": [
         "欲想",
         "恶意想",
         "加害想"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三不善想：欲想、恶意想、加害想。"
+      ],
       "source_text": "三不善想：欲想、恶意想、加害想。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%B8%8D%E5%96%84%E6%83%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E6%83%B3%E3%80%81%E6%83%A1%E6%84%8F%E6%83%B3%E3%80%81%E5%8A%A0%E5%AE%B3%E6%83%B3%E3%80%82",
+      "expanded_points": [
+        "欲想：指与欲贪相应的想，是三不善想之一。",
+        "恶意想：指与嗔恚相应的想，是三不善想之一。",
+        "加害想：指与加害、恼害相应的想，是三不善想之一。"
+      ]
     }
   ]
 }

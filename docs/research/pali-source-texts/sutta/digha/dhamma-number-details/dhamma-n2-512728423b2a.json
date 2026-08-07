@@ -5,7 +5,8 @@
     "number": 2,
     "label": "有见与无有见",
     "member_items": [
-      "有见与无有见"
+      "有见",
+      "无有见"
     ],
     "group_ids": [
       "dn33-n2-g3"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "有见与无有见"
+      "有见与无有见",
+      "有见",
+      "无有见"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「有见与无有见」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有见与无有见。[1]\n\n## 所含各法\n### 有见与无有见\n经文将「有见与无有见」列为「有见与无有见」的一个成员。Early Buddhist 用该名词检索时，在《狮子吼小经》命中：凡任何执著无有见、陷入无有见、固执无有见的沙门婆罗门，他们是有见的反对者。。[2]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n有见与无有见是两种见，见于多部经典 [1][3][4][5]。二者相互对立：执著有见者是无有见的反对者，执著无有见者是有见的反对者 [2][6]。\n\n## 要点展开\n### 二种见的定义\n- 有见与无有见被明确列为二种见 [3][4]。\n- 长部《DN33》和相应部《SN22.80》均提及此二见 [1][4][5]。\n\n### 对立关系\n- 执著有见者反对无有见 [6]。\n- 执著无有见者反对有见 [2]。\n\n## 分歧与张力\n不同经典对二见的表述一致，未见明显分歧。\n\n## 证据覆盖情况\n现有证据覆盖了有见与无有见的存在及其对立关系，但未涉及二见的具体定义、内涵或佛教对它们的评判。",
       "evidence": [
         {
           "kind": "source",
@@ -72,9 +75,39 @@
           "label": "Early Buddhist · 经藏/小部_kn · dhp90-99",
           "text": "无有苦恼者。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E8%8B%A6%E6%83%B1%E8%80%85%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "法。 **色蕴的深层分析**： > “无论过去、未来或现在，内在或外在，粗或细，劣或胜，远或近，任何色法都是色蕴；这称为色蕴。”（M III 16 简述） 色蕴的11个维度分析： 1. **三时**（过去、现在、未来） 2. **内外**（internal/external） 3. **粗细**（gross/subtle） 4. **劣胜**（inferior/superior） 5. **远近**（far/near） 6. **有见无见**（visible/invisible） 7. **有对无对**（impingent/non-impingent） 8. **有漏无漏**（subject to cankers/free from cankers） 9. **有执取无执取** 10. **染污/不染污** 11. **世间/出世间** 这种多维分析旨在从多种分类方式观察色法；“不留遗漏”是原文分类意图的概括，“彻底断除执取”需置于后续道智的完整语境，不能说成 XIV 章单独已经完成。 #### 2. 受蕴（Vedanākkhandha，Group of Feeling） 感受（feeling/sensation）是与一切心识相应的心所。原文先按善、不善、无记分为三类（XIV.125–126",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "，说明这些身相皆是菩萨往昔累世行\"百善业\"（sata-puñña）之果报。 ### 五比丘之因缘（另一版本） 据《义精要灯注》（Sārattha-dīpanī）另一说法，八位相士中五位——以憍陈如为首——因笃信太子必成佛，遂将占相所得酬金交予家人，自行出家，随时打探太子出家的消息，静候多年，最终成为佛陀成道后最先度化的\"五比丘\"（Pañca-vaggiya）。 ### 净饭王阻断四门之忧与摩耶王后逝世 婆罗门告知净饭王：\"太子唯有见到老、病、死、沙门四种征兆后，方会出家。\"净饭王遂下令严禁老者、病者、沙门出现于太子视线之内，广增侍卫，并增派舞女歌伎，冀望太子沉溺享乐而绝出家之念。 诞生后第七日，摩耶王后寿数已尽，命终转生兜率天，是为一切菩萨之母的自然定律——\"菩萨之母所曾居住之胎，犹如圣龛内室，他人不得复居或享用\"。太子由其姨母兼继母摩诃波阇波提·瞿昙弥（Mahā Pajāpati Gotamī）抚养长大。 --- ## 第二章（新编号）：菩萨之青年时代 ### 初禅之证得 太子七岁那年，净饭王主持一年一度的\"耕田大典\"，将太子安置于阎浮树荫下后自行前去主持仪式，随侍侍从趁隙离去观礼。太子独坐树下，修习入出息念，证得色界初禅。其他树影皆随日影移动，唯独太子所坐之阎浮树荫始终维持正圆、不",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/vinaya/samantapasadika.md",
+          "text": "的信任；其严重不在一句话，而在以虚假换取敬信、利养或地位。 书中有大量极端边例，应把握其方法而非猎奇逐项背诵：戒学要防的是欲、贪、害与欺诳如何藉身口业落地成事。 ### F. 僧残、二不定与日常戒：由「犯」走回「可共住」 十三僧残处理较重而仍可修复的行为，如故意出精、染心触女、作媒、谤、破僧、恶见不舍等。犯者须覆藏、别住、行摩那埵六夜，再由足数僧作出罪羯磨；「摩那埵」被解为折伏骄慢、下意承事众僧。这不是单纯处罚，而是以公开、持续而有见证的方式重建可信度。 二不定则提醒比丘不得与女人在足以生疑的屏处独坐；判处要听可信优婆夷的见闻，并依实情决定。其精神是既重防护、也重证据，不以臆测定罪。 接下来的尼萨耆、波逸提、提舍尼、众学等，覆盖衣物财物、饮食时节、住处、说话、威仪、与在家众往来等日常事项。看似细密，实则围绕几个常见失衡：利养积聚、对饮食的贪着、性别与权力界限、对居士家庭的侵扰、身口粗疏，以及以「修行人」身份索取便利。 「污他家」一段尤其尖锐：马师、满宿等人种花果、殷勤结交居士居士女以换取供养与眷属。律不许出家人把寺院经营成人情与利益网络；但也允为三宝、病者、父母等以「净语」处理必要事务。原则不是断绝人情，而是不以宗教身份交换私利。 ### G. 僧团程序：羯磨、诤事与迦𫄨那衣 本品不把僧",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "text": "知道anicca（不确定），你就会放下东西，不抓住它们。\" **\"已破的玻璃\"——未来观的转变** > \"佛陀的理解就是这样。他在没有破碎的玻璃中看到了破碎的玻璃。无论什么时候你使用这个玻璃，你都应该反思它已经破碎了。你理解吗？……但通常人们说，'我非常喜欢这个玻璃，但愿它永远不会破碎。'……为什么会这样？因为你用大坝堵住了自己，水无法流动。\" **\"静而流动的水\"——最后的悖论** 这是整章的高潮与题目的解释： > \"你有没有见过流动的水？你有没有见过静止的水？如果你的心是平静的，它就会像静止、流动的水一样。你有没有见过静止、流动的水？就在那里，就在你的思维无法带你去的地方……你的心会像流动的水一样，但它是静止的。几乎就像它是静止的，而且它在流动。所以我称之为'静止、流动的水。'智慧可以在这里出现。\" **要点提炼**：只有身心这两样东西需要被理解；错误的理解而非外部事件导致痛苦；对心的本性（如猴子一样的活跃）的接纳而非抵抗带来平静；\"不确定\"就是佛、就是法，这是最简洁的指向；\"已破的玻璃\"观念改变了我们对损失的恐惧；\"静水流动\"是修行的最高境界——既能观察（流动）又能不受动摇（静止）。 --- ### 第三十五章：走向无为（Toward the Unconditioned） **这",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap22.json",
+          "text": "m-fnref\\\" data-fn=\\\"22-052\\\">[22-052]</sup> 「这是修习至于灭的出世间之道者的正断」。</p><p>于上面的三种断中，这里，是正断的意思。然而这瑜伽者于前分的镇伏断及彼分断，是为了助此（正断）之义，故依法法，当知这三种断都是道智的作用，正如杀了敌王而取其王位的人，则他在（即位）以前的一切行为，亦都说是王的行为了。</p><p>（III）（证）虽然「证」是分为世间证及出世间证的两种，但于出世间证有见与修之别，故有三种。此中：</p><p>（一）「我是初禅的获得者及自在者，我已证得初禅」，像这样与初禅等的接触，是「世间证」。「接触」为曾证，即如「我已证此」这样以显明的智而触。关于此义，曾概举说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"22-053\\\">[22-053]</sup> 「证之慧是接触之义的智」，并曾对证的解释说：「任何已证之法为曾被接触」。然而（定、道、果等）虽未于自己的相续中生起，但彼等诸法唯由于非他缘的智而知为证。所以说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"22-054\\\">[22-054]</sup> 「诸比丘，一切当证。诸比丘，什么是一切当证？诸比丘，是当证眼等」。又说",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "有见与无有见",
@@ -160,9 +193,62 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp90-99&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E8%8B%A6%E6%83%B1%E8%80%85%E3%80%82"
             }
           ]
+        },
+        {
+          "query": "有见",
+          "hits": []
+        },
+        {
+          "query": "无有见",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "法。 **色蕴的深层分析**： > “无论过去、未来或现在，内在或外在，粗或细，劣或胜，远或近，任何色法都是色蕴；这称为色蕴。”（M III 16 简述） 色蕴的11个维度分析： 1. **三时**（过去、现在、未来） 2. **内外**（internal/external） 3. **粗细**（gross/subtle） 4. **劣胜**（inferior/superior） 5. **远近**（far/near） 6. **有见无见**（visible/invisible） 7. **有对无对**（impingent/non-impingent） 8. **有漏无漏**（subject to cankers/free from cankers） 9. **有执取无执取** 10. **染污/不染污** 11. **世间/出世间** 这种多维分析旨在从多种分类方式观察色法；“不留遗漏”是原文分类意图的概括，“彻底断除执取”需置于后续道智的完整语境，不能说成 XIV 章单独已经完成。 #### 2. 受蕴（Vedanākkhandha，Group of Feeling） 感受（feeling/sensation）是与一切心识相应的心所。原文先按善、不善、无记分为三类（XIV.125–126",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "，说明这些身相皆是菩萨往昔累世行\"百善业\"（sata-puñña）之果报。 ### 五比丘之因缘（另一版本） 据《义精要灯注》（Sārattha-dīpanī）另一说法，八位相士中五位——以憍陈如为首——因笃信太子必成佛，遂将占相所得酬金交予家人，自行出家，随时打探太子出家的消息，静候多年，最终成为佛陀成道后最先度化的\"五比丘\"（Pañca-vaggiya）。 ### 净饭王阻断四门之忧与摩耶王后逝世 婆罗门告知净饭王：\"太子唯有见到老、病、死、沙门四种征兆后，方会出家。\"净饭王遂下令严禁老者、病者、沙门出现于太子视线之内，广增侍卫，并增派舞女歌伎，冀望太子沉溺享乐而绝出家之念。 诞生后第七日，摩耶王后寿数已尽，命终转生兜率天，是为一切菩萨之母的自然定律——\"菩萨之母所曾居住之胎，犹如圣龛内室，他人不得复居或享用\"。太子由其姨母兼继母摩诃波阇波提·瞿昙弥（Mahā Pajāpati Gotamī）抚养长大。 --- ## 第二章（新编号）：菩萨之青年时代 ### 初禅之证得 太子七岁那年，净饭王主持一年一度的\"耕田大典\"，将太子安置于阎浮树荫下后自行前去主持仪式，随侍侍从趁隙离去观礼。太子独坐树下，修习入出息念，证得色界初禅。其他树影皆随日影移动，唯独太子所坐之阎浮树荫始终维持正圆、不",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        },
+        {
+          "source": "docs/research/pali-source-texts/vinaya/samantapasadika.md",
+          "heading": "站内搜索命中",
+          "text": "的信任；其严重不在一句话，而在以虚假换取敬信、利养或地位。 书中有大量极端边例，应把握其方法而非猎奇逐项背诵：戒学要防的是欲、贪、害与欺诳如何藉身口业落地成事。 ### F. 僧残、二不定与日常戒：由「犯」走回「可共住」 十三僧残处理较重而仍可修复的行为，如故意出精、染心触女、作媒、谤、破僧、恶见不舍等。犯者须覆藏、别住、行摩那埵六夜，再由足数僧作出罪羯磨；「摩那埵」被解为折伏骄慢、下意承事众僧。这不是单纯处罚，而是以公开、持续而有见证的方式重建可信度。 二不定则提醒比丘不得与女人在足以生疑的屏处独坐；判处要听可信优婆夷的见闻，并依实情决定。其精神是既重防护、也重证据，不以臆测定罪。 接下来的尼萨耆、波逸提、提舍尼、众学等，覆盖衣物财物、饮食时节、住处、说话、威仪、与在家众往来等日常事项。看似细密，实则围绕几个常见失衡：利养积聚、对饮食的贪着、性别与权力界限、对居士家庭的侵扰、身口粗疏，以及以「修行人」身份索取便利。 「污他家」一段尤其尖锐：马师、满宿等人种花果、殷勤结交居士居士女以换取供养与眷属。律不许出家人把寺院经营成人情与利益网络；但也允为三宝、病者、父母等以「净语」处理必要事务。原则不是断绝人情，而是不以宗教身份交换私利。 ### G. 僧团程序：羯磨、诤事与迦𫄨那衣 本品不把僧",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        },
+        {
+          "source": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
+          "heading": "站内搜索命中",
+          "text": "知道anicca（不确定），你就会放下东西，不抓住它们。\" **\"已破的玻璃\"——未来观的转变** > \"佛陀的理解就是这样。他在没有破碎的玻璃中看到了破碎的玻璃。无论什么时候你使用这个玻璃，你都应该反思它已经破碎了。你理解吗？……但通常人们说，'我非常喜欢这个玻璃，但愿它永远不会破碎。'……为什么会这样？因为你用大坝堵住了自己，水无法流动。\" **\"静而流动的水\"——最后的悖论** 这是整章的高潮与题目的解释： > \"你有没有见过流动的水？你有没有见过静止的水？如果你的心是平静的，它就会像静止、流动的水一样。你有没有见过静止、流动的水？就在那里，就在你的思维无法带你去的地方……你的心会像流动的水一样，但它是静止的。几乎就像它是静止的，而且它在流动。所以我称之为'静止、流动的水。'智慧可以在这里出现。\" **要点提炼**：只有身心这两样东西需要被理解；错误的理解而非外部事件导致痛苦；对心的本性（如猴子一样的活跃）的接纳而非抵抗带来平静；\"不确定\"就是佛、就是法，这是最简洁的指向；\"已破的玻璃\"观念改变了我们对损失的恐惧；\"静水流动\"是修行的最高境界——既能观察（流动）又能不受动摇（静止）。 --- ### 第三十五章：走向无为（Toward the Unconditioned） **这",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap22.json",
+          "heading": "站内搜索命中",
+          "text": "m-fnref\\\" data-fn=\\\"22-052\\\">[22-052]</sup> 「这是修习至于灭的出世间之道者的正断」。</p><p>于上面的三种断中，这里，是正断的意思。然而这瑜伽者于前分的镇伏断及彼分断，是为了助此（正断）之义，故依法法，当知这三种断都是道智的作用，正如杀了敌王而取其王位的人，则他在（即位）以前的一切行为，亦都说是王的行为了。</p><p>（III）（证）虽然「证」是分为世间证及出世间证的两种，但于出世间证有见与修之别，故有三种。此中：</p><p>（一）「我是初禅的获得者及自在者，我已证得初禅」，像这样与初禅等的接触，是「世间证」。「接触」为曾证，即如「我已证此」这样以显明的智而触。关于此义，曾概举说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"22-053\\\">[22-053]</sup> 「证之慧是接触之义的智」，并曾对证的解释说：「任何已证之法为曾被接触」。然而（定、道、果等）虽未于自己的相续中生起，但彼等诸法唯由于非他缘的智而知为证。所以说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"22-054\\\">[22-054]</sup> 「诸比丘，一切当证。诸比丘，什么是一切当证？诸比丘，是当证眼等」。又说",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "（色）」。（五）眼等五种而取色等之缘，犹如镜面一样的明净故为「净色」；其他的与此相反，故为「非净色」。 <span class=\\\"vism-page\\\">[451]</span>（六）五净色及女根（男根、命根）等三种共以增上之义而为「根」；余者相反故为「非根」。（七）在后面要说的业生色，由业所执受故为「有执受「，余者相反故为「非执受」。</p><p>（三法）更于一切色，依有目及业生等的三法为三种。此中，（一）（十三种）粗色中的色，为「有见有对」，余者为「无见有对」；一切细色则为「无见无对」。如是先依有见等的三法为三种。（二）次依业生等的三法为三种，即从业而生的色为「业生」；从别的缘生的色为「非业业」；不从全何而生的为「非业生非非业生」。（三）从心而生的为「心生」；从别的缘生的为「非心生」；不从任何而生的为「非心生非非心生」。（四）从食而生的为「食生」；从别的缘生的为「非食生」；不全何而生的为「非食生非非食生」。（五）从时节而生的为「时生」；从别的缘生的为「非时生」；不从任何而生的为「非时生非非时生」。如是依业生等三法为三种。</p><p>（四法）更就（色的）见等，色色等，依处等的四法为四种。此中：（一）色处是所见之境，故为可「见」的；声处是所闻之境，故为「闻」的；香、味、触处是要等接触之后而取的根的境",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%9C%89%E8%A6%8B&scope=site",
+          "query": "有见"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：有见与无有见\n\n## 直接回答\n有见与无有见是两种见，见于多部经典 [1][3][4][5]。二者相互对立：执著有见者是无有见的反对者，执著无有见者是有见的反对者 [2][6]。\n\n## 要点展开\n### 二种见的定义\n- 有见与无有见被明确列为二种见 [3][4]。\n- 长部《DN33》和相应部《SN22.80》均提及此二见 [1][4][5]。\n\n### 对立关系\n- 执著有见者反对无有见 [6]。\n- 执著无有见者反对有见 [2]。\n\n## 分歧与张力\n不同经典对二见的表述一致，未见明显分歧。\n\n## 证据覆盖情况\n现有证据覆盖了有见与无有见的存在及其对立关系，但未涉及二见的具体定义、内涵或佛教对它们的评判。\n\n## 引用\n- [1] Early Buddhist · DN33 · 有见与无有见 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B\n  > 有见与无有见。\n- [2] Early Buddhist · 经藏/中部_mn · mn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%E3%80%82\n  > 凡任何执著无有见、陷入无有见、固执无有见的沙门婆罗门，他们是有见的反对者。\n- [3] Early Buddhist · 经藏/中部_mn · mn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82\n  > 有这二种见：有见与无有见。\n- [4] Early Buddhist · 经藏/相应部_sn · sn22.80 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.80&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E4%BA%8C%E7%A8%AE%E8%A6%8B%EF%BC%9A%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82\n  > 有二种见：有见与无有见。\n- [5] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B%E3%80%82\n  > 有见与无有见。\n- [6] Early Buddhist · 经藏/中部_mn · mn11 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn11&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E5%9F%B7%E8%91%97%E6%9C%89%E8%A6%8B%E3%80%81%E9%99%B7%E5%85%A5%E6%9C%89%E8%A6%8B%E3%80%81%E5%9B%BA%E5%9F%B7%E6%9C%89%E8%A6%8B%E7%9A%84%E6%B2%99%E9%96%80%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E4%BB%96%E5%80%91%E6%98%AF%E7%84%A1%E6%9C%89%E8%A6%8B%E7%9A%84%E5%8F%8D%E5%B0%8D%E8%80%85%EF%BC%9B\n  > 凡任何执著有见、陷入有见、固执有见的沙门婆罗门，他们是无有见的反对者；\n- [7] Early Buddhist · 经藏/小部_kn · dhp221-234 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp221-234&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%84%A1%E6%9C%89%E6%82%B2%E6%86%82%E8%99%95%E3%80%82\n  > 无有悲忧处。\n- [8] Early Buddhist · 经藏/小部_kn · dhp60-75 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp60-75&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E6%88%91%E4%B8%94%E7%84%A1%E6%9C%89%E6%88%91%EF%BC%8C\n  > 我且无有我，",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -173,12 +259,21 @@
       "order": 3,
       "label": "有见与无有见",
       "members": "有见与无有见",
+      "match_members": "有见与无有见",
       "member_items": [
-        "有见与无有见"
+        "有见",
+        "无有见"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "有见与无有见。"
+      ],
       "source_text": "有见与无有见。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%A6%8B%E8%88%87%E7%84%A1%E6%9C%89%E8%A6%8B",
+      "expanded_points": [
+        "有见：指执著于存在或实有的见解。",
+        "无有见：指执著于不存在或虚无的见解。"
+      ]
     }
   ]
 }

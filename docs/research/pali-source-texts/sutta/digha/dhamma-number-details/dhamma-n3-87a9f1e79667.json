@@ -22,13 +22,13 @@
       "变易苦性"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三种苦性」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：苦苦性、行苦性、变易苦性。[1]\n\n## 所含各法\n### 苦苦性\n经文将「苦苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《苦性经》命中：苦苦性、行苦性、变易苦性，比丘们！。[3]\n### 行苦性\n经文将「行苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《苦性经》命中：苦苦性、行苦性、变易苦性，比丘们！。[3]\n### 变易苦性\n经文将「变易苦性」列为「三种苦性」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种苦性：苦苦性、行苦性、变易苦性。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 27 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三种苦性指苦苦性、行苦性、变易苦性[1][3][4][5]。《DN33》将“三种苦性”列为一项法数[1][4]，《SN45.165》《SN38.14》等经也以同样三项宣说[2][5]。另有经说，为这三种苦性的证智、遍知、灭尽、舍断，应修习八支圣道[8]。\n\n## 要点展开\n### 三种苦性的名称与出处\n- 三种苦性即苦苦性、行苦性、变易苦性[1][3][4][5]。\n- 《DN33》以“三种苦性”为条目列出这三项[1][4]。\n- 《SN45.165》题为“苦性经”，以“有这三种苦性，哪三个呢”引出这三项[6][7]，并称“这些是三种苦性”[2]。\n- 《SN38.14》以“有这三种苦性……道友！”的方式宣说[5]。\n\n### 与八支圣道的关联\n- 《SN45.165》说：为了这三种苦性的证智、遍知、灭尽、舍断，应修习八支圣道[8]。\n\n### 相关摄颂\n- 《SN46.111-120》与《SN46.165-174》的摄颂中都出现“有与苦性三则”[11][12]，但证据未展开其具体所指。\n\n## 证据覆盖情况\n现有证据覆盖了三种苦性的名称、数量及其在多部经中的列举，也覆盖了与八支圣道修习的关联；未覆盖三种苦性各自的定义与成立道理，“苦性三则”是否即指这三项也未在证据中说明。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三种苦性",
           "text": "三种苦性：苦苦性、行苦性、变易苦性。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -97,7 +97,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.165-174&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三种苦性",
@@ -390,7 +390,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三种苦性\n\n## 直接回答\n三种苦性指苦苦性、行苦性、变易苦性[1][3][4][5]。《DN33》将“三种苦性”列为一项法数[1][4]，《SN45.165》《SN38.14》等经也以同样三项宣说[2][5]。另有经说，为这三种苦性的证智、遍知、灭尽、舍断，应修习八支圣道[8]。\n\n## 要点展开\n### 三种苦性的名称与出处\n- 三种苦性即苦苦性、行苦性、变易苦性[1][3][4][5]。\n- 《DN33》以“三种苦性”为条目列出这三项[1][4]。\n- 《SN45.165》题为“苦性经”，以“有这三种苦性，哪三个呢”引出这三项[6][7]，并称“这些是三种苦性”[2]。\n- 《SN38.14》以“有这三种苦性……道友！”的方式宣说[5]。\n\n### 与八支圣道的关联\n- 《SN45.165》说：为了这三种苦性的证智、遍知、灭尽、舍断，应修习八支圣道[8]。\n\n### 相关摄颂\n- 《SN46.111-120》与《SN46.165-174》的摄颂中都出现“有与苦性三则”[11][12]，但证据未展开其具体所指。\n\n## 证据覆盖情况\n现有证据覆盖了三种苦性的名称、数量及其在多部经中的列举，也覆盖了与八支圣道修习的关联；未覆盖三种苦性各自的定义与成立道理，“苦性三则”是否即指这三项也未在证据中说明。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三种苦性 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82\n  > 三种苦性：苦苦性、行苦性、变易苦性。\n- [2] Early Buddhist · 经藏/相应部_sn · sn45.165 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E3%80%82\n  > 这些是三种苦性。\n- [3] Early Buddhist · 经藏/相应部_sn · sn45.165 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 苦苦性、行苦性、变易苦性，比丘们！\n- [4] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82\n  > 三种苦性：苦苦性、行苦性、变易苦性。\n- [5] Early Buddhist · 经藏/相应部_sn · sn38.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn38.14&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%9A%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%EF%BC%8C%E9%81%93%E5%8F%8B%EF%BC%81\n  > 有这三种苦性：苦苦性、行苦性、变易苦性，道友！\n- [6] Early Buddhist · 经藏/相应部_sn · sn45.165 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F\n  > 有这三种苦性，哪三个呢？\n- [7] Early Buddhist · 经藏/相应部_sn · sn45.165 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E6%80%A7%E7%B6%93\n  > 苦性经\n- [8] Early Buddhist · 经藏/相应部_sn · sn45.165 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.165&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%82%BA%E4%BA%86%E9%80%99%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7%E7%9A%84%E8%AD%89%E6%99%BA%E3%80%81%E9%81%8D%E7%9F%A5%E3%80%81%E6%BB%85%E7%9B%A1%E3%80%81%E6%8D%A8%E6%96%B7%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E9%80%99%E5%85%AB%E6%94%AF%E8%81%96%E9%81%93%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E3%80%82\n  > 为了这三种苦性的证智、遍知、灭尽、舍断，……（中略）这八支圣道应该被修习。\n- [9] Early Buddhist · 经藏/增支部_an · an9.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81\n  > 我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！\n- [10] Early Buddhist · 经藏/增支部_an · an8.2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an8.2&lang=zh&q=%E8%8B%A6%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8F%E6%AD%A4%E6%B3%95%E5%B0%8E%E5%90%91%E5%8F%AF%E6%84%9B%E6%80%A7%E3%80%81%E5%B0%8A%E9%87%8D%E6%80%A7%E3%80%81%E4%BF%AE%E7%BF%92%E6%80%A7%E3%80%81%E5%B9%B3%E7%AD%89%E6%80%A7%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E3%80%82\n  > 』此法导向可爱性、尊重性、修习性、平等性、一致性。\n- [11] Early Buddhist · 经藏/相应部_sn · sn46.111-120 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn46.111-120&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C\n  > 「寻求、慢、烦恼，有与苦性三则，\n- [12] Early Buddhist · 经藏/相应部_sn · sn46.165-174 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn46.165-174&lang=zh&q=%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%B0%8B%E6%B1%82%E3%80%81%E6%85%A2%E3%80%81%E7%85%A9%E6%83%B1%EF%BC%8C%E6%9C%89%E8%88%87%E8%8B%A6%E6%80%A7%E4%B8%89%E5%89%87%EF%BC%8C\n  > 「寻求、慢、烦恼，有与苦性三则，",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -400,15 +402,24 @@
       "number": 3,
       "order": 27,
       "label": "三种苦性",
-      "members": "苦苦性、行苦性、变易苦性",
+      "members": "苦苦性、行苦性、变易苦性。",
+      "match_members": "苦苦性、行苦性、变易苦性",
       "member_items": [
         "苦苦性",
         "行苦性",
         "变易苦性"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三种苦性：苦苦性、行苦性、变易苦性。"
+      ],
       "source_text": "三种苦性：苦苦性、行苦性、变易苦性。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E8%8B%A6%E6%80%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%8B%A6%E8%8B%A6%E6%80%A7%E3%80%81%E8%A1%8C%E8%8B%A6%E6%80%A7%E3%80%81%E8%AE%8A%E6%98%93%E8%8B%A6%E6%80%A7%E3%80%82",
+      "expanded_points": [
+        "苦苦性：在《DN33》“三种苦性”条目中居首，与行苦性、变易苦性并列为三种苦性。",
+        "行苦性：在《DN33》“三种苦性”条目中位列第二，与苦苦性、变易苦性并列为三种苦性。",
+        "变易苦性：在《DN33》“三种苦性”条目中位列第三，与苦苦性、行苦性并列为三种苦性。"
+      ]
     }
   ]
 }

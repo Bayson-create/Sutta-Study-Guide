@@ -26,13 +26,13 @@
       "识蕴"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「五蕴」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：色蕴、受蕴、想蕴、行蕴、识蕴。[1]\n\n## 所含各法\n### 色蕴\n经文将「色蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有色蕴之说？。[3]\n### 受蕴\n经文将「受蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有受蕴之说？。[4]\n### 想蕴\n经文将「想蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有想蕴之说？。[5]\n### 行蕴\n经文将「行蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有行蕴之说？。[6]\n### 识蕴\n经文将「识蕴」列为「五蕴」的一个成员。Early Buddhist 用该名词检索时，在《满月大经》命中：什么因、什么缘而有识蕴之说？。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 46 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n五蕴包括色蕴、受蕴、想蕴、行蕴和识蕴 [1]。这些蕴被称为五蕴 [8]。\n\n## 要点展开\n### 五蕴的构成\n- 五蕴由色、受、想、行、识五种蕴组成 [1]。\n- 这些蕴被统称为五蕴 [8]。\n\n### 五蕴的因缘\n- 经文探讨了色蕴、受蕴、想蕴、行蕴、识蕴各自生起的因缘 [3][4][5][6][7]。\n\n## 证据覆盖情况\n现有证据明确了五蕴的构成，并提及了五蕴各自的因缘问题，但未具体说明因缘的内容。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 五蕴",
           "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -105,9 +105,39 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn33",
           "text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E8%98%8A%EF%BC%9A%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-quran.md",
+          "text": "比较： #### **第一组：一神论 vs 无我论** **古兰经核心卷章**：《纯正章/忠诚章》(112)、《曙光章》(113)、《众人章》(114)等 ``` 《纯正章》(Surat Al-Ikhlas, 112:1-4)： \"你说：'他是真主，是唯一的， 真主是万物所仰赖的。 他未曾生育，也未曾被生育， 且没有任何物与他相等。'\" ``` **上座部佛法的对应**：《清净道论》的\"无我观\"（anatta） - 佛教强调：五蕴（色、受、想、行、识）中**无有常恒主宰的\"我\"** - 每一瞬间的心识都在生灭变化，没有永恒的灵魂（atman） - 执着于\"我\"与\"我的\"就是烦恼的根源 **比较点**： |比较点|古兰经|上座部佛法| |---|---|---| |一元性的对象|真主（唯一的创造者）|心识的本性（无我）+ 自然因果律| |该一元性的特征|超越、绝对、无与伦比|空性（非实体化）、无常、不可控| |对人的意义|绝对依赖与臣服|绝对的个人责任与自救| |伦理后果|所有人在真主面前平等（5:18强调）|每人因业力结果各不相同| **评析**： - 古兰经的\"一神论\"是**外向的绝对性**（真主是绝对的客体） - 佛教的\"无我论\"是**内向的相对性**（心是无常、无主的主体） -",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/theravada-mahayana-history.md",
+          "text": "anikāya)、《增支部》(Aṅguttaranikāya)、《小部》(Khuddakanikāya)。 1.《长部》(Dīghanikāya)。因为收录的经文篇幅比较长，所以称为《长部》。共收录 34 篇经文。 2.《中部》(Majjhimanikāya)。因为收录的经文篇幅不长不短，中等的，所以称为《中部》。共收录 152 篇经。 3.《相应部》(Saṃyuttanikāya)；相应的意思是按内容分门别类，比如把佛陀所说的“五蕴”编在一起， “六处”编在一起，“界”编在一起，“四圣谛”编在一起、“缘起”编在一起，称为《相应部》。一共有 56 相应，7762篇经文。 4.《增支部》(Aṅguttaranikāya)。增(uttara)，是增加、更上的意思。aṅga 是部分、支。增支的编辑方法是按法数把佛陀所讲的与数目有关的经文编集在一起。比如 “二法”有止、观，名、色等。“三法”有三受、三界等。由“一法”编到“十一法”，因此《增支部》有十一集，共收录9557 篇经文。 5.《小部》(Khuddakanikāya)。这里的“小”并非篇幅小，亦非微不足道，而是内容庞杂，把前面四部以外的所有经典都收编在内。例如属于诗歌集体裁的《法句》《长老偈》《长老尼偈》等，都收编在《小部》。《小部》在《经藏》",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "，正见的巨大光明王国还是会持续安立。\" **《清净道论》中的正见** 正见是见清净（diṭṭhi-visuddhi）的核心成就。以相（lakkhana）、味（rasa）、现起（paccupaṭṭhāna）、足处（padaṭṭhāna）而正确理解名色，名为见清净，即正见成就的标志。 **正见与无见的对比** 无正见（邪见，micchā-diṭṭhi）是随眠层面最根本的缠缚之一。身见（sakkāya-diṭṭhi）是最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/contemporary-views-comparison.md",
+          "text": "线不是“听起来很圆融”，而是不能破坏无我、缘起、业果、四圣谛、戒定慧次第。凡把某个概念说成实有常住的灵魂、本体、万能原因、自动解脱机制，都是危险的；若明确只是方便安立、指向空性与修行转化，则可相容。** #### 原典判准补强 仅说“不执为永恒实体”并不够精确。按巴利经论传统，判定邪见至少要同时看三套工具： | 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/two-religions-bible.md",
+          "text": "# 圣经 # **一、比较分析法 — 核心概念的结构差异** ## A. 苦（suffering）的本质差异 ### 上座部立场 **巴利三藏的「苦」(dukkha)**： - 不仅指痛苦，而是**一切有为现象的根本特性**（三法印之一） - 包括：明显痛苦、隐蔽的苦（快乐本身的无常性）、行苦（存在本身的不稳定） - **根源**：五蕴执着 → 十二缘起 → 无明 - **本质**：非道德问题，而是**现象论的实相** — 一切合成的东西都必然无常、不稳 ### 《圣经》的苦观 **堕落与原罪模式**： - 人的痛苦源自**道德失败**（亚当夏娃违背上帝） - 苦是**惩罚** — 上帝的审判结果 - 苦具有**道德意义**：指向人的有罪性和需要救赎 - **救赎者存在**：上帝/基督可以解除这个惩罚 |维度|上座部|一神教| |---|---|---| |苦的性质|无常即苦（现象学）|犯罪即苦（道德论）| |苦的普遍性|一切众生都受苦|因原罪，全人类都有罪| |苦的救援|自己透过观智解脱|依赖外部拯救者| |苦的消除条件|断除贪嗔痴（内在功夫）|信仰救世主（他力救赎）| **评估圣经一致",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "五蕴",
@@ -600,7 +630,52 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/two-religions-quran.md",
+          "heading": "站内搜索命中",
+          "text": "比较： #### **第一组：一神论 vs 无我论** **古兰经核心卷章**：《纯正章/忠诚章》(112)、《曙光章》(113)、《众人章》(114)等 ``` 《纯正章》(Surat Al-Ikhlas, 112:1-4)： \"你说：'他是真主，是唯一的， 真主是万物所仰赖的。 他未曾生育，也未曾被生育， 且没有任何物与他相等。'\" ``` **上座部佛法的对应**：《清净道论》的\"无我观\"（anatta） - 佛教强调：五蕴（色、受、想、行、识）中**无有常恒主宰的\"我\"** - 每一瞬间的心识都在生灭变化，没有永恒的灵魂（atman） - 执着于\"我\"与\"我的\"就是烦恼的根源 **比较点**： |比较点|古兰经|上座部佛法| |---|---|---| |一元性的对象|真主（唯一的创造者）|心识的本性（无我）+ 自然因果律| |该一元性的特征|超越、绝对、无与伦比|空性（非实体化）、无常、不可控| |对人的意义|绝对依赖与臣服|绝对的个人责任与自救| |伦理后果|所有人在真主面前平等（5:18强调）|每人因业力结果各不相同| **评析**： - 古兰经的\"一神论\"是**外向的绝对性**（真主是绝对的客体） - 佛教的\"无我论\"是**内向的相对性**（心是无常、无主的主体） -",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        },
+        {
+          "source": "docs/research/theravada-mahayana-history.md",
+          "heading": "站内搜索命中",
+          "text": "anikāya)、《增支部》(Aṅguttaranikāya)、《小部》(Khuddakanikāya)。 1.《长部》(Dīghanikāya)。因为收录的经文篇幅比较长，所以称为《长部》。共收录 34 篇经文。 2.《中部》(Majjhimanikāya)。因为收录的经文篇幅不长不短，中等的，所以称为《中部》。共收录 152 篇经。 3.《相应部》(Saṃyuttanikāya)；相应的意思是按内容分门别类，比如把佛陀所说的“五蕴”编在一起， “六处”编在一起，“界”编在一起，“四圣谛”编在一起、“缘起”编在一起，称为《相应部》。一共有 56 相应，7762篇经文。 4.《增支部》(Aṅguttaranikāya)。增(uttara)，是增加、更上的意思。aṅga 是部分、支。增支的编辑方法是按法数把佛陀所讲的与数目有关的经文编集在一起。比如 “二法”有止、观，名、色等。“三法”有三受、三界等。由“一法”编到“十一法”，因此《增支部》有十一集，共收录9557 篇经文。 5.《小部》(Khuddakanikāya)。这里的“小”并非篇幅小，亦非微不足道，而是内容庞杂，把前面四部以外的所有经典都收编在内。例如属于诗歌集体裁的《法句》《长老偈》《长老尼偈》等，都收编在《小部》。《小部》在《经藏》",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        },
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "，正见的巨大光明王国还是会持续安立。\" **《清净道论》中的正见** 正见是见清净（diṭṭhi-visuddhi）的核心成就。以相（lakkhana）、味（rasa）、现起（paccupaṭṭhāna）、足处（padaṭṭhāna）而正确理解名色，名为见清净，即正见成就的标志。 **正见与无见的对比** 无正见（邪见，micchā-diṭṭhi）是随眠层面最根本的缠缚之一。身见（sakkāya-diṭṭhi）是最基础的邪见，执五蕴和合为\"我\"，是一切道德失堕的种子。正见的获得，标志着须陀洹道的成就，永断身见、疑与戒禁取三结。 --- # 二、四圣谛（Cattāri Ariya-saccāni） **核心结构** 四圣谛是佛陀初转法轮（《转法轮经》，Dhammacakkappavattana Sutta）的核心教说，亦是整个教法的骨架。\"圣\"指如实而不虚假，\"谛\"指真实。 **一、苦谛（Dukkha-sacca）** 苦的广义：一切五取蕴（pañcupādānakkhandha）皆苦。苦有三种：苦苦（dukkha-dukkha，身心直接的痛苦）、坏苦（vipariṇāma-dukkha，乐受变坏之苦）、行苦（saṅkhāra-dukkha，一切有为法因无常而具有的内在不圆满性）。《阿",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        },
+        {
+          "source": "docs/research/contemporary-views-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "线不是“听起来很圆融”，而是不能破坏无我、缘起、业果、四圣谛、戒定慧次第。凡把某个概念说成实有常住的灵魂、本体、万能原因、自动解脱机制，都是危险的；若明确只是方便安立、指向空性与修行转化，则可相容。** #### 原典判准补强 仅说“不执为永恒实体”并不够精确。按巴利经论传统，判定邪见至少要同时看三套工具： | 判准 | 含义 | 用在本文中的判断方式 | |---|---|---| | 身见 sakkaya-ditthi | 于五蕴执“这是我、我所、我在其中、它在我中” | 凡主张五蕴外或五蕴中有真实人格主体、灵魂、真我、常住觉性者，先按身见审查 | | 常见/断见 | 常见执我或世界永久实有；断见执死后全灭、业果无效 | 如来藏、佛性、心性、法界若实体化，偏常见；空性若被说成什么都没有，偏断见 | | 三结 | 初果所断的身见、疑、戒禁取 | 把仪式、修法、组织身份、上师关系、念佛数量等执为自动解脱机制，优先按戒禁取判断 | 《清净道论》的判准可概括为：第十四章以五蕴分析建立无我基础；第十六章说明“有苦而无受苦者，有业而无作者，有涅槃而无入涅槃者，有道而无行道者”；第十八章“见清净”以如实知见名色破身见；第十九章“度疑清净”以把握名色之缘破三世疑。这里最关键的界线是：**上座部可以说涅槃为无",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        },
+        {
+          "source": "docs/research/two-religions-bible.md",
+          "heading": "站内搜索命中",
+          "text": "# 圣经 # **一、比较分析法 — 核心概念的结构差异** ## A. 苦（suffering）的本质差异 ### 上座部立场 **巴利三藏的「苦」(dukkha)**： - 不仅指痛苦，而是**一切有为现象的根本特性**（三法印之一） - 包括：明显痛苦、隐蔽的苦（快乐本身的无常性）、行苦（存在本身的不稳定） - **根源**：五蕴执着 → 十二缘起 → 无明 - **本质**：非道德问题，而是**现象论的实相** — 一切合成的东西都必然无常、不稳 ### 《圣经》的苦观 **堕落与原罪模式**： - 人的痛苦源自**道德失败**（亚当夏娃违背上帝） - 苦是**惩罚** — 上帝的审判结果 - 苦具有**道德意义**：指向人的有罪性和需要救赎 - **救赎者存在**：上帝/基督可以解除这个惩罚 |维度|上座部|一神教| |---|---|---| |苦的性质|无常即苦（现象学）|犯罪即苦（道德论）| |苦的普遍性|一切众生都受苦|因原罪，全人类都有罪| |苦的救援|自己透过观智解脱|依赖外部拯救者| |苦的消除条件|断除贪嗔痴（内在功夫）|信仰救世主（他力救赎）| **评估圣经一致",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        },
+        {
+          "source": "docs/research/two-religions-comparison.md",
+          "heading": "站内搜索命中",
+          "text": "有意义，因为可以修行与证悟 - 终极的满足：苦的永灭（涅槃） #### **问题2：什么是最高的善？** |传统|最高的善|路径|终极体验| |---|---|---|---| |**古兰经**|对真主的绝对服从（Tawhid的实践）|遵守律法、虔诚礼拜、信仰|与真主同在的天堂| |**圣经**|爱（对上帝的爱 + 对邻人的爱）|信仰基督、改变心意、追随|与上帝的永恒关系| |**佛法**|解脱（灭苦成涅槃）|修行八正道、培育观智|五蕴灭尽、无我实现| #### **问题3：什么是我的最终命运？** **古兰经**： - 永恒的二元划分：天堂或地狱 - 根据在世的信仰与行为受审判 - 个体人格永恒存在（进天堂或入地狱） - 真主的最终决定是绝对的 **圣经**： - 永恒的二元划分：与上帝同在或分离（地狱） - 根据信仰基督与否 - 个体人格在天国永恒存在（身体复活） - 上帝的恩典决定谁能得救 **佛法**： - 非二元的：轮回继续或涅槃寂灭 - 根据业力与修行的成熟程度 - 没有永恒的个体人格（涅槃时五蕴俱灭） - 完全个人的因果责任 #### **问题4：终极现实是什么？** |传统|终极现实|特性|与人的关系| |---|---|---|---| |**古兰经**|真主（A",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E8%98%8A&scope=site",
+          "query": "五蕴"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：五蕴\n\n## 直接回答\n五蕴包括色蕴、受蕴、想蕴、行蕴和识蕴 [1]。这些蕴被称为五蕴 [8]。\n\n## 要点展开\n### 五蕴的构成\n- 五蕴由色、受、想、行、识五种蕴组成 [1]。\n- 这些蕴被统称为五蕴 [8]。\n\n### 五蕴的因缘\n- 经文探讨了色蕴、受蕴、想蕴、行蕴、识蕴各自生起的因缘 [3][4][5][6][7]。\n\n## 证据覆盖情况\n现有证据明确了五蕴的构成，并提及了五蕴各自的因缘问题，但未具体说明因缘的内容。\n\n## 引用\n- [1] Early Buddhist · DN33 · 五蕴 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82\n  > 五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。\n- [2] Early Buddhist · 经藏/相应部_sn · sn22.48 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BA%94%E8%98%8A%EF%BC%9F\n  > 什么是五蕴？\n- [3] Early Buddhist · 经藏/中部_mn · mn109 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%89%B2%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%89%B2%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F\n  > 什么因、什么缘而有色蕴之说？\n- [4] Early Buddhist · 经藏/中部_mn · mn109 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E5%8F%97%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E5%8F%97%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F\n  > 什么因、什么缘而有受蕴之说？\n- [5] Early Buddhist · 经藏/中部_mn · mn109 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E6%83%B3%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E6%83%B3%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F\n  > 什么因、什么缘而有想蕴之说？\n- [6] Early Buddhist · 经藏/中部_mn · mn109 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%A1%8C%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%A1%8C%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F\n  > 什么因、什么缘而有行蕴之说？\n- [7] Early Buddhist · 经藏/中部_mn · mn109 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn109&lang=zh&q=%E8%AD%98%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E5%9B%A0%E3%80%81%E4%BB%80%E9%BA%BC%E7%B7%A3%E8%80%8C%E6%9C%89%E8%AD%98%E8%98%8A%E4%B9%8B%E8%AA%AA%EF%BC%9F\n  > 什么因、什么缘而有识蕴之说？\n- [8] Early Buddhist · 经藏/相应部_sn · sn22.48 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.48&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BA%94%E8%98%8A%E3%80%82\n  > 这些被称为五蕴。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -610,7 +685,8 @@
       "number": 5,
       "order": 1,
       "label": "五蕴",
-      "members": "色蕴、受蕴、想蕴、行蕴、识蕴",
+      "members": "色蕴、受蕴、想蕴、行蕴、识蕴。",
+      "match_members": "色蕴、受蕴、想蕴、行蕴、识蕴",
       "member_items": [
         "色蕴",
         "受蕴",
@@ -619,8 +695,18 @@
         "识蕴"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。"
+      ],
       "source_text": "五蕴：色蕴、受蕴、想蕴、行蕴、识蕴。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%89%B2%E8%98%8A%E3%80%81%E5%8F%97%E8%98%8A%E3%80%81%E6%83%B3%E8%98%8A%E3%80%81%E8%A1%8C%E8%98%8A%E3%80%81%E8%AD%98%E8%98%8A%E3%80%82",
+      "expanded_points": [
+        "色蕴：五蕴之一，指色法。",
+        "受蕴：五蕴之一，指感受。",
+        "想蕴：五蕴之一，指想、知觉。",
+        "行蕴：五蕴之一，指行、造作。",
+        "识蕴：五蕴之一，指识、了别。"
+      ]
     }
   ]
 }

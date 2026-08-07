@@ -26,13 +26,13 @@
       "无明之轭"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四种轭」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：欲之轭、有之轭、见之轭、无明之轭。[1]\n- DN34：欲之轭、有之轭、见之轭、无明之轭。[2]\n\n## 所含各法\n### 欲之轭\n经文将「欲之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为欲之轭的离轭，像这样是欲之轭的离轭。。[4]\n### 有之轭\n经文将「有之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为有之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭。。[5]\n### 见之轭\n经文将「见之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：这被称为见之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭。。[6]\n### 无明之轭\n经文将「无明之轭」列为「四种轭」的一个成员。Early Buddhist 用该名词检索时，在《轭经》命中：如何是无明之轭的离轭呢？。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四种轭是欲之轭、有之轭、见之轭、无明之轭 [1][2]。在DN34中，它们被明确列为退分的四法 [2]。此外，AN4.10和SN45.173也提及四种轭 [3][8]，并详细说明了各轭的离轭方式 [4][5][6][7]。\n\n## 要点展开\n### 四种轭的构成\n- 四种轭包括：欲之轭、有之轭、见之轭、无明之轭 [1][2]。\n- 在DN33中，四种轭被直接列出 [1]。\n\n### 退分的四法\n- DN34将四种轭明确列为退分的四法 [2]。\n\n### 离轭的详细说明\n- AN4.10详细描述了各轭的离轭：欲之轭的离轭 [4]，有之轭的离轭 [5]，见之轭的离轭 [6]，以及无明之轭的离轭 [7]。\n\n### 其他提及\n- SN45.173也提及四种轭 [8]。\n\n## 分歧与张力\n不同来源对四种轭的列举一致，但AN4.10侧重于离轭的详细过程，而DN33和DN34仅列出名称或分类，未涉及离轭细节。这体现了侧重差异，但无根本冲突。\n\n## 证据覆盖情况\n现有证据覆盖了四种轭的名称、分类（退分的四法）以及离轭的详细说明，但未涉及四种轭的具体定义或修行意义。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四种轭",
           "text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82"
         },
         {
           "kind": "source",
@@ -105,9 +105,15 @@
           "label": "Early Buddhist · 经藏/增支部_an · an4.10",
           "text": "这是四种离轭。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E9%9B%A2%E8%BB%9B%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "āya, evaṃ hi so, bhikkhave, mahā migasaṅgho aparena samayena anayabyasanaṃ āpajjeyya ti vuttaṃ.\", \"chinese_translation\": \"19. 为了显示具足之德，世尊开始了这个开示。其中，“在林中”是指荒野；“在丛林”是指树林丛生之处。从意义上说，这两个词是同一个意思；但第二个词是第一个词的同义词。“不求安稳”是指不希望从四种轭中获得安稳、无怖畏之处，而只希望怖畏。“带来吉祥”是指带来幸福。“令人喜悦”是指令人满意；也有读作“pītagamanīyo”。“应覆盖”是指用树枝等遮蔽。“应敞开”是指使口部开阔而敞开。“歧路”是指被水、林、山等阻隔的非道路。“应放置陷阱”是指像那些在隐蔽处活动的动物一样，把这种岛鹿放在一个地方。“陷阱中的母鹿”是指被长绳系住的那只母鹿。19. [11728] 猎人前往林中鹿群的居住之处，观察后知道：“它们住在这里，从这条路出来，在这里活动，在这里饮水，从这里进入。”于是堵住道路，敞开歧路，设置陷阱和陷阱中的母鹿，自己则拿着矛隐藏在隐蔽处站着。傍晚时分，鹿群在无恐惧的林中活动、饮水，与幼鹿嬉戏后，来到居住之处附近，看到陷阱和陷阱中的母鹿，心想：“我们的同伴来了。”",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四种轭",
@@ -535,7 +541,17 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "āya, evaṃ hi so, bhikkhave, mahā migasaṅgho aparena samayena anayabyasanaṃ āpajjeyya ti vuttaṃ.\", \"chinese_translation\": \"19. 为了显示具足之德，世尊开始了这个开示。其中，“在林中”是指荒野；“在丛林”是指树林丛生之处。从意义上说，这两个词是同一个意思；但第二个词是第一个词的同义词。“不求安稳”是指不希望从四种轭中获得安稳、无怖畏之处，而只希望怖畏。“带来吉祥”是指带来幸福。“令人喜悦”是指令人满意；也有读作“pītagamanīyo”。“应覆盖”是指用树枝等遮蔽。“应敞开”是指使口部开阔而敞开。“歧路”是指被水、林、山等阻隔的非道路。“应放置陷阱”是指像那些在隐蔽处活动的动物一样，把这种岛鹿放在一个地方。“陷阱中的母鹿”是指被长绳系住的那只母鹿。19. [11728] 猎人前往林中鹿群的居住之处，观察后知道：“它们住在这里，从这条路出来，在这里活动，在这里饮水，从这里进入。”于是堵住道路，敞开歧路，设置陷阱和陷阱中的母鹿，自己则拿着矛隐藏在隐蔽处站着。傍晚时分，鹿群在无恐惧的林中活动、饮水，与幼鹿嬉戏后，来到居住之处附近，看到陷阱和陷阱中的母鹿，心想：“我们的同伴来了。”",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&scope=site",
+          "query": "四种轭"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四种轭\n\n## 直接回答\n四种轭是欲之轭、有之轭、见之轭、无明之轭 [1][2]。在DN34中，它们被明确列为退分的四法 [2]。此外，AN4.10和SN45.173也提及四种轭 [3][8]，并详细说明了各轭的离轭方式 [4][5][6][7]。\n\n## 要点展开\n### 四种轭的构成\n- 四种轭包括：欲之轭、有之轭、见之轭、无明之轭 [1][2]。\n- 在DN33中，四种轭被直接列出 [1]。\n\n### 退分的四法\n- DN34将四种轭明确列为退分的四法 [2]。\n\n### 离轭的详细说明\n- AN4.10详细描述了各轭的离轭：欲之轭的离轭 [4]，有之轭的离轭 [5]，见之轭的离轭 [6]，以及无明之轭的离轭 [7]。\n\n### 其他提及\n- SN45.173也提及四种轭 [8]。\n\n## 分歧与张力\n不同来源对四种轭的列举一致，但AN4.10侧重于离轭的详细过程，而DN33和DN34仅列出名称或分类，未涉及离轭细节。这体现了侧重差异，但无根本冲突。\n\n## 证据覆盖情况\n现有证据覆盖了四种轭的名称、分类（退分的四法）以及离轭的详细说明，但未涉及四种轭的具体定义或修行意义。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四种轭 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82\n  > 四种轭：欲之轭、有之轭、见之轭、无明之轭。\n- [2] Early Buddhist · DN34 · 四种轭 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B\n  > （五）哪些是退分的四法呢？四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。\n- [3] Early Buddhist · 经藏/增支部_an · an4.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82\n  > 这是四种轭。\n- [4] Early Buddhist · 经藏/增支部_an · an4.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%AC%B2%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82\n  > 这被称为欲之轭的离轭，像这样是欲之轭的离轭。\n- [5] Early Buddhist · 经藏/增支部_an · an4.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E6%9C%89%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82\n  > 这被称为有之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭。\n- [6] Early Buddhist · 经藏/增支部_an · an4.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E8%A6%8B%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%EF%BC%8C%E5%83%8F%E9%80%99%E6%A8%A3%E6%98%AF%E6%AC%B2%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E3%80%82\n  > 这被称为见之轭的离轭，像这样是欲之轭的离轭、有之轭的离轭、见之轭的离轭。\n- [7] Early Buddhist · 经藏/增支部_an · an4.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.10&lang=zh&q=%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%A6%82%E4%BD%95%E6%98%AF%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E7%9A%84%E9%9B%A2%E8%BB%9B%E5%91%A2%EF%BC%9F\n  > 如何是无明之轭的离轭呢？\n- [8] Early Buddhist · 经藏/相应部_sn · sn45.173 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.173&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E8%BB%9B%E3%80%82\n  > 这是四种轭。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -545,7 +561,8 @@
       "number": 4,
       "order": 32,
       "label": "四种轭",
-      "members": "欲之轭、有之轭、见之轭、无明之轭",
+      "members": "欲之轭、有之轭、见之轭、无明之轭。",
+      "match_members": "欲之轭、有之轭、见之轭、无明之轭",
       "member_items": [
         "欲之轭",
         "有之轭",
@@ -553,8 +570,17 @@
         "无明之轭"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四种轭：欲之轭、有之轭、见之轭、无明之轭。"
+      ],
       "source_text": "四种轭：欲之轭、有之轭、见之轭、无明之轭。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B%E3%80%82",
+      "expanded_points": [
+        "欲之轭：第一种轭，指对欲乐的执着。",
+        "有之轭：第二种轭，指对存在的执着。",
+        "见之轭：第三种轭，指对见解的执着。",
+        "无明之轭：第四种轭，指对无明的执着。"
+      ]
     },
     {
       "id": "dn34-n4-g5",
@@ -563,6 +589,7 @@
       "order": 5,
       "label": "四种轭",
       "members": "欲之轭、有之轭、见之轭、无明之轭",
+      "match_members": "欲之轭、有之轭、见之轭、无明之轭",
       "member_items": [
         "欲之轭",
         "有之轭",
@@ -570,8 +597,17 @@
         "无明之轭"
       ],
       "dn34_status": "退分法",
+      "source_paragraphs": [
+        "（五）哪些是退分的四法呢？四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。"
+      ],
       "source_text": "（五）哪些是退分的四法呢？四种轭：欲之轭、有之轭、见之轭、无明之轭，这些是退分的四法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E8%BB%9B&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%AC%B2%E4%B9%8B%E8%BB%9B%E3%80%81%E6%9C%89%E4%B9%8B%E8%BB%9B%E3%80%81%E8%A6%8B%E4%B9%8B%E8%BB%9B%E3%80%81%E7%84%A1%E6%98%8E%E4%B9%8B%E8%BB%9B",
+      "expanded_points": [
+        "欲之轭：退分的四法之一，指对欲乐的执着。",
+        "有之轭：退分的四法之一，指对存在的执着。",
+        "见之轭：退分的四法之一，指对见解的执着。",
+        "无明之轭：退分的四法之一，指对无明的执着。"
+      ]
     }
   ]
 }

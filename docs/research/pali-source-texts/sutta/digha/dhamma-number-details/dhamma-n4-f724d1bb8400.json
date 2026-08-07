@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-f724d1bb8400",
+    "number": 4,
+    "label": "四勤奋",
+    "member_items": [
+      "自制的勤奋",
+      "舍断的勤奋",
+      "修习的勤奋",
+      "随护的勤奋"
+    ],
+    "group_ids": [
+      "dn33-n4-g10"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四勤奋",
+      "自制的勤奋",
+      "舍断的勤奋",
+      "修习的勤奋",
+      "随护的勤奋"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n四勤奋包括自制的勤奋、舍断的勤奋、修习的勤奋和随护的勤奋 [1][2][4]。自制的勤奋是通过守护六根门，不执取相与细相，以防止贪忧等不善法流入 [1]；舍断的勤奋是对已生起的恶不善法不容忍、舍断、驱离、铲除，使之不存在 [1]；修习的勤奋是依止远离、离贪、灭、舍弃而修习七觉支 [1]；随护的勤奋是随护已生起的善定相，如骨想、虫食想等 [1]。\n\n## 要点展开\n### 四勤奋的列举\n- 四勤奋包括自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋 [1][2][4]。\n\n### 自制的勤奋\n- 自制勤奋指比丘在眼见色、耳闻声等六根接触外境时，不执取相与细相，保护诸根，达到自制，以防止贪忧等不善法流入 [1]。\n\n### 舍断的勤奋\n- 舍断勤奋指对已生起的欲寻、恶意寻、加害寻等恶不善法，不容忍、舍断、驱离、铲除，使之不存在 [1]。\n\n### 修习的勤奋\n- 修习勤奋指依止远离、离贪、灭、舍弃，修习念觉支、择法觉支、活力觉支、喜觉支、宁静觉支、定觉支、平静觉支 [1]。\n\n### 随护的勤奋\n- 随护勤奋指随护已生起的善定相，包括骨想、虫食想、青瘀想、断坏想、肿胀想 [1]。\n\n## 分歧与张力\n- 证据中未显示不同来源对四勤奋的实质内容有分歧，但 [7][8] 提到“四之问题、四之总说、四之解说”，可能涉及四勤奋的另一种分类或解说方式，但未提供具体内容，因此无法判断是否存在冲突。\n\n## 证据覆盖情况\n现有证据主要覆盖了四勤奋的名称和具体定义，尤其详细解释了自制的勤奋、舍断的勤奋、修习的勤奋和随护的勤奋 [1]。但证据未涉及四勤奋在修行体系中的具体位置、与其他法数的关联，以及 [7][8] 中提到的“四之问题”等具体内容。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四勤奋",
+          "text": "四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。\n\n学友们！什么是自制勤奋？学友们！这里，比丘以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；以耳听声音后，……以鼻闻气味后，……以舌尝味道后，……以身触所触后，……以意识知法后，不成为相的执取者、细相的执取者，因为当住于意根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护意根，在意根上达到自制，学友们！这被称为自制的勤奋。\n\n学友们！什么是舍断的勤奋呢？比丘们！这里，比丘已生起欲寻时，不容忍它，舍断、驱离、铲除、使之走到不存在；已生起恶意寻时……已生起加害寻时……（中略）在恶不善法生起时，不容忍它，舍断、驱离、铲除、使之走到不存在，学友们！这被称为舍断的勤奋。\n\n学友们！什么是修习的勤奋呢？比丘们！这里，比丘依止远离、依止离贪、依止灭、舍弃的圆熟修习念觉支；……修习择法觉支；……修习活力觉支；……修习喜觉支；……修习宁静觉支；……修习定觉支；依止远离、依止离贪、依止灭、舍弃的圆熟修习平静觉支，学友们！这被称为修习的勤奋。\n\n学友们！什么是随护的勤奋呢？比丘们！这里，比丘随护已生起的善之定相：骨想、虫食想、青瘀想、断坏想、肿胀想，学友们！这被称为随护的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82%0A%0A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B%E4%BB%A5%E8%80%B3%E8%81%BD%E8%81%B2%E9%9F%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E9%BC%BB%E8%81%9E%E6%B0%A3%E5%91%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%88%8C%E5%9A%90%E5%91%B3%E9%81%93%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%BA%AB%E8%A7%B8%E6%89%80%E8%A7%B8%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E6%84%8F%E8%AD%98%E7%9F%A5%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%B8%8D"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8B%A4%E5%A5%AE%EF%BC%9A%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "什么是自制勤奋？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.14",
+          "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.14",
+          "text": "这被称为修习的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.14",
+          "text": "这被称为随护的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "四之问题、四之总说、四之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "四之问题、四之总说、四之解说；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "『四之问题、四之总说、四之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "『四之问题、四之总说、四之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
+          "text": "而，『四之问题、四之总说、四之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
+          "text": "而，『四之问题、四之总说、四之解说。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.14",
+          "text": "这被称为自制的勤奋。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "四勤奋",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 21.894222412611192,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8B%A4%E5%A5%AE%EF%BC%9A%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四之问题、四之总说、四之解说；",
+              "score": 11.471849999140407,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四之问题、四之总说、四之解说；",
+              "score": 11.471849999140407,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『四之问题、四之总说、四之解说。",
+              "score": 11.219886714858873,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "『四之问题、四之总说、四之解说。",
+              "score": 11.219886714858873,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.27",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『四之问题、四之总说、四之解说。",
+              "score": 10.978753609306935,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an10.28",
+              "collection": "经藏/增支部_an",
+              "title": "大问经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "而，『四之问题、四之总说、四之解说。",
+              "score": 10.978753609306935,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%80%8C%EF%BC%8C%E3%80%8E%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 10.419832164856704,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "自制的勤奋",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自制勤奋？",
+              "score": 21.124773021959875,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自制的勤奋。",
+              "score": 20.999782101081482,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自制的勤奋。",
+              "score": 20.999782101081482,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为自制的勤奋。",
+              "score": 20.999782101081482,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 20.473286124187418,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 20.473286124187418,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自制的勤奋呢？",
+              "score": 19.93621568755949,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是自制的勤奋呢？",
+              "score": 19.93621568755949,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "舍断的勤奋",
+          "hits": [
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 17.930692087527287,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 17.930692087527287,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为舍断的勤奋。",
+              "score": 17.33138154160481,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为舍断的勤奋。",
+              "score": 17.33138154160481,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为舍断的勤奋。",
+              "score": 17.33138154160481,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是舍断的勤奋呢？",
+              "score": 16.460203172833882,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是舍断的勤奋呢？",
+              "score": 16.460203172833882,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是舍断的勤奋呢？",
+              "score": 16.460203172833882,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "修习的勤奋",
+          "hits": [
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为修习的勤奋。",
+              "score": 17.380870351571826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为修习的勤奋。",
+              "score": 17.380870351571826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为修习的勤奋。",
+              "score": 17.380870351571826,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是修习的勤奋呢？",
+              "score": 16.507096558655622,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是修习的勤奋呢？",
+              "score": 16.507096558655622,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是修习的勤奋呢？",
+              "score": 16.507096558655622,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 16.331811933812613,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 16.331811933812613,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "随护的勤奋",
+          "hits": [
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为随护的勤奋。",
+              "score": 26.24279752432387,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为随护的勤奋。",
+              "score": 26.24279752432387,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为随护的勤奋。",
+              "score": 26.24279752432387,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是随护的勤奋呢？",
+              "score": 24.904262914302322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是随护的勤奋呢？",
+              "score": 24.904262914302322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "什么是随护的勤奋呢？",
+              "score": 24.904262914302322,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.14",
+              "collection": "经藏/增支部_an",
+              "title": "自制经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 21.27110886636758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            },
+            {
+              "uid": "an4.69",
+              "collection": "经藏/增支部_an",
+              "title": "勤奋经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+              "score": 21.27110886636758,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.69&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：四勤奋\n\n## 直接回答\n四勤奋包括自制的勤奋、舍断的勤奋、修习的勤奋和随护的勤奋 [1][2][4]。自制的勤奋是通过守护六根门，不执取相与细相，以防止贪忧等不善法流入 [1]；舍断的勤奋是对已生起的恶不善法不容忍、舍断、驱离、铲除，使之不存在 [1]；修习的勤奋是依止远离、离贪、灭、舍弃而修习七觉支 [1]；随护的勤奋是随护已生起的善定相，如骨想、虫食想等 [1]。\n\n## 要点展开\n### 四勤奋的列举\n- 四勤奋包括自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋 [1][2][4]。\n\n### 自制的勤奋\n- 自制勤奋指比丘在眼见色、耳闻声等六根接触外境时，不执取相与细相，保护诸根，达到自制，以防止贪忧等不善法流入 [1]。\n\n### 舍断的勤奋\n- 舍断勤奋指对已生起的欲寻、恶意寻、加害寻等恶不善法，不容忍、舍断、驱离、铲除，使之不存在 [1]。\n\n### 修习的勤奋\n- 修习勤奋指依止远离、离贪、灭、舍弃，修习念觉支、择法觉支、活力觉支、喜觉支、宁静觉支、定觉支、平静觉支 [1]。\n\n### 随护的勤奋\n- 随护勤奋指随护已生起的善定相，包括骨想、虫食想、青瘀想、断坏想、肿胀想 [1]。\n\n## 分歧与张力\n- 证据中未显示不同来源对四勤奋的实质内容有分歧，但 [7][8] 提到“四之问题、四之总说、四之解说”，可能涉及四勤奋的另一种分类或解说方式，但未提供具体内容，因此无法判断是否存在冲突。\n\n## 证据覆盖情况\n现有证据主要覆盖了四勤奋的名称和具体定义，尤其详细解释了自制的勤奋、舍断的勤奋、修习的勤奋和随护的勤奋 [1]。但证据未涉及四勤奋在修行体系中的具体位置、与其他法数的关联，以及 [7][8] 中提到的“四之问题”等具体内容。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四勤奋 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82%0A%0A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B%E4%BB%A5%E8%80%B3%E8%81%BD%E8%81%B2%E9%9F%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E9%BC%BB%E8%81%9E%E6%B0%A3%E5%91%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%88%8C%E5%9A%90%E5%91%B3%E9%81%93%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%BA%AB%E8%A7%B8%E6%89%80%E8%A7%B8%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E6%84%8F%E8%AD%98%E7%9F%A5%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%B8%8D\n  > 四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。 学友们！什么是自制勤奋？学友们！这里，比丘以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；以耳听声音后，……以鼻闻气味后，……以舌尝味道后，……以身触所触后，……以意识知法后，不成为相的执取者、细相的执取者，因为当住于意根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护意根，在意根上达到自制，学友们！这被称为自制的勤奋。 学友们！什么是舍断的勤奋呢？比丘们！这里，比丘已生起欲寻时，不容忍它，舍断、驱离、铲除、使之走到不存在；已生起恶意寻时……已生起加害寻时……（中略）在恶不善法生起时，不容忍它，舍断、驱离、铲除、使之走到不存在，学友们！这被称为舍断的勤奋。 学友们！什么是修习的勤奋呢？比丘们！这里，比丘依止远离、依止离贪、依止灭、舍弃的圆熟修习念觉支；……修习择法觉支；……修习活力觉支；……修习喜觉支；……修习宁静觉支；……修习定觉支；依止远离、依止离贪、依止灭、舍弃的圆熟修习平静觉支，学友们！这被称为修习的勤奋。 学友们！什么是随护的勤奋呢？比丘们！这里，比丘随护已生起的善之定相：骨想、虫食想、青瘀想、断坏想、肿胀想，学友们！这被称为随护的勤奋。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E5%8B%A4%E5%A5%AE%EF%BC%9A%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82\n  > 四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F\n  > 什么是自制勤奋？\n- [4] Early Buddhist · 经藏/增支部_an · an4.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82\n  > 自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。\n- [5] Early Buddhist · 经藏/增支部_an · an4.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82\n  > 这被称为修习的勤奋。\n- [6] Early Buddhist · 经藏/增支部_an · an4.14 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.14&lang=zh&q=%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82\n  > 这被称为随护的勤奋。\n- [7] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 四之问题、四之总说、四之解说；\n- [8] Early Buddhist · 经藏/增支部_an · an10.28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E4%B9%8B%E5%95%8F%E9%A1%8C%E3%80%81%E5%9B%9B%E4%B9%8B%E7%B8%BD%E8%AA%AA%E3%80%81%E5%9B%9B%E4%B9%8B%E8%A7%A3%E8%AA%AA%EF%BC%9B\n  > 四之问题、四之总说、四之解说；",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g10",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 10,
+      "label": "四勤奋",
+      "members": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。\n\n学友们！什么是自制勤奋？学友们！这里，比丘以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；以耳听声音后，……以鼻闻气味后，……以舌尝味道后，……以身触所触后，……以意识知法后，不成为相的执取者、细相的执取者，因为当住于意根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护意根，在意根上达到自制，学友们！这被称为自制的勤奋。\n\n学友们！什么是舍断的勤奋呢？比丘们！这里，比丘已生起欲寻时，不容忍它，舍断、驱离、铲除、使之走到不存在；已生起恶意寻时……已生起加害寻时……（中略）在恶不善法生起时，不容忍它，舍断、驱离、铲除、使之走到不存在，学友们！这被称为舍断的勤奋。\n\n学友们！什么是修习的勤奋呢？比丘们！这里，比丘依止远离、依止离贪、依止灭、舍弃的圆熟修习念觉支；……修习择法觉支；……修习活力觉支；……修习喜觉支；……修习宁静觉支；……修习定觉支；依止远离、依止离贪、依止灭、舍弃的圆熟修习平静觉支，学友们！这被称为修习的勤奋。\n\n学友们！什么是随护的勤奋呢？比丘们！这里，比丘随护已生起的善之定相：骨想、虫食想、青瘀想、断坏想、肿胀想，学友们！这被称为随护的勤奋。",
+      "match_members": "自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋",
+      "member_items": [
+        "自制的勤奋",
+        "舍断的勤奋",
+        "修习的勤奋",
+        "随护的勤奋"
+      ],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。",
+        "学友们！什么是自制勤奋？学友们！这里，比丘以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；以耳听声音后，……以鼻闻气味后，……以舌尝味道后，……以身触所触后，……以意识知法后，不成为相的执取者、细相的执取者，因为当住于意根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护意根，在意根上达到自制，学友们！这被称为自制的勤奋。",
+        "学友们！什么是舍断的勤奋呢？比丘们！这里，比丘已生起欲寻时，不容忍它，舍断、驱离、铲除、使之走到不存在；已生起恶意寻时……已生起加害寻时……（中略）在恶不善法生起时，不容忍它，舍断、驱离、铲除、使之走到不存在，学友们！这被称为舍断的勤奋。",
+        "学友们！什么是修习的勤奋呢？比丘们！这里，比丘依止远离、依止离贪、依止灭、舍弃的圆熟修习念觉支；……修习择法觉支；……修习活力觉支；……修习喜觉支；……修习宁静觉支；……修习定觉支；依止远离、依止离贪、依止灭、舍弃的圆熟修习平静觉支，学友们！这被称为修习的勤奋。",
+        "学友们！什么是随护的勤奋呢？比丘们！这里，比丘随护已生起的善之定相：骨想、虫食想、青瘀想、断坏想、肿胀想，学友们！这被称为随护的勤奋。"
+      ],
+      "source_text": "四勤奋：自制的勤奋、舍断的勤奋、修习的勤奋、随护的勤奋。\n\n学友们！什么是自制勤奋？学友们！这里，比丘以眼见色后，不成为相的执取者、细相的执取者，因为当住于眼根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护眼根，在眼根上达到自制；以耳听声音后，……以鼻闻气味后，……以舌尝味道后，……以身触所触后，……以意识知法后，不成为相的执取者、细相的执取者，因为当住于意根的不防护时，贪忧、恶不善法会流入，他依其自制而行动，保护意根，在意根上达到自制，学友们！这被称为自制的勤奋。\n\n学友们！什么是舍断的勤奋呢？比丘们！这里，比丘已生起欲寻时，不容忍它，舍断、驱离、铲除、使之走到不存在；已生起恶意寻时……已生起加害寻时……（中略）在恶不善法生起时，不容忍它，舍断、驱离、铲除、使之走到不存在，学友们！这被称为舍断的勤奋。\n\n学友们！什么是修习的勤奋呢？比丘们！这里，比丘依止远离、依止离贪、依止灭、舍弃的圆熟修习念觉支；……修习择法觉支；……修习活力觉支；……修习喜觉支；……修习宁静觉支；……修习定觉支；依止远离、依止离贪、依止灭、舍弃的圆熟修习平静觉支，学友们！这被称为修习的勤奋。\n\n学友们！什么是随护的勤奋呢？比丘们！这里，比丘随护已生起的善之定相：骨想、虫食想、青瘀想、断坏想、肿胀想，学友们！这被称为随护的勤奋。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E5%8B%A4%E5%A5%AE&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%87%AA%E5%88%B6%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E6%8D%A8%E6%96%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E4%BF%AE%E7%BF%92%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%81%E9%9A%A8%E8%AD%B7%E7%9A%84%E5%8B%A4%E5%A5%AE%E3%80%82%0A%0A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E4%BB%80%E9%BA%BC%E6%98%AF%E8%87%AA%E5%88%B6%E5%8B%A4%E5%A5%AE%EF%BC%9F%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E4%BB%A5%E7%9C%BC%E8%A6%8B%E8%89%B2%E5%BE%8C%EF%BC%8C%E4%B8%8D%E6%88%90%E7%82%BA%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%E3%80%81%E7%B4%B0%E7%9B%B8%E7%9A%84%E5%9F%B7%E5%8F%96%E8%80%85%EF%BC%8C%E5%9B%A0%E7%82%BA%E7%95%B6%E4%BD%8F%E6%96%BC%E7%9C%BC%E6%A0%B9%E7%9A%84%E4%B8%8D%E9%98%B2%E8%AD%B7%E6%99%82%EF%BC%8C%E8%B2%AA%E6%86%82%E3%80%81%E6%83%A1%E4%B8%8D%E5%96%84%E6%B3%95%E6%9C%83%E6%B5%81%E5%85%A5%EF%BC%8C%E4%BB%96%E4%BE%9D%E5%85%B6%E8%87%AA%E5%88%B6%E8%80%8C%E8%A1%8C%E5%8B%95%EF%BC%8C%E4%BF%9D%E8%AD%B7%E7%9C%BC%E6%A0%B9%EF%BC%8C%E5%9C%A8%E7%9C%BC%E6%A0%B9%E4%B8%8A%E9%81%94%E5%88%B0%E8%87%AA%E5%88%B6%EF%BC%9B%E4%BB%A5%E8%80%B3%E8%81%BD%E8%81%B2%E9%9F%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E9%BC%BB%E8%81%9E%E6%B0%A3%E5%91%B3%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%88%8C%E5%9A%90%E5%91%B3%E9%81%93%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E8%BA%AB%E8%A7%B8%E6%89%80%E8%A7%B8%E5%BE%8C%EF%BC%8C%E2%80%A6%E2%80%A6%E4%BB%A5%E6%84%8F%E8%AD%98%E7%9F%A5%E6%B3%95%E5%BE%8C%EF%BC%8C%E4%B8%8D",
+      "expanded_points": [
+        "自制的勤奋：守护六根，不执取相与细相，防止贪忧等不善法流入。",
+        "舍断的勤奋：对已生起的恶不善法不容忍、舍断、驱离、铲除，使之不存在。",
+        "修习的勤奋：依止远离、离贪、灭、舍弃，修习七觉支。",
+        "随护的勤奋：随护已生起的善定相，如骨想、虫食想、青瘀想、断坏想、肿胀想。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-68d733654665",
+    "number": 4,
+    "label": "四识住",
+    "member_items": [],
+    "group_ids": [
+      "dn33-n4-g18"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四识住"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n四识住是指识住立于色、受、想、行四类对象上，当有喜的浇洒时，识得以成长、增长、扩展 [1]。现有证据主要来自《DN33》的详细描述，其他证据涉及相关概念但未直接定义四识住。\n\n## 要点展开\n### 四识住的定义\n- 四识住包括识住立于色、受、想、行上，每一类都作为识的所缘和住立处 [1]。\n- 当识住立时，若有喜的浇洒，识就能成长、增长、扩展 [1]。\n\n### 相关概念\n- 有证据将四识住比喻为地界，但未详细展开 [3]。\n- 另有证据提及“七识住”，但未说明与四识住的关系 [5]。\n- 其他证据涉及空性住、四念住等，但未直接关联四识住 [4][6][7][8]。\n\n## 分歧与张力\n- 证据 [3] 将四识住比喻为地界，而 [1] 详细描述其内容，两者侧重不同，但未构成直接冲突。\n- 证据 [5] 提及“七识住”，与四识住数量不同，但未说明两者关系，可能属于不同分类。\n\n## 证据覆盖情况\n现有证据主要覆盖四识住的定义和内容，来自《DN33》 [1]。其他证据涉及相关概念，但未提供更多细节或对比，因此对四识住与其他识住的关系、具体修行方法等未覆盖。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四识住",
+          "text": "四识住：学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展。学友们！当识住立时，会住立在攀住的受……（中略）学友们！当识住立时，住立在攀住的想……（中略）学友们！当识住立时，住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能来到成长、增长、扩展。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%89%B2%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E6%9C%83%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E5%8F%97%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%A1%8C%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四识住：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn22.54",
+          "text": "四识住应该被看作如同地界；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.54&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E5%A6%82%E5%90%8C%E5%9C%B0%E7%95%8C%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn121",
+          "text": "现在，我多以空性住而住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn15",
+          "text": "七识住",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%AD%98%E4%BD%8F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn121",
+          "text": "从以前到现在，我多以空性住而住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%BE%9E%E4%BB%A5%E5%89%8D%E5%88%B0%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn52.4",
+          "text": "有学的比丘应该进入后住于这四念住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.4&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn52.5",
+          "text": "无学的比丘应该进入后住于这四念住。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.5&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an7.44",
+          "text": "七识住经",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.44&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%83%E8%AD%98%E4%BD%8F%E7%B6%93"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap17.json",
+          "text": "中，亦以同样的方法可知。</p><p>其次再说明自最初以来的概要：即于此等（福、非福、不动的三）行中，（1）福行，于（欲、色）二有中给以结生之后而生起自己的异熟。同样的，于卵生等的四生，于天人的二趣，于异身异想（如人类），异身一想（如梵众天初生），一身异想（如光音天），一身一想（如遍净天）的金识住，及只于－－因为在无想有情居而此（福行）只是色的造作（故除）－－四有情居而给以结生之后生起自己的异熟。是故这（福行）于此等的二有、四生、二趣、四识住及四有情居中，对于二十一（善）异熟识于结生及转起，依上述的（业缘及亲依止缘）为缘。</p><p><span class=\\\"vism-page\\\">[558]</span> （2）非福行，于一欲有、于四生，于其余的（地狱、饿鬼、畜生）三趣，于异身一想的一识住，于同样的一有情居，由结生而给与异熟，所以这（非福行）于一有、四生、三趣一、识住及一有情居，对于七（不善）异熟之于结生及转起，依前述的（二种）为缘。</p><p>（3）不动行，只一无色有、于一化生，于一天趣，于空无边处等的三识住，于空无边处等四有情居由，结生而给与异熟；所以这（不动行）于一有、一生、一趣、三识住及四有情居，对于四（无色界的）异熟之结生及转起，依于如前所述的为缘。如是：</p><div class",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E8%AD%98%E4%BD%8F&scope=site"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "四识住",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四识住：学友们！",
+              "score": 24.322082389737872,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "sn22.54",
+              "collection": "经藏/相应部_sn",
+              "title": "种子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四识住应该被看作如同地界；",
+              "score": 22.01313892120444,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.54&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E5%A6%82%E5%90%8C%E5%9C%B0%E7%95%8C%EF%BC%9B"
+            },
+            {
+              "uid": "mn121",
+              "collection": "经藏/中部_mn",
+              "title": "空小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在，我多以空性住而住。",
+              "score": 5.727311188160159,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "dn15",
+              "collection": "经藏/长部_dn",
+              "title": "大因缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七识住",
+              "score": 5.578199964016406,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%AD%98%E4%BD%8F"
+            },
+            {
+              "uid": "mn121",
+              "collection": "经藏/中部_mn",
+              "title": "空小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "从以前到现在，我多以空性住而住。",
+              "score": 5.549988364686067,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%BE%9E%E4%BB%A5%E5%89%8D%E5%88%B0%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn52.4",
+              "collection": "经藏/相应部_sn",
+              "title": "荆棘",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "有学的比丘应该进入后住于这四念住。",
+              "score": 5.383315950250998,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.4&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "sn52.5",
+              "collection": "经藏/相应部_sn",
+              "title": "荆棘",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无学的比丘应该进入后住于这四念住。",
+              "score": 5.383315950250998,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn52.5&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82"
+            },
+            {
+              "uid": "an7.44",
+              "collection": "经藏/增支部_an",
+              "title": "七识住经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "七识住经",
+              "score": 5.251372400718376,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an7.44&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%83%E8%AD%98%E4%BD%8F%E7%B6%93"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap17.json",
+          "heading": "站内搜索命中",
+          "text": "中，亦以同样的方法可知。</p><p>其次再说明自最初以来的概要：即于此等（福、非福、不动的三）行中，（1）福行，于（欲、色）二有中给以结生之后而生起自己的异熟。同样的，于卵生等的四生，于天人的二趣，于异身异想（如人类），异身一想（如梵众天初生），一身异想（如光音天），一身一想（如遍净天）的金识住，及只于－－因为在无想有情居而此（福行）只是色的造作（故除）－－四有情居而给以结生之后生起自己的异熟。是故这（福行）于此等的二有、四生、二趣、四识住及四有情居中，对于二十一（善）异熟识于结生及转起，依上述的（业缘及亲依止缘）为缘。</p><p><span class=\\\"vism-page\\\">[558]</span> （2）非福行，于一欲有、于四生，于其余的（地狱、饿鬼、畜生）三趣，于异身一想的一识住，于同样的一有情居，由结生而给与异熟，所以这（非福行）于一有、四生、三趣一、识住及一有情居，对于七（不善）异熟之于结生及转起，依前述的（二种）为缘。</p><p>（3）不动行，只一无色有、于一化生，于一天趣，于空无边处等的三识住，于空无边处等四有情居由，结生而给与异熟；所以这（不动行）于一有、一生、一趣、三识住及四有情居，对于四（无色界的）异熟之结生及转起，依于如前所述的为缘。如是：</p><div class",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E8%AD%98%E4%BD%8F&scope=site",
+          "query": "四识住"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四识住\n\n## 直接回答\n四识住是指识住立于色、受、想、行四类对象上，当有喜的浇洒时，识得以成长、增长、扩展 [1]。现有证据主要来自《DN33》的详细描述，其他证据涉及相关概念但未直接定义四识住。\n\n## 要点展开\n### 四识住的定义\n- 四识住包括识住立于色、受、想、行上，每一类都作为识的所缘和住立处 [1]。\n- 当识住立时，若有喜的浇洒，识就能成长、增长、扩展 [1]。\n\n### 相关概念\n- 有证据将四识住比喻为地界，但未详细展开 [3]。\n- 另有证据提及“七识住”，但未说明与四识住的关系 [5]。\n- 其他证据涉及空性住、四念住等，但未直接关联四识住 [4][6][7][8]。\n\n## 分歧与张力\n- 证据 [3] 将四识住比喻为地界，而 [1] 详细描述其内容，两者侧重不同，但未构成直接冲突。\n- 证据 [5] 提及“七识住”，与四识住数量不同，但未说明两者关系，可能属于不同分类。\n\n## 证据覆盖情况\n现有证据主要覆盖四识住的定义和内容，来自《DN33》 [1]。其他证据涉及相关概念，但未提供更多细节或对比，因此对四识住与其他识住的关系、具体修行方法等未覆盖。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四识住 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%89%B2%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E6%9C%83%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E5%8F%97%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%A1%8C%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82\n  > 四识住：学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展。学友们！当识住立时，会住立在攀住的受……（中略）学友们！当识住立时，住立在攀住的想……（中略）学友们！当识住立时，住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能来到成长、增长、扩展。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 四识住：学友们！\n- [3] Early Buddhist · 经藏/相应部_sn · sn22.54 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.54&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%9B%9B%E8%AD%98%E4%BD%8F%E6%87%89%E8%A9%B2%E8%A2%AB%E7%9C%8B%E4%BD%9C%E5%A6%82%E5%90%8C%E5%9C%B0%E7%95%8C%EF%BC%9B\n  > 四识住应该被看作如同地界；\n- [4] Early Buddhist · 经藏/中部_mn · mn121 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82\n  > 现在，我多以空性住而住。\n- [5] Early Buddhist · 经藏/长部_dn · dn15 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn15&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%83%E8%AD%98%E4%BD%8F\n  > 七识住\n- [6] Early Buddhist · 经藏/中部_mn · mn121 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn121&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%BE%9E%E4%BB%A5%E5%89%8D%E5%88%B0%E7%8F%BE%E5%9C%A8%EF%BC%8C%E6%88%91%E5%A4%9A%E4%BB%A5%E7%A9%BA%E6%80%A7%E4%BD%8F%E8%80%8C%E4%BD%8F%E3%80%82\n  > 从以前到现在，我多以空性住而住。\n- [7] Early Buddhist · 经藏/相应部_sn · sn52.4 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn52.4&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 有学的比丘应该进入后住于这四念住。\n- [8] Early Buddhist · 经藏/相应部_sn · sn52.5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn52.5&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E7%9A%84%E6%AF%94%E4%B8%98%E6%87%89%E8%A9%B2%E9%80%B2%E5%85%A5%E5%BE%8C%E4%BD%8F%E6%96%BC%E9%80%99%E5%9B%9B%E5%BF%B5%E4%BD%8F%E3%80%82\n  > 无学的比丘应该进入后住于这四念住。",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g18",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 18,
+      "label": "四识住",
+      "members": "学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展。学友们！当识住立时，会住立在攀住的受……（中略）学友们！当识住立时，住立在攀住的想……（中略）学友们！当识住立时，住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能来到成长、增长、扩展。",
+      "match_members": "学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展",
+      "member_items": [],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "四识住：学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展。学友们！当识住立时，会住立在攀住的受……（中略）学友们！当识住立时，住立在攀住的想……（中略）学友们！当识住立时，住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能来到成长、增长、扩展。"
+      ],
+      "source_text": "四识住：学友们！当识住立时，住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能来到成长、增长、扩展。学友们！当识住立时，会住立在攀住的受……（中略）学友们！当识住立时，住立在攀住的想……（中略）学友们！当识住立时，住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能来到成长、增长、扩展。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E8%AD%98%E4%BD%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%89%B2%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%89%B2%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E6%9C%83%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E5%8F%97%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E6%83%B3%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E7%95%B6%E8%AD%98%E4%BD%8F%E7%AB%8B%E6%99%82%EF%BC%8C%E4%BD%8F%E7%AB%8B%E5%9C%A8%E6%94%80%E4%BD%8F%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E7%B7%A3%E7%9A%84%E8%A1%8C%E3%80%81%E6%89%80%E4%BD%8F%E7%AB%8B%E7%9A%84%E8%A1%8C%E4%B8%8A%EF%BC%8C%E6%9C%89%E5%96%9C%E7%9A%84%E6%BE%86%E7%81%91%EF%BC%8C%E5%B0%B1%E8%83%BD%E4%BE%86%E5%88%B0%E6%88%90%E9%95%B7%E3%80%81%E5%A2%9E%E9%95%B7%E3%80%81%E6%93%B4%E5%B1%95%E3%80%82",
+      "expanded_points": [
+        "色：识住立在攀住的色、所缘的色、所住立的色上，有喜的浇洒，就能成长、增长、扩展。",
+        "受：识住立在攀住的受上，有喜的浇洒，就能成长、增长、扩展。",
+        "想：识住立在攀住的想上，有喜的浇洒，就能成长、增长、扩展。",
+        "行：识住立在攀住的行、所缘的行、所住立的行上，有喜的浇洒，就能成长、增长、扩展。"
+      ]
+    }
+  ]
+}

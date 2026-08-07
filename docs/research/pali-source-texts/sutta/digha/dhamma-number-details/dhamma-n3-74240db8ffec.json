@@ -22,13 +22,13 @@
       "无加害界"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三善界」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：离欲界、无恶意界、无加害界。[1]\n\n## 所含各法\n### 离欲界\n经文将「离欲界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《喜爱品》命中：离欲乐无忧，。[3]\n### 无恶意界\n经文将「无恶意界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《智者品》命中：定善而无恶。。[4]\n### 无加害界\n经文将「无加害界」列为「三善界」的一个成员。Early Buddhist 用该名词检索时，在《界经》命中：欲界、恶意界、加害界，比丘们！。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三善界指离欲界、无恶意界、无加害界 [1][2]。与之相对的是三不善界：欲界、恶意界、加害界 [9]；另有经文也列出同样三项 [5]。除定义外，现有资料只对“离欲界”有较多相关表述，没有逐一展开“无恶意界”和“无加害界”的含义。\n\n## 要点展开\n### 直接定义\n- 三善界：离欲界、无恶意界、无加害界 [1][2]。\n- 三不善界：欲界、恶意界、加害界 [9]；另一经中亦见“欲界、恶意界、加害界”的并列 [5]，与三善界形成对照。\n\n### 与“离欲”相关的教说\n- 多段资料以“离欲”为善法或目标：“离欲乐无忧” [3]；“离欲法中胜” [6]；“离欲无染者” [7]。\n- 有资料鼓励“倾心离欲与心的独居” [8]，并说离欲贪之贪染后“是梵天世界的往生者” [12]。\n- “定善而无恶” [4] 与“不作恶者便无恶” [13] 涉及善与恶的对立，但没有明确把它们与“三善界”等同起来。\n\n### “界”一词的其他用法\n- 经中“界”也可能指生存处：“饿鬼界比畜生界好” [10]。\n- 也有“世间有许多界、种种界”的泛说 [11]，与三善界的特定分类不同。\n\n## 分歧与张力\n- 直接定义三善界的资料只有 [1][2]（同一内容），而 [3][4][6][7][8][12][13] 都只涉及“离欲”这一项，未涉及“无恶意界”和“无加害界”；[5] 只列出不善界。因此不能仅凭这些段落把“三善界”整体等同于“离欲”或“无恶”。\n- “界”本身有多义：三善界中的“界”与 [10][11] 所指的生存界、种种界并不相同，这是术语多义，不是义理冲突。\n\n## 证据覆盖情况\n现有证据覆盖了三善界的成员名称、与三不善界的对立关系，以及“离欲界”一面的若干旁证；但没有对“无恶意界”“无加害界”的独立解释，也没有涉及三善界的修行次第或具体运用。三善界的直接定义全部来自同一处资料 [1][2]，其他经文只提供了相关或相反的参照。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三善界",
           "text": "三善界：离欲界、无恶意界、无加害界。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E4%BD%9C%E6%83%A1%E8%80%85%E4%BE%BF%E7%84%A1%E6%83%A1%E3%80%82"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三善界",
@@ -376,7 +376,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三善界\n\n## 直接回答\n三善界指离欲界、无恶意界、无加害界 [1][2]。与之相对的是三不善界：欲界、恶意界、加害界 [9]；另有经文也列出同样三项 [5]。除定义外，现有资料只对“离欲界”有较多相关表述，没有逐一展开“无恶意界”和“无加害界”的含义。\n\n## 要点展开\n### 直接定义\n- 三善界：离欲界、无恶意界、无加害界 [1][2]。\n- 三不善界：欲界、恶意界、加害界 [9]；另一经中亦见“欲界、恶意界、加害界”的并列 [5]，与三善界形成对照。\n\n### 与“离欲”相关的教说\n- 多段资料以“离欲”为善法或目标：“离欲乐无忧” [3]；“离欲法中胜” [6]；“离欲无染者” [7]。\n- 有资料鼓励“倾心离欲与心的独居” [8]，并说离欲贪之贪染后“是梵天世界的往生者” [12]。\n- “定善而无恶” [4] 与“不作恶者便无恶” [13] 涉及善与恶的对立，但没有明确把它们与“三善界”等同起来。\n\n### “界”一词的其他用法\n- 经中“界”也可能指生存处：“饿鬼界比畜生界好” [10]。\n- 也有“世间有许多界、种种界”的泛说 [11]，与三善界的特定分类不同。\n\n## 分歧与张力\n- 直接定义三善界的资料只有 [1][2]（同一内容），而 [3][4][6][7][8][12][13] 都只涉及“离欲”这一项，未涉及“无恶意界”和“无加害界”；[5] 只列出不善界。因此不能仅凭这些段落把“三善界”整体等同于“离欲”或“无恶”。\n- “界”本身有多义：三善界中的“界”与 [10][11] 所指的生存界、种种界并不相同，这是术语多义，不是义理冲突。\n\n## 证据覆盖情况\n现有证据覆盖了三善界的成员名称、与三不善界的对立关系，以及“离欲界”一面的若干旁证；但没有对“无恶意界”“无加害界”的独立解释，也没有涉及三善界的修行次第或具体运用。三善界的直接定义全部来自同一处资料 [1][2]，其他经文只提供了相关或相反的参照。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三善界 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82\n  > 三善界：离欲界、无恶意界、无加害界。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E7%95%8C%EF%BC%9A%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82\n  > 三善界：离欲界、无恶意界、无加害界。\n- [3] Early Buddhist · 经藏/小部_kn · dhp209-220 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp209-220&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2%E6%A8%82%E7%84%A1%E6%86%82%EF%BC%8C\n  > 离欲乐无忧，\n- [4] Early Buddhist · 经藏/小部_kn · dhp76-89 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp76-89&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E5%AE%9A%E5%96%84%E8%80%8C%E7%84%A1%E6%83%A1%E3%80%82\n  > 定善而无恶。\n- [5] Early Buddhist · 经藏/增支部_an · an6.111 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.111&lang=zh&q=%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 欲界、恶意界、加害界，比丘们！\n- [6] Early Buddhist · 经藏/小部_kn · dhp273-289 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp273-289&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E9%9B%A2%E6%AC%B2+%E6%B3%95%E4%B8%AD%E5%8B%9D%EF%BC%8C\n  > 离欲 法中胜，\n- [7] Early Buddhist · 经藏/小部_kn · dhp334-359 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp334-359&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=SC+352+%E9%9B%A2%E6%AC%B2%E7%84%A1%E6%9F%93%E8%80%85%EF%BC%8C\n  > SC 352 离欲无染者，\n- [8] Early Buddhist · 经藏/增支部_an · an6.55 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.55&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8C%E5%A6%82%E6%9E%9C%E5%82%BE%E5%BF%83%E9%9B%A2%E6%AC%B2%E8%88%87%E5%BF%83%E7%9A%84%E7%8D%A8%E5%B1%85%EF%BC%8C\n  > 「如果倾心离欲与心的独居，\n- [9] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%B8%8D%E5%96%84%E7%95%8C%EF%BC%9A%E6%AC%B2%E7%95%8C%E3%80%81%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82\n  > 三不善界：欲界、恶意界、加害界。\n- [10] Early Buddhist · 经藏/中部_mn · mn97 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn97&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%A4%93%E9%AC%BC%E7%95%8C%E6%AF%94%E7%95%9C%E7%94%9F%E7%95%8C%E5%A5%BD%E3%80%82\n  > 饿鬼界比畜生界好。\n- [11] Early Buddhist · 经藏/长部_dn · dn21 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn21&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%96%E9%96%93%E6%9C%89%E8%A8%B1%E5%A4%9A%E7%95%8C%E3%80%81%E7%A8%AE%E7%A8%AE%E7%95%8C%E3%80%82\n  > 世间有许多界、种种界。\n- [12] Early Buddhist · 经藏/增支部_an · an6.54 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.54&lang=zh&q=%E9%9B%A2%E6%AC%B2%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E6%AC%B2%E8%B2%AA%E4%B9%8B%E8%B2%AA%E6%9F%93%E5%BE%8C%EF%BC%8C%E6%98%AF%E6%A2%B5%E5%A4%A9%E4%B8%96%E7%95%8C%E7%9A%84%E5%BE%80%E7%94%9F%E8%80%85%E3%80%82\n  > 离欲贪之贪染后，是梵天世界的往生者。\n- [13] Early Buddhist · 经藏/小部_kn · dhp116-128 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dhp116-128&lang=zh&q=%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E4%B8%8D%E4%BD%9C%E6%83%A1%E8%80%85%E4%BE%BF%E7%84%A1%E6%83%A1%E3%80%82\n  > 不作恶者便无恶。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -386,15 +388,24 @@
       "number": 3,
       "order": 12,
       "label": "三善界",
-      "members": "离欲界、无恶意界、无加害界",
+      "members": "离欲界、无恶意界、无加害界。",
+      "match_members": "离欲界、无恶意界、无加害界",
       "member_items": [
         "离欲界",
         "无恶意界",
         "无加害界"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三善界：离欲界、无恶意界、无加害界。"
+      ],
       "source_text": "三善界：离欲界、无恶意界、无加害界。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E5%96%84%E7%95%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%9B%A2%E6%AC%B2%E7%95%8C%E3%80%81%E7%84%A1%E6%83%A1%E6%84%8F%E7%95%8C%E3%80%81%E7%84%A1%E5%8A%A0%E5%AE%B3%E7%95%8C%E3%80%82",
+      "expanded_points": [
+        "离欲界：三善界之一，指远离欲贪的善界；与不善界的“欲界”相对 [5][9]。",
+        "无恶意界：三善界之一，指不怀恶意的善界；与不善界的“恶意界”相对 [5][9]。",
+        "无加害界：三善界之一，指不加害于他的善界；与不善界的“加害界”相对 [5][9]。"
+      ]
     }
   ]
 }

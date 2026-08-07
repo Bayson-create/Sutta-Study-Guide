@@ -5,7 +5,8 @@
     "number": 2,
     "label": "守护根门与饮食知适量",
     "member_items": [
-      "守护根门与饮食知适量"
+      "守护根门",
+      "饮食知适量"
     ],
     "group_ids": [
       "dn33-n2-g20"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "守护根门与饮食知适量"
+      "守护根门与饮食知适量",
+      "守护根门",
+      "饮食知适量"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「守护根门与饮食知适量」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：守护根门与饮食知适量。[1]\n\n## 所含各法\n### 守护根门与饮食知适量\n经文将「守护根门与饮食知适量」列为「守护根门与饮食知适量」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：守护根门与饮食知适量。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n守护根门与饮食知适量是佛教修行中的重要实践，前者指对六根（眼、耳、鼻、舌、身、意）的守护，后者指对饮食的适量控制 [1][2][6]。不守护根门与饮食不知适量则被视为不善法 [3][7]。\n\n## 要点展开\n### 守护根门\n守护根门（indriyasaṃvara）是对六处的主动守护，是止息渴爱的关键实践入口 [8]。在增支部中，守护根门与不乐于做事、不乐于谈论、不乐于睡眠等并列，作为比丘的修行要求 [6]。\n\n### 饮食知适量\n饮食知适量是修行者的重要品质，在增支部中被多次提及 [4][5]。与守护根门一样，饮食知适量也是比丘应具备的善法之一 [6]。\n\n### 不善法的反面\n不守护根门与饮食不知适量被列为不善法，与不专修清醒、不观察善法并列 [7]。\n\n## 分歧与张力\n证据中未显示不同来源之间的明显分歧，但 [8] 从认识论角度解释守护根门与六处的关系，而其他证据则更侧重于实践层面的列举，两者侧重不同。\n\n## 证据覆盖情况\n现有证据覆盖了守护根门与饮食知适量的基本定义、实践意义以及反面不善法，但未详细展开守护根门的具体方法或饮食知适量的具体标准。",
       "evidence": [
         {
           "kind": "source",
@@ -60,9 +63,39 @@
           "label": "Early Buddhist · 经藏/增支部_an · an6.17",
           "text": "在根上不守护根门、饮食不知适量、不专修清醒、不观察善法；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.17&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E6%A0%B9%E4%B8%8A%E4%B8%8D%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E3%80%81%E9%A3%B2%E9%A3%9F%E4%B8%8D%E7%9F%A5%E9%81%A9%E9%87%8F%E3%80%81%E4%B8%8D%E5%B0%88%E4%BF%AE%E6%B8%85%E9%86%92%E3%80%81%E4%B8%8D%E8%A7%80%E5%AF%9F%E5%96%84%E6%B3%95%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "》定义\"一切\"（sabba）即十二处（六内处与六外处之和），超出此范围便无话可说。这是佛教认识论的边界宣言：凡是所知者，皆通过六处而知；六处之外，无法建立有意义的认知。 **世界（Loka）** 同样，\"世界\"在佛法中并非宇宙论概念，而是认知论概念，指通过六处所建构的经验世界。\"苦生于世界中，苦灭于世界中\"，灭苦不在外求，而在六处之门的转化。 **六处在缘起中的位置** 六处是缘起第五支：名色生六处，六处生触，触生受。正念于六处守护根门（indriyasaṃvara），是止息渴爱的关键实践入口。《清净道论》中的\"根律仪戒\"即是对六处的主动守护。 --- # 八、受（Vedanā） **定义** 受是五蕴之一，也是缘起链中的关键一环（触→受→爱）。受的本质是\"体验目标的苦乐舍味\"，其相是\"感受\"，其作用是\"体验\"所缘，其现起是\"欢喜\"或\"苦\"，其足处是\"触\"。 **三种受** 苦受（dukkha-vedanā）、乐受（sukha-vedanā）、不苦不乐受（adukkhamasukha-vedanā / upekkhā-vedanā）。 **六种受**（按六门分） 眼触生受、耳触生受、鼻触生受、舌触生受、身触生受、意触生受。 **受在轮回中的作用** 受是爱的生起处：\"受缘爱\"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/vism-summary.md",
+          "text": "### 三、\"何为戒\"：四重定义 依《无碍解道》（Paṭisambhidā），戒分四种： > \"何为戒？有作为思之戒，有作为心所之戒，有作为律仪之戒，有作为不犯之戒。\"（Paṭis I 44，引于I.17） - **思戒**：远离杀生等的\"思\"（volition）本身； - **心所戒**：伴随远离杀生等而生起的心所（无贪、无嗔、正见）； - **律仪戒**：分五种律仪——**波罗提木叉律仪**（依戒本）、**念律仪**（依正念守护根门）、**智律仪**（依慧断除\"流\"，引《经集》\"世间诸流，以念堰之；我说流之防护，以慧堵之\"Sn 1035）、**忍律仪**（忍受寒热等）、**精进律仪**（不容忍欲寻等生起，含正命清净）； - **不犯戒**：身、语不违犯已受持之戒条。 ### 四、语源、四相与利益 **语源（I.19）**：\"戒\"（sīla）取\"组构\"（sīlana）之义——或指\"令身语等行为协调一致\"（samādhāna），或指\"作为善法生起之基础\"（upadhāraṇa）。 **四相（I.20–22）**： - **相**：\"组构\"，如同\"可见性\"是一切色法的共同特相，不论如何分类都不出此特相； - **用**：双重——作为\"作用\"（action）是\"止息恶行\"，作为\"成就\"（ac",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "text": "--- ## 三十三、优波离尊者（Upāli）——持律第一 优波离本为释迦王族的理发师，因悬珠悟道而追随六王子出家的经过已详见\"佛宝\"第十九章，此后精研戒律，成为\"持律第一\"，第一次结集时由他诵出全部律藏。 --- ## 三十四、难陀迦尊者（Nandaka）——教诫比丘尼第一 因擅长以温和而深刻的方式教导比丘尼众，令众多比丘尼因闻其教诫而证得圣果，被誉为\"教诫比丘尼第一\"。 --- ## 三十五、难陀尊者（Nanda）——守护根门第一 佛陀异母弟难陀因忆念未婚妻迦楼陀迦莲耶而险些还俗、经佛陀以忉利天女为喻而精进证果的经过已详见\"佛宝\"第二十章。此后难陀严守六根、行止端庄，被誉为\"守护诸根门第一\"。 --- ## 三十六、摩诃劫宾那尊者（Mahā Kappina）——教诫比丘第一 **过去因缘**：曾为波罗奈城的织布工头，其妻富有智慧，在国王疏忽而未能供养一千位辟支佛时，挺身而出，动员全村每户供养一位辟支佛并合力建造精舍，功德深厚，此后夫妻二人与全村人在迦叶佛时代又共同集资建造大型精舍，妻子更以\"愿我如阿输迦花般金色\"发愿，得名\"阿诺阇\"。 **今生**：此夫妇转生为鸡跋多国王摩诃劫宾那与摩德国公主阿诺阇。国王命四名骑手日日打探\"佛法僧\"降世的消息。一日，五百商人商队疲惫抵达，告知",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap12.json",
+          "text": "乐以供如来。那一天看见世尊的人，实无一人不希望成佛的。这便是世尊行显现神变。</p><p>还有在铜鍱洲，住在多楞迦罗的法授长老，坐在帝须大精舍 <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-055\\\">[12-055]</sup> 的塔园，对诸比丘讲『纯真经』： <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-056\\\">[12-056]</sup> 「诸比丘！具备三法（守护根门，于食知量，警寤精勤）的比丘，行纯真道者」，并以扇下指，直至阿鼻地狱成一广场，以扇上提，直至梵天界成一广场。长老警告以地狱的怖畏及导以诸天之乐，对他们说法。闻法者，有的得须陀洹，有的得斯陀阿那含及阿罗汉。</p><p>（４）（隐匿神变）欲隐匿者， 使光明为黑暗，使无遮蔽成遮蔽，使可见的成为不可见。怎样呢？即神变者欲求自己或他人，虽无遮蔽或近在身边亦不使不见，他从基础禅出定已，念「此光明之处将成黑暗」， <span class=\\\"vism-page\\\">[393]</span>或「此无遮蔽处将成遮蔽」或「此可见而成不可见」，遍作（准备）已，当依前述之法而决意。与决意心共，便得成他所决意的。使站近的他人不能见 <sup class=\\\"vism-fnref\\\" da",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/suttas.json",
+          "text": "\"intro\": \"\", \"suttas\": [ { \"uid\": \"dn2\", \"name\": \"DN 2 Samaññaphala Sutta\", \"focus\": \"渐次训练、禅那、神通、漏尽智\", \"summary\": \"阿阇世王问沙门生活的现世果报。佛陀系统说明从持戒、守护根门、正念正知、知足、远离五盖，到四禅、神通、宿命智、天眼智、漏尽智的完整训练阶梯。\", \"en_url\": \"https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/dn2/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "守护根门与饮食知适量",
@@ -148,9 +181,55 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=an6.17&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E6%A0%B9%E4%B8%8A%E4%B8%8D%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E3%80%81%E9%A3%B2%E9%A3%9F%E4%B8%8D%E7%9F%A5%E9%81%A9%E9%87%8F%E3%80%81%E4%B8%8D%E5%B0%88%E4%BF%AE%E6%B8%85%E9%86%92%E3%80%81%E4%B8%8D%E8%A7%80%E5%AF%9F%E5%96%84%E6%B3%95%EF%BC%9B"
             }
           ]
+        },
+        {
+          "query": "守护根门",
+          "hits": []
+        },
+        {
+          "query": "饮食知适量",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "》定义\"一切\"（sabba）即十二处（六内处与六外处之和），超出此范围便无话可说。这是佛教认识论的边界宣言：凡是所知者，皆通过六处而知；六处之外，无法建立有意义的认知。 **世界（Loka）** 同样，\"世界\"在佛法中并非宇宙论概念，而是认知论概念，指通过六处所建构的经验世界。\"苦生于世界中，苦灭于世界中\"，灭苦不在外求，而在六处之门的转化。 **六处在缘起中的位置** 六处是缘起第五支：名色生六处，六处生触，触生受。正念于六处守护根门（indriyasaṃvara），是止息渴爱的关键实践入口。《清净道论》中的\"根律仪戒\"即是对六处的主动守护。 --- # 八、受（Vedanā） **定义** 受是五蕴之一，也是缘起链中的关键一环（触→受→爱）。受的本质是\"体验目标的苦乐舍味\"，其相是\"感受\"，其作用是\"体验\"所缘，其现起是\"欢喜\"或\"苦\"，其足处是\"触\"。 **三种受** 苦受（dukkha-vedanā）、乐受（sukha-vedanā）、不苦不乐受（adukkhamasukha-vedanā / upekkhā-vedanā）。 **六种受**（按六门分） 眼触生受、耳触生受、鼻触生受、舌触生受、身触生受、意触生受。 **受在轮回中的作用** 受是爱的生起处：\"受缘爱\"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site",
+          "query": "守护根门"
+        },
+        {
+          "source": "docs/research/vism-data/vism-summary.md",
+          "heading": "站内搜索命中",
+          "text": "### 三、\"何为戒\"：四重定义 依《无碍解道》（Paṭisambhidā），戒分四种： > \"何为戒？有作为思之戒，有作为心所之戒，有作为律仪之戒，有作为不犯之戒。\"（Paṭis I 44，引于I.17） - **思戒**：远离杀生等的\"思\"（volition）本身； - **心所戒**：伴随远离杀生等而生起的心所（无贪、无嗔、正见）； - **律仪戒**：分五种律仪——**波罗提木叉律仪**（依戒本）、**念律仪**（依正念守护根门）、**智律仪**（依慧断除\"流\"，引《经集》\"世间诸流，以念堰之；我说流之防护，以慧堵之\"Sn 1035）、**忍律仪**（忍受寒热等）、**精进律仪**（不容忍欲寻等生起，含正命清净）； - **不犯戒**：身、语不违犯已受持之戒条。 ### 四、语源、四相与利益 **语源（I.19）**：\"戒\"（sīla）取\"组构\"（sīlana）之义——或指\"令身语等行为协调一致\"（samādhāna），或指\"作为善法生起之基础\"（upadhāraṇa）。 **四相（I.20–22）**： - **相**：\"组构\"，如同\"可见性\"是一切色法的共同特相，不论如何分类都不出此特相； - **用**：双重——作为\"作用\"（action）是\"止息恶行\"，作为\"成就\"（ac",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site",
+          "query": "守护根门"
+        },
+        {
+          "source": "docs/research/great-chronicles/great-chronicles-of-the-buddhas.md",
+          "heading": "站内搜索命中",
+          "text": "--- ## 三十三、优波离尊者（Upāli）——持律第一 优波离本为释迦王族的理发师，因悬珠悟道而追随六王子出家的经过已详见\"佛宝\"第十九章，此后精研戒律，成为\"持律第一\"，第一次结集时由他诵出全部律藏。 --- ## 三十四、难陀迦尊者（Nandaka）——教诫比丘尼第一 因擅长以温和而深刻的方式教导比丘尼众，令众多比丘尼因闻其教诫而证得圣果，被誉为\"教诫比丘尼第一\"。 --- ## 三十五、难陀尊者（Nanda）——守护根门第一 佛陀异母弟难陀因忆念未婚妻迦楼陀迦莲耶而险些还俗、经佛陀以忉利天女为喻而精进证果的经过已详见\"佛宝\"第二十章。此后难陀严守六根、行止端庄，被誉为\"守护诸根门第一\"。 --- ## 三十六、摩诃劫宾那尊者（Mahā Kappina）——教诫比丘第一 **过去因缘**：曾为波罗奈城的织布工头，其妻富有智慧，在国王疏忽而未能供养一千位辟支佛时，挺身而出，动员全村每户供养一位辟支佛并合力建造精舍，功德深厚，此后夫妻二人与全村人在迦叶佛时代又共同集资建造大型精舍，妻子更以\"愿我如阿输迦花般金色\"发愿，得名\"阿诺阇\"。 **今生**：此夫妇转生为鸡跋多国王摩诃劫宾那与摩德国公主阿诺阇。国王命四名骑手日日打探\"佛法僧\"降世的消息。一日，五百商人商队疲惫抵达，告知",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site",
+          "query": "守护根门"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap12.json",
+          "heading": "站内搜索命中",
+          "text": "乐以供如来。那一天看见世尊的人，实无一人不希望成佛的。这便是世尊行显现神变。</p><p>还有在铜鍱洲，住在多楞迦罗的法授长老，坐在帝须大精舍 <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-055\\\">[12-055]</sup> 的塔园，对诸比丘讲『纯真经』： <sup class=\\\"vism-fnref\\\" data-fn=\\\"12-056\\\">[12-056]</sup> 「诸比丘！具备三法（守护根门，于食知量，警寤精勤）的比丘，行纯真道者」，并以扇下指，直至阿鼻地狱成一广场，以扇上提，直至梵天界成一广场。长老警告以地狱的怖畏及导以诸天之乐，对他们说法。闻法者，有的得须陀洹，有的得斯陀阿那含及阿罗汉。</p><p>（４）（隐匿神变）欲隐匿者， 使光明为黑暗，使无遮蔽成遮蔽，使可见的成为不可见。怎样呢？即神变者欲求自己或他人，虽无遮蔽或近在身边亦不使不见，他从基础禅出定已，念「此光明之处将成黑暗」， <span class=\\\"vism-page\\\">[393]</span>或「此无遮蔽处将成遮蔽」或「此可见而成不可见」，遍作（准备）已，当依前述之法而决意。与决意心共，便得成他所决意的。使站近的他人不能见 <sup class=\\\"vism-fnref\\\" da",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site",
+          "query": "守护根门"
+        },
+        {
+          "source": "docs/suttas.json",
+          "heading": "站内搜索命中",
+          "text": "\"intro\": \"\", \"suttas\": [ { \"uid\": \"dn2\", \"name\": \"DN 2 Samaññaphala Sutta\", \"focus\": \"渐次训练、禅那、神通、漏尽智\", \"summary\": \"阿阇世王问沙门生活的现世果报。佛陀系统说明从持戒、守护根门、正念正知、知足、远离五盖，到四禅、神通、宿命智、天眼智、漏尽智的完整训练阶梯。\", \"en_url\": \"https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/dn2/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\",",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site",
+          "query": "守护根门"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：守护根门与饮食知适量\n\n## 直接回答\n守护根门与饮食知适量是佛教修行中的重要实践，前者指对六根（眼、耳、鼻、舌、身、意）的守护，后者指对饮食的适量控制 [1][2][6]。不守护根门与饮食不知适量则被视为不善法 [3][7]。\n\n## 要点展开\n### 守护根门\n守护根门（indriyasaṃvara）是对六处的主动守护，是止息渴爱的关键实践入口 [8]。在增支部中，守护根门与不乐于做事、不乐于谈论、不乐于睡眠等并列，作为比丘的修行要求 [6]。\n\n### 饮食知适量\n饮食知适量是修行者的重要品质，在增支部中被多次提及 [4][5]。与守护根门一样，饮食知适量也是比丘应具备的善法之一 [6]。\n\n### 不善法的反面\n不守护根门与饮食不知适量被列为不善法，与不专修清醒、不观察善法并列 [7]。\n\n## 分歧与张力\n证据中未显示不同来源之间的明显分歧，但 [8] 从认识论角度解释守护根门与六处的关系，而其他证据则更侧重于实践层面的列举，两者侧重不同。\n\n## 证据覆盖情况\n现有证据覆盖了守护根门与饮食知适量的基本定义、实践意义以及反面不善法，但未详细展开守护根门的具体方法或饮食知适量的具体标准。\n\n## 引用\n- [1] Early Buddhist · DN33 · 守护根门与饮食知适量 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F\n  > 守护根门与饮食知适量。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F%E3%80%82\n  > 守护根门与饮食知适量。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8D%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E4%B8%8D%E7%9F%A5%E9%81%A9%E9%87%8F%E3%80%82\n  > 不守护根门与饮食不知适量。\n- [4] Early Buddhist · 经藏/增支部_an · an5.56 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.56&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F%E8%80%85%EF%BC%9B\n  > 饮食知适量者；\n- [5] Early Buddhist · 经藏/增支部_an · an6.17 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.17&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F%E8%80%85%EF%BC%9B\n  > 饮食知适量者；\n- [6] Early Buddhist · 经藏/增支部_an · an5.150 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.150&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E6%A8%82%E6%96%BC%E5%81%9A%E4%BA%8B%E3%80%81%E4%B8%8D%E6%A8%82%E6%96%BC%E8%AB%87%E8%AB%96%E3%80%81%E4%B8%8D%E6%A8%82%E6%96%BC%E7%9D%A1%E7%9C%A0%E3%80%81%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E3%80%81%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 不乐于做事、不乐于谈论、不乐于睡眠、守护根门、饮食知适量，比丘们！\n- [7] Early Buddhist · 经藏/增支部_an · an6.17 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.17&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9C%A8%E6%A0%B9%E4%B8%8A%E4%B8%8D%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E3%80%81%E9%A3%B2%E9%A3%9F%E4%B8%8D%E7%9F%A5%E9%81%A9%E9%87%8F%E3%80%81%E4%B8%8D%E5%B0%88%E4%BF%AE%E6%B8%85%E9%86%92%E3%80%81%E4%B8%8D%E8%A7%80%E5%AF%9F%E5%96%84%E6%B3%95%EF%BC%9B\n  > 在根上不守护根门、饮食不知适量、不专修清醒、不观察善法；\n- [8] docs/research/buddhist-concepts.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80&scope=site\n  > 》定义\"一切\"（sabba）即十二处（六内处与六外处之和），超出此范围便无话可说。这是佛教认识论的边界宣言：凡是所知者，皆通过六处而知；六处之外，无法建立有意义的认知。 **世界（Loka）** 同样，\"世界\"在佛法中并非宇宙论概念，而是认知论概念，指通过六处所建构的经验世界。\"苦生于世界中，苦灭于世界中\"，灭苦不在外求，而在六处之门的转化。 **六处在缘起中的位置** 六处是缘起第五支：名色生六处，六处生触，触生受。正念于六处守护根门（indriyasaṃvara），是止息渴爱的关键实践入口。《清净道论》中的\"根律仪戒\"即是对六处的主动守护。 --- # 八、受（Vedanā） **定义** 受是五蕴之一，也是缘起链中的关键一环（触→受→爱）。受的本质是\"体验目标的苦乐舍味\"，其相是\"感受\"，其作用是\"体验\"所缘，其现起是\"欢喜\"或\"苦\"，其足处是\"触\"。 **三种受** 苦受（dukkha-vedanā）、乐受（sukha-vedanā）、不苦不乐受（adukkhamasukha-vedanā / upekkhā-vedanā）。 **六种受**（按六门分） 眼触生受、耳触生受、鼻触生受、舌触生受、身触生受、意触生受。 **受在轮回中的作用** 受是爱的生起处：\"受缘爱\"",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -161,12 +240,21 @@
       "order": 20,
       "label": "守护根门与饮食知适量",
       "members": "守护根门与饮食知适量",
+      "match_members": "守护根门与饮食知适量",
       "member_items": [
-        "守护根门与饮食知适量"
+        "守护根门",
+        "饮食知适量"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "守护根门与饮食知适量。"
+      ],
       "source_text": "守护根门与饮食知适量。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AE%88%E8%AD%B7%E6%A0%B9%E9%96%80%E8%88%87%E9%A3%B2%E9%A3%9F%E7%9F%A5%E9%81%A9%E9%87%8F",
+      "expanded_points": [
+        "守护根门：指守护眼、耳、鼻、舌、身、意六根，防止烦恼侵入。",
+        "饮食知适量：指在饮食上保持适度，不贪着美味，以支持修行。"
+      ]
     }
   ]
 }

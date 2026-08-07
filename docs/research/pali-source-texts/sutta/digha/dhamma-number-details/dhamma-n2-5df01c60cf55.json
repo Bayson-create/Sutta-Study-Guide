@@ -5,7 +5,8 @@
     "number": 2,
     "label": "念已忘失与不正知",
     "member_items": [
-      "念已忘失与不正知"
+      "念已忘失",
+      "不正知"
     ],
     "group_ids": [
       "dn33-n2-g17"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "念已忘失与不正知"
+      "念已忘失与不正知",
+      "念已忘失",
+      "不正知"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「念已忘失与不正知」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：念已忘失与不正知。[1]\n\n## 所含各法\n### 念已忘失与不正知\n经文将「念已忘失与不正知」列为「念已忘失与不正知」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：念已忘失与不正知。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n念已忘失与不正知在证据中常被并列提及，被视为修行中的障碍或退失因素 [1][2][4]。念已忘失者无法修习入出息念 [4]，且在如来教导的法、律中被视为退失 [8]。\n\n## 要点展开\n### 念已忘失与不正知的关系\n- 念已忘失与不正知常被并列提出，作为需要避免的负面状态 [1][2]。\n- 在修习入出息念的语境中，念已忘失、不正知者无法成就该修习 [4]。\n\n### 念已忘失的负面性质\n- 念已忘失被列为导致退失的因素之一 [8]。\n- 在列举不善法或退失法时，念已忘失与无信、无惭、无愧、懈怠、劣慧等并列 [6]。\n\n### 念已忘失与念的现前\n- 对念已忘失的男子，有为了回避的念已现前 [5]，也有为了般涅槃的念已现前 [7]，表明念已忘失并非绝对，仍有转机。\n\n## 分歧与张力\n证据 [5] 和 [7] 提到念已忘失者仍有“念已现前”，而 [4] 和 [8] 强调念已忘失的障碍和退失性质，两者侧重不同，但并非直接冲突，可能反映不同语境下的不同面向。\n\n## 证据覆盖情况\n现有证据覆盖了念已忘失与不正知的并列关系、在修习中的障碍作用、作为退失因素，以及念已忘失者仍有念现前的可能性。但未详细解释“不正知”的具体含义，也未提供对治方法。",
       "evidence": [
         {
           "kind": "source",
@@ -66,9 +69,27 @@
           "label": "Early Buddhist · 经藏/增支部_an · an10.85",
           "text": "『这位尊者是念已忘失者，但，念已忘失在被如来教导的法、律中，这是退失。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.85&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E9%80%99%E4%BD%8D%E5%B0%8A%E8%80%85%E6%98%AF%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%80%85%EF%BC%8C%E4%BD%86%EF%BC%8C%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E5%9C%A8%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E3%80%81%E5%BE%8B%E4%B8%AD%EF%BC%8C%E9%80%99%E6%98%AF%E9%80%80%E5%A4%B1%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap04.json",
+          "text": ">（答）因为那里的作用不明显故，即是说那里的舍对于征服寻等的作用不明显故。在此（第三禅）的舍已经不被寻伺等所征服，产生了很明显的作用，犹如高举的头，所以如是说。</p><p>「住于舍」这一句至此已经解释完毕。</p><p>在「念与正知」一句中，忆念为念，正当的知为正知。这是指人所具有的念与正知而言。此中念以忆念为相，不忘失为味，守护为现起。正知以不痴为相，推度为味，选择为现起。</p><p>虽在前面的诸禅之中亦有念与正知──如果失念者及不正知者，即近行定也不能成就，何况安止定──然而彼等诸禅粗故，犹如行于地上的人，禅心的进行是乐的，那里的念与正知的作用不明。 <span class=\\\"vism-page\\\">[163]</span>由于舍断于粗而成此禅的细，譬如人的航运于剑波海，其禅心的进行必须把握于念及正知的作用，所以这样说。</p><p>更有什么说念与正知的理由呢？譬如正在哺乳犊子，将它八母牛分开，但你不看守它的时候，它必定会再跑近母牛去；如是这第三禅的乐虽从喜分，如果不以念与正知去守护它，则必然又跑进于喜及不喜相应。或者诸有情是恋著于乐，而此三禅之乐是极其微妙，实无有乐而过于此，必须由于念与正知的威力才至恋于此乐，实无他法。为了表示这特殊的意义，故仅于第三禅说念与正知。</p><p>「乐以身受」",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap08.json",
+          "text": "）而已」。此时他便置心于（出入息的）自然的所触（之处）而起作意。 <span class=\\\"vism-page\\\">[284]</span>即（出入息）于长鼻者的鼻孔起触，于短鼻者的上唇（起触）。是故那比丘即以「（出入息）于此处触」而安置（其心）于相（即触处）。即以这种意义而考察，如世尊说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-066\\\">[08-066]</sup> 「诸比丘！我不说忘念及不正知之人是安般念的修习者」。虽然任何业处都只是念者及正知者而成就，但于此（安般念）以外的（业处）作意者是明了的。然而这重要而难修的安般念业处，只是佛、辟支佛、佛子等大人物的作意境地，不是低的有情所能习得的。对于（安般念）作意，则愈加寂静而微细，故于此（修习）必须有强念与强慧。</p><p>譬如缝细妙的衣服时，针要细，穿针孔的更要细，如是修习（安般念）业处之时像缝细妙之衣，像针的念，及如穿针孔的（与念）相应的慧必须坚强。</p><p>其次具足了此念与慧的比丘，对于出入息（之相）不应向自然的触处（鼻孔或上唇）以外去希求。</p><p>譬如农夫，耕田之后，卸去轭牛，放到草地上，（自己）坐于树荫之下休息，此时他的牛便很快的进入森林去了。如果是伶俐的农夫，想再捕他的牛来耕田，不必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "text": "tral_primary_uid\": \"mn4\" } }, \"raw_ocr\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"corrected_pali\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"chinese_translation\": \"‘失念者’没有正念；‘不正知者’缺少智慧。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"corrected\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"reason\": \"Bhayabheravasuttavaṇṇanā中‘Muṭṭhassatī’的 OCR 形式与校勘形式相同但仍存在文本不确定性；需结合相邻巴利语句、HTML 排版和页影像复核。\"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "念已忘失与不正知",
@@ -154,9 +175,41 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.85&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E9%80%99%E4%BD%8D%E5%B0%8A%E8%80%85%E6%98%AF%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%80%85%EF%BC%8C%E4%BD%86%EF%BC%8C%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E5%9C%A8%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E3%80%81%E5%BE%8B%E4%B8%AD%EF%BC%8C%E9%80%99%E6%98%AF%E9%80%80%E5%A4%B1%E3%80%82"
             }
           ]
+        },
+        {
+          "query": "念已忘失",
+          "hits": []
+        },
+        {
+          "query": "不正知",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap04.json",
+          "heading": "站内搜索命中",
+          "text": ">（答）因为那里的作用不明显故，即是说那里的舍对于征服寻等的作用不明显故。在此（第三禅）的舍已经不被寻伺等所征服，产生了很明显的作用，犹如高举的头，所以如是说。</p><p>「住于舍」这一句至此已经解释完毕。</p><p>在「念与正知」一句中，忆念为念，正当的知为正知。这是指人所具有的念与正知而言。此中念以忆念为相，不忘失为味，守护为现起。正知以不痴为相，推度为味，选择为现起。</p><p>虽在前面的诸禅之中亦有念与正知──如果失念者及不正知者，即近行定也不能成就，何况安止定──然而彼等诸禅粗故，犹如行于地上的人，禅心的进行是乐的，那里的念与正知的作用不明。 <span class=\\\"vism-page\\\">[163]</span>由于舍断于粗而成此禅的细，譬如人的航运于剑波海，其禅心的进行必须把握于念及正知的作用，所以这样说。</p><p>更有什么说念与正知的理由呢？譬如正在哺乳犊子，将它八母牛分开，但你不看守它的时候，它必定会再跑近母牛去；如是这第三禅的乐虽从喜分，如果不以念与正知去守护它，则必然又跑进于喜及不喜相应。或者诸有情是恋著于乐，而此三禅之乐是极其微妙，实无有乐而过于此，必须由于念与正知的威力才至恋于此乐，实无他法。为了表示这特殊的意义，故仅于第三禅说念与正知。</p><p>「乐以身受」",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site",
+          "query": "不正知"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap08.json",
+          "heading": "站内搜索命中",
+          "text": "）而已」。此时他便置心于（出入息的）自然的所触（之处）而起作意。 <span class=\\\"vism-page\\\">[284]</span>即（出入息）于长鼻者的鼻孔起触，于短鼻者的上唇（起触）。是故那比丘即以「（出入息）于此处触」而安置（其心）于相（即触处）。即以这种意义而考察，如世尊说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-066\\\">[08-066]</sup> 「诸比丘！我不说忘念及不正知之人是安般念的修习者」。虽然任何业处都只是念者及正知者而成就，但于此（安般念）以外的（业处）作意者是明了的。然而这重要而难修的安般念业处，只是佛、辟支佛、佛子等大人物的作意境地，不是低的有情所能习得的。对于（安般念）作意，则愈加寂静而微细，故于此（修习）必须有强念与强慧。</p><p>譬如缝细妙的衣服时，针要细，穿针孔的更要细，如是修习（安般念）业处之时像缝细妙之衣，像针的念，及如穿针孔的（与念）相应的慧必须坚强。</p><p>其次具足了此念与慧的比丘，对于出入息（之相）不应向自然的触处（鼻孔或上唇）以外去希求。</p><p>譬如农夫，耕田之后，卸去轭牛，放到草地上，（自己）坐于树荫之下休息，此时他的牛便很快的进入森林去了。如果是伶俐的农夫，想再捕他的牛来耕田，不必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site",
+          "query": "不正知"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "tral_primary_uid\": \"mn4\" } }, \"raw_ocr\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"corrected_pali\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"chinese_translation\": \"‘失念者’没有正念；‘不正知者’缺少智慧。\", \"correction_note\": [ { \"type\": \"textual_uncertainty\", \"original\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"corrected\": \"Muṭṭhassatī natthassati, asampajānā paññārahitā.\", \"reason\": \"Bhayabheravasuttavaṇṇanā中‘Muṭṭhassatī’的 OCR 形式与校勘形式相同但仍存在文本不确定性；需结合相邻巴利语句、HTML 排版和页影像复核。\"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%8D%E6%AD%A3%E7%9F%A5&scope=site",
+          "query": "不正知"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：念已忘失与不正知\n\n## 直接回答\n念已忘失与不正知在证据中常被并列提及，被视为修行中的障碍或退失因素 [1][2][4]。念已忘失者无法修习入出息念 [4]，且在如来教导的法、律中被视为退失 [8]。\n\n## 要点展开\n### 念已忘失与不正知的关系\n- 念已忘失与不正知常被并列提出，作为需要避免的负面状态 [1][2]。\n- 在修习入出息念的语境中，念已忘失、不正知者无法成就该修习 [4]。\n\n### 念已忘失的负面性质\n- 念已忘失被列为导致退失的因素之一 [8]。\n- 在列举不善法或退失法时，念已忘失与无信、无惭、无愧、懈怠、劣慧等并列 [6]。\n\n### 念已忘失与念的现前\n- 对念已忘失的男子，有为了回避的念已现前 [5]，也有为了般涅槃的念已现前 [7]，表明念已忘失并非绝对，仍有转机。\n\n## 分歧与张力\n证据 [5] 和 [7] 提到念已忘失者仍有“念已现前”，而 [4] 和 [8] 强调念已忘失的障碍和退失性质，两者侧重不同，但并非直接冲突，可能反映不同语境下的不同面向。\n\n## 证据覆盖情况\n现有证据覆盖了念已忘失与不正知的并列关系、在修习中的障碍作用、作为退失因素，以及念已忘失者仍有念现前的可能性。但未详细解释“不正知”的具体含义，也未提供对治方法。\n\n## 引用\n- [1] Early Buddhist · DN33 · 念已忘失与不正知 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5\n  > 念已忘失与不正知。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5%E3%80%82\n  > 念已忘失与不正知。\n- [3] Early Buddhist · 经藏/增支部_an · an5.210 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.210&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%B9%AB%E7%B8%9B%E3%80%81%E7%B2%A5%E3%80%81%E9%BD%92%E6%9C%A8%EF%BC%8C%E6%AD%8C%E8%AA%BF%E3%80%81%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%82\n  > 系缚、粥、齿木，歌调、念已忘失。\n- [4] Early Buddhist · 经藏/中部_mn · mn118 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn118&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%91%E8%AA%AA%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E4%B8%8D%E6%AD%A3%E7%9F%A5%E8%80%85%E7%84%A1%E5%85%A5%E5%87%BA%E6%81%AF%E5%BF%B5%E3%80%82\n  > 我说念已忘失、不正知者无入出息念。\n- [5] Early Buddhist · 经藏/中部_mn · mn8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn8&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E7%9A%84%E7%94%B7%E5%AD%90%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%9C%89%E7%82%BA%E4%BA%86%E5%9B%9E%E9%81%BF%E7%9A%84%E5%BF%B5%E5%B7%B2%E7%8F%BE%E5%89%8D%E3%80%82\n  > 对念已忘失的男子来说，有为了回避的念已现前。\n- [6] Early Buddhist · 经藏/增支部_an · an6.65 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an6.65&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E4%BF%A1%E3%80%81%E7%84%A1%E6%85%9A%E3%80%81%E7%84%A1%E6%84%A7%E3%80%81%E6%87%88%E6%80%A0%E3%80%81%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E3%80%81%E5%8A%A3%E6%85%A7%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 无信、无惭、无愧、懈怠、念已忘失、劣慧，比丘们！\n- [7] Early Buddhist · 经藏/中部_mn · mn8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn8&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%B0%8D%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E7%9A%84%E7%94%B7%E5%AD%90%E4%BE%86%E8%AA%AA%EF%BC%8C%E6%9C%89%E7%82%BA%E4%BA%86%E8%88%AC%E6%B6%85%E6%A7%83%E7%9A%84%E5%BF%B5%E5%B7%B2%E7%8F%BE%E5%89%8D%E3%80%82\n  > 对念已忘失的男子来说，有为了般涅槃的念已现前。\n- [8] Early Buddhist · 经藏/增支部_an · an10.85 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.85&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E9%80%99%E4%BD%8D%E5%B0%8A%E8%80%85%E6%98%AF%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%80%85%EF%BC%8C%E4%BD%86%EF%BC%8C%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E5%9C%A8%E8%A2%AB%E5%A6%82%E4%BE%86%E6%95%99%E5%B0%8E%E7%9A%84%E6%B3%95%E3%80%81%E5%BE%8B%E4%B8%AD%EF%BC%8C%E9%80%99%E6%98%AF%E9%80%80%E5%A4%B1%E3%80%82\n  > 『这位尊者是念已忘失者，但，念已忘失在被如来教导的法、律中，这是退失。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -167,12 +220,21 @@
       "order": 17,
       "label": "念已忘失与不正知",
       "members": "念已忘失与不正知",
+      "match_members": "念已忘失与不正知",
       "member_items": [
-        "念已忘失与不正知"
+        "念已忘失",
+        "不正知"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "念已忘失与不正知。"
+      ],
       "source_text": "念已忘失与不正知。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%BF%B5%E5%B7%B2%E5%BF%98%E5%A4%B1%E8%88%87%E4%B8%8D%E6%AD%A3%E7%9F%A5",
+      "expanded_points": [
+        "念已忘失：指丧失正念，不能持续觉知所缘，是修行中的障碍。",
+        "不正知：指缺乏正知，不能如实了知身心现象，与念已忘失并列，共同构成不善状态。"
+      ]
     }
   ]
 }

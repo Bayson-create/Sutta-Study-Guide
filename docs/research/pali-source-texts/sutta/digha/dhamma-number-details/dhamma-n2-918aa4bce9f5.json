@@ -5,7 +5,8 @@
     "number": 2,
     "label": "戒具足与见具足",
     "member_items": [
-      "戒具足与见具足"
+      "戒具足",
+      "见具足"
     ],
     "group_ids": [
       "dn33-n2-g27"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "戒具足与见具足"
+      "戒具足与见具足",
+      "戒具足",
+      "见具足"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「戒具足与见具足」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：戒具足与见具足。[1]\n\n## 所含各法\n### 戒具足与见具足\n经文将「戒具足与见具足」列为「戒具足与见具足」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：戒具足与见具足。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n戒具足与见具足是佛教修行中的两个重要概念，分别指戒行的圆满和正见的圆满。根据现有资料，DN33 中明确提及“戒具足与见具足”[1][2]，而相应部多部经典也以“戒具足等经”为题，涉及戒具足的内容[3][5][6][7][8]。此外，SN12.28 提到“见具足的比丘”[4]，表明见具足与比丘的修行状态相关。\n\n## 要点展开\n### 戒具足\n- 戒具足指戒行的圆满，是修行的重要基础。DN33 将戒具足与见具足并列[1][2]。\n- 相应部多部经典以“戒具足等经”为题，显示戒具足在修行中的重要性[3][5][6][7][8]。\n\n### 见具足\n- 见具足指正见的圆满，SN12.28 提到“这被称为见具足的比丘”[4]，表明见具足是比丘的一种成就。\n- DN33 将见具足与戒具足并列[1][2]。\n\n## 分歧与张力\n现有证据中，DN33 将戒具足与见具足并列[1][2]，而相应部经典多强调戒具足[3][5][6][7][8]，SN12.28 则单独提及见具足[4]。这可能导致对两者关系的不同理解：一种观点认为两者同等重要，另一种观点可能更侧重戒具足的基础性。但现有证据未明确说明两者之间的具体关系或优先级。\n\n## 证据覆盖情况\n现有证据主要覆盖了戒具足与见具足作为修行概念的存在，以及它们在经典中的提及情况。但未详细解释两者的具体定义、修行方法或相互关系，也未提供更多关于见具足的详细描述。",
       "evidence": [
         {
           "kind": "source",
@@ -35,7 +38,13 @@
           "kind": "early_buddhist",
           "label": "Early Buddhist · 经藏/相应部_sn · sn45.50-54",
           "text": "戒具足等经五则",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.50-54&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.50-54&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/相应部_sn · sn12.28",
+          "text": "这被称为见具足的比丘；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.28&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E6%AF%94%E4%B8%98%EF%BC%9B"
         },
         {
           "kind": "early_buddhist",
@@ -72,9 +81,45 @@
           "label": "Early Buddhist · 经藏/中部_mn · mn29",
           "text": "不［以］戒具足为效益；",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn29&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%B8%8D%EF%BC%BB%E4%BB%A5%EF%BC%BD%E6%88%92%E5%85%B7%E8%B6%B3%E7%82%BA%E6%95%88%E7%9B%8A%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.117",
+          "text": "这被称为见的具足。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.118",
+          "text": "这被称为见的具足。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.118&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.119",
+          "text": "这被称为见的具足。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.119&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap13.json",
+          "text": "见」──是见颠倒的人。「行邪见业」──因邪见而行种种恶业的人，也是那些怂恿吃人在邪见的根本中而行身业等的人。这里虽然以前面的「语恶行」一语而得包摄「诽谤圣者」，以「意恶行」一语而得包摄「邪见」，但更述此等（诽谤圣者及邪见）二语，当知是为了表示此二大罪之故。因为诽谤圣者为和无间业相似，故为大罪。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"13-030\\\">[13-030]</sup> ：「舍利弗，譬如戒具足定具足及慧具足的比丘，即于现世而证圆满（阿罗汉果）。舍利弗，同样的，我也说：如果不舍那（诽谤圣者之）语，不舍那（诽谤圣者之）心，不舍那（诽谤圣者之）见，则如被（狱卒）取之而投地狱者一样的必投于地狱」。 <span class=\\\"vism-page\\\">[427]</span>并且更无有罪大于邪见。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"13-031\\\">[13-031]</sup> ：「诸比丘！我实未见其他一法有如邪见这样大的罪。诸比丘！邪见是最大的罪恶」。</p><p>「身坏」──是舍去有执受（有情）的五蕴。「死后」──即死后而取新生的五蕴之时；或者「身坏」是命根的断绝，「死后」是死了心以后。「苦界」等几个字都是地狱的异",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "走的满月一样；在金山顶上洒下成熟的茜草汁一样；用闪电缠绕奇达库塔山顶一样；震动包括轮围山、须弥山、由干陀罗山在内的大地，披上如榕树嫩叶般颜色的上等红衣，从香舍门出来，如从金山洞出来的狮子，如从日出山顶出来的满月。出来后，站在香舍门前。从他的身体，如云中闪电般的光芒发出，使如金汁洒落、供养花果的树枝般的沙罗树。同时，大比丘僧众各自拿着衣钵，围绕世尊。那些围绕站立的比丘们是这样的：少欲、知足、独处、不混杂、精进、持戒、堪忍、教诫、呵责恶法、戒具足、定具足、慧解脱、解脱知见具足。被他们围绕的世尊，如被红毯围绕的金山，如红莲花池中的金山，如被珊瑚栏杆围绕的金船，如金殿般闪耀。舍利弗、目犍连等大长老也披上云色的粪扫衣，如被宝甲装饰的大象，围绕着他，他们已离贪、已断烦恼、已解开结缚、已断系缚，不执着于家族或团体。这样，世尊自己离贪，被离贪者围绕；离嗔，被离嗔者围绕；离痴，被离痴者围绕；无渴爱，被无渴爱者围绕；无烦恼，被无烦恼者围绕；自己是佛陀，被多闻的佛陀围绕，如钵被围绕，如花蕊被围绕，如花蕊被八万八千围绕，如六牙象王被九万只鹅围绕，如持国天王鹅王被军队围绕，如转轮王被众生围绕，如帝释天王被梵众围绕，如大梵天被星群围绕，如满月，以无与伦比的佛陀威仪、无量的佛陀风采，踏上了前往迦毗罗卫城的道路。从他的身体前侧，金色的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "三处，其戒如背上或腹上生起异色、黑红等任一色之母牛，名为“斑”。若于其间各处破坏，其戒如处处有异色斑点之母牛，名为“杂”。若完全无破坏，则彼诸戒名为“无缺、无洞、无斑、无杂”。\\n\\n42. 又彼诸戒，因从渴爱之奴役中解脱、令成自由人故，名为“自由”；因被佛陀等智者所赞叹故，名为“智者所赞”；因不为渴爱与邪见所执取，且无人能执取说“你曾犯此”故，名为“无执取”；因能导向近行定或安止定故，名为“定相应”。〔此处原文有缺漏，需复核〕 渡口之戒具足而住者，与各处安住的比丘们同具戒德而住。因为入流者等圣者，即使住在海中或天界，与其他入流者等圣者的戒也是相同的；没有道戒的差别。这是为此而说的。44. 所谓“此见”是指与道相应的正见。圣者是无过的。能导出者，是出离性的。行此者，是如是而行者。为灭尽苦，是为灭尽一切苦。具足见者，是具足相同见解而住。最胜者，是最上者。摄持一切椽者，是摄受者。令一切椽聚合者，是聚合者。即“聚合”之义。所谓“此屋之顶”者，即那顶阁之顶盖的聚合，名为顶。因为五层楼等宫殿，是以顶阁相连而安立的。当那顶阁倒下时，以泥灰等为首，一切皆倒。所以这样说。如是亦然，如顶阁对于顶阁之屋，这些和合法的此圣见，应知为最胜、摄持、聚合。45. 诸比丘，如何是“此见”呢？此处，诸比丘，那入流道之见，被称为圣、出离",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "戒具足与见具足",
@@ -160,9 +205,203 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn29&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%B8%8D%EF%BC%BB%E4%BB%A5%EF%BC%BD%E6%88%92%E5%85%B7%E8%B6%B3%E7%82%BA%E6%95%88%E7%9B%8A%EF%BC%9B"
             }
           ]
+        },
+        {
+          "query": "戒具足",
+          "hits": [
+            {
+              "uid": "sn45.50-54",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.50-54&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "sn45.57-61",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.57-61&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "sn45.64-68",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.64-68&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "sn45.71-75",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.71-75&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "sn45.78-82",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.78-82&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "sn45.85-89",
+              "collection": "经藏/相应部_sn",
+              "title": "戒具足等经五则",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足等经五则",
+              "score": 24.99341626545985,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn45.85-89&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足与见具足。",
+              "score": 23.682644879129242,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3%E3%80%82"
+            },
+            {
+              "uid": "mn29",
+              "collection": "经藏/中部_mn",
+              "title": "心材譬喻大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不［以］戒具足为效益；",
+              "score": 22.502508329347638,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn29&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%B8%8D%EF%BC%BB%E4%BB%A5%EF%BC%BD%E6%88%92%E5%85%B7%E8%B6%B3%E7%82%BA%E6%95%88%E7%9B%8A%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "见具足",
+          "hits": [
+            {
+              "uid": "sn12.28",
+              "collection": "经藏/相应部_sn",
+              "title": "比丘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见具足的比丘；",
+              "score": 16.01380855445555,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.28&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E6%AF%94%E4%B8%98%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "戒具足与见具足。",
+              "score": 16.01380855445555,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3%E3%80%82"
+            },
+            {
+              "uid": "an3.117",
+              "collection": "经藏/增支部_an",
+              "title": "坏失与具足经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见的具足。",
+              "score": 15.843872112348294,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.117&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+            },
+            {
+              "uid": "an3.118",
+              "collection": "经藏/增支部_an",
+              "title": "骰子经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见的具足。",
+              "score": 15.843872112348294,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.118&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+            },
+            {
+              "uid": "an3.119",
+              "collection": "经藏/增支部_an",
+              "title": "行为经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见的具足。",
+              "score": 15.843872112348294,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.119&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E7%9A%84%E5%85%B7%E8%B6%B3%E3%80%82"
+            },
+            {
+              "uid": "sn12.27",
+              "collection": "经藏/相应部_sn",
+              "title": "缘经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见具足的圣弟子；",
+              "score": 15.215819948336101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.27&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%EF%BC%9B"
+            },
+            {
+              "uid": "sn12.33",
+              "collection": "经藏/相应部_sn",
+              "title": "智之事经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见具足的圣弟子；",
+              "score": 15.215819948336101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.33&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%EF%BC%9B"
+            },
+            {
+              "uid": "sn12.33",
+              "collection": "经藏/相应部_sn",
+              "title": "智之事经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这被称为见具足的圣弟子；",
+              "score": 15.215819948336101,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.33&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%EF%BC%9B"
+            }
+          ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap13.json",
+          "heading": "站内搜索命中",
+          "text": "见」──是见颠倒的人。「行邪见业」──因邪见而行种种恶业的人，也是那些怂恿吃人在邪见的根本中而行身业等的人。这里虽然以前面的「语恶行」一语而得包摄「诽谤圣者」，以「意恶行」一语而得包摄「邪见」，但更述此等（诽谤圣者及邪见）二语，当知是为了表示此二大罪之故。因为诽谤圣者为和无间业相似，故为大罪。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"13-030\\\">[13-030]</sup> ：「舍利弗，譬如戒具足定具足及慧具足的比丘，即于现世而证圆满（阿罗汉果）。舍利弗，同样的，我也说：如果不舍那（诽谤圣者之）语，不舍那（诽谤圣者之）心，不舍那（诽谤圣者之）见，则如被（狱卒）取之而投地狱者一样的必投于地狱」。 <span class=\\\"vism-page\\\">[427]</span>并且更无有罪大于邪见。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"13-031\\\">[13-031]</sup> ：「诸比丘！我实未见其他一法有如邪见这样大的罪。诸比丘！邪见是最大的罪恶」。</p><p>「身坏」──是舍去有执受（有情）的五蕴。「死后」──即死后而取新生的五蕴之时；或者「身坏」是命根的断绝，「死后」是死了心以后。「苦界」等几个字都是地狱的异",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site",
+          "query": "戒具足"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "走的满月一样；在金山顶上洒下成熟的茜草汁一样；用闪电缠绕奇达库塔山顶一样；震动包括轮围山、须弥山、由干陀罗山在内的大地，披上如榕树嫩叶般颜色的上等红衣，从香舍门出来，如从金山洞出来的狮子，如从日出山顶出来的满月。出来后，站在香舍门前。从他的身体，如云中闪电般的光芒发出，使如金汁洒落、供养花果的树枝般的沙罗树。同时，大比丘僧众各自拿着衣钵，围绕世尊。那些围绕站立的比丘们是这样的：少欲、知足、独处、不混杂、精进、持戒、堪忍、教诫、呵责恶法、戒具足、定具足、慧解脱、解脱知见具足。被他们围绕的世尊，如被红毯围绕的金山，如红莲花池中的金山，如被珊瑚栏杆围绕的金船，如金殿般闪耀。舍利弗、目犍连等大长老也披上云色的粪扫衣，如被宝甲装饰的大象，围绕着他，他们已离贪、已断烦恼、已解开结缚、已断系缚，不执着于家族或团体。这样，世尊自己离贪，被离贪者围绕；离嗔，被离嗔者围绕；离痴，被离痴者围绕；无渴爱，被无渴爱者围绕；无烦恼，被无烦恼者围绕；自己是佛陀，被多闻的佛陀围绕，如钵被围绕，如花蕊被围绕，如花蕊被八万八千围绕，如六牙象王被九万只鹅围绕，如持国天王鹅王被军队围绕，如转轮王被众生围绕，如帝释天王被梵众围绕，如大梵天被星群围绕，如满月，以无与伦比的佛陀威仪、无量的佛陀风采，踏上了前往迦毗罗卫城的道路。从他的身体前侧，金色的",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site",
+          "query": "戒具足"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "三处，其戒如背上或腹上生起异色、黑红等任一色之母牛，名为“斑”。若于其间各处破坏，其戒如处处有异色斑点之母牛，名为“杂”。若完全无破坏，则彼诸戒名为“无缺、无洞、无斑、无杂”。\\n\\n42. 又彼诸戒，因从渴爱之奴役中解脱、令成自由人故，名为“自由”；因被佛陀等智者所赞叹故，名为“智者所赞”；因不为渴爱与邪见所执取，且无人能执取说“你曾犯此”故，名为“无执取”；因能导向近行定或安止定故，名为“定相应”。〔此处原文有缺漏，需复核〕 渡口之戒具足而住者，与各处安住的比丘们同具戒德而住。因为入流者等圣者，即使住在海中或天界，与其他入流者等圣者的戒也是相同的；没有道戒的差别。这是为此而说的。44. 所谓“此见”是指与道相应的正见。圣者是无过的。能导出者，是出离性的。行此者，是如是而行者。为灭尽苦，是为灭尽一切苦。具足见者，是具足相同见解而住。最胜者，是最上者。摄持一切椽者，是摄受者。令一切椽聚合者，是聚合者。即“聚合”之义。所谓“此屋之顶”者，即那顶阁之顶盖的聚合，名为顶。因为五层楼等宫殿，是以顶阁相连而安立的。当那顶阁倒下时，以泥灰等为首，一切皆倒。所以这样说。如是亦然，如顶阁对于顶阁之屋，这些和合法的此圣见，应知为最胜、摄持、聚合。45. 诸比丘，如何是“此见”呢？此处，诸比丘，那入流道之见，被称为圣、出离",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E5%85%B7%E8%B6%B3&scope=site",
+          "query": "戒具足"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：戒具足与见具足\n\n## 直接回答\n戒具足与见具足是佛教修行中的两个重要概念，分别指戒行的圆满和正见的圆满。根据现有资料，DN33 中明确提及“戒具足与见具足”[1][2]，而相应部多部经典也以“戒具足等经”为题，涉及戒具足的内容[3][5][6][7][8]。此外，SN12.28 提到“见具足的比丘”[4]，表明见具足与比丘的修行状态相关。\n\n## 要点展开\n### 戒具足\n- 戒具足指戒行的圆满，是修行的重要基础。DN33 将戒具足与见具足并列[1][2]。\n- 相应部多部经典以“戒具足等经”为题，显示戒具足在修行中的重要性[3][5][6][7][8]。\n\n### 见具足\n- 见具足指正见的圆满，SN12.28 提到“这被称为见具足的比丘”[4]，表明见具足是比丘的一种成就。\n- DN33 将见具足与戒具足并列[1][2]。\n\n## 分歧与张力\n现有证据中，DN33 将戒具足与见具足并列[1][2]，而相应部经典多强调戒具足[3][5][6][7][8]，SN12.28 则单独提及见具足[4]。这可能导致对两者关系的不同理解：一种观点认为两者同等重要，另一种观点可能更侧重戒具足的基础性。但现有证据未明确说明两者之间的具体关系或优先级。\n\n## 证据覆盖情况\n现有证据主要覆盖了戒具足与见具足作为修行概念的存在，以及它们在经典中的提及情况。但未详细解释两者的具体定义、修行方法或相互关系，也未提供更多关于见具足的详细描述。\n\n## 引用\n- [1] Early Buddhist · DN33 · 戒具足与见具足 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3\n  > 戒具足与见具足。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3%E3%80%82\n  > 戒具足与见具足。\n- [3] Early Buddhist · 经藏/相应部_sn · sn45.50-54 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.50-54&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87\n  > 戒具足等经五则\n- [4] Early Buddhist · 经藏/相应部_sn · sn12.28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.28&lang=zh&q=%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%9A%84%E6%AF%94%E4%B8%98%EF%BC%9B\n  > 这被称为见具足的比丘；\n- [5] Early Buddhist · 经藏/相应部_sn · sn45.57-61 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.57-61&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87\n  > 戒具足等经五则\n- [6] Early Buddhist · 经藏/相应部_sn · sn45.64-68 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.64-68&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87\n  > 戒具足等经五则\n- [7] Early Buddhist · 经藏/相应部_sn · sn45.71-75 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.71-75&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87\n  > 戒具足等经五则\n- [8] Early Buddhist · 经藏/相应部_sn · sn45.78-82 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.78-82&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E7%AD%89%E7%B6%93%E4%BA%94%E5%89%87\n  > 戒具足等经五则",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -173,12 +412,21 @@
       "order": 27,
       "label": "戒具足与见具足",
       "members": "戒具足与见具足",
+      "match_members": "戒具足与见具足",
       "member_items": [
-        "戒具足与见具足"
+        "戒具足",
+        "见具足"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "戒具足与见具足。"
+      ],
       "source_text": "戒具足与见具足。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E5%85%B7%E8%B6%B3%E8%88%87%E8%A6%8B%E5%85%B7%E8%B6%B3",
+      "expanded_points": [
+        "戒具足：指戒行的圆满，是修行的重要基础。",
+        "见具足：指正见的圆满，与戒具足并列，共同构成修行的重要方面。"
+      ]
     }
   ]
 }

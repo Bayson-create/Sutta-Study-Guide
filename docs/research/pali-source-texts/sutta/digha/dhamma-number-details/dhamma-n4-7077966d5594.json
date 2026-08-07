@@ -25,13 +25,13 @@
       "意思，第四"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四食」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：或粗或细的物质食物，第二、触，第三、意思，第四、识。[1]\n- DN34：或粗或细的物质食物，第二、触，第三、意思，第四、识。[2]\n\n## 所含各法\n### 或粗或细的物质食物，第二\n经文将「或粗或细的物质食物，第二」列为「四食」的一个成员。Early Buddhist 用该名词检索时，在《正见经》命中：或粗或细的物质食物，第二、触，第三、意思，第四、识。。[4]\n### 触，第三\n经文将「触，第三」列为「四食」的一个成员。Early Buddhist 用该名词检索时，在《根源于触经》命中：这三受生于触，根源于触，因于触，缘于触，哪三个呢？。[5]\n### 意思，第四\n经文将「意思，第四」列为「四食」的一个成员。Early Buddhist 用该名词检索时，在《正见经》命中：或粗或细的物质食物，第二、触，第三、意思，第四、识。。[4]\n### 识\n经文将「识」列为「四食」的一个成员；当前 Early Buddhist 检索没有返回可引用的命中，以下仍以两经原文为准。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 27 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 3 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四食指四种维持有情生存的食：或粗或细的物质食物、触、意思、识 [1][2][4][6][7][8]。其中，DN34 特别指出这四食是“应该被遍知的四法” [2][7]。\n\n## 要点展开\n### 四食的构成\n- 四食包括：或粗或细的物质食物、触、意思、识 [1][2][4][6][7][8]。\n- 在 AN10.27 中，也提及“四食” [3]。\n\n### 四食的定位\n- DN34 将四食列为“应该被遍知的四法”之一 [2][7]。\n\n## 证据覆盖情况\n现有证据一致地列出了四食的具体内容，并指出其在 DN34 中作为应遍知法的定位；但未涉及四食的详细定义、作用机制或与其他法数的关联。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四食",
           "text": "四食：或粗或细的物质食物，第二、触，第三、意思，第四、识。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82"
         },
         {
           "kind": "source",
@@ -119,12 +119,24 @@
         },
         {
           "kind": "site",
-          "label": "docs/suttas.json",
-          "text": "h_author\": \"zhuang\" }, { \"uid\": \"mn38\", \"name\": \"MN 38 Mahātaṇhāsaṅkhaya Sutta\", \"focus\": \"反误解、缘起重述\", \"summary\": \"佛陀纠正“识流转不变”的误解，通过缘起、受胎、滋养、四食等结构说明识依条件而生。修辞重点是拆除错误概念的连续性幻觉。\", \"en_url\": \"https://suttacentral.net/mn38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn38/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\", \"zh_a",
+          "label": "docs/research/vism-data/zh_chap11.json",
+          "text": "up class=\\\"vism-fnref\\\" data-fn=\\\"11-004\\\">[11-004]</sup> 。然而这四的中，是谁取来什么？即（一）段食取来以滋素为第八的八种元素 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-005\\\">[11-005]</sup> ，（二）触食取来（苦乐舍的）三受，（三）意思食取来于（欲、色、无色的）三有中结生，（四）识食取来于结刹那的名色。</p><p>在此四食中，段食有贪求的怖畏，触食有接触（所缘）的怖畏，意思食有（诸有的）生的怖畏，识食有结生的怖畏。关于它们的怖畏，以（自己）儿子的肉的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-006\\\">[11-006]</sup> 而说明段食，以坏皮肤的牛的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-007\\\">[11-007]</sup> 而说明触食，以火炕的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-008\\\">[11-008]</sup> 说明意思食，以剑戟的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-009\\\">",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap16.json",
+          "text": "是因(集道)的空，因为苦与集、灭与道不结合之故。不像合论者(胜论派)所说的二微等，因不是与因的果结合的。所以这样说:</p><p>三者是灭空，灭是三者空， 因是果的空，果亦是因空。</p><p>---如是当知先以空的抉择说---</p><p><span class=\\\"vism-page\\\">[514]</span> (十四)「以一种等」:此四谛中，一切的「苦」，依其现起之性为一种。依名与色为二种。依欲、色、无色界的生起各别为三种。依四食为四种。依五取蕴的差别为五种。</p><p>「集」亦依其现起之性为一种。由于邪见的相应与不相应为二种。依欲爱、有爱、无有爱为三种。由四果道所断故为四种。由于色欢喜等 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-067\\\">[16-067]</sup> 的不同为五种。由于六爱身的不同为六种。</p><p>「灭」亦依无为界为一种。依于经说的有余依及无余依的差别为二种。由于三有的寂灭故为三种。由于四圣道而证故为四种。由于五欢喜(色声香味触的五欲)的寂灭故为五种。由于六爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap17.json",
+          "text": "的意思怎样？ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-023\\\">[17-023]</sup> 尊师，无明缘行，我们的意思是无明缘行」。（4）在这些人里面的一人，先看见蔓的中部，他便割断中部，向下而至于根，取而使用。世尊亦这样从中开始而至最后说※17-002※ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-024\\\">[17-024]</sup> ：「诸比丘，此等四食，是什么因缘？是什么集？是什么生因？是什么原因？此等四食以渴爱为因缘，以渴爱为集，以渴爱为生因，以渴爱为原因。渴爱是什么因缘？...受...触...六处...名色...识...行是什么因缘？......行以无明为因缘......乃至......行以无明为原因」。</p><p>为什么他要这样说？因为缘起的完善及他（世尊）自己到达说法的微妙之故。即缘起的确是完善的，由（四种说法的）任何一种都得通达正道。因为世尊以无畏及四无碍相应并到达四种甚深的状态，故为到达说法的微妙，因他到达说法的微妙，所以才能以种种的方法而说法。</p><p>特别是：（1）他从最初开始的顺说，因为他观察其所化的人（弟子们）迷昧于（诸法）进行的原因的分别，为示各各以自己的原因而进行，为示其生起的次第，所",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四食",
@@ -433,13 +445,36 @@
           "query": "四食"
         },
         {
-          "source": "docs/suttas.json",
+          "source": "docs/research/vism-data/zh_chap11.json",
           "heading": "站内搜索命中",
-          "text": "h_author\": \"zhuang\" }, { \"uid\": \"mn38\", \"name\": \"MN 38 Mahātaṇhāsaṅkhaya Sutta\", \"focus\": \"反误解、缘起重述\", \"summary\": \"佛陀纠正“识流转不变”的误解，通过缘起、受胎、滋养、四食等结构说明识依条件而生。修辞重点是拆除错误概念的连续性幻觉。\", \"en_url\": \"https://suttacentral.net/mn38/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/mn38/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\", \"zh_a",
+          "text": "up class=\\\"vism-fnref\\\" data-fn=\\\"11-004\\\">[11-004]</sup> 。然而这四的中，是谁取来什么？即（一）段食取来以滋素为第八的八种元素 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-005\\\">[11-005]</sup> ，（二）触食取来（苦乐舍的）三受，（三）意思食取来于（欲、色、无色的）三有中结生，（四）识食取来于结刹那的名色。</p><p>在此四食中，段食有贪求的怖畏，触食有接触（所缘）的怖畏，意思食有（诸有的）生的怖畏，识食有结生的怖畏。关于它们的怖畏，以（自己）儿子的肉的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-006\\\">[11-006]</sup> 而说明段食，以坏皮肤的牛的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-007\\\">[11-007]</sup> 而说明触食，以火炕的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-008\\\">[11-008]</sup> 说明意思食，以剑戟的譬喻 <sup class=\\\"vism-fnref\\\" data-fn=\\\"11-009\\\">",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site",
+          "query": "四食"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap16.json",
+          "heading": "站内搜索命中",
+          "text": "是因(集道)的空，因为苦与集、灭与道不结合之故。不像合论者(胜论派)所说的二微等，因不是与因的果结合的。所以这样说:</p><p>三者是灭空，灭是三者空， 因是果的空，果亦是因空。</p><p>---如是当知先以空的抉择说---</p><p><span class=\\\"vism-page\\\">[514]</span> (十四)「以一种等」:此四谛中，一切的「苦」，依其现起之性为一种。依名与色为二种。依欲、色、无色界的生起各别为三种。依四食为四种。依五取蕴的差别为五种。</p><p>「集」亦依其现起之性为一种。由于邪见的相应与不相应为二种。依欲爱、有爱、无有爱为三种。由四果道所断故为四种。由于色欢喜等 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-067\\\">[16-067]</sup> 的不同为五种。由于六爱身的不同为六种。</p><p>「灭」亦依无为界为一种。依于经说的有余依及无余依的差别为二种。由于三有的寂灭故为三种。由于四圣道而证故为四种。由于五欢喜(色声香味触的五欲)的寂灭故为五种。由于六爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site",
+          "query": "四食"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap17.json",
+          "heading": "站内搜索命中",
+          "text": "的意思怎样？ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-023\\\">[17-023]</sup> 尊师，无明缘行，我们的意思是无明缘行」。（4）在这些人里面的一人，先看见蔓的中部，他便割断中部，向下而至于根，取而使用。世尊亦这样从中开始而至最后说※17-002※ <sup class=\\\"vism-fnref\\\" data-fn=\\\"17-024\\\">[17-024]</sup> ：「诸比丘，此等四食，是什么因缘？是什么集？是什么生因？是什么原因？此等四食以渴爱为因缘，以渴爱为集，以渴爱为生因，以渴爱为原因。渴爱是什么因缘？...受...触...六处...名色...识...行是什么因缘？......行以无明为因缘......乃至......行以无明为原因」。</p><p>为什么他要这样说？因为缘起的完善及他（世尊）自己到达说法的微妙之故。即缘起的确是完善的，由（四种说法的）任何一种都得通达正道。因为世尊以无畏及四无碍相应并到达四种甚深的状态，故为到达说法的微妙，因他到达说法的微妙，所以才能以种种的方法而说法。</p><p>特别是：（1）他从最初开始的顺说，因为他观察其所化的人（弟子们）迷昧于（诸法）进行的原因的分别，为示各各以自己的原因而进行，为示其生起的次第，所",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site",
+          "query": "四食"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": ". 122).\", \"chinese_translation\": \"44. 这里的经文是：“有信者少尘，无信者多尘。精进者……懈怠者……正念者……失念者……定者……散乱者……慧者……愚者多尘。”同样，“有信者利根……慧者见来世过患恐惧，愚者不见来世过患恐惧。”“世间”指蕴世间、界世间、处世间、成就生存世间、成就生存之因世间、败亡生存世间、败亡生存之因世间。一种世间：一切众生依食物而住。二种世间：名与色。三种世间：三受。四种世间：四食。五种世间：五取蕴。六种世间：六内处。七种世间：七识住。八种世间：八世间法。九种世间：九有情居。十种世间：十处。十二种世间：十二处。十八种世间：十八界。“过患”指一切烦恼是过患，一切恶行是过患，一切行是过患，一切趣生之业是过患。如此，在此世间和此过患中，强烈的恐惧想生起，犹如举剑的杀手。以这五十种方式，他知、见、觉、通达这五根。这是如来的根之上下智。”（Ps. i. 122）\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Ayar' 修正为 'Ayaṃ'。\" }, { \"t",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E9%A3%9F&scope=site",
           "query": "四食"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：四食\n\n## 直接回答\n四食指四种维持有情生存的食：或粗或细的物质食物、触、意思、识 [1][2][4][6][7][8]。其中，DN34 特别指出这四食是“应该被遍知的四法” [2][7]。\n\n## 要点展开\n### 四食的构成\n- 四食包括：或粗或细的物质食物、触、意思、识 [1][2][4][6][7][8]。\n- 在 AN10.27 中，也提及“四食” [3]。\n\n### 四食的定位\n- DN34 将四食列为“应该被遍知的四法”之一 [2][7]。\n\n## 证据覆盖情况\n现有证据一致地列出了四食的具体内容，并指出其在 DN34 中作为应遍知法的定位；但未涉及四食的详细定义、作用机制或与其他法数的关联。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四食 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82\n  > 四食：或粗或细的物质食物，第二、触，第三、意思，第四、识。\n- [2] Early Buddhist · DN34 · 四食 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98\n  > （三）哪些是应该被遍知的四法呢？四食：或粗或细的物质食物，第二、触，第三、意思，第四、识，这些是应该被遍知的四法。\n- [3] Early Buddhist · 经藏/增支部_an · an10.27 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%9B%9B%E9%A3%9F%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 四食，比丘们！\n- [4] Early Buddhist · 经藏/中部_mn · mn9 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn9&lang=zh&q=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82\n  > 或粗或细的物质食物，第二、触，第三、意思，第四、识。\n- [5] Early Buddhist · 经藏/相应部_sn · sn36.10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn36.10&lang=zh&q=%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%B8%89%E5%8F%97%E7%94%9F%E6%96%BC%E8%A7%B8%EF%BC%8C%E6%A0%B9%E6%BA%90%E6%96%BC%E8%A7%B8%EF%BC%8C%E5%9B%A0%E6%96%BC%E8%A7%B8%EF%BC%8C%E7%B7%A3%E6%96%BC%E8%A7%B8%EF%BC%8C%E5%93%AA%E4%B8%89%E5%80%8B%E5%91%A2%EF%BC%9F\n  > 这三受生于触，根源于触，因于触，缘于触，哪三个呢？\n- [6] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E9%A3%9F%EF%BC%9A%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82\n  > 四食：或粗或细的物质食物，第二、触，第三、意思，第四、识。\n- [7] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E9%A3%9F%EF%BC%9A%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82\n  > 四食：或粗或细的物质食物，第二、触，第三、意思，第四、识，这些是应该被遍知的四法。\n- [8] Early Buddhist · 经藏/中部_mn · mn38 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn38&lang=zh&q=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82\n  > 或粗或细的物质食物，第二、触，第三、意思，第四、识。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -449,7 +484,8 @@
       "number": 4,
       "order": 17,
       "label": "四食",
-      "members": "或粗或细的物质食物，第二、触，第三、意思，第四、识",
+      "members": "或粗或细的物质食物，第二、触，第三、意思，第四、识。",
+      "match_members": "或粗或细的物质食物，第二、触，第三、意思，第四、识",
       "member_items": [
         "或粗或细的物质食物，第二",
         "触，第三",
@@ -457,8 +493,17 @@
         "识"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四食：或粗或细的物质食物，第二、触，第三、意思，第四、识。"
+      ],
       "source_text": "四食：或粗或细的物质食物，第二、触，第三、意思，第四、识。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98%E3%80%82",
+      "expanded_points": [
+        "物质食物：或粗或细的物质食物是四食中的第一食。",
+        "触：触是四食中的第二食。",
+        "意思：意思是四食中的第三食。",
+        "识：识是四食中的第四食。"
+      ]
     },
     {
       "id": "dn34-n4-g3",
@@ -467,6 +512,7 @@
       "order": 3,
       "label": "四食",
       "members": "或粗或细的物质食物，第二、触，第三、意思，第四、识",
+      "match_members": "或粗或细的物质食物，第二、触，第三、意思，第四、识",
       "member_items": [
         "或粗或细的物质食物，第二",
         "触，第三",
@@ -474,8 +520,17 @@
         "识"
       ],
       "dn34_status": "应遍知",
+      "source_paragraphs": [
+        "（三）哪些是应该被遍知的四法呢？四食：或粗或细的物质食物，第二、触，第三、意思，第四、识，这些是应该被遍知的四法。"
+      ],
       "source_text": "（三）哪些是应该被遍知的四法呢？四食：或粗或细的物质食物，第二、触，第三、意思，第四、识，这些是应该被遍知的四法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E9%A3%9F&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%96%E7%B2%97%E6%88%96%E7%B4%B0%E7%9A%84%E7%89%A9%E8%B3%AA%E9%A3%9F%E7%89%A9%EF%BC%8C%E7%AC%AC%E4%BA%8C%E3%80%81%E8%A7%B8%EF%BC%8C%E7%AC%AC%E4%B8%89%E3%80%81%E6%84%8F%E6%80%9D%EF%BC%8C%E7%AC%AC%E5%9B%9B%E3%80%81%E8%AD%98",
+      "expanded_points": [
+        "物质食物：或粗或细的物质食物是四食中的第一食，属于应该被遍知的四法。",
+        "触：触是四食中的第二食，属于应该被遍知的四法。",
+        "意思：意思是四食中的第三食，属于应该被遍知的四法。",
+        "识：识是四食中的第四食，属于应该被遍知的四法。"
+      ]
     }
   ]
 }

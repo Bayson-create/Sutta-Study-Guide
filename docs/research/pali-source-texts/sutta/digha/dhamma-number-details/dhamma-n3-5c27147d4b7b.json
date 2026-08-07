@@ -22,13 +22,13 @@
       "非有学非无学人"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三人」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有学人、无学人、非有学非无学人。[1]\n\n## 所含各法\n### 有学人\n经文将「有学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《有学经》命中：你对迦毘罗卫城释迦族人说有学的行道者。。[3]\n### 无学人\n经文将「无学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《有学经》命中：』住立于无学阶位的无学比丘了知：『我是无学。。[4]\n### 非有学非无学人\n经文将「非有学非无学人」列为「三人」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三慧：有学慧、无学慧、非有学非无学慧。。[5]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 4 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n“三人”指有学人、无学人、非有学非无学人三类人 [1][2]。\n\n## 要点展开\n### 三人的定义\n- 有学人：指在修行道上的行者，如迦毘罗卫城释迦族人中的有学行道者 [3]。\n- 无学人：指已住立于无学阶位的比丘，自知“我是无学” [4]。\n- 非有学非无学人：既非有学亦非无学之人，如凡夫或未入道者（证据未明说，但依分类推断）[1][2]。\n\n## 证据覆盖情况\n现有证据明确给出了“三人”的三种分类名称 [1][2]，并提供了有学、无学的部分描述 [3][4]，但对“非有学非无学人”的具体定义未直接说明。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三人",
           "text": "三人：有学人、无学人、非有学非无学人。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -125,9 +125,15 @@
           "label": "docs/research/forest-monks/forest-dhamma/teachings-of-ajahn-chah-summary.md",
           "text": "名字上是盐，实质仍是沙子，煮不出咸味\"。 阿姜查特别指出，\"解脱\"这个词本身也是一种施设，用来指称\"超越施设的东西\"，可施设本身仍有其存在的必要——没有施设我们将无法沟通、无法称呼彼此。 关于\"对与错\"，他提出了一个深刻的相对主义立场，但落脚于实用标准： > \"在究竟层面，我们其实并不真正知道什么是对、什么是错……但在实用的层面，我们可以说：'对'是不伤害自己也不伤害他人。\" 本章结尾讲了一个经典寓言——**四人林中闻鸡鸣**，三人说是母鸡叫，一人坚持是公鸡叫，争论到落泪，其实\"无论说母鸡或公鸡，都只是名字\"，若直接说\"根本没有母鸡公鸡\"，争论便自然终止。以此指出世间对错之争永无休止，唯有智慧才能超越。 **要点提炼**： - 一切世俗名相（姓名、身份、金钱、礼俗）皆是施设，本身\"空无自性\"，但有实用价值； - 知施设而不迷执于施设，即是解脱之钥； - 对错、善恶之争在世俗层面永无定论，唯有以\"是否伤害自他\"为实用准绳； - 佛法修行的完成之处是\"无所有处\"——放下一切争论与执著的休止符。 --- ### 第四章：无所住（No Abiding） **核心内容**： 本章从阿姜查自述早年对坐禅、经行的怀疑写起，颇具个人色彩： > \"一开始我甚至不相信打坐。我看不出闭着眼睛干坐有什么用",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "之义为慧。这了知是什么？是和想知及识知的行相有别的各种知。 <span class=\\\"vism-page\\\">[437]</span>即想、识、慧虽然都是以知为性，可是，想－－只能知所缘「是青是黄」，不可能通达「是无常是苦是无我」的特相；识－－既知所缘「是青是黄」，亦得通达特相，但不可能努力获得道的现前；慧－－则既知前述的（青黄等）所缘，亦得通达特相，并能努力获得道的现前。</p><p>例如一位天真的小孩，一位乡村的人，一位银行家。当三人看见一堆放在柜台上的货币，那天真的小孩，只知道货币的色彩长短 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-003\\\">[14-003]</sup> 方圆，却不知它是人们认为可以利用受用的价值；那乡村的人，既知色彩等状，亦知是人们认为可以利用受用的价值，但不知是真是假及半真半假的差别；那银行家，则知一切行相，因为他知道，所以无论看货币的色，闻其敲打之声，嗅其气，及以手拿其轻重，都能知道；并且晓得那是在某村市某城或某山某河岸及由某某造币师所铸造。</p><p>由这个例子当知（想识慧的区别）如是，因为想，只知于所缘所表现的青等的行相，所以如天真的小孩看见的货。因为识，既知青等的所缘的行相，亦得通达特相，所以如乡村的人所看见的货币。因为慧，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三人",
@@ -468,8 +474,24 @@
           "text": "名字上是盐，实质仍是沙子，煮不出咸味\"。 阿姜查特别指出，\"解脱\"这个词本身也是一种施设，用来指称\"超越施设的东西\"，可施设本身仍有其存在的必要——没有施设我们将无法沟通、无法称呼彼此。 关于\"对与错\"，他提出了一个深刻的相对主义立场，但落脚于实用标准： > \"在究竟层面，我们其实并不真正知道什么是对、什么是错……但在实用的层面，我们可以说：'对'是不伤害自己也不伤害他人。\" 本章结尾讲了一个经典寓言——**四人林中闻鸡鸣**，三人说是母鸡叫，一人坚持是公鸡叫，争论到落泪，其实\"无论说母鸡或公鸡，都只是名字\"，若直接说\"根本没有母鸡公鸡\"，争论便自然终止。以此指出世间对错之争永无休止，唯有智慧才能超越。 **要点提炼**： - 一切世俗名相（姓名、身份、金钱、礼俗）皆是施设，本身\"空无自性\"，但有实用价值； - 知施设而不迷执于施设，即是解脱之钥； - 对错、善恶之争在世俗层面永无定论，唯有以\"是否伤害自他\"为实用准绳； - 佛法修行的完成之处是\"无所有处\"——放下一切争论与执著的休止符。 --- ### 第四章：无所住（No Abiding） **核心内容**： 本章从阿姜查自述早年对坐禅、经行的怀疑写起，颇具个人色彩： > \"一开始我甚至不相信打坐。我看不出闭着眼睛干坐有什么用",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
           "query": "三人"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "之义为慧。这了知是什么？是和想知及识知的行相有别的各种知。 <span class=\\\"vism-page\\\">[437]</span>即想、识、慧虽然都是以知为性，可是，想－－只能知所缘「是青是黄」，不可能通达「是无常是苦是无我」的特相；识－－既知所缘「是青是黄」，亦得通达特相，但不可能努力获得道的现前；慧－－则既知前述的（青黄等）所缘，亦得通达特相，并能努力获得道的现前。</p><p>例如一位天真的小孩，一位乡村的人，一位银行家。当三人看见一堆放在柜台上的货币，那天真的小孩，只知道货币的色彩长短 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-003\\\">[14-003]</sup> 方圆，却不知它是人们认为可以利用受用的价值；那乡村的人，既知色彩等状，亦知是人们认为可以利用受用的价值，但不知是真是假及半真半假的差别；那银行家，则知一切行相，因为他知道，所以无论看货币的色，闻其敲打之声，嗅其气，及以手拿其轻重，都能知道；并且晓得那是在某村市某城或某山某河岸及由某某造币师所铸造。</p><p>由这个例子当知（想识慧的区别）如是，因为想，只知于所缘所表现的青等的行相，所以如天真的小孩看见的货。因为识，既知青等的所缘的行相，亦得通达特相，所以如乡村的人所看见的货币。因为慧，",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap03.json",
+          "heading": "站内搜索命中",
+          "text": "非不能呵责的，决非随意所行的，是顺从的，依照于阿阇梨而生活的。他则获得阿阇梨的财法二施，于佛教中得至于增进广大。犹如小乞食帝须长老的弟子一样。据说有三位比丘来亲近他，其中一人说：「尊者！如果你说为了你起见，跳百仞的悬崖我也努力为之。」第二位说：「尊者！如果你说为了你起见，将自身从脚跟起磨擦于石上，使全部成为残废，我亦努力为之。」第三位说：「如果你说为了你起见，止出入息而至命终，我亦努力之。」长老想：「此等比丘实为材器」，即为说业处。他们三人依他的教训都证得阿罗汉果。这是舍施自己的功德。所以说「舍施自身与佛世尊或阿阇梨」。</p><p>2．关于「具足意乐，具足胜解」，是说瑜伽者当以无贪等六种行相具足意乐。如是具足意乐得证三菩提（等正菩提，辟支菩提，声闻菩提）；所谓「有六种意乐菩萨而至菩提成熟：即无贪意乐诸菩萨而见于贪之过，无嗔意乐诸菩萨而见于嗔之过，无痴意乐诸菩萨而见于痴之过，出家意乐诸菩萨而见居家之过，远离意乐诸菩萨而见集众之过，出离诸菩萨而见一切有趣之过」。无论过去未来及在的须陀洹，斯陀含，阿那含，漏尽者，辟支佛，等正觉者，他们都是依此等六种行相而各自得证胜任的。是故当知依此六种行相而具足意乐。其次当以胜解而具足胜解；即以定的胜解定的尊重定的趋向及涅槃的尊重涅槃的趋向之义。</p><p>如是具足意乐及",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E4%BA%BA&scope=site",
+          "query": "三人"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：三人\n\n## 直接回答\n“三人”指有学人、无学人、非有学非无学人三类人 [1][2]。\n\n## 要点展开\n### 三人的定义\n- 有学人：指在修行道上的行者，如迦毘罗卫城释迦族人中的有学行道者 [3]。\n- 无学人：指已住立于无学阶位的比丘，自知“我是无学” [4]。\n- 非有学非无学人：既非有学亦非无学之人，如凡夫或未入道者（证据未明说，但依分类推断）[1][2]。\n\n## 证据覆盖情况\n现有证据明确给出了“三人”的三种分类名称 [1][2]，并提供了有学、无学的部分描述 [3][4]，但对“非有学非无学人”的具体定义未直接说明。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三人 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82\n  > 三人：有学人、无学人、非有学非无学人。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E4%BA%BA%EF%BC%9A%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82\n  > 三人：有学人、无学人、非有学非无学人。\n- [3] Early Buddhist · 经藏/中部_mn · mn53 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn53&lang=zh&q=%E6%9C%89%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E4%BD%A0%E5%B0%8D%E8%BF%A6%E6%AF%98%E7%BE%85%E8%A1%9B%E5%9F%8E%E9%87%8B%E8%BF%A6%E6%97%8F%E4%BA%BA%E8%AA%AA%E6%9C%89%E5%AD%B8%E7%9A%84%E8%A1%8C%E9%81%93%E8%80%85%E3%80%82\n  > 你对迦毘罗卫城释迦族人说有学的行道者。\n- [4] Early Buddhist · 经藏/相应部_sn · sn48.53 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn48.53&lang=zh&q=%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8F%E4%BD%8F%E7%AB%8B%E6%96%BC%E7%84%A1%E5%AD%B8%E9%9A%8E%E4%BD%8D%E7%9A%84%E7%84%A1%E5%AD%B8%E6%AF%94%E4%B8%98%E4%BA%86%E7%9F%A5%EF%BC%9A%E3%80%8E%E6%88%91%E6%98%AF%E7%84%A1%E5%AD%B8%E3%80%82\n  > 』住立于无学阶位的无学比丘了知：『我是无学。\n- [5] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%85%A7%EF%BC%9A%E6%9C%89%E5%AD%B8%E6%85%A7%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E6%85%A7%E3%80%82\n  > 三慧：有学慧、无学慧、非有学非无学慧。\n- [6] Early Buddhist · 经藏/相应部_sn · sn12.63 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.63&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%AE%93%E6%88%91%E5%80%91%E6%AE%BA%E4%BA%86%E9%80%99%E6%89%80%E6%84%9B%E7%9A%84%E3%80%81%E5%90%88%E6%84%8F%E7%9A%84%E7%8D%A8%E5%AD%90%EF%BC%8C%E7%84%B6%E5%BE%8C%E9%86%83%E8%A3%BD%E6%88%90%E8%82%89%E4%B9%BE%EF%BC%8C%E5%90%83%E8%91%97%E5%85%92%E5%AD%90%E7%9A%84%E8%82%89%EF%BC%8C%E9%80%99%E6%A8%A3%E8%83%BD%E5%BA%A6%E8%84%AB%E9%82%A3%E5%89%A9%E9%A4%98%E7%9A%84%E8%8D%92%E6%BC%A0%EF%BC%8C%E4%B8%8D%E8%A6%81%E6%88%91%E5%80%91%E4%B8%89%E4%BA%BA%E5%85%A8%E9%83%BD%E6%BB%85%E4%BA%A1%E3%80%82\n  > 让我们杀了这所爱的、合意的独子，然后腌制成肉干，吃著儿子的肉，这样能度脱那剩余的荒漠，不要我们三人全都灭亡。\n- [7] Early Buddhist · 经藏/中部_mn · mn28 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn28&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%9C%89%E6%99%82%EF%BC%8C%E5%A4%A7%E6%B5%B7%E8%A3%A1%E7%9A%84%E6%B0%B4%E7%AB%8B%E6%96%BC%E4%B8%83%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%85%AD%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%94%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E5%9B%9B%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%89%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%E3%80%81%E4%B8%80%E4%BA%BA%E9%AB%98%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 有时，大海里的水立于七人高的高度、六人高的高度、五人高的高度、四人高的高度、三人高的高度、二人高的高度、一人高的高度，学友们！\n- [8] Early Buddhist · 经藏/长部_dn · dn17 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn17&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%92%95%E8%96%A9%E7%93%A6%E5%B8%9D%E7%8E%8B%E9%83%BD%E6%9C%89%E5%9B%9B%E7%A8%AE%E9%A1%8F%E8%89%B2%E7%9A%84%E5%A4%A7%E9%96%80%EF%BC%9A%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E7%90%89%E7%92%83%E7%9A%84%EF%BC%8C%E4%B8%80%E5%80%8B%E9%96%80%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E6%AF%8F%E5%80%8B%E9%96%80%E5%89%8D%E5%9F%8B%E6%9C%89%E4%B8%83%E6%A0%B9%E5%9F%8B%E5%85%A5%E4%B8%89%E4%BA%BA%E6%B7%B1%E7%9A%84%E5%8D%81%E4%BA%8C%E4%BA%BA%E9%AB%98%E7%9F%B3%E6%9F%B1%EF%BC%9A%E4%B8%80%E6%A0%B9%E6%98%AF%E9%87%91%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E9%8A%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%89%E7%92%83%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E6%B0%B4%E6%99%B6%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%B4%85%E5%AF%B6%E7%9F%B3%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E6%98%AF%E7%90%A5%E7%8F%80%E8%A3%BD%E7%9A%84%EF%BC%8C%E4%B8%80%E6%A0%B9%E5%85%A8%E6%98%AF%E5%AF%B6%E7%89%A9%E8%A3%BD%E7%9A%84%E3%80%82\n  > 咕萨瓦帝王都有四种颜色的大门：一个门是金制的，一个门是银制的，一个门是琉璃的，一个门是水晶制的，每个门前埋有七根埋入三人深的十二人高石柱：一根是金制的，一根是银制的，一根是琉璃制的，一根是水晶制的，一根是红宝石制的，一根是琥珀制的，一根全是宝物制的。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -479,15 +501,24 @@
       "number": 3,
       "order": 36,
       "label": "三人",
-      "members": "有学人、无学人、非有学非无学人",
+      "members": "有学人、无学人、非有学非无学人。",
+      "match_members": "有学人、无学人、非有学非无学人",
       "member_items": [
         "有学人",
         "无学人",
         "非有学非无学人"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三人：有学人、无学人、非有学非无学人。"
+      ],
       "source_text": "三人：有学人、无学人、非有学非无学人。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E5%AD%B8%E4%BA%BA%E3%80%81%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%81%E9%9D%9E%E6%9C%89%E5%AD%B8%E9%9D%9E%E7%84%A1%E5%AD%B8%E4%BA%BA%E3%80%82",
+      "expanded_points": [
+        "有学人：指处于有学阶位的修行者，如迦毘罗卫城释迦族中的有学行道者。",
+        "无学人：指住立于无学阶位的比丘，自知“我是无学”。",
+        "非有学非无学人：指既非有学亦非无学之人，即不属于前两类的人。"
+      ]
     }
   ]
 }

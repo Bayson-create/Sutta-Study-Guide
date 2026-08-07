@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n5-695803abfd39",
+    "number": 5,
+    "label": "五法蕴",
+    "member_items": [
+      "戒蕴",
+      "定蕴",
+      "慧蕴",
+      "解脱蕴",
+      "解脱智见蕴"
+    ],
+    "group_ids": [
+      "dn34-n5-g10"
+    ],
+    "suttas": [
+      "dn34"
+    ],
+    "search_terms": [
+      "五法蕴",
+      "戒蕴",
+      "定蕴",
+      "慧蕴",
+      "解脱蕴",
+      "解脱智见蕴"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n五法蕴是戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法 [1][2]。其中，戒蕴、定蕴、慧蕴之间存在次第关系：完成戒蕴而后完成定蕴，完成定蕴而后完成慧蕴 [3][7]。解脱智见是离贪的目的与效益 [6]。\n\n## 要点展开\n### 五法蕴的构成\n- 五法蕴包括戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法 [1][2]。\n\n### 戒定慧的次第\n- 完成戒蕴而后完成定蕴 [3][7]。\n- 完成定蕴后，以慧资助各方面已完成的定蕴 [4]。\n- 完成慧蕴，或以慧资助各方面已完成的慧蕴 [5]。\n\n### 解脱智见\n- 离贪的目的是解脱智见，效益是解脱智见 [6]。\n\n### 无学五法蕴\n- 存在无学戒蕴、无学定蕴、无学慧蕴的表述 [8]。\n\n## 分歧与张力\n- 证据 [1][2] 将五法蕴定义为戒、定、慧、解脱、解脱智见，而证据 [8] 仅提及无学戒蕴、定蕴、慧蕴，未提及解脱蕴和解脱智见蕴，可能表示无学状态下的侧重不同，但现有证据未明确说明其关系。\n\n## 证据覆盖情况\n现有证据覆盖了五法蕴的构成、戒定慧的次第关系、解脱智见的目的，以及无学三蕴的表述。但未覆盖解脱蕴的具体内容，以及五法蕴之间的完整关系。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN34 · 五法蕴",
+          "text": "（十）哪些是应该被作证的五法呢？五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。\n\n像这样，这些是真实的、真正的、如实的、无误的、无例外的、被如来完全现正觉的五十法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%0A%0A%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E7%9C%9F%E5%AF%A6%E7%9A%84%E3%80%81%E7%9C%9F%E6%AD%A3%E7%9A%84%E3%80%81%E5%A6%82%E5%AF%A6%E7%9A%84%E3%80%81%E7%84%A1%E8%AA%A4%E7%9A%84%E3%80%81%E7%84%A1%E4%BE%8B%E5%A4%96%E7%9A%84%E3%80%81%E8%A2%AB%E5%A6%82%E4%BE%86%E5%AE%8C%E5%85%A8%E7%8F%BE%E6%AD%A3%E8%A6%BA%E7%9A%84%E4%BA%94%E5%8D%81%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn34",
+          "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.22",
+          "text": "不完成戒蕴而『他将完成定蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.26",
+          "text": "我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.26",
+          "text": "我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an11.1",
+          "text": "离贪的目的是解脱智见，效益是解脱智见。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.22",
+          "text": "完成戒蕴而『他将完成定蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.143",
+          "text": "无学戒蕴、无学定蕴、无学慧蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.143&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.22",
+          "text": "不完成有学法而『他将完成戒蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%9C%89%E5%AD%B8%E6%B3%95%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an5.22",
+          "text": "完成有学法而『他将完成戒蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%9C%89%E5%AD%B8%E6%B3%95%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an11.10",
+          "text": "无学戒蕴、无学定蕴、无学慧蕴。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.10&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an3.26",
+          "text": "像这样，我将完成未完成的戒蕴，或我将以慧资助各方面已完成的戒蕴；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%92%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%92%E8%98%8A%EF%BC%9B"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn44",
+          "text": "正语、正业、正命这些法被戒蕴包含；",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E8%AA%9E%E3%80%81%E6%AD%A3%E6%A5%AD%E3%80%81%E6%AD%A3%E5%91%BD%E9%80%99%E4%BA%9B%E6%B3%95%E8%A2%AB%E6%88%92%E8%98%8A%E5%8C%85%E5%90%AB%EF%BC%9B"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/buddhist-concepts.md",
+          "text": "*四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证悟道智的必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "115]</sup> ：「* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-014\\\">[14-014]</sup> * 于现存的色中，由于取色而住著于色，生起这样的见：「这是我的，我是此，这是我自己」；于现存的受中.......想中......行中......乃至识中，由于取识而住著于识，生起这样的见：「这是我的，我是此，这是我自己」。所以说「是我与我所执的对象的最上之故」。（三）关于其他所说的戒等的五法蕴，他们都包摄于这行蕴之中。所以说：「此五蕴包摄其他（戒蕴等）之故」。如是当知依不增不减而决择。</p><p>（Ⅳ）「以譬喻」，色取蕴如病院，因为它是象病人的识取蕴的基地（所依），门（根），所缘（境），有住所的意义之故。受取蕴，因起苦痛之故如病。想取蕴，因为由于欲想等而起与贪等相应的受，所以譬如病的等起因。行取蕴，因为是受的病的因缘，所以譬如不适当侍病。 <span class=\\\"vism-page\\\">[479]</span>如经中说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-116\\\">[14-116]</sup> ：「受是为觉受性而行作」；即是说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%B3%95%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap08.json",
+          "text": "他以自己的智与精进力，破了一切烦恼之贼，而得独觉──麟角独生者，亦不能脱离于死，我怎么能脱呢？</p><div class=\\\"vism-verse\\\">观察各种原因的大仙，<br>以智力而得漏尽的独生者，<br>以独行独住的麟角喻者，<br>他们也不得超越于死，<br>如我这等人，<br>更有何言说。</div><p>如是以辟支佛比较而念死。</p><p>（７）怎样以等正觉比较呢？彼世尊饰以八十种好及三十二相庄严的色身，一切种类清净的戒蕴等德宝成就的法身，大名，大福，大力，大神变，大慧都达到顶点，无等，无等等，无比 <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-029\\\">[08-029]</sup> 无双的阿罗汉等正觉者，如大火聚给雨水降下而消灭，他也给死雨降下而即座寂灭。</p><div class=\\\"vism-verse\\\">这样有大威力的大仙，<br>那死力也无耻无畏的逼来。<br>无耻无曰，<br>粉碎一切，<br>像我这样的有情，<br>怎不为死所战胜？</div><p>如是比较等正觉者而念死。</p><p>以这样共同的死，拿那些具有大名等及其他的人与自己比较，像那些殊胜的有情一样，念我也要死的则生侥得达近行定的业处。当如是自他比较而念死。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap07.json",
+          "text": "解故为「有文」。是智者所知，为考察者所欣喜故「有义」，可信故，为世间的人所欣喜故「有文」。教法有甚深的意义，故「有义」，有显明之句故「有文」。一切圆满无可复加，故「完全圆满」，已无过失 <sup class=\\\"vism-fnref\\\" data-fn=\\\"07-053\\\">[07-053]</sup> 无可复除，故「遍净」。</p><p>亦可由行道而得证明，故「有义」。由教法而得明白圣教，故「有文」。有戒（定、慧、解脱、解脱知见）等五法蕴相应故「完全圆满」。没有（见慢等）随烦恼故，度脱轮回之苦故，无世间的欲望故「遍净」。</p><p>如是即「说明有义有文完全圆满遍净的梵行」为「善说」。</p><p>（３）或者以教法是无颠倒之义，故善(su.t.thu)与说(akkhaato)为善说(svaakkhaato)。譬如其他外道的法义是颠倒的，实非障碍法而他说为障碍，实非出离法而他亦说为出离法， <span class=\\\"vism-page\\\">[215]</span>所以他们所说的是恶说法。世尊的法义是不会这样颠倒的，不会超越违背「此等法是障碍，此等是出离法」等所说之法的。</p><p>如是先就教法为善说。</p><p>次就「出世间法」而说适合于涅槃的行道，及适合于行道的涅槃，故为善说。即所谓 <sup",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%B3%95%E8%98%8A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap16.json",
+          "text": "爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p><p>此中的正语等三种只是戒，所以因同种而包摄于戒蕴。在圣典中的「戒蕴中」虽以位格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-069\\\">[16-069]</sup> 来说明，然而应依作格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-070\\\">[16-070]</sup> 之义。其次于正精进等的三种之中，以定自已的法性是不能专注所缘而安止(入定)的，当它获得精进完成其策励的作用及念的完成其不忘的作用之时的帮助，便得安止。</p><p>这里有一个相当的譬喻:即如有朋友三人，为了祭祀共同进入园中，一人看见了盛开的瞻波伽",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "五法蕴",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+              "score": 8.643081340003775,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "戒蕴",
+          "hits": [
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成戒蕴而『他将完成定蕴。",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成戒蕴而『他将完成定蕴。",
+              "score": 10.743796869254892,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an3.143",
+              "collection": "经藏/增支部_an",
+              "title": "喂孔雀处经第一",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无学戒蕴、无学定蕴、无学慧蕴。",
+              "score": 10.256941003901765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.143&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成有学法而『他将完成戒蕴。",
+              "score": 10.256941003901765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%9C%89%E5%AD%B8%E6%B3%95%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成有学法而『他将完成戒蕴。",
+              "score": 10.256941003901765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%9C%89%E5%AD%B8%E6%B3%95%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an11.10",
+              "collection": "经藏/增支部_an",
+              "title": "喂孔雀处经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "无学戒蕴、无学定蕴、无学慧蕴。",
+              "score": 10.256941003901765,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.10&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an3.26",
+              "collection": "经藏/增支部_an",
+              "title": "应该被结交经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "像这样，我将完成未完成的戒蕴，或我将以慧资助各方面已完成的戒蕴；",
+              "score": 10.219118885886884,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%92%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%92%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "mn44",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正语、正业、正命这些法被戒蕴包含；",
+              "score": 9.404600790838533,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E8%AA%9E%E3%80%81%E6%AD%A3%E6%A5%AD%E3%80%81%E6%AD%A3%E5%91%BD%E9%80%99%E4%BA%9B%E6%B3%95%E8%A2%AB%E6%88%92%E8%98%8A%E5%8C%85%E5%90%AB%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "定蕴",
+          "hits": [
+            {
+              "uid": "an3.26",
+              "collection": "经藏/增支部_an",
+              "title": "应该被结交经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴；",
+              "score": 11.736489272432216,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成戒蕴而『他将完成定蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成定蕴而『他将完成慧蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成戒蕴而『他将完成定蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成定蕴而『他将完成慧蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn44",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正精进、正念、正定这些法被定蕴包含；",
+              "score": 10.069561939612946,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E7%B2%BE%E9%80%B2%E3%80%81%E6%AD%A3%E5%BF%B5%E3%80%81%E6%AD%A3%E5%AE%9A%E9%80%99%E4%BA%9B%E6%B3%95%E8%A2%AB%E5%AE%9A%E8%98%8A%E5%8C%85%E5%90%AB%EF%BC%9B"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。",
+              "score": 9.667867504333648,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+              "score": 7.113812866061529,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "慧蕴",
+          "hits": [
+            {
+              "uid": "an3.26",
+              "collection": "经藏/增支部_an",
+              "title": "应该被结交经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴；",
+              "score": 11.736489272432216,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%9B"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "不完成定蕴而『他将完成慧蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an5.22",
+              "collection": "经藏/增支部_an",
+              "title": "不尊重经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "完成定蕴而『他将完成慧蕴。",
+              "score": 11.50344713695559,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E6%85%A7%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "mn44",
+              "collection": "经藏/中部_mn",
+              "title": "毘陀罗小经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正见、正志这些法被慧蕴包含。",
+              "score": 10.982167669504632,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn44&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E6%AD%A3%E8%A6%8B%E3%80%81%E6%AD%A3%E5%BF%97%E9%80%99%E4%BA%9B%E6%B3%95%E8%A2%AB%E6%85%A7%E8%98%8A%E5%8C%85%E5%90%AB%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。",
+              "score": 9.667867504333648,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+              "score": 7.113812866061529,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "sn47.13",
+              "collection": "经藏/相应部_sn",
+              "title": "纯陀经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "舍利弗带走你的戒蕴后般涅槃，或带走定蕴后般涅槃，或带走慧蕴后般涅槃，或带走解脱蕴后般涅槃，或带走解脱智见蕴后般涅槃吗？",
+              "score": 5.627216360670063,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn47.13&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%88%8D%E5%88%A9%E5%BC%97%E5%B8%B6%E8%B5%B0%E4%BD%A0%E7%9A%84%E6%88%92%E8%98%8A%E5%BE%8C%E8%88%AC%E6%B6%85%E6%A7%83%EF%BC%8C%E6%88%96%E5%B8%B6%E8%B5%B0%E5%AE%9A%E8%98%8A%E5%BE%8C%E8%88%AC%E6%B6%85%E6%A7%83%EF%BC%8C%E6%88%96%E5%B8%B6%E8%B5%B0%E6%85%A7%E8%98%8A%E5%BE%8C%E8%88%AC%E6%B6%85%E6%A7%83%EF%BC%8C%E6%88%96%E5%B8%B6%E8%B5%B0%E8%A7%A3%E8%84%AB%E8%98%8A%E5%BE%8C%E8%88%AC%E6%B6%85%E6%A7%83%EF%BC%8C%E6%88%96%E5%B8%B6%E8%B5%B0%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E5%BE%8C%E8%88%AC%E6%B6%85%E6%A7%83%E5%97%8E%EF%BC%9F"
+            },
+            {
+              "uid": "sn6.2",
+              "collection": "经藏/相应部_sn",
+              "title": "尊重经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "是为了未完成的慧蕴之完成，而会恭敬、尊敬、住于依止其他沙门、婆罗门，然而，我不见在这包括天、魔、梵的世间；",
+              "score": 5.499521601382445,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn6.2&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%98%AF%E7%82%BA%E4%BA%86%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%E4%B9%8B%E5%AE%8C%E6%88%90%EF%BC%8C%E8%80%8C%E6%9C%83%E6%81%AD%E6%95%AC%E3%80%81%E5%B0%8A%E6%95%AC%E3%80%81%E4%BD%8F%E6%96%BC%E4%BE%9D%E6%AD%A2%E5%85%B6%E4%BB%96%E6%B2%99%E9%96%80%E3%80%81%E5%A9%86%E7%BE%85%E9%96%80%EF%BC%8C%E7%84%B6%E8%80%8C%EF%BC%8C%E6%88%91%E4%B8%8D%E8%A6%8B%E5%9C%A8%E9%80%99%E5%8C%85%E6%8B%AC%E5%A4%A9%E3%80%81%E9%AD%94%E3%80%81%E6%A2%B5%E7%9A%84%E4%B8%96%E9%96%93%EF%BC%9B"
+            }
+          ]
+        },
+        {
+          "query": "解脱蕴",
+          "hits": [
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+              "score": 14.812175685585402,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四法蕴：戒蕴、定蕴、慧蕴、解脱蕴。",
+              "score": 13.087776813338191,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an4.196",
+              "collection": "经藏/增支部_an",
+              "title": "萨哈经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "正解脱的圣弟子破坏大无明蕴。",
+              "score": 12.253233818785068,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.196&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%AD%A3%E8%A7%A3%E8%84%AB%E7%9A%84%E8%81%96%E5%BC%9F%E5%AD%90%E7%A0%B4%E5%A3%9E%E5%A4%A7%E7%84%A1%E6%98%8E%E8%98%8A%E3%80%82"
+            },
+            {
+              "uid": "an3.57",
+              "collection": "经藏/增支部_an",
+              "title": "婆蹉氏经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已具备无学戒蕴、已具备无学定蕴、已具备无学慧蕴、已具备无学解脱蕴、已具备无学解脱智见蕴，已具备这五支。",
+              "score": 11.608922669001117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.57&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E5%B7%B2%E5%85%B7%E5%82%99%E9%80%99%E4%BA%94%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "sn3.24",
+              "collection": "经藏/相应部_sn",
+              "title": "弓术经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "已具备无学戒蕴、已具备无学定蕴、已具备无学慧蕴、已具备无学解脱蕴、已具备无学解脱智见蕴，已具备这五支。",
+              "score": 11.608922669001117,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn3.24&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E5%B7%B2%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E5%B7%B2%E5%85%B7%E5%82%99%E9%80%99%E4%BA%94%E6%94%AF%E3%80%82"
+            },
+            {
+              "uid": "an5.251",
+              "collection": "经藏/增支部_an",
+              "title": "应该使受具足戒经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，比丘具备无学戒蕴、具备无学定蕴、具备无学慧蕴、具备无学解脱蕴、具备无学解脱智见蕴者，比丘们！",
+              "score": 10.914963723061927,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.251&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%81%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "an5.253",
+              "collection": "经藏/增支部_an",
+              "title": "沙弥经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，比丘具备无学戒蕴、……无学定蕴……无学慧蕴……无学解脱蕴、具备无学解脱智见蕴者，比丘们！",
+              "score": 10.809204552012893,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an5.253&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%AF%94%E4%B8%98%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E2%80%A6%E2%80%A6%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E2%80%A6%E2%80%A6%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E2%80%A6%E2%80%A6%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E5%85%B7%E5%82%99%E7%84%A1%E5%AD%B8%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%E8%80%85%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五取蕴：色取蕴、受取蕴、想取蕴、行取蕴、识取蕴。",
+              "score": 10.484303127656455,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%A7%A3%E8%84%AB%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E5%8F%96%E8%98%8A%EF%BC%9A%E8%89%B2%E5%8F%96%E8%98%8A%E3%80%81%E5%8F%97%E5%8F%96%E8%98%8A%E3%80%81%E6%83%B3%E5%8F%96%E8%98%8A%E3%80%81%E8%A1%8C%E5%8F%96%E8%98%8A%E3%80%81%E8%AD%98%E5%8F%96%E8%98%8A%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "解脱智见蕴",
+          "hits": [
+            {
+              "uid": "an11.1",
+              "collection": "经藏/增支部_an",
+              "title": "为了什么目的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "离贪的目的是解脱智见，效益是解脱智见。",
+              "score": 19.6646135573182,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "an11.1",
+              "collection": "经藏/增支部_an",
+              "title": "为了什么目的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "离贪的目的是解脱智见，效益是解脱智见。",
+              "score": 19.6646135573182,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an11.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "dn34",
+              "collection": "经藏/长部_dn",
+              "title": "十增经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+              "score": 19.316938751110854,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82"
+            },
+            {
+              "uid": "an10.1",
+              "collection": "经藏/增支部_an",
+              "title": "为了什么目的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "厌与离贪的目的是解脱智见，效益是解脱智见。",
+              "score": 19.10752312699538,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%8E%AD%E8%88%87%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "an10.1",
+              "collection": "经藏/增支部_an",
+              "title": "为了什么目的经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "厌与离贪的目的是解脱智见，效益是解脱智见。",
+              "score": 19.10752312699538,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%8E%AD%E8%88%87%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82"
+            },
+            {
+              "uid": "mn32",
+              "collection": "经藏/中部_mn",
+              "title": "牛角大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是解脱智见具足者，并且是对解脱智见具足称赞者。",
+              "score": 18.581127414362708,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn32&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%80%85%EF%BC%8C%E4%B8%A6%E4%B8%94%E6%98%AF%E5%B0%8D%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%A8%B1%E8%AE%9A%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "mn32",
+              "collection": "经藏/中部_mn",
+              "title": "牛角大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是解脱智见具足者，并且是对解脱智见具足称赞者。",
+              "score": 18.581127414362708,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn32&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%80%85%EF%BC%8C%E4%B8%A6%E4%B8%94%E6%98%AF%E5%B0%8D%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E7%A8%B1%E8%AE%9A%E8%80%85%E3%80%82"
+            },
+            {
+              "uid": "an10.70",
+              "collection": "经藏/增支部_an",
+              "title": "谈论之事经第二",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "自己是解脱智见具足者，并且是对比丘们作解脱智见具足谈论者，『比丘是解脱智见具足者，并且是对比丘们作解脱智见具足谈论者。",
+              "score": 18.28806760992425,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.70&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E8%87%AA%E5%B7%B1%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%80%85%EF%BC%8C%E4%B8%A6%E4%B8%94%E6%98%AF%E5%B0%8D%E6%AF%94%E4%B8%98%E5%80%91%E4%BD%9C%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%AB%87%E8%AB%96%E8%80%85%EF%BC%8C%E3%80%8E%E6%AF%94%E4%B8%98%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%80%85%EF%BC%8C%E4%B8%A6%E4%B8%94%E6%98%AF%E5%B0%8D%E6%AF%94%E4%B8%98%E5%80%91%E4%BD%9C%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E5%85%B7%E8%B6%B3%E8%AB%87%E8%AB%96%E8%80%85%E3%80%82"
+            }
+          ]
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/buddhist-concepts.md",
+          "heading": "站内搜索命中",
+          "text": "*四、道谛（Magga-sacca）** 即八正道。是通向苦灭的实践路径，属有为法，而以无为的涅槃为所缘。 **四谛的修行功能** 对苦谛须\"全面了知\"（pariññā）；对集谛须\"断除\"（pahāna）；对灭谛须\"证悟\"（sacchikiriyā）；对道谛须\"修习\"（bhāvanā）。 --- # 三、八正道（Ariyo Aṭṭhaṅgiko Maggo） **结构** 八正道是道圣谛的完整展开，分属戒、定、慧三学： 戒蕴：正语（sammā-vācā）、正业（sammā-kammanta）、正命（sammā-ājīva）——三离心所（virati-cetasika） 定蕴：正精进（sammā-vāyāma）、正念（sammā-sati）、正定（sammā-samādhi） 慧蕴：正见（sammā-diṭṭhi）、正思惟（sammā-saṅkappa） **各支简解** 正思惟：包含出离思惟（nekkhamma-saṅkappa）、无恚思惟（abyāpāda-saṅkappa）、无害思惟（avihiṃsā-saṅkappa）。作为慧的先驱，引导心离开欲求与恶意。 正定：佛陀在《大念处经》等经典中将正定诠释为四色界禅（初禅至第四禅），称为\"出胜义释\"。禅那（jhāna）是证悟道智的必",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "115]</sup> ：「* <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-014\\\">[14-014]</sup> * 于现存的色中，由于取色而住著于色，生起这样的见：「这是我的，我是此，这是我自己」；于现存的受中.......想中......行中......乃至识中，由于取识而住著于识，生起这样的见：「这是我的，我是此，这是我自己」。所以说「是我与我所执的对象的最上之故」。（三）关于其他所说的戒等的五法蕴，他们都包摄于这行蕴之中。所以说：「此五蕴包摄其他（戒蕴等）之故」。如是当知依不增不减而决择。</p><p>（Ⅳ）「以譬喻」，色取蕴如病院，因为它是象病人的识取蕴的基地（所依），门（根），所缘（境），有住所的意义之故。受取蕴，因起苦痛之故如病。想取蕴，因为由于欲想等而起与贪等相应的受，所以譬如病的等起因。行取蕴，因为是受的病的因缘，所以譬如不适当侍病。 <span class=\\\"vism-page\\\">[479]</span>如经中说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-116\\\">[14-116]</sup> ：「受是为觉受性而行作」；即是说 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%B3%95%E8%98%8A&scope=site",
+          "query": "五法蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap08.json",
+          "heading": "站内搜索命中",
+          "text": "他以自己的智与精进力，破了一切烦恼之贼，而得独觉──麟角独生者，亦不能脱离于死，我怎么能脱呢？</p><div class=\\\"vism-verse\\\">观察各种原因的大仙，<br>以智力而得漏尽的独生者，<br>以独行独住的麟角喻者，<br>他们也不得超越于死，<br>如我这等人，<br>更有何言说。</div><p>如是以辟支佛比较而念死。</p><p>（７）怎样以等正觉比较呢？彼世尊饰以八十种好及三十二相庄严的色身，一切种类清净的戒蕴等德宝成就的法身，大名，大福，大力，大神变，大慧都达到顶点，无等，无等等，无比 <sup class=\\\"vism-fnref\\\" data-fn=\\\"08-029\\\">[08-029]</sup> 无双的阿罗汉等正觉者，如大火聚给雨水降下而消灭，他也给死雨降下而即座寂灭。</p><div class=\\\"vism-verse\\\">这样有大威力的大仙，<br>那死力也无耻无畏的逼来。<br>无耻无曰，<br>粉碎一切，<br>像我这样的有情，<br>怎不为死所战胜？</div><p>如是比较等正觉者而念死。</p><p>以这样共同的死，拿那些具有大名等及其他的人与自己比较，像那些殊胜的有情一样，念我也要死的则生侥得达近行定的业处。当如是自他比较而念死。</p><p>",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap07.json",
+          "heading": "站内搜索命中",
+          "text": "解故为「有文」。是智者所知，为考察者所欣喜故「有义」，可信故，为世间的人所欣喜故「有文」。教法有甚深的意义，故「有义」，有显明之句故「有文」。一切圆满无可复加，故「完全圆满」，已无过失 <sup class=\\\"vism-fnref\\\" data-fn=\\\"07-053\\\">[07-053]</sup> 无可复除，故「遍净」。</p><p>亦可由行道而得证明，故「有义」。由教法而得明白圣教，故「有文」。有戒（定、慧、解脱、解脱知见）等五法蕴相应故「完全圆满」。没有（见慢等）随烦恼故，度脱轮回之苦故，无世间的欲望故「遍净」。</p><p>如是即「说明有义有文完全圆满遍净的梵行」为「善说」。</p><p>（３）或者以教法是无颠倒之义，故善(su.t.thu)与说(akkhaato)为善说(svaakkhaato)。譬如其他外道的法义是颠倒的，实非障碍法而他说为障碍，实非出离法而他亦说为出离法， <span class=\\\"vism-page\\\">[215]</span>所以他们所说的是恶说法。世尊的法义是不会这样颠倒的，不会超越违背「此等法是障碍，此等是出离法」等所说之法的。</p><p>如是先就教法为善说。</p><p>次就「出世间法」而说适合于涅槃的行道，及适合于行道的涅槃，故为善说。即所谓 <sup",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%B3%95%E8%98%8A&scope=site",
+          "query": "五法蕴"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap16.json",
+          "heading": "站内搜索命中",
+          "text": "爱身的灭尽的各别为六种。</p><p>「道」亦依其修习为一种。依止、观之别或依见、修之别为二种。依(戒、定、慧)三蕴之别为三种。因为此道有(八)部分之故，可以三蕴而包摄，犹如都市包摄于国内。即所谓 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-068\\\">[16-068]</sup> :「朋有，毗舍佉，不是以八支圣道而包摄三蕴。朋友，毗舍佉，以三蕴而包摄八支圣道。朋友，毗舍佉，正语、正业、正命的三法包摄于戒蕴中。正精进、正念、正定的三法包摄于定蕴中。正见、正思惟的二法包摄于慧蕴中」。</p><p>此中的正语等三种只是戒，所以因同种而包摄于戒蕴。在圣典中的「戒蕴中」虽以位格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-069\\\">[16-069]</sup> 来说明，然而应依作格 <sup class=\\\"vism-fnref\\\" data-fn=\\\"16-070\\\">[16-070]</sup> 之义。其次于正精进等的三种之中，以定自已的法性是不能专注所缘而安止(入定)的，当它获得精进完成其策励的作用及念的完成其不忘的作用之时的帮助，便得安止。</p><p>这里有一个相当的譬喻:即如有朋友三人，为了祭祀共同进入园中，一人看见了盛开的瞻波伽",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "里的意思是：鸟知道在某处有果实成熟的树，从各方飞来，用爪、翅、喙等啄食、摇落那些果实。它们没有“这是今天的，这是明天的”的想法。当果实耗尽时，它们不守护树，也不在那里放翅、羽、爪、喙；而是对那树无牵挂，想往哪个方向就去，带着随身的负担起飞而去。同样，这位比丘无执着、无牵挂地出发，完全取用而后出发。62. [18023] “圣”是指无过失。“内”是指在自己的身上。“无过失之乐”是指无过失的乐。他以眼…… （“见色已”）：这是说，这位具备圣戒蕴的比丘，以眼识见色之后。其余各处应说的，在《清净道论》中已全部说明。“无杂染乐”是指不被烦恼所沾染的乐；“无散乱乐”也是同样说的。因为根律仪之乐，在见等之中，以见只是见等的方式运作，所以是无散乱的。\\n（“于前行、返回时”）：这位具备包括意根在内的六根律仪的比丘，在这些前行、返回等七种处所，以念与正知而行。其中应说的，在《念住经》中已经说了。\\n63. （“他以如此”等）这开示什么呢？它开示林居的资具具足。因为如果他没有这四种资具，他的林居就不会成功；他会与畜生或林居者相处。住于林中的天神们会想：“这样的恶比丘在林居做什么？”于是发出恐怖的声音，用手拍打头部，做出逃跑的样子。而“某某比丘进入林中后，做了如此这般的恶事”这样的恶名会传播开来。\\n然而，如果他有这四种资具",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E6%88%92%E8%98%8A&scope=site",
+          "query": "戒蕴"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：五法蕴\n\n## 直接回答\n五法蕴是戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法 [1][2]。其中，戒蕴、定蕴、慧蕴之间存在次第关系：完成戒蕴而后完成定蕴，完成定蕴而后完成慧蕴 [3][7]。解脱智见是离贪的目的与效益 [6]。\n\n## 要点展开\n### 五法蕴的构成\n- 五法蕴包括戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法 [1][2]。\n\n### 戒定慧的次第\n- 完成戒蕴而后完成定蕴 [3][7]。\n- 完成定蕴后，以慧资助各方面已完成的定蕴 [4]。\n- 完成慧蕴，或以慧资助各方面已完成的慧蕴 [5]。\n\n### 解脱智见\n- 离贪的目的是解脱智见，效益是解脱智见 [6]。\n\n### 无学五法蕴\n- 存在无学戒蕴、无学定蕴、无学慧蕴的表述 [8]。\n\n## 分歧与张力\n- 证据 [1][2] 将五法蕴定义为戒、定、慧、解脱、解脱智见，而证据 [8] 仅提及无学戒蕴、定蕴、慧蕴，未提及解脱蕴和解脱智见蕴，可能表示无学状态下的侧重不同，但现有证据未明确说明其关系。\n\n## 证据覆盖情况\n现有证据覆盖了五法蕴的构成、戒定慧的次第关系、解脱智见的目的，以及无学三蕴的表述。但未覆盖解脱蕴的具体内容，以及五法蕴之间的完整关系。\n\n## 引用\n- [1] Early Buddhist · DN34 · 五法蕴 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%0A%0A%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E7%9C%9F%E5%AF%A6%E7%9A%84%E3%80%81%E7%9C%9F%E6%AD%A3%E7%9A%84%E3%80%81%E5%A6%82%E5%AF%A6%E7%9A%84%E3%80%81%E7%84%A1%E8%AA%A4%E7%9A%84%E3%80%81%E7%84%A1%E4%BE%8B%E5%A4%96%E7%9A%84%E3%80%81%E8%A2%AB%E5%A6%82%E4%BE%86%E5%AE%8C%E5%85%A8%E7%8F%BE%E6%AD%A3%E8%A6%BA%E7%9A%84%E4%BA%94%E5%8D%81%E6%B3%95%E3%80%82\n  > （十）哪些是应该被作证的五法呢？五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。 像这样，这些是真实的、真正的、如实的、无误的、无例外的、被如来完全现正觉的五十法。\n- [2] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%BA%94%E6%B3%95%E8%98%8A%EF%BC%9A%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%BA%94%E6%B3%95%E3%80%82\n  > 五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。\n- [3] Early Buddhist · 经藏/增支部_an · an5.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E4%B8%8D%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82\n  > 不完成戒蕴而『他将完成定蕴。\n- [4] Early Buddhist · 经藏/增支部_an · an3.26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E5%AE%9A%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E5%AE%9A%E8%98%8A%EF%BC%9B\n  > 我将完成未完成的定蕴，或我将以慧资助各方面已完成的定蕴；\n- [5] Early Buddhist · 经藏/增支部_an · an3.26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.26&lang=zh&q=%E6%85%A7%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E5%AE%8C%E6%88%90%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%8C%E6%88%96%E6%88%91%E5%B0%87%E4%BB%A5%E6%85%A7%E8%B3%87%E5%8A%A9%E5%90%84%E6%96%B9%E9%9D%A2%E5%B7%B2%E5%AE%8C%E6%88%90%E7%9A%84%E6%85%A7%E8%98%8A%EF%BC%9B\n  > 我将完成未完成的慧蕴，或我将以慧资助各方面已完成的慧蕴；\n- [6] Early Buddhist · 经藏/增支部_an · an11.1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an11.1&lang=zh&q=%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%9B%A2%E8%B2%AA%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E3%80%82\n  > 离贪的目的是解脱智见，效益是解脱智见。\n- [7] Early Buddhist · 经藏/增支部_an · an5.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an5.22&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E5%AE%8C%E6%88%90%E6%88%92%E8%98%8A%E8%80%8C%E3%80%8E%E4%BB%96%E5%B0%87%E5%AE%8C%E6%88%90%E5%AE%9A%E8%98%8A%E3%80%82\n  > 完成戒蕴而『他将完成定蕴。\n- [8] Early Buddhist · 经藏/增支部_an · an3.143 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.143&lang=zh&q=%E6%88%92%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%84%A1%E5%AD%B8%E6%88%92%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E5%AE%9A%E8%98%8A%E3%80%81%E7%84%A1%E5%AD%B8%E6%85%A7%E8%98%8A%E3%80%82\n  > 无学戒蕴、无学定蕴、无学慧蕴。",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn34-n5-g10",
+      "sutta": "dn34",
+      "number": 5,
+      "order": 10,
+      "label": "五法蕴",
+      "members": "戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴\n\n像这样，这些是真实的、真正的、如实的、无误的、无例外的、被如来完全现正觉的五十法。",
+      "match_members": "戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴",
+      "member_items": [
+        "戒蕴",
+        "定蕴",
+        "慧蕴",
+        "解脱蕴",
+        "解脱智见蕴"
+      ],
+      "dn34_status": "应作证",
+      "source_paragraphs": [
+        "（十）哪些是应该被作证的五法呢？五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。",
+        "像这样，这些是真实的、真正的、如实的、无误的、无例外的、被如来完全现正觉的五十法。"
+      ],
+      "source_text": "（十）哪些是应该被作证的五法呢？五法蕴：戒蕴、定蕴、慧蕴、解脱蕴、解脱智见蕴，这些是应该被作证的五法。\n\n像这样，这些是真实的、真正的、如实的、无误的、无例外的、被如来完全现正觉的五十法。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%BA%94%E6%B3%95%E8%98%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%88%92%E8%98%8A%E3%80%81%E5%AE%9A%E8%98%8A%E3%80%81%E6%85%A7%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E8%98%8A%E3%80%81%E8%A7%A3%E8%84%AB%E6%99%BA%E8%A6%8B%E8%98%8A%0A%0A%E5%83%8F%E9%80%99%E6%A8%A3%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E7%9C%9F%E5%AF%A6%E7%9A%84%E3%80%81%E7%9C%9F%E6%AD%A3%E7%9A%84%E3%80%81%E5%A6%82%E5%AF%A6%E7%9A%84%E3%80%81%E7%84%A1%E8%AA%A4%E7%9A%84%E3%80%81%E7%84%A1%E4%BE%8B%E5%A4%96%E7%9A%84%E3%80%81%E8%A2%AB%E5%A6%82%E4%BE%86%E5%AE%8C%E5%85%A8%E7%8F%BE%E6%AD%A3%E8%A6%BA%E7%9A%84%E4%BA%94%E5%8D%81%E6%B3%95%E3%80%82",
+      "expanded_points": [
+        "戒蕴：指戒的积聚，是五法蕴之一，应被作证。",
+        "定蕴：指定心的积聚，是五法蕴之一，应被作证。",
+        "慧蕴：指智慧的积聚，是五法蕴之一，应被作证。",
+        "解脱蕴：指解脱的积聚，是五法蕴之一，应被作证。",
+        "解脱智见蕴：指解脱智见的积聚，是五法蕴之一，应被作证。"
+      ]
+    }
+  ]
+}

@@ -26,13 +26,13 @@
       "身根"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「五根」属于 5 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：眼根、耳根、鼻根、舌根、身根。[1]\n\n## 所含各法\n### 眼根\n经文将「眼根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《沙门婆罗门经第二》命中：凡任何沙门或婆罗门了知眼根、了知眼根集、了知眼根灭、了知导向眼根灭道迹；。[3]\n### 耳根\n经文将「耳根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：如理省察而住于耳根自制之已防护。。[4]\n### 鼻根\n经文将「鼻根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：……（中略）住于鼻根自制之已防护。。[5]\n### 舌根\n经文将「舌根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《根具足者经》命中：如果当在舌根上住于生灭随观时，他在舌根上厌，……（中略）比丘！。[6]\n### 身根\n经文将「身根」列为「五根」的一个成员。Early Buddhist 用该名词检索时，在《一切烦恼经》命中：……（中略）住于身根自制之已防护。。[7]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 6 个关键词，冻结 48 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n五根指眼根、耳根、鼻根、舌根、身根 [1]。这些根是佛教修行中需要了知、防护或随观的对象 [3][4][5][6][7]。\n\n## 要点展开\n### 五根的构成\n- 五根包括眼根、耳根、鼻根、舌根、身根 [1]。\n- 经典中多次提及“有这五根”，但未具体列举 [2][8]。\n\n### 对五根的修行\n- 应了知眼根及其集、灭、灭道迹 [3]。\n- 应防护耳根、鼻根、身根 [4][5][7]。\n- 应于舌根住于生灭随观 [6]。\n\n## 证据覆盖情况\n现有证据明确列出了五根的名称，并提及对五根的修行方法，但未详细解释每根的具体定义或作用。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 五根",
           "text": "五根：眼根、耳根、鼻根、舌根、身根。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -137,7 +137,7 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "五根",
@@ -693,7 +693,9 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%BA%94%E6%A0%B9&scope=site",
           "query": "五根"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：五根\n\n## 直接回答\n五根指眼根、耳根、鼻根、舌根、身根 [1]。这些根是佛教修行中需要了知、防护或随观的对象 [3][4][5][6][7]。\n\n## 要点展开\n### 五根的构成\n- 五根包括眼根、耳根、鼻根、舌根、身根 [1]。\n- 经典中多次提及“有这五根”，但未具体列举 [2][8]。\n\n### 对五根的修行\n- 应了知眼根及其集、灭、灭道迹 [3]。\n- 应防护耳根、鼻根、身根 [4][5][7]。\n- 应于舌根住于生灭随观 [6]。\n\n## 证据覆盖情况\n现有证据明确列出了五根的名称，并提及对五根的修行方法，但未详细解释每根的具体定义或作用。\n\n## 引用\n- [1] Early Buddhist · DN33 · 五根 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82\n  > 五根：眼根、耳根、鼻根、舌根、身根。\n- [2] Early Buddhist · 经藏/相应部_sn · sn48.65 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn48.65&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F\n  > 有这五根，哪五根呢？\n- [3] Early Buddhist · 经藏/相应部_sn · sn48.30 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn48.30&lang=zh&q=%E7%9C%BC%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%87%A1%E4%BB%BB%E4%BD%95%E6%B2%99%E9%96%80%E6%88%96%E5%A9%86%E7%BE%85%E9%96%80%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E9%9B%86%E3%80%81%E4%BA%86%E7%9F%A5%E7%9C%BC%E6%A0%B9%E6%BB%85%E3%80%81%E4%BA%86%E7%9F%A5%E5%B0%8E%E5%90%91%E7%9C%BC%E6%A0%B9%E6%BB%85%E9%81%93%E8%B7%A1%EF%BC%9B\n  > 凡任何沙门或婆罗门了知眼根、了知眼根集、了知眼根灭、了知导向眼根灭道迹；\n- [4] Early Buddhist · 经藏/中部_mn · mn2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%80%B3%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%A6%82%E7%90%86%E7%9C%81%E5%AF%9F%E8%80%8C%E4%BD%8F%E6%96%BC%E8%80%B3%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82\n  > 如理省察而住于耳根自制之已防护。\n- [5] Early Buddhist · 经藏/中部_mn · mn2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E9%BC%BB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E9%BC%BB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82\n  > ……（中略）住于鼻根自制之已防护。\n- [6] Early Buddhist · 经藏/相应部_sn · sn35.154 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn35.154&lang=zh&q=%E8%88%8C%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E5%A6%82%E6%9E%9C%E7%95%B6%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E4%BD%8F%E6%96%BC%E7%94%9F%E6%BB%85%E9%9A%A8%E8%A7%80%E6%99%82%EF%BC%8C%E4%BB%96%E5%9C%A8%E8%88%8C%E6%A0%B9%E4%B8%8A%E5%8E%AD%EF%BC%8C%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E6%AF%94%E4%B8%98%EF%BC%81\n  > 如果当在舌根上住于生灭随观时，他在舌根上厌，……（中略）比丘！\n- [7] Early Buddhist · 经藏/中部_mn · mn2 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn2&lang=zh&q=%E8%BA%AB%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E2%80%A6%E2%80%A6%EF%BC%88%E4%B8%AD%E7%95%A5%EF%BC%89%E4%BD%8F%E6%96%BC%E8%BA%AB%E6%A0%B9%E8%87%AA%E5%88%B6%E4%B9%8B%E5%B7%B2%E9%98%B2%E8%AD%B7%E3%80%82\n  > ……（中略）住于身根自制之已防护。\n- [8] Early Buddhist · 经藏/相应部_sn · sn48.66 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn48.66&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%BA%94%E6%A0%B9%EF%BC%8C%E5%93%AA%E4%BA%94%E6%A0%B9%E5%91%A2%EF%BC%9F\n  > 有这五根，哪五根呢？",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -703,7 +705,8 @@
       "number": 5,
       "order": 18,
       "label": "五根",
-      "members": "眼根、耳根、鼻根、舌根、身根",
+      "members": "眼根、耳根、鼻根、舌根、身根。",
+      "match_members": "眼根、耳根、鼻根、舌根、身根",
       "member_items": [
         "眼根",
         "耳根",
@@ -712,8 +715,18 @@
         "身根"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "五根：眼根、耳根、鼻根、舌根、身根。"
+      ],
       "source_text": "五根：眼根、耳根、鼻根、舌根、身根。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%BA%94%E6%A0%B9&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E7%9C%BC%E6%A0%B9%E3%80%81%E8%80%B3%E6%A0%B9%E3%80%81%E9%BC%BB%E6%A0%B9%E3%80%81%E8%88%8C%E6%A0%B9%E3%80%81%E8%BA%AB%E6%A0%B9%E3%80%82",
+      "expanded_points": [
+        "眼根：五根之一，需了知其集、灭、灭道迹。",
+        "耳根：五根之一，需防护其自制。",
+        "鼻根：五根之一，需防护其自制。",
+        "舌根：五根之一，需住于生灭随观。",
+        "身根：五根之一，需防护其自制。"
+      ]
     }
   ]
 }

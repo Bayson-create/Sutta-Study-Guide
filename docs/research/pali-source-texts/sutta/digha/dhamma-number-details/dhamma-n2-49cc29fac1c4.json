@@ -5,7 +5,8 @@
     "number": 2,
     "label": "处善巧与缘起善巧",
     "member_items": [
-      "处善巧与缘起善巧"
+      "处善巧",
+      "缘起善巧"
     ],
     "group_ids": [
       "dn33-n2-g11"
@@ -14,10 +15,12 @@
       "dn33"
     ],
     "search_terms": [
-      "处善巧与缘起善巧"
+      "处善巧与缘起善巧",
+      "处善巧",
+      "缘起善巧"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「处善巧与缘起善巧」属于 2 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：处善巧与缘起善巧。[1]\n\n## 所含各法\n### 处善巧与缘起善巧\n经文将「处善巧与缘起善巧」列为「处善巧与缘起善巧」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：处善巧与缘起善巧。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 1 个关键词，冻结 8 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n根据现有证据，处善巧与缘起善巧是《DN33》中并列提到的两种善巧[1][2]。证据仅列出这两个名称，未对其具体含义展开说明[1][2]。\n\n## 要点展开\n### 处善巧与缘起善巧的并列\n- 《DN33》将“处善巧”与“缘起善巧”并列为两个条目[1][2]。\n- 另有证据提到“处善巧与非处善巧”，但未说明其具体内容[3]。\n\n### 缘起的定义\n- 在《SN12.1》和《SN12.20》中，缘起被定义为“这被称为缘起”[5][7]，但未给出具体解释。\n- 《SN12.20》提出“什么是缘起？”的问题，但证据中未提供答案[6]。\n\n### 善巧的类别\n- 《DN33》还提到“三善巧：增益善巧、损减善巧、方法善巧”[8]，但未说明其与处善巧、缘起善巧的关系。\n\n## 分歧与张力\n不同来源对“善巧”的列举存在差异：《DN33》中既有“处善巧与缘起善巧”的并列[1][2]，又有“三善巧”的列举[8]，但证据未说明两者是否属于同一分类体系。此外，[3]提到“处善巧与非处善巧”，与[1][2]的表述不同，但未解释差异。\n\n## 证据覆盖情况\n现有证据仅覆盖了“处善巧”与“缘起善巧”的名称及其并列关系，以及“缘起”的简单定义，但未涉及两者的具体内涵、修行方法或相互关系。",
       "evidence": [
         {
           "kind": "source",
@@ -72,9 +75,15 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn12.1",
           "text": "什么是缘起呢？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.1&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%B7%A3%E8%B5%B7%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "thu samannesito hoti ti attho. Sesay sabbattha uttanat- tham evā ti. Vīmaņysakasuitar sattamay. 48.\", \"chinese_translation\": \"如是我闻。此是《审察经》。其中“审察者”有三种：义审察者、行审察者、导师审察者。其中，“诸贤友，智者乃审察之人”（S. iii. 6）处，义审察者未涉及。“阿难，凡比丘于界善巧、于处善巧、于缘起善巧、于理非理善巧，至此，阿难，可称智者比丘为审察者”（M. iii. 62）处，行审察者未涉及。而在此经中，所指的是导师审察者。“心之随观”即心之观察、心之界定。“寻求”即寻觅、探求、审察。“如是了知”即为了如此知解。“于二法中如来应被审察”……善友依止。其广大性应如是了知：一时，尊者阿难思惟：“我之半分为自身之力，半分为善友之力。”因自性无法决断，往诣世尊而问：“世尊，此梵行的一半是善友、善伴、善随从。”（S. v. 2）世尊言：“阿难，莫作是说，莫作是说。阿难，此梵行全体即是善友、善伴、善随从。阿难，具善友、善伴、善随从之比丘，当可期望他修习八圣道、多修八圣道。” 再者，阿难，比丘以善友为依止——乃至——修习圣八支道，多修习圣八支道。阿难，于此，比丘修",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%99%95%E5%96%84%E5%B7%A7&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "处善巧与缘起善巧",
@@ -160,9 +169,27 @@
               "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn12.1&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%B7%A3%E8%B5%B7%E5%91%A2%EF%BC%9F"
             }
           ]
+        },
+        {
+          "query": "处善巧",
+          "hits": []
+        },
+        {
+          "query": "缘起善巧",
+          "hits": []
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "thu samannesito hoti ti attho. Sesay sabbattha uttanat- tham evā ti. Vīmaņysakasuitar sattamay. 48.\", \"chinese_translation\": \"如是我闻。此是《审察经》。其中“审察者”有三种：义审察者、行审察者、导师审察者。其中，“诸贤友，智者乃审察之人”（S. iii. 6）处，义审察者未涉及。“阿难，凡比丘于界善巧、于处善巧、于缘起善巧、于理非理善巧，至此，阿难，可称智者比丘为审察者”（M. iii. 62）处，行审察者未涉及。而在此经中，所指的是导师审察者。“心之随观”即心之观察、心之界定。“寻求”即寻觅、探求、审察。“如是了知”即为了如此知解。“于二法中如来应被审察”……善友依止。其广大性应如是了知：一时，尊者阿难思惟：“我之半分为自身之力，半分为善友之力。”因自性无法决断，往诣世尊而问：“世尊，此梵行的一半是善友、善伴、善随从。”（S. v. 2）世尊言：“阿难，莫作是说，莫作是说。阿难，此梵行全体即是善友、善伴、善随从。阿难，具善友、善伴、善随从之比丘，当可期望他修习八圣道、多修八圣道。” 再者，阿难，比丘以善友为依止——乃至——修习圣八支道，多修习圣八支道。阿难，于此，比丘修",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E8%99%95%E5%96%84%E5%B7%A7&scope=site",
+          "query": "处善巧"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：处善巧与缘起善巧\n\n## 直接回答\n根据现有证据，处善巧与缘起善巧是《DN33》中并列提到的两种善巧[1][2]。证据仅列出这两个名称，未对其具体含义展开说明[1][2]。\n\n## 要点展开\n### 处善巧与缘起善巧的并列\n- 《DN33》将“处善巧”与“缘起善巧”并列为两个条目[1][2]。\n- 另有证据提到“处善巧与非处善巧”，但未说明其具体内容[3]。\n\n### 缘起的定义\n- 在《SN12.1》和《SN12.20》中，缘起被定义为“这被称为缘起”[5][7]，但未给出具体解释。\n- 《SN12.20》提出“什么是缘起？”的问题，但证据中未提供答案[6]。\n\n### 善巧的类别\n- 《DN33》还提到“三善巧：增益善巧、损减善巧、方法善巧”[8]，但未说明其与处善巧、缘起善巧的关系。\n\n## 分歧与张力\n不同来源对“善巧”的列举存在差异：《DN33》中既有“处善巧与缘起善巧”的并列[1][2]，又有“三善巧”的列举[8]，但证据未说明两者是否属于同一分类体系。此外，[3]提到“处善巧与非处善巧”，与[1][2]的表述不同，但未解释差异。\n\n## 证据覆盖情况\n现有证据仅覆盖了“处善巧”与“缘起善巧”的名称及其并列关系，以及“缘起”的简单定义，但未涉及两者的具体内涵、修行方法或相互关系。\n\n## 引用\n- [1] Early Buddhist · DN33 · 处善巧与缘起善巧 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7\n  > 处善巧与缘起善巧。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7%E3%80%82\n  > 处善巧与缘起善巧。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E9%9D%9E%E8%99%95%E5%96%84%E5%B7%A7%E3%80%82\n  > 处善巧与非处善巧。\n- [4] Early Buddhist · 经藏/相应部_sn · sn12.1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.1&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%B7%A3%E8%B5%B7%E7%B6%93\n  > 缘起经\n- [5] Early Buddhist · 经藏/相应部_sn · sn12.1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.1&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%B7%A3%E8%B5%B7%E3%80%82\n  > 这被称为缘起。\n- [6] Early Buddhist · 经藏/相应部_sn · sn12.20 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.20&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E7%B7%A3%E8%B5%B7%EF%BC%9F\n  > 什么是缘起？\n- [7] Early Buddhist · 经藏/相应部_sn · sn12.20 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn12.20&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E7%B7%A3%E8%B5%B7%E3%80%82\n  > 这被称为缘起。\n- [8] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E5%96%84%E5%B7%A7%EF%BC%9A%E5%A2%9E%E7%9B%8A%E5%96%84%E5%B7%A7%E3%80%81%E6%90%8D%E6%B8%9B%E5%96%84%E5%B7%A7%E3%80%81%E6%96%B9%E6%B3%95%E5%96%84%E5%B7%A7%E3%80%82\n  > 三善巧：增益善巧、损减善巧、方法善巧。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -173,12 +200,21 @@
       "order": 11,
       "label": "处善巧与缘起善巧",
       "members": "处善巧与缘起善巧",
+      "match_members": "处善巧与缘起善巧",
       "member_items": [
-        "处善巧与缘起善巧"
+        "处善巧",
+        "缘起善巧"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "处善巧与缘起善巧。"
+      ],
       "source_text": "处善巧与缘起善巧。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E8%99%95%E5%96%84%E5%B7%A7%E8%88%87%E7%B7%A3%E8%B5%B7%E5%96%84%E5%B7%A7",
+      "expanded_points": [
+        "处善巧：指对六处等处的善巧把握，但原文未展开具体内容。",
+        "缘起善巧：指对缘起法的善巧理解，但原文未展开具体内容。"
+      ]
     }
   ]
 }

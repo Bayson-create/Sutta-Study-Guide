@@ -26,13 +26,13 @@
       "世俗智"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四智」属于 4 法。DN33 与 DN34 都列出这一法组，原文可对照阅读。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：法智、类比智、他心智、世俗智。[1]\n- DN34：法智、类比智、他心智、世俗智。[2]\n\n## 所含各法\n### 法智\n经文将「法智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n### 类比智\n经文将「类比智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n### 他心智\n经文将「他心智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《烦恼的灭尽经》命中：「大通智、神通、天耳，他心、可能、业，。[4]\n### 世俗智\n经文将「世俗智」列为「四智」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：四智：法智、类比智、他心智、世俗智。。[1]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 29 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 5 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四智指法智、类比智、他心智、世俗智 [1][2][3][6]。在 DN34 中，这四智被列为“应该使之生出的四法”之一 [2][6]。\n\n## 要点展开\n### 四智的构成\n- 四智包括法智、类比智、他心智、世俗智 [1][2][3][6]。\n\n### 四智在 DN34 中的定位\n- DN34 将四智列为“应该使之生出的四法”之一，即应当修习生起的四法 [2][6]。\n\n## 分歧与张力\n- 证据 [5] 提到“下一个四智：苦智、苦集智、苦灭智、导向苦灭道迹智”，这与 [1][2][3][6] 中定义的四智（法智、类比智、他心智、世俗智）不同，可能指另一组四智，但现有证据未说明两者关系。\n\n## 证据覆盖情况\n现有证据明确给出了四智的成员及其在 DN34 中的定位，但未解释各智的具体含义；同时，证据 [5] 显示存在另一组四智，但未提供更多细节。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 四智",
           "text": "四智：法智、类比智、他心智、世俗智。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82"
         },
         {
           "kind": "source",
@@ -137,7 +137,7 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四智",
@@ -490,8 +490,17 @@
           "text": "：错误安立的主客体； - 依他起性：依因缘生起的识流； - 圆成实性：依他起中永离能所二取的真实性。 ## 4. 与上座部的对应 可以功能比较： |唯识|上座部近似项目| |---|---| |观察虚妄分别|观察想、见、心行| |观察识流|心路过程、名法| |破能所执|六处、触、受、爱之缘起分析| |转依|道智断烦恼后心流根本改变| 但不能等同： - 阿赖耶识不等于有分心； - 转八识成四智不等于四道四果； - 三性不等于无常、苦、无我三相； - 唯识五位不等于七清净。 --- # 十、如来藏型修行 如来藏体系常见两种方向。 ## 1. 除垢显净型 修行逻辑是： 1. 心性本来清净； 2. 烦恼属于客尘； 3. 修道不是制造佛性； 4. 而是去除覆盖； 5. 佛性功德最终完全显露。 这种路线容易产生强烈修行信心。 ## 2. 实体化风险 若行者寻找： - 一个永恒觉知； - 不受条件影响的心体； - 身心背后的真正主人； - 纯净、常乐我的内在佛体， 上座部会认为修行已经从无我观转向细微我执。 ## 3. 与上座",
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site",
           "query": "四智"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap22.json",
+          "heading": "站内搜索命中",
+          "text": "）如是观察之后，那阿那含圣弟子，即坐于他的本座，或于其他的时候，为断色（贪）、无色贪、慢、掉举、无明而无余及为证得第四地而行瑜伽。他集中了根、力、觉支、以智思惟 <span class=\\\"vism-page\\\">[678]</span>那诸行「是无常、苦、无我」，反复思惟，进入观的程序。如是行道者，依前述之法，于行舍智之末，由一（意门）转向而生起的随顺智及种姓智之时，即于种姓之后生起阿罗汉道。与彼相应之智为阿罗汉道智。</p><p>第四智毕</p><p>（阿罗汉果）在此智之后，当知如前所说（有二或三刹那）的果心。至此名为阿罗汉第八圣者，大漏尽者，具最后身，卸去重担，随得自己目的，尽诸有结，是以正知解脱，为天及（人）世间的最高应施者。是故说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"22-008\\\">[22-008]</sup> 「在须陀洹道、斯陀含道、阿那含道、阿罗汉道的四道智为智见清净」，这是说关于顺次可得的此等四智。</p>\"}, {\"level\": 1, \"heading\": \"（二）智见清净的威力\", \"html\": \"<p>现在是为知这四智的智见清净的威力：</p><p>（１）圆满菩提分的状态，</p><p>（２）出起与力的结合，</p><p>（３）断那应断",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E6%99%BA&scope=site",
+          "query": "四智"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：四智\n\n## 直接回答\n四智指法智、类比智、他心智、世俗智 [1][2][3][6]。在 DN34 中，这四智被列为“应该使之生出的四法”之一 [2][6]。\n\n## 要点展开\n### 四智的构成\n- 四智包括法智、类比智、他心智、世俗智 [1][2][3][6]。\n\n### 四智在 DN34 中的定位\n- DN34 将四智列为“应该使之生出的四法”之一，即应当修习生起的四法 [2][6]。\n\n## 分歧与张力\n- 证据 [5] 提到“下一个四智：苦智、苦集智、苦灭智、导向苦灭道迹智”，这与 [1][2][3][6] 中定义的四智（法智、类比智、他心智、世俗智）不同，可能指另一组四智，但现有证据未说明两者关系。\n\n## 证据覆盖情况\n现有证据明确给出了四智的成员及其在 DN34 中的定位，但未解释各智的具体含义；同时，证据 [5] 显示存在另一组四智，但未提供更多细节。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四智 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82\n  > 四智：法智、类比智、他心智、世俗智。\n- [2] Early Buddhist · DN34 · 四智 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA\n  > （八）哪些是应该使之生出的四法呢？四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。\n- [3] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82\n  > 四智：法智、类比智、他心智、世俗智。\n- [4] Early Buddhist · 经藏/相应部_sn · sn52.24 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn52.24&lang=zh&q=%E4%BB%96%E5%BF%83%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E3%80%8C%E5%A4%A7%E9%80%9A%E6%99%BA%E3%80%81%E7%A5%9E%E9%80%9A%E3%80%81%E5%A4%A9%E8%80%B3%EF%BC%8C%E4%BB%96%E5%BF%83%E3%80%81%E5%8F%AF%E8%83%BD%E3%80%81%E6%A5%AD%EF%BC%8C\n  > 「大通智、神通、天耳，他心、可能、业，\n- [5] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%8B%E4%B8%80%E5%80%8B%E5%9B%9B%E6%99%BA%EF%BC%9A%E8%8B%A6%E6%99%BA%E3%80%81%E8%8B%A6%E9%9B%86%E6%99%BA%E3%80%81%E8%8B%A6%E6%BB%85%E6%99%BA%E3%80%81%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E6%99%BA%E3%80%82\n  > 下一个四智：苦智、苦集智、苦灭智、导向苦灭道迹智。\n- [6] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E6%99%BA%EF%BC%9A%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82\n  > 四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。\n- [7] Early Buddhist · 经藏/相应部_sn · sn47.12 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.12&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81\n  > 我已知道法的类比：『大德！\n- [8] Early Buddhist · 经藏/长部_dn · dn16 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn16&lang=zh&q=%E9%A1%9E%E6%AF%94%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%88%91%E5%B7%B2%E7%9F%A5%E9%81%93%E6%B3%95%E7%9A%84%E9%A1%9E%E6%AF%94%EF%BC%9A%E3%80%8E%E5%A4%A7%E5%BE%B7%EF%BC%81\n  > 我已知道法的类比：『大德！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -501,7 +510,8 @@
       "number": 4,
       "order": 11,
       "label": "四智",
-      "members": "法智、类比智、他心智、世俗智",
+      "members": "法智、类比智、他心智、世俗智。",
+      "match_members": "法智、类比智、他心智、世俗智",
       "member_items": [
         "法智",
         "类比智",
@@ -509,8 +519,17 @@
         "世俗智"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "四智：法智、类比智、他心智、世俗智。"
+      ],
       "source_text": "四智：法智、类比智、他心智、世俗智。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA%E3%80%82",
+      "expanded_points": [
+        "法智：指对法的智慧，即了知法义的智慧。",
+        "类比智：指通过类比推理获得的智慧。",
+        "他心智：指了知他人心念的智慧。",
+        "世俗智：指世俗层面的智慧。"
+      ]
     },
     {
       "id": "dn34-n4-g8",
@@ -519,6 +538,7 @@
       "order": 8,
       "label": "四智",
       "members": "法智、类比智、他心智、世俗智",
+      "match_members": "法智、类比智、他心智、世俗智",
       "member_items": [
         "法智",
         "类比智",
@@ -526,8 +546,17 @@
         "世俗智"
       ],
       "dn34_status": "应生出",
+      "source_paragraphs": [
+        "（八）哪些是应该使之生出的四法呢？四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。"
+      ],
       "source_text": "（八）哪些是应该使之生出的四法呢？四智：法智、类比智、他心智、世俗智，这些是应该使之生出的四法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%B3%95%E6%99%BA%E3%80%81%E9%A1%9E%E6%AF%94%E6%99%BA%E3%80%81%E4%BB%96%E5%BF%83%E6%99%BA%E3%80%81%E4%B8%96%E4%BF%97%E6%99%BA",
+      "expanded_points": [
+        "法智：指对法的智慧，即了知法义的智慧。",
+        "类比智：指通过类比推理获得的智慧。",
+        "他心智：指了知他人心念的智慧。",
+        "世俗智：指世俗层面的智慧。"
+      ]
     }
   ]
 }

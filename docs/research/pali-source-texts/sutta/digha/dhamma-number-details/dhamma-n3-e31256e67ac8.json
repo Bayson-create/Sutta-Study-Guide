@@ -22,7 +22,7 @@
       "现在的部分之智"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三智」属于 3 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：过去的部分之智、未来的部分之智、现在的部分之智。[1]\n\n## 所含各法\n### 过去的部分之智\n经文将「过去的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n### 未来的部分之智\n经文将「未来的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n### 现在的部分之智\n经文将「现在的部分之智」列为「三智」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。。[2]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 25 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n三智指过去的部分之智、未来的部分之智、现在的部分之智，属于应该使之生出的三法之一 [1][2]。\n\n## 要点展开\n### 三智的定义\n- 三智包括：过去的部分之智、未来的部分之智、现在的部分之智 [1][2]。\n- 这些三智被归类为“应该使之生出的三法” [1][2]。\n\n## 分歧与张力\n证据 [5][6][7][8] 中提到的“苦之智，苦集之智，苦灭之智，导向苦灭道迹之智”是四圣谛智，与三智（过去、未来、现在的部分之智）在内容和数量上均不同，但未说明两者关系，可能属于不同分类体系。\n\n## 证据覆盖情况\n现有证据明确给出了三智的具体内容和归类，但未涉及三智的修习方法、作用或与其他法数的关联。",
       "evidence": [
         {
           "kind": "source",
@@ -77,9 +77,33 @@
           "label": "Early Buddhist · 经藏/增支部_an · an9.50",
           "text": "那部分涅槃经",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an9.50&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%82%A3%E9%83%A8%E5%88%86%E6%B6%85%E6%A7%83%E7%B6%93"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap22.json",
+          "text": "（一来）的第四圣者，他只一次来此世间便得灭尽于苦。此后的观察，亦如前述。</p><p>（３）（阿那含道智）如是观察之后，那斯陀含圣弟子，即坐于他的本座，或于其他的时候，为断欲贪与嗔恚而无余及为证得第三地而行瑜伽。他集中了根、力、觉支，以智思惟那诸行「是无常、苦、无我」，反复思惟，进入观的程序。如是行道者，依前述之法，于行舍智之末，由一（意门）转向而生起随顺智及种姓智时，即在种姓之后生起阿那含道。与彼相应之智为阿那含道智。</p><p>第三智毕</p><p>（阿那含果）在此智之后，当知如前所说（有二或三刹那）的果心。至此名为阿那含（不还）的第六圣者，即于彼化生之处而般涅槃，不复还来──依结生而不再来此世间之故。此后的观察亦如前述。</p><p>（４）（阿罗汉道智）如是观察之后，那阿那含圣弟子，即坐于他的本座，或于其他的时候，为断色（贪）、无色贪、慢、掉举、无明而无余及为证得第四地而行瑜伽。他集中了根、力、觉支、以智思惟 <span class=\\\"vism-page\\\">[678]</span>那诸行「是无常、苦、无我」，反复思惟，进入观的程序。如是行道者，依前述之法，于行舍智之末，由一（意门）转向而生起的随顺智及种姓智之时，即于种姓之后生起阿罗汉道。与彼相应之智为阿罗汉道智。</p><p>第四智毕</p",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap14.json",
+          "text": "智，是「词无碍解」； <span class=\\\"vism-page\\\">[442]</span>即是说获得词无碍解的人，听到「派素（触），唯达难（受）」等语，知道「这是自性词」；听到「派沙，唯达那」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-020\\\">[14-020]</sup> 等语，知道「这是非自性词」。「于诸智中的智」－－即以一切智为所缘而观察者的以智为所缘的，或于如上述的（义法词无碍解）三智中依它们的（所缘之）境及作用等的详细方法的智，是「辩无碍解」的意义。</p><p>此等四无碍解分为有学地及无学地二处。此中上首弟子 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-021\\\">[14-021]</sup> 及（八十）大声闻的（无碍解）是多属于无学地的区域；如阿难长老，质多居士，昙弥迦优婆塞，优婆离居士，久寿多罗优婆夷等的（无碍解）是属于有学地的区域。如是区分为二地的此等（四无碍解），是依于证、教、闻、问及宿行五种行相而得明净的。这里的「证」－－是证得阿罗汉果。「教」－－是研究佛语。「闻」－－是恭求闻法。「问」－－是抉择圣典及义疏中的难句和义句的议论。「宿行」－－曾于过去诸佛的教内往复勤修，直至随顺种姓 <sup clas",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap21.json",
+          "text": "ss=\\\"vism-page\\\">[661]</span>如是于（修道的）前分以厌离智而厌离者的欲舍于生起等为「欲脱」。为作解脱的方便而于中间审察为「审察」。即已解脱而后舍（中立）为「止住」。有关于此的曾作这样说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"21-041\\\">[21-041]</sup> 「生起是诸行，于彼等诸行而舍，故为行舍」等。如是此智（三者）是一。</p><p>其次当知于圣典的文中这（三智）唯是一。即如所说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"21-042\\\">[21-042]</sup> 「那欲脱与审察随观及行舍的此三法，是义一而文异」。</p><p>（４）（至出起观）如是证得行舍的善男子的观，是达于顶点而至出起。「达顶点观」或「至出起观」，这只是行舍等的三智之名而已。因这（观）到达了顶点最上的状态，所以是「达顶点」。因去至出起，所以是「至出起」。因为从住著的事物之外的相（而出起）及从于内转起的（烦恼蕴）而出起，故说道为出起。去至此（道）为「至出起（观）」，即与道结合之意。</p><p>这里为说明「住著」与「出起」，有这些论母：（一）于内住著从内出起，（二）于内住著从外出起，（三）于外住著外出起，（四）于外住著内",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "iññāpetuṃ, te suviññāpaya. Ye paralokañ c' eva vajjañ ca bhayato passanti, te paralokavajjabhayadassāvino nāma.\", \"chinese_translation\": \"43. “Ajjhesanaṃ”的意思是：请求。“Buddhacakkhunā”是指：以根之上下智和随眠智。因为这两种智名为“佛眼”；一切知智名为“普眼”；三智（道智）名为“法眼”。“Apparajakkhe”等词中，那些按照上述方法在慧眼中贪等尘垢微小的人，称为“apparajakkhā”（少尘者）。那些尘垢大的人，称为“mahārajakkhā”（多尘者）。那些信等根锐利的人，称为“tikkhindriyā”（利根者）。那些根迟钝的人，称为“mudindriyā”（钝根者）。那些信等行相美好的人，称为“svākārā”（具妙相者）。那些能理解所说之义、容易被教化的人，称为“suvifiñāpaya”（易教者）。那些看见来世和过患并生起恐惧的人，称为“paralokavajjabhayadassāvino”（见来世过患恐惧者）。\", \"correction_note\": [ { \"typ",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三智",
@@ -352,7 +376,38 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap22.json",
+          "heading": "站内搜索命中",
+          "text": "（一来）的第四圣者，他只一次来此世间便得灭尽于苦。此后的观察，亦如前述。</p><p>（３）（阿那含道智）如是观察之后，那斯陀含圣弟子，即坐于他的本座，或于其他的时候，为断欲贪与嗔恚而无余及为证得第三地而行瑜伽。他集中了根、力、觉支，以智思惟那诸行「是无常、苦、无我」，反复思惟，进入观的程序。如是行道者，依前述之法，于行舍智之末，由一（意门）转向而生起随顺智及种姓智时，即在种姓之后生起阿那含道。与彼相应之智为阿那含道智。</p><p>第三智毕</p><p>（阿那含果）在此智之后，当知如前所说（有二或三刹那）的果心。至此名为阿那含（不还）的第六圣者，即于彼化生之处而般涅槃，不复还来──依结生而不再来此世间之故。此后的观察亦如前述。</p><p>（４）（阿罗汉道智）如是观察之后，那阿那含圣弟子，即坐于他的本座，或于其他的时候，为断色（贪）、无色贪、慢、掉举、无明而无余及为证得第四地而行瑜伽。他集中了根、力、觉支、以智思惟 <span class=\\\"vism-page\\\">[678]</span>那诸行「是无常、苦、无我」，反复思惟，进入观的程序。如是行道者，依前述之法，于行舍智之末，由一（意门）转向而生起的随顺智及种姓智之时，即于种姓之后生起阿罗汉道。与彼相应之智为阿罗汉道智。</p><p>第四智毕</p",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site",
+          "query": "三智"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap14.json",
+          "heading": "站内搜索命中",
+          "text": "智，是「词无碍解」； <span class=\\\"vism-page\\\">[442]</span>即是说获得词无碍解的人，听到「派素（触），唯达难（受）」等语，知道「这是自性词」；听到「派沙，唯达那」 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-020\\\">[14-020]</sup> 等语，知道「这是非自性词」。「于诸智中的智」－－即以一切智为所缘而观察者的以智为所缘的，或于如上述的（义法词无碍解）三智中依它们的（所缘之）境及作用等的详细方法的智，是「辩无碍解」的意义。</p><p>此等四无碍解分为有学地及无学地二处。此中上首弟子 <sup class=\\\"vism-fnref\\\" data-fn=\\\"14-021\\\">[14-021]</sup> 及（八十）大声闻的（无碍解）是多属于无学地的区域；如阿难长老，质多居士，昙弥迦优婆塞，优婆离居士，久寿多罗优婆夷等的（无碍解）是属于有学地的区域。如是区分为二地的此等（四无碍解），是依于证、教、闻、问及宿行五种行相而得明净的。这里的「证」－－是证得阿罗汉果。「教」－－是研究佛语。「闻」－－是恭求闻法。「问」－－是抉择圣典及义疏中的难句和义句的议论。「宿行」－－曾于过去诸佛的教内往复勤修，直至随顺种姓 <sup clas",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site",
+          "query": "三智"
+        },
+        {
+          "source": "docs/research/vism-data/zh_chap21.json",
+          "heading": "站内搜索命中",
+          "text": "ss=\\\"vism-page\\\">[661]</span>如是于（修道的）前分以厌离智而厌离者的欲舍于生起等为「欲脱」。为作解脱的方便而于中间审察为「审察」。即已解脱而后舍（中立）为「止住」。有关于此的曾作这样说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"21-041\\\">[21-041]</sup> 「生起是诸行，于彼等诸行而舍，故为行舍」等。如是此智（三者）是一。</p><p>其次当知于圣典的文中这（三智）唯是一。即如所说： <sup class=\\\"vism-fnref\\\" data-fn=\\\"21-042\\\">[21-042]</sup> 「那欲脱与审察随观及行舍的此三法，是义一而文异」。</p><p>（４）（至出起观）如是证得行舍的善男子的观，是达于顶点而至出起。「达顶点观」或「至出起观」，这只是行舍等的三智之名而已。因这（观）到达了顶点最上的状态，所以是「达顶点」。因去至出起，所以是「至出起」。因为从住著的事物之外的相（而出起）及从于内转起的（烦恼蕴）而出起，故说道为出起。去至此（道）为「至出起（观）」，即与道结合之意。</p><p>这里为说明「住著」与「出起」，有这些论母：（一）于内住著从内出起，（二）于内住著从外出起，（三）于外住著外出起，（四）于外住著内",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site",
+          "query": "三智"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "iññāpetuṃ, te suviññāpaya. Ye paralokañ c' eva vajjañ ca bhayato passanti, te paralokavajjabhayadassāvino nāma.\", \"chinese_translation\": \"43. “Ajjhesanaṃ”的意思是：请求。“Buddhacakkhunā”是指：以根之上下智和随眠智。因为这两种智名为“佛眼”；一切知智名为“普眼”；三智（道智）名为“法眼”。“Apparajakkhe”等词中，那些按照上述方法在慧眼中贪等尘垢微小的人，称为“apparajakkhā”（少尘者）。那些尘垢大的人，称为“mahārajakkhā”（多尘者）。那些信等根锐利的人，称为“tikkhindriyā”（利根者）。那些根迟钝的人，称为“mudindriyā”（钝根者）。那些信等行相美好的人，称为“svākārā”（具妙相者）。那些能理解所说之义、容易被教化的人，称为“suvifiñāpaya”（易教者）。那些看见来世和过患并生起恐惧的人，称为“paralokavajjabhayadassāvino”（见来世过患恐惧者）。\", \"correction_note\": [ { \"typ",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%89%E6%99%BA&scope=site",
+          "query": "三智"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：三智\n\n## 直接回答\n三智指过去的部分之智、未来的部分之智、现在的部分之智，属于应该使之生出的三法之一 [1][2]。\n\n## 要点展开\n### 三智的定义\n- 三智包括：过去的部分之智、未来的部分之智、现在的部分之智 [1][2]。\n- 这些三智被归类为“应该使之生出的三法” [1][2]。\n\n## 分歧与张力\n证据 [5][6][7][8] 中提到的“苦之智，苦集之智，苦灭之智，导向苦灭道迹之智”是四圣谛智，与三智（过去、未来、现在的部分之智）在内容和数量上均不同，但未说明两者关系，可能属于不同分类体系。\n\n## 证据覆盖情况\n现有证据明确给出了三智的具体内容和归类，但未涉及三智的修习方法、作用或与其他法数的关联。\n\n## 引用\n- [1] Early Buddhist · DN34 · 三智 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA\n  > （八）哪些是应该使之生出的三法呢？三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。\n- [2] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E6%99%BA%EF%BC%9A%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%89%E6%B3%95%E3%80%82\n  > 三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。\n- [3] Early Buddhist · 经藏/相应部_sn · sn37.29 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn37.29&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93\n  > 部分经\n- [4] Early Buddhist · 经藏/相应部_sn · sn47.26 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn47.26&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%83%A8%E5%88%86%E7%B6%93\n  > 部分经\n- [5] Early Buddhist · 经藏/中部_mn · mn10 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn10&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！\n- [6] Early Buddhist · 经藏/中部_mn · mn141 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn141&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，学友们！\n- [7] Early Buddhist · 经藏/相应部_sn · sn45.8 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn45.8&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！\n- [8] Early Buddhist · 经藏/长部_dn · dn22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn22&lang=zh&q=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E8%8B%A6%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E9%9B%86%E4%B9%8B%E6%99%BA%EF%BC%8C%E8%8B%A6%E6%BB%85%E4%B9%8B%E6%99%BA%EF%BC%8C%E5%B0%8E%E5%90%91%E8%8B%A6%E6%BB%85%E9%81%93%E8%B7%A1%E4%B9%8B%E6%99%BA%EF%BC%8C%E6%AF%94%E4%B8%98%E5%80%91%EF%BC%81\n  > 苦之智，苦集之智，苦灭之智，导向苦灭道迹之智，比丘们！",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -363,14 +418,23 @@
       "order": 8,
       "label": "三智",
       "members": "过去的部分之智、未来的部分之智、现在的部分之智",
+      "match_members": "过去的部分之智、未来的部分之智、现在的部分之智",
       "member_items": [
         "过去的部分之智",
         "未来的部分之智",
         "现在的部分之智"
       ],
       "dn34_status": "应生出",
+      "source_paragraphs": [
+        "（八）哪些是应该使之生出的三法呢？三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。"
+      ],
       "source_text": "（八）哪些是应该使之生出的三法呢？三智：过去的部分之智、未来的部分之智、现在的部分之智，这些是应该使之生出的三法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%89%E6%99%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%81%8E%E5%8E%BB%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E6%9C%AA%E4%BE%86%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA%E3%80%81%E7%8F%BE%E5%9C%A8%E7%9A%84%E9%83%A8%E5%88%86%E4%B9%8B%E6%99%BA",
+      "expanded_points": [
+        "过去的部分之智：指对过去诸法部分的了知。",
+        "未来的部分之智：指对未来诸法部分的了知。",
+        "现在的部分之智：指对现在诸法部分的了知。"
+      ]
     }
   ]
 }

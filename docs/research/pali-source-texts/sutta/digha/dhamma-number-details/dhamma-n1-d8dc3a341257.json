@@ -5,8 +5,7 @@
     "number": 1,
     "label": "一法",
     "member_items": [
-      "一切众生皆因食而存续",
-      "一切众生皆因行而存续"
+      "一切众生皆因食而存续、一切众生皆因行而存续"
     ],
     "group_ids": [
       "dn33-n1-g1"
@@ -16,11 +15,10 @@
     ],
     "search_terms": [
       "一法",
-      "一切众生皆因食而存续",
-      "一切众生皆因行而存续"
+      "一切众生皆因食而存续、一切众生皆因行而存续"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「一法」属于 1 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：一切众生皆因食而存续、一切众生皆因行而存续。[1]\n\n## 所含各法\n### 一切众生皆因食而存续\n经文将「一切众生皆因食而存续」列为「一法」的一个成员。Early Buddhist 用该名词检索时，在《大问经第一》命中：『一切众生皆因食而存续。。[3]\n### 一切众生皆因行而存续\n经文将「一切众生皆因行而存续」列为「一法」的一个成员。Early Buddhist 用该名词检索时，在《大问经第一》命中：『一切众生皆因食而存续。。[3]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 3 个关键词，冻结 24 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 6 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n根据现有证据，DN33 中所述“一法”为“一切众生皆因食而存续、一切众生皆因行而存续”[1]。此外，其他经典也提及“一法”的不同分类，如 DN34 列举了“有多所助益的一法”等十种[3]，AN3.67 提到“自证一法、遍知一法”等[2]。\n\n## 要点展开\n### DN33 中的一法\n- DN33 明确将“一切众生皆因食而存续、一切众生皆因行而存续”作为一法，并强调此法是佛陀正确讲述、应全部结集、不应争论，以利梵行长住[1]。\n\n### 其他经典中的一法\n- DN34 列举了十种一法，包括“有多所助益的一法”、“有应该被修习的一法”等，但未具体说明内容[3]。\n- AN3.67 提到“自证一法、遍知一法、舍断一法、作证一法”，强调通过一法的修习达到解脱[2]。\n- AN1.575-615 和 SN1.61 也提及“一法”，但未给出具体定义[4][5]。\n\n## 分歧与张力\n不同经典对“一法”的指称存在差异：DN33 特指“食”与“行”的存续，而 DN34 则列举了多种功能分类（如助益、修习等），未指定具体内容[1][3]。AN3.67 则强调“一法”在修行中的动态作用（自证、遍知等）[2]。这些差异可能反映了不同语境下的侧重，但现有证据未提供统一解释。\n\n## 证据覆盖情况\n现有证据主要覆盖了 DN33 中“一法”的具体内容，以及 DN34、AN3.67 等对“一法”的分类和修行意义，但未涉及“一法”在其他经典中的具体所指，也未提供各经典之间关系的详细说明。",
       "evidence": [
         {
           "kind": "source",
@@ -33,12 +31,6 @@
           "label": "Early Buddhist · 经藏/增支部_an · an3.67",
           "text": "当有缘由时，他自证一法、遍知一法、舍断一法、作证一法，他自证一法、遍知一法、舍断一法、作证一法后，体会而得到正解脱。",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=an3.67&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%9C%89%E7%B7%A3%E7%94%B1%E6%99%82%EF%BC%8C%E4%BB%96%E8%87%AA%E8%AD%89%E4%B8%80%E6%B3%95%E3%80%81%E9%81%8D%E7%9F%A5%E4%B8%80%E6%B3%95%E3%80%81%E6%8D%A8%E6%96%B7%E4%B8%80%E6%B3%95%E3%80%81%E4%BD%9C%E8%AD%89%E4%B8%80%E6%B3%95%EF%BC%8C%E4%BB%96%E8%87%AA%E8%AD%89%E4%B8%80%E6%B3%95%E3%80%81%E9%81%8D%E7%9F%A5%E4%B8%80%E6%B3%95%E3%80%81%E6%8D%A8%E6%96%B7%E4%B8%80%E6%B3%95%E3%80%81%E4%BD%9C%E8%AD%89%E4%B8%80%E6%B3%95%E5%BE%8C%EF%BC%8C%E9%AB%94%E6%9C%83%E8%80%8C%E5%BE%97%E5%88%B0%E6%AD%A3%E8%A7%A3%E8%84%AB%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an10.27",
-          "text": "『一切众生皆因食而存续。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -57,48 +49,6 @@
           "label": "Early Buddhist · 经藏/相应部_sn · sn1.61",
           "text": "什么是一切都受其控制的一法？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn1.61&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%80%E5%88%87%E9%83%BD%E5%8F%97%E5%85%B6%E6%8E%A7%E5%88%B6%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%9F"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/增支部_an · an10.28",
-          "text": "『一切众生皆因食而存续。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/长部_dn · dn34",
-          "text": "一切众生皆因食而存续，这是应该被证知的一法。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E9%80%99%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%80%E6%B3%95%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/相应部_sn · sn46.2",
-          "text": "五盖因食而存续，缘食而住立；",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E8%93%8B%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/相应部_sn · sn46.2",
-          "text": "七觉支因食而存续，缘食而住立；",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%83%E8%A6%BA%E6%94%AF%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/相应部_sn · sn46.2",
-          "text": "犹如这身体因食而存续，缘食而住立；",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%8C%B6%E5%A6%82%E9%80%99%E8%BA%AB%E9%AB%94%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/长部_dn · dn33",
-          "text": "一切众生皆因食而存续、一切众生皆因行而存续，这是一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%81%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E9%80%99%E6%98%AF%E4%B8%80%E6%B3%95%E8%A2%AB%E9%82%A3%E6%9C%89%E7%9F%A5%E3%80%81%E6%9C%89%E8%A6%8B%E7%9A%84%E4%B8%96%E5%B0%8A%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E3%80%81%E9%81%8D%E6%AD%A3%E8%A6%BA%E8%80%85%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AC%9B%E8%BF%B0%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%87%89%E8%A9%B2%E5%B0%B1%E5%85%A8%E9%83%A8%E7%B5%90%E9%9B%86%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E7%88%AD%E8%AB%96%EF%BC%8C%E4%BB%A5%E4%BE%BF%E9%80%99%E6%A2%B5%E8%A1%8C%E6%9C%83%E6%98%AF%E9%95%B7%E6%99%82%E9%96%93%E3%80%81%E9%95%B7%E4%B9%85%E5%9C%B0%E4%BD%8F%E7%AB%8B%E7%9A%84%EF%BC%8C%E9%82%A3%E6%9C%83%E6%98%AF%E7%82%BA%E4%BA%86%E7%9C%BE%E4%BA%BA%E6%9C%89%E5%88%A9%E7%9B%8A%EF%BC%8C%E7%82%BA%E4%BA%86%E7%9C%BE%E4%BA%BA%E5%AE%89%E6%A8%82%EF%BC%8C%E7%82%BA%E4%BA%86%E4%B8%96%E9%96%93%E7%9A%84%E6%86%90%E6%84%8D%EF%BC%8C%E7%82%BA%E4%BA%86%E5%A4%A9%E8%88%87%E4%BA%BA%E6%9C%89%E5%88%A9%E7%9B%8A%E3%80%81%E6%9C%89%E5%88%A9%E3%80%81%E5%AE%89%E6%A8%82%E3%80%82"
-        },
-        {
-          "kind": "early_buddhist",
-          "label": "Early Buddhist · 经藏/小部_kn · kp4",
-          "text": "一切众生依食而住。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E4%BE%9D%E9%A3%9F%E8%80%8C%E4%BD%8F%E3%80%82"
         },
         {
           "kind": "site",
@@ -131,7 +81,7 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%80%E6%B3%95&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "一法",
@@ -219,174 +169,8 @@
           ]
         },
         {
-          "query": "一切众生皆因食而存续",
-          "hits": [
-            {
-              "uid": "an10.27",
-              "collection": "经藏/增支部_an",
-              "title": "大问经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "『一切众生皆因食而存续。",
-              "score": 47.44774852356766,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
-            },
-            {
-              "uid": "an10.28",
-              "collection": "经藏/增支部_an",
-              "title": "大问经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "『一切众生皆因食而存续。",
-              "score": 47.44774852356766,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
-            },
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "一切众生皆因食而存续，这是应该被证知的一法。",
-              "score": 39.678378314331425,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E9%80%99%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%80%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "sn46.2",
-              "collection": "经藏/相应部_sn",
-              "title": "身体经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "五盖因食而存续，缘食而住立；",
-              "score": 23.937234188914122,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E8%93%8B%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-            },
-            {
-              "uid": "sn46.2",
-              "collection": "经藏/相应部_sn",
-              "title": "身体经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "五盖因食而存续，缘食而住立；",
-              "score": 23.937234188914122,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BA%94%E8%93%8B%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-            },
-            {
-              "uid": "sn46.2",
-              "collection": "经藏/相应部_sn",
-              "title": "身体经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "七觉支因食而存续，缘食而住立；",
-              "score": 23.937234188914122,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%83%E8%A6%BA%E6%94%AF%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-            },
-            {
-              "uid": "sn46.2",
-              "collection": "经藏/相应部_sn",
-              "title": "身体经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "七觉支因食而存续，缘食而住立；",
-              "score": 23.937234188914122,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%83%E8%A6%BA%E6%94%AF%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-            },
-            {
-              "uid": "sn46.2",
-              "collection": "经藏/相应部_sn",
-              "title": "身体经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "犹如这身体因食而存续，缘食而住立；",
-              "score": 22.885143686859248,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn46.2&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E7%8C%B6%E5%A6%82%E9%80%99%E8%BA%AB%E9%AB%94%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E7%B7%A3%E9%A3%9F%E8%80%8C%E4%BD%8F%E7%AB%8B%EF%BC%9B"
-            }
-          ]
-        },
-        {
-          "query": "一切众生皆因行而存续",
-          "hits": [
-            {
-              "uid": "an10.27",
-              "collection": "经藏/增支部_an",
-              "title": "大问经第一",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "『一切众生皆因食而存续。",
-              "score": 32.27169954415637,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.27&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
-            },
-            {
-              "uid": "an10.28",
-              "collection": "经藏/增支部_an",
-              "title": "大问经第二",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "『一切众生皆因食而存续。",
-              "score": 32.27169954415637,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an10.28&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E3%80%8E%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%82"
-            },
-            {
-              "uid": "dn34",
-              "collection": "经藏/长部_dn",
-              "title": "十增经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "一切众生皆因食而存续，这是应该被证知的一法。",
-              "score": 26.96487429716603,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E9%80%99%E6%98%AF%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%80%E6%B3%95%E3%80%82"
-            },
-            {
-              "uid": "dn33",
-              "collection": "经藏/长部_dn",
-              "title": "结集经",
-              "author": "庄春江",
-              "translator": "zhuang",
-              "text": "一切众生皆因食而存续、一切众生皆因行而存续，这是一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。",
-              "score": 17.56867431784043,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%81%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C%EF%BC%8C%E9%80%99%E6%98%AF%E4%B8%80%E6%B3%95%E8%A2%AB%E9%82%A3%E6%9C%89%E7%9F%A5%E3%80%81%E6%9C%89%E8%A6%8B%E7%9A%84%E4%B8%96%E5%B0%8A%E3%80%81%E9%98%BF%E7%BE%85%E6%BC%A2%E3%80%81%E9%81%8D%E6%AD%A3%E8%A6%BA%E8%80%85%E6%AD%A3%E7%A2%BA%E5%9C%B0%E8%AC%9B%E8%BF%B0%EF%BC%8C%E5%9C%A8%E9%82%A3%E8%A3%A1%EF%BC%8C%E6%87%89%E8%A9%B2%E5%B0%B1%E5%85%A8%E9%83%A8%E7%B5%90%E9%9B%86%EF%BC%8C%E4%B8%8D%E6%87%89%E8%A9%B2%E7%88%AD%E8%AB%96%EF%BC%8C%E4%BB%A5%E4%BE%BF%E9%80%99%E6%A2%B5%E8%A1%8C%E6%9C%83%E6%98%AF%E9%95%B7%E6%99%82%E9%96%93%E3%80%81%E9%95%B7%E4%B9%85%E5%9C%B0%E4%BD%8F%E7%AB%8B%E7%9A%84%EF%BC%8C%E9%82%A3%E6%9C%83%E6%98%AF%E7%82%BA%E4%BA%86%E7%9C%BE%E4%BA%BA%E6%9C%89%E5%88%A9%E7%9B%8A%EF%BC%8C%E7%82%BA%E4%BA%86%E7%9C%BE%E4%BA%BA%E5%AE%89%E6%A8%82%EF%BC%8C%E7%82%BA%E4%BA%86%E4%B8%96%E9%96%93%E7%9A%84%E6%86%90%E6%84%8D%EF%BC%8C%E7%82%BA%E4%BA%86%E5%A4%A9%E8%88%87%E4%BA%BA%E6%9C%89%E5%88%A9%E7%9B%8A%E3%80%81%E6%9C%89%E5%88%A9%E3%80%81%E5%AE%89%E6%A8%82%E3%80%82"
-            },
-            {
-              "uid": "kp4",
-              "collection": "经藏/小部_kn",
-              "title": "问童子",
-              "author": "Metta",
-              "translator": "metta",
-              "text": "一切众生依食而住。",
-              "score": 11.497919299022147,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp4&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=metta&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E4%BE%9D%E9%A3%9F%E8%80%8C%E4%BD%8F%E3%80%82"
-            },
-            {
-              "uid": "kp9",
-              "collection": "经藏/小部_kn",
-              "title": "仁慈经",
-              "author": "Guo Liangjun",
-              "translator": "liangjun",
-              "text": "让一切众生幸福安全！",
-              "score": 11.497919299022147,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=kp9&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=liangjun&mt=%E8%AE%A9%E4%B8%80%E5%88%87%E4%BC%97%E7%94%9F%E5%B9%B8%E7%A6%8F%E5%AE%89%E5%85%A8%EF%BC%81"
-            },
-            {
-              "uid": "snp1.8",
-              "collection": "经藏/小部_kn",
-              "title": "仁慈经",
-              "author": "Guo Liangjun",
-              "translator": "liangjun",
-              "text": "让一切众生幸福安全！",
-              "score": 11.497919299022147,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=snp1.8&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=liangjun&mt=%E8%AE%A9%E4%B8%80%E5%88%87%E4%BC%97%E7%94%9F%E5%B9%B8%E7%A6%8F%E5%AE%89%E5%85%A8%EF%BC%81"
-            },
-            {
-              "uid": "dhp100-115",
-              "collection": "经藏/小部_kn",
-              "title": "千品",
-              "author": "叶均",
-              "translator": "yun",
-              "text": "皆遭于败北，",
-              "score": 10.44683422082983,
-              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dhp100-115&lang=zh&q=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C&coll=%E7%BB%8F%E8%97%8F%2F%E5%B0%8F%E9%83%A8_kn&au=yun&mt=%E7%9A%86%E9%81%AD%E6%96%BC%E6%95%97%E5%8C%97%EF%BC%8C"
-            }
-          ]
+          "query": "一切众生皆因食而存续、一切众生皆因行而存续",
+          "hits": []
         }
       ],
       "site_hits": [
@@ -432,7 +216,9 @@
           "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%80%E6%B3%95&scope=site",
           "query": "一法"
         }
-      ]
+      ],
+      "ai_full_markdown": "# AI 综合回答：一法\n\n## 直接回答\n根据现有证据，DN33 中所述“一法”为“一切众生皆因食而存续、一切众生皆因行而存续”[1]。此外，其他经典也提及“一法”的不同分类，如 DN34 列举了“有多所助益的一法”等十种[3]，AN3.67 提到“自证一法、遍知一法”等[2]。\n\n## 要点展开\n### DN33 中的一法\n- DN33 明确将“一切众生皆因食而存续、一切众生皆因行而存续”作为一法，并强调此法是佛陀正确讲述、应全部结集、不应争论，以利梵行长住[1]。\n\n### 其他经典中的一法\n- DN34 列举了十种一法，包括“有多所助益的一法”、“有应该被修习的一法”等，但未具体说明内容[3]。\n- AN3.67 提到“自证一法、遍知一法、舍断一法、作证一法”，强调通过一法的修习达到解脱[2]。\n- AN1.575-615 和 SN1.61 也提及“一法”，但未给出具体定义[4][5]。\n\n## 分歧与张力\n不同经典对“一法”的指称存在差异：DN33 特指“食”与“行”的存续，而 DN34 则列举了多种功能分类（如助益、修习等），未指定具体内容[1][3]。AN3.67 则强调“一法”在修行中的动态作用（自证、遍知等）[2]。这些差异可能反映了不同语境下的侧重，但现有证据未提供统一解释。\n\n## 证据覆盖情况\n现有证据主要覆盖了 DN33 中“一法”的具体内容，以及 DN34、AN3.67 等对“一法”的分类和修行意义，但未涉及“一法”在其他经典中的具体所指，也未提供各经典之间关系的详细说明。\n\n## 引用\n- [1] Early Buddhist · DN33 · 一法 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%81%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C\n  > 学友们！有一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。哪一法呢？一切众生皆因食而存续、一切众生皆因行而存续，这是一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。\n- [2] Early Buddhist · 经藏/增支部_an · an3.67 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.67&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%95%B6%E6%9C%89%E7%B7%A3%E7%94%B1%E6%99%82%EF%BC%8C%E4%BB%96%E8%87%AA%E8%AD%89%E4%B8%80%E6%B3%95%E3%80%81%E9%81%8D%E7%9F%A5%E4%B8%80%E6%B3%95%E3%80%81%E6%8D%A8%E6%96%B7%E4%B8%80%E6%B3%95%E3%80%81%E4%BD%9C%E8%AD%89%E4%B8%80%E6%B3%95%EF%BC%8C%E4%BB%96%E8%87%AA%E8%AD%89%E4%B8%80%E6%B3%95%E3%80%81%E9%81%8D%E7%9F%A5%E4%B8%80%E6%B3%95%E3%80%81%E6%8D%A8%E6%96%B7%E4%B8%80%E6%B3%95%E3%80%81%E4%BD%9C%E8%AD%89%E4%B8%80%E6%B3%95%E5%BE%8C%EF%BC%8C%E9%AB%94%E6%9C%83%E8%80%8C%E5%BE%97%E5%88%B0%E6%AD%A3%E8%A7%A3%E8%84%AB%E3%80%82\n  > 当有缘由时，他自证一法、遍知一法、舍断一法、作证一法，他自证一法、遍知一法、舍断一法、作证一法后，体会而得到正解脱。\n- [3] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E5%A4%9A%E6%89%80%E5%8A%A9%E7%9B%8A%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BF%AE%E7%BF%92%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E9%81%8D%E7%9F%A5%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E6%8D%A8%E6%96%B7%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E9%80%80%E5%88%86%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E9%9B%A3%E8%B2%AB%E9%80%9A%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E4%BD%BF%E4%B9%8B%E7%94%9F%E5%87%BA%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E8%AD%89%E7%9F%A5%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%8C%E6%9C%89%E6%87%89%E8%A9%B2%E8%A2%AB%E4%BD%9C%E8%AD%89%E7%9A%84%E4%B8%80%E6%B3%95%E3%80%82\n  > 有多所助益的一法，有应该被修习的一法，有应该被遍知的一法，有应该被舍断的一法，有退分的一法，有殊胜分的一法，有难贯通的一法，有应该使之生出的一法，有应该被证知的一法，有应该被作证的一法。\n- [4] Early Buddhist · 经藏/增支部_an · an1.575-615 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an1.575-615&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=mahinda2&mt=%E5%AF%B9%E5%93%AA%E4%B8%80%E6%B3%95%E5%91%A2%EF%BC%9F\n  > 对哪一法呢？\n- [5] Early Buddhist · 经藏/相应部_sn · sn1.61 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn1.61&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E4%B8%80%E5%88%87%E9%83%BD%E5%8F%97%E5%85%B6%E6%8E%A7%E5%88%B6%E7%9A%84%E4%B8%80%E6%B3%95%EF%BC%9F\n  > 什么是一切都受其控制的一法？\n- [6] docs/research/contemporary-buddhism-reflections.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%80%E6%B3%95&scope=site\n  > ——道次第和三级修学的引入，本质上是在用\"新的理论体系\"填补\"旧的实修空心\"，而没有触及实修本身的问题，这解释了为什么无论是学诚道次第还是济群三级修学，最终都表现为课程/理论/权威依附的扩张，而非止观实修的复兴。 ### 学诚/龙泉寺道次第体系的具体源头：福智/日常法师 学诚推广道次第不是独立首创，而是有清晰可查的传承路径。公开资料显示，1995 年台湾福智团体创办人日常法师访问福建广化寺（学诚早年常住地）结缘；2000 年广化寺五一法会期间，日常法师与学诚\"达成共识，合作推展广论\"；2001 年初，日常法师派遣梵因、如亨两位法师常驻广化寺，成立\"广化寺常住广论班\"，台湾福智团队实际主导了骨干培训和班级管理方法的输入；2003 年学诚调任北京龙泉寺住持后，把这套已在广化寺运作过的广论学员和管理经验带到龙泉寺，逐步发展成龙泉寺自己的道次第研讨班体系。[^longquan-fuzhi] 也就是说，龙泉寺道次第体系的直接源头是台湾福智团体（日常法师系统），学诚扮演的角色是引入者、本土化改造者和大陆推广者，而不是道次第汉传化的原创者。 用巴利三藏\"戒和尚—教授阿阇黎\"责任链明确、可追溯的标准衡量，**这条跨海传播路径（格鲁派—福智团体—大陆寺院）本身的教育谱系透明度是不足的**——学诚从日常法师系统\"取\n- [7] docs/research/theravada-mahayana-history.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%80%E6%B3%95&scope=site\n  > kāya)；相应的意思是按内容分门别类，比如把佛陀所说的“五蕴”编在一起， “六处”编在一起，“界”编在一起，“四圣谛”编在一起、“缘起”编在一起，称为《相应部》。一共有 56 相应，7762篇经文。 4.《增支部》(Aṅguttaranikāya)。增(uttara)，是增加、更上的意思。aṅga 是部分、支。增支的编辑方法是按法数把佛陀所讲的与数目有关的经文编集在一起。比如 “二法”有止、观，名、色等。“三法”有三受、三界等。由“一法”编到“十一法”，因此《增支部》有十一集，共收录9557 篇经文。 5.《小部》(Khuddakanikāya)。这里的“小”并非篇幅小，亦非微不足道，而是内容庞杂，把前面四部以外的所有经典都收编在内。例如属于诗歌集体裁的《法句》《长老偈》《长老尼偈》等，都收编在《小部》。《小部》在《经藏》五部中分量最大，一共有 15 部，即：《小诵》《法句》《自说》《如是语》《经集》《天宫故事》《鬼故事》《长老偈》《长老尼偈》《本生》《义释》《无碍解道》《传记》《佛陀史》和《所行藏》。在缅甸，则再加上《导论》《藏释》和《弥林德问》而成 18 部。 ## 十三、论藏 《论藏》 (Abhidhammapiṭaka)的论(abhidhamma)，古音译为“阿毗达摩、阿毗昙”。现在学\n- [8] docs/research/buddhist-concepts.md · site — https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E4%B8%80%E6%B3%95&scope=site\n  > ，最小单位是八法聚（地水火风＋色声香味）。色聚的生起来源有四：业生、心生、时节生（火界）、食生（食素）。 **相、味、现起、足处** 阿毗达摩对每个法的分析框架： - 相（lakkhana）：特征，使该法有别于其他法的本质特性 - 味（rasa）：作用，该法的功能 - 现起（paccupaṭṭhāna）：该法呈现于智慧中的方式 - 足处（padaṭṭhāna）：近因，该法生起的直接条件 这是《清净道论》与阿毗达摩注释文献中分析每一法的标准四维框架，贯穿全部名色分别的修习。 **密集（ghana）与其破除** 凡夫见色法与名法为\"稠密\"的整体，分三种密集：相续密集（时间延续性的幻觉）、组合密集（空间整合性的幻觉）、功用密集（功能整合性的幻觉）。修禅者以智破除三种密集，见究竟色与究竟名（究竟法），\"无人、无有情及无我的存在，只有色法与名法\"——此是见清净的成就。 **与修行的融合** 阿毗达摩不是纯学术体系，而是修行地图。其精密分析的目的，是帮助修禅者准确辨别名色法的生灭，透过智慧如实观照三相，最终证悟涅槃。雷迪禅师说：\"通盘了解阿毗达摩论疏，就等于是'神通如意'。\" --- 以上二十八个概念，构成了上座部佛教从理论基础（四圣谛、缘起）到修行次第（止观、七清净）、到烦恼分析（结、随眠、漏",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -443,13 +229,19 @@
       "order": 1,
       "label": "一法",
       "members": "一切众生皆因食而存续、一切众生皆因行而存续",
+      "match_members": "一切众生皆因食而存续、一切众生皆因行而存续",
       "member_items": [
-        "一切众生皆因食而存续",
-        "一切众生皆因行而存续"
+        "一切众生皆因食而存续、一切众生皆因行而存续"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "学友们！有一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。哪一法呢？一切众生皆因食而存续、一切众生皆因行而存续，这是一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。"
+      ],
       "source_text": "学友们！有一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。哪一法呢？一切众生皆因食而存续、一切众生皆因行而存续，这是一法被那有知、有见的世尊、阿罗汉、遍正觉者正确地讲述，在那里，应该就全部结集，不应该争论，以便这梵行会是长时间、长久地住立的，那会是为了众人有利益，为了众人安乐，为了世间的怜愍，为了天与人有利益、有利、安乐。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%81%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%80%E6%B3%95&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E9%A3%9F%E8%80%8C%E5%AD%98%E7%BA%8C%E3%80%81%E4%B8%80%E5%88%87%E7%9C%BE%E7%94%9F%E7%9A%86%E5%9B%A0%E8%A1%8C%E8%80%8C%E5%AD%98%E7%BA%8C",
+      "expanded_points": [
+        "一切众生皆因食而存续、一切众生皆因行而存续：此一法为佛陀正确讲述，应全部结集、不应争论，以利梵行长住，利益天人。"
+      ]
     }
   ]
 }

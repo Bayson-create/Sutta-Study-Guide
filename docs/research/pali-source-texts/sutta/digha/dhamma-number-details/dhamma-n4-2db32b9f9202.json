@@ -24,7 +24,7 @@
       "洞察分之定"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「四种定」属于 4 法。当前只在 DN34 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN34：退分的定、止住分的定、殊胜分的定、洞察分之定。[1]\n\n## 所含各法\n### 退分的定\n经文将「退分的定」列为「四种定」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。。[3]\n### 止住分的定\n经文将「止住分的定」列为「四种定」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。。[3]\n### 殊胜分的定\n经文将「殊胜分的定」列为「四种定」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：这些是殊胜分的八法。。[4]\n### 洞察分之定\n经文将「洞察分之定」列为「四种定」的一个成员。Early Buddhist 用该名词检索时，在《十增经》命中：四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。。[3]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 5 个关键词，冻结 40 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n四种定指退分的定、止住分的定、殊胜分的定、洞察分之定，属于难贯通的四法 [1][3]。它们也被称为四种定的修习 [2][5]。\n\n## 要点展开\n### 四种定的构成\n- 四种定包括：退分的定、止住分的定、殊胜分的定、洞察分之定 [1][3]。\n- 这些是难贯通的四法 [1][3]。\n\n### 修习与目的\n- 四种定被称为“四种定的修习” [2][5]。\n- 定的目的是乐，效益是定 [7][8]。\n\n## 分歧与张力\n不同来源对四种定的表述略有差异：DN34 将其列为“难贯通的四法” [1][3]，而 AN4.41 则直接称为“四种定的修习” [2][5]，侧重不同，但未构成冲突。\n\n## 证据覆盖情况\n现有证据覆盖了四种定的名称、分类及修习目的，但未详细解释每种定的具体含义或修习方法。",
       "evidence": [
         {
           "kind": "source",
@@ -103,9 +103,21 @@
           "label": "Early Buddhist · 经藏/长部_dn · dn34",
           "text": "（五）哪个是退分的一法呢？",
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%EF%BC%88%E4%BA%94%EF%BC%89%E5%93%AA%E5%80%8B%E6%98%AF%E9%80%80%E5%88%86%E7%9A%84%E4%B8%80%E6%B3%95%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap03.json",
+          "text": "：「得初禅者，与欲俱的想和作意的现行，为退分的慧。被随法念的住立，为住分慧。与无寻俱的想和作意的现行，为胜进分的慧。与厌离俱的想和作意的现行，为与离欲俱的决择分的慧。」像这样与慧相应的而有四求。如是依退分等为四种。</p><p>(5)（欲界、色界、无色界、离系）第五种四法：即 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-012\\\">[03-012]</sup> 欲界定、界定、无色界定及离系定，如是为四种定。此中一切近行的一境性为欲界定。而色界等（色界、无色界、出世界）的善心一境性为其他三者（色界定、无色界定、离系定）。如是依歉界等为四种。</p><p>(6)（欲、勤、心、观）于第六种四法中：即 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-013\\\">[03-013]</sup> 「比丘若以愿欲增上而得定、得心一境性的，称为欲定 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-014\\\">[03-014]</sup> 。 <span class=\\\"vism-page\\\">[089]</span>比丘若以精进增上而得定、得心一境性的，称为精进定。比丘若以心增上而得定、得心一境性的，称为心定。比丘若以观",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/suttas.json",
+          "text": "\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"an4.41\", \"name\": \"AN 4.41 Samādhibhāvanā Sutta\", \"focus\": \"四种修定\", \"summary\": \"四种定修：现法乐住、知见、正念正知、漏尽；说明定不只有一种功能。\", \"en_url\": \"https://suttacentral.net/an4.41/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/an4.41/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\", \"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&scope=site"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "四种定",
@@ -533,7 +545,24 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap03.json",
+          "heading": "站内搜索命中",
+          "text": "：「得初禅者，与欲俱的想和作意的现行，为退分的慧。被随法念的住立，为住分慧。与无寻俱的想和作意的现行，为胜进分的慧。与厌离俱的想和作意的现行，为与离欲俱的决择分的慧。」像这样与慧相应的而有四求。如是依退分等为四种。</p><p>(5)（欲界、色界、无色界、离系）第五种四法：即 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-012\\\">[03-012]</sup> 欲界定、界定、无色界定及离系定，如是为四种定。此中一切近行的一境性为欲界定。而色界等（色界、无色界、出世界）的善心一境性为其他三者（色界定、无色界定、离系定）。如是依歉界等为四种。</p><p>(6)（欲、勤、心、观）于第六种四法中：即 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-013\\\">[03-013]</sup> 「比丘若以愿欲增上而得定、得心一境性的，称为欲定 <sup class=\\\"vism-fnref\\\" data-fn=\\\"03-014\\\">[03-014]</sup> 。 <span class=\\\"vism-page\\\">[089]</span>比丘若以精进增上而得定、得心一境性的，称为精进定。比丘若以心增上而得定、得心一境性的，称为心定。比丘若以观",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&scope=site",
+          "query": "四种定"
+        },
+        {
+          "source": "docs/suttas.json",
+          "heading": "站内搜索命中",
+          "text": "\": \"sujato\", \"zh_author\": \"zhuang\" }, { \"uid\": \"an4.41\", \"name\": \"AN 4.41 Samādhibhāvanā Sutta\", \"focus\": \"四种修定\", \"summary\": \"四种定修：现法乐住、知见、正念正知、漏尽；说明定不只有一种功能。\", \"en_url\": \"https://suttacentral.net/an4.41/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin\", \"zh_url\": \"https://suttacentral.net/an4.41/zh/zhuang?lang=en&reference=none&highlight=false\", \"en_author\": \"sujato\", \"",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&scope=site",
+          "query": "四种定"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四种定\n\n## 直接回答\n四种定指退分的定、止住分的定、殊胜分的定、洞察分之定，属于难贯通的四法 [1][3]。它们也被称为四种定的修习 [2][5]。\n\n## 要点展开\n### 四种定的构成\n- 四种定包括：退分的定、止住分的定、殊胜分的定、洞察分之定 [1][3]。\n- 这些是难贯通的四法 [1][3]。\n\n### 修习与目的\n- 四种定被称为“四种定的修习” [2][5]。\n- 定的目的是乐，效益是定 [7][8]。\n\n## 分歧与张力\n不同来源对四种定的表述略有差异：DN34 将其列为“难贯通的四法” [1][3]，而 AN4.41 则直接称为“四种定的修习” [2][5]，侧重不同，但未构成冲突。\n\n## 证据覆盖情况\n现有证据覆盖了四种定的名称、分类及修习目的，但未详细解释每种定的具体含义或修习方法。\n\n## 引用\n- [1] Early Buddhist · DN34 · 四种定 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AD%A2%E4%BD%8F%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%B4%9E%E5%AF%9F%E5%88%86%E4%B9%8B%E5%AE%9A\n  > （七）哪些是难贯通的四法呢？四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。\n- [2] Early Buddhist · 经藏/增支部_an · an4.41 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.41&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E9%80%99%E6%98%AF%E5%9B%9B%E7%A8%AE%E5%AE%9A%E7%9A%84%E4%BF%AE%E7%BF%92%E3%80%82\n  > 这是四种定的修习。\n- [3] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E5%AE%9A%EF%BC%9A%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AD%A2%E4%BD%8F%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%B4%9E%E5%AF%9F%E5%88%86%E4%B9%8B%E5%AE%9A%EF%BC%8C%E9%80%99%E4%BA%9B%E6%98%AF%E9%9B%A3%E8%B2%AB%E9%80%9A%E7%9A%84%E5%9B%9B%E6%B3%95%E3%80%82\n  > 四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。\n- [4] Early Buddhist · 经藏/长部_dn · dn34 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%85%AB%E6%B3%95%E3%80%82\n  > 这些是殊胜分的八法。\n- [5] Early Buddhist · 经藏/增支部_an · an4.41 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an4.41&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E5%9B%9B%E7%A8%AE%E5%AE%9A%E7%9A%84%E4%BF%AE%E7%BF%92%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这四种定的修习，哪四种呢？\n- [6] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E5%AE%9A%E7%9A%84%E4%BF%AE%E7%BF%92%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 四种定的修习：学友们！\n- [7] Early Buddhist · 经藏/增支部_an · an10.1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%A8%82%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E5%AE%9A%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E5%AE%9A%E3%80%82\n  > 乐的目的是定，效益是定。\n- [8] Early Buddhist · 经藏/增支部_an · an10.1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an10.1&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%A8%82%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E5%AE%9A%EF%BC%8C%E6%95%88%E7%9B%8A%E6%98%AF%E5%AE%9A%EF%BC%9B\n  > 乐的目的是定，效益是定；",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -544,6 +573,7 @@
       "order": 7,
       "label": "四种定",
       "members": "退分的定、止住分的定、殊胜分的定、洞察分之定",
+      "match_members": "退分的定、止住分的定、殊胜分的定、洞察分之定",
       "member_items": [
         "退分的定",
         "止住分的定",
@@ -551,8 +581,17 @@
         "洞察分之定"
       ],
       "dn34_status": "退分法",
+      "source_paragraphs": [
+        "（七）哪些是难贯通的四法呢？四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。"
+      ],
       "source_text": "（七）哪些是难贯通的四法呢？四种定：退分的定、止住分的定、殊胜分的定、洞察分之定，这些是难贯通的四法。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AD%A2%E4%BD%8F%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%B4%9E%E5%AF%9F%E5%88%86%E4%B9%8B%E5%AE%9A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn34&lang=zh&q=%E5%9B%9B%E7%A8%AE%E5%AE%9A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E9%80%80%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AD%A2%E4%BD%8F%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%AE%8A%E5%8B%9D%E5%88%86%E7%9A%84%E5%AE%9A%E3%80%81%E6%B4%9E%E5%AF%9F%E5%88%86%E4%B9%8B%E5%AE%9A",
+      "expanded_points": [
+        "退分的定：指可能导致退失的定。",
+        "止住分的定：指能保持稳定的定。",
+        "殊胜分的定：指能带来殊胜成就的定。",
+        "洞察分之定：指能引发洞察的定。"
+      ]
     }
   ]
 }

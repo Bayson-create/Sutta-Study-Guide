@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "entry": {
+    "id": "dhamma-n4-b38b92667944",
+    "number": 4,
+    "label": "四种人",
+    "member_items": [
+      "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践",
+      "学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践",
+      "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践",
+      "学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者"
+    ],
+    "group_ids": [
+      "dn33-n4-g47"
+    ],
+    "suttas": [
+      "dn33"
+    ],
+    "search_terms": [
+      "四种人",
+      "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践",
+      "学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践",
+      "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践"
+    ],
+    "research": {
+      "answer_markdown": "## 直接回答\n根据现有证据，'四种人'指的是基于苦行实践而划分的四类人：自己苦行者、令他人苦行者、两者皆非者以及两者皆非且已达涅槃者 [1]。其中第四种人被描述为'非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者' [1]。\n\n## 要点展开\n### 四种人的具体分类\n- 第一种人：自己是苦行者，致力于自己苦行之实践 [1]。\n- 第二种人：令他人苦行者，致力于令他人苦行之实践 [1]。\n- 第三种人：自己既是苦行者，也是令他人苦行者 [1]。\n- 第四种人：自己既不是苦行者，也不令他人苦行，且具备涅槃等特质 [1]。\n\n### 第四种人的特质\n- 第四种人被描述为'非自己苦行者、非令他人苦行者'，并进一步称为'当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者' [1]。\n\n## 分歧与张力\n现有证据中，[1] 明确列出了四种人的完整定义，而 [2] 仅提及'四种人'的标题，[3]-[8] 仅重复'现在世间中存在这四种人'的引子，未提供具体内容。因此，关于四种人的具体内涵，主要依据 [1]，其他证据未显示分歧。\n\n## 证据覆盖情况\n现有证据主要覆盖了 DN33 中'四种人'的完整分类，但其他经文（如 MN60、MN5 等）仅提及'四种人'的存在，未展开具体内容。因此，关于四种人的详细定义仅见于 [1]，其他方面（如不同经文中的具体差异）未覆盖。",
+      "evidence": [
+        {
+          "kind": "source",
+          "label": "Early Buddhist · DN33 · 四种人",
+          "text": "四种人：学友们！这里，某类人自己是苦行者，致力于自己苦行之实践。学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%97%A2%E4%B8%8D%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E4%B8%8D%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "四种人：学友们！",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn60",
+          "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn5",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn51",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn60",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn66",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn66&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn94",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn136",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn136&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/增支部_an · an4.5",
+          "text": "现在世间中存在这四种人，哪四种呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn94",
+          "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/长部_dn · dn33",
+          "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+        },
+        {
+          "kind": "early_buddhist",
+          "label": "Early Buddhist · 经藏/中部_mn · mn51",
+          "text": "哪种人自己是苦行，致力于自己苦行之实践呢？",
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%93%AA%E7%A8%AE%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E5%91%A2%EF%BC%9F"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/vism-data/zh_chap09.json",
+          "text": ">[09-004]</sup> 「忍辱无有胜」<br>等说的忍辱的功德。</div><p>（初学者当避免的慈的所缘）（瑜伽者）如是见其过患而为离于嗔恚心及知其功德而为忍辱（心）相应，当勤修于慈。勤修（于慈）者应先了知「对此等人最初应修慈，对此等人则绝对不应修慈」的人的差别。 <span class=\\\"vism-page\\\">[296]</span>即是此慈最初对（１）不爱的人，（２）极爱的朋友，（３）中间人（无关者），（４）敌人等的四种人不应修习；（５）不应专对异性修习，（６）绝对不应对死者修习。为什么最初不应对不爱等人修习呢？（１）因为（初学者）若把不爱者置于爱处是会疲倦的；（２）若把最爱的朋友置于无关系者之处是会疲倦的，因为对彼（极爱者）甚至现起少许的痛苦，也会使（修习者）呈现悲泣的状态；（３）若把无关系的人置于尊重敬爱之处也会疲倦的；（４）若对敌人随念则起忿怒。所以最初不应对不爱等人修习。</p><p>（不可对他修慈的人）（５）如果专对异性（修习），则修习者未免生贪欲。</p><p>据说：有一位大臣之子，一次问一位和自家亲切的长老道：「尊师！当对谁修慈？」长老答道：「对爱的人。」那（大臣子）以为自己的妻子是爱人，便对那女修慈（而生贪欲）要入她的房内，（于门外）叩壁终夜。</p><p>是故不应专",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "text": "aye vuccanti” ti ettha nibbutā. “Santo have sabbhi pavedayanti” ti ettha paṇḍitā. Idha pana vijjamānā upalabbhamānā ti attho. “Attantapādisu attānaṃ tapati dukkhāpeti ti attantapo.”\", \"chinese_translation\": \"“Pessa，有四种人”这一句也是一个独立的衔接。这位Pessa说：“尊者，只要世尊在这样的人群中、在这样的百人群体中、在这样的众人中，都能了知众生的利与不利。”为了显示“我如此了知众生的利与不利”，世尊开始了这次说法。也可以与前面Kandara的谈话联系起来。因此说：“如乔达摩尊师正确地引导了比丘僧团。”世尊为了显示“我舍弃前面三种人，而引导第四种人走向利益之行”，也开始了这次说法。“寂静（santā）”是“存在（saṃvijjamānā）”一词的同义词。在“已去、已寂、已止息”中，这里“寂”指已灭。在“这些是圣者律中的寂静住处”中，指已涅槃。在“寂静者确实与善者宣说”中，指智者。而此处指存在、可得。“自苦行者”是指使自己受苦、折磨自己的人。\", \"correction_not",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "text": "puggalo neyyo. Yassa puggalassa bahum pi suṇato bahum pi bhaṇato bahum pi dhārayato bahum pi vācayato na tāya jātiyā dhammābhisamayo hoti, ayaṃ vuccati puggalo padaparamo.\", \"chinese_translation\": \"46. 正如那些四种莲花，同样地，有四种人：敏知者、详解知者、应引导者、文句为最者。其中，那种人在说法时立即通达法，这种人称为“敏知者”。那种人在简要说法后，详细解释义理时通达法，这种人称为“详解知者”。那种人通过听闻、提问、如理作意、亲近善友、侍奉、承事而通达法，这种人称为“应引导者”。那种人即使多听、多说、多持、多诵，在此生也不通达法，这种人称为“文句为最者”。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Yath' eva' 修正为 'Yath' eva'。\" }, { \"type\": \"model_re",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        },
+        {
+          "kind": "site",
+          "label": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "text": "/mn5\" ], \"suttacentral_primary_uid\": \"mn5\" } }, \"raw_ocr\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"corrected_pali\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"chinese_translation\": \"“四种人”是以计数来划分。\", \"correction_note\": [ { \"type\": \"model_assisted_draft\", \"reason\": \"由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。\" } ], \"translation_note\": [ \"gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。\" ], \"needs_review\": true, \"review_reason\": [ \"DeepSeek-V4-Flash 模型初稿；需人工核",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site"
+        }
+      ],
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
+      "early_buddhist_queries": [
+        {
+          "query": "四种人",
+          "hits": [
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "四种人：学友们！",
+              "score": 15.328570905974832,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81"
+            },
+            {
+              "uid": "mn5",
+              "collection": "经藏/中部_mn",
+              "title": "无秽经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn51",
+              "collection": "经藏/中部_mn",
+              "title": "耿达勒葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn60",
+              "collection": "经藏/中部_mn",
+              "title": "无风险经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn66",
+              "collection": "经藏/中部_mn",
+              "title": "鹌鹑譬喻经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn66&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn94",
+              "collection": "经藏/中部_mn",
+              "title": "苟德木柯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn136",
+              "collection": "经藏/中部_mn",
+              "title": "业分别大经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn136&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "an4.5",
+              "collection": "经藏/增支部_an",
+              "title": "顺流经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "现在世间中存在这四种人，哪四种呢？",
+              "score": 14.518778410128084,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=an4.5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F"
+            }
+          ]
+        },
+        {
+          "query": "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践",
+          "hits": [
+            {
+              "uid": "mn60",
+              "collection": "经藏/中部_mn",
+              "title": "无风险经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+              "score": 63.184906881026215,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            },
+            {
+              "uid": "mn94",
+              "collection": "经藏/中部_mn",
+              "title": "苟德木柯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+              "score": 63.184906881026215,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践。",
+              "score": 63.184906881026215,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            },
+            {
+              "uid": "mn51",
+              "collection": "经藏/中部_mn",
+              "title": "耿达勒葛经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "哪种人自己是苦行，致力于自己苦行之实践呢？",
+              "score": 61.0719356499794,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%93%AA%E7%A8%AE%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn60",
+              "collection": "经藏/中部_mn",
+              "title": "无风险经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "哪种人自己是苦行，致力于自己苦行之实践呢？",
+              "score": 61.0719356499794,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E5%93%AA%E7%A8%AE%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E5%91%A2%EF%BC%9F"
+            },
+            {
+              "uid": "mn60",
+              "collection": "经藏/中部_mn",
+              "title": "无风险经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。",
+              "score": 59.26925531880321,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            },
+            {
+              "uid": "mn94",
+              "collection": "经藏/中部_mn",
+              "title": "苟德木柯经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。",
+              "score": 59.26925531880321,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            },
+            {
+              "uid": "dn33",
+              "collection": "经藏/长部_dn",
+              "title": "结集经",
+              "author": "庄春江",
+              "translator": "zhuang",
+              "text": "这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。",
+              "score": 59.26925531880321,
+              "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82"
+            }
+          ]
+        },
+        {
+          "query": "学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践",
+          "hits": []
+        },
+        {
+          "query": "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践",
+          "hits": []
+        }
+      ],
+      "site_hits": [
+        {
+          "source": "docs/research/vism-data/zh_chap09.json",
+          "heading": "站内搜索命中",
+          "text": ">[09-004]</sup> 「忍辱无有胜」<br>等说的忍辱的功德。</div><p>（初学者当避免的慈的所缘）（瑜伽者）如是见其过患而为离于嗔恚心及知其功德而为忍辱（心）相应，当勤修于慈。勤修（于慈）者应先了知「对此等人最初应修慈，对此等人则绝对不应修慈」的人的差别。 <span class=\\\"vism-page\\\">[296]</span>即是此慈最初对（１）不爱的人，（２）极爱的朋友，（３）中间人（无关者），（４）敌人等的四种人不应修习；（５）不应专对异性修习，（６）绝对不应对死者修习。为什么最初不应对不爱等人修习呢？（１）因为（初学者）若把不爱者置于爱处是会疲倦的；（２）若把最爱的朋友置于无关系者之处是会疲倦的，因为对彼（极爱者）甚至现起少许的痛苦，也会使（修习者）呈现悲泣的状态；（３）若把无关系的人置于尊重敬爱之处也会疲倦的；（４）若对敌人随念则起忿怒。所以最初不应对不爱等人修习。</p><p>（不可对他修慈的人）（５）如果专对异性（修习），则修习者未免生贪欲。</p><p>据说：有一位大臣之子，一次问一位和自家亲切的长老道：「尊师！当对谁修慈？」长老答道：「对爱的人。」那（大臣子）以为自己的妻子是爱人，便对那女修慈（而生贪欲）要入她的房内，（于门外）叩壁终夜。</p><p>是故不应专",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "aye vuccanti” ti ettha nibbutā. “Santo have sabbhi pavedayanti” ti ettha paṇḍitā. Idha pana vijjamānā upalabbhamānā ti attho. “Attantapādisu attānaṃ tapati dukkhāpeti ti attantapo.”\", \"chinese_translation\": \"“Pessa，有四种人”这一句也是一个独立的衔接。这位Pessa说：“尊者，只要世尊在这样的人群中、在这样的百人群体中、在这样的众人中，都能了知众生的利与不利。”为了显示“我如此了知众生的利与不利”，世尊开始了这次说法。也可以与前面Kandara的谈话联系起来。因此说：“如乔达摩尊师正确地引导了比丘僧团。”世尊为了显示“我舍弃前面三种人，而引导第四种人走向利益之行”，也开始了这次说法。“寂静（santā）”是“存在（saṃvijjamānā）”一词的同义词。在“已去、已寂、已止息”中，这里“寂”指已灭。在“这些是圣者律中的寂静住处”中，指已涅槃。在“寂静者确实与善者宣说”中，指智者。而此处指存在、可得。“自苦行者”是指使自己受苦、折磨自己的人。\", \"correction_not",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "puggalo neyyo. Yassa puggalassa bahum pi suṇato bahum pi bhaṇato bahum pi dhārayato bahum pi vācayato na tāya jātiyā dhammābhisamayo hoti, ayaṃ vuccati puggalo padaparamo.\", \"chinese_translation\": \"46. 正如那些四种莲花，同样地，有四种人：敏知者、详解知者、应引导者、文句为最者。其中，那种人在说法时立即通达法，这种人称为“敏知者”。那种人在简要说法后，详细解释义理时通达法，这种人称为“详解知者”。那种人通过听闻、提问、如理作意、亲近善友、侍奉、承事而通达法，这种人称为“应引导者”。那种人即使多听、多说、多持、多诵，在此生也不通达法，这种人称为“文句为最者”。\", \"correction_note\": [ { \"type\": \"model_reported_correction\", \"reason\": \"将 'Yath' eva' 修正为 'Yath' eva'。\" }, { \"type\": \"model_re",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        },
+        {
+          "source": "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json",
+          "heading": "站内搜索命中",
+          "text": "/mn5\" ], \"suttacentral_primary_uid\": \"mn5\" } }, \"raw_ocr\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"corrected_pali\": \"Cattāro puggalā ti gaṇanaparicchedo.\", \"chinese_translation\": \"“四种人”是以计数来划分。\", \"correction_note\": [ { \"type\": \"model_assisted_draft\", \"reason\": \"由 DeepSeek-V4-Flash 依据 raw_ocr 生成初稿；未经人工逐条核对，不作为最终校勘依据。\" } ], \"translation_note\": [ \"gaṇanaparicchedo 意为“以计数来划分”或“数目的界定”。\" ], \"needs_review\": true, \"review_reason\": [ \"DeepSeek-V4-Flash 模型初稿；需人工核",
+          "href": "https://bayson-create.github.io/Sutta-Study-Guide/#/search?q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&scope=site",
+          "query": "四种人"
+        }
+      ],
+      "ai_full_markdown": "# AI 综合回答：四种人\n\n## 直接回答\n根据现有证据，'四种人'指的是基于苦行实践而划分的四类人：自己苦行者、令他人苦行者、两者皆非者以及两者皆非且已达涅槃者 [1]。其中第四种人被描述为'非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者' [1]。\n\n## 要点展开\n### 四种人的具体分类\n- 第一种人：自己是苦行者，致力于自己苦行之实践 [1]。\n- 第二种人：令他人苦行者，致力于令他人苦行之实践 [1]。\n- 第三种人：自己既是苦行者，也是令他人苦行者 [1]。\n- 第四种人：自己既不是苦行者，也不令他人苦行，且具备涅槃等特质 [1]。\n\n### 第四种人的特质\n- 第四种人被描述为'非自己苦行者、非令他人苦行者'，并进一步称为'当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者' [1]。\n\n## 分歧与张力\n现有证据中，[1] 明确列出了四种人的完整定义，而 [2] 仅提及'四种人'的标题，[3]-[8] 仅重复'现在世间中存在这四种人'的引子，未提供具体内容。因此，关于四种人的具体内涵，主要依据 [1]，其他证据未显示分歧。\n\n## 证据覆盖情况\n现有证据主要覆盖了 DN33 中'四种人'的完整分类，但其他经文（如 MN60、MN5 等）仅提及'四种人'的存在，未展开具体内容。因此，关于四种人的详细定义仅见于 [1]，其他方面（如不同经文中的具体差异）未覆盖。\n\n## 引用\n- [1] Early Buddhist · DN33 · 四种人 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%97%A2%E4%B8%8D%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E4%B8%8D%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90\n  > 四种人：学友们！这里，某类人自己是苦行者，致力于自己苦行之实践。学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%9A%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81\n  > 四种人：学友们！\n- [3] Early Buddhist · 经藏/中部_mn · mn60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82\n  > 这里，某类人自己是苦行者，致力于自己苦行之实践。\n- [4] Early Buddhist · 经藏/中部_mn · mn5 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn5&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？\n- [5] Early Buddhist · 经藏/中部_mn · mn51 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn51&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？\n- [6] Early Buddhist · 经藏/中部_mn · mn60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn60&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？\n- [7] Early Buddhist · 经藏/中部_mn · mn66 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn66&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？\n- [8] Early Buddhist · 经藏/中部_mn · mn94 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=mn94&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E4%B8%AD%E9%83%A8_mn&au=zhuang&mt=%E7%8F%BE%E5%9C%A8%E4%B8%96%E9%96%93%E4%B8%AD%E5%AD%98%E5%9C%A8%E9%80%99%E5%9B%9B%E7%A8%AE%E4%BA%BA%EF%BC%8C%E5%93%AA%E5%9B%9B%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 现在世间中存在这四种人，哪四种呢？",
+      "model": "deepseek-v4-flash"
+    }
+  },
+  "groups": [
+    {
+      "id": "dn33-n4-g47",
+      "sutta": "dn33",
+      "number": 4,
+      "order": 47,
+      "label": "四种人",
+      "members": "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践。学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。",
+      "match_members": "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践",
+      "member_items": [
+        "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践",
+        "学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践",
+        "学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践",
+        "学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者"
+      ],
+      "dn34_status": null,
+      "source_paragraphs": [
+        "四种人：学友们！这里，某类人自己是苦行者，致力于自己苦行之实践。学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。"
+      ],
+      "source_text": "四种人：学友们！这里，某类人自己是苦行者，致力于自己苦行之实践。学友们！这里，某类人是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。学友们！这里，某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。",
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E5%9B%9B%E7%A8%AE%E4%BA%BA&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%E3%80%82%E5%AD%B8%E5%8F%8B%E5%80%91%EF%BC%81%E9%80%99%E8%A3%A1%EF%BC%8C%E6%9F%90%E9%A1%9E%E4%BA%BA%E8%87%AA%E5%B7%B1%E6%97%A2%E4%B8%8D%E6%98%AF%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E8%87%AA%E5%B7%B1%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90%EF%BC%8C%E4%B9%9F%E4%B8%8D%E6%98%AF%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E8%80%85%EF%BC%8C%E4%B8%8D%E8%87%B4%E5%8A%9B%E6%96%BC%E4%BB%A4%E4%BB%96%E4%BA%BA%E8%8B%A6%E8%A1%8C%E4%B9%8B%E5%AF%A6%E8%B8%90",
+      "expanded_points": [
+        "自己苦行者：某类人自己是苦行者，致力于自己苦行之实践。",
+        "令他人苦行者：某类人是令他人苦行者，致力于令他人苦行之实践。",
+        "两者皆苦行者：某类人自己是苦行者，致力于自己苦行之实践，也是令他人苦行者，致力于令他人苦行之实践。",
+        "两者皆非者：某类人自己既不是苦行者，不致力于自己苦行之实践，也不是令他人苦行者，不致力于令他人苦行之实践，他是非自己苦行者、非令他人苦行者、当生无饥渴者、已达涅槃者、已平静者、自己已成梵者、住于乐的经验者。"
+      ]
+    }
+  ]
+}

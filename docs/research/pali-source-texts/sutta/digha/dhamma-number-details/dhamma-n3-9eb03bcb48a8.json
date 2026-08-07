@@ -22,13 +22,13 @@
       "有身之灭边"
     ],
     "research": {
-      "answer_markdown": "## 直接回答\n「三种边」属于 3 法。当前只在 DN33 的这一处明确列出。 成员以经文逐项列举为准。[1]\n\n## 法组构成\n- DN33：有身边、有身之集边、有身之灭边。[1]\n\n## 所含各法\n### 有身边\n经文将「有身边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《结集经》命中：三种边：有身边、有身之集边、有身之灭边。。[1]\n### 有身之集边\n经文将「有身之集边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《有身经》命中：这被称为有身之集。。[3]\n### 有身之灭边\n经文将「有身之灭边」列为「三种边」的一个成员。Early Buddhist 用该名词检索时，在《边经》命中：什么是导向有身之灭道迹边？。[4]\n\n## 检索综合\nEarly Buddhist 已按法组名及成员分别检索 4 个关键词，冻结 32 条命中；详情页保留每个关键词的返回结果，综合时优先使用与该法组直接相关的前 10 条。\n站内资料库命中 0 条，作为解释背景；经文原文仍为本条的首要依据。\n\n## 证据覆盖情况\n本条覆盖两部经的明确列举、Early Buddhist 全库关键词命中与站内资料命中。检索证据没有提供的推论不在这里补写。",
+      "answer_markdown": "## 直接回答\n据《DN33》，\"三种边\"指有身边、有身之集边、有身之灭边 [1][2]。但相应部 SN22.103 在同一脉络中列出这三项之外，还加上\"导向有身之灭道迹边\"，并称它们为\"四个边\" [8][13]。因此\"三种边\"是 DN33 的归纳，相关经文中另有四边之说。\n\n## 要点展开\n### 三种边的名称\n- DN33 明文列出三种边：有身边、有身之集边、有身之灭边 [1][2]。\n- 同一组名目也在 SN22.103 出现，但该处并列四项：有身边、有身之集边、有身之灭边、导向有身之灭道迹边 [13]。\n\n### \"有身之集\"与\"导向有身之灭道迹\"\n- \"有身之集边\"对应的内容被称为\"有身之集\" [3]，证据中未继续展开其具体定义。\n- \"导向有身之灭道迹边\"有对应的提问与定位：\"什么是导向有身之灭道迹边？\" [4]，并被称为\"导向有身之灭道迹边\" [12]。\n\n### 其他\"边\"或\"三种\"的用法\n- 另有\"边地经\" [5]、\"世间边之行经\" [6]、\"有边无边论\" [9]，但它们与\"三种边\"是不同语境。\n- 其他\"三种\"列表，如\"三种未调马与三种未调人\" [7]、\"三种傲慢\" [10]、\"三种神变\" [11]，与本问题无关。\n\n## 分歧与张力\n- 数量分歧：DN33 说\"三种边\" [1][2]，而 SN22.103 把同类四项称为\"四个边\" [8][13]。分歧在于是否把\"导向有身之灭道迹边\"计入\"边\"的数目中：DN33 只取前三项，SN22.103 则把导向灭的道迹也作为一边。各自由各自经文文本支持。\n\n## 证据覆盖情况\n现有证据覆盖了\"三种边\"的条目名称，以及 SN22.103 中的四边并列；但对\"有身边\"\"有身之集边\"\"有身之灭边\"各自的详细定义几乎没有展开，只涉及\"有身之集\"的称名和\"导向有身之灭道迹边\"的定位。其他\"三种\"列表是不相干的旁支。",
       "evidence": [
         {
           "kind": "source",
           "label": "Early Buddhist · DN33 · 三种边",
           "text": "三种边：有身边、有身之集边、有身之灭边。",
-          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A"
+          "href": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82"
         },
         {
           "kind": "early_buddhist",
@@ -103,7 +103,7 @@
           "href": "https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82"
         }
       ],
-      "generated_by": "Codex evidence-bound static synthesis",
+      "generated_by": "DeepSeek deepseek-v4-flash via existing search synthesis prompt",
       "early_buddhist_queries": [
         {
           "query": "三种边",
@@ -446,7 +446,9 @@
           ]
         }
       ],
-      "site_hits": []
+      "site_hits": [],
+      "ai_full_markdown": "# AI 综合回答：三种边\n\n## 直接回答\n据《DN33》，\"三种边\"指有身边、有身之集边、有身之灭边 [1][2]。但相应部 SN22.103 在同一脉络中列出这三项之外，还加上\"导向有身之灭道迹边\"，并称它们为\"四个边\" [8][13]。因此\"三种边\"是 DN33 的归纳，相关经文中另有四边之说。\n\n## 要点展开\n### 三种边的名称\n- DN33 明文列出三种边：有身边、有身之集边、有身之灭边 [1][2]。\n- 同一组名目也在 SN22.103 出现，但该处并列四项：有身边、有身之集边、有身之灭边、导向有身之灭道迹边 [13]。\n\n### \"有身之集\"与\"导向有身之灭道迹\"\n- \"有身之集边\"对应的内容被称为\"有身之集\" [3]，证据中未继续展开其具体定义。\n- \"导向有身之灭道迹边\"有对应的提问与定位：\"什么是导向有身之灭道迹边？\" [4]，并被称为\"导向有身之灭道迹边\" [12]。\n\n### 其他\"边\"或\"三种\"的用法\n- 另有\"边地经\" [5]、\"世间边之行经\" [6]、\"有边无边论\" [9]，但它们与\"三种边\"是不同语境。\n- 其他\"三种\"列表，如\"三种未调马与三种未调人\" [7]、\"三种傲慢\" [10]、\"三种神变\" [11]，与本问题无关。\n\n## 分歧与张力\n- 数量分歧：DN33 说\"三种边\" [1][2]，而 SN22.103 把同类四项称为\"四个边\" [8][13]。分歧在于是否把\"导向有身之灭道迹边\"计入\"边\"的数目中：DN33 只取前三项，SN22.103 则把导向灭的道迹也作为一边。各自由各自经文文本支持。\n\n## 证据覆盖情况\n现有证据覆盖了\"三种边\"的条目名称，以及 SN22.103 中的四边并列；但对\"有身边\"\"有身之集边\"\"有身之灭边\"各自的详细定义几乎没有展开，只涉及\"有身之集\"的称名和\"导向有身之灭道迹边\"的定位。其他\"三种\"列表是不相干的旁支。\n\n## 引用\n- [1] Early Buddhist · DN33 · 三种边 · source — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82\n  > 三种边：有身边、有身之集边、有身之灭边。\n- [2] Early Buddhist · 经藏/长部_dn · dn33 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E4%B8%89%E7%A8%AE%E9%82%8A%EF%BC%9A%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82\n  > 三种边：有身边、有身之集边、有身之灭边。\n- [3] Early Buddhist · 经藏/相应部_sn · sn22.105 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.105&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E3%80%82\n  > 这被称为有身之集。\n- [4] Early Buddhist · 经藏/相应部_sn · sn22.103 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%BB%80%E9%BA%BC%E6%98%AF%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%EF%BC%9F\n  > 什么是导向有身之灭道迹边？\n- [5] Early Buddhist · 经藏/相应部_sn · sn56.62 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn56.62&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%82%8A%E5%9C%B0%E7%B6%93\n  > 边地经\n- [6] Early Buddhist · 经藏/相应部_sn · sn35.116 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn35.116&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E4%B8%96%E9%96%93%E9%82%8A%E4%B9%8B%E8%A1%8C%E7%B6%93\n  > 世间边之行经\n- [7] Early Buddhist · 经藏/增支部_an · an9.22 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an9.22&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%88%91%E5%B0%87%E6%95%99%E5%B0%8E%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9C%AA%E8%AA%BF%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E6%9B%B4%E5%A5%BD%E4%B9%8B%E4%BA%BA%E3%80%81%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E9%A6%AC%E8%88%87%E4%B8%89%E7%A8%AE%E8%B3%A2%E9%A7%BF%E4%BA%BA%EF%BC%8C%E4%BD%A0%E5%80%91%E8%A6%81%E8%81%BD%EF%BC%81\n  > 我将教导三种未调马与三种未调人、三种更好之马与三种更好之人、三种贤骏马与三种贤骏人，你们要听！\n- [8] Early Buddhist · 经藏/相应部_sn · sn22.103 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E4%BA%9B%E6%98%AF%E5%9B%9B%E5%80%8B%E9%82%8A%E3%80%82\n  > 这些是四个边。\n- [9] Early Buddhist · 经藏/长部_dn · dn1 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=dn1&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&au=zhuang&mt=%E6%9C%89%E9%82%8A%E7%84%A1%E9%82%8A%E8%AB%96\n  > 有边无边论\n- [10] Early Buddhist · 经藏/增支部_an · an3.39 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.39&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E5%82%B2%E6%85%A2%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这三种傲慢，哪三种呢？\n- [11] Early Buddhist · 经藏/增支部_an · an3.60 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=an3.60&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E5%A2%9E%E6%94%AF%E9%83%A8_an&au=zhuang&mt=%E6%9C%89%E9%80%99%E4%B8%89%E7%A8%AE%E7%A5%9E%E8%AE%8A%EF%BC%8C%E5%93%AA%E4%B8%89%E7%A8%AE%E5%91%A2%EF%BC%9F\n  > 有这三种神变，哪三种呢？\n- [12] Early Buddhist · 经藏/相应部_sn · sn22.103 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E9%80%99%E8%A2%AB%E7%A8%B1%E7%82%BA%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82\n  > 这被称为导向有身之灭道迹边。\n- [13] Early Buddhist · 经藏/相应部_sn · sn22.103 · early_buddhist — https://bayson-create.github.io/Early-Buddhist/?view=sn22.103&lang=zh&q=%E6%9C%89%E8%BA%AB%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E7%9B%B8%E5%BA%94%E9%83%A8_sn&au=zhuang&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%81%E5%B0%8E%E5%90%91%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%81%93%E8%B7%A1%E9%82%8A%E3%80%82\n  > 有身边、有身之集边、有身之灭边、导向有身之灭道迹边。",
+      "model": "deepseek-v4-flash"
     }
   },
   "groups": [
@@ -456,15 +458,24 @@
       "number": 3,
       "order": 25,
       "label": "三种边",
-      "members": "有身边、有身之集边、有身之灭边",
+      "members": "有身边、有身之集边、有身之灭边。",
+      "match_members": "有身边、有身之集边、有身之灭边",
       "member_items": [
         "有身边",
         "有身之集边",
         "有身之灭边"
       ],
       "dn34_status": null,
+      "source_paragraphs": [
+        "三种边：有身边、有身之集边、有身之灭边。"
+      ],
       "source_text": "三种边：有身边、有身之集边、有身之灭边。",
-      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A"
+      "source_url": "https://bayson-create.github.io/Early-Buddhist/?view=dn33&lang=zh&q=%E4%B8%89%E7%A8%AE%E9%82%8A&coll=%E7%BB%8F%E8%97%8F%2F%E9%95%BF%E9%83%A8_dn&mt=%E6%9C%89%E8%BA%AB%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E9%9B%86%E9%82%8A%E3%80%81%E6%9C%89%E8%BA%AB%E4%B9%8B%E6%BB%85%E9%82%8A%E3%80%82",
+      "expanded_points": [
+        "有身边：三种边中的第一项，名称即“有身”之边。",
+        "有身之集边：三种边中的第二项，对应“有身之集”。",
+        "有身之灭边：三种边中的第三项，对应“有身之灭”。"
+      ]
     }
   ]
 }
