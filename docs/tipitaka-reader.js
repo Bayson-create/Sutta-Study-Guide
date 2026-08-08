@@ -88,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.14', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.14', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.15', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.15', document.baseURI));
     }
   }
 
@@ -149,7 +149,7 @@
     if (document.getElementById('tipitaka-search-target-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
-    style.textContent = '.tipitaka-search-target{border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px -12px;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none}';
+    style.textContent = '.tipitaka-search-target{border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px -12px;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto}';
     document.head.appendChild(style);
   }
 
@@ -266,12 +266,10 @@
     const targetFor = rowId => windowEl.querySelector(`[data-t-row="${String(rowId)}"]`);
     const scrollToIndex = (requestedIndex, align = 'center') => {
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), rowId = work.rows[index]?.id, token = ++positionToken;
-      console.log('[V4 trace start] ' + JSON.stringify({ index, rowId, token, scrollTop: pane.scrollTop, scrollHeight: pane.scrollHeight }));
       if (positionRaf) cancelAnimationFrame(positionRaf);
       let attempts = 0;
       const settle = () => {
         positionRaf = 0;
-        console.log('[V4 trace settle] ' + JSON.stringify({ index, rowId, token, destroyed, currentToken: positionToken, scrollTop: pane.scrollTop }));
         if (destroyed || token !== positionToken) return;
         measure();
         draw(true);
@@ -293,7 +291,6 @@
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
       pane.scrollTop = clampScroll(offsetFor(index) - (align === 'top' ? 12 : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2)));
-      console.log('[V4 trace placed] ' + JSON.stringify({ index, rowId, token, scrollTop: pane.scrollTop, first: windowEl.querySelector('[data-t-row]')?.dataset.tRow }));
       draw(true);
       const frame = requestAnimationFrame(() => { if (positionRaf !== frame) return; positionRaf = 0; settle(); });
       positionRaf = frame;
@@ -304,7 +301,7 @@
     pane.addEventListener('scroll', schedule, { passive: true }); resize?.observe(pane);
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
-    return { pane, offsetFor, draw, scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex), destroy: () => { console.log('[V4 trace destroy] ' + JSON.stringify({ currentToken: positionToken, scrollTop: pane.scrollTop })); destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); } };
+    return { pane, offsetFor, draw, scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex), destroy: () => { destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); } };
   }
 
   function searchTextForRow(row, language) {
@@ -331,7 +328,6 @@
   async function renderReader(workId) {
     injectCss(); injectSearchTargetCss();
     const renderId = ++state.readerRequest;
-    console.log('[V4 trace render] ' + JSON.stringify({ workId, renderId }));
     state.reader?.virtual?.destroy?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
     try {
