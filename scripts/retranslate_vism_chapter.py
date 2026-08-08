@@ -62,6 +62,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_API = "https://sutta-api.agreeablemeadow-9da329ca.swedencentral.azurecontainerapps.io"
 
+# The other document family this script drives, alongside vism chapters. A
+# dash rather than a colon in the --chapter value keeps it filesystem-safe
+# for progress/status filenames, which reuse args.chapter verbatim.
+PAPANCA_PARTS = {"papanca-part1": 1, "papanca-part2": 2, "papanca-part3": 3}
+
 # The server's own window, mirrored here so this client can stay inside it.
 SERVER_WINDOW_SECONDS = 60.0
 SERVER_MAX_CALLS = 12
@@ -310,6 +315,32 @@ class WindowLimiter:
         return max(1.0, self.starts[0] + self.window - now + 1.0)
 
 
+def load_papanca_rows(chapter: str):
+    """(unit_key, pali, existing_zh, section) for one papancasudani part.
+
+    unit_key is the item's own "id" (e.g. "pt1-mula-para-001") - the same
+    stable id the reader's shared translation editor keys on
+    (docs/index.html's `docKey = papanca:part${partNum}` reader), so this
+    never needs its own position-based scheme like the vism p{part}-r{row}
+    one.
+    """
+    part_num = PAPANCA_PARTS[chapter]
+    path = ROOT / f"docs/research/pali-source-texts/sutta/majjhima/papancasudani/part{part_num}/bilingual.json"
+    if not path.exists():
+        sys.exit(f"FAILED: {path} not found")
+    items = json.loads(path.read_text(encoding="utf-8"))
+    rows = []
+    for item in items:
+        unit_key = item.get("id")
+        if not unit_key:
+            continue
+        pali = (item.get("corrected_pali") or "").strip()
+        zh = (item.get("chinese_translation") or "").strip()
+        section = ((item.get("source") or {}).get("section") or "")
+        rows.append((unit_key, pali, zh, section))
+    return rows
+
+
 def load_chapter_rows(chapter: str):
     """(unit_key, pali, existing_zh) for every row, in reading order.
 
@@ -318,6 +349,8 @@ def load_chapter_rows(chapter: str):
     file the reader renders is what keeps a write from landing on the wrong
     sentence.
     """
+    if chapter in PAPANCA_PARTS:
+        return load_papanca_rows(chapter)
     tag = chapter if chapter in ("nidana", "conclusion") else f"chap{chapter.zfill(2)}"
     pe_path = ROOT / f"docs/research/vism-data/pe_{tag}.json"
     if not pe_path.exists():
@@ -391,7 +424,9 @@ def select_rows(rows, overlay: dict, mode: str, limit: int | None = None):
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--chapter", default="17")
+    ap.add_argument("--chapter", default="17",
+                    help="vism chapter number, \"nidana\", \"conclusion\", or "
+                         "\"papanca-part1\"/\"papanca-part2\"/\"papanca-part3\"")
     ap.add_argument("--mode", required=True,
                     choices=("fill-gaps", "not-dharmamitra", "retranslate-dharmamitra"),
                     help="fill missing rows, replace non-machine rows, or retranslate only "
@@ -411,7 +446,8 @@ def main() -> None:
                          "(default: docs/research/vism-data/.retranslation-dashboard/)")
     args = ap.parse_args()
 
-    doc_key = f"vism:{args.chapter}"
+    doc_key = f"papanca:part{PAPANCA_PARTS[args.chapter]}" if args.chapter in PAPANCA_PARTS else f"vism:{args.chapter}"
+    doc_label = f"《破除戏论疏》第{PAPANCA_PARTS[args.chapter]}部分" if args.chapter in PAPANCA_PARTS else f"清净道论 第{args.chapter}品"
     progress_path = Path(args.progress) if args.progress else (
         ROOT / f"scripts/.retranslate-{args.chapter}-progress.json"
     )
@@ -537,7 +573,7 @@ def main() -> None:
         """
         payload = "\n".join(f"{i}. {pali}" for i, (_k, pali, _z, _t) in enumerate(chunk, 1))
         titles = {t for (_k, _p, _z, t) in chunk if t}
-        context = f"清净道论 第{args.chapter}品" + (f" {sorted(titles)[0]}" if len(titles) == 1 else "")
+        context = doc_label + (f" {sorted(titles)[0]}" if len(titles) == 1 else "")
         for attempt in range(1, 5):
             limiter.wait_for_slot()
             t0 = time.monotonic()
@@ -594,7 +630,7 @@ def main() -> None:
         None and is left for the retry rounds below, since a transient network
         or 5xx error deserves a fresh attempt later rather than a tight loop
         against a service that is already unhappy."""
-        context = f"清净道论 第{args.chapter}品" + (f" {part_title}" if part_title else "")
+        context = doc_label + (f" {part_title}" if part_title else "")
         for attempt in range(1, 5):
             limiter.wait_for_slot()
             t0 = time.monotonic()
