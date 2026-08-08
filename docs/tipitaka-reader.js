@@ -53,11 +53,13 @@
     }
   }
 
-  function workerRequest(worker, payload) {
+  function workerRequest(worker, payload, timeoutMs = 12000) {
     return new Promise((resolve, reject) => {
       const id = ++state.workerId;
+      const timer = setTimeout(() => { worker.removeEventListener('message', done); reject(new Error('Worker 响应超时')); }, timeoutMs);
       const done = event => {
         if (event.data?.id !== id) return;
+        clearTimeout(timer);
         worker.removeEventListener('message', done);
         if (event.data.ok) resolve(event.data.data); else reject(new Error(event.data.error || 'Worker 处理失败'));
       };
@@ -85,7 +87,7 @@
     if (!state.workCache.has(id)) {
       ensureWorkers();
       const promise = state.dataWorker
-        ? workerRequest(state.dataWorker, { base: DATA_BASE, path: meta.data_file })
+        ? workerRequest(state.dataWorker, { base: DATA_BASE, path: meta.data_file }).catch(() => cachedJson(meta.data_file))
         : cachedJson(meta.data_file);
       state.workCache.set(id, promise);
     }
@@ -97,7 +99,8 @@
   }
   async function overrides(workId) {
     if (!state.overrides.has(workId)) {
-      const data = await fetch(`${API}/works/${encodeURIComponent(workId)}/overrides`).then(r => r.ok ? r.json() : { units: [] }).catch(() => ({ units: [] }));
+      const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 8000);
+      const data = await fetch(`${API}/works/${encodeURIComponent(workId)}/overrides`, { signal: controller.signal }).then(r => r.ok ? r.json() : { units: [] }).catch(() => ({ units: [] })).finally(() => clearTimeout(timer));
       state.overrides.set(workId, new Map(data.units.map(unit => [`${unit.row_id}:${unit.language}`, unit])));
     }
     return state.overrides.get(workId);

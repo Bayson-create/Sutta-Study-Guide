@@ -2216,6 +2216,7 @@ async function renderSearchPage(q, scopeParam) {
         };
         await draw(0);
       }
+      totalHits += total;
       scopeStatus.v4 = `V4 三藏：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）`;
     } catch (e) {
       scopeStatus.v4 = `V4 三藏：检索失败（${esc(e.message || String(e))}）`;
@@ -9723,7 +9724,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260808.3"></script>
+<script src="tipitaka-reader.js?v=20260808.4"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
