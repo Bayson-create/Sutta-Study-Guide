@@ -88,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.9', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.9', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.10', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.10', document.baseURI));
     }
   }
 
@@ -266,6 +266,7 @@
     const targetFor = rowId => windowEl.querySelector(`[data-t-row="${String(rowId)}"]`);
     const scrollToIndex = (requestedIndex, align = 'center') => {
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), rowId = work.rows[index]?.id, token = ++positionToken;
+      console.log('[V4 debug position start]', { requestedIndex, index, rowId, currentIndex, scrollHeight: pane.scrollHeight });
       if (positionRaf) cancelAnimationFrame(positionRaf);
       let attempts = 0;
       const settle = () => {
@@ -282,6 +283,7 @@
         const desired = align === 'top' ? paneRect.top + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > paneRect.top && rowRect.top < paneRect.bottom;
+        console.log('[V4 debug position settle]', { index, rowId, attempts, scrollTop: pane.scrollTop, renderedFirst: windowEl.querySelector('[data-t-row]')?.dataset.tRow, delta, visible });
         if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
           pane.scrollTop = clampScroll(pane.scrollTop + delta);
           draw(true);
@@ -346,6 +348,7 @@
       }
       const currentRowId = hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
+      console.log('[V4 debug reader target]', { workId, requestedRowId, hitRowId: hit?.rowId, currentIndex, currentRow: work.rows[currentIndex]?.id });
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
       state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null };
       app.innerHTML = `${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中：“${esc(hit.query)}”，已定位到目标段。` : ''}</div><div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px"><div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar">${jumpButtons(work.rows[currentIndex])}</div>`;
