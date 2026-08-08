@@ -1311,6 +1311,9 @@ function route() {
   app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
   if (hash.startsWith('#/read/')) {
     renderReader(hash.slice(7), routeParams.get('en_author') || 'sujato', routeParams.get('zh_author') || 'zhuang');
+  } else if (hash === '#/tipitaka' || hash.startsWith('#/tipitaka/')) {
+    if (typeof window.renderTipitakaRoute === 'function') window.renderTipitakaRoute();
+    else app.innerHTML = '<div class="loading"><div class="spinner"></div><div>加载巴利三藏阅读器…</div></div>';
   } else if (hash.startsWith('#/category/')) {
     const key = hash.slice(11);
     renderCategory(key);
@@ -2726,6 +2729,13 @@ function renderHome() {
     <button type="button" class="community-primary-btn" onclick="siteSearchGo()">搜索</button>
   </div>`;
   html += searchScopeCheckboxesHtml();
+  html += `<div class="research-card" onclick="location.hash='#/tipitaka'" style="margin-bottom:24px;">
+    <span class="icon">📚</span>
+    <div>
+      <div class="research-card-title">巴利三藏阅读器 V4</div>
+      <div class="research-card-sub">三藏 · 义注 · 复注 · 巴利/简体中文/English 全文、词典与专名</div>
+    </div>
+  </div>`;
   html += `<div class="research-card" onclick="location.hash='#/dhamma'" style="margin-bottom:24px;">
     <span class="icon">🧬</span>
     <div>
@@ -9667,6 +9677,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
+<script src="tipitaka-reader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
