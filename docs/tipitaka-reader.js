@@ -13,7 +13,7 @@
   const state = {
     works: null, jumps: null, dictionaries: null, searchManifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
-    dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null,
+    dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
   };
   const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
 
@@ -88,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.11', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.11', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.12', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.12', document.baseURI));
     }
   }
 
@@ -266,7 +266,6 @@
     const targetFor = rowId => windowEl.querySelector(`[data-t-row="${String(rowId)}"]`);
     const scrollToIndex = (requestedIndex, align = 'center') => {
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), rowId = work.rows[index]?.id, token = ++positionToken;
-      console.log('[V4 debug position start] ' + JSON.stringify({ requestedIndex, index, rowId, currentIndex, scrollHeight: pane.scrollHeight }));
       if (positionRaf) cancelAnimationFrame(positionRaf);
       let attempts = 0;
       const settle = () => {
@@ -283,7 +282,6 @@
         const desired = align === 'top' ? paneRect.top + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > paneRect.top && rowRect.top < paneRect.bottom;
-        console.log('[V4 debug position settle] ' + JSON.stringify({ index, rowId, attempts, scrollTop: pane.scrollTop, renderedFirst: windowEl.querySelector('[data-t-row]')?.dataset.tRow, delta, visible }));
         if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
           pane.scrollTop = clampScroll(pane.scrollTop + delta);
           draw(true);
@@ -327,17 +325,21 @@
 
   async function renderReader(workId) {
     injectCss(); injectSearchTargetCss();
+    const renderId = ++state.readerRequest;
     state.reader?.virtual?.destroy?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
     try {
       await ensureCatalog();
+      if (renderId !== state.readerRequest) return;
       const meta = state.works.find(work => work.id === workId); if (!meta) throw new Error('找不到该作品');
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
       const [loaded, overlays] = await Promise.all([workById(workId), overrides(workId)]);
+      if (renderId !== state.readerRequest) return;
       const work = loaded[1], params = query(), requestedRowId = Number(params.get('row') || 0);
       const positionParam = params.get('hl_pos');
       const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null } : null;
       const hitRows = hit ? await searchHitsForReader(hit.query, hit.language, workId) : [];
+      if (renderId !== state.readerRequest) return;
       if (hit) {
         let target = hitRows.find(item => Number(item.rowId) === requestedRowId);
         if (!target && hit.anchor) {
@@ -348,7 +350,6 @@
       }
       const currentRowId = hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
-      console.log('[V4 debug reader target] ' + JSON.stringify({ workId, requestedRowId, hitRowId: hit?.rowId, currentIndex, currentRow: work.rows[currentIndex]?.id }));
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
       state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null };
       app.innerHTML = `${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中：“${esc(hit.query)}”，已定位到目标段。` : ''}</div><div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px"><div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar">${jumpButtons(work.rows[currentIndex])}</div>`;
@@ -357,7 +358,7 @@
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
-    } catch (error) { app.innerHTML = `<div class="error-msg">${esc(error.message)}。目录可用时，正文会在静态数据源恢复后继续加载。</div>`; }
+    } catch (error) { if (renderId === state.readerRequest) app.innerHTML = `<div class="error-msg">${esc(error.message)}。目录可用时，正文会在静态数据源恢复后继续加载。</div>`; }
   }
 
   function moveReaderHit(delta) {
