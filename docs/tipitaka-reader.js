@@ -142,7 +142,7 @@
   function injectCss() {
     if (document.getElementById('tipitaka-reader-css')) return;
     const style = document.createElement('style'); style.id = 'tipitaka-reader-css'; style.textContent = `
-      .tipitaka-layout{display:grid;grid-template-columns:minmax(230px,28%) 1fr;gap:18px}.tipitaka-catalog{max-height:68vh;overflow:auto;padding:12px;background:var(--card,#fff);border:1px solid var(--border,#ddd);border-radius:10px}.tipitaka-catalog details{margin:7px 0}.tipitaka-work-link{display:block;padding:5px 8px;color:var(--primary,#6b4f2d);text-decoration:none}.tipitaka-work-link small{color:var(--text-light,#777)}.tipitaka-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.tipitaka-toolbar button,.tipitaka-toolbar input,.tipitaka-toolbar select{padding:7px 10px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit}.tipitaka-row{border-bottom:1px solid var(--border,#e5e5e5);padding:13px 0;line-height:1.75}.tipitaka-row[data-rend="gatha"]{margin-left:2em;font-style:italic}.tipitaka-row[data-rend="nikaya"],.tipitaka-row[data-rend="book"],.tipitaka-row[data-rend="subsubhead"]{font-weight:700}.tipitaka-num{display:inline-block;min-width:5.2em;color:var(--text-light,#777);font-size:.8em;vertical-align:top}.tipitaka-pali{cursor:pointer;color:var(--primary,#6b4f2d);font-style:italic;line-height:1.65}.tipitaka-zh{color:var(--text,#222);font-size:1.04em;line-height:2}.tipitaka-en{color:var(--text-light,#666);line-height:1.65}.tipitaka-actions{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.tipitaka-actions button{font-size:.8em}.tipitaka-search-result{display:block;padding:10px;border-bottom:1px solid var(--border,#ddd);color:inherit;text-decoration:none}.tipitaka-search-result:hover{background:color-mix(in srgb,var(--primary,#6b4f2d) 8%,transparent)}.tipitaka-pane{height:min(72vh,calc(100vh - 190px));overflow:auto;padding:0 18px;position:relative;scroll-behavior:smooth}.tipitaka-virtual-spacer{position:relative;width:100%}.tipitaka-virtual-window{position:absolute;left:0;right:0;top:0}.tipitaka-hit{background:#ffe066;color:#2d2400;border-radius:3px;padding:0 2px;box-shadow:0 0 0 2px rgba(255,224,102,.22)}.tipitaka-active-hit{background:#ff9f1c;box-shadow:0 0 0 3px rgba(255,159,28,.35)}.tipitaka-default-hit{margin:8px 0;padding:8px 10px;border-left:3px solid #c58b28;background:rgba(197,139,40,.09);font-size:.9em}.tipitaka-skeleton{height:18px;margin:14px 0;background:linear-gradient(90deg,#eee,#fafafa,#eee);background-size:200% 100%;animation:tipitakaShimmer 1.3s infinite;border-radius:5px}.tipitaka-dict-entry{padding:12px 0;border-bottom:1px solid var(--border,#ddd)}.tipitaka-dict-entry h4{margin:0 0 5px}.tipitaka-page{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.tipitaka-note{color:var(--text-light,#777);font-size:.9em}.tipitaka-mobile-note{display:none}@keyframes tipitakaShimmer{to{background-position:-200% 0}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-catalog{max-height:38vh}.tipitaka-num{min-width:3.8em}.tipitaka-pane{height:calc(100vh - 230px);padding:0 10px}.tipitaka-mobile-note{display:block}}`; document.head.appendChild(style);
+      .tipitaka-layout{display:grid;grid-template-columns:minmax(230px,28%) 1fr;gap:18px}.tipitaka-catalog{max-height:68vh;overflow:auto;padding:12px;background:var(--card,#fff);border:1px solid var(--border,#ddd);border-radius:10px}.tipitaka-catalog details{margin:7px 0}.tipitaka-work-link{display:block;padding:5px 8px;color:var(--primary,#6b4f2d);text-decoration:none}.tipitaka-work-link small{color:var(--text-light,#777)}.tipitaka-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.tipitaka-toolbar button,.tipitaka-toolbar input,.tipitaka-toolbar select{padding:7px 10px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit}.tipitaka-row{border-bottom:1px solid var(--border,#e5e5e5);padding:16px 0;line-height:1.75}.tipitaka-row[data-rend="gatha"]{margin-left:2em;font-style:italic}.tipitaka-row[data-rend="nikaya"],.tipitaka-row[data-rend="book"],.tipitaka-row[data-rend="subsubhead"]{font-weight:700}.tipitaka-num{display:inline-block;min-width:5.2em;color:var(--text-light,#777);font-size:.8em;vertical-align:top}.tipitaka-pali{cursor:pointer;color:var(--primary,#6b4f2d);font-style:italic;line-height:1.65}.tipitaka-zh{color:var(--text,#222);font-size:1.04em;line-height:2}.tipitaka-en{color:var(--text-light,#666);line-height:1.65}.tipitaka-actions{margin-top:8px}.tipitaka-actions summary{display:inline-flex;cursor:pointer;color:var(--primary,#6b4f2d);font-size:.83em}.tipitaka-actions-grid{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.tipitaka-actions button{font-size:.8em}.tipitaka-search-result{display:block;padding:10px;border-bottom:1px solid var(--border,#ddd);color:inherit;text-decoration:none}.tipitaka-search-result:hover{background:color-mix(in srgb,var(--primary,#6b4f2d) 8%,transparent)}.tipitaka-pane{height:min(72vh,calc(100vh - 190px));overflow:auto;padding:0 18px;position:relative;scroll-behavior:smooth;overscroll-behavior:contain}.tipitaka-virtual-spacer{position:relative;width:100%}.tipitaka-virtual-window{position:absolute;left:0;right:0;top:0;will-change:transform}.tipitaka-hit{background:#ffe066;color:#2d2400;border-radius:3px;padding:0 2px;box-shadow:0 0 0 2px rgba(255,224,102,.22)}.tipitaka-active-hit{background:#ff9f1c;box-shadow:0 0 0 3px rgba(255,159,28,.35)}.tipitaka-default-hit{margin:8px 0;padding:8px 10px;border-left:3px solid #c58b28;background:rgba(197,139,40,.09);font-size:.9em}.tipitaka-skeleton{height:18px;margin:14px 0;background:linear-gradient(90deg,#eee,#fafafa,#eee);background-size:200% 100%;animation:tipitakaShimmer 1.3s infinite;border-radius:5px}.tipitaka-dict-entry{padding:12px 0;border-bottom:1px solid var(--border,#ddd)}.tipitaka-dict-entry h4{margin:0 0 5px}.tipitaka-page{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.tipitaka-note{color:var(--text-light,#777);font-size:.9em}.tipitaka-mobile-note{display:none}@keyframes tipitakaShimmer{to{background-position:-200% 0}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-catalog{max-height:38vh}.tipitaka-num{min-width:3.8em}.tipitaka-pane{height:calc(100vh - 230px);padding:0 10px}.tipitaka-toolbar{gap:6px}.tipitaka-toolbar button{padding:6px 8px}.tipitaka-mobile-note{display:block}}`; document.head.appendChild(style);
   }
 
   function readerToolbar(meta, current, hitState) {
@@ -182,7 +182,7 @@
       parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh')}</details>` : ''}</div>`);
     }
     if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${hit && lang === 'en' && Number(row.id) === Number(hit.rowId) ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
-    return `<article class="tipitaka-row" data-t-row="${row.id}" data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<div class="tipitaka-actions"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></article>`;
+    return `<article class="tipitaka-row" data-t-row="${row.id}" data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details></article>`;
   }
 
   function jumpButtons(row) {
@@ -196,32 +196,56 @@
   function renderVirtual(meta, work, overlays, currentIndex, hit) {
     const pane = document.getElementById('tipitaka-pane'), spacer = document.getElementById('tipitaka-virtual-spacer'), windowEl = document.getElementById('tipitaka-virtual-window');
     if (!pane || !spacer || !windowEl) return;
-    const heights = new Map();
-    let start = -1, end = -1, measuring = false;
-    const offsetFor = index => index * EST_ROW_HEIGHT + [...heights.entries()].reduce((sum, [i, h]) => i < index ? sum + h - EST_ROW_HEIGHT : sum, 0);
-    const totalHeight = () => work.rows.length * EST_ROW_HEIGHT + [...heights.values()].reduce((sum, h) => sum + h - EST_ROW_HEIGHT, 0);
-    const draw = () => {
-      const rough = Math.floor(Math.max(0, pane.scrollTop) / EST_ROW_HEIGHT);
-      const nextStart = Math.max(0, rough - OVERSCAN), nextEnd = Math.min(work.rows.length, rough + Math.ceil(pane.clientHeight / EST_ROW_HEIGHT) + OVERSCAN);
-      if (nextStart === start && nextEnd === end) return;
+    // A Fenwick tree gives the viewport, the spacer and the translated window
+    // one canonical coordinate system.  The former implementation selected
+    // rows with estimated heights but translated them with measured heights;
+    // long commentary rows eventually pushed every rendered row off-screen.
+    const count = work.rows.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexById = new Map(work.rows.map((row, index) => [Number(row.id), index]));
+    let start = -1, end = -1, raf = 0, destroyed = false;
+    const add = (index, amount) => { for (let i = index + 1; i <= count; i += i & -i) tree[i] += amount; };
+    const measuredBefore = index => { let sum = 0; for (let i = index; i > 0; i -= i & -i) sum += tree[i]; return sum; };
+    const offsetFor = index => Math.max(0, Math.min(count, index)) * EST_ROW_HEIGHT + measuredBefore(Math.max(0, Math.min(count, index)));
+    const totalHeight = () => offsetFor(count);
+    const indexAt = offset => {
+      let low = 0, high = count;
+      while (low < high) { const mid = Math.ceil((low + high) / 2); if (offsetFor(mid) <= offset) low = mid; else high = mid - 1; }
+      return Math.max(0, Math.min(count - 1, low));
+    };
+    const measure = () => {
+      if (destroyed) return;
+      const anchor = indexAt(pane.scrollTop);
+      let shift = 0, changed = false;
+      windowEl.querySelectorAll('[data-t-row]').forEach(element => {
+        const index = indexById.get(Number(element.dataset.tRow)), height = Math.ceil(element.getBoundingClientRect().height);
+        if (index === undefined || !height || heights[index] === height) return;
+        const previous = heights[index] || EST_ROW_HEIGHT, delta = height - previous;
+        heights[index] = height; add(index, delta); changed = true;
+        if (index < anchor) shift += delta;
+      });
+      if (changed) {
+        if (shift) pane.scrollTop += shift;
+        spacer.style.height = `${Math.max(1, totalHeight())}px`;
+        windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
+      }
+    };
+    const draw = (force = false) => {
+      if (destroyed) return;
+      const viewport = Math.max(pane.clientHeight, EST_ROW_HEIGHT * 4), first = indexAt(pane.scrollTop), last = indexAt(pane.scrollTop + viewport);
+      const nextStart = Math.max(0, first - OVERSCAN), nextEnd = Math.min(count, Math.max(nextStart + 1, last + OVERSCAN + 1));
+      if (!force && nextStart === start && nextEnd === end) return;
       start = nextStart; end = nextEnd;
       windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
       windowEl.innerHTML = work.rows.slice(start, end).map(row => rowHtml(row, overlays, hit && row.id === hit.rowId ? hit : null)).join('');
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
-      requestAnimationFrame(() => {
-        if (measuring) return;
-        measuring = true;
-        let changed = false;
-        windowEl.querySelectorAll('[data-t-row]').forEach(element => { const id = Number(element.dataset.tRow), index = work.rows.findIndex(row => Number(row.id) === id), height = element.offsetHeight; if (index >= 0 && height && heights.get(index) !== height) { heights.set(index, height); changed = true; } });
-        measuring = false;
-        if (changed) { spacer.style.height = `${Math.max(1, totalHeight())}px`; windowEl.style.transform = `translateY(${offsetFor(start)}px)`; }
-      });
+      requestAnimationFrame(measure);
     };
-    pane.addEventListener('scroll', draw, { passive: true });
-    spacer.style.height = `${work.rows.length * EST_ROW_HEIGHT}px`;
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(); }); };
+    const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => draw(true)) : null;
+    pane.addEventListener('scroll', schedule, { passive: true }); resize?.observe(pane);
+    spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     pane.scrollTop = offsetFor(currentIndex);
-    draw();
-    return { pane, offsetFor, draw };
+    draw(true);
+    return { pane, offsetFor, draw, destroy: () => { destroyed = true; if (raf) cancelAnimationFrame(raf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); } };
   }
 
   async function searchHitsForReader(value, language, workId) {
@@ -232,6 +256,7 @@
 
   async function renderReader(workId) {
     injectCss();
+    state.reader?.virtual?.destroy?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
     try {
       await ensureCatalog();

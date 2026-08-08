@@ -3890,6 +3890,7 @@ function renderPapancasudaniHome() {
 
 // === RESEARCH: PAPANCASUDANI PART 1 READER ===
 let _papancasudaniPt1Cache = null;
+let _papancasudaniRenderEpoch = 0;
 function formatPapancaNote(note) {
   if (typeof note === 'string') return note;
   if (!note || typeof note !== 'object') return String(note ?? '');
@@ -3922,6 +3923,7 @@ const _papancasudaniPartCache = {};
 async function renderPapancasudaniPart(partNum) {
   const meta = PAPANCA_PART_META[partNum];
   const docKey = `papanca:part${partNum}`;
+  const renderEpoch = ++_papancasudaniRenderEpoch;
   let html = `<button class="back-btn" onclick="location.hash='#/research/pali-source-texts/sutta/majjhima/papancasudani'">← 返回破除戏论目录</button>`;
   html += `<div class="cat-header"><h2>${meta.title}</h2><div class="cat-en">${esc(meta.en)}</div></div>`;
   html += '<div class="loading"><div class="spinner"></div><div>加载中...</div></div>';
@@ -3929,28 +3931,61 @@ async function renderPapancasudaniPart(partNum) {
   try {
     if (!_papancasudaniPartCache[partNum]) {
       const res = await fetch(`research/pali-source-texts/sutta/majjhima/papancasudani/${meta.file}`);
+      if (!res.ok) throw new Error(`正文资源不可用（${res.status}）`);
       _papancasudaniPartCache[partNum] = await res.json();
     }
-    await communityFetchCurrentUser();
-    await transLoadDoc(docKey);
-    let bodyHtml = '<div class="reader-content papanca-reader">';
-    for (const item of _papancasudaniPartCache[partNum]) {
+    const items = _papancasudaniPartCache[partNum];
+    if (!Array.isArray(items) || !items.every(item => item && typeof item.id === 'string')) throw new Error('正文数据格式不完整');
+    if (renderEpoch !== _papancasudaniRenderEpoch) return;
+
+    // The static corpus is independently usable.  Render it first instead
+    // of letting a slow account/overlay request make the entire reader look
+    // blank; overlays are applied as a non-blocking enhancement afterwards.
+    const reader = document.createElement('div');
+    reader.className = 'reader-content papanca-reader';
+    reader.innerHTML = '<div class="tipitaka-note papanca-progress">正在显示正文…</div>';
+    app.querySelector('.loading').replaceWith(reader);
+    const itemHtml = item => {
       const context = (item.source && item.source.sutta_context && item.source.sutta_context.commentary_section_raw) || '';
-      bodyHtml += renderPapancaSuttaMarker(item.source && item.source.sutta_context);
-      bodyHtml += '<div class="papanca-block">';
-      bodyHtml += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
-      bodyHtml += transSlotHtml(docKey, item.id, item.chinese_translation, '', item.corrected_pali, context);
+      let block = renderPapancaSuttaMarker(item.source && item.source.sutta_context);
+      block += '<div class="papanca-block">';
+      block += `<div class="papanca-pali">${esc(item.corrected_pali)}</div>`;
+      block += transSlotHtml(docKey, item.id, item.chinese_translation, '', item.corrected_pali, context);
       if (item.translation_note && item.translation_note.length > 0) {
         for (const note of item.translation_note) {
-          bodyHtml += `<div class="papanca-tn">${esc(formatPapancaNote(note))}</div>`;
+          block += `<div class="papanca-tn">${esc(formatPapancaNote(note))}</div>`;
         }
       }
-      bodyHtml += '</div>';
+      return block + '</div>';
+    };
+    for (let offset = 0; offset < items.length; offset += 32) {
+      if (renderEpoch !== _papancasudaniRenderEpoch || !reader.isConnected) return;
+      reader.insertAdjacentHTML('beforeend', items.slice(offset, offset + 32).map(itemHtml).join(''));
+      const progress = reader.querySelector('.papanca-progress');
+      if (progress) progress.textContent = `已显示 ${Math.min(offset + 32, items.length).toLocaleString()} / ${items.length.toLocaleString()} 段…`;
+      await new Promise(resolve => requestAnimationFrame(resolve));
     }
-    bodyHtml += '</div>';
-    app.querySelector('.loading').outerHTML = bodyHtml;
+    reader.querySelector('.papanca-progress')?.remove();
+
+    // Loading account state and translation overlays is deliberately not in
+    // the critical rendering path.  Updating slots in animation-frame sized
+    // batches keeps a large part responsive on mobile as well.
+    Promise.allSettled([communityFetchCurrentUser(), transLoadDoc(docKey)]).then(async () => {
+      if (renderEpoch !== _papancasudaniRenderEpoch || !reader.isConnected) return;
+      const slots = [...reader.querySelectorAll('.trans-slot')];
+      for (let offset = 0; offset < slots.length; offset += 32) {
+        if (renderEpoch !== _papancasudaniRenderEpoch || !reader.isConnected) return;
+        for (const slot of slots.slice(offset, offset + 32)) {
+          const key = `${slot.dataset.doc}|${slot.dataset.unit}`;
+          const staticRow = TRANS_STATIC_MAP[key] || {};
+          slot.outerHTML = transSlotHtml(slot.dataset.doc, slot.dataset.unit, staticRow.text, staticRow.note, staticRow.pali, staticRow.context);
+        }
+        await new Promise(resolve => requestAnimationFrame(resolve));
+      }
+    });
   } catch (e) {
-    app.querySelector('.loading').outerHTML = `<div class="error-msg">加载失败: ${e.message}</div>`;
+    const loading = app.querySelector('.loading');
+    if (loading) loading.outerHTML = `<div class="error-msg">加载失败: ${esc(e.message)}</div>`;
   }
 }
 async function renderPapancasudaniPart1() { return renderPapancasudaniPart(1); }
@@ -9729,7 +9764,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260808.7"></script>
+<script src="tipitaka-reader.js?v=20260808.8"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
