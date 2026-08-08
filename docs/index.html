@@ -2189,9 +2189,14 @@ async function renderSearchPage(q, scopeParam) {
       if (!window.TipitakaV4) throw new Error('V4 阅读器尚未加载');
       const languages = ['zh', 'pali', 'en'];
       const labels = { zh: '中文', pali: '巴利', en: 'English' };
-      const runs = await Promise.all(languages.map(async language => ({ language, result: await window.TipitakaV4.search(q, language) })));
+      const runs = await Promise.all(languages.map(async language => {
+        try { return { language, result: await window.TipitakaV4.search(q, language) }; }
+        catch (error) { return { language, error }; }
+      }));
       let total = 0;
-      for (const { language, result } of runs) {
+      const languageErrors = [];
+      for (const { language, result, error } of runs) {
+        if (error) { languageErrors.push(`${labels[language]}失败：${error.message || error}`); continue; }
         total += result.total;
         if (!result.total) continue;
         const sectionId = `v4-search-${language}-${mySeq}`;
@@ -2217,7 +2222,7 @@ async function renderSearchPage(q, scopeParam) {
         await draw(0);
       }
       totalHits += total;
-      scopeStatus.v4 = `V4 三藏：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）`;
+      scopeStatus.v4 = `V4 三藏：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）${languageErrors.length ? '；' + languageErrors.join('；') : ''}`;
     } catch (e) {
       scopeStatus.v4 = `V4 三藏：检索失败（${esc(e.message || String(e))}）`;
     }
