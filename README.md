@@ -27,9 +27,32 @@ Pāli Canon Study Guide with trilingual reader (Pāli · English · Chinese)
 
 All sutta texts are fetched from [SuttaCentral](https://suttacentral.net) API.
 
-## Vism 逐句重译脚本（`scripts/retranslate_vism_chapter.py`）
+## Vism / 破戏疏逐句重译脚本（`scripts/retranslate_vism_chapter.py`）
 
-`docs/research/vism-data/` 下《清净道论》各章的逐句中译，部分由 `scripts/retranslate_vism_chapter.py` 通过站点自己的 `/api/mitra/translate` 代理调用 Dharmamitra 批量生成/替换，直接写入生产译文覆盖层。运行方式与参数见脚本内 docstring；这里只记录**实测得到的限流行为**，因为它决定了脚本必须怎么写、以及排队跑多章大致要多久。
+`docs/research/vism-data/` 下《清净道论》各章、以及 `docs/research/pali-source-texts/sutta/majjhima/papancasudani/` 下《破除戏论疏》三部分的逐句中译，由 `scripts/retranslate_vism_chapter.py` 通过站点自己的 `/api/mitra/translate` 代理调用 Dharmamitra 批量生成/替换，直接写入生产译文覆盖层（`PUT /api/translations/{doc_key}/{unit_key}`）。下面记录三件事：Dharmamitra API 本身的字段含义、**实测得到的限流行为**（决定了脚本必须怎么写）、以及脚本的用法和在新设备上重新部署这条流水线的方式。
+
+### Dharmamitra API：端点与字段含义
+
+我们调用的不是网站内部的流式接口（那个和网页会话绑定，不适合服务器对服务器调用），而是 Dharmamitra 自己的 Claude Code 脚手架（github.com/dharmamitra/dharmamitra-claude-code-agent）在用的同一个端点：
+
+```
+POST https://dharmamitra.org/api-search/cat-translate/v1/translate
+```
+
+无需鉴权，同步 JSON。请求体（`sutta-study-guide-backend/api/app/dharmamitra.py`）：
+
+| 字段 | 值 | 含义 |
+|---|---|---|
+| `input_pali` | 待译巴利语原文 | 唯一填的源语言字段 |
+| `input_tibetan` / `input_chinese` / `input_sanskrit` | 始终为空字符串 | 明确排除这些源语言，防止模型把术语误判成梵语/藏语拼写而非巴利语 |
+| `context` | 如「清净道论 第17品 ...」/「《破除戏论疏》第1部分 Mūlapariyāyasuttavaṇṇanā」 | 给模型的上下文提示，不影响译文语言/风格判定 |
+| `focus` | 固定 `"pali"` | 告诉模型以巴利语为源语言解析，这是巴利术语（而非梵语拼写）被正确识别注音的关键设定 |
+| `target_language` | 固定 `"modern chinese"` | 目标是现代汉语，不是文言 |
+| `style_instruction` | **单句翻译时完全不设**；仅批量翻译时设为固定的编号格式说明（不涉及文风） | 早期版本这里曾经固定填「保持原文的庄重语气」导致译文偏文言，现已移除（见下）——现在单句请求用的是 Dharmamitra 的纯默认风格 |
+
+响应：`{"translation": "..."}`（已经是简体，无需额外转换）。
+
+我们自己的后端在这之上包了两层：`POST /api/mitra/translate`（登录用户可调，每用户滑动窗口限流，见下，结果按 `pali+context+batch` 做内存缓存）和 `POST /api/mitra/cache`（写入型端点，供浏览器直连 Dharmamitra 成功后把结果登记进同一个缓存，不产生新的上游请求，用于把编辑各自的出口 IP 分散开、不都挤占服务器代理的配额）。
 
 ### 两层限流，性质完全不同
 
@@ -68,11 +91,67 @@ All sutta texts are fetched from [SuttaCentral](https://suttacentral.net) API.
 
 实测中发现 `p2-r59` 被记入进度文件、但后端覆盖层里根本没有——原因是那次 PUT 被一个正在部署下线中的副本接收，写入随副本一起丢失（正是 `main.py` 里记录的 ephemeral disk 风险窗口）。若继续信任进度文件，这句会被永久跳过。
 
-修复：`--fill-gaps` 模式下**不再用进度文件过滤待办**，改为完全以线上覆盖层为准（覆盖层本来就是每次启动重新读取的唯一权威）。`--start` 模式保留进度文件语义，因为那里的目的本就是覆盖已有译文。
+修复：`fill-gaps` / `not-dharmamitra` / `retranslate-dharmamitra` 三种模式**都不用进度文件过滤待办**，改为完全以线上覆盖层为准（覆盖层本来就是每次启动重新读取的唯一权威）；进度文件只用来给同一次运行断点续跑做记录，不参与"这句是否已经翻译过"的判断。
 
 ### 对排队跑多章的实际含义
 
-19 个章节顺序跑下来，大概率会反复撞上配额墙——每次都会自动冷却重试，不会中断或需要人工干预，但总耗时会明显长于"稳定 10/min"的乐观估算（有效吞吐量随撞墙次数被拉低，实测单次事故就把该次运行的平均吞吐从 10/min 拉到约 2.7-3.1/min）。用本地 dashboard（`papancasudani` 仓库的 `pali-retranslation-dashboard` 容器）上的实时 ETA 判断进度，不要按静态速率估算总时长。
+顺序跑下来，大概率会反复撞上配额墙——每次都会自动冷却重试，不会中断或需要人工干预，但总耗时会明显长于"稳定 10/min"的乐观估算（有效吞吐量随撞墙次数被拉低，实测单次事故就把该次运行的平均吞吐从 10/min 拉到约 2.7-3.1/min）。用本地 dashboard（`papancasudani` 仓库的 `pali-retranslation-dashboard` 容器）上的实时 ETA 判断进度，不要按静态速率估算总时长。
+
+### 脚本用法：文档族与模式
+
+```
+export SUTTA_API_EMAIL=... SUTTA_API_PASSWORD=...
+python3 scripts/retranslate_vism_chapter.py --chapter <文档> --mode <模式>
+```
+
+`--chapter` 支持三类文档，对应不同的源文件和后端 `doc_key`：
+
+| `--chapter` 取值 | 源文件 | `doc_key` |
+|---|---|---|
+| `1`..`23` | `docs/research/vism-data/pe_chapNN.json` | `vism:<N>` |
+| `nidana` / `conclusion` | `docs/research/vism-data/pe_nidana.json` / `pe_conclusion.json` | `vism:nidana` / `vism:conclusion` |
+| `papanca-part1` / `papanca-part2` / `papanca-part3` | `docs/research/pali-source-texts/sutta/majjhima/papancasudani/partN/bilingual.json` | `papanca:partN` |
+
+`--mode` 决定选哪些句子（`source == "human"` 的人工编辑行在任何模式下都不会被覆盖）：
+
+| `--mode` | 选中的句子 |
+|---|---|
+| `fill-gaps` | 静态文件和覆盖层里都还没有译文的句子（"有译文"取两者并集） |
+| `not-dharmamitra` | 覆盖层里 `source` 不是 `dharmamitra` 的句子——包括从没翻译过的、以及现有译文来自其他旧流水线（如破戏疏三部分现成的 `chinese_translation`）的句子，整句覆盖 |
+| `retranslate-dharmamitra` | 覆盖层里 `source == "dharmamitra"` 的句子，用于 Dharmamitra 风格变更后（见上）重新译出旧的机翻结果 |
+
+批量大小用 `--batch-size`（默认 20），单章可用 `--dry-run` 先看计划、`--limit N` 只跑前 N 句、`--minutes N` 定时停止（可续跑）。
+
+### 在新设备上重新部署这套流水线
+
+翻译不是跑在 Azure 后端里，而是本机（或任何一台能访问 Azure API 的机器）上的一个 Docker 容器，通过 `/api/mitra/translate` 代理调用 Dharmamitra，直接把结果写进生产环境的翻译覆盖层——**只要这台机器能访问公网，容器本身不需要和 Azure 部署在一起**。部署目录（`papancasudani/`，独立于本仓库，不在 git 里）里有：
+
+```
+papancasudani/
+  docker-compose.yml
+  dashboard/
+    Dockerfile
+    app.py        # 队列控制器 + 网页看板，唯一打进镜像的文件
+```
+
+`docker-compose.yml` 把两样东西挂载进容器：`docs/research/vism-data`（读写，队列状态/进度/日志都落在这里）、以及本仓库整个检出目录（只读，挂载到 `/repo`——`retranslate_vism_chapter.py` 和它读的所有源文件都从这里读，**编辑宿主机上的脚本文件，下一次任务启动时立即生效，不需要重建镜像**）。在新设备上：
+
+1. clone 本仓库到本地任意路径。
+2. 把 `docker-compose.yml` 里两个 `volumes` 路径改成新设备上对应的实际路径。
+3. 设置账号环境变量（这是队列翻译时用来登录后端 API 的账号，不是你自己的账号）：
+   ```
+   export SUTTA_API_EMAIL=...
+   export SUTTA_API_PASSWORD=...
+   ```
+4. 构建并启动：
+   ```
+   cd papancasudani
+   docker compose build pali-retranslation-dashboard
+   docker compose up -d pali-retranslation-dashboard
+   ```
+5. 打开 `http://localhost:8080` 看队列看板；`GET /api/status` 返回当前任务/队列/历史的 JSON；`POST /api/queue/add`（body `{chapter, mode, after?}`，`after` 可选，插到指定章节后面而不是排到队尾）、`POST /api/queue/remove`（body `{chapter}`）、`POST /api/pause`（暂停当前任务，SIGTERM 让脚本译完当前句子后干净退出，不会丢失或重复翻译）。
+
+队列状态（`queue.json`）落在挂载的 `vism-data/.retranslation-dashboard/` 里，所以**容器重启、甚至换一台新设备重新挂载同一份 `vism-data` 目录，队列和历史都会原样恢复**；正在跑的那一条任务会被放回队首重新开始（两种模式都是"以线上覆盖层为准"，不会因为重跑而重复翻译或漏句）。修改 `dashboard/app.py`（队列逻辑本身，不是翻译脚本）需要重新 `docker compose build` 才生效。
 
 ## 动态服务（问答 / 论坛 / 博客）
 
