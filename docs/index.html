@@ -1526,8 +1526,8 @@ const SEARCH_SINGLE_DOCS = [
 // reader searching this site's own content has no reason to pay for
 // unless they ask.
 
-const SEARCH_SCOPE_LABELS = { site: '站内搜索', dhamma: '法义溯源', eb: 'Early Buddhist' };
-let searchActiveScopes = { site: true, dhamma: false, eb: false };
+const SEARCH_SCOPE_LABELS = { site: '站内搜索', dhamma: '法义溯源', eb: 'Early Buddhist', v4: 'V4 三藏' };
+let searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false };
 
 // --- 法义溯源 scope: reuses the exact-then-fuzzy pipeline dhammaRunNormalSearch
 // already uses for its own search page, just returning data instead of
@@ -1984,7 +1984,7 @@ function searchScopeCheckboxesHtml() {
   </label>`;
   return `<div class="search-scope-row">
     <span class="search-scope-label">范围：</span>
-    ${opt('site')}${opt('dhamma')}${opt('eb')}
+    ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}
   </div>`;
 }
 
@@ -2009,9 +2009,9 @@ async function renderSearchPage(q, scopeParam) {
   // the all-unchecked case.
   if (scopeParam != null) {
     const set = new Set(scopeParam.split(',').filter(Boolean));
-    searchActiveScopes = { site: set.has('site'), dhamma: set.has('dhamma'), eb: set.has('eb') };
+    searchActiveScopes = { site: set.has('site'), dhamma: set.has('dhamma'), eb: set.has('eb'), v4: set.has('v4') };
   } else {
-    searchActiveScopes = { site: true, dhamma: false, eb: false };
+    searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false };
   }
 
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
@@ -2048,7 +2048,7 @@ async function renderSearchPage(q, scopeParam) {
   const len = needle.length;
   let totalHits = 0;
   const run = { query: q, needle, docs: [], suttaHits: [], dhamma: null, eb: null };
-  const scopeStatus = { site: '', dhamma: '', eb: '' };
+  const scopeStatus = { site: '', dhamma: '', eb: '', v4: '' };
   const setStatus = () => {
     status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') || '检索中…';
   };
@@ -2178,10 +2178,56 @@ async function renderSearchPage(q, scopeParam) {
     setStatus();
   }
 
+  // V4 is an independent, versioned static corpus.  The reader exposes the
+  // same worker-backed search API used by its own search page, so the home
+  // search never grows a second, less complete implementation.
+  async function runV4Scope() {
+    scopeStatus.v4 = 'V4 三藏：检索中…';
+    setStatus();
+    try {
+      for (let tries = 0; !window.TipitakaV4 && tries < 40; tries++) await new Promise(resolve => setTimeout(resolve, 100));
+      if (!window.TipitakaV4) throw new Error('V4 阅读器尚未加载');
+      const languages = ['zh', 'pali', 'en'];
+      const labels = { zh: '中文', pali: '巴利', en: 'English' };
+      const runs = await Promise.all(languages.map(async language => ({ language, result: await window.TipitakaV4.search(q, language) })));
+      let total = 0;
+      for (const { language, result } of runs) {
+        total += result.total;
+        if (!result.total) continue;
+        const sectionId = `v4-search-${language}-${mySeq}`;
+        results.insertAdjacentHTML('beforeend', wrapScope('v4', `<div class="dhamma-layer-section open" id="${sectionId}"><div class="dhamma-layer-section-head"><span>V4 三藏 · ${labels[language]}<span class="meta" style="margin-left:8px">点击进入对应作品并定位高亮段落</span></span><span class="count">${result.total.toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list" data-v4-list></ul><div class="tipitaka-page" data-v4-page></div></div></div>`));
+        const section = document.getElementById(sectionId), list = section.querySelector('[data-v4-list]'), pageBox = section.querySelector('[data-v4-page]');
+        const findHit = (text, language) => {
+          if (language === 'zh') { const at = searchNormalize(text).indexOf(searchNormalize(q).replace(/\s/g, '')); return [Math.max(0, at), q.replace(/\s/g, '').length]; }
+          if (language === 'pali') { const needle = q.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); const match = [...String(text).matchAll(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/g)].find(m => m[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith(needle)); return [match?.index || 0, match?.[0]?.length || q.length]; }
+          return [Math.max(0, String(text).toLowerCase().indexOf(q.toLowerCase())), q.length];
+        };
+        const draw = async page => {
+          const items = await window.TipitakaV4.resolve(result, page);
+          list.insertAdjacentHTML('beforeend', items.map(item => {
+            const text = language === 'zh' ? item.row.chinese_simplified || item.row.chinese_raw || '' : language === 'en' ? item.row.english_translation || '' : String(item.row.pali_text || '').replace(/<[^>]*>/g, ' ');
+            const [off, len] = findHit(text, language), href = window.TipitakaV4.resultHref(item, language, q);
+            return `<li><a href="${href}"><span class="title">${esc(item.meta.title)} · ${esc(item.row.paranum || item.row.id)}</span><p class="snippet">${searchSnippetHtml(text, off, len)}</p></a></li>`;
+          }).join(''));
+          const next = (page + 1) * 40 < result.total;
+          pageBox.innerHTML = `${page > 0 ? '<button data-v4-prev>上一页</button>' : ''}${next ? '<button data-v4-next>加载下一页</button>' : ''}<span class="meta">第 ${page + 1} 页 · 每页 40 条 · 总数完整</span>`;
+          pageBox.querySelector('[data-v4-prev]')?.addEventListener('click', () => { list.innerHTML = ''; draw(page - 1); });
+          pageBox.querySelector('[data-v4-next]')?.addEventListener('click', () => draw(page + 1));
+        };
+        await draw(0);
+      }
+      scopeStatus.v4 = `V4 三藏：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）`;
+    } catch (e) {
+      scopeStatus.v4 = `V4 三藏：检索失败（${esc(e.message || String(e))}）`;
+    }
+    setStatus();
+  }
+
   const jobs = [];
   if (searchActiveScopes.site) jobs.push(runSiteScope());
   if (searchActiveScopes.dhamma) jobs.push(runDhammaScope());
   if (searchActiveScopes.eb) jobs.push(runEbScope());
+  if (searchActiveScopes.v4) jobs.push(runV4Scope());
   await Promise.all(jobs);
 
   if (mySeq !== searchSeq) return;
@@ -9677,7 +9723,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260808.2"></script>
+<script src="tipitaka-reader.js?v=20260808.3"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
