@@ -155,14 +155,14 @@
   function rowHtml(row, overlays, hit) {
     const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language);
-    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${hit && lang === 'pali' ? show('pali', strip(row.pali_text)) : esc(strip(row.pali_text))}</div>`);
+    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${hit && lang === 'pali' && Number(row.id) === Number(hit.rowId) ? show('pali', strip(row.pali_text)) : esc(strip(row.pali_text))}</div>`);
     if (s.zh && displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
-      const effective = show('zh', value);
+      const effective = hit && lang === 'zh' && Number(row.id) === Number(hit.rowId) ? show('zh', value) : esc(chineseDisplay(value));
       const defaultHit = term && lang === 'zh' && !normalizeZh(chineseDisplay(value)).includes(normalizeZh(term).replace(/\s/g, '')) && normalizeZh(base).includes(normalizeZh(term).replace(/\s/g, ''));
       parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh')}</details>` : ''}</div>`);
     }
-    if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${hit && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
+    if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${hit && lang === 'en' && Number(row.id) === Number(hit.rowId) ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
     return `<article class="tipitaka-row" data-t-row="${row.id}" data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<div class="tipitaka-actions"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></article>`;
   }
 
@@ -193,7 +193,7 @@
         if (measuring) return;
         measuring = true;
         let changed = false;
-        windowEl.querySelectorAll('[data-t-row]').forEach(element => { const id = Number(element.dataset.tRow), index = work.rows.findIndex(row => row.id === id), height = element.offsetHeight; if (index >= 0 && height && heights.get(index) !== height) { heights.set(index, height); changed = true; } });
+        windowEl.querySelectorAll('[data-t-row]').forEach(element => { const id = Number(element.dataset.tRow), index = work.rows.findIndex(row => Number(row.id) === id), height = element.offsetHeight; if (index >= 0 && height && heights.get(index) !== height) { heights.set(index, height); changed = true; } });
         measuring = false;
         if (changed) { spacer.style.height = `${Math.max(1, totalHeight())}px`; windowEl.style.transform = `translateY(${offsetFor(start)}px)`; }
       });
@@ -220,7 +220,7 @@
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
       const [loaded, overlays] = await Promise.all([workById(workId), overrides(workId)]);
       const work = loaded[1], params = query(), anchor = Number(params.get('row') || 0);
-      let currentIndex = work.rows.findIndex(row => row.id === anchor); if (currentIndex < 0) currentIndex = 0;
+      let currentIndex = work.rows.findIndex(row => Number(row.id) === anchor); if (currentIndex < 0) currentIndex = 0;
       const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: Number(params.get('row') || 0) } : null;
       const hitRows = hit ? await searchHitsForReader(hit.query, hit.language, workId) : [];
       const hitIndex = hit ? Math.max(0, hitRows.indexOf(Number(params.get('row') || 0))) : 0;
@@ -237,7 +237,7 @@
   function moveReaderHit(delta) {
     const reader = state.reader; if (!reader?.hitRows?.length) return;
     reader.hitIndex = (reader.hitIndex + delta + reader.hitRows.length) % reader.hitRows.length;
-    const rowId = reader.hitRows[reader.hitIndex], idx = reader.work.rows.findIndex(row => row.id === rowId);
+    const rowId = reader.hitRows[reader.hitIndex], idx = reader.work.rows.findIndex(row => Number(row.id) === Number(rowId));
     if (idx < 0) return;
     reader.currentIndex = idx;
     const params = new URLSearchParams({ row: String(rowId), hl: reader.hit.query, hl_lang: reader.hit.language });
@@ -255,7 +255,7 @@
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
       if (action === 'bookmark') { await saveBookmark(reader.meta, reader.work.rows[reader.currentIndex]); return; }
-      const row = reader.work.rows.find(item => item.id === Number(button.dataset.row)); if (!row) return;
+      const row = reader.work.rows.find(item => Number(item.id) === Number(button.dataset.row)); if (!row) return;
       if (action === 'edit-zh' || action === 'edit-en') await editTranslation(reader.meta, row, action === 'edit-zh' ? 'zh' : 'en');
       if (action === 'draft-zh') await draftTranslation(reader.meta, row);
       if (action === 'history') await showHistory(reader.meta.id, row.id);
