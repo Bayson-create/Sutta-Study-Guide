@@ -88,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.12', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.12', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.13', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.13', document.baseURI));
     }
   }
 
@@ -149,7 +149,7 @@
     if (document.getElementById('tipitaka-search-target-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
-    style.textContent = '.tipitaka-search-target{border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px -12px;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}';
+    style.textContent = '.tipitaka-search-target{border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px -12px;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none}';
     document.head.appendChild(style);
   }
 
@@ -292,7 +292,9 @@
       void spacer.offsetHeight;
       pane.scrollTop = clampScroll(offsetFor(index) - (align === 'top' ? 12 : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2)));
       draw(true);
-      positionRaf = requestAnimationFrame(settle);
+      const frame = requestAnimationFrame(() => { if (positionRaf !== frame) return; positionRaf = 0; settle(); });
+      positionRaf = frame;
+      setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
     const schedule = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(); }); };
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => draw(true)) : null;
