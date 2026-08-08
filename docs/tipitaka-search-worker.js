@@ -67,7 +67,7 @@
   async function run(request) {
     const { base, q, language } = request;
     const value = String(q || '').trim();
-    if (language === 'zh' && value.replace(/\s/g, '').length < 2) return { total: 0, results: [], query: value, language };
+    if (language === 'zh' && (!/[\u3400-\u9fff]/.test(value) || value.replace(/\s/g, '').length < 2)) return { total: 0, results: [], query: value, language };
     const terms = queryTerms(value, language);
     if (!terms.length) return { total: 0, results: [], query: value, language };
     const index = await manifest(base);

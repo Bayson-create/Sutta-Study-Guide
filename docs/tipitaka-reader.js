@@ -308,7 +308,7 @@
 
   async function ensureDictionaryManifest() { if (!state.dictManifest) state.dictManifest = await cachedJson('dictionary-search-v1/manifest.json', SEARCH_CACHE_NAME); return state.dictManifest; }
   async function dictShard(language, bucket) { return cachedJson(`dictionary-search-v1/${language}/shard_${bucket}.json.gz`, SEARCH_CACHE_NAME); }
-  function dictionaryTerms(value, language) { if (language === 'zh') { const compact = value.replace(/\s/g, ''); return [...new Set(Array.from({ length: Math.max(0, compact.length - 1) }, (_, i) => compact.slice(i, i + 2)))]; } return [...value.matchAll(dictWords)].map(m => language === 'pali' ? normalizePali(m[0]) : m[0].toLowerCase()).filter(Boolean); }
+  function dictionaryTerms(value, language) { if (language === 'zh') { const compact = value.replace(/\s/g, ''); if (!/[\u3400-\u9fff]/.test(compact) || compact.length < 2) return []; return [...new Set(Array.from({ length: Math.max(0, compact.length - 1) }, (_, i) => compact.slice(i, i + 2)))]; } return [...value.matchAll(dictWords)].map(m => language === 'pali' ? normalizePali(m[0]) : m[0].toLowerCase()).filter(Boolean); }
   async function dictionarySearch(value, language, source = '') {
     const manifest = await ensureDictionaryManifest(), terms = dictionaryTerms(value, language); if (!terms.length) return { total: 0, rows: [], query: value, language };
     let candidates = null;
