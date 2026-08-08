@@ -1928,6 +1928,33 @@ function searchEbEvidence(ebRun, query) {
   }));
 }
 
+function searchV4Evidence(v4Run, query) {
+  if (!v4Run || !Array.isArray(v4Run.items) || !window.TipitakaV4?.evidence) return [];
+  const seen = new Set();
+  return v4Run.items.map(item => {
+    const key = `${item.language}:${item.row?.id}:${item.meta?.id}`;
+    if (seen.has(key)) return null;
+    seen.add(key);
+    const evidence = window.TipitakaV4.evidence(item, item.language, query);
+    return { ...evidence, score: 2.1 + Math.min(Number(item.score) || 0, 4) / 10 };
+  }).filter(Boolean);
+}
+
+function searchV4EvidenceHref(evidence, fallbackQuery) {
+  if (!evidence?.work_id || evidence.row_id === null || evidence.row_id === undefined) return null;
+  const term = evidence.query || fallbackQuery || '';
+  const params = new URLSearchParams({
+    row: String(evidence.row_id),
+    hl: term,
+    hl_lang: evidence.language || 'zh',
+    hl_anchor: evidence.anchor || String(evidence.text || '').slice(0, 64),
+  });
+  if (evidence.position !== null && evidence.position !== undefined && Number.isFinite(Number(evidence.position))) {
+    params.set('hl_pos', String(evidence.position));
+  }
+  return `#/tipitaka/read/${encodeURIComponent(evidence.work_id)}?${params}`;
+}
+
 // Rank across everything found, then cap per document. The cap is what
 // buys coverage: without it a single long file that repeats the term can
 // fill the whole evidence budget and the answer silently reflects one
@@ -1944,6 +1971,7 @@ function searchSelectEvidence(run) {
   const reserved = [];
   if (run.dhamma) { const e = searchDhammaEvidence(run.dhamma).slice(0, 4); reserved.push(...e); budget -= e.length; }
   if (run.eb) { const e = searchEbEvidence(run.eb, run.query).slice(0, 4); reserved.push(...e); budget -= e.length; }
+  if (run.v4) { const e = searchV4Evidence(run.v4, run.query).slice(0, 4); reserved.push(...e); budget -= e.length; }
   budget = Math.max(0, budget);
 
   const scored = [];
@@ -2047,7 +2075,7 @@ async function renderSearchPage(q, scopeParam) {
   const needle = searchNormalize(q);
   const len = needle.length;
   let totalHits = 0;
-  const run = { query: q, needle, docs: [], suttaHits: [], dhamma: null, eb: null };
+  const run = { query: q, needle, docs: [], suttaHits: [], dhamma: null, eb: null, v4: null };
   const scopeStatus = { site: '', dhamma: '', eb: '', v4: '' };
   const setStatus = () => {
     status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') || '检索中…';
@@ -2189,6 +2217,7 @@ async function renderSearchPage(q, scopeParam) {
       if (!window.TipitakaV4) throw new Error('V4 阅读器尚未加载');
       const languages = ['zh', 'pali', 'en'];
       const labels = { zh: '中文', pali: '巴利', en: 'English' };
+      const v4Items = [];
       const runs = await Promise.all(languages.map(async language => {
         try { return { language, result: await window.TipitakaV4.search(q, language) }; }
         catch (error) { return { language, error }; }
@@ -2209,6 +2238,7 @@ async function renderSearchPage(q, scopeParam) {
         };
         const draw = async page => {
           const items = await window.TipitakaV4.resolve(result, page);
+          if (page === 0) v4Items.push(...items.map(item => ({ ...item, language })));
           list.insertAdjacentHTML('beforeend', items.map(item => {
             const text = language === 'zh' ? item.row.chinese_simplified || item.row.chinese_raw || '' : language === 'en' ? item.row.english_translation || '' : String(item.row.pali_text || '').replace(/<[^>]*>/g, ' ');
             const [off, len] = findHit(text, language), href = window.TipitakaV4.resultHref(item, language, q);
@@ -2221,6 +2251,7 @@ async function renderSearchPage(q, scopeParam) {
         };
         await draw(0);
       }
+      run.v4 = { items: v4Items };
       totalHits += total;
       scopeStatus.v4 = `V4 三藏：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）${languageErrors.length ? '；' + languageErrors.join('；') : ''}`;
     } catch (e) {
@@ -2375,7 +2406,8 @@ function searchSynthHandler(query, evidence, onDone) {
     } else if (evt.type === 'final') {
       aiJobForget('search_synth');
       const ev = evidence || (evt.passages || []).map(p => ({
-        source: p.source, heading: p.heading, text: p.text,
+        ...p,
+        _href: p.kind === 'v4' ? searchV4EvidenceHref(p, query) : null,
       }));
       searchRenderSynthesis({ query, needle: searchNormalize(query) }, ev, evt);
       if (onDone) onDone();
@@ -2409,7 +2441,12 @@ async function searchRunSynthesis() {
       headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
       body: JSON.stringify({
         query: run.query,
-        passages: evidence.map(e => ({ source: e.source, heading: e.heading, text: e.text })),
+        passages: evidence.map(e => ({
+          source: e.source, heading: e.heading, text: e.text, kind: e.kind || 'research',
+          work_id: e.work_id ?? null, row_id: e.row_id ?? null, language: e.language ?? null,
+          query: e.query ?? run.query, position: e.position ?? null, anchor: e.anchor ?? null,
+          paranum: e.paranum ?? null,
+        })),
       }),
     });
     if (!res.ok) {
@@ -2481,7 +2518,7 @@ function searchRenderSynthesis(run, evidence, data) {
 
   const items = evidence.map((e, idx) => {
     const i = idx + 1;
-    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e._href || null);
+    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : (e._href || null));
     const title = `${esc(e.source)}${e.heading ? ' · ' + esc(e.heading) : ''}`;
     // Evidence with no exact in-page anchor (Early Buddhist without a usable
     // uid) opens that site's own search, already run, in a new tab; the badge
@@ -2518,7 +2555,7 @@ function searchSynthesisMarkdown(state) {
   const { run, evidence, data } = state;
   const lines = [`# AI 综合回答：${run.query}`, '', data.answer || '', '', '## 引用'];
   evidence.forEach((e, i) => {
-    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e._href || '');
+    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : (e._href || ''));
     const absolute = href ? new URL(href, location.href).href : '';
     lines.push(`- [${i + 1}] ${e.source || '来源'}${e.heading ? ` · ${e.heading}` : ''}${absolute ? ` — ${absolute}` : ''}`);
     if (e.text) lines.push(`  > ${String(e.text).replace(/\n+/g, ' ')}`);
@@ -6125,7 +6162,10 @@ async function communityFetchWithTimeout(url, opts = {}, timeoutMs = 45000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    return await fetch(url, { ...opts, signal: controller.signal });
+    const signal = opts.signal && typeof AbortSignal !== 'undefined' && typeof AbortSignal.any === 'function'
+      ? AbortSignal.any([controller.signal, opts.signal])
+      : controller.signal;
+    return await fetch(url, { ...opts, signal });
   } finally {
     clearTimeout(timer);
   }
@@ -6177,7 +6217,7 @@ function communityWriteErrorMessage(e) {
   if (e.name === 'AbortError') {
     return '请求超时，后端可能仍在唤醒。你的内容已自动保存为草稿，请稍候再试一次。';
   }
-  if (e instanceof TypeError) {
+  if (e instanceof TypeError || /load failed|failed to fetch|networkerror/i.test(String(e?.message || ''))) {
     return '无法连接后端（可能正在冷启动）。你的内容已自动保存为草稿，请稍候再试一次。';
   }
   return e.message;
@@ -9187,10 +9227,16 @@ async function gotamaResumeJob(conversationId) {
   const el = document.getElementById('gotamaMessages');
   if (!el) return;
   gotamaSending = true;
+  let resumedSuccessfully = false;
   // The assistant slot the replayed deltas will stream into. The user's own
   // message was committed server-side the moment it was received, so it is
   // already in the history loaded above.
-  gotamaMessages.push({ role: 'assistant', content: '', _resumed: true });
+  const existingAssistant = gotamaMessages[gotamaMessages.length - 1];
+  if (existingAssistant?.role === 'assistant' && (existingAssistant._streaming || existingAssistant._resumed)) {
+    existingAssistant._resumed = true;
+  } else {
+    gotamaMessages.push({ role: 'assistant', content: '', _resumed: true });
+  }
   gotamaRenderMessages();
   el.insertAdjacentHTML('beforeend', '<div class="gotama-thinking" id="gotamaThinking">正在接回离开时未完成的回答…</div>');
 
@@ -9206,6 +9252,7 @@ async function gotamaResumeJob(conversationId) {
         el.scrollTop = el.scrollHeight;
       } else if (evt.type === 'final') {
         aiJobForget('gotama');
+        resumedSuccessfully = true;
         thinking()?.remove();
         gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
         gotamaMessages[gotamaMessages.length - 1] = evt.assistant_message;
@@ -9224,6 +9271,7 @@ async function gotamaResumeJob(conversationId) {
     if (last && last._resumed && !last.content) gotamaMessages.pop();
     gotamaRenderMessages();
   }
+  return resumedSuccessfully;
 }
 
 function gotamaToggleSidebar(force) {
@@ -9538,6 +9586,7 @@ async function gotamaSend(overrideContent) {
   // conversation and moves gotamaActiveId off null - clearing afterwards
   // would target the new conversation's key and leave the 'new' draft behind.
   const draftKey = gotamaDraftKey();
+  const requestId = (globalThis.crypto?.randomUUID && crypto.randomUUID()) || `gotama-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 
   gotamaSending = true;
   const btn = document.getElementById('gotamaSendBtn');
@@ -9594,12 +9643,12 @@ async function gotamaSend(overrideContent) {
     // request still gets caught, a backgrounded-but-healthy one doesn't.
     let timeoutId = setTimeout(() => controller.abort(), 150000);
     const resetTimeout = () => { clearTimeout(timeoutId); timeoutId = setTimeout(() => controller.abort(), 150000); };
-    const res = await fetch(`${API_BASE}/api/gotama/conversations/${convId}/messages`, {
+    const res = await communityWriteFetch(`${API_BASE}/api/gotama/conversations/${convId}/messages`, {
       method: 'POST',
       headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
-      body: JSON.stringify({ content }),
+      body: JSON.stringify({ content, request_id: requestId }),
       signal: controller.signal,
-    });
+    }, { attempts: 3, timeoutMs: 150000, onRetry: attempt => { btn.textContent = `后端正在唤醒，重试中（${attempt}/2）…`; } });
     if (!res.ok) {
       let detail = '请求失败';
       try { detail = (await res.json()).detail || detail; } catch (_) {}
@@ -9709,13 +9758,24 @@ async function gotamaSend(overrideContent) {
   } catch (e) {
     gotamaSending = false;
     document.getElementById('gotamaThinking')?.remove();
+    const pending = gotamaActiveId ? aiJobPending('gotama') : null;
+    if (pending && pending.ref === String(gotamaActiveId)) {
+      // The detached job already has the stable request ID and continues
+      // generating even if the fetch stream died. Reattach before showing a
+      // failure message, so a transient mobile/Azure connection loss does
+      // not turn a valid answer into “Load failed”.
+      gotamaSending = false;
+      try {
+        if (await gotamaResumeJob(gotamaActiveId)) return;
+      } catch (_) { /* fall through to the durable, retryable error below */ }
+    }
     const msg = e.status === 402
       ? `${e.message} <a href="#/profile">前往账号页面</a>`
       : e.status === 409
         ? '上一条消息仍在处理，请稍候再试'
         : e.status === 401
           ? '登录已过期，请<a href="#/profile">重新登录</a>'
-          : communityTimeoutMessage(e);
+        : (e.name === 'AbortError' ? communityTimeoutMessage(e) : communityWriteErrorMessage(e));
     // The streaming placeholder (last message) may already have real,
     // already-displayed content by the time this fires (a "final" event
     // never arrived, or an "error" event landed mid-stream) - discarding
@@ -9764,7 +9824,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260808.15"></script>
+<script src="tipitaka-reader.js?v=20260808.16"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });

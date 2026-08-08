@@ -142,14 +142,22 @@
   function injectCss() {
     if (document.getElementById('tipitaka-reader-css')) return;
     const style = document.createElement('style'); style.id = 'tipitaka-reader-css'; style.textContent = `
-      .tipitaka-layout{display:grid;grid-template-columns:minmax(230px,28%) 1fr;gap:18px}.tipitaka-catalog{max-height:68vh;overflow:auto;padding:12px;background:var(--card,#fff);border:1px solid var(--border,#ddd);border-radius:10px}.tipitaka-catalog details{margin:7px 0}.tipitaka-work-link{display:block;padding:5px 8px;color:var(--primary,#6b4f2d);text-decoration:none}.tipitaka-work-link small{color:var(--text-light,#777)}.tipitaka-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.tipitaka-toolbar button,.tipitaka-toolbar input,.tipitaka-toolbar select{padding:7px 10px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit}.tipitaka-row{border-bottom:1px solid var(--border,#e5e5e5);padding:16px 0;line-height:1.75}.tipitaka-row[data-rend="gatha"]{margin-left:2em;font-style:italic}.tipitaka-row[data-rend="nikaya"],.tipitaka-row[data-rend="book"],.tipitaka-row[data-rend="subsubhead"]{font-weight:700}.tipitaka-num{display:inline-block;min-width:5.2em;color:var(--text-light,#777);font-size:.8em;vertical-align:top}.tipitaka-pali{cursor:pointer;color:var(--primary,#6b4f2d);font-style:italic;line-height:1.65}.tipitaka-zh{color:var(--text,#222);font-size:1.04em;line-height:2}.tipitaka-en{color:var(--text-light,#666);line-height:1.65}.tipitaka-actions{margin-top:8px}.tipitaka-actions summary{display:inline-flex;cursor:pointer;color:var(--primary,#6b4f2d);font-size:.83em}.tipitaka-actions-grid{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.tipitaka-actions button{font-size:.8em}.tipitaka-search-result{display:block;padding:10px;border-bottom:1px solid var(--border,#ddd);color:inherit;text-decoration:none}.tipitaka-search-result:hover{background:color-mix(in srgb,var(--primary,#6b4f2d) 8%,transparent)}.tipitaka-pane{height:min(72vh,calc(100vh - 190px));overflow:auto;padding:0 18px;position:relative;scroll-behavior:smooth;overscroll-behavior:contain}.tipitaka-virtual-spacer{position:relative;width:100%}.tipitaka-virtual-window{position:absolute;left:0;right:0;top:0;will-change:transform}.tipitaka-hit{background:#ffe066;color:#2d2400;border-radius:3px;padding:0 2px;box-shadow:0 0 0 2px rgba(255,224,102,.22)}.tipitaka-active-hit{background:#ff9f1c;box-shadow:0 0 0 3px rgba(255,159,28,.35)}.tipitaka-default-hit{margin:8px 0;padding:8px 10px;border-left:3px solid #c58b28;background:rgba(197,139,40,.09);font-size:.9em}.tipitaka-skeleton{height:18px;margin:14px 0;background:linear-gradient(90deg,#eee,#fafafa,#eee);background-size:200% 100%;animation:tipitakaShimmer 1.3s infinite;border-radius:5px}.tipitaka-dict-entry{padding:12px 0;border-bottom:1px solid var(--border,#ddd)}.tipitaka-dict-entry h4{margin:0 0 5px}.tipitaka-page{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.tipitaka-note{color:var(--text-light,#777);font-size:.9em}.tipitaka-mobile-note{display:none}@keyframes tipitakaShimmer{to{background-position:-200% 0}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-catalog{max-height:38vh}.tipitaka-num{min-width:3.8em}.tipitaka-pane{height:calc(100vh - 230px);padding:0 10px}.tipitaka-toolbar{gap:6px}.tipitaka-toolbar button{padding:6px 8px}.tipitaka-mobile-note{display:block}}`; document.head.appendChild(style);
+      .tipitaka-layout{display:grid;grid-template-columns:minmax(230px,28%) 1fr;gap:18px}.tipitaka-catalog{max-height:68vh;overflow:auto;padding:12px;background:var(--card,#fff);border:1px solid var(--border,#ddd);border-radius:10px}.tipitaka-catalog details{margin:7px 0}.tipitaka-work-link{display:block;padding:5px 8px;color:var(--primary,#6b4f2d);text-decoration:none}.tipitaka-work-link small{color:var(--text-light,#777)}.tipitaka-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0;min-width:0}.tipitaka-toolbar button,.tipitaka-toolbar input,.tipitaka-toolbar select{padding:7px 10px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit;max-width:100%;box-sizing:border-box}.tipitaka-row{box-sizing:border-box;width:100%;max-width:100%;min-width:0;border-bottom:1px solid var(--border,#e5e5e5);padding:16px 0;line-height:1.75;overflow-wrap:anywhere}.tipitaka-row[data-rend="gatha"]{font-style:italic}.tipitaka-row[data-rend="nikaya"],.tipitaka-row[data-rend="book"],.tipitaka-row[data-rend="subsubhead"]{font-weight:700}.tipitaka-num{display:inline-block;min-width:5.2em;color:var(--text-light,#777);font-size:.8em;vertical-align:top}.tipitaka-pali{cursor:pointer;color:var(--primary,#6b4f2d);font-style:italic;line-height:1.65;overflow-wrap:anywhere}.tipitaka-zh{color:var(--text,#222);font-size:1.04em;line-height:2;overflow-wrap:anywhere}.tipitaka-en{color:var(--text-light,#666);line-height:1.65;overflow-wrap:anywhere}.tipitaka-actions{margin-top:8px}.tipitaka-actions summary{display:inline-flex;cursor:pointer;color:var(--primary,#6b4f2d);font-size:.83em}.tipitaka-actions-grid{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.tipitaka-actions button{font-size:.8em}.tipitaka-search-result{display:block;padding:10px;border-bottom:1px solid var(--border,#ddd);color:inherit;text-decoration:none;min-width:0;overflow-wrap:anywhere}.tipitaka-search-result:hover{background:color-mix(in srgb,var(--primary,#6b4f2d) 8%,transparent)}.tipitaka-pane{height:min(72vh,calc(100vh - 190px));overflow-y:auto;overflow-x:clip;padding:0 18px;position:relative;scroll-behavior:smooth;overscroll-behavior:contain;overscroll-behavior-x:none;touch-action:pan-y pinch-zoom;min-width:0;box-sizing:border-box}.tipitaka-virtual-spacer{position:relative;width:100%;max-width:100%;min-width:0}.tipitaka-virtual-window{position:absolute;left:0;right:0;top:0;max-width:100%;min-width:0;will-change:transform}.tipitaka-hit{background:#ffe066;color:#2d2400;border-radius:3px;padding:0 2px;box-shadow:0 0 0 2px rgba(255,224,102,.22)}.tipitaka-active-hit{background:#ff9f1c;box-shadow:0 0 0 3px rgba(255,159,28,.35)}.tipitaka-default-hit{box-sizing:border-box;max-width:100%;margin:8px 0;padding:8px 10px;border-left:3px solid #c58b28;background:rgba(197,139,40,.09);font-size:.9em;overflow-wrap:anywhere}.tipitaka-skeleton{height:18px;margin:14px 0;background:linear-gradient(90deg,#eee,#fafafa,#eee);background-size:200% 100%;animation:tipitakaShimmer 1.3s infinite;border-radius:5px}.tipitaka-dict-entry{padding:12px 0;border-bottom:1px solid var(--border,#ddd);overflow-wrap:anywhere}.tipitaka-dict-entry h4{margin:0 0 5px}.tipitaka-page{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.tipitaka-note{color:var(--text-light,#777);font-size:.9em}.tipitaka-mobile-note{display:none}@keyframes tipitakaShimmer{to{background-position:-200% 0}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-catalog{max-height:38vh}.tipitaka-num{min-width:3.8em}.tipitaka-pane{height:calc(100vh - 230px);padding:0 10px}.tipitaka-toolbar{gap:6px}.tipitaka-toolbar button{padding:6px 8px}.tipitaka-mobile-note{display:block}}`; document.head.appendChild(style);
   }
 
   function injectSearchTargetCss() {
     if (document.getElementById('tipitaka-search-target-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
-    style.textContent = '.tipitaka-search-target{border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px -12px;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto}';
+    style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}';
+    document.head.appendChild(style);
+  }
+
+  function injectTouchSafetyCss() {
+    if (document.getElementById('tipitaka-touch-safety-css')) return;
+    const style = document.createElement('style');
+    style.id = 'tipitaka-touch-safety-css';
+    style.textContent = '.tipitaka-pane{overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-x:none!important}.tipitaka-search-target{max-width:100%;box-sizing:border-box}';
     document.head.appendChild(style);
   }
 
@@ -326,7 +334,7 @@
   }
 
   async function renderReader(workId) {
-    injectCss(); injectSearchTargetCss();
+    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss();
     const renderId = ++state.readerRequest;
     state.reader?.virtual?.destroy?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
@@ -420,6 +428,22 @@
     if (Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0]))) params.set('hl_pos', String(item.positions[0]));
     return `#/tipitaka/read/${encodeURIComponent(item.meta.id)}?${params}`;
   }
+  function searchResultEvidence(item, language, term) {
+    const text = searchTextForRow(item.row, language);
+    const anchor = searchAnchorForRow(item.row, language);
+    const position = Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0])) ? Number(item.positions[0]) : null;
+    const normalizedTerm = language === 'zh' ? normalizeZh(term).replace(/\s/g, '') : language === 'pali' ? normalizePali(term) : normalizeEn(term);
+    const normalizedText = language === 'zh' ? normalizeZh(text).replace(/\s/g, '') : language === 'pali' ? normalizePali(text) : normalizeEn(text);
+    const at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1;
+    const rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
+    const start = Math.max(0, rawAt - 220), end = Math.min(text.length, rawAt + Math.max(term.length, 1) + 340);
+    return {
+      kind: 'v4', source: `V4 三藏 · ${item.meta.title}`, heading: `${item.meta.path.join(' / ')}${item.row.paranum ? ` · 段号 ${item.row.paranum}` : ''}`,
+      text: text.slice(start, end), work_id: item.meta.id, row_id: Number(item.row.id), language, query: term,
+      position, anchor, paranum: item.row.paranum || String(item.row.id), _href: searchResultHref(item, language, term), _v4: true,
+    };
+  }
+  window.TipitakaV4.evidence = (item, language, term) => searchResultEvidence(item, language, term);
   window.TipitakaV4.resultHref = (item, language, term) => searchResultHref(item, language, term);
 
   async function resolveSearchPage(result, page) {
