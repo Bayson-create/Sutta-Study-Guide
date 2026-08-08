@@ -15,6 +15,7 @@
     workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
     dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null,
   };
+  const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
 
   const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
   const strip = value => String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -37,6 +38,23 @@
   }
   function saveSettings() { localStorage.setItem('tipitaka-reader-settings', JSON.stringify(settings())); }
 
+  function openCacheMeta() {
+    if (!window.indexedDB) return Promise.reject(new Error('IndexedDB unavailable'));
+    return new Promise((resolve, reject) => { const request = indexedDB.open(CACHE_META_DB, 1); request.onupgradeneeded = () => request.result.createObjectStore(CACHE_META_STORE, { keyPath: 'path' }); request.onsuccess = () => resolve(request.result); request.onerror = () => reject(request.error); });
+  }
+  async function touchCacheMeta(path, bytes) {
+    try { const db = await openCacheMeta(), tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).put({ path, bytes: bytes || 0, touched_at: Date.now() }); tx.oncomplete = () => db.close(); } catch {}
+  }
+  async function trimReaderCache() {
+    try {
+      const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
+      let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v3\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
+      for (const row of evictable) { if (total <= CACHE_BUDGET) break; await cache.delete(new Request(url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
+      db.close();
+    } catch {}
+  }
+
   async function cachedJson(path, cacheName = CACHE_NAME) {
     const request = new Request(url(path), { mode: 'cors' });
     try {
@@ -47,6 +65,7 @@
         if (!response.ok) throw new Error(`${path} 加载失败（${response.status}）`);
         await cache.put(request, response.clone());
       }
+      const bytes = Number(response.headers.get('Content-Length') || 0); touchCacheMeta(path, bytes); trimReaderCache();
       return response.json();
     } catch (error) {
       throw new Error(`无法读取巴利三藏数据：${error.message}`);
@@ -69,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.5', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.5', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.7', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.7', document.baseURI));
     }
   }
 

@@ -17,10 +17,14 @@
   async function cachedJson(base, path) {
     const key = baseUrl(base, path);
     if (!bucketCache.has(key)) {
-      const promise = fetch(key, { mode: 'cors' }).then(response => {
+      const promise = (async () => {
+        const request = new Request(key, { mode: 'cors' });
+        const cache = typeof caches !== 'undefined' ? await caches.open('tipitaka-search-v3') : null;
+        let response = cache ? await cache.match(request) : null;
+        if (!response) { response = await fetch(request); if (cache && response.ok) await cache.put(request, response.clone()); }
         if (!response.ok) throw new Error(`检索分片加载失败（${response.status}）`);
         return response.json();
-      });
+      })();
       bucketCache.set(key, promise);
     }
     return bucketCache.get(key);
