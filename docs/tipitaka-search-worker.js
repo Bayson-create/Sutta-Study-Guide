@@ -43,7 +43,7 @@
     return out;
   }
   async function termsFor(base, language, term) {
-    const bucket = language === 'zh' ? String(await hashBucket(term)).padStart(3, '0') : prefixBucket(term);
+    const bucket = language === 'zh' ? String(await hashBucket(term)) : prefixBucket(term);
     const shard = await cachedJson(base, `search-v3/${language}/shard_${bucket}.json.gz`);
     return Object.entries(shard).filter(([key]) => key === term || (language !== 'zh' && key.startsWith(term)));
   }

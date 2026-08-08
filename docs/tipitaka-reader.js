@@ -313,7 +313,7 @@
     const manifest = await ensureDictionaryManifest(), terms = dictionaryTerms(value, language); if (!terms.length) return { total: 0, rows: [], query: value, language };
     let candidates = null;
     for (const term of terms) {
-      const bucket = language === 'pali' ? (term.replace(/[^a-z0-9]/g, '_').slice(0, 2) || '__').padEnd(2, '_') : String(await (async key => { const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(key)); return new DataView(bytes).getUint32(0) % 256; })(term)).padStart(3, '0');
+      const bucket = language === 'pali' ? (term.replace(/[^a-z0-9]/g, '_').slice(0, 2) || '__').padEnd(2, '_') : String(await (async key => { const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(key)); return new DataView(bytes).getUint32(0) % 256; })(term));
       const shard = await dictShard(language, bucket), postings = [];
       for (const [key, locators] of Object.entries(shard)) if (key === term || (language === 'pali' && key.startsWith(term))) postings.push(...locators);
       const set = new Set(postings.map(item => language === 'pali' ? item : item[0])); candidates = candidates === null ? set : new Set([...candidates].filter(item => set.has(item))); if (!candidates.size) break;
