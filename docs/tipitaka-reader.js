@@ -4,7 +4,14 @@
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
-  const API = `${API_BASE}/api/tipitaka/v1`;
+  // This file is loaded as a separate classic script.  Do not rely on the
+  // inline page script's lexical `const API_BASE` being visible here: on
+  // GitHub Pages that binding is not shared with this script, which used to
+  // abort the reader before `window.TipitakaV4` was exported.
+  const API_ROOT = typeof API_BASE !== 'undefined'
+    ? API_BASE
+    : 'https://sutta-api.agreeablemeadow-9da329ca.swedencentral.azurecontainerapps.io';
+  const API = `${API_ROOT}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
   const WORK_CACHE_LIMIT = 3;
