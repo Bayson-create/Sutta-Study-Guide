@@ -91,7 +91,7 @@
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
       if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.20', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.20', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260809.1', document.baseURI));
     }
   }
 
@@ -248,29 +248,39 @@
     return `<div class="tipitaka-toolbar"><button data-t-action="back">← 目录</button><strong>${esc(meta.title)}</strong><label><input type="checkbox" data-t-toggle="pali" ${s.pali ? 'checked' : ''}> 巴利</label><label><input type="checkbox" data-t-toggle="zh" ${s.zh ? 'checked' : ''}> 中文</label><label><input type="checkbox" data-t-toggle="traditional" ${s.traditional ? 'checked' : ''}> 繁体</label><label><input type="checkbox" data-t-toggle="en" ${s.en ? 'checked' : ''}> English</label><button data-t-action="font-down">A−</button><button data-t-action="font-up">A+</button><button data-t-action="auto">自动滚动</button><button data-t-action="bookmark">☆ 收藏此处</button>${hitNote}${current?.paranum ? `<span class="tipitaka-note">段号 ${esc(current.paranum)}</span>` : ''}</div>`;
   }
 
-  function highlightHtml(text, term, language, active = false, activePosition = null) {
+  function highlightHtml(text, term, language, active = false, activePosition = null, matchedTerms = null) {
     text = String(text || ''); term = String(term || '').trim();
     if (!term) return esc(text);
+    const terms = [...new Set((Array.isArray(matchedTerms) && matchedTerms.length ? matchedTerms : [term]).map(value => String(value || '').trim()).filter(Boolean))];
     const ranges = [];
     if (language === 'zh') {
-      const normalizedText = normalizeZh(text), normalizedTerm = normalizeZh(term).replace(/\s/g, ''), compact = normalizedText.replace(/\s/g, ''), rawIndex = [];
+      const normalizedText = normalizeZh(text), compact = normalizedText.replace(/\s/g, ''), rawIndex = [];
       for (let index = 0; index < normalizedText.length; index += 1) if (!/\s/.test(normalizedText[index])) rawIndex.push(index);
-      for (let at = compact.indexOf(normalizedTerm); at !== -1; at = compact.indexOf(normalizedTerm, at + Math.max(1, normalizedTerm.length))) {
-        const start = rawIndex[at], end = rawIndex[at + normalizedTerm.length - 1];
-        if (start !== undefined && end !== undefined) ranges.push([start, end + 1, at]);
+      for (const candidate of terms) {
+        const normalizedTerm = normalizeZh(candidate).replace(/\s/g, '');
+        for (let at = compact.indexOf(normalizedTerm); at !== -1; at = compact.indexOf(normalizedTerm, at + Math.max(1, normalizedTerm.length))) {
+          const start = rawIndex[at], end = rawIndex[at + normalizedTerm.length - 1];
+          if (start !== undefined && end !== undefined) ranges.push([start, end + 1, at]);
+        }
       }
     } else if (language === 'pali') {
-      const q = normalizePali(term);
-      let tokenPosition = 0;
-      for (const match of text.matchAll(words)) { if (normalizePali(match[0]).startsWith(q)) ranges.push([match.index, match.index + match[0].length, tokenPosition]); tokenPosition += 1; }
+      for (const candidate of terms) {
+        const q = normalizePali(candidate);
+        let tokenPosition = 0;
+        for (const match of text.matchAll(words)) { if (normalizePali(match[0]).startsWith(q)) ranges.push([match.index, match.index + match[0].length, tokenPosition]); tokenPosition += 1; }
+      }
     } else {
-      const q = term.toLowerCase(); const lower = text.toLowerCase(), tokenMatches = [...text.matchAll(words)];
-      for (let at = lower.indexOf(q); at !== -1; at = lower.indexOf(q, at + Math.max(1, q.length))) {
-        const tokenPosition = tokenMatches.findIndex(match => match.index >= at);
-        ranges.push([at, at + q.length, tokenPosition < 0 ? 0 : tokenPosition]);
+      const lower = text.toLowerCase(), tokenMatches = [...text.matchAll(words)];
+      for (const candidate of terms) {
+        const q = candidate.toLowerCase();
+        for (let at = lower.indexOf(q); at !== -1; at = lower.indexOf(q, at + Math.max(1, q.length))) {
+          const tokenPosition = tokenMatches.findIndex(match => match.index >= at);
+          ranges.push([at, at + q.length, tokenPosition < 0 ? 0 : tokenPosition]);
+        }
       }
     }
     if (!ranges.length) return esc(text);
+    ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1]);
     let out = '', cursor = 0;
     for (const [start, end, position] of ranges) {
       if (start < cursor) continue;
@@ -295,13 +305,15 @@
   function rowHtml(row, overlays, hit) {
     const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
-    const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position);
+    const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position, hit?.terms);
     if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? show('pali', strip(row.pali_text)) : paliTokensHtml(row.pali_text)}</div>`);
     if (s.zh && displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
       const effective = isHitRow && lang === 'zh' ? show('zh', value) : esc(chineseDisplay(value));
-      const defaultHit = term && lang === 'zh' && !normalizeZh(chineseDisplay(value)).includes(normalizeZh(term).replace(/\s/g, '')) && normalizeZh(base).includes(normalizeZh(term).replace(/\s/g, ''));
-      parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position)}</details>` : ''}</div>`);
+      const hitTerms = hit?.terms?.length ? hit.terms : [term];
+      const hasZhHit = textValue => hitTerms.some(candidate => normalizeZh(chineseDisplay(textValue)).includes(normalizeZh(candidate).replace(/\s/g, '')));
+      const defaultHit = term && lang === 'zh' && !hasZhHit(value) && hasZhHit(base);
+      parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position, hit?.terms)}</details>` : ''}</div>`);
     }
     if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
     return `<article class="tipitaka-row${isHitRow ? ' tipitaka-search-target' : ''}" data-t-row="${row.id}" data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details></article>`;
@@ -420,7 +432,7 @@
     if (!value) return [];
     try {
       const result = await runSearch(value, language, { types: ['corpus'], workIds: [workId] });
-      return result.results.map(item => { const parts = locatorParts(item.locator); return { rowId: Number(parts[2]), positions: Array.isArray(item.positions) ? item.positions.map(Number).filter(Number.isFinite) : [], score: item.score }; });
+      return result.results.map(item => { const parts = locatorParts(item.locator); return { rowId: Number(parts[2]), positions: Array.isArray(item.positions) ? item.positions.map(Number).filter(Number.isFinite) : [], matchedTerms: Array.isArray(item.matched_terms) ? item.matched_terms : [], matchLevel: item.match_level, score: item.score }; });
     } catch { return []; }
   }
 
@@ -438,7 +450,7 @@
       if (renderId !== state.readerRequest) return;
       const work = loaded[1], params = query(), requestedRowId = Number(params.get('row') || 0);
       const positionParam = params.get('hl_pos');
-      const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null } : null;
+      const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', terms: (params.get('hl_terms') || '').split('|').filter(Boolean), position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null } : null;
       const hitRows = hit ? await searchHitsForReader(hit.query, hit.language, workId) : [];
       if (renderId !== state.readerRequest) return;
       if (hit) {
@@ -448,6 +460,7 @@
           if (fallback) { hit.rowId = Number(fallback.id); target = hitRows.find(item => Number(item.rowId) === hit.rowId); }
         }
         if (target?.positions?.length) hit.position = target.positions.includes(hit.position) ? hit.position : target.positions[0];
+        if (target?.matchedTerms?.length) hit.terms = target.matchedTerms;
       }
       const currentRowId = hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
@@ -470,6 +483,7 @@
     reader.currentIndex = idx;
     const params = new URLSearchParams({ row: String(rowId), hl: reader.hit.query, hl_lang: reader.hit.language });
     if (next.positions?.length) params.set('hl_pos', String(next.positions[0]));
+    if (next.matchedTerms?.length) params.set('hl_terms', next.matchedTerms.join('|'));
     params.set('hl_anchor', searchAnchorForRow(reader.work.rows[idx], reader.hit.language));
     history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}?${params}`);
     renderReader(reader.meta.id);
@@ -506,13 +520,17 @@
   async function ensureV4SearchManifest() { if (!state.searchV4Manifest) state.searchV4Manifest = await cachedJson('search-v4/manifest.json', SEARCH_CACHE_NAME); return state.searchV4Manifest; }
   function v4Types(options = {}) { return Array.isArray(options.types) && options.types.length ? options.types : ['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']; }
   async function runSearch(value, language, options = {}) {
-    value = String(value || '').trim();
+    const originalValue = String(value || '').trim();
+    value = language === 'zh' ? normalizeZh(originalValue) : originalValue;
     await ensureCatalog();
     const manifest = await ensureV4SearchManifest();
     const workIndexes = Array.isArray(options.workIds) ? options.workIds.map(id => manifest.work_ids.indexOf(id)).filter(index => index >= 0) : null;
     const dictionaryIndexes = Array.isArray(options.dictionaryTables) ? options.dictionaryTables.map(table => state.dictionaries.findIndex(item => item.table === table)).filter(index => index >= 0) : null;
     ensureWorkers();
-    if (state.searchWorker) return workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language, types: v4Types(options), workIndexes, dictionaryIndexes });
+    if (state.searchWorker) {
+      const result = await workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language, types: v4Types(options), workIndexes, dictionaryIndexes });
+      return { ...result, query: originalValue, index_query: value };
+    }
     throw new Error('当前浏览器不支持 V4 Worker 检索');
   }
   window.TipitakaV4 = window.TipitakaV4 || {};
@@ -554,14 +572,25 @@
     if (item.kind === 'dictionary') return `#/tipitaka/dictionaries?term=${encodeURIComponent(term)}&lang=${encodeURIComponent(language)}&dict=${encodeURIComponent(item.dictionary.table)}&entry=${encodeURIComponent(item.row.id)}`;
     const rowId = item.row?.id ?? item.rowId, params = new URLSearchParams({ row: String(rowId), hl: term, hl_lang: language, hl_anchor: searchAnchorForRow(item.row, language) });
     if (Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0]))) params.set('hl_pos', String(item.positions[0]));
+    if (Array.isArray(item.matched_terms) && item.matched_terms.length) params.set('hl_terms', item.matched_terms.join('|'));
     return `#/tipitaka/read/${encodeURIComponent(item.meta.id)}?${params}`;
   }
   function searchResultEvidence(item, language, term) {
     const text = searchItemText(item, language) || '', anchor = text.slice(0, 64);
     const position = Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0])) ? Number(item.positions[0]) : null;
+    const evidenceTerms = Array.isArray(item.matched_terms) && item.matched_terms.length ? item.matched_terms : [term];
     const normalizedTerm = language === 'zh' ? normalizeZh(term).replace(/\s/g, '') : language === 'pali' ? normalizePali(term) : normalizeEn(term);
     const normalizedText = language === 'zh' ? normalizeZh(text).replace(/\s/g, '') : language === 'pali' ? normalizePali(text) : normalizeEn(text);
-    const at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1, rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
+    let at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1;
+    if (at < 0) {
+      for (const candidate of evidenceTerms) {
+        const normalizedCandidate = language === 'zh' ? normalizeZh(candidate).replace(/\s/g, '') : language === 'pali' ? normalizePali(candidate) : normalizeEn(candidate);
+        if (!normalizedCandidate) continue;
+        at = normalizedText.indexOf(normalizedCandidate);
+        if (at >= 0) break;
+      }
+    }
+    const rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
     const start = Math.max(0, rawAt - 220), end = Math.min(text.length, rawAt + Math.max(term.length, 1) + 340);
     const isCorpus = item.kind === 'corpus';
     return {
@@ -569,7 +598,7 @@
       source: `V4 ${item.kind === 'dictionary' ? '词典' : item.kind === 'proper' || item.kind === 'user_dictionary' ? '术语' : '三藏'} · ${item.meta?.title || item.dictionary?.table || item.term?.pali || item.term?.dict_key || ''}`,
       heading: item.meta ? `${item.meta.path.join(' / ')}${item.row?.paranum ? ` · 段号 ${item.row.paranum}` : ''}` : item.dictionary?.description || '',
       path: item.meta?.path || [], text: text.slice(start, end), work_id: isCorpus ? item.meta.id : null, row_id: isCorpus ? Number(item.row.id) : null,
-      language, query: term, position, anchor, paranum: item.row?.paranum || null, _href: searchResultHref(item, language, term), _v4: true,
+      language, query: term, position, anchor, paranum: item.row?.paranum || null, matched_terms: item.matched_terms || [], match_level: item.match_level || null, _href: searchResultHref(item, language, term), _v4: true,
     };
   }
   window.TipitakaV4.evidence = (item, language, term) => searchResultEvidence(item, language, term);
@@ -579,9 +608,12 @@
     const pageItems = result.results.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
     return (await Promise.all(pageItems.map(resolveV4Locator))).filter(Boolean);
   }
+  function matchLevelLabel(level) { return level === 'exact' ? '精确短语命中' : level === 'core' ? '核心词命中' : '相关词命中'; }
   function searchResultHtml(item, language, term) {
     const text = searchItemText(item, language) || '', href = searchResultHref(item, language, term), label = item.kind === 'corpus' ? `${item.meta.title} · ${item.row.paranum || item.row.id}` : item.kind === 'dictionary' ? `${item.row.dict_key} · ${item.dictionary.table}` : item.kind === 'catalog' ? item.meta.path.concat(item.meta.title).join(' / ') : item.term.pali || item.term.dict_key;
-    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(label)}</strong><span class="tipitaka-note"> · ${esc(item.kind)}</span><br><span>${highlightHtml(chineseDisplay(text).slice(0, 360), term, language, true)}</span></a>`;
+    const level = item.match_level ? `<span class="tipitaka-note"> · ${matchLevelLabel(item.match_level)}</span>` : '';
+    const display = language === 'zh' ? chineseDisplay(text) : text;
+    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(label)}</strong><span class="tipitaka-note"> · ${esc(item.kind)}${level}</span><br><span>${highlightHtml(display.slice(0, 360), term, language, true, null, item.matched_terms)}</span></a>`;
   }
   function v4ScopeWorkIds() {
     const raw = query().get('scope'); if (!raw) return null;

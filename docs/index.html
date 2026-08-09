@@ -1543,6 +1543,10 @@ let searchV4TypeSelections = [];
 // already uses for its own search page, just returning data instead of
 // rendering it directly, so this one result set can feed both the results
 // list and the AI synthesis evidence picker. ---
+function v4AiEvidenceOnly(items) {
+  return Array.isArray(items) ? items.filter(item => item.match_level !== 'related') : [];
+}
+
 async function searchRunDhamma(q) {
   await ensureDhammaData();
   const qTrad = typeof toTraditional === 'function' ? toTraditional(q) : q;
@@ -1948,7 +1952,7 @@ function searchV4Evidence(v4Run, query) {
     seen.add(key);
     const evidence = window.TipitakaV4.evidence(item, item.language, query);
     const typeBonus = item.kind === 'corpus' ? 0.7 : item.kind === 'catalog' ? 0.25 : 0;
-    return { ...evidence, score: 2.1 + typeBonus + Math.min(Number(item.score) || 0, 4) / 10 };
+    return { ...evidence, matched_terms: item.matched_terms || [], match_level: item.match_level || null, score: 2.1 + typeBonus + Math.min(Number(item.score) || 0, 4) / 10 };
   }).filter(Boolean).sort((a, b) => (b.score || 0) - (a.score || 0));
 }
 
@@ -1966,6 +1970,7 @@ function searchV4EvidenceHref(evidence, fallbackQuery) {
     hl_lang: evidence.language || 'zh',
     hl_anchor: evidence.anchor || String(evidence.text || '').slice(0, 64),
   });
+  if (Array.isArray(evidence.matched_terms) && evidence.matched_terms.length) params.set('hl_terms', evidence.matched_terms.join('|'));
   if (evidence.position !== null && evidence.position !== undefined && Number.isFinite(Number(evidence.position))) {
     params.set('hl_pos', String(evidence.position));
   }
@@ -1990,7 +1995,7 @@ function searchSelectEvidence(run) {
   };
   if (run.dhamma) addPool('dhamma', searchDhammaEvidence(run.dhamma), 8, 6);
   if (run.eb) addPool('eb', searchEbEvidence(run.eb, run.query), 8, 6);
-  if (run.v4) addPool('v4', searchV4Evidence(run.v4, run.query), 16, 6);
+  if (run.v4) addPool('v4', v4AiEvidenceOnly(searchV4Evidence(run.v4, run.query)), 16, 6);
 
   const scored = [];
   for (const d of run.docs) {
@@ -2322,19 +2327,21 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         const sectionId = `v4-search-${language}-${mySeq}`;
         results.insertAdjacentHTML('beforeend', wrapScope('v4', `<div class="dhamma-layer-section open" id="${sectionId}"><div class="dhamma-layer-section-head"><span>V4 全内容 · ${labels[language]}<span class="meta" style="margin-left:8px">点击进入对应作品、词典或术语并定位高亮</span></span><span class="count">${result.total.toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list" data-v4-list></ul><div class="tipitaka-page" data-v4-page></div></div></div>`));
         const section = document.getElementById(sectionId), list = section.querySelector('[data-v4-list]'), pageBox = section.querySelector('[data-v4-page]');
-        const findHit = (text, language) => {
-          if (language === 'zh') { const at = searchNormalize(text).indexOf(searchNormalize(q).replace(/\s/g, '')); return [Math.max(0, at), q.replace(/\s/g, '').length]; }
-          if (language === 'pali') { const needle = q.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); const match = [...String(text).matchAll(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/g)].find(m => m[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith(needle)); return [match?.index || 0, match?.[0]?.length || q.length]; }
-          return [Math.max(0, String(text).toLowerCase().indexOf(q.toLowerCase())), q.length];
+        const findHit = (text, language, item) => {
+          const snippetTerm = item?.match_level === 'exact' ? q : (item?.matched_terms?.[0] || q);
+          if (language === 'zh') { const at = searchNormalize(text).indexOf(searchNormalize(snippetTerm).replace(/\s/g, '')); return [Math.max(0, at), snippetTerm.replace(/\s/g, '').length]; }
+          if (language === 'pali') { const needle = snippetTerm.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); const match = [...String(text).matchAll(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/g)].find(m => m[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith(needle)); return [match?.index || 0, match?.[0]?.length || snippetTerm.length]; }
+          return [Math.max(0, String(text).toLowerCase().indexOf(snippetTerm.toLowerCase())), snippetTerm.length];
         };
         const draw = async page => {
           const items = await window.TipitakaV4.resolve(result, page);
           addCandidates(items, language);
           list.insertAdjacentHTML('beforeend', items.map(item => {
             const evidence = window.TipitakaV4.evidence(item, language, q), text = evidence?.text || '';
-            const [off, len] = findHit(text, language), href = window.TipitakaV4.resultHref(item, language, q);
+            const [off, len] = findHit(text, language, item), href = window.TipitakaV4.resultHref(item, language, q);
             const label = item.kind === 'corpus' ? `${item.meta.title} · ${item.row.paranum || item.row.id}` : item.kind === 'dictionary' ? `${item.row.dict_key} · ${item.dictionary.table}` : item.kind === 'catalog' ? item.meta.path.concat(item.meta.title).join(' / ') : item.term.pali || item.term.dict_key;
-            return `<li><a href="${href}"><span class="title">${esc(label)} <small>${esc(item.kind || '')}</small></span><p class="snippet">${searchSnippetHtml(text, off, len)}</p></a></li>`;
+            const level = item.match_level === 'exact' ? '精确短语命中' : item.match_level === 'core' ? '核心词命中' : item.match_level === 'related' ? '相关词命中' : '';
+            return `<li><a href="${href}"><span class="title">${esc(label)} <small>${esc(item.kind || '')}${level ? ` · ${level}` : ''}</small></span><p class="snippet">${searchSnippetHtml(text, off, len)}</p></a></li>`;
           }).join(''));
           const next = (page + 1) * 40 < result.total;
           pageBox.innerHTML = `${page > 0 ? '<button data-v4-prev>上一页</button>' : ''}${next ? '<button data-v4-next>加载下一页</button>' : ''}<span class="meta">第 ${page + 1} 页 · 每页 40 条 · 总数完整</span>`;
@@ -9938,7 +9945,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260809.2"></script>
+<script src="tipitaka-reader.js?v=20260809.3"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
