@@ -11,7 +11,7 @@
   const EST_ROW_HEIGHT = 224;
   const PAGE_SIZE = 40;
   const state = {
-    works: null, jumps: null, dictionaries: null, searchManifest: null, searchV4Manifest: null, dictManifest: null,
+    works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
     dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
   };
@@ -49,7 +49,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v3\/|search-v4\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; await cache.delete(new Request(url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -438,7 +438,6 @@
   async function draftTranslation(meta, row) { if (!row.pali_text || typeof mitraTranslate !== 'function') { alert('该行没有巴利原文，或翻译服务尚不可用。'); return; } try { const draft = await mitraTranslate(strip(row.pali_text), `Tipiṭaka Reader V4 · ${meta.title}`); if (!confirm(`Dharmamitra 草稿：\n\n${draft}\n\n确认写入公开修订历史？`)) return; const base = defaultText(row, 'zh'); const response = await fetch(`${API}/works/${encodeURIComponent(meta.id)}/rows/${row.id}/zh`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text: draft, default_text: base, reason: 'Dharmamitra 草稿经人工确认', source: 'dharmamitra' }) }); if (!response.ok) throw new Error((await response.json().catch(() => ({}))).detail || '保存失败'); state.overrides.delete(meta.id); renderReader(meta.id); } catch (error) { alert(error.message); } }
   async function showHistory(workId, rowId) { const language = prompt('查看哪个语种历史？输入 zh 或 en', 'zh'); if (!language) return; const rows = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}/history`).then(r => r.ok ? r.json() : []); if (!rows.length) { alert('尚无历史记录'); return; } const list = rows.map((item, index) => `${index + 1}. ${new Date(item.created_at).toLocaleString()}\n${item.text}\n理由：${item.reason || '—'}`).join('\n\n'); const choice = prompt(`${list}\n\n输入版本编号即可恢复；取消仅查看。`, ''); if (!choice) return; const revision = rows[Number(choice) - 1]; if (!revision) { alert('无效版本编号'); return; } if (!confirm(`恢复为版本 ${choice}？这会新增一条可追溯的修订。`)) return; const saved = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text: revision.text, default_text: '', reason: `从历史版本 ${choice} 恢复`, source: 'restore' }) }); if (!saved.ok) { alert((await saved.json().catch(() => ({}))).detail || '恢复失败，请先登录'); return; } state.overrides.delete(workId); renderReader(workId); }
 
-  async function ensureSearchManifest() { if (!state.searchManifest) state.searchManifest = await cachedJson('search-v3/manifest.json', SEARCH_CACHE_NAME); return state.searchManifest; }
   async function ensureV4SearchManifest() { if (!state.searchV4Manifest) state.searchV4Manifest = await cachedJson('search-v4/manifest.json', SEARCH_CACHE_NAME); return state.searchV4Manifest; }
   function v4Types(options = {}) { return Array.isArray(options.types) && options.types.length ? options.types : ['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']; }
   async function runSearch(value, language, options = {}) {
