@@ -5,13 +5,13 @@
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
   const API = `${API_BASE}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
-  const SEARCH_CACHE_NAME = 'tipitaka-search-v3';
+  const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
   const PAGE_SIZE = 40;
   const state = {
-    works: null, jumps: null, dictionaries: null, searchManifest: null, dictManifest: null,
+    works: null, jumps: null, dictionaries: null, searchManifest: null, searchV4Manifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
     dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
   };
@@ -49,7 +49,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v3\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v3\/|search-v4\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; await cache.delete(new Request(url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -88,8 +88,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.15', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.15', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.18', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.18', document.baseURI));
     }
   }
 
@@ -127,16 +127,29 @@
   const defaultText = (row, lang) => lang === 'zh' ? (row.chinese_simplified || row.chinese_raw || '') : (row.english_translation || '');
   const displayed = (row, overlays, lang) => overlays.get(`${row.id}:${lang}`)?.current_text || defaultText(row, lang);
   const chineseDisplay = value => settings().traditional && typeof toTraditional === 'function' ? toTraditional(value) : value;
+  const dictionaryChineseDisplay = value => settings().traditional && typeof toTraditional === 'function' ? toTraditional(value) : typeof toSimplified === 'function' ? toSimplified(value) : value;
+  const dictionaryText = value => dictionaryChineseDisplay(String(value || '').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' '));
+  function dictionaryPreferences() {
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem('tipitaka-dictionary-preferences') || '{}') || {}; } catch {}
+    const order = [...new Set([...(saved.order || []), ...(state.dictionaries || []).map(item => item.table)])];
+    return { order, disabled: new Set(saved.disabled || []) };
+  }
+  function saveDictionaryPreferences(preferences) { localStorage.setItem('tipitaka-dictionary-preferences', JSON.stringify({ order: preferences.order, disabled: [...preferences.disabled] })); }
+  function orderedDictionaries(list = state.dictionaries || []) { const prefs = dictionaryPreferences(), rank = new Map(prefs.order.map((value, index) => [value, index])); return [...list].sort((a, b) => (rank.get(a.table) ?? 9999) - (rank.get(b.table) ?? 9999)); }
 
-  function workTree(works) {
+  function workTree(works, openPath = '') {
     const root = {};
     for (const work of works) {
       let node = root;
       for (const part of work.path) node = node[part] ||= {};
       (node.__works ||= []).push(work);
     }
-    const render = node => Object.entries(node).filter(([key]) => key !== '__works').map(([key, child]) =>
-      `<details open><summary>${esc(key)}</summary>${(child.__works || []).map(w => `<a class="tipitaka-work-link" href="#/tipitaka/read/${encodeURIComponent(w.id)}">${esc(w.title)} <small>${w.row_count.toLocaleString()} 行</small></a>`).join('')}${render(child)}</details>`).join('');
+    const count = node => (node.__works || []).length + Object.entries(node).filter(([key]) => key !== '__works').reduce((sum, [, child]) => sum + count(child), 0);
+    const render = (node, depth = 0, parentPath = []) => Object.entries(node).filter(([key]) => key !== '__works').map(([key, child]) => {
+      const path = [...parentPath, key], pathText = path.join(' / '), opened = openPath && (openPath === pathText || openPath.startsWith(`${pathText} / `));
+      return `<details class="tipitaka-catalog-node" data-depth="${depth}" data-catalog-path="${esc(pathText)}" ${opened ? 'open' : ''}><summary><span>${esc(key)}</span><small>${count(child).toLocaleString()} 部</small></summary>${(child.__works || []).map(w => `<a class="tipitaka-work-link" data-catalog-label="${esc(`${pathText} / ${w.title}`)}" href="#/tipitaka/read/${encodeURIComponent(w.id)}">${esc(w.title)} <small>${w.row_count.toLocaleString()} 行</small></a>`).join('')}${render(child, depth + 1, path)}</details>`;
+    });
     return render(root);
   }
   function injectCss() {
@@ -150,6 +163,7 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
     style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}';
+    style.textContent += `.tipitaka-layout{grid-template-columns:minmax(270px,29%) 1fr;gap:22px}.tipitaka-catalog{max-height:72vh;border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:12px}.tipitaka-catalog details[data-depth="2"]{margin-left:14px}.tipitaka-catalog summary{display:flex;justify-content:space-between;gap:8px;cursor:pointer;padding:8px 7px;border-radius:8px;font-weight:650}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{padding:7px 9px 7px 24px;border-radius:7px;line-height:1.45}.tipitaka-work-link small{white-space:nowrap}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}`;
     document.head.appendChild(style);
   }
 
@@ -201,11 +215,21 @@
     return out + esc(text.slice(cursor));
   }
 
+  function paliTokensHtml(value) {
+    const text = strip(value), out = []; let cursor = 0;
+    for (const match of text.matchAll(words)) {
+      out.push(esc(text.slice(cursor, match.index)));
+      out.push(`<button type="button" class="tipitaka-pali-token" data-pali-token="${esc(match[0])}" aria-label="查词 ${esc(match[0])}">${esc(match[0])}</button>`);
+      cursor = match.index + match[0].length;
+    }
+    return out.join('') + esc(text.slice(cursor));
+  }
+
   function rowHtml(row, overlays, hit) {
     const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position);
-    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? show('pali', strip(row.pali_text)) : esc(strip(row.pali_text))}</div>`);
+    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? show('pali', strip(row.pali_text)) : paliTokensHtml(row.pali_text)}</div>`);
     if (s.zh && displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
       const effective = isHitRow && lang === 'zh' ? show('zh', value) : esc(chineseDisplay(value));
@@ -328,8 +352,8 @@
   async function searchHitsForReader(value, language, workId) {
     if (!value) return [];
     try {
-      const result = await runSearch(value, language), manifest = await ensureSearchManifest(), workNo = manifest.work_ids.indexOf(workId);
-      return result.results.filter(item => (Number(item.locator) >>> 20) === workNo).map(item => ({ rowId: Number(item.locator) & ((1 << 20) - 1), positions: Array.isArray(item.positions) ? item.positions.map(Number).filter(Number.isFinite) : [], score: item.score }));
+      const result = await runSearch(value, language, { types: ['corpus'], workIds: [workId] });
+      return result.results.map(item => { const parts = locatorParts(item.locator); return { rowId: Number(parts[2]), positions: Array.isArray(item.positions) ? item.positions.map(Number).filter(Number.isFinite) : [], score: item.score }; });
     } catch { return []; }
   }
 
@@ -385,6 +409,10 @@
   }
   function bindReader() {
     app.onclick = async event => {
+      const token = event.target.closest('[data-pali-token]');
+      if (token) { await showDictionary(token.dataset.paliToken); return; }
+      const paliEl = event.target.closest('.tipitaka-pali');
+      if (paliEl) { const selected = window.getSelection()?.toString().trim(); if (selected) { await showDictionary(selected); return; } }
       const button = event.target.closest('button,[data-t-action]'); if (!button) return;
       const reader = state.reader, action = button.dataset.tAction;
       if (!reader) return;
@@ -400,7 +428,6 @@
       if (action === 'history') await showHistory(reader.meta.id, row.id);
     };
     app.onchange = event => { const toggle = event.target.dataset.tToggle; if (toggle) { settings()[toggle] = event.target.checked; saveSettings(); renderReader(state.reader.meta.id); } };
-    app.querySelectorAll('.tipitaka-pali').forEach(el => el.onclick = () => showDictionary(window.getSelection()?.toString().trim() || el.dataset.tPali));
   }
   function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => pane.scrollTop += settings().speed / 10, 50); }
   async function saveBookmark(meta, row) { try { const result = await fetch(`${API}/bookmarks`, { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ work_id: meta.id, row_id: row.id, label: `${meta.title} · ${row.paranum || row.id}` }) }); if (!result.ok) throw new Error('请先登录后收藏'); alert('已收藏'); } catch (e) { alert(e.message); } }
@@ -410,97 +437,163 @@
   async function showHistory(workId, rowId) { const language = prompt('查看哪个语种历史？输入 zh 或 en', 'zh'); if (!language) return; const rows = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}/history`).then(r => r.ok ? r.json() : []); if (!rows.length) { alert('尚无历史记录'); return; } const list = rows.map((item, index) => `${index + 1}. ${new Date(item.created_at).toLocaleString()}\n${item.text}\n理由：${item.reason || '—'}`).join('\n\n'); const choice = prompt(`${list}\n\n输入版本编号即可恢复；取消仅查看。`, ''); if (!choice) return; const revision = rows[Number(choice) - 1]; if (!revision) { alert('无效版本编号'); return; } if (!confirm(`恢复为版本 ${choice}？这会新增一条可追溯的修订。`)) return; const saved = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text: revision.text, default_text: '', reason: `从历史版本 ${choice} 恢复`, source: 'restore' }) }); if (!saved.ok) { alert((await saved.json().catch(() => ({}))).detail || '恢复失败，请先登录'); return; } state.overrides.delete(workId); renderReader(workId); }
 
   async function ensureSearchManifest() { if (!state.searchManifest) state.searchManifest = await cachedJson('search-v3/manifest.json', SEARCH_CACHE_NAME); return state.searchManifest; }
-  async function runSearch(value, language) {
+  async function ensureV4SearchManifest() { if (!state.searchV4Manifest) state.searchV4Manifest = await cachedJson('search-v4/manifest.json', SEARCH_CACHE_NAME); return state.searchV4Manifest; }
+  function v4Types(options = {}) { return Array.isArray(options.types) && options.types.length ? options.types : ['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']; }
+  async function runSearch(value, language, options = {}) {
     value = String(value || '').trim();
+    await ensureCatalog();
+    const manifest = await ensureV4SearchManifest();
+    const workIndexes = Array.isArray(options.workIds) ? options.workIds.map(id => manifest.work_ids.indexOf(id)).filter(index => index >= 0) : null;
+    const dictionaryIndexes = Array.isArray(options.dictionaryTables) ? options.dictionaryTables.map(table => state.dictionaries.findIndex(item => item.table === table)).filter(index => index >= 0) : null;
     ensureWorkers();
-    if (state.searchWorker) return workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language });
-    const manifest = await ensureSearchManifest();
-    const [catalog] = await Promise.all([ensureCatalog(), ensureSearchManifest()]);
-    const out = [];
-    for (const work of catalog) { const data = await cachedJson(work.data_file); for (const row of data.rows) { const text = language === 'zh' ? row.chinese_simplified || row.chinese_raw || '' : language === 'en' ? row.english_translation || '' : strip(row.pali_text); const needle = language === 'zh' ? normalizeZh(value) : language === 'pali' ? normalizePali(value) : value.toLowerCase(); if (needle && (language === 'zh' ? normalizeZh(text).includes(needle) : language === 'pali' ? normalizePali(text).includes(needle) : text.toLowerCase().includes(needle))) out.push({ locator: (manifest.work_ids.indexOf(work.id) << 20) | row.id, positions: [], score: 1 }); } }
-    return { total: out.length, results: out, query: value, language };
+    if (state.searchWorker) return workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language, types: v4Types(options), workIndexes, dictionaryIndexes });
+    throw new Error('当前浏览器不支持 V4 Worker 检索');
   }
   window.TipitakaV4 = window.TipitakaV4 || {};
-  window.TipitakaV4.search = (value, language = 'zh') => runSearch(value, language);
+  window.TipitakaV4.search = (value, language = 'zh', options = {}) => runSearch(value, language, options);
+  window.TipitakaV4.catalog = async () => { await ensureCatalog(); return state.works; };
+  window.TipitakaV4.workIdsForScopes = async scopes => { await ensureCatalog(); const selected = new Set(scopes || []); return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id); };
   window.TipitakaV4.resolve = (result, page = 0) => resolveSearchPage(result, page);
+  function locatorParts(locator) { return String(locator || '').split(':'); }
+  async function resolveV4Locator(item) {
+    const [type, a, b, c] = locatorParts(item.locator);
+    if (type === 'row') {
+      const meta = state.works[Number(a)], work = await workById(meta.id), row = work[1].rows.find(candidate => Number(candidate.id) === Number(b));
+      return row ? { ...item, kind: 'corpus', meta, work: work[1], row, score: item.score } : null;
+    }
+    if (type === 'catalog') return { ...item, kind: 'catalog', meta: state.works[Number(a)], score: item.score };
+    if (type === 'proper') { const items = await cachedJson('terminology/proper-nouns.json'); return items[Number(a)] ? { ...item, kind: 'proper', term: items[Number(a)], score: item.score } : null; }
+    if (type === 'user') { const items = await cachedJson('terminology/user-dictionary.json'); return items[Number(a)] ? { ...item, kind: 'user_dictionary', term: items[Number(a)], score: item.score } : null; }
+    if (type === 'dict') {
+      const dictionary = state.dictionaries[Number(a)], shard = dictionary?.shards?.[Number(b)]; if (!shard) return null;
+      const data = await cachedJson(shard.file), row = data.rows.find(candidate => Number(candidate.id) === Number(c));
+      return row ? { ...item, kind: 'dictionary', dictionary, row, locator: item.locator, score: item.score } : null;
+    }
+    return null;
+  }
+  function searchItemText(item, language) {
+    if (item.kind === 'corpus') return searchTextForRow(item.row, language);
+    if (item.kind === 'catalog') return item.meta.path.concat(item.meta.title).join(' · ');
+    if (item.kind === 'proper') return language === 'pali' ? item.term.pali : language === 'en' ? item.term.english || item.term.english_comment : [item.term.preferred_chinese, item.term.new_chinese, item.term.old_chinese, item.term.chinese_comment].filter(Boolean).join(' · ');
+    if (item.kind === 'user_dictionary') return language === 'pali' ? item.term.dict_key : item.term.dict_content;
+    return language === 'pali' ? item.row.dict_key : item.row.dict_content;
+  }
   function searchResultHref(item, language, term) {
+    if (item.kind === 'catalog') return `#/tipitaka?open=${encodeURIComponent(item.meta.path.join(' / '))}`;
+    if (item.kind === 'proper') return `#/tipitaka/dictionaries?tab=proper&term=${encodeURIComponent(item.term.pali || '')}`;
+    if (item.kind === 'user_dictionary') return `#/tipitaka/dictionaries?tab=proper&term=${encodeURIComponent(item.term.dict_key || '')}`;
+    if (item.kind === 'dictionary') return `#/tipitaka/dictionaries?term=${encodeURIComponent(term)}&lang=${encodeURIComponent(language)}&dict=${encodeURIComponent(item.dictionary.table)}&entry=${encodeURIComponent(item.row.id)}`;
     const rowId = item.row?.id ?? item.rowId, params = new URLSearchParams({ row: String(rowId), hl: term, hl_lang: language, hl_anchor: searchAnchorForRow(item.row, language) });
     if (Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0]))) params.set('hl_pos', String(item.positions[0]));
     return `#/tipitaka/read/${encodeURIComponent(item.meta.id)}?${params}`;
   }
   function searchResultEvidence(item, language, term) {
-    const text = searchTextForRow(item.row, language);
-    const anchor = searchAnchorForRow(item.row, language);
+    const text = searchItemText(item, language) || '', anchor = text.slice(0, 64);
     const position = Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0])) ? Number(item.positions[0]) : null;
     const normalizedTerm = language === 'zh' ? normalizeZh(term).replace(/\s/g, '') : language === 'pali' ? normalizePali(term) : normalizeEn(term);
     const normalizedText = language === 'zh' ? normalizeZh(text).replace(/\s/g, '') : language === 'pali' ? normalizePali(text) : normalizeEn(text);
-    const at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1;
-    const rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
+    const at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1, rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
     const start = Math.max(0, rawAt - 220), end = Math.min(text.length, rawAt + Math.max(term.length, 1) + 340);
+    const isCorpus = item.kind === 'corpus';
     return {
-      kind: 'v4', source: `V4 三藏 · ${item.meta.title}`, heading: `${item.meta.path.join(' / ')}${item.row.paranum ? ` · 段号 ${item.row.paranum}` : ''}`,
-      text: text.slice(start, end), work_id: item.meta.id, row_id: Number(item.row.id), language, query: term,
-      position, anchor, paranum: item.row.paranum || String(item.row.id), _href: searchResultHref(item, language, term), _v4: true,
+      kind: 'v4', resource_type: item.kind, resource_locator: item.locator,
+      source: `V4 ${item.kind === 'dictionary' ? '词典' : item.kind === 'proper' || item.kind === 'user_dictionary' ? '术语' : '三藏'} · ${item.meta?.title || item.dictionary?.table || item.term?.pali || item.term?.dict_key || ''}`,
+      heading: item.meta ? `${item.meta.path.join(' / ')}${item.row?.paranum ? ` · 段号 ${item.row.paranum}` : ''}` : item.dictionary?.description || '',
+      path: item.meta?.path || [], text: text.slice(start, end), work_id: isCorpus ? item.meta.id : null, row_id: isCorpus ? Number(item.row.id) : null,
+      language, query: term, position, anchor, paranum: item.row?.paranum || null, _href: searchResultHref(item, language, term), _v4: true,
     };
   }
   window.TipitakaV4.evidence = (item, language, term) => searchResultEvidence(item, language, term);
   window.TipitakaV4.resultHref = (item, language, term) => searchResultHref(item, language, term);
 
   async function resolveSearchPage(result, page) {
-    const manifest = await ensureSearchManifest(), pageItems = result.results.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE), byWork = new Map();
-    for (const item of pageItems) { const workNo = Number(item.locator) >>> 20, rowId = Number(item.locator) & ((1 << 20) - 1), workId = manifest.work_ids[workNo]; if (!byWork.has(workId)) byWork.set(workId, []); byWork.get(workId).push({ ...item, rowId }); }
-    const resolved = [];
-    for (const [workId, items] of byWork) { const [meta, work] = await workById(workId); for (const item of items) { const row = work.rows.find(candidate => Number(candidate.id) === Number(item.rowId)); if (row) resolved.push({ ...item, meta, work, row, score: item.score }); } }
-    return resolved;
+    const pageItems = result.results.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+    return (await Promise.all(pageItems.map(resolveV4Locator))).filter(Boolean);
   }
   function searchResultHtml(item, language, term) {
-    const text = language === 'zh' ? chineseDisplay(item.row.chinese_simplified || item.row.chinese_raw || '') : language === 'en' ? item.row.english_translation || '' : strip(item.row.pali_text);
-    const href = searchResultHref(item, language, term);
-    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(item.meta.title)}</strong> · ${esc(item.row.paranum || item.row.id)}<br><span>${highlightHtml(text.slice(0, 280), term, language, true)}</span></a>`;
+    const text = searchItemText(item, language) || '', href = searchResultHref(item, language, term), label = item.kind === 'corpus' ? `${item.meta.title} · ${item.row.paranum || item.row.id}` : item.kind === 'dictionary' ? `${item.row.dict_key} · ${item.dictionary.table}` : item.kind === 'catalog' ? item.meta.path.concat(item.meta.title).join(' / ') : item.term.pali || item.term.dict_key;
+    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(label)}</strong><span class="tipitaka-note"> · ${esc(item.kind)}</span><br><span>${highlightHtml(chineseDisplay(text).slice(0, 360), term, language, true)}</span></a>`;
+  }
+  function v4ScopeWorkIds() {
+    const raw = query().get('scope'); if (!raw) return null;
+    const selected = new Set(raw.split('|').filter(Boolean)); if (!selected.size) return null;
+    return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id);
   }
   async function renderSearch() {
-    injectCss(); app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 三语全文检索</h2><div class="cat-en">Complete position-aware search · Pāli · 简体中文 · English</div></div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
+    injectCss(); await ensureCatalog();
+    const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']);
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-toolbar"><input id="tipitaka-scope-search" class="tipitaka-catalog-search" placeholder="筛选目录范围（可多选）"><div id="tipitaka-scope-picker" class="tipitaka-catalog"></div></div><div class="search-scope-row" id="tipitaka-type-filter"><span class="search-scope-label">内容：</span>${[['corpus','正文'],['catalog','目录'],['proper','专名'],['user_dictionary','用户词典'],['dictionary','词典']].map(([value,label]) => `<label class="search-scope-opt"><input type="checkbox" data-v4-type="${value}" ${selectedTypes.has(value) ? 'checked' : ''}>${label}</label>`).join('')}</div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
+    const picker = document.getElementById('tipitaka-scope-picker'), scopeSet = new Set(selected.split('|').filter(Boolean));
+    picker.innerHTML = `<p class="tipitaka-catalog-help">未选择即搜索全部；选择目录或作品后可继续添加范围。</p>${workTree(state.works, '')}`;
+    picker.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const path = node.dataset.catalogPath; const summary = node.querySelector(':scope > summary'); summary.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(path)}" ${scopeSet.has(path) ? 'checked' : ''}>`); });
+    picker.querySelectorAll('.tipitaka-work-link').forEach(link => { const id = decodeURIComponent(link.getAttribute('href').split('/').pop()); link.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(id)}" ${scopeSet.has(id) ? 'checked' : ''}>`); });
+    picker.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const path = node.dataset.catalogPath; node.open = [...scopeSet].some(scope => path === scope || scope.startsWith(`${path} / `)); });
+    const syncScope = () => { const values = [...picker.querySelectorAll('[data-scope-value]:checked')].map(input => input.dataset.scopeValue); const types = [...document.querySelectorAll('[data-v4-type]:checked')].map(input => input.dataset.v4Type); const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (values.length) params.set('scope', values.join('|')); if (types.length && types.length < 5) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; };
+    picker.querySelectorAll('[data-scope-value]').forEach(input => { input.addEventListener('click', event => { event.stopPropagation(); event.preventDefault(); input.checked = !input.checked; syncScope(); }); });
+    document.getElementById('tipitaka-scope-search').oninput = event => { const needle = event.target.value.trim().toLowerCase(); picker.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); };
     const form = document.getElementById('tipitaka-search-form'), target = document.getElementById('tipitaka-search-results'), status = document.getElementById('tipitaka-search-status');
+    const initialQuery = query().get('q'); if (initialQuery) document.getElementById('tipitaka-search-input').value = initialQuery;
     const draw = async (result, page) => { state.lastSearch = { result, page }; status.textContent = `完整命中 ${result.total.toLocaleString()} 处 · 第 ${page + 1} 页`; const items = await resolveSearchPage(result, page); target.innerHTML = `${items.map(item => searchResultHtml(item, result.language, result.query)).join('') || '<p>未找到结果。</p>'}<div class="tipitaka-page">${page > 0 ? '<button data-t-search-page="prev">← 上一页</button>' : ''}${(page + 1) * PAGE_SIZE < result.total ? '<button data-t-search-page="next">下一页 →</button>' : ''}<span class="tipitaka-note">每页加载 40 条；总数不截断。</span></div>`; target.querySelectorAll('[data-t-search-page]').forEach(button => button.onclick = () => draw(result, page + (button.dataset.tSearchPage === 'next' ? 1 : -1))); };
-    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-search-input').value.trim(), language = document.getElementById('tipitaka-search-lang').value; status.textContent = '检索分片中…'; target.textContent = ''; try { await draw(await runSearch(value, language), 0); } catch (error) { status.textContent = error.message; } };
+    document.querySelectorAll('[data-v4-type]').forEach(input => input.addEventListener('change', syncScope));
+    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-search-input').value.trim(), language = document.getElementById('tipitaka-search-lang').value, types = [...document.querySelectorAll('[data-v4-type]:checked')].map(input => input.dataset.v4Type); status.textContent = '检索分片中…'; target.textContent = ''; try { await draw(await runSearch(value, language, { workIds: v4ScopeWorkIds(), types }), 0); } catch (error) { status.textContent = error.message; } };
+    if (initialQuery) form.requestSubmit();
   }
 
   async function ensureDictionaryManifest() { if (!state.dictManifest) state.dictManifest = await cachedJson('dictionary-search-v1/manifest.json', SEARCH_CACHE_NAME); return state.dictManifest; }
   async function dictShard(language, bucket) { return cachedJson(`dictionary-search-v1/${language}/shard_${bucket}.json.gz`, SEARCH_CACHE_NAME); }
   function dictionaryTerms(value, language) { if (language === 'zh') { const compact = value.replace(/\s/g, ''); if (!/[\u3400-\u9fff]/.test(compact) || compact.length < 2) return []; return [...new Set(Array.from({ length: Math.max(0, compact.length - 1) }, (_, i) => compact.slice(i, i + 2)))]; } return [...value.matchAll(dictWords)].map(m => language === 'pali' ? normalizePali(m[0]) : m[0].toLowerCase()).filter(Boolean); }
   async function dictionarySearch(value, language, source = '') {
-    const manifest = await ensureDictionaryManifest(), terms = dictionaryTerms(value, language); if (!terms.length) return { total: 0, rows: [], query: value, language };
-    let candidates = null;
-    for (const term of terms) {
-      const bucket = language === 'pali' ? (term.replace(/[^a-z0-9]/g, '_').slice(0, 2) || '__').padEnd(2, '_') : String(await (async key => { const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(key)); return new DataView(bytes).getUint32(0) % 256; })(term));
-      const shard = await dictShard(language, bucket), postings = [];
-      for (const [key, locators] of Object.entries(shard)) if (key === term || (language === 'pali' && key.startsWith(term))) postings.push(...locators);
-      const set = new Set(postings.map(item => language === 'pali' ? item : item[0])); candidates = candidates === null ? set : new Set([...candidates].filter(item => set.has(item))); if (!candidates.size) break;
-    }
-    const rows = [];
-    for (const locator of candidates || []) {
-      const parts = String(locator).split(':'), dictNo = Number(parts[0]), shardNo = Number(parts[1]), id = Number(parts[2]);
-      const dictionary = manifest.dictionaries[dictNo]; if (!dictionary || (source && dictionary.table !== source)) continue;
-      const shard = dictionary.shards[shardNo]; if (!shard) continue;
-      try { const data = await cachedJson(shard.file); const row = data.rows.find(item => Number(item.id) === id); if (!row) continue; const text = language === 'pali' ? normalizePali(row.dict_key || '') : language === 'zh' ? normalizeZh(row.dict_content || '') : normalizeEn(row.dict_content || ''); const needle = language === 'pali' ? normalizePali(value) : language === 'zh' ? normalizeZh(value).replace(/\s/g, '') : normalizeEn(value); if (!text.includes(needle)) continue; rows.push({ dictionary, row, locator }); } catch {}
-    }
-    rows.sort((a, b) => a.dictionary.table.localeCompare(b.dictionary.table) || String(a.row.dict_key).localeCompare(String(b.row.dict_key)) || Number(a.row.id) - Number(b.row.id));
-    return { total: rows.length, rows, query: value, language };
+    const result = await runSearch(value, language, { types: ['dictionary'], dictionaryTables: source ? [source] : null });
+    return { total: result.total, result, rows: null, query: value, language, v4: true };
   }
-  function dictionaryEntryHtml(item, result) { const text = item.row.dict_content || ''; return `<article class="tipitaka-dict-entry" id="tipitaka-dict-${esc(item.row.id)}"><h4>${esc(item.row.dict_key)} <span class="tipitaka-note">${esc(item.dictionary.table)} · ${esc(item.dictionary.description)}</span></h4><div>${highlightHtml(text, result.query, result.language === 'pali' ? 'pali' : result.language, true)}</div></article>`; }
+  function dictionaryEntryHtml(item, result) { const text = dictionaryText(item.row.dict_content || ''); return `<article class="tipitaka-dict-entry" id="tipitaka-dict-${esc(item.locator || item.row.id)}"><h4>${esc(item.row.dict_key)} <span class="tipitaka-note">${esc(item.dictionary.table)} · ${esc(item.dictionary.description)}</span></h4><div>${highlightHtml(text, result.query, result.language === 'pali' ? 'pali' : result.language, true)}</div></article>`; }
   async function showDictionary(value) {
-    const word = normalizePali((String(value).match(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/) || [''])[0]); if (!word) return;
-    try { const result = await dictionarySearch(word, 'pali'); const panel = document.createElement('dialog'); panel.innerHTML = `<button style="float:right">×</button><h3>${esc(word)} · 词典</h3>${result.rows.slice(0, 40).map(item => dictionaryEntryHtml(item, result)).join('') || '<p>未找到词条。</p>'}`; panel.querySelector('button').onclick = () => panel.close(); document.body.appendChild(panel); panel.showModal(); panel.addEventListener('close', () => panel.remove()); } catch (error) { alert(error.message); }
+    const selected = String(value || '').trim(), word = normalizePali((selected.match(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḌṇḶ]+/i) || [''])[0]); if (!word) return;
+    try {
+      const result = await dictionarySearch(selected.includes(' ') ? selected : word, 'pali');
+      const prefs = dictionaryPreferences(), rank = new Map(prefs.order.map((table, index) => [table, index]));
+      const items = (result.v4 ? await resolveSearchPage(result.result, 0) : result.rows.slice(0, PAGE_SIZE)).filter(item => !prefs.disabled.has(item.dictionary.table)).sort((a, b) => (rank.get(a.dictionary.table) ?? 9999) - (rank.get(b.dictionary.table) ?? 9999));
+      const panel = document.createElement('dialog'); panel.innerHTML = `<button style="float:right">×</button><h3>${esc(selected)} · 词典</h3>${items.map(item => dictionaryEntryHtml(item, { query: selected, language: 'pali' })).join('') || '<p>未找到词条。</p>'}<p class="tipitaka-note">${result.total.toLocaleString()} 条匹配；打开词典页可分页查看全部。</p><button data-dict-all>查看全部结果</button>`;
+      panel.querySelector('button').onclick = () => panel.close(); panel.querySelector('[data-dict-all]').onclick = () => { panel.close(); location.hash = `#/tipitaka/dictionaries?term=${encodeURIComponent(selected)}`; };
+      document.body.appendChild(panel); panel.showModal(); panel.addEventListener('close', () => panel.remove());
+    } catch (error) { alert(error.message); }
+  }
+  async function configureDictionaries() {
+    const prefs = dictionaryPreferences(), panel = document.createElement('dialog');
+    const rows = orderedDictionaries().map(item => `<li data-dict-pref="${esc(item.table)}"><label><input type="checkbox" data-dict-enabled="${esc(item.table)}" ${prefs.disabled.has(item.table) ? '' : 'checked'}> ${esc(item.table)} · ${esc(item.description)}</label><button type="button" data-dict-up>↑</button><button type="button" data-dict-down>↓</button></li>`).join('');
+    panel.innerHTML = `<h3>词典优先级与启用状态</h3><p class="tipitaka-note">点击巴利词时，启用的词典按此顺序展示。</p><ol>${rows}</ol><button type="button" data-dict-save>保存</button><button type="button" data-dict-cancel>取消</button>`;
+    panel.querySelectorAll('[data-dict-up],[data-dict-down]').forEach(button => button.onclick = () => { const li = button.closest('li'), other = button.hasAttribute('data-dict-up') ? li.previousElementSibling : li.nextElementSibling; if (other) button.hasAttribute('data-dict-up') ? li.parentNode.insertBefore(li, other) : li.parentNode.insertBefore(other, li); });
+    panel.querySelector('[data-dict-cancel]').onclick = () => panel.close();
+    panel.querySelector('[data-dict-save]').onclick = () => { const order = [...panel.querySelectorAll('li[data-dict-pref]')].map(li => li.dataset.dictPref), disabled = new Set([...panel.querySelectorAll('[data-dict-enabled]:not(:checked)')].map(input => input.dataset.dictEnabled)); saveDictionaryPreferences({ order, disabled }); panel.close(); };
+    document.body.appendChild(panel); panel.showModal(); panel.addEventListener('close', () => panel.remove());
   }
   async function renderDictionaries() {
-    injectCss(); await ensureCatalog(); const sources = state.dictionaries.map(item => `<option value="${esc(item.table)}">${esc(item.table)} · ${esc(item.description)}</option>`).join('');
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>巴利词典与专名</h2><div class="cat-en">26 dictionaries · 2,436,672 entries · 634 proper nouns</div></div><form class="tipitaka-toolbar" id="tipitaka-dict-form"><input id="tipitaka-dict-input" required placeholder="巴利词、中文释义或英文释义"><select id="tipitaka-dict-lang"><option value="pali">巴利词头</option><option value="zh">中文释义</option><option value="en">English gloss</option></select><select id="tipitaka-dict-source"><option value="">全部词典</option>${sources}</select><button>查词</button><button type="button" id="tipitaka-proper">专名表</button></form><div id="tipitaka-dict-status" class="tipitaka-note"></div><div id="tipitaka-dict-results"></div>`;
+    injectCss(); await ensureCatalog(); const sources = orderedDictionaries().map(item => `<option value="${esc(item.table)}">${esc(item.table)} · ${esc(item.description)}</option>`).join('');
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>巴利词典与专名</h2><div class="cat-en">26 dictionaries · 2,436,672 entries · 634 proper nouns</div></div><form class="tipitaka-toolbar" id="tipitaka-dict-form"><input id="tipitaka-dict-input" required placeholder="巴利词、中文释义或英文释义"><select id="tipitaka-dict-lang"><option value="pali">巴利词头</option><option value="zh">中文释义</option><option value="en">English gloss</option></select><select id="tipitaka-dict-source"><option value="">全部词典</option>${sources}</select><button>查词</button><button type="button" id="tipitaka-proper">专名表</button><button type="button" id="tipitaka-dict-settings">词典设置</button></form><div id="tipitaka-dict-status" class="tipitaka-note"></div><div id="tipitaka-dict-results"></div>`;
     const form = document.getElementById('tipitaka-dict-form'), target = document.getElementById('tipitaka-dict-results'), status = document.getElementById('tipitaka-dict-status');
-    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-dict-input').value.trim(), language = document.getElementById('tipitaka-dict-lang').value, source = document.getElementById('tipitaka-dict-source').value; status.textContent = '加载词典索引与原始分片…'; try { const result = await dictionarySearch(value, language, source), draw = page => { const start = page * PAGE_SIZE; status.textContent = `完整命中 ${result.total.toLocaleString()} 条；第 ${page + 1} 页（每页 ${PAGE_SIZE} 条），按词典来源稳定排序。`; target.innerHTML = result.rows.slice(start, start + PAGE_SIZE).map(item => dictionaryEntryHtml(item, result)).join('') || '<p>未找到词条。</p>'; target.insertAdjacentHTML('beforeend', `<div class="tipitaka-page">${page > 0 ? '<button data-t-dict-prev>上一页</button>' : ''}${start + PAGE_SIZE < result.total ? '<button data-t-dict-next>下一页</button>' : ''}</div>`); target.querySelector('[data-t-dict-prev]')?.addEventListener('click', () => draw(page - 1)); target.querySelector('[data-t-dict-next]')?.addEventListener('click', () => draw(page + 1)); }; draw(0); } catch (error) { status.textContent = error.message; } };
-    document.getElementById('tipitaka-proper').onclick = async () => { const [items, userEntries] = await Promise.all([cachedJson('terminology/proper-nouns.json'), cachedJson('terminology/user-dictionary.json')]); target.innerHTML = `${userEntries.length ? `<h3>发行包用户词典</h3>${userEntries.map(entry => `<p><strong>${esc(entry.dict_key)}</strong> — ${esc(chineseDisplay(entry.dict_content))}</p>`).join('')}` : ''}<p class="tipitaka-note">${items.length} 条专名；修改会进入与清净道论、经藏注疏共用的 canon 历史。</p>${items.map((item, i) => `<p class="tipitaka-dict-entry"><strong>${esc(item.pali)}</strong> — ${esc(chineseDisplay(item.preferred_chinese || ''))} <button data-t-term="${i}">编辑术语</button><br><span class="tipitaka-note">${esc(chineseDisplay(item.chinese_comment || item.english || ''))}</span></p>`).join('')}`; target.onclick = event => { const button = event.target.closest('[data-t-term]'); if (button) editTerm(items[Number(button.dataset.tTerm)]); }; };
+    document.getElementById('tipitaka-dict-settings').onclick = configureDictionaries;
+    form.onsubmit = async event => {
+      event.preventDefault(); const value = document.getElementById('tipitaka-dict-input').value.trim(), language = document.getElementById('tipitaka-dict-lang').value, source = document.getElementById('tipitaka-dict-source').value; status.textContent = '加载词典索引与原始分片…';
+      try {
+        const result = await dictionarySearch(value, language, source);
+        const draw = async page => { const start = page * PAGE_SIZE, items = result.v4 ? await resolveSearchPage(result.result, page) : result.rows.slice(start, start + PAGE_SIZE); status.textContent = `完整命中 ${result.total.toLocaleString()} 条；第 ${page + 1} 页（每页 ${PAGE_SIZE} 条），按词典来源稳定排序。`; target.innerHTML = items.map(item => dictionaryEntryHtml(item, result)).join('') || '<p>未找到词条。</p>'; target.insertAdjacentHTML('beforeend', `<div class="tipitaka-page">${page > 0 ? '<button data-t-dict-prev>上一页</button>' : ''}${start + PAGE_SIZE < result.total ? '<button data-t-dict-next>下一页</button>' : ''}</div>`); const entry = query().get('entry'); if (entry && page === 0) [...target.querySelectorAll('.tipitaka-dict-entry')].find(item => item.id === `tipitaka-dict-${entry}`)?.scrollIntoView({ block: 'center' }); target.querySelector('[data-t-dict-prev]')?.addEventListener('click', () => draw(page - 1)); target.querySelector('[data-t-dict-next]')?.addEventListener('click', () => draw(page + 1)); };
+        await draw(0);
+      } catch (error) { status.textContent = error.message; }
+    };
+    const deepTerm = query().get('term'), deepLang = query().get('lang'), deepSource = query().get('dict'); if (deepLang && ['pali', 'zh', 'en'].includes(deepLang)) document.getElementById('tipitaka-dict-lang').value = deepLang; if (deepSource && [...document.getElementById('tipitaka-dict-source').options].some(option => option.value === deepSource)) document.getElementById('tipitaka-dict-source').value = deepSource; if (deepTerm) { document.getElementById('tipitaka-dict-input').value = deepTerm; form.requestSubmit(); }
+    document.getElementById('tipitaka-proper').onclick = async () => { const [items, userEntries] = await Promise.all([cachedJson('terminology/proper-nouns.json'), cachedJson('terminology/user-dictionary.json')]); target.innerHTML = `${userEntries.length ? `<h3>发行包用户词典</h3>${userEntries.map(entry => `<p><strong>${esc(entry.dict_key)}</strong> — ${esc(dictionaryChineseDisplay(entry.dict_content))}</p>`).join('')}` : ''}<p class="tipitaka-note">${items.length} 条专名；修改会进入与清净道论、经藏注疏共用的 canon 历史。</p>${items.map((item, i) => `<p class="tipitaka-dict-entry" data-proper-pali="${esc(item.pali)}"><strong>${esc(item.pali)}</strong> — ${esc(dictionaryChineseDisplay(item.preferred_chinese || ''))} <button data-t-term="${i}">编辑术语</button><br><span class="tipitaka-note">${esc(dictionaryChineseDisplay(item.chinese_comment || item.english || ''))}</span></p>`).join('')}`; const term = query().get('term'); if (term) [...target.querySelectorAll('[data-proper-pali]')].find(node => node.dataset.properPali === term)?.scrollIntoView({ block: 'center' }); target.onclick = event => { const button = event.target.closest('[data-t-term]'); if (button) editTerm(items[Number(button.dataset.tTerm)]); }; };
+    if (query().get('tab') === 'proper') document.getElementById('tipitaka-proper').click();
   }
   async function editTerm(item) { const translation = prompt(`编辑 ${item.pali} 的共享术语译法`, item.preferred_chinese || ''); if (translation === null) return; const reason = prompt('修改理由（公开可见）', '') ?? ''; const response = await fetch(`${API}/terms/${encodeURIComponent(item.pali)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ translation, default_translation: item.preferred_chinese || translation, usage_note: item.chinese_comment || '', reason }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } alert('术语已保存。'); }
-  async function renderHome() { injectCss(); app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button></div><div class="tipitaka-layout"><aside class="tipitaka-catalog">${workTree(await ensureCatalog())}</aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div>`; app.querySelector('[data-t-home="search"]').onclick = () => location.hash = '#/tipitaka/search'; app.querySelector('[data-t-home="dict"]').onclick = () => location.hash = '#/tipitaka/dictionaries'; app.querySelector('[data-t-home="continue"]').onclick = () => { try { const history = JSON.parse(localStorage.getItem('tipitaka-reader-history') || 'null'); location.hash = history ? `#/tipitaka/read/${encodeURIComponent(history.workId)}?row=${history.rowId}` : '#/tipitaka'; } catch { location.hash = '#/tipitaka'; } }; }
+  async function renderHome() {
+    injectCss(); await ensureCatalog();
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button></div><div class="tipitaka-layout"><aside><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品"><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div>`;
+    const filter = document.getElementById('tipitaka-catalog-filter');
+    filter.oninput = event => { const needle = event.target.value.trim().toLowerCase(); const catalog = app.querySelector('.tipitaka-catalog'); catalog.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); catalog.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const hasVisible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matchesPath = node.dataset.catalogPath.toLowerCase().includes(needle); node.hidden = !!needle && !hasVisible && !matchesPath; node.open = !!needle && (hasVisible || matchesPath); }); };
+    app.querySelector('[data-t-home="search"]').onclick = () => location.hash = '#/tipitaka/search';
+    app.querySelector('[data-t-home="dict"]').onclick = () => location.hash = '#/tipitaka/dictionaries';
+    app.querySelector('[data-t-home="continue"]').onclick = () => { try { const history = JSON.parse(localStorage.getItem('tipitaka-reader-history') || 'null'); location.hash = history ? `#/tipitaka/read/${encodeURIComponent(history.workId)}?row=${history.rowId}` : '#/tipitaka'; } catch { location.hash = '#/tipitaka'; } };
+  }
   window.renderTipitakaRoute = () => { const path = routePath(); if (path === '#/tipitaka') return renderHome(); if (path === '#/tipitaka/search') return renderSearch(); if (path === '#/tipitaka/dictionaries') return renderDictionaries(); if (path.startsWith('#/tipitaka/read/')) return renderReader(decodeURIComponent(path.slice('#/tipitaka/read/'.length))); renderHome(); };
   if (location.hash.startsWith('#/tipitaka') && typeof route === 'function') route();
 })();
