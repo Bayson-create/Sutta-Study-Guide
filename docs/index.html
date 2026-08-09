@@ -3138,8 +3138,28 @@ function renderHome() {
   </div>`;
 
   app.innerHTML = html;
+  const v4ScopeToggle = document.getElementById('search-v4-scope-toggle');
+  if (v4ScopeToggle) {
+    v4ScopeToggle.hidden = !searchActiveScopes.v4;
+    v4ScopeToggle.onclick = async () => {
+      window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length, loading: true });
+      try {
+        for (let tries = 0; !window.TipitakaV4?.openScopeDrawer && tries < 40; tries++) await new Promise(resolve => setTimeout(resolve, 100));
+        if (!window.TipitakaV4?.openScopeDrawer) throw new Error('V4 范围组件尚未加载');
+        await window.TipitakaV4.openScopeDrawer({ scopes: searchV4ScopeSelections, types: searchV4TypeSelections, onApply: ({ scopes, types }) => {
+          searchV4ScopeSelections = scopes;
+          searchV4TypeSelections = types;
+          window.setV4ScopeButtonState(v4ScopeToggle, { count: scopes.length });
+        } });
+      } catch (error) { alert(`V4 目录加载失败：${error.message}`); }
+      finally { window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length }); }
+    };
+  }
   document.querySelectorAll('.search-scope-row input[data-scope]').forEach(cb => {
-    cb.addEventListener('change', () => { searchActiveScopes[cb.dataset.scope] = cb.checked; });
+    cb.addEventListener('change', () => {
+      searchActiveScopes[cb.dataset.scope] = cb.checked;
+      if (cb.dataset.scope === 'v4' && v4ScopeToggle) v4ScopeToggle.hidden = !cb.checked;
+    });
   });
 }
 
@@ -10207,7 +10227,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260809.5"></script>
+<script src="tipitaka-reader.js?v=20260809.6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
