@@ -292,6 +292,19 @@ a:hover { text-decoration: underline; }
 .gotama-send-btn { padding: 10px 18px; border-radius: 10px; border: none; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; }
 .gotama-send-btn:disabled { opacity: 0.5; cursor: default; }
 .gotama-thinking { align-self: flex-start; color: var(--text-light); font-size: 0.9em; }
+.gotama-eb-search { margin-top: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--card-bg); font-size: 0.84em; }
+.gotama-eb-search summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.gotama-eb-search-list { margin-top: 8px; display: grid; gap: 8px; }
+.gotama-eb-hit { display: block; padding: 8px 10px; border-radius: 8px; background: var(--hover-bg); color: var(--text); text-decoration: none; line-height: 1.6; }
+.gotama-eb-hit:hover { outline: 2px solid color-mix(in srgb, var(--accent) 22%, transparent); }
+.gotama-eb-hit-title { display: block; color: var(--accent); font-weight: 650; }
+.gotama-eb-hit-snippet { display: block; margin-top: 2px; }
+.gotama-eb-hit mark { background: #ffe066; color: #2d2400; border-radius: 3px; padding: 0 2px; }
+.gotama-eb-hit-meta { display: block; color: var(--text-light); font-size: 0.9em; }
+.gotama-eb-pagination { display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.gotama-eb-pagination button { border: 1px solid var(--border); border-radius: 7px; padding: 4px 9px; background: var(--card-bg); color: var(--text); cursor: pointer; }
+.gotama-eb-pagination button:disabled { opacity: 0.45; cursor: default; }
+.gotama-eb-empty, .gotama-eb-loading { color: var(--text-light); }
 .gotama-mobile-toggle { display: none; }
 .gotama-sidebar-backdrop { display: none; }
 @media (max-width: 720px) {
@@ -1574,6 +1587,11 @@ async function searchRunDhamma(q) {
 // tokenizer+BM25+resolve pipeline with no DOM dependency, so this calls
 // that directly instead.
 const EARLY_BUDDHIST_BASE = 'https://bayson-create.github.io/Early-Buddhist';
+// The hybrid service is optional at the client boundary: an empty value keeps
+// the current static BM25 path fully usable during cold start, preview or
+// rollback.  Production is switched by changing this one value after the
+// private semantic-v1 index and the scale-to-zero service pass validation.
+const HYBRID_SEARCH_BASE = window.SUTTA_HYBRID_SEARCH_BASE || '';
 const EARLY_BUDDHIST_COLLECTIONS = {
   '经藏/长部_dn': '长部 DN', '经藏/中部_mn': '中部 MN', '经藏/相应部_sn': '相应部 SN',
   '经藏/增支部_an': '增支部 AN', '经藏/小部_kn': '小部 KN',
@@ -1613,6 +1631,52 @@ async function searchRunEarlyBuddhist(q) {
   return results;
 }
 
+async function searchHybridRequest(query, options = {}) {
+  if (!HYBRID_SEARCH_BASE) return null;
+  const params = new URLSearchParams({ q: query, mode: options.mode || 'explore', page_size: String(options.pageSize || 40) });
+  if (options.corpora) params.set('corpora', options.corpora);
+  if (options.scopes?.length) params.set('scopes', options.scopes.join('|'));
+  if (options.resourceTypes?.length) params.set('resource_types', options.resourceTypes.join(','));
+  if (options.language) params.set('language', options.language);
+  if (options.cursor) params.set('cursor', options.cursor);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), options.timeout || 4000);
+  try {
+    const response = await fetch(`${HYBRID_SEARCH_BASE.replace(/\/$/, '')}/api/search/v1/hybrid?${params}` , { signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    let data = await response.json();
+    if (options.allPages && !options.cursor) {
+      const all = [...(data.results || [])];
+      let cursor = data.next_cursor;
+      let page = 1;
+      while (cursor && page < 5) {
+        const nextParams = new URLSearchParams(params);
+        nextParams.set('cursor', cursor);
+        const nextResponse = await fetch(`${HYBRID_SEARCH_BASE.replace(/\/$/, '')}/api/search/v1/hybrid?${nextParams}`, { signal: controller.signal });
+        if (!nextResponse.ok) break;
+        const next = await nextResponse.json();
+        all.push(...(next.results || []));
+        cursor = next.next_cursor;
+        page++;
+      }
+      data = { ...data, results: all, next_cursor: cursor };
+    }
+    return data;
+  } finally { clearTimeout(timer); }
+}
+
+function hybridEarlyItem(item, query) {
+  return {
+    u: item.uid || item.work_id, c: item.collection || (item.path || []).join('/'),
+    i: Number.isFinite(Number(item.row_id)) ? Number(item.row_id) : 0,
+    s: item.segment_id || item.row_id || '', t: item.title || item.work_id,
+    z: item.text_zh || '', e: item.text_en || '', p: item.text_pali || '',
+    a: [], au: '', _score: item.rerank_score || item.semantic_score || item.lexical_score || 0,
+    _hybrid: true, lane: item.lane, match_reasons: item.match_reasons || [],
+    _hybridSnippet: item.snippet || '', _hybridAnchor: item.anchor || '', _hybridQuery: query,
+  };
+}
+
 // Early-Buddhist's own reader has no per-hit URL by default - viewFullText()
 // just toggles a div, never touching location.hash or .search - so a plain
 // link there could only ever reopen the results page, not the exact hit.
@@ -1627,10 +1691,12 @@ async function searchRunEarlyBuddhist(q) {
 // rather than just the right sutta. Verified locally against a real build
 // of that site before this went in.
 function searchEbSiteLink(item, query) {
-  const p = new URLSearchParams({ view: item.u, lang: 'zh', q: query });
+  const p = new URLSearchParams({ view: item.u, lang: item._hybridLanguage || 'zh', q: query });
   if (item.c) p.set('coll', item.c);
   if (item.au) p.set('au', item.au);
   if (item.z) p.set('mt', item.z);
+  if (item._hybrid && item.i !== undefined) p.set('seg', String(item.i));
+  if (item._hybridAnchor) p.set('anc', item._hybridAnchor);
   return `${EARLY_BUDDHIST_BASE}/?${p.toString()}`;
 }
 
@@ -1936,20 +2002,52 @@ function searchEbEvidence(ebRun, query) {
   return ebRun.hits.slice(0, 8).map(item => ({
     score: 1.5 + Math.min((item._score || 0) / 8, 2),
     source: `Early Buddhist · ${EARLY_BUDDHIST_COLLECTIONS[item.c] || item.c}`,
-    heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}`,
-    text: item.z || '',
+    heading: `${item.t || ''}${item.u ? ' · ' + item.u : ''}${item.s ? ' · ' + item.s : ''}`,
+    text: item._hybridSnippet || item.z || item.e || item.p || '',
     _href: searchEbSiteLink(item, query),
     _external: true,
+    lane: item.lane,
+    match_reasons: item.match_reasons || [],
+    corpus: 'early_buddhist', uid: item.u, segment_id: item.s,
   }));
 }
 
 function searchV4Evidence(v4Run, query) {
-  if (!v4Run || !Array.isArray(v4Run.items) || !window.TipitakaV4?.evidence) return [];
+  if (!v4Run) return [];
   const seen = new Set();
-  return v4Run.items.map(item => {
-    const key = `${item.language}:${item.locator || item.row?.id}:${item.meta?.id || item.dictionary?.table || item.kind}`;
+  const items = [
+    ...(Array.isArray(v4Run.items) ? v4Run.items : []),
+    ...(Array.isArray(v4Run.hybridItems) ? v4Run.hybridItems : []),
+  ];
+  return items.map(item => {
+    if (!item._hybrid && item.match_level === 'related') return null;
+    const key = item._hybrid
+      ? `${item.language}:${item.resource_type || 'corpus'}:${item.work_id || item.locator || ''}:${item.row_id ?? ''}`
+      : `${item.language}:${item.locator || item.row?.id}:${item.meta?.id || item.dictionary?.table || item.kind}`;
     if (seen.has(key)) return null;
     seen.add(key);
+    if (item._hybrid) {
+      const resourceType = item.resource_type || 'corpus';
+      if (resourceType !== 'corpus') {
+        return {
+          kind: 'v4', resource_type: resourceType, resource_locator: item.locator || item.resource_locator || '',
+          language: item.language || 'zh', query, path: item.path || [], source: `V4 · ${item.title || item.work_id || resourceType}`,
+          heading: item.title || item.paranum || resourceType, text: item.snippet || item.text_zh || item.text_en || item.text_pali || '',
+          score: Number(item.rerank_score || item.semantic_score || item.lexical_score || 0), lane: item.lane,
+          match_reasons: item.match_reasons || [], _hybrid: true,
+        };
+      }
+      return {
+        kind: 'v4', resource_type: 'corpus', work_id: item.work_id, row_id: Number(item.row_id),
+        language: item.language || 'zh', query, position: null,
+        anchor: item.anchor || '', paranum: item.paranum || '', path: item.path || [],
+        source: `V4 · ${item.title || item.work_id}`, heading: item.paranum || String(item.row_id),
+        text: item.snippet || item.text_zh || item.text_en || item.text_pali || '',
+        score: Number(item.rerank_score || item.semantic_score || item.lexical_score || 0),
+        lane: item.lane, match_reasons: item.match_reasons || [], _hybrid: true,
+      };
+    }
+    if (!window.TipitakaV4?.evidence) return null;
     const evidence = window.TipitakaV4.evidence(item, item.language, query);
     const typeBonus = item.kind === 'corpus' ? 0.7 : item.kind === 'catalog' ? 0.25 : 0;
     return { ...evidence, matched_terms: item.matched_terms || [], match_level: item.match_level || null, score: 2.1 + typeBonus + Math.min(Number(item.score) || 0, 4) / 10 };
@@ -1971,6 +2069,7 @@ function searchV4EvidenceHref(evidence, fallbackQuery) {
     hl_anchor: evidence.anchor || String(evidence.text || '').slice(0, 64),
   });
   if (Array.isArray(evidence.matched_terms) && evidence.matched_terms.length) params.set('hl_terms', evidence.matched_terms.join('|'));
+  if (evidence._hybrid || evidence.lane === 'explore' || (evidence.match_reasons || []).includes('语义相关')) params.set('semantic', '1');
   if (evidence.position !== null && evidence.position !== undefined && Number.isFinite(Number(evidence.position))) {
     params.set('hl_pos', String(evidence.position));
   }
@@ -1993,8 +2092,13 @@ function searchSelectEvidence(run) {
   const addPool = (scope, items, minimum, cap) => {
     if (items.length) pools.push({ scope, items, minimum, cap });
   };
-  if (run.dhamma) addPool('dhamma', searchDhammaEvidence(run.dhamma), 8, 6);
-  if (run.eb) addPool('eb', searchEbEvidence(run.eb, run.query), 8, 6);
+  // The synthesis evidence pool is intentionally stricter than the visible
+  // result list: exploration hits remain browsable, but enter AI only after
+  // the reader explicitly adds them.  Legacy lexical hits have no lane and
+  // remain compatible as direct evidence.
+  const directOnly = items => items.filter(item => !item.lane || item.lane === 'direct');
+  if (run.dhamma) addPool('dhamma', directOnly(searchDhammaEvidence(run.dhamma)), 8, 6);
+  if (run.eb) addPool('eb', directOnly(searchEbEvidence(run.eb, run.query)), 8, 6);
   if (run.v4) addPool('v4', v4AiEvidenceOnly(searchV4Evidence(run.v4, run.query)), 16, 6);
 
   const scored = [];
@@ -2272,7 +2376,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
     try {
       const hits = await searchRunEarlyBuddhist(q);
       if (mySeq !== searchSeq) return;
-      run.eb = { hits };
+      run.eb = { hits, hybrid: [], hybridDegraded: false };
       if (hits.length) {
         const lis = hits.slice(0, 60).map(item => {
           const words = item._matchedWords || [];
@@ -2290,6 +2394,38 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         totalHits += hits.length;
       }
       scopeStatus.eb = `Early Buddhist：命中 ${hits.length} 条`;
+      // Static BM25 is rendered first.  The shared service is a background
+      // enrichment only; a cold start, rate limit or rollback therefore
+      // never removes the immediately usable Early-Buddhist results.
+      if (HYBRID_SEARCH_BASE) {
+        searchHybridRequest(q, { corpora: 'early_buddhist', language: 'zh', mode: 'explore', pageSize: 40, allPages: true, timeout: 3500 }).then(data => {
+          if (!data || mySeq !== searchSeq) return;
+          const hybrid = (data.results || []).map(item => { const mapped = hybridEarlyItem(item, q); mapped._hybridLanguage = item.language || 'zh'; return mapped; });
+          run.eb.hybrid = hybrid;
+          run.eb.hybridDegraded = !!data.semantic?.degraded;
+          const merged = [...hybrid.filter(item => item.lane === 'direct'), ...hits, ...hybrid.filter(item => item.lane !== 'direct')].filter((item, index, all) => all.findIndex(other => `${other.u}:${other.i}:${other._hybrid ? 'h' : 'l'}` === `${item.u}:${item.i}:${item._hybrid ? 'h' : 'l'}`) === index);
+          const section = results.querySelector('[data-hybrid-eb-section]');
+          const list = hybrid.slice(0, 40).map(item => {
+            const href = searchEbSiteLink(item, q);
+            const reason = (item.match_reasons || []).join('、') || (item.lane === 'direct' ? '直接回答' : '相关主题与探索');
+            return `<li><a class="title" href="${href}" target="_blank" rel="noopener">${esc(item.t || item.u)} <span class="hybrid-lane">${esc(item.lane === 'direct' ? '直接回答' : '探索')}</span></a><span class="meta">${esc(item.c || '')} · ${esc(String(item.s || ''))} · ${esc(reason)}</span><p class="snippet">${esc(item._hybridSnippet || item.z || item.e || '')}</p></li>`;
+          }).join('');
+          if (hybrid.length) {
+            const html = `<div class="dhamma-layer-section open" data-hybrid-eb-section><div class="dhamma-layer-section-head"><span>Early Buddhist · 混合检索补充<span class="meta" style="margin-left:8px">词法 + 语义 + RRF · 结果可解释</span></span><span class="count">${hybrid.length} 条${run.eb.hybridDegraded ? ' · 语义降级' : ''}</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(hybrid.slice(0, 40).map(item => `<li><a class="title" href="${searchEbSiteLink(item, q)}" target="_blank" rel="noopener">${esc(item.t || item.u)} <span class="hybrid-lane">${esc(item.lane === 'direct' ? '直接回答' : '探索')}</span></a><span class="meta">${esc(item.c || '')} · ${esc(String(item.s || ''))} · ${esc((item.match_reasons || []).join('、'))}</span><p class="snippet">${esc(item._hybridSnippet || item.z || item.e || '')}</p></li>`), 8, '条')}</ul></div></div>`;
+            results.insertAdjacentHTML('beforeend', wrapScope('eb', html));
+          }
+          run.eb.hits = merged;
+          scopeStatus.eb = `Early Buddhist：词法 ${hits.length} 条，混合补充 ${hybrid.length} 条${run.eb.hybridDegraded ? '（语义降级）' : ''}`;
+          setStatus();
+          searchLastRun = totalHits ? run : searchLastRun;
+          searchRenderSynthPrompt();
+        }).catch(error => {
+          if (mySeq !== searchSeq) return;
+          run.eb.hybridDegraded = true;
+          scopeStatus.eb = `Early Buddhist：命中 ${hits.length} 条（语义服务不可用，已保留词法结果）`;
+          setStatus();
+        });
+      }
     } catch (e) {
       run.eb = { hits: [] };
       scopeStatus.eb = `Early Buddhist：检索失败（${esc(e.message || String(e))}）`;
@@ -2353,7 +2489,28 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         const candidateItems = await Promise.all(candidatePages.map(page => window.TipitakaV4.resolve(result, page)));
         candidateItems.forEach(items => addCandidates(items, language));
       }
-      run.v4 = { items: v4Items };
+      const hybridItems = [];
+      if (HYBRID_SEARCH_BASE) {
+        const hybridRuns = await Promise.all(languages.map(async language => {
+          try {
+            return { language, data: await searchHybridRequest(q, { corpora: 'v4', scopes: searchV4ScopeSelections, resourceTypes: searchV4TypeSelections, language, mode: 'explore', pageSize: 40, allPages: true, timeout: 3500 }) };
+          } catch (error) { return { language, error }; }
+        }));
+        hybridRuns.forEach(({ language, data }) => {
+          if (!data) return;
+          (data.results || []).forEach(item => hybridItems.push({ ...item, language, _hybrid: true }));
+          if (data.semantic?.degraded) languageErrors.push(`${labels[language]}语义降级`);
+          const list = (data.results || []).slice(0, 40).map(item => {
+            const label = `${item.title || item.work_id} · ${item.paranum || item.row_id}`;
+            const reason = (item.match_reasons || []).join('、') || '语义相关';
+            const display = item.snippet || item.text_zh || item.text_en || item.text_pali || '';
+            const href = searchV4EvidenceHref({ ...item, work_id: item.work_id, row_id: item.row_id, language, query: q, anchor: item.anchor }, q);
+            return `<li><a href="${href}"><span class="title">${esc(label)} <small>语义相关</small></span><p class="snippet">${esc(display)}</p><span class="meta">${esc(item.lane === 'direct' ? '直接回答' : '相关主题与探索')} · ${esc(reason)}</span></a></li>`;
+          }).join('');
+          if (list) results.insertAdjacentHTML('beforeend', wrapScope('v4', `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>V4 · ${labels[language]} · 混合语义补充</span><span class="count">${(data.results || []).length} 条</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${list}</ul></div></div>`));
+        });
+      }
+      run.v4 = { items: v4Items, hybridItems };
       totalHits += total;
       scopeStatus.v4 = `V4 全内容：命中 ${total.toLocaleString()} 处（中文、巴利、English 完整分页）${languageErrors.length ? '；' + languageErrors.join('；') : ''}`;
     } catch (e) {
@@ -9527,7 +9684,7 @@ function gotamaMessageMetaHtml(m) {
   return `<span class="gotama-msg-meta">${parts.join(' · ')}</span>`;
 }
 
-const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄' };
+const _GOTAMA_TOOL_ICON = { web_search: '🔍', web_fetch: '📄', search_early_buddhist: '📜' };
 
 // Minimal outline SVG icons (16px, currentColor stroke) matching the
 // simple line-icon style of the reference design - not emoji, so they
@@ -9561,12 +9718,115 @@ function gotamaToolTraceHtml(trace) {
   ).join('')}</ul></details>`;
 }
 
+const gotamaEarlyPageState = new Map();
+const gotamaEarlyPageLoading = new Set();
+
+function gotamaHighlightEvidence(text, terms) {
+  const value = String(text || '');
+  const words = [...new Set((terms || []).filter(Boolean).map(String))]
+    .sort((a, b) => b.length - a.length);
+  if (!words.length) return communityEscape(value);
+  const escapedTerms = words.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  try {
+    const re = new RegExp(`(${escapedTerms.join('|')})`, 'giu');
+    let html = '';
+    let cursor = 0;
+    value.replace(re, (match, _group, offset) => {
+      html += communityEscape(value.slice(cursor, offset));
+      html += `<mark>${communityEscape(match)}</mark>`;
+      cursor = offset + match.length;
+      return match;
+    });
+    return html + communityEscape(value.slice(cursor));
+  } catch (_) {
+    return communityEscape(value);
+  }
+}
+
+function gotamaEarlyReaderHref(hit, queryText, lang) {
+  if (hit.reader_url) return hit.reader_url;
+  const params = new URLSearchParams({ view: hit.uid || '', lang: lang || hit.lang || 'zh', q: queryText || '' });
+  if (hit.segment) params.set('seg', String(hit.segment));
+  if (hit.matched_words?.length) params.set('mt', hit.matched_words.join('|'));
+  if (hit.anchor) params.set('anc', hit.anchor);
+  return `${EARLY_BUDDHIST_BASE}/?${params}`;
+}
+
+function gotamaEarlySearchesHtml(sources, messageId) {
+  const sets = (sources || []).filter(source => source?.source_type === 'early_buddhist_search_set');
+  if (!sets.length) return '';
+  return sets.map(set => {
+    const key = String(set.search_id || `${messageId}:${set.query}:${set.lang}`);
+    const state = gotamaEarlyPageState.get(key) || {
+      page: 0,
+      pageSize: 40,
+      total: Number(set.total || 0),
+      results: [],
+      loading: false,
+      error: '',
+    };
+    if (messageId && gotamaActiveId && !gotamaEarlyPageState.has(key) && !gotamaEarlyPageLoading.has(key)) {
+      state.loading = true;
+      gotamaEarlyPageState.set(key, { ...state, loading: true });
+      setTimeout(() => gotamaLoadEarlyBuddhistPage(messageId, set.search_id, 0), 0);
+    }
+    const results = state.results || [];
+    const list = state.loading
+      ? '<div class="gotama-eb-loading">正在加载完整命中列表…</div>'
+      : state.error
+        ? `<div class="gotama-eb-empty">${communityEscape(state.error)}</div>`
+        : results.length
+          ? `<div class="gotama-eb-search-list">${results.map((hit, index) => {
+              const terms = hit.matched_words || [];
+              const href = gotamaEarlyReaderHref(hit, set.query, set.lang);
+              const snippet = hit.snippet || hit.text || '';
+              return `<a class="gotama-eb-hit" href="${communityEscape(href)}" target="_blank" rel="noopener noreferrer"><span class="gotama-eb-hit-title">${communityEscape(hit.title || hit.uid || '经文段落')}</span><span class="gotama-eb-hit-meta">${communityEscape(hit.collection || '')}${hit.segment ? ` · 段落 ${communityEscape(hit.segment)}` : ''} · 命中 ${communityEscape(terms.join('、') || '查询词')}</span><span class="gotama-eb-hit-snippet">${gotamaHighlightEvidence(snippet, terms)}</span></a>`;
+            }).join('')}</div>`
+          : '<div class="gotama-eb-empty">暂无命中。</div>';
+    const page = Number(state.page || 0);
+    const pageSize = Number(state.pageSize || 40);
+    const total = Number(state.total ?? set.total ?? 0);
+    const pageCount = total ? Math.ceil(total / pageSize) : 0;
+    const pager = total > pageSize ? `<div class="gotama-eb-pagination"><button type="button" ${page <= 0 ? 'disabled' : ''} onclick="gotamaEarlyBuddhistPage(${JSON.stringify(String(messageId))},${JSON.stringify(String(set.search_id))},${page - 1})">上一页</button><span>${page + 1} / ${pageCount} · 共 ${total.toLocaleString()} 条</span><button type="button" ${page + 1 >= pageCount ? 'disabled' : ''} onclick="gotamaEarlyBuddhistPage(${JSON.stringify(String(messageId))},${JSON.stringify(String(set.search_id))},${page + 1})">下一页</button></div>` : `<div class="gotama-eb-pagination"><span>共 ${total.toLocaleString()} 条命中</span></div>`;
+    return `<details class="gotama-eb-search" open><summary>Early Buddhist 经文命中 · ${total.toLocaleString()} 条 · ${communityEscape(set.query || '')}</summary>${list}${pager}</details>`;
+  }).join('');
+}
+
+async function gotamaLoadEarlyBuddhistPage(messageId, searchId, page) {
+  const key = String(searchId);
+  if (gotamaEarlyPageLoading.has(key)) return;
+  gotamaEarlyPageLoading.add(key);
+  const previous = gotamaEarlyPageState.get(key) || {};
+  gotamaEarlyPageState.set(key, { ...previous, page, pageSize: 40, loading: true, error: '' });
+  gotamaRenderMessages();
+  try {
+    const params = new URLSearchParams({ search_id: searchId, page: String(page), limit: '40' });
+    const response = await fetch(`${API_BASE}/api/gotama/conversations/${encodeURIComponent(gotamaActiveId)}/messages/${encodeURIComponent(messageId)}/early-buddhist?${params}`, { headers: communityAuthHeaders() });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail || `加载经文命中失败（${response.status}）`);
+    gotamaEarlyPageState.set(key, { page: data.page || page, pageSize: data.page_size || 40, total: Number(data.total || 0), results: data.results || [], loading: false, error: '' });
+  } catch (error) {
+    gotamaEarlyPageState.set(key, { ...previous, page, pageSize: 40, loading: false, error: error.message || '加载经文命中失败' });
+  } finally {
+    gotamaEarlyPageLoading.delete(key);
+    gotamaRenderMessages();
+  }
+}
+function gotamaEarlyBuddhistPage(messageId, searchId, page) {
+  return gotamaLoadEarlyBuddhistPage(messageId, searchId, page);
+}
+window.gotamaEarlyBuddhistPage = gotamaEarlyBuddhistPage;
+
 function gotamaSourcesHtml(sources) {
-  if (!sources || !sources.length) return '';
-  return `<details class="gotama-msg-sources"><summary>参考来源（${sources.length}）</summary><ul>${sources.map((s, i) => {
+  const all = (sources || []).filter(s => s && s.source_type !== 'early_buddhist_search_set');
+  const hasEarlySet = (sources || []).some(s => s?.source_type === 'early_buddhist_search_set');
+  const visible = hasEarlySet ? all.filter(s => s.source_type !== 'early_buddhist_passage') : all;
+  if (!visible.length) return '';
+  return `<details class="gotama-msg-sources"><summary>参考来源（${visible.length}）</summary><ul>${visible.map((s, i) => {
     const order = s.order || (i + 1);
-    const typeLabel = s.fetched ? '已读取正文' : '搜索结果';
-    return `<li><span class="gotama-source-order">${order}.</span> <a href="${communityEscape(s.url)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || s.url)}</a>
+    const typeLabel = s.source_type === 'early_buddhist_passage' ? '经文段落命中' : (s.fetched ? '已读取正文' : '网页搜索结果');
+    const href = s.source_type === 'early_buddhist_passage' ? (s.reader_url || s.url) : s.url;
+    return `<li><span class="gotama-source-order">${order}.</span> <a href="${communityEscape(href)}" target="_blank" rel="noopener noreferrer">${communityEscape(s.title || s.domain || href)}</a>
       <span class="gotama-source-meta">${communityEscape(s.domain || '')} · ${typeLabel}</span></li>`;
   }).join('')}</ul></details>`;
 }
@@ -9619,7 +9879,7 @@ function gotamaRenderMessages() {
     const hasTrailingAssistantContent = Boolean((m.tool_trace && m.tool_trace.length) || (m.sources && m.sources.length) || m._flag || metaText);
     const actionSpaceClass = icons && !hasTrailingAssistantContent ? ' reserve-action-space' : '';
     const actionRow = icons ? `<div class="gotama-msg-actions assistant">${icons}</div>` : '';
-    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble${actionSpaceClass}"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble${actionSpaceClass}"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaEarlySearchesHtml(m.sources, m.id)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
@@ -9809,7 +10069,7 @@ async function gotamaSend(overrideContent) {
           document.getElementById('gotamaLastAssistantBody').innerHTML = gotamaRenderMarkdown(last.content);
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'tool_start') {
-          const label = (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central')
+          const label = (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central' || evt.tool_name === 'search_early_buddhist')
             ? (evt.detail ? `正在搜索：${evt.detail}` : '正在搜索相关资料…')
             : evt.tool_name === 'read_skill_reference'
             ? (evt.detail ? `正在查阅调研底稿：${evt.detail}` : '正在查阅调研底稿…')
@@ -9821,8 +10081,10 @@ async function gotamaSend(overrideContent) {
           el.scrollTop = el.scrollHeight;
         } else if (evt.type === 'tool_end') {
           if (!thinkingEl()) continue;
-          if (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central') {
-            thinkingEl().textContent = evt.ok ? `找到 ${evt.result_count || 0} 个来源，正在核对引用…` : '搜索未返回结果，继续处理…';
+          if (evt.tool_name === 'web_search' || evt.tool_name === 'search_sutta_central' || evt.tool_name === 'search_early_buddhist') {
+            thinkingEl().textContent = evt.ok
+              ? (evt.tool_name === 'search_early_buddhist' ? `找到 ${evt.result_count || 0} 个经文段落，正在核对引用…` : `找到 ${evt.result_count || 0} 个来源，正在核对引用…`)
+              : '搜索未返回结果，继续处理…';
           } else if (evt.tool_name === 'read_skill_reference') {
             thinkingEl().textContent = evt.ok ? '已读取调研底稿，正在整理回答…' : '调研底稿读取失败，继续处理…';
           } else if (evt.tool_name === 'fetch_sutta_text') {
@@ -9846,7 +10108,7 @@ async function gotamaSend(overrideContent) {
           const elapsed = (performance.now() - startedAt) / 1000;
           let flag = '';
           if (evt.hit_iteration_limit) flag += '<div class="gotama-msg-flag">⚠ 已达检索预算上限，回答可能不完整</div>';
-          if (evt.citation_warning) flag += '<div class="gotama-msg-flag">⚠ 部分链接因无法核实来源已被移除</div>';
+          if (evt.citation_warning) flag += '<div class="gotama-msg-flag">⚠ 有链接未能从本轮工具结果核验，已转为非链接文本</div>';
           if (evt.save_failed) flag += '<div class="gotama-msg-flag">⚠ 回答生成成功，但保存到历史记录失败，刷新页面后此消息可能丢失</div>';
           gotamaMessages[gotamaMessages.length - 1] = {
             ...evt.assistant_message,
@@ -9945,7 +10207,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260809.3"></script>
+<script src="tipitaka-reader.js?v=20260809.4"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
