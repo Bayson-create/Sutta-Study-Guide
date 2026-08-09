@@ -26,7 +26,9 @@
           // Offline caching is an optimisation.  Storage quota, browser
           // privacy settings, or a transient Cache API failure must never
           // turn a successfully fetched search shard into a failed search.
-          if (cache && response.ok) await cache.put(request, response.clone()).catch(() => {});
+          if (cache && response.ok) {
+            try { await cache.put(request, response.clone()); } catch {}
+          }
         }
         if (!response.ok) throw new Error(`检索分片加载失败（${response.status}）`);
         return response.json();

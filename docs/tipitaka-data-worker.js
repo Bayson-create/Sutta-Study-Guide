@@ -12,7 +12,9 @@
           response = await fetch(request);
           // Reading remains available when the optional offline cache cannot
           // accept a response (for example because of a storage quota).
-          if (cache && response.ok) await cache.put(request, response.clone()).catch(() => {});
+          if (cache && response.ok) {
+            try { await cache.put(request, response.clone()); } catch {}
+          }
         }
         if (!response.ok) throw new Error(`数据加载失败（${response.status}）`);
         return response.json();

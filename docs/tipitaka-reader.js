@@ -65,7 +65,7 @@
         if (!response.ok) throw new Error(`${path} 加载失败（${response.status}）`);
         // Cache writes are best-effort: a full or unavailable Cache API must
         // not prevent an already successful V4 data request from rendering.
-        await cache.put(request, response.clone()).catch(() => {});
+        try { await cache.put(request, response.clone()); } catch {}
       }
       const bytes = Number(response.headers.get('Content-Length') || 0); touchCacheMeta(path, bytes); trimReaderCache();
       return response.json();
@@ -90,8 +90,8 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.19', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.19', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.20', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260808.20', document.baseURI));
     }
   }
 
