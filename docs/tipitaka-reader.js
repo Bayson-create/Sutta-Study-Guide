@@ -163,6 +163,11 @@
     if (!scopes.length) return '<span class="tipitaka-scope-empty">全部 V4 目录</span>';
     return scopes.map(value => `<span class="tipitaka-scope-chip" title="${esc(value)}">${esc(scopeDisplayLabel(value))}</span>`).join('');
   }
+  function scopeButtonHtml(count = 0) {
+    return typeof window.v4ScopeButtonHtml === 'function'
+      ? window.v4ScopeButtonHtml(count)
+      : `<span>筛选范围</span>${count ? `<span>${count}</span>` : ''}`;
+  }
   async function openV4ScopeDrawer({ scopes = [], types = [], onApply } = {}) {
     await ensureCatalog(); injectCss(); injectSearchTargetCss();
     document.getElementById('tipitaka-scope-drawer')?.remove();
@@ -587,7 +592,7 @@
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
     const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']);
     const scopeSet = new Set(selected.split('|').filter(Boolean));
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-scope-trigger-row"><button type="button" id="tipitaka-scope-open">设置精确范围</button><div class="tipitaka-scope-chips" id="tipitaka-scope-chips">${scopeSummaryHtml([...scopeSet])}</div></div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-scope-trigger-row"><button type="button" class="v4-scope-button ${scopeSet.size ? 'is-active' : ''}" id="tipitaka-scope-open" aria-label="筛选 V4 范围">${scopeButtonHtml(scopeSet.size)}</button><div class="tipitaka-scope-chips" id="tipitaka-scope-chips">${scopeSummaryHtml([...scopeSet])}</div></div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
     document.getElementById('tipitaka-scope-open').onclick = () => openV4ScopeDrawer({ scopes: [...scopeSet], types: [...selectedTypes], onApply: ({ scopes, types }) => { const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (scopes.length) params.set('scope', scopes.join('|')); if (types.length) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; } });
     const form = document.getElementById('tipitaka-search-form'), target = document.getElementById('tipitaka-search-results'), status = document.getElementById('tipitaka-search-status');
     const initialQuery = query().get('q'); if (initialQuery) document.getElementById('tipitaka-search-input').value = initialQuery;

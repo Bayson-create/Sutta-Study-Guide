@@ -1012,6 +1012,14 @@ a:hover { text-decoration: underline; }
 .search-scope-label { color: var(--text-light); }
 .search-scope-opt { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
 .search-scope-opt input { accent-color: var(--accent); cursor: pointer; }
+.v4-scope-button { display: inline-flex; align-items: center; gap: 7px; min-height: 34px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font-family: inherit; font-size: 14px; line-height: 1; cursor: pointer; white-space: nowrap; transition: border-color .16s ease, background .16s ease, color .16s ease, transform .16s ease; }
+.v4-scope-button:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--accent); }
+.v4-scope-button:active { transform: translateY(1px); }
+.v4-scope-button:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 28%, transparent); outline-offset: 2px; }
+.v4-scope-button:disabled { cursor: wait; opacity: .7; }
+.v4-scope-button-icon { width: 15px; height: 15px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.v4-scope-button-badge { display: inline-grid; place-items: center; min-width: 17px; height: 17px; padding: 0 4px; border-radius: 999px; background: var(--accent); color: #fff; font-size: .72em; font-variant-numeric: tabular-nums; }
+.v4-scope-button.is-active { border-color: color-mix(in srgb, var(--accent) 62%, var(--border)); color: var(--accent); }
 /* Only shown when >1 scope is active - groups that scope's own result
  * sections under one heading so three corpora don't blur into one list. */
 .search-scope-group { margin-bottom: 22px; }
@@ -2056,9 +2064,18 @@ function searchScopeCheckboxesHtml() {
   return `<div class="search-scope-row">
     <span class="search-scope-label">范围：</span>
     ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}
-    <button type="button" class="search-v4-scope-link" id="search-v4-scope-toggle">设置 V4 精确范围${searchV4ScopeSelections.length ? `（${searchV4ScopeSelections.length}）` : ''}</button>
+    <button type="button" class="v4-scope-button ${searchV4ScopeSelections.length ? 'is-active' : ''}" id="search-v4-scope-toggle" aria-label="筛选 V4 范围">${window.v4ScopeButtonHtml(searchV4ScopeSelections.length)}</button>
   </div>`;
 }
+
+window.v4ScopeButtonHtml = (count = 0, label = '筛选范围') => `<svg class="v4-scope-button-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v5l-4 2v-7z"/></svg><span>${esc(label)}</span>${count ? `<span class="v4-scope-button-badge">${count}</span>` : ''}`;
+window.setV4ScopeButtonState = (button, { count = 0, loading = false } = {}) => {
+  if (!button) return;
+  button.disabled = loading;
+  button.setAttribute('aria-busy', String(loading));
+  button.classList.toggle('is-active', !!count && !loading);
+  button.innerHTML = window.v4ScopeButtonHtml(count, loading ? '加载中…' : '筛选范围');
+};
 
 function searchScopeQueryString() {
   return Object.keys(SEARCH_SCOPE_LABELS).filter(k => searchActiveScopes[k]).join(',');
@@ -2105,8 +2122,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
   if (v4ScopeToggle) {
     v4ScopeToggle.hidden = !searchActiveScopes.v4;
     v4ScopeToggle.onclick = async () => {
-      const originalLabel = v4ScopeToggle.textContent;
-      v4ScopeToggle.disabled = true; v4ScopeToggle.textContent = '正在加载 V4 目录…';
+      window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length, loading: true });
       try {
         for (let tries = 0; !window.TipitakaV4?.openScopeDrawer && tries < 40; tries++) await new Promise(resolve => setTimeout(resolve, 100));
         if (!window.TipitakaV4?.openScopeDrawer) throw new Error('V4 范围组件尚未加载');
@@ -2119,7 +2135,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
           if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), scopes.join('|'), types.join('|')); else location.hash = next;
         } });
       } catch (error) { alert(`V4 目录加载失败：${error.message}`); }
-      finally { v4ScopeToggle.disabled = false; v4ScopeToggle.textContent = originalLabel; }
+      finally { window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length }); }
     };
   }
 
@@ -9922,7 +9938,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260809.1"></script>
+<script src="tipitaka-reader.js?v=20260809.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
