@@ -2056,7 +2056,7 @@ function searchScopeCheckboxesHtml() {
   return `<div class="search-scope-row">
     <span class="search-scope-label">范围：</span>
     ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}
-    <button type="button" class="search-v4-scope-link" id="search-v4-scope-toggle">设置 V4 精确范围</button>
+    <button type="button" class="search-v4-scope-link" id="search-v4-scope-toggle">设置 V4 精确范围${searchV4ScopeSelections.length ? `（${searchV4ScopeSelections.length}）` : ''}</button>
   </div>`;
 }
 
@@ -2105,16 +2105,21 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
   if (v4ScopeToggle) {
     v4ScopeToggle.hidden = !searchActiveScopes.v4;
     v4ScopeToggle.onclick = async () => {
-      let panel = document.getElementById('search-v4-scope-panel');
-      if (panel) { panel.hidden = !panel.hidden; return; }
-      panel = document.createElement('div'); panel.id = 'search-v4-scope-panel'; panel.className = 'tipitaka-catalog'; panel.innerHTML = '<p>正在加载 V4 目录…</p>'; v4ScopeToggle.insertAdjacentElement('afterend', panel);
+      const originalLabel = v4ScopeToggle.textContent;
+      v4ScopeToggle.disabled = true; v4ScopeToggle.textContent = '正在加载 V4 目录…';
       try {
-        for (let tries = 0; !window.TipitakaV4 && tries < 40; tries++) await new Promise(resolve => setTimeout(resolve, 100));
-        const works = await window.TipitakaV4.catalog(), choices = [], seen = new Set();
-        works.forEach(work => { work.path.forEach((_, index) => { const value = work.path.slice(0, index + 1).join(' / '); if (!seen.has(value)) { seen.add(value); choices.push({ value, label: value }); } }); choices.push({ value: work.id, label: `${work.path.join(' / ')} / ${work.title}` }); });
-        panel.innerHTML = `<label>V4 范围（可多选，空白为全部）<select id="search-v4-scope-select" multiple size="7" style="display:block;min-width:min(720px,90vw);margin-top:6px">${choices.map(item => `<option value="${esc(item.value)}" ${searchV4ScopeSelections.includes(item.value) ? 'selected' : ''}>${esc(item.label)}</option>`).join('')}</select></label><label style="display:block;margin-top:10px">内容类型（空白为全部）<select id="search-v4-type-select" multiple size="5" style="display:block;min-width:min(300px,90vw);margin-top:6px">${[['corpus','正文'],['catalog','目录'],['proper','专名'],['user_dictionary','用户词典'],['dictionary','词典']].map(([value,label]) => `<option value="${value}" ${searchV4TypeSelections.includes(value) ? 'selected' : ''}>${label}</option>`).join('')}</select></label><button type="button" id="search-v4-scope-apply">应用筛选</button>`;
-        panel.querySelector('#search-v4-scope-apply').onclick = () => { searchV4ScopeSelections = [...panel.querySelector('#search-v4-scope-select').selectedOptions].map(option => option.value); searchV4TypeSelections = [...panel.querySelector('#search-v4-type-select').selectedOptions].map(option => option.value); const params = new URLSearchParams({ q, scope: searchScopeQueryString() }); if (searchV4ScopeSelections.length) params.set('v4scope', searchV4ScopeSelections.join('|')); if (searchV4TypeSelections.length) params.set('v4types', searchV4TypeSelections.join('|')); location.hash = `#/search?${params}`; };
-      } catch (error) { panel.textContent = `V4 目录加载失败：${error.message}`; }
+        for (let tries = 0; !window.TipitakaV4?.openScopeDrawer && tries < 40; tries++) await new Promise(resolve => setTimeout(resolve, 100));
+        if (!window.TipitakaV4?.openScopeDrawer) throw new Error('V4 范围组件尚未加载');
+        await window.TipitakaV4.openScopeDrawer({ scopes: searchV4ScopeSelections, types: searchV4TypeSelections, onApply: ({ scopes, types }) => {
+          searchV4ScopeSelections = scopes; searchV4TypeSelections = types;
+          const params = new URLSearchParams({ q, scope: searchScopeQueryString() });
+          if (scopes.length) params.set('v4scope', scopes.join('|'));
+          if (types.length) params.set('v4types', types.join('|'));
+          const next = `#/search?${params}`;
+          if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), scopes.join('|'), types.join('|')); else location.hash = next;
+        } });
+      } catch (error) { alert(`V4 目录加载失败：${error.message}`); }
+      finally { v4ScopeToggle.disabled = false; v4ScopeToggle.textContent = originalLabel; }
     };
   }
 
@@ -9917,7 +9922,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260808.21"></script>
+<script src="tipitaka-reader.js?v=20260809.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });

@@ -151,8 +151,68 @@
     const render = (node, depth = 0, parentPath = []) => Object.entries(node).filter(([key]) => key !== '__works').map(([key, child]) => {
       const path = [...parentPath, key], pathText = path.join(' / '), opened = openPath && (openPath === pathText || openPath.startsWith(`${pathText} / `));
       return `<details class="tipitaka-catalog-node" data-depth="${depth}" data-catalog-path="${esc(pathText)}" ${opened ? 'open' : ''}><summary><span>${esc(key)}</span><small>${count(child).toLocaleString()} 部</small></summary>${(child.__works || []).map(w => `<a class="tipitaka-work-link" data-catalog-label="${esc(`${pathText} / ${w.title}`)}" href="#/tipitaka/read/${encodeURIComponent(w.id)}">${esc(w.title)} <small>${w.row_count.toLocaleString()} 行</small></a>`).join('')}${render(child, depth + 1, path)}</details>`;
-    });
+    }).join('');
     return render(root);
+  }
+  const V4_CONTENT_TYPES = [['corpus', '正文'], ['catalog', '目录'], ['proper', '专名'], ['user_dictionary', '用户词典'], ['dictionary', '词典']];
+  function scopeDisplayLabel(value) {
+    const work = (state.works || []).find(item => item.id === value);
+    return work ? work.title : String(value || '').split(' / ').pop();
+  }
+  function scopeSummaryHtml(scopes) {
+    if (!scopes.length) return '<span class="tipitaka-scope-empty">全部 V4 目录</span>';
+    return scopes.map(value => `<span class="tipitaka-scope-chip" title="${esc(value)}">${esc(scopeDisplayLabel(value))}</span>`).join('');
+  }
+  async function openV4ScopeDrawer({ scopes = [], types = [], onApply } = {}) {
+    await ensureCatalog(); injectCss(); injectSearchTargetCss();
+    document.getElementById('tipitaka-scope-drawer')?.remove();
+    const activeScopes = new Set(scopes.filter(Boolean));
+    const activeTypes = new Set(types.length ? types : V4_CONTENT_TYPES.map(([value]) => value));
+    const dialog = document.createElement('dialog');
+    dialog.id = 'tipitaka-scope-drawer'; dialog.className = 'tipitaka-scope-drawer';
+    dialog.innerHTML = `<div class="tipitaka-scope-shell"><header><div><h3>设置 V4 精确范围</h3><p>可连续选择目录或具体作品；不选择范围即检索全部。</p></div><button type="button" class="tipitaka-scope-close" data-scope-cancel aria-label="关闭">×</button></header><div class="tipitaka-scope-selected" data-scope-selected></div><div class="tipitaka-scope-tools"><input data-scope-filter placeholder="搜索目录或作品" aria-label="搜索目录或作品"><button type="button" data-scope-collapse>全部收起</button><button type="button" data-scope-expand>展开一级</button></div><div class="tipitaka-scope-content"><section><h4>目录与作品</h4><div class="tipitaka-catalog tipitaka-scope-tree">${workTree(state.works)}</div></section><section class="tipitaka-scope-types"><h4>内容类型</h4>${V4_CONTENT_TYPES.map(([value, label]) => `<label><input type="checkbox" data-scope-type="${value}" ${activeTypes.has(value) ? 'checked' : ''}><span>${label}</span></label>`).join('')}</section></div><footer><button type="button" data-scope-clear>清空范围</button><span class="tipitaka-scope-count" data-scope-count></span><button type="button" data-scope-cancel>取消</button><button type="button" class="community-primary-btn" data-scope-apply>应用范围</button></footer></div>`;
+    document.body.appendChild(dialog);
+    const tree = dialog.querySelector('.tipitaka-scope-tree');
+    tree.querySelectorAll('.tipitaka-catalog-node').forEach(node => {
+      const summary = node.querySelector(':scope > summary'), path = node.dataset.catalogPath;
+      summary.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(path)}" aria-label="选择 ${esc(path)}" ${activeScopes.has(path) ? 'checked' : ''}>`);
+      node.open = [...activeScopes].some(scope => scope === path || scope.startsWith(`${path} / `) || (state.works || []).some(work => work.id === scope && work.path.join(' / ').startsWith(path)));
+    });
+    tree.querySelectorAll('.tipitaka-work-link').forEach(link => {
+      const id = decodeURIComponent(link.getAttribute('href').split('/').pop());
+      link.removeAttribute('href'); link.setAttribute('role', 'group');
+      link.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(id)}" aria-label="选择 ${esc(link.textContent.trim())}" ${activeScopes.has(id) ? 'checked' : ''}>`);
+    });
+    const updateSummary = () => {
+      const selected = [...dialog.querySelectorAll('[data-scope-value]:checked')].map(input => input.dataset.scopeValue);
+      dialog.querySelector('[data-scope-selected]').innerHTML = selected.length ? selected.map(value => `<button type="button" class="tipitaka-scope-chip" data-scope-remove="${esc(value)}" title="移除 ${esc(value)}">${esc(scopeDisplayLabel(value))} ×</button>`).join('') : '<span class="tipitaka-scope-empty">全部 V4 目录</span>';
+      dialog.querySelectorAll('[data-scope-remove]').forEach(button => { button.onclick = () => { const input = [...dialog.querySelectorAll('[data-scope-value]')].find(candidate => candidate.dataset.scopeValue === button.dataset.scopeRemove); if (input) input.checked = false; updateSummary(); }; });
+      dialog.querySelector('[data-scope-count]').textContent = selected.length ? `已选 ${selected.length} 个范围` : '当前搜索全部范围';
+    };
+    dialog.querySelectorAll('[data-scope-value]').forEach(input => {
+      input.addEventListener('click', event => event.stopPropagation());
+      input.addEventListener('change', updateSummary);
+    });
+    dialog.querySelector('[data-scope-filter]').addEventListener('input', event => {
+      const needle = event.target.value.trim().toLowerCase();
+      tree.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); });
+      tree.querySelectorAll('.tipitaka-catalog-node').forEach(node => {
+        const visible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matches = node.dataset.catalogPath.toLowerCase().includes(needle);
+        node.hidden = !!needle && !visible && !matches; if (needle && (visible || matches)) node.open = true;
+      });
+    });
+    dialog.querySelector('[data-scope-collapse]').onclick = () => tree.querySelectorAll('details').forEach(node => { node.open = false; });
+    dialog.querySelector('[data-scope-expand]').onclick = () => tree.querySelectorAll('details').forEach(node => { node.open = node.dataset.depth === '0'; });
+    dialog.querySelector('[data-scope-clear]').onclick = () => { dialog.querySelectorAll('[data-scope-value]').forEach(input => { input.checked = false; }); updateSummary(); };
+    dialog.querySelectorAll('[data-scope-cancel]').forEach(button => { button.onclick = () => dialog.close('cancel'); });
+    dialog.querySelector('[data-scope-apply]').onclick = () => {
+      const nextScopes = [...dialog.querySelectorAll('[data-scope-value]:checked')].map(input => input.dataset.scopeValue);
+      const checkedTypes = [...dialog.querySelectorAll('[data-scope-type]:checked')].map(input => input.dataset.scopeType);
+      const nextTypes = checkedTypes.length === V4_CONTENT_TYPES.length ? [] : checkedTypes;
+      onApply?.({ scopes: nextScopes, types: nextTypes }); dialog.close('apply');
+    };
+    dialog.addEventListener('close', () => dialog.remove(), { once: true });
+    updateSummary(); dialog.showModal(); requestAnimationFrame(() => dialog.querySelector('[data-scope-filter]').focus());
   }
   function injectCss() {
     if (document.getElementById('tipitaka-reader-css')) return;
@@ -165,7 +225,7 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
     style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}';
-    style.textContent += `.tipitaka-layout{grid-template-columns:minmax(270px,29%) 1fr;gap:22px}.tipitaka-catalog{max-height:72vh;border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:12px}.tipitaka-catalog details[data-depth="2"]{margin-left:14px}.tipitaka-catalog summary{display:flex;justify-content:space-between;gap:8px;cursor:pointer;padding:8px 7px;border-radius:8px;font-weight:650}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{padding:7px 9px 7px 24px;border-radius:7px;line-height:1.45}.tipitaka-work-link small{white-space:nowrap}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}`;
+    style.textContent += `.tipitaka-layout{grid-template-columns:minmax(390px,42%) minmax(0,1fr);gap:28px;align-items:start}.tipitaka-layout>aside{min-width:0}.tipitaka-catalog{max-height:min(74vh,820px);border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:16px}.tipitaka-catalog details[data-depth="2"]{margin-left:18px}.tipitaka-catalog details[data-depth="3"]{margin-left:20px}.tipitaka-catalog summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;cursor:pointer;padding:9px 10px;border-radius:8px;font-weight:650;line-height:1.45}.tipitaka-catalog summary>span{min-width:0;overflow-wrap:anywhere}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 10px 8px 30px;border-radius:7px;line-height:1.5;overflow-wrap:anywhere}.tipitaka-work-link small{white-space:nowrap;align-self:start}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}.tipitaka-scope-trigger-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.tipitaka-scope-chips,.tipitaka-scope-selected{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.tipitaka-scope-chip{display:inline-flex;max-width:240px;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent);color:var(--primary,#6b4f2d);font-size:.84em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tipitaka-scope-empty{color:var(--text-light,#777);font-size:.9em}.tipitaka-scope-drawer{position:fixed;inset:0 0 0 auto;width:min(760px,92vw);height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-left:1px solid var(--border,#ddd);background:var(--card,#fff);color:var(--text,#222);box-shadow:-18px 0 50px rgba(30,20,10,.18)}.tipitaka-scope-drawer::backdrop{background:rgba(20,15,10,.44)}.tipitaka-scope-shell{height:100%;display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto;box-sizing:border-box}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-shell>header{justify-content:space-between}.tipitaka-scope-shell>header h3,.tipitaka-scope-shell>header p{margin:0}.tipitaka-scope-shell>header p{margin-top:4px;color:var(--text-light,#777);font-size:.88em}.tipitaka-scope-shell>footer{justify-content:flex-end;border-top:1px solid var(--border,#ddd);border-bottom:0}.tipitaka-scope-shell button,.tipitaka-scope-shell input{box-sizing:border-box;padding:8px 11px;border:1px solid var(--border,#ccc);border-radius:8px;background:var(--card,#fff);color:inherit}.tipitaka-scope-close{font-size:1.45em;border:0!important}.tipitaka-scope-selected{min-height:34px;padding:10px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-tools{display:flex;gap:8px;padding:12px 20px}.tipitaka-scope-tools input{flex:1;min-width:0}.tipitaka-scope-content{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:16px;min-height:0;padding:0 20px 16px}.tipitaka-scope-content section{min-width:0;min-height:0}.tipitaka-scope-content h4{margin:4px 0 8px}.tipitaka-scope-tree{height:100%;max-height:none;box-sizing:border-box}.tipitaka-scope-tree summary{grid-template-columns:auto minmax(0,1fr) auto}.tipitaka-scope-tree .tipitaka-work-link{grid-template-columns:auto minmax(0,1fr) auto;cursor:default}.tipitaka-scope-tree input{width:18px;height:18px;margin:1px 0 0;padding:0}.tipitaka-scope-types{display:flex;flex-direction:column;gap:8px}.tipitaka-scope-types label{display:flex;gap:9px;align-items:center;padding:10px;border:1px solid var(--border,#ddd);border-radius:9px}.tipitaka-scope-types input{width:18px;height:18px;padding:0}.tipitaka-scope-count{margin-right:auto;color:var(--text-light,#777);font-size:.88em}@media(max-width:900px){.tipitaka-layout{grid-template-columns:minmax(320px,46%) minmax(0,1fr);gap:18px}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-layout>section{display:none}.tipitaka-catalog{max-height:62vh}.tipitaka-scope-drawer{width:100vw}.tipitaka-scope-content{grid-template-columns:1fr;overflow:auto}.tipitaka-scope-tree{height:auto;max-height:55vh}.tipitaka-scope-shell>footer{flex-wrap:wrap;padding:12px}.tipitaka-scope-count{width:100%;order:-1}.tipitaka-scope-tools{flex-wrap:wrap}.tipitaka-scope-tools input{flex-basis:100%}}`;
     document.head.appendChild(style);
   }
 
@@ -455,6 +515,9 @@
   window.TipitakaV4.catalog = async () => { await ensureCatalog(); return state.works; };
   window.TipitakaV4.workIdsForScopes = async scopes => { await ensureCatalog(); const selected = new Set(scopes || []); return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id); };
   window.TipitakaV4.resolve = (result, page = 0) => resolveSearchPage(result, page);
+  window.TipitakaV4.openScopeDrawer = options => openV4ScopeDrawer(options);
+  window.TipitakaV4.scopeSummaryHtml = scopes => scopeSummaryHtml(scopes || []);
+  window.addEventListener('hashchange', () => document.getElementById('tipitaka-scope-drawer')?.remove());
   function locatorParts(locator) { return String(locator || '').split(':'); }
   async function resolveV4Locator(item) {
     const [type, a, b, c] = locatorParts(item.locator);
@@ -521,22 +584,15 @@
     return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id);
   }
   async function renderSearch() {
-    injectCss(); await ensureCatalog();
+    injectCss(); injectSearchTargetCss(); await ensureCatalog();
     const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']);
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-toolbar"><input id="tipitaka-scope-search" class="tipitaka-catalog-search" placeholder="筛选目录范围（可多选）"><div id="tipitaka-scope-picker" class="tipitaka-catalog"></div></div><div class="search-scope-row" id="tipitaka-type-filter"><span class="search-scope-label">内容：</span>${[['corpus','正文'],['catalog','目录'],['proper','专名'],['user_dictionary','用户词典'],['dictionary','词典']].map(([value,label]) => `<label class="search-scope-opt"><input type="checkbox" data-v4-type="${value}" ${selectedTypes.has(value) ? 'checked' : ''}>${label}</label>`).join('')}</div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
-    const picker = document.getElementById('tipitaka-scope-picker'), scopeSet = new Set(selected.split('|').filter(Boolean));
-    picker.innerHTML = `<p class="tipitaka-catalog-help">未选择即搜索全部；选择目录或作品后可继续添加范围。</p>${workTree(state.works, '')}`;
-    picker.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const path = node.dataset.catalogPath; const summary = node.querySelector(':scope > summary'); summary.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(path)}" ${scopeSet.has(path) ? 'checked' : ''}>`); });
-    picker.querySelectorAll('.tipitaka-work-link').forEach(link => { const id = decodeURIComponent(link.getAttribute('href').split('/').pop()); link.insertAdjacentHTML('afterbegin', `<input type="checkbox" data-scope-value="${esc(id)}" ${scopeSet.has(id) ? 'checked' : ''}>`); });
-    picker.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const path = node.dataset.catalogPath; node.open = [...scopeSet].some(scope => path === scope || scope.startsWith(`${path} / `)); });
-    const syncScope = () => { const values = [...picker.querySelectorAll('[data-scope-value]:checked')].map(input => input.dataset.scopeValue); const types = [...document.querySelectorAll('[data-v4-type]:checked')].map(input => input.dataset.v4Type); const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (values.length) params.set('scope', values.join('|')); if (types.length && types.length < 5) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; };
-    picker.querySelectorAll('[data-scope-value]').forEach(input => { input.addEventListener('click', event => { event.stopPropagation(); event.preventDefault(); input.checked = !input.checked; syncScope(); }); });
-    document.getElementById('tipitaka-scope-search').oninput = event => { const needle = event.target.value.trim().toLowerCase(); picker.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); };
+    const scopeSet = new Set(selected.split('|').filter(Boolean));
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-scope-trigger-row"><button type="button" id="tipitaka-scope-open">设置精确范围</button><div class="tipitaka-scope-chips" id="tipitaka-scope-chips">${scopeSummaryHtml([...scopeSet])}</div></div><form class="tipitaka-toolbar" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
+    document.getElementById('tipitaka-scope-open').onclick = () => openV4ScopeDrawer({ scopes: [...scopeSet], types: [...selectedTypes], onApply: ({ scopes, types }) => { const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (scopes.length) params.set('scope', scopes.join('|')); if (types.length) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; } });
     const form = document.getElementById('tipitaka-search-form'), target = document.getElementById('tipitaka-search-results'), status = document.getElementById('tipitaka-search-status');
     const initialQuery = query().get('q'); if (initialQuery) document.getElementById('tipitaka-search-input').value = initialQuery;
     const draw = async (result, page) => { state.lastSearch = { result, page }; status.textContent = `完整命中 ${result.total.toLocaleString()} 处 · 第 ${page + 1} 页`; const items = await resolveSearchPage(result, page); target.innerHTML = `${items.map(item => searchResultHtml(item, result.language, result.query)).join('') || '<p>未找到结果。</p>'}<div class="tipitaka-page">${page > 0 ? '<button data-t-search-page="prev">← 上一页</button>' : ''}${(page + 1) * PAGE_SIZE < result.total ? '<button data-t-search-page="next">下一页 →</button>' : ''}<span class="tipitaka-note">每页加载 40 条；总数不截断。</span></div>`; target.querySelectorAll('[data-t-search-page]').forEach(button => button.onclick = () => draw(result, page + (button.dataset.tSearchPage === 'next' ? 1 : -1))); };
-    document.querySelectorAll('[data-v4-type]').forEach(input => input.addEventListener('change', syncScope));
-    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-search-input').value.trim(), language = document.getElementById('tipitaka-search-lang').value, types = [...document.querySelectorAll('[data-v4-type]:checked')].map(input => input.dataset.v4Type); status.textContent = '检索分片中…'; target.textContent = ''; try { await draw(await runSearch(value, language, { workIds: v4ScopeWorkIds(), types }), 0); } catch (error) { status.textContent = error.message; } };
+    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-search-input').value.trim(), language = document.getElementById('tipitaka-search-lang').value, types = [...selectedTypes]; status.textContent = '检索分片中…'; target.textContent = ''; try { await draw(await runSearch(value, language, { workIds: v4ScopeWorkIds(), types }), 0); } catch (error) { status.textContent = error.message; } };
     if (initialQuery) form.requestSubmit();
   }
 
@@ -587,7 +643,7 @@
   }
   async function editTerm(item) { const translation = prompt(`编辑 ${item.pali} 的共享术语译法`, item.preferred_chinese || ''); if (translation === null) return; const reason = prompt('修改理由（公开可见）', '') ?? ''; const response = await fetch(`${API}/terms/${encodeURIComponent(item.pali)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ translation, default_translation: item.preferred_chinese || translation, usage_note: item.chinese_comment || '', reason }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } alert('术语已保存。'); }
   async function renderHome() {
-    injectCss(); await ensureCatalog();
+    injectCss(); injectSearchTargetCss(); await ensureCatalog();
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button></div><div class="tipitaka-layout"><aside><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品"><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div>`;
     const filter = document.getElementById('tipitaka-catalog-filter');
     filter.oninput = event => { const needle = event.target.value.trim().toLowerCase(); const catalog = app.querySelector('.tipitaka-catalog'); catalog.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); catalog.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const hasVisible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matchesPath = node.dataset.catalogPath.toLowerCase().includes(needle); node.hidden = !!needle && !hasVisible && !matchesPath; node.open = !!needle && (hasVisible || matchesPath); }); };
