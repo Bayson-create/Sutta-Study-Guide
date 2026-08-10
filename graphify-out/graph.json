@@ -1,0 +1,180 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "parse_markdown.py",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "parse_markdown.py",
+      "id": "parse_markdown",
+      "community_name": "Community 0"
+    },
+    {
+      "label": "extract_uid_from_url()",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "extract_uid_from_url()",
+      "id": "parse_markdown_extract_uid_from_url",
+      "community_name": "Community 0"
+    },
+    {
+      "label": "extract_link_url()",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "extract_link_url()",
+      "id": "parse_markdown_extract_link_url",
+      "community_name": "Community 0"
+    },
+    {
+      "label": "parse_table_row()",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L80",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "parse_table_row()",
+      "id": "parse_markdown_parse_table_row",
+      "community_name": "Community 0"
+    },
+    {
+      "label": "parse_markdown()",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L91",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "parse_markdown()",
+      "id": "parse_markdown_parse_markdown",
+      "community_name": "Community 0"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "parse_markdown.py",
+      "source_location": "L339",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "main()",
+      "id": "parse_markdown_main",
+      "community_name": "Community 0"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown",
+      "target": "parse_markdown_extract_link_url"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown",
+      "target": "parse_markdown_extract_uid_from_url"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L339",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown",
+      "target": "parse_markdown_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown",
+      "target": "parse_markdown_parse_markdown"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown",
+      "target": "parse_markdown_parse_table_row"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown_parse_markdown",
+      "target": "parse_markdown_extract_uid_from_url"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown_parse_markdown",
+      "target": "parse_markdown_extract_link_url"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown_parse_markdown",
+      "target": "parse_markdown_parse_table_row"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "parse_markdown.py",
+      "source_location": "L348",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "parse_markdown_main",
+      "target": "parse_markdown_parse_markdown"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "03098ef925eaa1e317606ff731720b77c8a7ee5f"
+}

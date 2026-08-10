@@ -1,0 +1,702 @@
+{
+  "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part1/bilingual.json": {
+    "mtime": 1785681325.305724,
+    "ast_hash": "6edf106d9afc53cd6b236b463409c742",
+    "semantic_hash": "6edf106d9afc53cd6b236b463409c742"
+  },
+  "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part2/bilingual.json": {
+    "mtime": 1785681325.4566076,
+    "ast_hash": "696617aea2a14fc71ab77b2c48e37abf",
+    "semantic_hash": "696617aea2a14fc71ab77b2c48e37abf"
+  },
+  "docs/research/pali-source-texts/sutta/majjhima/papancasudani/part3/bilingual.json": {
+    "mtime": 1785681325.6823878,
+    "ast_hash": "533f3a51019cfc545372504f30e4c76b",
+    "semantic_hash": "533f3a51019cfc545372504f30e4c76b"
+  },
+  "docs/research/pali-source-texts/sutta/majjhima/papancasudani/terminology.json": {
+    "mtime": 1785681325.750086,
+    "ast_hash": "3702bb42019268cdc1c598cf927a4d01",
+    "semantic_hash": "3702bb42019268cdc1c598cf927a4d01"
+  },
+  "docs/research/vism-data/pe_chap01.json": {
+    "mtime": 1783207465.6521633,
+    "ast_hash": "c4d8659bc12c4c28774ff42ca82292b7",
+    "semantic_hash": "c4d8659bc12c4c28774ff42ca82292b7"
+  },
+  "docs/research/vism-data/pe_chap02.json": {
+    "mtime": 1783207258.9558196,
+    "ast_hash": "11649ae9bbd4ff71f0179302ae0a063f",
+    "semantic_hash": "11649ae9bbd4ff71f0179302ae0a063f"
+  },
+  "docs/research/vism-data/pe_chap03.json": {
+    "mtime": 1783207465.6616335,
+    "ast_hash": "e3c630eefb2e2280f34c66f01bb0fe03",
+    "semantic_hash": "e3c630eefb2e2280f34c66f01bb0fe03"
+  },
+  "docs/research/vism-data/pe_chap04.json": {
+    "mtime": 1783207465.6702943,
+    "ast_hash": "337a4f0529a7cd791e9855fdb6d0690c",
+    "semantic_hash": "337a4f0529a7cd791e9855fdb6d0690c"
+  },
+  "docs/research/vism-data/pe_chap05.json": {
+    "mtime": 1783207258.9717164,
+    "ast_hash": "3a5070777f3d8a1d8b0099665b65c0f9",
+    "semantic_hash": "3a5070777f3d8a1d8b0099665b65c0f9"
+  },
+  "docs/research/vism-data/pe_chap06.json": {
+    "mtime": 1783207258.9755962,
+    "ast_hash": "7dc63bc4147c0e0455c051902fd1ac27",
+    "semantic_hash": "7dc63bc4147c0e0455c051902fd1ac27"
+  },
+  "docs/research/vism-data/pe_chap07.json": {
+    "mtime": 1783207465.6801713,
+    "ast_hash": "1280837a5a82a32792e5d2f2933c4298",
+    "semantic_hash": "1280837a5a82a32792e5d2f2933c4298"
+  },
+  "docs/research/vism-data/pe_chap08.json": {
+    "mtime": 1783207465.6949728,
+    "ast_hash": "dd93f1f4275b3363fad1d6907f4de91f",
+    "semantic_hash": "dd93f1f4275b3363fad1d6907f4de91f"
+  },
+  "docs/research/vism-data/pe_chap09.json": {
+    "mtime": 1783207259.0017016,
+    "ast_hash": "726b7737203c0fe2a69fb82ebfe6fadb",
+    "semantic_hash": "726b7737203c0fe2a69fb82ebfe6fadb"
+  },
+  "docs/research/vism-data/pe_chap10.json": {
+    "mtime": 1783207259.0047622,
+    "ast_hash": "4c3cdc940efb9248eca6f8995a3b4edf",
+    "semantic_hash": "4c3cdc940efb9248eca6f8995a3b4edf"
+  },
+  "docs/research/vism-data/pe_chap11.json": {
+    "mtime": 1783207259.010626,
+    "ast_hash": "cfa7e41eac3167ba72e4c5eda7694f36",
+    "semantic_hash": "cfa7e41eac3167ba72e4c5eda7694f36"
+  },
+  "docs/research/vism-data/pe_chap12.json": {
+    "mtime": 1783207259.0171027,
+    "ast_hash": "4791701ae5a9f6228a0de91f961e4335",
+    "semantic_hash": "4791701ae5a9f6228a0de91f961e4335"
+  },
+  "docs/research/vism-data/pe_chap13.json": {
+    "mtime": 1783207465.718057,
+    "ast_hash": "61e32e295becb481688d3c4ab6b3a556",
+    "semantic_hash": "61e32e295becb481688d3c4ab6b3a556"
+  },
+  "docs/research/vism-data/pe_chap14.json": {
+    "mtime": 1783207465.7262547,
+    "ast_hash": "fcdf8cee8ba4ac7afa93941945e77e36",
+    "semantic_hash": "fcdf8cee8ba4ac7afa93941945e77e36"
+  },
+  "docs/research/vism-data/pe_chap15.json": {
+    "mtime": 1783207259.0341816,
+    "ast_hash": "3c16355100ffb6bdf92c51955cc6589a",
+    "semantic_hash": "3c16355100ffb6bdf92c51955cc6589a"
+  },
+  "docs/research/vism-data/pe_chap16.json": {
+    "mtime": 1783207259.039943,
+    "ast_hash": "00737e0fdc3d21fbfb6c68492116774d",
+    "semantic_hash": "00737e0fdc3d21fbfb6c68492116774d"
+  },
+  "docs/research/vism-data/pe_chap17.json": {
+    "mtime": 1783207259.0529776,
+    "ast_hash": "a0614f6646cf79e961efd7931fef88c0",
+    "semantic_hash": "a0614f6646cf79e961efd7931fef88c0"
+  },
+  "docs/research/vism-data/pe_chap18.json": {
+    "mtime": 1783207259.0554674,
+    "ast_hash": "146a6c990e5753d8a478d2d71439c7e6",
+    "semantic_hash": "146a6c990e5753d8a478d2d71439c7e6"
+  },
+  "docs/research/vism-data/pe_chap19.json": {
+    "mtime": 1783207465.7462595,
+    "ast_hash": "758a4ba23d1a9161ab4cbb2bc1dfb1e3",
+    "semantic_hash": "758a4ba23d1a9161ab4cbb2bc1dfb1e3"
+  },
+  "docs/research/vism-data/pe_chap20.json": {
+    "mtime": 1783207259.0630984,
+    "ast_hash": "c88481afbb7719438b0fe4202728aa08",
+    "semantic_hash": "c88481afbb7719438b0fe4202728aa08"
+  },
+  "docs/research/vism-data/pe_chap21.json": {
+    "mtime": 1783207259.0692513,
+    "ast_hash": "3d0fc979c6e12b18fd34471ecc1a9739",
+    "semantic_hash": "3d0fc979c6e12b18fd34471ecc1a9739"
+  },
+  "docs/research/vism-data/pe_chap22.json": {
+    "mtime": 1783207259.0741248,
+    "ast_hash": "a4a010f1730cffb17e4f6e79c70e34f6",
+    "semantic_hash": "a4a010f1730cffb17e4f6e79c70e34f6"
+  },
+  "docs/research/vism-data/pe_chap23.json": {
+    "mtime": 1783207259.0771587,
+    "ast_hash": "ecc541f23e986cd2c07a1ba92be11ca7",
+    "semantic_hash": "ecc541f23e986cd2c07a1ba92be11ca7"
+  },
+  "docs/research/vism-data/pe_conclusion.json": {
+    "mtime": 1783207259.0780401,
+    "ast_hash": "5ab327abdc61e6efe6a4a4e96672c550",
+    "semantic_hash": "5ab327abdc61e6efe6a4a4e96672c550"
+  },
+  "docs/research/vism-data/pe_nidana.json": {
+    "mtime": 1783207259.0794,
+    "ast_hash": "11fedbd7e261c75851d791f89b1dc011",
+    "semantic_hash": "11fedbd7e261c75851d791f89b1dc011"
+  },
+  "docs/research/vism-data/retranslated_chap01/current_alignment_audit.json": {
+    "mtime": 1783938154.5931659,
+    "ast_hash": "96f2d55d052de0fc312251eda74af6dd",
+    "semantic_hash": "96f2d55d052de0fc312251eda74af6dd"
+  },
+  "docs/research/vism-data/retranslated_chap01/current_audit_summary.json": {
+    "mtime": 1783938154.5936947,
+    "ast_hash": "7b445aaa32d9fbdf4dc779728337058e",
+    "semantic_hash": "7b445aaa32d9fbdf4dc779728337058e"
+  },
+  "docs/research/vism-data/retranslated_chap01/current_suspicious_ranges.json": {
+    "mtime": 1783938154.5935962,
+    "ast_hash": "bbf96bf2f842ef8a38d4a5dd171c67f0",
+    "semantic_hash": "bbf96bf2f842ef8a38d4a5dd171c67f0"
+  },
+  "docs/research/vism-data/retranslated_chap01/final_audit_summary.json": {
+    "mtime": 1783941694.3234346,
+    "ast_hash": "71189dc5b4412d134ae5537da2d7bb43",
+    "semantic_hash": "71189dc5b4412d134ae5537da2d7bb43"
+  },
+  "docs/research/vism-data/retranslated_chap01/final_unresolved_items.json": {
+    "mtime": 1783941694.1944327,
+    "ast_hash": "aefafc3d8c7f9aeea5af53c1754e5828",
+    "semantic_hash": "aefafc3d8c7f9aeea5af53c1754e5828"
+  },
+  "docs/research/vism-data/retranslated_chap01/finalization_report.json": {
+    "mtime": 1783941694.0608804,
+    "ast_hash": "ca65faa8b22a87361cbdeb9f27087827",
+    "semantic_hash": "ca65faa8b22a87361cbdeb9f27087827"
+  },
+  "docs/research/vism-data/retranslated_chap01/pe_chap01.final.json": {
+    "mtime": 1783941663.3244743,
+    "ast_hash": "6913119a9c65e24d99b400466af55ef6",
+    "semantic_hash": "6913119a9c65e24d99b400466af55ef6"
+  },
+  "docs/research/vism-data/retranslated_chap01/pe_chap01.json": {
+    "mtime": 1783929737.9448302,
+    "ast_hash": "0c0c92559ff9b4843c19772c51774c88",
+    "semantic_hash": "0c0c92559ff9b4843c19772c51774c88"
+  },
+  "docs/research/vism-data/retranslated_chap01/pe_chap01.repaired.json": {
+    "mtime": 1783941657.7609124,
+    "ast_hash": "6913119a9c65e24d99b400466af55ef6",
+    "semantic_hash": "6913119a9c65e24d99b400466af55ef6"
+  },
+  "docs/research/vism-data/retranslated_chap01/repair_report.json": {
+    "mtime": 1783938123.5854585,
+    "ast_hash": "fe05fe8aef568ff410b080f3cd7cc15f",
+    "semantic_hash": "fe05fe8aef568ff410b080f3cd7cc15f"
+  },
+  "docs/research/vism-data/retranslated_chap01/terminology.json": {
+    "mtime": 1783900974.8748555,
+    "ast_hash": "8bf787fe06b7e214d44e31a15eeea81d",
+    "semantic_hash": "8bf787fe06b7e214d44e31a15eeea81d"
+  },
+  "docs/research/vism-data/retranslated_chap01/unresolved_alignment_items.json": {
+    "mtime": 1783938123.5855803,
+    "ast_hash": "7cd7e564e9d70ca1b5e12f89b161ca18",
+    "semantic_hash": "7cd7e564e9d70ca1b5e12f89b161ca18"
+  },
+  "docs/research/vism-data/retranslated_chap11/processing_state.json": {
+    "mtime": 1785963079.8265724,
+    "ast_hash": "19594d398112fdbdb2cad9190127b400",
+    "semantic_hash": "19594d398112fdbdb2cad9190127b400"
+  },
+  "docs/research/vism-data/retranslated_chap11/results.json": {
+    "mtime": 1785924739.6966665,
+    "ast_hash": "746225946762737ee11d3fa513f51adf",
+    "semantic_hash": "746225946762737ee11d3fa513f51adf"
+  },
+  "docs/research/vism-data/retranslated_chap11/terminology.json": {
+    "mtime": 1785874975.5671246,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap12/processing_state.json": {
+    "mtime": 1785966409.819302,
+    "ast_hash": "83980089ce8a7097058e7ab842fea7e7",
+    "semantic_hash": "83980089ce8a7097058e7ab842fea7e7"
+  },
+  "docs/research/vism-data/retranslated_chap12/results.json": {
+    "mtime": 1785924740.2837796,
+    "ast_hash": "a2425ebf3cf195bc3aa90ad80c96c1b3",
+    "semantic_hash": "a2425ebf3cf195bc3aa90ad80c96c1b3"
+  },
+  "docs/research/vism-data/retranslated_chap12/terminology.json": {
+    "mtime": 1785874975.568242,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap13/checkpoints/check_0100.json": {
+    "mtime": 1785968620.3017163,
+    "ast_hash": "661f618b0563dd85a343639a099abf54",
+    "semantic_hash": "661f618b0563dd85a343639a099abf54"
+  },
+  "docs/research/vism-data/retranslated_chap13/checkpoints/check_0200.json": {
+    "mtime": 1785970612.264586,
+    "ast_hash": "8a698c8d657f4674a90a45d23d6b7ade",
+    "semantic_hash": "8a698c8d657f4674a90a45d23d6b7ade"
+  },
+  "docs/research/vism-data/retranslated_chap13/pe_chap13.progress.json": {
+    "mtime": 1785970612.2958734,
+    "ast_hash": "c3973139614cf8f01f858887dd9d8114",
+    "semantic_hash": "c3973139614cf8f01f858887dd9d8114"
+  },
+  "docs/research/vism-data/retranslated_chap13/processing_state.json": {
+    "mtime": 1785971902.851977,
+    "ast_hash": "243dc27a5d221a7022d4e266a885e7cd",
+    "semantic_hash": "243dc27a5d221a7022d4e266a885e7cd"
+  },
+  "docs/research/vism-data/retranslated_chap13/results.json": {
+    "mtime": 1785971902.8510487,
+    "ast_hash": "aae3477a2d291bf066da5ee8c26d39ec",
+    "semantic_hash": "aae3477a2d291bf066da5ee8c26d39ec"
+  },
+  "docs/research/vism-data/retranslated_chap13/terminology.json": {
+    "mtime": 1785874975.5825293,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap14/processing_state.json": {
+    "mtime": 1785959140.710523,
+    "ast_hash": "37ab7c79eeaee07be353c71dd155ca63",
+    "semantic_hash": "37ab7c79eeaee07be353c71dd155ca63"
+  },
+  "docs/research/vism-data/retranslated_chap14/terminology.json": {
+    "mtime": 1785925181.6104794,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap15/processing_state.json": {
+    "mtime": 1785959142.507998,
+    "ast_hash": "4e055b8a6d12c04414c5dc30f1db1ab1",
+    "semantic_hash": "4e055b8a6d12c04414c5dc30f1db1ab1"
+  },
+  "docs/research/vism-data/retranslated_chap15/terminology.json": {
+    "mtime": 1785925183.553694,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap16/processing_state.json": {
+    "mtime": 1785925186.0056844,
+    "ast_hash": "df88489de262ba6badcf16d325c3620c",
+    "semantic_hash": "df88489de262ba6badcf16d325c3620c"
+  },
+  "docs/research/vism-data/retranslated_chap16/terminology.json": {
+    "mtime": 1785925185.5926144,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap17/batch17.log.json": {
+    "mtime": 1783932453.9982991,
+    "ast_hash": "6e96d2a711a70a4d65d170f0f44283d0",
+    "semantic_hash": "6e96d2a711a70a4d65d170f0f44283d0"
+  },
+  "docs/research/vism-data/retranslated_chap17/final_alignment_audit.json": {
+    "mtime": 1783937617.0663178,
+    "ast_hash": "e108971bb1c67e57d58aece48a2c7fd0",
+    "semantic_hash": "e108971bb1c67e57d58aece48a2c7fd0"
+  },
+  "docs/research/vism-data/retranslated_chap17/final_audit_summary.json": {
+    "mtime": 1783937617.066705,
+    "ast_hash": "93e5e836873a4a909ec2416e8f3edd0d",
+    "semantic_hash": "93e5e836873a4a909ec2416e8f3edd0d"
+  },
+  "docs/research/vism-data/retranslated_chap17/final_suspicious_ranges.json": {
+    "mtime": 1783937617.0665836,
+    "ast_hash": "66578cc5b2b66159df9be8e751a4735c",
+    "semantic_hash": "66578cc5b2b66159df9be8e751a4735c"
+  },
+  "docs/research/vism-data/retranslated_chap17/pe_chap17.final.json": {
+    "mtime": 1783937590.1283772,
+    "ast_hash": "11d98db954b5523ccd91a95fd03d7e66",
+    "semantic_hash": "11d98db954b5523ccd91a95fd03d7e66"
+  },
+  "docs/research/vism-data/retranslated_chap17/pe_chap17.json": {
+    "mtime": 1783935251.338505,
+    "ast_hash": "838bc0a78f16486c2bed1d07c9d1c40e",
+    "semantic_hash": "838bc0a78f16486c2bed1d07c9d1c40e"
+  },
+  "docs/research/vism-data/retranslated_chap17/pe_chap17.repaired.json": {
+    "mtime": 1783936101.9667618,
+    "ast_hash": "8ec6feaab2eef43573db08c3af800173",
+    "semantic_hash": "8ec6feaab2eef43573db08c3af800173"
+  },
+  "docs/research/vism-data/retranslated_chap17/post_repair_audit_summary.json": {
+    "mtime": 1783936130.1213706,
+    "ast_hash": "49287118af0087b5652b5d209f3683d6",
+    "semantic_hash": "49287118af0087b5652b5d209f3683d6"
+  },
+  "docs/research/vism-data/retranslated_chap17/repair_report.json": {
+    "mtime": 1783936101.9671645,
+    "ast_hash": "650f2344c46e4d4083702cd13a7774bd",
+    "semantic_hash": "650f2344c46e4d4083702cd13a7774bd"
+  },
+  "docs/research/vism-data/retranslated_chap17/second_pass_repair_report.json": {
+    "mtime": 1783937590.129268,
+    "ast_hash": "295bedd852f7880218b10ac03e9af0c9",
+    "semantic_hash": "295bedd852f7880218b10ac03e9af0c9"
+  },
+  "docs/research/vism-data/retranslated_chap17/second_pass_unresolved_items.json": {
+    "mtime": 1783937590.1294134,
+    "ast_hash": "bc0e00484b7055f3a9afb920efc41ea6",
+    "semantic_hash": "bc0e00484b7055f3a9afb920efc41ea6"
+  },
+  "docs/research/vism-data/retranslated_chap17/terminology.json": {
+    "mtime": 1783900974.8748555,
+    "ast_hash": "8bf787fe06b7e214d44e31a15eeea81d",
+    "semantic_hash": "8bf787fe06b7e214d44e31a15eeea81d"
+  },
+  "docs/research/vism-data/retranslated_chap17/unresolved_alignment_items.json": {
+    "mtime": 1783936101.9673104,
+    "ast_hash": "4be1b388955597a07fc4e74374f039b9",
+    "semantic_hash": "4be1b388955597a07fc4e74374f039b9"
+  },
+  "docs/research/vism-data/retranslated_chap17_parallel/processing_state.json": {
+    "mtime": 1785925187.9477916,
+    "ast_hash": "df986e2c766809196fa9ac79bd7d47c2",
+    "semantic_hash": "df986e2c766809196fa9ac79bd7d47c2"
+  },
+  "docs/research/vism-data/retranslated_chap17_parallel/terminology.json": {
+    "mtime": 1785925187.568625,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap18/checkpoints/check_0100.json": {
+    "mtime": 1785800172.1494482,
+    "ast_hash": "ce52f5763f8bd176ea4d0d68f948dd64",
+    "semantic_hash": "ce52f5763f8bd176ea4d0d68f948dd64"
+  },
+  "docs/research/vism-data/retranslated_chap18/checkpoints/check_0178.json": {
+    "mtime": 1785800524.7856214,
+    "ast_hash": "8b4c3aa0383d1ccfd7746677d7b9ccfc",
+    "semantic_hash": "8b4c3aa0383d1ccfd7746677d7b9ccfc"
+  },
+  "docs/research/vism-data/retranslated_chap18/pe_chap18.final.json": {
+    "mtime": 1785800524.7940397,
+    "ast_hash": "d665225dd52163fa1fcea8dbaf3f336a",
+    "semantic_hash": "d665225dd52163fa1fcea8dbaf3f336a"
+  },
+  "docs/research/vism-data/retranslated_chap18/pe_chap18.progress.json": {
+    "mtime": 1785800524.78831,
+    "ast_hash": "d665225dd52163fa1fcea8dbaf3f336a",
+    "semantic_hash": "d665225dd52163fa1fcea8dbaf3f336a"
+  },
+  "docs/research/vism-data/retranslated_chap18/processing_state.json": {
+    "mtime": 1785800524.7968895,
+    "ast_hash": "e0c14503ff9c5b94f9f81914efb40b79",
+    "semantic_hash": "e0c14503ff9c5b94f9f81914efb40b79"
+  },
+  "docs/research/vism-data/retranslated_chap18/results.json": {
+    "mtime": 1785800524.7912636,
+    "ast_hash": "ba28c5e674166a5119f7e1e50da80bff",
+    "semantic_hash": "ba28c5e674166a5119f7e1e50da80bff"
+  },
+  "docs/research/vism-data/retranslated_chap18/review_samples.json": {
+    "mtime": 1785800524.7962418,
+    "ast_hash": "ba28c5e674166a5119f7e1e50da80bff",
+    "semantic_hash": "ba28c5e674166a5119f7e1e50da80bff"
+  },
+  "docs/research/vism-data/retranslated_chap18/terminology.json": {
+    "mtime": 1785799600.7485433,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap18/terminology_audit.json": {
+    "mtime": 1785800524.7967422,
+    "ast_hash": "94997765021edb2e7f5e4e8339824d82",
+    "semantic_hash": "94997765021edb2e7f5e4e8339824d82"
+  },
+  "docs/research/vism-data/retranslated_chap18/validation_report.json": {
+    "mtime": 1785800524.7965355,
+    "ast_hash": "8b4c3aa0383d1ccfd7746677d7b9ccfc",
+    "semantic_hash": "8b4c3aa0383d1ccfd7746677d7b9ccfc"
+  },
+  "docs/research/vism-data/retranslated_chap19/checkpoints/check_0100.json": {
+    "mtime": 1785835092.5807402,
+    "ast_hash": "c8b6ccd4e5ebb9f4c1670653d6e88ea4",
+    "semantic_hash": "c8b6ccd4e5ebb9f4c1670653d6e88ea4"
+  },
+  "docs/research/vism-data/retranslated_chap19/checkpoints/check_0124.json": {
+    "mtime": 1785958359.2506125,
+    "ast_hash": "a99f9504a213f2102d310ab335c6d984",
+    "semantic_hash": "a99f9504a213f2102d310ab335c6d984"
+  },
+  "docs/research/vism-data/retranslated_chap19/pe_chap18.final.json": {
+    "mtime": 1785835225.1047943,
+    "ast_hash": "ce53d932b40a12d02037b98aa7f3e27a",
+    "semantic_hash": "ce53d932b40a12d02037b98aa7f3e27a"
+  },
+  "docs/research/vism-data/retranslated_chap19/pe_chap18.progress.json": {
+    "mtime": 1785835225.0979774,
+    "ast_hash": "ce53d932b40a12d02037b98aa7f3e27a",
+    "semantic_hash": "ce53d932b40a12d02037b98aa7f3e27a"
+  },
+  "docs/research/vism-data/retranslated_chap19/pe_chap19.final.json": {
+    "mtime": 1785958359.2556562,
+    "ast_hash": "ce53d932b40a12d02037b98aa7f3e27a",
+    "semantic_hash": "ce53d932b40a12d02037b98aa7f3e27a"
+  },
+  "docs/research/vism-data/retranslated_chap19/pe_chap19.progress.json": {
+    "mtime": 1785958359.2526274,
+    "ast_hash": "ce53d932b40a12d02037b98aa7f3e27a",
+    "semantic_hash": "ce53d932b40a12d02037b98aa7f3e27a"
+  },
+  "docs/research/vism-data/retranslated_chap19/processing_state.json": {
+    "mtime": 1785958359.257491,
+    "ast_hash": "60192e46587f6c3ddade250589465583",
+    "semantic_hash": "60192e46587f6c3ddade250589465583"
+  },
+  "docs/research/vism-data/retranslated_chap19/results.json": {
+    "mtime": 1785958359.2537637,
+    "ast_hash": "196a0ab5e701b7173494e269c48478b2",
+    "semantic_hash": "196a0ab5e701b7173494e269c48478b2"
+  },
+  "docs/research/vism-data/retranslated_chap19/review_samples.json": {
+    "mtime": 1785958359.2566936,
+    "ast_hash": "196a0ab5e701b7173494e269c48478b2",
+    "semantic_hash": "196a0ab5e701b7173494e269c48478b2"
+  },
+  "docs/research/vism-data/retranslated_chap19/terminology.json": {
+    "mtime": 1785834428.1280742,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap19/terminology_audit.json": {
+    "mtime": 1785958359.2573066,
+    "ast_hash": "e0de14a300b0dfe381cc01b134e32334",
+    "semantic_hash": "e0de14a300b0dfe381cc01b134e32334"
+  },
+  "docs/research/vism-data/retranslated_chap19/validation_report.json": {
+    "mtime": 1785958359.2571166,
+    "ast_hash": "a99f9504a213f2102d310ab335c6d984",
+    "semantic_hash": "a99f9504a213f2102d310ab335c6d984"
+  },
+  "docs/research/vism-data/retranslated_chap20/checkpoints/check_0100.json": {
+    "mtime": 1785835872.2019,
+    "ast_hash": "ceeda2063281d9e7c1e72d0cbf0fb484",
+    "semantic_hash": "ceeda2063281d9e7c1e72d0cbf0fb484"
+  },
+  "docs/research/vism-data/retranslated_chap20/checkpoints/check_0200.json": {
+    "mtime": 1785857557.8136227,
+    "ast_hash": "4beba71a9570259dcadb0b844ab36b28",
+    "semantic_hash": "4beba71a9570259dcadb0b844ab36b28"
+  },
+  "docs/research/vism-data/retranslated_chap20/checkpoints/check_0300.json": {
+    "mtime": 1785960926.1779025,
+    "ast_hash": "0bc797a479d6b817d93499561fe6183a",
+    "semantic_hash": "0bc797a479d6b817d93499561fe6183a"
+  },
+  "docs/research/vism-data/retranslated_chap20/pe_chap18.progress.json": {
+    "mtime": 1785835872.2103934,
+    "ast_hash": "4a4539c579716461e7946c4b1a32d4c2",
+    "semantic_hash": "4a4539c579716461e7946c4b1a32d4c2"
+  },
+  "docs/research/vism-data/retranslated_chap20/pe_chap20.progress.json": {
+    "mtime": 1785960926.19349,
+    "ast_hash": "5e21a74f76050bb8fbd3112eae88dd1d",
+    "semantic_hash": "5e21a74f76050bb8fbd3112eae88dd1d"
+  },
+  "docs/research/vism-data/retranslated_chap20/processing_state.json": {
+    "mtime": 1785964931.0873024,
+    "ast_hash": "54568ea45eef4fdc72842dfff32c9fc5",
+    "semantic_hash": "54568ea45eef4fdc72842dfff32c9fc5"
+  },
+  "docs/research/vism-data/retranslated_chap20/results.json": {
+    "mtime": 1785964931.0855563,
+    "ast_hash": "d8a382e2482370486784c5ce02024963",
+    "semantic_hash": "d8a382e2482370486784c5ce02024963"
+  },
+  "docs/research/vism-data/retranslated_chap20/terminology.json": {
+    "mtime": 1785835225.2327623,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap20_23_summary.json": {
+    "mtime": 1785958359.2577512,
+    "ast_hash": "37b522debb18fa7bbc1377ef644f66e6",
+    "semantic_hash": "37b522debb18fa7bbc1377ef644f66e6"
+  },
+  "docs/research/vism-data/retranslated_chap21/processing_state.json": {
+    "mtime": 1785925192.1654747,
+    "ast_hash": "bec20cdeb775ce58cdb02e54ca801196",
+    "semantic_hash": "bec20cdeb775ce58cdb02e54ca801196"
+  },
+  "docs/research/vism-data/retranslated_chap21/terminology.json": {
+    "mtime": 1785925191.5902977,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap22/processing_state.json": {
+    "mtime": 1785925193.7626302,
+    "ast_hash": "4bcb1dfc6453329b00c6e02987ae29a9",
+    "semantic_hash": "4bcb1dfc6453329b00c6e02987ae29a9"
+  },
+  "docs/research/vism-data/retranslated_chap22/terminology.json": {
+    "mtime": 1785925193.5758772,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/retranslated_chap23/processing_state.json": {
+    "mtime": 1785925196.0912344,
+    "ast_hash": "7ad5bc156f170a376c8447a92b1fc510",
+    "semantic_hash": "7ad5bc156f170a376c8447a92b1fc510"
+  },
+  "docs/research/vism-data/retranslated_chap23/terminology.json": {
+    "mtime": 1785925195.6960716,
+    "ast_hash": "76f5ae584ae98b58e982513c9344c304",
+    "semantic_hash": "76f5ae584ae98b58e982513c9344c304"
+  },
+  "docs/research/vism-data/vism_index.json": {
+    "mtime": 1783121712.5765603,
+    "ast_hash": "5c26d50c951e0ccc8c6ffec9f084f5de",
+    "semantic_hash": "5c26d50c951e0ccc8c6ffec9f084f5de"
+  },
+  "docs/research/vism-data/zh_chap01.json": {
+    "mtime": 1782949121.4614575,
+    "ast_hash": "eaee13ddcf879f53ca8da39d2e4ee8a0",
+    "semantic_hash": "eaee13ddcf879f53ca8da39d2e4ee8a0"
+  },
+  "docs/research/vism-data/zh_chap02.json": {
+    "mtime": 1782949121.4688876,
+    "ast_hash": "d5fb71e5d25df523fea270bbeafef317",
+    "semantic_hash": "d5fb71e5d25df523fea270bbeafef317"
+  },
+  "docs/research/vism-data/zh_chap03.json": {
+    "mtime": 1782949121.4774635,
+    "ast_hash": "c2c1085be17855fd6abea9892a7cf66b",
+    "semantic_hash": "c2c1085be17855fd6abea9892a7cf66b"
+  },
+  "docs/research/vism-data/zh_chap04.json": {
+    "mtime": 1782949121.4900136,
+    "ast_hash": "c38828a50741f8d0846a91b99fea9360",
+    "semantic_hash": "c38828a50741f8d0846a91b99fea9360"
+  },
+  "docs/research/vism-data/zh_chap05.json": {
+    "mtime": 1782949121.4955313,
+    "ast_hash": "ffe07426bf9411fda5b742fe4f22fbdb",
+    "semantic_hash": "ffe07426bf9411fda5b742fe4f22fbdb"
+  },
+  "docs/research/vism-data/zh_chap06.json": {
+    "mtime": 1782949121.501411,
+    "ast_hash": "855045d41147879da17a45965100973a",
+    "semantic_hash": "855045d41147879da17a45965100973a"
+  },
+  "docs/research/vism-data/zh_chap07.json": {
+    "mtime": 1782949121.5143607,
+    "ast_hash": "01750617dd6e0604ef0248d95eaaf340",
+    "semantic_hash": "01750617dd6e0604ef0248d95eaaf340"
+  },
+  "docs/research/vism-data/zh_chap08.json": {
+    "mtime": 1782949121.5350335,
+    "ast_hash": "5101dbbda7d105efeb5bef3bc6e1241d",
+    "semantic_hash": "5101dbbda7d105efeb5bef3bc6e1241d"
+  },
+  "docs/research/vism-data/zh_chap09.json": {
+    "mtime": 1782949121.561105,
+    "ast_hash": "94f8da75343dba3d6bece916886ff756",
+    "semantic_hash": "94f8da75343dba3d6bece916886ff756"
+  },
+  "docs/research/vism-data/zh_chap10.json": {
+    "mtime": 1782949121.589461,
+    "ast_hash": "f95278cbddccebdddb690f44975374f4",
+    "semantic_hash": "f95278cbddccebdddb690f44975374f4"
+  },
+  "docs/research/vism-data/zh_chap11.json": {
+    "mtime": 1782949121.7152767,
+    "ast_hash": "8de1f608970b9362346ddef323ce06ba",
+    "semantic_hash": "8de1f608970b9362346ddef323ce06ba"
+  },
+  "docs/research/vism-data/zh_chap12.json": {
+    "mtime": 1782949121.8477886,
+    "ast_hash": "12a993ac5337e9377116a55fe965f65e",
+    "semantic_hash": "12a993ac5337e9377116a55fe965f65e"
+  },
+  "docs/research/vism-data/zh_chap13.json": {
+    "mtime": 1782949121.8761625,
+    "ast_hash": "38c8752822e94176568f663d2f5ff590",
+    "semantic_hash": "38c8752822e94176568f663d2f5ff590"
+  },
+  "docs/research/vism-data/zh_chap14.json": {
+    "mtime": 1782949121.9006903,
+    "ast_hash": "68d52f1512c4a98941314c4a919324c6",
+    "semantic_hash": "68d52f1512c4a98941314c4a919324c6"
+  },
+  "docs/research/vism-data/zh_chap15.json": {
+    "mtime": 1782949121.9095254,
+    "ast_hash": "dfe57c746ef134716d35efc09bc921f4",
+    "semantic_hash": "dfe57c746ef134716d35efc09bc921f4"
+  },
+  "docs/research/vism-data/zh_chap16.json": {
+    "mtime": 1782949121.9294717,
+    "ast_hash": "1f237566edb1c3fd629600fa8d6c8d8a",
+    "semantic_hash": "1f237566edb1c3fd629600fa8d6c8d8a"
+  },
+  "docs/research/vism-data/zh_chap17.json": {
+    "mtime": 1782949122.015179,
+    "ast_hash": "182e575681e04e0880fdf203e624c333",
+    "semantic_hash": "182e575681e04e0880fdf203e624c333"
+  },
+  "docs/research/vism-data/zh_chap18.json": {
+    "mtime": 1782949122.275028,
+    "ast_hash": "d3877217a33a437b9cb7660f6352b539",
+    "semantic_hash": "d3877217a33a437b9cb7660f6352b539"
+  },
+  "docs/research/vism-data/zh_chap19.json": {
+    "mtime": 1782949122.280608,
+    "ast_hash": "021ec6774a1e3dfe6ebbd3d498d3ae23",
+    "semantic_hash": "021ec6774a1e3dfe6ebbd3d498d3ae23"
+  },
+  "docs/research/vism-data/zh_chap20.json": {
+    "mtime": 1782949122.2902758,
+    "ast_hash": "0e18384e1731ec2b2b335b838aa305c8",
+    "semantic_hash": "0e18384e1731ec2b2b335b838aa305c8"
+  },
+  "docs/research/vism-data/zh_chap21.json": {
+    "mtime": 1782949122.3103492,
+    "ast_hash": "178b4c3335adaad4c0b17d2b47e859a0",
+    "semantic_hash": "178b4c3335adaad4c0b17d2b47e859a0"
+  },
+  "docs/research/vism-data/zh_chap22.json": {
+    "mtime": 1782949122.3269384,
+    "ast_hash": "37e566a8ec6eabef7169cf5cab28d82d",
+    "semantic_hash": "37e566a8ec6eabef7169cf5cab28d82d"
+  },
+  "docs/research/vism-data/zh_chap23.json": {
+    "mtime": 1782949122.3358018,
+    "ast_hash": "9cf1ee93ca72c1328e0ff1e03f669264",
+    "semantic_hash": "9cf1ee93ca72c1328e0ff1e03f669264"
+  },
+  "docs/research/vism-data/zh_conclusion.json": {
+    "mtime": 1783120522.904261,
+    "ast_hash": "2b3f2b72748b39f8d2489a168b922973",
+    "semantic_hash": "2b3f2b72748b39f8d2489a168b922973"
+  },
+  "docs/research/vism-data/zh_nidana.json": {
+    "mtime": 1782950088.1829495,
+    "ast_hash": "b86240013402474561b19f97459123d4",
+    "semantic_hash": "b86240013402474561b19f97459123d4"
+  },
+  "docs/research/vism-data/zh_toc.json": {
+    "mtime": 1783120522.9053886,
+    "ast_hash": "a0853bd5e164a66afb632b4ffc51ebac",
+    "semantic_hash": "a0853bd5e164a66afb632b4ffc51ebac"
+  },
+  "docs/suttas.json": {
+    "mtime": 1782901569.7186713,
+    "ast_hash": "b658c138702ba504740a01a793a2128c",
+    "semantic_hash": "b658c138702ba504740a01a793a2128c"
+  },
+  "parse_markdown.py": {
+    "mtime": 1782902716.445489,
+    "ast_hash": "28c561f984cac808841e28487572794e",
+    "semantic_hash": "28c561f984cac808841e28487572794e"
+  }
+}

@@ -251,6 +251,14 @@
     document.head.appendChild(style);
   }
 
+  function injectPaliInlineCss() {
+    if (document.getElementById('tipitaka-pali-inline-css')) return;
+    const style = document.createElement('style');
+    style.id = 'tipitaka-pali-inline-css';
+    style.textContent = '.tipitaka-pali{font-style:italic;color:var(--pali-color,var(--primary,#6b4f2d));font-size:.95em;line-height:1.6;margin-bottom:6px;overflow-wrap:break-word;word-break:break-word}.tipitaka-pali-token{all:unset;display:inline;font:inherit;color:inherit;cursor:pointer}.tipitaka-pali-token:hover{ text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.tipitaka-pali-token:focus{outline:2px solid color-mix(in srgb,var(--primary,#6b4f2d) 45%,transparent);outline-offset:2px;border-radius:2px}';
+    document.head.appendChild(style);
+  }
+
   function readerToolbar(meta, current, hitState) {
     const s = settings();
     const hitNote = hitState?.total ? `<span class="tipitaka-note">搜索“${esc(hitState.query || '')}” · 命中 ${hitState.index + 1}/${hitState.total}</span><button data-t-action="hit-prev">上一处</button><button data-t-action="hit-next">下一处</button>` : hitState?.query ? `<span class="tipitaka-note">搜索“${esc(hitState.query)}”${hitState.semantic ? ' · 语义相关（实际相关术语可能不同）' : ''}</span>` : '';
@@ -305,7 +313,18 @@
     const text = strip(value), out = []; let cursor = 0;
     for (const match of text.matchAll(words)) {
       out.push(esc(text.slice(cursor, match.index)));
-      out.push(`<button type="button" class="tipitaka-pali-token" data-pali-token="${esc(match[0])}" aria-label="查词 ${esc(match[0])}">${esc(match[0])}</button>`);
+      out.push(`<span class="tipitaka-pali-token" data-pali-token="${esc(match[0])}" role="button" tabindex="0" aria-label="查词 ${esc(match[0])}">${esc(match[0])}</span>`);
+      cursor = match.index + match[0].length;
+    }
+    return out.join('') + esc(text.slice(cursor));
+  }
+
+  function paliTokensHighlightHtml(value, term, matchedTerms) {
+    const text = strip(value), out = []; let cursor = 0;
+    for (const match of text.matchAll(words)) {
+      out.push(esc(text.slice(cursor, match.index)));
+      const marked = highlightHtml(match[0], term, 'pali', false, null, matchedTerms);
+      out.push(`<span class="tipitaka-pali-token" data-pali-token="${esc(match[0])}" role="button" tabindex="0" aria-label="查词 ${esc(match[0])}">${marked}</span>`);
       cursor = match.index + match[0].length;
     }
     return out.join('') + esc(text.slice(cursor));
@@ -315,7 +334,7 @@
     const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position, hit?.terms);
-    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? show('pali', strip(row.pali_text)) : paliTokensHtml(row.pali_text)}</div>`);
+    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? paliTokensHighlightHtml(row.pali_text, term, hit?.terms) : paliTokensHtml(row.pali_text)}</div>`);
     if (s.zh && displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
       const effective = isHitRow && lang === 'zh' ? show('zh', value) : esc(chineseDisplay(value));
@@ -384,7 +403,7 @@
       requestAnimationFrame(measure);
     };
     const targetFor = rowId => windowEl.querySelector(`[data-t-row="${String(rowId)}"]`);
-    const scrollToIndex = (requestedIndex, align = 'center') => {
+    const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0) => {
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), rowId = work.rows[index]?.id, token = ++positionToken;
       if (positionRaf) cancelAnimationFrame(positionRaf);
       let attempts = 0;
@@ -399,7 +418,9 @@
           return;
         }
         const paneRect = pane.getBoundingClientRect(), rowRect = element.getBoundingClientRect();
-        const desired = align === 'top' ? paneRect.top + 12 : paneRect.top + pane.clientHeight / 2;
+        const desired = align === 'anchor'
+          ? paneRect.top + Number(targetOffset || 0)
+          : align === 'top' ? paneRect.top + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > paneRect.top && rowRect.top < paneRect.bottom;
         if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
@@ -410,7 +431,9 @@
       };
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
-      pane.scrollTop = clampScroll(offsetFor(index) - (align === 'top' ? 12 : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2)));
+      pane.scrollTop = clampScroll(offsetFor(index) - (align === 'anchor'
+        ? Number(targetOffset || 0)
+        : align === 'top' ? 12 : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2)));
       draw(true);
       const frame = requestAnimationFrame(() => { if (positionRaf !== frame) return; positionRaf = 0; settle(); });
       positionRaf = frame;
@@ -421,7 +444,28 @@
     pane.addEventListener('scroll', schedule, { passive: true }); resize?.observe(pane);
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
-    return { pane, offsetFor, draw, scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex), destroy: () => { destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); } };
+    const getAnchor = () => {
+      const index = indexAt(pane.scrollTop + 1), row = work.rows[index];
+      if (!row) return null;
+      const element = targetFor(row.id), paneRect = pane.getBoundingClientRect();
+      return {
+        rowId: Number(row.id),
+        offset: element ? element.getBoundingClientRect().top - paneRect.top : 12,
+      };
+    };
+    return {
+      pane,
+      offsetFor,
+      draw,
+      getAnchor,
+      scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex),
+      restoreAnchor: anchor => {
+        if (!anchor?.rowId) return;
+        const index = indexById.get(Number(anchor.rowId));
+        if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
+      },
+      destroy: () => { destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); },
+    };
   }
 
   function searchTextForRow(row, language) {
@@ -445,8 +489,8 @@
     } catch { return []; }
   }
 
-  async function renderReader(workId) {
-    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss();
+  async function renderReader(workId, preserveAnchor = null) {
+    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss();
     const renderId = ++state.readerRequest;
     state.reader?.virtual?.destroy?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
@@ -471,13 +515,14 @@
         if (target?.positions?.length) hit.position = target.positions.includes(hit.position) ? hit.position : target.positions[0];
         if (target?.matchedTerms?.length) hit.terms = target.matchedTerms;
       }
-      const currentRowId = hit?.rowId || requestedRowId;
+      const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
       state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null };
       app.innerHTML = `${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中：“${esc(hit.query)}”，已定位到目标段。` : ''}</div><div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px"><div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar">${jumpButtons(work.rows[currentIndex])}</div>`;
       state.reader.virtual = renderVirtual(meta, work, overlays, currentIndex, hit);
-      state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
+      if (preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
+      else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
@@ -499,15 +544,18 @@
   }
   function bindReader() {
     app.onclick = async event => {
-      const token = event.target.closest('[data-pali-token]');
-      if (token) { await showDictionary(token.dataset.paliToken); return; }
       const paliEl = event.target.closest('.tipitaka-pali');
-      if (paliEl) { const selected = window.getSelection()?.toString().trim(); if (selected) { await showDictionary(selected); return; } }
+      if (paliEl) {
+        const selected = window.getSelection()?.toString().trim();
+        if (selected) { await showDictionary(selected); return; }
+        const token = event.target.closest('[data-pali-token]');
+        if (token) { await showDictionary(token.dataset.paliToken); return; }
+      }
       const button = event.target.closest('button,[data-t-action]'); if (!button) return;
       const reader = state.reader, action = button.dataset.tAction;
       if (!reader) return;
       if (action === 'back') { location.hash = '#/tipitaka'; return; }
-      if (action === 'font-up' || action === 'font-down') { settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id); return; }
+      if (action === 'font-up' || action === 'font-down') { const anchor = reader.virtual?.getAnchor(); settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id, anchor); return; }
       if (action === 'auto') { toggleAutoScroll(); return; }
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
@@ -517,7 +565,21 @@
       if (action === 'draft-zh') await draftTranslation(reader.meta, row);
       if (action === 'history') await showHistory(reader.meta.id, row.id);
     };
-    app.onchange = event => { const toggle = event.target.dataset.tToggle; if (toggle) { settings()[toggle] = event.target.checked; saveSettings(); renderReader(state.reader.meta.id); } };
+    app.onkeydown = async event => {
+      const token = event.target.closest?.('[data-pali-token]');
+      if (token && (event.key === 'Enter' || event.key === ' ')) {
+        event.preventDefault(); await showDictionary(token.dataset.paliToken);
+      }
+    };
+    app.onchange = event => {
+      const toggle = event.target.dataset.tToggle;
+      if (toggle) {
+        const anchor = state.reader?.virtual?.getAnchor();
+        settings()[toggle] = event.target.checked;
+        saveSettings();
+        renderReader(state.reader.meta.id, anchor);
+      }
+    };
   }
   function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => pane.scrollTop += settings().speed / 10, 50); }
   async function saveBookmark(meta, row) { try { const result = await fetch(`${API}/bookmarks`, { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ work_id: meta.id, row_id: row.id, label: `${meta.title} · ${row.paranum || row.id}` }) }); if (!result.ok) throw new Error('请先登录后收藏'); alert('已收藏'); } catch (e) { alert(e.message); } }

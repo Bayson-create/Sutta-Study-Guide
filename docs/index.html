@@ -530,6 +530,43 @@ a:hover { text-decoration: underline; }
 
 /* Visuddhimagga (清净之道) reader */
 .vism-chapter-grid { margin-top: 20px; }
+.upanishads-project-card { border-color: color-mix(in srgb, var(--accent) 34%, var(--border)); }
+.upanishads-gate { margin: 18px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--accent-bg); color: var(--text-light); line-height: 1.8; }
+.upanishads-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin:18px 0; }
+.upanishads-search-bar { display:flex; gap:10px; align-items:center; margin:16px 0 20px; }
+.upanishads-search-bar input { flex:1 1 360px; min-width:0; }
+.upanishads-scope-drawer { position:fixed; inset:0; z-index:1200; display:flex; justify-content:flex-end; background:rgba(20,18,14,.32); }
+.upanishads-scope-panel { width:min(560px,100%); height:100%; display:flex; flex-direction:column; background:var(--card-bg); box-shadow:-12px 0 34px rgba(0,0,0,.16); }
+.upanishads-scope-head { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:18px 22px; border-bottom:1px solid var(--border); }
+.upanishads-scope-head h3 { margin:0; color:var(--accent); }
+.upanishads-scope-body { flex:1 1 auto; overflow:auto; padding:18px 22px; }
+.upanishads-scope-group { margin:0 0 14px; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+.upanishads-scope-group-head { display:flex; align-items:center; gap:9px; padding:12px 14px; background:var(--accent-bg); font-weight:700; }
+.upanishads-scope-works { padding:4px 14px 10px 42px; }
+.upanishads-scope-work { display:flex; align-items:flex-start; gap:9px; padding:8px 0; color:var(--text); line-height:1.45; }
+.upanishads-scope-foot { flex:0 0 auto; display:flex; justify-content:space-between; gap:10px; align-items:center; padding:14px 22px; border-top:1px solid var(--border); background:var(--card-bg); }
+.upanishads-selected-tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 16px; }
+.upanishads-selected-tag { padding:3px 8px; border-radius:999px; border:1px solid var(--border); color:var(--accent); font-size:.82em; background:var(--accent-bg); }
+.upanishads-result-list { list-style:none; padding:0; margin:0; }
+.upanishads-result-list li { padding:14px 0; border-top:1px solid var(--border); }
+.upanishads-result-list a { color:var(--text); text-decoration:none; }
+.upanishads-result-list a:hover .upanishads-result-title { color:var(--accent); }
+.upanishads-result-title { font-weight:700; color:var(--accent); }
+.upanishads-result-meta { display:block; margin-top:4px; color:var(--text-light); font-size:.82em; }
+.upanishads-result-snippet { margin:8px 0 0; line-height:1.85; color:var(--text); }
+.upanishads-result-snippet mark { background:#fce9a8; border-radius:3px; padding:1px 2px; }
+.upanishads-reader { max-width:920px; margin:0 auto; }
+.upanishads-reader-head { margin:20px 0 26px; }
+.upanishads-reader-head h2 { color:var(--accent); margin-bottom:7px; }
+.upanishads-reader-note { color:var(--text-light); line-height:1.8; }
+.upanishads-section-nav { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 24px; }
+.upanishads-section-nav a { color:var(--accent); border-bottom:1px dashed var(--border); text-decoration:none; font-size:.88em; }
+.upanishads-block { margin:0 0 15px; line-height:2; scroll-margin-top:86px; }
+.upanishads-block.heading { color:var(--accent); font-weight:700; margin-top:24px; }
+.upanishads-block.note { color:var(--text-light); font-size:.9em; padding-left:1em; border-left:2px solid var(--border); }
+.upanishads-block.search-active { background:#fff4c8; box-shadow:0 0 0 6px #fff4c8; border-radius:4px; }
+.upanishads-block mark { background:#f8d86a; border-radius:3px; padding:1px 2px; }
+@media (max-width:700px) { .upanishads-search-bar { flex-wrap:wrap; } .upanishads-search-bar input { flex-basis:100%; } .upanishads-scope-foot { align-items:stretch; flex-direction:column; } }
 .vism-chapter-card { position: relative; }
 .vism-chapter-num { font-size: 0.75em; color: var(--text-light); letter-spacing: 0.04em; margin-bottom: 4px; }
 .vism-heading { color: var(--accent); font-weight: 700; margin: 22px 0 10px; }
@@ -800,6 +837,10 @@ a:hover { text-decoration: underline; }
 .trans-btn:disabled { opacity: 0.5; cursor: default; }
 .trans-meta { font-size: 0.72em; color: var(--text-light); margin-top: 3px; }
 .trans-meta .trans-reason-toggle { cursor: pointer; border-bottom: 1px dashed var(--text-light); }
+.trans-pending-save { margin-top: 8px; padding: 7px 9px; border: 1px solid #e4c77a; border-radius: 6px; background: #fff8e1; color: #7a5b12; font-size: 0.78em; }
+.trans-pending-save button { margin-left: 8px; padding: 3px 8px; border: 1px solid #c9a94f; border-radius: 5px; background: transparent; color: inherit; cursor: pointer; font: inherit; }
+.trans-save-status { margin-top: 7px; color: #8a5d00; font-size: 0.78em; }
+body.dark .trans-pending-save { background: rgba(126, 94, 18, 0.25); color: #f3d989; border-color: #8f742d; }
 .trans-note-view { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
 .trans-form { margin-top: 6px; padding: 10px; background: var(--accent-bg); border-radius: 6px; border: 1px solid var(--border); }
 .trans-form label { display: block; font-size: 0.75em; color: var(--text-light); margin: 6px 0 2px; }
@@ -1291,18 +1332,9 @@ window.addEventListener('unhandledrejection', (event) => {
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible') return;
 
-  if (gotamaSending && gotamaActiveController && Date.now() - gotamaLastChunkAt > 15000) {
-    gotamaActiveController.abort(); // triggers gotamaSend's existing catch-block recovery (keeps partial content if any, flags it)
-    if (gotamaActiveId) {
-      // The backend saves the user+assistant messages independently of
-      // whether the client is still watching (see routers/gotama.py's
-      // dedicated per-turn session) - the real answer is very likely
-      // already sitting in the database even though this tab's stream
-      // died before showing it. Give the abort's own catch block a beat
-      // to run first, then reconcile from the server's actual record.
-      setTimeout(() => { if (gotamaActiveId) gotamaLoadConversation(gotamaActiveId); }, 400);
-    }
-  }
+  // Do not abort a detached Gotama job merely because the page was
+  // backgrounded. A foreground transition is handled by the durable
+  // status/reconnect path instead.
 
   if (dhammaLastAiQuery && location.hash.startsWith('#/dhamma')) {
     const q = dhammaLastAiQuery;
@@ -1436,6 +1468,12 @@ function route() {
     const idPart = hash.slice('#/research/vism/read/'.length);
     const secParam = routeParams.get('sec');
     renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
+  } else if (hash === '#/research/upanishads') {
+    renderUpanishadsHome();
+  } else if (hash === '#/research/upanishads/search') {
+    renderUpanishadsSearch(routeParams.get('q') || '', routeParams.get('upscope') || 'g1', routeParams.get('cursor') || '');
+  } else if (hash.startsWith('#/research/upanishads/read/')) {
+    renderUpanishadsReader(hash.slice('#/research/upanishads/read/'.length), routeParams.get('block'), routeParams.get('hl') || '', routeParams.get('terms') || '');
   } else if (hash === '#/qa') {
     renderQAHome();
   } else if (hash.startsWith('#/qa/')) {
@@ -1476,7 +1514,7 @@ function route() {
   } else if (hash === '#/gotama') {
     renderGotamaChat(null);
   } else if (hash === '#/search') {
-    renderSearchPage(routeParams.get('q') || '', routeParams.get('scope'), routeParams.get('v4scope') || '', routeParams.get('v4types') || '');
+    renderSearchPage(routeParams.get('q') || '', routeParams.get('scope'), routeParams.get('v4scope') || '', routeParams.get('v4types') || '', routeParams.get('upscope') || '');
   } else {
     renderHome();
   }
@@ -1547,10 +1585,11 @@ const SEARCH_SINGLE_DOCS = [
 // reader searching this site's own content has no reason to pay for
 // unless they ask.
 
-const SEARCH_SCOPE_LABELS = { site: '站内搜索', dhamma: '法义溯源', eb: 'Early Buddhist', v4: 'V4 全内容' };
-let searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false };
+const SEARCH_SCOPE_LABELS = { site: '站内搜索', dhamma: '法义溯源', eb: 'Early Buddhist', v4: 'V4 全内容', upanishads: '奥义书' };
+let searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false, upanishads: false };
 let searchV4ScopeSelections = [];
 let searchV4TypeSelections = [];
+let searchUpanishadsScopeSelections = ['g1'];
 
 // --- 法义溯源 scope: reuses the exact-then-fuzzy pipeline dhammaRunNormalSearch
 // already uses for its own search page, just returning data instead of
@@ -2076,6 +2115,40 @@ function searchV4EvidenceHref(evidence, fallbackQuery) {
   return `#/tipitaka/read/${encodeURIComponent(evidence.work_id)}?${params}`;
 }
 
+function searchUpanishadsEvidenceHref(evidence, fallbackQuery) {
+  if (!evidence?.work_id) return null;
+  const params = new URLSearchParams({
+    block: String(evidence.block_index || ''),
+    hl: evidence.query || fallbackQuery || '',
+    terms: (evidence.matched_terms || []).join('|'),
+  });
+  return `#/research/upanishads/read/${encodeURIComponent(evidence.work_id)}?${params}`;
+}
+
+function searchUpanishadsEvidence(run, query) {
+  if (!run || !Array.isArray(run.items)) return [];
+  return run.items.filter(item => item.match_level !== 'related').map(item => ({
+    kind: 'upanishads',
+    source: `奥义书 · ${item.title || item.work_id}`,
+    heading: item.path_text || item.section_id || '',
+    text: item.snippet || item.text_zh || '',
+    score: Number(item.score || 0) + (item.match_level === 'exact' ? 2 : 0),
+    work_id: item.work_id,
+    section_id: item.section_id,
+    block_id: item.block_id,
+    block_index: item.block_index,
+    language: 'zh',
+    query,
+    position: item.match_offset,
+    anchor: item.anchor || '',
+    matched_terms: item.matched_terms || [],
+    resource_type: 'corpus',
+    resource_locator: `${item.work_id}:${item.block_id || item.block_index || ''}`,
+    path: item.path || [],
+    _href: searchUpanishadsEvidenceHref({ ...item, query }, query),
+  }));
+}
+
 // Rank across everything found, then cap per document. The cap is what
 // buys coverage: without it a single long file that repeats the term can
 // fill the whole evidence budget and the answer silently reflects one
@@ -2100,6 +2173,7 @@ function searchSelectEvidence(run) {
   if (run.dhamma) addPool('dhamma', directOnly(searchDhammaEvidence(run.dhamma)), 8, 6);
   if (run.eb) addPool('eb', directOnly(searchEbEvidence(run.eb, run.query)), 8, 6);
   if (run.v4) addPool('v4', v4AiEvidenceOnly(searchV4Evidence(run.v4, run.query)), 16, 6);
+  if (run.upanishads) addPool('upanishads', searchUpanishadsEvidence(run.upanishads, run.query), 8, 6);
 
   const scored = [];
   for (const d of run.docs) {
@@ -2141,6 +2215,7 @@ function searchSelectEvidence(run) {
   const chosen = [], seen = new Set(), sourceCounts = new Map();
   const identity = item => `${item.resource_locator || item._href || item.source || ''}|${item.heading || ''}|${searchNormalize(String(item.text || '')).slice(0, 180)}`;
   const sourceKey = item => {
+    if (item.kind === 'upanishads') return `upanishads:work:${item.work_id || item.source || ''}`;
     if (item.kind === 'v4') {
       if (item.resource_type === 'corpus' && item.work_id) return `v4:work:${item.work_id}`;
       if (item.resource_locator) return `v4:${item.resource_type || 'resource'}:${item.resource_locator.split(':').slice(0, 2).join(':')}`;
@@ -2172,8 +2247,9 @@ function searchScopeCheckboxesHtml() {
   </label>`;
   return `<div class="search-scope-row">
     <span class="search-scope-label">范围：</span>
-    ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}
+    ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}${opt('upanishads')}
     <button type="button" class="v4-scope-button ${searchV4ScopeSelections.length ? 'is-active' : ''}" id="search-v4-scope-toggle" aria-label="筛选 V4 范围">${window.v4ScopeButtonHtml(searchV4ScopeSelections.length)}</button>
+    <button type="button" class="v4-scope-button ${searchUpanishadsScopeSelections.length ? 'is-active' : ''}" id="search-upanishads-scope-toggle" aria-label="筛选奥义书范围">${window.v4ScopeButtonHtml(searchUpanishadsScopeSelections.length, '筛选范围')}</button>
   </div>`;
 }
 
@@ -2190,17 +2266,39 @@ function searchScopeQueryString() {
   return Object.keys(SEARCH_SCOPE_LABELS).filter(k => searchActiveScopes[k]).join(',');
 }
 
-function searchScopeToggle(key, checked) {
+function searchScopeUrl(q) {
+  const params = new URLSearchParams({ q: q || '', scope: searchScopeQueryString() });
+  if (searchV4ScopeSelections.length) params.set('v4scope', searchV4ScopeSelections.join('|'));
+  if (searchV4TypeSelections.length) params.set('v4types', searchV4TypeSelections.join('|'));
+  if (searchUpanishadsScopeSelections.length) params.set('upscope', searchUpanishadsScopeSelections.join('|'));
+  return `#/search?${params}`;
+}
+
+async function searchScopeToggle(key, checked) {
+  if (key === 'upanishads' && checked) {
+    if (!(await communityRequireLogin())) {
+      const checkbox = document.querySelector('.search-scope-row input[data-scope="upanishads"]');
+      if (checkbox) checkbox.checked = false;
+      return;
+    }
+    try {
+      const access = await fetch(`${API_BASE}/api/research/upanishads/access`, { headers: communityAuthHeaders() }).then(r => r.json());
+      if (!access.allowed) throw new Error('该账号尚未获得奥义书阅读权限，请联系管理员授权。');
+    } catch (error) {
+      const checkbox = document.querySelector('.search-scope-row input[data-scope="upanishads"]');
+      if (checkbox) checkbox.checked = false;
+      alert(error.message || '无法验证奥义书访问权限');
+      return;
+    }
+  }
   searchActiveScopes[key] = checked;
   const input = document.getElementById('siteSearchInput');
   const q = (input && input.value || '').trim();
-  const next = `#/search?q=${encodeURIComponent(q)}&scope=${encodeURIComponent(searchScopeQueryString())}`;
-  const withV4Scope = searchV4ScopeSelections.length ? `${next}&v4scope=${encodeURIComponent(searchV4ScopeSelections.join('|'))}` : next;
-  const withV4 = searchV4TypeSelections.length ? `${withV4Scope}&v4types=${encodeURIComponent(searchV4TypeSelections.join('|'))}` : withV4Scope;
-  if (location.hash === withV4) renderSearchPage(q, searchScopeQueryString(), searchV4ScopeSelections.join('|'), searchV4TypeSelections.join('|')); else location.hash = withV4;
+  const next = searchScopeUrl(q);
+  if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), searchV4ScopeSelections.join('|'), searchV4TypeSelections.join('|'), searchUpanishadsScopeSelections.join('|')); else location.hash = next;
 }
 
-async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam = '') {
+async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam = '', upanishadsScopeParam = '') {
   const mySeq = ++searchSeq;
   q = (q || '').trim();
   // scopeParam is only absent (URLSearchParams.get returns null when the key
@@ -2209,12 +2307,14 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
   // the all-unchecked case.
   if (scopeParam != null) {
     const set = new Set(scopeParam.split(',').filter(Boolean));
-    searchActiveScopes = { site: set.has('site'), dhamma: set.has('dhamma'), eb: set.has('eb'), v4: set.has('v4') };
+    searchActiveScopes = { site: set.has('site'), dhamma: set.has('dhamma'), eb: set.has('eb'), v4: set.has('v4'), upanishads: set.has('upanishads') };
   } else {
-    searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false };
+    searchActiveScopes = { site: true, dhamma: false, eb: false, v4: false, upanishads: false };
   }
   searchV4ScopeSelections = String(v4ScopeParam || '').split('|').filter(Boolean);
   searchV4TypeSelections = String(v4TypesParam || '').split('|').filter(Boolean);
+  searchUpanishadsScopeSelections = String(upanishadsScopeParam || '').split('|').filter(Boolean);
+  if (!searchUpanishadsScopeSelections.length) searchUpanishadsScopeSelections = ['g1'];
 
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>🔍 全站搜索</h2><div class="cat-en">Full-text search across the sutta guide, every research document, 法义溯源 and Early Buddhist</div></div>`;
@@ -2241,10 +2341,26 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
           if (scopes.length) params.set('v4scope', scopes.join('|'));
           if (types.length) params.set('v4types', types.join('|'));
           const next = `#/search?${params}`;
-          if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), scopes.join('|'), types.join('|')); else location.hash = next;
+          if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), scopes.join('|'), types.join('|'), searchUpanishadsScopeSelections.join('|')); else location.hash = next;
         } });
       } catch (error) { alert(`V4 目录加载失败：${error.message}`); }
       finally { window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length }); }
+    };
+  }
+
+  const upanishadsScopeToggle = document.getElementById('search-upanishads-scope-toggle');
+  if (upanishadsScopeToggle) {
+    upanishadsScopeToggle.hidden = !searchActiveScopes.upanishads;
+    upanishadsScopeToggle.onclick = async () => {
+      window.setV4ScopeButtonState(upanishadsScopeToggle, { count: searchUpanishadsScopeSelections.length, loading: true });
+      try {
+        await window.openUpanishadsScopeDrawer({ scopes: searchUpanishadsScopeSelections, onApply: ({ scopes }) => {
+          searchUpanishadsScopeSelections = scopes.length ? scopes : ['g1'];
+          const next = searchScopeUrl(q);
+          if (location.hash === next) renderSearchPage(q, searchScopeQueryString(), searchV4ScopeSelections.join('|'), searchV4TypeSelections.join('|'), searchUpanishadsScopeSelections.join('|')); else location.hash = next;
+        } });
+      } catch (error) { alert(`奥义书范围加载失败：${error.message}`); }
+      finally { window.setV4ScopeButtonState(upanishadsScopeToggle, { count: searchUpanishadsScopeSelections.length }); }
     };
   }
 
@@ -2271,7 +2387,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
   const len = needle.length;
   let totalHits = 0;
   const run = { query: q, needle, docs: [], suttaHits: [], dhamma: null, eb: null, v4: null };
-  const scopeStatus = { site: '', dhamma: '', eb: '', v4: '' };
+  const scopeStatus = { site: '', dhamma: '', eb: '', v4: '', upanishads: '' };
   const setStatus = () => {
     status.textContent = Object.values(scopeStatus).filter(Boolean).join(' ｜ ') || '检索中…';
   };
@@ -2519,11 +2635,64 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
     setStatus();
   }
 
+  async function runUpanishadsScope() {
+    scopeStatus.upanishads = '奥义书：检索中…';
+    setStatus();
+    try {
+      const params = new URLSearchParams({ q, scope: searchUpanishadsScopeSelections.join('|'), page_size: '40', mode: 'explore' });
+      const response = await fetch(`${API_BASE}/api/research/upanishads/search?${params}`, { headers: communityAuthHeaders() });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.detail?.message || data.detail || `HTTP ${response.status}`);
+      if (mySeq !== searchSeq) return;
+      const sectionId = `upanishads-search-${mySeq}`;
+      const items = Array.isArray(data.results) ? data.results : [];
+      run.upanishads = { items, total: Number(data.total || items.length), next_cursor: data.next_cursor || null, scope: searchUpanishadsScopeSelections.slice() };
+      const hitHtml = item => {
+        const href = searchUpanishadsEvidenceHref({ ...item, query: q }, q);
+        const terms = item.matched_terms || [];
+        let snippet = esc(item.snippet || item.text_zh || '');
+        for (const term of terms.sort((a, b) => b.length - a.length)) {
+          const safe = esc(term);
+          if (safe) snippet = snippet.split(safe).join(`<mark>${safe}</mark>`);
+        }
+        const level = item.match_level === 'exact' ? '精确短语命中' : item.match_level === 'core' ? '核心词命中' : '相关词命中';
+        return `<li><a href="${href}"><span class="upanishads-result-title">${esc(item.title || item.work_id)} · ${esc(item.section_id || '')}</span><span class="upanishads-result-meta">${esc((item.path || []).join(' / '))} · ${level}</span><p class="upanishads-result-snippet">${snippet}</p></a></li>`;
+      };
+      results.insertAdjacentHTML('beforeend', wrapScope('upanishads', `<div class="dhamma-layer-section open" id="${sectionId}"><div class="dhamma-layer-section-head"><span>奥义书检索结果<span class="meta" style="margin-left:8px">默认第一组 · 点击进入授权阅读器并定位高亮</span></span><span class="count">${run.upanishads.total.toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list" data-upanishads-list>${items.map(hitHtml).join('')}</ul><div class="tipitaka-page" data-upanishads-page></div></div></div>`));
+      const section = document.getElementById(sectionId);
+      const list = section.querySelector('[data-upanishads-list]');
+      const pageBox = section.querySelector('[data-upanishads-page]');
+      const loadMore = async () => {
+        if (!run.upanishads.next_cursor) return;
+        const nextParams = new URLSearchParams({ q, scope: searchUpanishadsScopeSelections.join('|'), page_size: '40', mode: 'explore', cursor: run.upanishads.next_cursor });
+        const nextResponse = await fetch(`${API_BASE}/api/research/upanishads/search?${nextParams}`, { headers: communityAuthHeaders() });
+        const next = await nextResponse.json();
+        if (!nextResponse.ok) throw new Error(next.detail?.message || next.detail || '加载下一页失败');
+        const more = Array.isArray(next.results) ? next.results : [];
+        run.upanishads.items.push(...more);
+        run.upanishads.next_cursor = next.next_cursor || null;
+        list.insertAdjacentHTML('beforeend', more.map(hitHtml).join(''));
+        pageBox.innerHTML = run.upanishads.next_cursor ? '<button type="button" data-upanishads-next>加载下一页</button>' : '<span class="meta">已加载全部结果</span>';
+        pageBox.querySelector('[data-upanishads-next]')?.addEventListener('click', loadMore);
+        searchRenderSynthPrompt();
+      };
+      pageBox.innerHTML = run.upanishads.next_cursor ? '<button type="button" data-upanishads-next>加载下一页</button><span class="meta">已加载 40 条 · 总数完整</span>' : '<span class="meta">已加载全部结果</span>';
+      pageBox.querySelector('[data-upanishads-next]')?.addEventListener('click', loadMore);
+      totalHits += run.upanishads.total;
+      scopeStatus.upanishads = `奥义书：命中 ${run.upanishads.total.toLocaleString()} 处`;
+    } catch (error) {
+      run.upanishads = { items: [], total: 0, next_cursor: null, scope: searchUpanishadsScopeSelections.slice() };
+      scopeStatus.upanishads = `奥义书：${error.message || error}`;
+    }
+    setStatus();
+  }
+
   const jobs = [];
   if (searchActiveScopes.site) jobs.push(runSiteScope());
   if (searchActiveScopes.dhamma) jobs.push(runDhammaScope());
   if (searchActiveScopes.eb) jobs.push(runEbScope());
   if (searchActiveScopes.v4) jobs.push(runV4Scope());
+  if (searchActiveScopes.upanishads) jobs.push(runUpanishadsScope());
   await Promise.all(jobs);
 
   if (mySeq !== searchSeq) return;
@@ -2579,9 +2748,9 @@ const AI_JOB_KEY_PREFIX = 'sutta_ai_job_';
 // they're still waiting on - don't ambush them with it days later.
 const AI_JOB_MAX_AGE_MS = 3600000;
 
-function aiJobRemember(kind, jobId, ref) {
+function aiJobRemember(kind, jobId, ref, seq = 0) {
   try {
-    localStorage.setItem(AI_JOB_KEY_PREFIX + kind, JSON.stringify({ job_id: jobId, ref, ts: Date.now() }));
+    localStorage.setItem(AI_JOB_KEY_PREFIX + kind, JSON.stringify({ job_id: jobId, ref, seq: Number(seq) || 0, ts: Date.now() }));
   } catch (e) { /* private mode / quota - reattach is a bonus, not a requirement */ }
 }
 
@@ -2626,12 +2795,21 @@ async function aiJobConsume(res, onEvent) {
   }
 }
 
-async function aiJobAttach(jobId, onEvent) {
-  const res = await fetch(`${API_BASE}/api/ai-jobs/${encodeURIComponent(jobId)}/stream`, {
+async function aiJobAttach(jobId, onEvent, afterSeq = 0) {
+  const query = Number(afterSeq) > 0 ? '?after_seq=' + encodeURIComponent(Number(afterSeq)) : '';
+  const res = await fetch(API_BASE + '/api/ai-jobs/' + encodeURIComponent(jobId) + '/stream' + query, {
     headers: communityAuthHeaders(),
   });
-  if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+  if (!res.ok) throw Object.assign(new Error('HTTP ' + res.status), { status: res.status });
   await aiJobConsume(res, onEvent);
+}
+
+async function aiJobStatus(jobId) {
+  const res = await fetch(API_BASE + '/api/ai-jobs/' + encodeURIComponent(jobId), {
+    headers: communityAuthHeaders(),
+  });
+  if (!res.ok) throw Object.assign(new Error('HTTP ' + res.status), { status: res.status });
+  return res.json();
 }
 
 // --- search synthesis over the streaming endpoint ---
@@ -2666,7 +2844,7 @@ function searchSynthHandler(query, evidence, onDone) {
       aiJobForget('search_synth');
       const ev = evidence || (evt.passages || []).map(p => ({
         ...p,
-        _href: p.kind === 'v4' ? searchV4EvidenceHref(p, query) : null,
+        _href: p.kind === 'v4' ? searchV4EvidenceHref(p, query) : p.kind === 'upanishads' ? searchUpanishadsEvidenceHref(p, query) : null,
       }));
       searchRenderSynthesis({ query, needle: searchNormalize(query) }, ev, evt);
       if (onDone) onDone();
@@ -2705,7 +2883,8 @@ async function searchRunSynthesis() {
           work_id: e.work_id ?? null, row_id: e.row_id ?? null, language: e.language ?? null,
           query: e.query ?? run.query, position: e.position ?? null, anchor: e.anchor ?? null,
           paranum: e.paranum ?? null, resource_type: e.resource_type ?? null,
-          resource_locator: e.resource_locator ?? null, path: e.path ?? [],
+          resource_locator: e.resource_locator ?? null, section_id: e.section_id ?? null,
+          block_index: e.block_index ?? null, matched_terms: e.matched_terms ?? [], path: e.path ?? [],
         })),
       }),
     });
@@ -2778,7 +2957,7 @@ function searchRenderSynthesis(run, evidence, data) {
 
   const items = evidence.map((e, idx) => {
     const i = idx + 1;
-    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : (e._href || null));
+    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : e.kind === 'upanishads' ? searchUpanishadsEvidenceHref(e, run.query) : (e._href || null));
     const title = `${esc(e.source)}${e.heading ? ' · ' + esc(e.heading) : ''}`;
     // Evidence with no exact in-page anchor (Early Buddhist without a usable
     // uid) opens that site's own search, already run, in a new tab; the badge
@@ -2815,7 +2994,7 @@ function searchSynthesisMarkdown(state) {
   const { run, evidence, data } = state;
   const lines = [`# AI 综合回答：${run.query}`, '', data.answer || '', '', '## 引用'];
   evidence.forEach((e, i) => {
-    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : (e._href || ''));
+    const href = e._doc ? searchHitHref(e._doc, e._hit, run.query, run.needle.length) : (e.kind === 'v4' ? searchV4EvidenceHref(e, run.query) : e.kind === 'upanishads' ? searchUpanishadsEvidenceHref(e, run.query) : (e._href || ''));
     const absolute = href ? new URL(href, location.href).href : '';
     lines.push(`- [${i + 1}] ${e.source || '来源'}${e.heading ? ` · ${e.heading}` : ''}${absolute ? ` — ${absolute}` : ''}`);
     if (e.text) lines.push(`  > ${String(e.text).replace(/\n+/g, ' ')}`);
@@ -2899,9 +3078,10 @@ function siteSearchGo() {
   params.set('scope', searchScopeQueryString());
   if (searchV4ScopeSelections.length) params.set('v4scope', searchV4ScopeSelections.join('|'));
   if (searchV4TypeSelections.length) params.set('v4types', searchV4TypeSelections.join('|'));
+  if (searchUpanishadsScopeSelections.length) params.set('upscope', searchUpanishadsScopeSelections.join('|'));
   const qs = params.toString();
   const next = qs ? `#/search?${qs}` : '#/search';
-  if (location.hash === next) renderSearchPage(v, searchScopeQueryString(), searchV4ScopeSelections.join('|'), searchV4TypeSelections.join('|'));
+  if (location.hash === next) renderSearchPage(v, searchScopeQueryString(), searchV4ScopeSelections.join('|'), searchV4TypeSelections.join('|'), searchUpanishadsScopeSelections.join('|'));
   else location.hash = next;
 }
 
@@ -3212,6 +3392,11 @@ function renderResearchHome() {
     <span class="icon">🪷</span>
     <div class="title">清净之道</div>
     <div class="desc">《清净道论》二十三品全本三语阅读器 — 巴利语·英语·中文对照，逐品研读戒、定、慧三学</div>
+  </div>`;
+  html += `<div class="research-item-card upanishads-project-card" onclick="location.hash='#/research/upanishads'">
+    <span class="icon">🕉️</span>
+    <div class="title">奥义书</div>
+    <div class="desc">《奥义书》私有研究项目——十三部奥义书、导言、分组目录、章节阅读与授权全文检索</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/theravada-mahayana'">
     <span class="icon">🕉️</span>
@@ -3943,14 +4128,55 @@ function renderMajjhimaHome() {
 // login. Loaded once per doc_key per page load; edits patch the cache
 // in-place, no full-page reload needed to see them.
 const TRANS_DOC_CACHE = {};       // doc_key -> { doc_key, units: {unit_key: unitObj} }
+const TRANS_DOC_ERRORS = {};      // doc_key -> true when the overlay could not be loaded
 const TRANS_STATIC_MAP = {};      // "doc|unit" -> { pali, context, text, note } (from static JSON, for cancel/mitra)
 const TRANS_PENDING_MITRA = {};   // "doc|unit" -> translated text awaiting overwrite confirmation
+const TRANS_SAVE_PREFIX = 'sutta_translation_save:';
+const TRANS_SAVE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+
+function transSaveStorageKey(docKey, unitKey) {
+  return TRANS_SAVE_PREFIX + encodeURIComponent(`${docKey}|${unitKey}`);
+}
+function transPendingLoad(docKey, unitKey) {
+  try {
+    const raw = localStorage.getItem(transSaveStorageKey(docKey, unitKey));
+    if (!raw) return null;
+    const value = JSON.parse(raw);
+    if (!value || !value.request_id || !value.body || Date.now() - (value.created_at || 0) > TRANS_SAVE_TTL_MS) {
+      localStorage.removeItem(transSaveStorageKey(docKey, unitKey));
+      return null;
+    }
+    return value;
+  } catch (e) { return null; }
+}
+function transPendingSave(docKey, unitKey, requestId, body) {
+  try {
+    localStorage.setItem(transSaveStorageKey(docKey, unitKey), JSON.stringify({ request_id: requestId, body, created_at: Date.now() }));
+  } catch (e) { /* browser storage is best effort; server idempotency remains authoritative */ }
+}
+function transPendingClear(docKey, unitKey) {
+  try { localStorage.removeItem(transSaveStorageKey(docKey, unitKey)); } catch (e) {}
+}
+function transNewRequestId() {
+  return crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+function transIsRetryableError(error) {
+  return error?.retryable || error instanceof TypeError || /failed to fetch|load failed|networkerror|503|502|504/i.test(String(error?.message || ''));
+}
+function transDelay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 async function transLoadDoc(docKey) {
   if (TRANS_DOC_CACHE[docKey]) return TRANS_DOC_CACHE[docKey];
-  const data = await fetch(`${API_BASE}/api/translations?doc=${encodeURIComponent(docKey)}`)
-    .then(r => r.ok ? r.json() : { doc_key: docKey, units: {} })
-    .catch(() => ({ doc_key: docKey, units: {} }));
+  let data;
+  try {
+    const res = await fetch(`${API_BASE}/api/translations?doc=${encodeURIComponent(docKey)}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+    delete TRANS_DOC_ERRORS[docKey];
+  } catch (e) {
+    TRANS_DOC_ERRORS[docKey] = true;
+    data = { doc_key: docKey, units: {} };
+  }
   TRANS_DOC_CACHE[docKey] = data;
   return data;
 }
@@ -3972,16 +4198,40 @@ async function transSave(docKey, unitKey, body) {
   // falls back to the first non-empty write on the backend.
   if (requestBody.default_text === undefined) requestBody.default_text = staticRow.text || '';
   if (requestBody.pali_sha1 === undefined && staticRow.pali) requestBody.pali_sha1 = await transPaliSha1(staticRow.pali);
-  const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-    body: JSON.stringify(requestBody),
-  });
-  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
-  const unit = await res.json();
-  const doc = TRANS_DOC_CACHE[docKey] || (TRANS_DOC_CACHE[docKey] = { doc_key: docKey, units: {} });
-  doc.units[unitKey] = unit;
-  return unit;
+  const serialized = JSON.stringify(requestBody);
+  const previous = transPendingLoad(docKey, unitKey);
+  const requestId = previous && JSON.stringify(previous.body) === serialized ? previous.request_id : transNewRequestId();
+  transPendingSave(docKey, unitKey, requestId, requestBody);
+  let lastError = null;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json', 'X-Idempotency-Key': requestId, ...communityAuthHeaders() },
+        body: serialized,
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        const detail = data?.detail;
+        const error = new Error(typeof detail === 'object' ? (detail.message || '保存暂时不可用') : (detail || `保存失败（${res.status}）`));
+        error.status = res.status;
+        error.retryable = [502, 503, 504].includes(res.status);
+        throw error;
+      }
+      const unit = await res.json();
+      const doc = TRANS_DOC_CACHE[docKey] || (TRANS_DOC_CACHE[docKey] = { doc_key: docKey, units: {} });
+      doc.units[unitKey] = unit;
+      transPendingClear(docKey, unitKey);
+      return unit;
+    } catch (error) {
+      lastError = error;
+      if (!transIsRetryableError(error) || attempt === 3) break;
+      await transDelay(1000 * attempt);
+    }
+  }
+  const pendingError = new Error(lastError?.message || '后端暂时不可用，编辑已保留，请稍后重试。');
+  pendingError.retryable = true;
+  throw pendingError;
 }
 async function transHistory(docKey, unitKey) {
   const res = await fetch(`${API_BASE}/api/translations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}/history`);
@@ -4031,6 +4281,12 @@ function transSlotHtml(docKey, unitKey, staticText, staticNote, pali, context) {
     const when = unit.updated_at ? new Date(unit.updated_at).toLocaleDateString('zh-CN') : '';
     html += `<div class="trans-meta">最后由 ${who} 修改${when ? ' · ' + when : ''} · 理由：${esc(unit.last_reason)}</div>`;
   }
+  if (transPendingLoad(docKey, unitKey)) {
+    html += '<div class="trans-pending-save">有一次保存尚未确认，当前编辑内容已保留。<button type="button" data-act="retry-pending">继续保存</button></div>';
+  }
+  if (TRANS_DOC_ERRORS[docKey]) {
+    html += '<div class="trans-save-status">翻译覆盖层暂时无法连接；当前显示的是默认译文，编辑内容仍可保留并稍后重试。</div>';
+  }
   if (communityCurrentUser) {
     html += `<div class="trans-actions">
       <button class="trans-btn" data-act="${isEmpty ? 'new' : 'edit'}">${isEmpty ? '＋ 新建译文' : '✎ 编辑'}</button>
@@ -4052,7 +4308,9 @@ function transRerenderSlot(docKey, unitKey) {
 function transRenderForm(docKey, unitKey, text, note, reasonPlaceholder) {
   const el = document.querySelector(`.trans-slot[data-doc="${CSS.escape(docKey)}"][data-unit="${CSS.escape(unitKey)}"]`);
   if (!el) return;
+  const pending = transPendingLoad(docKey, unitKey);
   el.innerHTML = `<div class="trans-form">
+    ${pending ? '<div class="trans-save-status">上次保存未确认；点击保存会继续使用同一请求，不会重复生成历史。</div>' : ''}
     <label>译文</label>
     <textarea data-role="text-input" rows="3">${esc(text || '')}</textarea>
     <label>注释</label>
@@ -4063,6 +4321,7 @@ function transRenderForm(docKey, unitKey, text, note, reasonPlaceholder) {
       <button class="trans-btn primary" data-act="save">保存</button>
       <button class="trans-btn" data-act="cancel">取消</button>
     </div>
+    <div class="trans-save-status" data-role="save-status" hidden></div>
   </div>`;
   el.querySelector('[data-role="text-input"]').focus();
 }
@@ -4095,8 +4354,15 @@ async function transHandleClick(e) {
       await transSave(docKey, unitKey, { text, note, reason, source: 'human' });
       transRerenderSlot(docKey, unitKey);
     } catch (err) {
-      alert(err.message);
+      const status = form.querySelector('[data-role="save-status"]');
+      if (status) { status.hidden = false; status.textContent = `${err.message} 内容已保留，可稍后重试。`; }
       saveBtn.disabled = false; saveBtn.textContent = '保存';
+    }
+  } else if (act === 'retry-pending') {
+    const pending = transPendingLoad(docKey, unitKey);
+    if (pending?.body) {
+      const s = TRANS_STATIC_MAP[key] || {};
+      transRenderForm(docKey, unitKey, pending.body.text || s.text, pending.body.note || s.note, '');
     }
   } else if (act === 'mitra') {
     const s = TRANS_STATIC_MAP[key] || {};
@@ -5170,6 +5436,215 @@ function renderResearchBodhi() {
 
   html += '</div>';
   app.innerHTML = html;
+}
+
+// === RESEARCH: UPANIṢADS (奥义书私有研究项目) ===
+let upanishadsCatalogCache = null;
+
+async function upanishadsRequest(path, options = {}) {
+  const response = await fetch(`${API_BASE}/api/research/upanishads/${path}`, { ...options, headers: { ...communityAuthHeaders(), ...(options.headers || {}) } });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.detail?.message || data.detail || `HTTP ${response.status}`);
+  return data;
+}
+
+async function upanishadsEnsureAccess() {
+  if (!(await communityRequireLogin())) {
+    app.innerHTML = `<div class="upanishads-gate"><strong>奥义书项目需要登录</strong><br>登录后，管理员可以直接阅读；其他账号需要管理员逐一授权。</div>`;
+    return false;
+  }
+  const access = await upanishadsRequest('access');
+  if (!access.allowed) {
+    app.innerHTML = `<div class="upanishads-gate"><strong>奥义书项目需要管理员授权</strong><br>当前账号尚未获得访问权限。请联系管理员指定后再阅读或检索。</div>`;
+    return false;
+  }
+  return true;
+}
+
+async function upanishadsLoadCatalog() {
+  if (!upanishadsCatalogCache) upanishadsCatalogCache = await upanishadsRequest('catalog');
+  return upanishadsCatalogCache;
+}
+
+function upanishadsSelectedCount(scopes, catalog) {
+  const ids = new Set();
+  (scopes || []).forEach(scope => {
+    const group = (catalog.groups || []).find(item => item.id === scope);
+    if (group) (group.work_ids || []).forEach(id => ids.add(id));
+    else if (scope.startsWith('work:')) ids.add(scope.slice(5));
+    else if (scope === 'intro') ids.add('intro');
+  });
+  return ids.size;
+}
+
+function upanishadsScopeNames(scopes, catalog) {
+  const names = [];
+  (scopes || []).forEach(scope => {
+    const group = (catalog.groups || []).find(item => item.id === scope);
+    if (group) names.push(group.title);
+    else if (scope === 'intro') names.push('导言');
+    else if (scope.startsWith('work:')) {
+      const work = (catalog.works || []).find(item => item.id === scope.slice(5));
+      if (work) names.push(work.title_zh);
+    }
+  });
+  return names;
+}
+
+window.openUpanishadsScopeDrawer = async function ({ scopes = ['g1'], onApply }) {
+  const catalog = await upanishadsLoadCatalog();
+  const selected = new Set(scopes.length ? scopes : ['g1']);
+  const overlay = document.createElement('div');
+  overlay.className = 'upanishads-scope-drawer';
+  overlay.innerHTML = `<aside class="upanishads-scope-panel" role="dialog" aria-modal="true" aria-labelledby="upanishads-scope-title">
+    <div class="upanishads-scope-head"><h3 id="upanishads-scope-title">筛选奥义书范围</h3><button type="button" class="tb-btn" data-up-close aria-label="关闭">×</button></div>
+    <div class="upanishads-scope-body"><p class="upanishads-reader-note">默认仅检索第一组。可选择整组、单独作品或整组与具体作品的组合；选择按并集合并并自动去重。</p><div class="upanishads-selected-tags" data-up-tags></div><div data-up-tree></div><label class="upanishads-scope-work"><input type="checkbox" data-up-scope="intro"> <span>导言（单独可选）</span></label></div>
+    <div class="upanishads-scope-foot"><button type="button" class="tb-btn" data-up-reset>恢复第一组</button><span class="meta" data-up-count></span><div><button type="button" class="tb-btn" data-up-cancel>取消</button><button type="button" class="community-primary-btn" data-up-apply>应用范围</button></div></div>
+  </aside>`;
+  document.body.appendChild(overlay);
+  const tree = overlay.querySelector('[data-up-tree]');
+  tree.innerHTML = (catalog.groups || []).map(group => {
+    const groupChecked = selected.has(group.id);
+    const works = (group.work_ids || []).map(workId => {
+      const work = (catalog.works || []).find(item => item.id === workId);
+      return work ? `<label class="upanishads-scope-work"><input type="checkbox" data-up-scope="work:${work.id}" ${selected.has(`work:${work.id}`) || groupChecked ? 'checked' : ''}> <span>${esc(work.title_zh)} <em>${esc(work.title_en)}</em></span></label>` : '';
+    }).join('');
+    return `<section class="upanishads-scope-group"><label class="upanishads-scope-group-head"><input type="checkbox" data-up-scope="${group.id}" ${groupChecked ? 'checked' : ''}><span>${esc(group.title)} · ${esc(group.subtitle)}（${(group.work_ids || []).length} 部）</span></label><div class="upanishads-scope-works">${works}</div></section>`;
+  }).join('');
+  const refresh = () => {
+    const names = upanishadsScopeNames([...selected], catalog);
+    overlay.querySelector('[data-up-tags]').innerHTML = names.length ? names.map(name => `<span class="upanishads-selected-tag">${esc(name)}</span>`).join('') : '<span class="meta">未选择</span>';
+    overlay.querySelector('[data-up-count]').textContent = `已选 ${upanishadsSelectedCount([...selected], catalog)} 部`;
+    overlay.querySelectorAll('[data-up-scope]').forEach(input => {
+      const value = input.dataset.upScope;
+      const group = (catalog.groups || []).find(item => item.id === value);
+      const workSelectedByGroup = value.startsWith('work:') && group?.work_ids?.includes(value.slice(5)) && selected.has(group.id);
+      input.checked = selected.has(value) || !!workSelectedByGroup;
+    });
+  };
+  overlay.querySelectorAll('[data-up-scope]').forEach(input => input.addEventListener('change', () => {
+    const value = input.dataset.upScope;
+    const group = (catalog.groups || []).find(item => item.id === value);
+    if (group) {
+      if (input.checked) {
+        selected.add(value);
+        (group.work_ids || []).forEach(workId => selected.delete(`work:${workId}`));
+      } else {
+        selected.delete(value);
+        (group.work_ids || []).forEach(workId => selected.delete(`work:${workId}`));
+      }
+    } else if (value.startsWith('work:')) {
+      const workId = value.slice(5);
+      const parent = (catalog.groups || []).find(item => (item.work_ids || []).includes(workId));
+      if (input.checked) {
+        if (parent && selected.has(parent.id)) {
+          selected.delete(parent.id);
+          (parent.work_ids || []).filter(id => id !== workId).forEach(id => selected.add(`work:${id}`));
+        }
+        selected.add(value);
+      } else {
+        selected.delete(value);
+        if (parent && selected.has(parent.id)) selected.delete(parent.id);
+      }
+    } else if (input.checked) selected.add(value); else selected.delete(value);
+    refresh();
+  }));
+  overlay.querySelector('[data-up-reset]').onclick = () => {
+    selected.clear(); selected.add('g1');
+    refresh();
+  };
+  const close = () => overlay.remove();
+  overlay.querySelector('[data-up-cancel]').onclick = close;
+  overlay.querySelector('[data-up-close]').onclick = close;
+  overlay.onclick = event => { if (event.target === overlay) close(); };
+  overlay.querySelector('[data-up-apply]').onclick = () => { const value = [...selected]; close(); onApply?.({ scopes: value }); };
+  refresh();
+  overlay.querySelector('[data-up-close]').focus();
+};
+
+function upanishadsHighlightText(text, query, terms = [], active = false) {
+  let html = esc(text || '');
+  const needles = [...new Set([...(terms || []), query || ''].filter(value => value && value.length > 1))].sort((a, b) => b.length - a.length);
+  for (const needle of needles) {
+    const safe = esc(needle);
+    if (safe) html = html.split(safe).join(`<mark>${safe}</mark>`);
+  }
+  return html;
+}
+
+async function renderUpanishadsHome() {
+  let html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button><div class="cat-header"><h2>🕉️ 奥义书</h2><div class="cat-en">Upaniṣads · Private Research Collection</div></div><div class="upanishads-gate">正在验证访问权限…</div>`;
+  app.innerHTML = html;
+  try {
+    if (!(await upanishadsEnsureAccess())) return;
+    const catalog = await upanishadsLoadCatalog();
+    html = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button><div class="cat-header"><h2>🕉️ 奥义书</h2><div class="cat-en">十三部奥义书 · 导言 · 中文全文阅读与授权检索</div></div><div class="upanishads-toolbar"><button class="community-primary-btn" onclick="location.hash='#/research/upanishads/search'">全文检索</button><span class="meta">默认检索第一组，可在检索页增加其他组或单部作品</span></div><div class="cards">`;
+    for (const group of catalog.groups || []) {
+      html += `<section class="research-item-card"><div class="title">${esc(group.title)}</div><div class="desc">${esc(group.subtitle)} · ${(group.work_ids || []).length} 部</div><div class="upanishads-section-nav">${(group.work_ids || []).map(id => { const work = (catalog.works || []).find(item => item.id === id); return work ? `<a href="#/research/upanishads/read/${encodeURIComponent(id)}">${esc(work.title_zh)}</a>` : ''; }).join('')}</div></section>`;
+    }
+    html += `<section class="research-item-card"><div class="title">导言</div><div class="desc">原书导言与背景说明</div><a href="#/research/upanishads/read/intro">打开导言</a></section></div>`;
+    app.innerHTML = html;
+  } catch (error) { app.innerHTML = `<div class="error-msg">奥义书项目加载失败：${esc(error.message || error)}</div>`; }
+}
+
+async function renderUpanishadsSearch(query, scopeParam, cursor) {
+  const scopes = String(scopeParam || 'g1').split('|').filter(Boolean);
+  let html = `<button class="back-btn" onclick="location.hash='#/research/upanishads'">← 返回奥义书目录</button><div class="cat-header"><h2>🔍 奥义书全文检索</h2><div class="cat-en">受授权保护 · 精确短语优先 · BM25 近似排序 · 章节高亮定位</div></div><div class="upanishads-toolbar"><button id="upanishads-search-scope" class="v4-scope-button is-active">${window.v4ScopeButtonHtml(upanishadsSelectedCount(scopes, upanishadsCatalogCache || { groups: [], works: [] }))}</button><span id="upanishads-scope-summary" class="meta">正在加载范围…</span></div><div class="upanishads-search-bar"><input id="upanishads-search-input" class="community-search" placeholder="搜索奥义书全文…" value="${esc(query)}"><button type="button" class="community-primary-btn" id="upanishads-search-submit">搜索</button></div><div id="upanishads-search-status" class="dhamma-empty-note"></div><div id="upanishads-search-results"></div>`;
+  app.innerHTML = html;
+  try {
+    if (!(await upanishadsEnsureAccess())) return;
+    const catalog = await upanishadsLoadCatalog();
+    const applyScope = ({ scopes: next }) => { const params = new URLSearchParams({ upscope: (next.length ? next : ['g1']).join('|') }); if (query) params.set('q', query); location.hash = `#/research/upanishads/search?${params}`; };
+    const scopeButton = document.getElementById('upanishads-search-scope');
+    scopeButton.innerHTML = window.v4ScopeButtonHtml(upanishadsSelectedCount(scopes, catalog), '筛选范围');
+    document.getElementById('upanishads-scope-summary').textContent = upanishadsScopeNames(scopes, catalog).join('、') || '第一组';
+    scopeButton.onclick = () => window.openUpanishadsScopeDrawer({ scopes, onApply: applyScope });
+    const input = document.getElementById('upanishads-search-input');
+    const run = async () => {
+      const q = input.value.trim();
+      if (!q) return;
+      const status = document.getElementById('upanishads-search-status');
+      const resultRoot = document.getElementById('upanishads-search-results');
+      status.textContent = '检索中…'; resultRoot.innerHTML = '';
+      const params = new URLSearchParams({ q, scope: scopes.join('|'), page_size: '40' });
+      if (cursor) params.set('cursor', cursor);
+      try {
+        const data = await upanishadsRequest(`search?${params}`);
+        const items = data.results || [];
+        resultRoot.innerHTML = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>命中结果</span><span class="count">${Number(data.total || items.length).toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list">${items.map(item => `<li><a href="${searchUpanishadsEvidenceHref({ ...item, query: q }, q)}"><span class="upanishads-result-title">${esc(item.title || item.work_id)} · ${esc(item.section_id || '')}</span><span class="upanishads-result-meta">${esc((item.path || []).join(' / '))} · ${esc(item.match_level || '')}</span><p class="upanishads-result-snippet">${upanishadsHighlightText(item.snippet || item.text_zh, q, item.matched_terms)}</p></a></li>`).join('')}</ul><div class="tipitaka-page">${data.next_cursor ? `<button type="button" onclick="location.hash='#/research/upanishads/search?${new URLSearchParams({ q, upscope: scopes.join('|'), cursor: data.next_cursor })}">下一页</button>` : ''}<span class="meta">每页 40 条 · 总数完整</span></div></div></div>`;
+        status.textContent = `命中 ${Number(data.total || items.length).toLocaleString()} 处`;
+      } catch (error) { status.textContent = `检索失败：${error.message || error}`; }
+    };
+    document.getElementById('upanishads-search-submit').onclick = run;
+    input.addEventListener('keydown', event => { if (event.key === 'Enter') run(); });
+    if (query) run();
+  } catch (error) { app.innerHTML = `<div class="error-msg">奥义书检索加载失败：${esc(error.message || error)}</div>`; }
+}
+
+async function renderUpanishadsReader(workId, blockParam, query, termsParam) {
+  app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载奥义书章节…</div></div>';
+  try {
+    if (!(await upanishadsEnsureAccess())) return;
+    const data = await upanishadsRequest(`works/${encodeURIComponent(workId)}`);
+    const blocks = data.blocks || [];
+    const terms = String(termsParam || '').split('|').filter(Boolean);
+    const sectionLinks = (data.sections || []).map(section => {
+      const first = blocks.find(block => block.section_id === section.id);
+      return `<a href="#${esc(first?.id || section.id)}">${esc(section.label)}</a>`;
+    }).join(' · ');
+    let html = `<div class="upanishads-reader"><button class="back-btn" onclick="location.hash='#/research/upanishads'">← 返回奥义书目录</button><div class="upanishads-reader-head"><h2>${esc(data.title_zh || workId)}</h2><div class="meta">${esc(data.title_en || '')} · 中文全文阅读</div></div><div class="upanishads-section-nav">${sectionLinks}</div><article id="upanishads-reader-body">`;
+    html += blocks.map(block => {
+      const active = blockParam && String(block.block_index || blocks.indexOf(block) + 1) === String(blockParam);
+      const blockId = block.id || `block-${blocks.indexOf(block) + 1}`;
+      return `<div id="${esc(blockId)}" data-upanishads-block="${blocks.indexOf(block) + 1}" class="upanishads-block ${esc(block.kind || '')}${active ? ' search-active' : ''}">${upanishadsHighlightText(block.text, query, terms, active)}</div>`;
+    }).join('');
+    html += '</article></div>';
+    app.innerHTML = html;
+    if (blockParam) requestAnimationFrame(() => {
+      const target = Array.from(document.querySelectorAll('[data-upanishads-block]')).find(node => node.dataset.upanishadsBlock === String(blockParam));
+      target?.scrollIntoView({ block: 'center', behavior: 'auto' });
+    });
+  } catch (error) { app.innerHTML = `<div class="error-msg">奥义书章节加载失败：${esc(error.message || error)}</div>`; }
 }
 
 // === RESEARCH: VISUDDHIMAGGA (清净之道) ===
@@ -7770,12 +8245,13 @@ async function communityDeleteSearchApiConfig() {
 async function communityRenderAdminMembersTab(content) {
   content.className = 'profile-section';
   content.innerHTML = '加载中…';
-  let users, requests, tavily;
+  let users, requests, tavily, upanishadsAccess;
   try {
-    [users, requests, tavily] = await Promise.all([
+    [users, requests, tavily, upanishadsAccess] = await Promise.all([
       fetch(`${API_BASE}/api/admin/users`, { headers: communityAuthHeaders() }).then(r => r.json()),
       fetch(`${API_BASE}/api/admin/quota-requests?status=pending`, { headers: communityAuthHeaders() }).then(r => r.json()),
       fetch(`${API_BASE}/api/admin/tavily-usage`, { headers: communityAuthHeaders() }).then(r => r.json()),
+      fetch(`${API_BASE}/api/admin/research-access/upanishads`, { headers: communityAuthHeaders() }).then(r => r.ok ? r.json() : []),
     ]);
   } catch (e) {
     content.className = 'error-msg';
@@ -7815,7 +8291,9 @@ async function communityRenderAdminMembersTab(content) {
       </div>
     </div>`).join('') : '<div class="community-empty">暂无待处理的申请</div>';
 
-  html += `<h3>成员与权限</h3>`;
+  const upanishadsGranted = new Set((upanishadsAccess || []).map(item => String(item.user_id)));
+  html += `<h3>成员与权限</h3>
+    <p class="meta">奥义书是私有研究项目。管理员自动可读；普通成员需要逐一授权，撤销后立即失去目录、正文、检索和 AI 引用权限。</p>`;
   html += users.map(u => `
     <div class="community-list-item">
       <div class="title">${communityEscape(u.display_name)} <span style="font-weight:400;color:var(--text-light)">${communityEscape(u.email)}</span></div>
@@ -7824,9 +8302,28 @@ async function communityRenderAdminMembersTab(content) {
         ${u.role === 'admin'
           ? `<button onclick="communitySetUserRole('${u.id}','member')">降级为成员</button>`
           : `<button onclick="communitySetUserRole('${u.id}','admin')">设为管理员</button>`}
+        ${u.role === 'admin'
+          ? `<span class="meta" style="margin-left:8px">管理员自动可读</span>`
+          : upanishadsGranted.has(String(u.id))
+            ? `<button onclick="communitySetResearchAccess('${u.id}', false)">撤销奥义书权限</button>`
+            : `<button onclick="communitySetResearchAccess('${u.id}', true)">授权奥义书</button>`}
       </div>
     </div>`).join('');
   content.innerHTML = html;
+}
+
+async function communitySetResearchAccess(userId, allowed) {
+  if (!confirm(allowed ? '确认授权该用户阅读和检索奥义书？' : '确认立即撤销该用户的奥义书权限？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/users/${encodeURIComponent(userId)}/research-access/upanishads`, {
+      method: allowed ? 'PUT' : 'DELETE', headers: communityAuthHeaders(),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.detail || '权限操作失败');
+    communityLoadProfileTab('admin-members', communityCurrentUser);
+  } catch (e) {
+    alert(e.message);
+  }
 }
 
 async function communitySetUserRole(userId, role) {
@@ -9424,6 +9921,9 @@ let gotamaEditingIndex = null;
 // from "the stream got interrupted while the tab was backgrounded".
 let gotamaActiveController = null;
 let gotamaLastChunkAt = 0;
+let gotamaStreamSeq = 0;
+let gotamaActiveJobId = null;
+let gotamaResumePromise = null;
 
 async function renderGotamaChat(conversationId) {
   const user = await communityFetchCurrentUser();
@@ -9518,58 +10018,147 @@ async function gotamaLoadConversation(id) {
 // rejoin it. The server kept generating regardless, so this replays what was
 // produced meanwhile and then follows the rest live - the answer is never
 // lost just because the page went away.
-async function gotamaResumeJob(conversationId) {
-  const pending = aiJobPending('gotama');
-  if (!pending || pending.ref !== String(conversationId) || gotamaSending) return;
-
-  const el = document.getElementById('gotamaMessages');
-  if (!el) return;
-  gotamaSending = true;
-  let resumedSuccessfully = false;
-  // The assistant slot the replayed deltas will stream into. The user's own
-  // message was committed server-side the moment it was received, so it is
-  // already in the history loaded above.
-  const existingAssistant = gotamaMessages[gotamaMessages.length - 1];
-  if (existingAssistant?.role === 'assistant' && (existingAssistant._streaming || existingAssistant._resumed)) {
-    existingAssistant._resumed = true;
-  } else {
-    gotamaMessages.push({ role: 'assistant', content: '', _resumed: true });
-  }
-  gotamaRenderMessages();
-  el.insertAdjacentHTML('beforeend', '<div class="gotama-thinking" id="gotamaThinking">正在接回离开时未完成的回答…</div>');
-
+async function gotamaFindPendingJob(conversationId) {
+  const ref = String(conversationId);
+  const local = aiJobPending('gotama');
+  if (local && local.ref === ref) return local;
   try {
-    await aiJobAttach(pending.job_id, (evt) => {
-      const thinking = () => document.getElementById('gotamaThinking');
-      if (evt.type === 'delta') {
-        const last = gotamaMessages[gotamaMessages.length - 1];
-        if (!last.content) thinking()?.remove();
-        last.content += evt.text;
-        const body = document.getElementById('gotamaLastAssistantBody');
-        if (body) body.innerHTML = gotamaRenderMarkdown(last.content);
-        el.scrollTop = el.scrollHeight;
-      } else if (evt.type === 'final') {
-        aiJobForget('gotama');
-        resumedSuccessfully = true;
-        thinking()?.remove();
-        gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
-        gotamaMessages[gotamaMessages.length - 1] = evt.assistant_message;
-      } else if (evt.type === 'error') {
-        aiJobForget('gotama');
-        thinking()?.remove();
-      }
+    const res = await fetch(API_BASE + '/api/ai-jobs/latest?kind=gotama&ref=' + encodeURIComponent(ref), {
+      headers: communityAuthHeaders(),
     });
-  } catch (e) {
-    aiJobForget('gotama');
-  } finally {
-    gotamaSending = false;
-    // Drop the placeholder if nothing ever arrived, so an interrupted turn
-    // doesn't leave an empty assistant bubble behind.
-    const last = gotamaMessages[gotamaMessages.length - 1];
-    if (last && last._resumed && !last.content) gotamaMessages.pop();
-    gotamaRenderMessages();
+    if (!res.ok) return null;
+    const data = await res.json();
+    const job = data.job;
+    if (!job || !['queued', 'running'].includes(job.status)) return null;
+    const found = { job_id: job.id, ref: job.ref, seq: 0, ts: Date.now() };
+    aiJobRemember('gotama', found.job_id, found.ref, found.seq);
+    return found;
+  } catch (_) {
+    return null;
   }
-  return resumedSuccessfully;
+}
+
+async function gotamaReloadPersistedConversation(conversationId) {
+  const res = await fetch(API_BASE + '/api/gotama/conversations/' + encodeURIComponent(conversationId), {
+    headers: communityAuthHeaders(),
+  });
+  if (!res.ok) return false;
+  const data = await res.json();
+  gotamaMessages = data.messages;
+  gotamaRenderConvList();
+  gotamaRenderMessages();
+  return true;
+}
+
+async function gotamaResumeJob(conversationId) {
+  if (gotamaResumePromise) return gotamaResumePromise;
+  if (gotamaSending) return false;
+  gotamaResumePromise = (async () => {
+    const pending = await gotamaFindPendingJob(conversationId);
+    if (!pending) return false;
+    const el = document.getElementById('gotamaMessages');
+    if (!el) return false;
+    gotamaSending = true;
+    gotamaActiveJobId = pending.job_id;
+    gotamaStreamSeq = Math.max(gotamaStreamSeq, Number(pending.seq) || 0);
+    let resumedSuccessfully = false;
+    let terminalError = '';
+    const existingAssistant = gotamaMessages[gotamaMessages.length - 1];
+    if (existingAssistant?.role === 'assistant' && existingAssistant.status !== 'completed') {
+      existingAssistant._resumed = true;
+    } else if (existingAssistant?.role === 'assistant' && (existingAssistant._streaming || existingAssistant._resumed)) {
+      existingAssistant._resumed = true;
+    } else {
+      gotamaMessages.push({ role: 'assistant', content: '', status: 'generating', _resumed: true });
+    }
+    gotamaRenderMessages();
+    el.insertAdjacentHTML('beforeend', '<div class="gotama-thinking" id="gotamaThinking">正在接回后台回答…</div>');
+
+    const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+    try {
+      for (let attempt = 0; attempt < 6 && !resumedSuccessfully && !terminalError; attempt += 1) {
+        try {
+          await aiJobAttach(pending.job_id, (evt) => {
+            const seq = Number(evt.seq) || 0;
+            if (seq > gotamaStreamSeq) {
+              gotamaStreamSeq = seq;
+              aiJobRemember('gotama', pending.job_id, pending.ref, gotamaStreamSeq);
+            }
+            const thinking = () => document.getElementById('gotamaThinking');
+            if (evt.type === 'heartbeat') {
+              if (thinking()) thinking().textContent = '后台仍在生成，正在保持连接…';
+            } else if (evt.type === 'delta') {
+              const last = gotamaMessages[gotamaMessages.length - 1];
+              if (!last || last.role !== 'assistant') return;
+              if (!last.content) thinking()?.remove();
+              last.content += evt.text || '';
+              const body = document.getElementById('gotamaLastAssistantBody');
+              if (body) body.innerHTML = gotamaRenderMarkdown(last.content);
+              el.scrollTop = el.scrollHeight;
+            } else if (evt.type === 'final') {
+              aiJobForget('gotama');
+              gotamaActiveJobId = null;
+              resumedSuccessfully = true;
+              thinking()?.remove();
+              if (gotamaMessages.length >= 2 && gotamaMessages[gotamaMessages.length - 2].role === 'user') {
+                gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
+              }
+              if (gotamaMessages.length && gotamaMessages[gotamaMessages.length - 1].role === 'assistant') {
+                gotamaMessages[gotamaMessages.length - 1] = evt.assistant_message;
+              } else {
+                gotamaMessages.push(evt.assistant_message);
+              }
+            } else if (evt.type === 'error') {
+              terminalError = evt.detail || '后台生成失败';
+              thinking()?.remove();
+            }
+          }, gotamaStreamSeq || Number(pending.seq) || 0);
+        } catch (_) {
+          // A fetch/SSE failure is only a lost listener. The job itself is
+          // checked below; no model call is started here.
+        }
+        if (resumedSuccessfully || terminalError) break;
+        let state = null;
+        try { state = await aiJobStatus(pending.job_id); } catch (_) {}
+        if (state?.status === 'done') {
+          aiJobForget('gotama');
+          gotamaActiveJobId = null;
+          await gotamaReloadPersistedConversation(conversationId);
+          resumedSuccessfully = true;
+          break;
+        }
+        if (state?.status === 'error') {
+          terminalError = state.error || '后台生成失败，原问题已保存';
+          break;
+        }
+        if (attempt < 5) await wait([0, 500, 1000, 2000, 4000, 8000][attempt + 1]);
+      }
+    } finally {
+      gotamaSending = false;
+      const thinking = document.getElementById('gotamaThinking');
+      thinking?.remove();
+      if (terminalError) {
+        const last = gotamaMessages[gotamaMessages.length - 1];
+        if (last?.role === 'assistant') {
+          last.status = 'failed';
+          last._flag = '<div class="gotama-msg-flag">⚠ 本次后台生成失败，问题和失败记录已保存，可重新发送。</div>';
+        }
+        aiJobForget('gotama');
+      } else if (!resumedSuccessfully) {
+        const last = gotamaMessages[gotamaMessages.length - 1];
+        if (last?.role === 'assistant') {
+          last._flag = '<div class="gotama-msg-flag">后台仍在生成，正在恢复连接；重新打开本对话会继续接收最终回答。</div>';
+        }
+      }
+      gotamaRenderMessages();
+    }
+    return resumedSuccessfully;
+  })();
+  try {
+    return await gotamaResumePromise;
+  } finally {
+    gotamaResumePromise = null;
+  }
 }
 
 function gotamaToggleSidebar(force) {
@@ -9840,7 +10429,15 @@ window.gotamaEarlyBuddhistPage = gotamaEarlyBuddhistPage;
 function gotamaSourcesHtml(sources) {
   const all = (sources || []).filter(s => s && s.source_type !== 'early_buddhist_search_set');
   const hasEarlySet = (sources || []).some(s => s?.source_type === 'early_buddhist_search_set');
-  const visible = hasEarlySet ? all.filter(s => s.source_type !== 'early_buddhist_passage') : all;
+  const citationEligible = source => {
+    if (source.citation_eligible === false) return false;
+    if (source.source_type !== 'search_result' && source.source_type !== 'fetched_page') return true;
+    try {
+      const parsed = new URL(source.url || '');
+      return !(parsed.hostname.replace(/^www\./, '') === 'suttacentral.net' && !parsed.hash);
+    } catch (_) { return true; }
+  };
+  const visible = (hasEarlySet ? all.filter(s => s.source_type !== 'early_buddhist_passage') : all).filter(citationEligible);
   if (!visible.length) return '';
   return `<details class="gotama-msg-sources"><summary>参考来源（${visible.length}）</summary><ul>${visible.map((s, i) => {
     const order = s.order || (i + 1);
@@ -9883,7 +10480,7 @@ function gotamaRenderMessages() {
         : '';
       return `<div class="gotama-msg-row user"><div class="gotama-msg user">${gotamaRenderMarkdown(m.content)}</div>${editRow}</div>`;
     }
-    const bodyId = i === gotamaMessages.length - 1 && m._streaming ? ' id="gotamaLastAssistantBody"' : '';
+    const bodyId = i === gotamaMessages.length - 1 && (m._streaming || m._resumed) ? ' id="gotamaLastAssistantBody"' : '';
     let icons = '';
     if (m.id && !m._streaming && !gotamaSending) {
       const copyBtn = `<button type="button" class="gotama-icon-btn" title="复制 Markdown" onclick="gotamaCopyMarkdown(${i}, this)">${_GOTAMA_ICON_COPY}</button>`;
@@ -9896,10 +10493,13 @@ function gotamaRenderMessages() {
     // Anchor the action row to a wrapper around the colored bubble. It is
     // positioned visually at the bubble's bottom-right, but removed from
     // normal flow so trace/source rows begin at their natural position.
-    const hasTrailingAssistantContent = Boolean((m.tool_trace && m.tool_trace.length) || (m.sources && m.sources.length) || m._flag || metaText);
+    const persistedFailure = m.status === 'failed' && !m.content && !m._flag
+      ? '<div class="gotama-msg-flag">⚠ 本次后台生成失败，问题和失败记录已保存，可重新发送。</div>'
+      : '';
+    const hasTrailingAssistantContent = Boolean((m.tool_trace && m.tool_trace.length) || (m.sources && m.sources.length) || m._flag || persistedFailure || metaText);
     const actionSpaceClass = icons && !hasTrailingAssistantContent ? ' reserve-action-space' : '';
     const actionRow = icons ? `<div class="gotama-msg-actions assistant">${icons}</div>` : '';
-    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble${actionSpaceClass}"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaEarlySearchesHtml(m.sources, m.id)}${gotamaSourcesHtml(m.sources)}${m._flag || ''}${metaText}</div></div>`;
+    return `<div class="gotama-msg-wrap assistant"><div class="gotama-msg assistant"><div class="gotama-msg-bubble${actionSpaceClass}"><div class="gotama-msg-body"${bodyId}>${gotamaRenderMarkdown(m.content)}</div>${actionRow}</div>${gotamaToolTraceHtml(m.tool_trace)}${gotamaEarlySearchesHtml(m.sources, m.id)}${gotamaSourcesHtml(m.sources)}${m._flag || persistedFailure}${metaText}</div></div>`;
   }).join('');
   el.scrollTop = el.scrollHeight;
 }
@@ -9990,6 +10590,8 @@ async function gotamaSend(overrideContent) {
   const requestId = (globalThis.crypto?.randomUUID && crypto.randomUUID()) || `gotama-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 
   gotamaSending = true;
+  gotamaStreamSeq = 0;
+  gotamaActiveJobId = null;
   const btn = document.getElementById('gotamaSendBtn');
   btn.disabled = true;
   btn.textContent = '思考中…';
@@ -10042,14 +10644,14 @@ async function gotamaSend(overrideContent) {
     // wasn't being watched. Reset on every received chunk instead (an
     // inactivity timeout, not a total-duration one) - a genuinely stuck
     // request still gets caught, a backgrounded-but-healthy one doesn't.
-    let timeoutId = setTimeout(() => controller.abort(), 150000);
-    const resetTimeout = () => { clearTimeout(timeoutId); timeoutId = setTimeout(() => controller.abort(), 150000); };
+    let timeoutId = setTimeout(() => controller.abort(), 330000);
+    const resetTimeout = () => { clearTimeout(timeoutId); timeoutId = setTimeout(() => controller.abort(), 330000); };
     const res = await communityWriteFetch(`${API_BASE}/api/gotama/conversations/${convId}/messages`, {
       method: 'POST',
       headers: Object.assign({ 'Content-Type': 'application/json' }, communityAuthHeaders()),
       body: JSON.stringify({ content, request_id: requestId }),
       signal: controller.signal,
-    }, { attempts: 3, timeoutMs: 150000, onRetry: attempt => { btn.textContent = `后端正在唤醒，重试中（${attempt}/2）…`; } });
+    }, { attempts: 3, timeoutMs: 330000, onRetry: attempt => { btn.textContent = `后端正在唤醒，重试中（${attempt}/2）…`; } });
     if (!res.ok) {
       let detail = '请求失败';
       try { detail = (await res.json()).detail || detail; } catch (_) {}
@@ -10080,8 +10682,19 @@ async function gotamaSend(overrideContent) {
         if (!line) continue;
         let evt;
         try { evt = JSON.parse(line.slice(5).trim()); } catch (_) { continue; }
+        const eventSeq = Number(evt.seq) || 0;
+        if (eventSeq > gotamaStreamSeq) {
+          gotamaStreamSeq = eventSeq;
+          const savedJob = aiJobPending('gotama');
+          const cursorJobId = evt.job_id || gotamaActiveJobId || savedJob?.job_id;
+          if (cursorJobId) {
+            aiJobRemember('gotama', cursorJobId, evt.ref || savedJob?.ref || String(gotamaActiveId || ''), gotamaStreamSeq);
+          }
+        }
 
-        if (evt.type === 'delta') {
+        if (evt.type === 'heartbeat') {
+          if (thinkingEl()) thinkingEl().textContent = '后台仍在生成，正在保持连接…';
+        } else if (evt.type === 'delta') {
           if (thinkingEl()) thinkingEl().textContent = '正在整理回答…';
           const last = gotamaMessages[gotamaMessages.length - 1];
           if (!last.content) thinkingEl()?.remove(); // only clear the status line once real text starts appearing
@@ -10120,10 +10733,13 @@ async function gotamaSend(overrideContent) {
           // Generation is detached server-side, so this handle is what
           // lets a reader who closes the tab mid-answer rejoin the same
           // turn when they come back (see gotamaResumeJob).
-          aiJobRemember('gotama', evt.job_id, evt.ref || String(gotamaActiveId || ''));
+          gotamaActiveJobId = evt.job_id;
+          gotamaStreamSeq = Number(evt.seq) || gotamaStreamSeq;
+          aiJobRemember('gotama', evt.job_id, evt.ref || String(gotamaActiveId || ''), gotamaStreamSeq);
         } else if (evt.type === 'final') {
           sawFinal = true;
           aiJobForget('gotama');
+          gotamaActiveJobId = null;
           gotamaMessages[gotamaMessages.length - 2] = evt.user_message;
           const elapsed = (performance.now() - startedAt) / 1000;
           let flag = '';
@@ -10161,16 +10777,57 @@ async function gotamaSend(overrideContent) {
   } catch (e) {
     gotamaSending = false;
     document.getElementById('gotamaThinking')?.remove();
-    const pending = gotamaActiveId ? aiJobPending('gotama') : null;
-    if (pending && pending.ref === String(gotamaActiveId)) {
-      // The detached job already has the stable request ID and continues
-      // generating even if the fetch stream died. Reattach before showing a
-      // failure message, so a transient mobile/Azure connection loss does
-      // not turn a valid answer into “Load failed”.
-      gotamaSending = false;
+    if (gotamaActiveId) {
+      // A lost POST/SSE connection is not a generation failure. Reattach to
+      // the same durable job and inspect its state before showing any error.
       try {
         if (await gotamaResumeJob(gotamaActiveId)) return;
-      } catch (_) { /* fall through to the durable, retryable error below */ }
+      } catch (_) { /* status check below remains authoritative */ }
+      const lastAfterResume = gotamaMessages[gotamaMessages.length - 1];
+      if (lastAfterResume?.status === 'failed') return;
+      const pending = aiJobPending('gotama');
+      if (pending && pending.ref === String(gotamaActiveId)) {
+        try {
+          const state = await aiJobStatus(pending.job_id);
+          if (state.status === 'done') {
+            aiJobForget('gotama');
+            await gotamaReloadPersistedConversation(gotamaActiveId);
+            return;
+          }
+          if (state.status === 'queued' || state.status === 'running') {
+            if (lastAfterResume?.role === 'assistant') {
+              lastAfterResume._flag = '<div class="gotama-msg-flag">后台仍在生成，正在恢复连接；重新打开本对话会继续接收最终回答。</div>';
+              lastAfterResume._streaming = false;
+            }
+            gotamaRenderMessages();
+            return;
+          }
+          if (state.status === 'error') {
+            aiJobForget('gotama');
+            await gotamaReloadPersistedConversation(gotamaActiveId);
+            return;
+          }
+        } catch (_) {
+          // The local job handle is durable evidence that the server accepted
+          // this turn. If the status request is also offline, keep the
+          // placeholder recoverable instead of inventing an incomplete answer.
+          if (lastAfterResume?.role === 'assistant') {
+            lastAfterResume._flag = '<div class="gotama-msg-flag">后台仍在生成，当前网络不可用；恢复网络或重新打开本对话即可继续接收。</div>';
+            lastAfterResume._streaming = false;
+          }
+          gotamaRenderMessages();
+          return;
+        }
+      }
+      if (pending) {
+        const lastPending = gotamaMessages[gotamaMessages.length - 1];
+        if (lastPending?.role === 'assistant') {
+          lastPending._flag = '<div class="gotama-msg-flag">后台仍在生成，正在恢复连接；重新打开本对话会继续接收最终回答。</div>';
+          lastPending._streaming = false;
+        }
+        gotamaRenderMessages();
+        return;
+      }
     }
     const msg = e.status === 402
       ? `${e.message} <a href="#/profile">前往账号页面</a>`
@@ -10227,7 +10884,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260809.6"></script>
+<script src="tipitaka-reader.js?v=20260810.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
