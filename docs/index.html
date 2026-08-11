@@ -530,6 +530,37 @@ a:hover { text-decoration: underline; }
 
 /* Visuddhimagga (清净之道) reader */
 .vism-chapter-grid { margin-top: 20px; }
+.vism-lecture-page { max-width: 1480px; margin: 0 auto; }
+.vism-lecture-head { margin: 18px 0 20px; padding: 22px 24px; border: 1px solid var(--border); border-radius: 16px; background: linear-gradient(135deg, var(--accent-bg), var(--card-bg)); box-shadow: var(--shadow); }
+.vism-lecture-kicker { margin-bottom: 6px; color: var(--text-light); font-size: .72em; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.vism-lecture-head h2 { margin: 0 0 8px; color: var(--accent); }
+.vism-lecture-head p { margin: 7px 0; color: var(--text-light); line-height: 1.8; }
+.vism-lecture-head a { color: var(--accent); }
+.vism-lecture-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.vism-lecture-stat { display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 999px; background: var(--card-bg); border: 1px solid var(--border); color: var(--text-light); font-size: .82em; }
+.vism-lecture-stat strong { color: var(--accent); }
+.vism-lecture-table-wrap { overflow-x: auto; overscroll-behavior-x: contain; margin: 18px 0; border: 1px solid var(--border); border-radius: 14px; background: var(--card-bg); box-shadow: 0 3px 14px rgba(80,60,30,.07); }
+.vism-lecture-table-wrap { scrollbar-color: var(--accent-light) transparent; scroll-behavior: smooth; }
+.vism-lecture-table { border-collapse: collapse; min-width: 920px; width: 100%; table-layout: fixed; font-size: .88em; line-height: 1.72; }
+.vism-lecture-table td, .vism-lecture-table th { border: 1px solid var(--border); padding: 8px 10px; vertical-align: top; min-width: 100px; color: var(--text); }
+.vism-lecture-table tr:first-child td { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
+.vism-lecture-table td:nth-child(1) { width: 9%; font-weight: 700; color: var(--accent); }
+.vism-lecture-table td:nth-child(2) { width: 13%; }
+.vism-lecture-table td:nth-child(3), .vism-lecture-table td:nth-child(4), .vism-lecture-table td:nth-child(5) { width: 19%; }
+.vism-lecture-cell-block { display: block; min-height: 1.35em; white-space: pre-wrap; overflow-wrap: anywhere; }
+.vism-lecture-cell-block + .vism-lecture-cell-block { margin-top: 3px; }
+.vism-lecture-blank { display: block; min-height: 1.35em; }
+.vism-lecture-item { display: block; color: inherit; text-decoration: none; border-radius: 5px; padding: 1px 3px; margin: -1px -3px; transition: background .15s, color .15s, box-shadow .15s; }
+.vism-lecture-item:hover, .vism-lecture-item:focus-visible { color: var(--accent); background: var(--accent-bg); box-shadow: 0 0 0 1px var(--accent-light); text-decoration: none; }
+.vism-lecture-item-unmapped { color: var(--text); }
+.vism-lecture-item-unmapped::after { content: ' · 待核对'; color: var(--text-light); font-size: .78em; }
+.vism-lecture-chapter-link { display: block; color: var(--accent); font-weight: 700; text-decoration: none; white-space: pre-wrap; }
+.vism-lecture-chapter-link:hover, .vism-lecture-chapter-link:focus-visible { text-decoration: underline; }
+.vism-lecture-table-index { margin: 24px 0 8px; color: var(--accent); font-size: 1em; }
+.vism-lecture-note { padding: 10px 14px; margin: 12px 0; border-left: 3px solid var(--accent-light); background: var(--accent-bg); color: var(--text-light); line-height: 1.7; font-size: .86em; }
+.vism-lecture-target { outline: 3px solid color-mix(in srgb, var(--accent) 50%, transparent); outline-offset: 4px; background: var(--accent-bg); border-radius: 8px; }
+.vism-lecture-target-message { margin: 10px 0; color: var(--accent); font-size: .86em; }
+.vism-lecture-target-message.is-error { color: #9a4a3a; background: #fff3ef; border: 1px solid #e7b7aa; border-radius: 8px; padding: 8px 10px; }
 .upanishads-project-card { border-color: color-mix(in srgb, var(--accent) 34%, var(--border)); }
 .upanishads-gate { margin: 18px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--accent-bg); color: var(--text-light); line-height: 1.8; }
 .upanishads-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin:18px 0; }
@@ -1228,6 +1259,9 @@ a.cite:hover { background: var(--accent); border-color: var(--accent); color: #f
   .dhamma-band-label { flex-direction: row; justify-content: center; gap: 8px; padding: 10px; }
   .dhamma-searchbar { flex-direction: column; align-items: stretch; }
   .dhamma-drilldown .text-list { columns: 1; }
+  .vism-lecture-head { padding: 17px 15px; }
+  .vism-lecture-table { min-width: 880px; font-size: .82em; }
+  .vism-lecture-table-wrap { margin-left: -2px; margin-right: -2px; border-radius: 10px; }
 }
 </style>
 </head>
@@ -1485,10 +1519,22 @@ function route() {
     renderVismToc();
   } else if (hash === '#/research/vism/summary') {
     renderVismSummary();
+  } else if (hash === '#/research/vism/lecture') {
+    renderVismLecture();
   } else if (hash.startsWith('#/research/vism/read/')) {
     const idPart = hash.slice('#/research/vism/read/'.length);
     const secParam = routeParams.get('sec');
-    renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null);
+    const readerTarget = {
+      mode: routeParams.get('mode') || '',
+      partIndex: parseInt(routeParams.get('part') || '', 10),
+      rowIndex: parseInt(routeParams.get('row') || '', 10),
+      paliHash: routeParams.get('pali_anchor') || '',
+      englishHash: routeParams.get('english_anchor') || '',
+      paliSnippet: routeParams.get('pali_snippet') || '',
+      englishSnippet: routeParams.get('english_snippet') || '',
+      itemId: routeParams.get('lecture_item') || '',
+    };
+    renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null, readerTarget);
   } else if (hash === '#/research/upanishads') {
     renderUpanishadsHome();
   } else if (hash === '#/research/upanishads/search') {
@@ -1626,11 +1672,62 @@ async function searchRunDhamma(q) {
   const titleMatches = dhammaIndex.filter(r => (r.title || '').includes(qTrad) || (r.author || '').includes(qTrad));
   const useFuzzy = q.length > 6;
   let hits = [];
+  let v4 = null;
   try {
     hits = useFuzzy ? await dhammaFuzzySentenceSearch(q, { limit: 200 }) : await dhammaFullTextSearch(q, { limit: 200 });
     if (!useFuzzy && hits.length === 0) hits = await dhammaFuzzySentenceSearch(q, { limit: 200 });
   } catch (e) { /* NO_INFORMATIVE_TERMS or similar - hits stays empty */ }
-  return { titleMatches, hits };
+  try { v4 = await searchDhammaV4Api(q); } catch (e) { v4 = { results: [], total: 0, error: e.message }; }
+  return { query: q, titleMatches, hits, v4 };
+}
+
+// The public V4 endpoint is the shared source for Dhamma Trace, the
+// standalone V4 reader, and dhamma-lineage.  Only mapped lineage layers are
+// requested here; the endpoint still returns a complete, cursor-paged total.
+async function searchDhammaV4Api(q, cursor = null) {
+  const params = new URLSearchParams({ q, lang: 'zh', limit: '40', types: 'corpus', layer: '1|2|4' });
+  if (cursor) params.set('cursor', cursor);
+  const response = await fetch(`${API_BASE}/api/tipitaka/v1/search?${params}`);
+  if (!response.ok) throw new Error(`V4 API ${response.status}`);
+  return response.json();
+}
+
+function v4DhammaResultHref(item, query) {
+  if (item.reader_url) return item.reader_url;
+  const params = new URLSearchParams({ row: String(item.row_id), hl: query, hl_lang: item.lang || 'zh', hl_anchor: item.anchor || item.snippet || '' });
+  if (item.positions?.length) params.set('hl_pos', String(item.positions[0]));
+  if (item.matched_terms?.length) params.set('hl_terms', item.matched_terms.join('|'));
+  return `#/tipitaka/read/${encodeURIComponent(item.work_id)}?${params}`;
+}
+
+function renderDhammaV4ApiResults(run, query, options = {}) {
+  const results = Array.isArray(run?.results) ? run.results : [];
+  if (!results.length) return run?.error ? `<p class="dhamma-empty-note">V4 三语本暂时不可用：${dhammaEscapeHtml(run.error)}</p>` : '<p class="dhamma-empty-note">V4 三语本未找到正文命中。</p>';
+  const groups = new Map([[1, []], [2, []], [4, []]]);
+  results.forEach(item => { if (groups.has(Number(item.lineage_layer))) groups.get(Number(item.lineage_layer)).push(item); });
+  let html = `<section class="dhamma-v4-source" data-v4-source><div class="dhamma-results-heading">V4 三语本 · ${Number(run.total || results.length).toLocaleString()} 处命中 <span class="source-tag keyword">公开只读 API</span></div>`;
+  for (const [layer, items] of groups) {
+    if (!items.length) continue;
+    html += `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>第${layer}层 · V4</span><span class="count">${items.length} 条</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">`;
+    html += items.map(item => `<li><a class="title" href="${dhammaEscapeHtml(v4DhammaResultHref(item, query))}">${dhammaEscapeHtml(item.title || item.work_id)}${item.paranum ? ` · ${dhammaEscapeHtml(item.paranum)}` : ''}</a><span class="source-tag keyword">V4 三语本</span><span class="meta">${dhammaEscapeHtml((item.path || []).join(' / '))}</span><p class="snippet">${dhammaHighlightSnippet(item.snippet || item.text || '')}</p></li>`).join('');
+    html += '</ul></div></div>';
+  }
+  if (run.next_cursor) html += `<button type="button" class="community-secondary-btn" data-v4-next="${dhammaEscapeHtml(run.next_cursor)}">加载下一页（当前 ${results.length} / ${Number(run.total).toLocaleString()}）</button>`;
+  html += '</section>';
+  return html;
+}
+
+function bindDhammaV4Pagination(root, query) {
+  const next = root?.querySelector('[data-v4-next]');
+  if (!next) return;
+  next.addEventListener('click', async () => {
+    next.disabled = true; next.textContent = '正在加载 V4 下一页…';
+    try {
+      const page = await searchDhammaV4Api(query, next.dataset.v4Next);
+      const source = next.closest('[data-v4-source]');
+      if (source) { source.outerHTML = renderDhammaV4ApiResults(page, query); bindDhammaV4Pagination(root, query); }
+    } catch (error) { next.disabled = false; next.textContent = `加载失败：${error.message}`; }
+  });
 }
 
 // --- Early Buddhist scope: bridges to https://bayson-create.github.io/Early-Buddhist,
@@ -2039,9 +2136,9 @@ function searchExpandPassage(blocks, bi) {
 // fill the whole evidence budget and the answer silently reflects one
 // source's view instead of the corpus's.
 function searchDhammaEvidence(dhammaRun) {
-  if (!dhammaRun || !dhammaRun.hits) return [];
+  if (!dhammaRun) return [];
   const out = [];
-  for (const item of dhammaRun.hits) {
+  for (const item of dhammaRun.hits || []) {
     const rec = dhammaIndexById.get(item.docId);
     if (!rec) continue;
     for (const m of item.matches.slice(0, 2)) {
@@ -2053,6 +2150,18 @@ function searchDhammaEvidence(dhammaRun) {
         _href: `#/dhamma/read/${encodeURIComponent(rec.id)}?off=${m.offset}&len=${m.term.length}`,
       });
     }
+  }
+  for (const item of dhammaRun.v4?.results || []) {
+    if (!item.work_id || ![1, 2, 4].includes(Number(item.lineage_layer))) continue;
+    out.push({
+      kind: 'v4', source: `V4 三语本 · 第${item.lineage_layer}层 · ${item.title || item.work_id}`,
+      heading: `${(item.path || []).join(' / ')}${item.paranum ? ` · ${item.paranum}` : ''}`,
+      text: item.snippet || item.text || '', score: 2.0 + Math.min(Number(item.score || 0) / 10, 2),
+      _href: v4DhammaResultHref(item, dhammaRun.query || ''), _external: true,
+      source_type: 'tipitaka_v4', work_id: item.work_id, row_id: item.row_id,
+      language: item.lang || 'zh', query: dhammaRun.query || '', anchor: item.anchor || '',
+      matched_terms: item.matched_terms || [],
+    });
   }
   return out;
 }
@@ -2501,6 +2610,12 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         dhammaHtml += `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>${esc(rec.title || rec.id)}</span><span class="count">${item.matches.length}${item.truncated ? '+' : ''} 处</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 5, '处')}</ul></div></div>`;
       }
       if (dhammaHtml) results.insertAdjacentHTML('beforeend', wrapScope('dhamma', dhammaHtml));
+      if (dhammaRun.v4) {
+        const v4Html = renderDhammaV4ApiResults(dhammaRun.v4, q);
+        results.insertAdjacentHTML('beforeend', wrapScope('dhamma', v4Html));
+        bindDhammaV4Pagination(results, q);
+        dhammaHits += Number(dhammaRun.v4.total || 0);
+      }
       totalHits += dhammaHits;
       scopeStatus.dhamma = `法义溯源：命中 ${dhammaHits} 处`;
     } catch (e) {
@@ -5746,6 +5861,12 @@ async function renderVismHome() {
       <div class="title">细目</div>
       <div class="desc">纸本版详细目录 — 逐品、逐节、逐条列出全书结构（原书页码，供参考）</div>
     </div>
+    <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/lecture'">
+      <span class="icon">📘</span>
+      <div class="vism-chapter-num">讲义</div>
+      <div class="title">讲义</div>
+      <div class="desc">完整导入《清净道论》读书表，按原表格位置展示；已核验项目连接到逐句三语阅读位置，其他项目明确标记待核对</div>
+    </div>
     <div class="research-item-card vism-chapter-card" onclick="location.hash=\'#/research/vism/summary\'">
       <span class="icon">📝</span>
       <div class="vism-chapter-num">深度总结</div>
@@ -5783,6 +5904,115 @@ async function renderVismHome() {
     app.querySelector('.loading').outerHTML = cardsHtml;
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">目录加载失败: ${e.message}</div>`;
+  }
+}
+
+function lectureUiText(value) {
+  return String(value || '')
+    .replace(/([\u3400-\u9fff])\s+(?=[\u3400-\u9fff])/g, '$1')
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n[ \t]+/g, '\n')
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
+}
+
+function lectureChineseNumber(value) {
+  const digits = { 零: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
+  const text = String(value || '').replaceAll('两', '二');
+  if (text === '十') return 10;
+  if (text.includes('十')) {
+    const [left, right] = text.split('十');
+    return (left ? digits[left] : 1) * 10 + (right ? digits[right] : 0);
+  }
+  return digits[text] || null;
+}
+
+function lectureChapterFromText(value) {
+  const compact = lectureUiText(value).replace(/\s+/g, '');
+  const match = compact.match(/第?([一二两三四五六七八九十]+)说/);
+  const number = match ? lectureChineseNumber(match[1]) : null;
+  return number && number >= 1 && number <= 23 ? number : null;
+}
+
+function lectureDisplayColumn(table, sourceColumn) {
+  const removed = (table.removed_page_ranges || []).filter(range => range[1] <= sourceColumn);
+  return sourceColumn - removed.reduce((sum, range) => sum + (range[1] - range[0]), 0);
+}
+
+function lectureItemId(tableId, row, col, block) {
+  return `${tableId}-r${String(row + 1).padStart(3, '0')}-c${String(col + 1).padStart(2, '0')}-b${String(block + 1).padStart(3, '0')}`;
+}
+
+function lectureCellHtml(table, cell, anchorsById) {
+  const cellChapter = cell.col === 1
+    ? lectureChapterFromText((cell.blocks || []).map(block => block.text || '').join(''))
+    : null;
+  const displayBlocks = (cell.blocks || []).map(block => {
+    const text = lectureUiText(block.text);
+    if (!text) return '<span class="vism-lecture-blank" aria-hidden="true"></span>';
+    const itemId = cell.col >= 2 && cell.col <= 4 ? lectureItemId(table.table_id, cell.row, cell.col, block.index) : '';
+    const anchor = itemId ? anchorsById.get(itemId) : null;
+    const content = esc(text);
+    if (cellChapter) {
+      return `<a class="vism-lecture-chapter-link vism-lecture-cell-block" href="#/research/vism/read/${cellChapter}?mode=parallel">${content}</a>`;
+    }
+    if (itemId) {
+      if (anchor && anchor.status === 'verified' && anchor.target) {
+        const target = anchor.target;
+        const params = new URLSearchParams({ mode: 'parallel', part: String(target.part_index), row: String(target.row_index), lecture_item: itemId });
+        if (target.pali_hash) params.set('pali_anchor', target.pali_hash);
+        if (target.english_hash) params.set('english_anchor', target.english_hash);
+        if (target.pali_snippet) params.set('pali_snippet', target.pali_snippet);
+        if (target.english_snippet) params.set('english_snippet', target.english_snippet);
+        return `<a class="vism-lecture-item vism-lecture-cell-block" href="#/research/vism/read/${anchor.chapter || target.chapter || ''}?${params}">${content}</a>`;
+      }
+      return `<span class="vism-lecture-item vism-lecture-item-unmapped vism-lecture-cell-block" title="${esc(anchor?.reason || '该项目尚未完成巴利语或英语唯一锚点核验')}" data-lecture-item="${esc(itemId)}">${content}</span>`;
+    }
+    return `<span class="vism-lecture-cell-block">${content}</span>`;
+  }).join('');
+  const col = lectureDisplayColumn(table, cell.col);
+  return `<td data-source-col="${cell.col + 1}" data-display-col="${col + 1}" colspan="${Math.max(1, cell.colspan || 1)}" rowspan="${Math.max(1, cell.rowspan || 1)}">${displayBlocks}</td>`;
+}
+
+async function renderVismLecture() {
+  app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载讲义数据…</div></div>';
+  try {
+    const [lecture, anchorMap] = await Promise.all([
+      fetch('research/vism-data/lecture-v1.json').then(res => { if (!res.ok) throw new Error('讲义数据不可用'); return res.json(); }),
+      fetch('research/vism-data/lecture-anchor-map-v1.json').then(res => { if (!res.ok) throw new Error('讲义锚点清单不可用'); return res.json(); }),
+    ]);
+    const items = anchorMap.items || [];
+    const anchorsById = new Map(items.map(item => [item.item_id, item]));
+    const counts = lecture.counts || {};
+    const anchorCounts = anchorMap.counts || {};
+    let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净道论目录</button>`;
+    html += `<div class="vism-lecture-page"><section class="vism-lecture-head">
+      <div class="vism-lecture-kicker">VISUDDHIMAGGA · STUDY HANDOUT</div>
+      <h2>📘 清净道论讲义</h2>
+      <p>完整保留《清净道论》读书表的表格结构、换行、空白位置与层级对应关系，并统一转换为简体中文。表格可横向滚动，章节标题可直接进入逐句三语阅读器。</p>
+      <p>来源：<a href="${esc(lecture.source?.url || 'https://dhammarain.github.io/canon/Anna/read1/read1.htm')}" target="_blank" rel="noopener">《清净道论》读书表 ↗</a> · 来源快照 SHA-256：<code>${esc(String(lecture.source?.sha256 || '').slice(0, 16))}…</code></p>
+      <div class="vism-lecture-stats">
+        <span class="vism-lecture-stat"><strong>${Number(counts.tables || 0).toLocaleString()}</strong> 张表</span>
+        <span class="vism-lecture-stat"><strong>${Number(counts.source_rows || 0).toLocaleString()}</strong> 行</span>
+        <span class="vism-lecture-stat"><strong>${Number(counts.anchor_items || items.length).toLocaleString()}</strong> 个三至五列项目</span>
+        <span class="vism-lecture-stat"><strong>${Number(anchorCounts.verified || 0).toLocaleString()} / ${Number(anchorCounts.items || items.length).toLocaleString()}</strong> 已核验锚点</span>
+        <span class="vism-lecture-stat"><strong>${Number(counts.removed_page_tables || 0).toLocaleString()}</strong> 张表移除“页数”列</span>
+      </div>
+      <div class="vism-lecture-note">阅读器跳转只发布已通过巴利语或英语唯一锚点核验的项目；当前未核验项目保留原文并标记“待核对”，不会把不确定内容误导到章节开头。</div>
+    </section>`;
+    html += (lecture.tables || []).map((table, tableIndex) => {
+      const visibleColumns = Math.max(1, (table.source_columns || 1) - (table.removed_page_ranges || []).reduce((sum, range) => sum + range[1] - range[0], 0));
+      const rows = Array.from({ length: table.rows || 0 }, (_, rowIndex) => {
+        const cells = (table.cells || []).filter(cell => cell.row === rowIndex).sort((a, b) => a.col - b.col);
+        return `<tr>${cells.map(cell => lectureCellHtml(table, cell, anchorsById)).join('')}</tr>`;
+      }).join('');
+      return `<section class="vism-lecture-table-section"><h3 class="vism-lecture-table-index">第 ${tableIndex + 1} 张表 <span>· ${visibleColumns} 列 · ${table.rows || 0} 行</span></h3><div class="vism-lecture-table-wrap" role="region" aria-label="第 ${tableIndex + 1} 张讲义表格，可横向滚动"><table class="vism-lecture-table"><tbody>${rows}</tbody></table></div></section>`;
+    }).join('');
+    html += '</div>';
+    app.innerHTML = html;
+    window.scrollTo(0, 0);
+  } catch (error) {
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净道论目录</button><div class="error-msg">讲义加载失败：${esc(error.message || error)}</div>`;
   }
 }
 
@@ -5919,7 +6149,9 @@ function renderVismParallel(docKey, chapterTitle, parts) {
     if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
     part.rows.forEach((row, ri) => {
       const unitKey = `p${pi + 1}-r${ri + 1}`;
-      html += '<div class="segment-block">';
+      const paliText = vismAnchorNormalize(row.pali);
+      const englishText = vismAnchorNormalize(row.english);
+      html += `<div class="segment-block" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
       html += `<div class="seg-en">${esc(row.english)}</div>`;
       html += transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle);
@@ -5928,6 +6160,52 @@ function renderVismParallel(docKey, chapterTitle, parts) {
   });
   html += '</div>';
   return html;
+}
+
+function vismAnchorNormalize(value) {
+  return String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLocaleLowerCase();
+}
+
+async function vismSha256Prefix(value) {
+  if (!window.crypto?.subtle || !window.TextEncoder) return '';
+  const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(vismAnchorNormalize(value)));
+  return Array.from(new Uint8Array(bytes)).map(byte => byte.toString(16).padStart(2, '0')).join('').slice(0, 16);
+}
+
+function vismLectureTargetMessage(text, isError = false) {
+  const body = document.getElementById('vism-reader-body');
+  if (!body) return;
+  body.querySelectorAll('.vism-lecture-target-message').forEach(node => node.remove());
+  body.insertAdjacentHTML('afterbegin', `<div class="vism-lecture-target-message${isError ? ' is-error' : ''}">${esc(text)}</div>`);
+}
+
+async function focusVismLectureTarget(target) {
+  if (!target || target.mode !== 'parallel' || !Number.isInteger(target.partIndex) || !Number.isInteger(target.rowIndex)) return;
+  const rows = [...document.querySelectorAll('#vism-reader-body [data-vism-part][data-vism-row]')];
+  const expectedPart = String(target.partIndex);
+  const expectedRow = String(target.rowIndex);
+  let candidate = rows.find(node => node.dataset.vismPart === expectedPart && node.dataset.vismRow === expectedRow);
+  const matchesAnchor = async node => {
+    const paliOk = !target.paliHash || (await vismSha256Prefix(node.dataset.vismPaliText || '') === target.paliHash);
+    const englishOk = !target.englishHash || (await vismSha256Prefix(node.dataset.vismEnglishText || '') === target.englishHash);
+    const paliSnippetOk = !target.paliSnippet || (node.dataset.vismPaliText || '').includes(vismAnchorNormalize(target.paliSnippet));
+    const englishSnippetOk = !target.englishSnippet || (node.dataset.vismEnglishText || '').includes(vismAnchorNormalize(target.englishSnippet));
+    return paliOk && englishOk && paliSnippetOk && englishSnippetOk;
+  };
+  if (candidate && !(await matchesAnchor(candidate))) candidate = null;
+  if (!candidate && (target.paliHash || target.englishHash || target.paliSnippet || target.englishSnippet)) {
+    for (const row of rows) {
+      if (await matchesAnchor(row)) { candidate = row; break; }
+    }
+  }
+  if (!candidate) {
+    vismLectureTargetMessage(`讲义锚点待复核：第 ${target.partIndex} 部分、第 ${target.rowIndex} 句未能由巴利语或英语唯一确认。`, true);
+    return;
+  }
+  document.querySelectorAll('#vism-reader-body .vism-lecture-target').forEach(node => node.classList.remove('vism-lecture-target'));
+  candidate.classList.add('vism-lecture-target');
+  candidate.scrollIntoView({ behavior: 'auto', block: 'center' });
+  vismLectureTargetMessage(`已定位讲义项目${target.itemId ? `：${target.itemId}` : ''} · 第 ${target.partIndex} 部分第 ${target.rowIndex} 句`);
 }
 
 function buildVismReaderBody() {
@@ -5972,12 +6250,13 @@ function buildVismReaderBody() {
   wireVismFootnoteLinks(body);
 }
 
-async function renderVismReader(chapterNum, secIdx) {
+async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
   let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
   html += '<div class="loading"><div class="spinner"></div><div>正在加载章节数据...</div></div>';
   app.innerHTML = html;
 
   try {
+    if (readerTarget?.mode === 'parallel') vismReaderMode = 'parallel';
     const isNidana = chapterNum === 'nidana';
     const isConclusion = chapterNum === 'conclusion';
     const isSpecial = isNidana || isConclusion;
@@ -6069,7 +6348,9 @@ async function renderVismReader(chapterNum, secIdx) {
 
     buildVismReaderBody();
 
-    if (secIdx !== null && secIdx !== undefined && !isNaN(secIdx)) {
+    if (readerTarget?.mode === 'parallel') {
+      requestAnimationFrame(() => { focusVismLectureTarget(readerTarget); });
+    } else if (secIdx !== null && secIdx !== undefined && !isNaN(secIdx)) {
       const el = document.getElementById('vism-sec-' + secIdx);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -9159,6 +9440,7 @@ async function dhammaRunNormalSearch(q) {
 
   const qTrad = typeof toTraditional === 'function' ? toTraditional(q) : q;
   const titleMatches = dhammaIndex.filter(r => (r.title || '').includes(qTrad) || (r.author || '').includes(qTrad));
+  const v4Promise = searchDhammaV4Api(q).catch(error => ({ results: [], total: 0, error: error.message }));
 
   const useFuzzy = q.length > 6;
   let ftResults = [];
@@ -9169,6 +9451,8 @@ async function dhammaRunNormalSearch(q) {
   } catch (err) {
     if (err.code !== 'NO_INFORMATIVE_TERMS') { /* fall through with empty ftResults */ }
   }
+  if (mySeq !== dhammaSearchSeq) return;
+  const v4Run = await v4Promise;
   if (mySeq !== dhammaSearchSeq) return;
 
   let html = '';
@@ -9186,8 +9470,10 @@ async function dhammaRunNormalSearch(q) {
   } else if (titleMatches.length === 0) {
     html += `<p class="dhamma-empty-note">未检索到与"${dhammaEscapeHtml(q)}"相关的经名或正文内容。</p>`;
   }
+  html += renderDhammaV4ApiResults(v4Run, q);
   results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
+  bindDhammaV4Pagination(results, q);
 }
 
 function dhammaGroupHitsByLayer(hitResults) {
@@ -9238,6 +9524,7 @@ async function dhammaRunKeywordTrace(q) {
   results.innerHTML = `<p class="dhamma-empty-note">正在逐层检索"${dhammaEscapeHtml(q)}"…</p>`;
 
   const useFuzzy = q.length > 6;
+  const v4Promise = searchDhammaV4Api(q).catch(error => ({ results: [], total: 0, error: error.message }));
   const RELEVANCE_HIT = 0.5, RELEVANCE_SHOW = 0.34;
   let hitResults;
   try {
@@ -9257,6 +9544,8 @@ async function dhammaRunKeywordTrace(q) {
     results.innerHTML = `<p class="dhamma-empty-note">检索出错：${dhammaEscapeHtml(String(err))}</p>`;
     return;
   }
+  if (mySeq !== dhammaSearchSeq) return;
+  const v4Run = await v4Promise;
   if (mySeq !== dhammaSearchSeq) return;
 
   const shown = hitResults.filter(r => r.relevance >= RELEVANCE_SHOW);
@@ -9287,8 +9576,10 @@ async function dhammaRunKeywordTrace(q) {
     }
     html += `</div></div>`;
   }
+  html += renderDhammaV4ApiResults(v4Run, q);
   results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
+  bindDhammaV4Pagination(results, q);
 }
 
 // === 法义溯源搜索 · AI RAG mode (backend /api/dhamma/trace) ===
@@ -9361,7 +9652,13 @@ async function dhammaBuildHitHrefs(allHits) {
     byDoc.get(h.dhamma_lineage_id).push({ hitId, h });
   }
   const hrefById = new Map();
+  for (const { hitId, h } of allHits) {
+    if (h.source_type === 'tipitaka_v4' && (h.reader_url || h.cbeta_url)) {
+      hrefById.set(hitId, h.reader_url || h.cbeta_url);
+    }
+  }
   await Promise.all([...byDoc.entries()].map(async ([docId, entries]) => {
+    if (entries.every(({ h }) => h.source_type === 'tipitaka_v4')) return;
     const paragraphs = await dhammaFetchFulltextParagraphs(docId);
     const base = `#/dhamma/read/${encodeURIComponent(docId)}`;
     if (!paragraphs) { for (const { hitId } of entries) hrefById.set(hitId, base); return; }
@@ -9657,7 +9954,8 @@ async function dhammaRenderTraceView(q, data, { streaming = false, elapsedSecond
       const items = hits.map((h, i) => {
         const hitId = `dai-hit-${key}-${i}`;
         allHits.push({ hitId, h });
-        return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ai">AI语义</span><span class="meta">${dhammaEscapeHtml(h.cbeta_id)}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
+        const isV4 = h.source_type === 'tipitaka_v4';
+        return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ${isV4 ? 'keyword' : 'ai'}">${isV4 ? 'V4 三语本' : 'AI语义'}</span><span class="meta">${dhammaEscapeHtml(isV4 ? ((h.path || []).join(' / ')) : h.cbeta_id)}${h.paranum ? ` · ${dhammaEscapeHtml(h.paranum)}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
       });
       citesHtml = `<details class="dhamma-cite-fold" ${hits.length <= 2 ? 'open' : ''}>
         <summary>查看原始引用（${hits.length} 条）</summary>
