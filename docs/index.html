@@ -5444,7 +5444,17 @@ let upanishadsCatalogCache = null;
 async function upanishadsRequest(path, options = {}) {
   const response = await fetch(`${API_BASE}/api/research/upanishads/${path}`, { ...options, headers: { ...communityAuthHeaders(), ...(options.headers || {}) } });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.detail?.message || data.detail || `HTTP ${response.status}`);
+  if (!response.ok) {
+    // A deployment running before the private-research router was released
+    // answers the protected bootstrap endpoints with a bare 404. Keep that
+    // infrastructure mismatch distinguishable from a genuinely missing
+    // work, so users get an actionable message instead of “Not Found”.
+    const endpoint = String(path).split(/[/?]/, 1)[0];
+    if (response.status === 404 && ['access', 'manifest', 'catalog'].includes(endpoint)) {
+      throw new Error('奥义书服务尚未完成发布，请稍后重试。');
+    }
+    throw new Error(data.detail?.message || data.detail || `HTTP ${response.status}`);
+  }
   return data;
 }
 
