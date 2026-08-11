@@ -1270,6 +1270,26 @@ const _s2tMap={},_t2sMap={};
 for(let i=0;i<S2T_S.length;i++){if(!_s2tMap[S2T_S[i]])_s2tMap[S2T_S[i]]=S2T_T[i];_t2sMap[S2T_T[i]]=S2T_S[i];}
 function toTraditional(text) { return [...text].map(ch => _s2tMap[ch] || ch).join(''); }
 function toSimplified(text) { return [...text].map(ch => _t2sMap[ch] || ch).join(''); }
+// Some V4 source rows use alternate traditional forms that collapse to the
+// same simplified character (for example 眾 and 衆 both become 众). Search
+// keeps the index immutable and asks the worker to read every equivalent key.
+const _searchZhVariants = {};
+for (let i = 0; i < S2T_S.length; i++) {
+  const simplified = S2T_S[i], traditional = S2T_T[i];
+  if (!simplified || !traditional) continue;
+  (_searchZhVariants[simplified] ||= new Set()).add(simplified);
+  _searchZhVariants[simplified].add(traditional);
+}
+function searchChineseTermVariants(term) {
+  const chars = [...toSimplified(String(term || ''))];
+  let variants = [''];
+  for (const char of chars) {
+    const choices = [...(_searchZhVariants[char] || new Set([char]))];
+    variants = variants.flatMap(prefix => choices.map(choice => prefix + choice)).slice(0, 64);
+  }
+  return [...new Set(variants)];
+}
+window.searchChineseTermVariants = searchChineseTermVariants;
 
 // Dynamic backend (Q&A / Forum / Blog) — see azure/README.md for deployment.
 // Point this at http://localhost:8000 for local dev, or the deployed Azure Container Apps URL in production.
@@ -2612,7 +2632,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
       if (HYBRID_SEARCH_BASE) {
         const hybridRuns = await Promise.all(languages.map(async language => {
           try {
-            return { language, data: await searchHybridRequest(q, { corpora: 'v4', scopes: searchV4ScopeSelections, resourceTypes: searchV4TypeSelections, language, mode: 'explore', pageSize: 40, allPages: true, timeout: 3500 }) };
+            return { language, data: await searchHybridRequest(q, { corpora: 'v4', scopes: searchV4ScopeSelections, resourceTypes: searchV4TypeSelections.length ? searchV4TypeSelections : ['corpus', 'catalog'], language, mode: 'explore', pageSize: 40, allPages: true, timeout: 3500 }) };
           } catch (error) { return { language, error }; }
         }));
         hybridRuns.forEach(({ language, data }) => {
@@ -2622,7 +2642,8 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
           const list = (data.results || []).slice(0, 40).map(item => {
             const label = `${item.title || item.work_id} · ${item.paranum || item.row_id}`;
             const reason = (item.match_reasons || []).join('、') || '语义相关';
-            const display = item.snippet || item.text_zh || item.text_en || item.text_pali || '';
+            const rawDisplay = item.snippet || item.text_zh || item.text_en || item.text_pali || '';
+            const display = language === 'zh' ? toSimplified(rawDisplay) : rawDisplay;
             const href = searchV4EvidenceHref({ ...item, work_id: item.work_id, row_id: item.row_id, language, query: q, anchor: item.anchor }, q);
             return `<li><a href="${href}"><span class="title">${esc(label)} <small>语义相关</small></span><p class="snippet">${esc(display)}</p><span class="meta">${esc(item.lane === 'direct' ? '直接回答' : '相关主题与探索')} · ${esc(reason)}</span></a></li>`;
           }).join('');
@@ -10925,7 +10946,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260810.1"></script>
+<script src="tipitaka-reader.js?v=20260810.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });

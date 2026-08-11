@@ -84,9 +84,9 @@
       const current = out.get(locator);
       const positions = posting[1] || [];
       if (!current) {
-        out.set(locator, { positions: [...positions], length: Number(posting[2] || 1) });
+        out.set(locator, { positions: [...new Set(positions)], length: Number(posting[2] || 1) });
       } else {
-        current.positions.push(...positions);
+        current.positions = [...new Set(current.positions.concat(positions))];
         current.length = Math.max(current.length, Number(posting[2] || 1));
       }
     }
@@ -153,24 +153,31 @@
     return idf * norm;
   }
   async function run(request) {
-    const { base, q, language, types = [], workIndexes = null, dictionaryIndexes = null } = request;
+    const { base, q, language, workIndexes = null, dictionaryIndexes = null, zhVariants = null } = request;
+    const types = Array.isArray(request.types) && request.types.length ? request.types : ['corpus', 'catalog'];
     const value = String(q || '').trim();
     if (language === 'zh' && (!/[\u3400-\u9fff]/.test(value) || value.replace(/\s/g, '').length < 2)) return { total: 0, results: [], query: value, language };
     const terms = queryTerms(value, language);
     if (!terms.length) return { total: 0, results: [], query: value, language };
+    // A single Chinese query bigram may have multiple equivalent Unicode
+    // spellings in the immutable index (for example 眾生 and 衆生). Keep
+    // these spellings in one logical term group so aliases are OR-ed within
+    // the term while phrase matching and BM25 coverage remain unchanged.
+    const termGroups = language === 'zh'
+      ? terms.map(term => ({ term, variants: [...new Set((zhVariants?.[term] || [term]).filter(Boolean))] }))
+      : terms.map(term => ({ term, variants: [term] }));
     const index = await manifest(base);
     if (index.format !== 'tipitaka-reader-search/v4') throw new Error('V4 检索索引版本不兼容');
-    const phraseMaps = [];
-    for (const term of terms) {
-      const entries = await termsFor(base, language, term);
+    const phraseMaps = (await Promise.all(termGroups.map(async group => {
+      const entries = await Promise.all(group.variants.map(term => termsFor(base, language, term)));
       const postings = [];
       // Do not spread a popular term's posting list into push(): English
       // stop-word-like terms can have hundreds of thousands of matches and
       // exceed the engine's argument-stack limit.
-      for (const [, values] of entries) for (const posting of values || []) postings.push(posting);
+      for (const termEntries of entries) for (const [, values] of termEntries) for (const posting of values || []) postings.push(posting);
       const merged = postingMap(postings, types, workIndexes, dictionaryIndexes);
-      if (merged.size) phraseMaps.push({ term, map: merged, stop: isQueryStop(term, language) });
-    }
+      return merged.size ? { term: group.term, map: merged, stop: isQueryStop(group.term, language) } : null;
+    }))).filter(Boolean);
     if (!phraseMaps.length) return { total: 0, results: [], query: value, language, terms };
 
     const counts = resourceKindCounts(index);

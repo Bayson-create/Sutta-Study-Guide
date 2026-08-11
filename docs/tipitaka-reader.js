@@ -18,6 +18,7 @@
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
   const PAGE_SIZE = 40;
+  const DEFAULT_V4_TYPES = ['corpus', 'catalog'];
   const state = {
     works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
@@ -34,6 +35,10 @@
   const normalizePali = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const normalizeZh = value => typeof toTraditional === 'function' && typeof toSimplified === 'function' ? toTraditional(toSimplified(String(value || ''))) : String(value || '');
   const normalizeEn = value => String(value || '').toLowerCase();
+  const cjkBigrams = value => {
+    const compact = String(value || '').replace(/\s/g, '');
+    return [...new Set(Array.from({ length: Math.max(0, compact.length - 1) }, (_, i) => compact.slice(i, i + 2)))];
+  };
   const words = /[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/g;
   const dictWords = /[A-Za-zÀ-ÖØ-öø-ÿĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḍṇḷ]+/g;
 
@@ -99,7 +104,7 @@
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
       if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.20', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260809.1', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260810.2', document.baseURI));
     }
   }
 
@@ -180,7 +185,7 @@
     await ensureCatalog(); injectCss(); injectSearchTargetCss();
     document.getElementById('tipitaka-scope-drawer')?.remove();
     const activeScopes = new Set(scopes.filter(Boolean));
-    const activeTypes = new Set(types.length ? types : V4_CONTENT_TYPES.map(([value]) => value));
+    const activeTypes = new Set(types.length ? types : DEFAULT_V4_TYPES);
     const dialog = document.createElement('dialog');
     dialog.id = 'tipitaka-scope-drawer'; dialog.className = 'tipitaka-scope-drawer';
     dialog.innerHTML = `<div class="tipitaka-scope-shell"><header><div><h3>设置 V4 精确范围</h3><p>可连续选择目录或具体作品；不选择范围即检索全部。</p></div><button type="button" class="tipitaka-scope-close" data-scope-cancel aria-label="关闭">×</button></header><div class="tipitaka-scope-selected" data-scope-selected></div><div class="tipitaka-scope-tools"><input data-scope-filter placeholder="搜索目录或作品" aria-label="搜索目录或作品"><button type="button" data-scope-collapse>全部收起</button><button type="button" data-scope-expand>展开一级</button></div><div class="tipitaka-scope-content"><section><h4>目录与作品</h4><div class="tipitaka-catalog tipitaka-scope-tree">${workTree(state.works)}</div></section><section class="tipitaka-scope-types"><h4>内容类型</h4>${V4_CONTENT_TYPES.map(([value, label]) => `<label><input type="checkbox" data-scope-type="${value}" ${activeTypes.has(value) ? 'checked' : ''}><span>${label}</span></label>`).join('')}</section></div><footer><button type="button" data-scope-clear>清空范围</button><span class="tipitaka-scope-count" data-scope-count></span><button type="button" data-scope-cancel>取消</button><button type="button" class="community-primary-btn" data-scope-apply>应用范围</button></footer></div>`;
@@ -221,8 +226,7 @@
     dialog.querySelector('[data-scope-apply]').onclick = () => {
       const nextScopes = [...dialog.querySelectorAll('[data-scope-value]:checked')].map(input => input.dataset.scopeValue);
       const checkedTypes = [...dialog.querySelectorAll('[data-scope-type]:checked')].map(input => input.dataset.scopeType);
-      const nextTypes = checkedTypes.length === V4_CONTENT_TYPES.length ? [] : checkedTypes;
-      onApply?.({ scopes: nextScopes, types: nextTypes }); dialog.close('apply');
+      onApply?.({ scopes: nextScopes, types: checkedTypes }); dialog.close('apply');
     };
     dialog.addEventListener('close', () => dialog.remove(), { once: true });
     updateSummary(); dialog.showModal(); requestAnimationFrame(() => dialog.querySelector('[data-scope-filter]').focus());
@@ -589,7 +593,7 @@
   async function showHistory(workId, rowId) { const language = prompt('查看哪个语种历史？输入 zh 或 en', 'zh'); if (!language) return; const rows = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}/history`).then(r => r.ok ? r.json() : []); if (!rows.length) { alert('尚无历史记录'); return; } const list = rows.map((item, index) => `${index + 1}. ${new Date(item.created_at).toLocaleString()}\n${item.text}\n理由：${item.reason || '—'}`).join('\n\n'); const choice = prompt(`${list}\n\n输入版本编号即可恢复；取消仅查看。`, ''); if (!choice) return; const revision = rows[Number(choice) - 1]; if (!revision) { alert('无效版本编号'); return; } if (!confirm(`恢复为版本 ${choice}？这会新增一条可追溯的修订。`)) return; const saved = await fetch(`${API}/works/${encodeURIComponent(workId)}/rows/${rowId}/${language}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text: revision.text, default_text: '', reason: `从历史版本 ${choice} 恢复`, source: 'restore' }) }); if (!saved.ok) { alert((await saved.json().catch(() => ({}))).detail || '恢复失败，请先登录'); return; } state.overrides.delete(workId); renderReader(workId); }
 
   async function ensureV4SearchManifest() { if (!state.searchV4Manifest) state.searchV4Manifest = await cachedJson('search-v4/manifest.json', SEARCH_CACHE_NAME); return state.searchV4Manifest; }
-  function v4Types(options = {}) { return Array.isArray(options.types) && options.types.length ? options.types : ['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']; }
+  function v4Types(options = {}) { return Array.isArray(options.types) && options.types.length ? options.types : DEFAULT_V4_TYPES; }
   async function runSearch(value, language, options = {}) {
     const originalValue = String(value || '').trim();
     value = language === 'zh' ? normalizeZh(originalValue) : originalValue;
@@ -597,9 +601,12 @@
     const manifest = await ensureV4SearchManifest();
     const workIndexes = Array.isArray(options.workIds) ? options.workIds.map(id => manifest.work_ids.indexOf(id)).filter(index => index >= 0) : null;
     const dictionaryIndexes = Array.isArray(options.dictionaryTables) ? options.dictionaryTables.map(table => state.dictionaries.findIndex(item => item.table === table)).filter(index => index >= 0) : null;
+    const zhVariants = language === 'zh'
+      ? Object.fromEntries([...new Set(cjkBigrams(value))].map(term => [term, typeof window.searchChineseTermVariants === 'function' ? window.searchChineseTermVariants(term) : [term]]))
+      : null;
     ensureWorkers();
     if (state.searchWorker) {
-      const result = await workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language, types: v4Types(options), workIndexes, dictionaryIndexes });
+      const result = await workerRequest(state.searchWorker, { base: DATA_BASE, q: value, language, types: v4Types(options), workIndexes, dictionaryIndexes, zhVariants });
       return { ...result, query: originalValue, index_query: value };
     }
     throw new Error('当前浏览器不支持 V4 Worker 检索');
@@ -610,6 +617,7 @@
   window.TipitakaV4.workIdsForScopes = async scopes => { await ensureCatalog(); const selected = new Set(scopes || []); return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id); };
   window.TipitakaV4.resolve = (result, page = 0) => resolveSearchPage(result, page);
   window.TipitakaV4.openScopeDrawer = options => openV4ScopeDrawer(options);
+  window.TipitakaV4.displayText = searchDisplayText;
   window.TipitakaV4.scopeSummaryHtml = scopes => scopeSummaryHtml(scopes || []);
   window.addEventListener('hashchange', () => document.getElementById('tipitaka-scope-drawer')?.remove());
   function locatorParts(locator) { return String(locator || '').split(':'); }
@@ -636,6 +644,10 @@
     if (item.kind === 'user_dictionary') return language === 'pali' ? item.term.dict_key : item.term.dict_content;
     return language === 'pali' ? item.row.dict_key : item.row.dict_content;
   }
+  function searchDisplayText(value, language) {
+    const text = language === 'zh' ? dictionaryText(value) : String(value || '');
+    return language === 'zh' && typeof toSimplified === 'function' ? toSimplified(text) : text;
+  }
   function searchResultHref(item, language, term) {
     if (item.kind === 'catalog') return `#/tipitaka?open=${encodeURIComponent(item.meta.path.join(' / '))}`;
     if (item.kind === 'proper') return `#/tipitaka/dictionaries?tab=proper&term=${encodeURIComponent(item.term.pali || '')}`;
@@ -647,28 +659,32 @@
     return `#/tipitaka/read/${encodeURIComponent(item.meta.id)}?${params}`;
   }
   function searchResultEvidence(item, language, term) {
-    const text = searchItemText(item, language) || '', anchor = text.slice(0, 64);
+    const text = searchItemText(item, language) || '', anchor = text.slice(0, 64), displayText = searchDisplayText(text, language);
     const position = Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0])) ? Number(item.positions[0]) : null;
     const evidenceTerms = Array.isArray(item.matched_terms) && item.matched_terms.length ? item.matched_terms : [term];
     const normalizedTerm = language === 'zh' ? normalizeZh(term).replace(/\s/g, '') : language === 'pali' ? normalizePali(term) : normalizeEn(term);
-    const normalizedText = language === 'zh' ? normalizeZh(text).replace(/\s/g, '') : language === 'pali' ? normalizePali(text) : normalizeEn(text);
-    let at = normalizedTerm ? normalizedText.indexOf(normalizedTerm) : -1;
-    if (at < 0) {
-      for (const candidate of evidenceTerms) {
-        const normalizedCandidate = language === 'zh' ? normalizeZh(candidate).replace(/\s/g, '') : language === 'pali' ? normalizePali(candidate) : normalizeEn(candidate);
-        if (!normalizedCandidate) continue;
-        at = normalizedText.indexOf(normalizedCandidate);
-        if (at >= 0) break;
+    const findMatchOffset = value => {
+      const normalized = language === 'zh' ? normalizeZh(value).replace(/\s/g, '') : language === 'pali' ? normalizePali(value) : normalizeEn(value);
+      let at = normalizedTerm ? normalized.indexOf(normalizedTerm) : -1;
+      if (at < 0) {
+        for (const candidate of evidenceTerms) {
+          const normalizedCandidate = language === 'zh' ? normalizeZh(candidate).replace(/\s/g, '') : language === 'pali' ? normalizePali(candidate) : normalizeEn(candidate);
+          if (!normalizedCandidate) continue;
+          at = normalized.indexOf(normalizedCandidate);
+          if (at >= 0) break;
+        }
       }
-    }
-    const rawAt = at >= 0 ? Math.max(0, Math.min(text.length, at)) : 0;
-    const start = Math.max(0, rawAt - 220), end = Math.min(text.length, rawAt + Math.max(term.length, 1) + 340);
+      return at >= 0 ? Math.max(0, Math.min(value.length, at)) : 0;
+    };
+    const rawAt = findMatchOffset(text), displayAt = findMatchOffset(displayText);
+    const start = Math.max(0, displayAt - 220), end = Math.min(displayText.length, displayAt + Math.max(term.length, 1) + 340);
+    const rawStart = Math.max(0, rawAt - 220), rawEnd = Math.min(text.length, rawAt + Math.max(term.length, 1) + 340);
     const isCorpus = item.kind === 'corpus';
     return {
       kind: 'v4', resource_type: item.kind, resource_locator: item.locator,
       source: `V4 ${item.kind === 'dictionary' ? '词典' : item.kind === 'proper' || item.kind === 'user_dictionary' ? '术语' : '三藏'} · ${item.meta?.title || item.dictionary?.table || item.term?.pali || item.term?.dict_key || ''}`,
       heading: item.meta ? `${item.meta.path.join(' / ')}${item.row?.paranum ? ` · 段号 ${item.row.paranum}` : ''}` : item.dictionary?.description || '',
-      path: item.meta?.path || [], text: text.slice(start, end), work_id: isCorpus ? item.meta.id : null, row_id: isCorpus ? Number(item.row.id) : null,
+      path: item.meta?.path || [], text: displayText.slice(start, end), raw_text: text.slice(rawStart, rawEnd), work_id: isCorpus ? item.meta.id : null, row_id: isCorpus ? Number(item.row.id) : null,
       language, query: term, position, anchor, paranum: item.row?.paranum || null, matched_terms: item.matched_terms || [], match_level: item.match_level || null, _href: searchResultHref(item, language, term), _v4: true,
     };
   }
@@ -681,10 +697,9 @@
   }
   function matchLevelLabel(level) { return level === 'exact' ? '精确短语命中' : level === 'core' ? '核心词命中' : '相关词命中'; }
   function searchResultHtml(item, language, term) {
-    const text = searchItemText(item, language) || '', href = searchResultHref(item, language, term), label = item.kind === 'corpus' ? `${item.meta.title} · ${item.row.paranum || item.row.id}` : item.kind === 'dictionary' ? `${item.row.dict_key} · ${item.dictionary.table}` : item.kind === 'catalog' ? item.meta.path.concat(item.meta.title).join(' / ') : item.term.pali || item.term.dict_key;
+    const text = searchDisplayText(searchItemText(item, language), language), href = searchResultHref(item, language, term), label = item.kind === 'corpus' ? `${item.meta.title} · ${item.row.paranum || item.row.id}` : item.kind === 'dictionary' ? `${item.row.dict_key} · ${item.dictionary.table}` : item.kind === 'catalog' ? item.meta.path.concat(item.meta.title).join(' / ') : item.term.pali || item.term.dict_key;
     const level = item.match_level ? `<span class="tipitaka-note"> · ${matchLevelLabel(item.match_level)}</span>` : '';
-    const display = language === 'zh' ? chineseDisplay(text) : text;
-    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(label)}</strong><span class="tipitaka-note"> · ${esc(item.kind)}${level}</span><br><span>${highlightHtml(display.slice(0, 360), term, language, true, null, item.matched_terms)}</span></a>`;
+    return `<a class="tipitaka-search-result" href="${esc(href)}"><strong>${esc(label)}</strong><span class="tipitaka-note"> · ${esc(item.kind)}${level}</span><br><span>${highlightHtml(text.slice(0, 360), term, language, true, null, item.matched_terms)}</span></a>`;
   }
   function v4ScopeWorkIds() {
     const raw = query().get('scope'); if (!raw) return null;
@@ -695,7 +710,8 @@
     if (!HYBRID_SEARCH_BASE) return null;
     const params = new URLSearchParams({ q: value, corpora: 'v4', language, mode: 'explore', page_size: '40' });
     if (scopes.length) params.set('scopes', scopes.join('|'));
-    if (types.length && types.length < 5) params.set('resource_types', types.join(','));
+    const effectiveTypes = types.length ? types : DEFAULT_V4_TYPES;
+    if (effectiveTypes.length < 5) params.set('resource_types', effectiveTypes.join(','));
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 4000);
     try { const response = await fetch(`${HYBRID_SEARCH_BASE}/api/search/v1/hybrid?${params}`, { signal: controller.signal }); if (!response.ok) throw new Error(`混合检索 HTTP ${response.status}`); return await response.json(); }
     finally { clearTimeout(timer); }
@@ -709,12 +725,12 @@
     return `#/tipitaka/read/${encodeURIComponent(item.work_id)}?${params}`;
   }
   function hybridSearchHtml(data, language, queryText) {
-    const rows = (data?.results || []).map(item => `<a class="tipitaka-search-result" href="${esc(hybridSearchHref(item, language, queryText))}"><strong>${esc(item.title || item.work_id)} · ${esc(item.paranum || item.row_id)}</strong><span class="tipitaka-note"> · ${esc(item.lane === 'direct' ? '直接回答' : '相关主题与探索')} · ${esc((item.match_reasons || []).join('、') || '语义相关')}</span><br><span>${esc(item.snippet || item.text_zh || item.text_en || item.text_pali || '')}</span></a>`).join('');
+    const rows = (data?.results || []).map(item => { const raw = item.snippet || item.text_zh || item.text_en || item.text_pali || ''; const display = language === 'zh' ? searchDisplayText(raw, 'zh') : raw; return `<a class="tipitaka-search-result" href="${esc(hybridSearchHref(item, language, queryText))}"><strong>${esc(item.title || item.work_id)} · ${esc(item.paranum || item.row_id)}</strong><span class="tipitaka-note"> · ${esc(item.lane === 'direct' ? '直接回答' : '相关主题与探索')} · ${esc((item.match_reasons || []).join('、') || '语义相关')}</span><br><span>${esc(display)}</span></a>`; }).join('');
     return rows ? `<section class="tipitaka-hybrid-results"><h3>混合语义补充 <span class="tipitaka-note">词法 + 语义 + RRF · ${data.semantic?.degraded ? '当前语义降级' : '语义服务已启用'}</span></h3>${rows}</section>` : '';
   }
   async function renderSearch() {
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
-    const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(['corpus', 'catalog', 'proper', 'user_dictionary', 'dictionary']);
+    const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(DEFAULT_V4_TYPES);
     const scopeSet = new Set(selected.split('|').filter(Boolean));
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-scope-trigger-row"><button type="button" class="v4-scope-button ${scopeSet.size ? 'is-active' : ''}" id="tipitaka-scope-open" aria-label="筛选 V4 范围">${scopeButtonHtml(scopeSet.size)}</button><div class="tipitaka-scope-chips" id="tipitaka-scope-chips">${scopeSummaryHtml([...scopeSet])}</div></div><form class="tipitaka-toolbar tipitaka-search-form" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
     document.getElementById('tipitaka-scope-open').onclick = () => openV4ScopeDrawer({ scopes: [...scopeSet], types: [...selectedTypes], onApply: ({ scopes, types }) => { const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (scopes.length) params.set('scope', scopes.join('|')); if (types.length) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; } });
@@ -732,7 +748,7 @@
     const result = await runSearch(value, language, { types: ['dictionary'], dictionaryTables: source ? [source] : null });
     return { total: result.total, result, rows: null, query: value, language, v4: true };
   }
-  function dictionaryEntryHtml(item, result) { const text = dictionaryText(item.row.dict_content || ''); return `<article class="tipitaka-dict-entry" id="tipitaka-dict-${esc(item.locator || item.row.id)}"><h4>${esc(item.row.dict_key)} <span class="tipitaka-note">${esc(item.dictionary.table)} · ${esc(item.dictionary.description)}</span></h4><div>${highlightHtml(text, result.query, result.language === 'pali' ? 'pali' : result.language, true)}</div></article>`; }
+  function dictionaryEntryHtml(item, result) { const text = searchDisplayText(item.row.dict_content || '', 'zh'); return `<article class="tipitaka-dict-entry" id="tipitaka-dict-${esc(item.locator || item.row.id)}"><h4>${esc(item.row.dict_key)} <span class="tipitaka-note">${esc(item.dictionary.table)} · ${esc(item.dictionary.description)}</span></h4><div>${highlightHtml(text, result.query, result.language === 'pali' ? 'pali' : result.language, true)}</div></article>`; }
   async function showDictionary(value) {
     const selected = String(value || '').trim(), word = normalizePali((selected.match(/[A-Za-zĀĪŪṂṀṄÑṬḌṆḶāīūṃṁṅñṭḌṇḶ]+/i) || [''])[0]); if (!word) return;
     try {
