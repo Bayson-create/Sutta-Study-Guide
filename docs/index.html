@@ -1066,6 +1066,7 @@ body.dark .trans-pending-save { background: rgba(126, 94, 18, 0.25); color: #f3d
 .search-scope-label { color: var(--text-light); }
 .search-scope-opt { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
 .search-scope-opt input { accent-color: var(--accent); cursor: pointer; }
+.search-scope-pair { display: inline-flex; align-items: center; gap: 9px; white-space: nowrap; }
 .v4-scope-button { display: inline-flex; align-items: center; gap: 7px; min-height: 34px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font-family: inherit; font-size: 14px; line-height: 1; cursor: pointer; white-space: nowrap; transition: border-color .16s ease, background .16s ease, color .16s ease, transform .16s ease; }
 .v4-scope-button:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--accent); }
 .v4-scope-button:active { transform: translateY(1px); }
@@ -2247,9 +2248,9 @@ function searchScopeCheckboxesHtml() {
   </label>`;
   return `<div class="search-scope-row">
     <span class="search-scope-label">范围：</span>
-    ${opt('site')}${opt('dhamma')}${opt('eb')}${opt('v4')}${opt('upanishads')}
-    <button type="button" class="v4-scope-button ${searchV4ScopeSelections.length ? 'is-active' : ''}" id="search-v4-scope-toggle" aria-label="筛选 V4 范围">${window.v4ScopeButtonHtml(searchV4ScopeSelections.length)}</button>
-    <button type="button" class="v4-scope-button ${searchUpanishadsScopeSelections.length ? 'is-active' : ''}" id="search-upanishads-scope-toggle" aria-label="筛选奥义书范围">${window.v4ScopeButtonHtml(searchUpanishadsScopeSelections.length, '筛选范围')}</button>
+    ${opt('site')}${opt('dhamma')}${opt('eb')}
+    <span class="search-scope-pair">${opt('v4')}<button type="button" class="v4-scope-button ${searchV4ScopeSelections.length ? 'is-active' : ''}" id="search-v4-scope-toggle" aria-label="筛选 V4 范围">${window.v4ScopeButtonHtml(searchV4ScopeSelections.length)}</button></span>
+    <span class="search-scope-pair">${opt('upanishads')}<button type="button" class="v4-scope-button ${searchUpanishadsScopeSelections.length ? 'is-active' : ''}" id="search-upanishads-scope-toggle" aria-label="筛选奥义书范围">${window.v4ScopeButtonHtml(searchUpanishadsScopeSelections.length, '筛选范围')}</button></span>
   </div>`;
 }
 
@@ -2274,22 +2275,24 @@ function searchScopeUrl(q) {
   return `#/search?${params}`;
 }
 
+async function ensureUpanishadsSearchAccess() {
+  if (!(await communityRequireLogin())) return false;
+  try {
+    const response = await fetch(`${API_BASE}/api/research/upanishads/access`, { headers: communityAuthHeaders() });
+    const access = await response.json();
+    if (!response.ok || !access.allowed) throw new Error('该账号尚未获得奥义书阅读权限，请联系管理员授权。');
+    return true;
+  } catch (error) {
+    alert(error.message || '无法验证奥义书访问权限');
+    return false;
+  }
+}
+
 async function searchScopeToggle(key, checked) {
-  if (key === 'upanishads' && checked) {
-    if (!(await communityRequireLogin())) {
-      const checkbox = document.querySelector('.search-scope-row input[data-scope="upanishads"]');
-      if (checkbox) checkbox.checked = false;
-      return;
-    }
-    try {
-      const access = await fetch(`${API_BASE}/api/research/upanishads/access`, { headers: communityAuthHeaders() }).then(r => r.json());
-      if (!access.allowed) throw new Error('该账号尚未获得奥义书阅读权限，请联系管理员授权。');
-    } catch (error) {
-      const checkbox = document.querySelector('.search-scope-row input[data-scope="upanishads"]');
-      if (checkbox) checkbox.checked = false;
-      alert(error.message || '无法验证奥义书访问权限');
-      return;
-    }
+  if (key === 'upanishads' && checked && !(await ensureUpanishadsSearchAccess())) {
+    const checkbox = document.querySelector('.search-scope-row input[data-scope="upanishads"]');
+    if (checkbox) checkbox.checked = false;
+    return;
   }
   searchActiveScopes[key] = checked;
   const input = document.getElementById('siteSearchInput');
@@ -3335,10 +3338,30 @@ function renderHome() {
       finally { window.setV4ScopeButtonState(v4ScopeToggle, { count: searchV4ScopeSelections.length }); }
     };
   }
+  const upanishadsScopeToggle = document.getElementById('search-upanishads-scope-toggle');
+  if (upanishadsScopeToggle) {
+    upanishadsScopeToggle.hidden = !searchActiveScopes.upanishads;
+    upanishadsScopeToggle.onclick = async () => {
+      window.setV4ScopeButtonState(upanishadsScopeToggle, { count: searchUpanishadsScopeSelections.length, loading: true });
+      try {
+        if (!(await ensureUpanishadsSearchAccess())) return;
+        await window.openUpanishadsScopeDrawer({ scopes: searchUpanishadsScopeSelections, onApply: ({ scopes }) => {
+          searchUpanishadsScopeSelections = scopes.length ? scopes : ['g1'];
+          window.setV4ScopeButtonState(upanishadsScopeToggle, { count: searchUpanishadsScopeSelections.length });
+        } });
+      } catch (error) { alert(`奥义书范围加载失败：${error.message}`); }
+      finally { window.setV4ScopeButtonState(upanishadsScopeToggle, { count: searchUpanishadsScopeSelections.length }); }
+    };
+  }
   document.querySelectorAll('.search-scope-row input[data-scope]').forEach(cb => {
-    cb.addEventListener('change', () => {
+    cb.addEventListener('change', async () => {
+      if (cb.dataset.scope === 'upanishads' && cb.checked && !(await ensureUpanishadsSearchAccess())) {
+        cb.checked = false;
+        return;
+      }
       searchActiveScopes[cb.dataset.scope] = cb.checked;
       if (cb.dataset.scope === 'v4' && v4ScopeToggle) v4ScopeToggle.hidden = !cb.checked;
+      if (cb.dataset.scope === 'upanishads' && upanishadsScopeToggle) upanishadsScopeToggle.hidden = !cb.checked;
     });
   });
 }
@@ -5640,7 +5663,8 @@ async function renderUpanishadsReader(workId, blockParam, query, termsParam) {
     const terms = String(termsParam || '').split('|').filter(Boolean);
     const sectionLinks = (data.sections || []).map(section => {
       const first = blocks.find(block => block.section_id === section.id);
-      return `<a href="#${esc(first?.id || section.id)}">${esc(section.label)}</a>`;
+      const targetId = first?.id || section.id;
+      return `<a href="#${esc(targetId)}" data-upanishads-section-target="${esc(targetId)}">${esc(section.label)}</a>`;
     }).join(' · ');
     let html = `<div class="upanishads-reader"><button class="back-btn" onclick="location.hash='#/research/upanishads'">← 返回奥义书目录</button><div class="upanishads-reader-head"><h2>${esc(data.title_zh || workId)}</h2><div class="meta">${esc(data.title_en || '')} · 中文全文阅读</div></div><div class="upanishads-section-nav">${sectionLinks}</div><article id="upanishads-reader-body">`;
     html += blocks.map(block => {
@@ -5650,6 +5674,13 @@ async function renderUpanishadsReader(workId, blockParam, query, termsParam) {
     }).join('');
     html += '</article></div>';
     app.innerHTML = html;
+    app.querySelectorAll('[data-upanishads-section-target]').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.getElementById(link.dataset.upanishadsSectionTarget);
+        target?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      });
+    });
     if (blockParam) requestAnimationFrame(() => {
       const target = Array.from(document.querySelectorAll('[data-upanishads-block]')).find(node => node.dataset.upanishadsBlock === String(blockParam));
       target?.scrollIntoView({ block: 'center', behavior: 'auto' });
