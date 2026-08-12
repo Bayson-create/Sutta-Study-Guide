@@ -561,6 +561,45 @@ a:hover { text-decoration: underline; }
 .vism-lecture-target { outline: 3px solid color-mix(in srgb, var(--accent) 50%, transparent); outline-offset: 4px; background: var(--accent-bg); border-radius: 8px; }
 .vism-lecture-target-message { margin: 10px 0; color: var(--accent); font-size: .86em; }
 .vism-lecture-target-message.is-error { color: #9a4a3a; background: #fff3ef; border: 1px solid #e7b7aa; border-radius: 8px; padding: 8px 10px; }
+.vism-lecture-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.vism-review-link { flex: 0 0 auto; display: inline-flex; align-items: center; padding: 7px 12px; border: 1px solid var(--border); border-radius: 9px; color: var(--accent); background: var(--card-bg); font-size: .85em; text-decoration: none; box-shadow: 0 2px 8px rgba(80,60,30,.06); }
+.vism-review-link:hover, .vism-review-link:focus-visible { background: var(--accent-bg); text-decoration: none; }
+.vism-review-page { max-width: 1480px; margin: 0 auto; }
+.vism-review-head { margin: 14px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: 15px; background: linear-gradient(135deg, var(--accent-bg), var(--card-bg)); box-shadow: var(--shadow); }
+.vism-review-head h2 { margin: 0 0 5px; color: var(--accent); }
+.vism-review-head p { margin: 5px 0; color: var(--text-light); line-height: 1.7; font-size: .9em; }
+.vism-review-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 12px 0; }
+.vism-review-filter, .vism-review-action { border: 1px solid var(--border); border-radius: 999px; padding: 6px 11px; color: var(--text-light); background: var(--card-bg); cursor: pointer; font: inherit; font-size: .82em; }
+.vism-review-filter.active, .vism-review-action.primary { color: var(--accent); border-color: var(--accent-light); background: var(--accent-bg); font-weight: 700; }
+.vism-review-search, .vism-review-select { min-height: 32px; border: 1px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); padding: 5px 9px; font: inherit; font-size: .86em; }
+.vism-review-search { min-width: 210px; }
+.vism-review-grid { display: grid; grid-template-columns: minmax(230px, 290px) minmax(0, 1fr); gap: 14px; align-items: start; }
+.vism-review-list, .vism-review-card, .vism-review-candidate-panel { border: 1px solid var(--border); border-radius: 13px; background: var(--card-bg); box-shadow: 0 3px 14px rgba(80,60,30,.06); }
+.vism-review-list { max-height: calc(100vh - 245px); overflow: auto; position: sticky; top: 12px; }
+.vism-review-list-head { padding: 12px; border-bottom: 1px solid var(--border); color: var(--text-light); font-size: .8em; }
+.vism-review-list-item { display: block; width: 100%; padding: 10px 12px; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--border) 65%, transparent); background: transparent; color: var(--text); text-align: left; cursor: pointer; font: inherit; }
+.vism-review-list-item:hover, .vism-review-list-item.active { background: var(--accent-bg); }
+.vism-review-list-item small { display: block; margin-top: 3px; color: var(--text-light); font-size: .76em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vism-review-dot { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: #b9a98d; vertical-align: middle; }
+.vism-review-dot.verified { background: #5e9a72; }.vism-review-dot.ambiguous { background: #c58a3f; }.vism-review-dot.unmapped { background: #b86f63; }
+.vism-review-card { padding: 17px; min-width: 0; }
+.vism-review-card h3 { margin: 0 0 9px; color: var(--accent); font-size: 1.05em; overflow-wrap: anywhere; }
+.vism-review-location, .vism-review-parent { color: var(--text-light); font-size: .82em; line-height: 1.7; }
+.vism-review-source { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 13px 0; }
+.vism-review-source-box { min-width: 0; padding: 10px 11px; border-radius: 9px; background: var(--accent-bg); line-height: 1.7; font-size: .86em; white-space: pre-wrap; overflow-wrap: anywhere; }
+.vism-review-source-box strong { display: block; margin-bottom: 3px; color: var(--accent); font-size: .8em; }
+.vism-review-candidate-panel { margin-top: 12px; padding: 13px; }
+.vism-review-candidate-panel h4 { margin: 0 0 8px; color: var(--accent); }
+.vism-review-candidate-search { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
+.vism-review-candidates { max-height: 360px; overflow: auto; }
+.vism-review-candidate { display: block; width: 100%; margin: 5px 0; padding: 9px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text); text-align: left; cursor: pointer; font: inherit; line-height: 1.6; }
+.vism-review-candidate:hover, .vism-review-candidate.active { border-color: var(--accent-light); background: var(--accent-bg); }
+.vism-review-candidate .meta { color: var(--text-light); font-size: .76em; }.vism-review-candidate .pali { font-style: italic; }.vism-review-candidate .en { font-size: .88em; }
+.vism-review-form { display: grid; gap: 8px; margin-top: 14px; }
+.vism-review-form label { color: var(--text-light); font-size: .82em; }.vism-review-form textarea, .vism-review-form input { width: 100%; box-sizing: border-box; border: 1px solid var(--border); border-radius: 8px; padding: 8px; color: var(--text); background: var(--card-bg); font: inherit; }
+.vism-review-form textarea { min-height: 72px; resize: vertical; }.vism-review-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }.vism-review-actions button { border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; background: var(--card-bg); color: var(--text); cursor: pointer; font: inherit; }.vism-review-actions button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }.vism-review-actions button:disabled { opacity: .55; cursor: wait; }
+.vism-review-history { margin-top: 13px; border-top: 1px solid var(--border); padding-top: 11px; }.vism-review-history-item { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .82em; line-height: 1.6; }.vism-review-history-meta { color: var(--text-light); }.vism-review-status { margin: 7px 0; color: var(--text-light); font-size: .84em; min-height: 1.4em; }.vism-review-status.error { color: #9a4a3a; }
+@media (max-width: 760px) { .vism-lecture-title-row { align-items: stretch; flex-direction: column; gap: 8px; }.vism-review-grid { grid-template-columns: 1fr; }.vism-review-list { position: static; max-height: 230px; }.vism-review-source { grid-template-columns: 1fr; }.vism-review-head { padding: 15px; }.vism-review-search { flex: 1 1 180px; min-width: 0; } }
 .upanishads-project-card { border-color: color-mix(in srgb, var(--accent) 34%, var(--border)); }
 .upanishads-gate { margin: 18px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--accent-bg); color: var(--text-light); line-height: 1.8; }
 .upanishads-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin:18px 0; }
@@ -1521,6 +1560,8 @@ function route() {
     renderVismSummary();
   } else if (hash === '#/research/vism/lecture') {
     renderVismLecture();
+  } else if (hash === '#/research/vism/lecture/review') {
+    renderVismLectureReview();
   } else if (hash.startsWith('#/research/vism/read/')) {
     const idPart = hash.slice('#/research/vism/read/'.length);
     const secParam = routeParams.get('sec');
@@ -5947,15 +5988,17 @@ function lectureCellHtml(table, cell, anchorsById) {
   const cellChapter = cell.col === 1
     ? lectureChapterFromText((cell.blocks || []).map(block => block.text || '').join(''))
     : null;
+  if (cellChapter) {
+    const chapterText = lectureUiText((cell.blocks || []).map(block => block.text || '').join(''));
+    const col = lectureDisplayColumn(table, cell.col);
+    return `<td data-source-col="${cell.col + 1}" data-display-col="${col + 1}" colspan="${Math.max(1, cell.colspan || 1)}" rowspan="${Math.max(1, cell.rowspan || 1)}"><a class="vism-lecture-chapter-link vism-lecture-cell-block" href="#/research/vism/read/${cellChapter}?mode=parallel">${esc(chapterText)}</a></td>`;
+  }
   const displayBlocks = (cell.blocks || []).map(block => {
     const text = lectureUiText(block.text);
     if (!text) return '<span class="vism-lecture-blank" aria-hidden="true"></span>';
     const itemId = cell.col >= 2 && cell.col <= 4 ? lectureItemId(table.table_id, cell.row, cell.col, block.index) : '';
     const anchor = itemId ? anchorsById.get(itemId) : null;
     const content = esc(text);
-    if (cellChapter) {
-      return `<a class="vism-lecture-chapter-link vism-lecture-cell-block" href="#/research/vism/read/${cellChapter}?mode=parallel">${content}</a>`;
-    }
     if (itemId) {
       if (anchor && anchor.status === 'verified' && anchor.target) {
         const target = anchor.target;
@@ -5977,18 +6020,17 @@ function lectureCellHtml(table, cell, anchorsById) {
 async function renderVismLecture() {
   app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载讲义数据…</div></div>';
   try {
-    const [lecture, anchorMap] = await Promise.all([
-      fetch('research/vism-data/lecture-v1.json').then(res => { if (!res.ok) throw new Error('讲义数据不可用'); return res.json(); }),
-      fetch('research/vism-data/lecture-anchor-map-v1.json').then(res => { if (!res.ok) throw new Error('讲义锚点清单不可用'); return res.json(); }),
-    ]);
-    const items = anchorMap.items || [];
+    const packageData = await loadVismLecturePackage();
+    const { lecture, anchorMap, overlay } = packageData;
+    const overlayItems = overlay?.items || {};
+    const items = (anchorMap.items || []).map(item => overlayItems[item.item_id] ? { ...item, ...overlayItems[item.item_id] } : item);
     const anchorsById = new Map(items.map(item => [item.item_id, item]));
     const counts = lecture.counts || {};
     const anchorCounts = anchorMap.counts || {};
     let html = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净道论目录</button>`;
     html += `<div class="vism-lecture-page"><section class="vism-lecture-head">
       <div class="vism-lecture-kicker">VISUDDHIMAGGA · STUDY HANDOUT</div>
-      <h2>📘 清净道论讲义</h2>
+      <div class="vism-lecture-title-row"><div><h2>📘 清净道论讲义</h2></div><a class="vism-review-link" href="#/research/vism/lecture/review">锚点审核</a></div>
       <p>完整保留《清净道论》读书表的表格结构、换行、空白位置与层级对应关系，并统一转换为简体中文。表格可横向滚动，章节标题可直接进入逐句三语阅读器。</p>
       <p>来源：<a href="${esc(lecture.source?.url || 'https://dhammarain.github.io/canon/Anna/read1/read1.htm')}" target="_blank" rel="noopener">《清净道论》读书表 ↗</a> · 来源快照 SHA-256：<code>${esc(String(lecture.source?.sha256 || '').slice(0, 16))}…</code></p>
       <div class="vism-lecture-stats">
@@ -5998,7 +6040,7 @@ async function renderVismLecture() {
         <span class="vism-lecture-stat"><strong>${Number(anchorCounts.verified || 0).toLocaleString()} / ${Number(anchorCounts.items || items.length).toLocaleString()}</strong> 已核验锚点</span>
         <span class="vism-lecture-stat"><strong>${Number(counts.removed_page_tables || 0).toLocaleString()}</strong> 张表移除“页数”列</span>
       </div>
-      <div class="vism-lecture-note">阅读器跳转只发布已通过巴利语或英语唯一锚点核验的项目；当前未核验项目保留原文并标记“待核对”，不会把不确定内容误导到章节开头。</div>
+      <div class="vism-lecture-note">阅读器跳转只发布已通过巴利语或英语唯一锚点核验的项目；当前未核验项目保留原文并标记“待核对”，不会把不确定内容误导到章节开头。${overlay ? '' : '审核覆盖层暂时不可用，当前显示完整静态讲义。'}</div>
     </section>`;
     html += (lecture.tables || []).map((table, tableIndex) => {
       const visibleColumns = Math.max(1, (table.source_columns || 1) - (table.removed_page_ranges || []).reduce((sum, range) => sum + range[1] - range[0], 0));
@@ -6014,6 +6056,269 @@ async function renderVismLecture() {
   } catch (error) {
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净道论目录</button><div class="error-msg">讲义加载失败：${esc(error.message || error)}</div>`;
   }
+}
+
+let _vismLecturePackagePromise = null;
+
+async function loadVismLecturePackage() {
+  if (_vismLecturePackagePromise) return _vismLecturePackagePromise;
+  _vismLecturePackagePromise = Promise.all([
+    fetch('research/vism-data/lecture-v1.json').then(res => { if (!res.ok) throw new Error('讲义数据不可用'); return res.json(); }),
+    fetch('research/vism-data/lecture-anchor-map-v1.json').then(res => { if (!res.ok) throw new Error('讲义锚点清单不可用'); return res.json(); }),
+    fetch('research/vism-data/lecture-reader-anchor-v1.json').then(res => { if (!res.ok) throw new Error('讲义阅读器锚点目录不可用'); return res.json(); }),
+  ]).then(async ([lecture, anchorMap, readerCatalog]) => {
+    let overlay = null;
+    try {
+      const response = await fetch(`${API_BASE}/api/vism/lecture-anchors?source_sha256=${encodeURIComponent(lecture.source?.sha256 || '')}`, { credentials: 'include' });
+      if (response.ok) overlay = await response.json();
+    } catch (_) {
+      // The static lecture remains fully usable while the API is sleeping or
+      // unavailable; only verified links are temporarily withheld.
+    }
+    return { lecture, anchorMap, readerCatalog, overlay };
+  });
+  return _vismLecturePackagePromise;
+}
+
+let _vismLectureReviewState = null;
+
+function vismReviewStatus(item) {
+  return item?._reviewOverride?.status || 'pending';
+}
+
+function vismReviewStatusLabel(status) {
+  return ({ pending: '待核对', verified: '已核验', ambiguous: '歧义', unmapped: '无法映射' })[status] || status;
+}
+
+function vismReviewItemMatches(item, state) {
+  const status = vismReviewStatus(item);
+  if (state.filter !== 'all' && status !== state.filter) return false;
+  if (state.chapter && String(item.chapter || '') !== String(state.chapter)) return false;
+  if (state.query) {
+    const haystack = `${item.item_id} ${item.text} ${item.table_id}`.toLocaleLowerCase();
+    if (!haystack.includes(state.query.toLocaleLowerCase())) return false;
+  }
+  return true;
+}
+
+async function renderVismLectureReview() {
+  app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在检查审核权限…</div></div>';
+  let user = await communityFetchCurrentUser(true);
+  if (!user) {
+    const accepted = await communityRequireLogin();
+    if (!accepted || !location.hash.startsWith('#/research/vism/lecture/review')) {
+      app.innerHTML = '<button class="back-btn" onclick="location.hash=\'#/research/vism/lecture\'">← 返回讲义</button><div class="error-msg">需要登录后才能进入锚点审核工作台。</div>';
+      return;
+    }
+    user = await communityFetchCurrentUser(true);
+  }
+  if (!user || user.role !== 'admin') {
+    app.innerHTML = '<button class="back-btn" onclick="location.hash=\'#/research/vism/lecture\'">← 返回讲义</button><div class="error-msg">此工作台仅允许管理员访问。当前账号没有审核写权限。</div>';
+    return;
+  }
+  try {
+    const packageData = await loadVismLecturePackage();
+    const source = packageData.lecture.source?.sha256 || '';
+    const overrides = await vismReviewLoadOverrides(source);
+    const baseItems = packageData.anchorMap.items || [];
+    const items = baseItems.map(item => ({ ...item, _reviewOverride: overrides[item.item_id] || null }));
+    _vismLectureReviewState = {
+      packageData, source, items, overrides, filter: 'pending', chapter: '', query: '', index: 0,
+      selectedByItem: {}, drafts: {}, chapterCache: {}, chapterLoading: {}, histories: {}, historyLoading: {},
+    };
+    vismReviewRender();
+  } catch (error) {
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><div class="error-msg">审核工作台加载失败：${esc(error.message || error)}</div>`;
+  }
+}
+
+async function vismReviewLoadOverrides(source) {
+  const result = {};
+  let page = 1;
+  while (true) {
+    const response = await fetch(`${API_BASE}/api/admin/vism/lecture-anchors?source_sha256=${encodeURIComponent(source)}&page=${page}&page_size=500`, { headers: communityAuthHeaders(), credentials: 'include' });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail?.message || data.detail || `审核队列加载失败（HTTP ${response.status}）`);
+    (data.items || []).forEach(item => { result[item.item_id] = item; });
+    if ((data.items || []).length < Number(data.page_size || 500) || page * Number(data.page_size || 500) >= Number(data.total || 0)) break;
+    page += 1;
+  }
+  return result;
+}
+
+async function vismReviewLoadChapter(chapter) {
+  const state = _vismLectureReviewState;
+  if (!state || !chapter || state.chapterCache[chapter] || state.chapterLoading[chapter]) return;
+  state.chapterLoading[chapter] = true;
+  try {
+    const tag = String(chapter).padStart(2, '0');
+    const [peData, zhData] = await Promise.all([
+      fetch(`research/vism-data/pe_chap${tag}.json`).then(res => { if (!res.ok) throw new Error('巴利语/英语章节不可用'); return res.json(); }),
+      fetch(`research/vism-data/zh_chap${tag}.json`).then(res => { if (!res.ok) throw new Error('中文章节不可用'); return res.json(); }),
+    ]);
+    let raw = null;
+    try { raw = await fetch(`research/vism-data/retranslated_chap${tag}/pe_chap${tag}.final.json`).then(res => res.ok ? res.json() : Promise.reject()); } catch (_) {
+      try { raw = await fetch(`research/vism-data/retranslated_chap${tag}/results.json`).then(res => res.ok ? res.json() : Promise.reject()); } catch (_) { /* optional */ }
+    }
+    await transLoadDoc(`vism:${chapter}`);
+    const parallel = vismNormalizeParallel(peData, raw);
+    const catalogRows = state.packageData.readerCatalog.chapters?.[String(chapter)]?.rows || {};
+    const rows = [];
+    parallel.forEach((part, pi) => part.rows.forEach((row, ri) => {
+      const key = `${pi + 1}-${ri + 1}`;
+      const identity = catalogRows[key] || {};
+      rows.push({ chapter, part_index: pi + 1, row_index: ri + 1, pali: row.pali || '', english: row.english || '', chinese: row.chinese_translation || '', ...identity });
+    }));
+    state.chapterCache[chapter] = { peData, zhData, rows };
+  } finally {
+    state.chapterLoading[chapter] = false;
+  }
+}
+
+function vismReviewCandidates(item, state) {
+  const data = state.chapterCache[item.chapter];
+  if (!data) return [];
+  const query = (state.candidateQuery || '').trim().toLocaleLowerCase();
+  const itemWords = String(item.text || '').toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u).filter(word => word.length > 1);
+  return data.rows.map(row => {
+    const haystack = `${row.pali} ${row.english} ${row.chinese}`.toLocaleLowerCase();
+    let score = 0;
+    if (query && haystack.includes(query)) score += 100;
+    itemWords.forEach(word => { if (haystack.includes(word)) score += Math.min(20, word.length); });
+    if (row.part_index === 1) score += 0.1;
+    return { ...row, score };
+  }).filter(row => !query || `${row.pali} ${row.english} ${row.chinese}`.toLocaleLowerCase().includes(query))
+    .sort((a, b) => b.score - a.score || a.part_index - b.part_index || a.row_index - b.row_index)
+    .slice(0, 80);
+}
+
+function vismReviewCandidateHtml(candidate, selected) {
+  return `<button type="button" class="vism-review-candidate${selected ? ' active' : ''}" data-review-candidate="${candidate.part_index}-${candidate.row_index}">
+    <span class="meta">第 ${candidate.part_index} 部分 · 第 ${candidate.row_index} 句</span>
+    <span class="pali">${esc(candidate.pali || '（无巴利语）')}</span>
+    <span class="en">${esc(candidate.english || '（无英语）')}</span>
+    <span class="meta">中文现有译文：${esc(candidate.chinese || '（暂无）')}</span>
+  </button>`;
+}
+
+function vismReviewRenderCandidateList(item, data, container) {
+  if (!container) return;
+  const state = _vismLectureReviewState;
+  const candidates = vismReviewCandidates(item, state);
+  const selectedKey = state.selectedByItem[item.item_id] || '';
+  container.innerHTML = candidates.length
+    ? candidates.map(candidate => vismReviewCandidateHtml(candidate, `${candidate.part_index}-${candidate.row_index}` === selectedKey)).join('')
+    : '<div class="vism-review-status">没有符合筛选词的候选，请尝试 Pāli、English 或中文。</div>';
+  container.querySelectorAll('[data-review-candidate]').forEach(button => button.addEventListener('click', () => {
+    const key = button.dataset.reviewCandidate;
+    const candidate = data.rows.find(row => `${row.part_index}-${row.row_index}` === key);
+    if (!candidate) return;
+    state.selectedByItem[item.item_id] = key;
+    const draft = state.drafts[item.item_id] || {};
+    Object.assign(draft, { chapter: item.chapter, part_index: candidate.part_index, row_index: candidate.row_index, pali_hash: candidate.pali_hash || '', english_hash: candidate.english_hash || '', pali_snippet: candidate.pali_snippet || candidate.pali.slice(0, 240), english_snippet: candidate.english_snippet || candidate.english.slice(0, 240), pali_text: candidate.pali, english_text: candidate.english });
+    state.drafts[item.item_id] = draft;
+    vismReviewRender();
+  }));
+}
+
+function vismReviewRender() {
+  const state = _vismLectureReviewState;
+  if (!state) return;
+  const visible = state.items.filter(item => vismReviewItemMatches(item, state));
+  if (state.index >= visible.length) state.index = Math.max(0, visible.length - 1);
+  const item = visible[state.index];
+  const counts = { pending: 0, verified: 0, ambiguous: 0, unmapped: 0 };
+  state.items.forEach(entry => { counts[vismReviewStatus(entry)] = (counts[vismReviewStatus(entry)] || 0) + 1; });
+  if (!item) {
+    app.innerHTML = `<div class="vism-review-page"><button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><section class="vism-review-head"><h2>🧭 讲义锚点审核工作台</h2><p>当前筛选没有项目。</p><div class="vism-review-toolbar"><button class="vism-review-action" onclick="_vismLectureReviewState.filter='all';_vismLectureReviewState.index=0;vismReviewRender()">显示全部</button></div></section></div>`;
+    return;
+  }
+  const itemMap = new Map(state.items.map(entry => [entry.item_id, entry]));
+  const parentText = (item.parent_item_ids || []).map(id => itemMap.get(id)?.text).filter(Boolean).join(' › ') || '（无父级项目）';
+  const currentStatus = vismReviewStatus(item);
+  const draft = state.drafts[item.item_id] || { status: currentStatus === 'pending' ? 'unmapped' : currentStatus, reason: item._reviewOverride?.reason || '', review_note: item._reviewOverride?.review_note || '' };
+  state.drafts[item.item_id] = draft;
+  const data = state.chapterCache[item.chapter];
+  const selectedKey = state.selectedByItem[item.item_id] || '';
+  const selected = data?.rows.find(row => `${row.part_index}-${row.row_index}` === selectedKey);
+  let html = `<div class="vism-review-page"><button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><section class="vism-review-head"><h2>🧭 讲义锚点审核工作台</h2><p>只保存稀疏审核覆盖层；静态讲义、巴利语和英语正文永不改写。已核验项目保存后立即在公开讲义出现链接。</p><p>来源版本：<code>${esc(state.source.slice(0, 16))}…</code> · 当前项目 ${state.index + 1} / ${visible.length}</p><div class="vism-review-toolbar">`;
+  [['all', '全部'], ['pending', '待核对'], ['verified', '已核验'], ['ambiguous', '歧义'], ['unmapped', '无法映射']].forEach(([key, label]) => { html += `<button class="vism-review-filter${state.filter === key ? ' active' : ''}" data-review-filter="${key}">${label} ${counts[key] ?? state.items.length}</button>`; });
+  html += `<select class="vism-review-select" id="vism-review-chapter"><option value="">全部章节</option>${Array.from({ length: 23 }, (_, i) => `<option value="${i + 1}" ${String(state.chapter) === String(i + 1) ? 'selected' : ''}>第 ${i + 1} 品</option>`).join('')}</select><input class="vism-review-search" id="vism-review-search" value="${esc(state.query)}" placeholder="搜索项目文本或编号"><button class="vism-review-action" data-review-next-pending>下一项待核对</button></div></section><div class="vism-review-grid"><aside class="vism-review-list"><div class="vism-review-list-head">筛选结果 ${visible.length} 项 · 可用上一项/下一项逐一审核</div>`;
+  visible.slice(Math.max(0, state.index - 35), state.index + 36).forEach((entry, localIndex) => { const absolute = Math.max(0, state.index - 35) + localIndex; html += `<button type="button" class="vism-review-list-item${entry.item_id === item.item_id ? ' active' : ''}" data-review-index="${absolute}"><span class="vism-review-dot ${vismReviewStatus(entry) === 'pending' ? 'unmapped' : vismReviewStatus(entry)}"></span>${esc(entry.text)}<small>${vismReviewStatusLabel(vismReviewStatus(entry))} · ${esc(entry.item_id)}</small></button>`; });
+  html += `</aside><main class="vism-review-card"><h3>${esc(item.text)}</h3><div class="vism-review-location">${esc(item.item_id)} · 表 ${esc(item.table_id)} · 第 ${Number(item.row || 0) + 1} 行 · 第 ${Number(item.col || 0) + 1} 列 · 第 ${Number(item.block || 0) + 1} 个文本块</div><div class="vism-review-parent"><strong>父级链：</strong>${esc(parentText)} · 推断章节：${item.chapter ? `第 ${item.chapter} 品` : '待推断'}</div><div class="vism-review-source"><div class="vism-review-source-box"><strong>原始讲义项目</strong>${esc(item.text)}</div><div class="vism-review-source-box"><strong>当前审核状态</strong>${esc(vismReviewStatusLabel(currentStatus))}<br>${esc(item._reviewOverride?.reason || '尚未保存审核结论')}</div><div class="vism-review-source-box"><strong>选择目标后预览</strong>${selected ? `第 ${selected.part_index} 部分 · 第 ${selected.row_index} 句<br>${esc(selected.pali.slice(0, 180))}` : '请先加载并选择章节中的真实句子'}</div></div>`;
+  if (item.chapter && !data) html += `<div class="vism-review-candidate-panel"><h4>对应章节候选</h4><div class="vism-review-status">正在加载第 ${item.chapter} 品的 Pāli、English 和现有中文…</div></div>`;
+  else if (data) html += `<div class="vism-review-candidate-panel"><h4>对应章节候选</h4><input class="vism-review-search vism-review-candidate-search" id="vism-review-candidate-search" value="${esc(state.candidateQuery || '')}" placeholder="在本章检索 Pāli / English / 中文"><div class="vism-review-candidates" id="vism-review-candidates"></div></div>`;
+  else html += '<div class="vism-review-candidate-panel"><h4>对应章节候选</h4><div class="vism-review-status">该项目没有可推断章节，请人工标记为歧义或无法映射。</div></div>';
+  html += `<div class="vism-review-form"><label>审核结论<select id="vism-review-status" class="vism-review-select"><option value="verified" ${draft.status === 'verified' ? 'selected' : ''}>已核验（生成公开链接）</option><option value="ambiguous" ${draft.status === 'ambiguous' ? 'selected' : ''}>歧义（不生成链接）</option><option value="unmapped" ${draft.status === 'unmapped' ? 'selected' : ''}>无法映射（不生成链接）</option></select></label><label>审核理由（必填）<textarea id="vism-review-reason" placeholder="说明为何选择该句，或为何无法唯一映射">${esc(draft.reason || '')}</textarea></label><label>补充审核记录<textarea id="vism-review-note" placeholder="可记录章节标题、前后句或复核线索">${esc(draft.review_note || '')}</textarea></label><div class="vism-review-status" id="vism-review-status-message"></div><div class="vism-review-actions"><button type="button" class="primary" id="vism-review-save">保存审核结论</button><button type="button" id="vism-review-prev">← 上一项</button><button type="button" id="vism-review-next">下一项 →</button><button type="button" id="vism-review-history-button">查看历史</button>${selected ? `<a class="vism-review-action" target="_blank" rel="noopener" href="#/research/vism/read/${item.chapter}?mode=parallel&part=${selected.part_index}&row=${selected.row_index}&pali_anchor=${encodeURIComponent(selected.pali_hash || '')}&english_anchor=${encodeURIComponent(selected.english_hash || '')}&pali_snippet=${encodeURIComponent(selected.pali_snippet || '')}&english_snippet=${encodeURIComponent(selected.english_snippet || '')}&lecture_item=${encodeURIComponent(item.item_id)}">阅读器预览 ↗</a>` : ''}</div></div>`;
+  if (state.histories[item.item_id]) html += `<div class="vism-review-history"><strong>追加式审核历史</strong>${state.histories[item.item_id].length ? state.histories[item.item_id].map(revision => `<div class="vism-review-history-item"><div>${esc(vismReviewStatusLabel(revision.status))} · ${esc(revision.reason || '无理由')}</div><div class="vism-review-history-meta">${revision.author ? esc(revision.author.display_name) : '管理员'} · ${new Date(revision.created_at).toLocaleString('zh-CN')} · ${revision.id}</div><button type="button" class="vism-review-action" data-review-restore="${revision.id}">恢复此版本</button></div>`).join('') : '<div class="vism-review-status">暂无历史。</div>'}</div>`;
+  html += '</main></div></div>';
+  app.innerHTML = html;
+  if (data) vismReviewRenderCandidateList(item, data, document.getElementById('vism-review-candidates'));
+  if (item.chapter && !data && !state.chapterLoading[item.chapter]) vismReviewLoadChapter(item.chapter).then(() => { if (_vismLectureReviewState === state) vismReviewRender(); }).catch(error => { const node = document.querySelector('.vism-review-candidate-panel .vism-review-status'); if (node) { node.classList.add('error'); node.textContent = `章节候选加载失败：${error.message}`; } });
+  document.querySelectorAll('[data-review-filter]').forEach(button => button.addEventListener('click', () => { state.filter = button.dataset.reviewFilter; state.index = 0; vismReviewRender(); }));
+  document.querySelectorAll('[data-review-index]').forEach(button => button.addEventListener('click', () => { state.index = Number(button.dataset.reviewIndex); vismReviewRender(); }));
+  document.getElementById('vism-review-chapter')?.addEventListener('change', event => { state.chapter = event.target.value; state.index = 0; vismReviewRender(); });
+  document.getElementById('vism-review-search')?.addEventListener('input', event => { state.query = event.target.value; state.index = 0; vismReviewRender(); });
+  document.getElementById('vism-review-candidate-search')?.addEventListener('input', event => { state.candidateQuery = event.target.value; vismReviewRenderCandidateList(item, data, document.getElementById('vism-review-candidates')); });
+  document.querySelector('[data-review-next-pending]')?.addEventListener('click', () => { const pending = visible.findIndex(entry => vismReviewStatus(entry) === 'pending'); if (pending >= 0) { state.index = pending; vismReviewRender(); } });
+  document.getElementById('vism-review-status')?.addEventListener('change', event => { draft.status = event.target.value; });
+  document.getElementById('vism-review-reason')?.addEventListener('input', event => { draft.reason = event.target.value; });
+  document.getElementById('vism-review-note')?.addEventListener('input', event => { draft.review_note = event.target.value; });
+  document.getElementById('vism-review-prev')?.addEventListener('click', () => { state.index = Math.max(0, state.index - 1); vismReviewRender(); });
+  document.getElementById('vism-review-next')?.addEventListener('click', () => { state.index = Math.min(visible.length - 1, state.index + 1); vismReviewRender(); });
+  document.getElementById('vism-review-save')?.addEventListener('click', () => vismReviewSave(item));
+  document.getElementById('vism-review-history-button')?.addEventListener('click', () => vismReviewHistory(item));
+  document.querySelectorAll('[data-review-restore]').forEach(button => button.addEventListener('click', () => vismReviewRestore(item, button.dataset.reviewRestore)));
+}
+
+async function vismReviewSave(item) {
+  const state = _vismLectureReviewState;
+  const draft = state.drafts[item.item_id] || {};
+  if (!String(draft.reason || '').trim()) { alert('请填写审核理由。'); return; }
+  const selected = state.chapterCache[item.chapter]?.rows.find(row => `${row.part_index}-${row.row_index}` === state.selectedByItem[item.item_id]);
+  if (draft.status === 'verified' && !selected && !draft.part_index) { alert('已核验项目必须先选择一个真实句子。'); return; }
+  const body = { source_sha256: state.source, status: draft.status, reason: draft.reason.trim(), review_note: String(draft.review_note || '').trim(), chapter: draft.status === 'verified' ? (draft.chapter || item.chapter) : null, part_index: draft.status === 'verified' ? draft.part_index : null, row_index: draft.status === 'verified' ? draft.row_index : null, pali_hash: draft.status === 'verified' ? (draft.pali_hash || null) : null, english_hash: draft.status === 'verified' ? (draft.english_hash || null) : null, pali_snippet: draft.status === 'verified' ? (draft.pali_snippet || '') : '', english_snippet: draft.status === 'verified' ? (draft.english_snippet || '') : '', pali_text: draft.status === 'verified' ? (draft.pali_text || selected?.pali || '') : '', english_text: draft.status === 'verified' ? (draft.english_text || selected?.english || '') : '' };
+  const key = `vism_anchor_save:${item.item_id}`;
+  let requestId = '';
+  try { const saved = JSON.parse(localStorage.getItem(key) || 'null'); if (saved && JSON.stringify(saved.body) === JSON.stringify(body)) requestId = saved.request_id; } catch (_) {}
+  if (!requestId) requestId = transNewRequestId();
+  try { localStorage.setItem(key, JSON.stringify({ request_id: requestId, body, created_at: Date.now() })); } catch (_) {}
+  const button = document.getElementById('vism-review-save'); const status = document.getElementById('vism-review-status-message');
+  button.disabled = true; status.textContent = '正在校验并保存…'; status.className = 'vism-review-status';
+  try {
+    const response = await fetch(`${API_BASE}/api/admin/vism/lecture-anchors/${encodeURIComponent(item.item_id)}`, { method: 'PUT', headers: { ...communityAuthHeaders(), 'Content-Type': 'application/json', 'X-Idempotency-Key': requestId }, credentials: 'include', body: JSON.stringify(body) });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail?.message || data.detail || `保存失败（HTTP ${response.status}）`);
+    try { localStorage.removeItem(key); } catch (_) {}
+    state.overrides[item.item_id] = data; item._reviewOverride = data; state.drafts[item.item_id] = { ...draft, status: data.status, reason: data.reason, review_note: data.review_note };
+    status.textContent = data.status === 'verified' ? '已保存：公开讲义现在可以使用该锚点链接。' : '已保存：该项目不会生成公开链接。';
+    vismReviewRender();
+  } catch (error) {
+    button.disabled = false; status.textContent = `${error.message} 内容已保留，可重试。`; status.className = 'vism-review-status error';
+  }
+}
+
+async function vismReviewHistory(item) {
+  const state = _vismLectureReviewState;
+  if (state.histories[item.item_id]) { delete state.histories[item.item_id]; vismReviewRender(); return; }
+  try {
+    const response = await fetch(`${API_BASE}/api/admin/vism/lecture-anchors/${encodeURIComponent(item.item_id)}/history?source_sha256=${encodeURIComponent(state.source)}`, { headers: communityAuthHeaders(), credentials: 'include' });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail?.message || data.detail || `历史加载失败（HTTP ${response.status}）`);
+    state.histories[item.item_id] = data; vismReviewRender();
+  } catch (error) { alert(error.message); }
+}
+
+async function vismReviewRestore(item, revisionId) {
+  const state = _vismLectureReviewState;
+  const reason = window.prompt('请输入恢复理由（必填）：', '恢复经管理员确认的历史锚点');
+  if (!reason || !reason.trim()) return;
+  try {
+    const response = await fetch(`${API_BASE}/api/admin/vism/lecture-anchors/${encodeURIComponent(item.item_id)}/restore/${encodeURIComponent(revisionId)}`, { method: 'POST', headers: { ...communityAuthHeaders(), 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify({ source_sha256: state.source, reason: reason.trim() }) });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail?.message || data.detail || `恢复失败（HTTP ${response.status}）`);
+    item._reviewOverride = data; state.overrides[item.item_id] = data; delete state.histories[item.item_id]; vismReviewRender();
+  } catch (error) { alert(error.message); }
 }
 
 function vismSectionHtml(sec, idx, overrideHtml) {
