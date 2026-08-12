@@ -9650,7 +9650,7 @@ function dhammaToggleDrilldown(cardEl, card) {
   panel.querySelector('.dhamma-drilldown-close').addEventListener('click', () => panel.remove());
   body.appendChild(panel);
 }
-const DHAMMA_LAYER4_ORDER = ['visuddhimagga', 'vimuttimagga', 'abhidhammattha', 'mahavibhasa', 'kosa', 'nyayanusara', 'other'];
+const DHAMMA_LAYER4_ORDER = ['vimuttimagga', 'abhidhammattha', 'mahavibhasa', 'kosa', 'nyayanusara', 'other'];
 const DHAMMA_PAIRED_IDS = new Set(['madhyamaka_base', 'mahaprajnaparamita_sastra', 'avatamsaka', 'dashabhumika']);
 function dhammaRenderLayerCards(layer) {
   let cards = dhammaLayerCards[String(layer)];
