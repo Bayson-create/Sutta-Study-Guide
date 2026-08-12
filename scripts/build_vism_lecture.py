@@ -67,14 +67,23 @@ class TreeParser(HTMLParser):
         self.stack[-1].children.append(data)
 
 
-def text_content(node: Node | str) -> str:
+def text_content(node: Node | str, *, include_tables: bool = True) -> str:
+    """Extract cell text without leaking nested table text into its parent.
+
+    Word's HTML exporter places several small outline tables inside cells of
+    larger tables.  A generic recursive text walk used to copy those nested
+    rows into the parent cell and the parent table's row stream.  The table
+    itself is now a first-class child, so its text must be excluded here.
+    """
     if isinstance(node, str):
         return node
+    if node.tag == "table" and not include_tables:
+        return ""
     if node.tag in {"o:p", "xml"}:
         return ""
     if node.tag == "br":
         return "\n"
-    return "".join(text_content(child) for child in node.children)
+    return "".join(text_content(child, include_tables=include_tables) for child in node.children)
 
 
 def simplify(value: str, converter: Any) -> str:
@@ -96,14 +105,31 @@ def direct_children(node: Node, tag: str) -> list[Node]:
     return [child for child in node.children if isinstance(child, Node) and child.tag == tag]
 
 
+def nested_tables(node: Node) -> list[Node]:
+    """Return tables directly contained by a cell, stopping at each table."""
+    result: list[Node] = []
+
+    def walk(current: Node) -> None:
+        for child in current.children:
+            if not isinstance(child, Node):
+                continue
+            if child.tag == "table":
+                result.append(child)
+                continue
+            walk(child)
+
+    walk(node)
+    return result
+
+
 def blocks_for_cell(cell: Node, converter: Any) -> list[dict[str, Any]]:
     blocks = [child for child in cell.children if isinstance(child, Node) and child.tag in BLOCK_TAGS]
     if not blocks:
-        value = simplify(text_content(cell), converter)
+        value = simplify(text_content(cell, include_tables=False), converter)
         return [{"index": 0, "text": value, "empty": not bool(value)}]
     result = []
     for index, block in enumerate(blocks):
-        value = simplify(text_content(block), converter)
+        value = simplify(text_content(block, include_tables=False), converter)
         result.append({"index": index, "text": value, "empty": not bool(value)})
     return result
 
@@ -115,76 +141,189 @@ def int_attr(node: Node, name: str, default: int = 1) -> int:
         return default
 
 
-def parse_tables(root: Node, converter: Any) -> list[dict[str, Any]]:
-    tables: list[Node] = []
+def row_is_calibration(row: Node) -> bool:
+    """Word's zero-height column-width row is metadata, not visible content."""
+    height = row.attrs.get("height", "").strip().lower()
+    if height:
+        try:
+            if float(re.sub(r"[^0-9.+-]", "", height) or "-1") == 0:
+                return True
+        except ValueError:
+            pass
+    style = row.attrs.get("style", "").lower()
+    return bool(re.search(r"(?:^|;)\s*height\s*:\s*0(?:\s*(?:pt|px|cm|in|em|rem))?\s*(?:;|$)", style))
+
+
+def direct_table_rows(table: Node) -> list[Node]:
+    """Collect rows belonging to one table, never rows inside nested tables."""
+    rows: list[Node] = []
 
     def walk(node: Node) -> None:
+        for child in node.children:
+            if not isinstance(child, Node):
+                continue
+            if child.tag == "table":
+                continue
+            if child.tag == "tr":
+                rows.append(child)
+                continue
+            walk(child)
+
+    walk(table)
+    return rows
+
+
+def style_width(node: Node) -> str:
+    """Return a safe CSS width from the source's inline style/width attribute."""
+    style_match = re.search(r"(?:^|;)\s*width\s*:\s*([0-9.]+\s*(?:pt|px|cm|mm|in|em|rem|%))", node.attrs.get("style", ""), re.I)
+    if style_match:
+        return re.sub(r"\s+", "", style_match.group(1))
+    attr = node.attrs.get("width", "").strip()
+    if re.fullmatch(r"[0-9.]+", attr):
+        return f"{attr}px"
+    if re.fullmatch(r"[0-9.]+\s*(?:pt|px|cm|mm|in|em|rem|%)", attr, re.I):
+        return re.sub(r"\s+", "", attr)
+    return ""
+
+
+def width_from_cell(cell: Node) -> dict[str, str]:
+    css = style_width(cell)
+    return {"css": css, "source": cell.attrs.get("width", "").strip()} if css or cell.attrs.get("width") else {}
+
+
+def cell_value(cell: dict[str, Any]) -> str:
+    return "".join(block["text"] for block in cell["blocks"]).replace(" ", "").replace("\n", "")
+
+
+def parse_tables(root: Node, converter: Any) -> list[dict[str, Any]]:
+    """Parse the source table tree while retaining stable source ordinals.
+
+    The source contains 113 top-level tables and 12 tables nested inside
+    cells.  The ordinal is assigned in source pre-order so the existing
+    ``lecture-table-NNN`` IDs remain stable for review overlays and deep links.
+    """
+    table_nodes: list[Node] = []
+    parent_nodes: dict[int, Node | None] = {}
+    parent_cells: dict[int, Node | None] = {}
+
+    def collect(node: Node, parent_table: Node | None = None, parent_cell: Node | None = None) -> None:
         if node.tag == "table":
-            tables.append(node)
+            table_nodes.append(node)
+            parent_nodes[id(node)] = parent_table
+            parent_cells[id(node)] = parent_cell
+            parent_table = node
+            parent_cell = None
+        elif node.tag in {"td", "th"} and parent_table is not None:
+            parent_cell = node
         for child in node.children:
             if isinstance(child, Node):
-                walk(child)
+                collect(child, parent_table, parent_cell)
 
-    walk(root)
-    output = []
-    for table_index, table in enumerate(tables):
-        trs = []
+    collect(root)
+    table_ids = {id(node): f"lecture-table-{index + 1:03d}" for index, node in enumerate(table_nodes)}
+    cell_ids: dict[int, str] = {}
+    output: list[dict[str, Any]] = []
 
-        def collect_rows(node: Node) -> None:
-            if node.tag == "tr":
-                trs.append(node)
-                return
-            for child in node.children:
-                if isinstance(child, Node):
-                    collect_rows(child)
-
-        collect_rows(table)
+    for table_index, table in enumerate(table_nodes):
+        table_id = table_ids[id(table)]
+        source_rows = direct_table_rows(table)
+        calibration_rows = [index for index, row in enumerate(source_rows) if row_is_calibration(row)]
+        visible_source_rows = [index for index in range(len(source_rows)) if index not in calibration_rows]
         occupied: list[list[bool]] = []
-        cells: list[dict[str, Any]] = []
-        for row_index, tr in enumerate(trs):
-            occupied.extend([] for _ in range(max(0, row_index + 1 - len(occupied))))
+        raw_cells: list[dict[str, Any]] = []
+        width_candidates: list[dict[str, str] | None] = []
+        for source_row_index, tr in enumerate(source_rows):
+            while len(occupied) <= source_row_index:
+                occupied.append([])
             x = 0
             direct_cells = [child for child in tr.children if isinstance(child, Node) and child.tag in {"td", "th"}]
-            for cell_index, cell in enumerate(direct_cells):
-                while x < len(occupied[row_index]) and occupied[row_index][x]:
+            for source_cell_index, cell in enumerate(direct_cells):
+                while x < len(occupied[source_row_index]) and occupied[source_row_index][x]:
                     x += 1
                 colspan = int_attr(cell, "colspan")
                 rowspan = int_attr(cell, "rowspan")
-                for yy in range(row_index, row_index + rowspan):
+                for yy in range(source_row_index, source_row_index + rowspan):
                     while len(occupied) <= yy:
                         occupied.append([])
                     while len(occupied[yy]) < x + colspan:
                         occupied[yy].append(False)
                     for xx in range(x, x + colspan):
                         occupied[yy][xx] = True
-                cells.append({
-                    "cell_id": f"t{table_index + 1}-r{row_index + 1}-c{x + 1}",
-                    "row": row_index,
-                    "source_cell": cell_index,
-                    "col": x,
-                    "colspan": colspan,
+                raw = {
+                    "cell_id": f"t{table_index + 1}-r{source_row_index + 1}-c{x + 1}",
+                    "source_row": source_row_index,
+                    "source_cell": source_cell_index,
+                    "source_col": x,
+                    "source_colspan": colspan,
                     "rowspan": rowspan,
                     "blocks": blocks_for_cell(cell, converter),
-                })
+                    "nested_table_ids": [table_ids[id(child)] for child in nested_tables(cell)],
+                    "width": width_from_cell(cell),
+                    "node_id": id(cell),
+                }
+                raw_cells.append(raw)
+                cell_ids[id(cell)] = raw["cell_id"]
                 x += colspan
         width = max((len(row) for row in occupied), default=0)
+        width_candidates = [None] * width
+        for raw in raw_cells:
+            width_info = raw.get("width") or {}
+            css = width_info.get("css", "")
+            if not css:
+                continue
+            for column in range(raw["source_col"], min(width, raw["source_col"] + raw["source_colspan"])):
+                if width_candidates[column] is None:
+                    width_candidates[column] = {"css": css, "source": width_info.get("source", "")}
         page_ranges: list[tuple[int, int]] = []
-        for cell in cells:
-            value = "".join(block["text"] for block in cell["blocks"]).replace(" ", "").replace("\n", "")
-            if value in PAGE_LABELS:
-                page_ranges.append((cell["col"], cell["col"] + cell["colspan"]))
+        for raw in raw_cells:
+            if raw["source_row"] in calibration_rows:
+                continue
+            if cell_value(raw) in PAGE_LABELS:
+                page_ranges.append((raw["source_col"], raw["source_col"] + raw["source_colspan"]))
         page_ranges = sorted(set(page_ranges))
-        def is_page_cell(cell: dict[str, Any]) -> bool:
-            start, end = cell["col"], cell["col"] + cell["colspan"]
-            return any(start < page_end and end > page_start for page_start, page_end in page_ranges)
-        visible = [cell for cell in cells if not is_page_cell(cell)]
+        removed_columns = {column for start, end in page_ranges for column in range(start, end)}
+        visible: list[dict[str, Any]] = []
+        for raw in raw_cells:
+            if raw["source_row"] in calibration_rows:
+                continue
+            start = raw["source_col"]
+            end = start + raw["source_colspan"]
+            if cell_value(raw) in PAGE_LABELS:
+                continue
+            projected_columns = [column for column in range(start, end) if column not in removed_columns]
+            if not projected_columns:
+                continue
+            display_col = sum(column not in removed_columns for column in range(0, start))
+            cell = {
+                "cell_id": raw["cell_id"],
+                "row": raw["source_row"],
+                "source_row": raw["source_row"],
+                "source_cell": raw["source_cell"],
+                "col": start,
+                "display_col": display_col,
+                "colspan": len(projected_columns),
+                "source_colspan": raw["source_colspan"],
+                "rowspan": raw["rowspan"],
+                "blocks": raw["blocks"],
+                "nested_table_ids": raw["nested_table_ids"],
+            }
+            visible.append(cell)
+        parent_table = parent_nodes.get(id(table))
+        parent_cell = parent_cells.get(id(table))
         output.append({
-            "table_id": f"lecture-table-{table_index + 1:03d}",
+            "table_id": table_id,
             "source_index": table_index,
-            "source_rows": len(trs),
+            "table_level": 0 if parent_table is None else 1,
+            "parent_table_id": table_ids.get(id(parent_table)) if parent_table is not None else None,
+            "parent_cell_id": cell_ids.get(id(parent_cell)) if parent_cell is not None else None,
+            "source_rows": len(source_rows),
+            "rows": len(visible_source_rows),
+            "row_indices": visible_source_rows,
+            "calibration_rows": calibration_rows,
             "source_columns": width,
+            "display_columns": max(0, width - len(removed_columns)),
+            "column_widths": width_candidates,
             "removed_page_ranges": [[start, end] for start, end in page_ranges],
-            "rows": len(trs),
             "cells": visible,
         })
     return output
@@ -216,7 +355,8 @@ def build_items(tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     current_chapter: int | None = None
     for table in tables:
-        for row in range(table["rows"]):
+        row_indices = table.get("row_indices") or list(range(table["rows"]))
+        for row in row_indices:
             row_cells = [cell for cell in table["cells"] if cell["row"] == row]
             row_chapter = next((chapter_from_text("".join(block["text"] for block in cell["blocks"])) for cell in row_cells if chapter_from_text("".join(block["text"] for block in cell["blocks"]))), None)
             if row_chapter:
@@ -323,11 +463,61 @@ def build_reader_anchor_catalog(
     }
 
 
+def validate_tables(tables: list[dict[str, Any]]) -> dict[str, int]:
+    """Validate the structural invariants of the source-derived table tree."""
+    if len(tables) != 125:
+        raise ValueError(f"expected 125 source tables, got {len(tables)}")
+    top_level = [table for table in tables if table["parent_table_id"] is None]
+    nested = [table for table in tables if table["parent_table_id"] is not None]
+    if len(top_level) != 113 or len(nested) != 12:
+        raise ValueError(f"expected 113 top-level and 12 nested tables, got {len(top_level)} and {len(nested)}")
+    source_rows = sum(table["source_rows"] for table in tables)
+    if source_rows != 1995:
+        raise ValueError(f"expected 1995 source rows, got {source_rows}")
+    calibration_rows = sum(len(table["calibration_rows"]) for table in tables)
+    if calibration_rows != 90:
+        raise ValueError(f"expected 90 zero-height calibration rows, got {calibration_rows}")
+    page_tables = sum(bool(table["removed_page_ranges"]) for table in tables)
+    if page_tables != 8:
+        raise ValueError(f"expected 8 tables with a semantic page column, got {page_tables}")
+    table_ids = [table["table_id"] for table in tables]
+    if len(set(table_ids)) != len(table_ids) or table_ids != [f"lecture-table-{index:03d}" for index in range(1, 126)]:
+        raise ValueError("table IDs are not the stable source pre-order")
+    cell_ids: list[str] = []
+    for table in tables:
+        row_indices = set(table["row_indices"])
+        if len(row_indices) != table["rows"]:
+            raise ValueError(f"{table['table_id']} has inconsistent rendered row metadata")
+        if any(cell["row"] not in row_indices for cell in table["cells"]):
+            raise ValueError(f"{table['table_id']} contains a cell from a hidden calibration row")
+        if table["display_columns"] != table["source_columns"] - sum(end - start for start, end in table["removed_page_ranges"]):
+            raise ValueError(f"{table['table_id']} has inconsistent display column count")
+        cell_ids.extend(cell["cell_id"] for cell in table["cells"])
+        for cell in table["cells"]:
+            if cell["display_col"] < 0 or cell["colspan"] < 1:
+                raise ValueError(f"{table['table_id']} contains an invalid projected cell")
+            if not set(cell.get("nested_table_ids", [])).issubset(set(table_ids)):
+                raise ValueError(f"{table['table_id']} contains an unknown nested table")
+    if len(cell_ids) != len(set(cell_ids)):
+        raise ValueError("duplicate source cell IDs detected")
+    return {
+        "tables": len(tables),
+        "top_level_tables": len(top_level),
+        "nested_tables": len(nested),
+        "source_rows": source_rows,
+        "rendered_rows": sum(table["rows"] for table in tables),
+        "calibration_rows": calibration_rows,
+        "page_tables": page_tables,
+        "cells": len(cell_ids),
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--source-url", default=SOURCE_URL)
+    parser.add_argument("--validate", action="store_true", help="validate source-derived table invariants after building")
     args = parser.parse_args()
 
     source = args.source.resolve()
@@ -343,6 +533,7 @@ def main() -> int:
     parser_impl.feed(source_bytes.decode("utf-8", errors="strict"))
     converter = OpenCC("t2s")
     tables = parse_tables(parser_impl.root, converter)
+    validation = validate_tables(tables) if args.validate else None
     items = build_items(tables)
     reader_rows = read_reader_rows(out_dir)
     simplified_text = "\n".join(block["text"] for table in tables for cell in table["cells"] for block in cell["blocks"] if block["text"])
@@ -354,7 +545,7 @@ def main() -> int:
         "format": "vism-lecture/v1",
         "source": {"url": args.source_url, "sha256": source_sha, "snapshot": snapshot.name},
         "conversion": {"tool": "OpenCC", "config": "t2s", "display_language": "zh-Hans"},
-        "counts": {"tables": len(tables), "source_rows": sum(t["source_rows"] for t in tables), "visible_cells": sum(len(t["cells"]) for t in tables), "anchor_items": len(items), "removed_page_tables": page_table_count, "removed_page_ranges": page_cell_count},
+        "counts": {"tables": len(tables), "top_level_tables": sum(table["parent_table_id"] is None for table in tables), "nested_tables": sum(table["parent_table_id"] is not None for table in tables), "source_rows": sum(t["source_rows"] for t in tables), "rendered_rows": sum(t["rows"] for t in tables), "calibration_rows": sum(len(t["calibration_rows"]) for t in tables), "visible_cells": sum(len(t["cells"]) for t in tables), "anchor_items": len(items), "removed_page_tables": page_table_count, "removed_page_ranges": page_cell_count},
         "content_sha256": simplified_sha,
         "tables": tables,
     }
@@ -369,7 +560,10 @@ def main() -> int:
     (out_dir / "lecture-v1.json").write_text(json.dumps(lecture, ensure_ascii=False, sort_keys=True, separators=(",", ":")), encoding="utf-8")
     (out_dir / "lecture-anchor-map-v1.json").write_text(json.dumps(anchor_map, ensure_ascii=False, sort_keys=True, separators=(",", ":")), encoding="utf-8")
     (out_dir / "lecture-reader-anchor-v1.json").write_text(json.dumps(reader_anchor_catalog, ensure_ascii=False, sort_keys=True, separators=(",", ":")), encoding="utf-8")
-    print(json.dumps({"source_sha256": source_sha, "tables": len(tables), "source_rows": sum(t["source_rows"] for t in tables), "anchor_items": len(items), "removed_page_tables": page_table_count, "removed_page_ranges": page_cell_count, "reader_chapters": len(reader_rows)}, ensure_ascii=False))
+    result = {"source_sha256": source_sha, "tables": len(tables), "source_rows": sum(t["source_rows"] for t in tables), "rendered_rows": sum(t["rows"] for t in tables), "anchor_items": len(items), "removed_page_tables": page_table_count, "removed_page_ranges": page_cell_count, "reader_chapters": len(reader_rows)}
+    if validation:
+        result["validation"] = validation
+    print(json.dumps(result, ensure_ascii=False))
     return 0
 
 
