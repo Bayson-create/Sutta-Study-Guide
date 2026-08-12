@@ -9209,6 +9209,7 @@ const DHAMMA_LAYER_TAGLINES = {
 };
 
 let dhammaIndex = null, dhammaIndexById = null, dhammaLayerCards = null;
+let dhammaV4Index = [], dhammaV4ById = null;
 let dhammaMode = 'search-normal'; // 'search-normal' | 'search-trace' (browse view shows whenever the input is empty, regardless of mode)
 let dhammaTraceMode = 'ai';      // 'ai' | 'keyword'
 let dhammaSearchSeq = 0;
@@ -9217,13 +9218,28 @@ let dhammaSearchInFlight = false;
 
 async function ensureDhammaData() {
   if (dhammaIndex) return;
-  const [idxRes, cardsRes] = await Promise.all([
+  const [idxRes, cardsRes, v4Res] = await Promise.all([
     fetch(`${DHAMMA_DATA_BASE}/data/index.json`),
     fetch(`${DHAMMA_DATA_BASE}/data/layer_cards.json`),
+    fetch(`${DHAMMA_DATA_BASE}/data/v4-lineage-index.json`),
   ]);
   dhammaIndex = await idxRes.json();
-  dhammaIndexById = new Map(dhammaIndex.map(r => [r.id, r]));
+  const v4Payload = v4Res.ok ? await v4Res.json() : { works: [] };
+  dhammaV4Index = (v4Payload.works || []).map(work => ({
+    ...work,
+    id: work.work_id,
+    layer: work.layer,
+    source: 'tipitaka_v4',
+    layer_confidence: 'high',
+    layer_note: 'V4 不可变三语正文；层级来自 tipitaka lineage v1 映射。',
+  }));
+  dhammaV4ById = new Map(dhammaV4Index.map(r => [r.id, r]));
+  dhammaIndexById = new Map([...dhammaIndex, ...dhammaV4Index].map(r => [r.id, r]));
   dhammaLayerCards = await cardsRes.json();
+}
+
+function dhammaAllRecords() {
+  return [...(dhammaIndex || []), ...(dhammaV4Index || [])];
 }
 
 // --- ported from dhamma-lineage/site/doctext.js ---
@@ -9625,7 +9641,11 @@ function dhammaToggleDrilldown(cardEl, card) {
   panel.dataset.cardId = card.id;
   const items = card.ids.map(id => dhammaIndexById.get(id)).filter(Boolean)
     .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'zh-Hans-CN'));
-  const listHtml = items.map(r => `<li><a href="#/dhamma/read/${encodeURIComponent(r.id)}" title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(r.title || r.id)}</a></li>`).join('');
+  const listHtml = items.map(r => {
+    const href = r.source === 'tipitaka_v4' ? (r.reader_url || `https://bayson-create.github.io/Sutta-Study-Guide/#/tipitaka/read/${encodeURIComponent(r.id)}`) : `#/dhamma/read/${encodeURIComponent(r.id)}`;
+    const source = r.source === 'tipitaka_v4' ? '<span class="dhamma-source-tag shared">V4 三语本</span>' : '';
+    return `<li><a href="${dhammaEscapeHtml(href)}"${r.source === 'tipitaka_v4' ? ' target="_blank" rel="noopener"' : ''} title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(r.title || r.id)}</a>${source}</li>`;
+  }).join('');
   panel.innerHTML = toSimplified(`<button class="dhamma-drilldown-close">收起 ✕</button><h5>${card.label}（${items.length} 篇）</h5><ul class="text-list">${listHtml}</ul>`);
   panel.querySelector('.dhamma-drilldown-close').addEventListener('click', () => panel.remove());
   body.appendChild(panel);
@@ -9635,9 +9655,12 @@ const DHAMMA_PAIRED_IDS = new Set(['madhyamaka_base', 'mahaprajnaparamita_sastra
 function dhammaRenderLayerCards(layer) {
   let cards = dhammaLayerCards[String(layer)];
   if (!cards) return null;
+  cards = cards.slice();
   if (layer === 4) {
     const byId = Object.fromEntries(cards.map(c => [c.id, c]));
     cards = DHAMMA_LAYER4_ORDER.map(id => byId[id]).filter(Boolean);
+    const v4Items = dhammaV4Index.filter(r => r.layer === 4);
+    if (v4Items.length) cards.push({ id: 'v4', label: 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) });
   }
   const wrap = document.createElement('div');
   const groups = new Map();
@@ -9679,7 +9702,7 @@ function dhammaRenderBrowse() {
   if (!main) return;
   main.innerHTML = '';
   main.className = 'dhamma-layers';
-  const groups = dhammaGroupByLayer(dhammaIndex);
+  const groups = dhammaGroupByLayer(dhammaAllRecords());
   for (const layer of DHAMMA_LAYER_ORDER) {
     const items = groups[layer];
     const band = document.createElement('div');
@@ -9715,7 +9738,10 @@ function dhammaRenderBrowse() {
       } else {
         const row = document.createElement('div');
         row.className = 'dhamma-cards';
-        row.appendChild(dhammaRenderCard({ id: 'all', label: '浏览全部', count: items.length, ids: items.map(r => r.id) }));
+        const v4Items = (layer === 1 || layer === 2) ? dhammaV4Index.filter(r => r.layer === layer) : [];
+        const localItems = v4Items.length ? items.filter(r => r.source !== 'tipitaka_v4') : items;
+        row.appendChild(dhammaRenderCard({ id: 'all', label: v4Items.length ? 'CBETA 本地文本' : '浏览全部', count: localItems.length, ids: localItems.map(r => r.id) }));
+        if (v4Items.length) row.appendChild(dhammaRenderCard({ id: `v4-${layer}`, label: 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) }));
         body.appendChild(row);
       }
     }
