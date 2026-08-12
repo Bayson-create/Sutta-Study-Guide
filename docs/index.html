@@ -9239,7 +9239,7 @@ async function communitySavePassword() {
 
 const DHAMMA_DATA_BASE = 'https://bayson-create.github.io/dhamma-lineage';
 const DHAMMA_LAYER_NAMES = {
-  1: '第1层 · 巴利经律、阿含', 2: '第2层 · 巴利注疏、复注', 3: '第3层 · 部派阿毘达磨',
+  1: '第1层 · 早期经律与平行经文', 2: '第2层 · 部派注疏与复注', 3: '第3层 · 部派阿毗达磨',
   4: '第4层 · 部派体系论', 5: '第5层 · 大乘经典及基础体系论', 6: '第6层 · 成熟体系论',
   7: '第7层 · 哲学体系与宗派体系', 8: '第8层 · 现代法师',
 };
@@ -9786,8 +9786,11 @@ function dhammaRenderBrowse() {
       }
     }
     if (layer === 1) {
-      const row = document.createElement('div');
-      row.className = 'dhamma-cards';
+      const row = body.querySelector('.dhamma-cards') || document.createElement('div');
+      if (!row.parentNode) {
+        row.className = 'dhamma-cards';
+        body.appendChild(row);
+      }
       const card = document.createElement('a');
       card.className = 'dhamma-card dhamma-card-external';
       card.href = 'https://bayson-create.github.io/Early-Buddhist/';
@@ -9796,7 +9799,6 @@ function dhammaRenderBrowse() {
       card.title = '在新窗口打开外部站点 Early-Buddhist';
       card.innerHTML = `<span>早期佛教研究站点 ↗</span><span class="count">另一站点</span>`;
       row.appendChild(card);
-      body.appendChild(row);
     }
     band.appendChild(body);
     main.appendChild(band);
@@ -9908,11 +9910,16 @@ async function dhammaRunKeywordTrace(q) {
     }
   } catch (err) {
     if (mySeq !== dhammaSearchSeq) return;
-    if (err.code === 'NO_INFORMATIVE_TERMS') {
-      results.innerHTML = `<p class="dhamma-empty-note">"${dhammaEscapeHtml(q)}"里没有可用于检索的常见词组，换个说法试试。</p>`;
-      return;
-    }
-    results.innerHTML = `<p class="dhamma-empty-note">检索出错：${dhammaEscapeHtml(String(err))}</p>`;
+    // The V4 API is independent of the local CBETA index.  A local
+    // no-informative-terms/error state must not discard an already useful V4
+    // response or make it look like a global zero-result search.
+    const v4Run = await v4Promise;
+    if (mySeq !== dhammaSearchSeq) return;
+    const localMessage = err.code === 'NO_INFORMATIVE_TERMS'
+      ? `"${dhammaEscapeHtml(q)}"里没有可用于 CBETA 检索的常见词组，以下仍显示 V4 结果。`
+      : `CBETA 正文暂时不可用：${dhammaEscapeHtml(String(err))}`;
+    results.innerHTML = `<p class="dhamma-empty-note">${localMessage}</p>${renderDhammaV4ApiResults(v4Run, q)}`;
+    bindDhammaV4Pagination(results, q);
     return;
   }
   if (mySeq !== dhammaSearchSeq) return;
