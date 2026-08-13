@@ -6384,7 +6384,8 @@ async function renderVismOutline() {
       fetch('research/vism-data/outline-answers-v1.json').then(res => res.ok ? res.json() : null).catch(() => null),
     ]);
     let answersResult = staticAnswers;
-    if (!answersResult) {
+    const staticAnswerCount = Object.keys(answersResult?.answers || {}).length;
+    if (!answersResult || staticAnswerCount < Number(outline.counts?.questions || 216)) {
       try {
         const response = await fetch(`${API_BASE}/api/vism/outline-answers?source_sha256=${encodeURIComponent(outline.source.sha256)}`);
         if (response.ok) answersResult = await response.json();
