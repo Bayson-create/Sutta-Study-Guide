@@ -6424,7 +6424,11 @@ function vismOutlineSectionHtml(section, answers, notes, loggedIn) {
     if (block.kind === 'diagram' && block.text) {
       const nextGroup = block.diagram_group || `${section.id}-legacy-diagram`;
       if (diagramGroup && diagramGroup !== nextGroup) flushDiagrams();
-      if (roleTitle) { flushDiagrams(); rendered.push(roleTitle); }
+      // A role heading can sit on the first row of a diagram group.  It must
+      // not split that group into two scroll containers; only emit it before
+      // a new group or when no diagram rows are pending.
+      if (roleTitle && !diagramRun.length) rendered.push(roleTitle);
+      else if (roleTitle && diagramGroup !== nextGroup) rendered.push(roleTitle);
       diagramGroup = nextGroup;
       diagramRun.push(block);
       return;
