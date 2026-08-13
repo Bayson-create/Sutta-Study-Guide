@@ -23,7 +23,14 @@ from build_vism_lecture import Node, TreeParser, simplify
 SOURCE_URL = "https://dhammarain.github.io/canon/Anna/read1/Vism_abst.html"
 EXPECTED_SECTION_CHAPTERS = [[1], [2], [3], [4, 5], [6], [7], [8], [9], [10], [11], [12, 13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23]]
 QUESTION = re.compile(r"^(\d{1,2})\.\s*(.+)$")
-DIAGRAM = re.compile(r"[┌┐└┘├┤┬┴─│]")
+# Word exports the outline tables as paragraphs made from box-drawing
+# characters.  A number of legitimate table rows contain only one side bar
+# or one short separator, so counting eight characters silently classified
+# those rows as ordinary prose and split one visual table into many fragments.
+# A lone ─ is also used as ordinary Chinese punctuation in 90 prose rows; it
+# is deliberately not enough to make a paragraph a visual table row.
+DIAGRAM = re.compile(r"[┌┐└┘├┤┬┴│]")
+BOX_DRAWING = re.compile(r"[┌┐└┘├┤┬┴─│]")
 
 
 def walk(node: Node) -> list[Node]:
@@ -53,7 +60,28 @@ def clean_heading(value: str) -> str:
 
 
 def is_diagram(value: str) -> bool:
-    return len(DIAGRAM.findall(value)) >= 8
+    return bool(DIAGRAM.search(value))
+
+
+def annotate_diagram_groups(sections: list[dict[str, Any]]) -> None:
+    """Assign each box-drawing run to one stable visual table group.
+
+    The source has no semantic table element for these diagrams: it stores
+    every visible row as a separate paragraph.  Group IDs let the browser
+    render the complete run as one scrollable grid while keeping every source
+    paragraph ID and its original order intact.
+    """
+    for section in sections:
+        group_number = 0
+        active_group: str | None = None
+        for block in section["blocks"]:
+            if block["kind"] != "diagram":
+                active_group = None
+                continue
+            if active_group is None:
+                group_number += 1
+                active_group = f"{section['id']}-diagram-{group_number:02d}"
+            block["diagram_group"] = active_group
 
 
 def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], int]:
@@ -86,7 +114,9 @@ def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], in
             preface.append(block)
         else:
             current["blocks"].append(block)
-    return [{"id": "vism-outline-preface", "title": "前言与目录", "chapter_ids": [], "blocks": preface, "questions": []}, *sections], paragraphs
+    all_sections = [{"id": "vism-outline-preface", "title": "前言与目录", "chapter_ids": [], "blocks": preface, "questions": []}, *sections]
+    annotate_diagram_groups(all_sections)
+    return all_sections, paragraphs
 
 
 def annotate_sections(sections: list[dict[str, Any]]) -> None:
@@ -98,7 +128,7 @@ def annotate_sections(sections: list[dict[str, Any]]) -> None:
             compact = re.sub(r"\s+", "", text)
             if "学习目标" in compact:
                 phase = "learning_goals"
-            elif "重要词汇" in compact:
+            elif "重要词汇" in compact or "重要辞汇" in compact:
                 phase = "terms"
             elif "自我评量题目" in compact:
                 phase = "questions"
@@ -148,6 +178,21 @@ def validate(payload: dict[str, Any]) -> None:
         raise ValueError("source section chapter mapping is incomplete")
     if payload["counts"]["paragraphs"] != 3131:
         raise ValueError(f"expected 3131 source paragraphs, got {payload['counts']['paragraphs']}")
+    diagram_blocks = [
+        block
+        for section in sections
+        for block in section["blocks"]
+        if is_diagram(block["text"])
+    ]
+    if len(diagram_blocks) != payload["counts"]["diagrams"]:
+        raise ValueError("diagram count does not match the source block classification")
+    if any(block.get("kind") != "diagram" or not block.get("diagram_group") for block in diagram_blocks):
+        raise ValueError("every box-drawing source row must have one stable diagram group")
+    if any(is_diagram(block["text"]) and block.get("kind") != "diagram" for section in sections for block in section["blocks"]):
+        raise ValueError("a box-drawing source row was left as ordinary prose")
+    box_drawing_rows = sum(BOX_DRAWING.search(block["text"]) is not None for section in sections for block in section["blocks"])
+    if payload["counts"].get("box_drawing_rows") != box_drawing_rows:
+        raise ValueError("box-drawing audit count does not match the source")
 
 
 def main() -> int:
@@ -181,6 +226,8 @@ def main() -> int:
             "chapters": 23,
             "questions": sum(len(section["questions"]) for section in sections),
             "diagrams": sum(block["kind"] == "diagram" for block in all_blocks),
+            "box_drawing_rows": sum(BOX_DRAWING.search(block["text"]) is not None for block in all_blocks),
+            "diagram_groups": len({block["diagram_group"] for block in all_blocks if block.get("diagram_group")}),
         },
         "content_sha256": hashlib.sha256("\n".join(block["text"] for block in all_blocks).encode("utf-8")).hexdigest(),
         "sections": sections,

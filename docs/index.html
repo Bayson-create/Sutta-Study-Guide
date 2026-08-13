@@ -571,12 +571,23 @@ a:hover { text-decoration: underline; }
 .vism-outline-layout { display: grid; grid-template-columns: minmax(210px, 270px) minmax(0, 1fr); gap: 22px; align-items: start; }
 .vism-outline-sidebar { position: sticky; top: 14px; max-height: calc(100vh - 28px); overflow: auto; padding: 12px; border: 1px solid var(--border); border-radius: 14px; background: var(--card-bg); box-shadow: var(--shadow); }
 .vism-outline-sidebar a { display: block; padding: 7px 9px; color: var(--text-light); border-radius: 7px; text-decoration: none; font-size: .86em; line-height: 1.4; }
-.vism-outline-sidebar a:hover, .vism-outline-sidebar a:focus-visible { background: var(--accent-bg); color: var(--accent); text-decoration: none; }
+.vism-outline-sidebar a:hover, .vism-outline-sidebar a:focus-visible, .vism-outline-sidebar a.is-active { background: var(--accent-bg); color: var(--accent); text-decoration: none; }
+.vism-outline-sidebar a.is-active { box-shadow: inset 3px 0 0 var(--accent); font-weight: 700; }
 .vism-outline-section { scroll-margin-top: 16px; margin-bottom: 30px; padding: 22px 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--card-bg); box-shadow: 0 3px 14px rgba(80,60,30,.06); }
 .vism-outline-section h2 { color: var(--accent); margin: 0 0 14px; }
 .vism-outline-block { margin: 0 0 10px; line-height: 1.86; white-space: pre-wrap; overflow-wrap: anywhere; }
-.vism-outline-block.is-diagram { overflow-x: auto; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: color-mix(in srgb, var(--accent-bg) 55%, var(--card-bg)); color: var(--text); font: .76em/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre; }
+.vism-outline-diagram-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; margin: 12px 0 16px; padding: 13px 14px; border: 1px solid var(--border); border-radius: 10px; background: color-mix(in srgb, var(--accent-bg) 55%, var(--card-bg)); color: var(--text); }
+.vism-outline-diagram-grid { width: max-content; min-width: 100%; font: .82em/1.5 "Noto Sans Mono CJK SC", "Sarasa Mono SC", "Source Han Mono SC", ui-monospace, SFMono-Regular, Menlo, monospace; }
+.vism-outline-diagram-line { display: grid; grid-auto-flow: column; grid-auto-columns: 1ch; width: max-content; min-width: 100%; min-height: 1.5em; white-space: pre; }
+.vism-outline-diagram-line > span { display: block; min-width: 1ch; white-space: pre; }
+.vism-outline-diagram-line > span.is-wide { grid-column: span 2; }
+.vism-outline-diagram-grid[aria-hidden="true"] { user-select: text; }
+.vism-outline-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: pre; border: 0; }
 .vism-outline-role-title { margin: 24px 0 10px; color: var(--accent); font-size: 1.05em; }
+.vism-outline-terms { line-height: 2; }
+.vism-outline-term-zh { color: var(--text); }
+.vism-outline-term-pali { margin-left: .12em; color: var(--accent); font-style: italic; white-space: nowrap; }
+.vism-outline-term-gap { display: inline-block; min-width: .55em; }
 .vism-outline-questions { margin-top: 24px; }
 .vism-outline-question { margin: 14px 0; padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: color-mix(in srgb, var(--card-bg) 82%, var(--accent-bg)); }
 .vism-outline-question:target { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: 3px; }
@@ -1489,6 +1500,14 @@ function route() {
   const qIdx = rawHash.indexOf('?');
   const hash = qIdx === -1 ? rawHash : rawHash.slice(0, qIdx);
   const routeParams = new URLSearchParams(qIdx === -1 ? '' : rawHash.slice(qIdx + 1));
+  // Older outline links used a bare fragment such as
+  // #vism-outline-section-03.  Treat it as a deep link into the SPA instead
+  // of letting the router fall through to the home page.
+  const legacyOutlineSection = hash.match(/^#(vism-outline-(?:preface|section-\d{2}))$/);
+  if (legacyOutlineSection) {
+    location.hash = `#/research/vism/lecture/outline?section=${encodeURIComponent(legacyOutlineSection[1])}`;
+    return;
+  }
   // Consumed by whichever reader renders next - see searchApplyPendingHighlight.
   searchPendingHighlight = routeParams.get('hl')
     ? { term: routeParams.get('hl'), anchor: routeParams.get('anc') || '' }
@@ -6346,30 +6365,77 @@ function vismOutlineQuestionHtml(question, answer, note, loggedIn) {
   return `<article class="vism-outline-question" id="${esc(question.id)}"><h3>${question.number}. ${esc(question.text)}</h3><div class="vism-outline-note-box"><label for="vism-outline-note-${esc(question.id)}">我的想法</label>${noteInput}</div>${answerHtml}</article>`;
 }
 
+function vismOutlineDiagramCharIsWide(char) {
+  return /[\u1100-\u115f\u2329\u232a\u2e80-\u303e\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\ufe10-\ufe19\ufe30-\ufe6f\uff00-\uff60\uffe0-\uffe6\u{20000}-\u{3ffff}]/u.test(char);
+}
+
+function vismOutlineDiagramLineHtml(line) {
+  const cells = [];
+  for (const char of Array.from(String(line || ''))) {
+    if (/\p{Mark}/u.test(char) && cells.length) {
+      cells[cells.length - 1].text += char;
+      continue;
+    }
+    cells.push({ text: char, wide: vismOutlineDiagramCharIsWide(char) });
+  }
+  return `<div class="vism-outline-diagram-line">${cells.map(cell => `<span${cell.wide ? ' class="is-wide"' : ''}>${esc(cell.text)}</span>`).join('')}</div>`;
+}
+
+function vismOutlineDiagramHtml(blocks) {
+  const sourceText = blocks.map(block => String(block.text || '')).join('\n');
+  const rows = sourceText.split('\n').map(vismOutlineDiagramLineHtml).join('');
+  return `<div class="vism-outline-diagram-wrap" role="img" aria-label="${esc(sourceText)}"><span class="vism-outline-sr-only">${esc(sourceText)}</span><div class="vism-outline-diagram-grid" aria-hidden="true">${rows}</div></div>`;
+}
+
+function vismOutlineTermsHtml(text) {
+  // The handout often puts a Chinese term and its Pāli spelling directly
+  // next to each other.  Wrap only this known vocabulary pattern so the
+  // visual gap is consistent without altering either source string.
+  const pattern = /([\u3400-\u9fff][\u3400-\u9fff、，。·（）()\-]*?)([ \t\u00a0\uf020]*)([\p{Script=Latin}][\p{Script=Latin}\p{M}\d().\-]*(?:[ \t\u00a0\uf020]+[\p{Script=Latin}][\p{Script=Latin}\p{M}\d().\-]*)?)/gu;
+  return String(text || '').split('\n').map(line => {
+    let result = '';
+    let cursor = 0;
+    let match;
+    while ((match = pattern.exec(line)) !== null) {
+      result += esc(line.slice(cursor, match.index));
+      result += `<span class="vism-outline-term-zh">${esc(match[1])}</span><span class="vism-outline-term-gap" aria-hidden="true">${esc(match[2] || '\u00a0')}</span><span class="vism-outline-term-pali">${esc(match[3])}</span>`;
+      cursor = match.index + match[0].length;
+    }
+    pattern.lastIndex = 0;
+    return result + esc(line.slice(cursor));
+  }).join('<br>');
+}
+
 function vismOutlineSectionHtml(section, answers, notes, loggedIn) {
   const special = { learning_goals: '学习目标', terms: '重要词汇' };
   let lastRole = '';
   const rendered = [];
   let diagramRun = [];
+  let diagramGroup = '';
   const flushDiagrams = () => {
     if (!diagramRun.length) return;
-    rendered.push(`<pre class="vism-outline-block is-diagram">${esc(diagramRun.map(block => block.text).join('\n'))}</pre>`);
+    rendered.push(vismOutlineDiagramHtml(diagramRun));
     diagramRun = [];
+    diagramGroup = '';
   };
   (section.blocks || []).filter(block => block.role !== 'questions' || /自我评量题目/.test(block.text || '')).forEach(block => {
     const roleTitle = special[block.role] && special[block.role] !== lastRole ? `<h3 class="vism-outline-role-title">${special[block.role]}</h3>` : '';
     lastRole = block.role || lastRole;
     if (block.kind === 'diagram' && block.text) {
+      const nextGroup = block.diagram_group || `${section.id}-legacy-diagram`;
+      if (diagramGroup && diagramGroup !== nextGroup) flushDiagrams();
       if (roleTitle) { flushDiagrams(); rendered.push(roleTitle); }
+      diagramGroup = nextGroup;
       diagramRun.push(block);
       return;
     }
     flushDiagrams();
-    if (!block.text || /学习目标|重要词汇|自我评量题目/.test(block.text || '')) {
+    if (!block.text || /学习目标|重要(?:词汇|辞汇)|自我评量题目/.test(block.text || '')) {
       if (roleTitle) rendered.push(roleTitle);
       return;
     }
-    rendered.push(`${roleTitle}<div class="vism-outline-block">${esc(block.text)}</div>`);
+    const body = block.role === 'terms' ? vismOutlineTermsHtml(block.text) : esc(block.text);
+    rendered.push(`${roleTitle}<div class="vism-outline-block${block.role === 'terms' ? ' vism-outline-terms' : ''}">${body}</div>`);
   });
   flushDiagrams();
   const blocks = rendered.join('');
@@ -6402,7 +6468,9 @@ async function renderVismOutline() {
     }
     _vismOutlineState = { outline, answers: answersResult?.answers || {}, notes, timers: {}, chapterRows: {}, generating: false };
     const source = outline.source || {};
-    const nav = (outline.sections || []).map(section => `<a href="#${esc(section.id)}">${esc(section.title)}</a>`).join('');
+    const outlineParams = new URLSearchParams(location.hash.includes('?') ? location.hash.split('?')[1] : '');
+    const selectedSection = outlineParams.get('section') || '';
+    const nav = (outline.sections || []).map(section => `<a href="#/research/vism/lecture/outline?section=${encodeURIComponent(section.id)}" data-outline-section="${esc(section.id)}"${selectedSection === section.id ? ' class="is-active" aria-current="location"' : ''}>${esc(section.title)}</a>`).join('');
     const generator = user?.role === 'admin' ? `<div class="vism-outline-generator"><button class="vism-review-link" id="vism-outline-generate-default" onclick="vismOutlineGenerateAll('default')">使用站内 DeepSeek · max 并行生成 216 道答案</button><button class="vism-review-link secondary" id="vism-outline-generate-custom" onclick="vismOutlineGenerateAll('custom')">重试自定义模型</button><span id="vism-outline-generation-state" class="vism-outline-generation-state">自定义服务不可用时可切换站内 DeepSeek；所有请求均使用 max 思考强度。</span></div>` : '';
     app.innerHTML = `<div class="vism-outline-page"><button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><section class="vism-lecture-head"><div class="vism-lecture-kicker">VISUDDHIMAGGA · OUTLINE & SELF-STUDY</div><h2>清净道论各品大纲与自测</h2><p>完整简体化呈现《清净道论》各品内容大纲。每一道自测题可保存自己的学习记录；参考答案只在具有可核验逐句原文引文时发布。</p><p>来源：<a href="${esc(source.url || 'https://dhammarain.github.io/canon/Anna/read1/Vism_abst.html')}" target="_blank" rel="noopener">《清净道论》各品内容大纲 ↗</a> · SHA-256：<code>${esc(String(source.sha256 || '').slice(0, 16))}…</code></p><div class="vism-lecture-stats"><span class="vism-lecture-stat"><strong>${outline.counts?.chapters || 23}</strong> 品</span><span class="vism-lecture-stat"><strong>${outline.counts?.questions || 216}</strong> 道自测</span><span class="vism-lecture-stat"><strong>${outline.counts?.paragraphs || 3131}</strong> 段原始内容</span></div>${generator}</section><div class="vism-outline-layout"><nav class="vism-outline-sidebar" aria-label="各品大纲目录">${nav}</nav><main>${(outline.sections || []).map(section => vismOutlineSectionHtml(section, _vismOutlineState.answers, notes, !!user)).join('')}</main></div></div>`;
     document.querySelectorAll('.vism-outline-note-box textarea[data-question-id]').forEach(input => {
@@ -6416,9 +6484,33 @@ async function renderVismOutline() {
       });
       input.addEventListener('blur', () => vismOutlineSaveNote(input.dataset.questionId));
     });
-    const target = new URLSearchParams((location.hash.split('?')[1] || '')).get('q');
-    if (target) requestAnimationFrame(() => document.getElementById(target)?.scrollIntoView({ block: 'center' }));
-    else window.scrollTo(0, 0);
+    const sectionTarget = outlineParams.get('section');
+    const questionTarget = outlineParams.get('q');
+    const setActiveSection = sectionId => {
+      document.querySelectorAll('[data-outline-section]').forEach(link => {
+        const active = link.dataset.outlineSection === sectionId;
+        link.classList.toggle('is-active', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    const scrollTarget = sectionTarget || questionTarget;
+    if (scrollTarget) {
+      requestAnimationFrame(() => document.getElementById(scrollTarget)?.scrollIntoView({ block: 'start', behavior: 'auto' }));
+    } else {
+      window.scrollTo(0, 0);
+      setActiveSection(outline.sections?.[0]?.id || '');
+    }
+    document.querySelectorAll('[data-outline-section]').forEach(link => {
+      link.addEventListener('click', () => setActiveSection(link.dataset.outlineSection));
+    });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActiveSection(visible.target.id);
+      }, { rootMargin: '-12% 0px -72% 0px', threshold: 0 });
+      document.querySelectorAll('.vism-outline-section').forEach(section => observer.observe(section));
+    }
   } catch (error) {
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><div class="error-msg">各品大纲加载失败：${esc(error.message || error)}</div>`;
   }
