@@ -593,6 +593,9 @@ a:hover { text-decoration: underline; }
 .vism-lecture-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
 .vism-review-link { flex: 0 0 auto; display: inline-flex; align-items: center; padding: 7px 12px; border: 1px solid var(--border); border-radius: 9px; color: var(--accent); background: var(--card-bg); font-size: .85em; text-decoration: none; box-shadow: 0 2px 8px rgba(80,60,30,.06); }
 .vism-review-link:hover, .vism-review-link:focus-visible { background: var(--accent-bg); text-decoration: none; }
+.vism-outline-generator { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.vism-outline-generator .secondary { color: var(--text-light); }
+.vism-outline-generation-state { flex: 1 1 280px; color: var(--text-light); font-size: .82em; line-height: 1.55; }
 .vism-review-page { max-width: 1480px; margin: 0 auto; }
 .vism-review-head { margin: 14px 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: 15px; background: linear-gradient(135deg, var(--accent-bg), var(--card-bg)); box-shadow: var(--shadow); }
 .vism-review-head h2 { margin: 0 0 5px; color: var(--accent); }
@@ -6398,7 +6401,7 @@ async function renderVismOutline() {
     _vismOutlineState = { outline, answers: answersResult?.answers || {}, notes, timers: {}, chapterRows: {}, generating: false };
     const source = outline.source || {};
     const nav = (outline.sections || []).map(section => `<a href="#${esc(section.id)}">${esc(section.title)}</a>`).join('');
-    const generator = user?.role === 'admin' ? `<button class="vism-review-link" id="vism-outline-generate" onclick="vismOutlineGenerateAll()">生成并校验 216 道参考答案</button><span id="vism-outline-generation-state" class="vism-outline-generation-state">仅管理员可见；使用已配置的自定义模型与 max 思考强度。</span>` : '';
+    const generator = user?.role === 'admin' ? `<div class="vism-outline-generator"><button class="vism-review-link" id="vism-outline-generate-default" onclick="vismOutlineGenerateAll('default')">使用站内 DeepSeek · max 并行生成 216 道答案</button><button class="vism-review-link secondary" id="vism-outline-generate-custom" onclick="vismOutlineGenerateAll('custom')">重试自定义模型</button><span id="vism-outline-generation-state" class="vism-outline-generation-state">自定义服务不可用时可切换站内 DeepSeek；所有请求均使用 max 思考强度。</span></div>` : '';
     app.innerHTML = `<div class="vism-outline-page"><button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><section class="vism-lecture-head"><div class="vism-lecture-kicker">VISUDDHIMAGGA · OUTLINE & SELF-STUDY</div><h2>清净道论各品大纲与自测</h2><p>完整简体化呈现《清净道论》各品内容大纲。每一道自测题可保存自己的学习记录；参考答案只在具有可核验逐句原文引文时发布。</p><p>来源：<a href="${esc(source.url || 'https://dhammarain.github.io/canon/Anna/read1/Vism_abst.html')}" target="_blank" rel="noopener">《清净道论》各品内容大纲 ↗</a> · SHA-256：<code>${esc(String(source.sha256 || '').slice(0, 16))}…</code></p><div class="vism-lecture-stats"><span class="vism-lecture-stat"><strong>${outline.counts?.chapters || 23}</strong> 品</span><span class="vism-lecture-stat"><strong>${outline.counts?.questions || 216}</strong> 道自测</span><span class="vism-lecture-stat"><strong>${outline.counts?.paragraphs || 3131}</strong> 段原始内容</span></div>${generator}</section><div class="vism-outline-layout"><nav class="vism-outline-sidebar" aria-label="各品大纲目录">${nav}</nav><main>${(outline.sections || []).map(section => vismOutlineSectionHtml(section, _vismOutlineState.answers, notes, !!user)).join('')}</main></div></div>`;
     document.querySelectorAll('.vism-outline-note-box textarea[data-question-id]').forEach(input => {
       input.addEventListener('input', () => {
@@ -6498,38 +6501,58 @@ function vismOutlineEvidence(question, rows) {
   return selected.map(item => item.row).sort((a, b) => a.part_index - b.part_index || a.row_index - b.row_index);
 }
 
-async function vismOutlineGenerateAll() {
+async function vismOutlineGenerateAll(providerMode = 'custom') {
   const state = _vismOutlineState;
   if (!state || state.generating) return;
-  const button = document.getElementById('vism-outline-generate');
+  const buttons = [...document.querySelectorAll('#vism-outline-generate-default, #vism-outline-generate-custom')];
   const status = document.getElementById('vism-outline-generation-state');
   state.generating = true;
-  if (button) button.disabled = true;
+  buttons.forEach(button => { button.disabled = true; });
   try {
     const progressResponse = await communityFetchWithTimeout(`${API_BASE}/api/admin/vism/outline-answers/progress?source_sha256=${encodeURIComponent(state.outline.source.sha256)}`, { headers: communityAuthHeaders(), credentials: 'include' }, 30000);
     if (!progressResponse.ok) throw new Error('无法读取参考答案生成进度');
     const progress = await progressResponse.json();
     const complete = new Set(progress.completed || []);
     const questions = state.outline.sections.flatMap(section => section.questions || []);
-    for (const [index, question] of questions.entries()) {
-      if (complete.has(question.id)) continue;
-      if (status) status.textContent = `正在生成并校验第 ${index + 1}/${questions.length} 题…`;
-      const chapter = question.chapter_ids[0];
-      const evidence = vismOutlineEvidence(question.text, await vismOutlineRowsForChapter(chapter));
-      const response = await communityFetchWithTimeout(`${API_BASE}/api/admin/vism/outline-answers/generate`, {
-        method: 'POST', headers: { ...communityAuthHeaders(), 'Content-Type': 'application/json' }, credentials: 'include',
-        body: JSON.stringify({ source_sha256: state.outline.source.sha256, question_id: question.id, question: question.text, chapter_ids: question.chapter_ids, evidence }),
-      }, 210000);
-      if (!response.ok) throw new Error(`第 ${index + 1} 题未能通过生成或引用校验`);
-      state.answers[question.id] = await response.json();
-      complete.add(question.id);
-      await new Promise(resolve => setTimeout(resolve, 250));
-    }
+    const pending = questions.filter(question => !complete.has(question.id));
+    let next = 0;
+    let finished = complete.size;
+    let firstError = null;
+    const concurrency = providerMode === 'default' ? 4 : 1;
+    const worker = async () => {
+      while (!firstError) {
+        const index = next++;
+        if (index >= pending.length) return;
+        const question = pending[index];
+        try {
+          if (status) status.textContent = `${providerMode === 'default' ? '站内 DeepSeek' : '自定义模型'} · max 并行生成：已完成 ${finished}/${questions.length}，当前第 ${index + 1}/${pending.length} 题…`;
+          const chapter = question.chapter_ids[0];
+          const evidence = vismOutlineEvidence(question.text, await vismOutlineRowsForChapter(chapter));
+          const response = await communityFetchWithTimeout(`${API_BASE}/api/admin/vism/outline-answers/generate`, {
+            method: 'POST', headers: { ...communityAuthHeaders(), 'Content-Type': 'application/json' }, credentials: 'include',
+            body: JSON.stringify({ source_sha256: state.outline.source.sha256, question_id: question.id, question: question.text, chapter_ids: question.chapter_ids, evidence, provider_mode: providerMode }),
+          }, 210000);
+          if (!response.ok) {
+            let detail = '';
+            try { detail = (await response.json()).detail || ''; } catch (_) { /* keep generic error */ }
+            throw new Error(`第 ${index + 1} 题未能通过生成或引用校验${detail ? `：${detail}` : ''}`);
+          }
+          state.answers[question.id] = await response.json();
+          complete.add(question.id);
+          finished += 1;
+        } catch (error) {
+          firstError = error;
+          return;
+        }
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(concurrency, Math.max(1, pending.length)) }, () => worker()));
+    if (firstError) throw firstError;
     if (status) status.textContent = '216 道题均已生成并通过逐句引用校验，正在刷新公开答案。';
     await renderVismOutline();
   } catch (error) {
     if (status) status.textContent = `生成暂停：${error.message || error}。已通过校验的题目已安全保存，可再次点击继续。`;
-    if (button) button.disabled = false;
+    buttons.forEach(button => { button.disabled = false; });
   } finally {
     state.generating = false;
   }
