@@ -39,4 +39,13 @@
 .personhood-lab .pp-dialogue textarea { min-height:64px; }
 .personhood-lab .pp-dialogue-status { color:var(--pp-muted); font-size:12px; margin-top:10px; }
 .personhood-lab .pp-dialogue-answer { white-space:pre-wrap; margin-top:10px; padding:12px; border-radius:9px; background:#f4f1ec; line-height:1.6; font-size:13px; }
+.personhood-lab .pp-topline { display:flex; justify-content:space-between; gap:8px; margin:0 0 12px; }
+.personhood-lab .pp-model { text-align:left; font:inherit; color:var(--pp-ink); background:#fff; }
+.personhood-lab .pp-model small { display:block; margin-top:4px; }
+.personhood-lab details summary { cursor:pointer; color:#735713; font-size:12px; margin-top:8px; }
+.personhood-lab .pp-timeline { margin:0; padding-left:22px; }
+.personhood-lab .pp-timeline li { margin:8px 0; color:var(--pp-ink); font-size:13px; }
+.personhood-lab .pp-research summary { cursor:pointer; }
+.personhood-lab .pp-research ul { padding-left:20px; line-height:1.65; }
+.personhood-lab .pp-source-link { display:inline-block; margin:4px 12px 0 0; color:#735713; font-size:13px; }
 @media (max-width:850px) { .personhood-lab .pp-grid,.personhood-lab .pp-lanes,.personhood-lab .pp-models { grid-template-columns:1fr; } }

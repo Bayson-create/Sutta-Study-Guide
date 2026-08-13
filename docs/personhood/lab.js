@@ -1,161 +1,97 @@
 (function (global) {
   'use strict';
   var P = global.PaliPersonhood = global.PaliPersonhood || {};
-  var currentTrace = null;
-  var currentFixture = (P.FIXTURES || [])[1] || null;
-  var currentModel = P.MODEL_VERSIONS ? P.MODEL_VERSIONS.CANONICAL : 'pali-canonical/v1';
+  var STORE_KEY = 'pali-personhood-lab/session/v1';
+  var state = { model: 'pali-canonical/v1', mode: 'user-model', turns: [], savedCaseId: null };
+  var DOORS = { eye: '眼门（景象、形色）', ear: '耳门（声音、语言）', nose: '鼻门（气味）', tongue: '舌门（味道）', body: '身门（触碰、疼痛、温度）', mind: '意门（记忆、想法、意象）' };
+  var VALENCES = { pleasant: '乐受', painful: '苦受', neutral: '不苦不乐受' };
+  var KINDS = { 'visual form': '景象', speech: '说话或声音', odor: '气味', taste: '味道', touch: '触碰', pressure: '压力或疼痛', thought: '想法', memory: '记忆', gesture: '姿态或动作', ambiguous: '含义不明的对象', unspecified: '尚未明确的对象' };
+  var EVENTS = { contact: '门、所缘与识的接触条件', 'coarising-aggregates': '五蕴条件聚合', feeling: '受', 'perception-and-thought': '想与寻思的展开', craving: '爱', 'clinging-and-becoming': '取与有的局部反应模式', 'mindfulness-and-clear-comprehension': '正念与明觉', 'non-clinging': '不取著／局部止息', 'observable-action': '可观察行动', 'citta-vithi-view': '后期心路解释' };
 
-  function esc(value) {
-    return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) { return ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[ch]; });
+  function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]; }); }
+  function clone(value) { return P.clone(value); }
+  function modelLabel(value) { return value === 'theravada-synthesis/v1' ? '上座部整合版' : '经律核心版'; }
+  function eventLabel(value) { return EVENTS[value] || value; }
+  function kindLabel(value) { return KINDS[value] || value || '所缘'; }
+  function apiBase() { return global.SUTTA_PERSONHOOD_API_BASE || ''; }
+  function authHeaders() { var headers = { 'Content-Type': 'application/json' }; try { if (typeof global.communityAuthHeaders === 'function') Object.assign(headers, global.communityAuthHeaders()); } catch (ignore) {} return headers; }
+  function saveLocal() { try { global.localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (ignore) {} }
+  function restoreLocal() { try { var data = JSON.parse(global.localStorage.getItem(STORE_KEY) || 'null'); if (data && Array.isArray(data.turns)) state = Object.assign(state, data); } catch (ignore) {} }
+  function profile(id, label, trained) {
+    return { id: id, label: label, species: 'human', tendencies: { lobha: trained ? .30 : .72, dosa: trained ? .30 : .72, moha: trained ? .30 : .66 }, training: { sati: trained ? .75 : .18, sampajanna: trained ? .70 : .18, sila: trained ? .70 : .30, metta: trained ? .72 : .28, panna: trained ? .65 : .18 }, notes: '这是情境中的条件设定，不是人格分数、诊断或资格判断。' };
   }
-  function modelLabel(version) { return version === P.MODEL_VERSIONS.SYNTHESIS ? '上座部整合版' : '经律核心版'; }
-  function coverageFor(id) {
-    var claims = global.PaliPersonhood && global.PaliPersonhood.EVIDENCE_INDEX && global.PaliPersonhood.EVIDENCE_INDEX.claims || [];
-    var claim = claims.filter(function (item) { return item.id === id; })[0];
-    if (!claim) return [];
-    var records = [];
-    (claim.queries || []).forEach(function (query) { (query.records || []).forEach(function (record) { if (records.length < 3) records.push(record); }); });
-    return records;
+  function agentsFor(mode) { return mode === 'two-models' ? [profile('agent-a', '人格模型 A', false), profile('agent-b', '人格模型 B', true)] : [profile('agent-model', '人格模型', false)]; }
+  function interventions(app, agents) {
+    var item = {}; agents.forEach(function (agent) { item[agent.id] = {}; });
+    app.querySelectorAll('[data-intervention]:checked').forEach(function (node) { agents.forEach(function (agent) { item[agent.id][node.getAttribute('data-intervention')] = true; }); });
+    return item;
   }
-  function coverageHtml(id) {
-    return coverageFor(id).map(function (record) {
-      var href = record.source_url;
-      if (!href && record.work_id && record.row_id != null) href = '#/tipitaka/read/' + encodeURIComponent(record.work_id) + '?row=' + encodeURIComponent(record.row_id) + '&semantic=1';
-      return '<div class="pp-small">V4 候选 locator: <code>' + esc(record.locator || '') + '</code>' + (href ? ' · <a href="' + esc(href) + '" target="_blank" rel="noopener">跳转</a>' : '') + '</div>';
-    }).join('');
+  function selectedFixture(app) { return (P.FIXTURES || []).concat(P.SPECIAL_FIXTURES || []).filter(function (item) { return item.id === app.querySelector('[data-fixture]').value; })[0]; }
+  function scenarioFromForm(app) {
+    var fixture = selectedFixture(app) || (P.FIXTURES || [])[0];
+    var door = app.querySelector('[data-door]').value;
+    var valence = app.querySelector('[data-valence]').value;
+    var value = app.querySelector('[data-value]').value.trim();
+    return {
+      id: 'interactive-' + Date.now(), title: app.querySelector('[data-title]').value.trim() || '连续互动案例',
+      description: '用户提供可观察所缘；模型不从文字臆测隐藏心理状态。',
+      primary_object: { id: 'user-object-' + Date.now(), kind: app.querySelector('[data-kind]').value || (fixture.primary_object && fixture.primary_object.kind) || 'speech', door: door, value: value || '尚未描述的可观察所缘', valence: valence, observable: true, source_agent_id: state.mode === 'two-models' ? 'shared-environment' : 'user' },
+      context: { language: 'zh-CN', interaction_mode: state.mode, user_confirmed_observable_input: true }, observable_events: [{ id: 'user-input-' + Date.now(), actor_id: 'user', type: 'observable-input', value: value }]
+    };
   }
-  function fixtureOptions() {
-    return (P.FIXTURES || []).map(function (item) { return '<option value="' + esc(item.id) + '">' + esc(item.title) + '</option>'; }).join('');
+  function runTurn(app, compare) {
+    var scenario = scenarioFromForm(app); var agents = agentsFor(state.mode); var request = { modelVersion: state.model, scenario: scenario, agents: agents, interventions: interventions(app, agents), seed: 'interactive-' + (state.turns.length + 1), maxRounds: 1 };
+    var result = P.runInteraction(request); var turn = { input: clone(scenario.primary_object), request: request, trace: result, created_at: new Date().toISOString() };
+    state.turns.push(turn); saveLocal();
+    renderTimeline(app);
+    if (compare) { var other = clone(request); other.modelVersion = state.model === 'pali-canonical/v1' ? 'theravada-synthesis/v1' : 'pali-canonical/v1'; renderTrace(app, result, P.runInteraction(other)); }
+    else renderTrace(app, result);
   }
-  function profileForFixture(fixture) {
-    return fixture && fixture.agents && fixture.agents.length ? fixture.agents : P.defaultAgents();
+  function evidenceCard(ids) { return (ids || []).map(function (id) { var ev = P.getEvidence(id); return ev ? '<div class="pp-evidence-item"><strong>' + esc(ev.citation) + '</strong><span class="pp-badge">' + esc(ev.layer) + '</span><br>' + esc(ev.translation) + '<br><a target="_blank" rel="noopener" href="' + esc(ev.url) + '">查看来源</a><div class="pp-small">' + esc(ev.note || '') + '</div></div>' : '<div class="pp-notice">未解析的证据 ID：' + esc(id) + '</div>'; }).join(''); }
+  function renderEvent(event) { var labels = event.aggregates || {}; return '<article class="pp-event ' + esc(event.phase) + '"><div class="meta">步骤 ' + event.step + ' · ' + esc(eventLabel(event.kind)) + (event.phase === 'interpretive' ? ' · 后期系统化解释' : '') + '</div><div class="statement">' + esc(event.statement || '') + '</div><div class="pp-small">受：' + esc(VALENCES[labels.feeling] || labels.feeling || '') + '；所缘：' + esc(kindLabel(event.conditions && event.conditions.object_kind)) + '</div><details><summary>查看经文与研究依据</summary>' + evidenceCard(event.evidence_ids) + '</details></article>'; }
+  function renderTrace(app, trace, comparison) {
+    var target = app.querySelector('[data-trace]'); if (!target) return;
+    var streams = (trace.streams || []).map(function (stream) { return '<section class="pp-lane"><div class="pp-lane-title"><strong>' + esc(stream.agent_label) + '</strong><span class="pp-badge branch">' + (stream.branch === 'trained' ? '训练条件可用' : '反应链延续') + '</span></div><div class="pp-small">本轮条件设定：反应倾向 ' + esc(stream.tendency_used) + ' · 训练条件 ' + esc(stream.training_available) + '</div>' + stream.events.map(renderEvent).join('') + (stream.caveats || []).map(function (item) { return '<div class="pp-notice">' + esc(item) + '</div>'; }).join('') + '</section>'; }).join('');
+    var exchange = (trace.observable_edges || []).map(function (edge) { return '<div class="pp-edge"><strong>' + esc(edge.from_agent_id) + ' → ' + esc(edge.to_agent_id) + '</strong><br>' + esc(edge.value) + '<div class="pp-small">只传递可观察行动；不传递任何内部状态。</div></div>'; }).join('') || '<div class="pp-small">本模式由用户提供下一轮所缘；没有其他个体的内部状态被读取或共享。</div>';
+    var compare = comparison ? '<div class="pp-card"><h3>版本比较</h3><p class="pp-small">当前显示：' + esc(modelLabel(trace.model_version)) + '。另一版本 ' + esc(modelLabel(comparison.model_version)) + ' 已用同一输入运行；后期心路说明只在整合版出现。</p></div>' : '';
+    var continueButton = state.mode === 'two-models' ? '<button data-continue-models>让双方依据外化行动继续一轮</button>' : '';
+    target.innerHTML = '<div class="pp-card"><div class="pp-lane-title"><h3>' + esc(modelLabel(trace.model_version)) + '：本轮完整表现</h3><span class="pp-badge">第 ' + esc(state.turns.length) + ' 轮</span></div><div class="pp-lanes">' + streams + '</div><h3>中央可观察交换</h3>' + exchange + '<div class="pp-notice">“止息”只指当前局部反应链的止息，不模拟或认证涅槃、圣果、灭尽定或真实证悟。</div><div class="pp-buttons"><button data-export>导出可复现案例包</button><button data-explain>请 AI 解释此轮</button>' + continueButton + '</div><pre class="pp-export" data-output hidden></pre><div class="pp-dialogue-answer" data-explanation hidden></div></div>' + compare;
+    target.querySelector('[data-export]').addEventListener('click', function () { var out = target.querySelector('[data-output]'); out.hidden = false; out.textContent = JSON.stringify(exportCase(), null, 2); });
+    target.querySelector('[data-explain]').addEventListener('click', function () { explainTurn(target, state.turns[state.turns.length - 1]); });
+    var continueModels = target.querySelector('[data-continue-models]');
+    if (continueModels) continueModels.addEventListener('click', function () { continueTwoModels(app, trace); });
   }
-  function requestFor(fixture, model) {
-    return { modelVersion: model, scenario: fixture, agents: profileForFixture(fixture), interventions: fixture.interventions || {}, seed: fixture.seed || fixture.id };
+  function continueTwoModels(app, trace) {
+    var edge = (trace.observable_edges || [])[0];
+    if (!edge) { app.querySelector('[data-status]').textContent = '本轮没有可用的外化行动，因此不能自动推进。'; return; }
+    app.querySelector('[data-door]').value = 'ear'; app.querySelector('[data-kind]').value = 'speech'; app.querySelector('[data-valence]').value = 'neutral'; app.querySelector('[data-value]').value = edge.value;
+    runTurn(app, false);
   }
-  function evidenceCard(ids) {
-    var unique = [];
-    (ids || []).forEach(function (id) { if (unique.indexOf(id) < 0) unique.push(id); });
-    return unique.map(function (id) {
-      var item = P.getEvidence(id);
-      if (!item) return '<div class="pp-evidence-item">未解析证据：' + esc(id) + '</div>';
-      return '<div class="pp-evidence-item"><strong>' + esc(item.citation) + '</strong> <span class="pp-badge">' + esc(item.layer) + '</span><br><span>' + esc(item.translation) + '</span><br><a href="' + esc(item.url) + '" target="_blank" rel="noopener">打开原典/研究</a><br><span class="pp-small">' + esc(item.note) + '</span>' + coverageHtml(id) + '</div>';
-    }).join('');
+  function exportCase() { return { schema_version: P.SCHEMA_VERSION, case_kind: 'pali-personhood-continuous-case', model_version: state.model, interaction_mode: state.mode, saved_case_id: state.savedCaseId, turns: state.turns, evidence_manifest: P.evidenceManifest(), exported_at: new Date().toISOString() }; }
+  function explainTurn(target, turn) {
+    var panel = target.querySelector('[data-explanation]'); panel.hidden = false; panel.textContent = '正在基于已验证的轨迹与证据请求讲解…';
+    if (!apiBase()) { panel.textContent = '未配置 AI 服务。请直接审阅本轮事件的来源卡；确定性轨迹仍然有效。'; return; }
+    global.fetch(apiBase().replace(/\/$/, '') + '/api/personhood/explain', { method: 'POST', headers: authHeaders(), body: JSON.stringify(Object.assign({}, turn.request, { question: '请只解释这一轮已验证的条件过程、可观察行动及其证据边界。' })) }).then(function (response) { return response.json().then(function (data) { if (!response.ok) throw new Error(data.detail || '讲解服务不可用'); return data; }); }).then(function (data) { panel.textContent = (data.explanation && data.explanation.answer) || '没有可显示的讲解。'; }).catch(function (error) { panel.textContent = '讲解服务不可用；未保存任何额外数据。\n' + error.message; });
   }
-  function renderEvent(item) {
-    var classes = 'pp-event ' + (item.phase === 'interpretive' ? 'interpretive' : '') + ' ' + (item.phase === 'cessation' ? 'cessation' : '');
-    var badges = '';
-    if (item.phase === 'interpretive') badges += '<span class="pp-badge later">后期系统化</span>';
-    if (item.branch) badges += '<span class="pp-badge branch">' + esc(item.branch) + '</span>';
-    return '<div class="' + classes + '"><div class="meta">Step ' + item.step + ' · ' + esc(item.kind) + ' · ' + esc(item.phase) + badges + '</div><div class="statement">' + esc(item.statement || '') + '</div><div class="pp-small">五蕴聚合：' + esc(JSON.stringify(item.aggregates)) + '</div><button data-evidence="' + esc(item.evidence_ids.join(',')) + '">查看证据</button><div class="pp-evidence" data-evidence-panel=""></div></div>';
+  function renderTimeline(app) { var target = app.querySelector('[data-timeline]'); if (!target) return; target.innerHTML = state.turns.length ? state.turns.map(function (turn, index) { return '<li><strong>第 ' + (index + 1) + ' 轮：</strong>' + esc(DOORS[turn.input.door]) + ' · ' + esc(VALENCES[turn.input.valence]) + ' · ' + esc(turn.input.value) + '</li>'; }).join('') : '<li>尚未开始。请先输入一个你希望人格模型面对的、可观察的所缘。</li>'; }
+  function loadFixture(app) { var item = selectedFixture(app); if (!item) return; app.querySelector('[data-title]').value = item.title; app.querySelector('[data-door]').value = item.primary_object.door; app.querySelector('[data-kind]').value = item.primary_object.kind; app.querySelector('[data-valence]').value = item.primary_object.valence; app.querySelector('[data-value]').value = item.primary_object.value; }
+  function saveCase(app) {
+    if (!state.turns.length) { app.querySelector('[data-status]').textContent = '请先运行至少一轮，再保存案例。'; return; }
+    var base = apiBase(); if (!base) { app.querySelector('[data-status]').textContent = '当前为访客本地暂存：刷新后可继续；独立预览版未配置账户保存服务。'; return; }
+    var body = { title: app.querySelector('[data-title]').value || '连续互动案例', snapshot: exportCase() }; var url = base.replace(/\/$/, '') + '/api/personhood/cases' + (state.savedCaseId ? '/' + encodeURIComponent(state.savedCaseId) : '');
+    global.fetch(url, { method: state.savedCaseId ? 'PUT' : 'POST', headers: authHeaders(), body: JSON.stringify(body) }).then(function (response) { return response.json().then(function (data) { if (!response.ok) throw new Error(data.detail || '保存失败'); return data; }); }).then(function (data) { state.savedCaseId = data.id; saveLocal(); app.querySelector('[data-status]').textContent = '已保存到你的账户。案例编号：' + data.id; }).catch(function (error) { app.querySelector('[data-status]').textContent = '未能保存到服务器；本地暂存仍保留。' + error.message; });
   }
-  function renderStream(stream) {
-    return '<section class="pp-lane"><div class="pp-lane-title"><strong>' + esc(stream.agent_label) + '</strong><span class="pp-badge branch">' + esc(stream.branch) + '</span></div><div class="pp-small">倾向（本情境）：' + esc(stream.tendency_used) + ' · 训练条件：' + esc(stream.training_available) + '</div>' + stream.events.map(renderEvent).join('') + (stream.caveats || []).map(function (c) { return '<div class="pp-notice">' + esc(c) + '</div>'; }).join('') + '</section>';
-  }
-  function renderTrace(trace, compared) {
-    var app = document.getElementById('app');
-    if (!app) return;
-    currentTrace = trace;
-    var edges = (trace.observable_edges || []).map(function (edge) { return '<div class="pp-edge"><strong>' + esc(edge.from_agent_id) + ' → ' + esc(edge.to_agent_id) + '</strong><br>' + esc(edge.value) + '<br><span class="pp-small">仅可访问：' + esc(edge.accessible_state) + '</span></div>'; }).join('');
-    var compareHtml = compared ? '<div class="pp-card"><h3>双版本差异</h3><p class="pp-small">两次运行使用同一情境、配置和 seed；新增的解释性事件必须显式标记为后期系统化。</p><div class="pp-models"><div><strong>经律核心版事件数</strong><div>' + esc(compared.canonical.validation.checked_events) + '</div></div><div><strong>整合版事件数</strong><div>' + esc(compared.synthesis.validation.checked_events) + '</div></div></div></div>' : '';
-    app.querySelector('[data-trace]').innerHTML = '<div class="pp-card"><div class="pp-lane-title"><h3>' + esc(modelLabel(trace.model_version)) + '</h3><span class="pp-badge">seed: ' + esc(trace.seed) + '</span><span class="pp-badge">轮次: ' + esc(trace.interaction_limits && trace.interaction_limits.rounds_completed || 1) + '</span></div><div class="pp-lanes">' + trace.streams.map(renderStream).join('') + '</div><h3 style="margin-top:18px">中央可观察交换</h3>' + (edges || '<div class="pp-small">当前没有跨代理的外化边。</div>') + '<div class="pp-notice" style="margin-top:14px">“灭”只表示当前局部爱取/反应循环的止息。系统不会模拟、评分或认证涅槃、灭尽定、圣果或真实证悟。</div><div class="pp-buttons"><button data-action="export">导出可复现案例包</button><button data-action="evidence-manifest">显示证据清单</button></div><pre class="pp-export" data-export hidden></pre></div>' + '<div class="pp-card pp-dialogue"><h3>审计讲解与追问</h3><p class="pp-small">AI 只能解释已验证 trace 和 evidence IDs；它不能读取私有心念，也不能替你认证人格、动物经验或证悟状态。</p><form data-dialogue-form><textarea data-dialogue-question placeholder="例如：为什么这里出现了‘受 → 爱’的分岔？"></textarea><div class="pp-buttons"><button class="primary" type="submit">请求讲解</button></div></form><div class="pp-dialogue-status" data-dialogue-status>尚未请求 AI；可先使用本地确定性 trace。</div><div class="pp-dialogue-answer" data-dialogue-answer hidden></div></div>' + compareHtml;
-    wireTraceActions(app, trace);
-  }
-  function wireTraceActions(app, trace) {
-    app.querySelectorAll('[data-evidence]').forEach(function (button) {
-      button.addEventListener('click', function () {
-        var panel = button.parentElement.querySelector('[data-evidence-panel]');
-        panel.innerHTML = evidenceCard(button.getAttribute('data-evidence').split(','));
-        panel.classList.toggle('open');
-      });
-    });
-    var exportButton = app.querySelector('[data-action="export"]');
-    if (exportButton) exportButton.addEventListener('click', function () {
-      var out = app.querySelector('[data-export]'); out.hidden = !out.hidden;
-      out.textContent = JSON.stringify({ scenario: trace.scenario, agents: trace.agents, modelVersion: trace.model_version, seed: trace.seed, trace: trace, evidence_manifest: P.evidenceManifest() }, null, 2);
-    });
-    var manifestButton = app.querySelector('[data-action="evidence-manifest"]');
-    if (manifestButton) manifestButton.addEventListener('click', function () { alert(JSON.stringify(P.evidenceManifest().map(function (item) { return item.id + ' [' + item.layer + ']'; }), null, 2)); });
-    var dialogueForm = app.querySelector('[data-dialogue-form]');
-    if (dialogueForm) dialogueForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      var question = (app.querySelector('[data-dialogue-question]') || {}).value || '';
-      var status = app.querySelector('[data-dialogue-status]');
-      var answer = app.querySelector('[data-dialogue-answer]');
-      if (!question.trim()) { status.textContent = '请先输入一个围绕当前 trace 的问题。'; return; }
-      var base = global.SUTTA_PERSONHOOD_API_BASE || (typeof API_BASE !== 'undefined' ? API_BASE : '');
-      if (!base || !global.fetch) { status.textContent = '未配置后端；保留本地确定性 trace，暂不调用 AI。'; return; }
-      status.textContent = '正在验证 trace 并请求受限讲解…';
-      var headers = { 'Content-Type': 'application/json' };
-      try { if (typeof communityAuthHeaders === 'function') Object.assign(headers, communityAuthHeaders()); } catch (ignore) {}
-      var body = { modelVersion: trace.model_version, scenario: trace.scenario, agents: trace.agents, interventions: {}, seed: trace.seed, maxRounds: trace.interaction_limits && trace.interaction_limits.rounds_completed || 1, question: question.trim() };
-      global.fetch(base.replace(/\/$/, '') + '/api/personhood/explain', { method: 'POST', headers: headers, body: JSON.stringify(body) }).then(function (response) {
-        return response.json().then(function (data) { return { ok: response.ok, data: data }; });
-      }).then(function (result) {
-        if (!result.ok || !result.data.explanation) throw new Error(result.data.detail || 'AI 服务不可用');
-        answer.hidden = false;
-        answer.textContent = result.data.explanation.answer || '未返回讲解。';
-        status.textContent = result.data.explanation.ai && result.data.explanation.ai.degraded ? 'AI 不可用，已使用确定性讲解。' : '讲解已返回；请结合事件证据卡片审阅。';
-      }).catch(function (error) {
-        answer.hidden = false;
-        answer.textContent = '当前后端讲解不可用。确定性模型仍有效；请先查看事件证据。\n\n原因：' + error.message;
-        status.textContent = '已安全降级，没有保存案例或对话。';
-      });
-    });
-  }
-  function run(model, fixture) {
-    try { return P.runEpisode(requestFor(fixture, model)); }
-    catch (error) { var app = document.getElementById('app'); if (app) app.querySelector('[data-error]').textContent = error.message; return null; }
-  }
+  function researchHtml() { return '<div class="personhood-lab pp-research"><button class="back-btn" data-back>← 返回实验室</button><div class="pp-hero"><div class="pp-kicker">RESEARCH · MODEL · DELIVERY</div><h2>研究与系统说明</h2><p class="pp-subtitle">从三源文献核验到可复现的人格—条件过程引擎。此页如实区分已确认、候选与待人工复核材料。</p></div><main data-research><div class="pp-card">正在读取研究清单…</div></main></div>'; }
+  function renderResearch() { var app = document.getElementById('app'); if (!app) return; app.innerHTML = researchHtml(); app.querySelector('[data-back]').addEventListener('click', function () { global.location.hash = '#/personhood'; if (!global.location.hash || global.location.pathname.endsWith('index.html')) renderLab(); }); global.fetch('personhood/research-manifest.json').then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('研究清单不可用')); }).then(function (manifest) { app.querySelector('[data-research]').innerHTML = (manifest.sections || []).map(function (section) { return '<details class="pp-card" open><summary><strong>' + esc(section.title) + '</strong></summary><p>' + esc(section.summary) + '</p><ul>' + (section.items || []).map(function (item) { return '<li>' + esc(item) + '</li>'; }).join('') + '</ul>' + (section.links || []).map(function (link) { return '<a class="pp-source-link" href="' + esc(link.href) + '" target="_blank" rel="noopener">' + esc(link.label) + '</a>'; }).join('') + '</details>'; }).join('') + '<div class="pp-notice">版本：' + esc(manifest.version) + '。该页面不声称已经逐条人工穷尽全部巴利文献；请以审计状态与人工签核为准。</div>'; }).catch(function (error) { app.querySelector('[data-research]').innerHTML = '<div class="pp-notice">研究清单不可用：' + esc(error.message) + '</div>'; }); }
   function renderLab() {
-    var app = document.getElementById('app');
-    if (!app) return;
-    var selected = currentFixture || (P.FIXTURES || [])[0];
-    if (!selected) { app.innerHTML = '<div class="error-msg">personhood fixtures unavailable</div>'; return; }
-    currentFixture = selected;
-    app.innerHTML = '<div class="personhood-lab"><button class="back-btn" onclick="location.hash=\'#/research\'">← 返回研究</button><div class="pp-hero"><div class="pp-kicker">Pali Personhood Process Lab</div><h2>巴利人格过程实验室</h2><p class="pp-subtitle">这是一个条件过程模型：人格不是固定测评分数，而是门、所缘、识、触、受、想、行与训练条件共同形成的可审计轨迹。确定性引擎先决定状态，语言模型只能解释已生成的 trace，不能创造状态或引文。</p><div class="pp-notice">本地预览实验室 · 不收集心理健康资料 · 不输出临床、道德或宗教资格判断</div></div><div class="pp-grid"><aside><div class="pp-card"><h3>情境与版本</h3><label>确定性情境</label><select data-fixture>' + fixtureOptions() + '</select><label>所缘值（可观察输入）</label><textarea data-value></textarea><label>最大互动轮次（1–6）</label><input type="number" min="1" max="6" value="1" data-max-rounds><div class="pp-models"><div class="pp-model active" data-model="pali-canonical/v1"><strong>经律核心版</strong><small>canonical / vinaya</small></div><div class="pp-model" data-model="theravada-synthesis/v1"><strong>上座部整合版</strong><small>含后期系统化标签</small></div></div><div class="pp-buttons"><button class="primary" data-run>运行当前版本</button><button data-compare>并列比较两个版本</button></div><div class="pp-small" data-error></div></div><div class="pp-card"><h3>分岔干预</h3><label><input type="checkbox" data-intervention="mindfulness"> 正念 / 明觉</label><label><input type="checkbox" data-intervention="restraint"> 根门守护 / 戒护</label><label><input type="checkbox" data-intervention="metta"> 善意向 / 慈心</label><label><input type="checkbox" data-intervention="pause"> 暂停反应</label><p class="pp-small">干预只改写当前情境的条件输入；不代表固定人格被测量或改变。</p></div><div class="pp-card"><h3>证据规则</h3><p class="pp-small">每个事件都必须解析到 EvidenceLink。经文、律藏、阿毗达磨、注释、现代开示和学术研究分层；V4 row_id 缺失时明确显示待解析，不伪造定位。</p><div class="pp-small" data-coverage>证据审计清单加载中…</div><button data-audit style="margin-top:10px">显示三源审计清单</button><pre class="pp-export" data-audit-output hidden></pre></div></aside><main data-trace><div class="pp-card"><div class="pp-small">尚未运行</div></div></main></div></div>';
-    app.querySelector('[data-fixture]').value = selected.id;
-    app.querySelector('[data-value]').value = selected.primary_object.value;
-    app.querySelectorAll('[data-model]').forEach(function (node) { node.classList.toggle('active', node.getAttribute('data-model') === currentModel); node.addEventListener('click', function () { currentModel = node.getAttribute('data-model'); app.querySelectorAll('[data-model]').forEach(function (other) { other.classList.toggle('active', other.getAttribute('data-model') === currentModel); }); }); });
-    app.querySelector('[data-fixture]').addEventListener('change', function (event) { currentFixture = (P.FIXTURES || []).filter(function (item) { return item.id === event.target.value; })[0] || selected; app.querySelector('[data-value]').value = currentFixture.primary_object.value; });
-    function currentRequest(fixture, model) {
-      var rounds = Number((app.querySelector('[data-max-rounds]') || {}).value || 1);
-      fixture.maxRounds = Number.isFinite(rounds) ? Math.max(1, Math.min(6, Math.floor(rounds))) : 1;
-      return { modelVersion: model, scenario: fixture, agents: profileForFixture(fixture), interventions: fixture.interventions || {}, seed: fixture.seed || fixture.id, maxRounds: fixture.maxRounds };
-    }
-    app.querySelector('[data-run]').addEventListener('click', function () { var fixture = P.clone(currentFixture); fixture.primary_object.value = app.querySelector('[data-value]').value; fixture.interventions = { 'agent-a': {} }; app.querySelectorAll('[data-intervention]:checked').forEach(function (input) { fixture.interventions['agent-a'][input.getAttribute('data-intervention')] = true; }); try { var trace = P.runInteraction(currentRequest(fixture, currentModel)); renderTrace(trace); } catch (error) { app.querySelector('[data-error]').textContent = error.message; } });
-    app.querySelector('[data-compare]').addEventListener('click', function () { var fixture = P.clone(currentFixture); fixture.primary_object.value = app.querySelector('[data-value]').value; fixture.interventions = { 'agent-a': {} }; app.querySelectorAll('[data-intervention]:checked').forEach(function (input) { fixture.interventions['agent-a'][input.getAttribute('data-intervention')] = true; }); try { var c = P.runInteraction(currentRequest(fixture, P.MODEL_VERSIONS.CANONICAL)); var s = P.runInteraction(currentRequest(fixture, P.MODEL_VERSIONS.SYNTHESIS)); renderTrace(s, { canonical: c, synthesis: s }); } catch (error) { app.querySelector('[data-error]').textContent = error.message; } });
-    if (global.fetch) {
-      global.fetch('personhood/evidence-index.json').then(function (response) { return response.ok ? response.json() : null; }).then(function (data) {
-        if (!data) return;
-        P.EVIDENCE_INDEX = data;
-        var coverage = app.querySelector('[data-coverage]');
-        if (coverage) coverage.textContent = '旧版 V4 候选：' + data.claims.length + ' 个主张；请以下方三源审计状态为准。';
-      }).catch(function () {});
-      global.fetch('personhood/evidence-audit-summary.json').then(function (response) { return response.ok ? response.json() : null; }).then(function (data) {
-        if (!data || P.EVIDENCE_AUDIT) return;
-        P.EVIDENCE_AUDIT = data;
-        var coverage = app.querySelector('[data-coverage]');
-        var summary = data.summary || {};
-        if (coverage) coverage.textContent = '三源审计（静态快照）：' + (summary.confirmed || 0) + ' 已确认 · ' + (summary.candidate || 0) + ' 候选 · ' + (summary.review_required || 0) + ' 待人工复核。';
-      }).catch(function () {});
-      var base = global.SUTTA_PERSONHOOD_API_BASE || (typeof API_BASE !== 'undefined' ? API_BASE : '');
-      if (base) global.fetch(base.replace(/\/$/, '') + '/api/personhood/evidence').then(function (response) { return response.ok ? response.json() : null; }).then(function (data) {
-        if (!data) return;
-        P.EVIDENCE_AUDIT = data;
-        var coverage = app.querySelector('[data-coverage]');
-        var summary = data.summary || {};
-        if (coverage) coverage.textContent = '三源审计：' + (summary.confirmed || 0) + ' 已确认 · ' + (summary.candidate || 0) + ' 候选 · ' + (summary.review_required || 0) + ' 待人工复核（总计 ' + (summary.total || 0) + '）。';
-      }).catch(function () {});
-      var auditButton = app.querySelector('[data-audit]');
-      if (auditButton) auditButton.addEventListener('click', function () {
-        var output = app.querySelector('[data-audit-output]');
-        var audit = P.EVIDENCE_AUDIT;
-        if (!audit) { output.hidden = false; output.textContent = '审计清单尚未从后端加载；当前只能查看事件级静态证据。'; return; }
-        output.hidden = false;
-        output.textContent = JSON.stringify({ registry_version: audit.registry_version, coverage_scope: audit.coverage_scope, summary: audit.summary, claims: (audit.claims || []).map(function (claim) { var sources = claim.sources || {}; return { id: claim.id, layer: claim.layer, status: claim.status, v4: (claim.v4 || sources.v4 || {}).status, early_buddhist: (claim.early_buddhist || sources.early_buddhist || {}).status, suttacentral: (claim.suttacentral || sources.suttacentral || {}).status }; }) }, null, 2);
-      });
-    }
+    var app = document.getElementById('app'); if (!app) return; restoreLocal();
+    var options = (P.FIXTURES || []).concat(P.SPECIAL_FIXTURES || []).map(function (item) { return '<option value="' + esc(item.id) + '">' + esc(item.title) + '</option>'; }).join('');
+    app.innerHTML = '<div class="personhood-lab"><div class="pp-topline"><button class="back-btn" data-research>研究与系统说明</button><button class="back-btn" data-reset>开始新案例</button></div><div class="pp-hero"><div class="pp-kicker">PALI PERSONHOOD PROCESS LAB</div><h2>巴利人格过程实验室</h2><p class="pp-subtitle">把一个实际经历拆成可观察所缘、条件过程与外化回应。你可以连续输入景象、体验、言语或行动，观看模型的完整条件轨迹；模型不读取任何人的隐藏心理状态。</p><div class="pp-notice">这是学习与审计工具，不是人格测验、临床建议、道德评价或证悟认证。</div></div><div class="pp-grid"><aside><div class="pp-card"><h3>情境与版本</h3><label>预设情境</label><select data-fixture>' + options + '</select><label>互动模式</label><select data-mode><option value="user-model">我提供所缘，观察人格模型</option><option value="two-models">模拟两个个体相互互动</option></select><label>案例名称</label><input data-title value="连续互动案例"><label>感官门</label><select data-door>' + Object.keys(DOORS).map(function (key) { return '<option value="' + key + '">' + DOORS[key] + '</option>'; }).join('') + '</select><label>所缘类别</label><select data-kind>' + Object.keys(KINDS).map(function (key) { return '<option value="' + key + '">' + KINDS[key] + '</option>'; }).join('') + '</select><label>感受倾向</label><select data-valence>' + Object.keys(VALENCES).map(function (key) { return '<option value="' + key + '">' + VALENCES[key] + '</option>'; }).join('') + '</select><label>可观察所缘／发生的事</label><textarea data-value placeholder="例如：有人对人格模型说：‘你做得很差。’"></textarea><div class="pp-models"><button class="pp-model" data-model="pali-canonical/v1">经律核心版<small>只显示经律可支持的条件关系</small></button><button class="pp-model" data-model="theravada-synthesis/v1">上座部整合版<small>额外标示后期系统化解释</small></button></div><div class="pp-buttons"><button class="primary" data-run>运行这一轮</button><button data-compare>与另一版本比较</button></div></div><div class="pp-card"><h3>条件训练实验</h3><label><input type="checkbox" data-intervention="mindfulness"> 正念与明觉</label><label><input type="checkbox" data-intervention="restraint"> 根门守护与戒护</label><label><input type="checkbox" data-intervention="metta"> 慈心与善意</label><label><input type="checkbox" data-intervention="pause"> 暂停反应</label><p class="pp-small">干预只是当前情境可选择的条件，不代表对使用者的人格或修行成就作判断。</p></div><div class="pp-card"><h3>案例保存</h3><button data-save>保存到我的账户</button><p class="pp-small" data-status>访客案例默认只保存在此浏览器；登录后可主动保存。</p></div></aside><main><section class="pp-card"><h3>连续互动时间线</h3><ol class="pp-timeline" data-timeline></ol></section><section data-trace><div class="pp-card"><p class="pp-small">输入第一轮所缘后，这里会显示人格模型的完整条件过程。</p></div></section></main></div></div>';
+    loadFixture(app); state.mode = state.mode || 'user-model'; app.querySelector('[data-mode]').value = state.mode;
+    app.querySelectorAll('[data-model]').forEach(function (button) { button.classList.toggle('active', button.getAttribute('data-model') === state.model); button.addEventListener('click', function () { state.model = button.getAttribute('data-model'); app.querySelectorAll('[data-model]').forEach(function (item) { item.classList.toggle('active', item === button); }); saveLocal(); }); });
+    app.querySelector('[data-fixture]').addEventListener('change', function () { loadFixture(app); }); app.querySelector('[data-mode]').addEventListener('change', function (event) { state.mode = event.target.value; saveLocal(); });
+    app.querySelector('[data-run]').addEventListener('click', function () { try { runTurn(app, false); } catch (error) { app.querySelector('[data-status]').textContent = '无法运行：' + error.message; } }); app.querySelector('[data-compare]').addEventListener('click', function () { try { runTurn(app, true); } catch (error) { app.querySelector('[data-status]').textContent = '无法运行：' + error.message; } });
+    app.querySelector('[data-save]').addEventListener('click', function () { saveCase(app); }); app.querySelector('[data-reset]').addEventListener('click', function () { state.turns = []; state.savedCaseId = null; saveLocal(); renderLab(); }); app.querySelector('[data-research]').addEventListener('click', function () { global.location.hash = '#/personhood/research'; if (global.location.hash !== '#/personhood/research') renderResearch(); }); renderTimeline(app);
   }
-  global.renderPersonhoodLab = renderLab;
+  global.renderPersonhoodLab = renderLab; global.renderPersonhoodResearch = renderResearch;
 })(window);

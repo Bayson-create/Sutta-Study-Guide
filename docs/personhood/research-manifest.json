@@ -1,0 +1,29 @@
+{
+  "version": "personhood-research/0.2",
+  "sections": [
+    {
+      "title": "一、文献调查与三源核验",
+      "summary": "运行时主张必须能回到版本化的证据清单；三源对齐是核验门槛，而不是关于全球文献‘无遗漏’的声明。",
+      "items": ["以 V4 的稳定 locator 记录巴利文本回链；缺失定位必须可见。", "并列核对 V4、Early Buddhist 与 SuttaCentral 的段落和检索记录。", "将材料标记为 confirmed、candidate 或 review_required，并保留人工签核状态。"],
+      "links": [{"label": "研究协议", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/research/RESEARCH_PROTOCOL.md"}, {"label": "证据审计快照", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/research/PERSONHOOD_EVIDENCE_AUDIT.json"}]
+    },
+    {
+      "title": "二、人格—条件过程模型",
+      "summary": "模型把人格视为条件过程，不把五蕴变成固定实体或人格分数。",
+      "items": ["经律核心版：六处、触、受、想与寻思、爱取的条件关系，以及训练条件。", "上座部整合版：额外显示阿毗达磨与注释传统的后期系统化视图。", "每轮只以‘门—所缘—识／触—受—想与意向—可观察行动’表达；不宣称固定毫秒顺序。"],
+      "links": [{"label": "系统研究说明", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/research/PERSONHOOD_SYSTEM_RESEARCH.md"}, {"label": "主张库", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/research/claim_registry.json"}]
+    },
+    {
+      "title": "三、确定性引擎与 AI 边界",
+      "summary": "引擎先产生并验证 trace；AI 只能转写已验证的条件过程，不能新增状态或引文。",
+      "items": ["同一情境、版本与 seed 应得到相同 trace。", "两个个体只经言语、动作、姿态或共同环境相互成为下一轮所缘。", "系统禁止诊断、读心、动物内心推断，以及涅槃或证悟认证。"],
+      "links": [{"label": "前端引擎", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/frontend/personhood/engine.js"}, {"label": "证据规则", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/frontend/personhood/README.md"}]
+    },
+    {
+      "title": "四、落地、测试与已知限制",
+      "summary": "项目将研究资产、静态实验室、Python 镜像和集成清单分开版本化。",
+      "items": ["网页和 Python 镜像以共享 schema 与 fixtures 进行一致性测试。", "访客案例仅本地暂存；账户保存必须由用户主动触发。", "当前版本是研究预览：候选和待复核材料不应驱动新的确定性状态。"],
+      "links": [{"label": "人工审阅记录", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/research/HUMAN_REVIEW.md"}, {"label": "集成清单", "href": "https://github.com/Bayson-create/pali-personhood-lab/blob/main/integration-manifest.json"}]
+    }
+  ]
+}

@@ -1,24 +1,3052 @@
 {
+  "schema_version": "personhood-evidence-audit/1.0",
+  "generated_at": "2026-08-12T10:14:16.328530+00:00",
   "registry_version": "personhood-claims/1.0.0",
   "coverage_scope": "全 V4 可检索覆盖；经律论原典主张与后期系统化解释分层",
-  "generated_at": "2026-08-12T10:14:16.328530+00:00",
-  "summary": {"total": 16, "confirmed": 0, "candidate": 0, "review_required": 16},
+  "network_checks": true,
+  "index_status": {
+    "loaded": true,
+    "index_version": "semantic-v1-lexical-p0b-20260811",
+    "record_count": 778998,
+    "semantic": {
+      "enabled": false,
+      "model": null,
+      "dimension": null
+    },
+    "dictionary": {
+      "available": false,
+      "mode": "on-demand"
+    }
+  },
   "claims": [
-    {"id":"sn35.23.six-sense-bases","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"missing","suttacentral":"confirmed"},
-    {"id":"sn12.23.contact-feeling-craving","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"mn18.contact-proliferation","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"sn22.59.not-self","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"mn10.mindfulness","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"dn22.satipatthana","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"sn12.20.dependent-origination","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"sn22.79.formations","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"mn2.mental-defilements","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"sn35.95.guard-sense-doors","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"an3.65.kalama","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"mn21.ill-will","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"missing","suttacentral":"confirmed"},
-    {"id":"sn22.47.aggregates-conditions","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
-    {"id":"abhidhamma.citta-vithi","layer":"abhidhamma","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"},
-    {"id":"commentary.visuddhimagga-habits","layer":"commentary","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"},
-    {"id":"scholarship.aggregates-personhood","layer":"scholarship","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"}
-  ]
+    {
+      "id": "sn35.23.six-sense-bases",
+      "layer": "canonical",
+      "uid": "sn35.23",
+      "statement": "所谓一切的认知边界由六内处与六外处等所缘条件界定。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh07t_nrf:1099",
+              "work_id": "abh07t_nrf",
+              "row_id": 1099,
+              "paranum": "67",
+              "anchor": "67",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "67. 无色界中一切六依处皆不存在，因为无色界有情依靠修习色离贪之力，于彼处完全没有任何色法生起。"
+            },
+            {
+              "locator": "v4:s0105t_nrf:299",
+              "work_id": "s0105t_nrf",
+              "row_id": 299,
+              "paranum": "299",
+              "anchor": "299",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "由于邻近“醒觉”一词，此处以沉入有分的方式将入眠作为“卧”，而非仅是伸展背部，如“作用所成转起”等所示。如同在昼卧学处(divāseyyasikkhāpade, pārā. 77)中，伸展背部也因其为卧威仪而具有同一特征，故应知其亦包含于此。造作是作用，即身等之所作；它们成就此事，故为‘作用所成’(kiriyāmayāni)，此词为多义的派生词。或者，二转向之所作为作用，‘作用所成’是由此所作或生起。实由转向，有分被中断时，路心才会生起。以相续生起，以种种方式转起、转变，故为‘转起’。然而，在某些版本中有‘诸心’(cittānaṃ)的读本，此读本与阿毗达摩(abhidhamma)义注(aṭṭhakathā)等(VibhA. 523)及其复注相违，故应知其非古本。作用所成之转起即是：速行，或一切六门路心。因此，在《阿毗达摩复注》(Vibh-mṭ. 525)中说：‘因由身等作用所成，亦由转向作用所生起，故速行，或一切于六门转起者，名为“作用所成转起”。’‘不转起’的意思是，于入眠时不生起，名为‘睡’，应取此义。此诚为应引导义之语，否则，六门心以及一切作为先行、随行而生起的离门心，其转起都将名为‘睡’了。有鉴于此，应知于入眠之外的时间生起的离门心之转起，亦摄于‘醒觉’中。"
+            },
+            {
+              "locator": "v4:s0305t_tik:358",
+              "work_id": "s0305t_tik",
+              "row_id": 358,
+              "paranum": "358",
+              "anchor": "358",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "同样地，在睡眠中，若业处(kammaṭṭhāna)变得不清晰，则不应继续修习。因此，那位比丘应尽其所能地经行、站立、安坐，躺卧时如此审察而睡：‘身体无心，床亦无心。身体不知“我睡在床上”，床亦不知“身体睡在我上”。无心之身，睡于无心之床。’如此审察时，心便沉入有分(bhavaṅga)；醒来时，则会带着业处醒来——这名为于睡眠中具正知者。速行(javana)是由于身体等行为的产生，是唯作(kiriyā)的；是由于转向作用(āvajjanakiriyā)的产生；是由于转向作用而生起的。或者说，一切六门(chadvāra)所发生的，都名为唯作之行。当这些存在时，就名为醒觉(jāgarita)。如此审察者，名为于醒觉中具正知者。此外，将昼夜分为六份，有五份保持醒觉者，也名为于醒觉中具正知者。"
+            },
+            {
+              "locator": "v4:abh07t_nrf:258",
+              "work_id": "abh07t_nrf",
+              "row_id": 258,
+              "paranum": "258",
+              "anchor": "258",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "二十心缘于除出世间外之一切；五心缘于除顶道与果外之一切；六心则缘于一切。于此，概要有七种。"
+            },
+            {
+              "locator": "v4:e0301n_nrf:1279",
+              "work_id": "e0301n_nrf",
+              "row_id": 1279,
+              "paranum": "1279",
+              "anchor": "1279",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "依经教法，行(saṅkhārā)是有漏的善、不善思，分为非福行、福行、不动行三种。其中，十二不善思称为非福行；欲界、色界善思称为福行；无色界善思称为不动行。而依阿毗达摩(Abhidhamma)法，一切世间、出世间的善、不善思皆称为行。至于唯作思，在《分别论》(Vibhaṅga)中皆未被论及。义注(aṭṭhakathā)中说：‘因为于唯作法，无明及善、不善之根皆不得为亲依止缘(upanissayapaccaya)，故未说以唯作为缘的方式。’此即是说，无明及善、不善之根非唯作法之亲依止缘，故缘起教说中未论及唯作法。《相应》(Saṃyutta)中亦说：‘诸比丘(bhikkhu)，当比丘的无明已断，明已生起，他因无明之离贪、明之生起，故不造作福行，不造作非福行，不造作不动行。’然而，随其各自相应之缘，彼等（唯作法）的缘起亦非被遮止，盖无任何有为法能离于缘起。此理于识等亦然。依经教法，识(viññāṇa)是三十二种世间果报识。依阿毗达摩法，则是除去唯作心的一切六十九种世间、出世间识。依经教法，名色(nāmarūpa)是与世间识俱生的受等三蕴，以及结生时的业生色与生命过程中的心生色。依阿毗达摩法，则是一切与善、不善、果报相应的三蕴，以及前述之色。而在义注中，则亦含摄了一切获得后生缘的四因所生色。"
+            },
+            {
+              "locator": "v4:e0501n_nrf:75",
+              "work_id": "e0501n_nrf",
+              "row_id": 75,
+              "paranum": "75",
+              "anchor": "75",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "然于临死之际，一切六所依，实于死心之前第十七个有分心之生时刹那生起，此后不再生起。是故，于临死之际，有分心、所有六门心路心及死心，皆依止于彼等各自更早生起之所依而生起。此即所依前生依止。"
+            },
+            {
+              "locator": "v4:abh01a_att:1869",
+              "work_id": "abh01a_att",
+              "row_id": 1869,
+              "paranum": "1102",
+              "anchor": "1102",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "1102. 在漏的解释中，对五种欲功德的贪，名为欲漏。在色有与无色有中的欲贪、对禅那的喜爱、与常见俱生的贪，以及由有而有的愿求，名为有漏。六十二见，名为见漏。在八处中的无智，名为无明漏。又，为不混淆于各处所说的诸漏，应当了知其一法等差别。从义理上说，因有长久浸渍之义，这些漏仅为一法。但在律藏中，以两种方式出现：‘为防护现法诸漏，为击退后有诸漏’（《波罗夷》39）。在经藏的《六处篇》中，以三种方式出现：‘贤友，有此三漏：欲漏、有漏、无明漏’（《相应部》4.321）。在《抉择分教说》(Nibbedhikapariyāya)中，以五种方式出现：‘比丘们，有导向地狱的漏，有导向畜生趣的漏，有导向饿鬼界的漏，有导向人间的漏，有导向天界的漏’（《增支部》6.63）。在《六集》的《应请经》(Āhuneyyasutta)中，以六种方式出现：‘有应以防护断除的漏，有应以受用断除的漏，有应以忍受断除的漏，有应以回避断除的漏，有应以除遣断除的漏，有应以修习断除的漏’（《增支部》6.58）。在《一切漏经》(Sabbāsavapariyāya)（《中部》1.14等）中，与‘应以见断除的’合在一起，则有七种。但在此《漏的解释》中，它们依欲漏等差别而有四种。此中，词义如下：于名为五欲功德的欲中之漏，是‘欲漏’。于名为色有与无色有，且由业与投生两方面构成的有中之漏，是‘有漏’。见即是漏，是‘见漏’。无明即是漏，是"
+            },
+            {
+              "locator": "v4:abh02a_att:735",
+              "work_id": "abh02a_att",
+              "row_id": 735,
+              "paranum": "735",
+              "anchor": "735",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "即是说，首先在五蕴有中的结生时，名色——即三蕴及所依色——以俱生、相互、依止、异熟、相应、不相应、有、不离等缘，为第六处之缘，此处仅是概要。然而，依已述之理，一切皆可推知，故不于此详述。"
+            },
+            {
+              "locator": "v4:abh02a_att:740",
+              "work_id": "abh02a_att",
+              "row_id": 740,
+              "paranum": "740",
+              "anchor": "740",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在圣典中，略说仅有眼触等六种触。然而，广说则有眼触等五种善异熟触、五种不善异熟触，共十种；其余二十二种与世间异熟识相应，亦有二十二种。如是，一切总计三十二种，如同在“行缘识”中所说的识一般。而这三十二种触的缘即是六处。其中——"
+            },
+            {
+              "locator": "v4:abh02a_att:742",
+              "work_id": "abh02a_att",
+              "row_id": 742,
+              "paranum": "742",
+              "anchor": "742",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在此，一派主张此为“所取法流转之说”，只阐明缘与缘生法皆属同一相续。他们根据“六处缘触”的巴利经文，认为在无色界，第六处是触的缘，在其他界，则总括一切的六处为缘。通过作“一分同形保留”的省略，他们主张内在的眼等与第六处合为“六处”。因为如此一来，“第六处”与“六处”皆可归入“六处”之名下。另一派则只阐明缘生法属同一相续，而缘可来自不同相续。他们阐明所有能作为触之缘的处，并包含外在的处，主张内在的眼等与第六处，连同外在的色处等，合为“六处”。因为如此一来，“第六处”与“六处”在作省略后，亦可归入“六处”之名下。"
+            },
+            {
+              "locator": "v4:abh01a_att:160",
+              "work_id": "abh01a_att",
+              "row_id": 160,
+              "paranum": "160",
+              "anchor": "160",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "当比丘们受持时，先前有一位比丘坐在全体集会中，从阿毗达摩中引出教理说法道：“色蕴是无记，四蕴或善、或不善、或无记；十处是无记，二处或善、或不善、或无记；十六界是无记，二界或善、或不善、或无记；集谛是不善，道谛是善，灭谛是无记，苦谛或善、或不善、或无记；十根是无记，忧根是不善，未知当知根是善，四根或善、或无记，六根或善、或不善、或无记。”"
+            },
+            {
+              "locator": "v4:abh01a_att:46",
+              "work_id": "abh01a_att",
+              "row_id": 46,
+              "paranum": "46",
+              "anchor": "46",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "其中，蕴分别依经分判、阿毗达摩分判及问答三种方式划分。依诵习方式，其篇幅大约为五诵品；但若详细展开，则无量无边。此后，处分别等亦依此三种方式划分。其中，处分别依诵习方式，篇幅超过一诵品；界分别的篇幅大约为二诵品；谛分别亦复如是。根分别中没有经分判；但依诵习方式，其篇幅大约超过一诵品。缘起分别大约有六诵品，其中没有问答。念住分别的篇幅大约超过一诵品；正勤、神足、觉支、道支诸分别亦复如是。禅那分别的篇幅大约为二诵品，无量分别的篇幅大约超过一诵品。学处分别中亦无经分判；但依诵习方式，其篇幅大约超过一诵品；无碍解分别亦复如是。智分别分为十种；依诵习方式，其篇幅大约为三诵品。小事分别亦分为十种；依诵习方式，其篇幅大约为三诵品。法心分别分为三种；依诵习方式，其篇幅大约超过二诵品。所有这些若详细展开，皆无量无边。如是，此《分别论》论典，依诵习方式，其篇幅大约为三十五诵品；但若详细展开，则无量无边。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "sabba salayatana"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn35.23",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn35.23/sujato",
+              "excerpt": "{\"comment_text\": {\"sn35.23:1.2\": \"While most teaching templates are shared between the six senses and the aggregates, only the six senses are declared to be the “all”. This is because the six senses cover the entirety of experience, whereas the aggregates select the aspects most prominently grasped as self. For context, see <a href='https://suttacentral.net/sn35.28/en/sujato'>SN 35.28</a> and notes. \", \"sn35.23:1.7\": \"The “someone” would be a philosopher of the Upaniṣads, for whom the metaphysical notion of “all” is crucial. The same phrasing is used of the rejection of the “duality” of the senses; see <a href='https://suttacentral.net/sn35.92/en/sujato'>SN 35.92</a> and notes. \", \"sn35.23:1.11\": \"The brahmins of the Upaniṣads show off their rhetorical prowess through elevated debates. These debates, however, are exceedingly specialized, making sense only for those steeped in Vedic culture and ritual. \"}, \"html_text\": {\"sn35.23:0.1\": \"<article id='sn35.23'><header><ul><li class='division'>{}</li>\", \"sn35.23:0.2\": \"<li>{}</li></ul>\", \"sn35.23:0.3\": \"<h1 class='sutta-title'>{}</h1></header>\", \"sn35.23:1.1\": \"<p>{}</p>\", \"sn35.23:1.2\": \"<p>{}\", \"sn35.23:1.3\": \"{}</p>\", \"sn35.23:1.4\": "
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn12.23.contact-feeling-craving",
+      "layer": "canonical",
+      "uid": "sn12.23",
+      "statement": "触为条件而有受，受为条件而有爱；条件链可在局部止息。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh02a_att:858",
+              "work_id": "abh02a_att",
+              "row_id": 858,
+              "paranum": "858",
+              "anchor": "858",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此处解释如下：即由无明、行、识、名、六处、触、受、爱、取这九个根本句，而有以无明等、行等、识等、名等、六处等、触等、受等、爱等、取等为首者，这九个根本句即是九种方法。"
+            },
+            {
+              "locator": "v4:abh02m_mul:1072",
+              "work_id": "abh02m_mul",
+              "row_id": 1072,
+              "paranum": "272",
+              "anchor": "272",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "272. 尔时，无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名，名亦缘识；名缘第六处，第六处亦缘名；第六处缘触，触亦缘第六处；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是，此纯大苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:1094",
+              "work_id": "abh02m_mul",
+              "row_id": 1094,
+              "paranum": "274",
+              "anchor": "274",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "274. 于其时，无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名，名亦缘识；名缘触，触亦缘名；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是此纯苦蕴之集。"
+            },
+            {
+              "locator": "v4:abh02m_mul:1105",
+              "work_id": "abh02m_mul",
+              "row_id": 1105,
+              "paranum": "276",
+              "anchor": "276",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "276. 彼时，无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名色，名色亦缘识；名色缘第六处，第六处亦缘名色；第六处缘触，触亦缘第六处；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是，此纯大苦蕴生起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:1119",
+              "work_id": "abh02m_mul",
+              "row_id": 1119,
+              "paranum": "278",
+              "anchor": "278",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "278. 于其时，无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名色，名色亦缘识；名色缘六处，第六处亦缘名色；第六处缘触，触亦缘第六处；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是，此纯粹苦蕴之集起发生。"
+            },
+            {
+              "locator": "v4:abh02m_mul:941",
+              "work_id": "abh02m_mul",
+              "row_id": 941,
+              "paranum": "941",
+              "anchor": "941",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "缘于无明，行以无明为因；缘于行，识以行为因；缘于识，名色以识为因；缘于名色，第六处以名色为因；缘于第六处，触以第六处为因；缘于触，受以触为因；缘于受，爱以受为因；缘于爱，取以爱为因；缘于取，有生起；缘于有，生生起；缘于生，老死生起。如是，此纯大苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:942",
+              "work_id": "abh02m_mul",
+              "row_id": 942,
+              "paranum": "942",
+              "anchor": "942",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "缘于无明，行以无明为因；缘于行，识以行为因；缘于识，名色以识为因；缘于名色，六处以名色为因；缘于第六处，触以第六处为因；缘于触，受以触为因；缘于受，爱以受为因；缘于爱，取以爱为因；缘于取，有生起；缘于有，生生起；缘于生，老死生起。如是，此纯大苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:945",
+              "work_id": "abh02m_mul",
+              "row_id": 945,
+              "paranum": "245",
+              "anchor": "245",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "245. 缘于无明，行与无明相应；缘于行，识与行相应；缘于识，名与识相应；缘于名，第六处与名相应；缘于第六处，触与第六处相应；缘于触，受与触相应；缘于受，爱与受相应；缘于爱，取与爱相应；缘于取，有生起；缘于有，生生起；缘于生，老死生起。如是，此纯大苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:951",
+              "work_id": "abh02m_mul",
+              "row_id": 951,
+              "paranum": "246",
+              "anchor": "246",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "246. 无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名，名亦缘识；名缘第六处，第六处亦缘名；第六处缘触，触亦缘第六处；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是，此纯粹的苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh02m_mul:952",
+              "work_id": "abh02m_mul",
+              "row_id": 952,
+              "paranum": "952",
+              "anchor": "952",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "无明缘行，行亦缘无明；行缘识，识亦缘行；识缘名，名亦缘识；名缘触，触亦缘名；触缘受，受亦缘触；受缘爱，爱亦缘受；爱缘取，取亦缘爱；取缘有，有缘生，生缘老死。如是，此纯粹的苦蕴集起。"
+            },
+            {
+              "locator": "v4:abh01m_mul:2140",
+              "work_id": "abh01m_mul",
+              "row_id": 2140,
+              "paranum": "1343",
+              "anchor": "1343",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "1343. 于此，何为缘起善巧（paṭiccasamuppādakusalatā）？无明缘行，行缘识，识缘名色，名色缘六处，六处缘触，触缘受，受缘爱，爱缘取，取缘有，有缘生，生缘老死、愁、悲、苦、忧、恼生起；如是此纯大苦蕴生起。于此中之慧、了知……乃至……无痴、择法、正见——此谓之缘起善巧。"
+            },
+            {
+              "locator": "v4:abh02a_att:532",
+              "work_id": "abh02a_att",
+              "row_id": 532,
+              "paranum": "532",
+              "anchor": "532",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "了知识，故为“识”。能令倾斜，故为“名”。能变坏，故为“色”。能扩展、能导引，故为“处”。能触，故为“触”。能感受，故为“受”。能渴求，故为“爱”。能执取，故为“取”。能存在且能令其有，故为“有”。出生，是“生”。衰老，是“老”。众生因此而死，是“死”。忧愁，是“忧”。悲叹，是“悲”。能令苦，故为“苦”；或因生、住二时而破坏，故为“苦”。心不悦之状态，是“忧”。极度之劳累，是“恼”。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "phassa vedana tanha"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn12.23",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn12.23/sujato",
+              "excerpt": "{\"comment_text\": {\"sn12.23:1.1\": \"This discourse uniquely links the conditional arising of suffering with the conditional unfolding of the path, showing that liberation is not possible without suffering. \", \"sn12.23:1.2\": \"The “ending of defilements” (<i lang='pi' translate='no'>āsavānaṁ khayaṁ</i>) is a common sutta term for arahantship. | “Knowing and seeing” refers to the penetrating insight that arises from meditative immersion (<i lang='pi' translate='no'>samādhi</i>, eg. <a href='https://suttacentral.net/an5.168/en/sujato#2.2'>AN 5.168:2.2</a>, <a href='https://suttacentral.net/an10.2/en/sujato#2.3'>AN 10.2:2.3</a>, <a href='https://suttacentral.net/sn12.23/en/sujato#6.18'>SN 12.23:6.18</a>, <a href='https://suttacentral.net/dn2/en/sujato#83.1'>DN 2:83.1</a>). | The opening is shared with <a href='https://suttacentral.net/sn22.101/en/sujato'>SN 22.101</a>, <a href='https://suttacentral.net/sn56.25/en/sujato'>SN 56.25</a>, <a href='https://suttacentral.net/mn2/en/sujato'>MN 2</a>, and <a href='https://suttacentral.net/iti102/en/sujato'>Iti 102</a>. \", \"sn12.23:2.1\": \"An <i lang='pi' translate='no'>upanisā</i> is a conditional factor that is both necessary and strongly conduciv"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mn18.contact-proliferation",
+      "layer": "canonical",
+      "uid": "mn18",
+      "statement": "MN 18 说明从触、受、想、寻思到戏论的展开。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:s0201a_att:1601",
+              "work_id": "s0201a_att",
+              "row_id": 1601,
+              "paranum": "1601",
+              "anchor": "1601",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "对于‘贤友，眼……’等句，其义如下：贤友，以眼净色为所依，以四大所造色为所缘，而生起眼识。‘三者和合为触’，意指由于此三者的结合，而生起名为触者。缘于该触，依俱生等方式，由触为缘而生起受。受所感受的，即是想所了知的；想所了知的，即是寻所思惟的；寻所思惟的，即是戏论所延展的。‘由此为源’，意即以眼与色等为因缘。‘戏论想的类别会袭向人’，其义为：戏论的各个部分会压倒那个未了知其因的人，并对他发生作用。其中，触、受、想与眼识俱生。寻，当于眼识之后等生起的有寻心中见之。戏论的类别与速行心俱生。若尔，为何要提及过去和未来呢？因为其生起方式相同。正如现在于眼门生起的戏论，是缘于眼、色、触、受、想、寻而生起；同样地，这是为了显示它也会对过去与未来的眼识所识之色而生起，才这样说。"
+            },
+            {
+              "locator": "v4:s0201a_att:1602",
+              "work_id": "s0201a_att",
+              "row_id": 1602,
+              "paranum": "1602",
+              "anchor": "1602",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“贤友，耳……”等处，其理亦同。于第六意门中，‘意’是有分心，‘法’是以三界法为所缘，‘意识’是转向心或速行心。若取转向心，则触、受、想、寻等与转向心俱生；戏论与速行心俱生。若取速行心，则与转向心俱起的有分心名为‘意’，其后触等一切亦与速行心俱生。于意门中，因过去等一切差别皆可为所缘，故“于过去、未来、现在”之说，实为允当。"
+            },
+            {
+              "locator": "v4:s0201t_tik:1442",
+              "work_id": "s0201t_tik",
+              "row_id": 1442,
+              "paranum": "1442",
+              "anchor": "1442",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "以眼、色等为因：即以已成为因的眼识、触、受、想、寻。即使它们未成为因，也因其存在而取之为因。因为它们被遍知后，即非因。因此说“未遍知的因”。其事为三遍知所未遍知。征服：即压倒。成为俱生者：此处，根据“以眼触为缘，有善的受蕴”等语，亦应取非俱生的受、想。若尔：此处“戏论之”，若意指与五门速行俱生的戏论想，因其以现在为所缘，为何要取过去与未来？——如是质问。另一方以“如是生起故”等语回答。其中，“如是生起故”者：因为戏论想不仅在现在时，亦在过去时、未来时于眼门生起，故取过去与未来，而非因为它们于过去、未来的眼与色中，作为眼门法而生起。"
+            },
+            {
+              "locator": "v4:s0201t_tik:1441",
+              "work_id": "s0201t_tik",
+              "row_id": 1441,
+              "paranum": "1441",
+              "anchor": "1441",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "三者的和合：即眼、色、眼识此三者的和合。所谓触：触虽是无色法，但因其以触接所缘的方式转起，故以触为特征的法生起，名为触。以俱生等方式：由于与眼识相应的法以俱生、相互等方式为缘，无间法以无间等方式为缘，其他法则以亲依止方式为缘，故以触为缘、以触为因的受生起。对所缘的认知与感受同时发生，因此说：“彼以该受感受何所缘，想即认知该所缘。”此处意指眼门诸法。据此，当取此后相继生起的受等时，“yaṃ”是原因之词，义为：因为感受所缘，所以认知它。因为在没有感受的情况下，想绝不会生起。其余诸句，理路亦同。因为想依其所想，以寻的方式构想存在或不存在的所缘，又依其所构想，以见、爱、慢等思量而戏论之。因此他说：“他认知地为地”，以及“认知地为地后，他思量地……”等（《中部》1.2），又说：“于诸见中构想寻思后，说出真实与虚妄二法。”（《经集》892；《大义释》121）。此义是依已达强盛的戏论而作释义，但在义注中则是依很微弱的戏论而作释义。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:1063",
+              "work_id": "s0104t_nrf",
+              "row_id": 1063,
+              "paranum": "36",
+              "anchor": "36",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "36. 在此句`Tayidaṃ`中，以`ta`一词触及‘宣称我与世界为常恒’此义，因此说‘此即四种见所执’。‘Tato’者，即是由于以那种方式了知。由于是极大的过失，且是各种无益之事的因由，所以诸见本身就是见处。如经中所说：‘诸比丘，我说邪见是最严重的过失。’正是基于这个意思才说‘诸见本身就是见处’。诸见之因，因其是令诸见生起的根源，故也即是见处。‘如说’等内容引自《无碍解道》（paṭi. ma. 1.124）作为论证。其中，诸蕴也是见处，因为它们是所缘。如经中所说：‘观色为我’等（saṃ. ni. 3.81）；无明也因为作为依止缘等而成为见处。如经中所说：‘诸比丘，无闻凡夫，不见圣者，不善巧圣法’等（ma. ni. 1.2; paṭi. ma. 1.131）；触也因为通过接触而成为执取之方便而成为见处。正如所说：‘彼亦缘于触’（dī. ni. 1.118），‘数数触而感受’（dī. ni. 1.144）；想也因为仅仅把握行相而成为见处。正如经中所说：‘戏论之名数实以想为因’（su. ni. 880; mahā. ni. 109），以及‘想地为地’（ma. ni. 1.2）等；寻也因为审察行相而成为见处。因此说：‘于诸见中起分别，说真实、虚妄二法’（su. ni. 892; mahāni. 121），以及‘他是寻思者、审察者’（dī. ni. 1.34）等；不如理作意也因为是不善法"
+            },
+            {
+              "locator": "v4:s0505a_att:93",
+              "work_id": "s0505a_att",
+              "row_id": 93,
+              "paranum": "8",
+              "anchor": "8",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "8. 现在，于‘彼不超越’（yo nāccasārī）一句，‘不超越’意为不过度精进，‘不后退’（na paccasārī）意为不松懈。此话何意？即，以过盛的精进堕于掉举者，是为超越；以过缓的精进堕于懒惰者，是为后退。同样，以有爱折磨自身者超越，以欲爱耽著欲乐者后退。以常见超越，以断见后退。愁思过去者超越，期盼未来者后退。以随逐前际见超越，以随逐后际见后退。是故，彼舍离此二边，行于中道，故说为‘不超越，不后退’。‘彼已度脱此一切戏论’（sabbaṃ accagamā imaṃ papañcaṃ），是说通过此以阿罗汉道为终点的中道，已度脱、已超越、已遍越了此一切源于受、想、寻，被称为爱、慢、见的三种戏论。"
+            },
+            {
+              "locator": "v4:s0515a_att:900",
+              "work_id": "s0515a_att",
+              "row_id": 900,
+              "paranum": "900",
+              "anchor": "900",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "然而，由于他已摧伏贪、瞋、痴、不如理作意、无惭、无愧、忿、恨、覆、恼、嫉、悭、幻、诳、顽固、争胜、慢、过慢、憍、放逸、爱、无明、三不善根、诸恶行、杂染、垢、颠倒想、不正寻思、戏论、四颠倒、诸漏、结、暴流、轭、恶趣、爱生起、取、五心桩、系缚、五盖、欣喜、六诤讼根本、爱身、七随眠、八邪性、九爱根本、十不善业道、六十二见、一百零八爱行等百千种烦恼、苦恼、热恼，简言之，即蕴魔、烦恼魔、行魔、天子魔、死魔这五魔，因此，由于破毁了这些危难，本应说‘已破者’(bhaggavā)，却被称为‘世尊’。对此有偈颂说："
+            },
+            {
+              "locator": "v4:s0201t_tik:1260",
+              "work_id": "s0201t_tik",
+              "row_id": 1260,
+              "paranum": "1260",
+              "anchor": "1260",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "刹那生起即是生起刹那，即‘诸见之生起’(diṭṭhīnaṃ nibbattī)。通过把握诸见之生起，此处既阐明了诸见之缘起性(paṭiccasamuppannatā)，也显示了诸见所依之事(diṭṭhivatthu)的无常、苦、无我性，应当如是了知。如《无碍解道》(Paṭisambhidāmagga)所说‘缘之生起有八处’(paṭi. ma. 1.122)，为说明此义而说‘诸蕴等’。其中，诸蕴(khandhā)也是诸见之所依(diṭṭhiṭṭhāna)，因有‘执色为我’(saṃ. ni. 3.81; 4.345)等语，故从所缘(ārammaṇa)而言；无明(avijjā)也是诸见之所依，因有‘诸比丘，无闻凡夫不见圣者、不谙圣法’(ma. ni. 1.2, 461; saṃ. ni. 3.1, 7)等语，故从近行缘(upanissaya)等而言；触(phassa)也是诸见之所依，如言‘彼亦以触为缘’(dī. ni. 1.118-130)，及‘数数触而感受’(dī. ni. 1.144)等；想(saññā)也是诸见之所依，如言‘想为戏论之因’(su. ni. 880)，及‘于地想地’(ma. ni. 1.2)等；寻(vitakka)也是诸见之所依，如言‘依寻构建诸见，宣说真实与虚妄二法’(su. ni. 892; mahāni. 121)，及‘他是寻思者、考察者’(dī. ni. 1."
+            },
+            {
+              "locator": "v4:s0404t_tik:677",
+              "work_id": "s0404t_tik",
+              "row_id": 677,
+              "paranum": "96-98",
+              "anchor": "96-98",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "96-98. 第六，诸蕴亦是见处，以其为所缘故，由“视色为我”等语可知。无明亦是见处，以其为亲依止等而转起故。如言：“诸比丘，未闻法之凡夫，不见圣者，不善巧圣法”等。触亦是见处。如言：“彼亦缘触”，“由触而感受”等。想亦是见处。如所说：“想为戏论之源”，“想知地”等。寻亦是见处。亦如所说：“于诸见中起分别思量，言‘真实’与‘虚妄’为二法”，“彼为寻思者、审察者”等。不如理作意亦是见处。是故世尊言：“彼如是不如理作意时，六见中之任一见生起，‘我有我’之见，于彼真实、坚固地生起”等。"
+            },
+            {
+              "locator": "v4:s0101t_tik:419",
+              "work_id": "s0101t_tik",
+              "row_id": 419,
+              "paranum": "36",
+              "anchor": "36",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "36. 邪见本身即是邪见的立足之处，因其为至重过失，是种种无益之事的因。如世尊所说：‘诸比丘，我说邪见是最高的过失。’(a. ni. 1.310) ‘如说’等语，是引《无碍解道》(Paṭisambhidāmagga, paṭi. ma. 1.124)显示邪见的立足之处的分别。其中，蕴也是邪见的立足之处，就所缘而言，如经说‘观色为我’(saṃ. ni. 3.81, 345)等。无明也是邪见的立足之处，因其作为近依缘等而转起。如说：‘诸比丘，无闻凡夫不见圣者，不通晓圣法’(ma. ni. 1.2; paṭi. ma. 1.130)等。触也是邪见的立足之处。如说：‘彼亦缘触’(dī. ni. 1.118 ādayo)，以及‘由数数触而感受’(dī. ni. 1.144)。想也是邪见的立足之处。如所说：‘想为戏论之因’(su. ni. 880; mahāni. 109)，以及‘由地而想’(ma. ni. 1.2)等。寻也是邪见的立足之处。如所说：‘于诸见中起分别思量，说真实与虚妄二法’(su. ni. 892)，以及‘是思辨者、审察者’(dī. ni. 1.34)等。不如理作意也是邪见的立足之处。因此世尊说：‘彼如是不如理作意时，六见中之一见生起。“我之我存在”，如是真实、坚固之见生起。’(ma. ni. 1.19)等。‘由此而起’(samuṭṭhāti etena)故为‘等起’(samu"
+            },
+            {
+              "locator": "v4:s0201a_att:1601",
+              "work_id": "s0201a_att",
+              "row_id": 1601,
+              "paranum": "1601",
+              "anchor": "1601",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "对于‘贤友，眼……’等句，其义如下：贤友，以眼净色为所依，以四大所造色为所缘，而生起眼识。‘三者和合为触’，意指由于此三者的结合，而生起名为触者。缘于该触，依俱生等方式，由触为缘而生起受。受所感受的，即是想所了知的；想所了知的，即是寻所思惟的；寻所思惟的，即是戏论所延展的。‘由此为源’，意即以眼与色等为因缘。‘戏论想的类别会袭向人’，其义为：戏论的各个部分会压倒那个未了知其因的人，并对他发生作用。其中，触、受、想与眼识俱生。寻，当于眼识之后等生起的有寻心中见之。戏论的类别与速行心俱生。若尔，为何要提及过去和未来呢？因为其生起方式相同。正如现在于眼门生起的戏论，是缘于眼、色、触、受、想、寻而生起；同样地，这是为了显示它也会对过去与未来的眼识所识之色而生起，才这样说。"
+            },
+            {
+              "locator": "v4:s0201a_att:1602",
+              "work_id": "s0201a_att",
+              "row_id": 1602,
+              "paranum": "1602",
+              "anchor": "1602",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“贤友，耳……”等处，其理亦同。于第六意门中，‘意’是有分心，‘法’是以三界法为所缘，‘意识’是转向心或速行心。若取转向心，则触、受、想、寻等与转向心俱生；戏论与速行心俱生。若取速行心，则与转向心俱起的有分心名为‘意’，其后触等一切亦与速行心俱生。于意门中，因过去等一切差别皆可为所缘，故“于过去、未来、现在”之说，实为允当。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "phassa vedana sanna vitakka papanca"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "mn18",
+              "url": "https://suttacentral.net/api/bilarasuttas/mn18/sujato",
+              "excerpt": "{\"comment_text\": {\"mn18:1.1\": \"This is one of the most famous discourses in studies of early Buddhism, largely due to the ground-breaking analysis by Venerable Kaṭukurunde Ñāṇananda in his 1971  monograph <em>Concept and Reality in Early Buddhist Thought</em>, which established the meaning of <i lang='pi' translate='no'>papañca</i> as “conceptual proliferation”. | It is the first of the “thought trilogy”, a series of discourses that deal with the activity of thinking in meditation (also <a href='https://suttacentral.net/mn19/en/sujato'>MN 19</a>, <a href='https://suttacentral.net/mn20/en/sujato'>MN 20</a>). \", \"mn18:1.2\": \"The Banyan Tree Monastery (<i lang='pi' translate='no'>nigrodhārāma</i>) was the normal residence for the Buddha and his disciples in the Sakyan republic. It was named, according to northern traditions, after the banyan trees that grew there, while the Pali commentaries say it was named after a Sakyan called Nigrodha who donated it. The two stories are not incompatible, as the owner could have been known by his most famous attribute, his banyan grove. It has been identified by stupas located next to the village Kudan, just north of the India-Nepal border. \", \"mn1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn22.59.not-self",
+      "layer": "canonical",
+      "uid": "sn22.59",
+      "statement": "五蕴应观察为无常、苦、非我，不构成固定人格实体。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:e0102n_mul:1295",
+              "work_id": "e0102n_mul",
+              "row_id": 1295,
+              "paranum": "697",
+              "anchor": "697",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "697. 为了稳固他对五蕴无常、苦、无我的如实观察，世尊在解释‘以哪四十种行相获得随顺忍？以哪四十种行相进入正性决定？’时说："
+            },
+            {
+              "locator": "v4:e0103n_att:413",
+              "work_id": "e0103n_att",
+              "row_id": 413,
+              "paranum": "413",
+              "anchor": "413",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "又，以无贪而有无常观，因为贪婪者为了受用，即使于无常的诸行，也不见其为无常。以无瞋而有苦观，因为无瞋意向者舍离了忿怒事之执取，唯见诸行为苦。以无痴而有无我观，因为不痴者善于如实把握，了悟五蕴无主宰者。又，正如由此等（无贪、无瞋、无痴）而有无常观等，同样，此等（无贪、无瞋、无痴）也由无常观等而有。实则，由观无常而有无贪，由观苦而有无瞋，由观无我而有无痴。究竟有谁在如理了知‘此是无常’后，还会为它生起贪爱呢？或在知晓诸行是‘苦’后，还会生起其他极其猛烈的瞋怒之苦呢？以及在觉悟了空无我之后，还会再次陷入痴迷呢？"
+            },
+            {
+              "locator": "v4:e0401n_nrf:401",
+              "work_id": "e0401n_nrf",
+              "row_id": 401,
+              "paranum": "401",
+              "anchor": "401",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“执取”(abhinivesa)是指内心的坚固安立。“犹如深植的须弥山”是比喻其生起的方式。“因为未见到其仅依缘而转的性质”，以此说明了如此执取的原因：“此是我，非他人之我”，这样将我作为我之主宰。其中，通过“仅”一词，在胜义谛(paramattha sacca)中，由于“我”的不存在，从而否定了五蕴依我之主宰而转的性质。然而，在世俗谛(sammuti sacca)中，由于“我”的存在，大众认为自己的五蕴依自己的主宰而转，从而执取“此是我”。“并且因为未见到刹那坏灭”，以此说明了如此执取的原因：“此在本质上是我。此是我的精华。此是我的身体。即使一百年、一千年，此五蕴也不会毁坏，不会消亡。那么我也不会死。当它毁坏、消亡时，我才会死。我与我的五蕴无二无别。”其中，“刹那坏灭”(khaṇabhaṅga)是指名色法(nāmarūpadhamma)刹那刹那的毁坏、破灭、死亡。但这种死亡在世俗谛中并不存在，仅存在于胜义谛中。因此，大众不见于此，便认为自己的五蕴是自己的精华，执取“此是我”。“善见此二者”，即以智慧之眼善见五蕴仅依缘而转的性质以及其刹那坏灭。其中，当善见五蕴的缘起时，就能善见其仅依缘而转的性质，以及其不受主宰的性质。凡不受自己主宰者，在胜义谛中，尚且不应说“此是我所有”，何况“我的我”呢？再者，“有情”(satta)依自性而言并不存在，仅是概念而已。若执取“我”、“我的”或“我所"
+            },
+            {
+              "locator": "v4:s0502a_att:3002",
+              "work_id": "s0502a_att",
+              "row_id": 3002,
+              "paranum": "3002",
+              "anchor": "3002",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在此，‘一切法’意指五蕴。‘无我’的含义是：不能使其随‘愿其不老！愿其不死！’这样的意愿而转，因有不随己意之义，故为无我、我空、无主、无自在。其余的与前面相同。"
+            },
+            {
+              "locator": "v4:s0515a_att:1047",
+              "work_id": "s0515a_att",
+              "row_id": 1047,
+              "paranum": "1047",
+              "anchor": "1047",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“Andhakāraṃ pakkhandosi”意为已入极深黑暗。“Yuttasaññanti”意为沙门法中之正当认知。“Pattasaññanti”意为沙门法中已得之认知。“Lagganasaññanti”意为已生起之认知。“Kāraṇasaññanti”意为因缘之认知。“Ṭhānasaññanti”意为原因之认知。“Na paṭilabhasī”意为不能获得。“Kuto ñāṇaṃ”意为将以何因缘获得道智？“Aniccaṃ vā”意为五蕴以生灭之义而言是无常的。“Aniccasaññānulomaṃ vā”意为生起“五蕴无常”之想，与此想不相违背，即是随顺无常想。那是什么？即是观智（vipassanāñāṇa）。对于随顺苦想和随顺无我想的观智，道理也是一样的。"
+            },
+            {
+              "locator": "v4:s0517a_att:2265",
+              "work_id": "s0517a_att",
+              "row_id": 2265,
+              "paranum": "37",
+              "anchor": "37",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "37. 在以‘有几种方式’等提问为前导的经释中，于‘五蕴无常’等处，已开始修习观禅的瑜伽行者，在把握了名色及名色之缘后，以聚思惟的方式，如此观察五蕴中的每一蕴：因其有坏灭性、有始终性，故见为无常；因其有生灭的逼迫、是苦之事由，故见为苦；因其依赖众缘维持、是病之根，故见为病；因其与苦刺相应、流漏烦恼不净，并因生、老、坏而肿胀、溃烂、破裂，故见为痈；因其产生逼迫、内里刺痛、难以拔除，故见为箭；因其应受呵责、引来不增长、是灾祸之事由，故见为灾；因其产生不自在、是疾病的近因，故见为疾；因其不受支配、不顺从，故见为他；因其被病、老、死所毁坏、败坏，故见为败坏；因其引来众多灾患，故见为祸；因其引生无量未知的损害、是一切危难之事由，故见为危难；因其是一切怖畏的来源、与被称为‘苦之寂止’的至上慰藉（涅槃）相违，故见为怖畏；因其被众多无益追随、被过患所困扰，又如灾患不堪忍受，故见为灾患；因其被病、老、死及贪等世间法所动摇，故见为动摇；因其有因外力及自性而趋于毁坏的性质，故见为易坏；因其于一切状态中堕落、无坚固性，故见为非恒；因其无有守护、不可获得安稳，故见为无护；因其不宜躲藏、亦不能为已躲藏者作藏身处，故见为无藏身处；因其对依止者无摧破怖畏之实力，故见为无归依处；因其空于所构想的常、净、乐、我性，故见为空虚；因其空虚，故见为空洞，或因其短暂。世间微少之物亦称为‘空洞’；因其无有主人、居住者、感受者、"
+            },
+            {
+              "locator": "v4:abh02a_att:115",
+              "work_id": "abh02a_att",
+              "row_id": 115,
+              "paranum": "115",
+              "anchor": "115",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“由无增减”者，为何世尊只说五蕴，无增无减？因其总摄一切有为法之同分，因我与我所之执取事以此为究竟，亦因其余诸法皆摄于此中。于种种有为法中，依同分而摄集时，色依色同分摄集为一蕴，受依受同分摄集为一蕴，想等亦然。是故，因总摄一切有为法之同分，故唯说五蕴。此色等五法，亦是我与我所执取事之究竟。如所说：“诸比丘，有色时，缘于色、执取于色，则生起如是见解——‘此是我所，此是我，此是我之我’(saṃ. ni. 3.207)。于受……于想……于行……有识时，缘于识、执取于识，则生起如是见解——‘此是我所，此是我，此是我之我’。”是故，因我与我所之执取事以此为究竟，故亦唯说五蕴。至于所说戒等其他五法蕴，亦因摄于行蕴中，而归于此。是故，因其余诸法皆摄于此中，故亦唯说五蕴。如是，当知“由无增减”之抉择之理。"
+            },
+            {
+              "locator": "v4:e0102n_mul:509",
+              "work_id": "e0102n_mul",
+              "row_id": 509,
+              "paranum": "506",
+              "anchor": "506",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "506. 所谓‘无增无减’，是说：世尊为何只说五蕴，无有增减呢？因总摄一切有为法之同分，因我、我所执之事以此为极限，以及因其他诸法亦摄入其中。诚然，于种种有为法中，依同分而总摄时，色亦依色之同分总摄为一蕴；受依受之同分总摄为一蕴；想等亦复如是。是故，因总摄一切有为法之同分，故唯说五蕴。再者，此我、我所执之事，即色等五法，以此为极限。诚如所言：‘诸比丘，有色时，则执取色、执迷于色，而生起如是之见：“此是我的，我即是此，此是我的我。”有受时……有想时……有行时……有识时，则执取识、执迷于识，而生起如是之见：“此是我的，我即是此，此是我的我。”’是故，亦因我、我所执之事以此为极限，故唯说五蕴。此外，所说之戒等其他五种法蕴，亦因含摄于行蕴中，故皆归入此中。是故，亦因其他诸法摄入其中，故唯说五蕴。如是，当知此‘无增无减’之抉择之理。"
+            },
+            {
+              "locator": "v4:e0104n_att:1463",
+              "work_id": "e0104n_att",
+              "row_id": 1463,
+              "paranum": "1463",
+              "anchor": "1463",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "今为显示无愿求等之因，故说“三有”等。于此，三有犹如炭火坑，以其为生等诸苦的立足处而极为炽热故。四大犹如木口、腐口、火口、刀口等剧毒之蛇，就特而言，因其对身体造成僵硬、流漏、烧灼、切割之苦；就常而言，则因其住处、毒性变化、施予无益、难以侍奉、难以接近、不知感恩、无差别造作、以及具有多种过患与灾祸故。诚如所说：“诸比丘，所谓具大威力、有剧毒的四种毒蛇，实为四大种的同义词。”（《相应部》4.238）五蕴犹如高举利剑的刽子手，因一蕴坏时，他蕴无法存续，且辗转相害，并带来死苦故。此亦诚如所说：“诸比丘，所谓高举利剑的刽子手，实为五取蕴的同义词。”六内处虽被执为“我”及“我所”，然离于彼而为空，犹如空村；亦犹如进入一个以为“此处有食物等可取可用之物”的空村。诚如所说——"
+            },
+            {
+              "locator": "v4:s0401t_tik:1025",
+              "work_id": "s0401t_tik",
+              "row_id": 1025,
+              "paranum": "1025",
+              "anchor": "1025",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“于无常迅速奔驰”，即是说“五蕴无常”，它以迅疾之势流转。由于远离对治法，且宿行(pubbābhisaṅkhāra)强盛，犹如帝释(Inda)所投掷的金刚杵(vajira)一般，不离其相，不稍迟缓，迅速地洞穿无常相(aniccalakkhaṇa)，因此名为速行慧(javanapaññā)。其余文句亦同此理。如是，通过以相为所缘的观(lakkhaṇārammaṇikavipassanā)开显了速行慧后，为开显强力之观(balavavipassanā)，而说“色”等。其中，“以灭尽义(khayaṭṭhena)”是指，无论于何处生起，即于彼处坏灭，故有灭尽的自性。“以怖畏义(bhayaṭṭhena)”是指，具有怖畏的性质。“以无实义(asārakaṭṭhena)”是指，缺少我之实、常之实等。“称量(tulayitvā)”是指，以如秤般的观慧(vipassanāpaññā)来称量。“审察(tīrayitvā)”是指，以彼审察性的智慧来审察。“明了(vibhāvayitvā)”是指，如实地阐明，令其显现。或者，“称量”是指，以聚思惟(kalāpasammasana)的方式来称量；“审察”是指，以生灭随观(udayabbayānupassanā)的方式来审察；“明了”是指，以坏灭随观(bhaṅgānupassanā)等方式令其显现。“令其显现(vibhūtaṃ katvā)”是指，以行舍智与随"
+            },
+            {
+              "locator": "v4:abh01a_att:1308",
+              "work_id": "abh01a_att",
+              "row_id": 1308,
+              "paranum": "1308",
+              "anchor": "1308",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "又，导向出起的观(vipassanā)以何为所缘？以相为所缘。所谓相，有概念的性质，是不可言说之法。若有比丘观照无常、苦、无我三相，五蕴于彼则如系于颈之腐尸。智唯以行为所缘，而出离于行。譬如，有位比丘想买一个钵，看见卖钵人带来的钵，心生欢喜，心想：‘我要买了！’但在仔细察看时，看见了三个孔洞。他并非对那些孔洞无所执著，而是对那个钵无所执著了。同理，观照三相后，于诸行无所执著。当知，智唯以行为所缘，而出离于行。于衣喻中，其理亦然。"
+            },
+            {
+              "locator": "v4:abh01a_att:1316",
+              "work_id": "abh01a_att",
+              "row_id": 1316,
+              "paranum": "1316",
+              "anchor": "1316",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于此，就‘专注于内而从内出起’等句而言，首先：于此，某人从一开始即专注于内在的五蕴，专注之后，观其为无常等。然仅凭纯粹观内并不能令道出起，亦必须观外在，是故他亦观他人的诸蕴及无执取之行(anupādinnasaṅkhāra)为无常、苦、无我。他时而审察于内，时而审察于外。当他如此审察时，若于审察内在之际，观(vipassanā)与道结合，此即名为‘专注于内而从内出起’。但若于他审察外在之际，观(vipassanā)与道结合，此即名为‘专注于内而从外出起’。此理亦同样适用于专注于外而从外及从内出起。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "panca khandha anatta"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn22.59",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn22.59/sujato",
+              "excerpt": "{\"comment_text\": {\"sn22.59:1.1\": \"This is the famous “second discourse”, the story of which is told in the Vinaya (<a href='https://suttacentral.net/pli-tv-kd1/en/sujato#6.32.1'>Kd 1:6.32.1</a>). At the conclusion of the Dhammacakkappavattanasutta (<a href='https://suttacentral.net/sn56.11/en/sujato'>SN 56.11</a>), when Koṇḍañña became a stream-enterer, the Buddha continued to teach the five ascetics over several days. Eventually, all five realized stream-entry and went forth officially as Buddhist mendicants. Knowing they were ready, he taught them about not-self. In the first discourse, the Buddha referred to the five aggregates “in brief”, and now he draws that teaching out in more detail. Thus the second discourse is a commentary on a line in the first discourse. \", \"sn22.59:2.1\": \"The “self” (<i lang='pi' translate='no'>attā</i>, Sanskrit <i lang='pi' translate='no'>ātman</i>) is the cardinal doctrine of the Upaniṣads, whereas the five ascetics were likely Jains, or at least from a similar group. The Jains typically used <i lang='pi' translate='no'>jīva</i> (“soul”) to indicate the radiant essence purified by austerities, which remains eternal as an individual, separate entity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mn10.mindfulness",
+      "layer": "canonical",
+      "uid": "mn10",
+      "statement": "四念处与明觉提供对身、受、心、法的观察训练。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:s0301t_tik:830",
+              "work_id": "s0301t_tik",
+              "row_id": 830,
+              "paranum": "830",
+              "anchor": "830",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“在此”(Idha)一词是表示内在限定的词语，意思是“就在此地”(idheva)。因为只有在此教法中才能修习圣道，而非他处。“仅指最初的词语”是指，在各个句子中，仅指从开头所说的正见等最初的词语。正见的特性是，通过遍知(pariññā)、现观(abhisamaya)等方式，正确地见到四圣谛的自性。正思维的特性是，将相应法正确地导向名为涅槃的所缘(ārammaṇa)。正语的特性是正确地摄取，因为它与导致欺骗等行为的粗恶、不摄取之妄语等相对立；正语以其温润的特质，摄取相应法以及听闻善语的人(puggala)，因此具有正确摄取的特性。正如身体的行为能发起某种应做之事，其自身即是发起与努力，同样，名为正业(sammākammanta)的离(virati)亦应被视为具有发起的特性；或者说，它像身体行为举起重物一样，是相应法(sampayuttadhamma)的提起或发起。对于存活的有情(satta)而言，（正命的特性是）生命相续或生计的清净、净化。如同通过正法，已生起的过失得以断除，未生起的过失得以不生，从而获得利益等的增长，同样，正精进具有策励相应法的特性。通过破除对身、受、心、法中净、乐、常、我的执取，正念具有正确安住的特性。正定的特性是使相应法正确地安住、达到心一境性(ekaggatā)。在同一刹那(khaṇa)中，对于对治的法、所缘的法以及相应的法，有三种作为特殊作用而生起的作用。现"
+            },
+            {
+              "locator": "v4:s0517a_att:1995",
+              "work_id": "s0517a_att",
+              "row_id": 1995,
+              "paranum": "43",
+              "anchor": "43",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "43. 现在，这是对紧随《转法轮论》(Dhammacakkakathā)之后所说的出世间论(Lokuttarakathā)中前所未有之义的释义。其中，‘出世间’一词的含义将在《解释》(Niddesa)中显明。四念处等三十七菩提分法，皆如其所应地与道、果相应。圣道因有觉悟之义而名为‘菩提’，此等诸法因属于如此得名的圣道一方，故名‘菩提分法’(bodhipakkhiyā)。所谓‘属于一方’，是指它们处于助益的状态。在这些所缘上，通过进入、投入而建立(upaṭṭhāna)，念本身即是建立，故为念处(satipaṭṭhāna)。再者，此念于身、受、心、法上，以把握不净、苦、无常、无我之相的方式，以及以成办舍离净、乐、常、我之想的作用而转起，故有四种差别。因此称为‘四念处’。众生以此而精勤，故名‘勤’(padhāna)；卓越的勤为‘正勤’(sammappadhāna)。或众生以此而正确地精勤，故名‘正勤’。又或者，它因远离烦恼的过患而卓越，且因能成办利益安乐、带来卓越状态、成就其首要地位，故为‘正勤’。这是精进(vīriya)的同义词。此法能成办断除已生之不善法、令未生者不生，以及令未生之善法生起、令已生者住立之事，故有四种。因此称为‘四正勤’。以成就的方式，由成功之义，名为‘神通’(iddhi)；或众生通过它而成功、增长、达到卓越，以此方式亦名为‘神通’。作为与[欲等]相应的神通之基础(p"
+            },
+            {
+              "locator": "v4:abh02t_tik:1914",
+              "work_id": "abh02t_tik",
+              "row_id": 1914,
+              "paranum": "537",
+              "anchor": "537",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "537. “于身等”即于身、受、心、法。“善行”即以不净观等方式而行。出离自性即是正念本身。“现起”是就作用而言显示念。此处，如前所述，此念已生起把握，故称“已把握”，应理解为：将此已把握且作为出离的念而行之。"
+            },
+            {
+              "locator": "v4:abh04t_nrf:115",
+              "work_id": "abh04t_nrf",
+              "row_id": 115,
+              "paranum": "115",
+              "anchor": "115",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "同样，通过把握善法，由善巧所生起的善法，即是慧根。与此俱生、以此为所依的信、精进、念、不散乱，即是信根等。通过它们，一切正法得以觉悟。通过把握不善法，在被不善巧所覆盖的过患中，即于身、受、心、法中，生起执取净、乐、常、我的四种颠倒。通过把握无记法，觉悟了如前所述诸根的缘，以及作为断除前述颠倒的四种沙门果——此即狮子游戏(Sīhavikkīḷitassa)之理的领域。此为三种义理之法。"
+            },
+            {
+              "locator": "v4:s0517a_att:1003",
+              "work_id": "s0517a_att",
+              "row_id": 1003,
+              "paranum": "65",
+              "anchor": "65",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "65. 在审察智的解释中，仅于道刹那，首先以因之义各别地说道支后，又将已成道支与非道支的法，作为以‘因觉悟之义为菩提’而得名的圣者的要素，分别开示为觉支。念、择法、精进、定觉支实仅为道支，喜、轻安、舍觉支则非道支。再者，在以力及以根而分别解说的诸法中，唯信成为非道支。复次，为了总集地显示仅于道刹那生起的诸法，故说‘以增上之义’等。于此，所谓‘以建立之义为念处’，即是唯一的、以涅槃为所缘的念，通过在身、受、心、法中成就断除净、乐、常、我想之作用，而名为四念处。唯一的、以涅槃为所缘的精进，通过成就断除已生不善法、令未生不善法不生起、令未生善法生起、以及令已生善法住立的作用，而名为四正勤。"
+            },
+            {
+              "locator": "v4:s0517a_att:370",
+              "work_id": "s0517a_att",
+              "row_id": 370,
+              "paranum": "13",
+              "anchor": "13",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "13. 根等十种解释，是将其聚合而依次第阐明。‘主宰’之义，即以行使主宰作用故，是为主宰义。‘不可动摇’之义，即是不能被敌对法所动摇之义。‘出离’之义，即是从世间与出世间[法]的敌对法中出离之义。‘因’之义，即是‘正见等为断除邪见等之因’，或‘一切正见等为达成涅槃之因’，故为因义。于念住(satipaṭṭhāna)的所缘中，因跃入、奔入而安住，故为‘安住’；念即是安住，故名‘念住’。又，于身、受、心、法中，以把握不净、苦、无常、无我之相的方式，以及以成办断除净、乐、常、我想之作用的方式而转起，故有四种差别。此等于前分，于种种心中可得；然于道刹那，唯一之念获得四种名称。"
+            },
+            {
+              "locator": "v4:s0302a_att:357",
+              "work_id": "s0302a_att",
+              "row_id": 357,
+              "paranum": "357",
+              "anchor": "357",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此于世尊与僧团生起的利养与恭敬，汇合为一，如两条大河之水，变得不可估量。其后，导师进入独处时思惟：‘巨大的利养与恭敬，于过去诸佛亦曾如此，于未来诸佛亦将如此。诸比丘是否能具足了知食物的正念明觉，住于中舍，无欲无染地受用食物呢？抑或不能？’"
+            },
+            {
+              "locator": "v4:s0510a_att:1261",
+              "work_id": "s0510a_att",
+              "row_id": 1261,
+              "paranum": "310",
+              "anchor": "310",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "310. “于身、受、心、法随观（kāyavedanācittadhammānupassanā）所摄之四念处（satipaṭṭhāna）善巧、练达（kusalā chekā）；于念觉支（satisambojjhaṅga）等七觉支（sambojjhaṅga）之修习与增长，心生喜乐、专注不懈（ratā allīnā）。”"
+            },
+            {
+              "locator": "v4:s0501t_nrf:631",
+              "work_id": "s0501t_nrf",
+              "row_id": 631,
+              "paranum": "631",
+              "anchor": "631",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "导师(ācariya)说：‘他的诸食被遍知。’由于应被问：‘然而，对此瑜伽行者(yogāvacara)而言，只有诸食被遍知，还是其他法也被遍知？’为了表明‘对此瑜伽行者而言，诸识住(viññāṇaṭṭhiti)也被遍知’，所以说：‘他的诸识住也被遍知。’如果有人说，修习了四念处的瑜伽行者，只有他的身、受、心、法被遍知，而不是诸识住，（此说不然），因为通过身随观等，在身、受、心、法被遍知时，想(saññā)也应被遍知。因为当受与心这些法被遍知时，它（想）由于与它们不可分离，也被遍知了。"
+            },
+            {
+              "locator": "v4:s0519t_tik:414",
+              "work_id": "s0519t_tik",
+              "row_id": 414,
+              "paranum": "414",
+              "anchor": "414",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "五取蕴以幻术(indajāla)等方式，显现为珠宝等相；由于作为‘我、我所’(ahaṃmamā)等的原因，依照语词之道(niruttinayena)，被称为‘我’(attā)；由于是这种概念和表达生起的因，以及作为乐等的基础，故被称为‘我相之基础’(attabhāvavatthū)，因此说‘以此’(tehi)等等。‘此等’(tesaṃ)，是指五取蕴。颠倒的生起方式，如‘于不净见净’(asubhe subhaṃ)等等。所缘是身、受、心、法。无明……乃至……如是作为迷惑的先导，是一切颠倒的根本。‘及’(ca)字也应该联系到‘净乐想’(subhasukhasaññā)等处。"
+            },
+            {
+              "locator": "v4:e0101n_mul:780",
+              "work_id": "e0101n_mul",
+              "row_id": 780,
+              "paranum": "780",
+              "anchor": "780",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“诸比丘，譬如一位聪慧、干练、善巧的厨师，为国王或大臣准备了各种各样的菜肴：酸味的、苦味的、辣味的、甜味的、咸鲜的、不咸鲜的、咸的、淡的。诸比丘，那位聪慧、干练、善巧的厨师会把握其主人的相：‘今天我的主人喜欢这道菜肴，他朝这道伸出手，他多取用这道，他称赞这道。今天我的主人喜欢酸味的菜肴，他朝酸味的伸出手，他多取用酸味的，他称赞酸味的……乃至……他称赞淡味的。’诸比丘，那位聪慧、干练、善巧的厨师，能获得衣服，获得薪资，获得赏赐。这是什么原因呢？诸比丘，因为那位聪慧、干练、善巧的厨师能把握其主人的相。同样地，诸比丘，于此，某位聪慧、干练、善巧的比丘，于身随观身而住……于受随观受……于心随观心……于法随观法而住，热忱、正知、具念，调伏世间的贪欲与忧恼。当他于法随观法而住时，心得以安定，诸随烦恼被断除，他把握那个相。诸比丘，那位聪慧、干练、善巧的比丘，能获得现法乐住，能获得念与正知。这是什么原因呢？诸比丘，因为那位聪慧、干练、善巧的比丘能把握自己心的相。”"
+            },
+            {
+              "locator": "v4:s0520m_nrf:514",
+              "work_id": "s0520m_nrf",
+              "row_id": 514,
+              "paranum": "514",
+              "anchor": "514",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于此，执取内在是欲漏(kāmāsava)的相。希求、结缚、造作、身行是有漏(bhavāsava)的相；固执与执取是见漏(diṭṭhāsava)的相；于诸法不通达与不正知是无明漏(avijjāsava)的相。此四漏即四取：欲漏是欲取(kāmupādāna)，有漏是有取(bhavupādāna)，见漏是见取(diṭṭhupādāna)，无明漏是我语取(attavādupādāna)。由此四取而有五蕴。于此，无明漏应在心中断除，它在心中为修习心随观者所断除。见漏应在诸法中断除，它在诸法中为修习法随观者所断除。有漏应由执著而断除，它在诸受中为修习受随观者所断除。欲漏应在五欲功德中被断除，它在身中为修习身随观者所断除。于此，身随观趣向于苦圣谛。受随观是五根——乐根、苦根、喜根、忧根、舍根——的缘，是众生烦恼的行处，由此它趣向于集圣谛。于心，心随观趣向于灭圣谛。于诸法，法随观趣向于道圣谛。因此，通过见此四[谛]，他的一切[烦恼]皆被断除；因为，正如最初所指出的：‘对于那些傲慢放逸者，他们的诸漏增长’。诚然，对于知者、见者，有诸漏的尽除。苦、集、灭、道，以及不善法，都应当如此遍求。只要有不善法的趣向，他便以对治的方式遍求不善法，通过去除那些烦恼而回转。这被称为回转导引。白法也应如此遍求。我将探讨不善法。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "sati sampajanna"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "mn10",
+              "url": "https://suttacentral.net/api/bilarasuttas/mn10/sujato",
+              "excerpt": "{\"comment_text\": {\"mn10:1.1\": \"This discourse is copied at <a href='https://suttacentral.net/dn22/en/sujato'>DN 22</a>, where the section on the four noble truths has been expanded with material mostly drawn from <a href='https://suttacentral.net/mn141/en/sujato'>MN 141</a>. These discourses are the most influential texts for modern Theravada meditation, prompting countless modern commentaries. Comparative study of the several parallel versions reveals that this discourse, while comprised almost entirely of early material, was compiled in this form as one of the latest texts in the Pali suttas (see <a href='https://suttacentral.net/sn47.18/en/sujato'>SN 47.18</a> and notes). | While mindfulness is always useful (<a href='https://suttacentral.net/sn46.53/en/sujato#15.4'>SN 46.53:15.4</a>), the “establishment of mindfulness” (<i lang='pi' translate='no'>satipaṭṭhāna</i>) refers especially to a conscious development of contemplative practices based on mindfulness, i.e. “mindfulness meditation” or simply “meditation”. \", \"mn10:2.1\": \"The phrase <i lang='pi' translate='no'>ekāyano maggo</i> (“path to convergence”) is given multiple meanings in commentaries and ancient Chinese translatio"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dn22.satipatthana",
+      "layer": "canonical",
+      "uid": "dn22",
+      "statement": "四念处以生起与灭去观察条件过程，而非测量固定性格。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:s0201a_att:1054",
+              "work_id": "s0201a_att",
+              "row_id": 1054,
+              "paranum": "1054",
+              "anchor": "1054",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“Yadidaṃ”（此即）是助词，其义为‘即这些’。‘四’是数量的限定，它表明了念处的限定，即非少非多。‘念处’（satipaṭṭhāna）有三义：念的所缘（satigocara）、导师于三种行道的弟子超越喜爱与厌恶，以及念（sati）本身。例如，在‘诸比丘，我将为你们宣说四念处的集起与灭去，你们当谛听……诸比丘，什么是身的集起？由食集起，故有身集起’等经文中，念的所缘被称为‘念处’。又如《无碍解道》(Paṭisambhidāmagga)亦云：‘身是处，不是念；念既是处，也是念’等。其义为：于此中建立（patiṭṭhāti asmiṃ），故为‘处’（paṭṭhāna）。什么建立？念。念的建立之处，即是‘念处’。或，‘处’是精勤的处所（padhānaṭṭhāna）。念的精勤处所，即是‘念处’，如象栏、马厩等。于‘有三种念处，圣者修习之，圣者修习它时，导师堪能教导僧团’一文中，导师于三种行道的弟子超越喜爱与厌恶，此亦称为‘念处’。其义为：因应被建立（paṭṭhapetabbato）故为‘处’，意即应被策励生起。由何者建立？由念。念所建立者，即是‘念处’。而在‘已修习、已多作的四念处能圆满七觉支’等经文中，念本身被称为‘念处’。其义为：因它建立（patiṭṭhāti）故为‘处’，意即它现起、进入、投入而转起。念即是处，即是‘念处’。或者，‘念’（sati）义为忆念（saraṇa），‘处’"
+            },
+            {
+              "locator": "v4:e0401n_nrf:369",
+              "work_id": "e0401n_nrf",
+              "row_id": 369,
+              "paranum": "168",
+              "anchor": "168",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "168. 缘的解释。“五种”是指以五种缘。“一种”是指以一种缘。其余也是如此。“为不断绝”即是为了不令断绝。“为成办”即是为了连结。任何心识生起，对于不相违逆的任何心识生起，并非不作为缘，此即其连结之义。“再生者”是指灭后复生者。“前速行”于此，道作为转姓(gotrabhū)，获得修习缘。然而，果因种类不同，不成为修习缘。而果则完全脱离修习缘。因此，此二者在此不计入前速行之数，故说“除道、果速行”。（此指）除果速行之外的后速行。“一切相圆满”于此亦含摄善等种类，故说“仅以种类”。它们实为同类，而非异类。但有时某些确实是异类，因此诸法有异类。其连结是‘不能’。“所谓从欲界状态至广大与无上状态的获得”是指心相续而言。转姓心是欲地，禅心是广大地，道心是出世间地。业思虽已灭尽，其活动相却不灭，它随逐心相续。它于未来成为异熟法聚而显现。因此，它成为异熟的种子。它直至未成熟，只要轮回流转存在，中间就不会消失。因此，业思生起时，是为了将彼种子安住于心相续中而生起；灭去时，亦是安置后才灭去，故说“自活动相所摄的种子安住处”。“由思有”是指与思共有。前生的树苗等作为缘，此即其关联之义。于前心刹那生起的四因所生色法，应如是关联。“食生身”如是说，此为余文。“后生者”是指后生缘无作用，如为老树浇水，此即其意。“以何端”是指以何因由部分。“所依色”是指临近灭尽的心所依色。“如是此”即如是此后生缘亦然。以种"
+            },
+            {
+              "locator": "v4:s0102a_att:1353",
+              "work_id": "s0102a_att",
+              "row_id": 1353,
+              "paranum": "1353",
+              "anchor": "1353",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘即此’(yadidaṃ)是助词，其义为‘即是这些’。“四”是数量的规定(gaṇanaparicchedo)。由此显示念处(satipaṭṭhāna)的范围，不多也不少。念处有三义：念的所缘(satigocara)；导师于三类行道声闻中，超越嗔(paṭigha)与贪爱(anunaya)；以及念本身。在“诸比丘，我将为你们宣说四念处的集起与灭去，谛听……诸比丘，什么是身的集起？食集则身集”等(《相应部》5.408)经文中，念的所缘即被称为念处。同样，在《无碍解道》(Paṭisambhidāmagga 3.35)中也说：“身是处(upaṭṭhāna)，而非念；念则既是处，也是念。”其义为：于此中安立(patiṭṭhāti)，故为‘处’(paṭṭhāna)。什么安立？念。念之处为念处；或，主要之立足处(padhānaṃ ṭhānaṃ)为‘处’。念之处为念处，犹如象之立处、马之立处等。"
+            },
+            {
+              "locator": "v4:s0305a_att:309",
+              "work_id": "s0305a_att",
+              "row_id": 309,
+              "paranum": "309",
+              "anchor": "309",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "所谓‘此等’(yadidaṃ)是虚词，其义为‘这些’(ye ime)。所谓‘四’(cattāro)是数量的限定，由此阐明念处的限定：‘不少于此，不多于此’。所谓‘念处’(satipaṭṭhāna)，有三种念处：念的所缘(satigocara)；于三类行道的声闻中，导师超越嗔与喜的状态；以及念(sati)本身。诚然，在‘诸比丘，我将为你们宣说四念处的集起与灭去，谛听。诸比丘，什么是身的集起？由食集起，故有身集起’等经文中，念的所缘被称为‘念处’。同样，在‘身是处，不是念；念既是处，也是念’等经文中也是如此。其义为：于此安住，故为‘处’(paṭṭhāna)。什么安住？念。念的安住之处，即是‘念处’(satipaṭṭhāna)。或者，‘处’(paṭṭhāna)是主要之所，念的主要之所，即是‘念处’(satipaṭṭhāna)，如同象之所、马之所等。"
+            },
+            {
+              "locator": "v4:s0201a_att:1596",
+              "work_id": "s0201a_att",
+              "row_id": 1596,
+              "paranum": "1596",
+              "anchor": "1596",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "至于执取棍棒等，以何种思执取棍棒，即是执取棍棒。以何种思执取、触碰刀剑，即是执取刀剑。达到顶点的争吵是斗争。仅为种种执取是争执。仅为种种言论是辩论。如此发生的‘你、你’，即是互相指责。破坏亲爱关系，即是离间语。行不实之语，当知是为妄语。在此，这些烦恼就在这十二处中。诚然，烦恼生起时，是依于十二处而生起；灭去时，也是就在十二处中灭去。如是，于何处生起，即于彼处灭去。此义当以集谛之问阐明——"
+            },
+            {
+              "locator": "v4:s0517a_att:1532",
+              "work_id": "s0517a_att",
+              "row_id": 1532,
+              "paranum": "161",
+              "anchor": "161",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "161. 再者，为显示该词的另一义理分别，说了‘susamaṃ’等。于彼，‘于彼处生起’(tattha jātā)者，谓于已达顶点的特殊禅修中生起。无过失(anavajjā)者，谓不成为诸烦恼的所缘，故远离烦恼之过患。善(kusalā)者，谓因其种类而为善。菩提分(bodhipakkhiyā)者，谓因存在于以‘觉悟’为义而得名‘菩提’的圣道之部分，故名菩提分。‘存在于其部分中’，是因为处于助益的状态。彼等法即‘四念处、四正勤、四神足、五根、五力、七觉支、圣八支道’，共三十七法。此寂止(samaṃ)者，谓此法集于道刹那，以根断的方式平息、摧毁诸烦恼，因此名为‘寂止’。灭即涅槃(nirodho nibbānaṃ)者，谓因是苦之灭，故名‘灭’；因无有名为‘缚’(vāna)的渴爱，故名‘涅槃’。此善寂止(susamaṃ)者，谓此涅槃，因远离一切有为法之不平等，故为善妙的寂止，因此名为‘善寂止’。已知(ñātaṃ)者，谓名为菩提分的‘寂止’，以无痴，由道智了知；名为涅槃的‘善寂止’，以作为所缘，由道智了知。此二法即以彼（道智）如以眼见。已证知(viditaṃ)者，谓此二法，通过在（自身）相续中令（寂止）生起，及将（善寂止）作为所缘而获得。如已了知，以慧亲证、亦已触证。‘不沉滞、不忘失、不激动、专一’，（此中后后之词）是为阐明前前之词义。其中，已策励(āraddhaṃ)者，谓已建立。不沉滞(a"
+            },
+            {
+              "locator": "v4:s0515a_att:151",
+              "work_id": "s0515a_att",
+              "row_id": 151,
+              "paranum": "151",
+              "anchor": "151",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“念住”一词，有三种含义：念的所缘，导师于三类修行弟子中超越瞋恚与贪爱，以及念本身。“诸比丘，我将为你们讲述四念住的生起与灭去，你们仔细听，善加作意……诸比丘，什么是身的生起？以食的生起为缘，身就生起”等经中（《相应部》5.408），念的所缘被称为“念住”。同样，在“身是所依，而非念；念既是所依，亦是念”等经中（《无碍解道》3.35）。它的含义是——于此安立，故为安立处。何者安立？念。念之安立处，即是念住；或说，精勤处即是安立处，念之安立处，即是念住，犹如象驻处、马驻处等。"
+            },
+            {
+              "locator": "v4:s0101t_tik:255",
+              "work_id": "s0101t_tik",
+              "row_id": 255,
+              "paranum": "255",
+              "anchor": "255",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此处是多闻的范围——五蕴、十二处、十八界、四谛、二十二根、十二支缘起，以及念处等善法之种类。世间无过失的学问处，以及能为众生带来利益与安乐的殊胜解说。如此种种的听闻范围，都应以善巧方便为前导，以智慧、念、精进为助缘，通过善加学习、听闻、受持、熟习、请问等方式深入，并以此令他人安立，从而生起闻所成慧。同样地，通过对蕴等自性法，以各种方式思惟观察，使之堪忍审察，由此生起思所成慧；更通过把握蕴等的自相与共相，生起世间遍知，从而圆满前分修所成慧。这样才能彻知：“此仅是名色，依其各自的因缘生起与灭去，其中并无作者或使作者；因其存在后即消失，故是无常；因其为生灭所逼迫，故是苦；因其不能自主，故是无我。”对内、外诸法无差别地遍知，从而舍弃对它们的执著，并令他人舍弃执著，仅以悲心，直至佛陀的功德了然在握，他通过令三乘众生入道与成熟而安立他们，又于禅那、解脱、等持、等至获得自在，以智慧达到极高的顶峰。"
+            },
+            {
+              "locator": "v4:s0303m_mul:450",
+              "work_id": "s0303m_mul",
+              "row_id": 450,
+              "paranum": "450",
+              "anchor": "450",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于是，具寿阿难与那些比丘一同前往巴力雷雅咖（Pālileyyaka），去到世尊所在的吉祥娑罗（Bhaddasāla）树下。抵达后，他向世尊顶礼，坐于一旁。那些比丘坐于一旁后，世尊以法谈为他们开示、劝导、激励，使之欢喜。那时，某位比丘心中生起这样的思惟：‘要如何知、如何见，才能无间地灭尽诸漏呢？’于是，世尊以心了知那位比丘心中的思惟，便对众比丘说：‘诸比丘，我所说的法是经抉择后宣说的：四念处是经抉择后宣说的，四正勤是经抉择后宣说的，四神足是经抉择后宣说的，五根是经抉择后宣说的，五力是经抉择后宣说的，七觉支是经抉择后宣说的，圣八支道是经抉择后宣说的。诸比丘，我所说的法就是这样经抉择后宣说的。诸比丘，在我所说的法是这样经抉择后宣说时，此处却有某位比丘心中生起这样的思惟：“要如何知、如何见，才能无间地灭尽诸漏呢？”’"
+            },
+            {
+              "locator": "v4:s0503a_att:634",
+              "work_id": "s0503a_att",
+              "row_id": 634,
+              "paranum": "634",
+              "anchor": "634",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "另一法：以“身至念现起”显示身随观念处。于“于六触处守护”，其释为：触是它们的处（因），故为“触处”；于彼等触处中，即于以触为因、以触为缘而生的六种眼触所生等受中，因贪等不生起而守护，以此显示受随观念处。“比丘恒时入定”是说比丘恒常、不间断，因无散乱而心住一境。此不散乱，是因念处修习完全达到顶点而有。因为思惟时，即是于过去等种种差别之五取蕴，毫无遗漏地把握而思惟。以此显示其余念处。“应知自己的涅槃”，其义为：如是令四念处修习达到顶点、已破烦恼的比丘，应以省察智，亲自了知自己烦恼的寂灭。"
+            },
+            {
+              "locator": "v4:abh01a_att:1822",
+              "work_id": "abh01a_att",
+              "row_id": 1822,
+              "paranum": "1822",
+              "anchor": "1822",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "同样，在名色分别(nāmarūpapariccheda)等观(vipassanā)智中，因其对治之故，犹如灯光驱除黑暗，以彼彼观智断除彼彼过患，此即：以名色规定智断除身见；以缘摄受智断除无因见与邪因见；以其后分之度疑智断除疑惑；以聚思惟智断除‘我’与‘我所’之执取；以道非道规定智断除非道中的道想；以见生起智断除断见；以见坏灭智断除常见；以见怖畏智断除于可畏处作无畏想；以见过患智断除乐想；以厌离随观智断除喜乐想；以欲解脱智断除不欲解脱；以舍智断除非舍；以随顺智断除对法住与涅槃的违逆；以种姓智断除对行相的执取。这称为“彼分断”。"
+            },
+            {
+              "locator": "v4:abh01t_tik:367",
+              "work_id": "abh01t_tik",
+              "row_id": 367,
+              "paranum": "367",
+              "anchor": "367",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "通过修习无色定，对于死后当生的色想与有对想，乃至其自身的果报持续期间，以导致其不生起的法性，而说为超越与灭尽。然而，于种种想中，那些于彼有中不生起的，是因无机会而不生起，并非因修习无色定而被阻止。且因未被阻止，某些（种种想）仍会生起。因此，说对它们不作意、不转向、不省察；或说，由能生速行的（意门转向），于有分流之间不作、不令进入。并且，由此显示，通过超越作为作意种种想之因的色法，定得以稳固。正因为没有超越色，所以在色等至中，才没有说‘不作意种种想’这一句。有何利益呢？意即是说：于远离一切可乐事物的空中所转起的想，实不见其利益。‘超越色想’等语，是为了开示利益，而非其义理。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "satipatthana samudaya vaya"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "dn22",
+              "url": "https://suttacentral.net/api/bilarasuttas/dn22/sujato",
+              "excerpt": "{\"comment_text\": {\"dn22:1.1\": \"This discourse is copied from <a href='https://suttacentral.net/mn10/en/sujato'>MN 10</a>. The section on the four noble truths has been expanded with material mostly drawn from <a href='https://suttacentral.net/mn141/en/sujato'>MN 141</a>. These discourses are the most influential texts for modern Theravada meditation, prompting countless modern commentaries. Comparative study of the several parallel versions reveals that this discourse, while comprised almost entirely of early material, was compiled in this form as one of the latest texts in the Pali suttas (see <a href='https://suttacentral.net/sn47.18/en/sujato'>SN 47.18</a> and note). | While mindfulness is always useful (<a href='https://suttacentral.net/sn46.53/en/sujato#15.4'>SN 46.53:15.4</a>), the “establishment of mindfulness” (<i lang='pi' translate='no'>satipaṭṭhāna</i>) refers especially to a conscious development of contemplative practices based on mindfulness, i.e. “mindfulness meditation”. \", \"dn22:1.7\": \"The phrase <i lang='pi' translate='no'>ekāyano maggo</i> (“path to convergence”) is given multiple meanings in commentaries and ancient Chinese translations. Outside of <i lang='pi' "
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn12.20.dependent-origination",
+      "layer": "canonical",
+      "uid": "sn12.20",
+      "statement": "缘起以条件关系说明过程的出现与止息。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh07t_nrf:1494",
+              "work_id": "abh07t_nrf",
+              "row_id": 1494,
+              "paranum": "3",
+              "anchor": "3",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "3. ‘于此’(Tattha)指于此二理。彼缘法存在，则有具生起自性者存在，此即‘彼有故此有’(tabbhāvabhāvībhāva)之相，此仅为一种行相，由此所标示者，即‘彼有故此有’之行相而已。由此，‘彼无故此无’之行相，亦在义理上得以显示。诚然，缘的特相，应以随顺(anvaya)与逆离(byatireka)的方式显示。是故世尊说：‘此有故彼有，此生故彼生；此无故彼无，此灭故彼灭。’ 缘此而有果至，故名为缘(paccaya)。果安住于此，其转起依赖于彼，故名为安住(ṭhiti)。别别限定而转起的、名为缘的安住，即是别缘安住(āhaccapaccayaṭṭhiti)。缘起之理，乃依‘彼有故此有’之行相而转起，不考虑因等诸缘的特定规则，而无差别地转起；此发趣之理，则依因等各各缘对于其他各各法具有各各缘性的能力之特定行相，而有差别地转起，故说是依别缘安住而说。然而，有些人释为：‘别缘安住，是撞击喉、腭等处而说出的安住。’然此一闻，即可知其言说之可笑。因为无论是缘起之理，或任何其他道理，皆不可能不触及喉、腭等处而宣说。‘混合’(Vomissetvā)者，谓《摄阿毗达摩义论》(Abhidhammatthasaṅgaha)作者等诸阿阇梨，将发趣之理亦纳入缘起之中，以‘彼有故此有’及因等诸缘的方式，混合而广为分别；然我等之意，则在于将之各别显示。"
+            },
+            {
+              "locator": "v4:s0102t_tik:180",
+              "work_id": "s0102t_tik",
+              "row_id": 180,
+              "paranum": "59",
+              "anchor": "59",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "59. 由于多次观察苦蕴的集起，识（智）得以生起，故说‘集、集’这样的重复语。或者说，‘如是集起’（evaṃ samudayo hoti）不仅是显示生起的语句，更如同‘缘起’（paṭiccasamuppāda）一词以生起为门径，此处‘集’（samudaya）一词也以生起为门径而说其缘性。此处所指的识等法皆是缘法，为了以总相普遍地把握它们，故说‘集、集’。如是说后，所谓‘此有故彼有，只是说明了缘的认识’（长部注2.59），这就得到了证实。若问：‘这难道不是生起随观智（udayadassanapaññā）吗？’这并无过失，因为通过缘而观见生起，便能见到生起的特征。以见义为眼，是说如眼一般能现见集起，故名为眼。以令知义，是说如实了知、觉悟集起，此即令知的作用。以遍知义，是说‘由此识等种种缘而有此苦蕴之集起’，如此从各方面了知。以厌离、洞穿而生起义，是说此智乃是先前未曾厌离，今以生起随观智厌离了对治法，并从缘、刹那、自相三方面洞穿‘此是集’而生起，故以厌离、洞穿之义，称为明（vijjā）。以光明义，是说此智破除了覆盖集起自性的无明黑暗和烦恼黑暗，故能显现光明。"
+            },
+            {
+              "locator": "v4:s0102t_tik:292",
+              "work_id": "s0102t_tik",
+              "row_id": 292,
+              "paranum": "292",
+              "anchor": "292",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于某些经中，缘起是顺向(anuloma)宣说，于某些经中则是逆向(paṭiloma)宣说。此处，所谓顺向，是指由缘之生起而有缘生法之生起；所谓逆向，是指由缘之息灭而有缘生法之息灭。另外，从始至终为顺向，从终至始为逆向。从始顺向宣说，及从终逆向宣说，则有三结(tisandhi)四摄(catusaṅkhepa)。例如，“诸比丘，此四食以何为因？”等（相应部2.11），是从中间开始逆向宣说；而“缘眼与色生眼识，三者和合为触，缘触而有受”等（相应部2.43, 45），是顺向宣说，有二结(dvisandhi)三摄(tisaṅkhepa)。“诸比丘，于结法随观味者，爱增长，缘爱而有取”等（相应部2.53, 57），则有一结(ekasandhi)二摄(dvisaṅkhepa)。缘起亦被说为单支。此可由“诸比丘，于此，多闻圣弟子善于如理作意缘起：‘此有故彼有……此灭故彼灭’。诸比丘，缘乐受触而生乐受”（相应部2.62）此经得知。如是，因种种理由而需如是宣说，故缘起之教法甚深。是故说：“此为教法甚深”。于此，除一切知智(sabbaññutañāṇa)外，无有他智能得立足。"
+            },
+            {
+              "locator": "v4:s0503a_att:111",
+              "work_id": "s0503a_att",
+              "row_id": 111,
+              "paranum": "111",
+              "anchor": "111",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“‘此有故彼有’等语，岂非唯世尊之言？除导师外，实无他人能说缘起。”此言真实。然而，正如世尊于菩提树下以观察法性之方式作意缘起，同样地，为令所化众生觉悟，诸位结集法的大长老，亦以[世尊对]缘起的作意为缘由，并仿效其在《缘起狮子吼经》等经中所宣说的言教及说法方式，结集了世尊所说此优陀那的缘起。是故当知，此处应作结论：如是所说之言，实为结集者之语。此后诸经，理路亦然。"
+            },
+            {
+              "locator": "v4:s0515m_mul:1945",
+              "work_id": "s0515m_mul",
+              "row_id": 1945,
+              "paranum": "1945",
+              "anchor": "1945",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "世尊曾如是说：‘诸比丘，此身非汝等所有，亦非他人所有。诸比丘，此乃应被视为旧业，是所造作、所思造、所应感受、所应见的。于此，诸比丘，多闻圣弟子善巧、如理作意缘起：“此有故彼有，此生故彼生；此无故彼无，此灭故彼灭。”即：无明缘行，行缘识……如是，此纯大苦蕴集起。又，由无明之无余离贪、灭，故行灭……如是，此纯大苦蕴灭。’如是，亦为‘于彼，无有“此是我的”，亦无任何属于他人之物’之义。"
+            },
+            {
+              "locator": "v4:s0516m_mul:1271",
+              "work_id": "s0516m_mul",
+              "row_id": 1271,
+              "paranum": "1271",
+              "anchor": "1271",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此为世尊所说：“诸比丘，此身非你等所有，亦非他人所有。诸比丘，此应被视为旧业，是经造作、经思量、应被感受、应被见的。于此，诸比丘，多闻的圣弟子善巧地、如理地作意缘起：‘此有故彼有，此生故彼生；此无故彼无，此灭故彼灭。即：无明缘行，行缘识，识缘名色，名色缘六处，六处缘触，触缘受，受缘爱，爱缘取，取缘有，有缘生，生缘老死、愁、悲、苦、忧、恼。如是，此整个苦蕴集起。’”"
+            },
+            {
+              "locator": "v4:s0201t_tik:932",
+              "work_id": "s0201t_tik",
+              "row_id": 932,
+              "paranum": "932",
+              "anchor": "932",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "为详尽开示‘先前爱之生起’此简略之说，故以‘如何’等语发起论述。其中，‘由爱为缘所生’即是由爱为缘而生。于结生刹那，由见先前之爱生起为诸食生起之缘，可知于相续流转刹那中，执取食亦由爱而生起。为免混淆，此处未论及此，而为开示非执取食由爱生起之理，故说‘然而因为’等语。‘于此’，指于此经中，因未作区分而笼统宣说。‘由俱生爱为缘所生’一句中，采用‘俱生’一词，是为了表明非执取食亦可由非俱生爱为缘而生。然此情形，因其与前述执取食同样由非俱生爱为缘所生，恐引生疑惑，故未予揭示。此非无因，如经言‘依贪欲而生忧’，且非执取食可由以爱为亲依止缘的瞋心所生之食素而得。然爱如何成为食素的亲依止缘？于《发趣论》中，未曾说色法有亲依止缘。此说不相违，因其意指‘此有故彼有，此为彼亲依止’的经教方法，故上述义理得以成立。是故说‘由此……乃至……因爱灭’。"
+            },
+            {
+              "locator": "v4:s0302a_att:163",
+              "work_id": "s0302a_att",
+              "row_id": 163,
+              "paranum": "163",
+              "anchor": "163",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘此有故彼有’，此亦是另一种狮子吼。其义为：当此无明等缘存在时，此行等果便有。‘此生故彼生’，即此无明等缘生起故，此行等果便生起。‘此无故彼无’，即当此无明等缘不存在时，此行等果便无。‘此灭故彼灭’，即此无明等缘灭故，此行等果便灭。如今，为详尽开示其如何生起与息灭，故宣说‘此即：无明缘行’等。"
+            },
+            {
+              "locator": "v4:s0302m_mul:369",
+              "work_id": "s0302m_mul",
+              "row_id": 369,
+              "paranum": "369",
+              "anchor": "369",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“然而，诸比丘，有闻圣弟子于此不依他缘，唯有智生起：‘此有故彼有，此生故彼生。缘无明有行；缘行有识；缘识有名色；缘名色有六处；缘六处有触；缘触有受；缘受有爱；缘爱有取；缘取有有；缘有有生；缘生有老死。’他如是了知：‘此世间如是集起。’”"
+            },
+            {
+              "locator": "v4:s0404a_att:612",
+              "work_id": "s0404a_att",
+              "row_id": 612,
+              "paranum": "91-92",
+              "anchor": "91-92",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "第五品初经‘以强暴故’(sāhasena)是指以强横的行为。第二经‘诸怖畏’(bhayāni)是指心之惊怖。‘诸怨’(verāni)是指不善怨与个人怨。‘圣道’(ariyo ñāyo)是指与观(vipassanā)俱行之道。‘此有故彼有’(imasmiṃ sati idaṃ hoti)是指像这样，当无明等因存在时，行等果就产生。‘此生故彼生’(imassuppādā idaṃ uppajjati)是指任何法，若为另一法之俱生缘，则因其生起，另一法亦得生起。‘此无故彼无’(imasmiṃ asati idaṃ na hoti)是指当无明等因不存在时，行等果就不产生。‘此灭故彼灭’(imassa nirodhā idaṃ nirujjhati)是指因之不转起故，果亦不转起。"
+            },
+            {
+              "locator": "v4:abh01t_tik:41",
+              "work_id": "abh01t_tik",
+              "row_id": 41,
+              "paranum": "41",
+              "anchor": "41",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "仅以部分方式解说，如：‘诸比丘，何为五蕴？色蕴……乃至……识蕴。诸比丘，何为色蕴？凡所有色，或过去……或……近者，此称为色蕴。’（相应部3.48；分别论2）像这样仅以总说与详说的方式解说，因缺少‘于此，何为过去色？’（分别论3）等阿毗达摩式的分析与问答，故非详尽无遗。然而，至于阿毗达摩，……乃至……则是详尽无遗地解说。是故，此法亦因其具有超胜于（其他）法的特殊之义，而被称为‘阿毗达摩’。其意涵是：由于其详尽无遗的三种方法是超胜之教与特殊之教。在经中，二十二根未被一并论及，故《根分别》中无经分别。于缘起中，如‘无明缘，诸行生’等，仅指出了各缘法对其缘生法的为缘关系；而对所指出的诸法之善等属性，则需以问答方式解说。然而，此中并无‘无明、行’此类的总说，故无问答。在经中，指出了五学处，即离杀生等。然而，此远离若依自性、作用等解说，则成‘制止、戒绝’等阿毗达摩式的分析。若依心生起而解说，亦成阿毗达摩式的分析。此外，别无其他可解说远离的方式，能据以说有经分别。是故，《学处分别》中无经分别。"
+            },
+            {
+              "locator": "v4:abh01t_tik:685",
+              "work_id": "abh01t_tik",
+              "row_id": 685,
+              "paranum": "1434",
+              "anchor": "1434",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "1434. 缘业或业相而生起时，被称为是过去所缘。然而，关于缘取业相而生起的结生，其作为现在所缘的状态，将在《缘起分别释义》(Paṭiccasamuppādavibhaṅga-vaṇṇanā)中说明。因此，当知此说是针对在临终意门心路中，已呈现于意门的过去业相而说。对于有彼所缘的临终，若趣相为结生所缘而生起，且寿命仅余五心识刹那，则其后的四个有分心是现在所缘；而在其他情况下则是六个，此即针对“此后于有分时”一语所说。诚然，对于投生欲界的有情，当缘趣相的速行已生起，而彼所缘还未生起时死亡就发生了——就像（没有彼所缘的）色界、无色界有情那样——那么，结生之后的六个有分心即是现在所缘。由与见相应的（心）所生的爱味等，应视为与执取俱行。关于以概念(paṇṇatti)与涅槃为所缘的速行，（论主）通过“前行期”一词，阐明了其转向心绝不可被称为有过去等所缘的理路。即使是缘取涅槃的速行，其前行期的转向心也不应如是说；但并非绝对，因为在道与果的心路中，该转向心的所缘并非涅槃。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "paticcasamuppada imasmim sati"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn12.20",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn12.20/sujato",
+              "excerpt": "{\"comment_text\": {\"sn12.20:1.2\": \"Dependent origination is the process, dependently originated phenomena are the products. \", \"sn12.20:2.3\": \"The principles of the Dhamma are not impermanent, since they are not things that exist. Rather, they are laws of nature that describe a process or a pattern which is always observable, so it is always true to describe it in that way. At <a href='https://suttacentral.net/an3.136/en/sujato'>AN 3.136</a> the same idea applies to impermanence, suffering and not-self. Also see Poṭṭhapāda at <a href='https://suttacentral.net/dn9/en/sujato#31.10'>DN 9:31.10</a>. | For “surety” (<i lang='pi' translate='no'>niyāmatā</i>) compare Rig Veda 4.3.9, “With truth I invoke the truth set down” (<i lang='pi' translate='no'>ṛtena ṛtaṁ niyatam</i>). It is related to the idea that the stream-enterer “steps into the sure path”, i.e. enters the noble eightfold path, and is therefore “assured” in the sense of confident, and “assured” in the sense of being bound for awakening. \", \"sn12.20:3.17\": \"This phrase is also at <a href='https://suttacentral.net/sn12.1/en/sujato#2.14'>SN 12.1:2.14</a>. Note that there is no corresponding “dependent cessation”. The ending of dep"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn22.79.formations",
+      "layer": "canonical",
+      "uid": "sn22.79",
+      "statement": "行蕴涉及条件性的造作与意向，不是永恒性格字段。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:e0301n_nrf:1235",
+              "work_id": "e0301n_nrf",
+              "row_id": 1235,
+              "paranum": "165",
+              "anchor": "165",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "165. 于《一切总摄》(Sabbasaṅgaha)中，五蕴(pañcakkhandha)即五聚(rāsi)。由过去等差别所分别之色的蕴、聚，即是色蕴(rūpakkhandha)。于‘变坏’(ruppana)此一相中聚为一堆，以智所遍知(pariggahita)之色法，即是色蕴。同样，于‘感受’(vedayita)此一相、‘识知’(sañjānana)此一相中各自聚为一堆，所遍知之由过去等差别所分别的受(vedanā)与想(saññā)，即名为受蕴(vedanākkhandha)与想蕴(saññākkhandha)。‘造作故，名为行’(Saṅkharontīti saṅkhārā)。即触(phassa)、思(cetanā)等。彼等于六生起门或三业门中，和合集会，以触、思等各自之作用，完成见、闻等共同作用，或身、语、意之卧、坐、立、行、言、思等一切作用。对此，《相应部》(Saṃyutta Nikāya)中如是说："
+            },
+            {
+              "locator": "v4:s0201a_att:2205",
+              "work_id": "s0201a_att",
+              "row_id": 2205,
+              "paranum": "2205",
+              "anchor": "2205",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "那时，世尊为了不给尼干陀(Nigaṇṭha)留下话柄说：‘诸位，请看，弟子所说的是一回事，导师所说的又是另一回事。我不是一开始就说过吗：“如果他能确立其说，如同其弟子所确立的那样，我才会与他辩论。”但他现在却说别的，对此我能做什么呢？’，于是就遵循先前阿说示(Assaji)长老所说的规则，说道：‘阿耆毗舍那(Aggivessana)，我正是这样说的……’等等。‘乔达摩尊者，一个譬喻浮现在我心中。’（他说道：）‘乔达摩尊者，我有一个譬喻，我要提出它。’世尊说：‘阿耆毗舍那，让它浮现吧。阿耆毗舍那，让它出现吧，请随意说出那个譬喻。’‘以体力能办的’指以臂力所应做的农耕、商业等工作。‘色是我之人’指以色为我，此词显示了执取色为我而住立之人。‘依止于色’指依止于那被执取为我的色。‘产生福或非福’，意即获得善或不善。于受是我等亦复如是。此中阐明了什么？这五蕴是这些众生如同大地般的依止处。他们依止于这五蕴，造作善与不善业。他举出譬喻，使其极具理由地说道：‘你们否定这样一个实际存在的我，而阐明五蕴为无我。’而此尼干陀所引之譬喻是确凿的，除了遍知佛陀，没有其他人能破其言论而指出其过失。人有二种：佛所调伏者与声闻所调伏者。声闻所调伏者，声闻能调伏，佛陀也能调伏；而佛所调伏者，声闻不能调伏，唯佛能调伏。此尼干陀也是佛所调伏者，因此，没有其他人能破其言论而指出其过失。为此，世尊为了亲自指出其言论的过失，"
+            },
+            {
+              "locator": "v4:abh01a_att:1002",
+              "work_id": "abh01a_att",
+              "row_id": 1002,
+              "paranum": "1002",
+              "anchor": "1002",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "复次，以不动摇之义，唯七法是力。以根本之义，唯三法是因。以触之义，唯一法是触。以受之义，唯一法是受。以想之义，唯一法是想。以思之义，唯一法是思。以心种种之义，唯一法是心。以聚之义及受之义，唯一法是受蕴。以聚之义及想之义，唯一法是想蕴。以聚之义及造作之义，唯一法是行蕴。以聚之义及心种种之义，唯一法是识蕴。以了知之义及依前所说处之义，唯一法是意处。以了知之义及主导之义，唯一法是意根。以了知之义及自性、空、非有情之义，唯一法名为意识界，而非其余。复次，除去心，依前所说之义，其余一切法皆为一法处，亦为一法界。"
+            },
+            {
+              "locator": "v4:abh02a_att:111",
+              "work_id": "abh02a_att",
+              "row_id": 111,
+              "paranum": "111",
+              "anchor": "111",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "然说法次第则为适宜。因为世尊欲利益众生，为令堕于五蕴我执的有缘众生，能借由见到积聚与分解而从我执中解脱，并为令彼等易于领解，故首先开示了作为眼等所缘的粗显色蕴。其后，开示了感受可意与不可意色的受蕴；又因“有所感受，即有所想”，故开示了能执取受之所缘行相的想蕴；其次开示了依想而造作的行蕴；最后开示了作为受等所依与主导的识蕴。如是，当先了知“依次第”的决择之理。"
+            },
+            {
+              "locator": "v4:abh02a_att:74",
+              "work_id": "abh02a_att",
+              "row_id": 74,
+              "paranum": "20",
+              "anchor": "20",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "20. 在行蕴的解释中，‘任何行’(ye keci saṅkhārā)意指含摄了四地诸行。‘眼触所生思’等，是为了从自性上显示依过去等时所指示的诸行而说。‘眼触所生思’等词义如前所述。‘思’是就最低层次而言，作为主要之行而说。因为在最低层次上，至少有四种行与眼识俱时生起，如圣典中所述。在这些行中，思是主要的，因其造作之义更为显著。因此，此处选取了思。与思相应之行，则因思被选取而亦被含摄。此处，前五种（思）亦唯以眼净色等为所依。意触所生（思）则或依心所依处，或无所依。一切皆为四地之思。其余部分则与受蕴（的解释）相同。"
+            },
+            {
+              "locator": "v4:abh02t_tik:1242",
+              "work_id": "abh02t_tik",
+              "row_id": 1242,
+              "paranum": "1242",
+              "anchor": "1242",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "正如触等法因其特殊性质及相应的作用，具有造作有为的自性，所以被摄入行蕴中；但受、想、识则不是这样，它们就像色法一样，各自被说为独立的蕴。由此可知，触等法不能被单独称为蕴。所以经中说‘触等则…’等等。此处的‘等’字，包含了如下经文：‘诸比丘(bhikkhu)，当色存在时，因为执取色、住于色，就会生起结、取、缚……受……想……行……识存在时，因为执取识、住于识，就会生起结、取、缚。’(《相应部》3.158)以及‘我执著色为“我”，色为“我所”而住’(《相应部》3.1)等等经句。‘由此’，是指通过自身所引用的经文。而‘依据将要解说的经文’，是指在义注(aṭṭhakathā)中(《分别论义注》26页，杂论)对‘诸比丘，当色存在时…’等经文将要作的解说。‘不应说依于狭小所缘等’，此言显示，即使是所缘不可言说的邪见，亦是依蕴而生起，何况以蕴为所缘者。"
+            },
+            {
+              "locator": "v4:abh02t_tik:255",
+              "work_id": "abh02t_tik",
+              "row_id": 255,
+              "paranum": "255",
+              "anchor": "255",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "绝望本身不是苦，因为它是一种嗔，或是属于行蕴的其他法。而若有人说忧即是绝望，则应以此巴利经文反驳他们：‘绝望与三蕴、一处、一界相应，又在某些情况下与一蕴、一处、一界相应。’（《界论》 249）当人们陷入悲伤，不顾乐苦之因，而造作痛苦之事等时，绝望就成为身苦的基础；当人们因悲伤而思虑亲人亡故等事时，绝望就成为忧的基础。绝望在生起的刹那，就因与忧相应而烧灼心，并因其不扩散的作用而使身体沮丧；正因这两种作用，其后它会缘此而产生强烈的身心之苦，因此被称为苦。"
+            },
+            {
+              "locator": "v4:abh02t_tik:87",
+              "work_id": "abh02t_tik",
+              "row_id": 87,
+              "paranum": "87",
+              "anchor": "87",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "一切有为法的同分集合，即是一切有为同分一合。因为具有同分的诸有为法，如触等，被摄集为五蕴。于此，应知以变坏等共性而为同分者，名为‘同分’。在这些法中，思以其积集作用于造作有为的功能上最为强盛，故被称为‘行蕴’；其余的触等有为法，虽无变坏等别相，但应知它们具有造作有为的共性。然而，触等自性法若个别来说，则不能称为蕴，故应知通达法自性的如来未曾说有触蕴等。‘诸比丘！任何沙门或婆罗门，作为常见论者，宣示世界与我为常，他们全都是依赖、缘于此五取蕴，或其中之一。’由诸如此类的经文可知，我与我所执的所缘事，以此（五取蕴）为最极。并且，由此经及将说的经可知，（某些）不可言说的邪见是仅仅依赖诸蕴作为有限所缘等而生起的，因为除了诸蕴和涅槃之外，没有其他的自性法存在。又，为了驳斥‘因有戒蕴等其他可称为蕴者存在，故不只五蕴’的诘难，而说‘亦因其他摄入于此故’。"
+            },
+            {
+              "locator": "v4:abh03t_tik:36",
+              "work_id": "abh03t_tik",
+              "row_id": 36,
+              "paranum": "71",
+              "anchor": "71",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "71. 生、老、死，因其仅是正在生、正在成熟、正在毁坏的状态，从胜义上分离出来则不可得，它们仅是诸胜义法的自性状态。它们是色的生起、成熟、毁坏，以变坏的性质被执取，故与色蕴法同分。而无色法的生起等，如同色聚的生起等，由于是与同时生起的四蕴聚的生起等状态为一，不能被感受、想、识这些唯一的胜义作用所执取，而是被有为法的造作这一非唯一的胜义作用所执取，故与行蕴法同分。同样，这两种现象也不能被眼处等唯一的胜义作用所执取，因其无有情义，而与法处、法界、法同分。因此，它们被那些蕴等所摄，故说‘生以二蕴[摄]’等。"
+            },
+            {
+              "locator": "v4:abh05t_nrf:42",
+              "work_id": "abh05t_nrf",
+              "row_id": 42,
+              "paranum": "71",
+              "anchor": "71",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "71. 所谓‘生起……乃至……等’(Jāyamāna…pe… mānānaṃ)，是指处于生起等状态的诸法。所谓‘仅仅是生起等的状态’，是因为仅仅是生起等阶段的状态之故。所谓‘分析’，即从其状态进行区分。从胜义(paramattha)而言，它们是不存在的；所谓‘仅仅是自性’，即它们仅仅是胜义法的状态。即使是非胜义自性者，也因色法的生起等状态，而以变坏性被执取。因此，应引‘于色蕴是同分，于无色蕴则是生、老、死’之句来结合说明。所谓‘各别存在’，是说：犹如在一个色聚(rūpakalāpa)中，生等是各别存在的，同样，在无色聚中也是如此。因此说‘如色聚的生等’等。虽然生等是具有感受、想、识知作用的受等的生起等状态，但它们不被如此执取，因此说‘感受……乃至……不被执取’。因此，说明了受蕴等不含摄生等。根据‘诸比丘，生是无常、有为(saṅkhatā)’等语，生等亦属于有为的范畴，因此说，以行蕴的有为造作作用含摄它们，即‘有为……乃至……同分’。亦应由此了知行蕴具有非一向的胜义作用。同样，所谓‘两种’，是指如前所述，依色法与无色法的生起等状态而有的两种。所谓‘因此’(tena)，是指以如前所述的同分之义。所谓‘以彼等蕴等’(tehi khandhādīhi)，是指以色蕴、行蕴、法处、法界。"
+            },
+            {
+              "locator": "v4:abh01m_mul:456",
+              "work_id": "abh01m_mul",
+              "row_id": 456,
+              "paranum": "62",
+              "anchor": "62",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "62. 于其时，何为行蕴？触、思、寻、伺、喜、心一境性、信根、精进根、念根、定根、慧根、命根、正见、正思惟、正精进、正念、正定、信力、精进力、念力、定力、慧力、惭力、愧力、无贪、无瞋、无痴、无贪欲、无瞋恚、正见、惭、愧、身轻安、心轻安、身轻快性、心轻快性、身柔软性、心柔软性、身适业性、心适业性、身练达性、心练达性、身正直性、心正直性、念、正知、止、观(vipassanā)、策励、不散乱；又，于其时，凡有其他缘生之无色法，除去受蕴，除去想蕴，除去识蕴——此，于其时，为行蕴。"
+            },
+            {
+              "locator": "v4:abh01m_mul:517",
+              "work_id": "abh01m_mul",
+              "row_id": 517,
+              "paranum": "114",
+              "anchor": "114",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "114. 于其时，什么是某一行蕴？凡是触、思、寻、伺、喜、心一境性、信根、精进根、念根、定根、慧根、命根、正见、正思惟、正精进、正念、正定、信力、精进力、念力、定力、慧力、惭力、愧力、无贪、无嗔、无痴、无贪欲、无瞋恚、正见、惭、愧、身轻安、心轻安、身轻快性、心轻快性、身柔软性、心柔软性、身适业性、心适业性、身练达性、心练达性、身正直性、心正直性、念、正知、止、观(vipassanā)、策励、不散乱；复次，于其时，除去受蕴、想蕴与识蕴，尚有其他缘生之无色法——此是于其时某一行蕴。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "sankhara cetana"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn22.79",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn22.79/sujato",
+              "excerpt": "{\"comment_text\": {\"sn22.79:1.2\": \"Compare the stock description of such recollection: “There, I was named this, my clan was that, I looked like this, and that was my food. This was how I felt pleasure and pain, and that was how my life ended” (eg. <a href='https://suttacentral.net/sn16.9/en/sujato#13.1'>SN 16.9:13.1</a>). Also see the different ways the self is conceived as being reborn in states described as “percipient”, “formed”, and so on in <a href='https://suttacentral.net/dn1/en/sujato'>DN 1</a>. \", \"sn22.79:1.4\": \"<a href='https://suttacentral.net/mn131/en/sujato#4.2'>MN 131:4.2</a>. \", \"sn22.79:2.5\": \"For the other aggregates, the noun is illustrated with the verb, but <i lang='pi' translate='no'>rūpa</i> has no verbal form. Instead, the text puns with the unrelated verb <i lang='pi' translate='no'>ruppati</i>. <i lang='pi' translate='no'>Ruppati</i> would be better translated as “inflict”, but I use “deform” to maintain the play on words. The actual etymology of <i lang='pi' translate='no'>rūpa</i> is unclear (see note on <a href='https://suttacentral.net/sn12.2/en/sujato#11.5'>SN 12.2:11.5</a>). \", \"sn22.79:3.4\": \"For these definitions, see <a href='https://suttacentral."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mn2.mental-defilements",
+      "layer": "canonical",
+      "uid": "mn2",
+      "statement": "如理作意与不如理作意影响烦恼是否继续流转。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh09t_nrf:1900",
+              "work_id": "abh09t_nrf",
+              "row_id": 1900,
+              "paranum": "1900",
+              "anchor": "1900",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "就义理而言，此处所言“未生之恶”等，当知烦恼未生有两种情况：或因未曾现行，或因未曾体验所缘。若非如此，在无始的轮回中，实无名为“未生不善法”者。然而在善法中，如对三宝的净信、观(vipassanā)等以趣向解脱为依止的善法，确实有未生起的。若这些善法先前已生起，则会导致一切众生在此之前都已漏尽，因为它们是使漏尽必然发生的助缘。在此，对于某个有情，他恒常致力于行持(vatta)、研习典籍(gantha)、头陀支(dhutaṅga)、禅定(samādhi)、观(vipassanā)、新业(navakamma)中的任何一种，努力不懈，又因从梵天而来，在此生中未曾习近烦恼，故烦恼不现行；但之后如果他舍弃行持等，变得懈怠，放逸而行，亲近恶友等，习近了烦恼，再加上不如理作意(ayoniso manasikāra)和失念(sativossagga)，烦恼便会生起。如是，当知是因未曾现行而烦恼未生。"
+            },
+            {
+              "locator": "v4:e0103n_att:849",
+              "work_id": "e0103n_att",
+              "row_id": 849,
+              "paranum": "849",
+              "anchor": "849",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "那么，如何是“有分”的“世尊”呢？是指那些戒等法蕴、功德部分，是如来独有、无上的。即是说，他的戒、定、慧、解脱、解脱知见，惭、愧，信、精进，念、正知，戒清净、见清净，止、观，三善根，三善行，三正思惟，三无罪想，三界，四念处，四正勤，四神足，四圣道，四圣果，四无碍解，抉择四生智，四圣种，四无畏智，五精进支，五支正定，五智正定，五根，五力，五出离界，五解脱处智，五解脱成熟想，六随念处，六恭敬，六出离界，六常住，六无上，六通达分想，六神通，六不共智，七不衰退法，七圣法，七圣财，七觉支，七善人法，七断烦恼事，七想，七应供养者说法，七识住说法，七漏尽者力说法，八得智因说法，八正性，八世间法超越，八发起处，八无暇处说法，八大士思惟，八胜处说法，八解脱，九如理作意根本法，九清净精进支，九有情居说法，九嗔恚调伏，九想，九差别，九次第住，十护法，十遍处，十善业道，十正性，十圣住，十无学法，十如来力，十一慈爱功德，十二法轮相，十三头陀支，十四佛智，十五解脱成熟法，十六种入出息念，十六无后悔法，十八佛法，十九观察智，四十四智处，五十生灭智，超过五十的善法，七十七智处，二十四俱胝百千三摩地游行大金刚智，无尽方便周遍依处抉择观察说法智，以及在无尽世界中，对无尽众生的意乐等差别进行辨别的智慧等等，像这样无量无数的差别，是如来独有、无上的功德部分。因此，因为具有如上所说的各种功德部分，所以当说“bhāgavā”"
+            },
+            {
+              "locator": "v4:s0101t_tik:129",
+              "work_id": "s0101t_tik",
+              "row_id": 129,
+              "paranum": "129",
+              "anchor": "129",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "世尊的言教，以义理和文句的区分抉择，能够使人全面而深入地领会整个教法，是圆满利益他人之因，所以说‘如此才是良好的方法’。后二轮的成就，指的是自我正愿与往昔福业这两项功德。于此，由于接连不断地运转，故称之为‘轮’；或说，众生依靠这些在善趣中流转。世尊所说的‘诸比丘，有此四轮，具足此四轮者，天人四轮方得运转’等，即指于此。此中‘前后’之别，当依说法次第而知。后二轮之成就，即是后二轮之存在。自我正愿已立、往昔福业已作者，其心清净，因令心不净之诸烦恼已远离，故说‘心性清净成就’。诚如所说：‘善立其心者，能令己更胜’，以及‘阿难，汝已作福业，当勤修正行，速成无漏者’。是故说：‘由心性清净，成就证悟通达’。‘行持清净’，是指以如理作意为前导的听闻正法之行持的清净。故又说：‘成就教理通达’。或者说，是一切身语行持的无过失。因为身语行持清净者，由于无有追悔，心不散乱，于教理能得娴熟。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:1280",
+              "work_id": "s0104t_nrf",
+              "row_id": 1280,
+              "paranum": "1280",
+              "anchor": "1280",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "通过说示不应行嗔恚等，而含摄了忍耐、柔和与（烦恼）不生起。其中，忍耐含摄了以信、慧忍受他人侵害之苦，同样，柔和含摄了戒。并且，通过把握信等，即回转了信根等一切菩提分法。通过把握戒，即回转了无悔等一切戒的功德之法。通过说示远离杀生等，即是安住于不放逸，由此回转了全部教法与梵行。通过把握具足深奥等特质之法，即是称扬大菩提。诚然，以无碍智为近因的是漏尽智，以漏尽智为近因的也是无碍智，这被称为大菩提，由此回转了十力等一切佛陀的功德。通过把握常见等诸见，即含摄了爱与无明，由此二者回转了无始的生死轮回。通过如实彻知诸受的集起等，即有世尊的三遍知清净，由此清净，以般若波罗蜜为首，回转了一切波罗蜜。在“不知不见”之处，通过把握无明而含摄了不如理作意，并且由此回转了九种以不如理作意为根本的法。在“为爱所行者战栗动摇”之处，通过把握爱而回转了九种以爱为根本的法。“那也是缘于触”等（经文），是开示常见等安立的从缘性，由此回转了无常等三相。通过如实了知六触处，即是解脱成就的解释，由此回转了七清净。“如来身已断有之导管”是说断除了爱，由此回转了世尊对一切杂染的断除。此即名为回转法门，其特征是以同分法与异分法的方式，回转教说中所取之法。正如所说：“于一近因，寻求其余近因”等。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:428",
+              "work_id": "s0104t_nrf",
+              "row_id": 428,
+              "paranum": "428",
+              "anchor": "428",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "以此阐明了什么？答曰：‘如是，此……’(iccassā)等。如是，由于此四轮成就为因，对于那位长老来说，后二轮得以成就，即由于后二轮的存在而成就。‘意乐清净’(Āsayasuddhi)即名为观智(vipassanāñāṇa)的随顺忍(anulomikakhanti)，以及名为业自性智(kammassakatāñāṇa)与道智(maggañāṇa)的如实智(yathābhūtañāṇa)，此二种意乐，因其不净之因的诸烦恼已远离而得清净。此二者确实是依止于出离(vivaṭṭa)的清净有情的意乐。因为心意已善安立(sammāpaṇihitatta)且宿作福德者，其意乐是清净的。如是说：‘心若正向，能作更胜事’（法句经43），以及‘阿难(Ānanda)，你已作福德，当勤修正行，速成无漏者’（长部2.207）。然而，有人说‘意乐是行作之欲’(kattukamyatāchanda)，此说不合理，因为它与‘由彼意乐清净，而有通达明了之成就’的说法相矛盾。即便如此，名为道智的意乐之清净，不应由彼‘通达明了之成就’而说，这难道不合理吗？不，并非不合理，因为前道是后诸道与诸果之因。‘加行清净’(Payogasuddhi)即由于以如理作意(yonisomanasikāra)为前导的闻法加行之明净而清净，或一切身语加行之无过而清净。因为居住在适宜的处所，亲近善人，即成为如上所说的清净加行者。以如是清净的、"
+            },
+            {
+              "locator": "v4:s0201a_att:320",
+              "work_id": "s0201a_att",
+              "row_id": 320,
+              "paranum": "320",
+              "anchor": "320",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于‘诸比丘，当如理作意’一句，若有人因其本性清净——犹如具寿大迦叶与跋陀迦毗罗尼（Bhaddā Kāpilānī）——或因学习教诵、请教问难等原因，诸漏不生起，而他了知：‘我的诸漏尚未被道根除，我当为根除它们而修行。’于是他通过修道，根除了所有漏。对此人，其诸漏被称为‘未生者不生’。又若有人于修行时，因失念而诸漏突然生起，其后他生起悚惧心，如理精勤而断尽那些漏，对此人，其诸漏被称为‘已生者被断’，犹如曼陀罗园住者大帝萨普多（Mahātissabhūta）长老。据说，他在那座寺院学习教诵，于村中乞食时，对一不适宜的所缘生起了烦恼。他以观将之镇伏后返回寺院。此后，即便在梦中，那个所缘也未曾现起。他想：‘此烦恼若增长，将导致堕入恶道。’于是生起悚惧心，禀告阿阇梨后离开寺院，前往大僧护长老处，求取了对治贪欲的不净业处，进入丛林中，铺设粪扫衣而坐，以不还道断除了对五种欲尘的贪欲。他起座礼敬阿阇梨后，于次日回到了学习教诵的次第。至于现在正生起的漏，则不存在所谓的通过修行来断除。"
+            },
+            {
+              "locator": "v4:s0201t_tik:363",
+              "work_id": "s0201t_tik",
+              "row_id": 363,
+              "paranum": "363",
+              "anchor": "363",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于三地所摄诸法中，不了知无为法，不了知以遍知等未竟之业所称的有为法，亦不了知正等觉者之行道，且勤于听闻、受持、修习、作意非法，而背离听闻、受持、修习、证悟正法之所化有情，即是此教法之法器。概言之，‘无闻’等词，阐明了常行不如理作意、与不善根相应、沉滞或掉举、为方便所缚而增长、具足邪执、未净除无明与渴爱、三轮转不止、不离诸漏、暴流、轭、结、趣、爱生、取，未越心荒、心缚、喜、盖、结，不舍诤根，不断随眠，不超邪性，依于爱根法，随行不善业道，身心为一切烦恼所烧恼等义。“以地为地想”等，则阐明了渴爱行相之解释、慢之计度、颠倒执、杂染、有身取、愚者相之表述、三曲行之阐明、多种对治之开示、三依止之指陈、漏尽之宣说等义。"
+            },
+            {
+              "locator": "v4:s0201t_tik:378",
+              "work_id": "s0201t_tik",
+              "row_id": 378,
+              "paranum": "378",
+              "anchor": "378",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“于地作地想”，这是显示想是见、慢等生起的原因。在此，正如想一样，寻、触、无明、不如理作意等也是它们的原因，因此在意义上，这里也包含了它们，因为作为妄想之因，它们具有同一特征。“妄想”一词，通过妄想的作用涵盖了贪、慢、见，因为它们具有烦恼的本质。通过这个涵盖，也应当理解疑等的集合，因为它们具有相同的烦恼特征。同样，因为贪是因的本质，通过这个涵盖，也应当理解其余不善因的集合，因为它们具有相同的因的特征。同样，因为贪和见具有漏等的本质，通过这个涵盖，也应当理解其余的漏、暴流、轭、结、盖等的集合，因为它们具有相同的漏等本质。同样，“于地妄想”等语句中，因为地是色的本质，并且以地为所缘的妄想也是以色为所缘，因此通过这个涵盖，就显示了一切色蕴所缘的妄想，因为它们具有相同的色所缘特征。眼处等所缘的妄想也应该这样确定。“未遍知”意味着，否定遍知，即是否定了与此相关的烦恼之断除，因为作为道的作用，遍知与断除具有同一特征。依此道理，其余诸法也应如是确定其同一特征。这就是特征纲要。"
+            },
+            {
+              "locator": "v4:s0201t_tik:450",
+              "work_id": "s0201t_tik",
+              "row_id": 450,
+              "paranum": "450",
+              "anchor": "450",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“未生”(anuppannā)即未产生(anibbattā)。其未生，当依所缘(ārammaṇa)之差别而知，非依色所缘等所缘之共通性，亦非依漏(āsava)。故言：“未曾经验之所缘……否则，于无始轮回中，实无名为未生之漏。”“事”(vatthu)指有情与无情之别，是漏生起的原因。“所缘”(ārammaṇa)指作为所缘缘的色等。为示亦可依漏而得未生之义，故说“纵曾经验”等。“本性清净”(pakatisuddhiyā)指由过去修行远离烦恼(kilesa)所成就的清净本性。读诵巴利(Pāḷi)圣典是诵持(uddesa)，解说义理是请问(paripucchā)。学习教理是研读(ajjhayanaṃ)，缝制衣物等是新事务(navakammaṃ)，修习止(samatha)观(vipassanā)是如理作意(yonisomanasikāro)。“由如是” (tādisena)指，由何种作意，如对“可爱事”(manuññavatthu)的作意等，能生起欲漏(kāmāsava)等，即是此种作意。所谓漏的增长，当知是由缠(pariyuṭṭhāna)的强烈。而此强烈，是由于不断生起与多作。由此，漏获得串习，达到增盛，压伏、遍满、覆盖、制造黑暗，前后相续而生，依单一相续之理，被称为“已生而增长”。故言：“数数生起，即称已生而增长。”除此以外，即除了将前后相续生起者执为一体之外，别无所谓增长，因其刹那性故"
+            },
+            {
+              "locator": "v4:s0201t_tik:475",
+              "work_id": "s0201t_tik",
+              "row_id": 475,
+              "paranum": "20",
+              "anchor": "20",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "20. 问：于此，在开示见结时，难道不也应开示戒禁取吗？因为只有这样，见所断的诸漏才能被无遗地开示。针对此质问，答曰“因为”等。戒禁取实已被欲漏等所含摄，因其以欲漏等为因。未断欲贪等者，或为求欲乐，或为求有清净，而执取诸戒禁，认为“我以此戒、或禁、或苦行、或梵行，将成为天神或某一类天神”，“我将于彼处常、坚、恒、不变，如是永住”，以及如经中所说，执取“以戒得清净，以禁得清净，以戒禁得清净”。其中，“为有乐及有清净”，即是为求有乐与为求有清净。“其已被含摄”，即戒禁取已被见取所含摄，如“为断诸见所趣”等（经文所示）。“彼等”，指应由见所断的（烦恼）。（此为）依个人(puggala)而作的开示。“与此相反者”，指如理作意的善凡夫。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:1179",
+              "work_id": "abh08t_nrf",
+              "row_id": 1179,
+              "paranum": "1179",
+              "anchor": "1179",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "欲(chanda)是意欲，即对所缘的需求。在“欲即贪”(Chando kāmo)等(如《大义释》(Mahāniddesa)1)语境中，贪爱也被称为欲。在“生起欲而努力”(Chandaṃ janeti vāyamati)等语境中，精进也被称为欲。为区别于此，故说：“此为‘欲作性’(kattukamyatā)之同义词。”欲作性，即行作的意欲(karaṇicchā)。由于心所法必有所缘，行作的意欲乃是通过欲求执取所缘而有，故说欲以“对所缘的行作意欲”为相，或说以“欲作性”为相。因此说，它以“寻求所缘”为作用，以“对所缘的需求”为现起。当它作为先导寻求自己的所缘时，由于相应法亦有同一所缘，故它们也随之寻求。因此，在执取所缘时，它被称为“犹如心伸出手臂”。又问，与布施之心行相应的欲，如何能说是对所缘有需求呢？我们不是已说过它“以对所缘的行作意欲为相”吗？因此，犹如战场上的弓箭手对须射之箭有执取的需求，以布施心行生起的欲，对所要布施之物也同样有需求。此欲若生于善法中，由如理作意而生，则名为善欲；反之，若生于不善法中，则为不善欲。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:871",
+              "work_id": "abh08t_nrf",
+              "row_id": 871,
+              "paranum": "871",
+              "anchor": "871",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "由于在无如理作意时，善法不生起；在有如理作意时，善法生起，故说‘如理作意是其近因’。其中，如理作意是指以正道、正方便所作之意。然而，就其义而言，对于有随眠(anusaya)相续者，当六门所缘境现前时，通过适宜处所居住等成就，以善法之缘的方式，使有分心(bhavaṅga)转向而生起的作意，名为如理作意。应知亦有以所说之对立面为相的非如理作意(ayoniso manasikāra)。然而，对于与无随眠相续者相应的唯作心(kiriyacitta)所生起的作意，除了无过失法(niravajja-dhamma)之外，不成为任何有过失法(sāvajja-dhamma)之缘，故应归属于如理作意一方。或者，由于阿罗汉(khīṇāsava)的心相续已断尽烦恼，不考虑如理或非如理之相，只是在所缘境现前时生起而已，不成为任何善或不善法生起的条件，因此这种作意可以称为无记作意(abyākata-manasikāra)。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "asava yoniso manasikara"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "mn2",
+              "url": "https://suttacentral.net/api/bilarasuttas/mn2/sujato",
+              "excerpt": "{\"comment_text\": {\"mn2:1.1\": \"Patterned after the Dīghanikāya, the Majjhimanikāya opens with a difficult philosophical text (Brahmajālasutta, Mūlapariyāyasutta) and follows it with a more practical teaching (Sāmaññaphalasutta, Sabbāsavasutta). \", \"mn2:2.1\": \"“Defilements” (<i lang='pi' translate='no'>āsava</i>) are the fundamental “pollutions” or “corruptions” that darken awareness, trapping people in transmigration. In practical application, <i lang='pi' translate='no'>āsava</i> can mean the “discharge” from a sore (<a href='https://suttacentral.net/an3.27/en/sujato#2.4'>AN 3.27:2.4</a>). The Jain Tattvārthasūtra 6.1–2 defines <i lang='pi' translate='no'>āsrava</i> as the influx of deeds; these pollute the pure soul. | Note that the Pali <i lang='pi' translate='no'>āsava</i> represents two distinct words, which are homonyms in Pali but differentiated in Sanskrit. The word here is Sanskrit <i lang='pi' translate='no'>āsrava</i> (or <i lang='pi' translate='no'>āśrava</i>), whereas Sanskrit <i lang='pi' translate='no'>āsava</i> means “intoxicant”, a sense found elsewhere in Pali (<a href='https://suttacentral.net/pli-tv-bu-vb-pc51/en/sujato#2.1.4'>Bu Pc 51:2.1.4</a>). \", \"mn2:2.2\": \""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn35.95.guard-sense-doors",
+      "layer": "canonical",
+      "uid": "sn35.95",
+      "statement": "根门守护是互动反应前可训练的条件。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh02t_tik:1872",
+              "work_id": "abh02t_tik",
+              "row_id": 1872,
+              "paranum": "508",
+              "anchor": "508",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "508. 波罗提木叉律仪等：以“等”字包括守护根门、饮食知量、正念正知、勤行觉醒等。不净随念（asubhānussati）：指不净禅（asubhajhāna）与随念禅（anussatijhāna）。当成就沙门性的前分所作圆满时，沙门性也自然成就，所以说“空...显示”。因为因若成就，果亦成就。为了显示学处的体性、应学之行相及简要分别，所以说“于学处中”等。其中“以名身等”：指以名身（nāmakāya）、句身（padakāya）、文身（byañjanakāya）的方式所说。由此显示学处作为达成学处之方便所安立的自性。其中应学之行相就是不超越导师的教诫，所以说“语...应学”。于学分中：指已说种类中的增上戒学（adhisīlasikkhā）部分。其中受持就是应学之行相，所以说“应以圆满的方式修学”。属于学处一部分：即学处总集的组成部分。此处特指比丘学处，因说“于此，比丘（idha bhikkhu）”故。如是（义注）将说：“其余学处则是为了显示‘学’一词的含义而抉择其义所说”（Vibha. Aṭṭha. 516）。"
+            },
+            {
+              "locator": "v4:s0101t_tik:242",
+              "work_id": "s0101t_tik",
+              "row_id": 242,
+              "paranum": "242",
+              "anchor": "242",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "如是，具足资具的十五种行法和五种神通（亦是助缘）。其中，行法是指：戒防护、根门守护、饮食知量、勤修警觉、七正法以及四禅。其中，戒等四法的资具是十三头陀支和少欲等。在七正法中：信的资具是忆念佛、法、僧、戒、施、天、寂静，远离粗鄙之人，亲近柔和之人，省察可喜之法，并于彼等生起胜解；惭与愧的资具是省察不善的过患、恶趣的过患、善法的增长，远离无惭无愧者，亲近具惭愧者并于彼等生起胜解；多闻的资具是先前的修习、问询、勤修正法、熟悉无过失的学处等、根器成熟、远离烦恼，远离少闻者，亲近多闻者并于彼等生起胜解；精进的资具是省察恶趣的怖畏、省察行道、省察法的伟大、遣除昏沉睡眠、远离懈怠者、亲近精进者、省察正勤并于彼等生起胜解；念的资具是具足正念正知、远离失念者、亲近具念者并于彼等生起胜解；慧的资具是问询、明净事相的行持、根平等的行持、远离恶慧者、亲近具慧者、省察深智的行持并于彼等生起胜解。四禅的资具是戒等四法、在三十八所缘中修习前分，以及作意等五自在的成就。其中，以戒等的行持清净，能给予众生无畏施；以意乐清净，能行财物布施；以二者清净，能行法布施。如是，行法等作为布施等资粮的助缘性，应如理抉择，因恐过于冗长，此处不作详述。如是，当知成就轮等也是布施等的助缘。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:699",
+              "work_id": "s0104t_nrf",
+              "row_id": 699,
+              "paranum": "699",
+              "anchor": "699",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此外，有具足资具的十五种行法与五种神通。其中，行法是指戒律防护(sīlasaṃvara)、根门守护、饮食知量、勤修觉醒、七种正法以及四种禅那。于此等中，戒等四法的资具为十三种头陀支(dhutaṅga)法及少欲等。于诸正法中，信的资具为：对佛、法、僧、戒、施、天、寂止的随念，远离粗鄙之人，亲近温雅之人，省察能令心清净之法，以及对此的胜解。惭与愧的资具为：省察不善的过患，省察恶趣(apāya)的过患，省察善法的助益，远离无惭无愧之人，亲近具惭具愧之人，以及对此的胜解。多闻的资具为：前分的努力，勤于请问，精勤于正法，熟悉无过失的学处(vijjāṭṭhāna)等，诸根成熟，远离烦恼，远离寡闻之人，亲近多闻之人，以及对此的胜解。精进的资具为：省察恶趣的怖畏，省察趣道，省察法的伟大，遣除昏沉与睡眠，远离懈怠之人，亲近精进之人，省察正勤(sammappadhāna)，以及对此的胜解。念的资具为：正念正知(satisampajañña)，远离失念之人，亲近念现前之人，以及对此的胜解。慧的资具为：勤于请问，净化所依(vatthu)，令诸根平等，远离劣慧之人，亲近具慧之人，省察甚深智行之经，省察法的伟大，以及对此的胜解。四种禅那的资具为：戒等四法，于三十八种所缘境中修习前分(pubbabhāga)，以及作意(āvajjana)等自在(vasībhāva)的修习。"
+            },
+            {
+              "locator": "v4:s0201m_mul:163",
+              "work_id": "s0201m_mul",
+              "row_id": 163,
+              "paranum": "163",
+              "anchor": "163",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "然而，那些出于信心而从在家出家为无家生活的良家子，他们不狡诈、不欺瞒、不伪善、不掉举、不傲慢、不轻浮、言语不粗、言语有节，守护根门，饮食知量，致力于保持醒觉，顾念沙门身份，对学处深怀敬意；不耽于利养，不懈怠，于退堕已放下重担，于远离作为先锋；已发起精进，已策励自心，具足正念，具足正知，心已得定，心意专一，具足智慧，不痴不哑。他们听了具寿舍利弗的这番法说，就仿佛以言语和心意饮之、食之：‘善哉，贤友们！同梵行者令我等出离不善法，而确立于善法中。’贤友，譬如一位年轻、青春、爱打扮的女子或男子，洗过头后，得到一串青莲花、或茉莉花、或素馨花的花鬘，用双手接过，戴在头顶上。正是如此，贤友，那些出于信心而从在家出家为无家生活的良家子，他们不狡诈、不欺瞒、不伪善、不掉举、不傲慢、不轻浮、言语不粗、言语有节，守护根门，饮食知量，致力于保持醒觉，顾念沙门身份，对学处深怀敬意；不耽于利养，不懈怠，于退堕已放下重担，于远离作为先锋；已发起精进，已策励自心，具足正念，具足正知，心已得定，心意专一，具足智慧，不痴不哑。他们听了具寿舍利弗的这番法说，就仿佛以言语和心意饮之、食之：‘善哉，贤友们！同梵行者令我等出离不善法，而确立于善法中。’就这样，这两位大龙象互相随喜彼此的善说。"
+            },
+            {
+              "locator": "v4:s0303t_tik:15",
+              "work_id": "s0303t_tik",
+              "row_id": 15,
+              "paranum": "15",
+              "anchor": "15",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“未调伏”(Avinīta)：指未依增上戒学等修习之人。因彼等缺乏律仪、调伏等，故被称为“未调伏”。为说明此点，方说“调伏(vinaya)有二种”等。其中，戒律仪(sīlasaṃvara)应理解为波罗提木叉律仪，其实质即是身口之不违犯。念律仪(satisaṃvara)即是守护根门，亦即如是生起之正念。智律仪(ñāṇasaṃvara)，如经中所说“我说诸流之防护”(Sutta Nipāta 1041)，又说“彼等以慧而关闭”(Sutta Nipāta 1041)，故应知，此乃对被称为“流”的贪、见、恶行、无明及残余烦恼的防护、关闭，即断除之智。忍律仪(khantisaṃvara)即是忍耐，亦即如是生起之坚忍，或不嗔恚，亦有人说是“智慧”。精进律仪(vīriyasaṃvara)乃为去除欲寻(kāmavitakka)等而生起之精进。以各个部分断除各个部分，即称“彼分断”(tadaṅgappahāna)。以镇伏之方式断除，即称“镇伏断”(vikkhambhanappahāna)。其余三句亦是同样道理。"
+            },
+            {
+              "locator": "v4:s0402m2_mul:783",
+              "work_id": "s0402m2_mul",
+              "row_id": 783,
+              "paranum": "783",
+              "anchor": "783",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "具足精进、慧力、坚定、禅思、正念、守护根门者，应行于增上戒、增上心与增上慧。"
+            },
+            {
+              "locator": "v4:s0402t_tik:1069",
+              "work_id": "s0402t_tik",
+              "row_id": 1069,
+              "paranum": "1069",
+              "anchor": "1069",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在‘如是具足’等句中，‘如是’是指因不容忍欲寻等，心意极为清净。由于此意乐成就，以及由此为因的加行成就，故戒行清净，守护根门，饮食知量，具足正念正知，勤于觉醒。因具足以支分断等方式烧尽诸烦恼为相的精进，故为热忱者。因时时刻刻、日日夜夜完全具足对罪过的怖畏，故为有愧者。因持续不断地通过修习止观，成就四种正勤，故为勇猛精进、自我策励者。此即‘心已趣向涅槃者’之义。"
+            },
+            {
+              "locator": "v4:s0403m1_mul:1001",
+              "work_id": "s0403m1_mul",
+              "row_id": 1001,
+              "paranum": "1001",
+              "anchor": "1001",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“舍利弗，至于那些具足信心，从在家而出家，过无家生活的良家子，他们不奸诈、不虚伪、不狡猾、不掉举、不高慢、不轻浮、不粗语、言语不散乱、守护根门、饮食知量、勤修觉醒、向往沙门性、对学处极为恭敬、不贪求利养、不放逸、于退堕法放下重担、于远离行领先、已发起精进、已遣发自心、正念现前、具足正知、心已得定、心一境、有智慧、不痴哑，舍利弗，你当对他们说。舍利弗，你当教诲同梵行者；舍利弗，你当教导同梵行者：‘我将使同梵行者们出离非正法，并让他们安住于正法中。’舍利弗，你当如此学习。”第七。"
+            },
+            {
+              "locator": "v4:s0404m1_mul:80",
+              "work_id": "s0404m1_mul",
+              "row_id": 80,
+              "paranum": "80",
+              "anchor": "80",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“诸位比丘，除此之外，还需说什么呢？难陀守护根门，饮食知量，勤修清醒，具足正念正知，由此他才得以圆满、清净地修持梵行。第九经。”"
+            },
+            {
+              "locator": "v4:s0504a_att:1280",
+              "work_id": "s0504a_att",
+              "row_id": 1280,
+              "paranum": "1280",
+              "anchor": "1280",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "住就是以四威仪而住、行动、生活。具足行止与行处就是指，不以竹筒等邪命为生，不做身行粗恶等事，完全舍离非行止后，如所说‘身无违犯、语无违犯’，具足适合比丘的行止；远离淫女等非行处，仅于为托钵等而前往的适当之处行动，因此称为具足行止与行处者。此外，如果有个比丘，对导师心怀敬畏与尊重，对同梵行者心怀敬畏与尊重，具足惭与愧，衣着整洁，威仪具足，进退顾盼、屈伸俯仰都非常庄严，目光下敛，威仪圆满，守护根门，饮食知量，勤修清醒，具足正念正知，少欲知足，乐于独处、不与人混杂，对于根本行仪的学处恭敬奉行，常怀尊重之心而住，这样的人就称为具足行止者。"
+            },
+            {
+              "locator": "v4:e0103n_att:111",
+              "work_id": "e0103n_att",
+              "row_id": 111,
+              "paranum": "111",
+              "anchor": "111",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "再者，比丘……等语，是为了显示所有比丘的行仪而说的义注之语，而非《解释》的巴利经文。“恭敬”(gārava)是因信、戒、闻、舍等功德而产生的尊重感，或是作出尊重的行为；与恭敬俱行，是为“有恭敬”。在应受尊敬者面前，以恭敬、稳重等方式表示顺从，即是“随顺”(patissā)，是具有随顺的行持；与随顺俱行，是为“有随顺”。因为特别具有惭心与愧心，所以具足惭愧。因为圆满了众学法，所以善于穿着下衣和上衣。“以令人净信的(方式)”是指能带来净信的，这是表示情状特征的工具格；此理亦适用于其后六处。“以前进”是指通过前进的动作。“威仪具足”是指具足了威仪；由此也说明了其余威仪的令人净信。“于诸根守护门”是指在眼根等六门有善防护的守护。“于食知量”是指对于被称为食物的四种资具，在寻求、接受、受用等方面完全了知适量。“勤修警寤”是指在初夜和后夜，持续不断地致力于被称为修习和作意的警寤。“具足念与正知”等，是显示前述行仪的资粮。于此，“少欲”是无欲；“知足”是因随其所得等而满足、喜悦；“恭敬而行者”是带着恭敬而行；“多作尊重”是指对值得尊重者多作尊重。这被称为“行仪”(ācāro)，是因为这“有恭敬”等，是欲求利益者所应行持的，故为“行仪”。"
+            },
+            {
+              "locator": "v4:s0304a_att:507",
+              "work_id": "s0304a_att",
+              "row_id": 507,
+              "paranum": "507",
+              "anchor": "507",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "同样地，在此处也应当将五种欲乐视为已成熟的庄稼。食苗牛如同虚伪的心，守护庄稼的不放逸如同这位比丘在六根门头不舍弃正念，鞭杖如同经典，当牛想要吃庄稼时用鞭杖抽打它，如同当心向外攀缘各种不同所缘时，应回忆无始轮回、天界使者、燃烧、毒蛇等譬喻以及未来诸怖畏，并通过忆念这些经教，阻止心趋向不同的外境所缘，使其安住于根本业处。因此古代的圣者说："
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "indriyesu guttadvara sati"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn35.95",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn35.95/sujato",
+              "excerpt": "{\"comment_text\": {\"sn35.95:1.1\": \"Māluṅkyaputta was, according to Pali commentaries, the son of the lady Māluṅkyā of Kosala. Alternatively, Sanskrit dictionaries give <i lang='pi' translate='no'>māluka</i> as the name of a people or a mixed caste, although I have not been able to trace any further details. His conversion is not recorded as he appears always as a monk. <a href='https://suttacentral.net/mn63/en/sujato'>MN 63</a> and <a href='https://suttacentral.net/mn64/en/sujato'>MN 64</a> depict him as somewhat of a fool, but it seems that he persisted, and late in life sought teachings in meditation and ultimately realized arahantship, of which we have two different accounts (here and <a href='https://suttacentral.net/an4.257/en/sujato'>AN 4.257</a>). The latter contains an extensive set of verses attributed to him, which are repeated at <a href='https://suttacentral.net/thag16.5/en/sujato'>Thag 16.5</a>. A second set of his verses are at <a href='https://suttacentral.net/thag6.5/en/sujato'>Thag 6.5</a>. \", \"sn35.95:4.2\": \"The commentary explains “unseen, unseen before” as not seen in this life or past lives. This is possible, although <i lang='pi' translate='no'>adiṭṭhapubba</i>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "an3.65.kalama",
+      "layer": "canonical",
+      "uid": "an3.65",
+      "statement": "贪、嗔、痴作为可现起、可观察、可训练改变的条件。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh01a_att:1300",
+              "work_id": "abh01a_att",
+              "row_id": 1300,
+              "paranum": "350",
+              "anchor": "350",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "350. ‘无愿’(appaṇihita)：于此，‘无愿’亦是道之名。道由三种原因得此名。如何？于此，比丘从一开始即审住于苦，观诸行为苦。然而，仅见为苦，道尚不能生起，亦须见为无常与无我。是故，他将心安立于‘无常、苦、无我’此三随观而省察修行。其导向出离的观(vipassanā)，于三地诸行中，令愿求枯竭、耗尽、舍弃。此观名为‘无愿’。彼观立于能引生道之处，而给予其道‘无愿’之名。如是，道‘由其来源’而得名‘无愿’。又，因于彼道中无有贪、嗔、痴之愿求，故‘由其自德’而得名‘无愿’。涅槃亦因无有彼等愿求而被称为‘无愿’。道以彼为所缘而生起，故‘由其所缘’而得名‘无愿’。"
+            },
+            {
+              "locator": "v4:abh02a_att:2115",
+              "work_id": "abh02a_att",
+              "row_id": 2115,
+              "paranum": "2115",
+              "anchor": "2115",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“无想有情”(Asaññasattānaṃ)，即无想的众生。有些外道在其教派中出家，见到“心依赖于贪、嗔、痴而有”，视心为过患，认为“无心状态方为善妙，此即现法涅槃”，于是生起离想之心，修习能达彼处之第五等至，从而投生彼处。他们投生之时，只有一个色蕴产生。站着投生的就一直站着，坐着投生的就一直坐着，躺着投生的就一直躺着。他们如同绘画或雕塑一般，住于五百大劫。劫末，其色身消失，欲界之想生起；因其想生起，故知彼天人已从彼身死去。"
+            },
+            {
+              "locator": "v4:abh03a_att:1956",
+              "work_id": "abh03a_att",
+              "row_id": 1956,
+              "paranum": "1956",
+              "anchor": "1956",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "所谓‘一缘的多缘性’，其义为：在因缘(hetupaccaya)等缘中，任何一缘，以某种方式、某种意义成为缘生法(paccayuppanna)之缘，其在不舍离此方式、此意义的同时，又于同一刹那，以其他方式、其他意义，对此等法而成多缘。由此多缘性，当知其决择。譬如，无痴是因缘，它不舍离其因缘性，又通过增上、俱生、相互、依止、异熟、根、道、相应、不相应、有、不离去等十一种方式而成多缘。无贪与无嗔，则除去增上、根、道此三缘，以其余方式而成多缘。此仅见于异熟因(vipākahetu)，在善与唯作(kusala-kiriyā)中，则无异熟缘性。贪、嗔、痴，则除去增上、根、道此三缘及异熟缘，共四缘，以其余方式而成多缘。"
+            },
+            {
+              "locator": "v4:abh04t_nrf:170",
+              "work_id": "abh04t_nrf",
+              "row_id": 170,
+              "paranum": "170",
+              "anchor": "170",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "有能作出离之自性的，是出离性的，犹如“有食饼习惯者是食饼者”，或即是出离之自性。可知是被贪、嗔、痴所执取，否则，说“一向断除”则无意义。于“为尘所覆者不辉，纵使日月与星辰”等句中，当知“尘”(raṇa)词是“微尘”(reṇu)的同义词。因“战”(yuddha)词是“打击”(sampahāra)的同义词，而打击是应被打击的所依，故不善军被称为“有恼”(saraṇā)。“苦等”是指作为果的苦、恼、忧、热恼，以及同类的邪行。以“能产生彼等之自性的不善法”，显示了一切不善法的“有恼性”。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:128",
+              "work_id": "abh08t_nrf",
+              "row_id": 128,
+              "paranum": "108-9",
+              "anchor": "108-9",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "贪、嗔、痴、慢、邪见、疑、睡眠、掉举、恶作、昏沉、悭吝、无惭、无愧、嫉妒与忧：此等法为不善，与不善心相应，由已战胜烦恼、远离尘垢的大仙所完全宣说。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:2222",
+              "work_id": "abh08t_nrf",
+              "row_id": 2222,
+              "paranum": "1328-33",
+              "anchor": "1328-33",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "1328-33. ‘无间等’(Anantarādīhi)，意指通过无间、等无间、习行、亲依止、无有、离去这六种缘。‘顶’(Muddhaṃ)，意指已成顶位。‘不还’(anāvattaṃ)，因其决然性，且仅生起一次，无有重复，故为不还。‘亦不作意’(Anāvajjanampi ca)，意即等同于不作意。‘如给信号’，即如说‘应如是生起’而给予信号。‘未曾穿破’(Anibbiddhapubbaṃ)，意指先前未曾破坏。‘摧破’(Viddhaṃsento)，即是毁灭。‘生’(Jāyati)，即是生起。于此，人们引用此譬喻：据说有一弓箭手，命人在八乌萨巴(aṭṭhausabha)远处立百块木板，以布蒙面，引弓立于转轮旁。另一人转动转轮，当木板正对弓箭手时，便以木棍给予信号。弓箭手不待信号消失，即发射箭矢，穿透百块木板。于此，给予木棍信号者，犹如种姓智(gotrabhuñāṇa)；弓箭手，犹如道智(maggañāṇa)；不待信号消失即穿透百块木板，犹如道智不待种姓智所给信号消失，即以涅槃为所缘，穿破先前未曾穿破、未曾破坏的贪、嗔、痴蕴。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:990",
+              "work_id": "abh08t_nrf",
+              "row_id": 990,
+              "paranum": "990",
+              "anchor": "990",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "对那些作为善与不善异熟的有对想，由其止息、断除、不生起、不现行之故，（经中）如是说。难道这些在证入色界禅(rūpāvacarajjhāna)时也不存在吗？确实，在证入初禅等禅定时，心不会依五门而转起。此乃事实。但就像“由舍离乐与舍离苦，以及先前已灭没忧、喜，入于非苦非乐、由舍而念清净的第四禅而住”这句话中，为了赞叹的缘故，即使乐和苦已在别处断除，仍然在第四禅中提及；又像“由断除身见与疑，由贪、嗔、痴的减弱，证入一来道而住”这句话中，身见(sakkāyadiṭṭhi)等虽然在初道已经断除，仍然在第二道中提及；同样，在此禅定中，为了激励修习者精进，并赞叹此禅定，故在此提及这些（想）的断除，应如是知。或者，即使色界禅定者也不具有这些（想），但并非因为已经断除而不存在，而是由于缺乏因缘。因为色界禅的修习不导向对色的离贪，那些（想）的生起仍依赖于色。而无色界的修习则导向对色的离贪，所以可以说“那些（想）在此已经断除”。事实上，正是因为这些在此之前尚未断除，世尊(Bhagavā)才说“于证入初禅者，声音是根刺”。而在此（无色定）中，由于这些已被断除，故通过无色等至(arūpasamāpatti)的不动行(āneñjābhisaṅkhāra)等词语，以及“彼等超越色法、无色的寂静解脱”等语句，说明了其不动性与寂静解脱性。"
+            },
+            {
+              "locator": "v4:e0103n_att:121",
+              "work_id": "e0103n_att",
+              "row_id": 121,
+              "paranum": "121",
+              "anchor": "121",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "女相或男相，此处指依止女性身心相续而执取的身形、乳房肌肉的不清晰、面部无须、发型衣着、不清晰的步态等，凡此种种，因是生起‘这是女人’之认知的原因，故称女相。反之则为男相。净相等，此处，能引发贪欲的可爱之相，是为净相。‘等’字则包含了厌恶相等。而彼等是嗔恚生起之因，当知其为不可爱等相。经文中虽只从体性上说到贪欲与忧愁，但也应包含舍相，因为由不如理审察而生的愚痴也属于不防护。诚如后面将说：‘失念或无明’。此中所谓舍相，即无明之舍的所缘事，当知此由不如理审察所致。如是，简言之，贪、嗔、痴之因，即被称为‘净相等’。因此说‘作为烦恼事的相’。所谓‘仅于所见而住立’，即是如《自说经》（Udāna 1.10）所说‘于所见中，将仅是所见’之理，于色处，由眼识及（眼门）心路诸心所执取后即止，不再进一步思量美丑等相。所谓‘令其显现’，即是令其清晰、令其明显。对于异分事，于手等支分思量为美等相者，于彼所缘中，烦恼将次第生起而变得清晰，因此，彼等支分被称为（烦恼的）随相。然而，彼等随相只是如此如此配置的四大及所造色的组合形态而已。离开它，于胜义中，并无名为手等之物。因此说‘不执取手、足……等相’。那么执取什么呢？答道：‘于彼处有者，唯执取彼。’即如实地执取那身体中存在的发、毛等，或仅是四大及所造色。于此，为示‘执取不净相’之例，而引用‘住支提山’等句，带来了大帝萨长老的故事。"
+            },
+            {
+              "locator": "v4:e0103n_att:364",
+              "work_id": "e0103n_att",
+              "row_id": 364,
+              "paranum": "364",
+              "anchor": "364",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "现在，为了分别说明他们贪欲强盛等以及各自混杂等情况，开始说“实于何者”等。“造业的时刻”，即造业之时。“贪强盛”，是由于其相应诸缘和合之力，贪变得更强。“无贪薄弱”，即其对立面的无贪是无力的。然而，这些贪与无贪彼此直接对立，如何能在同一刹那生起呢？不应如此认为它们“在同一刹那生起”。实际上，这是将喜爱刹那也算作业行的一方而这么说的。其余情况也同此理。“不能制伏”，即无法压倒。确实，若无贪与“如此美好、广大、贵重之物，实在难以布施”等不舍离之行相应而生起的思（cetanā）俱行，那么它就根本无法制伏贪。由于嗔与痴没有生起，且获得了那样的缘，无嗔与无痴就是强盛的。“因此”，是回顾刚才所说的原因，即：由于贪、嗔、痴的强盛，以及无贪、无嗔、无痴的薄弱。“彼”，即具足彼（业）的个人。“由此业”，即由此以贪等为近依的善业。“乐行者”，即温和者。以“无忿怒者”这一同义词来说明此义。"
+            },
+            {
+              "locator": "v4:e0301n_nrf:1413",
+              "work_id": "e0301n_nrf",
+              "row_id": 1413,
+              "paranum": "1413",
+              "anchor": "1413",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "经中说：“此七有，彼七有，轮回共十四。”同样，在《增支部》(Aṅguttara Nikāya)三集中说：“优陀夷(Udāyī)，如果阿难(Ānanda)未离贪欲而命终，以其心之净信，他将于天界七次为天王，于此瞻部洲(Jambudīpa)七次为大王。再者，优陀夷，阿难将于现法中般涅槃。”有些人根据这些经文，认为七返须陀洹在欲界有十四次结生。但在《大品相应》的疏钞(Mahāvaggasaṃyutta-ṭīkā)中说，有些人主张在欲界最多生七次，不会超过此数，此事当审察。《分别论》(Vibhaṅga)中处处，以及在诸《处经》(Aṭṭhānasutta)中说：“具见者生起第八有，此事无有是处，无有可能。”《增支部》六集中也说：“具见者不堪生起第八有。”《大义释》(Mahāniddesa)的《阿耆多所问》(Ajitapañha)中说：“以入流道智，通过行识之灭，除了七有之外，于无始轮回中可能生起的名色，于此而灭、止、息、寂。”因有如是坚实之说，故应依上述之理趣理解彼等经文的含义。“贪、嗔、痴的减弱”是指：不像在须陀洹的心相续中，（贪欲）对于如法的欲所缘会强力地生起——因为他们甚至还会有性交——而是通过削弱，使之无法如此（强力地）生起。另外，由于（烦恼）偶尔才生起以及现行时势用微弱，也成就了其微薄的状态。其中，“偶尔生起”是指有时隔很久才生起；“现行微弱”是指即使隔很久才生起，其现行也更为微弱"
+            },
+            {
+              "locator": "v4:abh03m3_mul:2480",
+              "work_id": "abh03m3_mul",
+              "row_id": 2480,
+              "paranum": "665",
+              "anchor": "665",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "665. 被覆障者舍断诸盖吗？是的。有贪者舍断贪，有嗔者舍断嗔，愚痴者舍断痴，有染污者舍断诸烦恼吗？不应这样说……以贪舍断贪，以嗔舍断嗔，以痴舍断痴，以诸烦恼舍断烦恼吗？不应这样说……"
+            },
+            {
+              "locator": "v4:e0401n_nrf:405",
+              "work_id": "e0401n_nrf",
+              "row_id": 405,
+              "paranum": "405",
+              "anchor": "405",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“‘当有身见生起时，（彼等）就生起’”，此句阐明了那些见和疑与有身见不可分离。然而，应当了知，并非有身见与它们不可分离。“成熟”意即在恶趣中成熟，它们产生恶趣的结生。对于已见谛的圣者(ariyapuggala)，与见和疑相应的诸不善法，已通过‘见和疑’一词被涵盖，因此说‘与见和疑不相应’。“诸不善法”即现行的十不善业道法。“于七有”是表示行为完成的具格，犹如“用七个月完成精舍”。所谓行为完成，是指行为的快速完成。“七次”即七回。“三结”即有身见、疑、戒禁取这三种结。“不堕法”，堕是指变异而堕落，即堕于恶趣。‘法’(dhamma)是指自性。其文法分析为：他没有堕落的自性。“决定”即在善趣中有决定的趣向。“正觉”(sambodhi)即道智。“彼岸”是指未来应去之处。其彼岸即是名为正觉，是为‘以正觉为彼岸者’。“不定义”是‘或’(vā)字的含义。在‘或’字的含义中，有不定义，而非抉择义。若取抉择义，则只能得到两种“极七返者”，而得不到混合有；若取不定义，则三种都能得到。然而，在义注中，由于取了总集义，故只得到一种混合有。难道‘ca’字在总集义中不是更明显，而在不定义中则不然吗？因此，若说总集义在此处是恰当的，那是不对的。为何？因为没有包含两者。然而，义注中取了总集义，并说那两种人在此读法中未被包含。如果他们在此读法中未被包含，那他们会在何处被包含呢？说此处未包含任何“极七返者”，这并不恰"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "lobha dosa moha"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "an3.65",
+              "url": "https://suttacentral.net/api/bilarasuttas/an3.65/sujato",
+              "excerpt": "{\"html_text\": {\"an3.65:0.1\": \"<article id='an3.65'><header><ul><li class='division'>{}</li>\", \"an3.65:0.2\": \"<li>{}</li></ul>\", \"an3.65:0.3\": \"<h1 class='sutta-title'>{}</h1></header>\", \"an3.65:1.1\": \"<p><span class='evam'>{}</span>\", \"an3.65:1.2\": \"{}\", \"an3.65:1.3\": \"{}</p>\", \"an3.65:1.4\": \"<p>{}\", \"an3.65:1.5\": \"{}\", \"an3.65:1.6\": \"{}\", \"an3.65:1.7\": \"{}</p>\", \"an3.65:2.1\": \"<p>{}</p>\", \"an3.65:3.1\": \"<p>{}\", \"an3.65:3.2\": \"{}\", \"an3.65:3.3\": \"{}\", \"an3.65:3.4\": \"{}\", \"an3.65:3.5\": \"{}\", \"an3.65:3.6\": \"{}</p>\", \"an3.65:3.7\": \"<p>{}\", \"an3.65:3.8\": \"{}</p>\", \"an3.65:4.1\": \"<p>{}\", \"an3.65:4.2\": \"{}\", \"an3.65:4.3\": \"{}</p>\", \"an3.65:5.1\": \"<p>{}\", \"an3.65:5.2\": \"{}</p>\", \"an3.65:6.1\": \"<p>{}</p>\", \"an3.65:7.1\": \"<p>{}</p>\", \"an3.65:8.1\": \"<p>{}</p>\", \"an3.65:9.1\": \"<p>{}\", \"an3.65:9.2\": \"{}</p>\", \"an3.65:10.1\": \"<p>{}</p>\", \"an3.65:11.1\": \"<p>{}</p>\", \"an3.65:12.1\": \"<p>{}</p>\", \"an3.65:13.1\": \"<p>{}\", \"an3.65:13.2\": \"{}</p>\", \"an3.65:14.1\": \"<p>{}</p>\", \"an3.65:15.1\": \"<p>{}</p>\", \"an3.65:16.1\": \"<p>{}</p>\", \"an3.65:17.1\": \"<p>{}</p>\", \"an3.65:18.1\": \"<p>{}</p>\", \"an3.65:19.1\": \"<p>{}</p>\", \"an3.65:20.1\": \"<p>{}</p>\", \"an3.65:21.1\": \"<p>{}</p>\", \"an3.65:22.1\": \"<p>{}</p>\", \"an3.6"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mn21.ill-will",
+      "layer": "canonical",
+      "uid": "mn21",
+      "statement": "敌意与慈心的对治属于训练路径，不等同于固定人格类型。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh09t_nrf:1956",
+              "work_id": "abh09t_nrf",
+              "row_id": 1956,
+              "paranum": "1956",
+              "anchor": "1956",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在‘世间的贪欲’(abhijjhāṃ loke)等句中，‘贪欲’(abhijjhā)是说朝向对象而思量、思考，即是贪(rāga)。‘世间’(loko)具有毁坏、崩解的含义，指五取蕴。其义为：抑制对它们的欲贪(kāmacchanda)。他是以抑制的方式而‘离贪欲’，而非像眼识等那样，此为其义。‘以心’(cetasā)即是通过心(cittena)，其义为：他以这样的状态而住。‘从贪欲中’(abhijjhāya)即是从贪欲(abhijjhāto)。‘净化心’(cittaṃ parisodheti)的含义是，他彻底地解脱此心，就像放开某物后不再取回一样。‘嗔恚’(byāpāda)是说心因此而败坏，像腐烂的豆泥等一样舍弃其本性。‘恶意’(padoso)是说由于达到变异而败坏，或败坏、毁坏他人；这两者都是忿怒(kodha)的同义词。由于这是就一切业处的共通基础而说，因此不说‘对一切有情众生具足利益与怜悯’这样属于慈心的话，而只说到‘无嗔恚心’(abyāpannacitto)。"
+            },
+            {
+              "locator": "v4:s0201a_att:1686",
+              "work_id": "s0201a_att",
+              "row_id": 1686,
+              "paranum": "227",
+              "anchor": "227",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "227. 如此显示了不忍的过患后，现在为说明那些能容忍的人应当如何容忍，而以“比丘们”等语开示五种言语之道。其中“适时”指恰当的时候。“真实”指确实存在。“柔和”指恰当得体。“有益”指基于利益与原因。“非时”等词应当理解为与前述相反的含义。“慈心”指生起慈爱之心。“嗔恚”指心怀恶意，内心生起嗔恨。“于此”指在这五种言语之道中。“遍满”指胜解。“以彼为所缘”，如何能以一切世界为所缘？将那位带着这五种言语之道而来的个人作为慈心的所缘，再以此慈心将其余众生作为所缘，如此便名为以一切世界为所缘。此处文义是：“以彼为所缘”即将其作为该慈心的所缘。“一切”指一切众生。“世间”指众生世间。“广大”指以众多众生为所缘。“崇高”指属于崇高境地。“无量”指善加修习。“无怨”指无有嗔恚。“无害”指无有苦恼。“遍满而住”即以此类与慈心相应的心，将那个人与一切世间作为该心的所缘，胜解而住。"
+            },
+            {
+              "locator": "v4:s0515m_mul:2182",
+              "work_id": "s0515m_mul",
+              "row_id": 2182,
+              "paranum": "2182",
+              "anchor": "2182",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘应以慈心触及动摇者与不动摇者’是说：‘慈’，即是对众生的慈爱、行慈、慈爱之状态；同情、行同情、同情之状态；希求利益、怜悯、无害意、无恶意、无嗔，此善之根。‘动摇者’是说，那些未舍断能令其战栗之渴爱者，以及未舍断恐惧与怖畏者。为何称为‘动摇者’？因为他们颤抖、惊恐、焦虑、害怕、陷入恐怖；因此称为‘动摇者’。‘不动摇者’是说，那些已舍断能令其战栗之渴爱者，以及已舍断恐惧与怖畏者。为何称为‘不动摇者’？因为他们不颤抖、不惊恐、不焦虑、不害怕、不陷入恐怖；因此称为‘不动摇者’。‘应以慈心触及动摇者与不动摇者’是说，应对动摇者与不动摇者以慈心触及、遍满，以与慈俱行的、广大的、崇高的、无量的、无怨、无害意之心遍满而住——此为‘应以慈心触及动摇者与不动摇者’。"
+            },
+            {
+              "locator": "v4:vin02a3_att:593",
+              "work_id": "vin02a3_att",
+              "row_id": 593,
+              "paranum": "400",
+              "anchor": "400",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "400. 在“我将适时而说”等句中：一比丘为另一比丘创造机会而进行告诫，此称为“适时而言”。在僧团中、团体中、领筹处、领粥处、思惟台、行食道、坐堂等处，或在被侍者围绕时告诫，则称为“非时而言”。说真实语，称为“据实而言”。说：“喂，老家伙！混迹于众人中的！穿粪扫衣的！说法者！这适合你吗？”此称为“粗恶而言”。而基于理由说：“尊者，您是长老，是混迹于众人中的，是穿粪扫衣的，是说法者，这样做适合您吗？”此称为“柔和而言”。基于理由而说，称为“有益而言”。“我将以慈心而非嗔心而说”，即是确立慈心后才说，而非怀着恶意而说。"
+            },
+            {
+              "locator": "v4:s0402m2_mul:605",
+              "work_id": "s0402m2_mul",
+              "row_id": 605,
+              "paranum": "605",
+              "anchor": "605",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“贤友，以何因，以何缘，令未生之嗔不生，已生之嗔被舍断？”“应说：‘慈心解脱。’于如理作意慈心解脱者，未生之嗔不生，已生之嗔被舍断。贤友，此即是因，此即是缘，令未生之嗔不生，已生之嗔被舍断。”"
+            },
+            {
+              "locator": "v4:e0101n_mul:1547",
+              "work_id": "e0101n_mul",
+              "row_id": 1547,
+              "paranum": "257",
+              "anchor": "257",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "257. 于此，‘愿一切众生无怨’为一安止（appanā）；‘愿他们无瞋害’为一安止——‘无瞋害’（abyāpajjā）即远离恶意（byāpāda）；‘愿他们无恼害’为一安止——‘无恼害’（anīghā）即没有痛苦（niddukkhā）；‘愿他们快乐地维护自己’为一安止。是故，于此诸句中，应依其中任何显着之句而遍满慈心。如是，于五种行相中，依（每一行相的）四种安止，于无限定遍满时，则有二十种安止。"
+            },
+            {
+              "locator": "v4:e0104n_att:44",
+              "work_id": "e0104n_att",
+              "row_id": 44,
+              "paranum": "44",
+              "anchor": "44",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于不合意的事物，若其被认知为有情，则可修习慈心遍满，或以界省察而作界作意，或对粪便等作界作意，当如是连结。“安住于不厌恶想”：意谓以求利益之心与思惟法性，不成为有厌恶想者，并以四威仪安住。于合意的事物，如亲友等。“仅仅是发等不净部分”：意谓修习不净遍满，或作不净作意。在此，‘aniccanti’中的‘iti’字有‘等’的含义，因此应连结为：或作‘是无常、苦、无我、变易法’的作意。“于厌恶与不厌恶”：意谓将合意与不合意的事物合在一起说。此理亦通于他处。又或者，对有情而言，某事物最初显现为厌恶，之后则显现为不厌恶；又或者某事物最初显现为不厌恶，之后则显现为厌恶。对于此二者，漏尽者如果意欲，即可依照所说之理，或安住于不厌恶想，或安住于厌恶想。这即被称为圣成就。"
+            },
+            {
+              "locator": "v4:e0301n_nrf:830",
+              "work_id": "e0301n_nrf",
+              "row_id": 830,
+              "paranum": "830",
+              "anchor": "830",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "以离间他人为前导，由导致分裂的身语应用所生起的染污思，即是离间语。若实际造成他人分裂，则构成业道；若未分裂，则仅是业。由身语行为所生起的、意图伤害他人要害的恶意，即是粗恶语。在此（粗恶语）中，众生或因此丧命，或遭受死亡般的痛苦，当触及要害(mammaṃ)时。（此要害）如恶疮(duṭṭhavaṇo)。伤害、破坏或触及要害，故称要害伤害者(mammacchedako)。这是指触及恶疮的行为。此处，（辱骂之事）犹如要害，故称为‘要害’(mammaṃ)。在出身等十种辱骂事由中，任何一项（被触及）都可称为要害。要害伤害者是指在出身等方面，以触及的方式所表现出的粗暴身语行为。此义应依《戒蕴注疏》(Sīlakkhandha-ṭīkā)理解。或者说，执为‘我所’者，名为‘我所’(mamo)，或指朋友(mitto)；‘我所’的状态，名为‘要害’(mammaṃ)，或指慈心(mettācittaṃ)。伤害要害者，名为‘要害伤害者’。有些人认为，这（辱骂）只有当面辱骂才构成业道；另一些人则认为，背地辱骂也构成业道。正如辱骂他人后请求原谅时，即使对方远在他方或已去世，请求原谅的行为仍然成立；《长部》《中部》注疏的作者认为，辱骂的行为也是如此。那些怀着辱骂的意图，说“愿这凶恶的母牛追赶他”，或者“愿强盗将他碎尸万段”，或者“愿他的头颅裂成七块”等等，像这样诅咒他人，他们也说必定会构成业道。"
+            },
+            {
+              "locator": "v4:s0201a_att:523",
+              "work_id": "s0201a_att",
+              "row_id": 523,
+              "paranum": "38",
+              "anchor": "38",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "38. “心怀瞋恚者(byāpannacittā)”是说，因舍离本性而心已败坏。诚然，为烦恼所随逐之心，舍离其本性，犹如隔夜之饭菜，已然腐坏。“恶意思惟者(paduṭṭhamanasaṅkappā)”是说，怀有败坏之心念，亦即具足于他人不利、不善之心念。他们如何招来怖畏？关于招来怖畏，自此以下，当依“贪欲者品”中所说之理了知。若有不同之处，届时再述。“我实非心怀瞋恚者”，此处显示：“我具慈心，我具利心。”诚然，菩萨即是如此。如是，于一切处，皆当依所说过失的对立面，来称颂菩萨之功德。"
+            },
+            {
+              "locator": "v4:s0505a_att:652",
+              "work_id": "s0505a_att",
+              "row_id": 652,
+              "paranum": "652",
+              "anchor": "652",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "此处，‘他人’（paro）即是别的个人。‘对他人’（paraṃ）即是对别的个人。‘不应欺骗’（na nikubbetha）即是不应欺诈。‘不应轻慢’（nātimaññetha）即是不应超越而轻慢。‘在任何地方’（katthaci）即是在任何场合，如村庄、城镇、田野、亲属中或团体中等。‘他’（naṃ）即是此人。‘任何一个’（kañci）即是任何一个，无论是刹帝利、婆罗门、在家人或出家人，是顺遂者或困厄者等。‘因恶意与敌意想’（byārosanā paṭighasaññā）指的是因身语的错乱而有恶意，以及因心的错乱而有敌意想。此处本应作‘byārosanāya paṭighasaññāyā’（因恶意与因敌意想），却说成‘byārosanā paṭighasaññā’，犹如本应作‘sammad aññāya vimuttā’（因正智而解脱），却说成‘sammad aññā vimuttā’；又如本应作‘anupubbasikkhāya anupubbakiriyāya anupubbapaṭipadāyā’（依次第学、依次第行、依次第道），却说成‘anupubbasikkhā anupubbakiriyā anupubbapaṭipadā’。‘不应希望他人受苦’（nāññamaññassa dukkhamiccheyya）即是不应希望彼此受苦。此话何意？即是说，不应仅仅以‘愿他们快乐、安"
+            },
+            {
+              "locator": "v4:abh01a_att:1180",
+              "work_id": "abh01a_att",
+              "row_id": 1180,
+              "paranum": "1180",
+              "anchor": "1180",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "只是，在地遍中有二十五组九法聚，于此，在前三（梵住）中，依三禅法与四禅法有二十五组七法聚；于舍（梵住）中，依第四禅有二十五组一法聚。并且，在悲与喜中，与欲等四（不定法）一起，还有悲与喜，此等不定法亦可得。于此，难行道等的状态，当知于慈，是依镇伏瞋恚故；于悲，是依镇伏加害故；于喜，是依镇伏不乐故；于舍，是依镇伏贪与瞋故。又，有小所缘性，是因不以众多有情为所缘；有无量所缘性，是因以众多有情为所缘，此为差别。其余则与彼（地遍）相同。"
+            },
+            {
+              "locator": "v4:abh01a_att:1184",
+              "work_id": "abh01a_att",
+              "row_id": 1184,
+              "paranum": "1184",
+              "anchor": "1184",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于此，从相等说：‘慈’，以饶益行相为相，以运载饶益为味，以调伏瞋恚为现起，以见有情可爱为足处。瞋恚止息是其成就，爱染生起是其失败。‘悲’，以拔济痛苦行相为相，以不忍他苦为味，以不害为现起，以见苦难无助者为足处。恼害止息是其成就，忧愁生起是其失败。‘喜’，以喜悦有情为相，以不嫉为味，以断除不乐为现起，以见有情成就为足处。不乐止息是其成就，嬉笑生起是其失败。‘舍’，以中正行相于有情转为相，以平等看待有情为味，以止息逆顺为现起，以见‘有情为业所有者，彼等依谁之意愿而得乐、离苦、或不失既得之成就耶？’如是业所有性为足处。逆顺止息是其成就，生起基于在家的无知舍是其失败。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "byapada metta"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "mn21",
+              "url": "https://suttacentral.net/api/bilarasuttas/mn21/sujato",
+              "excerpt": "{\"comment_text\": {\"mn21:2.1\": \"This monk appears in three discourses, in none of which he distinguishes himself. At <a href='https://suttacentral.net/sn12.12/en/sujato'>SN 12.12</a> he persistently attempts to rephrase questions on dependent origination in terms of a self. And at <a href='https://suttacentral.net/sn12.32/en/sujato'>SN 12.32</a> Venerable Sāriputta gets word that Phagguna had disrobed. According to the commentary, he was called Phagguna “of the Top-Knot” because of the style he wore his hair as a layperson. The name stuck, presumably to distinguish him from the Phagguna of <a href='https://suttacentral.net/an6.56/en/sujato'>AN 6.56</a> (and probably <a href='https://suttacentral.net/sn35.83/en/sujato'>SN 35.83</a>) who died in robes as a non-returner after hearing a Dhamma talk. \", \"mn21:2.3\": \"A “disciplinary proceeding” (<i lang='pi' translate='no'>adhikaraṇa</i>) is a legal case in Vinaya. A standard set of four is listed at <a href='https://suttacentral.net/mn104/en/sujato#12.3'>MN 104:12.3</a>. The kind of case is not specified in the text, but the commentary says they accused other mendicants of various offenses and got Vinaya experts to litigate them, making "
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sn22.47.aggregates-conditions",
+      "layer": "canonical",
+      "uid": "sn22.47",
+      "statement": "五取蕴依条件集起并可依条件灭去。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:e0301n_nrf:996",
+              "work_id": "e0301n_nrf",
+              "row_id": 996,
+              "paranum": "996",
+              "anchor": "996",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于此，一切色法，因不与因相应，故唯是无因，无一是有因。其意是：没有‘某些是有因，某些是无因’这样的分别。有‘有缘、有漏、有为、世间’的读法，但‘有缘、有为、世间、有漏’的排列更为恰当。因为在圣典中亦见如此，且因同类成对之故。其余的（配对）虽然与圣典的顺序不符，但因属于同类成对，从分类上看也是恰当的。其中，与自身的生起之缘共同存在，是为‘有缘’。由诸缘聚合而造作，是为‘有为’。仅包含于名为五取蕴的世间中，是为‘世间’。与缘自身而生起的诸漏共同存在，是为‘有漏’。即使是色究竟天(Akaniṭṭha)梵众相续中的色，因以欲贪为所缘，亦仅包含于欲界中，故为‘欲行’。其自身无所执取的所缘，是为‘无所缘’。若有法，虽由其他努力而断，然其集因未断，则非已断，因其必将再生。即使（此法）未被（直接）断除，但当那（集因的断除）存在时，它也就被断除了，因为它不会再生起。如是之法，非为断除努力的对象，故名‘不可断’。色法亦复如是，故说‘唯不可断’。其义为：不值得为断除（色法本身）而努力。或义为：不舍断其集因，则不能断。若尔，‘诸比丘，色非汝等所有，当舍弃之。汝等舍此，将为长夜之义利、安乐。’此说何意？当知此说亦是针对舍断对色之贪而言。如说："
+            },
+            {
+              "locator": "v4:s0103t_tik:299",
+              "work_id": "s0103t_tik",
+              "row_id": 299,
+              "paranum": "299",
+              "anchor": "299",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘见至’(diṭṭhippatta)是指在称为‘见’的须陀洹道智之后立即证得之义。‘见已得’(diṭṭhattā patto)也是一种读法，它显示了通过称为‘见四圣谛’的见，证得了灭。因此说‘诸行是苦’等。从初果开始乃至上首道，都称为见至，所以说‘此人亦如身证者有六种’。对于‘这是苦’，他如实了知：‘这是苦，苦有这么多，没有比这更多的苦了’。因为他如其次第地了知，在知的时候，除了渴爱，了知五取蕴为‘苦谛’。而渴爱，这苦从它而集起，因此如实了知‘这是苦集’。因为这苦与集在证得涅槃时会息灭、寂止、不再生起，因此如实了知‘这是苦灭’。而圣八支道能通往那苦灭，因此他如实了知‘这是趣向苦灭之道’。至此，显示了在不同刹那对圣谛的确立。现在为了显示在同一刹那，而说‘如来所宣说’等。‘如来所宣说’是指如来在菩提座下所通达、了知、显明、造作的。‘法’是指四圣谛法。‘被善见’(vodiṭṭhā)即是善见。‘被善行’(vocaritā)即是善行，意即智慧于其中被善加运用。这样的人，被称为‘见至’。"
+            },
+            {
+              "locator": "v4:s0201t_tik:2099",
+              "work_id": "s0201t_tik",
+              "row_id": 2099,
+              "paranum": "2099",
+              "anchor": "2099",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "五蕴即是五取蕴。虽然对观(vipassanā)的专注有依蕴、依眼等、依受等等多种方式，但为了开示通过四界的方式是容易实行、容易了知的，他说了“依界业处而进入”。色是指具有变坏特性的色法，明确区分而不混淆。缘彼色是指以该色法为所缘而生起（的法）。名是指受等四法，因其具有倾向的特性而称为名。如同劈开成对的棕榈树干一样，分开名色这对法，（了知）“只有名与色这两种法，此处并无我或我所”，如此确定、辨别、把握名色。至此已说明见清净(diṭṭhivisuddhi)。但这名色并非无因。因为它并非在一切时、一切处都存在，所以它是有因的。以何为因？不是以自在天(issara)等不平等因为因。此处当说之事，应依《清净道论》大疏(Visuddhimagga-mahāṭīkā, II.447)所说之理来理解。正因为有因，所以有缘。无明等是指无明、爱、取、业、食等。如是，即按照“此等”等语所示方式，确定、辨别、把握无明等缘及色受等缘生法。经中说：“因无明集故色集，因爱集故色集。”(Paṭisambhidāmagga I.50)至此已说明度疑清净(kaṅkhāvitaraṇavisuddhi)。"
+            },
+            {
+              "locator": "v4:s0402t_tik:1276",
+              "work_id": "s0402t_tik",
+              "row_id": 1276,
+              "paranum": "1276",
+              "anchor": "1276",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "于“iti sakkāyo”(此为有身)中，“iti”(此)一词为指示之义。因此，为从自性、限量、范围上开示有身，而说“此为有身”等。以“此为有身”(ayaṃ sakkāyo)开示了五取蕴的自性。以“有身仅此”(ettako sakkāyo)开示了其限量。为表明此限量的确定性，而说“此外再无更多有身”(na ito bhiyyo sakkāyo atthī)。“由自性”(sabhāvato)即“由自相”(salakkhaṇato)。“由本质”(sarasato)即“由作用”(sakiccato)。“由边际”(pariyantato)即“由限量的边际”(parimāṇapariyantato)。“由范围”(paricchedato)即“由限定其发生之处”(yattake ṭhāne tassa pavattitassa paricchindanato)。“由周遍”(parivaṭumato)即“由最终的发生”(pariyosānappavattito)。通过如是分别，一切五取蕴皆被开示。“此为有身之集”，意为此为食等有身之集。因此说“仅此”(ettāvatā)等。“灭”(atthaṅgamo)即“止息”(nirodho)。而“由食集，由食灭”(Āhārasamudayā āhāranirodhā)，是仅取其不共者，其余则以“等”字含摄。"
+            },
+            {
+              "locator": "v4:s0403t_tik:792",
+              "work_id": "s0403t_tik",
+              "row_id": 792,
+              "paranum": "792",
+              "anchor": "792",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘见至’(Diṭṭhantaṃ patto)是指在见(dassana)所摄的预流道智(sotāpattimaggañāṇa)之后证得。也有经文作“已见而得”(Diṭṭhattā patto)。这显示了以见四圣谛(catusacca)之见证得灭尽(nirodha)。因此说“诸行是苦”等。这里的“智慧”指的是道之智慧(maggapaññā)。从初果住者(paṭhamaphalaṭṭha)开始，乃至最高道住者(aggamaggaṭṭha)，都名为见至者(diṭṭhippatto)。因此说“他也像身证者(kāyasakkhī)一样，有六种”。就像慧解脱者(paññāvimutto)一样，这个纯观行者(sukkhavipassaka)也是从四无色禅(arūpajjhāna)出定后，证得见至者之位，成为四种，加上他，共五种，应当了解。信解脱者(saddhāvimutto)也是如此。‘此是苦’指的是，只有这个程度的苦，此外无有苦。‘如实了知’(yathābhūtaṃ pajānāti)是指，除去爱(taṇhā)，如实了知五取蕴(upādānakkhandha)是苦圣谛(dukkhasacca)。因为爱能生起苦，令苦再生，由此苦集生起，因此他如实了知：‘此是苦集(dukkhasamudaya)。’因为这苦和集证得涅槃(nibbāna)时即灭尽，不再生起，因此他如实了知：‘此是苦灭(dukkhani"
+            },
+            {
+              "locator": "v4:s0104t_nrf:869",
+              "work_id": "s0104t_nrf",
+              "row_id": 869,
+              "paranum": "869",
+              "anchor": "869",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "答曰：与杀害思俱行的诸行之蕴集，被称为‘有情’者，能杀。被杀者，是色、无色法之蕴集，此蕴集若不行前述之杀生加行，则本应生起，然因彼所行之杀生加行，致使暖、识与命根离去，成为‘已死’此一言说之所依；或仅是心、心所的相续。纵然杀生加行并非以心、心所相续为对象，但在五蕴有中，其存续依于色相续，因他人于色相续上施加能断绝命根的加行，由能障碍其（命根）生起的不同类色法生起而遭破坏时，其（心、心所相续）便断绝。是故，杀生并非不可能，杀生亦非无因，加行亦非无用，因为通过对现在诸行所作的加行，其后本应生起的诸行蕴集便不再如是生起。于此，刹那诸行的刹那死，不被意许为此中所说的‘死’；而相续之死，依前述之理则为有因，故死非无因。杀生加行亦非无作者，因为纵使在无功用的诸行中，对于仅以存在便能助成、且决定能产生各自相应结果的诸因，作者之言说亦得以成立，犹如说：‘灯能照，月能明。’亦不意许杀生仅是与杀意俱生的心、心所蕴集，因为所承认者是依相续而安住者。且可见灯等依相续而转起者，能成办其作用，故确实有为杀生所系缚之业。此一思择，于不与取(adinnādāna)等（过患），亦当随其可能而阐明。"
+            },
+            {
+              "locator": "v4:e0104n_att:1504",
+              "work_id": "e0104n_att",
+              "row_id": 1504,
+              "paranum": "1504",
+              "anchor": "1504",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“Kvacī”（在某处）是指在某个地方、时间或法中。或者，“kvacī”是指内在或外在。“Attano attānaṃ”（自己的我）是指自身的我。为显示[圣者]不见外道所构想的“我”——如“尊者梵天，大梵天……最胜者、创造者、自在者、已生与当生者之父”（《长部》1.42）等——亦不见其为任何人的所有物（kiñcanabhūta），故说“kassacī”（任何人的）等。于此，“parassa”（他人的）是指所执取的“其他有情”或“他人”。而在“na ca mama kvacani”（我亦无有任何所属）中，“mama”（我所）一词使用不当，故说“暂且搁置‘mama’一词”。“Parassa ca”（以及他人的）是指自身之外的他者。为显示[圣者]不见依某些邪见者所构想的“他我”（paraṃ attānaṃ）——即认为“有‘他人’为我而住，依其力量，我的一切得以成就”——亦不见其为自己的所有物，故说“na ca kvacanī”（亦非在任何处）等。于此，“nāhaṃ kvacanī”（我非任何处有）是说见到自身我的不存在。“Na kassaci kiñcanatasmi”（我不为任何人所有）是说见到自身我非任何人的所有物（anattaniyata）。而“na ca mama”（亦非我所），此二者应依序关联，‘atthi’（有）一词应分别相连。由“na ca kvacani parassa "
+            },
+            {
+              "locator": "v4:abh02a_att:325",
+              "work_id": "abh02a_att",
+              "row_id": 325,
+              "paranum": "325",
+              "anchor": "325",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“‘四句法’：有是苦而非圣谛者，有是圣谛而非苦者，有既是苦亦是圣谛者，有非苦亦非圣谛者。此法亦适用于集谛等。其中，与道相应之法及沙门果，依‘凡无常者皆是苦’（《相应部》3.15）之说，因其为行苦，故是苦而非圣谛。灭是圣谛而非苦。其余二圣谛，因无常故，或可为苦，但非就‘为遍知此而于世尊座下修梵行’之义而言。然从各方面言，除渴爱外，五取蕴既是苦亦是圣谛。与道相应之法及沙门果，就‘为遍知此而于世尊座下修梵行’之义而言，则非苦亦非圣谛。如是，于集谛等亦应随宜配合，而知此‘四句法’之抉择。"
+            },
+            {
+              "locator": "v4:abh02t_tik:1158",
+              "work_id": "abh02t_tik",
+              "row_id": 1158,
+              "paranum": "1",
+              "anchor": "1",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "1. “那些法”即那些为善等三法与二法所摄之法。应如是结合：“在经中以蕴等的方式宣说，在此则以蕴等的方式分别。”难道在经中不是以无碍解(paṭisambhidā)的方式宣说它们吗？即使形式上未说，但通过“于老死有智，于老死集有智”等(《相应部》2.33)已宣说了于因、因之果等中的智的分别，故从义理上说，它们已被宣说。或因在《无碍解道》(Paṭisambhidāmagga, 2.30)中已出现无碍解，故在经中也已用无碍解的方式宣说了那些法。“于其中”(tattha)即于那经中。“以简略”(saṅkhepena)即以概括。因为在经中，蕴等仅以标示(uddesa)和解说(niddesa)的方式被开示，而非以详尽解说(paṭiniddesa)等方式，故说它们在那里被简略地宣说。或“于其中”(tattha)即于《法集论》(Dhammasaṅgaṇī)中。因为在那里，蕴等也通过“其时，有四蕴”等(《法集论》58)被简略地宣说。蕴等在此中被分别，或以此分别，故为“分别”(vibhaṅga)。它们在此中被散布、安立，或以此散布、安立，故为“论”(pakaraṇa)。既是“分别”又是“论”，故为《分别论》(Vibhaṅgappakaraṇa)。“以阐明‘等’字之义”(ādisaddatthajotakena)，如在“或如是，他远离观看此等舞蹈、歌唱、音乐、表演”(《长部》Dīgha Nikāya, "
+            },
+            {
+              "locator": "v4:abh02t_tik:1456",
+              "work_id": "abh02t_tik",
+              "row_id": 1456,
+              "paranum": "206-214",
+              "anchor": "206-214",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "206-214. 为什么说“于无遍知法，唯应断”呢？难道贪爱不像眼等那样，因其为贪爱之所依而被说为应遍知吗？如言：“世间之色爱，是可爱、可喜者，此贪生起时即于此生，安住时即于此住”等。遍知，实是通过断除与其相关的杂染而应超越的状态。而唯应断者，不仅是贪爱，也包括其余的杂染法。因为它们都需要通过见与修而完全、究竟地断除，不是吗？此言真实。然而，正如“苦圣谛应遍知”，遍知性是确立于除贪爱之外的五取蕴，而非贪爱。对于贪爱，则如“此爱能引后有”等，其作为集的状态，以及其尤应断除的状态已被确立，为显示此义，故说“于无遍知法，唯应断”。凡有未被摄入的部分，即为“有分”(sappadeso)，意为一部分。“于彼”(tatthāti)指于“圣谛”一词中。“集”(samudayoti)意为集之义。为显示此处取“集”的理由，而说“为无分地显示集”，又说“苦与灭……”等。其中，“苦灭”(dukkhanirodhāti)即苦与灭。“于圣谛教说中”(ariyasaccadesanāyanti)即在圣谛的教说中，也如在谛的教说中。从“法”(dhammato)而言，即从所应教之法而言，是无分的。“其余诸烦恼……”等，其差别仅在于教说之不同。因此说“实无异于彼……”等。“无新”(apubbo natthīti)意为从法而言无新。“彼”(tassāti)指集。“于所有三转中”(sabbattha tīsupi vā"
+            },
+            {
+              "locator": "v4:abh01t_tik:461",
+              "work_id": "abh01t_tik",
+              "row_id": 461,
+              "paranum": "461",
+              "anchor": "461",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在此处，即在宣说十六异熟之处。十二人所应牵引的甘蔗压榨机之喻，并非是说十二心于一门、一所缘中，以共同执行作用的方式而说，而是说十二心于一门中，仅以各自执行其作用的方式而说。为示于能生无因结生的（双因）速行之后，有无因彼所缘，（论师）说：“于四双因善心中的任一速行……安住。”然而，对无因结生者，当三因速行已速行时，由结生业所产生的无因彼所缘的生起，并未被否定。同样，对双因结生者，于三因（速行）之后，双因彼所缘亦应被视为未被否定。此异熟的阐明，是依具有圆满异熟的结生业而说，而这仅是其开端示例而已。至于行时异熟，一三因等业的十六异熟心等，亦应依已说之理连结。是故，由任何一个业，当众多彼所缘生起时，由于业无差别，彼所缘是依其所随逐的、名为“速行”的诸缘的差别而有差别。故说此彼所缘的规定是依速行而说，非依种种业所生起而说。如此，在《发趣论》(Paṭṭhāna)中说：“于有因诸蕴，观为无常、苦、无我。善与不善灭时，无因异熟以彼所缘的方式生起。”这是指智之后生起无因彼所缘；又说：“善与不善灭时，有因异熟以彼所缘的方式生起。”这是指不善之后亦说有因彼所缘。不应因为“此未被此长老所示”，就认为其已被否定。"
+            },
+            {
+              "locator": "v4:abh02a_att:104",
+              "work_id": "abh02a_att",
+              "row_id": 104,
+              "paranum": "104",
+              "anchor": "104",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘过去等’，以远近二法为终，已见于圣典。‘缘所生’亦已如前以‘业生、业为缘、业缘时节所生’等（《法集论注》975）方式宣说。五蕴皆是已究竟成就，非未究竟成就；是有为，非无为；且亦是已成就。于诸自性法中，唯涅槃是未究竟成就且非成就。灭尽定与名言概念又如何？灭尽定不可说为世间或出世间，有为或无为，已究竟成就或未究竟成就。然其为入定者所入，故是已成就。名言概念亦然，其亦不得世间等分别，然是已成就，非未成就，因名之执取，实为执取者所取。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "upadanakkhandha samudaya"
+        },
+        "suttacentral": {
+          "status": "confirmed",
+          "result_count": 1,
+          "records": [
+            {
+              "uid": "sn22.47",
+              "url": "https://suttacentral.net/api/bilarasuttas/sn22.47/sujato",
+              "excerpt": "{\"comment_text\": {\"sn22.47:2.1\": \"Read <i lang='pi' translate='no'>avigataṁ</i> (“not rid”) here and <a href='https://suttacentral.net/sn22.89/en/sujato#5.9'>SN 22.89:5.9</a>; cf. <a href='https://suttacentral.net/an6.13/en/sujato#6.2'>AN 6.13:6.2</a>, <a href='https://suttacentral.net/dn33/en/sujato#2.2.106'>DN 33:2.2.106</a>, <a href='https://suttacentral.net/dn34/en/sujato#1.7.63'>DN 34:1.7.63</a>. \", \"sn22.47:2.2\": \"From here the discourse alludes to dependent origination. The sense faculties are “conceived”, i.e. “take rebirth”, like name and form (<a href='https://suttacentral.net/sn12.39/en/sujato#1.4'>SN 12.39:1.4</a>) or consciousness (<a href='https://suttacentral.net/sn12.59/en/sujato#1.2'>SN 12.59:1.2</a>) or an embryo (<a href='https://suttacentral.net/mn93/en/sujato#18.61'>MN 93:18.61</a>). \", \"sn22.47:2.4\": \"The “mind” (<i lang='pi' translate='no'>mano</i>) in the presence of “ignorance” makes choices that drive the cycle (<a href='https://suttacentral.net/sn12.25/en/sujato#10.3'>SN 12.25:10.3</a>). Here <i lang='pi' translate='no'>mano</i>, as usual, signifies the active volitional dimension of mind, while ignorance is shown to be not self-existent, but part of the "
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "abhidhamma.citta-vithi",
+      "layer": "abhidhamma",
+      "uid": null,
+      "statement": "阿毗达磨心路与随眠视图作为后期上座部系统化解释单独显示。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh07t_nrf:1131",
+              "work_id": "abh07t_nrf",
+              "row_id": 1131,
+              "paranum": "1131",
+              "anchor": "1131",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "领受心，即是对那色法如领取般接纳。推度心，即是对那色法如考察般思惟。确定心，即是对那色法如善巧般明了。以如理作意(yonisomanasikāra)等方式获得缘，故称“已得缘”。“任何速行”是关联语。在昏迷或临死之时，亦有五六个速行生起，故说“多数”(yebhuyyena)。速行随转，犹如河水之流随行逆流之舟，暂时随顺速行而转起。彼速行之所缘，以此为所缘，故称“彼所缘”(tadārammaṇa)，如“梵音”(brahmassaro)等词那样省略了中间词；彼所缘亦是果报，故称“彼所缘果报”。“随其应得”(yathārahaṃ)，即随所缘、速行、有情之相应。其转起将自明了。“有分落”(bhavaṅgapāta)，是指心不以心路心的方式转起，如同心落入有分般，即是说以有分的方式生起。此处为令易解心路心生起，引芒果譬喻说明（见《法集论注》498 业果抉择论）：昔有一人于结果芒果树下，蒙头而眠。附近一芒果坠落之声，其人闻声惊醒，从头上揭开衣服，睁开眼睛，看见它，取之，揉搓，嗅闻，知其已熟而食，连同口中唾液吞下，复于原处入睡。此中：人睡眠之时，犹如处于有分位；果坠落之时，犹如所缘撞击净色之时；闻其声而觉醒之时，犹如转向心位；睁眼观视之时，犹如眼识转起位；执取之时，犹如领受心位；揉搓之时，犹如推度心位；嗅闻之时，犹如确定心位；食用之时，犹如速行心位；连同口中唾液吞下之时，犹如彼所缘心位；再入睡之"
+            },
+            {
+              "locator": "v4:e0401n_nrf:202",
+              "work_id": "e0401n_nrf",
+              "row_id": 202,
+              "paranum": "132",
+              "anchor": "132",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "132. 在《作用摄要》中。“彼已灭尽”是其关联。“业”指另一业。死去的有情之再投生是其关联。“从他有起始以结生为缘”，是说以另一有之最初端结生为缘。有之相续流转是其关联。如何流转？他说：“直至彼业”等语。“无间断流转以支分性”，是说以作为无间断流转之主要因缘所称的支分性。由此说明有分(bhavaṅga)一词中“支”(aṅga)字的含义。因此他说：“彼有分”等语。“彼”指有分。“转向”(āvajjana)即是“转动”(āvaṭṭana)，此为一义。或“彼使之转向”，此为一义。“彼”指心相续。或“彼于此处转动”，此为一义。或“彼由此转动”，此为一义。“彼”指心相续。或“使之转向”，此为一义。“确定”(voṭṭhabbanaṃ)是“vi-ava-ṭhapanaṃ”的词语分解。在《阐明》的审察中。“从一转向预作心”，其分析是：以道或神通，有一相同的转向。在那心路(vīthi)中，“转向、预作、近行、随顺、种姓”，此处预作速行心(parikamma javanacitta)被称为预作心(parikamma citta)。“彼等”指道速行(magga javana)与神通速行(abhiññā javana)。“其中”指在那《阐明》的文句中。“长时间”指整夜或整日，因不入眠而长时间。其余此处容易理解。“结生之位”是结生作用之位。时间，名为心所缘的个别概念法(paññatti dhamma)，由"
+            },
+            {
+              "locator": "v4:e0301n_nrf:878",
+              "work_id": "e0301n_nrf",
+              "row_id": 878,
+              "paranum": "878",
+              "anchor": "878",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "正如圣道心(ariyamaggacetanā)即便没有得到与自己同一层次的速行(javana)的滋养，也不会没有果报，这种说法是不存在的。同样地，在初业者(ādikammika)的心路中，仅发生一次的、以及在所有等至(samāpatti)心路中首次发生的广大心(mahaggatacetanā)，也因未得到与自己同一层次的法的滋养而力量薄弱，所以不得果报，这种说法是不存在的，也是可以理解的。此处可能会有人说：色界善业因经过造作和积集而能得到果报。经中说‘证得初禅而住’，但那个心确实没有被积集，因为它没有得到与自己同一层次的法的滋养。（答曰：）不然。圣道心也不会没有果报。它也因经过造作和修习，所以能得到果报。经中说‘证得初禅而住’，但它也没有得到与自己同一层次的法的滋养。然而，在这两种情况中，从最初的作意开始，因积集和修习而生起，并且即使不是同一层次的速行，也能得到滋养，所以说积集和修习的说法是成立的。因此，即使是初业者的广大心，在临死时若新近获得力量，成为临死业(āsannakamma)，也不应说它不会带来果报。再说，神通心(abhiññācetanā)比同一层次的各种转向心路速行更容易得到滋养，更加敏锐，怎么能说是薄弱的呢？因此，这种说法已在《随注》(Anuṭīkā)中被驳斥了。那里有这样说：‘有些人认为，禅那因为得到同一层次的滋养而变得强大，所以能够产生果报。然而，神通(abhi"
+            },
+            {
+              "locator": "v4:e0301n_nrf:734",
+              "work_id": "e0301n_nrf",
+              "row_id": 734,
+              "paranum": "141",
+              "anchor": "141",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "141. 如是依前后次第显示心路(vīthicitta)之运行后，今依个人(puggala)之差别及地(bhūmi)之差别，为显示彼等之运行，而说‘二因者’(duhetuka)等。与结生识(paṭisandhiviññāṇa)俱行之二因，彼等为二因者。由四智不相应大异熟心(ñāṇavippayuttamahāvipāka)而执取结生(gahitapaṭisandhika)。复次，由二无因异熟心(ahetukavipāka)而执取结生者为无因者(ahetuka)，以彼等无结生之因故。因彼二者皆有异熟障(vipākāvaraṇa)，故广大禅那(mahaggatajhāna)尚不能生，何况出世间心？复次，唯作速行心(kriyajavana)乃漏尽者(khīṇāsava)所独有，故说彼等不得唯作速行心与安止速行心(appanājavana)。此处，异熟障者，谓无因结生与二因结生。如是，于善趣(sugati)中，智相应异熟心亦然，其义为：于善趣有(sugatibhava)中，彼二者亦不得智相应大异熟心。于此，‘于善趣中’一语，排除了堕于恶趣(duggati)之无因个人。于此句中，为他者所许之智不相应异熟心，彼等亦实不得。是故说‘于恶趣中’等。此处，应见圆满之释义为：于堕恶趣之无因者，智相应异熟心与智不相应大异熟心皆不得。此处或有疑：何故说于善趣之无因者不得四智相应异熟心，于恶趣者不得八有因大"
+            },
+            {
+              "locator": "v4:e0401n_nrf:269",
+              "work_id": "e0401n_nrf",
+              "row_id": 269,
+              "paranum": "269",
+              "anchor": "269",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“‘那’(taṃ)”是指正在成熟的业。“‘作为引导者、协作者的缘’(niyāmaka sahakāri paccayabhūtā)”：于此，犹如船上的引导者(niyāmako)将船引导、驶向所欲的方向。同样，此贪爱(taṇhā)作为对存在的喜乐(bhavanikanti)，将心相续(cittasantāna)引导、朝向当往之有。应知，它以对业极度依附而辅助的方式，成为协作之缘(sahakārī paccayo)。“‘或善、不善的业相’(kusalākusala kammanimittāni vā)”是指其他善、不善的业相。“‘支持它的’(tadupatthambhikā)”是指支持该业的。“‘于相味上贪著’(nimittassādagadhitaṃ)”是指于面相(mukhanimitta)等中品味、贪求。“‘住立而住’(tiṭṭhamānaṃ tiṭṭhati)”是说作为住立者而住，即不舍弃而住。“随相(anubyañjanaṃ)”是指可爱可喜的言谈等行为差别。“‘此人之’(assa puggalassā)”是指临死之人的。在义注(aṭṭhakathā)文中：“‘被烦恼力所屈’(kilesa balavināmitaṃ)”是指被无明(avijjā)、贪爱(taṇhā)等烦恼之力所屈。其语法分析为：“遮蔽等为其所有”。“‘它’(taṃ)”是指心相续。“‘于彼’(tasmiṃ)”是指于"
+            },
+            {
+              "locator": "v4:abh08t_nrf:1182",
+              "work_id": "abh08t_nrf",
+              "row_id": 1182,
+              "paranum": "1182",
+              "anchor": "1182",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“作为(kiriyā)”，是说“作”(kāra)一词是动作名词(bhāvasādhana)。由此阐明了“作”不是别的，正是“作为”。“于意中作”，即是在意中对所缘造作。因为通过它，意被置于所缘中，与所缘结合，所以通过它，所缘也被置于意中。此处的“作意”(manasikāra)应被视为非省略复合词(aluttasamāsa)。“从前意”即是从有分(bhavaṅga)意。“不同的意”即是心路速行(vīthijavana)意，使其产生者即是“作意”。通过“作意”的一般性，显示了心路速行的促成者。此处应视为表示“运用”之义的处格复合词。作意犹如驱使、运用相应法朝向所缘，故说作意以“驱使”为相。其作用是“结合”，即“运用”。寻(vitakka)，因其有将相应法投入所缘的自性，故犹如将心投向所缘。思(cetanā)，在执取自身所缘的同时，也使相应法各尽其职，故犹如以自身行动来部署力量的将领。作意将相应法运用于所缘，犹如驱使良马的御者。此即是它们之间的差别。"
+            },
+            {
+              "locator": "v4:s0202t_tik:683",
+              "work_id": "s0202t_tik",
+              "row_id": 683,
+              "paranum": "378",
+              "anchor": "378",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "378. 所谓“以一作意”(ekāvajjanena)，即以一心路速行(ekavīthijavanena)。此为显示：莫说以一心，即以一心路过程，亦不能了知一切。不限定“我将了知此过去事”而作意者，能了知任何过去事；若加以限定，则只能了知所限定之事。故说：“以一……乃至……只能了知一部分。”所谓“以彼心”，即“我将了知一切过去”如是生起之心。所谓“其余”，即未来与现在。所谓“因性”(kāraṇajātikaṃ)，即理则之自性，义为“与理相应”。所谓“来世之德”(samparāyaguṇaṃ)，即于来世所作业之殊胜。"
+            },
+            {
+              "locator": "v4:abh07t_nrf:1150",
+              "work_id": "abh07t_nrf",
+              "row_id": 1150,
+              "paranum": "21",
+              "anchor": "21",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "21. 其中，二十六种广大心及出世间速行中，任何速行若能进入安止心路，即有此关联。预备、近行、随顺、种姓四心依次生起后即灭，当如是理解。第一心因作为安止的预备，具有准备作用，故称预备。第二心因接近安止而称为近行。虽非极近亦非甚远的生起，都可称为近行，或说趋近安止而行故称近行。第三心因在前面阶段辅助预备心，又顺应上面的安止，故称随顺。第四心因克服欲界种姓与凡夫种姓，增长广大种姓与出世间种姓，故称种姓。此四名称于四次生起时可全部得到，若三次生起则仅得近行、随顺、种姓三名称。在义注（《清净道论》(Visuddhimagga) 2.804）中说前面三个心或两个心，没有差别地通称预备等名称，其意趣是：在（预备心）四次或三次生起后，第五或第四心应当生起与安止相应的。为了显示预备等名称可以全部得到的次第，所以先说“四次”等语；依照计数的顺序则在后面说“或第五”等语。"
+            },
+            {
+              "locator": "v4:abh07t_nrf:307",
+              "work_id": "abh07t_nrf",
+              "row_id": 307,
+              "paranum": "21",
+              "anchor": "21",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "21. 在此，八种智相应欲界速行心之一，以遍作(parikamma)、近行(upacāra)、随顺(anuloma)、种姓(gotrabhū)之名，次第生起四次或仅三次，在其灭去之后，紧接着，作为第四或第五速行，二十六种广大(mahaggata)与出世间(lokuttara)速行心之一，依其决意，适当地进入安止心路。此后，安止结束后，即落入有分。"
+            },
+            {
+              "locator": "v4:abh08t_nrf:1964",
+              "work_id": "abh08t_nrf",
+              "row_id": 1964,
+              "paranum": "894-9",
+              "anchor": "894-9",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘如是’(Evaṃ)是说，对于彼瑜伽行者，他如前述，通过调整精进平衡，并将已入修行之心安住于似相(paṭibhāganimitta)，从而令心朝向于相。‘将会成就’(Samijjhissati)意即将会生起。‘地遍’(Pathavīkasiṇa)是说，由修行而现起的地，彼即是似相。‘速行’(Javanāni)是指欲界与色界速行。故说：‘然有一是属于色界的。’‘与其他’是指与通常的欲界心。‘更强力’(Balavatara)是说，因修行之力达到更敏锐的状态，故极为强力。‘由遍作与近行’(Parikammopacārato)是说，因为是遍作(parikamma)，以及因为是近行(upacāra)。其中，‘因为是遍作’是指因为是准备。‘因为是近行’是说，犹如村庄等之邻近处被称为‘村近行’、‘城近行’，如是，因邻近安止、行于安止之近旁，故称近行；或因近行诸心趋近安止而行。‘因为随顺安止’(Appanāyānulomattā)是说，在种种转向心路中，（随顺心）比遍作心更轻快，作为安止的生成者，或因其功德而随顺于安止。于此等被称为遍作、近行、随顺(anuloma)者中，最后的第三或第四心被称为种姓心(gotrabhū)，因其超越凡夫种姓、修习圣者种姓故。"
+            },
+            {
+              "locator": "v4:e0401n_nrf:269",
+              "work_id": "e0401n_nrf",
+              "row_id": 269,
+              "paranum": "269",
+              "anchor": "269",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“‘那’(taṃ)”是指正在成熟的业。“‘作为引导者、协作者的缘’(niyāmaka sahakāri paccayabhūtā)”：于此，犹如船上的引导者(niyāmako)将船引导、驶向所欲的方向。同样，此贪爱(taṇhā)作为对存在的喜乐(bhavanikanti)，将心相续(cittasantāna)引导、朝向当往之有。应知，它以对业极度依附而辅助的方式，成为协作之缘(sahakārī paccayo)。“‘或善、不善的业相’(kusalākusala kammanimittāni vā)”是指其他善、不善的业相。“‘支持它的’(tadupatthambhikā)”是指支持该业的。“‘于相味上贪著’(nimittassādagadhitaṃ)”是指于面相(mukhanimitta)等中品味、贪求。“‘住立而住’(tiṭṭhamānaṃ tiṭṭhati)”是说作为住立者而住，即不舍弃而住。“随相(anubyañjanaṃ)”是指可爱可喜的言谈等行为差别。“‘此人之’(assa puggalassā)”是指临死之人的。在义注(aṭṭhakathā)文中：“‘被烦恼力所屈’(kilesa balavināmitaṃ)”是指被无明(avijjā)、贪爱(taṇhā)等烦恼之力所屈。其语法分析为：“遮蔽等为其所有”。“‘它’(taṃ)”是指心相续。“‘于彼’(tasmiṃ)”是指于"
+            },
+            {
+              "locator": "v4:abh01a_att:616",
+              "work_id": "abh01a_att",
+              "row_id": 616,
+              "paranum": "616",
+              "anchor": "616",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "心者，因其认知所缘，故名为心；此中认知，即是了知之义。或又，因‘心’此词为一切心所共称，是故，于此，凡世间之善、不善、唯作心，其依速行过程积集自身之相续，故名为心。又，异熟由业与烦恼所积集，故名为心。再者，一切心亦因其相应之多样性而名为心，因其造作多样而名为心，于此亦应如是了知其义。此中，有贪心为一类，有瞋心为另一类，有痴心又为一类；欲界心为一类，色界等不同之心为另一类；缘色所缘之心为一类，缘声等所缘之心为另一类；于缘色所缘之心中，缘青色所缘之心为一类，缘黄色等所缘之心为另一类；于缘声等所缘之心中，亦复如是；于所有此等心中，下等心为一类，中等心为另一类，上等心又为一类；于下等等心中，欲增上心为一类，精进增上心为另一类，心增上心为另一类，审察增上心又为一类。是故，当知此心，乃依此等相应法、界、所缘、下中上、以及增上等力而有多样性。诚然，于此，无有任何一心能如是（具足一切）多样，然因其含摄于多样之心（的范畴）中，故于此等心中，任何一者，皆可因其多样性而名为心。如是，首先是依多样性而名为心。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "citta vithi javana"
+        },
+        "suttacentral": {
+          "status": "not_applicable",
+          "result_count": 0,
+          "records": []
+        }
+      }
+    },
+    {
+      "id": "commentary.visuddhimagga-habits",
+      "layer": "commentary",
+      "uid": null,
+      "statement": "注释传统的习性分类作为解释层，不回写为经藏固定人格。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 30,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:abh07t_nrf:1596",
+              "work_id": "abh07t_nrf",
+              "row_id": 1596,
+              "paranum": "28",
+              "anchor": "28",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "28. 于地轮(pathavīmaṇḍala)等中取相者：首先，应清净四遍清净戒(catupārisuddhisīla)，断除十种障碍(palibodha)，亲近具足可爱、可敬、可修习等功德的善知识(kalyāṇamitta)，选取适合自己性行(cariyā)的业处(kammaṭṭhāna)，舍弃十八种不适宜的住处(vihāra)，安住于具足五支的适宜住处。去除剪发等微小障碍后，将遍轮(kasiṇamaṇḍala)等置于面前，将心专注于入出息分(ānāpānakoṭṭhāsa)等而坐，以‘地、地’等相应的修习次第，于地遍(pathavīkasiṇa)等各个所缘中取相。此处为简说。详细的修法应从《清净道论》(Visuddhimagga, I, 54ff.)中学习。在此，阿阇梨(ācariya)只是非常简要地说明了两种修习方法，如果为了阐明其意义而详细说明，恐怕会过于繁琐，因此我们也不详细展开。‘当那个相被心善取时’是指：如此通过次第修习，当那个遍作相(parikammanimitta)被心正确地善取时。‘来到意门之所缘时’是指：即使闭上眼睛，或去往别处而作意时，它也会变得与遍轮一样，来到意门速行的范围。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:100",
+              "work_id": "s0104t_nrf",
+              "row_id": 100,
+              "paranum": "100",
+              "anchor": "100",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "如是开示其作用后，为免于此将说的释义因内容庞大而致篇幅沉重，故说‘戒论’等。诚如所言：‘我将不详察它。’另一理路则为：欲造义注者，当取《清净道论》(Visuddhimagga)为其一部分。此乃为教导说法者，为以纲要方式开示其中已思察之法，而说‘戒论’等。其中，‘戒论’是依作持与止持等方面对戒的详论。‘头陀法’是指托钵乞食等十三种抖落烦恼之法。‘业处’乃因其为名为‘修习’(bhāvanā)之瑜伽业(yogakamma)的生起处，故名为业处的法类。此中不应只取巴利圣典中所传的三十八种，为明示亦包含义注中所传的两种，故说‘一切’。‘与性行规定相应’，意指与贪行(rāgacarita)等之自性等规定一同发生，此为‘禅与等至详论’(jhānasamāpattivitthāro)的修饰词。于此，色界禅为‘禅’，无色界禅为‘等至’。或，仅证得者为‘禅’，已达入定自在者为‘等至’。再者，彼二者亦皆仅为‘禅’，而果等至(phalasamāpatti)与灭尽等至(nirodhasamāpatti)方为‘等至’。此即‘详论彼等’之义。"
+            },
+            {
+              "locator": "v4:s0105t_nrf:376",
+              "work_id": "s0105t_nrf",
+              "row_id": 376,
+              "paranum": "376",
+              "anchor": "376",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“到此为止”(Ettāvatā)是指从阐明初禅的证得开始，直到阐明第四禅的证得为止，以此言语次第。“获得”(labhanaṃ)即是“得”(lābho)，有此者为“得者”(lābhī)；色禅的得者为“色禅得者”(rūpajjhānalābhī)，如“得衣、食、卧具、病缘医药资具者”。或有获得之习性者为“得者”。有何获得之习性？有获得色禅之习性，此义亦可通。其他情况亦然。不应理解为“非无色禅得者”。为何？因为文曰“实非……”(na hi)等，意谓对于以八等至为基础的神通证得，（此八等至是）不可或缺的。“以十四行相”(Cuddasahākārehi)是指《清净道论》(Visuddhimagga)中所说的此十四行相：“顺遍处、逆遍处、顺逆遍处、顺禅、逆禅、顺逆禅、越禅、越遍处、越禅与遍处、移支、移所缘、移支与所缘、确定支、确定所缘”。为表明即使在诸禅中有转向等五自在，但要生起神通，此十四种自在是绝对必要的，故说“以十四行相熟练自在”。应知，此亦显示：若无在无色等至中熟练自在，仅凭在色等至中熟练自在，其等至便无法圆满，从而表明了它们（无色等至）在证得神通方面是不可或缺的。"
+            },
+            {
+              "locator": "v4:s0203a_att:369",
+              "work_id": "s0203a_att",
+              "row_id": 369,
+              "paranum": "140",
+              "anchor": "140",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "140. 于‘欺瞒’（kuhanā）等词，[释义如下]：以三种欺瞒事（kuhanavatthu），以此欺瞒、惊吓世人，故称‘欺瞒’。为求利养恭敬而以此言说，故称‘谄媚’（lapanā）。示相（nimitta）是其习性（sīla），故为‘示相者’（nemittikā）；其状态，则为‘示相性’（nemittikatā）。逼求（nippesa）是其习性，故为‘逼求者’（nippesikā）；其状态，则为‘逼求性’（nippesikatā）。以利寻求（magganti pariyesanti）另一利，故为‘以利求利’（lābhena lābhaṃ nijigīsanā）；其状态，则为‘以利求利性’（lābhena lābhaṃ nijigīsanatā）。此为此处之简略[义]，其详细[义]，此‘欺瞒’等已在《清净道论》（Visuddhimagga）的‘戒之解释’（sīlaniddesa）中，引用巴利及其义注（aṭṭhakathā）而予以阐明。于‘为断除邪命’（micchāājīvassa pahānāya）一句中，不仅是巴利中所说的邪命，凡因谋生而行的杀生（pāṇātipāta）等七种业道思（kammapathacetanā）亦是邪命。于彼七种思，行断绝、根除，并圆满道支而生起的离（virati），名为正命（sammāājīva）。"
+            },
+            {
+              "locator": "v4:vin02a1_att:210",
+              "work_id": "vin02a1_att",
+              "row_id": 210,
+              "paranum": "210",
+              "anchor": "210",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“具足行与行处”：是指具足遮止邪命之行，而非施予竹子等之行，并舍弃妓女等非行处，而以具信家族等为行处。“于微小罪中见怖畏”：是指于微小之过失中见怖畏，即有视彼等过失为怖畏之习性。“受持学习诸学处”：是指于以增上戒学等而分为三类的诸学处中，受持每一学处，善受持，善把握，不舍弃而学习。此为简述，欲求广说者，当从《清净道论》(Visuddhimagga)中求取。"
+            },
+            {
+              "locator": "v4:s0517a_att:453",
+              "work_id": "s0517a_att",
+              "row_id": 453,
+              "paranum": "453",
+              "anchor": "453",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "在‘苦谛’(dukkhasacca)等(经文)中，‘遍知现观’(pariññāpaṭivedha)等词是表行为义的中性词。由遍知而现观，即是遍知现观。此即遍知现观。此理亦通于其余诸项。所谓‘断除’(pajahāti)，应取此义：如是如是现观者，断除应断的诸烦恼。或义为：在世间与出世间中，通过断除欲贪而断除彼等(诸谛)。亦有作‘pajahati’的读法。譬如船只，非前非后，于一刹那完成四事：舍此岸，断水流，运货物，抵彼岸。同样，道智(maggañāṇa)亦非前非后，于一刹那现观四谛：以遍知现观而现观苦，以断除现观而现观集，以修习现观而现观道，以作证现观而现观灭。此是何义？如(《清净道论》Vism. XXII, 93)所说：‘以灭为所缘，而到达、见到、现观四谛’，故应知，即使于一刹那，诸断等亦如各别(发生)而被宣说。"
+            },
+            {
+              "locator": "v4:e0103n_att:83",
+              "work_id": "e0103n_att",
+              "row_id": 83,
+              "paranum": "11",
+              "anchor": "11",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "11. “如前所说之理”是指如前文（《清净道论》1.7）所说“以戒行义为戒”等理。“此应作”即圆满所制定的学处，亦即圆满如此制定的学处戒：“此威仪法应作、应行”。因为圆满学处戒者，即是圆满、守护学处。或“学”本身因当学、当行，故为“学处”。圆满此学处，亦应如是连结。“此不应作”即不做被禁止之事，即不做、远离世尊所禁止的此恶行。“他们于其中行”：具足者于彼戒中行，以此阐明戒的处所格，显示戒是他们行为生起之处。因此说：“于诸戒中行于圆满”。“所遮止”即“此不应作”所禁止的不适宜之事。“守护”即仅以不作来守护。“由此”是指遮止戒。或导师于此遮止，或以此遮止，故为“所遮止”，即学处。不违犯它而由此得到守护，故为“遮止”。“以信与精进成就”是指应以信和奋发之精进成就。无信、懈怠者不能圆满本分行持，唯有信者，对导师所禁止的微小过失亦见其怖，而受持、学习诸学处，故说“遮止由信成就”。"
+            },
+            {
+              "locator": "v4:s0102a_att:894",
+              "work_id": "s0102a_att",
+              "row_id": 894,
+              "paranum": "287",
+              "anchor": "287",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "287. “彼世尊善巧宣说”，谓我师世尊已善巧宣说、善巧讲说。于神足（Iddhipāda）中，应知神（iddhi）是成就之义，足（pāda）是所依处之义。为神变具足故者，谓能生起神变故。为神变自在故者，谓为生起种种神变，由数数修习而得熟练自在故。为神变示现故者，谓为示现种种变化而作神变故。于“欲定（chandasamādhi）精进行（padhānasaṅkhāra）具足”等句中，以欲为因或以欲为首之定为欲定，此乃以作事欲为主而得之定的异名。主要之行为精进行，此乃能成办四事之正勤精进的异名。具足者，谓与欲定及精进行相应。神足者，或由成就之同义词——成功之义，故为神；或由“有情依此而成功、昌盛、增长、达于卓越”此一同义词，故名为神。对于已得此名、与神通心相应之欲定及精进行，其余心与心所聚，以所依处之义而为足，此为其义。经中亦如是说：“神足者，即如是之受蕴、想蕴、行蕴、识蕴。”（《分别论》434）。依此理趣，其余亦应了知。诚然，正如以欲为主而得之定被称为欲定，同样，以精进、心、观为主而得之定，亦分别被称为精进定、心定、观定。再者，近行定为足，初禅为神；有近行之初禅为足，第二禅为神。如是，前分是足，后分是神，于此应如是了知其义。关于神足的广说，已于《清净道论》及《分别论义注》中宣说。"
+            },
+            {
+              "locator": "v4:s0104t_nrf:743",
+              "work_id": "s0104t_nrf",
+              "row_id": 743,
+              "paranum": "743",
+              "anchor": "743",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "又，因出离以出家为根本，故应先出家。大士实行出家，于无佛出世时，应依业论者、作论者、苦行者、遍行者之方式出家。于有正等觉者出世时，则应于其教法中出家。出家后，安住于如前所述之戒，为清净此戒波罗蜜，应受持头陀支。已受持头陀法的大士，如理行持，以少欲、知足、损减、远离、不杂、精进、易养等功德之水，洗涤烦恼垢染，具足无过之戒、行、德，行为清净，安住于古昔三圣种，为趣入名为“乐于修行”的第四圣种，于四十业处中，随其所宜，证得近行与安止之禅那而住。如是，其出离波罗蜜方得如理圆满。于此，当详述十三头陀法，以及十遍、十不净、十随念、四梵住、四无色、一想（食厌想）、一差别（四界差别）此四十种修习定之业处，以及修行之法。然此事已于《清净道论》(Visuddhimagga 1.22, 47)中以各种方式详尽阐述，故应依彼处所述之理趣而知。唯一差别者，彼处是依声闻菩萨而说，此处则是以大菩萨之身份，以悲心与方便善巧为先导而说。应如是了知出离波罗蜜的修行次第。"
+            },
+            {
+              "locator": "v4:vin02t_tik:878",
+              "work_id": "vin02t_tik",
+              "row_id": 878,
+              "paranum": "878",
+              "anchor": "878",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“愿我得”意思是“愿我能获得”，这是祈求的话。“来”是对被请求出家受具足戒的人表示允许，意思是“来吧，接受你所请求的出家和具足戒”。Iti (此)字表明了标志着他获得‘来比丘’具足戒之语的终结，至此他便成为比丘。因此说：“由于世尊说‘来，比丘’这句话，这位具寿就获得了‘来比丘’具足戒”。“修习梵行”是指要证得上三道的梵行。为了什么目的？为了完全灭尽苦。这里也要和（世尊）“说”联系起来理解。（见《清净道论》1.20；《无碍解道释》1.1.37）所说的无数种律仪和调伏，通过受持和实践，超越上位，是最殊胜的成就，故称具足戒。"
+            },
+            {
+              "locator": "v4:abh01a_att:1070",
+              "work_id": "abh01a_att",
+              "row_id": 1070,
+              "paranum": "1070",
+              "anchor": "1070",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "“地遍”，于此，就其整体义而言，整个地轮亦被称为“地遍”；依之而获得的相亦是“地遍”；于地遍相中证得的禅亦是“地遍”。于此，在此义中，当知禅即是地遍。“具足名为地遍的禅而住”，此为此处之简义。然而，有良家子(kulaputta)欲于此地遍作预备行，生起四禅与五禅，以禅为立足处增长观(vipassanā)，以证得阿罗汉果，应如何行？首先，当清净四种戒：波罗提木叉(pātimokkha)律仪、根律仪、活命遍净与资具依止戒。于极清净戒安住后，若于住处等十种障碍中存有任何障碍，当断除之。然后亲近授予业处(kammaṭṭhāna)的善知识(kalyāṇamitta)，于巴利圣典所传的三十八种业处中，审察适合自己行相的业处。若此地遍适合他，则当受持此业处，舍弃不适于修习禅那的住处，而于适宜的住处安住。断除微小的障碍后，为证得禅那，他应当修习而不舍弃一切修习方法，即：遍的预备行、护相、舍离七种不适宜之事、奉行七种适宜之事，以及十种安止善巧的差别。此为纲要。详尽义则当依《清净道论》(Visuddhimagga)所说之法了知。此处如此，于此之后的其他业处亦然。因为一切业处的修习方法，都已依循诸义注(aṭṭhakathā)之法，在《清净道论》中详尽阐述。于彼处处复述，有何益哉？故我们不再详述。然而，我们将不省略巴利经文之下未曾提及之义，而持续作逐文释义(anupadavaṇṇanā)。"
+            },
+            {
+              "locator": "v4:abh01a_att:1167",
+              "work_id": "abh01a_att",
+              "row_id": 1167,
+              "paranum": "1167",
+              "anchor": "1167",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "‘美色与恶色’是指清净色与不清净色。于此，意指青色等清净色为美色，不清净色为恶色。但在经的义注中则说：‘无论是美色或恶色，此等胜处皆依有限与无量而说。’于此四种中，有限是依寻行者而说，无量依痴行者，美色依瞋行者，恶色依贪行者。这些（所缘）确实适合他们。而其适合性，已在《清净道论》(Visuddhimagga 1.43)的〈行的解释〉中广说。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "carita"
+        },
+        "suttacentral": {
+          "status": "not_applicable",
+          "result_count": 0,
+          "records": []
+        }
+      }
+    },
+    {
+      "id": "scholarship.aggregates-personhood",
+      "layer": "scholarship",
+      "uid": null,
+      "statement": "现代研究用于比较与争议标注，不替代巴利原典。",
+      "status": "review_required",
+      "sources": {
+        "v4": {
+          "status": "candidate",
+          "result_count": 20,
+          "exact_uid_count": 0,
+          "records": [
+            {
+              "locator": "v4:e1002n_nrf:0",
+              "work_id": "e1002n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《Nītimañjarī》—— 行为准则之花束\n\n《Nītimañjarī》（नीतिमञ्जरी）是一个巴利语词汇，可以分解为：\n\n    Nīti (नीति): 指的是 行为准则，原则，引导，智慧，处世之道，策略 等。\n    Mañjarī (मञ्जरी): 指的是 花束，一簇花，花穗。\n\n因此，《Nītimañjarī》的字面意思可以理解为 “行为准则之花束” 或 “智慧之花束”，暗示这是一部收集了各种行为准则、格言或智慧之语的汇编，如同精心挑选的花朵组成的美丽花束。\n\n关于《Nītimañjarī》：\n\n《Nītimañjarī》是乌帕萨伽（Upasāka）所著的一部著名的巴利语格言集。乌帕萨伽是一位生活在缅甸（Burma）的佛教在家学者。这部文献在缅甸的佛教文化中具有重要的地位，被广泛阅读和学习。\n\n文献特点与内容：\n\n    格言形式: 《Nītimañjarī》主要以简短而富有哲理的巴利语诗偈（gāthā）形式呈现，每一偈都蕴含着深刻的道德、伦理、社会和个人行为的教诲。\n    主题多样: 其内容涵盖了广泛的主题，包括：\n        个人品德修养: 如诚实、勤奋、耐心、节制、谦虚等。\n        人际关系: 如何对待父母、师长、朋友、下属，以及如何处理冲突。\n        社会责任: 在社会中应扮演的角色，以及应尽的义务。\n        智慧与愚昧:"
+            },
+            {
+              "locator": "v4:e1004n_nrf:0",
+              "work_id": "e1004n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《Mahārahanīti》—— 巴利语格言集\n\n《Mahārahanīti》（摩诃罗诃尼提）是一部著名的巴利语文献，属于格言集或箴言集的范畴。它的名字本身就暗示了其内容和性质：\n\n    Mahā (摩诃): 伟大的，大的。\n    Araha (罗诃): 值得尊敬的，有价值的。\n    Nīti (尼提): 行为准则，处世之道，智慧，策略，政治。\n\n因此，《Mahārahanīti》可以被理解为“伟大的行为准则”、“崇高的处世之道”或“重要的智慧之语”。\n\n文献特点与内容：\n\n    格言形式: 《Mahārahanīti》以简短、精炼的诗偈（gāthā）形式呈现，每一偈都蕴含着深刻的道理或实用的建议。\n    主题广泛: 这些格言涵盖了生活的各个方面，包括：\n        个人修养: 如何培养品德、控制情绪、追求智慧。\n        人际关系: 如何与家人、朋友、同事相处，如何辨别善恶之人。\n        社会生活: 如何在社会中立身处世，如何对待权力、财富和地位。\n        政治治理: 虽然名为“尼提”，但其中也包含了一些关于君主统治、大臣职责、国家安定的智慧。\n        道德伦理: 强调诚实、勤奋、慈悲等基本道德价值观。\n    实用性强: 这些格言并非纯粹的理论探讨，而是具有很强的实践指导意义，旨在帮助人们在日常生活中做出明智的决策，过上幸福成功的生活"
+            },
+            {
+              "locator": "v4:e1001n_nrf:0",
+              "work_id": "e1001n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《诗法庄严论》\n（或《诗律正法》）\n词义分解：\n\n    Kavida（诗人/智者）\n\n        源自吠陀传统\"kavi\"（见真者）\n\n        佛教语境指\"妙说者\"（Subhāsita）\n\n    Paṇanīti（庄严法则）\n\n        \"Paṇa\"（赌注/较量）+ \"Nīti\"（正道）\n\n        喻指诗歌竞赛的审美准则\n\n文献性质：\n\n    内容架构：\n    章节\t核心规范\t佛教应用\n    音律章\t二十二种诗格\t偈颂创作\n    喻法章\t佛法八喻体系\t说法艺术\n    辩才章\t四无碍解运用\t法义论争\n\n    独特法则：\n\n        \"三昧诗律\"（禅定境界的文学表达）\n\n        \"法句三验\"（文/义/密意三重审校）\n\n历史渊源：\n\n    承传脉络：\n    mermaid\n    复制\n\n    graph LR\n    印度《诗庄严论》-->锡兰《妙音论》-->本论-->缅甸《韵光疏》\n\n    实践案例：\n\n        15世纪锡兰佛牙寺颂诗大赛评判标准\n\n        缅甸贡榜王朝宫廷诗赛\"五法印\"检验\n\n诗学体系：\n\n    佛教修辞学：\n    python\n    复制\n\n    # 佛法隐喻等级算法示例\n    def metaphor_level(text):\n        if '涅槃' in text"
+            },
+            {
+              "locator": "v4:e1201n_nrf:0",
+              "work_id": "e1201n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《目犍连语法详解五章》\n（或《弥伽罗那语法明疏》）\n词义分解：\n\n    Moggallāna（目犍连）\n\n        指12世纪锡兰语法学家弥伽罗那（Moggallāna Thera）\n\n        佛教巴利语法体系开创者\n\n    Vutti-vivaraṇa-pañcikā（释文详解五章）\n\n        \"Vutti\"（语法规则）\n\n        \"Vivaraṇa\"（详细解释）\n\n        \"Pañcikā\"（五分结构）\n\n文献结构：\n章节\t内容\t语言学价值\n音韵篇\t字母发音规则\t保存古僧伽罗语音\n词法篇\t名词变格系统\t比较梵语语法\n句法篇\t复合词分析\t影响现代巴利解析\n语法体系：\n\n    创新理论：\n    mermaid\n    复制\n\n    graph LR\n    词根-->词干-->变格-->句子\n\n    佛教特色：\n\n        专章解析佛经特殊表达\n\n        含《本生》语言案例\n\n历史影响：\n\n    传承脉络：\n    mermaid\n    复制\n\n    timeline\n        1150年 : 锡兰完成初版\n        14世纪 : 缅甸蒲甘王朝引入\n        1886年 : 欧洲东方学界译介\n\n    版本演变：\n    版本\t特征\t馆藏\n    康提金写本\t含国王敕令\t斯里兰卡\n    曼德勒"
+            },
+            {
+              "locator": "v4:e1215n_nrf:0",
+              "work_id": "e1215n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《Samantakūṭavaṇṇanā》—— 沙曼陀山礼赞\n\n《Samantakūṭavaṇṇanā》（समन्तकूटवण्णना）是一个巴利语词汇，可以分解为：\n\n    Samantakūṭa (समन्तकूट): 指的是斯里兰卡一座著名的山峰，通常被称为 沙曼陀山 或 圣足山 (Adam's Peak)。这座山顶上有一块巨大的岩石凹陷，被佛教徒认为是佛陀的足迹，印度教徒认为是湿婆神的足迹，穆斯林和基督徒也有各自的传说。因此，它是一个重要的朝圣地。\n    Vaṇṇanā (वण्णना): 意为 描述，赞颂，叙述，解释。\n\n因此，《Samantakūṭavaṇṇanā》的字面意思可以理解为 “沙曼陀山之描述” 或 “对沙曼陀山的赞颂”。\n\n关于《Samantakūṭavaṇṇanā》：\n\n《Samantakūṭavaṇṇanā》是一部以巴利语诗歌形式写成的文献，专门赞颂和描述斯里兰卡的圣足山（沙曼陀山）。它的作者是伐蹉婆罗长老（Vācissara Thera），也就是著名的巴利语故事集《Rasavāhinī》的作者。这部文献的创作时间与《Rasavāhinī》相近，大约在公元5世纪至6世纪。\n\n文献特点与内容：\n\n    赞颂诗歌: 《Samantakūṭavaṇṇanā》的主要目的是赞美沙曼陀山的圣性、美丽和作为佛教朝圣地的重要性。\n    描述山峰的特征: 文献中会详"
+            },
+            {
+              "locator": "v4:e1101n_nrf:0",
+              "work_id": "e1101n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《Rasavāhinī》—— 故事之流\n\n《Rasavāhinī》（रसवाहिनी）是一个巴利语词汇，可以分解为：\n\n    Rasa (रस): 意为 味道，滋味，情感，情趣，文学的韵味。在这里，更倾向于指故事的趣味性，吸引力，或情感色彩。\n\n    Vāhinī (वाहिनी): 意为 流动者，携带者，河流，水流。在这里，引申为 “流”，表示故事的连贯性和传承。\n\n因此，《Rasavāhinī》的字面意思可以理解为 “故事之流”，暗示这是一部充满趣味和情感的故事汇编，如同河流般连绵不断地流淌。\n\n关于《Rasavāhinī》：\n\n《Rasavāhinī》是一部著名的巴利语故事集，由伐蹉婆罗（Vācissara）长老在斯里兰卡（Ceylon）所著。其创作时间大约在公元5世纪至6世纪。这部文献在南传佛教文学中占有重要的地位，深受人们喜爱。\n\n文献特点与内容：\n\n    故事汇编： 《Rasavāhinī》收集了大量引人入胜的故事，这些故事的来源广泛，包括：\n        佛教传说和寓言： 许多故事取材于佛陀和其弟子的生平事迹，以及佛教的寓言故事（如本生故事的节选或改编）。\n        民间传说和历史事件： 其中也包含了一些斯里兰卡的民间传说、历史事件和人物故事，反映了当时社会的生活风貌和信仰习俗。\n        道德教诲： 许多故事都蕴含着深刻的道德和伦理教训，通过生动"
+            },
+            {
+              "locator": "v4:e1006n_nrf:0",
+              "work_id": "e1006n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《经藏正道论》\n（或《圣典治国方略》）\n词义分解：\n\n    Suttanta（经藏/圣典）\n\n        特指巴利五部尼柯耶（Nikāya）\n\n        区别于论藏（Abhidhamma）与律藏（Vinaya）\n\n    Nīti（正道/治国术）\n\n        包含双重维度：\n        ✓ 个人道德准则（Sīla-nīti）\n        ✓ 国家治理智慧（Rāja-nīti）\n\n文献性质：\n\n    编纂特色：\n\n        按《长部》\"十王法\"（Dasa-rāja-dhamma）框架组织经文\n\n        每章含：\n        ✓ 原始经文\n        ✓ 注疏解释\n        ✓ 历史案例（如阿育王治世）\n\n    内容架构：\n    mermaid\n    复制\n\n    graph TB\n    仁政篇-->智臣篇-->民生篇-->兵戈篇\n\n核心教义：\n经藏依据\t治国原则\t现代对应\n《转轮王师子吼经》\t财税公平\t累进税制\n《究罗檀头经》\t司法独立\t三权分立\n《大般涅槃经》\t危机管理\t应急预案\n历史影响：\n\n    东南亚王权实践：\n\n        泰国素可泰王朝《石柱铭文》直接引用\n\n        缅甸蒲甘王朝\"判事三法\"渊源\n\n    版本传承：\n    版本\t特征\t现存地\n    15世纪锡兰贝叶本\t含僧伽罗语密注\t大英"
+            },
+            {
+              "locator": "v4:e0701n_nrf:0",
+              "work_id": "e0701n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《小史籍志》\n（或《简明佛教文献编年史》）\n词义分解：\n\n    Cūḷa（小/简本）\n\n        区别于《大史》（Mahāvaṃsa）的简编性质\n\n        可能指内容篇幅或收录范围\n\n    Gantha-vaṃsa（文献传承史）\n\n        特指记录佛教经典编纂/传播历史的专类史籍\n\n        包含经论著录、结集过程等文献学内容\n\n文献性质：\n\n    内容特征：\n\n        聚焦佛教三藏的形成与传播脉络\n\n        记载重要写本（如贝叶经）的流传情况\n\n        可能包含不同版本系统的比对\n\n    结构特点：\n\n        按时间轴记录从第一次结集至编者时代的文献史\n\n        常见附注各时期著名注释家生平\n\n历史定位：\n\n    与五大史籍的关系：\n    mermaid\n    复制\n\n    graph LR\n    A[Mahāvaṃsa]-->B[Dīpavaṃsa]\n    B-->C[Cūḷavaṃsa]\n    C-->D[Ganthavaṃsa]\n    D-->E[Cūḷaganthavaṃsa]\n\n    特殊价值：\n\n        保存了11世纪锡兰大寺派（Mahāvihāra）的文献目录\n\n        记载南传注疏从口传到书面化的关键转折\n\n现代研究：\n\n    核心争议：\n\n      "
+            },
+            {
+              "locator": "v4:e1206n_nrf:0",
+              "work_id": "e1206n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《象林精舍寺志》\n（或《哈他瓦那伽拉寺院史》）\n词义分解：\n\n    Hatthavanagalla（象林/哈他瓦那伽拉）\n\n        斯里兰卡古都波隆纳鲁瓦的著名佛教遗址\n\n        字面意为\"象群栖息的石林\"\n\n    Vihāravaṃsa（寺院史）\n\n        记录特定佛寺的兴建、沿革与传承\n\n        南传佛教特有的地方性史籍类型\n\n历史脉络：\n时期\t重大事件\t考古证据\n12世纪\t波罗迦罗摩巴忽一世敕建\t寺碑铭文现存\n14世纪\t朱罗王朝入侵毁损\t战火痕迹残留\n18世纪\t康提王朝修复\t镀金铜瓦出土\n建筑特色：\n\n    三殿布局：\n    mermaid\n    复制\n\n    graph LR\n    佛牙殿-->法堂-->僧寮\n\n    艺术成就：\n\n        保存最完整的\"波隆纳鲁瓦时期\"壁画\n\n        独创\"狮吼式\"柱廊建筑\n\n文献价值：\n章节\t独特记载\t现代研究\n建寺缘起\t王室与龙族盟约\t佛教本土化案例\n僧团谱系\t连续28代住持名录\t社会组织研究\n佛宝清单\t失传的\"玉佛\"记载\t艺术史重构\n版本传承：\n\n    原始写本：\n\n        15世纪僧伽罗语贝叶经（藏康提佛牙寺）\n\n        含寺院平面图与供养人画像\n\n    现代研究：\n\n        2015年三维扫描重建数字模型\n\n        入选UNESCO"
+            },
+            {
+              "locator": "v4:e1208n_nrf:0",
+              "work_id": "e1208n_nrf",
+              "row_id": 0,
+              "paranum": "0",
+              "anchor": "0",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "《Jinavaṃsadīpaṃ》—— 胜者（佛陀）族谱之岛\n\n《Jinavaṃsadīpaṃ》（जिनवंसदीपं）是一个巴利语词汇，可以分解为：\n\n    Jina (जिन): 意为 胜者，在佛教语境中特指 佛陀。这个词强调佛陀克服了烦恼，证得了涅槃。\n    Vaṃsa (वंस): 意为 血统，家族，世系，传承，历史。\n    Dīpaṃ (दीपं): 意为 岛屿，光明，灯火。在这里，更倾向于引申为 “光辉之地” 或 “照亮者”。\n\n因此，《Jinavaṃsadīpaṃ》的字面意思可以理解为 “胜者族谱之岛” 或 “照亮佛陀传承的光辉之地”。\n\n关于《Jinavaṃsadīpaṃ》：\n\n《Jinavaṃsadīpaṃ》是一部重要的巴利语佛教史诗或编年史，由摩诃提婆长老（Mahādeva Thera）于斯里兰卡（Ceylon）的13世纪创作完成。它以优美的巴利语诗歌形式，系统地叙述了从过去诸佛到释迦牟尼佛的传承历史，以及佛教在斯里兰卡的传播和发展。\n\n文献特点与内容：\n\n    佛教史诗/编年史: 《Jinavaṃsadīpaṃ》以其宏大的叙事结构和诗歌形式，类似于一部佛教历史的史诗。它试图将过去、现在和未来的佛陀联系起来，展现佛教传承的悠久和庄严。\n    追溯佛陀世系: 文献详细记载了过去诸佛的名号、事迹和他们所教导的佛法，最终聚焦于释迦牟尼佛的生平和教导。\n    "
+            },
+            {
+              "locator": "v4:abh05t_nrf:318",
+              "work_id": "abh05t_nrf",
+              "row_id": 318,
+              "paranum": "193",
+              "anchor": "193",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "193. 于“Vikubbatīti”(他示现神通)中，“iti”一词是起始义，或是种类义。因此，它涵盖了“以天耳界听闻声音”等。应连结为“当知神通审察”。“具彼神通者”即是具漏尽通者。“阿罗汉的成就”是指，在真实究竟义上，证明阿罗汉没有补特伽罗性。“彼之存在”是指阿罗汉果。因为对于持有阿罗汉果者，诸蕴确实名为补特伽罗，他亦有此(名)。"
+            },
+            {
+              "locator": "v4:s0201a_att:202",
+              "work_id": "s0201a_att",
+              "row_id": 202,
+              "paranum": "7",
+              "anchor": "7",
+              "source": "azure:tipitaka/v1",
+              "version": "tipitaka/v1",
+              "source_url": null,
+              "uid": null,
+              "segment_id": null,
+              "snippet": "7. 世尊如此于地等事物中，显示了作为一切有身法之根本的凡夫之转起后，如今即于彼等事物中，为显示有学之转起，而说：‘诸比丘，凡彼有学比丘’等。于此，‘yo’是标举词，‘so’是解释词。‘pi’字有总括义，如在‘此法亦不定’等句中。以此，通过所缘的同分来总括个人，而非通过个人的同分。因为，前者是见败坏者，此者是见具足者，他们没有同分性。然而所缘，对前者与此者皆是同一。故说：‘通过所缘的同分来总括个人，而非通过个人的同分。’当知，通过‘凡彼’此一全句，显示了现在所要说的有学。‘诸比丘，比丘’，此如已说之理。"
+            }
+          ]
+        },
+        "early_buddhist": {
+          "status": "unavailable",
+          "reason": "TimeoutError",
+          "result_count": 0,
+          "records": [],
+          "query": "Buddhist aggregates personhood scholarship"
+        },
+        "suttacentral": {
+          "status": "not_applicable",
+          "result_count": 0,
+          "records": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total": 16,
+    "confirmed": 0,
+    "candidate": 0,
+    "review_required": 16
+  },
+  "release_rule": "Only confirmed canonical claims may be shown as confirmed; candidate and review_required remain visibly provisional."
 }

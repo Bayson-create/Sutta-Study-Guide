@@ -1,6 +1,6 @@
 {
   "source_of_truth": "https://github.com/Bayson-create/pali-personhood-lab",
-  "release": "0.1.0",
+  "release": "0.2.0-dev",
   "integration_manifest": "https://raw.githubusercontent.com/Bayson-create/pali-personhood-lab/main/integration-manifest.json",
   "policy": "edit the standalone repository; regenerate these files for downstream repos"
 }

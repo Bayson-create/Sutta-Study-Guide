@@ -2,17 +2,17 @@
   'use strict';
   var P = global.PaliPersonhood = global.PaliPersonhood || {};
   var doors = [
-    ['eye', 'visual form', 'seeing a changing gesture'],
-    ['ear', 'speech', 'hearing a sentence'],
-    ['nose', 'odor', 'smelling smoke'],
-    ['tongue', 'taste', 'tasting a bitter drink'],
-    ['body', 'touch', 'feeling unexpected pressure'],
-    ['mind', 'thought', 'remembering a criticism']
+    ['eye', 'visual form', '景象', '看见一个正在变化的姿态'],
+    ['ear', 'speech', '说话或声音', '听见一句话'],
+    ['nose', 'odor', '气味', '闻到烟味'],
+    ['tongue', 'taste', '味道', '尝到苦味饮品'],
+    ['body', 'touch', '触碰', '感到突然的压力'],
+    ['mind', 'thought', '记忆或想法', '想起一段批评']
   ];
   var valences = [
-    ['pleasant', 'pleasant contact'],
-    ['painful', 'painful contact'],
-    ['neutral', 'neutral contact']
+    ['pleasant', '乐受'],
+    ['painful', '苦受'],
+    ['neutral', '不苦不乐受']
   ];
   function agent(branch) {
     return {
@@ -28,11 +28,11 @@
       ['untrained', 'trained'].forEach(function (branch) {
         P.FIXTURES.push({
           id: 'fixture-' + door[0] + '-' + valence[0] + '-' + branch,
-          title: door[1] + ' / ' + valence[1] + ' / ' + branch,
+          title: door[2] + '／' + valence[1] + '／' + (branch === 'trained' ? '训练条件可用' : '反应链延续'),
           description: '六门 × 三受 × ' + branch + ' 分岔的最小确定性情境。',
-          primary_object: { id: 'object-' + door[0] + '-' + valence[0], kind: door[1], door: door[0], value: door[2], valence: valence[0], observable: true, source_agent_id: 'agent-b' },
+          primary_object: { id: 'object-' + door[0] + '-' + valence[0], kind: door[1], door: door[0], value: door[3], valence: valence[0], observable: true, source_agent_id: 'agent-b' },
           context: { fixture_family: 'six-doors-three-feelings', expected_branch: branch },
-          observable_events: [{ id: 'fixture-observation', actor_id: 'agent-b', type: 'stimulus', value: door[2] }],
+          observable_events: [{ id: 'fixture-observation', actor_id: 'agent-b', type: 'stimulus', value: door[3] }],
           agents: [agent(branch)],
           interventions: branch === 'trained' ? { 'agent-a': { mindfulness: true, restraint: true, metta: true, pause: true } } : {},
           seed: 'fixture-' + door[0] + '-' + valence[0] + '-' + branch
