@@ -1,0 +1,1856 @@
+[
+  {
+    "id": "fixture-eye-pleasant-untrained",
+    "title": "visual form / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-pleasant",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-eye-pleasant-untrained"
+  },
+  {
+    "id": "fixture-eye-pleasant-trained",
+    "title": "visual form / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-pleasant",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-eye-pleasant-trained"
+  },
+  {
+    "id": "fixture-eye-painful-untrained",
+    "title": "visual form / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-painful",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-eye-painful-untrained"
+  },
+  {
+    "id": "fixture-eye-painful-trained",
+    "title": "visual form / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-painful",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-eye-painful-trained"
+  },
+  {
+    "id": "fixture-eye-neutral-untrained",
+    "title": "visual form / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-neutral",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-eye-neutral-untrained"
+  },
+  {
+    "id": "fixture-eye-neutral-trained",
+    "title": "visual form / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-eye-neutral",
+      "kind": "visual form",
+      "door": "eye",
+      "value": "seeing a changing gesture",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "seeing a changing gesture"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-eye-neutral-trained"
+  },
+  {
+    "id": "fixture-ear-pleasant-untrained",
+    "title": "speech / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-pleasant",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-ear-pleasant-untrained"
+  },
+  {
+    "id": "fixture-ear-pleasant-trained",
+    "title": "speech / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-pleasant",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-ear-pleasant-trained"
+  },
+  {
+    "id": "fixture-ear-painful-untrained",
+    "title": "speech / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-painful",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-ear-painful-untrained"
+  },
+  {
+    "id": "fixture-ear-painful-trained",
+    "title": "speech / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-painful",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-ear-painful-trained"
+  },
+  {
+    "id": "fixture-ear-neutral-untrained",
+    "title": "speech / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-neutral",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-ear-neutral-untrained"
+  },
+  {
+    "id": "fixture-ear-neutral-trained",
+    "title": "speech / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-ear-neutral",
+      "kind": "speech",
+      "door": "ear",
+      "value": "hearing a sentence",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "hearing a sentence"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-ear-neutral-trained"
+  },
+  {
+    "id": "fixture-nose-pleasant-untrained",
+    "title": "odor / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-pleasant",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-nose-pleasant-untrained"
+  },
+  {
+    "id": "fixture-nose-pleasant-trained",
+    "title": "odor / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-pleasant",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-nose-pleasant-trained"
+  },
+  {
+    "id": "fixture-nose-painful-untrained",
+    "title": "odor / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-painful",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-nose-painful-untrained"
+  },
+  {
+    "id": "fixture-nose-painful-trained",
+    "title": "odor / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-painful",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-nose-painful-trained"
+  },
+  {
+    "id": "fixture-nose-neutral-untrained",
+    "title": "odor / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-neutral",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-nose-neutral-untrained"
+  },
+  {
+    "id": "fixture-nose-neutral-trained",
+    "title": "odor / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-nose-neutral",
+      "kind": "odor",
+      "door": "nose",
+      "value": "smelling smoke",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "smelling smoke"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-nose-neutral-trained"
+  },
+  {
+    "id": "fixture-tongue-pleasant-untrained",
+    "title": "taste / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-pleasant",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-tongue-pleasant-untrained"
+  },
+  {
+    "id": "fixture-tongue-pleasant-trained",
+    "title": "taste / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-pleasant",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-tongue-pleasant-trained"
+  },
+  {
+    "id": "fixture-tongue-painful-untrained",
+    "title": "taste / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-painful",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-tongue-painful-untrained"
+  },
+  {
+    "id": "fixture-tongue-painful-trained",
+    "title": "taste / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-painful",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-tongue-painful-trained"
+  },
+  {
+    "id": "fixture-tongue-neutral-untrained",
+    "title": "taste / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-neutral",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-tongue-neutral-untrained"
+  },
+  {
+    "id": "fixture-tongue-neutral-trained",
+    "title": "taste / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-tongue-neutral",
+      "kind": "taste",
+      "door": "tongue",
+      "value": "tasting a bitter drink",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "tasting a bitter drink"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-tongue-neutral-trained"
+  },
+  {
+    "id": "fixture-body-pleasant-untrained",
+    "title": "touch / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-pleasant",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-body-pleasant-untrained"
+  },
+  {
+    "id": "fixture-body-pleasant-trained",
+    "title": "touch / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-pleasant",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-body-pleasant-trained"
+  },
+  {
+    "id": "fixture-body-painful-untrained",
+    "title": "touch / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-painful",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-body-painful-untrained"
+  },
+  {
+    "id": "fixture-body-painful-trained",
+    "title": "touch / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-painful",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-body-painful-trained"
+  },
+  {
+    "id": "fixture-body-neutral-untrained",
+    "title": "touch / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-neutral",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-body-neutral-untrained"
+  },
+  {
+    "id": "fixture-body-neutral-trained",
+    "title": "touch / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-body-neutral",
+      "kind": "touch",
+      "door": "body",
+      "value": "feeling unexpected pressure",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "feeling unexpected pressure"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-body-neutral-trained"
+  },
+  {
+    "id": "fixture-mind-pleasant-untrained",
+    "title": "thought / pleasant contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-pleasant",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-mind-pleasant-untrained"
+  },
+  {
+    "id": "fixture-mind-pleasant-trained",
+    "title": "thought / pleasant contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-pleasant",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "pleasant",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-mind-pleasant-trained"
+  },
+  {
+    "id": "fixture-mind-painful-untrained",
+    "title": "thought / painful contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-painful",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-mind-painful-untrained"
+  },
+  {
+    "id": "fixture-mind-painful-trained",
+    "title": "thought / painful contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-painful",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "painful",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-mind-painful-trained"
+  },
+  {
+    "id": "fixture-mind-neutral-untrained",
+    "title": "thought / neutral contact / untrained",
+    "description": "六门 × 三受 × untrained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-neutral",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "untrained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "未训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.85,
+          "dosa": 0.85,
+          "moha": 0.85
+        },
+        "training": {
+          "sati": 0.05,
+          "sampajanna": 0.05,
+          "sila": 0.2,
+          "metta": 0.2,
+          "panna": 0.05
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {},
+    "seed": "fixture-mind-neutral-untrained"
+  },
+  {
+    "id": "fixture-mind-neutral-trained",
+    "title": "thought / neutral contact / trained",
+    "description": "六门 × 三受 × trained 分岔的最小确定性情境。",
+    "primary_object": {
+      "id": "object-mind-neutral",
+      "kind": "thought",
+      "door": "mind",
+      "value": "remembering a criticism",
+      "valence": "neutral",
+      "observable": true,
+      "source_agent_id": "agent-b"
+    },
+    "context": {
+      "fixture_family": "six-doors-three-feelings",
+      "expected_branch": "trained"
+    },
+    "observable_events": [
+      {
+        "id": "fixture-observation",
+        "actor_id": "agent-b",
+        "type": "stimulus",
+        "value": "remembering a criticism"
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-a",
+        "label": "训练路径",
+        "species": "human",
+        "tendencies": {
+          "lobha": 0.2,
+          "dosa": 0.2,
+          "moha": 0.2
+        },
+        "training": {
+          "sati": 0.95,
+          "sampajanna": 0.9,
+          "sila": 0.9,
+          "metta": 0.85,
+          "panna": 0.85
+        },
+        "notes": "fixture preset; not a personality score"
+      }
+    ],
+    "interventions": {
+      "agent-a": {
+        "mindfulness": true,
+        "restraint": true,
+        "metta": true,
+        "pause": true
+      }
+    },
+    "seed": "fixture-mind-neutral-trained"
+  }
+]

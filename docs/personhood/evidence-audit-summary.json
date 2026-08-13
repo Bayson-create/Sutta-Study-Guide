@@ -1,0 +1,24 @@
+{
+  "registry_version": "personhood-claims/1.0.0",
+  "coverage_scope": "全 V4 可检索覆盖；经律论原典主张与后期系统化解释分层",
+  "generated_at": "2026-08-12T10:14:16.328530+00:00",
+  "summary": {"total": 16, "confirmed": 0, "candidate": 0, "review_required": 16},
+  "claims": [
+    {"id":"sn35.23.six-sense-bases","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"missing","suttacentral":"confirmed"},
+    {"id":"sn12.23.contact-feeling-craving","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"mn18.contact-proliferation","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"sn22.59.not-self","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"mn10.mindfulness","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"dn22.satipatthana","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"sn12.20.dependent-origination","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"sn22.79.formations","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"mn2.mental-defilements","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"sn35.95.guard-sense-doors","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"an3.65.kalama","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"mn21.ill-will","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"missing","suttacentral":"confirmed"},
+    {"id":"sn22.47.aggregates-conditions","layer":"canonical","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"confirmed"},
+    {"id":"abhidhamma.citta-vithi","layer":"abhidhamma","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"},
+    {"id":"commentary.visuddhimagga-habits","layer":"commentary","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"},
+    {"id":"scholarship.aggregates-personhood","layer":"scholarship","status":"review_required","v4":"candidate","early_buddhist":"unavailable","suttacentral":"not_applicable"}
+  ]
+}

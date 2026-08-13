@@ -1,0 +1,42 @@
+.personhood-lab { --pp-ink:#352f2a; --pp-muted:#756c63; --pp-line:#e6ded3; --pp-gold:#8b6914; color:var(--pp-ink); }
+.personhood-lab .pp-hero { background:linear-gradient(135deg,#f7f0e2,#fffdf9 55%,#edf3ef); border:1px solid var(--pp-line); border-radius:18px; padding:28px; margin-bottom:18px; box-shadow:0 8px 24px rgba(80,60,30,.08); }
+.personhood-lab .pp-kicker { letter-spacing:.12em; text-transform:uppercase; color:var(--pp-gold); font:600 12px/1.2 system-ui,sans-serif; }
+.personhood-lab h2,.personhood-lab h3 { margin:0 0 8px; }
+.personhood-lab .pp-subtitle { color:var(--pp-muted); max-width:900px; }
+.personhood-lab .pp-grid { display:grid; grid-template-columns:minmax(260px,340px) 1fr; gap:18px; align-items:start; }
+.personhood-lab .pp-card { background:#fff; border:1px solid var(--pp-line); border-radius:14px; padding:16px; margin-bottom:16px; }
+.personhood-lab label { display:block; font-size:13px; color:var(--pp-muted); margin:10px 0 4px; }
+.personhood-lab select,.personhood-lab textarea,.personhood-lab input { width:100%; border:1px solid #d9d0c4; border-radius:8px; padding:8px 10px; font:inherit; background:#fffdfb; }
+.personhood-lab textarea { min-height:72px; resize:vertical; }
+.personhood-lab .pp-buttons { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.personhood-lab button { border:1px solid #bca26b; border-radius:8px; background:#fffaf0; color:#5a4513; padding:8px 12px; cursor:pointer; font:600 13px system-ui,sans-serif; }
+.personhood-lab button.primary { background:#8b6914; color:white; border-color:#8b6914; }
+.personhood-lab button:hover { filter:brightness(.97); transform:translateY(-1px); }
+.personhood-lab .pp-notice { background:#fff8e8; border-left:4px solid #c59a3a; padding:10px 12px; color:#59491f; font-size:13px; }
+.personhood-lab .pp-models { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.personhood-lab .pp-model { border:1px solid var(--pp-line); border-radius:10px; padding:10px; cursor:pointer; }
+.personhood-lab .pp-model.active { border-color:#8b6914; background:#fffaf0; box-shadow:inset 0 0 0 1px #8b6914; }
+.personhood-lab .pp-model strong { display:block; font-size:13px; }
+.personhood-lab .pp-model small { color:var(--pp-muted); }
+.personhood-lab .pp-lanes { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.personhood-lab .pp-lane { min-width:0; }
+.personhood-lab .pp-lane-title { display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid var(--pp-line); padding-bottom:7px; margin-bottom:8px; }
+.personhood-lab .pp-event { border-left:4px solid #a99a87; background:#fbfaf7; padding:9px 10px; margin:8px 0; border-radius:0 9px 9px 0; }
+.personhood-lab .pp-event.interpretive { border-left-color:#6e55a0; background:#f6f2fb; }
+.personhood-lab .pp-event.cessation { border-left-color:#3b8a76; background:#eff8f5; }
+.personhood-lab .pp-event .meta { color:var(--pp-muted); font:11px system-ui,sans-serif; margin-bottom:3px; }
+.personhood-lab .pp-event .statement { font-size:13px; }
+.personhood-lab .pp-badge { display:inline-block; font:600 10px system-ui,sans-serif; padding:2px 6px; border-radius:12px; background:#eee6d8; color:#5d4b2e; margin-left:4px; }
+.personhood-lab .pp-badge.later { background:#e9defa; color:#5b438c; }
+.personhood-lab .pp-badge.branch { background:#e3f0e9; color:#29634f; }
+.personhood-lab .pp-edge { border:1px dashed #c5b9a8; border-radius:9px; padding:9px 11px; margin:10px 0; font-size:13px; background:#fffdf9; }
+.personhood-lab .pp-evidence { display:none; margin-top:12px; border-top:1px solid var(--pp-line); padding-top:12px; }
+.personhood-lab .pp-evidence.open { display:block; }
+.personhood-lab .pp-evidence-item { padding:9px 0; border-bottom:1px solid #eee7de; font-size:13px; }
+.personhood-lab .pp-evidence-item a { color:#735713; }
+.personhood-lab .pp-export { white-space:pre-wrap; max-height:240px; overflow:auto; background:#292621; color:#f7eedf; padding:12px; border-radius:9px; font:11px/1.5 ui-monospace,monospace; }
+.personhood-lab .pp-small { color:var(--pp-muted); font-size:12px; }
+.personhood-lab .pp-dialogue textarea { min-height:64px; }
+.personhood-lab .pp-dialogue-status { color:var(--pp-muted); font-size:12px; margin-top:10px; }
+.personhood-lab .pp-dialogue-answer { white-space:pre-wrap; margin-top:10px; padding:12px; border-radius:9px; background:#f4f1ec; line-height:1.6; font-size:13px; }
+@media (max-width:850px) { .personhood-lab .pp-grid,.personhood-lab .pp-lanes,.personhood-lab .pp-models { grid-template-columns:1fr; } }
