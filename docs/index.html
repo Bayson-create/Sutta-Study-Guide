@@ -6518,7 +6518,7 @@ async function vismOutlineGenerateAll(providerMode = 'custom') {
     let next = 0;
     let finished = complete.size;
     let firstError = null;
-    const concurrency = providerMode === 'default' ? 4 : 1;
+    const concurrency = providerMode === 'default' ? 256 : 1;
     const worker = async () => {
       while (!firstError) {
         const index = next++;
