@@ -191,6 +191,24 @@ def width_from_cell(cell: Node) -> dict[str, str]:
     return {"css": css, "source": cell.attrs.get("width", "").strip()} if css or cell.attrs.get("width") else {}
 
 
+def width_points(value: str) -> float | None:
+    """Convert the small subset of Word width units used by this source.
+
+    We keep the original CSS value for auditability, but use points for a
+    stable, responsive column ratio.  Word's numeric ``width`` attributes are
+    twentieths of a point; inline CSS (when present) is already in points.
+    """
+    match = re.fullmatch(r"([0-9.]+)(pt|px)?", (value or "").strip().lower())
+    if not match:
+        return None
+    number = float(match.group(1))
+    return number if match.group(2) else number * 0.75
+
+
+def width_css(points: float) -> str:
+    return f"{points:.3f}".rstrip("0").rstrip(".") + "pt"
+
+
 def cell_value(cell: dict[str, Any]) -> str:
     return "".join(block["text"] for block in cell["blocks"]).replace(" ", "").replace("\n", "")
 
@@ -265,15 +283,33 @@ def parse_tables(root: Node, converter: Any) -> list[dict[str, Any]]:
                 cell_ids[id(cell)] = raw["cell_id"]
                 x += colspan
         width = max((len(row) for row in occupied), default=0)
-        width_candidates = [None] * width
+        # Word's final, borderless calibration row is the only authoritative
+        # declaration of individual column widths.  The previous importer
+        # copied a 528pt header spanning six columns into *each* column, which
+        # expanded several tables to more than five times their source width.
+        calibration_widths: list[dict[str, Any] | None] = [None] * width
+        singleton_widths: list[dict[str, Any] | None] = [None] * width
+        distributed_widths: list[dict[str, Any] | None] = [None] * width
         for raw in raw_cells:
             width_info = raw.get("width") or {}
             css = width_info.get("css", "")
-            if not css:
+            source = width_info.get("source", "")
+            points = width_points(css) if css else width_points(source)
+            if points is None:
                 continue
-            for column in range(raw["source_col"], min(width, raw["source_col"] + raw["source_colspan"])):
-                if width_candidates[column] is None:
-                    width_candidates[column] = {"css": css, "source": width_info.get("source", "")}
+            start = raw["source_col"]
+            span = min(raw["source_colspan"], width - start)
+            if span < 1:
+                continue
+            entry = {"css": width_css(points / span), "source": source, "points": round(points / span, 3)}
+            target = calibration_widths if raw["source_row"] in calibration_rows and span == 1 else singleton_widths if span == 1 else distributed_widths
+            for column in range(start, start + span):
+                if target[column] is None:
+                    target[column] = entry
+        width_candidates = [
+            calibration_widths[column] or singleton_widths[column] or distributed_widths[column]
+            for column in range(width)
+        ]
         page_ranges: list[tuple[int, int]] = []
         for raw in raw_cells:
             if raw["source_row"] in calibration_rows:
@@ -304,7 +340,7 @@ def parse_tables(root: Node, converter: Any) -> list[dict[str, Any]]:
                 "colspan": len(projected_columns),
                 "source_colspan": raw["source_colspan"],
                 "rowspan": raw["rowspan"],
-                "blocks": raw["blocks"],
+                "blocks": [{**block, "alignment_slot": block["index"]} for block in raw["blocks"]],
                 "nested_table_ids": raw["nested_table_ids"],
             }
             visible.append(cell)
@@ -323,6 +359,8 @@ def parse_tables(root: Node, converter: Any) -> list[dict[str, Any]]:
             "source_columns": width,
             "display_columns": max(0, width - len(removed_columns)),
             "column_widths": width_candidates,
+            "column_width_ratio": [round((entry or {}).get("points", 1) / max(1, sum((value or {}).get("points", 1) for value in width_candidates)), 6) for entry in width_candidates],
+            "compact": sum((entry or {}).get("points", 0) for entry in width_candidates) <= 280,
             "removed_page_ranges": [[start, end] for start, end in page_ranges],
             "cells": visible,
         })
@@ -378,14 +416,22 @@ def build_items(tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
                         "chapter": row_chapter or current_chapter,
                         "parent_item_ids": [],
                     })
-    # Preserve the geometric hierarchy as an auditable candidate chain.  The
-    # renderer does not use this as an anchor; it explains why a nested item
-    # appears under the preceding column in the source table.
+    # Preserve the geometrically encoded outline hierarchy.  A later column
+    # answers the nearest non-empty item in the preceding visible column at
+    # the same alignment slot (or the latest preceding slot).  This makes the
+    # source's blank paragraph spacers explicit instead of relying on browser
+    # line wrapping to imply parentage.
+    by_row: dict[tuple[str, int], list[dict[str, Any]]] = {}
     for item in items:
-        preceding = [candidate for candidate in items if candidate["table_id"] == item["table_id"] and candidate["row"] == item["row"] and candidate["col"] < item["col"]]
-        if preceding:
-            previous_col = max(candidate["col"] for candidate in preceding)
-            item["parent_item_ids"] = [candidate["item_id"] for candidate in preceding if candidate["col"] == previous_col]
+        by_row.setdefault((item["table_id"], item["row"]), []).append(item)
+    for row_items in by_row.values():
+        for item in row_items:
+            left_columns = [candidate["col"] for candidate in row_items if candidate["col"] < item["col"]]
+            previous_column = max(left_columns) if left_columns else None
+            previous = [candidate for candidate in row_items if candidate["col"] == previous_column and candidate["block"] <= item["block"]]
+            if previous:
+                nearest = max(candidate["block"] for candidate in previous)
+                item["parent_item_ids"] = [candidate["item_id"] for candidate in previous if candidate["block"] == nearest]
     return items
 
 
