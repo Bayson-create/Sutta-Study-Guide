@@ -6418,7 +6418,11 @@ function vismOutlineSectionHtml(section, answers, notes, loggedIn) {
     diagramRun = [];
     diagramGroup = '';
   };
-  (section.blocks || []).filter(block => block.role !== 'questions' || /自我评量题目/.test(block.text || '')).forEach(block => {
+  // Question prose is rendered as interactive question cards below.  The
+  // source also contains four full outline tables inside question sections;
+  // keep those diagram rows visible while still avoiding duplicate question
+  // paragraphs.
+  (section.blocks || []).filter(block => block.role !== 'questions' || block.kind === 'diagram' || /自我评量题目/.test(block.text || '')).forEach(block => {
     const roleTitle = special[block.role] && special[block.role] !== lastRole ? `<h3 class="vism-outline-role-title">${special[block.role]}</h3>` : '';
     lastRole = block.role || lastRole;
     if (block.kind === 'diagram' && block.text) {
