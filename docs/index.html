@@ -6339,7 +6339,8 @@ function vismOutlineQuestionHtml(question, answer, note, loggedIn) {
   const noteInput = loggedIn
     ? `<textarea id="vism-outline-note-${esc(question.id)}" data-question-id="${esc(question.id)}" placeholder="写下你的理解、疑问或与原文的对应…">${esc(value)}</textarea><div class="vism-outline-note-meta"><span id="vism-outline-note-state-${esc(question.id)}">${esc(state)}</span><button type="button" class="vism-review-action" onclick="vismOutlineSaveNote('${esc(question.id)}')">保存</button></div>`
     : `<textarea disabled placeholder="登录后可为每一道题保存独立的学习笔记"></textarea><div class="vism-outline-note-meta"><span>${esc(state)}</span><button type="button" class="vism-review-action" onclick="vismOutlineLoginForNote()">登录后填写</button></div>`;
-  const answerHtml = answer?.status === 'verified'
+  const answerAvailable = answer?.status === 'verified' || (String(answer?.answer || '').trim() && Array.isArray(answer?.citations) && answer.citations.length > 0);
+  const answerHtml = answerAvailable
     ? `<details class="vism-outline-answer"><summary>显示参考答案</summary><div class="vism-outline-answer-body">${esc(answer.answer || '')}<div class="vism-outline-citations">${(answer.citations || []).map((citation, index) => `<a class="vism-outline-citation" href="${vismOutlineReaderHref(citation)}" title="${esc(citation.note || '打开逐句三语对照原文')}">[${index + 1}] 第 ${citation.chapter} 品 · ${citation.part_index}-${citation.row_index}</a>`).join('')}</div></div></details>`
     : `<div class="vism-outline-answer"><div class="vism-outline-answer-body vism-outline-unavailable">参考答案正在进行逐条原文与锚点校验；在全部 216 题完成前不会发布不完整或无引文的版本。</div></div>`;
   return `<article class="vism-outline-question" id="${esc(question.id)}"><h3>${question.number}. ${esc(question.text)}</h3><div class="vism-outline-note-box"><label for="vism-outline-note-${esc(question.id)}">我的想法</label>${noteInput}</div>${answerHtml}</article>`;
