@@ -6447,7 +6447,7 @@ async function renderVismOutline() {
   app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载各品大纲与自测…</div></div>';
   try {
     const [outline, staticAnswers] = await Promise.all([
-      fetch('research/vism-data/outline-v1.json').then(res => { if (!res.ok) throw new Error('各品大纲数据不可用'); return res.json(); }),
+      fetch('research/vism-data/outline-v1.json?v=20260814.949900f').then(res => { if (!res.ok) throw new Error('各品大纲数据不可用'); return res.json(); }),
       fetch('research/vism-data/outline-answers-v1.json').then(res => res.ok ? res.json() : null).catch(() => null),
     ]);
     let answersResult = staticAnswers;
