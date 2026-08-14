@@ -577,11 +577,21 @@ a:hover { text-decoration: underline; }
 .vism-outline-section h2 { color: var(--accent); margin: 0 0 14px; }
 .vism-outline-block { margin: 0 0 10px; line-height: 1.86; white-space: pre-wrap; overflow-wrap: anywhere; }
 .vism-outline-diagram-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; margin: 12px 0 16px; padding: 13px 14px; border: 1px solid var(--border); border-radius: 10px; background: color-mix(in srgb, var(--accent-bg) 55%, var(--card-bg)); color: var(--text); }
-.vism-outline-diagram-grid { width: max-content; min-width: 100%; font: .82em/1.5 "Noto Sans Mono CJK SC", "Sarasa Mono SC", "Source Han Mono SC", ui-monospace, SFMono-Regular, Menlo, monospace; }
-.vism-outline-diagram-line { display: grid; grid-auto-flow: column; grid-auto-columns: 1ch; width: max-content; min-width: 100%; min-height: 1.5em; white-space: pre; }
-.vism-outline-diagram-line > span { display: block; min-width: 1ch; white-space: pre; }
-.vism-outline-diagram-line > span.is-wide { grid-column: span 2; }
-.vism-outline-diagram-grid[aria-hidden="true"] { user-select: text; }
+.vism-outline-structured-table { width: max-content; min-width: 100%; font: .9em/1.55 "Noto Sans SC", "Source Han Sans SC", system-ui, sans-serif; border-collapse: separate; border-spacing: 0; }
+.vism-outline-structured-row { display: grid; align-items: stretch; min-height: 2.2em; }
+.vism-outline-structured-cell { min-width: 0; padding: 6px 9px; border-right: 1px solid color-mix(in srgb, var(--border) 85%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--border) 85%, transparent); white-space: pre-wrap; overflow-wrap: anywhere; }
+.vism-outline-structured-row:first-child .vism-outline-structured-cell { border-top: 1px solid var(--border); }
+.vism-outline-structured-cell:first-child { border-left: 1px solid var(--border); }
+.vism-outline-structured-row:first-child .vism-outline-structured-cell:first-child { border-top-left-radius: 7px; }
+.vism-outline-structured-row:first-child .vism-outline-structured-cell:last-child { border-top-right-radius: 7px; }
+.vism-outline-structured-row:last-child .vism-outline-structured-cell:first-child { border-bottom-left-radius: 7px; }
+.vism-outline-structured-row:last-child .vism-outline-structured-cell:last-child { border-bottom-right-radius: 7px; }
+.vism-outline-structured-separator { min-height: 10px; align-items: center; }
+.vism-outline-structured-separator::before { content: ''; grid-column: 1 / -1; border-top: 1px solid var(--accent-light); }
+.vism-outline-structured-flow { display: grid; gap: 5px; min-width: min(720px, 100%); }
+.vism-outline-structured-flow-row { padding: 7px 10px; border-left: 3px solid var(--accent-light); border-radius: 6px; background: color-mix(in srgb, var(--card-bg) 76%, var(--accent-bg)); white-space: pre-wrap; overflow-wrap: anywhere; }
+.vism-outline-structured-flow-row:empty { min-height: 8px; opacity: .45; }
+.vism-outline-structured-table[aria-busy="true"] { opacity: .75; }
 .vism-outline-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: pre; border: 0; }
 .vism-outline-role-title { margin: 24px 0 10px; color: var(--accent); font-size: 1.05em; }
 .vism-outline-terms { line-height: 2; }
@@ -1500,6 +1510,12 @@ function route() {
   const qIdx = rawHash.indexOf('?');
   const hash = qIdx === -1 ? rawHash : rawHash.slice(0, qIdx);
   const routeParams = new URLSearchParams(qIdx === -1 ? '' : rawHash.slice(qIdx + 1));
+  // Outline section links are in-page navigation.  Once the outline is
+  // mounted, a hash change must not rebuild the page or re-fetch its data.
+  if (hash === '#/research/vism/lecture/outline' && document.querySelector('.vism-outline-page')) {
+    vismOutlineApplyLocation('smooth');
+    return;
+  }
   // Older outline links used a bare fragment such as
   // #vism-outline-section-03.  Treat it as a deep link into the SPA instead
   // of letting the router fall through to the home page.
@@ -1699,6 +1715,11 @@ function route() {
   searchApplyPendingHighlight();
 }
 window.addEventListener('hashchange', route);
+window.addEventListener('popstate', () => {
+  const current = location.hash.split('?')[0];
+  if (current === '#/research/vism/lecture/outline' && document.querySelector('.vism-outline-page')) vismOutlineApplyLocation('smooth');
+  else route();
+});
 
 // Find sutta info in DATA
 function findSutta(uid) {
@@ -6365,26 +6386,19 @@ function vismOutlineQuestionHtml(question, answer, note, loggedIn) {
   return `<article class="vism-outline-question" id="${esc(question.id)}"><h3>${question.number}. ${esc(question.text)}</h3><div class="vism-outline-note-box"><label for="vism-outline-note-${esc(question.id)}">我的想法</label>${noteInput}</div>${answerHtml}</article>`;
 }
 
-function vismOutlineDiagramCharIsWide(char) {
-  return /[\u1100-\u115f\u2329\u232a\u2e80-\u303e\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\ufe10-\ufe19\ufe30-\ufe6f\uff00-\uff60\uffe0-\uffe6\u{20000}-\u{3ffff}]/u.test(char);
-}
-
-function vismOutlineDiagramLineHtml(line) {
-  const cells = [];
-  for (const char of Array.from(String(line || ''))) {
-    if (/\p{Mark}/u.test(char) && cells.length) {
-      cells[cells.length - 1].text += char;
-      continue;
-    }
-    cells.push({ text: char, wide: vismOutlineDiagramCharIsWide(char) });
+function vismOutlineDiagramHtml(blocks, layout) {
+  const sourceText = String(layout?.source_text || blocks.map(block => String(block.text || '')).join('\n'));
+  if (!layout || layout.kind === 'flow' || !Array.isArray(layout.columns) || !layout.columns.length) {
+    const rows = (layout?.rows || sourceText.split('\n').map(text => ({ text }))).map(row => `<div class="vism-outline-structured-flow-row" role="treeitem">${esc(row.text || '')}</div>`).join('');
+    return `<div class="vism-outline-diagram-wrap" role="tree" aria-label="${esc(sourceText)}"><span class="vism-outline-sr-only">${esc(sourceText)}</span><div class="vism-outline-structured-flow">${rows}</div></div>`;
   }
-  return `<div class="vism-outline-diagram-line">${cells.map(cell => `<span${cell.wide ? ' class="is-wide"' : ''}>${esc(cell.text)}</span>`).join('')}</div>`;
-}
-
-function vismOutlineDiagramHtml(blocks) {
-  const sourceText = blocks.map(block => String(block.text || '')).join('\n');
-  const rows = sourceText.split('\n').map(vismOutlineDiagramLineHtml).join('');
-  return `<div class="vism-outline-diagram-wrap" role="img" aria-label="${esc(sourceText)}"><span class="vism-outline-sr-only">${esc(sourceText)}</span><div class="vism-outline-diagram-grid" aria-hidden="true">${rows}</div></div>`;
+  const template = layout.columns.map(column => `${Math.max(1, Number(column.width) || 1)}ch`).join(' ');
+  const rows = (layout.rows || []).map(row => {
+    if (row.type === 'separator') return `<div class="vism-outline-structured-row vism-outline-structured-separator" role="row" style="grid-template-columns:${template}" aria-label="分隔线"></div>`;
+    const cells = (row.cells || []).map((cell, index) => `<div class="vism-outline-structured-cell" role="cell" style="grid-column:${index + 1}">${esc(cell.text || '')}</div>`).join('');
+    return `<div class="vism-outline-structured-row" role="row" style="grid-template-columns:${template}">${cells}</div>`;
+  }).join('');
+  return `<div class="vism-outline-diagram-wrap" role="region" aria-label="${esc(sourceText)}"><span class="vism-outline-sr-only">${esc(sourceText)}</span><div class="vism-outline-structured-table" role="table">${rows}</div></div>`;
 }
 
 function vismOutlineTermsHtml(text) {
@@ -6412,9 +6426,10 @@ function vismOutlineSectionHtml(section, answers, notes, loggedIn) {
   const rendered = [];
   let diagramRun = [];
   let diagramGroup = '';
+  const diagramLayouts = section.diagram_groups || {};
   const flushDiagrams = () => {
     if (!diagramRun.length) return;
-    rendered.push(vismOutlineDiagramHtml(diagramRun));
+    rendered.push(vismOutlineDiagramHtml(diagramRun, diagramLayouts[diagramGroup]));
     diagramRun = [];
     diagramGroup = '';
   };
@@ -6451,18 +6466,57 @@ function vismOutlineSectionHtml(section, answers, notes, loggedIn) {
   return `<section class="vism-outline-section" id="${esc(section.id)}"><h2>${esc(section.title)}</h2>${blocks}${questions ? `<div class="vism-outline-questions"><h3 class="vism-outline-role-title">自我评量与学习记录</h3>${questions}</div>` : ''}</section>`;
 }
 
+let _vismOutlineObserver = null;
+
+function vismOutlineSetActiveSection(sectionId) {
+  document.querySelectorAll('[data-outline-section]').forEach(link => {
+    const active = link.dataset.outlineSection === sectionId;
+    link.classList.toggle('is-active', active);
+    if (active) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+}
+
+function vismOutlineApplyLocation(behavior = 'auto') {
+  const qIdx = location.hash.indexOf('?');
+  const params = new URLSearchParams(qIdx === -1 ? '' : location.hash.slice(qIdx + 1));
+  const sectionId = params.get('section') || '';
+  const questionId = params.get('q') || '';
+  const target = document.getElementById(questionId || sectionId);
+  if (target) {
+    vismOutlineSetActiveSection(target.closest('.vism-outline-section')?.id || sectionId);
+    target.scrollIntoView({ block: 'start', behavior });
+    if (questionId) target.setAttribute('tabindex', '-1');
+    return true;
+  }
+  vismOutlineSetActiveSection(sectionId || document.querySelector('.vism-outline-section')?.id || '');
+  if (!sectionId && !questionId) window.scrollTo({ top: 0, behavior });
+  return false;
+}
+
+function vismOutlineNavigate(sectionId, event) {
+  if (event) event.preventDefault();
+  const target = document.getElementById(sectionId);
+  if (!target) return false;
+  const nextHash = `#/research/vism/lecture/outline?section=${encodeURIComponent(sectionId)}`;
+  if (location.hash !== nextHash) history.pushState({ vismOutlineSection: sectionId }, '', nextHash);
+  vismOutlineSetActiveSection(sectionId);
+  target.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  return false;
+}
+
 async function renderVismOutline() {
   app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载各品大纲与自测…</div></div>';
   try {
     const [outline, staticAnswers] = await Promise.all([
-      fetch('research/vism-data/outline-v1.json?v=20260814.949900f').then(res => { if (!res.ok) throw new Error('各品大纲数据不可用'); return res.json(); }),
+      fetch('research/vism-data/outline-v1.json?v=20260814.structured-table-v1').then(res => { if (!res.ok) throw new Error('各品大纲数据不可用'); return res.json(); }),
       fetch('research/vism-data/outline-answers-v1.json').then(res => res.ok ? res.json() : null).catch(() => null),
     ]);
     let answersResult = staticAnswers;
     const staticAnswerCount = Object.keys(answersResult?.answers || {}).length;
     if (!answersResult || staticAnswerCount < Number(outline.counts?.questions || 216)) {
       try {
-        const response = await fetch(`${API_BASE}/api/vism/outline-answers?source_sha256=${encodeURIComponent(outline.source.sha256)}`);
+        const response = await communityFetchWithTimeout(`${API_BASE}/api/vism/outline-answers?source_sha256=${encodeURIComponent(outline.source.sha256)}`, {}, 3000);
         if (response.ok) answersResult = await response.json();
       } catch (_) { /* draft data is not public until all 216 answers validate */ }
     }
@@ -6492,32 +6546,17 @@ async function renderVismOutline() {
       });
       input.addEventListener('blur', () => vismOutlineSaveNote(input.dataset.questionId));
     });
-    const sectionTarget = outlineParams.get('section');
-    const questionTarget = outlineParams.get('q');
-    const setActiveSection = sectionId => {
-      document.querySelectorAll('[data-outline-section]').forEach(link => {
-        const active = link.dataset.outlineSection === sectionId;
-        link.classList.toggle('is-active', active);
-        if (active) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    };
-    const scrollTarget = sectionTarget || questionTarget;
-    if (scrollTarget) {
-      requestAnimationFrame(() => document.getElementById(scrollTarget)?.scrollIntoView({ block: 'start', behavior: 'auto' }));
-    } else {
-      window.scrollTo(0, 0);
-      setActiveSection(outline.sections?.[0]?.id || '');
-    }
     document.querySelectorAll('[data-outline-section]').forEach(link => {
-      link.addEventListener('click', () => setActiveSection(link.dataset.outlineSection));
+      link.addEventListener('click', event => vismOutlineNavigate(link.dataset.outlineSection, event));
     });
+    requestAnimationFrame(() => vismOutlineApplyLocation('auto'));
     if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
+      if (_vismOutlineObserver) _vismOutlineObserver.disconnect();
+      _vismOutlineObserver = new IntersectionObserver(entries => {
         const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-        if (visible) setActiveSection(visible.target.id);
+        if (visible) vismOutlineSetActiveSection(visible.target.id);
       }, { rootMargin: '-12% 0px -72% 0px', threshold: 0 });
-      document.querySelectorAll('.vism-outline-section').forEach(section => observer.observe(section));
+      document.querySelectorAll('.vism-outline-section').forEach(section => _vismOutlineObserver.observe(section));
     }
   } catch (error) {
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/vism/lecture'">← 返回讲义</button><div class="error-msg">各品大纲加载失败：${esc(error.message || error)}</div>`;

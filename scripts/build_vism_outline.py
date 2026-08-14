@@ -12,6 +12,7 @@ import hashlib
 import json
 import re
 import shutil
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -59,8 +60,153 @@ def clean_heading(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def outline_text_content(node: Node | str, *, include_tables: bool = True) -> str:
+    """Read visible text while distinguishing HTML formatting newlines.
+
+    The Word exporter wraps tags across physical source lines.  Those line
+    breaks are not diagram rows; only an actual ``<br>`` is.  ASCII spaces in
+    ``mso-spacerun`` spans are preserved so the layout parser can use them.
+    """
+    if isinstance(node, str):
+        return node.replace("\r\n", " ").replace("\r", " ").replace("\n", " ")
+    if node.tag == "table" and not include_tables:
+        return ""
+    if node.tag in {"o:p", "xml"}:
+        return ""
+    if node.tag == "br":
+        return "\n"
+    return "".join(outline_text_content(child, include_tables=include_tables) for child in node.children)
+
+
 def is_diagram(value: str) -> bool:
     return bool(DIAGRAM.search(value))
+
+
+def simplify_layout(value: str, converter: Any) -> str:
+    """Convert a Word diagram without destroying its horizontal layout.
+
+    The ordinary ``simplify`` helper is correct for prose, but its ``strip``
+    calls remove the leading spaces that Word used as diagram columns.  Keep
+    those spaces for diagram rows and let the structured layout builder turn
+    them into stable column coordinates.
+    """
+    value = value.replace("\r\n", "\n").replace("\r", "\n")
+    value = value.replace("\u00a0", " ").replace("\u200b", "")
+    value = re.sub(r"<!\[if[^>]*>|<!\[endif\]>", "", value)
+    value = converter.convert(value)
+    lines = [re.sub(r"[ \t]+$", "", line) for line in value.split("\n")]
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
+    return "\n".join(lines)
+
+
+def display_width(value: str) -> int:
+    """Return a deterministic terminal-like width for a diagram string."""
+    width = 0
+    for char in value:
+        if unicodedata.combining(char):
+            continue
+        width += 2 if unicodedata.east_asian_width(char) in {"W", "F"} else 1
+    return width
+
+
+def positioned_characters(line: str) -> list[tuple[int, int, str]]:
+    result: list[tuple[int, int, str]] = []
+    cursor = 0
+    for char in line:
+        char_width = 0 if unicodedata.combining(char) else (2 if unicodedata.east_asian_width(char) in {"W", "F"} else 1)
+        if char_width:
+            result.append((cursor, cursor + char_width, char))
+            cursor += char_width
+        elif result:
+            start, end, previous = result[-1]
+            result[-1] = (start, end, previous + char)
+    return result
+
+
+def diagram_layout(text: str) -> dict[str, Any]:
+    """Build a semantic, source-auditable grid from one character diagram.
+
+    These source diagrams are not HTML tables.  Their vertical junctions are
+    the only reliable column boundary, so we preserve those coordinates and
+    turn each interval into a real visual cell.  Border rows remain explicit
+    metadata rather than being mistaken for prose or dropped.
+    """
+    lines = text.split("\n")
+    boundary_chars = set("│├┤┬┴┼┌┐└┘")
+    boundary_positions: set[int] = set()
+    # The first complete top rule defines the logical columns.  Later rows
+    # often contain nested sub-columns; treating every inner bar as a new
+    # top-level column was the source of the tiny, unreadable cells in the
+    # previous projection.
+    top_line = next((line for line in lines if "┌" in line and "─" in line), "")
+    top_characters = positioned_characters(top_line)
+    if top_characters:
+        boundary_positions.update(start for start, _end, char in top_characters if char in boundary_chars)
+    # A Word top rule measures dashes in the original single-width grid,
+    # while the converted Chinese text is rendered at East-Asian width.  If a
+    # first content row has the same number of visible outer bars, use those
+    # measured positions so its text remains inside the corresponding cell.
+    top_index = lines.index(top_line) if top_line in lines else -1
+    separator_characters = set(" ─┌┐└┘├┤┬┴┼│")
+    content_line = next(
+        (
+            line for line in lines[top_index + 1:]
+            if "│" in line
+            and not ("─" in line and all(char in separator_characters for char in line))
+            and sum(1 for _start, _end, char in positioned_characters(line) if char == "│") >= 2
+        ),
+        "",
+    )
+    content_positions = [start for start, _end, char in positioned_characters(content_line) if char == "│"]
+    if len(content_positions) >= 2:
+        boundary_positions = set(content_positions)
+    if len(boundary_positions) < 2:
+        for line in lines:
+            for start, _end, char in positioned_characters(line):
+                if char in boundary_chars:
+                    boundary_positions.add(start)
+    boundaries = sorted(boundary_positions)
+    if len(boundaries) < 2:
+        return {
+            "kind": "flow",
+            "source_text": text,
+            "columns": [],
+            "rows": [{"type": "flow", "source": line, "text": line.strip()} for line in lines],
+        }
+    max_width = max([display_width(line) for line in lines] + [boundaries[-1] + 1])
+    if max_width > boundaries[-1] + 1:
+        boundaries.append(max_width)
+    columns = [
+        {"index": index, "start": left, "end": right, "width": max(1, right - left)}
+        for index, (left, right) in enumerate(zip(boundaries, boundaries[1:]))
+    ]
+    rows: list[dict[str, Any]] = []
+    for line in lines:
+        chars = positioned_characters(line)
+        is_separator = "─" in line and not any(char not in " ─┌┐└┘├┤┬┴┼│" for _start, _end, char in chars)
+        row: dict[str, Any] = {
+            "type": "separator" if is_separator else "cells",
+            "source": line,
+            "cells": [],
+        }
+        for column_index, (left, right) in enumerate(zip(boundaries, boundaries[1:])):
+            value = "".join(
+                char if char not in boundary_chars or start > left and end < right else ""
+                for start, end, char in chars
+                if start >= left and end <= right
+            )
+            value = value.strip()
+            row["cells"].append({"column": column_index, "text": value})
+        rows.append(row)
+    return {
+        "kind": "table",
+        "source_text": text,
+        "columns": columns,
+        "rows": rows,
+    }
 
 
 def annotate_diagram_groups(sections: list[dict[str, Any]]) -> None:
@@ -74,6 +220,8 @@ def annotate_diagram_groups(sections: list[dict[str, Any]]) -> None:
     for section in sections:
         group_number = 0
         active_group: str | None = None
+        section["diagram_groups"] = {}
+        grouped_blocks: dict[str, list[dict[str, Any]]] = {}
         for block in section["blocks"]:
             if block["kind"] != "diagram":
                 active_group = None
@@ -82,6 +230,9 @@ def annotate_diagram_groups(sections: list[dict[str, Any]]) -> None:
                 group_number += 1
                 active_group = f"{section['id']}-diagram-{group_number:02d}"
             block["diagram_group"] = active_group
+            grouped_blocks.setdefault(active_group, []).append(block)
+        for group_id, blocks in grouped_blocks.items():
+            section["diagram_groups"][group_id] = diagram_layout("\n".join(block["text"] for block in blocks))
 
 
 def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], int]:
@@ -91,7 +242,10 @@ def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], in
     current: dict[str, Any] | None = None
     preface: list[dict[str, Any]] = []
     for source_index, node in enumerate(nodes):
-        text = visible_text(node, converter)
+        raw_text = outline_text_content(node)
+        text = simplify(raw_text, converter)
+        layout_text = simplify_layout(raw_text, converter)
+        diagram = is_diagram(layout_text)
         if node.tag == "h3":
             current = {
                 "id": f"vism-outline-section-{len(sections) + 1:02d}",
@@ -106,9 +260,9 @@ def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], in
         block = {
             "id": f"p-{source_index + 1:04d}",
             "source_index": source_index,
-            "text": text,
+            "text": layout_text if diagram else text,
             "empty": not bool(text),
-            "kind": "diagram" if is_diagram(text) else "paragraph",
+            "kind": "diagram" if diagram else "paragraph",
         }
         if current is None:
             preface.append(block)
@@ -188,6 +342,12 @@ def validate(payload: dict[str, Any]) -> None:
         raise ValueError("diagram count does not match the source block classification")
     if any(block.get("kind") != "diagram" or not block.get("diagram_group") for block in diagram_blocks):
         raise ValueError("every box-drawing source row must have one stable diagram group")
+    for section in sections:
+        group_ids = {block.get("diagram_group") for block in section["blocks"] if block.get("diagram_group")}
+        for group_id in group_ids:
+            layout = section.get("diagram_groups", {}).get(group_id)
+            if not layout or not layout.get("rows") or not layout.get("source_text"):
+                raise ValueError(f"diagram group lacks a structured layout: {group_id}")
     if any(is_diagram(block["text"]) and block.get("kind") != "diagram" for section in sections for block in section["blocks"]):
         raise ValueError("a box-drawing source row was left as ordinary prose")
     box_drawing_rows = sum(BOX_DRAWING.search(block["text"]) is not None for section in sections for block in section["blocks"])
