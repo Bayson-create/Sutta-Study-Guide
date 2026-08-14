@@ -13,6 +13,7 @@ import json
 import re
 import shutil
 import unicodedata
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -113,10 +114,16 @@ def display_width(value: str) -> int:
 
 
 def positioned_characters(line: str) -> list[tuple[int, int, str]]:
+    """Return source-grid positions, not browser display positions.
+
+    Word's diagrams are authored on a character grid. A CJK glyph may occupy
+    two terminal cells when rendered, but it still occupies one source column
+    between box-drawing junctions. Layout width is handled by CSS later.
+    """
     result: list[tuple[int, int, str]] = []
     cursor = 0
     for char in line:
-        char_width = 0 if unicodedata.combining(char) else (2 if unicodedata.east_asian_width(char) in {"W", "F"} else 1)
+        char_width = 0 if unicodedata.combining(char) else 1
         if char_width:
             result.append((cursor, cursor + char_width, char))
             cursor += char_width
@@ -124,6 +131,190 @@ def positioned_characters(line: str) -> list[tuple[int, int, str]]:
             start, end, previous = result[-1]
             result[-1] = (start, end, previous + char)
     return result
+
+
+FRAME_CHARS = set("┌┐└┘├┤┬┴┼─│")
+VERTICAL_CHARS = set("│├┤┬┴┼")
+
+
+def source_columns(top_line: str) -> list[int]:
+    """Find boundaries in the original Word character grid."""
+    return [start for start, _end, char in positioned_characters(top_line) if char in {"┌", "┬", "┐"}]
+
+
+def clean_cell_text(value: str) -> str:
+    """Remove frame glyphs while retaining inner branches as readable labels."""
+    chunks: list[str] = []
+    current: list[str] = []
+    saw_branch = False
+    for char in value.replace("\u00a0", " "):
+        if char in FRAME_CHARS:
+            if current:
+                chunks.append("".join(current))
+                current = []
+            if char in {"┌", "├", "└", "│"}:
+                saw_branch = True
+            continue
+        current.append(char)
+    if current:
+        chunks.append("".join(current))
+    text = " · ".join(chunk.strip() for chunk in chunks if chunk.strip())
+    if saw_branch and text:
+        text = "↳ " + text
+    return re.sub(r"[ \t]+", " ", text).strip()
+
+
+def row_boundary_positions(line: str, boundaries: list[int]) -> list[int]:
+    """Align a row's visible separators to the top-rule columns.
+
+    Word inserts full-width spaces into some rows, so their separators can be
+    shifted by one or more source characters. When an inner branch adds extra
+    bars, dynamic programming chooses the monotonic subset closest to the
+    top-rule geometry instead of treating the branch as a new outer column.
+    """
+    bars = [start for start, _end, char in positioned_characters(line) if char == "│"]
+    expected = len(boundaries)
+    if len(bars) <= 2:
+        return bars
+    if len(bars) == expected:
+        return bars
+    if len(bars) < expected:
+        return bars
+    states: list[tuple[float, list[int]]] = [(0.0, [])]
+    for target in boundaries:
+        next_states: list[tuple[float, list[int]]] = []
+        for cost, chosen in states:
+            candidates = [bar for bar in bars if not chosen or bar > chosen[-1]]
+            for bar in candidates:
+                next_states.append((cost + abs(bar - target), chosen + [bar]))
+        next_states.sort(key=lambda item: item[0])
+        states = next_states[:64]
+    return min(states, key=lambda item: item[0])[1] if states else bars[:expected]
+
+
+def table_part_layout(lines: list[str]) -> dict[str, Any]:
+    """Parse one independent box root into semantic rows and spanning cells."""
+    text = "\n".join(lines)
+    top_line = next((line for line in lines if "┌" in line and "─" in line), "")
+    boundaries = source_columns(top_line)
+    if len(boundaries) < 2:
+        return {"kind": "flow", "source_text": text, "rows": [
+            {"type": "flow", "source": line, "text": clean_cell_text(line)} for line in lines
+        ]}
+    # Local boxes embedded in a branching diagram are not standalone tables:
+    # their top rule contains several independent box starts on one line.
+    # A genuine table has exactly one outer start/end pair; its later full-
+    # width annotation rows are allowed to be longer than the top rule.
+    if top_line.count("┌") != 1 or top_line.count("┐") != 1:
+        return {"kind": "flow", "source_text": text, "rows": [
+            {"type": "flow", "source": line, "text": clean_cell_text(line)} for line in lines
+        ]}
+    columns = [{"index": index, "start": left, "end": right, "width": max(1, right - left)}
+               for index, (left, right) in enumerate(zip(boundaries, boundaries[1:]))]
+    rows: list[dict[str, Any]] = []
+    for line in lines:
+        chars = {start: char for start, _end, char in positioned_characters(line)}
+        is_separator = bool("─" in line and all(char in " ─┌┐└┘├┤┬┴┼│" for char in line))
+        present = row_boundary_positions(line, boundaries)
+        if is_separator:
+            rows.append({"type": "separator", "source": line, "cells": [], "colspan": len(columns)})
+            continue
+        internal = present[1:-1] if len(present) >= 3 else []
+        if not internal:
+            left = present[0] if present else boundaries[0]
+            right = present[-1] if len(present) > 1 else boundaries[-1]
+            raw = "".join(char for start, _end, char in positioned_characters(line)
+                          if left <= start < right)
+            rows.append({"type": "cells", "source": line, "colspan": len(columns), "cells": [
+                {"column": 0, "text": clean_cell_text(raw), "colspan": len(columns)}
+            ]})
+            continue
+        if len(present) < len(boundaries):
+            # Sparse separators encode colspan: omitted columns belong to the
+            # final visible cell. This avoids slicing CJK text with the
+            # top-rule coordinates when Word leaves a continuation row open.
+            cells = []
+            boundary_columns = list(range(len(present) - 1)) + [len(columns)]
+            for index, (left, right) in enumerate(zip(present, present[1:])):
+                raw = "".join(char for start, _end, char in positioned_characters(line)
+                              if left < start < right)
+                start_column = boundary_columns[index]
+                span = max(1, boundary_columns[index + 1] - start_column)
+                cells.append({"column": start_column, "text": clean_cell_text(raw), "colspan": span})
+            rows.append({"type": "cells", "source": line, "colspan": len(columns), "cells": cells})
+            continue
+        cells = []
+        row_boundaries = present
+        for index, (left, right) in enumerate(zip(row_boundaries, row_boundaries[1:])):
+            raw = "".join(char for start, _end, char in positioned_characters(line)
+                          if left < start < right)
+            cells.append({"column": index, "text": clean_cell_text(raw), "colspan": 1})
+        while len(cells) < len(columns):
+            cells.append({"column": len(cells), "text": "", "colspan": 1})
+        outside = "".join(
+            char for start, _end, char in positioned_characters(line)
+            if start < row_boundaries[0] or start >= row_boundaries[-1]
+        )
+        outside_text = clean_cell_text(outside)
+        if outside_text and cells:
+            cells[-1]["text"] = " · ".join(filter(None, [cells[-1]["text"], outside_text]))
+        rows.append({"type": "cells", "source": line, "colspan": 1, "cells": cells})
+    # Repair any row whose inferred separators would lose text by retaining
+    # that complete source row as a single colspan cell. This keeps the table
+    # semantic at group level while making the uncertain row auditable and
+    # content-complete.
+    for index, line in enumerate(lines):
+        if index >= len(rows) or rows[index].get("type") != "cells":
+            continue
+        expected_row = Counter(re.findall(
+            r"[\u3400-\u9fffA-Za-z0-9]",
+            re.sub(r"[┌┐└┘├┤┬┴┼─│]", "", line),
+        ))
+        actual_row_text = "".join(str(cell.get("text", "")) for cell in rows[index].get("cells", []))
+        actual_row = Counter(re.findall(r"[\u3400-\u9fffA-Za-z0-9]", actual_row_text))
+        if expected_row != actual_row:
+            rows[index] = {
+                "type": "cells",
+                "source": line,
+                "colspan": len(columns),
+                "cells": [{"column": 0, "text": clean_cell_text(line), "colspan": len(columns)}],
+            }
+    source_chars = Counter(re.findall(
+        r"[\u3400-\u9fffA-Za-z0-9]",
+        re.sub(r"[┌┐└┘├┤┬┴┼─│]", "", text),
+    ))
+    visible_text = "".join(
+        str(row.get("text", "")) + "".join(str(cell.get("text", "")) for cell in row.get("cells", []))
+        for row in rows
+    )
+    if source_chars != Counter(re.findall(r"[\u3400-\u9fffA-Za-z0-9]", visible_text)):
+        # A malformed Word drawing cannot safely be inferred as a grid. Keep
+        # every source word in a readable flow representation and let the
+        # audit metadata record that it used the safe fallback.
+        return {"kind": "flow", "source_text": text, "rows": [
+            {"type": "flow", "source": line, "text": clean_cell_text(line)} for line in lines
+        ]}
+    return {"kind": "table", "source_text": text, "columns": columns, "rows": rows}
+
+
+def split_diagram_roots(text: str) -> list[list[str]]:
+    """Split adjacent independent box roots without splitting inner branches."""
+    roots: list[list[str]] = []
+    current: list[str] = []
+    closed = False
+    for line in text.split("\n"):
+        starts_root = bool(line.lstrip().startswith("┌") and "─" in line)
+        if starts_root and current and closed:
+            roots.append(current)
+            current = []
+        current.append(line)
+        if "└" in line and "┘" in line:
+            closed = True
+        elif starts_root:
+            closed = False
+    if current:
+        roots.append(current)
+    return roots or [text.split("\n")]
 
 
 def diagram_layout(text: str) -> dict[str, Any]:
@@ -134,6 +325,17 @@ def diagram_layout(text: str) -> dict[str, Any]:
     turn each interval into a real visual cell.  Border rows remain explicit
     metadata rather than being mistaken for prose or dropped.
     """
+    roots = [table_part_layout(root) for root in split_diagram_roots(text)]
+    return {
+        "kind": "multi" if len(roots) > 1 else roots[0].get("kind", "flow"),
+        "source_text": text,
+        "parts": roots,
+        # Compatibility fields for existing audit tooling and old readers.
+        "columns": roots[0].get("columns", []) if roots else [],
+        "rows": roots[0].get("rows", []) if roots else [],
+    }
+    # Legacy parser retained below as an audit reference; the return above is
+    # the only production path.
     lines = text.split("\n")
     boundary_chars = set("│├┤┬┴┼┌┐└┘")
     boundary_positions: set[int] = set()
@@ -232,7 +434,16 @@ def annotate_diagram_groups(sections: list[dict[str, Any]]) -> None:
             block["diagram_group"] = active_group
             grouped_blocks.setdefault(active_group, []).append(block)
         for group_id, blocks in grouped_blocks.items():
-            section["diagram_groups"][group_id] = diagram_layout("\n".join(block["text"] for block in blocks))
+            layout = diagram_layout("\n".join(block["text"] for block in blocks))
+            layout["audit"] = {
+                "status": "structured" if all(part.get("kind") == "table" for part in layout.get("parts", [])) else "flow-safe",
+                "source_block_ids": [block["id"] for block in blocks],
+                "source_line_count": len(layout.get("source_text", "").splitlines()),
+                "visible_text_sha256": hashlib.sha256(
+                    re.sub(r"[┌┐└┘├┤┬┴┼─│]", "", layout.get("source_text", "")).encode("utf-8")
+                ).hexdigest(),
+            }
+            section["diagram_groups"][group_id] = layout
 
 
 def section_blocks(root: Node, converter: Any) -> tuple[list[dict[str, Any]], int]:
@@ -348,6 +559,20 @@ def validate(payload: dict[str, Any]) -> None:
             layout = section.get("diagram_groups", {}).get(group_id)
             if not layout or not layout.get("rows") or not layout.get("source_text"):
                 raise ValueError(f"diagram group lacks a structured layout: {group_id}")
+            source_chars = Counter(re.findall(
+                r"[\u3400-\u9fffA-Za-z0-9]",
+                re.sub(r"[┌┐└┘├┤┬┴┼─│]", "", layout["source_text"]),
+            ))
+            visible_text = ""
+            for part in layout.get("parts", [layout]):
+                for row in part.get("rows", []):
+                    visible_text += str(row.get("text", ""))
+                    visible_text += "".join(str(cell.get("text", "")) for cell in row.get("cells", []))
+            visible_chars = Counter(re.findall(r"[\u3400-\u9fffA-Za-z0-9]", visible_text))
+            if source_chars != visible_chars:
+                raise ValueError(f"diagram text coverage mismatch: {group_id}")
+            if re.search(r"[┌┐└┘├┤┬┴┼─│]", visible_text):
+                raise ValueError(f"frame glyph leaked into visible diagram text: {group_id}")
     if any(is_diagram(block["text"]) and block.get("kind") != "diagram" for section in sections for block in section["blocks"]):
         raise ValueError("a box-drawing source row was left as ordinary prose")
     box_drawing_rows = sum(BOX_DRAWING.search(block["text"]) is not None for section in sections for block in section["blocks"])
