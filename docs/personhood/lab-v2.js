@@ -3,7 +3,10 @@
   'use strict';
   var KEY = 'sutta-personhood-lab-v2';
   var state = { model: 'theravada-synthesis/v2', turns: [], savedCaseId: null, selectedPath: null };
-  function base() { return (global.SUTTA_PERSONHOOD_API_BASE || '').replace(/\/$/, ''); }
+  var FALLBACK_API = global.location && (global.location.hostname === 'localhost' || global.location.hostname === '127.0.0.1')
+    ? 'http://localhost:8000'
+    : 'https://sutta-api.agreeablemeadow-9da329ca.swedencentral.azurecontainerapps.io';
+  function base() { return (global.SUTTA_PERSONHOOD_API_BASE || FALLBACK_API).replace(/\/$/, ''); }
   function headers() { var token = global.localStorage && global.localStorage.getItem('sutta_token'); return Object.assign({'Content-Type':'application/json'}, token ? {'Authorization':'Bearer ' + token} : {}); }
   function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
   function load() { try { var item = JSON.parse(global.localStorage.getItem(KEY) || 'null'); if (item) state = Object.assign(state, item); } catch (_) {} }
