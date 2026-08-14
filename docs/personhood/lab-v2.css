@@ -1,0 +1,39 @@
+.personhood-v2 { --v2-ink:#342e29; --v2-muted:#766c62; --v2-line:#e5dccf; --v2-gold:#8b6914; color:var(--v2-ink); }
+.personhood-v2 .v2-hero { background:linear-gradient(135deg,#f7f0e2,#fffdf9 58%,#edf3ef); border:1px solid var(--v2-line); border-radius:18px; padding:28px; margin-bottom:18px; box-shadow:0 8px 24px rgba(80,60,30,.08); }
+.personhood-v2 .v2-kicker { letter-spacing:.12em; text-transform:uppercase; color:var(--v2-gold); font:600 12px/1.2 system-ui,sans-serif; }
+.personhood-v2 h2,.personhood-v2 h3 { margin:0 0 8px; }
+.personhood-v2 .v2-subtitle,.personhood-v2 .v2-muted { color:var(--v2-muted); }
+.personhood-v2 .v2-chat { max-width:980px; margin:0 auto; }
+.personhood-v2 .v2-card { background:#fff; border:1px solid var(--v2-line); border-radius:14px; padding:16px; margin-bottom:16px; }
+.personhood-v2 .v2-toolbar { display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:12px; }
+.personhood-v2 .v2-segment { display:flex; gap:6px; flex-wrap:wrap; }
+.personhood-v2 button { border:1px solid #bca26b; border-radius:9px; background:#fffaf0; color:#5a4513; padding:8px 12px; cursor:pointer; font:600 13px system-ui,sans-serif; }
+.personhood-v2 button:hover { filter:brightness(.97); transform:translateY(-1px); }
+.personhood-v2 button.active,.personhood-v2 button.primary { background:#8b6914; color:#fff; border-color:#8b6914; }
+.personhood-v2 textarea { width:100%; min-height:108px; resize:vertical; border:1px solid #d9d0c4; border-radius:10px; padding:12px; font:inherit; background:#fffdfb; box-sizing:border-box; }
+.personhood-v2 .v2-message { padding:12px 14px; border-radius:12px; margin:10px 0; line-height:1.7; }
+.personhood-v2 .v2-user { background:#f3ecdc; margin-left:10%; }
+.personhood-v2 .v2-assistant { background:#f7faf6; border:1px solid #dfe9df; }
+.personhood-v2 .v2-facts { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:10px 0; }
+.personhood-v2 .v2-fact { background:#fffdf9; border:1px solid var(--v2-line); border-radius:9px; padding:9px; font-size:12px; }
+.personhood-v2 .v2-fact strong { display:block; color:#735713; margin-bottom:4px; }
+.personhood-v2 .v2-process { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.personhood-v2 .v2-stage { border-left:4px solid #a99a87; background:#fbfaf7; padding:10px 12px; border-radius:0 9px 9px 0; }
+.personhood-v2 .v2-stage.later { border-left-color:#6e55a0; background:#f6f2fb; }
+.personhood-v2 .v2-stage .v2-label { font-weight:700; }
+.personhood-v2 .v2-stage .v2-layer { float:right; font-size:11px; color:var(--v2-muted); }
+.personhood-v2 .v2-branches { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.personhood-v2 .v2-branch { border:1px solid var(--v2-line); border-radius:12px; padding:14px; background:#fffdf9; }
+.personhood-v2 .v2-branch.mindful { background:#eff8f5; border-color:#b8d7ca; }
+.personhood-v2 .v2-branch h4 { margin:0 0 6px; }
+.personhood-v2 .v2-branch ul { margin:8px 0 12px; padding-left:20px; line-height:1.6; }
+.personhood-v2 .v2-evidence { border-top:1px solid var(--v2-line); margin-top:14px; padding-top:12px; }
+.personhood-v2 .v2-evidence-item { border-bottom:1px solid #eee7de; padding:9px 0; font-size:13px; }
+.personhood-v2 .v2-evidence-item a { color:#735713; }
+.personhood-v2 .v2-status { color:var(--v2-muted); font-size:12px; margin-top:8px; }
+.personhood-v2 .v2-method { color:var(--v2-muted); font-size:12px; }
+.personhood-v2 .v2-alert { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:10px 0 14px; padding:10px 12px; border:1px solid #e4c997; border-radius:10px; background:#fff8e8; color:#704f16; font-size:13px; }
+.personhood-v2 .v2-alert strong { white-space:nowrap; }
+.personhood-v2 .v2-alert span { flex:1 1 260px; color:#806b4b; }
+.personhood-v2 .v2-alert button { padding:5px 9px; font-size:12px; }
+@media(max-width:760px) { .personhood-v2 .v2-facts,.personhood-v2 .v2-process,.personhood-v2 .v2-branches { grid-template-columns:1fr; } .personhood-v2 .v2-user { margin-left:0; } .personhood-v2 .v2-hero { padding:20px; } }

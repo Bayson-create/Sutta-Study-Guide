@@ -71,21 +71,21 @@
     var events = [];
     var index = 0;
     events.push(event(agent, index++, 'contact', 'arising', conditions, aggregates, null, null, ['sn35.23', 'sn12.23'], { statement: '门、所缘与识共同构成可观察的接触条件。' }));
-    events.push(event(agent, index++, 'coarising-aggregates', 'arising', conditions, aggregates, null, null, ['sn22.59'], { statement: '五蕴以共同生起的条件聚合显示；不是固定人格实体。' }));
+    events.push(event(agent, index++, 'coarising-aggregates', 'arising', conditions, aggregates, null, null, ['sn22.59'], { statement: '五蕴以共同生起的条件聚合显示；本事件中按经验项目观察。' }));
     events.push(event(agent, index++, 'feeling', 'arising', conditions, aggregates, null, null, ['sn12.23', 'sn22.59'], { statement: '受依触而起，标为乐、苦或不苦不乐。' }));
-    events.push(event(agent, index++, 'perception-and-thought', 'elaboration', conditions, aggregates, null, null, ['mn18'], { statement: '想与寻思可进一步展开为戏论；这不是所有心过程的物理时间序列。' }));
+    events.push(event(agent, index++, 'perception-and-thought', 'elaboration', conditions, aggregates, null, null, ['mn18'], { statement: '想与寻思可进一步展开为戏论：辨认、比较和记忆会把对象扩展成更多说法。' }));
     if (input.modelVersion === synthesis) {
       events.push(event(agent, index++, 'citta-vithi-view', 'interpretive', conditions, aggregates, null, null, ['abhidhamma.citta-vithi'], { layer: 'abhidhamma', interpretation_status: 'later-systematisation', statement: '后期上座部分析视图：以心路、随眠或速行等术语补充解释。' }));
     }
     if (branch === 'untrained') {
       events.push(event(agent, index++, 'craving', 'conditioning', conditions, aggregates, null, 'untrained', ['sn12.23'], { statement: '受缘爱：反应循环继续。' }));
-      events.push(event(agent, index++, 'clinging-and-becoming', 'conditioning', conditions, aggregates, null, 'untrained', ['sn12.23'], { statement: '取与有在本模拟中表示局部反应模式的加深，不是永久自我。' }));
+      events.push(event(agent, index++, 'clinging-and-becoming', 'conditioning', conditions, aggregates, null, 'untrained', ['sn12.23'], { statement: '取与有：对目标、立场或结果的持续投入，会使同类反应更容易再次出现。' }));
     } else {
       events.push(event(agent, index++, 'mindfulness-and-clear-comprehension', 'intervention', conditions, aggregates, null, 'trained', ['mn10', 'dn22'], { statement: '正念、明觉、戒护或暂停改变后续条件。' }));
       events.push(event(agent, index++, 'non-clinging', 'cessation', conditions, aggregates, null, 'trained', ['dn22', 'sn12.23'], { statement: '局部爱取反应链在当前情境中止息；不表示涅槃或证悟。' }));
     }
     var action = actionFor(agent, scenario, branch, intervention);
-    events.push(event(agent, index++, 'observable-action', 'expression', conditions, aggregates, action, branch, branch === 'trained' ? ['mn10'] : ['sn12.23'], { statement: '只有动作、言语、姿态等外化结果可进入交互交换。' }));
+    events.push(event(agent, index++, 'observable-action', 'expression', conditions, aggregates, action, branch, branch === 'trained' ? ['mn10'] : ['sn12.23'], { statement: '把可被他人看到、听到或感受到的行动作为下一轮共享资料。' }));
     return {
       agent_id: agent.id, agent_label: agent.label, species: agent.species,
       tendency_used: round(reactivity), training_available: round(training), branch: branch,
@@ -111,7 +111,7 @@
       scenario: input.scenario, agents: input.agents, streams: streams,
       observable_edges: edges,
       evidence_manifest_version: 'personhood-evidence/2026-08-12',
-      interpretation_notes: input.modelVersion === synthesis ? ['新增的 citta-vīthi 视图属于后期系统化解释，已逐事件标记。'] : ['本版本以经藏/律藏核心为准；不把五蕴写成线性实体或固定人格。'],
+      interpretation_notes: input.modelVersion === synthesis ? ['新增的 citta-vīthi 视图属于后期系统化解释，已逐事件标记。'] : ['本版本以经藏/律藏核心为准；按阶段标记经验项目与条件。'],
       forbidden_claims: ['nibbana-simulation', 'enlightenment-certification', 'clinical-diagnosis', 'animal-mind-reading']
     };
     var validation = P.validateTrace(trace);
