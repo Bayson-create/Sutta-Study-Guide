@@ -1,0 +1,4100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Deck · Multi-file Slide Index</title>
+<!--
+  deck_index.html — 多文件 slide deck 拼接器 · 双概览模式
+
+  概览（默认进入，两种模式按 getSeconds()%5 随机：20% 画廊 / 80% 网格）：
+   · grid  自适应网格墙：列数随页数+视口自适应，行多则倾斜变平，scale-to-fit 居中铺满（任意页数都不溢出/不失真）
+   · gallery 无限画廊：固定卡片大小，无缝无限平铺 + 缓慢漂移 + 轻微呼吸；一个 tile 含全部页（洗牌），看完所有页才重复
+  演示 present：单页 fit 缩放翻页。ESC / ⊞ 回概览。
+  性能：manifest 每项可带 thumb（预渲染缩略图），概览即用 <img> 平铺，避免 N 个 iframe 同时加载。
+
+  用法：复制为 index.html；建 slides/ 放每页独立 HTML；编辑 MANIFEST。
+  可选覆盖：window.DECK_OVERVIEW = 'grid' | 'gallery'（不写则随机）；URL ?ov=grid|gallery 临时强制。
+  键盘（演示）：← / → / Space / PgUp / PgDown / Home / End / 1-9 / P 打印 / ESC 回概览
+-->
+<script>
+  window.DECK_MANIFEST = [
+  {
+    "file": "slides/00001-v4-2ceaa5d229e76bfa-1.html",
+    "label": "abh01a_att:1193 · 1/2"
+  },
+  {
+    "file": "slides/00002-v4-2ceaa5d229e76bfa-2.html",
+    "label": "abh01a_att:1193 · 2/2"
+  },
+  {
+    "file": "slides/00003-v4-879b885256422f6b-1.html",
+    "label": "abh01m_mul:563 · 1/3"
+  },
+  {
+    "file": "slides/00004-v4-879b885256422f6b-2.html",
+    "label": "abh01m_mul:563 · 2/3"
+  },
+  {
+    "file": "slides/00005-v4-879b885256422f6b-3.html",
+    "label": "abh01m_mul:563 · 3/3"
+  },
+  {
+    "file": "slides/00006-v4-9c4172e2bb74226f-1.html",
+    "label": "abh01m_mul:589 · 1/2"
+  },
+  {
+    "file": "slides/00007-v4-9c4172e2bb74226f-2.html",
+    "label": "abh01m_mul:589 · 2/2"
+  },
+  {
+    "file": "slides/00008-v4-c89243d54ed40a01-1.html",
+    "label": "abh01m_mul:592 · 1/2"
+  },
+  {
+    "file": "slides/00009-v4-c89243d54ed40a01-2.html",
+    "label": "abh01m_mul:592 · 2/2"
+  },
+  {
+    "file": "slides/00010-v4-f4aa1f9590a684f2-1.html",
+    "label": "abh01m_mul:759 · 1/4"
+  },
+  {
+    "file": "slides/00011-v4-f4aa1f9590a684f2-2.html",
+    "label": "abh01m_mul:759 · 2/4"
+  },
+  {
+    "file": "slides/00012-v4-f4aa1f9590a684f2-3.html",
+    "label": "abh01m_mul:759 · 3/4"
+  },
+  {
+    "file": "slides/00013-v4-f4aa1f9590a684f2-4.html",
+    "label": "abh01m_mul:759 · 4/4"
+  },
+  {
+    "file": "slides/00014-v4-c54c83d171a0f487-1.html",
+    "label": "abh01t_tik:335 · 1/3"
+  },
+  {
+    "file": "slides/00015-v4-c54c83d171a0f487-2.html",
+    "label": "abh01t_tik:335 · 2/3"
+  },
+  {
+    "file": "slides/00016-v4-c54c83d171a0f487-3.html",
+    "label": "abh01t_tik:335 · 3/3"
+  },
+  {
+    "file": "slides/00017-v4-634d76d029be332c-1.html",
+    "label": "abh02m_mul:1630 · 1/6"
+  },
+  {
+    "file": "slides/00018-v4-634d76d029be332c-2.html",
+    "label": "abh02m_mul:1630 · 2/6"
+  },
+  {
+    "file": "slides/00019-v4-634d76d029be332c-3.html",
+    "label": "abh02m_mul:1630 · 3/6"
+  },
+  {
+    "file": "slides/00020-v4-634d76d029be332c-4.html",
+    "label": "abh02m_mul:1630 · 4/6"
+  },
+  {
+    "file": "slides/00021-v4-634d76d029be332c-5.html",
+    "label": "abh02m_mul:1630 · 5/6"
+  },
+  {
+    "file": "slides/00022-v4-634d76d029be332c-6.html",
+    "label": "abh02m_mul:1630 · 6/6"
+  },
+  {
+    "file": "slides/00023-v4-940397e5a7e08cb6-1.html",
+    "label": "abh03m1_mul:8 · 1/1"
+  },
+  {
+    "file": "slides/00024-v4-d69a5dc0f6435f6f-1.html",
+    "label": "abh03m3_mul:832 · 1/2"
+  },
+  {
+    "file": "slides/00025-v4-d69a5dc0f6435f6f-2.html",
+    "label": "abh03m3_mul:832 · 2/2"
+  },
+  {
+    "file": "slides/00026-v4-4026afb2f89d9148-1.html",
+    "label": "abh03m3_mul:833 · 1/3"
+  },
+  {
+    "file": "slides/00027-v4-4026afb2f89d9148-2.html",
+    "label": "abh03m3_mul:833 · 2/3"
+  },
+  {
+    "file": "slides/00028-v4-4026afb2f89d9148-3.html",
+    "label": "abh03m3_mul:833 · 3/3"
+  },
+  {
+    "file": "slides/00029-v4-2d06621d2eafef5f-1.html",
+    "label": "abh03m8_mul:817 · 1/3"
+  },
+  {
+    "file": "slides/00030-v4-2d06621d2eafef5f-2.html",
+    "label": "abh03m8_mul:817 · 2/3"
+  },
+  {
+    "file": "slides/00031-v4-2d06621d2eafef5f-3.html",
+    "label": "abh03m8_mul:817 · 3/3"
+  },
+  {
+    "file": "slides/00032-v4-b4505f2eb0bd9d2f-1.html",
+    "label": "abh04t_nrf:17 · 1/7"
+  },
+  {
+    "file": "slides/00033-v4-b4505f2eb0bd9d2f-2.html",
+    "label": "abh04t_nrf:17 · 2/7"
+  },
+  {
+    "file": "slides/00034-v4-b4505f2eb0bd9d2f-3.html",
+    "label": "abh04t_nrf:17 · 3/7"
+  },
+  {
+    "file": "slides/00035-v4-b4505f2eb0bd9d2f-4.html",
+    "label": "abh04t_nrf:17 · 4/7"
+  },
+  {
+    "file": "slides/00036-v4-b4505f2eb0bd9d2f-5.html",
+    "label": "abh04t_nrf:17 · 5/7"
+  },
+  {
+    "file": "slides/00037-v4-b4505f2eb0bd9d2f-6.html",
+    "label": "abh04t_nrf:17 · 6/7"
+  },
+  {
+    "file": "slides/00038-v4-b4505f2eb0bd9d2f-7.html",
+    "label": "abh04t_nrf:17 · 7/7"
+  },
+  {
+    "file": "slides/00039-v4-782166259eb31b2c-1.html",
+    "label": "abh07t_nrf:1000 · 1/2"
+  },
+  {
+    "file": "slides/00040-v4-782166259eb31b2c-2.html",
+    "label": "abh07t_nrf:1000 · 2/2"
+  },
+  {
+    "file": "slides/00041-v4-570c463e84687604-1.html",
+    "label": "abh07t_nrf:1575 · 1/3"
+  },
+  {
+    "file": "slides/00042-v4-570c463e84687604-2.html",
+    "label": "abh07t_nrf:1575 · 2/3"
+  },
+  {
+    "file": "slides/00043-v4-570c463e84687604-3.html",
+    "label": "abh07t_nrf:1575 · 3/3"
+  },
+  {
+    "file": "slides/00044-v4-511027494e6ab644-1.html",
+    "label": "abh07t_nrf:1587 · 1/2"
+  },
+  {
+    "file": "slides/00045-v4-511027494e6ab644-2.html",
+    "label": "abh07t_nrf:1587 · 2/2"
+  },
+  {
+    "file": "slides/00046-v4-988302bc8ef8f6b8-1.html",
+    "label": "abh08t_nrf:1925 · 1/2"
+  },
+  {
+    "file": "slides/00047-v4-988302bc8ef8f6b8-2.html",
+    "label": "abh08t_nrf:1925 · 2/2"
+  },
+  {
+    "file": "slides/00048-v4-53368f693184c5f0-1.html",
+    "label": "abh08t_nrf:1927 · 1/2"
+  },
+  {
+    "file": "slides/00049-v4-53368f693184c5f0-2.html",
+    "label": "abh08t_nrf:1927 · 2/2"
+  },
+  {
+    "file": "slides/00050-v4-158986ba459f41b6-1.html",
+    "label": "abh08t_nrf:1929 · 1/5"
+  },
+  {
+    "file": "slides/00051-v4-158986ba459f41b6-2.html",
+    "label": "abh08t_nrf:1929 · 2/5"
+  },
+  {
+    "file": "slides/00052-v4-158986ba459f41b6-3.html",
+    "label": "abh08t_nrf:1929 · 3/5"
+  },
+  {
+    "file": "slides/00053-v4-158986ba459f41b6-4.html",
+    "label": "abh08t_nrf:1929 · 4/5"
+  },
+  {
+    "file": "slides/00054-v4-158986ba459f41b6-5.html",
+    "label": "abh08t_nrf:1929 · 5/5"
+  },
+  {
+    "file": "slides/00055-v4-992bedbaa820bb35-1.html",
+    "label": "abh08t_nrf:2273 · 1/2"
+  },
+  {
+    "file": "slides/00056-v4-992bedbaa820bb35-2.html",
+    "label": "abh08t_nrf:2273 · 2/2"
+  },
+  {
+    "file": "slides/00057-v4-44eced79dec8341c-1.html",
+    "label": "abh09t_nrf:1445 · 1/5"
+  },
+  {
+    "file": "slides/00058-v4-44eced79dec8341c-2.html",
+    "label": "abh09t_nrf:1445 · 2/5"
+  },
+  {
+    "file": "slides/00059-v4-44eced79dec8341c-3.html",
+    "label": "abh09t_nrf:1445 · 3/5"
+  },
+  {
+    "file": "slides/00060-v4-44eced79dec8341c-4.html",
+    "label": "abh09t_nrf:1445 · 4/5"
+  },
+  {
+    "file": "slides/00061-v4-44eced79dec8341c-5.html",
+    "label": "abh09t_nrf:1445 · 5/5"
+  },
+  {
+    "file": "slides/00062-v4-7b86689f0740939b-1.html",
+    "label": "abh09t_nrf:1921 · 1/4"
+  },
+  {
+    "file": "slides/00063-v4-7b86689f0740939b-2.html",
+    "label": "abh09t_nrf:1921 · 2/4"
+  },
+  {
+    "file": "slides/00064-v4-7b86689f0740939b-3.html",
+    "label": "abh09t_nrf:1921 · 3/4"
+  },
+  {
+    "file": "slides/00065-v4-7b86689f0740939b-4.html",
+    "label": "abh09t_nrf:1921 · 4/4"
+  },
+  {
+    "file": "slides/00066-v4-df6a08ec5e6cb5a4-1.html",
+    "label": "e0101n_mul:247 · 1/6"
+  },
+  {
+    "file": "slides/00067-v4-df6a08ec5e6cb5a4-2.html",
+    "label": "e0101n_mul:247 · 2/6"
+  },
+  {
+    "file": "slides/00068-v4-df6a08ec5e6cb5a4-3.html",
+    "label": "e0101n_mul:247 · 3/6"
+  },
+  {
+    "file": "slides/00069-v4-df6a08ec5e6cb5a4-4.html",
+    "label": "e0101n_mul:247 · 4/6"
+  },
+  {
+    "file": "slides/00070-v4-df6a08ec5e6cb5a4-5.html",
+    "label": "e0101n_mul:247 · 5/6"
+  },
+  {
+    "file": "slides/00071-v4-df6a08ec5e6cb5a4-6.html",
+    "label": "e0101n_mul:247 · 6/6"
+  },
+  {
+    "file": "slides/00072-v4-f2b2fcac1787c8e2-1.html",
+    "label": "e0101n_mul:610 · 1/4"
+  },
+  {
+    "file": "slides/00073-v4-f2b2fcac1787c8e2-2.html",
+    "label": "e0101n_mul:610 · 2/4"
+  },
+  {
+    "file": "slides/00074-v4-f2b2fcac1787c8e2-3.html",
+    "label": "e0101n_mul:610 · 3/4"
+  },
+  {
+    "file": "slides/00075-v4-f2b2fcac1787c8e2-4.html",
+    "label": "e0101n_mul:610 · 4/4"
+  },
+  {
+    "file": "slides/00076-v4-6b989993a01c45a1-1.html",
+    "label": "e0101n_mul:980 · 1/5"
+  },
+  {
+    "file": "slides/00077-v4-6b989993a01c45a1-2.html",
+    "label": "e0101n_mul:980 · 2/5"
+  },
+  {
+    "file": "slides/00078-v4-6b989993a01c45a1-3.html",
+    "label": "e0101n_mul:980 · 3/5"
+  },
+  {
+    "file": "slides/00079-v4-6b989993a01c45a1-4.html",
+    "label": "e0101n_mul:980 · 4/5"
+  },
+  {
+    "file": "slides/00080-v4-6b989993a01c45a1-5.html",
+    "label": "e0101n_mul:980 · 5/5"
+  },
+  {
+    "file": "slides/00081-v4-e75c9cc511c1098a-1.html",
+    "label": "e0101n_mul:1004 · 1/3"
+  },
+  {
+    "file": "slides/00082-v4-e75c9cc511c1098a-2.html",
+    "label": "e0101n_mul:1004 · 2/3"
+  },
+  {
+    "file": "slides/00083-v4-e75c9cc511c1098a-3.html",
+    "label": "e0101n_mul:1004 · 3/3"
+  },
+  {
+    "file": "slides/00084-v4-ea049448b08f67a7-1.html",
+    "label": "e0101n_mul:1063 · 1/3"
+  },
+  {
+    "file": "slides/00085-v4-ea049448b08f67a7-2.html",
+    "label": "e0101n_mul:1063 · 2/3"
+  },
+  {
+    "file": "slides/00086-v4-ea049448b08f67a7-3.html",
+    "label": "e0101n_mul:1063 · 3/3"
+  },
+  {
+    "file": "slides/00087-v4-b0afd4b76f89c1ad-1.html",
+    "label": "e0101n_mul:1408 · 1/2"
+  },
+  {
+    "file": "slides/00088-v4-b0afd4b76f89c1ad-2.html",
+    "label": "e0101n_mul:1408 · 2/2"
+  },
+  {
+    "file": "slides/00089-v4-9a95e5036564af08-1.html",
+    "label": "e0103n_att:393 · 1/4"
+  },
+  {
+    "file": "slides/00090-v4-9a95e5036564af08-2.html",
+    "label": "e0103n_att:393 · 2/4"
+  },
+  {
+    "file": "slides/00091-v4-9a95e5036564af08-3.html",
+    "label": "e0103n_att:393 · 3/4"
+  },
+  {
+    "file": "slides/00092-v4-9a95e5036564af08-4.html",
+    "label": "e0103n_att:393 · 4/4"
+  },
+  {
+    "file": "slides/00093-v4-f106fe7dffee69b2-1.html",
+    "label": "e0103n_att:835 · 1/5"
+  },
+  {
+    "file": "slides/00094-v4-f106fe7dffee69b2-2.html",
+    "label": "e0103n_att:835 · 2/5"
+  },
+  {
+    "file": "slides/00095-v4-f106fe7dffee69b2-3.html",
+    "label": "e0103n_att:835 · 3/5"
+  },
+  {
+    "file": "slides/00096-v4-f106fe7dffee69b2-4.html",
+    "label": "e0103n_att:835 · 4/5"
+  },
+  {
+    "file": "slides/00097-v4-f106fe7dffee69b2-5.html",
+    "label": "e0103n_att:835 · 5/5"
+  },
+  {
+    "file": "slides/00098-v4-cc03ec2b1fec8262-1.html",
+    "label": "e0103n_att:849 · 1/6"
+  },
+  {
+    "file": "slides/00099-v4-cc03ec2b1fec8262-2.html",
+    "label": "e0103n_att:849 · 2/6"
+  },
+  {
+    "file": "slides/00100-v4-cc03ec2b1fec8262-3.html",
+    "label": "e0103n_att:849 · 3/6"
+  },
+  {
+    "file": "slides/00101-v4-cc03ec2b1fec8262-4.html",
+    "label": "e0103n_att:849 · 4/6"
+  },
+  {
+    "file": "slides/00102-v4-cc03ec2b1fec8262-5.html",
+    "label": "e0103n_att:849 · 5/6"
+  },
+  {
+    "file": "slides/00103-v4-cc03ec2b1fec8262-6.html",
+    "label": "e0103n_att:849 · 6/6"
+  },
+  {
+    "file": "slides/00104-v4-727dd987241c54f8-1.html",
+    "label": "e0103n_att:1296 · 1/6"
+  },
+  {
+    "file": "slides/00105-v4-727dd987241c54f8-2.html",
+    "label": "e0103n_att:1296 · 2/6"
+  },
+  {
+    "file": "slides/00106-v4-727dd987241c54f8-3.html",
+    "label": "e0103n_att:1296 · 3/6"
+  },
+  {
+    "file": "slides/00107-v4-727dd987241c54f8-4.html",
+    "label": "e0103n_att:1296 · 4/6"
+  },
+  {
+    "file": "slides/00108-v4-727dd987241c54f8-5.html",
+    "label": "e0103n_att:1296 · 5/6"
+  },
+  {
+    "file": "slides/00109-v4-727dd987241c54f8-6.html",
+    "label": "e0103n_att:1296 · 6/6"
+  },
+  {
+    "file": "slides/00110-v4-aedb198adcfd4db7-1.html",
+    "label": "e0103n_att:1328 · 1/3"
+  },
+  {
+    "file": "slides/00111-v4-aedb198adcfd4db7-2.html",
+    "label": "e0103n_att:1328 · 2/3"
+  },
+  {
+    "file": "slides/00112-v4-aedb198adcfd4db7-3.html",
+    "label": "e0103n_att:1328 · 3/3"
+  },
+  {
+    "file": "slides/00113-v4-5c4785b3cdd1c820-1.html",
+    "label": "e0103n_att:1364 · 1/2"
+  },
+  {
+    "file": "slides/00114-v4-5c4785b3cdd1c820-2.html",
+    "label": "e0103n_att:1364 · 2/2"
+  },
+  {
+    "file": "slides/00115-v4-d53c224a99bb55a7-1.html",
+    "label": "e0301n_nrf:256 · 1/5"
+  },
+  {
+    "file": "slides/00116-v4-d53c224a99bb55a7-2.html",
+    "label": "e0301n_nrf:256 · 2/5"
+  },
+  {
+    "file": "slides/00117-v4-d53c224a99bb55a7-3.html",
+    "label": "e0301n_nrf:256 · 3/5"
+  },
+  {
+    "file": "slides/00118-v4-d53c224a99bb55a7-4.html",
+    "label": "e0301n_nrf:256 · 4/5"
+  },
+  {
+    "file": "slides/00119-v4-d53c224a99bb55a7-5.html",
+    "label": "e0301n_nrf:256 · 5/5"
+  },
+  {
+    "file": "slides/00120-v4-08fe4a0ca8ad442b-1.html",
+    "label": "e0301n_nrf:257 · 1/5"
+  },
+  {
+    "file": "slides/00121-v4-08fe4a0ca8ad442b-2.html",
+    "label": "e0301n_nrf:257 · 2/5"
+  },
+  {
+    "file": "slides/00122-v4-08fe4a0ca8ad442b-3.html",
+    "label": "e0301n_nrf:257 · 3/5"
+  },
+  {
+    "file": "slides/00123-v4-08fe4a0ca8ad442b-4.html",
+    "label": "e0301n_nrf:257 · 4/5"
+  },
+  {
+    "file": "slides/00124-v4-08fe4a0ca8ad442b-5.html",
+    "label": "e0301n_nrf:257 · 5/5"
+  },
+  {
+    "file": "slides/00125-v4-59ae7c907251c62a-1.html",
+    "label": "e0301n_nrf:360 · 1/2"
+  },
+  {
+    "file": "slides/00126-v4-59ae7c907251c62a-2.html",
+    "label": "e0301n_nrf:360 · 2/2"
+  },
+  {
+    "file": "slides/00127-v4-3e57ef7ef772b27f-1.html",
+    "label": "e0301n_nrf:483 · 1/6"
+  },
+  {
+    "file": "slides/00128-v4-3e57ef7ef772b27f-2.html",
+    "label": "e0301n_nrf:483 · 2/6"
+  },
+  {
+    "file": "slides/00129-v4-3e57ef7ef772b27f-3.html",
+    "label": "e0301n_nrf:483 · 3/6"
+  },
+  {
+    "file": "slides/00130-v4-3e57ef7ef772b27f-4.html",
+    "label": "e0301n_nrf:483 · 4/6"
+  },
+  {
+    "file": "slides/00131-v4-3e57ef7ef772b27f-5.html",
+    "label": "e0301n_nrf:483 · 5/6"
+  },
+  {
+    "file": "slides/00132-v4-3e57ef7ef772b27f-6.html",
+    "label": "e0301n_nrf:483 · 6/6"
+  },
+  {
+    "file": "slides/00133-v4-998a3d816faab277-1.html",
+    "label": "e0301n_nrf:517 · 1/3"
+  },
+  {
+    "file": "slides/00134-v4-998a3d816faab277-2.html",
+    "label": "e0301n_nrf:517 · 2/3"
+  },
+  {
+    "file": "slides/00135-v4-998a3d816faab277-3.html",
+    "label": "e0301n_nrf:517 · 3/3"
+  },
+  {
+    "file": "slides/00136-v4-d3d5ff7488204105-1.html",
+    "label": "e0301n_nrf:733 · 1/8"
+  },
+  {
+    "file": "slides/00137-v4-d3d5ff7488204105-2.html",
+    "label": "e0301n_nrf:733 · 2/8"
+  },
+  {
+    "file": "slides/00138-v4-d3d5ff7488204105-3.html",
+    "label": "e0301n_nrf:733 · 3/8"
+  },
+  {
+    "file": "slides/00139-v4-d3d5ff7488204105-4.html",
+    "label": "e0301n_nrf:733 · 4/8"
+  },
+  {
+    "file": "slides/00140-v4-d3d5ff7488204105-5.html",
+    "label": "e0301n_nrf:733 · 5/8"
+  },
+  {
+    "file": "slides/00141-v4-d3d5ff7488204105-6.html",
+    "label": "e0301n_nrf:733 · 6/8"
+  },
+  {
+    "file": "slides/00142-v4-d3d5ff7488204105-7.html",
+    "label": "e0301n_nrf:733 · 7/8"
+  },
+  {
+    "file": "slides/00143-v4-d3d5ff7488204105-8.html",
+    "label": "e0301n_nrf:733 · 8/8"
+  },
+  {
+    "file": "slides/00144-v4-a6ddaf9887f6edd5-1.html",
+    "label": "e0301n_nrf:1220 · 1/4"
+  },
+  {
+    "file": "slides/00145-v4-a6ddaf9887f6edd5-2.html",
+    "label": "e0301n_nrf:1220 · 2/4"
+  },
+  {
+    "file": "slides/00146-v4-a6ddaf9887f6edd5-3.html",
+    "label": "e0301n_nrf:1220 · 3/4"
+  },
+  {
+    "file": "slides/00147-v4-a6ddaf9887f6edd5-4.html",
+    "label": "e0301n_nrf:1220 · 4/4"
+  },
+  {
+    "file": "slides/00148-v4-434e5ec45def6972-1.html",
+    "label": "e0301n_nrf:1227 · 1/5"
+  },
+  {
+    "file": "slides/00149-v4-434e5ec45def6972-2.html",
+    "label": "e0301n_nrf:1227 · 2/5"
+  },
+  {
+    "file": "slides/00150-v4-434e5ec45def6972-3.html",
+    "label": "e0301n_nrf:1227 · 3/5"
+  },
+  {
+    "file": "slides/00151-v4-434e5ec45def6972-4.html",
+    "label": "e0301n_nrf:1227 · 4/5"
+  },
+  {
+    "file": "slides/00152-v4-434e5ec45def6972-5.html",
+    "label": "e0301n_nrf:1227 · 5/5"
+  },
+  {
+    "file": "slides/00153-v4-8b32396e551a1f54-1.html",
+    "label": "e0301n_nrf:1228 · 1/4"
+  },
+  {
+    "file": "slides/00154-v4-8b32396e551a1f54-2.html",
+    "label": "e0301n_nrf:1228 · 2/4"
+  },
+  {
+    "file": "slides/00155-v4-8b32396e551a1f54-3.html",
+    "label": "e0301n_nrf:1228 · 3/4"
+  },
+  {
+    "file": "slides/00156-v4-8b32396e551a1f54-4.html",
+    "label": "e0301n_nrf:1228 · 4/4"
+  },
+  {
+    "file": "slides/00157-v4-908a35b557f682a7-1.html",
+    "label": "e0301n_nrf:1231 · 1/3"
+  },
+  {
+    "file": "slides/00158-v4-908a35b557f682a7-2.html",
+    "label": "e0301n_nrf:1231 · 2/3"
+  },
+  {
+    "file": "slides/00159-v4-908a35b557f682a7-3.html",
+    "label": "e0301n_nrf:1231 · 3/3"
+  },
+  {
+    "file": "slides/00160-v4-5cd0d4dc770671ad-1.html",
+    "label": "e0301n_nrf:1234 · 1/1"
+  },
+  {
+    "file": "slides/00161-v4-fdf9ff231d6a87fe-1.html",
+    "label": "e0301n_nrf:1392 · 1/14"
+  },
+  {
+    "file": "slides/00162-v4-fdf9ff231d6a87fe-2.html",
+    "label": "e0301n_nrf:1392 · 2/14"
+  },
+  {
+    "file": "slides/00163-v4-fdf9ff231d6a87fe-3.html",
+    "label": "e0301n_nrf:1392 · 3/14"
+  },
+  {
+    "file": "slides/00164-v4-fdf9ff231d6a87fe-4.html",
+    "label": "e0301n_nrf:1392 · 4/14"
+  },
+  {
+    "file": "slides/00165-v4-fdf9ff231d6a87fe-5.html",
+    "label": "e0301n_nrf:1392 · 5/14"
+  },
+  {
+    "file": "slides/00166-v4-fdf9ff231d6a87fe-6.html",
+    "label": "e0301n_nrf:1392 · 6/14"
+  },
+  {
+    "file": "slides/00167-v4-fdf9ff231d6a87fe-7.html",
+    "label": "e0301n_nrf:1392 · 7/14"
+  },
+  {
+    "file": "slides/00168-v4-fdf9ff231d6a87fe-8.html",
+    "label": "e0301n_nrf:1392 · 8/14"
+  },
+  {
+    "file": "slides/00169-v4-fdf9ff231d6a87fe-9.html",
+    "label": "e0301n_nrf:1392 · 9/14"
+  },
+  {
+    "file": "slides/00170-v4-fdf9ff231d6a87fe-10.html",
+    "label": "e0301n_nrf:1392 · 10/14"
+  },
+  {
+    "file": "slides/00171-v4-fdf9ff231d6a87fe-11.html",
+    "label": "e0301n_nrf:1392 · 11/14"
+  },
+  {
+    "file": "slides/00172-v4-fdf9ff231d6a87fe-12.html",
+    "label": "e0301n_nrf:1392 · 12/14"
+  },
+  {
+    "file": "slides/00173-v4-fdf9ff231d6a87fe-13.html",
+    "label": "e0301n_nrf:1392 · 13/14"
+  },
+  {
+    "file": "slides/00174-v4-fdf9ff231d6a87fe-14.html",
+    "label": "e0301n_nrf:1392 · 14/14"
+  },
+  {
+    "file": "slides/00175-v4-dfe60600e00cd390-1.html",
+    "label": "e0301n_nrf:1395 · 1/14"
+  },
+  {
+    "file": "slides/00176-v4-dfe60600e00cd390-2.html",
+    "label": "e0301n_nrf:1395 · 2/14"
+  },
+  {
+    "file": "slides/00177-v4-dfe60600e00cd390-3.html",
+    "label": "e0301n_nrf:1395 · 3/14"
+  },
+  {
+    "file": "slides/00178-v4-dfe60600e00cd390-4.html",
+    "label": "e0301n_nrf:1395 · 4/14"
+  },
+  {
+    "file": "slides/00179-v4-dfe60600e00cd390-5.html",
+    "label": "e0301n_nrf:1395 · 5/14"
+  },
+  {
+    "file": "slides/00180-v4-dfe60600e00cd390-6.html",
+    "label": "e0301n_nrf:1395 · 6/14"
+  },
+  {
+    "file": "slides/00181-v4-dfe60600e00cd390-7.html",
+    "label": "e0301n_nrf:1395 · 7/14"
+  },
+  {
+    "file": "slides/00182-v4-dfe60600e00cd390-8.html",
+    "label": "e0301n_nrf:1395 · 8/14"
+  },
+  {
+    "file": "slides/00183-v4-dfe60600e00cd390-9.html",
+    "label": "e0301n_nrf:1395 · 9/14"
+  },
+  {
+    "file": "slides/00184-v4-dfe60600e00cd390-10.html",
+    "label": "e0301n_nrf:1395 · 10/14"
+  },
+  {
+    "file": "slides/00185-v4-dfe60600e00cd390-11.html",
+    "label": "e0301n_nrf:1395 · 11/14"
+  },
+  {
+    "file": "slides/00186-v4-dfe60600e00cd390-12.html",
+    "label": "e0301n_nrf:1395 · 12/14"
+  },
+  {
+    "file": "slides/00187-v4-dfe60600e00cd390-13.html",
+    "label": "e0301n_nrf:1395 · 13/14"
+  },
+  {
+    "file": "slides/00188-v4-dfe60600e00cd390-14.html",
+    "label": "e0301n_nrf:1395 · 14/14"
+  },
+  {
+    "file": "slides/00189-v4-b94307e9750eed9a-1.html",
+    "label": "e0301n_nrf:1401 · 1/26"
+  },
+  {
+    "file": "slides/00190-v4-b94307e9750eed9a-2.html",
+    "label": "e0301n_nrf:1401 · 2/26"
+  },
+  {
+    "file": "slides/00191-v4-b94307e9750eed9a-3.html",
+    "label": "e0301n_nrf:1401 · 3/26"
+  },
+  {
+    "file": "slides/00192-v4-b94307e9750eed9a-4.html",
+    "label": "e0301n_nrf:1401 · 4/26"
+  },
+  {
+    "file": "slides/00193-v4-b94307e9750eed9a-5.html",
+    "label": "e0301n_nrf:1401 · 5/26"
+  },
+  {
+    "file": "slides/00194-v4-b94307e9750eed9a-6.html",
+    "label": "e0301n_nrf:1401 · 6/26"
+  },
+  {
+    "file": "slides/00195-v4-b94307e9750eed9a-7.html",
+    "label": "e0301n_nrf:1401 · 7/26"
+  },
+  {
+    "file": "slides/00196-v4-b94307e9750eed9a-8.html",
+    "label": "e0301n_nrf:1401 · 8/26"
+  },
+  {
+    "file": "slides/00197-v4-b94307e9750eed9a-9.html",
+    "label": "e0301n_nrf:1401 · 9/26"
+  },
+  {
+    "file": "slides/00198-v4-b94307e9750eed9a-10.html",
+    "label": "e0301n_nrf:1401 · 10/26"
+  },
+  {
+    "file": "slides/00199-v4-b94307e9750eed9a-11.html",
+    "label": "e0301n_nrf:1401 · 11/26"
+  },
+  {
+    "file": "slides/00200-v4-b94307e9750eed9a-12.html",
+    "label": "e0301n_nrf:1401 · 12/26"
+  },
+  {
+    "file": "slides/00201-v4-b94307e9750eed9a-13.html",
+    "label": "e0301n_nrf:1401 · 13/26"
+  },
+  {
+    "file": "slides/00202-v4-b94307e9750eed9a-14.html",
+    "label": "e0301n_nrf:1401 · 14/26"
+  },
+  {
+    "file": "slides/00203-v4-b94307e9750eed9a-15.html",
+    "label": "e0301n_nrf:1401 · 15/26"
+  },
+  {
+    "file": "slides/00204-v4-b94307e9750eed9a-16.html",
+    "label": "e0301n_nrf:1401 · 16/26"
+  },
+  {
+    "file": "slides/00205-v4-b94307e9750eed9a-17.html",
+    "label": "e0301n_nrf:1401 · 17/26"
+  },
+  {
+    "file": "slides/00206-v4-b94307e9750eed9a-18.html",
+    "label": "e0301n_nrf:1401 · 18/26"
+  },
+  {
+    "file": "slides/00207-v4-b94307e9750eed9a-19.html",
+    "label": "e0301n_nrf:1401 · 19/26"
+  },
+  {
+    "file": "slides/00208-v4-b94307e9750eed9a-20.html",
+    "label": "e0301n_nrf:1401 · 20/26"
+  },
+  {
+    "file": "slides/00209-v4-b94307e9750eed9a-21.html",
+    "label": "e0301n_nrf:1401 · 21/26"
+  },
+  {
+    "file": "slides/00210-v4-b94307e9750eed9a-22.html",
+    "label": "e0301n_nrf:1401 · 22/26"
+  },
+  {
+    "file": "slides/00211-v4-b94307e9750eed9a-23.html",
+    "label": "e0301n_nrf:1401 · 23/26"
+  },
+  {
+    "file": "slides/00212-v4-b94307e9750eed9a-24.html",
+    "label": "e0301n_nrf:1401 · 24/26"
+  },
+  {
+    "file": "slides/00213-v4-b94307e9750eed9a-25.html",
+    "label": "e0301n_nrf:1401 · 25/26"
+  },
+  {
+    "file": "slides/00214-v4-b94307e9750eed9a-26.html",
+    "label": "e0301n_nrf:1401 · 26/26"
+  },
+  {
+    "file": "slides/00215-v4-1309bf32edcf48cd-1.html",
+    "label": "e0301n_nrf:1406 · 1/42"
+  },
+  {
+    "file": "slides/00216-v4-1309bf32edcf48cd-2.html",
+    "label": "e0301n_nrf:1406 · 2/42"
+  },
+  {
+    "file": "slides/00217-v4-1309bf32edcf48cd-3.html",
+    "label": "e0301n_nrf:1406 · 3/42"
+  },
+  {
+    "file": "slides/00218-v4-1309bf32edcf48cd-4.html",
+    "label": "e0301n_nrf:1406 · 4/42"
+  },
+  {
+    "file": "slides/00219-v4-1309bf32edcf48cd-5.html",
+    "label": "e0301n_nrf:1406 · 5/42"
+  },
+  {
+    "file": "slides/00220-v4-1309bf32edcf48cd-6.html",
+    "label": "e0301n_nrf:1406 · 6/42"
+  },
+  {
+    "file": "slides/00221-v4-1309bf32edcf48cd-7.html",
+    "label": "e0301n_nrf:1406 · 7/42"
+  },
+  {
+    "file": "slides/00222-v4-1309bf32edcf48cd-8.html",
+    "label": "e0301n_nrf:1406 · 8/42"
+  },
+  {
+    "file": "slides/00223-v4-1309bf32edcf48cd-9.html",
+    "label": "e0301n_nrf:1406 · 9/42"
+  },
+  {
+    "file": "slides/00224-v4-1309bf32edcf48cd-10.html",
+    "label": "e0301n_nrf:1406 · 10/42"
+  },
+  {
+    "file": "slides/00225-v4-1309bf32edcf48cd-11.html",
+    "label": "e0301n_nrf:1406 · 11/42"
+  },
+  {
+    "file": "slides/00226-v4-1309bf32edcf48cd-12.html",
+    "label": "e0301n_nrf:1406 · 12/42"
+  },
+  {
+    "file": "slides/00227-v4-1309bf32edcf48cd-13.html",
+    "label": "e0301n_nrf:1406 · 13/42"
+  },
+  {
+    "file": "slides/00228-v4-1309bf32edcf48cd-14.html",
+    "label": "e0301n_nrf:1406 · 14/42"
+  },
+  {
+    "file": "slides/00229-v4-1309bf32edcf48cd-15.html",
+    "label": "e0301n_nrf:1406 · 15/42"
+  },
+  {
+    "file": "slides/00230-v4-1309bf32edcf48cd-16.html",
+    "label": "e0301n_nrf:1406 · 16/42"
+  },
+  {
+    "file": "slides/00231-v4-1309bf32edcf48cd-17.html",
+    "label": "e0301n_nrf:1406 · 17/42"
+  },
+  {
+    "file": "slides/00232-v4-1309bf32edcf48cd-18.html",
+    "label": "e0301n_nrf:1406 · 18/42"
+  },
+  {
+    "file": "slides/00233-v4-1309bf32edcf48cd-19.html",
+    "label": "e0301n_nrf:1406 · 19/42"
+  },
+  {
+    "file": "slides/00234-v4-1309bf32edcf48cd-20.html",
+    "label": "e0301n_nrf:1406 · 20/42"
+  },
+  {
+    "file": "slides/00235-v4-1309bf32edcf48cd-21.html",
+    "label": "e0301n_nrf:1406 · 21/42"
+  },
+  {
+    "file": "slides/00236-v4-1309bf32edcf48cd-22.html",
+    "label": "e0301n_nrf:1406 · 22/42"
+  },
+  {
+    "file": "slides/00237-v4-1309bf32edcf48cd-23.html",
+    "label": "e0301n_nrf:1406 · 23/42"
+  },
+  {
+    "file": "slides/00238-v4-1309bf32edcf48cd-24.html",
+    "label": "e0301n_nrf:1406 · 24/42"
+  },
+  {
+    "file": "slides/00239-v4-1309bf32edcf48cd-25.html",
+    "label": "e0301n_nrf:1406 · 25/42"
+  },
+  {
+    "file": "slides/00240-v4-1309bf32edcf48cd-26.html",
+    "label": "e0301n_nrf:1406 · 26/42"
+  },
+  {
+    "file": "slides/00241-v4-1309bf32edcf48cd-27.html",
+    "label": "e0301n_nrf:1406 · 27/42"
+  },
+  {
+    "file": "slides/00242-v4-1309bf32edcf48cd-28.html",
+    "label": "e0301n_nrf:1406 · 28/42"
+  },
+  {
+    "file": "slides/00243-v4-1309bf32edcf48cd-29.html",
+    "label": "e0301n_nrf:1406 · 29/42"
+  },
+  {
+    "file": "slides/00244-v4-1309bf32edcf48cd-30.html",
+    "label": "e0301n_nrf:1406 · 30/42"
+  },
+  {
+    "file": "slides/00245-v4-1309bf32edcf48cd-31.html",
+    "label": "e0301n_nrf:1406 · 31/42"
+  },
+  {
+    "file": "slides/00246-v4-1309bf32edcf48cd-32.html",
+    "label": "e0301n_nrf:1406 · 32/42"
+  },
+  {
+    "file": "slides/00247-v4-1309bf32edcf48cd-33.html",
+    "label": "e0301n_nrf:1406 · 33/42"
+  },
+  {
+    "file": "slides/00248-v4-1309bf32edcf48cd-34.html",
+    "label": "e0301n_nrf:1406 · 34/42"
+  },
+  {
+    "file": "slides/00249-v4-1309bf32edcf48cd-35.html",
+    "label": "e0301n_nrf:1406 · 35/42"
+  },
+  {
+    "file": "slides/00250-v4-1309bf32edcf48cd-36.html",
+    "label": "e0301n_nrf:1406 · 36/42"
+  },
+  {
+    "file": "slides/00251-v4-1309bf32edcf48cd-37.html",
+    "label": "e0301n_nrf:1406 · 37/42"
+  },
+  {
+    "file": "slides/00252-v4-1309bf32edcf48cd-38.html",
+    "label": "e0301n_nrf:1406 · 38/42"
+  },
+  {
+    "file": "slides/00253-v4-1309bf32edcf48cd-39.html",
+    "label": "e0301n_nrf:1406 · 39/42"
+  },
+  {
+    "file": "slides/00254-v4-1309bf32edcf48cd-40.html",
+    "label": "e0301n_nrf:1406 · 40/42"
+  },
+  {
+    "file": "slides/00255-v4-1309bf32edcf48cd-41.html",
+    "label": "e0301n_nrf:1406 · 41/42"
+  },
+  {
+    "file": "slides/00256-v4-1309bf32edcf48cd-42.html",
+    "label": "e0301n_nrf:1406 · 42/42"
+  },
+  {
+    "file": "slides/00257-v4-03e0871f606b211a-1.html",
+    "label": "e0301n_nrf:1407 · 1/7"
+  },
+  {
+    "file": "slides/00258-v4-03e0871f606b211a-2.html",
+    "label": "e0301n_nrf:1407 · 2/7"
+  },
+  {
+    "file": "slides/00259-v4-03e0871f606b211a-3.html",
+    "label": "e0301n_nrf:1407 · 3/7"
+  },
+  {
+    "file": "slides/00260-v4-03e0871f606b211a-4.html",
+    "label": "e0301n_nrf:1407 · 4/7"
+  },
+  {
+    "file": "slides/00261-v4-03e0871f606b211a-5.html",
+    "label": "e0301n_nrf:1407 · 5/7"
+  },
+  {
+    "file": "slides/00262-v4-03e0871f606b211a-6.html",
+    "label": "e0301n_nrf:1407 · 6/7"
+  },
+  {
+    "file": "slides/00263-v4-03e0871f606b211a-7.html",
+    "label": "e0301n_nrf:1407 · 7/7"
+  },
+  {
+    "file": "slides/00264-v4-88510195a49dafc8-1.html",
+    "label": "e0301n_nrf:1410 · 1/20"
+  },
+  {
+    "file": "slides/00265-v4-88510195a49dafc8-2.html",
+    "label": "e0301n_nrf:1410 · 2/20"
+  },
+  {
+    "file": "slides/00266-v4-88510195a49dafc8-3.html",
+    "label": "e0301n_nrf:1410 · 3/20"
+  },
+  {
+    "file": "slides/00267-v4-88510195a49dafc8-4.html",
+    "label": "e0301n_nrf:1410 · 4/20"
+  },
+  {
+    "file": "slides/00268-v4-88510195a49dafc8-5.html",
+    "label": "e0301n_nrf:1410 · 5/20"
+  },
+  {
+    "file": "slides/00269-v4-88510195a49dafc8-6.html",
+    "label": "e0301n_nrf:1410 · 6/20"
+  },
+  {
+    "file": "slides/00270-v4-88510195a49dafc8-7.html",
+    "label": "e0301n_nrf:1410 · 7/20"
+  },
+  {
+    "file": "slides/00271-v4-88510195a49dafc8-8.html",
+    "label": "e0301n_nrf:1410 · 8/20"
+  },
+  {
+    "file": "slides/00272-v4-88510195a49dafc8-9.html",
+    "label": "e0301n_nrf:1410 · 9/20"
+  },
+  {
+    "file": "slides/00273-v4-88510195a49dafc8-10.html",
+    "label": "e0301n_nrf:1410 · 10/20"
+  },
+  {
+    "file": "slides/00274-v4-88510195a49dafc8-11.html",
+    "label": "e0301n_nrf:1410 · 11/20"
+  },
+  {
+    "file": "slides/00275-v4-88510195a49dafc8-12.html",
+    "label": "e0301n_nrf:1410 · 12/20"
+  },
+  {
+    "file": "slides/00276-v4-88510195a49dafc8-13.html",
+    "label": "e0301n_nrf:1410 · 13/20"
+  },
+  {
+    "file": "slides/00277-v4-88510195a49dafc8-14.html",
+    "label": "e0301n_nrf:1410 · 14/20"
+  },
+  {
+    "file": "slides/00278-v4-88510195a49dafc8-15.html",
+    "label": "e0301n_nrf:1410 · 15/20"
+  },
+  {
+    "file": "slides/00279-v4-88510195a49dafc8-16.html",
+    "label": "e0301n_nrf:1410 · 16/20"
+  },
+  {
+    "file": "slides/00280-v4-88510195a49dafc8-17.html",
+    "label": "e0301n_nrf:1410 · 17/20"
+  },
+  {
+    "file": "slides/00281-v4-88510195a49dafc8-18.html",
+    "label": "e0301n_nrf:1410 · 18/20"
+  },
+  {
+    "file": "slides/00282-v4-88510195a49dafc8-19.html",
+    "label": "e0301n_nrf:1410 · 19/20"
+  },
+  {
+    "file": "slides/00283-v4-88510195a49dafc8-20.html",
+    "label": "e0301n_nrf:1410 · 20/20"
+  },
+  {
+    "file": "slides/00284-v4-eeb9957fc7d13192-1.html",
+    "label": "e0301n_nrf:1413 · 1/16"
+  },
+  {
+    "file": "slides/00285-v4-eeb9957fc7d13192-2.html",
+    "label": "e0301n_nrf:1413 · 2/16"
+  },
+  {
+    "file": "slides/00286-v4-eeb9957fc7d13192-3.html",
+    "label": "e0301n_nrf:1413 · 3/16"
+  },
+  {
+    "file": "slides/00287-v4-eeb9957fc7d13192-4.html",
+    "label": "e0301n_nrf:1413 · 4/16"
+  },
+  {
+    "file": "slides/00288-v4-eeb9957fc7d13192-5.html",
+    "label": "e0301n_nrf:1413 · 5/16"
+  },
+  {
+    "file": "slides/00289-v4-eeb9957fc7d13192-6.html",
+    "label": "e0301n_nrf:1413 · 6/16"
+  },
+  {
+    "file": "slides/00290-v4-eeb9957fc7d13192-7.html",
+    "label": "e0301n_nrf:1413 · 7/16"
+  },
+  {
+    "file": "slides/00291-v4-eeb9957fc7d13192-8.html",
+    "label": "e0301n_nrf:1413 · 8/16"
+  },
+  {
+    "file": "slides/00292-v4-eeb9957fc7d13192-9.html",
+    "label": "e0301n_nrf:1413 · 9/16"
+  },
+  {
+    "file": "slides/00293-v4-eeb9957fc7d13192-10.html",
+    "label": "e0301n_nrf:1413 · 10/16"
+  },
+  {
+    "file": "slides/00294-v4-eeb9957fc7d13192-11.html",
+    "label": "e0301n_nrf:1413 · 11/16"
+  },
+  {
+    "file": "slides/00295-v4-eeb9957fc7d13192-12.html",
+    "label": "e0301n_nrf:1413 · 12/16"
+  },
+  {
+    "file": "slides/00296-v4-eeb9957fc7d13192-13.html",
+    "label": "e0301n_nrf:1413 · 13/16"
+  },
+  {
+    "file": "slides/00297-v4-eeb9957fc7d13192-14.html",
+    "label": "e0301n_nrf:1413 · 14/16"
+  },
+  {
+    "file": "slides/00298-v4-eeb9957fc7d13192-15.html",
+    "label": "e0301n_nrf:1413 · 15/16"
+  },
+  {
+    "file": "slides/00299-v4-eeb9957fc7d13192-16.html",
+    "label": "e0301n_nrf:1413 · 16/16"
+  },
+  {
+    "file": "slides/00300-v4-a614e68f07036898-1.html",
+    "label": "e0401n_nrf:23 · 1/3"
+  },
+  {
+    "file": "slides/00301-v4-a614e68f07036898-2.html",
+    "label": "e0401n_nrf:23 · 2/3"
+  },
+  {
+    "file": "slides/00302-v4-a614e68f07036898-3.html",
+    "label": "e0401n_nrf:23 · 3/3"
+  },
+  {
+    "file": "slides/00303-v4-f4333d10e1a05fca-1.html",
+    "label": "e0401n_nrf:28 · 1/8"
+  },
+  {
+    "file": "slides/00304-v4-f4333d10e1a05fca-2.html",
+    "label": "e0401n_nrf:28 · 2/8"
+  },
+  {
+    "file": "slides/00305-v4-f4333d10e1a05fca-3.html",
+    "label": "e0401n_nrf:28 · 3/8"
+  },
+  {
+    "file": "slides/00306-v4-f4333d10e1a05fca-4.html",
+    "label": "e0401n_nrf:28 · 4/8"
+  },
+  {
+    "file": "slides/00307-v4-f4333d10e1a05fca-5.html",
+    "label": "e0401n_nrf:28 · 5/8"
+  },
+  {
+    "file": "slides/00308-v4-f4333d10e1a05fca-6.html",
+    "label": "e0401n_nrf:28 · 6/8"
+  },
+  {
+    "file": "slides/00309-v4-f4333d10e1a05fca-7.html",
+    "label": "e0401n_nrf:28 · 7/8"
+  },
+  {
+    "file": "slides/00310-v4-f4333d10e1a05fca-8.html",
+    "label": "e0401n_nrf:28 · 8/8"
+  },
+  {
+    "file": "slides/00311-v4-d7bdbcfb5cf1155e-1.html",
+    "label": "e0401n_nrf:113 · 1/7"
+  },
+  {
+    "file": "slides/00312-v4-d7bdbcfb5cf1155e-2.html",
+    "label": "e0401n_nrf:113 · 2/7"
+  },
+  {
+    "file": "slides/00313-v4-d7bdbcfb5cf1155e-3.html",
+    "label": "e0401n_nrf:113 · 3/7"
+  },
+  {
+    "file": "slides/00314-v4-d7bdbcfb5cf1155e-4.html",
+    "label": "e0401n_nrf:113 · 4/7"
+  },
+  {
+    "file": "slides/00315-v4-d7bdbcfb5cf1155e-5.html",
+    "label": "e0401n_nrf:113 · 5/7"
+  },
+  {
+    "file": "slides/00316-v4-d7bdbcfb5cf1155e-6.html",
+    "label": "e0401n_nrf:113 · 6/7"
+  },
+  {
+    "file": "slides/00317-v4-d7bdbcfb5cf1155e-7.html",
+    "label": "e0401n_nrf:113 · 7/7"
+  },
+  {
+    "file": "slides/00318-v4-692d01b097d16f94-1.html",
+    "label": "e0401n_nrf:257 · 1/15"
+  },
+  {
+    "file": "slides/00319-v4-692d01b097d16f94-2.html",
+    "label": "e0401n_nrf:257 · 2/15"
+  },
+  {
+    "file": "slides/00320-v4-692d01b097d16f94-3.html",
+    "label": "e0401n_nrf:257 · 3/15"
+  },
+  {
+    "file": "slides/00321-v4-692d01b097d16f94-4.html",
+    "label": "e0401n_nrf:257 · 4/15"
+  },
+  {
+    "file": "slides/00322-v4-692d01b097d16f94-5.html",
+    "label": "e0401n_nrf:257 · 5/15"
+  },
+  {
+    "file": "slides/00323-v4-692d01b097d16f94-6.html",
+    "label": "e0401n_nrf:257 · 6/15"
+  },
+  {
+    "file": "slides/00324-v4-692d01b097d16f94-7.html",
+    "label": "e0401n_nrf:257 · 7/15"
+  },
+  {
+    "file": "slides/00325-v4-692d01b097d16f94-8.html",
+    "label": "e0401n_nrf:257 · 8/15"
+  },
+  {
+    "file": "slides/00326-v4-692d01b097d16f94-9.html",
+    "label": "e0401n_nrf:257 · 9/15"
+  },
+  {
+    "file": "slides/00327-v4-692d01b097d16f94-10.html",
+    "label": "e0401n_nrf:257 · 10/15"
+  },
+  {
+    "file": "slides/00328-v4-692d01b097d16f94-11.html",
+    "label": "e0401n_nrf:257 · 11/15"
+  },
+  {
+    "file": "slides/00329-v4-692d01b097d16f94-12.html",
+    "label": "e0401n_nrf:257 · 12/15"
+  },
+  {
+    "file": "slides/00330-v4-692d01b097d16f94-13.html",
+    "label": "e0401n_nrf:257 · 13/15"
+  },
+  {
+    "file": "slides/00331-v4-692d01b097d16f94-14.html",
+    "label": "e0401n_nrf:257 · 14/15"
+  },
+  {
+    "file": "slides/00332-v4-692d01b097d16f94-15.html",
+    "label": "e0401n_nrf:257 · 15/15"
+  },
+  {
+    "file": "slides/00333-v4-d5c37c5daf47aefc-1.html",
+    "label": "e0401n_nrf:291 · 1/14"
+  },
+  {
+    "file": "slides/00334-v4-d5c37c5daf47aefc-2.html",
+    "label": "e0401n_nrf:291 · 2/14"
+  },
+  {
+    "file": "slides/00335-v4-d5c37c5daf47aefc-3.html",
+    "label": "e0401n_nrf:291 · 3/14"
+  },
+  {
+    "file": "slides/00336-v4-d5c37c5daf47aefc-4.html",
+    "label": "e0401n_nrf:291 · 4/14"
+  },
+  {
+    "file": "slides/00337-v4-d5c37c5daf47aefc-5.html",
+    "label": "e0401n_nrf:291 · 5/14"
+  },
+  {
+    "file": "slides/00338-v4-d5c37c5daf47aefc-6.html",
+    "label": "e0401n_nrf:291 · 6/14"
+  },
+  {
+    "file": "slides/00339-v4-d5c37c5daf47aefc-7.html",
+    "label": "e0401n_nrf:291 · 7/14"
+  },
+  {
+    "file": "slides/00340-v4-d5c37c5daf47aefc-8.html",
+    "label": "e0401n_nrf:291 · 8/14"
+  },
+  {
+    "file": "slides/00341-v4-d5c37c5daf47aefc-9.html",
+    "label": "e0401n_nrf:291 · 9/14"
+  },
+  {
+    "file": "slides/00342-v4-d5c37c5daf47aefc-10.html",
+    "label": "e0401n_nrf:291 · 10/14"
+  },
+  {
+    "file": "slides/00343-v4-d5c37c5daf47aefc-11.html",
+    "label": "e0401n_nrf:291 · 11/14"
+  },
+  {
+    "file": "slides/00344-v4-d5c37c5daf47aefc-12.html",
+    "label": "e0401n_nrf:291 · 12/14"
+  },
+  {
+    "file": "slides/00345-v4-d5c37c5daf47aefc-13.html",
+    "label": "e0401n_nrf:291 · 13/14"
+  },
+  {
+    "file": "slides/00346-v4-d5c37c5daf47aefc-14.html",
+    "label": "e0401n_nrf:291 · 14/14"
+  },
+  {
+    "file": "slides/00347-v4-74b1700b46722988-1.html",
+    "label": "e0401n_nrf:343 · 1/6"
+  },
+  {
+    "file": "slides/00348-v4-74b1700b46722988-2.html",
+    "label": "e0401n_nrf:343 · 2/6"
+  },
+  {
+    "file": "slides/00349-v4-74b1700b46722988-3.html",
+    "label": "e0401n_nrf:343 · 3/6"
+  },
+  {
+    "file": "slides/00350-v4-74b1700b46722988-4.html",
+    "label": "e0401n_nrf:343 · 4/6"
+  },
+  {
+    "file": "slides/00351-v4-74b1700b46722988-5.html",
+    "label": "e0401n_nrf:343 · 5/6"
+  },
+  {
+    "file": "slides/00352-v4-74b1700b46722988-6.html",
+    "label": "e0401n_nrf:343 · 6/6"
+  },
+  {
+    "file": "slides/00353-v4-4fa778d02db35efe-1.html",
+    "label": "e0401n_nrf:348 · 1/17"
+  },
+  {
+    "file": "slides/00354-v4-4fa778d02db35efe-2.html",
+    "label": "e0401n_nrf:348 · 2/17"
+  },
+  {
+    "file": "slides/00355-v4-4fa778d02db35efe-3.html",
+    "label": "e0401n_nrf:348 · 3/17"
+  },
+  {
+    "file": "slides/00356-v4-4fa778d02db35efe-4.html",
+    "label": "e0401n_nrf:348 · 4/17"
+  },
+  {
+    "file": "slides/00357-v4-4fa778d02db35efe-5.html",
+    "label": "e0401n_nrf:348 · 5/17"
+  },
+  {
+    "file": "slides/00358-v4-4fa778d02db35efe-6.html",
+    "label": "e0401n_nrf:348 · 6/17"
+  },
+  {
+    "file": "slides/00359-v4-4fa778d02db35efe-7.html",
+    "label": "e0401n_nrf:348 · 7/17"
+  },
+  {
+    "file": "slides/00360-v4-4fa778d02db35efe-8.html",
+    "label": "e0401n_nrf:348 · 8/17"
+  },
+  {
+    "file": "slides/00361-v4-4fa778d02db35efe-9.html",
+    "label": "e0401n_nrf:348 · 9/17"
+  },
+  {
+    "file": "slides/00362-v4-4fa778d02db35efe-10.html",
+    "label": "e0401n_nrf:348 · 10/17"
+  },
+  {
+    "file": "slides/00363-v4-4fa778d02db35efe-11.html",
+    "label": "e0401n_nrf:348 · 11/17"
+  },
+  {
+    "file": "slides/00364-v4-4fa778d02db35efe-12.html",
+    "label": "e0401n_nrf:348 · 12/17"
+  },
+  {
+    "file": "slides/00365-v4-4fa778d02db35efe-13.html",
+    "label": "e0401n_nrf:348 · 13/17"
+  },
+  {
+    "file": "slides/00366-v4-4fa778d02db35efe-14.html",
+    "label": "e0401n_nrf:348 · 14/17"
+  },
+  {
+    "file": "slides/00367-v4-4fa778d02db35efe-15.html",
+    "label": "e0401n_nrf:348 · 15/17"
+  },
+  {
+    "file": "slides/00368-v4-4fa778d02db35efe-16.html",
+    "label": "e0401n_nrf:348 · 16/17"
+  },
+  {
+    "file": "slides/00369-v4-4fa778d02db35efe-17.html",
+    "label": "e0401n_nrf:348 · 17/17"
+  },
+  {
+    "file": "slides/00370-v4-44a115416350da37-1.html",
+    "label": "e0401n_nrf:369 · 1/31"
+  },
+  {
+    "file": "slides/00371-v4-44a115416350da37-2.html",
+    "label": "e0401n_nrf:369 · 2/31"
+  },
+  {
+    "file": "slides/00372-v4-44a115416350da37-3.html",
+    "label": "e0401n_nrf:369 · 3/31"
+  },
+  {
+    "file": "slides/00373-v4-44a115416350da37-4.html",
+    "label": "e0401n_nrf:369 · 4/31"
+  },
+  {
+    "file": "slides/00374-v4-44a115416350da37-5.html",
+    "label": "e0401n_nrf:369 · 5/31"
+  },
+  {
+    "file": "slides/00375-v4-44a115416350da37-6.html",
+    "label": "e0401n_nrf:369 · 6/31"
+  },
+  {
+    "file": "slides/00376-v4-44a115416350da37-7.html",
+    "label": "e0401n_nrf:369 · 7/31"
+  },
+  {
+    "file": "slides/00377-v4-44a115416350da37-8.html",
+    "label": "e0401n_nrf:369 · 8/31"
+  },
+  {
+    "file": "slides/00378-v4-44a115416350da37-9.html",
+    "label": "e0401n_nrf:369 · 9/31"
+  },
+  {
+    "file": "slides/00379-v4-44a115416350da37-10.html",
+    "label": "e0401n_nrf:369 · 10/31"
+  },
+  {
+    "file": "slides/00380-v4-44a115416350da37-11.html",
+    "label": "e0401n_nrf:369 · 11/31"
+  },
+  {
+    "file": "slides/00381-v4-44a115416350da37-12.html",
+    "label": "e0401n_nrf:369 · 12/31"
+  },
+  {
+    "file": "slides/00382-v4-44a115416350da37-13.html",
+    "label": "e0401n_nrf:369 · 13/31"
+  },
+  {
+    "file": "slides/00383-v4-44a115416350da37-14.html",
+    "label": "e0401n_nrf:369 · 14/31"
+  },
+  {
+    "file": "slides/00384-v4-44a115416350da37-15.html",
+    "label": "e0401n_nrf:369 · 15/31"
+  },
+  {
+    "file": "slides/00385-v4-44a115416350da37-16.html",
+    "label": "e0401n_nrf:369 · 16/31"
+  },
+  {
+    "file": "slides/00386-v4-44a115416350da37-17.html",
+    "label": "e0401n_nrf:369 · 17/31"
+  },
+  {
+    "file": "slides/00387-v4-44a115416350da37-18.html",
+    "label": "e0401n_nrf:369 · 18/31"
+  },
+  {
+    "file": "slides/00388-v4-44a115416350da37-19.html",
+    "label": "e0401n_nrf:369 · 19/31"
+  },
+  {
+    "file": "slides/00389-v4-44a115416350da37-20.html",
+    "label": "e0401n_nrf:369 · 20/31"
+  },
+  {
+    "file": "slides/00390-v4-44a115416350da37-21.html",
+    "label": "e0401n_nrf:369 · 21/31"
+  },
+  {
+    "file": "slides/00391-v4-44a115416350da37-22.html",
+    "label": "e0401n_nrf:369 · 22/31"
+  },
+  {
+    "file": "slides/00392-v4-44a115416350da37-23.html",
+    "label": "e0401n_nrf:369 · 23/31"
+  },
+  {
+    "file": "slides/00393-v4-44a115416350da37-24.html",
+    "label": "e0401n_nrf:369 · 24/31"
+  },
+  {
+    "file": "slides/00394-v4-44a115416350da37-25.html",
+    "label": "e0401n_nrf:369 · 25/31"
+  },
+  {
+    "file": "slides/00395-v4-44a115416350da37-26.html",
+    "label": "e0401n_nrf:369 · 26/31"
+  },
+  {
+    "file": "slides/00396-v4-44a115416350da37-27.html",
+    "label": "e0401n_nrf:369 · 27/31"
+  },
+  {
+    "file": "slides/00397-v4-44a115416350da37-28.html",
+    "label": "e0401n_nrf:369 · 28/31"
+  },
+  {
+    "file": "slides/00398-v4-44a115416350da37-29.html",
+    "label": "e0401n_nrf:369 · 29/31"
+  },
+  {
+    "file": "slides/00399-v4-44a115416350da37-30.html",
+    "label": "e0401n_nrf:369 · 30/31"
+  },
+  {
+    "file": "slides/00400-v4-44a115416350da37-31.html",
+    "label": "e0401n_nrf:369 · 31/31"
+  },
+  {
+    "file": "slides/00401-v4-a528b3d076e27b8e-1.html",
+    "label": "e0401n_nrf:380 · 1/13"
+  },
+  {
+    "file": "slides/00402-v4-a528b3d076e27b8e-2.html",
+    "label": "e0401n_nrf:380 · 2/13"
+  },
+  {
+    "file": "slides/00403-v4-a528b3d076e27b8e-3.html",
+    "label": "e0401n_nrf:380 · 3/13"
+  },
+  {
+    "file": "slides/00404-v4-a528b3d076e27b8e-4.html",
+    "label": "e0401n_nrf:380 · 4/13"
+  },
+  {
+    "file": "slides/00405-v4-a528b3d076e27b8e-5.html",
+    "label": "e0401n_nrf:380 · 5/13"
+  },
+  {
+    "file": "slides/00406-v4-a528b3d076e27b8e-6.html",
+    "label": "e0401n_nrf:380 · 6/13"
+  },
+  {
+    "file": "slides/00407-v4-a528b3d076e27b8e-7.html",
+    "label": "e0401n_nrf:380 · 7/13"
+  },
+  {
+    "file": "slides/00408-v4-a528b3d076e27b8e-8.html",
+    "label": "e0401n_nrf:380 · 8/13"
+  },
+  {
+    "file": "slides/00409-v4-a528b3d076e27b8e-9.html",
+    "label": "e0401n_nrf:380 · 9/13"
+  },
+  {
+    "file": "slides/00410-v4-a528b3d076e27b8e-10.html",
+    "label": "e0401n_nrf:380 · 10/13"
+  },
+  {
+    "file": "slides/00411-v4-a528b3d076e27b8e-11.html",
+    "label": "e0401n_nrf:380 · 11/13"
+  },
+  {
+    "file": "slides/00412-v4-a528b3d076e27b8e-12.html",
+    "label": "e0401n_nrf:380 · 12/13"
+  },
+  {
+    "file": "slides/00413-v4-a528b3d076e27b8e-13.html",
+    "label": "e0401n_nrf:380 · 13/13"
+  },
+  {
+    "file": "slides/00414-v4-68ee32e379a7a0fb-1.html",
+    "label": "e0401n_nrf:381 · 1/17"
+  },
+  {
+    "file": "slides/00415-v4-68ee32e379a7a0fb-2.html",
+    "label": "e0401n_nrf:381 · 2/17"
+  },
+  {
+    "file": "slides/00416-v4-68ee32e379a7a0fb-3.html",
+    "label": "e0401n_nrf:381 · 3/17"
+  },
+  {
+    "file": "slides/00417-v4-68ee32e379a7a0fb-4.html",
+    "label": "e0401n_nrf:381 · 4/17"
+  },
+  {
+    "file": "slides/00418-v4-68ee32e379a7a0fb-5.html",
+    "label": "e0401n_nrf:381 · 5/17"
+  },
+  {
+    "file": "slides/00419-v4-68ee32e379a7a0fb-6.html",
+    "label": "e0401n_nrf:381 · 6/17"
+  },
+  {
+    "file": "slides/00420-v4-68ee32e379a7a0fb-7.html",
+    "label": "e0401n_nrf:381 · 7/17"
+  },
+  {
+    "file": "slides/00421-v4-68ee32e379a7a0fb-8.html",
+    "label": "e0401n_nrf:381 · 8/17"
+  },
+  {
+    "file": "slides/00422-v4-68ee32e379a7a0fb-9.html",
+    "label": "e0401n_nrf:381 · 9/17"
+  },
+  {
+    "file": "slides/00423-v4-68ee32e379a7a0fb-10.html",
+    "label": "e0401n_nrf:381 · 10/17"
+  },
+  {
+    "file": "slides/00424-v4-68ee32e379a7a0fb-11.html",
+    "label": "e0401n_nrf:381 · 11/17"
+  },
+  {
+    "file": "slides/00425-v4-68ee32e379a7a0fb-12.html",
+    "label": "e0401n_nrf:381 · 12/17"
+  },
+  {
+    "file": "slides/00426-v4-68ee32e379a7a0fb-13.html",
+    "label": "e0401n_nrf:381 · 13/17"
+  },
+  {
+    "file": "slides/00427-v4-68ee32e379a7a0fb-14.html",
+    "label": "e0401n_nrf:381 · 14/17"
+  },
+  {
+    "file": "slides/00428-v4-68ee32e379a7a0fb-15.html",
+    "label": "e0401n_nrf:381 · 15/17"
+  },
+  {
+    "file": "slides/00429-v4-68ee32e379a7a0fb-16.html",
+    "label": "e0401n_nrf:381 · 16/17"
+  },
+  {
+    "file": "slides/00430-v4-68ee32e379a7a0fb-17.html",
+    "label": "e0401n_nrf:381 · 17/17"
+  },
+  {
+    "file": "slides/00431-v4-c100a50d53b09775-1.html",
+    "label": "e0401n_nrf:386 · 1/4"
+  },
+  {
+    "file": "slides/00432-v4-c100a50d53b09775-2.html",
+    "label": "e0401n_nrf:386 · 2/4"
+  },
+  {
+    "file": "slides/00433-v4-c100a50d53b09775-3.html",
+    "label": "e0401n_nrf:386 · 3/4"
+  },
+  {
+    "file": "slides/00434-v4-c100a50d53b09775-4.html",
+    "label": "e0401n_nrf:386 · 4/4"
+  },
+  {
+    "file": "slides/00435-v4-6d7c089275b7d994-1.html",
+    "label": "e0401n_nrf:393 · 1/17"
+  },
+  {
+    "file": "slides/00436-v4-6d7c089275b7d994-2.html",
+    "label": "e0401n_nrf:393 · 2/17"
+  },
+  {
+    "file": "slides/00437-v4-6d7c089275b7d994-3.html",
+    "label": "e0401n_nrf:393 · 3/17"
+  },
+  {
+    "file": "slides/00438-v4-6d7c089275b7d994-4.html",
+    "label": "e0401n_nrf:393 · 4/17"
+  },
+  {
+    "file": "slides/00439-v4-6d7c089275b7d994-5.html",
+    "label": "e0401n_nrf:393 · 5/17"
+  },
+  {
+    "file": "slides/00440-v4-6d7c089275b7d994-6.html",
+    "label": "e0401n_nrf:393 · 6/17"
+  },
+  {
+    "file": "slides/00441-v4-6d7c089275b7d994-7.html",
+    "label": "e0401n_nrf:393 · 7/17"
+  },
+  {
+    "file": "slides/00442-v4-6d7c089275b7d994-8.html",
+    "label": "e0401n_nrf:393 · 8/17"
+  },
+  {
+    "file": "slides/00443-v4-6d7c089275b7d994-9.html",
+    "label": "e0401n_nrf:393 · 9/17"
+  },
+  {
+    "file": "slides/00444-v4-6d7c089275b7d994-10.html",
+    "label": "e0401n_nrf:393 · 10/17"
+  },
+  {
+    "file": "slides/00445-v4-6d7c089275b7d994-11.html",
+    "label": "e0401n_nrf:393 · 11/17"
+  },
+  {
+    "file": "slides/00446-v4-6d7c089275b7d994-12.html",
+    "label": "e0401n_nrf:393 · 12/17"
+  },
+  {
+    "file": "slides/00447-v4-6d7c089275b7d994-13.html",
+    "label": "e0401n_nrf:393 · 13/17"
+  },
+  {
+    "file": "slides/00448-v4-6d7c089275b7d994-14.html",
+    "label": "e0401n_nrf:393 · 14/17"
+  },
+  {
+    "file": "slides/00449-v4-6d7c089275b7d994-15.html",
+    "label": "e0401n_nrf:393 · 15/17"
+  },
+  {
+    "file": "slides/00450-v4-6d7c089275b7d994-16.html",
+    "label": "e0401n_nrf:393 · 16/17"
+  },
+  {
+    "file": "slides/00451-v4-6d7c089275b7d994-17.html",
+    "label": "e0401n_nrf:393 · 17/17"
+  },
+  {
+    "file": "slides/00452-v4-1c7c1f0e13906386-1.html",
+    "label": "e0401n_nrf:399 · 1/12"
+  },
+  {
+    "file": "slides/00453-v4-1c7c1f0e13906386-2.html",
+    "label": "e0401n_nrf:399 · 2/12"
+  },
+  {
+    "file": "slides/00454-v4-1c7c1f0e13906386-3.html",
+    "label": "e0401n_nrf:399 · 3/12"
+  },
+  {
+    "file": "slides/00455-v4-1c7c1f0e13906386-4.html",
+    "label": "e0401n_nrf:399 · 4/12"
+  },
+  {
+    "file": "slides/00456-v4-1c7c1f0e13906386-5.html",
+    "label": "e0401n_nrf:399 · 5/12"
+  },
+  {
+    "file": "slides/00457-v4-1c7c1f0e13906386-6.html",
+    "label": "e0401n_nrf:399 · 6/12"
+  },
+  {
+    "file": "slides/00458-v4-1c7c1f0e13906386-7.html",
+    "label": "e0401n_nrf:399 · 7/12"
+  },
+  {
+    "file": "slides/00459-v4-1c7c1f0e13906386-8.html",
+    "label": "e0401n_nrf:399 · 8/12"
+  },
+  {
+    "file": "slides/00460-v4-1c7c1f0e13906386-9.html",
+    "label": "e0401n_nrf:399 · 9/12"
+  },
+  {
+    "file": "slides/00461-v4-1c7c1f0e13906386-10.html",
+    "label": "e0401n_nrf:399 · 10/12"
+  },
+  {
+    "file": "slides/00462-v4-1c7c1f0e13906386-11.html",
+    "label": "e0401n_nrf:399 · 11/12"
+  },
+  {
+    "file": "slides/00463-v4-1c7c1f0e13906386-12.html",
+    "label": "e0401n_nrf:399 · 12/12"
+  },
+  {
+    "file": "slides/00464-v4-822d01b286922918-1.html",
+    "label": "e0401n_nrf:401 · 1/16"
+  },
+  {
+    "file": "slides/00465-v4-822d01b286922918-2.html",
+    "label": "e0401n_nrf:401 · 2/16"
+  },
+  {
+    "file": "slides/00466-v4-822d01b286922918-3.html",
+    "label": "e0401n_nrf:401 · 3/16"
+  },
+  {
+    "file": "slides/00467-v4-822d01b286922918-4.html",
+    "label": "e0401n_nrf:401 · 4/16"
+  },
+  {
+    "file": "slides/00468-v4-822d01b286922918-5.html",
+    "label": "e0401n_nrf:401 · 5/16"
+  },
+  {
+    "file": "slides/00469-v4-822d01b286922918-6.html",
+    "label": "e0401n_nrf:401 · 6/16"
+  },
+  {
+    "file": "slides/00470-v4-822d01b286922918-7.html",
+    "label": "e0401n_nrf:401 · 7/16"
+  },
+  {
+    "file": "slides/00471-v4-822d01b286922918-8.html",
+    "label": "e0401n_nrf:401 · 8/16"
+  },
+  {
+    "file": "slides/00472-v4-822d01b286922918-9.html",
+    "label": "e0401n_nrf:401 · 9/16"
+  },
+  {
+    "file": "slides/00473-v4-822d01b286922918-10.html",
+    "label": "e0401n_nrf:401 · 10/16"
+  },
+  {
+    "file": "slides/00474-v4-822d01b286922918-11.html",
+    "label": "e0401n_nrf:401 · 11/16"
+  },
+  {
+    "file": "slides/00475-v4-822d01b286922918-12.html",
+    "label": "e0401n_nrf:401 · 12/16"
+  },
+  {
+    "file": "slides/00476-v4-822d01b286922918-13.html",
+    "label": "e0401n_nrf:401 · 13/16"
+  },
+  {
+    "file": "slides/00477-v4-822d01b286922918-14.html",
+    "label": "e0401n_nrf:401 · 14/16"
+  },
+  {
+    "file": "slides/00478-v4-822d01b286922918-15.html",
+    "label": "e0401n_nrf:401 · 15/16"
+  },
+  {
+    "file": "slides/00479-v4-822d01b286922918-16.html",
+    "label": "e0401n_nrf:401 · 16/16"
+  },
+  {
+    "file": "slides/00480-v4-16db64a749cbe8cf-1.html",
+    "label": "e0401n_nrf:405 · 1/23"
+  },
+  {
+    "file": "slides/00481-v4-16db64a749cbe8cf-2.html",
+    "label": "e0401n_nrf:405 · 2/23"
+  },
+  {
+    "file": "slides/00482-v4-16db64a749cbe8cf-3.html",
+    "label": "e0401n_nrf:405 · 3/23"
+  },
+  {
+    "file": "slides/00483-v4-16db64a749cbe8cf-4.html",
+    "label": "e0401n_nrf:405 · 4/23"
+  },
+  {
+    "file": "slides/00484-v4-16db64a749cbe8cf-5.html",
+    "label": "e0401n_nrf:405 · 5/23"
+  },
+  {
+    "file": "slides/00485-v4-16db64a749cbe8cf-6.html",
+    "label": "e0401n_nrf:405 · 6/23"
+  },
+  {
+    "file": "slides/00486-v4-16db64a749cbe8cf-7.html",
+    "label": "e0401n_nrf:405 · 7/23"
+  },
+  {
+    "file": "slides/00487-v4-16db64a749cbe8cf-8.html",
+    "label": "e0401n_nrf:405 · 8/23"
+  },
+  {
+    "file": "slides/00488-v4-16db64a749cbe8cf-9.html",
+    "label": "e0401n_nrf:405 · 9/23"
+  },
+  {
+    "file": "slides/00489-v4-16db64a749cbe8cf-10.html",
+    "label": "e0401n_nrf:405 · 10/23"
+  },
+  {
+    "file": "slides/00490-v4-16db64a749cbe8cf-11.html",
+    "label": "e0401n_nrf:405 · 11/23"
+  },
+  {
+    "file": "slides/00491-v4-16db64a749cbe8cf-12.html",
+    "label": "e0401n_nrf:405 · 12/23"
+  },
+  {
+    "file": "slides/00492-v4-16db64a749cbe8cf-13.html",
+    "label": "e0401n_nrf:405 · 13/23"
+  },
+  {
+    "file": "slides/00493-v4-16db64a749cbe8cf-14.html",
+    "label": "e0401n_nrf:405 · 14/23"
+  },
+  {
+    "file": "slides/00494-v4-16db64a749cbe8cf-15.html",
+    "label": "e0401n_nrf:405 · 15/23"
+  },
+  {
+    "file": "slides/00495-v4-16db64a749cbe8cf-16.html",
+    "label": "e0401n_nrf:405 · 16/23"
+  },
+  {
+    "file": "slides/00496-v4-16db64a749cbe8cf-17.html",
+    "label": "e0401n_nrf:405 · 17/23"
+  },
+  {
+    "file": "slides/00497-v4-16db64a749cbe8cf-18.html",
+    "label": "e0401n_nrf:405 · 18/23"
+  },
+  {
+    "file": "slides/00498-v4-16db64a749cbe8cf-19.html",
+    "label": "e0401n_nrf:405 · 19/23"
+  },
+  {
+    "file": "slides/00499-v4-16db64a749cbe8cf-20.html",
+    "label": "e0401n_nrf:405 · 20/23"
+  },
+  {
+    "file": "slides/00500-v4-16db64a749cbe8cf-21.html",
+    "label": "e0401n_nrf:405 · 21/23"
+  },
+  {
+    "file": "slides/00501-v4-16db64a749cbe8cf-22.html",
+    "label": "e0401n_nrf:405 · 22/23"
+  },
+  {
+    "file": "slides/00502-v4-16db64a749cbe8cf-23.html",
+    "label": "e0401n_nrf:405 · 23/23"
+  },
+  {
+    "file": "slides/00503-v4-0f6d1590fed3fe0b-1.html",
+    "label": "e0401n_nrf:406 · 1/5"
+  },
+  {
+    "file": "slides/00504-v4-0f6d1590fed3fe0b-2.html",
+    "label": "e0401n_nrf:406 · 2/5"
+  },
+  {
+    "file": "slides/00505-v4-0f6d1590fed3fe0b-3.html",
+    "label": "e0401n_nrf:406 · 3/5"
+  },
+  {
+    "file": "slides/00506-v4-0f6d1590fed3fe0b-4.html",
+    "label": "e0401n_nrf:406 · 4/5"
+  },
+  {
+    "file": "slides/00507-v4-0f6d1590fed3fe0b-5.html",
+    "label": "e0401n_nrf:406 · 5/5"
+  },
+  {
+    "file": "slides/00508-v4-23be6b3332b2bb15-1.html",
+    "label": "e0401n_nrf:410 · 1/10"
+  },
+  {
+    "file": "slides/00509-v4-23be6b3332b2bb15-2.html",
+    "label": "e0401n_nrf:410 · 2/10"
+  },
+  {
+    "file": "slides/00510-v4-23be6b3332b2bb15-3.html",
+    "label": "e0401n_nrf:410 · 3/10"
+  },
+  {
+    "file": "slides/00511-v4-23be6b3332b2bb15-4.html",
+    "label": "e0401n_nrf:410 · 4/10"
+  },
+  {
+    "file": "slides/00512-v4-23be6b3332b2bb15-5.html",
+    "label": "e0401n_nrf:410 · 5/10"
+  },
+  {
+    "file": "slides/00513-v4-23be6b3332b2bb15-6.html",
+    "label": "e0401n_nrf:410 · 6/10"
+  },
+  {
+    "file": "slides/00514-v4-23be6b3332b2bb15-7.html",
+    "label": "e0401n_nrf:410 · 7/10"
+  },
+  {
+    "file": "slides/00515-v4-23be6b3332b2bb15-8.html",
+    "label": "e0401n_nrf:410 · 8/10"
+  },
+  {
+    "file": "slides/00516-v4-23be6b3332b2bb15-9.html",
+    "label": "e0401n_nrf:410 · 9/10"
+  },
+  {
+    "file": "slides/00517-v4-23be6b3332b2bb15-10.html",
+    "label": "e0401n_nrf:410 · 10/10"
+  },
+  {
+    "file": "slides/00518-v4-4dbb7fd3f617b5fa-1.html",
+    "label": "e0601n_nrf:225 · 1/2"
+  },
+  {
+    "file": "slides/00519-v4-4dbb7fd3f617b5fa-2.html",
+    "label": "e0601n_nrf:225 · 2/2"
+  },
+  {
+    "file": "slides/00520-v4-f50914bb52e8b42f-1.html",
+    "label": "e0803n_nrf:783 · 1/8"
+  },
+  {
+    "file": "slides/00521-v4-f50914bb52e8b42f-2.html",
+    "label": "e0803n_nrf:783 · 2/8"
+  },
+  {
+    "file": "slides/00522-v4-f50914bb52e8b42f-3.html",
+    "label": "e0803n_nrf:783 · 3/8"
+  },
+  {
+    "file": "slides/00523-v4-f50914bb52e8b42f-4.html",
+    "label": "e0803n_nrf:783 · 4/8"
+  },
+  {
+    "file": "slides/00524-v4-f50914bb52e8b42f-5.html",
+    "label": "e0803n_nrf:783 · 5/8"
+  },
+  {
+    "file": "slides/00525-v4-f50914bb52e8b42f-6.html",
+    "label": "e0803n_nrf:783 · 6/8"
+  },
+  {
+    "file": "slides/00526-v4-f50914bb52e8b42f-7.html",
+    "label": "e0803n_nrf:783 · 7/8"
+  },
+  {
+    "file": "slides/00527-v4-f50914bb52e8b42f-8.html",
+    "label": "e0803n_nrf:783 · 8/8"
+  },
+  {
+    "file": "slides/00528-v4-b7ebb24a8ed28156-1.html",
+    "label": "e0805n_nrf:2008 · 1/1"
+  },
+  {
+    "file": "slides/00529-v4-c734b341fd339ff4-1.html",
+    "label": "e0807n_nrf:97 · 1/2"
+  },
+  {
+    "file": "slides/00530-v4-c734b341fd339ff4-2.html",
+    "label": "e0807n_nrf:97 · 2/2"
+  },
+  {
+    "file": "slides/00531-v4-9b9402f092126414-1.html",
+    "label": "e0812n_nrf:2013 · 1/3"
+  },
+  {
+    "file": "slides/00532-v4-9b9402f092126414-2.html",
+    "label": "e0812n_nrf:2013 · 2/3"
+  },
+  {
+    "file": "slides/00533-v4-9b9402f092126414-3.html",
+    "label": "e0812n_nrf:2013 · 3/3"
+  },
+  {
+    "file": "slides/00534-v4-5801c17f771f2309-1.html",
+    "label": "e0906n_nrf:246 · 1/3"
+  },
+  {
+    "file": "slides/00535-v4-5801c17f771f2309-2.html",
+    "label": "e0906n_nrf:246 · 2/3"
+  },
+  {
+    "file": "slides/00536-v4-5801c17f771f2309-3.html",
+    "label": "e0906n_nrf:246 · 3/3"
+  },
+  {
+    "file": "slides/00537-v4-15ae20fded5a4612-1.html",
+    "label": "e1010n_nrf:0 · 1/2"
+  },
+  {
+    "file": "slides/00538-v4-15ae20fded5a4612-2.html",
+    "label": "e1010n_nrf:0 · 2/2"
+  },
+  {
+    "file": "slides/00539-v4-4df0347318f5b640-1.html",
+    "label": "e1010n_nrf:19 · 1/1"
+  },
+  {
+    "file": "slides/00540-v4-555b7b728be13456-1.html",
+    "label": "e1102n_nrf:200 · 1/18"
+  },
+  {
+    "file": "slides/00541-v4-555b7b728be13456-2.html",
+    "label": "e1102n_nrf:200 · 2/18"
+  },
+  {
+    "file": "slides/00542-v4-555b7b728be13456-3.html",
+    "label": "e1102n_nrf:200 · 3/18"
+  },
+  {
+    "file": "slides/00543-v4-555b7b728be13456-4.html",
+    "label": "e1102n_nrf:200 · 4/18"
+  },
+  {
+    "file": "slides/00544-v4-555b7b728be13456-5.html",
+    "label": "e1102n_nrf:200 · 5/18"
+  },
+  {
+    "file": "slides/00545-v4-555b7b728be13456-6.html",
+    "label": "e1102n_nrf:200 · 6/18"
+  },
+  {
+    "file": "slides/00546-v4-555b7b728be13456-7.html",
+    "label": "e1102n_nrf:200 · 7/18"
+  },
+  {
+    "file": "slides/00547-v4-555b7b728be13456-8.html",
+    "label": "e1102n_nrf:200 · 8/18"
+  },
+  {
+    "file": "slides/00548-v4-555b7b728be13456-9.html",
+    "label": "e1102n_nrf:200 · 9/18"
+  },
+  {
+    "file": "slides/00549-v4-555b7b728be13456-10.html",
+    "label": "e1102n_nrf:200 · 10/18"
+  },
+  {
+    "file": "slides/00550-v4-555b7b728be13456-11.html",
+    "label": "e1102n_nrf:200 · 11/18"
+  },
+  {
+    "file": "slides/00551-v4-555b7b728be13456-12.html",
+    "label": "e1102n_nrf:200 · 12/18"
+  },
+  {
+    "file": "slides/00552-v4-555b7b728be13456-13.html",
+    "label": "e1102n_nrf:200 · 13/18"
+  },
+  {
+    "file": "slides/00553-v4-555b7b728be13456-14.html",
+    "label": "e1102n_nrf:200 · 14/18"
+  },
+  {
+    "file": "slides/00554-v4-555b7b728be13456-15.html",
+    "label": "e1102n_nrf:200 · 15/18"
+  },
+  {
+    "file": "slides/00555-v4-555b7b728be13456-16.html",
+    "label": "e1102n_nrf:200 · 16/18"
+  },
+  {
+    "file": "slides/00556-v4-555b7b728be13456-17.html",
+    "label": "e1102n_nrf:200 · 17/18"
+  },
+  {
+    "file": "slides/00557-v4-555b7b728be13456-18.html",
+    "label": "e1102n_nrf:200 · 18/18"
+  },
+  {
+    "file": "slides/00558-v4-033af5800717887f-1.html",
+    "label": "e1102n_nrf:210 · 1/8"
+  },
+  {
+    "file": "slides/00559-v4-033af5800717887f-2.html",
+    "label": "e1102n_nrf:210 · 2/8"
+  },
+  {
+    "file": "slides/00560-v4-033af5800717887f-3.html",
+    "label": "e1102n_nrf:210 · 3/8"
+  },
+  {
+    "file": "slides/00561-v4-033af5800717887f-4.html",
+    "label": "e1102n_nrf:210 · 4/8"
+  },
+  {
+    "file": "slides/00562-v4-033af5800717887f-5.html",
+    "label": "e1102n_nrf:210 · 5/8"
+  },
+  {
+    "file": "slides/00563-v4-033af5800717887f-6.html",
+    "label": "e1102n_nrf:210 · 6/8"
+  },
+  {
+    "file": "slides/00564-v4-033af5800717887f-7.html",
+    "label": "e1102n_nrf:210 · 7/8"
+  },
+  {
+    "file": "slides/00565-v4-033af5800717887f-8.html",
+    "label": "e1102n_nrf:210 · 8/8"
+  },
+  {
+    "file": "slides/00566-v4-df007f45f51b4d85-1.html",
+    "label": "e1102n_nrf:225 · 1/34"
+  },
+  {
+    "file": "slides/00567-v4-df007f45f51b4d85-2.html",
+    "label": "e1102n_nrf:225 · 2/34"
+  },
+  {
+    "file": "slides/00568-v4-df007f45f51b4d85-3.html",
+    "label": "e1102n_nrf:225 · 3/34"
+  },
+  {
+    "file": "slides/00569-v4-df007f45f51b4d85-4.html",
+    "label": "e1102n_nrf:225 · 4/34"
+  },
+  {
+    "file": "slides/00570-v4-df007f45f51b4d85-5.html",
+    "label": "e1102n_nrf:225 · 5/34"
+  },
+  {
+    "file": "slides/00571-v4-df007f45f51b4d85-6.html",
+    "label": "e1102n_nrf:225 · 6/34"
+  },
+  {
+    "file": "slides/00572-v4-df007f45f51b4d85-7.html",
+    "label": "e1102n_nrf:225 · 7/34"
+  },
+  {
+    "file": "slides/00573-v4-df007f45f51b4d85-8.html",
+    "label": "e1102n_nrf:225 · 8/34"
+  },
+  {
+    "file": "slides/00574-v4-df007f45f51b4d85-9.html",
+    "label": "e1102n_nrf:225 · 9/34"
+  },
+  {
+    "file": "slides/00575-v4-df007f45f51b4d85-10.html",
+    "label": "e1102n_nrf:225 · 10/34"
+  },
+  {
+    "file": "slides/00576-v4-df007f45f51b4d85-11.html",
+    "label": "e1102n_nrf:225 · 11/34"
+  },
+  {
+    "file": "slides/00577-v4-df007f45f51b4d85-12.html",
+    "label": "e1102n_nrf:225 · 12/34"
+  },
+  {
+    "file": "slides/00578-v4-df007f45f51b4d85-13.html",
+    "label": "e1102n_nrf:225 · 13/34"
+  },
+  {
+    "file": "slides/00579-v4-df007f45f51b4d85-14.html",
+    "label": "e1102n_nrf:225 · 14/34"
+  },
+  {
+    "file": "slides/00580-v4-df007f45f51b4d85-15.html",
+    "label": "e1102n_nrf:225 · 15/34"
+  },
+  {
+    "file": "slides/00581-v4-df007f45f51b4d85-16.html",
+    "label": "e1102n_nrf:225 · 16/34"
+  },
+  {
+    "file": "slides/00582-v4-df007f45f51b4d85-17.html",
+    "label": "e1102n_nrf:225 · 17/34"
+  },
+  {
+    "file": "slides/00583-v4-df007f45f51b4d85-18.html",
+    "label": "e1102n_nrf:225 · 18/34"
+  },
+  {
+    "file": "slides/00584-v4-df007f45f51b4d85-19.html",
+    "label": "e1102n_nrf:225 · 19/34"
+  },
+  {
+    "file": "slides/00585-v4-df007f45f51b4d85-20.html",
+    "label": "e1102n_nrf:225 · 20/34"
+  },
+  {
+    "file": "slides/00586-v4-df007f45f51b4d85-21.html",
+    "label": "e1102n_nrf:225 · 21/34"
+  },
+  {
+    "file": "slides/00587-v4-df007f45f51b4d85-22.html",
+    "label": "e1102n_nrf:225 · 22/34"
+  },
+  {
+    "file": "slides/00588-v4-df007f45f51b4d85-23.html",
+    "label": "e1102n_nrf:225 · 23/34"
+  },
+  {
+    "file": "slides/00589-v4-df007f45f51b4d85-24.html",
+    "label": "e1102n_nrf:225 · 24/34"
+  },
+  {
+    "file": "slides/00590-v4-df007f45f51b4d85-25.html",
+    "label": "e1102n_nrf:225 · 25/34"
+  },
+  {
+    "file": "slides/00591-v4-df007f45f51b4d85-26.html",
+    "label": "e1102n_nrf:225 · 26/34"
+  },
+  {
+    "file": "slides/00592-v4-df007f45f51b4d85-27.html",
+    "label": "e1102n_nrf:225 · 27/34"
+  },
+  {
+    "file": "slides/00593-v4-df007f45f51b4d85-28.html",
+    "label": "e1102n_nrf:225 · 28/34"
+  },
+  {
+    "file": "slides/00594-v4-df007f45f51b4d85-29.html",
+    "label": "e1102n_nrf:225 · 29/34"
+  },
+  {
+    "file": "slides/00595-v4-df007f45f51b4d85-30.html",
+    "label": "e1102n_nrf:225 · 30/34"
+  },
+  {
+    "file": "slides/00596-v4-df007f45f51b4d85-31.html",
+    "label": "e1102n_nrf:225 · 31/34"
+  },
+  {
+    "file": "slides/00597-v4-df007f45f51b4d85-32.html",
+    "label": "e1102n_nrf:225 · 32/34"
+  },
+  {
+    "file": "slides/00598-v4-df007f45f51b4d85-33.html",
+    "label": "e1102n_nrf:225 · 33/34"
+  },
+  {
+    "file": "slides/00599-v4-df007f45f51b4d85-34.html",
+    "label": "e1102n_nrf:225 · 34/34"
+  },
+  {
+    "file": "slides/00600-v4-263e336a18cd17fa-1.html",
+    "label": "s0101a_att:276 · 1/3"
+  },
+  {
+    "file": "slides/00601-v4-263e336a18cd17fa-2.html",
+    "label": "s0101a_att:276 · 2/3"
+  },
+  {
+    "file": "slides/00602-v4-263e336a18cd17fa-3.html",
+    "label": "s0101a_att:276 · 3/3"
+  },
+  {
+    "file": "slides/00603-v4-d78e53d9b6484863-1.html",
+    "label": "s0101t_tik:193 · 1/2"
+  },
+  {
+    "file": "slides/00604-v4-d78e53d9b6484863-2.html",
+    "label": "s0101t_tik:193 · 2/2"
+  },
+  {
+    "file": "slides/00605-v4-cf5079acae79ed96-1.html",
+    "label": "s0101t_tik:255 · 1/3"
+  },
+  {
+    "file": "slides/00606-v4-cf5079acae79ed96-2.html",
+    "label": "s0101t_tik:255 · 2/3"
+  },
+  {
+    "file": "slides/00607-v4-cf5079acae79ed96-3.html",
+    "label": "s0101t_tik:255 · 3/3"
+  },
+  {
+    "file": "slides/00608-v4-b91919000bcc83ec-1.html",
+    "label": "s0101t_tik:563 · 1/3"
+  },
+  {
+    "file": "slides/00609-v4-b91919000bcc83ec-2.html",
+    "label": "s0101t_tik:563 · 2/3"
+  },
+  {
+    "file": "slides/00610-v4-b91919000bcc83ec-3.html",
+    "label": "s0101t_tik:563 · 3/3"
+  },
+  {
+    "file": "slides/00611-v4-85d7ab0954474f3f-1.html",
+    "label": "s0102a_att:703 · 1/2"
+  },
+  {
+    "file": "slides/00612-v4-85d7ab0954474f3f-2.html",
+    "label": "s0102a_att:703 · 2/2"
+  },
+  {
+    "file": "slides/00613-v4-ea2840513d271282-1.html",
+    "label": "s0102t_tik:304 · 1/5"
+  },
+  {
+    "file": "slides/00614-v4-ea2840513d271282-2.html",
+    "label": "s0102t_tik:304 · 2/5"
+  },
+  {
+    "file": "slides/00615-v4-ea2840513d271282-3.html",
+    "label": "s0102t_tik:304 · 3/5"
+  },
+  {
+    "file": "slides/00616-v4-ea2840513d271282-4.html",
+    "label": "s0102t_tik:304 · 4/5"
+  },
+  {
+    "file": "slides/00617-v4-ea2840513d271282-5.html",
+    "label": "s0102t_tik:304 · 5/5"
+  },
+  {
+    "file": "slides/00618-v4-ea38ea8fd9a59cdc-1.html",
+    "label": "s0102t_tik:422 · 1/5"
+  },
+  {
+    "file": "slides/00619-v4-ea38ea8fd9a59cdc-2.html",
+    "label": "s0102t_tik:422 · 2/5"
+  },
+  {
+    "file": "slides/00620-v4-ea38ea8fd9a59cdc-3.html",
+    "label": "s0102t_tik:422 · 3/5"
+  },
+  {
+    "file": "slides/00621-v4-ea38ea8fd9a59cdc-4.html",
+    "label": "s0102t_tik:422 · 4/5"
+  },
+  {
+    "file": "slides/00622-v4-ea38ea8fd9a59cdc-5.html",
+    "label": "s0102t_tik:422 · 5/5"
+  },
+  {
+    "file": "slides/00623-v4-a7fabc65484cd553-1.html",
+    "label": "s0102t_tik:441 · 1/4"
+  },
+  {
+    "file": "slides/00624-v4-a7fabc65484cd553-2.html",
+    "label": "s0102t_tik:441 · 2/4"
+  },
+  {
+    "file": "slides/00625-v4-a7fabc65484cd553-3.html",
+    "label": "s0102t_tik:441 · 3/4"
+  },
+  {
+    "file": "slides/00626-v4-a7fabc65484cd553-4.html",
+    "label": "s0102t_tik:441 · 4/4"
+  },
+  {
+    "file": "slides/00627-v4-a3cc86aa0fc0a758-1.html",
+    "label": "s0102t_tik:1202 · 1/3"
+  },
+  {
+    "file": "slides/00628-v4-a3cc86aa0fc0a758-2.html",
+    "label": "s0102t_tik:1202 · 2/3"
+  },
+  {
+    "file": "slides/00629-v4-a3cc86aa0fc0a758-3.html",
+    "label": "s0102t_tik:1202 · 3/3"
+  },
+  {
+    "file": "slides/00630-v4-0e498d81cbbf6dac-1.html",
+    "label": "s0102t_tik:1221 · 1/4"
+  },
+  {
+    "file": "slides/00631-v4-0e498d81cbbf6dac-2.html",
+    "label": "s0102t_tik:1221 · 2/4"
+  },
+  {
+    "file": "slides/00632-v4-0e498d81cbbf6dac-3.html",
+    "label": "s0102t_tik:1221 · 3/4"
+  },
+  {
+    "file": "slides/00633-v4-0e498d81cbbf6dac-4.html",
+    "label": "s0102t_tik:1221 · 4/4"
+  },
+  {
+    "file": "slides/00634-v4-32f356c04b4c1617-1.html",
+    "label": "s0103t_tik:863 · 1/4"
+  },
+  {
+    "file": "slides/00635-v4-32f356c04b4c1617-2.html",
+    "label": "s0103t_tik:863 · 2/4"
+  },
+  {
+    "file": "slides/00636-v4-32f356c04b4c1617-3.html",
+    "label": "s0103t_tik:863 · 3/4"
+  },
+  {
+    "file": "slides/00637-v4-32f356c04b4c1617-4.html",
+    "label": "s0103t_tik:863 · 4/4"
+  },
+  {
+    "file": "slides/00638-v4-462cc56150c402ef-1.html",
+    "label": "s0104t_nrf:1293 · 1/3"
+  },
+  {
+    "file": "slides/00639-v4-462cc56150c402ef-2.html",
+    "label": "s0104t_nrf:1293 · 2/3"
+  },
+  {
+    "file": "slides/00640-v4-462cc56150c402ef-3.html",
+    "label": "s0104t_nrf:1293 · 3/3"
+  },
+  {
+    "file": "slides/00641-v4-bfc2a32ba92ce9d9-1.html",
+    "label": "s0201t_tik:112 · 1/6"
+  },
+  {
+    "file": "slides/00642-v4-bfc2a32ba92ce9d9-2.html",
+    "label": "s0201t_tik:112 · 2/6"
+  },
+  {
+    "file": "slides/00643-v4-bfc2a32ba92ce9d9-3.html",
+    "label": "s0201t_tik:112 · 3/6"
+  },
+  {
+    "file": "slides/00644-v4-bfc2a32ba92ce9d9-4.html",
+    "label": "s0201t_tik:112 · 4/6"
+  },
+  {
+    "file": "slides/00645-v4-bfc2a32ba92ce9d9-5.html",
+    "label": "s0201t_tik:112 · 5/6"
+  },
+  {
+    "file": "slides/00646-v4-bfc2a32ba92ce9d9-6.html",
+    "label": "s0201t_tik:112 · 6/6"
+  },
+  {
+    "file": "slides/00647-v4-181c604212c0b3f1-1.html",
+    "label": "s0201t_tik:671 · 1/3"
+  },
+  {
+    "file": "slides/00648-v4-181c604212c0b3f1-2.html",
+    "label": "s0201t_tik:671 · 2/3"
+  },
+  {
+    "file": "slides/00649-v4-181c604212c0b3f1-3.html",
+    "label": "s0201t_tik:671 · 3/3"
+  },
+  {
+    "file": "slides/00650-v4-0df5f3791edd41a5-1.html",
+    "label": "s0201t_tik:2134 · 1/3"
+  },
+  {
+    "file": "slides/00651-v4-0df5f3791edd41a5-2.html",
+    "label": "s0201t_tik:2134 · 2/3"
+  },
+  {
+    "file": "slides/00652-v4-0df5f3791edd41a5-3.html",
+    "label": "s0201t_tik:2134 · 3/3"
+  },
+  {
+    "file": "slides/00653-v4-8ab316de9d2465fa-1.html",
+    "label": "s0201t_tik:2135 · 1/2"
+  },
+  {
+    "file": "slides/00654-v4-8ab316de9d2465fa-2.html",
+    "label": "s0201t_tik:2135 · 2/2"
+  },
+  {
+    "file": "slides/00655-v4-0d2b70fd6b9caa60-1.html",
+    "label": "s0203a_att:390 · 1/5"
+  },
+  {
+    "file": "slides/00656-v4-0d2b70fd6b9caa60-2.html",
+    "label": "s0203a_att:390 · 2/5"
+  },
+  {
+    "file": "slides/00657-v4-0d2b70fd6b9caa60-3.html",
+    "label": "s0203a_att:390 · 3/5"
+  },
+  {
+    "file": "slides/00658-v4-0d2b70fd6b9caa60-4.html",
+    "label": "s0203a_att:390 · 4/5"
+  },
+  {
+    "file": "slides/00659-v4-0d2b70fd6b9caa60-5.html",
+    "label": "s0203a_att:390 · 5/5"
+  },
+  {
+    "file": "slides/00660-v4-3d8dc2df2b7beb6a-1.html",
+    "label": "s0203m_mul:408 · 1/2"
+  },
+  {
+    "file": "slides/00661-v4-3d8dc2df2b7beb6a-2.html",
+    "label": "s0203m_mul:408 · 2/2"
+  },
+  {
+    "file": "slides/00662-v4-5b2ebdded36705db-1.html",
+    "label": "s0301a_att:919 · 1/2"
+  },
+  {
+    "file": "slides/00663-v4-5b2ebdded36705db-2.html",
+    "label": "s0301a_att:919 · 2/2"
+  },
+  {
+    "file": "slides/00664-v4-c4efb39fd229bae3-1.html",
+    "label": "s0301t_tik:105 · 1/6"
+  },
+  {
+    "file": "slides/00665-v4-c4efb39fd229bae3-2.html",
+    "label": "s0301t_tik:105 · 2/6"
+  },
+  {
+    "file": "slides/00666-v4-c4efb39fd229bae3-3.html",
+    "label": "s0301t_tik:105 · 3/6"
+  },
+  {
+    "file": "slides/00667-v4-c4efb39fd229bae3-4.html",
+    "label": "s0301t_tik:105 · 4/6"
+  },
+  {
+    "file": "slides/00668-v4-c4efb39fd229bae3-5.html",
+    "label": "s0301t_tik:105 · 5/6"
+  },
+  {
+    "file": "slides/00669-v4-c4efb39fd229bae3-6.html",
+    "label": "s0301t_tik:105 · 6/6"
+  },
+  {
+    "file": "slides/00670-v4-1a072a515999dda7-1.html",
+    "label": "s0301t_tik:191 · 1/4"
+  },
+  {
+    "file": "slides/00671-v4-1a072a515999dda7-2.html",
+    "label": "s0301t_tik:191 · 2/4"
+  },
+  {
+    "file": "slides/00672-v4-1a072a515999dda7-3.html",
+    "label": "s0301t_tik:191 · 3/4"
+  },
+  {
+    "file": "slides/00673-v4-1a072a515999dda7-4.html",
+    "label": "s0301t_tik:191 · 4/4"
+  },
+  {
+    "file": "slides/00674-v4-acda05785552cf8b-1.html",
+    "label": "s0301t_tik:833 · 1/3"
+  },
+  {
+    "file": "slides/00675-v4-acda05785552cf8b-2.html",
+    "label": "s0301t_tik:833 · 2/3"
+  },
+  {
+    "file": "slides/00676-v4-acda05785552cf8b-3.html",
+    "label": "s0301t_tik:833 · 3/3"
+  },
+  {
+    "file": "slides/00677-v4-2f054f8cc8de0e8d-1.html",
+    "label": "s0304m_mul:1186 · 1/4"
+  },
+  {
+    "file": "slides/00678-v4-2f054f8cc8de0e8d-2.html",
+    "label": "s0304m_mul:1186 · 2/4"
+  },
+  {
+    "file": "slides/00679-v4-2f054f8cc8de0e8d-3.html",
+    "label": "s0304m_mul:1186 · 3/4"
+  },
+  {
+    "file": "slides/00680-v4-2f054f8cc8de0e8d-4.html",
+    "label": "s0304m_mul:1186 · 4/4"
+  },
+  {
+    "file": "slides/00681-v4-486c3f4e438143a1-1.html",
+    "label": "s0305t_tik:278 · 1/2"
+  },
+  {
+    "file": "slides/00682-v4-486c3f4e438143a1-2.html",
+    "label": "s0305t_tik:278 · 2/2"
+  },
+  {
+    "file": "slides/00683-v4-bf94758ae8513d81-1.html",
+    "label": "s0401a_att:1244 · 1/5"
+  },
+  {
+    "file": "slides/00684-v4-bf94758ae8513d81-2.html",
+    "label": "s0401a_att:1244 · 2/5"
+  },
+  {
+    "file": "slides/00685-v4-bf94758ae8513d81-3.html",
+    "label": "s0401a_att:1244 · 3/5"
+  },
+  {
+    "file": "slides/00686-v4-bf94758ae8513d81-4.html",
+    "label": "s0401a_att:1244 · 4/5"
+  },
+  {
+    "file": "slides/00687-v4-bf94758ae8513d81-5.html",
+    "label": "s0401a_att:1244 · 5/5"
+  },
+  {
+    "file": "slides/00688-v4-755c6e560720eadc-1.html",
+    "label": "s0401a_att:1312 · 1/3"
+  },
+  {
+    "file": "slides/00689-v4-755c6e560720eadc-2.html",
+    "label": "s0401a_att:1312 · 2/3"
+  },
+  {
+    "file": "slides/00690-v4-755c6e560720eadc-3.html",
+    "label": "s0401a_att:1312 · 3/3"
+  },
+  {
+    "file": "slides/00691-v4-d86fbc5679c3bf3a-1.html",
+    "label": "s0401t_tik:244 · 1/3"
+  },
+  {
+    "file": "slides/00692-v4-d86fbc5679c3bf3a-2.html",
+    "label": "s0401t_tik:244 · 2/3"
+  },
+  {
+    "file": "slides/00693-v4-d86fbc5679c3bf3a-3.html",
+    "label": "s0401t_tik:244 · 3/3"
+  },
+  {
+    "file": "slides/00694-v4-319be999522ddf9d-1.html",
+    "label": "s0401t_tik:416 · 1/4"
+  },
+  {
+    "file": "slides/00695-v4-319be999522ddf9d-2.html",
+    "label": "s0401t_tik:416 · 2/4"
+  },
+  {
+    "file": "slides/00696-v4-319be999522ddf9d-3.html",
+    "label": "s0401t_tik:416 · 3/4"
+  },
+  {
+    "file": "slides/00697-v4-319be999522ddf9d-4.html",
+    "label": "s0401t_tik:416 · 4/4"
+  },
+  {
+    "file": "slides/00698-v4-a0d207e789ff8cdc-1.html",
+    "label": "s0402t_tik:1240 · 1/4"
+  },
+  {
+    "file": "slides/00699-v4-a0d207e789ff8cdc-2.html",
+    "label": "s0402t_tik:1240 · 2/4"
+  },
+  {
+    "file": "slides/00700-v4-a0d207e789ff8cdc-3.html",
+    "label": "s0402t_tik:1240 · 3/4"
+  },
+  {
+    "file": "slides/00701-v4-a0d207e789ff8cdc-4.html",
+    "label": "s0402t_tik:1240 · 4/4"
+  },
+  {
+    "file": "slides/00702-v4-679a2244c279fc52-1.html",
+    "label": "s0404m2_mul:286 · 1/3"
+  },
+  {
+    "file": "slides/00703-v4-679a2244c279fc52-2.html",
+    "label": "s0404m2_mul:286 · 2/3"
+  },
+  {
+    "file": "slides/00704-v4-679a2244c279fc52-3.html",
+    "label": "s0404m2_mul:286 · 3/3"
+  },
+  {
+    "file": "slides/00705-v4-23f3e48e54d180f3-1.html",
+    "label": "s0502a_att:3165 · 1/3"
+  },
+  {
+    "file": "slides/00706-v4-23f3e48e54d180f3-2.html",
+    "label": "s0502a_att:3165 · 2/3"
+  },
+  {
+    "file": "slides/00707-v4-23f3e48e54d180f3-3.html",
+    "label": "s0502a_att:3165 · 3/3"
+  },
+  {
+    "file": "slides/00708-v4-0f9c26ac272c058d-1.html",
+    "label": "s0503a_att:649 · 1/3"
+  },
+  {
+    "file": "slides/00709-v4-0f9c26ac272c058d-2.html",
+    "label": "s0503a_att:649 · 2/3"
+  },
+  {
+    "file": "slides/00710-v4-0f9c26ac272c058d-3.html",
+    "label": "s0503a_att:649 · 3/3"
+  },
+  {
+    "file": "slides/00711-v4-b1d6df63ca09196e-1.html",
+    "label": "s0503a_att:1153 · 1/6"
+  },
+  {
+    "file": "slides/00712-v4-b1d6df63ca09196e-2.html",
+    "label": "s0503a_att:1153 · 2/6"
+  },
+  {
+    "file": "slides/00713-v4-b1d6df63ca09196e-3.html",
+    "label": "s0503a_att:1153 · 3/6"
+  },
+  {
+    "file": "slides/00714-v4-b1d6df63ca09196e-4.html",
+    "label": "s0503a_att:1153 · 4/6"
+  },
+  {
+    "file": "slides/00715-v4-b1d6df63ca09196e-5.html",
+    "label": "s0503a_att:1153 · 5/6"
+  },
+  {
+    "file": "slides/00716-v4-b1d6df63ca09196e-6.html",
+    "label": "s0503a_att:1153 · 6/6"
+  },
+  {
+    "file": "slides/00717-v4-e6527c212a47e550-1.html",
+    "label": "s0504a_att:40 · 1/6"
+  },
+  {
+    "file": "slides/00718-v4-e6527c212a47e550-2.html",
+    "label": "s0504a_att:40 · 2/6"
+  },
+  {
+    "file": "slides/00719-v4-e6527c212a47e550-3.html",
+    "label": "s0504a_att:40 · 3/6"
+  },
+  {
+    "file": "slides/00720-v4-e6527c212a47e550-4.html",
+    "label": "s0504a_att:40 · 4/6"
+  },
+  {
+    "file": "slides/00721-v4-e6527c212a47e550-5.html",
+    "label": "s0504a_att:40 · 5/6"
+  },
+  {
+    "file": "slides/00722-v4-e6527c212a47e550-6.html",
+    "label": "s0504a_att:40 · 6/6"
+  },
+  {
+    "file": "slides/00723-v4-db207bd2b9fdd302-1.html",
+    "label": "s0504a_att:415 · 1/4"
+  },
+  {
+    "file": "slides/00724-v4-db207bd2b9fdd302-2.html",
+    "label": "s0504a_att:415 · 2/4"
+  },
+  {
+    "file": "slides/00725-v4-db207bd2b9fdd302-3.html",
+    "label": "s0504a_att:415 · 3/4"
+  },
+  {
+    "file": "slides/00726-v4-db207bd2b9fdd302-4.html",
+    "label": "s0504a_att:415 · 4/4"
+  },
+  {
+    "file": "slides/00727-v4-7ff7be3495c558d0-1.html",
+    "label": "s0505a_att:67 · 1/5"
+  },
+  {
+    "file": "slides/00728-v4-7ff7be3495c558d0-2.html",
+    "label": "s0505a_att:67 · 2/5"
+  },
+  {
+    "file": "slides/00729-v4-7ff7be3495c558d0-3.html",
+    "label": "s0505a_att:67 · 3/5"
+  },
+  {
+    "file": "slides/00730-v4-7ff7be3495c558d0-4.html",
+    "label": "s0505a_att:67 · 4/5"
+  },
+  {
+    "file": "slides/00731-v4-7ff7be3495c558d0-5.html",
+    "label": "s0505a_att:67 · 5/5"
+  },
+  {
+    "file": "slides/00732-v4-d00ecad587e43761-1.html",
+    "label": "s0512a_att:43 · 1/7"
+  },
+  {
+    "file": "slides/00733-v4-d00ecad587e43761-2.html",
+    "label": "s0512a_att:43 · 2/7"
+  },
+  {
+    "file": "slides/00734-v4-d00ecad587e43761-3.html",
+    "label": "s0512a_att:43 · 3/7"
+  },
+  {
+    "file": "slides/00735-v4-d00ecad587e43761-4.html",
+    "label": "s0512a_att:43 · 4/7"
+  },
+  {
+    "file": "slides/00736-v4-d00ecad587e43761-5.html",
+    "label": "s0512a_att:43 · 5/7"
+  },
+  {
+    "file": "slides/00737-v4-d00ecad587e43761-6.html",
+    "label": "s0512a_att:43 · 6/7"
+  },
+  {
+    "file": "slides/00738-v4-d00ecad587e43761-7.html",
+    "label": "s0512a_att:43 · 7/7"
+  },
+  {
+    "file": "slides/00739-v4-caec07bbfde7f298-1.html",
+    "label": "s0515a_att:115 · 1/2"
+  },
+  {
+    "file": "slides/00740-v4-caec07bbfde7f298-2.html",
+    "label": "s0515a_att:115 · 2/2"
+  },
+  {
+    "file": "slides/00741-v4-630a4ed5852ddf0a-1.html",
+    "label": "s0515a_att:624 · 1/3"
+  },
+  {
+    "file": "slides/00742-v4-630a4ed5852ddf0a-2.html",
+    "label": "s0515a_att:624 · 2/3"
+  },
+  {
+    "file": "slides/00743-v4-630a4ed5852ddf0a-3.html",
+    "label": "s0515a_att:624 · 3/3"
+  },
+  {
+    "file": "slides/00744-v4-a467831b067bec9a-1.html",
+    "label": "s0515a_att:911 · 1/4"
+  },
+  {
+    "file": "slides/00745-v4-a467831b067bec9a-2.html",
+    "label": "s0515a_att:911 · 2/4"
+  },
+  {
+    "file": "slides/00746-v4-a467831b067bec9a-3.html",
+    "label": "s0515a_att:911 · 3/4"
+  },
+  {
+    "file": "slides/00747-v4-a467831b067bec9a-4.html",
+    "label": "s0515a_att:911 · 4/4"
+  },
+  {
+    "file": "slides/00748-v4-341aaff776e7cc11-1.html",
+    "label": "s0515m_mul:281 · 1/3"
+  },
+  {
+    "file": "slides/00749-v4-341aaff776e7cc11-2.html",
+    "label": "s0515m_mul:281 · 2/3"
+  },
+  {
+    "file": "slides/00750-v4-341aaff776e7cc11-3.html",
+    "label": "s0515m_mul:281 · 3/3"
+  },
+  {
+    "file": "slides/00751-v4-38f6e21e6685ee8e-1.html",
+    "label": "s0515m_mul:585 · 1/5"
+  },
+  {
+    "file": "slides/00752-v4-38f6e21e6685ee8e-2.html",
+    "label": "s0515m_mul:585 · 2/5"
+  },
+  {
+    "file": "slides/00753-v4-38f6e21e6685ee8e-3.html",
+    "label": "s0515m_mul:585 · 3/5"
+  },
+  {
+    "file": "slides/00754-v4-38f6e21e6685ee8e-4.html",
+    "label": "s0515m_mul:585 · 4/5"
+  },
+  {
+    "file": "slides/00755-v4-38f6e21e6685ee8e-5.html",
+    "label": "s0515m_mul:585 · 5/5"
+  },
+  {
+    "file": "slides/00756-v4-9fd23a8c06f81f96-1.html",
+    "label": "s0515m_mul:902 · 1/5"
+  },
+  {
+    "file": "slides/00757-v4-9fd23a8c06f81f96-2.html",
+    "label": "s0515m_mul:902 · 2/5"
+  },
+  {
+    "file": "slides/00758-v4-9fd23a8c06f81f96-3.html",
+    "label": "s0515m_mul:902 · 3/5"
+  },
+  {
+    "file": "slides/00759-v4-9fd23a8c06f81f96-4.html",
+    "label": "s0515m_mul:902 · 4/5"
+  },
+  {
+    "file": "slides/00760-v4-9fd23a8c06f81f96-5.html",
+    "label": "s0515m_mul:902 · 5/5"
+  },
+  {
+    "file": "slides/00761-v4-61ee6b8f3c17b08c-1.html",
+    "label": "s0515m_mul:1506 · 1/5"
+  },
+  {
+    "file": "slides/00762-v4-61ee6b8f3c17b08c-2.html",
+    "label": "s0515m_mul:1506 · 2/5"
+  },
+  {
+    "file": "slides/00763-v4-61ee6b8f3c17b08c-3.html",
+    "label": "s0515m_mul:1506 · 3/5"
+  },
+  {
+    "file": "slides/00764-v4-61ee6b8f3c17b08c-4.html",
+    "label": "s0515m_mul:1506 · 4/5"
+  },
+  {
+    "file": "slides/00765-v4-61ee6b8f3c17b08c-5.html",
+    "label": "s0515m_mul:1506 · 5/5"
+  },
+  {
+    "file": "slides/00766-v4-a9787c85a61b66d6-1.html",
+    "label": "s0515m_mul:1529 · 1/4"
+  },
+  {
+    "file": "slides/00767-v4-a9787c85a61b66d6-2.html",
+    "label": "s0515m_mul:1529 · 2/4"
+  },
+  {
+    "file": "slides/00768-v4-a9787c85a61b66d6-3.html",
+    "label": "s0515m_mul:1529 · 3/4"
+  },
+  {
+    "file": "slides/00769-v4-a9787c85a61b66d6-4.html",
+    "label": "s0515m_mul:1529 · 4/4"
+  },
+  {
+    "file": "slides/00770-v4-0195899b0ce7607b-1.html",
+    "label": "s0515m_mul:1532 · 1/3"
+  },
+  {
+    "file": "slides/00771-v4-0195899b0ce7607b-2.html",
+    "label": "s0515m_mul:1532 · 2/3"
+  },
+  {
+    "file": "slides/00772-v4-0195899b0ce7607b-3.html",
+    "label": "s0515m_mul:1532 · 3/3"
+  },
+  {
+    "file": "slides/00773-v4-967cd3448fd7d8e5-1.html",
+    "label": "s0515m_mul:2019 · 1/4"
+  },
+  {
+    "file": "slides/00774-v4-967cd3448fd7d8e5-2.html",
+    "label": "s0515m_mul:2019 · 2/4"
+  },
+  {
+    "file": "slides/00775-v4-967cd3448fd7d8e5-3.html",
+    "label": "s0515m_mul:2019 · 3/4"
+  },
+  {
+    "file": "slides/00776-v4-967cd3448fd7d8e5-4.html",
+    "label": "s0515m_mul:2019 · 4/4"
+  },
+  {
+    "file": "slides/00777-v4-dd2cdbce11b9f5ed-1.html",
+    "label": "s0515m_mul:2146 · 1/5"
+  },
+  {
+    "file": "slides/00778-v4-dd2cdbce11b9f5ed-2.html",
+    "label": "s0515m_mul:2146 · 2/5"
+  },
+  {
+    "file": "slides/00779-v4-dd2cdbce11b9f5ed-3.html",
+    "label": "s0515m_mul:2146 · 3/5"
+  },
+  {
+    "file": "slides/00780-v4-dd2cdbce11b9f5ed-4.html",
+    "label": "s0515m_mul:2146 · 4/5"
+  },
+  {
+    "file": "slides/00781-v4-dd2cdbce11b9f5ed-5.html",
+    "label": "s0515m_mul:2146 · 5/5"
+  },
+  {
+    "file": "slides/00782-v4-2db5c881ba91af77-1.html",
+    "label": "s0515m_mul:2199 · 1/1"
+  },
+  {
+    "file": "slides/00783-v4-0af9fff3e04167af-1.html",
+    "label": "s0515m_mul:2294 · 1/4"
+  },
+  {
+    "file": "slides/00784-v4-0af9fff3e04167af-2.html",
+    "label": "s0515m_mul:2294 · 2/4"
+  },
+  {
+    "file": "slides/00785-v4-0af9fff3e04167af-3.html",
+    "label": "s0515m_mul:2294 · 3/4"
+  },
+  {
+    "file": "slides/00786-v4-0af9fff3e04167af-4.html",
+    "label": "s0515m_mul:2294 · 4/4"
+  },
+  {
+    "file": "slides/00787-v4-fd3b7f57eb655f18-1.html",
+    "label": "s0516m_mul:1699 · 1/2"
+  },
+  {
+    "file": "slides/00788-v4-fd3b7f57eb655f18-2.html",
+    "label": "s0516m_mul:1699 · 2/2"
+  },
+  {
+    "file": "slides/00789-v4-77a99976c6de69e8-1.html",
+    "label": "s0516m_mul:1770 · 1/2"
+  },
+  {
+    "file": "slides/00790-v4-77a99976c6de69e8-2.html",
+    "label": "s0516m_mul:1770 · 2/2"
+  },
+  {
+    "file": "slides/00791-v4-7b593ff2212bad54-1.html",
+    "label": "s0517a_att:181 · 1/3"
+  },
+  {
+    "file": "slides/00792-v4-7b593ff2212bad54-2.html",
+    "label": "s0517a_att:181 · 2/3"
+  },
+  {
+    "file": "slides/00793-v4-7b593ff2212bad54-3.html",
+    "label": "s0517a_att:181 · 3/3"
+  },
+  {
+    "file": "slides/00794-v4-306bc597d782358a-1.html",
+    "label": "s0517a_att:367 · 1/4"
+  },
+  {
+    "file": "slides/00795-v4-306bc597d782358a-2.html",
+    "label": "s0517a_att:367 · 2/4"
+  },
+  {
+    "file": "slides/00796-v4-306bc597d782358a-3.html",
+    "label": "s0517a_att:367 · 3/4"
+  },
+  {
+    "file": "slides/00797-v4-306bc597d782358a-4.html",
+    "label": "s0517a_att:367 · 4/4"
+  },
+  {
+    "file": "slides/00798-v4-52769b8a0b079472-1.html",
+    "label": "s0517a_att:463 · 1/5"
+  },
+  {
+    "file": "slides/00799-v4-52769b8a0b079472-2.html",
+    "label": "s0517a_att:463 · 2/5"
+  },
+  {
+    "file": "slides/00800-v4-52769b8a0b079472-3.html",
+    "label": "s0517a_att:463 · 3/5"
+  },
+  {
+    "file": "slides/00801-v4-52769b8a0b079472-4.html",
+    "label": "s0517a_att:463 · 4/5"
+  },
+  {
+    "file": "slides/00802-v4-52769b8a0b079472-5.html",
+    "label": "s0517a_att:463 · 5/5"
+  },
+  {
+    "file": "slides/00803-v4-f089616a80d522c5-1.html",
+    "label": "s0517a_att:793 · 1/4"
+  },
+  {
+    "file": "slides/00804-v4-f089616a80d522c5-2.html",
+    "label": "s0517a_att:793 · 2/4"
+  },
+  {
+    "file": "slides/00805-v4-f089616a80d522c5-3.html",
+    "label": "s0517a_att:793 · 3/4"
+  },
+  {
+    "file": "slides/00806-v4-f089616a80d522c5-4.html",
+    "label": "s0517a_att:793 · 4/4"
+  },
+  {
+    "file": "slides/00807-v4-df908486cf2d386b-1.html",
+    "label": "s0517a_att:976 · 1/4"
+  },
+  {
+    "file": "slides/00808-v4-df908486cf2d386b-2.html",
+    "label": "s0517a_att:976 · 2/4"
+  },
+  {
+    "file": "slides/00809-v4-df908486cf2d386b-3.html",
+    "label": "s0517a_att:976 · 3/4"
+  },
+  {
+    "file": "slides/00810-v4-df908486cf2d386b-4.html",
+    "label": "s0517a_att:976 · 4/4"
+  },
+  {
+    "file": "slides/00811-v4-0486381c9fd8c818-1.html",
+    "label": "s0517a_att:1026 · 1/5"
+  },
+  {
+    "file": "slides/00812-v4-0486381c9fd8c818-2.html",
+    "label": "s0517a_att:1026 · 2/5"
+  },
+  {
+    "file": "slides/00813-v4-0486381c9fd8c818-3.html",
+    "label": "s0517a_att:1026 · 3/5"
+  },
+  {
+    "file": "slides/00814-v4-0486381c9fd8c818-4.html",
+    "label": "s0517a_att:1026 · 4/5"
+  },
+  {
+    "file": "slides/00815-v4-0486381c9fd8c818-5.html",
+    "label": "s0517a_att:1026 · 5/5"
+  },
+  {
+    "file": "slides/00816-v4-219c6b93d24553ef-1.html",
+    "label": "s0517a_att:1057 · 1/1"
+  },
+  {
+    "file": "slides/00817-v4-071dea69aa562c0f-1.html",
+    "label": "s0517a_att:1059 · 1/4"
+  },
+  {
+    "file": "slides/00818-v4-071dea69aa562c0f-2.html",
+    "label": "s0517a_att:1059 · 2/4"
+  },
+  {
+    "file": "slides/00819-v4-071dea69aa562c0f-3.html",
+    "label": "s0517a_att:1059 · 3/4"
+  },
+  {
+    "file": "slides/00820-v4-071dea69aa562c0f-4.html",
+    "label": "s0517a_att:1059 · 4/4"
+  },
+  {
+    "file": "slides/00821-v4-79702dc3ac777883-1.html",
+    "label": "s0517a_att:1063 · 1/4"
+  },
+  {
+    "file": "slides/00822-v4-79702dc3ac777883-2.html",
+    "label": "s0517a_att:1063 · 2/4"
+  },
+  {
+    "file": "slides/00823-v4-79702dc3ac777883-3.html",
+    "label": "s0517a_att:1063 · 3/4"
+  },
+  {
+    "file": "slides/00824-v4-79702dc3ac777883-4.html",
+    "label": "s0517a_att:1063 · 4/4"
+  },
+  {
+    "file": "slides/00825-v4-fbdd3bf526da8dc2-1.html",
+    "label": "s0517a_att:1079 · 1/3"
+  },
+  {
+    "file": "slides/00826-v4-fbdd3bf526da8dc2-2.html",
+    "label": "s0517a_att:1079 · 2/3"
+  },
+  {
+    "file": "slides/00827-v4-fbdd3bf526da8dc2-3.html",
+    "label": "s0517a_att:1079 · 3/3"
+  },
+  {
+    "file": "slides/00828-v4-35738531a557e48f-1.html",
+    "label": "s0517a_att:1521 · 1/6"
+  },
+  {
+    "file": "slides/00829-v4-35738531a557e48f-2.html",
+    "label": "s0517a_att:1521 · 2/6"
+  },
+  {
+    "file": "slides/00830-v4-35738531a557e48f-3.html",
+    "label": "s0517a_att:1521 · 3/6"
+  },
+  {
+    "file": "slides/00831-v4-35738531a557e48f-4.html",
+    "label": "s0517a_att:1521 · 4/6"
+  },
+  {
+    "file": "slides/00832-v4-35738531a557e48f-5.html",
+    "label": "s0517a_att:1521 · 5/6"
+  },
+  {
+    "file": "slides/00833-v4-35738531a557e48f-6.html",
+    "label": "s0517a_att:1521 · 6/6"
+  },
+  {
+    "file": "slides/00834-v4-967e51eec70a69b2-1.html",
+    "label": "s0517a_att:1613 · 1/5"
+  },
+  {
+    "file": "slides/00835-v4-967e51eec70a69b2-2.html",
+    "label": "s0517a_att:1613 · 2/5"
+  },
+  {
+    "file": "slides/00836-v4-967e51eec70a69b2-3.html",
+    "label": "s0517a_att:1613 · 3/5"
+  },
+  {
+    "file": "slides/00837-v4-967e51eec70a69b2-4.html",
+    "label": "s0517a_att:1613 · 4/5"
+  },
+  {
+    "file": "slides/00838-v4-967e51eec70a69b2-5.html",
+    "label": "s0517a_att:1613 · 5/5"
+  },
+  {
+    "file": "slides/00839-v4-397e915939ba608e-1.html",
+    "label": "s0517a_att:1995 · 1/6"
+  },
+  {
+    "file": "slides/00840-v4-397e915939ba608e-2.html",
+    "label": "s0517a_att:1995 · 2/6"
+  },
+  {
+    "file": "slides/00841-v4-397e915939ba608e-3.html",
+    "label": "s0517a_att:1995 · 3/6"
+  },
+  {
+    "file": "slides/00842-v4-397e915939ba608e-4.html",
+    "label": "s0517a_att:1995 · 4/6"
+  },
+  {
+    "file": "slides/00843-v4-397e915939ba608e-5.html",
+    "label": "s0517a_att:1995 · 5/6"
+  },
+  {
+    "file": "slides/00844-v4-397e915939ba608e-6.html",
+    "label": "s0517a_att:1995 · 6/6"
+  },
+  {
+    "file": "slides/00845-v4-38ecb5c462777122-1.html",
+    "label": "s0517a_att:1996 · 1/4"
+  },
+  {
+    "file": "slides/00846-v4-38ecb5c462777122-2.html",
+    "label": "s0517a_att:1996 · 2/4"
+  },
+  {
+    "file": "slides/00847-v4-38ecb5c462777122-3.html",
+    "label": "s0517a_att:1996 · 3/4"
+  },
+  {
+    "file": "slides/00848-v4-38ecb5c462777122-4.html",
+    "label": "s0517a_att:1996 · 4/4"
+  },
+  {
+    "file": "slides/00849-v4-93850ac560832286-1.html",
+    "label": "s0517a_att:2229 · 1/3"
+  },
+  {
+    "file": "slides/00850-v4-93850ac560832286-2.html",
+    "label": "s0517a_att:2229 · 2/3"
+  },
+  {
+    "file": "slides/00851-v4-93850ac560832286-3.html",
+    "label": "s0517a_att:2229 · 3/3"
+  },
+  {
+    "file": "slides/00852-v4-dacfa3d26da237e4-1.html",
+    "label": "s0517m_mul:490 · 1/3"
+  },
+  {
+    "file": "slides/00853-v4-dacfa3d26da237e4-2.html",
+    "label": "s0517m_mul:490 · 2/3"
+  },
+  {
+    "file": "slides/00854-v4-dacfa3d26da237e4-3.html",
+    "label": "s0517m_mul:490 · 3/3"
+  },
+  {
+    "file": "slides/00855-v4-9598d60319d71717-1.html",
+    "label": "s0517m_mul:1173 · 1/2"
+  },
+  {
+    "file": "slides/00856-v4-9598d60319d71717-2.html",
+    "label": "s0517m_mul:1173 · 2/2"
+  },
+  {
+    "file": "slides/00857-v4-c2cde2771a14a44c-1.html",
+    "label": "s0518m_nrf:1572 · 1/3"
+  },
+  {
+    "file": "slides/00858-v4-c2cde2771a14a44c-2.html",
+    "label": "s0518m_nrf:1572 · 2/3"
+  },
+  {
+    "file": "slides/00859-v4-c2cde2771a14a44c-3.html",
+    "label": "s0518m_nrf:1572 · 3/3"
+  },
+  {
+    "file": "slides/00860-v4-c7f3699128fcc511-1.html",
+    "label": "s0519t_tik:581 · 1/2"
+  },
+  {
+    "file": "slides/00861-v4-c7f3699128fcc511-2.html",
+    "label": "s0519t_tik:581 · 2/2"
+  },
+  {
+    "file": "slides/00862-v4-223883db308a7930-1.html",
+    "label": "s0520m_nrf:585 · 1/3"
+  },
+  {
+    "file": "slides/00863-v4-223883db308a7930-2.html",
+    "label": "s0520m_nrf:585 · 2/3"
+  },
+  {
+    "file": "slides/00864-v4-223883db308a7930-3.html",
+    "label": "s0520m_nrf:585 · 3/3"
+  },
+  {
+    "file": "slides/00865-v4-e16b8398840419ad-1.html",
+    "label": "s0520m_nrf:643 · 1/3"
+  },
+  {
+    "file": "slides/00866-v4-e16b8398840419ad-2.html",
+    "label": "s0520m_nrf:643 · 2/3"
+  },
+  {
+    "file": "slides/00867-v4-e16b8398840419ad-3.html",
+    "label": "s0520m_nrf:643 · 3/3"
+  },
+  {
+    "file": "slides/00868-v4-c8745e04dcb2034a-1.html",
+    "label": "s0520m_nrf:731 · 1/5"
+  },
+  {
+    "file": "slides/00869-v4-c8745e04dcb2034a-2.html",
+    "label": "s0520m_nrf:731 · 2/5"
+  },
+  {
+    "file": "slides/00870-v4-c8745e04dcb2034a-3.html",
+    "label": "s0520m_nrf:731 · 3/5"
+  },
+  {
+    "file": "slides/00871-v4-c8745e04dcb2034a-4.html",
+    "label": "s0520m_nrf:731 · 4/5"
+  },
+  {
+    "file": "slides/00872-v4-c8745e04dcb2034a-5.html",
+    "label": "s0520m_nrf:731 · 5/5"
+  },
+  {
+    "file": "slides/00873-v4-5218ffba0a78e13a-1.html",
+    "label": "vin01a_att:378 · 1/3"
+  },
+  {
+    "file": "slides/00874-v4-5218ffba0a78e13a-2.html",
+    "label": "vin01a_att:378 · 2/3"
+  },
+  {
+    "file": "slides/00875-v4-5218ffba0a78e13a-3.html",
+    "label": "vin01a_att:378 · 3/3"
+  },
+  {
+    "file": "slides/00876-v4-ca03f7bff6b0c07f-1.html",
+    "label": "vin01a_att:1527 · 1/2"
+  },
+  {
+    "file": "slides/00877-v4-ca03f7bff6b0c07f-2.html",
+    "label": "vin01a_att:1527 · 2/2"
+  },
+  {
+    "file": "slides/00878-v4-3fe1564aa7fd08f5-1.html",
+    "label": "vin01m_mul:646 · 1/3"
+  },
+  {
+    "file": "slides/00879-v4-3fe1564aa7fd08f5-2.html",
+    "label": "vin01m_mul:646 · 2/3"
+  },
+  {
+    "file": "slides/00880-v4-3fe1564aa7fd08f5-3.html",
+    "label": "vin01m_mul:646 · 3/3"
+  },
+  {
+    "file": "slides/00881-v4-88834ff9a7c450e2-1.html",
+    "label": "vin01m_mul:652 · 1/3"
+  },
+  {
+    "file": "slides/00882-v4-88834ff9a7c450e2-2.html",
+    "label": "vin01m_mul:652 · 2/3"
+  },
+  {
+    "file": "slides/00883-v4-88834ff9a7c450e2-3.html",
+    "label": "vin01m_mul:652 · 3/3"
+  },
+  {
+    "file": "slides/00884-v4-e5daf43adb3d0d06-1.html",
+    "label": "vin01t1_tik:954 · 1/4"
+  },
+  {
+    "file": "slides/00885-v4-e5daf43adb3d0d06-2.html",
+    "label": "vin01t1_tik:954 · 2/4"
+  },
+  {
+    "file": "slides/00886-v4-e5daf43adb3d0d06-3.html",
+    "label": "vin01t1_tik:954 · 3/4"
+  },
+  {
+    "file": "slides/00887-v4-e5daf43adb3d0d06-4.html",
+    "label": "vin01t1_tik:954 · 4/4"
+  },
+  {
+    "file": "slides/00888-v4-caf20bed8abbd379-1.html",
+    "label": "vin01t1_tik:986 · 1/6"
+  },
+  {
+    "file": "slides/00889-v4-caf20bed8abbd379-2.html",
+    "label": "vin01t1_tik:986 · 2/6"
+  },
+  {
+    "file": "slides/00890-v4-caf20bed8abbd379-3.html",
+    "label": "vin01t1_tik:986 · 3/6"
+  },
+  {
+    "file": "slides/00891-v4-caf20bed8abbd379-4.html",
+    "label": "vin01t1_tik:986 · 4/6"
+  },
+  {
+    "file": "slides/00892-v4-caf20bed8abbd379-5.html",
+    "label": "vin01t1_tik:986 · 5/6"
+  },
+  {
+    "file": "slides/00893-v4-caf20bed8abbd379-6.html",
+    "label": "vin01t1_tik:986 · 6/6"
+  },
+  {
+    "file": "slides/00894-v4-2b18db491ecba2e6-1.html",
+    "label": "vin01t1_tik:1139 · 1/3"
+  },
+  {
+    "file": "slides/00895-v4-2b18db491ecba2e6-2.html",
+    "label": "vin01t1_tik:1139 · 2/3"
+  },
+  {
+    "file": "slides/00896-v4-2b18db491ecba2e6-3.html",
+    "label": "vin01t1_tik:1139 · 3/3"
+  },
+  {
+    "file": "slides/00897-v4-8e3bbddd23100e7a-1.html",
+    "label": "vin01t1_tik:1164 · 1/2"
+  },
+  {
+    "file": "slides/00898-v4-8e3bbddd23100e7a-2.html",
+    "label": "vin01t1_tik:1164 · 2/2"
+  },
+  {
+    "file": "slides/00899-v4-eac3abbf6546a76a-1.html",
+    "label": "vin01t2_tik:685 · 1/3"
+  },
+  {
+    "file": "slides/00900-v4-eac3abbf6546a76a-2.html",
+    "label": "vin01t2_tik:685 · 2/3"
+  },
+  {
+    "file": "slides/00901-v4-eac3abbf6546a76a-3.html",
+    "label": "vin01t2_tik:685 · 3/3"
+  },
+  {
+    "file": "slides/00902-v4-15b0e60d262e1a1f-1.html",
+    "label": "vin01t2_tik:970 · 1/3"
+  },
+  {
+    "file": "slides/00903-v4-15b0e60d262e1a1f-2.html",
+    "label": "vin01t2_tik:970 · 2/3"
+  },
+  {
+    "file": "slides/00904-v4-15b0e60d262e1a1f-3.html",
+    "label": "vin01t2_tik:970 · 3/3"
+  },
+  {
+    "file": "slides/00905-v4-a5de288dec7033b8-1.html",
+    "label": "vin02m1_mul:278 · 1/2"
+  },
+  {
+    "file": "slides/00906-v4-a5de288dec7033b8-2.html",
+    "label": "vin02m1_mul:278 · 2/2"
+  },
+  {
+    "file": "slides/00907-v4-d38feca0b50734b4-1.html",
+    "label": "vin06t_nrf:404 · 1/4"
+  },
+  {
+    "file": "slides/00908-v4-d38feca0b50734b4-2.html",
+    "label": "vin06t_nrf:404 · 2/4"
+  },
+  {
+    "file": "slides/00909-v4-d38feca0b50734b4-3.html",
+    "label": "vin06t_nrf:404 · 3/4"
+  },
+  {
+    "file": "slides/00910-v4-d38feca0b50734b4-4.html",
+    "label": "vin06t_nrf:404 · 4/4"
+  },
+  {
+    "file": "slides/00911-v4-29c3af05da20e13e-1.html",
+    "label": "vin06t_nrf:407 · 1/4"
+  },
+  {
+    "file": "slides/00912-v4-29c3af05da20e13e-2.html",
+    "label": "vin06t_nrf:407 · 2/4"
+  },
+  {
+    "file": "slides/00913-v4-29c3af05da20e13e-3.html",
+    "label": "vin06t_nrf:407 · 3/4"
+  },
+  {
+    "file": "slides/00914-v4-29c3af05da20e13e-4.html",
+    "label": "vin06t_nrf:407 · 4/4"
+  },
+  {
+    "file": "slides/00915-v4-49a4b9a801b25d81-1.html",
+    "label": "vin07t_nrf:219 · 1/5"
+  },
+  {
+    "file": "slides/00916-v4-49a4b9a801b25d81-2.html",
+    "label": "vin07t_nrf:219 · 2/5"
+  },
+  {
+    "file": "slides/00917-v4-49a4b9a801b25d81-3.html",
+    "label": "vin07t_nrf:219 · 3/5"
+  },
+  {
+    "file": "slides/00918-v4-49a4b9a801b25d81-4.html",
+    "label": "vin07t_nrf:219 · 4/5"
+  },
+  {
+    "file": "slides/00919-v4-49a4b9a801b25d81-5.html",
+    "label": "vin07t_nrf:219 · 5/5"
+  },
+  {
+    "file": "slides/00920-v4-f89d8546fdbc026e-1.html",
+    "label": "vin07t_nrf:601 · 1/4"
+  },
+  {
+    "file": "slides/00921-v4-f89d8546fdbc026e-2.html",
+    "label": "vin07t_nrf:601 · 2/4"
+  },
+  {
+    "file": "slides/00922-v4-f89d8546fdbc026e-3.html",
+    "label": "vin07t_nrf:601 · 3/4"
+  },
+  {
+    "file": "slides/00923-v4-f89d8546fdbc026e-4.html",
+    "label": "vin07t_nrf:601 · 4/4"
+  },
+  {
+    "file": "slides/00924-v4-2c7ec239d10d1857-1.html",
+    "label": "vin07t_nrf:620 · 1/9"
+  },
+  {
+    "file": "slides/00925-v4-2c7ec239d10d1857-2.html",
+    "label": "vin07t_nrf:620 · 2/9"
+  },
+  {
+    "file": "slides/00926-v4-2c7ec239d10d1857-3.html",
+    "label": "vin07t_nrf:620 · 3/9"
+  },
+  {
+    "file": "slides/00927-v4-2c7ec239d10d1857-4.html",
+    "label": "vin07t_nrf:620 · 4/9"
+  },
+  {
+    "file": "slides/00928-v4-2c7ec239d10d1857-5.html",
+    "label": "vin07t_nrf:620 · 5/9"
+  },
+  {
+    "file": "slides/00929-v4-2c7ec239d10d1857-6.html",
+    "label": "vin07t_nrf:620 · 6/9"
+  },
+  {
+    "file": "slides/00930-v4-2c7ec239d10d1857-7.html",
+    "label": "vin07t_nrf:620 · 7/9"
+  },
+  {
+    "file": "slides/00931-v4-2c7ec239d10d1857-8.html",
+    "label": "vin07t_nrf:620 · 8/9"
+  },
+  {
+    "file": "slides/00932-v4-2c7ec239d10d1857-9.html",
+    "label": "vin07t_nrf:620 · 9/9"
+  },
+  {
+    "file": "slides/00933-v4-4bb6a562e3190a20-1.html",
+    "label": "vin07t_nrf:684 · 1/4"
+  },
+  {
+    "file": "slides/00934-v4-4bb6a562e3190a20-2.html",
+    "label": "vin07t_nrf:684 · 2/4"
+  },
+  {
+    "file": "slides/00935-v4-4bb6a562e3190a20-3.html",
+    "label": "vin07t_nrf:684 · 3/4"
+  },
+  {
+    "file": "slides/00936-v4-4bb6a562e3190a20-4.html",
+    "label": "vin07t_nrf:684 · 4/4"
+  }
+];
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_WIDTH = 1920;
+  window.DECK_HEIGHT = 1080;
+  window.GALLERY_CARD_W = 300;       // 画廊卡片基准宽度
+  window.GALLERY_DRIFT_SECONDS = 80; // 画廊漂移一圈时长
+  // window.DECK_OVERVIEW = 'grid';  // 取消注释可固定概览模式
+</script>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; font-family: -apple-system, "PingFang SC", sans-serif; background: #0a0a0a; }
+
+  .overview { position: fixed; inset: 0; }
+  body[data-mode="present"] .overview { display: none; }
+  body[data-mode="present"] .start-btn { display: none; }
+  body[data-mode="overview"] #present-ui { display: none; }
+  body[data-ov="grid"]    #ov-gallery { display: none; }
+  body[data-ov="gallery"] #ov-grid    { display: none; }
+  body[data-ov="gallery"][data-mode="overview"] { background: #0a0805; }
+  body[data-ov="grid"][data-mode="overview"]    { background: #efece4; }
+
+  /* ════════ 模式 1 · 自适应网格墙（一屏装得下→居中轻斜；装不下→舒适大小竖向滚动）════════ */
+  #ov-grid { display: flex; justify-content: center; perspective: 2200px; perspective-origin: 50% 42%;
+    background: radial-gradient(120% 90% at 50% 0%, #f4f1e9, #e7e3d8 75%); }
+  body[data-grid="fit"]    #ov-grid { overflow: hidden;   align-items: center; }
+  body[data-grid="scroll"] #ov-grid { overflow-y: auto; overflow-x: hidden; align-items: flex-start; padding: 74px 0 110px; }
+  .wall-wrap { }
+  body[data-grid="fit"]    .wall-wrap { transform: translateY(-3vh); }
+  .wall { display: grid; gap: 20px; transform-origin: center center; margin: 0 auto; }  /* 不用 preserve-3d：整墙作单个倾斜平面，命中测试可靠 */
+  #ov-grid .card {
+    position: relative; aspect-ratio: 16/9; border-radius: 9px; overflow: hidden; background: #fff; cursor: pointer;
+    box-shadow: 0 16px 34px rgba(40,34,24,0.20), 0 3px 10px rgba(40,34,24,0.12);
+    transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s;
+  }
+  #ov-grid .card:hover {
+    transform: scale(1.18);
+    box-shadow: 0 48px 92px rgba(40,34,24,0.36), 0 14px 30px rgba(40,34,24,0.22); z-index: 20;
+  }
+
+  /* ════════ 模式 2 · 无限画廊 ════════ */
+  #ov-gallery { overflow: hidden; perspective: 2200px; perspective-origin: 50% 42%;
+    background: radial-gradient(130% 120% at 50% 38%, #1b1610, #0a0805 82%); }
+  .stage3d { --rx: 18; --rz: 9; position: absolute; inset: 0; transform-style: preserve-3d; transform: scale(1.22) rotateX(18deg) rotateZ(-9deg); transform-origin: center center; }
+  .breathe { position: absolute; inset: 0; animation: breathe 26s ease-in-out infinite; transform-origin: center center; transform-style: preserve-3d; }
+  .drift-layer { position: absolute; top: 0; left: 0; will-change: transform; animation: drift var(--driftSec, 80s) linear infinite; transform-style: preserve-3d; }
+  #ov-gallery:hover .drift-layer { animation-play-state: paused; }
+  .gallery { display: grid; }
+  #ov-gallery .card {
+    position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; background: #fff; cursor: pointer;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.42), 0 3px 9px rgba(0,0,0,0.3);
+    transition: transform .34s cubic-bezier(.2,.7,.2,1), box-shadow .34s; transform-style: preserve-3d; will-change: transform;
+  }
+  #ov-gallery .card:hover {
+    transform: translateZ(60px) rotateX(calc(var(--rx,18)*-1deg)) rotateZ(calc(var(--rz,9)*1deg)) scale(1.06);
+    box-shadow: 0 30px 64px rgba(0,0,0,0.55), 0 8px 20px rgba(0,0,0,0.4); z-index: 30;
+  }
+  .vignette { position: fixed; inset: 0; pointer-events: none; z-index: 20; box-shadow: inset 0 0 240px 70px rgba(8,6,3,0.62); }
+  @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(calc(var(--dx)*-1), calc(var(--dy)*-1), 0); } }
+  @keyframes breathe { 0%,100% { transform: scale(1.0); } 50% { transform: scale(1.045); } }
+
+  /* 卡片通用内容 */
+  .card .thumb { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; transform-origin: top left; pointer-events: none; }
+  .card .thumb iframe { width: 1920px; height: 1080px; border: 0; display: block; background: #fff; pointer-events: none; }
+  .card .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .card .num { position: absolute; bottom: 6px; left: 7px; background: rgba(16,12,7,0.76); color: #fff; font-size: 11px; line-height: 1; padding: 4px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; letter-spacing: 0.03em; z-index: 3; pointer-events: none; max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #ov-gallery .card .num { opacity: 0; transition: opacity .25s; }
+  #ov-gallery .card:hover .num { opacity: 1; }
+
+  .overview-title { position: fixed; top: 24px; left: 0; right: 0; text-align: center; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; z-index: 40; pointer-events: none; }
+  body[data-ov="grid"]    .overview-title { color: #5a5346; opacity: 0.66; }
+  body[data-ov="gallery"] .overview-title { color: rgba(244,238,224,0.7); text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
+
+  .start-btn { position: fixed; bottom: 26px; right: 26px; border: 0; padding: 13px 24px; border-radius: 999px; font-size: 15px; font-family: inherit; letter-spacing: 0.04em; cursor: pointer; z-index: 200; transition: transform .18s, box-shadow .18s; }
+  body[data-ov="grid"]    .start-btn { background: #1a1712; color: #fff; box-shadow: 0 8px 28px rgba(40,34,24,0.28); }
+  body[data-ov="gallery"] .start-btn { background: #f4eee0; color: #1a1712; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+  .start-btn:hover { transform: translateY(-2px); }
+
+  /* ════════ 演示模式 ════════ */
+  #stage { position: fixed; top: 50%; left: 50%; transform-origin: top left; will-change: transform; background: #fff; box-shadow: 0 10px 60px rgba(0,0,0,0.4); }
+  #stage iframe { width: 100%; height: 100%; border: 0; display: block; background: #fff; }
+  .counter { position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.65); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; letter-spacing: 0.05em; font-variant-numeric: tabular-nums; z-index: 100; opacity: 0.7; }
+  .counter .label { color: rgba(255,255,255,0.7); margin-left: 8px; }
+  .overview-btn { position: fixed; top: 20px; left: 20px; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); border: 0; padding: 7px 14px; border-radius: 999px; font-size: 13px; font-family: inherit; cursor: pointer; z-index: 100; opacity: 0.6; }
+  .overview-btn:hover { opacity: 1; }
+  .nav-zone { position: fixed; top: 0; bottom: 0; width: 15%; cursor: pointer; z-index: 50; }
+  .nav-zone.left { left: 0; } .nav-zone.right { right: 0; }
+  .nav-hint { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 999px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0; transition: opacity .2s; }
+  .nav-zone.left .nav-hint { left: 20px; } .nav-zone.right .nav-hint { right: 20px; }
+  .nav-zone:hover .nav-hint { opacity: 1; }
+
+  @media print {
+    @page { size: 1920px 1080px; margin: 0; }
+    html, body { background: #fff; overflow: visible; height: auto; }
+    body[data-mode] .overview { display: none !important; }
+    #stage { position: static; transform: none !important; box-shadow: none; }
+    .counter, .nav-zone, .overview-btn, .start-btn { display: none !important; }
+    .print-stack { display: block; }
+    .print-stack iframe { width: 1920px; height: 1080px; page-break-after: always; display: block; }
+  }
+</style>
+</head>
+<body data-mode="overview">
+
+<div id="ov-grid" class="overview">
+  <div class="overview-title">Overview · 点击任意页进入演示</div>
+  <div class="wall-wrap"><div class="wall" id="wall"></div></div>
+</div>
+
+<div id="ov-gallery" class="overview">
+  <div class="stage3d"><div class="breathe"><div class="drift-layer" id="driftLayer"><div class="gallery" id="gallery"></div></div></div></div>
+  <div class="vignette"></div>
+  <div class="overview-title">Infinite Gallery · 悬停暂停 · 点击任意页进入演示</div>
+</div>
+
+<button class="start-btn" id="startBtn">▶ 开始演示</button>
+
+<div id="present-ui">
+  <div id="stage"><iframe id="frame" src="about:blank"></iframe></div>
+  <button class="overview-btn" id="overviewBtn">⊞ 概览</button>
+  <div class="nav-zone left"  id="navL"><div class="nav-hint">‹</div></div>
+  <div class="nav-zone right" id="navR"><div class="nav-hint">›</div></div>
+  <div class="counter" id="counter">1 / 1</div>
+</div>
+
+<div class="print-stack" id="printStack" style="display:none;"></div>
+
+<script>
+(function () {
+  const W = window.DECK_WIDTH || 1920;
+  const H = window.DECK_HEIGHT || 1080;
+  const deck = window.DECK_MANIFEST || [];
+  const CARD_W = window.GALLERY_CARD_W || 300;
+  const DRIFT_SEC = window.GALLERY_DRIFT_SECONDS || 80;
+  const stage = document.getElementById('stage');
+  const frame = document.getElementById('frame');
+  const counter = document.getElementById('counter');
+  const printStack = document.getElementById('printStack');
+  const wall = document.getElementById('wall');
+  const gallery = document.getElementById('gallery');
+  const driftLayer = document.getElementById('driftLayer');
+  const storageKey = 'deck-index-' + location.pathname;
+  let current = 0;
+
+  stage.style.width = W + 'px'; stage.style.height = H + 'px';
+  driftLayer.style.setProperty('--driftSec', DRIFT_SEC + 's');
+
+  // 概览模式：URL ?ov= > window.DECK_OVERVIEW > 随机(秒%5==0 → 20% 画廊)
+  const qp = new URLSearchParams(location.search).get('ov');
+  // 用户未指定时按秒数随机：网格(iframe 真页面) 60% / 无限画廊(图片缩略图) 40%。可用 ?ov=grid|gallery 或 window.DECK_OVERVIEW 固定。
+  const OVERVIEW = qp || window.DECK_OVERVIEW || ((new Date().getSeconds() % 5 < 2) ? 'gallery' : 'grid');
+  document.body.setAttribute('data-ov', OVERVIEW === 'gallery' ? 'gallery' : 'grid');
+
+  function setMode(mode) {
+    document.body.setAttribute('data-mode', mode);
+    if (mode === 'present') { fit(); show(current); }
+    else { requestAnimationFrame(buildOverview); }
+  }
+
+  /* ─ 媒体（缩略图优先，否则 iframe） ─ */
+  function makeCard(idx, useScale, useImg) {
+    const card = document.createElement('div');
+    card.className = 'card'; card.dataset.idx = idx;
+    const item = deck[idx];
+    if (useImg && item.thumb) {
+      // 仅画廊用：预渲染缩略图，扛无限平铺的性能
+      const im = document.createElement('img');
+      im.className = 'thumb-img'; im.src = item.thumb; im.decoding = 'async';
+      card.appendChild(im);
+    } else {
+      // 网格默认用：真实 HTML 子页面（清晰、所见即所得）
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+      if (useScale != null) thumb.style.transform = 'scale(' + useScale + ')';
+      const ifr = document.createElement('iframe');
+      ifr.src = item.file; ifr.setAttribute('scrolling', 'no');
+      thumb.appendChild(ifr); card.appendChild(thumb);
+    }
+    const num = document.createElement('div');
+    num.className = 'num';
+    num.textContent = (idx + 1) + (item.label ? ' · ' + item.label : '');
+    card.appendChild(num);
+    card.addEventListener('click', () => { current = idx; setMode('present'); });
+    return card;
+  }
+
+  function buildOverview() {
+    if (document.body.getAttribute('data-mode') !== 'overview') return;
+    if (OVERVIEW === 'gallery') buildGallery(); else buildGrid();
+  }
+
+  /* ════════ 网格墙（自适应） ════════ */
+  function buildGrid() {
+    const n = deck.length; if (!n) return;
+    wall.innerHTML = '';
+    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // 网格 = iframe 真页面
+    layoutWall();
+  }
+  const GRID_PAD = 74;  // #ov-grid scroll 顶部 padding，算动态 transform-origin 用
+  function layoutWall() {
+    const n = deck.length; if (!n) return;
+    const vw = innerWidth, vh = innerHeight, gap = 26;
+    const availW = vw * 0.86;                                   // 留 rotateZ 横向余量（强对角也不裁切）
+    const target = 280;
+    let cols = Math.max(3, Math.min(9, Math.floor((availW + gap) / (target + gap))));
+    cols = Math.min(cols, n);
+    const rows = Math.ceil(n / cols);
+    const cardW = Math.min(target + 40, (availW - (cols - 1) * gap) / cols);
+    const cardH = cardW * 9 / 16;
+    const baseW = cols * cardW + (cols - 1) * gap;
+    const wallH = rows * cardH + (rows - 1) * gap;
+    wall.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
+    wall.style.gap = gap + 'px';
+    wall.style.width = baseW + 'px';
+    // 单平面(无 preserve-3d)→任意角度都不重叠、可点；fit 与 scroll 都给强对角倾斜
+    if (wallH <= vh * 0.80) {
+      document.body.setAttribute('data-grid', 'fit');
+      const rx = Math.max(11, Math.min(15, 15 - (rows - 2) * 1.1));
+      const rz = Math.max(8, Math.min(11, 11 - (rows - 2) * 0.7));
+      wall.style.setProperty('--rx', rx); wall.style.setProperty('--rz', rz);
+      wall.style.transformOrigin = 'center center';
+      const tilt = 'rotateX(' + rx + 'deg) rotateZ(-' + rz + 'deg)';
+      wall.style.transform = tilt;
+      const r = wall.getBoundingClientRect();
+      let s = Math.min(vw * 0.92 / r.width, vh * 0.80 / r.height);
+      s = Math.max(0.6, Math.min(s, 1.6));
+      wall.style.transform = 'scale(' + s + ') ' + tilt;
+    } else {
+      // 多页：舒适大小竖向滚动 + 强对角倾斜；transform-origin 跟随滚动→消除高墙 rotateZ 把远端行甩出屏幕
+      document.body.setAttribute('data-grid', 'scroll');
+      wall.style.setProperty('--rx', 14); wall.style.setProperty('--rz', 7);
+      wall.style.transform = 'rotateX(14deg) rotateZ(-7deg)';
+      updateScrollOrigin();
+    }
+    wall.querySelectorAll('.card .thumb').forEach(t => { const c = t.parentElement; if (c.clientWidth) t.style.transform = 'scale(' + (c.clientWidth / W) + ')'; });
+  }
+  function updateScrollOrigin() {
+    if (document.body.getAttribute('data-grid') !== 'scroll') return;
+    const ovg = document.getElementById('ov-grid');
+    wall.style.transformOrigin = '50% ' + (ovg.scrollTop + window.innerHeight / 2 - GRID_PAD) + 'px';
+  }
+
+  /* ════════ 无限画廊（洗牌不重复） ════════ */
+  function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function shuffledRange(n, seed) { const rnd = mulberry32(seed); const a = Array.from({ length: n }, (_, i) => i); for (let i = n - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); const tmp = a[i]; a[i] = a[j]; a[j] = tmp; } return a; }
+
+  function buildGallery() {
+    const n = deck.length; if (!n) return;
+    const vw = innerWidth, vh = innerHeight, gap = 18;
+    const cardW = CARD_W, cardH = cardW * 9 / 16;
+    const cellW = cardW + gap, cellH = cardH + gap;
+    const visCols = Math.ceil(vw / cellW), visRows = Math.ceil(vh / cellH);
+    // tile：宽够铺满；行数取「够铺满」与「装下全部 N 页」的较大者 → 看完所有页才重复
+    const tileCols = visCols + 1;
+    const tileRows = Math.max(visRows + 1, Math.ceil(n / tileCols));
+    const tileCells = tileCols * tileRows;
+    const perm = shuffledRange(n, 0x9e3779b9);        // 洗牌一次，打散规则感
+    const tilePage = new Array(tileCells);
+    for (let k = 0; k < tileCells; k++) tilePage[k] = perm[k % n];
+
+    const cols = tileCols * 2, rows = tileRows * 2;    // 2× tile 保证无缝漂移
+    driftLayer.style.setProperty('--dx', (tileCols * cellW) + 'px');
+    driftLayer.style.setProperty('--dy', (tileRows * cellH) + 'px');
+    gallery.style.gridTemplateColumns = 'repeat(' + cols + ', ' + cardW + 'px)';
+    gallery.style.gridAutoRows = cardH + 'px';
+    gallery.style.gap = gap + 'px';
+    gallery.innerHTML = '';
+    const scale = cardW / W;
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const idx = tilePage[(r % tileRows) * tileCols + (c % tileCols)];
+        gallery.appendChild(makeCard(idx, scale, true));  // 画廊 = 图片缩略图（性能）
+      }
+    }
+  }
+
+  /* ════════ 演示 ════════ */
+  function fit() {
+    const s = Math.min(innerWidth / W, innerHeight / H);
+    stage.style.transform = 'translate(' + ((innerWidth - W * s) / 2) + 'px, ' + ((innerHeight - H * s) / 2) + 'px) scale(' + s + ')';
+    stage.style.top = '0'; stage.style.left = '0';
+  }
+  function show(idx) {
+    if (idx < 0 || idx >= deck.length) return;
+    current = idx;
+    if (frame.getAttribute('src') !== deck[idx].file) frame.src = deck[idx].file;
+    counter.innerHTML = (idx + 1) + ' / ' + deck.length + ' <span class="label">' + (deck[idx].label || '') + '</span>';
+    try { localStorage.setItem(storageKey, String(idx)); } catch (_) {}
+    if (location.hash !== '#' + (idx + 1)) history.replaceState(null, '', '#' + (idx + 1));
+  }
+  function next() { show(Math.min(current + 1, deck.length - 1)); }
+  function prev() { show(Math.max(current - 1, 0)); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'Escape') { if (document.body.getAttribute('data-mode') === 'present') { e.preventDefault(); setMode('overview'); } return; }
+    if (e.key === 'p' || e.key === 'P') { window.print(); return; }
+    if (document.body.getAttribute('data-mode') !== 'present') return;
+    switch (e.key) {
+      case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); next(); break;
+      case 'ArrowLeft': case 'PageUp': e.preventDefault(); prev(); break;
+      case 'Home': e.preventDefault(); show(0); break;
+      case 'End': e.preventDefault(); show(deck.length - 1); break;
+      default: if (e.key >= '1' && e.key <= '9') { const i = parseInt(e.key, 10) - 1; if (i < deck.length) { e.preventDefault(); show(i); } }
+    }
+  });
+  document.getElementById('navL').addEventListener('click', prev);
+  document.getElementById('navR').addEventListener('click', next);
+  document.getElementById('startBtn').addEventListener('click', () => setMode('present'));
+  document.getElementById('overviewBtn').addEventListener('click', () => setMode('overview'));
+  let rT;
+  window.addEventListener('resize', () => { fit(); clearTimeout(rT); rT = setTimeout(buildOverview, 140); });
+  document.getElementById('ov-grid').addEventListener('scroll', updateScrollOrigin, { passive: true });
+  window.addEventListener('hashchange', () => { const m = location.hash.match(/^#(\d+)$/); if (m) { current = parseInt(m[1], 10) - 1; setMode('present'); } });
+
+  const hashMatch = location.hash.match(/^#(\d+)$/);
+  if (hashMatch) current = Math.min(parseInt(hashMatch[1], 10) - 1, deck.length - 1);
+  else { try { const v = parseInt(localStorage.getItem(storageKey), 10); if (!isNaN(v) && v >= 0 && v < deck.length) current = v; } catch (_) {} }
+
+  fit(); show(current);
+  if (hashMatch) setMode('present'); else { setMode('overview'); buildOverview(); }
+
+  // Reclaim focus after clicking inside iframe so keyboard nav keeps working (#23)
+  window.addEventListener('blur', () => {
+    setTimeout(() => window.focus(), 100);
+  });
+
+  window.addEventListener('beforeprint', () => { printStack.innerHTML = ''; deck.forEach(item => { const f = document.createElement('iframe'); f.src = item.file; printStack.appendChild(f); }); printStack.style.display = 'block'; stage.style.display = 'none'; });
+  window.addEventListener('afterprint', () => { printStack.innerHTML = ''; printStack.style.display = 'none'; stage.style.display = ''; });
+})();
+</script>
+</body>
+</html>

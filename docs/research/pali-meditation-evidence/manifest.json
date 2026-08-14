@@ -1,0 +1,114 @@
+{
+  "format": "v4-meditation-evidence/v1",
+  "generated_at": "2026-08-14T16:12:37.436Z",
+  "source": {
+    "kind": "immutable_local_archive",
+    "dataset": "Tipitaka-Reader-V4-Archive/2025-12-04-windows-x64/web-dataset/v1",
+    "archive_manifest": {
+      "corpus_row_count": 422698,
+      "corpus_work_count": 217,
+      "dictionary_row_count": 2436672,
+      "dictionary_table_count": 26,
+      "format": "tipitaka-reader-web-dataset/v1",
+      "proper_noun_count": 634,
+      "resources": [
+        "resources/opencc/NOTICE.txt",
+        "resources/opencc/README.md",
+        "resources/opencc/config/hk2s.json",
+        "resources/opencc/config/s2hk.json",
+        "resources/opencc/config/s2t.json",
+        "resources/opencc/config/s2tw.json",
+        "resources/opencc/config/s2twp.json",
+        "resources/opencc/config/t2hk.json",
+        "resources/opencc/config/t2s.json",
+        "resources/opencc/config/t2tw.json",
+        "resources/opencc/config/tw2s.json",
+        "resources/opencc/config/tw2sp.json",
+        "resources/opencc/dictionary/HKVariants.txt",
+        "resources/opencc/dictionary/HKVariantsPhrases.txt",
+        "resources/opencc/dictionary/HKVariantsRev.txt",
+        "resources/opencc/dictionary/HKVariantsRevPhrases.txt",
+        "resources/opencc/dictionary/JPVariants.txt",
+        "resources/opencc/dictionary/STCharacters.txt",
+        "resources/opencc/dictionary/STPhrases.txt",
+        "resources/opencc/dictionary/TSCharacters.txt",
+        "resources/opencc/dictionary/TSPhrases.txt",
+        "resources/opencc/dictionary/TWPhrases.txt",
+        "resources/opencc/dictionary/TWPhrasesRev.txt",
+        "resources/opencc/dictionary/TWVariants.txt",
+        "resources/opencc/dictionary/TWVariantsRev.txt",
+        "resources/opencc/dictionary/TWVariantsRevPhrases.txt"
+      ],
+      "source_zip_sha256": "e7c61c24622383d2c1fd2677a9160a41765d30ecdfb099766e2b50aba6d9e662",
+      "user_dictionary_count": 1
+    },
+    "archive_source_sha256": "e7c61c24622383d2c1fd2677a9160a41765d30ecdfb099766e2b50aba6d9e662",
+    "scanned_work_count": 217,
+    "scanned_row_count": 422698
+  },
+  "corpus": {
+    "types": [
+      "corpus"
+    ],
+    "layers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "page_size": 40
+  },
+  "query_source": {
+    "file": "scripts/meditation_terms.json",
+    "format": "meditation-terms-v1",
+    "query_count": 109,
+    "selection": null
+  },
+  "completeness": {
+    "query_count": 109,
+    "complete_queries": 109,
+    "errors": 0,
+    "reported_total": 400071,
+    "fetched_total": 400071,
+    "deduplicated_rows": 147224,
+    "max_pages": null
+  },
+  "counts": {
+    "by_layer": {
+      "1": 54740,
+      "2": 44485,
+      "3": 33200,
+      "4": 14799
+    },
+    "by_category": {
+      "satipaṭṭhāna": 34424,
+      "brahmavihāra": 50613,
+      "awakening": 33714,
+      "insight": 28584,
+      "mind": 25195,
+      "vipassanā": 13778,
+      "practice_context": 23633,
+      "jhāna": 10679,
+      "bojjhaṅga": 2512,
+      "dependent_origination": 2914,
+      "samatha": 17497,
+      "emptiness": 8641,
+      "samādhi": 8233,
+      "nirodha": 4280,
+      "object": 3376,
+      "hindrances": 2296,
+      "recollection": 263,
+      "ānāpāna": 1052,
+      "formless": 1657
+    }
+  },
+  "files": {
+    "query_audit": "query-audit.json",
+    "evidence": "evidence.json",
+    "review_queue": "review-queue.json"
+  },
+  "review": {
+    "status": "candidate_only",
+    "note": "本地归档全量召回完成；API 召回结果与人工判断仍需独立复核，机器筛选不替代经文审核。"
+  }
+}
