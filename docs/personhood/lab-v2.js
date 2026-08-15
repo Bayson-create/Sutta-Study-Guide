@@ -30,7 +30,8 @@
       var report = /我觉得|我感到|我感觉|我想|我害怕|我生气|我希望|我担心/.test(text) ? [text] : [];
       var attribution = /他想|她想|对方想|针对|看不起|讨厌|故意|评价|否定|轻视/.test(text) ? [text] : [];
       var unknown = observed.length || report.length || attribution.length ? [] : [text];
-      return {schema_version:'personhood-interaction/v2', model_version:state.model, observation:{raw:text, observable_events:observed, first_person_reports:report, attributions_not_facts:attribution, unknown_or_needs_clarification:unknown}, evidence_status:{available:evidence.length > 0,message:evidence.length ? '分析服务暂时不可用；已加载基础 V4 行级证据。' : '人格实验室服务暂未发布或 V4 证据服务暂不可用；当前显示确定性过程卡。'}, process:[
+      var failureHint = failure && failure.message && /^HTTP /.test(failure.message) ? '（后端响应 ' + failure.message + '）' : '';
+      return {schema_version:'personhood-interaction/v2', model_version:state.model, observation:{raw:text, observable_events:observed, first_person_reports:report, attributions_not_facts:attribution, unknown_or_needs_clarification:unknown}, evidence_status:{available:evidence.length > 0,message:evidence.length ? '分析服务暂时不可用；已加载基础 V4 行级证据。' : '人格实验室服务暂未发布或 V4 证据服务暂不可用；当前显示确定性过程卡。' + failureHint}, process:[
         {label:'所缘与门',meaning:'先把这一轮可报告的对象与推测分开。',interpretation_layer:'canonical'},
         {label:'触与受',meaning:'对象、感官门与识相遇后，体验可能呈现舒适、不适或中性。',interpretation_layer:'canonical'},
         {label:'命名、想与作意',meaning:'注意力会选择和命名其中一部分；可以重新检查这个命名。',interpretation_layer:'canonical'},
