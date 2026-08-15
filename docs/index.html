@@ -10598,6 +10598,18 @@ function dhammaRenderLayerCards(layer) {
   if (layer === 8 && dhammaModernPrivateIndex.length) {
     cards.push({ id: 'modern-theravada', label: '现代上座部（授权）', count: dhammaModernPrivateIndex.length, ids: dhammaModernPrivateIndex.map(r => r.id) });
   }
+  // Keep the existing public modern-teacher entry separate from the
+  // permission-gated modern Theravada catalog. The public records remain in
+  // the CBETA index; only the latter depends on authorization.
+  if (layer === 8) {
+    const publicItems = dhammaIndex.filter(r => Number(r.layer) === 8 && r.source !== 'modern_theravada');
+    if (publicItems.length && !cards.some(card => card.id === 'modern-public')) {
+      cards.unshift({ id: 'modern-public', label: '现代法师', count: publicItems.length, ids: publicItems.map(r => r.id) });
+    }
+  }
+  // Generated metadata may contain empty placeholders. Remove them before
+  // grouping so a zero-count academic-review card takes no space.
+  cards = cards.filter(card => Number(card.count || 0) > 0);
   if (!cards.length) return null;
   const wrap = document.createElement('div');
   const groups = new Map();
@@ -10606,7 +10618,12 @@ function dhammaRenderLayerCards(layer) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(c);
   }
+  let lastRow = null;
+  const pendingCards = [];
   for (const [groupLabel, groupCards] of groups) {
+    const visibleCards = groupCards.filter(card => card.id !== 'pending_review' && card.label !== '待学术复核');
+    pendingCards.push(...groupCards.filter(card => card.id === 'pending_review' || card.label === '待学术复核'));
+    if (!visibleCards.length) continue;
     if (groupLabel !== '__default__') {
       const label = document.createElement('div');
       label.className = 'dhamma-cardgroup-label';
@@ -10615,14 +10632,15 @@ function dhammaRenderLayerCards(layer) {
     }
     const row = document.createElement('div');
     row.className = 'dhamma-cards';
+    lastRow = row;
     let i = 0;
-    while (i < groupCards.length) {
-      const c = groupCards[i];
-      if (DHAMMA_PAIRED_IDS.has(c.id) && i + 1 < groupCards.length && DHAMMA_PAIRED_IDS.has(groupCards[i + 1].id)) {
+    while (i < visibleCards.length) {
+      const c = visibleCards[i];
+      if (DHAMMA_PAIRED_IDS.has(c.id) && i + 1 < visibleCards.length && DHAMMA_PAIRED_IDS.has(visibleCards[i + 1].id)) {
         const pair = document.createElement('div');
         pair.className = 'dhamma-card-pair';
         pair.appendChild(dhammaRenderCard(c));
-        pair.appendChild(dhammaRenderCard(groupCards[i + 1]));
+        pair.appendChild(dhammaRenderCard(visibleCards[i + 1]));
         row.appendChild(pair);
         i += 2;
       } else {
@@ -10631,6 +10649,14 @@ function dhammaRenderLayerCards(layer) {
       }
     }
     wrap.appendChild(row);
+  }
+  if (pendingCards.length) {
+    if (!lastRow) {
+      lastRow = document.createElement('div');
+      lastRow.className = 'dhamma-cards';
+      wrap.appendChild(lastRow);
+    }
+    pendingCards.forEach(card => lastRow.appendChild(dhammaRenderCard(card)));
   }
   return wrap;
 }
