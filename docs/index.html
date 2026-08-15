@@ -1936,21 +1936,44 @@ function dhammaHighlightV4Snippet(item, query) {
   return html + dhammaEscapeHtml(text.slice(last));
 }
 
-function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword = false, mode = 'exact' } = {}) {
+function dhammaModernGroups(run) {
+  const groups = {};
+  for (const layer of DHAMMA_LAYER_ORDER) groups[layer] = [];
+  for (const item of run?.results || []) groups[8].push(item);
+  return groups;
+}
+
+function dhammaModernResultHref(item, query) {
+  const params = new URLSearchParams({
+    chapter: String(item.chapter_id || ''),
+    paragraph: String(item.paragraph_id || ''),
+    hl: query || '',
+  });
+  return `#/research/modern-theravada/read/${encodeURIComponent(item.work_id)}?${params.toString()}`;
+}
+
+function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword = false, mode = 'exact', modernRun = null } = {}) {
   const v4Groups = dhammaV4Groups(v4Run);
+  const modernGroups = dhammaModernGroups(modernRun);
   let html = `<section class="dhamma-unified-source" data-v4-unified>`;
   if (v4Run?.error) {
     html += `<p class="dhamma-empty-note">V4 三语本暂时不可用：${dhammaEscapeHtml(v4Run.error)} <button type="button" class="community-secondary-btn" data-v4-unified-retry>重试 V4 检索</button></p>`;
   } else if ((v4Run?.total || 0) > 0) {
     html += `<p class="dhamma-results-heading">CBETA 与 V4 按法义层级统一展示 · V4 当前页 ${Number(v4Run.results?.length || 0)} 条／共 ${Number(v4Run.total).toLocaleString()} 处</p>`;
   }
+  if (modernRun?.error) {
+    html += `<p class="dhamma-empty-note">现代上座部私有检索暂时不可用：${dhammaEscapeHtml(modernRun.error)} <button type="button" class="community-secondary-btn" data-modern-unified-retry>重试现代资料</button></p>`;
+  } else if (modernRun?.allowed && (modernRun.total || 0) > 0) {
+    html += `<p class="dhamma-results-heading">已纳入第 8 层现代上座部私有资料 · 当前页 ${Number(modernRun.results?.length || 0)} 条／共 ${Number(modernRun.total).toLocaleString()} 处</p>`;
+  }
   for (const layer of [...DHAMMA_LAYER_ORDER, 0]) {
     const localItems = localGroups?.[layer] || [];
     const v4Items = v4Groups[layer] || [];
-    const hasHits = localItems.length > 0 || v4Items.length > 0;
+    const modernItems = modernGroups[layer] || [];
+    const hasHits = localItems.length > 0 || v4Items.length > 0 || modernItems.length > 0;
     if (!hasHits && !keyword) continue;
     const label = layer === 0 ? '未归入八层 · 参考资料' : DHAMMA_LAYER_NAMES[layer];
-    html += `<div class="dhamma-layer-section ${hasHits ? 'open' : ''}" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${dhammaEscapeHtml(label)}</span><span class="count">${hasHits ? `${localItems.length + v4Items.length} 篇命中` : '空白'}</span></div><div class="dhamma-layer-section-body">`;
+    html += `<div class="dhamma-layer-section ${hasHits ? 'open' : ''}" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${dhammaEscapeHtml(label)}</span><span class="count">${hasHits ? `${localItems.length + v4Items.length + modernItems.length} 篇命中` : '空白'}</span></div><div class="dhamma-layer-section-body">`;
     if (!hasHits) {
       html += `<p class="dhamma-empty-note">此层未检索到直接字面命中。</p>`;
     } else {
@@ -1967,12 +1990,14 @@ function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword =
         return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(rec.title || rec.id)}</a><span class="source-tag keyword">CBETA 本地文本</span>${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
       });
       const v4Lis = v4Items.map(item => `<li><a class="title" href="${dhammaEscapeHtml(v4DhammaResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))}${item.paranum ? ` · ${dhammaEscapeHtml(toSimplified(item.paranum))}` : ''}</a><span class="source-tag keyword">V4 三语本</span><span class="meta">${dhammaEscapeHtml((item.path || []).map(toSimplified).join(' / '))}</span><p class="snippet">${dhammaHighlightV4Snippet(item, query)}</p></li>`);
-      html += `<ul class="dhamma-hit-list">${dhammaCollapsibleItems([...docLis, ...v4Lis], 5, '篇')}</ul>`;
+      const modernLis = modernItems.map(item => `<li><a class="title" href="${dhammaEscapeHtml(dhammaModernResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))} · ${dhammaEscapeHtml(toSimplified(item.chapter_id || ''))}</a><span class="source-tag keyword">现代上座部（授权）</span><span class="meta">原书第 ${dhammaEscapeHtml(String(item.page_anchor || ''))} 页 · ${dhammaEscapeHtml(item.match_level || '')}</span><p class="snippet">${modernTheravadaHighlight(item.snippet || item.text || '', query)}</p></li>`);
+      html += `<ul class="dhamma-hit-list">${dhammaCollapsibleItems([...docLis, ...v4Lis, ...modernLis], 5, '篇')}</ul>`;
     }
     html += '</div></div>';
   }
   if (!v4Run?.error && v4Run?.next_cursor) html += `<button type="button" class="community-secondary-btn" data-v4-unified-next="${dhammaEscapeHtml(v4Run.next_cursor)}">加载下一页 V4 命中</button>`;
-  if (!v4Run?.error && !(v4Run?.results || []).length && !Object.values(localGroups || {}).some(items => items?.length)) html += '<p class="dhamma-empty-note">未检索到相关内容。</p>';
+  if (!modernRun?.error && modernRun?.next_cursor) html += `<button type="button" class="community-secondary-btn" data-modern-unified-next="${dhammaEscapeHtml(modernRun.next_cursor)}">加载下一页现代上座部命中</button>`;
+  if (!v4Run?.error && !modernRun?.error && !(v4Run?.results || []).length && !(modernRun?.results || []).length && !Object.values(localGroups || {}).some(items => items?.length)) html += '<p class="dhamma-empty-note">未检索到相关内容。</p>';
   return html + '</section>';
 }
 
@@ -1990,8 +2015,7 @@ function bindDhammaUnifiedV4Pagination(root, query, state) {
     } catch (error) { retry.disabled = false; retry.textContent = `重试失败：${error.message}`; }
   });
   const next = wrapper.querySelector('[data-v4-unified-next]');
-  if (!next) return;
-  next.addEventListener('click', async () => {
+  if (next) next.addEventListener('click', async () => {
     next.disabled = true; next.textContent = '正在加载…';
     try {
       const page = await searchDhammaV4Api(query, next.dataset.v4UnifiedNext);
@@ -2000,6 +2024,28 @@ function bindDhammaUnifiedV4Pagination(root, query, state) {
       bindDhammaUnifiedV4Pagination(root, query, state);
       dhammaWireLayerSections();
     } catch (error) { next.disabled = false; next.textContent = `加载失败：${error.message}`; }
+  });
+
+  const modernRetry = wrapper.querySelector('[data-modern-unified-retry]');
+  if (modernRetry) modernRetry.addEventListener('click', async () => {
+    modernRetry.disabled = true; modernRetry.textContent = '正在重试…';
+    try {
+      state.modernRun = await dhammaSearchModernPrivate(query);
+      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun });
+      bindDhammaUnifiedV4Pagination(root, query, state);
+      dhammaWireLayerSections();
+    } catch (error) { modernRetry.disabled = false; modernRetry.textContent = `重试失败：${error.message}`; }
+  });
+  const modernNext = wrapper.querySelector('[data-modern-unified-next]');
+  if (modernNext) modernNext.addEventListener('click', async () => {
+    modernNext.disabled = true; modernNext.textContent = '正在加载…';
+    try {
+      const page = await dhammaSearchModernPrivate(query, modernNext.dataset.modernUnifiedNext);
+      state.modernRun = { ...page, results: [...(state.modernRun?.results || []), ...(page.results || [])] };
+      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun });
+      bindDhammaUnifiedV4Pagination(root, query, state);
+      dhammaWireLayerSections();
+    } catch (error) { modernNext.disabled = false; modernNext.textContent = `加载失败：${error.message}`; }
   });
 }
 
@@ -10021,6 +10067,14 @@ const DHAMMA_LAYER_TAGLINES = {
 
 let dhammaIndex = null, dhammaIndexById = null, dhammaLayerCards = null;
 let dhammaV4Index = [], dhammaV4ById = null;
+// Modern Theravada is private data.  It is deliberately kept out of the
+// public dhamma-lineage index and is merged only after the current user has
+// passed the same access check used by the private reader.
+let dhammaModernPrivateIndex = [];
+let dhammaModernAccess = false;
+let dhammaModernAccessChecked = false;
+let dhammaModernAccessToken = '';
+let dhammaModernPrivateError = '';
 let dhammaMode = 'search-normal'; // 'search-normal' | 'search-trace' (browse view shows whenever the input is empty, regardless of mode)
 let dhammaTraceMode = 'ai';      // 'ai' | 'keyword'
 let dhammaSearchSeq = 0;
@@ -10050,7 +10104,64 @@ async function ensureDhammaData() {
 }
 
 function dhammaAllRecords() {
-  return [...(dhammaIndex || []), ...(dhammaV4Index || [])];
+  return [...(dhammaIndex || []), ...(dhammaV4Index || []), ...(dhammaModernPrivateIndex || [])];
+}
+
+async function dhammaEnsureModernPrivateCatalog() {
+  const token = typeof getAuthToken === 'function' ? (getAuthToken() || '') : '';
+  if (dhammaModernAccessChecked && token === dhammaModernAccessToken) return dhammaModernAccess;
+  dhammaModernAccessChecked = true;
+  dhammaModernAccessToken = token;
+  dhammaModernAccess = false;
+  dhammaModernPrivateIndex = [];
+  dhammaModernPrivateError = '';
+  // An anonymous visitor must not even request the private catalog.  The
+  // access endpoint is also protected, but skipping it avoids needless
+  // requests and makes the no-leak boundary explicit in the client.
+  if (!token) return false;
+  try {
+    const access = await modernTheravadaRequest('access');
+    if (!access.allowed) return false;
+    // Keep the authorization result even if the catalog is temporarily cold;
+    // the search API can recover independently and the browse view can show
+    // a private-service status instead of pretending the layer is empty.
+    dhammaModernAccess = true;
+    const catalog = await modernTheravadaRequest('catalog');
+    dhammaModernPrivateIndex = (catalog.works || []).map(work => ({
+      id: `modern-theravada:${work.id}`,
+      private_work_id: work.id,
+      title: work.title || work.id,
+      author: work.author || '',
+      layer: 8,
+      source: 'modern_theravada',
+      layer_confidence: 'high',
+      layer_note: '经授权的现代上座部私有阅读资料。',
+      collection: work.collection || 'modern',
+      record_count: work.record_count || 0,
+    }));
+  } catch (error) {
+    // The public layer cards remain usable when the private service is cold
+    // or temporarily unavailable.  Do not turn that into a public data or
+    // count leak; authorized users get a retryable status in layer 8.
+    dhammaModernPrivateError = error?.message || String(error);
+  }
+  if (dhammaIndexById) {
+    for (const record of dhammaModernPrivateIndex) dhammaIndexById.set(record.id, record);
+  }
+  return dhammaModernAccess;
+}
+
+async function dhammaSearchModernPrivate(query, cursor = null) {
+  await dhammaEnsureModernPrivateCatalog();
+  if (!dhammaModernAccess) return { results: [], total: 0, next_cursor: null, allowed: false };
+  try {
+    const params = new URLSearchParams({ q: query, page_size: '40' });
+    if (cursor) params.set('cursor', cursor);
+    const data = await modernTheravadaRequest(`search?${params.toString()}`);
+    return { ...data, allowed: true };
+  } catch (error) {
+    return { results: [], total: 0, next_cursor: null, allowed: true, error: error?.message || String(error) };
+  }
 }
 
 // --- ported from dhamma-lineage/site/doctext.js ---
@@ -10293,6 +10404,7 @@ function dhammaHighlightTerm(snippet, term) {
 async function renderDhammaHome() {
   app.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:40px;">加载藏经目录中…</p>';
   await ensureDhammaData();
+  await dhammaEnsureModernPrivateCatalog();
   dhammaRenderShell();
   dhammaResumeTraceJob();
 }
@@ -10453,9 +10565,19 @@ function dhammaToggleDrilldown(cardEl, card) {
   const items = card.ids.map(id => dhammaIndexById.get(id)).filter(Boolean)
     .sort((a, b) => (a.title || '').localeCompare(b.title || '', 'zh-Hans-CN'));
   const listHtml = items.map(r => {
-    const href = r.source === 'tipitaka_v4' ? (r.reader_url || `https://bayson-create.github.io/Sutta-Study-Guide/#/tipitaka/read/${encodeURIComponent(r.id)}`) : `#/dhamma/read/${encodeURIComponent(r.id)}`;
-    const source = r.source === 'tipitaka_v4' ? '<span class="dhamma-source-tag shared">V4 三语本</span>' : '';
-    return `<li><a href="${dhammaEscapeHtml(href)}"${r.source === 'tipitaka_v4' ? ' target="_blank" rel="noopener"' : ''} title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(r.title || r.id)}</a>${source}</li>`;
+    const isV4 = r.source === 'tipitaka_v4';
+    const isModern = r.source === 'modern_theravada';
+    const href = isV4
+      ? (r.reader_url || `https://bayson-create.github.io/Sutta-Study-Guide/#/tipitaka/read/${encodeURIComponent(r.id)}`)
+      : isModern
+        ? `#/research/modern-theravada/read/${encodeURIComponent(r.private_work_id)}`
+        : `#/dhamma/read/${encodeURIComponent(r.id)}`;
+    const source = isV4
+      ? '<span class="dhamma-source-tag shared">V4 三语本</span>'
+      : isModern
+        ? '<span class="dhamma-source-tag shared">现代上座部（授权）</span>'
+        : '';
+    return `<li><a href="${dhammaEscapeHtml(href)}"${isV4 ? ' target="_blank" rel="noopener"' : ''} title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(toSimplified(r.title || r.id))}</a>${source}</li>`;
   }).join('');
   panel.innerHTML = toSimplified(`<button class="dhamma-drilldown-close">收起 ✕</button><h5>${card.label}（${items.length} 篇）</h5><ul class="text-list">${listHtml}</ul>`);
   panel.querySelector('.dhamma-drilldown-close').addEventListener('click', () => panel.remove());
@@ -10465,14 +10587,18 @@ const DHAMMA_LAYER4_ORDER = ['vimuttimagga', 'mahavibhasa', 'kosa', 'nyayanusara
 const DHAMMA_PAIRED_IDS = new Set(['madhyamaka_base', 'mahaprajnaparamita_sastra', 'avatamsaka', 'dashabhumika']);
 function dhammaRenderLayerCards(layer) {
   let cards = dhammaLayerCards[String(layer)];
-  if (!cards) return null;
-  cards = cards.slice();
+  if (!cards) cards = [];
+  else cards = cards.slice();
   if (layer === 3 || layer === 4) {
     const byId = Object.fromEntries(cards.map(c => [c.id, c]));
     cards = layer === 4 ? DHAMMA_LAYER4_ORDER.map(id => byId[id]).filter(Boolean) : cards;
     const v4Items = dhammaV4Index.filter(r => r.layer === layer);
     if (v4Items.length) cards.push({ id: 'v4', label: layer === 3 ? 'V4 上座部阿毗达磨' : 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) });
   }
+  if (layer === 8 && dhammaModernPrivateIndex.length) {
+    cards.push({ id: 'modern-theravada', label: '现代上座部（授权）', count: dhammaModernPrivateIndex.length, ids: dhammaModernPrivateIndex.map(r => r.id) });
+  }
+  if (!cards.length) return null;
   const wrap = document.createElement('div');
   const groups = new Map();
   for (const c of cards) {
@@ -10550,11 +10676,19 @@ function dhammaRenderBrowse() {
         const row = document.createElement('div');
         row.className = 'dhamma-cards';
         const v4Items = (layer === 1 || layer === 2) ? dhammaV4Index.filter(r => r.layer === layer) : [];
-        const localItems = v4Items.length ? items.filter(r => r.source !== 'tipitaka_v4') : items;
+        const modernItems = layer === 8 ? dhammaModernPrivateIndex : [];
+        const localItems = v4Items.length ? items.filter(r => r.source !== 'tipitaka_v4') : items.filter(r => r.source !== 'modern_theravada');
         row.appendChild(dhammaRenderCard({ id: 'all', label: v4Items.length ? 'CBETA 本地文本' : '浏览全部', count: localItems.length, ids: localItems.map(r => r.id) }));
         if (v4Items.length) row.appendChild(dhammaRenderCard({ id: `v4-${layer}`, label: 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) }));
+        if (modernItems.length) row.appendChild(dhammaRenderCard({ id: 'modern-theravada', label: '现代上座部（授权）', count: modernItems.length, ids: modernItems.map(r => r.id) }));
         body.appendChild(row);
       }
+    }
+    if (layer === 8 && dhammaModernAccess && dhammaModernPrivateError) {
+      const status = document.createElement('p');
+      status.className = 'dhamma-empty-note';
+      status.textContent = `现代上座部私有目录暂时不可用：${dhammaModernPrivateError}；可刷新后重试。`;
+      body.appendChild(status);
     }
     if (layer === 1) {
       const row = body.querySelector('.dhamma-cards') || document.createElement('div');
@@ -10585,6 +10719,7 @@ async function dhammaRunNormalSearch(q) {
   const qTrad = typeof toTraditional === 'function' ? toTraditional(q) : q;
   const titleMatches = dhammaIndex.filter(r => (r.title || '').includes(qTrad) || (r.author || '').includes(qTrad));
   const v4Promise = searchDhammaV4Api(q).catch(error => ({ results: [], total: 0, error: error.message }));
+  const modernPromise = dhammaSearchModernPrivate(q);
 
   const useFuzzy = q.length > 6;
   let ftResults = [];
@@ -10597,6 +10732,7 @@ async function dhammaRunNormalSearch(q) {
   }
   if (mySeq !== dhammaSearchSeq) return;
   const v4Run = await v4Promise;
+  const modernRun = await modernPromise;
   if (mySeq !== dhammaSearchSeq) return;
 
   const normalGroups = dhammaGroupHitsByLayer(ftResults);
@@ -10606,13 +10742,13 @@ async function dhammaRunNormalSearch(q) {
   }
 
   let html = '';
-  if (ftResults.length === 0 && titleMatches.length === 0) {
+  if (ftResults.length === 0 && titleMatches.length === 0 && !(v4Run.results || []).length && !(modernRun.results || []).length) {
     html += `<p class="dhamma-empty-note">未检索到与"${dhammaEscapeHtml(q)}"相关的经名或正文内容。</p>`;
   }
-  html += dhammaRenderUnifiedLayerSections(normalGroups, v4Run, q, { mode });
+  html += dhammaRenderUnifiedLayerSections(normalGroups, v4Run, q, { mode, modernRun });
   results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
-  bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, localGroups: normalGroups, options: { mode } });
+  bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, modernRun, localGroups: normalGroups, options: { mode, modernRun } });
 }
 
 function dhammaGroupHitsByLayer(hitResults) {
@@ -10664,6 +10800,7 @@ async function dhammaRunKeywordTrace(q) {
 
   const useFuzzy = q.length > 6;
   const v4Promise = searchDhammaV4Api(q).catch(error => ({ results: [], total: 0, error: error.message }));
+  const modernPromise = dhammaSearchModernPrivate(q);
   const RELEVANCE_HIT = 0.5, RELEVANCE_SHOW = 0.34;
   let hitResults;
   try {
@@ -10680,17 +10817,19 @@ async function dhammaRunKeywordTrace(q) {
     // no-informative-terms/error state must not discard an already useful V4
     // response or make it look like a global zero-result search.
     const v4Run = await v4Promise;
+    const modernRun = await modernPromise;
     if (mySeq !== dhammaSearchSeq) return;
     const localMessage = err.code === 'NO_INFORMATIVE_TERMS'
       ? `"${dhammaEscapeHtml(q)}"里没有可用于 CBETA 检索的常见词组，以下仍显示 V4 结果。`
       : `CBETA 正文暂时不可用：${dhammaEscapeHtml(String(err))}`;
     const emptyGroups = dhammaEmptyLayerGroups();
-    results.innerHTML = `<p class="dhamma-empty-note">${localMessage}</p>${dhammaRenderUnifiedLayerSections(emptyGroups, v4Run, q, { keyword: true, mode: 'fuzzy' })}`;
-    bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, localGroups: emptyGroups, options: { keyword: true, mode: 'fuzzy' } });
+    results.innerHTML = `<p class="dhamma-empty-note">${localMessage}</p>${dhammaRenderUnifiedLayerSections(emptyGroups, v4Run, q, { keyword: true, mode: 'fuzzy', modernRun })}`;
+    bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, modernRun, localGroups: emptyGroups, options: { keyword: true, mode: 'fuzzy', modernRun } });
     return;
   }
   if (mySeq !== dhammaSearchSeq) return;
   const v4Run = await v4Promise;
+  const modernRun = await modernPromise;
   if (mySeq !== dhammaSearchSeq) return;
 
   const shown = hitResults.filter(r => r.relevance >= RELEVANCE_SHOW);
@@ -10700,10 +10839,10 @@ async function dhammaRunKeywordTrace(q) {
   let html = `<div class="dhamma-ai-meta"><span>关键词命中：字符双字组精确/模糊匹配，逐层展示，空白层级本身即是证据</span><span class="dhamma-badge">关键词命中模式</span></div>`;
   html += `<p class="dhamma-results-heading">命中层级：${hitLayers.length ? hitLayers.map(l => '第' + l + '层').join('、') : '无'}；空白层级：${DHAMMA_LAYER_ORDER.filter(l => !hitLayers.includes(l)).map(l => '第' + l + '层').join('、') || '无'}</p>`;
 
-  html += dhammaRenderUnifiedLayerSections(groups, v4Run, q, { keyword: true, mode: useFuzzy ? 'fuzzy' : 'exact' });
+  html += dhammaRenderUnifiedLayerSections(groups, v4Run, q, { keyword: true, mode: useFuzzy ? 'fuzzy' : 'exact', modernRun });
   results.innerHTML = toSimplified(html);
   dhammaWireLayerSections();
-  bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, localGroups: groups, options: { keyword: true, mode: useFuzzy ? 'fuzzy' : 'exact' } });
+  bindDhammaUnifiedV4Pagination(results, q, { run: v4Run, modernRun, localGroups: groups, options: { keyword: true, mode: useFuzzy ? 'fuzzy' : 'exact', modernRun } });
 }
 
 // === 法义溯源搜索 · AI RAG mode (backend /api/dhamma/trace) ===
@@ -10777,7 +10916,7 @@ async function dhammaBuildHitHrefs(allHits) {
   }
   const hrefById = new Map();
   for (const { hitId, h } of allHits) {
-    if (h.source_type === 'tipitaka_v4' && (h.reader_url || h.cbeta_url)) {
+    if ((h.source_type === 'tipitaka_v4' || h.source_type === 'modern_theravada') && (h.reader_url || h.cbeta_url)) {
       hrefById.set(hitId, h.reader_url || h.cbeta_url);
     }
   }
@@ -11079,7 +11218,10 @@ async function dhammaRenderTraceView(q, data, { streaming = false, elapsedSecond
         const hitId = `dai-hit-${key}-${i}`;
         allHits.push({ hitId, h });
         const isV4 = h.source_type === 'tipitaka_v4';
-        return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ${isV4 ? 'keyword' : 'ai'}">${isV4 ? 'V4 三语本' : 'CBETA 本地文本'}</span><span class="meta">${dhammaEscapeHtml(isV4 ? ((h.path || []).join(' / ')) : h.cbeta_id)}${h.paranum ? ` · ${dhammaEscapeHtml(h.paranum)}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
+        const isModern = h.source_type === 'modern_theravada';
+        const sourceLabel = isV4 ? 'V4 三语本' : isModern ? '现代上座部（授权）' : 'CBETA 本地文本';
+        const meta = isV4 ? ((h.path || []).join(' / ')) : isModern ? `${h.chapter_id || ''}${h.page_anchor ? ` · 原书第 ${h.page_anchor} 页` : ''}` : h.cbeta_id;
+        return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ${isV4 || isModern ? 'keyword' : 'ai'}">${sourceLabel}</span><span class="meta">${dhammaEscapeHtml(meta)}${h.paranum ? ` · ${dhammaEscapeHtml(h.paranum)}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
       });
       citesHtml = `<details class="dhamma-cite-fold" ${hits.length <= 2 ? 'open' : ''}>
         <summary>查看原始引用（${hits.length} 条）</summary>
