@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Deck · Multi-file Slide Index</title>
+<!--
+  deck_index.html — 多文件 slide deck 拼接器 · 双概览模式
+
+  概览（默认进入，两种模式按 getSeconds()%5 随机：20% 画廊 / 80% 网格）：
+   · grid  自适应网格墙：列数随页数+视口自适应，行多则倾斜变平，scale-to-fit 居中铺满（任意页数都不溢出/不失真）
+   · gallery 无限画廊：固定卡片大小，无缝无限平铺 + 缓慢漂移 + 轻微呼吸；一个 tile 含全部页（洗牌），看完所有页才重复
+  演示 present：单页 fit 缩放翻页。ESC / ⊞ 回概览。
+  性能：manifest 每项可带 thumb（预渲染缩略图），概览即用 <img> 平铺，避免 N 个 iframe 同时加载。
+
+  用法：复制为 index.html；建 slides/ 放每页独立 HTML；编辑 MANIFEST。
+  可选覆盖：window.DECK_OVERVIEW = 'grid' | 'gallery'（不写则随机）；URL ?ov=grid|gallery 临时强制。
+  键盘（演示）：← / → / Space / PgUp / PgDown / Home / End / 1-9 / P 打印 / ESC 回概览
+-->
+<script>
+  window.DECK_MANIFEST = [
+  {
+    "file": "slides/001-overview.html",
+    "label": "不是一条必经路线"
+  },
+  {
+    "file": "slides/002-v4m-001-发心与正见.html",
+    "label": "发心与正见"
+  },
+  {
+    "file": "slides/003-v4m-002-善友与听法.html",
+    "label": "善友与听法"
+  },
+  {
+    "file": "slides/004-v4m-003-戒清净.html",
+    "label": "戒清净"
+  },
+  {
+    "file": "slides/005-v4m-004-根门防护.html",
+    "label": "根门防护"
+  },
+  {
+    "file": "slides/006-v4m-005-正念正知.html",
+    "label": "正念正知"
+  },
+  {
+    "file": "slides/007-v4m-006-远离与独处.html",
+    "label": "远离与独处"
+  },
+  {
+    "file": "slides/008-v4m-007-自检心流.html",
+    "label": "自检心流"
+  },
+  {
+    "file": "slides/009-v4m-008-五盖现前.html",
+    "label": "五盖现前"
+  },
+  {
+    "file": "slides/010-v4m-009-不善寻思.html",
+    "label": "不善寻思"
+  },
+  {
+    "file": "slides/011-v4m-010-昏沉睡眠.html",
+    "label": "昏沉睡眠"
+  },
+  {
+    "file": "slides/012-v4m-011-禅相障碍.html",
+    "label": "禅相障碍"
+  },
+  {
+    "file": "slides/013-v4m-012-嗔恚对治.html",
+    "label": "嗔恚对治"
+  },
+  {
+    "file": "slides/014-v4m-013-贪欲对治.html",
+    "label": "贪欲对治"
+  },
+  {
+    "file": "slides/015-v4m-014-调节精进.html",
+    "label": "调节精进"
+  },
+  {
+    "file": "slides/016-v4m-015-选择业处.html",
+    "label": "选择业处"
+  },
+  {
+    "file": "slides/017-v4m-016-安般入门.html",
+    "label": "安般入门"
+  },
+  {
+    "file": "slides/018-v4m-017-身念入门.html",
+    "label": "身念入门"
+  },
+  {
+    "file": "slides/019-v4m-018-四无量入门.html",
+    "label": "四无量入门"
+  },
+  {
+    "file": "slides/020-v4m-019-随念入门.html",
+    "label": "随念入门"
+  },
+  {
+    "file": "slides/021-v4m-020-定前五盖暂伏.html",
+    "label": "定前五盖暂伏"
+  },
+  {
+    "file": "slides/022-v4m-021-安止门槛.html",
+    "label": "安止门槛"
+  },
+  {
+    "file": "slides/023-v4m-022-初禅.html",
+    "label": "初禅"
+  },
+  {
+    "file": "slides/024-v4m-023-第二禅.html",
+    "label": "第二禅"
+  },
+  {
+    "file": "slides/025-v4m-024-第三禅.html",
+    "label": "第三禅"
+  },
+  {
+    "file": "slides/026-v4m-025-第四禅.html",
+    "label": "第四禅"
+  },
+  {
+    "file": "slides/027-v4m-026-禅那熟练.html",
+    "label": "禅那熟练"
+  },
+  {
+    "file": "slides/028-v4m-027-定中观.html",
+    "label": "定中观"
+  },
+  {
+    "file": "slides/029-v4m-028-四梵住成熟.html",
+    "label": "四梵住成熟"
+  },
+  {
+    "file": "slides/030-v4m-029-空无边处.html",
+    "label": "空无边处"
+  },
+  {
+    "file": "slides/031-v4m-030-识无边处.html",
+    "label": "识无边处"
+  },
+  {
+    "file": "slides/032-v4m-031-无所有处.html",
+    "label": "无所有处"
+  },
+  {
+    "file": "slides/033-v4m-032-非想非非想处.html",
+    "label": "非想非非想处"
+  },
+  {
+    "file": "slides/034-v4m-033-无相定.html",
+    "label": "无相定"
+  },
+  {
+    "file": "slides/035-v4m-034-受想灭定.html",
+    "label": "受想灭定"
+  },
+  {
+    "file": "slides/036-v4m-035-身念处.html",
+    "label": "身念处"
+  },
+  {
+    "file": "slides/037-v4m-036-受念处.html",
+    "label": "受念处"
+  },
+  {
+    "file": "slides/038-v4m-037-心念处.html",
+    "label": "心念处"
+  },
+  {
+    "file": "slides/039-v4m-038-法念处.html",
+    "label": "法念处"
+  },
+  {
+    "file": "slides/040-v4m-039-安般十六阶.html",
+    "label": "安般十六阶"
+  },
+  {
+    "file": "slides/041-v4m-040-七觉支成熟.html",
+    "label": "七觉支成熟"
+  },
+  {
+    "file": "slides/042-v4m-041-正勤神足根力.html",
+    "label": "正勤神足根力"
+  },
+  {
+    "file": "slides/043-v4m-042-五蕴观.html",
+    "label": "五蕴观"
+  },
+  {
+    "file": "slides/044-v4m-043-六处观.html",
+    "label": "六处观"
+  },
+  {
+    "file": "slides/045-v4m-044-受观.html",
+    "label": "受观"
+  },
+  {
+    "file": "slides/046-v4m-045-界分别.html",
+    "label": "界分别"
+  },
+  {
+    "file": "slides/047-v4m-046-缘起观.html",
+    "label": "缘起观"
+  },
+  {
+    "file": "slides/048-v4m-047-现在诸法中不被牵引.html",
+    "label": "现在诸法中不被牵引"
+  },
+  {
+    "file": "slides/049-v4m-048-空性观.html",
+    "label": "空性观"
+  },
+  {
+    "file": "slides/050-v4m-049-集灭随观.html",
+    "label": "集灭随观"
+  },
+  {
+    "file": "slides/051-v4m-050-三相深入.html",
+    "label": "三相深入"
+  },
+  {
+    "file": "slides/052-v4m-051-味患出离.html",
+    "label": "味患出离"
+  },
+  {
+    "file": "slides/053-v4m-052-厌离.html",
+    "label": "厌离"
+  },
+  {
+    "file": "slides/054-v4m-053-离贪.html",
+    "label": "离贪"
+  },
+  {
+    "file": "slides/055-v4m-054-灭.html",
+    "label": "灭"
+  },
+  {
+    "file": "slides/056-v4m-055-四圣谛现观.html",
+    "label": "四圣谛现观"
+  },
+  {
+    "file": "slides/057-v4m-056-入流者四法成就.html",
+    "label": "入流者（四法成就）"
+  },
+  {
+    "file": "slides/058-v4m-057-入流果位不堕恶趣.html",
+    "label": "入流果位（不堕恶趣）"
+  },
+  {
+    "file": "slides/059-v4m-058-一来者三结尽贪瞋痴薄.html",
+    "label": "一来者（三结尽、贪瞋痴薄）"
+  },
+  {
+    "file": "slides/060-v4m-059-一来果位仅来此世一次.html",
+    "label": "一来果位（仅来此世一次）"
+  },
+  {
+    "file": "slides/061-v4m-060-断五下分结之道行.html",
+    "label": "断五下分结之道行"
+  },
+  {
+    "file": "slides/062-v4m-061-不还法从彼世间不复还.html",
+    "label": "不还法（从彼世间不复还）"
+  },
+  {
+    "file": "slides/063-v4m-062-阿罗汉道.html",
+    "label": "阿罗汉道"
+  },
+  {
+    "file": "slides/064-v4m-063-阿罗汉果.html",
+    "label": "阿罗汉果"
+  },
+  {
+    "file": "slides/065-v4m-064-回顾智.html",
+    "label": "回顾智"
+  },
+  {
+    "file": "slides/066-v4m-065-证悟检验.html",
+    "label": "证悟检验"
+  },
+  {
+    "file": "slides/067-v4m-066-不执定境.html",
+    "label": "不执定境"
+  },
+  {
+    "file": "slides/068-v4m-067-病中与临终.html",
+    "label": "病中与临终"
+  },
+  {
+    "file": "slides/069-v4m-068-回到日常.html",
+    "label": "回到日常"
+  },
+  {
+    "file": "slides/070-v4m-069-欲贪.html",
+    "label": "欲贪"
+  },
+  {
+    "file": "slides/071-v4m-070-瞋恚.html",
+    "label": "瞋恚"
+  },
+  {
+    "file": "slides/072-v4m-071-昏沉与睡眠.html",
+    "label": "昏沉与睡眠"
+  },
+  {
+    "file": "slides/073-v4m-072-掉举与悔.html",
+    "label": "掉举与悔"
+  },
+  {
+    "file": "slides/074-v4m-073-疑盖.html",
+    "label": "疑盖"
+  },
+  {
+    "file": "slides/075-v4m-074-欲寻.html",
+    "label": "欲寻"
+  },
+  {
+    "file": "slides/076-v4m-075-瞋寻.html",
+    "label": "瞋寻"
+  },
+  {
+    "file": "slides/077-v4m-076-害寻.html",
+    "label": "害寻"
+  },
+  {
+    "file": "slides/078-v4m-077-慈.html",
+    "label": "慈"
+  },
+  {
+    "file": "slides/079-v4m-078-悲.html",
+    "label": "悲"
+  },
+  {
+    "file": "slides/080-v4m-079-喜.html",
+    "label": "喜"
+  },
+  {
+    "file": "slides/081-v4m-080-舍梵住.html",
+    "label": "舍梵住"
+  },
+  {
+    "file": "slides/082-v4m-081-觉知长息.html",
+    "label": "觉知长息"
+  },
+  {
+    "file": "slides/083-v4m-082-觉知短息.html",
+    "label": "觉知短息"
+  },
+  {
+    "file": "slides/084-v4m-083-体验全身.html",
+    "label": "体验全身"
+  },
+  {
+    "file": "slides/085-v4m-084-安止身行.html",
+    "label": "安止身行"
+  },
+  {
+    "file": "slides/086-v4m-085-体验喜.html",
+    "label": "体验喜"
+  },
+  {
+    "file": "slides/087-v4m-086-体验乐.html",
+    "label": "体验乐"
+  },
+  {
+    "file": "slides/088-v4m-087-体验心行.html",
+    "label": "体验心行"
+  },
+  {
+    "file": "slides/089-v4m-088-安止心行.html",
+    "label": "安止心行"
+  },
+  {
+    "file": "slides/090-v4m-089-体验心.html",
+    "label": "体验心"
+  },
+  {
+    "file": "slides/091-v4m-090-令心喜悦.html",
+    "label": "令心喜悦"
+  },
+  {
+    "file": "slides/092-v4m-091-令心入定.html",
+    "label": "令心入定"
+  },
+  {
+    "file": "slides/093-v4m-092-令心解脱.html",
+    "label": "令心解脱"
+  },
+  {
+    "file": "slides/094-v4m-093-随观无常.html",
+    "label": "随观无常"
+  },
+  {
+    "file": "slides/095-v4m-094-随观离贪.html",
+    "label": "随观离贪"
+  },
+  {
+    "file": "slides/096-v4m-095-随观灭.html",
+    "label": "随观灭"
+  },
+  {
+    "file": "slides/097-v4m-096-随观舍遣.html",
+    "label": "随观舍遣"
+  },
+  {
+    "file": "slides/098-v4m-097-念觉支.html",
+    "label": "念觉支"
+  },
+  {
+    "file": "slides/099-v4m-098-择法觉支.html",
+    "label": "择法觉支"
+  },
+  {
+    "file": "slides/100-v4m-099-精进觉支.html",
+    "label": "精进觉支"
+  },
+  {
+    "file": "slides/101-v4m-100-喜觉支.html",
+    "label": "喜觉支"
+  },
+  {
+    "file": "slides/102-v4m-101-轻安觉支.html",
+    "label": "轻安觉支"
+  },
+  {
+    "file": "slides/103-v4m-102-定觉支.html",
+    "label": "定觉支"
+  },
+  {
+    "file": "slides/104-v4m-103-舍觉支.html",
+    "label": "舍觉支"
+  },
+  {
+    "file": "slides/105-v4m-104-防护未生恶.html",
+    "label": "防护未生恶"
+  },
+  {
+    "file": "slides/106-v4m-105-断除已生恶.html",
+    "label": "断除已生恶"
+  },
+  {
+    "file": "slides/107-v4m-106-生起未生善.html",
+    "label": "生起未生善"
+  },
+  {
+    "file": "slides/108-v4m-107-增广已生善.html",
+    "label": "增广已生善"
+  },
+  {
+    "file": "slides/109-v4m-108-欲神足.html",
+    "label": "欲神足"
+  },
+  {
+    "file": "slides/110-v4m-109-精进神足.html",
+    "label": "精进神足"
+  },
+  {
+    "file": "slides/111-v4m-110-心神足.html",
+    "label": "心神足"
+  },
+  {
+    "file": "slides/112-v4m-111-观神足.html",
+    "label": "观神足"
+  },
+  {
+    "file": "slides/113-v4m-112-信根.html",
+    "label": "信根"
+  },
+  {
+    "file": "slides/114-v4m-113-精进根.html",
+    "label": "精进根"
+  },
+  {
+    "file": "slides/115-v4m-114-念根.html",
+    "label": "念根"
+  },
+  {
+    "file": "slides/116-v4m-115-定根.html",
+    "label": "定根"
+  },
+  {
+    "file": "slides/117-v4m-116-慧根.html",
+    "label": "慧根"
+  },
+  {
+    "file": "slides/118-v4m-117-信力.html",
+    "label": "信力"
+  },
+  {
+    "file": "slides/119-v4m-118-精进力.html",
+    "label": "精进力"
+  },
+  {
+    "file": "slides/120-v4m-119-念力.html",
+    "label": "念力"
+  },
+  {
+    "file": "slides/121-v4m-120-定力.html",
+    "label": "定力"
+  },
+  {
+    "file": "slides/122-v4m-121-慧力.html",
+    "label": "慧力"
+  },
+  {
+    "file": "slides/123-v4m-122-无常相.html",
+    "label": "无常相"
+  },
+  {
+    "file": "slides/124-v4m-123-苦相.html",
+    "label": "苦相"
+  },
+  {
+    "file": "slides/125-v4m-124-无我相.html",
+    "label": "无我相"
+  },
+  {
+    "file": "slides/126-v4m-125-苦圣谛.html",
+    "label": "苦圣谛"
+  },
+  {
+    "file": "slides/127-v4m-126-苦集圣谛.html",
+    "label": "苦集圣谛"
+  },
+  {
+    "file": "slides/128-v4m-127-苦灭圣谛.html",
+    "label": "苦灭圣谛"
+  },
+  {
+    "file": "slides/129-v4m-128-苦灭道迹圣谛.html",
+    "label": "苦灭道迹圣谛"
+  }
+];
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_OVERVIEW = 'grid';
+  window.DECK_WIDTH = 1920;
+  window.DECK_HEIGHT = 1080;
+  window.GALLERY_CARD_W = 300;       // 画廊卡片基准宽度
+  window.GALLERY_DRIFT_SECONDS = 80; // 画廊漂移一圈时长
+  // window.DECK_OVERVIEW = 'grid';  // 取消注释可固定概览模式
+</script>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; font-family: -apple-system, "PingFang SC", sans-serif; background: #0a0a0a; }
+
+  .overview { position: fixed; inset: 0; }
+  body[data-mode="present"] .overview { display: none; }
+  body[data-mode="present"] .start-btn { display: none; }
+  body[data-mode="overview"] #present-ui { display: none; }
+  body[data-ov="grid"]    #ov-gallery { display: none; }
+  body[data-ov="gallery"] #ov-grid    { display: none; }
+  body[data-ov="gallery"][data-mode="overview"] { background: #0a0805; }
+  body[data-ov="grid"][data-mode="overview"]    { background: #efece4; }
+
+  /* ════════ 模式 1 · 自适应网格墙（一屏装得下→居中轻斜；装不下→舒适大小竖向滚动）════════ */
+  #ov-grid { display: flex; justify-content: center; perspective: 2200px; perspective-origin: 50% 42%;
+    background: radial-gradient(120% 90% at 50% 0%, #f4f1e9, #e7e3d8 75%); }
+  body[data-grid="fit"]    #ov-grid { overflow: hidden;   align-items: center; }
+  body[data-grid="scroll"] #ov-grid { overflow-y: auto; overflow-x: hidden; align-items: flex-start; padding: 74px 0 110px; }
+  .wall-wrap { }
+  body[data-grid="fit"]    .wall-wrap { transform: translateY(-3vh); }
+  .wall { display: grid; gap: 20px; transform-origin: center center; margin: 0 auto; }  /* 不用 preserve-3d：整墙作单个倾斜平面，命中测试可靠 */
+  #ov-grid .card {
+    position: relative; aspect-ratio: 16/9; border-radius: 9px; overflow: hidden; background: #fff; cursor: pointer;
+    box-shadow: 0 16px 34px rgba(40,34,24,0.20), 0 3px 10px rgba(40,34,24,0.12);
+    transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s;
+  }
+  #ov-grid .card:hover {
+    transform: scale(1.18);
+    box-shadow: 0 48px 92px rgba(40,34,24,0.36), 0 14px 30px rgba(40,34,24,0.22); z-index: 20;
+  }
+
+  /* ════════ 模式 2 · 无限画廊 ════════ */
+  #ov-gallery { overflow: hidden; perspective: 2200px; perspective-origin: 50% 42%;
+    background: radial-gradient(130% 120% at 50% 38%, #1b1610, #0a0805 82%); }
+  .stage3d { --rx: 18; --rz: 9; position: absolute; inset: 0; transform-style: preserve-3d; transform: scale(1.22) rotateX(18deg) rotateZ(-9deg); transform-origin: center center; }
+  .breathe { position: absolute; inset: 0; animation: breathe 26s ease-in-out infinite; transform-origin: center center; transform-style: preserve-3d; }
+  .drift-layer { position: absolute; top: 0; left: 0; will-change: transform; animation: drift var(--driftSec, 80s) linear infinite; transform-style: preserve-3d; }
+  #ov-gallery:hover .drift-layer { animation-play-state: paused; }
+  .gallery { display: grid; }
+  #ov-gallery .card {
+    position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; background: #fff; cursor: pointer;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.42), 0 3px 9px rgba(0,0,0,0.3);
+    transition: transform .34s cubic-bezier(.2,.7,.2,1), box-shadow .34s; transform-style: preserve-3d; will-change: transform;
+  }
+  #ov-gallery .card:hover {
+    transform: translateZ(60px) rotateX(calc(var(--rx,18)*-1deg)) rotateZ(calc(var(--rz,9)*1deg)) scale(1.06);
+    box-shadow: 0 30px 64px rgba(0,0,0,0.55), 0 8px 20px rgba(0,0,0,0.4); z-index: 30;
+  }
+  .vignette { position: fixed; inset: 0; pointer-events: none; z-index: 20; box-shadow: inset 0 0 240px 70px rgba(8,6,3,0.62); }
+  @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(calc(var(--dx)*-1), calc(var(--dy)*-1), 0); } }
+  @keyframes breathe { 0%,100% { transform: scale(1.0); } 50% { transform: scale(1.045); } }
+
+  /* 卡片通用内容 */
+  .card .thumb { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; transform-origin: top left; pointer-events: none; }
+  .card .thumb iframe { width: 1920px; height: 1080px; border: 0; display: block; background: #fff; pointer-events: none; }
+  .card .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .card .num { position: absolute; bottom: 6px; left: 7px; background: rgba(16,12,7,0.76); color: #fff; font-size: 11px; line-height: 1; padding: 4px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; letter-spacing: 0.03em; z-index: 3; pointer-events: none; max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #ov-gallery .card .num { opacity: 0; transition: opacity .25s; }
+  #ov-gallery .card:hover .num { opacity: 1; }
+
+  .overview-title { position: fixed; top: 24px; left: 0; right: 0; text-align: center; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; z-index: 40; pointer-events: none; }
+  body[data-ov="grid"]    .overview-title { color: #5a5346; opacity: 0.66; }
+  body[data-ov="gallery"] .overview-title { color: rgba(244,238,224,0.7); text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
+
+  .start-btn { position: fixed; bottom: 26px; right: 26px; border: 0; padding: 13px 24px; border-radius: 999px; font-size: 15px; font-family: inherit; letter-spacing: 0.04em; cursor: pointer; z-index: 200; transition: transform .18s, box-shadow .18s; }
+  body[data-ov="grid"]    .start-btn { background: #1a1712; color: #fff; box-shadow: 0 8px 28px rgba(40,34,24,0.28); }
+  body[data-ov="gallery"] .start-btn { background: #f4eee0; color: #1a1712; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+  .start-btn:hover { transform: translateY(-2px); }
+
+  /* ════════ 演示模式 ════════ */
+  #stage { position: fixed; top: 50%; left: 50%; transform-origin: top left; will-change: transform; background: #fff; box-shadow: 0 10px 60px rgba(0,0,0,0.4); }
+  #stage iframe { width: 100%; height: 100%; border: 0; display: block; background: #fff; }
+  .counter { position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.65); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; letter-spacing: 0.05em; font-variant-numeric: tabular-nums; z-index: 100; opacity: 0.7; }
+  .counter .label { color: rgba(255,255,255,0.7); margin-left: 8px; }
+  .overview-btn { position: fixed; top: 20px; left: 20px; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); border: 0; padding: 7px 14px; border-radius: 999px; font-size: 13px; font-family: inherit; cursor: pointer; z-index: 100; opacity: 0.6; }
+  .overview-btn:hover { opacity: 1; }
+  .nav-zone { position: fixed; top: 0; bottom: 0; width: 15%; cursor: pointer; z-index: 50; }
+  .nav-zone.left { left: 0; } .nav-zone.right { right: 0; }
+  .nav-hint { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 999px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0; transition: opacity .2s; }
+  .nav-zone.left .nav-hint { left: 20px; } .nav-zone.right .nav-hint { right: 20px; }
+  .nav-zone:hover .nav-hint { opacity: 1; }
+
+  @media print {
+    @page { size: 1920px 1080px; margin: 0; }
+    html, body { background: #fff; overflow: visible; height: auto; }
+    body[data-mode] .overview { display: none !important; }
+    #stage { position: static; transform: none !important; box-shadow: none; }
+    .counter, .nav-zone, .overview-btn, .start-btn { display: none !important; }
+    .print-stack { display: block; }
+    .print-stack iframe { width: 1920px; height: 1080px; page-break-after: always; display: block; }
+  }
+</style>
+</head>
+<body data-mode="overview">
+
+<div id="ov-grid" class="overview">
+  <div class="overview-title">Overview · 点击任意页进入演示</div>
+  <div class="wall-wrap"><div class="wall" id="wall"></div></div>
+</div>
+
+<div id="ov-gallery" class="overview">
+  <div class="stage3d"><div class="breathe"><div class="drift-layer" id="driftLayer"><div class="gallery" id="gallery"></div></div></div></div>
+  <div class="vignette"></div>
+  <div class="overview-title">Infinite Gallery · 悬停暂停 · 点击任意页进入演示</div>
+</div>
+
+<button class="start-btn" id="startBtn">▶ 开始演示</button>
+
+<div id="present-ui">
+  <div id="stage"><iframe id="frame" src="about:blank"></iframe></div>
+  <button class="overview-btn" id="overviewBtn">⊞ 概览</button>
+  <div class="nav-zone left"  id="navL"><div class="nav-hint">‹</div></div>
+  <div class="nav-zone right" id="navR"><div class="nav-hint">›</div></div>
+  <div class="counter" id="counter">1 / 1</div>
+</div>
+
+<div class="print-stack" id="printStack" style="display:none;"></div>
+
+<script>
+(function () {
+  const W = window.DECK_WIDTH || 1920;
+  const H = window.DECK_HEIGHT || 1080;
+  const deck = window.DECK_MANIFEST || [];
+  const CARD_W = window.GALLERY_CARD_W || 300;
+  const DRIFT_SEC = window.GALLERY_DRIFT_SECONDS || 80;
+  const stage = document.getElementById('stage');
+  const frame = document.getElementById('frame');
+  const counter = document.getElementById('counter');
+  const printStack = document.getElementById('printStack');
+  const wall = document.getElementById('wall');
+  const gallery = document.getElementById('gallery');
+  const driftLayer = document.getElementById('driftLayer');
+  const storageKey = 'deck-index-' + location.pathname;
+  let current = 0;
+
+  stage.style.width = W + 'px'; stage.style.height = H + 'px';
+  driftLayer.style.setProperty('--driftSec', DRIFT_SEC + 's');
+
+  // 概览模式：URL ?ov= > window.DECK_OVERVIEW > 随机(秒%5==0 → 20% 画廊)
+  const qp = new URLSearchParams(location.search).get('ov');
+  // 用户未指定时按秒数随机：网格(iframe 真页面) 60% / 无限画廊(图片缩略图) 40%。可用 ?ov=grid|gallery 或 window.DECK_OVERVIEW 固定。
+  const OVERVIEW = qp || window.DECK_OVERVIEW || ((new Date().getSeconds() % 5 < 2) ? 'gallery' : 'grid');
+  document.body.setAttribute('data-ov', OVERVIEW === 'gallery' ? 'gallery' : 'grid');
+
+  function setMode(mode) {
+    document.body.setAttribute('data-mode', mode);
+    if (mode === 'present') { fit(); show(current); }
+    else { requestAnimationFrame(buildOverview); }
+  }
+
+  /* ─ 媒体（缩略图优先，否则 iframe） ─ */
+  function makeCard(idx, useScale, useImg) {
+    const card = document.createElement('div');
+    card.className = 'card'; card.dataset.idx = idx;
+    const item = deck[idx];
+    if (useImg && item.thumb) {
+      // 仅画廊用：预渲染缩略图，扛无限平铺的性能
+      const im = document.createElement('img');
+      im.className = 'thumb-img'; im.src = item.thumb; im.decoding = 'async';
+      card.appendChild(im);
+    } else {
+      // 网格默认用：真实 HTML 子页面（清晰、所见即所得）
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+      if (useScale != null) thumb.style.transform = 'scale(' + useScale + ')';
+      const ifr = document.createElement('iframe');
+      ifr.src = item.file; ifr.setAttribute('scrolling', 'no');
+      thumb.appendChild(ifr); card.appendChild(thumb);
+    }
+    const num = document.createElement('div');
+    num.className = 'num';
+    num.textContent = (idx + 1) + (item.label ? ' · ' + item.label : '');
+    card.appendChild(num);
+    card.addEventListener('click', () => { current = idx; setMode('present'); });
+    return card;
+  }
+
+  function buildOverview() {
+    if (document.body.getAttribute('data-mode') !== 'overview') return;
+    if (OVERVIEW === 'gallery') buildGallery(); else buildGrid();
+  }
+
+  /* ════════ 网格墙（自适应） ════════ */
+  function buildGrid() {
+    const n = deck.length; if (!n) return;
+    wall.innerHTML = '';
+    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // 网格 = iframe 真页面
+    layoutWall();
+  }
+  const GRID_PAD = 74;  // #ov-grid scroll 顶部 padding，算动态 transform-origin 用
+  function layoutWall() {
+    const n = deck.length; if (!n) return;
+    const vw = innerWidth, vh = innerHeight, gap = 26;
+    const availW = vw * 0.86;                                   // 留 rotateZ 横向余量（强对角也不裁切）
+    const target = 280;
+    let cols = Math.max(3, Math.min(9, Math.floor((availW + gap) / (target + gap))));
+    cols = Math.min(cols, n);
+    const rows = Math.ceil(n / cols);
+    const cardW = Math.min(target + 40, (availW - (cols - 1) * gap) / cols);
+    const cardH = cardW * 9 / 16;
+    const baseW = cols * cardW + (cols - 1) * gap;
+    const wallH = rows * cardH + (rows - 1) * gap;
+    wall.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
+    wall.style.gap = gap + 'px';
+    wall.style.width = baseW + 'px';
+    // 单平面(无 preserve-3d)→任意角度都不重叠、可点；fit 与 scroll 都给强对角倾斜
+    if (wallH <= vh * 0.80) {
+      document.body.setAttribute('data-grid', 'fit');
+      const rx = Math.max(11, Math.min(15, 15 - (rows - 2) * 1.1));
+      const rz = Math.max(8, Math.min(11, 11 - (rows - 2) * 0.7));
+      wall.style.setProperty('--rx', rx); wall.style.setProperty('--rz', rz);
+      wall.style.transformOrigin = 'center center';
+      const tilt = 'rotateX(' + rx + 'deg) rotateZ(-' + rz + 'deg)';
+      wall.style.transform = tilt;
+      const r = wall.getBoundingClientRect();
+      let s = Math.min(vw * 0.92 / r.width, vh * 0.80 / r.height);
+      s = Math.max(0.6, Math.min(s, 1.6));
+      wall.style.transform = 'scale(' + s + ') ' + tilt;
+    } else {
+      // 多页：舒适大小竖向滚动 + 强对角倾斜；transform-origin 跟随滚动→消除高墙 rotateZ 把远端行甩出屏幕
+      document.body.setAttribute('data-grid', 'scroll');
+      wall.style.setProperty('--rx', 14); wall.style.setProperty('--rz', 7);
+      wall.style.transform = 'rotateX(14deg) rotateZ(-7deg)';
+      updateScrollOrigin();
+    }
+    wall.querySelectorAll('.card .thumb').forEach(t => { const c = t.parentElement; if (c.clientWidth) t.style.transform = 'scale(' + (c.clientWidth / W) + ')'; });
+  }
+  function updateScrollOrigin() {
+    if (document.body.getAttribute('data-grid') !== 'scroll') return;
+    const ovg = document.getElementById('ov-grid');
+    wall.style.transformOrigin = '50% ' + (ovg.scrollTop + window.innerHeight / 2 - GRID_PAD) + 'px';
+  }
+
+  /* ════════ 无限画廊（洗牌不重复） ════════ */
+  function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function shuffledRange(n, seed) { const rnd = mulberry32(seed); const a = Array.from({ length: n }, (_, i) => i); for (let i = n - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); const tmp = a[i]; a[i] = a[j]; a[j] = tmp; } return a; }
+
+  function buildGallery() {
+    const n = deck.length; if (!n) return;
+    const vw = innerWidth, vh = innerHeight, gap = 18;
+    const cardW = CARD_W, cardH = cardW * 9 / 16;
+    const cellW = cardW + gap, cellH = cardH + gap;
+    const visCols = Math.ceil(vw / cellW), visRows = Math.ceil(vh / cellH);
+    // tile：宽够铺满；行数取「够铺满」与「装下全部 N 页」的较大者 → 看完所有页才重复
+    const tileCols = visCols + 1;
+    const tileRows = Math.max(visRows + 1, Math.ceil(n / tileCols));
+    const tileCells = tileCols * tileRows;
+    const perm = shuffledRange(n, 0x9e3779b9);        // 洗牌一次，打散规则感
+    const tilePage = new Array(tileCells);
+    for (let k = 0; k < tileCells; k++) tilePage[k] = perm[k % n];
+
+    const cols = tileCols * 2, rows = tileRows * 2;    // 2× tile 保证无缝漂移
+    driftLayer.style.setProperty('--dx', (tileCols * cellW) + 'px');
+    driftLayer.style.setProperty('--dy', (tileRows * cellH) + 'px');
+    gallery.style.gridTemplateColumns = 'repeat(' + cols + ', ' + cardW + 'px)';
+    gallery.style.gridAutoRows = cardH + 'px';
+    gallery.style.gap = gap + 'px';
+    gallery.innerHTML = '';
+    const scale = cardW / W;
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const idx = tilePage[(r % tileRows) * tileCols + (c % tileCols)];
+        gallery.appendChild(makeCard(idx, scale, true));  // 画廊 = 图片缩略图（性能）
+      }
+    }
+  }
+
+  /* ════════ 演示 ════════ */
+  function fit() {
+    const s = Math.min(innerWidth / W, innerHeight / H);
+    stage.style.transform = 'translate(' + ((innerWidth - W * s) / 2) + 'px, ' + ((innerHeight - H * s) / 2) + 'px) scale(' + s + ')';
+    stage.style.top = '0'; stage.style.left = '0';
+  }
+  function show(idx) {
+    if (idx < 0 || idx >= deck.length) return;
+    current = idx;
+    if (frame.getAttribute('src') !== deck[idx].file) frame.src = deck[idx].file;
+    counter.innerHTML = (idx + 1) + ' / ' + deck.length + ' <span class="label">' + (deck[idx].label || '') + '</span>';
+    try { localStorage.setItem(storageKey, String(idx)); } catch (_) {}
+    if (location.hash !== '#' + (idx + 1)) history.replaceState(null, '', '#' + (idx + 1));
+  }
+  function next() { show(Math.min(current + 1, deck.length - 1)); }
+  function prev() { show(Math.max(current - 1, 0)); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'Escape') { if (document.body.getAttribute('data-mode') === 'present') { e.preventDefault(); setMode('overview'); } return; }
+    if (e.key === 'p' || e.key === 'P') { window.print(); return; }
+    if (document.body.getAttribute('data-mode') !== 'present') return;
+    switch (e.key) {
+      case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); next(); break;
+      case 'ArrowLeft': case 'PageUp': e.preventDefault(); prev(); break;
+      case 'Home': e.preventDefault(); show(0); break;
+      case 'End': e.preventDefault(); show(deck.length - 1); break;
+      default: if (e.key >= '1' && e.key <= '9') { const i = parseInt(e.key, 10) - 1; if (i < deck.length) { e.preventDefault(); show(i); } }
+    }
+  });
+  document.getElementById('navL').addEventListener('click', prev);
+  document.getElementById('navR').addEventListener('click', next);
+  document.getElementById('startBtn').addEventListener('click', () => setMode('present'));
+  document.getElementById('overviewBtn').addEventListener('click', () => setMode('overview'));
+  let rT;
+  window.addEventListener('resize', () => { fit(); clearTimeout(rT); rT = setTimeout(buildOverview, 140); });
+  document.getElementById('ov-grid').addEventListener('scroll', updateScrollOrigin, { passive: true });
+  window.addEventListener('hashchange', () => { const m = location.hash.match(/^#(\d+)$/); if (m) { current = parseInt(m[1], 10) - 1; setMode('present'); } });
+
+  const hashMatch = location.hash.match(/^#(\d+)$/);
+  if (hashMatch) current = Math.min(parseInt(hashMatch[1], 10) - 1, deck.length - 1);
+  else { try { const v = parseInt(localStorage.getItem(storageKey), 10); if (!isNaN(v) && v >= 0 && v < deck.length) current = v; } catch (_) {} }
+
+  fit(); show(current);
+  if (hashMatch) setMode('present'); else { setMode('overview'); buildOverview(); }
+
+  // Reclaim focus after clicking inside iframe so keyboard nav keeps working (#23)
+  window.addEventListener('blur', () => {
+    setTimeout(() => window.focus(), 100);
+  });
+
+  window.addEventListener('beforeprint', () => { printStack.innerHTML = ''; deck.forEach(item => { const f = document.createElement('iframe'); f.src = item.file; printStack.appendChild(f); }); printStack.style.display = 'block'; stage.style.display = 'none'; });
+  window.addEventListener('afterprint', () => { printStack.innerHTML = ''; printStack.style.display = 'none'; stage.style.display = ''; });
+})();
+</script>
+</body>
+</html>

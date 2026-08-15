@@ -36,3 +36,8 @@ h1 em { color: #9b5f23; font-style: normal; }
 .appendix-heading h2 { margin: 14px 0 8px; color: #362b20; font-size: 38px; line-height: 1.2; }
 .appendix-heading p { margin: 0; color: #6d6255; font: 17px/1.45 "Helvetica Neue", sans-serif; }
 .citation-card blockquote { overflow-wrap: anywhere; }
+.quote-label { margin-top: 12px; color: #9b5f23; font: 700 13px/1.2 "Helvetica Neue", sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.relation-list { margin: 16px 0 0; padding-left: 24px; color: #6d6255; font: 18px/1.45 "Helvetica Neue", sans-serif; }
+.relation-list li { margin: 0 0 12px; }
+.relation-list small { color: #8b7a63; font-size: 15px; }
+.relation-tag { display: inline-block; padding: 3px 8px; border: 1px solid #cdbb9b; border-radius: 999px; color: #9b5f23; font: 600 13px/1.2 "Helvetica Neue", sans-serif; }
