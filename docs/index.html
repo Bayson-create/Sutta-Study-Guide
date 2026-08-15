@@ -1682,6 +1682,12 @@ function route() {
     renderVismReader(idPart === 'nidana' || idPart === 'conclusion' ? idPart : parseInt(idPart, 10), secParam !== null ? parseInt(secParam, 10) : null, readerTarget);
   } else if (hash === '#/research/upanishads') {
     renderUpanishadsHome();
+  } else if (hash === '#/research/modern-theravada') {
+    renderModernTheravadaHome();
+  } else if (hash === '#/research/modern-theravada/search') {
+    renderModernTheravadaSearch(routeParams.get('q') || '', routeParams.get('cursor') || '');
+  } else if (hash.startsWith('#/research/modern-theravada/read/')) {
+    renderModernTheravadaReader(hash.slice('#/research/modern-theravada/read/'.length), routeParams.get('chapter') || '', routeParams.get('paragraph') || '', routeParams.get('hl') || '');
   } else if (hash === '#/research/upanishads/search') {
     renderUpanishadsSearch(routeParams.get('q') || '', routeParams.get('upscope') || 'g1', routeParams.get('cursor') || '');
   } else if (hash.startsWith('#/research/upanishads/read/')) {
@@ -3833,6 +3839,10 @@ function renderResearchHome() {
     <span class="icon">🕉️</span>
     <div class="title">奥义书</div>
     <div class="desc">《奥义书》私有研究项目——十三部奥义书、导言、分组目录、章节阅读与授权全文检索</div>
+  </div>`;
+  html += `<div class="research-item-card upanishads-project-card" onclick="location.hash='#/research/modern-theravada'">
+    <span class="icon">🌲</span><div class="title">现代上座部作品</div>
+    <div class="desc">森林派与现代上座部九部原书的授权章节阅读、全文检索与页码回链</div>
   </div>`;
   html += `<div class="research-item-card" onclick="location.hash='#/research/theravada-mahayana'">
     <span class="icon">🕉️</span>
@@ -6099,6 +6109,72 @@ async function renderUpanishadsReader(workId, blockParam, query, termsParam) {
       target?.scrollIntoView({ block: 'center', behavior: 'auto' });
     });
   } catch (error) { app.innerHTML = `<div class="error-msg">奥义书章节加载失败：${esc(error.message || error)}</div>`; }
+}
+
+// === RESEARCH: MODERN THERAVADA (private reflowed source books) ===
+let modernTheravadaCatalogCache = null;
+async function modernTheravadaRequest(path) {
+  const response = await fetch(`${API_BASE}/api/research/modern-theravada/${path}`, { headers: communityAuthHeaders() });
+  if (!response.ok) {
+    const detail = await response.json().catch(() => ({}));
+    throw new Error(detail?.detail?.message || detail?.detail || `请求失败（${response.status}）`);
+  }
+  return response.json();
+}
+async function modernTheravadaEnsureAccess() {
+  if (!getAuthToken()) { app.innerHTML = '<div class="upanishads-gate"><strong>现代上座部阅读项目需要登录</strong><br>管理员可直接阅读；其他账号须获管理员逐一授权。</div>'; return false; }
+  const access = await modernTheravadaRequest('access');
+  if (!access.allowed) { app.innerHTML = '<div class="upanishads-gate"><strong>当前账号尚未获得授权</strong><br>该项目的重排正文、全文检索与 AI 引用仅向管理员及获授权用户开放。</div>'; return false; }
+  return true;
+}
+async function modernTheravadaCatalog() { if (!modernTheravadaCatalogCache) modernTheravadaCatalogCache = await modernTheravadaRequest('catalog'); return modernTheravadaCatalogCache; }
+function modernTheravadaHighlight(value, query) {
+  const text = esc(value || ''); const needle = String(query || '').trim();
+  if (!needle) return text;
+  return text.replace(new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), match => `<mark>${match}</mark>`);
+}
+async function renderModernTheravadaHome() {
+  app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在验证现代上座部阅读权限…</div></div>';
+  try {
+    if (!(await modernTheravadaEnsureAccess())) return;
+    const catalog = await modernTheravadaCatalog();
+    const groups = { forest: [], modern: [] };
+    (catalog.works || []).forEach(work => (groups[work.collection] || groups.modern).push(work));
+    const cards = [['forest', '森林派作品'], ['modern', '现代上座部作品']].map(([key, label]) => `<section class="research-item-card"><div class="title">${label}</div><div class="upanishads-section-nav">${groups[key].map(work => `<a href="#/research/modern-theravada/read/${encodeURIComponent(work.id)}">${esc(work.title)}</a>`).join('')}</div></section>`).join('');
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button><div class="cat-header"><h2>🌲 现代上座部作品</h2><div class="cat-en">Private Reader · Forest Tradition & Modern Theravāda</div></div><div class="upanishads-toolbar"><button class="community-primary-btn" onclick="location.hash='#/research/modern-theravada/search'">全文检索</button><span class="meta">九部已校验原书，按章节阅读；公开 PDF 保持原有链接与可见性。</span></div><div class="cards">${cards}</div>`;
+  } catch (error) { app.innerHTML = `<div class="error-msg">现代上座部项目加载失败：${esc(error.message || error)}</div>`; }
+}
+async function renderModernTheravadaSearch(query, cursor) {
+  app.innerHTML = `<button class="back-btn" onclick="location.hash='#/research/modern-theravada'">← 返回现代上座部目录</button><div class="cat-header"><h2>🔍 现代上座部全文检索</h2><div class="cat-en">授权阅读 · 精确短语优先 · 词元 BM25 排序 · 段落与页码定位</div></div><div class="upanishads-search-bar"><input id="modern-theravada-search-input" class="community-search" placeholder="搜索九部现代上座部原书…" value="${esc(query)}"><button type="button" class="community-primary-btn" id="modern-theravada-search-submit">搜索</button></div><div id="modern-theravada-search-status" class="dhamma-empty-note"></div><div id="modern-theravada-search-results"></div>`;
+  try {
+    if (!(await modernTheravadaEnsureAccess())) return;
+    const input = document.getElementById('modern-theravada-search-input');
+    const run = async () => {
+      const q = input.value.trim(); if (!q) return;
+      const status = document.getElementById('modern-theravada-search-status'); const root = document.getElementById('modern-theravada-search-results');
+      status.textContent = '检索中…';
+      try {
+        const params = new URLSearchParams({ q, page_size: '40' }); if (cursor) params.set('cursor', cursor);
+        const data = await modernTheravadaRequest(`search?${params}`); const items = data.results || [];
+        root.innerHTML = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>命中结果</span><span class="count">${Number(data.total || items.length).toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list">${items.map(item => { const params = new URLSearchParams({ chapter: item.chapter_id, paragraph: item.paragraph_id, hl: q }); return `<li><a href="#/research/modern-theravada/read/${encodeURIComponent(item.work_id)}?${params}"><span class="upanishads-result-title">${esc(item.title || item.work_id)} · 第 ${esc(item.page_anchor)} 页</span><span class="upanishads-result-meta">${esc(item.chapter_id)} · ${esc(item.match_level || '')}</span><p class="upanishads-result-snippet">${modernTheravadaHighlight(item.snippet, q)}</p></a></li>`; }).join('')}</ul><div class="tipitaka-page">${data.next_cursor ? `<button type="button" onclick="location.hash='#/research/modern-theravada/search?${new URLSearchParams({q,cursor:data.next_cursor})}">下一页</button>` : ''}<span class="meta">每页 40 条 · 总数完整</span></div></div></div>`;
+        status.textContent = `命中 ${Number(data.total || items.length).toLocaleString()} 处`;
+      } catch (error) { status.textContent = `检索失败：${error.message || error}`; }
+    };
+    document.getElementById('modern-theravada-search-submit').onclick = run; input.addEventListener('keydown', event => { if (event.key === 'Enter') run(); }); if (query) run();
+  } catch (error) { app.innerHTML = `<div class="error-msg">现代上座部检索加载失败：${esc(error.message || error)}</div>`; }
+}
+async function renderModernTheravadaReader(workId, chapterId, paragraphId, query) {
+  app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在加载授权章节…</div></div>';
+  try {
+    if (!(await modernTheravadaEnsureAccess())) return;
+    const work = await modernTheravadaRequest(`works/${encodeURIComponent(workId)}`);
+    const chapters = work.chapters || [];
+    const nav = chapters.map(chapter => `<a href="#${esc(chapter.id)}" data-modern-chapter="${esc(chapter.id)}">${esc(chapter.title)}</a>`).join(' · ');
+    const body = chapters.map(chapter => `<section id="${esc(chapter.id)}" class="upanishads-block heading"><h3>${esc(chapter.title)}</h3>${(chapter.paragraphs || []).map(paragraph => { const active = paragraph.id === paragraphId; return `<p id="${esc(paragraph.id)}" class="upanishads-block${active ? ' search-active' : ''}" data-modern-paragraph="${esc(paragraph.id)}">${modernTheravadaHighlight(paragraph.text, active ? query : '')}<small class="meta">原书第 ${esc(paragraph.page_anchor)} 页</small></p>`; }).join('')}</section>`).join('');
+    app.innerHTML = `<div class="upanishads-reader"><button class="back-btn" onclick="location.hash='#/research/modern-theravada'">← 返回现代上座部目录</button><div class="upanishads-reader-head"><h2>${esc(work.title || workId)}</h2><div class="meta">受授权保护的章节阅读 · 原书页码可追溯</div></div><div class="upanishads-section-nav">${nav}</div><article>${body}</article></div>`;
+    app.querySelectorAll('[data-modern-chapter]').forEach(link => link.addEventListener('click', event => { event.preventDefault(); document.getElementById(link.dataset.modernChapter)?.scrollIntoView({ behavior:'smooth', block:'start' }); }));
+    if (paragraphId) requestAnimationFrame(() => document.getElementById(paragraphId)?.scrollIntoView({ block:'center', behavior:'auto' }));
+  } catch (error) { app.innerHTML = `<div class="error-msg">现代上座部章节加载失败：${esc(error.message || error)}</div>`; }
 }
 
 // === RESEARCH: VISUDDHIMAGGA (清净之道) ===
