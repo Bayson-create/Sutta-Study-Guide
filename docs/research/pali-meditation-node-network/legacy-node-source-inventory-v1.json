@@ -1,0 +1,1422 @@
+{
+  "format": "legacy-meditation-source-inventory/v1",
+  "source_svg": "docs/research/assets/pali-meditation-flowchart.svg",
+  "node_count": 70,
+  "substantive_node_count": 68,
+  "meta_node_count": 2,
+  "reference_count": 143,
+  "unique_reference_count": 102,
+  "nodes": [
+    {
+      "ordinal": 1,
+      "label": "发心与正见",
+      "summary": "知苦、信、出离；不落苦行或欲乐",
+      "position": {
+        "x": 240,
+        "y": 196
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 26",
+          "url": "https://suttacentral.net/mn26/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 36",
+          "url": "https://suttacentral.net/mn36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 12.23",
+          "url": "https://suttacentral.net/sn12.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "label": "善友与听法",
+      "summary": "依善友、法谈、审慎择师",
+      "position": {
+        "x": 620,
+        "y": 190
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 32",
+          "url": "https://suttacentral.net/mn32/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 150",
+          "url": "https://suttacentral.net/mn150/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Ud 4.1",
+          "url": "https://suttacentral.net/ud4.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "label": "戒清净",
+      "summary": "身口意、活命、惭愧、少欲、知量",
+      "position": {
+        "x": 990,
+        "y": 190
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 39",
+          "url": "https://suttacentral.net/mn39/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 107",
+          "url": "https://suttacentral.net/mn107/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "label": "根门防护",
+      "summary": "见闻觉知中不取相不取随相",
+      "position": {
+        "x": 1367.5,
+        "y": 192
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 152",
+          "url": "https://suttacentral.net/mn152/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 35.95",
+          "url": "https://suttacentral.net/sn35.95/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "label": "正念正知",
+      "summary": "行住坐卧、饮食、日常正知",
+      "position": {
+        "x": 1757.5,
+        "y": 192
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 10",
+          "url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 119",
+          "url": "https://suttacentral.net/mn119/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "label": "远离与独处",
+      "summary": "空闲处、林住、离群、内空",
+      "position": {
+        "x": 2140,
+        "y": 190
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 122",
+          "url": "https://suttacentral.net/mn122/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 9.40",
+          "url": "https://suttacentral.net/an9.40/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "label": "自检心流",
+      "summary": "读自己的心：贪嗔痴、五盖、掉举、疑",
+      "position": {
+        "x": 2530,
+        "y": 195
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 10.54",
+          "url": "https://suttacentral.net/an10.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 46.55",
+          "url": "https://suttacentral.net/sn46.55/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "label": "五盖现前",
+      "summary": "欲贪、嗔恚、昏沉睡眠、掉悔、疑",
+      "position": {
+        "x": 240,
+        "y": 415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 46.51",
+          "url": "https://suttacentral.net/sn46.51/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 5.23",
+          "url": "https://suttacentral.net/an5.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "label": "不善寻思",
+      "summary": "欲寻、嗔寻、害寻；五法止息杂念",
+      "position": {
+        "x": 627.5,
+        "y": 415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 19",
+          "url": "https://suttacentral.net/mn19/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 20",
+          "url": "https://suttacentral.net/mn20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "label": "昏沉睡眠",
+      "summary": "换所缘、诵法、经行、光明想",
+      "position": {
+        "x": 1010,
+        "y": 410
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 7.61",
+          "url": "https://suttacentral.net/an7.61/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "label": "禅相障碍",
+      "summary": "疑、失念、恐惧、兴奋、过精进等",
+      "position": {
+        "x": 1385,
+        "y": 410
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 128",
+          "url": "https://suttacentral.net/mn128/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 12,
+      "label": "嗔恚对治",
+      "summary": "忍辱、慈心、无害寻思",
+      "position": {
+        "x": 1765,
+        "y": 410
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 21",
+          "url": "https://suttacentral.net/mn21/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Snp 1.8",
+          "url": "https://suttacentral.net/snp1.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 13,
+      "label": "贪欲对治",
+      "summary": "不净、身至念、过患想、无常想",
+      "position": {
+        "x": 2145,
+        "y": 410
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 119",
+          "url": "https://suttacentral.net/mn119/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 10.60",
+          "url": "https://suttacentral.net/an10.60/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 14,
+      "label": "调节精进",
+      "summary": "沉修择法精进喜；亢修轻安定舍",
+      "position": {
+        "x": 2540,
+        "y": 410
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 46.53",
+          "url": "https://suttacentral.net/sn46.53/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 15,
+      "label": "选择业处",
+      "summary": "安般、身念、不净、慈心、六随念",
+      "position": {
+        "x": 240,
+        "y": 645
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 62",
+          "url": "https://suttacentral.net/mn62/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 6.10",
+          "url": "https://suttacentral.net/an6.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 16,
+      "label": "安般入门",
+      "summary": "知长短息、全身息、安息身行",
+      "position": {
+        "x": 620,
+        "y": 645
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 118",
+          "url": "https://suttacentral.net/mn118/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.1",
+          "url": "https://suttacentral.net/sn54.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.2",
+          "url": "https://suttacentral.net/sn54.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.3",
+          "url": "https://suttacentral.net/sn54.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.4",
+          "url": "https://suttacentral.net/sn54.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.5",
+          "url": "https://suttacentral.net/sn54.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.6",
+          "url": "https://suttacentral.net/sn54.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 17,
+      "label": "身念入门",
+      "summary": "姿势、正知、四界、九墓观",
+      "position": {
+        "x": 1000,
+        "y": 645
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 10",
+          "url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 119",
+          "url": "https://suttacentral.net/mn119/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 18,
+      "label": "四无量入门",
+      "summary": "慈、悲、喜、舍遍满一切方",
+      "position": {
+        "x": 1380,
+        "y": 645
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 62",
+          "url": "https://suttacentral.net/mn62/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 46.54",
+          "url": "https://suttacentral.net/sn46.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 19,
+      "label": "随念入门",
+      "summary": "佛法僧戒施天，喜、轻安、乐、定",
+      "position": {
+        "x": 1760,
+        "y": 645
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 6.10",
+          "url": "https://suttacentral.net/an6.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 11.13",
+          "url": "https://suttacentral.net/an11.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 20,
+      "label": "定前五盖暂伏",
+      "summary": "五盖暂伏；心已能持续安住所缘",
+      "position": {
+        "x": 2160,
+        "y": 650
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 27",
+          "url": "https://suttacentral.net/mn27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 5.23",
+          "url": "https://suttacentral.net/an5.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 21,
+      "label": "安止门槛",
+      "summary": "禅支成熟；守护所缘，避免过急越级",
+      "position": {
+        "x": 2575,
+        "y": 650
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 128",
+          "url": "https://suttacentral.net/mn128/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 9.35",
+          "url": "https://suttacentral.net/an9.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 22,
+      "label": "初禅",
+      "summary": "离欲离不善法；有寻有伺，离生喜乐",
+      "position": {
+        "x": 245,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.1",
+          "url": "https://suttacentral.net/sn40.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 23,
+      "label": "第二禅",
+      "summary": "寻伺止息；内净一心，定生喜乐",
+      "position": {
+        "x": 635,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.2",
+          "url": "https://suttacentral.net/sn40.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 24,
+      "label": "第三禅",
+      "summary": "离喜住舍；正念正知，身受乐",
+      "position": {
+        "x": 1025,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.3",
+          "url": "https://suttacentral.net/sn40.3/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 25,
+      "label": "第四禅",
+      "summary": "舍苦乐；不苦不乐，舍念清净",
+      "position": {
+        "x": 1415,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.4",
+          "url": "https://suttacentral.net/sn40.4/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 26,
+      "label": "禅那熟练",
+      "summary": "不越级冒进；能入、住、出、回顾",
+      "position": {
+        "x": 1820,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 9.35",
+          "url": "https://suttacentral.net/an9.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 111",
+          "url": "https://suttacentral.net/mn111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 27,
+      "label": "定中观",
+      "summary": "逐支观察禅支：无常、有为、缘生",
+      "position": {
+        "x": 2250,
+        "y": 900
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 111",
+          "url": "https://suttacentral.net/mn111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 9.36",
+          "url": "https://suttacentral.net/an9.36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 28,
+      "label": "四梵住成熟",
+      "summary": "慈悲喜舍无量心；广大心转化业果",
+      "position": {
+        "x": 255,
+        "y": 1160
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 3.100",
+          "url": "https://suttacentral.net/an3.100/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Iti 27",
+          "url": "https://suttacentral.net/iti27/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 29,
+      "label": "空无边处",
+      "summary": "超越色想，作意无边空",
+      "position": {
+        "x": 650,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 106",
+          "url": "https://suttacentral.net/mn106/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.5",
+          "url": "https://suttacentral.net/sn40.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 30,
+      "label": "识无边处",
+      "summary": "超越空无边处，作意无边识",
+      "position": {
+        "x": 1030,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 40.6",
+          "url": "https://suttacentral.net/sn40.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 31,
+      "label": "无所有处",
+      "summary": "超越识无边处，作意无所有",
+      "position": {
+        "x": 1410,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 106",
+          "url": "https://suttacentral.net/mn106/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.7",
+          "url": "https://suttacentral.net/sn40.7/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 32,
+      "label": "非想非非想处",
+      "summary": "极微细想；仍属有为境界",
+      "position": {
+        "x": 1805,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 106",
+          "url": "https://suttacentral.net/mn106/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 40.8",
+          "url": "https://suttacentral.net/sn40.8/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 33,
+      "label": "无相定",
+      "summary": "不作诸相；仍须防止执著定境",
+      "position": {
+        "x": 2200,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 40.9",
+          "url": "https://suttacentral.net/sn40.9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 34,
+      "label": "受想灭定",
+      "summary": "最高等第住；出定后以慧见漏尽",
+      "position": {
+        "x": 2595,
+        "y": 1155
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 43",
+          "url": "https://suttacentral.net/mn43/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 44",
+          "url": "https://suttacentral.net/mn44/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 35,
+      "label": "身念处",
+      "summary": "呼吸、姿势、正知、身体部位、四界、墓观",
+      "position": {
+        "x": 240,
+        "y": 1415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 10",
+          "url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 22",
+          "url": "https://suttacentral.net/dn22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 36,
+      "label": "受念处",
+      "summary": "乐、苦、不苦不乐；世俗与出离受",
+      "position": {
+        "x": 620,
+        "y": 1415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 36.2",
+          "url": "https://suttacentral.net/sn36.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 36.31",
+          "url": "https://suttacentral.net/sn36.31/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 37,
+      "label": "心念处",
+      "summary": "贪/离贪、嗔/离嗔、散乱/定",
+      "position": {
+        "x": 1000,
+        "y": 1415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 47.35",
+          "url": "https://suttacentral.net/sn47.35/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 10",
+          "url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 38,
+      "label": "法念处",
+      "summary": "五盖、五蕴、六处、觉支、四圣谛",
+      "position": {
+        "x": 1390,
+        "y": 1415
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 10",
+          "url": "https://suttacentral.net/mn10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 22",
+          "url": "https://suttacentral.net/dn22/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 39,
+      "label": "安般十六阶",
+      "summary": "身组→受组→心组→法组；满念处与觉支",
+      "position": {
+        "x": 1810,
+        "y": 1420
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 118",
+          "url": "https://suttacentral.net/mn118/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 54.13",
+          "url": "https://suttacentral.net/sn54.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 40,
+      "label": "七觉支成熟",
+      "summary": "念、择法、精进、喜、轻安、定、舍",
+      "position": {
+        "x": 2235,
+        "y": 1420
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 46.2",
+          "url": "https://suttacentral.net/sn46.2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 46.51",
+          "url": "https://suttacentral.net/sn46.51/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 41,
+      "label": "正勤神足根力",
+      "summary": "四正勤、四神足、信精进念定慧",
+      "position": {
+        "x": 2630,
+        "y": 1420
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 48.10",
+          "url": "https://suttacentral.net/sn48.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 4.14",
+          "url": "https://suttacentral.net/an4.14/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 51.20",
+          "url": "https://suttacentral.net/sn51.20/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 42,
+      "label": "五蕴观",
+      "summary": "色受想行识：无常、苦、非我",
+      "position": {
+        "x": 245,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 22.59",
+          "url": "https://suttacentral.net/sn22.59/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 22.79",
+          "url": "https://suttacentral.net/sn22.79/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 43,
+      "label": "六处观",
+      "summary": "六根境识触受爱；见闻觉知中不加我",
+      "position": {
+        "x": 635,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 148",
+          "url": "https://suttacentral.net/mn148/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Ud 1.10",
+          "url": "https://suttacentral.net/ud1.10/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 44,
+      "label": "受观",
+      "summary": "两支箭；受集、受灭、受灭道",
+      "position": {
+        "x": 1025,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 36.6",
+          "url": "https://suttacentral.net/sn36.6/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 36.23",
+          "url": "https://suttacentral.net/sn36.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 45,
+      "label": "界分别",
+      "summary": "地水火风空识六界；舍与真实",
+      "position": {
+        "x": 1415,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 140",
+          "url": "https://suttacentral.net/mn140/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 115",
+          "url": "https://suttacentral.net/mn115/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 46,
+      "label": "缘起观",
+      "summary": "此有故彼有；此无故彼无；",
+      "position": {
+        "x": 1830,
+        "y": 1679.5
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 12.23",
+          "url": "https://suttacentral.net/sn12.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 15",
+          "url": "https://suttacentral.net/dn15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 47,
+      "label": "现法观",
+      "summary": "不追过去，不希未来，如实观现在",
+      "position": {
+        "x": 2245,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 131",
+          "url": "https://suttacentral.net/mn131/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 48,
+      "label": "空性观",
+      "summary": "村落想→林想→地想；内外空性住",
+      "position": {
+        "x": 2650,
+        "y": 1685
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 121",
+          "url": "https://suttacentral.net/mn121/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 122",
+          "url": "https://suttacentral.net/mn122/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 49,
+      "label": "集灭随观",
+      "summary": "见身受心法、蕴处受的集起与灭去",
+      "position": {
+        "x": 250,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 47.42",
+          "url": "https://suttacentral.net/sn47.42/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 22.5",
+          "url": "https://suttacentral.net/sn22.5/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 50,
+      "label": "三相深入",
+      "summary": "无常、有为、缘生；不可主宰故非我",
+      "position": {
+        "x": 655,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 22.59",
+          "url": "https://suttacentral.net/sn22.59/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 9.36",
+          "url": "https://suttacentral.net/an9.36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 51,
+      "label": "味患出离",
+      "summary": "看见乐味、过患、出离门",
+      "position": {
+        "x": 1055,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 64",
+          "url": "https://suttacentral.net/mn64/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 22.57",
+          "url": "https://suttacentral.net/sn22.57/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 52,
+      "label": "厌离",
+      "summary": "对蕴、处、受、行不再取乐",
+      "position": {
+        "x": 1440,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 12.23",
+          "url": "https://suttacentral.net/sn12.23/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 141",
+          "url": "https://suttacentral.net/mn141/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 53,
+      "label": "离贪",
+      "summary": "贪爱止息；欲、有、无明漏削弱",
+      "position": {
+        "x": 1820,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 6.63",
+          "url": "https://suttacentral.net/an6.63/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Iti 85",
+          "url": "https://suttacentral.net/iti85/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 54,
+      "label": "灭",
+      "summary": "苦灭圣谛；诸行止息与寂静",
+      "position": {
+        "x": 2200,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 56.11",
+          "url": "https://suttacentral.net/sn56.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "Ud 8.1",
+          "url": "https://suttacentral.net/ud8.1/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 55,
+      "label": "四圣谛现观",
+      "summary": "苦应知、集应断、灭应证、道应修",
+      "position": {
+        "x": 2600,
+        "y": 1950
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 56.11",
+          "url": "https://suttacentral.net/sn56.11/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 141",
+          "url": "https://suttacentral.net/mn141/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 56,
+      "label": "入流道",
+      "summary": "断身见、戒禁取、疑的现观转折",
+      "position": {
+        "x": 240,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 55",
+          "url": "https://suttacentral.net/sn55/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 9",
+          "url": "https://suttacentral.net/mn9/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 57,
+      "label": "入流果",
+      "summary": "最多七有，不堕恶趣；四不坏净",
+      "position": {
+        "x": 620,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 55.28",
+          "url": "https://suttacentral.net/sn55.28/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 5.179",
+          "url": "https://suttacentral.net/an5.179/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 58,
+      "label": "一来道",
+      "summary": "进一步薄贪嗔痴",
+      "position": {
+        "x": 1000,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 73",
+          "url": "https://suttacentral.net/mn73/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 59,
+      "label": "一来果",
+      "summary": "一返此世而尽苦边",
+      "position": {
+        "x": 1380,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 73",
+          "url": "https://suttacentral.net/mn73/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 60,
+      "label": "不还道",
+      "summary": "断五下分结：欲贪、嗔等根除",
+      "position": {
+        "x": 1760,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 64",
+          "url": "https://suttacentral.net/mn64/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 10.13",
+          "url": "https://suttacentral.net/an10.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 61,
+      "label": "不还果",
+      "summary": "不返欲界；依禅观导向不还",
+      "position": {
+        "x": 2140,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 52",
+          "url": "https://suttacentral.net/mn52/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 9.36",
+          "url": "https://suttacentral.net/an9.36/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 62,
+      "label": "阿罗汉道",
+      "summary": "断上分结；六处蕴界断漏审查",
+      "position": {
+        "x": 2520,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 10.13",
+          "url": "https://suttacentral.net/an10.13/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 112",
+          "url": "https://suttacentral.net/mn112/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 63,
+      "label": "阿罗汉果",
+      "summary": "漏尽、解脱知见；生已尽梵行已立",
+      "position": {
+        "x": 2910,
+        "y": 2210
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 111",
+          "url": "https://suttacentral.net/mn111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 64,
+      "label": "回顾智",
+      "summary": "知入、住、出；知断、证、修是否完成",
+      "position": {
+        "x": 255,
+        "y": 2490
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 111",
+          "url": "https://suttacentral.net/mn111/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 2",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 65,
+      "label": "证悟检验",
+      "summary": "六处、蕴、界、定慧、断漏逐项审查",
+      "position": {
+        "x": 665,
+        "y": 2490
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 112",
+          "url": "https://suttacentral.net/mn112/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 66,
+      "label": "不执定境",
+      "summary": "不把禅乐、空、无相、无所有处当终点",
+      "position": {
+        "x": 1075,
+        "y": 2490
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "MN 106",
+          "url": "https://suttacentral.net/mn106/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 72",
+          "url": "https://suttacentral.net/mn72/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 67,
+      "label": "病中与临终",
+      "summary": "病中觉支、十想、安般念，令心趋向解脱",
+      "position": {
+        "x": 1485,
+        "y": 2490
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "SN 46.14",
+          "url": "https://suttacentral.net/sn46.14/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 46.15",
+          "url": "https://suttacentral.net/sn46.15/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "SN 46.16",
+          "url": "https://suttacentral.net/sn46.16/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 10.60",
+          "url": "https://suttacentral.net/an10.60/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 68,
+      "label": "回到日常",
+      "summary": "戒、根律仪、念处、自检心流持续运行",
+      "position": {
+        "x": 1895,
+        "y": 2490
+      },
+      "node_kind": "substantive",
+      "legacy_references": [
+        {
+          "ref": "AN 10.54",
+          "url": "https://suttacentral.net/an10.54/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "MN 151",
+          "url": "https://suttacentral.net/mn151/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    },
+    {
+      "ordinal": 69,
+      "label": "读图说明",
+      "summary": "“定前五盖暂伏”表示五盖被暂时压伏、心能持续安住所缘，是进入禅那前的实修门槛；不把它写成经中固定术语。",
+      "position": {
+        "x": 115,
+        "y": 2842
+      },
+      "node_kind": "meta",
+      "legacy_references": []
+    },
+    {
+      "ordinal": 70,
+      "label": "严格审计补充：经藏中出现但不宜塞进单一路径主线的法数/能力",
+      "summary": "八解脱、八胜处、六神通/三明：属于深定、智证或法数总集，应作为旁支能力/分类节点理解。",
+      "position": {
+        "x": 1625,
+        "y": 2842
+      },
+      "node_kind": "meta",
+      "legacy_references": [
+        {
+          "ref": "DN 33 法数总集",
+          "url": "https://suttacentral.net/dn33/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 34 八解脱/六神通",
+          "url": "https://suttacentral.net/dn34/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "DN 2 神通与三明",
+          "url": "https://suttacentral.net/dn2/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        },
+        {
+          "ref": "AN 8.70 四神足",
+          "url": "https://suttacentral.net/an8.70/en/sujato?lang=en&layout=plain&reference=none&notes=none&highlight=false&script=latin"
+        }
+      ]
+    }
+  ]
+}
