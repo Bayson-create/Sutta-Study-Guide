@@ -6168,7 +6168,7 @@ async function modernTheravadaRequest(path) {
   return response.json();
 }
 async function modernTheravadaEnsureAccess() {
-  if (!getAuthToken()) { app.innerHTML = '<div class="upanishads-gate"><strong>现代上座部阅读项目需要登录</strong><br>管理员可直接阅读；其他账号须获管理员逐一授权。</div>'; return false; }
+  if (!communityToken()) { app.innerHTML = '<div class="upanishads-gate"><strong>现代上座部阅读项目需要登录</strong><br>管理员可直接阅读；其他账号须获管理员逐一授权。</div>'; return false; }
   const access = await modernTheravadaRequest('access');
   if (!access.allowed) { app.innerHTML = '<div class="upanishads-gate"><strong>当前账号尚未获得授权</strong><br>该项目的重排正文、全文检索与 AI 引用仅向管理员及获授权用户开放。</div>'; return false; }
   return true;
@@ -10108,7 +10108,7 @@ function dhammaAllRecords() {
 }
 
 async function dhammaEnsureModernPrivateCatalog() {
-  const token = typeof getAuthToken === 'function' ? (getAuthToken() || '') : '';
+  const token = typeof communityToken === 'function' ? (communityToken() || '') : '';
   if (dhammaModernAccessChecked && token === dhammaModernAccessToken) return dhammaModernAccess;
   dhammaModernAccessChecked = true;
   dhammaModernAccessToken = token;
