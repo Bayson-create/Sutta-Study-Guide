@@ -42,7 +42,7 @@
     if (model === 'theravada-synthesis/v2') required['mind-process']=1;
     return (data.registry.queries || []).map(function (item) { return item.id; }).filter(function (id) { return required[id]; });
   }
-  function shard(id, data) { if (bundle.shards[id]) return bundle.shards[id]; bundle.shards[id] = fetchJson(EVIDENCE_BASE + '/' + data.files[id].file); return bundle.shards[id]; }
+  function shard(id, data) { if (bundle.shards[id]) return bundle.shards[id]; var runtime = (data.runtime_files && data.runtime_files[id] && data.runtime_files[id].file) || ('runtime/' + id + '.json.gz'); bundle.shards[id] = fetchJson(EVIDENCE_BASE + '/' + runtime).catch(function () { return fetchJson(EVIDENCE_BASE + '/' + data.files[id].file); }); return bundle.shards[id]; }
   function selectEvidence(message, model) {
     return manifest().then(function (data) {
       var concepts = selectedConcepts(message, model, data);
