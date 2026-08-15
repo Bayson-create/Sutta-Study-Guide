@@ -63,7 +63,7 @@ function paginateEvidence(evidence, budget) {
 }
 
 function page({ number, total, kicker, title, body, css, slideId }) {
-  return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=1920"><title>${esc(title)}</title><link rel="stylesheet" href="${css}"><body><main class="slide" data-slide-id="${esc(slideId)}"><div class="kicker"><span>${esc(kicker)}</span><span>${number} / ${total}</span></div><div class="rule"></div>${body}<div class="foot">V4 禅修节点网讲座 · 经卷式学术编年 · 旧流程图保持原样</div></main></body></html>`;
+  return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=1920"><title>${esc(title)}</title><link rel="stylesheet" href="${css}?v=network-v3"><body><main class="slide" data-slide-id="${esc(slideId)}"><div class="kicker"><span>${esc(kicker)}</span><span>${number} / ${total}</span></div><div class="rule"></div>${body}<div class="foot">V4 禅修节点网讲座 · 经卷式学术编年 · 旧流程图保持原样</div></main></body></html>`;
 }
 
 const readerHref = (readerUrl, upLevels) => String(readerUrl || '').startsWith('#') ? `${'../'.repeat(upLevels)}${readerUrl}` : readerUrl;
