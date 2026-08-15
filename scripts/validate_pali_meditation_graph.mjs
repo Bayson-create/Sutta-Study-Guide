@@ -39,13 +39,21 @@ for (const layer of ['commentary', 'subcommentary', 'other']) {
   assert(layerEvidence.summary[layer].rows > 0, `分层上下文没有记录：${layer}`);
 }
 assert(layerEvidence.rule.includes('不替代节点根本引文'), '分层上下文清单缺少证据边界声明');
-assert(deckManifest.main_slide_count === graph.nodes.length + 1, `主讲页数量不完整：${deckManifest.main_slide_count}`);
+assert(deckManifest.format === 'v4-meditation-node-deck/v3', `讲座清单格式错误：${deckManifest.format}`);
+assert(deckManifest.base_node_slide_count === graph.nodes.length + 1, `主讲基础页数量不完整：${deckManifest.base_node_slide_count}`);
+assert(deckManifest.continuation_slide_count === deckManifest.main_slide_count - deckManifest.base_node_slide_count, '主讲续页数量不一致');
+assert(deckManifest.main_slide_count === deckManifest.main.length, '主讲清单数量不一致');
+assert(deckManifest.main_slide_count > graph.nodes.length + 1, '主讲页没有生成任何长引文续页');
 assert(deckManifest.edge_count === graph.edges.length, '讲座清单的关系数量与图不一致');
 assert(deckManifest.appendix_slide_count === deckManifest.appendix.length, '附录清单数量不一致');
+assert(new Set(deckManifest.main.map(item => item.slide_id)).size === deckManifest.main.length, '主讲 slide_id 重复');
+assert(new Set(deckManifest.appendix.map(item => item.slide_id)).size === deckManifest.appendix.length, '附录 slide_id 重复');
 for (const item of deckManifest.main) await readFile(resolve(deckDir, item.file));
 for (const item of deckManifest.appendix) await readFile(resolve(deckDir, 'appendix', item.file));
-assert(deckManifest.main.every(item => item.file.includes('overview') || graph.nodes.some(node => item.file.includes(node.id))), '主讲页缺少节点页');
-assert(deckManifest.appendix.some(item => item.label.startsWith('关系证据')), '附录缺少关系证据页');
+assert(deckManifest.main.some(item => item.slide_id === 'overview'), '主讲页缺少总览页');
+assert(graph.nodes.every(node => deckManifest.main.some(item => item.slide_id === `node-${node.id}`)), '主讲页缺少节点基础页');
+assert(deckManifest.main.filter(item => item.slide_id.startsWith('node-evidence-')).every(item => item.file.startsWith('slides/evidence-node-')), '续页路径不规范');
+assert(deckManifest.appendix.some(item => item.slide_id.startsWith('appendix-edge-')), '附录缺少关系证据页');
 
 const expectedMembers = new Map([
   ['五盖现前', 5], ['不善寻思', 3], ['四无量入门', 4], ['安般十六阶', 16],
