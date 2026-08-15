@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; }
 body { background: #f4eee3; color: #2d2923; font-family: Georgia, "Songti SC", "STSong", serif; }
-.slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; padding: 74px 104px 64px; background: #f4eee3; }
+.slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; padding: 74px 104px 32px; background: #f4eee3; }
 .slide::before { content: ""; position: absolute; inset: 28px; border: 1px solid #cdbb9b; pointer-events: none; }
 .kicker { position: relative; z-index: 1; display: flex; justify-content: space-between; color: #8b6321; font: 600 22px/1.2 "Helvetica Neue", sans-serif; letter-spacing: .18em; text-transform: uppercase; }
 .rule { width: 100%; height: 1px; background: #cdbb9b; margin: 26px 0 48px; }
@@ -21,6 +21,7 @@ h1 em { color: #9b5f23; font-style: normal; }
 .layer.mula { border-color: #a94732; }
 .layer.commentary { border-color: #6f7f59; }
 .quote-card { padding: 42px 48px 38px; background: rgba(255,252,245,.85); border: 1px solid #cdbb9b; box-shadow: 0 12px 30px rgba(80,57,28,.08); }
+.quote-card { min-width: 0; overflow: hidden; }
 .quote-card blockquote { margin: 20px 0 22px; font-size: 36px; line-height: 1.55; }
 .quote-card .pali { color: #8b6321; font-style: italic; font-size: 31px; }
 .quote-card .en { color: #766a5c; font: 23px/1.6 Georgia, serif; }
@@ -32,6 +33,19 @@ h1 em { color: #9b5f23; font-style: normal; }
 .quote-card .path { color: #8b7a63; font: 16px/1.45 "Helvetica Neue", sans-serif; }
 .quote-card a { color: #9b5f23; overflow-wrap: anywhere; }
 .citation-part { margin-top: 18px; color: #9b5f23; font: 600 16px/1.4 "Helvetica Neue", sans-serif; }
+.continuation-heading { position: relative; z-index: 1; margin-bottom: 22px; }
+.continuation-heading h2 { margin: 14px 0 8px; color: #362b20; font-size: 42px; line-height: 1.2; }
+.continuation-heading p { margin: 0; color: #6d6255; font: 17px/1.45 "Helvetica Neue", sans-serif; }
+.continuation-card { margin-top: 0; }
+.continuation-card blockquote { margin: 14px 0 16px; }
+.continuation-card .pali { font-size: 28px; line-height: 1.42; }
+.continuation-card .zh { font-size: 30px; line-height: 1.42; }
+.continuation-card .en { font-size: 22px; line-height: 1.46; }
+.compact-citation { margin-top: 22px; padding-top: 12px; font-size: 14px; line-height: 1.32; }
+.continuation-note { color: #8b6321 !important; font: 600 17px/1.45 "Helvetica Neue", sans-serif !important; }
+.continuation-links, .continuation-nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 12px; font: 17px/1.4 "Helvetica Neue", sans-serif; }
+.continuation-links a, .continuation-nav a { color: #8b6321; }
+.empty-quote { color: #9a8a74; font-style: normal; font-size: .72em; }
 .appendix-heading { position: relative; z-index: 1; margin-bottom: 24px; }
 .appendix-heading h2 { margin: 14px 0 8px; color: #362b20; font-size: 38px; line-height: 1.2; }
 .appendix-heading p { margin: 0; color: #6d6255; font: 17px/1.45 "Helvetica Neue", sans-serif; }
