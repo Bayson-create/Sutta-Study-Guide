@@ -1883,25 +1883,30 @@ function v4DhammaResultHref(item, query) {
 
 function renderDhammaV4ApiResults(run, query, options = {}) {
   const results = Array.isArray(run?.results) ? run.results : [];
+  const visibleCount = Number(options.visibleCount || 5);
+  const visibleResults = results.slice(0, visibleCount);
   if (!results.length) {
     const message = run?.error ? `V4 三语本暂时不可用：${dhammaEscapeHtml(run.error)}` : 'V4 三语本未找到正文命中。';
     return `<section class="dhamma-v4-source" data-v4-source><p class="dhamma-empty-note">${message}</p>${run?.error ? `<button type="button" class="community-secondary-btn" data-v4-retry="${dhammaEscapeHtml(query)}">重试 V4 检索</button>` : ''}</section>`;
   }
   const groups = new Map([[1, []], [2, []], [3, []], [4, []]]);
-  results.forEach(item => { if (groups.has(Number(item.lineage_layer))) groups.get(Number(item.lineage_layer)).push(item); });
-  let html = `<section class="dhamma-v4-source" data-v4-source><div class="dhamma-results-heading">V4 三语本 · ${Number(run.total || results.length).toLocaleString()} 处命中 <span class="source-tag keyword">公开只读 API</span></div>`;
+  visibleResults.forEach(item => { if (groups.has(Number(item.lineage_layer))) groups.get(Number(item.lineage_layer)).push(item); });
+  const total = Number(run.total || results.length);
+  let html = `<section class="dhamma-v4-source" data-v4-source><div class="dhamma-results-heading">V4 三语本 · ${total.toLocaleString()} 处命中 <span class="source-tag keyword">公开只读 API</span> · 已显示 ${Math.min(visibleCount, results.length).toLocaleString()} 条</div>`;
   for (const [layer, items] of groups) {
     if (!items.length) continue;
     html += `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>第${layer}层 · V4</span><span class="count">${items.length} 条</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">`;
     html += items.map(item => `<li><a class="title" href="${dhammaEscapeHtml(v4DhammaResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))}${item.paranum ? ` · ${dhammaEscapeHtml(toSimplified(item.paranum))}` : ''}</a><span class="source-tag keyword">V4 三语本</span><span class="meta">${dhammaEscapeHtml((item.path || []).map(toSimplified).join(' / '))}</span><p class="snippet">${dhammaHighlightSnippet(toSimplified(item.snippet || item.text || ''))}</p></li>`).join('');
     html += '</ul></div></div>';
   }
-  if (run.next_cursor) html += `<button type="button" class="community-secondary-btn" data-v4-next="${dhammaEscapeHtml(run.next_cursor)}">加载下一页（当前 ${results.length} / ${Number(run.total).toLocaleString()}）</button>`;
+  const shown = Math.min(visibleCount, results.length);
+  const remaining = Math.max(0, total - shown);
+  if (remaining > 0) html += `<div class="dhamma-progressive-more"><button type="button" class="community-secondary-btn" data-v4-expand data-v4-visible="${shown}">展开其余 ${remaining.toLocaleString()} 篇</button><span class="meta">每次展开最多 40 篇</span></div>`;
   html += '</section>';
   return html;
 }
 
-function bindDhammaV4Pagination(root, query) {
+function bindDhammaV4Pagination(root, query, state = null) {
   const retry = root?.querySelector('[data-v4-retry]');
   if (retry) {
     retry.addEventListener('click', async () => {
@@ -1910,22 +1915,30 @@ function bindDhammaV4Pagination(root, query) {
       try {
         const page = await searchDhammaV4Api(query);
         const source = retry.closest('[data-v4-source]');
-        if (source) { source.outerHTML = renderDhammaV4ApiResults(page, query); bindDhammaV4Pagination(root, query); }
+        if (source) { if (state) state.run = page; source.outerHTML = renderDhammaV4ApiResults(page, query, state || {}); bindDhammaV4Pagination(root, query, state); }
       } catch (error) {
         retry.disabled = false;
         retry.textContent = `重试失败：${error.message}`;
       }
     });
   }
-  const next = root?.querySelector('[data-v4-next]');
+  const next = root?.querySelector('[data-v4-expand]');
   if (!next) return;
   next.addEventListener('click', async () => {
-    next.disabled = true; next.textContent = '正在加载 V4 下一页…';
+    next.disabled = true; next.textContent = '正在展开…';
     try {
-      const page = await searchDhammaV4Api(query, next.dataset.v4Next);
+      const current = state || { run: { results: [], total: 0 }, visibleCount: Number(next.dataset.v4Visible || 5) };
+      const shown = Number(next.dataset.v4Visible || current.visibleCount || 5);
+      if (shown < (current.run.results || []).length) {
+        current.visibleCount = Math.min(shown + 40, current.run.results.length);
+      } else if (current.run.next_cursor) {
+        const page = await searchDhammaV4Api(query, current.run.next_cursor);
+        current.run = { ...page, results: [...(current.run.results || []), ...(page.results || [])] };
+        current.visibleCount = Math.min(shown + 40, current.run.results.length);
+      }
       const source = next.closest('[data-v4-source]');
-      if (source) { source.outerHTML = renderDhammaV4ApiResults(page, query); bindDhammaV4Pagination(root, query); }
-    } catch (error) { next.disabled = false; next.textContent = `加载失败：${error.message}`; }
+      if (source) { source.outerHTML = renderDhammaV4ApiResults(current.run, query, current); bindDhammaV4Pagination(root, query, current); }
+    } catch (error) { next.disabled = false; next.textContent = `展开失败，重试（${error.message}）`; }
   });
 }
 
@@ -1977,9 +1990,26 @@ function dhammaModernResultHref(item, query) {
   return `#/research/modern-theravada/read/${encodeURIComponent(item.work_id)}?${params.toString()}`;
 }
 
-function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword = false, mode = 'exact', modernRun = null } = {}) {
+function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword = false, mode = 'exact', modernRun = null, visibleCount = 5 } = {}) {
   const v4Groups = dhammaV4Groups(v4Run);
   const modernGroups = dhammaModernGroups(modernRun);
+  const rows = [...DHAMMA_LAYER_ORDER, 0].map(layer => ({
+    layer,
+    localItems: localGroups?.[layer] || [],
+    v4Items: v4Groups[layer] || [],
+    modernItems: modernGroups[layer] || [],
+  }));
+  const loadedCount = rows.reduce((sum, row) => sum + row.localItems.length + row.v4Items.length + row.modernItems.length, 0);
+  let budget = Math.max(0, visibleCount);
+  const visibleByLayer = new Map();
+  for (const row of rows) {
+    const all = [...row.localItems, ...row.v4Items, ...row.modernItems];
+    visibleByLayer.set(row.layer, all.slice(0, budget));
+    budget -= Math.min(budget, all.length);
+  }
+  const availableTotal = rows.reduce((sum, row) => sum + row.localItems.length, 0)
+    + Number(v4Run?.total || v4Run?.results?.length || 0)
+    + Number(modernRun?.total || modernRun?.results?.length || 0);
   let html = `<section class="dhamma-unified-source" data-v4-unified>`;
   if (v4Run?.error) {
     html += `<p class="dhamma-empty-note">V4 三语本暂时不可用：${dhammaEscapeHtml(v4Run.error)} <button type="button" class="community-secondary-btn" data-v4-unified-retry>重试 V4 检索</button></p>`;
@@ -1992,11 +2022,13 @@ function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword =
     html += `<p class="dhamma-results-heading">已纳入第 8 层现代上座部私有资料 · 当前页 ${Number(modernRun.results?.length || 0)} 条／共 ${Number(modernRun.total).toLocaleString()} 处</p>`;
   }
   for (const layer of [...DHAMMA_LAYER_ORDER, 0]) {
-    const localItems = localGroups?.[layer] || [];
-    const v4Items = v4Groups[layer] || [];
-    const modernItems = modernGroups[layer] || [];
-    const hasHits = localItems.length > 0 || v4Items.length > 0 || modernItems.length > 0;
-    if (!hasHits && !keyword) continue;
+    const row = rows.find(item => item.layer === layer);
+    const visibleItems = visibleByLayer.get(layer) || [];
+    const localItems = visibleItems.filter(item => row.localItems.includes(item));
+    const v4Items = visibleItems.filter(item => row.v4Items.includes(item));
+    const modernItems = visibleItems.filter(item => row.modernItems.includes(item));
+    const hasHits = visibleItems.length > 0;
+    if (!hasHits) continue;
     const label = layer === 0 ? '未归入八层 · 参考资料' : DHAMMA_LAYER_NAMES[layer];
     html += `<div class="dhamma-layer-section ${hasHits ? 'open' : ''}" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${dhammaEscapeHtml(label)}</span><span class="count">${hasHits ? `${localItems.length + v4Items.length + modernItems.length} 篇命中` : '空白'}</span></div><div class="dhamma-layer-section-body">`;
     if (!hasHits) {
@@ -2015,13 +2047,17 @@ function dhammaRenderUnifiedLayerSections(localGroups, v4Run, query, { keyword =
         return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(rec.title || rec.id)}</a><span class="source-tag keyword">CBETA 本地文本</span>${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
       });
       const v4Lis = v4Items.map(item => `<li><a class="title" href="${dhammaEscapeHtml(v4DhammaResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))}${item.paranum ? ` · ${dhammaEscapeHtml(toSimplified(item.paranum))}` : ''}</a><span class="source-tag keyword">V4 三语本</span><span class="meta">${dhammaEscapeHtml((item.path || []).map(toSimplified).join(' / '))}</span><p class="snippet">${dhammaHighlightV4Snippet(item, query)}</p></li>`);
-      const modernLis = modernItems.map(item => `<li><a class="title" href="${dhammaEscapeHtml(dhammaModernResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))} · ${dhammaEscapeHtml(toSimplified(item.chapter_id || ''))}</a><span class="source-tag keyword">现代上座部（授权）</span><span class="meta">原书第 ${dhammaEscapeHtml(String(item.page_anchor || ''))} 页 · ${dhammaEscapeHtml(item.match_level || '')}</span><p class="snippet">${modernTheravadaHighlight(item.snippet || item.text || '', query)}</p></li>`);
-      html += `<ul class="dhamma-hit-list">${dhammaCollapsibleItems([...docLis, ...v4Lis, ...modernLis], 5, '篇')}</ul>`;
+      const modernLis = modernItems.map(item => `<li><a class="title" href="${dhammaEscapeHtml(dhammaModernResultHref(item, query))}">${dhammaEscapeHtml(toSimplified(item.title || item.work_id))} · ${dhammaEscapeHtml(toSimplified(item.chapter_id || ''))}</a><span class="source-tag keyword">现代上座部</span><span class="meta">原书第 ${dhammaEscapeHtml(String(item.page_anchor || ''))} 页 · ${dhammaEscapeHtml(item.match_level || '')}</span><p class="snippet">${modernTheravadaHighlight(item.snippet || item.text || '', query)}</p></li>`);
+      html += `<ul class="dhamma-hit-list">${[...docLis, ...v4Lis, ...modernLis].join('')}</ul>`;
     }
     html += '</div></div>';
   }
-  if (!v4Run?.error && v4Run?.next_cursor) html += `<button type="button" class="community-secondary-btn" data-v4-unified-next="${dhammaEscapeHtml(v4Run.next_cursor)}">加载下一页 V4 命中</button>`;
-  if (!modernRun?.error && modernRun?.next_cursor) html += `<button type="button" class="community-secondary-btn" data-modern-unified-next="${dhammaEscapeHtml(modernRun.next_cursor)}">加载下一页现代上座部命中</button>`;
+  const hasMore = visibleCount < loadedCount || (!v4Run?.error && v4Run?.next_cursor) || (!modernRun?.error && modernRun?.next_cursor);
+  if (hasMore) {
+    const shown = Math.min(visibleCount, loadedCount);
+    const remaining = Math.max(0, availableTotal - shown);
+    html += `<div class="dhamma-progressive-more"><button type="button" class="community-secondary-btn" data-unified-expand data-visible="${shown}">展开其余 ${remaining.toLocaleString()} 篇</button><span class="meta">每次展开最多 40 篇；结果总数不截断</span></div>`;
+  }
   if (!v4Run?.error && !modernRun?.error && !(v4Run?.results || []).length && !(modernRun?.results || []).length && !Object.values(localGroups || {}).some(items => items?.length)) html += '<p class="dhamma-empty-note">未检索到相关内容。</p>';
   return html + '</section>';
 }
@@ -2034,21 +2070,31 @@ function bindDhammaUnifiedV4Pagination(root, query, state) {
     retry.disabled = true; retry.textContent = '正在重试…';
     try {
       state.run = await searchDhammaV4Api(query);
-      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, state.options);
+      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun, visibleCount: state.visibleCount });
       bindDhammaUnifiedV4Pagination(root, query, state);
       dhammaWireLayerSections();
     } catch (error) { retry.disabled = false; retry.textContent = `重试失败：${error.message}`; }
   });
-  const next = wrapper.querySelector('[data-v4-unified-next]');
+  const next = wrapper.querySelector('[data-unified-expand]');
   if (next) next.addEventListener('click', async () => {
-    next.disabled = true; next.textContent = '正在加载…';
+    next.disabled = true; next.textContent = '正在展开…';
     try {
-      const page = await searchDhammaV4Api(query, next.dataset.v4UnifiedNext);
-      state.run = { ...page, results: [...(state.run.results || []), ...(page.results || [])] };
-      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, state.options);
+      const shown = Number(next.dataset.visible || state.visibleCount || 5);
+      const loaded = Object.values(state.localGroups || {}).reduce((sum, items) => sum + (items?.length || 0), 0)
+        + (state.run?.results?.length || 0) + (state.modernRun?.results?.length || 0);
+      if (shown < loaded) {
+        state.visibleCount = Math.min(shown + 40, loaded);
+      } else {
+        const requests = [];
+        if (state.run?.next_cursor) requests.push(searchDhammaV4Api(query, state.run.next_cursor).then(page => { state.run = { ...page, results: [...(state.run.results || []), ...(page.results || [])] }; }));
+        if (state.modernRun?.next_cursor) requests.push(dhammaSearchModernPrivate(query, state.modernRun.next_cursor).then(page => { state.modernRun = { ...page, results: [...(state.modernRun.results || []), ...(page.results || [])] }; }));
+        await Promise.all(requests);
+        state.visibleCount = shown + 40;
+      }
+      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun, visibleCount: state.visibleCount });
       bindDhammaUnifiedV4Pagination(root, query, state);
       dhammaWireLayerSections();
-    } catch (error) { next.disabled = false; next.textContent = `加载失败：${error.message}`; }
+    } catch (error) { next.disabled = false; next.textContent = `展开失败，重试（${error.message}）`; }
   });
 
   const modernRetry = wrapper.querySelector('[data-modern-unified-retry]');
@@ -2056,21 +2102,10 @@ function bindDhammaUnifiedV4Pagination(root, query, state) {
     modernRetry.disabled = true; modernRetry.textContent = '正在重试…';
     try {
       state.modernRun = await dhammaSearchModernPrivate(query);
-      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun });
+      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun, visibleCount: state.visibleCount });
       bindDhammaUnifiedV4Pagination(root, query, state);
       dhammaWireLayerSections();
     } catch (error) { modernRetry.disabled = false; modernRetry.textContent = `重试失败：${error.message}`; }
-  });
-  const modernNext = wrapper.querySelector('[data-modern-unified-next]');
-  if (modernNext) modernNext.addEventListener('click', async () => {
-    modernNext.disabled = true; modernNext.textContent = '正在加载…';
-    try {
-      const page = await dhammaSearchModernPrivate(query, modernNext.dataset.modernUnifiedNext);
-      state.modernRun = { ...page, results: [...(state.modernRun?.results || []), ...(page.results || [])] };
-      wrapper.outerHTML = dhammaRenderUnifiedLayerSections(state.localGroups, state.run, query, { ...state.options, modernRun: state.modernRun });
-      bindDhammaUnifiedV4Pagination(root, query, state);
-      dhammaWireLayerSections();
-    } catch (error) { modernNext.disabled = false; modernNext.textContent = `加载失败：${error.message}`; }
   });
 }
 
@@ -2955,9 +2990,10 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
       }
       if (dhammaHtml) results.insertAdjacentHTML('beforeend', wrapScope('dhamma', dhammaHtml));
       if (dhammaRun.v4) {
-        const v4Html = renderDhammaV4ApiResults(dhammaRun.v4, q);
+        const v4State = { run: dhammaRun.v4, visibleCount: 5 };
+        const v4Html = renderDhammaV4ApiResults(v4State.run, q, v4State);
         results.insertAdjacentHTML('beforeend', wrapScope('dhamma', v4Html));
-        bindDhammaV4Pagination(results, q);
+        bindDhammaV4Pagination(results, q, v4State);
         dhammaHits += Number(dhammaRun.v4.total || 0);
       }
       totalHits += dhammaHits;
@@ -3078,7 +3114,8 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
             return `<li><a href="${href}"><span class="title">${esc(label)} <small>${esc(item.kind || '')}${level ? ` · ${level}` : ''}</small></span><p class="snippet">${searchSnippetHtml(text, off, len)}</p></a></li>`;
           }).join(''));
           const next = (page + 1) * 40 < result.total;
-          pageBox.innerHTML = `${page > 0 ? '<button data-v4-prev>上一页</button>' : ''}${next ? '<button data-v4-next>加载下一页</button>' : ''}<span class="meta">第 ${page + 1} 页 · 每页 40 条 · 总数完整</span>`;
+          const remaining = Math.max(0, result.total - (page + 1) * 40);
+          pageBox.innerHTML = `${page > 0 ? '<button data-v4-prev>上一页</button>' : ''}${next ? `<button data-v4-next>展开其余 ${remaining.toLocaleString()} 篇</button>` : ''}<span class="meta">第 ${page + 1} 页 · 每次展开 40 条 · 总数完整</span>`;
           pageBox.querySelector('[data-v4-prev]')?.addEventListener('click', () => { list.innerHTML = ''; draw(page - 1); });
           pageBox.querySelector('[data-v4-next]')?.addEventListener('click', () => draw(page + 1));
         };
@@ -3150,16 +3187,18 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         const nextParams = new URLSearchParams({ q, scope: searchUpanishadsScopeSelections.join('|'), page_size: '40', mode: 'explore', cursor: run.upanishads.next_cursor });
         const nextResponse = await fetch(`${API_BASE}/api/research/upanishads/search?${nextParams}`, { headers: communityAuthHeaders() });
         const next = await nextResponse.json();
-        if (!nextResponse.ok) throw new Error(next.detail?.message || next.detail || '加载下一页失败');
+        if (!nextResponse.ok) throw new Error(next.detail?.message || next.detail || '展开结果失败');
         const more = Array.isArray(next.results) ? next.results : [];
         run.upanishads.items.push(...more);
         run.upanishads.next_cursor = next.next_cursor || null;
         list.insertAdjacentHTML('beforeend', more.map(hitHtml).join(''));
-        pageBox.innerHTML = run.upanishads.next_cursor ? '<button type="button" data-upanishads-next>加载下一页</button>' : '<span class="meta">已加载全部结果</span>';
+        const remaining = Math.max(0, run.upanishads.total - run.upanishads.items.length);
+        pageBox.innerHTML = run.upanishads.next_cursor ? `<button type="button" data-upanishads-next>展开其余 ${remaining.toLocaleString()} 篇</button><span class="meta">本次展开 ${more.length} 篇</span>` : '<span class="meta">已展开全部结果</span>';
         pageBox.querySelector('[data-upanishads-next]')?.addEventListener('click', loadMore);
         searchRenderSynthPrompt();
       };
-      pageBox.innerHTML = run.upanishads.next_cursor ? '<button type="button" data-upanishads-next>加载下一页</button><span class="meta">已加载 40 条 · 总数完整</span>' : '<span class="meta">已加载全部结果</span>';
+      const remaining = Math.max(0, run.upanishads.total - run.upanishads.items.length);
+      pageBox.innerHTML = run.upanishads.next_cursor ? `<button type="button" data-upanishads-next>展开其余 ${remaining.toLocaleString()} 篇</button><span class="meta">首批展示 ${items.length} 篇 · 总数完整</span>` : '<span class="meta">已展开全部结果</span>';
       pageBox.querySelector('[data-upanishads-next]')?.addEventListener('click', loadMore);
       totalHits += run.upanishads.total;
       scopeStatus.upanishads = `奥义书：命中 ${run.upanishads.total.toLocaleString()} 处`;
@@ -10601,7 +10640,7 @@ function dhammaToggleDrilldown(cardEl, card) {
     const source = isV4
       ? '<span class="dhamma-source-tag shared">V4 三语本</span>'
       : isModern
-        ? '<span class="dhamma-source-tag shared">现代上座部（授权）</span>'
+        ? '<span class="dhamma-source-tag shared">现代上座部</span>'
         : '';
     return `<li><a href="${dhammaEscapeHtml(href)}"${isV4 ? ' target="_blank" rel="noopener"' : ''} title="${dhammaEscapeHtml(r.layer_note || '')}">${dhammaEscapeHtml(toSimplified(r.title || r.id))}</a>${source}</li>`;
   }).join('');
@@ -10622,7 +10661,7 @@ function dhammaRenderLayerCards(layer) {
     if (v4Items.length) cards.push({ id: 'v4', label: layer === 3 ? 'V4 上座部阿毗达磨' : 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) });
   }
   if (layer === 8 && dhammaModernPrivateIndex.length) {
-    cards.push({ id: 'modern-theravada', label: '现代上座部（授权）', count: dhammaModernPrivateIndex.length, ids: dhammaModernPrivateIndex.map(r => r.id) });
+    cards.push({ id: 'modern-theravada', label: '现代上座部', count: dhammaModernPrivateIndex.length, ids: dhammaModernPrivateIndex.map(r => r.id) });
   }
   // Keep the existing public modern-teacher entry separate from the
   // permission-gated modern Theravada catalog. The public records remain in
@@ -10735,7 +10774,7 @@ function dhammaRenderBrowse() {
         const localItems = v4Items.length ? items.filter(r => r.source !== 'tipitaka_v4') : items.filter(r => r.source !== 'modern_theravada');
         row.appendChild(dhammaRenderCard({ id: 'all', label: v4Items.length ? 'CBETA 本地文本' : '浏览全部', count: localItems.length, ids: localItems.map(r => r.id) }));
         if (v4Items.length) row.appendChild(dhammaRenderCard({ id: `v4-${layer}`, label: 'V4 三语本', count: v4Items.length, ids: v4Items.map(r => r.id) }));
-        if (modernItems.length) row.appendChild(dhammaRenderCard({ id: 'modern-theravada', label: '现代上座部（授权）', count: modernItems.length, ids: modernItems.map(r => r.id) }));
+        if (modernItems.length) row.appendChild(dhammaRenderCard({ id: 'modern-theravada', label: '现代上座部', count: modernItems.length, ids: modernItems.map(r => r.id) }));
         body.appendChild(row);
       }
     }
@@ -11274,7 +11313,7 @@ async function dhammaRenderTraceView(q, data, { streaming = false, elapsedSecond
         allHits.push({ hitId, h });
         const isV4 = h.source_type === 'tipitaka_v4';
         const isModern = h.source_type === 'modern_theravada';
-        const sourceLabel = isV4 ? 'V4 三语本' : isModern ? '现代上座部（授权）' : 'CBETA 本地文本';
+        const sourceLabel = isV4 ? 'V4 三语本' : isModern ? '现代上座部' : 'CBETA 本地文本';
         const meta = isV4 ? ((h.path || []).join(' / ')) : isModern ? `${h.chapter_id || ''}${h.page_anchor ? ` · 原书第 ${h.page_anchor} 页` : ''}` : h.cbeta_id;
         return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ${isV4 || isModern ? 'keyword' : 'ai'}">${sourceLabel}</span><span class="meta">${dhammaEscapeHtml(meta)}${h.paranum ? ` · ${dhammaEscapeHtml(h.paranum)}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
       });
