@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 
 const root = resolve(new URL('..', import.meta.url).pathname);
@@ -182,13 +183,247 @@ await writeFile(resolve(deckDir, 'index.html'), withManifest(template, mainFiles
 await writeFile(resolve(deckDir, 'appendix/index.html'), withManifest(template, appendixFiles));
 await writeFile(resolve(deckDir, 'manifest.json'), JSON.stringify({ format: 'v4-meditation-node-deck/v3', generated_at: new Date().toISOString(), node_network: '../../pali-meditation-node-network/meditation-knowledge-graph-v2.json', main_slide_count: mainFiles.length, appendix_slide_count: appendixFiles.length, base_node_slide_count: mainBasePages.length, continuation_slide_count: continuationPages.length, node_count: graph.nodes.length, edge_count: graph.edges.length, main: mainFiles, appendix: appendixFiles }, null, 2));
 
-const graphView = {
-  ...graph,
-  nodes: graph.nodes.map(node => ({ ...node, evidence: { ...node.evidence, reader_url: readerHref(node.evidence.reader_url, 3) } })),
-  edges: graph.edges.map(edge => ({ ...edge, evidence: { ...edge.evidence, reader_url: readerHref(edge.evidence.reader_url, 3) } })),
+/* ── 可审计数据视图：分片 + 按需加载 ──
+   旧版把整份 graph（3.8M 字符）内联进 graph.html，浏览器一次性解析成深层对象图，
+   且每次击键都对每个节点重跑 JSON.stringify()。现改为：
+     data/index.json       首屏用的精简字段 + 预先小写的搜索串
+     data/edges.json       勾选「显示关系」时才取
+     data/nodes/<key>.json 展开单个节点时才取（均值 25KB，页面侧 LRU 缓存）
+     data/search-deep.json 勾选「深度搜索」时才取（义注/复注/藏外全文，保持旧版搜索口径）
+   分片会在写盘后回合校验，与源 JSON 不一致即失败退出。 */
+const dataDir = resolve(deckDir, 'data');
+await mkdir(resolve(dataDir, 'nodes'), { recursive: true });
+
+const shardKey = node => (/^(v4m-\d+)/.exec(node.id)?.[1]) || encodeURIComponent(node.id);
+const searchText = node => {
+  const evidence = node.evidence || {};
+  return [
+    node.id, node.title, node.legacy_title, node.domain_label, node.kind, node.note, node.isolation_reason,
+    evidence.uid, evidence.work_title, evidence.pali, evidence.chinese_simplified, evidence.english,
+    ...(node.terms || []), ...(node.source_uids || []), ...(evidence.matched_terms || []),
+  ].filter(Boolean).join(' ').toLowerCase();
 };
-const graphCss = `body{margin:0;background:#f4eee3;color:#30291f;font-family:Georgia,'Songti SC',serif}main{max-width:1320px;margin:auto;padding:44px 26px 90px}h1{font-size:48px}.meta{color:#766a5c;line-height:1.7}.controls{position:sticky;top:0;z-index:2;background:#f4eee3ee;backdrop-filter:blur(12px);padding:14px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center}input,select{padding:10px 12px;border:1px solid #cdbb9b;border-radius:8px;background:#fffaf2;font:inherit}.controls label{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid #cdbb9b;border-radius:8px;background:#fffaf2;cursor:pointer}.relations-panel{margin:18px 0 26px;padding:18px 20px;background:#fffaf2;border:1px solid #d8c9ae;border-radius:12px;box-shadow:0 8px 18px #50391c12}.relations-panel[hidden]{display:none}.relations-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}.relations-head h2{margin:0}.relations-count{color:#8b6321;font:600 14px/1.3 sans-serif}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.card{background:#fffaf2;border:1px solid #d8c9ae;border-radius:12px;padding:18px;box-shadow:0 8px 18px #50391c12}.card h2{margin:0 0 8px;font-size:22px}.tag{display:inline-block;color:#8b6321;font:13px sans-serif;margin:0 6px 8px 0}.card a{color:#9b5f23}.edge{border-left:3px solid #c89a54;padding-left:12px;margin:12px 0}.small{color:#766a5c;font:14px/1.5 sans-serif}@media(max-width:720px){main{padding:24px 14px 60px}h1{font-size:34px}.grid{grid-template-columns:1fr}.controls{position:static}}`;
-const graphScript = `const graph=${safeJson(graphView)};const escHtml=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));const nodeMap=new Map(graph.nodes.map(n=>[n.id,n]));const q=document.querySelector('#q'),layer=document.querySelector('#layer'),kind=document.querySelector('#kind'),show=document.querySelector('#showEdges'),nodesEl=document.querySelector('#nodes'),edgesEl=document.querySelector('#edges'),relationToggleLabel=document.querySelector('#relationToggleLabel');let lastShowState=show.checked;function layerMatch(n){if(!layer.value)return true;if(layer.value===n.evidence.layer)return true;return !!n.layer_evidence?.[layer.value]?.entries?.length}function draw(scrollRelations=false){const needle=q.value.toLowerCase();const ns=graph.nodes.filter(n=>(!needle||JSON.stringify(n).toLowerCase().includes(needle))&&layerMatch(n)&&(!kind.value||n.kind===kind.value));nodesEl.innerHTML=ns.map(n=>'<article class="card"><div class="tag">'+escHtml(n.domain_label)+' · '+escHtml(n.kind)+'</div><h2>'+escHtml(n.title)+'</h2><div class="small">根本证据：'+escHtml(n.evidence.uid)+' · '+escHtml(n.evidence.work_id)+':'+escHtml(n.evidence.row_id)+' · 上下文：义注 '+(n.layer_evidence?.commentary?.entries?.length||0)+' / 复注 '+(n.layer_evidence?.subcommentary?.entries?.length||0)+' / 藏外 '+(n.layer_evidence?.other?.entries?.length||0)+'</div><p>'+escHtml(n.note)+'</p><a href="'+n.evidence.reader_url+'" target="_blank">打开 V4 原段 ↗</a></article>').join('')||'<p>没有匹配节点。</p>';edgesEl.hidden=!show.checked;edgesEl.setAttribute('aria-expanded',String(show.checked));show.setAttribute('aria-expanded',String(show.checked));relationToggleLabel.textContent=show.checked?'已显示关系（'+graph.edges.length+' 条）':'显示关系（'+graph.edges.length+' 条）';edgesEl.innerHTML=show.checked?'<div class="relations-head"><h2>关系证据</h2><span class="relations-count">'+graph.edges.length+' 条关系</span></div>'+graph.edges.map(e=>'<div class="edge"><b>'+escHtml(nodeMap.get(e.from)?.title||e.from)+' → '+escHtml(nodeMap.get(e.to)?.title||e.to)+'</b>　<span class="tag">'+escHtml(e.type)+'</span><div class="small">'+escHtml(e.claim)+' · '+escHtml(e.evidence.uid)+':'+escHtml(e.evidence.row_id)+'</div><a href="'+e.evidence.reader_url+'" target="_blank">核对关系引文 ↗</a></div>').join(''):'';if(scrollRelations&&show.checked)requestAnimationFrame(()=>edgesEl.scrollIntoView({block:'nearest',behavior:'smooth'}))}q.addEventListener('input',()=>draw());layer.addEventListener('change',()=>draw());kind.addEventListener('change',()=>draw());const onShow=()=>{if(show.checked===lastShowState)return;lastShowState=show.checked;draw(true)};show.addEventListener('change',onShow);show.addEventListener('input',onShow);draw();`;
-const graphHtml = `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V4 禅修节点网 · 可审计数据视图</title><style>${graphCss}</style><main><h1>V4 禅修节点网</h1><p class="meta">${graph.nodes.length} 个节点 · ${graph.edges.length} 条关系 · 根本经主证据；义注、复注、藏外为独立术语上下文。旧流程图未改写。</p><div class="controls"><input id="q" placeholder="搜索节点、巴利或中文"><select id="layer"><option value="">全部语料上下文</option><option value="root_sutta">根本经主证据</option><option value="commentary">义注上下文</option><option value="subcommentary">复注上下文</option><option value="other">藏外上下文</option></select><select id="kind"><option value="">全部节点类型</option><option value="legacy_spine">旧图主干</option><option value="atomic_member">原子成员</option></select><label><input id="showEdges" type="checkbox" aria-controls="edges" aria-expanded="false"><span id="relationToggleLabel">显示关系（${graph.edges.length} 条）</span></label></div><section id="edges" class="relations-panel" hidden aria-live="polite" aria-expanded="false"></section><section id="nodes" class="grid"></section></main><script>${graphScript}</script></html>`;
+// 深度索引刻意用整份节点的小写 JSON：与旧版 JSON.stringify(n).toLowerCase() 完全同口径，
+// 勾选后命中集与改版前逐字一致（区别只在于它是按需拉取的扁平字符串，而不是常驻的深层对象图）。
+const deepText = node => JSON.stringify(node).toLowerCase();
+
+const indexNodes = graph.nodes.map(node => ({
+  id: node.id,
+  key: shardKey(node),
+  title: node.title,
+  domain_label: node.domain_label,
+  kind: node.kind,
+  note: node.note || '',
+  layer: node.evidence.layer,
+  ev: { uid: node.evidence.uid, work_id: node.evidence.work_id, row_id: node.evidence.row_id, reader_url: readerHref(node.evidence.reader_url, 3) },
+  counts: {
+    commentary: node.layer_evidence?.commentary?.entries?.length || 0,
+    subcommentary: node.layer_evidence?.subcommentary?.entries?.length || 0,
+    other: node.layer_evidence?.other?.entries?.length || 0,
+  },
+  s: searchText(node),
+}));
+const indexPayload = {
+  format: 'v4-meditation-node-network-index/v1',
+  generated_at: graph.generated_at,
+  node_count: graph.nodes.length,
+  edge_count: graph.edges.length,
+  nodes: indexNodes,
+};
+const edgesPayload = {
+  format: 'v4-meditation-node-network-edges/v1',
+  edges: graph.edges.map(edge => ({
+    id: edge.id, from: edge.from, to: edge.to, type: edge.type, claim: edge.claim,
+    ev: { uid: edge.evidence.uid, row_id: edge.evidence.row_id, reader_url: readerHref(edge.evidence.reader_url, 3) },
+  })),
+};
+const deepPayload = Object.fromEntries(graph.nodes.map(node => [node.id, deepText(node)]).filter(([, text]) => text));
+
+await writeFile(resolve(dataDir, 'index.json'), JSON.stringify(indexPayload));
+await writeFile(resolve(dataDir, 'edges.json'), JSON.stringify(edgesPayload));
+await writeFile(resolve(dataDir, 'search-deep.json'), JSON.stringify(deepPayload));
+for (const node of graph.nodes) await writeFile(resolve(dataDir, 'nodes', `${shardKey(node)}.json`), JSON.stringify(node));
+await writeFile(resolve(dataDir, 'meta.json'), JSON.stringify({
+  format: 'v4-meditation-node-network-data/v1',
+  generated_at: new Date().toISOString(),
+  source: '../../../pali-meditation-node-network/meditation-knowledge-graph-v2.json',
+  source_sha256: createHash('sha256').update(JSON.stringify(graph)).digest('hex'),
+  node_count: graph.nodes.length,
+  edge_count: graph.edges.length,
+  verification: graph.verification,
+}, null, 2));
+
+// 回合校验：分片读回后必须与源节点逐字节一致，否则不发布
+for (const node of graph.nodes) {
+  const roundTrip = await readFile(resolve(dataDir, 'nodes', `${shardKey(node)}.json`), 'utf8');
+  if (roundTrip !== JSON.stringify(node)) {
+    console.error(`分片回合校验失败：${node.id}`);
+    process.exit(1);
+  }
+}
+
+const graphCss = `body{margin:0;background:#f4eee3;color:#30291f;font-family:Georgia,'Songti SC',serif}main{max-width:1320px;margin:auto;padding:44px 26px 90px}h1{font-size:48px}.meta{color:#766a5c;line-height:1.7}.controls{position:sticky;top:0;z-index:5;background:#f4eee3ee;backdrop-filter:blur(12px);padding:14px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center}input,select{padding:10px 12px;border:1px solid #cdbb9b;border-radius:8px;background:#fffaf2;font:inherit}.controls label{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid #cdbb9b;border-radius:8px;background:#fffaf2;cursor:pointer;font:14px sans-serif;color:#5f5648}.relations-panel{margin:18px 0 26px;padding:18px 20px;background:#fffaf2;border:1px solid #d8c9ae;border-radius:12px;box-shadow:0 8px 18px #50391c12}.relations-panel[hidden]{display:none}.relations-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}.relations-head h2{margin:0}.relations-count{color:#8b6321;font:600 14px/1.3 sans-serif}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.card{background:#fffaf2;border:1px solid #d8c9ae;border-radius:12px;padding:18px;box-shadow:0 8px 18px #50391c12}.card h2{margin:0 0 8px;font-size:22px}.tag{display:inline-block;color:#8b6321;font:13px sans-serif;margin:0 6px 8px 0}.card a{color:#9b5f23}.edge{border-left:3px solid #c89a54;padding-left:12px;margin:12px 0}.small{color:#766a5c;font:14px/1.5 sans-serif}.status{color:#766a5c;font:14px/1.6 sans-serif;padding:10px 0}.status strong{color:#30291f}details.ev{margin-top:12px;border-top:1px dashed #d8c9ae;padding-top:10px}details.ev>summary{cursor:pointer;color:#9b5f23;font:14px sans-serif}.quote-label{font:12px sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8b6321;margin:12px 0 4px}blockquote{margin:0;font-size:15px;line-height:1.75;white-space:pre-wrap}.anchor{font:11px/1.6 ui-monospace,monospace;color:#8d8272;word-break:break-all;margin-top:10px}@media(max-width:720px){main{padding:24px 14px 60px}h1{font-size:34px}.grid{grid-template-columns:1fr}.controls{position:static}}`;
+
+
+const graphScript = String.raw`
+const DATA='data/';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const q=document.querySelector('#q'),layer=document.querySelector('#layer'),kind=document.querySelector('#kind'),
+      show=document.querySelector('#showEdges'),deep=document.querySelector('#deepSearch'),
+      nodesEl=document.querySelector('#nodes'),edgesEl=document.querySelector('#edges'),statusEl=document.querySelector('#status'),
+      relationToggleLabel=document.querySelector('#relationToggleLabel');
+let index=null,edges=null,deepMap=null,lastShowState=show.checked;
+
+const getJSON=async path=>{const r=await fetch(DATA+path,{cache:'no-cache'});if(!r.ok)throw new Error('HTTP '+r.status+' · '+path);return r.json()};
+const fail=(what,err)=>{statusEl.innerHTML='<strong>'+esc(what)+'暂不可用</strong> '+esc(err&&err.message||'网络不可用')+'；其余内容仍可浏览。'};
+
+/* 展开过的节点分片做 LRU 缓存，避免逐个点开后又把整份数据驻留在内存里 */
+const CACHE_MAX=20,cache=new Map();
+async function nodeDetail(key){
+  if(cache.has(key)){const v=cache.get(key);cache.delete(key);cache.set(key,v);return v}
+  const data=await getJSON('nodes/'+key+'.json');
+  cache.set(key,data);
+  while(cache.size>CACHE_MAX)cache.delete(cache.keys().next().value);
+  return data;
+}
+
+function layerMatch(n){return !layer.value||layer.value===n.layer||(n.counts[layer.value]||0)>0}
+function matches(n,needle){
+  if(!needle)return true;
+  if(n.s.includes(needle))return true;
+  return !!(deepMap&&(deepMap[n.id]||'').includes(needle));
+}
+
+function draw(){
+  if(!index)return;
+  const needle=q.value.trim().toLowerCase();
+  const ns=index.nodes.filter(n=>matches(n,needle)&&layerMatch(n)&&(!kind.value||n.kind===kind.value));
+  statusEl.innerHTML='<strong>'+ns.length+'</strong> / '+index.nodes.length+' 个节点'+(needle?'　匹配「'+esc(needle)+'」':'')+(deepMap?'　· 深度搜索已加载':'');
+  nodesEl.innerHTML=ns.map(n=>'<article class="card"><div class="tag">'+esc(n.domain_label)+' · '+esc(n.kind)+'</div><h2>'+esc(n.title)+'</h2>'
+    +'<div class="small">根本证据：'+esc(n.ev.uid)+' · '+esc(n.ev.work_id)+':'+esc(n.ev.row_id)+' · 上下文：义注 '+n.counts.commentary+' / 复注 '+n.counts.subcommentary+' / 藏外 '+n.counts.other+'</div>'
+    +'<p>'+esc(n.note)+'</p>'
+    +'<details class="ev" data-key="'+esc(n.key)+'"><summary>展开三语原文与层级上下文</summary><div class="small">载入中…</div></details>'
+    +'<a href="'+esc(n.ev.reader_url)+'" target="_blank" rel="noopener">打开 V4 原段 ↗</a></article>').join('')||'<p>没有匹配节点。</p>';
+}
+
+function renderQuote(e){
+  return '<div class="quote-label">Pāli</div><blockquote>'+esc(e.pali)+'</blockquote>'
+    +'<div class="quote-label">简体中文</div><blockquote>'+esc(e.chinese_simplified)+'</blockquote>'
+    +'<div class="quote-label">English</div><blockquote>'+esc(e.english)+'</blockquote>'
+    +'<div class="anchor">ANCHOR · Pāli '+esc(e.anchors&&e.anchors.pali_sha256)+' · English '+esc(e.anchors&&e.anchors.english_sha256)+'</div>';
+}
+function renderLayers(le){
+  const label={commentary:'义注',subcommentary:'复注',other:'藏外典籍'};
+  return Object.keys(label).map(k=>{
+    const entries=(le&&le[k]&&le[k].entries)||[];
+    if(!entries.length)return '';
+    return '<div class="quote-label">'+label[k]+'（'+entries.length+' 条语境，不作节点或关系证明）</div>'
+      +entries.map(en=>'<div class="edge"><div class="small">'+esc(en.uid||'')+' · '+esc(en.work_title||'')+'</div><blockquote>'+esc(en.pali||'')+'</blockquote><blockquote>'+esc(en.chinese_simplified||'')+'</blockquote></div>').join('');
+  }).join('');
+}
+
+nodesEl.addEventListener('toggle',async ev=>{
+  const el=ev.target;
+  if(el.tagName!=='DETAILS'||!el.open||el.dataset.loaded)return;
+  const box=el.querySelector('div');
+  try{
+    const n=await nodeDetail(el.dataset.key);
+    box.innerHTML=renderQuote(n.evidence)+renderLayers(n.layer_evidence);
+    el.dataset.loaded='1';
+  }catch(err){box.innerHTML='<span class="small">引文暂不可用：'+esc(err.message)+'</span>'}
+},true);
+
+function syncRelationToggle(){
+  const total=index?index.edge_count:0;
+  edgesEl.hidden=!show.checked;
+  edgesEl.setAttribute('aria-expanded',String(show.checked));
+  show.setAttribute('aria-expanded',String(show.checked));
+  relationToggleLabel.textContent=(show.checked?'已显示关系（':'显示关系（')+total+' 条）';
+}
+async function drawEdges(scrollIntoView){
+  syncRelationToggle();
+  if(!show.checked){edgesEl.innerHTML='';return}
+  if(!edges){
+    edgesEl.innerHTML='<p class="small">正在读取关系证据…</p>';
+    try{edges=await getJSON('edges.json')}catch(err){edgesEl.innerHTML='<p class="small">关系证据暂不可用：'+esc(err.message)+'</p>';return}
+  }
+  const titles=new Map(index.nodes.map(n=>[n.id,n.title]));
+  edgesEl.innerHTML='<div class="relations-head"><h2>关系证据</h2><span class="relations-count">'+edges.edges.length+' 条关系</span></div>'
+    +edges.edges.map(e=>'<div class="edge"><b>'+esc(titles.get(e.from)||e.from)+' → '+esc(titles.get(e.to)||e.to)+'</b>　<span class="tag">'+esc(e.type)+'</span><div class="small">'+esc(e.claim)+' · '+esc(e.ev.uid)+':'+esc(e.ev.row_id)+'</div><a href="'+esc(e.ev.reader_url)+'" target="_blank" rel="noopener">核对关系引文 ↗</a></div>').join('');
+  if(scrollIntoView)requestAnimationFrame(()=>edgesEl.scrollIntoView({block:'nearest',behavior:'smooth'}));
+}
+
+deep.addEventListener('change',async()=>{
+  if(!deep.checked){deepMap=null;draw();return}
+  deep.disabled=true;
+  try{deepMap=await getJSON('search-deep.json')}catch(err){deep.checked=false;fail('深度搜索索引',err)}
+  deep.disabled=false;draw();
+});
+
+let timer;
+q.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(draw,120)});
+[layer,kind].forEach(el=>el.addEventListener('change',draw));
+const onShow=()=>{if(show.checked===lastShowState)return;lastShowState=show.checked;drawEdges(true)};
+show.addEventListener('change',onShow);
+show.addEventListener('input',onShow);
+
+(async()=>{
+  try{index=await getJSON('index.json');draw();drawEdges(false)}
+  catch(err){fail('节点索引',err)}
+})();
+`;
+
+const graphHtml = `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V4 禅修节点网 · 可审计数据视图</title><style>${graphCss}</style><main><h1>V4 禅修节点网</h1><p class="meta">${graph.nodes.length} 个节点 · ${graph.edges.length} 条关系 · 根本经主证据；义注、复注、藏外为独立术语上下文。旧流程图未改写。<br><span class="small">首屏只载入节点索引；三语原文与关系证据按需读取，可在 <a href="data/meta.json">data/meta.json</a> 核对数据来源哈希。</span></p><div class="controls"><input id="q" placeholder="搜索节点、巴利或中文"><select id="layer"><option value="">全部语料上下文</option><option value="root_sutta">根本经主证据</option><option value="commentary">义注上下文</option><option value="subcommentary">复注上下文</option><option value="other">藏外上下文</option></select><select id="kind"><option value="">全部节点类型</option><option value="legacy_spine">旧图主干</option><option value="atomic_member">原子成员</option></select><label><input id="showEdges" type="checkbox" aria-controls="edges" aria-expanded="false"><span id="relationToggleLabel">显示关系（${graph.edges.length} 条）</span></label><label><input id="deepSearch" type="checkbox"> 深度搜索（含义注／复注全文）</label></div><div id="status" class="status">正在读取节点索引…</div><section id="edges" class="relations-panel" hidden aria-live="polite" aria-expanded="false"></section><section id="nodes" class="grid"></section></main><script>${graphScript}</script></html>`;
 await writeFile(resolve(deckDir, 'graph.html'), graphHtml);
-console.log(JSON.stringify({ main_slides: mainFiles.length, appendix_slides: appendixFiles.length, base_node_slides: mainBasePages.length, continuation_slides: continuationPages.length, node_count: graph.nodes.length, edge_count: graph.edges.length }, null, 2));
+/* ── 讲座落地页 ──
+   /research/pali-meditation-lecture/ 此前没有 index.html（GitHub Pages 直接 404），
+   入口只散落在 docs/index.html 的若干外链里。这里生成一个纯静态、无数据的目录页，
+   配色沿用 docs/index.html 里 injectMeditationLectureCss() 的那套 token。 */
+const kb = bytes => `${Math.round(bytes / 1024)} KB`;
+const entry = ({ href, title, desc, cost }) => `<a class="entry" href="${href}"><h2>${esc(title)}</h2><p>${esc(desc)}</p><div class="cost">${esc(cost)}</div></a>`;
+const landing = `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V4 全层禅修经证 · 讲座交付</title><style>
+:root{--med-ink:#2f4036;--med-muted:#6f7d73;--med-gold:#b88948;--med-paper:#f7f5ef}
+*{box-sizing:border-box}body{margin:0;background:#efeade;color:var(--med-ink);font-family:Georgia,"Songti SC","STSong",serif}
+main{max-width:1080px;margin:0 auto;padding:0 22px 90px}
+header{padding:72px 0 46px;border-bottom:1px solid #ddd9cd;margin-bottom:40px}
+.eyebrow{font:700 13px/1.3 "Helvetica Neue",sans-serif;letter-spacing:.18em;color:var(--med-gold);text-transform:uppercase}
+h1{margin:16px 0 14px;font:600 clamp(32px,5vw,52px)/1.15 "Songti SC","STSong",serif}
+header p{max-width:760px;margin:0;color:var(--med-muted);font-size:17px;line-height:1.85}
+.stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:30px}.stats div{font:14px/1.5 "Helvetica Neue",sans-serif;color:var(--med-muted)}.stats b{display:block;font:600 30px/1 Georgia,serif;color:var(--med-ink)}
+.kicker{font:700 13px/1.3 "Helvetica Neue",sans-serif;letter-spacing:.18em;color:var(--med-gold);text-transform:uppercase;margin:44px 0 18px}
+.entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.entry{display:block;padding:26px 28px;background:var(--med-paper);border:1px solid #ddd9cd;border-radius:18px;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s}
+.entry:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(50,45,30,.12)}
+.entry h2{margin:0 0 10px;font-size:22px}.entry p{margin:0;color:var(--med-muted);font-size:15px;line-height:1.75}
+.cost{margin-top:14px;font:12px/1.4 "Helvetica Neue",sans-serif;letter-spacing:.06em;color:var(--med-gold)}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid #ddd9cd;color:var(--med-muted);font:14px/1.8 "Helvetica Neue",sans-serif}
+footer a{color:var(--med-gold)}
+</style><main>
+<header>
+<div class="eyebrow">V4 全层禅修经证 · LECTURE</div>
+<h1>从戒到慧：禅修经证的层级阅读</h1>
+<p>以根本三藏、义注、复注与藏外典籍的逐句三语原文，重新审视旧流程图中的“路径”、证据边界与实际修习语境。下列各项互为补充：讲座用于讲述，节点网用于查证，附录用于逐条核对原文。</p>
+<div class="stats"><div><b>${graph.nodes.length}</b>节点</div><div><b>${graph.edges.length}</b>可回读关系</div><div><b>4</b>证据层级</div><div><b>${appendixFiles.length}</b>条附录引文</div></div>
+</header>
+<div class="kicker">01 · 讲述</div>
+<div class="entries">
+${entry({ href: 'network-deck/', title: '节点网讲座', desc: `${mainFiles.length} 页幻灯片：总览一页，其余每页一个节点，含根本经三语主证据与关系边界。概览墙按需渲染，翻页用 ← → 或点击左右热区。`, cost: `${mainFiles.length} 页 · 概览同时最多渲染 12 页` })}
+${entry({ href: 'deck/', title: '原主题讲座', desc: '按主题组织的早期版本，保留作对照。', cost: '20 页' })}
+${entry({ href: 'directions/classic/', title: '方向 A · 经卷式学术编年', desc: '同一份研究的另一种叙述编排。', cost: '轻量页面' })}
+</div>
+<div class="kicker">02 · 查证</div>
+<div class="entries">
+${entry({ href: 'network-deck/graph.html', title: '可搜索节点网', desc: '按名称、巴利词、中文与根本引文全文检索；可按语料层级与节点类型过滤，展开任一节点查看三语原文与义注／复注／藏外语境。', cost: `首屏 ${kb(Buffer.byteLength(JSON.stringify(indexPayload)))} 索引 · 原文按需读取` })}
+${entry({ href: 'network-deck/appendix/', title: '逐条引文附录', desc: '把每条节点证据与关系证据的完整三语原文切成整屏幻灯片，便于逐句核对与投屏引用。', cost: `${appendixFiles.length} 页 · 概览同时最多渲染 12 页` })}
+${entry({ href: '../pali-meditation-evidence/evidence-index.html', title: '全量三语证据索引', desc: '词条召回的完整候选集，分片存放，作为节点网之外的上游检索入口。', cost: '分片按需加载' })}
+</div>
+<div class="kicker">03 · 可审计</div>
+<div class="entries">
+${entry({ href: 'network-deck/data/meta.json', title: '数据来源与哈希', desc: '节点网分片数据的生成时间、上游文件与 sha256，用于核对页面所示内容未被改写。', cost: '< 1 KB' })}
+${entry({ href: 'network-deck/manifest.json', title: '幻灯片清单', desc: '主讲与附录每一页的文件名与标题，便于外部引用与重建。', cost: `${kb(62418)}` })}
+</div>
+<footer>节点与关系仅以 V4 逐句对齐原文为界：义注、复注、藏外典籍作为独立语境呈现，不替代根本引文，也不据以扩展节点网。箭头不代表所有人的唯一修行次第。<br><a href="../../">← 回到 Sutta Study Guide</a></footer>
+</main></html>`;
+await writeFile(resolve(root, 'docs/research/pali-meditation-lecture/index.html'), landing);
+
+console.log(JSON.stringify({ main_slides: mainFiles.length, appendix_slides: appendixFiles.length, node_count: graph.nodes.length, edge_count: graph.edges.length, graph_html_bytes: Buffer.byteLength(graphHtml), index_json_bytes: Buffer.byteLength(JSON.stringify(indexPayload)) }, null, 2));

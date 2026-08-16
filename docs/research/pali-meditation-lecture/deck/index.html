@@ -162,6 +162,12 @@
   .card .thumb { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; transform-origin: top left; pointer-events: none; }
   .card .thumb iframe { width: 1920px; height: 1080px; border: 0; display: block; background: #fff; pointer-events: none; }
   .card .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  /* iframe 未挂载时的占位：页码 + 标题，纸色底，和幻灯片同一套配色 */
+  .card .poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 8% 10%; text-align: center; pointer-events: none;
+    background: linear-gradient(160deg, #f7f5ef, #efeade); color: #2f4036; font-family: "Songti SC", "STSong", Georgia, serif; }
+  .card .poster b { font: 700 clamp(13px, 2.2vw, 26px)/1 Georgia, serif; color: #b88948; letter-spacing: .04em; }
+  .card .poster span { font-size: clamp(9px, 1.1vw, 15px); line-height: 1.35; color: #6f7d73; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .card.is-mounted .poster { opacity: 0; transition: opacity .2s; }
   .card .num { position: absolute; bottom: 6px; left: 7px; background: rgba(16,12,7,0.76); color: #fff; font-size: 11px; line-height: 1; padding: 4px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; letter-spacing: 0.03em; z-index: 3; pointer-events: none; max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #ov-gallery .card .num { opacity: 0; transition: opacity .25s; }
   #ov-gallery .card:hover .num { opacity: 1; }
@@ -252,28 +258,89 @@
 
   function setMode(mode) {
     document.body.setAttribute('data-mode', mode);
-    if (mode === 'present') { fit(); show(current); }
+    if (mode === 'present') { resetCards(); fit(); show(current); }  // 进入演示先卸掉概览的 iframe，只留舞台一个
     else { requestAnimationFrame(buildOverview); }
   }
 
-  /* ─ 媒体（缩略图优先，否则 iframe） ─ */
+  /* ─ 媒体（缩略图优先，否则按需挂载 iframe） ─
+     每个 iframe 都是一个独立 document；概览一次性建几百个会吃掉数百 MB 到 GB 级内存。
+     这里卡片先只画 poster（页码＋标题），iframe 按下面 reconcile() 的规则挂载与卸载：
+       · 可见卡片数 ≤ MAX_MOUNTED 时（竖向滚动的墙）→ 挂载可见的那几张
+       · 可见卡片数超过上限时（整墙缩放到一屏、或无限画廊平铺）→ 全部保持 poster，
+         此时每张只有百来像素宽，渲染 1920×1080 真页面既看不清也不值得
+       · 无论哪种情况，鼠标悬停/键盘聚焦的那一张总是挂载真页面 */
+  const MAX_MOUNTED = 36;  // 竖向滚动的墙一屏(含 300px 余量)约 30 张；再高就说明整墙被缩到一屏，那时卡片太小、渲染真页面无意义
+  const visible = new Set();
+  const mounted = new Set();
+  let hovered = null, reconcileQueued = false, cardObserver = null;
+
+  function mountCard(card) {
+    if (mounted.has(card)) return;
+    const thumb = card.querySelector('.thumb');
+    if (!thumb || thumb.querySelector('iframe')) return;
+    const ifr = document.createElement('iframe');
+    ifr.src = deck[card.dataset.idx].file;
+    ifr.setAttribute('scrolling', 'no');
+    // 页面画好之前继续显示 poster，避免挂载瞬间露出一张白卡
+    ifr.addEventListener('load', () => card.classList.add('is-mounted'), { once: true });
+    thumb.appendChild(ifr);
+    mounted.add(card);
+  }
+  function unmountCard(card) {
+    const ifr = card.querySelector('.thumb iframe');
+    if (ifr) { ifr.src = 'about:blank'; ifr.remove(); }
+    card.classList.remove('is-mounted');
+    mounted.delete(card);
+  }
+  function reconcile() {
+    reconcileQueued = false;
+    const keep = new Set(visible.size && visible.size <= MAX_MOUNTED ? visible : []);
+    if (hovered) keep.add(hovered);
+    for (const card of [...mounted]) if (!keep.has(card)) unmountCard(card);
+    for (const card of keep) mountCard(card);
+  }
+  function queueReconcile() {
+    if (reconcileQueued) return;
+    reconcileQueued = true;
+    requestAnimationFrame(reconcile);
+  }
+  function observerFor() {
+    if (!cardObserver) {
+      cardObserver = new IntersectionObserver(entries => {
+        for (const entry of entries) entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target);
+        queueReconcile();
+      }, { rootMargin: '300px' });
+    }
+    return cardObserver;
+  }
+  function resetCards() {
+    if (cardObserver) cardObserver.disconnect();
+    for (const card of [...mounted]) unmountCard(card);
+    visible.clear(); hovered = null;
+  }
+
   function makeCard(idx, useScale, useImg) {
     const card = document.createElement('div');
     card.className = 'card'; card.dataset.idx = idx;
     const item = deck[idx];
     if (useImg && item.thumb) {
-      // 仅画廊用：预渲染缩略图，扛无限平铺的性能
+      // 有预渲染缩略图时直接用图片，最省
       const im = document.createElement('img');
-      im.className = 'thumb-img'; im.src = item.thumb; im.decoding = 'async';
+      im.className = 'thumb-img'; im.src = item.thumb; im.decoding = 'async'; im.loading = 'lazy';
       card.appendChild(im);
     } else {
-      // 网格默认用：真实 HTML 子页面（清晰、所见即所得）
+      const poster = document.createElement('div');
+      poster.className = 'poster';
+      poster.innerHTML = '<b>' + (idx + 1) + '</b><span></span>';
+      poster.querySelector('span').textContent = item.label || '';
+      card.appendChild(poster);
       const thumb = document.createElement('div');
       thumb.className = 'thumb';
       if (useScale != null) thumb.style.transform = 'scale(' + useScale + ')';
-      const ifr = document.createElement('iframe');
-      ifr.src = item.file; ifr.setAttribute('scrolling', 'no');
-      thumb.appendChild(ifr); card.appendChild(thumb);
+      card.appendChild(thumb);
+      observerFor().observe(card);
+      card.addEventListener('pointerenter', () => { hovered = card; queueReconcile(); });
+      card.addEventListener('pointerleave', () => { if (hovered === card) hovered = null; queueReconcile(); });
     }
     const num = document.createElement('div');
     num.className = 'num';
@@ -291,8 +358,9 @@
   /* ════════ 网格墙（自适应） ════════ */
   function buildGrid() {
     const n = deck.length; if (!n) return;
+    resetCards();
     wall.innerHTML = '';
-    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // 网格 = iframe 真页面
+    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // 网格 = iframe 真页面（按需挂载）
     layoutWall();
   }
   const GRID_PAD = 74;  // #ov-grid scroll 顶部 padding，算动态 transform-origin 用
@@ -363,6 +431,7 @@
     gallery.style.gridTemplateColumns = 'repeat(' + cols + ', ' + cardW + 'px)';
     gallery.style.gridAutoRows = cardH + 'px';
     gallery.style.gap = gap + 'px';
+    resetCards();
     gallery.innerHTML = '';
     const scale = cardW / W;
     for (let r = 0; r < rows; r++) {
