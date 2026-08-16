@@ -181,7 +181,9 @@ const template = await readFile(resolve(root, 'docs/research/pali-meditation-lec
 const withManifest = (value, manifest) => value.replace(/window\.DECK_MANIFEST = \[[\s\S]*?\];/, `window.DECK_MANIFEST = ${JSON.stringify(manifest, null, 2)};`).replace('window.DECK_WIDTH = 1920;', "window.DECK_OVERVIEW = 'grid';\n  window.DECK_WIDTH = 1920;");
 await writeFile(resolve(deckDir, 'index.html'), withManifest(template, mainFiles));
 await writeFile(resolve(deckDir, 'appendix/index.html'), withManifest(template, appendixFiles));
-await writeFile(resolve(deckDir, 'manifest.json'), JSON.stringify({ format: 'v4-meditation-node-deck/v3', generated_at: new Date().toISOString(), node_network: '../../pali-meditation-node-network/meditation-knowledge-graph-v2.json', main_slide_count: mainFiles.length, appendix_slide_count: appendixFiles.length, base_node_slide_count: mainBasePages.length, continuation_slide_count: continuationPages.length, node_count: graph.nodes.length, edge_count: graph.edges.length, main: mainFiles, appendix: appendixFiles }, null, 2));
+// generated_at mirrors the source graph, not the clock: rebuilding unchanged
+// input must produce byte-identical output so reruns don't show up as a diff.
+await writeFile(resolve(deckDir, 'manifest.json'), JSON.stringify({ format: 'v4-meditation-node-deck/v3', generated_at: graph.generated_at, node_network: '../../pali-meditation-node-network/meditation-knowledge-graph-v2.json', main_slide_count: mainFiles.length, appendix_slide_count: appendixFiles.length, base_node_slide_count: mainBasePages.length, continuation_slide_count: continuationPages.length, node_count: graph.nodes.length, edge_count: graph.edges.length, main: mainFiles, appendix: appendixFiles }, null, 2));
 
 /* ── 可审计数据视图：分片 + 按需加载 ──
    旧版把整份 graph（3.8M 字符）内联进 graph.html，浏览器一次性解析成深层对象图，
@@ -245,7 +247,7 @@ await writeFile(resolve(dataDir, 'search-deep.json'), JSON.stringify(deepPayload
 for (const node of graph.nodes) await writeFile(resolve(dataDir, 'nodes', `${shardKey(node)}.json`), JSON.stringify(node));
 await writeFile(resolve(dataDir, 'meta.json'), JSON.stringify({
   format: 'v4-meditation-node-network-data/v1',
-  generated_at: new Date().toISOString(),
+  generated_at: graph.generated_at,
   source: '../../../pali-meditation-node-network/meditation-knowledge-graph-v2.json',
   source_sha256: createHash('sha256').update(JSON.stringify(graph)).digest('hex'),
   node_count: graph.nodes.length,

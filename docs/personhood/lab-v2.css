@@ -17,11 +17,46 @@
 .personhood-v2 .v2-facts { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:10px 0; }
 .personhood-v2 .v2-fact { background:#fffdf9; border:1px solid var(--v2-line); border-radius:9px; padding:9px; font-size:12px; }
 .personhood-v2 .v2-fact strong { display:block; color:#735713; margin-bottom:4px; }
-.personhood-v2 .v2-process { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
-.personhood-v2 .v2-stage { border-left:4px solid #a99a87; background:#fbfaf7; padding:10px 12px; border-radius:0 9px 9px 0; }
-.personhood-v2 .v2-stage.later { border-left-color:#6e55a0; background:#f6f2fb; }
-.personhood-v2 .v2-stage .v2-label { font-weight:700; }
-.personhood-v2 .v2-stage .v2-layer { float:right; font-size:11px; color:var(--v2-muted); }
+/* ── 流程图 ──
+   列数由该层实际节点数决定（--cols），所以并列几个就几列，前后相继的节点各占一行。
+   右侧留出 34px 给戏论回环的绕行线。 */
+.personhood-v2 .v2-flow { position:relative; padding:4px 38px 4px 0; margin:14px 0 18px; }
+.personhood-v2 .v2-wires { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; overflow:visible; }
+.personhood-v2 .v2-wires path { fill:none; stroke:#c3b7a4; stroke-width:1.5; }
+.personhood-v2 .v2-wires path.loop { stroke:#a3762f; stroke-dasharray:5 4; }
+.personhood-v2 .v2-wires .loop-label { fill:#a3762f; font:10px system-ui,sans-serif; }
+.personhood-v2 .v2-layer { display:grid; grid-template-columns:repeat(var(--cols,1),minmax(0,1fr)); gap:12px; margin:0 0 30px;
+  opacity:0; transform:translateY(6px); transition:opacity .32s ease, transform .32s ease; }
+.personhood-v2 .v2-layer.shown { opacity:1; transform:none; }
+.personhood-v2 .v2-layer:last-child { margin-bottom:0; }
+.personhood-v2 .v2-node { border:1px solid var(--v2-line); border-left:4px solid #a99a87; background:#fbfaf7; padding:10px 12px; border-radius:0 9px 9px 0; }
+.personhood-v2 .v2-node header { display:flex; align-items:baseline; gap:8px; margin-bottom:6px; }
+.personhood-v2 .v2-node-label { font-weight:700; }
+.personhood-v2 .v2-node-pali { font-size:11px; color:var(--v2-muted); font-style:italic; }
+.personhood-v2 .v2-node p { margin:0; line-height:1.65; }
+.personhood-v2 .v2-node.branching { border-left-color:#a3762f; background:#fffaf0; }
+.personhood-v2 .v2-node[data-node="citta-vithi"] { border-left-color:#6e55a0; background:#f6f2fb; }
+.personhood-v2 .v2-slots { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:7px; }
+.personhood-v2 .v2-slot { background:#f0e7d5; border-radius:6px; padding:2px 8px; font-size:12px; }
+.personhood-v2 .v2-slot b { color:#735713; margin-right:5px; font-weight:600; }
+.personhood-v2 .v2-node-cites { margin-top:7px; font-size:11px; color:var(--v2-muted); }
+/* 分支选择 */
+.personhood-v2 .v2-choice { opacity:0; transition:opacity .3s ease; }
+.personhood-v2 .v2-choice.shown { opacity:1; }
+.personhood-v2 .v2-choice fieldset { border:1px solid var(--v2-line); border-radius:10px; padding:10px 12px; margin:0 0 10px; }
+.personhood-v2 .v2-choice legend { font-weight:700; font-size:13px; padding:0 6px; }
+.personhood-v2 .v2-option { display:flex; align-items:flex-start; gap:8px; padding:5px 0; line-height:1.55; cursor:pointer; }
+/* The site stylesheet stretches inputs to 100%; radios must stay radio-sized. */
+.personhood-v2 .v2-option input[type=radio] { width:15px; min-width:15px; flex:0 0 15px; margin:4px 0 0; padding:0; }
+.personhood-v2 .v2-option span { flex:1 1 auto; }
+.personhood-v2 .v2-rewrite { display:block; font-size:13px; color:var(--v2-muted); margin:0 0 12px; }
+.personhood-v2 .v2-rewrite input { display:block; width:100%; margin-top:6px; padding:9px 11px; border:1px solid #d9d0c4; border-radius:9px; font:inherit; box-sizing:border-box; }
+.personhood-v2 .v2-chosen { border-left:4px solid #7d9a72; }
+.personhood-v2 .v2-input-card { border:1px solid #cbbc98; background:#fffdf6; }
+.personhood-v2 .v2-vithi { margin-top:10px; }
+.personhood-v2 .v2-mind-flow.active { border-color:#6e55a0; box-shadow:0 0 0 2px #e6dcf7; }
+.personhood-v2 .v2-mind-flow.dimmed { opacity:.5; }
+.personhood-v2 .v2-mind-flow ol li em { display:block; font-style:normal; font-size:12px; color:#5c5140; }
 .personhood-v2 .v2-mind-flow { clear:both; margin-top:12px; padding:10px; border:1px solid #d9ceed; border-radius:8px; background:#fff; }
 .personhood-v2 .v2-mind-flow > div { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }
 .personhood-v2 .v2-mind-flow span { color:var(--v2-muted); font-size:12px; }
@@ -41,4 +76,14 @@
 .personhood-v2 .v2-alert strong { white-space:nowrap; }
 .personhood-v2 .v2-alert span { flex:1 1 260px; color:#806b4b; }
 .personhood-v2 .v2-alert button { padding:5px 9px; font-size:12px; }
-@media(max-width:760px) { .personhood-v2 .v2-facts,.personhood-v2 .v2-process,.personhood-v2 .v2-branches { grid-template-columns:1fr; } .personhood-v2 .v2-user { margin-left:0; } .personhood-v2 .v2-hero { padding:20px; } }
+/* 判定为本轮心路的那一套逐刹那展开成竖列，另一套仍是紧凑的横排 */
+.personhood-v2 .v2-mind-flow.active ol { display:block; padding-left:20px; }
+.personhood-v2 .v2-mind-flow.active li { margin-bottom:6px; }
+@media(max-width:760px) {
+  .personhood-v2 .v2-facts,.personhood-v2 .v2-branches { grid-template-columns:1fr; }
+  /* 窄屏每层退化为单列；连线在 render 后按实际盒位重画，不会错位 */
+  .personhood-v2 .v2-layer { grid-template-columns:1fr; gap:10px; margin-bottom:26px; }
+  .personhood-v2 .v2-flow { padding-right:26px; }
+  .personhood-v2 .v2-user { margin-left:0; }
+  .personhood-v2 .v2-hero { padding:20px; }
+}
