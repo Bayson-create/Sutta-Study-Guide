@@ -31,6 +31,51 @@ PAGE_LABELS = {"页数", "頁數"}
 BLOCK_TAGS = {"p", "div", "li", "pre"}
 VOID_TAGS = {"br", "hr", "img", "meta", "link", "input", "source", "wbr"}
 
+# The first nineteen source tables are the compact chapter outline and carry
+# their own "第 X 说" headings.  Tables 21 onward are the detailed source
+# tables; they deliberately do not repeat a chapter heading.  Carrying the
+# last heading across that boundary used to assign nearly every detailed
+# table to chapter 23.  Keep this map explicit and auditable rather than
+# inferring a chapter from arbitrary text inside a detailed table.
+DETAIL_TABLE_CHAPTER_RANGES = (
+    (21, 21, None),
+    (22, 30, 1),
+    (31, 37, 2),
+    (38, 45, 3),
+    (46, 51, 4),
+    (52, 53, 5),
+    (54, 55, 6),
+    (56, 60, 7),
+    (61, 67, 8),
+    (68, 71, 9),
+    (72, 72, 10),
+    (73, 76, 11),
+    (77, 80, 12),
+    (81, 82, 13),
+    (83, 93, 14),
+    (94, 95, 15),
+    (96, 99, 16),
+    (100, 110, 17),
+    (111, 112, 18),
+    (113, 114, 19),
+    (115, 118, 20),
+    (119, 120, 21),
+    (121, 123, 22),
+    (124, 125, 23),
+)
+
+# Nested source tables are not currently anchor items because their content
+# sits in the first visible column, but retaining their chapter context keeps
+# the source tree self-describing and prevents future imports from inheriting
+# the wrong chapter.
+NESTED_TABLE_CHAPTERS = {
+    5: 14, 6: 15, 7: 15, 8: 16, 9: 16,
+    11: 17,
+    13: 18, 14: 19, 15: 20,
+    17: 20, 18: 21,
+    20: 22,
+}
+
 
 class Node:
     def __init__(self, tag: str = "root", attrs: dict[str, str] | None = None) -> None:
@@ -389,16 +434,50 @@ def chapter_from_text(value: str) -> int | None:
     return number if number and 1 <= number <= 23 else None
 
 
+def source_table_number(table_id: str) -> int:
+    match = re.fullmatch(r"lecture-table-(\d{3})", table_id)
+    if not match:
+        raise ValueError(f"invalid source table ID: {table_id}")
+    return int(match.group(1))
+
+
+def fixed_detail_table_chapter(table_number: int) -> int | None | object:
+    """Return the audited chapter for a detailed table.
+
+    ``_UNSET`` means this is one of the compact outline tables and its row
+    heading should still be used.  ``None`` is intentional: table 21 is a
+    book-level introduction and must not offer a misleading chapter search.
+    """
+    for start, end, chapter in DETAIL_TABLE_CHAPTER_RANGES:
+        if start <= table_number <= end:
+            return chapter
+    if table_number in NESTED_TABLE_CHAPTERS:
+        return NESTED_TABLE_CHAPTERS[table_number]
+    return _UNSET
+
+
+_UNSET = object()
+
+
 def build_items(tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     current_chapter: int | None = None
     for table in tables:
+        table_number = source_table_number(table["table_id"])
+        table_chapter = fixed_detail_table_chapter(table_number)
         row_indices = table.get("row_indices") or list(range(table["rows"]))
         for row in row_indices:
             row_cells = [cell for cell in table["cells"] if cell["row"] == row]
             row_chapter = next((chapter_from_text("".join(block["text"] for block in cell["blocks"])) for cell in row_cells if chapter_from_text("".join(block["text"] for block in cell["blocks"]))), None)
-            if row_chapter:
-                current_chapter = row_chapter
+            if table_chapter is _UNSET:
+                if row_chapter:
+                    current_chapter = row_chapter
+                item_chapter = row_chapter or current_chapter
+            else:
+                # Detailed tables use the audited table-level chapter.  Do
+                # not let incidental references such as "第..." inside a
+                # quotation change the chapter of the table.
+                item_chapter = table_chapter
             for cell in row_cells:
                 if cell["col"] not in {2, 3, 4}:
                     continue
@@ -413,7 +492,7 @@ def build_items(tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
                         "col": cell["col"],
                         "block": block["index"],
                         "text": block["text"],
-                        "chapter": row_chapter or current_chapter,
+                        "chapter": item_chapter,
                         "parent_item_ids": [],
                     })
     # Preserve the geometrically encoded outline hierarchy.  A later column
@@ -433,6 +512,28 @@ def build_items(tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 nearest = max(candidate["block"] for candidate in previous)
                 item["parent_item_ids"] = [candidate["item_id"] for candidate in previous if candidate["block"] == nearest]
     return items
+
+
+def validate_chapter_assignments(items: list[dict[str, Any]]) -> dict[str, int]:
+    """Verify the fixed detailed-table mapping without changing source data."""
+    if len(items) != 6050:
+        raise ValueError(f"expected 6050 anchor items, got {len(items)}")
+    counts: dict[str, int] = {}
+    for item in items:
+        chapter = item.get("chapter")
+        key = "unassigned" if chapter is None else str(chapter)
+        counts[key] = counts.get(key, 0) + 1
+        table_number = source_table_number(item["table_id"])
+        expected = fixed_detail_table_chapter(table_number)
+        if expected is not _UNSET and chapter != expected:
+            raise ValueError(f"{item['item_id']} has chapter {chapter}, expected {expected}")
+    if not any(item["table_id"] == "lecture-table-021" and item["chapter"] is None for item in items):
+        raise ValueError("table 21 must remain an unassigned book-level introduction")
+    for table_number in (22, 54, 72, 83, 111, 124, 125):
+        expected = fixed_detail_table_chapter(table_number)
+        if not any(source_table_number(item["table_id"]) == table_number and item["chapter"] == expected for item in items):
+            raise ValueError(f"table {table_number} has no item with expected chapter {expected}")
+    return counts
 
 
 def normalize_anchor(value: str) -> str:
@@ -581,6 +682,7 @@ def main() -> int:
     tables = parse_tables(parser_impl.root, converter)
     validation = validate_tables(tables) if args.validate else None
     items = build_items(tables)
+    chapter_counts = validate_chapter_assignments(items)
     reader_rows = read_reader_rows(out_dir)
     simplified_text = "\n".join(block["text"] for table in tables for cell in table["cells"] for block in cell["blocks"] if block["text"])
     simplified_sha = hashlib.sha256(simplified_text.encode("utf-8")).hexdigest()
@@ -593,12 +695,22 @@ def main() -> int:
         "conversion": {"tool": "OpenCC", "config": "t2s", "display_language": "zh-Hans"},
         "counts": {"tables": len(tables), "top_level_tables": sum(table["parent_table_id"] is None for table in tables), "nested_tables": sum(table["parent_table_id"] is not None for table in tables), "source_rows": sum(t["source_rows"] for t in tables), "rendered_rows": sum(t["rows"] for t in tables), "calibration_rows": sum(len(t["calibration_rows"]) for t in tables), "visible_cells": sum(len(t["cells"]) for t in tables), "anchor_items": len(items), "removed_page_tables": page_table_count, "removed_page_ranges": page_cell_count},
         "content_sha256": simplified_sha,
+        "chapter_mapping": {
+            "policy": "audited_source_table_ranges_v1",
+            "detail_table_ranges": [
+                {"start": start, "end": end, "chapter": chapter}
+                for start, end, chapter in DETAIL_TABLE_CHAPTER_RANGES
+            ],
+            "nested_table_chapters": NESTED_TABLE_CHAPTERS,
+            "item_counts_by_chapter": chapter_counts,
+        },
         "tables": tables,
     }
     anchor_map = {
         "format": "vism-lecture-anchors/v1",
         "source_sha256": source_sha,
         "reader_anchor_policy": "pali_or_english_hash_only",
+        "chapter_mapping": lecture["chapter_mapping"],
         "counts": {"items": len(items), "verified": 0, "unmapped": len(items)},
         "items": [{**item, "status": "unmapped", "reason": "requires_curated_unique_pali_or_english_anchor", "target": None} for item in items],
     }
