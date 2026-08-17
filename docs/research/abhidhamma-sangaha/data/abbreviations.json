@@ -1,0 +1,32 @@
+{
+  "format": "abhidhamma-table-guide/v1",
+  "section": {
+    "slug": "abbreviations",
+    "title": "略语表",
+    "source_title": "02-abbreviations",
+    "physical_page_start": 2,
+    "physical_page_end": 3,
+    "file": "data/abbreviations.json",
+    "route": "#/research/abhidhamma-sangaha/read/abbreviations"
+  },
+  "pages": [
+    {
+      "physical_page": 2,
+      "logical_label": "",
+      "title": "摄阿毗达摩义论表解",
+      "text": "摄阿毗达摩义论表解\nAbhidhammatthasaṅgaha-vitthāra\n明法比丘编∕edited by Bhikkhu Metta\n2008 年版.\n罗庆龙修订\n佛历(BE)2565;(2 月,西元  2022CE)\n法雨道场 印行\n【abbreviations 略语表】\nA.      Aṅguttara-Nikāya《增支部》\nAA.(Mp.) Aṅguttara-Nikāya-aṭṭhakathā(Manorathapūraṇī)\n《增支部注释》(满足希求)\nAbs.    Abhidhammatthasaṅgaha﹐《摄阿毗达摩义论》\nAbv.    Abhidhammatthavibhāvinīṭīkā﹐\n《阿毗达摩义广释》\nD.      Dīgha-Nikāya《长部》\nDA.(Sv.) Dīghanikāya-aṭṭhakathā, Sumaṅgalavilāsinī, 《长\n部注》(吉祥悦意)\nDh     Dhammapada《法句》\nDhs    Dhamma-Sangaṇi《法集论》\nDhsA   Dhammasaṅgaṇi-aṭṭhakathā, Atthasālinī,(As)\nNett.    Nettipakaraṇa《导论》\nPaṭis.   Paṭisambhidāmagga《无碍解道》\nS.     Saṁyutta-Nikāya《相应部》\nSA.(Spk) Saṁyutta-Nikāya-aṭṭhakathā,\n【Sāratthappakāsinī】《相应部注》(显扬心义)\nSn.    Sutta-Nipāta《经集》\nSp   Samantapāsādikā《一切欢喜》或《一切善见律》\nUd.    Udāna《自说经》\nVibh., Vbh.  Vibhaṅga《分别论》\nVibhA.  Vibhaṅga-aṭṭhakathā(Sammohavinodanī)\n《分别论注》\nVibhv.  Abhidhammatthavibhāvinīṭīkā\n完整版",
+      "complex_layout": true,
+      "image_count": 2,
+      "source_image": "research/abhidhamma-sangaha/pages/page-0002.png"
+    },
+    {
+      "physical_page": 3,
+      "logical_label": "",
+      "title": "《法集论注释》(殊胜义)",
+      "text": "《法集论注释》(殊胜义)\nKh.    Khuddakapāṭha《小诵》\nKhA.  Khuddakapāṭha-aṭṭhakathā《小诵注》\nM.     Majjhima-Nikāya《中部》\nMA.(Ps.) Majjhimanikāya-aṭṭhakathā【Papañcasūdanī】\n　　　　《中部注释》(破除疑障)\n《阿毗达摩义广释》\nVin.       Vinaya-Piṭaka《律藏》\nVism.      Visuddhimagga《清净道论》\nVism.-mhṭ  Visuddhimagga-mahāṭīkā\n《清净道论大疏钞》\n【封面说明】\n佛陀入灭后150 年左右，阿育王(公元前273～前236 年在位)大统一\n印度，之后，他成为佛教徒，阿育王在印度各地立有单一巨石所雕刻而\n成的石柱(Ashoka Pillar)，刻有昭告天下的文字。在佛陀初转法轮的鹿野\n苑，阿育王石柱顶端，特别雕刻四只背对背的威武精美石狮，石狮下有\n24 辐的法轮──象征24 缘，象征向四面八方传播佛陀的纶音。\n现今印度政府把这四狮形象，作为国徽印记，24 辐的法轮，也作为\n国旗图像的一部分。\n\nIndia national symbol                flag of  India",
+      "complex_layout": true,
+      "image_count": 2,
+      "source_image": "research/abhidhamma-sangaha/pages/page-0003.png"
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "format": "abhidhamma-table-guide-manifest/v1",
+  "title": "《摄阿毗达摩义论表解》",
+  "title_traditional": "《攝阿毘達摩義論表解》",
+  "title_pali": "Abhidhammatthasaṅgaha-vitthāra",
+  "author": "法雨；明法比丘编，罗庆龙修订",
+  "display_language": "zh-Hans",
+  "source_pdf": "source/abhidhammattha-sangaha_Table-full-text.pdf",
+  "source_sha256": "75bb8bfe409fd19331d306883072db239a981529cd2ff5acdb79f78001b1d448",
+  "physical_pages": 489,
+  "top_level_outline_entries": 24,
+  "sections": [
+    {
+      "slug": "cover",
+      "title": "封面",
+      "source_title": "01-cover_Abhidhammattha-sangaha_Table",
+      "physical_page_start": 1,
+      "physical_page_end": 1,
+      "file": "data/cover.json",
+      "route": "#/research/abhidhamma-sangaha/read/cover"
+    },
+    {
+      "slug": "abbreviations",
+      "title": "略语表",
+      "source_title": "02-abbreviations",
+      "physical_page_start": 2,
+      "physical_page_end": 3,
+      "file": "data/abbreviations.json",
+      "route": "#/research/abhidhamma-sangaha/read/abbreviations"
+    },
+    {
+      "slug": "content",
+      "title": "目录",
+      "source_title": "03-content",
+      "physical_page_start": 4,
+      "physical_page_end": 7,
+      "file": "data/content.json",
+      "route": "#/research/abhidhamma-sangaha/read/content"
+    },
+    {
+      "slug": "preface",
+      "title": "序与总导读",
+      "source_title": "04-preface",
+      "physical_page_start": 8,
+      "physical_page_end": 15,
+      "file": "data/preface.json",
+      "route": "#/research/abhidhamma-sangaha/read/preface"
+    },
+    {
+      "slug": "chapter-01",
+      "title": "第一 摄心分别品",
+      "source_title": "05-Chap01_ADS_T",
+      "physical_page_start": 16,
+      "physical_page_end": 33,
+      "file": "data/chapter-01.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-01"
+    },
+    {
+      "slug": "chapter-02",
+      "title": "第二 摄心所分别品",
+      "source_title": "06-Chap02_ADS_T",
+      "physical_page_start": 34,
+      "physical_page_end": 49,
+      "file": "data/chapter-02.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-02"
+    },
+    {
+      "slug": "chapter-03",
+      "title": "第三 摄杂分别品",
+      "source_title": "07-Chap03_ADS_T",
+      "physical_page_start": 50,
+      "physical_page_end": 69,
+      "file": "data/chapter-03.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-03"
+    },
+    {
+      "slug": "chapter-04",
+      "title": "第四 摄路分别品",
+      "source_title": "08-Chap04_ADS_T",
+      "physical_page_start": 70,
+      "physical_page_end": 87,
+      "file": "data/chapter-04.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-04"
+    },
+    {
+      "slug": "chapter-05",
+      "title": "第五 摄离路分别品",
+      "source_title": "09-Chap05_ADS_T",
+      "physical_page_start": 88,
+      "physical_page_end": 101,
+      "file": "data/chapter-05.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-05"
+    },
+    {
+      "slug": "chapter-06",
+      "title": "第六 摄色分别品",
+      "source_title": "10-Chap06_ADS_T",
+      "physical_page_start": 102,
+      "physical_page_end": 121,
+      "file": "data/chapter-06.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-06"
+    },
+    {
+      "slug": "chapter-07",
+      "title": "第七 摄集分别品",
+      "source_title": "11-Chap07_ADS_T",
+      "physical_page_start": 122,
+      "physical_page_end": 141,
+      "file": "data/chapter-07.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-07"
+    },
+    {
+      "slug": "chapter-08",
+      "title": "第八 摄缘分别品",
+      "source_title": "12-Chap08_ADS_T",
+      "physical_page_start": 142,
+      "physical_page_end": 259,
+      "file": "data/chapter-08.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-08"
+    },
+    {
+      "slug": "chapter-09",
+      "title": "第九 摄业处分别品",
+      "source_title": "13-Chap09_ADS_T",
+      "physical_page_start": 260,
+      "physical_page_end": 291,
+      "file": "data/chapter-09.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-09"
+    },
+    {
+      "slug": "appendix",
+      "title": "附录",
+      "source_title": "14-Appendix",
+      "physical_page_start": 292,
+      "physical_page_end": 419,
+      "file": "data/appendix.json",
+      "route": "#/research/abhidhamma-sangaha/read/appendix"
+    },
+    {
+      "slug": "answers",
+      "title": "问题解答",
+      "source_title": "15-resolve",
+      "physical_page_start": 420,
+      "physical_page_end": 480,
+      "file": "data/answers.json",
+      "route": "#/research/abhidhamma-sangaha/read/answers"
+    },
+    {
+      "slug": "corrections",
+      "title": "2022 年修订更正记录",
+      "source_title": "16-note-revised-2022",
+      "physical_page_start": 481,
+      "physical_page_end": 487,
+      "file": "data/corrections.json",
+      "route": "#/research/abhidhamma-sangaha/read/corrections"
+    },
+    {
+      "slug": "corrections-appendix",
+      "title": "更正记录补页",
+      "source_title": "16-note-revised-2022-04-26",
+      "physical_page_start": 488,
+      "physical_page_end": 488,
+      "file": "data/corrections-appendix.json",
+      "route": "#/research/abhidhamma-sangaha/read/corrections-appendix"
+    },
+    {
+      "slug": "copyright",
+      "title": "版权页",
+      "source_title": "17-copyright",
+      "physical_page_start": 489,
+      "physical_page_end": 489,
+      "file": "data/copyright.json",
+      "route": "#/research/abhidhamma-sangaha/read/copyright"
+    }
+  ],
+  "outline": [
+    {
+      "title": "01-cover_Abhidhammattha-sangaha_Table",
+      "physical_page": 1,
+      "depth": 0
+    },
+    {
+      "title": "攝阿毘達摩義論表解",
+      "physical_page": 1,
+      "depth": 1
+    },
+    {
+      "title": "Abhidhammatthasaṅgaha-vitthāra",
+      "physical_page": 1,
+      "depth": 1
+    },
+    {
+      "title": "完整版",
+      "physical_page": 1,
+      "depth": 1
+    },
+    {
+      "title": "02-abbreviations",
+      "physical_page": 2,
+      "depth": 0
+    },
+    {
+      "title": "攝阿毘達摩義論表解",
+      "physical_page": 2,
+      "depth": 1
+    },
+    {
+      "title": "Abhidhammatthasaṅgaha-vitthāra",
+      "physical_page": 2,
+      "depth": 1
+    },
+    {
+      "title": "03-content",
+      "physical_page": 4,
+      "depth": 0
+    },
+    {
+      "title": "04-preface",
+      "physical_page": 8,
+      "depth": 0
+    },
+    {
+      "title": "序",
+      "physical_page": 8,
+      "depth": 1
+    },
+    {
+      "title": "Preface",
+      "physical_page": 9,
+      "depth": 1
+    },
+    {
+      "title": "05-Chap01_ADS_T",
+      "physical_page": 16,
+      "depth": 0
+    },
+    {
+      "title": "第一 攝心分別品（Cittaparicchedo）",
+      "physical_page": 16,
+      "depth": 1
+    },
+    {
+      "title": "八十九心分類〈總覽表〉",
+      "physical_page": 20,
+      "depth": 1
+    },
+    {
+      "title": "第一  攝心分別品",
+      "physical_page": 22,
+      "depth": 1
+    },
+    {
+      "title": "書序（Ganthārambhakathā）",
+      "physical_page": 22,
+      "depth": 2
+    },
+    {
+      "title": "如是一切，稱為「十二不善心」。",
+      "physical_page": 24,
+      "depth": 1
+    },
+    {
+      "title": "貪根有八種，瞋.癡根各二，如是總稱為：十二不善心。",
+      "physical_page": 24,
+      "depth": 1
+    },
+    {
+      "title": "【十二不善心】",
+      "physical_page": 24,
+      "depth": 2
+    },
+    {
+      "title": "__________________________________",
+      "physical_page": 24,
+      "depth": 1
+    },
+    {
+      "title": "（4）（捨俱）舌識，（5）苦22F 俱.身識，（6）捨俱.領受心23F 及（7）捨俱.推度心24F 。",
+      "physical_page": 25,
+      "depth": 1
+    },
+    {
+      "title": "不善異熟七，善31F 異熟有八，唯作心32F 三種，為「十八無因」。",
+      "physical_page": 26,
+      "depth": 1
+    },
+    {
+      "title": "除惡及無因，尚餘五十九。或說九十一，是名為「淨心」33F 。",
+      "physical_page": 26,
+      "depth": 1
+    },
+    {
+      "title": "這是八種「欲界有因異熟心」。",
+      "physical_page": 27,
+      "depth": 1
+    },
+    {
+      "title": "這是八種「欲界有因唯作心」。",
+      "physical_page": 27,
+      "depth": 1
+    },
+    {
+      "title": "這五種名為「色界善心」。",
+      "physical_page": 28,
+      "depth": 1
+    },
+    {
+      "title": "這五種名為「色界異熟心」。",
+      "physical_page": 28,
+      "depth": 1
+    },
+    {
+      "title": "這五種名為「色界唯作心」。",
+      "physical_page": 28,
+      "depth": 1
+    },
+    {
+      "title": "這四種名為「無色界善心」。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "這四種名為「無色界異熟心」。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "這四種名為「無色界唯作心」。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "這四種名為「出世間善心」。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "這四種名為「出世間異熟心」。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "如是一切八種，名為出世間善、異熟心。",
+      "physical_page": 29,
+      "depth": 1
+    },
+    {
+      "title": "四地眾生生起的心",
+      "physical_page": 30,
+      "depth": 2
+    },
+    {
+      "title": "欲界不善心、善心的生活實例",
+      "physical_page": 32,
+      "depth": 2
+    },
+    {
+      "title": "〈1.攝心分別品〉問題思考",
+      "physical_page": 33,
+      "depth": 1
+    },
+    {
+      "title": "06-Chap02_ADS_T",
+      "physical_page": 34,
+      "depth": 0
+    },
+    {
+      "title": "第二 攝心所分別品（Cetasikaparicchedo）",
+      "physical_page": 34,
+      "depth": 1
+    },
+    {
+      "title": "【五十二心所】(Cetasika)",
+      "physical_page": 36,
+      "depth": 1
+    },
+    {
+      "title": "五十二心所〈釋義〉",
+      "physical_page": 37,
+      "depth": 1
+    },
+    {
+      "title": "心所與心之關係 略表",
+      "physical_page": 40,
+      "depth": 1
+    },
+    {
+      "title": "心所與心之關係〈一覽表2〉色界心﹑無色界心、出世間心",
+      "physical_page": 42,
+      "depth": 1
+    },
+    {
+      "title": "三、心與心所之關係 略表",
+      "physical_page": 44,
+      "depth": 1
+    },
+    {
+      "title": "心與心所之關係〈一覽表1〉欲界心",
+      "physical_page": 45,
+      "depth": 1
+    },
+    {
+      "title": "心與心所之關係〈一覽表2〉色界心、無色界心、出世間心",
+      "physical_page": 46,
+      "depth": 1
+    },
+    {
+      "title": "〈2.攝心所分別品〉問題思考",
+      "physical_page": 48,
+      "depth": 1
+    },
+    {
+      "title": "07-Chap03_ADS_T",
+      "physical_page": 50,
+      "depth": 0
+    },
+    {
+      "title": "08-Chap04_ADS_T",
+      "physical_page": 70,
+      "depth": 0
+    },
+    {
+      "title": "09-Chap05_ADS_T",
+      "physical_page": 88,
+      "depth": 0
+    },
+    {
+      "title": "10-Chap06_ADS_T",
+      "physical_page": 102,
+      "depth": 0
+    },
+    {
+      "title": "11-Chap07_ADS_T",
+      "physical_page": 122,
+      "depth": 0
+    },
+    {
+      "title": "12-Chap08_ADS_T",
+      "physical_page": 142,
+      "depth": 0
+    },
+    {
+      "title": "13-Chap09_ADS_T",
+      "physical_page": 260,
+      "depth": 0
+    },
+    {
+      "title": "第九 攝業處分別品(Kammaṭṭhānaparicchedo)",
+      "physical_page": 260,
+      "depth": 1
+    },
+    {
+      "title": "四十業處〈總覽表〉",
+      "physical_page": 263,
+      "depth": 2
+    },
+    {
+      "title": "四十業處略說",
+      "physical_page": 264,
+      "depth": 2
+    },
+    {
+      "title": "六種性行者的區別(Caritabhedo)",
+      "physical_page": 277,
+      "depth": 1
+    },
+    {
+      "title": "六 種 性 行",
+      "physical_page": 278,
+      "depth": 1
+    },
+    {
+      "title": "二、毘缽舍那(觀)的業處(Vipassanākammaṭṭhānaṁ)",
+      "physical_page": 279,
+      "depth": 1
+    },
+    {
+      "title": "三解脫門（tīṇi vimokkhamukhāni）",
+      "physical_page": 286,
+      "depth": 2
+    },
+    {
+      "title": "出世間四種人的捨斷",
+      "physical_page": 286,
+      "depth": 2
+    },
+    {
+      "title": "捨斷十結",
+      "physical_page": 287,
+      "depth": 2
+    },
+    {
+      "title": "捨斷十六種污染(cittassa upakkilesā)",
+      "physical_page": 287,
+      "depth": 2
+    },
+    {
+      "title": "果　定",
+      "physical_page": 289,
+      "depth": 2
+    },
+    {
+      "title": "滅  盡  定",
+      "physical_page": 289,
+      "depth": 2
+    },
+    {
+      "title": "「止禪」與「觀禪」的差別",
+      "physical_page": 290,
+      "depth": 1
+    },
+    {
+      "title": "〈9.業處分別品〉問題思考",
+      "physical_page": 291,
+      "depth": 1
+    },
+    {
+      "title": "14-Appendix",
+      "physical_page": 292,
+      "depth": 0
+    },
+    {
+      "title": "15-resolve",
+      "physical_page": 420,
+      "depth": 0
+    },
+    {
+      "title": "16-note-revised-2022",
+      "physical_page": 481,
+      "depth": 0
+    },
+    {
+      "title": "16-note-revised-2022-04-26",
+      "physical_page": 488,
+      "depth": 0
+    },
+    {
+      "title": "17-copyright",
+      "physical_page": 489,
+      "depth": 0
+    }
+  ],
+  "complex_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    30,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    57,
+    59,
+    60,
+    61,
+    62,
+    64,
+    65,
+    67,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    96,
+    97,
+    98,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    114,
+    117,
+    122,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    131,
+    132,
+    133,
+    136,
+    139,
+    144,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    162,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    201,
+    202,
+    203,
+    205,
+    206,
+    207,
+    208,
+    209,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    249,
+    254,
+    255,
+    256,
+    257,
+    263,
+    265,
+    270,
+    273,
+    276,
+    277,
+    286,
+    287,
+    289,
+    293,
+    295,
+    298,
+    299,
+    319,
+    321,
+    322,
+    324,
+    328,
+    329,
+    337,
+    340,
+    341,
+    350,
+    351,
+    354,
+    355,
+    359,
+    360,
+    362,
+    363,
+    373,
+    389,
+    396,
+    399,
+    404,
+    408,
+    410,
+    411,
+    413,
+    414,
+    415,
+    416,
+    420,
+    423,
+    425,
+    431,
+    438,
+    439,
+    443,
+    445,
+    446,
+    448,
+    449,
+    450,
+    452,
+    456,
+    461,
+    467,
+    471,
+    473,
+    476,
+    478,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    488
+  ],
+  "conversion_audit": "conversion-audit.json",
+  "license_note": "本页面为经授权的繁体转简体数字版；原作者、编者、版本与来源信息保持可追溯。",
+  "search_documents": [
+    {
+      "file": "research/abhidhamma-sangaha/data/cover.json",
+      "route": "#/research/abhidhamma-sangaha/read/cover",
+      "title": "封面",
+      "section": "cover"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/abbreviations.json",
+      "route": "#/research/abhidhamma-sangaha/read/abbreviations",
+      "title": "略语表",
+      "section": "abbreviations"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/content.json",
+      "route": "#/research/abhidhamma-sangaha/read/content",
+      "title": "目录",
+      "section": "content"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/preface.json",
+      "route": "#/research/abhidhamma-sangaha/read/preface",
+      "title": "序与总导读",
+      "section": "preface"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-01.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-01",
+      "title": "第一 摄心分别品",
+      "section": "chapter-01"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-02.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-02",
+      "title": "第二 摄心所分别品",
+      "section": "chapter-02"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-03.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-03",
+      "title": "第三 摄杂分别品",
+      "section": "chapter-03"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-04.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-04",
+      "title": "第四 摄路分别品",
+      "section": "chapter-04"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-05.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-05",
+      "title": "第五 摄离路分别品",
+      "section": "chapter-05"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-06.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-06",
+      "title": "第六 摄色分别品",
+      "section": "chapter-06"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-07.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-07",
+      "title": "第七 摄集分别品",
+      "section": "chapter-07"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-08.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-08",
+      "title": "第八 摄缘分别品",
+      "section": "chapter-08"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/chapter-09.json",
+      "route": "#/research/abhidhamma-sangaha/read/chapter-09",
+      "title": "第九 摄业处分别品",
+      "section": "chapter-09"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/appendix.json",
+      "route": "#/research/abhidhamma-sangaha/read/appendix",
+      "title": "附录",
+      "section": "appendix"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/answers.json",
+      "route": "#/research/abhidhamma-sangaha/read/answers",
+      "title": "问题解答",
+      "section": "answers"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/corrections.json",
+      "route": "#/research/abhidhamma-sangaha/read/corrections",
+      "title": "2022 年修订更正记录",
+      "section": "corrections"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/corrections-appendix.json",
+      "route": "#/research/abhidhamma-sangaha/read/corrections-appendix",
+      "title": "更正记录补页",
+      "section": "corrections-appendix"
+    },
+    {
+      "file": "research/abhidhamma-sangaha/data/copyright.json",
+      "route": "#/research/abhidhamma-sangaha/read/copyright",
+      "title": "版权页",
+      "section": "copyright"
+    }
+  ]
+}

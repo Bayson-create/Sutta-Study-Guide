@@ -1,0 +1,23 @@
+{
+  "format": "abhidhamma-table-guide/v1",
+  "section": {
+    "slug": "cover",
+    "title": "封面",
+    "source_title": "01-cover_Abhidhammattha-sangaha_Table",
+    "physical_page_start": 1,
+    "physical_page_end": 1,
+    "file": "data/cover.json",
+    "route": "#/research/abhidhamma-sangaha/read/cover"
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "logical_label": "",
+      "title": "摄阿毗达摩义论表解",
+      "text": "摄阿毗达摩义论表解\nAbhidhammatthasaṅgaha-vitthāra\n完整版\n明法比丘编∕edited by Bhikkhu Metta\n2008 年版.(罗庆龙 修订 2022.02)\n法雨道场 印行",
+      "complex_layout": true,
+      "image_count": 1,
+      "source_image": "research/abhidhamma-sangaha/pages/page-0001.png"
+    }
+  ]
+}
