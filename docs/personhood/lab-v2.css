@@ -51,6 +51,11 @@
 .personhood-v2 .v2-node-cites { margin-top:8px; padding-top:7px; border-top:1px dashed var(--v2-line); font-size:12px; color:var(--v2-muted); cursor:pointer; }
 .personhood-v2 .v2-node-cites .v2-evidence { border-top:none; margin-top:8px; padding-top:0; }
 .personhood-v2 .v2-node-cites .v2-evidence-item { font-size:12px; }
+/* 节点最终没能生成内容（重试也救不回来）：与"分析中"区分开的收尾态 */
+.personhood-v2 .v2-node-failed { color:#9a4a3a; }
+.personhood-v2 .v2-retry-node { margin-top:6px; padding:5px 11px; font-size:12px; border-color:#c98a6f; background:#fff3ee; color:#8a3f2c; }
+.personhood-v2 .v2-retry-node:disabled { opacity:.6; cursor:default; transform:none; }
+.personhood-v2 .v2-retry-node-small { margin-top:8px; padding:5px 11px; font-size:12px; border-color:#c98a6f; background:#fff3ee; color:#8a3f2c; }
 /* 分支选择：语业、身业各自一个 fieldset，互不影响；可各自选、改写或都不采取 */
 .personhood-v2 .v2-choice fieldset { border:1px solid var(--v2-line); border-radius:10px; padding:10px 12px; margin:0 0 10px; }
 .personhood-v2 .v2-choice legend { font-weight:700; font-size:13px; padding:0 6px; }
@@ -64,6 +69,9 @@
 .personhood-v2 .v2-choice-done { border:1px dashed var(--v2-line); border-radius:10px; padding:8px 12px; margin:0 0 8px; color:var(--v2-muted); }
 .personhood-v2 .v2-choice-done legend { font-weight:700; font-size:13px; color:var(--v2-ink); }
 .personhood-v2 .v2-choice-loading { color:var(--v2-muted); font-size:13px; }
+/* 该分支始终没能生成预设选项：退化为纯文本，不卡住整个选择面板 */
+.personhood-v2 .v2-choice-plain { border-style:dashed; }
+.personhood-v2 .v2-choice-plain p { margin:0 0 6px; font-size:12px; }
 /* ── 反复推演：戏论想念 → 寻 的回环，每点一次追加一圈 ── */
 .personhood-v2 .v2-cycles { border-left:4px solid #a3762f; }
 .personhood-v2 .v2-cycle { display:grid; grid-template-columns:auto 1fr 1fr 1fr; gap:10px; align-items:baseline; padding:8px 0; border-bottom:1px solid #eee7de; font-size:13px; }

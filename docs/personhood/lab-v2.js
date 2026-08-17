@@ -76,6 +76,13 @@
     var processes = global.PersonhoodStages && global.PersonhoodStages.MIND_PROCESSES;
     if (!processes) return '';
     var picked = chosen && chosen.selected_process_id;
+    var finished = turn.ai && !turn.ai.pending;
+    var retrying = turn._nodeRetrying && turn._nodeRetrying['citta-vithi'];
+    var tail;
+    if (picked && chosen.reason) tail = '<p class="v2-muted">判定依据：' + esc(chosen.reason) + '</p>';
+    else if (!picked && finished) tail = '<p class="v2-muted v2-node-failed">心路判定未能生成。</p><button class="v2-retry-node" data-retry-node="citta-vithi"' + (retrying ? ' disabled' : '') + '>' + (retrying ? '重试中…' : '重试该节点') + '</button>';
+    else if (!picked) tail = '<p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>心路判定分析中…</p>';
+    else tail = '';
     return '<div class="v2-vithi">' + processes.map(function (proc) {
       var active = picked ? proc.id === picked : false;
       var notes = active && chosen.step_notes ? chosen.step_notes : [];
@@ -84,7 +91,7 @@
         + '<ol>' + (proc.steps || []).map(function (step, i) {
             return '<li>' + esc(step) + (notes[i] ? '<em>' + esc(notes[i]) + '</em>' : '') + '</li>';
           }).join('') + '</ol></section>';
-    }).join('') + (picked && chosen.reason ? '<p class="v2-muted">判定依据：' + esc(chosen.reason) + '</p>' : (!picked ? '<p class="v2-muted">心路判定分析中…</p>' : '')) + '</div>';
+    }).join('') + tail + '</div>';
   }
   // Slots are rendered as a single formatted chip, not "<label>key</label>value" -
   // that two-part rendering is exactly what put a stray "type" on screen.
@@ -108,14 +115,31 @@
     return '<details class="v2-node-cites"><summary>' + rows.length + ' 条引文</summary><div class="v2-evidence">' + rows.map(evidenceRowHtml).join('') + '</div></details>';
   }
   function nodeHtml(node, turn, layerIndex) {
+    var isVithi = node.id === 'citta-vithi';
     var content = (turn.nodes || {})[node.id] || null;
     var finished = turn.ai && !turn.ai.pending;
+    var retrying = turn._nodeRetrying && turn._nodeRetrying[node.id];
     var slots = content && content.slots ? Object.keys(content.slots).map(function (key) { return slotChipHtml(node.id, key, content.slots[key]); }).join('') : '';
     var body;
-    if (content && content.filled) body = '<p>' + esc(content.filled) + '</p>';
-    else if (finished) body = '<p class="v2-muted">本节点未生成具体内容。</p>';
-    else body = '<p class="v2-muted v2-pending"><span class="v2-spinner" aria-hidden="true"></span>分析中…</p>';
-    var extra = node.id === 'citta-vithi' ? vithiHtml(turn, content) : '';
+    if (isVithi) {
+      // citta-vithi runs its own dedicated call (build_vithi_messages, not
+      // build_node_messages) and its content lives in turn.citta_vithi, not
+      // turn.nodes - vithiHtml() below owns this node's filled/failed/pending
+      // states entirely, including its own retry button.
+      body = '';
+    } else if (content && content.filled) {
+      body = '<p>' + esc(content.filled) + '</p>';
+    } else if (finished) {
+      // The backend already retried this node once server-side (see
+      // call_model_json) before giving up - "finished with nothing" here
+      // means it genuinely failed twice, not "hasn't been reached yet", so
+      // this is a dead end without a manual nudge rather than a spinner.
+      body = '<p class="v2-muted v2-node-failed">本节点未能生成具体内容。</p>'
+        + '<button class="v2-retry-node" data-retry-node="' + esc(node.id) + '"' + (retrying ? ' disabled' : '') + '>' + (retrying ? '重试中…' : '重试该节点') + '</button>';
+    } else {
+      body = '<p class="v2-muted v2-pending"><span class="v2-spinner" aria-hidden="true"></span>分析中…</p>';
+    }
+    var extra = isVithi ? vithiHtml(turn, content) : '';
     var cites = nodeCiteHtml(node, turn);
     return '<article class="v2-node' + (node.branching ? ' branching' : '') + (content ? ' is-filled' : '') + '" data-node="' + esc(node.id) + '" data-layer="' + layerIndex + '">'
       + '<header><span class="v2-node-label">' + esc(node.label) + '</span>'
@@ -148,20 +172,29 @@
       + '<button class="' + (busy ? '' : 'primary') + '" data-iterate="' + turnIndex + '"' + (busy || !canIterate ? ' disabled' : '') + '>' + (busy ? '推演中…' : '再推演一轮') + '</button></div>';
   }
 
-  /* ── 分支：语业、身业各自独立选择/改写/不采取；确认后作为本轮输出 ── */
-  function branchGroupHtml(turnIndex, node, content, chosen) {
+  /* ── 分支：语业、身业各自独立选择/改写/不采取；确认后作为本轮输出 ──
+     节点始终没能生成可选项时（重试也救不回来），直接退化为纯文本输入框，
+     不让"选择行动"这一步卡在一个永远等不到选项的节点上。 */
+  function branchGroupHtml(turnIndex, node, content, chosen, finished, retrying) {
     var options = (content && content.options) || [];
     var current = chosen ? chosen[node.id === 'speech-kamma' ? 'speech' : 'body'] : null;
     if (current !== null && current !== undefined) {
       return '<fieldset class="v2-choice-done"><legend>' + esc(node.label) + '</legend><p>' + (current ? esc(current) : '（本轮不采取）') + '</p></fieldset>';
     }
     var field = node.id === 'speech-kamma' ? 'speech' : 'body';
-    return '<fieldset data-field="' + field + '"><legend>' + esc(node.label) + '</legend>'
-      + options.map(function (option, i) {
-          return '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value="' + esc(option) + '"' + (i === 0 ? ' checked' : '') + '><span>' + esc(option) + '</span></label>';
-        }).join('')
-      + '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value=""><span>不采取</span></label>'
-      + '<input type="text" data-action-text="' + field + '" placeholder="改写为你实际要做的（可留空沿用上面所选）">'
+    if (options.length) {
+      return '<fieldset data-field="' + field + '"><legend>' + esc(node.label) + '</legend>'
+        + options.map(function (option, i) {
+            return '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value="' + esc(option) + '"' + (i === 0 ? ' checked' : '') + '><span>' + esc(option) + '</span></label>';
+          }).join('')
+        + '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value=""><span>不采取</span></label>'
+        + '<input type="text" data-action-text="' + field + '" placeholder="改写为你实际要做的（可留空沿用上面所选）">'
+        + '</fieldset>';
+    }
+    return '<fieldset data-field="' + field + '" class="v2-choice-plain"><legend>' + esc(node.label) + '</legend>'
+      + '<p class="v2-muted">未能为该分支生成预设选项，可直接写下你实际要做的（留空＝不采取）。</p>'
+      + '<input type="text" data-action-text="' + field + '" placeholder="例如：先说这句…">'
+      + (finished ? '<button type="button" class="v2-retry-node-small" data-retry-node="' + esc(node.id) + '"' + (retrying ? ' disabled' : '') + '>重试生成选项</button>' : '')
       + '</fieldset>';
   }
   function choiceHtml(turn, turnIndex) {
@@ -182,10 +215,17 @@
       return '<div class="v2-card v2-chosen" data-role="choice"><h3>本轮选择的行动</h3>' + lines.join('')
         + '<span class="v2-muted">下一轮请在最下方输入对方真实的回应，或自己新生起的心理活动。</span></div>';
     }
-    var ready = branching.every(function (node) { return (turn.nodes || {})[node.id]; });
-    if (!ready) return '<div class="v2-card v2-choice-loading" data-role="choice"><p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>正在生成可选的语业与身业…</p></div>';
+    // Waiting only blocks on the job actually still running - never on
+    // whether these two specific nodes happened to come back yet. Once
+    // turn.ai.pending is false the job is truly done (including its
+    // built-in per-node retry), so a still-missing node at this point is a
+    // permanent miss, not a "not yet" - branchGroupHtml degrades that node
+    // to a plain text field instead of blocking the whole panel forever.
+    var pending = turn.ai && turn.ai.pending;
+    if (pending) return '<div class="v2-card v2-choice-loading" data-role="choice"><p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>正在并发生成语业与身业…</p></div>';
+    var finished = true;
     return '<div class="v2-card v2-choice" data-role="choice" data-choice="' + turnIndex + '"><h3>选择这一轮实际要做的行动（语业、身业可分别选择或改写，也可都不采取）</h3>'
-      + branching.map(function (node) { return branchGroupHtml(turnIndex, node, (turn.nodes || {})[node.id], null); }).join('')
+      + branching.map(function (node) { return branchGroupHtml(turnIndex, node, (turn.nodes || {})[node.id], null, finished, turn._nodeRetrying && turn._nodeRetrying[node.id]); }).join('')
       + '<button class="primary" data-confirm-action="' + turnIndex + '">确定这一轮的行动</button></div>';
   }
 
@@ -366,8 +406,37 @@
     bindTurnEvents(app, turnIndex);
   }
 
-  /* ── SSE 事件处理：把每个到达的事件落到对应的轮次和 DOM 区域 ── */
+  /* ── SSE 事件处理：把每个到达的事件落到对应的轮次和 DOM 区域 ──
+     node 事件经一个 rAF 节流队列：并发节点各自完成的时间很接近，网络层
+     可能把好几个 SSE 帧一起交给同一次 read()，这时同步处理全部事件会在
+     浏览器来不及重绘的情况下把它们全部呈现出来，观感上像是"一次性冒出
+     全部结果"。这里把 node 事件放进队列，每帧只处理一个，不管网络怎么
+     打包都能看到逐个点亮；job/observation/vithi/final/error 这类只出现
+     一次的关键事件不进队列，立即处理，不被节流拖慢。 */
   function analyzeHandler(app, turnIndex) {
+    var nodeQueue = [];
+    var rafScheduled = false;
+    var raf = global.requestAnimationFrame || function (fn) { return global.setTimeout(fn, 16); };
+    function applyNodeEvent(evt) {
+      var turn = state.turns[turnIndex];
+      if (!turn) return;
+      if (evt.node) turn.nodes[evt.node_id] = evt.node;
+      turn.completed = evt.completed; turn.total = evt.total; turn.elapsed_s = evt.elapsed_s;
+      persist();
+      patchNode(app, turnIndex, turn, evt.node_id);
+      patchTurn(app, turnIndex, turn, 'node');
+    }
+    function drainOne() {
+      rafScheduled = false;
+      var evt = nodeQueue.shift();
+      if (evt) applyNodeEvent(evt);
+      if (nodeQueue.length) scheduleDrain();
+    }
+    function scheduleDrain() {
+      if (rafScheduled) return;
+      rafScheduled = true;
+      raf(drainOne);
+    }
     return function (evt) {
       var turn = state.turns[turnIndex];
       if (!turn) return;
@@ -395,12 +464,10 @@
         patchNode(app, turnIndex, turn, 'citta-vithi');
         patchTurn(app, turnIndex, turn, 'vithi');
       } else if (evt.type === 'node') {
-        if (evt.node) turn.nodes[evt.node_id] = evt.node;
-        turn.completed = evt.completed; turn.total = evt.total; turn.elapsed_s = evt.elapsed_s;
-        persist();
-        patchNode(app, turnIndex, turn, evt.node_id);
-        patchTurn(app, turnIndex, turn, 'node');
+        nodeQueue.push(evt);
+        scheduleDrain();
       } else if (evt.type === 'final') {
+        nodeQueue.length = 0; // the final snapshot below supersedes anything still queued
         if (evt.nodes) turn.nodes = evt.nodes;
         if (evt.observation) turn.observation = evt.observation;
         if (evt.citta_vithi) turn.citta_vithi = evt.citta_vithi;
@@ -413,6 +480,7 @@
         if (flow2) { flow2.outerHTML = flowHtml(turn); drawConnectors(app.querySelectorAll('.v2-flow')[turnIndex]); }
         patchTurn(app, turnIndex, turn, 'final');
       } else if (evt.type === 'error') {
+        nodeQueue.length = 0;
         turn.ai = {enabled:false, degraded:true, pending:false, message: evt.detail};
         aiJobForget(JOB_KIND);
         persist();
@@ -499,6 +567,21 @@
     for (var i = 0; i < state.turns.length; i++) bindTurnEvents(app, i);
     drawAllConnectors(app);
     ensureTicking(app);
+    // Expanding any <details> (a node's citation list, the candidate pool,
+    // 证据与方法…) changes layout height without going through patchNode/
+    // patchTurn, so the connectors drawn for the old layout would otherwise
+    // stay put and visibly detach from the cards they're supposed to point
+    // at. `toggle` does not bubble, so this has to be a capture-phase
+    // listener on an ancestor that survives every re-render - `app` itself
+    // is never replaced (render() only replaces its innerHTML), so binding
+    // this once here covers every turn without rebinding per patch.
+    if (!app.dataset.toggleBound) {
+      app.dataset.toggleBound = '1';
+      app.addEventListener('toggle', function (event) {
+        var flow = event.target.closest && event.target.closest('.v2-flow');
+        if (flow) drawConnectors(flow);
+      }, true);
+    }
     // Input is deliberately last in the DOM (below every recorded turn) so
     // each new round is entered where the reader's eye already is, after
     // reading what just happened - not back at the top of the page.
@@ -536,8 +619,42 @@
         return;
       }
       var iterateBtn = event.target.closest('[data-iterate]');
-      if (iterateBtn) runIterate(app, turnIndex);
+      if (iterateBtn) { runIterate(app, turnIndex); return; }
+      var retryBtn = event.target.closest('[data-retry-node]');
+      if (retryBtn) runRetryNode(app, turnIndex, retryBtn.getAttribute('data-retry-node'));
     });
+  }
+
+  /* ── 单节点重试：/analyze 内置的一次自动重试仍失败后，用户手动再试一次 ── */
+  async function runRetryNode(app, turnIndex, nodeId) {
+    var turn = state.turns[turnIndex];
+    if (!turn) return;
+    turn._nodeRetrying = turn._nodeRetrying || {};
+    if (turn._nodeRetrying[nodeId]) return;
+    turn._nodeRetrying[nodeId] = true;
+    persist();
+    patchNode(app, turnIndex, turn, nodeId);
+    var request = {
+      message: turn.observation && turn.observation.raw || turn.message, model_version: turn.model_version,
+      node_id: nodeId, previous_observations: state.turns.map(function (t) { return t.observation && t.observation.raw; }).slice(0, turnIndex).slice(-12),
+      selected_action: turn.chosen_action, evidence_bundle_version: turn.evidence_bundle_version || 'personhood-evidence/v1',
+      selected_evidence: turn.evidence || [],
+    };
+    try {
+      var res = await fetch(base() + '/api/personhood/v2/retry-node', {method:'POST', headers:headers(), body:JSON.stringify(request)});
+      var data = {}; try { data = await res.json(); } catch (_) {}
+      if (!res.ok) throw new Error(data.detail || ('重试失败（HTTP ' + res.status + '）'));
+      if (nodeId === 'citta-vithi') { if (data.citta_vithi) turn.citta_vithi = data.citta_vithi; }
+      else if (data.node) turn.nodes[nodeId] = data.node;
+    } catch (error) {
+      var status = app.querySelector('[data-status]');
+      if (status) status.textContent = '节点重试失败：' + error.message;
+    } finally {
+      delete turn._nodeRetrying[nodeId];
+      persist();
+      patchNode(app, turnIndex, turn, nodeId);
+      patchTurn(app, turnIndex, turn, 'node');
+    }
   }
 
   async function runIterate(app, turnIndex) {
