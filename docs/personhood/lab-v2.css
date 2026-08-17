@@ -17,6 +17,12 @@
 .personhood-v2 .v2-facts { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:10px 0; }
 .personhood-v2 .v2-fact { background:#fffdf9; border:1px solid var(--v2-line); border-radius:9px; padding:9px; font-size:12px; }
 .personhood-v2 .v2-fact strong { display:block; color:#735713; margin-bottom:4px; }
+/* ── 每轮计时/进度条：AI 调用是并发的，节点完成顺序不定，这里只报告
+   已用时长与完成比例，不是逐层进度。 done 态换成收尾色，不再转圈。 ── */
+.personhood-v2 .v2-status-bar { display:flex; align-items:center; gap:8px; font:600 12px/1.4 system-ui,sans-serif; color:#8b6914; background:#fdf7e8; border:1px solid #ecdcae; border-radius:999px; padding:6px 12px; margin-bottom:10px; width:fit-content; }
+.personhood-v2 .v2-status-bar.done { color:#5c6f52; background:#f1f6ee; border-color:#d7e6cf; }
+.personhood-v2 .v2-spinner { width:12px; height:12px; border-radius:50%; border:2px solid currentColor; border-top-color:transparent; animation:v2-spin .7s linear infinite; flex:none; display:inline-block; }
+@keyframes v2-spin { to { transform:rotate(360deg); } }
 /* ── 流程图 ──
    列数由该层实际节点数决定（--cols），所以并列几个就几列，前后相继的节点各占一行。
    右侧留出 34px 给戏论回环的绕行线。 */
@@ -29,29 +35,40 @@
   opacity:0; transform:translateY(6px); transition:opacity .32s ease, transform .32s ease; }
 .personhood-v2 .v2-layer.shown { opacity:1; transform:none; }
 .personhood-v2 .v2-layer:last-child { margin-bottom:0; }
-.personhood-v2 .v2-node { border:1px solid var(--v2-line); border-left:4px solid #a99a87; background:#fbfaf7; padding:10px 12px; border-radius:0 9px 9px 0; }
+.personhood-v2 .v2-node { border:1px solid var(--v2-line); border-left:4px solid #a99a87; background:#fbfaf7; padding:10px 12px; border-radius:0 9px 9px 0; transition:background-color .4s ease, border-color .4s ease; }
 .personhood-v2 .v2-node header { display:flex; align-items:baseline; gap:8px; margin-bottom:6px; }
 .personhood-v2 .v2-node-label { font-weight:700; }
 .personhood-v2 .v2-node-pali { font-size:11px; color:var(--v2-muted); font-style:italic; }
 .personhood-v2 .v2-node p { margin:0; line-height:1.65; }
 .personhood-v2 .v2-node.branching { border-left-color:#a3762f; background:#fffaf0; }
 .personhood-v2 .v2-node[data-node="citta-vithi"] { border-left-color:#6e55a0; background:#f6f2fb; }
+/* 内容刚落地时短暂高亮一下，帮读者注意到并发到达的是哪一张卡 */
+.personhood-v2 .v2-node.is-filled { animation:v2-node-land .9s ease; }
+@keyframes v2-node-land { from { background-color:#fbf0cf; } }
+.personhood-v2 .v2-pending { display:flex; align-items:center; gap:7px; }
 .personhood-v2 .v2-slots { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:7px; }
-.personhood-v2 .v2-slot { background:#f0e7d5; border-radius:6px; padding:2px 8px; font-size:12px; }
-.personhood-v2 .v2-slot b { color:#735713; margin-right:5px; font-weight:600; }
-.personhood-v2 .v2-node-cites { margin-top:7px; font-size:11px; color:var(--v2-muted); }
-/* 分支选择 */
-.personhood-v2 .v2-choice { opacity:0; transition:opacity .3s ease; }
-.personhood-v2 .v2-choice.shown { opacity:1; }
+.personhood-v2 .v2-slot { background:#f0e7d5; color:#735713; border-radius:6px; padding:2px 9px; font-size:12px; font-weight:600; }
+.personhood-v2 .v2-node-cites { margin-top:8px; padding-top:7px; border-top:1px dashed var(--v2-line); font-size:12px; color:var(--v2-muted); cursor:pointer; }
+.personhood-v2 .v2-node-cites .v2-evidence { border-top:none; margin-top:8px; padding-top:0; }
+.personhood-v2 .v2-node-cites .v2-evidence-item { font-size:12px; }
+/* 分支选择：语业、身业各自一个 fieldset，互不影响；可各自选、改写或都不采取 */
 .personhood-v2 .v2-choice fieldset { border:1px solid var(--v2-line); border-radius:10px; padding:10px 12px; margin:0 0 10px; }
 .personhood-v2 .v2-choice legend { font-weight:700; font-size:13px; padding:0 6px; }
 .personhood-v2 .v2-option { display:flex; align-items:flex-start; gap:8px; padding:5px 0; line-height:1.55; cursor:pointer; }
 /* The site stylesheet stretches inputs to 100%; radios must stay radio-sized. */
 .personhood-v2 .v2-option input[type=radio] { width:15px; min-width:15px; flex:0 0 15px; margin:4px 0 0; padding:0; }
 .personhood-v2 .v2-option span { flex:1 1 auto; }
-.personhood-v2 .v2-rewrite { display:block; font-size:13px; color:var(--v2-muted); margin:0 0 12px; }
-.personhood-v2 .v2-rewrite input { display:block; width:100%; margin-top:6px; padding:9px 11px; border:1px solid #d9d0c4; border-radius:9px; font:inherit; box-sizing:border-box; }
+.personhood-v2 .v2-choice [data-action-text] { display:block; width:100%; margin-top:6px; padding:9px 11px; border:1px solid #d9d0c4; border-radius:9px; font:inherit; box-sizing:border-box; }
 .personhood-v2 .v2-chosen { border-left:4px solid #7d9a72; }
+.personhood-v2 .v2-chosen div { margin:4px 0; }
+.personhood-v2 .v2-choice-done { border:1px dashed var(--v2-line); border-radius:10px; padding:8px 12px; margin:0 0 8px; color:var(--v2-muted); }
+.personhood-v2 .v2-choice-done legend { font-weight:700; font-size:13px; color:var(--v2-ink); }
+.personhood-v2 .v2-choice-loading { color:var(--v2-muted); font-size:13px; }
+/* ── 反复推演：戏论想念 → 寻 的回环，每点一次追加一圈 ── */
+.personhood-v2 .v2-cycles { border-left:4px solid #a3762f; }
+.personhood-v2 .v2-cycle { display:grid; grid-template-columns:auto 1fr 1fr 1fr; gap:10px; align-items:baseline; padding:8px 0; border-bottom:1px solid #eee7de; font-size:13px; }
+.personhood-v2 .v2-cycle b { color:#a3762f; }
+.personhood-v2 .v2-cycles button { margin-top:10px; }
 .personhood-v2 .v2-input-card { border:1px solid #cbbc98; background:#fffdf6; }
 .personhood-v2 .v2-vithi { margin-top:10px; }
 .personhood-v2 .v2-mind-flow.active { border-color:#6e55a0; box-shadow:0 0 0 2px #e6dcf7; }
@@ -62,14 +79,22 @@
 .personhood-v2 .v2-mind-flow span { color:var(--v2-muted); font-size:12px; }
 .personhood-v2 .v2-mind-flow ol { display:flex; flex-wrap:wrap; gap:5px 20px; margin:9px 0 0; padding-left:22px; line-height:1.55; }
 .personhood-v2 .v2-mind-flow li { padding-right:4px; }
-.personhood-v2 .v2-branches { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-.personhood-v2 .v2-branch { border:1px solid var(--v2-line); border-radius:12px; padding:14px; background:#fffdf9; }
-.personhood-v2 .v2-branch.mindful { background:#eff8f5; border-color:#b8d7ca; }
-.personhood-v2 .v2-branch h4 { margin:0 0 6px; }
-.personhood-v2 .v2-branch ul { margin:8px 0 12px; padding-left:20px; line-height:1.6; }
 .personhood-v2 .v2-evidence { border-top:1px solid var(--v2-line); margin-top:14px; padding-top:12px; }
 .personhood-v2 .v2-evidence-item { border-bottom:1px solid #eee7de; padding:9px 0; font-size:13px; }
 .personhood-v2 .v2-evidence-item a { color:#735713; }
+/* 候选池：折叠、弱化，与"本轮引用"区分开 */
+.personhood-v2 .v2-evidence-pool { color:var(--v2-muted); }
+.personhood-v2 .v2-evidence-pool summary { font-size:13px; }
+/* ── 证据研究页：真实台账统计与表格 ── */
+.personhood-v2 .v2-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin:14px 0; }
+.personhood-v2 .v2-stat { background:#fffdf9; border:1px solid var(--v2-line); border-radius:10px; padding:12px; text-align:center; }
+.personhood-v2 .v2-stat b { display:block; font-size:22px; color:#8b6914; }
+.personhood-v2 .v2-stat span { font-size:12px; color:var(--v2-muted); }
+.personhood-v2 .v2-table-wrap { overflow-x:auto; margin:10px 0 18px; }
+.personhood-v2 .v2-table { width:100%; border-collapse:collapse; font-size:13px; }
+.personhood-v2 .v2-table th,.personhood-v2 .v2-table td { text-align:left; padding:7px 10px; border-bottom:1px solid #eee7de; white-space:nowrap; }
+.personhood-v2 .v2-table th { color:#735713; font-weight:700; }
+.personhood-v2 .v2-hash { font-family:ui-monospace,monospace; font-size:11px; color:var(--v2-muted); }
 .personhood-v2 .v2-status { color:var(--v2-muted); font-size:12px; margin-top:8px; }
 .personhood-v2 .v2-method { color:var(--v2-muted); font-size:12px; }
 .personhood-v2 .v2-alert { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:10px 0 14px; padding:10px 12px; border:1px solid #e4c997; border-radius:10px; background:#fff8e8; color:#704f16; font-size:13px; }
@@ -80,10 +105,12 @@
 .personhood-v2 .v2-mind-flow.active ol { display:block; padding-left:20px; }
 .personhood-v2 .v2-mind-flow.active li { margin-bottom:6px; }
 @media(max-width:760px) {
-  .personhood-v2 .v2-facts,.personhood-v2 .v2-branches { grid-template-columns:1fr; }
+  .personhood-v2 .v2-facts { grid-template-columns:1fr; }
   /* 窄屏每层退化为单列；连线在 render 后按实际盒位重画，不会错位 */
   .personhood-v2 .v2-layer { grid-template-columns:1fr; gap:10px; margin-bottom:26px; }
   .personhood-v2 .v2-flow { padding-right:26px; }
   .personhood-v2 .v2-user { margin-left:0; }
   .personhood-v2 .v2-hero { padding:20px; }
+  .personhood-v2 .v2-cycle { grid-template-columns:1fr; gap:2px; }
+  .personhood-v2 .v2-stats { grid-template-columns:repeat(2,1fr); }
 }

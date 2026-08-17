@@ -1,9 +1,22 @@
-/* Independent V4 evidence-first personhood chat lab. No Gotama skill/state. */
+/* Independent V4 evidence-first personhood chat lab. No Gotama skill/state.
+ *
+ * Per-node analysis runs as a detached server job (app/jobs/runner.py on the
+ * backend) so a triggered turn keeps generating even if this tab closes -
+ * this file's job is to attach to that job's SSE stream, patch each node's
+ * card in place as its own event arrives (nodes complete in whatever order
+ * the model answers them, since they run concurrently), and re-attach on
+ * load if a turn was still running when the reader left. aiJobConsume /
+ * aiJobAttach / aiJobRemember / aiJobForget / aiJobPending are defined in
+ * docs/index.html (shared with Gotama and search synthesis) - this file
+ * does not reimplement SSE parsing.
+ */
 (function (global) {
   'use strict';
   var KEY = 'sutta-personhood-lab-v2';
+  var JOB_KIND = 'personhood-analyze';
+  var ITER_JOB_KIND = 'personhood-iterate';
   var EVIDENCE_BASE = 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1/personhood-evidence/v1';
-  var state = { model: 'theravada-synthesis/v2', turns: [], savedCaseId: null, selectedPath: null, selectedAction: null };
+  var state = { model: 'theravada-synthesis/v2', turns: [], savedCaseId: null, selectedPath: null, selectedAction: null, conversationId: null };
   var bundle = { manifest: null, shards: {} };
   var FALLBACK_API = global.location && (global.location.hostname === 'localhost' || global.location.hostname === '127.0.0.1')
     ? 'http://localhost:8000'
@@ -11,22 +24,56 @@
   function base() { return (global.SUTTA_PERSONHOOD_API_BASE || FALLBACK_API).replace(/\/$/, ''); }
   function headers() { var token = global.localStorage && global.localStorage.getItem('sutta_token'); return Object.assign({'Content-Type':'application/json'}, token ? {'Authorization':'Bearer ' + token} : {}); }
   function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
-  function load() { try { var item = JSON.parse(global.localStorage.getItem(KEY) || 'null'); if (item) state = Object.assign(state, item); } catch (_) {} }
+  function uid() { return (global.crypto && global.crypto.randomUUID) ? global.crypto.randomUUID() : ('local-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2)); }
+  function load() { try { var item = JSON.parse(global.localStorage.getItem(KEY) || 'null'); if (item) state = Object.assign(state, item); } catch (_) {} if (!state.conversationId) state.conversationId = uid(); }
   function persist() { try { global.localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} }
-  function methodHtml() { return '<details class="v2-card v2-method"><summary>证据与方法</summary><p>本实验室只把用户报告的事件、感受和推测分开处理。引文来自已发布的 V4 静态引文库：每轮只从本地分片抽取，不重新检索 Azure。经律原典版依《蜜丸经》的显式次第；分层整合版另按《摄阿毗达磨义论》并列遍一切心心所并展开完整心路。</p></details>'; }
-  function evidenceHtml(rows) { if (!rows || !rows.length) return '<p class="v2-muted">本轮没有匹配到已保存的引文；流程图仍可作为问题拆分工具。</p>'; return '<div class="v2-evidence">' + rows.map(function (row) { return '<div class="v2-evidence-item"><a href="' + esc(row.reader_url || '#') + '" target="_blank" rel="noopener">' + esc(row.title || row.work_id || 'V4 经文') + ' · ' + esc(row.paranum || ('行 ' + row.row_id)) + '</a><div>' + esc(row.snippet || row.text || '') + '</div><small class="v2-muted">第 ' + esc(row.lineage_layer || '?') + ' 层 · ' + esc(row.provenance === 'canonical' ? '经律／论藏原典' : '后期上座部系统化') + '</small></div>'; }).join('') + '</div>'; }
-  function factHtml(observation) { var labels = [['observable_events','可观察事件'],['first_person_reports','我的报告'],['attributions_not_facts','对他人的推测'],['unknown_or_needs_clarification','尚待澄清']]; return '<div class="v2-facts">' + labels.map(function (item) { return '<div class="v2-fact"><strong>' + item[1] + '</strong>' + esc((observation[item[0]] || []).join('；') || '—') + '</div>'; }).join('') + '</div>'; }
+  function methodHtml() { return '<details class="v2-card v2-method"><summary>证据与方法</summary><p>本实验室只把用户报告的事件、感受和推测分开处理。引文来自已发布的 V4 静态引文库：每轮只从本地分片抽取，不重新检索 Azure。经律原典版依《蜜丸经》的显式次第；分层整合版另按《摄阿毗达磨义论》并列遍一切心心所并展开完整心路。逐节点分析并发调用，可离开页面，回来后会自动接续未完成的分析。</p></details>'; }
+
+  /* ── 引文：两级 —— 本轮各节点实际引用的并集在前，候选池折叠在后 ── */
+  function evidenceRowHtml(row) {
+    return '<div class="v2-evidence-item"><a href="' + esc(row.reader_url || '#') + '" target="_blank" rel="noopener">' + esc(row.title || row.work_id || 'V4 经文') + ' · ' + esc(row.paranum || ('行 ' + row.row_id)) + '</a><div>' + esc(row.snippet || row.text || '') + '</div><small class="v2-muted">第 ' + esc(row.lineage_layer || '?') + ' 层 · ' + esc(row.provenance === 'canonical' ? '经律／论藏原典' : '后期上座部系统化') + '</small></div>';
+  }
+  function usedEvidenceIds(turn) {
+    var ids = {};
+    Object.keys(turn.nodes || {}).forEach(function (nodeId) { (turn.nodes[nodeId].evidence_ids || []).forEach(function (id) { ids[id] = 1; }); });
+    if (turn.citta_vithi) (turn.citta_vithi.evidence_ids || []).forEach(function (id) { ids[id] = 1; });
+    (turn.papanca_cycles || []).forEach(function (cycle) { (cycle.evidence_ids || []).forEach(function (id) { ids[id] = 1; }); });
+    return ids;
+  }
+  function evidenceSectionHtml(turn) {
+    var byId = {}; (turn.evidence || []).forEach(function (row) { byId[row.evidence_id] = row; });
+    var used = Object.keys(usedEvidenceIds(turn)).map(function (id) { return byId[id]; }).filter(Boolean);
+    var pool = (turn.evidence || []).filter(function (row) { return !usedEvidenceIds(turn)[row.evidence_id]; });
+    return '<div data-role="evidence-section">'
+      + '<details class="v2-card" open><summary>本轮引用的引文（' + used.length + ' 条）</summary>'
+      + (used.length ? '<div class="v2-evidence">' + used.map(evidenceRowHtml).join('') + '</div>' : '<p class="v2-muted">节点尚未引用到具体经文，或本轮没有匹配到已保存的引文；流程结构仍可作为问题拆分工具。</p>')
+      + '</details>'
+      + '<details class="v2-card v2-evidence-pool"><summary>候选池（' + pool.length + ' 条，未被任何节点引用）</summary>'
+      + (pool.length ? '<div class="v2-evidence">' + pool.map(evidenceRowHtml).join('') + '</div>' : '<p class="v2-muted">候选池为空。</p>')
+      + '</details></div>';
+  }
+
+  /* ── 观察四格：由 AI 逐条摘录原文片段分类；未生成前用离线正则兜底 ── */
+  function factHtml(turn) {
+    var obs = turn.observation || {};
+    var labels = [['observable_events','可观察事件'],['first_person_reports','我的报告'],['attributions_not_facts','对他人的推测'],['unknown_or_needs_clarification','尚待澄清']];
+    return '<div class="v2-facts" data-role="facts">' + labels.map(function (item) {
+      return '<div class="v2-fact"><strong>' + item[1] + '</strong>' + esc((obs[item[0]] || []).join('；') || '—') + '</div>';
+    }).join('') + '</div>';
+  }
 
   /* ── 流程图 ──
      列数来自该层实际的节点数，所以"并列几个就几列"，前后相继的节点各占一行；
-     层与层之间、以及戏论想念回到寻的回环，都由 drawConnectors() 画成真的连线。 */
+     层与层之间、以及戏论想念回到寻的回环，都由 drawConnectors() 画成真的连线。
+     节点并发分析，完成顺序不定：拓扑与全部占位卡一次性画出，逐个节点事件到达
+     时只替换那一张卡，不重放整段级联动画。 */
   function topologyFor(turn) {
     if (turn.topology && turn.topology.layers && turn.topology.layers.length) return turn.topology;
     return global.PersonhoodStages ? global.PersonhoodStages.build(turn.model_version || state.model) : { layers: [], edges: [] };
   }
   function vithiHtml(turn, content) {
     var chosen = turn.citta_vithi;
-    var processes = (turn.process || []).reduce(function (found, stage) { return found || (stage.mind_processes ? stage.mind_processes : null); }, null);
+    var processes = global.PersonhoodStages && global.PersonhoodStages.MIND_PROCESSES;
     if (!processes) return '';
     var picked = chosen && chosen.selected_process_id;
     return '<div class="v2-vithi">' + processes.map(function (proc) {
@@ -37,76 +84,134 @@
         + '<ol>' + (proc.steps || []).map(function (step, i) {
             return '<li>' + esc(step) + (notes[i] ? '<em>' + esc(notes[i]) + '</em>' : '') + '</li>';
           }).join('') + '</ol></section>';
-    }).join('') + (picked && chosen.reason ? '<p class="v2-muted">判定依据：' + esc(chosen.reason) + '</p>' : '') + '</div>';
+    }).join('') + (picked && chosen.reason ? '<p class="v2-muted">判定依据：' + esc(chosen.reason) + '</p>' : (!picked ? '<p class="v2-muted">心路判定分析中…</p>' : '')) + '</div>';
   }
-  // The controlled slots are keyed in English on the wire; label them in the
-  // page's own language rather than leaking the schema key to the reader.
-  var SLOT_LABELS = { door: '门', valence: '受', object_kind: '所缘类别', consciousness: '识' };
+  // Slots are rendered as a single formatted chip, not "<label>key</label>value" -
+  // that two-part rendering is exactly what put a stray "type" on screen.
+  function slotChipHtml(nodeId, key, value) {
+    if (!value) return '';
+    var text;
+    if (key === 'door') text = value + '门';
+    else if (key === 'valence') text = value;
+    else if (key === 'object_kind') text = value + '（所缘类别）';
+    else if (key === 'consciousness') text = value;
+    else text = value;
+    return '<span class="v2-slot">' + esc(text) + '</span>';
+  }
+  function nodeCiteHtml(node, turn) {
+    var content = (turn.nodes || {})[node.id];
+    var ids = content && content.evidence_ids || [];
+    if (!ids.length) return '';
+    var byId = {}; (turn.evidence || []).forEach(function (row) { byId[row.evidence_id] = row; });
+    var rows = ids.map(function (id) { return byId[id]; }).filter(Boolean);
+    if (!rows.length) return '';
+    return '<details class="v2-node-cites"><summary>' + rows.length + ' 条引文</summary><div class="v2-evidence">' + rows.map(evidenceRowHtml).join('') + '</div></details>';
+  }
   function nodeHtml(node, turn, layerIndex) {
     var content = (turn.nodes || {})[node.id] || null;
-    var slots = content && content.slots ? Object.keys(content.slots).map(function (key) {
-      return '<span class="v2-slot"><b>' + esc(SLOT_LABELS[key] || key) + '</b>' + esc(content.slots[key]) + '</span>';
-    }).join('') : '';
-    var body = content && content.filled
-      ? '<p>' + esc(content.filled) + '</p>'
-      : '<p class="v2-muted">' + (turn.ai && turn.ai.degraded ? '本节点等待 AI 分析。' : '分析中…') + '</p>';
+    var finished = turn.ai && !turn.ai.pending;
+    var slots = content && content.slots ? Object.keys(content.slots).map(function (key) { return slotChipHtml(node.id, key, content.slots[key]); }).join('') : '';
+    var body;
+    if (content && content.filled) body = '<p>' + esc(content.filled) + '</p>';
+    else if (finished) body = '<p class="v2-muted">本节点未生成具体内容。</p>';
+    else body = '<p class="v2-muted v2-pending"><span class="v2-spinner" aria-hidden="true"></span>分析中…</p>';
     var extra = node.id === 'citta-vithi' ? vithiHtml(turn, content) : '';
-    var cites = content && content.evidence_ids && content.evidence_ids.length
-      ? '<div class="v2-node-cites">' + content.evidence_ids.length + ' 条引文</div>' : '';
-    return '<article class="v2-node' + (node.branching ? ' branching' : '') + '" data-node="' + esc(node.id) + '" data-layer="' + layerIndex + '">'
+    var cites = nodeCiteHtml(node, turn);
+    return '<article class="v2-node' + (node.branching ? ' branching' : '') + (content ? ' is-filled' : '') + '" data-node="' + esc(node.id) + '" data-layer="' + layerIndex + '">'
       + '<header><span class="v2-node-label">' + esc(node.label) + '</span>'
       + (node.pali ? '<span class="v2-node-pali">' + esc(node.pali) + '</span>' : '') + '</header>'
       + (slots ? '<div class="v2-slots">' + slots + '</div>' : '') + body + extra + cites + '</article>';
   }
-  function flowHtml(turn, turnIndex) {
+  function flowHtml(turn) {
     var topology = topologyFor(turn);
     var rows = topology.layers.map(function (layer, index) {
-      return '<div class="v2-layer" data-layer="' + index + '" style="--cols:' + layer.nodes.length + '">'
+      return '<div class="v2-layer shown" data-layer="' + index + '" style="--cols:' + layer.nodes.length + '">'
         + layer.nodes.map(function (node) { return nodeHtml(node, turn, index); }).join('')
         + '</div>';
     }).join('');
-    return '<div class="v2-flow" data-turn="' + turnIndex + '"><svg class="v2-wires" aria-hidden="true"></svg>' + rows + '</div>';
+    return '<div class="v2-flow" data-turn-id="' + esc(turn.turn_id) + '"><svg class="v2-wires" aria-hidden="true"></svg>' + rows + '</div>';
   }
 
-  /* 分支：行动节点在渲染时暂停，让用户选一条或改写，选定后作为本轮输出。 */
+  /* ── 反复推演：戏论想念 → 寻 的回环每点一次真调一次 AI，追加一圈 ── */
+  function cyclesHtml(turn, turnIndex) {
+    var cycles = turn.papanca_cycles || [];
+    var busy = turn._cycleBusy;
+    var rows = cycles.map(function (cycle) {
+      return '<div class="v2-cycle"><b>第 ' + cycle.index + ' 圈</b>'
+        + '<span>寻：' + esc(cycle.thinking || '—') + '</span>'
+        + '<span>戏论：' + esc(cycle.papanca || '—') + '</span>'
+        + '<span>戏论想念：' + esc(cycle.papanca_sanna_sankha || '—') + '</span></div>';
+    }).join('');
+    var canIterate = turn.ai && !turn.ai.pending;
+    return '<div class="v2-card v2-cycles" data-role="cycles"><h3>反复推演（戏论想念 → 寻）</h3>'
+      + (rows || '<p class="v2-muted">尚未推演。点击下方按钮，让 AI 在已有内容基础上再具体推演一圈，不会重复已有内容。</p>')
+      + '<button class="' + (busy ? '' : 'primary') + '" data-iterate="' + turnIndex + '"' + (busy || !canIterate ? ' disabled' : '') + '>' + (busy ? '推演中…' : '再推演一轮') + '</button></div>';
+  }
+
+  /* ── 分支：语业、身业各自独立选择/改写/不采取；确认后作为本轮输出 ── */
+  function branchGroupHtml(turnIndex, node, content, chosen) {
+    var options = (content && content.options) || [];
+    var current = chosen ? chosen[node.id === 'speech-kamma' ? 'speech' : 'body'] : null;
+    if (current !== null && current !== undefined) {
+      return '<fieldset class="v2-choice-done"><legend>' + esc(node.label) + '</legend><p>' + (current ? esc(current) : '（本轮不采取）') + '</p></fieldset>';
+    }
+    var field = node.id === 'speech-kamma' ? 'speech' : 'body';
+    return '<fieldset data-field="' + field + '"><legend>' + esc(node.label) + '</legend>'
+      + options.map(function (option, i) {
+          return '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value="' + esc(option) + '"' + (i === 0 ? ' checked' : '') + '><span>' + esc(option) + '</span></label>';
+        }).join('')
+      + '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '-' + field + '" value=""><span>不采取</span></label>'
+      + '<input type="text" data-action-text="' + field + '" placeholder="改写为你实际要做的（可留空沿用上面所选）">'
+      + '</fieldset>';
+  }
   function choiceHtml(turn, turnIndex) {
     var topology = topologyFor(turn);
     var branching = [];
     topology.layers.forEach(function (layer) {
       layer.nodes.forEach(function (node) {
-        var content = (turn.nodes || {})[node.id];
-        if (node.branching && content && content.options && content.options.length) branching.push({node:node, content:content});
+        if (node.branching) branching.push(node);
       });
     });
     if (!branching.length) return '';
     if (turn.chosen_action) {
-      return '<div class="v2-card v2-chosen"><h3>本轮选择的行动</h3><p>' + esc(turn.chosen_action) + '</p>'
+      var speech = turn.chosen_action.speech, body = turn.chosen_action.body;
+      var lines = [];
+      if (speech) lines.push('<div><b>语业：</b>' + esc(speech) + '</div>');
+      if (body) lines.push('<div><b>身业：</b>' + esc(body) + '</div>');
+      if (!speech && !body) lines.push('<div class="v2-muted">本轮不采取身语行动。</div>');
+      return '<div class="v2-card v2-chosen" data-role="choice"><h3>本轮选择的行动</h3>' + lines.join('')
         + '<span class="v2-muted">下一轮请在最下方输入对方真实的回应，或自己新生起的心理活动。</span></div>';
     }
-    return '<div class="v2-card v2-choice" data-choice="' + turnIndex + '"><h3>选择这一轮实际要做的行动</h3>'
-      + branching.map(function (item) {
-          return '<fieldset><legend>' + esc(item.node.label) + '</legend>'
-            + item.content.options.map(function (option, i) {
-                return '<label class="v2-option"><input type="radio" name="act-' + turnIndex + '" value="' + esc(option) + '"' + (i === 0 && item === branching[0] ? ' checked' : '') + '><span>' + esc(option) + '</span></label>';
-              }).join('') + '</fieldset>';
-        }).join('')
-      + '<label class="v2-rewrite">改写为你实际要做的（可留空沿用上面所选）<input type="text" data-action-text placeholder="例如：我先说『我想确认你的意思』"></label>'
-      + '<button class="primary" data-confirm-action>确定这个行动</button></div>';
+    var ready = branching.every(function (node) { return (turn.nodes || {})[node.id]; });
+    if (!ready) return '<div class="v2-card v2-choice-loading" data-role="choice"><p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>正在生成可选的语业与身业…</p></div>';
+    return '<div class="v2-card v2-choice" data-role="choice" data-choice="' + turnIndex + '"><h3>选择这一轮实际要做的行动（语业、身业可分别选择或改写，也可都不采取）</h3>'
+      + branching.map(function (node) { return branchGroupHtml(turnIndex, node, (turn.nodes || {})[node.id], null); }).join('')
+      + '<button class="primary" data-confirm-action="' + turnIndex + '">确定这一轮的行动</button></div>';
+  }
+
+  function statusBarHtml(turn) {
+    var pending = turn.ai && turn.ai.pending;
+    var total = turn.total || 0, completed = turn.completed || 0;
+    var elapsed = (turn.elapsed_s != null ? turn.elapsed_s : 0).toFixed(1);
+    if (!pending && turn.ai) {
+      return '<div class="v2-status-bar done" data-role="status">第 ' + (turn._displayIndex + 1) + ' 轮 · 已用 ' + elapsed + 's · ' + (turn.ai.enabled ? '分析完成' : '未能生成逐节点分析') + '</div>';
+    }
+    return '<div class="v2-status-bar" data-role="status"><span class="v2-spinner" aria-hidden="true"></span>第 ' + (turn._displayIndex + 1) + ' 轮 · 已用 ' + elapsed + 's' + (total ? ' · 节点 ' + completed + '/' + total + ' 完成' : ' · 正在并发分析…') + '</div>';
   }
 
   function turnHtml(turn, index) {
-    var obs = turn.observation || {};
+    turn._displayIndex = index;
     var evidenceStatus = turn.evidence_status && !turn.evidence_status.available ? '<div class="v2-alert" role="status"><strong>本地引文库状态</strong><span>' + esc(turn.evidence_status.message || '请稍后重试。') + '</span></div>' : '';
     var notice = turn.ai && turn.ai.degraded && !turn.ai.pending
-      ? '<div class="v2-alert" role="status"><strong>逐节点分析未生成</strong><span>' + esc(turn.ai.message || 'AI 分析暂不可用；流程结构与引文仍可审阅。') + '</span></div>'
-      : '';
-    return '<div class="v2-message v2-user"><strong>第 ' + (index + 1) + ' 轮 · 你的输入</strong><div>' + esc(turn.observation && turn.observation.raw || '') + '</div></div>'
-      + '<div class="v2-message v2-assistant"><div class="v2-toolbar"><strong>过程分析</strong><span class="v2-muted">' + esc(turn.model_version || state.model) + '</span></div>'
-      + factHtml(obs) + evidenceStatus + notice + flowHtml(turn, index) + choiceHtml(turn, index)
-      + '<details class="v2-card"><summary>本轮 V4 引文（' + ((turn.evidence || []).length) + ' 条）</summary>' + evidenceHtml(turn.evidence) + '</details></div>';
+      ? '<div class="v2-alert" role="status" data-role="ai-banner"><strong>逐节点分析未生成</strong><span>' + esc(turn.ai.message || 'AI 分析暂不可用；流程结构与引文仍可审阅。') + '</span></div>'
+      : '<div data-role="ai-banner"></div>';
+    return '<div class="v2-message v2-user"><strong>第 ' + (index + 1) + ' 轮 · 你的输入</strong><div>' + esc(turn.observation && turn.observation.raw || turn.message || '') + '</div></div>'
+      + '<div class="v2-message v2-assistant">' + statusBarHtml(turn) + '<div class="v2-toolbar"><strong>过程分析</strong><span class="v2-muted">' + esc(turn.model_version || state.model) + '</span></div>'
+      + factHtml(turn) + evidenceStatus + notice + flowHtml(turn) + cyclesHtml(turn, index) + choiceHtml(turn, index)
+      + evidenceSectionHtml(turn) + '</div>';
   }
 
-  /* 连线：在每个 .v2-flow 上按实际盒模型画层间折线与回环。 */
+  /* ── 连线：在每个 .v2-flow 上按实际盒模型画层间折线与回环 ── */
   function drawConnectors(flow) {
     var svg = flow.querySelector('.v2-wires');
     if (!svg) return;
@@ -121,6 +226,7 @@
     for (var i = 0; i < layers.length - 1; i++) {
       var from = [].slice.call(layers[i].querySelectorAll('.v2-node')).map(rect);
       var to = [].slice.call(layers[i + 1].querySelectorAll('.v2-node')).map(rect);
+      if (!from.length || !to.length) continue;
       var gapTop = Math.max.apply(null, from.map(function (r) { return r.bottom; }));
       var gapBottom = Math.min.apply(null, to.map(function (r) { return r.top; }));
       var mid = (gapTop + gapBottom) / 2;
@@ -131,7 +237,6 @@
         parts.push('<path d="M' + Math.min.apply(null, xs) + ',' + mid + ' H' + Math.max.apply(null, xs) + '" />');
       }
     }
-    // 戏论想念 → 寻 的回环：从右侧绕回，表示反复推演而非线性终点
     var loopFrom = flow.querySelector('[data-node="papanca-sanna-sankha"]');
     var loopTo = flow.querySelector('[data-node="thinking"]');
     if (loopFrom && loopTo) {
@@ -144,26 +249,6 @@
   }
   function drawAllConnectors(app) {
     [].slice.call(app.querySelectorAll('.v2-flow')).forEach(drawConnectors);
-  }
-
-  /* 逐层流出：自动一层一层淡入，遇到需要选择的行动层就停下。 */
-  function revealLayers(app) {
-    var flows = [].slice.call(app.querySelectorAll('.v2-flow'));
-    flows.forEach(function (flow, flowIndex) {
-      var layers = [].slice.call(flow.querySelectorAll('.v2-layer'));
-      var isLatest = flowIndex === flows.length - 1;
-      layers.forEach(function (layer, index) {
-        if (!isLatest) { layer.classList.add('shown'); return; }
-        setTimeout(function () {
-          layer.classList.add('shown');
-          drawConnectors(flow);
-          if (index === layers.length - 1) {
-            var choice = app.querySelector('.v2-choice');
-            if (choice) choice.classList.add('shown');
-          }
-        }, 140 * index);
-      });
-    });
   }
 
   function fetchJson(url) { return fetch(url, {cache:'force-cache'}).then(function (response) { if (!response.ok) throw new Error('HTTP ' + response.status); return response.json(); }); }
@@ -179,6 +264,18 @@
     return (data.registry.queries || []).map(function (item) { return item.id; }).filter(function (id) { return required[id]; });
   }
   function shard(id, data) { if (bundle.shards[id]) return bundle.shards[id]; var runtime = (data.runtime_files && data.runtime_files[id] && data.runtime_files[id].file) || ('runtime/' + id + '.json.gz'); bundle.shards[id] = fetchJson(EVIDENCE_BASE + '/' + runtime).catch(function () { return fetchJson(EVIDENCE_BASE + '/' + data.files[id].file); }); return bundle.shards[id]; }
+  // Sort by real term overlap with what the user actually wrote, not by
+  // "does the whole sentence appear verbatim" (which almost never fires) -
+  // and keep the candidate pool small since the prompt only needs ~12 rows
+  // per node call, not 48.
+  function wordOverlapScore(message, row) {
+    var text = String(message || '');
+    var chars = {}; for (var i = 0; i < text.length - 1; i++) chars[text.slice(i, i + 2)] = 1;
+    var hay = String(row.snippet || row.text || '');
+    var score = 0;
+    Object.keys(chars).forEach(function (bigram) { if (hay.indexOf(bigram) >= 0) score += 1; });
+    return score;
+  }
   function selectEvidence(message, model) {
     return manifest().then(function (data) {
       var concepts = selectedConcepts(message, model, data);
@@ -189,34 +286,190 @@
           if (model === 'pali-canonical/v2' && row.provenance !== 'canonical') return;
           if (!rows[row.evidence_id]) rows[row.evidence_id] = row;
         }); });
-        var words = String(message || '').replace(/\s+/g, '');
         var list = Object.keys(rows).map(function (id) { return rows[id]; });
         list.sort(function (a, b) {
-          function score(row) { var directScore = direct[row.work_id + ':' + row.row_id] ? 10000 : 0; var conceptScore = (row.concept_ids || []).filter(function (id) { return concepts.indexOf(id) >= 0; }).length * 100; var wording = (row.text || '') + (row.snippet || ''); var inputScore = words && wording.indexOf(words) >= 0 ? 50 : 0; return directScore + conceptScore + inputScore; }
+          function score(row) { var directScore = direct[row.work_id + ':' + row.row_id] ? 10000 : 0; var conceptScore = (row.concept_ids || []).filter(function (id) { return concepts.indexOf(id) >= 0; }).length * 100; return directScore + conceptScore + wordOverlapScore(message, row); }
           return score(b) - score(a) || String(a.evidence_id).localeCompare(String(b.evidence_id));
         });
-        return {version:data.version, rows:list.slice(0, 48)};
+        return {version:data.version, rows:list.slice(0, 16)};
       });
     });
   }
   function observe(message) { var text = String(message || '').trim(); var parts = text.split(/[，。！？；;]+/).filter(Boolean); var facts = parts.filter(function (part) { return /看见|看到|听见|听到|发生|别人对我做|别人对我说|对方说|他说|她说|讨论法义/.test(part); }); var reports = parts.filter(function (part) { return /我觉得|我感到|我感觉|我想|我害怕|我生气|我希望|我担心|胸口发紧|心里发紧|身体发紧|发紧/.test(part); }); var attribution = parts.filter(function (part) { return /他想|她想|对方想|针对我|看不起我|讨厌我|故意|要害我|评价我|否定我|轻视我/.test(part); }); return {raw:text,observable_events:facts,first_person_reports:reports,attributions_not_facts:attribution,unknown_or_needs_clarification:(facts.length||reports.length||attribution.length)?parts.filter(function(part){return facts.indexOf(part)<0&&reports.indexOf(part)<0&&attribution.indexOf(part)<0;}):[text]}; }
 
-  // Local placeholder turn: correct topology, no fabricated per-node content.
-  function localTurn(message, selected, reason) {
+  function newTurn(message, modelVersion) {
     return {
-      schema_version:'personhood-interaction/v2',
-      model_version:state.model,
-      observation:observe(message),
-      evidence_status:{available:selected.rows.length>0, message:reason||'本轮引文从已保存的本地 V4 引文库抽取。'},
-      topology:(global.PersonhoodStages ? global.PersonhoodStages.build(state.model) : {layers:[],edges:[]}),
-      nodes:{},
-      evidence:selected.rows,
-      ai:{enabled:false,degraded:false,pending:true},
-      evidence_bundle_version:selected.version
+      turn_id: uid(), message: message, model_version: modelVersion,
+      observation: observe(message), topology: (global.PersonhoodStages ? global.PersonhoodStages.build(modelVersion) : {layers:[],edges:[]}),
+      nodes: {}, citta_vithi: null, papanca_cycles: [], chosen_action: null,
+      evidence: [], evidence_status: null, ai: {enabled:false, degraded:false, pending:true},
+      total: null, completed: 0, elapsed_s: 0, started_at: Date.now(), job_id: null,
     };
   }
 
-  function render() {
+  /* ── 顶部计时：进行中的轮次每秒刷新一次已用时长，不等事件到达也在走 ── */
+  var tickTimer = null;
+  function ensureTicking(app) {
+    clearInterval(tickTimer);
+    tickTimer = setInterval(function () {
+      var pendingTurn = state.turns[state.turns.length - 1];
+      if (!pendingTurn || !pendingTurn.ai || !pendingTurn.ai.pending) { clearInterval(tickTimer); return; }
+      pendingTurn.elapsed_s = (Date.now() - pendingTurn.started_at) / 1000;
+      var bar = app.querySelector('.v2-message:last-of-type [data-role="status"]');
+      if (bar) bar.outerHTML = statusBarHtml(pendingTurn);
+    }, 500);
+  }
+
+  /* ── 增量патch：单个事件只替换它对应的那一小块 DOM，不重跑整段渲染 ── */
+  function turnBlockEl(app, turnIndex) {
+    var flows = app.querySelectorAll('.v2-flow');
+    var flow = flows[turnIndex];
+    return flow ? flow.closest('.v2-assistant') : null;
+  }
+  function patchNode(app, turnIndex, turn, nodeId) {
+    var flow = app.querySelectorAll('.v2-flow')[turnIndex];
+    if (!flow) return;
+    var el = flow.querySelector('[data-node="' + nodeId + '"]');
+    if (!el) return;
+    var topology = topologyFor(turn);
+    var node = null, layerIndex = 0;
+    topology.layers.forEach(function (layer, index) { layer.nodes.forEach(function (n) { if (n.id === nodeId) { node = n; layerIndex = index; } }); });
+    if (!node) return;
+    var temp = document.createElement('div');
+    temp.innerHTML = nodeHtml(node, turn, layerIndex);
+    el.replaceWith(temp.firstElementChild);
+    drawConnectors(flow);
+  }
+  function patchRegion(block, selector, html) {
+    if (!block) return;
+    var el = block.querySelector(selector);
+    if (el) el.outerHTML = html;
+  }
+  function patchTurn(app, turnIndex, turn, changed) {
+    var block = turnBlockEl(app, turnIndex);
+    if (!block) return;
+    if (changed === 'facts' || changed === 'final') patchRegion(block, '[data-role="facts"]', factHtml(turn));
+    if (changed === 'node' || changed === 'vithi' || changed === 'final') {
+      patchRegion(block, '[data-role="choice"]', choiceHtml(turn, turnIndex));
+      patchRegion(block, '[data-role="evidence-section"]', evidenceSectionHtml(turn));
+      var cyclesEl = block.querySelector('[data-role="cycles"]');
+      if (cyclesEl) cyclesEl.outerHTML = cyclesHtml(turn, turnIndex);
+    }
+    var bar = block.querySelector('[data-role="status"]');
+    if (bar) bar.outerHTML = statusBarHtml(turn);
+    if (changed === 'final') {
+      var banner = block.querySelector('[data-role="ai-banner"]');
+      if (banner) banner.outerHTML = (turn.ai && turn.ai.degraded && !turn.ai.pending
+        ? '<div class="v2-alert" role="status" data-role="ai-banner"><strong>逐节点分析未生成</strong><span>' + esc(turn.ai.message || 'AI 分析暂不可用；流程结构与引文仍可审阅。') + '</span></div>'
+        : '<div data-role="ai-banner"></div>');
+    }
+    bindTurnEvents(app, turnIndex);
+  }
+
+  /* ── SSE 事件处理：把每个到达的事件落到对应的轮次和 DOM 区域 ── */
+  function analyzeHandler(app, turnIndex) {
+    return function (evt) {
+      var turn = state.turns[turnIndex];
+      if (!turn) return;
+      if (evt.type === 'job') {
+        turn.job_id = evt.job_id;
+        turn.topology = evt.topology || turn.topology;
+        turn.evidence = evt.evidence || [];
+        turn.evidence_bundle_version = evt.evidence_bundle_version;
+        turn.evidence_status = evt.evidence_status;
+        if (!turn.observation || !turn.observation.raw) turn.observation = evt.observation_fallback || turn.observation;
+        aiJobRemember(JOB_KIND, evt.job_id, state.conversationId);
+        persist();
+        var flow = app.querySelectorAll('.v2-flow')[turnIndex];
+        if (flow) { flow.outerHTML = flowHtml(turn); drawConnectors(app.querySelectorAll('.v2-flow')[turnIndex]); }
+        patchTurn(app, turnIndex, turn, 'facts');
+      } else if (evt.type === 'observation') {
+        if (evt.observation) turn.observation = evt.observation;
+        turn.completed = evt.completed; turn.total = evt.total; turn.elapsed_s = evt.elapsed_s;
+        persist();
+        patchTurn(app, turnIndex, turn, 'facts');
+      } else if (evt.type === 'vithi') {
+        turn.citta_vithi = evt.citta_vithi;
+        turn.completed = evt.completed; turn.total = evt.total; turn.elapsed_s = evt.elapsed_s;
+        persist();
+        patchNode(app, turnIndex, turn, 'citta-vithi');
+        patchTurn(app, turnIndex, turn, 'vithi');
+      } else if (evt.type === 'node') {
+        if (evt.node) turn.nodes[evt.node_id] = evt.node;
+        turn.completed = evt.completed; turn.total = evt.total; turn.elapsed_s = evt.elapsed_s;
+        persist();
+        patchNode(app, turnIndex, turn, evt.node_id);
+        patchTurn(app, turnIndex, turn, 'node');
+      } else if (evt.type === 'final') {
+        if (evt.nodes) turn.nodes = evt.nodes;
+        if (evt.observation) turn.observation = evt.observation;
+        if (evt.citta_vithi) turn.citta_vithi = evt.citta_vithi;
+        turn.ai = evt.ai || {enabled:false, degraded:true, pending:false};
+        turn.elapsed_s = evt.elapsed_s;
+        turn.completed = turn.total || turn.completed;
+        aiJobForget(JOB_KIND);
+        persist();
+        var flow2 = app.querySelectorAll('.v2-flow')[turnIndex];
+        if (flow2) { flow2.outerHTML = flowHtml(turn); drawConnectors(app.querySelectorAll('.v2-flow')[turnIndex]); }
+        patchTurn(app, turnIndex, turn, 'final');
+      } else if (evt.type === 'error') {
+        turn.ai = {enabled:false, degraded:true, pending:false, message: evt.detail};
+        aiJobForget(JOB_KIND);
+        persist();
+        patchTurn(app, turnIndex, turn, 'final');
+      }
+    };
+  }
+
+  async function runAnalyze(app, turnIndex, request) {
+    var status = app.querySelector('[data-status]');
+    var handler = analyzeHandler(app, turnIndex);
+    try {
+      var res = await fetch(base() + '/api/personhood/v2/analyze', {method:'POST', headers:headers(), body:JSON.stringify(request)});
+      if (!res.ok) {
+        var data = {}; try { data = await res.json(); } catch (_) {}
+        var detail = data.detail || '';
+        if (res.status === 401) detail = '登录状态已失效，请重新登录后再试。';
+        if (res.status === 402) detail = detail || '免费额度已用完，逐节点分析暂时无法生成。';
+        throw new Error(detail || ('分析失败（HTTP ' + res.status + '）'));
+      }
+      await aiJobConsume(res, handler);
+    } catch (error) {
+      var turn = state.turns[turnIndex];
+      if (turn && turn.ai && turn.ai.pending) { turn.ai = {enabled:false, degraded:true, pending:false, message: error.message}; persist(); patchTurn(app, turnIndex, turn, 'final'); }
+      if (status) status.textContent = '本轮分析出错：' + error.message;
+    }
+  }
+
+  /* ── 离开页面再回来：自动接续未完成的分析（不重新触发、不重新计费） ── */
+  // Deliberately does not filter by status: a job that finished *while the
+  // reader was away* is exactly the case this whole feature exists for, and
+  // /api/ai-jobs/{id}/stream (via aiJobAttach) replays a "done" job's full
+  // event log just as readily as it follows a "running" one live - the only
+  // wrong move here would be treating "already finished" as "give up".
+  async function findPendingJob() {
+    var local = global.aiJobPending ? global.aiJobPending(JOB_KIND) : null;
+    if (local && local.ref === state.conversationId) return local;
+    try {
+      var res = await fetch(base() + '/api/ai-jobs/latest?kind=' + encodeURIComponent(JOB_KIND) + '&ref=' + encodeURIComponent(state.conversationId), {headers: headers()});
+      if (!res.ok) return null;
+      var data = await res.json();
+      var job = data.job;
+      if (!job) return null;
+      return {job_id: job.id, ref: job.ref};
+    } catch (_) { return null; }
+  }
+  async function resumeIfPending(app) {
+    var last = state.turns[state.turns.length - 1];
+    if (!last || !last.ai || !last.ai.pending) return;
+    var pending = await findPendingJob();
+    if (!pending) { last.ai = {enabled:false, degraded:true, pending:false, message:'离开期间未能确认分析状态，请重新发起本轮。'}; persist(); patchTurn(app, state.turns.length - 1, last, 'final'); return; }
+    var handler = analyzeHandler(app, state.turns.length - 1);
+    try { await global.aiJobAttach(pending.job_id, handler); }
+    catch (error) { last.ai = {enabled:false, degraded:true, pending:false, message: error.message}; persist(); patchTurn(app, state.turns.length - 1, last, 'final'); }
+  }
+
+  function render(skipResume) {
     var app = document.getElementById('app');
     if (!app) return;
     load();
@@ -224,7 +477,7 @@
     app.innerHTML = '<div class="personhood-lab personhood-v2"><div class="v2-chat">'
       + '<div class="v2-hero"><div class="v2-kicker">V4 STATIC CITATIONS · INTERACTION LAB</div>'
       + '<h2>有情互动与经验形成实验室</h2>'
-      + '<p class="v2-subtitle">输入一个真实发生的现象。系统抽取 V4 引文，按门、触、受、想、寻、戏论、爱、取、有到身语意行动逐层推演；每一层只呈现这一轮的具体内容。</p>'
+      + '<p class="v2-subtitle">输入一个真实发生的现象。系统并发调用 AI 为门、触、受、想、寻、戏论、爱、取、有到身语意行动逐节点具体分析；节点独立完成，可离开页面，回来后自动接续。</p>'
       + '<div class="v2-toolbar"><div class="v2-segment">'
       + '<button class="' + (state.model === 'pali-canonical/v2' ? 'active' : '') + '" data-model="pali-canonical/v2">经律原典版</button>'
       + '<button class="' + (state.model === 'theravada-synthesis/v2' ? 'active' : '') + '" data-model="theravada-synthesis/v2">分层整合版</button>'
@@ -239,27 +492,89 @@
       + methodHtml() + '</main></div></div>';
 
     app.querySelectorAll('[data-model]').forEach(function (button) { button.addEventListener('click', function () { state.model = button.getAttribute('data-model'); persist(); render(); }); });
-    app.querySelector('[data-new]').addEventListener('click', function () { state.turns=[]; state.savedCaseId=null; state.selectedPath=null; state.selectedAction=null; persist(); render(); });
+    app.querySelector('[data-new]').addEventListener('click', function () { state.turns=[]; state.savedCaseId=null; state.selectedPath=null; state.selectedAction=null; state.conversationId=uid(); persist(); render(); });
     app.querySelector('[data-research]').addEventListener('click', function () { global.location.hash = '#/personhood/research'; if (global.renderPersonhoodResearch) global.renderPersonhoodResearch(); });
     app.querySelector('[data-send]').addEventListener('click', send);
-    var confirmBtn = app.querySelector('[data-confirm-action]');
-    if (confirmBtn) confirmBtn.addEventListener('click', function () {
-      var card = confirmBtn.closest('.v2-choice');
-      var typed = card.querySelector('[data-action-text]').value.trim();
-      var picked = card.querySelector('input[type=radio]:checked');
-      var chosen = typed || (picked ? picked.value : '');
-      if (!chosen) return;
-      state.turns[state.turns.length - 1].chosen_action = chosen;
-      state.selectedAction = chosen;
-      persist();
-      render();
-    });
     app.querySelector('[data-save]').addEventListener('click', save);
-    revealLayers(app);
-    requestAnimationFrame(function () { drawAllConnectors(app); });
+    for (var i = 0; i < state.turns.length; i++) bindTurnEvents(app, i);
+    drawAllConnectors(app);
+    ensureTicking(app);
+    // Input is deliberately last in the DOM (below every recorded turn) so
+    // each new round is entered where the reader's eye already is, after
+    // reading what just happened - not back at the top of the page.
+    //
+    // Skipped right after send() pushes a fresh turn: that caller is about
+    // to create the job itself, and resuming here too would race it into a
+    // second concurrent SSE attach to the same job.
+    if (!skipResume) resumeIfPending(app);
   }
 
-  function send() {
+  // Delegated on the stable .v2-assistant block rather than on the buttons
+  // themselves: choice/iterate regions get replaced wholesale via outerHTML
+  // on every SSE event (see patchTurn), which would otherwise silently
+  // detach a directly-bound listener the next time a node event landed.
+  function bindTurnEvents(app, turnIndex) {
+    var block = turnBlockEl(app, turnIndex);
+    if (!block || block.dataset.bound === '1') return;
+    block.dataset.bound = '1';
+    block.addEventListener('click', function (event) {
+      var confirmBtn = event.target.closest('[data-confirm-action]');
+      if (confirmBtn) {
+        var card = confirmBtn.closest('.v2-choice');
+        var chosen = {speech: null, body: null};
+        card.querySelectorAll('fieldset[data-field]').forEach(function (fieldset) {
+          var field = fieldset.getAttribute('data-field');
+          var typed = fieldset.querySelector('[data-action-text]').value.trim();
+          var picked = fieldset.querySelector('input[type=radio]:checked');
+          chosen[field] = typed || (picked ? picked.value : '') || null;
+        });
+        var turn = state.turns[turnIndex];
+        turn.chosen_action = chosen;
+        state.selectedAction = chosen;
+        persist();
+        patchTurn(app, turnIndex, turn, 'node');
+        return;
+      }
+      var iterateBtn = event.target.closest('[data-iterate]');
+      if (iterateBtn) runIterate(app, turnIndex);
+    });
+  }
+
+  async function runIterate(app, turnIndex) {
+    var turn = state.turns[turnIndex];
+    if (!turn || turn._cycleBusy) return;
+    turn._cycleBusy = true;
+    persist();
+    patchTurn(app, turnIndex, turn, 'node');
+    var request = {
+      message: turn.observation && turn.observation.raw || turn.message, model_version: turn.model_version,
+      conversation_id: state.conversationId, prior_cycles: turn.papanca_cycles || [],
+      evidence_bundle_version: turn.evidence_bundle_version || 'personhood-evidence/v1', selected_evidence: turn.evidence || [],
+    };
+    try {
+      var res = await fetch(base() + '/api/personhood/v2/iterate', {method:'POST', headers:headers(), body:JSON.stringify(request)});
+      if (!res.ok) {
+        var data = {}; try { data = await res.json(); } catch (_) {}
+        throw new Error(data.detail || ('推演失败（HTTP ' + res.status + '）'));
+      }
+      var cycle = null;
+      await aiJobConsume(res, function (evt) {
+        if (evt.type === 'job') aiJobRemember(ITER_JOB_KIND, evt.job_id, state.conversationId);
+        else if (evt.type === 'final') { cycle = evt.cycle; aiJobForget(ITER_JOB_KIND); }
+        else if (evt.type === 'error') { throw new Error(evt.detail || '推演失败'); }
+      });
+      if (cycle) { turn.papanca_cycles = (turn.papanca_cycles || []).concat([cycle]); }
+    } catch (error) {
+      var status = app.querySelector('[data-status]');
+      if (status) status.textContent = '推演失败：' + error.message;
+    } finally {
+      turn._cycleBusy = false;
+      persist();
+      patchTurn(app, turnIndex, turn, 'node');
+    }
+  }
+
+  async function send() {
     var app = document.getElementById('app');
     var input = app.querySelector('[data-input]');
     var message = input.value.trim();
@@ -267,51 +582,30 @@
     var status = app.querySelector('[data-status]');
     // Per-node analysis is an authenticated, metered call; ask up front rather
     // than silently handing back the structure with every node empty.
-    Promise.resolve(global.communityRequireLogin ? global.communityRequireLogin() : true).then(function (ok) {
-      if (!ok) { status.textContent = '需要登录后才能生成逐节点分析。'; return; }
-      status.textContent = '正在抽取引文并逐层分析…';
-      // Citations enrich the turn; they are not a precondition for it. If the
-      // static bundle is unreachable, carry on with none rather than leaving
-      // the user with no analysis at all.
-      return selectEvidence(message, state.model).catch(function (error) {
-        return { version: 'personhood-evidence/v1', rows: [], error: error.message };
-      }).then(function (selected) {
-        var request = {
-          message: message, model_version: state.model, conversation_id: 'local-personhood-v2',
-          parent_turn_id: state.turns.length ? 'turn-' + state.turns.length : null,
-          selected_path: state.selectedPath, selected_action: state.selectedAction,
-          previous_observations: state.turns.map(function (t) { return t.observation && t.observation.raw; }).slice(-12),
-          evidence_bundle_version: selected.version, selected_evidence: selected.rows
-        };
-        var turnIndex = state.turns.length;
-        state.turns.push(localTurn(message, selected, selected.error ? ('本地引文库暂不可用（' + selected.error + '）；逐层分析仍会进行，但本轮不附引文。') : '本轮引文从已保存的本地 V4 引文库抽取。'));
-        state.selectedPath = null; state.selectedAction = null;
-        input.value = '';
-        persist(); render();
-        return fetch(base() + '/api/personhood/v2/analyze', {method:'POST', headers:headers(), body:JSON.stringify(request)})
-          .then(function (response) {
-            return response.text().then(function (raw) {
-              var data = {}; try { data = raw ? JSON.parse(raw) : {}; } catch (_) {}
-              if (!response.ok) {
-                var detail = data.detail || '';
-                if (response.status === 401) detail = '登录状态已失效，请重新登录后再试。';
-                if (response.status === 402) detail = detail || '免费额度已用完，逐节点分析暂时无法生成。';
-                var err = new Error(detail || ('分析失败（HTTP ' + response.status + '）'));
-                throw err;
-              }
-              return data;
-            });
-          })
-          .then(function (data) { if (data.turn) { state.turns[turnIndex] = data.turn; persist(); render(); } })
-          .catch(function (error) {
-            var current = state.turns[turnIndex];
-            if (current) { current.ai = {enabled:false, degraded:true, pending:false, message:error.message}; persist(); render(); }
-          });
-      });
-    }).catch(function (error) { status.textContent = '本地引文库暂不可用：' + error.message; });
+    var ok = global.communityRequireLogin ? await global.communityRequireLogin() : true;
+    if (!ok) { status.textContent = '需要登录后才能生成逐节点分析。'; return; }
+    status.textContent = '正在抽取引文并并发分析…';
+    var selected;
+    try { selected = await selectEvidence(message, state.model); }
+    catch (error) { selected = { version: 'personhood-evidence/v1', rows: [], error: error.message }; }
+    var request = {
+      message: message, model_version: state.model, conversation_id: state.conversationId,
+      parent_turn_id: state.turns.length ? 'turn-' + state.turns.length : null,
+      selected_path: state.selectedPath, selected_action: state.selectedAction,
+      previous_observations: state.turns.map(function (t) { return t.observation && t.observation.raw; }).slice(-12),
+      evidence_bundle_version: selected.version, selected_evidence: selected.rows,
+    };
+    var turn = newTurn(message, state.model);
+    if (selected.error) turn.evidence_status = {available:false, message:'本地引文库暂不可用（' + selected.error + '）；逐节点分析仍会进行，但本轮不附引文。'};
+    var turnIndex = state.turns.length;
+    state.turns.push(turn);
+    state.selectedPath = null; state.selectedAction = null;
+    input.value = '';
+    persist(); render(true);
+    await runAnalyze(app, turnIndex, request);
   }
 
-  function save() {
+  async function save() {
     var app = document.getElementById('app');
     var status = app.querySelector('[data-save-status]');
     if (!state.turns.length) { status.textContent='请先完成至少一轮。'; return; }
@@ -324,7 +618,39 @@
       .catch(function(){status.textContent='保存失败；本地案例仍保留，可稍后重试。';});
   }
 
-  function renderResearch() { var app = document.getElementById('app'); if (!app) return; app.innerHTML = '<div class="personhood-lab personhood-v2"><div class="v2-chat"><div class="v2-hero"><div class="v2-kicker">RESEARCH · STATIC V4 CITATIONS</div><h2>证据与研究清单</h2><p class="v2-subtitle">固定词表在构建时完整遍历全部 217 部 V4；实验室只从版本化静态分片抽取引文。</p><button data-back>返回实验室</button></div><div class="v2-card"><h3>互动过程词表</h3><p>触、受、想、作意、寻思、戏论、爱、取、有、慢、见、随眠、身语意行动、正念、明觉与修复。</p><p class="v2-muted">完整台账保留查询词、段落、三语文本、层级与校验值；它是固定词法命中的可审计集合，不伪装为穷尽全部语义相关经文。</p></div></div></div>'; app.querySelector('[data-back]').addEventListener('click', function(){global.location.hash='#/personhood';render();}); }
+  /* ── 证据研究页：读 manifest 渲染真实台账，不再是写死文案 ── */
+  function statHtml(value, label) { return '<div class="v2-stat"><b>' + esc(value) + '</b><span>' + esc(label) + '</span></div>'; }
+  function researchBodyHtml(data) {
+    var src = data.source_manifest || {};
+    var conceptRows = Object.keys(data.files || {}).map(function (id) { return Object.assign({id: id}, data.files[id]); }).sort(function (a, b) { return b.records - a.records; });
+    var conceptTotal = conceptRows.reduce(function (sum, row) { return sum + (row.records || 0); }, 0);
+    var passageTotal = Object.keys(data.passages || {}).reduce(function (sum, id) { return sum + (data.passages[id].records || 0); }, 0);
+    return '<div class="v2-stats">'
+      + statHtml((src.corpus_row_count || 0).toLocaleString(), '逐句正文行')
+      + statHtml((src.corpus_work_count || 0).toLocaleString(), '部作品')
+      + statHtml(conceptRows.length, '个概念词表')
+      + statHtml(conceptTotal.toLocaleString(), '条成员记录')
+      + statHtml(Object.keys(data.passages || {}).length, '部作品分片')
+      + statHtml(passageTotal.toLocaleString(), '条分片记录')
+      + '</div>'
+      + '<h3>概念台账（按记录数排序）</h3>'
+      + '<div class="v2-table-wrap"><table class="v2-table"><thead><tr><th>概念</th><th>记录数</th><th>文件</th><th>sha256</th></tr></thead><tbody>'
+      + conceptRows.map(function (row) { return '<tr><td>' + esc(row.id) + '</td><td>' + (row.records || 0).toLocaleString() + '</td><td>' + esc(row.file) + '</td><td class="v2-hash">' + esc((row.sha256 || '').slice(0, 16)) + '…</td></tr>'; }).join('')
+      + '</tbody></table></div>'
+      + '<h3>定向引文（' + (data.direct_citations || []).length + ' 条）</h3>'
+      + '<div class="v2-table-wrap"><table class="v2-table"><thead><tr><th>作品</th><th>行号</th><th>说明</th></tr></thead><tbody>'
+      + (data.direct_citations || []).map(function (row) { return '<tr><td>' + esc(row.work_id) + '</td><td>' + esc(row.row_id) + '</td><td>' + esc(row.label) + '</td></tr>'; }).join('')
+      + '</tbody></table></div>'
+      + '<h3>完整性校验</h3><p>' + esc(data.integrity && data.integrity.file || '') + ' · ' + (data.integrity && data.integrity.records || 0).toLocaleString() + ' 条记录<br><span class="v2-hash">sha256 ' + esc(data.integrity && data.integrity.sha256 || '') + '</span></p>'
+      + '<p class="v2-muted">版本 ' + esc(data.version || '') + ' · 词表范围 ' + esc((data.registry && data.registry.scope) || '') + '</p>';
+  }
+  function renderResearch() {
+    var app = document.getElementById('app'); if (!app) return;
+    app.innerHTML = '<div class="personhood-lab personhood-v2"><div class="v2-chat"><div class="v2-hero"><div class="v2-kicker">RESEARCH · STATIC V4 CITATIONS</div><h2>证据与研究清单</h2><p class="v2-subtitle">读取已发布的静态引文库清单，逐条给出真实的记录数与完整性哈希，而非固定描述。</p><button data-back>返回实验室</button></div><div class="v2-card" id="v2ResearchBody"><p class="v2-muted">正在读取 manifest…</p></div></div></div>';
+    app.querySelector('[data-back]').addEventListener('click', function(){global.location.hash='#/personhood';render();});
+    manifest().then(function (data) { var el = document.getElementById('v2ResearchBody'); if (el) el.innerHTML = researchBodyHtml(data); })
+      .catch(function (error) { var el = document.getElementById('v2ResearchBody'); if (el) el.innerHTML = '<p class="error-msg">证据清单读取失败：' + esc(error.message) + '</p><button data-retry>重试</button>'; var retry = el && el.querySelector('[data-retry]'); if (retry) retry.addEventListener('click', renderResearch); });
+  }
 
   var resizeTimer;
   global.addEventListener('resize', function () {
