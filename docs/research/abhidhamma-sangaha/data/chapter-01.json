@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-01",
     "title": "第一 摄心分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 16,
     "physical_page_end": 33,
     "file": "data/chapter-01.json",
+    "semantic_file": "semantic/chapter-01.html",
+    "source_doc": "source/doc/05-Chap01_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-01"
+  },
+  "semantic": {
+    "blocks": 427,
+    "paragraphs": 397,
+    "tables": 30,
+    "page_anchors": 18,
+    "text_matched_pages": 0,
+    "proportional_pages": 18,
+    "media": 1
   },
   "pages": [
     {

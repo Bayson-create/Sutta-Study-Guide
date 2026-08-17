@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide-audit/v1",
+  "format": "abhidhamma-table-guide-audit/v2",
   "source": {
     "file": "research/abhidhamma-sangaha/source/abhidhammattha-sangaha_Table-full-text.pdf",
     "sha256": "75bb8bfe409fd19331d306883072db239a981529cd2ff5acdb79f78001b1d448",
@@ -135,11 +135,828 @@
       "麼→么": 222
     }
   },
+  "source_documents": [
+    {
+      "section": "content",
+      "file": "source/doc/03-content.doc",
+      "sha256": "c60dc0ea9a28a2690e8d80339ef60a865ffef4e198add788a814b99651d343e9",
+      "bytes": 43520,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 243,
+        "tables": 1,
+        "images": 0
+      },
+      "normalized_docx_sha256": "66edbd29327932e91e64f24de9d9ce353e372356d4b2ffe47ce46225b635a410",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 4,
+      "page_anchor_mode": "exact-source-page-count",
+      "docx_structure": {
+        "paragraphs": 235,
+        "tables": 1,
+        "drawings": 3,
+        "textboxes": 0,
+        "bookmarks": 1,
+        "page_breaks": 0,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "preface",
+      "file": "source/doc/04-preface.doc",
+      "sha256": "85855751d4d1551491c4e485207357f206d112268c43fdb4ba4f8c273952a805",
+      "bytes": 99840,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 277,
+        "tables": 0,
+        "images": 0
+      },
+      "normalized_docx_sha256": "b2ace9867b408d36f95f1289cbeabe06c2dfbac43d0eb91436e7f2adf6bc464d",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 8,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 230,
+        "tables": 0,
+        "drawings": 124,
+        "textboxes": 114,
+        "bookmarks": 0,
+        "page_breaks": 1,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-01",
+      "file": "source/doc/05-Chap01_ADS_T.doc",
+      "sha256": "e9f2636600e5c3b323edc77ea4b1901892583558510c048ed84fec4c2e5c29c3",
+      "bytes": 549888,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1605,
+        "tables": 31,
+        "images": 0
+      },
+      "normalized_docx_sha256": "ba091ef21df99945e408428f4a521f911a7945698952ff8c499f264610b4d2bd",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 18,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 2234,
+        "tables": 47,
+        "drawings": 87,
+        "textboxes": 122,
+        "bookmarks": 11,
+        "page_breaks": 6,
+        "footnote_refs": 37
+      },
+      "media": [
+        {
+          "source": "word/media/image1.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-01/image1.png",
+          "bytes": 122345,
+          "sha256": "ec45155ffa25eeba6bf89601dcd2f9c91ce61dbed6748eab57f9914ad3d2646e",
+          "conversion": "original"
+        }
+      ]
+    },
+    {
+      "section": "chapter-02",
+      "file": "source/doc/06-Chap02_ADS_T.doc",
+      "sha256": "1490e6a8ac2019e0976d54de47f170d858d65d39c8acc99aaf7e31bd6ccc2076",
+      "bytes": 1335296,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1060,
+        "tables": 9,
+        "images": 0
+      },
+      "normalized_docx_sha256": "994af0edbebc2a85c5fdc6b96af88e8fb191fc1e63b2ec5387b736ee25aa3bd6",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 16,
+      "page_anchor_mode": "exact-source-page-count",
+      "docx_structure": {
+        "paragraphs": 9155,
+        "tables": 16,
+        "drawings": 38,
+        "textboxes": 56,
+        "bookmarks": 10,
+        "page_breaks": 2,
+        "footnote_refs": 0
+      },
+      "media": [
+        {
+          "source": "word/media/image1.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-02/image1.jpeg",
+          "bytes": 215988,
+          "sha256": "412109314dbc6b18a013c2c593dbda9d5f4209928a7c27b809cec8504cef545e",
+          "conversion": "original"
+        }
+      ]
+    },
+    {
+      "section": "chapter-03",
+      "file": "source/doc/07-Chap03_ADS_T.doc",
+      "sha256": "a7071ac86708f6e33e536c143888bdccea342d56af4894761b8b5fa408dcfbc4",
+      "bytes": 947200,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1575,
+        "tables": 13,
+        "images": 0
+      },
+      "normalized_docx_sha256": "e6460a176745cb4b1cb14550c15ccc5290ffeeb5e94d6225eae466258b429cbb",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 20,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 7613,
+        "tables": 15,
+        "drawings": 30,
+        "textboxes": 48,
+        "bookmarks": 22,
+        "page_breaks": 2,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-04",
+      "file": "source/doc/08-Chap04_ADS_T.doc",
+      "sha256": "e162cf732eb12de048d1e78c830a695262f3f93dfb0138ce94c1f0f4e79b6eca",
+      "bytes": 615424,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1784,
+        "tables": 12,
+        "images": 0
+      },
+      "normalized_docx_sha256": "d041e2b846a44b4c53ff156d365b669b695f3928c52244adea7bad7ce20fb7cd",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 18,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 4545,
+        "tables": 31,
+        "drawings": 137,
+        "textboxes": 218,
+        "bookmarks": 14,
+        "page_breaks": 3,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-05",
+      "file": "source/doc/09-Chap05_ADS_T.doc",
+      "sha256": "745a12ff924218698e6372c797cd3d6423db0c0bd46828139a6d87673bde8780",
+      "bytes": 344576,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1597,
+        "tables": 27,
+        "images": 0
+      },
+      "normalized_docx_sha256": "606725ba6c5503286a6328349815aa57d4822bb7f5f2265ba309834cd089c083",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 14,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 2536,
+        "tables": 56,
+        "drawings": 192,
+        "textboxes": 169,
+        "bookmarks": 10,
+        "page_breaks": 3,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-06",
+      "file": "source/doc/10-Chap06_ADS_T.doc",
+      "sha256": "0075c70b4b92f30f84a62b28b9de7d90a5113b75a83d30267e07b693c48dc11e",
+      "bytes": 717824,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1635,
+        "tables": 8,
+        "images": 0
+      },
+      "normalized_docx_sha256": "57a47db8f648b7ab49f70fe3e1658198e517ae38d9b7ed0f4d44827e636e9bd0",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 20,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 5093,
+        "tables": 21,
+        "drawings": 194,
+        "textboxes": 282,
+        "bookmarks": 17,
+        "page_breaks": 3,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-07",
+      "file": "source/doc/11-Chap07_ADS_T.doc",
+      "sha256": "71c4f0c33c01b22acc348ca081ae0681e16d70eb1a77c512a34f6cc242d43ad0",
+      "bytes": 934400,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1452,
+        "tables": 12,
+        "images": 0
+      },
+      "normalized_docx_sha256": "abb9cde6378ee1dd50da8c56a351fe5f6a7b1b6137a4a77f3306c45edd9bf9dc",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 20,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 7892,
+        "tables": 18,
+        "drawings": 49,
+        "textboxes": 38,
+        "bookmarks": 13,
+        "page_breaks": 4,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-08",
+      "file": "source/doc/12-Chap08_ADS_T.doc",
+      "sha256": "041a2511424ca62465610b0297c6d461f1c39125b9e5e28870b6705d9323c752",
+      "bytes": 3272192,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 12056,
+        "tables": 96,
+        "images": 0
+      },
+      "normalized_docx_sha256": "573f60a1679ca777a55eec6dbfa985267a0b524eac49c352325f9af61d1cf8a2",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 118,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 18245,
+        "tables": 112,
+        "drawings": 1317,
+        "textboxes": 1368,
+        "bookmarks": 6,
+        "page_breaks": 40,
+        "footnote_refs": 0
+      },
+      "media": []
+    },
+    {
+      "section": "chapter-09",
+      "file": "source/doc/13-Chap09_ADS_T.doc",
+      "sha256": "671f6413ec87a2dc1999ec86b98da391796dd1e6cec399f93d5d26bc3c762cc4",
+      "bytes": 461098,
+      "container": "docx-package",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1747,
+        "tables": 14,
+        "images": 0
+      },
+      "normalized_docx_sha256": "671f6413ec87a2dc1999ec86b98da391796dd1e6cec399f93d5d26bc3c762cc4",
+      "normalization": "DOCX package with legacy .doc extension",
+      "doc_render_page_count": 32,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 1753,
+        "tables": 14,
+        "drawings": 6,
+        "textboxes": 35,
+        "bookmarks": 20,
+        "page_breaks": 4,
+        "footnote_refs": 0
+      },
+      "media": [
+        {
+          "source": "word/media/image4.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image4.png",
+          "bytes": 133561,
+          "sha256": "29e108f9b8569c41eec099f41836c2fecd34f43d59844fc744a1e33a26dd26d9",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image5.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image5.png",
+          "bytes": 32840,
+          "sha256": "04d8c7a2c3525a33cf377f450793445aa2208b0514dc428d32f2f53d75643ec7",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image6.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image6.png",
+          "bytes": 487053,
+          "sha256": "f0a1feaa321925c789a64f46cf7aec0fdbcb9e352ef146db01ea17f785ea1e5e",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image2.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image2.jpeg",
+          "bytes": 13536,
+          "sha256": "f557d064509209482ed5f805f2aaffdeb331c31c801f78ee4f35e2c5569c49b6",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image1.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image1.png",
+          "bytes": 157182,
+          "sha256": "f1cb07beb3e18db33abed3880c28231ba413bb1c6c394938f3743504ffc6fd7a",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image3.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/chapter-09/image3.jpeg",
+          "bytes": 22331,
+          "sha256": "4fee1c935426329e99418d1862d64299327d42982aec89bb75920c1ce86b2bde",
+          "conversion": "original"
+        }
+      ]
+    },
+    {
+      "section": "appendix",
+      "file": "source/doc/14-Appendix.doc",
+      "sha256": "87b66f14367c7cff991cbaec1cc1d2c837ec4c130359797b687d61234bc21e6a",
+      "bytes": 4564480,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 4451,
+        "tables": 41,
+        "images": 0
+      },
+      "normalized_docx_sha256": "0bca2135c4d4ebac296dfb8c59c44afa23cbeed4b03e43e676d7143c414b26f7",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 128,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 9988,
+        "tables": 53,
+        "drawings": 123,
+        "textboxes": 172,
+        "bookmarks": 52,
+        "page_breaks": 4,
+        "footnote_refs": 15
+      },
+      "media": [
+        {
+          "source": "word/media/image5.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image5.png",
+          "bytes": 133609,
+          "sha256": "4855d476d272022b53846829e9025d5de382495756e331af8934c10e9b48e0d5",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image28.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image28.jpeg",
+          "bytes": 59186,
+          "sha256": "56078e4898a451011f117550e4f831fe48f6dd7b4511f6a469dd9fcd96022a16",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image14.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image14.png",
+          "bytes": 193143,
+          "sha256": "223ab5a5cadde12239667d6a47f64b72f4680e27523f55bd98ce3f55a30e2fb7",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image16.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image16.png",
+          "bytes": 240674,
+          "sha256": "168b03ba0504ae577722cb62e2b1fd7311fb2ed3c8018a66f59696d828099a1e",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image12.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image12.png",
+          "bytes": 13872,
+          "sha256": "33e246100dc388b15a59d8a2d9a284f08d2f7ba6dd746f1034fa9e92e3e34653",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image8.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image8.png",
+          "bytes": 189382,
+          "sha256": "b15bf5e1a7f2438a78013ca342c252ded4732e60d59f922f1d1fc6f8917077f9",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image21.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image21.png",
+          "bytes": 3369,
+          "sha256": "55f1c9eea65f6214e0fdd4ae93c041bf441f850c40f6b573dac3059a879c201d",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image9.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image9.png",
+          "bytes": 5058,
+          "sha256": "3d4a28b061a9ee405ae0a46d0d6cb25695b93f8aca167aac098214feb90afd7b",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image22.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image22.png",
+          "bytes": 217979,
+          "sha256": "eea25ce22722ca89db6f3cbb8490c2ade7e57025a11dfc288afd3358d8a1db07",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image13.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image13.png",
+          "bytes": 303718,
+          "sha256": "a1ce7c9320d2de664177362cebdd90e75faced68c314b63298f2ea4789985009",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image23.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image23.png",
+          "bytes": 148700,
+          "sha256": "9ff62ebc725cbd7b10d47e49794607b1db3be3b778058eb863b0b835a73c3fd0",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image31.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image31.jpeg",
+          "bytes": 6111,
+          "sha256": "f8e9fdd2a38a2a7040f404d45b105299b0ac3259f84dd894f5007b4308631099",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image29.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image29.jpeg",
+          "bytes": 26583,
+          "sha256": "c239231a00ec293147c0ab22eecd5070343afaaa773c59c8aa33b4a6d5decb63",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image26.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image26.jpeg",
+          "bytes": 32110,
+          "sha256": "fab214491b63fc6fde63354d27c18bbd3f68b6cdb53346e2ccd6d8f0f53493e8",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image33.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image33.png",
+          "bytes": 167192,
+          "sha256": "1233503aeab0ac11597e248545b094ec146fb4f393300beca5c7fc7e493bc6cc",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image11.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image11.png",
+          "bytes": 243840,
+          "sha256": "22edd3c8b93b10d87ff7201c68bb0a1c2311c71242c92451d0f93e7d85829c45",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image27.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image27.jpeg",
+          "bytes": 12590,
+          "sha256": "0dfa8b3d88ea97a09cb93193f7b8e651b42760f9bc3d19f0910d7fb43e388a0c",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image2.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image2.png",
+          "bytes": 157489,
+          "sha256": "47fb308ba9f671c66556528006eef9a39bfc8168b6607401a7852ade49786057",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image34.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image34.png",
+          "bytes": 259289,
+          "sha256": "29473d71253301fe768f517b0dfe1dcb4b754d11e062b8769f172d3d4117c34d",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image32.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image32.jpeg",
+          "bytes": 9945,
+          "sha256": "5b893b65767e0a47e9d516483ad8b7df93a79343866309f2110b39da6541e391",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image15.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image15.png",
+          "bytes": 456603,
+          "sha256": "39fa856108b3b00d2362ca684a60a8b9ab590940564771b7935a44b226096f88",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image24.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image24.jpeg",
+          "bytes": 126976,
+          "sha256": "5a3961fc50f8fada1c586947ca4745763f533b9d5c07cf39b714128ae76397b9",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image10.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image10.png",
+          "bytes": 238936,
+          "sha256": "1c7419274a9f26d29341a91a03c38e85f7351903293c0bd95d5e16ec69a45296",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image25.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image25.jpeg",
+          "bytes": 165287,
+          "sha256": "4759b951d6b51020ff24634f2314f4af0e3693ebc53dacc7bd5934226cb5deb6",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image19.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image19.png",
+          "bytes": 525409,
+          "sha256": "5af62c9422393bb44ded0abc7d5e2227d2e755a62ad5f8da65e51edcd59f9512",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image20.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image20.png",
+          "bytes": 206686,
+          "sha256": "6ca2c197062ddd870ca86ea053e5629d891fe231e0c71797c7d005ed8f3e6714",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image18.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image18.png",
+          "bytes": 160839,
+          "sha256": "3cee9c38f73aa5e16cd1897b206acca26d8127352cd40224188d19daef8d1f75",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image30.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image30.png",
+          "bytes": 106902,
+          "sha256": "0d6623eafd524cf009e01920469baf7db572f40aa8407e05ac8932e42ce0b21c",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image1.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image1.jpeg",
+          "bytes": 163690,
+          "sha256": "669f80d9a07fcf974795799f54b9e23a9a12142bed4f05bac9397fc10ec8f58e",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image3.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image3.jpeg",
+          "bytes": 118048,
+          "sha256": "2d6b1ebb427bb021e9502101c5f96fbd317d66c6f98c9066acd2c2d34b4ecd6a",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image6.png",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image6.png",
+          "bytes": 124232,
+          "sha256": "d197fb77951d69c366c42daba8156558ede548ef1f43d9b3c33ac329a67c2708",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image4.jpeg",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image4.jpeg",
+          "bytes": 175487,
+          "sha256": "4e5d699c568c1359e2a2d38e56216f58a06d8101c23160ee5e769476ad16770b",
+          "conversion": "original"
+        },
+        {
+          "source": "word/media/image7.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image7.png",
+          "bytes": 489931,
+          "sha256": "776bce5762496211b1e1f4ead81d2ba559411b67c71caa9da98c4baea1f62deb",
+          "conversion": "rasterized from vector source"
+        },
+        {
+          "source": "word/media/image17.wmf",
+          "file": "research/abhidhamma-sangaha/assets/docx/appendix/image17.png",
+          "bytes": 273742,
+          "sha256": "e0f9bbeb8035fafc963dbf593328f7d74c9fc4abd02fede9c3535284b2fe2950",
+          "conversion": "rasterized from vector source"
+        }
+      ]
+    },
+    {
+      "section": "answers",
+      "file": "source/doc/15-resolve.doc",
+      "sha256": "f4f9adfbe6d8490449667722cc7a97876d1ca562054b16dcc0cc3e1a8760d7d2",
+      "bytes": 566784,
+      "container": "legacy-doc",
+      "direct_parser": "textutil direct DOC HTML",
+      "direct_html": {
+        "paragraphs": 1947,
+        "tables": 28,
+        "images": 0
+      },
+      "normalized_docx_sha256": "2eaf89985ad7c288259ea50bc118bbac5ff5ebe0a09c88e5833283dd413b5d35",
+      "normalization": "LibreOffice DOC to DOCX normalization",
+      "doc_render_page_count": 61,
+      "page_anchor_mode": "scaled-source-page-count",
+      "docx_structure": {
+        "paragraphs": 2315,
+        "tables": 31,
+        "drawings": 0,
+        "textboxes": 0,
+        "bookmarks": 11,
+        "page_breaks": 0,
+        "footnote_refs": 0
+      },
+      "media": []
+    }
+  ],
+  "semantic_sections": {
+    "cover": {
+      "blocks": 1,
+      "paragraphs": 1,
+      "tables": 0,
+      "page_anchors": 1,
+      "text_matched_pages": 0,
+      "proportional_pages": 1,
+      "media": 0
+    },
+    "abbreviations": {
+      "blocks": 2,
+      "paragraphs": 2,
+      "tables": 0,
+      "page_anchors": 2,
+      "text_matched_pages": 0,
+      "proportional_pages": 2,
+      "media": 0
+    },
+    "content": {
+      "blocks": 220,
+      "paragraphs": 219,
+      "tables": 1,
+      "page_anchors": 4,
+      "text_matched_pages": 0,
+      "proportional_pages": 4,
+      "media": 0
+    },
+    "preface": {
+      "blocks": 146,
+      "paragraphs": 146,
+      "tables": 0,
+      "page_anchors": 8,
+      "text_matched_pages": 1,
+      "proportional_pages": 7,
+      "media": 0
+    },
+    "chapter-01": {
+      "blocks": 427,
+      "paragraphs": 397,
+      "tables": 30,
+      "page_anchors": 18,
+      "text_matched_pages": 0,
+      "proportional_pages": 18,
+      "media": 1
+    },
+    "chapter-02": {
+      "blocks": 645,
+      "paragraphs": 637,
+      "tables": 8,
+      "page_anchors": 16,
+      "text_matched_pages": 2,
+      "proportional_pages": 14,
+      "media": 1
+    },
+    "chapter-03": {
+      "blocks": 737,
+      "paragraphs": 725,
+      "tables": 12,
+      "page_anchors": 20,
+      "text_matched_pages": 3,
+      "proportional_pages": 17,
+      "media": 0
+    },
+    "chapter-04": {
+      "blocks": 965,
+      "paragraphs": 953,
+      "tables": 12,
+      "page_anchors": 18,
+      "text_matched_pages": 7,
+      "proportional_pages": 11,
+      "media": 0
+    },
+    "chapter-05": {
+      "blocks": 727,
+      "paragraphs": 700,
+      "tables": 27,
+      "page_anchors": 14,
+      "text_matched_pages": 0,
+      "proportional_pages": 14,
+      "media": 0
+    },
+    "chapter-06": {
+      "blocks": 580,
+      "paragraphs": 572,
+      "tables": 8,
+      "page_anchors": 20,
+      "text_matched_pages": 0,
+      "proportional_pages": 20,
+      "media": 0
+    },
+    "chapter-07": {
+      "blocks": 560,
+      "paragraphs": 548,
+      "tables": 12,
+      "page_anchors": 20,
+      "text_matched_pages": 3,
+      "proportional_pages": 17,
+      "media": 0
+    },
+    "chapter-08": {
+      "blocks": 2853,
+      "paragraphs": 2757,
+      "tables": 96,
+      "page_anchors": 118,
+      "text_matched_pages": 1,
+      "proportional_pages": 117,
+      "media": 3
+    },
+    "chapter-09": {
+      "blocks": 446,
+      "paragraphs": 432,
+      "tables": 14,
+      "page_anchors": 32,
+      "text_matched_pages": 6,
+      "proportional_pages": 26,
+      "media": 6
+    },
+    "appendix": {
+      "blocks": 2029,
+      "paragraphs": 1988,
+      "tables": 41,
+      "page_anchors": 128,
+      "text_matched_pages": 68,
+      "proportional_pages": 60,
+      "media": 34
+    },
+    "answers": {
+      "blocks": 1322,
+      "paragraphs": 1294,
+      "tables": 28,
+      "page_anchors": 61,
+      "text_matched_pages": 13,
+      "proportional_pages": 48,
+      "media": 0
+    },
+    "corrections": {
+      "blocks": 7,
+      "paragraphs": 7,
+      "tables": 0,
+      "page_anchors": 7,
+      "text_matched_pages": 0,
+      "proportional_pages": 7,
+      "media": 0
+    },
+    "corrections-appendix": {
+      "blocks": 1,
+      "paragraphs": 1,
+      "tables": 0,
+      "page_anchors": 1,
+      "text_matched_pages": 0,
+      "proportional_pages": 1,
+      "media": 0
+    },
+    "copyright": {
+      "blocks": 1,
+      "paragraphs": 1,
+      "tables": 0,
+      "page_anchors": 1,
+      "text_matched_pages": 0,
+      "proportional_pages": 1,
+      "media": 0
+    }
+  },
   "coverage": {
     "pages": 489,
     "sections": 18,
     "complex_pages": 262,
     "rendered_source_images": 262,
+    "semantic_files": 18,
+    "source_doc_files": 13,
     "section_files": [
       "data/cover.json",
       "data/abbreviations.json",

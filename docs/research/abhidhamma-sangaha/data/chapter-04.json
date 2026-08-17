@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-04",
     "title": "第四 摄路分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 70,
     "physical_page_end": 87,
     "file": "data/chapter-04.json",
+    "semantic_file": "semantic/chapter-04.html",
+    "source_doc": "source/doc/08-Chap04_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-04"
+  },
+  "semantic": {
+    "blocks": 965,
+    "paragraphs": 953,
+    "tables": 12,
+    "page_anchors": 18,
+    "text_matched_pages": 7,
+    "proportional_pages": 11,
+    "media": 0
   },
   "pages": [
     {

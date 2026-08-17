@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-08",
     "title": "第八 摄缘分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 142,
     "physical_page_end": 259,
     "file": "data/chapter-08.json",
+    "semantic_file": "semantic/chapter-08.html",
+    "source_doc": "source/doc/12-Chap08_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-08"
+  },
+  "semantic": {
+    "blocks": 2853,
+    "paragraphs": 2757,
+    "tables": 96,
+    "page_anchors": 118,
+    "text_matched_pages": 1,
+    "proportional_pages": 117,
+    "media": 3
   },
   "pages": [
     {

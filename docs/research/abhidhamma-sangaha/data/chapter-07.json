@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-07",
     "title": "第七 摄集分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 122,
     "physical_page_end": 141,
     "file": "data/chapter-07.json",
+    "semantic_file": "semantic/chapter-07.html",
+    "source_doc": "source/doc/11-Chap07_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-07"
+  },
+  "semantic": {
+    "blocks": 560,
+    "paragraphs": 548,
+    "tables": 12,
+    "page_anchors": 20,
+    "text_matched_pages": 3,
+    "proportional_pages": 17,
+    "media": 0
   },
   "pages": [
     {

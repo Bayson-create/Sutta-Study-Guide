@@ -1,2 +1,5 @@
 pypdf>=5.0
 opencc-python-reimplemented==0.1.7
+# Build-time system tools: macOS textutil (direct DOC HTML), LibreOffice soffice
+# (DOCX normalization and source-page rendering), and Poppler pdftoppm.
+# ImageMagick magick is optional; soffice + pdftoppm rasterize WMF/EMF figures.

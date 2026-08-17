@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "corrections",
     "title": "2022 年修订更正记录",
@@ -7,7 +7,18 @@
     "physical_page_start": 481,
     "physical_page_end": 487,
     "file": "data/corrections.json",
+    "semantic_file": "semantic/corrections.html",
+    "source_doc": "",
     "route": "#/research/abhidhamma-sangaha/read/corrections"
+  },
+  "semantic": {
+    "blocks": 7,
+    "paragraphs": 7,
+    "tables": 0,
+    "page_anchors": 7,
+    "text_matched_pages": 0,
+    "proportional_pages": 7,
+    "media": 0
   },
   "pages": [
     {

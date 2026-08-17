@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "content",
     "title": "目录",
@@ -7,7 +7,18 @@
     "physical_page_start": 4,
     "physical_page_end": 7,
     "file": "data/content.json",
+    "semantic_file": "semantic/content.html",
+    "source_doc": "source/doc/03-content.doc",
     "route": "#/research/abhidhamma-sangaha/read/content"
+  },
+  "semantic": {
+    "blocks": 220,
+    "paragraphs": 219,
+    "tables": 1,
+    "page_anchors": 4,
+    "text_matched_pages": 0,
+    "proportional_pages": 4,
+    "media": 0
   },
   "pages": [
     {

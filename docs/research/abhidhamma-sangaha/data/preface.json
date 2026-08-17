@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "preface",
     "title": "序与总导读",
@@ -7,7 +7,18 @@
     "physical_page_start": 8,
     "physical_page_end": 15,
     "file": "data/preface.json",
+    "semantic_file": "semantic/preface.html",
+    "source_doc": "source/doc/04-preface.doc",
     "route": "#/research/abhidhamma-sangaha/read/preface"
+  },
+  "semantic": {
+    "blocks": 146,
+    "paragraphs": 146,
+    "tables": 0,
+    "page_anchors": 8,
+    "text_matched_pages": 1,
+    "proportional_pages": 7,
+    "media": 0
   },
   "pages": [
     {

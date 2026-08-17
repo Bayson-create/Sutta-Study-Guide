@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-06",
     "title": "第六 摄色分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 102,
     "physical_page_end": 121,
     "file": "data/chapter-06.json",
+    "semantic_file": "semantic/chapter-06.html",
+    "source_doc": "source/doc/10-Chap06_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-06"
+  },
+  "semantic": {
+    "blocks": 580,
+    "paragraphs": 572,
+    "tables": 8,
+    "page_anchors": 20,
+    "text_matched_pages": 0,
+    "proportional_pages": 20,
+    "media": 0
   },
   "pages": [
     {
