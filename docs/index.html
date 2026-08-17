@@ -6532,13 +6532,14 @@ async function renderVismLecture() {
 }
 
 let _vismLecturePackagePromise = null;
+const VISM_LECTURE_DATA_VERSION = 'chapter-map-v2';
 
 async function loadVismLecturePackage() {
   if (_vismLecturePackagePromise) return _vismLecturePackagePromise;
   _vismLecturePackagePromise = Promise.all([
-    fetch('research/vism-data/lecture-v1.json').then(res => { if (!res.ok) throw new Error('讲义数据不可用'); return res.json(); }),
-    fetch('research/vism-data/lecture-anchor-map-v1.json').then(res => { if (!res.ok) throw new Error('讲义锚点清单不可用'); return res.json(); }),
-    fetch('research/vism-data/lecture-reader-anchor-v1.json').then(res => { if (!res.ok) throw new Error('讲义阅读器锚点目录不可用'); return res.json(); }),
+    fetch(`research/vism-data/lecture-v1.json?v=${VISM_LECTURE_DATA_VERSION}`).then(res => { if (!res.ok) throw new Error('讲义数据不可用'); return res.json(); }),
+    fetch(`research/vism-data/lecture-anchor-map-v1.json?v=${VISM_LECTURE_DATA_VERSION}`).then(res => { if (!res.ok) throw new Error('讲义锚点清单不可用'); return res.json(); }),
+    fetch(`research/vism-data/lecture-reader-anchor-v1.json?v=${VISM_LECTURE_DATA_VERSION}`).then(res => { if (!res.ok) throw new Error('讲义阅读器锚点目录不可用'); return res.json(); }),
   ]).then(async ([lecture, anchorMap, readerCatalog]) => {
     let overlay = null;
     try {
@@ -6994,18 +6995,120 @@ async function vismReviewLoadChapter(chapter) {
       try { raw = await fetch(`research/vism-data/retranslated_chap${tag}/results.json`).then(res => res.ok ? res.json() : Promise.reject()); } catch (_) { /* optional */ }
     }
     await transLoadDoc(`vism:${chapter}`);
-    const parallel = vismNormalizeParallel(peData, raw);
     const catalogRows = state.packageData.readerCatalog.chapters?.[String(chapter)]?.rows || {};
-    const rows = [];
-    parallel.forEach((part, pi) => part.rows.forEach((row, ri) => {
-      const key = `${pi + 1}-${ri + 1}`;
-      const identity = catalogRows[key] || {};
-      rows.push({ chapter, part_index: pi + 1, row_index: ri + 1, pali: row.pali || '', english: row.english || '', chinese: row.chinese_translation || '', ...identity });
-    }));
+    const rows = await vismReviewBuildRows(peData, raw, catalogRows);
     state.chapterCache[chapter] = { peData, zhData, rows };
   } finally {
     state.chapterLoading[chapter] = false;
   }
+}
+
+function vismReviewFlattenRaw(raw) {
+  const rows = [];
+  if (Array.isArray(raw)) {
+    raw.forEach(row => rows.push(row));
+  } else if (raw && Array.isArray(raw.parts)) {
+    raw.parts.forEach((part, partIndex) => (part.rows || []).forEach((row, rowIndex) => rows.push({
+      ...row,
+      part_index: Number(row.part_index || partIndex + 1),
+      row_index: Number(row.row_index || rowIndex + 1),
+    })));
+  }
+  return rows.filter(row => Number(row.part_index) > 0 && Number(row.row_index) > 0);
+}
+
+async function vismReviewBuildRows(peData, raw, catalogRows) {
+  const rows = [];
+  peData.parts.forEach((part, partIndex) => (part.rows || []).forEach((row, rowIndex) => {
+    const key = `${partIndex + 1}-${rowIndex + 1}`;
+    const identity = catalogRows[key] || {};
+    rows.push({
+      part_index: partIndex + 1,
+      row_index: rowIndex + 1,
+      pali: row.pali || '',
+      english: row.english || '',
+      chinese: '',
+      translation_status: 'unavailable',
+      translation_source: '',
+      ...identity,
+    });
+  }));
+
+  const byKey = new Map(rows.map(row => [`${row.part_index}-${row.row_index}`, row]));
+  const byPali = new Map();
+  const byPair = new Map();
+  rows.forEach(row => {
+    if (row.pali_hash) {
+      if (!byPali.has(row.pali_hash)) byPali.set(row.pali_hash, []);
+      byPali.get(row.pali_hash).push(row);
+    }
+    if (row.pali_hash && row.english_hash) {
+      const pairKey = `${row.pali_hash}:${row.english_hash}`;
+      if (!byPair.has(pairKey)) byPair.set(pairKey, []);
+      byPair.get(pairKey).push(row);
+    }
+  });
+
+  const claimed = new Set();
+  for (const rawRow of vismReviewFlattenRaw(raw)) {
+    const chinese = String(rawRow.chinese_translation || '').trim();
+    if (!chinese) continue;
+    const rawPaliHash = rawRow.pali ? await vismSha256Prefix(rawRow.pali) : '';
+    const rawEnglishHash = rawRow.english ? await vismSha256Prefix(rawRow.english) : '';
+    const rawKey = `${Number(rawRow.part_index)}-${Number(rawRow.row_index)}`;
+    const positional = byKey.get(rawKey);
+    const pairMatches = rawPaliHash && rawEnglishHash
+      ? (byPair.get(`${rawPaliHash}:${rawEnglishHash}`) || [])
+      : [];
+    const paliMatches = rawPaliHash ? (byPali.get(rawPaliHash) || []) : [];
+    const availablePairMatches = pairMatches.filter(row => !claimed.has(row));
+    const availablePaliMatches = paliMatches.filter(row => !claimed.has(row));
+    // A Pāli+English pair is the primary identity.  The array is deliberate:
+    // short formulae can occur more than once in a chapter.  Only a unique
+    // unclaimed pair can bind without coordinates; coordinates may disambiguate
+    // duplicate anchors, but never create a match when the anchor differs.
+    let candidate = null;
+    let status = '';
+    if (rawEnglishHash) {
+      if (availablePairMatches.length === 1) {
+        candidate = availablePairMatches[0];
+        status = 'matched_by_pali_english';
+      }
+    } else if (availablePaliMatches.length === 1) {
+      candidate = availablePaliMatches[0];
+      status = 'matched_by_pali';
+    }
+
+    // Coordinates are only a secondary check after an anchor has matched.
+    // They never establish identity on their own.
+    if (!candidate && positional && rawPaliHash && positional.pali_hash === rawPaliHash && !claimed.has(positional)) {
+      const samePair = !rawEnglishHash || positional.english_hash === rawEnglishHash;
+      const duplicateAnchor = rawEnglishHash
+        ? pairMatches.length > 1
+        : paliMatches.length > 1;
+      if (samePair && (duplicateAnchor || !rawEnglishHash)) {
+        candidate = positional;
+        status = rawEnglishHash
+          ? 'matched_by_pali_english_position'
+          : 'matched_by_pali_position';
+      }
+    }
+    if (candidate && !claimed.has(candidate)) {
+      candidate.chinese = chinese;
+      candidate.translation_status = status;
+      candidate.translation_source = rawRow.translation_source || 'retranslated';
+      claimed.add(candidate);
+      continue;
+    }
+
+    // A translation at the expected coordinate whose anchors do not match is
+    // explicitly marked, never displayed as if it belonged to that sentence.
+    if (positional) {
+      positional.translation_status = 'unverified';
+      positional.translation_source = rawRow.translation_source || 'retranslated';
+    }
+  }
+  return rows;
 }
 
 function vismReviewCandidates(item, state) {
@@ -7026,11 +7129,21 @@ function vismReviewCandidates(item, state) {
 }
 
 function vismReviewCandidateHtml(candidate, selected) {
+  const translationLabel = candidate.translation_status === 'matched_by_pali_english_position'
+    ? '巴利／英语均已核对（重复锚点按位置消歧）'
+    : candidate.translation_status === 'matched_by_pali_english'
+      ? '巴利／英语均已核对'
+      : '已核对巴利语';
+  const translation = candidate.chinese
+    ? `中文现有译文（${translationLabel}）：${esc(candidate.chinese)}`
+    : candidate.translation_status === 'unverified'
+      ? '中文现有译文：待核验对应关系（未显示）'
+      : '中文现有译文：暂无已核验内容';
   return `<button type="button" class="vism-review-candidate${selected ? ' active' : ''}" data-review-candidate="${candidate.part_index}-${candidate.row_index}">
     <span class="meta">第 ${candidate.part_index} 部分 · 第 ${candidate.row_index} 句</span>
     <span class="pali">${esc(candidate.pali || '（无巴利语）')}</span>
     <span class="en">${esc(candidate.english || '（无英语）')}</span>
-    <span class="meta">中文现有译文：${esc(candidate.chinese || '（暂无）')}</span>
+    <span class="meta">${translation}</span>
   </button>`;
 }
 
