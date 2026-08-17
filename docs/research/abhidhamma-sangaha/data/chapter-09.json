@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-09",
     "title": "第九 摄业处分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 260,
     "physical_page_end": 291,
     "file": "data/chapter-09.json",
+    "semantic_file": "semantic/chapter-09.html",
+    "source_doc": "source/doc/13-Chap09_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-09"
+  },
+  "semantic": {
+    "blocks": 446,
+    "paragraphs": 432,
+    "tables": 14,
+    "page_anchors": 32,
+    "text_matched_pages": 6,
+    "proportional_pages": 26,
+    "media": 6
   },
   "pages": [
     {

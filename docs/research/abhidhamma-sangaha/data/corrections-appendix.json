@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "corrections-appendix",
     "title": "更正记录补页",
@@ -7,7 +7,18 @@
     "physical_page_start": 488,
     "physical_page_end": 488,
     "file": "data/corrections-appendix.json",
+    "semantic_file": "semantic/corrections-appendix.html",
+    "source_doc": "",
     "route": "#/research/abhidhamma-sangaha/read/corrections-appendix"
+  },
+  "semantic": {
+    "blocks": 1,
+    "paragraphs": 1,
+    "tables": 0,
+    "page_anchors": 1,
+    "text_matched_pages": 0,
+    "proportional_pages": 1,
+    "media": 0
   },
   "pages": [
     {

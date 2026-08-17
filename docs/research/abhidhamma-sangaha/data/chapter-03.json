@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "chapter-03",
     "title": "第三 摄杂分别品",
@@ -7,7 +7,18 @@
     "physical_page_start": 50,
     "physical_page_end": 69,
     "file": "data/chapter-03.json",
+    "semantic_file": "semantic/chapter-03.html",
+    "source_doc": "source/doc/07-Chap03_ADS_T.doc",
     "route": "#/research/abhidhamma-sangaha/read/chapter-03"
+  },
+  "semantic": {
+    "blocks": 737,
+    "paragraphs": 725,
+    "tables": 12,
+    "page_anchors": 20,
+    "text_matched_pages": 3,
+    "proportional_pages": 17,
+    "media": 0
   },
   "pages": [
     {

@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "cover",
     "title": "封面",
@@ -7,7 +7,18 @@
     "physical_page_start": 1,
     "physical_page_end": 1,
     "file": "data/cover.json",
+    "semantic_file": "semantic/cover.html",
+    "source_doc": "",
     "route": "#/research/abhidhamma-sangaha/read/cover"
+  },
+  "semantic": {
+    "blocks": 1,
+    "paragraphs": 1,
+    "tables": 0,
+    "page_anchors": 1,
+    "text_matched_pages": 0,
+    "proportional_pages": 1,
+    "media": 0
   },
   "pages": [
     {

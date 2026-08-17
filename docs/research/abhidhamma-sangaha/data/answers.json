@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "answers",
     "title": "问题解答",
@@ -7,7 +7,18 @@
     "physical_page_start": 420,
     "physical_page_end": 480,
     "file": "data/answers.json",
+    "semantic_file": "semantic/answers.html",
+    "source_doc": "source/doc/15-resolve.doc",
     "route": "#/research/abhidhamma-sangaha/read/answers"
+  },
+  "semantic": {
+    "blocks": 1322,
+    "paragraphs": 1294,
+    "tables": 28,
+    "page_anchors": 61,
+    "text_matched_pages": 13,
+    "proportional_pages": 48,
+    "media": 0
   },
   "pages": [
     {

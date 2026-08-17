@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide-manifest/v1",
+  "format": "abhidhamma-table-guide-manifest/v2",
   "title": "《摄阿毗达摩义论表解》",
   "title_traditional": "《攝阿毘達摩義論表解》",
   "title_pali": "Abhidhammatthasaṅgaha-vitthāra",
@@ -17,6 +17,8 @@
       "physical_page_start": 1,
       "physical_page_end": 1,
       "file": "data/cover.json",
+      "semantic_file": "semantic/cover.html",
+      "source_doc": "",
       "route": "#/research/abhidhamma-sangaha/read/cover"
     },
     {
@@ -26,6 +28,8 @@
       "physical_page_start": 2,
       "physical_page_end": 3,
       "file": "data/abbreviations.json",
+      "semantic_file": "semantic/abbreviations.html",
+      "source_doc": "",
       "route": "#/research/abhidhamma-sangaha/read/abbreviations"
     },
     {
@@ -35,6 +39,8 @@
       "physical_page_start": 4,
       "physical_page_end": 7,
       "file": "data/content.json",
+      "semantic_file": "semantic/content.html",
+      "source_doc": "source/doc/03-content.doc",
       "route": "#/research/abhidhamma-sangaha/read/content"
     },
     {
@@ -44,6 +50,8 @@
       "physical_page_start": 8,
       "physical_page_end": 15,
       "file": "data/preface.json",
+      "semantic_file": "semantic/preface.html",
+      "source_doc": "source/doc/04-preface.doc",
       "route": "#/research/abhidhamma-sangaha/read/preface"
     },
     {
@@ -53,6 +61,8 @@
       "physical_page_start": 16,
       "physical_page_end": 33,
       "file": "data/chapter-01.json",
+      "semantic_file": "semantic/chapter-01.html",
+      "source_doc": "source/doc/05-Chap01_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-01"
     },
     {
@@ -62,6 +72,8 @@
       "physical_page_start": 34,
       "physical_page_end": 49,
       "file": "data/chapter-02.json",
+      "semantic_file": "semantic/chapter-02.html",
+      "source_doc": "source/doc/06-Chap02_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-02"
     },
     {
@@ -71,6 +83,8 @@
       "physical_page_start": 50,
       "physical_page_end": 69,
       "file": "data/chapter-03.json",
+      "semantic_file": "semantic/chapter-03.html",
+      "source_doc": "source/doc/07-Chap03_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-03"
     },
     {
@@ -80,6 +94,8 @@
       "physical_page_start": 70,
       "physical_page_end": 87,
       "file": "data/chapter-04.json",
+      "semantic_file": "semantic/chapter-04.html",
+      "source_doc": "source/doc/08-Chap04_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-04"
     },
     {
@@ -89,6 +105,8 @@
       "physical_page_start": 88,
       "physical_page_end": 101,
       "file": "data/chapter-05.json",
+      "semantic_file": "semantic/chapter-05.html",
+      "source_doc": "source/doc/09-Chap05_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-05"
     },
     {
@@ -98,6 +116,8 @@
       "physical_page_start": 102,
       "physical_page_end": 121,
       "file": "data/chapter-06.json",
+      "semantic_file": "semantic/chapter-06.html",
+      "source_doc": "source/doc/10-Chap06_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-06"
     },
     {
@@ -107,6 +127,8 @@
       "physical_page_start": 122,
       "physical_page_end": 141,
       "file": "data/chapter-07.json",
+      "semantic_file": "semantic/chapter-07.html",
+      "source_doc": "source/doc/11-Chap07_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-07"
     },
     {
@@ -116,6 +138,8 @@
       "physical_page_start": 142,
       "physical_page_end": 259,
       "file": "data/chapter-08.json",
+      "semantic_file": "semantic/chapter-08.html",
+      "source_doc": "source/doc/12-Chap08_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-08"
     },
     {
@@ -125,6 +149,8 @@
       "physical_page_start": 260,
       "physical_page_end": 291,
       "file": "data/chapter-09.json",
+      "semantic_file": "semantic/chapter-09.html",
+      "source_doc": "source/doc/13-Chap09_ADS_T.doc",
       "route": "#/research/abhidhamma-sangaha/read/chapter-09"
     },
     {
@@ -134,6 +160,8 @@
       "physical_page_start": 292,
       "physical_page_end": 419,
       "file": "data/appendix.json",
+      "semantic_file": "semantic/appendix.html",
+      "source_doc": "source/doc/14-Appendix.doc",
       "route": "#/research/abhidhamma-sangaha/read/appendix"
     },
     {
@@ -143,6 +171,8 @@
       "physical_page_start": 420,
       "physical_page_end": 480,
       "file": "data/answers.json",
+      "semantic_file": "semantic/answers.html",
+      "source_doc": "source/doc/15-resolve.doc",
       "route": "#/research/abhidhamma-sangaha/read/answers"
     },
     {
@@ -152,6 +182,8 @@
       "physical_page_start": 481,
       "physical_page_end": 487,
       "file": "data/corrections.json",
+      "semantic_file": "semantic/corrections.html",
+      "source_doc": "",
       "route": "#/research/abhidhamma-sangaha/read/corrections"
     },
     {
@@ -161,6 +193,8 @@
       "physical_page_start": 488,
       "physical_page_end": 488,
       "file": "data/corrections-appendix.json",
+      "semantic_file": "semantic/corrections-appendix.html",
+      "source_doc": "",
       "route": "#/research/abhidhamma-sangaha/read/corrections-appendix"
     },
     {
@@ -170,6 +204,8 @@
       "physical_page_start": 489,
       "physical_page_end": 489,
       "file": "data/copyright.json",
+      "semantic_file": "semantic/copyright.html",
+      "source_doc": "",
       "route": "#/research/abhidhamma-sangaha/read/copyright"
     }
   ],
@@ -804,6 +840,51 @@
     486,
     488
   ],
+  "semantic": {
+    "renderer": "direct DOC HTML + normalized DOCX media + PDF page anchors",
+    "section_files": [
+      "semantic/cover.html",
+      "semantic/abbreviations.html",
+      "semantic/content.html",
+      "semantic/preface.html",
+      "semantic/chapter-01.html",
+      "semantic/chapter-02.html",
+      "semantic/chapter-03.html",
+      "semantic/chapter-04.html",
+      "semantic/chapter-05.html",
+      "semantic/chapter-06.html",
+      "semantic/chapter-07.html",
+      "semantic/chapter-08.html",
+      "semantic/chapter-09.html",
+      "semantic/appendix.html",
+      "semantic/answers.html",
+      "semantic/corrections.html",
+      "semantic/corrections-appendix.html",
+      "semantic/copyright.html"
+    ],
+    "source_doc_files": [
+      "source/doc/03-content.doc",
+      "source/doc/04-preface.doc",
+      "source/doc/05-Chap01_ADS_T.doc",
+      "source/doc/06-Chap02_ADS_T.doc",
+      "source/doc/07-Chap03_ADS_T.doc",
+      "source/doc/08-Chap04_ADS_T.doc",
+      "source/doc/09-Chap05_ADS_T.doc",
+      "source/doc/10-Chap06_ADS_T.doc",
+      "source/doc/11-Chap07_ADS_T.doc",
+      "source/doc/12-Chap08_ADS_T.doc",
+      "source/doc/13-Chap09_ADS_T.doc",
+      "source/doc/14-Appendix.doc",
+      "source/doc/15-resolve.doc"
+    ],
+    "integrated_content": [
+      "paragraph",
+      "table",
+      "figure",
+      "footnote",
+      "pdf-page-anchor"
+    ]
+  },
   "conversion_audit": "conversion-audit.json",
   "license_note": "本页面为经授权的繁体转简体数字版；原作者、编者、版本与来源信息保持可追溯。",
   "search_documents": [

@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "appendix",
     "title": "附录",
@@ -7,7 +7,18 @@
     "physical_page_start": 292,
     "physical_page_end": 419,
     "file": "data/appendix.json",
+    "semantic_file": "semantic/appendix.html",
+    "source_doc": "source/doc/14-Appendix.doc",
     "route": "#/research/abhidhamma-sangaha/read/appendix"
+  },
+  "semantic": {
+    "blocks": 2029,
+    "paragraphs": 1988,
+    "tables": 41,
+    "page_anchors": 128,
+    "text_matched_pages": 68,
+    "proportional_pages": 60,
+    "media": 34
   },
   "pages": [
     {

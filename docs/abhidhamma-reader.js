@@ -34,6 +34,11 @@ async function loadAbhidhammaSection(slug) {
   const response = await fetch(`${ABHIDHAMMA_BASE}${section.file}`);
   if (!response.ok) throw new Error(`section HTTP ${response.status}`);
   const payload = await response.json();
+  if (section.semantic_file) {
+    const semanticResponse = await fetch(`${ABHIDHAMMA_BASE}${section.semantic_file}`);
+    if (!semanticResponse.ok) throw new Error(`semantic HTML HTTP ${semanticResponse.status}`);
+    payload.semantic_html = await semanticResponse.text();
+  }
   _abhidhammaSections.set(slug, payload);
   return payload;
 }
@@ -67,6 +72,41 @@ function abhidhammaTextHtml(text, complex, term) {
   }).join('');
 }
 
+function highlightAbhidhammaSemantic(root, term) {
+  const query = String(term || '').trim();
+  if (!root || !query) return;
+  const candidates = [...new Set([query, abhidhammaSimple(query)].filter(Boolean))]
+    .sort((a, b) => b.length - a.length);
+  const candidate = candidates[0];
+  if (!candidate) return;
+  const escaped = candidate.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(escaped, 'gi');
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let current;
+  while ((current = walker.nextNode())) {
+    if (current.parentElement?.closest('script,style,mark')) continue;
+    if (pattern.test(current.nodeValue || '')) nodes.push(current);
+    pattern.lastIndex = 0;
+  }
+  nodes.forEach(node => {
+    const value = node.nodeValue || '';
+    const fragment = document.createDocumentFragment();
+    let cursor = 0;
+    value.replace(pattern, (matched, offset) => {
+      fragment.append(document.createTextNode(value.slice(cursor, offset)));
+      const mark = document.createElement('mark');
+      mark.textContent = matched;
+      fragment.append(mark);
+      cursor = offset + matched.length;
+      return matched;
+    });
+    fragment.append(document.createTextNode(value.slice(cursor)));
+    node.parentNode?.replaceChild(fragment, node);
+    pattern.lastIndex = 0;
+  });
+}
+
 function abhidhammaSectionNav(manifest, activeSlug) {
   return (manifest.sections || []).map(section => {
     const active = section.slug === activeSlug ? ' is-active' : '';
@@ -78,7 +118,7 @@ function abhidhammaHeader(manifest, activeSlug = '') {
   return `<section class="abhi-head">
     <div class="abhi-kicker">ABHIDHAMMATTHASAṄGAHA-VITTHĀRA · SIMPLIFIED EDITION</div>
     <h2>《摄阿毗达摩义论表解》</h2>
-    <p>全书简体转换版。保留巴利语、英文、特殊符号、原书页码和复杂图表的原页校验视图。</p>
+    <p>全书简体转换版。正文、表格与图示一体化展示；保留巴利语、英文、特殊符号、原书页码和复杂图表的原页校验视图。</p>
     <div class="abhi-stats">
       <span><strong>${Number(manifest.physical_pages || 0).toLocaleString()}</strong> 页</span>
       <span><strong>${Number(manifest.sections?.length || 0)}</strong> 个分片</span>
@@ -105,7 +145,7 @@ async function renderAbhidhammaHome() {
     app.innerHTML = `<div class="abhi-page"><button class="back-btn" onclick="location.hash='#/research'">← 返回研究成果</button>
       ${abhidhammaHeader(manifest)}
       <div class="abhi-home-layout"><nav class="abhi-toc" aria-label="摄阿毗达摩义论表解目录">${abhidhammaSectionNav(manifest)}</nav><main>
-        <section class="abhi-intro-card"><h3>阅读说明</h3><p>普通正文采用可搜索、可复制的简体 HTML；密集矩阵、箭头图、特殊字体表格和图像页面同时保留可缩放的原页视图。点击页码可以复制和分享精确位置。</p><p>全站搜索已收录本书 18 个内容分片，可直接从搜索结果跳转到具体页。</p><p><a class="community-primary-btn abhi-inline-button" href="#/search?q=心所&scope=site">搜索本书</a></p></section>
+        <section class="abhi-intro-card"><h3>阅读说明</h3><p>章节正文来自原始 DOC 的直接 HTML 结构，简体中文、巴利语和英文与表格、脚注、嵌入图示一起展示；表格支持横向滚动和复制。密集矩阵、箭头图、特殊字体表格和图像页面同时保留可缩放的原页视图。</p><p>全站搜索已收录本书 18 个内容分片，可直接从搜索结果跳转到具体 PDF 页码；当前章节使用 DOC 语义源的部分会显示来源标记。</p><p><a class="community-primary-btn abhi-inline-button" href="#/search?q=心所&scope=site">搜索本书</a></p></section>
         <div class="abhi-section-grid">${cards}</div>
       </main></div></div>`;
   } catch (error) {
@@ -148,18 +188,30 @@ async function renderAbhidhammaReader(slug, physicalPage, view = 'text', term = 
     if (!page) throw new Error('该分片没有可显示的页');
     const sourceImage = page.source_image ? `<details class="abhi-source-view" ${view === 'source' ? 'open' : ''}><summary>原页校验视图 · 第 ${page.physical_page} 页</summary><figure><img src="${abhidhammaEscape(page.source_image)}" alt="《摄阿毗达摩义论表解》第 ${page.physical_page} 页原页" loading="lazy"><figcaption>原 PDF 第 ${page.physical_page} 页；可放大查看复杂表格、图示和特殊符号。</figcaption></figure></details>` : '';
     const logical = page.logical_label ? `<span class="abhi-logical-label">书内页码：${abhidhammaEscape(page.logical_label)}</span>` : '';
+    const sourceDoc = section.section.source_doc ? `<span class="abhi-source-doc">DOC 语义源</span>` : '<span class="abhi-source-doc">PDF 文字层</span>';
+    const semanticContent = section.semantic_html
+      ? `<div class="abhi-content abhi-semantic-content">${section.semantic_html}</div>`
+      : `<div class="abhi-content ${page.complex_layout ? 'is-complex' : ''}">${abhidhammaTextHtml(page.text, page.complex_layout, term)}</div>`;
     app.innerHTML = `<div class="abhi-page"><button class="back-btn" onclick="location.hash='#/research/abhidhamma-sangaha'">← 返回本书目录</button>
       ${abhidhammaHeader(manifest, section.section.slug)}
       <div class="abhi-reader-layout"><nav class="abhi-toc" aria-label="摄阿毗达摩义论表解目录">${abhidhammaSectionNav(manifest, section.section.slug)}</nav><main>
-        <article class="abhi-reader-card" id="abhi-page-${page.physical_page}">
-          <div class="abhi-reader-meta"><span>${abhidhammaEscape(section.section.title)}</span>${logical}<span>PDF 第 ${page.physical_page} 页</span></div>
+        <article class="abhi-reader-card" id="abhi-section-${abhidhammaEscape(section.section.slug)}">
+          <div class="abhi-reader-meta"><span>${abhidhammaEscape(section.section.title)}</span>${logical}${sourceDoc}<span>当前定位：PDF 第 ${page.physical_page} 页</span></div>
           <h3>${abhidhammaEscape(page.title || section.section.title)}</h3>
           ${abhidhammaPageToolbar(manifest, section, index, page, term, view)}
-          <div class="abhi-content ${page.complex_layout ? 'is-complex' : ''}">${abhidhammaTextHtml(page.text, page.complex_layout, term)}</div>
+          ${semanticContent}
           ${sourceImage}
         </article>
       </main></div></div>`;
-    if (term) document.getElementById(`abhi-page-${page.physical_page}`)?.querySelector('mark')?.scrollIntoView({ block: 'center' });
+    const content = document.querySelector('.abhi-semantic-content');
+    if (term && content) highlightAbhidhammaSemantic(content, term);
+    if (view === 'source' && sourceImage) {
+      document.querySelector('.abhi-source-view')?.scrollIntoView({ block: 'start' });
+    } else {
+      const marker = document.getElementById(`abhi-page-${page.physical_page}`);
+      const mark = document.querySelector('.abhi-semantic-content mark, .abhi-content mark');
+      (mark || marker)?.scrollIntoView({ block: term ? 'center' : 'start' });
+    }
   } catch (error) {
     app.innerHTML = `<div class="error-msg">页面加载失败：${abhidhammaEscape(error.message || error)}</div>`;
   }

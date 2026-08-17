@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "abbreviations",
     "title": "略语表",
@@ -7,7 +7,18 @@
     "physical_page_start": 2,
     "physical_page_end": 3,
     "file": "data/abbreviations.json",
+    "semantic_file": "semantic/abbreviations.html",
+    "source_doc": "",
     "route": "#/research/abhidhamma-sangaha/read/abbreviations"
+  },
+  "semantic": {
+    "blocks": 2,
+    "paragraphs": 2,
+    "tables": 0,
+    "page_anchors": 2,
+    "text_matched_pages": 0,
+    "proportional_pages": 2,
+    "media": 0
   },
   "pages": [
     {

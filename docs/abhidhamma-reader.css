@@ -38,6 +38,31 @@
 .abhi-content mark { padding: 0 .12em; border-radius: 3px; background: #ffe69b; color: inherit; }
 .abhi-page-text { max-width: 100%; overflow: auto; margin: 0; padding: 16px; border: 1px solid var(--border); border-radius: 10px; background: #fcfaf6; color: var(--text); font: .86em/1.72 "Noto Sans SC", "Noto Serif SC", system-ui, sans-serif; white-space: pre; tab-size: 4; }
 .abhi-content.is-complex { line-height: 1.7; }
+.abhi-semantic-content { line-height: 1.85; font-size: 1.02em; }
+.abhi-semantic-document { min-width: 0; }
+.abhi-semantic-document .doc-paragraph { margin: 0 0 12px; overflow-wrap: anywhere; }
+.abhi-semantic-document .doc-paragraph--center { text-align: center; }
+.abhi-semantic-document .doc-paragraph--right { text-align: right; }
+.abhi-semantic-document .doc-paragraph--justify { text-align: justify; }
+.abhi-semantic-document .doc-paragraph--large { font-size: 1.08em; }
+.abhi-semantic-document .doc-heading { margin-top: 20px; margin-bottom: 9px; color: var(--accent); font-size: 1.08em; line-height: 1.55; }
+.abhi-semantic-document .abhi-doc-table-wrap { max-width: 100%; margin: 18px 0 22px; overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: #fffdf9; box-shadow: 0 2px 10px rgba(80,60,30,.05); }
+.abhi-semantic-document .abhi-doc-table { min-width: 520px; width: max-content; max-width: none; border-collapse: collapse; color: var(--text); font-size: .88em; line-height: 1.55; }
+.abhi-semantic-document .abhi-doc-table td, .abhi-semantic-document .abhi-doc-table th { min-width: 2.6em; padding: 7px 9px; border: 1px solid #cfc5b5; vertical-align: top; }
+.abhi-semantic-document .abhi-doc-table th { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
+.abhi-semantic-document .abhi-doc-table p { margin: 0; }
+.abhi-semantic-document .doc-ul, .abhi-semantic-document .doc-ol { margin: 12px 0; padding-left: 1.6em; }
+.abhi-semantic-document .doc-blockquote { margin: 16px 0; padding: 10px 16px; border-left: 3px solid var(--accent-light); background: var(--accent-bg); }
+.abhi-doc-page-marker { display: flex; align-items: center; gap: 8px; margin: 27px 0 13px; padding: 5px 8px; border-top: 1px solid var(--border); color: var(--text-light); font-size: .72em; letter-spacing: .02em; scroll-margin-top: 20px; }
+.abhi-doc-page-marker:first-child { margin-top: 0; }
+.abhi-doc-page-match { margin-left: auto; opacity: .55; }
+.abhi-source-doc { padding: 2px 7px; border: 1px solid var(--border); border-radius: 999px; color: var(--accent); font-size: .9em; }
+.abhi-doc-figures { margin-top: 26px; padding-top: 13px; border-top: 1px solid var(--border); }
+.abhi-doc-figures summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+.abhi-figure-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 13px; margin-top: 13px; }
+.abhi-doc-figure { margin: 0; padding: 9px; border: 1px solid var(--border); border-radius: 10px; background: #fffdf9; text-align: center; }
+.abhi-doc-figure img { display: block; width: 100%; max-height: 270px; object-fit: contain; cursor: zoom-in; }
+.abhi-doc-figure figcaption { margin-top: 6px; color: var(--text-light); font-size: .76em; overflow-wrap: anywhere; }
 .abhi-empty-text { color: var(--text-light); font-style: italic; }
 .abhi-source-view { margin-top: 22px; border-top: 1px solid var(--border); padding-top: 12px; }
 .abhi-source-view summary { cursor: pointer; color: var(--accent); font-weight: 700; }
@@ -52,5 +77,8 @@
   .abhi-toolbar { align-items: stretch; }
   .abhi-toolbar-group { justify-content: center; }
   .abhi-page-text { margin-left: -4px; margin-right: -4px; font-size: .78em; }
+  .abhi-semantic-content { font-size: .98em; }
+  .abhi-semantic-document .abhi-doc-table { min-width: 470px; font-size: .82em; }
+  .abhi-doc-page-marker { margin-left: -4px; margin-right: -4px; }
   .abhi-section-grid { grid-template-columns: 1fr; }
 }

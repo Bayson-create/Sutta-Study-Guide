@@ -1,5 +1,5 @@
 {
-  "format": "abhidhamma-table-guide/v1",
+  "format": "abhidhamma-table-guide/v2",
   "section": {
     "slug": "copyright",
     "title": "版权页",
@@ -7,7 +7,18 @@
     "physical_page_start": 489,
     "physical_page_end": 489,
     "file": "data/copyright.json",
+    "semantic_file": "semantic/copyright.html",
+    "source_doc": "",
     "route": "#/research/abhidhamma-sangaha/read/copyright"
+  },
+  "semantic": {
+    "blocks": 1,
+    "paragraphs": 1,
+    "tables": 0,
+    "page_anchors": 1,
+    "text_matched_pages": 0,
+    "proportional_pages": 1,
+    "media": 0
   },
   "pages": [
     {
