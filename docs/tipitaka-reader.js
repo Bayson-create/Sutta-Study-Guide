@@ -293,13 +293,40 @@
       .tipitaka-reader-title{flex:1 1 120px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.95em}
       .tipitaka-toolbar-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex:1 1 auto;min-width:0}
       /* Segmented checked-pill look layered on top of the base .tb-toggle
-         (plain inline checkbox+label) - only the active state differs. */
-      .tipitaka-reader-toolbar .tb-toggle{padding:5px 10px;min-height:30px;box-sizing:border-box;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card-bg,#fff);margin-left:0}
+         (plain inline checkbox+label) - only the active state differs.
+         Flattened to match .tb-btn's own padding/height (was a taller,
+         chunkier pill) and the checkbox square is visually hidden (kept
+         in the DOM, still keyboard/label-clickable) since the pill's own
+         background already carries the checked state - a visible box next
+         to a filled pill was redundant and pulled the eye while reading.
+
+         An explicit height (not just matching padding) on BOTH .tb-toggle
+         and .tb-btn, rather than trusting padding+line-height to land on
+         the same pixel: (a) the base stylesheet's more specific
+         ".tipitaka-toolbar button,input,select{padding:7px 10px}" (a type
+         selector, 0-1-1) already outranks a bare ".tb-btn{padding:5px 12px}"
+         (0-1-0) for real <button> elements, while .tb-toggle is a <label>
+         that selector never matches at all - so the two families were
+         drifting apart even with "matching" padding; (b) CJK glyphs
+         (自动滚动/收藏此处) render measurably taller than Latin/symbol
+         glyphs (A−/A+) at the same font-size, so padding alone doesn't
+         even self-consistently size same-family buttons next to each
+         other. flex-centering an explicit height sidesteps both. */
+      .tipitaka-reader-toolbar .tb-toggle,.tipitaka-reader-toolbar .tb-btn{height:36px;padding:0 12px;margin-left:0;gap:0;box-sizing:border-box;border:1px solid var(--border,#ccc);border-radius:5px;background:var(--card-bg,#fff);display:inline-flex;align-items:center;justify-content:center;line-height:1}
+      .tipitaka-reader-toolbar .tb-toggle:hover{border-color:var(--accent-light,#c4a24e)}
+      .tipitaka-reader-toolbar .tb-toggle input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
       .tipitaka-reader-toolbar .tb-toggle:has(input:checked){background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
       .tipitaka-reader-toolbar .tb-btn.is-active{background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
       .tipitaka-hit-nav{margin-left:auto}
       .tipitaka-reader-paranum{margin-left:auto}
       .tipitaka-jumpbar:empty{display:none;margin:0;padding:0;border:0}
+      /* Match the 36px row the buttons/toggles settled on above, rather than
+         the base .tipitaka-toolbar input,select{padding:7px 10px} rule (taller). */
+      .tipitaka-reader-search{align-items:center}
+      .tipitaka-reader-search select,.tipitaka-reader-search input{height:36px;padding:0 8px;box-sizing:border-box;font-size:.85em}
+      .tipitaka-reader-search input{width:11em;min-width:0}
+      .tipitaka-reader-search-status{color:var(--text-light,#777);font-size:.82em}
+      .tipitaka-reader-search-status:empty{display:none}
       @media(max-width:760px){
         :root{--tipitaka-chrome:110px}
         /* Title stays truncated on the back button's line rather than
@@ -342,7 +369,10 @@
   // still what fires renderReader), only restyled via label:has(:checked).
   function readerToolbar(meta, current, hitState) {
     const s = settings();
-    const hitNote = hitState?.total ? `<div class="tb-group tipitaka-hit-nav"><span class="tipitaka-note">“${esc(hitState.query || '')}” 命中 ${hitState.index + 1}/${hitState.total}</span><button class="tb-btn" data-t-action="hit-prev">上一处</button><button class="tb-btn" data-t-action="hit-next">下一处</button></div>` : hitState?.query ? `<span class="tipitaka-note">搜索“${esc(hitState.query)}”${hitState.semantic ? ' · 语义相关（实际相关术语可能不同）' : ''}</span>` : '';
+    // "×" only makes sense once a hit is actually showing - there was no exit
+    // from the old `?hl=` deep-link flow either, but adding a search entry
+    // point here without a way back out of it would be a real dead end.
+    const hitNote = hitState?.total ? `<div class="tb-group tipitaka-hit-nav"><span class="tipitaka-note">“${esc(hitState.query || '')}” 命中 ${hitState.index + 1}/${hitState.total}</span><button class="tb-btn" data-t-action="hit-prev">上一处</button><button class="tb-btn" data-t-action="hit-next">下一处</button><button class="tb-btn" data-t-action="hit-clear" aria-label="清除搜索定位">×</button></div>` : hitState?.query ? `<span class="tipitaka-note">搜索“${esc(hitState.query)}”${hitState.semantic ? ' · 语义相关（实际相关术语可能不同）' : ''}</span>` : '';
     // Adds the site's own .toolbar class (docs/index.html) so .tb-group/.tb-btn/
     // .tb-toggle layout (flex row, gaps, wrap) come for free, matching every
     // other reader's toolbar look; .tipitaka-reader-toolbar (injected later in
@@ -358,10 +388,10 @@
       <div class="tipitaka-toolbar-controls">
         <div class="tb-sep"></div>
         <div class="tb-group" role="group" aria-label="显示语言">
-          <label class="tb-toggle"><input type="checkbox" data-t-toggle="pali" ${s.pali ? 'checked' : ''}> 巴利</label>
-          <label class="tb-toggle"><input type="checkbox" data-t-toggle="zh" ${s.zh ? 'checked' : ''}> 中文</label>
-          <label class="tb-toggle"><input type="checkbox" data-t-toggle="traditional" ${s.traditional ? 'checked' : ''}> 繁体</label>
-          <label class="tb-toggle"><input type="checkbox" data-t-toggle="en" ${s.en ? 'checked' : ''}> English</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="pali" ${s.pali ? 'checked' : ''}>巴利</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="zh" ${s.zh ? 'checked' : ''}>中文</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="traditional" ${s.traditional ? 'checked' : ''}>繁体</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="en" ${s.en ? 'checked' : ''}>English</label>
         </div>
         <div class="tb-sep"></div>
         <div class="tb-group">
@@ -373,6 +403,17 @@
           <button class="tb-btn${state.autoTimer ? ' is-active' : ''}" data-t-action="auto">自动滚动</button>
           <button class="tb-btn" data-t-action="bookmark">☆ 收藏此处</button>
         </div>
+        <div class="tb-sep"></div>
+        <div class="tb-group tipitaka-reader-search" role="search">
+          <select data-t-search-lang aria-label="跳转搜索语言">
+            <option value="zh">中文</option>
+            <option value="pali">巴利</option>
+            <option value="en">English</option>
+          </select>
+          <input type="text" data-t-search-input placeholder="本作品内跳转…" aria-label="在本作品内搜索并跳转">
+          <button class="tb-btn" data-t-action="search-jump">跳转</button>
+        </div>
+        <span class="tipitaka-note tipitaka-reader-search-status" data-t-search-status></span>
         ${hitNote}
         ${current?.paranum ? `<span class="tipitaka-note tipitaka-reader-paranum">段号 ${esc(current.paranum)}</span>` : ''}
       </div>
@@ -672,6 +713,38 @@
     history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}?${params}`);
     renderReader(reader.meta.id);
   }
+  // The toolbar's own "跳转" input, reusing searchHitsForReader() (already
+  // scoped to the current work for the ?hl= deep-link flow) and copying
+  // moveReaderHit()'s exact URL-param + renderReader() tail: landing here
+  // produces the same state a deep link would, so the existing hit-count/
+  // prev/next UI in readerToolbar() just shows up, nothing new to build there.
+  async function submitReaderSearch(term, language) {
+    const reader = state.reader; if (!reader) return;
+    const statusEl = document.querySelector('[data-t-search-status]');
+    term = String(term || '').trim();
+    if (!term) { if (statusEl) statusEl.textContent = '请输入要跳转的内容'; return; }
+    if (statusEl) statusEl.textContent = '搜索中…';
+    const hits = await searchHitsForReader(term, language, reader.meta.id);
+    if (!hits.length) { if (statusEl) statusEl.textContent = `未找到与"${term}"匹配的段落`; return; }
+    const target = hits[0], idx = reader.work.rows.findIndex(row => Number(row.id) === Number(target.rowId));
+    if (idx < 0) { if (statusEl) statusEl.textContent = '未能定位到对应段落'; return; }
+    const params = new URLSearchParams({ row: String(target.rowId), hl: term, hl_lang: language });
+    if (target.positions?.length) params.set('hl_pos', String(target.positions[0]));
+    if (target.matchedTerms?.length) params.set('hl_terms', target.matchedTerms.join('|'));
+    params.set('hl_anchor', searchAnchorForRow(reader.work.rows[idx], language));
+    history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}?${params}`);
+    renderReader(reader.meta.id);
+  }
+  // Neither the toolbar search above nor the original ?hl= deep-link flow
+  // had a way back to plain browsing - drop the hl* params, keep the row
+  // the user is actually on.
+  function clearReaderHit() {
+    const reader = state.reader; if (!reader) return;
+    const rowId = reader.work.rows[reader.currentIndex]?.id;
+    const params = rowId ? `?${new URLSearchParams({ row: String(rowId) })}` : '';
+    history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}${params}`);
+    renderReader(reader.meta.id);
+  }
   function bindReader() {
     app.onclick = async event => {
       const paliEl = event.target.closest('.tipitaka-pali');
@@ -689,7 +762,13 @@
       if (action === 'auto') { toggleAutoScroll(); button.classList.toggle('is-active', !!state.autoTimer); return; }
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
+      if (action === 'hit-clear') { clearReaderHit(); return; }
       if (action === 'bookmark') { await saveBookmark(reader.meta, reader.work.rows[reader.currentIndex]); return; }
+      if (action === 'search-jump') {
+        const input = app.querySelector('[data-t-search-input]'), langEl = app.querySelector('[data-t-search-lang]');
+        await submitReaderSearch(input?.value, langEl?.value || 'zh');
+        return;
+      }
       const row = reader.work.rows.find(item => Number(item.id) === Number(button.dataset.row)); if (!row) return;
       if (action === 'edit-zh' || action === 'edit-en') await editTranslation(reader.meta, row, action === 'edit-zh' ? 'zh' : 'en');
       if (action === 'draft-zh') await draftTranslation(reader.meta, row);
@@ -699,6 +778,11 @@
       const token = event.target.closest?.('[data-pali-token]');
       if (token && (event.key === 'Enter' || event.key === ' ')) {
         event.preventDefault(); await showDictionary(token.dataset.paliToken);
+      }
+      if (event.target?.matches?.('[data-t-search-input]') && event.key === 'Enter') {
+        event.preventDefault();
+        const langEl = app.querySelector('[data-t-search-lang]');
+        await submitReaderSearch(event.target.value, langEl?.value || 'zh');
       }
     };
     app.onchange = event => {

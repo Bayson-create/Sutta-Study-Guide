@@ -66,6 +66,17 @@ body.reader-immersive .site-header h1 { font-size: 1.15em; }
 body.reader-immersive .site-header .subtitle { display: none; }
 body.reader-immersive .site-header .site-nav { margin-top: 6px; font-size: 0.82em; gap: 14px; }
 body.reader-immersive .container { padding: 12px 20px; }
+/* .site-footer sits below .container as a flex sibling (body is the classic
+ * sticky-footer flex column at line ~38) and was never part of this budget -
+ * shrinking the header still left the footer's own height (~108px) making
+ * body taller than one viewport, so the page itself stayed scrollable even
+ * though .tipitaka-pane's own internal scroll was already sized to fit. That
+ * residual outer scroll is what let a wheel/trackpad gesture landing outside
+ * the reading pane carry the whole pane - pinned toolbar included - off the
+ * top of the screen. Hiding it here (nobody navigates to the footer mid-read)
+ * plus the overflow:hidden below removes the outer scroll surface entirely. */
+body.reader-immersive .site-footer { display: none; }
+body.reader-immersive { overflow: hidden; }
 @media (max-width: 760px) {
   body.reader-immersive .container { padding: 8px 10px; }
 }
@@ -1562,6 +1573,35 @@ document.addEventListener('visibilitychange', () => {
 });
 
 // Router
+// The V4 tipitaka reader budgets its own scroll pane against --tipitaka-chrome
+// (docs/tipitaka-reader.js), which used to be a guessed constant. Guessing it
+// never lined up with the real, compressed .site-header height (reader-immersive
+// shrinks it) plus .container's own padding, so the outer body stayed a bit
+// taller than the viewport - just enough to scroll, which is what let a wheel
+// gesture landing outside the reading pane carry the whole pane (and its
+// pinned toolbar) off-screen. Measuring the real height here instead removes
+// the guesswork; the ResizeObserver keeps it correct if the header ever
+// reflows (nav wrapping, font swap) while a reader route is open.
+let _readerChromeObserver = null;
+function syncReaderChrome() {
+  const header = document.querySelector('.site-header'), container = document.querySelector('.container');
+  if (!header || !container) return;
+  const headerH = header.getBoundingClientRect().height;
+  const containerStyle = getComputedStyle(container);
+  // Both padding sides count: the pane fills (100dvh - chrome), and .container
+  // reserves its own bottom padding below the pane too, not just above it.
+  const padTop = parseFloat(containerStyle.paddingTop) || 0;
+  const padBottom = parseFloat(containerStyle.paddingBottom) || 0;
+  document.documentElement.style.setProperty('--tipitaka-chrome', `${headerH + padTop + padBottom}px`);
+}
+function ensureReaderChromeObserver() {
+  if (_readerChromeObserver || typeof ResizeObserver !== 'function') return;
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+  _readerChromeObserver = new ResizeObserver(syncReaderChrome);
+  _readerChromeObserver.observe(header);
+}
+
 function route() {
   const rawHash = location.hash || '#/';
   // One query-string parse for every route. Search-result links append
@@ -1595,6 +1635,8 @@ function route() {
   communityKeepWarmStop();
   app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
   document.body.classList.toggle('reader-immersive', hash.startsWith('#/tipitaka/read/'));
+  syncReaderChrome();
+  ensureReaderChromeObserver();
   if (hash.startsWith('#/read/')) {
     renderReader(hash.slice(7), routeParams.get('en_author') || 'sujato', routeParams.get('zh_author') || 'zhuang');
   } else if (hash === '#/tipitaka' || hash.startsWith('#/tipitaka/')) {
