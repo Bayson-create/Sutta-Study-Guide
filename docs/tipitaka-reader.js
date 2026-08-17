@@ -263,10 +263,120 @@
     document.head.appendChild(style);
   }
 
+  // Loaded after injectCss(): its .tipitaka-pane{height:...} and .tipitaka-toolbar
+  // rules override the base declarations by cascade order (same specificity),
+  // same technique injectSearchTargetCss() already uses - keeps the dense
+  // base stylesheet string untouched rather than editing inside it.
+  function injectReaderLayoutCss() {
+    if (document.getElementById('tipitaka-reader-layout-css')) return;
+    const style = document.createElement('style');
+    style.id = 'tipitaka-reader-layout-css';
+    style.textContent = `
+      /* The base stylesheet capped this at min(72vh, ...): a leftover from
+         when the toolbar sat outside the pane and needed headroom reserved
+         below it. Now head+toolbar are IN the pane and reader-immersive
+         already shrinks everything above it, so the only real budget left
+         is --tipitaka-chrome; a 72vh ceiling would just silently give back
+         the space this whole change exists to reclaim. */
+      .tipitaka-pane{height:max(360px,calc(100vh - var(--tipitaka-chrome,120px)))}
+      @supports (height:100dvh){.tipitaka-pane{height:max(360px,calc(100dvh - var(--tipitaka-chrome,120px)))}}
+      .tipitaka-reader-head{padding:14px 0 6px}
+      .tipitaka-reader-head h2{margin:0 0 4px;font-size:1.2em;line-height:1.35}
+      .tipitaka-sticky-sentinel{height:0}
+      /* .toolbar (docs/index.html) already gives this position:sticky, but
+         top:0 there assumes it's the page's OWN scroll container; here the
+         scroll container is .tipitaka-pane, same top:0 still correct since
+         it pins relative to that ancestor instead. Everything below only
+         adds what .toolbar doesn't already cover. */
+      .tipitaka-reader-toolbar{margin:0 0 4px;border-bottom:1px solid transparent;transition:box-shadow .15s,border-color .15s}
+      .tipitaka-reader-toolbar.is-pinned{border-bottom-color:var(--border,#e5e5e5);box-shadow:0 4px 12px rgba(0,0,0,.07)}
+      .tipitaka-reader-title{flex:1 1 120px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.95em}
+      .tipitaka-toolbar-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex:1 1 auto;min-width:0}
+      /* Segmented checked-pill look layered on top of the base .tb-toggle
+         (plain inline checkbox+label) - only the active state differs. */
+      .tipitaka-reader-toolbar .tb-toggle{padding:5px 10px;min-height:30px;box-sizing:border-box;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card-bg,#fff);margin-left:0}
+      .tipitaka-reader-toolbar .tb-toggle:has(input:checked){background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
+      .tipitaka-reader-toolbar .tb-btn.is-active{background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
+      .tipitaka-hit-nav{margin-left:auto}
+      .tipitaka-reader-paranum{margin-left:auto}
+      .tipitaka-jumpbar:empty{display:none;margin:0;padding:0;border:0}
+      @media(max-width:760px){
+        :root{--tipitaka-chrome:110px}
+        /* Title stays truncated on the back button's line rather than
+           claiming a row of its own - the full title is already shown
+           untruncated in .tipitaka-reader-head just above, so a second
+           copy costs ~40px of the scarcest real estate for no new info. */
+        .tipitaka-reader-title{max-width:38vw}
+        .tipitaka-toolbar-controls{flex-wrap:nowrap;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;padding-bottom:4px}
+        .tipitaka-toolbar-controls::-webkit-scrollbar{display:none}
+        .tipitaka-toolbar-controls .tb-sep{flex:0 0 auto}
+        .tipitaka-toolbar-controls > *{flex:0 0 auto}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Classic sentinel trick: a zero-height marker sits right before the sticky
+  // toolbar, inside the same scroll container (.tipitaka-pane, not the
+  // window). Once it scrolls past the top edge the toolbar has pinned, so we
+  // flip a class for the border/shadow that only makes sense once it's stuck.
+  function bindStickyToolbar() {
+    const pane = document.getElementById('tipitaka-pane'), sentinel = pane?.querySelector('.tipitaka-sticky-sentinel'), toolbar = document.getElementById('tipitaka-toolbar');
+    if (!pane || !sentinel || !toolbar) return null;
+    // A plain scroll check rather than IntersectionObserver: the sentinel's
+    // own offsetTop is exactly the scroll distance at which the toolbar
+    // reaches the pane's top edge and pins, since it sits immediately above
+    // the toolbar in normal flow.
+    const check = () => toolbar.classList.toggle('is-pinned', pane.scrollTop >= sentinel.offsetTop);
+    pane.addEventListener('scroll', check, { passive: true });
+    check();
+    return { disconnect: () => pane.removeEventListener('scroll', check) };
+  }
+
+  function readerHead(meta, work, hit) {
+    return `<div class="tipitaka-reader-head"><h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}</div></div><div class="tipitaka-sticky-sentinel"></div>`;
+  }
+
+  // Segmented look without touching bindReader()'s change handler: these stay
+  // real <input type="checkbox"> under the hood (event.target.checked is
+  // still what fires renderReader), only restyled via label:has(:checked).
   function readerToolbar(meta, current, hitState) {
     const s = settings();
-    const hitNote = hitState?.total ? `<span class="tipitaka-note">搜索“${esc(hitState.query || '')}” · 命中 ${hitState.index + 1}/${hitState.total}</span><button data-t-action="hit-prev">上一处</button><button data-t-action="hit-next">下一处</button>` : hitState?.query ? `<span class="tipitaka-note">搜索“${esc(hitState.query)}”${hitState.semantic ? ' · 语义相关（实际相关术语可能不同）' : ''}</span>` : '';
-    return `<div class="tipitaka-toolbar"><button data-t-action="back">← 目录</button><strong>${esc(meta.title)}</strong><label><input type="checkbox" data-t-toggle="pali" ${s.pali ? 'checked' : ''}> 巴利</label><label><input type="checkbox" data-t-toggle="zh" ${s.zh ? 'checked' : ''}> 中文</label><label><input type="checkbox" data-t-toggle="traditional" ${s.traditional ? 'checked' : ''}> 繁体</label><label><input type="checkbox" data-t-toggle="en" ${s.en ? 'checked' : ''}> English</label><button data-t-action="font-down">A−</button><button data-t-action="font-up">A+</button><button data-t-action="auto">自动滚动</button><button data-t-action="bookmark">☆ 收藏此处</button>${hitNote}${current?.paranum ? `<span class="tipitaka-note">段号 ${esc(current.paranum)}</span>` : ''}</div>`;
+    const hitNote = hitState?.total ? `<div class="tb-group tipitaka-hit-nav"><span class="tipitaka-note">“${esc(hitState.query || '')}” 命中 ${hitState.index + 1}/${hitState.total}</span><button class="tb-btn" data-t-action="hit-prev">上一处</button><button class="tb-btn" data-t-action="hit-next">下一处</button></div>` : hitState?.query ? `<span class="tipitaka-note">搜索“${esc(hitState.query)}”${hitState.semantic ? ' · 语义相关（实际相关术语可能不同）' : ''}</span>` : '';
+    // Adds the site's own .toolbar class (docs/index.html) so .tb-group/.tb-btn/
+    // .tb-toggle layout (flex row, gaps, wrap) come for free, matching every
+    // other reader's toolbar look; .tipitaka-reader-toolbar (injected later in
+    // the DOM, so it wins same-specificity ties) only overrides what's
+    // genuinely reader-specific: sticky pin, mobile horizontal scroll, the
+    // segmented checked-pill look.
+    // .tipitaka-toolbar-controls wraps everything after the title into one
+    // unit so mobile CSS can put the title on its own line and let only this
+    // part scroll horizontally (see injectReaderLayoutCss).
+    return `<div class="tipitaka-toolbar toolbar tipitaka-reader-toolbar" id="tipitaka-toolbar">
+      <div class="tb-group"><button class="tb-btn" data-t-action="back">← 目录</button></div>
+      <strong class="tipitaka-reader-title">${esc(meta.title)}</strong>
+      <div class="tipitaka-toolbar-controls">
+        <div class="tb-sep"></div>
+        <div class="tb-group" role="group" aria-label="显示语言">
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="pali" ${s.pali ? 'checked' : ''}> 巴利</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="zh" ${s.zh ? 'checked' : ''}> 中文</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="traditional" ${s.traditional ? 'checked' : ''}> 繁体</label>
+          <label class="tb-toggle"><input type="checkbox" data-t-toggle="en" ${s.en ? 'checked' : ''}> English</label>
+        </div>
+        <div class="tb-sep"></div>
+        <div class="tb-group">
+          <button class="tb-btn" data-t-action="font-down">A−</button>
+          <button class="tb-btn" data-t-action="font-up">A+</button>
+        </div>
+        <div class="tb-sep"></div>
+        <div class="tb-group">
+          <button class="tb-btn${state.autoTimer ? ' is-active' : ''}" data-t-action="auto">自动滚动</button>
+          <button class="tb-btn" data-t-action="bookmark">☆ 收藏此处</button>
+        </div>
+        ${hitNote}
+        ${current?.paranum ? `<span class="tipitaka-note tipitaka-reader-paranum">段号 ${esc(current.paranum)}</span>` : ''}
+      </div>
+    </div>`;
   }
 
   function highlightHtml(text, term, language, active = false, activePosition = null, matchedTerms = null) {
@@ -360,7 +470,7 @@
   }
 
   function renderVirtual(meta, work, overlays, currentIndex, hit) {
-    const pane = document.getElementById('tipitaka-pane'), spacer = document.getElementById('tipitaka-virtual-spacer'), windowEl = document.getElementById('tipitaka-virtual-window');
+    const pane = document.getElementById('tipitaka-pane'), spacer = document.getElementById('tipitaka-virtual-spacer'), windowEl = document.getElementById('tipitaka-virtual-window'), toolbar = document.getElementById('tipitaka-toolbar');
     if (!pane || !spacer || !windowEl) return;
     // A Fenwick tree gives the viewport, the spacer and the translated window
     // one canonical coordinate system.  The former implementation selected
@@ -368,6 +478,18 @@
     // long commentary rows eventually pushed every rendered row off-screen.
     const count = work.rows.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexById = new Map(work.rows.map((row, index) => [Number(row.id), index]));
     let start = -1, end = -1, raf = 0, positionRaf = 0, positionToken = 0, destroyed = false;
+    // The reader head + sticky toolbar now live inside the pane, above the
+    // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
+    // it means "head visible, list not scrolled at all". Every place that
+    // used to read/assign pane.scrollTop as a row-list coordinate goes
+    // through these two conversions instead; toolbar.offsetHeight (read live,
+    // not cached - it stays mounted whether pinned or not, wrapping can
+    // change it) is subtracted too so a targeted row doesn't land hidden
+    // behind the pinned bar.
+    const listTop = () => spacer.offsetTop;
+    const toList = real => real - listTop();
+    const toReal = list => list + listTop();
+    const stickyOffset = () => toolbar?.offsetHeight || 0;
     const add = (index, amount) => { for (let i = index + 1; i <= count; i += i & -i) tree[i] += amount; };
     const measuredBefore = index => { let sum = 0; for (let i = index; i > 0; i -= i & -i) sum += tree[i]; return sum; };
     const offsetFor = index => Math.max(0, Math.min(count, index)) * EST_ROW_HEIGHT + measuredBefore(Math.max(0, Math.min(count, index)));
@@ -380,7 +502,7 @@
     const clampScroll = value => Math.max(0, Math.min(Number(value) || 0, Math.max(0, pane.scrollHeight - pane.clientHeight)));
     const measure = () => {
       if (destroyed) return;
-      const anchor = indexAt(pane.scrollTop);
+      const anchor = indexAt(toList(pane.scrollTop));
       let shift = 0, changed = false;
       windowEl.querySelectorAll('[data-t-row]').forEach(element => {
         const index = indexById.get(Number(element.dataset.tRow)), height = Math.ceil(element.getBoundingClientRect().height);
@@ -390,14 +512,14 @@
         if (index < anchor) shift += delta;
       });
       if (changed) {
-        if (shift) pane.scrollTop += shift;
+        if (shift) pane.scrollTop += shift; // relative pixel delta, real coordinate either way
         spacer.style.height = `${Math.max(1, totalHeight())}px`;
         windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
       }
     };
     const draw = (force = false) => {
       if (destroyed) return;
-      const viewport = Math.max(pane.clientHeight, EST_ROW_HEIGHT * 4), first = indexAt(pane.scrollTop), last = indexAt(pane.scrollTop + viewport);
+      const viewport = Math.max(pane.clientHeight, EST_ROW_HEIGHT * 4), listScroll = toList(pane.scrollTop), first = indexAt(listScroll), last = indexAt(listScroll + viewport);
       const nextStart = Math.max(0, first - OVERSCAN), nextEnd = Math.min(count, Math.max(nextStart + 1, last + OVERSCAN + 1));
       if (!force && nextStart === start && nextEnd === end) return;
       start = nextStart; end = nextEnd;
@@ -421,12 +543,14 @@
           if (attempts++ < 12) positionRaf = requestAnimationFrame(settle);
           return;
         }
-        const paneRect = pane.getBoundingClientRect(), rowRect = element.getBoundingClientRect();
+        // visibleTop is where content actually starts being readable - below
+        // the pinned toolbar, not the pane's own (possibly toolbar-covered) edge.
+        const paneRect = pane.getBoundingClientRect(), rowRect = element.getBoundingClientRect(), visibleTop = paneRect.top + stickyOffset();
         const desired = align === 'anchor'
-          ? paneRect.top + Number(targetOffset || 0)
-          : align === 'top' ? paneRect.top + 12 : paneRect.top + pane.clientHeight / 2;
+          ? visibleTop + Number(targetOffset || 0)
+          : align === 'top' ? visibleTop + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
-        const delta = actual - desired, visible = rowRect.bottom > paneRect.top && rowRect.top < paneRect.bottom;
+        const delta = actual - desired, visible = rowRect.bottom > visibleTop && rowRect.top < paneRect.bottom;
         if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
           pane.scrollTop = clampScroll(pane.scrollTop + delta);
           draw(true);
@@ -435,9 +559,9 @@
       };
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
-      pane.scrollTop = clampScroll(offsetFor(index) - (align === 'anchor'
+      pane.scrollTop = clampScroll(toReal(offsetFor(index) - (align === 'anchor'
         ? Number(targetOffset || 0)
-        : align === 'top' ? 12 : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2)));
+        : align === 'top' ? 12 + stickyOffset() : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2))));
       draw(true);
       const frame = requestAnimationFrame(() => { if (positionRaf !== frame) return; positionRaf = 0; settle(); });
       positionRaf = frame;
@@ -449,12 +573,12 @@
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
     const getAnchor = () => {
-      const index = indexAt(pane.scrollTop + 1), row = work.rows[index];
+      const index = indexAt(toList(pane.scrollTop) + 1), row = work.rows[index];
       if (!row) return null;
       const element = targetFor(row.id), paneRect = pane.getBoundingClientRect();
       return {
         rowId: Number(row.id),
-        offset: element ? element.getBoundingClientRect().top - paneRect.top : 12,
+        offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
       };
     };
     return {
@@ -494,9 +618,10 @@
   }
 
   async function renderReader(workId, preserveAnchor = null) {
-    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss();
+    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss(); injectReaderLayoutCss();
     const renderId = ++state.readerRequest;
     state.reader?.virtual?.destroy?.();
+    state.reader?.pinObserver?.disconnect?.();
     app.innerHTML = '<div class="loading"><div class="spinner"></div><div>正在准备三语阅读窗口…</div></div>';
     try {
       await ensureCatalog();
@@ -522,9 +647,10 @@
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null };
-      app.innerHTML = `${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中：“${esc(hit.query)}”，已定位到目标段。` : ''}</div><div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px"><div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar">${jumpButtons(work.rows[currentIndex])}</div>`;
+      state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null, pinObserver: null };
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${jumpButtons(work.rows[currentIndex])}</div>`;
       state.reader.virtual = renderVirtual(meta, work, overlays, currentIndex, hit);
+      state.reader.pinObserver = bindStickyToolbar();
       if (preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
       else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
@@ -560,7 +686,7 @@
       if (!reader) return;
       if (action === 'back') { location.hash = '#/tipitaka'; return; }
       if (action === 'font-up' || action === 'font-down') { const anchor = reader.virtual?.getAnchor(); settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id, anchor); return; }
-      if (action === 'auto') { toggleAutoScroll(); return; }
+      if (action === 'auto') { toggleAutoScroll(); button.classList.toggle('is-active', !!state.autoTimer); return; }
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
       if (action === 'bookmark') { await saveBookmark(reader.meta, reader.work.rows[reader.currentIndex]); return; }
