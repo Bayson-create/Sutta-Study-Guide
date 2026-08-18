@@ -288,6 +288,8 @@ body.reader-immersive.reader-chrome-open .site-footer { display: block; }
 .dhamma-ai-synthesis code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .dhamma-ai-synthesis p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
+.gotama-cite { display: inline-block; padding: 1px 7px; margin: 0 1px; border-radius: 10px; background: rgba(124, 92, 204, .14); color: #6d4fc7; font-size: 0.92em; text-decoration: none; white-space: nowrap; }
+.gotama-cite:hover { background: rgba(124, 92, 204, .24); }
 /* Token/time information is independent from the assistant action row. It
    can wrap or grow without changing the action buttons' position. */
 .gotama-msg-meta { display: block; margin-top: 4px; font-size: 0.72em; color: var(--text-light); }
@@ -12361,12 +12363,25 @@ function gotamaRenderMarkdown(text) {
   }
   closeList();
   closeQuote();
+  // Markdown links (citations like "([sn43.1](https://.../?view=sn43.1...))")
+  // must be pulled into placeholders before the bare-URL autolink regex
+  // below runs - otherwise that regex would match the same URL again
+  // inside the href="..." we just generated and nest a second <a> inside
+  // the attribute string, corrupting the markup.
+  const citeTokens = [];
+  html = html.replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g, (m, label, url) => {
+    const token = `@@GOTAMA_CITE_${citeTokens.length}@@`;
+    citeTokens.push(`<a class="gotama-cite" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`);
+    return token;
+  });
   html = html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/~~(.+?)~~/g, '<s>$1</s>')
     .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>')
     .replace(/(https?:\/\/[^\s<)\]"']+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
-  return html.replace(/@@GOTAMA_FENCE_(\d+)@@/g, (m, idx) => fenceBlocks[+idx]);
+  return html
+    .replace(/@@GOTAMA_FENCE_(\d+)@@/g, (m, idx) => fenceBlocks[+idx])
+    .replace(/@@GOTAMA_CITE_(\d+)@@/g, (m, idx) => citeTokens[+idx]);
 }
 
 function gotamaMessageMetaHtml(m) {
