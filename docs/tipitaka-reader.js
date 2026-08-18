@@ -318,7 +318,6 @@
       .tipitaka-reader-toolbar .tb-toggle:has(input:checked){background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
       .tipitaka-reader-toolbar .tb-btn.is-active{background:var(--accent,#8b6914);color:#fff;border-color:var(--accent,#8b6914)}
       .tipitaka-hit-nav{margin-left:auto}
-      .tipitaka-reader-paranum{margin-left:auto}
       .tipitaka-jumpbar:empty{display:none;margin:0;padding:0;border:0}
       /* Match the 36px row the buttons/toggles settled on above, rather than
          the base .tipitaka-toolbar input,select{padding:7px 10px} rule (taller). */
@@ -350,14 +349,70 @@
   function bindStickyToolbar() {
     const pane = document.getElementById('tipitaka-pane'), sentinel = pane?.querySelector('.tipitaka-sticky-sentinel'), toolbar = document.getElementById('tipitaka-toolbar');
     if (!pane || !sentinel || !toolbar) return null;
+    let pinned = false, everScrolled = false;
     // A plain scroll check rather than IntersectionObserver: the sentinel's
     // own offsetTop is exactly the scroll distance at which the toolbar
     // reaches the pane's top edge and pins, since it sits immediately above
-    // the toolbar in normal flow.
-    const check = () => toolbar.classList.toggle('is-pinned', pane.scrollTop >= sentinel.offsetTop);
-    pane.addEventListener('scroll', check, { passive: true });
+    // the toolbar in normal flow. The header auto-collapses the first time
+    // this crosses into pinned - not on every scroll tick after, just the
+    // false->true edge - to reclaim its space once the reader is actually
+    // scrolled into. Gated on an actual scroll event having fired (not the
+    // sync call right below, which only sets the initial is-pinned display
+    // state): reading .offsetTop this early forces a synchronous layout, so
+    // it's normally accurate, but a page that hasn't laid out yet at all
+    // would otherwise read scrollTop=0 >= offsetTop=0 as "already pinned"
+    // and collapse the header before the reader is even visible.
+    const check = () => {
+      const next = pane.scrollTop >= sentinel.offsetTop;
+      if (everScrolled && next && !pinned) document.body.classList.add('reader-chrome-collapsed');
+      pinned = next;
+      toolbar.classList.toggle('is-pinned', pinned);
+    };
+    pane.addEventListener('scroll', () => { everScrolled = true; check(); }, { passive: true });
     check();
-    return { disconnect: () => pane.removeEventListener('scroll', check) };
+
+    // A wheel/touch gesture that *starts* on the pinned toolbar itself (not
+    // the reading content below it) toggles the header/footer back into
+    // view. The toolbar never scrolls on its own, so any such event reaching
+    // this listener already means the pointer/finger was over it -
+    // preventDefault stops that same input from also scrolling the pane
+    // underneath. Gated on `pinned`: before the toolbar has ever reached the
+    // top it's just inline content flowing with the page, nothing to
+    // re-summon yet, so this stays out of the way of normal scrolling.
+    let toggleLockUntil = 0, touchStartY = null, touchHandled = false;
+    const toggleChrome = () => {
+      const now = Date.now();
+      if (now < toggleLockUntil) return;
+      toggleLockUntil = now + 500; // one flip per gesture, not one per wheel tick in a trackpad burst
+      const opening = !document.body.classList.contains('reader-chrome-open');
+      document.body.classList.toggle('reader-chrome-open', opening);
+      document.body.classList.toggle('reader-chrome-collapsed', !opening);
+    };
+    const onWheel = event => { if (!pinned) return; event.preventDefault(); toggleChrome(); };
+    const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
+    const onTouchMove = event => {
+      if (!pinned || touchHandled || touchStartY === null) return;
+      const dy = (event.touches[0]?.clientY ?? touchStartY) - touchStartY;
+      if (Math.abs(dy) < 10) return;
+      touchHandled = true;
+      event.preventDefault();
+      toggleChrome();
+    };
+    const onTouchEnd = () => { touchStartY = null; touchHandled = false; };
+    toolbar.addEventListener('wheel', onWheel, { passive: false });
+    toolbar.addEventListener('touchstart', onTouchStart, { passive: true });
+    toolbar.addEventListener('touchmove', onTouchMove, { passive: false });
+    toolbar.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return {
+      disconnect: () => {
+        pane.removeEventListener('scroll', check);
+        toolbar.removeEventListener('wheel', onWheel);
+        toolbar.removeEventListener('touchstart', onTouchStart);
+        toolbar.removeEventListener('touchmove', onTouchMove);
+        toolbar.removeEventListener('touchend', onTouchEnd);
+      },
+    };
   }
 
   function readerHead(meta, work, hit) {
@@ -367,7 +422,7 @@
   // Segmented look without touching bindReader()'s change handler: these stay
   // real <input type="checkbox"> under the hood (event.target.checked is
   // still what fires renderReader), only restyled via label:has(:checked).
-  function readerToolbar(meta, current, hitState) {
+  function readerToolbar(meta, hitState) {
     const s = settings();
     // "×" only makes sense once a hit is actually showing - there was no exit
     // from the old `?hl=` deep-link flow either, but adding a search entry
@@ -415,7 +470,6 @@
         </div>
         <span class="tipitaka-note tipitaka-reader-search-status" data-t-search-status></span>
         ${hitNote}
-        ${current?.paranum ? `<span class="tipitaka-note tipitaka-reader-paranum">段号 ${esc(current.paranum)}</span>` : ''}
       </div>
     </div>`;
   }
@@ -689,7 +743,13 @@
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
       state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null, pinObserver: null };
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, work.rows[currentIndex], hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${jumpButtons(work.rows[currentIndex])}</div>`;
+      // .tipitaka-jumpbar (cross-edition links) lives INSIDE .tipitaka-pane now,
+      // after the virtual spacer - it's trailing scroll content, not outer-page
+      // content, so it stays reachable now that the outer page can't scroll at
+      // all (body.reader-immersive{overflow:hidden}). listTop()/toList()/toReal()
+      // in renderVirtual() only look at spacer.offsetTop (what comes BEFORE the
+      // spacer), so this doesn't touch the virtualization coordinate math.
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${jumpButtons(work.rows[currentIndex])}</div></div>`;
       state.reader.virtual = renderVirtual(meta, work, overlays, currentIndex, hit);
       state.reader.pinObserver = bindStickyToolbar();
       if (preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
@@ -723,6 +783,20 @@
     const statusEl = document.querySelector('[data-t-search-status]');
     term = String(term || '').trim();
     if (!term) { if (statusEl) statusEl.textContent = '请输入要跳转的内容'; return; }
+    // "271" or "271." means "jump to paragraph 271", not "search for the text
+    // 271" - paranum is structural metadata, it rarely appears verbatim in the
+    // corpus body, so routing this through the text-search index below would
+    // just miss. Same digit-extraction idiom jumpButtons() already uses.
+    const numMatch = term.match(/^(\d+)\.?$/);
+    if (numMatch) {
+      const wanted = Number(numMatch[1]);
+      const idx = reader.work.rows.findIndex(row => Number(String(row.paranum || '').match(/\d+/)?.[0]) === wanted);
+      if (idx < 0) { if (statusEl) statusEl.textContent = `未找到段号 ${wanted}`; return; }
+      const rowId = reader.work.rows[idx].id;
+      history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}?row=${rowId}`);
+      renderReader(reader.meta.id);
+      return;
+    }
     if (statusEl) statusEl.textContent = '搜索中…';
     const hits = await searchHitsForReader(term, language, reader.meta.id);
     if (!hits.length) { if (statusEl) statusEl.textContent = `未找到与"${term}"匹配的段落`; return; }

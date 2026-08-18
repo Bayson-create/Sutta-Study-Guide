@@ -77,6 +77,15 @@ body.reader-immersive .container { padding: 12px 20px; }
  * plus the overflow:hidden below removes the outer scroll surface entirely. */
 body.reader-immersive .site-footer { display: none; }
 body.reader-immersive { overflow: hidden; }
+/* Toggled from tipitaka-reader.js's bindStickyToolbar(): once the reader
+ * toolbar first reaches the top and pins, the header (still visible up to
+ * that point) auto-collapses to reclaim its space. A wheel/touch gesture
+ * that *starts* on the pinned toolbar itself flips back to reader-chrome-open,
+ * which brings the header back and - unlike the plain reader-immersive
+ * default above - also un-hides the footer, since this is a deliberate
+ * "show me the frame again" action rather than the passive reading default. */
+body.reader-immersive.reader-chrome-collapsed .site-header { display: none; }
+body.reader-immersive.reader-chrome-open .site-footer { display: block; }
 @media (max-width: 760px) {
   body.reader-immersive .container { padding: 8px 10px; }
 }
@@ -1584,22 +1593,27 @@ document.addEventListener('visibilitychange', () => {
 // reflows (nav wrapping, font swap) while a reader route is open.
 let _readerChromeObserver = null;
 function syncReaderChrome() {
-  const header = document.querySelector('.site-header'), container = document.querySelector('.container');
+  const header = document.querySelector('.site-header'), footer = document.querySelector('.site-footer'), container = document.querySelector('.container');
   if (!header || !container) return;
   const headerH = header.getBoundingClientRect().height;
+  // 0 when reader-chrome-collapsed (display:none) or the plain reader-immersive
+  // default (footer hidden either way) - only reader-chrome-open gives this
+  // real height, and that's exactly when the pane needs to shrink for it.
+  const footerH = footer ? footer.getBoundingClientRect().height : 0;
   const containerStyle = getComputedStyle(container);
   // Both padding sides count: the pane fills (100dvh - chrome), and .container
   // reserves its own bottom padding below the pane too, not just above it.
   const padTop = parseFloat(containerStyle.paddingTop) || 0;
   const padBottom = parseFloat(containerStyle.paddingBottom) || 0;
-  document.documentElement.style.setProperty('--tipitaka-chrome', `${headerH + padTop + padBottom}px`);
+  document.documentElement.style.setProperty('--tipitaka-chrome', `${headerH + footerH + padTop + padBottom}px`);
 }
 function ensureReaderChromeObserver() {
   if (_readerChromeObserver || typeof ResizeObserver !== 'function') return;
-  const header = document.querySelector('.site-header');
+  const header = document.querySelector('.site-header'), footer = document.querySelector('.site-footer');
   if (!header) return;
   _readerChromeObserver = new ResizeObserver(syncReaderChrome);
   _readerChromeObserver.observe(header);
+  if (footer) _readerChromeObserver.observe(footer);
 }
 
 function route() {
@@ -1634,7 +1648,14 @@ function route() {
   // other navigation should stop paying for pings it doesn't need.
   communityKeepWarmStop();
   app.classList.toggle('container-wide', hash === '#/research/timeline' || hash === '#/research/pali-meditation-flowchart');
-  document.body.classList.toggle('reader-immersive', hash.startsWith('#/tipitaka/read/'));
+  const enteringReader = hash.startsWith('#/tipitaka/read/');
+  document.body.classList.toggle('reader-immersive', enteringReader);
+  // In-reader navigation (hit prev/next, the toolbar's own jump search) goes
+  // through history.replaceState, which never fires route() - so this only
+  // runs on a genuine route change, and only clears the collapsed/open toggle
+  // when actually leaving the reader (or switching to a different work via a
+  // real link), never mid-session.
+  if (!enteringReader) document.body.classList.remove('reader-chrome-collapsed', 'reader-chrome-open');
   syncReaderChrome();
   ensureReaderChromeObserver();
   if (hash.startsWith('#/read/')) {
