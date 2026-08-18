@@ -2622,13 +2622,14 @@ function searchScanSuttas(needle) {
 // Snippet with the match marked using sentinels, so escaping happens before
 // any tag is introduced.
 function searchSnippetHtml(text, off, len) {
+  const displayText = toSimplified(String(text || ''));
   const s = Math.max(0, off - SEARCH_SNIPPET_RADIUS);
-  const e = Math.min(text.length, off + len + SEARCH_SNIPPET_RADIUS);
+  const e = Math.min(displayText.length, off + len + SEARCH_SNIPPET_RADIUS);
   return (s > 0 ? '\u2026' : '')
-    + esc(text.slice(s, off))
-    + '<mark>' + esc(text.slice(off, off + len)) + '</mark>'
-    + esc(text.slice(off + len, e))
-    + (e < text.length ? '\u2026' : '');
+    + esc(displayText.slice(s, off))
+    + '<mark>' + esc(displayText.slice(off, off + len)) + '</mark>'
+    + esc(displayText.slice(off + len, e))
+    + (e < displayText.length ? '\u2026' : '');
 }
 
 function searchHitHref(doc, hit, term, len) {
@@ -3108,7 +3109,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
       siteHits += suttaHits.length;
       const lis = suttaHits.map(h => {
         const href = h.uid ? `#/read/${encodeURIComponent(h.uid)}` : `#/category/${h.catKey}`;
-        return `<li><a class="title" href="${href}">${esc(h.name || h.uid)}</a><span class="meta">${esc(h.catTitle)}${h.section ? ' · ' + esc(h.section) : ''}</span><p class="snippet">${searchSnippetHtml(h.text, h.off, len)}</p></li>`;
+        return `<li><a class="title" href="${href}">${esc(toSimplified(String(h.name || h.uid)))}</a><span class="meta">${esc(toSimplified(String(h.catTitle || '')))}${h.section ? ' · ' + esc(toSimplified(String(h.section))) : ''}</span><p class="snippet">${searchSnippetHtml(h.text, h.off, len)}</p></li>`;
       });
       siteHtml = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>经文总结</span><span class="count">${suttaHits.length} 处</span></div>` +
         `<div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(lis, 8, '处')}</ul></div></div>`;
@@ -3130,7 +3131,7 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
         run.docs.push({ doc, blocks, hits });
         const lis = hits.map(h => {
           const href = searchHitHref(doc, h, q, len);
-          const where = h.heading && !h.head ? `<span class="meta">${esc(h.heading)}</span>` : '';
+          const where = h.heading && !h.head ? `<span class="meta">${esc(toSimplified(String(h.heading)))}</span>` : '';
           return `<li><a href="${href}">${searchSnippetHtml(h.text, h.off, len)}</a>${where}</li>`;
         });
         results.insertAdjacentHTML('beforeend', wrapScope('site',
@@ -3352,13 +3353,13 @@ async function renderSearchPage(q, scopeParam, v4ScopeParam = '', v4TypesParam =
       const hitHtml = item => {
         const href = searchUpanishadsEvidenceHref({ ...item, query: q }, q);
         const terms = item.matched_terms || [];
-        let snippet = esc(item.snippet || item.text_zh || '');
+        let snippet = esc(toSimplified(String(item.snippet || item.text_zh || '')));
         for (const term of terms.sort((a, b) => b.length - a.length)) {
-          const safe = esc(term);
+          const safe = esc(toSimplified(String(term || '')));
           if (safe) snippet = snippet.split(safe).join(`<mark>${safe}</mark>`);
         }
         const level = item.match_level === 'exact' ? '精确短语命中' : item.match_level === 'core' ? '核心词命中' : '相关词命中';
-        return `<li><a href="${href}"><span class="upanishads-result-title">${esc(item.title || item.work_id)} · ${esc(item.section_id || '')}</span><span class="upanishads-result-meta">${esc((item.path || []).join(' / '))} · ${level}</span><p class="upanishads-result-snippet">${snippet}</p></a></li>`;
+        return `<li><a href="${href}"><span class="upanishads-result-title">${esc(toSimplified(String(item.title || item.work_id)))} · ${esc(toSimplified(String(item.section_id || '')))}</span><span class="upanishads-result-meta">${esc((item.path || []).map(value => toSimplified(String(value || ''))).join(' / '))} · ${level}</span><p class="upanishads-result-snippet">${snippet}</p></a></li>`;
       };
       results.insertAdjacentHTML('beforeend', wrapScope('upanishads', `<div class="dhamma-layer-section open" id="${sectionId}"><div class="dhamma-layer-section-head"><span>奥义书检索结果<span class="meta" style="margin-left:8px">默认第一组 · 点击进入授权阅读器并定位高亮</span></span><span class="count">${run.upanishads.total.toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list" data-upanishads-list>${items.map(hitHtml).join('')}</ul><div class="tipitaka-page" data-upanishads-page></div></div></div>`));
       const section = document.getElementById(sectionId);
@@ -6311,8 +6312,9 @@ window.openUpanishadsScopeDrawer = async function ({ scopes = ['g1'], onApply })
 };
 
 function upanishadsHighlightText(text, query, terms = [], active = false) {
-  let html = esc(text || '');
-  const needles = [...new Set([...(terms || []), query || ''].filter(value => value && value.length > 1))].sort((a, b) => b.length - a.length);
+  const displayText = toSimplified(String(text || ''));
+  let html = esc(displayText);
+  const needles = [...new Set([...(terms || []), query || ''].map(value => toSimplified(String(value || ''))).filter(value => value && value.length > 1))].sort((a, b) => b.length - a.length);
   for (const needle of needles) {
     const safe = esc(needle);
     if (safe) html = html.split(safe).join(`<mark>${safe}</mark>`);
@@ -6359,7 +6361,7 @@ async function renderUpanishadsSearch(query, scopeParam, cursor) {
       try {
         const data = await upanishadsRequest(`search?${params}`);
         const items = data.results || [];
-        resultRoot.innerHTML = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>命中结果</span><span class="count">${Number(data.total || items.length).toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list">${items.map(item => `<li><a href="${searchUpanishadsEvidenceHref({ ...item, query: q }, q)}"><span class="upanishads-result-title">${esc(item.title || item.work_id)} · ${esc(item.section_id || '')}</span><span class="upanishads-result-meta">${esc((item.path || []).join(' / '))} · ${esc(item.match_level || '')}</span><p class="upanishads-result-snippet">${upanishadsHighlightText(item.snippet || item.text_zh, q, item.matched_terms)}</p></a></li>`).join('')}</ul><div class="tipitaka-page">${data.next_cursor ? `<button type="button" onclick="location.hash='#/research/upanishads/search?${new URLSearchParams({ q, upscope: scopes.join('|'), cursor: data.next_cursor })}">下一页</button>` : ''}<span class="meta">每页 40 条 · 总数完整</span></div></div></div>`;
+        resultRoot.innerHTML = `<div class="dhamma-layer-section open"><div class="dhamma-layer-section-head"><span>命中结果</span><span class="count">${Number(data.total || items.length).toLocaleString()} 处</span></div><div class="dhamma-layer-section-body"><ul class="upanishads-result-list">${items.map(item => `<li><a href="${searchUpanishadsEvidenceHref({ ...item, query: q }, q)}"><span class="upanishads-result-title">${esc(toSimplified(String(item.title || item.work_id)))} · ${esc(toSimplified(String(item.section_id || '')))}</span><span class="upanishads-result-meta">${esc((item.path || []).map(value => toSimplified(String(value || ''))).join(' / '))} · ${esc(toSimplified(String(item.match_level || '')))}</span><p class="upanishads-result-snippet">${upanishadsHighlightText(item.snippet || item.text_zh, q, item.matched_terms)}</p></a></li>`).join('')}</ul><div class="tipitaka-page">${data.next_cursor ? `<button type="button" onclick="location.hash='#/research/upanishads/search?${new URLSearchParams({ q, upscope: scopes.join('|'), cursor: data.next_cursor })}">下一页</button>` : ''}<span class="meta">每页 40 条 · 总数完整</span></div></div></div>`;
         status.textContent = `命中 ${Number(data.total || items.length).toLocaleString()} 处`;
       } catch (error) { status.textContent = `检索失败：${error.message || error}`; }
     };
@@ -10817,7 +10819,9 @@ function dhammaEscapeHtml(s) {
   return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 function dhammaHighlightTerm(snippet, term) {
-  const escSnippet = dhammaEscapeHtml(snippet), escTerm = dhammaEscapeHtml(term);
+  const simplifiedSnippet = toSimplified(String(snippet || ''));
+  const simplifiedTerm = toSimplified(String(term || ''));
+  const escSnippet = dhammaEscapeHtml(simplifiedSnippet), escTerm = dhammaEscapeHtml(simplifiedTerm);
   const idx = escSnippet.indexOf(escTerm);
   if (idx === -1) return escSnippet;
   return escSnippet.slice(0, idx) + `<b class="hl">${escTerm}</b>` + escSnippet.slice(idx + escTerm.length);
@@ -11228,7 +11232,7 @@ function dhammaRenderHitLayerSections(groups, mode, sourceTag) {
         return `<li><a href="${href}">${m.juan ? `卷${dhammaEscapeHtml(m.juan)} · ` : ''}${dhammaHighlightTerm(m.snippet, m.term)}</a></li>`;
       });
       const tag = `<span class="source-tag ${sourceTag}">${sourceTag === 'ai' ? 'AI语义' : '关键词'}</span>`;
-      return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(rec.title || rec.id)}</a>${tag}${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
+        return `<li><a class="title" href="#/dhamma/read/${encodeURIComponent(rec.id)}">${dhammaEscapeHtml(toSimplified(rec.title || rec.id))}</a>${tag}${rel}<span class="meta">${item.matches.length} 处${item.truncated ? '+' : ''}</span><ol style="margin-top:4px;">${dhammaCollapsibleItems(positionLis, 5, '处')}</ol></li>`;
     });
     html += `<div class="dhamma-layer-section open" data-layer="${layer}"><div class="dhamma-layer-section-head"><span>${label}</span><span class="count">${items.length} 篇</span></div><div class="dhamma-layer-section-body"><ul class="dhamma-hit-list">${dhammaCollapsibleItems(docLis, 5, '篇')}</ul></div></div>`;
   }
@@ -11674,7 +11678,7 @@ async function dhammaRenderTraceView(q, data, { streaming = false, elapsedSecond
         const isModern = h.source_type === 'modern_theravada';
         const sourceLabel = isV4 ? 'V4 三语本' : isModern ? '现代上座部' : 'CBETA 本地文本';
         const meta = isV4 ? ((h.path || []).join(' / ')) : isModern ? `${h.chapter_id || ''}${h.page_anchor ? ` · 原书第 ${h.page_anchor} 页` : ''}` : h.cbeta_id;
-        return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(h.title)}</a><span class="source-tag ${isV4 || isModern ? 'keyword' : 'ai'}">${sourceLabel}</span><span class="meta">${dhammaEscapeHtml(meta)}${h.paranum ? ` · ${dhammaEscapeHtml(h.paranum)}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
+          return `<li id="${hitId}"><a class="title hit-link" href="#" target="_blank" rel="noopener">${dhammaEscapeHtml(toSimplified(h.title || '来源'))}</a><span class="source-tag ${isV4 || isModern ? 'keyword' : 'ai'}">${sourceLabel}</span><span class="meta">${dhammaEscapeHtml(toSimplified(meta))}${h.paranum ? ` · ${dhammaEscapeHtml(toSimplified(h.paranum))}` : ''}${h.juan_num ? ` 卷${h.juan_num}` : ''} · 相似度 ${(h.similarity_score * 100).toFixed(0)}%</span><p class="snippet">${dhammaHighlightSnippet(h.snippet)}</p></li>`;
       });
       citesHtml = `<details class="dhamma-cite-fold" ${hits.length <= 2 ? 'open' : ''}>
         <summary>查看原始引用（${hits.length} 条）</summary>
@@ -11864,7 +11868,7 @@ async function dhammaLoadGraphExplanation(q) {
 // the same offset-finding logic as the reader link so what's visually
 // highlighted here matches what gets highlighted after clicking through.
 function dhammaHighlightSnippet(snippet) {
-  const stripped = snippet.trim();
+  const stripped = toSimplified(String(snippet || '')).trim();
   if (stripped.length <= 60) return `<mark>${dhammaEscapeHtml(stripped)}</mark>`;
   const core = stripped.slice(0, 60);
   const rest = stripped.slice(60);
