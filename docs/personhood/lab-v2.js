@@ -119,6 +119,7 @@
     var content = (turn.nodes || {})[node.id] || null;
     var finished = turn.ai && !turn.ai.pending;
     var retrying = turn._nodeRetrying && turn._nodeRetrying[node.id];
+    var confirming = node.branching && turn._actionConfirming;
     var slots = content && content.slots ? Object.keys(content.slots).map(function (key) { return slotChipHtml(node.id, key, content.slots[key]); }).join('') : '';
     var body;
     if (isVithi) {
@@ -127,6 +128,14 @@
       // turn.nodes - vithiHtml() below owns this node's filled/failed/pending
       // states entirely, including its own retry button.
       body = '';
+    } else if (confirming) {
+      body = '<p class="v2-muted v2-pending"><span class="v2-spinner" aria-hidden="true"></span>正在根据所选行动生成…</p>';
+    } else if (node.branching && !turn.chosen_action) {
+      // speech-kamma/body-kamma only get their final content after the user
+      // confirms an action (see choiceHtml/runConfirmAction) - before that,
+      // /analyze only fetched candidate options for the choice panel below,
+      // so there is nothing here yet to call "pending" or "failed".
+      body = '<p class="v2-muted">请先在下方"选择这一轮实际要做的行动"中确认，本节点内容会随之生成。</p>';
     } else if (content && content.filled) {
       body = '<p>' + esc(content.filled) + '</p>';
     } else if (finished) {
@@ -166,7 +175,11 @@
         + '<span>戏论：' + esc(cycle.papanca || '—') + '</span>'
         + '<span>戏论想念：' + esc(cycle.papanca_sanna_sankha || '—') + '</span></div>';
     }).join('');
-    var canIterate = turn.ai && !turn.ai.pending;
+    // Iterating re-derives another cycle from the turn's full output, so it
+    // must wait until speech-kamma/body-kamma actually have final content
+    // (i.e. the user has confirmed an action and confirm-action succeeded),
+    // not just until the first analyze wave finished.
+    var canIterate = !!(turn.chosen_action && turn.nodes && turn.nodes['speech-kamma'] && turn.nodes['speech-kamma'].filled && turn.nodes['body-kamma'] && turn.nodes['body-kamma'].filled);
     return '<div class="v2-card v2-cycles" data-role="cycles"><h3>反复推演（戏论想念 → 寻）</h3>'
       + (rows || '<p class="v2-muted">尚未推演。点击下方按钮，让 AI 在已有内容基础上再具体推演一圈，不会重复已有内容。</p>')
       + '<button class="' + (busy ? '' : 'primary') + '" data-iterate="' + turnIndex + '"' + (busy || !canIterate ? ' disabled' : '') + '>' + (busy ? '推演中…' : '再推演一轮') + '</button></div>';
@@ -215,18 +228,20 @@
       return '<div class="v2-card v2-chosen" data-role="choice"><h3>本轮选择的行动</h3>' + lines.join('')
         + '<span class="v2-muted">下一轮请在最下方输入对方真实的回应，或自己新生起的心理活动。</span></div>';
     }
-    // Waiting only blocks on the job actually still running - never on
-    // whether these two specific nodes happened to come back yet. Once
-    // turn.ai.pending is false the job is truly done (including its
-    // built-in per-node retry), so a still-missing node at this point is a
-    // permanent miss, not a "not yet" - branchGroupHtml degrades that node
-    // to a plain text field instead of blocking the whole panel forever.
-    var pending = turn.ai && turn.ai.pending;
-    if (pending) return '<div class="v2-card v2-choice-loading" data-role="choice"><p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>正在并发生成语业与身业…</p></div>';
+    // The choice panel only appears once the backend has finished its
+    // first wave (everything up through mind-kamma) and explicitly signals
+    // "actions_ready" via the stage SSE event - speech-kamma/body-kamma are
+    // no longer generated with the rest of the batch, so gating purely on
+    // turn.ai.pending would show the panel too early. Falling back to "job
+    // fully done" covers a replay/reconnect edge case where the stage
+    // event itself was somehow missed.
+    var actionsReady = turn._actionsReady || (turn.ai && !turn.ai.pending);
+    if (!actionsReady) return '<div class="v2-card v2-choice-loading" data-role="choice"><p class="v2-muted"><span class="v2-spinner" aria-hidden="true"></span>正在生成意业，随后将给出可选行动…</p></div>';
+    var confirming = turn._actionConfirming;
     var finished = true;
     return '<div class="v2-card v2-choice" data-role="choice" data-choice="' + turnIndex + '"><h3>选择这一轮实际要做的行动（语业、身业可分别选择或改写，也可都不采取）</h3>'
       + branching.map(function (node) { return branchGroupHtml(turnIndex, node, (turn.nodes || {})[node.id], null, finished, turn._nodeRetrying && turn._nodeRetrying[node.id]); }).join('')
-      + '<button class="primary" data-confirm-action="' + turnIndex + '">确定这一轮的行动</button></div>';
+      + '<button class="primary" data-confirm-action="' + turnIndex + '"' + (confirming ? ' disabled' : '') + '>' + (confirming ? '生成中…' : '确定这一轮的行动') + '</button></div>';
   }
 
   function statusBarHtml(turn) {
@@ -281,14 +296,33 @@
     var loopTo = flow.querySelector('[data-node="thinking"]');
     if (loopFrom && loopTo) {
       var a = rect(loopFrom), b = rect(loopTo);
-      var x = Math.max(a.left + a.width, b.left + b.width) + 26;
+      // The offset used to be a flat 26px, which fits the desktop
+      // .v2-flow padding-right (38px) but exactly equals the mobile one
+      // (26px) - on narrow screens the loop line landed flush against or
+      // past the container's own edge. Read the real padding and stay
+      // safely inside it instead of assuming a desktop-sized gutter.
+      var paddingRight = parseFloat(global.getComputedStyle(flow).paddingRight) || 26;
+      var offset = Math.max(8, Math.min(26, paddingRight - 4));
+      var x = Math.max(a.left + a.width, b.left + b.width) + offset;
       parts.push('<path class="loop" d="M' + (a.left + a.width) + ',' + (a.top + a.height / 2) + ' H' + x + ' V' + (b.top + b.height / 2) + ' H' + (b.left + b.width + 3) + '" marker-end="url(#v2-arrow)" />');
       parts.push('<text class="loop-label" x="' + (x + 5) + '" y="' + ((a.top + b.top) / 2) + '">反复推演</text>');
     }
     svg.innerHTML = parts.join('');
   }
+  // Redraw is deferred to the next animation frame rather than run
+  // synchronously right after a layout-changing DOM swap: on narrow
+  // viewports a media-query breakpoint change (multi-column layers
+  // collapsing to one column) can still be mid-reflow when the caller's
+  // next statement runs, so a synchronous getBoundingClientRect() read
+  // right after outerHTML/innerHTML replacement risks stale rects.
+  var connectorRaf = global.requestAnimationFrame || function (fn) { return global.setTimeout(fn, 16); };
   function drawAllConnectors(app) {
-    [].slice.call(app.querySelectorAll('.v2-flow')).forEach(drawConnectors);
+    connectorRaf(function () {
+      [].slice.call(app.querySelectorAll('.v2-flow')).forEach(drawConnectors);
+    });
+  }
+  function drawConnectorsDeferred(flow) {
+    connectorRaf(function () { if (flow) drawConnectors(flow); });
   }
 
   function fetchJson(url) { return fetch(url, {cache:'force-cache'}).then(function (response) { if (!response.ok) throw new Error('HTTP ' + response.status); return response.json(); }); }
@@ -378,7 +412,7 @@
     var temp = document.createElement('div');
     temp.innerHTML = nodeHtml(node, turn, layerIndex);
     el.replaceWith(temp.firstElementChild);
-    drawConnectors(flow);
+    drawConnectorsDeferred(flow);
   }
   function patchRegion(block, selector, html) {
     if (!block) return;
@@ -450,7 +484,7 @@
         aiJobRemember(JOB_KIND, evt.job_id, state.conversationId);
         persist();
         var flow = app.querySelectorAll('.v2-flow')[turnIndex];
-        if (flow) { flow.outerHTML = flowHtml(turn); drawConnectors(app.querySelectorAll('.v2-flow')[turnIndex]); }
+        if (flow) { flow.outerHTML = flowHtml(turn); drawConnectorsDeferred(app.querySelectorAll('.v2-flow')[turnIndex]); }
         patchTurn(app, turnIndex, turn, 'facts');
       } else if (evt.type === 'observation') {
         if (evt.observation) turn.observation = evt.observation;
@@ -466,18 +500,26 @@
       } else if (evt.type === 'node') {
         nodeQueue.push(evt);
         scheduleDrain();
+      } else if (evt.type === 'stage' && evt.stage === 'actions_ready') {
+        // Everything up through mind-kamma has landed; speech-kamma/body-
+        // kamma are next but only fetch candidate options at this point -
+        // the choice panel can open now instead of waiting for turn.ai.pending.
+        turn._actionsReady = true;
+        persist();
+        patchTurn(app, turnIndex, turn, 'node');
       } else if (evt.type === 'final') {
         nodeQueue.length = 0; // the final snapshot below supersedes anything still queued
         if (evt.nodes) turn.nodes = evt.nodes;
         if (evt.observation) turn.observation = evt.observation;
         if (evt.citta_vithi) turn.citta_vithi = evt.citta_vithi;
         turn.ai = evt.ai || {enabled:false, degraded:true, pending:false};
+        turn._actionsReady = true;
         turn.elapsed_s = evt.elapsed_s;
         turn.completed = turn.total || turn.completed;
         aiJobForget(JOB_KIND);
         persist();
         var flow2 = app.querySelectorAll('.v2-flow')[turnIndex];
-        if (flow2) { flow2.outerHTML = flowHtml(turn); drawConnectors(app.querySelectorAll('.v2-flow')[turnIndex]); }
+        if (flow2) { flow2.outerHTML = flowHtml(turn); drawConnectorsDeferred(app.querySelectorAll('.v2-flow')[turnIndex]); }
         patchTurn(app, turnIndex, turn, 'final');
       } else if (evt.type === 'error') {
         nodeQueue.length = 0;
@@ -579,7 +621,7 @@
       app.dataset.toggleBound = '1';
       app.addEventListener('toggle', function (event) {
         var flow = event.target.closest && event.target.closest('.v2-flow');
-        if (flow) drawConnectors(flow);
+        if (flow) drawConnectorsDeferred(flow);
       }, true);
     }
     // Input is deliberately last in the DOM (below every recorded turn) so
@@ -611,11 +653,7 @@
           var picked = fieldset.querySelector('input[type=radio]:checked');
           chosen[field] = typed || (picked ? picked.value : '') || null;
         });
-        var turn = state.turns[turnIndex];
-        turn.chosen_action = chosen;
-        state.selectedAction = chosen;
-        persist();
-        patchTurn(app, turnIndex, turn, 'node');
+        runConfirmAction(app, turnIndex, chosen);
         return;
       }
       var iterateBtn = event.target.closest('[data-iterate]');
@@ -623,6 +661,39 @@
       var retryBtn = event.target.closest('[data-retry-node]');
       if (retryBtn) runRetryNode(app, turnIndex, retryBtn.getAttribute('data-retry-node'));
     });
+  }
+
+  /* ── 确认行动：语业/身业在此之前完全不生成内容，确认后一次性重生成两者，
+     内容与所选行动一致，而不是独立猜测再指望和用户的选择碰巧对上。 ── */
+  async function runConfirmAction(app, turnIndex, chosen) {
+    var turn = state.turns[turnIndex];
+    if (!turn || turn._actionConfirming) return;
+    turn._actionConfirming = true;
+    persist();
+    patchTurn(app, turnIndex, turn, 'node');
+    var request = {
+      message: turn.observation && turn.observation.raw || turn.message, model_version: turn.model_version,
+      previous_observations: state.turns.map(function (t) { return t.observation && t.observation.raw; }).slice(0, turnIndex).slice(-12),
+      selected_action: chosen, evidence_bundle_version: turn.evidence_bundle_version || 'personhood-evidence/v1',
+      selected_evidence: turn.evidence || [],
+    };
+    try {
+      var res = await fetch(base() + '/api/personhood/v2/confirm-action', {method:'POST', headers:headers(), body:JSON.stringify(request)});
+      var data = {}; try { data = await res.json(); } catch (_) {}
+      if (!res.ok) throw new Error(data.detail || ('生成失败（HTTP ' + res.status + '）'));
+      turn.nodes = turn.nodes || {};
+      if (data.speech_kamma) turn.nodes['speech-kamma'] = data.speech_kamma;
+      if (data.body_kamma) turn.nodes['body-kamma'] = data.body_kamma;
+      turn.chosen_action = chosen;
+      state.selectedAction = chosen;
+    } catch (error) {
+      var status = app.querySelector('[data-status]');
+      if (status) status.textContent = '确认行动失败：' + error.message;
+    } finally {
+      turn._actionConfirming = false;
+      persist();
+      patchTurn(app, turnIndex, turn, 'node');
+    }
   }
 
   /* ── 单节点重试：/analyze 内置的一次自动重试仍失败后，用户手动再试一次 ── */
