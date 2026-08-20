@@ -83,7 +83,13 @@ body.reader-immersive .container { padding: 12px 20px; }
  * only needs to clear each element's real rendered height (header ~70-90px,
  * footer ~108px in this compressed state) with room to spare - the browser
  * interpolates smoothly between 0 and that bound either way. */
-body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .22s ease, opacity .18s ease; }
+/* max-height:0 on a border-box element does not reliably clip its own
+ * padding/border in every engine tested - the footer's 28px+28px padding and
+ * 1px border rendered a ~57px tall box even with max-height:0 and
+ * min-height:0 both computing to 0 (confirmed live: only zeroing padding and
+ * border-top-width actually collapsed it to 0px). Padding/border need their
+ * own explicit override here, restored below in .reader-chrome-open. */
+body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; min-height: 0; padding-top: 0; padding-bottom: 0; border-top-width: 0; transition: max-height .22s ease, opacity .18s ease, padding .22s ease, border-top-width .18s ease; }
 /* .tipitaka-pane sizes itself against 100dvh (real visible viewport) when
  * supported, but body only ever had min-height:100vh (the large/address-bar-
  * hidden viewport on mobile Safari). When the two units diverge - address
@@ -102,9 +108,9 @@ body.reader-immersive { overflow: hidden; }
  * which brings the header back and - unlike the plain reader-immersive
  * default above - also un-hides the footer, since this is a deliberate
  * "show me the frame again" action rather than the passive reading default. */
-body.reader-immersive .site-header { overflow: hidden; transition: max-height .22s ease, opacity .18s ease, padding .22s ease; max-height: 160px; }
-body.reader-immersive.reader-chrome-collapsed .site-header { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; pointer-events: none; }
-body.reader-immersive.reader-chrome-open .site-footer { max-height: 160px; opacity: 1; }
+body.reader-immersive .site-header { overflow: hidden; min-height: 0; transition: max-height .22s ease, opacity .18s ease, padding .22s ease, border-bottom-width .18s ease; max-height: 160px; }
+body.reader-immersive.reader-chrome-collapsed .site-header { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; pointer-events: none; }
+body.reader-immersive.reader-chrome-open .site-footer { max-height: 160px; opacity: 1; padding-top: 28px; padding-bottom: 28px; border-top-width: 1px; }
 @media (max-width: 760px) {
   body.reader-immersive .container { padding: 8px 10px; }
 }

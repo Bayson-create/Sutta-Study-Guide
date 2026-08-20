@@ -362,9 +362,22 @@
     // it's normally accurate, but a page that hasn't laid out yet at all
     // would otherwise read scrollTop=0 >= offsetTop=0 as "already pinned"
     // and collapse the header before the reader is even visible.
+    // Explicit open/collapsed setter, not a blind toggle: every caller below
+    // already knows which state it wants (scrolled back to the very top -
+    // open; swiped down on the toolbar - collapsed; swiped up - open), and a
+    // toggle can't express that, only "whatever it currently isn't".
+    const setChrome = opening => {
+      document.body.classList.toggle('reader-chrome-open', opening);
+      document.body.classList.toggle('reader-chrome-collapsed', !opening);
+    };
     const check = () => {
       const next = pane.scrollTop >= sentinel.offsetTop;
-      if (everScrolled && next && !pinned) document.body.classList.add('reader-chrome-collapsed');
+      if (everScrolled && next && !pinned) setChrome(false);
+      // Scrolling all the way back to the top is its own reveal trigger,
+      // independent of the toolbar-gesture one below - this is what makes
+      // "keep pulling up past the first row" bring the header back without
+      // the finger ever having to land on the toolbar specifically.
+      if (everScrolled && pane.scrollTop <= 0 && document.body.classList.contains('reader-chrome-collapsed')) setChrome(true);
       pinned = next;
       toolbar.classList.toggle('is-pinned', pinned);
     };
@@ -372,23 +385,24 @@
     check();
 
     // A wheel/touch gesture that *starts* on the pinned toolbar itself (not
-    // the reading content below it) toggles the header/footer back into
-    // view. The toolbar never scrolls on its own, so any such event reaching
-    // this listener already means the pointer/finger was over it -
-    // preventDefault stops that same input from also scrolling the pane
-    // underneath. Gated on `pinned`: before the toolbar has ever reached the
-    // top it's just inline content flowing with the page, nothing to
-    // re-summon yet, so this stays out of the way of normal scrolling.
+    // the reading content below it) sets the header/footer state directly
+    // from the gesture's own direction - swiping down collapses to
+    // fullscreen, swiping up reveals the frame again - rather than blindly
+    // flipping whatever the current state happens to be. The toolbar never
+    // scrolls on its own, so any such event reaching this listener already
+    // means the pointer/finger was over it - preventDefault stops that same
+    // input from also scrolling the pane underneath. Gated on `pinned`:
+    // before the toolbar has ever reached the top it's just inline content
+    // flowing with the page, nothing to re-summon yet, so this stays out of
+    // the way of normal scrolling.
     let toggleLockUntil = 0, touchStartY = null, touchHandled = false;
-    const toggleChrome = () => {
+    const gestureChrome = opening => {
       const now = Date.now();
       if (now < toggleLockUntil) return;
       toggleLockUntil = now + 500; // one flip per gesture, not one per wheel tick in a trackpad burst
-      const opening = !document.body.classList.contains('reader-chrome-open');
-      document.body.classList.toggle('reader-chrome-open', opening);
-      document.body.classList.toggle('reader-chrome-collapsed', !opening);
+      setChrome(opening);
     };
-    const onWheel = event => { if (!pinned) return; event.preventDefault(); toggleChrome(); };
+    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY < 0); };
     const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
     // preventDefault has to run for every touchmove of the gesture, not just
     // the one that first crosses the 10px threshold: once touchHandled goes
@@ -404,7 +418,7 @@
       const dy = (event.touches[0]?.clientY ?? touchStartY) - touchStartY;
       if (Math.abs(dy) < 10) return;
       touchHandled = true;
-      toggleChrome();
+      gestureChrome(dy < 0); // finger moving down the screen (dy>0) collapses to fullscreen, up (dy<0) reveals
     };
     const onTouchEnd = () => { touchStartY = null; touchHandled = false; };
     toolbar.addEventListener('wheel', onWheel, { passive: false });
