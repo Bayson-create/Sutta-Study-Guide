@@ -12520,7 +12520,7 @@ function gotamaEarlySearchesHtml(sources, messageId) {
     const total = Number(state.total ?? set.total ?? 0);
     const pageCount = total ? Math.ceil(total / pageSize) : 0;
     const pager = total > pageSize ? `<div class="gotama-eb-pagination"><button type="button" ${page <= 0 ? 'disabled' : ''} onclick="gotamaEarlyBuddhistPage(${JSON.stringify(String(messageId))},${JSON.stringify(String(set.search_id))},${page - 1})">上一页</button><span>${page + 1} / ${pageCount} · 共 ${total.toLocaleString()} 条</span><button type="button" ${page + 1 >= pageCount ? 'disabled' : ''} onclick="gotamaEarlyBuddhistPage(${JSON.stringify(String(messageId))},${JSON.stringify(String(set.search_id))},${page + 1})">下一页</button></div>` : `<div class="gotama-eb-pagination"><span>共 ${total.toLocaleString()} 条命中</span></div>`;
-    return `<details class="gotama-eb-search" open><summary>Early Buddhist 经文命中 · ${total.toLocaleString()} 条 · ${communityEscape(set.query || '')}</summary>${list}${pager}</details>`;
+    return `<details class="gotama-eb-search"><summary>Early Buddhist 经文命中 · ${total.toLocaleString()} 条 · ${communityEscape(set.query || '')}</summary>${list}${pager}</details>`;
   }).join('');
 }
 
@@ -12817,6 +12817,17 @@ async function gotamaSend(overrideContent) {
 
         if (evt.type === 'heartbeat') {
           if (thinkingEl()) thinkingEl().textContent = '后台仍在生成，正在保持连接…';
+        } else if (evt.type === 'revise_start') {
+          // The backend caught an unverified citation in the draft that just
+          // streamed and is about to re-stream a corrected answer from
+          // scratch - clear what's shown so far rather than appending the
+          // correction after it (which would read as two answers stitched
+          // together).
+          const last = gotamaMessages[gotamaMessages.length - 1];
+          last.content = '';
+          document.getElementById('gotamaLastAssistantBody').innerHTML = '';
+          if (!thinkingEl()) el.insertAdjacentHTML('beforeend', `<div class="gotama-thinking" id="gotamaThinking">正在核实引文，重新生成回答…</div>`);
+          else thinkingEl().textContent = '正在核实引文，重新生成回答…';
         } else if (evt.type === 'delta') {
           if (thinkingEl()) thinkingEl().textContent = '正在整理回答…';
           const last = gotamaMessages[gotamaMessages.length - 1];
@@ -13007,7 +13018,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260820.2"></script>
+<script src="tipitaka-reader.js?v=20260820.3"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });

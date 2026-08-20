@@ -430,7 +430,11 @@
       toggleLockUntil = now + 500; // one flip per gesture, not one per wheel tick in a trackpad burst
       setChrome(opening);
     };
-    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY > 0); };
+    // Wheel deltaY and touch dy are not the same sign convention: touch dy
+    // is raw finger displacement, but wheel deltaY>0 ("scroll down") is the
+    // natural-scrolling equivalent of a finger swiping UP (both reveal
+    // later content) - deltaY<0 is the wheel counterpart of "finger down".
+    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY < 0); };
     const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
     // preventDefault has to run for every touchmove of the gesture, not just
     // the one that first crosses the 10px threshold: once touchHandled goes
