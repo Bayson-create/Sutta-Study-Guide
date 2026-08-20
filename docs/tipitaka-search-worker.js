@@ -76,6 +76,14 @@
     const shard = await cachedJson(base, `search-v4/${language}/shard_${bucket}.json.gz`);
     return Object.entries(shard).filter(([key]) => key === term || (language !== 'zh' && key.startsWith(term)));
   }
+  // Downstream code only ever reads positions[0] (jump-to-hit highlighting,
+  // see docs/index.html and tipitaka-reader.js) and proximityScore() itself
+  // only looks at the first 64 anyway - keeping every occurrence for a
+  // locator that matches a common bigram hundreds of times is pure memory
+  // waste. Shard position lists are stored in ascending order, so slicing
+  // keeps the earliest occurrences, which is what "jump to first hit" wants.
+  const MAX_POSITIONS_PER_LOCATOR = 48;
+  const MAX_POSTINGS_PER_TERM = 20000;
   function postingMap(postings, types, workIndexes, dictionaryIndexes) {
     const out = new Map();
     for (const posting of postings || []) {
@@ -84,9 +92,9 @@
       const current = out.get(locator);
       const positions = posting[1] || [];
       if (!current) {
-        out.set(locator, { positions: [...new Set(positions)], length: Number(posting[2] || 1) });
+        out.set(locator, { positions: [...new Set(positions)].slice(0, MAX_POSITIONS_PER_LOCATOR), length: Number(posting[2] || 1) });
       } else {
-        current.positions = [...new Set(current.positions.concat(positions))];
+        current.positions = [...new Set(current.positions.concat(positions))].slice(0, MAX_POSITIONS_PER_LOCATOR);
         current.length = Math.max(current.length, Number(posting[2] || 1));
       }
     }
@@ -173,8 +181,18 @@
       const postings = [];
       // Do not spread a popular term's posting list into push(): English
       // stop-word-like terms can have hundreds of thousands of matches and
-      // exceed the engine's argument-stack limit.
-      for (const termEntries of entries) for (const [, values] of termEntries) for (const posting of values || []) postings.push(posting);
+      // exceed the engine's argument-stack limit. A hard cap on top of that
+      // bounds how much this loop, postingMap()'s merged Map, and the
+      // downstream per-candidate scoring pass (run() below) all have to do -
+      // a common two-character CJK bigram (e.g. "中国") can otherwise carry
+      // tens of thousands of postings with no cheap short-circuit the way
+      // pali/en queries get for non-Latin input, and on a memory-constrained
+      // mobile browser (where the search Worker shares the tab's renderer
+      // process) that was enough to crash the whole page, not just be slow.
+      outer: for (const termEntries of entries) for (const [, values] of termEntries) for (const posting of values || []) {
+        if (postings.length >= MAX_POSTINGS_PER_TERM) break outer;
+        postings.push(posting);
+      }
       const merged = postingMap(postings, types, workIndexes, dictionaryIndexes);
       return merged.size ? { term: group.term, map: merged, stop: isQueryStop(group.term, language) } : null;
     }))).filter(Boolean);

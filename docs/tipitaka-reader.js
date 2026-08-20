@@ -104,7 +104,7 @@
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
       if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.20', document.baseURI));
-      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260810.2', document.baseURI));
+      if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260819.1', document.baseURI));
     }
   }
 
