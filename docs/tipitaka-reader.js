@@ -350,34 +350,62 @@
     const pane = document.getElementById('tipitaka-pane'), sentinel = pane?.querySelector('.tipitaka-sticky-sentinel'), toolbar = document.getElementById('tipitaka-toolbar');
     if (!pane || !sentinel || !toolbar) return null;
     let pinned = false, everScrolled = false;
+    // .site-header lives outside .tipitaka-pane (a flex sibling of
+    // .container, not a child of the scroll container), so pane scrolling
+    // never naturally moves it - without this, the reader's own head block
+    // (in-pane, scrolls immediately with content) and the site banner above
+    // it (static until a single threshold event) visibly ran on two
+    // disconnected rhythms. Measured once, before any collapsing has
+    // happened, so this is the true reader-immersive "fully open" size to
+    // interpolate from.
+    const header = document.querySelector('.site-header');
+    const openHeaderHeight = header ? header.getBoundingClientRect().height : 0;
+    const openHeaderPadTop = header ? parseFloat(getComputedStyle(header).paddingTop) || 0 : 0;
+    const openHeaderPadBottom = header ? parseFloat(getComputedStyle(header).paddingBottom) || 0 : 0;
     // A plain scroll check rather than IntersectionObserver: the sentinel's
     // own offsetTop is exactly the scroll distance at which the toolbar
     // reaches the pane's top edge and pins, since it sits immediately above
-    // the toolbar in normal flow. The header auto-collapses the first time
-    // this crosses into pinned - not on every scroll tick after, just the
-    // false->true edge - to reclaim its space once the reader is actually
-    // scrolled into. Gated on an actual scroll event having fired (not the
-    // sync call right below, which only sets the initial is-pinned display
-    // state): reading .offsetTop this early forces a synchronous layout, so
-    // it's normally accurate, but a page that hasn't laid out yet at all
-    // would otherwise read scrollTop=0 >= offsetTop=0 as "already pinned"
-    // and collapse the header before the reader is even visible.
+    // the toolbar in normal flow. Gated on an actual scroll event having
+    // fired (not the sync call right below, which only sets the initial
+    // is-pinned display state): reading .offsetTop this early forces a
+    // synchronous layout, so it's normally accurate, but a page that hasn't
+    // laid out yet at all would otherwise read scrollTop=0 >= offsetTop=0 as
+    // "already pinned" and collapse the header before the reader is even
+    // visible.
     // Explicit open/collapsed setter, not a blind toggle: every caller below
-    // already knows which state it wants (scrolled back to the very top -
-    // open; swiped down on the toolbar - collapsed; swiped up - open), and a
-    // toggle can't express that, only "whatever it currently isn't".
+    // already knows which state it wants (swiped down on the toolbar - open;
+    // swiped up - collapsed), and a toggle can't express that, only
+    // "whatever it currently isn't".
     const setChrome = opening => {
       document.body.classList.toggle('reader-chrome-open', opening);
       document.body.classList.toggle('reader-chrome-collapsed', !opening);
     };
     const check = () => {
       const next = pane.scrollTop >= sentinel.offsetTop;
-      if (everScrolled && next && !pinned) setChrome(false);
-      // Scrolling all the way back to the top is its own reveal trigger,
-      // independent of the toolbar-gesture one below - this is what makes
-      // "keep pulling up past the first row" bring the header back without
-      // the finger ever having to land on the toolbar specifically.
-      if (everScrolled && pane.scrollTop <= 0 && document.body.classList.contains('reader-chrome-collapsed')) setChrome(true);
+      if (header && !next) {
+        // Scroll-linked, not eased: the finger/wheel input is already
+        // continuous, so an added transition would just make the header lag
+        // behind it. By the time scrollTop reaches the pin point the header
+        // is already fully (and smoothly, because it tracked every frame)
+        // collapsed - no separate jump left to smooth over.
+        const progress = sentinel.offsetTop > 0 ? Math.min(1, Math.max(0, pane.scrollTop / sentinel.offsetTop)) : 0;
+        header.style.transition = 'none';
+        header.style.maxHeight = ((1 - progress) * openHeaderHeight) + 'px';
+        header.style.opacity = String(1 - progress);
+        header.style.paddingTop = ((1 - progress) * openHeaderPadTop) + 'px';
+        header.style.paddingBottom = ((1 - progress) * openHeaderPadBottom) + 'px';
+      } else if (header && next && !pinned) {
+        // Just crossed into pinned - hand back to the stylesheet-driven
+        // discrete state (already sitting at fully collapsed from the last
+        // scroll-linked frame), so the toolbar-gesture/auto-collapse system
+        // below owns it from here without a second jump.
+        header.style.transition = '';
+        header.style.maxHeight = '';
+        header.style.opacity = '';
+        header.style.paddingTop = '';
+        header.style.paddingBottom = '';
+        if (everScrolled) setChrome(false);
+      }
       pinned = next;
       toolbar.classList.toggle('is-pinned', pinned);
     };
@@ -402,7 +430,7 @@
       toggleLockUntil = now + 500; // one flip per gesture, not one per wheel tick in a trackpad burst
       setChrome(opening);
     };
-    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY < 0); };
+    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY > 0); };
     const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
     // preventDefault has to run for every touchmove of the gesture, not just
     // the one that first crosses the 10px threshold: once touchHandled goes
@@ -418,7 +446,7 @@
       const dy = (event.touches[0]?.clientY ?? touchStartY) - touchStartY;
       if (Math.abs(dy) < 10) return;
       touchHandled = true;
-      gestureChrome(dy < 0); // finger moving down the screen (dy>0) collapses to fullscreen, up (dy<0) reveals
+      gestureChrome(dy > 0); // finger moving down the screen (dy>0) reveals, up (dy<0) collapses to fullscreen
     };
     const onTouchEnd = () => { touchStartY = null; touchHandled = false; };
     toolbar.addEventListener('wheel', onWheel, { passive: false });
