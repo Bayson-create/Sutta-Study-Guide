@@ -12399,6 +12399,25 @@ function gotamaRenderMarkdown(text) {
     citeTokens.push(`<a class="gotama-cite" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`);
     return token;
   });
+  // Bare PTS-style citations ("AN 6.55", "(Dhp 354)") the model writes as
+  // plain prose, not markdown link syntax - unlike the [label](url) pass
+  // above there's no URL to reuse, but abbrev+number -> SuttaCentral uid is
+  // a pure string rule (see linkifySuttaRefs(), same regex family) that
+  // doesn't need one. Runs after the markdown-link pass turned every real
+  // <a> into a placeholder token, so nothing here can land inside existing
+  // link markup and nest a second <a>. Same .gotama-cite badge as above -
+  // both citation forms should read as the same "internal link" visual
+  // language in one chat bubble, not two different ones.
+  // Consume an immediately-adjacent enclosing paren (half- or full-width)
+  // on either side and drop it from the output - the badge itself already
+  // sets the citation apart visually, so "（AN 6.55）" wrapped around a now-
+  // highlighted link just reads as redundant clutter. Only a paren directly
+  // touching the citation is consumed, so "(see AN 6.55 for more)" leaves
+  // its parens alone rather than eating one out of an unrelated pair.
+  html = html.replace(/([（(])?\b(DN|MN|SN|AN|Snp|Ud|Iti|Ja|Kd|Bv|Cp|Khp|Dhp)\s*([\d.]+(?:-[\d.]+)?)\b([）)])?/g, (match, openParen, abbr, num) => {
+    const uid = (abbr.toLowerCase() + num).replace(/\s+/g, '');
+    return `<a class="gotama-cite" href="#/read/${uid}?en_author=sujato&zh_author=zhuang" onclick="event.stopPropagation()">${abbr} ${num}</a>`;
+  });
   html = html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/~~(.+?)~~/g, '<s>$1</s>')
