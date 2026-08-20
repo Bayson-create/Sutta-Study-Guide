@@ -12418,11 +12418,25 @@ function gotamaRenderMarkdown(text) {
     const uid = (abbr.toLowerCase() + num).replace(/\s+/g, '');
     return `<a class="gotama-cite" href="#/read/${uid}?en_author=sujato&zh_author=zhuang" onclick="event.stopPropagation()">${abbr} ${num}</a>`;
   });
+  // The model also sometimes pastes a raw Early Buddhist reader deep link
+  // straight into prose instead of markdown link syntax - often with its
+  // own《book title》written right before it as the de-facto label. Turn
+  // that pair into one badge (dropping the raw URL from visible text)
+  // rather than let it fall through to the generic bare-URL autolink below,
+  // which would just print the whole ugly encoded URL as the link text.
+  // Must run before that generic pass for the same reason as the citation
+  // pass above - once a URL is autolinked as its own text there's no clean
+  // "title immediately before this URL" text left to match against.
+  const ebUrlRe = new RegExp('(?:(《[^《》\\n]{1,60}》)\\s*)?(' + EARLY_BUDDHIST_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/?\\?[^\\s<)\\]）"\']+)', 'g');
+  html = html.replace(ebUrlRe, (match, title, url) => {
+    const label = title ? title.replace(/^《|》$/g, '') : '经文';
+    return `<a class="gotama-cite" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  });
   html = html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
     .replace(/~~(.+?)~~/g, '<s>$1</s>')
     .replace(/(?<!\*)\*(?!\*)([^*]+?)\*(?!\*)/g, '<i>$1</i>')
-    .replace(/(https?:\/\/[^\s<)\]"']+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+    .replace(/(https?:\/\/[^\s<)\]）"']+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
   return html
     .replace(/@@GOTAMA_FENCE_(\d+)@@/g, (m, idx) => fenceBlocks[+idx])
     .replace(/@@GOTAMA_CITE_(\d+)@@/g, (m, idx) => citeTokens[+idx]);
