@@ -3,6 +3,7 @@
   'use strict';
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
+  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v1')).replace(/\/$/, '');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
   // This file is loaded as a separate classic script.  Do not rely on the
   // inline page script's lexical `const API_BASE` being visible here: on
@@ -14,6 +15,7 @@
   const API = `${API_ROOT}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
+  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v1';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -21,7 +23,7 @@
   const DEFAULT_V4_TYPES = ['corpus', 'catalog'];
   const state = {
     works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
-    workCache: new Map(), overrides: new Map(), settings: null, autoTimer: null,
+    workCache: new Map(), overrides: new Map(), commentaryRoots: new Map(), commentaryFragments: new Map(), settings: null, autoTimer: null,
     dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
   };
   const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
@@ -55,21 +57,21 @@
     if (!window.indexedDB) return Promise.reject(new Error('IndexedDB unavailable'));
     return new Promise((resolve, reject) => { const request = indexedDB.open(CACHE_META_DB, 1); request.onupgradeneeded = () => request.result.createObjectStore(CACHE_META_STORE, { keyPath: 'path' }); request.onsuccess = () => resolve(request.result); request.onerror = () => reject(request.error); });
   }
-  async function touchCacheMeta(path, bytes) {
-    try { const db = await openCacheMeta(), tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).put({ path, bytes: bytes || 0, touched_at: Date.now() }); tx.oncomplete = () => db.close(); } catch {}
+  async function touchCacheMeta(path, bytes, requestUrl = url(path), cacheName = CACHE_NAME) {
+    try { const db = await openCacheMeta(), tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).put({ path, request_url: requestUrl, cache_name: cacheName, bytes: bytes || 0, touched_at: Date.now() }); tx.oncomplete = () => db.close(); } catch {}
   }
   async function trimReaderCache() {
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at), cache = await caches.open(CACHE_NAME);
-      for (const row of evictable) { if (total <= CACHE_BUDGET) break; await cache.delete(new Request(url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
+      for (const row of evictable) { if (total <= CACHE_BUDGET) break; const cache = await caches.open(row.cache_name || CACHE_NAME); await cache.delete(new Request(row.request_url || url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
   }
 
-  async function cachedJson(path, cacheName = CACHE_NAME) {
-    const request = new Request(url(path), { mode: 'cors' });
+  async function cachedJsonAt(base, path, cacheName = CACHE_NAME, metaPath = path) {
+    const request = new Request(`${base}/${path}`, { mode: 'cors' });
     try {
       const cache = await caches.open(cacheName);
       let response = await cache.match(request);
@@ -80,12 +82,13 @@
         // not prevent an already successful V4 data request from rendering.
         try { await cache.put(request, response.clone()); } catch {}
       }
-      const bytes = Number(response.headers.get('Content-Length') || 0); touchCacheMeta(path, bytes); trimReaderCache();
+      const bytes = Number(response.headers.get('Content-Length') || 0); touchCacheMeta(metaPath, bytes, request.url, cacheName); trimReaderCache();
       return response.json();
     } catch (error) {
       throw new Error(`无法读取巴利三藏数据：${error.message}`);
     }
   }
+  const cachedJson = (path, cacheName = CACHE_NAME) => cachedJsonAt(DATA_BASE, path, cacheName, path);
 
   function workerRequest(worker, payload, timeoutMs = 12000) {
     return new Promise((resolve, reject) => {
@@ -103,7 +106,7 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260808.20', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260820.1', document.baseURI));
       if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260819.1', document.baseURI));
     }
   }
@@ -130,6 +133,25 @@
     state.workCache.delete(id); state.workCache.set(id, Promise.resolve(work));
     while (state.workCache.size > WORK_CACHE_LIMIT) state.workCache.delete(state.workCache.keys().next().value);
     return [meta, work];
+  }
+  async function commentaryMapFor(workId) {
+    if (!state.commentaryRoots.has(workId)) {
+      const promise = cachedJsonAt(COMMENTARY_BASE, `roots/${encodeURIComponent(workId)}.json.gz`, COMMENTARY_CACHE_NAME, `commentary-links-v1/roots/${workId}`).catch(error => ({ format: 'tipitaka-commentary-links/v1', root_work_id: workId, units: [], error: error.message }));
+      state.commentaryRoots.set(workId, promise);
+    }
+    return state.commentaryRoots.get(workId);
+  }
+  async function commentaryFragment(fragment) {
+    const key = fragment.fragment_id;
+    if (!state.commentaryFragments.has(key)) {
+      ensureWorkers();
+      const path = fragment.file;
+      const promise = state.dataWorker
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v1/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v1/${path}`);
+      state.commentaryFragments.set(key, promise);
+    }
+    return state.commentaryFragments.get(key);
   }
   async function overrides(workId) {
     if (!state.overrides.has(workId)) {
@@ -338,6 +360,20 @@
         .tipitaka-toolbar-controls .tb-sep{flex:0 0 auto}
         .tipitaka-toolbar-controls > *{flex:0 0 auto}
       }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function injectCommentaryCss() {
+    if (document.getElementById('tipitaka-commentary-css')) return;
+    const style = document.createElement('style');
+    style.id = 'tipitaka-commentary-css';
+    style.textContent = `
+      .tipitaka-annotation-card{box-sizing:border-box;margin:20px 0 30px;padding:16px 18px;border:1px solid color-mix(in srgb,var(--accent-light,#c4a24e) 70%,var(--border,#ddd));border-left:4px solid var(--accent,#8b6914);border-radius:12px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent-bg,#f6f0df) 78%,transparent),var(--card-bg,#fff));box-shadow:0 8px 24px rgba(72,48,12,.07)}
+      .tipitaka-annotation-title{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:11px}.tipitaka-annotation-title h3{margin:0;color:var(--accent,#8b6914);font-size:1.02em}.tipitaka-annotation-title small{color:var(--text-light,#777);text-align:right}
+      .tipitaka-annotation-tabs,.tipitaka-annotation-options,.tipitaka-related-works{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.tipitaka-annotation-tabs{margin:8px 0 12px}.tipitaka-annotation-tabs button,.tipitaka-annotation-option,.tipitaka-annotation-close{appearance:none;border:1px solid var(--border,#d8cbb3);border-radius:999px;background:var(--card-bg,#fff);color:inherit;padding:7px 12px;cursor:pointer;font:inherit}.tipitaka-annotation-tabs button.is-active,.tipitaka-annotation-option.is-active{border-color:var(--accent,#8b6914);background:var(--accent,#8b6914);color:#fff}.tipitaka-annotation-tabs button:disabled{cursor:not-allowed;opacity:.48}.tipitaka-annotation-option{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;text-align:left;max-width:100%;border-radius:9px}.tipitaka-annotation-option span{min-width:0;overflow-wrap:anywhere}.tipitaka-annotation-option small{white-space:nowrap;opacity:.78}.tipitaka-annotation-empty,.tipitaka-annotation-error{margin:8px 0;color:var(--text-light,#777);font-size:.9em}.tipitaka-annotation-error{color:#9b3b2c}.tipitaka-related-works{margin-top:11px;padding-top:10px;border-top:1px dashed var(--border,#ddd);font-size:.86em}.tipitaka-related-works a{color:var(--primary,#6b4f2d)}
+      .tipitaka-annotation-header,.tipitaka-annotation-footer{box-sizing:border-box;margin:0;padding:14px 18px;border-left:4px solid var(--accent-light,#c4a24e);background:color-mix(in srgb,var(--accent-bg,#f6f0df) 72%,var(--card-bg,#fff))}.tipitaka-annotation-header{border-radius:12px 12px 0 0;border-top:1px solid var(--border,#ddd);border-right:1px solid var(--border,#ddd);display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.tipitaka-annotation-header h3,.tipitaka-annotation-header p{margin:0}.tipitaka-annotation-header p{margin-top:4px;color:var(--text-light,#777);font-size:.86em}.tipitaka-annotation-header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.tipitaka-annotation-header a{color:var(--primary,#6b4f2d);font-size:.86em}.tipitaka-annotation-row{padding-left:18px;padding-right:18px;border-left:4px solid var(--accent-light,#c4a24e);border-right:1px solid var(--border,#ddd);background:color-mix(in srgb,var(--accent-bg,#f6f0df) 30%,var(--card-bg,#fff))}.tipitaka-annotation-row .tipitaka-num{color:var(--accent,#8b6914)}.tipitaka-annotation-footer{border:1px solid var(--border,#ddd);border-left:4px solid var(--accent-light,#c4a24e);border-top:0;border-radius:0 0 12px 12px;margin-bottom:30px;text-align:right}.tipitaka-annotation-loading{display:flex;align-items:center;gap:10px;color:var(--text-light,#777)}.tipitaka-annotation-loading::before{content:'';width:15px;height:15px;border:2px solid var(--border,#ddd);border-top-color:var(--accent,#8b6914);border-radius:50%;animation:tipitakaSpin .8s linear infinite}@keyframes tipitakaSpin{to{transform:rotate(360deg)}}
+      @media(max-width:760px){.tipitaka-annotation-card{margin:16px 0 24px;padding:14px 12px}.tipitaka-annotation-title,.tipitaka-annotation-header{display:block}.tipitaka-annotation-title small{display:block;margin-top:4px;text-align:left}.tipitaka-annotation-header-actions{margin-top:10px;justify-content:flex-start}.tipitaka-annotation-option{width:100%}.tipitaka-annotation-row{padding-left:10px;padding-right:10px}}
     `;
     document.head.appendChild(style);
   }
@@ -593,7 +629,7 @@
     return out.join('') + esc(text.slice(cursor));
   }
 
-  function rowHtml(row, overlays, hit) {
+  function rowHtml(row, overlays, hit, options = {}) {
     const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position, hit?.terms);
@@ -607,25 +643,95 @@
       parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position, hit?.terms)}</details>` : ''}</div>`);
     }
     if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
-    return `<article class="tipitaka-row${isHitRow ? ' tipitaka-search-target' : ''}" data-t-row="${row.id}" data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details></article>`;
+    const key = options.itemKey || `root:${row.id}`;
+    const rootData = options.readonly ? `data-t-annotation-row="${row.id}" data-source-work="${esc(options.sourceWorkId || '')}"` : `data-t-row="${row.id}"`;
+    const actions = options.readonly ? '' : `<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details>`;
+    return `<article class="tipitaka-row${options.readonly ? ' tipitaka-annotation-row' : ''}${isHitRow ? ' tipitaka-search-target' : ''}" data-t-item-key="${esc(key)}" ${rootData} data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}${actions}</article>`;
   }
 
-  function jumpButtons(row) {
-    if (!row?.paranum || !state.jumps) return '';
-    const p = Number(String(row.paranum).match(/\d+/)?.[0]); if (!p) return '';
-    const jump = state.jumps.find(entry => { const m = String(entry.para_range || '').match(/(\d+)(?:-(\d+))?/); return m && p >= +m[1] && p <= +(m[2] || m[1]); });
-    if (!jump) return '';
-    return ['Mūla', 'Aṭṭhakathā', 'Ṭīkā'].filter(key => jump[key]).map(key => `<a href="#/tipitaka/read/${encodeURIComponent(jump[key])}?row=${p}">跳至${key}</a>`).join('　');
+  function normalizedJumpRef(value) {
+    const match = String(value || '').match(/^([^:]+)(?::(\d+)-(\d+))?$/);
+    return match ? { workId: match[1], startRow: Number(match[2] || 1), endRow: Number(match[3] || 0) || null } : null;
   }
 
-  function renderVirtual(meta, work, overlays, currentIndex, hit) {
+  function jumpButtons(row, meta) {
+    if (!state.jumps) return '';
+    const rowId = Number(row?.id || 0), para = Number(String(row?.paranum || '').match(/\d+/)?.[0] || 0);
+    const matches = state.jumps.filter(entry => {
+      for (const key of ['Mūla', 'Aṭṭhakathā', 'Aṭṭhakathā:', 'Ṭīkā']) {
+        const ref = normalizedJumpRef(entry[key]);
+        if (!ref || ref.workId !== meta?.id) continue;
+        if (ref.endRow && !(ref.startRow <= rowId && rowId <= ref.endRow)) continue;
+        const range = String(entry.para_range || '').match(/(\d+)(?:-(\d+))?/);
+        if (range && para && !(Number(range[1]) <= para && para <= Number(range[2] || range[1]))) continue;
+        return true;
+      }
+      return false;
+    });
+    const links = new Map();
+    for (const entry of matches) {
+      for (const [key, label] of [['Mūla', '根本文本'], ['Aṭṭhakathā', '义注'], ['Aṭṭhakathā:', '义注'], ['Ṭīkā', '复注']]) {
+        const ref = normalizedJumpRef(entry[key]);
+        if (ref && ref.workId !== meta?.id) links.set(`${key}:${ref.workId}:${ref.startRow}`, `<a href="#/tipitaka/read/${encodeURIComponent(ref.workId)}?row=${ref.startRow}">打开相关${label}</a>`);
+      }
+    }
+    return [...links.values()].join('　');
+  }
+
+  function annotationCardHtml(unit, reader) {
+    const picker = reader.annotationPicker?.unitId === unit.unit_id ? reader.annotationPicker.kind : null;
+    const active = reader.annotation?.unitId === unit.unit_id ? reader.annotation : null;
+    const groups = { att: unit.commentaries || [], tik: unit.subcommentaries || [] };
+    const labels = { att: '义注', tik: '复注' };
+    const options = picker ? groups[picker] : [];
+    const tabs = ['att', 'tik'].map(kind => `<button type="button" data-t-action="annotation-kind" data-unit="${esc(unit.unit_id)}" data-kind="${kind}" class="${picker === kind ? 'is-active' : ''}" ${groups[kind].length ? '' : 'disabled'}>${labels[kind]} <small>${groups[kind].length}</small></button>`).join('');
+    const optionHtml = options.map(fragment => `<button type="button" class="tipitaka-annotation-option${active?.fragmentId === fragment.fragment_id ? ' is-active' : ''}" data-t-action="annotation-fragment" data-unit="${esc(unit.unit_id)}" data-kind="${picker}" data-fragment="${esc(fragment.fragment_id)}"><span>${esc(fragment.title)}</span><small>${fragment.row_count.toLocaleString()} 段</small></button>`).join('');
+    const related = [...new Map((unit.related_full_works || []).map(item => [`${item.source_level}:${item.work_id}`, item])).values()];
+    const relatedHtml = related.length ? `<div class="tipitaka-related-works"><span>相关全书：</span>${related.map(item => `<a href="#/tipitaka/read/${encodeURIComponent(item.work_id)}?row=${Number(item.start_row || 1)}">${esc(item.title)}</a>`).join(' · ')}</div>` : '';
+    const loading = active?.loading ? '<p class="tipitaka-annotation-loading">正在载入完整片段…</p>' : active?.error ? `<p class="tipitaka-annotation-error">${esc(active.error)} <button type="button" data-t-action="annotation-retry">重试</button></p>` : '';
+    const selection = picker ? (optionHtml ? `<div class="tipitaka-annotation-options">${optionHtml}</div>` : `<p class="tipitaka-annotation-empty">暂无已核实${labels[picker]}片段。</p>`) : '<p class="tipitaka-annotation-empty">选择义注或复注后，可查看全部已核实的对应完整片段。</p>';
+    return `<section class="tipitaka-annotation-card" data-t-item-key="unit:${esc(unit.unit_id)}"><div class="tipitaka-annotation-title"><h3>相关义注与复注</h3><small>${esc(unit.title)}</small></div><div class="tipitaka-annotation-tabs" role="group" aria-label="选择注释类型">${tabs}</div>${selection}${loading}${relatedHtml}</section>`;
+  }
+
+  function annotationSupplementHtml(item) {
+    const annotation = item.annotation, fragment = annotation.data, kindLabel = annotation.kind === 'tik' ? '复注' : '义注';
+    if (item.kind === 'annotation-header') return `<section class="tipitaka-annotation-header" data-t-item-key="${esc(item.key)}"><div><h3>${kindLabel} · ${esc(fragment.title)}</h3><p>${esc(fragment.source_title)} · 完整 ${fragment.row_count.toLocaleString()} 段</p></div><div class="tipitaka-annotation-header-actions"><a href="#/tipitaka/read/${encodeURIComponent(fragment.source_work_id)}?row=${fragment.start_row}">在完整阅读器中打开</a><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起</button></div></section>`;
+    return `<div class="tipitaka-annotation-footer" data-t-item-key="${esc(item.key)}"><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起完整${kindLabel}</button></div>`;
+  }
+
+  function buildReaderItems(reader) {
+    const unitByEnd = new Map((reader.commentaryMap?.units || []).map(unit => [Number(unit.root_end_row), unit]));
+    const items = [];
+    for (const row of reader.work.rows) {
+      items.push({ kind: 'root', key: `root:${row.id}`, row });
+      const unit = unitByEnd.get(Number(row.id));
+      if (!unit) continue;
+      items.push({ kind: 'annotation-card', key: `unit:${unit.unit_id}`, unit });
+      const annotation = reader.annotation;
+      if (annotation?.unitId !== unit.unit_id || !annotation.data) continue;
+      items.push({ kind: 'annotation-header', key: `annotation:${annotation.fragmentId}:header`, annotation });
+      for (const fragmentRow of annotation.data.rows || []) items.push({ kind: 'annotation-row', key: `annotation:${annotation.fragmentId}:row:${fragmentRow.id}`, row: fragmentRow, annotation });
+      items.push({ kind: 'annotation-footer', key: `annotation:${annotation.fragmentId}:footer`, annotation });
+    }
+    return items;
+  }
+
+  function readerItemHtml(item, reader) {
+    if (item.kind === 'root') return rowHtml(item.row, reader.overlays, reader.hit && Number(item.row.id) === Number(reader.hit.rowId) ? reader.hit : null, { itemKey: item.key });
+    if (item.kind === 'annotation-card') return annotationCardHtml(item.unit, reader);
+    if (item.kind === 'annotation-row') return rowHtml(item.row, new Map(), null, { readonly: true, sourceWorkId: item.annotation.data.source_work_id, itemKey: item.key });
+    return annotationSupplementHtml(item);
+  }
+
+  function renderVirtual(reader, currentIndex) {
+    const { work } = reader;
     const pane = document.getElementById('tipitaka-pane'), spacer = document.getElementById('tipitaka-virtual-spacer'), windowEl = document.getElementById('tipitaka-virtual-window'), toolbar = document.getElementById('tipitaka-toolbar');
     if (!pane || !spacer || !windowEl) return;
     // A Fenwick tree gives the viewport, the spacer and the translated window
     // one canonical coordinate system.  The former implementation selected
     // rows with estimated heights but translated them with measured heights;
     // long commentary rows eventually pushed every rendered row off-screen.
-    const count = work.rows.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexById = new Map(work.rows.map((row, index) => [Number(row.id), index]));
+    const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
     let start = -1, end = -1, raf = 0, positionRaf = 0, positionToken = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
@@ -653,8 +759,8 @@
       if (destroyed) return;
       const anchor = indexAt(toList(pane.scrollTop));
       let shift = 0, changed = false;
-      windowEl.querySelectorAll('[data-t-row]').forEach(element => {
-        const index = indexById.get(Number(element.dataset.tRow)), height = Math.ceil(element.getBoundingClientRect().height);
+      windowEl.querySelectorAll('[data-t-item-key]').forEach(element => {
+        const index = indexByKey.get(element.dataset.tItemKey), height = Math.ceil(element.getBoundingClientRect().height);
         if (index === undefined || !height || heights[index] === height) return;
         const previous = heights[index] || EST_ROW_HEIGHT, delta = height - previous;
         heights[index] = height; add(index, delta); changed = true;
@@ -673,13 +779,13 @@
       if (!force && nextStart === start && nextEnd === end) return;
       start = nextStart; end = nextEnd;
       windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
-      windowEl.innerHTML = work.rows.slice(start, end).map(row => rowHtml(row, overlays, hit && Number(row.id) === Number(hit.rowId) ? hit : null)).join('');
+      windowEl.innerHTML = items.slice(start, end).map(item => readerItemHtml(item, reader)).join('');
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       requestAnimationFrame(measure);
     };
-    const targetFor = rowId => windowEl.querySelector(`[data-t-row="${String(rowId)}"]`);
+    const targetForKey = key => [...windowEl.querySelectorAll('[data-t-item-key]')].find(element => element.dataset.tItemKey === key) || null;
     const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0) => {
-      const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), rowId = work.rows[index]?.id, token = ++positionToken;
+      const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), itemKey = items[index]?.key, token = ++positionToken;
       if (positionRaf) cancelAnimationFrame(positionRaf);
       let attempts = 0;
       const settle = () => {
@@ -687,7 +793,7 @@
         if (destroyed || token !== positionToken) return;
         measure();
         draw(true);
-        const element = targetFor(rowId);
+        const element = targetForKey(itemKey);
         if (!element) {
           if (attempts++ < 12) positionRaf = requestAnimationFrame(settle);
           return;
@@ -722,11 +828,12 @@
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
     const getAnchor = () => {
-      const index = indexAt(toList(pane.scrollTop) + 1), row = work.rows[index];
-      if (!row) return null;
-      const element = targetFor(row.id), paneRect = pane.getBoundingClientRect();
+      const index = indexAt(toList(pane.scrollTop) + 1), item = items[index];
+      if (!item) return null;
+      const element = targetForKey(item.key), paneRect = pane.getBoundingClientRect();
       return {
-        rowId: Number(row.id),
+        itemKey: item.key,
+        rowId: item.kind === 'root' ? Number(item.row.id) : null,
         offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
       };
     };
@@ -737,8 +844,8 @@
       getAnchor,
       scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex),
       restoreAnchor: anchor => {
-        if (!anchor?.rowId) return;
-        const index = indexById.get(Number(anchor.rowId));
+        if (!anchor) return;
+        const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
       destroy: () => { destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); },
@@ -766,8 +873,65 @@
     } catch { return []; }
   }
 
+  function annotationDescriptor(commentaryMap, fragmentId, kind = null) {
+    for (const unit of commentaryMap?.units || []) {
+      for (const [candidateKind, key] of [['att', 'commentaries'], ['tik', 'subcommentaries']]) {
+        if (kind && kind !== candidateKind) continue;
+        const fragment = (unit[key] || []).find(item => item.fragment_id === fragmentId);
+        if (fragment) return { unit, kind: candidateKind, fragment };
+      }
+    }
+    return null;
+  }
+
+  function rebuildReaderVirtual(reader, anchor = null) {
+    if (!reader || state.reader !== reader) return;
+    const saved = anchor || reader.virtual?.getAnchor?.();
+    reader.virtual?.destroy?.();
+    reader.virtual = renderVirtual(reader, reader.currentIndex);
+    if (saved) reader.virtual?.restoreAnchor(saved);
+  }
+
+  function updateAnnotationUrl(reader, unit = null, kind = null, fragment = null) {
+    const params = query();
+    for (const key of ['hl', 'hl_lang', 'hl_pos', 'hl_terms', 'hl_anchor', 'semantic']) params.delete(key);
+    if (unit && kind && fragment) {
+      params.set('row', String(unit.root_end_row));
+      params.set('annotation', kind);
+      params.set('fragment', fragment.fragment_id);
+    } else {
+      params.delete('annotation'); params.delete('fragment');
+      if (unit) params.set('row', String(unit.root_end_row));
+    }
+    history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}${params.toString() ? `?${params}` : ''}`);
+  }
+
+  async function loadActiveAnnotation(reader, anchor = null) {
+    const annotation = reader?.annotation;
+    if (!annotation?.fragment || !annotation.loading) return;
+    try {
+      const data = await commentaryFragment(annotation.fragment);
+      if (state.reader !== reader || reader.annotation !== annotation) return;
+      if (data.format !== 'tipitaka-commentary-links/v1' || data.fragment_id !== annotation.fragmentId || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count)) throw new Error('注释片段校验失败');
+      annotation.data = data; annotation.loading = false; annotation.error = '';
+    } catch (error) {
+      if (state.reader !== reader || reader.annotation !== annotation) return;
+      annotation.loading = false; annotation.error = error.message || '注释片段加载失败';
+    }
+    rebuildReaderVirtual(reader, anchor);
+  }
+
+  async function activateAnnotation(reader, descriptor) {
+    const anchor = reader.virtual?.getAnchor?.();
+    reader.annotationPicker = { unitId: descriptor.unit.unit_id, kind: descriptor.kind };
+    reader.annotation = { unitId: descriptor.unit.unit_id, kind: descriptor.kind, fragmentId: descriptor.fragment.fragment_id, fragment: descriptor.fragment, loading: true, error: '', data: null };
+    updateAnnotationUrl(reader, descriptor.unit, descriptor.kind, descriptor.fragment);
+    rebuildReaderVirtual(reader, anchor);
+    await loadActiveAnnotation(reader, anchor);
+  }
+
   async function renderReader(workId, preserveAnchor = null) {
-    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss(); injectReaderLayoutCss();
+    injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss(); injectReaderLayoutCss(); injectCommentaryCss();
     const renderId = ++state.readerRequest;
     state.reader?.virtual?.destroy?.();
     state.reader?.pinObserver?.disconnect?.();
@@ -777,7 +941,7 @@
       if (renderId !== state.readerRequest) return;
       const meta = state.works.find(work => work.id === workId); if (!meta) throw new Error('找不到该作品');
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
-      const [loaded, overlays] = await Promise.all([workById(workId), overrides(workId)]);
+      const [loaded, overlays, commentaryMap] = await Promise.all([workById(workId), overrides(workId), meta.level === 'mula' ? commentaryMapFor(workId) : Promise.resolve(null)]);
       if (renderId !== state.readerRequest) return;
       const work = loaded[1], params = query(), requestedRowId = Number(params.get('row') || 0);
       const positionParam = params.get('hl_pos');
@@ -796,21 +960,28 @@
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, currentIndex, hit, hitRows, hitIndex, virtual: null, pinObserver: null };
+      state.reader = { meta, work, overlays, commentaryMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, virtual: null, pinObserver: null };
+      const deepAnnotation = annotationDescriptor(commentaryMap, params.get('fragment'), params.get('annotation'));
+      if (deepAnnotation) {
+        state.reader.annotationPicker = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind };
+        state.reader.annotation = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind, fragmentId: deepAnnotation.fragment.fragment_id, fragment: deepAnnotation.fragment, loading: true, error: '', data: null };
+      }
       // .tipitaka-jumpbar (cross-edition links) lives INSIDE .tipitaka-pane now,
       // after the virtual spacer - it's trailing scroll content, not outer-page
       // content, so it stays reachable now that the outer page can't scroll at
       // all (body.reader-immersive{overflow:hidden}). listTop()/toList()/toReal()
       // in renderVirtual() only look at spacer.offsetTop (what comes BEFORE the
       // spacer), so this doesn't touch the virtualization coordinate math.
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${jumpButtons(work.rows[currentIndex])}</div></div>`;
-      state.reader.virtual = renderVirtual(meta, work, overlays, currentIndex, hit);
+      const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
+      state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
-      if (preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
+      if (preserveAnchor?.itemKey || preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
       else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
+      if (state.reader.annotation?.loading) loadActiveAnnotation(state.reader, preserveAnchor);
     } catch (error) { if (renderId === state.readerRequest) app.innerHTML = `<div class="error-msg">${esc(error.message)}。目录可用时，正文会在静态数据源恢复后继续加载。</div>`; }
   }
 
@@ -896,6 +1067,37 @@
         const input = app.querySelector('[data-t-search-input]'), langEl = app.querySelector('[data-t-search-lang]');
         await submitReaderSearch(input?.value, langEl?.value || 'zh');
         return;
+      }
+      if (action === 'annotation-kind') {
+        const unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === button.dataset.unit);
+        if (!unit) return;
+        const anchor = reader.virtual?.getAnchor?.();
+        reader.annotationPicker = { unitId: unit.unit_id, kind: button.dataset.kind };
+        rebuildReaderVirtual(reader, anchor);
+        return;
+      }
+      if (action === 'annotation-fragment') {
+        const descriptor = annotationDescriptor(reader.commentaryMap, button.dataset.fragment, button.dataset.kind);
+        if (descriptor) await activateAnnotation(reader, descriptor);
+        return;
+      }
+      if (action === 'annotation-collapse') {
+        const anchor = reader.virtual?.getAnchor?.(), unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === reader.annotation?.unitId);
+        reader.annotation = null;
+        updateAnnotationUrl(reader, unit);
+        rebuildReaderVirtual(reader, anchor);
+        return;
+      }
+      if (action === 'annotation-retry') {
+        if (!reader.annotation?.fragment) return;
+        state.commentaryFragments.delete(reader.annotation.fragmentId);
+        reader.annotation.loading = true; reader.annotation.error = '';
+        const anchor = reader.virtual?.getAnchor?.(); rebuildReaderVirtual(reader, anchor);
+        await loadActiveAnnotation(reader, anchor);
+        return;
+      }
+      if (action === 'annotation-map-retry') {
+        const anchor = reader.virtual?.getAnchor?.(); state.commentaryRoots.delete(reader.meta.id); renderReader(reader.meta.id, anchor); return;
       }
       const row = reader.work.rows.find(item => Number(item.id) === Number(button.dataset.row)); if (!row) return;
       if (action === 'edit-zh' || action === 'edit-en') await editTranslation(reader.meta, row, action === 'edit-zh' ? 'zh' : 'en');
