@@ -3,7 +3,8 @@
   'use strict';
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
-  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v1')).replace(/\/$/, '');
+  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v2')).replace(/\/$/, '');
+  const COMMENTARY_V1_BASE = DATA_BASE.replace(/\/v1$/, '/commentary-links-v1');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
   // This file is loaded as a separate classic script.  Do not rely on the
   // inline page script's lexical `const API_BASE` being visible here: on
@@ -15,7 +16,7 @@
   const API = `${API_ROOT}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
-  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v1';
+  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v2';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -23,7 +24,7 @@
   const DEFAULT_V4_TYPES = ['corpus', 'catalog'];
   const state = {
     works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
-    workCache: new Map(), overrides: new Map(), commentaryRoots: new Map(), commentaryFragments: new Map(), settings: null, autoTimer: null,
+    workCache: new Map(), overrides: new Map(), commentaryRoots: new Map(), commentarySources: new Map(), commentaryFragments: new Map(), rootFragments: new Map(), settings: null, autoTimer: null,
     dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
   };
   const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
@@ -64,7 +65,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v1\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[12]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; const cache = await caches.open(row.cache_name || CACHE_NAME); await cache.delete(new Request(row.request_url || url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -136,22 +137,51 @@
   }
   async function commentaryMapFor(workId) {
     if (!state.commentaryRoots.has(workId)) {
-      const promise = cachedJsonAt(COMMENTARY_BASE, `roots/${encodeURIComponent(workId)}.json.gz`, COMMENTARY_CACHE_NAME, `commentary-links-v1/roots/${workId}`).catch(error => ({ format: 'tipitaka-commentary-links/v1', root_work_id: workId, units: [], error: error.message }));
+      const path = `roots/${encodeURIComponent(workId)}.json.gz`;
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`).catch(async error => {
+        // v1 remains a read-only compatibility fallback while v2 is rolling
+        // out.  It retains the established root → annotation reader.
+        try { return await cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`); }
+        catch { return { format: 'tipitaka-commentary-links/v2', root_work_id: workId, units: [], error: error.message }; }
+      });
       state.commentaryRoots.set(workId, promise);
     }
     return state.commentaryRoots.get(workId);
   }
+  async function commentarySourceMapFor(workId) {
+    if (!state.commentarySources.has(workId)) {
+      const path = `sources/${encodeURIComponent(workId)}.json.gz`;
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`)
+        .catch(error => ({ format: 'tipitaka-commentary-links/v2', source_work_id: workId, fragments: [], error: error.message }));
+      state.commentarySources.set(workId, promise);
+    }
+    return state.commentarySources.get(workId);
+  }
+  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[12]$/.test(String(value || ''));
   async function commentaryFragment(fragment) {
     const key = fragment.fragment_id;
     if (!state.commentaryFragments.has(key)) {
       ensureWorkers();
       const path = fragment.file;
-      const promise = state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v1/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v1/${path}`);
+      const primary = () => state.dataWorker
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`);
+      const promise = primary().catch(() => cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`));
       state.commentaryFragments.set(key, promise);
     }
     return state.commentaryFragments.get(key);
+  }
+  async function rootTextFragment(fragment) {
+    const key = `${fragment.root_work_id}:${fragment.unit_id}`;
+    if (!state.rootFragments.has(key)) {
+      ensureWorkers();
+      const path = fragment.file;
+      const promise = state.dataWorker
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`);
+      state.rootFragments.set(key, promise);
+    }
+    return state.rootFragments.get(key);
   }
   async function overrides(workId) {
     if (!state.overrides.has(workId)) {
@@ -373,6 +403,7 @@
       .tipitaka-annotation-title{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:11px}.tipitaka-annotation-title h3{margin:0;color:var(--accent,#8b6914);font-size:1.02em}.tipitaka-annotation-title small{color:var(--text-light,#777);text-align:right}
       .tipitaka-annotation-tabs,.tipitaka-annotation-options,.tipitaka-related-works{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.tipitaka-annotation-tabs{margin:8px 0 12px}.tipitaka-annotation-tabs button,.tipitaka-annotation-option,.tipitaka-annotation-close{appearance:none;border:1px solid var(--border,#d8cbb3);border-radius:999px;background:var(--card-bg,#fff);color:inherit;padding:7px 12px;cursor:pointer;font:inherit}.tipitaka-annotation-tabs button.is-active,.tipitaka-annotation-option.is-active{border-color:var(--accent,#8b6914);background:var(--accent,#8b6914);color:#fff}.tipitaka-annotation-tabs button:disabled{cursor:not-allowed;opacity:.48}.tipitaka-annotation-option{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;text-align:left;max-width:100%;border-radius:9px}.tipitaka-annotation-option span{min-width:0;overflow-wrap:anywhere}.tipitaka-annotation-option small{white-space:nowrap;opacity:.78}.tipitaka-annotation-empty,.tipitaka-annotation-error{margin:8px 0;color:var(--text-light,#777);font-size:.9em}.tipitaka-annotation-error{color:#9b3b2c}.tipitaka-related-works{margin-top:11px;padding-top:10px;border-top:1px dashed var(--border,#ddd);font-size:.86em}.tipitaka-related-works a{color:var(--primary,#6b4f2d)}
       .tipitaka-annotation-header,.tipitaka-annotation-footer{box-sizing:border-box;margin:0;padding:14px 18px;border-left:4px solid var(--accent-light,#c4a24e);background:color-mix(in srgb,var(--accent-bg,#f6f0df) 72%,var(--card-bg,#fff))}.tipitaka-annotation-header{border-radius:12px 12px 0 0;border-top:1px solid var(--border,#ddd);border-right:1px solid var(--border,#ddd);display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.tipitaka-annotation-header h3,.tipitaka-annotation-header p{margin:0}.tipitaka-annotation-header p{margin-top:4px;color:var(--text-light,#777);font-size:.86em}.tipitaka-annotation-header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.tipitaka-annotation-header a{color:var(--primary,#6b4f2d);font-size:.86em}.tipitaka-annotation-row{padding-left:18px;padding-right:18px;border-left:4px solid var(--accent-light,#c4a24e);border-right:1px solid var(--border,#ddd);background:color-mix(in srgb,var(--accent-bg,#f6f0df) 30%,var(--card-bg,#fff))}.tipitaka-annotation-row .tipitaka-num{color:var(--accent,#8b6914)}.tipitaka-annotation-footer{border:1px solid var(--border,#ddd);border-left:4px solid var(--accent-light,#c4a24e);border-top:0;border-radius:0 0 12px 12px;margin-bottom:30px;text-align:right}.tipitaka-annotation-loading{display:flex;align-items:center;gap:10px;color:var(--text-light,#777)}.tipitaka-annotation-loading::before{content:'';width:15px;height:15px;border:2px solid var(--border,#ddd);border-top-color:var(--accent,#8b6914);border-radius:50%;animation:tipitakaSpin .8s linear infinite}@keyframes tipitakaSpin{to{transform:rotate(360deg)}}
+      .tipitaka-roottext-card{border-left-color:#5d806b;background:linear-gradient(135deg,color-mix(in srgb,#e9f0e8 78%,transparent),var(--card-bg,#fff))}.tipitaka-roottext-card .tipitaka-annotation-title h3{color:#42614c}.tipitaka-roottext-option.is-active{border-color:#42614c;background:#42614c}.tipitaka-roottext-header,.tipitaka-roottext-footer{border-left-color:#6d9679;background:color-mix(in srgb,#e9f0e8 72%,var(--card-bg,#fff))}.tipitaka-roottext-row{border-left-color:#6d9679;background:color-mix(in srgb,#e9f0e8 30%,var(--card-bg,#fff))}.tipitaka-roottext-header a{color:#42614c}
       @media(max-width:760px){.tipitaka-annotation-card{margin:16px 0 24px;padding:14px 12px}.tipitaka-annotation-title,.tipitaka-annotation-header{display:block}.tipitaka-annotation-title small{display:block;margin-top:4px;text-align:left}.tipitaka-annotation-header-actions{margin-top:10px;justify-content:flex-start}.tipitaka-annotation-option{width:100%}.tipitaka-annotation-row{padding-left:10px;padding-right:10px}}
     `;
     document.head.appendChild(style);
@@ -646,7 +677,7 @@
     const key = options.itemKey || `root:${row.id}`;
     const rootData = options.readonly ? `data-t-annotation-row="${row.id}" data-source-work="${esc(options.sourceWorkId || '')}"` : `data-t-row="${row.id}"`;
     const actions = options.readonly ? '' : `<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details>`;
-    return `<article class="tipitaka-row${options.readonly ? ' tipitaka-annotation-row' : ''}${isHitRow ? ' tipitaka-search-target' : ''}" data-t-item-key="${esc(key)}" ${rootData} data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}${actions}</article>`;
+    return `<article class="tipitaka-row${options.readonly ? ' tipitaka-annotation-row' : ''}${options.extraClass ? ` ${esc(options.extraClass)}` : ''}${isHitRow ? ' tipitaka-search-target' : ''}" data-t-item-key="${esc(key)}" ${rootData} data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}${actions}</article>`;
   }
 
   function normalizedJumpRef(value) {
@@ -714,11 +745,50 @@
     return `#/tipitaka/read/${encodeURIComponent(fragment.source_work_id)}?${params}`;
   }
 
+  function rootUnitReaderHref(root, sourceFragment) {
+    const params = new URLSearchParams({
+      row: String(root.root_start_row),
+      root_unit: String(root.unit_id),
+      commentary_fragment: String(sourceFragment.source_fragment_id),
+      commentary_source: String(sourceFragment.source_work_id),
+    });
+    return `#/tipitaka/read/${encodeURIComponent(root.root_work_id)}?${params}`;
+  }
+
+  function rootTextCardHtml(sourceFragment, reader) {
+    const picker = reader.rootTextPicker?.sourceFragmentId === sourceFragment.source_fragment_id;
+    const active = reader.rootText?.sourceFragmentId === sourceFragment.source_fragment_id ? reader.rootText : null;
+    const choices = picker ? (sourceFragment.roots || []).map(root => `<button type="button" class="tipitaka-annotation-option tipitaka-roottext-option${active?.root?.unit_id === root.unit_id ? ' is-active' : ''}" data-t-action="roottext-fragment" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" data-root-work="${esc(root.root_work_id)}" data-root-unit="${esc(root.unit_id)}"><span>${esc(root.root_title)} · ${esc(root.title)}</span><small>${Number(root.row_count || 0).toLocaleString()} 段</small></button>`).join('') : '';
+    const stateText = active?.loading ? '<p class="tipitaka-annotation-loading">正在载入对应根本文本…</p>' : active?.error ? `<p class="tipitaka-annotation-error">${esc(active.error)} <button type="button" data-t-action="roottext-retry">重试</button></p>` : '';
+    const selection = picker ? (choices ? `<div class="tipitaka-annotation-options">${choices}</div>` : '<p class="tipitaka-annotation-empty">暂无已核实的对应根本单元。</p>') : '<p class="tipitaka-annotation-empty">展开后可查看全部已核实的对应经文、律或论单元。</p>';
+    return `<section class="tipitaka-annotation-card tipitaka-roottext-card" data-t-item-key="source:${esc(sourceFragment.source_fragment_id)}"><div class="tipitaka-annotation-title"><h3>对应根本文本</h3><small>${esc(sourceFragment.title || sourceFragment.source_title || '')}</small></div><div class="tipitaka-annotation-tabs" role="group" aria-label="对应根本文本"><button type="button" data-t-action="roottext-show" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" class="${picker ? 'is-active' : ''}">展开选择 <small>${(sourceFragment.roots || []).length}</small></button></div>${selection}${stateText}</section>`;
+  }
+
+  function rootTextSupplementHtml(item) {
+    const rootText = item.rootText, root = rootText.root, source = rootText.sourceFragment, data = rootText.data;
+    if (item.kind === 'roottext-header') return `<section class="tipitaka-annotation-header tipitaka-roottext-header" data-t-item-key="${esc(item.key)}"><div><h3>根本文本 · ${esc(data.title)}</h3><p>${esc(data.root_title)} · 完整 ${Number(data.row_count || 0).toLocaleString()} 段</p></div><div class="tipitaka-annotation-header-actions"><a href="${rootUnitReaderHref(root, source)}">在完整阅读器中打开</a><button type="button" class="tipitaka-annotation-close" data-t-action="roottext-collapse">收起</button></div></section>`;
+    return `<div class="tipitaka-annotation-footer tipitaka-roottext-footer" data-t-item-key="${esc(item.key)}"><button type="button" class="tipitaka-annotation-close" data-t-action="roottext-collapse">收起完整根本文本</button></div>`;
+  }
+
   function buildReaderItems(reader) {
     const unitByEnd = new Map((reader.commentaryMap?.units || []).map(unit => [Number(unit.root_end_row), unit]));
+    const sourcesByStart = new Map();
+    for (const fragment of (reader.commentarySourceMap?.fragments || []).filter(item => item.verification === 'verified')) {
+      const start = Number(fragment.start_row), existing = sourcesByStart.get(start) || [];
+      existing.push(fragment); sourcesByStart.set(start, existing);
+    }
     const items = [];
     for (const row of reader.work.rows) {
       items.push({ kind: 'root', key: `root:${row.id}`, row });
+      for (const sourceFragment of sourcesByStart.get(Number(row.id)) || []) {
+        items.push({ kind: 'roottext-card', key: `source:${sourceFragment.source_fragment_id}`, sourceFragment });
+        const rootText = reader.rootText;
+        if (rootText?.sourceFragmentId === sourceFragment.source_fragment_id && rootText.data) {
+          items.push({ kind: 'roottext-header', key: `roottext:${rootText.root.unit_id}:header`, rootText });
+          for (const rootRow of rootText.data.rows || []) items.push({ kind: 'roottext-row', key: `roottext:${rootText.root.unit_id}:row:${rootRow.id}`, row: rootRow, rootText });
+          items.push({ kind: 'roottext-footer', key: `roottext:${rootText.root.unit_id}:footer`, rootText });
+        }
+      }
       const unit = unitByEnd.get(Number(row.id));
       if (!unit) continue;
       items.push({ kind: 'annotation-card', key: `unit:${unit.unit_id}`, unit });
@@ -734,7 +804,10 @@
   function readerItemHtml(item, reader) {
     if (item.kind === 'root') return rowHtml(item.row, reader.overlays, reader.hit && Number(item.row.id) === Number(reader.hit.rowId) ? reader.hit : null, { itemKey: item.key });
     if (item.kind === 'annotation-card') return annotationCardHtml(item.unit, reader);
+    if (item.kind === 'roottext-card') return rootTextCardHtml(item.sourceFragment, reader);
     if (item.kind === 'annotation-row') return rowHtml(item.row, new Map(), null, { readonly: true, sourceWorkId: item.annotation.data.source_work_id, itemKey: item.key });
+    if (item.kind === 'roottext-row') return rowHtml(item.row, new Map(), null, { readonly: true, sourceWorkId: item.rootText.data.root_work_id, itemKey: item.key, extraClass: 'tipitaka-roottext-row' });
+    if (item.kind === 'roottext-header' || item.kind === 'roottext-footer') return rootTextSupplementHtml(item);
     return annotationSupplementHtml(item);
   }
 
@@ -961,13 +1034,57 @@
     history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}${params.toString() ? `?${params}` : ''}`);
   }
 
+  function rootTextDescriptor(sourceMap, sourceFragmentId, rootWorkId, unitId) {
+    const sourceFragment = (sourceMap?.fragments || []).find(item => item.source_fragment_id === sourceFragmentId && item.verification === 'verified');
+    const root = (sourceFragment?.roots || []).find(item => item.root_work_id === rootWorkId && item.unit_id === unitId && item.verification === 'verified');
+    return sourceFragment && root ? { sourceFragment, root } : null;
+  }
+
+  function updateRootTextUrl(reader, sourceFragment = null, root = null) {
+    const params = query();
+    if (sourceFragment && root) {
+      params.set('row', String(sourceFragment.start_row));
+      params.set('roottext_fragment', String(sourceFragment.source_fragment_id));
+      params.set('roottext_work', String(root.root_work_id));
+      params.set('roottext_unit', String(root.unit_id));
+    } else {
+      params.delete('roottext_fragment'); params.delete('roottext_work'); params.delete('roottext_unit');
+      if (sourceFragment) params.set('row', String(sourceFragment.start_row));
+    }
+    history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}${params.toString() ? `?${params}` : ''}`);
+  }
+
+  async function loadActiveRootText(reader, anchor = null) {
+    const rootText = reader?.rootText;
+    if (!rootText?.root || !rootText.loading) return;
+    try {
+      const data = await rootTextFragment(rootText.root);
+      if (state.reader !== reader || reader.rootText !== rootText) return;
+      if (!isCommentaryFormat(data.format) || data.root_work_id !== rootText.root.root_work_id || data.unit_id !== rootText.root.unit_id || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count) || Number(data.root_start_row) !== Number(rootText.root.root_start_row) || Number(data.root_end_row) !== Number(rootText.root.root_end_row)) throw new Error('根本片段校验失败');
+      rootText.data = data; rootText.loading = false; rootText.error = '';
+    } catch (error) {
+      if (state.reader !== reader || reader.rootText !== rootText) return;
+      rootText.loading = false; rootText.error = error.message || '根本片段加载失败';
+    }
+    rebuildReaderVirtual(reader, anchor);
+  }
+
+  async function activateRootText(reader, descriptor) {
+    const anchor = reader.virtual?.getAnchorForKey?.(`source:${descriptor.sourceFragment.source_fragment_id}`) || reader.virtual?.getAnchor?.();
+    reader.rootTextPicker = { sourceFragmentId: descriptor.sourceFragment.source_fragment_id };
+    reader.rootText = { sourceFragmentId: descriptor.sourceFragment.source_fragment_id, sourceFragment: descriptor.sourceFragment, root: descriptor.root, loading: true, error: '', data: null };
+    updateRootTextUrl(reader, descriptor.sourceFragment, descriptor.root);
+    rebuildReaderVirtual(reader, anchor);
+    await loadActiveRootText(reader, anchor);
+  }
+
   async function loadActiveAnnotation(reader, anchor = null) {
     const annotation = reader?.annotation;
     if (!annotation?.fragment || !annotation.loading) return;
     try {
       const data = await commentaryFragment(annotation.fragment);
       if (state.reader !== reader || reader.annotation !== annotation) return;
-      if (data.format !== 'tipitaka-commentary-links/v1' || data.fragment_id !== annotation.fragmentId || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count)) throw new Error('注释片段校验失败');
+      if (!isCommentaryFormat(data.format) || data.fragment_id !== annotation.fragmentId || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count)) throw new Error('注释片段校验失败');
       annotation.data = data; annotation.loading = false; annotation.error = '';
     } catch (error) {
       if (state.reader !== reader || reader.annotation !== annotation) return;
@@ -996,7 +1113,12 @@
       if (renderId !== state.readerRequest) return;
       const meta = state.works.find(work => work.id === workId); if (!meta) throw new Error('找不到该作品');
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
-      const [loaded, overlays, commentaryMap] = await Promise.all([workById(workId), overrides(workId), meta.level === 'mula' ? commentaryMapFor(workId) : Promise.resolve(null)]);
+      const isRootWork = meta.level === 'mula', isAnnotationWork = meta.level === 'atthakatha' || meta.level === 'tika';
+      const [loaded, overlays, commentaryMap, commentarySourceMap] = await Promise.all([
+        workById(workId), overrides(workId),
+        isRootWork ? commentaryMapFor(workId) : Promise.resolve(null),
+        isAnnotationWork ? commentarySourceMapFor(workId) : Promise.resolve(null),
+      ]);
       if (renderId !== state.readerRequest) return;
       const work = loaded[1], params = query();
       let requestedRowId = Number(params.get('row') || 0), fragmentLinkStatus = '';
@@ -1010,6 +1132,12 @@
           requestedRowId = startRow;
           fragmentLinkStatus = `<span class="tipitaka-note">已定位到注释片段开头（${esc(linkedFragment)}）。</span>`;
         }
+      }
+      const rootUnit = params.get('root_unit');
+      if (rootUnit) {
+        const unit = (commentaryMap?.units || []).find(item => item.unit_id === rootUnit && Number(item.root_start_row) === requestedRowId);
+        if (!unit) fragmentLinkStatus = '<span class="tipitaka-annotation-error">无法校验对应根本单元的位置；请从注释片段重新打开。</span>';
+        else fragmentLinkStatus = `<span class="tipitaka-note">已定位到对应根本单元开头（${esc(unit.title)}）。</span>`;
       }
       const positionParam = params.get('hl_pos');
       const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', terms: (params.get('hl_terms') || '').split('|').filter(Boolean), position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null, semantic: params.get('semantic') === '1' } : null;
@@ -1027,11 +1155,16 @@
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, commentaryMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, virtual: null, pinObserver: null };
+      state.reader = { meta, work, overlays, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null };
       const deepAnnotation = annotationDescriptor(commentaryMap, params.get('fragment'), params.get('annotation'));
       if (deepAnnotation) {
         state.reader.annotationPicker = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind };
         state.reader.annotation = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind, fragmentId: deepAnnotation.fragment.fragment_id, fragment: deepAnnotation.fragment, loading: true, error: '', data: null };
+      }
+      const deepRootText = rootTextDescriptor(commentarySourceMap, params.get('roottext_fragment'), params.get('roottext_work'), params.get('roottext_unit'));
+      if (deepRootText) {
+        state.reader.rootTextPicker = { sourceFragmentId: deepRootText.sourceFragment.source_fragment_id };
+        state.reader.rootText = { sourceFragmentId: deepRootText.sourceFragment.source_fragment_id, sourceFragment: deepRootText.sourceFragment, root: deepRootText.root, loading: true, error: '', data: null };
       }
       // .tipitaka-jumpbar (cross-edition links) lives INSIDE .tipitaka-pane now,
       // after the virtual spacer - it's trailing scroll content, not outer-page
@@ -1039,7 +1172,7 @@
       // all (body.reader-immersive{overflow:hidden}). listTop()/toList()/toReal()
       // in renderVirtual() only look at spacer.offsetTop (what comes BEFORE the
       // spacer), so this doesn't touch the virtualization coordinate math.
-      const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
+      const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : commentarySourceMap?.error ? `<span class="tipitaka-annotation-error">对应根本片段暂不可用；仍可使用相关全书跳转。 <button type="button" data-t-action="annotation-source-map-retry">重试</button></span>${jumpButtons(work.rows[currentIndex], meta)}` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
       app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
@@ -1049,6 +1182,7 @@
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
       if (state.reader.annotation?.loading) loadActiveAnnotation(state.reader, preserveAnchor);
+      if (state.reader.rootText?.loading) loadActiveRootText(state.reader, preserveAnchor);
     } catch (error) { if (renderId === state.readerRequest) app.innerHTML = `<div class="error-msg">${esc(error.message)}。目录可用时，正文会在静态数据源恢复后继续加载。</div>`; }
   }
 
@@ -1150,6 +1284,35 @@
         if (descriptor) await activateAnnotation(reader, descriptor);
         return;
       }
+      if (action === 'roottext-show') {
+        const sourceFragment = (reader.commentarySourceMap?.fragments || []).find(item => item.source_fragment_id === button.dataset.sourceFragment);
+        if (!sourceFragment) return;
+        reader.rootTextPicker = { sourceFragmentId: sourceFragment.source_fragment_id };
+        reader.virtual?.refresh?.();
+        return;
+      }
+      if (action === 'roottext-fragment') {
+        const descriptor = rootTextDescriptor(reader.commentarySourceMap, button.dataset.sourceFragment, button.dataset.rootWork, button.dataset.rootUnit);
+        if (descriptor) await activateRootText(reader, descriptor);
+        return;
+      }
+      if (action === 'roottext-collapse') {
+        const sourceFragment = reader.rootText?.sourceFragment;
+        const anchor = sourceFragment ? (reader.virtual?.getAnchorForKey?.(`source:${sourceFragment.source_fragment_id}`) || reader.virtual?.getAnchor?.()) : reader.virtual?.getAnchor?.();
+        reader.rootText = null;
+        updateRootTextUrl(reader, sourceFragment);
+        rebuildReaderVirtual(reader, anchor);
+        return;
+      }
+      if (action === 'roottext-retry') {
+        const rootText = reader.rootText; if (!rootText?.root) return;
+        state.rootFragments.delete(`${rootText.root.root_work_id}:${rootText.root.unit_id}`);
+        rootText.loading = true; rootText.error = '';
+        const anchor = reader.virtual?.getAnchorForKey?.(`source:${rootText.sourceFragment.source_fragment_id}`) || reader.virtual?.getAnchor?.();
+        rebuildReaderVirtual(reader, anchor);
+        await loadActiveRootText(reader, anchor);
+        return;
+      }
       if (action === 'annotation-collapse') {
         const unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === reader.annotation?.unitId);
         // Header/footer items vanish during collapse. Anchor to their persistent
@@ -1170,6 +1333,9 @@
       }
       if (action === 'annotation-map-retry') {
         const anchor = reader.virtual?.getAnchor?.(); state.commentaryRoots.delete(reader.meta.id); renderReader(reader.meta.id, anchor); return;
+      }
+      if (action === 'annotation-source-map-retry') {
+        const anchor = reader.virtual?.getAnchor?.(); state.commentarySources.delete(reader.meta.id); renderReader(reader.meta.id, anchor); return;
       }
       const row = reader.work.rows.find(item => Number(item.id) === Number(button.dataset.row)); if (!row) return;
       if (action === 'edit-zh' || action === 'edit-en') await editTranslation(reader.meta, row, action === 'edit-zh' ? 'zh' : 'en');
