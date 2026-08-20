@@ -313,7 +313,7 @@ body.reader-immersive.reader-chrome-open .site-footer { max-height: 160px; opaci
 .dhamma-ai-synthesis code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .dhamma-ai-synthesis p code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 .gotama-msg-flag { display: inline-block; margin-top: 6px; font-size: 0.76em; color: #b8860b; background: #fff8e1; padding: 2px 8px; border-radius: 999px; }
-.gotama-cite { display: inline-block; padding: 1px 7px; margin: 0 1px; border-radius: 10px; background: rgba(124, 92, 204, .14); color: #6d4fc7; font-size: 0.92em; text-decoration: none; white-space: nowrap; }
+.gotama-cite { display: inline-block; padding: 1px 7px; margin: 0 1px; border-radius: 10px; background: rgba(124, 92, 204, .14); color: #6d4fc7; font-size: 0.92em; text-decoration: none; }
 .gotama-cite:hover { background: rgba(124, 92, 204, .24); }
 /* Token/time information is independent from the assistant action row. It
    can wrap or grow without changing the action buttons' position. */
@@ -12426,11 +12426,30 @@ function gotamaRenderMarkdown(text) {
   // which would just print the whole ugly encoded URL as the link text.
   // Must run before that generic pass for the same reason as the citation
   // pass above - once a URL is autolinked as its own text there's no clean
-  // "title immediately before this URL" text left to match against.
-  const ebUrlRe = new RegExp('(?:(《[^《》\\n]{1,60}》)\\s*)?(' + EARLY_BUDDHIST_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/?\\?[^\\s<)\\]）"\']+)', 'g');
+  // "title immediately before this URL" text left to match against. The
+  // title capture starts at 《 and runs non-greedily up to the URL rather
+  // than requiring a strictly-closed 《...》 - the model often follows the
+  // closing 》 with a collection name / parenthetical note ("《毘陀罗大经》
+  // 中部（想为认知、五蕴相连结）") that's part of the intended label, not
+  // just the bracketed title alone. Bounded by ；/; so two citations
+  // separated by a semicolon (a common model habit) don't get fused into
+  // one label. Generated HTML is pushed through the same citeTokens
+  // placeholder array as the [label](url) pass above, NOT spliced into
+  // `html` directly - splicing directly is what let the generic bare-URL
+  // autolink pass a few lines down re-match the URL sitting inside this
+  // <a>'s own href attribute and nest a second <a> inside it, corrupting
+  // the markup into visible raw `href="..." target="_blank"...` text.
+  // Only the full-width ； is excluded from the URL itself (not the ASCII
+  // ;) - the html string at this point has & escaped to &amp;, and ASCII ;
+  // is part of that entity, so excluding it truncated every URL after its
+  // first query-string separator. The model's own prose separator between
+  // citations is consistently the full-width ；, never a bare ASCII one.
+  const ebUrlRe = new RegExp('(?:(《[^\\n；;]{1,80}?))?\\s*(' + EARLY_BUDDHIST_BASE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/?\\?[^\\s<)\\]）"\'；]+)', 'g');
   html = html.replace(ebUrlRe, (match, title, url) => {
-    const label = title ? title.replace(/^《|》$/g, '') : '经文';
-    return `<a class="gotama-cite" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    const label = title || '经文';
+    const token = `@@GOTAMA_CITE_${citeTokens.length}@@`;
+    citeTokens.push(`<a class="gotama-cite" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`);
+    return token;
   });
   html = html
     .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
