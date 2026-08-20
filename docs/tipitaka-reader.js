@@ -390,12 +390,20 @@
     };
     const onWheel = event => { if (!pinned) return; event.preventDefault(); toggleChrome(); };
     const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
+    // preventDefault has to run for every touchmove of the gesture, not just
+    // the one that first crosses the 10px threshold: once touchHandled goes
+    // true, the old early-return skipped preventDefault for the rest of the
+    // same finger-down gesture, handing the remaining moves to the browser's
+    // native scroll/rubber-band physics on whatever ancestor is actually
+    // scrollable underneath a non-scrolling toolbar - that's what showed up
+    // as an up-down bounce while still dragging on the toolbar.
     const onTouchMove = event => {
-      if (!pinned || touchHandled || touchStartY === null) return;
+      if (!pinned || touchStartY === null) return;
+      event.preventDefault();
+      if (touchHandled) return;
       const dy = (event.touches[0]?.clientY ?? touchStartY) - touchStartY;
       if (Math.abs(dy) < 10) return;
       touchHandled = true;
-      event.preventDefault();
       toggleChrome();
     };
     const onTouchEnd = () => { touchStartY = null; touchHandled = false; };

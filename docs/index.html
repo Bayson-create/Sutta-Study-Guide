@@ -84,7 +84,17 @@ body.reader-immersive .container { padding: 12px 20px; }
  * footer ~108px in this compressed state) with room to spare - the browser
  * interpolates smoothly between 0 and that bound either way. */
 body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .22s ease, opacity .18s ease; }
+/* .tipitaka-pane sizes itself against 100dvh (real visible viewport) when
+ * supported, but body only ever had min-height:100vh (the large/address-bar-
+ * hidden viewport on mobile Safari). When the two units diverge - address
+ * bar still showing, so 100dvh < 100vh - body's flex column still stretches
+ * to the taller 100vh floor, .container (flex:1 0 auto) absorbs that extra
+ * height as unstyled filler below the shorter pane, and overflow:hidden
+ * means it's just blank, unreachable space at the bottom of the screen
+ * instead of something you could scroll to. Matching body's floor to the
+ * same dvh basis the pane already uses removes the leftover entirely. */
 body.reader-immersive { overflow: hidden; }
+@supports (height: 100dvh) { body.reader-immersive { min-height: 100dvh; } }
 /* Toggled from tipitaka-reader.js's bindStickyToolbar(): once the reader
  * toolbar first reaches the top and pins, the header (still visible up to
  * that point) auto-collapses to reclaim its space. A wheel/touch gesture
@@ -12991,7 +13001,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260818.1"></script>
+<script src="tipitaka-reader.js?v=20260820.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
   if (window.mermaid) mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
