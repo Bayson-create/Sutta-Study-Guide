@@ -75,7 +75,15 @@ body.reader-immersive .container { padding: 12px 20px; }
  * the reading pane carry the whole pane - pinned toolbar included - off the
  * top of the screen. Hiding it here (nobody navigates to the footer mid-read)
  * plus the overflow:hidden below removes the outer scroll surface entirely. */
-body.reader-immersive .site-footer { display: none; }
+/* max-height+opacity instead of display:none/block: display can't be
+ * transitioned, so toggling it was an instant one-frame layout jump - .site-
+ * header/.site-footer are flex siblings of .container in body's flex column,
+ * so their box disappearing/reappearing shoved .container (and the reading
+ * pane inside it) up or down in the same frame. The fixed max-height bound
+ * only needs to clear each element's real rendered height (header ~70-90px,
+ * footer ~108px in this compressed state) with room to spare - the browser
+ * interpolates smoothly between 0 and that bound either way. */
+body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .22s ease, opacity .18s ease; }
 body.reader-immersive { overflow: hidden; }
 /* Toggled from tipitaka-reader.js's bindStickyToolbar(): once the reader
  * toolbar first reaches the top and pins, the header (still visible up to
@@ -84,8 +92,9 @@ body.reader-immersive { overflow: hidden; }
  * which brings the header back and - unlike the plain reader-immersive
  * default above - also un-hides the footer, since this is a deliberate
  * "show me the frame again" action rather than the passive reading default. */
-body.reader-immersive.reader-chrome-collapsed .site-header { display: none; }
-body.reader-immersive.reader-chrome-open .site-footer { display: block; }
+body.reader-immersive .site-header { overflow: hidden; transition: max-height .22s ease, opacity .18s ease, padding .22s ease; max-height: 160px; }
+body.reader-immersive.reader-chrome-collapsed .site-header { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; pointer-events: none; }
+body.reader-immersive.reader-chrome-open .site-footer { max-height: 160px; opacity: 1; }
 @media (max-width: 760px) {
   body.reader-immersive .container { padding: 8px 10px; }
 }
