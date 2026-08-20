@@ -505,8 +505,8 @@
     };
   }
 
-  function readerHead(meta, work, hit) {
-    return `<div class="tipitaka-reader-head"><h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}</div></div><div class="tipitaka-sticky-sentinel"></div>`;
+  function readerHead(meta, work, hit, fragmentLinkStatus = '') {
+    return `<div class="tipitaka-reader-head"><h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}${fragmentLinkStatus ? ` ${fragmentLinkStatus}` : ''}</div></div><div class="tipitaka-sticky-sentinel"></div>`;
   }
 
   // Segmented look without touching bindReader()'s change handler: these stay
@@ -695,8 +695,23 @@
 
   function annotationSupplementHtml(item) {
     const annotation = item.annotation, fragment = annotation.data, kindLabel = annotation.kind === 'tik' ? '复注' : '义注';
-    if (item.kind === 'annotation-header') return `<section class="tipitaka-annotation-header" data-t-item-key="${esc(item.key)}"><div><h3>${kindLabel} · ${esc(fragment.title)}</h3><p>${esc(fragment.source_title)} · 完整 ${fragment.row_count.toLocaleString()} 段</p></div><div class="tipitaka-annotation-header-actions"><a href="#/tipitaka/read/${encodeURIComponent(fragment.source_work_id)}?row=${fragment.start_row}">在完整阅读器中打开</a><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起</button></div></section>`;
+    if (item.kind === 'annotation-header') return `<section class="tipitaka-annotation-header" data-t-item-key="${esc(item.key)}"><div><h3>${kindLabel} · ${esc(fragment.title)}</h3><p>${esc(fragment.source_title)} · 完整 ${fragment.row_count.toLocaleString()} 段</p></div><div class="tipitaka-annotation-header-actions"><a href="${fragmentReaderHref(fragment)}">在完整阅读器中打开</a><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起</button></div></section>`;
     return `<div class="tipitaka-annotation-footer" data-t-item-key="${esc(item.key)}"><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起完整${kindLabel}</button></div>`;
+  }
+
+  // A fragment link carries the identity verified by commentary-links-v1 as
+  // well as its source row.  The destination reader can therefore distinguish
+  // a valid fragment deep link from an ordinary (or stale) row link.
+  function fragmentReaderHref(fragment) {
+    const params = new URLSearchParams({
+      row: String(fragment.start_row),
+      annotation_fragment: String(fragment.fragment_id),
+      annotation_source: String(fragment.source_work_id),
+      annotation_start: String(fragment.start_row),
+      annotation_end: String(fragment.end_row),
+    });
+    if (fragment.source_hash) params.set('annotation_hash', String(fragment.source_hash));
+    return `#/tipitaka/read/${encodeURIComponent(fragment.source_work_id)}?${params}`;
   }
 
   function buildReaderItems(reader) {
@@ -732,7 +747,7 @@
     // rows with estimated heights but translated them with measured heights;
     // long commentary rows eventually pushed every rendered row off-screen.
     const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
-    let start = -1, end = -1, raf = 0, positionRaf = 0, positionToken = 0, destroyed = false;
+    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, pendingAnchorShift = 0, userScrolling = false, programmaticUntil = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
     // it means "head visible, list not scrolled at all". Every place that
@@ -755,7 +770,17 @@
       return Math.max(0, Math.min(count - 1, low));
     };
     const clampScroll = value => Math.max(0, Math.min(Number(value) || 0, Math.max(0, pane.scrollHeight - pane.clientHeight)));
+    const setProgrammaticScroll = value => {
+      programmaticUntil = Date.now() + 180;
+      pane.scrollTop = clampScroll(value);
+    };
+    const applyPendingAnchorShift = () => {
+      if (!pendingAnchorShift) return;
+      const shift = pendingAnchorShift; pendingAnchorShift = 0;
+      if (Math.abs(shift) > 1) setProgrammaticScroll(pane.scrollTop + shift);
+    };
     const measure = () => {
+      measureRaf = 0;
       if (destroyed) return;
       const anchor = indexAt(toList(pane.scrollTop));
       let shift = 0, changed = false;
@@ -767,11 +792,17 @@
         if (index < anchor) shift += delta;
       });
       if (changed) {
-        if (shift) pane.scrollTop += shift; // relative pixel delta, real coordinate either way
         spacer.style.height = `${Math.max(1, totalHeight())}px`;
         windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
+        // Do not fight a finger, wheel, or trackpad gesture. Measurements are
+        // batched and any correction is applied once after the gesture settles.
+        if (shift) {
+          if (userScrolling) pendingAnchorShift += shift;
+          else setProgrammaticScroll(pane.scrollTop + shift);
+        }
       }
     };
+    const scheduleMeasure = () => { if (!measureRaf) measureRaf = requestAnimationFrame(measure); };
     const draw = (force = false) => {
       if (destroyed) return;
       const viewport = Math.max(pane.clientHeight, EST_ROW_HEIGHT * 4), listScroll = toList(pane.scrollTop), first = indexAt(listScroll), last = indexAt(listScroll + viewport);
@@ -781,7 +812,7 @@
       windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
       windowEl.innerHTML = items.slice(start, end).map(item => readerItemHtml(item, reader)).join('');
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
-      requestAnimationFrame(measure);
+      scheduleMeasure();
     };
     const targetForKey = key => [...windowEl.querySelectorAll('[data-t-item-key]')].find(element => element.dataset.tItemKey === key) || null;
     const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0) => {
@@ -807,14 +838,14 @@
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > visibleTop && rowRect.top < paneRect.bottom;
         if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
-          pane.scrollTop = clampScroll(pane.scrollTop + delta);
+          setProgrammaticScroll(pane.scrollTop + delta);
           draw(true);
           positionRaf = requestAnimationFrame(settle);
         }
       };
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
-      pane.scrollTop = clampScroll(toReal(offsetFor(index) - (align === 'anchor'
+      setProgrammaticScroll(toReal(offsetFor(index) - (align === 'anchor'
         ? Number(targetOffset || 0)
         : align === 'top' ? 12 + stickyOffset() : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2))));
       draw(true);
@@ -822,9 +853,21 @@
       positionRaf = frame;
       setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
-    const schedule = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(); }); };
-    const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => draw(true)) : null;
-    pane.addEventListener('scroll', schedule, { passive: true }); resize?.observe(pane);
+    const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
+    const onScroll = () => {
+      if (Date.now() >= programmaticUntil) {
+        userScrolling = true;
+        clearTimeout(scrollIdleTimer);
+        scrollIdleTimer = setTimeout(() => {
+          userScrolling = false;
+          applyPendingAnchorShift();
+          schedule(true);
+        }, 110);
+      }
+      schedule();
+    };
+    const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
+    pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
     const getAnchor = () => {
@@ -837,18 +880,30 @@
         offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
       };
     };
+    const getAnchorForKey = (itemKey, fallback = null) => {
+      const element = targetForKey(itemKey);
+      // The annotation footer can be visible while its parent card is far
+      // outside the virtual window.  The item index is still stable, so keep
+      // that semantic target instead of returning a footer anchor which is
+      // about to be removed by collapse.
+      if (!element) return indexByKey.has(itemKey) ? { itemKey, rowId: null, offset: 12 } : (fallback || getAnchor());
+      const paneRect = pane.getBoundingClientRect();
+      return { itemKey, rowId: null, offset: element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) };
+    };
     return {
       pane,
       offsetFor,
       draw,
+      refresh: () => draw(true),
       getAnchor,
+      getAnchorForKey,
       scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex),
       restoreAnchor: anchor => {
         if (!anchor) return;
         const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
-      destroy: () => { destroyed = true; positionToken += 1; if (raf) cancelAnimationFrame(raf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', schedule); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); resize?.disconnect(); },
     };
   }
 
@@ -922,7 +977,7 @@
   }
 
   async function activateAnnotation(reader, descriptor) {
-    const anchor = reader.virtual?.getAnchor?.();
+    const anchor = reader.virtual?.getAnchorForKey?.(`unit:${descriptor.unit.unit_id}`) || reader.virtual?.getAnchor?.();
     reader.annotationPicker = { unitId: descriptor.unit.unit_id, kind: descriptor.kind };
     reader.annotation = { unitId: descriptor.unit.unit_id, kind: descriptor.kind, fragmentId: descriptor.fragment.fragment_id, fragment: descriptor.fragment, loading: true, error: '', data: null };
     updateAnnotationUrl(reader, descriptor.unit, descriptor.kind, descriptor.fragment);
@@ -943,7 +998,19 @@
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
       const [loaded, overlays, commentaryMap] = await Promise.all([workById(workId), overrides(workId), meta.level === 'mula' ? commentaryMapFor(workId) : Promise.resolve(null)]);
       if (renderId !== state.readerRequest) return;
-      const work = loaded[1], params = query(), requestedRowId = Number(params.get('row') || 0);
+      const work = loaded[1], params = query();
+      let requestedRowId = Number(params.get('row') || 0), fragmentLinkStatus = '';
+      const linkedFragment = params.get('annotation_fragment');
+      if (linkedFragment) {
+        const source = params.get('annotation_source'), startRow = Number(params.get('annotation_start') || requestedRowId), endRow = Number(params.get('annotation_end') || 0);
+        const startExists = work.rows.some(row => Number(row.id) === startRow);
+        if (source !== meta.id || !Number.isFinite(startRow) || startRow <= 0 || (endRow && endRow < startRow) || !startExists) {
+          fragmentLinkStatus = '<span class="tipitaka-annotation-error">无法校验该注释片段的位置；请返回根本文本后重新打开。</span>';
+        } else {
+          requestedRowId = startRow;
+          fragmentLinkStatus = `<span class="tipitaka-note">已定位到注释片段开头（${esc(linkedFragment)}）。</span>`;
+        }
+      }
       const positionParam = params.get('hl_pos');
       const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', terms: (params.get('hl_terms') || '').split('|').filter(Boolean), position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null, semantic: params.get('semantic') === '1' } : null;
       const hitRows = hit ? await searchHitsForReader(hit.query, hit.language, workId) : [];
@@ -973,7 +1040,7 @@
       // in renderVirtual() only look at spacer.offsetTop (what comes BEFORE the
       // spacer), so this doesn't touch the virtualization coordinate math.
       const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
       if (preserveAnchor?.itemKey || preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
@@ -1071,9 +1138,11 @@
       if (action === 'annotation-kind') {
         const unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === button.dataset.unit);
         if (!unit) return;
-        const anchor = reader.virtual?.getAnchor?.();
         reader.annotationPicker = { unitId: unit.unit_id, kind: button.dataset.kind };
-        rebuildReaderVirtual(reader, anchor);
+        // This only changes controls inside an already rendered card.  Rebuilding
+        // the virtual list here used to run the general row-anchor restoration
+        // and visibly pull the reader away from the card that was just tapped.
+        reader.virtual?.refresh?.();
         return;
       }
       if (action === 'annotation-fragment') {
@@ -1082,7 +1151,10 @@
         return;
       }
       if (action === 'annotation-collapse') {
-        const anchor = reader.virtual?.getAnchor?.(), unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === reader.annotation?.unitId);
+        const unit = (reader.commentaryMap?.units || []).find(item => item.unit_id === reader.annotation?.unitId);
+        // Header/footer items vanish during collapse. Anchor to their persistent
+        // parent card rather than to the disappearing fragment row or button.
+        const anchor = unit ? (reader.virtual?.getAnchorForKey?.(`unit:${unit.unit_id}`) || reader.virtual?.getAnchor?.()) : reader.virtual?.getAnchor?.();
         reader.annotation = null;
         updateAnnotationUrl(reader, unit);
         rebuildReaderVirtual(reader, anchor);
