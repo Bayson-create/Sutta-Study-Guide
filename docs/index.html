@@ -9946,6 +9946,7 @@ async function renderMomentsFeed() {
   html += `<div id="moments-list" class="loading">加载中…</div>`;
   app.innerHTML = html;
 
+  communityDraftBind('moments:new', ['moments-composer-text', 'moments-composer-visibility']);
   momentsRefreshRequestBadge();
   momentsLoadFeed();
 }
@@ -9961,17 +9962,20 @@ async function momentsLoadFeed() {
     clearTimeout(slowHint);
     if (!res.ok) throw new Error('接口暂不可用');
     const data = await res.json();
+    // #moments-list itself is kept as a permanent container (innerHTML,
+    // never outerHTML) so its id survives an empty->non-empty refresh -
+    // an outerHTML swap here used to drop the id on the first (empty)
+    // render, silently breaking every later momentsLoadFeed() call after
+    // that (e.g. right after publishing your first-ever moment).
     const list = document.getElementById('moments-list');
     if (!list) return; // navigated away while loading
-    if (!data.items.length) {
-      list.outerHTML = `<div class="community-empty">暂无动态，分享第一条善友圈动态吧</div>`;
-      return;
-    }
-    list.outerHTML = `<div id="moments-list">${data.items.map(momentCardHtml).join('')}</div>`;
+    list.innerHTML = data.items.length
+      ? data.items.map(momentCardHtml).join('')
+      : `<div class="community-empty">暂无动态，分享第一条善友圈动态吧</div>`;
   } catch (e) {
     clearTimeout(slowHint);
     const list = document.getElementById('moments-list');
-    if (list) list.outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
+    if (list) list.innerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
   }
 }
 
@@ -9995,7 +9999,7 @@ function momentCardHtml(post) {
         <div class="name">${communityEscape(post.author.display_name)}</div>
         <div class="meta"><span>${communityFormatDate(post.created_at)}</span><span class="moment-visibility">· ${momentsVisibilityLabel(post.visibility)}</span></div>
       </div>
-      ${canDelete ? `<button class="moment-action-btn" onclick="momentsDeletePost('${post.id}')">🗑</button>` : ''}
+      ${canDelete ? `<button class="moment-action-btn" onclick="momentsEditPost('${post.id}')">✎</button><button class="moment-action-btn" onclick="momentsDeletePost('${post.id}')">🗑</button>` : ''}
     </div>
     ${post.text_content ? `<div class="moment-text">${communityEscape(post.text_content)}</div>` : ''}
     ${momentImagesHtml(post)}
@@ -10108,6 +10112,146 @@ async function momentsDeletePost(momentId) {
   }
 }
 
+// --- Edit own moment (like re-editing a WeChat Moments post) ---
+
+let momentsEditState = null; // { momentId, existingImages: [{key,url}], newImages: [{file, previewUrl, uploadedKey}] }
+
+async function momentsEditPost(momentId) {
+  const card = document.getElementById(`moment-${momentId}`);
+  if (!card) return;
+  card.classList.add('loading');
+  try {
+    const res = await fetch(`${API_BASE}/api/moments/${momentId}`, { headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('加载失败');
+    const post = await res.json();
+    momentsEditState = { momentId, existingImages: (post.images || []).map(i => ({ key: i.key, url: i.url })), newImages: [] };
+    card.outerHTML = momentEditCardHtml(post);
+    momentsEditRenderPreviews(momentId);
+    const textEl = document.getElementById(`moment-edit-text-${momentId}`);
+    if (textEl) momentsAutoGrow(textEl);
+  } catch (e) {
+    card.classList.remove('loading');
+    alert(e.message);
+  }
+}
+
+function momentEditCardHtml(post) {
+  return `<div class="moment-card" id="moment-${post.id}">
+    <div class="moments-composer" style="border:none;box-shadow:none;padding:0;margin-bottom:0">
+      <textarea id="moment-edit-text-${post.id}" oninput="momentsAutoGrow(this)">${communityEscape(post.text_content || '')}</textarea>
+      <div id="moment-edit-previews-${post.id}" class="moments-image-previews"></div>
+      <div class="moments-composer-foot">
+        <div class="moments-composer-tools">
+          <input type="file" id="moment-edit-file-input-${post.id}" accept="image/jpeg,image/png,image/webp" multiple style="display:none" onchange="momentsEditPickImages('${post.id}', this)">
+          <button class="moments-image-pick-btn" onclick="document.getElementById('moment-edit-file-input-${post.id}').click()">📷 加图片</button>
+          <select id="moment-edit-visibility-${post.id}" class="moments-visibility-select">
+            <option value="public" ${post.visibility === 'public' ? 'selected' : ''}>🌐 公开</option>
+            <option value="friends" ${post.visibility === 'friends' ? 'selected' : ''}>👥 仅好友</option>
+            <option value="only_me" ${post.visibility === 'only_me' ? 'selected' : ''}>🔒 仅自己</option>
+          </select>
+        </div>
+        <div class="moments-panel-actions">
+          <button onclick="momentsEditCancel('${post.id}')">取消</button>
+          <button class="primary" id="moment-edit-save-${post.id}" onclick="momentsEditSave('${post.id}', this)">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function momentsEditRenderPreviews(momentId) {
+  const el = document.getElementById(`moment-edit-previews-${momentId}`);
+  if (!el || !momentsEditState) return;
+  const existing = momentsEditState.existingImages.map((img, i) => `
+    <div class="moments-image-preview"><img src="${img.url}" alt=""><button onclick="momentsEditRemoveExistingImage('${momentId}', ${i})">✕</button></div>
+  `).join('');
+  const fresh = momentsEditState.newImages.map((img, i) => `
+    <div class="moments-image-preview"><img src="${img.previewUrl}" alt=""><button onclick="momentsEditRemoveNewImage('${momentId}', ${i})">✕</button></div>
+  `).join('');
+  el.innerHTML = existing + fresh;
+}
+
+function momentsEditPickImages(momentId, input) {
+  if (!momentsEditState) return;
+  const total = momentsEditState.existingImages.length + momentsEditState.newImages.length;
+  const remaining = 9 - total;
+  if (remaining <= 0) { alert('最多添加 9 张图片'); input.value = ''; return; }
+  const files = Array.from(input.files || []).slice(0, remaining);
+  for (const file of files) {
+    if (file.size > 5 * 1024 * 1024) { alert(`${file.name} 超过 5MB，已跳过`); continue; }
+    momentsEditState.newImages.push({ file, previewUrl: URL.createObjectURL(file) });
+  }
+  input.value = '';
+  momentsEditRenderPreviews(momentId);
+}
+
+function momentsEditRemoveExistingImage(momentId, index) {
+  momentsEditState.existingImages.splice(index, 1);
+  momentsEditRenderPreviews(momentId);
+}
+
+function momentsEditRemoveNewImage(momentId, index) {
+  URL.revokeObjectURL(momentsEditState.newImages[index].previewUrl);
+  momentsEditState.newImages.splice(index, 1);
+  momentsEditRenderPreviews(momentId);
+}
+
+async function momentsEditCancel(momentId) {
+  momentsEditState = null;
+  try {
+    const detail = await (await fetch(`${API_BASE}/api/moments/${momentId}`, { headers: communityAuthHeaders() })).json();
+    const card = document.getElementById(`moment-${momentId}`);
+    if (card) card.outerHTML = momentCardHtml(detail);
+  } catch (e) {
+    momentsLoadFeed();
+  }
+}
+
+async function momentsEditSave(momentId, btnEl) {
+  if (!momentsEditState || momentsEditState.momentId !== momentId) return;
+  const text_content = document.getElementById(`moment-edit-text-${momentId}`).value.trim();
+  const visibility = document.getElementById(`moment-edit-visibility-${momentId}`).value;
+  if (!text_content && !momentsEditState.existingImages.length && !momentsEditState.newImages.length) {
+    alert('请输入文字或保留至少一张图片');
+    return;
+  }
+  try {
+    await communityRunSubmit(btnEl, '保存中…', async (onRetry) => {
+      // Same resume-on-retry approach as momentsPublish: new images that
+      // already uploaded keep their key, so a retry never re-uploads them.
+      for (const img of momentsEditState.newImages) {
+        if (img.uploadedKey) continue;
+        const form = new FormData();
+        form.append('file', img.file);
+        const uploadRes = await communityWriteFetch(`${API_BASE}/api/moments/images`, {
+          method: 'POST', headers: communityAuthHeaders(), body: form,
+        }, { onRetry });
+        if (!uploadRes.ok) throw new Error((await uploadRes.json()).detail || '图片上传失败');
+        const { image_key } = await uploadRes.json();
+        img.uploadedKey = image_key;
+      }
+      const image_keys = [
+        ...momentsEditState.existingImages.map(img => img.key),
+        ...momentsEditState.newImages.map(img => img.uploadedKey),
+      ];
+      const res = await communityWriteFetch(`${API_BASE}/api/moments/${momentId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ text_content: text_content || null, image_keys, visibility }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '保存失败');
+      return res.json();
+    }).then(post => {
+      momentsEditState.newImages.forEach(img => URL.revokeObjectURL(img.previewUrl));
+      momentsEditState = null;
+      const card = document.getElementById(`moment-${momentId}`);
+      if (card) card.outerHTML = momentCardHtml(post);
+    });
+  } catch (e) {
+    alert(communityWriteErrorMessage(e));
+  }
+}
+
 // --- Composer ---
 
 function momentsComposerHtml() {
@@ -10168,8 +10312,13 @@ async function momentsPublish(btnEl) {
   if (!(await communityRequireLogin())) return;
   try {
     await communityRunSubmit(btnEl, '发布中…', async (onRetry) => {
-      const image_keys = [];
+      // Images already uploaded in a previous failed attempt keep their
+      // key (see momentsPickImages/momentsRenderPreviews) so a retry -
+      // whether automatic (communityWriteFetch) or the user clicking
+      // "发布" again after a hard failure - resumes instead of
+      // re-uploading everything and risking duplicate blobs.
       for (const img of momentsComposerImages) {
+        if (img.uploadedKey) continue;
         const form = new FormData();
         form.append('file', img.file);
         const uploadRes = await communityWriteFetch(`${API_BASE}/api/moments/images`, {
@@ -10177,8 +10326,9 @@ async function momentsPublish(btnEl) {
         }, { onRetry });
         if (!uploadRes.ok) throw new Error((await uploadRes.json()).detail || '图片上传失败');
         const { image_key } = await uploadRes.json();
-        image_keys.push(image_key);
+        img.uploadedKey = image_key;
       }
+      const image_keys = momentsComposerImages.map(img => img.uploadedKey);
       const res = await communityWriteFetch(`${API_BASE}/api/moments`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
@@ -10186,6 +10336,7 @@ async function momentsPublish(btnEl) {
       }, { onRetry });
       if (!res.ok) throw new Error((await res.json()).detail || '发布失败');
     });
+    communityDraftClear('moments:new');
     textEl.value = '';
     momentsAutoGrow(textEl);
     momentsComposerImages.forEach(img => URL.revokeObjectURL(img.previewUrl));
@@ -10193,6 +10344,9 @@ async function momentsPublish(btnEl) {
     momentsRenderPreviews();
     momentsLoadFeed();
   } catch (e) {
+    // Progress (already-uploaded images, typed text) is preserved on
+    // momentsComposerImages/localStorage, not discarded - clicking
+    // "发布" again resumes rather than starting over.
     alert(communityWriteErrorMessage(e));
   }
 }
