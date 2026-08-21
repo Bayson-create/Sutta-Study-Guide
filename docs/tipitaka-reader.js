@@ -963,7 +963,8 @@
       const elements = [...windowEl.querySelectorAll('[data-t-item-key]')];
       const expandedElement = elements.find(candidate => {
         const key = candidate.dataset.tItemKey || '', rect = candidate.getBoundingClientRect();
-        return /^(annotation|roottext):/.test(key) && rect.bottom > visibleTop + 1 && rect.top < visibleBottom;
+        const activeCard = (reader.annotation?.unitId && key === `unit:${reader.annotation.unitId}`) || (reader.rootText?.sourceFragmentId && key === `source:${reader.rootText.sourceFragmentId}`);
+        return (/^(annotation|roottext):/.test(key) || activeCard) && rect.bottom > visibleTop + 1 && rect.top < visibleBottom;
       });
       const element = expandedElement || elements.find(candidate => candidate.getBoundingClientRect().bottom > visibleTop + 1);
       if (!element) return null;
