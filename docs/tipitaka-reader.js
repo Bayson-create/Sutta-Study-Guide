@@ -927,8 +927,12 @@
       setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
     const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
-    const beginUserScroll = () => {
+    const beginUserScroll = event => {
       if (destroyed) return;
+      // Controls live inside the reader pane.  Their pointer/touch events are
+      // not a user scroll and must not cancel the anchor restore scheduled for
+      // a language/font rebuild.
+      if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
       reader.anchorRestoreCancelled = true;
       userScrolling = true;
       programmaticUntil = 0;
