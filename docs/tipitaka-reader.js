@@ -1504,7 +1504,17 @@
         if (toggle === 'pali' || toggle === 'zh' || toggle === 'en') {
           const attr = `tShow${toggle[0].toUpperCase()}${toggle.slice(1)}`;
           reader.virtual?.pane?.dataset && (reader.virtual.pane.dataset[attr] = event.target.checked ? '1' : '0');
-          scheduleMeasuredLanguageAnchor(reader, anchor);
+          reader.anchorRestoreToken = (reader.anchorRestoreToken || 0) + 1;
+          reader.anchorRestoreCancelled = false;
+          reader.suppressMeasureCompensation = true;
+          const element = [...reader.virtual.pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor?.itemKey);
+          if (element) {
+            const paneRect = reader.virtual.pane.getBoundingClientRect();
+            const toolbar = reader.virtual.pane.querySelector('#tipitaka-toolbar');
+            const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
+            const delta = element.getBoundingClientRect().top - desired;
+            if (Math.abs(delta) > 1) reader.virtual.pane.scrollTop += delta;
+          }
           return;
         }
         // Language visibility only changes row markup.  Rebuilding the whole
