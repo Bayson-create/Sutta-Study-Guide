@@ -1507,14 +1507,31 @@
           reader.anchorRestoreToken = (reader.anchorRestoreToken || 0) + 1;
           reader.anchorRestoreCancelled = false;
           reader.suppressMeasureCompensation = true;
-          const element = [...reader.virtual.pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor?.itemKey);
-          if (element) {
-            const paneRect = reader.virtual.pane.getBoundingClientRect();
-            const toolbar = reader.virtual.pane.querySelector('#tipitaka-toolbar');
-            const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
-            const delta = element.getBoundingClientRect().top - desired;
-            if (Math.abs(delta) > 1) reader.virtual.pane.scrollTop += delta;
-          }
+          const pane = reader.virtual.pane, started = performance.now();
+          let userMoved = false;
+          const release = () => {
+            userMoved = true;
+            pane.removeEventListener('wheel', release);
+            pane.removeEventListener('touchmove', release);
+          };
+          const stabilize = () => {
+            if (state.reader !== reader || userMoved || performance.now() - started > 1200) {
+              pane.removeEventListener('wheel', release);
+              pane.removeEventListener('touchmove', release);
+              return;
+            }
+            const element = [...pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor?.itemKey);
+            if (element) {
+              const paneRect = pane.getBoundingClientRect(), toolbar = pane.querySelector('#tipitaka-toolbar');
+              const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
+              const delta = element.getBoundingClientRect().top - desired;
+              if (Math.abs(delta) > 1) pane.scrollTop += delta;
+            }
+            requestAnimationFrame(stabilize);
+          };
+          pane.addEventListener('wheel', release, { passive: true });
+          pane.addEventListener('touchmove', release, { passive: true });
+          requestAnimationFrame(stabilize);
           return;
         }
         // Language visibility only changes row markup.  Rebuilding the whole
