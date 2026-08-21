@@ -294,7 +294,7 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
     style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}';
-    style.textContent += `.tipitaka-layout{grid-template-columns:minmax(390px,42%) minmax(0,1fr);gap:28px;align-items:start}.tipitaka-layout>aside{min-width:0}.tipitaka-catalog{max-height:min(74vh,820px);border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:16px}.tipitaka-catalog details[data-depth="2"]{margin-left:18px}.tipitaka-catalog details[data-depth="3"]{margin-left:20px}.tipitaka-catalog summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;cursor:pointer;padding:9px 10px;border-radius:8px;font-weight:650;line-height:1.45}.tipitaka-catalog summary>span{min-width:0;overflow-wrap:anywhere}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 10px 8px 30px;border-radius:7px;line-height:1.5;overflow-wrap:anywhere}.tipitaka-work-link small{white-space:nowrap;align-self:start}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}.tipitaka-provenance{box-sizing:border-box;width:100%;margin:24px 0 0;padding:12px 16px;background:var(--accent-bg);border-left:3px solid var(--accent-light);border-radius:4px;color:var(--text-light,#777);font-size:.84em;line-height:1.7}.tipitaka-provenance-title{margin:0 0 3px;color:var(--accent,#8a6817);font-size:.96em;font-weight:700}.tipitaka-provenance-copy{margin:0}.tipitaka-provenance-quote{margin:8px 0 0;color:var(--accent,#8a6817);font-family:Georgia,"Times New Roman",serif;font-size:.96em;font-style:italic}.tipitaka-provenance-quote span{display:block;margin-top:2px;color:var(--text-light,#777);font-family:inherit;font-size:.9em}.tipitaka-scope-trigger-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.tipitaka-scope-chips,.tipitaka-scope-selected{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.tipitaka-scope-chip{display:inline-flex;max-width:240px;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent);color:var(--primary,#6b4f2d);font-size:.84em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tipitaka-scope-empty{color:var(--text-light,#777);font-size:.9em}.tipitaka-scope-drawer{position:fixed;inset:0 0 0 auto;width:min(760px,92vw);height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-left:1px solid var(--border,#ddd);background:var(--card,#fff);color:var(--text,#222);box-shadow:-18px 0 50px rgba(30,20,10,.18)}.tipitaka-scope-drawer::backdrop{background:rgba(20,15,10,.44)}.tipitaka-scope-shell{height:100%;display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto;box-sizing:border-box}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-shell>header{justify-content:space-between}.tipitaka-scope-shell>header h3,.tipitaka-scope-shell>header p{margin:0}.tipitaka-scope-shell>header p{margin-top:4px;color:var(--text-light,#777);font-size:.88em}.tipitaka-scope-shell>footer{justify-content:flex-end;border-top:1px solid var(--border,#ddd);border-bottom:0}.tipitaka-scope-shell button,.tipitaka-scope-shell input{box-sizing:border-box;padding:8px 11px;border:1px solid var(--border,#ccc);border-radius:8px;background:var(--card,#fff);color:inherit}.tipitaka-scope-close{font-size:1.45em;border:0!important}.tipitaka-scope-selected{min-height:34px;padding:10px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-tools{display:flex;gap:8px;padding:12px 20px}.tipitaka-scope-tools input{flex:1;min-width:0}.tipitaka-scope-content{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:16px;min-height:0;padding:0 20px 16px}.tipitaka-scope-content section{min-width:0;min-height:0}.tipitaka-scope-content h4{margin:4px 0 8px}.tipitaka-scope-tree{height:100%;max-height:none;box-sizing:border-box}.tipitaka-scope-tree summary{grid-template-columns:auto minmax(0,1fr) auto}.tipitaka-scope-tree .tipitaka-work-link{grid-template-columns:auto minmax(0,1fr) auto;cursor:default}.tipitaka-scope-tree input{width:18px;height:18px;margin:1px 0 0;padding:0}.tipitaka-scope-types{display:flex;flex-direction:column;gap:8px}.tipitaka-scope-types label{display:flex;gap:9px;align-items:center;padding:10px;border:1px solid var(--border,#ddd);border-radius:9px}.tipitaka-scope-types input{width:18px;height:18px;padding:0}.tipitaka-scope-count{margin-right:auto;color:var(--text-light,#777);font-size:.88em}@media(max-width:900px){.tipitaka-layout{grid-template-columns:minmax(320px,46%) minmax(0,1fr);gap:18px}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-layout>section{display:none}.tipitaka-catalog{max-height:62vh}.tipitaka-provenance{margin-top:20px;padding:12px 14px}.tipitaka-scope-drawer{width:100vw}.tipitaka-scope-content{grid-template-columns:1fr;overflow:auto}.tipitaka-scope-tree{height:auto;max-height:55vh}.tipitaka-scope-shell>footer{flex-wrap:wrap;padding:12px}.tipitaka-scope-count{width:100%;order:-1}.tipitaka-scope-tools{flex-wrap:wrap}.tipitaka-scope-tools input{flex-basis:100%}}`;
+    style.textContent += `.tipitaka-layout{grid-template-columns:minmax(390px,42%) minmax(0,1fr);gap:28px;align-items:start}.tipitaka-layout>aside{min-width:0}.tipitaka-catalog{max-height:min(74vh,820px);border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:16px}.tipitaka-catalog details[data-depth="2"]{margin-left:18px}.tipitaka-catalog details[data-depth="3"]{margin-left:20px}.tipitaka-catalog summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;cursor:pointer;padding:9px 10px;border-radius:8px;font-weight:650;line-height:1.45}.tipitaka-catalog summary>span{min-width:0;overflow-wrap:anywhere}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 10px 8px 30px;border-radius:7px;line-height:1.5;overflow-wrap:anywhere}.tipitaka-work-link small{white-space:nowrap;align-self:start}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}.tipitaka-provenance,.tipitaka-bookmarks{box-sizing:border-box;width:100%;margin:24px 0 0;padding:12px 16px;background:var(--accent-bg);border-left:3px solid var(--accent-light);border-radius:4px;color:var(--text-light,#777);font-size:.84em;line-height:1.7}.tipitaka-bookmarks h3{margin:0 0 8px;color:var(--accent,#8a6817);font-size:1.05em}.tipitaka-bookmark-list{display:grid;gap:7px}.tipitaka-bookmark-list article{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:9px 0;border-top:1px solid color-mix(in srgb,var(--border,#ddd) 80%,transparent)}.tipitaka-bookmark-list a{display:grid;min-width:0;color:inherit;text-decoration:none}.tipitaka-bookmark-list a:hover strong{text-decoration:underline}.tipitaka-bookmark-list a span{font-size:.9em;color:var(--text-light,#777)}.tipitaka-bookmark-list button{flex:0 0 auto;padding:6px 9px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit}.tipitaka-provenance-title{margin:0 0 3px;color:var(--accent,#8a6817);font-size:.96em;font-weight:700}.tipitaka-provenance-copy{margin:0}.tipitaka-provenance-quote{margin:8px 0 0;color:var(--accent,#8a6817);font-family:Georgia,"Times New Roman",serif;font-size:.96em;font-style:italic}.tipitaka-provenance-quote span{display:block;margin-top:2px;color:var(--text-light,#777);font-family:inherit;font-size:.9em}.tipitaka-scope-trigger-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.tipitaka-scope-chips,.tipitaka-scope-selected{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.tipitaka-scope-chip{display:inline-flex;max-width:240px;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent);color:var(--primary,#6b4f2d);font-size:.84em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tipitaka-scope-empty{color:var(--text-light,#777);font-size:.9em}.tipitaka-scope-drawer{position:fixed;inset:0 0 0 auto;width:min(760px,92vw);height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-left:1px solid var(--border,#ddd);background:var(--card,#fff);color:var(--text,#222);box-shadow:-18px 0 50px rgba(30,20,10,.18)}.tipitaka-scope-drawer::backdrop{background:rgba(20,15,10,.44)}.tipitaka-scope-shell{height:100%;display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto;box-sizing:border-box}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-shell>header{justify-content:space-between}.tipitaka-scope-shell>header h3,.tipitaka-scope-shell>header p{margin:0}.tipitaka-scope-shell>header p{margin-top:4px;color:var(--text-light,#777);font-size:.88em}.tipitaka-scope-shell>footer{justify-content:flex-end;border-top:1px solid var(--border,#ddd);border-bottom:0}.tipitaka-scope-shell button,.tipitaka-scope-shell input{box-sizing:border-box;padding:8px 11px;border:1px solid var(--border,#ccc);border-radius:8px;background:var(--card,#fff);color:inherit}.tipitaka-scope-close{font-size:1.45em;border:0!important}.tipitaka-scope-selected{min-height:34px;padding:10px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-tools{display:flex;gap:8px;padding:12px 20px}.tipitaka-scope-tools input{flex:1;min-width:0}.tipitaka-scope-content{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:16px;min-height:0;padding:0 20px 16px}.tipitaka-scope-content section{min-width:0;min-height:0}.tipitaka-scope-content h4{margin:4px 0 8px}.tipitaka-scope-tree{height:100%;max-height:none;box-sizing:border-box}.tipitaka-scope-tree summary{grid-template-columns:auto minmax(0,1fr) auto}.tipitaka-scope-tree .tipitaka-work-link{grid-template-columns:auto minmax(0,1fr) auto;cursor:default}.tipitaka-scope-tree input{width:18px;height:18px;margin:1px 0 0;padding:0}.tipitaka-scope-types{display:flex;flex-direction:column;gap:8px}.tipitaka-scope-types label{display:flex;gap:9px;align-items:center;padding:10px;border:1px solid var(--border,#ddd);border-radius:9px}.tipitaka-scope-types input{width:18px;height:18px;padding:0}.tipitaka-scope-count{margin-right:auto;color:var(--text-light,#777);font-size:.88em}@media(max-width:900px){.tipitaka-layout{grid-template-columns:minmax(320px,46%) minmax(0,1fr);gap:18px}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-layout>section{display:none}.tipitaka-catalog{max-height:62vh}.tipitaka-provenance,.tipitaka-bookmarks{margin-top:20px;padding:12px 14px}.tipitaka-bookmark-list article{align-items:flex-start;flex-direction:column}.tipitaka-scope-drawer{width:100vw}.tipitaka-scope-content{grid-template-columns:1fr;overflow:auto}.tipitaka-scope-tree{height:auto;max-height:55vh}.tipitaka-scope-shell>footer{flex-wrap:wrap;padding:12px}.tipitaka-scope-count{width:100%;order:-1}.tipitaka-scope-tools{flex-wrap:wrap}.tipitaka-scope-tools input{flex-basis:100%}}`;
     style.textContent += `.tipitaka-scope-drawer{display:flex!important;flex-direction:column;overflow:hidden;height:100dvh;max-height:100dvh}.tipitaka-scope-shell{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;overflow:hidden}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer,.tipitaka-scope-selected,.tipitaka-scope-tools{flex:0 0 auto}.tipitaka-scope-selected{max-height:92px;overflow:auto}.tipitaka-scope-content{flex:1 1 auto;overflow:hidden}.tipitaka-scope-content>section{display:flex;flex-direction:column;overflow:hidden}.tipitaka-scope-content>section:first-child{min-height:0}.tipitaka-scope-tree{flex:1 1 auto;min-height:0;height:auto!important;overflow:auto}.tipitaka-scope-types{overflow:auto}.tipitaka-scope-shell>footer{position:relative;z-index:2;background:var(--card,#fff);box-shadow:0 -5px 16px rgba(40,25,10,.06)}.tipitaka-search-form{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px}.tipitaka-search-form #tipitaka-search-input{width:100%;min-width:0}.tipitaka-catalog-search-wrap{position:relative;display:flex;align-items:center;width:100%;margin-bottom:10px}.tipitaka-catalog-search-wrap>svg{position:absolute;left:12px;width:18px;height:18px;color:var(--text-light,#777);pointer-events:none}.tipitaka-catalog-search-wrap .tipitaka-catalog-search{margin:0;padding:10px 38px 10px 38px;border:1px solid var(--border,#d9cdbb);border-radius:999px;background:var(--card,#fff);box-shadow:0 2px 10px rgba(60,40,10,.05);outline:none}.tipitaka-catalog-search-wrap .tipitaka-catalog-search:focus{border-color:var(--primary,#8a6817);box-shadow:0 0 0 3px color-mix(in srgb,var(--primary,#8a6817) 16%,transparent)}.tipitaka-catalog-search-clear{position:absolute;right:8px;width:28px;height:28px;padding:0!important;border:0!important;border-radius:50%!important;background:transparent!important;color:var(--text-light,#777);font-size:1.1em;line-height:1}.tipitaka-catalog-search-clear[hidden]{display:none}.tipitaka-catalog-search-clear:hover{background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent)!important}@supports not (height:100dvh){.tipitaka-scope-drawer{height:100vh;max-height:100vh}}@media(max-height:560px){.tipitaka-scope-shell>header{padding:9px 14px}.tipitaka-scope-shell>header p{display:none}.tipitaka-scope-selected{max-height:56px;padding:6px 14px}.tipitaka-scope-tools{padding:7px 14px}.tipitaka-scope-content{padding:0 14px 7px}.tipitaka-scope-shell>footer{padding:8px 12px}.tipitaka-scope-shell button,.tipitaka-scope-shell input{padding:6px 9px}}@media(max-width:760px){.tipitaka-scope-content{display:flex;flex-direction:column;gap:8px;overflow:hidden}.tipitaka-scope-content>section:first-child{flex:1 1 auto}.tipitaka-scope-content>section:last-child{flex:0 0 auto;max-height:34%;overflow:auto}.tipitaka-search-form{grid-template-columns:minmax(0,1fr) auto}.tipitaka-search-form select{grid-column:1}.tipitaka-search-form button{grid-column:2;grid-row:2}.tipitaka-search-form #tipitaka-search-input{grid-column:1 / -1}}@media(max-width:560px){.tipitaka-search-form select,.tipitaka-search-form button{width:100%}.tipitaka-search-form button{grid-column:1 / -1;grid-row:auto}}`;
     document.head.appendChild(style);
   }
@@ -827,7 +827,7 @@
     // rows with estimated heights but translated them with measured heights;
     // long commentary rows eventually pushed every rendered row off-screen.
     const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
-    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, programmaticUntil = 0, destroyed = false;
+    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, pointerScrolling = false, programmaticUntil = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
     // it means "head visible, list not scrolled at all". Every place that
@@ -946,20 +946,40 @@
       programmaticUntil = 0;
       clearTimeout(scrollIdleTimer);
     };
+    const beginPointerScroll = event => {
+      if (event?.isPrimary === false || event?.pointerType === 'mouse') return;
+      if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
+      pointerScrolling = true;
+      beginUserScroll(event);
+    };
+    const settleUserScroll = () => {
+      clearTimeout(scrollIdleTimer);
+      // Mobile momentum can continue after touchend.  Only yield scrollTop
+      // back to layout work after a quiet period, or an explicit scrollend.
+      scrollIdleTimer = setTimeout(() => {
+        if (!pointerScrolling) { userScrolling = false; schedule(true); }
+      }, 260);
+    };
+    const endPointerScroll = event => {
+      if (event?.isPrimary === false || event?.pointerType === 'mouse') return;
+      pointerScrolling = false;
+      settleUserScroll();
+    };
     const onScroll = () => {
       if (Date.now() >= programmaticUntil) {
         userScrolling = true;
-        clearTimeout(scrollIdleTimer);
-        scrollIdleTimer = setTimeout(() => {
-          userScrolling = false;
-          schedule(true);
-        }, 110);
+        settleUserScroll();
       }
       schedule();
     };
+    const onScrollEnd = () => { if (!pointerScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     pane.addEventListener('wheel', beginUserScroll, { passive: true });
+    pane.addEventListener('pointerdown', beginPointerScroll, { passive: true });
+    pane.addEventListener('pointerup', endPointerScroll, { passive: true });
+    pane.addEventListener('pointercancel', endPointerScroll, { passive: true });
+    pane.addEventListener('scrollend', onScrollEnd, { passive: true });
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
     const nearestRootRowId = index => {
@@ -1050,7 +1070,7 @@
         const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
-      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('touchstart', beginUserScroll); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('pointerdown', beginPointerScroll); pane.removeEventListener('pointerup', endPointerScroll); pane.removeEventListener('pointercancel', endPointerScroll); pane.removeEventListener('scrollend', onScrollEnd); resize?.disconnect(); },
     };
   }
 
@@ -1137,7 +1157,11 @@
         return;
       }
       reader.virtual.restoreAnchor(anchor);
-      if (attempts++ < 6) setTimeout(apply, 90);
+      // One post-layout confirmation is enough for an explicit reader action.
+      // Continuing to chase a moving measurement after this point is what made
+      // a mobile reader drift while its inertial scroll was still settling.
+      if (attempts++ < 1) setTimeout(apply, 90);
+      else reader.suppressMeasureCompensation = false;
     };
     setTimeout(apply, 0);
   }
@@ -1162,7 +1186,8 @@
         const delta = element.getBoundingClientRect().top - desired;
         if (Math.abs(delta) > 1) reader.virtual.pane.scrollTop += delta;
       }
-      if (attempts++ < 10) setTimeout(apply, 80);
+      if (attempts++ < 2) setTimeout(apply, 80);
+      else reader.suppressMeasureCompensation = false;
     };
     requestAnimationFrame(apply);
   }
@@ -1410,7 +1435,7 @@
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
       if (action === 'hit-clear') { clearReaderHit(); return; }
-      if (action === 'bookmark') { await saveBookmark(reader.meta, reader.work.rows[reader.currentIndex]); return; }
+      if (action === 'bookmark') { await saveBookmark(reader); return; }
       if (action === 'search-jump') {
         const input = app.querySelector('[data-t-search-input]'), langEl = app.querySelector('[data-t-search-lang]');
         await submitReaderSearch(input?.value, langEl?.value || 'zh');
@@ -1552,7 +1577,50 @@
     };
   }
   function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => pane.scrollTop += settings().speed / 10, 50); }
-  async function saveBookmark(meta, row) { try { const result = await fetch(`${API}/bookmarks`, { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ work_id: meta.id, row_id: row.id, label: `${meta.title} · ${row.paranum || row.id}` }) }); if (!result.ok) throw new Error('请先登录后收藏'); alert('已收藏'); } catch (e) { alert(e.message); } }
+  function workMeta(workId) { return (state.works || []).find(item => item.id === workId) || null; }
+  function bookmarkTarget(reader) {
+    const anchor = reader?.virtual?.getAnchor?.();
+    const key = String(anchor?.itemKey || '');
+    const sourceRow = key.match(/^annotation:([^:]+):row:(\d+)$/);
+    if (sourceRow && reader.annotation?.data?.source_work_id) {
+      const row = (reader.annotation.data.rows || []).find(item => Number(item.id) === Number(sourceRow[2]));
+      return { workId: reader.annotation.data.source_work_id, row, kind: reader.annotation.kind === 'tik' ? '复注' : '义注' };
+    }
+    const rootRow = key.match(/^roottext:([^:]+):row:(\d+)$/);
+    if (rootRow && reader.rootText?.data?.root_work_id) {
+      const row = (reader.rootText.data.rows || []).find(item => Number(item.id) === Number(rootRow[2]));
+      return { workId: reader.rootText.data.root_work_id, row, kind: '根本文本' };
+    }
+    if (/^annotation:/.test(key) && reader.annotation?.data?.source_work_id) {
+      const row = (reader.annotation.data.rows || [])[0] || { id: reader.annotation.data.start_row, paranum: reader.annotation.data.start_row };
+      return { workId: reader.annotation.data.source_work_id, row, kind: reader.annotation.kind === 'tik' ? '复注' : '义注' };
+    }
+    if (/^(roottext:|source:)/.test(key) && reader.rootText?.data?.root_work_id) {
+      const row = (reader.rootText.data.rows || [])[0] || { id: reader.rootText.data.root_start_row, paranum: reader.rootText.data.root_start_row };
+      return { workId: reader.rootText.data.root_work_id, row, kind: '根本文本' };
+    }
+    const rowId = Number(key.match(/^root:(\d+)$/)?.[1] || anchor?.rowId || reader.work.rows[reader.currentIndex]?.id);
+    return { workId: reader.meta.id, row: reader.work.rows.find(item => Number(item.id) === rowId) || reader.work.rows[reader.currentIndex], kind: '正文' };
+  }
+  async function saveBookmark(reader) {
+    const target = bookmarkTarget(reader), row = target?.row;
+    if (!target?.workId || !row?.id) { alert('当前没有可收藏的段落'); return; }
+    const meta = workMeta(target.workId);
+    const label = `${target.kind} · ${meta?.title || target.workId} · ${row.paranum || row.id}`;
+    try {
+      const result = await fetch(`${API}/bookmarks`, { method: 'POST', headers: jsonHeaders(), body: JSON.stringify({ work_id: target.workId, row_id: row.id, label }) });
+      if (result.status === 409) { alert('该位置已收藏'); return; }
+      if (!result.ok) throw new Error('请先登录后收藏');
+      alert('已收藏');
+    } catch (e) { alert(e.message); }
+  }
+  async function listBookmarks() {
+    const response = await fetch(`${API}/bookmarks`, { headers: typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {} });
+    if (response.status === 401 || response.status === 403) return { authenticated: false, items: [] };
+    if (!response.ok) throw new Error('收藏暂时无法读取');
+    return { authenticated: true, items: await response.json() };
+  }
+  function bookmarkHref(item) { return `#/tipitaka/read/${encodeURIComponent(item.work_id)}?row=${encodeURIComponent(item.row_id)}`; }
   async function syncProgress(workId, rowId) { try { await fetch(`${API}/progress`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ work_id: workId, row_id: rowId }) }); } catch {} }
   async function editTranslation(meta, row, language) { const anchor = state.reader?.virtual?.getAnchor?.(); const base = defaultText(row, language); const text = prompt(`编辑${language === 'zh' ? '中文' : '英文'}译文`, base); if (text === null) return; const reason = prompt('修改理由（将记入公开历史）', '') ?? ''; const response = await fetch(`${API}/works/${encodeURIComponent(meta.id)}/rows/${row.id}/${language}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text, default_text: base, reason, source: 'human' }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } state.overrides.delete(meta.id); renderReader(meta.id, anchor); }
   async function draftTranslation(meta, row) { const anchor = state.reader?.virtual?.getAnchor?.(); if (!row.pali_text || typeof mitraTranslate !== 'function') { alert('该行没有巴利原文，或翻译服务尚不可用。'); return; } try { const draft = await mitraTranslate(strip(row.pali_text), `Tipiṭaka Reader V4 · ${meta.title}`); if (!confirm(`Dharmamitra 草稿：\n\n${draft}\n\n确认写入公开修订历史？`)) return; const base = defaultText(row, 'zh'); const response = await fetch(`${API}/works/${encodeURIComponent(meta.id)}/rows/${row.id}/zh`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ text: draft, default_text: base, reason: 'Dharmamitra 草稿经人工确认', source: 'dharmamitra' }) }); if (!response.ok) throw new Error((await response.json().catch(() => ({}))).detail || '保存失败'); state.overrides.delete(meta.id); renderReader(meta.id, anchor); } catch (error) { alert(error.message); } }
@@ -1810,7 +1878,7 @@
   async function editTerm(item) { const translation = prompt(`编辑 ${item.pali} 的共享术语译法`, item.preferred_chinese || ''); if (translation === null) return; const reason = prompt('修改理由（公开可见）', '') ?? ''; const response = await fetch(`${API}/terms/${encodeURIComponent(item.pali)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ translation, default_translation: item.preferred_chinese || translation, usage_note: item.chinese_comment || '', reason }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } alert('术语已保存。'); }
   async function renderHome() {
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button></div><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button><button data-t-home="bookmarks">我的收藏</button></div><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-bookmarks" id="tipitaka-bookmarks" hidden aria-live="polite"></section><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
     const filter = document.getElementById('tipitaka-catalog-filter');
     const clearFilter = document.getElementById('tipitaka-catalog-filter-clear');
     filter.oninput = event => { const needle = event.target.value.trim().toLowerCase(); const catalog = app.querySelector('.tipitaka-catalog'); clearFilter.hidden = !needle; catalog.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); catalog.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const hasVisible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matchesPath = node.dataset.catalogPath.toLowerCase().includes(needle); node.hidden = !!needle && !hasVisible && !matchesPath; node.open = !!needle && (hasVisible || matchesPath); }); };
@@ -1818,6 +1886,22 @@
     app.querySelector('[data-t-home="search"]').onclick = () => location.hash = '#/tipitaka/search';
     app.querySelector('[data-t-home="dict"]').onclick = () => location.hash = '#/tipitaka/dictionaries';
     app.querySelector('[data-t-home="continue"]').onclick = () => { try { const history = JSON.parse(localStorage.getItem('tipitaka-reader-history') || 'null'); location.hash = history ? `#/tipitaka/read/${encodeURIComponent(history.workId)}?row=${history.rowId}` : '#/tipitaka'; } catch { location.hash = '#/tipitaka'; } };
+    const bookmarkPanel = app.querySelector('#tipitaka-bookmarks');
+    const drawBookmarks = async () => {
+      bookmarkPanel.hidden = false;
+      bookmarkPanel.innerHTML = '<p class="tipitaka-note">正在读取收藏…</p>';
+      try {
+        const result = await listBookmarks();
+        if (!result.authenticated) { bookmarkPanel.innerHTML = '<h3>我的收藏</h3><p class="tipitaka-note">登录后可查看并同步收藏的经文、义注、复注与根本文本片段。</p>'; return; }
+        bookmarkPanel.innerHTML = `<h3>我的收藏</h3>${result.items.length ? `<div class="tipitaka-bookmark-list">${result.items.map(item => `<article><a href="${esc(bookmarkHref(item))}"><strong>${esc(item.label || `${workMeta(item.work_id)?.title || item.work_id} · ${item.row_id}`)}</strong><span>打开对应阅读位置 →</span></a><button type="button" data-t-bookmark-remove="${esc(item.work_id)}" data-t-bookmark-row="${esc(item.row_id)}" aria-label="移除此收藏">移除</button></article>`).join('')}</div>` : '<p class="tipitaka-note">尚未收藏任何片段。</p>'}`;
+        bookmarkPanel.querySelectorAll('[data-t-bookmark-remove]').forEach(button => button.onclick = async () => {
+          const response = await fetch(`${API}/bookmarks/${encodeURIComponent(button.dataset.tBookmarkRemove)}/${encodeURIComponent(button.dataset.tBookmarkRow)}`, { method: 'DELETE', headers: typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {} });
+          if (!response.ok) { alert('移除收藏失败，请重试'); return; }
+          await drawBookmarks();
+        });
+      } catch (error) { bookmarkPanel.innerHTML = `<h3>我的收藏</h3><p class="tipitaka-note">${esc(error.message)}</p>`; }
+    };
+    app.querySelector('[data-t-home="bookmarks"]').onclick = drawBookmarks;
   }
   window.renderTipitakaRoute = () => { const path = routePath(); if (path === '#/tipitaka') return renderHome(); if (path === '#/tipitaka/search') return renderSearch(); if (path === '#/tipitaka/dictionaries') return renderDictionaries(); if (path.startsWith('#/tipitaka/read/')) return renderReader(decodeURIComponent(path.slice('#/tipitaka/read/'.length))); renderHome(); };
   if (location.hash.startsWith('#/tipitaka') && typeof route === 'function') route();
