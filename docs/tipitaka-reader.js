@@ -1651,7 +1651,14 @@
   window.TipitakaV4.resultHref = (item, language, term) => searchResultHref(item, language, term);
 
   function v4SuttaVinayaWorkIds() {
-    return (state.works || []).map(work => String(work.id || '')).filter(id => id.startsWith('s') || id.startsWith('vin'));
+    // Evidence in the graph must come from the formal V4 root layer only.
+    // Prefixes alone also match commentaries and subcommentaries (for example
+    // s0303a_att and s0303t_tik), which are useful in the reader but are not
+    // eligible as first-class "original Buddhist" evidence here.
+    return (state.works || [])
+      .filter(work => work?.level === 'mula' && work?.path?.[0] === '三藏经文 Tipiṭaka Mūla')
+      .map(work => String(work.id || ''))
+      .filter(id => id.startsWith('s') || id.startsWith('vin'));
   }
 
   function injectEvidencePickerCss() {
