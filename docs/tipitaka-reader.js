@@ -958,19 +958,38 @@
       }
       return null;
     };
-    const getAnchor = () => {
-      const index = indexAt(toList(pane.scrollTop) + 1), item = items[index];
-      if (!item) return null;
-      const element = targetForKey(item.key), paneRect = pane.getBoundingClientRect();
+    const visibleItemAnchor = () => {
+      const visibleTop = pane.getBoundingClientRect().top + stickyOffset();
+      const elements = [...windowEl.querySelectorAll('[data-t-item-key]')];
+      const element = elements.find(candidate => candidate.getBoundingClientRect().bottom > visibleTop + 1);
+      if (!element) return null;
+      const itemKey = element.dataset.tItemKey, index = indexByKey.get(itemKey);
+      if (index === undefined) return null;
       return {
-        itemKey: item.key,
-        // During a language toggle or font change, expanded annotation/root
-        // rows are briefly absent while their static fragment is reloaded.
-        // Keep the nearest root row as a temporary fallback so the rebuild
-        // starts near the old viewport instead of defaulting to row zero.
-        rowId: item.kind === 'root' ? Number(item.row.id) : nearestRootRowId(index),
-        offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
+        itemKey,
+        rowId: items[index]?.kind === 'root' ? Number(items[index].row.id) : nearestRootRowId(index),
+        offset: element.getBoundingClientRect().top - visibleTop,
       };
+    };
+    const getAnchor = () => {
+      // Prefer the actual first item crossing the viewport, especially when
+      // the viewport is inside an expanded annotation/root-text fragment.
+      // The Fenwick estimate can still point at the preceding root row while
+      // a long measured fragment is being rebuilt.
+      return visibleItemAnchor() || (() => {
+        const index = indexAt(toList(pane.scrollTop) + 1), item = items[index];
+        if (!item) return null;
+        const element = targetForKey(item.key), paneRect = pane.getBoundingClientRect();
+        return {
+          itemKey: item.key,
+          // During a language toggle or font change, expanded annotation/root
+          // rows are briefly absent while their static fragment is reloaded.
+          // Keep the nearest root row as a temporary fallback so the rebuild
+          // starts near the old viewport instead of defaulting to row zero.
+          rowId: item.kind === 'root' ? Number(item.row.id) : nearestRootRowId(index),
+          offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
+        };
+      })();
     };
     const getAnchorForKey = (itemKey, fallback = null) => {
       const element = targetForKey(itemKey);
