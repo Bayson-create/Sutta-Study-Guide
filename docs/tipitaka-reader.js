@@ -1137,6 +1137,31 @@
     setTimeout(apply, 0);
   }
 
+  function scheduleMeasuredLanguageAnchor(reader, anchor) {
+    if (!reader?.virtual?.pane || !anchor) return;
+    const token = (reader.anchorRestoreToken || 0) + 1;
+    reader.anchorRestoreToken = token;
+    reader.anchorRestoreCancelled = false;
+    reader.suppressMeasureCompensation = true;
+    let attempts = 0;
+    const apply = () => {
+      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled) {
+        if (state.reader === reader) reader.suppressMeasureCompensation = false;
+        return;
+      }
+      const element = [...reader.virtual.pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor.itemKey);
+      if (element) {
+        const paneRect = reader.virtual.pane.getBoundingClientRect();
+        const toolbar = reader.virtual.pane.querySelector('#tipitaka-toolbar');
+        const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
+        const delta = element.getBoundingClientRect().top - desired;
+        if (Math.abs(delta) > 1) reader.virtual.pane.scrollTop += delta;
+      }
+      if (attempts++ < 10) setTimeout(apply, 80);
+    };
+    requestAnimationFrame(apply);
+  }
+
   function updateAnnotationUrl(reader, unit = null, kind = null, fragment = null) {
     const params = query();
     for (const key of ['hl', 'hl_lang', 'hl_pos', 'hl_terms', 'hl_anchor', 'semantic']) params.delete(key);
@@ -1481,7 +1506,7 @@
         if (toggle === 'pali' || toggle === 'zh' || toggle === 'en') {
           const attr = `tShow${toggle[0].toUpperCase()}${toggle.slice(1)}`;
           reader.virtual?.pane?.dataset && (reader.virtual.pane.dataset[attr] = event.target.checked ? '1' : '0');
-          scheduleReaderAnchorRestore(reader, anchor);
+          scheduleMeasuredLanguageAnchor(reader, anchor);
           return;
         }
         // Language visibility only changes row markup.  Rebuilding the whole
