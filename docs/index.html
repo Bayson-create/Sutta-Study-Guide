@@ -257,6 +257,97 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 .like-btn.liked { border-color: #e0455a; color: #e0455a; background: #fdeef0; }
 .like-btn:disabled { opacity: 0.6; cursor: default; }
 
+/* 善友圈 (Moments-style feed, nested under Blog) */
+.moments-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+.moments-friends-btn { position: relative; background: var(--card-bg); color: var(--text); border: 1px solid var(--border); border-radius: 999px; padding: 8px 16px; font-size: 0.88em; cursor: pointer; font-family: inherit; }
+.moments-friends-btn:hover { border-color: var(--accent-light); }
+.moments-badge { position: absolute; top: -6px; right: -6px; background: #e0455a; color: #fff; font-size: 0.68em; line-height: 1; padding: 3px 5px; border-radius: 999px; min-width: 16px; text-align: center; }
+.moments-panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px 18px; margin-bottom: 18px; }
+.moments-panel h4 { font-size: 0.92em; color: var(--text-light); margin: 14px 0 8px; }
+.moments-panel h4:first-child { margin-top: 0; }
+.moments-friend-row, .moments-request-row, .moments-search-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border);
+}
+.moments-friend-row:last-child, .moments-request-row:last-child, .moments-search-row:last-child { border-bottom: none; }
+.moments-friend-row .name, .moments-request-row .name, .moments-search-row .name { font-weight: 600; color: var(--text); }
+.moments-panel-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.moments-panel-actions button {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--text); border-radius: 999px;
+  padding: 5px 12px; font-size: 0.82em; cursor: pointer; font-family: inherit;
+}
+.moments-panel-actions button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.moments-panel-actions button.danger { color: #b8534a; border-color: #e6bcb4; }
+.moments-panel-actions button:disabled { opacity: 0.6; cursor: default; }
+
+.moments-composer { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px 18px; margin-bottom: 22px; }
+.moments-composer textarea {
+  width: 100%; box-sizing: border-box; border: none; resize: vertical; min-height: 64px;
+  font-family: inherit; font-size: 0.98em; color: var(--text); background: transparent;
+}
+.moments-composer textarea:focus { outline: none; }
+.moments-image-previews { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.moments-image-preview { position: relative; width: 84px; height: 84px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.moments-image-preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.moments-image-preview button {
+  position: absolute; top: 2px; right: 2px; width: 18px; height: 18px; line-height: 18px; text-align: center;
+  border-radius: 50%; border: none; background: rgba(0,0,0,0.55); color: #fff; font-size: 0.7em; cursor: pointer; padding: 0;
+}
+.moments-composer-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.moments-composer-tools { display: flex; align-items: center; gap: 10px; }
+.moments-image-pick-btn { background: none; border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; font-size: 0.85em; color: var(--text-light); cursor: pointer; font-family: inherit; }
+.moments-image-pick-btn:hover { color: var(--text); border-color: var(--accent-light); }
+.moments-visibility-select {
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; font-size: 0.85em;
+  font-family: inherit; background: var(--card-bg); color: var(--text-light);
+}
+
+.moment-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px 18px; margin-bottom: 14px; }
+.moment-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.moment-head .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.05em; font-weight: 700; flex-shrink: 0; }
+.moment-head .who { min-width: 0; flex: 1; }
+.moment-head .name { font-weight: 700; color: var(--text); font-size: 0.95em; }
+.moment-head .meta { font-size: 0.78em; color: var(--text-light); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.moment-visibility { color: var(--text-light); }
+.moment-text { font-size: 0.96em; line-height: 1.6; white-space: pre-wrap; margin-bottom: 10px; }
+.moment-images { display: grid; gap: 4px; margin-bottom: 10px; }
+.moment-images.n-1 { grid-template-columns: 1fr; max-width: 320px; }
+.moment-images.n-1 img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; display: block; }
+.moment-images:not(.n-1) img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.moment-images.n-2, .moment-images.n-3 { max-width: 340px; }
+.moment-images.n-2 { grid-template-columns: repeat(2, 1fr); }
+.moment-images.n-3 { grid-template-columns: repeat(3, 1fr); }
+.moment-images.n-4 { grid-template-columns: repeat(2, 1fr); max-width: 230px; }
+.moment-images.n-more { grid-template-columns: repeat(3, 1fr); max-width: 340px; }
+.moment-images .thumb { aspect-ratio: 1; border-radius: 6px; overflow: hidden; cursor: pointer; background: var(--hover-bg); }
+.moment-actions { display: flex; gap: 14px; margin-bottom: 4px; }
+.moment-action-btn { background: none; border: none; color: var(--text-light); font-size: 0.85em; cursor: pointer; padding: 4px 0; font-family: inherit; }
+.moment-action-btn:hover { color: var(--accent); }
+.moment-action-btn.liked { color: #e0455a; }
+.moment-likes { background: var(--accent-bg); border-radius: 8px; padding: 8px 10px; font-size: 0.85em; color: var(--accent); margin-top: 8px; }
+.moment-comments { margin-top: 8px; }
+.moment-comment-row { font-size: 0.88em; line-height: 1.6; padding: 4px 0; display: flex; justify-content: space-between; gap: 8px; }
+.moment-comment-row .name { font-weight: 700; color: var(--accent); }
+.moment-comment-row button { background: none; border: none; color: var(--text-light); font-size: 0.9em; cursor: pointer; flex-shrink: 0; }
+.moment-comment-form { display: flex; gap: 8px; margin-top: 8px; }
+.moment-comment-form input {
+  flex: 1; padding: 7px 12px; border: 1px solid var(--border); border-radius: 999px; font-family: inherit; font-size: 0.85em;
+}
+.moment-comment-form button { background: var(--accent); color: #fff; border: none; border-radius: 999px; padding: 7px 16px; font-size: 0.85em; cursor: pointer; }
+.moments-lightbox-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.82); z-index: 500; display: flex; align-items: center; justify-content: center; cursor: zoom-out;
+}
+.moments-lightbox-overlay img { max-width: 92vw; max-height: 92vh; object-fit: contain; border-radius: 6px; }
+
+@media (max-width: 760px) {
+  .moments-composer { padding: 12px 14px; }
+  .moments-image-preview { width: 68px; height: 68px; }
+  .moment-card { padding: 12px 14px; }
+  .moment-images.n-1 { max-width: 100%; }
+  .moment-images.n-2, .moment-images.n-3, .moment-images.n-4, .moment-images.n-more { max-width: 100%; }
+  .moments-panel { padding: 12px 14px; }
+  .moments-friend-row, .moments-request-row, .moments-search-row { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
 /* === 问问乔达摩先生 === */
 .gotama-shell { display: flex; gap: 0; height: calc(100vh - 160px); min-height: 480px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card-bg); }
 .gotama-sidebar { width: 260px; flex-shrink: 0; border-right: 1px solid var(--border); display: flex; flex-direction: column; background: var(--hover-bg); }
@@ -1841,6 +1932,8 @@ function route() {
     renderForumDetail(hash.slice('#/forum/'.length));
   } else if (hash === '#/blog') {
     renderBlogHome(routeParams.get('q') || '', routeParams.getAll('tag'));
+  } else if (hash === '#/blog/moments') {
+    renderMomentsFeed();
   } else if (hash === '#/blog/new') {
     renderBlogEditor(null);
   } else if (hash.startsWith('#/blog/edit/')) {
@@ -9603,6 +9696,7 @@ async function renderBlogHome(searchQuery, activeTags) {
   const canWrite = user && (user.role === 'editor' || user.role === 'admin');
   let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
   html += `<div class="cat-header"><h2>📝 博客</h2><div class="cat-en">Blog</div></div>`;
+  html += blogSectionTabsHtml('posts');
   html += `<div class="community-toolbar">
     <input class="community-search" id="blog-search" placeholder="搜索文章或标签…" value="${communityEscape(searchQuery || '')}" onkeydown="if(event.key==='Enter') communityBlogSearch()">
     <button class="community-primary-btn" onclick="communityBlogSearch()">🔍 搜索</button>
@@ -9807,6 +9901,438 @@ async function communityDeleteBlogPost(slug) {
   }
 }
 
+function blogSectionTabsHtml(active) {
+  return `<div class="profile-tabs">
+    <button class="${active === 'posts' ? 'active' : ''}" onclick="location.hash='#/blog'">文章</button>
+    <button class="${active === 'moments' ? 'active' : ''}" onclick="location.hash='#/blog/moments'">善友圈</button>
+  </div>`;
+}
+
+// --- 善友圈 (Moments) ---------------------------------------------------
+// A WeChat-Moments-style feed nested under Blog: short posts with optional
+// photos, per-post visibility (public/friends/only_me), likes and a flat
+// comment list. Reuses the same auth/fetch/escape helpers as the rest of
+// the community features rather than inventing a parallel set.
+
+let momentsComposerImages = []; // [{file, previewUrl}], cleared after a successful publish
+let momentsFriendsPanelOpen = false;
+
+function momentsAvatarInitial(name) {
+  return communityEscape((name || '?').trim().charAt(0).toUpperCase());
+}
+
+function momentsVisibilityLabel(v) {
+  return { public: '🌐 公开', friends: '👥 仅好友', only_me: '🔒 仅自己' }[v] || v;
+}
+
+async function renderMomentsFeed() {
+  const user = await communityFetchCurrentUser();
+  let html = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button>`;
+  html += `<div class="cat-header"><h2>🌿 善友圈</h2><div class="cat-en">Moments</div></div>`;
+  html += blogSectionTabsHtml('moments');
+
+  if (!user) {
+    html += `<div class="community-empty">请先登录查看善友圈动态<br><br><button class="community-primary-btn" onclick="momentsLoginThenReload()">登录 / 注册</button></div>`;
+    app.innerHTML = html;
+    return;
+  }
+
+  html += `<div class="moments-toolbar">
+    <div></div>
+    <button class="moments-friends-btn" id="moments-friends-btn" onclick="momentsToggleFriendsPanel()">🧑‍🤝‍🧑 好友<span id="moments-req-badge"></span></button>
+  </div>`;
+  html += `<div id="moments-friends-panel"></div>`;
+  html += momentsComposerHtml();
+  html += `<div id="moments-list" class="loading">加载中…</div>`;
+  app.innerHTML = html;
+
+  momentsRefreshRequestBadge();
+  momentsLoadFeed();
+}
+
+async function momentsLoginThenReload() {
+  if (await communityRequireLogin()) renderMomentsFeed();
+}
+
+async function momentsLoadFeed() {
+  const slowHint = communityShowSlowHint('moments-list');
+  try {
+    const res = await communityFetchWithTimeout(`${API_BASE}/api/moments/feed?limit=30`, { headers: communityAuthHeaders() });
+    clearTimeout(slowHint);
+    if (!res.ok) throw new Error('接口暂不可用');
+    const data = await res.json();
+    const list = document.getElementById('moments-list');
+    if (!list) return; // navigated away while loading
+    if (!data.items.length) {
+      list.outerHTML = `<div class="community-empty">暂无动态，分享第一条善友圈动态吧</div>`;
+      return;
+    }
+    list.outerHTML = `<div id="moments-list">${data.items.map(momentCardHtml).join('')}</div>`;
+  } catch (e) {
+    clearTimeout(slowHint);
+    const list = document.getElementById('moments-list');
+    if (list) list.outerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
+  }
+}
+
+function momentImagesHtml(post) {
+  const images = post.images || [];
+  const n = images.length;
+  if (!n) return '';
+  const cls = n === 1 ? 'n-1' : n === 2 ? 'n-2' : n === 3 ? 'n-3' : n === 4 ? 'n-4' : 'n-more';
+  return `<div class="moment-images ${cls}">${images.map((img, i) => `
+    <div class="thumb" onclick="momentsOpenLightbox('${post.id}', ${i})"><img src="${img.url}" alt="" loading="lazy"></div>
+  `).join('')}</div>`;
+}
+
+function momentCardHtml(post) {
+  const canDelete = communityIsOwner(post.author.id);
+  const likeNames = (post.liked_by || []).map(u => communityEscape(u.display_name));
+  return `<div class="moment-card" id="moment-${post.id}" data-images='${communityEscape(JSON.stringify((post.images || []).map(i => i.url)))}'>
+    <div class="moment-head">
+      <div class="avatar">${momentsAvatarInitial(post.author.display_name)}</div>
+      <div class="who">
+        <div class="name">${communityEscape(post.author.display_name)}</div>
+        <div class="meta"><span>${communityFormatDate(post.created_at)}</span><span class="moment-visibility">· ${momentsVisibilityLabel(post.visibility)}</span></div>
+      </div>
+      ${canDelete ? `<button class="moment-action-btn" onclick="momentsDeletePost('${post.id}')">🗑</button>` : ''}
+    </div>
+    ${post.text_content ? `<div class="moment-text">${communityEscape(post.text_content)}</div>` : ''}
+    ${momentImagesHtml(post)}
+    <div class="moment-actions">
+      <button class="moment-action-btn ${post.liked_by_me ? 'liked' : ''}" onclick="momentsToggleLike('${post.id}', this)">${post.liked_by_me ? '❤' : '🤍'} 点赞 (${post.like_count})</button>
+      <button class="moment-action-btn" onclick="momentsFocusComment('${post.id}')">💬 评论 (${post.comments.length})</button>
+    </div>
+    ${likeNames.length ? `<div class="moment-likes">❤ ${likeNames.join('、')}</div>` : ''}
+    ${post.comments.length ? `<div class="moment-comments">${post.comments.map(c => momentCommentRowHtml(post.id, c)).join('')}</div>` : ''}
+    <div class="moment-comment-form">
+      <input id="moment-comment-input-${post.id}" placeholder="说点什么…" onkeydown="if(event.key==='Enter') momentsSubmitComment('${post.id}', this.nextElementSibling)">
+      <button onclick="momentsSubmitComment('${post.id}', this)">发送</button>
+    </div>
+  </div>`;
+}
+
+function momentCommentRowHtml(momentId, c) {
+  const canDelete = communityIsOwner(c.author.id);
+  return `<div class="moment-comment-row">
+    <div><span class="name">${communityEscape(c.author.display_name)}</span>：${communityEscape(c.body)}</div>
+    ${canDelete ? `<button onclick="momentsDeleteComment('${c.id}', '${momentId}')">🗑</button>` : ''}
+  </div>`;
+}
+
+function momentsFocusComment(momentId) {
+  const input = document.getElementById(`moment-comment-input-${momentId}`);
+  if (input) input.focus();
+}
+
+function momentsOpenLightbox(momentId, index) {
+  const card = document.getElementById(`moment-${momentId}`);
+  if (!card) return;
+  const urls = JSON.parse(card.dataset.images || '[]');
+  if (!urls[index]) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'moments-lightbox-overlay';
+  overlay.innerHTML = `<img src="${urls[index]}" alt="">`;
+  overlay.onclick = () => overlay.remove();
+  document.body.appendChild(overlay);
+}
+
+let momentsLikeInFlight = false;
+async function momentsToggleLike(momentId, btnEl) {
+  if (!(await communityRequireLogin())) return;
+  if (momentsLikeInFlight) return;
+  momentsLikeInFlight = true;
+  const wasLiked = btnEl.classList.contains('liked');
+  btnEl.disabled = true;
+  try {
+    const res = await fetch(`${API_BASE}/api/moments/${momentId}/like`, {
+      method: wasLiked ? 'DELETE' : 'POST',
+      headers: communityAuthHeaders(),
+    });
+    if (!res.ok) throw new Error('操作失败');
+    const post = await res.json();
+    const card = document.getElementById(`moment-${momentId}`);
+    if (card) card.outerHTML = momentCardHtml(post);
+  } catch (e) {
+    alert('点赞失败：' + e.message);
+  } finally {
+    momentsLikeInFlight = false;
+  }
+}
+
+async function momentsSubmitComment(momentId, btnEl) {
+  const input = document.getElementById(`moment-comment-input-${momentId}`);
+  const body = input.value.trim();
+  if (!body) return;
+  if (!(await communityRequireLogin())) return;
+  try {
+    await communityRunSubmit(btnEl, '…', async (onRetry) => {
+      const res = await communityWriteFetch(`${API_BASE}/api/moments/${momentId}/comments`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ body }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '发送失败');
+    });
+    input.value = '';
+    const detail = await (await fetch(`${API_BASE}/api/moments/${momentId}`, { headers: communityAuthHeaders() })).json();
+    const card = document.getElementById(`moment-${momentId}`);
+    if (card) card.outerHTML = momentCardHtml(detail);
+  } catch (e) {
+    alert(communityWriteErrorMessage(e));
+  }
+}
+
+async function momentsDeleteComment(commentId, momentId) {
+  if (!confirm('删除这条评论吗？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/moments/comments/${commentId}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    const detail = await (await fetch(`${API_BASE}/api/moments/${momentId}`, { headers: communityAuthHeaders() })).json();
+    const card = document.getElementById(`moment-${momentId}`);
+    if (card) card.outerHTML = momentCardHtml(detail);
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function momentsDeletePost(momentId) {
+  if (!confirm('确定删除这条动态吗？此操作不可撤销。')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/moments/${momentId}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('删除失败');
+    const card = document.getElementById(`moment-${momentId}`);
+    if (card) card.remove();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+// --- Composer ---
+
+function momentsComposerHtml() {
+  return `<div class="moments-composer">
+    <textarea id="moments-composer-text" placeholder="分享此刻的所思所感…" oninput="momentsAutoGrow(this)"></textarea>
+    <div id="moments-composer-previews" class="moments-image-previews"></div>
+    <div class="moments-composer-foot">
+      <div class="moments-composer-tools">
+        <input type="file" id="moments-composer-file-input" accept="image/jpeg,image/png,image/webp" multiple style="display:none" onchange="momentsPickImages(this)">
+        <button class="moments-image-pick-btn" onclick="document.getElementById('moments-composer-file-input').click()">📷 加图片</button>
+        <select id="moments-composer-visibility" class="moments-visibility-select">
+          <option value="public">🌐 公开</option>
+          <option value="friends">👥 仅好友</option>
+          <option value="only_me">🔒 仅自己</option>
+        </select>
+      </div>
+      <button class="community-primary-btn" id="moments-publish-btn" onclick="momentsPublish(this)">发布</button>
+    </div>
+  </div>`;
+}
+
+function momentsAutoGrow(el) {
+  el.style.height = 'auto';
+  el.style.height = el.scrollHeight + 'px';
+}
+
+function momentsPickImages(input) {
+  const remaining = 9 - momentsComposerImages.length;
+  if (remaining <= 0) { alert('最多添加 9 张图片'); input.value = ''; return; }
+  const files = Array.from(input.files || []).slice(0, remaining);
+  for (const file of files) {
+    if (file.size > 5 * 1024 * 1024) { alert(`${file.name} 超过 5MB，已跳过`); continue; }
+    momentsComposerImages.push({ file, previewUrl: URL.createObjectURL(file) });
+  }
+  input.value = '';
+  momentsRenderPreviews();
+}
+
+function momentsRemoveImage(index) {
+  URL.revokeObjectURL(momentsComposerImages[index].previewUrl);
+  momentsComposerImages.splice(index, 1);
+  momentsRenderPreviews();
+}
+
+function momentsRenderPreviews() {
+  const el = document.getElementById('moments-composer-previews');
+  if (!el) return;
+  el.innerHTML = momentsComposerImages.map((img, i) => `
+    <div class="moments-image-preview"><img src="${img.previewUrl}" alt=""><button onclick="momentsRemoveImage(${i})">✕</button></div>
+  `).join('');
+}
+
+async function momentsPublish(btnEl) {
+  const textEl = document.getElementById('moments-composer-text');
+  const text_content = textEl.value.trim();
+  const visibility = document.getElementById('moments-composer-visibility').value;
+  if (!text_content && !momentsComposerImages.length) { alert('请输入文字或添加图片'); return; }
+  if (!(await communityRequireLogin())) return;
+  try {
+    await communityRunSubmit(btnEl, '发布中…', async (onRetry) => {
+      const image_keys = [];
+      for (const img of momentsComposerImages) {
+        const form = new FormData();
+        form.append('file', img.file);
+        const uploadRes = await communityWriteFetch(`${API_BASE}/api/moments/images`, {
+          method: 'POST', headers: communityAuthHeaders(), body: form,
+        }, { onRetry });
+        if (!uploadRes.ok) throw new Error((await uploadRes.json()).detail || '图片上传失败');
+        const { image_key } = await uploadRes.json();
+        image_keys.push(image_key);
+      }
+      const res = await communityWriteFetch(`${API_BASE}/api/moments`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+        body: JSON.stringify({ text_content: text_content || null, image_keys, visibility }),
+      }, { onRetry });
+      if (!res.ok) throw new Error((await res.json()).detail || '发布失败');
+    });
+    textEl.value = '';
+    momentsAutoGrow(textEl);
+    momentsComposerImages.forEach(img => URL.revokeObjectURL(img.previewUrl));
+    momentsComposerImages = [];
+    momentsRenderPreviews();
+    momentsLoadFeed();
+  } catch (e) {
+    alert(communityWriteErrorMessage(e));
+  }
+}
+
+// --- Friends panel ---
+
+async function momentsRefreshRequestBadge() {
+  const badge = document.getElementById('moments-req-badge');
+  if (!badge) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/friends/requests`, { headers: communityAuthHeaders() });
+    if (!res.ok) return;
+    const requests = await res.json();
+    badge.innerHTML = requests.length ? `<span class="moments-badge">${requests.length}</span>` : '';
+  } catch (e) { /* badge is a nice-to-have */ }
+}
+
+function momentsToggleFriendsPanel() {
+  momentsFriendsPanelOpen = !momentsFriendsPanelOpen;
+  const el = document.getElementById('moments-friends-panel');
+  if (!el) return;
+  if (!momentsFriendsPanelOpen) { el.innerHTML = ''; return; }
+  el.innerHTML = `<div class="moments-panel loading">加载中…</div>`;
+  momentsLoadFriendsPanel();
+}
+
+async function momentsLoadFriendsPanel() {
+  try {
+    const [requestsRes, friendsRes] = await Promise.all([
+      fetch(`${API_BASE}/api/friends/requests`, { headers: communityAuthHeaders() }),
+      fetch(`${API_BASE}/api/friends`, { headers: communityAuthHeaders() }),
+    ]);
+    const requests = requestsRes.ok ? await requestsRes.json() : [];
+    const friends = friendsRes.ok ? (await friendsRes.json()).items : [];
+    const el = document.getElementById('moments-friends-panel');
+    if (!el) return;
+    el.innerHTML = `<div class="moments-panel">
+      <h4>加好友</h4>
+      <div class="moments-search-row">
+        <input class="community-search" id="moments-user-search" placeholder="搜索用户名…" onkeydown="if(event.key==='Enter') momentsSearchUsers()" style="flex:1">
+        <div class="moments-panel-actions"><button onclick="momentsSearchUsers()">搜索</button></div>
+      </div>
+      <div id="moments-search-results"></div>
+      <h4>待处理请求${requests.length ? `（${requests.length}）` : ''}</h4>
+      ${requests.length ? requests.map(r => `
+        <div class="moments-request-row">
+          <span class="name">${communityEscape(r.requester.display_name)}</span>
+          <div class="moments-panel-actions">
+            <button class="primary" onclick="momentsAcceptRequest('${r.id}')">同意</button>
+            <button onclick="momentsDeclineRequest('${r.id}')">忽略</button>
+          </div>
+        </div>`).join('') : `<div class="community-empty" style="padding:12px 0">暂无待处理请求</div>`}
+      <h4>我的好友${friends.length ? `（${friends.length}）` : ''}</h4>
+      ${friends.length ? friends.map(f => `
+        <div class="moments-friend-row">
+          <span class="name">${communityEscape(f.user.display_name)}</span>
+          <div class="moments-panel-actions">
+            <button class="danger" onclick="momentsUnfriend('${f.user.id}')">解除好友</button>
+          </div>
+        </div>`).join('') : `<div class="community-empty" style="padding:12px 0">暂无好友</div>`}
+    </div>`;
+  } catch (e) {
+    const el = document.getElementById('moments-friends-panel');
+    if (el) el.innerHTML = `<div class="moments-panel error-msg">${communityTimeoutMessage(e)}</div>`;
+  }
+}
+
+async function momentsSearchUsers() {
+  const q = document.getElementById('moments-user-search').value.trim();
+  const results = document.getElementById('moments-search-results');
+  if (!q) { results.innerHTML = ''; return; }
+  results.innerHTML = '<div class="loading">搜索中…</div>';
+  try {
+    const res = await fetch(`${API_BASE}/api/users/search?q=${encodeURIComponent(q)}`, { headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('搜索失败');
+    const users = await res.json();
+    if (!users.length) { results.innerHTML = `<div class="community-empty" style="padding:12px 0">没有找到匹配的用户</div>`; return; }
+    results.innerHTML = users.map(u => `
+      <div class="moments-search-row">
+        <span class="name">${communityEscape(u.display_name)}</span>
+        <div class="moments-panel-actions">${momentsFriendActionHtml(u)}</div>
+      </div>`).join('');
+  } catch (e) {
+    results.innerHTML = `<div class="error-msg">${e.message}</div>`;
+  }
+}
+
+function momentsFriendActionHtml(u) {
+  if (u.friendship_status === 'accepted') return `<span style="color:var(--text-light);font-size:0.82em">已是好友</span>`;
+  if (u.friendship_status === 'pending') return `<span style="color:var(--text-light);font-size:0.82em">请求待处理</span>`;
+  return `<button class="primary" onclick="momentsSendFriendRequest('${u.id}', this)">加好友</button>`;
+}
+
+async function momentsSendFriendRequest(userId, btnEl) {
+  btnEl.disabled = true;
+  try {
+    const res = await fetch(`${API_BASE}/api/friends/requests`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ addressee_id: userId }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || '发送失败');
+    btnEl.outerHTML = `<span style="color:var(--text-light);font-size:0.82em">请求待处理</span>`;
+  } catch (e) {
+    alert(e.message);
+    btnEl.disabled = false;
+  }
+}
+
+async function momentsAcceptRequest(requestId) {
+  try {
+    const res = await fetch(`${API_BASE}/api/friends/requests/${requestId}/accept`, { method: 'POST', headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('操作失败');
+    momentsLoadFriendsPanel();
+    momentsRefreshRequestBadge();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function momentsDeclineRequest(requestId) {
+  try {
+    const res = await fetch(`${API_BASE}/api/friends/requests/${requestId}/decline`, { method: 'POST', headers: communityAuthHeaders() });
+    if (!res.ok) throw new Error('操作失败');
+    momentsLoadFriendsPanel();
+    momentsRefreshRequestBadge();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+async function momentsUnfriend(userId) {
+  if (!confirm('确定解除好友关系吗？')) return;
+  try {
+    const res = await fetch(`${API_BASE}/api/friends/${userId}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok && res.status !== 204) throw new Error('操作失败');
+    momentsLoadFriendsPanel();
+  } catch (e) {
+    alert(e.message);
+  }
+}
 
 // --- Profile ---
 let communityProfileTab = 'settings';
