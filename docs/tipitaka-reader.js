@@ -1133,7 +1133,6 @@
       }
       reader.virtual.restoreAnchor(anchor);
       if (attempts++ < 6) setTimeout(apply, 90);
-      else reader.suppressMeasureCompensation = false;
     };
     setTimeout(apply, 0);
   }
