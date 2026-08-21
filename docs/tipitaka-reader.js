@@ -953,8 +953,6 @@
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     pane.addEventListener('wheel', beginUserScroll, { passive: true });
-    pane.addEventListener('touchstart', beginUserScroll, { passive: true });
-    pane.addEventListener('pointerdown', beginUserScroll, { passive: true });
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
     const nearestRootRowId = index => {
@@ -1045,7 +1043,7 @@
         const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
-      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('touchstart', beginUserScroll); pane.removeEventListener('pointerdown', beginUserScroll); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('touchstart', beginUserScroll); resize?.disconnect(); },
     };
   }
 
