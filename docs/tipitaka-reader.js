@@ -872,7 +872,7 @@
         // Explicit reader actions (language changes, expand/collapse and deep
         // links) restore their semantic anchor separately and still use the
         // programmatic correction path below.
-        if (shift && !userScrolling) setProgrammaticScroll(pane.scrollTop + shift);
+        if (shift && !userScrolling && !reader.suppressMeasureCompensation) setProgrammaticScroll(pane.scrollTop + shift);
       }
     };
     const scheduleMeasure = () => { if (!measureRaf) measureRaf = requestAnimationFrame(measure); };
@@ -934,6 +934,7 @@
       // a language/font rebuild.
       if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
       reader.anchorRestoreCancelled = true;
+      reader.suppressMeasureCompensation = false;
       userScrolling = true;
       programmaticUntil = 0;
       clearTimeout(scrollIdleTimer);
@@ -1107,11 +1108,16 @@
     const token = (reader.anchorRestoreToken || 0) + 1;
     reader.anchorRestoreToken = token;
     reader.anchorRestoreCancelled = false;
+    reader.suppressMeasureCompensation = true;
     let attempts = 0;
     const apply = () => {
-      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled || !reader.virtual) return;
+      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled || !reader.virtual) {
+        if (state.reader === reader) reader.suppressMeasureCompensation = false;
+        return;
+      }
       reader.virtual.restoreAnchor(anchor);
       if (attempts++ < 6) setTimeout(apply, 90);
+      else reader.suppressMeasureCompensation = false;
     };
     setTimeout(apply, 0);
   }
