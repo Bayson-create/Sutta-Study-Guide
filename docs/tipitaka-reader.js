@@ -425,6 +425,7 @@
     // happened, so this is the true reader-immersive "fully open" size to
     // interpolate from.
     const header = document.querySelector('.site-header');
+    const footer = document.querySelector('.site-footer');
     const openHeaderHeight = header ? header.getBoundingClientRect().height : 0;
     const openHeaderPadTop = header ? parseFloat(getComputedStyle(header).paddingTop) || 0 : 0;
     const openHeaderPadBottom = header ? parseFloat(getComputedStyle(header).paddingBottom) || 0 : 0;
@@ -445,6 +446,11 @@
     const setChrome = opening => {
       document.body.classList.toggle('reader-chrome-open', opening);
       document.body.classList.toggle('reader-chrome-collapsed', !opening);
+      if (footer && opening) {
+        footer.style.transition = '';
+        footer.style.opacity = '';
+        footer.style.pointerEvents = '';
+      }
     };
     const check = () => {
       const next = pane.scrollTop >= sentinel.offsetTop;
@@ -460,6 +466,11 @@
         header.style.opacity = String(1 - progress);
         header.style.paddingTop = ((1 - progress) * openHeaderPadTop) + 'px';
         header.style.paddingBottom = ((1 - progress) * openHeaderPadBottom) + 'px';
+        if (footer) {
+          footer.style.transition = 'none';
+          footer.style.opacity = String(Math.max(0, 1 - progress));
+          footer.style.pointerEvents = progress > 0.98 ? 'none' : '';
+        }
       } else if (header && next && !pinned) {
         // Just crossed into pinned - hand back to the stylesheet-driven
         // discrete state (already sitting at fully collapsed from the last
@@ -470,6 +481,11 @@
         header.style.opacity = '';
         header.style.paddingTop = '';
         header.style.paddingBottom = '';
+        if (footer) {
+          footer.style.transition = '';
+          footer.style.opacity = '0';
+          footer.style.pointerEvents = 'none';
+        }
         if (everScrolled) setChrome(false);
       }
       pinned = next;
@@ -531,6 +547,15 @@
         toolbar.removeEventListener('touchstart', onTouchStart);
         toolbar.removeEventListener('touchmove', onTouchMove);
         toolbar.removeEventListener('touchend', onTouchEnd);
+        [header, footer].forEach(element => {
+          if (!element) return;
+          element.style.transition = '';
+          element.style.maxHeight = '';
+          element.style.opacity = '';
+          element.style.paddingTop = '';
+          element.style.paddingBottom = '';
+          element.style.pointerEvents = '';
+        });
       },
     };
   }

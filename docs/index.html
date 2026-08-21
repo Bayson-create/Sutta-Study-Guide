@@ -67,29 +67,21 @@ body.reader-immersive .site-header .subtitle { display: none; }
 body.reader-immersive .site-header .site-nav { margin-top: 6px; font-size: 0.82em; gap: 14px; }
 body.reader-immersive .container { padding: 12px 20px; }
 /* .site-footer sits below .container as a flex sibling (body is the classic
- * sticky-footer flex column at line ~38) and was never part of this budget -
- * shrinking the header still left the footer's own height (~108px) making
- * body taller than one viewport, so the page itself stayed scrollable even
- * though .tipitaka-pane's own internal scroll was already sized to fit. That
- * residual outer scroll is what let a wheel/trackpad gesture landing outside
- * the reading pane carry the whole pane - pinned toolbar included - off the
- * top of the screen. Hiding it here (nobody navigates to the footer mid-read)
- * plus the overflow:hidden below removes the outer scroll surface entirely. */
+ * sticky-footer flex column at line ~38). Keep its measured space in the
+ * immersive layout so the normal reading state has a real, visible page end;
+ * the reader pane budgets against it and owns the only scrolling surface. */
 /* max-height+opacity instead of display:none/block: display can't be
  * transitioned, so toggling it was an instant one-frame layout jump - .site-
  * header/.site-footer are flex siblings of .container in body's flex column,
  * so their box disappearing/reappearing shoved .container (and the reading
  * pane inside it) up or down in the same frame. The fixed max-height bound
- * only needs to clear each element's real rendered height (header ~70-90px,
- * footer ~108px in this compressed state) with room to spare - the browser
+ * only needs to clear the header's real rendered height (~70-90px) with room
+ * to spare - the browser
  * interpolates smoothly between 0 and that bound either way. */
-/* max-height:0 on a border-box element does not reliably clip its own
- * padding/border in every engine tested - the footer's 28px+28px padding and
- * 1px border rendered a ~57px tall box even with max-height:0 and
- * min-height:0 both computing to 0 (confirmed live: only zeroing padding and
- * border-top-width actually collapsed it to 0px). Padding/border need their
- * own explicit override here, restored below in .reader-chrome-open. */
-body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; min-height: 0; margin-top: 0; padding-top: 0; padding-bottom: 0; border-top-width: 0; transition: max-height .22s ease, opacity .18s ease, margin-top .22s ease, padding .22s ease, border-top-width .18s ease; }
+/* Keep the footer's height stable while its opacity is driven by reader
+ * scroll progress. Collapsing it during a gesture changes the pane height
+ * and causes reading-position drift, especially on mobile. */
+body.reader-immersive .site-footer { max-height: 160px; opacity: 1; overflow: hidden; min-height: 0; margin-top: 0; padding-top: 28px; padding-bottom: 28px; border-top-width: 1px; transition: opacity .16s linear; }
 /* .tipitaka-pane sizes itself against 100dvh (real visible viewport) when
  * supported, but body only ever had min-height:100vh (the large/address-bar-
  * hidden viewport on mobile Safari). When the two units diverge - address
@@ -105,12 +97,11 @@ body.reader-immersive { overflow: hidden; }
  * toolbar first reaches the top and pins, the header (still visible up to
  * that point) auto-collapses to reclaim its space. A wheel/touch gesture
  * that *starts* on the pinned toolbar itself flips back to reader-chrome-open,
- * which brings the header back and - unlike the plain reader-immersive
- * default above - also un-hides the footer, since this is a deliberate
- * "show me the frame again" action rather than the passive reading default. */
+ * which brings the header back and restores the footer, since this is a
+ * deliberate "show me the frame again" action rather than passive reading. */
 body.reader-immersive .site-header { overflow: hidden; min-height: 0; transition: max-height .22s ease, opacity .18s ease, padding .22s ease, border-bottom-width .18s ease; max-height: 160px; }
 body.reader-immersive.reader-chrome-collapsed .site-header { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; pointer-events: none; }
-body.reader-immersive.reader-chrome-open .site-footer { max-height: 160px; opacity: 1; padding-top: 28px; padding-bottom: 28px; border-top-width: 1px; }
+body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 @media (max-width: 760px) {
   body.reader-immersive .container { padding: 8px 10px; }
 }
@@ -13080,7 +13071,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260821.16"></script>
+<script src="tipitaka-reader.js?v=20260821.17"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
