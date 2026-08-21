@@ -929,6 +929,7 @@
     const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
     const beginUserScroll = () => {
       if (destroyed) return;
+      reader.anchorRestoreCancelled = true;
       userScrolling = true;
       programmaticUntil = 0;
       clearTimeout(scrollIdleTimer);
@@ -1064,7 +1065,21 @@
     const saved = anchor || reader.virtual?.getAnchor?.();
     reader.virtual?.destroy?.();
     reader.virtual = renderVirtual(reader, reader.currentIndex);
-    if (saved) reader.virtual?.restoreAnchor(saved);
+    if (saved) { reader.virtual?.restoreAnchor(saved); scheduleReaderAnchorRestore(reader, saved); }
+  }
+
+  function scheduleReaderAnchorRestore(reader, anchor) {
+    if (!reader || !anchor) return;
+    const token = (reader.anchorRestoreToken || 0) + 1;
+    reader.anchorRestoreToken = token;
+    reader.anchorRestoreCancelled = false;
+    let attempts = 0;
+    const apply = () => {
+      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled || !reader.virtual) return;
+      reader.virtual.restoreAnchor(anchor);
+      if (attempts++ < 6) setTimeout(apply, 90);
+    };
+    setTimeout(apply, 0);
   }
 
   function updateAnnotationUrl(reader, unit = null, kind = null, fragment = null) {
@@ -1223,7 +1238,7 @@
       app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
-      if (preserveAnchor?.itemKey || preserveAnchor?.rowId) state.reader.virtual?.restoreAnchor(preserveAnchor);
+      if (preserveAnchor?.itemKey || preserveAnchor?.rowId) { state.reader.virtual?.restoreAnchor(preserveAnchor); scheduleReaderAnchorRestore(state.reader, preserveAnchor); }
       else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
