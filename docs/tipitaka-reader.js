@@ -1060,6 +1060,36 @@
     return null;
   }
 
+  function readerViewAnchor(reader) {
+    const anchor = reader?.virtual?.getAnchor?.();
+    if (!reader?.virtual || !anchor) return anchor;
+    // When an expanded annotation/root-text card is actually on screen, use
+    // the card as the semantic anchor.  This prevents a language/font rebuild
+    // from falling back to the preceding root row while the expanded fragment
+    // is being recreated.  If the card is off-screen, keep the real visible
+    // row anchor so a toggle never jumps across the document.
+    if (!/^(roottext|annotation):/.test(String(anchor.itemKey || ''))) {
+      const activeKey = reader.annotation?.unitId
+        ? `unit:${reader.annotation.unitId}`
+        : reader.rootText?.sourceFragmentId
+          ? `source:${reader.rootText.sourceFragmentId}`
+          : '';
+      if (activeKey) {
+        const element = reader.virtual.pane?.querySelector?.('[data-t-item-key]');
+        const candidates = element ? [element, ...reader.virtual.pane.querySelectorAll('[data-t-item-key]')] : [];
+        const activeElement = candidates.find(item => item.dataset?.tItemKey === activeKey);
+        const paneRect = reader.virtual.pane?.getBoundingClientRect?.();
+        if (activeElement && paneRect) {
+          const rect = activeElement.getBoundingClientRect();
+          if (rect.bottom > paneRect.top + 1 && rect.top < paneRect.bottom) {
+            return reader.virtual.getAnchorForKey?.(activeKey, anchor) || anchor;
+          }
+        }
+      }
+    }
+    return anchor;
+  }
+
   function rebuildReaderVirtual(reader, anchor = null) {
     if (!reader || state.reader !== reader) return;
     const saved = anchor || reader.virtual?.getAnchor?.();
@@ -1320,7 +1350,7 @@
       const reader = state.reader, action = button.dataset.tAction;
       if (!reader) return;
       if (action === 'back') { location.hash = '#/tipitaka'; return; }
-      if (action === 'font-up' || action === 'font-down') { const anchor = reader.virtual?.getAnchor(); settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id, anchor); return; }
+      if (action === 'font-up' || action === 'font-down') { const anchor = readerViewAnchor(reader); settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id, anchor); return; }
       if (action === 'auto') { toggleAutoScroll(); button.classList.toggle('is-active', !!state.autoTimer); return; }
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
       if (action === 'hit-next') { moveReaderHit(1); return; }
@@ -1418,7 +1448,7 @@
     app.onchange = event => {
       const toggle = event.target.dataset.tToggle;
       if (toggle) {
-        const anchor = state.reader?.virtual?.getAnchor();
+        const anchor = readerViewAnchor(state.reader);
         settings()[toggle] = event.target.checked;
         saveSettings();
         renderReader(state.reader.meta.id, anchor);
