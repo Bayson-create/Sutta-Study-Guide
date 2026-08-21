@@ -303,7 +303,7 @@
     if (document.getElementById('tipitaka-touch-safety-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-touch-safety-css';
-    style.textContent = '.tipitaka-pane{overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-x:none!important}.tipitaka-search-target{max-width:100%;box-sizing:border-box}';
+    style.textContent = '.tipitaka-pane{overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-x:none!important}.tipitaka-pane[data-t-show-pali="0"] .tipitaka-pali,.tipitaka-pane[data-t-show-zh="0"] .tipitaka-zh,.tipitaka-pane[data-t-show-en="0"] .tipitaka-en{display:none}.tipitaka-search-target{max-width:100%;box-sizing:border-box}';
     document.head.appendChild(style);
   }
 
@@ -661,11 +661,11 @@
   }
 
   function rowHtml(row, overlays, hit, options = {}) {
-    const s = settings(), parts = [], lang = hit?.language, term = hit?.query;
+    const parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position, hit?.terms);
-    if (s.pali && row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? paliTokensHighlightHtml(row.pali_text, term, hit?.terms) : paliTokensHtml(row.pali_text)}</div>`);
-    if (s.zh && displayed(row, overlays, 'zh')) {
+    if (row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? paliTokensHighlightHtml(row.pali_text, term, hit?.terms) : paliTokensHtml(row.pali_text)}</div>`);
+    if (displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
       const effective = isHitRow && lang === 'zh' ? show('zh', value) : esc(chineseDisplay(value));
       const hitTerms = hit?.terms?.length ? hit.terms : [term];
@@ -673,7 +673,7 @@
       const defaultHit = term && lang === 'zh' && !hasZhHit(value) && hasZhHit(base);
       parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position, hit?.terms)}</details>` : ''}</div>`);
     }
-    if (s.en && displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
+    if (displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
     const key = options.itemKey || `root:${row.id}`;
     const rootData = options.readonly ? `data-t-annotation-row="${row.id}" data-source-work="${esc(options.sourceWorkId || '')}"` : `data-t-row="${row.id}"`;
     const actions = options.readonly ? '' : `<details class="tipitaka-actions"><summary>译文操作</summary><div class="tipitaka-actions-grid"><button data-t-action="edit-zh" data-row="${row.id}">编辑中译</button><button data-t-action="draft-zh" data-row="${row.id}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${row.id}">编辑英译</button><button data-t-action="history" data-row="${row.id}">历史</button></div></details>`;
@@ -1291,7 +1291,7 @@
       // in renderVirtual() only look at spacer.offsetTop (what comes BEFORE the
       // spacer), so this doesn't touch the virtualization coordinate math.
       const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : commentarySourceMap?.error ? `<span class="tipitaka-annotation-error">对应根本片段暂不可用；仍可使用相关全书跳转。 <button type="button" data-t-action="annotation-source-map-retry">重试</button></span>${jumpButtons(work.rows[currentIndex], meta)}` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-t-show-pali="${settings().pali ? 1 : 0}" data-t-show-zh="${settings().zh ? 1 : 0}" data-t-show-en="${settings().en ? 1 : 0}" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
       if (preserveAnchor?.itemKey || preserveAnchor?.rowId) { state.reader.virtual?.restoreAnchor(preserveAnchor); scheduleReaderAnchorRestore(state.reader, preserveAnchor); }
@@ -1479,6 +1479,12 @@
         const anchor = readerViewAnchor(reader);
         settings()[toggle] = event.target.checked;
         saveSettings();
+        if (toggle === 'pali' || toggle === 'zh' || toggle === 'en') {
+          const attr = `tShow${toggle[0].toUpperCase()}${toggle.slice(1)}`;
+          reader.virtual?.pane?.dataset && (reader.virtual.pane.dataset[attr] = event.target.checked ? '1' : '0');
+          scheduleReaderAnchorRestore(reader, anchor);
+          return;
+        }
         // Language visibility only changes row markup.  Rebuilding the whole
         // reader here discards measured virtual-list heights and makes the
         // browser briefly position the viewport from rough estimates.  Keep
