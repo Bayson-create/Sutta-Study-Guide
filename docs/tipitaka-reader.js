@@ -959,9 +959,13 @@
       return null;
     };
     const visibleItemAnchor = () => {
-      const visibleTop = pane.getBoundingClientRect().top + stickyOffset();
+      const paneRect = pane.getBoundingClientRect(), visibleTop = paneRect.top + stickyOffset(), visibleBottom = paneRect.bottom;
       const elements = [...windowEl.querySelectorAll('[data-t-item-key]')];
-      const element = elements.find(candidate => candidate.getBoundingClientRect().bottom > visibleTop + 1);
+      const expandedElement = elements.find(candidate => {
+        const key = candidate.dataset.tItemKey || '', rect = candidate.getBoundingClientRect();
+        return /^(annotation|roottext):/.test(key) && rect.bottom > visibleTop + 1 && rect.top < visibleBottom;
+      });
+      const element = expandedElement || elements.find(candidate => candidate.getBoundingClientRect().bottom > visibleTop + 1);
       if (!element) return null;
       const itemKey = element.dataset.tItemKey, index = indexByKey.get(itemKey);
       if (index === undefined) return null;
