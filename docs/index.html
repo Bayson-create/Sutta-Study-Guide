@@ -89,7 +89,7 @@ body.reader-immersive .container { padding: 12px 20px; }
  * min-height:0 both computing to 0 (confirmed live: only zeroing padding and
  * border-top-width actually collapsed it to 0px). Padding/border need their
  * own explicit override here, restored below in .reader-chrome-open. */
-body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; min-height: 0; padding-top: 0; padding-bottom: 0; border-top-width: 0; transition: max-height .22s ease, opacity .18s ease, padding .22s ease, border-top-width .18s ease; }
+body.reader-immersive .site-footer { max-height: 0; opacity: 0; overflow: hidden; min-height: 0; margin-top: 0; padding-top: 0; padding-bottom: 0; border-top-width: 0; transition: max-height .22s ease, opacity .18s ease, margin-top .22s ease, padding .22s ease, border-top-width .18s ease; }
 /* .tipitaka-pane sizes itself against 100dvh (real visible viewport) when
  * supported, but body only ever had min-height:100vh (the large/address-bar-
  * hidden viewport on mobile Safari). When the two units diverge - address
