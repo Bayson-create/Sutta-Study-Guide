@@ -820,7 +820,7 @@
     // rows with estimated heights but translated them with measured heights;
     // long commentary rows eventually pushed every rendered row off-screen.
     const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
-    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, pendingAnchorShift = 0, userScrolling = false, programmaticUntil = 0, destroyed = false;
+    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, programmaticUntil = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
     // it means "head visible, list not scrolled at all". Every place that
@@ -845,12 +845,9 @@
     const clampScroll = value => Math.max(0, Math.min(Number(value) || 0, Math.max(0, pane.scrollHeight - pane.clientHeight)));
     const setProgrammaticScroll = value => {
       programmaticUntil = Date.now() + 180;
+      userScrolling = false;
+      clearTimeout(scrollIdleTimer);
       pane.scrollTop = clampScroll(value);
-    };
-    const applyPendingAnchorShift = () => {
-      if (!pendingAnchorShift) return;
-      const shift = pendingAnchorShift; pendingAnchorShift = 0;
-      if (Math.abs(shift) > 1) setProgrammaticScroll(pane.scrollTop + shift);
     };
     const measure = () => {
       measureRaf = 0;
@@ -868,11 +865,14 @@
         spacer.style.height = `${Math.max(1, totalHeight())}px`;
         windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
         // Do not fight a finger, wheel, or trackpad gesture. Measurements are
-        // batched and any correction is applied once after the gesture settles.
-        if (shift) {
-          if (userScrolling) pendingAnchorShift += shift;
-          else setProgrammaticScroll(pane.scrollTop + shift);
-        }
+        // batched; explicit reader actions restore their own semantic anchor.
+        // A user gesture owns scrollTop.  Updating row measurements is safe,
+        // but compensating for the measured height while the finger/wheel is
+        // moving creates the small up/down jumps seen in long expanded texts.
+        // Explicit reader actions (language changes, expand/collapse and deep
+        // links) restore their semantic anchor separately and still use the
+        // programmatic correction path below.
+        if (shift && !userScrolling) setProgrammaticScroll(pane.scrollTop + shift);
       }
     };
     const scheduleMeasure = () => { if (!measureRaf) measureRaf = requestAnimationFrame(measure); };
@@ -927,13 +927,18 @@
       setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
     const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
+    const beginUserScroll = () => {
+      if (destroyed) return;
+      userScrolling = true;
+      programmaticUntil = 0;
+      clearTimeout(scrollIdleTimer);
+    };
     const onScroll = () => {
       if (Date.now() >= programmaticUntil) {
         userScrolling = true;
         clearTimeout(scrollIdleTimer);
         scrollIdleTimer = setTimeout(() => {
           userScrolling = false;
-          applyPendingAnchorShift();
           schedule(true);
         }, 110);
       }
@@ -941,15 +946,29 @@
     };
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
+    pane.addEventListener('wheel', beginUserScroll, { passive: true });
+    pane.addEventListener('touchstart', beginUserScroll, { passive: true });
+    pane.addEventListener('pointerdown', beginUserScroll, { passive: true });
     spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
     draw(true);
+    const nearestRootRowId = index => {
+      for (let cursor = Math.min(index, count - 1); cursor >= 0; cursor -= 1) {
+        const candidate = items[cursor];
+        if (candidate?.kind === 'root') return Number(candidate.row.id);
+      }
+      return null;
+    };
     const getAnchor = () => {
       const index = indexAt(toList(pane.scrollTop) + 1), item = items[index];
       if (!item) return null;
       const element = targetForKey(item.key), paneRect = pane.getBoundingClientRect();
       return {
         itemKey: item.key,
-        rowId: item.kind === 'root' ? Number(item.row.id) : null,
+        // During a language toggle or font change, expanded annotation/root
+        // rows are briefly absent while their static fragment is reloaded.
+        // Keep the nearest root row as a temporary fallback so the rebuild
+        // starts near the old viewport instead of defaulting to row zero.
+        rowId: item.kind === 'root' ? Number(item.row.id) : nearestRootRowId(index),
         offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
       };
     };
@@ -959,9 +978,13 @@
       // outside the virtual window.  The item index is still stable, so keep
       // that semantic target instead of returning a footer anchor which is
       // about to be removed by collapse.
-      if (!element) return indexByKey.has(itemKey) ? { itemKey, rowId: null, offset: 12 } : (fallback || getAnchor());
+      if (!element) {
+        const index = indexByKey.get(itemKey);
+        return index !== undefined ? { itemKey, rowId: nearestRootRowId(index), offset: 12 } : (fallback || getAnchor());
+      }
       const paneRect = pane.getBoundingClientRect();
-      return { itemKey, rowId: null, offset: element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) };
+      const index = indexByKey.get(itemKey);
+      return { itemKey, rowId: index === undefined ? null : nearestRootRowId(index), offset: element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) };
     };
     return {
       pane,
@@ -976,7 +999,7 @@
         const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
-      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('touchstart', beginUserScroll); pane.removeEventListener('pointerdown', beginUserScroll); resize?.disconnect(); },
     };
   }
 
