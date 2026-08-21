@@ -1460,7 +1460,7 @@
     return `#/tipitaka/read/${encodeURIComponent(item.meta.id)}?${params}`;
   }
   function searchResultEvidence(item, language, term) {
-    const text = searchItemText(item, language) || '', anchor = text.slice(0, 64), displayText = searchDisplayText(text, language);
+    const text = searchItemText(item, language) || '', displayText = searchDisplayText(text, language);
     const position = Array.isArray(item.positions) && Number.isFinite(Number(item.positions[0])) ? Number(item.positions[0]) : null;
     const evidenceTerms = Array.isArray(item.matched_terms) && item.matched_terms.length ? item.matched_terms : [term];
     const normalizedTerm = language === 'zh' ? normalizeZh(term).replace(/\s/g, '') : language === 'pali' ? normalizePali(term) : normalizeEn(term);
@@ -1486,11 +1486,59 @@
       source: `V4 ${item.kind === 'dictionary' ? '词典' : item.kind === 'proper' || item.kind === 'user_dictionary' ? '术语' : '三藏'} · ${item.meta?.title || item.dictionary?.table || item.term?.pali || item.term?.dict_key || ''}`,
       heading: item.meta ? `${item.meta.path.join(' / ')}${item.row?.paranum ? ` · 段号 ${item.row.paranum}` : ''}` : item.dictionary?.description || '',
       path: item.meta?.path || [], text: displayText.slice(start, end), raw_text: text.slice(rawStart, rawEnd), work_id: isCorpus ? item.meta.id : null, row_id: isCorpus ? Number(item.row.id) : null,
-      language, query: term, position, anchor, paranum: item.row?.paranum || null, matched_terms: item.matched_terms || [], match_level: item.match_level || null, _href: searchResultHref(item, language, term), _v4: true,
+      language, query: term, position, anchor: isCorpus ? searchAnchorForRow(item.row, language) : text.slice(0, 64), paranum: item.row?.paranum || null, matched_terms: item.matched_terms || [], match_level: item.match_level || null, _href: searchResultHref(item, language, term), _v4: true,
     };
   }
   window.TipitakaV4.evidence = (item, language, term) => searchResultEvidence(item, language, term);
   window.TipitakaV4.resultHref = (item, language, term) => searchResultHref(item, language, term);
+
+  function v4SuttaVinayaWorkIds() {
+    return (state.works || []).map(work => String(work.id || '')).filter(id => id.startsWith('s') || id.startsWith('vin'));
+  }
+
+  function injectEvidencePickerCss() {
+    if (document.getElementById('tipitaka-evidence-picker-css')) return;
+    const style = document.createElement('style'); style.id = 'tipitaka-evidence-picker-css'; style.textContent = `
+      .tipitaka-evidence-picker{width:min(820px,calc(100vw - 28px));max-height:min(820px,calc(100vh - 28px));padding:0;border:0;border-radius:10px;box-shadow:0 18px 60px rgba(0,0,0,.28)}
+      .tipitaka-evidence-picker::backdrop{background:rgba(25,35,29,.48)}.tipitaka-evidence-picker-inner{padding:20px}.tipitaka-evidence-picker h3{margin:0 0 4px}.tipitaka-evidence-picker-note{margin:0 0 14px;color:#6b756f;font-size:12px;line-height:1.55}.tipitaka-evidence-picker-form{display:flex;gap:8px;margin-bottom:10px}.tipitaka-evidence-picker-form input,.tipitaka-evidence-picker-form select{min-width:0;height:36px;padding:0 9px;border:1px solid #ccd6cc;border-radius:6px;font:inherit}.tipitaka-evidence-picker-form input{flex:1}.tipitaka-evidence-picker-results{max-height:560px;overflow:auto}.tipitaka-evidence-picker-result{margin:8px 0;padding:12px;border:1px solid #d9dfd9;border-radius:8px;background:#fbfcfa}.tipitaka-evidence-picker-result:hover{border-color:#aa8a43}.tipitaka-evidence-picker-result strong{display:block;color:#26332f}.tipitaka-evidence-picker-result small{display:block;margin:4px 0;color:#6b756f}.tipitaka-evidence-picker-quote{margin:7px 0;color:#39473e;line-height:1.6}.tipitaka-evidence-picker-actions{display:flex;gap:8px;flex-wrap:wrap}.tipitaka-evidence-picker-actions button,.tipitaka-evidence-picker-actions a{display:inline-block;padding:6px 9px;border:1px solid #ccd6cc;border-radius:6px;background:#fff;color:#806116;text-decoration:none;font:inherit;cursor:pointer}.tipitaka-evidence-picker-actions button.primary{background:#8b6914;border-color:#8b6914;color:#fff}.tipitaka-evidence-picker-close{float:right;border:0;background:transparent;color:#6b756f;font-size:22px;cursor:pointer}.tipitaka-evidence-picker-status{min-height:20px;margin:8px 0;color:#6b756f;font-size:12px}.tipitaka-evidence-picker-pagination{display:flex;justify-content:space-between;align-items:center;margin-top:10px}.tipitaka-evidence-picker-pagination button{padding:6px 10px;border:1px solid #ccd6cc;border-radius:6px;background:#fff;cursor:pointer}.tipitaka-evidence-picker mark{background:#f4df9f;color:inherit}
+    `; document.head.appendChild(style);
+  }
+  function stableEvidencePayload(item, language, term) {
+    const evidence = searchResultEvidence(item, language, term);
+    return {
+      version: 'v4-evidence/v1', evidence_id: `v4:${evidence.work_id}:${evidence.row_id}:${evidence.language}:${encodeURIComponent(evidence.anchor || '')}`,
+      work_id: evidence.work_id, row_id: evidence.row_id, language: evidence.language, anchor: evidence.anchor,
+      deep_link: evidence._href, reader_url: evidence._href, text: evidence.text, raw_text: evidence.raw_text,
+      pali: item.row?.pali_text || '', chinese: item.row?.chinese_simplified || item.row?.chinese_raw || '', english: item.row?.english_translation || '',
+      heading: evidence.heading, path: evidence.path, paranum: evidence.paranum, query: evidence.query, matched_terms: evidence.matched_terms,
+      verified: true,
+    };
+  }
+  window.TipitakaV4.stableEvidence = (item, language, term) => stableEvidencePayload(item, language, term);
+  window.TipitakaV4.openEvidencePicker = function openEvidencePicker(options = {}) {
+    injectEvidencePickerCss();
+    return new Promise(resolve => {
+      const panel = document.createElement('dialog'); panel.className = 'tipitaka-evidence-picker';
+      panel.innerHTML = `<div class="tipitaka-evidence-picker-inner"><button class="tipitaka-evidence-picker-close" aria-label="关闭">×</button><h3>${esc(options.title || '选择 V4 逐行证据')}</h3><p class="tipitaka-evidence-picker-note">仅检索 V4 经藏与律藏正文（作品 ID 以 s 或 vin 开头），不包含阿毗达摩。每个候选都保留 work_id、row_id、语种、稳定 anchor、匹配高亮和阅读器深链接；选择后可在关系编辑器中使用。</p><form class="tipitaka-evidence-picker-form"><input id="tipitaka-evidence-picker-input" required placeholder="搜索中文、巴利或英文词组"><select id="tipitaka-evidence-picker-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button class="tb-btn">搜索</button></form><div class="tipitaka-evidence-picker-status" id="tipitaka-evidence-picker-status">输入检索词开始。</div><div class="tipitaka-evidence-picker-results" id="tipitaka-evidence-picker-results"></div><div class="tipitaka-evidence-picker-pagination" id="tipitaka-evidence-picker-pagination"></div></div>`;
+      document.body.appendChild(panel); panel.showModal();
+      const input = panel.querySelector('#tipitaka-evidence-picker-input'), languageEl = panel.querySelector('#tipitaka-evidence-picker-lang'), status = panel.querySelector('#tipitaka-evidence-picker-status'), results = panel.querySelector('#tipitaka-evidence-picker-results'), pagination = panel.querySelector('#tipitaka-evidence-picker-pagination');
+      let current = null, page = 0, closed = false, evidenceWorkIds = [];
+      const finish = value => { if (closed) return; closed = true; panel.close(); resolve(value || null); };
+      panel.querySelector('.tipitaka-evidence-picker-close').onclick = () => finish(null); panel.addEventListener('cancel', event => { event.preventDefault(); finish(null); });
+      const draw = async (result, targetPage) => {
+        page = targetPage; status.textContent = `正在读取第 ${page + 1} 页…`; results.textContent = ''; pagination.textContent = '';
+        try {
+          const items = (await resolveSearchPage(result, page)).filter(item => item.kind === 'corpus' && evidenceWorkIds.includes(String(item.meta?.id || '')));
+          results.innerHTML = items.length ? items.map((item, index) => { const evidence = stableEvidencePayload(item, result.language, result.query), label = `${item.meta.title} · ${item.row.paranum || item.row.id}`, fullQuote = searchDisplayText(searchItemText(item, result.language), result.language), quote = evidence.text || fullQuote.slice(0, 560); return `<article class="tipitaka-evidence-picker-result"><strong>${esc(label)}</strong><small>${esc(item.meta.path.join(' / '))} · ${esc(evidence.work_id)}:${esc(evidence.row_id)} · ${esc(evidence.language)} · anchor 已固定</small><div class="tipitaka-evidence-picker-quote">${highlightHtml(quote, result.query, result.language, true, null, item.matched_terms)}</div><div class="tipitaka-evidence-picker-actions"><a href="${esc(evidence.deep_link)}" target="_blank" rel="noopener">打开精确阅读行 ↗</a><button type="button" class="primary" data-evidence-index="${index}">使用此段</button></div></article>`; }).join('') : '<p class="tipitaka-note">这一页没有可用的正文行。</p>';
+          results.querySelectorAll('[data-evidence-index]').forEach(button => button.onclick = () => { const item = items[Number(button.dataset.evidenceIndex)]; if (item) finish(stableEvidencePayload(item, result.language, result.query)); });
+          const maxPage = Math.max(1, Math.ceil(result.total / PAGE_SIZE)); status.textContent = `V4 正文命中 ${result.total.toLocaleString()} 处 · 第 ${page + 1}/${maxPage} 页`; pagination.innerHTML = `${page > 0 ? '<button type="button" data-evidence-prev>← 上一页</button>' : '<span></span>'}<span>每页 ${PAGE_SIZE} 条</span>${(page + 1) * PAGE_SIZE < result.total ? '<button type="button" data-evidence-next>下一页 →</button>' : '<span></span>'}`; pagination.querySelector('[data-evidence-prev]')?.addEventListener('click', () => draw(result, page - 1)); pagination.querySelector('[data-evidence-next]')?.addEventListener('click', () => draw(result, page + 1));
+        } catch (error) { status.textContent = error.message; }
+      };
+      panel.querySelector('form').onsubmit = async event => { event.preventDefault(); const value = input.value.trim(), language = languageEl.value; if (!value) return; status.textContent = '正在检索 V4 经藏与律藏正文…'; results.textContent = ''; pagination.textContent = ''; try { await ensureCatalog(); evidenceWorkIds = v4SuttaVinayaWorkIds(); current = await runSearch(value, language, { types: ['corpus'], workIds: evidenceWorkIds }); await draw(current, 0); } catch (error) { status.textContent = error.message; } };
+      if (options.query) { input.value = options.query; panel.querySelector('form').requestSubmit(); } else setTimeout(() => input.focus(), 0);
+      panel.addEventListener('close', () => { if (!closed) { closed = true; resolve(null); } panel.remove(); }, { once: true });
+    });
+  };
 
   async function resolveSearchPage(result, page) {
     const pageItems = result.results.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
