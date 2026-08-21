@@ -1026,6 +1026,15 @@
       scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex),
       restoreAnchor: anchor => {
         if (!anchor) return;
+        const element = anchor.itemKey && targetForKey(anchor.itemKey);
+        if (element) {
+          const paneRect = pane.getBoundingClientRect();
+          const desired = paneRect.top + stickyOffset() + (Number(anchor.offset) || 12);
+          const delta = element.getBoundingClientRect().top - desired;
+          if (Math.abs(delta) > 2) setProgrammaticScroll(pane.scrollTop + delta);
+          draw(true);
+          return;
+        }
         const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
         if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
