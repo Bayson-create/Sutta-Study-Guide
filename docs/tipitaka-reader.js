@@ -293,7 +293,7 @@
     if (document.getElementById('tipitaka-search-target-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-search-target-css';
-    style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-y pinch-zoom;overscroll-behavior-x:none}';
+    style.textContent = '.tipitaka-search-target{box-sizing:border-box;width:100%;max-width:100%;border:2px solid #d99000;border-radius:10px;padding:14px 12px;margin:8px 0;background:linear-gradient(90deg,rgba(255,224,102,.2),transparent);box-shadow:0 4px 18px rgba(120,80,0,.12);scroll-margin-top:18px}.tipitaka-pane{overflow-anchor:none;scroll-behavior:auto;overflow-x:clip;touch-action:pan-x pan-y pinch-zoom;overscroll-behavior-x:none}';
     style.textContent += `.tipitaka-layout{grid-template-columns:minmax(390px,42%) minmax(0,1fr);gap:28px;align-items:start}.tipitaka-layout>aside{min-width:0}.tipitaka-catalog{max-height:min(74vh,820px);border-radius:14px;box-shadow:0 8px 24px rgba(60,40,10,.06)}.tipitaka-catalog details{margin:3px 0;border-left:1px solid color-mix(in srgb,var(--border,#ddd) 70%,transparent)}.tipitaka-catalog details[data-depth="0"]{border-left:0}.tipitaka-catalog details[data-depth="1"]{margin-left:16px}.tipitaka-catalog details[data-depth="2"]{margin-left:18px}.tipitaka-catalog details[data-depth="3"]{margin-left:20px}.tipitaka-catalog summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;cursor:pointer;padding:9px 10px;border-radius:8px;font-weight:650;line-height:1.45}.tipitaka-catalog summary>span{min-width:0;overflow-wrap:anywhere}.tipitaka-catalog summary small{color:var(--text-light,#777);font-weight:400;white-space:nowrap}.tipitaka-work-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 10px 8px 30px;border-radius:7px;line-height:1.5;overflow-wrap:anywhere}.tipitaka-work-link small{white-space:nowrap;align-self:start}.tipitaka-pali-token{cursor:pointer;border-radius:4px;padding:1px 2px;margin-right:2px}.tipitaka-pali-token:hover,.tipitaka-pali-token:focus{background:#ffe8a3;outline:2px solid rgba(197,139,40,.35)}.tipitaka-catalog-search{width:100%;margin-bottom:10px}.tipitaka-catalog-help{margin:0 0 8px;color:var(--text-light,#777);font-size:.84em}.tipitaka-provenance,.tipitaka-bookmarks{box-sizing:border-box;width:100%;margin:24px 0 0;padding:12px 16px;background:var(--accent-bg);border-left:3px solid var(--accent-light);border-radius:4px;color:var(--text-light,#777);font-size:.84em;line-height:1.7}.tipitaka-bookmarks h3{margin:0 0 8px;color:var(--accent,#8a6817);font-size:1.05em}.tipitaka-bookmark-list{display:grid;gap:7px}.tipitaka-bookmark-list article{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:9px 0;border-top:1px solid color-mix(in srgb,var(--border,#ddd) 80%,transparent)}.tipitaka-bookmark-list a{display:grid;min-width:0;color:inherit;text-decoration:none}.tipitaka-bookmark-list a:hover strong{text-decoration:underline}.tipitaka-bookmark-list a span{font-size:.9em;color:var(--text-light,#777)}.tipitaka-bookmark-list button{flex:0 0 auto;padding:6px 9px;border:1px solid var(--border,#ccc);border-radius:7px;background:var(--card,#fff);color:inherit}.tipitaka-provenance-title{margin:0 0 3px;color:var(--accent,#8a6817);font-size:.96em;font-weight:700}.tipitaka-provenance-copy{margin:0}.tipitaka-provenance-quote{margin:8px 0 0;color:var(--accent,#8a6817);font-family:Georgia,"Times New Roman",serif;font-size:.96em;font-style:italic}.tipitaka-provenance-quote span{display:block;margin-top:2px;color:var(--text-light,#777);font-family:inherit;font-size:.9em}.tipitaka-scope-trigger-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.tipitaka-scope-chips,.tipitaka-scope-selected{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.tipitaka-scope-chip{display:inline-flex;max-width:240px;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent);color:var(--primary,#6b4f2d);font-size:.84em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tipitaka-scope-empty{color:var(--text-light,#777);font-size:.9em}.tipitaka-scope-drawer{position:fixed;inset:0 0 0 auto;width:min(760px,92vw);height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-left:1px solid var(--border,#ddd);background:var(--card,#fff);color:var(--text,#222);box-shadow:-18px 0 50px rgba(30,20,10,.18)}.tipitaka-scope-drawer::backdrop{background:rgba(20,15,10,.44)}.tipitaka-scope-shell{height:100%;display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto;box-sizing:border-box}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-shell>header{justify-content:space-between}.tipitaka-scope-shell>header h3,.tipitaka-scope-shell>header p{margin:0}.tipitaka-scope-shell>header p{margin-top:4px;color:var(--text-light,#777);font-size:.88em}.tipitaka-scope-shell>footer{justify-content:flex-end;border-top:1px solid var(--border,#ddd);border-bottom:0}.tipitaka-scope-shell button,.tipitaka-scope-shell input{box-sizing:border-box;padding:8px 11px;border:1px solid var(--border,#ccc);border-radius:8px;background:var(--card,#fff);color:inherit}.tipitaka-scope-close{font-size:1.45em;border:0!important}.tipitaka-scope-selected{min-height:34px;padding:10px 20px;border-bottom:1px solid var(--border,#ddd)}.tipitaka-scope-tools{display:flex;gap:8px;padding:12px 20px}.tipitaka-scope-tools input{flex:1;min-width:0}.tipitaka-scope-content{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:16px;min-height:0;padding:0 20px 16px}.tipitaka-scope-content section{min-width:0;min-height:0}.tipitaka-scope-content h4{margin:4px 0 8px}.tipitaka-scope-tree{height:100%;max-height:none;box-sizing:border-box}.tipitaka-scope-tree summary{grid-template-columns:auto minmax(0,1fr) auto}.tipitaka-scope-tree .tipitaka-work-link{grid-template-columns:auto minmax(0,1fr) auto;cursor:default}.tipitaka-scope-tree input{width:18px;height:18px;margin:1px 0 0;padding:0}.tipitaka-scope-types{display:flex;flex-direction:column;gap:8px}.tipitaka-scope-types label{display:flex;gap:9px;align-items:center;padding:10px;border:1px solid var(--border,#ddd);border-radius:9px}.tipitaka-scope-types input{width:18px;height:18px;padding:0}.tipitaka-scope-count{margin-right:auto;color:var(--text-light,#777);font-size:.88em}@media(max-width:900px){.tipitaka-layout{grid-template-columns:minmax(320px,46%) minmax(0,1fr);gap:18px}}@media(max-width:760px){.tipitaka-layout{grid-template-columns:1fr}.tipitaka-layout>section{display:none}.tipitaka-catalog{max-height:62vh}.tipitaka-provenance,.tipitaka-bookmarks{margin-top:20px;padding:12px 14px}.tipitaka-bookmark-list article{align-items:flex-start;flex-direction:column}.tipitaka-scope-drawer{width:100vw}.tipitaka-scope-content{grid-template-columns:1fr;overflow:auto}.tipitaka-scope-tree{height:auto;max-height:55vh}.tipitaka-scope-shell>footer{flex-wrap:wrap;padding:12px}.tipitaka-scope-count{width:100%;order:-1}.tipitaka-scope-tools{flex-wrap:wrap}.tipitaka-scope-tools input{flex-basis:100%}}`;
     style.textContent += `.tipitaka-scope-drawer{display:flex!important;flex-direction:column;overflow:hidden;height:100dvh;max-height:100dvh}.tipitaka-scope-shell{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;overflow:hidden}.tipitaka-scope-shell>header,.tipitaka-scope-shell>footer,.tipitaka-scope-selected,.tipitaka-scope-tools{flex:0 0 auto}.tipitaka-scope-selected{max-height:92px;overflow:auto}.tipitaka-scope-content{flex:1 1 auto;overflow:hidden}.tipitaka-scope-content>section{display:flex;flex-direction:column;overflow:hidden}.tipitaka-scope-content>section:first-child{min-height:0}.tipitaka-scope-tree{flex:1 1 auto;min-height:0;height:auto!important;overflow:auto}.tipitaka-scope-types{overflow:auto}.tipitaka-scope-shell>footer{position:relative;z-index:2;background:var(--card,#fff);box-shadow:0 -5px 16px rgba(40,25,10,.06)}.tipitaka-search-form{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px}.tipitaka-search-form #tipitaka-search-input{width:100%;min-width:0}.tipitaka-catalog-search-wrap{position:relative;display:flex;align-items:center;width:100%;margin-bottom:10px}.tipitaka-catalog-search-wrap>svg{position:absolute;left:12px;width:18px;height:18px;color:var(--text-light,#777);pointer-events:none}.tipitaka-catalog-search-wrap .tipitaka-catalog-search{margin:0;padding:10px 38px 10px 38px;border:1px solid var(--border,#d9cdbb);border-radius:999px;background:var(--card,#fff);box-shadow:0 2px 10px rgba(60,40,10,.05);outline:none}.tipitaka-catalog-search-wrap .tipitaka-catalog-search:focus{border-color:var(--primary,#8a6817);box-shadow:0 0 0 3px color-mix(in srgb,var(--primary,#8a6817) 16%,transparent)}.tipitaka-catalog-search-clear{position:absolute;right:8px;width:28px;height:28px;padding:0!important;border:0!important;border-radius:50%!important;background:transparent!important;color:var(--text-light,#777);font-size:1.1em;line-height:1}.tipitaka-catalog-search-clear[hidden]{display:none}.tipitaka-catalog-search-clear:hover{background:color-mix(in srgb,var(--primary,#8a6817) 12%,transparent)!important}@supports not (height:100dvh){.tipitaka-scope-drawer{height:100vh;max-height:100vh}}@media(max-height:560px){.tipitaka-scope-shell>header{padding:9px 14px}.tipitaka-scope-shell>header p{display:none}.tipitaka-scope-selected{max-height:56px;padding:6px 14px}.tipitaka-scope-tools{padding:7px 14px}.tipitaka-scope-content{padding:0 14px 7px}.tipitaka-scope-shell>footer{padding:8px 12px}.tipitaka-scope-shell button,.tipitaka-scope-shell input{padding:6px 9px}}@media(max-width:760px){.tipitaka-scope-content{display:flex;flex-direction:column;gap:8px;overflow:hidden}.tipitaka-scope-content>section:first-child{flex:1 1 auto}.tipitaka-scope-content>section:last-child{flex:0 0 auto;max-height:34%;overflow:auto}.tipitaka-search-form{grid-template-columns:minmax(0,1fr) auto}.tipitaka-search-form select{grid-column:1}.tipitaka-search-form button{grid-column:2;grid-row:2}.tipitaka-search-form #tipitaka-search-input{grid-column:1 / -1}}@media(max-width:560px){.tipitaka-search-form select,.tipitaka-search-form button{width:100%}.tipitaka-search-form button{grid-column:1 / -1;grid-row:auto}}`;
     document.head.appendChild(style);
@@ -303,7 +303,7 @@
     if (document.getElementById('tipitaka-touch-safety-css')) return;
     const style = document.createElement('style');
     style.id = 'tipitaka-touch-safety-css';
-    style.textContent = '.tipitaka-pane{overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-x:none!important}.tipitaka-pane[data-t-show-pali="0"] .tipitaka-pali,.tipitaka-pane[data-t-show-zh="0"] .tipitaka-zh,.tipitaka-pane[data-t-show-en="0"] .tipitaka-en{display:none}.tipitaka-search-target{max-width:100%;box-sizing:border-box}';
+    style.textContent = '.tipitaka-pane{overflow-x:hidden!important;touch-action:pan-x pan-y pinch-zoom!important;overscroll-behavior-x:none!important}.tipitaka-pane[data-t-show-pali="0"] .tipitaka-pali,.tipitaka-pane[data-t-show-zh="0"] .tipitaka-zh,.tipitaka-pane[data-t-show-en="0"] .tipitaka-en{display:none}.tipitaka-search-target{max-width:100%;box-sizing:border-box}';
     document.head.appendChild(style);
   }
 
@@ -330,7 +330,7 @@
          already shrinks everything above it, so the only real budget left
          is --tipitaka-chrome; a 72vh ceiling would just silently give back
          the space this whole change exists to reclaim. */
-      .tipitaka-pane{height:calc(100vh - var(--tipitaka-chrome,120px));min-height:0;max-height:calc(100vh - var(--tipitaka-chrome,120px))}
+      .tipitaka-pane{height:calc(100vh - var(--tipitaka-chrome,120px));min-height:0;max-height:calc(100vh - var(--tipitaka-chrome,120px));touch-action:pan-x pan-y pinch-zoom}
       @supports (height:100dvh){.tipitaka-pane{height:calc(100dvh - var(--tipitaka-chrome,120px));max-height:calc(100dvh - var(--tipitaka-chrome,120px))}}
       .tipitaka-reader-head{padding:14px 0 6px}
       .tipitaka-reader-head h2{margin:0 0 4px;font-size:1.2em;line-height:1.35}
@@ -340,10 +340,11 @@
          scroll container is .tipitaka-pane, same top:0 still correct since
          it pins relative to that ancestor instead. Everything below only
          adds what .toolbar doesn't already cover. */
-      .tipitaka-reader-toolbar{margin:0 0 4px;border-bottom:1px solid transparent;transition:box-shadow .15s,border-color .15s}
+      .tipitaka-reader-toolbar{margin:0 0 4px;border-bottom:1px solid transparent;transition:box-shadow .15s,border-color .15s;touch-action:pan-x pan-y pinch-zoom}
       .tipitaka-reader-toolbar.is-pinned{border-bottom-color:var(--border,#e5e5e5);box-shadow:0 4px 12px rgba(0,0,0,.07)}
       .tipitaka-reader-title{flex:1 1 120px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.95em}
-      .tipitaka-toolbar-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex:1 1 auto;min-width:0}
+      .tipitaka-toolbar-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex:1 1 auto;min-width:0;touch-action:pan-x pinch-zoom;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+      .tipitaka-reader-head,.tipitaka-sticky-sentinel,.tipitaka-virtual-spacer,.tipitaka-virtual-window,.tipitaka-row,.tipitaka-jumpbar{touch-action:pan-y pinch-zoom}
       /* Segmented checked-pill look layered on top of the base .tb-toggle
          (plain inline checkbox+label) - only the active state differs.
          Flattened to match .tb-btn's own padding/height (was a taller,
@@ -518,7 +519,9 @@
     // before the toolbar has ever reached the top it's just inline content
     // flowing with the page, nothing to re-summon yet, so this stays out of
     // the way of normal scrolling.
-    let toggleLockUntil = 0, touchStartY = null, touchHandled = false;
+    let toggleLockUntil = 0;
+    let touchStartX = null, touchStartY = null, touchHandled = false;
+    let touchAxis = null, touchStartInControls = false, touchMulti = false;
     const gestureChrome = opening => {
       const now = Date.now();
       if (now < toggleLockUntil) return;
@@ -529,29 +532,73 @@
     // is raw finger displacement, but wheel deltaY>0 ("scroll down") is the
     // natural-scrolling equivalent of a finger swiping UP (both reveal
     // later content) - deltaY<0 is the wheel counterpart of "finger down".
-    const onWheel = event => { if (!pinned) return; event.preventDefault(); gestureChrome(event.deltaY < 0); };
-    const onTouchStart = event => { touchStartY = event.touches[0]?.clientY ?? null; touchHandled = false; };
-    // preventDefault has to run for every touchmove of the gesture, not just
-    // the one that first crosses the 10px threshold: once touchHandled goes
-    // true, the old early-return skipped preventDefault for the rest of the
-    // same finger-down gesture, handing the remaining moves to the browser's
-    // native scroll/rubber-band physics on whatever ancestor is actually
-    // scrollable underneath a non-scrolling toolbar - that's what showed up
-    // as an up-down bounce while still dragging on the toolbar.
+    const isToolbarControlsTarget = target =>
+      target instanceof Element && !!target.closest('.tipitaka-toolbar-controls');
+    const resetTouch = () => {
+      touchStartX = null;
+      touchStartY = null;
+      touchHandled = false;
+      touchAxis = null;
+      touchStartInControls = false;
+      touchMulti = false;
+    };
+    const onWheel = event => {
+      if (!pinned) return;
+      const horizontalControls = isToolbarControlsTarget(event.target)
+        && Math.abs(event.deltaX) > Math.abs(event.deltaY);
+      if (horizontalControls) return;
+      event.preventDefault();
+      gestureChrome(event.deltaY < 0);
+    };
+    const onTouchStart = event => {
+      const first = event.touches[0];
+      touchStartX = first?.clientX ?? null;
+      touchStartY = first?.clientY ?? null;
+      touchHandled = false;
+      touchAxis = null;
+      touchStartInControls = isToolbarControlsTarget(event.target);
+      touchMulti = event.touches.length > 1;
+    };
     const onTouchMove = event => {
-      if (!pinned || touchStartY === null) return;
+      if (!pinned || touchStartX === null || touchStartY === null) return;
+      if (event.touches.length > 1 || touchMulti) {
+        touchMulti = true;
+        touchAxis = 'multi';
+        return;
+      }
+      if (touchAxis === 'multi') return;
+      const current = event.touches[0];
+      const dx = (current?.clientX ?? touchStartX) - touchStartX;
+      const dy = (current?.clientY ?? touchStartY) - touchStartY;
+      if (!touchAxis) {
+        if (Math.max(Math.abs(dx), Math.abs(dy)) < 10) return;
+        if (Math.abs(dx) > Math.abs(dy) * 1.15) touchAxis = 'horizontal';
+        else if (Math.abs(dy) > Math.abs(dx) * 1.15) touchAxis = 'vertical';
+        else return;
+      }
+      if (touchAxis === 'horizontal') {
+        // The controls are a native horizontal scroller. Do not cancel its
+        // gesture, and never let a horizontal drag toggle the chrome.
+        if (!touchStartInControls) event.preventDefault();
+        return;
+      }
+      if (touchAxis !== 'vertical') return;
       event.preventDefault();
       if (touchHandled) return;
-      const dy = (event.touches[0]?.clientY ?? touchStartY) - touchStartY;
-      if (Math.abs(dy) < 10) return;
       touchHandled = true;
-      gestureChrome(dy > 0); // finger moving down the screen (dy>0) reveals, up (dy<0) collapses to fullscreen
+      gestureChrome(dy > 0); // finger down reveals, finger up collapses
     };
-    const onTouchEnd = () => { touchStartY = null; touchHandled = false; };
+    const onTouchEnd = event => {
+      // Keep the multi-touch guard active until the last finger is released.
+      if (event.touches?.length) return;
+      resetTouch();
+    };
+    const onTouchCancel = () => resetTouch();
     toolbar.addEventListener('wheel', onWheel, { passive: false });
     toolbar.addEventListener('touchstart', onTouchStart, { passive: true });
     toolbar.addEventListener('touchmove', onTouchMove, { passive: false });
     toolbar.addEventListener('touchend', onTouchEnd, { passive: true });
+    toolbar.addEventListener('touchcancel', onTouchCancel, { passive: true });
 
     return {
       disconnect: () => {
@@ -560,6 +607,7 @@
         toolbar.removeEventListener('touchstart', onTouchStart);
         toolbar.removeEventListener('touchmove', onTouchMove);
         toolbar.removeEventListener('touchend', onTouchEnd);
+        toolbar.removeEventListener('touchcancel', onTouchCancel);
         [header, footer].forEach(element => {
           if (!element) return;
           element.style.transition = '';
