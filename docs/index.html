@@ -78,10 +78,11 @@ body.reader-immersive .container { padding: 12px 20px; }
  * only needs to clear the header's real rendered height (~70-90px) with room
  * to spare - the browser
  * interpolates smoothly between 0 and that bound either way. */
-/* Keep the footer's height stable while its opacity is driven by reader
- * scroll progress. Collapsing it during a gesture changes the pane height
- * and causes reading-position drift, especially on mobile. */
-body.reader-immersive .site-footer { max-height: 160px; opacity: 1; overflow: hidden; min-height: 0; margin-top: 0; padding-top: 28px; padding-bottom: 28px; border-top-width: 1px; transition: opacity .16s linear; }
+/* The footer fades and releases its layout space together. This lets the
+ * reader reclaim the full bottom of the viewport as soon as chrome begins to
+ * disappear, while the same transition keeps the visual exit gentle. */
+body.reader-immersive .site-footer { max-height: 160px; opacity: 1; overflow: hidden; min-height: 0; margin-top: 0; padding-top: 28px; padding-bottom: 28px; border-top-width: 1px; transition: opacity .16s linear, max-height .22s ease, padding .22s ease, border-top-width .18s ease; }
+body.reader-immersive.reader-footer-collapsed .site-footer { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; border-top-width: 0; pointer-events: none; }
 /* .tipitaka-pane sizes itself against 100dvh (real visible viewport) when
  * supported, but body only ever had min-height:100vh (the large/address-bar-
  * hidden viewport on mobile Safari). When the two units diverge - address
@@ -13071,7 +13072,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260821.17"></script>
+<script src="tipitaka-reader.js?v=20260821.18"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>

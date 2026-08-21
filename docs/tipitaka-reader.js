@@ -443,18 +443,31 @@
     // already knows which state it wants (swiped down on the toolbar - open;
     // swiped up - collapsed), and a toggle can't express that, only
     // "whatever it currently isn't".
+    const restoreFooter = () => {
+      document.body.classList.remove('reader-footer-collapsed');
+    };
+    const collapseFooter = () => {
+      if (!footer) return;
+      if (document.body.classList.contains('reader-chrome-collapsed')) {
+        document.body.classList.add('reader-footer-collapsed');
+      }
+    };
     const setChrome = opening => {
       document.body.classList.toggle('reader-chrome-open', opening);
       document.body.classList.toggle('reader-chrome-collapsed', !opening);
       if (footer && opening) {
+        restoreFooter();
         footer.style.transition = '';
         footer.style.opacity = '';
         footer.style.pointerEvents = '';
+      } else if (footer) {
+        collapseFooter();
       }
     };
     const check = () => {
       const next = pane.scrollTop >= sentinel.offsetTop;
       if (header && !next) {
+        restoreFooter();
         // Scroll-linked, not eased: the finger/wheel input is already
         // continuous, so an added transition would just make the header lag
         // behind it. By the time scrollTop reaches the pin point the header
@@ -556,6 +569,7 @@
           element.style.paddingBottom = '';
           element.style.pointerEvents = '';
         });
+        document.body.classList.remove('reader-footer-collapsed');
       },
     };
   }
