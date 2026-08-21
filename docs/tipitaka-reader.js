@@ -330,8 +330,8 @@
          already shrinks everything above it, so the only real budget left
          is --tipitaka-chrome; a 72vh ceiling would just silently give back
          the space this whole change exists to reclaim. */
-      .tipitaka-pane{height:max(360px,calc(100vh - var(--tipitaka-chrome,120px)))}
-      @supports (height:100dvh){.tipitaka-pane{height:max(360px,calc(100dvh - var(--tipitaka-chrome,120px)))}}
+      .tipitaka-pane{height:calc(100vh - var(--tipitaka-chrome,120px));min-height:0;max-height:calc(100vh - var(--tipitaka-chrome,120px))}
+      @supports (height:100dvh){.tipitaka-pane{height:calc(100dvh - var(--tipitaka-chrome,120px));max-height:calc(100dvh - var(--tipitaka-chrome,120px))}}
       .tipitaka-reader-head{padding:14px 0 6px}
       .tipitaka-reader-head h2{margin:0 0 4px;font-size:1.2em;line-height:1.35}
       .tipitaka-sticky-sentinel{height:0}
@@ -756,12 +756,20 @@
   }
 
   function rootTextCardHtml(sourceFragment, reader) {
+    const roots = (sourceFragment.roots || []).filter(root => root.verification === 'verified');
     const picker = reader.rootTextPicker?.sourceFragmentId === sourceFragment.source_fragment_id;
     const active = reader.rootText?.sourceFragmentId === sourceFragment.source_fragment_id ? reader.rootText : null;
-    const choices = picker ? (sourceFragment.roots || []).map(root => `<button type="button" class="tipitaka-annotation-option tipitaka-roottext-option${active?.root?.unit_id === root.unit_id ? ' is-active' : ''}" data-t-action="roottext-fragment" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" data-root-work="${esc(root.root_work_id)}" data-root-unit="${esc(root.unit_id)}"><span>${esc(root.root_title)} · ${esc(root.title)}</span><small>${Number(root.row_count || 0).toLocaleString()} 段</small></button>`).join('') : '';
+    const choices = (picker || roots.length === 1) ? roots.map(root => `<button type="button" class="tipitaka-annotation-option tipitaka-roottext-option${active?.root?.unit_id === root.unit_id ? ' is-active' : ''}" data-t-action="roottext-fragment" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" data-root-work="${esc(root.root_work_id)}" data-root-unit="${esc(root.unit_id)}" ${active?.root?.unit_id === root.unit_id ? 'aria-current="true"' : ''}><span>${esc(root.root_title)} · ${esc(root.title)}</span><small>${Number(root.row_count || 0).toLocaleString()} 段</small></button>`).join('') : '';
     const stateText = active?.loading ? '<p class="tipitaka-annotation-loading">正在载入对应根本文本…</p>' : active?.error ? `<p class="tipitaka-annotation-error">${esc(active.error)} <button type="button" data-t-action="roottext-retry">重试</button></p>` : '';
-    const selection = picker ? (choices ? `<div class="tipitaka-annotation-options">${choices}</div>` : '<p class="tipitaka-annotation-empty">暂无已核实的对应根本单元。</p>') : '<p class="tipitaka-annotation-empty">展开后可查看全部已核实的对应经文、律或论单元。</p>';
-    return `<section class="tipitaka-annotation-card tipitaka-roottext-card" data-t-item-key="source:${esc(sourceFragment.source_fragment_id)}"><div class="tipitaka-annotation-title"><h3>对应根本文本</h3><small>${esc(sourceFragment.title || sourceFragment.source_title || '')}</small></div><div class="tipitaka-annotation-tabs" role="group" aria-label="对应根本文本"><button type="button" data-t-action="roottext-show" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" class="${picker ? 'is-active' : ''}">展开选择 <small>${(sourceFragment.roots || []).length}</small></button></div>${selection}${stateText}</section>`;
+    const selection = roots.length === 0
+      ? '<p class="tipitaka-annotation-empty">暂无已核实的对应根本单元。</p>'
+      : roots.length === 1
+        ? `<div class="tipitaka-annotation-options">${choices}</div>`
+        : picker
+          ? `<div class="tipitaka-annotation-options">${choices}</div>`
+          : '<p class="tipitaka-annotation-empty">展开后可选择全部已核实的对应经文、律或论单元。</p>';
+    const selector = roots.length > 1 ? `<div class="tipitaka-annotation-tabs" role="group" aria-label="对应根本文本"><button type="button" data-t-action="roottext-show" data-source-fragment="${esc(sourceFragment.source_fragment_id)}" class="${picker ? 'is-active' : ''}">选择根本文本 <small>${roots.length}</small></button></div>` : '';
+    return `<section class="tipitaka-annotation-card tipitaka-roottext-card" data-t-item-key="source:${esc(sourceFragment.source_fragment_id)}"><div class="tipitaka-annotation-title"><h3>对应根本文本</h3><small>${esc(sourceFragment.title || sourceFragment.source_title || '')}</small></div>${selector}${selection}${stateText}</section>`;
   }
 
   function rootTextSupplementHtml(item) {
