@@ -914,7 +914,8 @@
     // rows with estimated heights but translated them with measured heights;
     // long commentary rows eventually pushed every rendered row off-screen.
     const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
-    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, pointerScrolling = false, programmaticUntil = 0, destroyed = false;
+    const heightCache = reader.virtualHeightCache || (reader.virtualHeightCache = new Map());
+    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, pointerScrolling = false, touchScrolling = false, programmaticUntil = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
     // it means "head visible, list not scrolled at all". Every place that
@@ -928,6 +929,13 @@
     const toReal = list => list + listTop();
     const stickyOffset = () => toolbar?.offsetHeight || 0;
     const add = (index, amount) => { for (let i = index + 1; i <= count; i += i & -i) tree[i] += amount; };
+    items.forEach((item, index) => {
+      const cached = Number(heightCache.get(item.key));
+      if (Number.isFinite(cached) && cached > 0) {
+        heights[index] = cached;
+        add(index, cached - EST_ROW_HEIGHT);
+      }
+    });
     const measuredBefore = index => { let sum = 0; for (let i = index; i > 0; i -= i & -i) sum += tree[i]; return sum; };
     const offsetFor = index => Math.max(0, Math.min(count, index)) * EST_ROW_HEIGHT + measuredBefore(Math.max(0, Math.min(count, index)));
     const totalHeight = () => offsetFor(count);
@@ -939,8 +947,10 @@
     const clampScroll = value => Math.max(0, Math.min(Number(value) || 0, Math.max(0, pane.scrollHeight - pane.clientHeight)));
     const setProgrammaticScroll = value => {
       programmaticUntil = Date.now() + 180;
-      userScrolling = false;
-      clearTimeout(scrollIdleTimer);
+      // A programmatic correction must not revoke ownership from a live
+      // pointer/touch session.  Otherwise the next ResizeObserver pass can
+      // immediately compensate again while mobile momentum is still running.
+      if (!pointerScrolling && !touchScrolling) clearTimeout(scrollIdleTimer);
       pane.scrollTop = clampScroll(value);
     };
     const measure = () => {
@@ -953,6 +963,7 @@
         if (index === undefined || !height || heights[index] === height) return;
         const previous = heights[index] || EST_ROW_HEIGHT, delta = height - previous;
         heights[index] = height; add(index, delta); changed = true;
+        heightCache.set(element.dataset.tItemKey, height);
         if (index < anchor) shift += delta;
       });
       if (changed) {
@@ -966,7 +977,7 @@
         // Explicit reader actions (language changes, expand/collapse and deep
         // links) restore their semantic anchor separately and still use the
         // programmatic correction path below.
-        if (shift && !userScrolling && !reader.suppressMeasureCompensation) setProgrammaticScroll(pane.scrollTop + shift);
+        if (shift && !userScrolling && !pointerScrolling && !touchScrolling && !reader.suppressMeasureCompensation && !reader.structureRestorePending) setProgrammaticScroll(pane.scrollTop + shift);
       }
     };
     const scheduleMeasure = () => { if (!measureRaf) measureRaf = requestAnimationFrame(measure); };
@@ -982,9 +993,10 @@
       scheduleMeasure();
     };
     const targetForKey = key => [...windowEl.querySelectorAll('[data-t-item-key]')].find(element => element.dataset.tItemKey === key) || null;
-    const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0) => {
+    const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0, options = {}) => {
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), itemKey = items[index]?.key, token = ++positionToken;
       if (positionRaf) cancelAnimationFrame(positionRaf);
+      const maxAttempts = Math.max(1, Number(options.maxAttempts) || 12);
       let attempts = 0;
       const settle = () => {
         positionRaf = 0;
@@ -993,7 +1005,7 @@
         draw(true);
         const element = targetForKey(itemKey);
         if (!element) {
-          if (attempts++ < 12) positionRaf = requestAnimationFrame(settle);
+          if (attempts++ < maxAttempts) positionRaf = requestAnimationFrame(settle);
           return;
         }
         // visibleTop is where content actually starts being readable - below
@@ -1004,7 +1016,7 @@
           : align === 'top' ? visibleTop + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > visibleTop && rowRect.top < paneRect.bottom;
-        if ((!visible || Math.abs(delta) > 3) && attempts++ < 12) {
+        if ((!visible || Math.abs(delta) > 3) && attempts++ < maxAttempts) {
           setProgrammaticScroll(pane.scrollTop + delta);
           draw(true);
           positionRaf = requestAnimationFrame(settle);
@@ -1027,7 +1039,9 @@
       // not a user scroll and must not cancel the anchor restore scheduled for
       // a language/font rebuild.
       if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
+      positionToken += 1;
       reader.anchorRestoreCancelled = true;
+      reader.structureRestorePending = false;
       reader.suppressMeasureCompensation = false;
       userScrolling = true;
       programmaticUntil = 0;
@@ -1044,7 +1058,7 @@
       // Mobile momentum can continue after touchend.  Only yield scrollTop
       // back to layout work after a quiet period, or an explicit scrollend.
       scrollIdleTimer = setTimeout(() => {
-        if (!pointerScrolling) { userScrolling = false; schedule(true); }
+        if (!pointerScrolling && !touchScrolling) { userScrolling = false; schedule(true); }
       }, 260);
     };
     const endPointerScroll = event => {
@@ -1059,15 +1073,35 @@
       }
       schedule();
     };
-    const onScrollEnd = () => { if (!pointerScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
+    const beginTouchScroll = event => {
+      if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
+      touchScrolling = true;
+      beginUserScroll(event);
+    };
+    const moveTouchScroll = event => {
+      if (!touchScrolling) return;
+      beginUserScroll(event);
+    };
+    const endTouchScroll = () => {
+      touchScrolling = false;
+      settleUserScroll();
+    };
+    const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     pane.addEventListener('wheel', beginUserScroll, { passive: true });
     pane.addEventListener('pointerdown', beginPointerScroll, { passive: true });
     pane.addEventListener('pointerup', endPointerScroll, { passive: true });
     pane.addEventListener('pointercancel', endPointerScroll, { passive: true });
+    pane.addEventListener('touchstart', beginTouchScroll, { passive: true });
+    pane.addEventListener('touchmove', moveTouchScroll, { passive: true });
+    pane.addEventListener('touchend', endTouchScroll, { passive: true });
+    pane.addEventListener('touchcancel', endTouchScroll, { passive: true });
     pane.addEventListener('scrollend', onScrollEnd, { passive: true });
-    spacer.style.height = `${count * EST_ROW_HEIGHT}px`;
+    // Start from the cached Fenwick total.  Using the uncached full estimate
+    // for one frame makes desktop collapse briefly clamp scrollTop before the
+    // semantic anchor is restored, which is visible as a flash/jump.
+    spacer.style.height = `${Math.max(1, totalHeight())}px`;
     draw(true);
     const nearestRootRowId = index => {
       for (let cursor = Math.min(index, count - 1); cursor >= 0; cursor -= 1) {
@@ -1149,15 +1183,20 @@
           draw(true);
           return;
         }
+        const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
+        if (index !== undefined) {
+          // Stable item identity is authoritative after a structural change.
+          // The old absolute scrollTop belongs to the pre-change layout and
+          // can point at a completely different row after collapse.
+          scrollToIndex(index, 'anchor', Number(anchor.offset) || 12, { maxAttempts: 2 });
+          return;
+        }
         if (Number.isFinite(Number(anchor.scrollTop))) {
           setProgrammaticScroll(Number(anchor.scrollTop));
           draw(true);
-          return;
         }
-        const index = anchor.itemKey && indexByKey.has(anchor.itemKey) ? indexByKey.get(anchor.itemKey) : indexById.get(Number(anchor.rowId));
-        if (index !== undefined) scrollToIndex(index, 'anchor', Number(anchor.offset) || 12);
       },
-      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('pointerdown', beginPointerScroll); pane.removeEventListener('pointerup', endPointerScroll); pane.removeEventListener('pointercancel', endPointerScroll); pane.removeEventListener('scrollend', onScrollEnd); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('pointerdown', beginPointerScroll); pane.removeEventListener('pointerup', endPointerScroll); pane.removeEventListener('pointercancel', endPointerScroll); pane.removeEventListener('touchstart', beginTouchScroll); pane.removeEventListener('touchmove', moveTouchScroll); pane.removeEventListener('touchend', endTouchScroll); pane.removeEventListener('touchcancel', endTouchScroll); pane.removeEventListener('scrollend', onScrollEnd); resize?.disconnect(); },
     };
   }
 
@@ -1223,60 +1262,59 @@
     return anchor;
   }
 
-  function rebuildReaderVirtual(reader, anchor = null) {
+  function rebuildReaderVirtual(reader, anchor = null, preserveCurrent = true) {
     if (!reader || state.reader !== reader) return;
-    const saved = anchor || reader.virtual?.getAnchor?.();
+    const saved = anchor || (preserveCurrent ? reader.virtual?.getAnchor?.() : null);
+    const token = saved ? beginReaderAnchorRestore(reader) : null;
     reader.virtual?.destroy?.();
     reader.virtual = renderVirtual(reader, reader.currentIndex);
-    if (saved) { reader.virtual?.restoreAnchor(saved); scheduleReaderAnchorRestore(reader, saved); }
+    if (saved) {
+      // Restore once synchronously while the browser is still in the same
+      // event turn, then perform only a quiet post-layout confirmation.
+      reader.virtual.restoreAnchor(saved);
+      scheduleReaderAnchorRestore(reader, saved, token);
+    }
   }
 
-  function scheduleReaderAnchorRestore(reader, anchor) {
-    if (!reader || !anchor) return;
+  function beginReaderAnchorRestore(reader) {
     const token = (reader.anchorRestoreToken || 0) + 1;
     reader.anchorRestoreToken = token;
     reader.anchorRestoreCancelled = false;
+    reader.structureRestorePending = true;
     reader.suppressMeasureCompensation = true;
-    let attempts = 0;
+    return token;
+  }
+
+  function finishReaderAnchorRestore(reader, token) {
+    if (!reader || state.reader !== reader || reader.anchorRestoreToken !== token) return;
+    reader.structureRestorePending = false;
+    reader.suppressMeasureCompensation = false;
+  }
+
+  function scheduleReaderAnchorRestore(reader, anchor, token = null) {
+    if (!reader || !anchor) return;
+    const restoreToken = token || beginReaderAnchorRestore(reader);
+    let frames = 0;
     const apply = () => {
-      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled || !reader.virtual) {
-        if (state.reader === reader) reader.suppressMeasureCompensation = false;
+      if (state.reader !== reader || reader.anchorRestoreToken !== restoreToken || reader.anchorRestoreCancelled || !reader.virtual) {
+        if (state.reader === reader && reader.anchorRestoreToken === restoreToken) finishReaderAnchorRestore(reader, restoreToken);
+        return;
+      }
+      // Wait for the new virtual window and its first measurement batch.  Do
+      // not redraw the window on every frame: that empty/reinsert cycle is the
+      // source of a visible desktop flash during expand/collapse.
+      if (frames++ < 2) {
+        requestAnimationFrame(apply);
         return;
       }
       reader.virtual.restoreAnchor(anchor);
-      // One post-layout confirmation is enough for an explicit reader action.
-      // Continuing to chase a moving measurement after this point is what made
-      // a mobile reader drift while its inertial scroll was still settling.
-      if (attempts++ < 1) setTimeout(apply, 90);
-      else reader.suppressMeasureCompensation = false;
+      requestAnimationFrame(() => finishReaderAnchorRestore(reader, restoreToken));
     };
-    setTimeout(apply, 0);
+    requestAnimationFrame(apply);
   }
 
   function scheduleMeasuredLanguageAnchor(reader, anchor) {
-    if (!reader?.virtual?.pane || !anchor) return;
-    const token = (reader.anchorRestoreToken || 0) + 1;
-    reader.anchorRestoreToken = token;
-    reader.anchorRestoreCancelled = false;
-    reader.suppressMeasureCompensation = true;
-    let attempts = 0;
-    const apply = () => {
-      if (state.reader !== reader || reader.anchorRestoreToken !== token || reader.anchorRestoreCancelled) {
-        if (state.reader === reader) reader.suppressMeasureCompensation = false;
-        return;
-      }
-      const element = [...reader.virtual.pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor.itemKey);
-      if (element) {
-        const paneRect = reader.virtual.pane.getBoundingClientRect();
-        const toolbar = reader.virtual.pane.querySelector('#tipitaka-toolbar');
-        const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
-        const delta = element.getBoundingClientRect().top - desired;
-        if (Math.abs(delta) > 1) reader.virtual.pane.scrollTop += delta;
-      }
-      if (attempts++ < 2) setTimeout(apply, 80);
-      else reader.suppressMeasureCompensation = false;
-    };
-    requestAnimationFrame(apply);
+    scheduleReaderAnchorRestore(reader, anchor);
   }
 
   function updateAnnotationUrl(reader, unit = null, kind = null, fragment = null) {
@@ -1325,7 +1363,10 @@
       if (state.reader !== reader || reader.rootText !== rootText) return;
       rootText.loading = false; rootText.error = error.message || '根本片段加载失败';
     }
-    rebuildReaderVirtual(reader, anchor);
+    // If the reader was moved while the fragment was loading, keep the
+    // user's current position.  The completion rebuild must not resurrect
+    // the anchor from before that gesture.
+    rebuildReaderVirtual(reader, reader.anchorRestoreCancelled ? null : anchor, !reader.anchorRestoreCancelled);
   }
 
   async function activateRootText(reader, descriptor) {
@@ -1349,7 +1390,10 @@
       if (state.reader !== reader || reader.annotation !== annotation) return;
       annotation.loading = false; annotation.error = error.message || '注释片段加载失败';
     }
-    rebuildReaderVirtual(reader, anchor);
+    // If the reader was moved while the fragment was loading, keep the
+    // user's current position.  The completion rebuild must not resurrect
+    // the anchor from before that gesture.
+    rebuildReaderVirtual(reader, reader.anchorRestoreCancelled ? null : anchor, !reader.anchorRestoreCancelled);
   }
 
   async function activateAnnotation(reader, descriptor) {
@@ -1414,7 +1458,7 @@
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null };
+      state.reader = { meta, work, overlays, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null, virtualHeightCache: new Map(), structureRestorePending: false, anchorRestoreToken: 0, anchorRestoreCancelled: false, suppressMeasureCompensation: false };
       const deepAnnotation = annotationDescriptor(commentaryMap, params.get('fragment'), params.get('annotation'));
       if (deepAnnotation) {
         state.reader.annotationPicker = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind };
@@ -1435,7 +1479,10 @@
       app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-t-show-pali="${settings().pali ? 1 : 0}" data-t-show-zh="${settings().zh ? 1 : 0}" data-t-show-en="${settings().en ? 1 : 0}" style="font-size:${settings().font}px">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
-      if (preserveAnchor?.itemKey || preserveAnchor?.rowId) { state.reader.virtual?.restoreAnchor(preserveAnchor); scheduleReaderAnchorRestore(state.reader, preserveAnchor); }
+      if (preserveAnchor?.itemKey || preserveAnchor?.rowId) {
+        state.reader.virtual?.restoreAnchor(preserveAnchor);
+        scheduleReaderAnchorRestore(state.reader, preserveAnchor);
+      }
       else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
@@ -1623,34 +1670,9 @@
         if (toggle === 'pali' || toggle === 'zh' || toggle === 'en') {
           const attr = `tShow${toggle[0].toUpperCase()}${toggle.slice(1)}`;
           reader.virtual?.pane?.dataset && (reader.virtual.pane.dataset[attr] = event.target.checked ? '1' : '0');
-          reader.anchorRestoreToken = (reader.anchorRestoreToken || 0) + 1;
-          reader.anchorRestoreCancelled = false;
-          reader.suppressMeasureCompensation = true;
-          const pane = reader.virtual.pane, started = performance.now();
-          let userMoved = false;
-          const release = () => {
-            userMoved = true;
-            pane.removeEventListener('wheel', release);
-            pane.removeEventListener('touchmove', release);
-          };
-          const stabilize = () => {
-            if (state.reader !== reader || userMoved || performance.now() - started > 1200) {
-              pane.removeEventListener('wheel', release);
-              pane.removeEventListener('touchmove', release);
-              return;
-            }
-            const element = [...pane.querySelectorAll('[data-t-item-key]')].find(item => item.dataset.tItemKey === anchor?.itemKey);
-            if (element) {
-              const paneRect = pane.getBoundingClientRect(), toolbar = pane.querySelector('#tipitaka-toolbar');
-              const desired = paneRect.top + (toolbar?.offsetHeight || 0) + (Number(anchor.offset) || 12);
-              const delta = element.getBoundingClientRect().top - desired;
-              if (Math.abs(delta) > 1) pane.scrollTop += delta;
-            }
-            requestAnimationFrame(stabilize);
-          };
-          pane.addEventListener('wheel', release, { passive: true });
-          pane.addEventListener('touchmove', release, { passive: true });
-          requestAnimationFrame(stabilize);
+          reader.virtual?.refresh?.();
+          reader.virtual?.restoreAnchor?.(anchor);
+          scheduleReaderAnchorRestore(reader, anchor);
           return;
         }
         // Language visibility only changes row markup.  Rebuilding the whole
