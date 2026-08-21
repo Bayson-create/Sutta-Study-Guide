@@ -1452,10 +1452,18 @@
     app.onchange = event => {
       const toggle = event.target.dataset.tToggle;
       if (toggle) {
-        const anchor = readerViewAnchor(state.reader);
+        const reader = state.reader;
+        if (!reader) return;
+        const anchor = readerViewAnchor(reader);
         settings()[toggle] = event.target.checked;
         saveSettings();
-        renderReader(state.reader.meta.id, anchor);
+        // Language visibility only changes row markup.  Rebuilding the whole
+        // reader here discards measured virtual-list heights and makes the
+        // browser briefly position the viewport from rough estimates.  Keep
+        // the existing list and expanded fragment, redraw the visible window,
+        // then restore the same semantic anchor once measurements settle.
+        reader.virtual?.refresh?.();
+        scheduleReaderAnchorRestore(reader, anchor);
       }
     };
   }
