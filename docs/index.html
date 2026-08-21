@@ -4017,6 +4017,11 @@ function renderHome() {
     <div class="title">巴利人格过程实验室</div>
     <div class="desc">以六门、触、受、想、行、识和训练分岔运行可复现情境；并列查看经律核心版与上座部整合版，逐事件审计引文与不确定性。</div>
   </div>`;
+  html += `<div class="research-item-card" onclick="location.hash='#/research/vism'">
+    <span class="icon">🪷</span>
+    <div class="title">清净之道</div>
+    <div class="desc">《清净道论》二十三品全本三语阅读器——巴利语、简体中文与 English 对照阅读，逐品研读戒、定、慧三学。</div>
+  </div>`;
   for (const [key, cat] of Object.entries(cats)) {
     html += `<div class="card" onclick="location.hash='#/category/${key}'">
       <span class="icon">${cat.icon}</span>
@@ -4032,13 +4037,6 @@ function renderHome() {
     <div>
       <div class="research-card-title">个人研究成果总结</div>
       <div class="research-card-sub">Personal Research &mdash; 佛法概念解说 · 佛教历史时间轴</div>
-    </div>
-  </div>`;
-  html += `<div class="research-card" onclick="location.hash='#/research/vism'">
-    <span class="icon">🪷</span>
-    <div>
-      <div class="research-card-title">清净之道</div>
-      <div class="research-card-sub">《清净道论》二十三品全本三语阅读器 · 巴利语、简体中文与 English 对照阅读</div>
     </div>
   </div>`;
 
