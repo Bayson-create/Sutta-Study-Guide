@@ -980,6 +980,7 @@
         itemKey,
         rowId: items[index]?.kind === 'root' ? Number(items[index].row.id) : nearestRootRowId(index),
         offset: element.getBoundingClientRect().top - visibleTop,
+        scrollTop: pane.scrollTop,
       };
     };
     const getAnchor = () => {
@@ -999,6 +1000,7 @@
           // starts near the old viewport instead of defaulting to row zero.
           rowId: item.kind === 'root' ? Number(item.row.id) : nearestRootRowId(index),
           offset: element ? element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) : 12,
+          scrollTop: pane.scrollTop,
         };
       })();
     };
@@ -1014,7 +1016,7 @@
       }
       const paneRect = pane.getBoundingClientRect();
       const index = indexByKey.get(itemKey);
-      return { itemKey, rowId: index === undefined ? null : nearestRootRowId(index), offset: element.getBoundingClientRect().top - (paneRect.top + stickyOffset()) };
+      return { itemKey, rowId: index === undefined ? null : nearestRootRowId(index), offset: element.getBoundingClientRect().top - (paneRect.top + stickyOffset()), scrollTop: pane.scrollTop };
     };
     return {
       pane,
@@ -1032,6 +1034,11 @@
           const desired = paneRect.top + stickyOffset() + (Number(anchor.offset) || 12);
           const delta = element.getBoundingClientRect().top - desired;
           if (Math.abs(delta) > 2) setProgrammaticScroll(pane.scrollTop + delta);
+          draw(true);
+          return;
+        }
+        if (Number.isFinite(Number(anchor.scrollTop))) {
+          setProgrammaticScroll(Number(anchor.scrollTop));
           draw(true);
           return;
         }
