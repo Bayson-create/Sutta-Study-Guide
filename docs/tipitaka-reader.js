@@ -1053,40 +1053,12 @@
       pointerScrolling = true;
       beginUserScroll(event);
     };
-    // measure() keeps correcting the Fenwick tree for real row heights
-    // (vs the EST_ROW_HEIGHT placeholder) throughout a gesture, but - by
-    // design - never lets that correction move scrollTop while the finger
-    // owns it (see the guard in measure() below). Those corrections don't
-    // land smoothly; they land all at once the moment scrolling settles and
-    // draw(true) is forced to recompute `start` from pane.scrollTop against
-    // the now fully-caught-up tree. If the content just scrolled through
-    // deviated much from the 224px estimate (routine for stacked
-    // Pali/Chinese/English rows), that recomputed `start` can point at a
-    // different row than what was actually on screen a moment before - a
-    // visible forward/backward jump on an ordinary small scroll, nowhere
-    // near any structural boundary. scrollToIndex's own settle() (above)
-    // already solves this exact problem for deliberate jumps by re-checking
-    // the target row's real position after drawing and nudging scrollTop to
-    // match; reuse that pattern here for the passive settle-time redraw.
-    const settleRedraw = () => {
-      const anchor = visibleItemAnchor();
-      schedule(true);
-      if (!anchor) return;
-      requestAnimationFrame(() => {
-        if (destroyed || userScrolling || pointerScrolling || touchScrolling || reader.suppressMeasureCompensation || reader.structureRestorePending) return;
-        const element = targetForKey(anchor.itemKey);
-        if (!element) return;
-        const paneRect = pane.getBoundingClientRect(), visibleTop = paneRect.top + stickyOffset();
-        const delta = (element.getBoundingClientRect().top - visibleTop) - anchor.offset;
-        if (Math.abs(delta) > 1) setProgrammaticScroll(pane.scrollTop + delta);
-      });
-    };
     const settleUserScroll = () => {
       clearTimeout(scrollIdleTimer);
       // Mobile momentum can continue after touchend.  Only yield scrollTop
       // back to layout work after a quiet period, or an explicit scrollend.
       scrollIdleTimer = setTimeout(() => {
-        if (!pointerScrolling && !touchScrolling) { userScrolling = false; settleRedraw(); }
+        if (!pointerScrolling && !touchScrolling) { userScrolling = false; schedule(true); }
       }, 260);
     };
     const endPointerScroll = event => {
@@ -1114,7 +1086,7 @@
       touchScrolling = false;
       settleUserScroll();
     };
-    const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; settleRedraw(); } };
+    const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
     const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     pane.addEventListener('wheel', beginUserScroll, { passive: true });
