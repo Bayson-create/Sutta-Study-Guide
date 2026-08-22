@@ -9969,13 +9969,21 @@ async function momentsLoadFeed() {
     // that (e.g. right after publishing your first-ever moment).
     const list = document.getElementById('moments-list');
     if (!list) return; // navigated away while loading
+    // .loading centers its content (spinner/text) - the initial markup
+    // carries that class for the "加载中…" placeholder, but it must come
+    // off once real content goes in, or every moment card inherits
+    // text-align:center for name/body text.
+    list.classList.remove('loading');
     list.innerHTML = data.items.length
       ? data.items.map(momentCardHtml).join('')
       : `<div class="community-empty">暂无动态，分享第一条善友圈动态吧</div>`;
   } catch (e) {
     clearTimeout(slowHint);
     const list = document.getElementById('moments-list');
-    if (list) list.innerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
+    if (list) {
+      list.classList.remove('loading');
+      list.innerHTML = `<div class="error-msg">${communityTimeoutMessage(e)}</div>`;
+    }
   }
 }
 
