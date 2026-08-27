@@ -1049,6 +1049,7 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 .toolbar .tb-group { display: flex; gap: 4px; flex-wrap: wrap; }
+.toolbar .tb-group[hidden] { display: none; }
 .tb-btn {
   padding: 5px 12px; border: 1px solid var(--border); border-radius: 5px;
   background: var(--card-bg); cursor: pointer; font-size: 0.8em;
@@ -1118,6 +1119,68 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 .seg-chinese { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .seg-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
 
+/* True per-sentence trilingual grid (三语对照, both 观辰版 and aligned 叶均版) */
+.tri-block { display: flex; flex-direction: column; }
+.tri-row { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 14px; align-items: start; }
+.tri-cell { min-width: 0; }
+.tri-cell-zh .seg-chinese { margin: 0; }
+.vism-align-note { margin-bottom: 16px; }
+
+/* Vism reader-only font-size/line-height customization. Scoped under
+   #vism-reader-body so it never affects the general Sutta reader, which
+   reuses the same .seg-pali/.seg-en/.zh-formatted classes elsewhere in this
+   file. Nested em-based sizes (.seg-pali's 0.92em etc.) scale automatically
+   off the base font-size set here - no need to touch each rule. */
+#vism-reader-body { font-size: var(--vism-font-size, 1em); }
+#vism-reader-body .zh-formatted,
+#vism-reader-body .seg-en,
+#vism-reader-body .seg-chinese,
+#vism-reader-body .trans-text { line-height: var(--vism-line-height, inherit); }
+
+/* Reading settings panel */
+.vism-settings-panel {
+  position: sticky; top: 45px; z-index: 99; background: var(--toolbar-bg); border-bottom: 1px solid var(--border);
+  padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; font-size: 0.85em;
+}
+.vism-settings-row { display: flex; align-items: center; gap: 8px; }
+.vism-settings-row span:not(.tb-btn) { min-width: 2.2em; text-align: center; color: var(--text-light); }
+.vism-settings-panel .tb-btn { padding: 3px 9px; }
+
+/* Dark / eye-care theme, scoped to this reader only (never touches :root) */
+#vism-page[data-vism-theme="dark"] {
+  --bg: #1c1a17; --bg-warm: #211e19; --card-bg: #23201b; --text: #d8d0c0; --text-light: #a89d88;
+  --border: #3a352c; --hover-bg: #2a251e; --toolbar-bg: #201d18; --accent-bg: #2a2419;
+  --pali-color: #b8a878; background: var(--bg); color: var(--text);
+}
+
+/* Private highlight/note controls (independent of the shared trans-* editor) */
+.segment-block.vism-hl-yellow { background: rgba(230, 190, 40, 0.16); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
+.segment-block.vism-hl-green { background: rgba(70, 160, 90, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
+.segment-block.vism-hl-blue { background: rgba(60, 120, 190, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
+.segment-block.vism-hl-pink { background: rgba(200, 90, 140, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
+.vism-annotate { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; }
+.vism-annotate-swatches { display: inline-flex; gap: 4px; }
+.vism-hl-swatch {
+  width: 15px; height: 15px; border-radius: 50%; border: 1px solid var(--border); cursor: pointer; padding: 0;
+}
+.vism-hl-swatch-yellow { background: #e6be28; }
+.vism-hl-swatch-green { background: #46a05a; }
+.vism-hl-swatch-blue { background: #3c78be; }
+.vism-hl-swatch-pink { background: #c85a8c; }
+.vism-hl-swatch.active { outline: 2px solid var(--accent); outline-offset: 1px; }
+.vism-hl-clear { background: var(--card-bg); color: var(--text-light); font-size: 0.7em; line-height: 13px; }
+.vism-note-toggle {
+  font-size: 0.85em; border: 1px solid var(--border); border-radius: 4px; background: var(--card-bg);
+  color: var(--text-light); cursor: pointer; padding: 1px 6px; font-family: inherit;
+}
+.vism-note-toggle.has-note { color: var(--accent); border-color: var(--accent-light); }
+.vism-note-panel { flex-basis: 100%; margin-top: 6px; padding: 8px; background: var(--accent-bg); border-radius: 6px; border: 1px solid var(--border); }
+.vism-note-panel textarea {
+  width: 100%; font-family: inherit; font-size: 0.92em; padding: 6px 8px; border: 1px solid var(--border);
+  border-radius: 4px; background: var(--card-bg); color: var(--text); resize: vertical;
+}
+.vism-note-panel-actions { display: flex; gap: 8px; margin-top: 8px; }
+
 /* Papancasudani reader */
 .papanca-reader { max-width: 820px; margin: 0 auto; }
 .papanca-block { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
@@ -1134,8 +1197,14 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 /* === Shared per-sentence translation editor (vism 逐句三语对照 + papanca) === */
 .trans-slot { position: relative; }
 .trans-empty { color: var(--text-light); font-style: italic; font-size: 0.95em; }
-.trans-actions { display: flex; gap: 6px; margin-top: 4px; opacity: 0.55; transition: opacity 0.15s; flex-wrap: wrap; }
-.trans-slot:hover .trans-actions, .trans-actions:focus-within { opacity: 1; }
+.trans-actions { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+.trans-info-toggle {
+  font-size: 0.8em; line-height: 1; padding: 1px 6px; margin-top: 4px; border: 1px solid var(--border);
+  border-radius: 50%; background: var(--card-bg); color: var(--text-light); cursor: pointer; font-family: inherit;
+}
+.trans-info-toggle:hover, .trans-info-toggle[aria-expanded="true"] { color: var(--accent); border-color: var(--accent-light); }
+.trans-meta-panel { margin-top: 4px; }
+.trans-meta-panel[hidden] { display: none; }
 .trans-btn {
   font-size: 0.72em; padding: 2px 8px; border: 1px solid var(--border); border-radius: 4px;
   background: var(--card-bg); color: var(--text-light); cursor: pointer; font-family: inherit;
@@ -5148,12 +5217,33 @@ function transSlotHtml(docKey, unitKey, staticText, staticNote, pali, context) {
   if (TRANS_DOC_ERRORS[docKey]) {
     html += '<div class="trans-save-status">翻译覆盖层暂时无法连接；当前显示的是默认译文，编辑内容仍可保留并稍后重试。</div>';
   }
+  let panelHtml = '';
+  if (note && note.trim()) panelHtml += `<div class="trans-note-view" data-role="note">${esc(note)}</div>`;
+  if (unit && unit.last_reason) {
+    const who = unit.updated_by ? esc(unit.updated_by.display_name) : '匿名';
+    const when = unit.updated_at ? new Date(unit.updated_at).toLocaleDateString('zh-CN') : '';
+    panelHtml += `<div class="trans-meta">最后由 ${who} 修改${when ? ' · ' + when : ''} · 理由：${esc(unit.last_reason)}</div>`;
+  }
+  if (transPendingLoad(docKey, unitKey)) {
+    panelHtml += '<div class="trans-pending-save">有一次保存尚未确认，当前编辑内容已保留。<button type="button" data-act="retry-pending">继续保存</button></div>';
+  }
+  if (TRANS_DOC_ERRORS[docKey]) {
+    panelHtml += '<div class="trans-save-status">翻译覆盖层暂时无法连接；当前显示的是默认译文，编辑内容仍可保留并稍后重试。</div>';
+  }
   if (communityCurrentUser) {
-    html += `<div class="trans-actions">
+    panelHtml += `<div class="trans-actions">
       <button class="trans-btn" data-act="${isEmpty ? 'new' : 'edit'}">${isEmpty ? '＋ 新建译文' : '✎ 编辑'}</button>
       <button class="trans-btn" data-act="mitra">✦ Dharmamitra</button>
       ${unit ? '<button class="trans-btn" data-act="history">历史</button>' : ''}
     </div>`;
+  }
+  // Version metadata and edit tooling are collapsed behind a small ⓘ toggle
+  // by default so the main 逐句 reading flow stays lightweight (per-paragraph
+  // text only); the underlying edit/Dharmamitra/history actions and their
+  // click handling are unchanged, just wrapped in a hidden panel.
+  if (panelHtml) {
+    html += `<button type="button" class="trans-info-toggle" data-act="toggle-meta" aria-label="译文信息与编辑" aria-expanded="false" title="译文信息与编辑">ⓘ</button>`;
+    html += `<div class="trans-meta-panel" hidden>${panelHtml}</div>`;
   }
   html += '</div>';
   return html;
@@ -5195,6 +5285,15 @@ async function transHandleClick(e) {
   const docKey = slot.dataset.doc, unitKey = slot.dataset.unit;
   const key = `${docKey}|${unitKey}`;
   const act = btn.dataset.act;
+
+  if (act === 'toggle-meta') {
+    const panel = slot.querySelector('.trans-meta-panel');
+    if (panel) {
+      panel.hidden = !panel.hidden;
+      btn.setAttribute('aria-expanded', String(!panel.hidden));
+    }
+    return;
+  }
 
   if (act === 'edit' || act === 'new') {
     const unit = transUnit(docKey, unitKey);
@@ -6599,6 +6698,33 @@ let vismReaderMode = 'trilingual';
 let vismShowPali = true;
 let _vismIndexCache = null;
 
+// Reading-customization settings (font size / line height / dark-eye-care
+// theme / trilingual Chinese version), scoped to this reader only - a
+// single localStorage blob, same one-key-per-reader convention already used
+// by the unrelated V4 reader (tipitaka-reader.js's 'tipitaka-reader-settings').
+const VISM_SETTINGS_KEY = 'vism-reader-settings';
+let _vismSettings = null;
+function vismSettings() {
+  if (_vismSettings) return _vismSettings;
+  try {
+    _vismSettings = { ...{ fontSize: 18, lineHeight: 2, theme: 'light', zhVersion: 'guanchen' }, ...JSON.parse(localStorage.getItem(VISM_SETTINGS_KEY) || '{}') };
+  } catch (e) {
+    _vismSettings = { fontSize: 18, lineHeight: 2, theme: 'light', zhVersion: 'guanchen' };
+  }
+  return _vismSettings;
+}
+function saveVismSettings() {
+  try { localStorage.setItem(VISM_SETTINGS_KEY, JSON.stringify(vismSettings())); } catch (e) { /* best effort */ }
+}
+function applyVismSettingsToDom() {
+  const s = vismSettings();
+  const page = document.getElementById('vism-page');
+  if (!page) return;
+  page.style.setProperty('--vism-font-size', s.fontSize + 'px');
+  page.style.setProperty('--vism-line-height', String(s.lineHeight));
+  page.dataset.vismTheme = s.theme === 'dark' ? 'dark' : 'light';
+}
+
 const VISM_CHAPTER_ICONS = ['🕯️','🌾','🎯','🟤','🔷','💀','🙏','📿','🕊️','🌫️','🧘','✨','👁️','🧩','🔭','⚖️','🌳','👀','❓','🛤️','🚶','💎','🎓'];
 
 async function loadVismIndex() {
@@ -7712,16 +7838,122 @@ function renderVismParallel(docKey, chapterTitle, parts) {
       const unitKey = `p${pi + 1}-r${ri + 1}`;
       const paliText = vismAnchorNormalize(row.pali);
       const englishText = vismAnchorNormalize(row.english);
-      html += `<div class="segment-block" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
+      const annotation = vismAnnotation(docKey, unitKey);
+      const hlClass = annotation && annotation.highlight_color ? ` vism-hl-${annotation.highlight_color}` : '';
+      html += `<div class="segment-block${hlClass}" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
       html += `<div class="seg-en">${esc(row.english)}</div>`;
       html += transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle);
+      html += vismAnnotationSlotHtml(docKey, unitKey);
       html += '</div>';
     });
   });
   html += '</div>';
   return html;
 }
+
+// === Private per-user highlights/notes on Vism 逐句三语对照 sentences ===
+// Deliberately separate from the shared trans-* translation overlay above:
+// writes here go to a private-only table (app/routers/vism_annotations.py),
+// never visible to any other reader and with no revision history, per the
+// product decision to keep the shared/public translation-edit feature as-is
+// and add this as an independent, personal annotation capability.
+const VISM_ANNOTATION_CACHE = {};   // doc_key -> { unit_key: {highlight_color, note} }
+const VISM_HIGHLIGHT_COLORS = ['yellow', 'green', 'blue', 'pink'];
+
+async function vismAnnotationsLoadDoc(docKey) {
+  if (VISM_ANNOTATION_CACHE[docKey]) return VISM_ANNOTATION_CACHE[docKey];
+  const map = {};
+  VISM_ANNOTATION_CACHE[docKey] = map;
+  if (!communityCurrentUser) return map;
+  try {
+    const res = await fetch(`${API_BASE}/api/vism/annotations?doc=${encodeURIComponent(docKey)}`, { headers: communityAuthHeaders() });
+    if (res.ok) (await res.json()).forEach(row => { map[row.unit_key] = { highlight_color: row.highlight_color, note: row.note }; });
+  } catch (e) { /* private annotations are a nice-to-have; a load failure just leaves rows unmarked */ }
+  return map;
+}
+function vismAnnotation(docKey, unitKey) {
+  return (VISM_ANNOTATION_CACHE[docKey] || {})[unitKey] || null;
+}
+async function vismAnnotationSave(docKey, unitKey, body) {
+  const res = await fetch(`${API_BASE}/api/vism/annotations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
+  const unit = await res.json();
+  const map = VISM_ANNOTATION_CACHE[docKey] || (VISM_ANNOTATION_CACHE[docKey] = {});
+  map[unitKey] = { highlight_color: unit.highlight_color, note: unit.note };
+  return unit;
+}
+async function vismAnnotationDelete(docKey, unitKey) {
+  await fetch(`${API_BASE}/api/vism/annotations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, { method: 'DELETE', headers: communityAuthHeaders() });
+  const map = VISM_ANNOTATION_CACHE[docKey];
+  if (map) delete map[unitKey];
+}
+function vismAnnotationSlotHtml(docKey, unitKey) {
+  if (!communityCurrentUser) return '';
+  const a = vismAnnotation(docKey, unitKey) || { highlight_color: null, note: '' };
+  const swatches = VISM_HIGHLIGHT_COLORS.map(color => `<button type="button" class="vism-hl-swatch vism-hl-swatch-${color}${a.highlight_color === color ? ' active' : ''}" data-vism-hl="${color}" title="高亮" aria-label="高亮为${color}"></button>`).join('');
+  return `<div class="vism-annotate" data-doc="${esc(docKey)}" data-unit="${esc(unitKey)}">
+    <div class="vism-annotate-swatches">${swatches}<button type="button" class="vism-hl-swatch vism-hl-clear" data-vism-hl="" title="清除高亮" aria-label="清除高亮">✕</button></div>
+    <button type="button" class="vism-note-toggle${a.note ? ' has-note' : ''}" data-act="vism-note-toggle" title="私人笔记（仅自己可见）">📝${a.note ? '·' : ''}</button>
+  </div>`;
+}
+function vismRerenderAnnotation(row, docKey, unitKey) {
+  if (!row) return;
+  const a = vismAnnotation(docKey, unitKey);
+  VISM_HIGHLIGHT_COLORS.forEach(c => row.classList.remove(`vism-hl-${c}`));
+  if (a && a.highlight_color) row.classList.add(`vism-hl-${a.highlight_color}`);
+  const old = row.querySelector('.vism-annotate');
+  if (old) old.outerHTML = vismAnnotationSlotHtml(docKey, unitKey);
+}
+async function vismAnnotationHandleClick(e) {
+  const swatch = e.target.closest('[data-vism-hl]');
+  const noteToggle = e.target.closest('[data-act="vism-note-toggle"]');
+  const noteSave = e.target.closest('[data-act="vism-note-save"]');
+  const noteCancel = e.target.closest('[data-act="vism-note-cancel"]');
+  if (!swatch && !noteToggle && !noteSave && !noteCancel) return;
+  const wrap = e.target.closest('.vism-annotate');
+  if (!wrap) return;
+  const docKey = wrap.dataset.doc, unitKey = wrap.dataset.unit;
+  const row = wrap.closest('.segment-block');
+
+  if (swatch) {
+    const color = swatch.dataset.vismHl || null;
+    const existing = vismAnnotation(docKey, unitKey);
+    try {
+      if (!color && !(existing && existing.note)) await vismAnnotationDelete(docKey, unitKey);
+      else await vismAnnotationSave(docKey, unitKey, { highlight_color: color, note: (existing && existing.note) || '' });
+      vismRerenderAnnotation(row, docKey, unitKey);
+    } catch (err) { alert(err.message); }
+  } else if (noteToggle) {
+    const existingPanel = wrap.querySelector('.vism-note-panel');
+    if (existingPanel) { existingPanel.remove(); return; }
+    const a = vismAnnotation(docKey, unitKey) || { note: '' };
+    wrap.insertAdjacentHTML('beforeend', `<div class="vism-note-panel">
+      <textarea data-role="vism-note-input" rows="2" placeholder="仅自己可见的私人笔记…">${esc(a.note || '')}</textarea>
+      <div class="vism-note-panel-actions">
+        <button type="button" class="trans-btn primary" data-act="vism-note-save">保存</button>
+        <button type="button" class="trans-btn" data-act="vism-note-cancel">取消</button>
+      </div>
+    </div>`);
+    wrap.querySelector('[data-role="vism-note-input"]').focus();
+  } else if (noteCancel) {
+    wrap.querySelector('.vism-note-panel')?.remove();
+  } else if (noteSave) {
+    const text = wrap.querySelector('[data-role="vism-note-input"]').value.trim();
+    const existing = vismAnnotation(docKey, unitKey);
+    try {
+      if (!text && !(existing && existing.highlight_color)) await vismAnnotationDelete(docKey, unitKey);
+      else await vismAnnotationSave(docKey, unitKey, { highlight_color: (existing && existing.highlight_color) || null, note: text });
+      wrap.querySelector('.vism-note-panel')?.remove();
+      vismRerenderAnnotation(row, docKey, unitKey);
+    } catch (err) { alert(err.message); }
+  }
+}
+app.addEventListener('click', vismAnnotationHandleClick);
 
 function vismAnchorNormalize(value) {
   return String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLocaleLowerCase();
@@ -7769,8 +8001,78 @@ async function focusVismLectureTarget(target) {
   vismLectureTargetMessage(`已定位讲义项目${target.itemId ? `：${target.itemId}` : ''} · 第 ${target.partIndex} 部分第 ${target.rowIndex} 句`);
 }
 
+// True per-sentence trilingual alignment. Unlike the old whole-document
+// side-by-side dump, both columns are built from ONE shared loop over the
+// same rows array so they're structurally locked row-for-row - no scroll
+// listener needed, they just can't drift apart.
+//
+// "观辰版" (default): vismParallelParts already carries chinese_translation
+// merged 1:1 onto the same peData rows (see vismNormalizeParallel) - exact
+// per-sentence alignment for free.
+//
+// "叶均版": zhData is one unsegmented HTML blob per chapter with no
+// per-row mapping to peData's rows at all. Best-effort: pair each zhData
+// section to the peData part at the same index IF the counts line up
+// (common case, since both ultimately follow the same chapter's structure);
+// otherwise fall back to the original unaligned whole-document dump rather
+// than guess at a pairing that could attach the wrong prose to the wrong part.
+function renderVismTrilingual(peData, parallelParts, zhData) {
+  const zhVersion = vismSettings().zhVersion === 'yejun' ? 'yejun' : 'guanchen';
+  const enNotes = [];
+  if (zhVersion === 'yejun') {
+    const sections = (zhData.sections || []).filter(sec => !(sec.heading === '附注' && !sec.html));
+    if (sections.length === peData.parts.length) {
+      let html = '<div class="tri-block">';
+      peData.parts.forEach((part, pi) => {
+        if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
+        html += '<div class="tri-row"><div class="tri-cell tri-cell-en en-formatted">';
+        part.rows.forEach(row => {
+          html += '<div class="segment-block">';
+          if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
+          html += '<div class="seg-en">' + esc(row.english);
+          if (row.note) { enNotes.push(row.note); html += ` <sup class="vism-fnref" data-fn="en-${enNotes.length}">[${enNotes.length}]</sup>`; }
+          html += '</div></div>';
+        });
+        html += `</div><div class="tri-cell tri-cell-zh zh-formatted">${vismSectionHtml(sections[pi], pi)}</div></div>`;
+      });
+      html += '</div>' + vismEnNotesHtml(enNotes);
+      return html;
+    }
+    const zhContentHtml = (zhData.intro_html || '') + buildZhSectionsHtml(zhData.sections, zhData.footnotes);
+    let html = '<div class="blurb-box vism-align-note"><span class="blurb-label">说明:</span>叶均版品/节划分与巴利·英译不一致，无法逐段对齐，已切换为整篇对照。</div>';
+    html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
+    html += renderVismPaliEn(peData, enNotes);
+    html += vismEnNotesHtml(enNotes);
+    html += '</div></div><div class="side-col"><h3>中文（简体·叶均版）</h3><div class="zh-formatted">';
+    html += zhContentHtml;
+    html += '</div></div></div>';
+    return html;
+  }
+  // 观辰版: chinese_translation is already positionally merged 1:1 onto
+  // these same peData rows (vismNormalizeParallel), so parallelParts[pi]
+  // .rows[ri] lines up exactly with peData.parts[pi].rows[ri].
+  let html = '<div class="tri-block">';
+  peData.parts.forEach((part, pi) => {
+    if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
+    part.rows.forEach((row, ri) => {
+      const chineseText = parallelParts[pi]?.rows[ri]?.chinese_translation || '';
+      html += '<div class="tri-row">';
+      html += '<div class="tri-cell tri-cell-en">';
+      if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
+      html += '<div class="seg-en">' + esc(row.english);
+      if (row.note) { enNotes.push(row.note); html += ` <sup class="vism-fnref" data-fn="en-${enNotes.length}">[${enNotes.length}]</sup>`; }
+      html += '</div>';
+      html += '</div>';
+      html += `<div class="tri-cell tri-cell-zh"><div class="seg-chinese">${chineseText ? esc(chineseText) : '<span class="trans-empty">（尚无逐句译文）</span>'}</div></div>`;
+      html += '</div>';
+    });
+  });
+  html += '</div>' + vismEnNotesHtml(enNotes);
+  return html;
+}
+
 function buildVismReaderBody() {
-  const { peData, zhData } = window._vismData;
+  const { peData, zhData, vismParallelParts } = window._vismData;
   const body = document.getElementById('vism-reader-body');
   const zhContentHtml = (zhData.intro_html || '') + buildZhSectionsHtml(zhData.sections, zhData.footnotes);
 
@@ -7783,13 +8085,7 @@ function buildVismReaderBody() {
     return;
   }
   if (vismReaderMode === 'trilingual') {
-    const enNotes = [];
-    html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
-    html += renderVismPaliEn(peData, enNotes);
-    html += vismEnNotesHtml(enNotes);
-    html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
-    html += zhContentHtml;
-    html += '</div></div></div>';
+    html += renderVismTrilingual(peData, vismParallelParts, zhData);
   } else if (vismReaderMode === 'en') {
     const enNotes = [];
     html += `<div class="en-formatted">${renderVismPaliEn(peData, enNotes)}${vismEnNotesHtml(enNotes)}</div>`;
@@ -7850,8 +8146,12 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
     const vismChapterTitle = isNidana ? '序论' : isConclusion ? '结论' : (meta ? meta.title_zh : zhData.title);
     const vismParallelParts = peData ? vismNormalizeParallel(peData, peRetranslated) : [];
     await communityFetchCurrentUser();
-    if (peData) await transLoadDoc(vismDocKey);
+    if (peData) {
+      await transLoadDoc(vismDocKey);
+      await vismAnnotationsLoadDoc(vismDocKey);
+    }
 
+    const s = vismSettings();
     let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
     out += `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
     if (isNidana) out += '<div class="meta-focus">Introductory Discourse (Nidānakathā)</div>';
@@ -7869,6 +8169,18 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
         </div>
         <div class="tb-sep"></div>
         <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
+        <div class="tb-sep"></div>
+        <div class="tb-group" id="vism-zh-version-group"${vismReaderMode==='trilingual'?'':' hidden'}>
+          <button class="tb-btn${s.zhVersion!=='yejun'?' active':''}" data-zhver="guanchen">观辰版</button>
+          <button class="tb-btn${s.zhVersion==='yejun'?' active':''}" data-zhver="yejun">叶均版</button>
+        </div>
+        <div class="tb-sep"></div>
+        <button type="button" class="tb-btn" id="vism-settings-toggle" aria-expanded="false">Aa 阅读设置</button>
+      </div>
+      <div class="vism-settings-panel" id="vism-settings-panel" hidden>
+        <div class="vism-settings-row"><span>字号</span><button type="button" class="tb-btn" data-vism-set="font-dec">A−</button><span id="vism-font-size-label">${s.fontSize}px</span><button type="button" class="tb-btn" data-vism-set="font-inc">A+</button></div>
+        <div class="vism-settings-row"><span>行距</span><button type="button" class="tb-btn" data-vism-set="lh-dec">−</button><span id="vism-line-height-label">${s.lineHeight}</span><button type="button" class="tb-btn" data-vism-set="lh-inc">+</button></div>
+        <label class="tb-toggle"><input type="checkbox" id="vism-theme-toggle" ${s.theme==='dark'?'checked':''}> 深色/护眼模式</label>
       </div>`;
     }
 
@@ -7889,21 +8201,53 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
     }
     out += '</div>';
 
-    app.innerHTML = out;
+    app.innerHTML = `<div id="vism-page">${out}</div>`;
     window._vismData = { peData, zhData, peRetranslated, vismDocKey, vismChapterTitle, vismParallelParts };
+    applyVismSettingsToDom();
 
     if (peData) {
       document.getElementById('vism-toolbar').addEventListener('click', e => {
-        const btn = e.target.closest('[data-mode]');
-        if (btn) {
-          vismReaderMode = btn.dataset.mode;
+        const modeBtn = e.target.closest('[data-mode]');
+        const zhverBtn = e.target.closest('[data-zhver]');
+        if (modeBtn) {
+          vismReaderMode = modeBtn.dataset.mode;
           document.querySelectorAll('#vism-toolbar [data-mode]').forEach(b => b.classList.toggle('active', b.dataset.mode === vismReaderMode));
+          document.getElementById('vism-zh-version-group').hidden = vismReaderMode !== 'trilingual';
+          buildVismReaderBody();
+        } else if (zhverBtn) {
+          vismSettings().zhVersion = zhverBtn.dataset.zhver;
+          saveVismSettings();
+          document.querySelectorAll('#vism-zh-version-group [data-zhver]').forEach(b => b.classList.toggle('active', b.dataset.zhver === vismSettings().zhVersion));
           buildVismReaderBody();
         }
       });
       document.getElementById('vism-pali-toggle').addEventListener('change', e => {
         vismShowPali = e.target.checked;
         buildVismReaderBody();
+      });
+      const settingsToggle = document.getElementById('vism-settings-toggle');
+      const settingsPanel = document.getElementById('vism-settings-panel');
+      settingsToggle.addEventListener('click', () => {
+        settingsPanel.hidden = !settingsPanel.hidden;
+        settingsToggle.setAttribute('aria-expanded', String(!settingsPanel.hidden));
+      });
+      settingsPanel.addEventListener('click', e => {
+        const btn = e.target.closest('[data-vism-set]');
+        if (!btn) return;
+        const set = vismSettings();
+        if (btn.dataset.vismSet === 'font-dec') set.fontSize = Math.max(14, set.fontSize - 1);
+        else if (btn.dataset.vismSet === 'font-inc') set.fontSize = Math.min(28, set.fontSize + 1);
+        else if (btn.dataset.vismSet === 'lh-dec') set.lineHeight = Math.max(1.4, Math.round((set.lineHeight - 0.2) * 10) / 10);
+        else if (btn.dataset.vismSet === 'lh-inc') set.lineHeight = Math.min(2.6, Math.round((set.lineHeight + 0.2) * 10) / 10);
+        saveVismSettings();
+        document.getElementById('vism-font-size-label').textContent = set.fontSize + 'px';
+        document.getElementById('vism-line-height-label').textContent = set.lineHeight;
+        applyVismSettingsToDom();
+      });
+      document.getElementById('vism-theme-toggle').addEventListener('change', e => {
+        vismSettings().theme = e.target.checked ? 'dark' : 'light';
+        saveVismSettings();
+        applyVismSettingsToDom();
       });
     }
 
