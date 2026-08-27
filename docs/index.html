@@ -8300,8 +8300,22 @@ function mdToHtml(md, options = {}) {
 
 // Blog, QA, forum, and their editor previews share the code-friendly fenced
 // block renderer; research readers retain their existing scripture styling.
+// Blog citation lists (the long-form 法义概念解析 articles' "## 引用"
+// section) are written as "- [N] <title> — <bare url>", not proper
+// "[text](url)" markdown links - left as-is, the raw V4 reader deep-link
+// URL (often hundreds of characters once its ?hl=/&hl_anchor= highlight
+// payload is included) rendered as plain, unclickable text sprawling
+// across several lines. Rewrite each such line into a real markdown link
+// before handing off to mdToHtml(), keeping the "[N]" citation number as
+// plain text but turning the title into a clickable link with the URL
+// hidden behind it. The bracket has to stay outside the link's own
+// [text](url) brackets - nesting "[[N] title](url)" breaks the existing
+// non-greedy link regex in inlineMd(), which stops at the first "]".
+function linkifyCitationLines(md) {
+  return md.replace(/^(-\s*\[\d+\])\s*(.+?)\s+—\s+(https?:\/\/\S+)\s*$/gm, (match, marker, title, url) => `${marker} [${title}](${url})`);
+}
 function communityMarkdownToHtml(md) {
-  return mdToHtml(md, { fencedCode: true });
+  return mdToHtml(linkifyCitationLines(md), { fencedCode: true });
 }
 
 function inlineMd(text) {
