@@ -1145,12 +1145,26 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 .vism-settings-row { display: flex; align-items: center; gap: 8px; }
 .vism-settings-row span:not(.tb-btn) { min-width: 2.2em; text-align: center; color: var(--text-light); }
 .vism-settings-panel .tb-btn { padding: 3px 9px; }
+.vism-settings-panel[hidden] { display: none; }
 
 /* Dark / eye-care theme, scoped to this reader only (never touches :root) */
 #vism-page[data-vism-theme="dark"] {
   --bg: #1c1a17; --bg-warm: #211e19; --card-bg: #23201b; --text: #d8d0c0; --text-light: #a89d88;
   --border: #3a352c; --hover-bg: #2a251e; --toolbar-bg: #201d18; --accent-bg: #2a2419;
   --pali-color: #b8a878; background: var(--bg); color: var(--text);
+}
+/* Same override lifted onto body, gated by :has() so it disappears the
+   instant #vism-page is removed from the DOM (SPA route changes replace
+   app.innerHTML wholesale) - no manual cleanup needed to avoid leaking dark
+   mode onto other pages. This also darkens .site-header/.site-footer, which
+   read the same --bg/--bg-warm tokens (docs/index.html:34-56): the viewport
+   gutters beside the centered .container are body's own background, so
+   there's no way to cover them without this reaching body itself. */
+body:has(#vism-page[data-vism-theme="dark"]) {
+  --bg: #1c1a17; --bg-warm: #211e19; --card-bg: #23201b; --text: #d8d0c0; --text-light: #a89d88;
+  --border: #3a352c; --hover-bg: #2a251e; --toolbar-bg: #201d18; --accent-bg: #2a2419;
+  --pali-color: #b8a878; --accent: #c4a24e; --accent-light: #d9bd72;
+  background: var(--bg); color: var(--text);
 }
 
 /* Private highlight/note controls (independent of the shared trans-* editor) */
@@ -1199,10 +1213,10 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 .trans-empty { color: var(--text-light); font-style: italic; font-size: 0.95em; }
 .trans-actions { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
 .trans-info-toggle {
-  font-size: 0.8em; line-height: 1; padding: 1px 6px; margin-top: 4px; border: 1px solid var(--border);
-  border-radius: 50%; background: var(--card-bg); color: var(--text-light); cursor: pointer; font-family: inherit;
+  font-size: 0.95em; line-height: 1; margin-top: 4px; border: 0; background: none; padding: 0;
+  color: var(--text-light); cursor: pointer; font-family: inherit;
 }
-.trans-info-toggle:hover, .trans-info-toggle[aria-expanded="true"] { color: var(--accent); border-color: var(--accent-light); }
+.trans-info-toggle:hover, .trans-info-toggle[aria-expanded="true"] { color: var(--accent); }
 .trans-meta-panel { margin-top: 4px; }
 .trans-meta-panel[hidden] { display: none; }
 .trans-btn {
@@ -5205,18 +5219,6 @@ function transSlotHtml(docKey, unitKey, staticText, staticNote, pali, context) {
   const isEmpty = !text || !text.trim();
   let html = `<div class="trans-slot" data-doc="${esc(docKey)}" data-unit="${esc(unitKey)}">`;
   html += `<div class="trans-text" data-role="text">${isEmpty ? '<span class="trans-empty">（尚无译文，欢迎认领翻译）</span>' : esc(text)}</div>`;
-  if (note && note.trim()) html += `<div class="trans-note-view" data-role="note">${esc(note)}</div>`;
-  if (unit && unit.last_reason) {
-    const who = unit.updated_by ? esc(unit.updated_by.display_name) : '匿名';
-    const when = unit.updated_at ? new Date(unit.updated_at).toLocaleDateString('zh-CN') : '';
-    html += `<div class="trans-meta">最后由 ${who} 修改${when ? ' · ' + when : ''} · 理由：${esc(unit.last_reason)}</div>`;
-  }
-  if (transPendingLoad(docKey, unitKey)) {
-    html += '<div class="trans-pending-save">有一次保存尚未确认，当前编辑内容已保留。<button type="button" data-act="retry-pending">继续保存</button></div>';
-  }
-  if (TRANS_DOC_ERRORS[docKey]) {
-    html += '<div class="trans-save-status">翻译覆盖层暂时无法连接；当前显示的是默认译文，编辑内容仍可保留并稍后重试。</div>';
-  }
   let panelHtml = '';
   if (note && note.trim()) panelHtml += `<div class="trans-note-view" data-role="note">${esc(note)}</div>`;
   if (unit && unit.last_reason) {
@@ -6696,6 +6698,8 @@ async function renderModernTheravadaReader(workId, chapterId, paragraphId, query
 // === RESEARCH: VISUDDHIMAGGA (清净之道) ===
 let vismReaderMode = 'trilingual';
 let vismShowPali = true;
+let vismShowEn = true;
+let vismShowZh = true;
 let _vismIndexCache = null;
 
 // Reading-customization settings (font size / line height / dark-eye-care
@@ -6741,8 +6745,8 @@ async function renderVismHome() {
     <span class="label">关于本书：</span>
     《清净道论》（Visuddhimagga）为公元五世纪觉音尊者（Buddhaghosa）所著，是上座部佛教最重要的义理纲要之一，
     以戒、定、慧三学为骨架，逐一注释展开。本阅读器左侧为巴利语与英译（Ñāṇamoli 尊者译本）逐句对照，
-    右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、单独英文、单独中文、逐句三语对照四种模式，并可显示/隐藏巴利语。
-    部分章节新增逐句汉译（直接译自巴利语），在"逐句三语对照"模式下逐句呈现巴利语、英译与新增汉译。
+    右侧为叶均居士中译《清净道论》简体版全文，可切换三语对照、逐句三语对照两种模式，并分别独立显示/隐藏英文、中文、巴利语。
+    部分章节新增逐句汉译（直接译自巴利语），在"逐句三语对照"模式下逐句呈现巴利语、英译与新增汉译，也可在"三语对照"模式的"观辰版"中查看。
   </div>`;
   html += `<div class="cards vism-chapter-grid">
     <div class="research-item-card vism-chapter-card" onclick="location.hash='#/research/vism/read/nidana'">
@@ -7769,13 +7773,15 @@ function renderVismPaliEn(peData, notesOut) {
     for (const row of part.rows) {
       html += '<div class="segment-block">';
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      html += '<div class="seg-en">' + esc(row.english);
-      if (row.note && notesOut) {
-        const n = notesOut.length + 1;
-        notesOut.push(row.note);
-        html += ` <sup class="vism-fnref" data-fn="en-${n}">[${n}]</sup>`;
+      if (vismShowEn) {
+        html += '<div class="seg-en">' + esc(row.english);
+        if (row.note && notesOut) {
+          const n = notesOut.length + 1;
+          notesOut.push(row.note);
+          html += ` <sup class="vism-fnref" data-fn="en-${n}">[${n}]</sup>`;
+        }
+        html += '</div>';
       }
-      html += '</div>';
       html += '</div>';
     }
     html += '</div>';
@@ -7842,8 +7848,12 @@ function renderVismParallel(docKey, chapterTitle, parts) {
       const hlClass = annotation && annotation.highlight_color ? ` vism-hl-${annotation.highlight_color}` : '';
       html += `<div class="segment-block${hlClass}" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      html += `<div class="seg-en">${esc(row.english)}</div>`;
-      html += transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle);
+      if (vismShowEn) html += `<div class="seg-en">${esc(row.english)}</div>`;
+      // Chinese always goes through transSlotHtml() regardless of vismShowZh
+      // - it registers TRANS_STATIC_MAP[docKey|unitKey] as a side effect,
+      // which the edit/Dharmamitra/history UI depends on even while this
+      // column is visually hidden. Only the wrapper's display is toggled.
+      html += `<div${vismShowZh ? '' : ' style="display:none"'}>${transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle)}</div>`;
       html += vismAnnotationSlotHtml(docKey, unitKey);
       html += '</div>';
     });
@@ -8016,7 +8026,7 @@ async function focusVismLectureTarget(target) {
 // (common case, since both ultimately follow the same chapter's structure);
 // otherwise fall back to the original unaligned whole-document dump rather
 // than guess at a pairing that could attach the wrong prose to the wrong part.
-function renderVismTrilingual(peData, parallelParts, zhData) {
+function renderVismTrilingual(docKey, peData, parallelParts, zhData) {
   const zhVersion = vismSettings().zhVersion === 'yejun' ? 'yejun' : 'guanchen';
   const enNotes = [];
   if (zhVersion === 'yejun') {
@@ -8029,11 +8039,14 @@ function renderVismTrilingual(peData, parallelParts, zhData) {
         part.rows.forEach(row => {
           html += '<div class="segment-block">';
           if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-          html += '<div class="seg-en">' + esc(row.english);
-          if (row.note) { enNotes.push(row.note); html += ` <sup class="vism-fnref" data-fn="en-${enNotes.length}">[${enNotes.length}]</sup>`; }
-          html += '</div></div>';
+          if (vismShowEn) {
+            html += '<div class="seg-en">' + esc(row.english);
+            if (row.note) { enNotes.push(row.note); html += ` <sup class="vism-fnref" data-fn="en-${enNotes.length}">[${enNotes.length}]</sup>`; }
+            html += '</div>';
+          }
+          html += '</div>';
         });
-        html += `</div><div class="tri-cell tri-cell-zh zh-formatted">${vismSectionHtml(sections[pi], pi)}</div></div>`;
+        html += `</div><div class="tri-cell tri-cell-zh zh-formatted"${vismShowZh ? '' : ' style="display:none"'}>${vismSectionHtml(sections[pi], pi)}</div></div>`;
       });
       html += '</div>' + vismEnNotesHtml(enNotes);
       return html;
@@ -8043,36 +8056,42 @@ function renderVismTrilingual(peData, parallelParts, zhData) {
     html += '<div class="side-by-side"><div class="side-col"><h3>Pāli · English</h3><div class="en-formatted">';
     html += renderVismPaliEn(peData, enNotes);
     html += vismEnNotesHtml(enNotes);
-    html += '</div></div><div class="side-col"><h3>中文（简体·叶均版）</h3><div class="zh-formatted">';
+    html += `</div></div><div class="side-col"${vismShowZh ? '' : ' style="display:none"'}><h3>中文（简体·叶均版）</h3><div class="zh-formatted">`;
     html += zhContentHtml;
     html += '</div></div></div>';
     return html;
   }
   // 观辰版: chinese_translation is already positionally merged 1:1 onto
   // these same peData rows (vismNormalizeParallel), so parallelParts[pi]
-  // .rows[ri] lines up exactly with peData.parts[pi].rows[ri].
+  // .rows[ri] lines up exactly with peData.parts[pi].rows[ri]. English here
+  // deliberately matches 逐句三语对照's plain esc(row.english) exactly - no
+  // footnote superscripts/Notes list, since transSlotHtml() (what parallel
+  // mode renders) never shows those either.
   let html = '<div class="tri-block">';
   peData.parts.forEach((part, pi) => {
     if (part.title) html += `<div class="vism-part-title">${esc(part.title)}</div>`;
     part.rows.forEach((row, ri) => {
-      const chineseText = parallelParts[pi]?.rows[ri]?.chinese_translation || '';
+      // Same source of truth as 逐句三语对照's transSlotHtml()/transUnit():
+      // a community-submitted translation overlay can exist even when the
+      // static retranslation-pipeline data for this row is still empty, and
+      // without this check the two modes disagree on the same sentence.
+      const unit = transUnit(docKey, `p${pi + 1}-r${ri + 1}`);
+      const chineseText = (unit && unit.current_text) || parallelParts[pi]?.rows[ri]?.chinese_translation || '';
       html += '<div class="tri-row">';
       html += '<div class="tri-cell tri-cell-en">';
       if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      html += '<div class="seg-en">' + esc(row.english);
-      if (row.note) { enNotes.push(row.note); html += ` <sup class="vism-fnref" data-fn="en-${enNotes.length}">[${enNotes.length}]</sup>`; }
+      if (vismShowEn) html += `<div class="seg-en">${esc(row.english)}</div>`;
       html += '</div>';
-      html += '</div>';
-      html += `<div class="tri-cell tri-cell-zh"><div class="seg-chinese">${chineseText ? esc(chineseText) : '<span class="trans-empty">（尚无逐句译文）</span>'}</div></div>`;
+      html += `<div class="tri-cell tri-cell-zh"${vismShowZh ? '' : ' style="display:none"'}><div class="seg-chinese">${chineseText ? esc(chineseText) : '<span class="trans-empty">（尚无逐句译文）</span>'}</div></div>`;
       html += '</div>';
     });
   });
-  html += '</div>' + vismEnNotesHtml(enNotes);
+  html += '</div>';
   return html;
 }
 
 function buildVismReaderBody() {
-  const { peData, zhData, vismParallelParts } = window._vismData;
+  const { peData, zhData, vismParallelParts, vismDocKey, vismChapterTitle } = window._vismData;
   const body = document.getElementById('vism-reader-body');
   const zhContentHtml = (zhData.intro_html || '') + buildZhSectionsHtml(zhData.sections, zhData.footnotes);
 
@@ -8085,22 +8104,8 @@ function buildVismReaderBody() {
     return;
   }
   if (vismReaderMode === 'trilingual') {
-    html += renderVismTrilingual(peData, vismParallelParts, zhData);
-  } else if (vismReaderMode === 'en') {
-    const enNotes = [];
-    html += `<div class="en-formatted">${renderVismPaliEn(peData, enNotes)}${vismEnNotesHtml(enNotes)}</div>`;
-  } else if (vismReaderMode === 'zh') {
-    if (vismShowPali) {
-      html += '<div class="side-by-side"><div class="side-col"><h3>Pāli</h3><div class="en-formatted">';
-      html += renderVismPaliEn({ parts: peData.parts.map(p => ({ title: p.title, rows: p.rows.map(r => ({ pali: r.pali, english: '' })) })) });
-      html += '</div></div><div class="side-col"><h3>中文（简体）</h3><div class="zh-formatted">';
-      html += zhContentHtml;
-      html += '</div></div></div>';
-    } else {
-      html += `<div class="zh-formatted">${zhContentHtml}</div>`;
-    }
+    html += renderVismTrilingual(vismDocKey, peData, vismParallelParts, zhData);
   } else if (vismReaderMode === 'parallel') {
-    const { vismDocKey, vismChapterTitle, vismParallelParts } = window._vismData;
     html += renderVismParallel(vismDocKey, vismChapterTitle, vismParallelParts);
   }
   body.innerHTML = html;
@@ -8163,12 +8168,14 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
       out += `<div class="toolbar" id="vism-toolbar">
         <div class="tb-group">
           <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
-          <button class="tb-btn${vismReaderMode==='en'?' active':''}" data-mode="en">单独英文</button>
-          <button class="tb-btn${vismReaderMode==='zh'?' active':''}" data-mode="zh">单独中文</button>
           <button class="tb-btn${vismReaderMode==='parallel'?' active':''}" data-mode="parallel">逐句三语对照</button>
         </div>
         <div class="tb-sep"></div>
-        <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}> 显示巴利语</label>
+        <div class="tb-group" role="group" aria-label="显示语言">
+          <label class="tb-toggle"><input type="checkbox" id="vism-en-toggle" ${vismShowEn?'checked':''}>English</label>
+          <label class="tb-toggle"><input type="checkbox" id="vism-zh-toggle" ${vismShowZh?'checked':''}>中文</label>
+          <label class="tb-toggle"><input type="checkbox" id="vism-pali-toggle" ${vismShowPali?'checked':''}>巴利语</label>
+        </div>
         <div class="tb-sep"></div>
         <div class="tb-group" id="vism-zh-version-group"${vismReaderMode==='trilingual'?'':' hidden'}>
           <button class="tb-btn${s.zhVersion!=='yejun'?' active':''}" data-zhver="guanchen">观辰版</button>
@@ -8223,6 +8230,14 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
       });
       document.getElementById('vism-pali-toggle').addEventListener('change', e => {
         vismShowPali = e.target.checked;
+        buildVismReaderBody();
+      });
+      document.getElementById('vism-en-toggle').addEventListener('change', e => {
+        vismShowEn = e.target.checked;
+        buildVismReaderBody();
+      });
+      document.getElementById('vism-zh-toggle').addEventListener('change', e => {
+        vismShowZh = e.target.checked;
         buildVismReaderBody();
       });
       const settingsToggle = document.getElementById('vism-settings-toggle');
