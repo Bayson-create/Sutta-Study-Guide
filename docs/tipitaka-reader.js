@@ -294,10 +294,13 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-reader-extras-css';
     style.textContent = `
+      /* Identical to the Vism reader's .seg-en (docs/index.html), so English
+         reads the same in both readers. */
       .tipitaka-en{font-family:-apple-system,"Segoe UI","PingFang SC","Helvetica Neue",sans-serif}
-      .tipitaka-pali{line-height:var(--tipitaka-line-height,1.6);letter-spacing:var(--tipitaka-letter-spacing,0)}
-      .tipitaka-zh{line-height:var(--tipitaka-line-height,2);letter-spacing:var(--tipitaka-letter-spacing,0)}
-      .tipitaka-en{line-height:var(--tipitaka-line-height,1.65);letter-spacing:var(--tipitaka-letter-spacing,0)}
+      /* One shared line-height for all three languages: they used to be 1.6 /
+         2 / 1.65, which made the three lines of a single paragraph sit on
+         visibly different rhythms. */
+      .tipitaka-pali,.tipitaka-zh,.tipitaka-en{line-height:var(--tipitaka-line-height,1.8);letter-spacing:var(--tipitaka-letter-spacing,0)}
 
       #tipitaka-pane[data-theme="dark"]{--bg:#1c1a17;--bg-warm:#211e19;--card:#23201b;--card-bg:#23201b;--text:#d8d0c0;--text-light:#a89d88;--border:#3a352c;--hover-bg:#2a251e;--primary:#c4a24e;--accent:#c4a24e;--accent-light:#d9bd72;--accent-bg:#2a2419;--pali-color:#b8a878;background:var(--bg);color:var(--text)}
 
@@ -307,43 +310,41 @@
       .tipitaka-breadcrumb-sep{margin:0 4px;color:var(--text-light,#999)}
       .tipitaka-breadcrumb-current{color:var(--text-light,#777)}
 
-      .tipitaka-progress{display:flex;align-items:center;gap:10px;margin:2px 0 10px;font-size:.8em;color:var(--text-light,#777)}
-      .tipitaka-progress-track{flex:1 1 auto;height:4px;border-radius:2px;background:var(--border,#e5e5e5);overflow:hidden}
-      .tipitaka-progress-bar{height:100%;width:0;background:var(--accent,#8b6914);border-radius:2px;transition:width .15s}
-      .tipitaka-progress-label{flex:0 0 auto;white-space:nowrap}
+      /* Reading progress: a 2px hairline hugging the toolbar's bottom edge,
+         matching the Vism reader's .vism-progress-line. */
+      .tipitaka-progress-line{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--accent,#8b6914);border-radius:0 2px 2px 0;transition:width .12s linear;pointer-events:none}
 
-      .tipitaka-settings-panel{display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:8px 0;margin-bottom:4px;border-bottom:1px solid var(--border,#e5e5e5);font-size:.85em}
+      /* Popovers anchored to the sticky toolbar (a sticky element is its own
+         containing block, so no extra position:relative is needed). Opening
+         either one overlays the text rather than pushing it down. */
+      .tipitaka-settings-panel{position:absolute;top:calc(100% + 6px);right:12px;z-index:200;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:12px 14px;border:1px solid var(--border,#e5e5e5);border-radius:12px;background:var(--card-bg,#fff);box-shadow:0 10px 30px rgba(40,28,10,.2);font-size:.85em}
+      .tipitaka-settings-panel[hidden]{display:none}
       .tipitaka-settings-row{display:flex;align-items:center;gap:6px}
       .tipitaka-settings-row span:not(.tb-btn){min-width:2.4em;text-align:center;color:var(--text-light,#777)}
       .tipitaka-settings-panel .tb-btn{padding:3px 9px;height:auto}
+      .tipitaka-nav-panel{position:absolute;top:calc(100% + 6px);left:12px;z-index:200;width:min(460px,92vw);max-height:70vh;overflow:auto;padding:12px 14px;border:1px solid var(--border,#e5e5e5);border-radius:12px;background:var(--card-bg,#fff);box-shadow:0 10px 30px rgba(40,28,10,.2)}
+      .tipitaka-nav-panel[hidden]{display:none}
+      .tipitaka-nav-crumbs{font-size:.82em;color:var(--text-light,#777);margin-bottom:10px}
+      .tipitaka-nav-crumbs a{color:var(--primary,#6b4f2d);text-decoration:none}
+      .tipitaka-nav-list{display:grid;gap:2px}
+      .tipitaka-nav-list a{display:flex;justify-content:space-between;gap:12px;padding:6px 9px;border-radius:7px;color:var(--text,#222);font-size:.9em;line-height:1.5;text-decoration:none}
+      .tipitaka-nav-list a small{color:var(--text-light,#777);white-space:nowrap}
+      .tipitaka-nav-list a:hover{background:var(--hover-bg,#faf6ee)}
+      .tipitaka-nav-list a.is-current{background:var(--accent-bg,#f8f3e6);color:var(--accent,#8b6914);font-weight:700}
 
-      .tipitaka-actions-icon{list-style:none;display:inline-flex;align-items:center;justify-content:center;width:1.6em;height:1.6em;border-radius:50%;border:1px solid var(--border,#ccc);background:var(--card,#fff);color:var(--text-light,#777);cursor:pointer;font-size:.85em}
-      .tipitaka-actions-icon::-webkit-details-marker{display:none}
-      .tipitaka-actions-icon:hover{color:var(--primary,#6b4f2d);border-color:var(--accent-light,#c4a24e)}
-
+      /* Pinned to the row's bottom-right corner and out of the flow, so it
+         costs the reading column no vertical space no matter how many
+         language lines are visible. */
       .tipitaka-row{position:relative}
-      .tipitaka-row-topline{display:flex;align-items:center;gap:8px}
-      .tipitaka-hl-yellow{background:rgba(230,190,40,.16);border-radius:6px;padding:10px 10px 2px;margin:0 -10px 6px}
-      .tipitaka-hl-green{background:rgba(70,160,90,.14);border-radius:6px;padding:10px 10px 2px;margin:0 -10px 6px}
-      .tipitaka-hl-blue{background:rgba(60,120,190,.14);border-radius:6px;padding:10px 10px 2px;margin:0 -10px 6px}
-      .tipitaka-hl-pink{background:rgba(200,90,140,.14);border-radius:6px;padding:10px 10px 2px;margin:0 -10px 6px}
-      .tipitaka-annotate{list-style:none}
-      .tipitaka-annotate-icon{list-style:none;display:inline-flex;align-items:center;justify-content:center;width:1.6em;height:1.6em;border-radius:50%;border:1px solid var(--border,#ccc);background:var(--card,#fff);color:var(--text-light,#777);cursor:pointer;font-size:.85em}
-      .tipitaka-annotate-icon::-webkit-details-marker{display:none}
-      .tipitaka-annotate-icon.has-annotation{color:var(--accent,#8b6914);border-color:var(--accent-light,#c4a24e)}
-      .tipitaka-annotate-body{margin-top:6px;padding:9px;background:var(--accent-bg,#f8f3e6);border:1px solid var(--border,#e5e5e5);border-radius:7px;max-width:420px}
-      .tipitaka-annotate-swatches{display:flex;gap:6px;margin-bottom:7px}
-      .tipitaka-hl-swatch{width:16px;height:16px;border-radius:50%;border:1px solid var(--border,#ccc);cursor:pointer;padding:0}
-      .tipitaka-hl-swatch-yellow{background:#e6be28}
-      .tipitaka-hl-swatch-green{background:#46a05a}
-      .tipitaka-hl-swatch-blue{background:#3c78be}
-      .tipitaka-hl-swatch-pink{background:#c85a8c}
-      .tipitaka-hl-swatch.active{outline:2px solid var(--accent,#8b6914);outline-offset:1px}
-      .tipitaka-hl-clear{width:auto;height:auto;border-radius:5px;padding:2px 7px;font-size:.78em;background:var(--card,#fff);color:var(--text-light,#777)}
-      .tipitaka-annotate-note{width:100%;box-sizing:border-box;font-family:inherit;font-size:.92em;padding:6px 8px;border:1px solid var(--border,#ccc);border-radius:5px;background:var(--card,#fff);color:inherit;resize:vertical;margin-bottom:7px}
-
-      .tipitaka-bookmark-hl-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
-      .tipitaka-bookmark-note{display:block;color:var(--text-light,#777);font-size:.88em;font-style:italic;margin-top:2px}
+      .tipitaka-actions{position:absolute;right:0;bottom:0;margin:0}
+      .tipitaka-actions-icon{list-style:none;display:inline-flex;align-items:center;justify-content:center;color:var(--text-light,#777);cursor:pointer;font-size:.95em;opacity:.4;transition:opacity .15s}
+      .tipitaka-actions-icon::-webkit-details-marker{display:none}
+      .tipitaka-row:hover .tipitaka-actions-icon,.tipitaka-actions[open] .tipitaka-actions-icon{opacity:1}
+      .tipitaka-actions-icon:hover{color:var(--primary,#6b4f2d)}
+      /* Once open the button grid needs real space, so the panel drops out of
+         the corner and back into the flow at the row's end. */
+      .tipitaka-actions[open]{position:static;display:flex;flex-direction:column;align-items:flex-end;margin-top:6px}
+      @media (hover:none){.tipitaka-actions-icon{opacity:.75}}
     `;
     document.head.appendChild(style);
   }
@@ -710,32 +711,56 @@
   // immediate readout for the newly rendered reader.
   function updateReaderProgress() {
     const reader = state.reader;
-    const bar = document.getElementById('tipitaka-progress-bar');
-    const label = document.getElementById('tipitaka-progress-label');
-    if (!reader || !bar || !label) return;
+    const line = document.getElementById('tipitaka-progress-line');
+    if (!reader || !line) return;
     const total = reader.work.rows.length;
     const anchor = reader.virtual?.getAnchor?.();
     const index = anchor ? reader.work.rows.findIndex(row => Number(row.id) === Number(anchor.rowId)) : reader.currentIndex;
     if (index < 0 || !total) return;
-    const percent = Math.round(((index + 1) / total) * 100);
-    bar.style.width = `${Math.min(100, Math.max(0, percent))}%`;
-    label.textContent = `已读到第 ${(index + 1).toLocaleString()}/${total.toLocaleString()} 段，约 ${percent}%`;
+    line.style.width = `${Math.min(100, Math.max(0, ((index + 1) / total) * 100))}%`;
+  }
+  // The toolbar's title slot tracks the nearest structural heading above the
+  // viewport (rows carry rend="nikaya"/"book"/"subsubhead"). Only the drawn
+  // virtual window can be inspected, so when no heading is currently rendered
+  // the previous value is kept rather than flickering back to the work title.
+  const CONTEXT_REND = new Set(['nikaya', 'book', 'subsubhead', 'chapter', 'subhead', 'title']);
+  function updateReaderContextTitle() {
+    const slot = document.getElementById('tipitaka-context-title');
+    const pane = document.getElementById('tipitaka-pane');
+    if (!slot || !pane) return;
+    const cutoff = pane.getBoundingClientRect().top + 60;
+    let best = null;
+    pane.querySelectorAll('.tipitaka-row[data-rend]').forEach(node => {
+      if (!CONTEXT_REND.has(node.dataset.rend)) return;
+      if (node.getBoundingClientRect().top <= cutoff) best = node;
+    });
+    if (!best) return;
+    const text = strip(best.querySelector('.tipitaka-zh')?.textContent || best.querySelector('.tipitaka-pali')?.textContent || '');
+    if (text) slot.textContent = text.length > 40 ? `${text.slice(0, 40)}…` : text;
+  }
+  function closeReaderPopovers() {
+    ['tipitaka-nav-panel', 'tipitaka-settings-panel'].forEach(id => {
+      const panel = document.getElementById(id);
+      if (panel) panel.hidden = true;
+    });
+    document.querySelectorAll('#tipitaka-toolbar [aria-expanded="true"]').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
   }
   function bindReaderProgress(reader) {
-    if (!document.getElementById('tipitaka-progress-bar')) return null;
+    if (!document.getElementById('tipitaka-progress-line')) return null;
     if (!app._tipitakaProgressWired) {
       app._tipitakaProgressWired = true;
       // A trailing-edge setTimeout throttle rather than requestAnimationFrame:
-      // this is a periodic text/width update, not a render-synced animation,
+      // this is a periodic width/text update, not a render-synced animation,
       // and rAF callbacks are paused/heavily throttled on backgrounded tabs in
       // real browsers - setTimeout keeps this responsive there too.
       let pending = null;
       app.addEventListener('scroll', event => {
         if (event.target?.id !== 'tipitaka-pane' || pending) return;
-        pending = setTimeout(() => { pending = null; updateReaderProgress(); }, 80);
+        pending = setTimeout(() => { pending = null; updateReaderProgress(); updateReaderContextTitle(); }, 80);
       }, true);
     }
     updateReaderProgress();
+    updateReaderContextTitle();
     return null;
   }
 
@@ -750,7 +775,21 @@
   }
 
   function readerHead(meta, work, hit, fragmentLinkStatus = '') {
-    return `<div class="tipitaka-reader-head">${breadcrumbHtml(meta)}<h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}${fragmentLinkStatus ? ` ${fragmentLinkStatus}` : ''}</div><div class="tipitaka-progress" id="tipitaka-progress"><div class="tipitaka-progress-track"><div class="tipitaka-progress-bar" id="tipitaka-progress-bar"></div></div><span class="tipitaka-progress-label" id="tipitaka-progress-label"></span></div></div><div class="tipitaka-sticky-sentinel"></div>`;
+    return `<div class="tipitaka-reader-head">${breadcrumbHtml(meta)}<h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}${fragmentLinkStatus ? ` ${fragmentLinkStatus}` : ''}</div></div><div class="tipitaka-sticky-sentinel"></div>`;
+  }
+
+  // Sibling works = every catalog entry whose path array is identical to this
+  // one's, which is exactly what workTree() groups into a single node.
+  function siblingWorks(meta) {
+    const key = (meta.path || []).join(' / ');
+    return (state.works || []).filter(work => (work.path || []).join(' / ') === key);
+  }
+  function navPanelHtml(meta) {
+    const crumbs = ['<a href="#/tipitaka">全部目录</a>', ...(meta.path || []).map((seg, i) =>
+      `<a href="#/tipitaka?open=${encodeURIComponent(meta.path.slice(0, i + 1).join(' / '))}">${esc(seg)}</a>`)].join('<span class="tipitaka-breadcrumb-sep">›</span>');
+    const items = siblingWorks(meta).map(work =>
+      `<a href="#/tipitaka/read/${encodeURIComponent(work.id)}" class="${work.id === meta.id ? 'is-current' : ''}">${esc(work.title)}<small>${Number(work.row_count || 0).toLocaleString()} 行</small></a>`).join('');
+    return `<div class="tipitaka-nav-crumbs">${crumbs}</div><div class="tipitaka-nav-list">${items}</div>`;
   }
 
   // Segmented look without touching bindReader()'s change handler: these stay
@@ -771,9 +810,14 @@
     // .tipitaka-toolbar-controls wraps everything after the title into one
     // unit so mobile CSS can put the title on its own line and let only this
     // part scroll horizontally (see injectReaderLayoutCss).
+    // The title slot shows the nearest structural heading above the viewport
+    // (updated on scroll by updateReaderContextTitle), not meta.title - that
+    // was a verbatim duplicate of the <h2> readerHead() already renders.
+    // Both popovers and the progress hairline live INSIDE the toolbar so they
+    // anchor to it and overlay the text instead of pushing it down.
     return `<div class="tipitaka-toolbar toolbar tipitaka-reader-toolbar" id="tipitaka-toolbar">
-      <div class="tb-group"><button class="tb-btn" data-t-action="back">← 目录</button></div>
-      <strong class="tipitaka-reader-title">${esc(meta.title)}</strong>
+      <div class="tb-group"><button class="tb-btn" data-t-action="nav-toggle" aria-expanded="false">← 目录</button></div>
+      <strong class="tipitaka-reader-title" id="tipitaka-context-title">${esc(meta.title)}</strong>
       <div class="tipitaka-toolbar-controls">
         <div class="tb-sep"></div>
         <div class="tb-group" role="group" aria-label="显示语言">
@@ -784,8 +828,6 @@
         </div>
         <div class="tb-sep"></div>
         <div class="tb-group">
-          <button class="tb-btn" data-t-action="font-down">A−</button>
-          <button class="tb-btn" data-t-action="font-up">A+</button>
           <button class="tb-btn" data-t-action="settings-toggle" aria-expanded="false">Aa 阅读设置</button>
         </div>
         <div class="tb-sep"></div>
@@ -806,11 +848,14 @@
         <span class="tipitaka-note tipitaka-reader-search-status" data-t-search-status></span>
         ${hitNote}
       </div>
-    </div>
-    <div class="tipitaka-settings-panel" id="tipitaka-settings-panel" hidden>
-      <div class="tipitaka-settings-row"><span>行距</span><button type="button" class="tb-btn" data-t-action="lh-dec">−</button><span id="tipitaka-lh-label">${s.lineHeight}</span><button type="button" class="tb-btn" data-t-action="lh-inc">+</button></div>
-      <div class="tipitaka-settings-row"><span>字间距</span><button type="button" class="tb-btn" data-t-action="ls-dec">−</button><span id="tipitaka-ls-label">${s.letterSpacing}</span><button type="button" class="tb-btn" data-t-action="ls-inc">+</button></div>
-      <label class="tb-toggle"><input type="checkbox" data-t-toggle="theme" ${s.theme === 'dark' ? 'checked' : ''}>深色/护眼模式</label>
+      <div class="tipitaka-nav-panel" id="tipitaka-nav-panel" hidden></div>
+      <div class="tipitaka-settings-panel" id="tipitaka-settings-panel" hidden>
+        <div class="tipitaka-settings-row"><span>字号</span><button type="button" class="tb-btn" data-t-action="font-down">A−</button><span id="tipitaka-font-label">${s.font}px</span><button type="button" class="tb-btn" data-t-action="font-up">A+</button></div>
+        <div class="tipitaka-settings-row"><span>行距</span><button type="button" class="tb-btn" data-t-action="lh-dec">−</button><span id="tipitaka-lh-label">${s.lineHeight}</span><button type="button" class="tb-btn" data-t-action="lh-inc">+</button></div>
+        <div class="tipitaka-settings-row"><span>字间距</span><button type="button" class="tb-btn" data-t-action="ls-dec">−</button><span id="tipitaka-ls-label">${s.letterSpacing}</span><button type="button" class="tb-btn" data-t-action="ls-inc">+</button></div>
+        <label class="tb-toggle"><input type="checkbox" data-t-toggle="theme" ${s.theme === 'dark' ? 'checked' : ''}>深色/护眼模式</label>
+      </div>
+      <div class="tipitaka-progress-line" id="tipitaka-progress-line"></div>
     </div>`;
   }
 
@@ -883,16 +928,21 @@
     const parts = [], lang = hit?.language, term = hit?.query;
     const isHitRow = !!hit && Number(row.id) === Number(hit.rowId);
     const show = (language, value) => highlightHtml(language === 'zh' ? chineseDisplay(value) : value, term, language, !!hit && lang === language, hit?.position, hit?.terms);
-    if (row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}">${isHitRow && lang === 'pali' ? paliTokensHighlightHtml(row.pali_text, term, hit?.terms) : paliTokensHtml(row.pali_text)}</div>`);
+    // data-hl-unit/data-hl-lang mark each language line as a highlightable
+    // surface for window.ReaderHighlights; supplementary (readonly) rows from
+    // other works are excluded, since their text isn't addressed by this
+    // work's doc_key.
+    const hlAttrs = language => options.readonly ? '' : ` data-hl-unit="${row.id}" data-hl-lang="${language}"`;
+    if (row.pali_text) parts.push(`<div class="tipitaka-pali" data-t-pali="${esc(strip(row.pali_text))}"${hlAttrs('pali')}>${isHitRow && lang === 'pali' ? paliTokensHighlightHtml(row.pali_text, term, hit?.terms) : paliTokensHtml(row.pali_text)}</div>`);
     if (displayed(row, overlays, 'zh')) {
       const value = displayed(row, overlays, 'zh'), base = chineseDisplay(defaultText(row, 'zh'));
       const effective = isHitRow && lang === 'zh' ? show('zh', value) : esc(chineseDisplay(value));
       const hitTerms = hit?.terms?.length ? hit.terms : [term];
       const hasZhHit = textValue => hitTerms.some(candidate => normalizeZh(chineseDisplay(textValue)).includes(normalizeZh(candidate).replace(/\s/g, '')));
       const defaultHit = term && lang === 'zh' && !hasZhHit(value) && hasZhHit(base);
-      parts.push(`<div class="tipitaka-zh">${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position, hit?.terms)}</details>` : ''}</div>`);
+      parts.push(`<div class="tipitaka-zh"${hlAttrs('zh')}>${effective}${defaultHit ? `<details class="tipitaka-default-hit"><summary>默认文本命中（当前覆盖层未命中）</summary>${highlightHtml(base, term, 'zh', true, hit?.position, hit?.terms)}</details>` : ''}</div>`);
     }
-    if (displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en">${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
+    if (displayed(row, overlays, 'en')) parts.push(`<div class="tipitaka-en"${hlAttrs('en')}>${isHitRow && lang === 'en' ? show('en', displayed(row, overlays, 'en')) : esc(displayed(row, overlays, 'en'))}</div>`);
     const key = options.itemKey || `root:${row.id}`;
     const rootData = options.readonly ? `data-t-annotation-row="${row.id}" data-source-work="${esc(options.sourceWorkId || '')}"` : `data-t-row="${row.id}"`;
     // The button grid itself isn't written into the initial HTML - only an
@@ -900,26 +950,11 @@
     // it in the first time this <details> is actually opened, so a virtual
     // window full of rows carries one empty div each instead of four button
     // elements each, until a row's edit menu is actually used.
+    // The <details> is absolutely positioned (see injectReaderExtrasCss), so
+    // it trails the row's last line without claiming any vertical space of
+    // its own regardless of how many languages are on show.
     const actions = options.readonly ? '' : `<details class="tipitaka-actions"><summary class="tipitaka-actions-icon" title="译文操作与编辑" aria-label="译文操作与编辑">ⓘ</summary><div class="tipitaka-actions-grid" data-row="${row.id}"></div></details>`;
-    const bookmark = options.readonly ? null : options.bookmark;
-    const hlClass = bookmark?.highlight_color ? ` tipitaka-hl-${esc(bookmark.highlight_color)}` : '';
-    const annotate = (options.readonly || !options.workId) ? '' : tipitakaAnnotateHtml(options.workId, row, bookmark);
-    return `<article class="tipitaka-row${hlClass}${options.readonly ? ' tipitaka-annotation-row' : ''}${options.extraClass ? ` ${esc(options.extraClass)}` : ''}${isHitRow ? ' tipitaka-search-target' : ''}" data-t-item-key="${esc(key)}" ${rootData} data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}<div class="tipitaka-row-topline">${actions}${annotate}</div></article>`;
-  }
-
-  const TIPITAKA_HL_COLORS = ['yellow', 'green', 'blue', 'pink'];
-  function tipitakaAnnotateHtml(workId, row, bookmark) {
-    const active = bookmark?.highlight_color || '';
-    const swatches = TIPITAKA_HL_COLORS.map(color => `<button type="button" class="tipitaka-hl-swatch tipitaka-hl-swatch-${color}${active === color ? ' active' : ''}" data-t-hl="${color}" title="高亮" aria-label="高亮为${color}"></button>`).join('');
-    const hasAnnotation = !!(bookmark?.highlight_color || bookmark?.note);
-    return `<details class="tipitaka-annotate" data-work="${esc(workId)}" data-row="${row.id}">
-      <summary class="tipitaka-annotate-icon${hasAnnotation ? ' has-annotation' : ''}" title="高亮与私人笔记（仅自己可见）" aria-label="高亮与私人笔记">🖊</summary>
-      <div class="tipitaka-annotate-body">
-        <div class="tipitaka-annotate-swatches">${swatches}<button type="button" class="tipitaka-hl-swatch tipitaka-hl-clear" data-t-hl="" title="清除高亮" aria-label="清除高亮">✕</button></div>
-        <textarea class="tipitaka-annotate-note" rows="2" placeholder="仅自己可见的私人笔记…">${esc(bookmark?.note || '')}</textarea>
-        <button type="button" class="tb-btn" data-t-action="annotate-save">保存笔记</button>
-      </div>
-    </details>`;
+    return `<article class="tipitaka-row${options.readonly ? ' tipitaka-annotation-row' : ''}${options.extraClass ? ` ${esc(options.extraClass)}` : ''}${isHitRow ? ' tipitaka-search-target' : ''}" data-t-item-key="${esc(key)}" ${rootData} data-rend="${esc(row.rend || '')}"><span class="tipitaka-num">${esc(row.paranum || row.id)}</span>${parts.join('')}${actions}</article>`;
   }
 
   function normalizedJumpRef(value) {
@@ -1052,7 +1087,7 @@
   }
 
   function readerItemHtml(item, reader) {
-    if (item.kind === 'root') return rowHtml(item.row, reader.overlays, reader.hit && Number(item.row.id) === Number(reader.hit.rowId) ? reader.hit : null, { itemKey: item.key, workId: reader.meta.id, bookmark: reader.bookmarks?.get(Number(item.row.id)) });
+    if (item.kind === 'root') return rowHtml(item.row, reader.overlays, reader.hit && Number(item.row.id) === Number(reader.hit.rowId) ? reader.hit : null, { itemKey: item.key, workId: reader.meta.id });
     if (item.kind === 'annotation-card') return annotationCardHtml(item.unit, reader);
     if (item.kind === 'roottext-card') return rootTextCardHtml(item.sourceFragment, reader);
     if (item.kind === 'annotation-row') return rowHtml(item.row, new Map(), null, { readonly: true, sourceWorkId: item.annotation.data.source_work_id, itemKey: item.key });
@@ -1145,6 +1180,10 @@
       start = nextStart; end = nextEnd;
       windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
       windowEl.innerHTML = items.slice(start, end).map(item => readerItemHtml(item, reader)).join('');
+      // Highlights live outside the row-HTML builders (see ReaderHighlights in
+      // docs/index.html), so each freshly-drawn virtual window has to have them
+      // painted back on.
+      if (window.ReaderHighlights && reader.highlightDoc) window.ReaderHighlights.apply(windowEl, reader.highlightDoc);
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       scheduleMeasure();
     };
@@ -1573,18 +1612,15 @@
       const meta = state.works.find(work => work.id === workId); if (!meta) throw new Error('找不到该作品');
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
       const isRootWork = meta.level === 'mula', isAnnotationWork = meta.level === 'atthakatha' || meta.level === 'tika';
-      const [loaded, overlays, commentaryMap, commentarySourceMap, bookmarksResult] = await Promise.all([
+      const highlightDoc = `tipitaka:${workId}`;
+      const [loaded, overlays, commentaryMap, commentarySourceMap] = await Promise.all([
         workById(workId), overrides(workId),
         isRootWork ? commentaryMapFor(workId) : Promise.resolve(null),
         isAnnotationWork ? commentarySourceMapFor(workId) : Promise.resolve(null),
-        listBookmarks().catch(() => ({ authenticated: false, items: [] })),
+        window.ReaderHighlights ? window.ReaderHighlights.load(highlightDoc) : Promise.resolve(null),
       ]);
       if (renderId !== state.readerRequest) return;
       const work = loaded[1], params = query();
-      // Row-level highlight/note lookup for this work only, keyed by row id -
-      // rowHtml()/readerItemHtml() read this to render the highlight
-      // background class and prefill the private annotate panel.
-      const bookmarks = new Map(bookmarksResult.items.filter(item => item.work_id === workId).map(item => [Number(item.row_id), item]));
       let requestedRowId = Number(params.get('row') || 0), fragmentLinkStatus = '';
       const linkedFragment = params.get('annotation_fragment');
       if (linkedFragment) {
@@ -1619,7 +1655,7 @@
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
       let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
       const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, bookmarks, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null, virtualHeightCache: new Map(), structureRestorePending: false, anchorRestoreToken: 0, anchorRestoreCancelled: false, suppressMeasureCompensation: false };
+      state.reader = { meta, work, overlays, highlightDoc, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null, virtualHeightCache: new Map(), structureRestorePending: false, anchorRestoreToken: 0, anchorRestoreCancelled: false, suppressMeasureCompensation: false };
       const deepAnnotation = annotationDescriptor(commentaryMap, params.get('fragment'), params.get('annotation'));
       if (deepAnnotation) {
         state.reader.annotationPicker = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind };
@@ -1638,10 +1674,19 @@
       // spacer), so this doesn't touch the virtualization coordinate math.
       const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : commentarySourceMap?.error ? `<span class="tipitaka-annotation-error">对应根本片段暂不可用；仍可使用相关全书跳转。 <button type="button" data-t-action="annotation-source-map-retry">重试</button></span>${jumpButtons(work.rows[currentIndex], meta)}` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
       const readerSettings = settings();
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-t-show-pali="${readerSettings.pali ? 1 : 0}" data-t-show-zh="${readerSettings.zh ? 1 : 0}" data-t-show-en="${readerSettings.en ? 1 : 0}" data-theme="${readerSettings.theme === 'dark' ? 'dark' : 'light'}" style="font-size:${readerSettings.font}px;--tipitaka-line-height:${readerSettings.lineHeight};--tipitaka-letter-spacing:${readerSettings.letterSpacing}em">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-hl-doc="${esc(highlightDoc)}" data-t-show-pali="${readerSettings.pali ? 1 : 0}" data-t-show-zh="${readerSettings.zh ? 1 : 0}" data-t-show-en="${readerSettings.en ? 1 : 0}" data-theme="${readerSettings.theme === 'dark' ? 'dark' : 'light'}" style="font-size:${readerSettings.font}px;--tipitaka-line-height:${readerSettings.lineHeight};--tipitaka-letter-spacing:${readerSettings.letterSpacing}em">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
       bindReaderProgress(state.reader);
+      if (state.settingsOpen) {
+        const panel = document.getElementById('tipitaka-settings-panel');
+        const toggle = document.querySelector('#tipitaka-toolbar [data-t-action="settings-toggle"]');
+        if (panel) panel.hidden = false;
+        if (toggle) toggle.setAttribute('aria-expanded', 'true');
+      }
+      // Saving/removing a highlight repaints via the virtual list's own draw,
+      // so the shared module doesn't need to know about the windowing.
+      if (window.ReaderHighlights) window.ReaderHighlights.registerRepaint(highlightDoc, () => state.reader?.virtual?.refresh?.());
       if (preserveAnchor?.itemKey || preserveAnchor?.rowId) {
         state.reader.virtual?.restoreAnchor(preserveAnchor);
         scheduleReaderAnchorRestore(state.reader, preserveAnchor);
@@ -1728,9 +1773,21 @@
       if (!reader) return;
       if (action === 'back') { location.hash = '#/tipitaka'; return; }
       if (action === 'font-up' || action === 'font-down') { const anchor = readerViewAnchor(reader); settings().font = Math.max(13, Math.min(30, settings().font + (action === 'font-up' ? 1 : -1))); saveSettings(); renderReader(reader.meta.id, anchor); return; }
-      if (action === 'settings-toggle') {
-        const panel = document.getElementById('tipitaka-settings-panel');
-        if (panel) { panel.hidden = !panel.hidden; button.setAttribute('aria-expanded', String(!panel.hidden)); }
+      if (action === 'settings-toggle' || action === 'nav-toggle') {
+        const wanted = action === 'nav-toggle' ? 'tipitaka-nav-panel' : 'tipitaka-settings-panel';
+        const panel = document.getElementById(wanted);
+        if (!panel) return;
+        if (action === 'nav-toggle' && panel.hidden) panel.innerHTML = navPanelHtml(reader.meta);
+        const opening = panel.hidden;
+        closeReaderPopovers();
+        panel.hidden = !opening;
+        button.setAttribute('aria-expanded', String(opening));
+        // Font/line-height/letter-spacing each re-render the whole reader
+        // (row heights change, so the virtual list must re-measure), which
+        // rebuilds this toolbar from scratch. Remembering the open state lets
+        // renderReader() put the panel back, instead of it snapping shut on
+        // every single press of A+.
+        state.settingsOpen = action === 'settings-toggle' ? opening : false;
         return;
       }
       // Line height / letter spacing change row heights, same as font size
@@ -1747,25 +1804,6 @@
         const anchor = readerViewAnchor(reader);
         settings().letterSpacing = Math.max(0, Math.min(0.15, Math.round((settings().letterSpacing + (action === 'ls-inc' ? 0.01 : -0.01)) * 100) / 100));
         saveSettings(); renderReader(reader.meta.id, anchor); return;
-      }
-      if (button.hasAttribute('data-t-hl') || action === 'annotate-save') {
-        const wrap = button.closest('.tipitaka-annotate'); if (!wrap) return;
-        const workId = wrap.dataset.work, rowId = wrap.dataset.row;
-        const note = wrap.querySelector('.tipitaka-annotate-note')?.value.trim() || '';
-        const activeSwatch = wrap.querySelector('.tipitaka-hl-swatch.active');
-        const color = button.hasAttribute('data-t-hl') ? (button.dataset.tHl || null) : (activeSwatch ? activeSwatch.dataset.tHl : null);
-        try {
-          const res = await fetch(`${API}/bookmarks/${encodeURIComponent(workId)}/${encodeURIComponent(rowId)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ highlight_color: color, note }) });
-          if (!res.ok) throw new Error('保存失败，请先登录');
-          const saved = await res.json();
-          reader.bookmarks?.set(Number(rowId), saved);
-          const article = wrap.closest('.tipitaka-row');
-          TIPITAKA_HL_COLORS.forEach(c => article?.classList.remove(`tipitaka-hl-${c}`));
-          if (saved.highlight_color) article?.classList.add(`tipitaka-hl-${saved.highlight_color}`);
-          wrap.querySelectorAll('.tipitaka-hl-swatch').forEach(el => el.classList.toggle('active', !!el.dataset.tHl && el.dataset.tHl === (saved.highlight_color || '')));
-          wrap.querySelector('.tipitaka-annotate-icon')?.classList.toggle('has-annotation', !!(saved.highlight_color || saved.note));
-        } catch (err) { alert(err.message); }
-        return;
       }
       if (action === 'auto') { toggleAutoScroll(); button.classList.toggle('is-active', !!state.autoTimer); return; }
       if (action === 'hit-prev') { moveReaderHit(-1); return; }
@@ -1912,6 +1950,17 @@
         const rowId = grid.dataset.row;
         grid.innerHTML = `<button data-t-action="edit-zh" data-row="${rowId}">编辑中译</button><button data-t-action="draft-zh" data-row="${rowId}">Dharmamitra 草稿</button><button data-t-action="edit-en" data-row="${rowId}">编辑英译</button><button data-t-action="history" data-row="${rowId}">历史</button>`;
       }, true);
+    }
+    // A click anywhere outside the two toolbar popovers dismisses them. Also
+    // registered once ever, for the same reason as the toggle listener above.
+    if (!app._tipitakaPopoverWired) {
+      app._tipitakaPopoverWired = true;
+      document.addEventListener('click', event => {
+        if (!document.getElementById('tipitaka-toolbar')) return;
+        if (event.target.closest?.('#tipitaka-nav-panel, #tipitaka-settings-panel, [data-t-action="nav-toggle"], [data-t-action="settings-toggle"]')) return;
+        closeReaderPopovers();
+        state.settingsOpen = false;
+      });
     }
   }
   function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => pane.scrollTop += settings().speed / 10, 50); }
@@ -2273,9 +2322,7 @@
             const snippet = snippetText
               ? `<span class="tipitaka-bookmark-snippet">${esc(snippetText.length > SNIPPET_MAX ? snippetText.slice(0, SNIPPET_MAX) + '…' : snippetText)}</span>`
               : '';
-            const hlDot = item.highlight_color ? `<span class="tipitaka-bookmark-hl-dot tipitaka-hl-swatch-${esc(item.highlight_color)}"></span>` : '';
-            const note = item.note ? `<span class="tipitaka-bookmark-note">${esc(item.note)}</span>` : '';
-            return `<article><a href="${esc(bookmarkHref(item))}"><strong>${hlDot}${esc(item.label || `${title} · ${item.row_id}`)}</strong>${snippet}${note}<span>打开对应阅读位置 →</span></a><button type="button" data-t-bookmark-remove="${esc(item.work_id)}" data-t-bookmark-row="${esc(item.row_id)}" aria-label="移除此收藏">移除</button></article>`;
+            return `<article><a href="${esc(bookmarkHref(item))}"><strong>${esc(item.label || `${title} · ${item.row_id}`)}</strong>${snippet}<span>打开对应阅读位置 →</span></a><button type="button" data-t-bookmark-remove="${esc(item.work_id)}" data-t-bookmark-row="${esc(item.row_id)}" aria-label="移除此收藏">移除</button></article>`;
           }).join('');
           return `<div class="tipitaka-bookmark-group"><h4>${esc(title)}<span class="tipitaka-bookmark-count">${items.length}</span></h4><div class="tipitaka-bookmark-list">${articles}</div></div>`;
         }).join('');

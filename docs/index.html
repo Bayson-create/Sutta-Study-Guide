@@ -1064,7 +1064,14 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 /* Segment display */
 .segment-block { margin-bottom: 14px; }
 .seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; overflow-wrap: break-word; word-break: break-word; }
-.seg-en { line-height: 1.7; overflow-wrap: break-word; word-break: break-word; }
+/* Kept deliberately identical to the V4 reader's .tipitaka-en (sans-serif +
+   --text-light), so English reads the same in both readers and stays visually
+   distinct from the serif Chinese it sits next to. */
+.seg-en {
+  line-height: 1.7; overflow-wrap: break-word; word-break: break-word;
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Helvetica Neue", sans-serif;
+  color: var(--text-light);
+}
 .seg-zh { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .zh-formatted { line-height: 2; }
 .zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 20px; font-weight: 700; }
@@ -1137,15 +1144,45 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 #vism-reader-body .seg-chinese,
 #vism-reader-body .trans-text { line-height: var(--vism-line-height, inherit); }
 
-/* Reading settings panel */
+/* Reading settings panel - a popover anchored under its toggle, NOT a
+   normal-flow block: opening it must not push the text the reader is
+   currently looking at further down the page. */
+#vism-toolbar { position: sticky; }
 .vism-settings-panel {
-  position: sticky; top: 45px; z-index: 99; background: var(--toolbar-bg); border-bottom: 1px solid var(--border);
-  padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; font-size: 0.85em;
+  position: absolute; top: calc(100% + 6px); right: 12px; z-index: 200;
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(40, 28, 10, 0.2);
+  padding: 12px 14px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; font-size: 0.85em;
 }
 .vism-settings-row { display: flex; align-items: center; gap: 8px; }
 .vism-settings-row span:not(.tb-btn) { min-width: 2.2em; text-align: center; color: var(--text-light); }
 .vism-settings-panel .tb-btn { padding: 3px 9px; }
 .vism-settings-panel[hidden] { display: none; }
+
+/* Reading progress: a 2px hairline hugging the toolbar's bottom edge. */
+.vism-progress-line {
+  position: absolute; left: 0; bottom: -1px; height: 2px; width: 0;
+  background: var(--accent); border-radius: 0 2px 2px 0; transition: width .12s linear; pointer-events: none;
+}
+
+/* "← 目录" popover: breadcrumb + sibling chapters, instead of bouncing the
+   reader all the way back out to the catalog page. */
+.vism-nav-panel {
+  position: absolute; top: calc(100% + 6px); left: 12px; z-index: 200;
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(40, 28, 10, 0.2);
+  padding: 12px 14px; width: min(420px, 92vw); max-height: 70vh; overflow: auto;
+}
+.vism-nav-panel[hidden] { display: none; }
+.vism-nav-crumbs { font-size: 0.85em; color: var(--text-light); margin-bottom: 10px; }
+.vism-nav-crumbs a { color: var(--accent); }
+.vism-nav-list { display: grid; gap: 2px; }
+.vism-nav-list a {
+  display: block; padding: 6px 9px; border-radius: 7px; color: var(--text);
+  font-size: 0.9em; line-height: 1.5; text-decoration: none;
+}
+.vism-nav-list a:hover { background: var(--hover-bg); }
+.vism-nav-list a.is-current { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
 
 /* Dark / eye-care theme, scoped to this reader only (never touches :root) */
 #vism-page[data-vism-theme="dark"] {
@@ -1167,33 +1204,43 @@ body:has(#vism-page[data-vism-theme="dark"]) {
   background: var(--bg); color: var(--text);
 }
 
-/* Private highlight/note controls (independent of the shared trans-* editor) */
-.segment-block.vism-hl-yellow { background: rgba(230, 190, 40, 0.16); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
-.segment-block.vism-hl-green { background: rgba(70, 160, 90, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
-.segment-block.vism-hl-blue { background: rgba(60, 120, 190, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
-.segment-block.vism-hl-pink { background: rgba(200, 90, 140, 0.14); border-radius: 6px; padding: 6px 8px; margin-left: -8px; margin-right: -8px; }
-.vism-annotate { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; }
-.vism-annotate-swatches { display: inline-flex; gap: 4px; }
-.vism-hl-swatch {
-  width: 15px; height: 15px; border-radius: 50%; border: 1px solid var(--border); cursor: pointer; padding: 0;
+/* === Text-span highlights + popup (shared by both readers) === */
+mark.rh-mark { background: transparent; color: inherit; border-radius: 2px; padding: 0; cursor: pointer; }
+mark.rh-yellow { background: rgba(230, 190, 40, 0.42); }
+mark.rh-green  { background: rgba(70, 160, 90, 0.34); }
+mark.rh-blue   { background: rgba(60, 120, 190, 0.32); }
+mark.rh-pink   { background: rgba(200, 90, 140, 0.32); }
+mark.rh-purple { background: rgba(150, 100, 200, 0.32); }
+/* A note is signalled by an underline rather than another colour, so it stays
+   legible on top of any of the five highlight colours. */
+mark.rh-has-note { border-bottom: 2px solid var(--accent); }
+.rh-popup {
+  position: absolute; z-index: 1400; display: flex; flex-direction: column; gap: 8px;
+  padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border);
+  background: var(--card-bg); box-shadow: 0 8px 28px rgba(40, 28, 10, 0.22);
+  font-size: 0.9em; max-width: min(320px, 92vw);
 }
-.vism-hl-swatch-yellow { background: #e6be28; }
-.vism-hl-swatch-green { background: #46a05a; }
-.vism-hl-swatch-blue { background: #3c78be; }
-.vism-hl-swatch-pink { background: #c85a8c; }
-.vism-hl-swatch.active { outline: 2px solid var(--accent); outline-offset: 1px; }
-.vism-hl-clear { background: var(--card-bg); color: var(--text-light); font-size: 0.7em; line-height: 13px; }
-.vism-note-toggle {
-  font-size: 0.85em; border: 1px solid var(--border); border-radius: 4px; background: var(--card-bg);
-  color: var(--text-light); cursor: pointer; padding: 1px 6px; font-family: inherit;
+.rh-popup[hidden] { display: none; }
+.rh-popup-row { display: flex; align-items: center; gap: 10px; }
+.rh-popup-actions { gap: 8px; border-top: 1px solid var(--border); padding-top: 8px; }
+.rh-dot { width: 22px; height: 22px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.12); cursor: pointer; padding: 0; }
+.rh-dot-yellow { background: #e6be28; }
+.rh-dot-green  { background: #6cc07f; }
+.rh-dot-blue   { background: #6f9fe0; }
+.rh-dot-pink   { background: #ee92a8; }
+.rh-dot-purple { background: #b79ae4; }
+.rh-dot.active { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rh-action {
+  border: 1px solid var(--border); border-radius: 7px; background: var(--card-bg); color: var(--text);
+  cursor: pointer; font: inherit; font-size: 0.92em; padding: 4px 10px;
 }
-.vism-note-toggle.has-note { color: var(--accent); border-color: var(--accent-light); }
-.vism-note-panel { flex-basis: 100%; margin-top: 6px; padding: 8px; background: var(--accent-bg); border-radius: 6px; border: 1px solid var(--border); }
-.vism-note-panel textarea {
-  width: 100%; font-family: inherit; font-size: 0.92em; padding: 6px 8px; border: 1px solid var(--border);
-  border-radius: 4px; background: var(--card-bg); color: var(--text); resize: vertical;
+.rh-action:hover { border-color: var(--accent-light); color: var(--accent); }
+.rh-action.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.rh-note-input {
+  width: 260px; max-width: 100%; font-family: inherit; font-size: 0.95em; padding: 6px 8px;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--card-bg); color: var(--text); resize: vertical;
 }
-.vism-note-panel-actions { display: flex; gap: 8px; margin-top: 8px; }
+.rh-popup-note { color: var(--text-light); font-size: 0.9em; line-height: 1.55; white-space: pre-wrap; }
 
 /* Papancasudani reader */
 .papanca-reader { max-width: 820px; margin: 0 auto; }
@@ -1212,11 +1259,23 @@ body:has(#vism-page[data-vism-theme="dark"]) {
 .trans-slot { position: relative; }
 .trans-empty { color: var(--text-light); font-style: italic; font-size: 0.95em; }
 .trans-actions { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+/* Taken out of the flow entirely and pinned to the paragraph's bottom-right
+   corner, so it costs the reading column no vertical space no matter how many
+   language lines are showing. Anchored to .segment-block (not .trans-slot, the
+   Chinese column it happens to live in) so it lands after the paragraph as a
+   whole; the papanca reader has no .segment-block, so there it keeps anchoring
+   to .trans-slot as before. */
+.parallel-block .segment-block { position: relative; }
+.parallel-block .trans-slot { position: static; }
 .trans-info-toggle {
-  font-size: 0.95em; line-height: 1; margin-top: 4px; border: 0; background: none; padding: 0;
-  color: var(--text-light); cursor: pointer; font-family: inherit;
+  position: absolute; right: 0; bottom: 0;
+  font-size: 0.95em; line-height: 1; border: 0; background: none; padding: 0;
+  color: var(--text-light); cursor: pointer; font-family: inherit; opacity: .4; transition: opacity .15s;
 }
+.segment-block:hover .trans-info-toggle, .trans-info-toggle:focus-visible,
+.trans-info-toggle[aria-expanded="true"] { opacity: 1; }
 .trans-info-toggle:hover, .trans-info-toggle[aria-expanded="true"] { color: var(--accent); }
+@media (hover: none) { .trans-info-toggle { opacity: .75; } }
 .trans-meta-panel { margin-top: 4px; }
 .trans-meta-panel[hidden] { display: none; }
 .trans-btn {
@@ -5218,7 +5277,10 @@ function transSlotHtml(docKey, unitKey, staticText, staticNote, pali, context) {
   const note = unit ? unit.note : staticNote;
   const isEmpty = !text || !text.trim();
   let html = `<div class="trans-slot" data-doc="${esc(docKey)}" data-unit="${esc(unitKey)}">`;
-  html += `<div class="trans-text" data-role="text">${isEmpty ? '<span class="trans-empty">（尚无译文，欢迎认领翻译）</span>' : esc(text)}</div>`;
+  // data-hl-* only when there's real text: the "no translation yet" placeholder
+  // isn't source text and must never accept a highlight anchored to it.
+  const hlAttrs = isEmpty ? '' : ` data-hl-unit="${esc(unitKey)}" data-hl-lang="zh"`;
+  html += `<div class="trans-text" data-role="text"${hlAttrs}>${isEmpty ? '<span class="trans-empty">（尚无译文，欢迎认领翻译）</span>' : esc(text)}</div>`;
   let panelHtml = '';
   if (note && note.trim()) panelHtml += `<div class="trans-note-view" data-role="note">${esc(note)}</div>`;
   if (unit && unit.last_reason) {
@@ -6729,6 +6791,70 @@ function applyVismSettingsToDom() {
   page.dataset.vismTheme = s.theme === 'dark' ? 'dark' : 'light';
 }
 
+// The Vism reader renders a whole chapter into the page at once (no
+// virtualization), so progress is just how far the window has scrolled
+// through #vism-reader-body's own box.
+function updateVismProgress() {
+  const line = document.getElementById('vism-progress-line');
+  const body = document.getElementById('vism-reader-body');
+  if (!line || !body) return;
+  const start = body.offsetTop;
+  const span = body.offsetHeight - window.innerHeight;
+  const ratio = span <= 0 ? 1 : (window.scrollY - start) / span;
+  line.style.width = `${Math.min(100, Math.max(0, ratio * 100))}%`;
+}
+function bindVismProgress() {
+  if (window._vismProgressWired) { updateVismProgress(); return; }
+  window._vismProgressWired = true;
+  let pending = null;
+  window.addEventListener('scroll', () => {
+    if (pending) return;
+    pending = setTimeout(() => { pending = null; updateVismProgress(); }, 60);
+  }, { passive: true });
+  window.addEventListener('resize', updateVismProgress, { passive: true });
+  updateVismProgress();
+}
+
+// Chapter list for the "← 目录" popover. vism_index.json only carries the 23
+// numbered chapters; 序论/结论 are separate special-cased routes, so they're
+// prepended/appended here to make the popover the complete sibling list.
+function vismChapterNav(idx) {
+  const chapters = (idx?.chapters || []).map(c => ({ id: String(c.chapter), label: `第 ${c.chapter} 品 · ${String(c.title_zh || '').replace(/\s*-\s*清净道论$/, '')}` }));
+  return [{ id: 'nidana', label: '序论 Nidānakathā' }, ...chapters, { id: 'conclusion', label: '结论 Nigamanakathā' }];
+}
+function vismNavPanelHtml(idx, currentChapter) {
+  const current = String(currentChapter);
+  const items = vismChapterNav(idx).map(item =>
+    `<a href="#/research/vism/read/${encodeURIComponent(item.id)}" class="${item.id === current ? 'is-current' : ''}">${esc(item.label)}</a>`).join('');
+  return `<div class="vism-nav-crumbs"><a href="#/research">研究成果</a> › <a href="#/research/vism">清净之道</a> › <span>当前章节</span></div>
+    <div class="vism-nav-list">${items}</div>`;
+}
+
+// Saves the paragraph currently nearest the top of the viewport, so "收藏此处"
+// means the same thing it does in the V4 reader.
+function vismCurrentUnit() {
+  const blocks = [...document.querySelectorAll('#vism-reader-body [data-vism-part][data-vism-row]')];
+  const found = blocks.find(node => node.getBoundingClientRect().bottom > 80) || blocks[0];
+  if (!found) return null;
+  return { unitKey: `p${found.dataset.vismPart}-r${found.dataset.vismRow}`, node: found };
+}
+async function saveVismBookmark(docKey, chapterNum) {
+  const target = vismCurrentUnit();
+  if (!target) { alert('当前模式下没有可收藏的段落，请切换到「逐句三语对照」后再试'); return; }
+  const snippet = stripTags(target.node.textContent || '').slice(0, 60);
+  const label = `第 ${chapterNum} 品 · ${target.unitKey}${snippet ? ` · ${snippet}` : ''}`;
+  try {
+    const res = await fetch(`${API_BASE}/api/vism/bookmarks`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
+      body: JSON.stringify({ doc_key: docKey, unit_key: target.unitKey, label }),
+    });
+    if (res.status === 409) { alert('该位置已收藏'); return; }
+    if (!res.ok) throw new Error('请先登录后收藏');
+    alert('已收藏');
+  } catch (error) { alert(error.message); }
+}
+
 const VISM_CHAPTER_ICONS = ['🕯️','🌾','🎯','🟤','🔷','💀','🙏','📿','🕊️','🌫️','🧘','✨','👁️','🧩','🔭','⚖️','🌳','👀','❓','🛤️','🚶','💎','🎓'];
 
 async function loadVismIndex() {
@@ -6807,10 +6933,49 @@ async function renderVismHome() {
       <div class="desc">Nigamanakathā — 全书正文之后的结语，觉音尊者自述造论因缘</div>
     </div>`;
     cardsHtml += '</div>';
+    cardsHtml += '<section class="tipitaka-bookmarks" id="vism-bookmarks" hidden aria-live="polite"></section>';
     app.querySelector('.loading').outerHTML = cardsHtml;
+    drawVismBookmarks();
   } catch (e) {
     app.querySelector('.loading').outerHTML = `<div class="error-msg">目录加载失败: ${e.message}</div>`;
   }
+}
+
+// Mirrors the V4 reader's own bookmark panel (drawBookmarks in
+// tipitaka-reader.js), including reusing its .tipitaka-bookmark-* styling so
+// the two readers' saved-position lists look identical.
+async function drawVismBookmarks() {
+  const panel = document.getElementById('vism-bookmarks');
+  if (!panel) return;
+  await communityFetchCurrentUser();
+  if (!communityCurrentUser) return;   // stays hidden for signed-out readers
+  let items = [];
+  try {
+    const res = await fetch(`${API_BASE}/api/vism/bookmarks`, { headers: communityAuthHeaders() });
+    if (!res.ok) return;
+    items = await res.json();
+  } catch (error) { return; }
+  panel.hidden = false;
+  if (!items.length) {
+    panel.innerHTML = '<h3>我的收藏</h3><p class="tipitaka-note">尚未收藏任何段落。在阅读器工具栏点击「☆ 收藏此处」即可保存当前位置。</p>';
+    return;
+  }
+  const chapterOf = docKey => String(docKey || '').split(':')[1] || '';
+  const articles = items.map(item => {
+    // Reuses the reader's existing ?mode=parallel&part=&row= deep-link scheme
+    // (see focusVismLectureTarget) rather than inventing a new param.
+    const parts = /^p(\d+)-r(\d+)$/.exec(item.unit_key || '');
+    const href = parts
+      ? `#/research/vism/read/${encodeURIComponent(chapterOf(item.doc_key))}?mode=parallel&part=${parts[1]}&row=${parts[2]}`
+      : `#/research/vism/read/${encodeURIComponent(chapterOf(item.doc_key))}?mode=parallel`;
+    return `<article><a href="${esc(href)}"><strong>${esc(item.label || item.unit_key)}</strong><span>打开对应阅读位置 →</span></a><button type="button" data-vism-bm-doc="${esc(item.doc_key)}" data-vism-bm-unit="${esc(item.unit_key)}" aria-label="移除此收藏">移除</button></article>`;
+  }).join('');
+  panel.innerHTML = `<h3>我的收藏</h3><div class="tipitaka-bookmark-list">${articles}</div>`;
+  panel.querySelectorAll('[data-vism-bm-doc]').forEach(button => button.onclick = async () => {
+    const res = await fetch(`${API_BASE}/api/vism/bookmarks/${encodeURIComponent(button.dataset.vismBmDoc)}/${encodeURIComponent(button.dataset.vismBmUnit)}`, { method: 'DELETE', headers: communityAuthHeaders() });
+    if (!res.ok) { alert('移除收藏失败，请重试'); return; }
+    await drawVismBookmarks();
+  });
 }
 
 function lectureUiText(value) {
@@ -7844,17 +8009,17 @@ function renderVismParallel(docKey, chapterTitle, parts) {
       const unitKey = `p${pi + 1}-r${ri + 1}`;
       const paliText = vismAnchorNormalize(row.pali);
       const englishText = vismAnchorNormalize(row.english);
-      const annotation = vismAnnotation(docKey, unitKey);
-      const hlClass = annotation && annotation.highlight_color ? ` vism-hl-${annotation.highlight_color}` : '';
-      html += `<div class="segment-block${hlClass}" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
-      if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      if (vismShowEn) html += `<div class="seg-en">${esc(row.english)}</div>`;
+      html += `<div class="segment-block" id="vism-unit-${unitKey}" data-vism-part="${pi + 1}" data-vism-row="${ri + 1}" data-vism-pali-text="${esc(paliText)}" data-vism-english-text="${esc(englishText)}">`;
+      // data-hl-unit/data-hl-lang mark each language line as a highlightable
+      // surface for ReaderHighlights (offsets are recorded against that line's
+      // own plain text); data-hl-doc sits on the reader body wrapper.
+      if (vismShowPali) html += `<div class="seg-pali" data-hl-unit="${esc(unitKey)}" data-hl-lang="pali">${esc(row.pali)}</div>`;
+      if (vismShowEn) html += `<div class="seg-en" data-hl-unit="${esc(unitKey)}" data-hl-lang="en">${esc(row.english)}</div>`;
       // Chinese always goes through transSlotHtml() regardless of vismShowZh
       // - it registers TRANS_STATIC_MAP[docKey|unitKey] as a side effect,
       // which the edit/Dharmamitra/history UI depends on even while this
       // column is visually hidden. Only the wrapper's display is toggled.
       html += `<div${vismShowZh ? '' : ' style="display:none"'}>${transSlotHtml(docKey, unitKey, row.chinese_translation, row.translation_note, row.pali, part.title || chapterTitle)}</div>`;
-      html += vismAnnotationSlotHtml(docKey, unitKey);
       html += '</div>';
     });
   });
@@ -7862,108 +8027,299 @@ function renderVismParallel(docKey, chapterTitle, parts) {
   return html;
 }
 
-// === Private per-user highlights/notes on Vism 逐句三语对照 sentences ===
-// Deliberately separate from the shared trans-* translation overlay above:
-// writes here go to a private-only table (app/routers/vism_annotations.py),
-// never visible to any other reader and with no revision history, per the
-// product decision to keep the shared/public translation-edit feature as-is
-// and add this as an independent, personal annotation capability.
-const VISM_ANNOTATION_CACHE = {};   // doc_key -> { unit_key: {highlight_color, note} }
-const VISM_HIGHLIGHT_COLORS = ['yellow', 'green', 'blue', 'pink'];
+// === Private per-user text-span highlights + notes (both readers) ===
+// Shared by the Vism reader below and the V4 Tipiṭaka reader
+// (docs/tipitaka-reader.js, which reaches it via window.ReaderHighlights).
+// A highlight covers a SELECTED SUB-STRING of one language line, not a whole
+// sentence, so it is anchored by (doc_key, unit_key, language, start, end)
+// against that line's plain text - see app/models/reader_highlight.py.
+//
+// Painting is done as a DOM post-pass rather than inside the readers' HTML
+// string builders: both readers assemble rows as strings, and the V4 one also
+// injects its own <mark> elements for search hits. Wrapping ranges after the
+// row is already in the DOM keeps this feature entirely out of that machinery
+// (and out of the way of search highlighting). Wrapping in <mark> never
+// changes textContent, so stored offsets stay valid across repaints.
+const ReaderHighlights = (() => {
+  const COLORS = ['yellow', 'green', 'blue', 'pink', 'purple'];
+  const cache = {};          // doc_key -> [highlight, ...]
+  let popup = null, popupState = null;
 
-async function vismAnnotationsLoadDoc(docKey) {
-  if (VISM_ANNOTATION_CACHE[docKey]) return VISM_ANNOTATION_CACHE[docKey];
-  const map = {};
-  VISM_ANNOTATION_CACHE[docKey] = map;
-  if (!communityCurrentUser) return map;
-  try {
-    const res = await fetch(`${API_BASE}/api/vism/annotations?doc=${encodeURIComponent(docKey)}`, { headers: communityAuthHeaders() });
-    if (res.ok) (await res.json()).forEach(row => { map[row.unit_key] = { highlight_color: row.highlight_color, note: row.note }; });
-  } catch (e) { /* private annotations are a nice-to-have; a load failure just leaves rows unmarked */ }
-  return map;
-}
-function vismAnnotation(docKey, unitKey) {
-  return (VISM_ANNOTATION_CACHE[docKey] || {})[unitKey] || null;
-}
-async function vismAnnotationSave(docKey, unitKey, body) {
-  const res = await fetch(`${API_BASE}/api/vism/annotations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json', ...communityAuthHeaders() },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
-  const unit = await res.json();
-  const map = VISM_ANNOTATION_CACHE[docKey] || (VISM_ANNOTATION_CACHE[docKey] = {});
-  map[unitKey] = { highlight_color: unit.highlight_color, note: unit.note };
-  return unit;
-}
-async function vismAnnotationDelete(docKey, unitKey) {
-  await fetch(`${API_BASE}/api/vism/annotations/${encodeURIComponent(docKey)}/${encodeURIComponent(unitKey)}`, { method: 'DELETE', headers: communityAuthHeaders() });
-  const map = VISM_ANNOTATION_CACHE[docKey];
-  if (map) delete map[unitKey];
-}
-function vismAnnotationSlotHtml(docKey, unitKey) {
-  if (!communityCurrentUser) return '';
-  const a = vismAnnotation(docKey, unitKey) || { highlight_color: null, note: '' };
-  const swatches = VISM_HIGHLIGHT_COLORS.map(color => `<button type="button" class="vism-hl-swatch vism-hl-swatch-${color}${a.highlight_color === color ? ' active' : ''}" data-vism-hl="${color}" title="高亮" aria-label="高亮为${color}"></button>`).join('');
-  return `<div class="vism-annotate" data-doc="${esc(docKey)}" data-unit="${esc(unitKey)}">
-    <div class="vism-annotate-swatches">${swatches}<button type="button" class="vism-hl-swatch vism-hl-clear" data-vism-hl="" title="清除高亮" aria-label="清除高亮">✕</button></div>
-    <button type="button" class="vism-note-toggle${a.note ? ' has-note' : ''}" data-act="vism-note-toggle" title="私人笔记（仅自己可见）">📝${a.note ? '·' : ''}</button>
-  </div>`;
-}
-function vismRerenderAnnotation(row, docKey, unitKey) {
-  if (!row) return;
-  const a = vismAnnotation(docKey, unitKey);
-  VISM_HIGHLIGHT_COLORS.forEach(c => row.classList.remove(`vism-hl-${c}`));
-  if (a && a.highlight_color) row.classList.add(`vism-hl-${a.highlight_color}`);
-  const old = row.querySelector('.vism-annotate');
-  if (old) old.outerHTML = vismAnnotationSlotHtml(docKey, unitKey);
-}
-async function vismAnnotationHandleClick(e) {
-  const swatch = e.target.closest('[data-vism-hl]');
-  const noteToggle = e.target.closest('[data-act="vism-note-toggle"]');
-  const noteSave = e.target.closest('[data-act="vism-note-save"]');
-  const noteCancel = e.target.closest('[data-act="vism-note-cancel"]');
-  if (!swatch && !noteToggle && !noteSave && !noteCancel) return;
-  const wrap = e.target.closest('.vism-annotate');
-  if (!wrap) return;
-  const docKey = wrap.dataset.doc, unitKey = wrap.dataset.unit;
-  const row = wrap.closest('.segment-block');
+  const authed = () => typeof communityCurrentUser !== 'undefined' && !!communityCurrentUser;
+  const headers = () => ({ 'Content-Type': 'application/json', ...(typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {}) });
 
-  if (swatch) {
-    const color = swatch.dataset.vismHl || null;
-    const existing = vismAnnotation(docKey, unitKey);
+  async function load(docKey) {
+    if (cache[docKey]) return cache[docKey];
+    const list = [];
+    cache[docKey] = list;
+    if (!authed()) return list;
     try {
-      if (!color && !(existing && existing.note)) await vismAnnotationDelete(docKey, unitKey);
-      else await vismAnnotationSave(docKey, unitKey, { highlight_color: color, note: (existing && existing.note) || '' });
-      vismRerenderAnnotation(row, docKey, unitKey);
-    } catch (err) { alert(err.message); }
-  } else if (noteToggle) {
-    const existingPanel = wrap.querySelector('.vism-note-panel');
-    if (existingPanel) { existingPanel.remove(); return; }
-    const a = vismAnnotation(docKey, unitKey) || { note: '' };
-    wrap.insertAdjacentHTML('beforeend', `<div class="vism-note-panel">
-      <textarea data-role="vism-note-input" rows="2" placeholder="仅自己可见的私人笔记…">${esc(a.note || '')}</textarea>
-      <div class="vism-note-panel-actions">
-        <button type="button" class="trans-btn primary" data-act="vism-note-save">保存</button>
-        <button type="button" class="trans-btn" data-act="vism-note-cancel">取消</button>
-      </div>
-    </div>`);
-    wrap.querySelector('[data-role="vism-note-input"]').focus();
-  } else if (noteCancel) {
-    wrap.querySelector('.vism-note-panel')?.remove();
-  } else if (noteSave) {
-    const text = wrap.querySelector('[data-role="vism-note-input"]').value.trim();
-    const existing = vismAnnotation(docKey, unitKey);
-    try {
-      if (!text && !(existing && existing.highlight_color)) await vismAnnotationDelete(docKey, unitKey);
-      else await vismAnnotationSave(docKey, unitKey, { highlight_color: (existing && existing.highlight_color) || null, note: text });
-      wrap.querySelector('.vism-note-panel')?.remove();
-      vismRerenderAnnotation(row, docKey, unitKey);
-    } catch (err) { alert(err.message); }
+      const res = await fetch(`${API_BASE}/api/reader/highlights?doc=${encodeURIComponent(docKey)}`, { headers: headers() });
+      if (res.ok) list.push(...await res.json());
+    } catch (e) { /* highlights are additive; a load failure just leaves text unpainted */ }
+    return list;
   }
-}
-app.addEventListener('click', vismAnnotationHandleClick);
+  const forUnit = (docKey, unitKey, language) =>
+    (cache[docKey] || []).filter(h => h.unit_key === unitKey && h.language === language);
+
+  // --- offset <-> DOM mapping -------------------------------------------
+  // Text inside <details> (the V4 reader's "default text also matched" search
+  // disclosure) and inside our own note bubbles is excluded, so it can't shift
+  // the offsets a highlight was recorded against.
+  function textNodes(container) {
+    const out = [];
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        for (let el = node.parentElement; el && el !== container; el = el.parentElement) {
+          if (el.tagName === 'DETAILS' || el.classList.contains('rh-note')) return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) out.push(n);
+    return out;
+  }
+  function plainText(container) {
+    return textNodes(container).map(n => n.nodeValue).join('');
+  }
+  function offsetOf(container, node, nodeOffset) {
+    let total = 0;
+    for (const text of textNodes(container)) {
+      if (text === node) return total + nodeOffset;
+      total += text.nodeValue.length;
+    }
+    return null;
+  }
+
+  // --- painting ----------------------------------------------------------
+  function unpaint(container) {
+    container.querySelectorAll('mark.rh-mark').forEach(mark => {
+      const parent = mark.parentNode;
+      while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+      parent.removeChild(mark);
+    });
+    container.normalize();
+  }
+  function paintRange(container, start, end, highlight) {
+    // Walks text nodes and wraps only the intersecting slice of each, so a
+    // range spanning several nodes (e.g. across an existing search <mark>)
+    // yields several <mark>s sharing one data-hl-id rather than failing the
+    // way Range.surroundContents() does on partially-selected nodes.
+    let cursor = 0;
+    for (const text of textNodes(container)) {
+      const nodeStart = cursor, nodeEnd = cursor + text.nodeValue.length;
+      cursor = nodeEnd;
+      if (nodeEnd <= start || nodeStart >= end) continue;
+      const from = Math.max(0, start - nodeStart), to = Math.min(text.nodeValue.length, end - nodeStart);
+      if (to <= from) continue;
+      const range = document.createRange();
+      range.setStart(text, from);
+      range.setEnd(text, to);
+      const mark = document.createElement('mark');
+      mark.className = `rh-mark rh-${highlight.color || 'yellow'}${highlight.note ? ' rh-has-note' : ''}`;
+      mark.dataset.hlId = highlight.id;
+      try { range.surroundContents(mark); } catch (e) { /* skip a slice the DOM refuses */ }
+    }
+  }
+  // `root` is any container; every descendant carrying data-hl-unit is a
+  // language line eligible for painting.
+  function apply(root, docKey) {
+    if (!root || !cache[docKey]) return;
+    root.querySelectorAll('[data-hl-unit]').forEach(line => {
+      unpaint(line);
+      const rows = forUnit(docKey, line.dataset.hlUnit, line.dataset.hlLang);
+      if (!rows.length) return;
+      const text = plainText(line);
+      // Descending, so painting one span can't shift the offsets of an
+      // earlier one still waiting to be painted.
+      [...rows].sort((a, b) => b.start_offset - a.start_offset).forEach(h => {
+        if (h.start_offset >= h.end_offset || h.end_offset > text.length) return;
+        // The translation under a highlight is community-editable and may have
+        // changed since; a stale quote means the offsets now point somewhere
+        // else, so skip rather than colour the wrong words.
+        if (h.quote && text.slice(h.start_offset, h.end_offset) !== h.quote) return;
+        paintRange(line, h.start_offset, h.end_offset, h);
+      });
+    });
+  }
+
+  // --- popup -------------------------------------------------------------
+  function ensurePopup() {
+    if (popup) return popup;
+    popup = document.createElement('div');
+    popup.className = 'rh-popup';
+    popup.hidden = true;
+    popup.addEventListener('mousedown', e => e.preventDefault()); // keep the selection alive
+    popup.addEventListener('click', onPopupClick);
+    document.body.appendChild(popup);
+    return popup;
+  }
+  function renderPopup(existing) {
+    const dots = COLORS.map(c => `<button type="button" class="rh-dot rh-dot-${c}${existing && existing.color === c ? ' active' : ''}" data-rh-color="${c}" aria-label="高亮${c}"></button>`).join('');
+    ensurePopup().innerHTML = `<div class="rh-popup-row">${dots}</div>
+      <div class="rh-popup-row rh-popup-actions">
+        <button type="button" class="rh-action" data-rh-act="note">${existing && existing.note ? '编辑笔记' : '添加笔记'}</button>
+        ${existing ? '<button type="button" class="rh-action" data-rh-act="remove">移除</button>' : ''}
+      </div>
+      ${existing && existing.note ? `<div class="rh-popup-note">${esc(existing.note)}</div>` : ''}`;
+  }
+  function placePopup(rect) {
+    const el = ensurePopup();
+    el.hidden = false;
+    const width = el.offsetWidth || 220;
+    const left = Math.min(Math.max(8, rect.left + window.scrollX + rect.width / 2 - width / 2), window.scrollX + document.documentElement.clientWidth - width - 8);
+    el.style.left = `${left}px`;
+    el.style.top = `${rect.bottom + window.scrollY + 8}px`;
+  }
+  function closePopup() {
+    if (popup) popup.hidden = true;
+    popupState = null;
+  }
+  function openFor(state, rect) {
+    popupState = state;
+    renderPopup(state.existing);
+    placePopup(rect);
+  }
+
+  async function onPopupClick(event) {
+    const colorBtn = event.target.closest('[data-rh-color]');
+    const actBtn = event.target.closest('[data-rh-act]');
+    if (!colorBtn && !actBtn) return;
+    event.preventDefault();
+    const state = popupState;
+    if (!state) return;
+    try {
+      if (colorBtn) {
+        await commit(state, { color: colorBtn.dataset.rhColor });
+        closePopup();
+      } else if (actBtn.dataset.rhAct === 'remove') {
+        await removeHighlight(state);
+        closePopup();
+      } else if (actBtn.dataset.rhAct === 'note') {
+        openNoteEditor(state);
+      } else if (actBtn.dataset.rhAct === 'note-save') {
+        const text = popup.querySelector('.rh-note-input').value.trim();
+        await commit(state, { note: text });
+        closePopup();
+      } else if (actBtn.dataset.rhAct === 'note-cancel') {
+        closePopup();
+      }
+    } catch (err) { alert(err.message || '保存失败'); }
+  }
+  function openNoteEditor(state) {
+    popup.innerHTML = `<div class="rh-popup-row"><textarea class="rh-note-input" rows="3" placeholder="仅自己可见的笔记…">${esc(state.existing?.note || '')}</textarea></div>
+      <div class="rh-popup-row rh-popup-actions">
+        <button type="button" class="rh-action primary" data-rh-act="note-save">保存</button>
+        <button type="button" class="rh-action" data-rh-act="note-cancel">取消</button>
+      </div>`;
+    popup.querySelector('.rh-note-input').focus();
+  }
+
+  // --- persistence -------------------------------------------------------
+  async function commit(state, changes) {
+    const docKey = state.docKey;
+    if (state.existing) {
+      const res = await fetch(`${API_BASE}/api/reader/highlights/${encodeURIComponent(state.existing.id)}`, { method: 'PATCH', headers: headers(), body: JSON.stringify(changes) });
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败');
+      const saved = await res.json();
+      const list = cache[docKey] || (cache[docKey] = []);
+      const index = list.findIndex(h => h.id === saved.id);
+      if (index >= 0) list[index] = saved; else list.push(saved);
+    } else {
+      const body = { doc_key: docKey, unit_key: state.unitKey, language: state.language,
+                     start_offset: state.start, end_offset: state.end, quote: state.quote,
+                     color: changes.color || 'yellow', note: changes.note || '' };
+      const res = await fetch(`${API_BASE}/api/reader/highlights`, { method: 'POST', headers: headers(), body: JSON.stringify(body) });
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || '保存失败，请先登录');
+      (cache[docKey] || (cache[docKey] = [])).push(await res.json());
+    }
+    window.getSelection()?.removeAllRanges();
+    repaint(docKey);
+  }
+  async function removeHighlight(state) {
+    if (!state.existing) return;
+    await fetch(`${API_BASE}/api/reader/highlights/${encodeURIComponent(state.existing.id)}`, { method: 'DELETE', headers: headers() });
+    const list = cache[state.docKey] || [];
+    const index = list.findIndex(h => h.id === state.existing.id);
+    if (index >= 0) list.splice(index, 1);
+    repaint(state.docKey);
+  }
+  // Readers register how to repaint themselves (the V4 one is virtualized, so
+  // it re-runs its own draw rather than us touching its list).
+  const repainters = {};
+  function registerRepaint(docKey, fn) { repainters[docKey] = fn; }
+  function repaint(docKey) {
+    if (repainters[docKey]) repainters[docKey]();
+    else apply(document.body, docKey);
+  }
+
+  // --- selection / trigger wiring ---------------------------------------
+  function docKeyFor(line) {
+    return line.closest('[data-hl-doc]')?.dataset.hlDoc || null;
+  }
+  function selectionState() {
+    const selection = window.getSelection();
+    if (!selection || selection.isCollapsed || !selection.rangeCount) return null;
+    const range = selection.getRangeAt(0);
+    const line = range.startContainer.parentElement?.closest('[data-hl-unit]');
+    // Both ends must sit in the same language line: offsets are only
+    // meaningful relative to one line's own text.
+    if (!line || !line.contains(range.endContainer)) return null;
+    const docKey = docKeyFor(line);
+    if (!docKey) return null;
+    const start = offsetOf(line, range.startContainer, range.startOffset);
+    const end = offsetOf(line, range.endContainer, range.endOffset);
+    if (start === null || end === null || end <= start) return null;
+    return { docKey, unitKey: line.dataset.hlUnit, language: line.dataset.hlLang,
+             start, end, quote: plainText(line).slice(start, end), existing: null };
+  }
+  function existingState(mark) {
+    const line = mark.closest('[data-hl-unit]');
+    const docKey = line && docKeyFor(line);
+    if (!docKey) return null;
+    const existing = (cache[docKey] || []).find(h => String(h.id) === mark.dataset.hlId);
+    return existing ? { docKey, unitKey: line.dataset.hlUnit, language: line.dataset.hlLang, existing } : null;
+  }
+  function tryOpen(event, rectSource) {
+    if (!authed()) return false;
+    const mark = event.target.closest?.('mark.rh-mark');
+    const state = mark ? existingState(mark) : selectionState();
+    if (!state) return false;
+    const rect = rectSource === 'selection' && !mark
+      ? window.getSelection().getRangeAt(0).getBoundingClientRect()
+      : (mark || event.target).getBoundingClientRect();
+    openFor(state, rect);
+    return true;
+  }
+
+  document.addEventListener('contextmenu', event => {
+    if (!event.target.closest?.('[data-hl-unit]')) return;
+    if (tryOpen(event, 'selection')) event.preventDefault();
+  });
+  // Touch: no right-click, so a finished selection (or a tap on an existing
+  // highlight) opens the same popup - "划线后点击".
+  document.addEventListener('touchend', event => {
+    if (!event.target.closest?.('[data-hl-unit]')) return;
+    setTimeout(() => tryOpen(event, 'selection'), 10);
+  }, { passive: true });
+  document.addEventListener('click', event => {
+    // composedPath() is fixed at dispatch time, unlike closest() which walks
+    // the live DOM: clicking "添加笔记" rewrites the popup's innerHTML, so by
+    // the time this bubbles up the clicked button is detached and closest()
+    // would report the click as having happened outside the popup - closing
+    // it, and dropping popupState, right before the save button could use it.
+    const insidePopup = popup && event.composedPath().includes(popup);
+    if (popup && !popup.hidden && !insidePopup) { closePopup(); return; }
+    if (insidePopup) return;
+    const mark = event.target.closest?.('mark.rh-mark');
+    if (mark) tryOpen(event, 'mark');
+  });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closePopup(); });
+  window.addEventListener('scroll', () => { if (popup && !popup.hidden) closePopup(); }, { passive: true });
+
+  return { load, apply, repaint, registerRepaint, close: closePopup, COLORS };
+})();
+window.ReaderHighlights = ReaderHighlights;
 
 function vismAnchorNormalize(value) {
   return String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLocaleLowerCase();
@@ -8075,14 +8431,15 @@ function renderVismTrilingual(docKey, peData, parallelParts, zhData) {
       // a community-submitted translation overlay can exist even when the
       // static retranslation-pipeline data for this row is still empty, and
       // without this check the two modes disagree on the same sentence.
-      const unit = transUnit(docKey, `p${pi + 1}-r${ri + 1}`);
+      const unitKey = `p${pi + 1}-r${ri + 1}`;
+      const unit = transUnit(docKey, unitKey);
       const chineseText = (unit && unit.current_text) || parallelParts[pi]?.rows[ri]?.chinese_translation || '';
       html += '<div class="tri-row">';
       html += '<div class="tri-cell tri-cell-en">';
-      if (vismShowPali) html += `<div class="seg-pali">${esc(row.pali)}</div>`;
-      if (vismShowEn) html += `<div class="seg-en">${esc(row.english)}</div>`;
+      if (vismShowPali) html += `<div class="seg-pali" data-hl-unit="${esc(unitKey)}" data-hl-lang="pali">${esc(row.pali)}</div>`;
+      if (vismShowEn) html += `<div class="seg-en" data-hl-unit="${esc(unitKey)}" data-hl-lang="en">${esc(row.english)}</div>`;
       html += '</div>';
-      html += `<div class="tri-cell tri-cell-zh"${vismShowZh ? '' : ' style="display:none"'}><div class="seg-chinese">${chineseText ? esc(chineseText) : '<span class="trans-empty">（尚无逐句译文）</span>'}</div></div>`;
+      html += `<div class="tri-cell tri-cell-zh"${vismShowZh ? '' : ' style="display:none"'}><div class="seg-chinese"${chineseText ? ` data-hl-unit="${esc(unitKey)}" data-hl-lang="zh"` : ''}>${chineseText ? esc(chineseText) : '<span class="trans-empty">（尚无逐句译文）</span>'}</div></div>`;
       html += '</div>';
     });
   });
@@ -8110,6 +8467,11 @@ function buildVismReaderBody() {
   }
   body.innerHTML = html;
   wireVismFootnoteLinks(body);
+  // Highlights are painted onto the freshly-built DOM rather than baked into
+  // the HTML above, so every re-render (mode/language switches included) has
+  // to re-apply them.
+  ReaderHighlights.apply(body, vismDocKey);
+  updateVismProgress();
 }
 
 async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
@@ -8153,19 +8515,25 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
     await communityFetchCurrentUser();
     if (peData) {
       await transLoadDoc(vismDocKey);
-      await vismAnnotationsLoadDoc(vismDocKey);
+      await ReaderHighlights.load(vismDocKey);
     }
 
     const s = vismSettings();
-    let out = `<button class="back-btn" onclick="location.hash='#/research/vism'">← 返回清净之道目录</button>`;
-    out += `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
+    let out = `<div class="reader-meta"><h2>${isNidana ? '序论' : isConclusion ? '结论' : (meta ? esc(meta.title_zh.replace(/\s*-\s*清净道论$/, '')) : zhData.title)}</h2>`;
     if (isNidana) out += '<div class="meta-focus">Introductory Discourse (Nidānakathā)</div>';
     else if (isConclusion) out += '<div class="meta-focus">Nigamanakathā</div>';
     else if (meta) out += `<div class="meta-focus">第 ${meta.chapter} 品 / 23 · ${esc(meta.title_en)}</div>`;
     out += '</div>';
 
     if (peData) {
+      // Both popovers and the progress hairline live INSIDE the toolbar so they
+      // anchor to it (it's the positioning context) and so opening either one
+      // overlays the text instead of pushing it down.
       out += `<div class="toolbar" id="vism-toolbar">
+        <div class="tb-group">
+          <button type="button" class="tb-btn" id="vism-nav-toggle" aria-expanded="false">← 目录</button>
+        </div>
+        <div class="tb-sep"></div>
         <div class="tb-group">
           <button class="tb-btn${vismReaderMode==='trilingual'?' active':''}" data-mode="trilingual">三语对照</button>
           <button class="tb-btn${vismReaderMode==='parallel'?' active':''}" data-mode="parallel">逐句三语对照</button>
@@ -8182,16 +8550,21 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
           <button class="tb-btn${s.zhVersion==='yejun'?' active':''}" data-zhver="yejun">叶均版</button>
         </div>
         <div class="tb-sep"></div>
-        <button type="button" class="tb-btn" id="vism-settings-toggle" aria-expanded="false">Aa 阅读设置</button>
-      </div>
-      <div class="vism-settings-panel" id="vism-settings-panel" hidden>
-        <div class="vism-settings-row"><span>字号</span><button type="button" class="tb-btn" data-vism-set="font-dec">A−</button><span id="vism-font-size-label">${s.fontSize}px</span><button type="button" class="tb-btn" data-vism-set="font-inc">A+</button></div>
-        <div class="vism-settings-row"><span>行距</span><button type="button" class="tb-btn" data-vism-set="lh-dec">−</button><span id="vism-line-height-label">${s.lineHeight}</span><button type="button" class="tb-btn" data-vism-set="lh-inc">+</button></div>
-        <label class="tb-toggle"><input type="checkbox" id="vism-theme-toggle" ${s.theme==='dark'?'checked':''}> 深色/护眼模式</label>
+        <div class="tb-group">
+          <button type="button" class="tb-btn" id="vism-bookmark-btn">☆ 收藏此处</button>
+          <button type="button" class="tb-btn" id="vism-settings-toggle" aria-expanded="false">Aa 阅读设置</button>
+        </div>
+        <div class="vism-nav-panel" id="vism-nav-panel" hidden></div>
+        <div class="vism-settings-panel" id="vism-settings-panel" hidden>
+          <div class="vism-settings-row"><span>字号</span><button type="button" class="tb-btn" data-vism-set="font-dec">A−</button><span id="vism-font-size-label">${s.fontSize}px</span><button type="button" class="tb-btn" data-vism-set="font-inc">A+</button></div>
+          <div class="vism-settings-row"><span>行距</span><button type="button" class="tb-btn" data-vism-set="lh-dec">−</button><span id="vism-line-height-label">${s.lineHeight}</span><button type="button" class="tb-btn" data-vism-set="lh-inc">+</button></div>
+          <label class="tb-toggle"><input type="checkbox" id="vism-theme-toggle" ${s.theme==='dark'?'checked':''}> 深色/护眼模式</label>
+        </div>
+        <div class="vism-progress-line" id="vism-progress-line"></div>
       </div>`;
     }
 
-    out += '<div class="reader-content" id="vism-reader-body"></div>';
+    out += `<div class="reader-content" id="vism-reader-body" data-hl-doc="${esc(vismDocKey)}"></div>`;
 
     out += '<div class="vism-chapnav">';
     if (isNidana) {
@@ -8242,10 +8615,35 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
       });
       const settingsToggle = document.getElementById('vism-settings-toggle');
       const settingsPanel = document.getElementById('vism-settings-panel');
-      settingsToggle.addEventListener('click', () => {
-        settingsPanel.hidden = !settingsPanel.hidden;
-        settingsToggle.setAttribute('aria-expanded', String(!settingsPanel.hidden));
+      const navToggle = document.getElementById('vism-nav-toggle');
+      const navPanel = document.getElementById('vism-nav-panel');
+      const closePopovers = except => {
+        [[settingsToggle, settingsPanel], [navToggle, navPanel]].forEach(([toggle, panel]) => {
+          if (panel === except) return;
+          panel.hidden = true;
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      };
+      const togglePopover = (toggle, panel) => {
+        const opening = panel.hidden;
+        closePopovers(panel);
+        panel.hidden = !opening;
+        toggle.setAttribute('aria-expanded', String(opening));
+      };
+      settingsToggle.addEventListener('click', () => togglePopover(settingsToggle, settingsPanel));
+      navToggle.addEventListener('click', () => {
+        if (navPanel.hidden) navPanel.innerHTML = vismNavPanelHtml(idx, chapterNum);
+        togglePopover(navToggle, navPanel);
       });
+      // Any click outside either popover closes both. Registered on the
+      // document rather than the toolbar so a click anywhere in the text
+      // dismisses them, matching how the highlight popup behaves.
+      document.addEventListener('click', event => {
+        if (!document.getElementById('vism-toolbar')) return;  // reader left the DOM
+        if (event.target.closest('#vism-settings-panel, #vism-settings-toggle, #vism-nav-panel, #vism-nav-toggle')) return;
+        closePopovers(null);
+      });
+      document.getElementById('vism-bookmark-btn').addEventListener('click', () => saveVismBookmark(vismDocKey, chapterNum));
       settingsPanel.addEventListener('click', e => {
         const btn = e.target.closest('[data-vism-set]');
         if (!btn) return;
@@ -8266,7 +8664,14 @@ async function renderVismReader(chapterNum, secIdx, readerTarget = null) {
       });
     }
 
+    // Saving/removing a highlight repaints through this, so the module doesn't
+    // need to know how this reader rebuilds itself.
+    ReaderHighlights.registerRepaint(vismDocKey, () => {
+      const body = document.getElementById('vism-reader-body');
+      if (body) ReaderHighlights.apply(body, vismDocKey);
+    });
     buildVismReaderBody();
+    bindVismProgress();
 
     if (readerTarget?.mode === 'parallel') {
       requestAnimationFrame(() => { focusVismLectureTarget(readerTarget); });
@@ -14133,7 +14538,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260827.1"></script>
+<script src="tipitaka-reader.js?v=20260828.1"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
