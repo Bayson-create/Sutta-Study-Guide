@@ -401,6 +401,12 @@
       #tipitaka-pane .tipitaka-pali,
       #tipitaka-pane .tipitaka-en{line-height:var(--tipitaka-line-height,1.8)}
       #tipitaka-pane .tipitaka-zh{line-height:calc(var(--tipitaka-line-height,1.8) + 0.15)}
+      /* A bit more breathing room between the three language lines of one
+         row - .tipitaka-zh/.tipitaka-en had no gap of their own, relying
+         purely on line-height. .tipitaka-en is last and butts against the
+         absolutely-positioned ⓘ, so it needs none. */
+      #tipitaka-pane .tipitaka-pali{margin-bottom:8px}
+      #tipitaka-pane .tipitaka-zh{margin-bottom:8px}
 
       /* The base stylesheet capped this at min(72vh, ...): a leftover from
          when the toolbar sat outside the pane and needed headroom reserved

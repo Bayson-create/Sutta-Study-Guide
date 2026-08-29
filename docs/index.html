@@ -1068,9 +1068,10 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 /* Segment display */
 .segment-block { margin-bottom: 14px; }
 .seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; overflow-wrap: break-word; word-break: break-word; }
-/* No font-family or color of its own: English inherits the body serif stack
-   and full-strength --text, which is how this reader has always looked. */
-.seg-en { line-height: 1.7; overflow-wrap: break-word; word-break: break-word; }
+/* Font-family still inherits the body serif stack (identical to the V4
+   reader's .tipitaka-en, which has no font-family of its own either) - only
+   the colour is dimmed to --text-light to match V4's English. */
+.seg-en { line-height: 1.7; overflow-wrap: break-word; word-break: break-word; color: var(--text-light); }
 .seg-zh { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .zh-formatted { line-height: 2; }
 .zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 20px; font-weight: 700; }
@@ -1122,6 +1123,12 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 
 /* Parallel trilingual mode */
 .parallel-block .segment-block { margin-bottom: 16px; padding-bottom: 12px; }
+/* A bit more room between the Pāli/English lines and the Chinese translation
+   below them - .seg-en had no gap of its own at all, relying purely on
+   line-height. Scoped to .parallel-block so 三语对照's .tri-cell, which reuses
+   the same .seg-pali/.seg-en classes, is untouched. */
+.parallel-block .seg-pali { margin-bottom: 6px; }
+.parallel-block .seg-en { margin-bottom: 6px; }
 .seg-chinese { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .seg-tn { font-size: 0.82em; color: var(--text-light); line-height: 1.6; margin-top: 2px; padding-left: 1em; border-left: 2px solid var(--accent-bg); }
 
@@ -15006,7 +15013,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260829.2"></script>
+<script src="tipitaka-reader.js?v=20260829.3"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
