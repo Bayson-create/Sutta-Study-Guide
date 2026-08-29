@@ -2265,7 +2265,7 @@
   async function editTerm(item) { const translation = prompt(`编辑 ${item.pali} 的共享术语译法`, item.preferred_chinese || ''); if (translation === null) return; const reason = prompt('修改理由（公开可见）', '') ?? ''; const response = await fetch(`${API}/terms/${encodeURIComponent(item.pali)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ translation, default_translation: item.preferred_chinese || translation, usage_note: item.chinese_comment || '', reason }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } alert('术语已保存。'); }
   async function renderHome() {
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button><button data-t-home="bookmarks">我的收藏</button></div><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-bookmarks" id="tipitaka-bookmarks" hidden aria-live="polite"></section><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button><button data-t-home="bookmarks">我的收藏</button></div><section id="tipitaka-bookmarks" hidden aria-live="polite"></section><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
     const filter = document.getElementById('tipitaka-catalog-filter');
     const clearFilter = document.getElementById('tipitaka-catalog-filter-clear');
     filter.oninput = event => { const needle = event.target.value.trim().toLowerCase(); const catalog = app.querySelector('.tipitaka-catalog'); clearFilter.hidden = !needle; catalog.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); catalog.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const hasVisible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matchesPath = node.dataset.catalogPath.toLowerCase().includes(needle); node.hidden = !!needle && !hasVisible && !matchesPath; node.open = !!needle && (hasVisible || matchesPath); }); };
@@ -2274,67 +2274,67 @@
     app.querySelector('[data-t-home="dict"]').onclick = () => location.hash = '#/tipitaka/dictionaries';
     app.querySelector('[data-t-home="continue"]').onclick = () => { try { const history = JSON.parse(localStorage.getItem('tipitaka-reader-history') || 'null'); location.hash = history ? `#/tipitaka/read/${encodeURIComponent(history.workId)}?row=${history.rowId}` : '#/tipitaka'; } catch { location.hash = '#/tipitaka'; } };
     const bookmarkPanel = app.querySelector('#tipitaka-bookmarks');
+    // Bookmarks, highlights and notes now share one tabbed panel with the
+    // Visuddhimagga reader (window.ReaderNotesPanel, defined in index.html).
+    // Snippet text is filled in afterwards by enrich() rather than being
+    // awaited up front - fetching every bookmarked work just to preview it
+    // used to block the whole list behind N full-work downloads.
+    const snippetCache = new Map();
+    const SNIPPET_MAX = 80;
     const drawBookmarks = async () => {
-      bookmarkPanel.hidden = false;
-      bookmarkPanel.innerHTML = '<p class="tipitaka-note">正在读取收藏…</p>';
-      try {
-        const result = await listBookmarks();
-        if (!result.authenticated) { bookmarkPanel.innerHTML = '<h3>我的收藏</h3><p class="tipitaka-note">登录后可查看并同步收藏的经文、义注、复注与根本文本片段。</p>'; return; }
-        // Group by work, ordered by each work's position in the catalog tree
-        // (state.works - already populated by renderHome()'s own ensureCatalog()
-        // call above), not by bookmark creation time, so a work with several
-        // bookmarked passages reads as one place instead of being scattered
-        // across the flat list in whatever order they happened to be saved.
-        const catalogOrder = new Map((state.works || []).map((work, index) => [work.id, index]));
-        const groups = new Map();
-        result.items.forEach(item => {
-          if (!groups.has(item.work_id)) groups.set(item.work_id, []);
-          groups.get(item.work_id).push(item);
-        });
-        const orderedWorkIds = [...groups.keys()].sort((a, b) => {
-          const orderA = catalogOrder.has(a) ? catalogOrder.get(a) : Infinity;
-          const orderB = catalogOrder.has(b) ? catalogOrder.get(b) : Infinity;
-          return orderA - orderB;
-        });
-        // Fetch each distinct bookmarked work's row data so the actual saved
-        // passage text can be shown, not just its label/paragraph number.
-        // Reuses workById()'s own in-memory + Cache API caching (the same
-        // path the reader uses to open a work), so a work already read this
-        // session - the common case, since that's how a bookmark got made -
-        // costs nothing extra here.
-        const rowLookups = await Promise.all(orderedWorkIds.map(async workId => {
-          try {
-            const [, work] = await workById(workId);
-            return [workId, new Map((work.rows || []).map(row => [Number(row.id), row]))];
-          } catch {
-            return [workId, null];
-          }
-        }));
-        const rowsByWork = new Map(rowLookups);
-        const SNIPPET_MAX = 80;
-        const groupsHtml = orderedWorkIds.map(workId => {
-          const items = groups.get(workId).slice().sort((a, b) => Number(a.row_id) - Number(b.row_id));
-          const title = workMeta(workId)?.title || workId;
-          const rowMap = rowsByWork.get(workId);
-          const articles = items.map(item => {
-            const row = rowMap?.get(Number(item.row_id));
-            const snippetText = row ? strip(defaultText(row, 'zh')) : '';
-            const snippet = snippetText
-              ? `<span class="tipitaka-bookmark-snippet">${esc(snippetText.length > SNIPPET_MAX ? snippetText.slice(0, SNIPPET_MAX) + '…' : snippetText)}</span>`
-              : '';
-            return `<article><a href="${esc(bookmarkHref(item))}"><strong>${esc(item.label || `${title} · ${item.row_id}`)}</strong>${snippet}<span>打开对应阅读位置 →</span></a><button type="button" data-t-bookmark-remove="${esc(item.work_id)}" data-t-bookmark-row="${esc(item.row_id)}" aria-label="移除此收藏">移除</button></article>`;
-          }).join('');
-          return `<div class="tipitaka-bookmark-group"><h4>${esc(title)}<span class="tipitaka-bookmark-count">${items.length}</span></h4><div class="tipitaka-bookmark-list">${articles}</div></div>`;
-        }).join('');
-        bookmarkPanel.innerHTML = `<h3>我的收藏</h3>${result.items.length ? groupsHtml : '<p class="tipitaka-note">尚未收藏任何片段。</p>'}`;
-        bookmarkPanel.querySelectorAll('[data-t-bookmark-remove]').forEach(button => button.onclick = async () => {
-          const response = await fetch(`${API}/bookmarks/${encodeURIComponent(button.dataset.tBookmarkRemove)}/${encodeURIComponent(button.dataset.tBookmarkRow)}`, { method: 'DELETE', headers: typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {} });
-          if (!response.ok) { alert('移除收藏失败，请重试'); return; }
-          await drawBookmarks();
-        });
-      } catch (error) { bookmarkPanel.innerHTML = `<h3>我的收藏</h3><p class="tipitaka-note">${esc(error.message)}</p>`; }
+      if (!window.ReaderNotesPanel) return;
+      await window.ReaderNotesPanel.render(bookmarkPanel, {
+        docPrefix: 'tipitaka:',
+        resolveLabel: docKey => workMeta(docKey.slice('tipitaka:'.length))?.title || docKey,
+        highlightHref: item => {
+          const workId = item.doc_key.slice('tipitaka:'.length);
+          const anchor = item.quote ? `&hl=${encodeURIComponent(String(item.quote).slice(0, 40))}` : '';
+          return `#/tipitaka/read/${encodeURIComponent(workId)}?row=${encodeURIComponent(item.unit_key)}${anchor}`;
+        },
+        bookmarks: {
+          list: async () => {
+            const result = await listBookmarks().catch(() => ({ authenticated: false, items: [] }));
+            // Order by catalog position, not by when each was saved, so a work
+            // with several bookmarks reads as one place.
+            const order = new Map((state.works || []).map((work, index) => [work.id, index]));
+            return result.items
+              .map(item => ({ ...item, doc_key: `tipitaka:${item.work_id}` }))
+              .sort((a, b) => (order.get(a.work_id) ?? Infinity) - (order.get(b.work_id) ?? Infinity)
+                || Number(a.row_id) - Number(b.row_id));
+          },
+          label: item => item.label || `${workMeta(item.work_id)?.title || item.work_id} · ${item.row_id}`,
+          href: item => bookmarkHref(item),
+          key: item => ({ work: item.work_id, row: item.row_id }),
+          snippetKey: item => `${item.work_id}:${item.row_id}`,
+          remove: async key => {
+            const response = await fetch(`${API}/bookmarks/${encodeURIComponent(key.work)}/${encodeURIComponent(key.row)}`, { method: 'DELETE', headers: typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {} });
+            if (!response.ok) throw new Error('移除收藏失败，请重试');
+          },
+        },
+        enrich: async (container, items) => {
+          const slots = [...container.querySelectorAll('[data-rnp-snippet]')];
+          if (!slots.length) return;
+          slots.forEach(slot => { if (snippetCache.has(slot.dataset.rnpSnippet)) slot.textContent = snippetCache.get(slot.dataset.rnpSnippet); });
+          // workById() has its own in-memory + Cache API caching, so a work
+          // read earlier this session costs nothing here.
+          await Promise.all([...new Set(items.map(item => item.work_id))].map(async workId => {
+            try {
+              const [, work] = await workById(workId);
+              (work.rows || []).forEach(row => {
+                const text = strip(defaultText(row, 'zh'));
+                if (text) snippetCache.set(`${workId}:${row.id}`, text.length > SNIPPET_MAX ? `${text.slice(0, SNIPPET_MAX)}…` : text);
+              });
+            } catch { /* a work that won't load simply shows no preview */ }
+          }));
+          slots.forEach(slot => {
+            const text = snippetCache.get(slot.dataset.rnpSnippet);
+            if (text && slot.isConnected) slot.textContent = text;
+          });
+        },
+      });
     };
-    app.querySelector('[data-t-home="bookmarks"]').onclick = drawBookmarks;
+    drawBookmarks();
+    app.querySelector('[data-t-home="bookmarks"]').onclick = () => bookmarkPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   window.renderTipitakaRoute = () => { const path = routePath(); if (path === '#/tipitaka') return renderHome(); if (path === '#/tipitaka/search') return renderSearch(); if (path === '#/tipitaka/dictionaries') return renderDictionaries(); if (path.startsWith('#/tipitaka/read/')) return renderReader(decodeURIComponent(path.slice('#/tipitaka/read/'.length))); renderHome(); };
   if (location.hash.startsWith('#/tipitaka') && typeof route === 'function') route();
