@@ -48,7 +48,7 @@
   function settings() {
     if (!state.settings) {
       try { state.settings = JSON.parse(localStorage.getItem('tipitaka-reader-settings') || '{}'); } catch { state.settings = {}; }
-      state.settings = { pali: true, zh: true, en: true, traditional: false, font: 18, lineHeight: 1.65, letterSpacing: 0, theme: 'light', speed: 22, ...state.settings };
+      state.settings = { pali: true, zh: true, en: true, traditional: false, font: 18, lineHeight: 1.8, letterSpacing: 0, theme: 'light', speed: 22, ...state.settings };
     }
     return state.settings;
   }
@@ -294,13 +294,12 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-reader-extras-css';
     style.textContent = `
-      /* Identical to the Vism reader's .seg-en (docs/index.html), so English
-         reads the same in both readers. */
-      .tipitaka-en{font-family:-apple-system,"Segoe UI","PingFang SC","Helvetica Neue",sans-serif}
-      /* One shared line-height for all three languages: they used to be 1.6 /
-         2 / 1.65, which made the three lines of a single paragraph sit on
-         visibly different rhythms. */
-      .tipitaka-pali,.tipitaka-zh,.tipitaka-en{line-height:var(--tipitaka-line-height,1.8);letter-spacing:var(--tipitaka-letter-spacing,0)}
+      /* No font-family here: English inherits the page's serif stack, matching
+         the Vism reader's .seg-en. */
+      /* Line-height lives in injectReaderLayoutCss() - it has to be scoped to
+         #tipitaka-pane to outrank the base sheet and injectPaliInlineCss(),
+         both of which are injected after this one and set their own values. */
+      .tipitaka-pali,.tipitaka-zh,.tipitaka-en{letter-spacing:var(--tipitaka-letter-spacing,0)}
 
       #tipitaka-pane[data-theme="dark"]{--bg:#1c1a17;--bg-warm:#211e19;--card:#23201b;--card-bg:#23201b;--text:#d8d0c0;--text-light:#a89d88;--border:#3a352c;--hover-bg:#2a251e;--primary:#c4a24e;--accent:#c4a24e;--accent-light:#d9bd72;--accent-bg:#2a2419;--pali-color:#b8a878;background:var(--bg);color:var(--text)}
 
@@ -391,6 +390,18 @@
     const style = document.createElement('style');
     style.id = 'tipitaka-reader-layout-css';
     style.textContent = `
+      /* One shared line-height for all three languages, driven by the 行距
+         setting. They used to be 1.6 / 2 / 1.65 and the setting did nothing at
+         all: the unifying rule lived in injectReaderExtrasCss(), which is
+         injected BEFORE the base sheet and injectPaliInlineCss(), so it lost
+         every tie. Scoping to #tipitaka-pane wins on specificity instead, and
+         leaves the base values as the fallback outside the reader.
+         Chinese runs one notch looser - full-height Han glyphs read cramped at
+         the same leading that suits Latin. */
+      #tipitaka-pane .tipitaka-pali,
+      #tipitaka-pane .tipitaka-en{line-height:var(--tipitaka-line-height,1.8)}
+      #tipitaka-pane .tipitaka-zh{line-height:calc(var(--tipitaka-line-height,1.8) + 0.15)}
+
       /* The base stylesheet capped this at min(72vh, ...): a leftover from
          when the toolbar sat outside the pane and needed headroom reserved
          below it. Now head+toolbar are IN the pane and reader-immersive
@@ -2265,7 +2276,7 @@
   async function editTerm(item) { const translation = prompt(`编辑 ${item.pali} 的共享术语译法`, item.preferred_chinese || ''); if (translation === null) return; const reason = prompt('修改理由（公开可见）', '') ?? ''; const response = await fetch(`${API}/terms/${encodeURIComponent(item.pali)}`, { method: 'PUT', headers: jsonHeaders(), body: JSON.stringify({ translation, default_translation: item.preferred_chinese || translation, usage_note: item.chinese_comment || '', reason }) }); if (!response.ok) { alert((await response.json().catch(() => ({}))).detail || '保存失败，请先登录'); return; } alert('术语已保存。'); }
   async function renderHome() {
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
-    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button><button data-t-home="bookmarks">我的收藏</button></div><section id="tipitaka-bookmarks" hidden aria-live="polite"></section><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
+    app.innerHTML = `<button class="back-btn" onclick="location.hash='#/'">← 返回首页</button><div class="cat-header"><h2>📚 巴利三藏阅读器 V4</h2><div class="cat-en">Tipiṭaka · Aṭṭhakathā · Ṭīkā · Añña — Pāli · 中文 · English</div></div><div class="tipitaka-toolbar"><button data-t-home="search">全文检索</button><button data-t-home="dict">词典与专名</button><button data-t-home="continue">继续阅读</button><button data-t-home="bookmarks" aria-expanded="false" aria-controls="tipitaka-bookmarks">我的标注</button></div><section id="tipitaka-bookmarks" hidden aria-live="polite"></section><div class="tipitaka-layout"><aside><div class="tipitaka-catalog-search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg><input class="tipitaka-catalog-search" id="tipitaka-catalog-filter" placeholder="筛选目录或作品" aria-label="筛选目录或作品"><button type="button" class="tipitaka-catalog-search-clear" id="tipitaka-catalog-filter-clear" aria-label="清除目录筛选" hidden>×</button></div><p class="tipitaka-catalog-help">目录默认收起；展开后可逐级浏览。</p><div class="tipitaka-catalog">${workTree(state.works, query().get('open') || '')}</div></aside><section><p>完整收录三藏、义注、复注与藏外典籍；正文、词典和目录均按需读取与本地缓存。</p><p class="tipitaka-note">缅文词典可查；该发行包未提供可验证的缅文/Nissaya 正文列，因此不显示虚假的阅读栏。</p></section></div><section class="tipitaka-provenance" aria-label="资料与协作说明"><p class="tipitaka-provenance-title">资料与协作说明</p><p class="tipitaka-provenance-copy">初稿由帕奥禅林发布；DeepSeek、文喜比库（Sunanda）、圣传尊者（Ariyavamsa）协作。</p><p class="tipitaka-provenance-quote">Svākkhāto Bhagavatā dhammo, sandiṭṭhiko akāliko…<span>世尊之法善说，现见、即时、导至解脱……</span></p></section>`;
     const filter = document.getElementById('tipitaka-catalog-filter');
     const clearFilter = document.getElementById('tipitaka-catalog-filter-clear');
     filter.oninput = event => { const needle = event.target.value.trim().toLowerCase(); const catalog = app.querySelector('.tipitaka-catalog'); clearFilter.hidden = !needle; catalog.querySelectorAll('.tipitaka-work-link').forEach(link => { link.hidden = !!needle && !link.dataset.catalogLabel.toLowerCase().includes(needle); }); catalog.querySelectorAll('.tipitaka-catalog-node').forEach(node => { const hasVisible = [...node.querySelectorAll('.tipitaka-work-link')].some(link => !link.hidden), matchesPath = node.dataset.catalogPath.toLowerCase().includes(needle); node.hidden = !!needle && !hasVisible && !matchesPath; node.open = !!needle && (hasVisible || matchesPath); }); };
@@ -2333,8 +2344,20 @@
         },
       });
     };
-    drawBookmarks();
-    app.querySelector('[data-t-home="bookmarks"]').onclick = () => bookmarkPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Collapsed until asked for: the first click fetches and expands, later
+    // clicks just show/hide what was already loaded.
+    let bookmarksLoaded = false;
+    const bookmarksButton = app.querySelector('[data-t-home="bookmarks"]');
+    bookmarksButton.onclick = async () => {
+      if (bookmarksButton.getAttribute('aria-expanded') === 'true') {
+        bookmarkPanel.hidden = true;
+        bookmarksButton.setAttribute('aria-expanded', 'false');
+        return;
+      }
+      bookmarksButton.setAttribute('aria-expanded', 'true');
+      bookmarkPanel.hidden = false;
+      if (!bookmarksLoaded) { bookmarksLoaded = true; await drawBookmarks(); }
+    };
   }
   window.renderTipitakaRoute = () => { const path = routePath(); if (path === '#/tipitaka') return renderHome(); if (path === '#/tipitaka/search') return renderSearch(); if (path === '#/tipitaka/dictionaries') return renderDictionaries(); if (path.startsWith('#/tipitaka/read/')) return renderReader(decodeURIComponent(path.slice('#/tipitaka/read/'.length))); renderHome(); };
   if (location.hash.startsWith('#/tipitaka') && typeof route === 'function') route();

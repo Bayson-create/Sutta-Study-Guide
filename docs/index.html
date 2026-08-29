@@ -1068,14 +1068,9 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
 /* Segment display */
 .segment-block { margin-bottom: 14px; }
 .seg-pali { font-style: italic; color: var(--pali-color); font-size: 0.92em; line-height: 1.5; margin-bottom: 2px; overflow-wrap: break-word; word-break: break-word; }
-/* Kept deliberately identical to the V4 reader's .tipitaka-en (sans-serif +
-   --text-light), so English reads the same in both readers and stays visually
-   distinct from the serif Chinese it sits next to. */
-.seg-en {
-  line-height: 1.7; overflow-wrap: break-word; word-break: break-word;
-  font-family: -apple-system, "Segoe UI", "PingFang SC", "Helvetica Neue", sans-serif;
-  color: var(--text-light);
-}
+/* No font-family or color of its own: English inherits the body serif stack
+   and full-strength --text, which is how this reader has always looked. */
+.seg-en { line-height: 1.7; overflow-wrap: break-word; word-break: break-word; }
 .seg-zh { line-height: 2; font-size: 1.02em; overflow-wrap: break-word; word-break: break-word; }
 .zh-formatted { line-height: 2; }
 .zh-formatted h1 { font-size: 1.3em; color: var(--accent); text-align: center; margin: 16px 0 20px; font-weight: 700; }
@@ -1149,10 +1144,16 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
    file. Nested em-based sizes (.seg-pali's 0.92em etc.) scale automatically
    off the base font-size set here - no need to touch each rule. */
 #vism-reader-body { font-size: var(--vism-font-size, 1em); }
+/* One shared baseline for Pāli and English - .seg-pali used to be left out of
+   this list and stayed stuck at its own 1.5, so the three lines of a single
+   sentence sat on visibly different rhythms. Chinese runs one notch looser:
+   Han glyphs are full-height, so matching the Latin leading exactly reads
+   cramped. */
+#vism-reader-body .seg-pali,
+#vism-reader-body .seg-en { line-height: var(--vism-line-height, 1.8); }
 #vism-reader-body .zh-formatted,
-#vism-reader-body .seg-en,
 #vism-reader-body .seg-chinese,
-#vism-reader-body .trans-text { line-height: var(--vism-line-height, inherit); }
+#vism-reader-body .trans-text { line-height: calc(var(--vism-line-height, 1.8) + 0.15); }
 
 /* Visuddhimagga catalogue-page search bar. */
 .vism-search { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 14px; }
@@ -1161,6 +1162,7 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
   border: 1px solid var(--border); border-radius: 8px; background: var(--card-bg); color: var(--text);
 }
 .vism-search-langs { display: flex; gap: 4px; }
+.vism-notes-toggle { margin-left: auto; }
 .vism-search-status { flex: 1 1 100%; color: var(--text-light); font-size: 0.82em; }
 #vism-search-results:not(:empty) { margin-bottom: 20px; }
 
@@ -1225,15 +1227,22 @@ body.reader-immersive.reader-chrome-open .site-footer { opacity: 1; }
   touch-action: pan-x pinch-zoom; -webkit-overflow-scrolling: touch;
 }
 /* Equal-height pills, scoped to the toolbar's own controls so the settings
-   popover's compact A−/A+ buttons keep their smaller size. */
+   popover's compact A−/A+ buttons keep their smaller size.
+   SIZING ONLY - it must not restate background/border. Doing so used to beat
+   .tb-btn.active and .tb-btn:hover (same specificity, later in the sheet) on
+   `background` while leaving their `color` alone, which painted the selected
+   mode button white-on-white. */
 #vism-toolbar > .tb-group .tb-btn,
 .vism-toolbar-controls .tb-btn,
 .vism-toolbar-controls .tb-toggle {
   height: 34px; padding: 0 12px; margin-left: 0; box-sizing: border-box;
-  border: 1px solid var(--border); border-radius: 5px; background: var(--card-bg);
   display: inline-flex; align-items: center; justify-content: center; line-height: 1;
 }
-.vism-toolbar-controls .tb-toggle { gap: 5px; }
+/* .tb-toggle is a <label> with no pill of its own, so it does need the paint;
+   .tb-btn keeps its own default/hover/active states. */
+.vism-toolbar-controls .tb-toggle {
+  gap: 5px; border: 1px solid var(--border); border-radius: 5px; background: var(--card-bg);
+}
 .vism-settings-panel {
   position: absolute; top: calc(100% + 6px); right: 12px; z-index: 200;
   background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;
@@ -1762,15 +1771,22 @@ a.cite:hover { background: var(--accent); border-color: var(--accent); color: #f
      purpose - the pills are visibly cut off at the edge, which is the
      affordance. */
   #vism-toolbar { flex-wrap: nowrap; }
+  /* No padding-bottom: the scrollbar is hidden outright, and the padding only
+     shifted this box's contents up relative to the "← 目录" button that sits
+     outside the scroller. */
   .vism-toolbar-controls {
-    flex-wrap: nowrap; padding-bottom: 4px;
+    flex-wrap: nowrap;
     scrollbar-width: none; -ms-overflow-style: none;
   }
   .vism-toolbar-controls::-webkit-scrollbar { display: none; }
   .vism-toolbar-controls > * { flex: 0 0 auto; }
   .vism-toolbar-controls .tb-group { flex-wrap: nowrap; }
   #vism-toolbar > .tb-group { flex: 0 0 auto; }
-  .vism-toolbar-controls .tb-btn, .vism-toolbar-controls .tb-toggle { height: 32px; padding: 0 10px; }
+  /* "← 目录" is outside the scroller, so it has to be shrunk explicitly or it
+     stays 2px taller than every other pill. */
+  #vism-toolbar > .tb-group .tb-btn,
+  .vism-toolbar-controls .tb-btn,
+  .vism-toolbar-controls .tb-toggle { height: 32px; padding: 0 10px; }
   .sutta-table td:first-child { white-space: normal; }
   .site-header h1 { font-size: 1.4em; }
   .container { padding: 14px; }
@@ -6908,9 +6924,9 @@ let _vismSettings = null;
 function vismSettings() {
   if (_vismSettings) return _vismSettings;
   try {
-    _vismSettings = { ...{ fontSize: 18, lineHeight: 2, theme: 'light', zhVersion: 'guanchen' }, ...JSON.parse(localStorage.getItem(VISM_SETTINGS_KEY) || '{}') };
+    _vismSettings = { ...{ fontSize: 18, lineHeight: 1.8, theme: 'light', zhVersion: 'guanchen' }, ...JSON.parse(localStorage.getItem(VISM_SETTINGS_KEY) || '{}') };
   } catch (e) {
-    _vismSettings = { fontSize: 18, lineHeight: 2, theme: 'light', zhVersion: 'guanchen' };
+    _vismSettings = { fontSize: 18, lineHeight: 1.8, theme: 'light', zhVersion: 'guanchen' };
   }
   return _vismSettings;
 }
@@ -6962,9 +6978,13 @@ function vismNavPanelHtml(idx, currentChapter) {
   const nav = vismChapterNav(idx);
   const items = nav.map(item =>
     `<a href="#/research/vism/read/${encodeURIComponent(item.id)}" class="${item.id === current ? 'is-current' : ''}">${esc(item.label)}</a>`).join('');
-  // The list entry already reads "第 N 品 · 说地遍" - reuse it so the crumb
-  // names the chapter instead of saying the uninformative "当前章节".
-  const here = nav.find(item => item.id === current)?.label || `第 ${current} 品`;
+  // The list entry reads "第 16 品 · 第十六 说根谛品"; the crumb keeps only the
+  // chapter's name. Both numberings are already visible in the list below it,
+  // and repeating them here just eats horizontal room. 序论/结论 match neither
+  // pattern and pass through whole.
+  const here = (nav.find(item => item.id === current)?.label || `第 ${current} 品`)
+    .replace(/^第\s*\d+\s*品\s*·\s*/, '')
+    .replace(/^第[一二三四五六七八九十百]+\s+/, '');
   return `<div class="vism-nav-crumbs"><a href="#/research">研究成果</a> › <a href="#/research/vism">清净之道</a> › <span>${esc(here)}</span></div>
     <div class="vism-nav-list">${items}</div>`;
 }
@@ -7023,6 +7043,7 @@ async function renderVismHome() {
       ${[['all','全部'],['zh','中文'],['en','英文'],['pali','巴利语']].map(([id, label], i) =>
         `<button type="button" class="tb-btn${i === 0 ? ' active' : ''}" data-vism-lang="${id}">${label}</button>`).join('')}
     </div>
+    <button type="button" class="tb-btn vism-notes-toggle" id="vism-notes-toggle" aria-expanded="false" aria-controls="vism-bookmarks">我的标注</button>
     <div class="vism-search-status" id="vism-search-status" aria-live="polite"></div>
   </form>
   <div id="vism-search-results"></div>`;
@@ -7068,7 +7089,7 @@ async function renderVismHome() {
   html += '<div class="loading"><div class="spinner"></div><div>加载章节目录...</div></div>';
   app.innerHTML = html;
   bindVismSearch();
-  drawVismBookmarks();
+  bindVismNotesToggle();
 
   try {
     const idx = await loadVismIndex();
@@ -7156,6 +7177,29 @@ async function runVismSearch() {
   }));
   if (mySeq !== _vismSearchSeq) return;
   if (!total) status.textContent = `未找到「${q}」`;
+}
+
+// The panel starts collapsed and costs nothing until asked for: the first
+// click fetches and expands, later clicks just show/hide what was already
+// loaded. Same semantics as the V4 catalogue's 我的标注 button.
+function bindVismNotesToggle() {
+  const button = document.getElementById('vism-notes-toggle');
+  const panel = document.getElementById('vism-bookmarks');
+  if (!button || !panel) return;
+  let loaded = false;
+  button.onclick = async () => {
+    const open = button.getAttribute('aria-expanded') === 'true';
+    if (open) {
+      panel.hidden = true;
+      button.setAttribute('aria-expanded', 'false');
+      button.classList.remove('active');
+      return;
+    }
+    button.setAttribute('aria-expanded', 'true');
+    button.classList.add('active');
+    panel.hidden = false;
+    if (!loaded) { loaded = true; await drawVismBookmarks(); }
+  };
 }
 
 // Mirrors the V4 reader's own bookmark panel (drawBookmarks in
@@ -14962,7 +15006,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-<script src="tipitaka-reader.js?v=20260829.1"></script>
+<script src="tipitaka-reader.js?v=20260829.2"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
