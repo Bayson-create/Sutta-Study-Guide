@@ -3,7 +3,8 @@
   'use strict';
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
-  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v2')).replace(/\/$/, '');
+  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v3')).replace(/\/$/, '');
+  const COMMENTARY_V2_BASE = DATA_BASE.replace(/\/v1$/, '/commentary-links-v2');
   const COMMENTARY_V1_BASE = DATA_BASE.replace(/\/v1$/, '/commentary-links-v1');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
   // This file is loaded as a separate classic script.  Do not rely on the
@@ -16,7 +17,7 @@
   const API = `${API_ROOT}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
-  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v2';
+  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v3';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -65,7 +66,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[12]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[123]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; const cache = await caches.open(row.cache_name || CACHE_NAME); await cache.delete(new Request(row.request_url || url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -138,11 +139,15 @@
   async function commentaryMapFor(workId) {
     if (!state.commentaryRoots.has(workId)) {
       const path = `roots/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`).catch(async error => {
-        // v1 remains a read-only compatibility fallback while v2 is rolling
-        // out.  It retains the established root → annotation reader.
-        try { return await cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`); }
-        catch { return { format: 'tipitaka-commentary-links/v2', root_work_id: workId, units: [], error: error.message }; }
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`).catch(async error => {
+        // Keep older immutable projections as a read-only rollout fallback.
+        // The v3 map is always preferred because it has the audited reverse
+        // relation model and status-aware relation records.
+        try { return await cachedJsonAt(COMMENTARY_V2_BASE, path, 'tipitaka-commentary-links-v2', `commentary-links-v2/${path}`); }
+        catch {
+          try { return await cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`); }
+          catch { return { format: 'tipitaka-commentary-links/v3', root_work_id: workId, units: [], error: error.message }; }
+        }
       });
       state.commentaryRoots.set(workId, promise);
     }
@@ -151,22 +156,25 @@
   async function commentarySourceMapFor(workId) {
     if (!state.commentarySources.has(workId)) {
       const path = `sources/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`)
-        .catch(error => ({ format: 'tipitaka-commentary-links/v2', source_work_id: workId, fragments: [], error: error.message }));
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`)
+        .catch(async error => {
+          try { return await cachedJsonAt(COMMENTARY_V2_BASE, path, 'tipitaka-commentary-links-v2', `commentary-links-v2/${path}`); }
+          catch { return { format: 'tipitaka-commentary-links/v3', source_work_id: workId, fragments: [], error: error.message }; }
+        });
       state.commentarySources.set(workId, promise);
     }
     return state.commentarySources.get(workId);
   }
-  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[12]$/.test(String(value || ''));
+  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[123]$/.test(String(value || ''));
   async function commentaryFragment(fragment) {
     const key = fragment.fragment_id;
     if (!state.commentaryFragments.has(key)) {
       ensureWorkers();
       const path = fragment.file;
       const primary = () => state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`);
-      const promise = primary().catch(() => cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`));
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`);
+      const promise = primary().catch(() => cachedJsonAt(COMMENTARY_V2_BASE, path, 'tipitaka-commentary-links-v2', `commentary-links-v2/${path}`)).catch(() => cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`));
       state.commentaryFragments.set(key, promise);
     }
     return state.commentaryFragments.get(key);
@@ -176,9 +184,11 @@
     if (!state.rootFragments.has(key)) {
       ensureWorkers();
       const path = fragment.file;
-      const promise = state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v2/${path}`);
+      const primary = () => state.dataWorker
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v3/${path}`);
+      const fallback = () => cachedJsonAt(COMMENTARY_V2_BASE, path, 'tipitaka-commentary-links-v2', `commentary-links-v2/${path}`).catch(() => cachedJsonAt(COMMENTARY_V1_BASE, path, 'tipitaka-commentary-links-v1', `commentary-links-v1/${path}`));
+      const promise = primary().catch(fallback);
       state.rootFragments.set(key, promise);
     }
     return state.rootFragments.get(key);
@@ -1024,8 +1034,8 @@
     return `<div class="tipitaka-annotation-footer" data-t-item-key="${esc(item.key)}"><button type="button" class="tipitaka-annotation-close" data-t-action="annotation-collapse">收起完整${kindLabel}</button></div>`;
   }
 
-  // A fragment link carries the identity verified by commentary-links-v1 as
-  // well as its source row.  The destination reader can therefore distinguish
+  // A fragment link carries the identity verified by the immutable relation
+  // projection as well as its source row.  The destination reader can therefore distinguish
   // a valid fragment deep link from an ordinary (or stale) row link.
   function fragmentReaderHref(fragment) {
     const params = new URLSearchParams({
