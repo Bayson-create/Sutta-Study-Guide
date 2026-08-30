@@ -7,3 +7,4 @@
 @media(max-width:640px){.kg-header{display:block}.kg-header-actions{justify-content:flex-start;margin-top:14px}.kg-toolbar{align-items:stretch}.kg-toolbar input,.kg-toolbar select{width:100%;flex-basis:100%}.kg-canvas-shell{min-height:500px}}
 
 .kg-shell.is-fullscreen,.kg-shell:fullscreen{box-sizing:border-box;width:100vw;min-height:100vh;height:100vh;max-height:100vh;padding:16px;overflow:hidden;background:#f5f7f3}.kg-shell.is-fullscreen .kg-main,.kg-shell:fullscreen .kg-main{flex:1;min-height:0}.kg-shell.is-fullscreen .kg-canvas-shell,.kg-shell:fullscreen .kg-canvas-shell{height:100%;min-height:0}.kg-shell.is-fullscreen .kg-sidebar,.kg-shell:fullscreen .kg-sidebar{max-height:none}.kg-shell.is-fullscreen .kg-main.sidebar-hidden .kg-canvas-shell,.kg-shell:fullscreen .kg-main.sidebar-hidden .kg-canvas-shell{min-height:0}
+.kg-mode-switch{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.7rem}
