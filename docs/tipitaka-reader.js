@@ -1,9 +1,9 @@
-/* Tipiṭaka Reader V4 — immutable static corpus, complete search, and sparse overlays. */
+/* Tipiṭaka Reader V5 — immutable static corpus, complete search, and sparse overlays. */
 (() => {
   'use strict';
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
-  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v4')).replace(/\/$/, '');
+  const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v5')).replace(/\/$/, '');
   const COMMENTARY_V3_BASE = DATA_BASE.replace(/\/v1$/, '/commentary-links-v3');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
   // This file is loaded as a separate classic script.  Do not rely on the
@@ -16,7 +16,7 @@
   const API = `${API_ROOT}/api/tipitaka/v1`;
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
-  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v4';
+  const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v5';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -65,7 +65,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[34]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[35]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; const cache = await caches.open(row.cache_name || CACHE_NAME); await cache.delete(new Request(row.request_url || url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -138,9 +138,9 @@
   async function commentaryMapFor(workId) {
     if (!state.commentaryRoots.has(workId)) {
       const path = `roots/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`).catch(async error => {
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`).catch(async error => {
         try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`); }
-        catch { return { format: 'tipitaka-commentary-links/v4', root_work_id: workId, units: [], error: error.message }; }
+        catch { return { format: 'tipitaka-commentary-links/v5', root_work_id: workId, units: [], error: error.message }; }
       });
       state.commentaryRoots.set(workId, promise);
     }
@@ -149,24 +149,24 @@
   async function commentarySourceMapFor(workId) {
     if (!state.commentarySources.has(workId)) {
       const path = `sources/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`)
+      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`)
         .catch(async error => {
           try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`); }
-          catch { return { format: 'tipitaka-commentary-links/v4', source_work_id: workId, fragments: [], error: error.message }; }
+          catch { return { format: 'tipitaka-commentary-links/v5', source_work_id: workId, fragments: [], error: error.message }; }
         });
       state.commentarySources.set(workId, promise);
     }
     return state.commentarySources.get(workId);
   }
-  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[34]$/.test(String(value || ''));
+  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[35]$/.test(String(value || ''));
   async function commentaryFragment(fragment) {
     const key = fragment.fragment_id;
     if (!state.commentaryFragments.has(key)) {
       ensureWorkers();
       const path = fragment.file;
       const primary = () => state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`);
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`);
       const promise = primary().catch(() => cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`));
       state.commentaryFragments.set(key, promise);
     }
@@ -178,8 +178,8 @@
       ensureWorkers();
       const path = fragment.file;
       const primary = () => state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v4/${path}`);
+        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`))
+        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`);
       const fallback = () => cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`);
       const promise = primary().catch(fallback);
       state.rootFragments.set(key, promise);
