@@ -41,6 +41,22 @@ def write_json(path: pathlib.Path, obj, compress=False):
     if compress: data = gzip.compress(data, mtime=0)
     path.write_bytes(data); return {"path": path.name, "bytes": len(data), "sha256": sha(data)}
 
+def refresh_manifest(out: pathlib.Path, manifest: dict):
+    """Normalize manifest paths and refresh every generated-file hash."""
+    def refresh(entry, path):
+        if not path.exists():
+            raise RuntimeError(f"manifest file missing: {path}")
+        data = path.read_bytes()
+        entry.update({"path": path.relative_to(out).as_posix(), "bytes": len(data), "sha256": sha(data)})
+
+    for entry in manifest.get("files", []):
+        refresh(entry, out / entry["path"])
+    for entry in manifest.get("postings", []):
+        refresh(entry, out / "postings" / pathlib.Path(entry["path"]).name)
+    for entry in manifest.get("relation_shards", []):
+        refresh(entry, out / "relations" / pathlib.Path(entry["path"]).name)
+    return manifest
+
 def fetch_v5(works, cache: pathlib.Path, offline=False):
     cache.mkdir(parents=True, exist_ok=True); records=[]; payloads={}
     for index, work in enumerate(works, 1):
@@ -254,9 +270,12 @@ def ai_audit(out, concepts, relations, args):
     return report
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("--archive",required=True); p.add_argument("--output",required=True); p.add_argument("--v5-cache",default=".cache/commentary-links-v5/roots"); p.add_argument("--offline",action="store_true"); p.add_argument("--release",action="store_true"); p.add_argument("--audit-existing",action="store_true"); p.add_argument("--ai-endpoint"); p.add_argument("--ai-key"); p.add_argument("--ai-model",default="deepseek-v4-flash"); args=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument("--archive",required=True); p.add_argument("--output",required=True); p.add_argument("--v5-cache",default=".cache/commentary-links-v5/roots"); p.add_argument("--offline",action="store_true"); p.add_argument("--release",action="store_true"); p.add_argument("--audit-existing",action="store_true"); p.add_argument("--refresh-manifest",action="store_true"); p.add_argument("--ai-endpoint"); p.add_argument("--ai-key"); p.add_argument("--ai-model",default="deepseek-v4-flash"); args=p.parse_args()
     out=pathlib.Path(args.output); out.mkdir(parents=True,exist_ok=True)
     archive=pathlib.Path(args.archive); archive_hash=sha(archive.read_bytes())
+    if args.refresh_manifest:
+        manifest=read_json_bytes((out/"manifest.json").read_bytes()); refresh_manifest(out,manifest); write_json(out/"manifest.json",manifest)
+        print(json.dumps({"files":len(manifest.get("files",[])),"postings":len(manifest.get("postings",[])),"relation_shards":len(manifest.get("relation_shards",[]))},ensure_ascii=False)); return
     if args.audit_existing:
         concepts=read_json_bytes((out/"concepts.json.gz").read_bytes())
         relations=[]; relation_paths=[]
@@ -267,15 +286,10 @@ def main():
         for path,rows in relation_paths:
             for row in rows: row["ai_audit_status"]=status.get(row["relation_id"],row.get("ai_audit_status","not_sampled"))
             meta=write_json(path,rows,True); name=path.name
-            for item in manifest.get("relation_shards",[]):
-                if item.get("path")==name: item.update({"bytes":meta["bytes"],"sha256":meta["sha256"]})
         concept_meta=write_json(out/"concepts.json.gz",concepts,True)
         audit_meta=write_json(out/"audit"/"ai-quality-audit.json",audit)
         manifest["quality_gate"]=audit["status"]; manifest["generated_at"]=dt.datetime.now(dt.timezone.utc).isoformat()
-        for item in manifest.get("files",[]):
-            if item.get("path")=="concepts.json.gz": item.update({"bytes":concept_meta["bytes"],"sha256":concept_meta["sha256"]})
-            if item.get("path")=="audit/ai-quality-audit.json": item.update({"bytes":audit_meta["bytes"],"sha256":audit_meta["sha256"]})
-        write_json(out/"manifest.json",manifest)
+        refresh_manifest(out,manifest); write_json(out/"manifest.json",manifest)
         print(json.dumps({"mode":"audit_existing","concepts":len(concepts),"relations":len(unique),"audit":audit},ensure_ascii=False)); return
     with zipfile.ZipFile(archive) as z:
         works=read_json_bytes(z.read(zip_member(z,"/catalog/works.json"))); root_works=[w for w in works if w.get("level")=="mula"]
@@ -292,13 +306,13 @@ def main():
         prefixes={item["source"][:2],item["target"][:2]}
         for prefix in prefixes: relation_groups[prefix].append(item)
     for prefix,payload in sorted(relation_groups.items()):
-        meta=write_json(out/"relations"/f"{prefix}.json.gz",payload,True); meta.update({"prefix":prefix,"relation_count":len(payload),"endpoint_indexed":True}); relation_shards.append(meta)
+        meta=write_json(out/"relations"/f"{prefix}.json.gz",payload,True); meta.update({"path":f"relations/{prefix}.json.gz","prefix":prefix,"relation_count":len(payload),"endpoint_indexed":True}); relation_shards.append(meta)
     shard_meta=[]
     for prefix in sorted({t[:2] for t in postings}):
-        payload={t:postings[t] for t in sorted(postings) if t.startswith(prefix)}; meta=write_json(out/"postings"/f"{prefix}.json.gz",payload,True); meta["prefix"]=prefix; shard_meta.append(meta)
+        payload={t:postings[t] for t in sorted(postings) if t.startswith(prefix)}; meta=write_json(out/"postings"/f"{prefix}.json.gz",payload,True); meta.update({"path":f"postings/{prefix}.json.gz","prefix":prefix}); shard_meta.append(meta)
     for name,payload in (("ai-quality-audit.json",audit),("commentary-links-v5-source.json",{"format":V5_FORMAT,"files":v5_sources}),("lexicon.json",lex_audit)):
         meta=write_json(out/"audit"/name,payload); meta["path"]="audit/"+name; files.append(meta)
     manifest={"format":OUT_FORMAT,"generated_at":dt.datetime.now(dt.timezone.utc).isoformat(),"source":{"archive":str(archive),"archive_sha256":archive_hash,"commentary_links":V5_FORMAT,"v5_object_count":len(v5_sources)},"tfidf":{"tf":"1+ln(freq)","idf":"ln((N+1)/(df+1))+1","normalization":"L2"},"counts":{"works":len(works),"documents":len(documents),"concepts":len(concepts),"relations":len(relations),"postings_shards":len(shard_meta),"relation_shards":len(relation_shards)},"segmentation":{"overlap_resolution":"shortest verified v5 interval wins; all matches retained as provenance","fallback":"heading boundaries for rows without v5 mapping"},"quality_gate":audit["status"],"files":files,"postings":shard_meta,"relation_shards":relation_shards}
-    write_json(out/"manifest.json",manifest); print(json.dumps(manifest["counts"],ensure_ascii=False))
+    refresh_manifest(out,manifest); write_json(out/"manifest.json",manifest); print(json.dumps(manifest["counts"],ensure_ascii=False))
 
 if __name__=="__main__": main()
