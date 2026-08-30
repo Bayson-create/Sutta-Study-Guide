@@ -24,10 +24,13 @@
   // diverge badly from reality - a collapsed commentary card is a teaser strip,
   // not a 224px passage. These are only seeds: renderVirtual replaces them with
   // the measured running average per kind as soon as it has enough samples.
+  // Anything rendered by rowHtml keeps the historical 224 - that value was
+  // presumably tuned for rows, and rows dominate. Only the kinds that are
+  // structurally small get a smaller seed: a collapsed card is a teaser strip
+  // and a header/footer is a single band, yet both reserved a full passage.
   const EST_BY_KIND = {
-    root: 200,
+    root: EST_ROW_HEIGHT, 'annotation-row': EST_ROW_HEIGHT, 'roottext-row': EST_ROW_HEIGHT,
     'annotation-card': 96, 'roottext-card': 96,
-    'annotation-row': 150, 'roottext-row': 150,
     'annotation-header': 56, 'annotation-footer': 56,
     'roottext-header': 56, 'roottext-footer': 56,
   };
@@ -1291,7 +1294,13 @@
       measureRaf = 0;
       if (destroyed) return;
       const anchor = indexAt(toList(pane.scrollTop));
-      let shift = 0, changed = false;
+      // Everything above the anchor moving is what the reader actually sees as
+      // a jump, so measure that as one quantity: how far the anchor's own
+      // offset travels across this whole update. Summing per-row deltas would
+      // miss the re-estimate below, which also rewrites unmeasured items that
+      // sit above the window.
+      const offsetBefore = offsetFor(anchor);
+      let changed = false;
       const touchedKinds = new Set();
       windowEl.querySelectorAll('[data-t-item-key]').forEach(element => {
         const index = indexByKey.get(element.dataset.tItemKey), height = Math.ceil(element.getBoundingClientRect().height);
@@ -1307,7 +1316,6 @@
         const delta = height - heights[index];
         heights[index] = height; measured[index] = 1; add(index, delta); changed = true;
         heightCache.set(element.dataset.tItemKey, height);
-        if (index < anchor) shift += delta;
       });
       // Pull the reservation for unmeasured items toward what this kind really
       // measures, once the average has drifted more than ~15% from it.
@@ -1317,6 +1325,7 @@
         const average = sample.sum / sample.n, reserved = applied.get(kind) ?? (EST_BY_KIND[kind] || EST_ROW_HEIGHT);
         if (Math.abs(average - reserved) / Math.max(1, reserved) > 0.15 && reestimate(kind)) changed = true;
       });
+      const shift = changed ? offsetFor(anchor) - offsetBefore : 0;
       if (changed) {
         spacer.style.height = `${Math.max(1, totalHeight())}px`;
         windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
