@@ -1317,7 +1317,7 @@ mark.rh-purple { background: rgba(150, 100, 200, 0.32); }
    legible on top of any of the five highlight colours. */
 mark.rh-has-note { border-bottom: 2px solid var(--accent); }
 .rh-popup {
-  position: absolute; z-index: 1400; display: flex; flex-direction: column; gap: 8px;
+  position: fixed; z-index: 1400; display: flex; flex-direction: column; gap: 8px;
   padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border);
   background: var(--card-bg); box-shadow: 0 8px 28px rgba(40, 28, 10, 0.22);
   font-size: 0.9em; max-width: min(320px, 92vw);
@@ -8355,13 +8355,27 @@ const ReaderHighlights = (() => {
   function plainText(container) {
     return textNodes(container).map(n => n.nodeValue).join('');
   }
+  // A selection boundary is not always a text node: the V4 reader splits Pāli
+  // into one <span> per word, so dragging across words routinely leaves the
+  // Range ending ON an element, between two child spans. Counting only exact
+  // text-node matches returned null for those, which is why right-click
+  // highlighting silently did nothing there. Probe with a range instead.
   function offsetOf(container, node, nodeOffset) {
+    let probe;
+    try {
+      probe = document.createRange();
+      probe.setStart(container, 0);
+      probe.setEnd(node, nodeOffset);
+    } catch (e) { return null; }
     let total = 0;
     for (const text of textNodes(container)) {
       if (text === node) return total + nodeOffset;
+      let position;
+      try { position = probe.comparePoint(text, text.nodeValue.length); } catch (e) { return null; }
+      if (position > 0) break;      // this node starts after the boundary
       total += text.nodeValue.length;
     }
-    return null;
+    return total;
   }
 
   // --- painting ----------------------------------------------------------
@@ -8436,13 +8450,22 @@ const ReaderHighlights = (() => {
       </div>
       ${existing && existing.note ? `<div class="rh-popup-note">${esc(existing.note)}</div>` : ''}`;
   }
+  // Viewport coordinates (the popup is position:fixed). Document coordinates
+  // only worked because the Vism page scrolls on window; the V4 reader scrolls
+  // an inner pane with body overflow hidden, where a popup placed below the
+  // fold was permanently off-screen and unreachable.
   function placePopup(rect) {
     const el = ensurePopup();
     el.hidden = false;
-    const width = el.offsetWidth || 220;
-    const left = Math.min(Math.max(8, rect.left + window.scrollX + rect.width / 2 - width / 2), window.scrollX + document.documentElement.clientWidth - width - 8);
+    const width = el.offsetWidth || 220, height = el.offsetHeight || 120;
+    const viewW = document.documentElement.clientWidth, viewH = document.documentElement.clientHeight;
+    const left = Math.min(Math.max(8, rect.left + rect.width / 2 - width / 2), Math.max(8, viewW - width - 8));
+    // Above the selection when it fits, the way native text menus behave -
+    // it keeps the words you just selected visible instead of covering them.
+    const above = rect.top - height - 8, below = rect.bottom + 8;
+    const top = above >= 8 ? above : Math.min(below, Math.max(8, viewH - height - 8));
     el.style.left = `${left}px`;
-    el.style.top = `${rect.bottom + window.scrollY + 8}px`;
+    el.style.top = `${Math.max(8, top)}px`;
   }
   function closePopup() {
     if (popup) popup.hidden = true;
@@ -8534,7 +8557,8 @@ const ReaderHighlights = (() => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed || !selection.rangeCount) return null;
     const range = selection.getRangeAt(0);
-    const line = range.startContainer.parentElement?.closest('[data-hl-unit]');
+    const startEl = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
+    const line = startEl?.closest('[data-hl-unit]');
     // Both ends must sit in the same language line: offsets are only
     // meaningful relative to one line's own text.
     if (!line || !line.contains(range.endContainer)) return null;
@@ -8543,8 +8567,15 @@ const ReaderHighlights = (() => {
     const start = offsetOf(line, range.startContainer, range.startOffset);
     const end = offsetOf(line, range.endContainer, range.endOffset);
     if (start === null || end === null || end <= start) return null;
+    // Self-check the computed offsets against what the browser says is
+    // selected. Whitespace can differ (the range may span element boundaries),
+    // so compare with whitespace collapsed; a real mismatch means the offsets
+    // would paint the wrong words, and not opening beats mis-highlighting.
+    const quote = plainText(line).slice(start, end);
+    const flatten = value => String(value || '').replace(/\s+/g, '');
+    if (flatten(quote) !== flatten(selection.toString())) return null;
     return { docKey, unitKey: line.dataset.hlUnit, language: line.dataset.hlLang,
-             start, end, quote: plainText(line).slice(start, end), existing: null };
+             start, end, quote, existing: null };
   }
   function existingState(mark) {
     const line = mark.closest('[data-hl-unit]');
@@ -8553,16 +8584,29 @@ const ReaderHighlights = (() => {
     const existing = (cache[docKey] || []).find(h => String(h.id) === mark.dataset.hlId);
     return existing ? { docKey, unitKey: line.dataset.hlUnit, language: line.dataset.hlLang, existing } : null;
   }
+  function selectionRect(event, rectSource, mark) {
+    return rectSource === 'selection' && !mark
+      ? window.getSelection().getRangeAt(0).getBoundingClientRect()
+      : (mark || event.target).getBoundingClientRect();
+  }
   function tryOpen(event, rectSource) {
-    if (!authed()) return false;
     const mark = event.target.closest?.('mark.rh-mark');
     const state = mark ? existingState(mark) : selectionState();
     if (!state) return false;
-    const rect = rectSource === 'selection' && !mark
-      ? window.getSelection().getRangeAt(0).getBoundingClientRect()
-      : (mark || event.target).getBoundingClientRect();
-    openFor(state, rect);
+    // Signed out used to be a silent no-op, indistinguishable from "the
+    // feature is broken". Say so instead, in the place the popup would appear.
+    if (!authed()) {
+      const el = ensurePopup();
+      el.innerHTML = '<div class="rh-popup-note">登录后可保存高亮与笔记。</div>';
+      popupState = null;
+      placePopup(selectionRect(event, rectSource, mark));
+      return true;
+    }
+    openFor(state, selectionRect(event, rectSource, mark));
     return true;
+  }
+  function isOpen() {
+    return !!(popup && !popup.hidden);
   }
 
   document.addEventListener('contextmenu', event => {
@@ -8588,9 +8632,12 @@ const ReaderHighlights = (() => {
     if (mark) tryOpen(event, 'mark');
   });
   document.addEventListener('keydown', event => { if (event.key === 'Escape') closePopup(); });
-  window.addEventListener('scroll', () => { if (popup && !popup.hidden) closePopup(); }, { passive: true });
+  // Capture phase, on document: scroll does not bubble from an element, and
+  // the V4 reader scrolls an inner pane (#tipitaka-pane), not the window - so
+  // a window-only listener left the popup frozen over content that had moved.
+  document.addEventListener('scroll', () => { if (isOpen()) closePopup(); }, { capture: true, passive: true });
 
-  return { load, apply, repaint, registerRepaint, close: closePopup, COLORS };
+  return { load, apply, repaint, registerRepaint, close: closePopup, isOpen, COLORS };
 })();
 window.ReaderHighlights = ReaderHighlights;
 
@@ -15013,7 +15060,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-  <script src="tipitaka-reader.js?v=20260830.3"></script>
+  <script src="tipitaka-reader.js?v=20260830.4"></script>
 <script src="knowledge-graph.js?v=20260821.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
