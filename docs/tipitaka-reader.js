@@ -19,6 +19,18 @@
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
+  // Starting height reservation per item kind (see buildReaderItems). One
+  // shared constant for all of them made the virtual list's reserved height
+  // diverge badly from reality - a collapsed commentary card is a teaser strip,
+  // not a 224px passage. These are only seeds: renderVirtual replaces them with
+  // the measured running average per kind as soon as it has enough samples.
+  const EST_BY_KIND = {
+    root: 200,
+    'annotation-card': 96, 'roottext-card': 96,
+    'annotation-row': 150, 'roottext-row': 150,
+    'annotation-header': 56, 'annotation-footer': 56,
+    'roottext-header': 56, 'roottext-footer': 56,
+  };
   const PAGE_SIZE = 40;
   const DEFAULT_V4_TYPES = ['corpus', 'catalog'];
   const state = {
@@ -392,6 +404,15 @@
          the corner and back into the flow at the row's end. */
       .tipitaka-actions[open]{position:static;display:flex;flex-direction:column;align-items:flex-end;margin-top:6px}
       @media (hover:none){.tipitaka-actions-icon{opacity:.75}}
+      /* A gatha row is italic as a whole (.tipitaka-row[data-rend="gatha"]), and
+         <summary> has no UA font shorthand to shield it, so the ⓘ and the
+         paragraph number leaned over with the verse. Only the verse text itself
+         should be italic - highlight marks stay inherited, since the text they
+         cover really is italic. Scoped to the pane so it outranks the base
+         sheet, which is injected after this one. */
+      #tipitaka-pane .tipitaka-actions-icon,
+      #tipitaka-pane .tipitaka-num,
+      #tipitaka-pane .tipitaka-default-hit > summary{font-style:normal}
     `;
     document.head.appendChild(style);
   }
@@ -1185,20 +1206,77 @@
     const toReal = list => list + listTop();
     const stickyOffset = () => toolbar?.offsetHeight || 0;
     const add = (index, amount) => { for (let i = index + 1; i <= count; i += i & -i) tree[i] += amount; };
+    // The tree holds ABSOLUTE heights, not deltas from one global constant.
+    // A single EST_ROW_HEIGHT for all nine item kinds was the root cause of the
+    // scroll drift: a collapsed annotation card is ~96px but was reserved 224,
+    // and works with heavy commentary have nearly as many cards as rows, so the
+    // spacer ran systematically tall and collapsed as rows got measured.
+    // `measured` tracks which entries are real measurements, so a later
+    // estimate revision can leave them alone.
+    const measured = new Uint8Array(count);
+    const samples = new Map();   // kind -> { sum, n }, the running average
+    // What each kind's unmeasured items are currently reserving. Compared
+    // against the running average to decide when a revision is worth an O(n)
+    // pass - comparing against the static seed instead would re-scan forever
+    // once the average settled somewhere far from it.
+    const applied = new Map();
+    const estimateFor = kind => {
+      const sample = samples.get(kind);
+      if (sample && sample.n >= 5) return sample.sum / sample.n;
+      return EST_BY_KIND[kind] || EST_ROW_HEIGHT;
+    };
+    const buildTree = () => {
+      tree.fill(0);
+      // O(n) in-place Fenwick build: seed with the raw values, then push each
+      // node's running total into its parent.
+      for (let i = 0; i < count; i += 1) tree[i + 1] = heights[i];
+      for (let i = 1; i <= count; i += 1) {
+        const parent = i + (i & -i);
+        if (parent <= count) tree[parent] += tree[i];
+      }
+    };
     items.forEach((item, index) => {
       const cached = Number(heightCache.get(item.key));
-      if (Number.isFinite(cached) && cached > 0) {
-        heights[index] = cached;
-        add(index, cached - EST_ROW_HEIGHT);
+      if (Number.isFinite(cached) && cached > 0) { heights[index] = cached; measured[index] = 1; }
+      else {
+        const estimate = estimateFor(item.kind);
+        heights[index] = estimate;
+        applied.set(item.kind, estimate);
       }
     });
-    const measuredBefore = index => { let sum = 0; for (let i = index; i > 0; i -= i & -i) sum += tree[i]; return sum; };
-    const offsetFor = index => Math.max(0, Math.min(count, index)) * EST_ROW_HEIGHT + measuredBefore(Math.max(0, Math.min(count, index)));
-    const totalHeight = () => offsetFor(count);
+    buildTree();
+    // Re-estimate every still-unmeasured item of a kind once its running
+    // average has moved well away from what we reserved. Long documents
+    // therefore converge on the truth instead of drifting further from it.
+    let reestimates = 0;
+    const reestimate = kind => {
+      if (reestimates > 6) return false;
+      const next = estimateFor(kind);
+      applied.set(kind, next);
+      let changed = false;
+      for (let i = 0; i < count; i += 1) {
+        if (measured[i] || items[i].kind !== kind) continue;
+        if (Math.abs(heights[i] - next) < 1) continue;
+        heights[i] = next; changed = true;
+      }
+      if (changed) { reestimates += 1; buildTree(); }
+      return changed;
+    };
+    const prefix = index => { let sum = 0; for (let i = index; i > 0; i -= i & -i) sum += tree[i]; return sum; };
+    const offsetFor = index => prefix(Math.max(0, Math.min(count, index)));
+    const totalHeight = () => prefix(count);
+    // Fenwick binary-lifting descent: O(log n) instead of a binary search that
+    // called offsetFor (itself O(log n)) at every step. Fast flings hit this
+    // on every frame.
+    let logStep = 1;
+    while (logStep * 2 <= count) logStep *= 2;
     const indexAt = offset => {
-      let low = 0, high = count;
-      while (low < high) { const mid = Math.ceil((low + high) / 2); if (offsetFor(mid) <= offset) low = mid; else high = mid - 1; }
-      return Math.max(0, Math.min(count - 1, low));
+      let position = 0, remaining = offset;
+      for (let step = logStep; step > 0; step >>= 1) {
+        const next = position + step;
+        if (next <= count && tree[next] <= remaining) { position = next; remaining -= tree[next]; }
+      }
+      return Math.max(0, Math.min(count - 1, position));
     };
     const clampScroll = value => Math.max(0, Math.min(Number(value) || 0, Math.max(0, pane.scrollHeight - pane.clientHeight)));
     const setProgrammaticScroll = value => {
@@ -1214,26 +1292,43 @@
       if (destroyed) return;
       const anchor = indexAt(toList(pane.scrollTop));
       let shift = 0, changed = false;
+      const touchedKinds = new Set();
       windowEl.querySelectorAll('[data-t-item-key]').forEach(element => {
         const index = indexByKey.get(element.dataset.tItemKey), height = Math.ceil(element.getBoundingClientRect().height);
-        if (index === undefined || !height || heights[index] === height) return;
-        const previous = heights[index] || EST_ROW_HEIGHT, delta = height - previous;
-        heights[index] = height; add(index, delta); changed = true;
+        if (index === undefined || !height) return;
+        if (!measured[index]) {
+          // First real measurement of this kind of item feeds the running
+          // average that seeds every item still unmeasured.
+          const kind = items[index].kind, sample = samples.get(kind) || { sum: 0, n: 0 };
+          sample.sum += height; sample.n += 1; samples.set(kind, sample);
+          touchedKinds.add(kind);
+        }
+        if (heights[index] === height) { measured[index] = 1; return; }
+        const delta = height - heights[index];
+        heights[index] = height; measured[index] = 1; add(index, delta); changed = true;
         heightCache.set(element.dataset.tItemKey, height);
         if (index < anchor) shift += delta;
+      });
+      // Pull the reservation for unmeasured items toward what this kind really
+      // measures, once the average has drifted more than ~15% from it.
+      touchedKinds.forEach(kind => {
+        const sample = samples.get(kind);
+        if (!sample || sample.n < 5) return;
+        const average = sample.sum / sample.n, reserved = applied.get(kind) ?? (EST_BY_KIND[kind] || EST_ROW_HEIGHT);
+        if (Math.abs(average - reserved) / Math.max(1, reserved) > 0.15 && reestimate(kind)) changed = true;
       });
       if (changed) {
         spacer.style.height = `${Math.max(1, totalHeight())}px`;
         windowEl.style.transform = `translateY(${offsetFor(start)}px)`;
-        // Do not fight a finger, wheel, or trackpad gesture. Measurements are
-        // batched; explicit reader actions restore their own semantic anchor.
-        // A user gesture owns scrollTop.  Updating row measurements is safe,
-        // but compensating for the measured height while the finger/wheel is
-        // moving creates the small up/down jumps seen in long expanded texts.
-        // Explicit reader actions (language changes, expand/collapse and deep
-        // links) restore their semantic anchor separately and still use the
-        // programmatic correction path below.
-        if (shift && !userScrolling && !pointerScrolling && !touchScrolling && !reader.suppressMeasureCompensation && !reader.structureRestorePending) setProgrammaticScroll(pane.scrollTop + shift);
+        // Keeping the anchor item visually still is the whole job here, and
+        // it composes with the user's own scrolling rather than fighting it -
+        // this is what TanStack Virtual's scrollAdjustments and Virtuoso's
+        // offset compensation do. The one case where writing scrollTop really
+        // does hurt is an in-flight finger: it cancels iOS momentum. So only a
+        // live pointer/touch session opts out - a wheel or trackpad gesture
+        // (userScrolling) gets compensated like everything else, which is
+        // exactly when rows are first measured and used to jump.
+        if (shift && !pointerScrolling && !touchScrolling && !reader.suppressMeasureCompensation && !reader.structureRestorePending) setProgrammaticScroll(pane.scrollTop + shift);
       }
     };
     const scheduleMeasure = () => { if (!measureRaf) measureRaf = requestAnimationFrame(measure); };
@@ -1258,14 +1353,22 @@
       if (positionRaf) cancelAnimationFrame(positionRaf);
       const maxAttempts = Math.max(1, Number(options.maxAttempts) || 12);
       let attempts = 0;
+      // While settle() is converging it owns scrollTop outright. measure()'s
+      // own shift compensation used to run in the same frames, so two
+      // mechanisms wrote scrollTop per attempt and fought each other into a
+      // visible wobble. Measurement still happens; only its correction pauses.
+      const settling = reader.suppressMeasureCompensation;
+      reader.suppressMeasureCompensation = true;
+      const doneSettling = () => { reader.suppressMeasureCompensation = settling; };
       const settle = () => {
         positionRaf = 0;
-        if (destroyed || token !== positionToken) return;
+        if (destroyed || token !== positionToken) { doneSettling(); return; }
         measure();
         draw(true);
         const element = targetForKey(itemKey);
         if (!element) {
           if (attempts++ < maxAttempts) positionRaf = requestAnimationFrame(settle);
+          else doneSettling();
           return;
         }
         // visibleTop is where content actually starts being readable - below
@@ -1280,7 +1383,9 @@
           setProgrammaticScroll(pane.scrollTop + delta);
           draw(true);
           positionRaf = requestAnimationFrame(settle);
+          return;
         }
+        doneSettling();
       };
       spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
@@ -1347,7 +1452,17 @@
       settleUserScroll();
     };
     const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
-    const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => { schedule(true); scheduleMeasure(); }) : null;
+    // On mobile the pane is sized in dvh, so the address bar sliding away
+    // during a scroll resizes it mid-gesture. Re-laying out then is pure
+    // jitter - the width is what actually invalidates measurements, so a
+    // height-only change during a live touch is ignored.
+    let lastPaneWidth = pane.clientWidth;
+    const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(() => {
+      const widthChanged = pane.clientWidth !== lastPaneWidth;
+      lastPaneWidth = pane.clientWidth;
+      if (!widthChanged && (touchScrolling || pointerScrolling)) return;
+      schedule(true); scheduleMeasure();
+    }) : null;
     pane.addEventListener('scroll', onScroll, { passive: true }); resize?.observe(pane);
     pane.addEventListener('wheel', beginUserScroll, { passive: true });
     pane.addEventListener('pointerdown', beginPointerScroll, { passive: true });
@@ -1363,6 +1478,18 @@
     // semantic anchor is restored, which is visible as a flash/jump.
     spacer.style.height = `${Math.max(1, totalHeight())}px`;
     draw(true);
+    // Rows are measured on the first frame after innerHTML, which on a cold
+    // load is BEFORE the webfont swaps in. Those pre-swap heights were cached
+    // and then re-seeded on every rebuild, so the list stayed permanently
+    // mis-sized. Drop them once and re-measure when the fonts are actually up.
+    if (document.fonts?.ready && !reader.fontsSettled) {
+      document.fonts.ready.then(() => {
+        if (destroyed || state.reader !== reader) return;
+        reader.fontsSettled = true;
+        heightCache.clear();
+        scheduleMeasure();
+      });
+    }
     const nearestRootRowId = index => {
       for (let cursor = Math.min(index, count - 1); cursor >= 0; cursor -= 1) {
         const candidate = items[cursor];
@@ -1427,6 +1554,11 @@
     return {
       pane,
       offsetFor,
+      // Auto-scroll goes through here so its ticks are recognised as
+      // programmatic. Writing pane.scrollTop directly made every tick look
+      // like a user gesture, which pinned userScrolling on and disabled height
+      // compensation for as long as auto-scroll ran.
+      scrollBy: delta => setProgrammaticScroll(pane.scrollTop + delta),
       draw,
       refresh: () => draw(true),
       getAnchor,
@@ -1829,6 +1961,14 @@
       const paliEl = event.target.closest('.tipitaka-pali');
       if (paliEl) {
         const selected = window.getSelection()?.toString().trim();
+        // On a touch device there is no right-click, so a finished selection
+        // belongs to the highlight popup. The synthesised click used to land
+        // here first and open the dictionary modal, stealing the selection
+        // before touchend's deferred tryOpen could run. Clear split on touch:
+        // drag-select = highlight, tap a single word = look it up. Pointer
+        // devices keep both, since right-click drives highlighting there.
+        const touchPrimary = window.matchMedia?.('(hover: none)')?.matches;
+        if (selected && (touchPrimary || window.ReaderHighlights?.isOpen?.())) return;
         if (selected) { await showDictionary(selected); return; }
         const token = event.target.closest('[data-pali-token]');
         if (token) { await showDictionary(token.dataset.paliToken); return; }
@@ -2028,7 +2168,11 @@
       });
     }
   }
-  function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => pane.scrollTop += settings().speed / 10, 50); }
+  function toggleAutoScroll() { const pane = document.getElementById('tipitaka-pane'); if (!pane) return; if (state.autoTimer) { clearInterval(state.autoTimer); state.autoTimer = null; return; } state.autoTimer = setInterval(() => {
+    const step = settings().speed / 10;
+    if (state.reader?.virtual?.scrollBy) state.reader.virtual.scrollBy(step);
+    else pane.scrollTop += step;
+  }, 50); }
   function workMeta(workId) { return (state.works || []).find(item => item.id === workId) || null; }
   function bookmarkTarget(reader) {
     const anchor = reader?.virtual?.getAnchor?.();
