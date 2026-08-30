@@ -8512,7 +8512,9 @@ const ReaderHighlights = (() => {
       top = above >= 8 ? above : Math.min(below, Math.max(8, viewH - height - 8));
     }
     el.style.left = `${left}px`;
-    el.style.top = `${Math.max(8, top)}px`;
+    // Final clamp for both branches: whatever the selection rect claims - it
+    // can sit outside the viewport entirely - the popup has to be reachable.
+    el.style.top = `${Math.min(Math.max(8, top), Math.max(8, viewH - height - 8))}px`;
     popupOpenedAt = Date.now();
   }
   function closePopup() {
@@ -15118,7 +15120,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-  <script src="tipitaka-reader.js?v=20260830.6"></script>
+  <script src="tipitaka-reader.js?v=20260830.7"></script>
 <script src="knowledge-graph.js?v=20260830.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
