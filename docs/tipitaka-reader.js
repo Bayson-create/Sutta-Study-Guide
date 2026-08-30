@@ -17,6 +17,7 @@
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
   const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v5';
+  const COMMENTARY_V3_CACHE_NAME = 'tipitaka-commentary-links-v3';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -25,7 +26,7 @@
   const state = {
     works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), commentaryRoots: new Map(), commentarySources: new Map(), commentaryFragments: new Map(), rootFragments: new Map(), settings: null, autoTimer: null,
-    dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0,
+    dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0, commentaryV5Ready: null, commentaryReloadPaths: new Set(),
   };
   const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
 
@@ -71,14 +72,21 @@
     } catch {}
   }
 
-  async function cachedJsonAt(base, path, cacheName = CACHE_NAME, metaPath = path) {
+  async function cachedJsonAt(base, path, cacheName = CACHE_NAME, metaPath = path, options = {}) {
+    const reload = options.reload === true;
     const request = new Request(`${base}/${path}`, { mode: 'cors' });
     try {
       const cache = await caches.open(cacheName);
-      let response = await cache.match(request);
+      if (reload) await cache.delete(request);
+      let response = reload ? null : await cache.match(request);
       if (!response) {
-        response = await fetch(request);
-        if (!response.ok) throw new Error(`${path} 加载失败（${response.status}）`);
+        response = await fetch(request, reload ? { cache: 'reload' } : undefined);
+        if (!response.ok) {
+          const requestError = new Error(`${path} 加载失败（${response.status}）`);
+          requestError.status = response.status;
+          requestError.resourcePath = path;
+          throw requestError;
+        }
         // Cache writes are best-effort: a full or unavailable Cache API must
         // not prevent an already successful V4 data request from rendering.
         try { await cache.put(request, response.clone()); } catch {}
@@ -86,7 +94,10 @@
       const bytes = Number(response.headers.get('Content-Length') || 0); touchCacheMeta(metaPath, bytes, request.url, cacheName); trimReaderCache();
       return response.json();
     } catch (error) {
-      throw new Error(`无法读取巴利三藏数据：${error.message}`);
+      const wrapped = new Error(`无法读取巴利三藏数据：${error.message}`);
+      wrapped.status = error.status;
+      wrapped.resourcePath = error.resourcePath || path;
+      throw wrapped;
     }
   }
   const cachedJson = (path, cacheName = CACHE_NAME) => cachedJsonAt(DATA_BASE, path, cacheName, path);
@@ -99,7 +110,13 @@
         if (event.data?.id !== id) return;
         clearTimeout(timer);
         worker.removeEventListener('message', done);
-        if (event.data.ok) resolve(event.data.data); else reject(new Error(event.data.error || 'Worker 处理失败'));
+        if (event.data.ok) resolve(event.data.data);
+        else {
+          const error = new Error(event.data.error || 'Worker 处理失败');
+          error.status = event.data.status;
+          error.resourcePath = event.data.path || payload.path;
+          reject(error);
+        }
       };
       worker.addEventListener('message', done);
       worker.postMessage({ ...payload, id });
@@ -107,7 +124,7 @@
   }
   function ensureWorkers() {
     if (typeof Worker !== 'undefined') {
-      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260820.1', document.baseURI));
+      if (!state.dataWorker) state.dataWorker = new Worker(new URL('tipitaka-data-worker.js?v=20260830.2', document.baseURI));
       if (!state.searchWorker) state.searchWorker = new Worker(new URL('tipitaka-search-worker.js?v=20260819.1', document.baseURI));
     }
   }
@@ -135,54 +152,89 @@
     while (state.workCache.size > WORK_CACHE_LIMIT) state.workCache.delete(state.workCache.keys().next().value);
     return [meta, work];
   }
-  async function commentaryMapFor(workId) {
+  async function commentaryV5Ready(force = false) {
+    if (force) state.commentaryV5Ready = null;
+    if (!state.commentaryV5Ready) {
+      const request = new Request(`${COMMENTARY_BASE}/manifest.json`, { mode: 'cors' });
+      const pending = fetch(request, { method: 'HEAD', cache: force ? 'reload' : 'default' }).then(response => response.ok).catch(() => false);
+      state.commentaryV5Ready = pending;
+      const ready = await pending;
+      if (!ready && state.commentaryV5Ready === pending) state.commentaryV5Ready = null;
+      return ready;
+    }
+    return state.commentaryV5Ready;
+  }
+  const commentaryAsset = format => {
+    const version = String(format || '').endsWith('/v3') ? 'v3' : String(format || '').endsWith('/v5') ? 'v5' : '';
+    if (version === 'v5') return { version, base: COMMENTARY_BASE, cacheName: COMMENTARY_CACHE_NAME };
+    if (version === 'v3') return { version, base: COMMENTARY_V3_BASE, cacheName: COMMENTARY_V3_CACHE_NAME };
+    throw new Error(`不支持的注释关系版本：${format || '未知'}`);
+  };
+  async function loadCommentaryGraph(path, force = false) {
+    let v5Error = null;
+    if (await commentaryV5Ready(force)) {
+      try { return await cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`, { reload: force }); }
+      catch (error) { v5Error = error; }
+    }
+    try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, COMMENTARY_V3_CACHE_NAME, `commentary-links-v3/${path}`, { reload: force }); }
+    catch (v3Error) {
+      const error = new Error(v5Error ? `V5 关系图加载失败：${v5Error.message}；V3 回退关系图加载失败：${v3Error.message}` : `V5 尚未就绪；V3 关系图加载失败：${v3Error.message}`);
+      error.status = v5Error?.status || v3Error.status;
+      throw error;
+    }
+  }
+  async function commentaryMapFor(workId, force = false) {
+    const path = `roots/${encodeURIComponent(workId)}.json.gz`;
+    force = state.commentaryReloadPaths.delete(path) || force;
     if (!state.commentaryRoots.has(workId)) {
-      const path = `roots/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`).catch(async error => {
-        try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`); }
-        catch { return { format: 'tipitaka-commentary-links/v5', root_work_id: workId, units: [], error: error.message }; }
-      });
+      const promise = loadCommentaryGraph(path, force).catch(error => ({ format: 'tipitaka-commentary-links/v5', root_work_id: workId, units: [], error: error.message }));
       state.commentaryRoots.set(workId, promise);
     }
     return state.commentaryRoots.get(workId);
   }
-  async function commentarySourceMapFor(workId) {
+  async function commentarySourceMapFor(workId, force = false) {
+    const path = `sources/${encodeURIComponent(workId)}.json.gz`;
+    force = state.commentaryReloadPaths.delete(path) || force;
     if (!state.commentarySources.has(workId)) {
-      const path = `sources/${encodeURIComponent(workId)}.json.gz`;
-      const promise = cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`)
-        .catch(async error => {
-          try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`); }
-          catch { return { format: 'tipitaka-commentary-links/v5', source_work_id: workId, fragments: [], error: error.message }; }
-        });
+      const promise = loadCommentaryGraph(path, force).catch(error => ({ format: 'tipitaka-commentary-links/v5', source_work_id: workId, fragments: [], error: error.message }));
       state.commentarySources.set(workId, promise);
     }
     return state.commentarySources.get(workId);
   }
   const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[35]$/.test(String(value || ''));
-  async function commentaryFragment(fragment) {
-    const key = fragment.fragment_id;
+  async function loadCommentaryAsset(format, path, force = false) {
+    const asset = commentaryAsset(format);
+    ensureWorkers();
+    try {
+      if (state.dataWorker) return await workerRequest(state.dataWorker, { base: asset.base, path, reload: force }, 20000);
+      return await cachedJsonAt(asset.base, path, asset.cacheName, `commentary-links-${asset.version}/${path}`, { reload: force });
+    } catch (workerError) {
+      try { return await cachedJsonAt(asset.base, path, asset.cacheName, `commentary-links-${asset.version}/${path}`, { reload: force }); }
+      catch (networkError) {
+        const error = new Error(`${asset.version.toUpperCase()} ${path} 加载失败${networkError.status ? `（${networkError.status}）` : ''}：${networkError.message}`);
+        error.status = networkError.status || workerError.status;
+        error.resourcePath = path;
+        throw error;
+      }
+    }
+  }
+  const commentaryFragmentKey = (format, fragment) => `${format}:${fragment.fragment_id}`;
+  async function commentaryFragment(fragment, format, force = false) {
+    const key = commentaryFragmentKey(format, fragment);
     if (!state.commentaryFragments.has(key)) {
-      ensureWorkers();
-      const path = fragment.file;
-      const primary = () => state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`);
-      const promise = primary().catch(() => cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`));
+      const promise = loadCommentaryAsset(format, fragment.file, force);
       state.commentaryFragments.set(key, promise);
+      promise.catch(() => { if (state.commentaryFragments.get(key) === promise) state.commentaryFragments.delete(key); });
     }
     return state.commentaryFragments.get(key);
   }
-  async function rootTextFragment(fragment) {
-    const key = `${fragment.root_work_id}:${fragment.unit_id}`;
+  const rootFragmentKey = (format, fragment) => `${format}:${fragment.root_work_id}:${fragment.unit_id}`;
+  async function rootTextFragment(fragment, format, force = false) {
+    const key = rootFragmentKey(format, fragment);
     if (!state.rootFragments.has(key)) {
-      ensureWorkers();
-      const path = fragment.file;
-      const primary = () => state.dataWorker
-        ? workerRequest(state.dataWorker, { base: COMMENTARY_BASE, path }, 20000).catch(() => cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`))
-        : cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`);
-      const fallback = () => cachedJsonAt(COMMENTARY_V3_BASE, path, 'tipitaka-commentary-links-v3', `commentary-links-v3/${path}`);
-      const promise = primary().catch(fallback);
+      const promise = loadCommentaryAsset(format, fragment.file, force);
       state.rootFragments.set(key, promise);
+      promise.catch(() => { if (state.rootFragments.get(key) === promise) state.rootFragments.delete(key); });
     }
     return state.rootFragments.get(key);
   }
@@ -1566,11 +1618,11 @@
     history.replaceState(null, '', `${location.pathname}${location.search}#/tipitaka/read/${encodeURIComponent(reader.meta.id)}${params.toString() ? `?${params}` : ''}`);
   }
 
-  async function loadActiveRootText(reader, anchor = null) {
+  async function loadActiveRootText(reader, anchor = null, force = false) {
     const rootText = reader?.rootText;
     if (!rootText?.root || !rootText.loading) return;
     try {
-      const data = await rootTextFragment(rootText.root);
+      const data = await rootTextFragment(rootText.root, reader.commentarySourceMap?.format, force);
       if (state.reader !== reader || reader.rootText !== rootText) return;
       if (!isCommentaryFormat(data.format) || data.root_work_id !== rootText.root.root_work_id || data.unit_id !== rootText.root.unit_id || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count) || Number(data.root_start_row) !== Number(rootText.root.root_start_row) || Number(data.root_end_row) !== Number(rootText.root.root_end_row)) throw new Error('根本片段校验失败');
       rootText.data = data; rootText.loading = false; rootText.error = '';
@@ -1593,11 +1645,11 @@
     await loadActiveRootText(reader, anchor);
   }
 
-  async function loadActiveAnnotation(reader, anchor = null) {
+  async function loadActiveAnnotation(reader, anchor = null, force = false) {
     const annotation = reader?.annotation;
     if (!annotation?.fragment || !annotation.loading) return;
     try {
-      const data = await commentaryFragment(annotation.fragment);
+      const data = await commentaryFragment(annotation.fragment, reader.commentaryMap?.format, force);
       if (state.reader !== reader || reader.annotation !== annotation) return;
       if (!isCommentaryFormat(data.format) || data.fragment_id !== annotation.fragmentId || !Array.isArray(data.rows) || data.rows.length !== Number(data.row_count)) throw new Error('注释片段校验失败');
       annotation.data = data; annotation.loading = false; annotation.error = '';
@@ -1872,11 +1924,11 @@
       }
       if (action === 'roottext-retry') {
         const rootText = reader.rootText; if (!rootText?.root) return;
-        state.rootFragments.delete(`${rootText.root.root_work_id}:${rootText.root.unit_id}`);
+        state.rootFragments.delete(rootFragmentKey(reader.commentarySourceMap?.format, rootText.root));
         rootText.loading = true; rootText.error = '';
         const anchor = reader.virtual?.getAnchorForKey?.(`source:${rootText.sourceFragment.source_fragment_id}`) || reader.virtual?.getAnchor?.();
         rebuildReaderVirtual(reader, anchor);
-        await loadActiveRootText(reader, anchor);
+        await loadActiveRootText(reader, anchor, true);
         return;
       }
       if (action === 'annotation-collapse') {
@@ -1891,17 +1943,17 @@
       }
       if (action === 'annotation-retry') {
         if (!reader.annotation?.fragment) return;
-        state.commentaryFragments.delete(reader.annotation.fragmentId);
+        state.commentaryFragments.delete(commentaryFragmentKey(reader.commentaryMap?.format, reader.annotation.fragment));
         reader.annotation.loading = true; reader.annotation.error = '';
-        const anchor = reader.virtual?.getAnchor?.(); rebuildReaderVirtual(reader, anchor);
-        await loadActiveAnnotation(reader, anchor);
+        const anchor = reader.virtual?.getAnchorForKey?.(`unit:${reader.annotation.unitId}`) || reader.virtual?.getAnchor?.(); rebuildReaderVirtual(reader, anchor);
+        await loadActiveAnnotation(reader, anchor, true);
         return;
       }
       if (action === 'annotation-map-retry') {
-        const anchor = reader.virtual?.getAnchor?.(); state.commentaryRoots.delete(reader.meta.id); renderReader(reader.meta.id, anchor); return;
+        const anchor = reader.virtual?.getAnchor?.(); state.commentaryRoots.delete(reader.meta.id); state.commentaryV5Ready = null; state.commentaryReloadPaths.add(`roots/${encodeURIComponent(reader.meta.id)}.json.gz`); renderReader(reader.meta.id, anchor); return;
       }
       if (action === 'annotation-source-map-retry') {
-        const anchor = reader.virtual?.getAnchor?.(); state.commentarySources.delete(reader.meta.id); renderReader(reader.meta.id, anchor); return;
+        const anchor = reader.virtual?.getAnchor?.(); state.commentarySources.delete(reader.meta.id); state.commentaryV5Ready = null; state.commentaryReloadPaths.add(`sources/${encodeURIComponent(reader.meta.id)}.json.gz`); renderReader(reader.meta.id, anchor); return;
       }
       const row = reader.work.rows.find(item => Number(item.id) === Number(button.dataset.row)); if (!row) return;
       if (action === 'edit-zh' || action === 'edit-en') await editTranslation(reader.meta, row, action === 'edit-zh' ? 'zh' : 'en');
