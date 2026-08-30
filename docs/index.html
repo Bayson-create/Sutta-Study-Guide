@@ -8316,16 +8316,32 @@ function renderVismParallel(docKey, chapterTitle, parts) {
 const ReaderHighlights = (() => {
   const COLORS = ['yellow', 'green', 'blue', 'pink', 'purple'];
   const cache = {};          // doc_key -> [highlight, ...]
-  let popup = null, popupState = null;
+  let popup = null, popupState = null, popupOpenedAt = 0;
+  // Roughly the height the iOS/Android selection callout occupies above a
+  // selection, used to place ourselves clear of it.
+  const OS_CALLOUT_CLEARANCE = 56;
+  const touchPrimary = () => !!window.matchMedia?.('(hover: none)')?.matches;
 
-  const authed = () => typeof communityCurrentUser !== 'undefined' && !!communityCurrentUser;
+  // communityCurrentUser is `undefined` until something fetches it, and nothing
+  // does so at boot. Treating that as "signed out" told signed-in readers to
+  // log in on every fresh entry to a reader. A stored token means the fetch is
+  // merely still in flight, so trust it; an expired one resolves to null and
+  // this correctly turns false.
+  const authed = () => {
+    if (typeof communityCurrentUser !== 'undefined') return !!communityCurrentUser;
+    return typeof communityToken === 'function' && !!communityToken();
+  };
   const headers = () => ({ 'Content-Type': 'application/json', ...(typeof communityAuthHeaders === 'function' ? communityAuthHeaders() : {}) });
 
   async function load(docKey) {
     if (cache[docKey]) return cache[docKey];
+    // Resolve the session before deciding - and before caching. The empty list
+    // used to be cached ahead of the auth check, so a reader opened before the
+    // user was known stayed permanently unhighlighted.
+    if (typeof communityFetchCurrentUser === 'function') await communityFetchCurrentUser();
+    if (!authed()) return [];
     const list = [];
     cache[docKey] = list;
-    if (!authed()) return list;
     try {
       const res = await fetch(`${API_BASE}/api/reader/highlights?doc=${encodeURIComponent(docKey)}`, { headers: headers() });
       if (res.ok) list.push(...await res.json());
@@ -8412,7 +8428,17 @@ const ReaderHighlights = (() => {
   // language line eligible for painting.
   function apply(root, docKey) {
     if (!root || !cache[docKey]) return;
+    // unpaint() ends in normalize(), which merges text nodes and so destroys
+    // any live Range anchored in this line - on a phone that silently wiped
+    // the user's selection (and the OS callout with it) whenever the reader
+    // repainted mid-gesture. Leave the line the reader is selecting alone; it
+    // gets repainted on the next pass.
+    const selection = window.getSelection();
+    const active = selection && !selection.isCollapsed && selection.rangeCount ? selection.getRangeAt(0) : null;
     root.querySelectorAll('[data-hl-unit]').forEach(line => {
+      if (active) {
+        try { if (active.intersectsNode(line)) return; } catch (e) { /* detached range: repaint normally */ }
+      }
       unpaint(line);
       const rows = forUnit(docKey, line.dataset.hlUnit, line.dataset.hlLang);
       if (!rows.length) return;
@@ -8438,6 +8464,18 @@ const ReaderHighlights = (() => {
     popup.hidden = true;
     popup.addEventListener('mousedown', e => e.preventDefault()); // keep the selection alive
     popup.addEventListener('click', onPopupClick);
+    // Touch needs its own guard: without it the first tap on a colour dot
+    // collapses the selection and dismisses the OS copy callout before the
+    // synthesised click arrives. Suppressing the default also suppresses that
+    // click, so the action is driven from touchend instead. Text fields are
+    // exempt - the note editor still needs focus and a caret.
+    const isField = target => !!target?.closest?.('textarea,input');
+    popup.addEventListener('touchstart', e => { if (!isField(e.target)) e.preventDefault(); }, { passive: false });
+    popup.addEventListener('touchend', e => {
+      if (isField(e.target)) return;
+      e.preventDefault();
+      onPopupClick(e);
+    }, { passive: false });
     document.body.appendChild(popup);
     return popup;
   }
@@ -8460,12 +8498,22 @@ const ReaderHighlights = (() => {
     const width = el.offsetWidth || 220, height = el.offsetHeight || 120;
     const viewW = document.documentElement.clientWidth, viewH = document.documentElement.clientHeight;
     const left = Math.min(Math.max(8, rect.left + rect.width / 2 - width / 2), Math.max(8, viewW - width - 8));
-    // Above the selection when it fits, the way native text menus behave -
-    // it keeps the words you just selected visible instead of covering them.
-    const above = rect.top - height - 8, below = rect.bottom + 8;
-    const top = above >= 8 ? above : Math.min(below, Math.max(8, viewH - height - 8));
+    let top;
+    if (touchPrimary()) {
+      // The OS's own copy/share callout owns the band just above the selection.
+      // Sit below it instead so both are usable; if there is no room below,
+      // go above but clear the callout's height rather than landing on it.
+      const below = rect.bottom + 12;
+      top = below + height <= viewH - 8 ? below : Math.max(8, rect.top - height - OS_CALLOUT_CLEARANCE);
+    } else {
+      // Pointer devices have no OS callout, so prefer above the selection the
+      // way native text menus do - it keeps the selected words visible.
+      const above = rect.top - height - 8, below = rect.bottom + 8;
+      top = above >= 8 ? above : Math.min(below, Math.max(8, viewH - height - 8));
+    }
     el.style.left = `${left}px`;
     el.style.top = `${Math.max(8, top)}px`;
+    popupOpenedAt = Date.now();
   }
   function closePopup() {
     if (popup) popup.hidden = true;
@@ -8626,6 +8674,11 @@ const ReaderHighlights = (() => {
     // would report the click as having happened outside the popup - closing
     // it, and dropping popupState, right before the save button could use it.
     const insidePopup = popup && event.composedPath().includes(popup);
+    // On touch the browser synthesises a click after touchend - i.e. after the
+    // deferred tryOpen has already opened the popup. That click's path is the
+    // text line, not the popup, so it used to read as an outside click and
+    // close the popup its own gesture had just opened.
+    if (popup && !popup.hidden && !insidePopup && Date.now() - popupOpenedAt < 500) return;
     if (popup && !popup.hidden && !insidePopup) { closePopup(); return; }
     if (insidePopup) return;
     const mark = event.target.closest?.('mark.rh-mark');
@@ -8635,7 +8688,12 @@ const ReaderHighlights = (() => {
   // Capture phase, on document: scroll does not bubble from an element, and
   // the V4 reader scrolls an inner pane (#tipitaka-pane), not the window - so
   // a window-only listener left the popup frozen over content that had moved.
-  document.addEventListener('scroll', () => { if (isOpen()) closePopup(); }, { capture: true, passive: true });
+  // The grace window matters here too: on a phone the pane is still coasting
+  // (and the address bar still settling) when the popup opens, and those
+  // scrolls would close it immediately.
+  document.addEventListener('scroll', () => {
+    if (isOpen() && Date.now() - popupOpenedAt > 500) closePopup();
+  }, { capture: true, passive: true });
 
   return { load, apply, repaint, registerRepaint, close: closePopup, isOpen, COLORS };
 })();
@@ -15060,7 +15118,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-  <script src="tipitaka-reader.js?v=20260830.5"></script>
+  <script src="tipitaka-reader.js?v=20260830.6"></script>
 <script src="knowledge-graph.js?v=20260830.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>

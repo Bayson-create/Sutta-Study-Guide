@@ -827,6 +827,25 @@
     const text = strip(best.querySelector('.tipitaka-zh')?.textContent || best.querySelector('.tipitaka-pali')?.textContent || '');
     if (text) slot.textContent = text.length > 40 ? `${text.slice(0, 40)}…` : text;
   }
+  // "继续阅读" used to resume at the row the reader was OPENED at, because the
+  // history entry was only written by renderReader - and opening from the
+  // catalog carries no ?row=, so it recorded row 0 and the button looked like
+  // it just reopened the work. Record the live anchor as the reader scrolls
+  // instead. Throttled well below the 80ms progress tick: this is a
+  // localStorage write, and one every couple of seconds is plenty.
+  let lastHistoryWrite = 0;
+  function rememberReadingPosition(force = false) {
+    const reader = state.reader;
+    if (!reader) return;
+    const now = Date.now();
+    if (!force && now - lastHistoryWrite < 2000) return;
+    const rowId = reader.virtual?.getAnchor?.()?.rowId ?? reader.work.rows[reader.currentIndex]?.id;
+    if (rowId === undefined || rowId === null) return;
+    lastHistoryWrite = now;
+    try {
+      localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId: reader.meta.id, rowId, at: now }));
+    } catch (e) { /* private mode: resuming is a convenience, not a requirement */ }
+  }
   function closeReaderPopovers() {
     ['tipitaka-nav-panel', 'tipitaka-settings-panel'].forEach(id => {
       const panel = document.getElementById(id);
@@ -845,8 +864,11 @@
       let pending = null;
       app.addEventListener('scroll', event => {
         if (event.target?.id !== 'tipitaka-pane' || pending) return;
-        pending = setTimeout(() => { pending = null; updateReaderProgress(); updateReaderContextTitle(); }, 80);
+        pending = setTimeout(() => { pending = null; updateReaderProgress(); updateReaderContextTitle(); rememberReadingPosition(); }, 80);
       }, true);
+      // Leaving the page mid-scroll should still be resumable.
+      window.addEventListener('pagehide', () => rememberReadingPosition(true));
+      document.addEventListener('visibilitychange', () => { if (document.hidden) rememberReadingPosition(true); });
     }
     updateReaderProgress();
     updateReaderContextTitle();
@@ -1432,7 +1454,12 @@
       // Mobile momentum can continue after touchend.  Only yield scrollTop
       // back to layout work after a quiet period, or an explicit scrollend.
       scrollIdleTimer = setTimeout(() => {
-        if (!pointerScrolling && !touchScrolling) { userScrolling = false; schedule(true); }
+        // Not forced: a forced draw rewrites windowEl.innerHTML even when the
+        // window range is unchanged, which wipes any live text selection - on
+        // a phone this fired 260ms after the finger lifted and took the
+        // selection (and the OS copy callout) with it. If the range really did
+        // change, an unforced draw redraws anyway.
+        if (!pointerScrolling && !touchScrolling) { userScrolling = false; schedule(); }
       }, 260);
     };
     const endPointerScroll = event => {
@@ -1460,7 +1487,7 @@
       touchScrolling = false;
       settleUserScroll();
     };
-    const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(true); } };
+    const onScrollEnd = () => { if (!pointerScrolling && !touchScrolling) { clearTimeout(scrollIdleTimer); userScrolling = false; schedule(); } };
     // On mobile the pane is sized in dvh, so the address bar sliding away
     // during a scroll resizes it mid-gesture. Re-laying out then is pure
     // jitter - the width is what actually invalidates measurements, so a
