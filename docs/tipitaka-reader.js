@@ -4,7 +4,6 @@
 
   const DATA_BASE = (window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '');
   const COMMENTARY_BASE = (window.TIPITAKA_COMMENTARY_BASE || DATA_BASE.replace(/\/v1$/, '/commentary-links-v5')).replace(/\/$/, '');
-  const COMMENTARY_V3_BASE = DATA_BASE.replace(/\/v1$/, '/commentary-links-v3');
   const HYBRID_SEARCH_BASE = (window.SUTTA_HYBRID_SEARCH_BASE || '').replace(/\/$/, '');
   // This file is loaded as a separate classic script.  Do not rely on the
   // inline page script's lexical `const API_BASE` being visible here: on
@@ -17,7 +16,6 @@
   const CACHE_NAME = 'tipitaka-reader-v2';
   const SEARCH_CACHE_NAME = 'tipitaka-search-v4';
   const COMMENTARY_CACHE_NAME = 'tipitaka-commentary-links-v5';
-  const COMMENTARY_V3_CACHE_NAME = 'tipitaka-commentary-links-v3';
   const WORK_CACHE_LIMIT = 3;
   const OVERSCAN = 12;
   const EST_ROW_HEIGHT = 224;
@@ -66,7 +64,7 @@
     try {
       const db = await openCacheMeta(), rows = await new Promise((resolve, reject) => { const tx = db.transaction(CACHE_META_STORE, 'readonly'), req = tx.objectStore(CACHE_META_STORE).getAll(); req.onsuccess = () => resolve(req.result); req.onerror = () => reject(req.error); });
       let total = rows.reduce((sum, row) => sum + (row.bytes || 0), 0); if (total <= CACHE_BUDGET) { db.close(); return; }
-      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v[35]\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
+      const evictable = rows.filter(row => /^(corpus\/|dictionaries\/|search-v4\/|dictionary-search-v1\/|commentary-links-v5\/)/.test(row.path)).sort((a, b) => a.touched_at - b.touched_at);
       for (const row of evictable) { if (total <= CACHE_BUDGET) break; const cache = await caches.open(row.cache_name || CACHE_NAME); await cache.delete(new Request(row.request_url || url(row.path))); total -= row.bytes || 0; const tx = db.transaction(CACHE_META_STORE, 'readwrite'); tx.objectStore(CACHE_META_STORE).delete(row.path); await new Promise(resolve => { tx.oncomplete = resolve; tx.onerror = resolve; }); }
       db.close();
     } catch {}
@@ -165,22 +163,17 @@
     return state.commentaryV5Ready;
   }
   const commentaryAsset = format => {
-    const version = String(format || '').endsWith('/v3') ? 'v3' : String(format || '').endsWith('/v5') ? 'v5' : '';
+    const version = String(format || '').endsWith('/v5') ? 'v5' : '';
     if (version === 'v5') return { version, base: COMMENTARY_BASE, cacheName: COMMENTARY_CACHE_NAME };
-    if (version === 'v3') return { version, base: COMMENTARY_V3_BASE, cacheName: COMMENTARY_V3_CACHE_NAME };
     throw new Error(`不支持的注释关系版本：${format || '未知'}`);
   };
   async function loadCommentaryGraph(path, force = false) {
-    let v5Error = null;
-    if (await commentaryV5Ready(force)) {
-      try { return await cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`, { reload: force }); }
-      catch (error) { v5Error = error; }
-    }
-    try { return await cachedJsonAt(COMMENTARY_V3_BASE, path, COMMENTARY_V3_CACHE_NAME, `commentary-links-v3/${path}`, { reload: force }); }
-    catch (v3Error) {
-      const error = new Error(v5Error ? `V5 关系图加载失败：${v5Error.message}；V3 回退关系图加载失败：${v3Error.message}` : `V5 尚未就绪；V3 关系图加载失败：${v3Error.message}`);
-      error.status = v5Error?.status || v3Error.status;
-      throw error;
+    if (!(await commentaryV5Ready(force))) throw new Error('V5 注释关系数据尚未就绪');
+    try { return await cachedJsonAt(COMMENTARY_BASE, path, COMMENTARY_CACHE_NAME, `commentary-links-v5/${path}`, { reload: force }); }
+    catch (error) {
+      const wrapped = new Error(`V5 关系图加载失败：${error.message}`);
+      wrapped.status = error.status;
+      throw wrapped;
     }
   }
   async function commentaryMapFor(workId, force = false) {
@@ -201,7 +194,7 @@
     }
     return state.commentarySources.get(workId);
   }
-  const isCommentaryFormat = value => /^tipitaka-commentary-links\/v[35]$/.test(String(value || ''));
+  const isCommentaryFormat = value => String(value || '') === 'tipitaka-commentary-links/v5';
   async function loadCommentaryAsset(format, path, force = false) {
     const asset = commentaryAsset(format);
     ensureWorkers();

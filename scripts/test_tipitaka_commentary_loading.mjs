@@ -35,6 +35,6 @@ assert.equal(deleted, 1, 'forced retry must clear the Cache API entry');
 
 const fragmentLoader = readerSource.slice(readerSource.indexOf('async function loadCommentaryAsset'), readerSource.indexOf('async function overrides'));
 assert.match(fragmentLoader, /commentaryAsset\(format\)/);
-assert.doesNotMatch(fragmentLoader, /COMMENTARY_V3_BASE/);
 assert.match(readerSource, /manifest\.json[\s\S]+method: 'HEAD'/);
+assert.doesNotMatch(readerSource, /COMMENTARY_V3|commentary-links-v3|tipitaka-commentary-links\/v3/);
 console.log('Tipiṭaka commentary loading regression checks passed.');
