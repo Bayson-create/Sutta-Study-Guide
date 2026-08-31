@@ -1343,6 +1343,12 @@ mark.rh-has-note { border-bottom: 2px solid var(--accent); }
   border: 1px solid var(--border); border-radius: 6px; background: var(--card-bg); color: var(--text); resize: vertical;
 }
 .rh-popup-note { color: var(--text-light); font-size: 0.9em; line-height: 1.55; white-space: pre-wrap; }
+/* iOS auto-zooms the whole page when a focused field's text is under 16px,
+   and there is no way back out of that zoom without a pinch. */
+@media (hover: none) {
+  .rh-note-input { font-size: 16px; }
+  .rh-popup { max-width: min(340px, 94vw); }
+}
 
 /* Papancasudani reader */
 .papanca-reader { max-width: 820px; margin: 0 auto; }
@@ -8317,6 +8323,9 @@ const ReaderHighlights = (() => {
   const COLORS = ['yellow', 'green', 'blue', 'pink', 'purple'];
   const cache = {};          // doc_key -> [highlight, ...]
   let popup = null, popupState = null, popupOpenedAt = 0;
+  // The rect the popup was anchored to, kept so the note editor (and the
+  // on-screen keyboard resizing the visual viewport) can re-place it.
+  let popupRect = null, noteEditing = false;
   // Roughly the height the iOS/Android selection callout occupies above a
   // selection, used to place ourselves clear of it.
   const OS_CALLOUT_CLEARANCE = 56;
@@ -8493,33 +8502,52 @@ const ReaderHighlights = (() => {
   // an inner pane with body overflow hidden, where a popup placed below the
   // fold was permanently off-screen and unreachable.
   function placePopup(rect) {
+    if (rect) popupRect = rect;
+    rect = popupRect;
     const el = ensurePopup();
+    if (!rect) return;
     el.hidden = false;
     const width = el.offsetWidth || 220, height = el.offsetHeight || 120;
-    const viewW = document.documentElement.clientWidth, viewH = document.documentElement.clientHeight;
-    const left = Math.min(Math.max(8, rect.left + rect.width / 2 - width / 2), Math.max(8, viewW - width - 8));
+    // The visual viewport, not the layout one: when the on-screen keyboard is
+    // up they differ by the keyboard's height, and a popup clamped to the
+    // layout viewport lands underneath it.
+    const vv = window.visualViewport;
+    const viewW = vv ? vv.width : document.documentElement.clientWidth;
+    const viewH = vv ? vv.height : document.documentElement.clientHeight;
+    const originX = vv ? vv.offsetLeft : 0, originY = vv ? vv.offsetTop : 0;
+    const left = Math.min(Math.max(originX + 8, rect.left + rect.width / 2 - width / 2), Math.max(originX + 8, originX + viewW - width - 8));
     let top;
     if (touchPrimary()) {
-      // The OS's own copy/share callout owns the band just above the selection.
-      // Sit below it instead so both are usable; if there is no room below,
-      // go above but clear the callout's height rather than landing on it.
-      const below = rect.bottom + 12;
-      top = below + height <= viewH - 8 ? below : Math.max(8, rect.top - height - OS_CALLOUT_CLEARANCE);
+      // The OS's own copy/share callout owns the band just above the
+      // selection - unless the selection is too close to the top of the
+      // screen, in which case the OS flips its callout below and we have to
+      // clear that band instead of the one above.
+      const calloutBelow = rect.top - originY < OS_CALLOUT_CLEARANCE;
+      const below = rect.bottom + (calloutBelow ? OS_CALLOUT_CLEARANCE : 12);
+      top = below + height <= originY + viewH - 8 ? below : Math.max(originY + 8, rect.top - height - OS_CALLOUT_CLEARANCE);
     } else {
       // Pointer devices have no OS callout, so prefer above the selection the
       // way native text menus do - it keeps the selected words visible.
       const above = rect.top - height - 8, below = rect.bottom + 8;
-      top = above >= 8 ? above : Math.min(below, Math.max(8, viewH - height - 8));
+      top = above >= originY + 8 ? above : Math.min(below, Math.max(originY + 8, originY + viewH - height - 8));
     }
     el.style.left = `${left}px`;
     // Final clamp for both branches: whatever the selection rect claims - it
     // can sit outside the viewport entirely - the popup has to be reachable.
-    el.style.top = `${Math.min(Math.max(8, top), Math.max(8, viewH - height - 8))}px`;
+    el.style.top = `${Math.min(Math.max(originY + 8, top), Math.max(originY + 8, originY + viewH - height - 8))}px`;
     popupOpenedAt = Date.now();
+  }
+  // An outside tap may dismiss the note editor, but not if it would throw away
+  // text the reader has actually typed - those close via 保存/取消 only.
+  function noteDirty() {
+    const field = noteEditing && popup && popup.querySelector('.rh-note-input');
+    return !!field && field.value.trim() !== (popupState?.existing?.note || '').trim();
   }
   function closePopup() {
     if (popup) popup.hidden = true;
     popupState = null;
+    popupRect = null;
+    noteEditing = false;
   }
   function openFor(state, rect) {
     popupState = state;
@@ -8558,7 +8586,15 @@ const ReaderHighlights = (() => {
         <button type="button" class="rh-action primary" data-rh-act="note-save">保存</button>
         <button type="button" class="rh-action" data-rh-act="note-cancel">取消</button>
       </div>`;
-    popup.querySelector('.rh-note-input').focus();
+    // The swap changes the popup's height, and on a phone focusing the
+    // textarea raises the keyboard: both invalidate the position computed for
+    // the colour row. Re-place (which also restarts the grace window - the
+    // keyboard's own scroll used to trip the scroll-close and make the editor
+    // vanish the instant it opened).
+    noteEditing = true;
+    placePopup(null);
+    popup.querySelector('.rh-note-input').focus({ preventScroll: true });
+    if (window.visualViewport) requestAnimationFrame(() => placePopup(null));
   }
 
   // --- persistence -------------------------------------------------------
@@ -8666,8 +8702,15 @@ const ReaderHighlights = (() => {
   // Touch: no right-click, so a finished selection (or a tap on an existing
   // highlight) opens the same popup - "划线后点击".
   document.addEventListener('touchend', event => {
-    if (!event.target.closest?.('[data-hl-unit]')) return;
-    setTimeout(() => tryOpen(event, 'selection'), 10);
+    const inPopup = popup && event.composedPath().includes(popup);
+    if (inPopup || noteDirty()) return;
+    if (!event.target.closest?.('[data-hl-unit]')) { if (isOpen()) closePopup(); return; }
+    // A tap on the text is either a fresh selection or a dismissal. Which one
+    // is only knowable after the browser has updated the selection, hence the
+    // defer; if nothing opens, the tap was a dismissal. Relying on the
+    // synthesised click for this did not work - the browser suppresses it when
+    // the tap's job was collapsing a selection.
+    setTimeout(() => { if (!tryOpen(event, 'selection') && isOpen()) closePopup(); }, 10);
   }, { passive: true });
   document.addEventListener('click', event => {
     // composedPath() is fixed at dispatch time, unlike closest() which walks
@@ -8680,7 +8723,7 @@ const ReaderHighlights = (() => {
     // deferred tryOpen has already opened the popup. That click's path is the
     // text line, not the popup, so it used to read as an outside click and
     // close the popup its own gesture had just opened.
-    if (popup && !popup.hidden && !insidePopup && Date.now() - popupOpenedAt < 500) return;
+    if (popup && !popup.hidden && !insidePopup && (noteDirty() || Date.now() - popupOpenedAt < 500)) return;
     if (popup && !popup.hidden && !insidePopup) { closePopup(); return; }
     if (insidePopup) return;
     const mark = event.target.closest?.('mark.rh-mark');
@@ -8694,8 +8737,13 @@ const ReaderHighlights = (() => {
   // (and the address bar still settling) when the popup opens, and those
   // scrolls would close it immediately.
   document.addEventListener('scroll', () => {
+    // Never while the note editor is open: on a phone the keyboard scrolls the
+    // page, and losing a half-typed note to that is unrecoverable.
+    if (noteEditing) return;
     if (isOpen() && Date.now() - popupOpenedAt > 500) closePopup();
   }, { capture: true, passive: true });
+  // Keyboard show/hide resizes the visual viewport; keep the editor above it.
+  window.visualViewport?.addEventListener('resize', () => { if (noteEditing) placePopup(null); });
 
   return { load, apply, repaint, registerRepaint, close: closePopup, isOpen, COLORS };
 })();
