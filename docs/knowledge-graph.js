@@ -8,14 +8,18 @@
   const BASE = `${API_ROOT}/api/knowledge-graph/v1`;
   const TFIDF_BASE = `${(window.TIPITAKA_DATA_BASE || 'https://suttastudyguidestor.blob.core.windows.net/tipitaka-public/tipitaka/v1').replace(/\/$/, '')}/concept-tfidf-v1`;
   const RELATION_TYPES = [
-    ['supports', '支持'], ['contradicts', '张力／矛盾'], ['qualifies', '限定'],
-    ['depends_on', '依赖'], ['entails', '蕴含'], ['equivalent_to', '等同'], ['related_to', '相关'],
+    ['definition_alias', '定义/异名'], ['classification_contains', '分类/包含'],
+    ['condition', '条件'], ['arising', '引生'], ['cessation', '止息'],
+    ['supports', '支持'], ['obstacle', '障碍'], ['dependence', '依止'],
+    ['object', '所缘'], ['co_arising', '共起'], ['correspondence', '相应'],
+    ['contrast', '对举'], ['practice_direction', '修习导向'], ['attainment', '证得'],
+    ['exclusion', '排除'],
     ['cross_document_salience', '跨文档显著'], ['local_context_cooccurrence', '局部语境共现'],
   ];
   const CONCEPT_TYPES = [['concept', '法义'], ['person', '人物'], ['text', '文本'], ['school', '修习体系'], ['place', '地点'], ['event', '事件'], ['term', '术语'], ['other', '其他']];
   const state = {
     graph: { nodes: [], edges: [] }, filters: { q: '', conceptType: '', relationType: '', verification: '', deleted: false },
-    selectedNodeId: null, selectedEdgeId: null, positions: {}, zoom: 1, pan: { x: 40, y: 40 }, drag: null, requestId: 0,
+    selectedNodeId: null, selectedEdgeId: null, positions: {}, familyFilter: null, requestId: 0,
     comments: new Map(), history: new Map(), relationTypes: RELATION_TYPES.slice(), loaded: false,
     sidebarOpen: false, fullscreen: false, fullscreenEventsBound: false, mode: 'formal', statistical: { manifest: null, concepts: null, selected: null },
   };
@@ -104,13 +108,9 @@
     const ids = new Set(visibleNodes().map(node => String(node.id)));
     return state.graph.edges.filter(edge => ids.has(String(edge.source_id)) && ids.has(String(edge.target_id)) && (state.filters.deleted || !edge.deleted) && (!state.filters.relationType || edge.relation_type === state.filters.relationType) && (!state.filters.verification || (state.filters.verification === 'verified' ? edge.evidence?.verified : !edge.evidence?.verified)));
   }
-  function positionFor(node, index = 0) {
-    if (!state.positions[node.id]) {
-      const cols = 4, col = index % cols, row = Math.floor(index / cols);
-      state.positions[node.id] = { x: 70 + col * 280, y: 70 + row * 180 };
-    }
-    return state.positions[node.id];
-  }
+  // Only positions a collaborator actually dragged are pinned; everything else
+  // is placed by the force layout instead of a fixed grid.
+  function positionFor(node) { return state.positions[node.id] || null; }
   function loadPositions() { try { state.positions = JSON.parse(localStorage.getItem('knowledge-graph-positions') || '{}') || {}; } catch { state.positions = {}; } }
   function savePositions() { try { localStorage.setItem('knowledge-graph-positions', JSON.stringify(state.positions)); } catch {} }
   function setStatus(message, kind = '') { const el = document.getElementById('kg-status'); if (el) { el.textContent = message || ''; el.className = `kg-status ${kind}`; } }
@@ -149,16 +149,16 @@
   }
   function renderShell() {
     const statistical = state.mode === 'statistical';
-    app.innerHTML = `<div class="kg-shell"><div class="kg-header"><div><h2>🕸 V4 经证知识图谱</h2><p>${statistical ? 'TF-IDF 统计发现层：关系只表示跨文档显著性或局部共现，不表示教义因果。' : '概念是节点，带有逐行 V4 证据的论断才是关系；讨论附着在论断上，不改变图结构。'}</p><div class="kg-mode-switch"><button class="kg-button small ${statistical ? '' : 'primary'}" data-kg-mode="formal">正式共创图</button><button class="kg-button small ${statistical ? 'primary' : ''}" data-kg-mode="statistical">TF-IDF 统计发现</button></div></div><div class="kg-header-actions"><button class="kg-button" id="kg-sidebar-toggle" aria-expanded="${state.sidebarOpen ? 'true' : 'false'}">${state.sidebarOpen ? '隐藏说明' : '显示说明'}</button><button class="kg-button" id="kg-fullscreen" aria-pressed="${state.fullscreen ? 'true' : 'false'}">${state.fullscreen ? '⤡ 退出全屏' : '⤢ 全屏编辑'}</button><button class="kg-button" id="kg-refresh">刷新</button><button class="kg-button" id="kg-new-edge" ${statistical ? 'hidden' : ''}>＋ 新建关系</button><button class="kg-button primary" id="kg-new-node" ${statistical ? 'hidden' : ''}>＋ 新建概念</button></div></div>${renderFilters()}<div class="kg-main ${state.sidebarOpen ? '' : 'sidebar-hidden'}"><section class="kg-canvas-shell"><div class="kg-canvas-viewport" id="kg-viewport"><div class="kg-world" id="kg-world"><svg class="kg-edge-layer" id="kg-edge-layer" viewBox="0 0 5000 4000" aria-label="概念关系"></svg><div class="kg-node-layer" id="kg-node-layer"></div></div></div><div class="kg-canvas-help">拖动画布 · 拖动节点 · 滚轮缩放 · 点击节点或关系查看详情</div><div class="kg-canvas-zoom"><button id="kg-zoom-out" aria-label="缩小">−</button><button id="kg-zoom-reset" aria-label="重置缩放">1×</button><button id="kg-zoom-in" aria-label="放大">＋</button></div></section><aside class="kg-sidebar" id="kg-sidebar"><div class="kg-loading">正在读取公开图谱…</div></aside></div></div>`;
-    bindFilters(); bindCanvas();
+    app.innerHTML = `<div class="kg-shell"><div class="kg-header"><div><h2>🕸 V4 经证知识图谱</h2><p>${statistical ? 'TF-IDF 统计发现层：关系只表示跨文档显著性或局部共现，不表示教义因果。' : '概念是节点，带有逐行 V4 证据的论断才是关系；讨论附着在论断上，不改变图结构。'}</p><div class="kg-mode-switch"><button class="kg-button small ${statistical ? '' : 'primary'}" data-kg-mode="formal">正式共创图</button><button class="kg-button small ${statistical ? 'primary' : ''}" data-kg-mode="statistical">TF-IDF 统计发现</button></div></div><div class="kg-header-actions"><button class="kg-button" id="kg-sidebar-toggle" aria-expanded="${state.sidebarOpen ? 'true' : 'false'}">${state.sidebarOpen ? '隐藏说明' : '显示说明'}</button><button class="kg-button" id="kg-fullscreen" aria-pressed="${state.fullscreen ? 'true' : 'false'}">${state.fullscreen ? '⤡ 退出全屏' : '⤢ 全屏编辑'}</button><button class="kg-button" id="kg-refresh">刷新</button><button class="kg-button" id="kg-new-edge" ${statistical ? 'hidden' : ''}>＋ 新建关系</button><button class="kg-button primary" id="kg-new-node" ${statistical ? 'hidden' : ''}>＋ 新建概念</button></div></div>${renderFilters()}<div class="kg-main ${state.sidebarOpen ? '' : 'sidebar-hidden'}"><section class="kg-canvas-shell"><div class="kg-canvas-viewport" id="kg-viewport"></div><details class="kg-legend" id="kg-legend" open><summary>关系类型</summary><div class="kg-legend-body" id="kg-legend-body"></div></details><div class="kg-canvas-help">拖动画布 · 拖动节点 · 滚轮缩放 · 悬停连线看关系类型</div><div class="kg-canvas-zoom"><button id="kg-zoom-out" aria-label="缩小">−</button><button id="kg-zoom-reset" aria-label="适配全部节点">适配</button><button id="kg-zoom-in" aria-label="放大">＋</button></div></section><aside class="kg-sidebar" id="kg-sidebar"><div class="kg-loading">正在读取公开图谱…</div></aside></div></div>`;
+    bindFilters(); ensureGraph();
     document.getElementById('kg-sidebar-toggle').onclick = () => setSidebarOpen(!state.sidebarOpen);
     document.getElementById('kg-fullscreen').onclick = toggleFullscreen;
     document.getElementById('kg-new-node').onclick = () => openConceptEditor();
     document.getElementById('kg-new-edge').onclick = () => openAssertionEditor();
     document.getElementById('kg-refresh').onclick = () => loadGraph();
-    document.getElementById('kg-zoom-in').onclick = () => setZoom(state.zoom + .12);
-    document.getElementById('kg-zoom-out').onclick = () => setZoom(state.zoom - .12);
-    document.getElementById('kg-zoom-reset').onclick = () => { state.zoom = 1; state.pan = { x: 40, y: 40 }; updateWorldTransform(); };
+    document.getElementById('kg-zoom-in').onclick = () => graph?.zoomIn();
+    document.getElementById('kg-zoom-out').onclick = () => graph?.zoomOut();
+    document.getElementById('kg-zoom-reset').onclick = () => graph?.fit();
     document.querySelectorAll('[data-kg-mode]').forEach(button => button.onclick = async () => { state.mode = button.dataset.kgMode; state.filters = { q: '', conceptType: '', relationType: '', verification: '', deleted: false }; state.positions = {}; renderShell(); await loadGraph(); });
     document.getElementById('kg-search-stat')?.addEventListener('click', () => loadStatisticalGraph(document.getElementById('kg-filter-q')?.value));
     bindFullscreenEvents(); syncFullscreenUi();
@@ -203,31 +203,99 @@
     listen('kg-filter-q', 'q', 'input'); listen('kg-filter-concept', 'conceptType'); listen('kg-filter-relation', 'relationType'); listen('kg-filter-verification', 'verification');
     document.getElementById('kg-filter-deleted')?.addEventListener('change', e => { state.filters.deleted = e.target.checked; renderGraph(); });
   }
-  function updateWorldTransform() { const world = document.getElementById('kg-world'); if (world) world.style.transform = `translate(${state.pan.x}px,${state.pan.y}px) scale(${state.zoom})`; const reset = document.getElementById('kg-zoom-reset'); if (reset) reset.textContent = `${Math.round(state.zoom * 100)}%`; }
-  function setZoom(value, center) {
-    const viewport = document.getElementById('kg-viewport'); if (!viewport) return; const old = state.zoom, next = Math.max(.35, Math.min(2.4, value));
-    if (center) { const rect = viewport.getBoundingClientRect(), cx = center.clientX - rect.left, cy = center.clientY - rect.top; state.pan.x = cx - (cx - state.pan.x) * next / old; state.pan.y = cy - (cy - state.pan.y) * next / old; }
-    state.zoom = next; updateWorldTransform();
+  let graph = null, lastSignature = '';
+
+  function ensureGraph() {
+    const host = document.getElementById('kg-viewport');
+    if (!host || !window.GraphCanvas) return null;
+    graph?.destroy();
+    lastSignature = '';
+    graph = window.GraphCanvas.create(host, {
+      directed: true, arrows: true, draggableNodes: true,
+      emptyText: '没有符合筛选条件的概念。',
+      onSelect: (node, edge) => {
+        if (edge) { state.selectedEdgeId = edge.id; state.selectedNodeId = null; }
+        else if (node) { state.selectedNodeId = node.id; state.selectedEdgeId = null; }
+        else return;
+        setSidebarOpen(true); renderGraph();
+      },
+      onNodeMoved: (node, point) => {
+        state.positions[node.id] = { x: Math.round(point.x), y: Math.round(point.y) };
+        savePositions();
+      },
+    });
+    renderLegend();
+    return graph;
   }
-  function bindCanvas() {
-    const viewport = document.getElementById('kg-viewport'); if (!viewport) return;
-    viewport.addEventListener('wheel', event => { event.preventDefault(); setZoom(state.zoom * (event.deltaY < 0 ? 1.08 : .92), event); }, { passive: false });
-    viewport.addEventListener('pointerdown', event => { if (event.target.closest('.kg-node') || event.target.closest('path')) return; state.drag = { kind: 'pan', x: event.clientX, y: event.clientY, pan: { ...state.pan } }; viewport.classList.add('is-panning'); viewport.setPointerCapture(event.pointerId); });
-    viewport.addEventListener('pointermove', event => { if (!state.drag) return; if (state.drag.kind === 'pan') { state.pan.x = state.drag.pan.x + event.clientX - state.drag.x; state.pan.y = state.drag.pan.y + event.clientY - state.drag.y; updateWorldTransform(); } else if (state.drag.kind === 'node') { const point = viewportPoint(event); const position = state.positions[state.drag.id]; position.x = point.x - state.drag.offsetX; position.y = point.y - state.drag.offsetY; const nodeEl = [...document.querySelectorAll('[data-kg-node]')].find(element => element.dataset.kgNode === String(state.drag.id)); if (nodeEl) { nodeEl.style.left = `${position.x}px`; nodeEl.style.top = `${position.y}px`; } renderEdges(); } });
-    viewport.addEventListener('pointerup', event => { if (state.drag?.kind === 'node') savePositions(); state.drag = null; viewport.classList.remove('is-panning'); try { viewport.releasePointerCapture(event.pointerId); } catch {} });
-    viewport.addEventListener('pointercancel', () => { state.drag = null; viewport.classList.remove('is-panning'); });
+
+  /* Fifteen relation types cannot all stay distinguishable as fifteen hues, so
+     hue carries the semantic family and the dash pattern separates members
+     inside it.  The text label is drawn only on hover or selection - printing
+     every one of them is what made the old graph unreadable. */
+  function renderLegend() {
+    const body = document.getElementById('kg-legend-body');
+    if (!body || !window.GraphCanvas) return;
+    const families = window.GraphCanvas.FAMILIES;
+    const present = new Set(visibleEdges().map(edge => window.GraphCanvas.relationMeta(edge.relation_type).family));
+    body.innerHTML = Object.entries(families)
+      .filter(([key]) => !present.size || present.has(key))
+      .map(([key, meta]) => `<button type="button" class="kg-legend-item ${state.familyFilter && state.familyFilter !== key ? 'is-muted' : ''}" data-kg-family="${key}"><i class="kg-legend-swatch" style="border-top-color:${meta.color}"></i>${esc(meta.label)}</button>`).join('')
+      + '<div class="kg-legend-foot">箭头表方向 · 粗细表强度<br>点击族名可只看该族</div>';
+    body.querySelectorAll('[data-kg-family]').forEach(button => button.onclick = () => {
+      state.familyFilter = state.familyFilter === button.dataset.kgFamily ? null : button.dataset.kgFamily;
+      graph?.setFamilyFilter(state.familyFilter);
+      renderLegend();
+    });
   }
-  function viewportPoint(event) { const rect = document.getElementById('kg-viewport').getBoundingClientRect(); return { x: (event.clientX - rect.left - state.pan.x) / state.zoom, y: (event.clientY - rect.top - state.pan.y) / state.zoom }; }
+
   function renderGraph() {
-    const nodes = visibleNodes(), edges = visibleEdges(), nodeLayer = document.getElementById('kg-node-layer'), edgeLayer = document.getElementById('kg-edge-layer'); if (!nodeLayer || !edgeLayer) return;
-    nodeLayer.innerHTML = nodes.length ? nodes.map((node, index) => { const p = positionFor(node, index); return `<article class="kg-node ${node.deleted ? 'is-deleted' : ''} ${String(state.selectedNodeId) === String(node.id) ? 'is-selected' : ''}" data-kg-node="${esc(node.id)}" style="left:${p.x}px;top:${p.y}px"><div>${node.deleted ? '<span class="kg-node-badge deleted">软删除</span>' : ''}<span class="kg-node-badge">${esc(labelForConcept(node.type))}</span></div><div class="kg-node-title">${esc(node.title)}</div><div class="kg-node-meta">${esc(node.pali || node.slug || node.description || '点击查看概念与关系')}</div></article>`; }).join('') : '<div class="kg-empty">没有符合筛选条件的概念。</div>';
-    nodeLayer.querySelectorAll('[data-kg-node]').forEach(nodeEl => { nodeEl.addEventListener('pointerdown', event => { event.stopPropagation(); const id = nodeEl.dataset.kgNode, point = viewportPoint(event), p = state.positions[id] || { x: 0, y: 0 }; state.drag = { kind: 'node', id, offsetX: point.x - p.x, offsetY: point.y - p.y }; nodeEl.setPointerCapture?.(event.pointerId); }); nodeEl.addEventListener('click', event => { if (state.drag) return; state.selectedNodeId = nodeEl.dataset.kgNode; state.selectedEdgeId = null; setSidebarOpen(true); renderGraph(); renderSidebar(); }); });
-    renderEdges(); updateWorldTransform(); renderSidebar();
+    const nodes = visibleNodes(), edges = visibleEdges();
+    const canvas = graph || ensureGraph();
+    renderLegend();
+    if (!canvas) { renderSidebar(); return; }
+    const seen = new Map(), pairs = new Map();
+    const payloadNodes = nodes.map(node => {
+      const pinned = positionFor(node);
+      seen.set(String(node.id), node);
+      return {
+        id: node.id, data: node,
+        label: node.title || node.pali || node.slug || String(node.id),
+        type: node.type,
+        weight: 1 + edges.filter(edge => String(edge.source_id) === String(node.id) || String(edge.target_id) === String(node.id)).length,
+        x: pinned?.x, y: pinned?.y, fixed: Boolean(pinned),
+      };
+    });
+    const totals = new Map();
+    for (const edge of edges) {
+      const key = [String(edge.source_id), String(edge.target_id)].sort().join(':');
+      totals.set(key, (totals.get(key) || 0) + 1);
+    }
+    const payloadEdges = edges.filter(edge => seen.has(String(edge.source_id)) && seen.has(String(edge.target_id)))
+      .map(edge => {
+        // Key on the unordered pair so A→B and B→A stop drawing on top of
+        // each other; the count fans parallel assertions apart.
+        const key = [String(edge.source_id), String(edge.target_id)].sort().join(':');
+        const offset = pairs.get(key) || 0;
+        pairs.set(key, offset + 1);
+        return {
+          id: edge.id, data: edge, source: edge.source_id, target: edge.target_id,
+          type: edge.relation_type, weight: 0.6,
+          direction: 'directed', parallel: offset, parallelCount: totals.get(key) || 1,
+        };
+      });
+    // Only re-run the layout when the graph itself changed; a sidebar click
+    // must not shuffle everyone's positions.
+    const signature = `${payloadNodes.map(n => n.id).join(',')}|${payloadEdges.map(e => e.id).join(',')}`;
+    canvas.setData(payloadNodes, payloadEdges, {
+      warm: signature !== lastSignature,
+      fit: signature !== lastSignature,
+      label: `共创概念图，${payloadNodes.length} 个概念，${payloadEdges.length} 条论断`,
+    });
+    lastSignature = signature;
+    canvas.select(state.selectedNodeId);
+    renderSidebar();
   }
-  function renderEdges() {
-    const edgeLayer = document.getElementById('kg-edge-layer'); if (!edgeLayer) return; const visible = visibleEdges(), pairCount = new Map(); edgeLayer.innerHTML = '';
-    for (const edge of visible) { const source = nodeById(edge.source_id), target = nodeById(edge.target_id); if (!source || !target) continue; const a = positionFor(source), b = positionFor(target); const key = `${source.id}:${target.id}`; const offset = pairCount.get(key) || 0; pairCount.set(key, offset + 1); const sx = a.x + 105, sy = a.y + 48, tx = b.x + 105, ty = b.y + 48, dx = tx - sx, dy = ty - sy, length = Math.max(1, Math.hypot(dx, dy)), bend = ((offset % 2 ? -1 : 1) * (18 + Math.floor(offset / 2) * 18)); const cx = (sx + tx) / 2 - (dy / length) * bend, cy = (sy + ty) / 2 + (dx / length) * bend; const path = document.createElementNS('http://www.w3.org/2000/svg', 'path'); path.setAttribute('d', `M ${sx} ${sy} Q ${cx} ${cy} ${tx} ${ty}`); path.dataset.kgEdge = edge.id; if (String(state.selectedEdgeId) === String(edge.id)) path.classList.add('is-selected'); path.addEventListener('click', event => { event.stopPropagation(); state.selectedEdgeId = edge.id; state.selectedNodeId = null; setSidebarOpen(true); renderGraph(); }); edgeLayer.appendChild(path); const label = document.createElementNS('http://www.w3.org/2000/svg', 'text'); label.setAttribute('x', cx); label.setAttribute('y', cy - 5); label.setAttribute('text-anchor', 'middle'); label.setAttribute('class', 'kg-edge-label'); label.textContent = relationLabel(edge.relation_type); edgeLayer.appendChild(label); }
-  }
+
   const labelForConcept = type => Object.fromEntries(CONCEPT_TYPES)[type] || type || '概念';
 
   const collection = payload => Array.isArray(payload) ? payload : payload?.items || payload?.nodes || payload?.relations || [];
@@ -277,6 +345,5 @@
 
   async function renderRoute() { loadPositions(); state.sidebarOpen = false; renderShell(); await loadGraph(); }
   window.renderKnowledgeGraphRoute = renderRoute;
-  window.KnowledgeGraphV4 = { reload: loadGraph, openConceptEditor, openAssertionEditor, normalizeEvidence };
-  if (location.hash.split('?')[0] === '#/knowledge-graph' && typeof route === 'function') renderRoute();
+  window.KnowledgeGraphV4 = { reload: loadGraph, openConceptEditor, openAssertionEditor, normalizeEvidence, canvas: () => graph };
 })();
