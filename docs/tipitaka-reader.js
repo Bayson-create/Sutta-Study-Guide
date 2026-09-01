@@ -1484,6 +1484,9 @@
       if (event?.target?.closest?.('button,input,select,textarea,label,a,[data-t-action],[data-t-toggle]')) return;
       positionToken += 1;
       reader.anchorRestoreCancelled = true;
+      // A real gesture ends any hunt for a requested row: wherever they have
+      // scrolled to is now the right place to be.
+      reader.userTookOver = true;
       reader.structureRestorePending = false;
       reader.suppressMeasureCompensation = false;
       userScrolling = true;
@@ -1914,12 +1917,14 @@
   function locateReaderRow(reader, rowId, renderId, options = {}) {
     if (!reader?.virtual || rowId == null) return;
     reader.locate = { rowId: Number(rowId), done: false, attempts: 0 };
+    reader.userTookOver = false;
     // Every re-aim goes through this one closure, so each of them reports back
     // into reader.locate. An earlier version re-aimed with a bare scrollToRow()
     // and no callback, which left `done` false forever and swallowed the notice.
     const relocate = () => {
       const locate = reader.locate;
       if (!locate || locate.done || renderId !== state.readerRequest) return;
+      if (reader.userTookOver) { locate.done = true; return; }
       // Never start a second aim while one is converging: each scrollToIndex
       // bumps positionToken and kills the previous loop mid-correction, so
       // overlapping re-aims leave the target stranded rather than centring it.
@@ -2078,7 +2083,8 @@
         state.reader.virtual?.restoreAnchor(preserveAnchor);
         scheduleReaderAnchorRestore(state.reader, preserveAnchor);
       }
-      else locateReaderRow(state.reader, work.rows[currentIndex]?.id, renderId);
+      else if (hit || requestedRowId > 0) locateReaderRow(state.reader, work.rows[currentIndex]?.id, renderId);
+      else state.reader.virtual?.scrollToRow?.(work.rows[currentIndex]?.id);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
