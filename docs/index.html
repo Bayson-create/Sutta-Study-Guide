@@ -8347,15 +8347,21 @@ const ReaderHighlights = (() => {
     // Resolve the session before deciding - and before caching. The empty list
     // used to be cached ahead of the auth check, so a reader opened before the
     // user was known stayed permanently unhighlighted.
-    if (typeof communityFetchCurrentUser === 'function') await communityFetchCurrentUser();
-    if (!authed()) return [];
-    const list = [];
-    cache[docKey] = list;
+    // Both of these hit an API container that scales to zero (27s cold start
+    // measured), and neither had any timeout - which let a cold backend hold a
+    // reader open indefinitely. Highlights are additive: giving up is fine.
+    const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 8000);
     try {
-      const res = await fetch(`${API_BASE}/api/reader/highlights?doc=${encodeURIComponent(docKey)}`, { headers: headers() });
+      if (typeof communityFetchCurrentUser === 'function') await communityFetchCurrentUser();
+      if (!authed()) return [];
+      const list = [];
+      cache[docKey] = list;
+      const res = await fetch(`${API_BASE}/api/reader/highlights?doc=${encodeURIComponent(docKey)}`, { headers: headers(), signal: controller.signal });
       if (res.ok) list.push(...await res.json());
+      return list;
     } catch (e) { /* highlights are additive; a load failure just leaves text unpainted */ }
-    return list;
+    finally { clearTimeout(timer); }
+    return cache[docKey] || [];
   }
   const forUnit = (docKey, unitKey, language) =>
     (cache[docKey] || []).filter(h => h.unit_key === unitKey && h.language === language);
@@ -15168,7 +15174,7 @@ async function gotamaSend(overrideContent) {
 // Start
 init();
 </script>
-  <script src="tipitaka-reader.js?v=20260830.7"></script>
+  <script src="tipitaka-reader.js?v=20260901.1"></script>
 <script src="graph-canvas.js?v=20260831.10"></script>
 <script src="knowledge-graph.js?v=20260831.4"></script>
 <script src="knowledge-graph-v2.js?v=concept-graph-v2-overview-20260831.2"></script>

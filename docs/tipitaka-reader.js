@@ -39,7 +39,7 @@
   const state = {
     works: null, jumps: null, dictionaries: null, searchV4Manifest: null, dictManifest: null,
     workCache: new Map(), overrides: new Map(), commentaryRoots: new Map(), commentarySources: new Map(), commentaryFragments: new Map(), rootFragments: new Map(), settings: null, autoTimer: null,
-    dataWorker: null, searchWorker: null, workerId: 0, reader: null, lastSearch: null, readerRequest: 0, commentaryV5Ready: null, commentaryReloadPaths: new Set(),
+    dataWorker: null, searchWorker: null, workerId: 0, reader: null, searchCache: new Map(), searchScrollHandler: null, readerRequest: 0, commentaryV5Ready: null, commentaryReloadPaths: new Set(),
   };
   const CACHE_META_DB = 'tipitaka-reader-cache-v1', CACHE_META_STORE = 'assets', CACHE_BUDGET = 260 * 1024 * 1024;
 
@@ -246,11 +246,25 @@
     }
     return state.rootFragments.get(key);
   }
+  // The first paint should wait for the body text and nothing else. The
+  // decorative layers get a short grace window: when the API is warm (~160ms
+  // measured) they still make it into the first render, and when the container
+  // has scaled to zero (~27s cold start measured) the reader opens immediately
+  // and repaints once they land.
+  const FIRST_PAINT_GRACE = 600;
+  const raced = (promise, ms = FIRST_PAINT_GRACE) =>
+    Promise.race([promise, new Promise(resolve => setTimeout(() => resolve(undefined), ms))]);
+
   async function overrides(workId) {
+    // Store the promise, not the resolved value: two opens in flight at once
+    // used to issue the request twice, and the deferred repaint needs to be
+    // able to await the same one the first paint raced against.
     if (!state.overrides.has(workId)) {
       const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 8000);
-      const data = await fetch(`${API}/works/${encodeURIComponent(workId)}/overrides`, { signal: controller.signal }).then(r => r.ok ? r.json() : { units: [] }).catch(() => ({ units: [] })).finally(() => clearTimeout(timer));
-      state.overrides.set(workId, new Map(data.units.map(unit => [`${unit.row_id}:${unit.language}`, unit])));
+      const pending = fetch(`${API}/works/${encodeURIComponent(workId)}/overrides`, { signal: controller.signal })
+        .then(r => r.ok ? r.json() : { units: [] }).catch(() => ({ units: [] })).finally(() => clearTimeout(timer))
+        .then(data => new Map(data.units.map(unit => [`${unit.row_id}:${unit.language}`, unit])));
+      state.overrides.set(workId, pending);
     }
     return state.overrides.get(workId);
   }
@@ -885,8 +899,8 @@
     return `<nav class="tipitaka-breadcrumb" aria-label="当前位置">${links}${sep}<span class="tipitaka-breadcrumb-current" aria-current="page">${esc(meta.title)}</span></nav>`;
   }
 
-  function readerHead(meta, work, hit, fragmentLinkStatus = '') {
-    return `<div class="tipitaka-reader-head">${breadcrumbHtml(meta)}<h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"，已定位到目标段。` : ''}${fragmentLinkStatus ? ` ${fragmentLinkStatus}` : ''}</div></div><div class="tipitaka-sticky-sentinel"></div>`;
+  function readerHead(meta, work, hit, fragmentLinkStatus = '', located = true) {
+    return `<div class="tipitaka-reader-head">${breadcrumbHtml(meta)}<h2>${esc(meta.title)}</h2><div class="tipitaka-note">共 ${work.rows.length.toLocaleString()} 段；只渲染可视窗口，已访问作品会进入本地缓存。${hit ? ` 搜索命中："${esc(hit.query)}"${located ? '，已定位到目标段' : ''}。` : ''}${fragmentLinkStatus ? ` ${fragmentLinkStatus}` : ''}<span class="tipitaka-locate-note tipitaka-annotation-error"></span></div></div><div class="tipitaka-sticky-sentinel"></div>`;
   }
 
   // Sibling works = every catalog entry whose path array is identical to this
@@ -1217,7 +1231,7 @@
     // long commentary rows eventually pushed every rendered row off-screen.
     const items = buildReaderItems(reader), count = items.length, tree = new Float64Array(count + 1), heights = new Float64Array(count), indexByKey = new Map(items.map((item, index) => [item.key, index])), indexById = new Map(items.map((item, index) => item.kind === 'root' ? [Number(item.row.id), index] : null).filter(Boolean));
     const heightCache = reader.virtualHeightCache || (reader.virtualHeightCache = new Map());
-    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, scrollIdleTimer = 0, userScrolling = false, pointerScrolling = false, touchScrolling = false, programmaticUntil = 0, destroyed = false;
+    let start = -1, end = -1, raf = 0, measureRaf = 0, positionRaf = 0, positionToken = 0, pendingFinish = null, scrollIdleTimer = 0, userScrolling = false, pointerScrolling = false, touchScrolling = false, programmaticUntil = 0, destroyed = false;
     // The reader head + sticky toolbar now live inside the pane, above the
     // virtual spacer, so pane.scrollTop=0 no longer means "row 0 visible" -
     // it means "head visible, list not scrolled at all". Every place that
@@ -1275,7 +1289,7 @@
     // therefore converge on the truth instead of drifting further from it.
     let reestimates = 0;
     const reestimate = kind => {
-      if (reestimates > 6) return false;
+      if (reestimates > 15) return false;
       const next = estimateFor(kind);
       applied.set(kind, next);
       let changed = false;
@@ -1379,27 +1393,63 @@
       scheduleMeasure();
     };
     const targetForKey = key => [...windowEl.querySelectorAll('[data-t-item-key]')].find(element => element.dataset.tItemKey === key) || null;
+    // Where the target's own top must sit inside the list's coordinate space
+    // for the requested alignment. Used both for the opening jump and for every
+    // re-aim, so the two can never disagree.
+    const alignOffsetFor = (index, align, targetOffset) => align === 'anchor'
+      ? Number(targetOffset || 0)
+      : align === 'top' ? 12 + stickyOffset() : Math.max(0, (pane.clientHeight - (heights[index] || estimateFor(items[index]?.kind))) / 2);
+
     const scrollToIndex = (requestedIndex, align = 'center', targetOffset = 0, options = {}) => {
+      // A superseding call cancels the pending frame, so the previous chain
+      // would never reach a terminal branch. Report its abandonment first,
+      // otherwise whoever was waiting on it waits forever.
+      if (pendingFinish) pendingFinish(false);   // finish() clears the handle itself
       const index = Math.max(0, Math.min(count - 1, Number(requestedIndex) || 0)), itemKey = items[index]?.key, token = ++positionToken;
       if (positionRaf) cancelAnimationFrame(positionRaf);
-      const maxAttempts = Math.max(1, Number(options.maxAttempts) || 12);
-      let attempts = 0;
+      // Two separate budgets. They used to share one: waiting for the target to
+      // be rendered could burn every attempt and leave nothing for the actual
+      // alignment, which is how a hit ended up stranded mid-document.
+      const maxAim = Math.max(1, Number(options.maxAimAttempts) || 14);
+      const maxAlign = Math.max(1, Number(options.maxAttempts) || 20);
+      let aimAttempts = 0, alignAttempts = 0;
       // While settle() is converging it owns scrollTop outright. measure()'s
       // own shift compensation used to run in the same frames, so two
       // mechanisms wrote scrollTop per attempt and fought each other into a
       // visible wobble. Measurement still happens; only its correction pauses.
       const settling = reader.suppressMeasureCompensation;
       reader.suppressMeasureCompensation = true;
-      const doneSettling = () => { reader.suppressMeasureCompensation = settling; };
+      const finish = ok => {
+        if (pendingFinish !== finish) return;          // already reported
+        pendingFinish = null;
+        clearTimeout(guard);
+        reader.suppressMeasureCompensation = settling;
+        options.onSettled?.(ok);
+      };
+      // The frame chain can be dropped by layout work that lands between
+      // scheduling a frame and running it. Whoever is waiting on this must
+      // still hear back, so the loop always has a terminal deadline.
+      const guard = setTimeout(() => finish(false), 3000);
+      pendingFinish = finish;
+      const aim = () => {
+        spacer.style.height = `${Math.max(1, totalHeight())}px`;
+        setProgrammaticScroll(toReal(offsetFor(index) - alignOffsetFor(index, align, targetOffset)));
+        draw(true);
+      };
       const settle = () => {
         positionRaf = 0;
-        if (destroyed || token !== positionToken) { doneSettling(); return; }
+        if (destroyed || token !== positionToken) { finish(false); return; }
         measure();
         draw(true);
         const element = targetForKey(itemKey);
         if (!element) {
-          if (attempts++ < maxAttempts) positionRaf = requestAnimationFrame(settle);
-          else doneSettling();
+          // Waiting another frame achieves nothing on its own: draw() derives
+          // its window from scrollTop, so while the landing point is wrong the
+          // target is never rendered and the loop just spins until the budget
+          // runs out. Re-aim with the offsets measure() has since corrected -
+          // that is what actually converges.
+          if (aimAttempts++ < maxAim) { aim(); positionRaf = requestAnimationFrame(settle); }
+          else finish(false);
           return;
         }
         // visibleTop is where content actually starts being readable - below
@@ -1410,25 +1460,21 @@
           : align === 'top' ? visibleTop + 12 : paneRect.top + pane.clientHeight / 2;
         const actual = align === 'top' ? rowRect.top : rowRect.top + rowRect.height / 2;
         const delta = actual - desired, visible = rowRect.bottom > visibleTop && rowRect.top < paneRect.bottom;
-        if ((!visible || Math.abs(delta) > 3) && attempts++ < maxAttempts) {
+        if ((!visible || Math.abs(delta) > 3) && alignAttempts++ < maxAlign) {
           setProgrammaticScroll(pane.scrollTop + delta);
           draw(true);
           positionRaf = requestAnimationFrame(settle);
           return;
         }
-        doneSettling();
+        finish(visible && Math.abs(delta) <= 24);
       };
-      spacer.style.height = `${Math.max(1, totalHeight())}px`;
       void spacer.offsetHeight;
-      setProgrammaticScroll(toReal(offsetFor(index) - (align === 'anchor'
-        ? Number(targetOffset || 0)
-        : align === 'top' ? 12 + stickyOffset() : Math.max(0, (pane.clientHeight - (heights[index] || EST_ROW_HEIGHT)) / 2))));
-      draw(true);
+      aim();
       const frame = requestAnimationFrame(() => { if (positionRaf !== frame) return; positionRaf = 0; settle(); });
       positionRaf = frame;
       setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
-    const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
+
     const beginUserScroll = event => {
       if (destroyed) return;
       // Controls live inside the reader pane.  Their pointer/touch events are
@@ -1599,7 +1645,14 @@
       refresh: () => draw(true),
       getAnchor,
       getAnchorForKey,
-      scrollToRow: rowId => scrollToIndex(indexById.get(Number(rowId)) ?? currentIndex),
+      // Every work row produces a 'root' item, so a miss here means the row is
+      // not in this work at all. Say so instead of silently landing on row 0.
+      scrollToRow: (rowId, options = {}) => {
+        const index = indexById.get(Number(rowId));
+        if (index == null) { options.onSettled?.(false); return false; }
+        scrollToIndex(index, 'center', 0, options);
+        return true;
+      },
       restoreAnchor: anchor => {
         if (!anchor) return;
         const element = anchor.itemKey && targetForKey(anchor.itemKey);
@@ -1616,7 +1669,7 @@
           // Stable item identity is authoritative after a structural change.
           // The old absolute scrollTop belongs to the pre-change layout and
           // can point at a completely different row after collapse.
-          scrollToIndex(index, 'anchor', Number(anchor.offset) || 12, { maxAttempts: 2 });
+          scrollToIndex(index, 'anchor', Number(anchor.offset) || 12, { maxAttempts: 2, maxAimAttempts: 3 });
           return;
         }
         if (Number.isFinite(Number(anchor.scrollTop))) {
@@ -1624,7 +1677,7 @@
           draw(true);
         }
       },
-      destroy: () => { destroyed = true; positionToken += 1; clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('pointerdown', beginPointerScroll); pane.removeEventListener('pointerup', endPointerScroll); pane.removeEventListener('pointercancel', endPointerScroll); pane.removeEventListener('touchstart', beginTouchScroll); pane.removeEventListener('touchmove', moveTouchScroll); pane.removeEventListener('touchend', endTouchScroll); pane.removeEventListener('touchcancel', endTouchScroll); pane.removeEventListener('scrollend', onScrollEnd); resize?.disconnect(); },
+      destroy: () => { destroyed = true; positionToken += 1; if (pendingFinish) pendingFinish(false); clearTimeout(scrollIdleTimer); if (raf) cancelAnimationFrame(raf); if (measureRaf) cancelAnimationFrame(measureRaf); if (positionRaf) cancelAnimationFrame(positionRaf); pane.removeEventListener('scroll', onScroll); pane.removeEventListener('wheel', beginUserScroll); pane.removeEventListener('pointerdown', beginPointerScroll); pane.removeEventListener('pointerup', endPointerScroll); pane.removeEventListener('pointercancel', endPointerScroll); pane.removeEventListener('touchstart', beginTouchScroll); pane.removeEventListener('touchmove', moveTouchScroll); pane.removeEventListener('touchend', endTouchScroll); pane.removeEventListener('touchcancel', endTouchScroll); pane.removeEventListener('scrollend', onScrollEnd); resize?.disconnect(); },
     };
   }
 
@@ -1833,6 +1886,92 @@
     await loadActiveAnnotation(reader, anchor);
   }
 
+  // A layer that arrives after the first paint must not shove the page around
+  // under the reader. Repaint through the virtual list's own anchor - unless a
+  // hit is still being located, in which case the new row heights are exactly
+  // what that attempt was missing, so re-aim instead.
+  function repaintReader(renderId, mutate, structural = false) {
+    if (renderId !== state.readerRequest || !state.reader) return false;
+    const reader = state.reader;
+    const locating = reader.locate && !reader.locate.done;
+    const anchor = locating ? null : reader.virtual?.getAnchor?.();
+    if (mutate(reader) === false) return false;
+    // A structural layer changes buildReaderItems()' output, so redrawing the
+    // window is not enough - the item list itself has to be rebuilt.
+    if (structural) rebuildReaderVirtual(reader, anchor, !locating);
+    else { reader.virtual?.refresh?.(); if (anchor) reader.virtual?.restoreAnchor?.(anchor); }
+    // Still hunting for the requested row? The heights that just changed are
+    // exactly what the previous aim was missing.
+    if (locating) reader.relocate?.();
+    return true;
+  }
+
+  // One place owns "did we actually reach the requested row". repaintReader()
+  // re-aims through reader.locate whenever a deferred layer changes row heights,
+  // and a web font swapping in invalidates every cached height, so that gets a
+  // re-aim too.
+  function locateReaderRow(reader, rowId, renderId, options = {}) {
+    if (!reader?.virtual || rowId == null) return;
+    reader.locate = { rowId: Number(rowId), done: false, attempts: 0 };
+    // Every re-aim goes through this one closure, so each of them reports back
+    // into reader.locate. An earlier version re-aimed with a bare scrollToRow()
+    // and no callback, which left `done` false forever and swallowed the notice.
+    const relocate = () => {
+      const locate = reader.locate;
+      if (!locate || locate.done || renderId !== state.readerRequest) return;
+      // Never start a second aim while one is converging: each scrollToIndex
+      // bumps positionToken and kills the previous loop mid-correction, so
+      // overlapping re-aims leave the target stranded rather than centring it.
+      if (locate.busy) { locate.again = true; return; }
+      // Deferred layers can land repeatedly; don't re-aim forever.
+      if (locate.attempts++ > 6) return;
+      locate.busy = true;
+      const found = reader.virtual?.scrollToRow?.(locate.rowId, {
+        ...options,
+        onSettled: ok => {
+          locate.busy = false;
+          if (renderId !== state.readerRequest || reader.locate !== locate) return;
+          locate.done = Boolean(ok);
+          // A layer landed while this aim was running; its heights are in now.
+          if (!ok && locate.again) { locate.again = false; relocate(); return; }
+          const note = document.querySelector('.tipitaka-locate-note');
+          if (ok) { if (note) note.textContent = ''; return; }
+          // Only complain once the retries are spent - an early attempt failing
+          // while data is still arriving is expected, not worth reporting.
+          if (locate.attempts > 6 && !locate.reported && note) {
+            locate.reported = true;
+            note.innerHTML = `未能定位到该命中行（#${esc(String(locate.rowId))}）。 <button type="button" data-t-action="locate-retry">重试</button>`;
+          }
+        },
+      });
+      if (found === false) locate.busy = false;
+      if (found === false && !locate.reported) {
+        locate.reported = true;
+        const note = document.querySelector('.tipitaka-locate-note');
+        if (note) note.innerHTML = `未能定位到该命中行（#${esc(String(locate.rowId))}）。 <button type="button" data-t-action="locate-retry">重试</button>`;
+      }
+    };
+    reader.relocate = relocate;
+    relocate();
+    if (!reader.locateFontHook) {
+      reader.locateFontHook = true;
+      // A web font swapping in invalidates every cached row height, so the
+      // offsets the aim was computed from are no longer the ones on screen.
+      document.fonts?.ready?.then(() => relocate()).catch(() => {});
+    }
+  }
+
+  function refreshReaderToolbar(reader) {
+    const existing = document.getElementById('tipitaka-toolbar');
+    if (!existing) return;
+    const hit = reader.hit, hitRows = reader.hitRows || [];
+    // bindReader() delegates from app.onclick, so swapping this markup keeps
+    // every control wired; only the sticky observer is per-element.
+    existing.outerHTML = readerToolbar(reader.meta, hit && hitRows.length ? { total: hitRows.length, index: reader.hitIndex, query: hit.query } : hit ? { query: hit.query, semantic: hit.semantic } : null);
+    state.reader.pinObserver?.disconnect?.();
+    state.reader.pinObserver = bindStickyToolbar();
+  }
+
   async function renderReader(workId, preserveAnchor = null) {
     injectCss(); injectSearchTargetCss(); injectTouchSafetyCss(); injectPaliInlineCss(); injectReaderLayoutCss(); injectCommentaryCss();
     const renderId = ++state.readerRequest;
@@ -1846,14 +1985,28 @@
       app.innerHTML = `<div class="cat-header"><h2>${esc(meta.title)}</h2><div class="cat-en">${esc(meta.path.join(' / '))} · ${meta.row_count.toLocaleString()} 行</div></div><div class="tipitaka-skeleton"></div><div class="tipitaka-skeleton"></div>`;
       const isRootWork = meta.level === 'mula', isAnnotationWork = meta.level === 'atthakatha' || meta.level === 'tika';
       const highlightDoc = `tipitaka:${workId}`;
-      const [loaded, overlays, commentaryMap, commentarySourceMap] = await Promise.all([
-        workById(workId), overrides(workId),
-        isRootWork ? commentaryMapFor(workId) : Promise.resolve(null),
-        isAnnotationWork ? commentarySourceMapFor(workId) : Promise.resolve(null),
-        window.ReaderHighlights ? window.ReaderHighlights.load(highlightDoc) : Promise.resolve(null),
+      const params = query();
+      // Only the body text is required to show the reader. Overrides and
+      // highlights both hit an API container that scales to zero (27s cold
+      // start measured), and the relation graph costs a serialised HEAD plus a
+      // fetch - awaiting all of them is what made opening a work feel broken.
+      // A deep link is the one case that genuinely needs the graph up front,
+      // because it has to validate the fragment before rendering.
+      const needsGraph = Boolean(params.get('root_unit') || params.get('fragment') || params.get('annotation') || params.get('roottext_fragment'));
+      const overridesPromise = overrides(workId);
+      const commentaryPromise = isRootWork ? commentaryMapFor(workId) : Promise.resolve(null);
+      const sourcePromise = isAnnotationWork ? commentarySourceMapFor(workId) : Promise.resolve(null);
+      const highlightsPromise = window.ReaderHighlights ? window.ReaderHighlights.load(highlightDoc) : Promise.resolve(null);
+      const [loaded, racedOverlays, racedCommentary, racedSource] = await Promise.all([
+        workById(workId),
+        raced(overridesPromise),
+        needsGraph ? commentaryPromise : raced(commentaryPromise),
+        needsGraph ? sourcePromise : raced(sourcePromise),
       ]);
       if (renderId !== state.readerRequest) return;
-      const work = loaded[1], params = query();
+      const overlays = racedOverlays || new Map();
+      let commentaryMap = racedCommentary || null, commentarySourceMap = racedSource || null;
+      const work = loaded[1];
       let requestedRowId = Number(params.get('row') || 0), fragmentLinkStatus = '';
       const linkedFragment = params.get('annotation_fragment');
       if (linkedFragment) {
@@ -1874,21 +2027,21 @@
       }
       const positionParam = params.get('hl_pos');
       const hit = params.get('hl') ? { query: params.get('hl'), language: params.get('hl_lang') || 'zh', rowId: requestedRowId, anchor: params.get('hl_anchor') || '', terms: (params.get('hl_terms') || '').split('|').filter(Boolean), position: positionParam !== null && positionParam !== '' && Number.isFinite(Number(positionParam)) ? Number(positionParam) : null, semantic: params.get('semantic') === '1' } : null;
-      const hitRows = hit ? await searchHitsForReader(hit.query, hit.language, workId) : [];
-      if (renderId !== state.readerRequest) return;
-      if (hit) {
-        let target = hitRows.find(item => Number(item.rowId) === requestedRowId);
-        if (!target && hit.anchor) {
-          const fallback = findRowBySearchAnchor(work, hit.language, hit.anchor);
-          if (fallback) { hit.rowId = Number(fallback.id); target = hitRows.find(item => Number(item.rowId) === hit.rowId); }
-        }
-        if (target?.positions?.length) hit.position = target.positions.includes(hit.position) ? hit.position : target.positions[0];
-        if (target?.matchedTerms?.length) hit.terms = target.matchedTerms;
-      }
+      // Resolving the full hit list means running the search again (manifest +
+      // shards), which made arriving from a search result strictly slower than
+      // arriving from the catalogue. The row= in the URL already places us;
+      // positions, matched terms and the n/m counter arrive after the paint.
+      const hitRowsPromise = hit ? searchHitsForReader(hit.query, hit.language, workId).catch(() => []) : Promise.resolve([]);
+      const hitRows = [];
       const currentRowId = preserveAnchor?.rowId || hit?.rowId || requestedRowId;
-      let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId); if (currentIndex < 0) currentIndex = 0;
-      const hitIndex = hit ? Math.max(0, hitRows.findIndex(item => Number(item.rowId) === Number(hit.rowId))) : 0;
-      state.reader = { meta, work, overlays, highlightDoc, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null, virtualHeightCache: new Map(), structureRestorePending: false, anchorRestoreToken: 0, anchorRestoreCancelled: false, suppressMeasureCompensation: false };
+      let currentIndex = work.rows.findIndex(row => Number(row.id) === currentRowId);
+      // Falling back to row 0 without a word is why a mis-resolved hit read as
+      // "the link is broken". Remember that it happened so the reader is told.
+      const rowMissing = currentIndex < 0 && currentRowId > 0;
+      if (currentIndex < 0) currentIndex = 0;
+      if (rowMissing) fragmentLinkStatus = `<span class="tipitaka-annotation-error">未能定位到该命中行（#${esc(String(currentRowId))}）；已停在篇首。 <button type="button" data-t-action="locate-retry">重试</button></span>`;
+      const hitIndex = 0;
+      state.reader = { meta, work, overlays, highlightDoc, commentaryMap, commentarySourceMap, currentIndex, hit, hitRows, hitIndex, annotationPicker: null, annotation: null, rootTextPicker: null, rootText: null, virtual: null, pinObserver: null, locate: null, virtualHeightCache: new Map(), structureRestorePending: false, anchorRestoreToken: 0, anchorRestoreCancelled: false, suppressMeasureCompensation: false };
       const deepAnnotation = annotationDescriptor(commentaryMap, params.get('fragment'), params.get('annotation'));
       if (deepAnnotation) {
         state.reader.annotationPicker = { unitId: deepAnnotation.unit.unit_id, kind: deepAnnotation.kind };
@@ -1907,7 +2060,7 @@
       // spacer), so this doesn't touch the virtualization coordinate math.
       const relationFallback = commentaryMap?.error ? `<span class="tipitaka-annotation-error">义注关系暂时无法加载。 <button type="button" data-t-action="annotation-map-retry">重试</button></span>` : commentarySourceMap?.error ? `<span class="tipitaka-annotation-error">对应根本片段暂不可用；仍可使用相关全书跳转。 <button type="button" data-t-action="annotation-source-map-retry">重试</button></span>${jumpButtons(work.rows[currentIndex], meta)}` : meta.level === 'mula' ? '' : jumpButtons(work.rows[currentIndex], meta);
       const readerSettings = settings();
-      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-hl-doc="${esc(highlightDoc)}" data-t-show-pali="${readerSettings.pali ? 1 : 0}" data-t-show-zh="${readerSettings.zh ? 1 : 0}" data-t-show-en="${readerSettings.en ? 1 : 0}" data-theme="${readerSettings.theme === 'dark' ? 'dark' : 'light'}" style="font-size:${readerSettings.font}px;--tipitaka-line-height:${readerSettings.lineHeight};--tipitaka-letter-spacing:${readerSettings.letterSpacing}em">${readerHead(meta, work, hit, fragmentLinkStatus)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
+      app.innerHTML = `<div class="tipitaka-pane" id="tipitaka-pane" data-hl-doc="${esc(highlightDoc)}" data-t-show-pali="${readerSettings.pali ? 1 : 0}" data-t-show-zh="${readerSettings.zh ? 1 : 0}" data-t-show-en="${readerSettings.en ? 1 : 0}" data-theme="${readerSettings.theme === 'dark' ? 'dark' : 'light'}" style="font-size:${readerSettings.font}px;--tipitaka-line-height:${readerSettings.lineHeight};--tipitaka-letter-spacing:${readerSettings.letterSpacing}em">${readerHead(meta, work, hit, fragmentLinkStatus, !rowMissing)}${readerToolbar(meta, hit && hitRows.length ? { total: hitRows.length, index: hitIndex, query: hit.query } : hit ? { query: hit.query } : null)}<div class="tipitaka-virtual-spacer" id="tipitaka-virtual-spacer"><div class="tipitaka-virtual-window" id="tipitaka-virtual-window"></div></div><div class="tipitaka-toolbar tipitaka-jumpbar">${relationFallback}</div></div>`;
       state.reader.virtual = renderVirtual(state.reader, currentIndex);
       state.reader.pinObserver = bindStickyToolbar();
       bindReaderProgress(state.reader);
@@ -1924,10 +2077,43 @@
         state.reader.virtual?.restoreAnchor(preserveAnchor);
         scheduleReaderAnchorRestore(state.reader, preserveAnchor);
       }
-      else state.reader.virtual?.scrollToRow(work.rows[currentIndex]?.id);
+      else locateReaderRow(state.reader, work.rows[currentIndex]?.id, renderId);
       localStorage.setItem('tipitaka-reader-history', JSON.stringify({ workId, rowId: work.rows[currentIndex]?.id, at: Date.now() }));
       syncProgress(workId, work.rows[currentIndex]?.id);
       bindReader();
+
+      // --- everything the first paint deliberately skipped ---
+      overridesPromise.then(map => {
+        if (!map || map === overlays || !map.size) return;
+        repaintReader(renderId, reader => { reader.overlays = map; });
+      }).catch(() => {});
+      highlightsPromise.then(list => { if (Array.isArray(list) && list.length) repaintReader(renderId, () => true); }).catch(() => {});
+      if (!needsGraph) {
+        if (isRootWork) commentaryPromise.then(map => {
+          if (!map || map === commentaryMap) return;
+          repaintReader(renderId, reader => { reader.commentaryMap = commentaryMap = map; }, true);
+        }).catch(() => {});
+        if (isAnnotationWork) sourcePromise.then(map => {
+          if (!map || map === commentarySourceMap) return;
+          repaintReader(renderId, reader => { reader.commentarySourceMap = commentarySourceMap = map; }, true);
+        }).catch(() => {});
+      }
+      if (hit) hitRowsPromise.then(rows => {
+        if (renderId !== state.readerRequest || !state.reader || !rows.length) return;
+        const reader = state.reader;
+        let target = rows.find(item => Number(item.rowId) === Number(reader.hit.rowId));
+        if (!target && reader.hit.anchor) {
+          const fallback = findRowBySearchAnchor(work, reader.hit.language, reader.hit.anchor);
+          if (fallback) { reader.hit.rowId = Number(fallback.id); target = rows.find(item => Number(item.rowId) === reader.hit.rowId); }
+        }
+        if (target?.positions?.length) reader.hit.position = target.positions.includes(reader.hit.position) ? reader.hit.position : target.positions[0];
+        if (target?.matchedTerms?.length) reader.hit.terms = target.matchedTerms;
+        reader.hitRows = rows;
+        reader.hitIndex = Math.max(0, rows.findIndex(item => Number(item.rowId) === Number(reader.hit.rowId)));
+        refreshReaderToolbar(reader);
+        repaintReader(renderId, () => true);
+      }).catch(() => {});
+
       if (state.reader.annotation?.loading) loadActiveAnnotation(state.reader, preserveAnchor);
       if (state.reader.rootText?.loading) loadActiveRootText(state.reader, preserveAnchor);
     } catch (error) { if (renderId === state.readerRequest) app.innerHTML = `<div class="error-msg">${esc(error.message)}。目录可用时，正文会在静态数据源恢复后继续加载。</div>`; }
@@ -2118,6 +2304,13 @@
         await loadActiveAnnotation(reader, anchor, true);
         return;
       }
+      if (action === 'locate-retry') {
+        const note = document.querySelector('.tipitaka-locate-note');
+        if (note) note.textContent = '';
+        if (reader.locate) reader.locate.reported = false;
+        locateReaderRow(reader, reader.locate?.rowId ?? reader.hit?.rowId ?? reader.work.rows[reader.currentIndex]?.id, state.readerRequest);
+        return;
+      }
       if (action === 'annotation-map-retry') {
         const anchor = reader.virtual?.getAnchor?.(); state.commentaryRoots.delete(reader.meta.id); state.commentaryV5Ready = null; state.commentaryReloadPaths.add(`roots/${encodeURIComponent(reader.meta.id)}.json.gz`); renderReader(reader.meta.id, anchor); return;
       }
@@ -2280,6 +2473,7 @@
   window.TipitakaV4 = window.TipitakaV4 || {};
   window.TipitakaV4.search = (value, language = 'zh', options = {}) => runSearch(value, language, options);
   window.TipitakaV4.catalog = async () => { await ensureCatalog(); return state.works; };
+  window.TipitakaV4.readerState = () => state.reader;
   window.TipitakaV4.workIdsForScopes = async scopes => { await ensureCatalog(); const selected = new Set(scopes || []); return state.works.filter(work => [...selected].some(scope => work.id === scope || work.path.join(' / ') === scope || work.path.join(' / ').startsWith(`${scope} / `))).map(work => work.id); };
   window.TipitakaV4.resolve = (result, page = 0) => resolveSearchPage(result, page);
   window.TipitakaV4.openScopeDrawer = options => openV4ScopeDrawer(options);
@@ -2449,17 +2643,123 @@
     const rows = (data?.results || []).map(item => { const raw = item.snippet || item.text_zh || item.text_en || item.text_pali || ''; const display = language === 'zh' ? searchDisplayText(raw, 'zh') : raw; return `<a class="tipitaka-search-result" href="${esc(hybridSearchHref(item, language, queryText))}"><strong>${esc(item.title || item.work_id)} · ${esc(item.paranum || item.row_id)}</strong><span class="tipitaka-note"> · ${esc(item.lane === 'direct' ? '直接回答' : '相关主题与探索')} · ${esc((item.match_reasons || []).join('、') || '语义相关')}</span><br><span>${esc(display)}</span></a>`; }).join('');
     return rows ? `<section class="tipitaka-hybrid-results"><h3>混合语义补充 <span class="tipitaka-note">词法 + 语义 + RRF · ${data.semantic?.degraded ? '当前语义降级' : '语义服务已启用'}</span></h3>${rows}</section>` : '';
   }
+  const SEARCH_CACHE_LIMIT = 8;
+  const searchCacheKey = (q, language, scopes, types) => `${q} ${language} ${[...scopes].sort().join('|')} ${[...types].sort().join('|')}`;
+  function searchCacheEntry(key) {
+    if (!state.searchCache.has(key)) return null;
+    const entry = state.searchCache.get(key);
+    state.searchCache.delete(key); state.searchCache.set(key, entry);
+    return entry;
+  }
+  function storeSearchCache(key, entry) {
+    state.searchCache.delete(key); state.searchCache.set(key, entry);
+    while (state.searchCache.size > SEARCH_CACHE_LIMIT) state.searchCache.delete(state.searchCache.keys().next().value);
+    return entry;
+  }
+  const searchHash = ({ q, language, scopes, types, page }) => {
+    const params = new URLSearchParams();
+    if (q) params.set('q', q);
+    if (language && language !== 'zh') params.set('lang', language);
+    if (scopes.length) params.set('scope', scopes.join('|'));
+    if (types.length) params.set('types', types.join('|'));
+    if (page) params.set('page', String(page));
+    const search = params.toString();
+    return `#/tipitaka/search${search ? `?${search}` : ''}`;
+  };
+
   async function renderSearch() {
     injectCss(); injectSearchTargetCss(); await ensureCatalog();
     const selected = query().get('scope') || '', typeParam = query().get('types') || '', selectedTypes = typeParam ? new Set(typeParam.split('|').filter(Boolean)) : new Set(DEFAULT_V4_TYPES);
     const scopeSet = new Set(selected.split('|').filter(Boolean));
+    const initialQuery = query().get('q') || '';
+    const initialLanguage = query().get('lang') || 'zh';
+    const initialPage = Math.max(0, Number(query().get('page') || 0) || 0);
     app.innerHTML = `<button class="back-btn" onclick="location.hash='#/tipitaka'">← 三藏目录</button><div class="cat-header"><h2>V4 全内容检索</h2><div class="cat-en">217 works · dictionaries · terminology · Pāli · 简体中文 · English</div></div><div class="tipitaka-scope-trigger-row"><button type="button" class="v4-scope-button ${scopeSet.size ? 'is-active' : ''}" id="tipitaka-scope-open" aria-label="筛选 V4 范围">${scopeButtonHtml(scopeSet.size)}</button><div class="tipitaka-scope-chips" id="tipitaka-scope-chips">${scopeSummaryHtml([...scopeSet])}</div></div><form class="tipitaka-toolbar tipitaka-search-form" id="tipitaka-search-form"><input id="tipitaka-search-input" required placeholder="至少两个汉字，或输入巴利/英文词组"><select id="tipitaka-search-lang"><option value="zh">中文</option><option value="pali">巴利</option><option value="en">English</option></select><button>搜索</button></form><div id="tipitaka-search-status" class="tipitaka-note"></div><div id="tipitaka-search-results"></div>`;
-    document.getElementById('tipitaka-scope-open').onclick = () => openV4ScopeDrawer({ scopes: [...scopeSet], types: [...selectedTypes], onApply: ({ scopes, types }) => { const params = new URLSearchParams(); const q = document.getElementById('tipitaka-search-input').value.trim(); if (q) params.set('q', q); if (scopes.length) params.set('scope', scopes.join('|')); if (types.length) params.set('types', types.join('|')); location.hash = `#/tipitaka/search?${params}`; } });
+    document.getElementById('tipitaka-scope-open').onclick = () => openV4ScopeDrawer({ scopes: [...scopeSet], types: [...selectedTypes], onApply: ({ scopes, types }) => { location.hash = searchHash({ q: document.getElementById('tipitaka-search-input').value.trim(), language: document.getElementById('tipitaka-search-lang').value, scopes, types, page: 0 }); } });
     const form = document.getElementById('tipitaka-search-form'), target = document.getElementById('tipitaka-search-results'), status = document.getElementById('tipitaka-search-status');
-    const initialQuery = query().get('q'); if (initialQuery) document.getElementById('tipitaka-search-input').value = initialQuery;
-    const draw = async (result, page) => { state.lastSearch = { result, page }; status.textContent = `完整命中 ${result.total.toLocaleString()} 处 · 第 ${page + 1} 页`; const items = await resolveSearchPage(result, page); target.innerHTML = `${items.map(item => searchResultHtml(item, result.language, result.query)).join('') || '<p>未找到结果。</p>'}<div class="tipitaka-page">${page > 0 ? '<button data-t-search-page="prev">← 上一页</button>' : ''}${(page + 1) * PAGE_SIZE < result.total ? '<button data-t-search-page="next">下一页 →</button>' : ''}<span class="tipitaka-note">每页加载 40 条；总数不截断。</span></div>`; target.querySelectorAll('[data-t-search-page]').forEach(button => button.onclick = () => draw(result, page + (button.dataset.tSearchPage === 'next' ? 1 : -1))); };
-    form.onsubmit = async event => { event.preventDefault(); const value = document.getElementById('tipitaka-search-input').value.trim(), language = document.getElementById('tipitaka-search-lang').value, types = [...selectedTypes], scopes = [...scopeSet]; status.textContent = '检索分片中…'; target.textContent = ''; try { await draw(await runSearch(value, language, { workIds: v4ScopeWorkIds(), types }), 0); if (HYBRID_SEARCH_BASE) { status.textContent += ' · 正在补充语义结果…'; try { const hybrid = await runHybridSearch(value, language, scopes, types); target.insertAdjacentHTML('beforeend', hybridSearchHtml(hybrid, language, value)); status.textContent = `${status.textContent} 完成`; } catch (error) { status.textContent += `（语义服务降级：${error.message}）`; } } } catch (error) { status.textContent = error.message; } };
-    if (initialQuery) form.requestSubmit();
+    const input = document.getElementById('tipitaka-search-input'), langSelect = document.getElementById('tipitaka-search-lang');
+    input.value = initialQuery;
+    langSelect.value = initialLanguage;
+
+    let entry = null, restoredScroll = false, lastScrollWrite = 0;
+    // The results view is rebuilt from scratch on every hashchange, so the
+    // scroll position has to be recorded as it happens: by the time this view
+    // is being torn down, index.html's own route() listener has already run.
+    // The listener has to be torn down explicitly too - left attached, the one
+    // from the previous visit kept writing the reader's scroll position into
+    // this search's saved position, which is how it came back as 0.
+    if (state.searchScrollHandler) window.removeEventListener('scroll', state.searchScrollHandler);
+    const onScroll = () => {
+      if (!entry || !target.isConnected) return;
+      const now = Date.now();
+      if (now - lastScrollWrite < 100) return;
+      lastScrollWrite = now;
+      entry.scrollY = window.scrollY;
+    };
+    state.searchScrollHandler = onScroll;
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const draw = async (result, page) => {
+      status.textContent = `完整命中 ${result.total.toLocaleString()} 处 · 第 ${page + 1} 页`;
+      // Resolving a page calls workById() per result, i.e. re-downloads whole
+      // works. Caching it is what makes coming back to a search instant.
+      let items = entry?.pages.get(page);
+      if (!items) { items = await resolveSearchPage(result, page); entry?.pages.set(page, items); }
+      target.innerHTML = `${items.map(item => searchResultHtml(item, result.language, result.query)).join('') || '<p>未找到结果。</p>'}<div class="tipitaka-page">${page > 0 ? '<button data-t-search-page="prev">← 上一页</button>' : ''}${(page + 1) * PAGE_SIZE < result.total ? '<button data-t-search-page="next">下一页 →</button>' : ''}<span class="tipitaka-note">每页加载 40 条；总数不截断。</span></div>`;
+      target.querySelectorAll('[data-t-search-page]').forEach(button => button.onclick = () => {
+        const next = page + (button.dataset.tSearchPage === 'next' ? 1 : -1);
+        if (entry) { entry.page = next; entry.scrollY = 0; }
+        // replaceState, not location.hash: paging must not re-enter route().
+        history.replaceState(null, '', `${location.pathname}${location.search}${searchHash({ q: result.query, language: result.language, scopes: [...scopeSet], types: [...selectedTypes], page: next })}`);
+        window.scrollTo(0, 0);
+        draw(result, next);
+      });
+      if (entry) entry.page = page;
+      if (!restoredScroll) {
+        restoredScroll = true;
+        const y = entry?.scrollY || 0;
+        // Restore after layout has the new results in it, so the page is tall
+        // enough for the offset to be reachable; retry once in case images or
+        // fonts were still growing it.
+        if (y) { setTimeout(() => window.scrollTo(0, y), 0); setTimeout(() => { if (Math.abs(window.scrollY - y) > 8) window.scrollTo(0, y); }, 120); }
+      }
+    };
+
+    const run = async (value, language, page = 0) => {
+      const key = searchCacheKey(value, language, scopeSet, selectedTypes);
+      const cached = searchCacheEntry(key);
+      if (cached) {
+        entry = cached;
+        await draw(cached.result, Math.min(page, Math.max(0, Math.ceil(cached.result.total / PAGE_SIZE) - 1)));
+        return;
+      }
+      status.textContent = '检索分片中…'; target.textContent = '';
+      try {
+        const result = await runSearch(value, language, { workIds: v4ScopeWorkIds(), types: [...selectedTypes] });
+        entry = storeSearchCache(key, { result, pages: new Map(), scrollY: 0, page });
+        await draw(result, page);
+        if (HYBRID_SEARCH_BASE) {
+          status.textContent += ' · 正在补充语义结果…';
+          try {
+            const hybrid = await runHybridSearch(value, language, [...scopeSet], [...selectedTypes]);
+            target.insertAdjacentHTML('beforeend', hybridSearchHtml(hybrid, language, value));
+            status.textContent = `${status.textContent} 完成`;
+          } catch (error) { status.textContent += `（语义服务降级：${error.message}）`; }
+        }
+      } catch (error) { status.textContent = error.message; }
+    };
+
+    // Submitting navigates. That puts the query in the URL, which is what makes
+    // a result page survive the browser's Back button (and makes it shareable),
+    // and it keeps one code path for actually running a search.
+    form.onsubmit = event => {
+      event.preventDefault();
+      const value = input.value.trim(), language = langSelect.value;
+      const next = searchHash({ q: value, language, scopes: [...scopeSet], types: [...selectedTypes], page: 0 });
+      if (location.hash === next) run(value, language, 0);
+      else location.hash = next;
+    };
+    if (initialQuery) run(initialQuery, initialLanguage, initialPage);
   }
 
   async function ensureDictionaryManifest() { if (!state.dictManifest) state.dictManifest = await cachedJson('dictionary-search-v1/manifest.json', SEARCH_CACHE_NAME); return state.dictManifest; }
