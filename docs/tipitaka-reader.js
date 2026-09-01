@@ -1475,6 +1475,7 @@
       setTimeout(() => { if (destroyed || token !== positionToken || positionRaf !== frame) return; cancelAnimationFrame(frame); positionRaf = 0; settle(); }, 120);
     };
 
+    const schedule = (force = false) => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(force); }); };
     const beginUserScroll = event => {
       if (destroyed) return;
       // Controls live inside the reader pane.  Their pointer/touch events are
